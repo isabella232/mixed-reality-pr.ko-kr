@@ -43,8 +43,7 @@
 ### [WebVR](webvr-questions.md)
 ### [기타 질문](other-questions.md)
 
-## 부록
+## 리소스
 ### [버그 및 피드백 신고](filing-feedback.md)
 ### [혼합 현실 소프트웨어 개요 및 릴리스 기록](mixed-reality-software.md)
-### [모션 컨트롤러의 작동 방식](motion-controllers.md)
 ### [내부에서 외부로 추적의 작동 방식](tracking-system.md)
