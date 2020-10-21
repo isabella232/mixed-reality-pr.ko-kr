@@ -14,7 +14,6 @@
 ### [Windows Mixed Reality 설치](install-windows-mixed-reality.md)
 ### [Windows Mixed Reality 설정](set-up-windows-mixed-reality.md)
 ### [Windows Mixed Reality 설치 FAQ](wmr-setup-faq.md)
-### [몰입형 헤드셋 상태, 안전 및 편안함](wmr-health-safety-comfort.md)
 
 ## Windows Mixed Reality 사용
 ### [Mixed Reality 학습](learn-mixed-reality.md)
@@ -28,6 +27,7 @@
 ### [Windows Mixed Reality 사용 FAQ](using-wmr-faq.md)
 
 ## 문제 해결 FAQ
+### [버그 및 피드백 신고](filing-feedback.md)
 ### [일반 FAQ](troubleshooting-windows-mixed-reality.md)
 ### [설치 오류](installation_errors.md)
 ### [설치](set-up-questions.md)
@@ -44,6 +44,6 @@
 ### [기타 질문](other-questions.md)
 
 ## 리소스
-### [버그 및 피드백 신고](filing-feedback.md)
+### [몰입형 헤드셋 상태, 안전 및 편안함](wmr-health-safety-comfort.md)
 ### [혼합 현실 소프트웨어 개요 및 릴리스 기록](mixed-reality-software.md)
 ### [내부에서 외부로 추적의 작동 방식](tracking-system.md)
