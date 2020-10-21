@@ -1,0 +1,149 @@
+---
+title: Windows Mixed Reality의 PC 호환성에 대 한 도움말 보기
+description: Windows Mixed Reality로 작업할 때 PC 호환성 문제에 대 한 도움말 리소스입니다.
+author: hferrone
+ms.author: v-hferrone
+ms.date: 09/15/2020
+ms.topic: article
+keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
+appliesto:
+- Windows 10
+ms.openlocfilehash: b9b9d46e2ab71fa90960e403ceac94b95ba01440
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293074"
+---
+# <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a><span data-ttu-id="0025e-104">Windows Mixed Reality의 PC 호환성에 대 한 도움말 보기</span><span class="sxs-lookup"><span data-stu-id="0025e-104">Get help with PC compatibility in Windows Mixed Reality</span></span>
+
+<span data-ttu-id="0025e-105">Windows Mixed Reality를 설정 하거나 컴퓨터에서 [Windows Mixed REALITY Pc 검사](https://www.microsoft.com/p/windows-mixed-reality-pc-check/9nzvl19n7cnc?rtc=1#activetab=pivot:overviewtab) 앱을 실행 하는 경우 PC에서 실행할 준비가 되었는지 여부에 대 한 보고서를 받게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-105">When you set up Windows Mixed Reality or run the [Windows Mixed Reality PC Check](https://www.microsoft.com/p/windows-mixed-reality-pc-check/9nzvl19n7cnc?rtc=1#activetab=pivot:overviewtab) app on your computer, you'll get a report on whether your PC is ready to run it.</span></span> <span data-ttu-id="0025e-106">다음은 표시 될 수 있는 내용에 대 한 세부 정보입니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-106">Here are some details on what you might see.</span></span>
+
+<span data-ttu-id="0025e-107">혼합 현실를 실행할 수 있는지 확인 하려면 [최소 PC 하드웨어 호환성 요구 사항을](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)검토 하세요.</span><span class="sxs-lookup"><span data-stu-id="0025e-107">To make sure you can run Mixed Reality, please review [minimum PC hardware compatibility requirements](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md).</span></span>
+
+## <a name="youre-good-to-go"></a><span data-ttu-id="0025e-108">이동 하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-108">You're good to go</span></span>
+
+<span data-ttu-id="0025e-109">좋은 소식 — PC가 Windows Mixed Reality를 실행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-109">Good news— your PC can run Windows Mixed Reality.</span></span> <span data-ttu-id="0025e-110">그러나 컴퓨터 하드웨어와 구성 사이에 여전히 변형이 있기 때문에 혼합 현실 환경은 모든 PC에서 동일 하지 않을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-110">But keep in mind that there's still variation among computer hardware and configuration, so the Mixed Reality experience might not be the same on every PC.</span></span>
+
+## <a name="supports-some-features"></a><span data-ttu-id="0025e-111">일부 기능 지원</span><span class="sxs-lookup"><span data-stu-id="0025e-111">Supports some features</span></span>
+
+<span data-ttu-id="0025e-112">PC에서 일부 Windows Mixed Reality 환경을 실행할 수 있어야 하지만 최상의 환경을 제공 하지 못할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-112">Your PC should be able to run some Windows Mixed Reality experiences, but might not provide the best possible experience.</span></span> <span data-ttu-id="0025e-113">그래픽이 지연 될 수 있으며, 일부 앱과 게임이 제대로 수행 되지 않을 수 있으며 일부는 실행 되지 않을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-113">Graphics might lag, some apps and games might not perform well, and some might not run at all.</span></span> 
+
+<span data-ttu-id="0025e-114">다음은 표시 될 수 있는 메시지와 이러한 메시지에 대해 수행할 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-114">Here are the messages you might see, and what to do about them:</span></span>
+
+### <a name="this-pc-has-an-integrated-graphics-card-with-single-channel-ram"></a><span data-ttu-id="0025e-115">이 PC에는 단일 채널 RAM이 있는 통합 그래픽 카드가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-115">This PC has an integrated graphics card with single-channel RAM</span></span>
+
+<span data-ttu-id="0025e-116">통합 그래픽 카드는 이중 채널 RAM이 있는 Pc에서 최상의 Windows Mixed Reality 환경을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-116">Integrated graphics cards will provide the best Windows Mixed Reality experience on PCs with dual-channel RAM.</span></span> <span data-ttu-id="0025e-117">성능 문제가 발생 하는 경우 다음 중 하나를 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-117">If you run into performance problems, try one of the following:</span></span>
+
+* <span data-ttu-id="0025e-118">[호환 되는 개별 그래픽 카드](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines)를 설치 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-118">Install a [compatible discrete graphics card](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines).</span></span>
+* <span data-ttu-id="0025e-119">추가 RAM 스틱을 설치 하 여 이중 채널 RAM을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-119">Install an additional RAM stick to create dual-channel RAM.</span></span>
+* <span data-ttu-id="0025e-120">[호환 되는 PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)로 전환 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-120">Switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).</span></span>
+
+### <a name="this-pc-has-a-hybrid-graphics-configuration-with-an-incompatible-pcie-link"></a><span data-ttu-id="0025e-121">이 PC에는 호환 되지 않는 PCIe 링크로 하이브리드 그래픽 구성이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-121">This PC has a hybrid graphics configuration with an incompatible PCIe link</span></span>
+
+<span data-ttu-id="0025e-122">PCIe는 *주변 구성 요소 상호 연결 Express*를 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-122">PCIe stands for *Peripheral Component Interconnect Express*.</span></span> <span data-ttu-id="0025e-123">PC에서 그래픽 카드와 통신 하는 데 사용 하는 연결입니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-123">This is the connection that a PC uses to communicate with a graphics card.</span></span> <span data-ttu-id="0025e-124">구성이 작동할 수 있지만 문제가 발생 하는 경우 [호환 되는 PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)로 전환 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-124">Your configuration might work, but if you run into problems, you'll need to switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).</span></span>
+
+### <a name="this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality"></a><span data-ttu-id="0025e-125">이 PC의 그래픽 드라이버는 Windows Mixed Reality에서 제대로 작동 하지 않을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-125">This PC's graphics driver might not work well with Windows Mixed Reality</span></span>
+
+<span data-ttu-id="0025e-126">문제가 발생 하는 경우 Windows 업데이트를 사용 하 여 새 그래픽 드라이버를 다운로드 해 보세요 (**> 설정 > 업데이트 & 보안 > 업데이트 확인**). 또는 PC 제조업체나 그래픽 카드 제조업체의 웹 사이트로 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-126">If you run into problems, try downloading a new graphics driver using Windows Update (**Start > Settings > Update & security > Check for updates**)—or go to your PC manufacturer or graphics card manufacturer's website.</span></span>
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="0025e-127">업데이트 확인</span><span class="sxs-lookup"><span data-stu-id="0025e-127">Check for updates</span></span>](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
+
+<span data-ttu-id="0025e-128">그래도 작동 하지 않으면 호환 되는 [그래픽 카드](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) 를 추가 하거나 호환 되는 [PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)로 전환 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-128">If that doesn't work, you'll need to add a [compatible graphics card](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) or switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).</span></span>
+
+### <a name="this-pcs-processor-might-not-work-well-with-windows-mixed-reality"></a><span data-ttu-id="0025e-129">이 PC의 프로세서는 Windows Mixed Reality에서 제대로 작동 하지 않을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-129">This PC's processor might not work well with Windows Mixed Reality</span></span>
+
+<span data-ttu-id="0025e-130">이 PC의 프로세서는 코어가 충분 하지 않기 때문에 Windows Mixed Reality에서 제대로 작동 하지 않을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-130">This PC's processor might not work well with Windows Mixed Reality, because it doesn't have enough cores.</span></span> <span data-ttu-id="0025e-131">Windows Mixed Reality가 제대로 실행 되지 않으면 프로세서를 [호환 되](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) 는 PC로 교체 하거나 호환 되는 [PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)로 전환 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-131">If Windows Mixed Reality doesn't run well, replace the processor with a [compatible one](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) or switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).</span></span>
+
+### <a name="this-pc-might-not-have-a-compatible-usb-configuration"></a><span data-ttu-id="0025e-132">이 PC에는 호환 되는 USB 구성이 없을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-132">This PC might not have a compatible USB configuration</span></span>
+
+<span data-ttu-id="0025e-133">Windows Mixed Reality를 실행 하는 데 문제가 발생 하는 경우 다음을 시도 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-133">If you run into problems running Windows Mixed Reality, try the following:</span></span>
+
+* <span data-ttu-id="0025e-134">사용 가능한 경우 헤드셋을 다른 USB 포트에 연결 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-134">Plug your headset into a different USB port, if available.</span></span>
+* <span data-ttu-id="0025e-135">그래도 작동 하지 않으면 PC의 현재 USB 드라이버를 제거 하 고 Microsoft 드라이버를 다시 설치 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-135">If that doesn't work, uninstall your PC's current USB driver, and then reinstall a Microsoft driver:</span></span>
+
+1. <span data-ttu-id="0025e-136">**시작**을 선택한 다음 **검색** 상자에 "장치 관리자"를 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-136">Select **Start**, and then type "device manager" in the **Search** box.</span></span>
+2. <span data-ttu-id="0025e-137">결과에서 **Device Manager** 를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-137">Select **Device Manager** from the results.</span></span>
+3. <span data-ttu-id="0025e-138">범용 직렬 버스 컨트롤러의 범주를 확장 하 고 나열 된 장치를 확인 한 다음 호환 되지 않는 드라이버를 모두 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-138">Expand the category for Universal Serial Bus controllers, look at the devices listed, and uninstall any incompatible drivers.</span></span>
+    * <span data-ttu-id="0025e-139">장치 이름 끝에 "Microsoft"가 없는 "확장 가능 호스트 컨트롤러" 항목이 목록에 포함 되어 있으면 해당 드라이버는 Windows Mixed Reality와 호환 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-139">If the list includes an “eXtensible Host Controller” item that does not have “Microsoft” at the end of the device name, that driver isn't compatible with Windows Mixed Reality.</span></span> <span data-ttu-id="0025e-140">제거 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-140">You’ll need to uninstall it.</span></span> <span data-ttu-id="0025e-141">드라이버를 제거 하려면 목록에서 장치를 마우스 오른쪽 단추로 클릭 하 고 **장치 제거**를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-141">To uninstall a driver, right-click the device in the list and select **Uninstall device**.</span></span> <span data-ttu-id="0025e-142">**이 장치에 대 한 드라이버 소프트웨어 삭제** 확인란을 선택 하 고 **제거**를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-142">Select the **Delete the driver software for this device** check box, then select **Uninstall**.</span></span>
+    * <span data-ttu-id="0025e-143">이름에 "Etron"가 포함 된 "확장 가능한 호스트 컨트롤러" 항목이 목록에 포함 되어 있으면 해당 USB 컨트롤러는 Windows Mixed Reality와 호환 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-143">If the list includes an "eXtensible Host Controller" item that includes "Etron" in the name, that USB controller isn't compatible with Windows Mixed Reality.</span></span> <span data-ttu-id="0025e-144">PC에서 다른 USB 포트를 사용 하거나 다른 USB 3.0 호스트 컨트롤러를 구입 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-144">You'll need to use a different USB port on the PC or purchase a different USB 3.0 host controller.</span></span>
+4. <span data-ttu-id="0025e-145">PC를 다시 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-145">Restart your PC.</span></span>
+5. <span data-ttu-id="0025e-146">Device Manager로 돌아가서 확장 가능한 호스트 컨트롤러 항목을 다시 찾습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-146">Return to Device Manager and locate the eXtensible Host Controller item again.</span></span> <span data-ttu-id="0025e-147">이제 장치 이름 끝에 "Microsoft"가 표시 되 면 이동 하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-147">If you now see “Microsoft” at the end of the device name, you’re good to go.</span></span> <span data-ttu-id="0025e-148">그렇지 않은 경우 제거 단계를 반복 하 여 Microsoft 이외의 다른 버전의 드라이버를 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-148">If not, repeat the uninstall steps to remove any additional non-Microsoft versions of the driver.</span></span>
+
+* <span data-ttu-id="0025e-149">그래도 작동 하지 않으면 컴퓨터에 PCIe USB 카드를 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-149">If that still doesn't work, add a PCIe USB card to your PC.</span></span>
+
+### <a name="this-pc-doesnt-have-bluetooth-40-for-controllers"></a><span data-ttu-id="0025e-150">이 PC에는 컨트롤러에 대 한 Bluetooth 4.0가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-150">This PC doesn't have Bluetooth 4.0 for controllers</span></span>
+
+<span data-ttu-id="0025e-151">일부 헤드셋에서 혼합 현실 동작 컨트롤러에는 Bluetooth 4.0가 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-151">Bluetooth 4.0 is required for mixed reality motion controllers on some headsets.</span></span> <span data-ttu-id="0025e-152">Xbox 컨트롤러나 마우스 및 키보드를 사용 하 여 Windows Mixed Reality를 계속 사용 하거나, USB Bluetooth 어댑터를 사용 하 여 이동 컨트롤러를 PC에 연결할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-152">You can still use Windows Mixed Reality with an Xbox controller or with a mouse and keyboard, or you can use a USB Bluetooth adapter to connect motion controllers to your PC.</span></span> [<span data-ttu-id="0025e-153">권장 어댑터 참조</span><span class="sxs-lookup"><span data-stu-id="0025e-153">See recommended adapters</span></span>](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+
+### <a name="depending-on-your-headset-you-may-need-a-bluetooth-adapter-to-use-motion-controllers"></a><span data-ttu-id="0025e-154">헤드셋에 따라 동작 컨트롤러를 사용 하려면 Bluetooth 어댑터가 필요할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-154">Depending on your headset, you may need a Bluetooth adapter to use motion controllers</span></span>
+
+<span data-ttu-id="0025e-155">일부 헤드셋은 컨트롤러를 헤드셋에 직접 연결할 수 있도록 Bluetooth가 내장 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-155">Some headsets have Bluetooth built in so that controllers can pair directly to the headsets.</span></span> <span data-ttu-id="0025e-156">다른 사용자는 움직임 컨트롤러를 사용 하기 위해 PC의 Bluetooth 라디오 (또는 별도의 동글을 필요 함)가 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-156">Others require a Bluetooth radio in the PC (or a separate dongle) to use motion controllers.</span></span> [<span data-ttu-id="0025e-157">권장 어댑터 참조</span><span class="sxs-lookup"><span data-stu-id="0025e-157">See recommended adapters</span></span>](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+
+### <a name="this-pc-doesnt-have-a-self-powered-usb-port"></a><span data-ttu-id="0025e-158">이 PC에는 자체 기반 USB 포트가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-158">This PC doesn't have a self-powered USB port</span></span>
+
+<span data-ttu-id="0025e-159">Windows Mixed Reality 헤드셋을 연결 하려면 셀프 기반 USB 3.0 포트가 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-159">A self-powered USB 3.0 port is needed to connect a Windows Mixed Reality headset.</span></span> <span data-ttu-id="0025e-160">전원이 켜진 USB 3.0 허브를 PC에 연결 하 고이를 사용 하 여 헤드셋을 연결 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-160">Connect a powered USB 3.0 hub to the PC and use that to connect your headset.</span></span>
+
+### <a name="this-pc-should-work-but-youll-have-the-best-experience-with-a-high-performance-intel-processor"></a><span data-ttu-id="0025e-161">이 PC는 작동 하지만 고성능 Intel® 프로세서를 사용 하는 최상의 환경을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-161">This PC should work, but you'll have the best experience with a high-performance Intel® processor</span></span>
+
+<span data-ttu-id="0025e-162">이 PC는 작동 하지만 고성능 Intel 프로세서에서 최상의 환경을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-162">This PC should work, but a high-performance Intel processor will provide the best experience.</span></span> <span data-ttu-id="0025e-163">8 번째 Gen Intel® Core™ 또는 7 세대 Intel® Core™ i5 프로세서를 권장 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-163">We recommend an 8th Gen Intel® Core™ or 7th Gen Intel® Core™ i5 processor.</span></span>
+
+## <a name="cant-run-windows-mixed-reality"></a><span data-ttu-id="0025e-164">Windows Mixed Reality를 실행할 수 없음</span><span class="sxs-lookup"><span data-stu-id="0025e-164">Can't run Windows Mixed Reality</span></span>
+
+<span data-ttu-id="0025e-165">다음은 표시 될 수 있는 메시지와 이러한 메시지에 대해 수행할 작업입니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-165">Here are the messages you might see, and what to do about them:</span></span>
+
+### <a name="this-pcs-graphics-card-wont-work-with-windows-mixed-reality"></a><span data-ttu-id="0025e-166">이 PC의 그래픽 카드는 Windows Mixed Reality에서 작동 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-166">This PC's graphics card won't work with Windows Mixed Reality</span></span>
+
+<span data-ttu-id="0025e-167">이 PC의 그래픽 카드는 Windows Mixed Reality와 호환 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-167">This PC's graphics card is not compatible with Windows Mixed Reality.</span></span> <span data-ttu-id="0025e-168">[호환 되는 그래픽 카드](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) 를 추가 하거나 [호환 되는 PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)로 전환 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-168">You'll need to add a [compatible graphics card](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) or switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).</span></span>
+
+### <a name="this-pcs-graphics-driver-wont-work-with-windows-mixed-reality"></a><span data-ttu-id="0025e-169">이 PC의 그래픽 드라이버는 Windows Mixed Reality에서 작동 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-169">This PC's graphics driver won't work with Windows Mixed Reality</span></span>
+
+<span data-ttu-id="0025e-170">이 PC의 그래픽 드라이버는 Windows Mixed Reality에서 작동 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-170">This PC's graphics driver won't work with Windows Mixed Reality.</span></span> <span data-ttu-id="0025e-171">Windows 업데이트를 사용 하 여 새 그래픽 드라이버를 다운로드 해 보세요. (**> 설정 > 업데이트 & 보안 > 업데이트 확인**), 또는 PC 제조업체나 그래픽 카드 제조업체의 웹 사이트로 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-171">Try downloading a new graphics driver using Windows Update (**Start > Settings > Update & security > Check for updates**)—or go to your PC manufacturer or graphics card manufacturer's website.</span></span> 
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="0025e-172">업데이트 확인</span><span class="sxs-lookup"><span data-stu-id="0025e-172">Check for updates</span></span>](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
+
+<span data-ttu-id="0025e-173">그래도 작동 하지 않으면 호환 되는 [그래픽 카드](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) 를 추가 하거나 호환 되는 [PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)로 전환 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-173">If that doesn't work, you'll need to add a [compatible graphics card](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) or switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).</span></span>
+
+### <a name="this-pcs-processor-wont-work-with-windows-mixed-reality"></a><span data-ttu-id="0025e-174">이 PC의 프로세서는 Windows Mixed Reality에서 작동 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-174">This PC's processor won't work with Windows Mixed Reality</span></span>
+
+<span data-ttu-id="0025e-175">이 PC의 프로세서는 supprot AVX/Popcnt 지침이 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-175">This PC's processor doesn't supprot AVX/Popcnt instructions.</span></span> <span data-ttu-id="0025e-176">Windows Mixed Reality를 실행 하려면 [호환 되는 그래픽 카드로](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) 바꾸거나 [호환 가능한 PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)로 전환 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-176">To run Windows Mixed Reality, you'll need to replace it with a [compatible graphics card](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) or switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).</span></span>
+
+### <a name="this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality"></a><span data-ttu-id="0025e-177">이 PC에는 Windows Mixed Reality를 실행 하는 데 사용 가능한 디스크 공간이 충분 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-177">This PC doesn't have enough free disk space to run Windows Mixed Reality</span></span>
+
+<span data-ttu-id="0025e-178">Windows Mixed Reality에는 설치 및 최상의 성능을 위해 10GB의 사용 가능한 디스크 공간이 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-178">Windows Mixed Reality requires 10GB of free disk space for setup and best performance.</span></span> <span data-ttu-id="0025e-179">드라이브의 공간을 확보 한 후 설치를 다시 시도 하십시오.</span><span class="sxs-lookup"><span data-stu-id="0025e-179">Clear some space on your drive, then try setup again.</span></span>
+
+### <a name="this-pc-is-running-an-edition-of-windows-that-doesnt-support-windows-mixed-reality"></a><span data-ttu-id="0025e-180">이 PC는 Windows Mixed Reality를 지원 하지 않는 Windows 버전을 실행 하 고 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-180">This PC is running an edition of Windows that doesn't support Windows Mixed Reality</span></span>
+
+<span data-ttu-id="0025e-181">Windows Mixed Reality는 Windows 10 Home 및 Windows 10 Pro에서 작동 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-181">Windows Mixed Reality works on Windows 10 Home and Windows 10 Pro.</span></span> <span data-ttu-id="0025e-182">Windows Mixed Reality를 사용 하려면 이러한 버전 중 하나를 설치 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-182">You'll need to install one of those editions in order to use Windows Mixed Reality.</span></span>
+
+### <a name="this-pc-isnt-running-the-latest-version-of-windows-10"></a><span data-ttu-id="0025e-183">이 PC는 최신 버전의 Windows 10을 실행 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-183">This PC isn't running the latest version of Windows 10</span></span>
+
+<span data-ttu-id="0025e-184">Windows Mixed Reality를 사용 하려면 Windows 10 인 생성기를 업데이트 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-184">Windows Mixed Reality requires the Windows 10 Fall Creators Update.</span></span> <span data-ttu-id="0025e-185">[PC를 업데이트](https://support.microsoft.com/help/4028685) 하 고 다시 시도 하세요.</span><span class="sxs-lookup"><span data-stu-id="0025e-185">[Update your PC](https://support.microsoft.com/help/4028685) and try again.</span></span>
+
+### <a name="this-pc-has-no-usb-30-port"></a><span data-ttu-id="0025e-186">이 PC에는 USB 3.0 포트가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-186">This PC has no USB 3.0 port</span></span>
+
+<span data-ttu-id="0025e-187">Windows Mixed Reality 헤드셋을 연결 하려면 USB 3.0 포트가 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-187">You'll need a USB 3.0 port to connect a Windows Mixed Reality headset.</span></span> <span data-ttu-id="0025e-188">데스크톱 PC를 사용 하 고 있는 경우 PCIe USB 카드를 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-188">If you're using a desktop PC, add a PCIe USB card.</span></span> <span data-ttu-id="0025e-189">노트북을 사용 하는 경우 [호환 되는 PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)로 전환 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-189">If you're using a laptop, you'll need to switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).</span></span>
+
+### <a name="you-cant-run-this-app-via-remote-desktop"></a><span data-ttu-id="0025e-190">원격 데스크톱을 통해이 앱을 실행할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-190">You can't run this app via remote desktop</span></span>
+
+<span data-ttu-id="0025e-191">Windows Mixed Reality를 사용 하려면 모니터가 연결 된 PC를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-191">To use Windows Mixed Reality, you'll a PC with a monitor connected.</span></span> <span data-ttu-id="0025e-192">가상 컴퓨터를 사용 하 고 있거나 모니터가 없는 경우 가상 표시 어댑터를 사용해 보세요.</span><span class="sxs-lookup"><span data-stu-id="0025e-192">If you are using a virtual machine or don't have a monitor, try using a virtual display adapter.</span></span> <span data-ttu-id="0025e-193">PC의 DisplayPort에 연결 하 고 컴퓨터 디스플레이를 에뮬레이트하는 장치입니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-193">This is a device that plugs into the PC's DisplayPort and emulates a computer display.</span></span> 
+
+## <a name="getting-the-best-performance"></a><span data-ttu-id="0025e-194">최상의 성능 얻기</span><span class="sxs-lookup"><span data-stu-id="0025e-194">Getting the best performance</span></span>
+
+<span data-ttu-id="0025e-195">일부 하드웨어 구성은 Windows Mixed Reality의 성능 문제를 일으킬 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-195">Some hardware configurations might cause performance problems with Windows Mixed Reality.</span></span> <span data-ttu-id="0025e-196">느린 로드, 고르지 않은 시각적 개체 또는 시각적 품질 저하와 같은 문제가 발생 하는 경우 다음과 같은 일반적인 수정 작업을 수행해 보세요.</span><span class="sxs-lookup"><span data-stu-id="0025e-196">For problems like slow loading, choppy visuals, or poor visual quality, try these common fixes:</span></span>
+
+* <span data-ttu-id="0025e-197">PC 데스크톱에서 실행 되는 열려 있는 앱을 모두 닫습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-197">Close any open apps running on your PC desktop.</span></span>
+* <span data-ttu-id="0025e-198">USB-C를 사용 하거나 HDMI 어댑터에 DisplayPort를 사용 하는 경우 다른 것을 시도 합니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-198">If you’re using a USB-C or DisplayPort to HDMI adapter, try a different one.</span></span> <span data-ttu-id="0025e-199">권장 어댑터 참조</span><span class="sxs-lookup"><span data-stu-id="0025e-199">See recommended adapters</span></span>
+* <span data-ttu-id="0025e-200">PC의 그래픽 카드에 추가 모니터가 연결 되어 있는 경우 연결을 끊습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-200">If there are extra monitors connected to the PC’s graphics card, disconnect them.</span></span>
+* <span data-ttu-id="0025e-201">Windows 스토어에서 몇 가지 혼합 현실 앱을 다운로드 해 보세요. 일부 앱은 컴퓨터 설치에서 더 잘 작동할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-201">Try downloading some different mixed reality apps from the Windows Store—some may work better with your computer setup.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="0025e-202">"이 하드웨어 구성은 Windows Mixed Reality에서 작동할 수 있지만 아직 테스트 되지 않았습니다." 라는 메시지가 표시 되 면 긴 세션에 대해 Windows Mixed Reality를 실행할 때 몇 가지 성능 문제가 발생할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0025e-202">If you see a message that says, "This hardware configuration might work with Windows Mixed Reality, but it hasn't been tested yet," you could run into some performance issues when running Windows Mixed Reality for long sessions .</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="0025e-203">참조</span><span class="sxs-lookup"><span data-stu-id="0025e-203">See also</span></span>
+
+* [<span data-ttu-id="0025e-204">커뮤니티에 질문하기</span><span class="sxs-lookup"><span data-stu-id="0025e-204">Ask the community</span></span>](https://answers.microsoft.com)
+* [<span data-ttu-id="0025e-205">지원 문의</span><span class="sxs-lookup"><span data-stu-id="0025e-205">Contact us for support</span></span>](https://support.microsoft.com/contactus/)
+* [<span data-ttu-id="0025e-206">문제 해결</span><span class="sxs-lookup"><span data-stu-id="0025e-206">Troubleshooting</span></span>](troubleshooting-windows-mixed-reality.md)
