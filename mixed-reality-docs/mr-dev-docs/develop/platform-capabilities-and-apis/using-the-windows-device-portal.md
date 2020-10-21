@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows 장치 포털, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 398b9ee312c8d49e3468980e5e2c1be556c17162
-ms.sourcegitcommit: 252b52f7541a6e15aa33322286855af8a3924fc1
+ms.openlocfilehash: 98030e55736d423d1fb84d2b965f6ed40246d8f4
+ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862990"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92011484"
 ---
 # <a name="using-the-windows-device-portal"></a>Windows 장치 포털 사용
 
@@ -374,3 +374,20 @@ HoloLens에서 Wi-Fi 연결을 관리합니다.
 ## <a name="device-portal-rest-apis"></a>장치 포털 REST API
 
 장치 포털의 모든 작업은 데이터에 액세스하고 디바이스를 프로그래밍 방식으로 제어할 때 선택적으로 사용할 수 있는 [REST API](device-portal-api-reference.md)를 기반으로 합니다.
+
+## <a name="troubleshooting"></a>문제 해결
+
+### <a name="how-to-fix-the-its-lonely-here-message"></a>"It's lonely here(비어 있습니다)" 메시지를 수정하는 방법
+
+> [!NOTE]
+> HoloLens 2에서 HoloLens(1세대)로 이동하면 HoloLens(1세대)에서 사용하기 전에 HoloLens 2에서 사용할 경우 페이지가 비어질 수 있습니다.
+
+![장치 포털 페이지의 It's lonely here(비어 있습니다)](images/using-windows-portal-img-19.png)
+
+1. 왼쪽 위 메뉴에서 **레이아웃 다시 설정**을 선택합니다.
+
+![장치 포털 메뉴에서 레이아웃 다시 설정 선택](images/using-windows-portal-img-20.png)
+
+2. **작업 영역 다시 설정** 머리글 아래에서 **레이아웃 다시 설정**을 클릭합니다. 포털 페이지는 자동으로 콘텐츠를 새로 고치고 표시합니다.
+
+![작업 영역 다시 설정 페이지에서 레이아웃 다시 설정 선택](images/using-windows-portal-img-21.png)
