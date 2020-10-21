@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: 56238f302074bb4de21acbc0575f4ab913cb84b1
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: 360b8fea1744e2753aaa5310d79e82f978d92f67
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174423"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293115"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Windows Mixed Reality의 동작 컨트롤러
 
@@ -42,7 +42,6 @@ Xbox 컨트롤러, 마우스 및 키보드를 사용 하거나 [음성만 사용
 4. 화면에 제공 된 지침을 따릅니다.
 
 > [!NOTE]
-
 > * PC와 직접 연결 되는 컨트롤러의 경우, 연결 모드를 켜고 표시등이 깜박일 때까지 배터리 구획 내에서 페어링 단추를 눌러 페어링 모드로 전환 해야 합니다.  
 > * 동작 컨트롤러는 한 번에 하나의 컴퓨터 또는 PC와 쌍으로 연결 된 것만 지원 합니다. 다른 헤드셋에서 사용 해야 하는 경우 페어링 프로세스를 진행 해야 합니다. [Windows Mixed Reality 설정을](set-up-windows-mixed-reality.md) 참조 하세요.
 
@@ -150,7 +149,7 @@ HP 반향 G2 헤드셋을 사용 하는 경우 컨트롤러가 이미 쌍을 이
 
 "혼합 현실-> 입력" 범주를 사용 하 여 피드백 허브에 피드백을 제공 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [커뮤니티에 질문하기](https://answers.microsoft.com)
 * [지원 문의](https://support.microsoft.com/contactus/)

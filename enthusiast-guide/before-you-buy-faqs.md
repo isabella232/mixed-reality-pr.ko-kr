@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사전 판매, 연구, 구매, 구입 하기 전
 appliesto:
 - Windows 10
-ms.openlocfilehash: 3adaf5e3bef3144d23a57ce8729f3f169ec630f3
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: de697bc7002ab342241acc2bdc989a3e1e397632
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174475"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293036"
 ---
 # <a name="frequently-asked-questions"></a>질문과 대답
 
@@ -103,7 +103,7 @@ ms.locfileid: "92174475"
 <td> 최대 90Hz </td>
 <td> 100 ° </td>
 <td> 3.5 mm 잭 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">소프트웨어</td>
 <td> 2017 </td>
 <td> <a href="https://www.acer.com/ac/en/US/content/windows-mixed-reality-home">Acer</a> </td>
@@ -129,7 +129,7 @@ ms.locfileid: "92174475"
 <td> 최대 90Hz </td>
 <td> 95 ° </td>
 <td> 3.5 mm 잭 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">소프트웨어</td>
 <td> 2017 </td>
 <td> <a href="https://www.asus.com/us/Headset/ASUS-Windows-Mixed-Reality-Headset-HC102/">지원팀</a> </td>
@@ -142,7 +142,7 @@ ms.locfileid: "92174475"
 <td> 최대 90Hz </td>
 <td> 105 ° </td>
 <td> 3.5 mm 잭 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">소프트웨어</td>
 <td> 2017 </td>
 <td> <a href="https://www.dell.com/en-us/shop/accessories/apd/536-bbbr?~ck=mn">좋습니다</a> </td>
@@ -155,7 +155,7 @@ ms.locfileid: "92174475"
 <td> 최대 90Hz </td>
 <td> 105 ° </td>
 <td> 3.5 mm 잭 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">소프트웨어</td>
 <td> 2017 </td>
 <td> <a href="http://pr.fujitsu.com/jp/news/2017/10/17.html">Fujitsu</a> </td>
@@ -181,7 +181,7 @@ ms.locfileid: "92174475"
 <td> 최대 90Hz </td>
 <td> 105 ° </td>
 <td> 3.5 mm 잭 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">소프트웨어</td>
 <td> 2017 </td>
 <td> <a href="https://store.hp.com/us/en/pdp/hp-windows-mixed-reality-headset-vr1000-100">HP</a> </td>
@@ -194,7 +194,7 @@ ms.locfileid: "92174475"
 <td> 최대 90Hz </td>
 <td> 105 ° </td>
 <td> 3.5 mm 잭 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">소프트웨어</td>
 <td> 2017 </td>
 <td> <a href="https://www.lenovo.com/us/en/virtual-reality-and-smart-devices/virtual-and-augmented-reality/lenovo-explorer/Lenovo-Explorer/p/G10NREAG0A2">Lenovo</a> </td>
@@ -207,7 +207,7 @@ ms.locfileid: "92174475"
 <td> 최대 90Hz </td>
 <td> 105 ° </td>
 <td> 3.5 mm 잭 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">소프트웨어</td>
 <td> 2017 </td>
 <td> <a href="https://www.medion.com/be/shop/monitoren-medion-erazer-mr-x1000-vr-headset-controllers-30023616a1.html">Medion</a> </td>
@@ -220,7 +220,7 @@ ms.locfileid: "92174475"
 <td> 최대 90Hz </td>
 <td> 110 ° </td>
 <td> 통합 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">기계적</td>
 <td> 2017 </td>
 <td> <a href="https://www.samsung.com/us/computing/hmd/windows-mixed-reality/xe800zaa-hc1us-xe800zaa-hc1us/?redir=windows%20mixed%20reality">삼성</a> </td>
@@ -246,7 +246,7 @@ ms.locfileid: "92174475"
 <td> 최대 90Hz </td>
 <td> 105 ° </td>
 <td> 3.5 mm 잭 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">소프트웨어</td>
 <td> 2017 </td>
 <td> <a href="http://3glasses.com/goods.action?gid=30">3.</a> </td>
@@ -308,8 +308,6 @@ ms.locfileid: "92174475"
 ### <a name="does-the-windows-mixed-reality-platform-support-rift-and-vive-hardware"></a>Windows Mixed Reality 플랫폼은 Rift 및 Vive 하드웨어를 지원 하나요?
 
 **빠른 응답:** Windows Mixed Reality는 승인 된 Windows 혼합 현실 헤드셋/컨트롤러 에서만 작동 합니다. <https://www.microsoft.com/en-us/store/b/virtualreality>을 참조하십시오.
-
-
 
 ## <a name="motion-controllers"></a>동작 컨트롤러
 
