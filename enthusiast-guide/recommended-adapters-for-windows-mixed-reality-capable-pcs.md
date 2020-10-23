@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 어댑터, 동글, HDMI, USB, DisplayPort
 appliesto:
 - Windows 10
-ms.openlocfilehash: bcdc25c0f6e678666a713d01aaa4fb15da31e90c
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: ea0cd3c87fecda310ec72ba50d8f5982d1782b31
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174408"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434592"
 ---
 # <a name="recommended-adapters"></a>권장 어댑터
 > [!NOTE]
@@ -28,7 +28,7 @@ ms.locfileid: "92174408"
 
 <table>
 <tr>
-<th style="width:30%">Type</th><th style="width:40%">어댑터</th><th style="width:15%">60Hz 지원</th><th style="width:15%">90Hz 지원</th>
+<th style="width:30%">유형</th><th style="width:40%">어댑터</th><th style="width:15%">60Hz 지원</th><th style="width:15%">90Hz 지원</th>
 </tr><tr>
 <td rowspan="2" style="vertical-align: middle;">DisplayPort (전체 크기)-HDMI 2.0</td><td>Club3D DisplayPort 1.2 to HDMI 2.0 활성 어댑터</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
@@ -263,7 +263,7 @@ ms.locfileid: "92174408"
 
 2018 이후에 헤드셋이 출시 된 경우 어댑터는 필요 하지 않으며 컨트롤러는 헤드셋에 페어링 됩니다.
 
-2017 또는 이전 버전에서 제공 되는 장치에는 컨트롤러용 어댑터가 필요 합니다. PC에 [Windows Mixed Reality 동작 컨트롤러](controllers-in-wmr.md)를 페어링 하기 위한 Bluetooth가 포함 되어 있지 않은 경우 Plugable USB Bluetooth 4.0 저 에너지 마이크로 어댑터와 같은 어댑터를 사용할 수 있습니다.
+2017 또는 이전 버전에서 제공 되는 장치에는 컨트롤러용 어댑터가 필요 합니다. PC에 [Windows Mixed Reality 동작 컨트롤러](controllers-in-wmr.md#Pair-motion-controllers)를 페어링 하기 위한 Bluetooth가 포함 되어 있지 않은 경우 Plugable USB Bluetooth 4.0 저 에너지 마이크로 어댑터와 같은 어댑터를 사용할 수 있습니다.
 
 > [!NOTE]
 > Microsoft는 모든 어댑터의 기능, 안정성 또는 품질을 제조, 테스트, 인증 또는 보장 하지는 않습니다. 모든 문제에 대 한 질문, 문제 또는 문제는 어댑터의 판매자 또는 제조업체에 문의 해야 합니다.

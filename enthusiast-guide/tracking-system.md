@@ -3,12 +3,12 @@ title: 내부에서 외부로 추적의 작동 방식
 description: Windows Mixed Reality 헤드셋에서 사용 되는 카메라 기반 내부 출력 추적 시스템에 대 한 정보입니다.
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 내부 외부, 내부 외부, 추적, 카메라
-ms.openlocfilehash: a91b5fba399e9bb328fd579811a64aee03b49efd
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: eda1b323915788f72ae6f4a2efcf51850734eac9
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174337"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434602"
 ---
 # <a name="inside-out-tracking"></a>내부 추적
 
@@ -72,6 +72,6 @@ Windows Mixed Reality의 추적은 간단 하 게 사용할 수 있습니다. �
 
 ## <a name="see-also"></a>참고 항목
 * [추적 시스템 문제 해결](tracking.md)
-* [모션 컨트롤러의 작동 방식](controller-in-wmr.md)
+* [모션 컨트롤러](controller-in-wmr.md)
 * [Windows Mixed Reality 홈](your-mixed-reality-home.md)
 * [Windows Mixed Reality에서 게임과 앱 사용](using-games-and-apps-in-windows-mixed-reality.md)

@@ -8,29 +8,20 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: 360b8fea1744e2753aaa5310d79e82f978d92f67
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: d1cf8e56d19ef9ae62d9f83811e843f34b1c2d8c
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293115"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434579"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Windows Mixed Reality의 동작 컨트롤러
 
 동작 컨트롤러는 사용자가 혼합 현실에서 작업을 수행할 수 있게 해 주는 하드웨어 액세서리입니다. 제스처를 통한 동작 컨트롤러의 장점은 컨트롤러의 공간이 정확 하 여 디지털 개체와의 세분화 된 상호 작용을 가능 하 게 하는 것입니다. Windows Mixed Reality 모던 헤드셋의 경우, 동작 컨트롤러는 사용자가 전 세계에서 작업을 수행 하는 기본 방법입니다.
+
 Windows Mixed Reality 동작 컨트롤러는 몰입 형 헤드셋의 센서를 사용 하 여 뷰 필드의 이동에 대 한 정확 하 고 응답성이 뛰어난 추적을 제공 합니다. 즉, 공간의 벽에 하드웨어를 설치할 필요가 없습니다. 이러한 동작 컨트롤러는 Windows Mixed Reality 모던 헤드셋과 동일한 설정 및 이식성을 제공 합니다.
 
-Windows Mixed Reality는 벽에 하드웨어를 설치할 필요 없이 자연스럽 고 정확한 상호 작용을 제공 하는 혼합 현실 동작 컨트롤러에서 가장 잘 작동 하도록 설계 되었습니다.
-
-Xbox 컨트롤러, 마우스 및 키보드를 사용 하거나 [음성만 사용해](using-speech-in-wmr.md)볼 수도 있습니다.
-
-**요소**
-
-* 광학 추적
-* 트리거
-* 잡기 단추
-* 사용해
-* 터치 패드
+또한 Xbox 컨트롤러, 마우스 및 키보드를 사용 하거나 [음성을 사용 하](using-speech-in-wmr.md)여 해결할 수 있습니다.
 
 ## <a name="motion-controller-setup"></a>동작 컨트롤러 설정
 
@@ -38,12 +29,12 @@ Xbox 컨트롤러, 마우스 및 키보드를 사용 하거나 [음성만 사용
 
 1. 헤드셋이 연결 된 **혼합 현실 포털** 을 시작 합니다.  
 2. 왼쪽 아래 모서리에서 select **... > 컨트롤러를 설정**합니다.
-3. 각 컨트롤러에 2 개의 AA 배터리를 삽입 하 고 컨트롤러를 페어링 모드로 전환 합니다 (이동 컨트롤러의 지침 참조).
+3. 각 컨트롤러에 2 개 AA 배터리를 삽입 하 고 컨트롤러를 페어링 모드로 전환 합니다. ( [이동 컨트롤러](controllers-in-wmr.md#Pair-motion-controllers) 에 대 한 지침 참조)
 4. 화면에 제공 된 지침을 따릅니다.
 
 > [!NOTE]
-> * PC와 직접 연결 되는 컨트롤러의 경우, 연결 모드를 켜고 표시등이 깜박일 때까지 배터리 구획 내에서 페어링 단추를 눌러 페어링 모드로 전환 해야 합니다.  
-> * 동작 컨트롤러는 한 번에 하나의 컴퓨터 또는 PC와 쌍으로 연결 된 것만 지원 합니다. 다른 헤드셋에서 사용 해야 하는 경우 페어링 프로세스를 진행 해야 합니다. [Windows Mixed Reality 설정을](set-up-windows-mixed-reality.md) 참조 하세요.
+> * PC와 직접 연결 되는 컨트롤러의 경우, 연결 모드를 켜고 표시등이 깜박일 때까지 배터리 구획 내에서 페어링 단추를 눌러 페어링 모드로 전환 해야 합니다.
+> * 동작 컨트롤러는 한 번에 하나의 PC로만 쌍으로 연결 되도록 지원 합니다. 다른 헤드셋에서 사용 해야 하는 경우 페어링 프로세스를 진행 해야 합니다. [Windows Mixed Reality 설정을](set-up-windows-mixed-reality.md) 참조 하세요.
 
 [연결 도움말 보기](wmr-setup-faq.md#my-motion-controllers-arent-working)
 
@@ -58,20 +49,29 @@ Xbox 컨트롤러, 마우스 및 키보드를 사용 하거나 [음성만 사용
 
 ## <a name="pair-motion-controllers"></a>동작 컨트롤러 페어링
 
+Samsung Odyssey + 또는 HP 반향 등의 통합 된 Bluetooth 컨트롤러를 포함 하는 헤드셋을 사용 하는 경우 컨트롤러가 이미 쌍을 이루어야 합니다. 그러나 설정 된 앱을 사용 하 여 컨트롤러를 쌍으로 연결할 수 있습니다 .이는 HMD 설정 중에 이미 설치 되어 있어야 합니다. Microsoft store에서 다운로드할 수도 있습니다).
+
+### <a name="pair-motion-controllers-to-hmd"></a>HMD에 동작 컨트롤러 페어링
+
 Led가 켜지는 때까지 2 초 동안 Windows 단추를 눌러 컨트롤러를 켭니다.
 
 컨트롤러에서 배터리 덮개를 제거 하 고 컨트롤러의 가장자리에 있는 작은 페어링 단추를 찾습니다. PC와 페어링 하려면이 단추를 누릅니다.
+    ![동작 컨트롤러 페어링](images/connect_controller.png)
 
-HP 반향 G2 헤드셋을 사용 하는 경우 컨트롤러가 이미 쌍을 이루어야 합니다. 하지만 HP 반향 G2 VR 설정 앱을 사용 하 여 컨트롤러를 쌍으로 연결할 수 있습니다 .이는 설정 중에 이미 설치 되어 있어야 합니다. Microsoft store에서 다운로드할 수도 있습니다). 또한 다른 bluetooth 장치를 추가 하 여 컨트롤러를 PV와 쌍으로 연결할 수 있습니다.
+헤드셋이 연결 된 **혼합 현실 포털** 을 시작 합니다.  
+왼쪽 아래 모서리에서 select **... > 컨트롤러를 설정**합니다.
+화면의 설명을 따릅니다.
+
+### <a name="pair-motion-controllers-to-pc"></a>PC에 동작 컨트롤러 페어링
+
+다른 bluetooth 장치를 추가 하 여 컨트롤러를 PC와 연결할 수 있습니다.
+
+컨트롤러를 켜고 위에 설명 된 페어링 모드로 전환 합니다.
 
 * 컴퓨터 설정으로 이동
 * 장치/Bluetooth 또는 기타 장치를 추가 합니다.
 
-![동작 컨트롤러 페어링](images/connect_controller.png)
-
-컨트롤러의 펌웨어가 업데이트 되 면 화면의 오른쪽 아래에 메시지가 표시 될 수 있습니다. 이 문제가 발생 하는 동안 자습서의 다음 단계로 진행할 수 있지만 컨트롤러를 끄지 마세요.
-
-컨트롤러 펌웨어 업데이트가 완료 되 면 다시 시작 되 고 호스트 PC에 다시 연결 됩니다. Led가 켜진 후 밝습니다.
+페어링이 완료 되 면 Led가 켜진 후 밝습니다.
 
 ### <a name="common-issues"></a>일반적인 문제
 
@@ -129,8 +129,8 @@ HP 반향 G2 헤드셋을 사용 하는 경우 컨트롤러가 이미 쌍을 이
 * 모던 헤드셋이 PC에 연결 되어 있고 새 컨트롤러 펌웨어를 사용할 수 있는 경우 다음에 설정 될 때 자동으로 펌웨어가 이동 컨트롤러에 푸시됩니다.
 * 컨트롤러 펌웨어 업데이트는 원형 동작에서 비추는 LED 사분면 패턴으로 표시 되며 1-2 분이 소요 됩니다. 펌웨어 업데이트는 때때로 최대 10 분까지 걸릴 수 있으며,이로 인해 Bluetooth 연결 또는 라디오 간섭을 일으킬 수 있습니다.
 * 펌웨어 업데이트가 중단 된 경우 (컨트롤러 전원이 꺼지거나 배터리가 부족 한 경우) 다음 전원 켜기 시 다시 시도 됩니다.
-* 펌웨어 업데이트가 완료 되 면 컨트롤러를 다시 부팅 하 고 다시 연결 합니다. 
-* 이제 두 컨트롤러를 연결 해야 합니다. (Bluetooth 및 기타 장치에서 다음을 확인 합니다.): ![연결 된 컨트롤러](images/cyk-connected.jpg)
+* 펌웨어 업데이트가 완료 되 면 컨트롤러를 다시 부팅 하 고 다시 연결 합니다.
+* 이제 두 컨트롤러를 연결 해야 합니다. 혼합 현실 포털로 이동 하 여 컨트롤러의 상태를 확인 합니다.
 * 컨트롤러가 제대로 작동 하는지 확인 합니다.
   * **혼합 현실 포털** 을 시작 하 고 혼합 현실 홈을 입력 합니다.
   * 컨트롤러를 이동 하 고 추적, 테스트 단추를 확인 하 고 teleportation 작동 하는지 확인 합니다. 그렇지 않으면 [동작 컨트롤러 문제 해결 섹션](motion-controller-problems.md) 을 확인 하세요.
@@ -149,10 +149,10 @@ HP 반향 G2 헤드셋을 사용 하는 경우 컨트롤러가 이미 쌍을 이
 
 "혼합 현실-> 입력" 범주를 사용 하 여 피드백 허브에 피드백을 제공 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [커뮤니티에 질문하기](https://answers.microsoft.com)
 * [지원 문의](https://support.microsoft.com/contactus/)
 * [문제 해결](troubleshooting-windows-mixed-reality.md)
 
-동작 컨트롤러를 사용 하는 데 문제가 있나요? [도움말 보기](using-wmr-faq.md#im-having-trouble-with-my-motion-controllers)
+동작 컨트롤러를 사용 하는 데 문제가 있나요? [도움말 보기](motion-controller-problems.md)

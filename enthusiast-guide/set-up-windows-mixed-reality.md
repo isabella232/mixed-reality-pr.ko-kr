@@ -3,12 +3,12 @@ title: Windows Mixed Reality 설정
 description: Windows Mixed Reality 동작 컨트롤러, 음성 및 오디오를 설정 하 고 안전한 재생 공간에 대 한 공간 경계를 정의 하는 방법입니다.
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 시작, 설정, 동작 컨트롤러, 컨트롤러, 음성, 오디오, 장착 됨, 경계, 그래픽 드라이버, Microsoft Edge, chromium
-ms.openlocfilehash: 71775ba03cb143b83f1a4514f62f20df903df96d
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: cd59fd34dd00edc98d209681cc1239895c36ada2
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174468"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434633"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Windows Mixed Reality 설정
 
@@ -16,7 +16,7 @@ ms.locfileid: "92174468"
 
 Windows Mixed Reality를 실행 하려면 다음이 필요 합니다.
 
-* 호환 되는 혼합 현실 모던 헤드셋. [자세히 알아보기](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
+* 호환 되는 혼합 현실 모던 헤드셋. [자세한 정보](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
 * [Windows Mixed Reality READY PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) 와 헤드셋에 대 한 올바른 포트
 * 동작 [컨트롤러](controllers-in-wmr.md), Xbox 컨트롤러 또는 마우스 및 키보드
 * 마이크가 있는 헤드폰 (헤드셋에서 기본 제공 되지 않는 경우)
@@ -86,7 +86,7 @@ Xbox 게임 패드 또는 키보드와 마우스를 사용 하려는 경우에�
 
 ## <a name="what-is-the-maximum-size-of-the-boundary"></a>경계의 최대 크기는 얼마 인가요?
 
-Windows Mixed Reality에서 현재 지원 되는 최대 경계 크기는 18x18ft (5.7 x 5.7 m) 또는 중앙의 13ft (4m) 반경입니다.  경계 크기는 앵커 지점과 경계의 안정성을 위해 이동할 수 있는 앵커 지점 으로부터의 거리에 따라 결정 됩니다.  Windows Mixed Reality는 플랫폼의 단계 추상화를 기반으로 하며, 단계는에서 이동 하는 공간을 기반으로 하며,이 단계는 단일 앵커 (거의 모든 앱은 단일 좌표계를 포함 함)에 따라 달라 집니다.  이는 내부 추적을 사용 하는 것이 중요 한 이유는 앵커 지점에서 더 멀리 이동할 때 헤드셋 추적이 안정적으로 경계를 유지 하는 것 이기 때문입니다.  경계는 물리적 장애물을 방지 하기 위해 고안 된 것 이며,이는 이동 하는 중심에서 더 많은 문제를 해결 하는 데 도움이 됩니다.  최대 경계 크기를 결정 하는 두 가지 요인이 있습니다. Windows Mixed Reality 헤드셋이 경계와 헤드셋 케이블의 길이에 가장 적합 한 공간 크기 조정 환경을 제공할 수 있는 최대 거리 (대부분의 Windows Mixed Reality 헤드셋은 10ft (3m)). 
+Windows Mixed Reality에서 현재 지원 되는 최대 경계 크기는 18x18ft (5.7 x 5.7 m) 또는 중앙의 13ft (4m) 반경입니다.  경계 크기는 앵커 지점과 경계의 안정성을 위해 이동할 수 있는 앵커 지점 으로부터의 거리에 따라 결정 됩니다.  Windows Mixed Reality는 플랫폼의 단계 추상화를 기반으로 하며, 단계는에서 이동 하는 공간을 기반으로 하며,이 단계는 단일 앵커 (거의 모든 앱은 단일 좌표계를 포함 함)에 따라 달라 집니다.  이는 내부 추적을 사용 하는 것이 중요 한 이유는 앵커 지점에서 더 멀리 이동할 때 헤드셋 추적이 안정적으로 경계를 유지 하는 것 이기 때문입니다.  경계는 물리적 장애물을 방지 하기 위해 고안 된 것 이며,이는 이동 하는 중심에서 더 많은 문제를 해결 하는 데 도움이 됩니다.  최대 경계 크기를 결정 하는 두 가지 요인이 있습니다. Windows Mixed Reality 헤드셋이 경계와 헤드셋 케이블의 길이에 가장 적합 한 공간 크기 조정 환경을 제공할 수 있는 최대 거리 (대부분의 Windows Mixed Reality 헤드셋은 10ft (3m)).
 
 ## <a name="set-up-speech"></a>음성 설정
 
@@ -131,9 +131,7 @@ Windows Mixed Reality는 PC의 하드웨어 구성에 따라 품질 및 성능�
 * **90Hz**
 
 >[!Note]
->HP 반향 G2의 자동 새로 고침 빈도 설정은 90Hz입니다.
-
-혼합 현실 포털 미리 보기 및 더 큰 헤드셋 표시 FOV를 비롯 한 특정 Windows 혼합 현실 기능은 90Hz 환경 에서만 사용할 수 있습니다.
+>HP 반향 G2 헤드셋을 처음 설정 하는 경우 최상의 환경을 보장 하기 위해 환경이 90 Hz로 변경 됩니다.  필요한 경우이를 다시 자동으로 변경할 수 있습니다.
 
 ### <a name="input-switching"></a>입력 전환
 
@@ -180,5 +178,5 @@ Windows Mixed Reality 홈에서 새로운 Chromium 기반 Microsoft Edge를 사�
 * [설치 문제 해결](installation_errors.md)
 * [설치 문제 해결](set-up-questions.md)
 * [Mixed Reality 학습](learn-mixed-reality.md)
-* [모션 컨트롤러의 작동 방식](controllers-in-wmr.md)
+* [모션 컨트롤러](controllers-in-wmr.md)
 * [내부에서 외부로 추적의 작동 방식](tracking-system.md)

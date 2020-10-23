@@ -3,18 +3,18 @@ title: 혼합 현실 집
 description: Windows Mixed Reality 홈 내에서 탐색 하 고 텔레포트 하 고 앱과 게임을 시작 하며 홈을 개인 설정 하 고 시각적 개체, 오디오 및 음성 설정을 변경 하는 방법입니다.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 홈, 탐색, 시작, 앱, 게임
-ms.openlocfilehash: 6537bca13a7eb133d7f78e7922ea91304fdc90f2
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 177a9db67f304c163356a814b5c4d2e54ba4867d
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293085"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434626"
 ---
 # <a name="your-windows-mixed-reality-home"></a>Windows Mixed Reality 홈
 
 ## <a name="what-is-the-windows-mixed-reality-home"></a>Windows Mixed Reality 홈 이란?
 
-Windows Mixed Reality는 첫 번째 공간 운영 체제입니다. 플랫 화면과 2D 인터페이스를 사용 하는 대신 3 차원 공간을 탐색 하는 instinctual 기능을 활용 합니다. 모든 장소에는 목적이 있으며 콘텐츠에는 컨텍스트가 있습니다. PC가 데스크톱 인터페이스에서 시작 되 고 휴대폰이 홈 화면으로 시작 하는 것 처럼 Windows Mixed Reality는 혼합 현실 홈에서 시작 됩니다. 사용자가 직접 탐색 하 고 개인 설정할 수 있는 환경입니다. Microsoft Store에서 사용할 수 있는 수천 개의 앱에 대 한 캔버스입니다. 공간이 거의 무제한 인 3D에서 이전에는 불가능 한 것 처럼 이러한 앱으로 멀티태스킹을 수 있습니다.
+Windows Mixed Reality는 첫 번째 공간 운영 체제입니다. 플랫 화면과 2D 인터페이스를 사용 하는 대신 3 차원 공간을 탐색 하는 instinctual 기능을 활용 합니다. 모든 장소에는 목적이 있으며 콘텐츠에는 컨텍스트가 있습니다. PC가 데스크톱 인터페이스에서 시작 되 고 휴대폰이 홈 화면으로 시작 하는 것 처럼 Windows Mixed Reality는 혼합 현실 홈에서 시작 됩니다. 사용자가 직접 탐색 하 고 개인 설정할 수 있는 환경입니다. Microsoft Store 또는 SteamVR에서 사용할 수 있는 수천 개의 앱에 대 한 캔버스입니다. 공간이 거의 무제한 인 3D에서 이전에는 불가능 한 것 처럼 이러한 앱으로 멀티태스킹을 수 있습니다.
 
 ## <a name="move-through-the-windows-mixed-reality-home"></a>Windows Mixed Reality 홈으로 이동
 
@@ -73,7 +73,7 @@ Windows Mixed Reality 홈에 Microsoft Store 모음이 있는 것을 알 수 있
 
 ## <a name="turn-off-the-boundary"></a>경계 해제
 
-Windows Mixed Reality 포털로 이동 하 여 화면 왼쪽 위에 있는 메뉴를 엽니다. **실행 설정 > 대화방 경계**를 선택 합니다. 토글을 OFF로 전환 합니다. 경계를 끄면 책상에 계속 해 서 계속 사용 해야 합니다.
+Mixed Reality 포털로 이동 하 여 화면 왼쪽 상단에 있는 메뉴를 엽니다. **실행 설정 > 대화방 경계**를 선택 합니다. 토글을 OFF로 전환 합니다. 경계를 끄면 책상에 계속 해 서 계속 사용 해야 합니다.
 
 ## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Windows Mixed Reality 홈의 공간 소리
 
@@ -82,7 +82,7 @@ Windows Mixed Reality 홈에는 각 앱의 사운드가 앱의 위치에서 제�
 > [!NOTE]
 > GPU에 부하가 많기 때문에 통합 그래픽이 있는 Pc에서는이 기능을 사용할 수 없습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [Windows Mixed Reality 홈 문제 해결](set-up-questions.md#my-controllers-arent-showing-in-my-windows-mixed-reality-home)
 * [Windows Mixed Reality에서 게임과 앱 사용](using-games-and-apps-in-windows-mixed-reality.md)
