@@ -16,14 +16,14 @@
 ### [Windows Mixed Reality 설치 FAQ](wmr-setup-faq.md)
 
 ## Windows Mixed Reality 사용
-### [Mixed Reality 학습](learn-mixed-reality.md)
-### [Windows Mixed Reality 홈](your-mixed-reality-home.md)
+### [혼합 현실의 학습 환경](learn-mixed-reality.md)
+### [혼합 현실 홈](your-mixed-reality-home.md)
 ### [Windows Mixed Reality의 컨트롤러](controllers-in-wmr.md)
 ### [음성 입력 사용](using-speech-in-wmr.md)
-### [게임, 360편의 비디오, 앱](using-games-and-apps-in-windows-mixed-reality.md)
-### [SteamVR](using-steamvr-with-windows-mixed-reality.md)
-### [Microsoft Edge 사용](using-microsoft-edge.md)  
-### [WebVR](webvr.md)
+### [게임, 360편의 비디오, 앱 사용](using-games-and-apps-in-windows-mixed-reality.md)
+### [SteamVR 사용](using-steamvr-with-windows-mixed-reality.md)
+### [Microsoft Edge 사용](using-microsoft-edge.md)
+### [WebVR이란?](webvr.md)
 ### [Windows Mixed Reality 사용 FAQ](using-wmr-faq.md)
 
 ## 문제 해결 FAQ
