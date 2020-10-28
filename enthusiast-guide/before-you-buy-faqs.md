@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사전 판매, 연구, 구매, 구입 하기 전
 appliesto:
 - Windows 10
-ms.openlocfilehash: b665d0d84f511ae5e6383c5d4b5aadea400b2033
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: a38b6ed8625fbb419ad24f2e27acec881d7b85a7
+ms.sourcegitcommit: ea7d806c9aa88d1295493a25f47e58bb72a4000a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434613"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92907445"
 ---
 # <a name="frequently-asked-questions"></a>질문과 대답
 
@@ -21,17 +21,17 @@ ms.locfileid: "92434613"
 
 ### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>Windows Mixed Reality ready PC 또는 헤드셋은 어디에서 구매할 수 있나요?
 
-**빠른 응답:** 승인 된 로컬 대리점에서 또는 Microsoft Store을 비롯 한 다양 한 소매점에서 온라인으로 Windows Mixed Reality ready PC 또는 헤드셋을 구매할 수 있습니다. Windows Mixed Reality ready PC 또는 헤드셋을 온라인으로 찾습니다. <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**빠른 응답:** 승인 된 로컬 대리점에서 또는 Microsoft Store을 비롯 한 다양 한 소매점에서 온라인으로 Windows Mixed Reality ready PC 또는 헤드셋을 구매할 수 있습니다. Windows Mixed Reality ready PC 또는 헤드셋을 온라인으로 찾습니다. <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### <a name="where-can-i-try-windows-mixed-reality"></a>Windows Mixed Reality를 어디에서 시도할 수 있나요?
 
-**빠른 응답:** 가까운 [Microsoft 재 행위자](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) 에서 Windows Mixed Reality를 사용해 볼 수 있습니다.  
-* 로컬 Microsoft Reactor를 찾습니다. <https://www.microsoft.com/en-us/store/locations/all-locations>
+**빠른 응답:** 가까운 [Microsoft 재 행위자](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) 에서 Windows Mixed Reality를 사용해 볼 수 있습니다.
+
 * Meetup.com에서 Microsoft Reactor 이벤트를 찾습니다. <https://www.meetup.com/pro/microsoft-reactor>
 
 ### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Windows Mixed Reality 장치를 판매 하는 제조업체는 무엇입니까?
 
-**빠른 응답:** 헤드셋 및 동작 컨트롤러는 현재 HP에서 사용할 수 있습니다. <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>를 참조하세요.
+**빠른 응답:** 헤드셋 및 동작 컨트롤러는 현재 HP에서 사용할 수 있습니다. <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>을 참조하십시오.
 
 ### <a name="where-can-i-buy-standalone-motion-controllers"></a>독립 실행형 동작 컨트롤러는 어디에서 구입할 수 있나요?
 
@@ -51,7 +51,7 @@ ms.locfileid: "92434613"
 
 **빠른 응답:** Windows Mixed Reality 헤드셋은 내부 추적 (추적 카메라는 헤드셋에 포함 됨)과 Windows 10의 플러그 앤 플레이 설치 기능을 포함 합니다.
 
-**자세한 정보**: Windows Mixed Reality는 간편한 설치 (사용자 및 컨트롤러를 추적할 수 있는 외부 센서에는 필요 없음), 편안 하 게 사용할 수 있는 헤드셋의 선택, 경쟁 우위를 제공 하는 헤드셋 선택, Microsoft Store에서 수천 개의 앱을 사용할 수 있는 공간 인터페이스를 제공 하는 고유한 사용자 환경 등의 여러 가지 기능을 제공 합니다.
+**자세한 정보** : Windows Mixed Reality는 간편한 설치 (사용자 및 컨트롤러를 추적할 수 있는 외부 센서에는 필요 없음), 편안 하 게 사용할 수 있는 헤드셋의 선택, 경쟁 우위를 제공 하는 헤드셋 선택, Microsoft Store에서 수천 개의 앱을 사용할 수 있는 공간 인터페이스를 제공 하는 고유한 사용자 환경 등의 여러 가지 기능을 제공 합니다.
 
 ### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>혼합 현실에서는 내부 카메라가 통과 하는 것을 의미 하나요? 가상 현실 외에도 확대 현실를 경험할 수 있나요?
 
@@ -257,7 +257,7 @@ ms.locfileid: "92434613"
 
 ### <a name="do-the-mixed-reality-headsets-have-ipd-adjustment"></a>혼합 현실 헤드셋은 IPD 조정을 하나요?
 
-**빠른 응답:** 헤드셋에 따라 일부 혼합 현실 헤드셋은 기계적 IPD 조정을 기능 합니다. 다른 헤드셋은 소프트웨어 IPD 조정 기능을 사용 하 여 IPD를 기반으로 이미지 왜곡 및 깊이 정확도를 향상 시킵니다. 사용자는 **> 헤드셋 디스플레이 > 보정을 > 혼합 현실 설정을**통해 사용자 지정 IPD을 설정할 수 있습니다.
+**빠른 응답:** 헤드셋에 따라 일부 혼합 현실 헤드셋은 기계적 IPD 조정을 기능 합니다. 다른 헤드셋은 소프트웨어 IPD 조정 기능을 사용 하 여 IPD를 기반으로 이미지 왜곡 및 깊이 정확도를 향상 시킵니다. 사용자는 **> 헤드셋 디스플레이 > 보정을 > 혼합 현실 설정을** 통해 사용자 지정 IPD을 설정할 수 있습니다.
 
 ### <a name="do-the-mixed-reality-headsets-have-eye-relief-adjustment"></a>혼합 현실 헤드셋은 눈동자 릴리프 조정을 수행 하나요?
 
@@ -303,7 +303,7 @@ ms.locfileid: "92434613"
 
 ### <a name="does-the-windows-mixed-reality-platform-support-rift-and-vive-hardware"></a>Windows Mixed Reality 플랫폼은 Rift 및 Vive 하드웨어를 지원 하나요?
 
-**빠른 응답:** Windows Mixed Reality는 승인 된 Windows 혼합 현실 헤드셋/컨트롤러 에서만 작동 합니다. <https://www.microsoft.com/en-us/store/b/virtualreality>를 참조하세요.
+**빠른 응답:** Windows Mixed Reality는 승인 된 Windows 혼합 현실 헤드셋/컨트롤러 에서만 작동 합니다. <https://www.microsoft.com/en-us/store/b/virtualreality>을 참조하십시오.
 
 ## <a name="motion-controllers"></a>동작 컨트롤러
 
@@ -332,11 +332,11 @@ ms.locfileid: "92434613"
 
 ### <a name="will-windows-mixed-reality-work-with-my-oculus-touch-controllers-or-htc-vive-headsets--controllers"></a>Windows Mixed Reality는 내 Oculus Touch controller 또는 HTC Vive 헤드셋/controller와 함께 작동 하나요?
 
-**빠른 응답:** 아니요. Windows Mixed Reality는 승인 된 헤드셋/컨트롤러 에서만 작동 합니다. <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>를 참조하세요.
+**빠른 응답:** 아니요. Windows Mixed Reality는 승인 된 헤드셋/컨트롤러 에서만 작동 합니다. <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>을 참조하십시오.
 
 ### <a name="will-windows-mixed-reality-work-with-my-steamvr-knuckle-controllers"></a>Windows Mixed Reality는 내 SteamVR Knuckle 컨트롤러와 함께 작동 하나요?
 
-**빠른 응답:** 아니요. Windows Mixed Reality는 승인 된 헤드셋/컨트롤러 에서만 작동 합니다. <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>를 참조하세요.
+**빠른 응답:** 아니요. Windows Mixed Reality는 승인 된 헤드셋/컨트롤러 에서만 작동 합니다. <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>을 참조하십시오.
 
 ### <a name="will-windows-mixed-reality-support-my-xbox-one-controller-with-the-wireless-xbox-adapter"></a>Windows Mixed Reality는 무선 Xbox 어댑터를 사용 하 여 Xbox One 컨트롤러를 지원 하나요?
 
@@ -368,7 +368,7 @@ ms.locfileid: "92434613"
 
 **빠른 응답:** 예, Windows Mixed Reality는 공간이 많지 않은 경우에도 작동 합니다. "책상-규모" 환경을 선택 하 여 설치 하는 동안이를 설정할 수 있습니다.
 
-## <a name="content"></a>Content
+## <a name="content"></a>콘텐츠
 
 ### <a name="what-games-and-apps-run-on-windows-mixed-reality"></a>Windows Mixed Reality에서 실행 되는 게임 및 앱은 무엇 인가요?
 
