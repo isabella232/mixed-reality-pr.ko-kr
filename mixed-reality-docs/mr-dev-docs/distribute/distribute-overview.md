@@ -13,6 +13,6 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2020
 ms.locfileid: "92638520"
 ---
-# <a name="distribution-overview"></a><span data-ttu-id="f7be0-104">배포 개요</span><span class="sxs-lookup"><span data-stu-id="f7be0-104">Distribution overview</span></span>
+# <a name="distribution-overview"></a><span data-ttu-id="db861-104">배포 개요</span><span class="sxs-lookup"><span data-stu-id="db861-104">Distribution overview</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="f7be0-105">참고 항목</span><span class="sxs-lookup"><span data-stu-id="f7be0-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="db861-105">참고 항목</span><span class="sxs-lookup"><span data-stu-id="db861-105">See also</span></span>
