@@ -1,0 +1,19 @@
+# - name: Overview 
+- name: 3D 앱 시작 관리자
+  items:
+    - name: 디자인 지침
+      href: 3d-app-launcher-design-guidance.md
+    - name: 집에서 사용할 3D 모델 만들기
+      href: creating-3d-models-for-use-in-the-windows-mixed-reality-home.md
+    - name: 3D 앱 시작 관리자 구현
+      items:
+        - name: UWP 앱
+          href: implementing-3d-app-launchers.md
+        - name: Win32 앱
+          href: implementing-3d-app-launchers-win32.md
+    - name: 혼합 현실 홈에서 3D 모델 배치 사용
+      href: enable-placement-of-3d-models-in-the-home.md
+- name: 앱에서 바로 구매
+  href: in-app-purchases.md
+- name: Microsoft Store에 앱 제출
+  href: submitting-an-app-to-the-microsoft-store.md
