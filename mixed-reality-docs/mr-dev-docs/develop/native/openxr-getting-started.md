@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
-keywords: OpenXR, Khronos, BasicXRApp, Windows Mixed Reality OpenXR 개발자 도구, DirectX, 네이티브, 네이티브 앱, 사용자 지정 엔진, 미들웨어, 시작, 101, preview 확장, OpenXR runtime 버전, 시스템 상태
-ms.openlocfilehash: 2f176d591a7272bdcccf6d073e0407bc0d159c29
-ms.sourcegitcommit: d063c767117c055dc5d40c2bd5a680728fca95fb
+keywords: OpenXR, Khronos, BasicXRApp, Windows Mixed Reality, OpenXR 개발자 도구, DirectX, 네이티브, 네이티브 앱, 사용자 지정 엔진, 미들웨어, 시작 하기, 101, preview 확장, OpenXR runtime 버전, 시스템 상태
+ms.openlocfilehash: a641512bf36f2d791c009e6dfa83c1f9bd797547
+ms.sourcegitcommit: c199872c11adae7de24929ed043ea90dea087b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/28/2020
-ms.locfileid: "92886871"
+ms.locfileid: "92903131"
 ---
 # <a name="getting-started-with-openxr"></a>OpenXR 시작
 
@@ -33,16 +33,15 @@ HoloLens 2 용 OpenXR 응용 프로그램 개발을 시작 하려면:
 
 이것으로 끝입니다.  Windows Mixed Reality OpenXR 런타임은 모든 Windows Mixed Reality 사용자에 대해 자동으로 설치 되 고 활성화 됩니다.  그런 다음 Microsoft Store는 런타임을 최신 상태로 유지 합니다.
 
-Windows Mixed Reality OpenXR 런타임을 다시 활성화 해야 하는 경우 시작 메뉴에서 혼합 현실 포털을 시작 하 고 ... 메뉴 왼쪽 아래에서 "OpenXR 설정"을 선택 합니다.  해당 메뉴 항목이 없으면 OpenXR 런타임이 이미 활성 상태입니다.<br>
-![Mixed Reality 포털에서 OpenXR 설정](images/mixed-reality-portal-set-up-openxr.png)
+Windows Mixed Reality OpenXR 런타임을 다시 활성화 해야 하는 경우 시작 메뉴에서 혼합 현실 포털을 시작 하 고 창의 맨 위에 있는 배너에서 "수정"을 클릭 합니다.  해당 단추가 없으면 OpenXR 런타임이 이미 활성 상태입니다.<br>
 
-## <a name="getting-the-windows-mixed-reality-openxr-developer-tools"></a>Windows Mixed Reality OpenXR 개발자 도구 가져오기
+## <a name="getting-the-openxr-developer-tools-for-windows-mixed-reality"></a>Windows Mixed Reality OpenXR 개발자 도구 가져오기
 
-Windows Mixed Reality OpenXR 런타임을 사용해 보려면 <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">Mixed Reality OpenXR 개발자 도구 앱</a>을 설치 하면 됩니다.  이 앱은 활성 런타임과 현재 헤드셋에 대 한 주요 정보를 제공 하는 시스템 상태 페이지와 함께 OpenXR의 다양 한 기능을 실행 하는 데모 장면을 제공 합니다.
+Windows Mixed Reality OpenXR 런타임을 사용해 <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">보려면 OpenXR 개발자 도구 For Windows Mixed reality 앱</a>을 설치 하면 됩니다.  이 앱은 활성 런타임과 현재 헤드셋에 대 한 주요 정보를 제공 하는 시스템 상태 페이지와 함께 OpenXR의 다양 한 기능을 실행 하는 데모 장면을 제공 합니다.
 
-HoloLens 2 에뮬레이터를 사용 하는 경우 혼합 현실 OpenXR 개발자 도구를 설치 하는 가장 쉬운 방법은 "OpenXR" 페이지로 이동한 다음 "개발자 기능"에서 "설치" 단추를 클릭 하 여 [Windows 장치 포털](../platform-capabilities-and-apis/using-the-windows-device-portal.md)을 사용 하는 것입니다. (이는 실제 HoloLens 2 장치 에서도 작동 함)
+HoloLens 2 에뮬레이터를 사용 하는 경우 Windows Mixed Reality에 OpenXR 개발자 도구를 설치 하는 가장 쉬운 방법은 [Windows 장치 포털](../platform-capabilities-and-apis/using-the-windows-device-portal.md)을 사용 하는 것입니다 .이 방법은 "OpenXR" 페이지로 이동한 다음 "개발자 기능"에서 "설치" 단추를 클릭 합니다. (이는 실제 HoloLens 2 장치 에서도 작동 함)
 
-![혼합 현실 OpenXR 개발자 도구 앱](images/mixed-reality-openxr-developer-tools.png)
+![Windows Mixed Reality 앱에 대 한 OpenXR 개발자 도구](images/mixed-reality-openxr-developer-tools.png)
 
 ## <a name="building-a-sample-openxr-app"></a>샘플 OpenXR 앱 빌드
 
@@ -59,7 +58,6 @@ OpenXR UWP 앱 패키지를 빌드한 후에는 HoloLens 2 장치 또는 HoloLen
 ## <a name="learning-the-openxr-api"></a>OpenXR API 학습
 
 OpenXR API 둘러보기는이 60 분 비디오에서 Visual Studio의 <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> 샘플 코드를 안내 하는 비디오를 확인 하세요.  비디오는 OpenXR API의 각 주요 구성 요소를 사용자의 엔진에서 사용 하는 방법을 보여 주고, 현재 OpenXR에서 빌드된 일부 응용 프로그램을 보여 줍니다.
-
 >[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
 
 ## <a name="integrate-the-openxr-loader-into-a-project"></a>OpenXR 로더를 프로젝트에 통합
@@ -99,13 +97,11 @@ Visual Studio c + + 솔루션에 OpenXR NuGet 패키지 참조를 추가 하려�
 
 그런 다음 대상 HoloLens 2 또는 데스크톱 PC에서 preview 확장 지원을 활성화 합니다.
   1. 모든 [확장이](openxr.md#roadmap) 있는 최신 OpenXR 런타임이 있는지 확인 하 고, 대상 장치 또는 에뮬레이터 내에서 **스토어** 앱을 시작 하 고, 오른쪽 위의 메뉴를 열고, **다운로드 및 업데이트** 를 클릭 하 고, **업데이트 가져오기** 를 클릭 합니다.
-  1. 대상 장치에서 Windows 장치 포털을 사용 하도록 설정 합니다.
-     * 대상 장치가 HoloLens 2 장치인 경우 대상 장치에서 [다음 지침을 따릅니다](../platform-capabilities-and-apis/using-the-windows-device-portal.md) .  이 경우 HoloLens 2 에뮬레이터에서 알려진 문제로 인해 다음 단계의 UI가 에뮬레이터에 표시 되지 않도록 하는 실제 헤드셋이 필요 합니다.
-     * 대상 장치가 몰입 형 헤드셋 주변 기기가 첨부 된 데스크톱 PC 인 경우 대상 데스크톱 PC에서 <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop#set-up-device-portal-on-windows-desktop" target="_blank">다음 지침을 따릅니다</a> .
-  1. 왼쪽 창에서 **OpenXR** 탭으로 이동 하 고 **최신 Preview OpenXR runtime 사용** 을 설정 합니다.  이렇게 하면 미리 보기 확장이 활성화 된 장치에서 미리 보기 런타임을 사용할 수 있습니다.
-     ![Device Portal OpenXR preview runtime 확인란](images/device-portal-openxr-preview-runtime.png)
-  1. [Windows Mixed Reality OpenXR 개발자 도구](openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) 의 **시스템 상태** 탭에 표시 된 **런타임 버전이** 현재 시도 하려는 preview 확장의 필수 버전과 일치 하는지 확인 합니다.  그렇다면 **확장 목록에 확장 프로그램이 표시** 됩니다.  안정적인 확장을 사용할 수 있게 되 면 미리 보기 확장이 제거 됩니다.<br />
-     ![Mixed Reality OpenXR 개발자 도구 앱 시스템 상태 탭](images/mixed-reality-openxr-developer-tools-status.png)
+  1. Microsoft Store에서 대상 장치로 <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">Windows Mixed Reality 앱에 대 한 OpenXR 개발자 도구</a> 를 설치 하 고 실행 합니다.
+  1. **개발자 설정** 탭으로 이동 하 여 **최신 Preview OpenXR runtime 사용** 을 설정 합니다.  이렇게 하면 미리 보기 확장이 활성화 된 장치에서 미리 보기 런타임을 사용할 수 있습니다.
+     ![OpenXR 개발자 도구 for Windows Mixed Reality 앱 개발자 설정 탭](images/mixed-reality-openxr-developer-tools-settings.png)
+  1. [Windows Mixed Reality에 대 한 OpenXR 개발자 도구](openxr-getting-started.md#getting-the-openxr-developer-tools-for-windows-mixed-reality) 의 **시스템 상태** 탭에 표시 된 **런타임 버전이** 현재 시도 하려는 preview 확장의 필수 버전과 일치 하는지 확인 합니다.  그렇다면 **확장 목록에 확장 프로그램이 표시** 됩니다.  안정적인 확장을 사용할 수 있게 되 면 미리 보기 확장이 제거 됩니다.<br />
+     ![OpenXR 개발자 도구 for Windows Mixed Reality 앱 시스템 상태 탭](images/mixed-reality-openxr-developer-tools-status.png)
 
 이러한 preview 확장의 설명서 및 사용 방법에 대 한 샘플은 <a href="https://github.com/microsoft/OpenXR-MixedReality#openxr-preview-extensions" target="_blank">Mixed Reality OpenXR 리포지토리</a> 를 참조 하세요.
 
