@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: b9b9d46e2ab71fa90960e403ceac94b95ba01440
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 75d8ade12d5534a1eb86f36bcdd590539a6811b5
+ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293074"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92683179"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Windows Mixed Reality의 PC 호환성에 대 한 도움말 보기
 
@@ -41,11 +41,11 @@ PC에서 일부 Windows Mixed Reality 환경을 실행할 수 있어야 하지�
 
 ### <a name="this-pc-has-a-hybrid-graphics-configuration-with-an-incompatible-pcie-link"></a>이 PC에는 호환 되지 않는 PCIe 링크로 하이브리드 그래픽 구성이 있습니다.
 
-PCIe는 *주변 구성 요소 상호 연결 Express*를 나타냅니다. PC에서 그래픽 카드와 통신 하는 데 사용 하는 연결입니다. 구성이 작동할 수 있지만 문제가 발생 하는 경우 [호환 되는 PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)로 전환 해야 합니다.
+PCIe는 *주변 구성 요소 상호 연결 Express* 를 나타냅니다. PC에서 그래픽 카드와 통신 하는 데 사용 하는 연결입니다. 구성이 작동할 수 있지만 문제가 발생 하는 경우 [호환 되는 PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)로 전환 해야 합니다.
 
 ### <a name="this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality"></a>이 PC의 그래픽 드라이버는 Windows Mixed Reality에서 제대로 작동 하지 않을 수 있습니다.
 
-문제가 발생 하는 경우 Windows 업데이트를 사용 하 여 새 그래픽 드라이버를 다운로드 해 보세요 (**> 설정 > 업데이트 & 보안 > 업데이트 확인**). 또는 PC 제조업체나 그래픽 카드 제조업체의 웹 사이트로 이동 합니다.
+문제가 발생 하는 경우 Windows 업데이트를 사용 하 여 새 그래픽 드라이버를 다운로드 해 보세요 ( **> 설정 > 업데이트 & 보안 > 업데이트 확인** ). 또는 PC 제조업체나 그래픽 카드 제조업체의 웹 사이트로 이동 합니다.
 
 > [!div class="nextstepaction"]
 > [업데이트 확인](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
@@ -63,10 +63,10 @@ Windows Mixed Reality를 실행 하는 데 문제가 발생 하는 경우 다음
 * 사용 가능한 경우 헤드셋을 다른 USB 포트에 연결 합니다.
 * 그래도 작동 하지 않으면 PC의 현재 USB 드라이버를 제거 하 고 Microsoft 드라이버를 다시 설치 합니다.
 
-1. **시작**을 선택한 다음 **검색** 상자에 "장치 관리자"를 입력 합니다.
+1. **시작** 을 선택한 다음 **검색** 상자에 "장치 관리자"를 입력 합니다.
 2. 결과에서 **Device Manager** 를 선택 합니다.
 3. 범용 직렬 버스 컨트롤러의 범주를 확장 하 고 나열 된 장치를 확인 한 다음 호환 되지 않는 드라이버를 모두 제거 합니다.
-    * 장치 이름 끝에 "Microsoft"가 없는 "확장 가능 호스트 컨트롤러" 항목이 목록에 포함 되어 있으면 해당 드라이버는 Windows Mixed Reality와 호환 되지 않습니다. 제거 해야 합니다. 드라이버를 제거 하려면 목록에서 장치를 마우스 오른쪽 단추로 클릭 하 고 **장치 제거**를 선택 합니다. **이 장치에 대 한 드라이버 소프트웨어 삭제** 확인란을 선택 하 고 **제거**를 선택 합니다.
+    * 장치 이름 끝에 "Microsoft"가 없는 "확장 가능 호스트 컨트롤러" 항목이 목록에 포함 되어 있으면 해당 드라이버는 Windows Mixed Reality와 호환 되지 않습니다. 제거 해야 합니다. 드라이버를 제거 하려면 목록에서 장치를 마우스 오른쪽 단추로 클릭 하 고 **장치 제거** 를 선택 합니다. **이 장치에 대 한 드라이버 소프트웨어 삭제** 확인란을 선택 하 고 **제거** 를 선택 합니다.
     * 이름에 "Etron"가 포함 된 "확장 가능한 호스트 컨트롤러" 항목이 목록에 포함 되어 있으면 해당 USB 컨트롤러는 Windows Mixed Reality와 호환 되지 않습니다. PC에서 다른 USB 포트를 사용 하거나 다른 USB 3.0 호스트 컨트롤러를 구입 해야 합니다.
 4. PC를 다시 시작 합니다.
 5. Device Manager로 돌아가서 확장 가능한 호스트 컨트롤러 항목을 다시 찾습니다. 이제 장치 이름 끝에 "Microsoft"가 표시 되 면 이동 하는 것이 좋습니다. 그렇지 않은 경우 제거 단계를 반복 하 여 Microsoft 이외의 다른 버전의 드라이버를 제거 합니다.
@@ -99,7 +99,7 @@ Windows Mixed Reality 헤드셋을 연결 하려면 셀프 기반 USB 3.0 포트
 
 ### <a name="this-pcs-graphics-driver-wont-work-with-windows-mixed-reality"></a>이 PC의 그래픽 드라이버는 Windows Mixed Reality에서 작동 하지 않습니다.
 
-이 PC의 그래픽 드라이버는 Windows Mixed Reality에서 작동 하지 않습니다. Windows 업데이트를 사용 하 여 새 그래픽 드라이버를 다운로드 해 보세요. (**> 설정 > 업데이트 & 보안 > 업데이트 확인**), 또는 PC 제조업체나 그래픽 카드 제조업체의 웹 사이트로 이동 합니다. 
+이 PC의 그래픽 드라이버는 Windows Mixed Reality에서 작동 하지 않습니다. Windows 업데이트를 사용 하 여 새 그래픽 드라이버를 다운로드 해 보세요. ( **> 설정 > 업데이트 & 보안 > 업데이트 확인** ), 또는 PC 제조업체나 그래픽 카드 제조업체의 웹 사이트로 이동 합니다. 
 
 > [!div class="nextstepaction"]
 > [업데이트 확인](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
@@ -108,7 +108,7 @@ Windows Mixed Reality 헤드셋을 연결 하려면 셀프 기반 USB 3.0 포트
 
 ### <a name="this-pcs-processor-wont-work-with-windows-mixed-reality"></a>이 PC의 프로세서는 Windows Mixed Reality에서 작동 하지 않습니다.
 
-이 PC의 프로세서는 supprot AVX/Popcnt 지침이 아닙니다. Windows Mixed Reality를 실행 하려면 [호환 되는 그래픽 카드로](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) 바꾸거나 [호환 가능한 PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)로 전환 해야 합니다.
+이 PC의 프로세서는 AVX/Popcnt 명령을 지원 하지 않습니다. Windows Mixed Reality를 실행 하려면 [호환 되는 그래픽 카드로](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) 바꾸거나 [호환 가능한 PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)로 전환 해야 합니다.
 
 ### <a name="this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality"></a>이 PC에는 Windows Mixed Reality를 실행 하는 데 사용 가능한 디스크 공간이 충분 하지 않습니다.
 
@@ -142,7 +142,7 @@ Windows Mixed Reality를 사용 하려면 모니터가 연결 된 PC를 사용 �
 > [!NOTE]
 > "이 하드웨어 구성은 Windows Mixed Reality에서 작동할 수 있지만 아직 테스트 되지 않았습니다." 라는 메시지가 표시 되 면 긴 세션에 대해 Windows Mixed Reality를 실행할 때 몇 가지 성능 문제가 발생할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [커뮤니티에 질문하기](https://answers.microsoft.com)
 * [지원 문의](https://support.microsoft.com/contactus/)
