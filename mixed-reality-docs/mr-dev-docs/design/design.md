@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 검색, 배포, 인덱스, 방문 페이지, 디자인, 개발, 자습서, 샘플 앱, 기본 사항, 사례 연구, 리소스, HoloLens 방법, 오픈 소스 프로젝트, 핵심 개념, 상호 작용
-ms.openlocfilehash: 947d9378cd65ceda11cf5dbb1d103a8f9bcc6e63
-ms.sourcegitcommit: 8aa3b0034f9f2ff0973d49061c669a82c2c8d7e6
+ms.openlocfilehash: 7333163a01496f41c4cb3cd98f54012e5c58a8d4
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92058587"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293126"
 ---
 # <a name="start-designing-and-prototyping"></a>디자인 및 프로토타입 생성 시작
 
@@ -32,9 +32,9 @@ Mixed Reality 애플리케이션은 오늘날 전 세계의 다른 애플리케�
 
 |  검사점  |  결과  |
 | --- | --- |
-| [디자인 프로세스 확장](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Microsoft 내부 및 외부의 Mixed Reality 개발자로부터 수집한 방법, 인사이트 및 디자인 이론을 직접 살펴봅니다. |
+| [디자인 프로세스 확장](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Microsoft 내부 및 외부의 디자이너로부터 수집한 Mixed Reality의 디자인 프로세스를 직접 살펴보세요. |
 | [Mixed Reality 앱 유형](types-of-mixed-reality-apps.md) | 앱 환경이 Mixed Reality 스펙트럼에서 라이브 상태가 되는 위치를 결정합니다. |
-| [Holograms 앱 디자인](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | 놀라운 HoloLens 앱을 만들기 위한 혼합 현실 동작, 팁 및 권장 사항을 자세히 살펴보고 직접 경험하면서 혼합 현실 UX 디자인의 기본 사항에 대해 알아봅니다. |
+| [Holograms 앱 디자인](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | 놀라운 HoloLens 앱을 만들기 위한 혼합 현실 동작, 팁 및 권장 사항을 자세히 살펴보고 직접 경험하면서 혼합 현실 UX 디자인의 기본 사항에 대해 알아봅니다(HoloLens 2의 Microsoft Store에서 다운로드 가능). |
 
 ### <a name="2-core-concepts"></a>2. 핵심 개념
 
@@ -46,7 +46,7 @@ VR 또는 AR용으로 개발하는지에 관계없이 유동적인 몰입형 환
 | --- | --- |
 | [홀로그램 프레임](holographic-frame.md) | 헤드셋을 착용하면 현실 세계에 겹쳐진 콘텐츠가 사용자에게 표시되는 방법을 이해합니다. |
 | [좌표계](coordinate-systems.md) | 물리적 공간인지, 아니면 직접 만든 가상 영역인지에 관계없이 사용자에게 의미 있는 위치에 홀로그램을 정확하게 배치하는 방법을 알아봅니다. |
-| [공간 매핑](spatial-mapping.md) | 개체를 사용자의 세계에 고정하고, 현실 세계 깊이 신호를 활용합니다. |
+| [공간 매핑](spatial-mapping.md) | 개체를 사용자의 세계에 고정하고, 현실 세계의 물리적 표면을 활용합니다. |
 | [편안함 고려사항](comfort.md) | 자연 세계를 모방하는 방식으로 몰입형 콘텐츠를 만들고 제공하여 사용자의 편의와 안전을 보장합니다. |
 
 ### <a name="3-interaction-design"></a>3. 상호 작용 디자인
