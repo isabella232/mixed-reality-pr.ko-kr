@@ -13,6 +13,6 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2020
 ms.locfileid: "92638500"
 ---
-# <a name="porting-overview"></a><span data-ttu-id="e1e99-104">포팅 개요</span><span class="sxs-lookup"><span data-stu-id="e1e99-104">Porting overview</span></span>
+# <a name="porting-overview"></a><span data-ttu-id="70c2e-104">포팅 개요</span><span class="sxs-lookup"><span data-stu-id="70c2e-104">Porting overview</span></span>
 
-<span data-ttu-id="e1e99-105">[//TODO: 헤더 이미지 필요]</span><span class="sxs-lookup"><span data-stu-id="e1e99-105">[//TODO: Need header image]</span></span>
+<span data-ttu-id="70c2e-105">[//TODO: 헤더 이미지 필요]</span><span class="sxs-lookup"><span data-stu-id="70c2e-105">[//TODO: Need header image]</span></span>

@@ -1,0 +1,450 @@
+- name: Mixed Reality 개발 소개
+  href: development.md
+- name: Azure Cloud Services
+  href: mixed-reality-cloud-services.md
+- name: 도구 설치
+  href: install-the-tools.md
+- name: 앱 포팅
+  items:
+    - name: HoloLens 2를 위한 기존 앱 준비
+      href: unity/mrtk-porting-guide.md
+    - name: 몰입형 앱 포팅 가이드
+      href: porting-apps/porting-guides.md
+    - name: SteamVR용 업데이트
+      href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
+    - name: 혼합 현실용 2D UWP 앱 업데이트
+      href: porting-apps/building-2d-apps.md
+- name: Unity
+  items:
+    - name: Unity 개발 개요
+      href: unity/unity-development-overview.md
+    - name: 시작
+      items:
+        - name: Mixed Reality Toolkit v2 시작
+          href: unity/mrtk-getting-started.md
+        - name: Windows Mixed Reality를 위한 Unity 프로젝트 구성
+          href: unity/configure-unity-project.md
+        - name: HoloLens 2를 위한 기존 앱 준비
+          href: unity/mrtk-porting-guide.md
+    - name: 자습서
+      items:
+        - name: 개요
+          href: unity/tutorials.md
+        - name: HoloLens 2 자습서
+          items:
+            - name: 시작 자습서
+              items:
+                - name: 1. 소개
+                  href: unity/tutorials/mr-learning-base-01.md
+                - name: 2. 프로젝트 및 첫 번째 애플리케이션 초기화
+                  href: unity/tutorials/mr-learning-base-02.md
+                - name: 3. Mixed Reality Toolkit 프로필 구성
+                  href: unity/tutorials/mr-learning-base-03.md
+                - name: 4. 장면에서 개체 위치 지정
+                  href: unity/tutorials/mr-learning-base-04.md
+                - name: 5. Solver를 사용하여 동적 콘텐츠 만들기
+                  href: unity/tutorials/mr-learning-base-05.md
+                - name: 6. 사용자 인터페이스 만들기
+                  href: unity/tutorials/mr-learning-base-06.md
+                - name: 7. 3D 개체와 상호 작용
+                  href: unity/tutorials/mr-learning-base-07.md
+                - name: 8. 시선 추적 사용
+                  href: unity/tutorials/mr-learning-base-08.md
+                - name: 9. 음성 명령 사용
+                  href: unity/tutorials/mr-learning-base-09.md
+            - name: Azure Spatial Anchors 자습서
+              items:
+                - name: 1. 소개
+                  href: unity/tutorials/mr-learning-asa-01.md
+                - name: 2. Azure Spatial Anchors 시작
+                  href: unity/tutorials/mr-learning-asa-02.md
+                - name: '3. Azure Spatial Anchors 저장, 검색 및 공유'
+                  href: unity/tutorials/mr-learning-asa-03.md
+                - name: 4. Azure Spatial Anchor 피드백 표시
+                  href: unity/tutorials/mr-learning-asa-04.md
+                - name: 5. Android 및 iOS용 Azure Spatial Anchors
+                  href: unity/tutorials/mr-learning-asa-05.md
+            - name: 다중 사용자 기능 자습서
+              items:
+                - name: 1. 소개
+                  href: unity/tutorials/mr-learning-sharing-01.md
+                - name: 2. Photon Unity 네트워킹 설정
+                  href: unity/tutorials/mr-learning-sharing-02.md
+                - name: 3. 여러 사용자 연결
+                  href: unity/tutorials/mr-learning-sharing-03.md
+                - name: 4. 여러 사용자와 개체 움직임 공유
+                  href: unity/tutorials/mr-learning-sharing-04.md
+                - name: 5. 공유 환경에 Azure Spatial Anchors 통합
+                  href: unity/tutorials/mr-learning-sharing-05.md
+            - name: Azure Speech Services 자습서
+              items:
+                - name: 1. 음성 인식 및 전사 통합 및 사용
+                  href: unity/tutorials/mrlearning-speechsdk-ch1.md
+                - name: 2. 로컬 음성-텍스트 변환을 위한 오프라인 모드 추가
+                  href: unity/tutorials/mrlearning-speechsdk-ch2.md
+                - name: 3. Azure Cognition Services 음성 변환 구성 요소 추가
+                  href: unity/tutorials/mrlearning-speechsdk-ch3.md
+                - name: 4. 의도 및 자연어 이해 설정
+                  href: unity/tutorials/mrlearning-speechsdk-ch4.md
+            - name: 공간 오디오 자습서
+              items:
+                - name: 1. 프로젝트에서 공간 오디오 추가
+                  href: unity/tutorials/unity-spatial-audio-ch1.md
+                - name: 2. 공간화 단추 상호 작용 사운드
+                  href: unity/tutorials/unity-spatial-audio-ch2.md
+                - name: 3. 비디오에서 공간화 오디오
+                  href: unity/tutorials/unity-spatial-audio-ch3.md
+                - name: 4. 런타임 시 공간 오디오 사용 및 사용 안 함
+                  href: unity/tutorials/unity-spatial-audio-ch4.md
+                - name: 5. 반향 효과를 이용해 공간 오디오에 거리감 부여
+                  href: unity/tutorials/unity-spatial-audio-ch5.md
+            - name: Azure Cloud Services 자습서
+              items:
+                - name: 1. HoloLens 2용 Azure Cloud Services
+                  href: unity/tutorials/mr-learning-azure-01.md
+                - name: 2. Azure Storage 통합
+                  href: unity/tutorials/mr-learning-azure-02.md
+                - name: 3. Azure Custom Vision 통합
+                  href: unity/tutorials/mr-learning-azure-03.md
+                - name: 4. Integrating Azure Spatial 통합
+                  href: unity/tutorials/mr-learning-azure-04.md
+                - name: 5. Azure Bot Service 통합
+                  href: unity/tutorials/mr-learning-azure-05.md
+            - name: PC 홀로그램 원격 자습서
+              items:
+                - name: 1. PC 홀로그램 원격 시작
+                  href: unity/tutorials/mr-learning-pc-holographic-remoting-01.md
+                - name: 2. 홀로그램 원격 PC 애플리케이션 만들기
+                  href: unity/tutorials/mr-learning-pc-holographic-remoting-02.md
+        - name: HoloLens(1세대) 및 몰입형 헤드셋 자습서
+          items:
+            - name: MR 기본 사항 100 - Unity 시작
+              href: unity/tutorials/holograms-100.md
+            - name: MR 기본 사항 101 - 디바이스를 사용하여 프로젝트 수행
+              href: unity/tutorials/holograms-101.md
+            - name: MR 기본 사항 101E - 에뮬레이터를 사용하여 프로젝트 수행
+              href: unity/tutorials/holograms-101e.md
+            - name: MR 입력 210 - 응시
+              href: unity/tutorials/holograms-210.md
+            - name: MR 입력 211 - 제스처
+              href: unity/tutorials/holograms-211.md
+            - name: MR 입력 212 - 음성
+              href: unity/tutorials/holograms-212.md
+            - name: MR 공간 220 - 공간 사운드
+              href: unity/tutorials/holograms-220.md
+            - name: MR 공간 230 - 공간 매핑
+              href: unity/tutorials/holograms-230.md
+            - name: MR 공유 240 - 여러 HoloLens 디바이스
+              href: unity/tutorials/holograms-240.md
+        - name: Mixed Reality 및 Azure Services 자습서
+          items:
+            - name: MR 및 Azure 301 - 언어 번역
+              href: unity/tutorials/mr-azure-301.md
+            - name: MR 및 Azure 302 - 컴퓨터 비전
+              href: unity/tutorials/mr-azure-302.md
+            - name: MR 및 Azure 302b - Custom Vision
+              href: unity/tutorials/mr-azure-302b.md
+            - name: MR 및 Azure 303 - 자연어 이해
+              href: unity/tutorials/mr-azure-303.md
+            - name: MR 및 Azure 304 - 얼굴 인식
+              href: unity/tutorials/mr-azure-304.md
+            - name: MR 및 Azure 305 - 함수 및 스토리지
+              href: unity/tutorials/mr-azure-305.md
+            - name: MR 및 Azure 306 - 스트리밍 비디오
+              href: unity/tutorials/mr-azure-306.md
+            - name: MR 및 Azure 307 - 기계 학습
+              href: unity/tutorials/mr-azure-307.md
+            - name: MR 및 Azure 308 - 디바이스 간 알림
+              href: unity/tutorials/mr-azure-308.md
+            - name: MR 및 Azure 309 - 애플리케이션 인사이트
+              href: unity/tutorials/mr-azure-309.md
+            - name: MR 및 Azure 310 - 개체 검색
+              href: unity/tutorials/mr-azure-310.md
+            - name: MR 및 Azure 311 - Microsoft Graph
+              href: unity/tutorials/mr-azure-311.md
+            - name: MR 및 Azure 312 - 봇 통합
+              href: unity/tutorials/mr-azure-312.md
+            - name: MR 및 Azure 313 - IoT Hub 서비스
+              href: unity/tutorials/mr-azure-301.md
+    - name: 핵심 구성 요소
+      items:
+        - name: MRTK 101 - 기본 상호 작용에 Mixed Reality Toolkit Unity를 사용하는 방법
+          href: unity/mrtk-101.md
+        - name: Unity의 카메라
+          href: unity/camera-in-unity.md
+        - name: Unity의 좌표계
+          href: unity/coordinate-systems-in-unity.md
+        - name: Unity의 지속성
+          href: unity/persistence-in-unity.md
+        - name: Unity의 응시
+          href: unity/gaze-in-unity.md
+        - name: Unity의 텍스트
+          href: unity/text-in-unity.md
+        - name: Unity의 제스처 및 모션 컨트롤러
+          href: unity/gestures-and-motion-controllers-in-unity.md
+        - name: Unity에서 손 및 시선 추적
+          href: unity/hand-eye-in-unit.md
+        - name: Unity의 음성 입력
+          href: unity/voice-input-in-unity.md
+        - name: Unity의 공간 매핑
+          href: unity/spatial-mapping-in-unity.md
+        - name: Unity의 공간 음향
+          href: unity/spatial-sound-in-unity.md
+    - name: 플랫폼 기능 및 API
+      items:
+        - name: Unity의 공유 환경
+          href: unity/shared-experiences-in-unity.md
+        - name: Unity의 위치를 찾을 수 있는 카메라
+          href: unity/locatable-camera-in-unity.md
+        - name: Unity의 포커스 포인트
+          href: unity/focus-point-in-unity.md
+        - name: Unity의 손실 추적
+          href: unity/tracking-loss-in-unity.md
+        - name: Unity의 키보드 입력
+          href: unity/keyboard-input-in-unity.md
+        - name: HoloLens용 Unity 앱에서 Windows 네임스페이스 사용
+          href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
+        - name: Unity의 혼합 현실 기본 개체
+          href: unity/unity-xrdevice-advanced.md
+        - name: Unity와 함께 Vuforial 사용
+          href: unity/vuforia-development-overview.md
+    - name: 몰입형 VR
+      items:
+        - name: Unity의 HP Reverb G2 컨트롤러
+          href: unity/unity-reverb-g2-controllers.md
+    - name: 샘플 앱
+      items:
+        - name: 개요
+          href: unity/samples.md
+        - name: HoloLens 2
+          items:
+            - name: Surfaces
+              href: null
+            - name: 원소의 주기율표 2.0
+              href: 'https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158'
+            - name: Galaxy Explorer 2.0
+              href: unity/galaxy-explorer-update.md
+        - name: HoloLens(1세대)
+          items:
+            - name: 원소의 주기율표
+              href: unity/periodic-table-of-the-elements.md
+            - name: 갤럭시 익스플로러 1.0
+              href: unity/galaxy-explorer.md
+            - name: 달착륙선
+              href: unity/lunar-module.md
+    - name: 설정 및 디버깅
+      items:
+        - name: Unity IL2CPP를 사용하여 디버깅 관리
+          href: unity/managed-debugging-with-unity-il2cpp.md
+        - name: Unity 권장 설정
+          href: unity/recommended-settings-for-unity.md
+        - name: Unity 플레이 모드
+          href: unity/unity-play-mode.md
+    - name: Visual Studio 솔루션
+      items:
+        - name: Unity Visual Studio 솔루션 내보내기 및 빌드
+          href: unity/exporting-and-building-a-unity-visual-studio-solution.md
+        - name: Unity 및 Visual Studio 사용 모범 사례
+          href: unity/best-practices-for-working-with-unity-and-visual-studio.md
+- name: Unreal
+  items:
+    - name: Unreal 개발 개요
+      href: unreal/unreal-development-overview.md
+    - name: 자습서
+      items:
+        - name: MRTK UX 도구를 사용하여 체스 앱 빌드
+          items:
+            - name: 시작
+              href: unreal/tutorials/unreal-uxt-ch1.md
+            - name: 프로젝트 초기화
+              href: unreal/tutorials/unreal-uxt-ch2.md
+            - name: 혼합 현실 설정
+              href: unreal/tutorials/unreal-uxt-ch3.md
+            - name: 상호 작용 추가
+              href: unreal/tutorials/unreal-uxt-ch4.md
+            - name: UI 및 함수
+              href: unreal/tutorials/unreal-uxt-ch5.md
+            - name: 패키징 및 배포
+              href: unreal/tutorials/unreal-uxt-ch6.md
+    - name: 핵심 구성 요소
+      items:
+        - name: Unreal의 응시 입력
+          href: unreal/unreal-gaze-input.md
+        - name: Unreal의 직접 추적
+          href: unreal/unreal-hand-tracking.md
+        - name: Unreal의 공간 매핑
+          href: unreal/unreal-spatial-mapping.md
+        - name: Unreal의 공간 오디오
+          href: unreal/unreal-spatial-audio.md
+        - name: Unreal의 로컬 공간 앵커
+          href: unreal/unreal-spatial-anchors.md
+        - name: Unreal의 Azure Spatial Anchors
+          href: unreal/unreal-azure-spatial-anchors.md
+        - name: Unreal의 음성 입력
+          href: unreal/unreal-voice-input.md
+    - name: 플랫폼 기능 및 API
+      items:
+        - name: Unreal의 HoloLens 사진/비디오 카메라
+          href: unreal/unreal-hololens-camera.md
+        - name: Unreal의 QR 코드
+          href: unreal/unreal-qr-codes.md
+        - name: Unreal의 WinRT
+          href: unreal/unreal-winrt.md
+    - name: 몰입형 VR
+      items:
+        - name: Unreal의 HP Reverb G2 컨트롤러
+          href: unreal/unreal-reverb-g2-controllers.md
+    - name: 샘플 앱
+      items:
+        - name: 개요
+          href: unreal/unreal-samples.md
+        - name: Kippy의 이스케이프
+          href: unreal/unreal-kippys-escape.md
+    - name: 배포 및 성능
+      items:
+        - name: Unreal의 디바이스에 배포
+          href: unreal/unreal-deploying.md
+        - name: Unreal을 사용하기 위한 권장 성능
+          href: unreal/performance-recommendations-for-unreal.md
+        - name: Unreal의 재질 권장 사항
+          href: unreal/unreal-materials.md
+        - name: Unreal의 스트리밍
+          href: unreal/unreal-streaming.md
+- name: 웹
+  items:
+    - name: 웹 개발 개요
+      href: web/javascript-development-overview.md
+    - name: WebXR
+      href: web/webxr-overview.md
+    - name: WebVR
+      href: web/webvr-overview.md
+- name: 네이티브
+  items:
+    - name: 네이티브 개발 개요
+      href: native/directx-development-overview.md
+    - name: OpenXR
+      items:
+        - name: OpenXR 개요
+          href: native/openxr.md
+        - name: OpenXR 시작
+          href: native/openxr-getting-started.md
+        - name: OpenXR 모범 사례
+          href: native/openxr-best-practices.md
+        - name: OpenXR 성능
+          href: native/openxr-performance.md
+        - name: OpenXR 문제 해결
+          href: native/openxr-troubleshooting.md
+    - name: WinRT(레거시)
+      items:
+        - name: 시작
+          items:
+            - name: 네이티브 홀로그램 프로젝트 만들기
+              href: native/creating-a-holographic-directx-project.md
+            - name: HolographicSpace 받기
+              href: native/getting-a-holographicspace.md
+            - name: 네이티브 렌더링
+              href: native/rendering-in-directx.md
+            - name: 좌표계
+              href: native/coordinate-systems-in-directx.md
+        - name: 핵심 구성 요소
+          items:
+            - name: 헤드 및 시선 응시
+              href: native/gaze-in-directx.md
+            - name: 손 및 모션 컨트롤러
+              href: native/hands-and-motion-controllers-in-directx.md
+            - name: 음성 입력
+              href: native/voice-input-in-directx.md
+            - name: 공간 매핑
+              href: native/spatial-mapping-in-directx.md
+- name: 플랫폼 기능 및 API
+  items:
+    - name: 핵심 구성 요소
+      items:
+        - name: 장면 이해
+          href: platform-capabilities-and-apis/scene-understanding-sdk.md
+        - name: 공유 공간 앵커
+          href: platform-capabilities-and-apis/shared-spatial-anchors-in-directx.md
+        - name: '키보드, 마우스 및 컨트롤러 입력'
+          href: platform-capabilities-and-apis/keyboard-mouse-and-controller-input-in-directx.md
+        - name: 홀로그램 DirectX 앱에서 XAML 사용
+          href: platform-capabilities-and-apis/using-xaml-with-holographic-directx-apps.md
+        - name: QR 코드 추적
+          href: platform-capabilities-and-apis/qr-code-tracking.md
+    - name: 혼합 현실의 공유 환경
+      items:
+        - name: 혼합 현실의 공유 환경
+          href: platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md
+        - name: Azure Spatial Anchors
+          href: 'https://docs.microsoft.com/azure/spatial-anchors/'
+        - name: Spectator View
+          href: platform-capabilities-and-apis/spectator-view.md
+        - name: WebRTC
+          href: 'https://github.com/microsoft/MixedReality-WebRTC'
+    - name: 카메라 및 캡처
+      items:
+        - name: 위치를 찾을 수 있는 카메라
+          href: platform-capabilities-and-apis/locatable-camera.md
+        - name: 개발자를 위한 혼합 현실 캡처
+          href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
+        - name: 작동 방법 - 혼합 현실 캡처 스튜디오
+          href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
+    - name: 홀로그램 원격
+      items:
+        - name: 홀로그램 원격 플레이어
+          href: platform-capabilities-and-apis/holographic-remoting-player.md
+        - name: 홀로그램 원격 원격 앱 작성
+          href: platform-capabilities-and-apis/holographic-remoting-create-host.md
+        - name: 사용자 지정 홀로그램 원격 플레이어 앱 작성
+          href: platform-capabilities-and-apis/holographic-remoting-create-player.md
+        - name: 사용자 지정 홀로그램 원격 데이터 채널
+          href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md
+        - name: 홀로그램 원격 접속을 통한 보안 연결
+          href: platform-capabilities-and-apis/holographic-remoting-secure-connection.md
+        - name: 문제 해결 및 제한 사항
+          href: platform-capabilities-and-apis/holographic-remoting-troubleshooting.md
+        - name: 버전 기록
+          href: platform-capabilities-and-apis/holographic-remoting-version-history.md
+        - name: 홀로그램 원격 소프트웨어 사용 조건
+          href: 'https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms'
+        - name: HoloLens(1세대)의 홀로그램 원격
+          href: 'https://docs.microsoft.com'
+        - name: 홀로그램 원격 접속 추가
+          href: platform-capabilities-and-apis/add-holographic-remoting.md
+    - name: 앱 품질 및 테스트
+      items:
+        - name: 앱 품질 기준
+          href: platform-capabilities-and-apis/app-quality-criteria.md
+        - name: 홀로그램 렌더링
+          href: platform-capabilities-and-apis/rendering.md
+        - name: 볼륨 렌더링
+          href: platform-capabilities-and-apis/volume-rendering.md
+        - name: 홀로그램 안정성
+          href: platform-capabilities-and-apis/hologram-stability.md
+        - name: 안정화 평면을 사용하여 홀로그램 교란 줄이기
+          href: platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md
+        - name: 혼합 현실의 성능 이해
+          href: platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md
+        - name: Unity에 대한 성능 추천 사항
+          href: unity/performance-recommendations-for-unity.md
+        - name: Visual Studio를 사용하여 배포 및 디버깅
+          href: platform-capabilities-and-apis/using-visual-studio.md
+        - name: HoloLens에서 앱 테스트
+          href: platform-capabilities-and-apis/testing-your-app-on-hololens.md
+        - name: HoloLens 에뮬레이터 사용
+          href: platform-capabilities-and-apis/using-the-hololens-emulator.md
+        - name: Windows Mixed Reality 시뮬레이션 사용
+          href: platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md
+        - name: 고급 HoloLens 에뮬레이터 및 Mixed Reality 시뮬레이터 입력
+          href: platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input.md
+        - name: HoloLens 에뮬레이터 아카이브
+          href: platform-capabilities-and-apis/hololens-emulator-archive.md
+        - name: 인식 시뮬레이션
+          href: platform-capabilities-and-apis/perception-simulation.md
+    - name: 연구 도구
+      items:
+        - name: Windows 장치 포털 사용
+          href: platform-capabilities-and-apis/using-the-windows-device-portal.md
+        - name: 디바이스 포털 API 참조
+          href: platform-capabilities-and-apis/device-portal-api-reference.md
+        - name: HoloLens 연구 모드
+          href: platform-capabilities-and-apis/research-mode.md
