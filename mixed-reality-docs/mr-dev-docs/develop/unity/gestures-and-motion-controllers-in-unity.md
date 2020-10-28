@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 제스처, 동작 컨트롤러, unity, 응시, 입력
-ms.openlocfilehash: 6b132e56e5d60e59fda53b95328580ed861ce75c
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: 6c41de0a0b5d2879b2f3a0be90c9456100599d2b
+ms.sourcegitcommit: 8b16945d6a551f174a65fa3980ba392682ca45d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638560"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92886276"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Unity의 제스처 및 모션 컨트롤러
 
@@ -68,32 +68,32 @@ Windows Mixed Reality의 단추/축 ID 매핑은 다음 두 가지 방법으로 
 >[!NOTE]
 >이러한 단추/축 Id는 gamepads, Oculus Touch 및 OpenVR에서 사용 하는 매핑의 충돌로 인해 Unity에서 OpenVR에 사용 하는 Id와 다릅니다.
 
-### <a name="using-hp-reverb-g2-controllers"></a>HP 반향 G2 컨트롤러 사용
+<!-- ### Using HP Reverb G2 controllers
 
-HP 반향 G2 컨트롤러를 사용 하는 경우 단추 및 축 Id에 대 한 아래 표를 참조 하세요.
+If you're using the HP Reverb G2 controllers, refer to the table below for button and axis IDs.
 
 <table>
 <tr>
-<th rowspan="2"><a href="https://docs.unity3d.com/ScriptReference/XR.CommonUsages.html">입력 </th><th colspan="2">Common Unity Api</a><br />(입력. GetButton/Getbutton) </th><th rowspan="2">HP 반향 G2 입력 API</a></th>
+<th rowspan="2"><a href="https://docs.unity3d.com/ScriptReference/XR.CommonUsages.html">Input </th><th colspan="2">Common Unity APIs</a><br />(Input.GetButton/GetAxis) </th><th rowspan="2">HP Reverb G2 Input API</a></th>
 </tr><tr>
-<th> 왼쪽 </th><th> 오른쪽</th>
+<th> Left hand </th><th> Right hand</th>
 </tr><tr>
-<td> Primary2DAxis </td><td> 축 1 (X)/축 2 (Y) </td><td> 축 4 (X)/축 5 (Y) </td><td> 사용해</td>
+<td> Primary2DAxis </td><td> Axis 1 (X) / Axis 2 (Y) </td><td> Axis 4 (X) / Axis 5(Y) </td><td> Thumbstick</td>
 </tr><tr>
-<td> 트리거 누름 </td><td> 축 9 </td><td> 축 10 </td><td> 인덱스 트리거</td>
+<td> Trigger pressed </td><td> Axis 9 </td><td> Axis 10 </td><td> Index trigger</td>
 </tr><tr>
-<td> 그리퍼 </td><td> 축 11d </td><td> 축 12 </td><td> 그립 트리거</td>
+<td> Grip </td><td> Axis 11d </td><td> Axis 12 </td><td> Grip trigger</td>
 </tr><tr>
-<td> PrimaryButton 누름 </td><td> 단추 2 </td><td> 단추 0 </td><td> 메뉴 단추 누름</td>
+<td> PrimaryButton pressed </td><td> Button 2 </td><td> Button 0 </td><td> Menu button pressed</td>
 </tr><tr>
-<td> SecondaryButton 눌림 </td><td> 단추 3 </td><td> 단추 1 </td><td> A/X 단추</td>
+<td> SecondaryButton pressed </td><td> Button 3 </td><td> Button 1 </td><td> A/X button</td>
 </tr><tr>
-<td> GripButton </td><td> 단추 4 </td><td> 단추 5 </td><td> 그립 트리거</td>
+<td> GripButton </td><td> Button 4 </td><td> Button 5 </td><td> Grip trigger</td>
 </tr><tr>
-<td> TriggerButton </td><td> 단추 14 </td><td> 단추 15 </td><td> 인덱스 트리거</td>
+<td> TriggerButton </td><td> Button 14 </td><td> Button 15 </td><td> Index trigger</td>
 </tr><tr>
 </tr>
-</table>
+</table> -->
 
 
 ## <a name="grip-pose-vs-pointing-pose"></a>그립 포즈 및 포인팅 포즈
