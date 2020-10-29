@@ -1,0 +1,86 @@
+---
+title: 확장
+description: 홀로그램 형태로 사실적으로 보이는 콘텐츠를 표시하는 핵심 요소는 실제 세계의 시각적 통계를 최대한 긴밀하게 모방하는 것입니다.
+author: shengkait
+ms.author: shentan
+ms.date: 03/21/2018
+ms.topic: article
+keywords: Windows Mixed Reality, 스타일, 디자인
+ms.openlocfilehash: a9a02d681986df3d73c7990fc975e659e5326981
+ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "91684016"
+---
+# <a name="scale"></a><span data-ttu-id="fc1fe-104">확장</span><span class="sxs-lookup"><span data-stu-id="fc1fe-104">Scale</span></span>
+
+<span data-ttu-id="fc1fe-105">홀로그램 형태로 사실적으로 보이는 콘텐츠를 표시하는 핵심 요소는 실제 세계의 시각적 통계를 최대한 긴밀하게 모방하는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-105">A key to displaying content that looks realistic in holographic form is to mimic the visual statistics of the real world as closely as possible.</span></span> <span data-ttu-id="fc1fe-106">즉, 실제 세계에서 개체의 위치, 크기 및 구성 요소를 이해하는 데 도움이 될 수 있는 만큼 시각적 신호를 최대한 많이 통합해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-106">This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of.</span></span> <span data-ttu-id="fc1fe-107">개체의 배율은 이러한 시각적 신호 중 가장 중요 한 요소 중 하나 이며, 뷰어에는 개체의 크기와 해당 위치에 대 한 신호 (특히 알려진 크기의 개체)를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-107">The scale of an object is one of the most important of those visual cues, giving a viewer a sense of the size of an object as well as cues to its location (especially for objects which have a known size).</span></span> <span data-ttu-id="fc1fe-108">또한 실제 규모에서 개체를 보는 것은 일반적으로 혼합 현실에 대 한 주요 환경 차이점 중 하나로 보입니다. 이전에는 화면 기반 보기에서 사용할 수 없는 부분이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-108">Further, viewing objects at real scale has been seen as one of the key experience differentiators for mixed reality in general – something that hasn’t been possible on screen-based viewing previously.</span></span>
+
+<br>
+
+---
+
+## <a name="how-to-suggest-the-scale-of-objects-and-environments"></a><span data-ttu-id="fc1fe-109">개체 및 환경의 규모를 제안 하는 방법</span><span class="sxs-lookup"><span data-stu-id="fc1fe-109">How to suggest the scale of objects and environments</span></span>
+
+<span data-ttu-id="fc1fe-110">개체의 눈금을 제안 하는 방법에는 여러 가지가 있으며, 그 중 일부는 다른 가시 요소에 영향을 미칠 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-110">There are many ways to suggest the scale of an object, some of which have possible effects on other perceptual factors.</span></span> <span data-ttu-id="fc1fe-111">핵심은 단순히 개체를 ' 실제 ' 크기로 표시 하 고 사용자가 이동할 때 현실적인 크기를 유지 하는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-111">The key one is to simply display objects at a ‘real’ size, and maintain that realistic size as users move.</span></span> <span data-ttu-id="fc1fe-112">즉, holograms는 실제 개체가 수행 하는 것과 동일한 방식으로 사용자의 사용자의 시각적 각도를 더 가깝게 또는 더 멀리 떨어져 있는 것과 같은 방식으로 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-112">This means holograms will take up a different amount of a user’s visual angle of a user as they come closer or further away, the same way that real objects do.</span></span>
+
+### <a name="utilize-the-distance-of-objects-as-they-are-presented-to-the-user"></a><span data-ttu-id="fc1fe-113">사용자에 게 표시 되는 개체의 거리를 활용 합니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-113">Utilize the distance of objects as they are presented to the user</span></span>
+
+<span data-ttu-id="fc1fe-114">일반적인 방법 중 하나는 사용자에 게 표시 되는 개체의 거리를 활용 하는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-114">One common method is to utilize the distance of objects as they are presented to the user.</span></span> <span data-ttu-id="fc1fe-115">예를 들어 사용자 앞에 대형 패밀리 자동차를 시각화 하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-115">For example, consider visualizing a large family car in front of the user.</span></span> <span data-ttu-id="fc1fe-116">자동차가 앞에서 직접 있었던 경우 arm의 길이 내에서이는 너무 커서 사용자의 보기 필드에 적합 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-116">If the car were directly in front of them, within arm’s length, it would be too large to fit in the user’s field of view.</span></span> <span data-ttu-id="fc1fe-117">이렇게 하려면 사용자가 head 및 body를 이동 하 여 전체 개체를 이해 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-117">This would require the user to move their head and body to understand the entirety of the object.</span></span> <span data-ttu-id="fc1fe-118">자동차를 실내에서 더 멀리 배치 하는 경우 사용자는 보기의 해당 필드에 개체 전체를 표시 한 다음 자신에 게 더 가깝게 이동 하 여 영역을 자세히 검사 하는 방식으로 크기를 조정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-118">If the car were placed further away (across the room), the user can establish a sense of scale by seeing the entirety of the object in their field of view, then moving themselves closer to it to inspect areas in detail.</span></span>
+
+:::row:::
+    :::column:::
+        <span data-ttu-id="fc1fe-119">**[Volvo는이 기술을 사용](https://www.youtube.com/watch?v=DilzwF90vec)** 하 여 사용자에 게 실제적이 고 직관적인 방식으로 holographic 자동차의 규모를 활용 하 여 새 자동차에 대 한 showroom 환경을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-119">**[Volvo used this technique to create a showroom](https://www.youtube.com/watch?v=DilzwF90vec)** experience for a new car, utilizing the scale of the holographic car in a way that felt realistic and intuitive to the user.</span></span> <span data-ttu-id="fc1fe-120">이 환경은 실제 테이블에서 자동차의 홀로그램으로 시작 되므로 사용자가 모델의 전체 크기와 모양을 이해할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-120">The experience begins with a hologram of the car on a physical table, allowing the user to understand the total size and shape of the model.</span></span> <span data-ttu-id="fc1fe-121">환경에서 나중에 자동차는 장치의 보기 필드 크기 보다 더 큰 규모로 확장 되지만 사용자가 더 작은 모델에서 참조 프레임을 이미 확보 했으므로 자동차의 기능을 적절 하 게 탐색할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-121">Later in the experience, the car expands to a larger scale (beyond the size of the device's field of view) but, since the user already acquired a frame of reference from the smaller model, they can adequately navigate around features of the car.</span></span><br>
+        <br>
+        <span data-ttu-id="fc1fe-122">*이미지: HoloLens 용 Volvo 자동차 환경*</span><span class="sxs-lookup"><span data-stu-id="fc1fe-122">*Image: Volvo Cars experience for HoloLens*</span></span>
+    :::column-end:::
+        :::column:::
+       ![HoloLens 용 Volvo 자동차 환경](images/volvo-cars-microsoft-hololens-experience01-640px.jpg)<br>
+    :::column-end:::
+:::row-end:::
+
+
+<br>
+
+---
+
+### <a name="use-holograms-to-modify-the-users-real-space"></a><span data-ttu-id="fc1fe-124">Holograms를 사용 하 여 사용자의 실제 공간을 수정 합니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-124">Use holograms to modify the user's real space</span></span>
+
+<span data-ttu-id="fc1fe-125">또 다른 방법은 holograms를 사용 하 여 사용자의 실제 공간을 수정 하 고, 기존 옆면과 최대값이를 환경으로 바꾸거나, ' 구멍 ' 또는 ' w i n s '를 추가 하 여 크기가 큰 개체가 실제 공간을 ' 중단 ' 하는 것을 허용 하는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-125">Another method is to use holograms to modify the user's real space, replacing the existing walls or ceilings with environments or appending ‘holes’ or ‘windows’, allowing over-sized objects to seemingly 'break-through' the physical space.</span></span> <span data-ttu-id="fc1fe-126">예를 들어 큰 트리가 대부분의 사용자에 게는 적합 하지 않을 수 있지만, 해당 상한에 가상 하늘을 배치 하면 실제 공간이 가상으로 확장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-126">For example, a large tree might not fit in most users’ living rooms, but by putting a virtual sky on their ceiling, the physical space expands into the virtual.</span></span> <span data-ttu-id="fc1fe-127">이를 통해 사용자는 가상 트리의 기반을 탐색 하 고 실제 수명에 표시 되는 방식에 대 한 확장을 수집한 다음 공간을 차지 하는 공간 보다 크게 확장 된 것을 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-127">This allows the user to walk around the base of the virtual tree, and gather a sense of scale of how it would appear in real life, then look up to see it extend far beyond the physical space of the room.</span></span>
+
+:::row:::
+    :::column:::
+        <span data-ttu-id="fc1fe-128">Minecraft는 유사한 기법을 사용 하 여 **[개념 환경을 개발](https://minecraft.net/)** 했습니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-128">**[Minecraft developed a concept experiences](https://minecraft.net/)** using a similar technique.</span></span> <span data-ttu-id="fc1fe-129">실내의 실제 표면에 가상 창을 추가 하면 방에 있는 기존 개체가 실내의 물리적인 크기 제한을 초과 하는 매우 큰 환경의 컨텍스트에 배치 됩니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-129">By adding a virtual window to a physical surface in a room, the existing objects in the room are placed in the context of a vastly larger environment, beyond the physical scale limitations of the room.</span></span><br>
+        <br>
+        <span data-ttu-id="fc1fe-130">*이미지: HoloLens의 Minecraft 개념 환경*</span><span class="sxs-lookup"><span data-stu-id="fc1fe-130">*Image: Minecraft concept experience for HoloLens*</span></span>
+    :::column-end:::
+        :::column:::
+       ![HoloLens를 위한 Minecraft 개념 환경](images/800px-minecraftwindow-640px.jpg)<br><br>
+    :::column-end:::
+:::row-end:::
+
+
+<br>
+
+---
+
+
+## <a name="experimenting-with-scale"></a><span data-ttu-id="fc1fe-132">규모 실험</span><span class="sxs-lookup"><span data-stu-id="fc1fe-132">Experimenting with scale</span></span>
+
+<span data-ttu-id="fc1fe-133">경우에 따라 디자이너는 개체의 단일 위치를 유지 하면서 개체의 단일 위치를 유지 하는 동시에 개체의 실제 크기를 변경 하 여 눈금을 수정 하는 것을 실험 하 여 실제 이동 없이 개체를 뷰어에 가깝게 또는 더 자세히 표시 합니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-133">In some cases, designers have experimented with modifying the scale (by changing the displayed ‘real’ size of the object) while maintaining a single position of the object, to approximate an object getting closer or further to a viewer without any actual movement.</span></span> <span data-ttu-id="fc1fe-134">이는 일부 경우에는 "편안 하 게 영역" 보다 더 가까운 가상 콘텐츠 보기에 대 한 잠재적인 편안 한 제한 사항을 준수 하면서 항목의 정리를 시뮬레이션 하는 방법으로 테스트 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-134">This was tested in some cases as a way to simulate up-close viewing of items while still respecting potential comfort limitations of viewing virtual content closer than the “zone of comfort” would suggest.</span></span>
+
+<span data-ttu-id="fc1fe-135">이렇게 하면 환경에서 몇 가지 가능한 아티팩트가 생성 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-135">This can create a few possible artifacts in the experience however:</span></span>
+* <span data-ttu-id="fc1fe-136">뷰어에 대해 ' 알려진 ' 크기의 개체를 나타내는 가상 개체의 경우 위치를 변경 하지 않고 크기를 변경 하면 충돌 하는 시각적 메시지가 표시 됩니다. vergence 큐로 인해 눈에 잘 monocular 수 있습니다 (이에 대 한 자세한 내용은 [편안](comfort.md) 하 게 설명). 하지만 크기가 개체의 큐로 작동 합니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-136">For virtual objects that represent some object with a ‘known’ size to the viewer, changing the scale without changing the position leads to conflicting visual cues – the eyes may still ‘see’ the object at some depth due to vergence cues (see the [Comfort](comfort.md) article for more on this), but the size acts as a monocular cue that the object might be getting closer.</span></span> <span data-ttu-id="fc1fe-137">이러한 충돌 하는 큐는 혼동을 야기 합니다. 예를 들어, 뷰어에는 상수 깊이 큐로 인해 개체가 그대로 유지 되지만 신속 하 게 증가 하는 경우가 많습니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-137">These conflicting cues lead to confused perceptions – viewers often see the object as staying in place (due to the constant depth cue) but growing rapidly.</span></span>
+* <span data-ttu-id="fc1fe-138">경우에 따라 소수 자릿수가 뷰어에 따라 크기가 변경 되는 것으로 표시 될 수도 있고 표시 되지 않을 수도 있는 ' looming ' 큐로 표시 되는 경우도 있습니다. 그러나 뷰어의 눈에 직접 이동 하는 것으로 보입니다 (불쾌 한 하루아침 수 있음).</span><span class="sxs-lookup"><span data-stu-id="fc1fe-138">In some cases, change of scale is seen as a ‘looming’ cue instead, where the object may or may not be seen to change scale by a viewer, but does appear to be moving directly toward the viewer’s eyes (which can be an uncomfortable sensation).</span></span>
+* <span data-ttu-id="fc1fe-139">실제 세계의 비교 표면에서는 여러 축을 따라 위치를 변경 하는 경우를 예로 들 수 있습니다. 즉, 개체가 더 가깝게 이동 하는 대신 드롭다운으로 표시 될 수 있습니다 (경우에 따라 3D 이동의 2D 프로젝션과 유사).</span><span class="sxs-lookup"><span data-stu-id="fc1fe-139">With comparison surfaces in the real world, such scaling changes are sometimes seen as changing position along multiple axes – objects may appear to drop lower instead of moving closer (similar in a 2D projection of 3D movement in some cases).</span></span>
+* <span data-ttu-id="fc1fe-140">마지막으로, 알려진 ' 실제 세계 ' 크기가 없는 개체 (예: 임의의 크기, UI 요소 등이 있는 임의 셰이프)의 경우 크기 변경으로 인해 개체의 true 크기 또는 위치를 이해 하는 데 사용 되는 기존의 하향식 큐가 많지 않습니다. 즉, 눈금은 보다 중요 한 큐로 처리 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fc1fe-140">Finally, for objects without a known ‘real world’ size (e.g. arbitrary shapes with arbitrary sizes, UI elements, etc.), changing scale may act functionally as a way to mimic changes in distance – viewers do not have as many preexisting top-down cues by which to understand the object’s true size or location, so the scale can be processed as a more important cue.</span></span>
+
+<br>
+
+---
+
+## <a name="see-also"></a><span data-ttu-id="fc1fe-141">참조</span><span class="sxs-lookup"><span data-stu-id="fc1fe-141">See also</span></span>
+* [<span data-ttu-id="fc1fe-142">색, 광원 및 재질</span><span class="sxs-lookup"><span data-stu-id="fc1fe-142">Color, light and materials</span></span>](../color,-light-and-materials.md)
+* [<span data-ttu-id="fc1fe-143">입력 체계</span><span class="sxs-lookup"><span data-stu-id="fc1fe-143">Typography</span></span>](typography.md)
+* [<span data-ttu-id="fc1fe-144">공간 음향 디자인</span><span class="sxs-lookup"><span data-stu-id="fc1fe-144">Spatial sound design</span></span>](spatial-sound-design.md)
