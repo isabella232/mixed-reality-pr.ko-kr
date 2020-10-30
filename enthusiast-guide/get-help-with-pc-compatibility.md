@@ -8,28 +8,26 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: 75d8ade12d5534a1eb86f36bcdd590539a6811b5
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+ms.openlocfilehash: a1ab7ae441796eafde9f085a744015c972cb4b6b
+ms.sourcegitcommit: 4cb579ac0413fc2dfad5da6506437246f6653926
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683179"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93036269"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Windows Mixed Reality의 PC 호환성에 대 한 도움말 보기
 
-Windows Mixed Reality를 설정 하거나 컴퓨터에서 [Windows Mixed REALITY Pc 검사](https://www.microsoft.com/p/windows-mixed-reality-pc-check/9nzvl19n7cnc?rtc=1#activetab=pivot:overviewtab) 앱을 실행 하는 경우 PC에서 실행할 준비가 되었는지 여부에 대 한 보고서를 받게 됩니다. 다음은 표시 될 수 있는 내용에 대 한 세부 정보입니다.
+Windows Mixed reality를 설정 하거나 컴퓨터에서 [Windows Mixed REALITY Pc 검사](https://www.microsoft.com/p/windows-mixed-reality-pc-check/9nzvl19n7cnc?rtc=1#activetab=pivot:overviewtab) 앱을 실행 하는 경우 PC에서 실행할 준비가 되었는지 여부에 대 한 보고서를 받게 됩니다. 아래 섹션에서 볼 수 있는 내용에 대 한 구체적인 정보를 자세히 설명 했습니다.
 
-혼합 현실를 실행할 수 있는지 확인 하려면 [최소 PC 하드웨어 호환성 요구 사항을](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)검토 하세요.
+더 진행 하기 전에 컴퓨터가 혼합 현실 실행을 위한 [최소 PC 하드웨어 호환성 요구 사항을](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) 충족 하는지 확인 하세요.
 
 ## <a name="youre-good-to-go"></a>이동 하는 것이 좋습니다.
 
-좋은 소식 — PC가 Windows Mixed Reality를 실행할 수 있습니다. 그러나 컴퓨터 하드웨어와 구성 사이에 여전히 변형이 있기 때문에 혼합 현실 환경은 모든 PC에서 동일 하지 않을 수 있습니다.
+PC에서 Windows Mixed Reality를 실행할 수 있습니다. 컴퓨터 하드웨어와 구성 사이에 여전히 변형이 있으므로 혼합 현실 환경은 모든 PC에서 동일 하지 않을 수 있습니다.
 
 ## <a name="supports-some-features"></a>일부 기능 지원
 
-PC에서 일부 Windows Mixed Reality 환경을 실행할 수 있어야 하지만 최상의 환경을 제공 하지 못할 수 있습니다. 그래픽이 지연 될 수 있으며, 일부 앱과 게임이 제대로 수행 되지 않을 수 있으며 일부는 실행 되지 않을 수 있습니다. 
-
-다음은 표시 될 수 있는 메시지와 이러한 메시지에 대해 수행할 작업입니다.
+PC는 일부 Windows Mixed Reality 환경을 실행할 수 있지만 최상의 환경을 제공 하지 않을 수 있습니다. 가능한 단점이에는 지연 그래픽, 앱 및 게임의 성능에 대 한 성능이 포함 되며, 일부 응용 프로그램 및 게임을 전혀 실행할 수 없습니다. 표시 될 수 있는 메시지 및 다음에 대해 수행할 작업을 나열 했습니다.
 
 ### <a name="this-pc-has-an-integrated-graphics-card-with-single-channel-ram"></a>이 PC에는 단일 채널 RAM이 있는 통합 그래픽 카드가 있습니다.
 
@@ -45,7 +43,7 @@ PCIe는 *주변 구성 요소 상호 연결 Express* 를 나타냅니다. PC에�
 
 ### <a name="this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality"></a>이 PC의 그래픽 드라이버는 Windows Mixed Reality에서 제대로 작동 하지 않을 수 있습니다.
 
-문제가 발생 하는 경우 Windows 업데이트를 사용 하 여 새 그래픽 드라이버를 다운로드 해 보세요 ( **> 설정 > 업데이트 & 보안 > 업데이트 확인** ). 또는 PC 제조업체나 그래픽 카드 제조업체의 웹 사이트로 이동 합니다.
+> 설정 시작을 선택 하 여 Windows 업데이트를 사용 하 여 새 그래픽 드라이버를 다운로드 하 **> 업데이트 & 보안 > 업데이트를 확인** 하거나 PC 제조업체 또는 그래픽 카드 제조업체의 웹 사이트로 이동 합니다.
 
 > [!div class="nextstepaction"]
 > [업데이트 확인](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
@@ -54,7 +52,7 @@ PCIe는 *주변 구성 요소 상호 연결 Express* 를 나타냅니다. PC에�
 
 ### <a name="this-pcs-processor-might-not-work-well-with-windows-mixed-reality"></a>이 PC의 프로세서는 Windows Mixed Reality에서 제대로 작동 하지 않을 수 있습니다.
 
-이 PC의 프로세서는 코어가 충분 하지 않기 때문에 Windows Mixed Reality에서 제대로 작동 하지 않을 수 있습니다. Windows Mixed Reality가 제대로 실행 되지 않으면 프로세서를 [호환 되](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) 는 PC로 교체 하거나 호환 되는 [PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)로 전환 합니다.
+PC의 프로세서는 코어가 충분 하지 않기 때문에 Windows Mixed Reality에서 제대로 작동 하지 않을 수 있습니다. Windows Mixed Reality가 제대로 실행 되지 않으면 프로세서를 [호환 되](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) 는 PC로 교체 하거나 호환 되는 [PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)로 전환 합니다.
 
 ### <a name="this-pc-might-not-have-a-compatible-usb-configuration"></a>이 PC에는 호환 되는 USB 구성이 없을 수 있습니다.
 
@@ -79,7 +77,7 @@ Windows Mixed Reality를 실행 하는 데 문제가 발생 하는 경우 다음
 
 ### <a name="depending-on-your-headset-you-may-need-a-bluetooth-adapter-to-use-motion-controllers"></a>헤드셋에 따라 동작 컨트롤러를 사용 하려면 Bluetooth 어댑터가 필요할 수 있습니다.
 
-일부 헤드셋은 컨트롤러를 헤드셋에 직접 연결할 수 있도록 Bluetooth가 내장 되어 있습니다. 다른 사용자는 움직임 컨트롤러를 사용 하기 위해 PC의 Bluetooth 라디오 (또는 별도의 동글을 필요 함)가 필요 합니다. [권장 어댑터 참조](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+일부 헤드셋에는 Bluetooth가 내장 되어 있으므로 컨트롤러는 헤드셋에 직접 연결할 수 있습니다. 다른 사용자는 움직임 컨트롤러를 사용 하기 위해 PC의 Bluetooth 라디오 (또는 별도의 동글을 필요 함)가 필요 합니다. 자세한 내용은 [권장 어댑터 페이지를 참조](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) 하세요.
 
 ### <a name="this-pc-doesnt-have-a-self-powered-usb-port"></a>이 PC에는 자체 기반 USB 포트가 없습니다.
 
@@ -91,7 +89,7 @@ Windows Mixed Reality 헤드셋을 연결 하려면 셀프 기반 USB 3.0 포트
 
 ## <a name="cant-run-windows-mixed-reality"></a>Windows Mixed Reality를 실행할 수 없음
 
-다음은 표시 될 수 있는 메시지와 이러한 메시지에 대해 수행할 작업입니다.
+Windows Mixed Reality를 실행할 수 없는 경우 표시 될 수 있는 메시지 목록과 가능한 해결 방법은 다음과 같습니다.
 
 ### <a name="this-pcs-graphics-card-wont-work-with-windows-mixed-reality"></a>이 PC의 그래픽 카드는 Windows Mixed Reality에서 작동 하지 않습니다.
 
@@ -99,7 +97,7 @@ Windows Mixed Reality 헤드셋을 연결 하려면 셀프 기반 USB 3.0 포트
 
 ### <a name="this-pcs-graphics-driver-wont-work-with-windows-mixed-reality"></a>이 PC의 그래픽 드라이버는 Windows Mixed Reality에서 작동 하지 않습니다.
 
-이 PC의 그래픽 드라이버는 Windows Mixed Reality에서 작동 하지 않습니다. Windows 업데이트를 사용 하 여 새 그래픽 드라이버를 다운로드 해 보세요. ( **> 설정 > 업데이트 & 보안 > 업데이트 확인** ), 또는 PC 제조업체나 그래픽 카드 제조업체의 웹 사이트로 이동 합니다. 
+이 PC의 그래픽 드라이버는 Windows Mixed Reality에서 작동 하지 않습니다. > > 설정 시작을 선택 하 여 Windows 업데이트를 사용 하 여 새 그래픽 드라이버를 다운로드 하 고 업데이트 **& 보안 > 업데이트를 확인** 하거나 PC 제조업체나 그래픽 카드 제조업체의 웹 사이트로 이동 합니다. 
 
 > [!div class="nextstepaction"]
 > [업데이트 확인](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
@@ -112,7 +110,7 @@ Windows Mixed Reality 헤드셋을 연결 하려면 셀프 기반 USB 3.0 포트
 
 ### <a name="this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality"></a>이 PC에는 Windows Mixed Reality를 실행 하는 데 사용 가능한 디스크 공간이 충분 하지 않습니다.
 
-Windows Mixed Reality에는 설치 및 최상의 성능을 위해 10GB의 사용 가능한 디스크 공간이 필요 합니다. 드라이브의 공간을 확보 한 후 설치를 다시 시도 하십시오.
+Windows Mixed Reality에는 설치 및 최상의 성능을 위해 10GB의 사용 가능한 디스크 공간이 필요 합니다. 드라이브의 공간을 확보 한 다음 처음부터 다시 설정 해 봅니다.
 
 ### <a name="this-pc-is-running-an-edition-of-windows-that-doesnt-support-windows-mixed-reality"></a>이 PC는 Windows Mixed Reality를 지원 하지 않는 Windows 버전을 실행 하 고 있습니다.
 
@@ -128,7 +126,7 @@ Windows Mixed Reality 헤드셋을 연결 하려면 USB 3.0 포트가 필요 합
 
 ### <a name="you-cant-run-this-app-via-remote-desktop"></a>원격 데스크톱을 통해이 앱을 실행할 수 없습니다.
 
-Windows Mixed Reality를 사용 하려면 모니터가 연결 된 PC를 사용 합니다. 가상 컴퓨터를 사용 하 고 있거나 모니터가 없는 경우 가상 표시 어댑터를 사용해 보세요. PC의 DisplayPort에 연결 하 고 컴퓨터 디스플레이를 에뮬레이트하는 장치입니다. 
+Windows Mixed Reality를 사용 하려면 모니터가 연결 된 PC가 필요 합니다. 가상 컴퓨터를 사용 하 고 있거나 모니터가 없는 경우 가상 표시 어댑터를 사용해 보세요. PC의 DisplayPort에 연결 하 고 컴퓨터 디스플레이를 에뮬레이트하는 장치입니다. 
 
 ## <a name="getting-the-best-performance"></a>최상의 성능 얻기
 
