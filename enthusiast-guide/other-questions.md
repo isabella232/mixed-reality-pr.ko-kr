@@ -1,24 +1,25 @@
 ---
 title: 기타 질문
-description: 표준 소비자 지원 설명서를 벗어나는 고급 Windows 혼합 현실 문제 해결.
+description: 표준 소비자 지원 설명서를 벗어나는 추가 Windows 혼합 현실 문제 해결 팁입니다.
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, Windows Mixed Reality 제거, 지원 되는 언어
 appliesto:
 - Windows 10
-ms.openlocfilehash: a8a035a4d113a0a53f41079709660f65bfa278a0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: aa61148a115ae295c1dc64b575a2fae7b0111470
+ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685824"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044462"
 ---
 # <a name="other-questions"></a>기타 질문
 
 ## <a name="my-graphics-driver-isnt-supported-im-getting-graphics-driver-failure-errors"></a>내 그래픽 드라이버가 지원 되지 않습니다 (그래픽 드라이버 오류 오류가 발생 함).
 
 "Dxdiag"를 검색 하 고 실행 합니다.
+
 1.  결과가 "기본 렌더러" 이면 그래픽 드라이버가 설치 되어 있지 않습니다. 이 문제를 해결하려면
     * **Device Manager > 작업 > 하드웨어 변경 내용 검색** 으로 이동 합니다.
     * Windows 업데이트를 사용 하 여 드라이버를 업데이트 합니다.
@@ -57,13 +58,13 @@ Windows의 헤드셋에서 데스크톱 앱을 시작 합니다. 단추를 클�
 ## <a name="my-desktop-app-only-shows-a-black-screen"></a>내 데스크톱 앱에는 검은색 화면만 표시 됩니다.
 PC에 Nvidia 하이브리드 GPU가 있는 경우이 문제는 통합 된 GPU가 아닌 개별 GPU에서 runtimebroker.exe를 실행 하는 Nvidia 장치에 의해 발생할 수 있습니다. 이 문제를 해결 하려면[어떻게 할까요? "새 프로그램에 대 한 Optimus 설정 만들기"의](http://nvidia.custhelp.com/app/answers/detail/a_id/2615/~/how-do-i-customize-optimus-profiles-and-settings%3F)지침을 따르세요. C:\windows\system32\runtimebroker.exe 추가 하 고 "통합 그래픽" 프로세서에서 강제로 실행 하도록 합니다. 
 
-## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Windows Mixed Reality를 사용 하는 경우 Wi-fi의 속도가 느려집니다.
+## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Windows Mixed Reality를 사용 하는 경우 내 Wi-Fi 느려집니다.
 
-2.4 g h z Wi-fi 연결을 사용 하는 경우 동작 컨트롤러에서 Wi-fi 속도가 느려질 수 있습니다. 다음 작업 중 하나를 수행하세요.
-* 5GHz Wi-fi 연결 (있는 경우)으로 전환 합니다. [자세히 알아보기](https://support.microsoft.com/en-us/help/4000461).
+2.4 g h z Wi-Fi 연결을 사용 하는 경우 동작 컨트롤러에서 Wi-fi 속도가 느려질 수 있습니다. 다음 작업 중 하나를 수행하세요.
+* 사용할 수 있는 경우 5GHz Wi-Fi 연결로 전환 합니다. [자세히 알아봅니다](https://support.microsoft.com/en-us/help/4000461).
 * 별도의 Bluetooth 어댑터를 사용 하 여 이동 컨트롤러를 PC에 연결 합니다. [권장 어댑터](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)를 참조 하세요.
 
-## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>PC를 연결 하 고 요금을 청구 하는 메시지를 받았습니다. 그 이유는
+## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>PC를 연결 하 고 요금을 청구 하는 메시지를 받았습니다. 이유
 
 노트북을 사용 하는 경우 Windows Mixed Reality는 PC가 완전히 충전 되 고 연결 된 경우에 가장 잘 작동 합니다. 
 
@@ -84,7 +85,7 @@ Windows Mixed Reality는 다음 언어로 제공 됩니다.
 * 영어(미국)
 * 프랑스어(캐나다)
 * 프랑스어(프랑스)
-* 독일어 (독일)
+* 독일어(독일)
 * 이탈리아어(이탈리아)
 * 일본어(일본)
 * 스페인어(멕시코)
@@ -119,16 +120,16 @@ Windows Mixed Reality는 음성 명령 또는 받아쓰기 기능 없이도 다�
 2. **검색** 상자에 "regedit"를 입력 하 고 "예"를 선택 합니다.
 3. 다음 레지스트리 값을 제거 합니다.
    <ul>
-    <li><b>\Software\microsoft\windows\currentversion\holographic를 HKEY_CURRENT_USER</b>하 고 "FirstRunSucceeded"를 삭제 합니다.</li> 
-    <li><b>\Software\microsoft\windows\currentversion\holographic\speechandaudio를 HKEY_CURRENT_USER</b>하 고 "PreferDesktopSpeaker" 및 "PreferDesktopMic"를 삭제 합니다.</li> 
-    <li><b>HKEY_CURRENT_USER \software\microsoft\ Speech_OneCore &gt; Settings\Holographic</b>"DisableSpeechInput"를 삭제 합니다. 참고: Windows Mixed Reality를 사용 하는 PC의 모든 사용자 계정에 대해 HHKEY_CURRENT_USER의 레지스트리 항목을 삭제 해야 합니다.</li> 
-    <li><b>\Software\microsoft\windows\currentversion\perceptionsimulationextensions를 HKEY_LOCAL_MACHINE</b>하 고 "DeviceID" 및 "Mode"를 삭제 합니다.</li> 
-    <li><b>\Software\microsoft\windows\currentversion\holographic를 HKEY_CURRENT_USER</b>하 고 "OnDeviceLearningCompleted"를 삭제 합니다.</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic</b>하 고 "FirstRunSucceeded"를 삭제 합니다.</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic\SpeechAndAudio</b>하 고 "PreferDesktopSpeaker" 및 "PreferDesktopMic"를 삭제 합니다.</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore&gt; Settings\Holographic</b>"DisableSpeechInput"를 삭제 합니다. 참고: Windows Mixed Reality를 사용 하는 PC의 모든 사용자 계정에 대해 HHKEY_CURRENT_USER의 레지스트리 항목을 삭제 해야 합니다.</li> 
+    <li><b>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\PerceptionSimulationExtensions</b>"DeviceID" 및 "Mode"를 삭제 합니다.</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic</b>하 고 "OnDeviceLearningCompleted"를 삭제 합니다.</li> 
    </ul>
 4. 다음 레지스트리 키를 제거 합니다. <ul>
-   <li> <b>HKEY_CURRENT_USER \Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
-   <li> <b>HKEY_LOCAL_MACHINE \Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
-   <li> <b>HKEY_CURRENT_USER \Software\Microsoft\ Speech_OneCore \Settings\HolographicPreferences</b></li><br/></ul>
+   <li> <b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
+   <li> <b>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
+   <li> <b>HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Settings\HolographicPreferences</b></li><br/></ul>
 5. 레지스트리 편집기를 닫습니다.
 6.**C:\Users\user name\appdata\local\packages\ Microsoft.Windows.HolographicFirstRun_cw5n1h2txyewy \LocalState** 로 이동 하 고 "RoomBounds.json"을 삭제 합니다. Windows Mixed Reality를 사용 하는 각 사용자에 대해이를 반복 합니다.
 7. 관리자 cmd 프롬프트를 열고 **C:\ProgramData\WindowsHolographicDevices\SpatialStore\HoloLensSensors** 로 이동 합니다. "헤드 추적 데이터" 폴더의 내용을 삭제 합니다 (폴더 자체는 아님).

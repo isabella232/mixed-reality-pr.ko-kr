@@ -1,5 +1,5 @@
 ---
-title: Windows Mixed Reality FAQ 사용
+title: Windows Mixed Reality 사용 FAQ
 description: Windows Mixed Reality를 사용할 때 일반적인 질문에 대 한 답변을 받으세요.
 author: hferrone
 ms.author: v-hferrone
@@ -8,14 +8,14 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: 62b6b61f74abfd77ba61563639ff719576551f07
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: cf02ccfc92d80ee1d1a8f6ca3d4ab55650f4a62c
+ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685632"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044436"
 ---
-# <a name="using-windows-mixed-reality-faq"></a>Windows Mixed Reality FAQ 사용
+# <a name="using-windows-mixed-reality-faq"></a>Windows Mixed Reality 사용 FAQ
 
 Windows Mixed Reality 모던 헤드셋 사용에 대 한 도움이 필요한 경우 일반 정보 및 문제 해결에 대 한 다음 항목을 확인 하세요.
 
@@ -61,7 +61,7 @@ Windows Mixed Reality는 오디오를 제작 하 고 헤드폰이 연결 된 경
     * 준비 됨 – 컨트롤러가 모두 설정 됩니다.
     * 손실 추적 – 혼합 현실 포털에서 컨트롤러를 찾을 수 없습니다. 헤드셋 앞에서 누른 후 **Windows** 단추 (4 초)를 눌러 다시 시작 하 고 2 초 동안 다시 시작 합니다.
     * 배터리 부족 – 컨트롤러 배터리를 교체 합니다.
-* Wi-fi를 사용 하는 경우 무선 간섭을 줄이기 위해 PC를 5GHz Wi-fi 네트워크에 연결 해 보세요. 
+* Wi-fi를 사용 하는 경우 무선 간섭을 줄이기 위해 PC를 5GHz Wi-Fi 네트워크에 연결 해 보세요. 
 * 컨트롤러와 직접 연결 되는 새 헤드셋의 경우 **"..."** 를 선택 합니다. 단추를 **클릭 하 고** **컨트롤러 설정** 을 선택 합니다. 그러면 컨트롤러를 헤드셋에 연결 하는 헤드셋 앱으로 이동 됩니다.  
 * 컨트롤러를 직접 연결 하는 데 기본 제공 되는 Bluetooth가 없는 이전 헤드셋의 경우:  
     * PC에서 Bluetooth & 기타 장치를 >는 설정 > 장치를 선택 하 고 컨트롤러가 페어링된 것으로 표시 되는지 확인 합니다.그렇지 않은 경우 쌍으로 연결 해야 합니다. 
@@ -93,9 +93,9 @@ Windows Mixed Reality에서 편안 하 게 보호 하는 방법에 대 한 일�
 
 바닥이 꺼져 있는 경우 (예를 들어 부동 상태를 유지 하는 경우), 설정을 변경 하려면 헤드셋을 작성 하는 동안 **> 방 조정 시작** 을 선택 합니다.
 
-## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>PC를 연결 하 고 요금을 청구 하는 메시지를 받았습니다. 그 이유는
+## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>PC를 연결 하 고 요금을 청구 하는 메시지를 받았습니다. 이유
 
-노트북을 사용 하는 경우 Windows Mixed Reality는 PC가 완전히 충전 되 고 연결 된 경우에 가장 잘 작동 합니다. 
+노트북을 사용 하는 경우 Windows Mixed Reality는 PC가 완전히 충전 되 고 연결 된 경우에 가장 잘 작동 합니다.
 
 ## <a name="how-do-i-uninstall-windows-mixed-reality"></a>Windows Mixed Reality를 제거할 어떻게 할까요? 있나요?
 
@@ -106,14 +106,14 @@ Windows Mixed Reality에서 편안 하 게 보호 하는 방법에 대 한 일�
 > [!NOTE]
 > "Windows Mixed Reality 제거를 완료할 수 없습니다." 라는 메시지가 표시 되 면 환경에 대 한 정보를 비롯 한 일부 파일이 컴퓨터에 남아 있을 수 있음을 의미 합니다. 이 경우 나중에 Windows Mixed Reality를 다시 설치 하려는 경우 문제가 발생할 수 있습니다.
 > 
-> PC에서 남아 있는 Windows Mixed Reality 정보를 수동으로 제거 하는 방법에 대 한 자세한 내용은 **[이 문서](troubleshooting-windows-mixed-reality.md#how-to-uninstall-windows-mixed-reality)** 를 참조 하세요. 
+> PC에서 남아 있는 Windows Mixed Reality 정보를 수동으로 제거 하는 방법에 대 한 자세한 내용은 **[이 문서](installation_errors.md)** 를 참조 하세요.
 
-## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Windows Mixed Reality를 사용 하는 경우 Wi-fi의 속도가 느려집니다.
+## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Windows Mixed Reality를 사용 하는 경우 내 Wi-Fi 느려집니다.
 
-2.4 g h z Wi-fi 연결을 사용 하는 경우 동작 컨트롤러에서 Wi-fi 속도가 느려질 수 있습니다. 다음 작업 중 하나를 수행하세요.
+2.4 g h z Wi-Fi 연결을 사용 하는 경우 동작 컨트롤러에서 Wi-fi 속도가 느려질 수 있습니다. 다음 작업 중 하나를 수행하세요.
 
 <!-- TODO: Use Windows Mixed Reality PC hardware guidelines interlink -->
-* 5GHz Wi-fi 연결 (있는 경우)으로 전환 합니다. [자세한 정보](https://support.microsoft.com/help/4000461)
+* 사용할 수 있는 경우 5GHz Wi-Fi 연결로 전환 합니다. [자세한 정보](https://support.microsoft.com/help/4000461)
 * 별도의 Bluetooth 어댑터를 사용 하 여 이동 컨트롤러를 PC에 연결 합니다. [권장 어댑터 참조](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ## <a name="what-is-the-experience-options-setting"></a>환경 옵션 설정은 무엇 인가요?
@@ -132,6 +132,6 @@ Windows Mixed Reality에서 편안 하 게 보호 하는 방법에 대 한 일�
 
 여전히 도움이 필요하세요? 고급 문제 해결에 대해서는 [이 문서](troubleshooting-windows-mixed-reality.md)를 확인 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 * [커뮤니티에 질문하기](https://answers.microsoft.com)
 * [지원 문의](https://support.microsoft.com/contactus/)
