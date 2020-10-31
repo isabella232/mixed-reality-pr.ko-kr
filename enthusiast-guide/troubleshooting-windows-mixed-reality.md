@@ -3,12 +3,12 @@ title: Windows Mixed Reality 문제 해결
 description: 표준 소비자 지원 설명서를 벗어나는 Windows Mixed Reality 문제 해결.
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원
-ms.openlocfilehash: d51b5fab0759ab58b9becfd9287582d126bd629e
-ms.sourcegitcommit: e8b0c18c293d7ee22c06fd5ed8c9ab212e6205da
+ms.openlocfilehash: 75f1365b8cc0acc540db8932d6672ab11219749a
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93061841"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131947"
 ---
 # <a name="troubleshooting-windows-mixed-reality-faqs"></a>Windows Mixed Reality 문제 해결 (Faq)
 
@@ -16,7 +16,7 @@ ms.locfileid: "93061841"
 문제가 발생 한 영역에 대 한 다음 문서를 참조 하세요.
 
 - [설치 오류](installation_errors.md)
-- [설치](set-up-questions.md)
+- [설치](wmr-setup-faq.md)
 - [경계](boundary-questions.md)
 - [헤드셋 연결](headset-connectivity.md)
 - [헤드셋 표시](headset-display.md)

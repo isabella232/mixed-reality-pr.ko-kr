@@ -3,12 +3,12 @@ title: 혼합 현실 집
 description: Windows Mixed Reality 홈 내에서 탐색 하 고 텔레포트 하 고 앱과 게임을 시작 하며 홈을 개인 설정 하 고 시각적 개체, 오디오 및 음성 설정을 변경 하는 방법입니다.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 홈, 탐색, 시작, 앱, 게임
-ms.openlocfilehash: 177a9db67f304c163356a814b5c4d2e54ba4867d
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: ce4774f4a8f752d5e508d8daa66c050b2a6f28ca
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434626"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132117"
 ---
 # <a name="your-windows-mixed-reality-home"></a>Windows Mixed Reality 홈
 
@@ -73,7 +73,7 @@ Windows Mixed Reality 홈에 Microsoft Store 모음이 있는 것을 알 수 있
 
 ## <a name="turn-off-the-boundary"></a>경계 해제
 
-Mixed Reality 포털로 이동 하 여 화면 왼쪽 상단에 있는 메뉴를 엽니다. **실행 설정 > 대화방 경계**를 선택 합니다. 토글을 OFF로 전환 합니다. 경계를 끄면 책상에 계속 해 서 계속 사용 해야 합니다.
+Mixed Reality 포털로 이동 하 여 화면 왼쪽 상단에 있는 메뉴를 엽니다. **실행 설정 > 대화방 경계** 를 선택 합니다. 토글을 OFF로 전환 합니다. 경계를 끄면 책상에 계속 해 서 계속 사용 해야 합니다.
 
 ## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Windows Mixed Reality 홈의 공간 소리
 
@@ -82,9 +82,9 @@ Windows Mixed Reality 홈에는 각 앱의 사운드가 앱의 위치에서 제�
 > [!NOTE]
 > GPU에 부하가 많기 때문에 통합 그래픽이 있는 Pc에서는이 기능을 사용할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
-* [Windows Mixed Reality 홈 문제 해결](set-up-questions.md#my-controllers-arent-showing-in-my-windows-mixed-reality-home)
+* [Windows Mixed Reality 홈 문제 해결](wmr-setup-faq.md#my-motion-controllers-arent-working)
 * [Windows Mixed Reality에서 게임과 앱 사용](using-games-and-apps-in-windows-mixed-reality.md)
 * [내부에서 외부로 추적의 작동 방식](tracking-system.md)
 * [모션 컨트롤러의 작동 방식](controllers-in-wmr.md)

@@ -1,14 +1,14 @@
 ---
 title: SteamVR Faq
-description: 표준 소비자 지원 설명서를 벗어나는 고급 Windows 혼합 현실 문제 해결.
+description: 표준 소비자 지원 설명서를 SteamVR Windows Mixed Reality 문제 해결을 진행 합니다.
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, SteamVR
-ms.openlocfilehash: 0e355fc5035d7966f52642058d2f0ecc91b88351
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f1eafa303d0f2ee4c289f9acf337d8c512a7915c
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685729"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132137"
 ---
 # <a name="steamvr-faqs"></a>SteamVR Faq
 
@@ -17,16 +17,17 @@ ms.locfileid: "91685729"
 1. [SteamVR를 다운로드 하 여 설치](https://steamcdn-a.akamaihd.net/client/installer/SteamWindowsMRInstaller.exe)합니다. SteamVR 자습서는 SteamVR를 시작할 때 자동으로 시작 됩니다.
 2. 헤드셋을 PC에 연결 하 고 동작 컨트롤러를 켭니다.
 3. Windows Mixed Reality 홈이 로드 되 고 컨트롤러가 표시 되 면 바탕 화면에서 스트림 앱을 엽니다.
-4. 스트림 앱을 사용 하 여 스트림 라이브러리에서 SteamVR 게임을 시작 합니다. 헤드셋을 사용 하지 않고 SteamVR 게임을 시작 하려면 Windows Mixed Reality의 **시작 > 모든 앱** 에서 찾아 시작 합니다. 
+4. 스트림 앱을 사용 하 여 스트림 라이브러리에서 SteamVR 게임을 시작 합니다. 헤드셋을 사용 하지 않고 SteamVR 게임을 시작 하려면 Windows Mixed Reality의 **시작 > 모든 앱** 에서 찾아 시작 합니다.
 
 ## <a name="a-message-says-to-use-steamvr-with-windows-mixed-reality-you-need-to-install-the-latest-windows-update-or-windows-developer-mode-required"></a>"Windows Mixed Reality에서 SteamVR를 사용 하려면 최신 Windows 업데이트" 또는 "Windows 개발자 모드 필요"를 설치 해야 합니다.
 
 1. PC에서 최신 버전의 Windows 10을 실행 하 고 있는지 확인 합니다. **설정 > 시스템 > 정보** 로 이동 하 고 "Windows 사양"에서 "OS 빌드"가 16299.64 이상 인지 확인 합니다.
 2. 다운로드 또는 설치를 기다리는 업데이트가 없는지 확인 합니다. **설정 > 업데이트 & 보안 > Windows 업데이트** 로 이동 하 고 "업데이트 확인"을 선택 합니다. 더 이상 업데이트를 사용할 수 없을 때까지 여러 번 확인 하 고 PC를 다시 시작할 수 있습니다.
 
-## <a name="steamvr-is-crashing-after-updating-windows"></a>Windows를 업데이트 한 후 SteamVR가 충돌 합니다.
+## <a name="steamvr-is-crashing-after-updating-windows"></a>Windows 업데이트 후 SteamVR이 충돌 합니다.
 
 SteamVR에 대 한 Windows Mixed Reality의 일부 이전 버전은 Windows와 더 이상 호환 되지 않습니다. SteamVR에 대 한 Windows Mixed Reality 버전이 최신 버전 인지 확인 하려면 다음을 수행 합니다.
+
 1. 스트림 library에서 **Software > SteamVR에 대 한 Windows Mixed Reality** 로 이동 합니다.
 2. 마우스 오른쪽 단추로 클릭 하 고 "속성"으로 이동 합니다.
 3. "업데이트" 탭 및 "항상이 응용 프로그램을 최신 상태로 유지"를 선택 합니다.
@@ -34,15 +35,16 @@ SteamVR에 대 한 Windows Mixed Reality의 일부 이전 버전은 Windows와 �
 5. 스트림 및 SteamVR를 다시 시작 합니다.
 
 업데이트 후 SteamVR 계속 충돌 하는 경우 컴퓨터에 SteamVR에 대 한 Windows Mixed Reality를 두 번 설치 했을 수 있습니다. 이 경우를 확인 하려면 다음을 수행 합니다.
+
 1. ```%localappdata%\openvr\openvrpaths.vrpath```메모장에서 찾아서 엽니다.
-2. "외부 드라이버" 섹션에서 "MixedRealityVRDriver"에 대 한 여러 항목을 찾습니다. 
+2. "외부 드라이버" 섹션에서 "MixedRealityVRDriver"에 대 한 여러 항목을 찾습니다.
    ```json
    "external_drivers" : [
       "D:\\Steam\\steamapps\\common\\MixedRealityVRDriver",
       "E:\\Steam\\steamapps\\common\\MixedRealityVRDriver"
    ],
    ```
-3. 여러 항목이 표시 되는 경우 두 항목의 이전 항목을 제거 합니다. 항목이 하나만 있는 경우에는 줄의 끝에 더 이상 쉼표가 없어야 합니다. 예를 들면 다음과 같습니다.
+3. 여러 항목이 표시 되는 경우 두 항목의 이전 항목을 제거 합니다. 항목이 하나만 있는 경우에는 줄의 끝에 더 이상 쉼표가 없어야 합니다. 다음은 그 예입니다.
    ```json
    "external_drivers" : [
       "D:\\Steam\\steamapps\\common\\MixedRealityVRDriver"
@@ -62,11 +64,11 @@ SteamVR에 대 한 Windows Mixed Reality의 일부 이전 버전은 Windows와 �
 * 스트림 대시보드를 열려면 왼쪽 엄지 스틱을 바로 누릅니다.
 * SteamVR 게임을 종료 하 고 Windows Mixed Reality 홈으로 돌아가려면 Windows 단추를 누릅니다. 그런 다음 화면에 표시 되는 혼합 현실 홈 단추를 선택 합니다.
 
-## <a name="my-left-and-right-controllers-are-reversed-in-steamvr"></a>왼쪽 및 오른쪽 컨트롤러가 SteamVR에서 반대로 바뀝니다.
+## <a name="my-left-and-right-controllers-are-reversed-in-steamvr"></a>왼쪽 및 오른쪽 컨트롤러가 SteamVR에서 반전 됩니다.
 
 컨트롤러와 함께 게임을 시작 하 고 왼쪽 컨트롤러를 켠 다음 오른쪽 컨트롤러를 켭니다.
 
-## <a name="my-games-are-running-slowly"></a>게임이 느리게 실행 되 고 있습니다.
+## <a name="my-games-are-running-slowly"></a>내 게임이 느리게 실행 되 고 있습니다.
 
 1. PC가 Windows Mixed Reality의 SteamVR에 대 한 사양 및 현재 진행 중인 SteamVR 게임을 충족 하는지 확인 합니다.
 2. 바탕 화면의 혼합 현실 포털에서 "일시 중지"를 선택 하 여 데스크톱 미리 보기를 중지 합니다.
@@ -76,19 +78,20 @@ SteamVR에 대 한 Windows Mixed Reality의 일부 이전 버전은 Windows와 �
 6. 스트림가 백그라운드에서 게임을 다운로드 하 고 있는지 확인 합니다. 이렇게 하면 리소스를 사용 하 고 게임을 제대로 실행할 수 없습니다.
 7. 표시 되는 창이 없는 작은 앱 클래스 (예: SteamVR Home)에는 알려진 성능 문제가 있습니다. 대다수의 앱은이 범주에 속하지 않으며 향후 업데이트에서 수정할 수 있습니다.
 
-예기치 않은 성능 문제가 계속 발생 하는 경우 [Windows 피드백 허브](https://support.microsoft.com/en-us/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)를 사용 하 여 피드백을 보내 주세요. 지침에 따라 [SteamVR 성능 추적을 포함](using-steamvr-with-windows-mixed-reality.md#sharing-feedback-on-steamvr)해야 합니다. 
+예기치 않은 성능 문제가 계속 발생 하는 경우 [Windows 피드백 허브](https://support.microsoft.com/en-us/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)를 사용 하 여 피드백을 보내 주세요. 지침에 따라 [SteamVR 성능 추적을 포함](using-steamvr-with-windows-mixed-reality.md#sharing-feedback-on-steamvr)해야 합니다.
 
 ## <a name="steamvr-is-showing-a-compositor-error-for-example-shared-ipc-compositor-connect-failed-400"></a>SteamVR는 compositor 오류 (예: "Shared IPC Compositor Connect Failed (400)")를 표시 합니다.
 
 헤드셋 및 기본 모니터가 서로 다른 두 비디오 어댑터에 있는 경우이 문제가 발생할 수 있습니다. 모니터를 헤드셋과 동일한 어댑터에 연결 하 고 **설정 앱 > 시스템 > 디스플레이** 에서 모니터가 기본 모니터가 되도록 구성 합니다.
 
-## <a name="steamvr-content-appears-in-the-wrong-place-like-beneath-the-floor-or-above-my-head"></a>SteamVR 콘텐츠가 잘못 된 장소에 표시 됩니다 (예: 바닥 또는 위 헤드 아래).
+## <a name="steamvr-content-appears-in-the-wrong-place-like-beneath-the-floor-or-above-my-head"></a>SteamVR 콘텐츠가 잘못 된 장소에 표시 됩니다 (예: 밑면 또는 위쪽 헤드).
 
-사용자의 위치를 다시 설정 합니다. 
+사용자의 위치를 다시 설정 합니다.
+
 1. 왼쪽 컨트롤러의 엄지 스틱을 클릭 하 여 "SteamVR 대시보드"를 표시 합니다.
 2. "설정" 단추를 선택 합니다.
 3. "꽂혀 있는 위치 다시 설정"을 선택 합니다.
 
-## <a name="my-steam-app-closed-unexpectedly"></a>내 스트림 앱이 예기치 않게 닫혔습니다.
+## <a name="my-steam-app-closed-unexpectedly"></a>스트림 앱이 예기치 않게 닫혔습니다.
 
 PC 화면을 잠그거나, 헤드셋을 제거 하거나, 사용자를 전환 하거나, PC가 절전 모드로 전환 되는 경우 스트림 앱이 닫힙니다.
