@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, Windows Mixed Reality 제거, 지원 되는 언어
 appliesto:
 - Windows 10
-ms.openlocfilehash: aa61148a115ae295c1dc64b575a2fae7b0111470
-ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.openlocfilehash: a49008cb7d6a51385cb0d4ece7dfae3018aefe88
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044462"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131867"
 ---
 # <a name="other-questions"></a>기타 질문
 
@@ -29,7 +29,7 @@ ms.locfileid: "93044462"
     * Windows 업데이트를 사용 하 여 드라이버를 업데이트 합니다.
     * 업데이트에서 문제가 해결 되지 않으면 제조업체 웹 사이트로 이동 하 여 최신 드라이버 업데이트를 설치 합니다. 
     * GPU에 대 한 업데이트를 사용할 수 없는 경우 장치에서 WMR가 지원 되지 않을 수 있습니다. 이 것으로 생각 되 면 [지원](https://support.microsoft.com)담당자에 게 문의 하세요.
-    
+
 Windows Mixed Reality 설치에서 그래픽 카드가 요구 사항을 충족 하지 않는 것으로 생각 하 고 있다고 생각 되는 경우 헤드셋이 올바른 카드에 꽂혀 있는지 확인 합니다.
 
 ## <a name="my-samsung-odyssey-or-odyssey-headset-firmware-update-is-stuck"></a>내 Samsung Odyssey 또는 Odyssey + 헤드셋 펌웨어 업데이트가 중단 됩니다.
@@ -37,6 +37,7 @@ Windows Mixed Reality 설치에서 그래픽 카드가 요구 사항을 충족 �
 Samsung는 "Samsung HMD Odyssey Setup" 및 "Samsung HMD Odyssey + Setup" 장치 도우미 앱을 통해 제공 되는 헤드셋 펌웨어 업데이트를 소유 하 고 게시 합니다. Samsung 펌웨어 업데이트 문제에 대 한 자세한 내용 및 도움을 보려면 Samsung 고객 서비스에 문의 하세요.
 
 펌웨어 업데이트 프로세스가 중단 되 고 5 분 이상 진행 되지 않은 경우:
+
 * 다른 모든 USB 장치를 일시적으로 분리 하 고 펌웨어 업데이트를 다시 시도 합니다.
 * Samsung 헤드셋을 PC의 다른 USB 3.0 포트에 연결 합니다.
 * Gb의 AORUS App Center와 같은 펌웨어 업데이트를 방해할 수 있는 설치 된 소프트웨어를 사용 하지 않도록 설정 하거나 제거 합니다.
@@ -45,28 +46,32 @@ Samsung는 "Samsung HMD Odyssey Setup" 및 "Samsung HMD Odyssey + Setup" 장치 
 ## <a name="how-do-i-access-my-pc-desktop-in-mixed-reality"></a>혼합 현실에서 내 PC 데스크톱에 액세스 어떻게 할까요??
 Windows의 헤드셋에서 데스크톱 앱을 시작 합니다. 단추를 클릭 하 여 **모든 앱 > 데스크톱 >** 혼합 현실에서 PC 데스크톱에 액세스할 수 있습니다.
 
-## <a name="how-can-i-see-multiple-monitors-in-mixed-reality"></a>혼합 현실에서 여러 모니터를 확인 하려면 어떻게 해야 하나요?
-기본적으로 데스크톱 앱은 자동으로 전환 하 여 포커스가 있는 모니터를 표시 합니다. 혼합 현실에서 모든 모니터를 보려면 다음을 수행 합니다. 
+## <a name="how-can-i-see-multiple-monitors-in-mixed-reality"></a>혼합 현실에서 여러 모니터를 표시 하는 방법
+
+기본적으로 데스크톱 앱은 자동으로 전환 하 여 포커스가 있는 모니터를 표시 합니다. 혼합 현실에서 모든 모니터를 보려면 다음을 수행 합니다.
+
 * 앱의 왼쪽 위 모서리에 있는 모니터 아이콘을 클릭 합니다.
 * "모니터 자동 전환"을 사용 하지 않도록 설정 합니다.
 * 보려는 모니터를 선택 합니다.
 * 데스크톱 앱의 다른 인스턴스를 시작 합니다.
 * 해당 인스턴스에 대해 보려는 모니터를 선택 합니다.
 * 모든 실제 모니터에 대해 반복 합니다.
-혼합 현실를 다시 시작할 때마다 각 데스크톱 앱에 표시 하려면 모니터를 다시 선택 해야 합니다. 
+혼합 현실를 다시 시작할 때마다 각 데스크톱 앱에 표시 하려면 모니터를 다시 선택 해야 합니다.
 
 ## <a name="my-desktop-app-only-shows-a-black-screen"></a>내 데스크톱 앱에는 검은색 화면만 표시 됩니다.
+
 PC에 Nvidia 하이브리드 GPU가 있는 경우이 문제는 통합 된 GPU가 아닌 개별 GPU에서 runtimebroker.exe를 실행 하는 Nvidia 장치에 의해 발생할 수 있습니다. 이 문제를 해결 하려면[어떻게 할까요? "새 프로그램에 대 한 Optimus 설정 만들기"의](http://nvidia.custhelp.com/app/answers/detail/a_id/2615/~/how-do-i-customize-optimus-profiles-and-settings%3F)지침을 따르세요. C:\windows\system32\runtimebroker.exe 추가 하 고 "통합 그래픽" 프로세서에서 강제로 실행 하도록 합니다. 
 
 ## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Windows Mixed Reality를 사용 하는 경우 내 Wi-Fi 느려집니다.
 
 2.4 g h z Wi-Fi 연결을 사용 하는 경우 동작 컨트롤러에서 Wi-fi 속도가 느려질 수 있습니다. 다음 작업 중 하나를 수행하세요.
-* 사용할 수 있는 경우 5GHz Wi-Fi 연결로 전환 합니다. [자세히 알아봅니다](https://support.microsoft.com/en-us/help/4000461).
-* 별도의 Bluetooth 어댑터를 사용 하 여 이동 컨트롤러를 PC에 연결 합니다. [권장 어댑터](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)를 참조 하세요.
 
-## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>PC를 연결 하 고 요금을 청구 하는 메시지를 받았습니다. 이유
+* 사용할 수 있는 경우 5GHz Wi-Fi 연결로 전환 합니다. [자세한 정보를 알아보세요](https://support.microsoft.com/help/4000461).
+* 별도의 Bluetooth 어댑터를 사용 하 여 이동 컨트롤러를 PC에 연결 합니다. [권장 어댑터](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)를 참조 하세요.
 
-노트북을 사용 하는 경우 Windows Mixed Reality는 PC가 완전히 충전 되 고 연결 된 경우에 가장 잘 작동 합니다. 
+## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>PC를 연결 하 고 요금을 청구 하는 메시지를 받았습니다. 그 이유는
+
+노트북을 사용 하는 경우 Windows Mixed Reality는 PC가 완전히 충전 되 고 연결 된 경우에 가장 잘 작동 합니다.
 
 ## <a name="what-is-the-experience-options-setting"></a>환경 옵션 설정은 무엇 인가요?
 
@@ -75,9 +80,10 @@ PC에 Nvidia 하이브리드 GPU가 있는 경우이 문제는 통합 된 GPU가
 * 60Hz: 새로 고침 빈도를 60Hz로 설정 하 고 혼합 현실 포털에서 비디오 캡처 및 미리 보기와 같은 특정 기능을 끕니다.
 * 90Hz: 새로 고침 빈도를 90Hz로 설정 합니다.
 
-## <a name="what-languages-are-supported-in-windows-mixed-reality"></a>Windows Mixed Reality에서 지원 되는 언어는 무엇 인가요?
+## <a name="what-languages-are-supported-in-windows-mixed-reality"></a>Windows Mixed Reality에서 지원 되는 언어
 
 Windows Mixed Reality는 다음 언어로 제공 됩니다.
+
 * 중국어 간체(중국)
 * 영어(오스트레일리아)
 * 영어(캐나다)

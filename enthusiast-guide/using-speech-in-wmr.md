@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: cd7a1ba20fa695bf5c13adef301f63491b1ca586
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b65be6082967b49ee9d3c8b97cb0a18f9149a3ca
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685648"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131957"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Windows Mixed Reality에서 음성 사용
 
@@ -36,7 +36,7 @@ Windows Mixed Reality 홈에서 단어가 표시 되는 경우 자주 음성 명
 
 Windows Mixed Reality에서이를 사용 하 여 더 빠르게 해결 하세요. 일부 명령은 "select" 라고 표시 하는 응시 커서를 사용 합니다.
 
-| 원하는 작업 | 예 |
+| 수행할 작업 | 예 |
 | --- | --- |
 | 선택 | "선택"을 클릭 하 여 응시 커서를 표시 합니다. 그런 다음 원하는 위치에 커서를 배치 하 고 다시 "선택" 한다고 표시 되도록 헤드를 설정 합니다. |
 | 시작 메뉴 열기 | 시작으로 이동 |
@@ -54,7 +54,7 @@ Windows Mixed Reality에서이를 사용 하 여 더 빠르게 해결 하세요.
 
 3D 개체, 홀로그램 또는 앱 창에서 다음 명령을 사용 하 여 응시 합니다.
 
-| 원하는 작업 | 예 |
+| 수행할 작업 | 예 |
 | --- | --- |
 | 더 크게 만들기 | 확대 |
 | 더 작게 만들기 | 짧은 |
@@ -66,7 +66,7 @@ Windows Mixed Reality에서이를 사용 하 여 더 빠르게 해결 하세요.
 
 앱 창이 나 3D 개체를 응시 하 여 다음 명령을 사용 합니다.
 
-| 원하는 작업 | 예 |
+| 수행할 작업 | 예 |
 | --- | --- |
 | 앱 또는 3D 개체를 닫습니다. | 닫기 |
 | 항목 조정 (크기 조정 또는 이동) | Adjust |
@@ -81,13 +81,13 @@ Windows Mixed Reality에서이를 사용 하 여 더 빠르게 해결 하세요.
 
 시작 메뉴를 응시 하 여 다음 명령을 사용 합니다.
 
-| 원하는 작업 | 예 |
+| 수행할 작업 | 예 |
 | --- | --- |
 | 모든 앱 목록으로 이동 | 모든 앱 |
 | 시작 또는 모든 앱에서 위아래로 이동 | Page up/down |
 | 모든 앱에서 시작 메뉴로 돌아가기 | 돌아가기 |
 | 사진 찍기 | 카메라 |
-| 비디오 가져오기 | 비디오 |
+| 비디오 가져오기 | 동영상 |
 | 데스크톱에서 혼합 현실 포털의 헤드셋 보기 표시 | 미리 보기 |
 | 시작 시 볼륨 컨트롤 열기 | 볼륨 변경 |
 | 음소거 | 음소거 |
@@ -98,7 +98,7 @@ Windows Mixed Reality에서이를 사용 하 여 더 빠르게 해결 하세요.
 
 다음 명령 중 하나를 사용 하세요.
 
-| 원하는 작업 | 예 |
+| 수행할 작업 | 예 |
 | --- | --- |
 | Cortana에 게 표시 되는 내용 알아보기 | 어떤 말을 할 수 있나요? |
 | 볼륨 증가/감소 | 볼륨을 위아래로 설정 |
@@ -114,7 +114,7 @@ Windows Mixed Reality에서이를 사용 하 여 더 빠르게 해결 하세요.
 | 미리 알림 설정 | 미리 알림 설정 |
 
 > [!NOTE]
-> * Cortana는 일부 지역 및 언어에서 사용할 수 없습니다. [자세히 알아보기](https://support.microsoft.com/help/4026948).
+> * Cortana는 일부 지역 및 언어에서 사용할 수 없습니다. [자세한 정보를 알아보세요](https://support.microsoft.com/help/4026948).
 > * Cortana가 "안녕하세요 Cortana"에 응답 하지 않는 경우 **설정 > 개인 정보 > 음성** 및 온라인 음성 인식이 설정 되어 있는지 확인 하세요.
 > * Cortana를 끄면 "안녕 코타" 음성 명령을 사용할 수 없지만 다른 명령 (예: "선택" 및 "텔레포트")을 계속 사용할 수 있습니다.
 
@@ -123,11 +123,11 @@ Windows Mixed Reality에서이를 사용 하 여 더 빠르게 해결 하세요.
 입력 하는 쉬운 방법으로 키보드를 활성화할 때마다 받아쓰기 모드로 전환 합니다. 키보드에서 마이크를 선택 하거나 "받아쓰기 시작" 이라고 표시 하 여 시작 하세요.
 
 > [!NOTE]
-> 혼합 현실 키보드는 영어로만 제공 되지만 지원 되는 [Windows Mixed reality 언어](wmr-setup-faq.md#what-languages-are-supported-in-windows-mixed-reality)에서 받아쓰기를 사용할 수 있습니다.
+> 혼합 현실 키보드는 영어로만 제공 되지만 지원 되는 [Windows Mixed reality 언어](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)에서 받아쓰기를 사용할 수 있습니다.
 
-### <a name="keyboard-dictation-commands"></a>키보드 받아쓰기 명령 
+### <a name="keyboard-dictation-commands"></a>키보드 받아쓰기 명령
 
-| 원하는 작업 | 예 |
+| 수행할 작업 | 예 |
 | --- | --- |
 | 키보드 닫기 | 닫기 |
 | 받아쓰기 시작 | 받아쓰기 시작 |
@@ -136,6 +136,7 @@ Windows Mixed Reality에서이를 사용 하 여 더 빠르게 해결 하세요.
 | 받아쓰기 상자에서 모든 항목을 선택 합니다. | 모두 선택 |
 
 ### <a name="punctuation"></a>문장 부호
+
 사용 하려는 문장 부호의 이름을 언급 해야 합니다. 예를 들어 " **물음표를 표시** 하 **는 것이** 좋습니다." 라는 메시지가 표시 될 수 있습니다.
 
 사용할 수 있는 문장 부호 키워드는 다음과 같습니다.
@@ -146,12 +147,12 @@ Windows Mixed Reality에서이를 사용 하 여 더 빠르게 해결 하세요.
 * 여는 따옴표, 닫는 따옴표
 * 해시 태그, 웃는 얼굴, 웃는 얼굴, 깜박
 * 달러, 백분율
- 
-전자 메일 주소와 같은 항목을 확인 하는 것이 유용한 경우도 있습니다. 예를 들어 받아쓰기를 위해 example@outlook.com "E X A M P L e X A M P L e at outlook dot com" 이라고 말할 수 있습니다.
 
+전자 메일 주소와 같은 항목을 확인 하는 것이 유용한 경우도 있습니다. 예를 들어 받아쓰기를 위해 example@outlook.com "E X A M P L e X A M P L e at outlook dot com" 이라고 말할 수 있습니다.
 
 받아쓰기를 중지 하려면 **완료** 를 선택 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
+
 * [커뮤니티에 질문하기](https://answers.microsoft.com)
 * [지원 문의](https://support.microsoft.com/contactus/)

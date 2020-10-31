@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 자습서, 시작 하기
 appliesto:
 - Windows 10
-ms.openlocfilehash: 94b23785861ad70630a14d26668164fdf699fcce
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: be85b88f356532df736d69f8319ca6a7337ae824
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92292986"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132067"
 ---
 # <a name="learn-mixed-reality"></a>Mixed Reality 학습
 
@@ -45,14 +45,14 @@ ms.locfileid: "92292986"
 
 ## <a name="use-voice-commands-and-cortana-inside-of-the-windows-mixed-reality-home"></a>Windows Mixed Reality 홈 내에서 음성 명령과 Cortana 사용
 
-[Windows Mixed Reality 홈에서 사용할 수 있는 음성 명령에 대해 알아봅니다.](https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality)
+[Windows Mixed Reality 홈에서 사용할 수 있는 음성 명령에 대해 알아봅니다.](https://support.microsoft.com/help/4041322/windows-10-speech-in-windows-mixed-reality)
 
 ## <a name="show-a-preview-of-what-im-seeing-in-my-headset-on-my-desktops-screen"></a>바탕 화면 화면에서 내 헤드셋에 표시 되는 항목의 미리 보기를 표시 합니다.
 
 혼합 현실 포털 앱 아래쪽의 **재생** 아이콘을 누르기만 하면 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [설치 문제 해결](installation_errors.md)
-* [설치 문제 해결](set-up-questions.md)
+* [설치 문제 해결](wmr-setup-faq.md)
 * [혼합 현실 집](your-mixed-reality-home.md)
