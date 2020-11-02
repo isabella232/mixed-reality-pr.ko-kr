@@ -26,13 +26,12 @@
 ### [WebVR이란?](webvr.md)
 ### [Windows Mixed Reality 사용 FAQ](using-wmr-faq.md)
 
-## 문제 해결 FAQ
+## 문제 해결 및 FAQ
 ### [버그 및 피드백 신고](filing-feedback.md)
+### [오류 코드](error-codes.md)
 ### [일반 FAQ](troubleshooting-windows-mixed-reality.md)
 ### [설치 오류](installation_errors.md)
-### [설치](set-up-questions.md)
 ### [경계](boundary-questions.md)
-### [오류 코드](error-codes.md)
 ### [헤드셋 연결](headset-connectivity.md)
 ### [헤드셋 표시](headset-display.md)
 ### [모션 컨트롤러](motion-controller-problems.md)
@@ -42,8 +41,11 @@
 ### [추적 시스템](tracking.md)
 ### [WebVR](webvr-questions.md)
 ### [기타 질문](other-questions.md)
+### [HP Reverb G2 FAQ](reverbG2-faq.md)
 
 ## 리소스
 ### [몰입형 헤드셋 상태, 안전 및 편안함](wmr-health-safety-comfort.md)
 ### [혼합 현실 소프트웨어 개요 및 릴리스 기록](mixed-reality-software.md)
 ### [내부에서 외부로 추적의 작동 방식](tracking-system.md)
+### [Unity의 HP Reverb G2 컨트롤러](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+### [Unreal의 HP Reverb G2 컨트롤러](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
