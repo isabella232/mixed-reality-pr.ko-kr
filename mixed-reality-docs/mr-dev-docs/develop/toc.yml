@@ -2,6 +2,8 @@
   href: development.md
 - name: Azure Cloud Services
   href: mixed-reality-cloud-services.md
+- name: Mixed Reality Learning 개요
+  href: mr-learning-overview.md
 - name: 도구 설치
   href: install-the-tools.md
 - name: 앱 포팅
