@@ -7,12 +7,12 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 혼합 현실, 개발, 시작, 새 프로젝트, 포팅, 기능, 카메라, 시뮬레이션, 에뮬레이션, 설명서
-ms.openlocfilehash: ed6e3482194b17ec3b6dfa2abe309f3519c64662
-ms.sourcegitcommit: 9ab467e36d7d9fad51b0e93a56038a6421a7b09d
+ms.openlocfilehash: 006814c17d7e2e7c343f28b83de845674c079a95
+ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91980314"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92638570"
 ---
 # <a name="unity-development-overview"></a>Unity 개발 개요
 
@@ -21,7 +21,7 @@ ms.locfileid: "91980314"
 [Unity](https://unity.com)에서 [혼합 현실 앱](../../design/app-views.md)을 빌드하는 가장 빠른 경로는 Mixed Reality Toolkit를 사용하는 것입니다. Unity를 처음 접하는 경우 계속하기 전에 Unity 학습 플랫폼에서 초보자 수준 [자습서](https://unity3d.com/learn/tutorials)를 살펴보는 것이 좋습니다. 또한 포괄적인 [Asset Store](https://www.assetstore.unity3d.com/) 및 [Unity 혼합 현실 포럼](https://forum.unity3d.com/forums/hololens.102/)을 방문하여 혼합 현실 앱을 빌드하는 온라인 커뮤니티에 참여하는 것도 좋습니다. 거친 세계에서는 어떤 멋진 자산 또는 솔루션을 찾을 수 있는지 전혀 알 수 없습니다. MRTK를 시작할 준비가 되면 아래 개발 검사점으로 이동하세요!
 
 > [!IMPORTANT]
-> HoloLens 2로 가져오려는 기존 Unity 프로젝트가 있는 경우 **[포트 가이드](../porting-apps/porting-guides.md)** 를 살펴보세요. HTK, MRTK v1, SteamVR을 사용하거나 Oculus Greff 또는 HTC Vive와 같은 몰입형 헤드셋용으로 개발된 프로젝트에 대한 가이드가 있습니다.
+> HoloLens 2로 가져오려는 기존 Unity 프로젝트가 있는 경우 **[포트 가이드](../porting-apps/porting-overview.md)** 를 살펴보세요. HTK, MRTK v1, SteamVR을 사용하거나 Reverb G2, Oculus Rift, HTC Vive 같은 몰입형 헤드셋용으로 개발된 프로젝트에 대한 가이드가 준비되어 있습니다.
 
 ## <a name="development-checkpoints"></a>개발 검사점
 
@@ -110,8 +110,8 @@ Unity는 docs.microsoft.com에서 사용할 수 있는 이 설명서 외에도 W
 
 |  리소스  |  Description  |
 | --- | --- |
-| [스크립팅 참조](https://docs.unity3d.com/ScriptReference/) | 설명서의 이 섹션에는 Unity에서 제공하는 스크립팅 API에 대한 세부 정보가 포함되어 있으며, **도움말 > 스크립팅 참조**를 차례로 클릭하여 Unity 편집기에서 온라인으로 액세스할 수 있습니다. |
-| [수동](https://docs.unity3d.com/Manual/index.html) | 이 설명서는 기본 기술에서 고급 기술까지 Unity를 사용하는 방법을 학습하는 데 도움이 되도록 설계되었으며, 온라인 또는 Unity 편집기에서 **도움말 > 수동**을 차례로 클릭하여 액세스할 수 있습니다. |
+| [스크립팅 참조](https://docs.unity3d.com/ScriptReference/) | 설명서의 이 섹션에는 Unity에서 제공하는 스크립팅 API에 대한 세부 정보가 포함되어 있으며, **도움말 > 스크립팅 참조** 를 차례로 클릭하여 Unity 편집기에서 온라인으로 액세스할 수 있습니다. |
+| [수동](https://docs.unity3d.com/Manual/index.html) | 이 설명서는 기본 기술에서 고급 기술까지 Unity를 사용하는 방법을 학습하는 데 도움이 되도록 설계되었으며, 온라인 또는 Unity 편집기에서 **도움말 > 수동** 을 차례로 클릭하여 액세스할 수 있습니다. |
 
 
 > [!div class="nextstepaction"]
