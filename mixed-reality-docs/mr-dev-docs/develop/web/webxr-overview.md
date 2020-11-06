@@ -6,12 +6,12 @@ ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mixed reality, 웹 vr, 웹 xr, 웹 mr, 웹 ar, 360, 360 비디오, 360 비디오, 360 photo, 360 사진, 360 콘텐츠, 몰입 형 웹, immersiveweb, IW
-ms.openlocfilehash: 01e6cd44e9879cd7fd9b11e178134eaf364cc53c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b72d4968e59e3e631138b1ecfd17ca9bbdd95c84
+ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91691192"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93416874"
 ---
 # <a name="webxr-overview"></a>WebXR 개요
 
@@ -22,6 +22,11 @@ ms.locfileid: "91691192"
 [Windows Mixed Reality 및](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)새로운 [기능](https://docs.microsoft.com/windows/mixed-reality/mrtk-porting-guide) 섹션에서 새로운 Microsoft Edge에 대해 자세히 알아보세요.
 
 ## <a name="viewing-webxr"></a>WebXR 보기
+
+> [!IMPORTANT]
+> Microsoft Edge (레거시)는 현재 브라우저에서 사용할 수 없는 사용 되지 않는 API 인 WebVR 지원 합니다. 그러나 새로운 **[Chromium 기반 Edge 브라우저](../../whats-new/new-microsoft-edge.md)** 는 WebXR를 지원 하며 Windows Mixed REALITY의 VR 프로토타입화에 사용할 수 있습니다. WebVR는 새 Chromium 기반 Edge 브라우저에서 사용할 수 없습니다.
+> 
+> 현재 HoloLens 2에서 WebXR를 프로토타입 하는 방법을 찾고 있는 경우 [Firefox 현실](https://mixedreality.mozilla.org/firefox-reality/)을 확인 하세요.
 
 브라우저에서 WebXR을 지원 하는지 테스트 하려면 브라우저에서 [WebXR Samples](https://immersive-web.github.io/webxr-samples/) 로 이동 하면 됩니다.
 
