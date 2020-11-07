@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, holograms, 디자인, 상호 작용
-ms.openlocfilehash: f5c42d197316169a99e388e40bf97a03682630ce
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 5e0ef2768b6e79136f8144492d6825107a6ed88e
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690361"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340701"
 ---
 # <a name="what-is-a-hologram"></a>홀로그램이란?
 
@@ -126,8 +126,19 @@ Holograms는 실제 개체에 의해 폐색 수도 있습니다. 예를 들어, 
 
 ---
 
+## <a name="next-discovery-checkpoint"></a>다음 검색 검사점
 
-## <a name="see-also"></a>참조
+앞에서 설명한 [검색](get-started-with-mr.md) 경험을 팔로 하는 경우 혼합 현실의 기본 사항을 탐색 하는 것이 좋습니다. 여기에서 다음 기본 항목을 진행할 수 있습니다. 
+
+> [!div class="nextstepaction"]
+> [새 작업의 비전](https://dynamics.microsoft.com//mixed-reality/overview/)
+
+또는 다음으로 이동 합니다.
+
+> [!div class="nextstepaction"]
+> [보다 개인적인 컴퓨팅을 찾아서](../out-of-scope/case-study-the-pursuit-of-more-personal-computing.md)
+
+## <a name="see-also"></a>참고 항목
 * [디자인 프로세스 확장](case-study-expanding-the-design-process-for-mixed-reality.md)
 * [공간 음향](../design/spatial-sound.md)
 * [색, 광원 및 재질](../color,-light-and-materials.md)

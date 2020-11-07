@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: a1ab7ae441796eafde9f085a744015c972cb4b6b
-ms.sourcegitcommit: 4cb579ac0413fc2dfad5da6506437246f6653926
+ms.openlocfilehash: 5b24edd88a55bedea2d288f27363714cbfe768b4
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93036269"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340591"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Windows Mixed Reality의 PC 호환성에 대 한 도움말 보기
 
@@ -73,7 +73,7 @@ Windows Mixed Reality를 실행 하는 데 문제가 발생 하는 경우 다음
 
 ### <a name="this-pc-doesnt-have-bluetooth-40-for-controllers"></a>이 PC에는 컨트롤러에 대 한 Bluetooth 4.0가 없습니다.
 
-일부 헤드셋에서 혼합 현실 동작 컨트롤러에는 Bluetooth 4.0가 필요 합니다. Xbox 컨트롤러나 마우스 및 키보드를 사용 하 여 Windows Mixed Reality를 계속 사용 하거나, USB Bluetooth 어댑터를 사용 하 여 이동 컨트롤러를 PC에 연결할 수 있습니다. [권장 어댑터 참조](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+2018 이상 Windows Mixed Reality 헤드셋에는 이미 Bluetooth가 내장 되어 있지만 이전 헤드셋이 있는 경우 혼합 현실 동작 컨트롤러에는 bluetooth 4.0이 필요 합니다. Xbox 컨트롤러나 마우스 및 키보드를 사용 하 여 Windows Mixed Reality를 계속 사용 하거나, USB Bluetooth 어댑터를 사용 하 여 이동 컨트롤러를 PC에 연결할 수 있습니다. [권장 어댑터 참조](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ### <a name="depending-on-your-headset-you-may-need-a-bluetooth-adapter-to-use-motion-controllers"></a>헤드셋에 따라 동작 컨트롤러를 사용 하려면 Bluetooth 어댑터가 필요할 수 있습니다.
 
@@ -83,21 +83,13 @@ Windows Mixed Reality를 실행 하는 데 문제가 발생 하는 경우 다음
 
 Windows Mixed Reality 헤드셋을 연결 하려면 셀프 기반 USB 3.0 포트가 필요 합니다. 전원이 켜진 USB 3.0 허브를 PC에 연결 하 고이를 사용 하 여 헤드셋을 연결 합니다.
 
-### <a name="this-pc-should-work-but-youll-have-the-best-experience-with-a-high-performance-intel-processor"></a>이 PC는 작동 하지만 고성능 Intel® 프로세서를 사용 하는 최상의 환경을 제공 합니다.
-
-이 PC는 작동 하지만 고성능 Intel 프로세서에서 최상의 환경을 제공 합니다. 8 번째 Gen Intel® Core™ 또는 7 세대 Intel® Core™ i5 프로세서를 권장 합니다.
-
-## <a name="cant-run-windows-mixed-reality"></a>Windows Mixed Reality를 실행할 수 없음
-
-Windows Mixed Reality를 실행할 수 없는 경우 표시 될 수 있는 메시지 목록과 가능한 해결 방법은 다음과 같습니다.
-
 ### <a name="this-pcs-graphics-card-wont-work-with-windows-mixed-reality"></a>이 PC의 그래픽 카드는 Windows Mixed Reality에서 작동 하지 않습니다.
 
 이 PC의 그래픽 카드는 Windows Mixed Reality와 호환 되지 않습니다. [호환 되는 그래픽 카드](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) 를 추가 하거나 [호환 되는 PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)로 전환 해야 합니다.
 
 ### <a name="this-pcs-graphics-driver-wont-work-with-windows-mixed-reality"></a>이 PC의 그래픽 드라이버는 Windows Mixed Reality에서 작동 하지 않습니다.
 
-이 PC의 그래픽 드라이버는 Windows Mixed Reality에서 작동 하지 않습니다. > > 설정 시작을 선택 하 여 Windows 업데이트를 사용 하 여 새 그래픽 드라이버를 다운로드 하 고 업데이트 **& 보안 > 업데이트를 확인** 하거나 PC 제조업체나 그래픽 카드 제조업체의 웹 사이트로 이동 합니다. 
+이 PC의 그래픽 드라이버는 Windows Mixed Reality에서 작동 하지 않습니다. > > 설정 시작을 선택 하 여 Windows 업데이트를 사용 하 여 새 그래픽 드라이버를 다운로드 하 고 업데이트 **& 보안 > 업데이트를 확인** 하거나 PC 제조업체나 그래픽 카드 제조업체의 웹 사이트로 이동 합니다.
 
 > [!div class="nextstepaction"]
 > [업데이트 확인](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
@@ -106,7 +98,7 @@ Windows Mixed Reality를 실행할 수 없는 경우 표시 될 수 있는 메�
 
 ### <a name="this-pcs-processor-wont-work-with-windows-mixed-reality"></a>이 PC의 프로세서는 Windows Mixed Reality에서 작동 하지 않습니다.
 
-이 PC의 프로세서는 AVX/Popcnt 명령을 지원 하지 않습니다. Windows Mixed Reality를 실행 하려면 [호환 되는 그래픽 카드로](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) 바꾸거나 [호환 가능한 PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)로 전환 해야 합니다.
+이 PC의 프로세서는 AVX/Popcnt 명령을 지원 하지 않습니다. Windows Mixed Reality를 실행 하려면 [호환 되는 그래픽 카드로](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) 바꾸거나 호환 가능한 PC로 전환 해야 합니다.
 
 ### <a name="this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality"></a>이 PC에는 Windows Mixed Reality를 실행 하는 데 사용 가능한 디스크 공간이 충분 하지 않습니다.
 
@@ -126,7 +118,7 @@ Windows Mixed Reality 헤드셋을 연결 하려면 USB 3.0 포트가 필요 합
 
 ### <a name="you-cant-run-this-app-via-remote-desktop"></a>원격 데스크톱을 통해이 앱을 실행할 수 없습니다.
 
-Windows Mixed Reality를 사용 하려면 모니터가 연결 된 PC가 필요 합니다. 가상 컴퓨터를 사용 하 고 있거나 모니터가 없는 경우 가상 표시 어댑터를 사용해 보세요. PC의 DisplayPort에 연결 하 고 컴퓨터 디스플레이를 에뮬레이트하는 장치입니다. 
+Windows Mixed Reality를 사용 하려면 모니터가 연결 된 PC가 필요 합니다. 가상 컴퓨터를 사용 하 고 있거나 모니터가 없는 경우 가상 표시 어댑터를 사용해 보세요. PC의 DisplayPort에 연결 하 고 컴퓨터 디스플레이를 에뮬레이트하는 장치입니다.
 
 ## <a name="getting-the-best-performance"></a>최상의 성능 얻기
 

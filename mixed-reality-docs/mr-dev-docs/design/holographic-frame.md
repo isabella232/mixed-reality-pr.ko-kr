@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
 keywords: HoloLens, Windows Mixed Reality, holographic 프레임, 보기 필드
-ms.openlocfilehash: 516d9255fbc8067f42e17125d41240c9ba49a33b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 649cacfaf40f226a84f1b9b928cb47e468f3f146
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686777"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340641"
 ---
 # <a name="holographic-frame"></a>홀로그램 프레임
 
@@ -139,9 +139,16 @@ HoloLens 게임 조각에서, 사무실에 있는 위치에 대 한 정보를 �
 
 눈에 실제적인 표현은 강력한 초점을 제공 하며,이를 통해 사용자에 게 생각 하는 것 처럼 사용자를 중심으로 하는 미묘한 기법을 완벽 하 게 사용할 수 있습니다. 사용자가 사용자의 경험에 대 한 정보를 이동할 때 사용자가 주변 이상으로 이동 하는 경우 중립 상태로 전환 하기 전에 거리가 임계값으로 전환 됩니다. 사용자가 전체 조명에서 (예를 들어 장면의 다른 위치를 확인 하는 경우), 다시 조명으로 이동 하는 경우 내레이터의 방향 위치가 사용자에 게 다시 집중 됩니다. 이와 같은 기술은 집중 교육의 강력한 의미를 제공 하 고 holographic 프레임 내에서 초점을 만들어 과도 한 헤드 이동을 줄이고 [사용자 편안](comfort.md)하 게 홍보 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="next-discovery-checkpoint"></a>다음 검색 검사점
+
+앞에서 설명한 [검색](../discover/get-started-with-mr.md) 경험을 팔로 하는 경우 혼합 현실의 기본 사항을 탐색 하는 것이 좋습니다. 여기에서 다음 기본 항목을 진행할 수 있습니다. 
+
+> [!div class="nextstepaction"]
+> [홀로그램 개체를 실제적으로 느끼도록 만들기 - (공간 매핑)](../design/spatial-mapping.md)
+
+## <a name="see-also"></a>참고 항목
 * [Instinctual 상호 작용](interaction-fundamentals.md)
 * [편안함](comfort.md)
-* [규모](scale.md)
+* [크기 조정](scale.md)
 * [헤드 게이즈 및 유지](gaze-and-dwell.md)
 * [홀로그램 안정성](../develop/platform-capabilities-and-apis/hologram-stability.md)

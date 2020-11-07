@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, 사례 연구, 비전, 시나리오
-ms.openlocfilehash: 9e142d72866079e34e6f4a8df78b79d6f846275e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: e08026dbb490f8581118b1bf6351231eeffba92a
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687160"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340681"
 ---
 # <a name="case-study---the-pursuit-of-more-personal-computing"></a>사례 연구-더 많은 개인 컴퓨팅
 
@@ -150,7 +150,19 @@ Volvo는 최신 자동차 모델 (서로 다른 색 및 구성의 사용자)을 
 
 혼합 현실의 미래를 소비자에 게 표시 하는 것은 어려운 일입니다. 하지만 고유한 문제에 집중 하 고 실제 하드웨어를 사용 하 여 실습 하는 **것 *today* 은 매우 중요** 합니다. Microsoft는 혼합 현실로 시작 하지만 현재 비즈니스에서 실현 된 성공에서 학습할 경우 내일의 경험을 만드는 데 도움이 됩니다.
 
-## <a name="about-the-author"></a>저자 정보
+## <a name="next-discovery-checkpoint"></a>다음 검색 검사점
+
+앞에서 설명한 [검색](../discover/get-started-with-mr.md) 경험을 팔로 하는 경우 혼합 현실의 기본 사항을 탐색 하는 것이 좋습니다. 여기에서 다음 기본 항목을 진행할 수 있습니다. 
+
+> [!div class="nextstepaction"]
+> [몰입형, 인체 공학적, 본능적, 무선(untethered) 기능](https://www.microsoft.com//hololens/hardware)
+
+또는 혼합 현실 핵심 환경으로 이동 합니다.
+
+> [!div class="nextstepaction"]
+> [사용자를 편안하게 유지 - (편안함)](../design/comfort.md)
+
+## <a name="about-the-author"></a>작성자 정보
 
 <table style="border-collapse:collapse">
 <tr>
