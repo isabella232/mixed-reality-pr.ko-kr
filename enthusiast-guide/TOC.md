@@ -27,9 +27,9 @@
 ### [Windows Mixed Reality 사용 FAQ](using-wmr-faq.md)
 
 ## 문제 해결 및 FAQ
+### [FAQ 개요](troubleshooting-windows-mixed-reality.md)
 ### [버그 및 피드백 신고](filing-feedback.md)
 ### [오류 코드](error-codes.md)
-### [일반 FAQ](troubleshooting-windows-mixed-reality.md)
 ### [설치 오류](installation_errors.md)
 ### [경계](boundary-questions.md)
 ### [헤드셋 연결](headset-connectivity.md)
