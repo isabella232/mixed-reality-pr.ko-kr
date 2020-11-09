@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, 혼합 현실, 개발, 시작, 새 프로젝트
-ms.openlocfilehash: 3ddca223df94f4aa748ee510c3198389acecdedc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f1465dcb31718b9d3faeb64d24e33d9f9ffeb7cc
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683254"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386219"
 ---
 # <a name="configure-a-new-unity-project-for-windows-mixed-reality"></a>Windows Mixed Reality에 대 한 새 Unity 프로젝트 구성 
 
@@ -19,7 +19,7 @@ ms.locfileid: "91683254"
 
 Windows Mixed Reality (WMR)는 Windows 10 운영 체제의 일부로 도입 된 Microsoft 플랫폼입니다. WMR 플랫폼을 사용 하면 holographic 및 VR 디스플레이 장치에서 디지털 콘텐츠를 렌더링 하는 응용 프로그램을 빌드할 수 있습니다.
 
-WMR에 대해 설정할 때 두 가지 경로를 사용할 수 있습니다. 첫 번째 옵션은 WMR 환경을 자동으로 설정 하는 mrtk ( [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) ) v2를 설치 하는 것입니다. 두 번째 옵션은 WMR를 사용 하기 위해 몇 가지 Unity 설정을 수동으로 변경 하는 것입니다. 
+WMR에 대해 설정할 때 두 가지 경로를 사용할 수 있습니다. 첫 번째 옵션은 WMR 환경을 자동으로 설정 하는 [MRTK (Mixed Reality Toolkit)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)를 설치 하는 것입니다. 두 번째 옵션은 WMR를 사용 하기 위해 몇 가지 Unity 설정을 수동으로 변경 하는 것입니다. 
 
 > [!NOTE]
 > 나중에 언제 든 지 MRTK를 가져올 수 있으므로 수동 경로를 먼저 이동 하는 데는 아무런 영향이 없습니다.
@@ -36,7 +36,7 @@ WMR에 대해 변경 해야 하는 첫 번째 설정은 프로젝트 플랫폼�
 5. **빌드 유형을** **D3D** 로 설정
 6. **UWP SDK** 를 **최신 설치** 로 설정
 
-![Unity XR 설정](images/unity-uwp-settings.png)<br>
+<img src="images/unity-uwp-settings.png" width="550px" alt="Unity XR Settings">
 *Unity XR 설정*
 
 플랫폼이 올바르게 구성 된 후에는 앱이 내보낼 때 2D 보기 대신 [몰입 형 보기](../../design/app-views.md) 를 만들어야 한다는 것을 Unity에 알려야 합니다.
@@ -90,6 +90,8 @@ HoloLens에는 모바일 클래스 GPU가 있습니다. 앱이 HoloLens를 대�
 > [!IMPORTANT]
 > 새 카메라를 삭제 하 고 만드는 경우 새 카메라에 **maincamera** 로 태그가 지정 되어 있는지 확인 합니다.
 
-## <a name="see-also"></a>참고 항목
-* [Mixed Reality Toolkit v2](mrtk-getting-started.md)
+## <a name="see-also"></a>참조
+* [MRTK-설치 가이드 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+* [MRTK-설명서 홈 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+* [도구 설치](../install-the-tools.md)
 * [Unity 개발 개요](unity-development-overview.md)

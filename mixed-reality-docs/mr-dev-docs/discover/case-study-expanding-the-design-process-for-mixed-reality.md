@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
 keywords: Windows Mixed Reality, 디자인, 프로세스, 사례 연구
-ms.openlocfilehash: ee6bf2ad9f76e25c678458ca00505a95b406bfc6
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: f08115879d09d0be7ef8cae12ea0a4c15991a576
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293198"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386249"
 ---
 # <a name="thinking-differently-for-mixed-reality"></a>혼합 현실에 대해 다르게 생각
 Microsoft에서 2016의 신속한 개발자를 대상으로 하는 HoloLens (첫 번째 gen)를 시작 하는 경우 팀은 이미 Microsoft 내부 및 외부에서 스튜디오와 제휴 하 여 장치의 시작 환경을 구축 했습니다. 이러한 팀은 혼합 현실 디자인의 새로운 분야에서 기회와 과제를 모두 수행하고 찾아냄으로써 학습했습니다.
@@ -127,6 +127,13 @@ HoloLens 초기에는 장치의 초기 프로토타입 하드웨어가 디자인
 * Twine
 * 연필
 * Sharpies
+
+## <a name="next-discovery-checkpoint"></a>다음 검색 검사점
+
+앞에서 설명한 [검색](get-started-with-mr.md) 경험을 팔로 하는 경우 혼합 현실의 기본 사항을 탐색 하는 것이 좋습니다. 여기에서 다음 기본 항목을 진행할 수 있습니다. 
+
+> [!div class="nextstepaction"]
+> [사용자 편안 함](../design/comfort.md)
 
 ## <a name="see-also"></a>참조
 * [사례 연구-HoloLens 디자인 팀의 첫 해](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)
