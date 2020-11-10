@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 검색, 배포, 인덱스, 방문 페이지, 디자인, 개발, 자습서, 샘플 앱, 기본 사항, 사례 연구, 리소스, HoloLens 방법, 오픈 소스 프로젝트, 핵심 개념, 상호 작용
-ms.openlocfilehash: 7333163a01496f41c4cb3cd98f54012e5c58a8d4
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 2ee127b05a8ad88e49eda6d088f84e895aeaf511
+ms.sourcegitcommit: 4e618948e1e2e0baf4bb3e8b67513fa7716aa815
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293126"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94361723"
 ---
 # <a name="start-designing-and-prototyping"></a>디자인 및 프로토타입 생성 시작
 
@@ -88,17 +88,17 @@ VR 또는 AR용으로 개발하는지에 관계없이 유동적인 몰입형 환
         Unity를 사용하여 대화형 환경을 만드는 방법을 알아봅니다. 처음부터 끝까지 수행하여 알아봅니다.
     :::column-end:::    
     :::column:::    
-        [![Mixed Reality Toolkit(MRTK)](images/Final_mrtk-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
+        [![Mixed Reality Toolkit(MRTK)](images/74-12.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
         **[Mixed Reality Toolkit(MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>  
         공간 상호 작용 및 UI의 기본 구성 요소와 함께 Unity를 사용하여 혼합 현실 디자인 및 개발을 바로 시작합니다.   
     :::column-end:::
     :::column:::    
-        [![혼합 현실 디자인 랩](images/Final_mrdl_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        [![혼합 현실 디자인 랩](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
         **[혼합 현실 디자인 랩](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>  
         MRTK의 기본 구성 요소를 사용하여 아름다운 혼합 현실 환경을 만드는 방법을 보여주는 샘플 앱을 다운로드하세요.
     :::column-end:::        
     :::column:::    
-        [![Microsoft Maquette](images/Final_maquette_logo.png)](https://www.maquette.ms/)<br>
+        [![Microsoft Maquette](images/74-14.png)](https://www.maquette.ms/)<br>
         **[Microsoft Maquette](https://www.maquette.ms/)**<br>  
         VR을 위한 디자인. Microsoft Maquette를 사용하면 공간 프로토타입을 쉽고 빠르며 몰입감 있게 제작할 수 있습니다. 
     :::column-end:::    
@@ -112,22 +112,22 @@ VR 또는 AR용으로 개발하는지에 관계없이 유동적인 몰입형 환
 
 :::row:::
     :::column:::
-       [![기본 사항 이해](images/icon-lightbulb.png)](../discover/get-started-with-mr.md#understand-the-basics)<br>
+       [![기본 사항 이해](images/74-15.png)](../discover/get-started-with-mr.md#understand-the-basics)<br>
         **[기본 사항 이해](../discover/get-started-with-mr.md#understand-the-basics)**<br>
         혼합 현실을 정의하는 것이 무엇이며, 혼합 현실이 어떻게 사용되는지에 대해 더 잘 이해합니다.
     :::column-end:::
     :::column:::
-        [![이벤트 참가](images/icon-calendar.jpg)](../whats-new/sf-academy-events.md)<br>
+        [![이벤트 참가](images/74-16.png)](../whats-new/sf-academy-events.md)<br>
          **[이벤트 참가](../whats-new/sf-academy-events.md)**<br>
         하드웨어를 살펴보고 첫 번째 HoloLens 2 애플리케이션을 만들기 위한 실습 자습서를 받으세요.
     :::column-end:::
     :::column:::
-        [![도구 설치](images/icon-design.png)](../develop/install-the-tools.md)<br>
+        [![도구 설치](images/74-17.png)](../develop/install-the-tools.md)<br>
          **[도구 설치](../develop/install-the-tools.md)**<br>
         설치 체크리스트를 사용하여 HoloLens와 혼합 현실용 앱을 빌드하는 데 필요한 도구를 구합니다.
     :::column-end:::
     :::column:::
-        [![개발 시작](images/icon-developer.png)](../develop/development.md)<br>
+        [![개발 시작](images/74-18.png)](../develop/development.md)<br>
         **[개발 시작](../develop/development.md)**<br>
         자신의 기술 수준, 작업 스타일 또는 플랫폼 관심 분야에 따라 개발 경로를 선택합니다.
     :::column-end:::
