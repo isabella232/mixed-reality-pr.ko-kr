@@ -3,15 +3,15 @@ title: Windows Mixed Reality에서 Microsoft Edge 사용
 description: Windows Mixed Reality에서 새로운 Microsoft Edge를 준비 하세요. 에는 필요한 변경 사항, 검색할 업데이트 및 알려진 문제가 포함 됩니다.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 08/04/2020
+ms.date: 11/11/2020
 ms.topic: article
-keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 홈, 탐색, 가져오기, 앱, 게임, Microsoft Edge, chromium, Edge
-ms.openlocfilehash: 40f5f57883c5d8ad1a03076411a077deb9979c71
-ms.sourcegitcommit: 1aae69e26ae872b724be1bd1ae0b3158c49dc7e2
+keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 홈, 탐색, 가져오기, 앱, 게임, Microsoft Edge, chromium, Edge, 360, 360 video, 360 뷰어
+ms.openlocfilehash: 0498a48136718c19848fa79638ea771051345528
+ms.sourcegitcommit: 434ed0621af05307bb67b15cabf164561ec96ead
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92499568"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94520770"
 ---
 # <a name="windows-mixed-reality-and-the-new-microsoft-edge"></a>Windows Mixed Reality 및 새 Microsoft Edge
 
@@ -77,6 +77,6 @@ Windows Mixed Reality의 클래식 Win32 응용 프로그램에 대 한 지원�
 ### <a name="additional-known-issues"></a>추가 알려진 문제
 
 -   Windows Mixed Reality에서 열린 웹 사이트는 혼합 현실 포털이 닫히면 Microsoft Edge windows가 혼합 현실 홈에 배치 된 위치에 그대로 유지 되는 경우 손실 됩니다.
-- 하이브리드 GPU 설정이 있는 Pc에서는 360 뷰어 확장을 포함 하 여 WebXR 환경을 제대로 시작 하지 못할 수 있습니다. 그래픽 카드 소프트웨어에서 기본 GPU로 전용 GPU를 선택 하면이 문제를 해결할 수 있습니다.
+- 하이브리드 GPU 설정이 있는 Pc에서는 360 뷰어 확장을 포함 하 여 WebXR 환경을 제대로 시작 하지 못할 수 있습니다. 새 Microsoft Edge에서 미리 보기 기능을 사용 하도록 설정 하면이 문제를 해결할 수 있습니다. 으로 이동 하 여 `edge://flags` "다중 gpu"를 검색 하 고 **WEBXR 다중 gpu 지원** 이라는 플래그를 사용 하도록 설정 합니다.
 -   Microsoft Edge 창의 오디오는 spatialized 되지 않습니다.
--   **360 Viewer 확장 버전 2.3.8에서 수정**됨: Windows Mixed Reality에서 YouTube의 360 비디오를 열면 비디오가 헤드셋에서 왜곡 될 수 있습니다. Edge를 다시 시작 하면이 문제를 해결 하기 위해 360 뷰어 확장이 업데이트 되지 않습니다. `edge://system/`주소 표시줄에를 입력 하 고 "확장" 옆의 **확장** 단추를 선택 하 여 어떤 확장 버전이 있는지 확인할 수 있습니다.
+-   **360 Viewer 확장 버전 2.3.8에서 수정** 됨: Windows Mixed Reality에서 YouTube의 360 비디오를 열면 비디오가 헤드셋에서 왜곡 될 수 있습니다. Edge를 다시 시작 하면이 문제를 해결 하기 위해 360 뷰어 확장이 업데이트 되지 않습니다. `edge://system/`주소 표시줄에를 입력 하 고 "확장" 옆의 **확장** 단추를 선택 하 여 어떤 확장 버전이 있는지 확인할 수 있습니다.

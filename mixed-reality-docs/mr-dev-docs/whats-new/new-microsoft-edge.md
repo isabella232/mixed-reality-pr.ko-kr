@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 08/04/2020
 ms.topic: article
-keywords: edge, new, 몰입 형 웹, microsoft edge, browser, vr
-ms.openlocfilehash: 0f4ecdd26624e9b1e5b8e151e1ac074ece9c9769
-ms.sourcegitcommit: 1aae69e26ae872b724be1bd1ae0b3158c49dc7e2
+keywords: edge, new, 몰입 형 웹, microsoft edge, browser, vr, 360, 360 video, 360 viewer, webxr, webvr
+ms.openlocfilehash: b20d21a3cd4cc77af86021e2b82555ba9c48478e
+ms.sourcegitcommit: 434ed0621af05307bb67b15cabf164561ec96ead
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92499588"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94520780"
 ---
 # <a name="windows-mixed-reality-and-the-new-microsoft-edge"></a>Windows Mixed Reality 및 새 Microsoft Edge
 
@@ -30,7 +30,7 @@ ms.locfileid: "92499588"
 
 Mixed reality 홈에서 새로운 Microsoft Edge를 사용 하려는 windows Mixed Reality VR 헤드셋 고객은 mixed reality 홈의 **Win32 응용 프로그램 (예: 새 Microsoft edge)에 대 한 기본 지원을 위해 Windows 10 버전 1903 이상으로 업그레이드** 해야 합니다. Windows 업데이트를 확인 하거나 [최신 버전의 Windows 10을 수동으로 설치](https://www.microsoft.com/en-us/software-download/windows10)합니다.
 
-Mixed reality 홈에서 가장 가능한 Microsoft Edge 환경을 사용 하는 경우, 1 월 말까지 Windows 업데이트에서 제공 되어야 하는 **2020-01 windows 10 버전 1903 용 누적 업데이트 (이상)를 사용 하 여 도착 하는 새 Microsoft edge에 대 한 일부 주요 Windows 혼합 현실 최적화**를 기다리는 것이 좋습니다.
+Mixed reality 홈에서 가장 가능한 Microsoft Edge 환경을 사용 하는 경우, 1 월 말까지 Windows 업데이트에서 제공 되어야 하는 **2020-01 windows 10 버전 1903 용 누적 업데이트 (이상)를 사용 하 여 도착 하는 새 Microsoft edge에 대 한 일부 주요 Windows 혼합 현실 최적화** 를 기다리는 것이 좋습니다.
 
 >[!IMPORTANT]
 >이러한 업데이트를 수행 하기 전에 새 Microsoft Edge를 다운로드 하도록 선택 하는 경우 Windows Mixed Reality에서 발생 하는 몇 가지 알려진 문제가 있습니다 (아래에 대해 읽어 볼 수 있음).
@@ -81,6 +81,6 @@ Windows Mixed Reality의 클래식 Win32 응용 프로그램에 대 한 지원�
 ### <a name="additional-known-issues"></a>추가 알려진 문제
 
 -   Windows Mixed Reality에서 열린 웹 사이트는 혼합 현실 포털이 닫히면 Microsoft Edge windows가 혼합 현실 홈에 배치 된 위치에 그대로 유지 되는 경우 손실 됩니다.
-- 하이브리드 GPU 설정이 있는 Pc에서는 360 뷰어 확장을 포함 하 여 WebXR 환경을 제대로 시작 하지 못할 수 있습니다. 그래픽 카드 소프트웨어에서 기본 GPU로 전용 GPU를 선택 하면이 문제를 해결할 수 있습니다.
+- 하이브리드 GPU 설정이 있는 Pc에서는 360 뷰어 확장을 포함 하 여 WebXR 환경을 제대로 시작 하지 못할 수 있습니다. 새 Microsoft Edge에서 미리 보기 기능을 사용 하도록 설정 하면이 문제를 해결할 수 있습니다. 으로 이동 하 여 `edge://flags` "다중 gpu"를 검색 하 고 **WEBXR 다중 gpu 지원** 이라는 플래그를 사용 하도록 설정 합니다.
 -   Microsoft Edge 창의 오디오는 spatialized 되지 않습니다.
--   **360 Viewer 확장 버전 2.3.8에서 수정**됨: Windows Mixed Reality에서 YouTube의 360 비디오를 열면 비디오가 헤드셋에서 왜곡 될 수 있습니다. Edge를 다시 시작 하면이 문제를 해결 하기 위해 360 뷰어 확장이 업데이트 되지 않습니다. `edge://system/`주소 표시줄에를 입력 하 고 "확장" 옆의 **확장** 단추를 선택 하 여 어떤 확장 버전이 있는지 확인할 수 있습니다.
+-   **360 Viewer 확장 버전 2.3.8에서 수정** 됨: Windows Mixed Reality에서 YouTube의 360 비디오를 열면 비디오가 헤드셋에서 왜곡 될 수 있습니다. Edge를 다시 시작 하면이 문제를 해결 하기 위해 360 뷰어 확장이 업데이트 되지 않습니다. `edge://system/`주소 표시줄에를 입력 하 고 "확장" 옆의 **확장** 단추를 선택 하 여 어떤 확장 버전이 있는지 확인할 수 있습니다.
