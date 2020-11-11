@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, 성능
 appliesto:
 - Windows 10
-ms.openlocfilehash: c24f6766cab242332e79a0c5cf5ed3cd92c4687d
-ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
+ms.openlocfilehash: 77d1d7273d1e73af4655ef45bd102220e15d2355
+ms.sourcegitcommit: af1e5c9003fc3b7dd0a2f67531f91f954b6a9ea3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94482401"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94498288"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP 반향 G2 질문과 대답
 
@@ -68,11 +68,7 @@ HP 권장 사항:
 
 ## <a name="why-are-my-hp-motion-controller-models-not-showing-up-correctly-in-a-game"></a>내 HP 동작 컨트롤러 모델이 게임에 올바르게 표시 되지 않는 이유는 무엇 인가요?
 
-많은 게임이 HP 모션 컨트롤러에서 즉시 작동 하지만 일부 게임에는 기존 컨트롤러 기능에 대 한 종속성이 있으며, 따라서 몇 가지 문제가 있을 수 있습니다.
-
-- 잘못 된 모델이 표시 됨:이 문제를 해결 하려면 게임 업데이트가 필요 합니다. 일반적으로 게임의 기능을 차단 하지는 않지만 혼동 하거나 시각적으로 이어질 수 있습니다.
-- 컨트롤러의 입력 레이아웃에 대 한 터치 패드 이상 종속성. SteamVR를 사용 하면 다음과 같은 종류의 문제를 피할 수 있도록 사용자 지정 바인딩을 만들 수 있습니다.
-    - SteamVR에 대 한 Windows Mixed Reality에는 일부 게임에 대 한 사용자 지정 바인딩이 포함 되어 있습니다. 이러한 바인딩은 게임을 시작할 때 자동으로 사용 되며 사용자 작업은 필요 하지 않습니다.
+대부분의 게임은 컨트롤러를 표시 하지 않거나 드라이버에 의해 설치 된 모델을 사용 하지 않지만, 일부 게임은 자신의 컨트롤러 모델을 사용자 지정 하거나 사용 가능한 입력에 대 한 상황에 맞는 도움말을 표시 하는 데 사용 됩니다. 일반적으로 게임의 기능을 차단 하지는 않지만 혼동 하거나 시각적으로 이어질 수 있습니다. 게임 자체의 업데이트를 통해서만 수정할 수 있습니다.
 
 ## <a name="my-steamvr-games-dont-appear-to-work-correctly-with-my-hp-motion-controllers"></a>내 SteamVR 게임이 HP 모션 컨트롤러에서 제대로 작동 하지 않는 것 같습니다.
 
