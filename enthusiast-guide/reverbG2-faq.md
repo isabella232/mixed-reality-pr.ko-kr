@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, 성능
 appliesto:
 - Windows 10
-ms.openlocfilehash: 82f9accc8e24574faf7c826aff1908bea7350b08
-ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.openlocfilehash: c24f6766cab242332e79a0c5cf5ed3cd92c4687d
+ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049479"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94482401"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP 반향 G2 질문과 대답
 
@@ -73,3 +73,16 @@ HP 권장 사항:
 - 잘못 된 모델이 표시 됨:이 문제를 해결 하려면 게임 업데이트가 필요 합니다. 일반적으로 게임의 기능을 차단 하지는 않지만 혼동 하거나 시각적으로 이어질 수 있습니다.
 - 컨트롤러의 입력 레이아웃에 대 한 터치 패드 이상 종속성. SteamVR를 사용 하면 다음과 같은 종류의 문제를 피할 수 있도록 사용자 지정 바인딩을 만들 수 있습니다.
     - SteamVR에 대 한 Windows Mixed Reality에는 일부 게임에 대 한 사용자 지정 바인딩이 포함 되어 있습니다. 이러한 바인딩은 게임을 시작할 때 자동으로 사용 되며 사용자 작업은 필요 하지 않습니다.
+
+## <a name="my-steamvr-games-dont-appear-to-work-correctly-with-my-hp-motion-controllers"></a>내 SteamVR 게임이 HP 모션 컨트롤러에서 제대로 작동 하지 않는 것 같습니다.
+
+개발자가 HP 모션 컨트롤러의 호환성을 위해 게임을 업데이트 하는 동안 스트림에서 가장 인기 있는 게임 대부분에 대 한 사용자 지정 컨트롤러 바인딩을 제공 했습니다. "SteamVR에 대 한 Windows Mixed Reality"를 버전 1.2.444로 완전히 업데이트 한 경우 게임이 실행 중일 때 이러한 바인딩을 자동으로 선택 해야 합니다. 그러나 현재 게임에서 작업을 등록 하지 않는 것으로 보이는 경우 SteamVR 설정 메뉴를 사용 하 여 사용자 지정 바인딩 프로필을 수동으로 검색할 수 있습니다.
+수행할 작업
+
+- 오른쪽 동작 컨트롤러의 메뉴 단추를 눌러 SteamVR 메뉴를 엽니다.
+- SteamVR 메뉴의 오른쪽 아래 모서리에 있는 "설정" 아이콘을 선택 합니다.
+- "컨트롤러" 탭을 선택 합니다.
+- "컨트롤러 바인딩 관리" 옵션을 선택 합니다.
+
+여기에서 활성 컨트롤러 바인딩을 "Custom"으로 변경 하 여 커뮤니티 공유 게임 바인딩을 시도 하는 옵션을 열 수 있습니다.
+이 게임의 사용자 지정 게임 바인딩이 아직 공유 되지 않은 경우 (또는 시도한 사용자에 게 완전히 만족 하지 않는 경우) 사용자 지정 게임 바인딩을 만들고, 몇 가지 게임 세션 후에 커뮤니티를 공유 하 여 나머지 커뮤니티를 도울 수도 있습니다.
