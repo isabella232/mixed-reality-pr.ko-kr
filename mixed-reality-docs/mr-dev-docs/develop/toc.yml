@@ -22,7 +22,7 @@
       href: unity/unity-development-overview.md
     - name: 시작
       items:
-        - name: Mixed Reality Toolkit v2 시작
+        - name: MRTK 시작
           href: unity/mrtk-getting-started.md
         - name: Windows Mixed Reality를 위한 Unity 프로젝트 구성
           href: unity/configure-unity-project.md
@@ -170,7 +170,7 @@
               href: unity/tutorials/mr-azure-301.md
     - name: 핵심 구성 요소
       items:
-        - name: MRTK 101 - 기본 상호 작용에 Mixed Reality Toolkit Unity를 사용하는 방법
+        - name: MRTK 101 - Mixed Reality Toolkit Unity를 사용하여 핵심 상호 작용 빌드
           href: unity/mrtk-101.md
         - name: Unity의 카메라
           href: unity/camera-in-unity.md
@@ -208,7 +208,7 @@
           href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
         - name: Unity의 혼합 현실 기본 개체
           href: unity/unity-xrdevice-advanced.md
-        - name: Unity와 함께 Vuforial 사용
+        - name: Unity에서 Vuforia 사용
           href: unity/vuforia-development-overview.md
     - name: 몰입형 VR
       items:
