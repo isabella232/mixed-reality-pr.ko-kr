@@ -1,18 +1,18 @@
 ---
 title: Azure Spatial Anchors 자습서 - 2. Azure Spatial Anchors 시작
-description: 이 과정을 완료하여 혼합 현실 애플리케이션 내에서 Azure Spatial Anchors를 구현하는 방법을 알아봅니다.
+description: 이 과정을 완료하여 혼합 현실 애플리케이션에서 Azure Spatial Anchors를 사용하여 개체를 고정하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, Unity, 자습서, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: e5553df4256e0535d5becb94f22b9ce8eac228dc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c73ddec2fc1be20a4a2c582948cd240be7fe23db
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700340"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353451"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Azure Spatial Anchors 시작
 
@@ -47,14 +47,14 @@ ms.locfileid: "91700340"
 
 Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 패키지 관리자 창을 연 다음, **AR Foundation** 을 선택하고, **설치** 단추를 클릭하여 패키지를 설치합니다.
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section2-step1-1.png)
+![AR Foundation이 선택된 Unity Package Manager](images/mr-learning-asa/asa-02-section2-step1-1.png)
 
 > [!NOTE]
 > Azure Spatial Anchors SDK에 필요하므로 AR Foundation 패키지를 설치합니다. 이 패키지는 다음 섹션에서 가져옵니다.
 
 ## <a name="importing-the-tutorial-assets"></a>자습서 자산 가져오기
 
-다음 Unity 사용자 지정 패키지를 **나열된 순서대로** 다운로드하여 **가져옵니다** .
+다음 Unity 사용자 지정 패키지를 **나열된 순서대로** 다운로드하여 **가져옵니다**.
 
 * [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage)(버전 2.2.1)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
@@ -62,7 +62,7 @@ Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 
 
 자습서 자산을 가져오면 [프로젝트] 창이 다음과 같이 표시됩니다.
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section3-step1-1.png)
+![자습서 자산을 가져온 후의 Unity 계층 구조, 장면 및 프로젝트 창](images/mr-learning-asa/asa-02-section3-step1-1.png)
 
 > [!NOTE]
 > 더 이상 사용되지 않는 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)'과 관련된 CS0618 경고가 표시되는 경우 이러한 경고를 무시할 수 있습니다.
@@ -81,7 +81,7 @@ Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 
 * **Instructions** 프리팹
 * **ParentAnchor** 프리팹
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section4-step1-1.png)
+![새로 추가한 프리팹이 선택된 Unity](images/mr-learning-asa/asa-02-section4-step1-1.png)
 
 > [!TIP]
 > 장면에 큰 아이콘(예: 방해가 되는 큰 틀의 'T' 아이콘)이 표시되는 경우 위 이미지와 같이 <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">Gizmos를 끄기 위치로 전환</a>하여 숨길 수 있습니다.
@@ -95,14 +95,14 @@ Hierarchy(계층 구조) 창에서 **ButtonParent** 개체를 펼쳐서 **StartA
 * **ParentAnchor** 개체를 **None (Object)** 필드에 할당
 * **No Function** (함수 없음) 드롭다운에서 **AnchorModuleScript** > **StartAzureSession ()** 을 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-1.png)
+![StartAzureSession 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-asa/asa-02-section5-step1-1.png)
 
 Hierarchy(계층 구조) 창에서 **StopAzureSession** 이라는 다음 단추를 선택한 후, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
 * **ParentAnchor** 개체를 **None (Object)** 필드에 할당
 * **No Function** (함수 없음) 드롭다운에서 **AnchorModuleScript** > **StopAzureSession ()** 을 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-2.png)
+![StopAzureSession 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-asa/asa-02-section5-step1-2.png)
 
 Hierarchy(계층 구조) 창에서 **CreateAzureAnchor** 라는 다음 단추를 선택한 후, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
@@ -110,7 +110,7 @@ Hierarchy(계층 구조) 창에서 **CreateAzureAnchor** 라는 다음 단추를
 * **No Function** (함수 없음) 드롭다운에서 **AnchorModuleScript** > **CreateAzureAnchor ()** 를 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 * **ParentAnchor** 개체를 빈 **None (Game Object)** 필드에 할당하여 CreateAzureAnchor () 함수의 인수로 만들기
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-3.png)
+![CreateAzureAnchor 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-asa/asa-02-section5-step1-3.png)
 
 Hierarchy(계층 구조) 창에서 **RemoveLocalAnchor** 라는 다음 단추를 선택한 후, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
@@ -118,21 +118,21 @@ Hierarchy(계층 구조) 창에서 **RemoveLocalAnchor** 라는 다음 단추를
 * **No Function** (함수 없음) 드롭다운에서 **AnchorModuleScript** > **RemoveLocalAnchor ()** 를 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 * **ParentAnchor** 개체를 빈 **None (Game Object)** 필드에 할당하여 RemoveLocalAnchor () 함수의 인수로 만들기
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-4.png)
+![RemoveLocalAnchor 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-asa/asa-02-section5-step1-4.png)
 
 Hierarchy(계층 구조) 창에서 **FindAzureAnchor** 라는 다음 단추를 선택한 후, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
 * **ParentAnchor** 개체를 **None (Object)** 필드에 할당
 * **No Function** (함수 없음) 드롭다운에서 **AnchorModuleScript** > **FindAzureAnchor ()** 를 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-5.png)
+![FindAzureAnchor 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-asa/asa-02-section5-step1-5.png)
 
 Hierarchy(계층 구조) 창에서 **DeleteAzureAnchor** 라는 다음 단추를 선택한 후, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
-* **ParentAnchor** 개체를 **None (Object)** 필드에 할당
+* **DeleteAzureAnchor** 개체를 **None (Object)** 필드에 할당
 * **No Function** (함수 없음) 드롭다운에서 **AnchorModuleScript** > **DeleteAzureAnchor ()** 를 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-6.png)
+![DeleteAzureAnchor 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-asa/asa-02-section5-step1-6.png)
 
 ## <a name="connecting-the-scene-to-the-azure-resource"></a>Azure 리소스에 장면 연결
 
@@ -141,7 +141,7 @@ Hierarchy(계층 구조) 창에서 **ParentAnchor** 개체를 선택하고, Insp
 * **Spatial Anchors Account ID** 필드에 Azure Spatial Anchors 계정의 **계정 ID** 를 붙여넣습니다.
 * **Spatial Anchors Account Key** 필드에 Azure Spatial Anchors 계정의 기본 또는 보조 **액세스 키** 를 붙여넣습니다.
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section6-step1-1.png)
+![Spatial Anchor Manager가 구성된 Unity](images/mr-learning-asa/asa-02-section6-step1-1.png)
 
 ## <a name="trying-the-basic-behaviors-of-azure-spatial-anchors"></a>Azure Spatial Anchors의 기본 동작 사용해 보기
 
@@ -163,7 +163,7 @@ Azure Spatial Anchors는 Unity에서 실행할 수 없으므로 Azure Spatial An
 1. Azure 앵커 삭제
 1. Azure 세션 중지
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section7-step1-1.png)
+![Instructions 개체가 선택된 Unity](images/mr-learning-asa/asa-02-section7-step1-1.png)
 
 > [!CAUTION]
 > Azure Spatial Anchors는 인터넷을 사용하여 앵커 데이터를 저장하고 로드하므로 디바이스가 인터넷에 연결되어 있어야 합니다.
@@ -177,15 +177,15 @@ Hierarchy(계층 구조) 창에서 **ParentAnchor** 개체를 선택하고, Insp
 * **X 배율** 을 1.1로 변경
 * **Z 배율** 을 1.1로 변경
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section8-step1-1.png)
+![ParentAnchor 개체가 선택되고 배치되고 크기 조정된 Unity](images/mr-learning-asa/asa-02-section8-step1-1.png)
 
 프로젝트 창에서 **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **Rover** 폴더로 이동한 다음, **RoverExplorer_Complete** 프래팹을 클릭하여 Hierarchy(계층 구조) 창으로 끌어서 장면에 추가합니다.
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section8-step1-2.png)
+![새로 추가된 RoverExplorer_Complete 프리팹이 선택된 Unity](images/mr-learning-asa/asa-02-section8-step1-2.png)
 
 Hierarchy(계층 구조) 창에 RoverModule_Complete 개체가 아직 선택되어 있으면 **ParentAnchor** 개체로 끌어서 ParentAnchor 개체의 자식으로 만듭니다.
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section8-step1-3.png)
+![RoverExplorer_Complete 개체가 ParentAnchor의 자식으로 설정된 Unity](images/mr-learning-asa/asa-02-section8-step1-3.png)
 
 이제 프로젝트를 다시 빌드하고 디바이스에 앱을 배포하는 경우, 크기 조정된 큐브를 이동하여 전체 Rover Explorer 환경을 재배치할 수 있습니다.
 

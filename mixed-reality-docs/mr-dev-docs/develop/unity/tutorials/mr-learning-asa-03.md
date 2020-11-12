@@ -1,18 +1,18 @@
 ---
 title: Azure Spatial Anchors 자습서 - 3. Azure Spatial Anchors 저장, 검색 및 공유
-description: 이 과정을 완료하여 혼합 현실 애플리케이션 내에서 Azure Spatial Anchors를 구현하는 방법을 알아봅니다.
+description: 이 과정을 완료하여 혼합 현실 애플리케이션에서 Azure Spatial Anchors를 저장, 검색, 공유하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, Unity, 자습서, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: edbbfa6bb4027e6d0d0d37a46575eafdb1d6e631
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 2fbf9b849cec62c5281396fcb1e2f8e6e26b4621
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700329"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353301"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3. Azure Spatial Anchors 저장, 검색 및 공유
 
@@ -27,11 +27,11 @@ ms.locfileid: "91700329"
 
 Hierarchy 창에서 **ButtonParent** 개체를 확장합니다. **마지막 네 개의 자식 단추** 개체를 선택합니다. Inspector 창에서 이름 필드 옆에 있는 확인란을 **선택** 하여 모든 개체를 활성화하도록 합니다.
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section1-step1-1.png)
+![이전에 비활성화된 단추 개체가 선택되고 활성화된 Unity](images/mr-learning-asa/asa-03-section1-step1-1.png)
 
 Hierarchy 창에서 **ButtonParent** 개체를 선택합니다. 그런 다음, Inspector 창에서 **GridObjectCollection** 구성 요소를 찾고 **컬렉션 업데이트** 단추를 클릭하여 모든 **ButtonParent** 개체의 자식 개체 위치를 업데이트합니다.
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section1-step1-2.png)
+![GridObjectCollection 구성 요소가 업데이트된 Unity](images/mr-learning-asa/asa-03-section1-step1-2.png)
 
 ## <a name="persisting-azure-spatial-anchors-between-app-sessions"></a>앱 세션 간에 Azure Spatial Anchors 유지
 
@@ -39,7 +39,7 @@ Hierarchy 창에서 **ButtonParent** 개체를 선택합니다. 그런 다음, I
 
 Hierarchy 창에서 **ButtonParent** 개체를 확장하고 **SaveAzureAnchorIdToDisk** 및 **GetAzureAnchorIdFromDisk** 라는 두 개의 단추를 찾습니다.
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section2-step1-1.png)
+![SaveAzureAnchorIdToDisk 및 GetAzureAnchorIdFromDisk 단추 개체가 선택된 Unity](images/mr-learning-asa/asa-03-section2-step1-1.png)
 
 이전 자습서의 [장면을 작동하도록 단추 구성](mr-learning-asa-02.md#configuring-the-buttons-to-operate-the-scene) 지침과 동일한 단계를 수행하여 두 개의 단추 각각에 **Interactable(스크립트)** 구성 요소를 구성합니다.
 
@@ -68,7 +68,7 @@ Hierarchy 창에서 **ButtonParent** 개체를 확장하고 **SaveAzureAnchorIdT
 
 Hierarchy 창에서 **ButtonParent** 개체를 확장합니다.   **ShareAzureAnchorIdToNetwork** 및 **GetAzureAnchorIdFromNetwork** 라는 두 단추를 찾습니다.
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section3-step1-1.png)
+![ShareAzureAnchorIdToNetwork 및 GetAzureAnchorIdFromNetwork 단추 개체가 선택된 Unity](images/mr-learning-asa/asa-03-section3-step1-1.png)
 
 이전 자습서의 [장면을 작동하도록 단추 구성](mr-learning-asa-02.md#configuring-the-buttons-to-operate-the-scene) 지침과 동일한 단계를 수행하여 두 개의 단추 각각에 **Interactable(스크립트)** 구성 요소를 구성합니다.
 

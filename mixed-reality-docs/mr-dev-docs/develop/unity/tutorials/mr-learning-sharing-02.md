@@ -1,18 +1,18 @@
 ---
 title: 다중 사용자 기능 자습서 - 2. Photon Unity 네트워킹 설정
-description: 이 과정을 완료하여 HoloLens 2 애플리케이션 내에서 다중 사용자 공유 환경을 구현하는 방법을 알아봅니다.
+description: 이 과정을 완료하여 HoloLens 2 애플리케이션에서 Photon Unity Network를 구현하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, Unity, 자습서, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 23498938815bd5bb2e200639ae89c62699a01774
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: aeda463610f1fb1205eade556a2c2b9bc07a4fde
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702210"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353481"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Photon Unity 네트워킹 설정
 
@@ -48,7 +48,7 @@ ms.locfileid: "91702210"
 
 Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 차례로 선택하여 [플레이어 설정] 창을 연 다음, **플레이어** >  **게시 설정** 섹션을 차례로 찾습니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
+![Unity Player 설정](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
 **게시 설정** 에서 **기능** 섹션까지 아래로 스크롤하여 위의 [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project) 단계 중에 사용하도록 설정한 **InternetClient** , **Microphone** , **SpatialPerception** 및 **GazeInput** 기능이 사용하도록 설정되어 있는지 다시 확인합니다.
 
@@ -57,20 +57,20 @@ Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 차례로 선택�
 * **InternetClientServer** 기능
 * **PrivateNetworkClientServer** 기능
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section2-step1-2.png)
+![Unity Capabilities 설정](images/mr-learning-sharing/sharing-02-section2-step1-2.png)
 
 ## <a name="installing-inbuilt-unity-packages"></a>기본 제공 Unity 패키지 설치
 
 Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 [패키지 관리자] 창을 연 다음, **AR Foundation** 을 선택하고, **설치** 단추를 클릭하여 패키지를 설치합니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section3-step1-1.png)
+![AR Foundation이 선택된 Unity Package Manager](images/mr-learning-sharing/sharing-02-section3-step1-1.png)
 
 > [!NOTE]
 > Azure Spatial Anchors SDK에 필요하므로 AR Foundation 패키지를 설치합니다. 이 패키지는 다음 섹션에서 가져옵니다.
 
 ## <a name="importing-the-tutorial-assets"></a>자습서 자산 가져오기
 
-다음 Unity 사용자 지정 패키지를 **나열된 순서대로** 다운로드하여 **가져옵니다** .
+다음 Unity 사용자 지정 패키지를 **나열된 순서대로** 다운로드하여 **가져옵니다**.
 
 * [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage)(버전 2.2.1)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
@@ -79,7 +79,7 @@ Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 
 
 자습서 자산을 가져오면 [프로젝트] 창이 다음과 같이 표시됩니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
+![자습서 자산을 가져온 후의 Unity 계층 구조, 장면 및 프로젝트 창](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
 > [!TIP]
 > Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) 지침을 참조할 수 있습니다.
@@ -93,15 +93,15 @@ Unity 메뉴에서 **Window** > **Asset Store** 를 선택하여 Asset Store 창
 
 다운로드가 완료되면 **Import** 단추를 클릭하여 Import Unity Package 창을 엽니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-1.png)
+![PUN 2가 있는 Unity Asset Store - 무료](images/mr-learning-sharing/sharing-02-section5-step1-1.png)
 
 Import Unity Package(Unity 패키지 가져오기) 창에서 **All(모두)** 단추를 클릭하여 모든 자산이 선택되었는지 확인한 다음, **Import(가져오기)** 단추를 클릭하여 자산을 가져옵니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-2.png)
+![PUN 2 가져오기 창이 있는 Unity](images/mr-learning-sharing/sharing-02-section5-step1-2.png)
 
 Unity에서 Import(가져오기) 프로세스가 완료되면 Pun Wizard 창이 PUN Setup 메뉴가 로드된 상태로 나타납니다. 지금은 이 창을 무시하거나 닫으면 됩니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-3.png)
+![PUN Setup 창이 있는 Unity](images/mr-learning-sharing/sharing-02-section5-step1-3.png)
 
 ## <a name="creating-the-pun-application"></a>PUN 애플리케이션 만들기
 
@@ -109,11 +109,11 @@ Unity에서 Import(가져오기) 프로세스가 완료되면 Pun Wizard 창이 
 
 Photon <a href="https://dashboard.photonengine.com/account/signin" target="_blank">대시보드</a>로 이동하여 로그인하고(사용할 계정이 있는 경우) 그렇지 않으면 **Create One** 링크를 클릭하여 지침에 따라 새 계정을 등록합니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-1.png)
+![Photon 로그인 페이지](images/mr-learning-sharing/sharing-02-section6-step1-1.png)
 
 로그인되면 **Create a New App** 단추를 클릭합니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-2.png)
+![Photon 대시보드 시작 페이지](images/mr-learning-sharing/sharing-02-section6-step1-2.png)
 
 Create a New Application(새 애플리케이션 만들기) 페이지에서 다음 값을 입력합니다.
 
@@ -124,11 +124,11 @@ Create a New Application(새 애플리케이션 만들기) 페이지에서 다�
 
 그런 다음, **만들기** 단추를 클릭하여 새 앱을 만듭니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-3.png)
+![Photon 애플리케이션 페이지 만들기](images/mr-learning-sharing/sharing-02-section6-step1-3.png)
 
 Photon에서 만들기 프로세스가 완료되면 새 PUN 앱이 대시보드에 나타납니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-4.png)
+![Photon 애플리케이션 페이지](images/mr-learning-sharing/sharing-02-section6-step1-4.png)
 
 ## <a name="connecting-the-unity-project-to-the-pun-application"></a>Unity 프로젝트를 PUN 애플리케이션에 연결
 
@@ -136,7 +136,7 @@ Photon에서 만들기 프로세스가 완료되면 새 PUN 앱이 대시보드�
 
 Photon 대시보드에서 **App ID** 필드를 클릭하고 앱 ID 필드를 표시하여 클립보드에 복사합니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section7-step1-1.png)
+![App ID가 선택된 Photon 애플리케이션 페이지](images/mr-learning-sharing/sharing-02-section7-step1-1.png)
 
 Unity 메뉴에서 **Window** > **Photon Unity Networking** > **PUN Wizard** 를 선택하여 Pun Wizard 창을 열고 **Setup Project** 창을 클릭하여 PUN Setup 메뉴를 열어서 다음과 같이 구성합니다.
 
@@ -144,11 +144,11 @@ Unity 메뉴에서 **Window** > **Photon Unity Networking** > **PUN Wizard** 를
 
 그런 다음, **Setup Project** 단추를 클릭하여 App ID를 적용합니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section7-step1-2.png)
+![App ID가 채워진 Unity PUN Setup 창](images/mr-learning-sharing/sharing-02-section7-step1-2.png)
 
 Unity에서 PUN 설정 프로세스가 완료되면 PUN Setup 메뉴에 **Done!** 이라는 메시지가 표시되고 Project 창에 **PhotonServerSettings** 자산이 자동으로 선택되고 해당 속성이 Inspector 창에 표시됩니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section7-step1-3.png)
+![Setup Project가 적용된 Unity PUN Setup 창](images/mr-learning-sharing/sharing-02-section7-step1-3.png)
 
 ## <a name="congratulations"></a>축하합니다.
 

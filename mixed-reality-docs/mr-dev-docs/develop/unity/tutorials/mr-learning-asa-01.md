@@ -1,20 +1,20 @@
 ---
-title: Azure Spatial Anchors 자습서 - 1. 소개
-description: 이 과정을 완료하여 혼합 현실 애플리케이션 내에서 Azure Spatial Anchors를 구현합니다.
+title: Azure Spatial Anchors 자습서 - 1. Azure Spatial Anchors 자습서 소개
+description: 이 과정을 완료하여 혼합 현실 애플리케이션에서 Azure Spatial Anchors를 구현하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, Unity, 자습서, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 088987e0b43908abecfd66b9dbb0a4de8fcf472e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: fcea8bd02c81437dd7337ee94838f44f299f1927
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702450"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353401"
 ---
-# <a name="1-introduction"></a>1. 소개
+# <a name="1-introduction-to-the-azure-spatial-anchors-tutorials"></a>1. Azure Spatial Anchors 자습서 소개
 
 ## <a name="overview"></a>개요
 
