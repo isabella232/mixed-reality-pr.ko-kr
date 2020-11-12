@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 테스트, Mixed Reality Toolkit, MRTK 버전 2, MRTK, 도구, SDK, HoloLens, HoloLens 2
-ms.openlocfilehash: c374939b4b3af28cabc1ee338c1c0d4d14ec17fe
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4513185573003510e5a7cae97ecce4cb5d2552e0
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701400"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386209"
 ---
 # <a name="getting-started-with-mrtk-for-unity"></a>Unity용 MRTK 시작
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
@@ -26,10 +26,11 @@ Unity용 MRTK는 혼합 현실 애플리케이션을 위한 오픈 소스 플랫
 
 >[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Setting-up-your-HoloLens-2-development-environment/player?format=ny]
 
-자세한 내용은 [GitHub에 대한 MRTK 설명서](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)를 참조하세요.
+자세한 내용은 [GitHub에 대한 MRTK 설명서](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)를 참조하세요. 시작하려면 [설치 가이드](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) 페이지의 단계를 따르세요.
+
 
 ## <a name="new-with-mrtk-v2"></a>MRTK v2의 새로운 기능
-여기서는 이러한 플랫폼 도구에 대한 약속을 강조하려고 합니다.  실제로 MRTK 버전 2를 활용하여 설정 환경(OOBE) 및 Mixed Reality 학습 애플리케이션과 같은 받은 편지함 환경을 개발했습니다.  또한 플랫폼에서 개발하는 것이 가장 좋은 방법이라고 생각하므로 새로운 HoloLens 2 기능이 MRTK를 통해 처음 공개될 것으로 예상할 수 있습니다. 
+여기서는 이러한 플랫폼 도구에 대한 약속을 강조하려고 합니다.  실제로 MRTK 버전 2를 활용하여 OOBE(Out-of-Box Setup Experience) 및 Mixed Reality 팁 애플리케이션과 같은 받은 편지함 환경을 개발했습니다. 또한 플랫폼에서 개발하는 것이 가장 좋은 방법이라고 생각하므로 새로운 HoloLens 2 기능이 MRTK를 통해 처음 공개될 것으로 예상할 수 있습니다. 
 
 ### <a name="modular"></a>모듈식
 모듈식으로 빌드했으므로 도구 키트의 모든 비트를 프로젝트에 적용할 필요가 없습니다.  실제로 몇 가지 이점이 있습니다.  이를 통해 프로젝트 크기를 더 작게 유지하고 관리하기가 더 쉽습니다.  또한 스크립트 가능한 개체를 사용하여 빌드되고 인터페이스를 기반으로 하므로 포함된 구성 요소를 사용자 고유의 구성 요소로 바꿔 다른 서비스, 시스템 및 플랫폼을 지원할 수도 있습니다.
@@ -41,7 +42,7 @@ Unity용 MRTK는 혼합 현실 애플리케이션을 위한 오픈 소스 플랫
 모바일 플랫폼을 사용하는 경우 성능을 고려하여 구축했습니다.  이는 매우 중요하며, 도구가 사용자에게 불리하게 작동하지 않도록 보장하려고 했습니다.
 
 ## <a name="see-also"></a>참고 항목
-* [MRTK 시작 가이드](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
-* [MRTK 설명서 홈](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 * [도구 설치](../install-the-tools.md)
-* [HTK/MRTK에서 MRTK 버전 2로 포팅](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
+* [MRTK - 설치 가이드(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+* [MRTK - 설명서 홈(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+* [HoloToolkit/MRTK에서 MRTK 버전 2로 이식(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
