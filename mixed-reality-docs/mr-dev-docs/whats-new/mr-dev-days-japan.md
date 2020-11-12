@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality, 컨퍼런스, summit, developer, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 7d840c3f4f12f679dc7ca7622f906f3282ec785b
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: af9055c4e6074c4d4b10b4f0a6ac135c858b57a7
+ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386424"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94549116"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>혼합 현실 Dev Days 일본
 
@@ -29,14 +29,12 @@ ms.locfileid: "94386424"
 
 ## <a name="registration"></a>등록
 
-[지금 등록](https://mixedrealityprod.microsoftcrmportals.com/MRDDRegistration/)
-
-일본의 혼합 현실 개발 일에 대 한 등록을 여는 것이 매우 기쁘게 생각 합니다.  이 이벤트는 무료 이며 Microsoft 팀 라이브 이벤트에서 온라인 상태로 유지 됩니다.  이벤트가 가까이 있어 이벤트의 대화형 요소에 참여할 수 있도록 참석자가 등록 되도록 요청 합니다.
-
+제공 예정
 
 ## <a name="schedule---subject-to-change"></a>일정-변경 될 대상
 
 **모든 시간은 일본 표준시 (UTC + 9)입니다.** 
+
 
 
 ### <a name="december-16th"></a>12 월 16 일
@@ -44,22 +42,22 @@ ms.locfileid: "94386424"
 |---------|---------|---------|---------|---------|
 |10:00am-10:50am|키 노트 열기|TBD|JA-JP/EN|해당 없음|
 |10:50am-11:00am|**끊어야**||||
-|11:00am-11:25am|*세션 1* 혼합 현실 이란?HL2로 무엇을 할 수 있나요?MR 기술 스택|TBD|JA|100|
-|11:30am-11:55am|*세션 2* 고객 및 파트너 사례 연구를 통해 일본 상용 시장 모멘텀 업데이트|TBD|JA|200|
-|12:00pm-12:50pm|*점심 세션* 패널: 대화형 무료 토론, 질문 및 답변, MRTK + Oculus 퀘스트 2|TBD|JA|200|
+|11:00am-11:25am|*세션 1* 혼합 현실 이란?HL2로 무엇을 할 수 있나요?MR 기술 스택|Atsushi Suzuki|JA|100|
+|11:30am-11:55am|*세션 2* 고객 및 파트너 사례 연구를 통해 일본 상용 시장 모멘텀 업데이트|Tetsu Muranaka|JA|200|
+|12:00pm-12:50pm|*점심 세션* 패널: 대화형 무료 토론, 질문 및 답변, MRTK + Oculus 퀘스트 2|Madoka Chiyoda + Microsoft Mvp|JA|200|
 |12:50pm-1:00pm|**끊어야**||||
-|1:00pm-1:25pm|*세션 3* HoloLens 2 개발 개요|TBD|JA|200|
-|1:30pm-1:55pm|*세션 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity)|TBD|JA|300|
-|2:00pm-2:20pm|*세션 5* HoloLens 2 및 Unreal Engine 시작 (MRTK-Unreal)|TBD|EN|300|
-|2:30pm-2:55pm|*세션 6* MR 앱 디자인 (HL2 앱에 대 한 UI/UX를 만드는 모범 사례)|TBD|EN|300|
+|1:00pm-1:25pm|*세션 3* HoloLens 2 개발 개요|Madoka Chiyoda|JA|200|
+|1:30pm-1:55pm|*세션 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity)|Yoon 파킹|JA|300|
+|2:00pm-2:20pm|*세션 5* HoloLens 2 및 Unreal Engine 시작 (MRTK-Unreal)|Cameron 저 Micka|EN|300|
+|2:30pm-2:55pm|*세션 6* MR 앱 디자인 (HL2 앱에 대 한 UI/UX를 만드는 모범 사례)|Daniel Escudero|EN|300|
 |2:55pm-3:15pm|**끊어야**||||
 |3:15pm-3:40pm|*세션 7* Azure 개체 앵커|TBD|EN|300|
-|3:45pm-4: 오후 10 시|*세션 8* Azure 원격 렌더링|TBD|JA|300|
+|3:45pm-4: 오후 10 시|*세션 8* Azure 원격 렌더링|Atsushi Suzuki|JA|300|
 |4:15pm-4:40pm|*세션 9* Azure 공간 앵커|TBD|EN|300|
-|4:45pm-5: 오후 10 시|*세션 10* 세계 잠금 도구|TBD|EN|300|
-|5:15pm-5:40pm|*세션 11* Azure Kinect 진한 심층 분석, 사례 연구|TBD|JA|400|
-|5:45pm-6:00pm|닫기|TBD|JA|해당 없음|
-||||||
+<!--|4:45pm-5: 오후 10 시|*세션 10* Unity + PiXYZ|(Unity 일본)|JA|200|-->
+|4:45pm-5: 오후 10 시|*세션 10* TBD|TBD|JA|200|
+|5:15pm-5:40pm|*세션 11* Azure Kinect 진한 심층 분석, 사례 연구|Shinji Chiba|JA|400|
+|5:45pm-6:00pm|닫기|Madoka Chiyoda|JA|해당 없음|
 
 #### <a name="contributors-english-subtitle-reviewers"></a>참가자 (영어 부제목 검토자)
 
