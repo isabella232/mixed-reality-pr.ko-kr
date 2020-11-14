@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, mrtk, 디자인, 샘플 앱, 컨트롤
-ms.openlocfilehash: ee410e16a578efa53a38da2fb6b6477e109ac101
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1c6cb4579bbd3d6124cf36b21226ffa803f39f00
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690521"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573187"
 ---
 # <a name="surfaces"></a>Surfaces
 
@@ -21,6 +21,11 @@ ms.locfileid: "91690521"
 [표면은](https://github.com/microsoft/MRDL_Unity_Surfaces)  Microsoft의 혼합 현실 디자인 랩에서 오픈 소스 샘플 앱입니다. 시각적 개체, 오디오 및 완전히 구분 되는 tactile 하루아침를 만드는 방법을 살펴봅니다.
 
 ![Surfaces](images/MRDL_Surfaces_1.jpg)
+
+## <a name="demo-video"></a>데모 비디오 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IhWQ]
+
+혼합 현실 캡처를 사용 하 여 HoloLens 2로 기록 됨
 
 ## <a name="about-the-app"></a>앱 정보
 표면은 MRTK (Mixed Reality Toolkit)의 입력 시스템 및 구성 요소를 사용 하 여 HoloLens 2에 대 한 앱 환경을 만드는 방법을 보여 줍니다. 이 프로젝트에서는의 예제를 찾을 수 있습니다.
@@ -42,16 +47,18 @@ https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overview
 
 (앱은 HoloLens 2 에서만 사용할 수 있음)
 
-## <a name="about-the-author"></a>저자 정보
+## <a name="about-the-author"></a>작성자 정보
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><b>동 Yoon 공원</b><br>UX 디자이너 @Microsoft</td>
+<td style="border-style: none"><b>Dong Yoon Park</b><br>UX 디자이너 @Microsoft</td>
 </tr>
 </table>
 
 ## <a name="see-also"></a>참조
 
-* [상호 작용 가능한 개체](../../design/interactable-object.md)
-* [개체 컬렉션](../../design/object-collection.md)
+* [MRTK 예제 허브](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Surfaces](sampleapp-surfaces.md) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
+* [원소의 주기율표 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [갤럭시 익스플로러 2.0](galaxy-explorer-update.md)

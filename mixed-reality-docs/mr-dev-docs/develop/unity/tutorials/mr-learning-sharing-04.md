@@ -1,18 +1,18 @@
 ---
 title: 다중 사용자 기능 자습서 - 4. 여러 사용자와 개체 움직임 공유
-description: 이 과정을 완료하여 HoloLens 2 애플리케이션 내에서 다중 사용자 공유 환경을 구현하는 방법을 알아봅니다.
+description: 이 과정을 완료하여 HoloLens 2 애플리케이션에서 개체 이동을 여러 사용자와 공유하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, Unity, 자습서, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: b080522e25d933aeb979c3d9a851beaaac4da57f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4a8d98bbabd3061e8fb9f4262e202dac680d584b
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701685"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353421"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4. 여러 사용자와 개체 움직임 공유
 
@@ -29,7 +29,7 @@ ms.locfileid: "91701685"
 
 Project 창에서 **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** 폴더로 이동하여 **TableAnchor** 프리팹을 Hierarchy 창의 **SharedPlayground** 개체로 끌어와서 SharedPlayground 개체의 자식으로 장면에 추가합니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
+![새로 추가한 TableAnchor 프리팹이 선택된 Unity](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
 
 ## <a name="configuring-pun-to-instantiate-the-objects"></a>개체를 인스턴스화하도록 PUN 구성
 
@@ -41,19 +41,19 @@ Hierarchy 창에서 **NetworkLobby** 개체를 펼쳐서 **NetworkRoom** 자식 
 
 * **Rover 탐색기 프리팹** 필드에 대해 리소스 폴더에서 **RoverExplorer_Complete_Variant** 프리팹을 할당합니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section2-step1-1.png)
+![Photon Room 구성 요소가 부분적으로 구성된 Unity](images/mr-learning-sharing/sharing-04-section2-step1-1.png)
 
 **NetworkRoom** 자식 개체가 선택된 상태로 Hierarchy 창에서 **TableAnchor** 개체를 펼친 다음, Inspector 창에서 **Photon Room (Script)** 구성 요소를 찾아서 다음과 같이 구성합니다.
 
 * **Rocket 탐색기 위치** 필드에 대해 Hierarchy 창에서 TableAnchor > **Table** 자식 개체를 할당합니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section2-step1-2.png)
+![Photon Room 구성 요소가 구성된 Unity](images/mr-learning-sharing/sharing-04-section2-step1-2.png)
 
 ## <a name="trying-the-experience-with-shared-object-movement"></a>공유 개체 움직임 환경 체험
 
 Unity 프로젝트를 빌드하고 HoloLens에 배포했으면 Unity로 돌아가서 HoloLens에서 앱이 실행되는 동안 재생 단추를 눌러 게임 모드로 들어갑니다. HoloLens에서 개체를 움직이면 Unity에서 개체가 움직이는 것을 볼 수 있습니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section3-step1-1.gif)
+![네트워크 개체를 사용하여 Unity를 보여주는 애니메이션](images/mr-learning-sharing/sharing-04-section3-step1-1.gif)
 
 ## <a name="congratulations"></a>축하합니다.
 

@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 07/08/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 스트리밍, 원격, 혼합 현실, 개발, 시작, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 특징, 홀로그램, 게임 개발
-ms.openlocfilehash: d7c94ebb7fc6cc16916f1f577b8e54e374b9db1f
-ms.sourcegitcommit: e1de7caa7bd46afe9766186802fa4254d33d1ca6
+ms.openlocfilehash: 09d90af95d9433772563fdc292f31d118b3dd846
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92240764"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573297"
 ---
 # <a name="winrt-in-unreal"></a>Unreal의 WinRT
 
@@ -180,12 +180,12 @@ Unreal에서 DLL을 연결 하 고 사용 하려면 c + + 프로젝트가 필요
 > [!NOTE]
 > 이제 uproject 파일과 동일한 디렉터리에 Source/ConsumeWinRT/ConsumeWinRT 라는 새 빌드 스크립트와 함께 솔루션이 생성 되었습니다.
 
-2. 솔루션을 열고, **게임/ConsumeWinRT/Source/ConsumeWinRT** 폴더를 찾아보고, **ConsumeWinRT.build.cs**를 엽니다.
+2. 솔루션을 열고, **게임/ConsumeWinRT/Source/ConsumeWinRT** 폴더를 찾아보고, **ConsumeWinRT.build.cs** 를 엽니다.
 
 ![ConsumeWinRT.build.cs 파일 열기](images/unreal-winrt-img-05.png)
 
 ### <a name="linking-the-dll"></a>DLL 연결
-1. **ConsumeWinRT.build.cs**에서 속성을 추가 하 여 DLL (HoloLensWinrtDLL이 포함 된 디렉터리)에 대 한 포함 경로를 찾습니다. DLL이 포함 경로에 대 한 자식 디렉터리에 있으므로이 속성은 이진 루트 디렉터리로 사용 됩니다.
+1. **ConsumeWinRT.build.cs** 에서 속성을 추가 하 여 DLL (HoloLensWinrtDLL이 포함 된 디렉터리)에 대 한 포함 경로를 찾습니다. DLL이 포함 경로에 대 한 자식 디렉터리에 있으므로이 속성은 이진 루트 디렉터리로 사용 됩니다.
 
 ```cs
 using System.IO;
@@ -240,17 +240,32 @@ public ConsumeWinRT(ReadOnlyTargetRules target) : base(Target)
 }
 ```
 
-3. **Winrtactor .h** 를 열고 청사진에서 사용할 수 있는 두 개의 함수 정의와 DLL 코드를 사용 하는 다른 함수 정의를 추가 합니다. 
+3. **Winrtactor .h** 를 열고 청사진에서 호출 하는 함수 정의 하나를 추가 합니다. 
+
 ```cpp
 public:
     UFUNCTION(BlueprintCallable)
-    static void OpenFileDialogue;
+    static void OpenFileDialogue();
 ```
 
-4. **Winrtactor .cpp** 를 열고 beginplay에서 DLL을 로드 합니다. 
+4. **Winrtactor .cpp** 를 열고 beginplay를 업데이트 하 여 DLL을 로드 합니다. 
 
 ```cpp
-void AWinfrtActor::BeginPlay()
+void AWinrtActor::BeginPlay()
+{
+    Super::BeginPlay();
+
+    // Gets path to DLL location
+    const FString BinDir = FPaths::ProjectDir() / 
+        "ThirdParty" / "HoloLensWinrtDLL" / 
+        "arm64" / "Release" / "HoloLensWinrtDLL";
+
+    // Loads DLL into application
+    void * dllHandle = FPlatformProcess::GetDllHandle(
+        *(BinDir / "HoloLensWinrtDLL.dll"));
+}
+
+void AWinrtActor::OpenFileDialogue()
 {
 #if PLATFORM_HOLOLENS
     HoloLensWinrtDLL::OpenFileDialogue();
@@ -268,11 +283,11 @@ void AWinfrtActor::BeginPlay()
 
 ![장면에 WinrtActor 배치](images/unreal-winrt-img-06.png)
 
-2. **세계 Outliner**에서 이전에 장면에 놓인 **Windrtactor** 를 찾아 수준 청사진으로 끌어 놓습니다. 
+2. **세계 Outliner** 에서 이전에 장면에 놓인 **Windrtactor** 를 찾아 수준 청사진으로 끌어 놓습니다. 
 
 ![WinrtActor를 수준 청사진으로 끌기](images/unreal-winrt-img-07.png)
 
-3. 수준 청사진에서 WinrtActor의 출력 노드를 끌어서 **파일 열기 대화 상자**를 검색 한 다음 사용자 입력에서 노드를 라우팅합니다.  이 경우 음성 이벤트에서 파일 열기 대화 상자가 호출 됩니다. 
+3. 수준 청사진에서 WinrtActor의 출력 노드를 끌어서 **파일 열기 대화 상자** 를 검색 한 다음 사용자 입력에서 노드를 라우팅합니다.  이 경우 음성 이벤트에서 파일 열기 대화 상자가 호출 됩니다. 
 
 ![수준 청사진의 노드 구성](images/unreal-winrt-img-08.png)
 

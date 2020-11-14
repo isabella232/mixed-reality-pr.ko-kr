@@ -1,18 +1,18 @@
 ---
 title: PC 홀로그램 원격 자습서 - 1. PC 홀로그램 원격 시작
-description: 이 과정을 완료하여 혼합 현실 환경을 PC에서 HoloLens 2로 원격으로 사용하는 방법을 알아봅니다.
+description: 이 과정을 완료하여 혼합 현실 환경을 PC에서 HoloLens 2로 원격으로 수행하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/29/2020
 ms.topic: article
 keywords: 혼합 현실, Unity, 자습서, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 3385197f0df8cfb58ec3c9ba60aee0480cda8533
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: d88d3e17e26ddd361f2cbe1a32f22025255303f0
+ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293245"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93416999"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. PC 홀로그램 원격 시작
 
@@ -36,12 +36,12 @@ ms.locfileid: "92293245"
 * 올바른 [도구가 설치](../../install-the-tools.md)된 상태로 구성된 Windows 10 PC
 * 기본적인 C# 프로그래밍 지식
 * [개발용으로 구성](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)된 HoloLens 2 디바이스
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>(Unity 2019.3.X가 탑재되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가됨)
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>(Unity 2019 LTS가 탑재되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가되어 있음)
 
 계속하기 전에 [시작](mr-learning-base-01.md) 자습서 시리즈 또는 Unity 및 MRTK에 대한 기본적인 사전 경험을 완료할 것을 **강력히 권장** 합니다.
 
 > [!IMPORTANT]
-> * 이 자습서 시리즈에 추천되는 Unity 버전은 Unity 2019.3.X입니다. 이는 위에서 연결된 필수 구성 요소에서 설명하는 모든 Unity 버전 요구 사항 또는 추천 사항을 대체합니다.
+> * 이 자습서 시리즈에 추천되는 Unity 버전은 Unity 2019 LTS입니다. 이는 위에서 연결된 필수 구성 요소에서 설명하는 모든 Unity 버전 요구 사항 또는 추천 사항을 대체합니다.
 > * MRTK 프로젝트를 사용한 홀로그램 원격 접속은 레거시 XR에서만 작동합니다. 지금은 XR SDK가 지원되지 않습니다.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Unity 프로젝트 만들기 및 준비
@@ -66,14 +66,14 @@ ms.locfileid: "92293245"
 
 ## <a name="importing-the-tutorial-assets"></a>자습서 자산 가져오기
 
-[MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage)를 다운로드하고 **가져옵니다** .
+[MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage)를 다운로드하고 **가져옵니다**.
 
 >[!TIP]
 > Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [Mixed Reality Toolkit 가져오기](../../../mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) 지침을 참조할 수 있습니다.
 
 자습서 자산을 가져오면 [프로젝트] 창이 다음과 비슷하게 표시됩니다.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section2-Step1-1.png)
+![자습서 자산을 가져온 후의 Unity 계층 구조, 장면 및 프로젝트 창](images/mrlearning-pc-holographic-remoting/Tutorial1-Section2-Step1-1.png)
 
 ## <a name="configuring-and-preparing-the-scene"></a>장면 구성 및 준비
 
@@ -88,15 +88,15 @@ ms.locfileid: "92293245"
 * ModelParent
 * 플랫폼
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-1.png)
+![선택한 장면에 추가할 프리팹이 있는 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-1.png)
 
 이러한 모델을 prefabs 폴더에서 **계층 구조 창** 으로 끌어서 놓습니다.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-2.png)
+![새로 추가한 프리팹이 여전히 선택된 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-2.png)
 
 장면의 개체에 초점을 맞추기 위해 **ModelParent** 개체를 두 번 클릭한 다음, 약간씩 다시 확대할 수 있습니다.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-3.png)
+![ModelParent 개체에 초점을 맞춘 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-3.png)
 
 > [!TIP]
 > 장면에서 큰 아이콘(예: 틀이 있는 매력적인 큰 'T' 아이콘)이 표시되는 경우 <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">Gizmo를 끄기 위치로 전환</a>하여 이러한 아이콘을 숨길 수 있습니다.
@@ -109,15 +109,15 @@ ms.locfileid: "92293245"
 
 [계층 구조] 창에서 **ButtonParent** 개체를 펼치고 **NextButton** 을 선택합니다. [검사기] 창에서 **Interactable(스크립트)** 구성 요소를 찾고, **OnClick ()** 이벤트 아래에서 **+** 아이콘을 클릭합니다.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-1.png)
+![NextButton OnClick 이벤트가 추가된 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-1.png)
 
 [계층 구조] 창에서 **NextButton** 개체를 선택한 상태에서 [계층 구조] 창의 **ButtonParent** 개체를 클릭하여 방금 추가한 이벤트의 비어 있는 **없음(개체)** 필드로 끌어서 ButtonParent 개체에서 이 단추의 단추 클릭 이벤트를 수신 대기하도록 설정합니다.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-2.png)
+![NextButton OnClick 이벤트 수신기가 구성된 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-2.png)
 
 동일한 이벤트의 **함수 없음** 드롭다운을 클릭합니다. 그런 다음, **ViewButtonControl** > **NextModel ()** 을 차례로 선택하여 **NextModel ()** 함수를 이 단추의 단추 누름 이벤트가 발생할 때 트리거되는 작업으로 설정합니다.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-3.png)
+![NextButton OnClick 이벤트 동작 선택 경로가 있는 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-3.png)
 
 ### <a name="2-configuring-the-remaining-buttons"></a>2. 나머지 단추 구성
 
@@ -131,23 +131,23 @@ ms.locfileid: "92293245"
 
 이제 단추는 모델 전환 및 클리핑 기능을 시연하도록 구성되었습니다. 이번에는 3D 모델 및 클리핑 개체를 스크립트에 추가해야 합니다.
 
-시연을 위해 6가지 3D 모델이 제공되었습니다. ***ModelParentobject*** 를 펼쳐서 이러한 3D 모델을 표시합니다.
+데모를 위해 6개의 서로 다른 3D 모델이 제공되었습니다. * *_ModelParentobject_* _를 펼쳐서 이러한 3D 모델을 표시합니다.
 
-[계층 구조] 창에서 ButtonParent 개체를 여전히 선택한 상태에서 [검사기] 창에서 **보기 단추 컨트롤(스크립트)** 구성 요소를 찾아서 **모델** 변수를 펼칩니다.
+Hierarchy(계층 구조) 창에서 ButtonParent 개체가 선택된 채로 Inspector(검사기) 창에서 *View Button Control (Script)* * 구성 요소를 찾아서 **Models** 변수를 펼칩니다.
 
 **크기** 필드에서 장면에 포함하려는 3D 모델의 수를 입력합니다. 여기서는 6입니다. 새 3D 모델을 추가하기 위한 필드가 만들어집니다.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-1.png)
+![ViewButtonControl 스크립트 구성 요소 필드가 있는 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-1.png)
 
 ModelParent 개체의 각 자식 개체를 이러한 필드로 끌어서 놓습니다.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-2.png)
+![ViewButtonControl 스크립트 구성 요소 필드가 구성된 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-2.png)
 
 **ClippingObjects** 개체를 [계층 구조] 창에서 **토글 단추(스크립트)** 구성 요소의 **클리핑 개체** 필드로 끌어서 놓습니다.
 >[!NOTE]
 >단추 부모 개체에만 있습니다.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-3.png)
+![ToggleButton 스크립트 구성 요소 필드가 구성된 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-3.png)
 
 [계층 구조] 창에서 **ClippingObjects** 프리팹을 선택하고, [검사기] 창에서 이를 사용하도록 설정하여 클리핑 개체를 설정합니다.
 
@@ -159,7 +159,7 @@ ModelParent 개체의 각 자식 개체를 이러한 필드로 끌어서 놓습�
 
 **ClippingSphere** 개체를 구성하려면 해당 개체를 클릭하고, [검사기] 창에서 **클리핑 구(스크립트)** 구성 요소를 찾습니다. 크기 필드에서 3D 모델에 추가해야 하는 렌더러의 수를 입력합니다. 여기서는 MarsCuriosityRover 자식 개체에 대해 10을 추가합니다. 렌더러를 추가하기 위한 필드를 만들고, MarsCuriosityRover 개체의 자식 모델 개체를 이러한 필드로 끌어서 놓습니다.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section5-Step1-1.png)
+![ClippingSphere 스크립트 구성 요소 필드가 구성된 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section5-Step1-1.png)
 
 동일한 프로세스를 수행하고, MarsCuriosityRover의 자식 개체 렌더러를 **ClippingBox** 및 **ClippingPlane** 개체에 추가합니다.
 
@@ -171,25 +171,25 @@ ModelParent 개체의 각 자식 개체를 이러한 필드로 끌어서 놓습�
 
 ### <a name="1-identify-target-objects-and-associated-tooltips"></a>1. 대상 개체 및 연결된 도구 설명 식별
 
-[계층 구조] 창에서 ModelParent 개체를 선택합니다. ***MarsCuriosity -> Rover*** 를 차례로 펼쳐서 MarsCuriosityRover의 5개 주요 부품 ( **POI-Camera** , **POI-Wheels** , **POI-Antena** , **POI-Spectrometer** , **POI-RUHF Antenna** )을 찾습니다.
+[계층 구조] 창에서 ModelParent 개체를 선택합니다. **_MarsCuriosity -> Rover_ *_를 차례로 펼쳐서 5개의 MarsCuriosityRover 주요 부품(_* POI-Camera** , **POI-Wheels** , **POI-Antena** , **POI-Spectrometer** , **POI-RUHF Antenna** )을 찾습니다.
 
 * [계층 구조] 창에서 MarsCuriosityRover 부품과 연결된 5개의 해당 도구 설명 개체를 확인합니다.
 * MarsCuriosityRover 부품을 살펴볼 때 환경을 강조 표시하도록 이러한 개체를 구성합니다.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step1-1.png)
+![Rover 개체가 선택되어 펼쳐진 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step1-1.png)
 
 ### <a name="2-implement-while-looking-at-target-----on-look-away--events"></a>2. While Looking At Target () 및 On Look Away () 이벤트 구현
 
-[계층 구조] 창에서 ***POI-Camera*** 개체를 선택합니다. [검사기] 창에서 **시선 추적 대상(스크립트)** 구성 요소를 찾고 **While Looking At Target ()**  & **On Look Away ()** 이벤트를 다음과 같이 구성합니다.
+Hierarchy(계층 구조) 창에서 * **POI-Camera** _ 개체를 선택합니다. Inspector(검사기) 창에서 _ *Eye Tracking Target (Script)* * 구성 요소를 찾고, **While Looking At Target ()**  & **On Look Away ()** 이벤트를 다음과 같이 구성합니다.
 
 * **POI-Camera 도구 설명** 개체를 **없음(개체)** 필드에 할당합니다.
 * **While Looking At Target ()** 이벤트의 **함수 없음** 드롭다운에서 **GameObject** > **SetActive(부울)** 를 차례로 선택합니다. 대상 개체를 볼 때 트리거되는 작업으로 도구 설명을 강조 표시하려면 아래쪽에 있는 **확인란** 을 선택합니다.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-1.png)
+![EyeTrackingTarget WhileLookingAtTarget 이벤트 구성을 진행 중인 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-1.png)
 
 * 동일한 프로세스를 수행하고, **On Look Away ()** 이벤트 수신기의 **함수 없음** 드롭다운을 클릭합니다. 그런 다음, **GameObject** > **SetActive(부울)** 를 차례로 선택하고, 대상 개체에서 시선을 거둘 때 트리거되는 작업으로 도구 설명을 숨기려면 **확인란** 을 비워 둡니다.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-2.png)
+![EyeTrackingTarget OnLookAway 이벤트가 구성된 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-2.png)
 
 동일한 프로세스를 수행하고, 각 도구 설명 개체를 동일한 **MarsCuriosityRover** 부품의 **While Looking At Target ()**  & **On Look Away ()** 이벤트에 할당합니다.
 

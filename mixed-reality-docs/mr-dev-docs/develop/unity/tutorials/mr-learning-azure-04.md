@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, hololens 2, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 2c10d7458fc956cb8974319cd5355260179f10b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f8271fe3b3b9549d6c95707466db9af3d312fab7
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700089"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353251"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Integrating Azure Spatial 통합
 
@@ -41,17 +41,17 @@ ms.locfileid: "91700089"
 
 Project 창에서 **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager** 로 이동합니다.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step1-1.png)
+![AnchorManager 프리팹이 선택된 Unity](images/mr-learning-azure/tutorial4-section1-step1-1.png)
 
 **Manager** 폴더에서 프리팹 **Anchor Manager** 를 장면 Hierarchy에 끌어다 놓습니다.
 
 Hierarchy에서 **Anchor Manager** GameObject를 선택하고 Inspector 섹션에서 **Spatial Anchor Manager** (스크립트)를 찾습니다. 계정 ID 및 키 필드를 찾아 이전 단계의 필수 구성 요소에서 만든 자격 증명을 추가합니다.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step2-1.png)
+![새로 추가한 AnchorManager 프리팹이 여전히 선택된 Unity](images/mr-learning-azure/tutorial4-section1-step2-1.png)
 
 이제 장면 Hierarchy에서 **Scene Controller** 개체를 찾아 선택합니다. **Scene Controller** Inspector가 표시됩니다.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step3-1.png)
+![SceneController 스크립트 구성 요소가 구성된 Unity](images/mr-learning-azure/tutorial4-section1-step3-1.png)
 
 **Scene Controller** 구성 요소의 **Anchor Manager** 필드가 비어 있음을 확인하고, 장면의 Hierarchy에서 **Anchor Manager** 를 해당 필드로 끌어서 놓고 장면을 저장합니다.
 

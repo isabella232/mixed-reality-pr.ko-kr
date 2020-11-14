@@ -7,12 +7,12 @@ ms.date: 07/29/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2
-ms.openlocfilehash: ca7c46f8d3c6b85125be3d6aa9d57e6f0d72fb82
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 88bee12196099837f46164552c690a6b326f9ba7
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699777"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386229"
 ---
 # <a name="get-your-existing-app-ready-for-hololens-2"></a>HoloLens 2를 위한 기존 앱 준비
 
@@ -24,12 +24,12 @@ ms.locfileid: "91699777"
 
 | 1단계 | 2단계 | 3단계 | 4단계 |
 |----------|-------------------|-------------------|-------------------|
-| ![Visual Studio 로고](../images/visualstudio_logo.png) | ![Unity 로고](../../design/images/final_unity_logo.png)| ![Unity 아이콘](images/hololens2_icon.jpg) | ![MRTK 로고](../../design/images/final_mrtk-small_logo.png) |
+| ![Visual Studio 로고](../images/visualstudio_logo.png) | ![Unity 로고](../../design/images/logo-unity.png)| ![Unity 아이콘](images/hololens2_icon.jpg) | ![MRTK 로고](../../design/images/74-12.png) |
 | 최신 도구 다운로드 | Unity 프로젝트 업데이트 | ARM용 컴파일 | MRTK v2로 마이그레이션
 
 필수 구성 요소:
 
-이식 프로세스를 시작하기 전에 소스 제어를 사용하여 애플리케이션의 원래 상태를 스냅샷으로 저장하는 것이 **좋습니다** . 또한 프로세스 중 여러 시점에서 검사점 상태를 *저장* 하는 것이 좋습니다. 원래 애플리케이션의 Unity 인스턴스를 하나 더 사용하면 이식 과정에서 나란히 비교할 수 있기 때문에 유용할 수 있습니다. 
+이식 프로세스를 시작하기 전에 소스 제어를 사용하여 애플리케이션의 원래 상태를 스냅샷으로 저장하는 것이 **좋습니다**. 또한 프로세스 중 여러 시점에서 검사점 상태를 *저장* 하는 것이 좋습니다. 원래 애플리케이션의 Unity 인스턴스를 하나 더 사용하면 이식 과정에서 나란히 비교할 수 있기 때문에 유용할 수 있습니다. 
 
 > [!NOTE]
 > 이식하기 전에 Windows Mixed Reality 개발을 위한 최신 도구를 설치했는지 확인합니다. 대부분의 기존 HoloLens 개발자의 경우 이 작업을 위해 최신 버전의 Visual Studio 2019로 업데이트하고 적절한 Windows SDK를 설치하게 됩니다. 이어지는 내용에서는 여러 다른 Unity 버전과 MRTK(Mixed Reality Toolkit) 버전 2를 좀 더 자세히 알아봅니다.
@@ -82,10 +82,10 @@ HoloLens(1세대)는 x86 프로세서에서 애플리케이션을 실행하지�
 
 MRTK 버전 2를 사용하는 방법에 대한 자세한 내용은 다음 리소스를 확인하세요.
 
-- [MRTK 방문 페이지](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
-- [MRTK 시작](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
-- [MRTK 손](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/HandTracking.html)
-- [MRTK 시선 추적](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)
+- [MRTK - 설명서 홈(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+- [설치 가이드(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+- [MRTK - 손 추적(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/HandTracking.html)
+- [MRTK - 시선 추적(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)
 
 ### <a name="prepare-for-the-migration"></a>마이그레이션 준비
 
@@ -150,8 +150,9 @@ HoloLens 2에 가장 적합하게 애플리케이션 디자인을 업데이트�
 
 ## <a name="see-also"></a>참고 항목
 * [도구 설치](../install-the-tools.md)
-* [MRTK 버전 2 시작](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
-* [HTK API에서 MRTK API로](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
+* [MRTK - 설치 가이드(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+* [MRTK - 설명서 홈(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+* [HoloToolkit/MRTK에서 MRTK 버전 2로 이식(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
 * [Unity 권장 설정](recommended-settings-for-unity.md)
 * [혼합 현실의 성능 이해](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 

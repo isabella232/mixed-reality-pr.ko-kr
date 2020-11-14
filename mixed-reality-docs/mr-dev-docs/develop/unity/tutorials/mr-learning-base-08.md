@@ -1,18 +1,18 @@
 ---
 title: 시작 자습서 - 8. 시선 추적 사용
-description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 혼합 현실 애플리케이션을 만드는 방법을 보여 줍니다.
+description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 시선 추적을 사용하는 방법을 보여 줍니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, Unity, 자습서, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: a87b613ca47eb0ed6695a55c8e5afe0f24de5937
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 490a131bb196941d2ae581b97d88a104c0c212e2
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701001"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353501"
 ---
 # <a name="8-using-eye-tracking"></a>8. 시선 추적 사용
 
@@ -32,7 +32,7 @@ ms.locfileid: "91701001"
 
 Unity 메뉴에서 Mixed Reality Toolkit > 유틸리티 > **Unity 프로젝트 구성** 을 선택하여 **MRTK Project Configurator** 창을 열고 **UWP 기능** 섹션에서 **시선 응시 입력 기능 사용** 이 회색으로 표시되는지 확인합니다.
 
-![mr-learning-base](images/mr-learning-base/base-08-section1-step1-1.png)
+![Unity MRTK Project Configurator 창](images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
 > 이 자습서 시리즈의 시작 부분에서 Unity 프로젝트를 구성한 경우 [MRTK Project Configurator 설정 적용](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings) 동안에는 응시 입력 기능이 사용하도록 설정되어 있어야 합니다. 그러나 사용하도록 설정되지 않은 경우 지금 사용하도록 설정해야 합니다.
@@ -46,7 +46,7 @@ Hierarchy 창에서 **MixedRealityToolkit** 개체를 선택한 다음, Inspecto
 * **DefaultMixedRealityPointerProfile** 을 복제하고 적절한 이름(예: _GettingStarted_MixedRealityPointerProfile_ )을 설정합니다.
 * **응시 설정** 섹션을 찾고 **시선 추적 사용** 확인란을 선택합니다.
 
-![mr-learning-base](images/mr-learning-base/base-08-section2-step1-1.png)
+![새로 만든 프로필이 적용되고 시선 추적을 사용하도록 설정된 Unity MixedRealityToolkit 구성 요소](images/mr-learning-base/base-08-section2-step1-1.png)
 
 > [!TIP]
 > MRTK 프로필을 복제하는 방법은 [MRTK 프로필 구성](mr-learning-base-03.md) 지침을 참조하세요.
@@ -59,20 +59,20 @@ Hierarchy 창에서 **MixedRealityToolkit** 개체를 선택한 다음, Inspecto
 * **DefaultMixedRealityInputSimulationProfile** 을 복제하고 적절한 이름(예: _GettingStarted_MixedRealityInputSimulationProfile_ )을 설정합니다.
 * **시선 시뮬레이션** 섹션을 찾아 **시선 위치 시뮬레이션** 확인란을 선택합니다.
 
-![mr-learning-base](images/mr-learning-base/base-08-section3-step1-1.png)
+![새로 만든 프로필이 적용되고 시선 시뮬레이션을 사용하도록 설정된 Unity MixedRealityToolkit 구성 요소](images/mr-learning-base/base-08-section3-step1-1.png)
 
 ## <a name="adding-eye-tracking-to-objects"></a>개체에 시선 추적 추가
 
 Hierarchy 창에서 RoverExplorer > **Buttons** 개체를 확장한 다음, 세 개의 자식 단추 개체 각각에 대해 SeeItSayItLabel > **TextMeshPro** 개체를 확장하고 선택합니다.
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-1.png)
+![TextMeshPro 개체가 선택된 Unity](images/mr-learning-base/base-08-section4-step1-1.png)
 
 TextMeshPro 개체를 선택한 상태로 Inspector 창에서 **구성 요소 추가** 단추를 사용하여 다음 구성 요소를 선택한 모든 개체에 추가합니다.
 
 * **Box Collider** 구성 요소
 * **EyeTrackingTarget** 구성 요소
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-2.png)
+![TextMeshPro 개체가 선택되고 구성 요소가 추가된 Unity](images/mr-learning-base/base-08-section4-step1-2.png)
 
 Hierarchy 창에서 **Hints** > SeeItSayItLabel > **TextMeshPro** 개체를 선택한 다음, 다음과 같이 **EyeTrackingTarget** 구성 요소를 구성합니다.
 
@@ -87,13 +87,13 @@ Hierarchy 창에서 **Hints** > SeeItSayItLabel > **TextMeshPro** 개체를 선�
   * **함수 없음** 드롭다운에서 **TextMeshPro** > **float fontSize** 를 차례로 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트합니다.
   * 인수를 **0.04** 로 설정하여 글꼴 크기를 0.04로 다시 설정합니다.
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-3.png)
+![Hints TextMeshPro 개체가 선택되고 EyeTrackingTarget 구성 요소가 구성된 Unity](images/mr-learning-base/base-08-section4-step1-3.png)
 
 **Explode** > SeeItSayItLabel > **TextMeshPro** 개체 및 **Reset** > SeeItSayItLabel > **TextMeshPro** 개체에 대해 이 단계를 **반복** 합니다.
 
 이제 게임 모드로 들어간 다음, 마우스 오른쪽 버튼을 누른 채로 마우스를 이동하면서 응시가 레이블 중 하나를 적중할 때까지 누르면 글꼴 크기가 50%씩 증가하고 시선을 돌렸을 때 원래 크기로 다시 설정됩니다.
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-4.png)
+![시선 추적 대상 Explode 단추 레이블을 응시하고 있는 Unity 재생 모드 분할 보기](images/mr-learning-base/base-08-section4-step1-4.png)
 
 ## <a name="congratulations"></a>축하합니다.
 

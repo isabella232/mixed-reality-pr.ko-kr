@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, 성능
 appliesto:
 - Windows 10
-ms.openlocfilehash: 77d1d7273d1e73af4655ef45bd102220e15d2355
-ms.sourcegitcommit: af1e5c9003fc3b7dd0a2f67531f91f954b6a9ea3
+ms.openlocfilehash: 7d6d5a1eeabffdd7ad6d4ddd070a14c6dcf0d5ee
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94498288"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573207"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP 반향 G2 질문과 대답
 
@@ -36,13 +36,15 @@ HP 권장 사항:
 
 ## <a name="i-am-getting-a-7-14-something-went-wrong-error-when-i-plug-in-my-headset"></a>내 헤드셋에 연결할 때 7-14 "문제가 발생 했습니다." 오류가 발생 합니다.
 
+7-14 문제가 발생 했습니다. 코드는 일부 필수 USB2 구성 요소를 찾지 못했음을 의미 합니다.  HP 반향 G2의 추가 긴 케이블로 인해 USB 신호의 일부 공차가 더 엄격 합니다.  즉, 컴퓨터의 한 포트가 다른 포트 보다 안정적으로 작동할 수 있습니다.
+
 7-14 "오류가 발생 했습니다." 오류가 표시 되 면 다음 단계를 수행해 보세요.
 
-- 최신 드라이버가 설치 되어 있는지 확인 합니다.
-- 케이블을 다른 USB-3.0 포트에 연결 해 보세요.
-- 다른 포트를 사용 하려면 포함 된 어댑터에 대해 USB C를 사용 하세요.
-
-케이블을 다른 USB 허브에 연결 해 보세요.  
+- 헤드셋 및 USB 컨트롤러에 대 한 최신 드라이버가 설치 되어 있는지 확인 합니다.
+- Microsoft USB 드라이버를 사용 하 고 있는지 확인 합니다. "확장 가능한 호스트 컨트롤러" 장치의 이름에 "Microsoft"가 있어야 합니다.
+- 컴퓨터의 다른 USB-3.0 포트에 케이블을 연결 해 보세요. (USB 유형-C 및 유형-A 포트 사용해 보기)
+- 포함 된 USB C를 사용 하 여 다른 포트를 시도 합니다.
+- 컴퓨터에 USB 허브를 통해 헤드셋을 연결 해 보세요.
 
 > [!NOTE]
 > HP는 반향 G2 장치를 사용 하 여 마더보드에 기본 제공 되는 USB 컨트롤러만 사용 하는 것이 좋습니다.

@@ -1,18 +1,18 @@
 ---
 title: Azure Spatial Anchors 자습서 - 4. Azure Spatial Anchor 피드백 표시
-description: 이 과정을 완료하여 혼합 현실 애플리케이션 내에서 Azure Spatial Anchors를 구현하는 방법을 알아봅니다.
+description: 이 과정을 완료하여 혼합 현실 애플리케이션에서 Azure Spatial Anchors의 피드백을 표시하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, Unity, 자습서, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: c36fa20ae6438aee92d5d853febd683e01e81ea7
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4c35af1f5a2a723df6603fbdf41dd18a2e9ee45d
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700313"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353341"
 ---
 # <a name="4-displaying-feedback-from-azure-spatial-anchors"></a>4. Azure Spatial Anchor에서 피드백 표시
 
@@ -27,7 +27,7 @@ ms.locfileid: "91700313"
 
 Hierarchy 창에서 **명령** > **TextContent** 개체를 마우스 오른쪽 단추로 클릭합니다. **3D 개체** > **텍스트 - TextMeshPro** 를 선택하여 TextMeshPro 텍스트 개체를 명령 > TextContent 개체의 자식으로 만듭니다.
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-1.png)
+![새로 만든 TextMeshPro 개체가 선택된 Unity](images/mr-learning-asa/asa-04-section1-step1-1.png)
 
 > [!TIP]
 > 장면 작업을 더 쉽게 수행할 수 있도록 개체 왼쪽의 눈 아이콘을 클릭하여 ParentAnchor 개체에 대한 <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">장면 표시 유형</a>을 끄기로 설정합니다. 이렇게 하면 게임 내 표시 유형을 변경하지 않고 [장면] 창에서 개체를 숨깁니다.
@@ -44,13 +44,13 @@ Hierarchy 창에서 **명령** > **TextContent** 개체를 마우스 오른쪽 �
 * TextMeshPro - 텍스트 구성 요소의 **글꼴 크기** 를 0.17로 변경합니다.
 * TextMeshPro - 텍스트 구성 요소의 **맞춤** 을 가운데 및 중간으로 변경합니다.
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-2.png)
+![Feedback 개체가 구성된 Unity](images/mr-learning-asa/asa-04-section1-step1-2.png)
 
 Hierarchy 창에서 **Feedback** 개체를 선택한 다음, Inspector 창에서 **구성 요소 추가** 단추를 사용하여 **Anchor Feedback Script(스크립트)** 구성 요소를 추가하고 다음과 같이 구성합니다.
 
 * **Feedback** 개체 자체를 **Anchor Feedback Script(스크립트)** 구성 요소의 **피드백 텍스트** 필드에 할당합니다.
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-3.png)
+![Anchor Feedback Script 구성 요소가 구성된 Unity](images/mr-learning-asa/asa-04-section1-step1-3.png)
 
 ## <a name="congratulations"></a>축하합니다.
 

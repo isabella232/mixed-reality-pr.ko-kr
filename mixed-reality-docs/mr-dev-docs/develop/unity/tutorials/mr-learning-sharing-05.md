@@ -1,18 +1,18 @@
 ---
 title: 다중 사용자 기능 자습서 - 5. 공유 환경에 Azure Spatial Anchors 통합
-description: 이 과정을 완료하여 HoloLens 2 애플리케이션 내에서 다중 사용자 공유 환경을 구현하는 방법을 알아봅니다.
+description: 이 과정을 완료하여 Azure Spatial Anchors를 사용하여 공유된 다중 사용자 HoloLens 2 애플리케이션에서 개체를 고정하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, Unity, 자습서, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: fc8e20a9ddaa595db0a3d59975e7c785d01c0a6d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 65672bad9a967e11e7feb7efc45759608e9c9e76
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701615"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353431"
 ---
 # <a name="5-integrating-azure-spatial-anchors-into-a-shared-experience"></a>5. 공유 환경에 Azure Spatial Anchors 통합
 
@@ -27,11 +27,11 @@ ms.locfileid: "91701615"
 
 Hierarchy 창에서 **SharedPlayground** 개체를 펼친 다음, **TableAnchor** 개체를 펼쳐서 자식 개체를 노출합니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section1-step1-1.png)
+![SharedPlayground 및 TableAnchor 개체가 펼쳐진 Unity](images/mr-learning-sharing/sharing-05-section1-step1-1.png)
 
 Project 창에서 **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** 폴더로 이동하여 **Buttons** 프리팹을 **TableAnchor** 자식 개체 위로 끌어와서 TableAnchor 개체의 자식으로 장면에 추가합니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section1-step1-2.png)
+![새로 추가한 Buttons 프리팹이 선택된 Unity](images/mr-learning-sharing/sharing-05-section1-step1-2.png)
 
 ## <a name="configuring-the-buttons-to-operate-the-scene"></a>장면을 작동하도록 단추 구성
 
@@ -39,14 +39,14 @@ Project 창에서 **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Pref
 
 Hierarchy 창에서 **Button** 개체를 펼치고 첫째 자식 단추 개체인 **StartAzureSession** 을 선택합니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-1.png)
+![StartAzureSession 단추 개체가 선택된 Unity](images/mr-learning-sharing/sharing-05-section2-step1-1.png)
 
 Inspector 창에서 **Interactable (Script)** 구성 요소를 찾아서 **OnClick ()** 이벤트를 다음과 같이 구성합니다.
 
 * **None (Object)** 필드에는 **TableAnchor** 개체를 할당합니다.
 * **No Function** 드롭다운에서 **AnchorModuleScript** > **StartAzureSession ()** 함수를 선택합니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-2.png)
+![StartAzureSession 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-sharing/sharing-05-section2-step1-2.png)
 
 Hierarchy 창에서 둘째 자식 단추 개체인 **CreateAzureAnchor** 를 선택한 다음, Inspector 창에서 **Interactable (Script)** 구성 요소를 찾아서 **OnClick ()** 이벤트를 다음과 같이 구성합니다.
 
@@ -54,21 +54,21 @@ Hierarchy 창에서 둘째 자식 단추 개체인 **CreateAzureAnchor** 를 선
 * **No Function** 드롭다운에서 **AnchorModuleScript** > **CreateAzureAnchor ()** 함수를 선택합니다.
 * 새로운 **None (Game Object)** 필드가 나타나면 **TableAnchor** 개체를 할당합니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-3.png)
+![CreateAzureAnchor 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-sharing/sharing-05-section2-step1-3.png)
 
 Hierarchy 창에서 셋째 자식 단추 개체인 **ShareAzureAnchor** 를 선택한 다음, Inspector 창에서 **Interactable (Script)** 구성 요소를 찾아서 **OnClick ()** 이벤트를 다음과 같이 구성합니다.
 
 * **None (Object)** 필드에는 **TableAnchor** 개체를 할당합니다.
 * **No Function** 드롭다운에서 **SharingModuleScript** > **ShareAzureAnchor ()** 함수를 선택합니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-4.png)
+![ShareAzureAnchor 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-sharing/sharing-05-section2-step1-4.png)
 
 Hierarchy 창에서 넷째 자식 단추 개체인 **GetAzureAnchor** 를 선택한 다음, Inspector 창에서 **Interactable (Script)** 구성 요소를 찾아서 **OnClick ()** 이벤트를 다음과 같이 구성합니다.
 
 * **None (Object)** 필드에는 **TableAnchor** 개체를 할당합니다.
 * **No Function** 드롭다운에서 **SharingModuleScript** > **GetAzureAnchor ()** 함수를 선택합니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-5.png)
+![GetAzureAnchor 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-sharing/sharing-05-section2-step1-5.png)
 
 ## <a name="connecting-the-scene-to-the-azure-resource"></a>Azure 리소스에 장면 연결
 
@@ -79,7 +79,7 @@ Inspector 창에서 **Spatial Anchor Manager (Script)** 구성 요소를 찾아�
 * **Spatial Anchors Account ID** 필드에 Azure Spatial Anchors 계정의 **계정 ID** 를 붙여넣습니다.
 * **Spatial Anchors Account Key** 필드에 Azure Spatial Anchors 계정의 기본 또는 보조 **액세스 키** 를 붙여넣습니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section3-step1-1.png)
+![Spatial Anchor Manager가 구성된 Unity](images/mr-learning-sharing/sharing-05-section3-step1-1.png)
 
 > [!TIP]
 > 장면에서 Spatial Anchors 계정 ID 및 키를 설정하는 대신, 전체 프로젝트에 대해 이를 설정할 수 있습니다. 이는 ASA를 사용하는 많은 장면이 있는 경우 유용할 수 있습니다. 이렇게 하려면 Project 창에서 Assets > AzureSpatialAnchors.SDK > Resources > **SpatialAnchorConfig** 자산으로 이동한 다음, Inspector 창에서 값을 설정합니다.
@@ -88,7 +88,7 @@ Hierarchy 창에서 **TableAnchor** 개체를 선택한 다음, Inspector 창에
 
 * **Public Sharing Pin** 필드에서 몇 개의 숫자를 변경하여 프로젝트에 고유한 핀이 되도록 합니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section3-step1-2.png)
+![Anchor Module 스크립트가 구성된 Unity](images/mr-learning-sharing/sharing-05-section3-step1-2.png)
 
 **TableAnchor** 개체가 선택된 상태로 Inspector 창에서 모든 스크립트 구성 요소가 **활성화** 되어 있는지 확인합니다.
 
@@ -96,7 +96,7 @@ Hierarchy 창에서 **TableAnchor** 개체를 선택한 다음, Inspector 창에
 * **Anchor Module Script (Script)** 구성 요소 옆에 있는 확인란을 선택하여 활성화합니다.
 * **Sharing Module Script (Script)** 구성 요소 옆에 있는 확인란을 선택하여 활성화합니다.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section3-step1-3.png)
+![모든 TableAnchor 스크립트 구성 요소를 사용하도록 설정된 Unity](images/mr-learning-sharing/sharing-05-section3-step1-3.png)
 
 ## <a name="trying-the-experience-with-spatial-alignment"></a>공간 맞춤 환경 체험
 

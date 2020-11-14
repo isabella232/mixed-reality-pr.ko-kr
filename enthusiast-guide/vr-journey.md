@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR,
-ms.openlocfilehash: def16b5bff13fec13ce0ebb503ec88dfca22e0b8
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: c2a00b88992fde3e599020d930ef950222e87099
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293070"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573217"
 ---
 # <a name="start-your-vr-journey"></a>VR 둘러보기 시작
 
@@ -41,7 +41,7 @@ PC에서 가장 좋은 설정 및 사용 환경을 제공 하기 위해 구매 �
 
 |  검사점  |  결과  |
 | --- | --- |
-| [Windows Mixed Reality 설정](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | 새 VR 장치의 컨트롤러, 실내 경계, 음성 입력 및 Microsoft Edge에 대 한 편안한 도움 받기 |
+| [Windows Mixed Reality 설정](set-up-windows-mixed-reality.md) | 새 VR 장치의 컨트롤러, 실내 경계, 음성 입력 및 Microsoft Edge에 대 한 편안한 도움 받기 |
 | [Windows Mixed Reality 설정 Faq](wmr-setup-faq.md) | Windows Mixed Reality를 설정할 때 알려진 문제에 대 한 답변 및 문제 해결 도움말 보기 |
 | [상태, 안전 및 편안 함 지침](wmr-health-safety-comfort.md) | 헤드셋을 사용 하기 전에 Windows Mixed Reality를 사용 하는 동안 안전 하 게 유지 하기 위한 권장 사항  |
 

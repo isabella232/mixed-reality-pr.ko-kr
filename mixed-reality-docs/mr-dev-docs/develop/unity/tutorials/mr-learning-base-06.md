@@ -1,18 +1,18 @@
 ---
 title: 시작 자습서 - 6. 사용자 인터페이스 만들기
-description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 혼합 현실 애플리케이션을 만드는 방법을 보여 줍니다.
+description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 사용자 인터페이스를 만드는 방법을 보여 줍니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, Unity, 자습서, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 3d8cfa7206aa6004cdf62db977ca760daed9a27c
-ms.sourcegitcommit: adbdb0a38e0dc5ac82f847c7b2ef87f27c16b5f6
+ms.openlocfilehash: 2d3a826ba3bf8fdf1299038a7964278f0d57dbb7
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92493239"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353541"
 ---
 # <a name="6-creating-user-interfaces"></a>6. 사용자 인터페이스 만들기
 
@@ -36,11 +36,11 @@ ms.locfileid: "92493239"
 * **회전** : X = 90, Y = 0, Z = 0
 * **배율** : X = 1, Y = 1, Z = 1
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-1.png)
+![새로 만든 Buttons 개체가 선택되고 배치된 Unity](images/mr-learning-base/base-06-section1-step1-1.png)
 
 [프로젝트] 창에서 **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** 폴더로 차례로 이동하고, **PressableRoundButton** 프리팹을 클릭하여 **Buttons** 개체로 끈 다음, 마우스 오른쪽 단추로 PressableRoundButton을 클릭하고, **중복** 을 선택하여 복사본을 만듭니다. 총 세 개의 PressableRoundButton 개체 복사본을 만들 때까지 반복합니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-2.png)
+![새로 추가한 PressableRoundButton 프리팹이 있는 Unity](images/mr-learning-base/base-06-section1-step1-2.png)
 
 [계층 구조] 창에서 **Buttons** 개체를 선택한 다음, [검사기] 창에서 **구성 요소 추가** 단추를 사용하여 **GridObjectCollection** 구성 요소를 추가하고 다음과 같이 구성합니다.
 
@@ -51,13 +51,13 @@ ms.locfileid: "92493239"
 
 그런 다음, **컬렉션 업데이트** 단추를 클릭하여 Buttons 개체의 자식 개체에 대한 위치를 업데이트합니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-3.png)
+![GridObjectCollection 구성 요소가 추가, 구성 및 적용된 Unity Buttons 개체](images/mr-learning-base/base-06-section1-step1-3.png)
 
 [계층 구조] 창에서 단추 이름을 **Hints** , **Explode** 및 **Reset** 으로 지정합니다.
 
 각 단추에 대해 **SeeItSayItLabel** > **TextMeshPro** 자식 개체를 차례로 선택한 다음, [검사기] 창에서 각 **TextMeshPro - 텍스트** 구성 요소 텍스트를 단추 이름과 일치하도록 변경합니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-4.png)
+![단추 텍스트 레이블이 구성된 Unity](images/mr-learning-base/base-06-section1-step1-4.png)
 
 완료되면 Buttons 개체의 자식 개체를 접습니다.
 
@@ -66,22 +66,22 @@ ms.locfileid: "92493239"
 * **RoverAssembly** 개체를 **없음(개체)** 필드에 할당합니다.
 * **함수 없음** 드롭다운에서 **PlacementHintsController** > **TogglePlacementHints ()** 를 차례로 선택하여 이 함수를 이벤트가 트리거될 때 실행할 작업으로 설정합니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-5.png)
+![Hints 단추 개체 OnClick 이벤트가 구성된 Unity](images/mr-learning-base/base-06-section1-step1-5.png)
 
 [계층 구조] 창에서 **Explode** 단추 개체를 선택한 다음, [검사기] 창에서 Interactable **OnClick ()** 이벤트를 다음과 같이 구성합니다.
 
 * **RoverAssembly** 개체를 **없음(개체)** 필드에 할당합니다.
 * **함수 없음** 드롭다운에서 **ExplodedViewController** > **ToggleExplodedView ()** 를 차례로 선택하여 이 함수를 이벤트가 트리거될 때 실행할 작업으로 설정합니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-6.png)
+![Explode 단추 개체 OnClick 이벤트가 구성된 Unity](images/mr-learning-base/base-06-section1-step1-6.png)
 
 [재생] 단추를 눌러 게임 모드를 시작한 다음, 스페이스 바 단추를 길게 눌러 손을 활성화하고, 마우스를 사용하여 **Hints** 단추를 눌러 배치 힌트 개체의 표시 유형을 설정/해제합니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-7.png)
+![Hints 단추가 눌러져 있는 Unity 재생 모드 분할 보기](images/mr-learning-base/base-06-section1-step1-7.png)
 
 그리고 **Explode** 단추를 눌러 분해된 보기를 설정/해제합니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-8.png)
+![Explode 단추가 눌러져 있는 Unity 재생 모드 분할 보기](images/mr-learning-base/base-06-section1-step1-8.png)
 
 ## <a name="creating-a-dynamic-menu-that-follows-the-user"></a>사용자를 따르는 동적 메뉴 만들기
 
@@ -90,11 +90,11 @@ ms.locfileid: "92493239"
 * **SolverHandler** 구성 요소의 **추적 대상 형식** 이 **Head** 로 설정되어 있는지 확인합니다.
 * **RadialView** 해결기 구성 요소 옆에 있는 확인란을 선택하여 기본적으로 사용하도록 설정합니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-1.png)
+![새로 추가한 Near Menu 프리팹이 선택된 Unity](images/mr-learning-base/base-06-section2-step1-1.png)
 
 [계층 구조] 창에서 개체 이름을 **Menu** 로 바꾼 다음, 해당 **ButtonCollection** 자식 개체를 펼쳐서 4개의 단추를 표시합니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-2.png)
+![Menu 개체가 선택되고 ButtonCollection 개체가 펼쳐진 Unity](images/mr-learning-base/base-06-section2-step1-2.png)
 
 첫 번째 단추의 이름을 **Indicator** 로 바꾼 다음, [검사기] 창에서 **단추 구성 도우미(스크립트)** 구성 요소를 다음과 같이 구성합니다.
 
@@ -104,14 +104,14 @@ ms.locfileid: "92493239"
 * 인수 확인란이 **선택되어** 있는지 확인합니다.
 * **아이콘** 을 '검색' 아이콘으로 변경합니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-3.png)
+![Indicator 단추 개체 Button Config Helper가 구성된 Unity](images/mr-learning-base/base-06-section2-step1-3.png)
 
 [계층 구조] 창에서 **표시기** 개체를 선택한 다음, [검사기] 창에서 다음을 수행합니다.
 
 * 이름 옆에 있는 확인란을 선택 취소하여 기본적으로 비활성화합니다.
 * **구성 요소 추가** 단추를 사용하여 **Directional Indicator Controller(스크립트)** 구성 요소를 추가합니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-4.png)
+![Indicator 개체가 선택되어 사용하지 않도록 설정되고 DirectionalIndicatorController 구성 요소가 추가된 Unity](images/mr-learning-base/base-06-section2-step1-4.png)
 
 > [!NOTE]
 > 이제 앱이 시작되면 Indicator가 기본적으로 사용하지 않도록 설정되며, Indicator 단추를 눌러 사용하도록 설정할 수 있습니다.
@@ -124,7 +124,7 @@ ms.locfileid: "92493239"
 * 인수 확인란이 **선택되어** 있는지 확인합니다.
 * **아이콘** 을 '광선이 있는 손' 아이콘으로 변경합니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-5.png)
+![TapToPlace 단추 개체 Button Config Helper가 구성된 Unity](images/mr-learning-base/base-06-section2-step1-5.png)
 
 [계층 구조] 창에서 **RoverAssembly** 개체를 선택한 다음, [검사기] 창에서 다음과 같이 **탭하여 위치 지정(스크립트)** 구성 요소를 구성합니다.
 
@@ -134,7 +134,7 @@ ms.locfileid: "92493239"
 * **함수 없음** 드롭다운에서 **TapToPlace** > **부울 사용** 을 차례로 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트합니다.
 * 인수 확인란이 **선택 취소되어** 있는지 확인합니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-6.png)
+![TapToPlace 구성 요소가 다시 구성된 Unity](images/mr-learning-base/base-06-section2-step1-6.png)
 
 > [!NOTE]
 > 이제 앱이 시작되면 Tap to Place(탭하여 위치 지정) 기능이 기본적으로 사용하지 않도록 설정되며, Tap to Place 단추를 눌러 사용하도록 설정할 수 있습니다. 또한 탭하여 위치 지정이 완료되면 자체적으로 사용하지 않도록 설정됩니다.
@@ -148,7 +148,7 @@ ms.locfileid: "92493239"
 * **높이** 를 1로 변경합니다.
 * **회전 X** 를 90으로 변경합니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section3-step1-1.png)
+![새로 만든 TextMeshPro 개체가 선택된 Unity](images/mr-learning-base/base-06-section3-step1-1.png)
 
 그런 다음, **TextMeshPro - 텍스트** 구성 요소를 다음과 같이 구성합니다.
 
@@ -157,13 +157,13 @@ ms.locfileid: "92493239"
 * **글꼴 크기** 를 1로 변경합니다.
 * 추가 설정 > **여백** 을 0.03으로 변경합니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section3-step1-2.png)
+![TextMeshPro 구성 요소가 구성된 Unity](images/mr-learning-base/base-06-section3-step1-2.png)
 
 ## <a name="adding-tooltips"></a>도구 설명 추가
 
 [프로젝트] 창에서 **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** 폴더로 차례로 이동하여 도구 설명 프리팹을 찾습니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section4-step1-1.png)
+![ToolTips 폴더가 선택된 Unity 프로젝트 창](images/mr-learning-base/base-06-section4-step1-1.png)
 
 [계층 구조] 창에서 RoverExplorer > **RoverParts** 개체를 차례로 펼치고, 해당 자식 로버 부품 개체를 모두 선택한 다음, [검사기] 창에서 **구성 요소 추가** 단추를 사용하여 **ToolTipSpawner** 구성 요소를 추가하고 다음과 같이 구성합니다.
 
@@ -172,13 +172,13 @@ ms.locfileid: "92493239"
 * 도구 설명 재정의 설정 > **설정 모드** 를 **재정의** 로 변경합니다.
 * 도구 설명 재정의 설정 > **수동 피벗 로컬 위치 Y** 를 **1.5** 로 변경합니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section4-step1-2.png)
+![모든 로버 부품 개체가 선택되고 ToolTipSpawner 구성 요소가 추가되고 구성된 Unity](images/mr-learning-base/base-06-section4-step1-2.png)
 
 [계층 구조] 창에서 첫 번째 로버 부품인 RoverParts > **Camera_Part** 를 차례로 선택하고, **ToolTipSpawner** 구성 요소를 다음과 같이 구성합니다.
 
 * 부품 이름(예: **Camera** )을 반영하도록 **도구 설명 텍스트** 를 변경합니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section4-step1-3.png)
+![Camera ToolTipText가 구성된 Unity](images/mr-learning-base/base-06-section4-step1-3.png)
 
 각 로버 부품 개체에 대해 이 단계를 **반복** 하여 **ToolTipSpawner** 구성 요소를 다음과 같이 구성합니다.
 
@@ -189,7 +189,7 @@ ms.locfileid: "92493239"
 
 [재생] 단추를 눌러 게임 모드를 시작한 다음, 시선이 부품 중 하나에 적중하여 해당 부품에 대한 도구 설명이 표시될 때까지 마우스 오른쪽 단추를 누른 채 마우스를 움직입니다.
 
-![mr-learning-base](images/mr-learning-base/base-06-section4-step1-4.png)
+![응시로 트리거된 도구 설명이 있는 Unity 재생 모드 분할 보기](images/mr-learning-base/base-06-section4-step1-4.png)
 
 ## <a name="congratulations"></a>축하합니다.
 

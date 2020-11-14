@@ -7,12 +7,12 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 스트리밍, 원격, 혼합 현실, 개발, 시작, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 특징, 홀로그램, 게임 개발
-ms.openlocfilehash: 25842fb8083b7757e73e7dbe7551b6bde9d8d95e
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: a8e345831167362745a45a8fa81ddae858083ca7
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638590"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340691"
 ---
 # <a name="unreal-development-overview"></a>Unreal 개발 개요
 
@@ -45,7 +45,7 @@ Unreal 개발이 처음이라면 모르는 상태에서 넘어가지 마세요. 
 
 |  검사점  |  결과  |
 | --- | --- |
-| [최신 도구 설치](../install-the-tools.md) | 최신 Unity 패키지를 다운로드 및 설치하고, 혼합 현실에 맞게 프로젝트를 설정합니다. |
+| [최신 도구 설치](../install-the-tools.md) | 최신 버전의 Unreal Engine 다운로드/설치 및 혼합 현실 프로젝트 설정 |
 | [HoloLens 2 자습서 시리즈](tutorials/unreal-uxt-ch1.md) | HoloLens 2 하드웨어에 대한 초보자 수준 MRTK 자습서 살펴보기 |
 
 ### <a name="2-core-building-blocks"></a>2. 핵심 구성 요소

@@ -1,18 +1,18 @@
 ---
 title: 시작 자습서 - 7. 3D 개체와 상호 작용
-description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 혼합 현실 애플리케이션을 만드는 방법을 보여줍니다.
+description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 3D 개체와 상호 작용하는 방법을 보여 줍니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, Unity, 자습서, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 0cedd731fc795341532a8a330f4fdcce9fba47b0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1e91cc97f68a4d4b5bcb015184e96582533d1f96
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699796"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353521"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. 3D 개체와 상호 작용
 
@@ -53,7 +53,7 @@ Hierarchy(계층 구조) 창에서 RoverExplorer > **RoverParts** 개체를 펼�
 * **NearInteractionGrabbable** 구성 요소
 * **Part Assembly Controller(스크립트)** 구성 요소
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-1.png)
+![RoverAssembly 및 모든 로버 부품 개체가 선택되고 구성 요소가 추가된 Unity](images/mr-learning-base/base-07-section1-step1-1.png)
 
 > [!TIP]
 > 서로 인접하지 않은 여러 개체를 선택하려면 Ctrl 키를 누른 채 마우스를 사용하여 개체를 선택합니다.
@@ -68,14 +68,14 @@ Rover 파트 개체와 RoverAssembly 개체를 선택한 상태로, Inspector(�
 
 * **Two Handed Manipulation Type** (양손 조작 유형) 드롭다운에서 Scale(크기 조정) 선택을 취소하고 **Move** (이동) 및 **Rotate** (회전)만 가능하도록 설정
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-2.png)
+![Two Handed Manipulation Type(양손 조작 유형)이 구성된 Unity](images/mr-learning-base/base-07-section1-step1-2.png)
 
 > [!NOTE]
 > 이제 모든 Rover 파트 개체와 RoverAssembly 개체에 대해 개체 조작이 가능하도록 설정했습니다.
 
 프로젝트 창에서 **Assets** > **MRTK** > **SDK** > **StandardAssets** > **Audio** 폴더로 이동하여 오디오 클립을 찾습니다.
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-3.png)
+![Audio 폴더가 선택된 Unity 프로젝트 창](images/mr-learning-base/base-07-section1-step1-3.png)
 
 Hierarchy(계층 구조) 창에서 **Rover 파트 개체** 를 다시 선택한 다음, Inspector(인스펙터) 창에서 **Add Component** (구성 요소 추가) 단추를 사용하여 **Audio Sources** (오디오 소스) 구성 요소를 추가하고 다음과 같이 구성합니다.
 
@@ -83,13 +83,13 @@ Hierarchy(계층 구조) 창에서 **Rover 파트 개체** 를 다시 선택한 
 * **Play On Awake** (활성 상태일 때 재생) 확인란의 선택을 취소
 * **Spatial Blend** (공간 블렌드)를 1로 변경
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-4.png)
+![모든 로버 부품이 선택되고 Audio Source 구성 요소가 추가되고 구성된 Unity](images/mr-learning-base/base-07-section1-step1-4.png)
 
 Hierarchy(계층 구조) 창에서 RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** 개체를 펼쳐서 모든 배치 힌트 개체를 표시한 다음, 첫 번째 Rover 파트 RoverParts > **Camera_Part** 를 선택하고 **Part Assembly Controller(스크립트)** 구성 요소를 다음과 같이 구성합니다.
 
 * **Camera_PlacementHint** 개체를 **Location To Place** (배치할 위치) 필드에 할당
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-5.png)
+![Camera_Part PartAssemblyController 구성 요소가 구성된 Unity](images/mr-learning-base/base-07-section1-step1-5.png)
 
 나머지 Rover 파트 개체와 RoverAssembly 개체 각각에 대해 이 단계를 **반복** 하여 **Part Assembly Controller(스크립트)** 구성 요소를 다음과 같이 구성합니다.
 
@@ -104,11 +104,11 @@ Hierarchy(계층 구조) 창에서 RoverExplorer > Buttons > **Reset** (초기�
 * **RoverAssembly** 개체를 **None (Object)** 필드에 할당
 * **No Function** (함수 없음) 드롭다운에서 **PartAssemblyController** > **ResetPlacement ()** 를 선택하여 이 함수를 이벤트가 트리거될 때 실행할 작업으로 설정
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-6.png)
+![Reset 단추 개체 OnClick 이벤트가 구성된 Unity](images/mr-learning-base/base-07-section1-step1-6.png)
 
 이제 게임 모드로 전환하면 근거리 또는 원거리 상호 작용을 사용하여 Rover 파트를 Rover에 놓을 수 있습니다. 파트가 해당하는 배치 힌트에 가까워지면 위치로 맞춰져서 Rover의 일부가 됩니다. 배치를 다시 설정하려면 Reset(초기화) 단추를 누르면 됩니다.
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-7.png)
+![Reset 단추가 눌러져 있는 Unity 재생 모드 분할 보기](images/mr-learning-base/base-07-section1-step1-7.png)
 
 Object Manipulator 구성 요소 및 관련 속성에 대해 자세히 알아보려면 [MRTK 설명서 포털](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)에서 [Object Manipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) 가이드를 참조하세요.
 
@@ -125,7 +125,7 @@ Hierarchy(계층 구조) 창에서 **RoverExplorer** 개체를 선택한 다음,
 
 그런 다음, 두 구성 요소 옆에 있는 확인란을 **선택 취소** 하여 기본적으로 **사용하지 않도록 설정** 합니다.
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-1.png)
+![RoverExplorer 개체가 선택되고 구성 요소가 추가되고 사용하지 않도록 설정된 Unity](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
 > 경계 상자 시각화는 런타임에 생성되므로 게임 모드로 전환하기 전에는 보이지 않습니다.
@@ -145,7 +145,7 @@ Hierarchy(계층 구조) 창에서 메뉴 > **ButtonCollection** 개체를 펼�
 * 인수 확인란이 **선택** 되어 있는지 확인
 * **아이콘** 을 'cube with bounding box'(경계 상자와 큐브) 아이콘으로 유지
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-2.png)
+![BoundingBox_Enable 단추 개체가 선택되고 Button Config Helper 구성 요소가 구성된 Unity](images/mr-learning-base/base-07-section2-step1-2.png)
 
 네 번째와 마지막 단추의 이름을 **BoundingBox_Disable** 로 바꾼 다음, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소를 다음과 같이 구성합니다.
 
@@ -159,11 +159,11 @@ Hierarchy(계층 구조) 창에서 메뉴 > **ButtonCollection** 개체를 펼�
 * 인수 확인란이 **선택 취소** 되어 있는지 확인
 * **아이콘** 을 'cube with bounding box'(경계 상자와 큐브) 아이콘으로 변경
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-3.png)
+![BoundingBox_Disable 단추 개체가 선택되고 Button Config Helper 구성 요소가 구성된 Unity](images/mr-learning-base/base-07-section2-step1-3.png)
 
 이제 게임 모드로 전환하여 Enable(사용) 단추를 클릭하여 경계 상자를 사용하도록 설정하면, 근거리나 원거리 상호 작용을 사용하여 경계 상자를 이동 및 회전하고 크기를 조정할 수 있으며 Disable(사용 안 함) 단추를 사용하여 경계 상자를 다시 사용하지 않도록 설정할 수 있습니다.
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-4.png)
+![경계 상자가 조작되고 있는 Unity 재생 모드 분할 보기](images/mr-learning-base/base-07-section2-step1-4.png)
 
 경계 상자 구성 요소 및 관련 속성에 대한 자세한 내용을 보려면 [MRTK 설명서 포털](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)에서 [조작 처리기](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) 가이드를 참조하세요.
 

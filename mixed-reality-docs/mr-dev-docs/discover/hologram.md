@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, holograms, 디자인, 상호 작용
-ms.openlocfilehash: c26cbbaa011c9e7ec92ea45dfd9491dbd178a025
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: f902639e66246c9184750ebc58dbad1c04b2bb5a
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386239"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631471"
 ---
 # <a name="what-is-a-hologram"></a>홀로그램이란?
 
@@ -128,11 +128,8 @@ Holograms는 실제 개체에 의해 폐색 수도 있습니다. 예를 들어, 
 
 ## <a name="next-discovery-checkpoint"></a>다음 검색 검사점
 
-앞에서 설명한 [검색](get-started-with-mr.md) 경험을 팔로 하는 경우 혼합 현실의 기본 사항을 탐색 하는 것이 좋습니다. 여기에서 다음 기본 항목을 진행할 수 있습니다. 
+준비된 [검색 과정](get-started-with-mr.md)을 수행하는 경우 Mixed Reality에 대한 기본 사항을 살펴보게 됩니다. 이제 다음 기본 항목을 진행할 수 있습니다. 
 
 > [!div class="nextstepaction"]
 > [디자인 프로세스 확장](case-study-expanding-the-design-process-for-mixed-reality.md)
 
-## <a name="see-also"></a>참조
-* [공간 음향](../design/spatial-sound.md)
-* [색, 광원 및 재질](../color,-light-and-materials.md)

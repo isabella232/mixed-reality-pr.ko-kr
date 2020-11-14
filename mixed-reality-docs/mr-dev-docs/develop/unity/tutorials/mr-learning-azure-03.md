@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, Unity, 자습서, HoloLens, HoloLens 2, Azure Custom Vision, Azure Cognitive Services
 ms.localizationpriority: high
-ms.openlocfilehash: baf5ddb805e6bff6fd41d2fb7cc8ea64b55944e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 9a6cccf9c1a7d2547ed5ddacfc4841d2f4d1609b
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700204"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353271"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Azure Custom Vision 통합
 
@@ -43,11 +43,11 @@ ms.locfileid: "91700204"
 
 프로젝트 창에서 **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** 폴더로 이동합니다.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-1.png)
+![ObjectDetectionManager 프리팹의 경로를 보여주는 Project(프로젝트) 창이 있는 Unity](images/mr-learning-azure/tutorial3-section4-step1-1.png)
 
 여기에서 프리팹 **ObjectDetectionManager** 를 장면 계층 구조로 끌어옵니다.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-2.png)
+![Inspector(검사기)에 표시된 ObjectDetectionManager 스크립트 구성 요소 구성 필드가 있는 Unity](images/mr-learning-azure/tutorial3-section4-step1-2.png)
 
 Hierarchy(계층 구조) 창에서 **ObjectDetectionManager** 개체를 찾아서 선택합니다.
 **ObjectDetectionManager** 프리팹에는 **ObjectDetectionManager(스크립트)** 가 포함되어 있으며 Inspector(인스펙터) 창에서 볼 수 있듯이 여러 설정에 따라 달라집니다.
@@ -66,11 +66,11 @@ Hierarchy(계층 구조) 창에서 **ObjectDetectionManager** 개체를 찾아�
 
 **ObjectDetectionManager(스크립트)** 가 올바르게 설정되었으면 장면 계층 구조에서 **SceneController** 개체를 찾아서 선택합니다.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-3.png)
+![Inspector(검사기)에 표시된 SceneController 스크립트 구성 요소 구성 필드가 있는 Unity](images/mr-learning-azure/tutorial3-section4-step1-3.png)
 
 **SceneController** 구성 요소의 *Object Detection Manager* (개체 감지 관리자) 필드가 비어 있는 것이 보이면 **ObjectDetectionManager** 를 계층 구조에서 이 필드로 끌어오고 장면을 저장합니다.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-4.png)
+![SceneController 스크립트 구성 요소가 구성된 Unity](images/mr-learning-azure/tutorial3-section4-step1-4.png)
 
 ## <a name="take-and-upload-images"></a>이미지 가져오기 및 업로드
 

@@ -1,5 +1,5 @@
 ---
-title: 시작 자습서 - 1. 소개
+title: 시작 자습서 - 1. 시작 자습서 소개
 description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 처음부터 혼합 현실 애플리케이션을 만드는 방법을 보여줍니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,14 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, Unity, 자습서, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 6d6be08aa532de22a30e70274859eda466a78204
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 992d864d7e016c3d0906366d10993ff0559afc06
+ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699993"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93416901"
 ---
-# <a name="1-introduction"></a>1. 소개
+# <a name="1-introduction-to-the-getting-started-tutorials"></a>1. 시작 자습서 소개
 
 ## <a name="overview"></a>개요
 
@@ -44,13 +44,13 @@ ms.locfileid: "91699993"
 * 올바른 [도구가 설치](../../install-the-tools.md)된 상태로 구성된 Windows 10 PC
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 이상
 * [개발용으로 구성](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)된 HoloLens 2 디바이스
-* Unity 2019.3.15가 설치되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가된 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
+* Unity 2019 LTS가 설치되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가된 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
 
 > [!CAUTION]
 > 이 자습서 시리즈에 추천되는 MRTK 버전은 MRTK 2.4.0입니다.
 
 > [!CAUTION]
-> 이 자습서 시리즈에 추천되는 Unity 버전은 Unity 2019.3.15입니다. 이 버전은 필수 구성 요소에서 설명한 모든 Unity 버전 요구 사항을 대체합니다.
+> 이 자습서 시리즈에 추천되는 Unity 버전은 Unity 2019 LTS입니다. 이 버전은 필수 구성 요소에서 설명한 모든 Unity 버전 요구 사항을 대체합니다.
 
 > [!div class="nextstepaction"]
 > [다음 자습서: 2. 프로젝트 초기화 및 첫 번째 애플리케이션 배포](mr-learning-base-02.md)

@@ -7,18 +7,18 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: Mixed Reality, 홀로그램, AR, VR, MR, XR, 증강 현실, 가상 현실, 설명
 ms.localizationpriority: high
-ms.openlocfilehash: 44ef30925f8429628ebeb2c5f367d379a8ab102f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: a55b05f8edfeedfff3313844428b9af4cf7a2fc0
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700852"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340711"
 ---
 # <a name="what-is-mixed-reality"></a>혼합 현실이란?
 
 ![HoloLens 2를 착용하고 손으로 가리키고 커밋](images/02_MixedRealitySlashMixedReality.png)
 
-Mixed Reality는 실제 세계와 디지털 세계가 혼합되어 인간, 컴퓨터 및 환경 상호 작용 간의 연결을 보여 줍니다. 이 새로운 현실은 컴퓨터 비전, 그래픽 처리 능력, 표시 기술 및 입력 시스템의 발전을 기반으로 합니다. 그러나 *Mixed Reality(혼합 현실)* 라는 용어는 Paul Milgram 및 Fumio Kishino가 1994년에 발표한 "[A Taxonomy of Mixed Reality Visual Displays(혼합 현실 시각적 표시 분류)](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321)"라는 논문에서 소개되었습니다. 이 논문에서는 *가상 연속체* 의 개념과 표시에 적용되는 분류의 범주화를 연구했습니다. 그 이후로 Mixed Reality는 표시뿐만 아니라 다음과 같은 영역에도 적용되었습니다.
+Mixed Reality는 실제 세계와 디지털 세계가 혼합되어 인간, 컴퓨터 및 환경 상호 작용 간의 연결을 보여 줍니다. 이 새로운 현실은 컴퓨터 비전, 그래픽 처리 능력, 표시 기술 및 입력 시스템의 발전을 기반으로 합니다. 그러나 *Mixed Reality(혼합 현실)* 라는 용어는 Paul Milgram 및 Fumio Kishino가 1994년에 발표한 " [A Taxonomy of Mixed Reality Visual Displays(혼합 현실 시각적 표시 분류)](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321)"라는 논문에서 소개되었습니다. 이 논문에서는 *가상 연속체* 의 개념과 표시에 적용되는 분류의 범주화를 연구했습니다. 그 이후로 Mixed Reality는 표시뿐만 아니라 다음과 같은 영역에도 적용되었습니다.
 * 환경 입력
 * 공간 음향
 * 현실 공간 및 가상 공간 모두에서의 위치 및 위치 지정
@@ -97,7 +97,8 @@ Windows Mixed Reality 환경을 제공하는 두 가지 주요 디바이스가 �
 </table> 
 
 
-> [참고] 디바이스가 USB 케이블 또는 Wi-Fi를 통해 별도의 PC에 연결되거나 테더링되어 있는지 또는 자체 포함(테더링되지 않음) 여부는 홀로그램 디바이스 또는 몰입형 디바이스인지를 반영하지 않습니다. 이동성을 향상시키는 기능은 더 나은 환경을 제공하고, 홀로그램 디바이스와 몰입형 디바이스는 모두 테더링되거나 테더링되지 않을 수 있습니다.
+> [!NOTE]
+> 디바이스가 USB 케이블 또는 Wi-Fi를 통해 별도의 PC에 연결되거나 테더링되어 있는지, 아니면 자체 포함되어 있는지(테더링되지 않음) 여부는 홀로그램 디바이스 또는 몰입형 디바이스인지를 반영하지 않습니다. 이동성을 향상시키는 기능은 더 나은 환경을 제공하고, 홀로그램 디바이스와 몰입형 디바이스는 모두 테더링되거나 테더링되지 않을 수 있습니다.
 
 기술 발전에 따라 Mixed Reality 환경을 사용할 수 있게 되었습니다. 현재 전체 스펙트럼의 환경을 실행할 수 있는 디바이스는 없습니다. Windows 10은 디바이스 제조업체와 개발자 모두에게 공통적인 Mixed Reality 플랫폼을 제공합니다. 현재 디바이스는 Mixed Reality 스펙트럼 내의 특정 범위를 지원할 수 있으며, 새 디바이스는 이러한 범위를 확장하고 있습니다. 향후 홀로그램 디바이스는 더 많은 몰입감을, 몰입형 디바이스는 더 많은 홀로그램을 제공할 것입니다.
 
@@ -111,6 +112,12 @@ Windows Mixed Reality 환경을 제공하는 두 가지 주요 디바이스가 �
 * **중간(완전한 Mixed Reality).** 실제 세계와 디지털 세계를 혼합한 환경입니다. [쥬만지](https://en.wikipedia.org/wiki/Jumanji)라는 영화를 본 시청자는 이야기가 시작된 집의 실제 구조가 정글 환경과 어떻게 조화를 이뤘는지 납득할 수 있습니다.
 * **오른쪽 방향(디지털 현실에 가까움).** 사용자가 디지털 환경을 경험하고 주변의 실제 환경에서 발생하는 상황을 인식하지 못합니다.
 
+## <a name="next-discovery-checkpoint"></a>다음 검색 검사점
+
+준비된 [검색 과정](get-started-with-mr.md)을 수행하는 경우 Mixed Reality에 대한 기본 사항을 살펴보게 됩니다. 이제 다음 기본 항목을 진행할 수 있습니다. 
+
+> [!div class="nextstepaction"]
+> [홀로그램이란?](hologram.md)
 
 ## <a name="see-also"></a>참조
 

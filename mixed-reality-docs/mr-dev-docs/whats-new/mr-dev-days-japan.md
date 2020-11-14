@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality, 컨퍼런스, summit, developer, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: af9055c4e6074c4d4b10b4f0a6ac135c858b57a7
-ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
-ms.translationtype: MT
+ms.openlocfilehash: 746b6257e6a3ab28424d7b74e43a1b6541d6fad0
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/12/2020
-ms.locfileid: "94549116"
+ms.locfileid: "94573287"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>혼합 현실 Dev Days 일본
 
@@ -40,7 +40,7 @@ ms.locfileid: "94549116"
 ### <a name="december-16th"></a>12 월 16 일
 |**Time**|**세션 제목**|**발표자**|**언어**|**수준**|
 |---------|---------|---------|---------|---------|
-|10:00am-10:50am|키 노트 열기|TBD|JA-JP/EN|해당 없음|
+|10:00am-10:50am|키 노트 열기|TBD|JA-JP/EN|N/A|
 |10:50am-11:00am|**끊어야**||||
 |11:00am-11:25am|*세션 1* 혼합 현실 이란?HL2로 무엇을 할 수 있나요?MR 기술 스택|Atsushi Suzuki|JA|100|
 |11:30am-11:55am|*세션 2* 고객 및 파트너 사례 연구를 통해 일본 상용 시장 모멘텀 업데이트|Tetsu Muranaka|JA|200|
@@ -48,18 +48,17 @@ ms.locfileid: "94549116"
 |12:50pm-1:00pm|**끊어야**||||
 |1:00pm-1:25pm|*세션 3* HoloLens 2 개발 개요|Madoka Chiyoda|JA|200|
 |1:30pm-1:55pm|*세션 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity)|Yoon 파킹|JA|300|
-|2:00pm-2:20pm|*세션 5* HoloLens 2 및 Unreal Engine 시작 (MRTK-Unreal)|Cameron 저 Micka|EN|300|
+|2:00pm-2:25pm|*세션 5* HoloLens 2 및 Unreal Engine 시작 (MRTK-Unreal)|Cameron 저 Micka|EN|300|
 |2:30pm-2:55pm|*세션 6* MR 앱 디자인 (HL2 앱에 대 한 UI/UX를 만드는 모범 사례)|Daniel Escudero|EN|300|
-|2:55pm-3:15pm|**끊어야**||||
-|3:15pm-3:40pm|*세션 7* Azure 개체 앵커|TBD|EN|300|
-|3:45pm-4: 오후 10 시|*세션 8* Azure 원격 렌더링|Atsushi Suzuki|JA|300|
-|4:15pm-4:40pm|*세션 9* Azure 공간 앵커|TBD|EN|300|
-<!--|4:45pm-5: 오후 10 시|*세션 10* Unity + PiXYZ|(Unity 일본)|JA|200|-->
-|4:45pm-5: 오후 10 시|*세션 10* TBD|TBD|JA|200|
-|5:15pm-5:40pm|*세션 11* Azure Kinect 진한 심층 분석, 사례 연구|Shinji Chiba|JA|400|
-|5:45pm-6:00pm|닫기|Madoka Chiyoda|JA|해당 없음|
+|2:55pm-3: 오후 10 시|**끊어야**||||
+|3:10pm-3:35pm|*세션 7* Azure 개체 앵커|TBD|EN|300|
+|3:40pm-4:05pm|*세션 8* Azure 원격 렌더링|Atsushi Suzuki|JA|300|
+|4:10pm-4:35 pm|*세션 9* Azure 공간 앵커|TBD|EN|300|
+|4:40pm-5:05pm|*세션 10* TBD|TBD|JA|200|
+|5:10pm-5:35 pm|*세션 11* Azure Kinect 진한 심층 분석, 사례 연구|Shinji Chiba|JA|400|
+|5:35pm-5:50pm|닫기|Madoka Chiyoda|JA|해당 없음|
 
-#### <a name="contributors-english-subtitle-reviewers"></a>참가자 (영어 부제목 검토자)
+#### <a name="contributors-technical-reviewers-for-the-subtitles"></a>참가자 (자막의 기술 검토자)
 
 Futo Horio ( [@Futo_Horio](https://twitter.com/Futo_Horio) ), Takahiro Miyaura 라 ( [@takabrz1](https://twitter.com/takabrz1) ), Akihiro Ueyama ( [@akihiro01051](https://twitter.com/akihiro01051) ), Kaoru Nakamura ( [@kaorun55](https://twitter.com/kaorun55) ), Shinya Tachihara ( [@deco_c_](https://twitter.com/deco_c_) )
 

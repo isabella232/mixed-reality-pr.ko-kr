@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, 자습서, HoloLens, HoloLens 2, Azure Storage
 ms.localizationpriority: high
-ms.openlocfilehash: d405ecc9f863e77271d4c16f820fc6ee00e55b1b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: e01796dd99982bb749d59108bcc972e5bc361770
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700228"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353331"
 ---
 # <a name="2-integrating-azure-storage"></a>2. Azure Storage 통합
 
@@ -57,7 +57,6 @@ Azure 스토리지 서비스를 사용하려면 Azure 스토리지 계정이 필
 
 > [!TIP]
 > Unity 편집기 내에서 테스트하는 경우 로컬 에뮬레이터를 사용할 수 있습니다.
-
 > * Windows 10에서는 [Azure 스토리지 에뮬레이터](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)를 사용할 수 있습니다.
 > * MacOS/Linux에서는 Docker용 [Azurite Docker Image](https://hub.docker.com/_/microsoft-azure-storage-azurite)를 사용할 수 있습니다.
 
@@ -65,7 +64,7 @@ Azure 스토리지 서비스를 사용하려면 Azure 스토리지 계정이 필
 
 [계층 구조] 창에서 **DataManager** 개체를 찾아서 선택합니다.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial2-section4-step1-1.png)
+![Inspector(검사기)에 표시된 DataManager 스크립트 구성 요소 구성 필드가 있는 Unity](images/mr-learning-azure/tutorial2-section4-step1-1.png)
 
 [검사기] 창에서 **DataManager(스크립트)** 구성 요소가 모든 **Azure 스토리지** 관련 설정을 유지하는 위치임을 알 수 있습니다. 모든 관련 설정이 이미 설정되어 있으므로 *연결 문자열* 필드를 Azure Portal에서 검색할 수 있는 필드로 바꾸기만 하면 됩니다. 로컬 Azure 스토리지 에뮬레이터 솔루션을 사용하는 경우 이미 제공된 *연결 문자열* 을 유지할 수 있습니다.
 

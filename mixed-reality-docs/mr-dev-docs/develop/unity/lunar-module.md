@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, 샘플 앱, 디자인, HoloLens
-ms.openlocfilehash: 4ab408d23ca932e73c0939f8a5cdc48184666f78
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d4014e1300b60d61dfba38ee5c5b0c8a530fbe08
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684672"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573257"
 ---
 # <a name="lunar-module"></a>달착륙선
 
@@ -19,6 +19,11 @@ ms.locfileid: "91684672"
 >이 문서에서는 혼합 현실 앱 개발에 대 한 학습 정보 및 제안을 공유 하는 위치를 [혼합 현실 디자인 랩에서](https://github.com/Microsoft/MRDesignLabs_Unity)만든 예비 샘플에 대해 설명 합니다. 디자인 관련 문서와 코드는 새로운 검색을 수행할 때 개선 됩니다.
 
 [음력 모듈](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) 은 Microsoft의 혼합 현실 디자인 랩에서 오픈 소스 샘플 앱입니다. 이 프로젝트를 사용 하 여 두 개의 지향 추적 및 Xbox 컨트롤러 입력으로 HoloLens의 기본 제스처를 확장 하 고, 표면 매핑 및 평면 찾기에 반응 하는 개체를 만들고, 간단한 메뉴 시스템을 구현 하는 방법을 배울 수 있습니다. 모든 프로젝트의 구성 요소는 혼합 현실 앱 환경에서 사용할 수 있습니다.
+
+## <a name="demo-video"></a>데모 비디오 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IcIP]
+
+혼합 현실 캡처를 사용 하 여 HoloLens 2로 기록 됨
 
 ## <a name="rethinking-classic-experiences-for-windows-mixed-reality"></a>Windows Mixed Reality의 클래식 환경 재고
 
@@ -62,7 +67,7 @@ Tactile 집중 교육를 Atari 클래식에 업데이트 된 대규모 sequel에
 
 HoloLens 기본 입력은 두 개의 제스처 인 [공기 탭과 블 룸](../../design/gaze-and-commit.md#composite-gestures)있습니다. 사용자는 상황별 미묘한 차이을 기억할 필요가 없으며 플랫폼의 인터페이스를 다양 하 고 쉽게 배울 수 있도록 하는 특정 제스처의 laundry 목록이 필요 하지 않습니다. 시스템은 두 개의 제스처를 노출할 수 있지만, 장치는 한 번에 두 손을 추적할 수 있습니다. 음력 Lander는 [몰입 형 앱](../../design/app-model.md) 이며, 두 손을 활용 하 고 음력 모듈 탐색을 위한 고유한 즐거운 tactile 수단을 추가 하는 제스처의 기본 집합을 확장할 수 있습니다.
 
-원래 컨트롤 구성표를 다시 살펴보면 **위한 것 및 회전을 해결 해야 했습니다** . 주의할 점은 새 컨텍스트에서 회전이 추가 축을 추가 하는 것입니다 (기술적으로는 2 이지만 Y 축은 계단에는 더 중요 하지 않음). 두 가지 고유한 배송 이동은 자신에 게 직접 매핑됩니다.
+원래 컨트롤 구성표를 다시 살펴보면 **위한 것 및 회전을 해결 해야 했습니다**. 주의할 점은 새 컨텍스트에서 회전이 추가 축을 추가 하는 것입니다 (기술적으로는 2 이지만 Y 축은 계단에는 더 중요 하지 않음). 두 가지 고유한 배송 이동은 자신에 게 직접 매핑됩니다.
 
 ![제스처를 탭 하 고 끌어서 세 축 모두에서 lander 회전](images/module-handdrag.gif)<br>
 *제스처를 탭 하 고 끌어서 세 축 모두에서 lander 회전*
@@ -94,7 +99,7 @@ Xbox 컨트롤러에 비교적 간단 하 게 전달 되는 컨트롤 구성표�
 
 [Mixed Reality 디자인 실험 GitHub](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule)에서 음력 모듈 샘플 앱에 대 한 스크립트 및 prefabs를 찾을 수 있습니다.
 
-## <a name="about-the-author"></a>저자 정보
+## <a name="about-the-author"></a>작성자 정보
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
@@ -104,6 +109,7 @@ Xbox 컨트롤러에 비교적 간단 하 게 전달 되는 컨트롤 구성표�
 </table>
 
 ## <a name="see-also"></a>참조
-* [모션 컨트롤러](../../design/motion-controllers.md)
-* [헤드 게이즈 및 커밋](../../design/gaze-and-commit.md)
-* [혼합 현실 앱의 종류](../../design/types-of-mixed-reality-apps.md)
+* [MRTK 예제 허브](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Surfaces](sampleapp-surfaces.md) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
+* [원소의 주기율표 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [갤럭시 익스플로러 2.0](galaxy-explorer-update.md)

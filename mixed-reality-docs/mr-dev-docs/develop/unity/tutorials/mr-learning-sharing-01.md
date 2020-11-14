@@ -1,20 +1,20 @@
 ---
-title: 다중 사용자 기능 자습서 - 1. 소개
-description: 이 과정을 완료하여 HoloLens 2 애플리케이션에서 다중 사용자 공유 환경을 구현하는 방법을 알아봅니다.
+title: 다중 사용자 기능 자습서 - 1. 다중 사용자 기능 자습서 소개
+description: 이 과정을 완료하여 HoloLens 2 애플리케이션에서 공유된 다중 사용자 환경을 구현하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, Unity, 자습서, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 179ed341ffc2e34b94da887dd4c52d33bec6834e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 0a94bd7c939315f8c407b1f238c124e6c0c6a964
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701690"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353411"
 ---
-# <a name="1-introduction"></a>1. 소개
+# <a name="1-introduction-to-the-multi-user-capabilities-tutorials"></a>1. 다중 사용자 기능 자습서 소개
 
 ## <a name="overview"></a>개요
 
