@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 테스트, Mixed Reality Toolkit, MRTK 버전 2, MRTK, 도구, SDK, HoloLens, HoloLens 2
-ms.openlocfilehash: 4513185573003510e5a7cae97ecce4cb5d2552e0
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: ed3663c9eb3735dc2232a667e605ba4dab5bf1a4
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386209"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573227"
 ---
 # <a name="getting-started-with-mrtk-for-unity"></a>Unity용 MRTK 시작
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
@@ -24,7 +24,7 @@ Unity용 MRTK는 혼합 현실 애플리케이션을 위한 오픈 소스 플랫
 
 <br>
 
->[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Setting-up-your-HoloLens-2-development-environment/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCG]
 
 자세한 내용은 [GitHub에 대한 MRTK 설명서](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)를 참조하세요. 시작하려면 [설치 가이드](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) 페이지의 단계를 따르세요.
 

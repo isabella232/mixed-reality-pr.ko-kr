@@ -5,13 +5,13 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: Windows Mixed Reality, holograms, holographic remoting, 원격 렌더링, 네트워크 렌더링, HoloLens, 원격 holograms, 문제 해결, 도움말
-ms.openlocfilehash: 593b242326b83d4596d22a7e1a39ef18c26bc67a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, holograms, holographic remoting, 원격 렌더링, 네트워크 렌더링, HoloLens, 원격 holograms, 문제 해결, 도움말, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 9577f9f028987be71fdb9cd839f86980db350f02
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683649"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679582"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Holographic 원격 문제 해결
 
@@ -22,7 +22,7 @@ ms.locfileid: "91683649"
 
 Holographic Remoting 샘플 앱은 릴리스 구성에서/Qspectre (스펙터 완화)를 사용 하도록 설정 했습니다.
 
-' Vccorlib. n a l e '을 열 수 없다는 심각한 링커 오류가 발생 하는 경우 Visual Studio 워크 로드에 스펙터 완화 된 라이브러리가 포함 되어 있는지 확인 합니다. 자세한 내용은 https://aka.ms/Ofhn4c 을 참조하세요.
+' Vccorlib. n a l e '을 열 수 없다는 심각한 링커 오류가 발생 하는 경우 Visual Studio 워크 로드에 스펙터 완화 된 라이브러리가 포함 되어 있는지 확인 합니다. 자세한 내용은 https://aka.ms/Ofhn4c를 참조하세요.
 
 ## <a name="speech"></a>음성
 

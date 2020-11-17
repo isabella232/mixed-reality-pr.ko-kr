@@ -5,18 +5,18 @@ author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: azure, mixed reality, 아카데미, unity, 자습서, api, microsoft graph, hololens, 몰입 형, vr
-ms.openlocfilehash: e92104d24363a423732b7c512c7b3502b5066072
-ms.sourcegitcommit: 8e91ff47ef70e80a41137f80aa1093e711d27bf7
+keywords: azure, mixed reality, 아카데미, unity, 자습서, api, microsoft graph, hololens, 모던, vr, Windows 10, Visual Studio
+ms.openlocfilehash: 341b6fea537fe6001a8f7dcf2e98efea0a0b09b6
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91957843"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679442"
 ---
 # <a name="mr-and-azure-311---microsoft-graph"></a>MR 및 Azure 311 - Microsoft Graph
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_** .  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
 
 이 과정에서는 혼합 현실 응용 프로그램 내에서 보안 인증을 사용 하 여 Microsoft 계정에 로그인 하는 데 *Microsoft Graph* 를 사용 하는 방법을 알아봅니다. 그런 다음 응용 프로그램 인터페이스에서 예약 된 모임을 검색 하 고 표시 합니다.
 
@@ -43,7 +43,7 @@ ms.locfileid: "91957843"
 </tr>
 </table>
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
 
 > [!NOTE]
 > 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (7 월 2018)을 나타냅니다. [도구 설치](../../install-the-tools.md) 문서에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.
@@ -60,7 +60,7 @@ ms.locfileid: "91957843"
 - 유효한 **Microsoft 계정** (개인 또는 회사/학교)
 - 동일한 Microsoft 계정을 사용 하 여 현재 날짜에 대해 예약 된 몇 개의 모임
 
-### <a name="before-you-start"></a>시작하기 전에
+### <a name="before-you-start"></a>시작하기 전 확인 사항
 
 1.  이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.)
 2.  HoloLens를 설정 하 고 테스트 합니다. HoloLens를 설정 하는 데 지원이 필요한 경우 [hololens 설정 문서를 방문](https://docs.microsoft.com/hololens/hololens-setup)해야 합니다. 
@@ -148,7 +148,7 @@ ms.locfileid: "91957843"
 
             ![](images/AzureLabs-Lab311-14.png)
 
-        3. 새로 만든 **장면** 폴더를 연 다음 *파일 이름* : 텍스트 필드에 **MR_ComputerVisionScene** 를 입력 하 고 **저장** 을 클릭 합니다.
+        3. 새로 만든 **장면** 폴더를 연 다음 *파일 이름*: 텍스트 필드에 **MR_ComputerVisionScene** 를 입력 하 고 **저장** 을 클릭 합니다.
 
             ![](images/AzureLabs-Lab311-15.png)
 
@@ -187,7 +187,7 @@ ms.locfileid: "91957843"
 
 9.  *빌드 설정* 창을 닫습니다.
 
-10.  장면 및 프로젝트를 저장 합니다 ( **파일**  >  **저장 장면/파일**  >  **저장 프로젝트** ).
+10.  장면 및 프로젝트를 저장 합니다 (**파일**  >  **저장 장면/파일**  >  **저장 프로젝트**).
 
 ## <a name="chapter-3---import-libraries-in-unity"></a>3 장-Unity에서 라이브러리 가져오기
 
@@ -548,9 +548,9 @@ Unity 프로젝트에 사용자 지정 Dll을 추가 하는 방법에 대 한 �
 
 9.  다음 두 가지 메서드를 추가 합니다.
 
-    1.  **BuildTodayCalendarEndpoint ()** -예약 된 모임이 검색 되는 날짜 및 시간 범위를 지정 하는 URI를 작성 합니다.
+    1.  **BuildTodayCalendarEndpoint ()**-예약 된 모임이 검색 되는 날짜 및 시간 범위를 지정 하는 URI를 작성 합니다.
 
-    2.  **ListMeetingsAsync ()** - *Microsoft Graph* 에서 예약 된 모임을 요청 합니다.
+    2.  **ListMeetingsAsync ()**- *Microsoft Graph* 에서 예약 된 모임을 요청 합니다.
 
     ```csharp
         /// <summary>
@@ -939,7 +939,7 @@ Unity 프로젝트에 사용자 지정 Dll을 추가 하는 방법에 대 한 �
 
 이제이 프로젝트의 Unity 섹션에 필요한 모든 항목이 완료 되었으므로 Unity에서 빌드할 수 있습니다.
 
-1.  *빌드 설정* (* *파일* > * 빌드 설정 * *)으로 이동 합니다.
+1.  *빌드 설정* (**파일* > * 빌드 설정 * *)으로 이동 합니다.
 
     ![](images/AzureLabs-Lab311-33.png)
 

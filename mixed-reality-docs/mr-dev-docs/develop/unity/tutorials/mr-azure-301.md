@@ -1,24 +1,24 @@
 ---
-title: MR 및 Azure 301-언어 번역
+title: MR 및 Azure 301 - 언어 번역
 description: 이 과정을 완료 하 여 혼합 현실 응용 프로그램 내에서 Azure Translator Text API을 구현 하는 방법을 알아보세요.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: azure, mixed reality, 아카데미, unity, 자습서, api, translator 텍스트, hololens, 몰입 형, vr
-ms.openlocfilehash: 2d5cf591d0dba3a3c516262dd9f78ec152afe2b5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: azure, mixed reality, 아카데미, unity, 자습서, api, translator 텍스트, hololens, 모던, vr, 언어 번역, Windows 10, Visual Studio
+ms.openlocfilehash: 3f7d48df92ae5ed979c6fa8d69d348ce084d3fb9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91688873"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679572"
 ---
 # <a name="mr-and-azure-301-language-translation"></a>MR 및 Azure 301: 언어 번역
 
 <br>
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_** .  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
 
 <br>
 
@@ -49,7 +49,7 @@ Translator Text API은 거의 실시간으로 작동 하는 번역 서비스입�
 > [!NOTE]
 > 이 과정에서 주로 Windows Mixed Reality (VR) 헤드셋에 초점을 맞춘 반면,이 과정에서 학습 하는 내용을 Microsoft HoloLens에도 적용할 수 있습니다. 과정을 진행할 때 HoloLens를 지원 하기 위해 사용 해야 하는 모든 변경 내용에 대 한 메모를 볼 수 있습니다. HoloLens를 사용 하는 경우 음성 캡처 중에 몇 가지 echo를 확인할 수 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 > [!NOTE]
 > 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (2018 일 수 있음)을 나타냅니다. [도구 설치](../../install-the-tools.md) 문서에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.
@@ -65,7 +65,7 @@ Translator Text API은 거의 실시간으로 작동 하는 번역 서비스입�
 - 기본 제공 마이크가 있는 헤드폰 집합 (헤드셋에 기본 제공 mic 및 스피커가 없는 경우)
 - Azure 설정 및 번역 검색을 위한 인터넷 액세스
 
-## <a name="before-you-start"></a>시작하기 전에
+## <a name="before-you-start"></a>시작하기 전 확인 사항
 
 - 이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.)
 - 이 자습서의 코드를 사용 하 여 PC에 연결 된 기본 마이크 장치에서 기록할 수 있습니다. 기본 마이크 장치가 음성 캡처에 사용할 장치로 설정 되었는지 확인 합니다.
@@ -176,7 +176,7 @@ Azure Translator API를 사용 하려면 응용 프로그램에서 사용할 수
 
             ![새 스크립트 폴더 만들기](images/AzureLabs-Lab1-13.png)
 
-        3. 새로 만든 **장면** 폴더를 연 다음 *파일 이름* : 텍스트 필드에 **MR_TranslationScene** 를 입력 하 고 **저장** 을 누릅니다.
+        3. 새로 만든 **장면** 폴더를 연 다음 *파일 이름*: 텍스트 필드에 **MR_TranslationScene** 를 입력 하 고 **저장** 을 누릅니다.
 
             ![새 장면에 이름을 지정 합니다.](images/AzureLabs-Lab1-14.png)
 
@@ -205,13 +205,13 @@ Azure Translator API를 사용 하려면 응용 프로그램에서 사용할 수
 
             ![게시 설정을 업데이트 하는 중입니다.](images/AzureLabs-Lab1-17.png)
 
-    3. 패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음), **지원 되는 틱 가상 현실** , **Windows Mixed reality SDK** 가 추가 되어 있는지 확인 합니다.
+    3. 패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음), **지원 되는 틱 가상 현실**, **Windows Mixed reality SDK** 가 추가 되어 있는지 확인 합니다.
 
         ![X R 설정을 업데이트 합니다.](images/AzureLabs-Lab1-18.png)
 
 8.  **빌드 설정** 으로 돌아가서 *Unity c # 프로젝트가* 더 이상 회색으로 표시 되지 않습니다. 이 옆의 확인란을 선택 합니다. 
 9.  빌드 설정 창을 닫습니다.
-10. 장면 및 프로젝트를 저장 합니다 ( **파일 > 장면/파일 저장 > 프로젝트 저장** ).
+10. 장면 및 프로젝트를 저장 합니다 (**파일 > 장면/파일 저장 > 프로젝트 저장**).
 
 ## <a name="chapter-3--main-camera-setup"></a>3 장-기본 카메라 설정
 
@@ -291,7 +291,7 @@ Azure Translator API를 사용 하려면 응용 프로그램에서 사용할 수
 
         ![굵은 글꼴입니다.](images/AzureLabs-Lab1-25.png)
 
-7.  [5 장](#chapter-5--create-the-results-class)에서 만든 각 *ui 텍스트 개체* 에 대해 새 *자식* **ui 텍스트 개체** 를 만듭니다. 이러한 자식은 응용 프로그램의 출력을 표시 합니다. 원하는 부모 (예: *MicrophoneStatusLabel* )를 마우스 오른쪽 단추로 클릭 한 다음 **UI** 를 선택 하 고 **텍스트** 를 선택 하 여 *자식* 개체를 만듭니다.
+7.  [5 장](#chapter-5--create-the-results-class)에서 만든 각 *ui 텍스트 개체* 에 대해 새 *자식* **ui 텍스트 개체** 를 만듭니다. 이러한 자식은 응용 프로그램의 출력을 표시 합니다. 원하는 부모 (예: *MicrophoneStatusLabel*)를 마우스 오른쪽 단추로 클릭 한 다음 **UI** 를 선택 하 고 **텍스트** 를 선택 하 여 *자식* 개체를 만듭니다.
 8.  이러한 각 자식에 대해 선택 하 고 아래 표를 사용 하 여 검사기 패널에서 매개 변수를 설정 합니다.
 
     1. **Rect Transform** 구성 요소의 경우:
@@ -344,7 +344,7 @@ Azure Translator API를 사용 하려면 응용 프로그램에서 사용할 수
 
 이 클래스를 만들려면: 
 
-1.  *프로젝트 패널* 을 마우스 오른쪽 단추로 클릭 하 고 **> 폴더를 만듭니다** . 폴더 이름을 **스크립트** 로 합니다. 
+1.  *프로젝트 패널* 을 마우스 오른쪽 단추로 클릭 하 고 **> 폴더를 만듭니다**. 폴더 이름을 **스크립트** 로 합니다. 
  
     ![스크립트 폴더를 만듭니다.](images/AzureLabs-Lab1-31.png)
 
@@ -573,7 +573,7 @@ Azure Translator API를 사용 하려면 응용 프로그램에서 사용할 수
 
 이 클래스를 만들려면: 
 1.  이전에 만든 **스크립트** 폴더로 이동 합니다. 
-2.  **프로젝트 패널** 을 마우스 오른쪽 단추로 클릭 하 **> c # 스크립트를 만듭니다** . 스크립트 *변환기* 를 호출 합니다.
+2.  **프로젝트 패널** 을 마우스 오른쪽 단추로 클릭 하 **> c # 스크립트를 만듭니다**. 스크립트 *변환기* 를 호출 합니다.
 3.  새 *변환기* 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
 4.  파일의 맨 위에 다음 네임 스페이스를 추가 합니다.
 
@@ -731,7 +731,7 @@ Azure Translator API를 사용 하려면 응용 프로그램에서 사용할 수
 다음 사항을 확인합니다.
 
 - [1 장](#chapter-1--the-azure-portal) 에서 설명한 모든 설정이 올바르게 설정 됩니다. 
-- *결과* , *번역기* 및 *MicrophoneManager* 스크립트는 **주 카메라** 개체에 연결 됩니다. 
+- *결과*, *번역기* 및 *MicrophoneManager* 스크립트는 **주 카메라** 개체에 연결 됩니다. 
 - *Azure Translator Text API* 서비스 **키** 를 *Translator* 스크립트 내 **authorizationkey** 변수 내에 배치 했습니다.  
 - *기본 카메라 검사기 패널* 의 모든 필드가 제대로 할당 됩니다.
 - 장면을 실행할 때 마이크가 작동 합니다 (그렇지 않은 경우 연결 된 마이크가 *기본* 장치이 고 [Windows 내에서 올바르게 설정](https://support.microsoft.com/help/4027981/windows-how-to-set-up-and-test-microphones-in-windows-10)했는지 확인).
@@ -762,10 +762,10 @@ Azure Translator API를 사용 하려면 응용 프로그램에서 사용할 수
 
 1.  새 Unity 빌드 ( *앱* 폴더)로 이동 하 여 *Visual Studio* 에서 솔루션 파일을 엽니다.
 2.  솔루션 구성에서 **디버그** 를 선택 합니다.
-3.  솔루션 플랫폼에서 **x86** , **로컬 컴퓨터** 를 선택 합니다. 
+3.  솔루션 플랫폼에서 **x86**, **로컬 컴퓨터** 를 선택 합니다. 
 
     > Microsoft HoloLens의 경우 컴퓨터에 테더 링 된 하지 않도록 *원격 컴퓨터* 를 설정 하는 것이 더 쉬울 수 있습니다. 그러나 다음을 수행 해야 합니다.
-    > - HoloLens의 **IP 주소** 를 알고 있습니다. *설정 > 네트워크 & 인터넷 > Wi-fi > 고급 옵션* 에서 찾을 수 있습니다. IPv4는 사용 해야 하는 주소입니다. 
+    > - HoloLens의 **IP 주소** 를 알고 있습니다 .이 주소는 *설정 > 네트워크 & 인터넷 > Wi-Fi > 고급 옵션* 에서 찾을 수 있습니다. IPv4는 사용 해야 하는 주소입니다. 
     > - *개발자 모드가* **설정** 되어 있는지 확인 합니다. *개발자를 위한 업데이트 & 보안 > > 설정* 에서 찾을 수 있습니다.
 
     ![Visual Studio에서 솔루션을 배포 합니다.](images/AzureLabs-Lab1-37.png)

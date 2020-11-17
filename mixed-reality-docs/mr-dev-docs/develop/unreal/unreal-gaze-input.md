@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Windows Mixed Reality, holograms, HoloLens 2, 눈 추적, 응시 입력, 헤드 탑재 된 디스플레이, Unreal engine
-ms.openlocfilehash: 477fbdc9c7ddb3b4e890e62150651d9227d4c19e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, holograms, HoloLens 2, 눈 추적, 응시 입력, 헤드 탑재 된 디스플레이, Unreal engine, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 2ea55e3c53275f6150ca7f2def10d71634119e2e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684857"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679052"
 ---
 # <a name="gaze-input"></a>응시 입력
 
@@ -46,19 +46,19 @@ Unreal의 Api를 사용 하려면 먼저 HoloLens 프로젝트 설정에서 응�
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞에서 설명한 실제 개발 검사점 경험을 수행 하는 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 진행할 수 있습니다. 
+앞에서 설명한 Unreal 개발 검사점 경험을 수행하는 경우 MRTK 핵심 구성 요소를 탐색하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다. 
 
 > [!div class="nextstepaction"]
 > [손 추적](unreal-hand-tracking.md)
 
-또는 혼합 현실 플랫폼 기능 및 Api로 이동 합니다.
+또는 Mixed Reality 플랫폼 기능 및 API로 이동합니다.
 
 > [!div class="nextstepaction"]
 > [HoloLens 카메라](unreal-hololens-camera.md)
 
-언제 든 지 [실제 개발 검사점](unreal-development-overview.md#2-core-building-blocks) 으로 돌아갈 수 있습니다.
+언제든지 [Unreal 개발 검사점](unreal-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [조정](../../calibration.md)
 * [편안함](../../design/comfort.md)
 * [응시 및 커밋](../../design/gaze-and-commit.md)

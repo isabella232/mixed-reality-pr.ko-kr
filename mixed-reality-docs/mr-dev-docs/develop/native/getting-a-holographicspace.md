@@ -5,13 +5,13 @@ author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, 공간 입력, 렌더링, 스왑 체인, holographic 프레임, 업데이트 루프, 게임 루프, 참조 프레임, locatability, 샘플 코드, 연습
-ms.openlocfilehash: d96362e7d5795449b608196e52bce55d0f16625b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, 공간 입력, 렌더링, 스왑 체인, holographic 프레임, 업데이트 루프, 게임 루프, 참조 프레임, locatability, 샘플 코드, 연습, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: fa2c64901a7c4a09710a472509441d54a9e3a383
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685921"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679642"
 ---
 # <a name="getting-a-holographicspace"></a>HolographicSpace 받기
 
@@ -114,7 +114,7 @@ m_cameraAddedToken = m_holographicSpace.CameraAdded(
 
 또한 앱은 해당 카메라에 대해 만들어진 리소스를 해제 하 여 **CameraRemoved** 이벤트에 응답 해야 합니다.
 
-From **DeviceResources:: SetHolographicSpace** :
+From **DeviceResources:: SetHolographicSpace**:
 
 ```cpp
 m_cameraRemovedToken = m_holographicSpace.CameraRemoved(
@@ -142,7 +142,7 @@ Windows Holographic에는 두 가지 종류의 참조 프레임, 장치에 연�
 
 공간 로케이터는 Windows Mixed Reality 장치를 나타내며 장치의 동작을 추적 하 고 해당 위치를 기준으로 인식할 수 있는 좌표계를 제공 합니다.
 
-**Appmain:: OnHolographicDisplayIsAvailableChanged** :
+**Appmain:: OnHolographicDisplayIsAvailableChanged**:
 
 ```cpp
 spatialLocator = SpatialLocator::GetDefault();
@@ -150,7 +150,7 @@ spatialLocator = SpatialLocator::GetDefault();
 
 앱이 시작 될 때 고정 된 참조 프레임을 만듭니다. 이는 응용 프로그램이 시작 될 때 장치의 위치에 원점이 배치 된 상태에서 세계 좌표계를 정의 하는 것과 유사 합니다. 이 참조 프레임은 장치와 함께 이동 하지 않습니다.
 
-**Appmain:: SetHolographicSpace** :
+**Appmain:: SetHolographicSpace**:
 
 ```cpp
 m_stationaryReferenceFrame =

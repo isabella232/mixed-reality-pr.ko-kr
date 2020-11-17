@@ -7,18 +7,18 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: Mixed Reality, 홀로그램, AR, VR, MR, XR, 증강 현실, 가상 현실, 설명
 ms.localizationpriority: high
-ms.openlocfilehash: a55b05f8edfeedfff3313844428b9af4cf7a2fc0
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+ms.openlocfilehash: 44914decd9530a11d11127b43af527d995f6c252
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340711"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631491"
 ---
 # <a name="what-is-mixed-reality"></a>혼합 현실이란?
 
 ![HoloLens 2를 착용하고 손으로 가리키고 커밋](images/02_MixedRealitySlashMixedReality.png)
 
-Mixed Reality는 실제 세계와 디지털 세계가 혼합되어 인간, 컴퓨터 및 환경 상호 작용 간의 연결을 보여 줍니다. 이 새로운 현실은 컴퓨터 비전, 그래픽 처리 능력, 표시 기술 및 입력 시스템의 발전을 기반으로 합니다. 그러나 *Mixed Reality(혼합 현실)* 라는 용어는 Paul Milgram 및 Fumio Kishino가 1994년에 발표한 " [A Taxonomy of Mixed Reality Visual Displays(혼합 현실 시각적 표시 분류)](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321)"라는 논문에서 소개되었습니다. 이 논문에서는 *가상 연속체* 의 개념과 표시에 적용되는 분류의 범주화를 연구했습니다. 그 이후로 Mixed Reality는 표시뿐만 아니라 다음과 같은 영역에도 적용되었습니다.
+Mixed Reality는 실제 세계와 디지털 세계가 혼합되어 인간, 컴퓨터 및 환경 상호 작용 간의 연결을 보여 줍니다. 이 새로운 현실은 컴퓨터 비전, 그래픽 처리 능력, 표시 기술 및 입력 시스템의 발전을 기반으로 합니다. 그러나 *Mixed Reality(혼합 현실)* 라는 용어는 Paul Milgram 및 Fumio Kishino가 1994년에 발표한 "[A Taxonomy of Mixed Reality Visual Displays(혼합 현실 시각적 표시 분류)](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321)"라는 논문에서 소개되었습니다. 이 논문에서는 *가상 연속체* 의 개념과 표시에 적용되는 분류의 범주화를 연구했습니다. 그 이후로 Mixed Reality는 표시뿐만 아니라 다음과 같은 영역에도 적용되었습니다.
 * 환경 입력
 * 공간 음향
 * 현실 공간 및 가상 공간 모두에서의 위치 및 위치 지정
@@ -62,7 +62,7 @@ Mixed Reality는 실제 세계와 디지털 세계를 모두 혼합하므로 이
 
 ### <a name="augmented-vs-virtual-reality"></a>증강 현실과 가상 현실 비교
 
-현재 시중에 나와 있는 대부분의 휴대폰에는 환경 이해 기능이 거의 없거나 아예 없습니다. 이러한 휴대폰에서 제공하는 환경은 실제 현실과 디지털 현실을 혼합할 수 없습니다. 실제 세계의 비디오 스트림에 그래픽을 오버레이하는 환경은 *증강 현실* 입니다. 사용자의 시야를 가리고 디지털 환경을 제공하는 환경은 *가상 현실* 입니다. 증강 현실과 가상 현실 양식 사이에서 사용하도록 설정되는 환경( *Mixed Reality* )은 다음과 같습니다.
+현재 시중에 나와 있는 대부분의 휴대폰에는 환경 이해 기능이 거의 없거나 아예 없습니다. 이러한 휴대폰에서 제공하는 환경은 실제 현실과 디지털 현실을 혼합할 수 없습니다. 실제 세계의 비디오 스트림에 그래픽을 오버레이하는 환경은 *증강 현실* 입니다. 사용자의 시야를 가리고 디지털 환경을 제공하는 환경은 *가상 현실* 입니다. 증강 현실과 가상 현실 양식 사이에서 사용하도록 설정되는 환경(*Mixed Reality*)은 다음과 같습니다.
 * 실제 세계에서 시작하여 홀로그램과 같은 디지털 개체를 마치 실제로 있는 것처럼 배치합니다.
 * 실제 세계로 시작하고 다른 사람(아바타)을 디지털로 표현하여 메모를 남길 때 서 있던 위치를 보여줍니다. 즉, 서로 다른 시점의 비동기 협업을 나타내는 환경입니다.
 * 디지털 세계로 시작하고 사용자가 실제 개체를 피할 수 있도록 벽, 가구 등 실제 세계의 물리적 경계가 환경에 디지털 방식으로 표시됩니다.
@@ -119,10 +119,4 @@ Windows Mixed Reality 환경을 제공하는 두 가지 주요 디바이스가 �
 > [!div class="nextstepaction"]
 > [홀로그램이란?](hologram.md)
 
-## <a name="see-also"></a>참조
-
-* [홀로그램이란?](hologram.md)
-* [Mixed Reality의 기본 사항 이해](get-started-with-mr.md#understand-the-basics)
-* [생성 및 프로토타입 제작 시작](../design/design.md)
-* [도구 및 아키텍처 알아보기](../develop/development.md)
 

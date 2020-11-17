@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오
-ms.openlocfilehash: 9ddfd1644a20ac063551b8140f9f8950ae172196
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head 관련 전송 함수, 반향, Microsoft Spatializer
+ms.openlocfilehash: fc657eb22034c1c3fd31aadedfe7b8ea7bb8447d
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91689864"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679712"
 ---
 # <a name="adding-spatial-audio-to-your-unity-project"></a>Unity 프로젝트에 공간 오디오 추가
 

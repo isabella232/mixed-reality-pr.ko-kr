@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
-keywords: 혼합 현실, 공간 로케이터, 공간 참조 프레임, 공간 좌표 시스템, 공간 스테이지, 샘플 코드, 이미지 안정화, 공간 앵커, 공간 앵커 저장소, 추적 손실, 연습
-ms.openlocfilehash: 5ae60d5696d40a07ad350d0de097eb2f82f1dde1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 혼합 현실, 공간 로케이터, 공간 참조 프레임, 공간 좌표 시스템, 공간 스테이지, 샘플 코드, 이미지 안정화, 공간 앵커, 공간 앵커 저장소, 추적 손실, 연습, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 4ab97df0d0ce87f86b3b561edb544d503e479e96
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683920"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679662"
 ---
 # <a name="coordinate-systems-in-directx"></a>DirectX의 좌표계
 
@@ -629,7 +629,7 @@ SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordina
 
 사용자가 편안 하 게 생각 하는 경우 선형 보간 ("lerp")을 사용 하 여 일정 기간 동안 발생 하는 변화를 원활 하 게 합니다. 이는 홀로그램을 응시로 잠그는 것 보다 사용자에 게 더 친숙 합니다. 태그를 따라 홀로그램의 위치도 Lerping 이동을 감소 시켜 홀로그램의 안정화를 사용할 수 있습니다. 이러한 완충를 수행 하지 않은 경우 일반적으로 사용자 헤드의 imperceptible 이동으로 간주 되는 것으로 간주 되므로 사용자가 홀로그램 지터를 볼 수 있습니다.
 
-**StationaryQuadRenderer::P Osit홀로그램 홀로그램** :
+**StationaryQuadRenderer::P Osit홀로그램 홀로그램**:
 
 ```
    const float& dtime = static_cast<float>(timer.GetElapsedSeconds());
@@ -656,7 +656,7 @@ SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordina
 >[!NOTE]
 >디버깅 패널의 경우 뷰를 액세스가 방해 하지 않도록 홀로그램의 위치를 약간 아래로 변경 하도록 선택할 수 있습니다. 이러한 작업을 수행 하는 방법의 예는 다음과 같습니다.
 
-**StationaryQuadRenderer::P Osit. 홀로그램** :
+**StationaryQuadRenderer::P Osit. 홀로그램**:
 
 ```
        // If you're making a debug view, you might not want the tag-along to be directly in the
@@ -720,7 +720,7 @@ SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordina
 
 이 예에서는 홀로그램을 배치할 SpatialLocatorAttachedReferenceFrame의 좌표계에서 홀로그램을 렌더링 하도록 선택 합니다. 다른 좌표계를 사용 하 여 렌더링 하기로 결정 한 경우에는 장치 연결 참조 프레임의 좌표계에서 해당 좌표계로 변환을 가져와야 합니다.
 
-From **HolographicTagAlongSampleMain:: Render** :
+From **HolographicTagAlongSampleMain:: Render**:
 
 ```
    // The view and projection matrices for each holographic camera will change
@@ -733,7 +733,7 @@ From **HolographicTagAlongSampleMain:: Render** :
        );
 ```
 
-간단하죠. 그러면 홀로그램은 사용자의 응시 방향 앞에서 2 미터의 위치를 "추적" 합니다.
+이것으로 끝입니다. 그러면 홀로그램은 사용자의 응시 방향 앞에서 2 미터의 위치를 "추적" 합니다.
 
 >[!NOTE]
 >이 예제에서는 추가 콘텐츠도 로드 합니다. StationaryQuadRenderer를 참조 하세요.

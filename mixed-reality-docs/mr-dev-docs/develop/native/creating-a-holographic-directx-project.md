@@ -5,13 +5,13 @@ author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows Mixed Reality, holographic 앱, 새 앱, UWP 앱, 템플릿 앱, holograms, 새 프로젝트, 연습, 다운로드, 샘플 코드
-ms.openlocfilehash: 3cca7cedfcf90299049653426a497abbd2dede74
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, holographic 앱, 새 앱, UWP 앱, 템플릿 앱, holograms, 새 프로젝트, 연습, 다운로드, 샘플 코드, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 08adbf6a4148e0e1d3b808d993011a7407fbf086
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683904"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678132"
 ---
 # <a name="creating-a-holographic-directx-project"></a>홀로그램 DirectX 프로젝트 만들기
 
@@ -41,7 +41,7 @@ DirectX 11 holographic UWP 앱 템플릿은 DirectX 11 UWP 앱 템플릿과 매�
 Visual Studio 2019에서 새 프로젝트를 만들려면 다음을 수행 합니다.
 1. **Visual Studio** 를 시작 합니다.
 2. 오른쪽의 **시작** 섹션에서 **새 프로젝트 만들기** 를 선택 합니다.
-3. **새 프로젝트 만들기** 대화 상자의 드롭다운 메뉴에서 **c + +** , **Windows Mixed Reality** 및 **UWP** 를 선택 합니다.
+3. **새 프로젝트 만들기** 대화 상자의 드롭다운 메뉴에서 **c + +**, **Windows Mixed Reality** 및 **UWP** 를 선택 합니다.
 4. **Holographic DirectX 11 앱 (유니버설 Windows) (c + +/WinRT)** 을 선택 합니다.
    ![Visual Studio 2019에서 Holographic DirectX 11 c + +/WinRT UWP 앱 프로젝트 템플릿의 스크린샷](images/holographic-directx-app-cpp-new-project-2019.png)<br>
    *Holographic DirectX 11 c + +/WinRT UWP 앱 프로젝트 템플릿 (Visual Studio 2019)*

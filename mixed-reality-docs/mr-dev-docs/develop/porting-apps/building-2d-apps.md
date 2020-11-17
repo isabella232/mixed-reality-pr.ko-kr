@@ -1,19 +1,19 @@
 ---
-title: 혼합 현실에 사용되는 2D UWP 앱 업데이트
+title: 혼합 현실 용 2D UWP 앱 업데이트
 description: 이 문서에서는 HoloLens 및 Windows Mixed Reality 모던 헤드셋에서 실행 되도록 기존 2D 유니버설 Windows 플랫폼 앱을 업데이트 하는 방법을 간략하게 설명 합니다.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 2D 앱, UWP, 플랫 앱, HoloLens, 모던 헤드셋, 앱 모델, 뒤로 단추, 앱 바, dpi, 해상도, 크기 조정
-ms.openlocfilehash: af262527c957dda57f0c8a3252a2f63207d6ca39
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 2D 앱, UWP, 플랫 앱, HoloLens, 모던 헤드셋, 앱 모델, 뒤로 단추, 앱 바, dpi, 해상도, 크기 조정, 포팅, HoloLens 1 gen, HoloLens 2, mixed reality 헤드셋, windows mixed reality 헤드셋, 마이그레이션, Windows 10
+ms.openlocfilehash: 4103ee1e5a7169759dfd823b41b5e3fd18011956
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683408"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677802"
 ---
-# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>혼합 현실에 사용되는 2D UWP 앱 업데이트
+# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>혼합 현실 용 2D UWP 앱 업데이트
 
 Windows Mixed Reality를 사용 하면 사용자가 실제 또는 디지털 세계에서 사용자의 holograms을 확인할 수 있습니다. 핵심으로, 몰입 형 헤드셋 액세서리를 연결 하는 HoloLens와 데스크톱 Pc는 모두 Windows 10 장치입니다. 즉, 저장소에서 거의 모든 UWP (유니버설 Windows 플랫폼) 앱을 2D 앱으로 실행할 수 있습니다.
 
@@ -74,11 +74,11 @@ Windows Mixed Reality를 사용 하면 사용자가 실제 또는 디지털 세�
 ### <a name="run-in-the-hololens-emulator"></a>HoloLens 에뮬레이터에서 실행
 
 이제 UWP 앱이 "Windows 유니버설"를 대상으로 하기 때문에 앱을 빌드하고 [HoloLens 에뮬레이터](../platform-capabilities-and-apis/using-the-hololens-emulator.md)에서 실행 하겠습니다.
-* [HoloLens 에뮬레이터를 설치](../install-the-tools.md)했는지 확인합니다.
+* [HoloLens 에뮬레이터를 설치](../install-the-tools.md) 했는지 확인합니다.
 * Visual Studio에서 앱에 대 한 **x86** 빌드 구성을 선택 합니다.
 
   ![Visual Studio의 x86 빌드 구성](../platform-capabilities-and-apis/images/x86setting.png)<br>
-* 배포 대상 드롭다운 메뉴에서 **HoloLens 에뮬레이터** 를 선택 합니다.
+* 배포 대상 드롭다운 메뉴에서 **HoloLens 에뮬레이터** 를 선택합니다.
 
   ![배포 대상 목록의 HoloLens 에뮬레이터](images/deployemulator-500px.png)<br>
 * **디버그 > 디버깅 시작** 을 선택 하 여 앱을 배포 하 고 디버깅을 시작 합니다.

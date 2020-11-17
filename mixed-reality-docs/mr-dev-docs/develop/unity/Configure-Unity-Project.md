@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
-keywords: Unity, 혼합 현실, 개발, 시작, 새 프로젝트
-ms.openlocfilehash: f1465dcb31718b9d3faeb64d24e33d9f9ffeb7cc
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+keywords: Unity, mixed reality, 개발, 시작, 새 프로젝트, Windows Mixed Reality, UWP, XR, 성능
+ms.openlocfilehash: cd7e6c5681c717c37368393a605998a2ab8e4175
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386219"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677672"
 ---
 # <a name="configure-a-new-unity-project-for-windows-mixed-reality"></a>Windows Mixed Reality에 대 한 새 Unity 프로젝트 구성 
 
@@ -81,7 +81,7 @@ HoloLens에는 모바일 클래스 GPU가 있습니다. 앱이 HoloLens를 대�
 1. **계층** 에서 **기본 카메라** 를 선택 합니다.
 2. **검사기** 패널에서 변환 **위치** 를 **0, 0, 0** 으로 설정 하 여 사용자의 헤드 위치가 Unity 세계 원점에서 시작 되도록 합니다.
 3. **Clear 플래그** 를 **Solid 색** 으로 변경 합니다.
-4. **배경색** 을 **RGBA 0, 0** , 0, 0으로 변경 합니다. 검은색은 HoloLens에서 투명 하 게 렌더링 됩니다.
+4. **배경색** 을 **RGBA 0, 0**, 0, 0으로 변경 합니다. 검은색은 HoloLens에서 투명 하 게 렌더링 됩니다.
 5. **클립 평면** 을 [HoloLens 권장](camera-in-unity.md#clip-planes) 0.85 (미터) 근처로 변경 합니다.
 
 ![Unity 카메라 설정](images/Unitycamerasettings.png)<br>
@@ -91,7 +91,7 @@ HoloLens에는 모바일 클래스 GPU가 있습니다. 앱이 HoloLens를 대�
 > 새 카메라를 삭제 하 고 만드는 경우 새 카메라에 **maincamera** 로 태그가 지정 되어 있는지 확인 합니다.
 
 ## <a name="see-also"></a>참조
-* [MRTK-설치 가이드 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
-* [MRTK-설명서 홈 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+* [MRTK - 설치 가이드(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+* [MRTK - 설명서 홈(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 * [도구 설치](../install-the-tools.md)
 * [Unity 개발 개요](unity-development-overview.md)

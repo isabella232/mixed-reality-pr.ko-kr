@@ -7,12 +7,12 @@ ms.date: 07/29/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 검색, 배포, 인덱스, 방문 페이지, 디자인, 개발, 자습서, 샘플 앱, 기본 사항, 사례 연구, 리소스, HoloLens 방법, 오픈 소스 프로젝트
-ms.openlocfilehash: 34c78c277e0b184c0421c2bdd56ef13411a5bf29
-ms.sourcegitcommit: bd359c269add7ac76f0c2c26ca7caedba14749b1
+ms.openlocfilehash: 7c8fc83fd2b5542909fd2ea6ab4dca288175c56c
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94417838"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631521"
 ---
 # <a name="get-started-with-mixed-reality"></a>Mixed Reality 시작
 
@@ -143,11 +143,6 @@ Mixed Reality 에코시스템은 상상력에 의해서만 제한되는 물리�
 
 <br>
 
-
 >[!IMPORTANT]
 >이 사이트의 모든 혼합 현실 개발 자료는 참조 목적으로만 제공됩니다. 애플리케이션, 애플리케이션 사용, 애플리케이션 사용이 최종 사용자에게 미치는 영향은 전적으로 애플리케이션 개발자인 여러분의 책임이며 여기에는 앱이 최종 사용자에게 불편, 부상 또는 기타 형태의 피해를 주는 일이 없도록 주의하고 적절한 경고와 법적 고지를 제공하는 것이 포함됩니다. 애플리케이션을 개발하고 게시하는 과정에서 항상 적절한 단계를 수행하여 애플리케이션을 안전하게 보호하고 [Microsoft와 맺은 앱 개발자 계약](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement)에 규정된 모든 의무를 이행해야 합니다.
 
-## <a name="see-also"></a>참조
-* [몰입형 헤드셋 하드웨어 세부 정보](immersive-headset-hardware-details.md)
-* [커뮤니티 리소스](community.md)
-* [VR 마니아 가이드](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/)

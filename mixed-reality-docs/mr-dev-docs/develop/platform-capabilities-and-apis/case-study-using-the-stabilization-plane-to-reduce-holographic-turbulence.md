@@ -5,13 +5,13 @@ author: bstrukus
 ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, holograms, 안정화, 사례 연구
-ms.openlocfilehash: 4eb61cb37ef087dc5fbeb6b4ef6ca1c507719205
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, holograms, 안정화, 사례 연구, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: c268e7ee83fdcbb8c5ddd09cd643f4354d05ec29
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683793"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679612"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>사례 연구-안정화 평면을 사용 하 여 holographic turbulence 줄이기
 
@@ -88,7 +88,7 @@ HoloLens가 있고이 문서 내의 개념을 연습 하려는 경우 테스트 
 * 가능 하면 항상 대상 간 평면을 원활 하 게 이동 합니다. 멀리 떨어져 있는 대상을 즉시 전환 하면 장면이 시각적으로 중단 될 수 있습니다.
 * 특정 대상에 잠금을 설정 하려면 평면 설정 논리에 옵션을 지정 하는 것이 좋습니다. 이렇게 하면 필요한 경우 로고 또는 제목 화면과 같은 개체에 평면을 잠글 수 있습니다.
 
-## <a name="about-the-author"></a>저자 정보
+## <a name="about-the-author"></a>작성자 정보
 
 <table style="border-collapse:collapse">
 <tr>

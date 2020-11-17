@@ -5,18 +5,18 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, 포커스 지점, 포커스 평면, 안정화 평면, 안정화 지점, reprojection, LSR, 깊이 버퍼
-ms.openlocfilehash: 4d8c8a232d12a8d6f0a7694fbc0ed8f66395163a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, 포커스 지점, 포커스 평면, 안정화 평면, 안정화 지점, reprojection, LSR, 깊이 버퍼, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 48c0d26e89124b9dbfc1d108354fb6e751e51783
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683110"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678692"
 ---
 # <a name="focus-point-in-unity"></a>Unity의 포커스 포인트
 
 **네임 스페이스:** *unityengine. XR. WSA*<br>
-**유형** : *HolographicSettings*
+**유형**: *HolographicSettings*
 
 현재 표시 되는 holograms에서 안정화를 가장 잘 수행 하는 방법에 대 한 힌트를 HoloLens에 제공 하도록 [포커스 지점을](../platform-capabilities-and-apis/hologram-stability.md#reprojection) 설정할 수 있습니다.
 
@@ -57,12 +57,12 @@ void Update()
 > [!div class="nextstepaction"]
 > [추적 손실](tracking-loss-in-unity.md)
 
-또는 장치 또는 에뮬레이터에서 앱 배포로 직접 이동 합니다.
+또는 디바이스나 에뮬레이터에서 앱 배포로 직접 이동합니다.
 
 > [!div class="nextstepaction"]
 > [HoloLens 또는 Windows Mixed Reality 몰입 형 헤드셋에 배포](../platform-capabilities-and-apis/using-visual-studio.md)
 
-언제 든 지 [Unity 개발 검사점](unity-development-overview.md#3-platform-capabilities-and-apis) 으로 돌아갈 수 있습니다.
+언제든지 [Unity 개발 검사점](unity-development-overview.md#3-platform-capabilities-and-apis)으로 돌아갈 수 있습니다.
 
 ### <a name="see-also"></a>참조
 * [안정화 평면](../platform-capabilities-and-apis/hologram-stability.md#reprojection)

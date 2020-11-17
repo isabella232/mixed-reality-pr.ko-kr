@@ -1,22 +1,22 @@
 ---
-title: MR 및 Azure 310-개체 검색
+title: MR 및 Azure 310 - 개체 검색
 description: 이 과정을 완료 하 여 machine learning 모델을 학습 한 다음, 학습 된 모델을 사용 하 여 혼합 현실 응용 프로그램 내에서 실제 세계의 유사한 개체와 해당 위치를 인식 하는 방법을 알아보세요.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: azure, 사용자 지정 비전, 개체 검색, 혼합 현실, 아카데미, unity, 자습서, api, hololens
-ms.openlocfilehash: 0a6fd582cc4a8c72e4b3f00e0d4d64a78688777c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: azure, 사용자 지정 비전, 개체 검색, 혼합 현실, 아카데미, unity, 자습서, api, hololens, Windows 10, Visual Studio
+ms.openlocfilehash: 10f3b2b8f8422a20c39a4d89568e42ca530683c2
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687609"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679462"
 ---
 # <a name="mr-and-azure-310-object-detection"></a>Mr 및 Azure 310: 개체 검색
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_** .  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
 
 <br>
 
@@ -29,7 +29,7 @@ ms.locfileid: "91687609"
 **Azure Custom Vision, 개체 검색** 은 개발자가 사용자 지정 이미지 분류자를 빌드할 수 있게 해 주는 Microsoft 서비스입니다. 이러한 분류자는 이미지 자체 내에서 **상자 경계** 를 제공 하 여 새 이미지 내에서 개체를 검색 하는 데 사용할 수 있습니다. 이 서비스는 간단 하 고 사용 하기 쉬운 온라인 포털을 제공 하 여이 프로세스를 간소화 합니다. 자세한 내용은 다음 링크를 방문 하세요.
 
 * [Azure Custom Vision 페이지](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home)
-* [제한 및 할당량](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/limits-and-quotas)
+* [한도 및 할당량](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/limits-and-quotas)
 
 이 과정이 완료 되 면 다음을 수행할 수 있는 혼합 현실 응용 프로그램이 만들어집니다.
 
@@ -55,7 +55,7 @@ ms.locfileid: "91687609"
 </tr>
 </table>
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 > [!NOTE]
 > 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (7 월 2018)을 나타냅니다. [도구 설치](../../install-the-tools.md) 문서에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.
@@ -71,7 +71,7 @@ ms.locfileid: "91687609"
 - Azure 설정 및 Custom Vision Service 검색을 위한 인터넷 액세스
 -  Custom Vision에서 인식할 수 있는 각 개체에 대해 15 개 이상의 이미지가 필요 합니다. 원할 경우이 과정에서 이미 제공 된 이미지 ( [일련의 cup](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20310%20-%20Object%20detection/Cup%20Images.zip))를 사용할 수 있습니다.
 
-## <a name="before-you-start"></a>시작하기 전에
+## <a name="before-you-start"></a>시작하기 전 확인 사항
 
 1.  이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.)
 2.  HoloLens를 설정 하 고 테스트 합니다. HoloLens를 설정 하는 데 지원이 필요한 경우 [hololens 설정 문서를 방문](https://docs.microsoft.com/hololens/hololens-setup)해야 합니다. 
@@ -109,7 +109,7 @@ ms.locfileid: "91687609"
 
     1.  프로젝트 이름을 삽입 합니다.
 
-    2.  프로젝트에 대 한 설명을 삽입 합니다 ( **선택 사항** ).
+    2.  프로젝트에 대 한 설명을 삽입 합니다 (**선택 사항**).
 
     3.  리소스 그룹을 선택 하거나 새 **리소스 그룹** 을 만듭니다. 리소스 그룹은 Azure 자산의 컬렉션에 대 한 청구를 모니터링 하 고, 액세스를 제어 하 고, 프로 비전 하 고, 관리 하는 방법을 제공 합니다. 단일 프로젝트와 연결 된 모든 Azure 서비스 (예: 이러한 과정)를 공용 리소스 그룹에 유지 하는 것이 좋습니다.
 
@@ -253,7 +253,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
             ![](images/AzureLabs-Lab310-27.png) ![](images/AzureLabs-Lab310-28.png)
 
-    3.  패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음), **지원 되는 틱 가상 현실** , **Windows Mixed reality SDK** 가 추가 되었는지 확인 합니다.
+    3.  패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음), **지원 되는 틱 가상 현실**, **Windows Mixed reality SDK** 가 추가 되었는지 확인 합니다.
 
         ![](images/AzureLabs-Lab310-29.png)
 
@@ -300,7 +300,7 @@ Custom Vision 프로젝트를 학습 하려면:
     3.  **Prefabs** 폴더에는 장면에 포함 된 Prefabs이 포함 됩니다. 해당 항목은 다음과 같습니다.
 
         1.  응용 프로그램에서 사용 되는 **GazeCursor** 입니다. 는 SpatialMapping prefab와 함께 작동 하 여 물리적 개체의 맨 위에 장면에 배치할 수 있습니다.
-        2.  **레이블** -필요할 때 장면에 개체 태그를 표시 하는 데 사용 되는 UI 개체입니다.
+        2.  **레이블**-필요할 때 장면에 개체 태그를 표시 하는 데 사용 되는 UI 개체입니다.
         3.  **SpatialMapping** 는 응용 프로그램에서 Microsoft HoloLens의 공간 추적을 사용 하 여 가상 맵 만들기를 사용할 수 있도록 하는 개체입니다.
 
     4.  이 과정의 미리 작성 된 장면을 현재 포함 하는 **장면** 폴더입니다.
@@ -310,7 +310,7 @@ Custom Vision 프로젝트를 학습 하려면:
     ![](images/AzureLabs-Lab310-36.png)
 
     > [!NOTE] 
-    >  **코드는 포함 되지 않으며** ,이 과정을 수행 하 여 코드를 작성 합니다.
+    >  **코드는 포함 되지 않으며**,이 과정을 수행 하 여 코드를 작성 합니다.
 
 ## <a name="chapter-5---create-the-customvisionanalyser-class"></a>5 장-CustomVisionAnalyser 클래스 만들기
 
@@ -337,7 +337,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 2.  새로 만든 폴더를 두 번 클릭 하 여 엽니다.
 
-3.  폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **Create** ,  >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **CustomVisionAnalyser로 합니다.**
+3.  폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **Create**,  >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **CustomVisionAnalyser로 합니다.**
 
 4.  새 **CustomVisionAnalyser** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
 
@@ -1024,7 +1024,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 1.  이전에 만든 **스크립트** 폴더로 이동 합니다.
 
-2.  폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **Create** ,  >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **ImageCapture** 로 합니다.
+2.  폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **Create**,  >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **ImageCapture** 로 합니다.
 
 3.  새 **ImageCapture** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
 
@@ -1276,7 +1276,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 1.  **파일 > 빌드 설정** 으로 이동 합니다.
 
-2.  Tick **Unity C \# 프로젝트** .
+2.  Tick **Unity C \# 프로젝트**.
 
 3.  열려 있는 **장면 추가** 를 클릭 합니다. 이렇게 하면 현재 열려 있는 장면이 빌드에 추가 됩니다.
 

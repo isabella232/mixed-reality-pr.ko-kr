@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hands near, HoloLens
-ms.openlocfilehash: 18e2a6128a5fa07fe2ddcd3c0eab192ccdedb4b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 8141bc588247be15174d4a85992b74911ffc002e
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700689"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631541"
 ---
 # <a name="direct-manipulation-with-hands"></a>수동으로 직접 조작
 
@@ -34,7 +34,7 @@ ms.locfileid: "91700689"
 <tr>
      <td><strong>입력 모델</strong></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
      <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>몰입형 헤드셋</strong></a></td>
 </tr>
 <tr>
@@ -307,18 +307,18 @@ AR의 손과 VR의 모션 컨트롤러 간에는 상호 작용 평행 이론이 
 
 직접 조작은 의도한 대로 작동한다면 마법과 같이 느껴질 수 있습니다. 하지만 손을 움직일 때마다 홀로그램이 의도와 다르게 트리거되면 당황할 수 있습니다. 시선 추적은 사용자의 의도를 더 잘 식별하는 데 유용할 수 있습니다.
 
-* **사용할 때** : 조작 대응을 잘못 트리거하는 경우를 줄입니다. 시선 추적은 사용자가 현재 진행 중인 작업을 더 잘 이해할 수 있도록 합니다.
+* **사용할 때**: 조작 대응을 잘못 트리거하는 경우를 줄입니다. 시선 추적은 사용자가 현재 진행 중인 작업을 더 잘 이해할 수 있도록 합니다.
 예를 들어, 실제 작업 공구를 잡기 위해 팔을 뻗으면서 홀로그래픽(지침) 텍스트를 읽는 경우를 가정해 봅니다.
 
 이렇게 하여 이전에 알아채지 못했던(예: 사용자의 FoV(시야각) 밖에 있을 수도 있음) 일부 대화형 홀로그래픽 단추 사이에서 실수로 손을 움직이게 됩니다.
 
   요약: 사용자가 한참 동안 홀로그램을 보지 않았는데도 터치 또는 잡기 이벤트가 감지된 경우, 사용자가 해당 홀로그램과 상호 작용하려는 의도가 실제로 없었을 가능성이 높습니다.
 
-* **선택한 대상** :  또 다른 예로 가양성 활성화를 처리하는 것 외에, 여러 개의 홀로그램이 서로 가깝게 배치된 경우 특히, 사용자 관점에서 정확한 교차점을 알 수 없으므로 잡거나 찌를 홀로그램을 더 잘 식별하는 경우를 들 수 있습니다.
+* **선택한 대상**:  또 다른 예로 가양성 활성화를 처리하는 것 외에, 여러 개의 홀로그램이 서로 가깝게 배치된 경우 특히, 사용자 관점에서 정확한 교차점을 알 수 없으므로 잡거나 찌를 홀로그램을 더 잘 식별하는 경우를 들 수 있습니다.
 
   HoloLens 2의 시선 추적은 시선 응시를 정확하게 확인할 수 있는 정도에 따라 제한이 있지만, 손 입력으로 조작할 때는 깊이 차이가 있으므로 근거리 조작에 매우 유용할 수 있습니다. 즉, 경우에 따라 조작 위젯을 정확히 잡기 위해 손을 홀로그램 뒤에 둘지 아니면 앞에 둘지를 결정하는 것이 어려울 수 있습니다.
 
-* **대상 위치** : 빨리 던지기 제스처에서 사용자가 바라보는 대상에 대한 정보를 사용합니다. 홀로그램을 잡은 후 의도한 대상 쪽으로 대충 던집니다.  
+* **대상 위치**: 빨리 던지기 제스처에서 사용자가 바라보는 대상에 대한 정보를 사용합니다. 홀로그램을 잡은 후 의도한 대상 쪽으로 대충 던집니다.  
 
     이러한 조작은 일반적으로 잘 작동하지만, 손 제스처를 빠르게 수행할 경우 대상이 부정확할 수 있습니다. 하지만 시선 추적은 제스처의 정확도를 향상시킬 수 있습니다.
 

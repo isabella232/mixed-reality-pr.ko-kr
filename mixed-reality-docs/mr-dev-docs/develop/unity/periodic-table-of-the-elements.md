@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, 디자인, 샘플 앱, 컨트롤
-ms.openlocfilehash: 82ffa19b27c1d2687b67df659cb3bb50544748fc
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Windows Mixed Reality, 디자인, 샘플 앱, 컨트롤, MRTK, Mixed Reality Toolkit, Unity, 샘플 앱, 예제 앱, 오픈 소스, Microsoft Store, HoloLens, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 4b85631fb044ee0b24c003f7808fd0455b87deec
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573267"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677682"
 ---
 # <a name="periodic-table-of-the-elements"></a>원소의 주기율표
 
@@ -55,13 +55,13 @@ HoloLens를 처음 경험 하 고 나면, 정기적 테이블 앱은 혼합 현�
 
 ### <a name="interactable-object-button"></a>Interactable 개체 (button)
 
-[Interactable 개체](../../design/interactable-object.md) 는 기본 HoloLens 입력에 응답할 수 있는 개체입니다. 모든 개체에 쉽게 적용할 수 있는 prefab/스크립트로 제공 됩니다. 예를 들어 장면 interactable에서 커피 컵을 만들고 응시, 공중 탭, 탐색 및 조작 제스처와 같은 입력에 응답할 수 있습니다. [자세히 알아보기](../../design/interactable-object.md)
+[Interactable 개체](../../design/interactable-object.md) 는 기본 HoloLens 입력에 응답할 수 있는 개체입니다. 모든 개체에 쉽게 적용할 수 있는 prefab/스크립트로 제공 됩니다. 예를 들어 장면 interactable에서 커피 컵을 만들고 응시, 공중 탭, 탐색 및 조작 제스처와 같은 입력에 응답할 수 있습니다. [자세한 정보](../../design/interactable-object.md)
 
 ![nteractable 개체](images/640px-periodictable-interactableobject.jpg)
 
 ### <a name="object-collection"></a>개체 컬렉션
 
-[개체 컬렉션](../../design/object-collection.md) 은 다양 한 셰이프에서 여러 개체의 레이아웃을 설정 하는 데 도움이 되는 개체입니다. 평면, 원통, 구 및 산을 지원 합니다. Radius, 행 수 및 간격과 같은 추가 속성을 구성할 수 있습니다. [자세히 알아보기](../../design/object-collection.md)
+[개체 컬렉션](../../design/object-collection.md) 은 다양 한 셰이프에서 여러 개체의 레이아웃을 설정 하는 데 도움이 되는 개체입니다. 평면, 원통, 구 및 산을 지원 합니다. Radius, 행 수 및 간격과 같은 추가 속성을 구성할 수 있습니다. [자세한 정보](../../design/object-collection.md)
 
 ![개체 컬렉션](images/640px-periodictable-collections.jpg)
 

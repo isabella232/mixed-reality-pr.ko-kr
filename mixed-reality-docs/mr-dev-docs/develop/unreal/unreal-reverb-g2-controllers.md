@@ -5,13 +5,13 @@ author: hferrone
 ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, 반향, 반향 G2, HP 반향 G2, 혼합 현실, 개발, 동작 컨트롤러, 사용자 입력, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, holograms, 게임 개발
-ms.openlocfilehash: c9d3ea3a8dd52ed0712f9df5c1a789121a68fd35
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: Unreal, Unreal Engine 4, UE4, 반향, 반향 G2, HP 반향 G2, 혼합 현실, 개발, 동작 컨트롤러, 사용자 입력, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, holograms, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 6a56b11e6738dd6359508d0cdfc1560bddfaff2e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638723"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678932"
 ---
 # <a name="hp-reverb-g2-controllers-in-unreal"></a>진짜의 HP 반향 G2 컨트롤러 
 
@@ -52,7 +52,7 @@ HP 반향 G2 컨트롤러에는 "아웃 축" 바인딩을 사용 하는 축 매�
 
 [!INCLUDE[](includes/tabs-g2-controller-mapping-in-unreal.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [SteamVR 입력](https://docs.unrealengine.com/Platforms/VR/SteamVR/HowTo/SteamVRInput/index.html)
 * [Windows Mixed Reality에서 SteamVR 사용](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)
 * [Unreal Player 카메라](https://docs.unrealengine.com/Programming/Tutorials/PlayerCamera/3/index.html)

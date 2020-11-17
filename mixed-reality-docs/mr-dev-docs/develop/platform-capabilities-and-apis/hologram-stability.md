@@ -5,15 +5,15 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 07/08/2020
 ms.topic: article
-keywords: holograms, 안정성, hololens
+keywords: holograms, 안정성, hololens, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 프레임 율, 렌더링, reprojection, 색 분리
 appliesto:
 - HoloLens
-ms.openlocfilehash: 21a9f7cff655ff35d32e3ca701219d4a1e41a0e2
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 081a080c73a1c78eb762b94291027cf7ebcbed45
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683760"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679602"
 ---
 # <a name="hologram-stability"></a>홀로그램 안정성
 
@@ -146,7 +146,7 @@ renderingParameters.SetFocusPoint(
 
 모범 **사례** 안정화 평면을 설정 하는 일반적인 방법은 없으며 앱 별입니다. 기본적인 권장 사항은 시나리오에 가장 적합 한 작업을 실험 하 고 확인 하는 것입니다. 그러나이 평면의 모든 콘텐츠가 완벽 하 게 안정화 되기 때문에 최대한 많은 콘텐츠로 안정화 평면을 정렬 하려고 합니다.
 
-예를 들면 다음과 같습니다.
+예를 들어:
 * 평면 콘텐츠 (앱 읽기, 비디오 재생 앱)만 있는 경우 콘텐츠를 포함 하는 평면과 안정화 평면을 맞춥니다.
 * 세계에서 잠긴 세 개의 작은 분기가 있는 경우 현재 사용자의 보기에 있는 모든 구 중심으로 안정화 평면을 "잘라내기"로 만듭니다.
 * 장면에 상당히 다른 깊이 있는 콘텐츠가 있는 경우에는 더 많은 개체를 선호 합니다.

@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 눈에 응시, 헤드-응시, unity, 홀로그램, 혼합 현실
-ms.openlocfilehash: 8c1a6cb0847cd0e6e776c6d4e1f7c1efdc126279
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 눈에 응시, 헤드-응시, unity, 홀로그램, 혼합 현실, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 0c62de9cb1b7ea892831ea2cedbeb23be5ea7b37
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684705"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677512"
 ---
 # <a name="head-gaze-in-unity"></a>헤드-Unity에서의 응시
 
@@ -58,17 +58,17 @@ MRTK v 2의 [입력 관리자](https://microsoft.github.io/MixedRealityToolkit-U
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 설명한 Unity 개발 검사점 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 진행할 수 있습니다.
+앞에서 설명한 Unity 개발 검사점 경험을 수행하는 경우 MRTK 핵심 구성 요소를 탐색하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [제스처 및 모션 컨트롤러](gestures-and-motion-controllers-in-unity.md)
 
-또는 혼합 현실 플랫폼 기능 및 Api로 이동 합니다.
+또는 Mixed Reality 플랫폼 기능 및 API로 이동합니다.
 
 > [!div class="nextstepaction"]
 > [공유 환경](shared-experiences-in-unity.md)
 
-언제 든 지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks) 으로 돌아갈 수 있습니다.
+언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
 ## <a name="see-also"></a>참조
 * [카메라](camera-in-unity.md)

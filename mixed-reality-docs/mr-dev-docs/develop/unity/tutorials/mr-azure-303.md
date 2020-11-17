@@ -5,20 +5,20 @@ author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 언어 이해 인텔리전스 서비스, luis, hololens, 몰입 형, vr
-ms.openlocfilehash: 8477f326de55c11f1c4d17d808a815f01366be0d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 언어 이해 인텔리전스 서비스, luis, hololens, 몰입 형, vr, Windows 10, Visual Studio
+ms.openlocfilehash: 431858d369bc7007cc5eddbf0e75d9b74b7ba5d3
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91688057"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679502"
 ---
 # <a name="mr-and-azure-303-natural-language-understanding-luis"></a>MR 및 Azure 303: 자연어 이해 (LUIS)
 
 <br>
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_** .  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
 
 <br>
 
@@ -31,7 +31,7 @@ ms.locfileid: "91688057"
 이 과정을 완료 하면 다음과 같은 작업을 수행할 수 있는 혼합 현실 모던 헤드셋 응용 프로그램이 만들어집니다.
 
 1.  몰입 형 헤드셋에 연결 된 마이크를 사용 하 여 사용자 입력 음성을 캡처합니다. 
-2.  캡처된 받아쓰기를 *Azure Language Understanding Intelligent Service* ( *LUIS* )로 보냅니다. 
+2.  캡처된 받아쓰기를 *Azure Language Understanding Intelligent Service* (*LUIS*)로 보냅니다. 
 3.  LUIS은 전송 정보에서 의미를 추출 하 여 분석 하 고 사용자의 요청 의도를 확인 하려고 시도 합니다.
 
 개발에는 사용자가 음성 및/또는 응시를 사용 하 여 장면의 개체 크기와 색을 변경할 수 있는 앱을 만드는 작업이 포함 됩니다. 동작 컨트롤러의 사용은 다루지 않습니다.
@@ -53,7 +53,7 @@ ms.locfileid: "91688057"
 > [!NOTE]
 > 이 과정에서 주로 Windows Mixed Reality (VR) 헤드셋에 초점을 맞춘 반면,이 과정에서 학습 하는 내용을 Microsoft HoloLens에도 적용할 수 있습니다. 과정을 진행할 때 HoloLens를 지원 하기 위해 사용 해야 하는 모든 변경 내용에 대 한 메모를 볼 수 있습니다. HoloLens를 사용 하는 경우 음성 캡처 중에 몇 가지 echo를 확인할 수 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 > [!NOTE]
 > 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (2018 일 수 있음)을 나타냅니다. [도구 설치](../../install-the-tools.md) 문서에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.
@@ -69,7 +69,7 @@ ms.locfileid: "91688057"
 - 기본 제공 마이크가 있는 헤드폰 집합 (헤드셋에 기본 제공 mic 및 스피커가 없는 경우)
 - Azure 설정 및 LUIS 검색을 위한 인터넷 액세스
 
-## <a name="before-you-start"></a>시작하기 전에
+## <a name="before-you-start"></a>시작하기 전 확인 사항
 
 1.  이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.) 
 2.  컴퓨터에서 받아쓰기를 사용 하도록 허용 하려면 **Windows 설정 > 개인 정보 > 음성, 필기 & 입력** 으로 이동 하 고 단추를 눌러 **음성 서비스를 켜고 제안을 입력** 합니다.
@@ -136,7 +136,7 @@ Azure에서 *Language Understanding* 서비스를 사용 하려면 응용 프로
 이 섹션에서는 LUIS 포털에서 LUIS 앱을 만드는 방법에 대해 알아봅니다. 
 
 > [!IMPORTANT]
-> 이 장 내에서 *엔터티* , *의도* 및 *길이 발언* 를 설정 하는 것은 LUIS 서비스를 빌드하는 첫 번째 단계 일 뿐입니다. 더 정확 하 게 만들려면 서비스를 여러 번 다시 학습 해야 합니다. 서비스에 대 한 재 학습은이 과정의 [마지막 장에서](#chapter-12--improving-your-luis-service) 설명 하므로 완료 되었는지 확인 합니다.
+> 이 장 내에서 *엔터티*, *의도* 및 *길이 발언* 를 설정 하는 것은 LUIS 서비스를 빌드하는 첫 번째 단계 일 뿐입니다. 더 정확 하 게 만들려면 서비스를 여러 번 다시 학습 해야 합니다. 서비스에 대 한 재 학습은이 과정의 [마지막 장에서](#chapter-12--improving-your-luis-service) 설명 하므로 완료 되었는지 확인 합니다.
 
 1.  *Language Understanding 포털* 에 도달 하면 Azure Portal와 동일한 자격 증명을 사용 하 여 로그인 해야 할 수 있습니다. 
 
@@ -242,7 +242,7 @@ change the color of this object to blue
 
     ![Utterance 엔터티 식별](images/AzureLabs-Lab3-17.png)
  
-17. 다음 줄에 레이블을 지정 합니다. 여기서 *cube* 는 *대상* 이어야 하 고 *black* 은 *색* 이어야 합니다. 또한 제공 되는 *' this '* , *' it '* 및 *' this object '* 단어를 사용 하 여 특정 대상 유형을 사용할 수도 있습니다. 
+17. 다음 줄에 레이블을 지정 합니다. 여기서 *cube* 는 *대상* 이어야 하 고 *black* 은 *색* 이어야 합니다. 또한 제공 되는 *' this '*, *' it '* 및 *' this object '* 단어를 사용 하 여 특정 대상 유형을 사용할 수도 있습니다. 
 
 18. 모든 길이 발언에 레이블이 붙은 엔터티가 있을 때까지 위의 프로세스를 반복 합니다. 도움이 필요 하면 아래 이미지를 참조 하세요.
 
@@ -262,7 +262,7 @@ change the color of this object to blue
 
     ![LUIS 학습](images/AzureLabs-Lab3-19.png)
  
-21. 실습으로, 엔터티 *대상* , *업사이징* 및 *다운 크기* 를 사용 하 여 **changeobjectsize** 라는 새로운 의도를 만듭니다.
+21. 실습으로, 엔터티 *대상*, *업사이징* 및 *다운 크기* 를 사용 하 여 **changeobjectsize** 라는 새로운 의도를 만듭니다.
 22. 이전 의도와 동일한 프로세스를 수행 하 여 *크기* 변경에 대 한 길이 발언 8 (8)을 삽입 합니다.
 
     ```
@@ -304,7 +304,7 @@ change the color of this object to blue
 
     1.  Azure Portal에서 서비스 인스턴스에 대해 설정한 지역을 선택 합니다.
     2.  아래 **Starter_Key** 요소를 확인 하 고 무시 합니다.
-    3.  **키 추가** 를 클릭 하 고 서비스 인스턴스를 만들 때 Azure Portal에서 가져온 *키* 를 삽입 합니다. Azure와 LUIS 포털이 동일한 사용자에 게 로그인 하는 경우 *테 넌 트 이름* , *구독 이름* 및 사용 하려는 *키* 에 대 한 드롭다운 메뉴가 제공 됩니다 (이전에는 azure portal에서 제공한 것과 동일한 이름을 사용).
+    3.  **키 추가** 를 클릭 하 고 서비스 인스턴스를 만들 때 Azure Portal에서 가져온 *키* 를 삽입 합니다. Azure와 LUIS 포털이 동일한 사용자에 게 로그인 하는 경우 *테 넌 트 이름*, *구독 이름* 및 사용 하려는 *키* 에 대 한 드롭다운 메뉴가 제공 됩니다 (이전에는 azure portal에서 제공한 것과 동일한 이름을 사용).
 
     > [!IMPORTANT] 
     > *끝점* 아래에서 삽입 한 키에 해당 하는 끝점의 복사본을 만든 후 코드에서 곧 사용할 수 있습니다.
@@ -349,7 +349,7 @@ change the color of this object to blue
 
             ![새 스크립트 폴더 만들기](images/AzureLabs-Lab3-29.png)
 
-        3. 새로 만든 **장면** 폴더를 연 다음 *파일 이름* : 텍스트 필드에 **MR_LuisScene** 를 입력 하 고 **저장** 을 누릅니다.
+        3. 새로 만든 **장면** 폴더를 연 다음 *파일 이름*: 텍스트 필드에 **MR_LuisScene** 를 입력 하 고 **저장** 을 누릅니다.
 
             ![새 장면에 이름을 지정 합니다.](images/AzureLabs-Lab3-30.png)
 
@@ -376,13 +376,13 @@ change the color of this object to blue
 
             ![게시 설정을 업데이트 하는 중입니다.](images/AzureLabs-Lab3-33.png)
 
-    3. 패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음), **지원 되는 틱 가상 현실** , **Windows Mixed reality SDK** 가 추가 되어 있는지 확인 합니다.
+    3. 패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음), **지원 되는 틱 가상 현실**, **Windows Mixed reality SDK** 가 추가 되어 있는지 확인 합니다.
 
         ![X R 설정을 업데이트 합니다.](images/AzureLabs-Lab3-34.png)
 
 8.  *빌드 설정* 으로 돌아가기 _Unity c #_ 프로젝트는 더 이상 회색으로 표시 되지 않습니다. 이 옆의 확인란을 선택 합니다. 
 9.  빌드 설정 창을 닫습니다.
-10. 장면 및 프로젝트를 저장 합니다 ( **파일 > 장면/파일 저장 > 프로젝트 저장** ).
+10. 장면 및 프로젝트를 저장 합니다 (**파일 > 장면/파일 저장 > 프로젝트 저장**).
 
 ## <a name="chapter-4--create-the-scene"></a>4 장-장면 만들기
 
@@ -472,7 +472,7 @@ change the color of this object to blue
  
 ## <a name="chapter-5--create-the-microphonemanager-class"></a>5 장-MicrophoneManager 클래스 만들기
 
-만들려는 첫 번째 스크립트는 *MicrophoneManager* 클래스입니다. 이를 수행 하 고 나면 *Luismanager* , *동작* 클래스 및 마지막으로 *응시* 클래스 (각 챕터에 도달 하는 경우에도 적용 됨)를 만듭니다.
+만들려는 첫 번째 스크립트는 *MicrophoneManager* 클래스입니다. 이를 수행 하 고 나면 *Luismanager*, *동작* 클래스 및 마지막으로 *응시* 클래스 (각 챕터에 도달 하는 경우에도 적용 됨)를 만듭니다.
 
 *MicrophoneManager* 클래스는 다음을 담당 합니다.
 
@@ -482,11 +482,11 @@ change the color of this object to blue
 
 이 클래스를 만들려면: 
 
-1.  *프로젝트 패널* 을 마우스 오른쪽 단추로 클릭 하 **> 폴더를 만듭니다** . 폴더 **스크립트** 를 호출 합니다. 
+1.  *프로젝트 패널* 을 마우스 오른쪽 단추로 클릭 하 **> 폴더를 만듭니다**. 폴더 **스크립트** 를 호출 합니다. 
 
     ![스크립트 폴더를 만듭니다.](images/AzureLabs-Lab3-40.png)
  
-2.  **Scripts** 폴더를 만든 다음 두 번 클릭 하 여 엽니다. 그런 다음 해당 폴더 내에서 마우스 오른쪽 단추를 클릭 하 **> c # 스크립트를 만듭니다** . 스크립트 이름을 *MicrophoneManager* 로 합니다. 
+2.  **Scripts** 폴더를 만든 다음 두 번 클릭 하 여 엽니다. 그런 다음 해당 폴더 내에서 마우스 오른쪽 단추를 클릭 하 **> c # 스크립트를 만듭니다**. 스크립트 이름을 *MicrophoneManager* 로 합니다. 
 
 3.  *MicrophoneManager* 를 두 번 클릭 하 여 *Visual Studio* 에서 엽니다.
 4.  파일의 맨 위에 다음 네임 스페이스를 추가 합니다.
@@ -975,17 +975,17 @@ Azure LUIS 서비스에 대 한 호출을 수행 하는 *Luismanager* 클래스�
 
 3.  이러한 매개 변수를 올바르게 설정 하려면 다음 지침을 따르세요.
 
-    1. *MicrophoneManager* :
+    1. *MicrophoneManager*:
 
         - *계층 패널* 에서 **받아쓰기 텍스트** 개체를 **받아쓰기 텍스트** 매개 변수 값 상자로 끌어옵니다.
 
-    2. *계층 패널* 에서 *동작* :
+    2. *계층 패널* 에서 *동작*:
 
         - **구** 개체를 *구* 참조 대상 상자로 끌어 옵니다.
         - **원통을** *원통* 참조 대상 상자로 끌어 옵니다.
         - **큐브를** *큐브* 참조 대상 상자로 끌어 옵니다.
 
-    3. *응시* :
+    3. *응시*:
 
         - *응시 최대 거리* 를 **300** (아직 없는 경우)로 설정 합니다. 
 
@@ -1047,11 +1047,11 @@ Unity 편집기에서 응용 프로그램이 작동 하는지 확인 한 후에�
 로컬 컴퓨터에 배포 하려면 다음을 수행 합니다.
 
 1.  *Visual Studio* 에서 [이전 챕터](#chapter-10--test-in-the-unity-editor)에서 만든 솔루션 파일을 엽니다.
-2.  **솔루션 플랫폼** 에서 **X86** , **로컬 컴퓨터** 를 선택 합니다.
+2.  **솔루션 플랫폼** 에서 **X86**, **로컬 컴퓨터** 를 선택 합니다.
 3.  **솔루션 구성** 에서 **디버그** 를 선택 합니다.
 
     > Microsoft HoloLens의 경우 컴퓨터에 테더 링 된 하지 않도록 *원격 컴퓨터* 를 설정 하는 것이 더 쉬울 수 있습니다. 그러나 다음을 수행 해야 합니다.
-    > - HoloLens의 **IP 주소** 를 알고 있습니다. *설정 > 네트워크 & 인터넷 > Wi-fi > 고급 옵션* 에서 찾을 수 있습니다. IPv4는 사용 해야 하는 주소입니다. 
+    > - HoloLens의 **IP 주소** 를 알고 있습니다 .이 주소는 *설정 > 네트워크 & 인터넷 > Wi-Fi > 고급 옵션* 에서 찾을 수 있습니다. IPv4는 사용 해야 하는 주소입니다. 
     > - **개발자 모드가** **설정** 되어 있는지 확인 합니다. *개발자를 위한 업데이트 & 보안 > > 설정* 에서 찾을 수 있습니다.
 
     ![앱 배포](images/AzureLabs-Lab3-46.png)

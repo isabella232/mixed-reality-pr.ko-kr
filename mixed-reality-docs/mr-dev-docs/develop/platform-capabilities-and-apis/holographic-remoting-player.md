@@ -1,24 +1,24 @@
 ---
 title: 홀로그램 원격 플레이어
-description: Holographic Remoting Player는 Holographic 원격 기능을 지 원하는 PC 앱 및 게임에 연결 하는 동반 앱입니다. Holographic 원격 스트림은 Wi-fi 연결을 사용 하 여 PC에서 실시간으로 Microsoft HoloLens로 콘텐츠를 Holographic 합니다.
+description: Holographic Remoting Player는 Holographic 원격 기능을 지 원하는 PC 앱 및 게임에 연결 하는 동반 앱입니다. Holographic 원격 스트림은 Wi-Fi 연결을 사용 하 여 PC에서 Microsoft HoloLens로 콘텐츠를 실시간으로 Holographic 합니다.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: HoloLens, 원격 서비스, Holographic 원격 작업
-ms.openlocfilehash: f678931098f6518885a83ea7c06d4e9a3074465c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 진단, 성능
+ms.openlocfilehash: c65b10079ffbc40602ebbd25b1e493c19b2a6078
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683657"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677932"
 ---
 # <a name="holographic-remoting-player"></a>홀로그램 원격 플레이어
 
 >[!IMPORTANT]
 >HoloLens 2에 대 한 Holographic 원격은 주요 버전 변경입니다. [Hololens 용 원격 응용 프로그램 **(첫 번째 gen)**](add-holographic-remoting.md) 은 NuGet 패키지 **버전 1.x** 를 사용 해야 하며, [hololens 용 원격 응용 프로그램 **2** 는](holographic-remoting-create-host.md) 2.x를 사용 해야 합니다. x **. x.** 즉, HoloLens 2 용으로 작성 된 원격 응용 프로그램은 HoloLens (첫 번째 gen)와 호환 되지 않으며 그 반대의 경우도 마찬가지입니다.
 
-[Holographic Remoting Player](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) 는 Holographic 원격 기능을 지 원하는 PC 앱 및 게임에 연결 하는 동반 앱입니다. Holographic 원격 스트림은 Wi-fi 연결을 사용 하 여 PC에서 실시간으로 Microsoft HoloLens로 콘텐츠를 Holographic 합니다.
+[Holographic Remoting Player](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) 는 Holographic 원격 기능을 지 원하는 PC 앱 및 게임에 연결 하는 동반 앱입니다. Holographic 원격 스트림은 Wi-Fi 연결을 사용 하 여 PC에서 Microsoft HoloLens로 콘텐츠를 실시간으로 Holographic 합니다.
 
 Holographic 원격 플레이어는 Holographic 원격을 지원 하도록 특별히 설계 된 PC 앱 에서만 사용할 수 있습니다.
 
@@ -35,21 +35,21 @@ Holographic 원격 플레이어는 HoloLens (첫 번째 gen)와 HoloLens 2 모�
 
 주 화면이 표시 될 때마다 앱이 연결 되어 있지 않은 것을 알 수 있습니다.
 
-Holographic 원격 연결은 **암호화 되지 않습니다** . 신뢰 하는 보안 Wi-fi 연결을 통해 항상 Holographic Remoting을 사용 해야 합니다.
+Holographic 원격 연결은 **암호화 되지 않습니다**. 신뢰 하는 보안 Wi-Fi 연결을 통해 항상 Holographic Remoting을 사용 해야 합니다.
 
 ## <a name="quality-and-performance"></a>품질 및 성능
 
 사용자 환경의 품질 및 성능은 다음과 같은 세 가지 요인에 따라 달라 집니다.
 * **실행 중인 holographic 환경** -고해상도 또는 매우 상세 콘텐츠를 렌더링 하는 앱은 더 빠른 PC 또는 더 빠른 무선 연결을 필요로 할 수 있습니다.
 * **Pc의 하드웨어** -pc는 초당 60 프레임에서 holographic 환경을 실행 하 고 인코딩할 수 있어야 합니다. 그래픽 카드의 경우 일반적으로 GeForce GTX 970 또는 AMD Radeon R 9 290 이상을 권장 합니다. 또한 특정 환경에는 더 높거나 낮은 끝 카드가 필요할 수 있습니다.
-* **Wi-fi 연결** -Holographic 환경이 wi-fi를 통해 스트리밍됩니다. 낮은 혼잡이 있는 고속 네트워크를 사용 하 여 품질을 최대화 합니다. Wi-fi가 아닌 이더넷 케이블을 통해 연결 된 PC를 사용 하면 품질이 향상 될 수도 있습니다.
+* **Wi-Fi 연결** -Holographic 환경이 wi-fi를 통해 스트리밍됩니다. 낮은 혼잡이 있는 고속 네트워크를 사용 하 여 품질을 최대화 합니다. Wi-fi가 아닌 이더넷 케이블을 통해 연결 된 PC를 사용 하면 품질이 향상 될 수도 있습니다.
 
 ## <a name="diagnostics"></a>진단
 
 연결의 품질을 측정 하려면 Holographic 원격 플레이어의 주 화면에 있는 동안 **"진단 사용"** 이라고 표시 합니다. 진단을 사용 하도록 설정 하면 **HoloLens (첫 번째 gen)** 에서 앱이 다음과 같이 표시 됩니다.
 
 * **FPS** -원격 플레이어에서 초당 수신 및 렌더링 하는 렌더링 된 프레임의 평균 수입니다. 이상적인는 60 FPS입니다.
-* **대기 시간** -프레임이 PC에서 HoloLens로 이동 하는 데 걸리는 평균 시간입니다. 더 낮은 방법이 있습니다. 이는 주로 Wi-fi 네트워크에 따라 다릅니다.
+* **대기 시간** -프레임이 PC에서 HoloLens로 이동 하는 데 걸리는 평균 시간입니다. 더 낮은 방법이 있습니다. 이는 주로 Wi-Fi 네트워크에 따라 다릅니다.
 
 **HoloLens 2** 에서 앱은 다음과 같이 표시 됩니다.
 
@@ -68,8 +68,6 @@ Holographic 원격 연결은 **암호화 되지 않습니다** . 신뢰 하는 �
 * **비디오 프레임 델타** -마지막 1 초 동안 받은 비디오 프레임 사이의 최소/최대 델타입니다. 일반적으로이 수는 네트워크 지터로 인해 발생 하는 문제가 발생 하는 경우 건너뛴/재사용 된 프레임과 관련이 있습니다.
 * **Latency** -마지막 1 초 동안의 평균 소요 시간 (밀리초)입니다. 이 컨텍스트를 사용 하는 경우 HoloLens 디스플레이에 해당 포즈/원격 분석 데이터에 대 한 비디오 프레임을 표시할 때까지 HoloLens에서 원격/원격 쪽으로 포즈/센서 데이터를 전송 하는 데 걸리는 시간을 의미 합니다.
 * **삭제 된 비디오 프레임** -마지막 1 초 동안 그리고 연결이 설정 된 후 삭제 된 비디오 프레임의 수입니다. 삭제 된 비디오 프레임의 주요 원인은 비디오 프레임이 순서 대로 도착 하지 않는 경우이 고, 그 이유는 이미 최신 항목 이므로 삭제 해야 하는 경우입니다. 이는 삭제 된 *프레임과* 유사 하지만 원인이 원격 스택에서 더 낮은 수준에 있습니다. 삭제 된 비디오 프레임은 매우 잘못 된 네트워크 상태 에서만 예상 됩니다.
-
-
 
 주 화면에서 **"진단 사용 안 함"** 을 사용 하 여 진단을 해제할 수 있습니다.
 

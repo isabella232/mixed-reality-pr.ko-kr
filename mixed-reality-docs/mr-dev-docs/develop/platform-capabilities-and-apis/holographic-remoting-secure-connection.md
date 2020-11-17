@@ -5,13 +5,13 @@ author: markkeinz
 ms.author: makei
 ms.date: 10/29/2020
 ms.topic: article
-keywords: HoloLens, 원격 서비스, Holographic 원격 작업
-ms.openlocfilehash: fcacac76e65fa884433afca9f568c5c0211dd570
-ms.sourcegitcommit: 979967d6841d8fa64cf1d6cf3ae532b736ed3bd1
+keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 보안, 인증, 서버 간
+ms.openlocfilehash: 4004c7534092c73fe478130b9d957461bb34bcfa
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102302"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679592"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Holographic Remoting에 대 한 연결 보안 사용
 

@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오
-ms.openlocfilehash: 25386819826efc6f25182e0780ff148206248a06
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head 관련 전송 함수, 반향, Microsoft Spatializer, prefabs, volume curve
+ms.openlocfilehash: eb550c3127e13926d73428b337abfd7cf9872eb7
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91689816"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678192"
 ---
 # <a name="spatializing-button-interaction-sounds"></a>공간화 단추 상호 작용 소리
 
@@ -70,6 +70,15 @@ Prefab 단추는 흰색 아이콘이 아니라 파란색 아이콘으로 표시 
 이러한 변경 후에는 **PressableButtonHoloLens2** **오디오 원본** 속성의 **3d 사운드 설정** 섹션이 다음과 같이 표시 됩니다.
 
 ![3D 소리 설정 단추](images/spatial-audio/button-3d-sound-settings.png)
+
+## <a name="testing-the-spatialize-audio"></a>Spatialize 오디오 테스트
+
+새 spatialized button 상호 작용 소리를 자유롭게 테스트 하세요.
+
+* Unity 편집기에서 게임 모드를 입력 하 고, 장면의 루프 오디오 샘플을 사용 하는 것이 가장 좋습니다.
+* 오디오 소스가 있는 개체를 왼쪽에서 오른쪽으로 이동 하 고 공간 오디오를 사용 하도록 설정 하거나 제외 하 고 비교 합니다. 다음을 기준으로 테스트를 위해 오디오 원본 설정을 변경할 수 있습니다.
+    * 0-1 (2D 비 spatialized 및 3D spatialized 소리) 간에 공간 Blend 속성 이동
+    * Spatialize 속성 확인 및 선택 취소
 
 ## <a name="next-steps"></a>다음 단계
 

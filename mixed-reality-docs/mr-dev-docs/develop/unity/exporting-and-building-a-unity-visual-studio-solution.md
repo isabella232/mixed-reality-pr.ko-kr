@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: unity, visual studio, 내보내기, 빌드, 배포
-ms.openlocfilehash: cfaf812020020e614ef59dbfc15de7bd0d9bc7e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: unity, visual studio, 내보내기, 빌드, 배포, HoloLens, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, UWP, 배포
+ms.openlocfilehash: 29415fa7d561cab1aec5f0c2c9344fa24b0e8293
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685896"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677562"
 ---
 # <a name="exporting-and-building-a-unity-visual-studio-solution"></a>Unity Visual Studio 솔루션 내보내기 및 빌드
 
@@ -26,9 +26,9 @@ ms.locfileid: "91685896"
 2. 열려 있는 장면 **추가** 를 클릭 하 여 빌드에 장면을 추가 합니다.
 3. **빌드 설정** 대화 상자에서 다음 옵션을 선택 하 여 HoloLens를 내보냅니다.
    * **Platform:** *유니버설 Windows 플랫폼* 하 고 선택 항목을 적용 하려면 **스위치 플랫폼** 을 선택 해야 합니다.
-   * **SDK:** *Universal 10* .
+   * **SDK:** *Universal 10*.
    * **UWP 빌드 형식:** *D3D* 입니다.
-4. **선택 사항** : **Unity c # 프로젝트:** Checked.
+4. **선택 사항**: **Unity c # 프로젝트:** Checked.
 
 >[!NOTE]
 >이 확인란을 선택 하면 다음 작업을 수행할 수 있습니다.

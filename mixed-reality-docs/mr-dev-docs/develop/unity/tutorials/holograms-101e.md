@@ -1,22 +1,22 @@
 ---
-title: MR 기본 사항 101E-에뮬레이터를 사용 하 여 프로젝트 완료
+title: MR 기본 사항 101E - 에뮬레이터를 사용하여 프로젝트 수행
 description: Unity, Visual Studio 및 HoloLens 에뮬레이터를 사용 하 여이 코딩 연습을 수행 하 여 holographic 응용 프로그램의 기본 사항을 알아보세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: 혼합 현실, Windows Mixed Reality, HoloLens, 홀로그램, 아카데미, 자습서, 에뮬레이터
-ms.openlocfilehash: 9aa3da5367343f43eae167f8ffedc30b78076260
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 혼합 현실, Windows Mixed Reality, 홀로그램, 아카데미, 자습서, 에뮬레이터, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10, 응시, 제스처, 음성 입력, 공간 소리, 공간 매핑
+ms.openlocfilehash: 3499011b8c91168bf27522e5f6f287b14295283e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686489"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678312"
 ---
 # <a name="mr-basics-101e-complete-project-with-emulator"></a>MR 기본 101E: 에뮬레이터를 사용하여 프로젝트 수행
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_** .  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](mrlearning-base.md)가 게시되었습니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](mrlearning-base.md)가 게시되었습니다.
 
 <br>
 
@@ -34,15 +34,15 @@ ms.locfileid: "91686489"
 </tr>
 </table>
 
-## <a name="before-you-start"></a>시작하기 전에
+## <a name="before-you-start"></a>시작하기 전 확인 사항
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>사전 요구 사항
 
 * 올바른 [도구로](../../install-the-tools.md)구성 된 WINDOWS 10 PC입니다.
 
 ### <a name="project-files"></a>프로젝트 파일
 
-* 프로젝트에 필요한 [파일](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-101.zip) 을 다운로드 합니다.Unity 2017.2 이상이 필요 합니다.
+* 프로젝트에 필요한 [파일](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-101.zip) 을 다운로드 합니다. Unity 2017.2 이상이 필요 합니다.
   * Unity 5.6 지원이 계속 필요한 경우 [이 릴리스](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-101.zip)를 사용 하세요.
   * Unity 5.5 지원이 계속 필요한 경우 [이 릴리스](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-101.zip)를 사용 하세요.
   * Unity 5.4 지원이 계속 필요한 경우 [이 릴리스](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-101.zip)를 사용 하세요.
@@ -63,7 +63,7 @@ ms.locfileid: "91686489"
 * 홀로그램을 만듭니다.
 * 만든 홀로그램을 확인 하세요.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * Unity를 시작합니다.
 * **열기** 를 선택합니다.
@@ -103,7 +103,7 @@ ms.locfileid: "91686489"
 * **SDK** 를 **Universal 10** 으로 설정 하 고 **빌드 형식을** **D3D** 로 설정 합니다.
 * **Unity c # 프로젝트** 를 확인 합니다.
 * 열려 있는 장면 **추가** 를 클릭 하 여 장면을 추가 합니다.
-* **플레이어 설정** ...을 클릭 합니다.
+* **플레이어 설정**...을 클릭 합니다.
 * 검사기 패널에서 **Windows 스토어 로고** 를 선택 합니다. 그런 다음 **게시 설정** 을 선택 합니다.
 * **기능** 섹션에서 **마이크** 및 **SpatialPerception** 기능을 선택 합니다.
 * 빌드 설정 창으로 돌아가서 **빌드** 를 클릭 합니다.
@@ -128,7 +128,7 @@ ms.locfileid: "91686489"
 
 * 전 세계 잠긴 커서를 사용 하 여 응시를 시각화 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * Unity 프로젝트로 돌아가서 빌드 설정 창이 열려 있으면 닫습니다.
 * **프로젝트 패널** 에서 **Holograms** 폴더를 선택 합니다.
@@ -204,7 +204,7 @@ public class WorldCursor : MonoBehaviour
 
 * 선택 제스처를 사용 하 여 holograms를 제어 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 먼저 선택 제스처를 검색할 수 있는 것 보다 스크립트를 만듭니다.
 
@@ -316,7 +316,7 @@ public class SphereCommands : MonoBehaviour
 * 백그라운드에서 항상 수신 대기 하는 음성 명령을 추가 합니다.
 * 음성 명령에 반응 하는 홀로그램을 만듭니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * **Scripts** 폴더에서 **SpeechManager** 라는 스크립트를 만듭니다.
 * **SpeechManager** 스크립트를 계층의 **OrigamiCollection** 개체로 끌어 옵니다.
@@ -426,7 +426,7 @@ public class SphereCommands : MonoBehaviour
 
 * 앱을 내보내고, 빌드하고, 배포 하 여 HoloLens 에뮬레이터에 배포 합니다.
 * 에뮬레이터가 PC의 마이크를 지원 하 고 음성에 응답 합니다. 커서가 구 중 하나에 있도록 보기를 조정 하 고 "삭제 구" 라고 표시 합니다.
-* 초기 위치로 다시 전환 하기 위해 " **세계 재설정** " 이라고 말할 수 있습니다.
+* 초기 위치로 다시 전환 하기 위해 "**세계 재설정**" 이라고 말할 수 있습니다.
 
 ## <a name="chapter-5---spatial-sound"></a>5 장-공간 소리
 
@@ -438,7 +438,7 @@ public class SphereCommands : MonoBehaviour
 
 * 전 세계에서 holograms를 들어봅니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * Unity의 상단 메뉴에서 select **> 프로젝트 설정 > 오디오를 편집** 합니다.
 * **Spatializer 플러그 인** 설정을 찾아 **MS hrtf Spatializer** 를 선택 합니다.
@@ -548,14 +548,14 @@ public class SphereSounds : MonoBehaviour
 * 실제 세계를 가상 세계에 가져오세요.
 * 가장 중요 한 위치에 holograms을 두십시오.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * 프로젝트 패널에서 **Holograms** 폴더를 클릭 합니다.
 * **공간 매핑** 자산을 **계층** 의 루트로 끌어 옵니다.
 * 계층에서 **공간 매핑** 개체를 클릭 합니다.
 * **검사기 패널** 에서 다음 속성을 변경 합니다.
   * **시각적 개체 메시 그리기** 상자를 선택 합니다.
-  * **그리기 자료** 를 찾고 오른쪽에 있는 원을 클릭 합니다. 위쪽의 검색 필드에 " **골격형** "을 입력 합니다. 결과를 클릭 한 다음 창을 닫습니다.
+  * **그리기 자료** 를 찾고 오른쪽에 있는 원을 클릭 합니다. 위쪽의 검색 필드에 "**골격형**"을 입력 합니다. 결과를 클릭 한 다음 창을 닫습니다.
 * 앱을 내보내고, 빌드하고, 배포 하 여 HoloLens 에뮬레이터에 배포 합니다.
 * 앱이 실행 되 면 이전에 스캔 한 실제 실내의 메쉬가 와이어 프레임으로 렌더링 됩니다.
 * 롤링 구가 단계를 어떻게 진행 하는지 확인 합니다.
@@ -624,7 +624,7 @@ public class TapToPlaceParent : MonoBehaviour
 ```
 
 * 앱을 내보내고 빌드하고 배포 합니다.
-* 이제 선택 제스처 ( **a** 또는 스페이스바)를 사용 하 고, 새 위치로 이동 하 고, 선택 제스처를 다시 사용 하 여 특정 위치에 게임을 gazing 수 있습니다.
+* 이제 선택 제스처 (**a** 또는 스페이스바)를 사용 하 고, 새 위치로 이동 하 고, 선택 제스처를 다시 사용 하 여 특정 위치에 게임을 gazing 수 있습니다.
 
 ## <a name="the-end"></a>끝
 

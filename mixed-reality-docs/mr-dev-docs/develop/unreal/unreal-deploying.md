@@ -5,15 +5,15 @@ author: sw5813
 ms.author: suwu
 ms.date: 7/10/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, 장치에 배포, PC, 설명서
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, 장치에 배포, PC, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: abd5e5c28ec5e66c4f73df8edf5e0ac0212d170a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 9d32dff121899d40175af813fac4f7be1acc66c3
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684792"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679122"
 ---
 # <a name="deploy-to-device-in-unreal"></a>Unreal의 디바이스에 배포
 
@@ -59,4 +59,4 @@ ms.locfileid: "91684792"
 > [!div class="nextstepaction"]
 > [고급 서비스](unreal-development-overview.md#5-adding-services)
 
-언제 든 지 [실제 개발 검사점](unreal-development-overview.md#4-deploying-to-a-device) 으로 돌아갈 수 있습니다.
+언제든지 [Unreal 개발 검사점](unreal-development-overview.md#4-deploying-to-a-device)으로 돌아갈 수 있습니다.

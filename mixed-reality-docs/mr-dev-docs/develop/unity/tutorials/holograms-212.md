@@ -1,22 +1,22 @@
 ---
-title: MR 입력 212-음성
+title: MR 입력 212 - 음성
 description: Unity, Visual Studio 및 HoloLens를 사용 하 여이 코딩 연습을 수행 하 여 음성 개념에 대 한 세부 정보를 알아보세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit, 아카데미, 자습서, 음성
-ms.openlocfilehash: ed37ef6e0c26c3d2a0cd2d51e18d01a258b2fc78
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 음성, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
+ms.openlocfilehash: b9d9002180da7a59c62b77b83872e77499da4c09
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686417"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677242"
 ---
 # <a name="mr-input-212-voice"></a>MR 입력 212: 음성
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_** .  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](../../../mr-learning-base-01.md)가 게시되었습니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](../../../mr-learning-base-01.md)가 게시되었습니다.
 
 [음성 입력](../../../design/voice-input.md) 은 holograms와 상호 작용 하는 또 다른 방법을 제공 합니다. 음성 명령은 매우 자연스럽 고 쉬운 방법으로 작동 합니다. 음성 명령은 다음과 같이 설계 합니다.
 
@@ -51,9 +51,9 @@ ms.locfileid: "91686417"
 </tr>
 </table>
 
-## <a name="before-you-start"></a>시작하기 전에
+## <a name="before-you-start"></a>시작하기 전 확인 사항
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>사전 요구 사항
 
 * 올바른 [도구로](../../../develop/install-the-tools.md)구성 된 WINDOWS 10 PC입니다.
 * 몇 가지 기본적인 c # 프로그래밍 기능.
@@ -72,11 +72,11 @@ ms.locfileid: "91686417"
 
 ### <a name="errata-and-notes"></a>정오표 및 참고 사항
 
-* 코드에서 중단점을 적중 하려면 Visual Studio의 도구->옵션->디버깅에서 "내 코드만 사용"을 사용 하지 않도록 설정 ( *선택 취소* ) 해야 합니다.
+* 코드에서 중단점을 적중 하려면 Visual Studio의 도구->옵션->디버깅에서 "내 코드만 사용"을 사용 하지 않도록 설정 (*선택 취소*) 해야 합니다.
 
 ## <a name="unity-setup"></a>Unity 설치
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 1. Unity를 시작합니다.
 2. **열기** 를 선택합니다.
@@ -152,7 +152,7 @@ HoloLens에 배포 하는 경우:
     6. 제거
 * 비슷한 소리를 사용 합니다. Rhyme 음성 명령을 사용 하지 않도록 하십시오. *"저장소 표시"* 및 *"자세히 표시"* 를 지 원하는 쇼핑 응용 프로그램이 있는 경우 다른 명령 중 하나를 사용 하 고 있는 동안에는 명령 중 하나를 사용 하지 않도록 설정 하는 것이 좋습니다. 예를 들어 *"저장소 표시"* 단추를 사용 하 여 저장소를 연 후 *"자세히 표시"* 명령을 사용 하 여 검색을 할 수 있도록 저장소가 표시 될 때 해당 명령을 사용 하지 않도록 설정할 수 있습니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * Unity의 **계층** 패널에서 검색 도구를 사용 하 여 **holoComm_screen_mesh** 개체를 찾습니다.
 * **HoloComm_screen_mesh** 개체를 두 번 클릭 하 여 **화면** 에 표시 합니다. 음성 명령에 응답 하는 astronaut의 조사식입니다.
@@ -192,7 +192,7 @@ HoloLens에 배포 하는 경우:
 >2. "유니버설 Windows 플랫폼" 탭을 클릭 합니다.
 >3. "게시 설정 > 기능" 섹션에서 **마이크** 기능을 확인 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * Unity의 **계층 구조** 패널에서 **holoComm_screen_mesh** 개체가 선택 되어 있는지 확인 합니다.
 * **검사기** 패널에서 **Astronaut Watch (스크립트)** 구성 요소를 찾습니다.
@@ -248,7 +248,7 @@ MessageUIRenderer.gameObject.SetActive(false);
 >2. "유니버설 Windows 플랫폼" 탭을 클릭 합니다.
 >3. "게시 설정 > 기능" 섹션에서 **마이크** 기능을 확인 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 받아쓰기 인식기를 사용 하도록 **MicrophoneManager.cs** 를 편집 하겠습니다. 다음을 추가 합니다.
 
@@ -475,7 +475,7 @@ namespace Academy
 >2. "유니버설 Windows 플랫폼" 탭을 클릭 합니다.
 >3. "게시 설정 > 기능" 섹션에서 **마이크** 기능을 확인 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 1. **계층** 패널에서 **Jetpack_Center** 을 검색 하 고 선택 합니다.
 2. **검사기** 패널에서 **Tagalong Action** 스크립트를 찾습니다.

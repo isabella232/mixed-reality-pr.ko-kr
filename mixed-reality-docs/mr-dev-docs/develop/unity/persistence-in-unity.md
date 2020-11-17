@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: HoloLens, 지 속성, Unity
-ms.openlocfilehash: bb1a9b0544f9325a60c86c7424b7b451b6b4335b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens, 지 속성, Unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: cff7f05a5a5695ae8e379ed681c3b7320622968c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690080"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678532"
 ---
 # <a name="persistence-in-unity"></a>Unity의 지속성
 
@@ -109,17 +109,17 @@ Azure 공간 앵커를 사용 하 여 실행 하면 <a href="https://docs.micros
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 설명한 Unity 개발 검사점 경험을 팔로 사용할 경우 혼합 현실 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 진행할 수 있습니다.
+앞서 설명한 Unity 개발 검사점 경험을 팔로 사용할 경우 혼합 현실 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [공간 매핑](spatial-mapping-in-unity.md)
 
-또는 혼합 현실 플랫폼 기능 및 Api로 이동 합니다.
+또는 Mixed Reality 플랫폼 기능 및 API로 이동합니다.
 
 > [!div class="nextstepaction"]
 > [공유 환경](shared-experiences-in-unity.md)
 
-언제 든 지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks) 으로 돌아갈 수 있습니다.
+언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 * [공간 앵커 지 속성](../../design/coordinate-systems.md#spatial-anchor-persistence)

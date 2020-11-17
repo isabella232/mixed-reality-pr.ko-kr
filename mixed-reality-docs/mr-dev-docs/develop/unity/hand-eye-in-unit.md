@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 제스처, 동작 컨트롤러, unity, 응시, 입력
-ms.openlocfilehash: b184cf1d9e6f35e3750015b51374058df79ed19d
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: 제스처, 동작 컨트롤러, unity, 응시, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 244d1ef27d9aa68d971fa8372bda301fccab0704
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683239"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677592"
 ---
 # <a name="articulated-hand-and-eye-tracking-in-unity"></a>Unity에서의 트레일러 및 눈 추적
 
@@ -60,7 +60,7 @@ MRTK v2는 개발을 가속화 하는 데 도움이 되는 UI 컨트롤 및 구�
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [시선 기반 상호 작용](../../design/eye-gaze-interaction.md)
 * [HoloLens 2의 시선 추적](../../design/eye-tracking.md)

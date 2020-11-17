@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 제스처, 동작 컨트롤러, unity, 응시, 입력
-ms.openlocfilehash: 6c41de0a0b5d2879b2f3a0be90c9456100599d2b
-ms.sourcegitcommit: 8b16945d6a551f174a65fa3980ba392682ca45d4
+keywords: 제스처, 동작 컨트롤러, unity, 응시, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: e1a2ae10638bb8dbd35eed7e9a0a1d2a05181f0c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92886276"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678652"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Unity의 제스처 및 모션 컨트롤러
 
@@ -106,15 +106,15 @@ Windows Mixed Reality는 다양 한 폼 팩터에서 동작 컨트롤러를 지�
 
 **그립 포즈** 는 HoloLens에서 감지한 손바닥의 위치 또는 동작 컨트롤러를 보유 하는 야자나무를 나타냅니다.
 
-몰입 형 헤드셋에서 그립 포즈는 사용자 **의 손을** 만들거나 **사용자의 손으로 보유 한 개체** (예: 소드 또는 포)를 렌더링 하는 데 가장 적합 합니다. 동작 컨트롤러에 대해 Windows에서 제공 하는 **렌더링할 모델** 은 동작 컨트롤러를 시각화할 때에도 그립 포즈를 사용 합니다.
+몰입 형 헤드셋에서 그립 포즈는 사용자 **의 손을** 만들거나 **사용자의 손으로 보유 한 개체**(예: 소드 또는 포)를 렌더링 하는 데 가장 적합 합니다. 동작 컨트롤러에 대해 Windows에서 제공 하는 **렌더링할 모델** 은 동작 컨트롤러를 시각화할 때에도 그립 포즈를 사용 합니다.
 
 그립 포즈는 구체적으로 다음과 같이 정의 됩니다.
-* **그립 위치** : 컨트롤러를 자연스럽 게 유지 하는 경우 왼쪽 또는 오른쪽으로 조정 하 여 그립 내 위치를 가운데에 맞춥니다. Windows Mixed Reality 동작 컨트롤러에서이 위치는 일반적으로 보통 클릭 단추와 맞춥니다.
-* **그립 방향 오른쪽 축** : 손 모양 5 손가락 포즈를 형성 하는 손을 완전히 열 때 palm (왼쪽 야자나무에서 오른쪽으로 뒤로)의 광선을 만듭니다.
+* **그립 위치**: 컨트롤러를 자연스럽 게 유지 하는 경우 왼쪽 또는 오른쪽으로 조정 하 여 그립 내 위치를 가운데에 맞춥니다. Windows Mixed Reality 동작 컨트롤러에서이 위치는 일반적으로 보통 클릭 단추와 맞춥니다.
+* **그립 방향 오른쪽 축**: 손 모양 5 손가락 포즈를 형성 하는 손을 완전히 열 때 palm (왼쪽 야자나무에서 오른쪽으로 뒤로)의 광선을 만듭니다.
 * **그립 방향 전방 축: 핸들** 을 부분적으로 (컨트롤러를 보유 하는 것 처럼) 닫는 경우 비 엄지 손가락으로 형성 된 튜브를 통해 "전달" 하는 광선이 표시 됩니다.
-* **그립 방향 up 축** : 오른쪽 및 전방 정의에 의해 암시 된 위쪽 축입니다.
+* **그립 방향 up 축**: 오른쪽 및 전방 정의에 의해 암시 된 위쪽 축입니다.
 
-Unity의 교차 공급 업체 입력 API (XR)를 통해 그립 포즈에 액세스할 수 있습니다 *[. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation* ) 또는 WINDOWS MR 특정 API ( *sourcestate/Rotation* , **그립** 노드에 대 한 포즈 데이터 요청)를 통해
+Unity의 교차 공급 업체 입력 API (XR)를 통해 그립 포즈에 액세스할 수 있습니다 *[. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation*) 또는 WINDOWS MR 특정 API (*sourcestate/Rotation*, **그립** 노드에 대 한 포즈 데이터 요청)를 통해
 
 ### <a name="pointer-pose"></a>포인터 포즈
 
@@ -140,15 +140,15 @@ Unity의 교차 공급 업체 입력 API (XR)를 통해 그립 포즈에 액세�
 
 ### <a name="reasoning-about-tracking-state-explicitly"></a>명시적 추적 상태에 대 한 추론
 
-추적 상태에 따라 위치를 다르게 처리 하려는 앱은 더 나아가 컨트롤러의 상태에 대 한 속성 (예: *SourceLossRisk* 및 *positionaccuracy* )을 검사할 수 있습니다.
+추적 상태에 따라 위치를 다르게 처리 하려는 앱은 더 나아가 컨트롤러의 상태에 대 한 속성 (예: *SourceLossRisk* 및 *positionaccuracy*)을 검사할 수 있습니다.
 
 <table>
 <tr>
 <th> 상태 추적 </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>높은 정확도</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> 높음 </td><td style="background-color: green; color: white"> true</td>
+<td> <b>높은 정확도</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> 높은 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>높은 정확도 (손실 위험)</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: green; color: white"> 높음 </td><td style="background-color: green; color: white"> true</td>
+<td> <b>높은 정확도 (손실 위험)</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: green; color: white"> 높은 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>대략적인 정확도</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: orange"> 근사치 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -164,8 +164,8 @@ Unity의 교차 공급 업체 입력 API (XR)를 통해 그립 포즈에 액세�
 
 ## <a name="common-unity-apis-inputgetbuttongetaxis"></a>Common Unity Api (입력. GetButton/Getbutton)
 
-**네임 스페이스:** *unityengine* , *unityengine. XR*<br>
-**형식** : *Input* , *XR. InputTracking*
+**네임 스페이스:** *unityengine*, *unityengine. XR*<br>
+**형식**: *Input*, *XR. InputTracking*
 
 Unity는 현재 일반 입력을 사용 *합니다. GetButton/Input. Getbutton* api를 사용 하면 핸드 및 동작 컨트롤러를 포함 하 여 [oculus Sdk](https://docs.unity3d.com/Manual/OculusControllers.html), [Openvr sdk](https://docs.unity3d.com/Manual/OpenVRControllers.html) 및 Windows Mixed Reality의 입력을 노출할 수 있습니다. 앱이 입력에 이러한 Api를 사용 하는 경우 Windows Mixed Reality를 비롯 하 여 여러 XR Sdk에서 동작 컨트롤러를 쉽게 지원할 수 있습니다.
 
@@ -178,7 +178,7 @@ Unity는 현재 일반 입력을 사용 *합니다. GetButton/Input. Getbutton* 
 ![Unity의 InputManager](images/unity-input-manager.png)<br>
 *Unity InputManager*
 
-그런 다음 스크립트는 입력을 사용 하 여 전송 작업을 확인할 수 있습니다 *. GetButton* :
+그런 다음 스크립트는 입력을 사용 하 여 전송 작업을 확인할 수 있습니다 *. GetButton*:
 
 ```cs
 if (Input.GetButton("Submit"))
@@ -201,7 +201,7 @@ if (Input.GetKey("joystick button 8"))
 
 ### <a name="getting-a-hand-or-motion-controllers-pose"></a>직접 또는 동작 컨트롤러의 포즈 가져오기
 
-XR를 사용 하 여 컨트롤러의 위치 및 회전에 액세스할 수 있습니다 *. InputTracking* :
+XR를 사용 하 여 컨트롤러의 위치 및 회전에 액세스할 수 있습니다 *. InputTracking*:
 
 ```cs
 Vector3 leftPosition = InputTracking.GetLocalPosition(XRNode.LeftHand);
@@ -215,7 +215,7 @@ Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 ## <a name="windows-specific-apis-xrwsainput"></a>Windows 관련 Api (XR. WSA. 입력
 
 **네임 스페이스:** *unityengine. XR*<br>
-**유형** : *InteractionManager* , *InteractionSourceState* , *InteractionSource* , *InteractionSourceProperties* , *InteractionSourceKind* , *InteractionSourceLocation*
+**유형**: *InteractionManager*, *InteractionSourceState*, *InteractionSource*, *InteractionSourceProperties*, *InteractionSourceKind*, *InteractionSourceLocation*
 
 Windows Mixed Reality 입력 (HoloLens 용) 및 동작 컨트롤러에 대 한 자세한 정보를 보려면 *Unityengine. XR* 네임 스페이스에서 windows 관련 공간 입력 api를 사용 하도록 선택할 수 있습니다. 이를 통해 위치 정확도 나 소스 종류와 같은 추가 정보에 액세스할 수 있으므로 실습 및 컨트롤러를 구분할 수 있습니다.
 
@@ -427,7 +427,7 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 ## <a name="high-level-composite-gesture-apis-gesturerecognizer"></a>상위 수준 복합 제스처 Api (GestureRecognizer)
 
 **네임 스페이스:** *unityengine. XR*<br>
-**유형** : *GestureRecognizer* , *GestureSettings* , *InteractionSourceKind*
+**유형**: *GestureRecognizer*, *GestureSettings*, *InteractionSourceKind*
 
 앱은 공간 입력 원본, 탭, 유지, 조작 및 탐색 제스처에 대 한 상위 수준 복합 제스처를 인식할 수도 있습니다. GestureRecognizer를 사용 하 여 [직접](../../design/gaze-and-commit.md#composite-gestures) 및 [동작 컨트롤러](../../design/motion-controllers.md) 에서 이러한 복합 제스처를 인식할 수 있습니다.
 
@@ -530,7 +530,7 @@ void OnDestroy()
    3. 따라서 throw 된 개체의 총 속도는 컨트롤러의 속도와 이러한 탄젠트 속도의 합입니다. `objectVelocity = throwingControllerVelocity + tangentialVelocity;`
 
 * **속도를 적용 하는 *시간* 에 대 한 주의를** 기울여야 합니다. 단추를 누르면 해당 이벤트가 Bluetooth를 통해 운영 체제에 20ms 최대의 시간이 걸릴 수 있습니다. 즉, 컨트롤러 상태 변경을 누른 상태에서 누르지 않음 또는 그 반대로 폴링할 때 발생 하는 컨트롤러의 정보는 실제로 이러한 변화에 대 한 것입니다. 또한 폴링 API에 의해 표시 되는 컨트롤러는 프레임이 표시 될 때 발생할 수 있는 포즈를 반영 하 여 향후 20ms 될 수 있는 것으로 예상 됩니다. 이는 보류 중인 개체를 *렌더링* 하는 데 유용 하지만 사용자가 throw를 릴리스한 순간의 궤적을 계산할 때 개체를 *대상으로 지정* 하는 데 시간이 복합어. 다행히 11 월 업데이트를 사용 하는 경우 *InteractionSourcePressed* 또는 *InteractionSourceReleased* 와 같은 Unity 이벤트가 전송 되 면이 상태에는 단추가 실제로 눌러져 있거나 해제 되었을 때의 기록 포즈 데이터가 반환 됩니다.  을 throw 하는 동안 가장 정확한 컨트롤러 렌더링과 컨트롤러를 대상으로 하려면 적절 한 폴링 및 이벤트를 올바르게 사용 해야 합니다.
-   * 각 프레임을 렌더링 하는 **컨트롤러** 의 경우 응용 프로그램은 현재 프레임의 photon 시간에 대해 앞으로 예측 되는 컨트롤러에서 컨트롤러의 *GameObject* 위치를 지정 해야 합니다.  Unity 폴링 Api (예: XR)에서이 데이터를 가져옵니다 *[. InputTracking. GetLocalPosition](https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html)* 또는 *[XR. WSA. InteractionManager. GetCurrentReading](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.GetCurrentReading.html)* .
+   * 각 프레임을 렌더링 하는 **컨트롤러** 의 경우 응용 프로그램은 현재 프레임의 photon 시간에 대해 앞으로 예측 되는 컨트롤러에서 컨트롤러의 *GameObject* 위치를 지정 해야 합니다.  Unity 폴링 Api (예: XR)에서이 데이터를 가져옵니다 *[. InputTracking. GetLocalPosition](https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html)* 또는 *[XR. WSA. InteractionManager. GetCurrentReading](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.GetCurrentReading.html)*.
    * Press 또는 릴리스부터 **컨트롤러를 대상** 으로 하는 경우 앱은 해당 누르기 또는 릴리스 이벤트에 대 한 기록 컨트롤러의 포즈를 기준으로 궤적을 ray로 계산 해야 합니다.  *[InteractionManager InteractionSourcePressed](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.InteractionSourcePressed.html)* 와 같은 Unity 이벤트 api에서이 데이터를 가져옵니다.
 * **그립 포즈를 사용** 합니다. 각도 속도와 속도는 포인터가 아닌 그립 포즈를 기준으로 보고 됩니다.
 

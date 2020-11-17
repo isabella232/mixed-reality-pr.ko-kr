@@ -1,24 +1,24 @@
 ---
-title: MR 및 Azure 302b-사용자 지정 비전
+title: MR 및 Azure 302b - Custom Vision
 description: 이 과정을 완료 하 여 machine learning 모델을 학습 한 다음 학습 된 모델을 사용 하 여 혼합 현실 응용 프로그램 내에서 유사한 개체를 인식 하는 방법을 알아보세요.
 author: drneil
 ms.author: jemccull
 ms.date: 07/03/2018
 ms.topic: article
-keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 사용자 지정 비전, hololens, 몰입 형, vr
-ms.openlocfilehash: 857cdc00daa94db5bb4d4fda1d5adfcf0ba28822
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 사용자 지정 비전, hololens, 모던, vr, Windows 10, Visual Studio
+ms.openlocfilehash: d40dc1cf23ee8040406047eaddd7ee3b70365199
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91688121"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679552"
 ---
 # <a name="mr-and-azure-302b-custom-vision"></a>MR 및 Azure 302b: Custom Vision
 
 <br>
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_** .  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
 
 <br>
 
@@ -33,9 +33,9 @@ Azure Custom Vision는 개발자가 사용자 지정 이미지 분류자를 빌�
 
 이 과정을 완료 하면 다음과 같은 두 가지 모드로 작업할 수 있는 혼합 현실 응용 프로그램이 만들어집니다.
 
--   **분석 모드** : 이미지를 업로드 하 고, 태그를 만들고, 서비스를 학습 하 여 다른 개체 (이 경우 마우스 및 키보드)를 인식할 수 있도록 하 여 Custom Vision Service를 수동으로 설정 합니다. 그런 다음 카메라를 사용 하 여 이미지를 캡처하는 HoloLens 앱을 만들고 실제 세계에서 해당 개체를 인식 해 봅니다.
+-   **분석 모드**: 이미지를 업로드 하 고, 태그를 만들고, 서비스를 학습 하 여 다른 개체 (이 경우 마우스 및 키보드)를 인식할 수 있도록 하 여 Custom Vision Service를 수동으로 설정 합니다. 그런 다음 카메라를 사용 하 여 이미지를 캡처하는 HoloLens 앱을 만들고 실제 세계에서 해당 개체를 인식 해 봅니다.
 
--   **학습 모드** : 앱에서 "학습 모드"를 사용 하는 코드를 구현 합니다. 학습 모드에서는 HoloLens 카메라를 사용 하 여 이미지를 캡처하고, 캡처한 이미지를 서비스에 업로드 하 고, 사용자 지정 비전 모델을 학습할 수 있습니다.
+-   **학습 모드**: 앱에서 "학습 모드"를 사용 하는 코드를 구현 합니다. 학습 모드에서는 HoloLens 카메라를 사용 하 여 이미지를 캡처하고, 캡처한 이미지를 서비스에 업로드 하 고, 사용자 지정 비전 모델을 학습할 수 있습니다.
 
 이 과정을 통해 Custom Vision Service에서 Unity 기반 샘플 응용 프로그램으로 결과를 가져오는 방법을 배울 수 있습니다. 빌드할 수 있는 사용자 지정 응용 프로그램에 이러한 개념을 적용 하는 것이 좋습니다.
 
@@ -52,7 +52,7 @@ Azure Custom Vision는 개발자가 사용자 지정 이미지 분류자를 빌�
 > [!NOTE]
 > 이 과정에서 주로 HoloLens에 초점을 맞춘 반면,이 과정에서 배운 내용을 Windows Mixed Reality 모던 (VR) 헤드셋에도 적용할 수 있습니다. 모던 (VR) 헤드셋은 액세스할 수 있는 카메라를 포함 하지 않으므로 PC에 연결 된 외부 카메라가 필요 합니다. 이 과정을 진행 하면서 모던 (VR) 헤드셋을 지원 하기 위해 사용 해야 하는 변경 내용에 대 한 정보를 볼 수 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 > [!NOTE]
 > 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (7 월 2018)을 나타냅니다. [도구 설치](../../install-the-tools.md) 문서에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.
@@ -69,7 +69,7 @@ Azure Custom Vision는 개발자가 사용자 지정 이미지 분류자를 빌�
 - Azure 설정 및 Custom Vision API 검색을 위한 인터넷 액세스
 - Custom Vision Service에서 인식 하고자 하는 각 개체에 대해 5 개 이상의 이미지 (10 개 이상 권장)를 표시 합니다. 원할 경우 [이 과정에서 이미 제공 된 이미지 (컴퓨터 마우스 및 키보드) ](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20302b%20-%20Custom%20vision/ComputerVision_Images.zip)를 사용할 수 있습니다.
 
-## <a name="before-you-start"></a>시작하기 전에
+## <a name="before-you-start"></a>시작하기 전 확인 사항
 
 1.  이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.)
 2.  HoloLens를 설정 하 고 테스트 합니다. HoloLens를 설정 하는 데 지원이 필요한 경우 [hololens 설정 문서를 방문](https://docs.microsoft.com/hololens/hololens-setup)해야 합니다. 
@@ -108,7 +108,7 @@ Azure에서 *Custom Vision Service* 을 사용 하려면 응용 프로그램에�
 
     1.  프로젝트의 *이름을* 삽입 합니다.
 
-    2.  프로젝트에 대 한 *설명을* 삽입 합니다 ( *선택 사항* ).
+    2.  프로젝트에 대 한 *설명을* 삽입 합니다 (*선택 사항*).
 
     3.  리소스 그룹을 선택 하거나 새 *리소스 그룹* 을 만듭니다. 리소스 그룹은 Azure 자산의 컬렉션에 대 한 청구를 모니터링 하 고, 액세스를 제어 하 고, 프로 비전 하 고, 관리 하는 방법을 제공 합니다. 단일 프로젝트와 연결 된 모든 Azure 서비스 (예: 이러한 과정)를 공용 리소스 그룹에 유지 하는 것이 좋습니다.
 
@@ -172,7 +172,7 @@ Custom Vision Service 프로젝트를 학습 하려면:
 
 11. *예측 url* 을 클릭 한 후에는 *메모장* 을 열고, 코드에서 나중에 필요할 때 검색할 수 있도록 **url** 및 **예측 키** 를 복사 하 여 붙여넣습니다.
 
-    ![URL 및 예측 복사 및 붙여넣기-키](images/AzureLabs-Lab302b-14.png)
+    ![URL 및 Prediction-Key 복사 및 붙여넣기](images/AzureLabs-Lab302b-14.png)
 
 12. 화면 오른쪽 위에 있는 **코그** 를 클릭 합니다.
 
@@ -260,7 +260,7 @@ Custom Vision Service 프로젝트를 학습 하려면:
 
         ![게시 설정 구성](images/AzureLabs-Lab302b-26.png)
 
-    3.  패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음), **지원 되는 틱 가상 현실** , **Windows Mixed reality SDK** 가 추가 되어 있는지 확인 합니다.
+    3.  패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음), **지원 되는 틱 가상 현실**, **Windows Mixed reality SDK** 가 추가 되어 있는지 확인 합니다.
 
     ![XR 설정 구성](images/AzureLabs-Lab302b-27.png)
 
@@ -268,7 +268,7 @@ Custom Vision Service 프로젝트를 학습 하려면:
 
 9.  빌드 설정 창을 닫습니다.
 
-10.  장면 및 프로젝트를 저장 합니다 ( **파일 > 장면/파일 저장 > 프로젝트 저장** ).
+10.  장면 및 프로젝트를 저장 합니다 (**파일 > 장면/파일 저장 > 프로젝트 저장**).
 
 
 ## <a name="chapter-4---importing-the-newtonsoft-dll-in-unity"></a>4 장-Unity에서 Newtonsoft.json DLL 가져오기
@@ -351,7 +351,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
 
 2.  위에서 만든 폴더를 두 번 클릭 하 여 엽니다.
 
-3.  폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **Create** ,  >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 *CustomVisionAnalyser* 로 합니다.
+3.  폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **Create**,  >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 *CustomVisionAnalyser* 로 합니다.
 
 4.  새 *CustomVisionAnalyser* 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
 
@@ -1652,7 +1652,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
 
 1.  **파일 > 빌드 설정** 으로 이동 합니다.
 
-2.  Tick **Unity C \# 프로젝트** .
+2.  Tick **Unity C \# 프로젝트**.
 
 3.  **빌드** 를 클릭한 다음 Unity는 응용 프로그램을 빌드할 폴더를 만들고 선택 해야 하는 **파일 탐색기** 창을 시작 합니다. 이제 해당 폴더를 만들고 이름을 **App** 으로 만듭니다. 그런 다음 **앱** 폴더를 선택 하 고 **폴더 선택** 을 클릭 합니다.
 

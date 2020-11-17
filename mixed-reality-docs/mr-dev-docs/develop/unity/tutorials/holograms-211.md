@@ -1,22 +1,22 @@
 ---
-title: MR 입력 211-제스처
+title: MR 입력 211 - 제스처
 description: Unity, Visual Studio 및 HoloLens를 사용 하 여이 코딩 연습을 수행 하 여 제스처 개념에 대 한 세부 정보를 알아보세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit, 아카데미, 자습서, 제스처
-ms.openlocfilehash: 0d3057cb1751a3bc429ed1ccf520b451110f64b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 제스처, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
+ms.openlocfilehash: 9f83e2f3b02cf8d83b2fb58a3a0d05dc8576b0e8
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686432"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678292"
 ---
 # <a name="mr-input-211-gesture"></a>MR 입력 211: 제스처
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_** .  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](../../../mr-learning-base-01.md)가 게시되었습니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](../../../mr-learning-base-01.md)가 게시되었습니다.
 
 [제스처](../../../design/gaze-and-commit.md#composite-gestures) 사용자 의도를 작업으로 설정 합니다. 제스처를 사용하면 사용자가 홀로그램과 상호 작용할 수 있습니다. 이 과정에서는 사용자의 손을 추적 하 고, 사용자 입력에 응답 하 고, 직접 상태 및 위치에 따라 사용자에 게 피드백을 제공 하는 방법을 알아봅니다.
 
@@ -44,9 +44,9 @@ ms.locfileid: "91686432"
 </tr>
 </table>
 
-## <a name="before-you-start"></a>시작하기 전에
+## <a name="before-you-start"></a>시작하기 전 확인 사항
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>사전 요구 사항
 
 * 올바른 [도구로](../../../develop/install-the-tools.md)구성 된 WINDOWS 10 PC입니다.
 * 몇 가지 기본적인 c # 프로그래밍 기능.
@@ -64,11 +64,11 @@ ms.locfileid: "91686432"
 
 ### <a name="errata-and-notes"></a>정오표 및 참고 사항
 
-* 코드에서 중단점을 적중 하려면 Visual Studio의 도구->옵션->디버깅에서 "내 코드만 사용"을 사용 하지 않도록 설정 ( *선택 취소* ) 해야 합니다.
+* 코드에서 중단점을 적중 하려면 Visual Studio의 도구->옵션->디버깅에서 "내 코드만 사용"을 사용 하지 않도록 설정 (*선택 취소*) 해야 합니다.
 
 ## <a name="chapter-0---unity-setup"></a>0 장-Unity 설치
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 1. Unity를 시작합니다.
 2. **열기** 를 선택합니다.
@@ -124,7 +124,7 @@ HoloLens에 배포 하는 경우:
 >[!NOTE]
 >HoloLens 2에서 손이 표시 될 때마다 손 모양 (손가락을 가리키는 경우가 아님)이 발생 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * **계층** 패널에서 **inputmanager** 개체를 확장 합니다.
 * **GesturesInput** 개체를 찾고 선택 합니다.
@@ -170,7 +170,7 @@ HoloLens에 배포 하는 경우:
 
 * 탐색 제스처 이벤트를 사용 하 여 astronaut를 회전 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 앱에서 탐색 제스처를 사용 하려면 탐색 제스처가 발생할 때 **GestureAction.cs** 를 편집 하 여 개체를 회전 합니다. 또한 탐색을 사용할 수 있을 때 표시할 피드백을 커서에 추가 합니다.
 
@@ -314,7 +314,7 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 * 수동 **가이드 점수** 를 사용 하 여 수동 추적이 손실 되는 경우를 예측할 수 있습니다.
 * **커서에 대 한 피드백** 을 제공 하 여 사용자가 카메라의 보기 가장자리에 가까이 있는 경우를 표시 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 1. **계층** 패널에서 **CursorWithFeedback** 개체를 선택 합니다.
 2. **검사기** 패널에서 **구성 요소 추가** 단추를 클릭 합니다.
@@ -339,16 +339,16 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 * 조작 이벤트를 사용 하 여 astronaut를 손으로 이동 합니다.
 * 조작을 사용할 수 있는 경우 사용자에 게 알릴 수 있도록 커서에 대 한 피드백을 제공 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 GestureManager.cs 및 AstronautManager.cs를 사용 하면 다음을 수행할 수 있습니다.
 
-1. 음성 키워드 " **Move Astronaut** "를 사용 하 여 **조작** 제스처를 사용 하도록 설정 하 고 " **Rotate Astronaut** "를 사용 하지 않도록 설정 합니다.
+1. 음성 키워드 "**Move Astronaut**"를 사용 하 여 **조작** 제스처를 사용 하도록 설정 하 고 "**Rotate Astronaut**"를 사용 하지 않도록 설정 합니다.
 2. **조작 제스처 인식기** 에 대 한 응답으로 전환 합니다.
 
 이제 시작하겠습니다.
 
-1. **계층** 패널에서 비어 있는 새 GameObject을 만듭니다. 이름을 " **AstronautManager** "로 합니다.
+1. **계층** 패널에서 비어 있는 새 GameObject을 만듭니다. 이름을 "**AstronautManager**"로 합니다.
 2. **검사기** 패널에서 **구성 요소 추가** 단추를 클릭 합니다.
 3. 메뉴의 검색 상자에 **Astronaut Manager** 를 입력 합니다. 검색 결과를 선택 합니다.
 4. **검사기** 패널에서 **구성 요소 추가** 단추를 클릭 합니다.
@@ -506,12 +506,12 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 * Astronaut 모델을 사용자가 상호 작용할 수 있는 여러 개의 작은 조각으로 확장 합니다.
 * 탐색 및 조작 제스처를 사용 하 여 각 부분을 개별적으로 이동 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 이 섹션에서는 다음 작업을 수행 합니다.
 
-1. 새 " **모델 확장** " 키워드를 추가 하 여 astronaut 모델을 확장 합니다.
-2. 새 키워드 " **모델 다시 설정** "을 추가 하 여 모델을 원래 형식으로 반환 합니다.
+1. 새 "**모델 확장**" 키워드를 추가 하 여 astronaut 모델을 확장 합니다.
+2. 새 키워드 "**모델 다시 설정**"을 추가 하 여 모델을 원래 형식으로 반환 합니다.
 
 이전 장의 음성 입력 소스에 두 개 이상의 키워드를 추가 하 여이 작업을 수행 합니다. 또한 인식 이벤트를 처리 하는 또 다른 방법을 보여 드리겠습니다.
 
@@ -525,10 +525,10 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 8. 이 명령은 GameObject에 관계 없이 작동 하기 때문에 **전역 수신기** 를 선택 합니다.
 9. 단추를 클릭 **+** 하 고 키워드 드롭다운에서 **모델 확장** 을 선택 합니다.
 10. **+** 응답 아래를 클릭 하 고 **계층** 의 **AstronautManager** 을 **None (Object)** 필드로 끕니다.
-11. 이제 **함수 없음** 드롭다운을 클릭 하 고 **AstronautManager** , **ExpandModelCommand** 를 차례로 선택 합니다.
+11. 이제 **함수 없음** 드롭다운을 클릭 하 고 **AstronautManager**, **ExpandModelCommand** 를 차례로 선택 합니다.
 12. 음성 입력 처리기의 단추를 클릭 **+** 하 고 키워드 드롭다운에서 **모델 다시 설정** 을 선택 합니다.
 13. **+** 응답 아래를 클릭 하 고 **계층** 의 **AstronautManager** 을 **None (Object)** 필드로 끕니다.
-14. 이제 **함수 없음** 드롭다운을 클릭 하 고 **AstronautManager** , **resetmodelcommand** 를 차례로 선택 합니다.
+14. 이제 **함수 없음** 드롭다운을 클릭 하 고 **AstronautManager**, **resetmodelcommand** 를 차례로 선택 합니다.
 
 ![5 장의 음성 입력 소스 및 처리기를 설정 하는 방법](images/holograms211-speechhandler.png)
 

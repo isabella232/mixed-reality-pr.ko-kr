@@ -5,18 +5,18 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 키보드, 입력, unity, touchscreenkeyboard
-ms.openlocfilehash: 806051a4ea429a058b271a55d7f5fc41503e346b
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+keywords: 키보드, 입력, unity, touchscreenkeyboard, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: aa9bb3059a8d0cc5b829bf14d92928511259b7f9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293147"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677422"
 ---
 # <a name="keyboard-input-in-unity"></a>Unity의 키보드 입력
 
 **네임 스페이스:** *unityengine*<br>
- **유형**: * [TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*
+ **유형**: *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*
 
 HoloLens는 Bluetooth 키보드를 비롯 한 다양 한 형태의 입력을 지원 하지만 대부분의 응용 프로그램에서는 모든 사용자가 실제 키보드를 사용할 수 있다고 간주할 수 없습니다. 응용 프로그램에 텍스트 입력이 필요한 경우 화면 키보드의 일부 형식을 제공 해야 합니다.
 
@@ -48,7 +48,7 @@ HoloLens에서 *TouchScreenKeyboard* 는 시스템의 화면 키보드를 활용
 
 HoloLens 시스템 키보드는 "UWP 빌드 형식"을 "XAML"로 설정 하 여 내보낸 Unity 응용 프로그램 에서만 사용할 수 있습니다. "D3D"를 통해 "XAML"을 "UWP 빌드 형식"으로 선택 하는 경우에는 장단점이 있습니다. 이러한 절충에 익숙하지 않은 경우 시스템 키보드에 대 한 [대체 입력 솔루션](#alternative-keyboard-options) 을 탐색 하는 것이 좋습니다.
 1. **파일** 메뉴를 열고 **빌드 설정** ...을 선택 합니다.
-2. **플랫폼이** **Windows 스토어**로 설정 되 고 **SDK** 가 **유니버설 10**으로 설정 되었는지 확인 하 고 **UWP 빌드 형식을** **XAML**로 설정 합니다.
+2. **플랫폼이** **Windows 스토어** 로 설정 되 고 **SDK** 가 **유니버설 10** 으로 설정 되었는지 확인 하 고 **UWP 빌드 형식을** **XAML** 로 설정 합니다.
 3. **빌드 설정** 대화 상자에서 **플레이어 설정 ...** 단추를 클릭 합니다.
 4. **Windows 스토어에 대 한 설정 탭을** 선택 합니다.
 5. **기타 설정** 그룹 확장

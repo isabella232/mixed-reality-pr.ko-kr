@@ -5,13 +5,13 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: HoloLens, 원격 서비스, Holographic 원격 작업
-ms.openlocfilehash: 844a5dc36b480791296f17db067cd71ece307a2b
-ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
+keywords: HoloLens, 원격, Holographic 원격, 버전 기록, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: d9b1a9e7aa519084c05f658b2bc1864dc26e7ffa
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92011434"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677852"
 ---
 # <a name="holographic-remoting-version-history"></a>Holographic 원격 버전 기록
 
@@ -46,7 +46,7 @@ ms.locfileid: "92011434"
 
 ## <a name="version-213-may-25-2020"></a>버전 2.1.3 (5 월 25 일, 2020) <a name="v2.1.3"></a>
 * [HolographicSpace. CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) 이벤트의 동작이 변경 되었습니다. 이전 버전에서는 [HolographicSpace](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe)를 통해 다음 프레임을 만들 때 추가 된 [HolographicCamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera) 도 유효한 [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) 을 보장 **하지** 않았습니다. 버전 2.1.3 [HolographicSpace. CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) 는 Holographic Remoting 플레이어에서 제공 되는 포즈 데이터와 동기화 되 고, 사용자는 카메라가 추가 될 때 다음 프레임에서 해당 카메라에 사용할 수 있는 유효한 [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) 도 있습니다.
-* RemoteContext.ConfigureDepthVideoStream를 통해 깊이 버퍼 스트리밍을 사용 하지 않도록 설정 하는 데 사용할 수 있는 DepthBufferStreamResolution에 사용 **하지 않도록** 추가 되었습니다. HolographicCameraRenderingParameters를 사용 하는 경우 CommitDirect3D11DepthBuffer는 *E_ILLEGAL_METHOD_CALL*와 함께 실패 합니다 [.](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer)
+* RemoteContext.ConfigureDepthVideoStream를 통해 깊이 버퍼 스트리밍을 사용 하지 않도록 설정 하는 데 사용할 수 있는 DepthBufferStreamResolution에 사용 **하지 않도록** 추가 되었습니다. HolographicCameraRenderingParameters를 사용 하는 경우 CommitDirect3D11DepthBuffer는 *E_ILLEGAL_METHOD_CALL* 와 함께 실패 합니다 [.](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer)
 * Holographic Remoting 플레이어의 시작 화면이 다시 디자인 되었으며 이제 사용자 보기를 차단 하지 않습니다.
 * 안정성 향상 및 버그 수정.
 

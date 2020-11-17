@@ -5,13 +5,13 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
-keywords: 눈에 응시, 헤드-응시, 헤드 추적, 눈 추적, directx, 입력, holograms
-ms.openlocfilehash: 06f725f3560d2c05e15c2e1362e820262986a192
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 눈에 응시, 헤드-응시, 헤드 추적, 눈 추적, directx, 입력, holograms, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 9ec54f5db33346c499582b54a0b3e36c129bf7ab
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683872"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678082"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>헤드-DirectX에서 응시 및 눈에 응시 입력
 

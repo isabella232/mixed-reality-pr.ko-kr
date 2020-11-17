@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, 손실 추적, 손실 이미지 추적
-ms.openlocfilehash: 5aa17def844735088bcee6137a7b76a586107e44
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, 손실 추적, 추적 손실 이미지, 폴링, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 52b81069e6b9f94a2a6a4fb552be4234cf43d1f0
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683118"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678422"
 ---
 # <a name="tracking-loss-in-unity"></a>Unity의 손실 추적
 
@@ -30,14 +30,14 @@ ms.locfileid: "91683118"
 **네임 스페이스:** *unityengine. XR. WSA*<br>
 **유형:** *WorldManager*
 
-* 세계 관리자는 WorldManager 된 추적 ( *OnPositionalLocatorStateChanged* ) 및 현재 상태 ( *WorldManager* )를 쿼리 하는 속성을 검색 하는 이벤트를 노출 합니다.
+* 세계 관리자는 WorldManager 된 추적 (*OnPositionalLocatorStateChanged*) 및 현재 상태 (*WorldManager*)를 쿼리 하는 속성을 검색 하는 이벤트를 노출 합니다.
 * 추적 상태가 활성이 아닌 경우 사용자가 변환 하는 동안에도 카메라가 가상 환경에서 변환 되지 않습니다. 즉, 개체는 더 이상 실제 위치에 해당 하지 않으며 모두 본문이 잠깁니다.
 
 변경 내용 추적을 처리 하는 경우 각 프레임의 state 속성에 대해 폴링하거나 *OnPositionalLocatorStateChanged* 이벤트를 처리 해야 합니다.
 
 ### <a name="polling"></a>폴링
 
-가장 중요 한 상태는 *Positionalloc를* 사용 하는 상태입니다. 활성은 추적이 완전히 작동 함을 의미 합니다. 다른 모든 상태는 주 카메라에만 회전 델타를 발생 합니다. 예를 들면 다음과 같습니다.
+가장 중요 한 상태는 *Positionalloc를* 사용 하는 상태입니다. 활성은 추적이 완전히 작동 함을 의미 합니다. 다른 모든 상태는 주 카메라에만 회전 델타를 발생 합니다. 예를 들어:
 
 ```cs
 void Update()

@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/07/2019
 ms.topic: article
-keywords: Unity, 공간 음향, HRTF, 방 크기
-ms.openlocfilehash: 9c5f71b2d9d13fa40f0d1674237d2da6c769e584
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, 공간 음향, HRTF, 대화방 크기, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit, spatializer, 반향
+ms.openlocfilehash: db01fe81457d0f46b7f287458b4d48af4a98f2bc
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684609"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678442"
 ---
 # <a name="spatial-sound-in-unity"></a>Unity의 공간 음향
 
@@ -30,7 +30,7 @@ ms.locfileid: "91684609"
 
 ## <a name="enable-spatialization"></a>Spatialization 사용
 
-[Unity 용 NuGet](https://github.com/GlitchEnzo/NuGetForUnity/releases/latest) 을 사용 하 여 _SpatialAudio. Spatializer_ 을 설치 하 고 프로젝트의 오디오 설정에서 **microsoft Spatializer** 를 선택 합니다. 그렇다면
+[Unity 용 NuGet](https://github.com/GlitchEnzo/NuGetForUnity/releases/latest) 을 사용 하 여 _SpatialAudio. Spatializer_ 을 설치 하 고 프로젝트의 오디오 설정에서 **microsoft Spatializer** 를 선택 합니다. 그런 다음:
 * 계층의 개체에 **오디오 소스** 연결
 * **Spatialization 사용** 확인란을 선택 합니다.
 * **공간 Blend** 슬라이더를 ' 1 '로 이동
@@ -64,17 +64,17 @@ Unity의 공간 음향 예는 다음을 참조 하세요.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 설명한 Unity 개발 검사점 경험을 팔로 사용할 경우 혼합 현실 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 진행할 수 있습니다.
+앞서 설명한 Unity 개발 검사점 경험을 팔로 사용할 경우 혼합 현실 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)
 
-또는 혼합 현실 플랫폼 기능 및 Api로 이동 합니다.
+또는 Mixed Reality 플랫폼 기능 및 API로 이동합니다.
 
 > [!div class="nextstepaction"]
 > [공유 환경](shared-experiences-in-unity.md)
 
-언제 든 지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks) 으로 돌아갈 수 있습니다.
+언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
 ## <a name="see-also"></a>참조
 * [혼합 현실에서의 소리 디자인](../../design/spatial-sound-design.md)

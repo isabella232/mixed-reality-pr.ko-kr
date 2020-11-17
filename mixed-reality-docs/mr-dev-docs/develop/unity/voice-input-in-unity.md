@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 음성 입력, KeywordRecognizer, GrammarRecognizer, 마이크, 받아쓰기, 음성
-ms.openlocfilehash: b6930b35046e32beb1a4ca9f9ca29996487fcf4d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 음성 입력, KeywordRecognizer, GrammarRecognizer, 마이크, 받아쓰기, 음성, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 20e2b8d4b8a18f38e72db7889a5d00cf15bfc0eb
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687249"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679892"
 ---
 # <a name="voice-input-in-unity"></a>Unity의 음성 입력
 
@@ -41,7 +41,7 @@ KeywordRecognizer (두 가지 유형의 PhraseRecognizers 중 하나)를 사용 
 ### <a name="keywordrecognizer"></a>KeywordRecognizer
 
 **네임 스페이스:** *Unityengine. Windows. Speech*<br>
-**유형:** *KeywordRecognizer* , *PhraseRecognizedEventArgs* , *SpeechError* , *SpeechSystemStatus*
+**유형:** *KeywordRecognizer*, *PhraseRecognizedEventArgs*, *SpeechError*, *SpeechSystemStatus*
 
 몇 가지 using 문을 사용 하 여 몇 가지 키 입력을 저장 해야 합니다.
 
@@ -103,7 +103,7 @@ keywordRecognizer.Start();
 ### <a name="grammarrecognizer"></a>GrammarRecognizer
 
 **네임 스페이스:** *Unityengine. Windows. Speech*<br>
-**유형** : *GrammarRecognizer* , *PhraseRecognizedEventArgs* , *SpeechError* , *SpeechSystemStatus*
+**유형**: *GrammarRecognizer*, *PhraseRecognizedEventArgs*, *SpeechError*, *SpeechSystemStatus*
 
 GrammarRecognizer는 SRGS를 사용 하 여 인식 문법을 지정 하는 경우에 사용 됩니다. 이는 앱에 몇 개의 키워드 이상이 있거나 더 복잡 한 구를 인식 하거나 명령 집합을 쉽게 설정 하 고 해제 하려는 경우에 유용할 수 있습니다. 참조: 파일 형식 정보는 [SRGS XML을 사용 하 여 문법 만들기](https://msdn.microsoft.com/library/hh378349(v=office.14).aspx) 를 참조 하세요.
 
@@ -145,7 +145,7 @@ grammarRecognizer.Start();
 ## <a name="dictation"></a>받아쓰기
 
 **네임 스페이스:** *Unityengine. Windows. Speech*<br>
-**유형** : *DictationRecognizer* , *SpeechError* , *SpeechSystemStatus*
+**유형**: *DictationRecognizer*, *SpeechError*, *SpeechSystemStatus*
 
 DictationRecognizer를 사용 하 여 사용자의 음성을 텍스트로 변환 합니다. DictationRecognizer는 [받아쓰기](../../design/voice-input.md#dictation) 기능을 노출 하 고, 가설 및 구가 완료 된 이벤트에 대 한 등록 및 수신 대기를 지원 하므로, 나중에 말할 때 사용자에 게 피드백을 제공할 수 있습니다. Start () 및 Stop () 메서드는 각각 받아쓰기 인식을 사용 하거나 사용 하지 않도록 설정 합니다. 인식기를 사용 하 여 작업을 완료 한 후에는 Dispose () 메서드를 사용 하 여 사용 하는 리소스를 해제 해야 합니다. 이러한 리소스는 가비지 수집 중에 해제 되지 않은 경우 추가 성능 비용으로 자동으로 해제 됩니다.
 
@@ -308,4 +308,4 @@ GitHub의 Mixed Reality 도구 키트에는 시스템에 사용할 수 있는 �
 > [!div class="nextstepaction"]
 > [공유 환경](shared-experiences-in-unity.md)
 
-언제 든 지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks) 으로 돌아갈 수 있습니다.
+언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.

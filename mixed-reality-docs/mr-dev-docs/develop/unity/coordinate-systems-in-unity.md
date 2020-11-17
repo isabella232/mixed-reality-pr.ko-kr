@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: 좌표계, 공간 좌표계, 방향 전용, 연결 크기 조정, 대규모, 공간 규모, 전 세계 규모, 360 학위, 음, 서, 실내, 전, 크기 조정, 위치, 방향, Unity, 고정, 공간 앵커, 전 세계 앵커, 전 세계 잠김, 전 세계 잠금, 본문 잠김, 본문 잠금, 추적 손실, locatability, 경계, recenter
-ms.openlocfilehash: 59fae57f3ca5048f4027ed96fca03255683c1fe3
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 좌표계, 공간 좌표계, 방향 전용, 고정 크기 조정, 대규모 공간 규모, 세계 규모, 360 학위, 고가, 장소, 전 세계, 규모, 위치, 방향, Unity, 앵커, 공간 고정, 전 세계 앵커, 전 세계 잠금, 세계 recenter, 본문 잠금, 본문 잠금, 손실 추적, locatability, 경계,, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 92b132bb75e88711fb4bf9fda3dee5b778a0be6e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683134"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678682"
 ---
 # <a name="coordinate-systems-in-unity"></a>Unity의 좌표계
 
@@ -101,7 +101,7 @@ Unity에서는 GameObject에 **WorldAnchor** Unity 구성 요소를 추가 하 �
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-간단하죠. 이 게임 개체는 이제 실제 세계의 현재 위치에 고정 되어 있습니다 .이를 통해 Unity 세계 좌표가 약간 조정 되어 물리적 맞춤을 확인할 수 있습니다. [지 속성](persistence-in-unity.md) 을 사용 하 여 이후 앱 세션에서이 앵커 된 위치를 다시 찾습니다.
+이것으로 끝입니다. 이 게임 개체는 이제 실제 세계의 현재 위치에 고정 되어 있습니다 .이를 통해 Unity 세계 좌표가 약간 조정 되어 물리적 맞춤을 확인할 수 있습니다. [지 속성](persistence-in-unity.md) 을 사용 하 여 이후 앱 세션에서이 앵커 된 위치를 다시 찾습니다.
 
 ### <a name="removing-a-world-anchor"></a>세계 앵커 제거
 
@@ -170,17 +170,17 @@ Azure 공간 앵커를 사용 하 여 실행 하면 <a href="https://docs.micros
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 설명한 Unity 개발 검사점 경험을 팔로 사용할 경우 혼합 현실 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 진행할 수 있습니다.
+앞서 설명한 Unity 개발 검사점 경험을 팔로 사용할 경우 혼합 현실 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [응시](gaze-in-unity.md)
 
-또는 혼합 현실 플랫폼 기능 및 Api로 이동 합니다.
+또는 Mixed Reality 플랫폼 기능 및 API로 이동합니다.
 
 > [!div class="nextstepaction"]
 > [공유 환경](shared-experiences-in-unity.md)
 
-언제 든 지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks) 으로 돌아갈 수 있습니다.
+언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 * [환경 크기 조정](../../design/coordinate-systems.md#mixed-reality-experience-scales)

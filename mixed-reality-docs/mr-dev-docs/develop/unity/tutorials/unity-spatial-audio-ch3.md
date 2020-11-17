@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오
-ms.openlocfilehash: cd684944bdd618dcf435ef91566d6d4f18aa87a3
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head 관련 전송 함수, 반향, Microsoft Spatializer, 비디오 가져오기, 비디오 플레이어
+ms.openlocfilehash: 43297fc4148600cc820111e6c206313560224ac9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91689785"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679722"
 ---
 # <a name="spatializing-audio-from-a-video"></a>비디오에서 공간화 오디오
 HoloLens 2 Unity 자습서의 공간 오디오 모듈의이 세 번째 챕터에서는 다음을 수행 합니다.

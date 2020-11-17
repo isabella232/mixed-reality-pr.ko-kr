@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: 공유, 고정, WorldAnchor, MR 공유 250, WorldAnchorTransferBatch, SpatialPerception, Azure, Azure 공간 앵커,
-ms.openlocfilehash: 324aecdc89b4996625ce93514616c32d2d064ffa
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 공유, 고정, WorldAnchor, MR 공유 250, WorldAnchorTransferBatch, SpatialPerception, Azure, Azure 공간 고정, GLOBAL.ASA, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: c9f432a2ef26e28a2329f9fd191f680a4148ca7e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684808"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678462"
 ---
 # <a name="shared-experiences-in-unity"></a>Unity의 공유 환경
 
@@ -38,12 +38,12 @@ Azure 공간 앵커를 사용할 수 없는 경우 [로컬 앵커 전송](../../
 > [!div class="nextstepaction"]
 > [위치를 찾을 수 있는 카메라](locatable-camera-in-unity.md)
 
-또는 장치 또는 에뮬레이터에서 앱 배포로 직접 이동 합니다.
+또는 디바이스나 에뮬레이터에서 앱 배포로 직접 이동합니다.
 
 > [!div class="nextstepaction"]
 > [HoloLens 또는 Windows Mixed Reality 몰입 형 헤드셋에 배포](../platform-capabilities-and-apis/using-visual-studio.md)
 
-언제 든 지 [Unity 개발 검사점](unity-development-overview.md#3-platform-capabilities-and-apis) 으로 돌아갈 수 있습니다.
+언제든지 [Unity 개발 검사점](unity-development-overview.md#3-platform-capabilities-and-apis)으로 돌아갈 수 있습니다.
 
 ## <a name="see-also"></a>참조
 * [혼합 현실의 공유 환경](../platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)

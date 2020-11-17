@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
-keywords: DirectX, holographic 렌더링, 네이티브, 네이티브 앱, WinRT, WinRT 앱, 플랫폼 Api, 사용자 지정 엔진, 미들웨어
-ms.openlocfilehash: fb51dfe15de26b80db255f0daca69e913f9ad35c
-ms.sourcegitcommit: c199872c11adae7de24929ed043ea90dea087b3e
+keywords: DirectX, holographic 렌더링, 네이티브, 네이티브 앱, WinRT, WinRT 앱, 플랫폼 Api, 사용자 지정 엔진, 미들웨어, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 0d5e364fdb4faac73f28649f5c009823a74ac595
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903128"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679652"
 ---
 # <a name="native-development-overview"></a>네이티브 개발 개요
 
@@ -68,6 +68,6 @@ OpenXR 게임의 수준을 설정 하려면 아래 링크를 확인 하세요.
 * [OpenXR 성능](openxr-performance.md)
 * [OpenXR 문제 해결](openxr-troubleshooting.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 * [앱 모델](../../design/app-model.md)
 * [앱 보기](../../design/app-views.md)

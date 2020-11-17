@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens, mrtk, 디자인, 샘플 앱, 컨트롤
-ms.openlocfilehash: 1c6cb4579bbd3d6124cf36b21226ffa803f39f00
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Windows Mixed Reality, 디자인, 샘플 앱, 컨트롤, MRTK, Mixed Reality Toolkit, Unity, 샘플 앱, 예제 앱, 오픈 소스, Microsoft Store, HoloLens, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: c20ea17b20c867d9bf1da0d5f6244e36f2abbf27
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573187"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678522"
 ---
 # <a name="surfaces"></a>Surfaces
 

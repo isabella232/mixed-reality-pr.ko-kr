@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 배포, unity, visual studio, HoloLens, HoloLens 2, 모던 헤드셋
-ms.openlocfilehash: 4d145568190ea43cf2ec43442a1c3d5ca4d92251
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 배포, unity, visual studio, HoloLens, HoloLens 2, 모던 헤드셋, 모범 사례, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, UWP, Visual Studio Tools Windows SDK
+ms.openlocfilehash: 5e00b24c7a36ae83a281800e2c7d8b2fc377f178
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683243"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678848"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Unity 및 Visual Studio 사용 모범 사례
 

@@ -1,22 +1,22 @@
 ---
-title: MR 및 Azure 313-IoT Hub 서비스
+title: MR 및 Azure 313 - IoT Hub 서비스
 description: 이 과정을 완료 하 여 Ubuntu 16.4를 실행 하는 가상 머신에서 Azure IoT Hub 서비스를 구현한 다음 Microsoft HoloLens 또는 모던 (VR) 헤드셋을 사용 하 여 메시지 데이터를 시각화 하는 방법을 알아보세요.
 author: drneil
 ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
-keywords: azure, mixed reality, 아카데미, edge, iot edge, 자습서, api, 알림, 기능, 테이블, hololens, 몰입 형, vr, iot, virtual machine, ubuntu, python
-ms.openlocfilehash: 14b7eb3774de3cfdd74e7270de63e3a80384cdca
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: azure, mixed reality, 아카데미, edge, iot edge, 자습서, api, 알림, 함수, 테이블, hololens, 몰입 형, vr, iot, virtual machine, ubuntu, python, Windows 10, Visual Studio
+ms.openlocfilehash: 2a642bad363d86e37ca2d6c00ebf1ebb73908dec
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91689945"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679512"
 ---
 # <a name="mr-and-azure-313-iot-hub-service"></a>MR 및 Azure 313: IoT Hub 서비스
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_** .  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
 
 ![과정 결과](images/AzureLabs-Lab313-00.png)
 
@@ -55,7 +55,7 @@ ms.locfileid: "91689945"
 </tr>
 </table>
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 최신 필수 구성 요소는 [도구 설치](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) 문서를 참조 하세요.
 
@@ -79,7 +79,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
 
 
-### <a name="before-you-start"></a>시작하기 전에
+### <a name="before-you-start"></a>시작하기 전 확인 사항
 
 1. HoloLens를 설정 하 고 테스트 합니다. HoloLens를 설정 하는 데 지원이 필요한 경우 [hololens 설정 문서를 방문](https://docs.microsoft.com/hololens/hololens-setup)해야 합니다.
 2. 새 HoloLens 앱 개발을 시작할 때 **보정** 및 **센서 조정을** 수행 하는 것이 좋습니다 (경우에 따라 각 사용자에 대해 해당 작업을 수행 하는 데 도움이 될 수 있음).
@@ -246,7 +246,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
     [![windows 용 docker 다운로드](images/AzureLabs-Lab313-21.png)](https://store.docker.com/editions/community/docker-ce-desktop-windows)
 
     > [!IMPORTANT]
-    > Docker를 실행 하려면 *windows 10 PRO* , *Enterprise 14393* 또는 *windows Server 2016 RTM* 이 필요 합니다. 다른 버전의 Windows 10을 실행 하는 경우 [Docker 도구 상자](https://docs.docker.com/toolbox/toolbox_install_windows/)를 사용 하 여 docker를 설치 해 볼 수 있습니다.
+    > Docker를 실행 하려면 *windows 10 PRO*, *Enterprise 14393* 또는 *windows Server 2016 RTM* 이 필요 합니다. 다른 버전의 Windows 10을 실행 하는 경우 [Docker 도구 상자](https://docs.docker.com/toolbox/toolbox_install_windows/)를 사용 하 여 docker를 설치 해 볼 수 있습니다.
 
 2.  [Python 3.6](https://www.python.org/downloads/).
 
@@ -271,7 +271,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
 1.  **Ubuntu 터미널** 을 열고 다음 명령을 사용 하 여 **pip** 를 설치 합니다.
 
-    > [! 힌트] 바로 가기 키 ( **Ctrl + Alt + T** )를 사용 하 여 *터미널* 을 매우 쉽게 열 수 있습니다.
+    > [! 힌트] 바로 가기 키 ( **Ctrl + Alt + T**)를 사용 하 여 *터미널* 을 매우 쉽게 열 수 있습니다.
 
     ```bash
         sudo apt-get install python-pip
@@ -307,7 +307,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
         sudo apt-get install iotedge
     ```
 
-5. 이 시점에서 *런타임 구성 파일* 을 열고, (메모장에서) **IoT Hub 서비스** 를 만들 때 ( [13 장의 3 단계](#chapter-3---the-iot-hub-service))에 적어 둔 **장치 연결 문자열** 을 삽입 하 라는 메시지가 표시 됩니다. 터미널에서 다음 줄을 실행 하 여 해당 파일을 엽니다.
+5. 이 시점에서 *런타임 구성 파일* 을 열고, (메모장에서) **IoT Hub 서비스** 를 만들 때 ([13 장의 3 단계](#chapter-3---the-iot-hub-service))에 적어 둔 **장치 연결 문자열** 을 삽입 하 라는 메시지가 표시 됩니다. 터미널에서 다음 줄을 실행 하 여 해당 파일을 엽니다.
 
     ```bash
         sudo nano /etc/iotedge/config.yaml
@@ -320,7 +320,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
     1.  키보드의 화살표 키를 사용 하 여 아래로 스크롤합니다 (약간 아래로 스크롤해야 하는 경우).
 
-        " **\<ADD DEVICE CONNECTION STRING HERE>** ".
+        "**\<ADD DEVICE CONNECTION STRING HERE>**".
 
     2. **괄호를 포함** 한 줄을 앞에서 설명한 **장치 연결 문자열로** 대체 합니다.
 
@@ -404,9 +404,9 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
 7. 미리 빌드된 *Docker 이미지 리포지토리* 주소가 색상표에 표시 됩니다. 다음과 같이 표시 됩니다.
 
-    **localhost: 5000/-모듈의 이름-** . 
+    **localhost: 5000/-모듈의 이름-**. 
 
-8. **Localhost: 5000** 을 삭제 하 고 해당 위치에서 **Container Registry 서비스** 를 만들 때 기록한 *Container Registry* **로그인 서버** 주소 ( [2 장의 8 단계](#chapter-2---the-container-registry-service))를 삽입 합니다. **Enter** 키를 눌러 주소를 확인 합니다.
+8. **Localhost: 5000** 을 삭제 하 고 해당 위치에서 **Container Registry 서비스** 를 만들 때 기록한 *Container Registry* **로그인 서버** 주소 ([2 장의 8 단계](#chapter-2---the-container-registry-service))를 삽입 합니다. **Enter** 키를 눌러 주소를 확인 합니다.
 
 9. 이 시점에서 Python 모듈에 대 한 템플릿이 포함 된 솔루션이 만들어지고 해당 구조가 화면 왼쪽에 있는 VS Code의 **탐색 탭** 에 표시 됩니다. **탐색 탭** 이 열려 있지 않으면 왼쪽 표시줄에서 맨 위에 있는 단추를 클릭 하 여 열 수 있습니다.
 
@@ -421,7 +421,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 이제 다음 파일을 업데이트 하 여 컨테이너 솔루션을 완료 합니다.
 
 - *<span></span> py* python 스크립트입니다.
-- *requirements.txt* .
+- *requirements.txt*.
 - *deployment.template.js* 합니다.
 - *Dockerfile. amd64*
 
@@ -744,7 +744,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
 ## <a name="chapter-9---package-the-solution-as-a-container"></a>9 장-솔루션을 컨테이너로 패키지
 
-1.  이제 파일을 컨테이너로 "패키지" 하 고 **Azure Container Registry** 에 푸시할 수 있습니다. VS Code 내에서 *통합 터미널* ( **View**  >  **integrated terminal** 또는 **Ctrl** )을 열고 + **\`** 다음 줄을 사용 하 여 **Docker** 에 로그인 합니다 (명령 값을 **ACR (Azure Container Registry** 의 자격 증명으로 대체).
+1.  이제 파일을 컨테이너로 "패키지" 하 고 **Azure Container Registry** 에 푸시할 수 있습니다. VS Code 내에서 *통합 터미널* (**View**  >  **integrated terminal** 또는 **Ctrl**)을 열고 + **\`** 다음 줄을 사용 하 여 **Docker** 에 로그인 합니다 (명령 값을 **ACR (Azure Container Registry** 의 자격 증명으로 대체).
 
     ```bash
         docker login -u <ACR username> -p <ACR password> <ACR login server>
@@ -852,7 +852,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
 5. **만들기** 를 클릭 하면 패널이 표시 됩니다.
 
-    1. 이 서비스 인스턴스의 원하는 **이름을** 삽입 합니다 ( *모두 소문자 여야 함* ).
+    1. 이 서비스 인스턴스의 원하는 **이름을** 삽입 합니다 (*모두 소문자 여야 함*).
 
     2. **배포 모델** 에서 **리소스 관리자** 를 클릭 합니다.
 
@@ -906,7 +906,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
     ![새 테이블을 만들었습니다.](images/AzureLabs-Lab313-43.png) 
 
-14. 왼쪽의 패널을 다시 사용 하 여 *테이블 서비스* 섹션으로 스크롤하고 테이블 (또는 새 포털에서 **테이블 찾아보기** ) **을 클릭 하** 고 **테이블 URL** (메모장 사용)의 복사본을 가져옵니다. 이 과정에서 나중에 테이블을 **Power BI** 응용 프로그램에 연결할 때이 값을 사용 합니다.
+14. 왼쪽의 패널을 다시 사용 하 여 *테이블 서비스* 섹션으로 스크롤하고 테이블 (또는 새 포털에서 **테이블 찾아보기**) **을 클릭 하** 고 **테이블 URL** (메모장 사용)의 복사본을 가져옵니다. 이 과정에서 나중에 테이블을 **Power BI** 응용 프로그램에 연결할 때이 값을 사용 합니다.
 
     ![새 테이블을 만들었습니다.](images/AzureLabs-Lab313-44.png)
 
@@ -945,13 +945,13 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
 8. 다음 값을 업데이트합니다.
 
-    - 이름: **PartitionKey** , 값: **PK_IoTMessages** 
+    - 이름: **PartitionKey**, 값: **PK_IoTMessages** 
 
-    - 이름: **Rowkey** , 값: **RK_1_IoTMessages** 
+    - 이름: **Rowkey**, 값: **RK_1_IoTMessages** 
 
 9. 그런 다음 *엔터티 추가* 창의 왼쪽 아래에 있는 **속성 추가** 를 클릭 하 고 다음 속성을 추가 합니다.
 
-    - **MessageContent** , *문자열* , 값을 비워 둡니다.
+    - **MessageContent**, *문자열*, 값을 비워 둡니다.
 
 10. 테이블은 아래 이미지에 있는 것과 일치 해야 합니다.
 
@@ -1055,7 +1055,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
     ![사용자 지정 함수](images/AzureLabs-Lab313-61.png)
 
-15. 표시 되는 창에서 **IoT Hub** 가 선택 되어 있는지 확인 하 고 *IoT Hub* 필드 이름이 이전에 만든 *IoT Hub 서비스* 의 이름 ( [3 장의 8 단계](#chapter-3---the-iot-hub-service))과 일치 하는지 확인 합니다. 그런 다음 **선택** 단추를 클릭 합니다.
+15. 표시 되는 창에서 **IoT Hub** 가 선택 되어 있는지 확인 하 고 *IoT Hub* 필드 이름이 이전에 만든 *IoT Hub 서비스* 의 이름 ([3 장의 8 단계](#chapter-3---the-iot-hub-service))과 일치 하는지 확인 합니다. 그런 다음 **선택** 단추를 클릭 합니다.
 
     ![사용자 지정 함수](images/AzureLabs-Lab313-62.png)
 
@@ -1134,10 +1134,10 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
 19. 다음 변수를 변경 하 여 **저장소 계정** 에서 찾을 수 있는 **적절 한 값 (** [11 장에서 각각 11 장, 13 단계](#chapter-11---create-table-service))에 해당 하 **는 값에** 해당 하는 변수를 변경 합니다.
 
-    - **tableName** - **저장소 계정** 에 있는 **테이블** 의 이름을 사용 합니다.
-    - **Tableurl** - **저장소 계정** 에 있는 **테이블** 의 url을 사용 합니다.
-    - **Storageaccountname** , **저장소 계정** 이름 이름에 해당 하는 값의 이름을 사용 합니다.
-    - 이전에 만든 저장소 서비스에서 가져온 키를 사용 하 여 **storageAccountKey** .
+    - **tableName**- **저장소 계정** 에 있는 **테이블** 의 이름을 사용 합니다.
+    - **Tableurl**- **저장소 계정** 에 있는 **테이블** 의 url을 사용 합니다.
+    - **Storageaccountname**, **저장소 계정** 이름 이름에 해당 하는 값의 이름을 사용 합니다.
+    - 이전에 만든 저장소 서비스에서 가져온 키를 사용 하 여 **storageAccountKey**.
 
     ![사용자 지정 함수](images/AzureLabs-Lab313-65.png)
 
@@ -1190,19 +1190,19 @@ IOT 장치에서 데이터를 시각화 하려면 **Power BI** (데스크톱 버
 
 3.  **Microsoft 365 계정** 으로 *Power BI* 에 로그인 합니다. 등록 하려면 브라우저로 리디렉션될 수 있습니다. 등록 하면 Power BI 앱으로 돌아가서 다시 로그인 합니다.
 
-4.  **데이터 가져오기** 를 클릭 하 고 **자세히** ...를 클릭 합니다.
+4.  **데이터 가져오기** 를 클릭 하 고 **자세히**...를 클릭 합니다.
 
     ![Power BI](images/AzureLabs-Lab313-74.png)
 
-5.  **Azure** , **azure Table Storage** 를 클릭 한 다음 **연결** 을 클릭 합니다.
+5.  **Azure**, **azure Table Storage** 를 클릭 한 다음 **연결** 을 클릭 합니다.
 
     ![Power BI](images/AzureLabs-Lab313-75.png)
 
-6.  테이블 서비스를 만드는 동안 이전에 수집한 **테이블 URL** ( [11 장의 13 단계](#chapter-11---create-table-service))을 삽입 하 라는 메시지가 표시 됩니다. URL을 삽입 한 후에 "하위 폴더" 테이블을 참조 하는 경로 부분을 삭제 합니다 (이 과정에서는 I이상 메시지). 최종 결과는 아래 이미지에 표시 된 것과 같아야 합니다. 그런 다음 **확인** 을 클릭 합니다.
+6.  테이블 서비스를 만드는 동안 이전에 수집한 **테이블 URL** ([11 장의 13 단계](#chapter-11---create-table-service))을 삽입 하 라는 메시지가 표시 됩니다. URL을 삽입 한 후에 "하위 폴더" 테이블을 참조 하는 경로 부분을 삭제 합니다 (이 과정에서는 I이상 메시지). 최종 결과는 아래 이미지에 표시 된 것과 같아야 합니다. 그런 다음 **확인** 을 클릭 합니다.
 
     ![Power BI](images/AzureLabs-Lab313-76.png)
 
-7.  Table Storage를 만드는 동안 앞에서 설명한 **저장소 키** ( [11 장 11 단계](#chapter-11---create-table-service))를 삽입 하 라는 메시지가 표시 됩니다. 그런 다음 **연결** 을 클릭 합니다.
+7.  Table Storage를 만드는 동안 앞에서 설명한 **저장소 키** ([11 장 11 단계](#chapter-11---create-table-service))를 삽입 하 라는 메시지가 표시 됩니다. 그런 다음 **연결** 을 클릭 합니다.
 
     ![Power BI](images/AzureLabs-Lab313-77.png)  
 

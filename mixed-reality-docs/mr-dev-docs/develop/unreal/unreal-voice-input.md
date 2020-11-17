@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Windows Mixed Reality, Unreal, Unreal Engine 4, UE4, HoloLens 2, 음성, 음성 입력, 음성 인식, 혼합 현실, 개발, 기능, 설명서, 가이드, holograms, 게임 개발
-ms.openlocfilehash: 88ab39de5f219691a6c3fe5b4ad3008d9614668e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, Unreal, Unreal Engine 4, UE4, HoloLens 2, 음성, 음성 입력, 음성 인식, 혼합 현실, 개발, 기능, 설명서, 가이드, holograms, 게임 개발, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 79a6043511cc4658ae2451dd8aa6350d8e8037fe
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91689641"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678782"
 ---
 # <a name="voice-input-in-unreal"></a>Unreal의 음성 입력
 
@@ -50,7 +50,7 @@ HoloLens에서 음성 인식을 사용 하도록 설정 하려면:
 음성 매핑은 작업 또는 축 매핑과 같은 입력 구성 요소나 이벤트 그래프의 청사진 노드로 사용할 수 있습니다. 예를 들어, 단어를 음성으로 연결 하는 경우에 따라 두 개의 다른 로그를 출력 하도록 점프 명령을 연결할 수 있습니다.
 
 1. 청사진을 두 번 클릭 하 여 **이벤트 그래프** 에서 엽니다.
-2. **마우스 오른쪽 단추를 클릭** 하 고 음성 매핑의 **작업 이름** (이 경우 **jumpWord** )을 검색 한 다음 **enter 키** 를 누릅니다. 그러면 **입력 동작** 노드가 그래프에 추가 됩니다.
+2. **마우스 오른쪽 단추를 클릭** 하 고 음성 매핑의 **작업 이름** (이 경우 **jumpWord**)을 검색 한 다음 **enter 키** 를 누릅니다. 그러면 **입력 동작** 노드가 그래프에 추가 됩니다.
 3. 아래 이미지에 나와 있는 것 처럼 **누름** 핀을 끌어 **문자열 노드에 인쇄** 합니다. **릴리스된** pin은 비워 둘 수 있으며, 음성 매핑에 대해서는 아무 것도 실행 되지 않습니다.
  
 ![음성에 대 한 간단한 작업](images/unreal/voice-input-img-03.png)
@@ -66,9 +66,9 @@ HoloLens에서 음성 인식을 사용 하도록 설정 하려면:
 > [!div class="nextstepaction"]
 > [HoloLens 카메라](unreal-hololens-camera.md)
 
-언제 든 지 [실제 개발 검사점](unreal-development-overview.md#2-core-building-blocks) 으로 돌아갈 수 있습니다.
+언제든지 [Unreal 개발 검사점](unreal-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [음성 입력](../../design/voice-input.md)
 * [응시 및 커밋](../../design/gaze-and-commit.md)
 * [Instinctual 상호 작용](../../design/interaction-fundamentals.md)

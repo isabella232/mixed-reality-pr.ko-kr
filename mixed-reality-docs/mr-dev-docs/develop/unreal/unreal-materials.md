@@ -1,19 +1,19 @@
 ---
-title: Real의 재질 권장 사항
+title: Unreal의 재질 권장 사항
 description: Unreal engine의 재질 개요.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/18/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 개발, 자료, 설명서, 가이드, 기능, holograms, 게임 개발
-ms.openlocfilehash: bfce6e6bf8acd58821dba1213e1f1ab571d85a0c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 개발, 자료, 설명서, 가이드, 기능, holograms, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: d57689e9427ab5877e3afb49b0d19f35df6c47d2
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684545"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678942"
 ---
-# <a name="material-recommendations-in-unreal"></a>Real의 재질 권장 사항
+# <a name="material-recommendations-in-unreal"></a>Unreal의 재질 권장 사항
 
 자료는 Unreal Engine에서 성능을 만들거나 중단할 수 있습니다. 이 페이지는 최상의 성능을 얻기 위해 사용 해야 하는 기본 설정에 대 한 빠른 시작의 역할을 합니다.
 
@@ -73,7 +73,7 @@ ms.locfileid: "91684545"
 
 재질 인스턴스를 만들 때 재질에 대해 재료 인스턴스 **상수** 에 대 한 기본 설정을 지정 해야 합니다. **재료 인스턴스 상수** 는 런타임 이전에 한 번만 계산 하는 인스턴스화된 재질입니다.
 
-콘텐츠 브라우저를 통해 만든 재질 인스턴스 ( **재질 인스턴스 > 만들기를 마우스 오른쪽 단추로 클릭** )는 재질 인스턴스 상수입니다. 자재 인스턴스 동적은 코드를 통해 생성 됩니다. 자료 인스턴스에 대 한 자세한 내용은 [Unreal Engine 설명서](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)에서 확인할 수 있습니다.
+콘텐츠 브라우저를 통해 만든 재질 인스턴스 (**재질 인스턴스 > 만들기를 마우스 오른쪽 단추로 클릭**)는 재질 인스턴스 상수입니다. 자재 인스턴스 동적은 코드를 통해 생성 됩니다. 자료 인스턴스에 대 한 자세한 내용은 [Unreal Engine 설명서](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)에서 확인할 수 있습니다.
 
 ![Unreal에서 재질 인스턴스 만들기](images/unreal-materials-img-08.png)
 

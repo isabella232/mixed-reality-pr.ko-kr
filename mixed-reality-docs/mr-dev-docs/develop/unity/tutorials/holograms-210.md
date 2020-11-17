@@ -1,22 +1,22 @@
 ---
-title: MR 입력 210-응시
+title: MR 입력 210 - 응시
 description: Unity, Visual Studio 및 HoloLens를 사용 하 여이 코딩 연습을 수행 하 여 응시 개념에 대 한 자세한 내용을 알아보세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit, 아카데미, 자습서, 응시
-ms.openlocfilehash: b513d304e78d51b447f0bbba4990fb7df0556707
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 응시, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
+ms.openlocfilehash: 2cbbdba0a74ab94c6a291cbe6af1cd1ae9020fe4
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686449"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677252"
 ---
 # <a name="mr-input-210-gaze"></a>MR 입력 210: 응시
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_** .  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](../../../mr-learning-base-01.md)가 게시되었습니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](../../../mr-learning-base-01.md)가 게시되었습니다.
 
 [응시](../../../design/gaze-and-commit.md) 는 첫 번째 입력 형태 이며 사용자의 의도 및 인식을 표시 합니다. MR 입력 210 (즉, 프로젝트 탐색기)은 Windows Mixed Reality의 응시 관련 개념을 자세히 설명 합니다. 앱이 사용자의 응시에 대해 알고 있는 기능을 최대한 활용 하 여 커서 및 holograms에 상황별 인식을 추가할 예정입니다.
 
@@ -43,9 +43,9 @@ ms.locfileid: "91686449"
 </tr>
 </table>
 
-## <a name="before-you-start"></a>시작하기 전에
+## <a name="before-you-start"></a>시작하기 전 확인 사항
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>사전 요구 사항
 
 * 올바른 [도구로](../../../develop/install-the-tools.md)구성 된 WINDOWS 10 PC입니다.
 * 몇 가지 기본적인 c # 프로그래밍 기능.
@@ -74,7 +74,7 @@ ms.locfileid: "91686449"
 * 자산을 가져오고 장면을 설정합니다.
 * HoloLens에서 astronaut를 확인 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 1. Unity를 시작합니다.
 2. **새 프로젝트** 를 선택합니다.
@@ -134,7 +134,7 @@ ms.locfileid: "91686449"
 
 1. 새 장면: 파일을 저장 하 **> 장면을 저장** 합니다.
 2. **새 폴더** 를 클릭 하 고 폴더 이름을 **장면** 으로 합니다.
-3. 파일 이름을 " **Modelexplorer** "로 하 고 해당 파일을 **백그라운드** 폴더에 저장 합니다.
+3. 파일 이름을 "**Modelexplorer**"로 하 고 해당 파일을 **백그라운드** 폴더에 저장 합니다.
 
 ### <a name="build-the-project"></a>프로젝트 빌드
 
@@ -184,7 +184,7 @@ HoloLens에 배포 하는 경우:
 * 커서를 너무 작거나 크게 표시 하지 않습니다.
 * 방해 하지 않는지 콘텐츠를 방지 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 1. **HoloToolkit\Input\Prefabs** 폴더에서 **inputmanager** 자산을 찾습니다.
 2. **Inputmanager** 를 **계층 구조** 에 끌어다 놓습니다.
@@ -203,7 +203,7 @@ HoloLens에 배포 하는 경우:
 4. **디버그를 클릭 하 > 디버깅 하지 않고 시작** 을 클릭 하거나 **ctrl + F5** 를 누릅니다.
 5. 커서를 그리는 방법 및 홀로그램을 터치 하는 경우 모양이 어떻게 변경 되는지 관찰 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 1. **계층** 패널에서 **AstroMan** -> **GEO_G** -> **Back_Center** 개체를 확장 합니다.
 2. **Interactible.cs** 를 두 번 클릭 하 여 Visual Studio에서 엽니다.
@@ -248,7 +248,7 @@ void IFocusable.OnFocusExit()
 * Holograms을 더 쉽게 대상으로 지정 합니다.
 * 안정화 자연 헤드 이동.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 1. **계층** 패널에서 **inputmanager** 개체를 선택 합니다.
 2. **검사기** 패널에서 **응시 안정기** 스크립트를 찾습니다. 원하는 경우 클릭 하 여 Visual Studio에서 엽니다.
@@ -263,7 +263,7 @@ void IFocusable.OnFocusExit()
 
 * 커서에 방향 표시기를 추가 하 여 holograms를 찾을 수 있습니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 **DirectionIndicator.cs** 파일을 사용할 예정입니다.
 
@@ -300,13 +300,13 @@ void IFocusable.OnFocusExit()
 6. 관점을 변경 하는 방법에 관계 없이 빌보드 개체가 어떻게 되는지 확인 합니다.
 7. 지금은 **AstroMan** 에서 스크립트를 삭제 합니다.
 
-## <a name="chapter-6---tag-along"></a>6 장-태그 동반
+## <a name="chapter-6---tag-along"></a>6 장-Tag-Along
 
 >[!VIDEO https://www.youtube.com/embed/Ct8ORZAX5JU]
 
 ### <a name="objectives"></a>목표
 
-* 태그를 사용 하 여 holograms에 대 한 의견을 보내 주시기 바랍니다.
+* Tag-Along를 사용 하 여 실내에서 holograms을 따라갈 수 있습니다.
 
 이 문제를 해결 하는 동안 다음과 같은 설계 제약 조건을 따릅니다.
 
@@ -320,9 +320,9 @@ void IFocusable.OnFocusExit()
 
 **SimpleTagalong.cs** 파일을 사용할 예정입니다.
 
-1. 태그 동반 개체가 카메라 범위 내에 있는지 여부를 확인 합니다.
-2. 뷰 내에 없는 경우 태그를 뷰에 부분적으로 배치 합니다.
-3. 그렇지 않으면 사용자의 기본 거리를 따라 태그를 배치 합니다.
+1. Tag-Along 개체가 카메라 범위 내에 있는지 여부를 확인 합니다.
+2. 뷰 내에 있지 않은 경우 Tag-Along를 뷰 사이에 부분적으로 배치 합니다.
+3. 그렇지 않으면 사용자의 기본 거리에 Tag-Along을 배치 합니다.
 
 이렇게 하려면 먼저 **TagalongAction** 를 호출 하도록 **Interactible.cs** 스크립트를 변경 해야 합니다.
 
@@ -355,7 +355,7 @@ if (interactibleAction != null)
 
 * TagalongAction 스크립트 (InteractibleAction에서 상속 됨)의 PerformAction 함수에 기능을 추가 합니다.
 * Billboarding을 gazed 개체에 추가 하 고 피벗 축을 XY로 설정 합니다.
-* 그런 다음 개체에 간단한 태그를 추가 합니다.
+* 그런 다음 단순 Tag-Along를 개체에 추가 합니다.
 
 **TagalongAction.cs** 의 솔루션은 다음과 같습니다.
 

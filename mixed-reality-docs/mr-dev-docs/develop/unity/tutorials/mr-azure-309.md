@@ -5,20 +5,20 @@ author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: azure, mixed reality, 아카데미, unity, 자습서, api, application insights, hololens, 몰입 형, vr
-ms.openlocfilehash: 51717ba8a2d0c46e18c66575497994d9d792184c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: azure, mixed reality, 아카데미, unity, 자습서, api, application insights, hololens, 모던, vr, Windows 10, Visual Studio
+ms.openlocfilehash: d663da0e3a0d00532669a122dc95f2089bf08712
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687705"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679472"
 ---
 # <a name="mr-and-azure-309-application-insights"></a>MR 및 Azure 309: Application Insights
 
 <br>
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_** .  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
 
 <br>
 
@@ -49,7 +49,7 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
 > [!NOTE]
 > 이 과정에서 주로 Windows Mixed Reality (VR) 헤드셋에 초점을 맞춘 반면,이 과정에서 학습 하는 내용을 Microsoft HoloLens에도 적용할 수 있습니다. 과정을 진행할 때 HoloLens를 지원 하기 위해 사용 해야 하는 모든 변경 내용에 대 한 메모를 볼 수 있습니다. HoloLens를 사용 하는 경우 음성 캡처 중에 몇 가지 echo를 확인할 수 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 > [!NOTE]
 > 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (7 월 2018)을 나타냅니다. [도구 설치](../../install-the-tools.md) 문서에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.
@@ -65,7 +65,7 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
 - 기본 제공 마이크가 있는 헤드폰 집합 (헤드셋에 기본 제공 mic 및 스피커가 없는 경우)
 - Azure 설정 및 Application Insights 데이터 검색을 위한 인터넷 액세스
 
-## <a name="before-you-start"></a>시작하기 전에
+## <a name="before-you-start"></a>시작하기 전 확인 사항
 
 이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.)
 
@@ -130,7 +130,7 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
     >  이 웹 페이지를 열어 쉽게 액세스할 수 있게 되 면 수집 된 데이터를 확인 하기 위해 여기로 다시 돌아옵니다.
 
     > [!IMPORTANT]
-    > Application Insights를 구현 하려면 **계측 키** , **응용 프로그램 ID** 및 **API 키** 의 세 가지 특정 값 (3)을 사용 해야 합니다. 아래에는 서비스에서 이러한 값을 검색 하는 방법이 나와 있습니다. 이 값은 코드에서 곧 사용 되므로 빈 *메모장* 페이지에서이 값을 기록해 두어야 합니다.
+    > Application Insights를 구현 하려면 **계측 키**, **응용 프로그램 ID** 및 **API 키** 의 세 가지 특정 값 (3)을 사용 해야 합니다. 아래에는 서비스에서 이러한 값을 검색 하는 방법이 나와 있습니다. 이 값은 코드에서 곧 사용 되므로 빈 *메모장* 페이지에서이 값을 기록해 두어야 합니다.
 
 9.  **계측 키** 를 찾으려면 서비스 함수 목록을 아래로 스크롤하고 **속성** 을 클릭 해야 합니다. 그러면 표시 되는 탭에 **서비스 키** 가 표시 됩니다.
 
@@ -223,7 +223,7 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
 
             ![Unity 프로젝트 설정](images/AzureLabs-Lab309-20.png)
 
-    3.  패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음), **지원 되는 틱 가상 현실** , **Windows Mixed reality SDK** 가 추가 되어 있는지 확인 합니다.
+    3.  패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음), **지원 되는 틱 가상 현실**, **Windows Mixed reality SDK** 가 추가 되어 있는지 확인 합니다.
 
         ![Unity 프로젝트 설정](images/AzureLabs-Lab309-21.png)
 
@@ -231,7 +231,7 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
 
 10.  빌드 설정 창을 닫습니다.
 
-11.  장면 및 프로젝트를 저장 합니다 ( **파일**  >  **저장 장면/파일**  >  **저장 프로젝트** ).
+11.  장면 및 프로젝트를 저장 합니다 (**파일**  >  **저장 장면/파일**  >  **저장 프로젝트**).
 
 
 ## <a name="chapter-3---import-the-unity-package"></a>3 장-Unity 패키지 가져오기
@@ -327,7 +327,7 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
 
     ![Unity 장면에서 개체 설정](images/AzureLabs-Lab309-36.png) ![Unity 장면에서 개체 설정](images/AzureLabs-Lab309-37.png)
 
-6.  새 **파랑** 자료를 선택한 상태에서 *검사기* 를 확인 하 고 **albedo** 와 함께 사각형 창을 클릭 합니다. 파란색을 선택 합니다 (아래 그림은 **16 진수 색: \# 3592ffff** ). 선택한 후 닫기 단추를 클릭 합니다.
+6.  새 **파랑** 자료를 선택한 상태에서 *검사기* 를 확인 하 고 **albedo** 와 함께 사각형 창을 클릭 합니다. 파란색을 선택 합니다 (아래 그림은 **16 진수 색: \# 3592ffff**). 선택한 후 닫기 단추를 클릭 합니다.
 
     ![Unity 장면에서 개체 설정](images/AzureLabs-Lab309-38.png)
 
@@ -352,7 +352,7 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
     > [!NOTE]
     > 이러한 *위치* 값은 *제안* 입니다. 개체의 위치를 원하는 대로 설정할 수 있지만, 개체 거리가 카메라에서 멀리 떨어져 있지 않으면 응용 프로그램 사용자가 더 쉽게 작업할 수 있습니다.
 
-11. 응용 프로그램을 실행 하는 경우 장면 내에서 개체를 식별할 수 있어야 합니다 .이를 위해서는 태그를 지정 해야 합니다. 개체 중 하나를 선택 하 고 *검사기* 패널에서 **태그 추가** ...를 클릭 합니다. 그러면 *검사기* 가 **& 레이어** 패널의 태그로 바뀝니다.
+11. 응용 프로그램을 실행 하는 경우 장면 내에서 개체를 식별할 수 있어야 합니다 .이를 위해서는 태그를 지정 해야 합니다. 개체 중 하나를 선택 하 고 *검사기* 패널에서 **태그 추가**...를 클릭 합니다. 그러면 *검사기* 가 **& 레이어** 패널의 태그로 바뀝니다.
 
     ![Unity 장면 ](images/AzureLabs-Lab309-41.png) 에서 개체 설정 ![](images/AzureLabs-Lab309-42.png)
 
@@ -361,9 +361,9 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
     ![Unity 장면에서 개체 설정](images/AzureLabs-Lab309-43.png)
 
     > [!WARNING]
-    > 태그에 다른 이름을 사용 하는 경우에는 나중에이 변경 내용이 *DataFromAnalytics* , *Objecttrigger* 및 *응시* 로 설정 되었는지 확인 하 여 장면 내에서 개체가 검색 되 고 검색 되도록 해야 합니다.
+    > 태그에 다른 이름을 사용 하는 경우에는 나중에이 변경 내용이 *DataFromAnalytics*, *Objecttrigger* 및 *응시* 로 설정 되었는지 확인 하 여 장면 내에서 개체가 검색 되 고 검색 되도록 해야 합니다.
 
-13. 태그를 만든 후에는 세 개체 모두에 적용 해야 합니다. *계층 구조* 에서 **shift** 키를 누른 상태에서 **캡슐** , **큐브** 및 **구** 개체를 클릭 한 다음 *검사기* 에서 **태그** 옆에 있는 드롭다운 메뉴를 클릭 하 고 만든 *objectinscene* 태그를 클릭 합니다.
+13. 태그를 만든 후에는 세 개체 모두에 적용 해야 합니다. *계층 구조* 에서 **shift** 키를 누른 상태에서 **캡슐**, **큐브** 및 **구** 개체를 클릭 한 다음 *검사기* 에서 **태그** 옆에 있는 드롭다운 메뉴를 클릭 하 고 만든 *objectinscene* 태그를 클릭 합니다.
 
     ![Unity 장면 ](images/AzureLabs-Lab309-44.png) 에서 개체 설정 ![](images/AzureLabs-Lab309-45.png)
 
@@ -1207,7 +1207,7 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
 
 이제이 프로젝트의 Unity 섹션에 필요한 모든 항목이 완료 되었으므로 Unity에서 빌드할 수 있습니다.
 
-1.  **빌드 설정** 으로 이동 합니다 ( **파일**  >  **빌드 설정** ).
+1.  **빌드 설정** 으로 이동 합니다 (**파일**  >  **빌드 설정**).
 
 2.  **빌드 설정** 창에서 **빌드** 를 클릭 합니다.
 

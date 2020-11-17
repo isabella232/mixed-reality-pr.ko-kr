@@ -1,22 +1,22 @@
 ---
-title: MR 공간 230-공간 매핑
+title: MR 공간 230 - 공간 매핑
 description: Unity, Visual Studio 및 HoloLens를 사용 하 여이 코딩 연습을 수행 하 여 공간 매핑 개념에 대 한 자세한 내용을 알아보세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit, 아카데미, 자습서, 공간 매핑, 표면 재구성, 메시
-ms.openlocfilehash: 312ae8f36904fe902852018ab0f76052a17fe398
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 공간 매핑, 표면 재구성, 메시, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
+ms.openlocfilehash: dc96fbff43c21216e3b860f1dbbbaae330e1f176
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687280"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677192"
 ---
 # <a name="mr-spatial-230-spatial-mapping"></a>MR 공간 230: 공간 매핑
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_** .  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](../../../mr-learning-base-01.md)가 게시되었습니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](../../../mr-learning-base-01.md)가 게시되었습니다.
 
 [공간 매핑은](../../../design/spatial-mapping.md) 환경에 대 한 holograms을 교육 하 여 실제 세계와 가상 세계를 함께 결합 합니다. MR 공간 230 (Project Planetarium)에서 다음을 수행 하는 방법을 알아봅니다.
 
@@ -38,9 +38,9 @@ ms.locfileid: "91687280"
 </tr>
 </table>
 
-## <a name="before-you-start"></a>시작하기 전에
+## <a name="before-you-start"></a>시작하기 전 확인 사항
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>사전 요구 사항
 
 * 올바른 [도구로](../../../develop/install-the-tools.md)구성 된 WINDOWS 10 PC입니다.
 * 몇 가지 기본적인 c # 프로그래밍 기능.
@@ -60,7 +60,7 @@ ms.locfileid: "91687280"
 
 ### <a name="notes"></a>참고
 
-* Visual Studio의 "내 코드만 사용"은 코드에서 중단점을 적중 하기 위해 디버깅 > 도구 > 옵션에서 비활성화 ( *선택 취소* ) 해야 합니다.
+* Visual Studio의 "내 코드만 사용"은 코드에서 중단점을 적중 하기 위해 디버깅 > 도구 > 옵션에서 비활성화 (*선택 취소*) 해야 합니다.
 
 ## <a name="unity-setup"></a>Unity 설치
 
@@ -98,10 +98,10 @@ ms.locfileid: "91687280"
 * **커서** Prefab을 **계층** 으로 끌어 & 놓습니다.
 * **계층** 패널에서 **Cursor** 개체를 선택 합니다.
 * **검사기** 패널에서 **계층** 드롭다운을 클릭 하 고 **계층 편집 ...** 을 선택 합니다.
-* **사용자 계층 31** 의 이름을 " **SpatialMapping** "로 합니다.
+* **사용자 계층 31** 의 이름을 "**SpatialMapping**"로 합니다.
 * 새 장면: 파일 > 저장 하 고 다른 **이름으로 장면 저장** ...
 * **새 폴더** 를 클릭 하 고 폴더 이름을 **장면** 으로 합니다.
-* 파일 이름을 " **Planetarium** "로 하 고 해당 파일을 **백그라운드** 폴더에 저장 합니다.
+* 파일 이름을 "**Planetarium**"로 하 고 해당 파일을 **백그라운드** 폴더에 저장 합니다.
 
 ## <a name="chapter-1---scanning"></a>1 장-검색
 
@@ -151,7 +151,7 @@ ms.locfileid: "91687280"
 * **연결** 을 클릭합니다.
 * GPU에서 프레임을 렌더링 하는 데 걸리는 시간 (밀리초)을 관찰 합니다.
 * 장치에서 응용 프로그램이 실행 되는 것을 중지 합니다.
-* Visual Studio로 돌아가서 **SpatialMappingObserver.cs** 을 엽니다. 이 파일은 어셈블리-CSharp (유니버설 Windows) 프로젝트의 HoloToolkit\SpatialMapping 폴더에서 찾을 수 있습니다.
+* Visual Studio로 돌아가서 **SpatialMappingObserver.cs** 을 엽니다. Assembly-CSharp (유니버설 Windows) 프로젝트의 HoloToolkit\SpatialMapping 폴더에서 찾을 수 있습니다.
 * 해제 **()** 함수를 찾고 다음 코드 줄을 추가 합니다. **TrianglesPerCubicMeter = 1200;**
 * 장치에 프로젝트를 다시 배포 하 고 **프로파일러를 다시 연결** 합니다. 프레임을 렌더링 하는 시간 (밀리초)의 변경 내용을 관찰 합니다.
 * 장치에서 응용 프로그램이 실행 되는 것을 중지 합니다.

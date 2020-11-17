@@ -5,13 +5,13 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
-keywords: 손, 모션 컨트롤러, directx, 입력, holograms
-ms.openlocfilehash: faa9abe224b554c45cf0175b62da40c297122ad1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 손, 동작 컨트롤러, directx, 입력, holograms, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 3dcf3767a537ccc64cb06c6f44d765425a5578b9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685920"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678062"
 ---
 # <a name="hands-and-motion-controllers-in-directx"></a>DirectX의 헤드 및 모션 컨트롤러
 
@@ -102,16 +102,16 @@ GetDetectedSourcesAtTimestamp에 timestamp 매개 변수가 있습니다. 이를
 ## <a name="cross-device-input-properties"></a>장치 간 입력 속성
 SpatialInteractionSource API는 다양 한 기능을 갖춘 컨트롤러 및 핸드 추적 시스템을 지원 합니다. 이러한 기능 중 몇 가지는 장치 유형 간에 공통적으로 제공 됩니다. 예를 들어 직접 추적 및 동작 컨트롤러는 모두 ' select ' 작업과 3D 위치를 제공 합니다. 가능 하면 API는 이러한 일반적인 기능을 SpatialInteractionSource의 동일한 속성에 매핑합니다.  이를 통해 응용 프로그램은 다양 한 입력 형식을 보다 쉽게 지원할 수 있습니다. 다음 표에서는 지원 되는 속성과 이러한 속성이 입력 형식에서 비교 되는 방식을 설명 합니다.
 
-| 속성 | Description | HoloLens (첫 번째 gen) 제스처 | 동작 컨트롤러 | 트레일러 식|
+| 속성 | 설명 | HoloLens (첫 번째 gen) 제스처 | 동작 컨트롤러 | 트레일러 식|
 |--- |--- |--- |--- |--- |
-| [SpatialInteractionSource:: **손**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | 오른쪽 또는 왼쪽/컨트롤러입니다. | 지원되지 않음 | 지원됨 | 지원됨 |
-| [SpatialInteractionSourceState:: **Isselectpressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | 기본 단추의 현재 상태입니다. | 공기 탭 | 트리거 | 완화 공기 탭 (수직으로) |
-| [SpatialInteractionSourceState:: **IsGrasped**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isgrasped) | 잡기 단추의 현재 상태입니다. | 지원되지 않음 | 잡기 단추 | 손가락으로 나 폐쇄 |
-| [SpatialInteractionSourceState:: **IsMenuPressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.ismenupressed) | 메뉴 단추의 현재 상태입니다.    | 지원되지 않음 | 메뉴 단추 | 지원되지 않음 |
-| [SpatialInteractionSourceLocation:: **Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.position) | 컨트롤러에서 손 모양 또는 그립 위치의 XYZ 위치입니다. | 팜 위치 | 그립 포즈 위치 | 팜 위치 |
-| [SpatialInteractionSourceLocation:: **Orientation**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.orientation) | 컨트롤러에서 손 방향 또는 그립 포즈를 나타내는 4 원수입니다. | 지원되지 않음 | 그립 포즈 방향 | 팜 방향 |
-| [SpatialPointerInteractionSourcePose:: **Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | 포인팅 광선의 원점입니다. | 지원되지 않음 | 지원됨 | 지원됨 |
-| [SpatialPointerInteractionSourcePose:: **Forwarddirection**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | 포인팅 광선의 방향입니다. | 지원되지 않음 | 지원됨 | 지원됨 |
+| [SpatialInteractionSource::**손**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | 오른쪽 또는 왼쪽/컨트롤러입니다. | 지원되지 않음 | 지원됨 | 지원됨 |
+| [SpatialInteractionSourceState::**Isselectpressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | 기본 단추의 현재 상태입니다. | 공기 탭 | 트리거 | 완화 공기 탭 (수직으로) |
+| [SpatialInteractionSourceState::**IsGrasped**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isgrasped) | 잡기 단추의 현재 상태입니다. | 지원되지 않음 | 잡기 단추 | 손가락으로 나 폐쇄 |
+| [SpatialInteractionSourceState::**IsMenuPressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.ismenupressed) | 메뉴 단추의 현재 상태입니다.    | 지원되지 않음 | 메뉴 단추 | 지원되지 않음 |
+| [SpatialInteractionSourceLocation::**Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.position) | 컨트롤러에서 손 모양 또는 그립 위치의 XYZ 위치입니다. | 팜 위치 | 그립 포즈 위치 | 팜 위치 |
+| [SpatialInteractionSourceLocation::**Orientation**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.orientation) | 컨트롤러에서 손 방향 또는 그립 포즈를 나타내는 4 원수입니다. | 지원되지 않음 | 그립 포즈 방향 | 팜 방향 |
+| [SpatialPointerInteractionSourcePose::**Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | 포인팅 광선의 원점입니다. | 지원되지 않음 | 지원됨 | 지원됨 |
+| [SpatialPointerInteractionSourcePose::**Forwarddirection**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | 포인팅 광선의 방향입니다. | 지원되지 않음 | 지원됨 | 지원됨 |
 
 일부 속성은 일부 장치에서 사용할 수 없으며 API는이에 대 한 테스트 수단을 제공 합니다. 예를 들어 [SpatialInteractionSource:: Isgrsupported](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.isgraspsupported) 속성을 검사 하 여 원본에서 판단 동작을 제공 하는지 여부를 확인할 수 있습니다.
 
@@ -120,10 +120,10 @@ SpatialInteractionSource API는 다양 한 기능을 갖춘 컨트롤러 및 핸
 Windows Mixed Reality는 다양 한 폼 팩터에서 동작 컨트롤러를 지원 합니다.  또한 트레일러 식 추적 시스템도 지원 합니다.  이러한 모든 시스템에는 앱이 사용자 손으로 개체를 가리키거나 렌더링 하는 데 사용 해야 하는 손 위치와 자연 스러운 "전달" 방향 간에 서로 다른 관계가 있습니다.  이를 모두 지원 하기 위해 직접 추적 및 동작 컨트롤러 모두에 두 가지 유형의 3D 포즈를 제공 합니다.  첫 번째는 그립 포즈 이며 사용자의 손 위치를 나타냅니다.  두 번째는 사용자의 손 또는 컨트롤러에서 시작 하는 광선을 나타내는 포즈를 가리킵니다. 따라서 사용자의 손을 또는 소드와 같은 **사용자의 손으로 저장 된 개체** **를 렌더링 하려면** 그립 포즈를 사용 합니다. 예를 들어 사용자가 **UI를 가리키고** 있는 경우와 같이 컨트롤러에서 raycast를 사용 하려는 경우 포인팅 포즈를 사용 합니다.
 
 [SpatialInteractionSourceState::P roperties:: TryGetLocation (...)](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourceproperties.trygetlocation#Windows_UI_Input_Spatial_SpatialInteractionSourceProperties_TryGetLocation_Windows_Perception_Spatial_SpatialCoordinateSystem_)을 통해 **그립 포즈** 에 액세스할 수 있습니다.  다음과 같이 정의 됩니다.
-* **그립 위치** : 컨트롤러를 자연스럽 게 유지 하는 경우 왼쪽 또는 오른쪽으로 조정 하 여 그립 내 위치를 가운데에 맞춥니다.
-* **그립 방향 오른쪽 축** : 손 모양 5 손가락 포즈를 형성 하는 손을 완전히 열 때 palm (왼쪽 야자나무에서 오른쪽으로 뒤로)의 광선을 만듭니다.
+* **그립 위치**: 컨트롤러를 자연스럽 게 유지 하는 경우 왼쪽 또는 오른쪽으로 조정 하 여 그립 내 위치를 가운데에 맞춥니다.
+* **그립 방향 오른쪽 축**: 손 모양 5 손가락 포즈를 형성 하는 손을 완전히 열 때 palm (왼쪽 야자나무에서 오른쪽으로 뒤로)의 광선을 만듭니다.
 * **그립 방향 전방 축: 핸들** 을 부분적으로 (컨트롤러를 보유 하는 것 처럼) 닫는 경우 비 엄지 손가락으로 형성 된 튜브를 통해 "전달" 하는 광선이 표시 됩니다.
-* **그립 방향 up 축** : 오른쪽 및 전방 정의에 의해 암시 된 위쪽 축입니다.
+* **그립 방향 up 축**: 오른쪽 및 전방 정의에 의해 암시 된 위쪽 축입니다.
 
 [SpatialInteractionSourceState::P roperties:: TryGetLocation (...):: SourcePointerPose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation#Windows_UI_Input_Spatial_SpatialInteractionSourceLocation_SourcePointerPose) 또는 [SpatialInteractionSourceState:: TryGetPointerPose (...):: TryGetInteractionSourcePose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerpose#Windows_UI_Input_Spatial_SpatialPointerPose_TryGetInteractionSourcePose_Windows_UI_Input_Spatial_SpatialInteractionSource_)를 통해 **포인터 포즈** 에 액세스할 수 있습니다.
 
@@ -149,7 +149,7 @@ Windows Mixed Reality API는 HoloLens 2와 같이 트레일러 식 추적을 완
 
 각 조인트에 대해 다음과 같은 정보가 제공 됩니다.
 
-| Name | Description |
+| Name | 설명 |
 |--- |--- |
 |위치 | 모든 요청 된 좌표계에서 사용할 수 있는 조인트의 3D 위치입니다. |
 |방향 | 요청 된 좌표계에서 사용할 수 있는 뼈의 3D 방향입니다. |

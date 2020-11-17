@@ -5,13 +5,13 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, 공간 매핑, 렌더러, collider, 메시, 스캔, 구성 요소
-ms.openlocfilehash: 15948870d3150614aefa071ce07cf51c29d284fc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, 공간 매핑, 렌더러, collider, 메시, 검색, 구성 요소, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 60196a85689ce6c4c190acdfe305fc12982ace4c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690065"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677402"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity의 공간 매핑
 
@@ -84,13 +84,13 @@ Unity는 앱, **공간 매핑 렌더러** 및 **공간 매핑 Collider** 에 공
 
 Unity 앱에서 이러한 두 구성 요소를 사용 하려면 다음을 수행 합니다.
 1. 공간 표면 메시를 검색할 영역의 가운데에 있는 GameObject를 선택 합니다.
-2. 검사기 창에서 **구성 요소**  >  **XR**  >  **공간 매핑 Collider**   또는 **공간 매핑 렌더러** 를 추가 합니다.
+2. 검사기 창에서 **구성 요소**  >  **XR**  >  **공간 매핑 Collider** 또는 **공간 매핑 렌더러** 를 추가 합니다.
 
 이러한 구성 요소를 사용 하는 방법에 대 한 자세한 내용은 <a href="https://docs.unity3d.com/Manual/SpatialMappingComponents.html" target="_blank">Unity 설명서 사이트</a>에서 확인할 수 있습니다.
 
 ### <a name="going-beyond-the-built-in-spatial-mapping-components"></a>기본 제공 공간 매핑 구성 요소 이상
 
-이러한 구성 요소를 사용 하면 쉽게 끌어서 놓기를 통해 공간 매핑을 시작할 수 있습니다. 자세히 알아보려면 다음 두 가지 주요 경로를 살펴볼 수 있습니다.
+이러한 구성 요소를 사용 하면 쉽게 끌어서 놓기를 통해 공간 매핑을 시작할 수 있습니다.  자세히 알아보려면 다음 두 가지 주요 경로를 살펴볼 수 있습니다.
 * 낮은 수준의 메시 처리를 수행 하려면 하위 수준 공간 매핑 스크립트 API에 대 한 아래 섹션을 참조 하세요.
 * 높은 수준의 메시 분석을 수행 하려면 <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit</a>의 SpatialUnderstanding 라이브러리에 대 한 아래 섹션을 참조 하세요.
 
@@ -99,7 +99,7 @@ Unity 앱에서 이러한 두 구성 요소를 사용 하려면 다음을 수행
 공간 매핑 렌더러 및 공간 매핑 Collider 구성 요소에서 가져오는 것 보다 더 많은 제어가 필요한 경우 하위 수준 공간 매핑 스크립트 Api를 사용할 수 있습니다.
 
 **네임 스페이스:** *unityengine. XR. WSA*<br>
-**유형** : *SurfaceObserver* , *SurfaceChange* , *SurfaceData* , *SurfaceId*
+**유형**: *SurfaceObserver*, *SurfaceChange*, *SurfaceData*, *SurfaceId*
 
 다음은 공간 매핑 Api를 사용 하는 응용 프로그램의 제안 된 흐름에 대 한 개요입니다.
 
@@ -226,7 +226,7 @@ void Start () {
 
 ### <a name="understanding-modules"></a>모듈 이해
 
-모듈에 의해 노출 되는 세 가지 기본 인터페이스에는 단순 화면 및 공간 쿼리를 위한 토폴로지, 개체 검색을 위한 모양, 개체 집합을 기반으로 하는 제약 조건에 대 한 개체 배치 시도 기 방법이 있습니다. 각각에 대 한 설명은 다음과 같습니다. 세 가지 기본 모듈 인터페이스 외에도, 광선 캐스팅 인터페이스를 사용 하 여 태그가 지정 된 서피스 형식을 검색 하 고 사용자 지정 watertight playspace 메시를 복사할 수 있습니다.
+모듈에 의해 노출 되는 세 가지 기본 인터페이스에는 단순 화면 및 공간 쿼리를 위한 토폴로지, 개체 검색을 위한 모양, 개체 집합을 기반으로 하는 제약 조건에 대 한 개체 배치 시도 기 방법이 있습니다. 아래에서는 이러한 각 방법에 대해 설명합니다. 세 가지 기본 모듈 인터페이스 외에도, 광선 캐스팅 인터페이스를 사용 하 여 태그가 지정 된 서피스 형식을 검색 하 고 사용자 지정 watertight playspace 메시를 복사할 수 있습니다.
 
 ### <a name="ray-casting"></a>광선 캐스팅
 
@@ -479,17 +479,17 @@ Mixed Reality Toolkit v 2에서 공간 매핑을 사용 하는 방법에 대 한
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 설명한 Unity 개발 검사점 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 진행할 수 있습니다. 
+앞에서 설명한 Unity 개발 검사점 경험을 수행하는 경우 MRTK 핵심 구성 요소를 탐색하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다. 
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)
 
-또는 혼합 현실 플랫폼 기능 및 Api로 이동 합니다.
+또는 Mixed Reality 플랫폼 기능 및 API로 이동합니다.
 
 > [!div class="nextstepaction"]
 > [공유 환경](shared-experiences-in-unity.md)
 
-언제 든 지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks) 으로 돌아갈 수 있습니다.
+언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
 ## <a name="see-also"></a>참조
 * [좌표계](../../design/coordinate-systems.md)

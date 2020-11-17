@@ -1,22 +1,22 @@
 ---
-title: MR 공간 220-공간 사운드
+title: MR 공간 220 - 공간 사운드
 description: Unity, Visual Studio 및 HoloLens를 사용 하 여이 코딩 연습을 수행 하 여 공간 소리 개념에 대 한 세부 정보를 알아보세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit, 아카데미, 자습서, 공간 음향
-ms.openlocfilehash: 1da57024fbc069fcfc7d522175cf6d542304414a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 공간 사운드, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
+ms.openlocfilehash: 043443c0c197e3b606c4845966e0cf60102d0b85
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91688985"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678372"
 ---
 # <a name="mr-spatial-220-spatial-sound"></a>MR 공간 220: 공간 음향
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_** .  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](../../../mr-learning-base-01.md)가 게시되었습니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](../../../mr-learning-base-01.md)가 게시되었습니다.
 
 [공간 사운드](../../../design/spatial-sound.md) 를 holograms로 breathes 세계에 제공 합니다. Holograms은 가볍고 소리로 구성 되며 Holograms의 시야가 손실 되는 경우 공간 소리를 통해 찾을 수 있습니다. 공간 사운드는 라디오 공간에 배치 되는 일반적인 사운드와는 달리, 라디오 공간에 있습니다. 공간 사운드를 사용 하면 사용자, 사용자 옆 또는 머리에 있는 것 처럼 holograms 소리를 만들 수 있습니다. 이 과정에서는 다음을 수행 합니다.
 
@@ -36,9 +36,9 @@ ms.locfileid: "91688985"
 </tr>
 </table>
 
-## <a name="before-you-start"></a>시작하기 전에
+## <a name="before-you-start"></a>시작하기 전 확인 사항
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>사전 요구 사항
 
 * 올바른 [도구로](../../../develop/install-the-tools.md)구성 된 WINDOWS 10 PC입니다.
 * 몇 가지 기본적인 c # 프로그래밍 기능.
@@ -58,7 +58,7 @@ ms.locfileid: "91688985"
 
 ### <a name="errata-and-notes"></a>정오표 및 참고 사항
 
-* 코드에서 중단점을 적중 하려면 Visual Studio의 도구->옵션->디버깅에서 "내 코드만 사용"을 사용 하지 않도록 설정 ( *선택 취소* ) 해야 합니다.
+* 코드에서 중단점을 적중 하려면 Visual Studio의 도구->옵션->디버깅에서 "내 코드만 사용"을 사용 하지 않도록 설정 (*선택 취소*) 해야 합니다.
 
 ## <a name="chapter-1---unity-setup"></a>1 장-Unity 설치
 
@@ -67,7 +67,7 @@ ms.locfileid: "91688985"
 * Microsoft 공간 소리를 사용 하도록 Unity의 소리 구성을 변경 합니다.
 * Unity에서 개체에 3D 소리를 추가 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * Unity를 시작합니다.
 * **열기** 를 선택합니다.
@@ -134,7 +134,7 @@ HoloLens에 배포 하는 경우:
 
 적절 한 소리 위치는 홀로그램에 따라 달라 집니다. 예를 들어, 홀로그램이 사람이 라면 음은 피트가 아니라 입 근처에 위치 해야 합니다.
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>지침
 
 다음 지침에서는 spatialized 소리를 홀로그램에 연결 합니다.
 
@@ -159,7 +159,7 @@ Doppler level을 0으로 설정 하면 이동 (홀로그램 또는 사용자 중
 
 배운 기대에 대 한 한 가지 예는 일반 사람이 일반적으로 사람을 나타내는 것입니다. 사용자가 소리를 듣게 되 면 초기 반응을 조회 하는 것입니다. 사용자를 아래에 배치 하면 올바른 소리 방향을 향하도록 할 수 있지만 조회 해야 하는 기대에 따라 홀로그램을 찾을 수는 없습니다.
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>지침
 
 다음 지침에 따라 P0LY를 사용 하 여 홀로그램을 찾을 수 있습니다.
 
@@ -178,7 +178,7 @@ Doppler level을 0으로 설정 하면 이동 (홀로그램 또는 사용자 중
 * 사용자가 과도 하 게 소리를 이동 하지 않도록 합니다.
 * 미세한 소리는 최적으로 작동 합니다. 환경을 과도 하 게 숨기지 마십시오.
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>지침
 
 * **계층** 패널에서 **HologramCollection** 를 확장 합니다.
 * **EnergyHub** 를 확장 하 고 **Base** 를 선택 합니다.
@@ -228,12 +228,12 @@ Doppler level을 0으로 설정 하면 이동 (홀로그램 또는 사용자 중
 
 예를 들어 테이블에서 컵을 설정 하는 것은 금속을 제거 하는 것 보다 더 조용한 소리를 두어야 합니다.
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>지침
 
 * **계층** 패널에서 **HologramCollection** 를 확장 합니다.
 * **EnergyHub** 를 확장 하 고 **기본** 을 선택 합니다.
 * **검사기** 패널에서 **구성 요소 추가** 를 클릭 하 고 **소리 및 동작을 사용 하 여 탭을** 추가 합니다.
-* **소리 및 작업을 사용 하 여 이동 합니다** .
+* **소리 및 작업을 사용 하 여 이동 합니다**.
   * **부모를 탭** 하 여 확인 합니다.
   * **배치 사운드** **를 설정** 합니다.
   * 픽업 **소리** 를 **픽업** 소리로 설정 합니다.
@@ -251,7 +251,7 @@ Doppler level을 0으로 설정 하면 이동 (홀로그램 또는 사용자 중
 
 일반적인 예로는 콘서트 홀이 있습니다. 수신기가 홀 외부에 있을 때 도어가 닫혀 있으면 음악은 muffled. 일반적으로 볼륨을 축소 하기도 합니다. 도어가 열리면 실제 볼륨에서 소리의 전체 스펙트럼을 듣게 됩니다. 일반적으로 빈도가 낮은 소리는 낮은 주파수 보다 더 많이 흡수 됩니다.
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>지침
 
 * **계층** 패널에서 **HologramCollection** 를 확장 하 고 **P0LY** 를 선택 합니다.
 * **검사기** 패널에서 **구성 요소 추가** 를 클릭 하 고 **오디오 송신기** 를 추가 합니다.
@@ -328,7 +328,7 @@ P0LY가 에너지 허브를 종료 하면 소리 폐색 제거 됩니다. 계속
 #### <a name="key-concepts"></a>주요 개념
 
 * 공간 크기는 소리 지역화에 기여 하는 subliminal 큐를 제공 합니다.
-* 방 모델은 비- **오디오 원본** 으로 설정 됩니다.
+* 방 모델은 비-**오디오 원본** 으로 설정 됩니다.
 * [MixedRealityToolkit For Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity) 는 대화방 모델을 설정 하는 코드를 제공 합니다.
 * 혼합 현실 환경에서는 실제 세계 공간에 가장 잘 맞는 방 모델을 선택 합니다.
 
@@ -435,9 +435,9 @@ Unity에서는 파일의 가져오기 설정에서 스트리밍을 위해 오디
 * 숨겨진 세계에 뷰를 만들면 시각적으로 매력적인 것입니다.
 * 홀로그램 또는 사용자가 숨겨진 세계 가까이 있을 때 오디오 효과를 추가 하 여 현실감을 향상 시킵니다.
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>지침
 
-* **계층** 패널에서 **HologramCollection** 를 확장 하 고 지 각 **를 선택 합니다** .
+* **계층** 패널에서 **HologramCollection** 를 확장 하 고 지 각 **를 선택 합니다**.
 * 지 각 **를 확장 하** 고 **VoiceSource** 를 선택 합니다.
 * **검사기** 패널에서 **구성 요소 추가** 를 클릭 하 고 **사용자 음성 효과** 를 추가 합니다.
 

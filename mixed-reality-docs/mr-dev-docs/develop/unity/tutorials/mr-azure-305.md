@@ -1,24 +1,24 @@
 ---
-title: MR 및 Azure 305-함수 및 저장소
+title: MR 및 Azure 305 - 함수 및 스토리지
 description: 이 과정을 완료 하 여 혼합 현실 응용 프로그램 내에서 Azure Storage 및 함수를 구현 하는 방법을 알아보세요.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 함수, 저장소, hololens, 몰입 형, vr
-ms.openlocfilehash: 83da419fe780368962af9e4d833ebe86d46f1b81
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 함수, 저장소, hololens, 모던, vr, Windows 10, Visual Studio
+ms.openlocfilehash: bc609e5a4a1c4252f498ada4dba2206140635667
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687848"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679492"
 ---
 # <a name="mr-and-azure-305-functions-and-storage"></a>MR 및 Azure 305: 함수 및 스토리지
 
 <br>
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_** .  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
 
 <br> 
 
@@ -53,7 +53,7 @@ ms.locfileid: "91687848"
 > [!NOTE]
 > 이 과정에서 주로 Windows Mixed Reality (VR) 헤드셋에 초점을 맞춘 반면,이 과정에서 학습 하는 내용을 Microsoft HoloLens에도 적용할 수 있습니다. 과정을 진행할 때 HoloLens를 지원 하기 위해 사용 해야 하는 모든 변경 내용에 대 한 메모를 볼 수 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 > [!NOTE]
 > 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (2018 일 수 있음)을 나타냅니다. [도구 설치](../../install-the-tools.md) 문서에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.
@@ -69,7 +69,7 @@ ms.locfileid: "91687848"
 - Azure 리소스를 만들기 위한 Azure 계정에 대 한 구독
 - Azure 설정 및 데이터 검색을 위한 인터넷 액세스
 
-## <a name="before-you-start"></a>시작하기 전에
+## <a name="before-you-start"></a>시작하기 전 확인 사항
 
 이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.)
 
@@ -310,7 +310,7 @@ Azure 함수를 만들려면 다음을 수행 합니다.
 
             ![기능 설정](images/AzureLabs-Lab5-26.png)
 
-    3.  패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음), **지원 되는 틱 가상 현실** , **Windows Mixed reality SDK** 가 추가 되어 있는지 확인 합니다.
+    3.  패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음), **지원 되는 틱 가상 현실**, **Windows Mixed reality SDK** 가 추가 되어 있는지 확인 합니다.
 
         ![XR 설정 설정](images/AzureLabs-Lab5-27.png)
 
@@ -320,7 +320,7 @@ Azure 함수를 만들려면 다음을 수행 합니다.
 
 10.  빌드 설정 창을 닫습니다.
 
-11. 장면 및 프로젝트를 저장 합니다 ( **파일**  >  **저장 장면/파일**  >  **저장 프로젝트** ).
+11. 장면 및 프로젝트를 저장 합니다 (**파일**  >  **저장 장면/파일**  >  **저장 프로젝트**).
 
 ## <a name="chapter-4---setup-main-camera"></a>4 장-기본 카메라 설정
 

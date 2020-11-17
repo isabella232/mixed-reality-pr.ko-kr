@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, HoloLens, 모던 헤드셋, 앱, uwp, 제출, 제출, 필터, 메타 데이터, 시스템 요구 사항, 키워드, wack, 인증, 패키지, appx, 머천다이징
-ms.openlocfilehash: 1ea3a125bed26cabbf617585c0e87399c772e24a
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+ms.openlocfilehash: f5dae379deee54056595c291363b5b1e3e83f25e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631481"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678792"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Microsoft Store에 앱 제출
 
@@ -67,7 +67,7 @@ Visual Studio에서 새 유니버설 Windows 프로젝트를 만들 때 대상 �
 
 ### <a name="specifying-target-device-families"></a>대상 장치 패밀리 지정
 
-Windows Mixed Reality 응용 프로그램 ( [HoloLens](../hololens-hardware-details.md) 및 [몰입 형 헤드셋](../discover/immersive-headset-hardware-details.md)모두)은 유니버설 Windows 플랫폼의 일부 이므로 **windows. 유니버설** [대상 장치 제품군](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) cab이 있는 모든 앱 패키지는 HoloLens 또는 모던 헤드셋을 사용 하는 windows 10 pc에서 실행 됩니다. 응용 프로그램 매니페스트에서 대상 장치 제품군을 지정 하지 않은 경우 의도 하지 않은 Windows 10 장치까지 앱을 실수로 열 수 있습니다. 다음 단계를 수행 하 여 원하는 Windows 10 장치 제품군을 지정한 다음 [Microsoft Store 제출을 위해 파트너 센터에서 앱 패키지를 업로드할 때 올바른 장치 패밀리가 설정 되었는지 다시 한 번 확인 합니다.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+Windows Mixed Reality 응용 프로그램 ( [HoloLens](../hololens-hardware-details.md) 및 [몰입 형 헤드셋](../discover/immersive-headset-hardware-details.md)모두)은 유니버설 Windows 플랫폼의 일부 이므로 **windows. 유니버설** [대상 장치 제품군](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) 을 포함 하는 모든 앱 패키지는 Hololens 또는 모던 헤드셋을 사용 하는 windows 10 pc에서 실행할 수 있습니다. 응용 프로그램 매니페스트에서 대상 장치 제품군을 지정 하지 않은 경우 의도 하지 않은 Windows 10 장치까지 앱을 실수로 열 수 있습니다. 다음 단계를 수행 하 여 원하는 Windows 10 장치 제품군을 지정한 다음 [Microsoft Store 제출을 위해 파트너 센터에서 앱 패키지를 업로드할 때 올바른 장치 패밀리가 설정 되었는지 다시 한 번 확인 합니다.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
 * Visual Studio에서이 필드를 설정 하려면 **appxmanifest.xml** 를 마우스 오른쪽 단추로 클릭 하 고 **코드 보기** 를 선택한 다음 **targetdevicefamily 이름** 필드를 찾습니다. 기본적으로 다음 항목과 같이 표시 됩니다.
 
@@ -212,7 +212,7 @@ Unity 프로젝트를 기반으로 하는 혼합 현실 앱을 제출 하는 경
 
 "최소 하드웨어" 또는 입력 형식에 대 한 "권장 하드웨어" 확인란을 선택 하는 방법에 대해 설명 합니다. 
 
-예를 들면 다음과 같습니다. 
+예를 들어: 
 * 게임에 동작 컨트롤러가 필요 하지만 마이크를 통해 음성 입력을 허용 하는 경우 "Windows Mixed Reality 동작 컨트롤러" 옆에 있는 "최소 하드웨어" 확인란을 선택 하 고 "마이크" 옆에 있는 "권장 하드웨어" 확인란을 선택 합니다. 
 * Xbox 컨트롤러, 게임 패드 또는 동작 컨트롤러 중 하나를 사용 하 여 게임을 재생할 수 있는 경우 "Xbox 컨트롤러 또는 게임 패드" 옆에 있는 "최소 하드웨어" 확인란을 선택 하 고, 동작 컨트롤러가 게임 패드의 단계별 경험을 제공할 가능성이 있으므로 "Windows Mixed Reality 동작 컨트롤러" 옆에 있는 "권장 하드웨어" 확인란을 선택할 수 있습니다.
 
@@ -263,8 +263,8 @@ Visual Studio의 Microsoft Store에 앱 연결
 
 대부분의 경우 소비자는 Windows Mixed Reality 몰입 형 헤드셋을 구입 하기 전에 가상 현실에 대 한 경험이 없도록 제한 됩니다. 이는 강한 게임에서 발생 하는 것을 알 수 없거나 몰입 형 환경에서 자신의 편안 함 임계값에 익숙해질 수 있습니다. 많은 고객이 Windows mixed reality [pc](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)로 직장 배지가 달린 되지 않는 Pc에서 Windows mixed reality 몰입 형 헤드셋을 사용해 볼 수도 있습니다. 이러한 고려 사항 때문에 유료 현실 앱 또는 게임의 [무료 평가판](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#free-trial) 을 제공 하는 것이 좋습니다.
 
-## <a name="see-also"></a>참고 항목
-* [혼합 현실 이란?](../discover/mixed-reality.md)
+## <a name="see-also"></a>참조
+* [혼합 현실이란?](../discover/mixed-reality.md)
 * [개발 개요](../develop/development.md)
 * [앱 보기](../design/app-views.md)
 * [혼합 현실 성능 이해](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)

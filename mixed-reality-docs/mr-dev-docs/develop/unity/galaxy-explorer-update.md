@@ -5,13 +5,13 @@ author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
-keywords: galaxy 탐색기, 사례 연구, 프로젝트, 샘플
-ms.openlocfilehash: 1e04b27ff0382d87f8e6a15ae2b7b2284fa020e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: galaxy 탐색기, 사례 연구, 프로젝트, 샘플, MRTK, Mixed Reality Toolkit, Unity, 샘플 앱, 예제 앱, 오픈 소스, Microsoft Store, HoloLens, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 00bf30224a820bd85394c4b97136f81b52fe4128
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686704"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677632"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>HoloLens 용 Galaxy 탐색기 만들기 2
 
@@ -96,7 +96,7 @@ HoloLens 2를 실험 새 상호 작용이 자연스럽 고 직관적 이더라�
 ![행성의 시각적 affordances](images/ge-update-planet-affordances.png)
 
 ### <a name="adding-affordances-for-force-grab"></a>강제 잡기에 affordances 추가
- 
+ 
 Audio 및 visual affordances를 사용 하는 기본 강제 잡기 메커니즘이 있으면 더 많은 사용자에 게 더 많은 행성을 선택 하는 방법을 살펴보았습니다. 해결 해야 할 두 가지 주요 사항은 다음과 같습니다. 태양계가 3D 이동 인터페이스 이기 때문에 사용자가 개체를 일관 되 게 대상으로 하는 방법을 배울 수 있는 복잡성이 추가 됩니다. 이는 손을 빛이 매우 빠르기 때문에 개체를 선택 하 여 사용자를 매우 빠르게 이동 하는 것입니다.
 
 대 접근 솔루션을 사용 하 여이에 대해 노력 했습니다. 첫 번째 방법은 매우 직관적입니다. 행성이 사용자에 게 보다 자연스럽 게 접근 하도록 선택 프로세스의 속도를 낮춥니다. 속도가 조정 된 후에는 오디오 및 시각적 affordances을 다시 방문 하 여 사용자에 게 추적 된 지구로 오디오 피드백을 추가 해야 했습니다.
@@ -151,7 +151,7 @@ Milky 방식의 태양계를 만드는 것은 humbling 환경 이었습니다. �
 개별적으로 회전 하는 스트림은 좋은 시각적 느낌을 제공 하지만, 근접 범위에서 관찰 될 때 세부 정보는 부족 합니다.
 
 가장 눈에 띄는 부분은 Jupiter의 훌륭한 레드를 위한 것 이므로이를 소개 하는 메시 및 질감 집합을 만들었습니다.
- 
+ 
 Jupiter의 밴드와 유사한 메커니즘을 사용 했습니다. 즉, 회전 하는 부분의 집합이 서로 위에 구성 되어 있고, ' 마스터 계층 ' 아래에도 그룹화 되어 있으므로 나머지는 이동 속도에 관계 없이 위치를 유지할 수 있습니다.
 
 메시를 설정 하 고 설정 하면 stormy 소용돌이의 여러 계층이 적용 되 고 각 디스크는 개별적으로 애니메이션 효과를 준 다음 가운데에 세로로 애니메이션 효과를 준 후에는 바깥쪽으로 이동 하는 동안 점차 속도가 빨라집니다.
@@ -202,4 +202,4 @@ HoloLens 2 용 Galaxy 탐색기를 만들고 HoloLens (첫 번째 gen), VR 및 �
 
 ### <a name="mixed-reality-studios"></a>혼합 현실 스튜디오
 
-미국, 유럽 및 아시아 태평양에서 거주 하는 Microsoft Mixed Reality 스튜디오 팀은 사용자 환경 디자인, holographic 컴퓨팅, AR/VR 기술 및 3D 개발의 전문가입니다. 3D 자산 만들기, DirectX, Unity, Unreal 등을 포함 합니다. 고객이 조직 전체에 측정 가능한 영향을 만들 수 있도록 하는 동시에 원하는 미래를 구상 하 고 설계, 빌드 및 제공 하는 데 도움이 됩니다. 스튜디오는 엔터프라이즈 응용 프로그램 통합, 도입, 운영 및 지원에 대 한 22000 이상의 Microsoft 서비스 전문가와 긴밀 하 게 협력 합니다.
+미국, 유럽 및 Asia-Pacific에 있는 Microsoft Mixed Reality 스튜디오 팀은 사용자 환경 디자인, holographic 컴퓨팅, AR/VR 기술 및 3D 개발의 전문가입니다. 3D 자산 만들기, DirectX, Unity, Unreal 등을 포함 합니다. 고객이 조직 전체에 측정 가능한 영향을 만들 수 있도록 하는 동시에 원하는 미래를 구상 하 고 설계, 빌드 및 제공 하는 데 도움이 됩니다. 스튜디오는 엔터프라이즈 응용 프로그램 통합, 도입, 운영 및 지원에 대 한 22000 이상의 Microsoft 서비스 전문가와 긴밀 하 게 협력 합니다.

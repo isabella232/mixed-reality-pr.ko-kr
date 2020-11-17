@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오
-ms.openlocfilehash: cb9bfb03da864c78784c288f4d7c4190461cd838
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head 관련 전송 함수, 반향, Microsoft Spatializer
+ms.openlocfilehash: c752f79f53b5167d674b9e778637357d97fb914a
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293170"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678212"
 ---
 # <a name="enabling-and-disabling-spatialization-at-run-time"></a>런타임에 spatialization 사용 및 사용 안 함
 
@@ -21,7 +21,7 @@ ms.locfileid: "92293170"
 * 단추 작업에서 spatialization 컨트롤 스크립트를 구동 합니다.
 
 ## <a name="add-spatialization-control-script"></a>Spatialization 컨트롤 스크립트 추가
-**프로젝트** 창을 마우스 오른쪽 단추로 클릭 하 고 **만들기-> c # 스크립트**를 선택 하 여 새 c # 스크립트를 만듭니다. 스크립트 이름을 "SpatializeOnOff"로 합니다.
+**프로젝트** 창을 마우스 오른쪽 단추로 클릭 하 고 **만들기-> c # 스크립트** 를 선택 하 여 새 c # 스크립트를 만듭니다. 스크립트 이름을 "SpatializeOnOff"로 합니다.
 
 ![스크립트 만들기](images/spatial-audio/create-script.png)
 
@@ -90,12 +90,12 @@ public class SpatializeOnOff : MonoBehaviour
 > Spatialization를 완전히 사용 하지 않도록 설정 하려면 스크립트를 수정 하 여 **SourceObject** 변수의 **spatialization** 부울 속성도 조정 합니다.
 
 ## <a name="attach-your-script-and-drive-it-from-the-button"></a>스크립트를 연결 하 고 단추에서이를 구동 합니다.
-**쿼드**의 **검사기** 창에서 **구성 요소 추가** 를 클릭 하 고 **Spatialize On Off** 스크립트를 추가 합니다.
+**쿼드** 의 **검사기** 창에서 **구성 요소 추가** 를 클릭 하 고 **Spatialize On Off** 스크립트를 추가 합니다.
 
 ![쿼드 스크립트 추가](images/spatial-audio/add-script-to-quad.png)
 
-**쿼드**의 **Spatialize on Off** 구성 요소:
-1. **계층 구조**에서 **PressableButtonHoloLens2-> iconandtext-> TextMeshPro** subject를 찾습니다.
+**쿼드** 의 **Spatialize on Off** 구성 요소:
+1. **계층 구조** 에서 **PressableButtonHoloLens2-> iconandtext-> TextMeshPro** subject를 찾습니다.
 
 ![계층에서 PressableButtonHoloLens2 개체 찾기](images/spatial-audio/pressable-button-object.png)
 

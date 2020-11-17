@@ -8,16 +8,16 @@ ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서
-ms.openlocfilehash: ba0fe1db533b47088abecb6e97e2dc7826f7ee23
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: cd0fcd0f2247582582f008c3c1131e893d89a3de
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699737"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573197"
 ---
 # <a name="sample-apps"></a>방법
 
-![HoloLens 2 사용자](images/08_Tutorials.png)
+<br/><img src="https://user-images.githubusercontent.com/13754172/90335383-ab391e80-e00f-11ea-8a6c-b61aa910b83d.gif" width="100%" _alt="Sample apps">
 
 현재 모든 자습서와 샘플 앱은 Unity 또는 Unreal에서 빌드되었습니다. 다른 엔진 및 플랫폼용 콘텐츠를 개발하는 경우 해당 콘텐츠는 목차의 관련 제목 아래에서 찾을 수 있습니다.
 

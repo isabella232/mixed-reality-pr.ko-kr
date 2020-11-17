@@ -5,13 +5,13 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: HoloLens, 원격 서비스, Holographic 원격 작업
-ms.openlocfilehash: 12fa47b6b3a46521a9e6029cab61fa1c628c06e9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 데이터 채널
+ms.openlocfilehash: bbbf0e1dd48e1e6872243b2ea562b0729d53ebae
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683704"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677912"
 ---
 # <a name="custom-holographic-remoting-data-channels"></a>사용자 지정 홀로그램 원격 데이터 채널
 
