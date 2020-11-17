@@ -5,199 +5,199 @@ author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
-keywords: HoloLens, Windows 장치 포털, API
-ms.openlocfilehash: 6b8f99fbc6f1965639ceef218f5c516d2e6ba467
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens, Windows 장치 포털, API, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 1085f6c948ab7fe0ff8cb3801ebb0b883570acbc
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683769"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677972"
 ---
-# <a name="device-portal-api-reference"></a><span data-ttu-id="3e578-104">디바이스 포털 API 참조</span><span class="sxs-lookup"><span data-stu-id="3e578-104">Device portal API reference</span></span>
+# <a name="device-portal-api-reference"></a><span data-ttu-id="199c4-104">디바이스 포털 API 참조</span><span class="sxs-lookup"><span data-stu-id="199c4-104">Device portal API reference</span></span>
 
-<span data-ttu-id="3e578-105">[Windows 장치 포털](using-the-windows-device-portal.md) 의 모든 항목은 데이터에 액세스 하 고 프로그래밍 방식으로 장치를 제어 하는 데 사용할 수 있는 REST API의 맨 위에 빌드됩니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-105">Everything in the [Windows Device Portal](using-the-windows-device-portal.md) is built on top of REST API's that you can use to access the data and control your device programmatically.</span></span>
+<span data-ttu-id="199c4-105">[Windows 장치 포털](using-the-windows-device-portal.md) 의 모든 항목은 데이터에 액세스 하 고 프로그래밍 방식으로 장치를 제어 하는 데 사용할 수 있는 REST API의 맨 위에 빌드됩니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-105">Everything in the [Windows Device Portal](using-the-windows-device-portal.md) is built on top of REST API's that you can use to access the data and control your device programmatically.</span></span>
 
-## <a name="app-deloyment"></a><span data-ttu-id="3e578-106">앱 배포</span><span class="sxs-lookup"><span data-stu-id="3e578-106">App deloyment</span></span>
+## <a name="app-deloyment"></a><span data-ttu-id="199c4-106">앱 배포</span><span class="sxs-lookup"><span data-stu-id="199c4-106">App deloyment</span></span>
 
-<span data-ttu-id="3e578-107">**/api/app/packagemanager/package (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="3e578-107">**/api/app/packagemanager/package (DELETE)**</span></span>
+<span data-ttu-id="199c4-107">**/api/app/packagemanager/package (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="199c4-107">**/api/app/packagemanager/package (DELETE)**</span></span>
 
-<span data-ttu-id="3e578-108">앱을 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-108">Uninstalls an app</span></span>
+<span data-ttu-id="199c4-108">앱을 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-108">Uninstalls an app</span></span>
 
-<span data-ttu-id="3e578-109">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-109">Parameters</span></span>
-* <span data-ttu-id="3e578-110">package: 제거할 패키지의 파일 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-110">package : File name of the package to be uninstalled.</span></span>
+<span data-ttu-id="199c4-109">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-109">Parameters</span></span>
+* <span data-ttu-id="199c4-110">package: 제거할 패키지의 파일 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-110">package : File name of the package to be uninstalled.</span></span>
 
-<span data-ttu-id="3e578-111">**/api/app/packagemanager/package (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-111">**/api/app/packagemanager/package (POST)**</span></span>
+<span data-ttu-id="199c4-111">**/api/app/packagemanager/package (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-111">**/api/app/packagemanager/package (POST)**</span></span>
 
-<span data-ttu-id="3e578-112">앱을 설치 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-112">Installs an App</span></span>
+<span data-ttu-id="199c4-112">앱을 설치 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-112">Installs an App</span></span>
 
-<span data-ttu-id="3e578-113">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-113">Parameters</span></span>
-* <span data-ttu-id="3e578-114">package: 설치할 패키지의 파일 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-114">package : File name of the package to be installed.</span></span>
+<span data-ttu-id="199c4-113">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-113">Parameters</span></span>
+* <span data-ttu-id="199c4-114">package: 설치할 패키지의 파일 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-114">package : File name of the package to be installed.</span></span>
 
-<span data-ttu-id="3e578-115">Payload</span><span class="sxs-lookup"><span data-stu-id="3e578-115">Payload</span></span>
-* <span data-ttu-id="3e578-116">여러 부분으로 구성 되는 http 본문</span><span class="sxs-lookup"><span data-stu-id="3e578-116">multi-part conforming http body</span></span>
+<span data-ttu-id="199c4-115">Payload</span><span class="sxs-lookup"><span data-stu-id="199c4-115">Payload</span></span>
+* <span data-ttu-id="199c4-116">여러 부분으로 구성 되는 http 본문</span><span class="sxs-lookup"><span data-stu-id="199c4-116">multi-part conforming http body</span></span>
 
-<span data-ttu-id="3e578-117">**/api/app/packagemanager/packages (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-117">**/api/app/packagemanager/packages (GET)**</span></span>
+<span data-ttu-id="199c4-117">**/api/app/packagemanager/packages (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-117">**/api/app/packagemanager/packages (GET)**</span></span>
 
-<span data-ttu-id="3e578-118">세부 정보를 사용 하 여 시스템에 설치 된 앱 목록을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-118">Retrieves the list of installed apps on the system, with details</span></span>
+<span data-ttu-id="199c4-118">세부 정보를 사용 하 여 시스템에 설치 된 앱 목록을 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-118">Retrieves the list of installed apps on the system, with details</span></span>
 
-<span data-ttu-id="3e578-119">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="3e578-119">Return data</span></span>
-* <span data-ttu-id="3e578-120">세부 정보가 포함 된 설치 된 패키지 목록</span><span class="sxs-lookup"><span data-stu-id="3e578-120">List of installed packages with details</span></span>
+<span data-ttu-id="199c4-119">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="199c4-119">Return data</span></span>
+* <span data-ttu-id="199c4-120">세부 정보가 포함 된 설치 된 패키지 목록</span><span class="sxs-lookup"><span data-stu-id="199c4-120">List of installed packages with details</span></span>
 
-<span data-ttu-id="3e578-121">**/api/app/packagemanager/state (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-121">**/api/app/packagemanager/state (GET)**</span></span>
+<span data-ttu-id="199c4-121">**/api/app/packagemanager/state (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-121">**/api/app/packagemanager/state (GET)**</span></span>
 
-<span data-ttu-id="3e578-122">진행 중인 앱 설치의 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-122">Gets the status of in progress app installation</span></span>
+<span data-ttu-id="199c4-122">진행 중인 앱 설치의 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-122">Gets the status of in progress app installation</span></span>
 
-## <a name="dump-collection"></a><span data-ttu-id="3e578-123">덤프 컬렉션</span><span class="sxs-lookup"><span data-stu-id="3e578-123">Dump collection</span></span>
+## <a name="dump-collection"></a><span data-ttu-id="199c4-123">덤프 컬렉션</span><span class="sxs-lookup"><span data-stu-id="199c4-123">Dump collection</span></span>
 
-<span data-ttu-id="3e578-124">**/api/debug/dump/usermode/crashcontrol (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="3e578-124">**/api/debug/dump/usermode/crashcontrol (DELETE)**</span></span>
+<span data-ttu-id="199c4-124">**/api/debug/dump/usermode/crashcontrol (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="199c4-124">**/api/debug/dump/usermode/crashcontrol (DELETE)**</span></span>
 
-<span data-ttu-id="3e578-125">테스트용으로 로드 앱에 대 한 크래시 덤프 수집 사용 안 함</span><span class="sxs-lookup"><span data-stu-id="3e578-125">Disables crash dump collection for a sideloaded app</span></span>
+<span data-ttu-id="199c4-125">테스트용으로 로드 앱에 대 한 크래시 덤프 수집 사용 안 함</span><span class="sxs-lookup"><span data-stu-id="199c4-125">Disables crash dump collection for a sideloaded app</span></span>
 
-<span data-ttu-id="3e578-126">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-126">Parameters</span></span>
-* <span data-ttu-id="3e578-127">packageFullname: 패키지 이름</span><span class="sxs-lookup"><span data-stu-id="3e578-127">packageFullname : package name</span></span>
+<span data-ttu-id="199c4-126">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-126">Parameters</span></span>
+* <span data-ttu-id="199c4-127">packageFullname: 패키지 이름</span><span class="sxs-lookup"><span data-stu-id="199c4-127">packageFullname : package name</span></span>
 
-<span data-ttu-id="3e578-128">**/api/debug/dump/usermode/crashcontrol (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-128">**/api/debug/dump/usermode/crashcontrol (GET)**</span></span>
+<span data-ttu-id="199c4-128">**/api/debug/dump/usermode/crashcontrol (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-128">**/api/debug/dump/usermode/crashcontrol (GET)**</span></span>
 
-<span data-ttu-id="3e578-129">테스트용으로 로드 apps 크래시 덤프 컬렉션에 대 한 설정을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-129">Gets settings for sideloaded apps crash dump collection</span></span>
+<span data-ttu-id="199c4-129">테스트용으로 로드 apps 크래시 덤프 컬렉션에 대 한 설정을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-129">Gets settings for sideloaded apps crash dump collection</span></span>
 
-<span data-ttu-id="3e578-130">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-130">Parameters</span></span>
-* <span data-ttu-id="3e578-131">packageFullname: 패키지 이름</span><span class="sxs-lookup"><span data-stu-id="3e578-131">packageFullname : package name</span></span>
+<span data-ttu-id="199c4-130">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-130">Parameters</span></span>
+* <span data-ttu-id="199c4-131">packageFullname: 패키지 이름</span><span class="sxs-lookup"><span data-stu-id="199c4-131">packageFullname : package name</span></span>
 
-<span data-ttu-id="3e578-132">**/api/debug/dump/usermode/crashcontrol (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-132">**/api/debug/dump/usermode/crashcontrol (POST)**</span></span>
+<span data-ttu-id="199c4-132">**/api/debug/dump/usermode/crashcontrol (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-132">**/api/debug/dump/usermode/crashcontrol (POST)**</span></span>
 
-<span data-ttu-id="3e578-133">테스트용으로 로드 앱에 대 한 덤프 제어 설정을 사용 하도록 설정 하 고 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-133">Enables and sets dump control settings for a sideloaded app</span></span>
+<span data-ttu-id="199c4-133">테스트용으로 로드 앱에 대 한 덤프 제어 설정을 사용 하도록 설정 하 고 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-133">Enables and sets dump control settings for a sideloaded app</span></span>
 
-<span data-ttu-id="3e578-134">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-134">Parameters</span></span>
-* <span data-ttu-id="3e578-135">packageFullname: 패키지 이름</span><span class="sxs-lookup"><span data-stu-id="3e578-135">packageFullname : package name</span></span>
+<span data-ttu-id="199c4-134">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-134">Parameters</span></span>
+* <span data-ttu-id="199c4-135">packageFullname: 패키지 이름</span><span class="sxs-lookup"><span data-stu-id="199c4-135">packageFullname : package name</span></span>
 
-<span data-ttu-id="3e578-136">**/api/debug/dump/usermode/crashdump (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="3e578-136">**/api/debug/dump/usermode/crashdump (DELETE)**</span></span>
+<span data-ttu-id="199c4-136">**/api/debug/dump/usermode/crashdump (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="199c4-136">**/api/debug/dump/usermode/crashdump (DELETE)**</span></span>
 
-<span data-ttu-id="3e578-137">테스트용으로 로드 앱에 대 한 크래시 덤프를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-137">Deletes a crash dump for a sideloaded app</span></span>
+<span data-ttu-id="199c4-137">테스트용으로 로드 앱에 대 한 크래시 덤프를 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-137">Deletes a crash dump for a sideloaded app</span></span>
 
-<span data-ttu-id="3e578-138">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-138">Parameters</span></span>
-* <span data-ttu-id="3e578-139">packageFullname: 패키지 이름</span><span class="sxs-lookup"><span data-stu-id="3e578-139">packageFullname : package name</span></span>
-* <span data-ttu-id="3e578-140">파일 이름: 덤프 파일 이름</span><span class="sxs-lookup"><span data-stu-id="3e578-140">fileName : dump file name</span></span>
+<span data-ttu-id="199c4-138">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-138">Parameters</span></span>
+* <span data-ttu-id="199c4-139">packageFullname: 패키지 이름</span><span class="sxs-lookup"><span data-stu-id="199c4-139">packageFullname : package name</span></span>
+* <span data-ttu-id="199c4-140">파일 이름: 덤프 파일 이름</span><span class="sxs-lookup"><span data-stu-id="199c4-140">fileName : dump file name</span></span>
 
-<span data-ttu-id="3e578-141">**/api/debug/dump/usermode/crashdump (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-141">**/api/debug/dump/usermode/crashdump (GET)**</span></span>
+<span data-ttu-id="199c4-141">**/api/debug/dump/usermode/crashdump (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-141">**/api/debug/dump/usermode/crashdump (GET)**</span></span>
 
-<span data-ttu-id="3e578-142">테스트용으로 로드 앱에 대 한 크래시 덤프를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-142">Retrieves a crash dump for a sideloaded app</span></span>
+<span data-ttu-id="199c4-142">테스트용으로 로드 앱에 대 한 크래시 덤프를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-142">Retrieves a crash dump for a sideloaded app</span></span>
 
-<span data-ttu-id="3e578-143">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-143">Parameters</span></span>
-* <span data-ttu-id="3e578-144">packageFullname: 패키지 이름</span><span class="sxs-lookup"><span data-stu-id="3e578-144">packageFullname : package name</span></span>
-* <span data-ttu-id="3e578-145">파일 이름: 덤프 파일 이름</span><span class="sxs-lookup"><span data-stu-id="3e578-145">fileName : dump file name</span></span>
+<span data-ttu-id="199c4-143">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-143">Parameters</span></span>
+* <span data-ttu-id="199c4-144">packageFullname: 패키지 이름</span><span class="sxs-lookup"><span data-stu-id="199c4-144">packageFullname : package name</span></span>
+* <span data-ttu-id="199c4-145">파일 이름: 덤프 파일 이름</span><span class="sxs-lookup"><span data-stu-id="199c4-145">fileName : dump file name</span></span>
 
-<span data-ttu-id="3e578-146">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="3e578-146">Return data</span></span>
-* <span data-ttu-id="3e578-147">덤프 파일입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-147">Dump file.</span></span> <span data-ttu-id="3e578-148">WinDbg 또는 Visual Studio를 사용 하 여 검사</span><span class="sxs-lookup"><span data-stu-id="3e578-148">Inspect with WinDbg or Visual Studio</span></span>
+<span data-ttu-id="199c4-146">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="199c4-146">Return data</span></span>
+* <span data-ttu-id="199c4-147">덤프 파일입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-147">Dump file.</span></span> <span data-ttu-id="199c4-148">WinDbg 또는 Visual Studio를 사용 하 여 검사</span><span class="sxs-lookup"><span data-stu-id="199c4-148">Inspect with WinDbg or Visual Studio</span></span>
 
-<span data-ttu-id="3e578-149">**/api/debug/dump/usermode/dumps (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-149">**/api/debug/dump/usermode/dumps (GET)**</span></span>
+<span data-ttu-id="199c4-149">**/api/debug/dump/usermode/dumps (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-149">**/api/debug/dump/usermode/dumps (GET)**</span></span>
 
-<span data-ttu-id="3e578-150">테스트용으로 로드 apps에 대 한 모든 크래시 덤프 목록을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-150">Returns list of all crash dumps for sideloaded apps</span></span>
+<span data-ttu-id="199c4-150">테스트용으로 로드 apps에 대 한 모든 크래시 덤프 목록을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-150">Returns list of all crash dumps for sideloaded apps</span></span>
 
-<span data-ttu-id="3e578-151">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="3e578-151">Return data</span></span>
-* <span data-ttu-id="3e578-152">테스트용으로 로드 된 앱 당 크래시 덤프 목록</span><span class="sxs-lookup"><span data-stu-id="3e578-152">List of crash dumps per side loaded app</span></span>
+<span data-ttu-id="199c4-151">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="199c4-151">Return data</span></span>
+* <span data-ttu-id="199c4-152">테스트용으로 로드 된 앱 당 크래시 덤프 목록</span><span class="sxs-lookup"><span data-stu-id="199c4-152">List of crash dumps per side loaded app</span></span>
 
-## <a name="etw"></a><span data-ttu-id="3e578-153">ETW</span><span class="sxs-lookup"><span data-stu-id="3e578-153">ETW</span></span>
+## <a name="etw"></a><span data-ttu-id="199c4-153">ETW</span><span class="sxs-lookup"><span data-stu-id="199c4-153">ETW</span></span>
 
-<span data-ttu-id="3e578-154">**/api/etw/providers (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-154">**/api/etw/providers (GET)**</span></span>
+<span data-ttu-id="199c4-154">**/api/etw/providers (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-154">**/api/etw/providers (GET)**</span></span>
 
-<span data-ttu-id="3e578-155">등록 된 공급자를 열거 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-155">Enumerates registered providers</span></span>
+<span data-ttu-id="199c4-155">등록 된 공급자를 열거 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-155">Enumerates registered providers</span></span>
 
-<span data-ttu-id="3e578-156">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="3e578-156">Return data</span></span>
-* <span data-ttu-id="3e578-157">공급자 목록, 이름 및 GUID</span><span class="sxs-lookup"><span data-stu-id="3e578-157">List of providers, friendly name and GUID</span></span>
+<span data-ttu-id="199c4-156">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="199c4-156">Return data</span></span>
+* <span data-ttu-id="199c4-157">공급자 목록, 이름 및 GUID</span><span class="sxs-lookup"><span data-stu-id="199c4-157">List of providers, friendly name and GUID</span></span>
 
-<span data-ttu-id="3e578-158">**/api/etw/session/realtime (GET/WebSocket)**</span><span class="sxs-lookup"><span data-stu-id="3e578-158">**/api/etw/session/realtime (GET/WebSocket)**</span></span>
+<span data-ttu-id="199c4-158">**/api/etw/session/realtime (GET/WebSocket)**</span><span class="sxs-lookup"><span data-stu-id="199c4-158">**/api/etw/session/realtime (GET/WebSocket)**</span></span>
 
-<span data-ttu-id="3e578-159">실시간 ETW 세션을 만듭니다. websocket을 통해 관리 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-159">Creates a realtime ETW session; managed over a websocket.</span></span>
+<span data-ttu-id="199c4-159">실시간 ETW 세션을 만듭니다. websocket을 통해 관리 됩니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-159">Creates a realtime ETW session; managed over a websocket.</span></span>
 
-<span data-ttu-id="3e578-160">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="3e578-160">Return data</span></span>
-* <span data-ttu-id="3e578-161">활성화 된 공급자의 ETW 이벤트</span><span class="sxs-lookup"><span data-stu-id="3e578-161">ETW events from the enabled providers</span></span>
+<span data-ttu-id="199c4-160">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="199c4-160">Return data</span></span>
+* <span data-ttu-id="199c4-161">활성화 된 공급자의 ETW 이벤트</span><span class="sxs-lookup"><span data-stu-id="199c4-161">ETW events from the enabled providers</span></span>
 
-## <a name="holographic-os"></a><span data-ttu-id="3e578-162">Holographic OS</span><span class="sxs-lookup"><span data-stu-id="3e578-162">Holographic OS</span></span>
+## <a name="holographic-os"></a><span data-ttu-id="199c4-162">Holographic OS</span><span class="sxs-lookup"><span data-stu-id="199c4-162">Holographic OS</span></span>
 
-<span data-ttu-id="3e578-163">**/api/holographic/os/etw/customproviders (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-163">**/api/holographic/os/etw/customproviders (GET)**</span></span>
+<span data-ttu-id="199c4-163">**/api/holographic/os/etw/customproviders (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-163">**/api/holographic/os/etw/customproviders (GET)**</span></span>
 
-<span data-ttu-id="3e578-164">시스템에 등록 되지 않은 HoloLens 특정 ETW 공급자 목록을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-164">Returns a list of HoloLens specific ETW providers that are not registered with the system</span></span>
+<span data-ttu-id="199c4-164">시스템에 등록 되지 않은 HoloLens 특정 ETW 공급자 목록을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-164">Returns a list of HoloLens specific ETW providers that are not registered with the system</span></span>
 
-<span data-ttu-id="3e578-165">**/api/holographic/os/services (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-165">**/api/holographic/os/services (GET)**</span></span>
+<span data-ttu-id="199c4-165">**/api/holographic/os/services (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-165">**/api/holographic/os/services (GET)**</span></span>
 
-<span data-ttu-id="3e578-166">실행 중인 모든 서비스의 상태를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-166">Returns the states of all services running.</span></span>
+<span data-ttu-id="199c4-166">실행 중인 모든 서비스의 상태를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-166">Returns the states of all services running.</span></span>
 
-<span data-ttu-id="3e578-167">**/api/holographic/os/settings/ipd (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-167">**/api/holographic/os/settings/ipd (GET)**</span></span>
+<span data-ttu-id="199c4-167">**/api/holographic/os/settings/ipd (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-167">**/api/holographic/os/settings/ipd (GET)**</span></span>
 
-<span data-ttu-id="3e578-168">저장 된 IPD (Interpupillary distance)를 밀리미터 단위로 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-168">Gets the stored IPD (Interpupillary distance) in millimeters</span></span>
+<span data-ttu-id="199c4-168">저장 된 IPD (Interpupillary distance)를 밀리미터 단위로 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-168">Gets the stored IPD (Interpupillary distance) in millimeters</span></span>
 
-<span data-ttu-id="3e578-169">**/api/holographic/os/settings/ipd (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-169">**/api/holographic/os/settings/ipd (POST)**</span></span>
+<span data-ttu-id="199c4-169">**/api/holographic/os/settings/ipd (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-169">**/api/holographic/os/settings/ipd (POST)**</span></span>
 
-<span data-ttu-id="3e578-170">IPD를 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-170">Sets the IPD</span></span>
+<span data-ttu-id="199c4-170">IPD를 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-170">Sets the IPD</span></span>
 
-<span data-ttu-id="3e578-171">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-171">Parameters</span></span>
-* <span data-ttu-id="3e578-172">ipd: 밀리미터로 지정할 New IPD 값입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-172">ipd : New IPD value to be set in millimeters</span></span>
+<span data-ttu-id="199c4-171">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-171">Parameters</span></span>
+* <span data-ttu-id="199c4-172">ipd: 밀리미터로 지정할 New IPD 값입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-172">ipd : New IPD value to be set in millimeters</span></span>
 
-<span data-ttu-id="3e578-173">**/api/holographic/os/webmanagement/settings/https (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-173">**/api/holographic/os/webmanagement/settings/https (GET)**</span></span>
+<span data-ttu-id="199c4-173">**/api/holographic/os/webmanagement/settings/https (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-173">**/api/holographic/os/webmanagement/settings/https (GET)**</span></span>
 
-<span data-ttu-id="3e578-174">장치 포털에 대 한 HTTPS 요구 사항 가져오기</span><span class="sxs-lookup"><span data-stu-id="3e578-174">Get HTTPS requirements for the Device Portal</span></span>
+<span data-ttu-id="199c4-174">장치 포털에 대 한 HTTPS 요구 사항 가져오기</span><span class="sxs-lookup"><span data-stu-id="199c4-174">Get HTTPS requirements for the Device Portal</span></span>
 
-<span data-ttu-id="3e578-175">**/api/holographic/os/webmanagement/settings/https (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-175">**/api/holographic/os/webmanagement/settings/https (POST)**</span></span>
+<span data-ttu-id="199c4-175">**/api/holographic/os/webmanagement/settings/https (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-175">**/api/holographic/os/webmanagement/settings/https (POST)**</span></span>
 
-<span data-ttu-id="3e578-176">장치 포털에 대 한 HTTPS 요구 사항을 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-176">Sets HTTPS requirements for the Device Portal</span></span>
+<span data-ttu-id="199c4-176">장치 포털에 대 한 HTTPS 요구 사항을 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-176">Sets HTTPS requirements for the Device Portal</span></span>
 
-<span data-ttu-id="3e578-177">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-177">Parameters</span></span>
-* <span data-ttu-id="3e578-178">필수: 예, 아니요 또는 기본값</span><span class="sxs-lookup"><span data-stu-id="3e578-178">required : yes, no or default</span></span>
+<span data-ttu-id="199c4-177">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-177">Parameters</span></span>
+* <span data-ttu-id="199c4-178">필수: 예, 아니요 또는 기본값</span><span class="sxs-lookup"><span data-stu-id="199c4-178">required : yes, no or default</span></span>
 
-## <a name="holographic-perception"></a><span data-ttu-id="3e578-179">Holographic 인식</span><span class="sxs-lookup"><span data-stu-id="3e578-179">Holographic Perception</span></span>
+## <a name="holographic-perception"></a><span data-ttu-id="199c4-179">Holographic 인식</span><span class="sxs-lookup"><span data-stu-id="199c4-179">Holographic Perception</span></span>
 
-<span data-ttu-id="3e578-180">**/api/holographic/perception/client (GET/WebSocket)**</span><span class="sxs-lookup"><span data-stu-id="3e578-180">**/api/holographic/perception/client (GET/WebSocket)**</span></span>
+<span data-ttu-id="199c4-180">**/api/holographic/perception/client (GET/WebSocket)**</span><span class="sxs-lookup"><span data-stu-id="199c4-180">**/api/holographic/perception/client (GET/WebSocket)**</span></span>
 
-<span data-ttu-id="3e578-181">Websocket 업그레이드를 수락 하 고 30fps로 업데이트를 전송 하는 인식 클라이언트를 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-181">Accepts websocket upgrades and runs a perception client that sends updates at 30 fps.</span></span>
+<span data-ttu-id="199c4-181">Websocket 업그레이드를 수락 하 고 30fps로 업데이트를 전송 하는 인식 클라이언트를 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-181">Accepts websocket upgrades and runs a perception client that sends updates at 30 fps.</span></span>
 
-<span data-ttu-id="3e578-182">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-182">Parameters</span></span>
-* <span data-ttu-id="3e578-183">clientmode: "활성"은 동적으로 설정할 수 없는 경우 시각적 추적 모드를 강제로 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-183">clientmode: "active" forces visual tracking mode when it can't be established passively</span></span>
+<span data-ttu-id="199c4-182">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-182">Parameters</span></span>
+* <span data-ttu-id="199c4-183">clientmode: "활성"은 동적으로 설정할 수 없는 경우 시각적 추적 모드를 강제로 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-183">clientmode: "active" forces visual tracking mode when it can't be established passively</span></span>
 
-## <a name="holographic-thermal"></a><span data-ttu-id="3e578-184">Holographic 열</span><span class="sxs-lookup"><span data-stu-id="3e578-184">Holographic Thermal</span></span>
+## <a name="holographic-thermal"></a><span data-ttu-id="199c4-184">Holographic 열</span><span class="sxs-lookup"><span data-stu-id="199c4-184">Holographic Thermal</span></span>
 
-<span data-ttu-id="3e578-185">**/api/holographic/thermal/stage (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-185">**/api/holographic/thermal/stage (GET)**</span></span>
+<span data-ttu-id="199c4-185">**/api/holographic/thermal/stage (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-185">**/api/holographic/thermal/stage (GET)**</span></span>
 
-<span data-ttu-id="3e578-186">장치의 열 단계 가져오기 (0 보통, 1 웜, 2 개 위험)</span><span class="sxs-lookup"><span data-stu-id="3e578-186">Get the thermal stage of the device (0 normal, 1 warm, 2 critical)</span></span>
+<span data-ttu-id="199c4-186">장치의 열 단계 가져오기 (0 보통, 1 웜, 2 개 위험)</span><span class="sxs-lookup"><span data-stu-id="199c4-186">Get the thermal stage of the device (0 normal, 1 warm, 2 critical)</span></span>
 
-## <a name="map-manager"></a><span data-ttu-id="3e578-187">맵 관리자</span><span class="sxs-lookup"><span data-stu-id="3e578-187">Map Manager</span></span>
+## <a name="map-manager"></a><span data-ttu-id="199c4-187">맵 관리자</span><span class="sxs-lookup"><span data-stu-id="199c4-187">Map Manager</span></span>
 
-<span data-ttu-id="3e578-188">**/api/holographic/mapmanager/mapFiles (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-188">**/api/holographic/mapmanager/mapFiles (GET)**</span></span>
+<span data-ttu-id="199c4-188">**/api/holographic/mapmanager/mapFiles (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-188">**/api/holographic/mapmanager/mapFiles (GET)**</span></span>
 
-<span data-ttu-id="3e578-189">사용 가능한 맵 파일 (mapx) 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-189">Gets the list of the available map files (.mapx).</span></span>
+<span data-ttu-id="199c4-189">사용 가능한 맵 파일 (mapx) 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-189">Gets the list of the available map files (.mapx).</span></span>
 
-<span data-ttu-id="3e578-190">**/api/holographic/mapmanager/anchorFiles (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-190">**/api/holographic/mapmanager/anchorFiles (GET)**</span></span>
+<span data-ttu-id="199c4-190">**/api/holographic/mapmanager/anchorFiles (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-190">**/api/holographic/mapmanager/anchorFiles (GET)**</span></span>
 
-<span data-ttu-id="3e578-191">사용 가능한 앵커 파일 (.. x x x) 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-191">Gets the list of available anchor files (.ancx).</span></span>
+<span data-ttu-id="199c4-191">사용 가능한 앵커 파일 (.. x x x) 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-191">Gets the list of available anchor files (.ancx).</span></span>
 
-<span data-ttu-id="3e578-192">**/api/holographic/mapmanager/srdbFiles (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-192">**/api/holographic/mapmanager/srdbFiles (GET)**</span></span>
+<span data-ttu-id="199c4-192">**/api/holographic/mapmanager/srdbFiles (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-192">**/api/holographic/mapmanager/srdbFiles (GET)**</span></span>
 
-<span data-ttu-id="3e578-193">사용 가능한 공간 재구성 데이터베이스 파일 (srdb) 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-193">Gets the list of available spatial reconstruction database files (.srdb).</span></span>
+<span data-ttu-id="199c4-193">사용 가능한 공간 재구성 데이터베이스 파일 (srdb) 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-193">Gets the list of available spatial reconstruction database files (.srdb).</span></span>
 
-<span data-ttu-id="3e578-194">**/api/holographic/mapmanager/getanchors (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-194">**/api/holographic/mapmanager/getanchors (GET)**</span></span>
+<span data-ttu-id="199c4-194">**/api/holographic/mapmanager/getanchors (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-194">**/api/holographic/mapmanager/getanchors (GET)**</span></span>
 
-<span data-ttu-id="3e578-195">현재 사용자에 대해 지속형 앵커 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-195">Gets the list of persisted anchors for the current user.</span></span> 
+<span data-ttu-id="199c4-195">현재 사용자에 대해 지속형 앵커 목록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-195">Gets the list of persisted anchors for the current user.</span></span> 
 
-### <a name="downloaduploaddelete-files"></a><span data-ttu-id="3e578-196">파일 다운로드/업로드/삭제</span><span class="sxs-lookup"><span data-stu-id="3e578-196">Download/Upload/Delete Files</span></span>
-<span data-ttu-id="3e578-197">**/api/holographic/mapmanager/download (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-197">**/api/holographic/mapmanager/download (GET)**</span></span>
+### <a name="downloaduploaddelete-files"></a><span data-ttu-id="199c4-196">파일 다운로드/업로드/삭제</span><span class="sxs-lookup"><span data-stu-id="199c4-196">Download/Upload/Delete Files</span></span>
+<span data-ttu-id="199c4-197">**/api/holographic/mapmanager/download (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-197">**/api/holographic/mapmanager/download (GET)**</span></span>
 
-<span data-ttu-id="3e578-198">지도, 앵커 또는 공간 재구성 데이터베이스 파일을 다운로드 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-198">Downloads a map, anchor, or spatial reconstruction database file.</span></span> <span data-ttu-id="3e578-199">이 파일은 이전에 업로드 하거나 내보내야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-199">The file must have been previously uploaded or exported.</span></span>
+<span data-ttu-id="199c4-198">지도, 앵커 또는 공간 재구성 데이터베이스 파일을 다운로드 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-198">Downloads a map, anchor, or spatial reconstruction database file.</span></span> <span data-ttu-id="199c4-199">이 파일은 이전에 업로드 하거나 내보내야 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-199">The file must have been previously uploaded or exported.</span></span>
 
-<span data-ttu-id="3e578-200">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-200">Parameters</span></span>
-* <span data-ttu-id="3e578-201">파일 이름: 다운로드할 파일의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-201">FileName: Name of file to download.</span></span>
+<span data-ttu-id="199c4-200">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-200">Parameters</span></span>
+* <span data-ttu-id="199c4-201">파일 이름: 다운로드할 파일의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-201">FileName: Name of file to download.</span></span>
 
-<span data-ttu-id="3e578-202">예제:</span><span class="sxs-lookup"><span data-stu-id="3e578-202">Example:</span></span> 
+<span data-ttu-id="199c4-202">예:</span><span class="sxs-lookup"><span data-stu-id="199c4-202">Example:</span></span> 
 ```
 $.post("/api/holographic/mapmanager/download?FileName=" + spaceID)
 ```
 
-<span data-ttu-id="3e578-203">**/api/holographic/mapmanager/upload (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-203">**/api/holographic/mapmanager/upload (POST)**</span></span>
+<span data-ttu-id="199c4-203">**/api/holographic/mapmanager/upload (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-203">**/api/holographic/mapmanager/upload (POST)**</span></span>
 
-<span data-ttu-id="3e578-204">지도, 앵커 또는 공간 재구성 데이터베이스 파일을 업로드 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-204">Uploads a map, anchor, or spatial reconstruction database file.</span></span> <span data-ttu-id="3e578-205">파일이 업로드 되 면 나중에 시스템에서 사용 하기 위해 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-205">Once a file is uploaded it can later be imported to be used by the system.</span></span>
+<span data-ttu-id="199c4-204">지도, 앵커 또는 공간 재구성 데이터베이스 파일을 업로드 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-204">Uploads a map, anchor, or spatial reconstruction database file.</span></span> <span data-ttu-id="199c4-205">파일이 업로드 되 면 나중에 시스템에서 사용 하기 위해 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-205">Once a file is uploaded it can later be imported to be used by the system.</span></span>
 
-<span data-ttu-id="3e578-206">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-206">Parameters</span></span>
-* <span data-ttu-id="3e578-207">file: 업로드할 파일의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-207">file: Name of the file to upload.</span></span>
+<span data-ttu-id="199c4-206">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-206">Parameters</span></span>
+* <span data-ttu-id="199c4-207">file: 업로드할 파일의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-207">file: Name of the file to upload.</span></span>
 
-<span data-ttu-id="3e578-208">예제:</span><span class="sxs-lookup"><span data-stu-id="3e578-208">Example:</span></span>
+<span data-ttu-id="199c4-208">예:</span><span class="sxs-lookup"><span data-stu-id="199c4-208">Example:</span></span>
 ```
 var form_data = new FormData();
 form_data.append("file", file_data);
@@ -213,486 +213,486 @@ $.ajax({
 })
 ```
 
-<span data-ttu-id="3e578-209">**/api/holographic/mapmanager/delete (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-209">**/api/holographic/mapmanager/delete (POST)**</span></span>
+<span data-ttu-id="199c4-209">**/api/holographic/mapmanager/delete (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-209">**/api/holographic/mapmanager/delete (POST)**</span></span>
 
-<span data-ttu-id="3e578-210">지도, 앵커 또는 공간 재구성 데이터베이스 파일을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-210">Deletes a map, anchor, or spatial reconstruction database file.</span></span> <span data-ttu-id="3e578-211">이 파일은 이전에 업로드 하거나 내보내야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-211">The file must have been previously uploaded or exported.</span></span>
+<span data-ttu-id="199c4-210">지도, 앵커 또는 공간 재구성 데이터베이스 파일을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-210">Deletes a map, anchor, or spatial reconstruction database file.</span></span> <span data-ttu-id="199c4-211">이 파일은 이전에 업로드 하거나 내보내야 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-211">The file must have been previously uploaded or exported.</span></span>
 
-<span data-ttu-id="3e578-212">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-212">Parameters</span></span>
-* <span data-ttu-id="3e578-213">FileName: 삭제할 파일의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-213">FileName: Name of file to delete.</span></span>
+<span data-ttu-id="199c4-212">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-212">Parameters</span></span>
+* <span data-ttu-id="199c4-213">FileName: 삭제할 파일의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-213">FileName: Name of file to delete.</span></span>
 
-<span data-ttu-id="3e578-214">예제:</span><span class="sxs-lookup"><span data-stu-id="3e578-214">Example:</span></span> 
+<span data-ttu-id="199c4-214">예:</span><span class="sxs-lookup"><span data-stu-id="199c4-214">Example:</span></span> 
 ```
 $.post("/api/holographic/mapmanager/delete?FileName=" + spaceID)
 ```
 
-### <a name="export"></a><span data-ttu-id="3e578-215">내보내기</span><span class="sxs-lookup"><span data-stu-id="3e578-215">Export</span></span>
+### <a name="export"></a><span data-ttu-id="199c4-215">내보내기</span><span class="sxs-lookup"><span data-stu-id="199c4-215">Export</span></span>
 
-<span data-ttu-id="3e578-216">**/api/holographic/mapmanager/export (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-216">**/api/holographic/mapmanager/export (POST)**</span></span>
+<span data-ttu-id="199c4-216">**/api/holographic/mapmanager/export (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-216">**/api/holographic/mapmanager/export (POST)**</span></span>
 
-<span data-ttu-id="3e578-217">시스템에서 현재 사용 중인 맵을 내보냅니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-217">Exports the map currently in use by the system.</span></span> <span data-ttu-id="3e578-218">내보낸 후에는 다운로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-218">Once exported, it can be downloaded.</span></span> 
+<span data-ttu-id="199c4-217">시스템에서 현재 사용 중인 맵을 내보냅니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-217">Exports the map currently in use by the system.</span></span> <span data-ttu-id="199c4-218">내보낸 후에는 다운로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-218">Once exported, it can be downloaded.</span></span> 
 
-<span data-ttu-id="3e578-219">예제:</span><span class="sxs-lookup"><span data-stu-id="3e578-219">Example:</span></span> 
+<span data-ttu-id="199c4-219">예:</span><span class="sxs-lookup"><span data-stu-id="199c4-219">Example:</span></span> 
 ```
 $.post("/api/holographic/mapmanager/export")
 ```
 
-<span data-ttu-id="3e578-220">**/api/holographic/mapmanager/exportanchors (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-220">**/api/holographic/mapmanager/exportanchors (POST)**</span></span>
+<span data-ttu-id="199c4-220">**/api/holographic/mapmanager/exportanchors (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-220">**/api/holographic/mapmanager/exportanchors (POST)**</span></span>
 
-<span data-ttu-id="3e578-221">시스템에서 현재 사용 중인 맵을 내보냅니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-221">Exports the map currently in use by the system.</span></span> <span data-ttu-id="3e578-222">내보낸 후에는 다운로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-222">Once exported, it can be downloaded.</span></span> <span data-ttu-id="3e578-223">예제:</span><span class="sxs-lookup"><span data-stu-id="3e578-223">Example:</span></span> 
+<span data-ttu-id="199c4-221">시스템에서 현재 사용 중인 맵을 내보냅니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-221">Exports the map currently in use by the system.</span></span> <span data-ttu-id="199c4-222">내보낸 후에는 다운로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-222">Once exported, it can be downloaded.</span></span> <span data-ttu-id="199c4-223">예:</span><span class="sxs-lookup"><span data-stu-id="199c4-223">Example:</span></span> 
 ```
 $.post("/api/holographic/mapmanager/exportanchors")
 ```
 
-<span data-ttu-id="3e578-224">**/api/holographic/mapmanager/exportmapandanchors (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-224">**/api/holographic/mapmanager/exportmapandanchors (POST)**</span></span>
+<span data-ttu-id="199c4-224">**/api/holographic/mapmanager/exportmapandanchors (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-224">**/api/holographic/mapmanager/exportmapandanchors (POST)**</span></span>
 
-<span data-ttu-id="3e578-225">시스템에서 현재 사용 중인 맵과 앵커를 내보냅니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-225">Exports the map and anchors currently in use by the system.</span></span> <span data-ttu-id="3e578-226">내보낸 후에는 다운로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-226">Once are exported, they can be downloaded.</span></span> <span data-ttu-id="3e578-227">예제:</span><span class="sxs-lookup"><span data-stu-id="3e578-227">Example:</span></span> 
+<span data-ttu-id="199c4-225">시스템에서 현재 사용 중인 맵과 앵커를 내보냅니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-225">Exports the map and anchors currently in use by the system.</span></span> <span data-ttu-id="199c4-226">내보낸 후에는 다운로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-226">Once are exported, they can be downloaded.</span></span> <span data-ttu-id="199c4-227">예:</span><span class="sxs-lookup"><span data-stu-id="199c4-227">Example:</span></span> 
 ```
 $.post("/api/holographic/mapmanager/exportmapandanchors")
 ```
 
-<span data-ttu-id="3e578-228">**/api/holographic/mapmanager/exportmapandspatialmappingdb (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-228">**/api/holographic/mapmanager/exportmapandspatialmappingdb (POST)**</span></span>
+<span data-ttu-id="199c4-228">**/api/holographic/mapmanager/exportmapandspatialmappingdb (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-228">**/api/holographic/mapmanager/exportmapandspatialmappingdb (POST)**</span></span>
 
-<span data-ttu-id="3e578-229">시스템에서 현재 사용 중인 맵 및 공간 재구성 데이터베이스를 내보냅니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-229">Exports the map and spatial reconstruction database currently in use by the system.</span></span> <span data-ttu-id="3e578-230">내보낸 후에는 다운로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-230">Once they are exported, they can be downloaded.</span></span> 
+<span data-ttu-id="199c4-229">시스템에서 현재 사용 중인 맵 및 공간 재구성 데이터베이스를 내보냅니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-229">Exports the map and spatial reconstruction database currently in use by the system.</span></span> <span data-ttu-id="199c4-230">내보낸 후에는 다운로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-230">Once they are exported, they can be downloaded.</span></span> 
 
-<span data-ttu-id="3e578-231">예제:</span><span class="sxs-lookup"><span data-stu-id="3e578-231">Example:</span></span> 
+<span data-ttu-id="199c4-231">예:</span><span class="sxs-lookup"><span data-stu-id="199c4-231">Example:</span></span> 
 ```
 $.post("/api/holographic/mapmanager/exportmapandspatialmappingdb")
 ```
 
-### <a name="import"></a><span data-ttu-id="3e578-232">가져오기</span><span class="sxs-lookup"><span data-stu-id="3e578-232">Import</span></span>
+### <a name="import"></a><span data-ttu-id="199c4-232">가져오기</span><span class="sxs-lookup"><span data-stu-id="199c4-232">Import</span></span>
 
-<span data-ttu-id="3e578-233">**/api/holographic/mapmanager/import (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-233">**/api/holographic/mapmanager/import (POST)**</span></span>
+<span data-ttu-id="199c4-233">**/api/holographic/mapmanager/import (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-233">**/api/holographic/mapmanager/import (POST)**</span></span>
 
-<span data-ttu-id="3e578-234">현재 사용 해야 하는 맵을 시스템에 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-234">Indicates to the system which map should be used be currently used.</span></span> <span data-ttu-id="3e578-235">내보내거나 업로드 한 파일에 대해를 호출할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-235">Can be called on files that have been exported or uploaded.</span></span>
+<span data-ttu-id="199c4-234">현재 사용 해야 하는 맵을 시스템에 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-234">Indicates to the system which map should be used be currently used.</span></span> <span data-ttu-id="199c4-235">내보내거나 업로드 한 파일에 대해를 호출할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-235">Can be called on files that have been exported or uploaded.</span></span>
 
-<span data-ttu-id="3e578-236">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-236">Parameters</span></span>
-* <span data-ttu-id="3e578-237">FileName: 사용할 맵의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-237">FileName: Name of the map to be used.</span></span> 
+<span data-ttu-id="199c4-236">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-236">Parameters</span></span>
+* <span data-ttu-id="199c4-237">FileName: 사용할 맵의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-237">FileName: Name of the map to be used.</span></span> 
 
-<span data-ttu-id="3e578-238">예제:</span><span class="sxs-lookup"><span data-stu-id="3e578-238">Example:</span></span> 
+<span data-ttu-id="199c4-238">예:</span><span class="sxs-lookup"><span data-stu-id="199c4-238">Example:</span></span> 
 ```
 $.post("/api/holographic/mapmanager/import?FileName=" + spaceID, function() { alert("Import was successful!"); })
 ```
 
-<span data-ttu-id="3e578-239">**/api/holographic/mapmanager/importanchors (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-239">**/api/holographic/mapmanager/importanchors (POST)**</span></span>
+<span data-ttu-id="199c4-239">**/api/holographic/mapmanager/importanchors (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-239">**/api/holographic/mapmanager/importanchors (POST)**</span></span>
 
-<span data-ttu-id="3e578-240">현재 사용 해야 하는 앵커를 시스템에 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-240">Indicates to the system which anchors should be used be currently used.</span></span> <span data-ttu-id="3e578-241">내보내거나 업로드 한 파일에 대해를 호출할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-241">Can be called on files that have been exported or uploaded.</span></span>
+<span data-ttu-id="199c4-240">현재 사용 해야 하는 앵커를 시스템에 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-240">Indicates to the system which anchors should be used be currently used.</span></span> <span data-ttu-id="199c4-241">내보내거나 업로드 한 파일에 대해를 호출할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-241">Can be called on files that have been exported or uploaded.</span></span>
 
-<span data-ttu-id="3e578-242">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-242">Parameters</span></span>
-* <span data-ttu-id="3e578-243">FileName: 사용할 앵커의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-243">FileName: Name of the anchors to be used.</span></span> 
+<span data-ttu-id="199c4-242">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-242">Parameters</span></span>
+* <span data-ttu-id="199c4-243">FileName: 사용할 앵커의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-243">FileName: Name of the anchors to be used.</span></span> 
 
-<span data-ttu-id="3e578-244">예제:</span><span class="sxs-lookup"><span data-stu-id="3e578-244">Example:</span></span> 
+<span data-ttu-id="199c4-244">예:</span><span class="sxs-lookup"><span data-stu-id="199c4-244">Example:</span></span> 
 ```
 $.post("/api/holographic/mapmanager/import?FileName=" + spaceID, function() { alert("Import was successful!"); })
 ```
 
-<span data-ttu-id="3e578-245">**/api/holographic/mapmanager/importspatialmappingdb (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-245">**/api/holographic/mapmanager/importspatialmappingdb (POST)**</span></span>
+<span data-ttu-id="199c4-245">**/api/holographic/mapmanager/importspatialmappingdb (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-245">**/api/holographic/mapmanager/importspatialmappingdb (POST)**</span></span>
 
-<span data-ttu-id="3e578-246">현재 사용 되는 공간 재구성 데이터베이스를 시스템에 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-246">Indicates to the system which spatial reconstruction database should be used be currently used.</span></span> <span data-ttu-id="3e578-247">내보내거나 업로드 한 파일에 대해를 호출할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-247">Can be called on files that have been exported or uploaded.</span></span>
+<span data-ttu-id="199c4-246">현재 사용 되는 공간 재구성 데이터베이스를 시스템에 나타냅니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-246">Indicates to the system which spatial reconstruction database should be used be currently used.</span></span> <span data-ttu-id="199c4-247">내보내거나 업로드 한 파일에 대해를 호출할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-247">Can be called on files that have been exported or uploaded.</span></span>
 
-<span data-ttu-id="3e578-248">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-248">Parameters</span></span>
-* <span data-ttu-id="3e578-249">FileName: 사용할 공간 매핑 db의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-249">FileName: Name of the spatial mapping db to be used.</span></span> 
+<span data-ttu-id="199c4-248">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-248">Parameters</span></span>
+* <span data-ttu-id="199c4-249">FileName: 사용할 공간 매핑 db의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-249">FileName: Name of the spatial mapping db to be used.</span></span> 
 
-<span data-ttu-id="3e578-250">예제:</span><span class="sxs-lookup"><span data-stu-id="3e578-250">Example:</span></span> 
+<span data-ttu-id="199c4-250">예:</span><span class="sxs-lookup"><span data-stu-id="199c4-250">Example:</span></span> 
 ```
 $.post("/api/holographic/mapmanager/import?FileName=" + spaceID, function() { alert("Import was successful!"); })
 ```
 
-### <a name="other"></a><span data-ttu-id="3e578-251">기타</span><span class="sxs-lookup"><span data-stu-id="3e578-251">Other</span></span>
+### <a name="other"></a><span data-ttu-id="199c4-251">기타</span><span class="sxs-lookup"><span data-stu-id="199c4-251">Other</span></span>
 
-<span data-ttu-id="3e578-252">**/api/holographic/mapmanager/resetmapandanchorsandsrdb (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-252">**/api/holographic/mapmanager/resetmapandanchorsandsrdb (POST)**</span></span>
+<span data-ttu-id="199c4-252">**/api/holographic/mapmanager/resetmapandanchorsandsrdb (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-252">**/api/holographic/mapmanager/resetmapandanchorsandsrdb (POST)**</span></span>
 
-<span data-ttu-id="3e578-253">시스템을 맵, 앵커 및 공간 재구성 데이터베이스로 다시 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-253">Reset the system the map, anchors and spatial reconstruction database.</span></span>
+<span data-ttu-id="199c4-253">시스템을 맵, 앵커 및 공간 재구성 데이터베이스로 다시 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-253">Reset the system the map, anchors and spatial reconstruction database.</span></span>
 
-<span data-ttu-id="3e578-254">예제:</span><span class="sxs-lookup"><span data-stu-id="3e578-254">Example:</span></span> 
+<span data-ttu-id="199c4-254">예:</span><span class="sxs-lookup"><span data-stu-id="199c4-254">Example:</span></span> 
 ```
 $.post("/api/holographic/mapmanager/resetmapandanchorsandsrdb")
 ```
 
-<span data-ttu-id="3e578-255">**/api/holographic/mapmanager/status (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-255">**/api/holographic/mapmanager/status (GET)**</span></span>
+<span data-ttu-id="199c4-255">**/api/holographic/mapmanager/status (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-255">**/api/holographic/mapmanager/status (GET)**</span></span>
 
-<span data-ttu-id="3e578-256">마지막으로 가져온 맵, 앵커 및 공간 재구성 데이터베이스 파일을 포함 하 여 시스템의 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-256">Gets the status of the system, including which map, anchors, and spatial reconstruction database files that were last imported.</span></span> 
+<span data-ttu-id="199c4-256">마지막으로 가져온 맵, 앵커 및 공간 재구성 데이터베이스 파일을 포함 하 여 시스템의 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-256">Gets the status of the system, including which map, anchors, and spatial reconstruction database files that were last imported.</span></span> 
 
 
-## <a name="mixed-reality-capture"></a><span data-ttu-id="3e578-257">혼합 현실 캡처</span><span class="sxs-lookup"><span data-stu-id="3e578-257">Mixed Reality Capture</span></span>
+## <a name="mixed-reality-capture"></a><span data-ttu-id="199c4-257">혼합 현실 캡처</span><span class="sxs-lookup"><span data-stu-id="199c4-257">Mixed Reality Capture</span></span>
 
-<span data-ttu-id="3e578-258">**/api/holographic/mrc/file (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-258">**/api/holographic/mrc/file (GET)**</span></span>
+<span data-ttu-id="199c4-258">**/api/holographic/mrc/file (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-258">**/api/holographic/mrc/file (GET)**</span></span>
 
-<span data-ttu-id="3e578-259">장치에서 혼합 된 현실 파일을 다운로드 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-259">Downloads a mixed reality file from the device.</span></span> <span data-ttu-id="3e578-260">스트리밍을 위해 op = stream 쿼리 매개 변수를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-260">Use op=stream query parameter for streaming.</span></span>
+<span data-ttu-id="199c4-259">장치에서 혼합 된 현실 파일을 다운로드 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-259">Downloads a mixed reality file from the device.</span></span> <span data-ttu-id="199c4-260">스트리밍을 위해 op = stream 쿼리 매개 변수를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-260">Use op=stream query parameter for streaming.</span></span>
 
-<span data-ttu-id="3e578-261">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-261">Parameters</span></span>
-* <span data-ttu-id="3e578-262">filename: hex64로 인코딩된 비디오 파일의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-262">filename : Name, hex64 encoded, of the video file to get</span></span>
-* <span data-ttu-id="3e578-263">op: stream</span><span class="sxs-lookup"><span data-stu-id="3e578-263">op : stream</span></span>
+<span data-ttu-id="199c4-261">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-261">Parameters</span></span>
+* <span data-ttu-id="199c4-262">filename: hex64로 인코딩된 비디오 파일의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-262">filename : Name, hex64 encoded, of the video file to get</span></span>
+* <span data-ttu-id="199c4-263">op: stream</span><span class="sxs-lookup"><span data-stu-id="199c4-263">op : stream</span></span>
 
-<span data-ttu-id="3e578-264">**/api/holographic/mrc/file (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="3e578-264">**/api/holographic/mrc/file (DELETE)**</span></span>
+<span data-ttu-id="199c4-264">**/api/holographic/mrc/file (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="199c4-264">**/api/holographic/mrc/file (DELETE)**</span></span>
 
-<span data-ttu-id="3e578-265">장치에서 혼합 된 현실 기록을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-265">Deletes a mixed reality recording from the device.</span></span>
+<span data-ttu-id="199c4-265">장치에서 혼합 된 현실 기록을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-265">Deletes a mixed reality recording from the device.</span></span>
 
-<span data-ttu-id="3e578-266">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-266">Parameters</span></span>
-* <span data-ttu-id="3e578-267">filename: 삭제할 파일의 이름 (hex64)입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-267">filename : Name, hex64 encoded, of the file to delete</span></span>
+<span data-ttu-id="199c4-266">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-266">Parameters</span></span>
+* <span data-ttu-id="199c4-267">filename: 삭제할 파일의 이름 (hex64)입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-267">filename : Name, hex64 encoded, of the file to delete</span></span>
 
-<span data-ttu-id="3e578-268">**/api/holographic/mrc/files (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-268">**/api/holographic/mrc/files (GET)**</span></span>
+<span data-ttu-id="199c4-268">**/api/holographic/mrc/files (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-268">**/api/holographic/mrc/files (GET)**</span></span>
 
-<span data-ttu-id="3e578-269">장치에 저장 된 혼합 현실 파일의 목록을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-269">Returns the list of mixed reality files stored on the device</span></span>
+<span data-ttu-id="199c4-269">장치에 저장 된 혼합 현실 파일의 목록을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-269">Returns the list of mixed reality files stored on the device</span></span>
 
-<span data-ttu-id="3e578-270">**/api/holographic/mrc/photo (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-270">**/api/holographic/mrc/photo (POST)**</span></span>
+<span data-ttu-id="199c4-270">**/api/holographic/mrc/photo (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-270">**/api/holographic/mrc/photo (POST)**</span></span>
 
-<span data-ttu-id="3e578-271">혼합 현실 사진을 사용 하 고 장치에 파일을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-271">Takes a mixed reality photo and creates a file on the device</span></span>
+<span data-ttu-id="199c4-271">혼합 현실 사진을 사용 하 고 장치에 파일을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-271">Takes a mixed reality photo and creates a file on the device</span></span>
 
-<span data-ttu-id="3e578-272">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-272">Parameters</span></span>
-* <span data-ttu-id="3e578-273">holo: capture holograms: true 또는 false (기본값은 false)</span><span class="sxs-lookup"><span data-stu-id="3e578-273">holo : capture holograms: true or false (defaults to false)</span></span>
-* <span data-ttu-id="3e578-274">pv: PV 카메라 캡처: true 또는 false (기본값은 false)</span><span class="sxs-lookup"><span data-stu-id="3e578-274">pv : capture PV camera: true or false (defaults to false)</span></span>
-* <span data-ttu-id="3e578-275">RenderFromCamera: (HoloLens 2만 해당) 사진/비디오 카메라의 관점에서 렌더링: true 또는 false (기본값은 true)</span><span class="sxs-lookup"><span data-stu-id="3e578-275">RenderFromCamera : (HoloLens 2 only) render from perspective of photo/video camera: true or false (defaults to true)</span></span>
+<span data-ttu-id="199c4-272">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-272">Parameters</span></span>
+* <span data-ttu-id="199c4-273">holo: capture holograms: true 또는 false (기본값은 false)</span><span class="sxs-lookup"><span data-stu-id="199c4-273">holo : capture holograms: true or false (defaults to false)</span></span>
+* <span data-ttu-id="199c4-274">pv: PV 카메라 캡처: true 또는 false (기본값은 false)</span><span class="sxs-lookup"><span data-stu-id="199c4-274">pv : capture PV camera: true or false (defaults to false)</span></span>
+* <span data-ttu-id="199c4-275">RenderFromCamera: (HoloLens 2만 해당) 사진/비디오 카메라의 관점에서 렌더링: true 또는 false (기본값은 true)</span><span class="sxs-lookup"><span data-stu-id="199c4-275">RenderFromCamera : (HoloLens 2 only) render from perspective of photo/video camera: true or false (defaults to true)</span></span>
 
-<span data-ttu-id="3e578-276">**/api/holographic/mrc/settings (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-276">**/api/holographic/mrc/settings (GET)**</span></span>
+<span data-ttu-id="199c4-276">**/api/holographic/mrc/settings (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-276">**/api/holographic/mrc/settings (GET)**</span></span>
 
-<span data-ttu-id="3e578-277">기본 혼합 현실 캡처 설정을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-277">Gets the default mixed reality capture settings</span></span>
+<span data-ttu-id="199c4-277">기본 혼합 현실 캡처 설정을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-277">Gets the default mixed reality capture settings</span></span>
 
-<span data-ttu-id="3e578-278">**/api/holographic/mrc/settings (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-278">**/api/holographic/mrc/settings (POST)**</span></span>
+<span data-ttu-id="199c4-278">**/api/holographic/mrc/settings (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-278">**/api/holographic/mrc/settings (POST)**</span></span>
 
-<span data-ttu-id="3e578-279">기본 혼합 현실 캡처 설정을 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-279">Sets the default mixed reality capture settings.</span></span>  <span data-ttu-id="3e578-280">이러한 설정 중 일부는 시스템의 MRC 사진 및 비디오 캡처에 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-280">Some of these settings are applied to the system's MRC photo and video capture.</span></span>
+<span data-ttu-id="199c4-279">기본 혼합 현실 캡처 설정을 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-279">Sets the default mixed reality capture settings.</span></span>  <span data-ttu-id="199c4-280">이러한 설정 중 일부는 시스템의 MRC 사진 및 비디오 캡처에 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-280">Some of these settings are applied to the system's MRC photo and video capture.</span></span>
 
-<span data-ttu-id="3e578-281">**/api/holographic/mrc/status (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-281">**/api/holographic/mrc/status (GET)**</span></span>
+<span data-ttu-id="199c4-281">**/api/holographic/mrc/status (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-281">**/api/holographic/mrc/status (GET)**</span></span>
 
-<span data-ttu-id="3e578-282">Windows 장치 포털 내 혼합 현실 캡처의 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-282">Gets the state of mixed reality capture within the Windows Device Portal.</span></span>
+<span data-ttu-id="199c4-282">Windows 장치 포털 내 혼합 현실 캡처의 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-282">Gets the state of mixed reality capture within the Windows Device Portal.</span></span>
 
-<span data-ttu-id="3e578-283">***Response***</span><span class="sxs-lookup"><span data-stu-id="3e578-283">***Response***</span></span>
+<span data-ttu-id="199c4-283">\**_응답_* _</span><span class="sxs-lookup"><span data-stu-id="199c4-283">\**_Response_* _</span></span>
 
-<span data-ttu-id="3e578-284">응답에는 Windows 장치 포털이 비디오를 기록 하 고 있는지 여부를 나타내는 JSON 속성이 포함 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-284">The response contains a JSON property indicating if Windows Device Portal is recording video or not.</span></span>
+<span data-ttu-id="199c4-284">응답에는 Windows 장치 포털이 비디오를 기록 하 고 있는지 여부를 나타내는 JSON 속성이 포함 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-284">The response contains a JSON property indicating if Windows Device Portal is recording video or not.</span></span>
 
 ``` javascript
 {"IsRecording" : boolean}
 ```
 
-<span data-ttu-id="3e578-285">**/api/holographic/mrc/thumbnail (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-285">**/api/holographic/mrc/thumbnail (GET)**</span></span>
+<span data-ttu-id="199c4-285">_ */api/holographic/mrc/thumbnail (GET)*\*</span><span class="sxs-lookup"><span data-stu-id="199c4-285">_ */api/holographic/mrc/thumbnail (GET)*\*</span></span>
 
-<span data-ttu-id="3e578-286">지정 된 파일에 대 한 미리 보기 이미지를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-286">Gets the thumbnail image for the specified file.</span></span>
+<span data-ttu-id="199c4-286">지정 된 파일에 대 한 미리 보기 이미지를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-286">Gets the thumbnail image for the specified file.</span></span>
 
-<span data-ttu-id="3e578-287">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-287">Parameters</span></span>
-* <span data-ttu-id="3e578-288">파일 이름: 미리 보기를 요청 하는 파일의 이름 (hex64)입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-288">filename: Name, hex64 encoded, of the file for which the thumbnail is being requested</span></span>
+<span data-ttu-id="199c4-287">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-287">Parameters</span></span>
+* <span data-ttu-id="199c4-288">파일 이름: 미리 보기를 요청 하는 파일의 이름 (hex64)입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-288">filename: Name, hex64 encoded, of the file for which the thumbnail is being requested</span></span>
 
-<span data-ttu-id="3e578-289">**/api/holographic/mrc/video/control/start (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-289">**/api/holographic/mrc/video/control/start (POST)**</span></span>
+<span data-ttu-id="199c4-289">**/api/holographic/mrc/video/control/start (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-289">**/api/holographic/mrc/video/control/start (POST)**</span></span>
 
-<span data-ttu-id="3e578-290">혼합 현실 기록을 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-290">Starts a mixed reality recording</span></span>
+<span data-ttu-id="199c4-290">혼합 현실 기록을 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-290">Starts a mixed reality recording</span></span>
 
-<span data-ttu-id="3e578-291">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-291">Parameters</span></span>
-* <span data-ttu-id="3e578-292">holo: capture holograms: true 또는 false (기본값은 false)</span><span class="sxs-lookup"><span data-stu-id="3e578-292">holo : capture holograms: true or false (defaults to false)</span></span>
-* <span data-ttu-id="3e578-293">pv: PV 카메라 캡처: true 또는 false (기본값은 false)</span><span class="sxs-lookup"><span data-stu-id="3e578-293">pv : capture PV camera: true or false (defaults to false)</span></span>
-* <span data-ttu-id="3e578-294">mic: 마이크 캡처: true 또는 false (기본값은 false)</span><span class="sxs-lookup"><span data-stu-id="3e578-294">mic : capture microphone: true or false (defaults to false)</span></span>
-* <span data-ttu-id="3e578-295">루프백: 응용 프로그램 오디오 캡처: true 또는 false (기본값은 false)</span><span class="sxs-lookup"><span data-stu-id="3e578-295">loopback : capture app audio: true or false (defaults to false)</span></span>
-* <span data-ttu-id="3e578-296">RenderFromCamera: (HoloLens 2만 해당) 사진/비디오 카메라의 관점에서 렌더링: true 또는 false (기본값은 true)</span><span class="sxs-lookup"><span data-stu-id="3e578-296">RenderFromCamera : (HoloLens 2 only) render from perspective of photo/video camera: true or false (defaults to true)</span></span>
-* <span data-ttu-id="3e578-297">vstab: (HoloLens 2만 해당) 비디오 안정화 사용: true 또는 false (기본값은 true)</span><span class="sxs-lookup"><span data-stu-id="3e578-297">vstab : (HoloLens 2 only) enable video stabilization: true or false (defaults to true)</span></span>
-* <span data-ttu-id="3e578-298">vstabbuffer: (HoloLens 2만 해당) 비디오 안정화 버퍼 대기 시간: 0-30 프레임 (기본값은 15 프레임)</span><span class="sxs-lookup"><span data-stu-id="3e578-298">vstabbuffer: (HoloLens 2 only) video stabilization buffer latency: 0 to 30 frames (defaults to 15 frames)</span></span>
+<span data-ttu-id="199c4-291">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-291">Parameters</span></span>
+* <span data-ttu-id="199c4-292">holo: capture holograms: true 또는 false (기본값은 false)</span><span class="sxs-lookup"><span data-stu-id="199c4-292">holo : capture holograms: true or false (defaults to false)</span></span>
+* <span data-ttu-id="199c4-293">pv: PV 카메라 캡처: true 또는 false (기본값은 false)</span><span class="sxs-lookup"><span data-stu-id="199c4-293">pv : capture PV camera: true or false (defaults to false)</span></span>
+* <span data-ttu-id="199c4-294">mic: 마이크 캡처: true 또는 false (기본값은 false)</span><span class="sxs-lookup"><span data-stu-id="199c4-294">mic : capture microphone: true or false (defaults to false)</span></span>
+* <span data-ttu-id="199c4-295">루프백: 응용 프로그램 오디오 캡처: true 또는 false (기본값은 false)</span><span class="sxs-lookup"><span data-stu-id="199c4-295">loopback : capture app audio: true or false (defaults to false)</span></span>
+* <span data-ttu-id="199c4-296">RenderFromCamera: (HoloLens 2만 해당) 사진/비디오 카메라의 관점에서 렌더링: true 또는 false (기본값은 true)</span><span class="sxs-lookup"><span data-stu-id="199c4-296">RenderFromCamera : (HoloLens 2 only) render from perspective of photo/video camera: true or false (defaults to true)</span></span>
+* <span data-ttu-id="199c4-297">vstab: (HoloLens 2만 해당) 비디오 안정화 사용: true 또는 false (기본값은 true)</span><span class="sxs-lookup"><span data-stu-id="199c4-297">vstab : (HoloLens 2 only) enable video stabilization: true or false (defaults to true)</span></span>
+* <span data-ttu-id="199c4-298">vstabbuffer: (HoloLens 2만 해당) 비디오 안정화 버퍼 대기 시간: 0-30 프레임 (기본값은 15 프레임)</span><span class="sxs-lookup"><span data-stu-id="199c4-298">vstabbuffer: (HoloLens 2 only) video stabilization buffer latency: 0 to 30 frames (defaults to 15 frames)</span></span>
 
-<span data-ttu-id="3e578-299">**/api/holographic/mrc/video/control/stop (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-299">**/api/holographic/mrc/video/control/stop (POST)**</span></span>
+<span data-ttu-id="199c4-299">**/api/holographic/mrc/video/control/stop (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-299">**/api/holographic/mrc/video/control/stop (POST)**</span></span>
 
-<span data-ttu-id="3e578-300">현재 혼합 된 현실 기록을 중지 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-300">Stops the current mixed reality recording</span></span>
+<span data-ttu-id="199c4-300">현재 혼합 된 현실 기록을 중지 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-300">Stops the current mixed reality recording</span></span>
 
-## <a name="mixed-reality-streaming"></a><span data-ttu-id="3e578-301">혼합 현실 스트리밍</span><span class="sxs-lookup"><span data-stu-id="3e578-301">Mixed Reality Streaming</span></span>
+## <a name="mixed-reality-streaming"></a><span data-ttu-id="199c4-301">혼합 현실 스트리밍</span><span class="sxs-lookup"><span data-stu-id="199c4-301">Mixed Reality Streaming</span></span>
 
-<span data-ttu-id="3e578-302">HoloLens는 조각화 된 mp4의 청크 다운로드를 통해 혼합 현실의 실시간 미리 보기를 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-302">HoloLens supports live preview of mixed reality via chunked download of a fragmented mp4.</span></span>
+<span data-ttu-id="199c4-302">HoloLens는 조각화 된 mp4의 청크 다운로드를 통해 혼합 현실의 실시간 미리 보기를 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-302">HoloLens supports live preview of mixed reality via chunked download of a fragmented mp4.</span></span>
 
-<span data-ttu-id="3e578-303">혼합 현실 스트림은 동일한 매개 변수 집합을 공유 하 여 캡처할 항목을 제어 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-303">Mixed reality streams share the same set of parameters to control what is captured:</span></span>
-* <span data-ttu-id="3e578-304">holo: capture holograms: true 또는 false</span><span class="sxs-lookup"><span data-stu-id="3e578-304">holo : capture holograms: true or false</span></span>
-* <span data-ttu-id="3e578-305">pv: PV 카메라 캡처: true 또는 false</span><span class="sxs-lookup"><span data-stu-id="3e578-305">pv : capture PV camera: true or false</span></span>
-* <span data-ttu-id="3e578-306">mic: 마이크 캡처: true 또는 false</span><span class="sxs-lookup"><span data-stu-id="3e578-306">mic : capture microphone: true or false</span></span>
-* <span data-ttu-id="3e578-307">루프백: 앱 오디오 캡처: true 또는 false</span><span class="sxs-lookup"><span data-stu-id="3e578-307">loopback : capture app audio: true or false</span></span>
+<span data-ttu-id="199c4-303">혼합 현실 스트림은 동일한 매개 변수 집합을 공유 하 여 캡처할 항목을 제어 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-303">Mixed reality streams share the same set of parameters to control what is captured:</span></span>
+* <span data-ttu-id="199c4-304">holo: capture holograms: true 또는 false</span><span class="sxs-lookup"><span data-stu-id="199c4-304">holo : capture holograms: true or false</span></span>
+* <span data-ttu-id="199c4-305">pv: PV 카메라 캡처: true 또는 false</span><span class="sxs-lookup"><span data-stu-id="199c4-305">pv : capture PV camera: true or false</span></span>
+* <span data-ttu-id="199c4-306">mic: 마이크 캡처: true 또는 false</span><span class="sxs-lookup"><span data-stu-id="199c4-306">mic : capture microphone: true or false</span></span>
+* <span data-ttu-id="199c4-307">루프백: 앱 오디오 캡처: true 또는 false</span><span class="sxs-lookup"><span data-stu-id="199c4-307">loopback : capture app audio: true or false</span></span>
 
-<span data-ttu-id="3e578-308">이러한 항목이 지정 되지 않은 경우 holograms, photo/video 카메라 및 앱 오디오가 캡처됩니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-308">If none of these are specified: holograms, photo/video camera, and app audio will be captured</span></span><br>
-<span data-ttu-id="3e578-309">지정 된 경우: 지정 되지 않은 매개 변수는 기본적으로 false로 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-309">If any are specified: the unspecified parameters will default to false</span></span>
+<span data-ttu-id="199c4-308">이러한 항목이 지정 되지 않은 경우 holograms, photo/video 카메라 및 앱 오디오가 캡처됩니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-308">If none of these are specified: holograms, photo/video camera, and app audio will be captured</span></span><br>
+<span data-ttu-id="199c4-309">지정 된 경우: 지정 되지 않은 매개 변수는 기본적으로 false로 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-309">If any are specified: the unspecified parameters will default to false</span></span>
 
-<span data-ttu-id="3e578-310">선택적 매개 변수 (HoloLens 2에만 해당)</span><span class="sxs-lookup"><span data-stu-id="3e578-310">Optional parameters (HoloLens 2 only)</span></span>
-* <span data-ttu-id="3e578-311">RenderFromCamera: photo/video 카메라의 관점에서 렌더링: true 또는 false (기본값은 true)</span><span class="sxs-lookup"><span data-stu-id="3e578-311">RenderFromCamera : render from perspective of photo/video camera: true or false (defaults to true)</span></span>
-* <span data-ttu-id="3e578-312">vstab: 비디오 안정화 사용: true 또는 false (기본값은 false)</span><span class="sxs-lookup"><span data-stu-id="3e578-312">vstab : enable video stabilization: true or false (defaults to false)</span></span>
-* <span data-ttu-id="3e578-313">vstabbuffer: 비디오 안정화 버퍼 대기 시간: 0-30 프레임 (기본값은 15 프레임)</span><span class="sxs-lookup"><span data-stu-id="3e578-313">vstabbuffer: video stabilization buffer latency: 0 to 30 frames (defaults to 15 frames)</span></span>
+<span data-ttu-id="199c4-310">선택적 매개 변수 (HoloLens 2에만 해당)</span><span class="sxs-lookup"><span data-stu-id="199c4-310">Optional parameters (HoloLens 2 only)</span></span>
+* <span data-ttu-id="199c4-311">RenderFromCamera: photo/video 카메라의 관점에서 렌더링: true 또는 false (기본값은 true)</span><span class="sxs-lookup"><span data-stu-id="199c4-311">RenderFromCamera : render from perspective of photo/video camera: true or false (defaults to true)</span></span>
+* <span data-ttu-id="199c4-312">vstab: 비디오 안정화 사용: true 또는 false (기본값은 false)</span><span class="sxs-lookup"><span data-stu-id="199c4-312">vstab : enable video stabilization: true or false (defaults to false)</span></span>
+* <span data-ttu-id="199c4-313">vstabbuffer: 비디오 안정화 버퍼 대기 시간: 0-30 프레임 (기본값은 15 프레임)</span><span class="sxs-lookup"><span data-stu-id="199c4-313">vstabbuffer: video stabilization buffer latency: 0 to 30 frames (defaults to 15 frames)</span></span>
 
-<span data-ttu-id="3e578-314">**/api/holographic/stream/live.mp4 (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-314">**/api/holographic/stream/live.mp4 (GET)**</span></span>
+<span data-ttu-id="199c4-314">**/api/holographic/stream/live.mp4 (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-314">**/api/holographic/stream/live.mp4 (GET)**</span></span>
 
-<span data-ttu-id="3e578-315">1280x720p 30fps 5Mbit 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-315">A 1280x720p 30fps 5Mbit stream.</span></span>
+<span data-ttu-id="199c4-315">1280x720p 30fps 5Mbit 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-315">A 1280x720p 30fps 5Mbit stream.</span></span>
 
-<span data-ttu-id="3e578-316">**/api/holographic/stream/live_high.mp4 (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-316">**/api/holographic/stream/live_high.mp4 (GET)**</span></span>
+<span data-ttu-id="199c4-316">**/api/holographic/stream/live_high.mp4 (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-316">**/api/holographic/stream/live_high.mp4 (GET)**</span></span>
 
-<span data-ttu-id="3e578-317">1280x720p 30fps 5Mbit 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-317">A 1280x720p 30fps 5Mbit stream.</span></span>
+<span data-ttu-id="199c4-317">1280x720p 30fps 5Mbit 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-317">A 1280x720p 30fps 5Mbit stream.</span></span>
 
-<span data-ttu-id="3e578-318">**/api/holographic/stream/live_med.mp4 (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-318">**/api/holographic/stream/live_med.mp4 (GET)**</span></span>
+<span data-ttu-id="199c4-318">**/api/holographic/stream/live_med.mp4 (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-318">**/api/holographic/stream/live_med.mp4 (GET)**</span></span>
 
-<span data-ttu-id="3e578-319">854x480p 30fps 2.5 Mbit 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-319">A 854x480p 30fps 2.5Mbit stream.</span></span>
+<span data-ttu-id="199c4-319">854x480p 30fps 2.5 Mbit 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-319">A 854x480p 30fps 2.5Mbit stream.</span></span>
 
-<span data-ttu-id="3e578-320">**/api/holographic/stream/live_low.mp4 (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-320">**/api/holographic/stream/live_low.mp4 (GET)**</span></span>
+<span data-ttu-id="199c4-320">**/api/holographic/stream/live_low.mp4 (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-320">**/api/holographic/stream/live_low.mp4 (GET)**</span></span>
 
-<span data-ttu-id="3e578-321">428x240p 15fps 0.6 Mbit 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-321">A 428x240p 15fps 0.6Mbit stream.</span></span>
+<span data-ttu-id="199c4-321">428x240p 15fps 0.6 Mbit 스트림입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-321">A 428x240p 15fps 0.6Mbit stream.</span></span>
 
-## <a name="networking"></a><span data-ttu-id="3e578-322">네트워킹</span><span class="sxs-lookup"><span data-stu-id="3e578-322">Networking</span></span>
+## <a name="networking"></a><span data-ttu-id="199c4-322">네트워킹</span><span class="sxs-lookup"><span data-stu-id="199c4-322">Networking</span></span>
 
-<span data-ttu-id="3e578-323">**/sh/svring/ipconfig (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-323">**/api/networking/ipconfig (GET)**</span></span>
+<span data-ttu-id="199c4-323">**/sh/svring/ipconfig (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-323">**/api/networking/ipconfig (GET)**</span></span>
 
-<span data-ttu-id="3e578-324">현재 ip 구성을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-324">Gets the current ip configuration</span></span>
+<span data-ttu-id="199c4-324">현재 ip 구성을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-324">Gets the current ip configuration</span></span>
 
-## <a name="os-information"></a><span data-ttu-id="3e578-325">OS 정보</span><span class="sxs-lookup"><span data-stu-id="3e578-325">OS Information</span></span>
+## <a name="os-information"></a><span data-ttu-id="199c4-325">OS 정보</span><span class="sxs-lookup"><span data-stu-id="199c4-325">OS Information</span></span>
 
-<span data-ttu-id="3e578-326">**///s/정보 (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-326">**/api/os/info (GET)**</span></span>
+<span data-ttu-id="199c4-326">**///s/정보 (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-326">**/api/os/info (GET)**</span></span>
 
-<span data-ttu-id="3e578-327">운영 체제 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-327">Gets operating system information</span></span>
+<span data-ttu-id="199c4-327">운영 체제 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-327">Gets operating system information</span></span>
 
-<span data-ttu-id="3e578-328">**/api/oss (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-328">**/api/os/machinename (GET)**</span></span>
+<span data-ttu-id="199c4-328">**/api/oss (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-328">**/api/os/machinename (GET)**</span></span>
 
-<span data-ttu-id="3e578-329">컴퓨터 이름을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-329">Gets the machine name</span></span>
+<span data-ttu-id="199c4-329">컴퓨터 이름을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-329">Gets the machine name</span></span>
 
-<span data-ttu-id="3e578-330">**/api/oss (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-330">**/api/os/machinename (POST)**</span></span>
+<span data-ttu-id="199c4-330">**/api/oss (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-330">**/api/os/machinename (POST)**</span></span>
 
-<span data-ttu-id="3e578-331">컴퓨터 이름을 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-331">Sets the machine name</span></span>
+<span data-ttu-id="199c4-331">컴퓨터 이름을 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-331">Sets the machine name</span></span>
 
-<span data-ttu-id="3e578-332">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-332">Parameters</span></span>
-* <span data-ttu-id="3e578-333">이름: 새 컴퓨터 이름, hex64 인코딩,를로 설정</span><span class="sxs-lookup"><span data-stu-id="3e578-333">name : New machine name, hex64 encoded, to set to</span></span>
+<span data-ttu-id="199c4-332">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-332">Parameters</span></span>
+* <span data-ttu-id="199c4-333">이름: 새 컴퓨터 이름, hex64 인코딩,를로 설정</span><span class="sxs-lookup"><span data-stu-id="199c4-333">name : New machine name, hex64 encoded, to set to</span></span>
 
-## <a name="perception-simulation-control"></a><span data-ttu-id="3e578-334">인식 시뮬레이션 컨트롤</span><span class="sxs-lookup"><span data-stu-id="3e578-334">Perception Simulation Control</span></span>
+## <a name="perception-simulation-control"></a><span data-ttu-id="199c4-334">인식 시뮬레이션 컨트롤</span><span class="sxs-lookup"><span data-stu-id="199c4-334">Perception Simulation Control</span></span>
 
-<span data-ttu-id="3e578-335">**/api/holographic/simulation/control/mode (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-335">**/api/holographic/simulation/control/mode (GET)**</span></span>
+<span data-ttu-id="199c4-335">**/api/holographic/simulation/control/mode (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-335">**/api/holographic/simulation/control/mode (GET)**</span></span>
 
-<span data-ttu-id="3e578-336">시뮬레이션 모드 가져오기</span><span class="sxs-lookup"><span data-stu-id="3e578-336">Get the simulation mode</span></span>
+<span data-ttu-id="199c4-336">시뮬레이션 모드 가져오기</span><span class="sxs-lookup"><span data-stu-id="199c4-336">Get the simulation mode</span></span>
 
-<span data-ttu-id="3e578-337">**/api/holographic/simulation/control/mode (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-337">**/api/holographic/simulation/control/mode (POST)**</span></span>
+<span data-ttu-id="199c4-337">**/api/holographic/simulation/control/mode (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-337">**/api/holographic/simulation/control/mode (POST)**</span></span>
 
-<span data-ttu-id="3e578-338">시뮬레이션 모드 설정</span><span class="sxs-lookup"><span data-stu-id="3e578-338">Set the simulation mode</span></span>
+<span data-ttu-id="199c4-338">시뮬레이션 모드 설정</span><span class="sxs-lookup"><span data-stu-id="199c4-338">Set the simulation mode</span></span>
 
-<span data-ttu-id="3e578-339">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-339">Parameters</span></span>
-* <span data-ttu-id="3e578-340">모드: 시뮬레이션 모드: 기본값, 시뮬레이션, 원격, 레거시</span><span class="sxs-lookup"><span data-stu-id="3e578-340">mode : simulation mode: default, simulation, remote, legacy</span></span>
+<span data-ttu-id="199c4-339">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-339">Parameters</span></span>
+* <span data-ttu-id="199c4-340">모드: 시뮬레이션 모드: 기본값, 시뮬레이션, 원격, 레거시</span><span class="sxs-lookup"><span data-stu-id="199c4-340">mode : simulation mode: default, simulation, remote, legacy</span></span>
 
-<span data-ttu-id="3e578-341">**/api/holographic/simulation/control/stream (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="3e578-341">**/api/holographic/simulation/control/stream (DELETE)**</span></span>
+<span data-ttu-id="199c4-341">**/api/holographic/simulation/control/stream (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="199c4-341">**/api/holographic/simulation/control/stream (DELETE)**</span></span>
 
-<span data-ttu-id="3e578-342">컨트롤 스트림을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-342">Delete a control stream.</span></span>
+<span data-ttu-id="199c4-342">컨트롤 스트림을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-342">Delete a control stream.</span></span>
 
-<span data-ttu-id="3e578-343">**/api/holographic/simulation/control/stream (GET/WebSocket)**</span><span class="sxs-lookup"><span data-stu-id="3e578-343">**/api/holographic/simulation/control/stream (GET/WebSocket)**</span></span>
+<span data-ttu-id="199c4-343">**/api/holographic/simulation/control/stream (GET/WebSocket)**</span><span class="sxs-lookup"><span data-stu-id="199c4-343">**/api/holographic/simulation/control/stream (GET/WebSocket)**</span></span>
 
-<span data-ttu-id="3e578-344">컨트롤 스트림에 대 한 웹 소켓 연결을 엽니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-344">Open a web socket connection for a control stream.</span></span>
+<span data-ttu-id="199c4-344">컨트롤 스트림에 대 한 웹 소켓 연결을 엽니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-344">Open a web socket connection for a control stream.</span></span>
 
-<span data-ttu-id="3e578-345">**/api/holographic/simulation/control/stream (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-345">**/api/holographic/simulation/control/stream (POST)**</span></span>
+<span data-ttu-id="199c4-345">**/api/holographic/simulation/control/stream (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-345">**/api/holographic/simulation/control/stream (POST)**</span></span>
 
-<span data-ttu-id="3e578-346">컨트롤 스트림 (우선 순위는 필수)을 만들거나 만든 스트림에 데이터를 게시 합니다 (streamId 필요).</span><span class="sxs-lookup"><span data-stu-id="3e578-346">Create a control stream (priority is required) or post data to a created stream (streamId required).</span></span> <span data-ttu-id="3e578-347">게시 된 데이터는 ' 응용 프로그램/8 진수 스트림 ' 형식 이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-347">Posted data is expected to be of type 'application/octet-stream'.</span></span>
+<span data-ttu-id="199c4-346">컨트롤 스트림 (우선 순위는 필수)을 만들거나 만든 스트림에 데이터를 게시 합니다 (streamId 필요).</span><span class="sxs-lookup"><span data-stu-id="199c4-346">Create a control stream (priority is required) or post data to a created stream (streamId required).</span></span> <span data-ttu-id="199c4-347">게시 된 데이터는 ' 응용 프로그램/8 진수 스트림 ' 형식 이어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-347">Posted data is expected to be of type 'application/octet-stream'.</span></span>
 
-<span data-ttu-id="3e578-348">**/api/holographic/simulation/display/stream (GET/WebSocket)**</span><span class="sxs-lookup"><span data-stu-id="3e578-348">**/api/holographic/simulation/display/stream (GET/WebSocket)**</span></span>
+<span data-ttu-id="199c4-348">**/api/holographic/simulation/display/stream (GET/WebSocket)**</span><span class="sxs-lookup"><span data-stu-id="199c4-348">**/api/holographic/simulation/display/stream (GET/WebSocket)**</span></span>
 
-<span data-ttu-id="3e578-349">' 시뮬레이션 ' 모드일 때 시스템 디스플레이에 렌더링 된 콘텐츠가 포함 된 시뮬레이션 비디오 스트림을 요청 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-349">Request a simulation video stream containing the content rendered to the system display when in 'Simulation' mode.</span></span>  <span data-ttu-id="3e578-350">단순 형식 설명자 헤더는 처음에 전송 되 고, 그 뒤에는 각각 눈 인덱스와 질감 크기를 나타내는 헤더가 앞에 오는, 각각에는 h.264로 인코딩된 질감이 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-350">A simple format descriptor header will be sent initially, followed by H.264-encoded textures, each preceded by a header indicating the eye index and texture size.</span></span>
+<span data-ttu-id="199c4-349">' 시뮬레이션 ' 모드일 때 시스템 디스플레이에 렌더링 된 콘텐츠가 포함 된 시뮬레이션 비디오 스트림을 요청 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-349">Request a simulation video stream containing the content rendered to the system display when in 'Simulation' mode.</span></span>  <span data-ttu-id="199c4-350">단순 형식 설명자 헤더는 처음에 전송 되 고, 그 뒤에는 각각 눈 인덱스와 질감 크기를 나타내는 헤더가 앞에 오는, 각각에는 h.264로 인코딩된 질감이 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-350">A simple format descriptor header will be sent initially, followed by H.264-encoded textures, each preceded by a header indicating the eye index and texture size.</span></span>
 
-## <a name="perception-simulation-playback"></a><span data-ttu-id="3e578-351">인식 시뮬레이션 재생</span><span class="sxs-lookup"><span data-stu-id="3e578-351">Perception Simulation Playback</span></span>
+## <a name="perception-simulation-playback"></a><span data-ttu-id="199c4-351">인식 시뮬레이션 재생</span><span class="sxs-lookup"><span data-stu-id="199c4-351">Perception Simulation Playback</span></span>
 
-<span data-ttu-id="3e578-352">**/api/holographic/simulation/playback/file (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="3e578-352">**/api/holographic/simulation/playback/file (DELETE)**</span></span>
+<span data-ttu-id="199c4-352">**/api/holographic/simulation/playback/file (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="199c4-352">**/api/holographic/simulation/playback/file (DELETE)**</span></span>
 
-<span data-ttu-id="3e578-353">기록을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-353">Delete a recording.</span></span>
+<span data-ttu-id="199c4-353">기록을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-353">Delete a recording.</span></span>
 
-<span data-ttu-id="3e578-354">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-354">Parameters</span></span>
-* <span data-ttu-id="3e578-355">녹음/녹화: 삭제할 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-355">recording : Name of recording to delete.</span></span>
+<span data-ttu-id="199c4-354">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-354">Parameters</span></span>
+* <span data-ttu-id="199c4-355">녹음/녹화: 삭제할 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-355">recording : Name of recording to delete.</span></span>
 
-<span data-ttu-id="3e578-356">**/api/holographic/simulation/playback/file (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-356">**/api/holographic/simulation/playback/file (POST)**</span></span>
+<span data-ttu-id="199c4-356">**/api/holographic/simulation/playback/file (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-356">**/api/holographic/simulation/playback/file (POST)**</span></span>
 
-<span data-ttu-id="3e578-357">기록을 업로드 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-357">Upload a recording.</span></span>
+<span data-ttu-id="199c4-357">기록을 업로드 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-357">Upload a recording.</span></span>
 
-<span data-ttu-id="3e578-358">**/api/holographic/simulation/playback/files (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-358">**/api/holographic/simulation/playback/files (GET)**</span></span>
+<span data-ttu-id="199c4-358">**/api/holographic/simulation/playback/files (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-358">**/api/holographic/simulation/playback/files (GET)**</span></span>
 
-<span data-ttu-id="3e578-359">모든 기록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-359">Get all recordings.</span></span>
+<span data-ttu-id="199c4-359">모든 기록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-359">Get all recordings.</span></span>
 
-<span data-ttu-id="3e578-360">**/api/holographic/simulation/playback/session (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-360">**/api/holographic/simulation/playback/session (GET)**</span></span>
+<span data-ttu-id="199c4-360">**/api/holographic/simulation/playback/session (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-360">**/api/holographic/simulation/playback/session (GET)**</span></span>
 
-<span data-ttu-id="3e578-361">기록의 현재 재생 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-361">Get the current playback state of a recording.</span></span>
+<span data-ttu-id="199c4-361">기록의 현재 재생 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-361">Get the current playback state of a recording.</span></span>
 
-<span data-ttu-id="3e578-362">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-362">Parameters</span></span>
-* <span data-ttu-id="3e578-363">기록: 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-363">recording : Name of recording.</span></span>
+<span data-ttu-id="199c4-362">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-362">Parameters</span></span>
+* <span data-ttu-id="199c4-363">기록: 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-363">recording : Name of recording.</span></span>
 
-<span data-ttu-id="3e578-364">**/api/holographic/simulation/playback/session/file (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="3e578-364">**/api/holographic/simulation/playback/session/file (DELETE)**</span></span>
+<span data-ttu-id="199c4-364">**/api/holographic/simulation/playback/session/file (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="199c4-364">**/api/holographic/simulation/playback/session/file (DELETE)**</span></span>
 
-<span data-ttu-id="3e578-365">기록을 언로드합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-365">Unload a recording.</span></span>
+<span data-ttu-id="199c4-365">기록을 언로드합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-365">Unload a recording.</span></span>
 
-<span data-ttu-id="3e578-366">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-366">Parameters</span></span>
-* <span data-ttu-id="3e578-367">녹음/녹화: 언로드할 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-367">recording : Name of recording to unload.</span></span>
+<span data-ttu-id="199c4-366">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-366">Parameters</span></span>
+* <span data-ttu-id="199c4-367">녹음/녹화: 언로드할 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-367">recording : Name of recording to unload.</span></span>
 
-<span data-ttu-id="3e578-368">**/api/holographic/simulation/playback/session/file (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-368">**/api/holographic/simulation/playback/session/file (POST)**</span></span>
+<span data-ttu-id="199c4-368">**/api/holographic/simulation/playback/session/file (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-368">**/api/holographic/simulation/playback/session/file (POST)**</span></span>
 
-<span data-ttu-id="3e578-369">기록을 로드 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-369">Load a recording.</span></span>
+<span data-ttu-id="199c4-369">기록을 로드 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-369">Load a recording.</span></span>
 
-<span data-ttu-id="3e578-370">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-370">Parameters</span></span>
-* <span data-ttu-id="3e578-371">기록: 로드할 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-371">recording : Name of recording to load.</span></span>
+<span data-ttu-id="199c4-370">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-370">Parameters</span></span>
+* <span data-ttu-id="199c4-371">기록: 로드할 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-371">recording : Name of recording to load.</span></span>
 
-<span data-ttu-id="3e578-372">**/api/holographic/simulation/playback/session/files (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-372">**/api/holographic/simulation/playback/session/files (GET)**</span></span>
+<span data-ttu-id="199c4-372">**/api/holographic/simulation/playback/session/files (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-372">**/api/holographic/simulation/playback/session/files (GET)**</span></span>
 
-<span data-ttu-id="3e578-373">로드 된 모든 기록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-373">Get all loaded recordings.</span></span>
+<span data-ttu-id="199c4-373">로드 된 모든 기록을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-373">Get all loaded recordings.</span></span>
 
-<span data-ttu-id="3e578-374">**/api/holographic/simulation/playback/session/pause (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-374">**/api/holographic/simulation/playback/session/pause (POST)**</span></span>
+<span data-ttu-id="199c4-374">**/api/holographic/simulation/playback/session/pause (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-374">**/api/holographic/simulation/playback/session/pause (POST)**</span></span>
 
-<span data-ttu-id="3e578-375">기록을 일시 중지 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-375">Pause a recording.</span></span>
+<span data-ttu-id="199c4-375">기록을 일시 중지 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-375">Pause a recording.</span></span>
 
-<span data-ttu-id="3e578-376">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-376">Parameters</span></span>
-* <span data-ttu-id="3e578-377">기록: 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-377">recording : Name of recording.</span></span>
+<span data-ttu-id="199c4-376">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-376">Parameters</span></span>
+* <span data-ttu-id="199c4-377">기록: 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-377">recording : Name of recording.</span></span>
 
-<span data-ttu-id="3e578-378">**/api/holographic/simulation/playback/session/play (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-378">**/api/holographic/simulation/playback/session/play (POST)**</span></span>
+<span data-ttu-id="199c4-378">**/api/holographic/simulation/playback/session/play (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-378">**/api/holographic/simulation/playback/session/play (POST)**</span></span>
 
-<span data-ttu-id="3e578-379">기록을 재생 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-379">Play a recording.</span></span>
+<span data-ttu-id="199c4-379">기록을 재생 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-379">Play a recording.</span></span>
 
-<span data-ttu-id="3e578-380">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-380">Parameters</span></span>
-* <span data-ttu-id="3e578-381">기록: 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-381">recording : Name of recording.</span></span>
+<span data-ttu-id="199c4-380">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-380">Parameters</span></span>
+* <span data-ttu-id="199c4-381">기록: 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-381">recording : Name of recording.</span></span>
 
-<span data-ttu-id="3e578-382">**/api/holographic/simulation/playback/session/stop (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-382">**/api/holographic/simulation/playback/session/stop (POST)**</span></span>
+<span data-ttu-id="199c4-382">**/api/holographic/simulation/playback/session/stop (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-382">**/api/holographic/simulation/playback/session/stop (POST)**</span></span>
 
-<span data-ttu-id="3e578-383">기록을 중지 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-383">Stop a recording.</span></span>
+<span data-ttu-id="199c4-383">기록을 중지 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-383">Stop a recording.</span></span>
 
-<span data-ttu-id="3e578-384">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-384">Parameters</span></span>
-* <span data-ttu-id="3e578-385">기록: 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-385">recording : Name of recording.</span></span>
+<span data-ttu-id="199c4-384">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-384">Parameters</span></span>
+* <span data-ttu-id="199c4-385">기록: 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-385">recording : Name of recording.</span></span>
 
-<span data-ttu-id="3e578-386">**/api/holographic/simulation/playback/session/types (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-386">**/api/holographic/simulation/playback/session/types (GET)**</span></span>
+<span data-ttu-id="199c4-386">**/api/holographic/simulation/playback/session/types (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-386">**/api/holographic/simulation/playback/session/types (GET)**</span></span>
 
-<span data-ttu-id="3e578-387">로드 된 기록에서 데이터의 형식을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-387">Get the types of data in a loaded recording.</span></span>
+<span data-ttu-id="199c4-387">로드 된 기록에서 데이터의 형식을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-387">Get the types of data in a loaded recording.</span></span>
 
-<span data-ttu-id="3e578-388">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-388">Parameters</span></span>
-* <span data-ttu-id="3e578-389">기록: 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-389">recording : Name of recording.</span></span>
+<span data-ttu-id="199c4-388">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-388">Parameters</span></span>
+* <span data-ttu-id="199c4-389">기록: 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-389">recording : Name of recording.</span></span>
 
-## <a name="perception-simulation-recording"></a><span data-ttu-id="3e578-390">인식 시뮬레이션 기록</span><span class="sxs-lookup"><span data-stu-id="3e578-390">Perception Simulation Recording</span></span>
+## <a name="perception-simulation-recording"></a><span data-ttu-id="199c4-390">인식 시뮬레이션 기록</span><span class="sxs-lookup"><span data-stu-id="199c4-390">Perception Simulation Recording</span></span>
 
-<span data-ttu-id="3e578-391">**/api/holographic/simulation/recording/start (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-391">**/api/holographic/simulation/recording/start (POST)**</span></span>
+<span data-ttu-id="199c4-391">**/api/holographic/simulation/recording/start (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-391">**/api/holographic/simulation/recording/start (POST)**</span></span>
 
-<span data-ttu-id="3e578-392">기록을 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-392">Start a recording.</span></span> <span data-ttu-id="3e578-393">한 번에 하나의 기록만 활성화 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-393">Only a single recording can be active at once.</span></span> <span data-ttu-id="3e578-394">헤드, 손, spatialMapping 또는 환경 중 하나를 설정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-394">One of head, hands, spatialMapping or environment must be set.</span></span>
+<span data-ttu-id="199c4-392">기록을 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-392">Start a recording.</span></span> <span data-ttu-id="199c4-393">한 번에 하나의 기록만 활성화 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-393">Only a single recording can be active at once.</span></span> <span data-ttu-id="199c4-394">헤드, 손, spatialMapping 또는 환경 중 하나를 설정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-394">One of head, hands, spatialMapping or environment must be set.</span></span>
 
-<span data-ttu-id="3e578-395">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-395">Parameters</span></span>
-* <span data-ttu-id="3e578-396">head: 1로 설정 하 여 헤드 데이터를 기록 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-396">head : Set to 1 to record head data.</span></span>
-* <span data-ttu-id="3e578-397">실습: 1로 설정 하 여 손으로 데이터를 기록 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-397">hands : Set to 1 to record hand data.</span></span>
-* <span data-ttu-id="3e578-398">spatialMapping: 1로 설정 하 여 공간 매핑을 기록 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-398">spatialMapping : Set to 1 to record spatial mapping.</span></span>
-* <span data-ttu-id="3e578-399">환경: 환경 데이터를 기록 하려면 1로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-399">environment : Set to 1 to record environment data.</span></span>
-* <span data-ttu-id="3e578-400">이름: 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-400">name : Name of the recording.</span></span>
-* <span data-ttu-id="3e578-401">singleSpatialMappingFrame: 단일 공간 매핑 프레임만 기록 하려면 1로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-401">singleSpatialMappingFrame : Set to 1 to record only a single spatial mapping frame.</span></span>
+<span data-ttu-id="199c4-395">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-395">Parameters</span></span>
+* <span data-ttu-id="199c4-396">head: 1로 설정 하 여 헤드 데이터를 기록 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-396">head : Set to 1 to record head data.</span></span>
+* <span data-ttu-id="199c4-397">실습: 1로 설정 하 여 손으로 데이터를 기록 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-397">hands : Set to 1 to record hand data.</span></span>
+* <span data-ttu-id="199c4-398">spatialMapping: 1로 설정 하 여 공간 매핑을 기록 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-398">spatialMapping : Set to 1 to record spatial mapping.</span></span>
+* <span data-ttu-id="199c4-399">환경: 환경 데이터를 기록 하려면 1로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-399">environment : Set to 1 to record environment data.</span></span>
+* <span data-ttu-id="199c4-400">이름: 기록의 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-400">name : Name of the recording.</span></span>
+* <span data-ttu-id="199c4-401">singleSpatialMappingFrame: 단일 공간 매핑 프레임만 기록 하려면 1로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-401">singleSpatialMappingFrame : Set to 1 to record only a single spatial mapping frame.</span></span>
 
-<span data-ttu-id="3e578-402">**/api/holographic/simulation/recording/status (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-402">**/api/holographic/simulation/recording/status (GET)**</span></span>
+<span data-ttu-id="199c4-402">**/api/holographic/simulation/recording/status (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-402">**/api/holographic/simulation/recording/status (GET)**</span></span>
 
-<span data-ttu-id="3e578-403">기록 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-403">Get recording state.</span></span>
+<span data-ttu-id="199c4-403">기록 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-403">Get recording state.</span></span>
 
-<span data-ttu-id="3e578-404">**/api/holographic/simulation/recording/stop (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-404">**/api/holographic/simulation/recording/stop (GET)**</span></span>
+<span data-ttu-id="199c4-404">**/api/holographic/simulation/recording/stop (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-404">**/api/holographic/simulation/recording/stop (GET)**</span></span>
 
-<span data-ttu-id="3e578-405">현재 기록을 중지 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-405">Stop the current recording.</span></span> <span data-ttu-id="3e578-406">기록이 파일로 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-406">Recording will be returned as a file.</span></span>
+<span data-ttu-id="199c4-405">현재 기록을 중지 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-405">Stop the current recording.</span></span> <span data-ttu-id="199c4-406">기록이 파일로 반환 됩니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-406">Recording will be returned as a file.</span></span>
 
-## <a name="performance-data"></a><span data-ttu-id="3e578-407">성능 데이터</span><span class="sxs-lookup"><span data-stu-id="3e578-407">Performance data</span></span>
+## <a name="performance-data"></a><span data-ttu-id="199c4-407">성능 데이터</span><span class="sxs-lookup"><span data-stu-id="199c4-407">Performance data</span></span>
 
-<span data-ttu-id="3e578-408">**/api/resourcemanager/processes (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-408">**/api/resourcemanager/processes (GET)**</span></span>
+<span data-ttu-id="199c4-408">**/api/resourcemanager/processes (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-408">**/api/resourcemanager/processes (GET)**</span></span>
 
-<span data-ttu-id="3e578-409">세부 정보를 사용 하 여 실행 중인 프로세스의 목록을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-409">Returns the list of running processes with details</span></span>
+<span data-ttu-id="199c4-409">세부 정보를 사용 하 여 실행 중인 프로세스의 목록을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-409">Returns the list of running processes with details</span></span>
 
-<span data-ttu-id="3e578-410">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="3e578-410">Return data</span></span>
-* <span data-ttu-id="3e578-411">프로세스 목록 및 각 프로세스에 대 한 세부 정보를 포함 하는 JSON</span><span class="sxs-lookup"><span data-stu-id="3e578-411">JSON with list of processes and details for each process</span></span>
+<span data-ttu-id="199c4-410">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="199c4-410">Return data</span></span>
+* <span data-ttu-id="199c4-411">프로세스 목록 및 각 프로세스에 대 한 세부 정보를 포함 하는 JSON</span><span class="sxs-lookup"><span data-stu-id="199c4-411">JSON with list of processes and details for each process</span></span>
 
-<span data-ttu-id="3e578-412">**/api/resourcemanager/systemperf (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-412">**/api/resourcemanager/systemperf (GET)**</span></span>
+<span data-ttu-id="199c4-412">**/api/resourcemanager/systemperf (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-412">**/api/resourcemanager/systemperf (GET)**</span></span>
 
-<span data-ttu-id="3e578-413">시스템 성능 통계 (i/o 읽기/쓰기, 메모리 통계 등)를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-413">Returns system perf statistics (I/O read/write, memory stats etc.</span></span>
+<span data-ttu-id="199c4-413">시스템 성능 통계 (i/o 읽기/쓰기, 메모리 통계 등)를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-413">Returns system perf statistics (I/O read/write, memory stats etc.</span></span>
 
-<span data-ttu-id="3e578-414">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="3e578-414">Return data</span></span>
-* <span data-ttu-id="3e578-415">시스템 정보를 포함 하는 JSON: CPU, GPU, 메모리, 네트워크, IO</span><span class="sxs-lookup"><span data-stu-id="3e578-415">JSON with system information: CPU, GPU, Memory, Network, IO</span></span>
+<span data-ttu-id="199c4-414">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="199c4-414">Return data</span></span>
+* <span data-ttu-id="199c4-415">시스템 정보를 포함 하는 JSON: CPU, GPU, 메모리, 네트워크, IO</span><span class="sxs-lookup"><span data-stu-id="199c4-415">JSON with system information: CPU, GPU, Memory, Network, IO</span></span>
 
-## <a name="power"></a><span data-ttu-id="3e578-416">전력</span><span class="sxs-lookup"><span data-stu-id="3e578-416">Power</span></span>
+## <a name="power"></a><span data-ttu-id="199c4-416">전력</span><span class="sxs-lookup"><span data-stu-id="199c4-416">Power</span></span>
 
-<span data-ttu-id="3e578-417">**/sh/svhhhhhs (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-417">**/api/power/battery (GET)**</span></span>
+<span data-ttu-id="199c4-417">**/sh/svhhhhhs (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-417">**/api/power/battery (GET)**</span></span>
 
-<span data-ttu-id="3e578-418">현재 배터리 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-418">Gets the current battery state</span></span>
+<span data-ttu-id="199c4-418">현재 배터리 상태를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-418">Gets the current battery state</span></span>
 
-<span data-ttu-id="3e578-419">**/api/power/state (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-419">**/api/power/state (GET)**</span></span>
+<span data-ttu-id="199c4-419">**/api/power/state (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-419">**/api/power/state (GET)**</span></span>
 
-<span data-ttu-id="3e578-420">시스템이 저전원 상태 인지 여부를 확인 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-420">Checks if the system is in a low power state</span></span>
+<span data-ttu-id="199c4-420">시스템이 저전원 상태 인지 여부를 확인 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-420">Checks if the system is in a low power state</span></span>
 
-## <a name="remote-control"></a><span data-ttu-id="3e578-421">원격 제어</span><span class="sxs-lookup"><span data-stu-id="3e578-421">Remote Control</span></span>
+## <a name="remote-control"></a><span data-ttu-id="199c4-421">원격 제어</span><span class="sxs-lookup"><span data-stu-id="199c4-421">Remote Control</span></span>
 
-<span data-ttu-id="3e578-422">**/api/control/restart (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-422">**/api/control/restart (POST)**</span></span>
+<span data-ttu-id="199c4-422">**/api/control/restart (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-422">**/api/control/restart (POST)**</span></span>
 
-<span data-ttu-id="3e578-423">대상 장치를 다시 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-423">Restarts the target device</span></span>
+<span data-ttu-id="199c4-423">대상 장치를 다시 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-423">Restarts the target device</span></span>
 
-<span data-ttu-id="3e578-424">**/sh/svcontroli (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-424">**/api/control/shutdown (POST)**</span></span>
+<span data-ttu-id="199c4-424">**/sh/svcontroli (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-424">**/api/control/shutdown (POST)**</span></span>
 
-<span data-ttu-id="3e578-425">대상 장치를 종료 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-425">Shuts down the target device</span></span>
+<span data-ttu-id="199c4-425">대상 장치를 종료 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-425">Shuts down the target device</span></span>
 
-## <a name="task-manager"></a><span data-ttu-id="3e578-426">작업 관리자</span><span class="sxs-lookup"><span data-stu-id="3e578-426">Task Manager</span></span>
+## <a name="task-manager"></a><span data-ttu-id="199c4-426">작업 관리자</span><span class="sxs-lookup"><span data-stu-id="199c4-426">Task Manager</span></span>
 
-<span data-ttu-id="3e578-427">**/api/taskmanager/app/app (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="3e578-427">**/api/taskmanager/app (DELETE)**</span></span>
+<span data-ttu-id="199c4-427">**/api/taskmanager/app/app (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="199c4-427">**/api/taskmanager/app (DELETE)**</span></span>
 
-<span data-ttu-id="3e578-428">최신 앱을 중지 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-428">Stops a modern app</span></span>
+<span data-ttu-id="199c4-428">최신 앱을 중지 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-428">Stops a modern app</span></span>
 
-<span data-ttu-id="3e578-429">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-429">Parameters</span></span>
-* <span data-ttu-id="3e578-430">패키지: 앱 패키지의 전체 이름, hex64 인코드</span><span class="sxs-lookup"><span data-stu-id="3e578-430">package : Full name of the app package, hex64 encoded</span></span>
-* <span data-ttu-id="3e578-431">forcestop: 모든 프로세스를 강제로 중지 합니다 (= 예).</span><span class="sxs-lookup"><span data-stu-id="3e578-431">forcestop : Force all processes to stop (=yes)</span></span>
+<span data-ttu-id="199c4-429">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-429">Parameters</span></span>
+* <span data-ttu-id="199c4-430">패키지: 앱 패키지의 전체 이름, hex64 인코드</span><span class="sxs-lookup"><span data-stu-id="199c4-430">package : Full name of the app package, hex64 encoded</span></span>
+* <span data-ttu-id="199c4-431">forcestop: 모든 프로세스를 강제로 중지 합니다 (= 예).</span><span class="sxs-lookup"><span data-stu-id="199c4-431">forcestop : Force all processes to stop (=yes)</span></span>
 
-<span data-ttu-id="3e578-432">**/sh/svaryer/ps (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-432">**/api/taskmanager/app (POST)**</span></span>
+<span data-ttu-id="199c4-432">**/sh/svaryer/ps (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-432">**/api/taskmanager/app (POST)**</span></span>
 
-<span data-ttu-id="3e578-433">최신 앱을 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-433">Starts a modern app</span></span>
+<span data-ttu-id="199c4-433">최신 앱을 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-433">Starts a modern app</span></span>
 
-<span data-ttu-id="3e578-434">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-434">Parameters</span></span>
-* <span data-ttu-id="3e578-435">appid: 시작 하는 앱의 PRAID, hex64 인코드</span><span class="sxs-lookup"><span data-stu-id="3e578-435">appid : PRAID of app to start, hex64 encoded</span></span>
-* <span data-ttu-id="3e578-436">패키지: 앱 패키지의 전체 이름, hex64 인코드</span><span class="sxs-lookup"><span data-stu-id="3e578-436">package : Full name of the app package, hex64 encoded</span></span>
+<span data-ttu-id="199c4-434">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-434">Parameters</span></span>
+* <span data-ttu-id="199c4-435">appid: 시작 하는 앱의 PRAID, hex64 인코드</span><span class="sxs-lookup"><span data-stu-id="199c4-435">appid : PRAID of app to start, hex64 encoded</span></span>
+* <span data-ttu-id="199c4-436">패키지: 앱 패키지의 전체 이름, hex64 인코드</span><span class="sxs-lookup"><span data-stu-id="199c4-436">package : Full name of the app package, hex64 encoded</span></span>
 
-## <a name="wifi-management"></a><span data-ttu-id="3e578-437">WiFi 관리</span><span class="sxs-lookup"><span data-stu-id="3e578-437">WiFi Management</span></span>
+## <a name="wifi-management"></a><span data-ttu-id="199c4-437">WiFi 관리</span><span class="sxs-lookup"><span data-stu-id="199c4-437">WiFi Management</span></span>
 
-<span data-ttu-id="3e578-438">**/api/wifi/interfaces (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-438">**/api/wifi/interfaces (GET)**</span></span>
+<span data-ttu-id="199c4-438">**/api/wifi/interfaces (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-438">**/api/wifi/interfaces (GET)**</span></span>
 
-<span data-ttu-id="3e578-439">무선 네트워크 인터페이스를 열거 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-439">Enumerates wireless network interfaces</span></span>
+<span data-ttu-id="199c4-439">무선 네트워크 인터페이스를 열거 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-439">Enumerates wireless network interfaces</span></span>
 
-<span data-ttu-id="3e578-440">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="3e578-440">Return data</span></span>
-* <span data-ttu-id="3e578-441">세부 정보를 포함 하는 무선 인터페이스 목록 (GUID, 설명 등)</span><span class="sxs-lookup"><span data-stu-id="3e578-441">List of wireless interfaces with details (GUID, description etc.)</span></span>
+<span data-ttu-id="199c4-440">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="199c4-440">Return data</span></span>
+* <span data-ttu-id="199c4-441">세부 정보를 포함 하는 무선 인터페이스 목록 (GUID, 설명 등)</span><span class="sxs-lookup"><span data-stu-id="199c4-441">List of wireless interfaces with details (GUID, description etc.)</span></span>
 
-<span data-ttu-id="3e578-442">**/api/wifi/network (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="3e578-442">**/api/wifi/network (DELETE)**</span></span>
+<span data-ttu-id="199c4-442">**/api/wifi/network (DELETE)**</span><span class="sxs-lookup"><span data-stu-id="199c4-442">**/api/wifi/network (DELETE)**</span></span>
 
-<span data-ttu-id="3e578-443">지정 된 인터페이스에서 네트워크와 연결 된 프로필을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-443">Deletes a profile associated with a network on a specified interface</span></span>
+<span data-ttu-id="199c4-443">지정 된 인터페이스에서 네트워크와 연결 된 프로필을 삭제 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-443">Deletes a profile associated with a network on a specified interface</span></span>
 
-<span data-ttu-id="3e578-444">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-444">Parameters</span></span>
-* <span data-ttu-id="3e578-445">인터페이스: 네트워크 인터페이스 guid</span><span class="sxs-lookup"><span data-stu-id="3e578-445">interface : network interface guid</span></span>
-* <span data-ttu-id="3e578-446">프로필: 프로필 이름</span><span class="sxs-lookup"><span data-stu-id="3e578-446">profile : profile name</span></span>
+<span data-ttu-id="199c4-444">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-444">Parameters</span></span>
+* <span data-ttu-id="199c4-445">인터페이스: 네트워크 인터페이스 guid</span><span class="sxs-lookup"><span data-stu-id="199c4-445">interface : network interface guid</span></span>
+* <span data-ttu-id="199c4-446">프로필: 프로필 이름</span><span class="sxs-lookup"><span data-stu-id="199c4-446">profile : profile name</span></span>
 
-<span data-ttu-id="3e578-447">**/api/wifi/networks (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-447">**/api/wifi/networks (GET)**</span></span>
+<span data-ttu-id="199c4-447">**/api/wifi/networks (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-447">**/api/wifi/networks (GET)**</span></span>
 
-<span data-ttu-id="3e578-448">지정 된 네트워크 인터페이스의 무선 네트워크를 열거 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-448">Enumerates wireless networks on the specified network interface</span></span>
+<span data-ttu-id="199c4-448">지정 된 네트워크 인터페이스의 무선 네트워크를 열거 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-448">Enumerates wireless networks on the specified network interface</span></span>
 
-<span data-ttu-id="3e578-449">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-449">Parameters</span></span>
-* <span data-ttu-id="3e578-450">인터페이스: 네트워크 인터페이스 guid</span><span class="sxs-lookup"><span data-stu-id="3e578-450">interface : network interface guid</span></span>
+<span data-ttu-id="199c4-449">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-449">Parameters</span></span>
+* <span data-ttu-id="199c4-450">인터페이스: 네트워크 인터페이스 guid</span><span class="sxs-lookup"><span data-stu-id="199c4-450">interface : network interface guid</span></span>
 
-<span data-ttu-id="3e578-451">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="3e578-451">Return data</span></span>
-* <span data-ttu-id="3e578-452">네트워크 인터페이스에서 찾을 수 있는 무선 네트워크 목록 (세부 정보 포함)</span><span class="sxs-lookup"><span data-stu-id="3e578-452">List of wireless networks found on the network interface with details</span></span>
+<span data-ttu-id="199c4-451">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="199c4-451">Return data</span></span>
+* <span data-ttu-id="199c4-452">네트워크 인터페이스에서 찾을 수 있는 무선 네트워크 목록 (세부 정보 포함)</span><span class="sxs-lookup"><span data-stu-id="199c4-452">List of wireless networks found on the network interface with details</span></span>
 
-<span data-ttu-id="3e578-453">**/api/wifi/network (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-453">**/api/wifi/network (POST)**</span></span>
+<span data-ttu-id="199c4-453">**/api/wifi/network (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-453">**/api/wifi/network (POST)**</span></span>
 
-<span data-ttu-id="3e578-454">지정 된 인터페이스의 네트워크에 연결 하거나 연결을 끊습니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-454">Connects or disconnects to a network on the specified interface</span></span>
+<span data-ttu-id="199c4-454">지정 된 인터페이스의 네트워크에 연결 하거나 연결을 끊습니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-454">Connects or disconnects to a network on the specified interface</span></span>
 
-<span data-ttu-id="3e578-455">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-455">Parameters</span></span>
-* <span data-ttu-id="3e578-456">인터페이스: 네트워크 인터페이스 guid</span><span class="sxs-lookup"><span data-stu-id="3e578-456">interface : network interface guid</span></span>
-* <span data-ttu-id="3e578-457">ssid: ssid, hex64 인코딩, 연결</span><span class="sxs-lookup"><span data-stu-id="3e578-457">ssid : ssid, hex64 encoded, to connect to</span></span>
-* <span data-ttu-id="3e578-458">op: 연결 또는 연결 끊기</span><span class="sxs-lookup"><span data-stu-id="3e578-458">op : connect or disconnect</span></span>
-* <span data-ttu-id="3e578-459">createprofile: 예 또는 아니요</span><span class="sxs-lookup"><span data-stu-id="3e578-459">createprofile : yes or no</span></span>
-* <span data-ttu-id="3e578-460">키: shared key, hex64 encoded</span><span class="sxs-lookup"><span data-stu-id="3e578-460">key : shared key, hex64 encoded</span></span>
+<span data-ttu-id="199c4-455">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-455">Parameters</span></span>
+* <span data-ttu-id="199c4-456">인터페이스: 네트워크 인터페이스 guid</span><span class="sxs-lookup"><span data-stu-id="199c4-456">interface : network interface guid</span></span>
+* <span data-ttu-id="199c4-457">ssid: ssid, hex64 인코딩, 연결</span><span class="sxs-lookup"><span data-stu-id="199c4-457">ssid : ssid, hex64 encoded, to connect to</span></span>
+* <span data-ttu-id="199c4-458">op: 연결 또는 연결 끊기</span><span class="sxs-lookup"><span data-stu-id="199c4-458">op : connect or disconnect</span></span>
+* <span data-ttu-id="199c4-459">createprofile: 예 또는 아니요</span><span class="sxs-lookup"><span data-stu-id="199c4-459">createprofile : yes or no</span></span>
+* <span data-ttu-id="199c4-460">키: shared key, hex64 encoded</span><span class="sxs-lookup"><span data-stu-id="199c4-460">key : shared key, hex64 encoded</span></span>
 
-## <a name="windows-performance-recorder"></a><span data-ttu-id="3e578-461">Windows 성능 레코더</span><span class="sxs-lookup"><span data-stu-id="3e578-461">Windows Performance Recorder</span></span>
+## <a name="windows-performance-recorder"></a><span data-ttu-id="199c4-461">Windows 성능 레코더</span><span class="sxs-lookup"><span data-stu-id="199c4-461">Windows Performance Recorder</span></span>
 
-<span data-ttu-id="3e578-462">**/api/wpr/customtrace (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-462">**/api/wpr/customtrace (POST)**</span></span>
+<span data-ttu-id="199c4-462">**/api/wpr/customtrace (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-462">**/api/wpr/customtrace (POST)**</span></span>
 
-<span data-ttu-id="3e578-463">WPR 프로필을 업로드 하 고 업로드 된 프로필을 사용 하 여 추적을 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-463">Uploads a WPR profile and starts tracing using the uploaded profile.</span></span>
+<span data-ttu-id="199c4-463">WPR 프로필을 업로드 하 고 업로드 된 프로필을 사용 하 여 추적을 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-463">Uploads a WPR profile and starts tracing using the uploaded profile.</span></span>
 
-<span data-ttu-id="3e578-464">Payload</span><span class="sxs-lookup"><span data-stu-id="3e578-464">Payload</span></span>
-* <span data-ttu-id="3e578-465">여러 부분으로 구성 되는 http 본문</span><span class="sxs-lookup"><span data-stu-id="3e578-465">multi-part conforming http body</span></span>
+<span data-ttu-id="199c4-464">Payload</span><span class="sxs-lookup"><span data-stu-id="199c4-464">Payload</span></span>
+* <span data-ttu-id="199c4-465">여러 부분으로 구성 되는 http 본문</span><span class="sxs-lookup"><span data-stu-id="199c4-465">multi-part conforming http body</span></span>
 
-<span data-ttu-id="3e578-466">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="3e578-466">Return data</span></span>
-* <span data-ttu-id="3e578-467">WPR 세션 상태를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-467">Returns the WPR session status.</span></span>
+<span data-ttu-id="199c4-466">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="199c4-466">Return data</span></span>
+* <span data-ttu-id="199c4-467">WPR 세션 상태를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-467">Returns the WPR session status.</span></span>
 
-<span data-ttu-id="3e578-468">**/api/wpr/status (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-468">**/api/wpr/status (GET)**</span></span>
+<span data-ttu-id="199c4-468">**/api/wpr/status (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-468">**/api/wpr/status (GET)**</span></span>
 
-<span data-ttu-id="3e578-469">WPR 세션의 상태를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-469">Retrieves the status of the WPR session</span></span>
+<span data-ttu-id="199c4-469">WPR 세션의 상태를 검색 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-469">Retrieves the status of the WPR session</span></span>
 
-<span data-ttu-id="3e578-470">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="3e578-470">Return data</span></span>
-* <span data-ttu-id="3e578-471">WPR 세션 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-471">WPR session status.</span></span>
+<span data-ttu-id="199c4-470">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="199c4-470">Return data</span></span>
+* <span data-ttu-id="199c4-471">WPR 세션 상태입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-471">WPR session status.</span></span>
 
-<span data-ttu-id="3e578-472">**/api/wpr/trace (GET)**</span><span class="sxs-lookup"><span data-stu-id="3e578-472">**/api/wpr/trace (GET)**</span></span>
+<span data-ttu-id="199c4-472">**/api/wpr/trace (GET)**</span><span class="sxs-lookup"><span data-stu-id="199c4-472">**/api/wpr/trace (GET)**</span></span>
 
-<span data-ttu-id="3e578-473">WPR (성능) 추적 세션을 중지 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-473">Stops a WPR (performance) tracing session</span></span>
+<span data-ttu-id="199c4-473">WPR (성능) 추적 세션을 중지 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-473">Stops a WPR (performance) tracing session</span></span>
 
-<span data-ttu-id="3e578-474">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="3e578-474">Return data</span></span>
-* <span data-ttu-id="3e578-475">추적 ETL 파일을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-475">Returns the trace ETL file</span></span>
+<span data-ttu-id="199c4-474">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="199c4-474">Return data</span></span>
+* <span data-ttu-id="199c4-475">추적 ETL 파일을 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-475">Returns the trace ETL file</span></span>
 
-<span data-ttu-id="3e578-476">**/api/wpr/trace (POST)**</span><span class="sxs-lookup"><span data-stu-id="3e578-476">**/api/wpr/trace (POST)**</span></span>
+<span data-ttu-id="199c4-476">**/api/wpr/trace (POST)**</span><span class="sxs-lookup"><span data-stu-id="199c4-476">**/api/wpr/trace (POST)**</span></span>
 
-<span data-ttu-id="3e578-477">WPR (성능) 추적 세션을 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-477">Starts a WPR (performance) tracing sessions</span></span>
+<span data-ttu-id="199c4-477">WPR (성능) 추적 세션을 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-477">Starts a WPR (performance) tracing sessions</span></span>
 
-<span data-ttu-id="3e578-478">매개 변수</span><span class="sxs-lookup"><span data-stu-id="3e578-478">Parameters</span></span>
-* <span data-ttu-id="3e578-479">프로필: 프로필 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-479">profile : Profile name.</span></span> <span data-ttu-id="3e578-480">사용 가능한 프로필은 perfprofiles/profiles.js에 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-480">Available profiles are stored in perfprofiles/profiles.json</span></span>
+<span data-ttu-id="199c4-478">매개 변수</span><span class="sxs-lookup"><span data-stu-id="199c4-478">Parameters</span></span>
+* <span data-ttu-id="199c4-479">프로필: 프로필 이름입니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-479">profile : Profile name.</span></span> <span data-ttu-id="199c4-480">사용 가능한 프로필은 perfprofiles/profiles.js에 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-480">Available profiles are stored in perfprofiles/profiles.json</span></span>
 
-<span data-ttu-id="3e578-481">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="3e578-481">Return data</span></span>
-* <span data-ttu-id="3e578-482">시작 시 WPR 세션 상태를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="3e578-482">On start, returns the WPR session status.</span></span>
+<span data-ttu-id="199c4-481">데이터 반환</span><span class="sxs-lookup"><span data-stu-id="199c4-481">Return data</span></span>
+* <span data-ttu-id="199c4-482">시작 시 WPR 세션 상태를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="199c4-482">On start, returns the WPR session status.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="3e578-483">참조</span><span class="sxs-lookup"><span data-stu-id="3e578-483">See also</span></span>
-* [<span data-ttu-id="3e578-484">Windows 디바이스 포털 사용</span><span class="sxs-lookup"><span data-stu-id="3e578-484">Using the Windows Device Portal</span></span>](using-the-windows-device-portal.md)
-* [<span data-ttu-id="3e578-485">장치 포털 핵심 API 참조 (UWP)</span><span class="sxs-lookup"><span data-stu-id="3e578-485">Device Portal core API reference (UWP)</span></span>](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)
+## <a name="see-also"></a><span data-ttu-id="199c4-483">참조</span><span class="sxs-lookup"><span data-stu-id="199c4-483">See also</span></span>
+* [<span data-ttu-id="199c4-484">Windows 디바이스 포털 사용</span><span class="sxs-lookup"><span data-stu-id="199c4-484">Using the Windows Device Portal</span></span>](using-the-windows-device-portal.md)
+* [<span data-ttu-id="199c4-485">장치 포털 핵심 API 참조 (UWP)</span><span class="sxs-lookup"><span data-stu-id="199c4-485">Device Portal core API reference (UWP)</span></span>](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)
