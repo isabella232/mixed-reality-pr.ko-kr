@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, 스타일, 디자인
-ms.openlocfilehash: 7d35da2d86d8d3b7f444974d87e5aa10e58ed2c8
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Windows Mixed reality, 스타일, 디자인, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 규모, holograms
+ms.openlocfilehash: e82211b0bee2214df7542d3129f95ea207f4b0e3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340661"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703379"
 ---
 # <a name="scale"></a>확장
 
@@ -80,19 +80,7 @@ ms.locfileid: "94340661"
 
 ---
 
-## <a name="next-discovery-checkpoint"></a>다음 검색 검사점
-
-배치 된 [검색](../discover/get-started-with-mr.md) 경험을 팔로 하는 경우 처음에는 혼합 현실 기초에 있습니다. 실제 세계에서 혼합 현실에서 수행 하는 업계 파트너가 무엇 인지 확인할 수 있습니다. 
-
-> [!div class="nextstepaction"]
-> [업계 파트너에서 혼합 현실을 사용하는 방법 보기](../discover/get-started-with-mr.md#see-how-industry-partners-are-using-mixed-reality)
-
-또는 디자인 과정을 계속 진행 합니다.
-
-> [!div class="nextstepaction"]
-> [디자인 경험 시작](../design/design.md)
-
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [색, 광원 및 재질](../color,-light-and-materials.md)
 * [입력 체계](typography.md)
 * [공간 음향 디자인](spatial-sound-design.md)

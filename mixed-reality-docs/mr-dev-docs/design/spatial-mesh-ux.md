@@ -4,13 +4,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
-keywords: 혼합 현실, HoloLens, UI 컨트롤, 상호 작용, UI, ux, UX 디자인, 공간 UI, 공간 상호 작용, 3D UI, 3D UX
-ms.openlocfilehash: 2c811edc14fbcc7c917fe9fa724f1cab23179a96
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 혼합 현실, HoloLens, UI 컨트롤, 상호 작용, ui, ux, UX 디자인, 공간 UI, 공간 상호 작용, 3D UI, 3D UX, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: ec887f73b8561e0a91740d612227411683707364
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686089"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703299"
 ---
 # <a name="spatial-mesh"></a>공간 메시
 
@@ -26,7 +26,7 @@ ms.locfileid: "91686089"
 ## <a name="spatial-mesh-visualization-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 공간 메시 시각화
 MRTK는 공간 메시 시각화에 대 한 여러 자료를 제공 합니다.
 
-- **MRTK_Wireframe, MRTK_Wireframe** : 기본 정적 공간 메시 재질: 애니메이션 없이 메시 윤곽선을 표시 합니다. 이 자료는 전체 공간 메시 기 하 도형을 표시 하기 때문에 디버깅 목적으로 유용 합니다. 그러나 프로덕션 환경에서는 권장 되지 않습니다.
+- **MRTK_Wireframe, MRTK_Wireframe**: 기본 정적 공간 메시 재질: 애니메이션 없이 메시 윤곽선을 표시 합니다. 이 자료는 전체 공간 메시 기 하 도형을 표시 하기 때문에 디버깅 목적으로 유용 합니다. 그러나 프로덕션 환경에서는 권장 되지 않습니다.
 <br>
 <img src="images/SurfaceReconstruction.jpg" alt="Wireframe spatial mesh visualization" width="640px">
 

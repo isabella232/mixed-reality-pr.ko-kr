@@ -5,13 +5,13 @@ author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: 눈 추적, 혼합 현실, 입력, 눈에 응시, 보정
-ms.openlocfilehash: 20e76188c6b64776d818f340f6aca0a725454dd8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 눈 추적, 혼합 현실, 입력, 눈에 응시, 보정, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 의도, 작업
+ms.openlocfilehash: c6167fc48a98de8f400400475c2057a2b4773b29
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685088"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702589"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>HoloLens 2의 시선 추적
 
@@ -81,7 +81,7 @@ HoloLens 2를 사용 하면 개발자에 게 사용자가 보고 있는 항목�
 ### <a name="user-intent"></a>사용자 의도    
 사용자에 게 표시 되는 위치와 위치에 대 한 정보는 음성, 손 및 컨트롤러와 같은 **다른 입력을 위한 강력한 컨텍스트** 를 제공 합니다.
 이러한 컨텍스트를 다양한 작업에서 사용할 수 있습니다.
-예를 들어,이는 홀로그램을 살펴보고 *"선택"* ( [응시 및 커밋](gaze-and-commit.md)) 또는 "준비 중 ... *"* 이라고 하 고 사용자가 홀로그램을 배치할 위치를 확인 한 다음, 사용자가 홀로그램을 배치할 위치를 확인 하 고 **targeting** *"* . 이에 대한 예는 [Mixed Reality Toolkit - 시선 지원 대상 선택](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) 및 [Mixed Reality Toolkit - 시선 지원 대상 위치 지정](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html)에서 찾을 수 있습니다.
+예를 들어,이는 홀로그램을 살펴보고 *"선택"* ( [응시 및 커밋](gaze-and-commit.md)) 또는 "준비 중 ... *"* 이라고 하 고 사용자가 홀로그램을 배치할 위치를 확인 한 다음, 사용자가 홀로그램을 배치할 위치를 확인 하 고 **targeting** *"*. 이에 대한 예는 [Mixed Reality Toolkit - 시선 지원 대상 선택](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) 및 [Mixed Reality Toolkit - 시선 지원 대상 위치 지정](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html)에서 찾을 수 있습니다.
 
 또한 사용자 의도에 대 한 예제에는 사용자가 합의서 등 가상 에이전트 및 대화형 holograms 참여를 개선 하기 위해 확인 하는 내용에 대 한 정보가 포함 될 수 있습니다. 예를 들어 가상 에이전트는 현재 표시 되는 내용에 따라 사용 가능한 옵션과 해당 동작을 조정할 수 있습니다. 
 

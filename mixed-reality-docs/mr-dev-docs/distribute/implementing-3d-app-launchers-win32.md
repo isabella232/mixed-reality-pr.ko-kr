@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
-keywords: 3D, 로고, 아이콘, 모델링, 시작 관리자, 3D 시작 관리자, 타일, 라이브 큐브, win32
-ms.openlocfilehash: 4b22c78e651687c293a1e47ff8e4e9106de631bf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 3D, 로고, 아이콘, 모델링, 시작 관리자, 3D 시작 관리자, 타일, 라이브 큐브, win32, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 매니페스트
+ms.openlocfilehash: 9a8680232bf1d8d333c26ca4e39075ee553782fb
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684489"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703429"
 ---
 # <a name="implement-3d-app-launchers-win32-apps"></a>3D 앱 시작 관리자(Win32 앱) 구현
 

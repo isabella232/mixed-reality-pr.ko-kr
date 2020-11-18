@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/02/2019
 ms.topic: article
-keywords: Windows Mixed Reality, 공간 소리, 디자인, 스타일
-ms.openlocfilehash: 8bb48aad2d4582696241bc5444beabc88ca5a7d9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, 공간 사운드, 디자인, 스타일, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 제스처, 상호 작용, 감쇠
+ms.openlocfilehash: 503a59eb6a71aea0e1ec043ca6e3196f821f211a
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686088"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703286"
 ---
 # <a name="how-to-use-sound-in-mixed-reality-applications"></a>혼합 현실 응용 프로그램에서 소리를 사용 하는 방법
 
@@ -99,7 +99,7 @@ Spatialization에는 몇 가지 CPU 비용이 포함 됩니다. 많은 응용 �
 ### <a name="when-and-how-to-apply-distance-based-attenuation"></a>거리 기반 감쇠 적용 시기 및 방법
 실제 세계에서 멀리 떨어져 있는 소리는 더 조용한 것입니다. 오디오 엔진은 원본 거리를 기준으로이 감쇠를 모델링할 수 있습니다. 관련 정보를 통신할 때 거리 기반 감쇠를 사용 합니다.
 
-*시각적 표시기* , *애니메이션 holograms* 및 기타 정보 사운드에 대 한 거리가 일반적으로 사용자와 관련이 있습니다. 거리 기반 감쇠를 사용 하 여 큐를 직관적으로 제공 합니다.
+*시각적 표시기*, *애니메이션 holograms* 및 기타 정보 사운드에 대 한 거리가 일반적으로 사용자와 관련이 있습니다. 거리 기반 감쇠를 사용 하 여 큐를 직관적으로 제공 합니다.
 
 각 원본에 대 한 감쇠 곡선을 혼합 현실 세계 공간의 크기에 맞게 조정 합니다. 오디오 엔진의 기본 곡선은 종종 매우 큰 (kilometer) 공간을 차지 합니다.
 

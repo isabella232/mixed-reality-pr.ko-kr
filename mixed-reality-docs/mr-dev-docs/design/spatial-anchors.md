@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: 좌표계, 공간 좌표계, 전세계 규모, 세계, 규모, 위치, 방향, 앵커, 공간 앵커, 세계 잠금, 전세계 잠금, 지속성, 공유
-ms.openlocfilehash: a1108aceb91ec80d20b4cac043477ee92527035b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 좌표계, 공간 좌표계, 세계 크기 조정, 전 세계, 눈금, 위치, 방향, 앵커, 공간 고정, 세계 잠긴, 세계 잠금, 지 속성, 공유, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens
+ms.openlocfilehash: 92694023a3c7c7266b0f5d927180df20692b9d45
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683961"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703309"
 ---
 # <a name="spatial-anchors"></a>공간 앵커
 

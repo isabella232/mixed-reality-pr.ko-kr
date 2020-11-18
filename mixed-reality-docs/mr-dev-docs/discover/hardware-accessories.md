@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 05/20/2020
 ms.topic: article
-keywords: 방법, 액세서리, bluetooth, bt, 컨트롤러, 게임 패드, clicker, xbox
-ms.openlocfilehash: 7f51264a3914d028c9a027d70d5aa1999582110a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 방법, 보조 프로그램, bluetooth, bt, 컨트롤러, 게임 패드, clicker, xbox, 하드웨어, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 동작 컨트롤러
+ms.openlocfilehash: 3855d5337c4cad462b60ff8c73cec0b7b96c0ca1
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690337"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702009"
 ---
 # <a name="hardware-accessories"></a>하드웨어 액세서리
 
@@ -19,7 +19,7 @@ Windows Mixed Reality 장치는 액세서리를 지원 합니다. Bluetooth 또�
 
 HoloLens에서 Bluetooth 액세서리를 사용 하는 방법에 대 한 자세한 내용은 [bluetooth 및 USB 장치에 연결](https://docs.microsoft.com/hololens/hololens-connect-devices)을 참조 하세요.
 
-Windows Mixed Reality 몰입 형 헤드셋은 [응시](../design/gaze-and-commit.md) 및 [음성](../design/voice-input.md)이외의 입력을 위한 액세서리를 요구 합니다. 지원 되는 액세서리는 **키보드 및 마우스** , **게임 패드** 및 **[동작 컨트롤러](../design/motion-controllers.md)** 를 포함 합니다.
+Windows Mixed Reality 몰입 형 헤드셋은 [응시](../design/gaze-and-commit.md) 및 [음성](../design/voice-input.md)이외의 입력을 위한 액세서리를 요구 합니다. 지원 되는 액세서리는 **키보드 및 마우스**, **게임 패드** 및 **[동작 컨트롤러](../design/motion-controllers.md)** 를 포함 합니다.
 
 ## <a name="pairing-bluetooth-accessories"></a>Bluetooth 액세서리 페어링
 

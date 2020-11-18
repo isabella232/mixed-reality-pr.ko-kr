@@ -5,13 +5,13 @@ author: hak0n
 ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
-keywords: ggv, 음성, cortana, 음성, 입력
-ms.openlocfilehash: 206fd1b304d1b0f376ec1d45a6d5ba852b0bc4f2
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: ggv, 음성, cortana, 음성, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 응시
+ms.openlocfilehash: f4f81383f942961857b088b05c4e8cac07ab7dfe
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685952"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703209"
 ---
 # <a name="voice-input"></a>음성 입력
 
@@ -25,7 +25,7 @@ ms.locfileid: "91685952"
 
 ## <a name="voice-and-gaze"></a>음성 및 응시
 
-음성 명령을 사용 하는 경우 (head 또는 눈) 응시는 일반적으로 커서 ("select")를 사용 하 여 대상 메커니즘으로 사용 되거나 원하는 응용 프로그램에 명령을 암시적으로 채널 합니다. 이 경우에는 모든 응시 커서를 표시 하는 데 필요 하지 않을 수 있습니다 _("참조)_ . 물론 일부 음성 명령에는 "시작으로 이동" 또는 "안녕하세요 Cortana"와 같은 대상이 전혀 필요 하지 않습니다.
+음성 명령을 사용 하는 경우 (head 또는 눈) 응시는 일반적으로 커서 ("select")를 사용 하 여 대상 메커니즘으로 사용 되거나 원하는 응용 프로그램에 명령을 암시적으로 채널 합니다. 이 경우에는 모든 응시 커서를 표시 하는 데 필요 하지 않을 수 있습니다 _("참조)_. 물론 일부 음성 명령에는 "시작으로 이동" 또는 "안녕하세요 Cortana"와 같은 대상이 전혀 필요 하지 않습니다.
 
 <br>
 
@@ -237,7 +237,7 @@ Holographic 키보드가 활성화 될 때마다 입력 하는 대신 받아쓰�
 
 ### <a name="voice-feedback-states"></a>음성 피드백 상태
 
-음성이 제대로 적용되면 사용자는 **말할 수 있는 사항** 을 이해하고 시스템이 **올바르게 알아 들었다는 명확한 피드백을 받게 됩니다** . 이러한 두 신호를 통해 사용자는 음성을 기본 입력으로 사용할 때 안심할 수 있습니다. 다음은 음성 입력이 인식될 때 커서에 나타나는 결과와 사용자에게 이러한 사실을 전달하는 방법을 보여 주는 다이어그램입니다.
+음성이 제대로 적용되면 사용자는 **말할 수 있는 사항** 을 이해하고 시스템이 **올바르게 알아 들었다는 명확한 피드백을 받게 됩니다**. 이러한 두 신호를 통해 사용자는 음성을 기본 입력으로 사용할 때 안심할 수 있습니다. 다음은 음성 입력이 인식될 때 커서에 나타나는 결과와 사용자에게 이러한 사실을 전달하는 방법을 보여 주는 다이어그램입니다.
 
 
 :::row:::

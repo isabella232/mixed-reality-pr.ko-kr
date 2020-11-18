@@ -5,13 +5,13 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 6dof 컨트롤러, 동작 컨트롤러
-ms.openlocfilehash: 74ea6c8879d5deb1271e9a2169cae013b03bab5b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 6dof 컨트롤러, 동작 컨트롤러, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 스크롤, 그립, 상태
+ms.openlocfilehash: a1af86ca174bc574ab8030d8aebd128649b6515f
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684128"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703159"
 ---
 # <a name="motion-controllers"></a>모션 컨트롤러
 
@@ -69,11 +69,11 @@ Windows Mixed Reality 동작 컨트롤러는 몰입 형 헤드셋의 센서를 �
 * 사용해
 * 터치 패드
 
-## <a name="setup"></a>설정
+## <a name="setup"></a>설치 프로그램
 
 ### <a name="before-you-begin"></a>시작하기 전에
 
-**다음이 필요 합니다.**
+**필요한 항목은 다음과 같습니다.**
 * 두 개의 동작 컨트롤러 집합입니다.
 * AA 배터리가 4 개 있습니다.
 * Bluetooth 4.0을 지 원하는 PC입니다.
@@ -146,7 +146,7 @@ Windows Mixed Reality 동작 컨트롤러는 몰입 형 헤드셋의 센서를 �
 
 ## <a name="gazing-and-pointing"></a>Gazing 및 가리키기
 
-Windows Mixed Reality는 상호 작용을 위한 두 가지 주요 모델을 지원 합니다. **응시 및 커밋** 및 **커밋** :
+Windows Mixed Reality는 상호 작용을 위한 두 가지 주요 모델을 지원 합니다. **응시 및 커밋** 및 **커밋**:
 * 사용자는 **응시 및 커밋을** 사용 하 여 사용자가 자신의 [응시](gaze-and-commit.md) 를 사용 하 여 개체를 대상으로 지정한 다음 핸드 공기 탭, 게임 패드, clicker 또는 음성으로 개체를 선택 합니다.
 * **지점 및 커밋을** 사용 하 여 사용자는 대상 개체에서 포인팅 가능 동작 컨트롤러를 목표로 한 다음 컨트롤러의 트리거를 사용 하 여 개체를 선택할 수 있습니다.
 
@@ -168,13 +168,13 @@ Windows Mixed Reality는 다양 한 폼 팩터에서 동작 컨트롤러를 지�
 
 **그립 포즈** 는 HoloLens에서 감지한 손바닥의 위치 또는 동작 컨트롤러를 보유 하는 야자나무를 나타냅니다.
 
-몰입 형 헤드셋에서 그립 포즈는 사용자 **의 손을** 만들거나 **사용자의 손으로 보유 한 개체** (예: 소드 또는 포)를 렌더링 하는 데 가장 적합 합니다. 동작 컨트롤러에 대해 Windows에서 제공 하는 **렌더링할 모델** 은 동작 컨트롤러를 시각화할 때에도 그립 포즈를 사용 합니다.
+몰입 형 헤드셋에서 그립 포즈는 사용자 **의 손을** 만들거나 **사용자의 손으로 보유 한 개체**(예: 소드 또는 포)를 렌더링 하는 데 가장 적합 합니다. 동작 컨트롤러에 대해 Windows에서 제공 하는 **렌더링할 모델** 은 동작 컨트롤러를 시각화할 때에도 그립 포즈를 사용 합니다.
 
 그립 포즈는 구체적으로 다음과 같이 정의 됩니다.
-* **그립 위치** : 컨트롤러를 자연스럽 게 유지 하는 경우 왼쪽 또는 오른쪽으로 조정 하 여 그립 내 위치를 가운데에 맞춥니다. Windows Mixed Reality 동작 컨트롤러에서이 위치는 일반적으로 보통 클릭 단추와 맞춥니다.
-* **그립 방향 오른쪽 축** : 손 모양 5 손가락 포즈를 형성 하는 손을 완전히 열 때 palm (왼쪽 야자나무에서 오른쪽으로 뒤로)의 광선을 만듭니다.
+* **그립 위치**: 컨트롤러를 자연스럽 게 유지 하는 경우 왼쪽 또는 오른쪽으로 조정 하 여 그립 내 위치를 가운데에 맞춥니다. Windows Mixed Reality 동작 컨트롤러에서이 위치는 일반적으로 보통 클릭 단추와 맞춥니다.
+* **그립 방향 오른쪽 축**: 손 모양 5 손가락 포즈를 형성 하는 손을 완전히 열 때 palm (왼쪽 야자나무에서 오른쪽으로 뒤로)의 광선을 만듭니다.
 * **그립 방향 전방 축: 핸들** 을 부분적으로 (컨트롤러를 보유 하는 것 처럼) 닫는 경우 비 엄지 손가락으로 형성 된 튜브를 통해 "전달" 하는 광선이 표시 됩니다.
-* **그립 방향 up 축** : 오른쪽 및 전방 정의에 의해 암시 된 위쪽 축입니다.
+* **그립 방향 up 축**: 오른쪽 및 전방 정의에 의해 암시 된 위쪽 축입니다.
 
 ### <a name="pointer-pose"></a>포인터 포즈
 
@@ -203,9 +203,9 @@ Windows Mixed Reality는 다양 한 폼 팩터에서 동작 컨트롤러를 지�
 <tr>
 <th> 상태 추적 </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>높은 정확도</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> 높음 </td><td style="background-color: green; color: white"> true</td>
+<td> <b>높은 정확도</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> 높은 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>높은 정확도 (손실 위험)</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: green; color: white"> 높음 </td><td style="background-color: green; color: white"> true</td>
+<td> <b>높은 정확도 (손실 위험)</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: green; color: white"> 높은 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>대략적인 정확도</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: orange"> 근사치 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -223,7 +223,7 @@ Windows Mixed Reality는 다양 한 폼 팩터에서 동작 컨트롤러를 지�
 
 ## <a name="interactions-low-level-spatial-input"></a>상호 작용: 하위 수준 공간 입력
 
-손으로 이동 하 고 **이동 하는** 컨트롤러의 핵심 상호 작용은 **선택** , **메뉴** , 방법, **터치 패드** , **엄지 스틱** 및 **홈** 입니다.
+손으로 이동 하 고 **이동 하는** 컨트롤러의 핵심 상호 작용은 **선택**, **메뉴**, 방법, **터치 패드**, **엄지 스틱** 및 **홈** 입니다.
 * Press를 선택 하 고 릴리스를 차례로 선택 하 여 홀로그램을 활성화 하는 기본 상호 작용을 **선택** 합니다. 동작 컨트롤러의 경우 컨트롤러의 트리거를 사용 하 여 Select 누르기를 수행 합니다. Select를 수행 하는 다른 방법은 [음성 명령](voice-input.md) "Select"를 말하는 것입니다. 모든 앱 내에서 동일한 select 상호 작용을 사용할 수 있습니다. Select를 마우스 클릭에 해당 하는 것으로 간주 합니다. 한 번 알아보고 모든 앱에 적용 되는 범용 작업입니다.
 * **메뉴** 는 상황에 맞는 메뉴를 끌어오거나 다른 보조 작업을 수행 하는 데 사용 되는 개체의 동작에 대 한 보조 상호 작용입니다. 동작 컨트롤러를 사용 하면 컨트롤러의 *메뉴* 단추를 사용 하 여 메뉴 작업을 수행할 수 있습니다. (즉, 햄버거 "메뉴" 아이콘이 있는 단추)
 * 사용자가 직접 개체에 대 한 작업을 수행 하 여 조작 하는 방법을 **이해** 하는 것이 좋습니다. 동작 컨트롤러를 사용 하 여 펀치를 긴밀 하 게 배치 하 여 동작을 수행할 수 있습니다. 동작 컨트롤러는 잡기 단추, 팜 트리거 또는 기타 센서를 사용 하 여 감지기를 감지할 수 있습니다.
@@ -233,7 +233,7 @@ Windows Mixed Reality는 다양 한 폼 팩터에서 동작 컨트롤러를 지�
 
 ## <a name="composite-gestures-high-level-spatial-input"></a>복합 제스처: 상위 수준 공간 입력
 
-[핸드 제스처](gaze-and-commit.md#composite-gestures) 와 동작 컨트롤러를 시간에 따라 추적 하 여 상위 수준 **[복합 제스처](gaze-and-commit.md#composite-gestures)** 의 공통 집합을 검색할 수 있습니다. 이를 통해 앱은 사용자가 직접 또는 컨트롤러를 사용 하 든 관계 없이 상위 수준 **탭** , **보유** , **조작** 및 **탐색** 제스처를 검색할 수 있습니다.
+[핸드 제스처](gaze-and-commit.md#composite-gestures) 와 동작 컨트롤러를 시간에 따라 추적 하 여 상위 수준 **[복합 제스처](gaze-and-commit.md#composite-gestures)** 의 공통 집합을 검색할 수 있습니다. 이를 통해 앱은 사용자가 직접 또는 컨트롤러를 사용 하 든 관계 없이 상위 수준 **탭**, **보유**, **조작** 및 **탐색** 제스처를 검색할 수 있습니다.
 
 ## <a name="rendering-the-motion-controller-model"></a>동작 컨트롤러 모델 렌더링
 
@@ -283,4 +283,4 @@ Unity에서 동적으로 컨트롤러 모델을 로드 하는 방법에 대 한 
 * [제스처](gaze-and-commit.md#composite-gestures)
 * [열성적인 's Guide: Windows Mixed Reality 홈](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
 * [열성적인 's Guide: Windows Mixed Reality에서 게임 & 앱 사용](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
-* [외부 추적 작동 방법](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)
+* [내부에서 외부로 추적의 작동 방식](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)

@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens, holograms, 디자인, 상호 작용
-ms.openlocfilehash: f902639e66246c9184750ebc58dbad1c04b2bb5a
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Windows Mixed Reality, HoloLens, holograms, 디자인, 상호 작용, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 확대 된 현실
+ms.openlocfilehash: 6407770a818bc294cf615201a837218173b963d0
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631471"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702249"
 ---
 # <a name="what-is-a-hologram"></a>홀로그램이란?
 

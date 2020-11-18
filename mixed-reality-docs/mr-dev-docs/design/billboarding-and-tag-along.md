@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, billboarding, 태그 동반
-ms.openlocfilehash: 266fb314ae4fccdc25e94b20d04262666be5a1b6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, billboarding, 태그 동반, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 1f40e1b180eccd8b79da43a07f969375d5135508
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685161"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702889"
 ---
 # <a name="billboarding-and-tag-along"></a>빌보딩 및 태그얼롱
 

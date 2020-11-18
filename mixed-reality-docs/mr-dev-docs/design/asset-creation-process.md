@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 자산, 생성, 프로세스, 예산, 다각형, 질감, 셰이더, 성능
-ms.openlocfilehash: 56be236086a6947549af6199dc3d01ba7c555375
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 자산, 생성, 프로세스, 예산, 다각형, 질감, 셰이더, 성능, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 자산
+ms.openlocfilehash: 0c6f592dd813c06613801510ad8c8a936ad0de65
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685176"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702879"
 ---
 # <a name="asset-creation-process"></a>자산 생성 프로세스
 
@@ -77,7 +77,7 @@ Windows Mixed Reality는 Microsoft에서 DirectX로 만든 수십 년의 투자�
 ### <a name="creating-assets"></a>자산 만들기
 
 **작성 도구**<br>
-먼저 다양 한 방법으로 고유한 자산을 만들 수 있습니다. 3D 아티스트는 여러 응용 프로그램 및 도구를 사용 하 여 **메시** , **질감** 및 **재질** 로 구성 된 모델을 만듭니다. 그런 다음 응용 프로그램에서 사용 하는 그래픽 엔진 (예:)에서 가져오거나 사용할 수 있는 파일 형식으로 저장 됩니다 **. FBX** 또는 **입니다. OBJ** . 선택한 그래픽 엔진에서 지원 되는 모델을 생성 하는 모든 도구는 **HoloLens** 에서 작동 합니다. 3D 아티스트 중에는 [Autodesk의 Maya](https://www.youtube.com/watch?v=q0K3n0Gf8mA) 를 사용 하도록 선택 하 고,이를 사용 하 여 자산이 생성 되는 방식을 변환할 수 있습니다. 신속 하 게 작업 하려면 Windows와 함께 제공 되는 [3D 작성기](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) 를 사용 하 여 내보낼 수도 있습니다. 응용 프로그램에서 사용할 OBJ입니다.
+먼저 다양 한 방법으로 고유한 자산을 만들 수 있습니다. 3D 아티스트는 여러 응용 프로그램 및 도구를 사용 하 여 **메시**, **질감** 및 **재질** 로 구성 된 모델을 만듭니다. 그런 다음 응용 프로그램에서 사용 하는 그래픽 엔진 (예:)에서 가져오거나 사용할 수 있는 파일 형식으로 저장 됩니다 **. FBX** 또는 **입니다. OBJ**. 선택한 그래픽 엔진에서 지원 되는 모델을 생성 하는 모든 도구는 **HoloLens** 에서 작동 합니다. 3D 아티스트 중에는 [Autodesk의 Maya](https://www.youtube.com/watch?v=q0K3n0Gf8mA) 를 사용 하도록 선택 하 고,이를 사용 하 여 자산이 생성 되는 방식을 변환할 수 있습니다. 신속 하 게 작업 하려면 Windows와 함께 제공 되는 [3D 작성기](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) 를 사용 하 여 내보낼 수도 있습니다. 응용 프로그램에서 사용할 OBJ입니다.
 
 **개체 캡처**<br>
 3D에서 개체를 캡처하는 옵션도 있습니다. 3D로 inanimate 개체를 캡처하고 디지털 콘텐츠 생성 소프트웨어를 사용 하 여 편집 하는 것은 3D 인쇄로 점점 더 인기 있습니다. **Kinect 2** 센서 및 [3d 작성기](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) 를 사용 하 여 캡처 기능을 사용 하 여 실제 개체에서 자산을 만들 수 있습니다. 이는 함께 연결 하는 여러 이미지를 처리 하 고 메시와 질감을 사용 하 여 **photogrammetry** 와 동일한 작업을 수행 하는 [도구 모음](https://en.wikipedia.org/wiki/Comparison_of_photogrammetry_software) 이기도 합니다.

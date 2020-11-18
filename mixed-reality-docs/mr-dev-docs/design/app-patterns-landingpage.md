@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
-keywords: UX 디자인, 혼합 현실 UX, UX, 앱 패턴, 컨트롤, 스타일, HoloLens, 상호 작용, 공간 상호 작용, 공간 UI, UX 요소, 동작, 구성 요소, 입력 체계, 색
-ms.openlocfilehash: c070d05f40cb3bf0376809fd684a05fd74f86fd5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: UX 디자인, 혼합 현실 UX, UX, 앱 패턴, 컨트롤, 스타일, HoloLens, 상호 작용, 공간 상호 작용, 공간 UI, UX 요소, 동작, 구성 요소, 입력 체계, 색, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: c75856362f0e68eba2736105c028bff736c5932c
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685209"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703139"
 ---
 # <a name="ux-elements-overview"></a>UX 요소 개요
 ## <a name="foundational-elements"></a>기본 요소

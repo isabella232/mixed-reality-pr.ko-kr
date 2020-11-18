@@ -5,13 +5,13 @@ author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
-keywords: 장면 이해, 공간 매핑, Windows Mixed Reality, Unity
-ms.openlocfilehash: 6185d434b1687675f9ae46313277f61cf6d5e1f8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 장면 이해, 공간 매핑, Windows Mixed Reality, Unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 폐색, SDK
+ms.openlocfilehash: 80fb01707d3265aa3dac23d75ea92034115d3c94
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684000"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703369"
 ---
 # <a name="scene-understanding"></a>장면 이해
 
@@ -35,7 +35,7 @@ ms.locfileid: "91684000"
 
 [장면 이해 샘플 장면](https://github.com/sceneunderstanding-microsoft/unitysample/tree/master/Assets/Resources/SerializedScenesForPCPath)
 
-### <a name="sdk"></a>SDK
+### <a name="sdk"></a>SDK)
 
 장면 이해를 위해 개발 하는 방법 또는 장면 이해의 작동 방식에 대 한 자세한 내용 및 개발 방법에 대 한 자세한 내용을 보려면 [장면 이해 SDK 개요](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) 설명서를 참조 하세요.
 

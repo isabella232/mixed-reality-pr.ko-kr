@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, 앱 패턴, 디자인, HoloLens, 회의실 검색, 공간 매핑, 메시
-ms.openlocfilehash: 25de181bbb2dedaba9e4917f51cc80bac77cc5f1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, 앱 패턴, 디자인, HoloLens, 회의실 검색, 공간 매핑, 메시, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens
+ms.openlocfilehash: f912ddcff5ef1d14468cec1e63c8153ae6460476
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684032"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703359"
 ---
 # <a name="room-scan-visualization"></a>실내 스캔 시각화
 
@@ -66,13 +66,13 @@ ms.locfileid: "91684032"
 
 캐시 된 공간 매핑의 경우 응용 프로그램은 일반적으로 공간 매핑 데이터의 스냅숏을 사용 하 고 환경 기간 동안이 스냅숏을 사용 합니다.
 
-**이점**
+**혜택**
 * 경험을 실행 하는 동안 시스템에서 오버 헤드가 줄어들고 성능이 크게 향상 되 고 열 및 cpu 성능이 향상 됩니다.
 * 공간 데이터의 변경으로 인해 중단 되지 않으므로 기본 환경을 간단 하 게 구현할 수 있습니다.
 * 물리학, 그래픽 및 기타 목적을 위해 공간 데이터의 post 처리에 대 한 단일 일회성 비용입니다.
 
 **단점**
-* 실제 개체 또는 사람들의 이동은 캐시 된 데이터에 의해 반영 되지 않습니다. 예를 들어 응용 프로그램은 실제로 닫혀 있을 때 도어를 열어 볼 수 있습니다.
+* 실제 개체 또는 사람들의 이동은 캐시 된 데이터에 의해 반영 되지 않습니다. 예: 응용 프로그램은 실제로 닫혀 있을 때 도어를 열어 볼 수 있습니다.
 * 캐시 된 버전의 데이터를 유지 관리 하기 위한 응용 프로그램 메모리가 더 많이 있습니다.
 
 이 메서드에 대 한 좋은 사례는 제어 되는 환경 또는 테이블 상위 게임입니다.
@@ -81,7 +81,7 @@ ms.locfileid: "91684032"
 
 특정 응용 프로그램은 계속 검색을 사용 하 여 공간 매핑 데이터를 새로 고칠 수 있습니다.
 
-**이점**
+**혜택**
 * 응용 프로그램에 대 한 별도의 검색 또는 탐색 환경에서 작성 하지 않아도 됩니다.
 * 실제 개체의 이동은 약간의 지연이 있지만 게임에서 반영할 수 있습니다.
 

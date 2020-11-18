@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
-keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux
-ms.openlocfilehash: 6458f4b1c80c8606d07d610f509ed610a0ca4268
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 혼합 현실, 컨트롤, 상호 작용, 큐, ui, ux, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 오디오
+ms.openlocfilehash: e298ce7fa46688a734c55a6674c03b89a4e7b5f3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684217"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703229"
 ---
 # <a name="interactable-object"></a>상호 작용 가능한 개체
 
@@ -93,12 +93,12 @@ Holographic 개체는 혼합 현실에서 실제 환경과 혼합 되므로 상�
 HoloLens 2는 개체와 상호 작용할 수 있도록 하는 트레일러 추적 입력을 지원 합니다. 사용자 의견을 햅 하 고 완벽 하 게 인식 하지 못하는 경우에도 개체에서 얼마나 멀리 떨어져 있는지 또는 사용자가 이야기 하 고 있는지를 확인 하는 것이 어려울 수 있습니다. 개체 상태를 전달 하는 데 충분 한 시각적 신호를 제공 하 고 해당 개체와 관련 된 사용자의 상태를 제공 하는 것이 중요 합니다.
 
 시각적 피드백을 사용 하 여 다음을 전달 합니다.
-* **Default (관찰)** : 개체의 기본 유휴 상태입니다.
-* **가리키기** : 손을 홀로그램 근처에 있으면 시각적 개체를 대상으로 하 여 홀로그램을 대상으로 하는 통신으로 변경 합니다. 
-* **거리 및 상호 작용 지점** : 홀로그램은 홀로그램에 근접 하 고, 예상 되는 상호 작용 지점을 전달 하기 위한 디자인 피드백을 비롯 하 여 개체의 거리와
-* **연락처 시작** : 터치가 발생 했음을 알리기 위해 시각적 개체 (광원, 색)를 변경 합니다.
-* **Grasped** : 개체가 Grasped 경우 시각적 개체 (광원, 색)를 변경 합니다.
-* **연락처 끝** : 터치가 종료 되 면 시각적 개체 (밝은 색)를 변경 합니다.
+* **Default (관찰)**: 개체의 기본 유휴 상태입니다.
+* **가리키기**: 손을 홀로그램 근처에 있으면 시각적 개체를 대상으로 하 여 홀로그램을 대상으로 하는 통신으로 변경 합니다. 
+* **거리 및 상호 작용 지점**: 홀로그램은 홀로그램에 근접 하 고, 예상 되는 상호 작용 지점을 전달 하기 위한 디자인 피드백을 비롯 하 여 개체의 거리와
+* **연락처 시작**: 터치가 발생 했음을 알리기 위해 시각적 개체 (광원, 색)를 변경 합니다.
+* **Grasped**: 개체가 Grasped 경우 시각적 개체 (광원, 색)를 변경 합니다.
+* **연락처 끝**: 터치가 종료 되 면 시각적 개체 (밝은 색)를 변경 합니다.
 
 <br>
 
@@ -189,10 +189,10 @@ HoloLens 2는 개체와 상호 작용할 수 있도록 하는 트레일러 추�
 ### <a name="audio-cues"></a>오디오 신호
 
 직접 상호 작용을 위해 적절 한 오디오 피드백을 통해 사용자 환경을 크게 향상 시킬 수 있습니다. 오디오 피드백을 사용 하 여 다음을 전달 합니다.
-* **연락처 시작** : 터치 시작 시 소리 재생
-* **연락처 끝** : 터치 엔드에서 소리 재생
-* **시작** : 잡기 시작 시 소리 재생
-* **잡기 종료** : 잡기 종료 시 소리 재생
+* **연락처 시작**: 터치 시작 시 소리 재생
+* **연락처 끝**: 터치 엔드에서 소리 재생
+* **시작**: 잡기 시작 시 소리 재생
+* **잡기 종료**: 잡기 종료 시 소리 재생
 
 <br>
 
@@ -266,7 +266,7 @@ HoloLens 2는 개체와 상호 작용할 수 있도록 하는 트레일러 추�
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 에서는 [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) 스크립트를 사용 하 여 개체를 다양 한 유형의 입력 상호 작용 상태에 응답할 수 있습니다. 색, 크기, 재질, 셰이더 등의 개체 속성을 제어 하 여 시각적 상태를 정의할 수 있도록 하는 다양 한 형식의 테마를 지원 합니다.
 
 * [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
-* [Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* [단추](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
 * [직접 상호 작용 예제 장면](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 MixedRealityToolkit의 표준 셰이더는 시각적 및 오디오 큐를 만드는 데 도움이 되는 **근접 조명** 과 같은 다양 한 옵션을 제공 합니다.

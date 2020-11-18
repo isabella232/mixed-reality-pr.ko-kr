@@ -5,13 +5,13 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
-keywords: 혼합 현실, 응시, 응시 타기팅, 상호 작용, 디자인
-ms.openlocfilehash: 76223dd375e76d943183bc745792e2cb9d3d0601
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 혼합 현실, 응시, 응시 대상 지정, 상호 작용, 디자인, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 대상, 포커스, 다듬기
+ms.openlocfilehash: d913ac81e20962d38178223a050fdccfb51d8632
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685073"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702389"
 ---
 # <a name="head-gaze-and-commit"></a>헤드 게이즈(head-gaze) 및 커밋
 _헤드-응시 및 커밋_ 은 전방의 방향 (head)으로 개체를 대상으로 지정 하 고, 손 모양 공기 탭 또는 음성 명령 "선택"과 같은 보조 입력으로 작업을 수행 하는 [응시 및 커밋](gaze-and-commit.md) 입력 모델의 특별 한 경우입니다. 

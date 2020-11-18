@@ -1,19 +1,19 @@
 ---
-title: 혼합 현실 앱의 종류
+title: 혼합 현실 앱 유형
 description: Windows Mixed Reality 용 응용 프로그램을 개발할 때의 이점 중 하나는 플랫폼에서 사용자의 현재 환경 l에 대 한 경량 정보를 계층화 하는 데 사용할 수 있는 완전 한 몰입 형 가상 환경에서 지원할 수 있는 환경 스펙트럼입니다.
 author: rwinj
 ms.author: willyang
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, 디자인, 앱 패턴
-ms.openlocfilehash: 5d2fa3a5d83f878009f4574c3468719c9af17014
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, 디자인, 앱 패턴, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens
+ms.openlocfilehash: 17ae6b2ec8d9c67d2b6f0114535fc25c1cb487b2
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685993"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703219"
 ---
-# <a name="types-of-mixed-reality-apps"></a>혼합 현실 앱의 종류
+# <a name="types-of-mixed-reality-apps"></a>혼합 현실 앱 유형
 
 Windows Mixed Reality용 앱 개발의 장점 중 하나는 플랫폼에서 지원할 수 있는 다양한 환경이 있다는 것입니다. Windows Mixed Reality는 완전 몰입형 가상 환경에서 사용자의 현재 환경에 대한 경량 정보 계층화까지 모든 환경에 생동감을 주는 강력한 도구 세트를 제공합니다. 앱 작성자는 이러한 스펙트럼의 경험에 따라 개발 프로세스 초기에를 파악 하는 것이 중요 합니다. 이러한 결정은 궁극적으로 앱 디자인 구성을 및 개발에 대 한 기술 경로에 영향을 줍니다.
 

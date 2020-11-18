@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: HoloLens (첫 번째 gen), HoloLens 2, 혼합 현실, 커서, 대상 지정, 응시, 제스처
-ms.openlocfilehash: 6fb5f335e192ce7664eab0099dc5d6aa6ed2420d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens (첫 번째 gen), HoloLens 2, 혼합 현실, 커서, 대상 지정, 응시, 제스처, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 광선, 입력
+ms.openlocfilehash: db895c7aad177d7ddd2eb371392812b1d7e4d039
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686113"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702649"
 ---
 # <a name="cursors"></a>커서
 
@@ -136,7 +136,7 @@ ms.locfileid: "91686113"
 * 커서를 사용 하 여 사용자의 입력 상태나 의도를 표시할 수 있습니다. 예를 들어 사용자에 게 시스템 상태를 확인 하 고 응용 프로그램에서 사용자에 게 조치를 취할 준비가 되었음을 알리는 아이콘을 표시할 수 있습니다.
 * 또한 일시적 색을 통해 시스템에서 음성 명령을 파일과 사용자를 표시 하는 데 커서를 사용할 수 있습니다.
 
-* 다음 커서 상태를 다양 한 방법으로 구현할 수 있습니다. 상태 시스템 처럼 커서를 모델링 하 여 이러한 다양 한 상태를 구현할 수 있습니다. 예를 들면 다음과 같습니다.
+* 다음 커서 상태를 다양 한 방법으로 구현할 수 있습니다. 상태 시스템 처럼 커서를 모델링 하 여 이러한 다양 한 상태를 구현할 수 있습니다. 다음은 그 예입니다.
     * 유휴 상태는 기본 커서를 표시 하는 위치입니다.
     * 준비 상태는 준비 위치에서 사용자의 손을 검색 한 경우입니다.
     * 상호 작용 상태는 사용자가 특정 상호 작용을 수행 하는 경우입니다.

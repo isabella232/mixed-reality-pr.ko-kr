@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 3D, 모델링, 모델링 지침, 자산 요구 사항, 제작 지침, 시작 관리자, 3D 시작 관리자, 질감, 재질, 복잡도, 삼각형, 메시, 다각형, polycount, 제한
-ms.openlocfilehash: 606726b9c205ccdf3eacafca96b2bd9ccae43e82
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: 3D, 모델링, 모델링 지침, 자산 요구 사항, 제작 지침, 시작 관리자, 3D 시작 관리자, 질감, 재질, 복잡도, 삼각형, 메시, 다각형, polycount, 제한, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: fb2f2718497781a2d38a0a061016e146ff077488
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781553"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703469"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>집에서 사용할 3D 모델 만들기
 
@@ -60,7 +60,7 @@ Windows Mixed Reality 홈에서는 1만 삼각형이 넘는 모델을 지원 하
 ### <a name="node-counts-and-submesh-limits"></a>노드 개수 및 하위 메시에 대해 제한
 Windows Mixed Reality 홈에서는 64 개 이상의 노드가 있는 모델이 나 LOD 당 32 submeshes을 지원 하지 않습니다. 노드는 장면에서 개체를 [정의 하는 개념입니다.](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy) Submeshes는 개체에서 망상의 [기본 형식](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes) 배열에 정의 되어 있습니다. 
 
-|  기능 |  설명:  |  최대 지원 | 설명서 |
+|  기능 |  Description  |  최대 지원 | 설명서 |
 |------|------|------|------|
 |  노드 |  개체의 개체 |  LOD 당 64 | [여기](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy)|
 |  Submeshes |  모든 망상의 기본 형식 합계 |  LOD 당 32 | [여기](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes)|
@@ -268,7 +268,7 @@ Windows MR은 기본 모드 선 및 요소를 지원 하지 않습니다.
 
 단일 UV vertex 특성만 지원 됩니다.
 
-## <a name="additional-resources"></a>추가 리소스
+## <a name="additional-resources"></a>추가 자료
 * [글 내보내기 및 변환기](https://github.com/KhronosGroup/glTF#converters-and-exporters)
 * [글 Tf Toolkit](https://github.com/Microsoft/glTF-Toolkit)
 * [글 Tf 2.0 사양](https://github.com/KhronosGroup/glTF/blob/master/README.md)

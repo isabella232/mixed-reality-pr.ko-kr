@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: 좌표계, 공간 좌표계, 방향 전용, 고정 크기 조정, 대규모, 공간 규모, 전 세계 규모, 360도, 배치 됨, 고정, 회의실, 전, 눈금, 위치, 방향, 고정, 연결 됨, 스테이지, 앵커, 공간 앵커, 전 세계 잠김, 전 세계 잠금, 본문-잠김, 본문 잠금, 경계, 지 속성, 공유, 손실 추적, 클라우드 공간 앵커
-ms.openlocfilehash: bf7641d13302620a32aac260332c3be694ea324b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 좌표계, 공간 좌표계, 방향 전용, 고정 규모, 대규모, 실내 규모, 전 세계 규모, 360 수준, 연결 됨, 순위, 방, 세계, 크기 조정, 위치, 방향, 고정, 연결 됨, 스테이지, 앵커, 공간 고정, 전 세계 잠금, 전 세계 잠금, 지역에서 잠김, 본문-잠금, 경계, 지 속성, 공유, 손실 추적, 클라우드 공간 앵커, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실
+ms.openlocfilehash: afffffae5d23309b2ab9124b9f74b7818fd4adf6
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686161"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702539"
 ---
 # <a name="coordinate-systems"></a>좌표계
 
@@ -96,7 +96,7 @@ ms.locfileid: "91686161"
 |  **예** |  아니요 |  - |  - |  - |  **끼운** | 
 |  **예** |  **예** |  아니요 |  - |  - |  **이후** | 
 |  **예** |  **예** |  **예** |  아니요 |  - |  **서-360 °** | 
-|  **예** |  **예** |  **예** |  **예** |  아니요 |  **대화방** | 
+|  **예** |  **예** |  **예** |  **예** |  아니요 |  **공간** | 
 |  **예** |  **예** |  **예** |  **예** |  **예** |  **World** | 
 
 참조의 스테이지 프레임은 HoloLens에서 아직 지원 되지 않습니다. HoloLens의 공간 규모 앱은 현재 사용자의 바닥 및 벽을 찾기 위해 [공간 매핑](spatial-mapping.md) 또는 [장면 이해](scene-understanding.md) 를 사용 해야 합니다.

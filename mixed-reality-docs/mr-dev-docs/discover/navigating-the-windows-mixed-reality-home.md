@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 셸, os, 플랫폼, 절벽 집, 집, 홈, 환경, 시작, 시작 메뉴, 홈 메뉴, pin, 앱, 앱 시작, 앱 배치, 텔레포트, 이동, 탐색
-ms.openlocfilehash: 1f2ec91edca100e9253a6c8e65f4b3f9d2b2feeb
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 셸, os, 플랫폼, 절벽 집, 집, 홈, 환경, 시작, 시작 메뉴, 홈 메뉴, 핀, 앱, 앱 시작, 앱 배치, 텔레포트, 이동, 탐색, 혼합 현실 헤드셋, 가상 현실 헤드셋, 가상 현실 이란?
+ms.openlocfilehash: 590e52de7caacc515e703da19e9efdc0a2b9c535
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687584"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703449"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Windows Mixed Reality 홈 탐색
 
@@ -52,7 +52,7 @@ Windows PC 환경이 바탕 화면에서 시작 하는 것 처럼 Windows Mixed 
 
 ![저장소 슬레이트는 조정 모드 (파란색 프레임)입니다. 참고 앱 바 (위쪽)가 ' 완료 ' 및 ' 제거 ' 단추를 포함 하도록 변경 되었습니다.](images/adjust-500px.png)
 
-앱 바에 다른 앱이 추가 옵션이 있을 수 있습니다. 예를 들어 Microsoft Edge는 *스크롤* , *끌기* 및 *확대/축소* 를 선택 합니다. 
+앱 바에 다른 앱이 추가 옵션이 있을 수 있습니다. 예를 들어 Microsoft Edge는 *스크롤*, *끌기* 및 *확대/축소* 를 선택 합니다. 
 
 ![HoloLens에서 실행 되는 2D 앱에 대 한 앱 바](images/holobar-500px.png)
 

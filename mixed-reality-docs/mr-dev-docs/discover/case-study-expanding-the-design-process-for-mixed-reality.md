@@ -5,13 +5,13 @@ author: danielescudero
 ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
-keywords: Windows Mixed Reality, 디자인, 프로세스, 사례 연구
-ms.openlocfilehash: 4cde36c8b5c3914c63e0c588e76dc4b782dcdcb9
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Windows Mixed Reality, 디자인, 프로세스, 사례 연구, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실 정의, 확대 된 현실, bodystorming, storyboard, 피드백
+ms.openlocfilehash: 5f1cc6efd7d1fa8dda043575562bfaf94ea812a9
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631511"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702209"
 ---
 # <a name="thinking-differently-for-mixed-reality"></a>혼합 현실에 대해 다르게 생각
 Microsoft에서 2016의 신속한 개발자를 대상으로 하는 HoloLens (첫 번째 gen)를 시작 하는 경우 팀은 이미 Microsoft 내부 및 외부에서 스튜디오와 제휴 하 여 장치의 시작 환경을 구축 했습니다. 이러한 팀은 혼합 현실 디자인의 새로운 분야에서 기회와 과제를 모두 수행하고 찾아냄으로써 학습했습니다.

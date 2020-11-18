@@ -5,15 +5,15 @@ author: mavitazk
 ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, 디자인, 색, 조명, 재질
-ms.openlocfilehash: 76237b1b08df98850a4989987ed608dae29b6b5c
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: Windows Mixed Reality, 디자인, 색, 조명, 자료, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 9333be5316f5b3ba317aac3ef8591c0dd65370d4
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683219"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702789"
 ---
-# <a name="color-light-and-materials"></a>색, 광원 및 재질
+# <a name="color-light-and-materials"></a>색, 조명 및 재질
 ![색, 광원 및 재질](images/RemoteRendering.jpg)
 
 혼합 현실용 콘텐츠를 디자인하려면 환경에서 사용되는 시각적 자산 각각에 대한 색, 조명 및 재질을 신중하게 고려해야 합니다. 이러한 결정은 가볍고 자료를 사용 하 여 몰입 형 환경의 톤을 설정 하는 것과 같이 미적 목적을 위한 것 이며, 인상적인 색을 사용 하 여 사용자에 게 임박한 작업을 경고할 수 있습니다. 이러한 각 결정은 사용자 환경의 대상 장치에 대 한 기회 및 제약 조건과 비교 하 여 평가 해야 합니다.
@@ -96,7 +96,7 @@ Holographic에 대 한 콘텐츠를 디자인할 때 최상의 환경을 달성 
 
 ---
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [Holographic 디스플레이용 콘텐츠 디자인](designing-content-for-holographic-display.md)
 * [색 구분](../develop/platform-capabilities-and-apis/hologram-stability.md#color-separation)
 * [홀로그램](../discover/hologram.md)

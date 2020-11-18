@@ -1,19 +1,19 @@
 ---
-title: 응시 및 지속
+title: 응시 및 유지
 description: (눈/헤드) 응시 및 지속 입력 모델의 일반적인 개요
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
-keywords: 혼합 현실, 응시, 지속, 상호 작용, 디자인, 눈 추적, head 추적
-ms.openlocfilehash: ee8b6487079a071fe84606949314f2dd315df45f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 혼합 현실, 응시, 지속, 상호 작용, 디자인, 눈 추적, 헤드 추적, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: d47401b65f7d62e1fe59655c42efe72ac68acfc6
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686977"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702199"
 ---
-# <a name="gaze-and-dwell"></a>응시 및 지속
+# <a name="gaze-and-dwell"></a>응시 및 유지
 
 손에 도구와 파트가 있으면 제스처가 어렵거나 불가능할 수 있습니다.
 예를 들어 과도 하 게 큰 조건에서 음성 명령은 특정 컨텍스트에서 안정적이 아닐 수도 있습니다.

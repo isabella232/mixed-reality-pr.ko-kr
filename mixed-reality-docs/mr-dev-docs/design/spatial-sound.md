@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/07/2019
 ms.topic: article
-keywords: 공간 음향, 서라운드 사운드, 3d 오디오, 3d 소리, 공간 오디오
-ms.openlocfilehash: fb3517307dccd7e41c39c012c69f1e1d141fa218
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 공간 사운드, 서라운드 사운드, 3d 오디오, 3d 사운드, 공간 오디오, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 사례 연구, acoustics
+ms.openlocfilehash: 50a5b4a634eec5a326158975f70fa385ce7af6a8
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686056"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703259"
 ---
 # <a name="audio-in-mixed-reality"></a>혼합 현실에서 오디오
 오디오는 혼합 현실에서 디자인 및 생산성의 필수적인 부분입니다. 사운드는 다음과 같습니다.

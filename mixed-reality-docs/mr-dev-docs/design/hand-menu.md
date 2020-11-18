@@ -5,13 +5,13 @@ author: nbarragan23
 ms.author: nobarr
 ms.date: 08/27/2019
 ms.topic: article
-keywords: 손, 메뉴, 단추, 빠른 액세스, 레이아웃
-ms.openlocfilehash: f7bf8ab2fb54e6a939bd538a0a0ba756c5efb916
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 손, 메뉴, 단추, 빠른 액세스, 레이아웃, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 8f9adbdbebb826a79db037f48b233e3bc5e049de
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686928"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702299"
 ---
 # <a name="hand-menu"></a>손 메뉴
 
@@ -117,7 +117,7 @@ Arm을 발생 시키고 위치를 유지 하면 arm 피로이 쉽게 발생할 �
 ---
 
 ## <a name="menu-positions-that-are-not-recommended"></a>권장 되지 않는 메뉴 위치
-다른 메뉴 레이아웃 및 위치를 사용 하 여 사용자 연구를 완료 했습니다. 다음 메뉴 위치를 사용 **하지 않는 것이 좋습니다** . 아래 각 연구의 단점을 찾으십시오.
+다른 메뉴 레이아웃 및 위치를 사용 하 여 사용자 연구를 완료 했습니다. 다음 메뉴 위치를 사용 **하지 않는 것이 좋습니다**. 아래 각 연구의 단점을 찾으십시오.
 
 
 :::row:::

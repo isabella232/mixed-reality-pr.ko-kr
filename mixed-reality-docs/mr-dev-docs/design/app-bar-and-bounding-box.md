@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
-keywords: Windows Mixed Reality, 앱 바, 경계 상자
-ms.openlocfilehash: 381efae8c831fda2152eb96cf762bf4f94c34c57
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, 앱 바, 경계 상자, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: f718babfa07c69b6579fbd78f306a10f0ed6aad5
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685345"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703059"
 ---
 # <a name="bounding-box-and-app-bar"></a>경계 상자 및 앱 바
 ![경계는 혼합 현실에서 개체 조작을 위한 표준 인터페이스입니다.](images/UX_Hero_BoundingBox.jpg)<br>

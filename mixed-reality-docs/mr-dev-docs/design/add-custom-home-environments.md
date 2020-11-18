@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
-keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 홈, 사용자 지정 환경, 장소, 절벽 집, skyloft, 사용자, 만들기
-ms.openlocfilehash: 69fac9fcc0b3d7f199f4277c5d1b5a0c7df5f8c2
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 홈, 사용자 지정 환경, 장소, 절벽 집, skyloft, 사용자, 만들기, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 3b5862c6ba4ec1a0549b751cf2982247b6501201
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781530"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703019"
 ---
 # <a name="design-your-own-immersive-environments"></a>사용자 고유의 몰입형 환경 디자인
 
@@ -96,12 +96,12 @@ Windows Mixed Reality는 환경의 로드 시간을 크게 줄일 수 있는 다
 
 변환기는 현재 최적화의 정확한 동작을 조정 하기 위해 여러 플래그를 지원 합니다. 최상의 결과를 위해 다음 플래그를 사용 하 여를 실행 하는 것이 좋습니다.
 
-플래그|권장 값|설명:
+플래그|권장 값|Description
 ---|---|---
 -최대 질감-크기|1024 또는 2048| 이를 조정 하 여 질감의 품질을 향상 시킵니다. 기본값은 512x512입니다. 값이 클수록 환경의 파일 크기에 크게 영향을 주므로 256 mb 제한을 염두에 두십시오.
 -최소 버전|1803|사용자 지정 환경은 windows >= 1803 버전 에서만 지원 됩니다. 이 플래그는 이전 버전의 질감을 제거 하 고 최종 자산의 파일 크기를 줄입니다.
 
-예를 들면 다음과 같습니다.
+다음은 그 예입니다.
 
 ```cmd
 WindowsMRAssetConverter FileToConvert.gltf -max-texture-size 1024 -min-version 1803

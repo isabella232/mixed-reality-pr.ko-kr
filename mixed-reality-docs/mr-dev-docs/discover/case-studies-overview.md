@@ -5,13 +5,13 @@ author: grbury
 ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
-keywords: Windows Mixed Reality, HoloLens, 사례 연구, 비전, 시나리오
-ms.openlocfilehash: 78ece9c010ed402c6281ee2f9cd5638db9af4f3d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, HoloLens, 사례 연구, 비전, 시나리오, 사례 연구, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: b30cc49759867b4f11f3f88195c8d9bec87ba297
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686321"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703489"
 ---
 # <a name="case-study-gallery"></a>사례 연구 갤러리
 

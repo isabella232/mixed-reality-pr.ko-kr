@@ -5,13 +5,13 @@ author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
-keywords: Windows Mixed Reality, 디자인, 손 coach, 몰입 형 헤드셋, MRTK, 실습, 실습 지원
-ms.openlocfilehash: 10e5f3b025e4346d7c4075c2de7252c9ab217c93
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: Windows Mixed Reality, 디자인, 수동 coach, 몰입 형 헤드셋, MRTK, 실습, 수동 지원, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: d925f28b1d34b5a157e89fc0ea56a7b28fffbe8f
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683249"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702349"
 ---
 # <a name="hand-coach"></a>핸드 코치
 ![예: 손 coach](images/HandCoach/MRTK_handCoach.jpg)<br>
@@ -84,7 +84,7 @@ UI 메뉴를 사용 하 여 다양 한 손 크기를 테스트 하 고 실제로
 
 ## <a name="can-i-create-my-own"></a>직접 만들 수 있나요?
 
-예. 게임에 고유한 제스처를 만들어 커뮤니티에 다시 참가 하는 것이 좋습니다.
+예! 게임에 고유한 제스처를 만들어 커뮤니티에 다시 참가 하는 것이 좋습니다.
 다운로드 가능한 앱에 사용할 수 있는 Rigged 손의 Maya 파일을 제공 합니다. <a href="files/HandCoach_MRTK.zip"> 다운로드 HandCoach_MRTK.zip </a>
 
 ![Maya의 애니메이션 실습 예](images/HandCoach/MayaSelect_Gif.gif)<br>
@@ -170,7 +170,7 @@ UI 메뉴를 사용 하 여 다양 한 손 크기를 테스트 하 고 실제로
     *   프로젝트별 설정
         *   UWP로 설정 된 장면: Windows Mixed Reality의 [Unity 구성 프로젝트](../develop/unity/Configure-Unity-Project.md) 에서 지침을 찾을 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [상호 작용-기본 사항](interaction-fundamentals.md)
 * [자산 생성 프로세스](asset-creation-process.md)
 * [제스처](../gestures.md)

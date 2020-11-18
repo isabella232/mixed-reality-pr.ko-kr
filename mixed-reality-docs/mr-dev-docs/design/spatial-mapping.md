@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 공간 매핑, HoloLens, 혼합 현실, 표면 재구성, 메시
-ms.openlocfilehash: 6ca545327e412eaba5ee79959dfa9d01380b18c6
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: 공간 매핑, HoloLens, 혼합 현실, 표면 재구성, 메시, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 장면 이해, 세계 메시, 폐색, 물리, 탐색, 표면 관찰자, 렌더링, 메시 처리
+ms.openlocfilehash: 448c64a6c19ee96d58be9a14f7ea4c34a755695e
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340671"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703319"
 ---
 # <a name="spatial-mapping"></a>공간 매핑
 
@@ -369,14 +369,7 @@ Surface 관찰자가 제공 하는 coarsest 삼각형 밀도가 아직 불충분
 * 표면 메시를 올바르게 지향 하려면 각 GameObject가 활성 상태 여야 메시를 생성 하기 위해 SurfaceObserver에 전송 해야 합니다. 그렇지 않으면 메시는 공간에 표시 되지만 이상한 각도로 회전 됩니다.
 * SurfaceObserver와 통신 하는 스크립트를 실행 하는 GameObject를 원본으로 설정 해야 합니다. 그렇지 않으면 사용자가 만들고 SurfaceObserver에 전송 하 여 메시를 생성 하는 모든 Gameobject 부모 게임 개체의 오프셋과 동일한 오프셋을 갖게 됩니다. 이렇게 하면 메시를 몇 미터 크게 표시 하 여 진행 상황을 디버그 하기가 매우 어려울 수 있습니다.
 
-## <a name="next-discovery-checkpoint"></a>다음 검색 검사점
-
-앞에서 설명한 [검색](../discover/get-started-with-mr.md) 경험을 팔로 하는 경우 혼합 현실의 기본 사항을 탐색 하는 것이 좋습니다. 여기에서 다음 기본 항목을 진행할 수 있습니다. 
-
-> [!div class="nextstepaction"]
-> [개체 크기 조정 제안 - (크기 조정)](../design/scale.md)
-
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [좌표계](coordinate-systems.md)
 * [DirectX의 공간 매핑](../develop/native/spatial-mapping-in-directx.md)
 * [Unity의 공간 매핑](../develop/unity/spatial-mapping-in-unity.md)

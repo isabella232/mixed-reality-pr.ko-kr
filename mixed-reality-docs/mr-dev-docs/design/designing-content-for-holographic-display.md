@@ -1,19 +1,19 @@
 ---
-title: Holographic 디스플레이의 콘텐츠 디자인
+title: Holographic 디스플레이용 콘텐츠 디자인
 description: Holographic 표시에 대 한 디자인 지침 및 모범 사례
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
-keywords: UI 디자인, holographic 표시, 콘텐츠 디자인, 어두운 테마, 밝은 테마
-ms.openlocfilehash: 627ffdd0a413ad3140c29e9b1c7bb69c9dc249cf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: UI 디자인, holographic 표시, 콘텐츠 디자인, 어두운 테마, 밝은 테마, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 디자인, 픽셀
+ms.openlocfilehash: ea3fbda7aff80f0878521deb433c88b16abeab19
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686112"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702639"
 ---
-# <a name="designing-content-for-holographic-display"></a>Holographic 디스플레이의 콘텐츠 디자인
+# <a name="designing-content-for-holographic-display"></a>Holographic 디스플레이용 콘텐츠 디자인
 
 ![Ulnar 사이드 위치](images/UX_Hero_DarkTheme.jpg)
 
