@@ -5,14 +5,14 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 10/02/2020
 ms.topic: article
-keywords: 앱, uwp, 제출, 제출, 필터, 메타 데이터, 시스템 요구 사항, 키워드, wack, 인증, 패키지, appx, 머천다이징
-ms.openlocfilehash: 99e1e7833e647761057195c71e266bdfdd0bee41
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: 앱, uwp, 제출, 제출, 필터, 메타 데이터, 시스템 요구 사항, 키워드, wack, 인증, 패키지, appx, 머천다이징, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 08c3a7e22ceb1836ae792674d5510ea3626883ec
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638520"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703089"
 ---
-# <a name="distribution-overview"></a><span data-ttu-id="db861-104">배포 개요</span><span class="sxs-lookup"><span data-stu-id="db861-104">Distribution overview</span></span>
+# <a name="distribution-overview"></a><span data-ttu-id="70202-104">배포 개요</span><span class="sxs-lookup"><span data-stu-id="70202-104">Distribution overview</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="db861-105">참고 항목</span><span class="sxs-lookup"><span data-stu-id="db861-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="70202-105">참조</span><span class="sxs-lookup"><span data-stu-id="70202-105">See also</span></span>

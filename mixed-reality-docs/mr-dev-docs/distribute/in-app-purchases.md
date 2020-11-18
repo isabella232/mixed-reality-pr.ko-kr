@@ -5,23 +5,23 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 앱에서 바로 구매, hololens
-ms.openlocfilehash: 7174fe555322216b7e547055aaaf7879c01d8f23
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 앱에서 바로 구매, hololens, XAML, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 07601ab4961e14ff43dbc149f7d8cb5731d24013
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684848"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703179"
 ---
-# <a name="in-app-purchases"></a><span data-ttu-id="c1a01-104">앱에서 바로 구매</span><span class="sxs-lookup"><span data-stu-id="c1a01-104">In-app purchases</span></span>
+# <a name="in-app-purchases"></a><span data-ttu-id="618b2-104">앱에서 바로 구매</span><span class="sxs-lookup"><span data-stu-id="618b2-104">In-app purchases</span></span>
 
-<span data-ttu-id="c1a01-105">앱 내 구매는 HoloLens에서 지원 되지만 몇 가지 작업을 설정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c1a01-105">In-app purchases are supported in HoloLens, but there is some work to set them up.</span></span>
+<span data-ttu-id="618b2-105">앱 내 구매는 HoloLens에서 지원 되지만 몇 가지 작업을 설정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="618b2-105">In-app purchases are supported in HoloLens, but there is some work to set them up.</span></span>
 
-<span data-ttu-id="c1a01-106">앱 구매 기능에서을 활용 하려면 다음을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c1a01-106">In order to leverage the in app-purchase functionality, you must:</span></span>
-* <span data-ttu-id="c1a01-107">슬레이트로 표시할 XAML [2d 뷰](../design/app-views.md) 만들기</span><span class="sxs-lookup"><span data-stu-id="c1a01-107">Create a XAML [2D view](../design/app-views.md) to appear as a slate</span></span>
-* <span data-ttu-id="c1a01-108">이로 전환 하 여 배치를 활성화 하면 몰입 형 보기가 남습니다.</span><span class="sxs-lookup"><span data-stu-id="c1a01-108">Switch to it to activate placement, which leaves the immersive view</span></span>
-* <span data-ttu-id="c1a01-109">API: wait [Currentapp. RequestProductPurchaseAsync ("DurableItemIAPName");](https://docs.microsoft.com/uwp/api/windows.applicationmodel.store.currentapp#Windows_ApplicationModel_Store_CurrentApp_RequestProductPurchaseAsync_System_String_) 를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="c1a01-109">Call the API: await [CurrentApp.RequestProductPurchaseAsync("DurableItemIAPName");](https://docs.microsoft.com/uwp/api/windows.applicationmodel.store.currentapp#Windows_ApplicationModel_Store_CurrentApp_RequestProductPurchaseAsync_System_String_)</span></span>
+<span data-ttu-id="618b2-106">앱 구매 기능에서을 활용 하려면 다음을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="618b2-106">In order to leverage the in app-purchase functionality, you must:</span></span>
+* <span data-ttu-id="618b2-107">슬레이트로 표시할 XAML [2d 뷰](../design/app-views.md) 만들기</span><span class="sxs-lookup"><span data-stu-id="618b2-107">Create a XAML [2D view](../design/app-views.md) to appear as a slate</span></span>
+* <span data-ttu-id="618b2-108">이로 전환 하 여 배치를 활성화 하면 몰입 형 보기가 남습니다.</span><span class="sxs-lookup"><span data-stu-id="618b2-108">Switch to it to activate placement, which leaves the immersive view</span></span>
+* <span data-ttu-id="618b2-109">API: wait [Currentapp. RequestProductPurchaseAsync ("DurableItemIAPName");](https://docs.microsoft.com/uwp/api/windows.applicationmodel.store.currentapp#Windows_ApplicationModel_Store_CurrentApp_RequestProductPurchaseAsync_System_String_) 를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="618b2-109">Call the API: await [CurrentApp.RequestProductPurchaseAsync("DurableItemIAPName");](https://docs.microsoft.com/uwp/api/windows.applicationmodel.store.currentapp#Windows_ApplicationModel_Store_CurrentApp_RequestProductPurchaseAsync_System_String_)</span></span>
 
-<span data-ttu-id="c1a01-110">이 API는 앱 내 구매 이름, 설명 및 가격을 표시 하는 stock Windows OS 팝업을 표시 합니다.</span><span class="sxs-lookup"><span data-stu-id="c1a01-110">This API will bring up the stock Windows OS popup that shows the in-app purchase name, description, and price.</span></span> <span data-ttu-id="c1a01-111">그러면 사용자가 구매 옵션을 선택할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c1a01-111">The user can then choose purchase options.</span></span> <span data-ttu-id="c1a01-112">작업이 완료 되 면 앱은 사용자가 [몰입 형 보기로](../design/app-views.md)다시 전환할 수 있도록 UI를 제공 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c1a01-112">Once the action is completed, the app will need to present UI which allows the user to switch back to its [immersive view](../design/app-views.md).</span></span>
+<span data-ttu-id="618b2-110">이 API는 앱 내 구매 이름, 설명 및 가격을 표시 하는 stock Windows OS 팝업을 표시 합니다.</span><span class="sxs-lookup"><span data-stu-id="618b2-110">This API will bring up the stock Windows OS popup that shows the in-app purchase name, description, and price.</span></span> <span data-ttu-id="618b2-111">그러면 사용자가 구매 옵션을 선택할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="618b2-111">The user can then choose purchase options.</span></span> <span data-ttu-id="618b2-112">작업이 완료 되 면 앱은 사용자가 [몰입 형 보기로](../design/app-views.md)다시 전환할 수 있도록 UI를 제공 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="618b2-112">Once the action is completed, the app will need to present UI which allows the user to switch back to its [immersive view](../design/app-views.md).</span></span>
 
-<span data-ttu-id="c1a01-113">데스크톱 기반 Windows Mixed Reality 모던 헤드셋을 대상으로 하는 앱의 경우 RequestProductPurchaseAsync API를 호출 하기 전에 XAML 뷰로 수동으로 전환할 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="c1a01-113">For apps targeting desktop-based Windows Mixed Reality immersive headsets, it is not required to manually switch to a XAML view before calling the RequestProductPurchaseAsync API.</span></span>
+<span data-ttu-id="618b2-113">데스크톱 기반 Windows Mixed Reality 모던 헤드셋을 대상으로 하는 앱의 경우 RequestProductPurchaseAsync API를 호출 하기 전에 XAML 뷰로 수동으로 전환할 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="618b2-113">For apps targeting desktop-based Windows Mixed Reality immersive headsets, it is not required to manually switch to a XAML view before calling the RequestProductPurchaseAsync API.</span></span>
