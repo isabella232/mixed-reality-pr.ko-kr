@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 검색, 배포, 인덱스, 방문 페이지, 디자인, 개발, 자습서, 샘플 앱, 기본 사항, 사례 연구, 리소스, HoloLens 방법, 오픈 소스 프로젝트, 핵심 개념, 상호 작용
-ms.openlocfilehash: 2ee127b05a8ad88e49eda6d088f84e895aeaf511
-ms.sourcegitcommit: 4e618948e1e2e0baf4bb3e8b67513fa7716aa815
+ms.openlocfilehash: 19a83a132cca08573f1066a2f7b87bd383ca79f4
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94361723"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573277"
 ---
 # <a name="start-designing-and-prototyping"></a>디자인 및 프로토타입 생성 시작
 
@@ -35,7 +35,7 @@ Mixed Reality 애플리케이션은 오늘날 전 세계의 다른 애플리케�
 | [디자인 프로세스 확장](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Microsoft 내부 및 외부의 디자이너로부터 수집한 Mixed Reality의 디자인 프로세스를 직접 살펴보세요. |
 | [Mixed Reality 앱 유형](types-of-mixed-reality-apps.md) | 앱 환경이 Mixed Reality 스펙트럼에서 라이브 상태가 되는 위치를 결정합니다. |
 | [Holograms 앱 디자인](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | 놀라운 HoloLens 앱을 만들기 위한 혼합 현실 동작, 팁 및 권장 사항을 자세히 살펴보고 직접 경험하면서 혼합 현실 UX 디자인의 기본 사항에 대해 알아봅니다(HoloLens 2의 Microsoft Store에서 다운로드 가능). |
-
+| [MRTK 예제 허브](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | 혼합 현실을 위한 공통 공간 상호 작용 및 UX 구성 요소를 경험할 수 있습니다(HoloLens 2의 Microsoft Store에서 다운로드할 수 있음). |
 ### <a name="2-core-concepts"></a>2. 핵심 개념
 
 VR 또는 AR용으로 개발하는지에 관계없이 유동적인 몰입형 환경을 설계하는 데 적용되는 몇 가지 핵심 개념이 있습니다. 사용자의 관점을 이해하고, 개체를 배치하며, 모든 사람이 편안하고 안전한지 확인하는 것이 이 과정의 가장 중요한 단계입니다. 이 섹션이 완료되면 상호 작용 디자인을 통해 수행할 수 있는 견고한 토대가 갖추어집니다.

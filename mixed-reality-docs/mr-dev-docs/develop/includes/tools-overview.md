@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: ad8f4a5ea9bda7915731f879da96cf7e007c58fb
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: cd6541dd651573f31ddc2e2a388be53394059c5f
+ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92755385"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94482421"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -48,11 +48,31 @@ Windows 10 SDK는 Windows 10 운영 체제에서 가장 잘 작동합니다. 또
 
 #### <a name="for-hololens-development"></a>HoloLens 개발
 
-HoloLens 개발을 위해 개발 PC를 설정할 때 <a href="https://unity3d.com/unity/system-requirements" target="_blank">Unity</a> 및 <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a> 둘 다에 대한 시스템 요구 사항을 충족하는지 확인합니다. [HoloLens 에뮬레이터](../platform-capabilities-and-apis/using-the-hololens-emulator.md)를 사용하려는 경우 PC가 [HoloLens 에뮬레이터 시스템 요구 사항](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements)도 충족하는지 확인하는 것이 좋습니다.
+HoloLens 개발을 위해 개발 PC를 설정할 때 <a href="https://unity3d.com/unity/system-requirements" target="_blank">Unity</a> 및 <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a> 둘 다에 대한 시스템 요구 사항을 충족하는지 확인합니다. HoloLens 디바이스에서 앱을 실행하려면 [Windows 장치 포털 설치 지침](../platform-capabilities-and-apis/using-the-windows-device-portal.md#setting-up-hololens-to-use-windows-device-portal)을 따라야 합니다. [HoloLens 에뮬레이터](../platform-capabilities-and-apis/using-the-hololens-emulator.md)를 사용하려는 경우 PC가 [HoloLens 에뮬레이터 시스템 요구 사항](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements)도 충족하는지 확인하는 것이 좋습니다.
 
 HoloLens 에뮬레이터를 시작하려면 [HoloLens 에뮬레이터 사용](../platform-capabilities-and-apis/using-the-hololens-emulator.md)을 참조하세요.
 
 HoloLens와 Windows Mixed Reality 몰입형(VR) 헤드셋용으로 개발을 수행하려는 경우 아래 섹션에 제공되는 시스템 권장 사항 및 요구 사항을 참조하세요.
+
+#### <a name="hololens-troubleshooting"></a>HoloLens 문제 해결
+
+##### <a name="setting-developer-mode-is-grayed-out"></a>개발자 모드 설정은 회색으로 표시됩니다.
+
+디바이스에서 개발자 모드를 사용하는 데 문제가 발생하면 [디바이스 소유자](https://docs.microsoft.com/hololens/security-adminless-os)가 아닐 수 있습니다. 다중 사용자 모드에서 디바이스를 먼저 사용하는 사용자가 디바이스 소유자입니다. 이후 사용자는 개발자 모드 또는 기타 구성 변경을 사용하는 데 필요한 권한이 없습니다. 하지만 [HoloLens 보안 설명서](https://docs.microsoft.com/hololens/security-adminless-os#device-owner)에 자세히 설명된 Autopilot 환경의 첫 번째 사용자가 디바이스 소유자가 아닐 수 있는 예외가 있습니다.
+
+가능한 솔루션은 다음과 같습니다.
+
+* 디바이스를 다른 사용자나 개발자에게 전달하기 전에 디바이스 소유자가 개발자 모드를 켜도록 합니다.
+* IT/MDM 관리자가 특정 디바이스 또는 개발자 디바이스 그룹에 대해 CSP [정책 ApplicationManagement/AllowDeveloperUnlock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)를 사용하도록 제안합니다. 
+    * 이 정책은 [프로비전 패키지](https://docs.microsoft.com/hololens/hololens-provisioning) 또는 [HoloLens 디바이스용 MDM](https://docs.microsoft.com/hololens/hololens-mdm-configure)을 통해 설정할 수 있습니다.
+* [ARC(Advanced Recovery Companion)](https://docs.microsoft.com/hololens/hololens-recovery) 사용
+
+> [!NOTE]
+> 디바이스 관리에 대한 자세한 내용은 **[HoloLens 디바이스 관리](https://docs.microsoft.com/hololens/hololens-csp-policy-overview)** 개요에서 확인할 수 있습니다.
+
+##### <a name="i-cant-deploy-over-usb"></a>USB를 통해 배포할 수 없습니다.
+
+USB를 통해 애플리케이션을 직접 배포할 수 없는 경우 위에 나열된 모든 설치 요구 사항을 충족했는지 확인하고 [단계별 자습서](../unity/tutorials/mr-learning-base-02.md#building-your-application-to-your-hololens-2)를 따르세요.
 
 #### <a name="immersive-vr-headset-requirements"></a>몰입형 (VR) 헤드셋 요구 사항
 
@@ -145,9 +165,29 @@ Windows 10 SDK는 Windows 10 운영 체제에서 가장 잘 작동합니다. 또
 
 #### <a name="for-hololens-development"></a>HoloLens 개발
 
-HoloLens 개발을 위해 개발 PC를 설정할 때 [Unreal](https://docs.unrealengine.com/GettingStarted/RecommendedSpecifications/index.html) 및 <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>의 시스템 요구 사항을 충족하는지 확인해야 합니다. [HoloLens 에뮬레이터](../platform-capabilities-and-apis/using-the-hololens-emulator.md)를 사용하려는 경우 PC가 [HoloLens 에뮬레이터 시스템 요구 사항](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements)도 충족하는지 확인하는 것이 좋습니다.
+HoloLens 개발을 위해 개발 PC를 설정할 때 [Unreal](https://docs.unrealengine.com/GettingStarted/RecommendedSpecifications/index.html) 및 <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>의 시스템 요구 사항을 충족하는지 확인해야 합니다. HoloLens 디바이스에서 앱을 실행하려면 [Windows 장치 포털 설치 지침](../platform-capabilities-and-apis/using-the-windows-device-portal.md#setting-up-hololens-to-use-windows-device-portal)을 따라야 합니다. [HoloLens 에뮬레이터](../platform-capabilities-and-apis/using-the-hololens-emulator.md)를 사용하려는 경우 PC가 [HoloLens 에뮬레이터 시스템 요구 사항](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements)도 충족하는지 확인하는 것이 좋습니다.
 
 HoloLens와 Windows Mixed Reality 몰입형(VR) 헤드셋용으로 개발을 수행하려는 경우 아래 섹션에 제공되는 시스템 권장 사항 및 요구 사항을 참조하세요.
+
+#### <a name="hololens-troubleshooting"></a>HoloLens 문제 해결
+
+##### <a name="setting-developer-mode-is-grayed-out"></a>개발자 모드 설정은 회색으로 표시됩니다.
+
+디바이스에서 개발자 모드를 사용하는 데 문제가 발생하면 [디바이스 소유자](https://docs.microsoft.com/hololens/security-adminless-os)가 아닐 수 있습니다. 다중 사용자 모드에서 디바이스를 먼저 사용하는 사용자가 디바이스 소유자입니다. 이후 사용자는 개발자 모드 또는 기타 구성 변경을 사용하는 데 필요한 권한이 없습니다. 하지만 [HoloLens 보안 설명서](https://docs.microsoft.com/hololens/security-adminless-os#device-owner)에 자세히 설명된 Autopilot 환경의 첫 번째 사용자가 디바이스 소유자가 아닐 수 있는 예외가 있습니다.
+
+가능한 솔루션은 다음과 같습니다.
+
+* 디바이스를 다른 사용자나 개발자에게 전달하기 전에 디바이스 소유자가 개발자 모드를 켜도록 합니다.
+* IT/MDM 관리자가 특정 디바이스 또는 개발자 디바이스 그룹에 대해 CSP [정책 ApplicationManagement/AllowDeveloperUnlock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)를 사용하도록 제안합니다. 
+    * 이 정책은 [프로비전 패키지](https://docs.microsoft.com/hololens/hololens-provisioning) 또는 [HoloLens 디바이스용 MDM](https://docs.microsoft.com/hololens/hololens-mdm-configure)을 통해 설정할 수 있습니다.
+* [ARC(Advanced Recovery Companion)](https://docs.microsoft.com/hololens/hololens-recovery) 사용
+
+> [!NOTE]
+> 디바이스 관리에 대한 자세한 내용은 **[HoloLens 디바이스 관리](https://docs.microsoft.com/hololens/hololens-csp-policy-overview)** 개요에서 확인할 수 있습니다.
+
+##### <a name="i-cant-deploy-over-usb"></a>USB를 통해 배포할 수 없습니다.
+
+USB를 통해 애플리케이션을 직접 배포할 수 없는 경우 위에 나열된 모든 설치 요구 사항을 충족했는지 확인하고 [단계별 자습서](../unreal/tutorials/unreal-uxt-ch6.md)를 따르세요.
 
 #### <a name="immersive-vr-headset-requirements"></a>몰입형 (VR) 헤드셋 요구 사항
 
@@ -215,12 +255,28 @@ Windows 10 SDK는 Windows 10 운영 체제에서 가장 잘 작동합니다. 또
 
 #### <a name="for-hololens-development"></a>HoloLens 개발
 
-HoloLens 개발을 위해 개발 PC를 설정할 때 <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>의 시스템 요구 사항을 충족하는지 확인해야 합니다. [HoloLens 에뮬레이터](../platform-capabilities-and-apis/using-the-hololens-emulator.md)를 사용하려는 경우 PC가 [HoloLens 에뮬레이터 시스템 요구 사항](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements)도 충족하는지 확인하는 것이 좋습니다.
+HoloLens 개발을 위해 개발 PC를 설정할 때 <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>의 시스템 요구 사항을 충족하는지 확인해야 합니다. HoloLens 디바이스에서 앱을 실행하려면 [Windows 장치 포털 설치 지침](../platform-capabilities-and-apis/using-the-windows-device-portal.md#setting-up-hololens-to-use-windows-device-portal)을 따라야 합니다. [HoloLens 에뮬레이터](../platform-capabilities-and-apis/using-the-hololens-emulator.md)를 사용하려는 경우 PC가 [HoloLens 에뮬레이터 시스템 요구 사항](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements)도 충족하는지 확인하는 것이 좋습니다.
 
 HoloLens와 Windows Mixed Reality 몰입형(VR) 헤드셋용으로 개발을 수행하려는 경우 아래 섹션에 제공되는 시스템 권장 사항 및 요구 사항을 참조하세요.
 
 > [!NOTE]
 > HoloLens, VR 몰입형 헤드셋 또는 둘 다를 위한 앱을 개발하고 배포할 수 있습니다. 필요에 따라 아래 요구 사항을 충족해야 합니다.
+
+#### <a name="hololens-troubleshooting"></a>HoloLens 문제 해결
+
+##### <a name="setting-developer-mode-is-grayed-out"></a>개발자 모드 설정은 회색으로 표시됩니다.
+
+디바이스에서 개발자 모드를 사용하는 데 문제가 발생하면 [디바이스 소유자](https://docs.microsoft.com/hololens/security-adminless-os)가 아닐 수 있습니다. 다중 사용자 모드에서 디바이스를 먼저 사용하는 사용자가 디바이스 소유자입니다. 이후 사용자는 개발자 모드 또는 기타 구성 변경을 사용하는 데 필요한 권한이 없습니다. 하지만 [HoloLens 보안 설명서](https://docs.microsoft.com/hololens/security-adminless-os#device-owner)에 자세히 설명된 Autopilot 환경의 첫 번째 사용자가 디바이스 소유자가 아닐 수 있는 예외가 있습니다.
+
+가능한 솔루션은 다음과 같습니다.
+
+* 디바이스를 다른 사용자나 개발자에게 전달하기 전에 디바이스 소유자가 개발자 모드를 켜도록 합니다.
+* IT/MDM 관리자가 특정 디바이스 또는 개발자 디바이스 그룹에 대해 CSP [정책 ApplicationManagement/AllowDeveloperUnlock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)를 사용하도록 제안합니다. 
+    * 이 정책은 [프로비전 패키지](https://docs.microsoft.com/hololens/hololens-provisioning) 또는 [HoloLens 디바이스용 MDM](https://docs.microsoft.com/hololens/hololens-mdm-configure)을 통해 설정할 수 있습니다.
+* [ARC(Advanced Recovery Companion)](https://docs.microsoft.com/hololens/hololens-recovery) 사용
+
+> [!NOTE]
+> 디바이스 관리에 대한 자세한 내용은 **[HoloLens 디바이스 관리](https://docs.microsoft.com/hololens/hololens-csp-policy-overview)** 개요에서 확인할 수 있습니다.
 
 #### <a name="immersive-vr-headset-requirements"></a>몰입형 (VR) 헤드셋 요구 사항
 

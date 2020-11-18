@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, Unity, 자습서, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 30ef793511285fe2fe52810912f6c5c06c8550dc
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: ded881290de0167b7ffe26fc86b573d9b9ebb0b6
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353461"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631501"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2. 홀로그램 원격 PC 애플리케이션 만들기
 
@@ -28,7 +28,7 @@ ms.locfileid: "93353461"
 
 이 섹션에서는 Wi-Fi 연결을 통해 실시간으로 PC에서 HoloLens 2 디바이스로 혼합 현실 환경을 스트리밍하는 프로젝트를 구성합니다.
 
-Project 창에서 **Assets** > **MRTK.Tutorials.PCHolograhicRemoting** > **Prefabs** 폴더로 이동하고, **HolographicRemoting** 프리팹을 클릭하여 장면으로 끕니다.
+Project 창에서 **Assets** > **MRTK.Tutorials.PCHolograhicRemoting** > **Prefabs** 폴더로 이동하고,**HolographicRemoting** 프리팹을 클릭하여 장면으로 끕니다.
 
 ![새로 추가한 HolographicRemoting 프리팹이 여전히 선택된 Unity](images/mrlearning-pc-holographic-remoting/Tutorial2-Section1-Step1-1.png)
 
@@ -40,6 +40,11 @@ Project 창에서 **Assets** > **MRTK.Tutorials.PCHolograhicRemoting** > **Prefa
 
 Unity 메뉴에서 편집 >프로젝트 설정을 차례로 선택하여 플레이어 설정 창을 엽니다.
 
+프로젝트 설정 창에서 **게시 설정** 을 확장하고 **기능** 섹션으로 스크롤하여 기존 기능 외에 아래 표시 기능 확인란을 선택합니다.
+
+* 인터넷 클라이언트 서버
+* 개인 네트워크 클라이언트 서버
+
 **XR 설정** 섹션에서 **WSA 홀로그램 원격 지원** 확인란을 선택하고 홀로그램 원격을 사용하도록 설정합니다.
 
 ![WSA 홀로그램 원격 지원이 사용되도록 설정된 Unity XR 설정 창](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step1-1.png)
@@ -48,7 +53,7 @@ Unity 메뉴에서 편집 >프로젝트 설정을 차례로 선택하여 플레�
 
 Unity 메뉴에서 파일 > 빌드 설정을 차례로 선택하여 빌드 설정 창을 엽니다.
 
-Build Settings(빌드 설정) 창에서 * *_Add Open Scenes_* _ 단추를 클릭하여 현재 장면을 Scenes(장면)에 추가합니다. Build(빌드) 목록에서 _*_Build 단추_*_ 를 클릭하여 Build Universal Windows Platform(유니버설 Windows 플랫폼 빌드) 창을 엽니다.
+Build Settings(빌드 설정) 창에서 **_Add Open Scenes_* _ 단추를 클릭하여 현재 장면을 Scenes(장면)에 추가합니다. Build(빌드) 목록에서 _*_Build 단추_*_ 를 클릭하여 Build Universal Windows Platform(유니버설 Windows 플랫폼 빌드) 창을 엽니다.
 
 ![장면이 추가된 Unity Build Settings 창](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-1.png)
 
@@ -81,7 +86,7 @@ PC 애플리케이션을 HoloLens 2에 연결하려면 아래 프로세스를 �
 
 ### <a name="1-install-the-remoting-player-application-on-hololens-2-device"></a>1. HoloLens 2 디바이스에 원격 플레이어 애플리케이션 설치
 
-HoloLens 2에서 스토어 앱을 방문하여 " **원격 플레이어** "를 검색합니다.
+HoloLens 2에서 스토어 앱을 방문하여 "**원격 플레이어**"를 검색합니다.
 * **원격 플레이어** 앱을 선택합니다.
 * **설치** 를 탭하여 앱을 다운로드하고 설치합니다.
 

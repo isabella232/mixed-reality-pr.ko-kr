@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, Unity, 자습서, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 2d3a826ba3bf8fdf1299038a7964278f0d57dbb7
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: f4530cb6519434f8eb74e5335fecbe82ac2cd2c2
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353541"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631531"
 ---
 # <a name="6-creating-user-interfaces"></a>6. 사용자 인터페이스 만들기
 
@@ -32,9 +32,9 @@ ms.locfileid: "93353541"
 
 [계층 구조] 창에서 마우스 오른쪽 단추로 **RoverExplorer** 개체를 클릭하고, **빈 항목 만들기** 를 선택하여 빈 개체를 RoverExplorer의 자식으로 추가하고, 개체 이름을 **Buttons** 로 지정하고, **변환** 구성 요소를 다음과 같이 구성합니다.
 
-* **위치** : X = -0.6, Y = 0.036, Z = -0.5
-* **회전** : X = 90, Y = 0, Z = 0
-* **배율** : X = 1, Y = 1, Z = 1
+* **위치**: X = -0.6, Y = 0.036, Z = -0.5
+* **회전**: X = 90, Y = 0, Z = 0
+* **배율**: X = 1, Y = 1, Z = 1
 
 ![새로 만든 Buttons 개체가 선택되고 배치된 Unity](images/mr-learning-base/base-06-section1-step1-1.png)
 
@@ -44,16 +44,16 @@ ms.locfileid: "93353541"
 
 [계층 구조] 창에서 **Buttons** 개체를 선택한 다음, [검사기] 창에서 **구성 요소 추가** 단추를 사용하여 **GridObjectCollection** 구성 요소를 추가하고 다음과 같이 구성합니다.
 
-* **정렬 유형** : 자식 순서
-* **레이아웃** : 수평
-* **셀 너비** : 0.2
-* **앵커** : 왼쪽 가운데
+* **정렬 유형**: 자식 순서
+* **레이아웃**: 수평
+* **셀 너비**: 0.2
+* **앵커**: 왼쪽 가운데
 
 그런 다음, **컬렉션 업데이트** 단추를 클릭하여 Buttons 개체의 자식 개체에 대한 위치를 업데이트합니다.
 
 ![GridObjectCollection 구성 요소가 추가, 구성 및 적용된 Unity Buttons 개체](images/mr-learning-base/base-06-section1-step1-3.png)
 
-[계층 구조] 창에서 단추 이름을 **Hints** , **Explode** 및 **Reset** 으로 지정합니다.
+[계층 구조] 창에서 단추 이름을 **Hints**, **Explode** 및 **Reset** 으로 지정합니다.
 
 각 단추에 대해 **SeeItSayItLabel** > **TextMeshPro** 자식 개체를 차례로 선택한 다음, [검사기] 창에서 각 **TextMeshPro - 텍스트** 구성 요소 텍스트를 단추 이름과 일치하도록 변경합니다.
 
@@ -61,14 +61,17 @@ ms.locfileid: "93353541"
 
 완료되면 Buttons 개체의 자식 개체를 접습니다.
 
-[계층 구조] 창에서 **Hints** 단추 개체를 선택한 다음, [검사기] 창에서 Interactable **OnClick ()** 이벤트를 다음과 같이 구성합니다.
+[계층 구조] 창에서 **Hints** 단추 개체를 선택한 다음, [검사기] 창에서 **Interactable.OnClick ()** 이벤트를 다음과 같이 구성합니다.
 
 * **RoverAssembly** 개체를 **없음(개체)** 필드에 할당합니다.
 * **함수 없음** 드롭다운에서 **PlacementHintsController** > **TogglePlacementHints ()** 를 차례로 선택하여 이 함수를 이벤트가 트리거될 때 실행할 작업으로 설정합니다.
 
 ![Hints 단추 개체 OnClick 이벤트가 구성된 Unity](images/mr-learning-base/base-06-section1-step1-5.png)
 
-[계층 구조] 창에서 **Explode** 단추 개체를 선택한 다음, [검사기] 창에서 Interactable **OnClick ()** 이벤트를 다음과 같이 구성합니다.
+> [!TIP]
+> Interactable 구성 요소는 모든 객체가 입력에 쉽게 상호 작용하고 응답할 수 있도록 하는 일체형 컨테이너입니다. Interactable은 터치, 손 광선, 말하기 등을 포함한 모든 유형의 입력에 대한 캐치 올(catch-all) 역할을 하며 이러한 상호 작용을 이벤트 및 시각적 테마 응답으로 전달합니다. 다양한 입력 유형에 맞게 구성하고 시각적 테마를 사용자 지정하는 방법에 대한 자세한 내용은 [MRTK 설명서 포털](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)의 [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) 가이드를 참조할 수 있습니다.
+
+[계층 구조] 창에서 **Explode** 단추 개체를 선택한 다음, [검사기] 창에서 **Interactable.OnClick ()** 이벤트를 다음과 같이 구성합니다.
 
 * **RoverAssembly** 개체를 **없음(개체)** 필드에 할당합니다.
 * **함수 없음** 드롭다운에서 **ExplodedViewController** > **ToggleExplodedView ()** 를 차례로 선택하여 이 함수를 이벤트가 트리거될 때 실행할 작업으로 설정합니다.
@@ -176,7 +179,7 @@ ms.locfileid: "93353541"
 
 [계층 구조] 창에서 첫 번째 로버 부품인 RoverParts > **Camera_Part** 를 차례로 선택하고, **ToolTipSpawner** 구성 요소를 다음과 같이 구성합니다.
 
-* 부품 이름(예: **Camera** )을 반영하도록 **도구 설명 텍스트** 를 변경합니다.
+* 부품 이름(예: **Camera**)을 반영하도록 **도구 설명 텍스트** 를 변경합니다.
 
 ![Camera ToolTipText가 구성된 Unity](images/mr-learning-base/base-06-section4-step1-3.png)
 

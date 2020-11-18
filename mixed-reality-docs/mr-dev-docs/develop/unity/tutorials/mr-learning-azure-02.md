@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, 자습서, HoloLens, HoloLens 2, Azure Storage
 ms.localizationpriority: high
-ms.openlocfilehash: e01796dd99982bb749d59108bcc972e5bc361770
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 64e4aaadf13c03272a4fc9c552a7e4b31e82fdbb
+ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353331"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94549106"
 ---
 # <a name="2-integrating-azure-storage"></a>2. Azure Storage 통합
 
@@ -34,7 +34,7 @@ ms.locfileid: "93353331"
 
 이 서비스를 사용하면 데이터를 NoSQL 방식으로 저장할 수 있습니다. 이 프로젝트에서는 이름, 설명, 공간 앵커 ID 등과 같은 *추적된 개체* 에 대한 정보를 저장하기 위해 이 스토리지를 사용합니다.
 
-데모 애플리케이션의 경우 두 개의 테이블이 필요합니다. 하나는 자습서( [Azure Custom Vision 통합](mr-learning-azure-03.md))에서 학습된 모델의 상태에 대한 정보와 함께 프로젝트 관련 정보를 더 많이 저장하려는 테이블이고, 다른 하나는 *추적된 개체* 에 대한 정보를 저장하는 테이블입니다.
+데모 애플리케이션의 경우 두 개의 테이블이 필요합니다. 하나는 자습서([Azure Custom Vision 통합](mr-learning-azure-03.md))에서 학습된 모델의 상태에 대한 정보와 함께 프로젝트 관련 정보를 더 많이 저장하려는 테이블이고, 다른 하나는 *추적된 개체* 에 대한 정보를 저장하는 테이블입니다.
 
 [Azure Table 스토리지](https://docs.microsoft.com/azure/storage/tables/table-storage-overview)에 대해 자세히 알아보세요.
 
@@ -57,7 +57,7 @@ Azure 스토리지 서비스를 사용하려면 Azure 스토리지 계정이 필
 
 > [!TIP]
 > Unity 편집기 내에서 테스트하는 경우 로컬 에뮬레이터를 사용할 수 있습니다.
-> * Windows 10에서는 [Azure 스토리지 에뮬레이터](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)를 사용할 수 있습니다.
+> * Windows 10에서는 [Azure Storage 에뮬레이터](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)를 사용할 수 있습니다.
 > * MacOS/Linux에서는 Docker용 [Azurite Docker Image](https://hub.docker.com/_/microsoft-azure-storage-azurite)를 사용할 수 있습니다.
 
 ## <a name="preparing-the-scene"></a>장면 준비
