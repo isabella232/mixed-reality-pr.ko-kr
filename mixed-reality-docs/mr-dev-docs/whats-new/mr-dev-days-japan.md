@@ -1,19 +1,19 @@
 ---
-title: 혼합 현실 Dev Days 일본
+title: 혼합 현실 개발자의 날 일본
 description: 혼합 현실 개발 일에 대 한 이벤트 페이지 일본
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality, 컨퍼런스, summit, developer, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 170c0ebfeee2b6305c5d52c8aba143badaffa5e2
-ms.sourcegitcommit: 53c6d27781ed12e2899c72087d317a62b2fad8cb
+ms.openlocfilehash: e120582e6184b9b105221aeddb5bcb42629ccb0c
+ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/19/2020
-ms.locfileid: "94897358"
+ms.locfileid: "94933268"
 ---
-# <a name="mixed-reality-dev-days-japan"></a>혼합 현실 Dev Days 일본
+# <a name="mixed-reality-dev-days-japan"></a>혼합 현실 개발자의 날 일본
 
 ![혼합 현실 개발자의 날](images/MRDD/MRDevDaysJapanBanner.png)
 
@@ -55,10 +55,10 @@ ms.locfileid: "94897358"
 |2:00pm-2:25pm|*세션 5* HoloLens 2 및 Unreal Engine 시작 (MRTK-Unreal)|Cameron 저 Micka|EN|300|
 |2:30pm-2:55pm|*세션 6* "Holograms 디자인" 앱 만들기 이 새로운 HoloLens 2 앱을 만드는 동안 검색 된 기능, 문제 및 기타 재미 있는 학습에 대해 자세히 살펴보겠습니다.|Daniel Escudero|EN|300|
 |2:55pm-3: 오후 10 시|**끊어야**||||
-|3:10pm-3:35pm|*세션 7* Azure 개체 앵커|TBD|EN|300|
+|3:10pm-3:35pm|*세션 7* Azure 개체 앵커|Jesse McCulloch|EN|300|
 |3:40pm-4:05pm|*세션 8* Azure 원격 렌더링|Atsushi Suzuki|JA|300|
-|4:10pm-4:35 pm|*세션 9* Azure 공간 앵커|TBD|EN|300|
-|4:40pm-5:05pm|*세션 10* TBD|TBD|JA|200|
+|4:10pm-4:35 pm|*세션 9* Azure 공간 앵커|TBD|JA|300|
+|4:40pm-5:05pm|*세션 10* Unity + PiXYZ|Unity (Shinobu Takahashi)|JA|200|
 |5:10pm-5:35 pm|*세션 11* Azure Kinect 진한 심층 분석, 사례 연구|Shinji Chiba|JA|400|
 |5:35pm-5:50pm|닫기|Madoka Chiyoda|JA|해당 없음|
 
