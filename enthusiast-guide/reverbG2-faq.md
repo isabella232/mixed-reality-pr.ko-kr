@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, 성능
 appliesto:
 - Windows 10
-ms.openlocfilehash: 7d6d5a1eeabffdd7ad6d4ddd070a14c6dcf0d5ee
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+ms.openlocfilehash: 241fb95d92c771af727cc50287e4d1b2526123a5
+ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573207"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95002968"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP 반향 G2 질문과 대답
 
@@ -43,7 +43,7 @@ HP 권장 사항:
 - 헤드셋 및 USB 컨트롤러에 대 한 최신 드라이버가 설치 되어 있는지 확인 합니다.
 - Microsoft USB 드라이버를 사용 하 고 있는지 확인 합니다. "확장 가능한 호스트 컨트롤러" 장치의 이름에 "Microsoft"가 있어야 합니다.
 - 컴퓨터의 다른 USB-3.0 포트에 케이블을 연결 해 보세요. (USB 유형-C 및 유형-A 포트 사용해 보기)
-- 포함 된 USB C를 사용 하 여 다른 포트를 시도 합니다.
+- 어댑터에 포함 된 USB C를 사용 하 여 다른 포트를 시도 합니다.
 - 컴퓨터에 USB 허브를 통해 헤드셋을 연결 해 보세요.
 
 > [!NOTE]
@@ -75,7 +75,7 @@ HP 권장 사항:
 ## <a name="my-steamvr-games-dont-appear-to-work-correctly-with-my-hp-motion-controllers"></a>내 SteamVR 게임이 HP 모션 컨트롤러에서 제대로 작동 하지 않는 것 같습니다.
 
 개발자가 HP 모션 컨트롤러의 호환성을 위해 게임을 업데이트 하는 동안 스트림에서 가장 인기 있는 게임 대부분에 대 한 사용자 지정 컨트롤러 바인딩을 제공 했습니다. "SteamVR에 대 한 Windows Mixed Reality"를 버전 1.2.444로 완전히 업데이트 한 경우 게임이 실행 중일 때 이러한 바인딩을 자동으로 선택 해야 합니다. 그러나 현재 게임에서 작업을 등록 하지 않는 것으로 보이는 경우 SteamVR 설정 메뉴를 사용 하 여 사용자 지정 바인딩 프로필을 수동으로 검색할 수 있습니다.
-수행할 작업
+원하는 작업
 
 - 오른쪽 동작 컨트롤러의 메뉴 단추를 눌러 SteamVR 메뉴를 엽니다.
 - SteamVR 메뉴의 오른쪽 아래 모서리에 있는 "설정" 아이콘을 선택 합니다.

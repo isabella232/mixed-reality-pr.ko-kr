@@ -3,12 +3,12 @@ title: Windows Mixed Reality 설정
 description: Windows Mixed Reality 동작 컨트롤러, 음성 및 오디오를 설정 하 고 안전한 재생 공간에 대 한 공간 경계를 정의 하는 방법입니다.
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 시작, 설정, 동작 컨트롤러, 컨트롤러, 음성, 오디오, 장착 됨, 경계, 그래픽 드라이버, Microsoft Edge, chromium
-ms.openlocfilehash: 95ca5b8d86e26061e565a74efa36e49cc3d1b92b
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 16fa0fbf1574a61a5c7401de8a1e0431e183ec11
+ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132147"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95002998"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Windows Mixed Reality 설정
 
@@ -24,7 +24,11 @@ Windows Mixed Reality를 실행 하려면 다음이 필요 합니다.
 
 ## <a name="get-set"></a>집합 가져오기
 
-공간을 준비 합니다 (오버 헤드 공간 포함). 사용할 영역에 장애물, 위험 또는 손상 된 항목이 없는지 확인 합니다. 계단의 위쪽 이나 더 낮은 천장 팬에서 설정 하지 마세요. 영역에서 트 및 장애물을 제거 하 고, 사용자와 헤드셋을 사용 하는 모든 사용자가 [안전 지침](https://support.microsoft.com/help/4039969)을 읽고 이해 하는지 확인 합니다.
+공간을 준비 합니다 (오버 헤드 공간 포함). 사용할 영역에 장애물, 위험 또는 손상 된 항목이 없는지 확인 합니다. 계단의 위쪽 이나 더 낮은 천장 팬에서 설정 하지 마세요. 영역에서 트 및 장애물을 제거 하 고, 사용자와 헤드셋을 사용 하는 모든 사용자가 안전 지침을 읽고 이해 하는지 확인 합니다.
+
+공간이 준비 되 면 헤드셋에 연결 하지만 아직 배치 하지 마세요. 먼저 PC에서 일부 설정을 수행 해야 합니다. PC 검사를 실행 하 고, 일부 소프트웨어를 다운로드 하 고, 컨트롤러를 연결 하 고, 장애물을 방지 하는 데 도움이 되는 [경계](boundary-questions.md) 를 만듭니다.
+
+그런 다음 재미 있는 부분을 제공 합니다. Cortana는 둘러보기를 제공 하기 위해 대기 중입니다. 즐거운 시간 보내세요!
 
 ## <a name="go"></a>지금
 
@@ -40,7 +44,7 @@ Windows Mixed Reality를 실행 하려면 다음이 필요 합니다.
 
 Xbox 게임 패드 또는 키보드와 마우스를 사용 하려는 경우에는 컨트롤러를 페어링 하지 않아도 됩니다.  컨트롤러를 사용 하려는 경우에는 해당 컨트롤러를 페어링 해야 할 수도 있습니다.
 
-**참고** : Windows Mixed Reality 동작 컨트롤러에는 Bluetooth 4.0이 필요 합니다. PC에 기본 제공 된 Bluetooth가 없는 경우에는 Bluetooth 4.0을 지 원하는 USB Bluetooth 어댑터를 연결 하 여 동작 컨트롤러를 사용 하도록 설정 해야 합니다. 헤드셋에서 기본 제공 라디오를 사용 하는 경우 Bluetooth 어댑터가 필요 하지 않습니다.
+**참고**: Windows Mixed Reality 동작 컨트롤러에는 Bluetooth 4.0이 필요 합니다. PC에 기본 제공 된 Bluetooth가 없는 경우에는 Bluetooth 4.0을 지 원하는 USB Bluetooth 어댑터를 연결 하 여 동작 컨트롤러를 사용 하도록 설정 해야 합니다. 헤드셋에서 기본 제공 라디오를 사용 하는 경우 Bluetooth 어댑터가 필요 하지 않습니다.
 
 ![동작 컨트롤러에 대해 알아보기](images/get_to_know_controllers.png)
 
@@ -126,7 +130,7 @@ Windows Mixed Reality는 PC의 하드웨어 구성에 따라 품질 및 성능�
 
 이 고급 설정은 기본 헤드셋 디스플레이 새로 고침 빈도 환경을 재정의 합니다.
 
-* **자동 (기본값)** : PC의 하드웨어 구성에 따라 60Hz 또는 90hz 환경을 자동으로 선택 합니다.
+* **자동 (기본값)**: PC의 하드웨어 구성에 따라 60Hz 또는 90hz 환경을 자동으로 선택 합니다.
 * **60Hz**
 * **90Hz**
 
@@ -138,7 +142,7 @@ Windows Mixed Reality는 PC의 하드웨어 구성에 따라 품질 및 성능�
 이 설정은 헤드셋의 현재 상태 센서에 대 한 응답으로 Windows Mixed Reality의 동작을 제어 합니다.
 
 * **헤드셋 상태 센서를 사용 하 여 자동으로 전환** (기본값): 헤드셋을 작성할 때마다 windows에서 자동으로 입력 (키보드, 마우스 ...)을 Windows Mixed Reality에 전달 합니다. 언제 든 지 Win + Y를 사용 하 여이를 재정의할 수 있습니다.
-* **Windows 로고 키 + Y를 사용 하 여 수동 전환** : windows는 헤드셋을 입고 있는 시점을 검색 하기 위해 헤드셋 상태 센서를 사용 하지 않습니다. PC 데스크톱과 Windows Mixed Reality 간에 입력을 전환 하려면 Win + Y를 사용 해야 합니다.
+* **Windows 로고 키 + Y를 사용 하 여 수동 전환**: windows는 헤드셋을 입고 있는 시점을 검색 하기 위해 헤드셋 상태 센서를 사용 하지 않습니다. PC 데스크톱과 Windows Mixed Reality 간에 입력을 전환 하려면 Win + Y를 사용 해야 합니다.
 
 이 설정은 Windows 10, 버전 1903 이상에서 사용할 수 있습니다.
 

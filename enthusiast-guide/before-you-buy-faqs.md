@@ -8,14 +8,14 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사전 판매, 연구, 구매, 구입 하기 전
 appliesto:
 - Windows 10
-ms.openlocfilehash: a38b6ed8625fbb419ad24f2e27acec881d7b85a7
-ms.sourcegitcommit: ea7d806c9aa88d1295493a25f47e58bb72a4000a
+ms.openlocfilehash: 20a585088c9bea9d01754f78e9934a4022c0e34c
+ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92907445"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95002977"
 ---
-# <a name="frequently-asked-questions"></a>질문과 대답
+# <a name="before-you-buy-frequently-asked-questions"></a>질문과 대답을 구입 하기 전에
 
 ## <a name="general-questions"></a>일반적인 질문
 
@@ -23,13 +23,13 @@ ms.locfileid: "92907445"
 
 **빠른 응답:** 승인 된 로컬 대리점에서 또는 Microsoft Store을 비롯 한 다양 한 소매점에서 온라인으로 Windows Mixed Reality ready PC 또는 헤드셋을 구매할 수 있습니다. Windows Mixed Reality ready PC 또는 헤드셋을 온라인으로 찾습니다. <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
-### <a name="where-can-i-try-windows-mixed-reality"></a>Windows Mixed Reality를 어디에서 시도할 수 있나요?
+### <a name="where-can-i-try-windows-mixed-reality"></a>Windows Mixed Reality를 사용해 볼 수 있는 위치
 
 **빠른 응답:** 가까운 [Microsoft 재 행위자](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) 에서 Windows Mixed Reality를 사용해 볼 수 있습니다.
 
 * Meetup.com에서 Microsoft Reactor 이벤트를 찾습니다. <https://www.meetup.com/pro/microsoft-reactor>
 
-### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Windows Mixed Reality 장치를 판매 하는 제조업체는 무엇입니까?
+### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Windows Mixed Reality 장치를 판매 하는 제조업체
 
 **빠른 응답:** 헤드셋 및 동작 컨트롤러는 현재 HP에서 사용할 수 있습니다. <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>을 참조하십시오.
 
@@ -37,11 +37,11 @@ ms.locfileid: "92907445"
 
 **빠른 응답:** 아쉽게도이 시점에는 독립 실행형 이동이 필요한 소매 업체를 인식 하지 못합니다.
 
-### <a name="what-is-the-difference-between-a-windows-mixed-reality-pc-and-a-windows-mixed-reality-ultra-pc"></a>Windows Mixed Reality PC와 Windows Mixed Reality 울트라 PC 간의 차이점은 무엇 인가요?
+### <a name="what-is-the-difference-between-a-windows-mixed-reality-pc-and-a-windows-mixed-reality-ultra-pc"></a>Windows Mixed Reality PC와 Windows Mixed Reality 울트라 PC의 차이점은 무엇 인가요?
 
 **빠른 응답:** Windows Mixed Reality Pc 및 Ultra Pc에 대 한 세부 정보는 여기에 있습니다. <https://aka.ms/mrcompat>
 
-### <a name="why-is-this-called-windows-mixed-reality-when-the-devices-look-like-they-provide-a-virtual-reality-experience"></a>장치가 "가상 현실" 환경을 제공 하는 것 처럼 보일 때 Windows "혼합 현실" 이라고 하는 이유는 무엇 인가요?
+### <a name="why-is-this-called-windows-mixed-reality-when-the-devices-look-like-they-provide-a-virtual-reality-experience"></a>장치가 "가상 현실" 환경을 제공 하는 것 처럼 보이는 경우이를 Windows "혼합 현실" 이라고 하는 이유는 무엇 인가요?
 
 **빠른 응답:** 혼합 현실은 확대 된 현실 및 holograms에서 가상 현실까지 공간 컴퓨팅의 전체 스펙트럼을 의미 합니다. Windows Mixed Reality 플랫폼은 VR (가상 현실)와 AR (확대 현실) 전반의 장치를 지원 합니다. 현재는 이러한 스펙트럼에서 동일한 기술을 사용 하는 두 가지 장치 유형 (HoloLens (AR) 및 Windows Mixed Reality (VR) 헤드셋)을 지원 합니다.
 
@@ -51,13 +51,13 @@ ms.locfileid: "92907445"
 
 **빠른 응답:** Windows Mixed Reality 헤드셋은 내부 추적 (추적 카메라는 헤드셋에 포함 됨)과 Windows 10의 플러그 앤 플레이 설치 기능을 포함 합니다.
 
-**자세한 정보** : Windows Mixed Reality는 간편한 설치 (사용자 및 컨트롤러를 추적할 수 있는 외부 센서에는 필요 없음), 편안 하 게 사용할 수 있는 헤드셋의 선택, 경쟁 우위를 제공 하는 헤드셋 선택, Microsoft Store에서 수천 개의 앱을 사용할 수 있는 공간 인터페이스를 제공 하는 고유한 사용자 환경 등의 여러 가지 기능을 제공 합니다.
+**자세한 정보**: Windows Mixed Reality는 간편한 설치 (사용자 및 컨트롤러를 추적할 수 있는 외부 센서에는 필요 없음), 편안 하 게 사용할 수 있는 헤드셋의 선택, 경쟁 우위를 제공 하는 헤드셋 선택, Microsoft Store에서 수천 개의 앱을 사용할 수 있는 공간 인터페이스를 제공 하는 고유한 사용자 환경 등의 여러 가지 기능을 제공 합니다.
 
-### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>혼합 현실에서는 내부 카메라가 통과 하는 것을 의미 하나요? 가상 현실 외에도 확대 현실를 경험할 수 있나요?
+### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>혼합 현실에서는 내부 카메라가 통과 하는 것을 의미 하나요? 가상 현실 외에도 확대 현실를 경험할 수 있습니다.
 
-**빠른 응답:** 아니요, Windows Mixed Reality 헤드셋의 내부 카메라는 위치 추적에만 사용 됩니다. Windows Mixed Reality 헤드셋은 폐색 이며,이는 가상 현실 이며 실제 세계 또는 보강 된 현실에 대 한 보기를 제공 하지 않음을 의미 합니다. 
+**빠른 응답:** 아니요, Windows Mixed Reality 헤드셋의 내부 카메라는 위치 추적에만 사용 됩니다. Windows Mixed Reality 헤드셋은 폐색 이며,이는 가상 현실 이며 실제 세계 또는 보강 된 현실에 대 한 보기를 제공 하지 않음을 의미 합니다.
 
-### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>내부 추적 이란? 외부에서 추적 또는 lighthouse 추적과 달리는 방법은 무엇 인가요?
+### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>내부 추적 이란? 외부에서 추적 또는 lighthouse 추적과는 다른 방법
 
 * **내부 추적** Windows Mixed Reality에서는 내부 추적을 사용 합니다. 내에서 이동 하는 환경에 대 한 헤드셋 위치를 결정 하기 위해 내부 추적 카메라를 사용 하는 경우 헤드셋은 헤드셋에 기본 제공 되 고 환경의 변경 내용을 추적 합니다.
 
@@ -65,11 +65,11 @@ ms.locfileid: "92907445"
 
 내부 추적에 대해 자세히 알아보려면 다음을 참조 하세요. <https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system>
 
-### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>움직이는 컨트롤러의 내부 추적에서 카메라 FOV로 인 한 게임 플레이에 영향을 줄 수 있나요?
+### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>움직임 컨트롤러의 내부 추적 추적에서 카메라 FOV로 인 한 게임 재생에 영향을 줄 수 있음
 
  헤드셋 처럼 Windows Mixed Reality 동작 컨트롤러는 외부 추적 센서를 설정 하지 않아도 됩니다. 대신, 컨트롤러는 헤드셋 자체의 센서에 의해 추적 됩니다. 사용자가 컨트롤러를 헤드셋의 뷰 필드에서 밖으로 이동 하는 경우 대부분의 경우 Windows는 컨트롤러 위치를 계속 유추 하 고 앱에 제공 합니다. 컨트롤러에서 충분히 긴 시각적 추적을 분실 한 경우 컨트롤러의 위치는 대략적인 정확도 위치로 삭제 됩니다. 이 시점에서 시스템은 컨트롤러를 사용자에 게 본문 잠금을 설정 하 고, 이동 하는 동안 사용자의 위치를 추적 하 고, 내부 방향 센서를 사용 하 여 컨트롤러의 실제 방향을 계속 노출 합니다. 컨트롤러를 사용 하 여 UI 요소를 가리키고 활성화 하는 많은 앱은 일반적으로 사용자가 모르게 거의 정확도에서 작동할 수 있습니다. 이를 위한 가장 좋은 방법은 직접 시도해 보는 것입니다.
 
-### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>Windows Mixed Reality가 Samsung 기어 VR와 어떻게 다른가?
+### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>Windows Mixed Reality가 Samsung 기어 VR와 어떻게 다른가
 
 **빠른 응답:** Samsung 기어 VR 및 Google Daydream를 비롯 한 모든 스마트폰 기반 VR 제품은 3도의 자유도 (3 개) 헤드 위치 추적 시스템을 사용 합니다. 다양 한 기반 시스템을 사용 하 여 가상 세계에서 위쪽 **으로만** 헤드를 이동할 수 있습니다. 반면에 Windows MR은 6DOF (6도) 헤드와 컨트롤러 위치 추적 시스템을 사용 합니다. 6DOF 기반 시스템을 사용 하 여 가상 세계에서 전체 본문을 이동할 수 있습니다. 따라서 실제 세계에서와 같이 개체를 살펴보고 다른 관점에서 볼 수 있습니다. Rift 및 Vive는 6DOF 기반 시스템 이기도 합니다.
 
@@ -99,7 +99,7 @@ ms.locfileid: "92907445"
 <td> 최대 90Hz </td>
 <td> 100 ° </td>
 <td> 3.5 mm 잭 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">소프트웨어</td>
 <td> 2017 </td>
 <td> <a href="https://www.acer.com/ac/en/US/content/windows-mixed-reality-home">Acer</a> </td>
@@ -125,7 +125,7 @@ ms.locfileid: "92907445"
 <td> 최대 90Hz </td>
 <td> 95 ° </td>
 <td> 3.5 mm 잭 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">소프트웨어</td>
 <td> 2017 </td>
 <td> <a href="https://www.asus.com/us/Headset/ASUS-Windows-Mixed-Reality-Headset-HC102/">지원팀</a> </td>
@@ -138,7 +138,7 @@ ms.locfileid: "92907445"
 <td> 최대 90Hz </td>
 <td> 105 ° </td>
 <td> 3.5 mm 잭 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">소프트웨어</td>
 <td> 2017 </td>
 <td> <a href="https://www.dell.com/en-us/shop/accessories/apd/536-bbbr?~ck=mn">좋습니다</a> </td>
@@ -151,7 +151,7 @@ ms.locfileid: "92907445"
 <td> 최대 90Hz </td>
 <td> 105 ° </td>
 <td> 3.5 mm 잭 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">소프트웨어</td>
 <td> 2017 </td>
 <td> <a href="http://pr.fujitsu.com/jp/news/2017/10/17.html">Fujitsu</a> </td>
@@ -177,7 +177,7 @@ ms.locfileid: "92907445"
 <td> 최대 90Hz </td>
 <td> 105 ° </td>
 <td> 3.5 mm 잭 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">소프트웨어</td>
 <td> 2017 </td>
 <td> <a href="https://store.hp.com/us/en/pdp/hp-windows-mixed-reality-headset-vr1000-100">HP</a> </td>
@@ -190,7 +190,7 @@ ms.locfileid: "92907445"
 <td> 최대 90Hz </td>
 <td> 105 ° </td>
 <td> 3.5 mm 잭 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">소프트웨어</td>
 <td> 2017 </td>
 <td> <a href="https://www.lenovo.com/us/en/virtual-reality-and-smart-devices/virtual-and-augmented-reality/lenovo-explorer/Lenovo-Explorer/p/G10NREAG0A2">Lenovo</a> </td>
@@ -203,7 +203,7 @@ ms.locfileid: "92907445"
 <td> 최대 90Hz </td>
 <td> 105 ° </td>
 <td> 3.5 mm 잭 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">소프트웨어</td>
 <td> 2017 </td>
 <td> <a href="https://www.medion.com/be/shop/monitoren-medion-erazer-mr-x1000-vr-headset-controllers-30023616a1.html">Medion</a> </td>
@@ -216,7 +216,7 @@ ms.locfileid: "92907445"
 <td> 최대 90Hz </td>
 <td> 110 ° </td>
 <td> 통합 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">기계적</td>
 <td> 2017 </td>
 <td> <a href="https://www.samsung.com/us/computing/hmd/windows-mixed-reality/xe800zaa-hc1us-xe800zaa-hc1us/?redir=windows%20mixed%20reality">삼성</a> </td>
@@ -242,7 +242,7 @@ ms.locfileid: "92907445"
 <td> 최대 90Hz </td>
 <td> 105 ° </td>
 <td> 3.5 mm 잭 </td>
-<td> 없음 </td>
+<td> None </td>
 <td style="text-align: center;">소프트웨어</td>
 <td> 2017 </td>
 <td> <a href="http://3glasses.com/goods.action?gid=30">3.</a> </td>
