@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality, 컨퍼런스, summit, developer, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: e120582e6184b9b105221aeddb5bcb42629ccb0c
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+ms.openlocfilehash: 6f673c78004f94692fcb09d304d6d40d2f97f1c3
+ms.sourcegitcommit: 893d7df2df66316e881dfba578a2810c203d9aa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/19/2020
-ms.locfileid: "94933268"
+ms.locfileid: "94941859"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>혼합 현실 개발자의 날 일본
 
@@ -51,7 +51,7 @@ ms.locfileid: "94933268"
 |12:00pm-12:50pm|*점심 세션* 패널: 대화형 무료 토론, 질문 및 답변, MRTK + Oculus 퀘스트 2|Madoka Chiyoda + Microsoft Mvp|JA|200|
 |12:50pm-1:00pm|**끊어야**||||
 |1:00pm-1:25pm|*세션 3* HoloLens 2 개발 개요|Madoka Chiyoda|JA|200|
-|1:30pm-1:55pm|*세션 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity)|Yoon 파킹|JA|300|
+|1:30pm-1:55pm|*세션 4* MRTK의 UX 빌딩 블록 (v 2.5.0)|Yoon 파킹|JA|300|
 |2:00pm-2:25pm|*세션 5* HoloLens 2 및 Unreal Engine 시작 (MRTK-Unreal)|Cameron 저 Micka|EN|300|
 |2:30pm-2:55pm|*세션 6* "Holograms 디자인" 앱 만들기 이 새로운 HoloLens 2 앱을 만드는 동안 검색 된 기능, 문제 및 기타 재미 있는 학습에 대해 자세히 살펴보겠습니다.|Daniel Escudero|EN|300|
 |2:55pm-3: 오후 10 시|**끊어야**||||

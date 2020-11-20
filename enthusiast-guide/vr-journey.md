@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR,
-ms.openlocfilehash: c2a00b88992fde3e599020d930ef950222e87099
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+ms.openlocfilehash: 429a1130d628f54f12eb8ff6eed3f48d4712143a
+ms.sourcegitcommit: 893d7df2df66316e881dfba578a2810c203d9aa3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573217"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94941869"
 ---
 # <a name="start-your-vr-journey"></a>VR 둘러보기 시작
 
@@ -29,6 +29,7 @@ PC에서 가장 좋은 설정 및 사용 환경을 제공 하기 위해 구매 �
 
 |  검사점  |  결과  |
 | --- | --- |
+| [시작하기 전에](before-you-start.md) |  |
 | [최소 PC 하드웨어 지침](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | Windows Mixed reality, Windows Mixed Reality 및 Windows Mixed Reality 포털 앱 실행에 대해 알고 있어야 하는 모든 사항 |
 | [PC 호환성에 대한 도움말 보기](get-help-with-pc-compatibility.md) | Windows Mixed Reality PC 검사에서 생성 된 보고서 이해 |
 | [구매 Faq](before-you-buy-faqs.md) | 기술 사양, 장치 및 컨트롤러에 대 한 모든 구매 질문에 대 한 답변을 받으세요. |
@@ -57,24 +58,27 @@ Windows Mixed Reality 및 몰입 개의 VR 헤드셋을 통해 다양 한 기능
 | [Windows Mixed Reality 홈 탐색](your-mixed-reality-home.md) | Windows Mixed Reality 홈의 가상 환경 탐색  |
 | [컨트롤러 사용](controllers-in-wmr.md) | 동작 컨트롤러 설정, 이해 및 사용 |
 | [음성 입력 사용](using-speech-in-wmr.md) | 3D 개체, 앱 바, 시작 메뉴 및 Cortana와 상호 작용할 수 있는 다양 한 음성 명령을 숙지 합니다. |
-| [게임, 360 비디오 및 앱](using-games-and-apps-in-windows-mixed-reality.md) | 첫 번째 몰입 형 게임, 2D 스토어 슬레이트, 데스크톱 응용 프로그램 및 WebVR 환경 시작 |
-| [SteamVR 사용](using-steamvr-with-windows-mixed-reality.md) | 장치를 연결 하 고 SteamVR 게임을 재생 하 고 Windows 참가자 프로그램에 대해 알아봅니다. |
-| [Microsoft Edge 사용](using-microsoft-edge.md) | 모던 장치에 최신 버전의 Microsoft Edge 설치 |
-| [WebVR 사용](webvr.md) | 브라우저 환경에서 VR 경험을 위한 설치 프로그램 다운로드 |
 
 > [!NOTE]
 > 위의 기능 중 하나에서 문제가 발생 하는 경우 **[Windows Mixed REALITY FAQ 사용](using-wmr-faq.md)** 을 확인 하세요.
 
-### <a name="4-troubleshooting-tips--resources"></a>4. 문제 해결, 팁 & 리소스
+## <a name="4-discover-apps-and-content"></a>4. 앱 및 콘텐츠 검색
 
-몰입 형 하드웨어와 관련 하 여 문제가 발생 하는 경우에는 함께 제공 되는 [일반적인 FAQ](troubleshooting-windows-mixed-reality.md) 부터 시작 하세요. 원하는 항목을 찾지 못한 경우에는 설치 및 오류 코드의 모든 항목을 성능 및 헤드셋으로 표시 하는 모든 항목을 다루는 **문제 해결 faq** 섹션에서 토픽 관련 faq 문서를 철저히 나열 합니다.
+몰입 형 게임, 데스크톱 응용 프로그램 및 VR 콘텐츠를 찾고 아래 리소스에서 Microsoft Edge 브라우저를 사용 하세요. 
+
+<br>
+
+| [게임, 360 비디오 및 앱](using-games-and-apps-in-windows-mixed-reality.md) | 첫 번째 몰입 형 게임, 2D 스토어 슬레이트, 데스크톱 응용 프로그램 및 WebVR 환경 시작 | | [SteamVR 사용](using-steamvr-with-windows-mixed-reality.md) | 장치를 연결 하 고 SteamVR 게임을 재생 하 고 Windows 참가자 프로그램에 대해 알아보기 | | [Microsoft Edge 사용](using-microsoft-edge.md) | 모던 장치에 최신 버전의 Microsoft Edge 설치 | | [WebVR 사용](webvr.md) | 브라우저 환경에서 VR 경험을 위한 설치 프로그램 다운로드 |
+
+## <a name="troubleshooting-tips--resources"></a>문제 해결, 팁 & 리소스
+
+몰입 형 하드웨어와 관련 된 모든 작업에 문제가 발생 하는 경우 다음으로 시작 합니다.
+ 
+* [일반 FAQ](troubleshooting-windows-mixed-reality.md) 
+
+원하는 항목을 찾지 못한 경우에는 설치 및 오류 코드의 모든 항목을 성능 및 헤드셋으로 표시 하는 모든 항목을 다루는 **문제 해결 faq** 섹션에서 토픽 관련 faq 문서를 철저히 나열 합니다. VR에서 특정 기능이 작동 하는 방식에 대 한 자세한 내용을 보려면 [동작 컨트롤러](controllers-in-wmr.md) 및 [내부 추적](tracking-system.md) 의 작동 방식에 대 한 문서를 확인 하세요.
 
 Microsoft는 항상 새로운 문제 및 버그에 대 한 조언을 제공 하므로 문서화 되지 않은 모든을 실행 하는 경우 여기에서 [피드백](filing-feedback.md)을 보내 주세요.
-
-VR에서 특정 기능의 작동 방식에 대 한 자세한 내용을 보려면 아래 문서를 확인 하세요.
-
-* [동작 컨트롤러 작동 방법](controllers-in-wmr.md)
-* [내부에서 외부로 추적의 작동 방식](tracking-system.md)
 
 > [!NOTE]
 > [여기](mixed-reality-software.md)에서 전체 Windows Mixed Reality 릴리스 기록을 사용할 수 있습니다.
