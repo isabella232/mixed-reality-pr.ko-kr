@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality, 디자인, 컨트롤, 글꼴, 입력 체계, ui, ux, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 9778b1b11db7ac1c330b0ede4f6153deff45a95a
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 04b62cd0989042856dbd15d467d042f67df69931
+ms.sourcegitcommit: 5d6dbbb94e60cf10786d0fbbaf4239a1541e9e29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677362"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95008136"
 ---
 # <a name="text-in-unity"></a>Unity의 텍스트
 
@@ -93,7 +93,7 @@ Unity의 텍스트 메시 Pro를 사용 하 여 텍스트 렌더링 품질을 �
 
 ### <a name="shader-with-occlusion-support"></a>폐색가 지원 되는 셰이더
 
-Unity의 기본 글꼴 재질은 폐색를 지원 하지 않습니다. 이로 인해 기본적으로 개체 뒤에 텍스트가 표시 됩니다. [폐색를 지 원하는 간단한 셰이더](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MRTK/Core/StandardAssets/Shaders/Text3DShader.shader)를 포함 했습니다. 아래 이미지는 기본 글꼴 재질 (왼쪽) 및 적절 한 폐색 (오른쪽) 텍스트가 포함 된 텍스트를 보여 줍니다.
+Unity의 기본 글꼴 재질은 폐색를 지원 하지 않습니다. 이로 인해 기본적으로 개체 뒤에 텍스트가 표시 됩니다. [폐색를 지 원하는 간단한 셰이더](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/StandardAssets/Shaders/Text3DShader.shader)를 포함 했습니다. 아래 이미지는 기본 글꼴 재질 (왼쪽) 및 적절 한 폐색 (오른쪽) 텍스트가 포함 된 텍스트를 보여 줍니다.
 
 ![폐색가 지원 되는 셰이더](images/hug-text-07-1000px.png)<br>
 *폐색가 지원 되는 셰이더*
@@ -113,6 +113,6 @@ Unity의 기본 글꼴 재질은 폐색를 지원 하지 않습니다. 이로 �
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [MRTK의 텍스트 Prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)
 * [입력 체계](../../design/typography.md)
