@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR,
-ms.openlocfilehash: 429a1130d628f54f12eb8ff6eed3f48d4712143a
-ms.sourcegitcommit: 893d7df2df66316e881dfba578a2810c203d9aa3
+ms.openlocfilehash: 9426a85611cf53a349ca5bc8f3727ee8a784940e
+ms.sourcegitcommit: a129039d8ed228ed0305aa312006cadf403f0831
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94941869"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95417207"
 ---
 # <a name="start-your-vr-journey"></a>VR 둘러보기 시작
 
@@ -29,7 +29,7 @@ PC에서 가장 좋은 설정 및 사용 환경을 제공 하기 위해 구매 �
 
 |  검사점  |  결과  |
 | --- | --- |
-| [시작하기 전에](before-you-start.md) |  |
+| [시작하기 전에](before-you-start.md) | VR 경험을 시작 하는 데 필요한 모든 항목이 있는지 확인 합니다. |
 | [최소 PC 하드웨어 지침](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | Windows Mixed reality, Windows Mixed Reality 및 Windows Mixed Reality 포털 앱 실행에 대해 알고 있어야 하는 모든 사항 |
 | [PC 호환성에 대한 도움말 보기](get-help-with-pc-compatibility.md) | Windows Mixed Reality PC 검사에서 생성 된 보고서 이해 |
 | [구매 Faq](before-you-buy-faqs.md) | 기술 사양, 장치 및 컨트롤러에 대 한 모든 구매 질문에 대 한 답변을 받으세요. |
@@ -64,11 +64,16 @@ Windows Mixed Reality 및 몰입 개의 VR 헤드셋을 통해 다양 한 기능
 
 ## <a name="4-discover-apps-and-content"></a>4. 앱 및 콘텐츠 검색
 
-몰입 형 게임, 데스크톱 응용 프로그램 및 VR 콘텐츠를 찾고 아래 리소스에서 Microsoft Edge 브라우저를 사용 하세요. 
+아래 리소스에서 몰입 형 게임, 데스크톱 응용 프로그램 및 VR 콘텐츠를 찾아보세요. 
 
 <br>
 
-| [게임, 360 비디오 및 앱](using-games-and-apps-in-windows-mixed-reality.md) | 첫 번째 몰입 형 게임, 2D 스토어 슬레이트, 데스크톱 응용 프로그램 및 WebVR 환경 시작 | | [SteamVR 사용](using-steamvr-with-windows-mixed-reality.md) | 장치를 연결 하 고 SteamVR 게임을 재생 하 고 Windows 참가자 프로그램에 대해 알아보기 | | [Microsoft Edge 사용](using-microsoft-edge.md) | 모던 장치에 최신 버전의 Microsoft Edge 설치 | | [WebVR 사용](webvr.md) | 브라우저 환경에서 VR 경험을 위한 설치 프로그램 다운로드 |
+|  검사점  |  기능  |
+| --- | --- |
+| [게임, 360 비디오 및 앱](using-games-and-apps-in-windows-mixed-reality.md) | 첫 번째 몰입 형 게임, 2D 스토어 슬레이트, 데스크톱 응용 프로그램 및 WebVR 환경 시작 |
+| [SteamVR 사용](using-steamvr-with-windows-mixed-reality.md) | 장치를 연결 하 고 SteamVR 게임을 재생 하 고 Windows 참가자 프로그램에 대해 알아봅니다. |
+| [Microsoft Edge 사용](using-microsoft-edge.md) | 모던 장치에 최신 버전의 Microsoft Edge 설치 |
+| [WebVR 사용](webvr.md) | 브라우저 환경에서 VR 경험을 위한 설치 프로그램 다운로드 |
 
 ## <a name="troubleshooting-tips--resources"></a>문제 해결, 팁 & 리소스
 
