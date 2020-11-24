@@ -1,0 +1,24 @@
+### YamlMime:Landing
+title: Maquette 시작
+summary: 요약
+metadata:
+  title: Maquette 시작
+  description: 설명
+  ms.prod: mixed-reality
+  ms.topic: landing-page
+  author: hferrone
+  ms.author: v-hferrone
+  ms.date: 10/26/2020
+  ms.openlocfilehash: 8993c77e1fce0948f7dd5ea05085089851f0f6c6
+  ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 11/19/2020
+  ms.locfileid: "94935278"
+landingContent:
+- title: Maquette 정보
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Maquette란?
+      url: overview/about.md

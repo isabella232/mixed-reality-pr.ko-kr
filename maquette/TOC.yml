@@ -1,2 +1,10 @@
-- name: 인덱스
-  href: index.md
+- name: Maquette 시작
+  href: index.yml
+- name: 개요
+  href: overview/toc.yml
+- name: 빠른 시작
+  href: quickstarts/toc.yml
+- name: 샘플
+  href: samples/toc.yml
+- name: 리소스
+  href: resources/toc.yml
