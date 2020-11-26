@@ -7,13 +7,13 @@ ms.author: v-haferr
 ms.date: 06/5/2020
 ms.topic: overview
 ms.localizationpriority: high
-keywords: Mixed Reality, 개발, 개발, HoloLens, 클라우드 서비스
-ms.openlocfilehash: ae79da3d5bdf85bc27312044409c1f9c9aa5f031
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Mixed Reality, 개발, 개발, HoloLens, 클라우드 서비스, Azure, remote rendering, spatial anchors, cognitive services, 인식, unity, 기계 학습, 음성 번역, 컴퓨터 비전, Microsoft Graph
+ms.openlocfilehash: 640e99637f9cfa1786e1e78ed5cec396748b2f47
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699377"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679692"
 ---
 # <a name="azure-cloud-services"></a>Azure Cloud Services
 
@@ -46,9 +46,9 @@ ARR은 렌더링 워크로드를 클라우드의 고급 GPU로 이동하여 이 
 ASA(Azure Spatial Anchors)는 공간 인식 혼합 현실 애플리케이션을 빌드할 수 있는 플랫폼 간 서비스입니다. Azure Spatial Anchors를 사용하면 여러 디바이스에서 홀로그램 콘텐츠를 현실 세계 규모로 매핑, 유지 및 공유할 수 있습니다. 
 
 ASA는 다음을 포함하여 Mixed Reality의 일반적인 사용 사례를 위한 고유한 맞춤형 솔루션입니다.
-* **경로 찾기** : 둘 이상의 공간 앵커를 연결하여 사용자가 상호 작용해야 하는 작업 목록 또는 관심 지점을 만들 수 있습니다.
-* **다중 사용자 환경** : 사용자가 동일한 가상 공간에서 개체와 상호 작용하여 앞뒤로 이동할 수 있습니다.
-* **현실 세계에서 가상 콘텐츠 유지** : 사용자가 지원되는 다른 디바이스에서 볼 수 있는 가상 개체를 현실 세계에 배치할 수 있습니다.
+* **경로 찾기**: 둘 이상의 공간 앵커를 연결하여 사용자가 상호 작용해야 하는 작업 목록 또는 관심 지점을 만들 수 있습니다.
+* **다중 사용자 환경**: 사용자가 동일한 가상 공간에서 개체와 상호 작용하여 앞뒤로 이동할 수 있습니다.
+* **현실 세계에서 가상 콘텐츠 유지**: 사용자가 지원되는 다른 디바이스에서 볼 수 있는 가상 개체를 현실 세계에 배치할 수 있습니다.
 
 ![Azure Spatial Anchors의 예](images/persistence.gif)
 

@@ -7,13 +7,13 @@ ms.author: kurtie
 ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서
-ms.openlocfilehash: 35a9d28b588099e691341c3bb81d377671064e58
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, unity, unreal, HoloLens, Azure spatial anchors, Azure Speech Services
+ms.openlocfilehash: 0e3b1749790e3c372570bdd1d8e68fe3fd593dd8
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700905"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677282"
 ---
 # <a name="tutorials"></a>자습서 
 
@@ -42,7 +42,7 @@ Mixed Reality 아카데미는 해당 프로젝트 파일을 사용하는 일단�
 * 올바른 [도구가 설치](../install-the-tools.md)된 Windows 10 PC는 각 자습서를 완료하기 위한 일반적인 필수 구성 요소입니다.
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다. 따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다. 이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_** . 대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](tutorials/mr-learning-base-01.md)가 게시되었습니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다. 따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다. 이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**. 대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](tutorials/mr-learning-base-01.md)가 게시되었습니다.
 
 <br>
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">

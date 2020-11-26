@@ -7,15 +7,15 @@ ms.author: kurtie
 ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서
-ms.openlocfilehash: cd0fcd0f2247582582f008c3c1131e893d89a3de
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, MRTK, Mixed Reality Toolkit, Unity, 샘플 앱, 예시 앱, 오픈 소스, Microsoft Store, HoloLens, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: f33e66b0077f9b1f1255ee8da564ac588d1e02b9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573197"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677262"
 ---
-# <a name="sample-apps"></a>방법
+# <a name="sample-apps"></a>샘플 앱
 
 <br/><img src="https://user-images.githubusercontent.com/13754172/90335383-ab391e80-e00f-11ea-8a6c-b61aa910b83d.gif" width="100%" _alt="Sample apps">
 
