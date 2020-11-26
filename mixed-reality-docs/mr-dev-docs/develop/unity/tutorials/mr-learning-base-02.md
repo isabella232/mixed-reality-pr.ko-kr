@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 혼합 현실, Unity, 자습서, HoloLens
+keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: 2fb742f71baef50881a4a3279e7b0a1b969f0306
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 62f79e1a50f8a2f0d2c8829b968e2c3bf5ee7403
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353441"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679382"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. 프로젝트 초기화 및 첫 번째 애플리케이션 배포
 
@@ -42,8 +42,8 @@ ms.locfileid: "93353441"
 Create a new project(새 프로젝트 만들기) 창에서 다음을 수행합니다.
 
 * **Templates(템플릿)** 가 **3D** 로 설정되어 있는지 확인합니다.
-* 적합한 **Project Name(프로젝트 이름)** 을 입력합니다(예: _MRTK 자습서_ ).
-* 프로젝트를 저장할 적합한 **Location(위치)** 을 선택합니다(예: _D:\MixedRealityLearning_ ).
+* 적합한 **Project Name(프로젝트 이름)** 을 입력합니다(예: _MRTK 자습서_).
+* 프로젝트를 저장할 적합한 **Location(위치)** 을 선택합니다(예: _D:\MixedRealityLearning_).
 * **Create(만들기)** 단추를 클릭하여 새 Unity 프로젝트를 만들고 시작합니다.
 
 ![새 프로젝트 만들기 창이 채워진 Unity Hub](images/mr-learning-base/base-02-section1-step1-3.png)
@@ -75,7 +75,7 @@ Unity에서 플랫폼 전환이 완료되면 빨간색 **x** 아이콘을 클릭
 
 ## <a name="importing-the-textmeshpro-essential-resources"></a>TextMeshPro 필수 리소스 가져오기
 
-Unity 메뉴에서 **Window** (창) > **TextMeshPro** > **Import TMP Essential Resources** (TMP 필수 리소스 가져오기)를 선택하여 Import Unity Package(Unity 패키지 가져오기) 창을 엽니다.
+Unity 메뉴에서 **Window**(창) > **TextMeshPro** > **Import TMP Essential Resources**(TMP 필수 리소스 가져오기)를 선택하여 Import Unity Package(Unity 패키지 가져오기) 창을 엽니다.
 
 ![Unity Import TMP Essential Resources 메뉴 경로](images/mr-learning-base/base-02-section3-step1-1.png)
 
@@ -112,7 +112,7 @@ Unity가 이전 섹션에서 패키지 가져오기를 완료하면 MRTK Project
 
 ![Unity 프로젝트 구성 메뉴 경로](images/mr-learning-base/base-02-section5-step1-1.png)
 
-MRTK Project Configurator 창에서 **Modify Configurations** (구성 수정) 섹션을 펼치고, 모든 옵션이 선택되어 있는지 확인한 후 **적용** 단추를 클릭하여 설정을 적용합니다.
+MRTK Project Configurator 창에서 **Modify Configurations**(구성 수정) 섹션을 펼치고, 모든 옵션이 선택되어 있는지 확인한 후 **적용** 단추를 클릭하여 설정을 적용합니다.
 
 ![Unity MRTK Project Configurator 창](images/mr-learning-base/base-02-section5-step1-2.png)
 
@@ -145,14 +145,14 @@ MRTK Project Configurator 창에서 **Audio spatializer** 드롭다운을 사용
 > [!TIP]
 > Audio spatializer 속성 설정은 선택 사항이지만, 프로젝트에서 오디오 환경을 향상시킬 수 있습니다. MS HRTF Spatializer로 설정하면 Unity의 AudioSource.spatialize 속성을 사용하도록 설정할 때 이 Spatializer 플러그 인이 사용됩니다. 이 항목에 대한 자세한 내용은 [공간 오디오 자습서](unity-spatial-audio-ch1.md)를 참조하세요.
 
-프로젝트 설정 창에서 **플레이어** > **XR 설정** 을 선택한 다음, **Depth Format** (수준 형식) 드롭다운을 사용하여 **16비트 수준** 을 선택합니다.
+프로젝트 설정 창에서 **플레이어** > **XR 설정** 을 선택한 다음, **Depth Format**(수준 형식) 드롭다운을 사용하여 **16비트 수준** 을 선택합니다.
 
 ![16비트 깊이가 선택된 Unity XR 설정](images/mr-learning-base/base-02-section5-step2-4.png)
 
 > [!TIP]
 > Depth Format을 16비트로 줄이는 것은 선택 사항이지만, 프로젝트에서 그래픽 성능을 향상시킬 수 있습니다. 이 항목에 대한 자세한 내용은 MRTK의 [성능](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html) 설명서의 [깊이 버퍼 공유(HoloLens)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html#depth-buffer-sharing-hololens) 섹션을 참조하세요.
 
-프로젝트 설정 창에서 **플레이어** > **게시 설정** 을 선택한 다음, **패키지 이름** 필드에 적절한 이름(예: _MRTKTutorials-GettingStarted_ )을 입력합니다.
+프로젝트 설정 창에서 **플레이어** > **게시 설정** 을 선택한 다음, **패키지 이름** 필드에 적절한 이름(예: _MRTKTutorials-GettingStarted_)을 입력합니다.
 
 ![패키지 이름이 구성된 Unity 게시 설정](images/mr-learning-base/base-02-section5-step2-5.png)
 
@@ -164,7 +164,7 @@ MRTK Project Configurator 창에서 **Audio spatializer** 드롭다운을 사용
 
 ## <a name="creating-and-configuring-the-scene"></a>장면 만들기 및 구성
 
-Unity 메뉴에서 **파일** > **New Scene** (새 장면)을 선택하여 새 장면을 만듭니다.
+Unity 메뉴에서 **파일** > **New Scene**(새 장면)을 선택하여 새 장면을 만듭니다.
 
 ![Unity New Scene 메뉴 경로](images/mr-learning-base/base-02-section6-step1-1.png)
 
@@ -183,7 +183,7 @@ Unity 메뉴에서 **File(파일)**  > **Save As(다른 이름으로 저장)...*
 
 ![Unity Save As... 메뉴 경로](images/mr-learning-base/base-02-section6-step1-4.png)
 
-Save Scene 창에서 프로젝트의 **Scenes(장면)** 폴더로 이동하여 장면에 적합한 이름(예: _시작_ )을 지정하고, **Save(저장)** 단추를 클릭하여 장면을 저장합니다.
+Save Scene 창에서 프로젝트의 **Scenes(장면)** 폴더로 이동하여 장면에 적합한 이름(예: _시작_)을 지정하고, **Save(저장)** 단추를 클릭하여 장면을 저장합니다.
 
 ![Unity Save Scene Save 프롬프트 창](images/mr-learning-base/base-02-section6-step1-5.png)
 
@@ -197,7 +197,7 @@ Build Settings 창에서 **Add Open Scenes(열려 있는 장면 추가)** 단추
 
 ![UWP가 선택된 Unity Build Settings 창](images/mr-learning-base/base-02-section7-step1-1.png)
 
-Build Universal Windows Platform 창에서 빌드를 저장할 적합한 위치(예: _D:\MixedRealityLearning\Builds_ )를 선택하고, 새 폴더를 만들어 적합한 이름(예: _GettingStarted_ )을 지정한 다음, **Select Folder(폴더 선택)** 단추를 클릭하여 빌드 프로세스를 시작합니다.
+Build Universal Windows Platform 창에서 빌드를 저장할 적합한 위치(예: _D:\MixedRealityLearning\Builds_)를 선택하고, 새 폴더를 만들어 적합한 이름(예: _GettingStarted_)을 지정한 다음, **Select Folder(폴더 선택)** 단추를 클릭하여 빌드 프로세스를 시작합니다.
 
 ![Select Folder 프롬프트 창이 있는 Unity Build Settings 창](images/mr-learning-base/base-02-section7-step1-2.png)
 
@@ -222,7 +222,7 @@ Unity에서 빌드 프로세스가 완료될 때까지 기다립니다.
 > HoloLens(1세대)에 배포하는 경우 **x86** 아키텍처를 선택합니다.
 
 > [!NOTE]
-> HoloLens의 경우 일반적으로 ARM 아키텍처용으로 빌드합니다. 하지만 Unity 2019.3에는 Visual Studio에서 ARM을 빌드 아키텍처로 선택할 때 오류가 발생하는 <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank"><strong>알려진 문제</strong></a>가 있습니다. 권장 해결 방법은 ARM64용으로 빌드하는 것입니다. 그렇게 할 수 없으면 **편집 > 프로젝트 설정 > 플레이어 > 기타 설정** 으로 이동하여 **Graphics Jobs** (그래픽 작업)을 사용하지 않도록 설정합니다.
+> HoloLens의 경우 일반적으로 ARM 아키텍처용으로 빌드합니다. 하지만 Unity 2019.3에는 Visual Studio에서 ARM을 빌드 아키텍처로 선택할 때 오류가 발생하는 <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank"><strong>알려진 문제</strong></a>가 있습니다. 권장 해결 방법은 ARM64용으로 빌드하는 것입니다. 그렇게 할 수 없으면 **편집 > 프로젝트 설정 > 플레이어 > 기타 설정** 으로 이동하여 **Graphics Jobs**(그래픽 작업)을 사용하지 않도록 설정합니다.
 
 > [!NOTE]
 > 디바이스가 대상 옵션으로 보이지 않으면, Visual Studio 솔루션의 시작 프로젝트를 IL2CPP 프로젝트에서 UWP 프로젝트로 변경해야 할 수 있습니다. 이렇게 하려면 솔루션 탐색기에서 YourProjectName(유니버설 Windows)을 마우스 오른쪽 단추로 클릭하고 **시작 프로젝트로 설정** 을 선택합니다.

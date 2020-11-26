@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
-keywords: 혼합 현실, Unity, 자습서, HoloLens
+keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, 음성 인식, Windows 10, LUIS, LUIS 포털, 의도, 엔터티, 발화, 자연어 이해
 ms.localizationpriority: high
-ms.openlocfilehash: 8cebe1fb203aeed9a262a2e9f482993b4775e0a6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b21637fc0630b6cb024dcdbc0a1985979914d3a0
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701305"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678512"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4. 의도 및 자연어 이해 설정
 
@@ -55,7 +55,7 @@ ms.locfileid: "91701305"
 [만들기] 페이지에서 **예측** 옵션을 클릭하고 다음 값을 입력합니다.
 
 * 평가판 구독을 사용하는 경우 **구독** 에 대해 **평가판** 을 선택하고, 그렇지 않으면 다른 구독을 선택합니다.
-* **리소스 그룹** 에 대해 **새로 만들기** 링크를 클릭하고, 적절한 이름(예: *MRKT-Tutorials* )을 입력한 다음, **확인** 을 클릭합니다.
+* **리소스 그룹** 에 대해 **새로 만들기** 링크를 클릭하고, 적절한 이름(예: *MRKT-Tutorials*)을 입력한 다음, **확인** 을 클릭합니다.
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-3.png)
 
@@ -67,8 +67,8 @@ ms.locfileid: "91701305"
 
 [만들기] 페이지에 있는 상태에서 다음 값을 입력합니다.
 
-* **이름** 에 대해 서비스에 적절한 이름을 입력합니다(예: *MRTK-Tutorial-AzureSpeechServices* ).
-* **예측 위치** 에 대해 앱 사용자의 실제 위치와 가까운 위치(예: *(미국) 미국 서부* )를 선택합니다.
+* **이름** 에 대해 서비스에 적절한 이름을 입력합니다(예: *MRTK-Tutorial-AzureSpeechServices*).
+* **예측 위치** 에 대해 앱 사용자의 실제 위치와 가까운 위치(예: *(미국) 미국 서부*)를 선택합니다.
 * **예측 가격 책정 계층** 에 대해 이 자습서에서는 **F0(초당 5개 호출, 월당 10,000개 호출)** 을 선택합니다.
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-4.png)
@@ -111,7 +111,7 @@ ms.locfileid: "91701305"
 
 로그인하면 **내 앱** 페이지로 이동한 다음, **새 앱 만들기** 를 클릭하고, **새 앱 만들기** 팝업 창에서 다음 값을 입력합니다.
 
-* **이름** 에 대해 적절한 이름을 입력합니다(예: *MRTK Tutorials - AzureSpeechServices* ).
+* **이름** 에 대해 적절한 이름을 입력합니다(예: *MRTK Tutorials - AzureSpeechServices*).
 * **문화권** 에 대해 **영어** 를 선택합니다.
 * **설명** 에 대해 필요에 따라 적절한 설명을 입력합니다.
 
@@ -184,7 +184,7 @@ PressButton 의도 페이지에서 빌드 > 앱 자산 > **엔터티** 페이지
 
 [엔터티] 페이지에서 **PressButton** 의도 페이지로 다시 이동합니다.
 
-PressButton 의도 페이지로 돌아가면 **go** , **ahead** 단어를 차례로 클릭한 다음, 상황별 팝업 메뉴에서 **Action(단순)** 을 선택하여 **go ahead** 에 대한 레이블을 **Action** 엔터티 값으로 지정합니다.
+PressButton 의도 페이지로 돌아가면 **go**, **ahead** 단어를 차례로 클릭한 다음, 상황별 팝업 메뉴에서 **Action(단순)** 을 선택하여 **go ahead** 에 대한 레이블을 **Action** 엔터티 값으로 지정합니다.
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-1.png)
 
@@ -211,10 +211,10 @@ PressButton 의도 페이지로 돌아가면 **go** , **ahead** 단어를 차례
 
 이전 2단계 프로세스를 **반복** 하여 Action 및 Target 엔터티 레이블을 각 발화 예제에 할당합니다. 다음 단어에 대한 레이블을 **Target** 엔터티로 지정해야 한다는 점에 유의하세요.
 
-* **hint** (Unity 프로젝트에서 HintsButton을 대상으로 함)
-* **hints** (Unity 프로젝트에서 HintsButton을 대상으로 함)
-* **reset** (Unity 프로젝트에서 ResetButton을 대상으로 함)
-* **launch** (Unity 프로젝트에서 LaunchButton을 대상으로 함)
+* **hint**(Unity 프로젝트에서 HintsButton을 대상으로 함)
+* **hints**(Unity 프로젝트에서 HintsButton을 대상으로 함)
+* **reset**(Unity 프로젝트에서 ResetButton을 대상으로 함)
+* **launch**(Unity 프로젝트에서 LaunchButton을 대상으로 함)
 
 레이블이 모든 발화 예제에 지정되면 PressButton의 의도 페이지가 다음과 같이 표시됩니다.
 

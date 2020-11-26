@@ -6,16 +6,16 @@ ms.author: suwu
 ms.date: 7/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 스트리밍, PC, 홀로그램 앱 원격, 홀로그램 원격 플레이어, 설명서
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 스트리밍, PC, 홀로그램 앱 원격, 홀로그램 원격 플레이어, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 9c60168b409a10a815313b1254a979244763b9e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 5a001088208106176ae771c2bc684674e6ce37a8
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701925"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679782"
 ---
 # <a name="streaming-in-unreal"></a>Unreal의 스트리밍
 

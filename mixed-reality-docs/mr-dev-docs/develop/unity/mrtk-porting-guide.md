@@ -6,19 +6,19 @@ ms.author: grbury
 ms.date: 07/29/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2
-ms.openlocfilehash: 88bee12196099837f46164552c690a6b326f9ba7
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+keywords: Windows Mixed Reality, 테스트, MRTK, MRTK 버전 2, HoloLens 2, unity, 포팅, HoloLens 1세대, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 마이그레이션, 모범 사례, ARM
+ms.openlocfilehash: 84edf3b029140884443c23d685fe03a12161d1b8
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386229"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677392"
 ---
 # <a name="get-your-existing-app-ready-for-hololens-2"></a>HoloLens 2를 위한 기존 앱 준비
 
 ## <a name="overview"></a>개요
 
-이 가이드는 HoloLens(1세대)용 기존 Unity 애플리케이션이 있는 개발자가 HoloLens 2 디바이스용 애플리케이션을 이식하는 것을 지원하기 위해 고안되었습니다. HoloLens(1세대) Unity 애플리케이션을 HoloLens 2로 이식하기 위한 핵심 단계에는 4가지가 있습니다. 
+이 가이드는 HoloLens(1세대)용 기존 Unity 애플리케이션이 있는 개발자가 HoloLens 2 디바이스용 애플리케이션을 이식하는 것을 지원하기 위해 고안되었습니다. HoloLens(1세대) Unity 애플리케이션을 HoloLens 2로 포팅하기 위한 핵심 단계에는 4가지가 있습니다. 
 
 아래 섹션에서는 각 단계에 대한 정보를 자세히 설명합니다.
 
@@ -29,10 +29,10 @@ ms.locfileid: "94386229"
 
 필수 구성 요소:
 
-이식 프로세스를 시작하기 전에 소스 제어를 사용하여 애플리케이션의 원래 상태를 스냅샷으로 저장하는 것이 **좋습니다**. 또한 프로세스 중 여러 시점에서 검사점 상태를 *저장* 하는 것이 좋습니다. 원래 애플리케이션의 Unity 인스턴스를 하나 더 사용하면 이식 과정에서 나란히 비교할 수 있기 때문에 유용할 수 있습니다. 
+포팅 프로세스를 시작하기 전에 소스 제어를 사용하여 애플리케이션의 원래 상태를 스냅샷으로 저장하는 것이 **좋습니다**. 또한 프로세스 중 여러 시점에서 검사점 상태를 *저장* 하는 것이 좋습니다. 원래 애플리케이션의 Unity 인스턴스를 하나 더 사용하면 포팅 과정에서 나란히 비교할 수 있기 때문에 유용할 수 있습니다. 
 
 > [!NOTE]
-> 이식하기 전에 Windows Mixed Reality 개발을 위한 최신 도구를 설치했는지 확인합니다. 대부분의 기존 HoloLens 개발자의 경우 이 작업을 위해 최신 버전의 Visual Studio 2019로 업데이트하고 적절한 Windows SDK를 설치하게 됩니다. 이어지는 내용에서는 여러 다른 Unity 버전과 MRTK(Mixed Reality Toolkit) 버전 2를 좀 더 자세히 알아봅니다.
+> 포팅하기 전에 Windows Mixed Reality 개발을 위한 최신 도구를 설치했는지 확인합니다. 대부분의 기존 HoloLens 개발자의 경우 이 작업을 위해 최신 버전의 Visual Studio 2019로 업데이트하고 적절한 Windows SDK를 설치하게 됩니다. 이어지는 내용에서는 여러 다른 Unity 버전과 MRTK(Mixed Reality Toolkit) 버전 2를 좀 더 자세히 알아봅니다.
 >
 > 자세한 내용은 [도구 설치](../install-the-tools.md)를 참조하세요.
 
@@ -97,9 +97,9 @@ MRTK 버전 2를 사용하는 방법에 대한 자세한 내용은 다음 리소
 
 [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity)를 가져온 후 Unity 프로젝트에 컴파일러 관련 오류가 많이 나타날 가능성이 높습니다. 새로운 네임스페이스 구조 및 새로운 구성 요소 이름 때문에 이러한 오류가 발생하는 것이 가장 일반적입니다. 새로운 네임스페이스 및 구성 요소에 맞게 스크립트를 수정하여 이러한 오류를 계속 해결합니다.
 
-HTK/MRTK와 MRTK v2 간의 특정 API 차이점에 대한 자세한 내용은 [MRTK 버전 2 wiki](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)의 이식 가이드를 참조하세요.
+HTK/MRTK와 MRTK v2 간의 특정 API 차이점에 대한 자세한 내용은 [MRTK 버전 2 wiki](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)의 포팅 가이드를 참조하세요.
 
-### <a name="best-practices"></a>최선의 구현 방법
+### <a name="best-practices"></a>모범 사례
 
 - 기본적으로 [MRTK 표준 셰이더](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)를 사용합니다.
 - 한 번에 한 가지 중요 변경 유형 처리(예: IFocusable에서 [IMixedRealityFocusHandler](https://microsoft.github.io/MixedRealityToolkit-Unity/api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusHandler.html)로의 변경)
@@ -107,7 +107,7 @@ HTK/MRTK와 MRTK v2 간의 특정 API 차이점에 대한 자세한 내용은 [M
 - 가능한 경우 기본 MRTK UX(단추, 슬레이트 등)를 사용합니다.
 - MRTK 파일을 직접 수정하지 않고, MRTK 구성 요소에 대해 래퍼를 만듭니다.
     - 그러면 향후 MRTK 삽입 및 업데이트가 편리해집니다.
-- MRTK에 제공된 샘플 장면(특히 *HandInteractionExamples.scene* )을 검토 및 탐색합니다.
+- MRTK에 제공된 샘플 장면(특히 *HandInteractionExamples.scene*)을 검토 및 탐색합니다.
 - quads, colliders 및 TextMeshPro 텍스트를 사용하여 캔버스 기반 UI를 다시 빌드합니다.
 - [깊이 버퍼 공유](camera-in-unity.md#sharing-your-depth-buffers-with-windows) 또는 [포커스 포인트 설정](focus-point-in-unity.md)을 사용하도록 설정합니다. 성능 향상을 위해 16비트 깊이 버퍼를 사용하는 것이 좋습니다. 색을 렌더링할 때 깊이도 렌더링하는지 확인합니다. Unity는 일반적으로 투명 및 텍스트 gameobject에 대한 깊이를 작성하지 않습니다. 
 - 단일 패스 인스턴스 렌더링 경로를 설정합니다.
@@ -125,7 +125,7 @@ HoloLens(1세대)에서 해당 애플리케이션은 시야각에 맞도록 홀�
 HoloLens 2에 가장 적합하게 애플리케이션 디자인을 업데이트하는 단계는 다음과 같습니다.
 1.  MRTK 구성 요소: 사전 작업에 따라, [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity)를 추가한 경우 HoloLens 2에 맞게 디자인하고 최적화한 다양한 구성 요소/스크립트를 활용할 수 있습니다.
 
-2.  조작 모델: 조작 모델을 업데이트하는 것이 좋습니다. 대부분의 시나리오에서는 응시 및 커밋에서 손 조작으로 전환하는 것이 좋습니다. 홀로그램이 일반적으로 손에 닿지 않는 경우 손으로 전환하면 원거리 조작 포인팅 레이 및 잡기 제스처가 표시됩니다.
+2.  조작 모델: 조작 모델을 업데이트하는 것이 좋습니다. 대부분의 시나리오에서는 응시 및 커밋에서 손 조작으로 전환하는 것이 좋습니다. 홀로그램이 일반적으로 손에 닿지 않는 경우 손으로 전환하면 원거리 조작 포인팅 광선 및 잡기 제스처가 표시됩니다.
 
 3.  홀로그램 배치: 손 상호 작용 모델로 전환한 후에는 손으로 근거리 상호 작용 잡기 제스처를 사용하여 홀로그램을 좀 더 가깝게 옮겨서 직접 상호 작용할 수 있습니다. 직접 잡거나 조작하기 위해 좀 더 가깝게 이동하는 것이 바람직한 홀로그램 유형은 홀로그램을 잡고 조작할 때 HoloLens 2 시야각 내에 잘 맞는 작은 대상 메뉴, 컨트롤, 단추 및 더 작은 홀로그램입니다.
 <br>
@@ -152,7 +152,7 @@ HoloLens 2에 가장 적합하게 애플리케이션 디자인을 업데이트�
 * [도구 설치](../install-the-tools.md)
 * [MRTK - 설치 가이드(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
 * [MRTK - 설명서 홈(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
-* [HoloToolkit/MRTK에서 MRTK 버전 2로 이식(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
+* [HoloToolkit/MRTK에서 MRTK 버전 2로 포팅(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
 * [Unity 권장 설정](recommended-settings-for-unity.md)
 * [혼합 현실의 성능 이해](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 

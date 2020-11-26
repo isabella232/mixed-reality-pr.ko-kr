@@ -6,13 +6,13 @@ ms.author: erpau
 ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Mixed Reality, 디자인, 편안함, HoloLens 2, HoloLens(1세대)
-ms.openlocfilehash: f53c91b10f9dfc37678356c914e486f61eea6382
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Mixed Reality, 디자인, 편안함, HoloLens 2, HoloLens(1세대), 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 보행
+ms.openlocfilehash: f4edc048086e933a451290a8ca9f19f588797963
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340651"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702659"
 ---
 # <a name="comfort"></a>편안함
 
@@ -137,9 +137,9 @@ Windows Mixed Reality 몰입형 HMD에는 IPD 또는 VO에 대한 자동 보정�
 ## <a name="holographic-frame-considerations"></a>홀로그램 프레임 고려 사항
 
 큰 개체 또는 많은 개체가 포함된 혼합 현실 환경의 경우 콘텐츠와 상호 작용하는 데 필요한 머리와 목의 움직임에 대한 양을 고려해야 합니다. 환경에서는 머리 움직임의 측면에서 다음 세 가지 범주로 나눌 수 있습니다. 
-* **가로** (옆으로)
-* **세로** (위아래로)
-* **몰입형** (가로 및 세로 모두)
+* **가로**(옆으로)
+* **세로**(위아래로)
+* **몰입형**(가로 및 세로 모두)
  
 가능하면 대부분의 상호 작용을 가로 또는 세로 범주로 제한합니다. 사용자의 머리가 중립 위치에 있는 동안 대부분의 환경이 홀로그램 프레임의 가운데에서 수행되는 것이 가장 좋습니다. 사용자가 보기를 자연스럽지 않은 머리 위치로 계속 이동하게 하는 상호 작용을 방지합니다(예: 항상 주요 메뉴 상호 작용에 액세스하려고 조회하는 경우).
 
@@ -162,13 +162,6 @@ Windows Mixed Reality 몰입형 HMD에는 IPD 또는 VO에 대한 자동 보정�
 ## <a name="arm-positions"></a>팔 위치
 
 사용자가 경험하는 동안 줄곧 손을 들어야 하는 경우 근육 피로가 누적될 수 있습니다. 또한 사용자가 에어 탭 제스처를 오랫동안 반복적으로 수행하도록 요구하는 것도 지치게 할 수 있습니다. 따라서 환경에서 지속적이고 반복적인 제스처 입력을 요구하지 않도록 방지하는 것이 좋습니다. 이 목표는 짧은 휴식 시간을 마련하거나 제스처, 음성 입력을 통해 앱과의 상호 작용을 도모하여 달성 가능합니다.
-
-## <a name="next-discovery-checkpoint"></a>다음 검색 검사점
-
-준비된 [검색 과정](../discover/get-started-with-mr.md)을 수행하는 경우 Mixed Reality에 대한 기본 사항을 살펴보게 됩니다. 이제 다음 기본 항목을 진행할 수 있습니다. 
-
-> [!div class="nextstepaction"]
-> [사용자에게 세계를 표시하는 방법 - (홀로그램 프레임)](../design/holographic-frame.md)
 
 ## <a name="see-also"></a>참고 항목
 * [응시](gaze-and-commit.md)

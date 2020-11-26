@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 혼합 현실, Unity, 자습서, HoloLens
+keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: aeda463610f1fb1205eade556a2c2b9bc07a4fde
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 062c39ab6973c7c71e305cfc7a695fb250c76596
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353481"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679262"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Photon Unity 네트워킹 설정
 
@@ -32,12 +32,12 @@ ms.locfileid: "93353481"
 
 이를 위해 먼저 [프로젝트 초기화 및 첫 번째 애플리케이션 배포](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
 
-1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름(예: *MRTK Tutorials* ) 지정
+1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름(예: *MRTK Tutorials*) 지정
 1. [빌드 플랫폼 전환](mr-learning-base-02.md#configuring-the-unity-project)
 1. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 1. [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
 1. [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project)
-1. [장면 만들기 및 구성](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름(예: *MultiUserCapabilities* ) 지정
+1. [장면 만들기 및 구성](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름(예: *MultiUserCapabilities*) 지정
 
 그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 다음을 수행합니다.
 
@@ -50,7 +50,7 @@ Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 차례로 선택�
 
 ![Unity Player 설정](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-**게시 설정** 에서 **기능** 섹션까지 아래로 스크롤하여 위의 [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project) 단계 중에 사용하도록 설정한 **InternetClient** , **Microphone** , **SpatialPerception** 및 **GazeInput** 기능이 사용하도록 설정되어 있는지 다시 확인합니다.
+**게시 설정** 에서 **기능** 섹션까지 아래로 스크롤하여 위의 [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project) 단계 중에 사용하도록 설정한 **InternetClient**, **Microphone**, **SpatialPerception** 및 **GazeInput** 기능이 사용하도록 설정되어 있는지 다시 확인합니다.
 
 그런 다음, 다음과 같은 추가 기능을 사용하도록 설정합니다.
 
@@ -118,7 +118,7 @@ Photon <a href="https://dashboard.photonengine.com/account/signin" target="_blan
 Create a New Application(새 애플리케이션 만들기) 페이지에서 다음 값을 입력합니다.
 
 * Photon 유형의 경우 PUN을 선택합니다.
-* 이름에는 적절한 이름(예: _MRTK Tutorials_ )을 입력합니다.
+* 이름에는 적절한 이름(예: _MRTK Tutorials_)을 입력합니다.
 * 설명에는 적절한 설명(선택 사항)을 입력합니다.
 * URL 필드는 비워둡니다.
 

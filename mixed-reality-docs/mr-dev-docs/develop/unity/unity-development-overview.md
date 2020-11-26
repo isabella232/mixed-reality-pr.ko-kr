@@ -6,13 +6,13 @@ ms.author: kurtie
 ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unity, 혼합 현실, 개발, 시작, 새 프로젝트, 포팅, 기능, 카메라, 시뮬레이션, 에뮬레이션, 설명서
-ms.openlocfilehash: 006814c17d7e2e7c343f28b83de845674c079a95
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: Unity, 혼합 현실, 개발, 시작, 새 프로젝트, 포팅, 기능, 카메라, 시뮬레이션, 에뮬레이션, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 공간 매핑, 음성 입력, 위치를 찾을 수 있는 카메라, 에뮬레이터, Azure, 자습서
+ms.openlocfilehash: 9a9a5bc47327b3bd23ac6212b8b9f12787b74e4c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638570"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679902"
 ---
 # <a name="unity-development-overview"></a>Unity 개발 개요
 

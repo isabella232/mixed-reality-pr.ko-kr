@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 혼합 현실, Unity, 자습서, HoloLens
+keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 65672bad9a967e11e7feb7efc45759608e9c9e76
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: ec24a8dcdc8708e61184056df6d282f4496cb453
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353431"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678252"
 ---
 # <a name="5-integrating-azure-spatial-anchors-into-a-shared-experience"></a>5. 공유 환경에 Azure Spatial Anchors 통합
 
@@ -105,8 +105,8 @@ Hierarchy 창에서 **TableAnchor** 개체를 선택한 다음, Inspector 창에
 
 Unity 프로젝트를 빌드하여 두 개의 디바이스에 배포하면 Azure Anchor ID를 공유하여 디바이스 간의 공간 맞춤을 구현할 수 있습니다. 이를 테스트하려면 다음 단계를 수행합니다.
 
-1. 디바이스 1에서: **앱 시작** (Rover 탐색기가 인스턴스화되어 테이블에 배치됩니다.)
-2. 디바이스 2에서: **앱 시작** (두 사용자 모두에게 Rover 탐색기가 있는 테이블이 보이지만 테이블이 동일한 위치에 나타나지 않고 사용자가 있는 곳에 사용자 아바타가 나타나지 않습니다.)
+1. 디바이스 1에서: **앱 시작**(Rover 탐색기가 인스턴스화되어 테이블에 배치됩니다.)
+2. 디바이스 2에서: **앱 시작**(두 사용자 모두에게 Rover 탐색기가 있는 테이블이 보이지만 테이블이 동일한 위치에 나타나지 않고 사용자가 있는 곳에 사용자 아바타가 나타나지 않습니다.)
 3. 디바이스 1에서: **Start Azure Session** 단추를 누릅니다.
 4. 디바이스 1에서: **Create Azure Anchor** 단추를 누릅니다. (TableAnchor 개체의 위치에 앵커를 만들고 Azure 리소스에 앵커 정보를 저장합니다.)
 5. 디바이스 1에서: **Share Azure Anchor** 단추를 누릅니다. (앵커 ID를 다른 사용자와 실시간으로 공유합니다.)

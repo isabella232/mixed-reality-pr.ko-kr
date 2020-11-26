@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 혼합 현실, Unity, 자습서, HoloLens
+keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 공간 인식
 ms.localizationpriority: high
-ms.openlocfilehash: 15fa4285fd6dd60aac9ba3869430649db5b40f91
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 7ac81c21e1658798b7f512c4afa2eea9f509d827
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353261"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679322"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. MRTK 프로필 구성
 
@@ -57,7 +57,7 @@ Hierarchy 창에서 **MixedRealityToolkit** 개체를 선택한 다음, Inspecto
 
 ![Unity MixedRealityToolkit 구성 요소 Copy & Customize 단추](images/mr-learning-base/base-03-section1-step1-2.png)
 
-Clone Profile 창에서 적절한 **프로필 이름** (예: _GettingStarted_HoloLens2ConfigurationProfile_ )을 입력한 다음, **복제** 단추를 클릭하여 **DefaultHololens2ConfigurationProfile** 의 편집 가능한 복사본을 만듭니다.
+Clone Profile 창에서 적절한 **프로필 이름**(예: _GettingStarted_HoloLens2ConfigurationProfile_)을 입력한 다음, **복제** 단추를 클릭하여 **DefaultHololens2ConfigurationProfile** 의 편집 가능한 복사본을 만듭니다.
 
 ![Unity MixedRealityToolkit 복제 Configuration Profile 팝업 창](images/mr-learning-base/base-03-section1-step1-3.png)
 
@@ -85,7 +85,7 @@ Hierarchy 창에서 **MixedRealityToolkit** 개체를 선택한 다음, Inspecto
 
 ![공간 인식 탭이 선택된 Unity MixedRealityToolkit 구성 요소](images/mr-learning-base/base-03-section1-step3-1.png)
 
-Clone Profile 창에서 적절한 **프로필 이름** (예: _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_ )을 입력한 다음, **복제** 단추를 클릭하여 **DefaultMixedRealitySpatialAwarenessSystemProfile** 의 편집 가능한 복사본을 만듭니다.
+Clone Profile 창에서 적절한 **프로필 이름**(예: _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_)을 입력한 다음, **복제** 단추를 클릭하여 **DefaultMixedRealitySpatialAwarenessSystemProfile** 의 편집 가능한 복사본을 만듭니다.
 
 ![Unity MixedRealityToolkit 복제 공간 인식 시스템 프로필 팝업 창](images/mr-learning-base/base-03-section1-step3-2.png)
 
@@ -99,7 +99,7 @@ Clone Profile 창에서 적절한 **프로필 이름** (예: _GettingStarted_Mix
 
 ![Windows Mixed Reality 공간 메시 관찰자 섹션이 확장된 Unity MixedRealityToolkit 구성 요소](images/mr-learning-base/base-03-section1-step4-1.png)
 
-Clone Profile 창에서 적절한 **프로필 이름** (예: _GettingStarted_MixedRealitySpatialAwarenessMeshObserverProfile_ )을 입력한 다음, **복제** 단추를 클릭하여 **DefaultMixedRealitySpatialAwarenessMeshObserverProfile** 의 편집 가능한 복사본을 만듭니다.
+Clone Profile 창에서 적절한 **프로필 이름**(예: _GettingStarted_MixedRealitySpatialAwarenessMeshObserverProfile_)을 입력한 다음, **복제** 단추를 클릭하여 **DefaultMixedRealitySpatialAwarenessMeshObserverProfile** 의 편집 가능한 복사본을 만듭니다.
 
 ![Unity MixedRealityToolkit 복제 공간 메시 관찰자 프로필 팝업 창](images/mr-learning-base/base-03-section1-step4-2.png)
 

@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 스트리밍, 원격, 혼합 현실, 개발, 시작, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 특징, 홀로그램, 게임 개발
-ms.openlocfilehash: 9b953cd0ea9aab92b2306da63a948b470363d0e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 스트리밍, 원격, 혼합 현실, 개발, 시작, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, 홀로그램, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 공간 오디오
+ms.openlocfilehash: 25fa60b4e55ec0f3bd0875ad88834981d198f7f5
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702115"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679802"
 ---
 # <a name="spatial-audio-in-unreal"></a>Unreal의 공간 오디오
 

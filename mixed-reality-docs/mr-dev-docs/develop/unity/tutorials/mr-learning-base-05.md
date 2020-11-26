@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 혼합 현실, Unity, 자습서, HoloLens
+keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, solvers
 ms.localizationpriority: high
-ms.openlocfilehash: 64b5c3c719ce72260a10226d22c178d4016e403b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: fb86cdfe82e8d89c65e8513b52e2de49f52a2f04
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353531"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679302"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Solver를 사용하여 동적 콘텐츠 만들기
 
@@ -22,13 +22,13 @@ ms.locfileid: "93353531"
 
 ## <a name="objectives"></a>목표
 
-* MRTK 해결기 소개
+* MRTK의 Solver 소개
 * Solver를 사용하여 사용자를 개체로 안내하는 방법 알아보기
 * Solver를 사용하여 개체의 위치를 변경하는 방법 알아보기
 
-## <a name="location-of-solvers-in-the-mrtk"></a>MRTK에서 해결기의 위치
+## <a name="location-of-solvers-in-the-mrtk"></a>MRTK에서 Solver의 위치
 
- MRTK의 해결기는 MRTK SDK 폴더에 있습니다. 프로젝트에서 사용할 수 있는 Solver를 보려면 프로젝트 창에서 **Assets** > **MRTK** > **SDK** > **Features** > **Utilities** > **Solvers** 로 이동합니다.
+ MRTK의 Solver는 MRTK SDK 폴더에 있습니다. 프로젝트에서 사용할 수 있는 Solver를 보려면 프로젝트 창에서 **Assets** > **MRTK** > **SDK** > **Features** > **Utilities** > **Solvers** 로 이동합니다.
 
 ![Solvers 폴더가 선택된 Unity 프로젝트 창](images/mr-learning-base/base-05-section1-step1-1.png)
 
@@ -58,9 +58,9 @@ ms.locfileid: "93353531"
 
 DirectionalIndicator 및 SolverHandler 구성 요소를 다음과 같이 구성합니다.
 
-* **SolverHandler** 구성 요소의 **Tracked Target Type** (추적 대상 유형)이 **Head** 로 설정되어 있는지 확인
-* **RoverExplorer** 를 Hierarchy(계층 구조) 창에서 **None (Transform)** 필드로 끌어서 놓아 **DirectionalIndicator** 구성 요소의 **Directional Target** (방향성 대상)에 할당
-* **View Offset** (보기 오프셋)을 0.2로 변경
+* **SolverHandler** 구성 요소의 **Tracked Target Type**(추적 대상 유형)이 **Head** 로 설정되어 있는지 확인
+* **RoverExplorer** 를 Hierarchy(계층 구조) 창에서 **None (Transform)** 필드로 끌어서 놓아 **DirectionalIndicator** 구성 요소의 **Directional Target**(방향성 대상)에 할당
+* **View Offset**(보기 오프셋)을 0.2로 변경
 
 ![DirectionalIndicator Solver 구성 요소가 구성된 Unity](images/mr-learning-base/base-05-section2-step1-3.png)
 
@@ -81,11 +81,11 @@ DirectionalIndicator 및 SolverHandler 구성 요소를 다음과 같이 구성�
 
 ## <a name="using-the-tap-to-place-solver-to-reposition-objects"></a>Tap to Place(탭하여 위치 지정) Solver를 사용하여 개체 위치 변경
 
-Hierarchy(계층 구조) 창에서 RoverExplorer > **RoverAssembly** 개체를 선택한 다음, Inspector(인스펙터) 창에서 **Add Component** (구성 요소 추가) 단추를 사용하여 **Tap To Place(스크립트)** 구성 요소를 추가하고 다음과 같이 구성합니다.
+Hierarchy(계층 구조) 창에서 RoverExplorer > **RoverAssembly** 개체를 선택한 다음, Inspector(인스펙터) 창에서 **Add Component**(구성 요소 추가) 단추를 사용하여 **Tap To Place(스크립트)** 구성 요소를 추가하고 다음과 같이 구성합니다.
 
-* **SolverHandler** 구성 요소의 **Tracked Target Type** (추적 대상 유형)이 **Head** 로 설정되어 있는지 확인
-* **Keep Orientation Vertical** (방향을 세로로 유지) 확인란 선택
-* **Magnetic Surfaces** (자기 표면) > **Element 0** (요소 0) 드롭다운에서 **Spatial Awareness** (공간 인식)를 제외한 모든 옵션을 선택 취소
+* **SolverHandler** 구성 요소의 **Tracked Target Type**(추적 대상 유형)이 **Head** 로 설정되어 있는지 확인
+* **Keep Orientation Vertical**(방향을 세로로 유지) 확인란 선택
+* **Magnetic Surfaces**(자기 표면) > **Element 0**(요소 0) 드롭다운에서 **Spatial Awareness**(공간 인식)를 제외한 모든 옵션을 선택 취소
 
 ![TapToPlace Solver 구성 요소가 추가되고 구성된 Unity](images/mr-learning-base/base-05-section3-step1-1.png)
 
@@ -104,20 +104,20 @@ Hierarchy(계층 구조) 창에서 RoverAssembly 개체를 선택한 상태로 I
 이벤트를 다음과 같이 구성합니다.
 
 * **RoverAssembly** 개체를 Hierarchy(계층 구조) 창에서 **None (Object)** 필드로 끌어서 놓아 On Placing Started () 이벤트의 수신기로 지정
-* **No Function** (함수 없음) 드롭다운에서 **TapToPlace** > **float SurfaceNormalOffset** 을 선택하여 이벤트가 트리거될 때 SurfaceNormalOffset 속성 값을 업데이트
+* **No Function**(함수 없음) 드롭다운에서 **TapToPlace** > **float SurfaceNormalOffset** 을 선택하여 이벤트가 트리거될 때 SurfaceNormalOffset 속성 값을 업데이트
 * 인수가 **0** 으로 설정되어 있는지 확인
 
 ![TapToPlace OnPlacingStarted 이벤트가 구성된 Unity](images/mr-learning-base/base-05-section3-step1-3.png)
 
-Hierarchy(계층 구조) 창에서 빈 지점을 마우스 오른쪽 단추로 클릭하고 **3D 개체** > **큐브** 를 선택하여 지면을 나타내는 임시 개체를 생성하고 **Transform** (변환) 구성 요소를 다음과 같이 구성합니다.
+Hierarchy(계층 구조) 창에서 빈 지점을 마우스 오른쪽 단추로 클릭하고 **3D 개체** > **큐브** 를 선택하여 지면을 나타내는 임시 개체를 생성하고 **Transform**(변환) 구성 요소를 다음과 같이 구성합니다.
 
-* **위치** : X = 0, Y = -1.65, Z = 6
-* **회전** : X = 0, Y = 0, Z = 0
-* **배율** : X = 10, Y = 0.2, Z = 10
+* **위치**: X = 0, Y = -1.65, Z = 6
+* **회전**: X = 0, Y = 0, Z = 0
+* **배율**: X = 10, Y = 0.2, Z = 10
 
 ![임시 그라운드 큐브 개체가 추가되고 배치된 Unity](images/mr-learning-base/base-05-section3-step1-4.png)
 
-Hierarchy(계층 구조) 창에서 임시 큐브를 선택한 상태로 Inspector(인스펙터) 창에서 **레이어** 드롭다운을 사용하여 큐브의 레이어 설정에 **Spatial Awareness** (공간 인식) 레이어만 포함하도록 변경합니다.
+Hierarchy(계층 구조) 창에서 임시 큐브를 선택한 상태로 Inspector(인스펙터) 창에서 **레이어** 드롭다운을 사용하여 큐브의 레이어 설정에 **Spatial Awareness**(공간 인식) 레이어만 포함하도록 변경합니다.
 
 ![임시 그라운드 큐브 개체 계층이 Spatial Awareness로 설정된 Unity](images/mr-learning-base/base-05-section3-step1-5.png)
 

@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 혼합 현실, Unity, 자습서, HoloLens
+keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, solvers, 그리드 개체 컬렉션
 ms.localizationpriority: high
-ms.openlocfilehash: 849de7c50adc8ff1da5262ad46fae50cce48e953
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: b49d1b93b98a68e253239647262edc737fdbeb58
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353221"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679312"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. 장면에서 개체 위치 지정
 
@@ -53,9 +53,9 @@ Hierarchy 창에서 빈 영역을 마우스 오른쪽 단추로 클릭하고, **
 
 RoverExplorer 개체가 선택된 상태에서 Inspector 창에서 다음과 같이 **Transform** 구성 요소를 구성합니다.
 
-* **위치** : X = 0, Y = -0.6, Z = 2
-* **회전** : X = 0, Y = 0, Z = 0
-* **크기 조정** : X = 1, Y = 1, Z = 1
+* **위치**: X = 0, Y = -0.6, Z = 2
+* **회전**: X = 0, Y = 0, Z = 0
+* **크기 조정**: X = 1, Y = 1, Z = 1
 
 ![RoverExplorer 개체가 선택되고 배치된 Unity](images/mr-learning-base/base-04-section2-step1-3.png)
 
@@ -73,9 +73,9 @@ Project 창에서 **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** �
 
 Project 창에서 **Table** 프리팹을 클릭하여 RoverExplorer 개체의 자식이 되도록 **RoverExplorer** 개체에 끌어 놓은 다음, Inspector 창에서 다음과 같이 **Transform** 구성 요소를 구성합니다.
 
-* **위치** : X = 0, Y = -0.005, Z = 0
-* **회전** : X = 0, Y = 0, Z = 0
-* **크기 조정** : X = 1.2, Y = 0.01, Z = 1.2
+* **위치**: X = 0, Y = -0.005, Z = 0
+* **회전**: X = 0, Y = 0, Z = 0
+* **크기 조정**: X = 1.2, Y = 0.01, Z = 1.2
 
 ![새로 추가한 Table 프리팹이 선택되고 배치된 Unity](images/mr-learning-base/base-04-section3-step1-2.png)
 
@@ -84,9 +84,9 @@ Project 창에서 **Table** 프리팹을 클릭하여 RoverExplorer 개체의 �
 
 Project 창에서 **RoverAssembly** 프리팹을 클릭하여 RoverExplorer 개체의 자식으로 만들도록 **RoverExplorer** 개체로 끌어 놓은 다음, Inspector 창에서 다음과 같이 **Transform** 구성 요소를 구성합니다.
 
-* **위치** : X = -0.1, Y = 0, Z = 0
-* **회전** : X = 0, Y = -135, Z = 0
-* **크기 조정** : X = 1, Y = 1, Z = 1
+* **위치**: X = -0.1, Y = 0, Z = 0
+* **회전**: X = 0, Y = -135, Z = 0
+* **크기 조정**: X = 1, Y = 1, Z = 1
 
 ![새로 추가한 RoverAssembly 프리팹이 선택되고 배치된 Unity](images/mr-learning-base/base-04-section3-step1-3.png)
 
@@ -94,9 +94,9 @@ Project 창에서 **RoverAssembly** 프리팹을 클릭하여 RoverExplorer 개�
 
 Hierarchy 창에서 **RoverExplorer** 개체를 마우스 오른쪽 단추로 클릭하고 **빈 항목 만들기** 를 선택하여 빈 개체를 RoverExplorer의 자식으로 추가하고, 개체 이름을 **RoverParts** 로 설정하고 **Transform** 구성 요소를 다음과 같이 구성합니다.
 
-* **위치** : X = 0, Y = 0.06, Z = 0
-* **회전** : X = 0, Y = 90, Z = 0
-* **크기 조정** : X = 1, Y = 1, Z = 1
+* **위치**: X = 0, Y = 0.06, Z = 0
+* **회전**: X = 0, Y = 90, Z = 0
+* **크기 조정**: X = 1, Y = 1, Z = 1
 
 ![새로 만든 RoverParts 개체가 선택되고 배치된 Unity](images/mr-learning-base/base-04-section4-step1-1.png)
 
@@ -128,10 +128,10 @@ Hierarchy 창에서 **RoverParts** 개체를 선택한 다음, Inspector 창에�
 
 다음과 같이 **GridObjectCollection** 구성 요소 값을 구성합니다.
 
-* **정렬 유형** : 사전순
-* **레이아웃** : 수평
-* **셀 너비** : 0.25
-* **부모에서의 거리** : 0.38
+* **정렬 유형**: 사전순
+* **레이아웃**: 수평
+* **셀 너비**: 0.25
+* **부모에서의 거리**: 0.38
 
 ![GridObjectCollection 구성 요소가 구성된 Unity](images/mr-learning-base/base-04-section4-step1-7.png)
 
@@ -143,4 +143,4 @@ Hierarchy 창에서 **RoverParts** 개체를 선택한 다음, Inspector 창에�
 
 이 자습서에서는 사용자를 기준으로 장면에 개체를 배치하고 MRTK의 그리드 개체 컬렉션 기능을 사용하여 컬렉션의 개체를 구성하는 방법을 배웠습니다.
 
-[다음 자습서: 5. 해결기를 사용하여 동적 콘텐츠 만들기](mr-learning-base-05.md)
+[다음 자습서: 5. Solver를 사용하여 동적 콘텐츠 만들기](mr-learning-base-05.md)

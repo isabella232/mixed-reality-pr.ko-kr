@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 혼합 현실, Unity, 자습서, HoloLens
+keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, solvers, 시선 추적, 음성 명령
 ms.localizationpriority: high
-ms.openlocfilehash: 992d864d7e016c3d0906366d10993ff0559afc06
-ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
+ms.openlocfilehash: 14feba57c7a8995648d108ffa5e4af95c4fa2827
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93416901"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679332"
 ---
 # <a name="1-introduction-to-the-getting-started-tutorials"></a>1. 시작 자습서 소개
 
@@ -26,7 +26,7 @@ ms.locfileid: "93416901"
 2. [프로젝트 초기화 및 첫 번째 애플리케이션 배포](mr-learning-base-02.md)
 3. [MRTK 프로필 구성](mr-learning-base-03.md)
 4. [장면에서 개체 위치 지정](mr-learning-base-04.md)
-5. [해결기를 사용하여 동적 콘텐츠 만들기](mr-learning-base-05.md)
+5. [Solver를 사용하여 동적 콘텐츠 만들기](mr-learning-base-05.md)
 6. [사용자 인터페이스 만들기](mr-learning-base-06.md)
 7. [3D 개체와 상호 작용](mr-learning-base-07.md)
 8. [시선 추적 사용](mr-learning-base-08.md)

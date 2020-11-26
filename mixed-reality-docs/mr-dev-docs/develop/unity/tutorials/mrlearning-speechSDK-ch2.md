@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 06/27/2019
 ms.topic: article
-keywords: 혼합 현실, Unity, 자습서, HoloLens
+keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, 음성 인식, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: a7fa1bdaa72d341eaa49ac70dfa926d8f9bbad7a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d5b0e5140c698996c051eab10064d99280482886
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702205"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679732"
 ---
 # <a name="2-using-speech-recognition-to-execute-commands"></a>2. 음성 인식을 사용하여 명령 실행
 
@@ -26,8 +26,8 @@ ms.locfileid: "91702205"
 
 [계층 구조] 창에서 **Lunarcom** 개체를 선택한 다음, [검사기] 창에서 **구성 요소 추가** 단추를 사용하여 **Lunarcom 실행 단어 인식기(스크립트)** 구성 요소를 Lunarcom 개체에 추가하고 다음과 같이 구성합니다.
 
-* **실행 단어** 필드에서 적절한 구를 입력합니다(예: _터미널 활성화_ ).
-* **해제 단어** 필드에서 적절한 구(예: _터미널 해제_ )를 입력합니다.
+* **실행 단어** 필드에서 적절한 구를 입력합니다(예: _터미널 활성화_).
+* **해제 단어** 필드에서 적절한 구(예: _터미널 해제_)를 입력합니다.
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-1.png)
 

@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 07/01/2020
 ms.topic: tutorial
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, azure 개발, spatial anchors, 혼합 현실, 개발, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 홀로그램, 게임 개발
-ms.openlocfilehash: 5f1f7ef0cb55714ed87bbc3e827d77d3e2694084
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, azure development, spatial anchors, 혼합 현실, 개발, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 홀로그램, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 05a4b221961fa9b3a150eb8ef9f8bd2f77f5b955
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701230"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679872"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Unreal의 Azure Spatial Anchors
 
@@ -111,7 +111,7 @@ Unreal 장면 구성 요소에 대한 Azure Spatial Anchor를 생성하고 저�
 
 ![Spatial Anchors 플러그 인](images/asa-unreal/unreal-spatial-anchors-img-11.png)
 
-2. 새로 만든 AR Pin을 사용하여 **Create Cloud Anchor** (클라우드 앵커 만들기)를 호출합니다.
+2. 새로 만든 AR Pin을 사용하여 **Create Cloud Anchor**(클라우드 앵커 만들기)를 호출합니다.
     * Create Cloud Anchor(클라우드 앵커 만들기)는 Azure Spatial Anchor 서비스가 아닌 로컬에 Azure Spatial Anchor를 만듭니다. Azure Spatial Anchor의 매개 변수(예: 만료 날짜)는 서비스를 사용하여 Azure Spatial Anchor를 만들기 전에 설정할 수 있습니다.
 
 ![Spatial Anchors 플러그 인](images/asa-unreal/unreal-spatial-anchors-img-12.png)
@@ -127,12 +127,12 @@ Unreal 장면 구성 요소에 대한 Azure Spatial Anchor를 생성하고 저�
 
 ## <a name="saving-an-anchor"></a>앵커 저장
 
-매개 변수를 사용하여 Azure Spatial Anchor를 구성한 후 **Save Cloud Anchor** (클라우드 앵커 저장)를 호출합니다. Save Cloud Anchor(클라우드 앵커 저장)는 Azure Spatial Anchors 서비스에 대한 앵커를 선언합니다. Save Cloud Anchor(클라우드 앵커 저장) 호출이 성공하면 Azure Spatial Anchor 서비스의 다른 사용자가 Azure Spatial Anchor를 사용할 수 있습니다.  
+매개 변수를 사용하여 Azure Spatial Anchor를 구성한 후 **Save Cloud Anchor**(클라우드 앵커 저장)를 호출합니다. Save Cloud Anchor(클라우드 앵커 저장)는 Azure Spatial Anchors 서비스에 대한 앵커를 선언합니다. Save Cloud Anchor(클라우드 앵커 저장) 호출이 성공하면 Azure Spatial Anchor 서비스의 다른 사용자가 Azure Spatial Anchor를 사용할 수 있습니다.  
 
 ![Spatial Anchors 플러그 인](images/asa-unreal/unreal-spatial-anchors-img-15.png)
 
 > [!NOTE]
-> Save Cloud Anchor(클라우드 앵커 저장)는 비동기 함수이며 게임 스레드 이벤트(예: **EventTick** )에서만 호출할 수 있습니다. Save Cloud Anchor(클라우드 앵커 저장)는 사용자 지정 청사진 함수에 사용 가능한 청사진 함수로 나타나지 않을 수 있습니다. 하지만 Pawn 이벤트 그래프 청사진 편집기에서는 사용할 수 있습니다.
+> Save Cloud Anchor(클라우드 앵커 저장)는 비동기 함수이며 게임 스레드 이벤트(예: **EventTick**)에서만 호출할 수 있습니다. Save Cloud Anchor(클라우드 앵커 저장)는 사용자 지정 청사진 함수에 사용 가능한 청사진 함수로 나타나지 않을 수 있습니다. 하지만 Pawn 이벤트 그래프 청사진 편집기에서는 사용할 수 있습니다.
 
 아래 예에서 Azure Spatial Anchor는 입력 이벤트 콜백 중에 세트에 저장됩니다. 그런 다음, EventTick에 앵커가 저장됩니다. Azure Spatial Anchor를 저장하려면 Azure Spatial Anchors 세션에서 생성한 공간 데이터의 양에 따라 여러 번 시도가 필요할 수 있습니다. 그래서 Save 호출이 성공했는지 여부를 확인하는 것이 좋습니다.
 
@@ -144,7 +144,7 @@ Unreal 장면 구성 요소에 대한 Azure Spatial Anchor를 생성하고 저�
 
 ## <a name="deleting-an-anchor"></a>앵커 삭제
 
-**Delete Cloud Anchor** (클라우드 앵커 삭제)를 호출하여 Azure Spatial Anchor 서비스에서 앵커를 삭제할 수 있습니다.
+**Delete Cloud Anchor**(클라우드 앵커 삭제)를 호출하여 Azure Spatial Anchor 서비스에서 앵커를 삭제할 수 있습니다.
 
 ![Spatial Anchors 플러그 인](images/asa-unreal/unreal-spatial-anchors-img-17.png)
 
@@ -174,7 +174,7 @@ Azure Spatial Anchors를 만드는 것 외에도 Azure Spatial Anchors 서비스
 
 3. **AzureSpatialAnchorsEvent** 구성 요소에 대한 **ASAAnchor Located 대리자** 를 구독합니다.
     * 대리자는 Azure Spatial Anchors 계정과 연결된 새 앵커가 배치되는 경우 해당 애플리케이션에 알려줍니다.
-    * 이벤트 콜백을 사용하면 Azure Spatial Anchors 세션을 사용하여 피어가 만든 Azure Spatial Anchors에는 기본적으로 AR Pin이 생성되지 않습니다. 감지된 Azure Spatial Anchor에 대한 AR Pin을 만들려면 개발자가 **Create ARPin Around Azure Cloud Spatial Anchor** (Azure Cloud Spatial Anchor에 대한 ARPin 만들기)를 호출하면 됩니다.
+    * 이벤트 콜백을 사용하면 Azure Spatial Anchors 세션을 사용하여 피어가 만든 Azure Spatial Anchors에는 기본적으로 AR Pin이 생성되지 않습니다. 감지된 Azure Spatial Anchor에 대한 AR Pin을 만들려면 개발자가 **Create ARPin Around Azure Cloud Spatial Anchor**(Azure Cloud Spatial Anchor에 대한 ARPin 만들기)를 호출하면 됩니다.
 
 ![Spatial Anchors 플러그 인](images/asa-unreal/unreal-spatial-anchors-img-20.png)
 
@@ -183,13 +183,13 @@ Azure Spatial Anchor 서비스를 사용하여 피어에서 만든 Azure Spatial
 2. **AzureSpatialAnchorsLocateCriteria** 를 만듭니다.
     * 다양한 위치 매개 변수(예: 사용자와의 거리 또는 다른 앵커와의 거리)를 지정할 수 있습니다.
 3. **AzureSpatialAnchorsLocateCritieria** 에서 원하는 Azure Spatial Anchor 식별자를 선언합니다.
-4. **Create Watcher** (감시자 만들기)를 호출합니다.
+4. **Create Watcher**(감시자 만들기)를 호출합니다.
 
 ![Spatial Anchors 플러그 인](images/asa-unreal/unreal-spatial-anchors-img-21.png)
 
 이제 애플리케이션이 Azure Spatial Anchors 서비스에 알려진 Azure Spatial Anchors를 찾기 시작합니다. 따라서, 피어에서 만든 Azure Spatial Anchors를 사용자가 찾을 수 있습니다.
 
-Azure Spatial Anchor를 찾은 후 **Stop Watcher** (감시자 중지)를 호출하여 Azure Spatial Anchors Watcher를 중지하고 감시자 리소스를 정리합니다.
+Azure Spatial Anchor를 찾은 후 **Stop Watcher**(감시자 중지)를 호출하여 Azure Spatial Anchors Watcher를 중지하고 감시자 리소스를 정리합니다.
 
 ![Spatial Anchors 플러그 인](images/asa-unreal/unreal-spatial-anchors-img-22.png)
 

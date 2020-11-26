@@ -6,13 +6,13 @@ ms.author: dongpark
 ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Windows Mixed Reality, 테스트, Mixed Reality Toolkit, MRTK 버전 2, MRTK, 도구, SDK, HoloLens, HoloLens 2
-ms.openlocfilehash: ed3663c9eb3735dc2232a667e605ba4dab5bf1a4
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Windows Mixed Reality, 테스트, Mixed Reality Toolkit, MRTK 버전 2, MRTK, 도구, SDK, HoloLens, HoloLens 2, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 플랫폼 간
+ms.openlocfilehash: c780084e89e286d9558fafa78c460518f48a0368
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573227"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678562"
 ---
 # <a name="getting-started-with-mrtk-for-unity"></a>Unity용 MRTK 시작
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
@@ -45,4 +45,4 @@ Unity용 MRTK는 혼합 현실 애플리케이션을 위한 오픈 소스 플랫
 * [도구 설치](../install-the-tools.md)
 * [MRTK - 설치 가이드(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
 * [MRTK - 설명서 홈(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
-* [HoloToolkit/MRTK에서 MRTK 버전 2로 이식(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
+* [HoloToolkit/MRTK에서 MRTK 버전 2로 포팅(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)

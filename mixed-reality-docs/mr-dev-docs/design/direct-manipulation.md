@@ -6,13 +6,13 @@ ms.author: cmeekhof
 ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hands near, HoloLens
-ms.openlocfilehash: 8141bc588247be15174d4a85992b74911ffc002e
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Mixed Reality, 응시, 응시 타깃팅, 상호 작용, 디자인, 핸즈 니어, HoloLens, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit, 단추, 충돌체, 경계 상자, 2D, 직관적 제스처
+ms.openlocfilehash: a882aa4bace0d911d328ad82d881b5c0d8cd0c96
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631541"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702849"
 ---
 # <a name="direct-manipulation-with-hands"></a>수동으로 직접 조작
 

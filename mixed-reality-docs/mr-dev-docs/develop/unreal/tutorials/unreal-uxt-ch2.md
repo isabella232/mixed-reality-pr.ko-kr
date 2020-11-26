@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, 자습서, 시작, mrtk, uxt, UX Tools, 설명서
-ms.openlocfilehash: 07b1012f364b8dc157ac29b5be442561757bb4dc
-ms.sourcegitcommit: 8e91ff47ef70e80a41137f80aa1093e711d27bf7
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 869b947d23c3fbd1e561cef2c3ec41322fefd6a2
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91957833"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679912"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2. 프로젝트 및 첫 번째 애플리케이션 초기화
 
@@ -73,13 +73,13 @@ Unreal 편집기에서 프로젝트가 자동으로 열리므로, 다음 섹션�
 1. **파일 > 새 수준** 을 선택하고 **빈 수준** 을 선택합니다. 이제 뷰포트의 기본 장면이 비어 있습니다.
 
 2. **모드** 탭에서 **기본** 를 선택하고 장면으로 **PlayerStart** 를 끌어옵니다. 
-    * **세부 정보** 탭에서 **위치** 를 **X = 0** , **Y = 0** 및 **Z = 0** 으로 설정합니다. 그러면 앱이 시작될 때 장면의 가운데에 사용자가 설정됩니다.
+    * **세부 정보** 탭에서 **위치** 를 **X = 0**, **Y = 0** 및 **Z = 0** 으로 설정합니다. 그러면 앱이 시작될 때 장면의 가운데에 사용자가 설정됩니다.
 
 ![PlayerStart를 사용하는 뷰포트](images/unreal-uxt/2-playerstart.PNG)
 
 3. **기본** 탭에서 **큐브** 를 장면으로 끌어옵니다. 
-    * **위치** 를 **X = 50** , **Y = 0** , **Z = 0** 으로 설정합니다. 그러면 시작 시점에 큐브가 플레이어와 50cm 떨어져 배치됩니다. 
-    * **배율** 을 **X = 0.2** , **Y = 0.2** , **Z = 0.2** 로 변경하여 큐브를 축소합니다. 
+    * **위치** 를 **X = 50**, **Y = 0**, **Z = 0** 으로 설정합니다. 그러면 시작 시점에 큐브가 플레이어와 50cm 떨어져 배치됩니다. 
+    * **배율** 을 **X = 0.2**, **Y = 0.2**, **Z = 0.2** 로 변경하여 큐브를 축소합니다. 
 
 장면을 테스트하기 전에 마지막으로 장면에 조명을 추가하지 않으면 큐브를 볼 수 없습니다.
 
@@ -190,7 +190,7 @@ Unreal 편집기에서 프로젝트가 자동으로 열리므로, 다음 섹션�
 ![재질이 적용된 체스 보드](images/unreal-uxt/2-chessboard.PNG)
 
 2.  **큐브 > 편집 > 삭제** 를 마우스 오른쪽 단추로 클릭하고 **콘텐츠 브라우저** 에서 **Board** 를 뷰포트로 끌어옵니다. 
-    * **위치** 를 **X = 80** , **Y = 0** , **Z = -20** 으로 설정합니다. 
+    * **위치** 를 **X = 80**, **Y = 0**, **Z = -20** 으로 설정합니다. 
 
 3.  **재생** 단추를 클릭하여 새 보드를 레벨에서 확인합니다. **Esc** 키를 눌러 편집기로 돌아갑니다. 
 
@@ -225,7 +225,7 @@ Unreal 편집기에서 프로젝트가 자동으로 열리므로, 다음 섹션�
 
 ![월드 아웃라이너](images/unreal-uxt/2-child.PNG)
 
-3.  **세부 정보** 패널의 **변환** 에서 **WhiteKing** 의 **위치** 를 **X = -26** , **Y = 4** , **Z = 0** 으로 설정합니다.
+3.  **세부 정보** 패널의 **변환** 에서 **WhiteKing** 의 **위치** 를 **X = -26**, **Y = 4**, **Z = 0** 으로 설정합니다.
 
 이제 마쳤습니다. **재생** 를 클릭하여 입력된 수준의 작동을 확인하고 마무리되면 **Esc** 를 누릅니다. 이 자습서에서 다룬 내용은 간단한 프로젝트의 여러 기본적인 사항이지만 이제 프로젝트로 이 시리즈의 다음 부분인 혼합 현실 설정을 진행할 수 있습니다. 
 

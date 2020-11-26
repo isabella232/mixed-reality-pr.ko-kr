@@ -6,13 +6,13 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: 시선 추적, 혼합 현실, 입력, 시선 응시, 시선 겨냥, HoloLens 2, 시선 기반 선택, 유지(dwell)
-ms.openlocfilehash: b7c2b22c24336813231e7e5ea4742f03b9d78004
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 시선 추적, Mixed Reality, 입력, 시선 응시, 시선 타깃팅, HoloLens 2, 시선 기반 선택, 유지, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 디자인
+ms.openlocfilehash: 2d17b93b09b204e6ebb94a51bcc709ee043b5018
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700969"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702309"
 ---
 # <a name="eye-gaze-and-dwell"></a>시선 응시 및 유지(dwell)
 
@@ -32,7 +32,7 @@ _"시선 응시 및 유지"_ 상호 작용 모델은 [시선 응시 및 커밋](
 
 ## <a name="design-recommendations"></a>디자인 권장 사항
 유지(dwell) 피드백에 두 가지 상태 접근 방식을 사용하는 것이 좋습니다.
-1. *시작 지연* : 사용자가 대상을 보기 시작할 때는 아무 일도 일어나지 않아야 합니다. 불편하고 대응하기 어려운 환경이 될 수 있기 때문입니다. 그 대신 사용자가 대상을 의도적으로 응시하는지 아니면 그냥 훑어보고 있는지를 감지하기 위한 타이머를 시작합니다.
+1. *시작 지연*: 사용자가 대상을 보기 시작할 때는 아무 일도 일어나지 않아야 합니다. 불편하고 대응하기 어려운 환경이 될 수 있기 때문입니다. 그 대신 사용자가 대상을 의도적으로 응시하는지 아니면 그냥 훑어보고 있는지를 감지하기 위한 타이머를 시작합니다.
 지정된 근접성(사용자가 큰 대상을 주시하고 둘러본다는 의미)에서 시작 시간을 150-250ms 정도로 사용하는 것이 좋습니다.  
 2. *유지(dwell) 시작 피드백:* 사용자가 대상을 의도적으로 보고 있는 것이 확인되면 유지(dwell) 피드백을 표시하여 유지(dwell) 활성화가 시작되고 있음을 사용자에게 알립니다. 
 3. *지속적인 피드백:* 사용자가 대상을 계속 바라보는 동안, 연속 진행 표시기를 나타내서, 사용자가 목표를 계속 바라봐야 한다는 것을 알 수 있도록 합니다. 특히 시선 응시 입력의 경우, 큰 원이나 구 모양이 작은 모양으로 줄어드는 효과를 사용하여 _사용자의 시각적 관심을 끄는_ 것이 좋습니다. 최종 상태(작은 원)에 대한 지표를 표시하면, 유지(dwell)가 마무리될 때 사용자와 의사 소통하는 데 도움이 됩니다. 아래 그림은 예시입니다. 

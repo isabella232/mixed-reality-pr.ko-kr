@@ -5,14 +5,14 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 08/27/2019
 ms.topic: article
-keywords: HoloLens, MRTK, Mixed Reality Toolkit, Windows Mixed Reality, 디자인, 샘플 앱, 컨트롤
+keywords: HoloLens, MRTK, Mixed Reality Toolkit, Windows Mixed Reality, 디자인, 샘플 앱, 컨트롤, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
 ms.localizationpriority: high
-ms.openlocfilehash: d10de5c9f16e0caa289d5110647b4c45a8a8fcf9
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: 95d8f8c52b226eda7ea1601feffc1464c2ea91c5
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386269"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677533"
 ---
 # <a name="mrtk-101-how-to-use-mixed-reality-toolkit-unity-for-common-spatial-interactions"></a>MRTK 101: 일반적인 공간 상호 작용에 Mixed Reality Toolkit Unity를 사용하는 방법
 ![MRTK](images/MRTK101/MRTK101Cover.png)
@@ -45,7 +45,7 @@ W, A, S, D 키를 눌러 카메라를 이동합니다.
 
 
 ## <a name="how-to-grab-and-move-an-object"></a>개체를 잡고 움직이는 방법
-개체를 잡을 수 있게 하려면 **ObjectManipulator.cs** 및 **NearInteractionGrabbable.cs** (관절 있는 손 추적 입력을 통한 직접 잡기의 경우)의 두 스크립트를 할당합니다. ObjectManipulator는 근거리 및 원거리 조작(방식)을 모두 지원합니다. HoloLens 2의 관절 있는 손 추적 입력(근거리), 손 광선(원거리), 모션 컨트롤러의 빔(원거리), HoloLens 응시 커서 및 에어 탭(원거리)을 사용하여 개체를 잡고 이동할 수 있습니다.
+개체를 잡을 수 있게 하려면 **ObjectManipulator.cs** 및 **NearInteractionGrabbable.cs**(관절 있는 손 추적 입력을 통한 직접 잡기의 경우)의 두 스크립트를 할당합니다. ObjectManipulator는 근거리 및 원거리 조작(방식)을 모두 지원합니다. HoloLens 2의 관절 있는 손 추적 입력(근거리), 손 광선(원거리), 모션 컨트롤러의 빔(원거리), HoloLens 응시 커서 및 에어 탭(원거리)을 사용하여 개체를 잡고 이동할 수 있습니다.
 
 <br/><img alt="NearInteractionGrabbable and ObjectManipulator.cs assigned to an object" width="800" src="images/MRTK101/MRTK_ManipulationHandler.png">
 
@@ -164,4 +164,4 @@ MRTK는 다양한 유형의 HoloLens 2 셸(OS) 스타일 단추를 제공합니�
 * [MRTK 설치 가이드(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
 * [MRTK(Mixed Reality Toolkit)-Unity GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity)
 * [MRTK 설명서 포털(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
-* [HoloToolkit에서 MRTK로 이식 지침](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
+* [HoloToolkit에서 MRTK로 포팅 지침](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)

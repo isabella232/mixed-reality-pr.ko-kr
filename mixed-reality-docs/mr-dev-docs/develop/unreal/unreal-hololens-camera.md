@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, 개발, 기능, 설명서, 가이드, 홀로그램, 카메라, PV 카메라, MRC
-ms.openlocfilehash: 6302a64fcde2a16b6ae1cb570215629a3e6ea9e5
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 기능, 설명서, 가이드, 홀로그램, 카메라, PV 카메라, MRC, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 975853a7b39c4d8790adb1f48160d7e4fdf6c19a
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573237"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679042"
 ---
 # <a name="hololens-photovideo-camera-in-unreal"></a>Unreal의 HoloLens 사진/비디오 카메라
 

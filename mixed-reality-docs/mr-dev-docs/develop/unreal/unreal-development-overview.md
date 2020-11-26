@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 스트리밍, 원격, 혼합 현실, 개발, 시작, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 특징, 홀로그램, 게임 개발
-ms.openlocfilehash: a8e345831167362745a45a8fa81ddae858083ca7
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 스트리밍, 원격, 혼합 현실, 개발, 시작, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, 홀로그램, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: b810ad7500f8bb2a70ef18ad29fb32df8801a2de
+ms.sourcegitcommit: 2759aba06e643d70004023b105ed26b33ce3dbfa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340691"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94810449"
 ---
 # <a name="unreal-development-overview"></a>Unreal 개발 개요
 
@@ -29,7 +29,7 @@ ms.locfileid: "94340691"
 Unreal 개발이 처음이라면 모르는 상태에서 넘어가지 마세요. Unreal <a href="https://docs.unrealengine.com/GettingStarted/index.html" target="_blank">자습서 시리즈</a>를 탐색하여 필요한 지식을 갖추고 Unreal <a href="https://www.unrealengine.com/marketplace/store" target="_blank">마켓플레이스</a> 및 혼합 현실 <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">포럼</a>에서 자산 및 지원을 모색합니다. 이러한 리소스를 통해 오늘날의 혼합 현실 시장에서 구축자와 문제 해결자 커뮤니티에 연결할 수 있습니다.
 
 > [!IMPORTANT]
-> 기존 Unreal 프로젝트를 HoloLens 2 또는 Reverb G2 같은 몰입형 헤드셋으로 가져오려면 **[포팅 가이드](../porting-apps/porting-overview.md)** 를 살펴보세요.
+> 기존 Unreal 프로젝트를 Reverb G2 같은 몰입형 헤드셋으로 가져오려면 **[포팅 가이드](unreal-reverb-g2-controllers.md)** 를 살펴보세요.
 
 ## <a name="development-checkpoints"></a>개발 검사점
 

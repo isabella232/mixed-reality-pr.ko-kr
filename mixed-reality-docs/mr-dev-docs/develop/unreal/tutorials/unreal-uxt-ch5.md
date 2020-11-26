@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 08/14/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, 자습서, 시작, mrtk, uxt, UX Tools, 설명서
-ms.openlocfilehash: f7b57cf8a023874aa14118ff5cd50076bbf344e0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: f903848b8d5c9c1dccfc00cd7bd6d16d2e491a5e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702350"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679842"
 ---
 # <a name="5-adding-a-button--resetting-piece-locations"></a>5. 단추 추가 및 체스 말 위치 초기화
 
@@ -35,7 +35,7 @@ ms.locfileid: "91702350"
 2.  청사진 표의 **Reset Location** 에서 실행을 끌어서 놓고 **SetActorRelativeTransform** 노드를 만듭니다. 
     * 이 함수는 부모를 기준으로 행위자의 변환(위치, 회전 및 배율)을 설정합니다. 이 함수를 사용하여 보드에서 킹의 위치를 초기화할 것이며, 보드가 원래 위치에서 이동되었더라도 상관없습니다. 
     
-3. 이벤트 그래프 안을 마우스 오른쪽 단추로 클릭하고 **변환** 을 선택한 다음, **위치** 를 **X = -26** , **Y = 4** , **Z = 0** 으로 변경합니다.
+3. 이벤트 그래프 안을 마우스 오른쪽 단추로 클릭하고 **변환** 을 선택한 다음, **위치** 를 **X = -26**, **Y = 4**, **Z = 0** 으로 변경합니다.
     * **반환 값** 을 **SetActorRelativeTransform** 의 **새 상대 변환** 핀에 연결합니다. 
 
 ![위치 초기화 함수](images/unreal-uxt/5-function.PNG)
@@ -85,7 +85,7 @@ ms.locfileid: "91702350"
 
 ![단추를 누를 때 위치 초기화 함수 호출](images/unreal-uxt/5-callresetloc.PNG)
 
-2.  **ResetButton** 을 뷰포트로 끌어오고 위치를 **X = 50** , **Y = -25** , **Z = 10** 으로 설정합니다. 회전을 **Z = 180** 으로 설정합니다. **기본값** 에서 **WhiteKing** 변수의 값을 **WhiteKing** 으로 설정합니다.
+2.  **ResetButton** 을 뷰포트로 끌어오고 위치를 **X = 50**, **Y = -25**, **Z = 10** 으로 설정합니다. 회전을 **Z = 180** 으로 설정합니다. **기본값** 에서 **WhiteKing** 변수의 값을 **WhiteKing** 으로 설정합니다.
 
 ![변수 설정](images/unreal-uxt/5-buttonlevel.PNG)
 

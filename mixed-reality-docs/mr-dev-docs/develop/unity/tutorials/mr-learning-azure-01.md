@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Azure, Mixed Reality, Unity, 자습서, HoloLens, HoloLens 2, Azure Blob Storage, Azure Table Storage, Azure Spatial Anchors, Azure Bot Framework
+keywords: azure, 혼합 현실, unity, 자습서, hololens, hololens 2, azure blob 스토리지, azure table 스토리지, azure spatial anchors, azure bot framework, azure cloud services, azure custom vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 878fd92a946b70ba3b0a867722f86ab801a79032
-ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
+ms.openlocfilehash: 98ca849722feeaa307cb43e568570897b48ed850
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93416979"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679422"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. HoloLens 2용 Azure Cloud Services
 
@@ -55,7 +55,7 @@ ms.locfileid: "93416979"
 
 ### <a name="azure-custom-vision"></a>Azure Custom Vision
 
-[Azure Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/)( [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/)의 일부)을 사용하면 이미지 세트인 *추적된 개체* 에 연결하고, 이 세트에서 기계 학습 모델을 학습시키고, *추적된 개체* 를 감지할 수 있습니다.
+[Azure Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/)([Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/)의 일부)을 사용하면 이미지 세트인 *추적된 개체* 에 연결하고, 이 세트에서 기계 학습 모델을 학습시키고, *추적된 개체* 를 감지할 수 있습니다.
 
 ### <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
 
@@ -86,12 +86,12 @@ ms.locfileid: "93416979"
 
 이를 위해 먼저 [프로젝트 및 첫 번째 애플리케이션 초기화](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
 
-1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름 지정(예: *Azure Cloud Tutorials* )
+1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름 지정(예: *Azure Cloud Tutorials*)
 2. [빌드 플랫폼 전환](mr-learning-base-02.md#configuring-the-unity-project)
 3. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
 5. [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project)
-6. [장면 만들기 및 구성](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 적절한 장면 이름 지정(예: *AzureCloudServices* )
+6. [장면 만들기 및 구성](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 적절한 장면 이름 지정(예: *AzureCloudServices*)
 
 그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면의 MRTK 구성 프로필을 **DefaultHoloLens2ConfigurationProfile** 로 변경하고, 공간 인식 메시의 표시 옵션을 **폐색** 으로 변경합니다.
 
@@ -127,7 +127,7 @@ Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 
 
 이 섹션에서는 자습서 프리팹 중 일부를 추가하여 장면을 준비합니다.
 
-[프로젝트] 창에서 **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** 폴더로 차례로 이동합니다. Ctrl 단추를 누른 채 **SceneController** , **RootMenu** 및 **DataManager** 를 클릭하여 세 개의 프리팹을 선택합니다.
+[프로젝트] 창에서 **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** 폴더로 차례로 이동합니다. Ctrl 단추를 누른 채 **SceneController**, **RootMenu** 및 **DataManager** 를 클릭하여 세 개의 프리팹을 선택합니다.
 
 ![SceneController, RootMenu 및 DataManager 프리팹이 선택된 Unity](images/mr-learning-azure/tutorial1-section5-step1-1.png)
 
@@ -150,7 +150,7 @@ Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 
 
 ## <a name="configuring-the-scene"></a>장면 구성
 
-이 섹션에서는 *SceneManager* , *DataManager* 및 *RootMenu* 를 모두 연결하여 다음 [Azure Storage 통합](mr-learning-azure-01.md) 자습서에서 사용할 수 있도록 작업 장면을 준비합니다.
+이 섹션에서는 *SceneManager*, *DataManager* 및 *RootMenu* 를 모두 연결하여 다음 [Azure Storage 통합](mr-learning-azure-01.md) 자습서에서 사용할 수 있도록 작업 장면을 준비합니다.
 
 ### <a name="connect-the-objects"></a>개체 연결
 
@@ -166,7 +166,7 @@ Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 
 
 ![DataManager 이벤트 작업이 추가된 Unity](images/mr-learning-azure/tutorial1-section6-step1-3.png)
 
-[계층 구조] 창에서 **SceneController** 개체를 선택합니다. 그러면 [검사기]에서 **SceneController** (스크립트) 구성 요소를 찾을 수 있습니다.
+[계층 구조] 창에서 **SceneController** 개체를 선택합니다. 그러면 [검사기]에서 **SceneController**(스크립트) 구성 요소를 찾을 수 있습니다.
 
 ![SceneController가 선택된 Unity](images/mr-learning-azure/tutorial1-section6-step1-4.png)
 
@@ -186,11 +186,11 @@ Unity 메뉴에서 **Edit(편집)**  > **Project Settings(프로젝트 설정)..
 
 ![Unity 프로젝트 설정 열기](images/mr-learning-azure/tutorial1-section7-step1-1.png)
 
-[프로젝트 설정] 창에서 **플레이어** , **게시 설정** 을 차례로 선택합니다.
+[프로젝트 설정] 창에서 **플레이어**, **게시 설정** 을 차례로 선택합니다.
 
 ![Unity 게시 설정](images/mr-learning-azure/tutorial1-section7-step1-2.png)
 
-**게시 설정** 에서 **기능** 섹션까지 아래로 스크롤하여 자습서의 시작 부분에서 프로젝트를 만들 때 사용하도록 설정한 **InternetClient** , **Microphone** 및 **SpatialPerception** 기능이 사용하도록 설정되어 있는지 다시 확인합니다. 그런 다음, **InternetClientServer** , **PrivateNetworkClientServer** 및 **Webcam** 기능을 사용하도록 설정합니다.
+**게시 설정** 에서 **기능** 섹션까지 아래로 스크롤하여 자습서의 시작 부분에서 프로젝트를 만들 때 사용하도록 설정한 **InternetClient**, **Microphone** 및 **SpatialPerception** 기능이 사용하도록 설정되어 있는지 다시 확인합니다. 그런 다음, **InternetClientServer**, **PrivateNetworkClientServer** 및 **Webcam** 기능을 사용하도록 설정합니다.
 
 ![Unity 기능](images/mr-learning-azure/tutorial1-section7-step1-3.png)
 

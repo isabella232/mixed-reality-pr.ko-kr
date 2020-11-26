@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 혼합 현실, Unity, 자습서, HoloLens, Android, iOS
+keywords: 혼합 현실, unity, 자습서, hololens, android, ios, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 501cfab2a86dcf5753b7371898a8c4b6c8a1e10b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: bee84db206dbb4e95272799c16d6dbd4e394e807
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353381"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679432"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5. Android 및 iOS용 Azure Spatial Anchors
 
@@ -48,14 +48,14 @@ Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 
 
 이 섹션에서는 모바일 디바이스에 배포하기 위해 MRTK를 구성하는 방법을 알아봅니다.
 
-Hierarchy(계층 구조) 창에서 **MixedRealityToolkit** 개체를 선택합니다. 그런 다음, Inspector(인스펙터) 창에서 **Camera** 탭을 선택하고 카메라 프로필을 복제한 다음, 적절한 이름(예: **AzureSpatialAnchors_ARCameraProfile** )을 지정합니다.
+Hierarchy(계층 구조) 창에서 **MixedRealityToolkit** 개체를 선택합니다. 그런 다음, Inspector(인스펙터) 창에서 **Camera** 탭을 선택하고 카메라 프로필을 복제한 다음, 적절한 이름(예: **AzureSpatialAnchors_ARCameraProfile**)을 지정합니다.
 
 ![새로 만든 ARCameraProfile이 선택된 Unity](images/mr-learning-asa/asa-05-section2-step1-1.png)
 
 > [!TIP]
 > MRTK 프로필을 복제하는 방법은 [Mixed Reality Toolkit 프로필 구성](mr-learning-base-03.md) 지침을 참조하세요.
 
-Inspector(인스펙터) 창에서 **Camera** 탭을 선택한 상태로 **Camera Setting Providers** (카메라 설정 공급자)를 펼쳐서 **+ Add Camera Setting Provider** (카메라 설정 공급자 추가) 단추를 클릭한 다음, 새로 추가한 **New data provider 1** (새 데이터 공급자 1)을 펼칩니다.
+Inspector(인스펙터) 창에서 **Camera** 탭을 선택한 상태로 **Camera Setting Providers**(카메라 설정 공급자)를 펼쳐서 **+ Add Camera Setting Provider**(카메라 설정 공급자 추가) 단추를 클릭한 다음, 새로 추가한 **New data provider 1**(새 데이터 공급자 1)을 펼칩니다.
 
 ![새 데이터 공급자가 추가된 Unity ARCameraProfile](images/mr-learning-asa/asa-05-section2-step1-2.png)
 
@@ -63,7 +63,7 @@ Inspector(인스펙터) 창에서 **Camera** 탭을 선택한 상태로 **Camera
 
 ![데이터 공급자 유형 선택 경로가 있는 Unity ARCameraProfile](images/mr-learning-asa/asa-05-section2-step1-3.png)
 
-Hierarchy(계층 구조) 창에서 **MixedRealityToolkit** 개체를 선택한 상태로, Inspector(인스펙터) 창에서 **Add Component** (구성 요소 추가) 단추를 사용하여 다음 구성 요소를 추가합니다.
+Hierarchy(계층 구조) 창에서 **MixedRealityToolkit** 개체를 선택한 상태로, Inspector(인스펙터) 창에서 **Add Component**(구성 요소 추가) 단추를 사용하여 다음 구성 요소를 추가합니다.
 
 * AR 앵커 관리자(스크립트)
 * DisableDiagnosticsSystem(스크립트)
@@ -96,7 +96,7 @@ Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 차례로 선택�
 
 플레이어 설정 창을 닫고 빌드 설정 창을 다시 엽니다.
 
-빌드 설정 창에서 **Add Open Scenes** (열려 있는 장면 추가) 단추를 클릭하여 현재 장면을 **Scenes In Build** (빌드의 장면) 목록에 추가합니다. 그런 다음, USB 케이블을 사용하여 Android 디바이스를 컴퓨터에 연결하고 **Run Device** (디바이스 실행) 드롭다운 목록에서 선택합니다.
+빌드 설정 창에서 **Add Open Scenes**(열려 있는 장면 추가) 단추를 클릭하여 현재 장면을 **Scenes In Build**(빌드의 장면) 목록에 추가합니다. 그런 다음, USB 케이블을 사용하여 Android 디바이스를 컴퓨터에 연결하고 **Run Device**(디바이스 실행) 드롭다운 목록에서 선택합니다.
 
 ![장면이 추가되고 Run Device가 선택된 Unity Build Settings 창](images/mr-learning-asa/asa-05-section3-step1-4.png)
 
@@ -105,7 +105,7 @@ Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 차례로 선택�
 
 빌드 설정 창에서 **빌드 및 실행** 단추를 클릭하여 Build Android(Android 빌드) 창을 엽니다.
 
-빌드를 저장할 적당한 위치(예: _D:\MixedRealityLearning\Builds_ )를 선택한 다음, apk에 적절한 이름(예: _MRTKTutorials-AzureSpatialAnchors_ )을 지정하고 **저장** 단추를 클릭하여 빌드 프로세스를 시작합니다.
+빌드를 저장할 적당한 위치(예: _D:\MixedRealityLearning\Builds_)를 선택한 다음, apk에 적절한 이름(예: _MRTKTutorials-AzureSpatialAnchors_)을 지정하고 **저장** 단추를 클릭하여 빌드 프로세스를 시작합니다.
 
 ![Save 프롬프트 창이 있는 Unity Build Settings 창 Android](images/mr-learning-asa/asa-05-section3-step1-5.png)
 
@@ -131,19 +131,19 @@ Unity 메뉴에서 **Mixed Reality Toolkit** > **유틸리티** > **Unity 프로
 
 ![Unity MRTK Project Configurator 창 iOS](images/mr-learning-asa/asa-05-section4-step1-2.png)
 
-Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 선택하여 플레이어 설정 창을 연 다음, **플레이어** >  **기타 설정** 섹션을 찾아서 **Strip Engine Code** (엔진 코드 스트립) 확인란 선택을 취소하여 사용하지 않도록 설정합니다.
+Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 선택하여 플레이어 설정 창을 연 다음, **플레이어** >  **기타 설정** 섹션을 찾아서 **Strip Engine Code**(엔진 코드 스트립) 확인란 선택을 취소하여 사용하지 않도록 설정합니다.
 
 ![스트립 엔진 코드가 비활성화된 Unity Other Settings](images/mr-learning-asa/asa-05-section4-step1-3.png)
 
 플레이어 설정 창을 닫고 **빌드** 설정 창을 다시 엽니다.
 
-빌드 설정 창에서 **Add Open Scenes** (열려 있는 장면 추가) 단추를 클릭하여 현재 장면을 **Scenes In Build** (빌드의 장면) 목록에 추가합니다.
+빌드 설정 창에서 **Add Open Scenes**(열려 있는 장면 추가) 단추를 클릭하여 현재 장면을 **Scenes In Build**(빌드의 장면) 목록에 추가합니다.
 
 ![장면이 추가된 Unity Build Settings 창](images/mr-learning-asa/asa-05-section4-step1-4.png)
 
 빌드 설정 창에서 **빌드** 단추를 클릭하여 Build iOS(iOS 빌드) 창을 엽니다.
 
-Xcode 프로젝트를 저장할 적당한 위치(예: _D:\MixedRealityLearning\Builds_ )를 선택하고, 새 폴더를 만들어서 적절한 이름(예: _MRTKTutorials-AzureSpatialAnchors_ )을 지정한 다음, **폴더 선택** 단추를 클릭하여 빌드 프로세스를 시작합니다.
+Xcode 프로젝트를 저장할 적당한 위치(예: _D:\MixedRealityLearning\Builds_)를 선택하고, 새 폴더를 만들어서 적절한 이름(예: _MRTKTutorials-AzureSpatialAnchors_)을 지정한 다음, **폴더 선택** 단추를 클릭하여 빌드 프로세스를 시작합니다.
 
 ![저장 프롬프트 창이 있는 Unity Build Settings 창 iOS](images/mr-learning-asa/asa-05-section4-step1-5.png)
 

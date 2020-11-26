@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 혼합 현실, unity, 자습서, hololens, hololens 2, Azure spatial anchors
+keywords: 혼합 현실, unity, 자습서, hololens, hololens 2, Azure spatial anchors, azure cloud services, azure custom vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: f8271fe3b3b9549d6c95707466db9af3d312fab7
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 5245f3522e7822c16ebc0d0113634f152f223086
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353251"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679342"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Integrating Azure Spatial 통합
 
@@ -45,7 +45,7 @@ Project 창에서 **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manag
 
 **Manager** 폴더에서 프리팹 **Anchor Manager** 를 장면 Hierarchy에 끌어다 놓습니다.
 
-Hierarchy에서 **Anchor Manager** GameObject를 선택하고 Inspector 섹션에서 **Spatial Anchor Manager** (스크립트)를 찾습니다. 계정 ID 및 키 필드를 찾아 이전 단계의 필수 구성 요소에서 만든 자격 증명을 추가합니다.
+Hierarchy에서 **Anchor Manager** GameObject를 선택하고 Inspector 섹션에서 **Spatial Anchor Manager**(스크립트)를 찾습니다. 계정 ID 및 키 필드를 찾아 이전 단계의 필수 구성 요소에서 만든 자격 증명을 추가합니다.
 
 ![새로 추가한 AnchorManager 프리팹이 여전히 선택된 Unity](images/mr-learning-azure/tutorial4-section1-step2-1.png)
 

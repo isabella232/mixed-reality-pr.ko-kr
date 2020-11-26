@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 혼합 현실, Unity, 자습서, HoloLens
+keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 개체 상호 작용, 경계 상자
 ms.localizationpriority: high
-ms.openlocfilehash: 1e91cc97f68a4d4b5bcb015184e96582533d1f96
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 5e2857a7baf85187902bd98de6271e53dcc3539e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353521"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679272"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. 3D 개체와 상호 작용
 
@@ -47,7 +47,7 @@ ms.locfileid: "93353521"
 
 또한 Rover 파트를 Rover에 배치하여 완전한 Rover 어셈블리로 만들 수 있도록 Rover Explorer를 구성합니다.
 
-Hierarchy(계층 구조) 창에서 RoverExplorer > **RoverParts** 개체를 펼치고, 자식 Rover 파트 개체와 **RoverAssembly** 개체를 모두 선택한 다음, Inspector(인스펙터) 창에서 **Add Component** (구성 요소 추가) 단추를 사용하여 다음 구성 요소를 선택한 모든 개체에 추가합니다.
+Hierarchy(계층 구조) 창에서 RoverExplorer > **RoverParts** 개체를 펼치고, 자식 Rover 파트 개체와 **RoverAssembly** 개체를 모두 선택한 다음, Inspector(인스펙터) 창에서 **Add Component**(구성 요소 추가) 단추를 사용하여 다음 구성 요소를 선택한 모든 개체에 추가합니다.
 
 * **Object Manipulator(스크립트)** 구성 요소
 * **NearInteractionGrabbable** 구성 요소
@@ -66,7 +66,7 @@ Hierarchy(계층 구조) 창에서 RoverExplorer > **RoverParts** 개체를 펼�
 
 Rover 파트 개체와 RoverAssembly 개체를 선택한 상태로, Inspector(인스펙터) 창에서 **Object Manipulator(스크립트)** 구성 요소를 다음과 같이 구성합니다.
 
-* **Two Handed Manipulation Type** (양손 조작 유형) 드롭다운에서 Scale(크기 조정) 선택을 취소하고 **Move** (이동) 및 **Rotate** (회전)만 가능하도록 설정
+* **Two Handed Manipulation Type**(양손 조작 유형) 드롭다운에서 Scale(크기 조정) 선택을 취소하고 **Move**(이동) 및 **Rotate**(회전)만 가능하도록 설정
 
 ![Two Handed Manipulation Type(양손 조작 유형)이 구성된 Unity](images/mr-learning-base/base-07-section1-step1-2.png)
 
@@ -77,32 +77,32 @@ Rover 파트 개체와 RoverAssembly 개체를 선택한 상태로, Inspector(�
 
 ![Audio 폴더가 선택된 Unity 프로젝트 창](images/mr-learning-base/base-07-section1-step1-3.png)
 
-Hierarchy(계층 구조) 창에서 **Rover 파트 개체** 를 다시 선택한 다음, Inspector(인스펙터) 창에서 **Add Component** (구성 요소 추가) 단추를 사용하여 **Audio Sources** (오디오 소스) 구성 요소를 추가하고 다음과 같이 구성합니다.
+Hierarchy(계층 구조) 창에서 **Rover 파트 개체** 를 다시 선택한 다음, Inspector(인스펙터) 창에서 **Add Component**(구성 요소 추가) 단추를 사용하여 **Audio Sources**(오디오 소스) 구성 요소를 추가하고 다음과 같이 구성합니다.
 
 * **MRTK_Scale_Start** 오디오 클립을 **AudioClip** 필드에 할당
-* **Play On Awake** (활성 상태일 때 재생) 확인란의 선택을 취소
-* **Spatial Blend** (공간 블렌드)를 1로 변경
+* **Play On Awake**(활성 상태일 때 재생) 확인란의 선택을 취소
+* **Spatial Blend**(공간 블렌드)를 1로 변경
 
 ![모든 로버 부품이 선택되고 Audio Source 구성 요소가 추가되고 구성된 Unity](images/mr-learning-base/base-07-section1-step1-4.png)
 
 Hierarchy(계층 구조) 창에서 RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** 개체를 펼쳐서 모든 배치 힌트 개체를 표시한 다음, 첫 번째 Rover 파트 RoverParts > **Camera_Part** 를 선택하고 **Part Assembly Controller(스크립트)** 구성 요소를 다음과 같이 구성합니다.
 
-* **Camera_PlacementHint** 개체를 **Location To Place** (배치할 위치) 필드에 할당
+* **Camera_PlacementHint** 개체를 **Location To Place**(배치할 위치) 필드에 할당
 
 ![Camera_Part PartAssemblyController 구성 요소가 구성된 Unity](images/mr-learning-base/base-07-section1-step1-5.png)
 
 나머지 Rover 파트 개체와 RoverAssembly 개체 각각에 대해 이 단계를 **반복** 하여 **Part Assembly Controller(스크립트)** 구성 요소를 다음과 같이 구성합니다.
 
-* **Generator_Part** 의 경우 **Generator_PlacementHint** 개체를 **Location To Place** (배치할 위치) 필드에 할당
-* **Lights_Part** 의 경우 **Lights_PlacementHint** 개체를 **Location To Place** (배치할 위치) 필드에 할당
-* **UHFAntenna_Part** 의 경우 **UHFAntenna_PlacementHint** 개체를 **Location To Place** (배치할 위치) 필드에 할당
-* **Spectrometer_Part** 의 경우 **Spectrometer_PlacementHint** 개체를 **Location To Place** (배치할 위치) 필드에 할당
-* **RoverAssembly** 의 경우 개체 자체(즉, 동일한 **RoverAssembly** 개체)를 **Location To Place** (배치할 위치) 필드에 할당
+* **Generator_Part** 의 경우 **Generator_PlacementHint** 개체를 **Location To Place**(배치할 위치) 필드에 할당
+* **Lights_Part** 의 경우 **Lights_PlacementHint** 개체를 **Location To Place**(배치할 위치) 필드에 할당
+* **UHFAntenna_Part** 의 경우 **UHFAntenna_PlacementHint** 개체를 **Location To Place**(배치할 위치) 필드에 할당
+* **Spectrometer_Part** 의 경우 **Spectrometer_PlacementHint** 개체를 **Location To Place**(배치할 위치) 필드에 할당
+* **RoverAssembly** 의 경우 개체 자체(즉, 동일한 **RoverAssembly** 개체)를 **Location To Place**(배치할 위치) 필드에 할당
 
-Hierarchy(계층 구조) 창에서 RoverExplorer > Buttons > **Reset** (초기화) 단추 개체를 선택한 다음, Inspector(인스펙터) 창에서 상호작용 가능 **OnClick ()** 이벤트를 다음과 같이 구성합니다.
+Hierarchy(계층 구조) 창에서 RoverExplorer > Buttons > **Reset**(초기화) 단추 개체를 선택한 다음, Inspector(인스펙터) 창에서 상호작용 가능 **OnClick ()** 이벤트를 다음과 같이 구성합니다.
 
 * **RoverAssembly** 개체를 **None (Object)** 필드에 할당
-* **No Function** (함수 없음) 드롭다운에서 **PartAssemblyController** > **ResetPlacement ()** 를 선택하여 이 함수를 이벤트가 트리거될 때 실행할 작업으로 설정
+* **No Function**(함수 없음) 드롭다운에서 **PartAssemblyController** > **ResetPlacement ()** 를 선택하여 이 함수를 이벤트가 트리거될 때 실행할 작업으로 설정
 
 ![Reset 단추 개체 OnClick 이벤트가 구성된 Unity](images/mr-learning-base/base-07-section1-step1-6.png)
 
@@ -118,7 +118,7 @@ Object Manipulator 구성 요소 및 관련 속성에 대해 자세히 알아보
 
 이 예제에서는 전체 환경을 쉽게 이동, 회전, 확장할 수 있도록 RoverExplorer 개체에 경계 상자를 추가합니다. 또한 경계 상자를 켜고 끌 수 있도록 메뉴를 구성합니다.
 
-Hierarchy(계층 구조) 창에서 **RoverExplorer** 개체를 선택한 다음, Inspector(인스펙터) 창에서 **Add Component** (구성 요소 추가) 단추를 사용하여 다음 구성 요소를 추가합니다.
+Hierarchy(계층 구조) 창에서 **RoverExplorer** 개체를 선택한 다음, Inspector(인스펙터) 창에서 **Add Component**(구성 요소 추가) 단추를 사용하여 다음 구성 요소를 추가합니다.
 
 * **BoundingBox** 구성 요소
 * **Object Manipulator(스크립트)** 구성 요소
@@ -135,13 +135,13 @@ Hierarchy(계층 구조) 창에서 **RoverExplorer** 개체를 선택한 다음,
 
 Hierarchy(계층 구조) 창에서 메뉴 > **ButtonCollection** 개체를 펼쳐서 단추 4개를 표시하고 3번째 단추의 이름을 **BoundingBox_Enable** 로 변경한 다음, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소를 다음과 같이 구성합니다.
 
-* **Main Label Text** (기본 레이블 텍스트)를 **Enable** (사용)로 변경
+* **Main Label Text**(기본 레이블 텍스트)를 **Enable**(사용)로 변경
 * **RoverExplorer** 개체를 **None (Object)** 필드에 할당
-* **No Function** (함수 없음) 드롭다운에서 **BoundingBox** > **bool Enabled** 를 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트
+* **No Function**(함수 없음) 드롭다운에서 **BoundingBox** > **bool Enabled** 를 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트
 * 인수 확인란이 **선택** 되어 있는지 확인
 * 작은 **+** 아이콘을 클릭하여 또 다른 이벤트를 추가
 * **RoverExplorer** 개체를 **None (Object)** 필드에 할당
-* **No Function** (함수 없음) 드롭다운에서 **ObjectManipulator** > **bool Enabled** 를 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트
+* **No Function**(함수 없음) 드롭다운에서 **ObjectManipulator** > **bool Enabled** 를 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트
 * 인수 확인란이 **선택** 되어 있는지 확인
 * **아이콘** 을 'cube with bounding box'(경계 상자와 큐브) 아이콘으로 유지
 
@@ -149,13 +149,13 @@ Hierarchy(계층 구조) 창에서 메뉴 > **ButtonCollection** 개체를 펼�
 
 네 번째와 마지막 단추의 이름을 **BoundingBox_Disable** 로 바꾼 다음, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소를 다음과 같이 구성합니다.
 
-* **Main Label Text** (기본 레이블 텍스트)를 **Disable** (사용 안 함)로 변경
+* **Main Label Text**(기본 레이블 텍스트)를 **Disable**(사용 안 함)로 변경
 * **RoverExplorer** 개체를 **None (Object)** 필드에 할당
-* **No Function** (함수 없음) 드롭다운에서 **BoundingBox** > **bool Enabled** 를 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트
+* **No Function**(함수 없음) 드롭다운에서 **BoundingBox** > **bool Enabled** 를 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트
 * 인수 확인란이 **선택 취소** 되어 있는지 확인
 * 작은 **+** 아이콘을 클릭하여 또 다른 이벤트를 추가
 * **RoverExplorer** 개체를 **None (Object)** 필드에 할당
-* **No Function** (함수 없음) 드롭다운에서 **ObjectManipulator** > **bool Enabled** 를 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트
+* **No Function**(함수 없음) 드롭다운에서 **ObjectManipulator** > **bool Enabled** 를 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트
 * 인수 확인란이 **선택 취소** 되어 있는지 확인
 * **아이콘** 을 'cube with bounding box'(경계 상자와 큐브) 아이콘으로 변경
 

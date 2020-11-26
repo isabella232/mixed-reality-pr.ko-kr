@@ -5,14 +5,14 @@ author: hferrone
 ms.author: jemccull
 ms.date: 10/28/2020
 ms.topic: article
-keywords: 혼합 현실, Unity, 자습서, hololens, learn
+keywords: 혼합 현실, unity, 자습서, hololens, learn, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 언어 번역, Azure, Azure cognitive services
 ms.localizationpriority: high
-ms.openlocfilehash: 531b1a6b28ba4da2b4c431288339b1f54bc1d44c
-ms.sourcegitcommit: 4cb579ac0413fc2dfad5da6506437246f6653926
+ms.openlocfilehash: 70114e25003368263c6e2fecad5a4fe8e2f96de0
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93036826"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678092"
 ---
 # <a name="mixed-reality-learning-overview"></a>Mixed Reality Learning 개요
 

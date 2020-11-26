@@ -6,13 +6,13 @@ ms.author: grbury
 ms.date: 07/29/2020
 ms.topic: overview
 ms.localizationpriority: high
-keywords: Mixed Reality, 검색, 배포, 인덱스, 방문 페이지, 디자인, 개발, 자습서, 샘플 앱, 기본 사항, 사례 연구, 리소스, HoloLens 방법, 오픈 소스 프로젝트
-ms.openlocfilehash: 7c8fc83fd2b5542909fd2ea6ab4dca288175c56c
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Mixed Reality, 검색, 배포, 인덱스, 방문 페이지, 디자인, 개발, 자습서, 샘플 앱, 기본 사항, 사례 연구, 리소스, HoloLens 방법, 오픈 소스 프로젝트, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: c085a60f78ef68e2139b8cc3dd2fdae24bce2a52
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631521"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702273"
 ---
 # <a name="get-started-with-mixed-reality"></a>Mixed Reality 시작
 

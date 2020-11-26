@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, 개발, 기능, 설명서, 가이드, 홀로그램, qr 코드
-ms.openlocfilehash: 0f0507e2f726830cef27c190083363b3607379ee
-ms.sourcegitcommit: 8e91ff47ef70e80a41137f80aa1093e711d27bf7
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 기능, 설명서, 가이드, 홀로그램, qr 코드, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 68edfdd0dd77b1d00ceeb9c50202abd5d94b95f3
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91957823"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678892"
 ---
 # <a name="qr-codes-in-unreal"></a>Unreal의 QR 코드
 
@@ -28,8 +28,8 @@ QR 코드가 앱에 배치될 때 [환경 고려 사항](../../environment-consi
 
 ## <a name="enabling-qr-detection"></a>QR 검색 사용
 HoloLens 2는 웹캠을 사용하여 QR 코드를 확인해야 하므로 프로젝트 설정에서 사용하도록 설정해야 합니다.
-- **편집 > 프로젝트 설정**을 열고 **플랫폼** 섹션까지 아래로 스크롤한 다음, **HoloLens**를 클릭합니다.
-    + **기능** 섹션을 확장하고 **웹캠**을 선택합니다.  
+- **편집 > 프로젝트 설정** 을 열고 **플랫폼** 섹션까지 아래로 스크롤한 다음, **HoloLens** 를 클릭합니다.
+    + **기능** 섹션을 확장하고 **웹캠** 을 선택합니다.  
 
 또한 [ARSessionConfig 자산](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset)을 추가하여 QR 코드 추적을 옵트인해야 합니다.
 
@@ -42,7 +42,7 @@ QR 코드는 Unreal의 AR 추적 기하 도형 시스템을 통해 추적 이미
 
 ![QR AR 추적 가능 알림](images/unreal-spatialmapping-artrackablenotify.PNG)
 
-2. **ARTrackableNotify**를 선택하고 **세부 정보** 패널에서 **이벤트** 섹션을 확장합니다.
+2. **ARTrackableNotify** 를 선택하고 **세부 정보** 패널에서 **이벤트** 섹션을 확장합니다.
 
 ![QR 이벤트](images/unreal-spatialmapping-events.PNG)
 
@@ -57,8 +57,8 @@ QR 코드는 Unreal의 AR 추적 기하 도형 시스템을 통해 추적 이미
 ![QR 렌더링 예제](images/unreal-qr-render.PNG)
 
 진행 상황은 다음과 같습니다.
-1. 먼저 추적 이미지를 **ARTrackedQRCode**에 캐스트하여 현재 업데이트된 이미지가 QR 코드인지 확인합니다.  
-2. 인코딩된 데이터는 **QRCode** 변수에서 검색합니다. **GetLocalToWorldTransform** 위치에서 QR 코드의 왼쪽 위를, **GetEstimateSize**로 크기를 가져올 수 있습니다.
+1. 먼저 추적 이미지를 **ARTrackedQRCode** 에 캐스트하여 현재 업데이트된 이미지가 QR 코드인지 확인합니다.  
+2. 인코딩된 데이터는 **QRCode** 변수에서 검색합니다. **GetLocalToWorldTransform** 위치에서 QR 코드의 왼쪽 위를, **GetEstimateSize** 로 크기를 가져올 수 있습니다.
 
 코드에서 [QR 코드 좌표계를 가져올 수](https://docs.microsoft.com/windows/mixed-reality/qr-code-tracking#getting-the-coordinate-system-for-a-qr-code)도 있습니다.
 

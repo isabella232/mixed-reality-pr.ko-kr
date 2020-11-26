@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, 자습서, HoloLens, HoloLens 2, Azure Bot Service, LUIS, 자연어, 대화 봇
+keywords: 혼합 현실, unity, 자습서, hololens, hololens 2, azure bot service, luis, 자연어, 대화 봇, azure cloud services, azure custom vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 417b534223427b491d900ad767d9fd797698ac71
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: d9884fc135a38e610df9faceb8cf4b24c21f7982
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915558"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679362"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5. Azure Bot Service 통합
 
@@ -61,7 +61,7 @@ Unity 애플리케이션에서 봇을 사용하려면 먼저 봇을 개발하여
 
 ### <a name="creating-a-conversation-bot"></a>대화 봇 만들기
 
-Bot Framework 기반 대화형 봇은 여러 가지 방법으로 개발할 수 있습니다. 이 단원에서는 빠른 개발을 위한 완벽한 비주얼 디자이너인 [Bot Framework 작성기](https://docs.microsoft.com/composer/) 데스크톱 애플리케이션을 사용합니다.
+Bot Framework 기반 대화 봇은 여러 가지 방법으로 개발할 수 있습니다. 이 단원에서는 빠른 개발을 위한 완벽한 비주얼 디자이너인 [Bot Framework 작성기](https://docs.microsoft.com/composer/) 데스크톱 애플리케이션을 사용합니다.
 
 최신 릴리스는 [Github 리포지토리](https://github.com/microsoft/BotFramework-Composer/releases)에서 다운로드할 수 있습니다. Windows, Mac 및 Linux에서 사용할 수 있습니다.
 

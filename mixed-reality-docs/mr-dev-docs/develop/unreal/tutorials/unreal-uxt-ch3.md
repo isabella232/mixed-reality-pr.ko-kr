@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, 자습서, 시작, mrtk, uxt, UX Tools, 설명서
-ms.openlocfilehash: 5af888fe57afce21e9ff0ccfe8144533e7368acf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 82e210aff35f1c41547f022b91114cbca1419830
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701565"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679882"
 ---
 # <a name="3-setting-up-your-project-for-mixed-reality"></a>3. 혼합 현실용 프로젝트 설정
 
@@ -71,6 +71,9 @@ Unreal의 AR 세션은 스스로 발생하지 않습니다. 세션을 사용하�
 ![폰의 충돌 사전 설정 조정](images/unreal-uxt/3-nocollision.PNG)
 
 3. **구성 요소** 패널에서 **구성 요소 추가 > 카메라** 를 클릭하고 이름을 **카메라** 로 지정합니다. 이렇게 하면 플레이어 카메라가 HoloLens 2 디바이스와 함께 움직일 수 있습니다.
+
+> [!NOTE]
+> **카메라** 구성 요소가 루트의 직계 자식인지 확인합니다(**CollisionComponent**).
 
 4. 청사진을 **컴파일** 하고 **저장** 합니다.
 

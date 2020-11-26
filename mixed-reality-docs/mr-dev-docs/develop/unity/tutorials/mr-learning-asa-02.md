@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 혼합 현실, Unity, 자습서, HoloLens
+keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: c73ddec2fc1be20a4a2c582948cd240be7fe23db
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: ae2726be302bf8ebf342ebd95233b28d7e534423
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353451"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679942"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Azure Spatial Anchors 시작
 
@@ -31,12 +31,12 @@ ms.locfileid: "93353451"
 
 이를 위해 먼저 [프로젝트 초기화 및 첫 번째 애플리케이션 배포](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
 
-1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름(예: *MRTK Tutorials* ) 지정
+1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름(예: *MRTK Tutorials*) 지정
 1. [빌드 플랫폼 전환](mr-learning-base-02.md#configuring-the-unity-project)
 1. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 1. [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
 1. [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project)
-1. [장면 만들기 및 구성](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름(예: *AzureSpatialAnchors* ) 지정
+1. [장면 만들기 및 구성](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름(예: *AzureSpatialAnchors*) 지정
 
 그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 다음을 수행합니다.
 
@@ -93,21 +93,21 @@ Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 
 Hierarchy(계층 구조) 창에서 **ButtonParent** 개체를 펼쳐서 **StartAzureSession** 라는 첫 번째 자식 개체를 선택하고 Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
 * **ParentAnchor** 개체를 **None (Object)** 필드에 할당
-* **No Function** (함수 없음) 드롭다운에서 **AnchorModuleScript** > **StartAzureSession ()** 을 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
+* **No Function**(함수 없음) 드롭다운에서 **AnchorModuleScript** > **StartAzureSession ()** 을 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 
 ![StartAzureSession 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-asa/asa-02-section5-step1-1.png)
 
 Hierarchy(계층 구조) 창에서 **StopAzureSession** 이라는 다음 단추를 선택한 후, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
 * **ParentAnchor** 개체를 **None (Object)** 필드에 할당
-* **No Function** (함수 없음) 드롭다운에서 **AnchorModuleScript** > **StopAzureSession ()** 을 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
+* **No Function**(함수 없음) 드롭다운에서 **AnchorModuleScript** > **StopAzureSession ()** 을 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 
 ![StopAzureSession 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-asa/asa-02-section5-step1-2.png)
 
 Hierarchy(계층 구조) 창에서 **CreateAzureAnchor** 라는 다음 단추를 선택한 후, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
 * **ParentAnchor** 개체를 **None (Object)** 필드에 할당
-* **No Function** (함수 없음) 드롭다운에서 **AnchorModuleScript** > **CreateAzureAnchor ()** 를 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
+* **No Function**(함수 없음) 드롭다운에서 **AnchorModuleScript** > **CreateAzureAnchor ()** 를 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 * **ParentAnchor** 개체를 빈 **None (Game Object)** 필드에 할당하여 CreateAzureAnchor () 함수의 인수로 만들기
 
 ![CreateAzureAnchor 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-asa/asa-02-section5-step1-3.png)
@@ -115,7 +115,7 @@ Hierarchy(계층 구조) 창에서 **CreateAzureAnchor** 라는 다음 단추를
 Hierarchy(계층 구조) 창에서 **RemoveLocalAnchor** 라는 다음 단추를 선택한 후, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
 * **ParentAnchor** 개체를 **None (Object)** 필드에 할당
-* **No Function** (함수 없음) 드롭다운에서 **AnchorModuleScript** > **RemoveLocalAnchor ()** 를 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
+* **No Function**(함수 없음) 드롭다운에서 **AnchorModuleScript** > **RemoveLocalAnchor ()** 를 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 * **ParentAnchor** 개체를 빈 **None (Game Object)** 필드에 할당하여 RemoveLocalAnchor () 함수의 인수로 만들기
 
 ![RemoveLocalAnchor 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-asa/asa-02-section5-step1-4.png)
@@ -123,14 +123,14 @@ Hierarchy(계층 구조) 창에서 **RemoveLocalAnchor** 라는 다음 단추를
 Hierarchy(계층 구조) 창에서 **FindAzureAnchor** 라는 다음 단추를 선택한 후, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
 * **ParentAnchor** 개체를 **None (Object)** 필드에 할당
-* **No Function** (함수 없음) 드롭다운에서 **AnchorModuleScript** > **FindAzureAnchor ()** 를 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
+* **No Function**(함수 없음) 드롭다운에서 **AnchorModuleScript** > **FindAzureAnchor ()** 를 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 
 ![FindAzureAnchor 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-asa/asa-02-section5-step1-5.png)
 
 Hierarchy(계층 구조) 창에서 **DeleteAzureAnchor** 라는 다음 단추를 선택한 후, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
 * **DeleteAzureAnchor** 개체를 **None (Object)** 필드에 할당
-* **No Function** (함수 없음) 드롭다운에서 **AnchorModuleScript** > **DeleteAzureAnchor ()** 를 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
+* **No Function**(함수 없음) 드롭다운에서 **AnchorModuleScript** > **DeleteAzureAnchor ()** 를 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 
 ![DeleteAzureAnchor 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-asa/asa-02-section5-step1-6.png)
 

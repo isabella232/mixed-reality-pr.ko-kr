@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 혼합 현실, Unity, 자습서, HoloLens
+keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 시선 추적
 ms.localizationpriority: high
-ms.openlocfilehash: 490a131bb196941d2ae581b97d88a104c0c212e2
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 2b572a106cba904231ed124260cd879cd3a9a944
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353501"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679752"
 ---
 # <a name="8-using-eye-tracking"></a>8. 시선 추적 사용
 
@@ -41,9 +41,9 @@ Unity 메뉴에서 Mixed Reality Toolkit > 유틸리티 > **Unity 프로젝트 �
 
 Hierarchy 창에서 **MixedRealityToolkit** 개체를 선택한 다음, Inspector 창에서 MixedRealityToolkit > **입력** 탭을 선택하고 다음 단계를 수행합니다.
 
-* **DefaultHoloLens2InputSystemProfile** 을 복제하고 적절한 이름(예: _GettingStarted_HoloLens2InputSystemProfile_ )을 설정합니다.
+* **DefaultHoloLens2InputSystemProfile** 을 복제하고 적절한 이름(예: _GettingStarted_HoloLens2InputSystemProfile_)을 설정합니다.
 * **포인터** 섹션을 확장합니다.
-* **DefaultMixedRealityPointerProfile** 을 복제하고 적절한 이름(예: _GettingStarted_MixedRealityPointerProfile_ )을 설정합니다.
+* **DefaultMixedRealityPointerProfile** 을 복제하고 적절한 이름(예: _GettingStarted_MixedRealityPointerProfile_)을 설정합니다.
 * **응시 설정** 섹션을 찾고 **시선 추적 사용** 확인란을 선택합니다.
 
 ![새로 만든 프로필이 적용되고 시선 추적을 사용하도록 설정된 Unity MixedRealityToolkit 구성 요소](images/mr-learning-base/base-08-section2-step1-1.png)
@@ -56,7 +56,7 @@ Hierarchy 창에서 **MixedRealityToolkit** 개체를 선택한 다음, Inspecto
 Hierarchy 창에서 **MixedRealityToolkit** 개체를 선택한 다음, Inspector 창에서 **입력** 탭으로 이동한 다음, 다음을 수행합니다.
 
 * **입력 데이터 공급자** > **입력 시뮬레이션 서비스** 섹션을 확장합니다.
-* **DefaultMixedRealityInputSimulationProfile** 을 복제하고 적절한 이름(예: _GettingStarted_MixedRealityInputSimulationProfile_ )을 설정합니다.
+* **DefaultMixedRealityInputSimulationProfile** 을 복제하고 적절한 이름(예: _GettingStarted_MixedRealityInputSimulationProfile_)을 설정합니다.
 * **시선 시뮬레이션** 섹션을 찾아 **시선 위치 시뮬레이션** 확인란을 선택합니다.
 
 ![새로 만든 프로필이 적용되고 시선 시뮬레이션을 사용하도록 설정된 Unity MixedRealityToolkit 구성 요소](images/mr-learning-base/base-08-section3-step1-1.png)

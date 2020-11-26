@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 08/18/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, 자습서, 시작, mrtk, uxt, UX Tools, 설명서
-ms.openlocfilehash: a4ad1879e73c85e25e5de675a4180f57361691a9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: dc17b878255a3d6a8e0efc3a4c5bd7aa7d57373d
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702395"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679852"
 ---
 # <a name="4-making-your-scene-interactive"></a>4. 대화형 장면 만들기
 
@@ -36,7 +36,7 @@ ms.locfileid: "91702395"
 
 ![프로젝트 플러그 인 폴더 만들기](images/unreal-uxt/4-plugins.PNG)
 
-3.  UXTools 플러그 인에는 **Buttons** , **Input Simulation** 및 **Pointers** 를 포함한 구성 요소에 대한 하위 폴더가 있는 Content 폴더와 추가 코드가 있는 C++ Classes 폴더가 있습니다.  
+3.  UXTools 플러그 인에는 **Buttons**, **Input Simulation** 및 **Pointers** 를 포함한 구성 요소에 대한 하위 폴더가 있는 Content 폴더와 추가 코드가 있는 C++ Classes 폴더가 있습니다.  
 
 > [!NOTE]
 > **콘텐츠 브라우저** 에 **UXTools 콘텐츠** 섹션이 표시되지 않는 경우 **보기 옵션 > 플러그 인 콘텐츠** 를 클릭합니다. 

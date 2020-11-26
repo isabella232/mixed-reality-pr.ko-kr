@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
-keywords: 혼합 현실, Unity, 자습서, HoloLens
+keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, 음성 인식, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 07130f7d8f10464219458be4ddd5c420a0512b51
-ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
+ms.openlocfilehash: ec158de1aa8b8e6401802b68098eb7acd883d7e6
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93416989"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679282"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1. 음성 인식 및 전사 통합 및 사용
 
@@ -46,12 +46,12 @@ ms.locfileid: "93416989"
 
 이를 위해 먼저 [프로젝트 및 첫 번째 애플리케이션 초기화](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
 
-1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름(예: *MRTK Tutorials* ) 지정
+1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름(예: *MRTK Tutorials*) 지정
 2. [빌드 플랫폼 전환](mr-learning-base-02.md#configuring-the-unity-project)
 3. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
 5. [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project)
-6. [장면 만들기 및 구성](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름(예: *AzureSpeechServices* ) 지정
+6. [장면 만들기 및 구성](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름(예: *AzureSpeechServices*) 지정
 
 그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면의 MRTK 구성 프로필을 **DefaultHoloLens2ConfigurationProfile** 로 변경하고, 공간 인식 메시의 표시 옵션을 **폐색** 으로 변경합니다.
 
@@ -72,7 +72,7 @@ Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 차례로 선택�
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section3-step1-1.png)
 
-**게시 설정** 에서 **기능** 섹션까지 아래로 스크롤하여 자습서의 시작 부분에서 프로젝트를 만들 때 사용하도록 설정한 **InternetClient** , **Microphone** 및 **SpatialPerception** 기능이 사용하도록 설정되어 있는지 다시 확인합니다. 그런 다음, **InternetClientServer** 및 **PrivateNetworkClientServer** 기능을 사용하도록 설정합니다.
+**게시 설정** 에서 **기능** 섹션까지 아래로 스크롤하여 자습서의 시작 부분에서 프로젝트를 만들 때 사용하도록 설정한 **InternetClient**, **Microphone** 및 **SpatialPerception** 기능이 사용하도록 설정되어 있는지 다시 확인합니다. 그런 다음, **InternetClientServer** 및 **PrivateNetworkClientServer** 기능을 사용하도록 설정합니다.
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section3-step1-2.png)
 
@@ -114,7 +114,7 @@ Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 차례로 선택�
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-4.png)
 
-**Lunarcom** 개체를 선택한 상태에서 Buttons 개체를 펼쳐 자식 개체를 표시한 다음, [검사기] 창에서 **단추** 목록을 펼치고, **크기** 를 3으로 설정하고, **MicButton** , **SatelliteButton** 및 **RocketButton** 필드를 각각 **요소** 0, 1 및 2 필드로 끕니다.
+**Lunarcom** 개체를 선택한 상태에서 Buttons 개체를 펼쳐 자식 개체를 표시한 다음, [검사기] 창에서 **단추** 목록을 펼치고, **크기** 를 3으로 설정하고, **MicButton**, **SatelliteButton** 및 **RocketButton** 필드를 각각 **요소** 0, 1 및 2 필드로 끕니다.
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-5.png)
 

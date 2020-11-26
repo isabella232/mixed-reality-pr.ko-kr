@@ -7,13 +7,13 @@ ms.author: suwu
 ms.date: 09/29/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: unreal, 샘플, UX Tools 플러그 인, MRTK-Unreal, mixedrealitytoolkit, mixedrealitytoolkit-unreal, unreal 엔진, 오픈 소스
-ms.openlocfilehash: b87ae1a3186cb487ca0a609ab663c3a41128ceb3
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: unreal, 샘플, UX Tools 플러그 인, MRTK-Unreal, mixedrealitytoolkit, mixedrealitytoolkit-unreal, unreal engine, 오픈 소스, 혼합 현실 헤드셋, windows 혼합 현실 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 404b0319ddf1dfc6954df5fef30607bc0b53f536
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699521"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679792"
 ---
 # <a name="unreal-sample-apps"></a>Unreal 샘플 앱
 

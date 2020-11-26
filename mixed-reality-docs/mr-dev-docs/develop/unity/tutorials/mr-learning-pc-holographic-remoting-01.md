@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/29/2020
 ms.topic: article
-keywords: 혼합 현실, Unity, 자습서, HoloLens
+keywords: 혼합 현실, unity, 자습서, hololens, PC 홀로그램 원격, 도구 설명, 시선 추적
 ms.localizationpriority: high
-ms.openlocfilehash: d88d3e17e26ddd361f2cbe1a32f22025255303f0
-ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
+ms.openlocfilehash: eae7b57544b8a544d3df926296ad5f2a720d5529
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93416999"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679772"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. PC 홀로그램 원격 시작
 
@@ -50,7 +50,7 @@ ms.locfileid: "93416999"
 
 이를 위해 먼저 [프로젝트 및 첫 번째 애플리케이션 초기화](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
 
-1. [새 Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름 지정(예: *MRTK Tutorials* )
+1. [새 Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름 지정(예: *MRTK Tutorials*)
 
 1. [빌드 플랫폼 전환](mr-learning-base-02.md#configuring-the-unity-project)
 
@@ -60,7 +60,7 @@ ms.locfileid: "93416999"
 
 1. [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project)
 
-1. [장면 만들기 및 설정](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름 지정(예: **PC Holographic Remoting** )
+1. [장면 만들기 및 설정](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름 지정(예: **PC Holographic Remoting**)
 
 그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면의 MRTK 구성 프로필을 **DefaultHoloLens2ConfigurationProfile** 로 변경합니다. 공간 인식 메시의 표시 옵션을 **폐색** 으로 변경합니다.
 
@@ -131,7 +131,7 @@ ms.locfileid: "93416999"
 
 이제 단추는 모델 전환 및 클리핑 기능을 시연하도록 구성되었습니다. 이번에는 3D 모델 및 클리핑 개체를 스크립트에 추가해야 합니다.
 
-데모를 위해 6개의 서로 다른 3D 모델이 제공되었습니다. * *_ModelParentobject_* _를 펼쳐서 이러한 3D 모델을 표시합니다.
+데모를 위해 6개의 서로 다른 3D 모델이 제공되었습니다. **_ModelParentobject_* _를 펼쳐서 이러한 3D 모델을 표시합니다.
 
 Hierarchy(계층 구조) 창에서 ButtonParent 개체가 선택된 채로 Inspector(검사기) 창에서 *View Button Control (Script)* * 구성 요소를 찾아서 **Models** 변수를 펼칩니다.
 
@@ -171,7 +171,7 @@ ModelParent 개체의 각 자식 개체를 이러한 필드로 끌어서 놓습�
 
 ### <a name="1-identify-target-objects-and-associated-tooltips"></a>1. 대상 개체 및 연결된 도구 설명 식별
 
-[계층 구조] 창에서 ModelParent 개체를 선택합니다. **_MarsCuriosity -> Rover_ *_를 차례로 펼쳐서 5개의 MarsCuriosityRover 주요 부품(_* POI-Camera** , **POI-Wheels** , **POI-Antena** , **POI-Spectrometer** , **POI-RUHF Antenna** )을 찾습니다.
+[계층 구조] 창에서 ModelParent 개체를 선택합니다. **_MarsCuriosity -> Rover_ *_를 차례로 펼쳐서 5개의 MarsCuriosityRover 주요 부품(_* POI-Camera**, **POI-Wheels**, **POI-Antena**, **POI-Spectrometer**, **POI-RUHF Antenna**)을 찾습니다.
 
 * [계층 구조] 창에서 MarsCuriosityRover 부품과 연결된 5개의 해당 도구 설명 개체를 확인합니다.
 * MarsCuriosityRover 부품을 살펴볼 때 환경을 강조 표시하도록 이러한 개체를 구성합니다.
@@ -180,7 +180,7 @@ ModelParent 개체의 각 자식 개체를 이러한 필드로 끌어서 놓습�
 
 ### <a name="2-implement-while-looking-at-target-----on-look-away--events"></a>2. While Looking At Target () 및 On Look Away () 이벤트 구현
 
-Hierarchy(계층 구조) 창에서 * **POI-Camera** _ 개체를 선택합니다. Inspector(검사기) 창에서 _ *Eye Tracking Target (Script)* * 구성 요소를 찾고, **While Looking At Target ()**  & **On Look Away ()** 이벤트를 다음과 같이 구성합니다.
+Hierarchy(계층 구조) 창에서 ***POI-Camera** _ 개체를 선택합니다. Inspector(검사기) 창에서 _ *Eye Tracking Target (Script)* * 구성 요소를 찾고, **While Looking At Target ()**  & **On Look Away ()** 이벤트를 다음과 같이 구성합니다.
 
 * **POI-Camera 도구 설명** 개체를 **없음(개체)** 필드에 할당합니다.
 * **While Looking At Target ()** 이벤트의 **함수 없음** 드롭다운에서 **GameObject** > **SetActive(부울)** 를 차례로 선택합니다. 대상 개체를 볼 때 트리거되는 작업으로 도구 설명을 강조 표시하려면 아래쪽에 있는 **확인란** 을 선택합니다.

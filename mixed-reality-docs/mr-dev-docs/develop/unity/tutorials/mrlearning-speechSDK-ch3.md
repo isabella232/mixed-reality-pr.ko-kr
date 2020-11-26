@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
-keywords: 혼합 현실, Unity, 자습서, HoloLens
+keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, 음성 인식, Windows 10, 음성 번역
 ms.localizationpriority: high
-ms.openlocfilehash: 6a7aead068b5ab8ba25bcf84bbeae0a19723845b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1139da69b27352b996d57184e21e9d6291d26fce
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702190"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679922"
 ---
 # <a name="3-adding-the-azure-cognitive-services-speech-translation-component"></a>3. Azure Cognitive Services 음성 번역 구성 요소 추가
 
@@ -26,7 +26,7 @@ ms.locfileid: "91702190"
 
 [계층 구조] 창에서 **Lunarcom** 개체를 선택한 다음, [검사기] 창에서 **구성 요소 추가** 단추를 사용하여 **Lunarcom 번역 인식기(스크립트)** 구성 요소를 Lunarcom 개체에 추가하고 다음과 같이 구성합니다.
 
-* **대상 언어** 를 선택한 언어(예: _독일어_ )로 변경합니다.
+* **대상 언어** 를 선택한 언어(예: _독일어_)로 변경합니다.
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial3-section1-step1-1.png)
 

@@ -6,13 +6,13 @@ ms.author: shentan
 ms.date: 04/11/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: 혼합 현실, 응시, 응시 타기팅, 상호 작용, 디자인, HoloLens, MMR, 멀티모달
-ms.openlocfilehash: 2f680a6682f848b6e6f12be599cc8a7fda35b1a6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Mixed Reality, 응시, 응시 타깃팅, 상호 작용, 디자인, hololens, MMR, 멀티모달, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens
+ms.openlocfilehash: a4b4c8fed9bb74b12bfa4390e1675acab44b3eec
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699508"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703169"
 ---
 # <a name="introducing-instinctual-interactions"></a>직관적인 상호 작용 소개
 
@@ -184,7 +184,7 @@ A:  이러한 사용자에게는 모든 사용자 상호 작용 모델이 적합
 * [응시 및 유지](gaze-and-dwell.md)
 * [손 - 직접 조작](direct-manipulation.md)
 * [손 - 제스처](gaze-and-commit.md#composite-gestures)
-* [손 - 가리키기 및 커밋](point-and-commit.md)
+* [손 - 가리키고 커밋](point-and-commit.md)
 * [Instinctual 상호 작용](interaction-fundamentals.md)
 * [모션 컨트롤러](motion-controllers.md)
 * [공간 매핑](spatial-mapping.md)
