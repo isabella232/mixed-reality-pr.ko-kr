@@ -3,15 +3,15 @@ title: 사용자 지정 홀로그램 원격 데이터 채널
 description: 사용자 지정 데이터 채널은 이미 설정 된 Holographic 원격 연결을 통해 사용자 데이터를 전송 하는 데 사용할 수 있습니다.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 데이터 채널
-ms.openlocfilehash: bbbf0e1dd48e1e6872243b2ea562b0729d53ebae
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 119a08a7f0e41aca694184879e33aaf54160220c
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677912"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443446"
 ---
 # <a name="custom-holographic-remoting-data-channels"></a>사용자 지정 홀로그램 원격 데이터 채널
 
@@ -114,7 +114,8 @@ m_customDataChannel.Close();
 ```
 
 ## <a name="see-also"></a>참고 항목
-* [홀로그램 원격 원격 앱 작성](holographic-remoting-create-host.md)
+* [Windows Mixed Rey Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-wmr.md)
+* [OpenXR Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-openxr.md)
 * [사용자 지정 홀로그램 원격 플레이어 앱 작성](holographic-remoting-create-player.md)
 * [Holographic 원격 문제 해결 및 제한 사항](holographic-remoting-troubleshooting.md)
 * [홀로그램 원격 소프트웨어 사용 조건](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

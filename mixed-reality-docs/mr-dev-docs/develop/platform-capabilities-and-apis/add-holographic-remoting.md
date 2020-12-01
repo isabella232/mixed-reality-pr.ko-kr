@@ -1,17 +1,17 @@
 ---
 title: Holographic 원격 추가
 description: Holographic 원격을 사용 하 여 네트워크를 통해 HoloLens에 holograms을 렌더링 하는 방법을 설명 합니다.
-author: mikeriches
-ms.author: mriches
-ms.date: 05/24/2019
+author: florianbagarmicrosoft
+ms.author: flbagar
+ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, holographic remoting, 원격 렌더링, 네트워크 렌더링, HoloLens, 원격 holograms, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: ec03a349959f9bde71a2c8a600d513fb21c533a8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7aafb7a764a062efcca2c5a3cd9f77d4395516a2
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679632"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443653"
 ---
 # <a name="add-holographic-remoting-hololens-1st-gen"></a>Holographic 원격 추가 (HoloLens (첫 번째 gen))
 
@@ -23,7 +23,7 @@ ms.locfileid: "94679632"
 Holographic 원격을 사용 하는 HoloLens 개발자는 HoloLens 2와 호환 되도록 앱을 업데이트 해야 합니다. 이렇게 하려면 새 버전의 Holographic Remoting NuGet 패키지가 필요 합니다. Holographic Remoting NuGet 패키지를 사용 하는 응용 프로그램에서 2.0.0.0 보다 작은 버전 번호를 사용 하는 경우 HoloLens 2의 Holographic 원격 플레이어에 연결 하려고 하면 연결이 실패 합니다.
 
 >[!NOTE]
->HoloLens 2와 관련 한 지침은 [여기](holographic-remoting-create-host.md)에서 찾을 수 있습니다.
+>HoloLens 2와 관련 한 지침은 [여기](holographic-remoting-create-remote-wmr.md)에서 찾을 수 있습니다.
 
 
 ## <a name="add-holographic-remoting-to-your-desktop-or-uwp-app"></a>데스크톱 또는 UWP 앱에 holographic 원격 추가

@@ -3,20 +3,24 @@ title: Holographic 원격 버전 기록
 description: HoloLens 2의 Holographic Remoting에 대 한 버전 기록입니다.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 버전 기록, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: d9b1a9e7aa519084c05f658b2bc1864dc26e7ffa
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5ac15c9af7f6cb2d0263b1ee20e0d2c490d353a0
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677852"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443469"
 ---
 # <a name="holographic-remoting-version-history"></a>Holographic 원격 버전 기록
 
 > [!IMPORTANT]
 > 이 지침은 HoloLens 2의 Holographic Remoting에만 적용 됩니다.
+
+## <a name="version-240-december-1-2020"></a>버전 2.4.0 (2020 년 12 월 1 일) <a name="v2.4.0"></a>
+* Holographic Remoting은 이제 [OPENXR API](../native/openxr.md)를 사용 하 여 원격 앱 작성을 지원 합니다. 시작 하려면 [OpenXR api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-openxr.md)을 참조 하세요.
+* 버그 수정 및 안정성 향상.
 
 ## <a name="version-231-october-10-2020"></a>버전 2.3.1 (2020 년 10 월 10 일) <a name="v2.3.1"></a>
 * 시각적 지터를 일으킨 원격 포즈 예측으로 회귀를 수정 했습니다.
@@ -102,8 +106,9 @@ ms.locfileid: "94677852"
 * HoloLens 2에 대 한 Holographic 원격 작업의 첫 번째 공개 릴리스입니다.
 
 ## <a name="see-also"></a>참고 항목
+* [Windows Mixed Rey Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-wmr.md)
+* [OpenXR Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-openxr.md)
 * [사용자 지정 홀로그램 원격 플레이어 앱 작성](holographic-remoting-create-player.md)
-* [Holographic 원격 호스트 앱 작성](holographic-remoting-create-host.md)
 * [Holographic 원격 문제 해결 및 제한 사항](holographic-remoting-troubleshooting.md)
 * [홀로그램 원격 소프트웨어 사용 조건](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?LinkId=521839)

@@ -3,15 +3,15 @@ title: 사용자 지정 홀로그램 원격 플레이어 작성
 description: 사용자 지정 Holographic 원격 플레이어 앱을 만들면 원격 컴퓨터에 렌더링 된 콘텐츠를 HoloLens 2로 표시할 수 있는 사용자 지정 응용 프로그램을 만들 수 있습니다. 이 문서에서는이를 달성할 수 있는 방법에 대해 설명 합니다.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, NuGet, 앱 매니페스트, 플레이어 컨텍스트, 원격 앱, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: f55973e74abc60f62599375aebf278224865a5c1
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 69dc382873eb4fe0dc50f6f55e074c3491b02c02
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677922"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443640"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>사용자 지정 홀로그램 원격 플레이어 앱 작성
 
@@ -22,7 +22,7 @@ ms.locfileid: "94677922"
 
 Holographic 원격 플레이어를 사용 하면 앱에서 데스크톱 PC 또는 UWP 장치 (예: Xbox One)에서 [렌더링](rendering.md) 된 Holographic 콘텐츠를 표시 하 여 더 많은 시스템 리소스에 액세스할 수 있습니다. Holographic Remoting player 앱은 입력 데이터를 Holographic Remoting 원격 응용 프로그램으로 스트리밍하 고 비디오 및 오디오 스트림으로 몰입 형 보기를 다시 받습니다. 연결은 표준 Wi-fi를 사용 하 여 수행 됩니다. 플레이어 앱을 만들려면 NuGet 패키지를 사용 하 여 UWP 앱에 Holographic 원격을 추가 하 고, 연결을 처리 하 고 몰입 형 뷰를 표시 하는 코드를 작성 합니다. 
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>전제 조건
 
 좋은 출발점은 이미 Windows Mixed Reality API를 대상으로 하는 작동 하는 DirectX 기반 UWP 앱입니다. 자세한 내용은 [DirectX 개발 개요](../native/directx-development-overview.md)를 참조 하세요. 기존 앱이 없고 처음부터 시작 하려면 [c + + holographic 프로젝트 템플릿이](../native/creating-a-holographic-directx-project.md) 좋은 출발점입니다.
 
@@ -251,7 +251,8 @@ winrt::Microsoft::Holographic::AppRemoting::PlayerFrameStatistics statistics = m
 사용자 지정 데이터 채널은 이미 설정 된 원격 연결을 통해 사용자 데이터를 전송 하는 데 사용할 수 있습니다. 자세한 내용은 [사용자 지정 데이터 채널](holographic-remoting-custom-data-channels.md) 을 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
-* [홀로그램 원격 원격 앱 작성](holographic-remoting-create-host.md)
+* [Windows Mixed Rey Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-wmr.md)
+* [OpenXR Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-openxr.md)
 * [사용자 지정 홀로그램 원격 데이터 채널](holographic-remoting-custom-data-channels.md)
 * [홀로그램 원격을 사용하여 보안 연결 설정](holographic-remoting-secure-connection.md)
 * [Holographic 원격 문제 해결 및 제한 사항](holographic-remoting-troubleshooting.md)

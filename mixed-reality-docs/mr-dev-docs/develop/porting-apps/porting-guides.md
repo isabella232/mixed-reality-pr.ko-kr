@@ -1,23 +1,23 @@
 ---
-title: 포팅 가이드
+title: Windows Mixed Reality로 VR 앱 포팅
 description: 기존 몰입 형 응용 프로그램을 Windows Mixed Reality로 이식 하는 방법을 설명 하는 단계별 연습입니다.
 author: JBrentJ
 ms.author: alexturn
 ms.date: 07/07/2020
 ms.topic: article
 keywords: 포트, unity, unreal, 미들웨어, engine, UWP, Win32, 포팅, HoloLens 1 gen, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 마이그레이션, Windows 10, 입력 매핑
-ms.openlocfilehash: 18129151b1e3d11f9e9c7bb3c3420c23b5fd1dd0
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: aa9d45a4413fd8e0f5c7eec61f830635c2db6f4b
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677732"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443684"
 ---
-# <a name="porting-guides"></a>포팅 가이드
+# <a name="porting-vr-apps-to-windows-mixed-reality"></a>Windows Mixed Reality로 VR 앱 포팅
 
 Windows 10에는 몰입 형 및 holographic 헤드셋을 직접 지원 합니다. Rift 또는 HTC Vive와 같은 다른 장치에 대 한 콘텐츠를 빌드한 경우 운영 체제의 플랫폼 API 위에 있는 라이브러리에 대 한 종속성이 있습니다. 기존 Win32 Unity VR 앱을 Windows Mixed Reality로 가져오면 공급 업체의 특정 VR Sdk 사용이 Unity의 공급 업체의 VR Api로 변경 됩니다.
 
-## <a name="porting-overview"></a>포팅 개요
+## <a name="porting-requirements"></a>포팅 요구 사항
 
 개략적인 수준에서 다음과 같은 단계를 수행 하 여 기존 콘텐츠를 이식할 수 있습니다.
 1. **PC에서 Windows 10의 작성자 업데이트 (16299)를 실행 하 고 있는지 확인 합니다.** 이러한 빌드는 혼합 현실 개발에 가장 안정적이 아니므로 Insider Skip에서 preview 빌드를 수신 하는 것이 더 이상 권장 되지 않습니다.
@@ -56,7 +56,7 @@ Windows Mixed Reality 플랫폼은 아직 개발 중입니다. Windows 참가자
 > [!IMPORTANT]
 > HP 반향 G2 컨트롤러를 사용 하는 경우 추가 입력 매핑 지침은 [이 문서](../unreal/unreal-reverb-g2-controllers.md) 를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [Windows Mixed Reality 최소 PC 하드웨어 호환성 지침](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [혼합 현실 성능 이해](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Unity에 대 한 성능 권장 사항](../unity/performance-recommendations-for-unity.md)

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: bcc899a178917a8ef184b4c11bd724df71f7b5c0
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: bf6b98eca850d2b280e7a016799c4287955159a6
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638547"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443667"
 ---
 # <a name="project-settings"></a>[프로젝트 설정](#tab/project)
 
@@ -95,9 +95,6 @@ else
 
 기존 HMD를 대상으로 하는 각 게임 또는 응용 프로그램에는 처리 하는 일련의 입력, 환경에 필요한 입력 형식 및 해당 입력을 가져오기 위해 호출 하는 특정 Api가 있습니다. Windows Mixed Reality에서 제공 되는 입력을 활용할 수 있도록 간단 하 고 간단 하 게 만드는 데 투자 했습니다.
 1. Windows Mixed Reality에서 입력을 노출 하는 방법 및 응용 프로그램의 용도에 매핑되는 방법에 대 한 자세한 내용은 인접 탭의 **Unity에 대 한 입력 포팅 가이드** 를 참조 하세요.
-2. Unity의 VR 간 입력 API를 사용할 것인지, MR 특정 입력 API를 사용할 것인지를 선택 합니다. 일반 입력. GetButton/Input. Getbutton Api는 현재 [Oculus 입력](https://docs.unity3d.com/Manual/OculusControllers.html) 및 [openvr 입력](https://docs.unity3d.com/Manual/OpenVRControllers.html)에 사용 되는 Unity VR 앱에서 사용 됩니다. 앱에서 동작 컨트롤러에 대해 이러한 Api를 이미 사용 하 고 있는 경우이 경로를 사용 하는 것이 가장 쉬운 경로입니다. 입력 관리자에서 단추와 축을 다시 매핑해야 하기만 하면 됩니다.
-    * 일반적으로는 XR Api를 사용 하 여 Unity에서 동작 컨트롤러 데이터에 액세스할 수 있습니다. GetButton/Input. Getbutton Api 또는 MR 특정 UnityEngine. (이전에는 Unity 5.6의 UnityEngine. XR 네임 스페이스)
-    * 게임 패드 및 동작 컨트롤러를 결합 하는 [도구 키트의 예제](https://github.com/Microsoft/HoloToolkit-Unity/pull/572) 를 참조 하세요.
 
 ### <a name="9-performance-testing-and-tuning"></a>9. 성능 테스트 및 튜닝
 
@@ -112,13 +109,22 @@ Unity의 일반 입력의 두 방법 중 하나를 사용 하 여 입력 논리�
 > [!IMPORTANT]
 > HP 반향 G2 컨트롤러를 사용 하는 경우 추가 입력 매핑 지침은 [이 문서](../../unity/unity-reverb-g2-controllers.md) 를 참조 하세요.
 
-## <a name="general-inputgetbuttongetaxis-apis"></a>일반 입력. GetButton/Getbutton Api
+## <a name="unity-xr-input-apis"></a>Unity XR 입력 Api
+
+새 프로젝트의 경우 처음부터 새 XR 입력 Api를 사용 하는 것이 좋습니다. 
+
+[XR api](https://docs.unity3d.com/Manual/xr_input.html)에 대 한 자세한 내용은 여기에서 찾을 수 있습니다.
+
+## <a name="inputgetbuttongetaxis-apis"></a>입력. GetButton/Getbutton Api
 
 Unity는 현재 일반 입력을 사용 합니다. GetButton/Input. Getbutton Api를 사용 하 여 [Oculus sdk](https://docs.unity3d.com/Manual/OculusControllers.html) 및 [openvr sdk](https://docs.unity3d.com/Manual/OpenVRControllers.html)의 입력을 노출 합니다. 앱이 입력에 이러한 Api를 이미 사용 하 고 있는 경우 Windows Mixed Reality에서 동작 컨트롤러를 지원 하기에 가장 쉬운 경로입니다. 입력 관리자에서 단추와 축을 다시 매핑해야 합니다.
 
 자세한 내용은 [unity 단추/축 매핑 표](../../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) 및 [일반적인 unity api 개요](../../unity/gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis)를 참조 하세요.
 
 ## <a name="windows-specific-xrwsainput-apis"></a>Windows 관련 XR. WSA. 입력 Api
+
+> [!CAUTION]
+> 프로젝트에서 XR를 사용 하는 경우 WSA Api는 향후 Unity 릴리스의 XR SDK에 대 한 것입니다. 새 프로젝트의 경우 처음부터 XR SDK를 사용 하는 것이 좋습니다. [XR 입력 시스템 및 api](https://docs.unity3d.com/Manual/xr_input.html)에 대 한 자세한 내용은 여기에서 찾을 수 있습니다.
 
 앱에서 각 플랫폼에 대 한 사용자 지정 입력 논리를 이미 빌드하는 경우 **XR** 네임 스페이스에서 Windows 관련 공간 입력 api를 사용 하도록 선택할 수 있습니다. 이렇게 하면 위치 정확도 나 원본 종류와 같은 추가 정보에 액세스할 수 있으므로 HoloLens와 컨트롤러를 따로 지시할 수 있습니다.
 
@@ -134,14 +140,14 @@ Windows Mixed Reality는 다양 한 폼 팩터에서 동작 컨트롤러를 지�
 이러한 컨트롤러를 더 잘 나타내기 위해 각 상호 작용 소스에 대해 조사할 수 있는 두 가지 종류의 포즈가 있습니다.
 
 * HoloLens에서 감지 된 손바닥의 위치 또는 이동 컨트롤러를 보유 하는 야자수의 위치를 나타내는 **그립 포즈** 입니다.
-    * 모던 헤드셋에서는이 포즈를 사용 하 여 사용자 **의 손을** 나 **사용자의 손으로 보유 한 개체** (예: 소드 또는 포)를 렌더링 하는 데 가장 적합 합니다.
-    * **그립 위치** : 컨트롤러를 자연스럽 게 유지 하는 경우 왼쪽 또는 오른쪽으로 조정 하 여 그립 내 위치를 가운데에 맞춥니다.
-    * **그립 방향 오른쪽 축** : 손 모양 5 손가락 포즈를 형성 하는 손을 완전히 열 때 palm (왼쪽 야자나무에서 오른쪽으로 뒤로)의 광선을 만듭니다.
+    * 모던 헤드셋에서는이 포즈를 사용 하 여 사용자 **의 손을** 나 **사용자의 손으로 보유 한 개체**(예: 소드 또는 포)를 렌더링 하는 데 가장 적합 합니다.
+    * **그립 위치**: 컨트롤러를 자연스럽 게 유지 하는 경우 왼쪽 또는 오른쪽으로 조정 하 여 그립 내 위치를 가운데에 맞춥니다.
+    * **그립 방향 오른쪽 축**: 손 모양 5 손가락 포즈를 형성 하는 손을 완전히 열 때 palm (왼쪽 야자나무에서 오른쪽으로 뒤로)의 광선을 만듭니다.
     * **그립 방향 전방 축: 핸들** 을 부분적으로 (컨트롤러를 보유 하는 것 처럼) 닫는 경우 비 엄지 손가락으로 형성 된 튜브를 통해 "전달" 하는 광선이 표시 됩니다.
-    * **그립 방향 up 축** : 오른쪽 및 전방 정의에 의해 암시 된 위쪽 축입니다.
-    * Unity의 교차 공급 업체 입력 API (XR)를 통해 그립 포즈에 액세스할 수 있습니다 **[. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation** ) 또는 Windows 특정 API ( **sourcestate/Rotation** , 그립 포즈 요청)를 통해
+    * **그립 방향 up 축**: 오른쪽 및 전방 정의에 의해 암시 된 위쪽 축입니다.
+    * Unity의 교차 공급 업체 입력 API (XR)를 통해 그립 포즈에 액세스할 수 있습니다 **[. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation**) 또는 Windows 특정 API (**sourcestate/Rotation**, 그립 포즈 요청)를 통해
 * 앞에 있는 컨트롤러의 팁을 나타내는 **포인터가 포즈** 입니다.
     * 이 포즈는 컨트롤러 모델 자체를 렌더링할 때 **UI를 가리킬** 때 raycast에 가장 잘 사용 됩니다.
-    * 현재 포인터 포즈는 Windows 관련 API ( **Sourcestate/Rotation** , 포인터 포즈 요청)를 통해서만 사용할 수 있습니다.
+    * 현재 포인터 포즈는 Windows 관련 API (**Sourcestate/Rotation**, 포인터 포즈 요청)를 통해서만 사용할 수 있습니다.
 
 이러한 포즈 좌표는 모두 Unity 세계 좌표로 표현 됩니다.

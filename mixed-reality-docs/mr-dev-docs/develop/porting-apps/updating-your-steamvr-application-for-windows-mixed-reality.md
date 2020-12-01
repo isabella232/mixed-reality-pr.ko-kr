@@ -1,19 +1,19 @@
 ---
-title: SteamVR 응용 프로그램 업데이트
+title: Windows Mixed Reality 용 SteamVR apps 업데이트
 description: Windows Mixed Reality 헤드셋의 호환성을 최대화 하기 위해 SteamVR 응용 프로그램을 업데이트 하는 최선의 방법입니다.
 author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: SteamVR, Compatibility, 포팅, HoloLens 1 gen, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 마이그레이션, Windows 10, 스트림, 동작 컨트롤러, haptics
-ms.openlocfilehash: be510203b928cc1871b505d184e1aba05ec99abc
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4565f041db83574a51d9327d37780f5ef216dc9c
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677662"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443443"
 ---
-# <a name="updating-your-steamvr-application"></a>SteamVR 응용 프로그램 업데이트
+# <a name="updating-steamvr-apps-for-windows-mixed-reality"></a>Windows Mixed Reality 용 SteamVR apps 업데이트
 개발자가 Windows Mixed Reality 헤드셋에서 실행할 SteamVR 환경을 테스트 하 고 최적화 하는 것이 좋습니다. 이 설명서는 개발자가 Windows Mixed Reality에서 뛰어난 환경을 실행 하기 위해 수행할 수 있는 일반적인 개선 사항에 대해 설명 합니다.
 
 ## <a name="initial-setup-instructions"></a>초기 설치 지침
@@ -52,7 +52,7 @@ Windows Mixed Reality 동작 컨트롤러는 다른 SteamVR 동작 컨트롤러�
 
 ## <a name="launching-steamvr-apps-from-windows-mixed-reality-start-menu"></a>Windows Mixed Reality 시작 메뉴에서 SteamVR apps 시작
 
-스트림를 통해 배포 되는 VR 환경의 경우 [SteamVR Beta에 대 한 Windows Mixed reality](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) 를 최신 [windows 참가자](https://insider.windows.com) RS5 항공편과 함께 업데이트 하 여 이제 SteamVR 제목이 "모든 앱" 목록의 windows mixed reality 시작 메뉴에 자동으로 표시 됩니다. 이러한 소프트웨어 버전을 설치 하면 고객이 헤드셋을 제거 하지 않고 Windows Mixed Reality 홈에서 직접 SteamVR 타이틀을 시작할 수 있습니다.
+스트림를 통해 배포 된 VR 환경의 경우 [SteamVR에 대 한 Windows Mixed reality](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) 를 최신 [Windows 릴리스와](https://insider.windows.com) 함께 업데이트 하 여 이제 SteamVR 제목이 "모든 앱" 목록의 windows mixed reality 시작 메뉴에 자동으로 표시 되도록 했습니다.
 
 ## <a name="windows-mixed-reality-logo"></a>Windows Mixed Reality 로고
 
