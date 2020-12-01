@@ -3,15 +3,15 @@ title: Holographic 원격 문제 해결 및 제한 사항
 description: HoloLens 2의 Holographic Remoting에 대 한 문제 해결 단계입니다.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, holographic remoting, 원격 렌더링, 네트워크 렌더링, HoloLens, 원격 holograms, 문제 해결, 도움말, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 9577f9f028987be71fdb9cd839f86980db350f02
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: ca0e4b3a43eae5be09f2c0bfbee9056cd847787c
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679582"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443596"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Holographic 원격 문제 해결
 
@@ -105,7 +105,8 @@ Holographic Remoting Player는에 대해 말하고 사용 하지 않도록 설�
 
 ## <a name="see-also"></a>참고 항목
 * [Holographic 원격 버전 기록](holographic-remoting-version-history.md)
-* [홀로그램 원격 원격 앱 작성](holographic-remoting-create-host.md)
+* [Windows Mixed Rey Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-wmr.md)
+* [OpenXR Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-openxr.md)
 * [사용자 지정 홀로그램 원격 플레이어 앱 작성](holographic-remoting-create-player.md)
 * [홀로그램 원격 소프트웨어 사용 조건](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?LinkId=521839)

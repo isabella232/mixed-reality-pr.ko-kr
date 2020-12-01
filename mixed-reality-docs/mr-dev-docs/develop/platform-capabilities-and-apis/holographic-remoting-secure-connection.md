@@ -1,17 +1,17 @@
 ---
 title: Holographic Remoting에 대 한 연결 보안 사용
 description: 이 페이지에서는 플레이어와 원격 앱 간에 암호화 및 인증 된 연결을 사용 하도록 Holographic Remoting을 구성 하는 방법을 설명 합니다.
-author: markkeinz
-ms.author: makei
-ms.date: 10/29/2020
+author: florianbagarmicrosoft
+ms.author: flbagar
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 보안, 인증, 서버 간
-ms.openlocfilehash: 4004c7534092c73fe478130b9d957461bb34bcfa
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: b2c054d19044b89b487331806b8256de1379fd53
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679592"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443464"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Holographic Remoting에 대 한 연결 보안 사용
 
@@ -38,8 +38,11 @@ Holographic Remoting의 보안. 사용 사례에 대해 올바르게 설정 하�
 * **기밀성:** 타사에서 플레이어와 원격 앱 간에 교환 되는 정보를 읽을 수 없음
 * **무결성:** 플레이어 및 원격에서 통신에 대 한 전송 중인 모든 변경 내용을 검색할 수 있습니다.
 
->[!TIP]
->보안 기능을 사용 하려면 [사용자 지정 플레이어](holographic-remoting-create-player.md) 와 [사용자 지정 원격 앱](holographic-remoting-create-host.md)을 모두 구현 해야 합니다.
+>[!IMPORTANT]
+>보안 기능을 사용 하려면 [Windows Mixed Reality](holographic-remoting-create-remote-wmr.md) 또는 [OpenXR](holographic-remoting-create-remote-openxr.md) api를 사용 하 여 [사용자 지정 플레이어](holographic-remoting-create-player.md) 와 사용자 지정 원격 앱을 모두 구현 해야 합니다.
+
+>[!NOTE]
+> [OPENXR API](../native/openxr.md) 를 사용 하 여 [2.4.0](holographic-remoting-version-history.md#v2.4.0) 버전의 원격 앱을 만들 수 있습니다. OpenXR 환경에서 보안 연결을 설정 하는 방법에 대 한 개요는 [아래](#secure-connection-using-the-openxr-api)에서 찾을 수 있습니다.
 
 ## <a name="planning-the-security-implementation"></a>보안 구현 계획
 
@@ -168,8 +171,26 @@ Windows에서 시스템 유효성 검사는 다음을 확인 합니다.
 >[!NOTE]
 >사용 사례에 다른 형식의 유효성 검사가 필요한 경우 (위의 #1 인증서 사용 사례 참조) 시스템 유효성 검사를 완전히 무시 합니다. 대신, DER로 인코딩된 x.509 인증서를 처리할 수 있는 API 또는 라이브러리를 사용 하 여 인증서 체인을 디코딩하고 사용 사례에 필요한 검사를 수행 합니다.
 
+## <a name="secure-connection-using-the-openxr-api"></a>OpenXR API를 사용 하 여 연결 보안
+
+[OPENXR api](../native/openxr.md) 를 사용 하는 경우 모든 보안 연결 관련 API는 OpenXR 확장의 일부로 사용할 수 있습니다 `XR_MSFT_holographic_remoting` .
+
+>[!IMPORTANT]
+>Holographic Remoting OpenXR extension API에 대 한 자세한 내용은 [Holographic remoting 샘플 github 리포지토리에서](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)찾을 수 있는 [사양을](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html) 확인 하세요.
+
+OpenXR 확장을 사용 하는 보안 연결의 주요 요소는 `XR_MSFT_holographic_remoting` 다음과 같은 콜백입니다.
+- `xrRemotingRequestAuthenticationTokenCallbackMSFT`는 전송할 인증 토큰을 생성 하거나 검색 합니다.
+- `xrRemotingValidateServerCertificateCallbackMSFT`인증서 체인의 유효성을 검사 합니다.
+- `xrRemotingValidateAuthenticationTokenCallbackMSFT`는 클라이언트 인증 토큰의 유효성을 검사 합니다.
+- `xrRemotingRequestServerCertificateCallbackMSFT`에서 사용할 인증서를 서버 응용 프로그램에 제공 합니다.
+
+이러한 콜백은 및를 통해 remoting OpenXR 런타임에 제공할 수 있습니다 `xrRemotingSetSecureConnectionClientCallbacksMSFT` `xrRemotingSetSecureConnectionServerCallbacksMSFT` . 또한 `XrRemotingConnectInfoMSFT` `XrRemotingListenInfoMSFT` 또는를 사용 하는지 여부에 따라 구조 또는 구조에서 secureconnection 매개 변수를 통해 보안 연결을 설정 해야 합니다 `xrRemotingConnectMSFT` `xrRemotingListenMSFT` .
+
+이 API는 [holographic remoting 보안 구현](#implementing-holographic-remoting-security) 에 설명 된 IDL 기반 API와 매우 유사 하지만, 인터페이스를 구현 하는 대신에서 콜백 구현을 제공 해야 합니다. [Holographic Remoting 샘플 github 리포지토리](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)에 있는 OpenXR 샘플 앱의 일부로 자세한 예제를 찾을 수 있습니다.
+
 ## <a name="see-also"></a>참고 항목
-* [홀로그램 원격 원격 앱 작성](holographic-remoting-create-host.md)
+* [Windows Mixed Rey Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-wmr.md)
+* [OpenXR Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-openxr.md)
 * [사용자 지정 홀로그램 원격 플레이어 앱 작성](holographic-remoting-create-player.md)
 * [Holographic 원격 문제 해결 및 제한 사항](holographic-remoting-troubleshooting.md)
 * [홀로그램 원격 소프트웨어 사용 조건](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

@@ -5,14 +5,60 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 10/02/2020
 ms.topic: article
-keywords: 포트, 포팅, unity, 미들웨어, 엔진, UWP, Win32
-ms.openlocfilehash: f16bf8ada56d4d740abbbacddd4d5e4085850d2c
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: 포팅, unity, 미들웨어, 엔진, UWP, Win32
+ms.openlocfilehash: 074e0792a5ed43bb56b8f337613234efbd166eb7
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638500"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443539"
 ---
 # <a name="porting-overview"></a>포팅 개요
 
-[//TODO: 헤더 이미지 필요]
+혼합 현실에서 기존 프로젝트를 이식 하거나 업그레이드 하는 경우 앱이 Unity를 사용 하 여 빌드 되었는지 아니면 Unreal 엔진, HoloLens (첫 번째 Gen) 또는 HoloLens 2를 사용 하 여 빌드 되었는지 또는 SteamVR에 따라 몇 가지 시나리오가 적용 될 수 있습니다. 이 개요 페이지에는 각 플랫폼 및 장치에 대 한 현재 권장 사항이 포함 되어 있습니다. 이러한 프로세스는 항상 변경 될 때 다시 확인 해야 합니다.
+
+먼저 [Unity](#unity) 및 [unreal](#unreal) 권장 사항에 따라 프로젝트 대상을 설정 하 고 포팅 시나리오 중 하나 이상을 수행 합니다.
+
+- [Hololens (첫 번째 Gen)-HoloLens 2](#hololens-1st-gen-unity-apps-to-hololens-2)
+- [Windows Mixed Reality 헤드셋](#windows-mixed-reality-headsets)
+- [SteamVR 앱](#steamvr-applications)
+- [2D UWP 앱](#2d-universal-windows-applications)
+
+## <a name="recommended-project-targets"></a>권장 프로젝트 대상
+
+응용 프로그램을 다른 대상 장치로 포팅 하는지 여부에 관계 없이 프로젝트를 최신 상태로 유지 하는 것이 중요 합니다. 현재 권장 사항은 아래에 나열 된 엔진 기반 리소스를 참조 하세요.
+
+### <a name="unity"></a>Unity
+
+혼합 현실에서 Unity 개발에 대 한 현재 권장 사항은 **레거시 XR 패키지를 사용 하는 unity 2019 LTS** 입니다. 프로젝트가 Mixed Reality Toolkit를 사용 하는 경우 현재 **Mrtk-Unity 2.5** 인 최신 버전을 사용 하 고 있는지 다시 확인 합니다.
+
+> [!CAUTION]
+> XR SDK는이 버전의 Unity와 함께 사용할 수 있지만, Azure 공간 앵커는 현재이 설정과 호환 되지 않습니다. 이 권장 사항은 Unity 용 Azure 공간 앵커 패키지의 이후 릴리스에서 업데이트 될 예정입니다. 
+> 
+> * Azure 공간 앵커가 필요 하지 않은 경우 [XR에 대 한 Unity 프로젝트를 구성](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) 하 고 [MRTK 및 XR SDK를 사용 하 여 시작할](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html)수 있습니다.
+> 
+> * 현재 프로젝트에서 XR SDK를 사용 하 고 있으며 Azure 공간 앵커를 사용 하려는 경우 XR SDK를 제거 하 고 레거시 XR 패키지를 다시 설치 하 여 프로젝트 설정을 되돌립니다.
+
+
+### <a name="unreal"></a>Unreal 
+
+혼합 현실에서의 실제 개발에 대 한 현재 권장 사항은 **Unreal Engine 4.26** 입니다. 프로젝트가 Mixed Reality Toolkit UX 도구를 사용 하는 경우 현재 **Uxt 0.10** 최신 버전을 사용 하 고 있는지 확인 합니다.
+
+## <a name="porting-scenarios"></a>포팅 시나리오
+
+### <a name="hololens-1st-gen-unity-apps-to-hololens-2"></a>Hololens (첫 번째 Gen) Unity 앱-HoloLens 2
+
+HoloLens 2로 이식할 기존 HoloLens (첫 번째 Gen) Unity 응용 프로그램이 있는 경우 [hololens 포팅 문서의](../unity/mrtk-porting-guide.md)지침을 따르세요.
+
+### <a name="windows-mixed-reality-headsets"></a>Windows Mixed Reality 헤드셋
+
+Oculus Rift 또는 HP 반향 G2와 같은 다른 장치에 대 한 콘텐츠를 빌드한 경우에는 공급 업체별 VR Sdk와 잠재적으로 입력 매핑 Api를 다시 대상으로 지정 해야 합니다. [모던 앱 포팅 가이드](porting-guides.md)에서 Unity 및 unreal 포팅 시나리오에 대 한 정보를 찾을 수 있습니다.
+
+### <a name="steamvr-applications"></a>SteamVR 응용 프로그램
+
+Windows Mixed Reality 헤드셋에 대해 업데이트 하려는 SteamVR 환경의 경우 [SteamVR 업데이트 가이드](updating-your-steamvr-application-for-windows-mixed-reality.md)를 참조 하세요.
+
+### <a name="2d-universal-windows-applications"></a>2D 유니버설 Windows 응용 프로그램
+
+Windows Mixed Reality 모던 헤드셋 또는 HoloLens로 이식 하려는 기존 2D UWP 앱이 있는 경우 [Windows Mixed reality 용 2D uwp 앱 포팅](building-2d-apps.md) 문서에 있는 지침을 따르세요.
+

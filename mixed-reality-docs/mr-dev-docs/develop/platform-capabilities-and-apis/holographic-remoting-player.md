@@ -3,20 +3,20 @@ title: 홀로그램 원격 플레이어
 description: Holographic Remoting Player는 Holographic 원격 기능을 지 원하는 PC 앱 및 게임에 연결 하는 동반 앱입니다. Holographic 원격 스트림은 Wi-Fi 연결을 사용 하 여 PC에서 Microsoft HoloLens로 콘텐츠를 실시간으로 Holographic 합니다.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 진단, 성능
-ms.openlocfilehash: c65b10079ffbc40602ebbd25b1e493c19b2a6078
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 990143a6d0c51f5f817ca0636573c3479a7e1682
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677932"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443624"
 ---
 # <a name="holographic-remoting-player"></a>홀로그램 원격 플레이어
 
 >[!IMPORTANT]
->HoloLens 2에 대 한 Holographic 원격은 주요 버전 변경입니다. [Hololens 용 원격 응용 프로그램 **(첫 번째 gen)**](add-holographic-remoting.md) 은 NuGet 패키지 **버전 1.x** 를 사용 해야 하며, [hololens 용 원격 응용 프로그램 **2** 는](holographic-remoting-create-host.md) 2.x를 사용 해야 합니다. x **. x.** 즉, HoloLens 2 용으로 작성 된 원격 응용 프로그램은 HoloLens (첫 번째 gen)와 호환 되지 않으며 그 반대의 경우도 마찬가지입니다.
+>HoloLens 2에 대 한 Holographic 원격은 주요 버전 변경입니다. [Hololens 용 원격 응용 프로그램 **(첫 번째 gen)**](add-holographic-remoting.md) 은 NuGet 패키지 **버전 1.x** 를 사용 해야 하며, [hololens 용 원격 응용 프로그램 **2** 는](holographic-remoting-create-remote-wmr.md) 2.x를 사용 해야 합니다. x **. x.** 즉, HoloLens 2 용으로 작성 된 원격 응용 프로그램은 HoloLens (첫 번째 gen)와 호환 되지 않으며 그 반대의 경우도 마찬가지입니다.
 
 [Holographic Remoting Player](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) 는 Holographic 원격 기능을 지 원하는 PC 앱 및 게임에 연결 하는 동반 앱입니다. Holographic 원격 스트림은 Wi-Fi 연결을 사용 하 여 PC에서 Microsoft HoloLens로 콘텐츠를 실시간으로 Holographic 합니다.
 
@@ -26,6 +26,9 @@ Holographic 원격 플레이어는 HoloLens (첫 번째 gen)와 HoloLens 2 모�
 
 >[!TIP]
 >[2.2.0](holographic-remoting-version-history.md#v2.2.0) 버전부터 Holographic 원격 플레이어는 [windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md)를 실행 하는 windows pc 에서도 사용할 수 있습니다.
+
+>[!TIP]
+>[OPENXR API](../native/openxr.md) 를 사용 하 여 [2.4.0](holographic-remoting-version-history.md#v2.4.0) 버전의 원격 앱을 만들 수 있습니다. 시작 하려면 [OpenXR api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-openxr.md)을 참조 하세요.
 
 ## <a name="connecting-to-the-holographic-remoting-player"></a>Holographic Remoting 플레이어에 연결
 
@@ -78,6 +81,7 @@ Holographic 원격 연결은 **암호화 되지 않습니다**. 신뢰 하는 �
 
 ## <a name="see-also"></a>참고 항목
 * [HoloLens (첫 번째 gen): Holographic 원격 추가](add-holographic-remoting.md)
-* [HoloLens 2: Holographic Remoting 원격 앱 작성](holographic-remoting-create-host.md)
+* [Windows Mixed Rey Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-wmr.md)
+* [OpenXR Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-openxr.md)
 * [홀로그램 원격 소프트웨어 사용 조건](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?LinkId=521839)

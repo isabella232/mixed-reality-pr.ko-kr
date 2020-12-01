@@ -290,6 +290,8 @@
           href: unreal/unreal-hololens-camera.md
         - name: Unreal의 QR 코드
           href: unreal/unreal-qr-codes.md
+        - name: Unreal의 UMG 및 키보드
+          href: unreal/unreal-umg-keyboard.md
         - name: Unreal의 WinRT
           href: unreal/unreal-winrt.md
     - name: 몰입형 VR
@@ -306,6 +308,8 @@
       items:
         - name: Unreal의 디바이스에 배포
           href: unreal/unreal-deploying.md
+        - name: Unreal에서 프로젝트 업그레이드
+          href: unreal/unreal-porting.md
         - name: Unreal을 사용하기 위한 권장 성능
           href: unreal/performance-recommendations-for-unreal.md
         - name: Unreal의 재질 권장 사항

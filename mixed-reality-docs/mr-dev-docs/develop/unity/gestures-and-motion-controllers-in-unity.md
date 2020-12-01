@@ -1,23 +1,29 @@
 ---
 title: Unity의 제스처 및 모션 컨트롤러
 description: 핸드 제스처 및 동작 컨트롤러를 사용 하 여 Unity의 응시에서 작업을 수행 하는 방법을 알아봅니다.
-author: thetuvix
+author: hferrone
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 12/1/2020
 ms.topic: article
 keywords: 제스처, 동작 컨트롤러, unity, 응시, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: e1a2ae10638bb8dbd35eed7e9a0a1d2a05181f0c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 122642bb7fc561e505098bca00b8bf65bfd4552e
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678652"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443576"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Unity의 제스처 및 모션 컨트롤러
 
 HoloLens의 [손으로](../../design/gaze-and-commit.md#composite-gestures) 는 [Unity](gaze-in-unity.md)에서 작업을 수행 하는 두 가지 주요 방법, 그리고 HOLOLENS 및 몰입 형 HMD의 [동작 컨트롤러](../../design/motion-controllers.md) 를 사용할 수 있습니다. Unity에서 동일한 Api를 통해 두 공간 입력 원본에 대 한 데이터에 액세스할 수 있습니다.
 
 Unity는 Windows Mixed Reality의 공간 입력 데이터에 액세스 하는 두 가지 기본 방법인 common *input. GetButton/input. Getbutton* api를 여러 Unity XR sdk에서 작동 하는 두 가지 기본 방법 및 사용 가능한 공간 입력 데이터의 전체 집합을 노출 하는 Windows Mixed Reality 관련 *InteractionManager/GestureRecognizer* api를 제공 합니다.
+
+## <a name="unity-xr-input-apis"></a>Unity XR 입력 Api
+
+새 프로젝트의 경우 처음부터 새 XR 입력 Api를 사용 하는 것이 좋습니다. 
+
+[XR api](https://docs.unity3d.com/Manual/xr_input.html)에 대 한 자세한 내용은 여기에서 찾을 수 있습니다.
 
 ## <a name="unity-buttonaxis-mapping-table"></a>Unity 단추/축 매핑 테이블
 
@@ -146,9 +152,9 @@ Unity의 교차 공급 업체 입력 API (XR)를 통해 그립 포즈에 액세�
 <tr>
 <th> 상태 추적 </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>높은 정확도</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> 높은 </td><td style="background-color: green; color: white"> true</td>
+<td> <b>높은 정확도</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> 높음 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>높은 정확도 (손실 위험)</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: green; color: white"> 높은 </td><td style="background-color: green; color: white"> true</td>
+<td> <b>높은 정확도 (손실 위험)</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: green; color: white"> 높음 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>대략적인 정확도</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: orange"> 근사치 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -213,6 +219,9 @@ Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 이 그립 포즈와 포인터 포즈 (컨트롤러의 팁) 간의 관계는 컨트롤러 마다 다를 수 있습니다. 이제 컨트롤러의 포인터 포즈에 액세스 하는 것은 아래 섹션에 설명 된 MR 특정 입력 API를 통해서만 가능 합니다.
 
 ## <a name="windows-specific-apis-xrwsainput"></a>Windows 관련 Api (XR. WSA. 입력
+
+> [!CAUTION]
+> 프로젝트에서 XR를 사용 하는 경우 WSA Api는 향후 Unity 릴리스의 XR SDK에 대 한 것입니다. 새 프로젝트의 경우 처음부터 XR SDK를 사용 하는 것이 좋습니다. [XR 입력 시스템 및 api](https://docs.unity3d.com/Manual/xr_input.html)에 대 한 자세한 내용은 여기에서 찾을 수 있습니다.
 
 **네임 스페이스:** *unityengine. XR*<br>
 **유형**: *InteractionManager*, *InteractionSourceState*, *InteractionSource*, *InteractionSourceProperties*, *InteractionSourceKind*, *InteractionSourceLocation*

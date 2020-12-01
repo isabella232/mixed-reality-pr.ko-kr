@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 3D, 모델링, 모델링 지침, 자산 요구 사항, 제작 지침, 시작 관리자, 3D 시작 관리자, 질감, 재질, 복잡도, 삼각형, 메시, 다각형, polycount, 제한, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: fb2f2718497781a2d38a0a061016e146ff077488
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 6baf8bd4faf6bb9994806e846602c91b83a1530b
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703469"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443661"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>집에서 사용할 3D 모델 만들기
 
@@ -60,7 +60,7 @@ Windows Mixed Reality 홈에서는 1만 삼각형이 넘는 모델을 지원 하
 ### <a name="node-counts-and-submesh-limits"></a>노드 개수 및 하위 메시에 대해 제한
 Windows Mixed Reality 홈에서는 64 개 이상의 노드가 있는 모델이 나 LOD 당 32 submeshes을 지원 하지 않습니다. 노드는 장면에서 개체를 [정의 하는 개념입니다.](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy) Submeshes는 개체에서 망상의 [기본 형식](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes) 배열에 정의 되어 있습니다. 
 
-|  기능 |  Description  |  최대 지원 | 설명서 |
+|  기능 |  설명  |  최대 지원 | 문서 |
 |------|------|------|------|
 |  노드 |  개체의 개체 |  LOD 당 64 | [여기](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy)|
 |  Submeshes |  모든 망상의 기본 형식 합계 |  LOD 당 32 | [여기](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes)|
@@ -97,6 +97,9 @@ Windows Mixed Reality 홈에서는 64 개 이상의 노드가 있는 모델이 �
 ## <a name="optimizations"></a>최적화
 
 Windows Mixed Reality 홈은 사용자 지정 확장 프로그램을 사용 하 여 정의 된 핵심 글 트 Tf 사양 위에 일련의 최적화를 제공 합니다. 이러한 최적화는 Windows 버전 <= 1709에 필요 하며 최신 버전의 Windows에서 권장 됩니다. [GitHub에서 제공 되는 Windows Mixed Reality 자산 변환기](https://github.com/Microsoft/glTF-Toolkit/releases)를 사용 하 여 모든 글 2.0 모델을 쉽게 최적화할 수 있습니다. 이 도구는 아래 지정 된 대로 올바른 질감 압축 및 최적화를 수행 합니다. 일반적인 사용을 위해 WindowsMRAssetConverter를 사용 하는 것이 좋습니다. 그러나 환경을 보다 세부적으로 제어 해야 하 고 사용자 고유의 최적화 파이프라인을 빌드 하려는 경우 아래 상세 사양을 참조할 수 있습니다.  
+
+> [!NOTE]
+> 정확한 모델 제한의 가능성을 명확 하 게 확인 하려면 Dynamics 365 응용 프로그램에서 사용할 수 있는 [3d 모델 최적화](https://docs.microsoft.com/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) 문서를 참조 하세요.
 
 ### <a name="materials"></a>재질
 
@@ -268,7 +271,7 @@ Windows MR은 기본 모드 선 및 요소를 지원 하지 않습니다.
 
 단일 UV vertex 특성만 지원 됩니다.
 
-## <a name="additional-resources"></a>추가 자료
+## <a name="additional-resources"></a>추가 리소스
 * [글 내보내기 및 변환기](https://github.com/KhronosGroup/glTF#converters-and-exporters)
 * [글 Tf Toolkit](https://github.com/Microsoft/glTF-Toolkit)
 * [글 Tf 2.0 사양](https://github.com/KhronosGroup/glTF/blob/master/README.md)
@@ -277,7 +280,7 @@ Windows MR은 기본 모드 선 및 요소를 지원 하지 않습니다.
 * [HoloLens 혼합 현실 질감 압축 확장 사양](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_normalRoughnessMetallic/README.md)
 * [Microsoft DDS 질감 및 Tf 확장 사양](https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/MSFT_texture_dds)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [3D 앱 시작 관리자(UWP 앱) 구현](implementing-3d-app-launchers.md)
 * [3D 앱 시작 관리자(Win32 앱) 구현](implementing-3d-app-launchers-win32.md)

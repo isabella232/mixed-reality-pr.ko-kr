@@ -1,19 +1,19 @@
 ---
-title: 혼합 현실 용 2D UWP 앱 업데이트
+title: Windows Mixed Reality 용 2D UWP 앱 업데이트
 description: 이 문서에서는 HoloLens 및 Windows Mixed Reality 모던 헤드셋에서 실행 되도록 기존 2D 유니버설 Windows 플랫폼 앱을 업데이트 하는 방법을 간략하게 설명 합니다.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 2D 앱, UWP, 플랫 앱, HoloLens, 모던 헤드셋, 앱 모델, 뒤로 단추, 앱 바, dpi, 해상도, 크기 조정, 포팅, HoloLens 1 gen, HoloLens 2, mixed reality 헤드셋, windows mixed reality 헤드셋, 마이그레이션, Windows 10
-ms.openlocfilehash: 4103ee1e5a7169759dfd823b41b5e3fd18011956
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f4dcc022fced0b3e22eb42751dc596e1b334a01a
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677802"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443625"
 ---
-# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>혼합 현실 용 2D UWP 앱 업데이트
+# <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>Windows Mixed Reality 용 2D UWP 앱 업데이트
 
 Windows Mixed Reality를 사용 하면 사용자가 실제 또는 디지털 세계에서 사용자의 holograms을 확인할 수 있습니다. 핵심으로, 몰입 형 헤드셋 액세서리를 연결 하는 HoloLens와 데스크톱 Pc는 모두 Windows 10 장치입니다. 즉, 저장소에서 거의 모든 UWP (유니버설 Windows 플랫폼) 앱을 2D 앱으로 실행할 수 있습니다.
 
@@ -175,7 +175,7 @@ UWP 앱을 HoloLens로 가져올 때 입력에 대해 알고 있어야 하는 �
 
 앱이 실행 되 고 있으면 앱을 패키지 하 여 [Microsoft Store에 제출](../../distribute/submitting-an-app-to-the-microsoft-store.md)합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [앱 모델](../../design/app-model.md)
 * [헤드 게이즈 및 커밋](../../design/gaze-and-commit.md)
 * [모션 컨트롤러](../../design/motion-controllers.md)
