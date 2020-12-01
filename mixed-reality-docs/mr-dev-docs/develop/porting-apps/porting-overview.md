@@ -5,14 +5,60 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 10/02/2020
 ms.topic: article
-keywords: 포트, 포팅, unity, 미들웨어, 엔진, UWP, Win32
-ms.openlocfilehash: f16bf8ada56d4d740abbbacddd4d5e4085850d2c
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: 포팅, unity, 미들웨어, 엔진, UWP, Win32
+ms.openlocfilehash: 074e0792a5ed43bb56b8f337613234efbd166eb7
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638500"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443539"
 ---
-# <a name="porting-overview"></a><span data-ttu-id="70c2e-104">포팅 개요</span><span class="sxs-lookup"><span data-stu-id="70c2e-104">Porting overview</span></span>
+# <a name="porting-overview"></a><span data-ttu-id="08059-104">포팅 개요</span><span class="sxs-lookup"><span data-stu-id="08059-104">Porting overview</span></span>
 
-<span data-ttu-id="70c2e-105">[//TODO: 헤더 이미지 필요]</span><span class="sxs-lookup"><span data-stu-id="70c2e-105">[//TODO: Need header image]</span></span>
+<span data-ttu-id="08059-105">혼합 현실에서 기존 프로젝트를 이식 하거나 업그레이드 하는 경우 앱이 Unity를 사용 하 여 빌드 되었는지 아니면 Unreal 엔진, HoloLens (첫 번째 Gen) 또는 HoloLens 2를 사용 하 여 빌드 되었는지 또는 SteamVR에 따라 몇 가지 시나리오가 적용 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="08059-105">When it comes to porting or upgrading your existing projects for Mixed Reality, several scenarios may apply depending on whether your app was built with Unity or Unreal Engine, HoloLens (1st Gen) or HoloLens 2, or SteamVR.</span></span> <span data-ttu-id="08059-106">이 개요 페이지에는 각 플랫폼 및 장치에 대 한 현재 권장 사항이 포함 되어 있습니다. 이러한 프로세스는 항상 변경 될 때 다시 확인 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="08059-106">This overview page contains our current recommendations for each platform and device - be sure to check back as these processes are always changing.</span></span>
+
+<span data-ttu-id="08059-107">먼저 [Unity](#unity) 및 [unreal](#unreal) 권장 사항에 따라 프로젝트 대상을 설정 하 고 포팅 시나리오 중 하나 이상을 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="08059-107">First, setup your project target based on either our [Unity](#unity) and [Unreal](#unreal) recommendations, then follow one or more of our porting scenarios:</span></span>
+
+- [<span data-ttu-id="08059-108">Hololens (첫 번째 Gen)-HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="08059-108">HoloLens (1st Gen) to HoloLens 2</span></span>](#hololens-1st-gen-unity-apps-to-hololens-2)
+- [<span data-ttu-id="08059-109">Windows Mixed Reality 헤드셋</span><span class="sxs-lookup"><span data-stu-id="08059-109">Windows Mixed Reality headsets</span></span>](#windows-mixed-reality-headsets)
+- [<span data-ttu-id="08059-110">SteamVR 앱</span><span class="sxs-lookup"><span data-stu-id="08059-110">SteamVR apps</span></span>](#steamvr-applications)
+- [<span data-ttu-id="08059-111">2D UWP 앱</span><span class="sxs-lookup"><span data-stu-id="08059-111">2D UWP apps</span></span>](#2d-universal-windows-applications)
+
+## <a name="recommended-project-targets"></a><span data-ttu-id="08059-112">권장 프로젝트 대상</span><span class="sxs-lookup"><span data-stu-id="08059-112">Recommended project targets</span></span>
+
+<span data-ttu-id="08059-113">응용 프로그램을 다른 대상 장치로 포팅 하는지 여부에 관계 없이 프로젝트를 최신 상태로 유지 하는 것이 중요 합니다.</span><span class="sxs-lookup"><span data-stu-id="08059-113">It's important to keep your projects up-to-date, whether or not your porting an app to another target device.</span></span> <span data-ttu-id="08059-114">현재 권장 사항은 아래에 나열 된 엔진 기반 리소스를 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="08059-114">Refer to the engine-based resources listed below for our current recommendations.</span></span>
+
+### <a name="unity"></a><span data-ttu-id="08059-115">Unity</span><span class="sxs-lookup"><span data-stu-id="08059-115">Unity</span></span>
+
+<span data-ttu-id="08059-116">혼합 현실에서 Unity 개발에 대 한 현재 권장 사항은 **레거시 XR 패키지를 사용 하는 unity 2019 LTS** 입니다.</span><span class="sxs-lookup"><span data-stu-id="08059-116">Our current recommendation for Unity development with Mixed Reality is **Unity 2019 LTS using the Legacy XR package**.</span></span> <span data-ttu-id="08059-117">프로젝트가 Mixed Reality Toolkit를 사용 하는 경우 현재 **Mrtk-Unity 2.5** 인 최신 버전을 사용 하 고 있는지 다시 확인 합니다.</span><span class="sxs-lookup"><span data-stu-id="08059-117">If your project uses the Mixed Reality Toolkit, double-check that you're on the latest version, which is currently **MRTK-Unity 2.5**.</span></span>
+
+> [!CAUTION]
+> <span data-ttu-id="08059-118">XR SDK는이 버전의 Unity와 함께 사용할 수 있지만, Azure 공간 앵커는 현재이 설정과 호환 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="08059-118">While the XR SDK is available with this version of Unity, Azure Spatial Anchors is not currently compatible with this setup.</span></span> <span data-ttu-id="08059-119">이 권장 사항은 Unity 용 Azure 공간 앵커 패키지의 이후 릴리스에서 업데이트 될 예정입니다.</span><span class="sxs-lookup"><span data-stu-id="08059-119">This recommendation will be updated with a future release of the Azure Spatial Anchors package for Unity.</span></span> 
+> 
+> * <span data-ttu-id="08059-120">Azure 공간 앵커가 필요 하지 않은 경우 [XR에 대 한 Unity 프로젝트를 구성](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) 하 고 [MRTK 및 XR SDK를 사용 하 여 시작할](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html)수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="08059-120">If you don't need Azure Spatial Anchors, you can [configure your Unity project for XR](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) and [get started with MRTK and XR SDK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html).</span></span>
+> 
+> * <span data-ttu-id="08059-121">현재 프로젝트에서 XR SDK를 사용 하 고 있으며 Azure 공간 앵커를 사용 하려는 경우 XR SDK를 제거 하 고 레거시 XR 패키지를 다시 설치 하 여 프로젝트 설정을 되돌립니다.</span><span class="sxs-lookup"><span data-stu-id="08059-121">If you're currently using the XR SDK in your project and want to use Azure Spatial Anchors, uninstall XR SDK and reinstall the Legacy XR package to revert your project settings.</span></span>
+
+
+### <a name="unreal"></a><span data-ttu-id="08059-122">Unreal</span><span class="sxs-lookup"><span data-stu-id="08059-122">Unreal</span></span> 
+
+<span data-ttu-id="08059-123">혼합 현실에서의 실제 개발에 대 한 현재 권장 사항은 **Unreal Engine 4.26** 입니다.</span><span class="sxs-lookup"><span data-stu-id="08059-123">Our current recommendation for Unreal development with Mixed Reality is **Unreal Engine 4.26**.</span></span> <span data-ttu-id="08059-124">프로젝트가 Mixed Reality Toolkit UX 도구를 사용 하는 경우 현재 **Uxt 0.10** 최신 버전을 사용 하 고 있는지 확인 합니다.</span><span class="sxs-lookup"><span data-stu-id="08059-124">If your project uses the Mixed Reality Toolkit UX Tools, make sure you're using the latest version, which is currently **UXT 0.10**.</span></span>
+
+## <a name="porting-scenarios"></a><span data-ttu-id="08059-125">포팅 시나리오</span><span class="sxs-lookup"><span data-stu-id="08059-125">Porting scenarios</span></span>
+
+### <a name="hololens-1st-gen-unity-apps-to-hololens-2"></a><span data-ttu-id="08059-126">Hololens (첫 번째 Gen) Unity 앱-HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="08059-126">HoloLens (1st Gen) Unity apps to HoloLens 2</span></span>
+
+<span data-ttu-id="08059-127">HoloLens 2로 이식할 기존 HoloLens (첫 번째 Gen) Unity 응용 프로그램이 있는 경우 [hololens 포팅 문서의](../unity/mrtk-porting-guide.md)지침을 따르세요.</span><span class="sxs-lookup"><span data-stu-id="08059-127">If you have an existing HoloLens (1st Gen) Unity application that you'd like to port over to a HoloLens 2, follow the instructions in our [HoloLens porting article](../unity/mrtk-porting-guide.md).</span></span>
+
+### <a name="windows-mixed-reality-headsets"></a><span data-ttu-id="08059-128">Windows Mixed Reality 헤드셋</span><span class="sxs-lookup"><span data-stu-id="08059-128">Windows Mixed Reality headsets</span></span>
+
+<span data-ttu-id="08059-129">Oculus Rift 또는 HP 반향 G2와 같은 다른 장치에 대 한 콘텐츠를 빌드한 경우에는 공급 업체별 VR Sdk와 잠재적으로 입력 매핑 Api를 다시 대상으로 지정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="08059-129">If you've built content for other devices, such as the Oculus Rift or HP Reverb G2, you'll need to re-target vendor-specific VR SDKs and potentially input mapping APIs.</span></span> <span data-ttu-id="08059-130">[모던 앱 포팅 가이드](porting-guides.md)에서 Unity 및 unreal 포팅 시나리오에 대 한 정보를 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="08059-130">You can find information for both Unity and Unreal porting scenarios in our [immersive apps porting guide](porting-guides.md).</span></span>
+
+### <a name="steamvr-applications"></a><span data-ttu-id="08059-131">SteamVR 응용 프로그램</span><span class="sxs-lookup"><span data-stu-id="08059-131">SteamVR applications</span></span>
+
+<span data-ttu-id="08059-132">Windows Mixed Reality 헤드셋에 대해 업데이트 하려는 SteamVR 환경의 경우 [SteamVR 업데이트 가이드](updating-your-steamvr-application-for-windows-mixed-reality.md)를 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="08059-132">For any SteamVR experiences that you want to update for Windows Mixed Reality headsets, refer to our [SteamVR updating guide](updating-your-steamvr-application-for-windows-mixed-reality.md).</span></span>
+
+### <a name="2d-universal-windows-applications"></a><span data-ttu-id="08059-133">2D 유니버설 Windows 응용 프로그램</span><span class="sxs-lookup"><span data-stu-id="08059-133">2D Universal Windows applications</span></span>
+
+<span data-ttu-id="08059-134">Windows Mixed Reality 모던 헤드셋 또는 HoloLens로 이식 하려는 기존 2D UWP 앱이 있는 경우 [Windows Mixed reality 용 2D uwp 앱 포팅](building-2d-apps.md) 문서에 있는 지침을 따르세요.</span><span class="sxs-lookup"><span data-stu-id="08059-134">If you have an existing 2D UWP app that you'd like to port to either a Windows Mixed Reality immersive headset or HoloLens, follow the instructions in our [porting 2D UWP apps for Windows Mixed Reality](building-2d-apps.md) article.</span></span>
+
