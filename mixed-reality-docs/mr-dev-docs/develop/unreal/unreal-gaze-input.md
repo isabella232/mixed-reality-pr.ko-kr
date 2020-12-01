@@ -6,43 +6,101 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, HoloLens 2, 눈 추적, 응시 입력, 헤드 탑재 된 디스플레이, Unreal engine, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 2ea55e3c53275f6150ca7f2def10d71634119e2e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f89638cef6b90e004f097c701c3df13edaf74fac
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679052"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354346"
 ---
 # <a name="gaze-input"></a>응시 입력
 
-## <a name="overview"></a>개요
-
-[Windows Mixed Reality 플러그인](https://docs.unrealengine.com/Platforms/VR/WMR/index.html) 은 응시 입력을 위한 기본 제공 함수를 제공 하지 않지만 HoloLens 2는 눈 추적을 지원 합니다. 실제 추적 기능은 Unreal의 **탑재 된 표시** 및 **눈 추적** api에서 제공 하며 다음을 포함 합니다.
-
-- 디바이스 정보
-- 추적 센서
-- 방향 및 위치
-- 창 클리핑
-- 데이터 및 추적 정보를 응시 합니다.
-
-모든 기능의 전체 목록은 실제 [헤드 탑재 된 표시](https://docs.unrealengine.com/BlueprintAPI/Input/HeadMountedDisplay/index.html) 및 [눈 추적](https://docs.unrealengine.com/BlueprintAPI/EyeTracking/index.html) 설명서에서 확인할 수 있습니다.
-
-Unreal Api 외에도 HoloLens 2에 대 한 눈에 잘 맞는 [상호 작용](../../design/eye-gaze-interaction.md) 에 대 한 설명서를 확인 하 고 [hololens 2의 눈 추적](https://docs.microsoft.com/windows/mixed-reality/eye-tracking) 작동 방식을 확인 하세요.
-
-> [!IMPORTANT]
-> 아이 추적은 HoloLens 2 에서만 지원 됩니다.
+응시는 사용자가 보고 있는 항목을 나타내는 데 사용 됩니다.  이는 장치에서 눈 추적 카메라를 사용 하 여 사용자가 현재 보고 있는 것과 일치 하는 실제 지역에서 광선을 찾습니다.
 
 ## <a name="enabling-eye-tracking"></a>눈 추적 사용
-Unreal의 Api를 사용 하려면 먼저 HoloLens 프로젝트 설정에서 응시 입력을 사용 하도록 설정 해야 합니다. 응용 프로그램이 시작 되 면 아래 스크린샷에 표시 된 동의 프롬프트가 표시 됩니다.
 
-- **예** 를 선택 하 여 사용 권한을 설정 하 고 입력에 대 한 액세스 권한을 얻습니다. 언제 든 지이 설정을 변경 해야 하는 경우 **설정** 앱에서 찾을 수 있습니다.
+- **프로젝트 설정 > HoloLens** 에서 **응시 입력** 기능을 사용 하도록 설정 합니다.
 
-![눈 입력 권한](images/unreal/eye-input-permissions.png)
+![응시 입력이 강조 표시 된 HoloLens 프로젝트 설정 기능의 스크린샷](images/unreal-gaze-img-01.png)
+
+- 새 행위자를 만들어 장면에 추가 합니다.
 
 > [!NOTE] 
 > Unreal의 HoloLens 눈동자 추적에는 stereoscopic 추적에 필요한 두 광선 (지원 되지 않음)이 아닌 단일 응시 광선이 있습니다.
 
-이를 통해 모든 설정에서 HoloLens 2 앱에 응시 입력을 Unreal에 추가 하기 시작 해야 합니다. 입력 응시에 대 한 자세한 내용 및 혼합 현실의 사용자에 게 영향을 주는 방법에 대 한 자세한 내용은 아래 링크를 참조 하세요. 대화형 환경을 구축할 때이에 대해 생각해 야 합니다.
+## <a name="using-eye-tracking"></a>시선 추적 사용
+
+먼저 장치가 IsEyeTrackerConnected 함수를 사용 하 여 눈 추적을 지원 하는지 확인 합니다.  True가 반환 되 면 GetGazeData를 호출 하 여 현재 프레임에서 사용자의 눈이 보이는 위치를 찾습니다.
+
+![아이 추적 연결 된 기능의 청사진](images/unreal-gaze-img-02.png)
+
+> [!NOTE]
+> HoloLens에서는 고정 지점과 신뢰도 값을 사용할 수 없습니다.
+
+사용자가 보고 있는 내용을 찾으려면 선 추적에서 응시 원본 및 방향을 사용 합니다.  이 벡터의 시작은 응시 원점이 고, 끝은 원본 및 응시 방향에 원하는 거리를 곱한 값입니다.
+
+![Get 응시 Data 함수의 청사진](images/unreal-gaze-img-03.png)
+
+## <a name="getting-head-orientation"></a>헤드 방향 가져오기
+
+또는 HMD 회전을 사용 하 여 사용자 헤드의 방향을 나타낼 수 있습니다.  이 경우에는 응시 입력 기능이 필요 하지 않지만 눈 추적 정보는 제공 되지 않습니다.  청사진에 대 한 참조를 올바른 출력 데이터를 얻기 위한 세계 컨텍스트로 추가 해야 합니다.
+
+> [!NOTE]
+> HMD 데이터 가져오기는 Unreal 4.26 이상 에서만 사용할 수 있습니다.
+
+![Get HMDData 함수의 청사진](images/unreal-gaze-img-04.png)
+
+## <a name="using-c"></a>C++ 사용 
+
+- 게임의 build.cs 파일에서 PublicDependencyModuleNames 목록에 "EyeTracker"를 추가 합니다.
+
+```cpp
+PublicDependencyModuleNames.AddRange(
+    new string[] {
+        "Core",
+        "CoreUObject",
+        "Engine",
+        "InputCore",
+        "EyeTracker"
+});
+```
+
+- "파일/새 c + + 클래스"에서 "EyeTracker" 라는 새 c + + 행위자를 만듭니다.
+    - Visual Studio 솔루션은 새 EyeTracker 클래스에 열립니다. 를 빌드하고 실행 하 여 새 EyeTracker 행위자를 사용 하 여 Unreal 게임을 엽니다.  "행위자 준비" 창에서 "EyeTracker"를 검색 합니다.  이 클래스를 게임 창으로 끌어서 놓아 프로젝트에 추가 합니다.
+
+![행위자 창이 열려 있는 행위자의 스크린샷](images/unreal-gaze-img-06.png)
+
+- EyeTracker에서 EyeTrackerFunctionLibrary 및 DrawDebugHelpers에 대 한 include를 추가 합니다.
+
+```cpp
+#include "EyeTrackerFunctionLibrary.h"
+#include "DrawDebugHelpers.h"
+```
+
+틱에서 장치가 UEyeTrackerFunctionLibrary:: IsEyeTrackerConnected를 사용한 아이 추적을 지원 하는지 확인 합니다.  그런 다음 UEyeTrackerFunctionLibrary:: GetGazeData에서 선 추적을 위한 광선의 시작과 끝을 찾습니다.
+
+```cpp
+void AEyeTracker::Tick(float DeltaTime)
+{
+    Super::Tick(DeltaTime);
+
+    if(UEyeTrackerFunctionLibrary::IsEyeTrackerConnected())
+    {
+        FEyeTrackerGazeData GazeData;
+        if(UEyeTrackerFunctionLibrary::GetGazeData(GazeData))
+        {
+            FVector Start = GazeData.GazeOrigin;
+            FVector End = GazeData.GazeOrigin + GazeData.GazeDirection * 100;
+
+            FHitResult Hit Result;
+            if (GWorld->LineTraceSingleByChannel(HitResult, Start, End, ECollisionChannel::ECC_Visiblity))
+            {
+                DrawDebugCoordinateSystem(GWorld, HitResult.Location, FQuat::Identity.Rotator(), 10);
+            }
+        }
+    }
+}
+```
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
