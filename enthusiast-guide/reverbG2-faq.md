@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, 성능
 appliesto:
 - Windows 10
-ms.openlocfilehash: 241fb95d92c771af727cc50287e4d1b2526123a5
-ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
+ms.openlocfilehash: 7712641bad36b8759b9237abf14593f8c121e81b
+ms.sourcegitcommit: 3eb4c1a79e9173a5c9b6d2284f34c0bceced402c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "95002968"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96501711"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP 반향 G2 질문과 대답
 
@@ -53,6 +53,10 @@ HP 권장 사항:
 ## <a name="i-am-getting-a-13-14-something-went-wrong-error-when-my-pc-resumes-from-hibernate-s4"></a>내 PC가 최대 절전 모드에서 다시 시작 될 때 13-14 "오류가 발생 했습니다." 오류가 발생 합니다 (S4).
 
 경우에 따라 다시 시작 프로세스 중에 비디오 카드는 연결을 설정할 수 없기 때문에 PC에서 USB 유형 C를 분리 하 고 다시 연결 하면 연결을 설정 하는 데 도움이 될 수 있습니다.
+
+## <a name="my-hp-motion-controller-joystick-will-sometimes-stick-to-one-side"></a>때로는 HP 모션 컨트롤러 조이스틱을 한 쪽에 두는 경우
+
+이 문제는 조이스틱을 완전히 depressing 자유롭게 이동 하 여 해결할 수 있습니다.
 
 ## <a name="the-mixed-reality-portal-says-cant-run-mixed-reality-on-this-headset-but-this-worked-fine-with-my-previous-wmr-headset"></a>혼합 현실 포털은 "이 헤드셋에서 혼합 현실을 실행할 수 없습니다." 라고 표시 하지만 이전 WMR 헤드셋에서 제대로 작동 했습니다.
 
