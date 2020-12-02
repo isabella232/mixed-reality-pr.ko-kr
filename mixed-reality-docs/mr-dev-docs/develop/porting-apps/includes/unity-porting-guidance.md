@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: bf6b98eca850d2b280e7a016799c4287955159a6
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 487118403c2a8af1a6b54bc9aa9245fbe9d0568a
+ms.sourcegitcommit: bec6029b2780c54cc04a45ef7ae5df3f5b4727c1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443667"
+ms.locfileid: "96477278"
 ---
 # <a name="project-settings"></a>[프로젝트 설정](#tab/project)
 
@@ -94,7 +94,8 @@ else
 ### <a name="8-work-through-your-input-model"></a>8. 입력 모델을 통해 작업
 
 기존 HMD를 대상으로 하는 각 게임 또는 응용 프로그램에는 처리 하는 일련의 입력, 환경에 필요한 입력 형식 및 해당 입력을 가져오기 위해 호출 하는 특정 Api가 있습니다. Windows Mixed Reality에서 제공 되는 입력을 활용할 수 있도록 간단 하 고 간단 하 게 만드는 데 투자 했습니다.
-1. Windows Mixed Reality에서 입력을 노출 하는 방법 및 응용 프로그램의 용도에 매핑되는 방법에 대 한 자세한 내용은 인접 탭의 **Unity에 대 한 입력 포팅 가이드** 를 참조 하세요.
+
+Windows Mixed Reality에서 입력을 노출 하는 방법 및 응용 프로그램의 용도에 매핑되는 방법에 대 한 자세한 내용은 인접 탭의 [Unity에 대 한 입력 포팅 가이드](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-guides?tabs=input) 를 참조 하세요.
 
 ### <a name="9-performance-testing-and-tuning"></a>9. 성능 테스트 및 튜닝
 
