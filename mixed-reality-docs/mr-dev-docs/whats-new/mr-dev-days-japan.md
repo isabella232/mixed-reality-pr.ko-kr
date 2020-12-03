@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality, 컨퍼런스, summit, developer, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: c0111c03d2350627106a53af7c1e04d448a08fe6
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 01447b6122dae1c449e85b9bc7a9ad2cfc678f24
+ms.sourcegitcommit: 59c23d1ea5009e1929660a9a97c6131c353cd57e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443494"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538720"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>혼합 현실 개발자의 날 일본
 
@@ -57,7 +57,7 @@ ms.locfileid: "96443494"
 |2:55pm-3: 오후 10 시|**끊어야**||||
 |3:10pm-3:35pm|*세션 7* Azure 개체 앵커|Jesse McCulloch|EN|300|
 |3:40pm-4:05pm|*세션 8* Azure 원격 렌더링|Atsushi Suzuki|JA|300|
-|4:10pm-4:35 pm|*세션 9* Azure 공간 앵커|TBD|JA|300|
+|4:10pm-4:35 pm|*세션 9* Azure 공간 앵커를 통해 홀로그램 및 실제 세계 맞춤|Yingguang Mei|EN|300|
 |4:40pm-5:05pm|*세션 10* Unity + PiXYZ|Unity (Shinobu Takahashi)|JA|200|
 |5:10pm-5:35 pm|*세션 11* Azure Kinect 진한 심층 분석, 사례 연구|Shinji Chiba|JA|400|
 |5:35pm-5:50pm|닫기|Madoka Chiyoda|JA|해당 없음|
