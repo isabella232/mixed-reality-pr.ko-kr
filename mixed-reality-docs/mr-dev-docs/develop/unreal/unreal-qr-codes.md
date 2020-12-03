@@ -7,16 +7,14 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 기능, 설명서, 가이드, 홀로그램, qr 코드, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 68edfdd0dd77b1d00ceeb9c50202abd5d94b95f3
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f2f06e9aa8d458d58dc8551ab6cd726622c30d4c
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678892"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354422"
 ---
 # <a name="qr-codes-in-unreal"></a>Unreal의 QR 코드
-
-## <a name="overview"></a>개요
 
 HoloLens 2는 웹캠을 사용하여 세계 공간에서 QR 코드를 볼 수 있습니다. 즉, 각 코드의 실세계 위치에서 좌표계를 사용하여 스스로를 홀로그램으로 렌더링합니다.  HoloLens 2는 단일 QR 코드 외에도, 공유 경험을 만들기 위해 여러 디바이스에서 동일한 위치에 홀로그램을 렌더링할 수 있습니다. 애플리케이션에 QR 코드를 추가하기 위한 모범 사례를 따라야 합니다.
 
@@ -26,19 +24,21 @@ HoloLens 2는 웹캠을 사용하여 세계 공간에서 QR 코드를 볼 수 �
 
 QR 코드가 앱에 배치될 때 [환경 고려 사항](../../environment-considerations-for-hololens.md)에 특히 주의해야 합니다. 이러한 각각의 토픽에 대한 자세한 정보와 필요한 NuGet 패키지를 다운로드하는 방법에 대한 지침은 주 [QR 코드 추적](../platform-capabilities-and-apis/qr-code-tracking.md) 설명서에서 확인할 수 있습니다.
 
+> [!CAUTION]
+> QR 코드는 HoloLens에서 기본적으로 추적할 수 있는 유일한 이미지 유형입니다. Unreal의 **UARTrackedImage** 모듈은 HoloLens에서 지원되지 않습니다. 사용자 지정 이미지를 추적해야 하는 경우에는 타사 이미지 인식 라이브러리를 사용하여 디바이스의 [웹캠](unreal-hololens-camera.md)에 액세스한 후 이미지를 처리할 수 있습니다. 
+
 ## <a name="enabling-qr-detection"></a>QR 검색 사용
 HoloLens 2는 웹캠을 사용하여 QR 코드를 확인해야 하므로 프로젝트 설정에서 사용하도록 설정해야 합니다.
 - **편집 > 프로젝트 설정** 을 열고 **플랫폼** 섹션까지 아래로 스크롤한 다음, **HoloLens** 를 클릭합니다.
     + **기능** 섹션을 확장하고 **웹캠** 을 선택합니다.  
+- 또한 [ARSessionConfig 자산](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset)을 추가하여 QR 코드 추적을 옵트인해야 합니다.
 
-또한 [ARSessionConfig 자산](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset)을 추가하여 QR 코드 추적을 옵트인해야 합니다.
+[!INCLUDE[](includes/tabs-qr-codes.md)]
 
-사용 직전에 `UHoloLensARFunctionLibrary::StartCameraCapture()`를 호출하여 추적을 수동으로 사용하도록 설정해야 합니다. QR 코드 추적을 종료한 후에는 `UHoloLensARFunctionLibrary::StopCameraCapture()`를 통해 QR 코드 추적을 사용하지 않도록 설정하고 디바이스 리소스를 저장해야 합니다.
-
-## <a name="setting-up-a-tracked-image"></a>추적 이미지 설정
+## <a name="setting-up-a-tracked-qr-code"></a>추적된 QR 코드 설정
 
 QR 코드는 Unreal의 AR 추적 기하 도형 시스템을 통해 추적 이미지로 표시됩니다. 이 작업을 수행하려면 다음을 수행해야 합니다.
-1. 청사진을 만들고 **ARTrackableNotify** 구성 요소를 추가합니다.
+1. 행위자 청사진을 만들고 **ARTrackableNotify** 구성 요소를 추가합니다.
 
 ![QR AR 추적 가능 알림](images/unreal-spatialmapping-artrackablenotify.PNG)
 
@@ -51,7 +51,7 @@ QR 코드는 Unreal의 AR 추적 기하 도형 시스템을 통해 추적 이미
 
 ![추적된 기하 도형 추가 시 노드 추가](images/unreal-qr-codes-tracked-geometry.png)
 
-## <a name="using-a-tracked-image"></a>추적 이미지 사용
+## <a name="using-a-tracked-qr-code"></a>추적된 QR 코드 사용
 다음 이미지의 이벤트 그래프는 QR 코드의 가운데에 점을 렌더링하고 그 데이터를 출력하는 데 사용되는 **OnUpdateTrackedImage** 이벤트를 보여 줍니다.
 
 ![QR 렌더링 예제](images/unreal-qr-render.PNG)

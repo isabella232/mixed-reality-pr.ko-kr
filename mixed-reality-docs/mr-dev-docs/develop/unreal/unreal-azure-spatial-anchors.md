@@ -7,18 +7,21 @@ ms.date: 07/01/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, azure development, spatial anchors, 혼합 현실, 개발, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 홀로그램, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 05a4b221961fa9b3a150eb8ef9f8bd2f77f5b955
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: b464292b606f6c375fe84a50867cac770cd8f001
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679872"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354551"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Unreal의 Azure Spatial Anchors
 
 ## <a name="overview"></a>개요
 
 Azure Spatial Anchors는 Microsoft Mixed Reality 서비스이며, 증강 현실 디바이스를 사용하여 실제 세계에서 앵커 위치를 검색, 공유 및 유지하는 데 사용할 수 있습니다. 아래 설명서는 Azure Spatial Anchors 서비스를 Unreal 프로젝트에 통합하는 지침을 제공합니다. 자세한 내용은 [Azure Spatial Anchors 서비스](https://azure.microsoft.com/services/spatial-anchors/)를 참조하세요.
+
+> [!NOTE]
+> 이제 Unreal Engine 4.26은 iOS 또는 Android를 대상으로 하는 개발자를 위해 ARKit 및 ARCore 지원을 위한 플러그 인을 제공합니다.
 
 > [!IMPORTANT]
 > 로컬 앵커는 디바이스에 저장되는 반면, Azure Spatial Anchors는 클라우드에 저장됩니다. 앵커를 로컬로 디바이스에 저장하려는 경우, 해당 프로세스를 안내하는 [로컬 Spatial Anchors](unreal-spatial-anchors.md) 문서를 참조하세요. 로컬 및 Azure 앵커는 동일한 프로젝트에서 충돌 없이 사용할 수 있습니다.

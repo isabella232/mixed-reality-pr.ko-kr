@@ -7,18 +7,21 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 기능, 설명서, 가이드, 홀로그램, spatial anchors, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 3ce83160f745fc48f082776caa3cfa87d23a1844
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 8be1521d44a9dda521c1570d3ac55955e475bc30
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678832"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354521"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Unreal의 로컬 Spatial Anchors
 
 ## <a name="overview"></a>개요
 
 공간 앵커는 애플리케이션 세션 사이의 실제 공간에서 홀로그램을 저장하는 데 사용됩니다. 이는 Unreal을 통해 **ARPin** 으로 표시되며 향후 세션에 로드될 HoloLens의 앵커 저장소에 저장됩니다. 로컬 앵커는 인터넷에 연결되어 있지 않은 경우 대비책으로 적합합니다.
+
+> [!NOTE]
+> UE 4.25의 앵커 함수는 4.26에서 사용되지 않으며 새 함수로 바꿔야 합니다. 
 
 > [!IMPORTANT]
 > 로컬 앵커는 디바이스에 저장되는 반면, Azure Spatial Anchors는 클라우드에 저장됩니다. Azure Cloud Services를 사용하여 앵커를 저장하려는 경우 [Azure Spatial Anchors](unreal-azure-spatial-anchors.md) 통합 과정을 안내하는 문서를 참조하세요. 로컬 및 Azure 앵커는 동일한 프로젝트에서 충돌 없이 사용할 수 있습니다.
@@ -27,13 +30,13 @@ ms.locfileid: "94678832"
 
 앵커를 저장하거나 로드하기 전에 먼저 앵커 저장소가 준비되었는지 확인해야 합니다.  앵커 저장소가 준비되기 전에는 HoloLens 앵커 함수의 호출에 성공하지 못합니다.  
 
-![Spatial Anchors 저장소 준비](images/unreal-spatialanchors-store-ready.PNG)
+[!INCLUDE[](includes/tabs-sa-1.md)]
 
 ## <a name="saving-anchors"></a>앵커 저장
 
 세계에 고정해야 하는 구성 요소가 애플리케이션에 있으면 다음 순서에 따라 앵커 저장소에 저장할 수 있습니다. 
 
-![Spatial Anchors 저장](images/unreal-spatialanchors-save.PNG)
+[!INCLUDE[](includes/tabs-sa-2.md)]
 
 상세 구분:
 1. 알려진 위치에 행위자를 생성합니다.
@@ -47,7 +50,7 @@ ms.locfileid: "94678832"
 
 애플리케이션이 시작되면 다음 청사진을 사용하여 구성 요소를 앵커 위치에 복원할 수 있습니다.
 
-![Spatial Anchors 로드](images/unreal-spatialanchors-load.PNG)
+[!INCLUDE[](includes/tabs-sa-3.md)]
 
 상세 구분:
 1. 앵커 저장소의 모든 앵커에 대해 반복합니다. 
@@ -62,7 +65,7 @@ ms.locfileid: "94678832"
 
 앵커 작업을 마치면 **WMRAnchor 저장소에서 ARPin 제거** 및 **WMRAnchor 저장소 모든 ARPin 제거** 구성 요소를 통해 개별 앵커 또는 전체 앵커 저장소를 지울 수 있습니다.
 
-![Spatial Anchors 제거](images/unreal-spatialanchors-remove.PNG)
+[!INCLUDE[](includes/tabs-sa-4.md)]
 
 > [!NOTE]
 > 공간 앵커가 아직 베타 버전이므로 업데이트된 정보 및 기능을 다시 확인해야 합니다.

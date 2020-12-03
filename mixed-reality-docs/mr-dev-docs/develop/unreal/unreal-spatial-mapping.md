@@ -7,16 +7,15 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 기능, 설명서, 가이드, 홀로그램, 공간 매핑, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: cd7e99230809c9d98f732e0dfa1f0b86d05c4365
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 878eae5f5fd0b7a1630511faa23c1477455ed988
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678812"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354385"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Unreal의 공간 매핑
 
-## <a name="overview"></a>개요
 공간 매핑을 사용하면 HoloLens 주위의 세계를 표시하여 실제 세계의 표면에 개체를 배치함으로써 홀로그램이 사용자에게 더 현실감 있게 보이도록 할 수 있습니다. 또한 공간 매핑은 실제 세계의 심도 큐를 사용하여 사용자의 세계에 개체를 고정합니다. 이렇게 하면 사용자가 이러한 홀로그램이 사실은 홀로그램의 공간에 있음을 알게 됩니다. 즉, 공간에 떠 있거나 사용자를 따라 이동하는 홀로그램이 실제처럼 느껴지지 않습니다. 가능한 모든 상황에서 편안하게 항목을 배치하려 합니다.
 
 공간 매핑 품질, 배치, 폐색, 렌더링 등에 대한 자세한 내용은 [공간 매핑](../../design/spatial-mapping.md) 문서에서 확인할 수 있습니다.
@@ -26,6 +25,8 @@ ms.locfileid: "94678812"
 HoloLens에서 공간 매핑을 사용하려면 다음을 수행합니다.
 - **편집 > 프로젝트 설정** 을 열고 **플랫폼** 섹션까지 아래로 스크롤합니다.    
     + **HoloLens** 를 선택하고 **공간 인식** 을 선택합니다.
+
+![공간 인식이 강조 표시된 HoloLens 프로젝트 설정 기능의 스크린샷](images/unreal-spatial-mapping-img-01.png)
 
 공간 매핑을 옵트인하고 HoloLens 게임에서 **MRMesh** 를 디버깅하려면 다음을 수행합니다.
 1. **ARSessionConfig** 를 열고 **ARSettings > 세계 매핑** 섹션을 확장합니다. 
@@ -48,6 +49,13 @@ HoloLens에서 공간 매핑을 사용하려면 다음을 수행합니다.
     + 애플리케이션 런타임 환경이 클 것으로 예상된다면 이 값이 실제 공간과 일치하게 커야 합니다.  반대로 애플리케이션이 사용자 바로 주변의 표면에만 홀로그램을 배치하면 되는 경우에는 이 값이 더 작아도 됩니다. 사용자가 월드를 걸어 다닐 때 공간 매핑 볼륨이 함께 이동합니다. 
 
 ## <a name="working-with-mrmesh"></a>MRMesh 작업
+
+먼저 공간 매핑을 시작해야 합니다.
+
+![공간 매핑 캡처 유형이 강조 표시된 ToggleARCapture 함수의 청사진](images/unreal-spatial-mapping-img-02.png)
+
+공간에 대한 공간 매핑을 캡처한 후에는 공간 매핑을 끄는 것이 좋습니다.  일정 시간이 지난 후 또는 각 방향의 raycast가 MRMesh에 대한 충돌을 반환할 때 공간 매핑이 완료될 수 있습니다.
+
 런타임에 **MRMesh** 에 액세스하려면 다음을 수행합니다.
 1. **ARTrackableNotify** 구성 요소를 청사진 행위자에 추가합니다. 
 
@@ -64,21 +72,53 @@ HoloLens에서 공간 매핑을 사용하려면 다음을 수행합니다.
 
 ![Spatial Anchors 예제](images/unreal-spatialmapping-example.PNG)
 
-아래 코드에 표시된 것처럼 C++에서 `OnTrackableAdded` 대리자를 구독하여 가능한 즉시 `ARTrackedGeometry`를 가져올 수 있습니다. 
+## <a name="spatial-mapping-in-c"></a>C++에서 공간 매핑
 
-> [!IMPORTANT]
-> 프로젝트 build.cs 파일의 **PublicDependencyModuleNames** 목록에 **AugmentedReality** 가 **반드시** 있어야 합니다.
-> - 여기에는 **UARTrackedGeometry** 의 **MRMesh** 구성 요소를 검사할 수 있는 **ARBlueprintLibrary** 및 **MRMeshComponent** 가 포함됩니다. 
+게임의 build.cs 파일에서 PublicDependencyModuleNames 목록에 **AugmentedReality** 및 **MRMesh** 를 추가합니다.
 
-![Spatial Anchors 예제 C++ 코드](images/unreal-spatialmapping-examplecode.PNG)
+```cpp
+PublicDependencyModuleNames.AddRange(
+    new string[] {
+        "Core",
+        "CoreUObject",
+        "Engine",
+        "InputCore",    
+        "EyeTracker",
+        "AugmentedReality",
+        "MRMesh"
+});
+```
 
-공간 매핑이 **ARTrackedGeometries** 를 통해 표시되는 유일한 데이터 형식은 아닙니다. 공간 매핑 기하 도형인 `EARObjectClassification` 및 `World`도 확인할 수 있습니다. 
+MRMesh에 액세스하려면 **OnTrackableAdded** 대리자를 구독합니다.
 
-업데이트 및 제거 이벤트에 대한 비슷한 대리자로 
-- `AddOnTrackableUpdatedDelegate_Handle` 
-- `AddOnTrackableRemovedDelegate_Handle`을 차례로 클릭합니다. 
+```cpp
+#include "ARBlueprintLibrary.h"
+#include "MRMeshComponent.h"
 
-[UARTrackedGeometry](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackedGeometry/index.html) API에서 이벤트의 전체 목록을 확인할 수 있습니다.
+void AARTrackableMonitor::BeginPlay()
+{
+    Super::BeginPlay();
+
+    // Subscribe to Tracked Geometry delegates
+    UARBlueprintLibrary::AddOnTrackableAddedDelegate_Handle(
+        FOnTrackableAddedDelegate::CreateUObject(this, &AARTrackableMonitor::OnTrackableAdded)
+    );
+}
+
+void AARTrackableMonitor::OnTrackableAdded(UARTrackedGeometry* Added)
+{
+    // When tracked geometry is received, check that it's from spatial mapping
+    if(Added->GetObjectClassification() == EARObjectClassification::World)
+    {
+        UMRMeshComponent* MRMesh = Added->GetUnderlyingMesh();
+    }
+}
+```
+
+> [!NOTE]
+> 업데이트된 이벤트와 제거된 이벤트에 대한 비슷한 대리자가 있으며 각각 **AddOnTrackableUpdatedDelegate_Handle** 및 **AddOnTrackableRemovedDelegate_Handle** 입니다.
+>
+> [UARTrackedGeometry](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackedGeometry/index.html) API에서 이벤트의 전체 목록을 확인할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 * [공간 매핑](../../design/spatial-mapping.md)

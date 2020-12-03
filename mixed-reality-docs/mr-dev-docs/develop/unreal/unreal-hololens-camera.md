@@ -7,68 +7,21 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 기능, 설명서, 가이드, 홀로그램, 카메라, PV 카메라, MRC, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 975853a7b39c4d8790adb1f48160d7e4fdf6c19a
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: ef557bc6492ced6bb9b3c47a8cccc897e33b76c1
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679042"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354615"
 ---
 # <a name="hololens-photovideo-camera-in-unreal"></a>Unreal의 HoloLens 사진/비디오 카메라
 
-## <a name="overview"></a>개요
-
-HoloLens에는 MRC(혼합 현실 캡처)에서 사용하며 앱에서 실세계 시각적 개체에 액세스하는 데 사용하는 PV(사진/비디오) 카메라가 있습니다. 
+HoloLens 바이저에는 MRC(혼합 현실 캡처)에 사용 가능하고 앱에서 카메라 프레임의 픽셀 좌표를 통해 Unreal 세계 공간의 개체를 찾는 데 사용할 수 있는 PV(사진/비디오) 카메라가 달려 있습니다.
 
 > [!IMPORTANT]
 > 홀로그램 원격 접속에서는 PV 카메라가 지원되지 않지만, HoloLens PV 카메라 기능을 시뮬레이션하기 위해 PC에 연결된 웹캠을 사용할 수 있습니다.
 
-## <a name="render-from-the-pv-camera-for-mrc"></a>MRC용 PV 카메라에서 렌더링
-
-> [!NOTE]
-> 여기에는 **Unreal Engine 4.25** 이상이 필요합니다.
-
-시스템 및 사용자 지정 MRC 레코더는 몰입형 앱에서 렌더링한 홀로그램과 PV 카메라를 결합하여 혼합 현실 캡처를 만듭니다.
-
-기본적으로 혼합 현실 캡처는 오른쪽 눈의 홀로그램 출력을 사용합니다. 몰입 형 앱이 [PV 카메라에서 렌더링](../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in)하도록 선택한 경우 해당 항목을 대신 사용합니다. 이를 통해 MRC 영상에서 실제 세계와 홀로그램의 매핑이 개선됩니다.
-
-PV 카메라에서 렌더링하도록 옵트인하려면 다음을 수행합니다.
-
-1. **SetEnabledMixedRealityCamera** 및 **ResizeMixedRealityCamera** 호출
-    * **크기 X** 및 **크기 Y** 값을 사용하여 비디오 크기를 설정합니다.
-
-![세 번째 카메라](../platform-capabilities-and-apis/images/unreal-camera-3rd.PNG)
-
-그러면 Unreal은 PV 카메라의 관점에서 렌더링하는 MRC의 요청을 처리합니다.
-
-> [!NOTE]
-> [혼합 현실 캡처](../../mixed-reality-capture.md)가 트리거된 경우에만 앱이 사진/비디오 카메라의 관점에서 렌더링하도록 요청됩니다.
-
-## <a name="using-the-pv-camera"></a>PV 카메라 사용
-
-웹캠 질감을 게임에서 런타임에 검색할 수 있지만 편집기의 **편집 > 프로젝트 설정** 에서 사용하도록 설정해야 합니다.
-1. **플랫폼 > HoloLens > 기능** 으로 이동하여 **웹캠** 을 선택합니다.
-    * **StartCameraCapture** 함수를 사용하여 런타임에 웹캠을 사용하고 **StopCameraCapture** 함수를 사용하여 기록을 중지합니다.
-
-![Camera 시작 중지](images/unreal-camera-startstop.PNG)
-
-## <a name="rendering-an-image"></a>이미지 렌더링
-카메라 이미지를 렌더링하려면 다음을 수행합니다.
-1. 프로젝트의 재질을 기반으로 동적 재질 인스턴스를 만듭니다. 아래 스크린샷에서 이름이 **PVCamMat** 입니다.  
-2. 동적 재질 인스턴스를 **재질 인스턴스 동적 개체 참조** 변수로 설정합니다.  
-3. 카메라 피드를 렌더링하는 장면의 개체 재질을 이 새로운 동적 재질 인스턴스로 설정합니다.
-    * 카메라 이미지를 재질에 바인딩하는 데 사용할 타이머를 시작합니다.
-
-![카메라 렌더링](images/unreal-camera-render.PNG)
-
-4. 이 타이머에 대한 새로운 기능을 만들고(이 경우 **MaterialTimer**), **GetARCameraImage** 를 호출하여 웹캠에서 질감을 가져옵니다.  
-5. 이 질감이 유효한 경우 음영의 질감 매개 변수를 이 이미지로 설정합니다.  그렇지 않으면 재질 타이머를 다시 시작합니다.
-
-![웹캠의 카메라 텍스처](images/unreal-camera-texture.PNG)
-
-5. 재질에 색 항목에 바인딩된 **SetTextureParameterValue** 의 이름과 일치하는 매개 변수가 있는지 확인합니다. 매개 변수가 없으면 카메라 이미지를 제대로 표시할 수 없습니다.
-
-![카메라 텍스처](images/unreal-camera-material.PNG)
+[!INCLUDE[](includes/tabs-pv-camera.md)]
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
