@@ -308,6 +308,8 @@
       items:
         - name: Unreal의 디바이스에 배포
           href: unreal/unreal-deploying.md
+        - name: Microsoft Store에 게시
+          href: unreal/unreal-publishing-to-store.md
         - name: Unreal에서 프로젝트 업그레이드
           href: unreal/unreal-porting.md
         - name: Unreal을 사용하기 위한 권장 성능
