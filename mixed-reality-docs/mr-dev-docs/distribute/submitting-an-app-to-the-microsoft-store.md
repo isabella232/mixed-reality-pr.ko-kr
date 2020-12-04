@@ -6,14 +6,17 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, HoloLens, 모던 헤드셋, 앱, uwp, 제출, 제출, 필터, 메타 데이터, 시스템 요구 사항, 키워드, wack, 인증, 패키지, appx, 머천다이징, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: b5d25817afeb2d8d970d329c802b7eaabcdf7f35
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 1d37337279e46e5f0f9d5cea82813af8de9d0f76
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703119"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578902"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Microsoft Store에 앱 제출
+
+> [!IMPORTANT]
+> Unreal 응용 프로그램을 제출 하는 경우 계속 하기 전에 여기에서 **[게시 지침](../develop/unreal/unreal-publishing-to-store.md)** 을 따라야 합니다.
 
 [HoloLens](../hololens-hardware-details.md) 와 WINDOWS 10 PC는 모두 [몰입 형 헤드셋](../discover/immersive-headset-hardware-details.md) 을 켜는 유니버설 Windows 플랫폼 앱을 실행 합니다. HoloLens, PC 또는 둘 다를 지 원하는 앱을 제출 하 든 앱 제출은 [파트너 센터](https://partner.microsoft.com/dashboard)를 통과 합니다.
 
@@ -38,9 +41,9 @@ Appx 빌드 도구에서 응용 프로그램을 Microsoft Store에 전송 하는
 
 | 필수 자산 | 권장 크기 조정 | 이미지 형식 | 자산이 표시 되는 위치 | 
 |----------|----------|----------|------------------|
-| 71x71 정사각형 로고 | 모두 |  PNG | 해당 없음 | 
+| 71x71 정사각형 로고 | 모두 |  PNG | N/A | 
 | 150x150 정사각형 로고 | 150x150 (100% scale) 또는 225x225 (150% scale) | PNG | Pin 및 모든 앱 시작 (310x310이 제공 되지 않은 경우), 스토어 검색 제안, 스토어 목록 페이지, 스토어 찾아보기, 스토어 검색 | 
-|  310x150 너비가 긴 로고 |  모두  |  PNG  |  해당 없음 | 
+|  310x150 너비가 긴 로고 |  모두  |  PNG  |  N/A | 
 |  스토어 로고 |  75x75 (150% scale)  |  PNG  |  파트너 센터, 보고서 앱, 리뷰 작성, 내 라이브러리 | 
 |  시작 화면 |  930x450 (150% scale)  |  PNG  |  2D 앱 시작 관리자 (슬레이트) | 
 
@@ -212,7 +215,7 @@ Unity 프로젝트를 기반으로 하는 혼합 현실 앱을 제출 하는 경
 
 "최소 하드웨어" 또는 입력 형식에 대 한 "권장 하드웨어" 확인란을 선택 하는 방법에 대해 설명 합니다. 
 
-다음은 그 예입니다. 
+다음은 그 예입니다.  
 * 게임에 동작 컨트롤러가 필요 하지만 마이크를 통해 음성 입력을 허용 하는 경우 "Windows Mixed Reality 동작 컨트롤러" 옆에 있는 "최소 하드웨어" 확인란을 선택 하 고 "마이크" 옆에 있는 "권장 하드웨어" 확인란을 선택 합니다. 
 * Xbox 컨트롤러, 게임 패드 또는 동작 컨트롤러 중 하나를 사용 하 여 게임을 재생할 수 있는 경우 "Xbox 컨트롤러 또는 게임 패드" 옆에 있는 "최소 하드웨어" 확인란을 선택 하 고, 동작 컨트롤러가 게임 패드의 단계별 경험을 제공할 가능성이 있으므로 "Windows Mixed Reality 동작 컨트롤러" 옆에 있는 "권장 하드웨어" 확인란을 선택할 수 있습니다.
 
@@ -263,7 +266,7 @@ Visual Studio의 Microsoft Store에 앱 연결
 
 대부분의 경우 소비자는 Windows Mixed Reality 몰입 형 헤드셋을 구입 하기 전에 가상 현실에 대 한 경험이 없도록 제한 됩니다. 이는 강한 게임에서 발생 하는 것을 알 수 없거나 몰입 형 환경에서 자신의 편안 함 임계값에 익숙해질 수 있습니다. 많은 고객이 Windows mixed reality [pc](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)로 직장 배지가 달린 되지 않는 Pc에서 Windows mixed reality 몰입 형 헤드셋을 사용해 볼 수도 있습니다. 이러한 고려 사항 때문에 유료 현실 앱 또는 게임의 [무료 평가판](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#free-trial) 을 제공 하는 것이 좋습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [혼합 현실이란?](../discover/mixed-reality.md)
 * [개발 개요](../develop/development.md)
 * [앱 보기](../design/app-views.md)

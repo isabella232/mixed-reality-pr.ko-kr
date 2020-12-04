@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/02/2020
 ms.topic: article
 keywords: HoloLens, 혼합 현실, 모던 헤드셋, 앱, uwp, 제출, 제출, 필터, 메타 데이터, 시스템 요구 사항, 키워드, wack, 인증, 패키지, appx, 머천다이징
-ms.openlocfilehash: f52109792e174a0b0fbdd9738539b5fc88f190a1
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 4ea60d2111f99924eaa417d4ff6fa8830934588c
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443513"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578882"
 ---
 # <a name="distributing-your-apps"></a>앱 배포
 
@@ -81,7 +81,7 @@ ms.locfileid: "96443513"
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="#additional-scenarios"><strong>사용자 지정 Win32 배포</strong></a> (Windows Mixed Reality만 해당-아래 참조)</td>
+    <td><a href="#additional-scenarios"><strong>사용자 지정 Win32 배포</strong></a> (HoloLens 장치에는 사용할 수 없음-아래 참조)</td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>

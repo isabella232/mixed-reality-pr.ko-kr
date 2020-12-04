@@ -2,16 +2,16 @@
 title: Unreal에서 입력 응시
 description: HoloLens 및 Unreal Engine에 대 한 응시 입력 설정 자습서
 author: hferrone
-ms.author: v-hferrone
+ms.author: jacksonf
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, HoloLens 2, 눈 추적, 응시 입력, 헤드 탑재 된 디스플레이, Unreal engine, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: f89638cef6b90e004f097c701c3df13edaf74fac
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: d0470c5abbefce797254aa9f2030519d3347aaab
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354346"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578892"
 ---
 # <a name="gaze-input"></a>응시 입력
 

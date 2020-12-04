@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, 성능
 appliesto:
 - Windows 10
-ms.openlocfilehash: 7712641bad36b8759b9237abf14593f8c121e81b
-ms.sourcegitcommit: 3eb4c1a79e9173a5c9b6d2284f34c0bceced402c
+ms.openlocfilehash: 0c0bc508772fe32af9edc21ca62ba5e46125fe88
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96501711"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578618"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP 반향 G2 질문과 대답
 
@@ -57,6 +57,10 @@ HP 권장 사항:
 ## <a name="my-hp-motion-controller-joystick-will-sometimes-stick-to-one-side"></a>때로는 HP 모션 컨트롤러 조이스틱을 한 쪽에 두는 경우
 
 이 문제는 조이스틱을 완전히 depressing 자유롭게 이동 하 여 해결할 수 있습니다.
+
+## <a name="others-state-i-am-very-loud-or-that-my-audio-is-clipping-while-i-am-using-the-microphone-with-some-applications"></a>일부 응용 프로그램에서 마이크를 사용 하는 동안 오디오를 클리핑 하 고 있는 다른 상태
+
+Windows PC에서 HP 반향 G2 마이크를 처음 인식 하면 입력 볼륨 수준이 자동으로 100%로 설정 됩니다. 반향 G2's 고품질 마이크가 있으므로 입력 민감도는 기본 Windows 10 설정 보다 훨씬 더 높습니다. 반향 G2 마이크 입력 수준을 50%에서 시작 하 여 크기를 설정 하는 것이 좋습니다. 최적 설정은 특히 "자동 게인" 마이크 설정이 없는 응용 프로그램을 사용 하는 경우 사용자와 관련이 있습니다. "자동 이득"이 있는 응용 프로그램의 예로는 Skype, Zoom, 팀 및 Cisco WebEx가 있지만 모든 VR 소셜 또는 브로드캐스팅 응용 프로그램은이 기능을 사용할 수 없습니다.
 
 ## <a name="the-mixed-reality-portal-says-cant-run-mixed-reality-on-this-headset-but-this-worked-fine-with-my-previous-wmr-headset"></a>혼합 현실 포털은 "이 헤드셋에서 혼합 현실을 실행할 수 없습니다." 라고 표시 하지만 이전 WMR 헤드셋에서 제대로 작동 했습니다.
 
