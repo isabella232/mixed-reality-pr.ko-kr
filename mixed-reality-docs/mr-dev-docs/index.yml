@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: 7d5ba4ded77079858ef36c62a4c90e2fdd5794f5
-  ms.sourcegitcommit: 4cb579ac0413fc2dfad5da6506437246f6653926
+  ms.openlocfilehash: 6ea718c20d80078c95fc4151d2598f892519db3e
+  ms.sourcegitcommit: 2db930daba1ef4c444ab179d0061a5d84e2980c1
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 10/30/2020
-  ms.locfileid: "93036279"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "96513252"
 highlightedContent:
   items:
   - title: 혼합 현실이란?
@@ -41,7 +41,7 @@ highlightedContent:
     url: https://docs.microsoft.com/hololens/hololens-requirements
   - title: VR 마니아
     itemType: how-to-guide
-    url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/
+    url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/vr-journey
   - title: Mixed Reality Learn 모듈
     itemType: learn
     url: develop/mr-learning-overview.md
@@ -75,9 +75,9 @@ productDirectory:
       text: Unity 시작
     - url: develop/unreal/unreal-development-overview.md
       text: Unreal 시작
-    - url: develop/native/directx-development-overview.md
-      text: 네이티브 개발 시작
-    - url: develop/unity/mrtk-porting-guide.md
+    - url: develop/porting-apps/porting-overview.md
+      text: 기존 앱 포팅
+    - url: develop/porting-apps/porting-hl1-hl2.md
       text: HoloLens 2용 앱 준비
   - title: 배포
     imageSrc: images/icon-distribution.jpg
@@ -193,6 +193,8 @@ additionalContent:
     items:
     - title: 배포
       links:
+      - text: 배포 개요
+        url: distribute/distribute-overview.md
       - text: 3D 앱 시작 관리자 디자인
         url: distribute/3d-app-launcher-design-guidance.md
       - text: Mixed Reality 홈용 3D 모델 만들기
@@ -233,3 +235,11 @@ additionalContent:
         url: https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158
       - text: Galaxy Explorer 2.0
         url: develop/unity/galaxy-explorer-update.md
+    - title: 모듈 배우기
+      links:
+      - text: Mixed Reality 소개
+        url: https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/
+      - text: Mixed Reality Toolkit를 사용하여 Unity에서 혼합 현실 프로젝트 설정
+        url: https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/
+      - text: Unity 및 Azure Cognitive Services를 사용하여 언어 번역기 애플리케이션 만들기
+        url: https://docs.microsoft.com/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/

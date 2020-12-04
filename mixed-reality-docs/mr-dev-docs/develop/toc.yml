@@ -1,6 +1,6 @@
 - name: Mixed Reality 개발 소개
   href: development.md
-- name: Azure Cloud Services
+- name: Azure 혼합 현실 클라우드 서비스 개요
   href: mixed-reality-cloud-services.md
 - name: Mixed Reality Learning 개요
   href: mr-learning-overview.md
