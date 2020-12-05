@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, 반향, 반향 G2, HP 반향 G2, 혼합 현실, 개발, 동작 컨트롤러, 사용자 입력, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, holograms, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 6a56b11e6738dd6359508d0cdfc1560bddfaff2e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 419f5b803a6abb2b19080807ef9f403b96758683
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678932"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609594"
 ---
 # <a name="hp-reverb-g2-controllers-in-unreal"></a>진짜의 HP 반향 G2 컨트롤러 
 
@@ -24,11 +24,11 @@ ms.locfileid: "94678932"
 
 ## <a name="porting-an-existing-openxr-app"></a>기존 OpenXR 앱 포팅 
 
-HP Mixed Reality 컨트롤러의 게임에 컨트롤러 바인딩이 없으면 OpenXR 런타임은 기존 바인딩을 활성 컨트롤러에 다시 매핑하려는 것입니다.  이 경우 게임에는 Microsoft의 터치 바인딩과 HP 혼합 현실 컨트롤러 바인딩이 없습니다.
+HP Mixed Reality 컨트롤러의 게임에 컨트롤러 바인딩이 없으면 OpenXR 런타임은 기존 바인딩을 활성 컨트롤러로 다시 매핑하려는 것입니다.  이 경우 게임에는 Microsoft의 터치 바인딩과 HP 혼합 현실 컨트롤러 바인딩이 없습니다.
 
 ![컨트롤러 바인딩이 없을 때 기존 바인딩 다시 매핑](images/reverb-g2-img-04.png)
 
-이벤트는 계속 발생 하지만, 게임에서 오른쪽 메뉴 단추와 같은 컨트롤러 특정 바인딩을 사용 해야 하는 경우 HP Mixed Reality 상호 작용 프로필을 사용 해야 합니다.  여러 장치를 보다 효율적으로 지원 하기 위해 작업 마다 여러 컨트롤러 바인딩을 지정할 수 있습니다.
+이벤트는 계속 발생 하지만, 게임에서 오른쪽 메뉴 단추와 같은 컨트롤러 특정 바인딩을 사용 해야 하는 경우 HP 혼합 현실 상호 작용 프로필을 사용 해야 합니다.  여러 장치를 보다 효율적으로 지원 하기 위해 작업 마다 여러 컨트롤러 바인딩을 지정할 수 있습니다.
    
 ![여러 컨트롤러 바인딩 사용](images/reverb-g2-img-05.png)
 
@@ -52,7 +52,7 @@ HP 반향 G2 컨트롤러에는 "아웃 축" 바인딩을 사용 하는 축 매�
 
 [!INCLUDE[](includes/tabs-g2-controller-mapping-in-unreal.md)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [SteamVR 입력](https://docs.unrealengine.com/Platforms/VR/SteamVR/HowTo/SteamVRInput/index.html)
 * [Windows Mixed Reality에서 SteamVR 사용](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)
 * [Unreal Player 카메라](https://docs.unrealengine.com/Programming/Tutorials/PlayerCamera/3/index.html)

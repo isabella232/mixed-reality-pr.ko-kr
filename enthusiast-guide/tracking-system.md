@@ -3,14 +3,14 @@ title: 내부에서 외부로 추적의 작동 방식
 description: Windows Mixed Reality 헤드셋에서 사용 되는 카메라 기반 내부 출력 추적 시스템에 대 한 정보입니다.
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 내부 외부, 내부 외부, 추적, 카메라
-ms.openlocfilehash: eda1b323915788f72ae6f4a2efcf51850734eac9
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: e299415d8f5a727d8005a9cb3a65dd5da0d9bdf6
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434602"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609734"
 ---
-# <a name="inside-out-tracking"></a>내부 추적
+# <a name="inside-out-tracking"></a>내부에서 외부로 추적
 
 ## <a name="how-does-inside-out-tracking-work"></a>내부에서 추적 작업은 어떻게 작동 하나요?
 
@@ -30,7 +30,7 @@ Windows Mixed Reality 몰입 형 헤드셋에서 추적이 [Microsoft HoloLens](
 
 ## <a name="how-much-light-is-enough-light"></a>충분 한 빛이 얼마나 되나요?
 
-좋은 방법은 너무 어둡거나 환경에서 편안 하 게 이동할 수 있는 경우이 고, 실내에서 다른 사람의 기능을 관찰할 수 있는 경우 추적 시스템에 충분 한 빛이 있을 수 있다는 것입니다.
+좋은 방법은 너무 어둡거나 환경에서 편안 하 게 이동할 수 있는 경우이 고, 실내에서 다른 사람의 기능을 관찰할 수 있는 경우 추적 시스템에 충분 한 빛이 있을 수 있다는 것입니다. 너무 많은 빛이 있습니다. sun에서 바로 볼 때 카메라는 포화 상태 이며 안정적으로 추적할 수 없습니다. 
 
 ## <a name="what-is-the-recommended-amount-of-environmental-features"></a>환경 기능의 권장 크기는 얼마 인가요?
 
@@ -42,7 +42,7 @@ Windows Mixed Reality 몰입 형 헤드셋에서 추적이 [Microsoft HoloLens](
 
 ## <a name="where-will-tracking-not-work"></a>추적은 작동 하지 않습니다.
 
-낮은 빛 때문에 카메라에서 충분 한 기능을 볼 수 없게 되는 경우에는 추적이 작동 하지 않습니다. 추적은 일반적으로 비행기, 버스, 기차, 자동차 또는 엘리베이터와 같은 차량 이동에서 원활 하 게 수행 되지 않습니다 (또는 때때로 작동).
+낮은 빛 때문에 카메라에서 충분 한 기능을 볼 수 없게 되는 경우에는 추적이 작동 하지 않습니다. 추적은 일반적으로 비행기, 버스, 기차, 자동차 또는 엘리베이터와 같은 차량 이동에서 원활 하 게 수행 되지 않습니다 (또는 때때로 작동). 너무 많은 빛 또는 강한 빛 차이가 있는 경우에도 추적이 실패할 수 있습니다. 예를 들어 대화방에 직접 햇빛을 이동 하는 경우 카메라는이를 통해 채도를 줄이고 일반적인 자연 기능을 볼 수 없게 될 수 있습니다. 상대적으로 조명을 가늘게 하는 것이 좋습니다. 그렇지 않은 경우에는 덜 편안 하 게 사용할 수 있습니다. 
 
 ## <a name="what-is-the-difference-between-3dof-and-6dof"></a>및 6DOF의 차이점은 무엇 인가요?
 
@@ -72,6 +72,6 @@ Windows Mixed Reality의 추적은 간단 하 게 사용할 수 있습니다. �
 
 ## <a name="see-also"></a>참고 항목
 * [추적 시스템 문제 해결](tracking.md)
-* [모션 컨트롤러](controller-in-wmr.md)
+* [모션 컨트롤러](controllers-in-wmr.md)
 * [Windows Mixed Reality 홈](your-mixed-reality-home.md)
 * [Windows Mixed Reality에서 게임과 앱 사용](using-games-and-apps-in-windows-mixed-reality.md)

@@ -6,24 +6,24 @@ ms.author: v-hferrone
 ms.date: 09/18/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 개발, 자료, 설명서, 가이드, 기능, holograms, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: d57689e9427ab5877e3afb49b0d19f35df6c47d2
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 11c10577bd3946facb96fd77b09265ab5ca26f24
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678942"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609574"
 ---
 # <a name="material-recommendations-in-unreal"></a>Unreal의 재질 권장 사항
 
-자료는 Unreal Engine에서 성능을 만들거나 중단할 수 있습니다. 이 페이지는 최상의 성능을 얻기 위해 사용 해야 하는 기본 설정에 대 한 빠른 시작의 역할을 합니다.
+사용 하는 자료는 Unreal Engine에서 프로젝트가 얼마나 잘 실행 될 지에 직접적으로 영향을 줄 수 있습니다. 이 페이지는 혼합 현실 응용 프로그램에서 최상의 성능을 얻기 위해 사용 해야 하는 기본 설정에 대 한 빠른 시작 역할을 합니다.
 
 ## <a name="using-customizeduvs"></a>CustomizedUVs 사용
 
-재질에 UVs의 바둑판식 배열을 제공 해야 하는 경우 텍스처 노드의 UV를 직접 수정 하는 대신 CustomizedUVs를 사용 해야 합니다. CustomizedUVs는 픽셀 셰이더가 아닌 꼭 짓 점 셰이더에서 UV 조작을 발생 시킬 수 있습니다. 
+재질에 UV 바둑판식 배열을 제공 해야 하는 경우 텍스처 노드의 UV를 직접 수정 하는 대신 CustomizedUVs를 사용 합니다. CustomizedUVs를 사용 하면 픽셀 셰이더가 아닌 꼭 짓 점 셰이더에서 UVs를 조작할 수 있습니다.
 
 ![진짜의 재질 설정](images/unreal-materials-img-01c.png)
 
-다음 스크린샷에서 [Unreal Engine 설명서](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html) 및 모범 사례 예의 자료에 대 한 자세한 내용을 확인할 수 있습니다.
+다음 스크린샷에서 [Unreal Engine 설명서](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html) 및 모범 사례 예제에서 자료 정보를 찾을 수 있습니다.
 
 [ ![ 실제 ](images/unreal-materials-img-01.png) ](images/unreal-materials-img-01.png#lightbox) 
  *권장 자료* 설정의 권장 자료 설정
@@ -33,7 +33,7 @@ ms.locfileid: "94678942"
 
 ## <a name="changing-blend-mode"></a>Blend 모드 변경
 
-그렇지 않은 경우에는 강한 이유가 없으면 blend 모드를 불투명으로 설정 해야 합니다. 마스킹된 및 반투명 자료는 느립니다. 자료에 대 한 자세한 내용은 [Unreal Engine 설명서](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)에서 확인할 수 있습니다.
+그렇지 않은 경우에는 강한 이유가 없으면 blend 모드를 불투명 모드로 설정 하는 것이 좋습니다. 마스킹된 및 반투명 자료는 느립니다. 자료에 대 한 자세한 내용은 [Unreal Engine 설명서](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)에서 확인할 수 있습니다.
 
 ![Blend 모드 변경](images/unreal-materials-img-02.jpg)
 
@@ -57,7 +57,7 @@ ms.locfileid: "94678942"
 
 ## <a name="optional-settings"></a>선택적 설정
 
-다음 설정을 사용 하면 성능이 향상 될 수 있지만 특정 기능을 사용할 수 없습니다. 문제의 기능이 필요 하지 않은 경우에만이 설정을 사용 하세요.
+다음 설정을 사용 하면 성능이 향상 될 수 있지만 특정 기능을 사용할 수 없습니다. 해당 기능이 필요하지 않는 경우에만 이 설정을 사용하세요.
 
 ![Unreal의 선택적 재질 설정](images/unreal-materials-img-06.jpg)
 
@@ -65,13 +65,13 @@ ms.locfileid: "94678942"
 
 ## <a name="best-practices"></a>모범 사례
 
-다음은 자료와 관련 된 모범 사례 만큼 "설정"이 아닙니다.
+다음은 자료와 관련 된 모범 사례 만큼 "설정" 되지 않습니다.
 
-매개 변수를 만들 때 가능 하면 "정적 매개 변수"를 사용 하는 것이 좋습니다. 정적 스위치를 사용 하 여 런타임 비용 없이 재질의 전체 분기를 제거할 수 있습니다. 인스턴스는 다른 값을 가질 수 있으므로 템플릿 셰이더를 설정 하 여 성능 손실을 방지할 수 있습니다. 그러나이로 인해 많은 셰이더가 다시 컴파일될 수 있는 많은 순열이 생성 된다는 단점이 있습니다. 재질의 정적 매개 변수 수와 실제로 사용 되는 정적 매개 변수의 순열의 수를 최소화 하려고 합니다. 문서를 렌더링 하는 방법에 대 한 자세한 내용은 [Unreal Engine 설명서](https://docs.unrealengine.com/Engine/Rendering/Materials/ExpressionReference/Parameters/index.html#staticswitchparameter)에서 확인할 수 있습니다.
+매개 변수를 만들 때 가능 하면 "정적 매개 변수"를 사용 하는 것이 좋습니다. 정적 스위치를 사용 하 여 런타임 비용 없이 재질의 전체 분기를 제거할 수 있습니다. 인스턴스는 서로 다른 값을 가질 수 있으므로 템플릿 셰이더를 설정 하 여 성능 손실을 방지할 수 있습니다. 단점은 셰이더 재컴파일을 발생 시키는 여러 순열이 생성 된다는 것입니다. 재질의 정적 매개 변수 수와 사용 되는 정적 매개 변수의 순열의 수를 최소화 합니다. 문서를 렌더링 하는 방법에 대 한 자세한 내용은 [Unreal Engine 설명서](https://docs.unrealengine.com/Engine/Rendering/Materials/ExpressionReference/Parameters/index.html#staticswitchparameter)에서 확인할 수 있습니다.
 
 ![재질 설정에 대 한 모범 사례](images/unreal-materials-img-07.jpg)
 
-재질 인스턴스를 만들 때 재질에 대해 재료 인스턴스 **상수** 에 대 한 기본 설정을 지정 해야 합니다. **재료 인스턴스 상수** 는 런타임 이전에 한 번만 계산 하는 인스턴스화된 재질입니다.
+재질 인스턴스를 만들 때 재질에 대해 재료 인스턴스 **상수** 에 대 한 기본 설정을 지정 해야 합니다. **재질 인스턴스 상수** 는 런타임 전 한 번만 계산 하는 인스턴스화된 재질입니다.
 
 콘텐츠 브라우저를 통해 만든 재질 인스턴스 (**재질 인스턴스 > 만들기를 마우스 오른쪽 단추로 클릭**)는 재질 인스턴스 상수입니다. 자재 인스턴스 동적은 코드를 통해 생성 됩니다. 자료 인스턴스에 대 한 자세한 내용은 [Unreal Engine 설명서](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)에서 확인할 수 있습니다.
 
@@ -88,7 +88,7 @@ ms.locfileid: "94678942"
 
 ![실수부의 자재 복잡성](images/unreal-materials-img-10.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [모바일 자료](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)
 * [보기 모드](https://docs.unrealengine.com/Engine/UI/LevelEditor/Viewports/ViewModes/index.html)
 * [재질 인스턴스](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)

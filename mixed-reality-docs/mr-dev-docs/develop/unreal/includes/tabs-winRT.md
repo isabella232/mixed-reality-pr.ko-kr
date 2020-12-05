@@ -1,27 +1,30 @@
 ---
-ms.openlocfilehash: fd44d63ad502b6807c6aa18ce6fc63493fc254dc
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: be267da576e020e88f08d475395b144d42285383
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354448"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609411"
 ---
 # <a name="425"></a>[4.25](#tab/425)
 
-Unreal은 버전 4.25에서 WinRT 코드를 고유 하 게 컴파일하지 않으므로 별도의 이진 파일을 작성 하 고, Unreal의 빌드 시스템에서 사용할 수 있는 작업입니다. 이 자습서에서는 이러한 시나리오를 안내 합니다.
+Unreal은 버전 4.25에서 WinRT 코드를 고유 하 게 컴파일하지 않으므로 실제 빌드 시스템에서 사용할 수 있는 별도의 이진 파일을 작성 하는 작업입니다. 
 
 ## <a name="objectives"></a>목표
+
 - FileSaveDialogue를 여는 유니버설 Windows DLL 만들기
 - 해당 DLL을 Unreal 게임 프로젝트에 연결
 - 새 DLL을 사용 하 여 실제 청사진에서 HoloLens에 파일 저장
 
 ## <a name="getting-started"></a>시작
+
 1. [필요한 모든 도구가](../tutorials/unreal-uxt-ch1.md) 설치 되어 있는지 확인 합니다.
 2. [새 Unreal 프로젝트를 만들고](../tutorials/unreal-uxt-ch2.md#creating-a-new-unreal-project) 이름을 **Consumewinrt** 로 만듭니다.
 3. HoloLens 개발에 [필요한 플러그 인](../tutorials/unreal-uxt-ch2.md#enabling-required-plugins) 사용
 4. 장치 또는 에뮬레이터에 [배포 설정](../tutorials/unreal-uxt-ch6.md)
 
 ## <a name="creating-a-winrt-dll"></a>WinRT DLL 만들기 
+
 1. 새 Visual Studio 프로젝트를 열고, Unreal 게임의 **uproject** 파일과 동일한 디렉터리에 **DLL (유니버설 Windows)** 프로젝트를 만듭니다. 
 
 ![DLL 만들기](../images/unreal-winrt-img-01.png)
@@ -32,7 +35,7 @@ Unreal은 버전 4.25에서 WinRT 코드를 고유 하 게 컴파일하지 않�
 ![DLL 구성](../images/unreal-winrt-img-02.png)
 
 > [!IMPORTANT]
-> 새 프로젝트를 컴파일한 후에는 각각 **HoloLensWinrtDLL** 및 **HoloLensWinrtDLL** 라는 빈 cpp 및 헤더 파일에 특별히 주의를 기울여야 합니다. 헤더는 Unreal에서 DLL을 사용 하는 포함 파일이 고, cpp는 내보내기 함수의 본문을 포함 하 고 그렇지 않으면 컴파일할 수 없는 모든 WinRT 코드를 포함 합니다. 
+> 새 프로젝트를 컴파일한 후에는 각각 **HoloLensWinrtDLL** 및 **HoloLensWinrtDLL** 라는 빈 cpp 및 헤더 파일에 특히 주의를 기울여야 합니다. 헤더는 Unreal에서 DLL을 사용 하는 포함 파일이 고, cpp는 내보내기 함수의 본문을 포함 하 고 그렇지 않으면 컴파일할 수 없는 모든 WinRT 코드를 포함 합니다. 
 
 3. 코드를 추가 하기 전에 필요한 WinRT 코드를 컴파일할 수 있도록 프로젝트 속성을 업데이트 해야 합니다. 
     * HoloLensWinrtDLL 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 선택 합니다.  
@@ -46,6 +49,7 @@ Unreal은 버전 4.25에서 WinRT 코드를 고유 하 게 컴파일하지 않�
 프로젝트에서 파일 대화 상자를 열고 HoloLens 디스크에 파일을 저장 하는 WinRT 코드를 사용 하 여 DLL의 소스를 업데이트할 준비가 되었습니다.  
 
 ## <a name="adding-the-dll-code"></a>DLL 코드 추가
+
 1. HoloLensWinrtDLL를 열고, Unreal에 사용할 dll 내보내기 함수를 추가 **합니다** . 
 
 ```cpp
@@ -288,7 +292,7 @@ Unreal에서 OpenFileDialogue을 호출 하면 .txt 파일 이름에 대 한 Hol
 
 ## <a name="summary"></a>요약 
 
-이 자습서의 코드는 Unreal에서 WinRT 코드를 사용 하기 위한 시작 점으로 사용 하는 것이 좋습니다.  이를 통해 사용자는 Windows와 동일한 파일 대화 상자를 사용 하 여 HoloLens 디스크에 파일을 저장할 수 있습니다.  동일한 프로세스를 따라 HoloLensWinrtDLL 헤더에서 추가 함수를 내보내고 Unreal에서 사용 합니다.  백그라운드 MTA 스레드에서 비동기 WinRT 코드를 대기 하는 DLL 코드를 확인 합니다 .이는 Unreal 게임 스레드의 교착 상태를 방지 합니다. 
+Windows와 동일한 파일 대화 상자를 사용 하 여 HoloLens 디스크에 파일을 저장 해야 하는 경우에는이 자습서를 사용 하지 않는 것이 좋습니다.  HoloLensWinrtDLL 헤더에서 추가 함수를 내보내고 Unreal에서 사용 하는 경우에도 동일한 프로세스가 적용 됩니다.  백그라운드 MTA 스레드에서 비동기 WinRT 코드를 대기 하는 DLL 코드에 특히 주의를 기울여야 합니다 .이 경우에는 Unreal 게임 스레드가 교착 상태를 방지 합니다. 
 
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -340,9 +344,9 @@ WinRT 코드는 Win64 및 HoloLens 플랫폼 에서만 컴파일될 수 있으�
 
 ## <a name="winrt-from-a-nuget-package"></a>NuGet 패키지의 WinRT
 
-WinRT를 지 원하는 nuget 패키지를 추가 해야 하는 경우에는 좀 더 복잡 합니다. 이 경우 Visual Studio는 실제로 모든 작업을 수행할 수 있지만, Unreal 빌드 시스템은 수행할 수 없습니다. 다행히 너무 어렵습니다. 다음은 MixedReality 패키지를 다운로드 하는 방법의 예입니다. 이를 다른 것으로 바꿀 수 있으며, winmd 파일이 손실 되지 않도록 하 고 올바른 dll을 복사 합니다. 
+WinRT를 지 원하는 NuGet 패키지를 추가 해야 하는 경우에는 좀 더 복잡 합니다. 이 경우 Visual Studio는 실제로 모든 작업을 수행할 수 있지만, Unreal 빌드 시스템은 수행할 수 없습니다. 다행히 너무 어렵습니다. 다음은 MixedReality 패키지를 다운로드 하는 방법의 예입니다. 이를 다른 것으로 바꿀 수 있으며, winmd 파일이 손실 되지 않도록 하 고 올바른 dll을 복사 합니다. 
 
-이전 섹션의 Windows SDK dll은 OS에 의해 처리 됩니다. Nuget의 dll은 모듈의 코드를 통해 관리 되어야 합니다. 코드를 다운로드 하 고, 이진 파일 폴더에 복사 하 고, 모듈을 시작할 때 프로세스 메모리에 로드 하는 코드를 추가 해야 합니다.
+이전 섹션의 Windows SDK dll은 OS에 의해 처리 됩니다. NuGet의 dll은 모듈의 코드를 통해 관리 되어야 합니다. 다운로드 하 고, 이진 파일 폴더에 복사 하 고, 모듈을 시작할 때 프로세스 메모리에 로드 하는 코드를 추가 하는 것이 좋습니다.
 
 첫 번째 단계에서는 https://docs.microsoft.com/nuget/reference/packages-config) 모듈의 루트 폴더에 packages.config를 추가 해야 합니다. 여기에서 모든 종속성을 포함 하 여 다운로드 하려는 모든 패키지를 추가 해야 합니다. 여기에서 MixedReality을 기본 페이로드로 추가 하 고 다른 두 개의 항목을 종속성으로 추가 했습니다. 이 파일의 형식은 Visual Studio와 동일 합니다.
 
@@ -512,7 +516,7 @@ private void SafeCopy(string source, string destination)
 }
 ```
 
-Nuget Dll은 Win32 프로세스 메모리에 수동으로 로드 해야 합니다. 모듈의 startup 메서드에 수동 로드를 추가 해야 합니다.
+NuGet Dll은 Win32 프로세스 메모리에 수동으로 로드 해야 합니다. 모듈의 startup 메서드에 수동 로드를 추가 하는 것이 좋습니다.
 
 ```cpp
 void StartupModule() override

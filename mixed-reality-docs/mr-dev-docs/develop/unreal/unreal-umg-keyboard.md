@@ -6,16 +6,16 @@ ms.author: suwu
 ms.date: 11/25/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, HoloLens 2, 눈 추적, 응시 입력, 헤드 탑재 디스플레이, Unreal engine, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, 위젯, UI, UMG, Unreal 움직임 그래픽, Unreal Engine, UE, UE4
-ms.openlocfilehash: 9f22a5f7a13732727b6b122d385aad7e708a1343
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 59ad108a0e27298256f4f0d1661381a4f1748777
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96355407"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609764"
 ---
 # <a name="umg-and-keyboard-in-unreal"></a>Unreal의 UMG 및 키보드
 
-UNSUMG (실제 동작 그래픽)는 메뉴 및 텍스트 상자와 같은 인터페이스를 만드는 데 사용 되는 실제 엔진의 기본 제공 UI 시스템입니다. UMG로 빌드된 사용자 인터페이스는 위젯을 구성 합니다. 이 가이드에서는 예를 들어 시스템 키보드를 사용 하 여 새 위젯을 만들고,이를 세계 공간에 추가 하 고, 혼합 현실에서 해당 위젯에 대 한 상호 작용을 사용 하도록 설정 하는 방법을 보여 줍니다. 공식 Unreal Engine [설명서](https://docs.unrealengine.com/en-US/Engine/UMG/index.html)에서 umg에 대해 자세히 알아볼 수 있습니다. 
+UNSUMG (실제 동작 그래픽)는 메뉴 및 텍스트 상자와 같은 인터페이스를 만드는 데 사용 되는 실제 엔진의 기본 제공 UI 시스템입니다. UMG로 빌드된 사용자 인터페이스는 위젯을 구성 합니다. 새 위젯을 만들고, 전 세계 공간에 추가 하 고, 시스템 키보드를 사용 하 여 상호 작용을 사용 하도록 설정 하는 과정을 안내 합니다. 공식 Unreal Engine [설명서](https://docs.unrealengine.com/en-US/Engine/UMG/index.html)에서 umg에 대해 자세히 알아볼 수 있습니다. 
 
 ## <a name="create-a-new-widget"></a>새 위젯 만들기
 
@@ -27,7 +27,7 @@ UNSUMG (실제 동작 그래픽)는 메뉴 및 텍스트 상자와 같은 인터
 
 ![텍스트 위젯 구성 요소가 강조 표시 되 고 확장 된 계층 창의 스크린샷](images/unreal-umg-img-02.png)
 
-- 계층 구조 또는 디자이너 창에서 위젯을 선택 하 고 세부 정보 패널에서 매개 변수를 수정 합니다.  이 경우 위젯 상호 작용할 준비가 되었다는 피드백을 제공 하기 위해 커서가 텍스트 상자를 가리킬 때 몇 가지 기본 "힌트 텍스트"와 색조 색을 추가 했습니다.  텍스트 상자는 다음과 상호 작용할 때 HoloLens의 가상 키보드를 팝 합니다.
+- 계층 구조 또는 디자이너 창에서 위젯을 선택 하 고 세부 정보 패널에서 매개 변수를 수정 합니다.  이 경우 기본 "힌트 텍스트"와 텍스트 상자를 마우스로 가리킬 때 표시 되는 색조 색을 추가 했습니다.  텍스트 상자는와 상호 작용할 때 HoloLens의 가상 키보드를 팝업 합니다.
 
 ![계층 구조 창에서 수정 된 매개 변수의 스크린샷](images/unreal-umg-img-03.png)
 
@@ -57,11 +57,14 @@ UMG 위젯은 일반적으로 마우스에서 입력을 받습니다.  HoloLens 
 
 ![위젯 상호 작용 구성 요소가 강조 표시 된 새 행위자의 스크린샷](images/unreal-umg-img-08.png)
 
-- 위젯 상호 작용 구성 요소에 대 한 세부 정보 패널에서 상호 작용 거리를 원하는 거리로 설정 하 고, **상호 작용 원본을** **사용자 지정** 으로 설정 하 고, 개발의 경우 **Show Debug** 를 **true** 로 설정 합니다.
+- 위젯 상호 작용 구성 요소에 대 한 세부 정보 패널에서 다음을 수행 합니다.
+    - 상호 작용 거리를 원하는 거리 값으로 설정 합니다.
+    - **상호 작용 소스** 를 **사용자 지정** 으로 설정
+    - 개발의 경우 **디버그 표시** 를 **true** 로 설정 합니다.
 
 ![위젯 상호 작용 및 디버깅 구성 요소 속성의 스크린샷](images/unreal-umg-img-09.png)
 
-상호 작용 소스에 대 한 기본값은 "세계" 이며,이는 위젯 상호 작용 구성 요소의 세계 위치를 기준으로 raycasts를 전송 해야 하지만 AR 및 VR에서이는 대/소문자를 표시 하지 않습니다.  개발 중에 "디버그 표시"를 사용 하도록 설정 하 고 마우스로 가리킨 항목 색조를 위젯에 추가 하면 위젯 상호 작용 구성 요소가 필요한 작업을 수행 하 고 있는지 확인 하는 것이 중요 합니다.  해결 방법은 사용자 지정 원본을 사용 하 고 핸드 레이에서 이벤트 그래프에 raycast를 설정 하는 것입니다.  
+상호 작용 원본의 기본값은 "세계" 이며,이는 위젯 상호 작용 구성 요소의 세계 위치를 기준으로 raycasts를 전송 해야 합니다. AR 및 VR에서이는 그렇지 않습니다.  "디버그 표시"를 사용 하도록 설정 하 고 위젯에 항목을 위젯에 추가 하는 것은 위젯 상호 작용 구성 요소가 원하는 대로 작동 하는지 확인 하는 데 중요 합니다.  해결 방법은 사용자 지정 원본을 사용 하 고 핸드 레이에서 이벤트 그래프에 raycast를 설정 하는 것입니다.  
 
 여기서는 Event Tick에서이를 호출 합니다.
 

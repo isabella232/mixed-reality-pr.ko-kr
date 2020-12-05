@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, 장치에 배포, PC, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f5abfca4d5f85fd65aee77857d94a989122df310
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: eaba6ea1ee77ffffb74008402eafd1f09fd822e5
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678952"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609684"
 ---
 # <a name="the-making-of-kippys-escape"></a>Kippy의 이스케이프 만들기
 
@@ -24,7 +24,7 @@ Kippy가 아일랜드에서 남겨진 상태를 찾도록 합니다. 문제를 �
 
 ## <a name="overview"></a>개요
 
-Kippy의 이스케이프는 Unreal Engine 4로 빌드된 오픈 소스 [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) 샘플 앱 이며, [Unreal 용 혼합 현실 UX 도구](https://github.com/microsoft/MixedReality-UXTools-Unreal)입니다. 이 게시물에서는 첫 번째 원칙 및 시각적 디자인에서 환경을 구현 하 고 최적화 하는 데 Kippy의 이스케이프를 가져오는 프로세스를 안내 합니다. MRTK UX 도구를 사용 하 여 혼합 현실 응용 프로그램을 개발 하는 방법에 대 한 자세한 내용은 [Unreal development 개요](unreal-development-overview.md)를 확인할 수 있습니다.
+Kippy의 이스케이프는 Unreal Engine 4로 빌드된 오픈 소스 [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) 샘플 앱 이며, [Unreal 용 혼합 현실 UX 도구](https://github.com/microsoft/MixedReality-UXTools-Unreal)입니다. 이 게시물에서는 환경을 구현 하 고 최적화 하기 위한 첫 번째 원칙 및 시각적 디자인의 프로세스를 안내 합니다. MRTK UX 도구를 사용 하 여 혼합 현실 응용 프로그램을 개발 하는 방법에 대 한 자세한 내용은 [Unreal development 개요](unreal-development-overview.md)를 확인할 수 있습니다.
 
 ## <a name="first-principles"></a>첫 번째 원칙 
 
@@ -36,7 +36,7 @@ Kippy의 이스케이프 만들기에서 목표는 [Unreal Engine의 HoloLens 2 
 
 HoloLens 2는 현재 게임에서 다른 곳에서 찾을 수 없는 디자인 기능에 액세스할 수 있습니다. 사용자를 사용 하 여 개체를 직접 푸시되 나 조작 하거나 시각 추적을 대상으로 지정할 수 있습니다. 이러한 주요 기능은 Kippy의 이스케이프에서 작성 한 흥미로운 몇 분 뒤에 있습니다.  
 
-고유한 HoloLens 2 기능을 게임 디자인에 대 한 지침으로 사용 하 여 몇 가지 작은 환경 시나리오의 범위를 지정 했습니다. 다른 플레이어 높이에 맞게 조정 될 수 있고 몇 가지 오락 아이디어 아이디어를 제공 하기 때문에 제도는 매우 적합 합니다. 여기서는 좋아하는에 대 한 배치의 테마에 따라 각 아일랜드에서 제공 하는 이상한 에너지를 방해 하는 활용에 대 한 기계를 구축 했습니다. 각각은 시각적 효과를 만드는 데 도움이 되는 고유한 모양과 느낌을 제공 합니다. 모델링 및 질감의 균형을 유지 하는 것은 렌더링 성능에 대 한 그리기 호출을 낮게 유지 하는 것이 중요 하기 때문에 스타일을 염두에 두고 디자인 되었습니다. 
+고유한 HoloLens 2 기능을 게임 디자인에 대 한 지침으로 사용 하 여 몇 가지 작은 환경 시나리오의 범위를 지정 했습니다. 다른 플레이어 높이에 맞게 조정 될 수 있고 몇 가지 오락 아이디어 아이디어를 제공 했기 때문에 제도를 이해 했습니다. 좋아하는에 대 한 배치의 테마는 각 아일랜드에서 제공 하는 이상한 에너지를 방해 하는 활용에 대 한 기계를 구축 했습니다. 각각은 시각적 효과를 만드는 데 도움이 되는 고유한 모양과 느낌을 제공 합니다. 모델링 및 질감 사이에 적절 한 균형을 유지 하면 렌더링 성능이 저하 될 수 있으므로 스타일을 염두에 두고 디자인 되었습니다. 
 
 ![초기 게임 디자인 ](images/kippys-escape/kippys-escape-img-01.png)
  *은 환경에 대 한 초기 스케치를 스케치 합니다* .
@@ -54,7 +54,7 @@ HoloLens 2는 현재 게임에서 다른 곳에서 찾을 수 없는 디자인 �
 
 *사용자가 퍼즐을 해결 하는 데 너무 오래 걸리는 경우 Kippy는 사용자에 게 힌트를 제공 합니다.*
 
-문자 및 환경 설계 외에도 게임을 재미 있게 하기 위한 노력을 율 했습니다. 아이 추적을 통해 게임의 주요 부분을 강조 표시 하는 재질 및 음향 특성을 실행할 수 있었습니다. 공간 오디오는 플레이어 환경의 집에서 수준을 느낌을 주는 데 도움이 됩니다. 개체를 잡고, 단추를 조작 하 고, 슬라이더를 조작 하는 것은 혁신적인 플레이어 계약을 확인할 수 있으므로 이러한 연결 지점이 자연스럽 게 보이도록 하는 것이 중요 했습니다. 
+문자 및 환경 설계 외에도 게임을 재미 있게 하기 위한 노력을 율 했습니다. 아이 추적을 통해 게임의 주요 부분을 강조 표시 하는 재질 및 음향 특성을 실행할 수 있었습니다. 공간 오디오는 플레이어 환경의 집에서 수준을 느낌을 주는 데 도움이 됩니다. 개체를 잡고 단추를 누르고 슬라이더를 조작 하는 것은 혁신적인 플레이어 계약을 구동 합니다. 이러한 연결 지점이 자연스럽 게 확인 하는 것이 중요 했습니다. 
 
 ![사용자가 손 모양에 도달할 때 연결 케이블의 끝입니다.](images/kippys-escape/kippys-escape-img-05.gif)
 
@@ -117,4 +117,4 @@ HoloLens 2를 부팅 하 고 Microsoft Store에서 앱을 [다운로드](https:/
 </tr>
 </table>
 
-Kippy의 이스케이프를 다음 수준으로 [Framestore](https://www.framestore.com/) 하는 데 도움이 되는 친구에 게 특별 해 주셔서 감사 합니다. 문자 개발, 자산 디자인, 게임 프로그래밍에 이르기까지,이 프로젝트에 대 한 공동 작업은 pivotal 되었습니다.  
+Kippy의 탈출을 [Framestore](https://www.framestore.com/) 수 있도록 microsoft 친구에 게 감사 드립니다. 문자 개발, 자산 디자인, 게임 프로그래밍에 이르기까지,이 프로젝트에 대 한 공동 작업은 pivotal 되었습니다.  
