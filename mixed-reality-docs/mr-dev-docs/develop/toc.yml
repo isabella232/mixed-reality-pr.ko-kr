@@ -1,11 +1,15 @@
 - name: Mixed Reality 개발 소개
   href: development.md
-- name: Azure 혼합 현실 클라우드 서비스 개요
-  href: mixed-reality-cloud-services.md
-- name: Mixed Reality Learning 개요
-  href: mr-learning-overview.md
 - name: 도구 설치
   href: install-the-tools.md
+- name: 시작
+  items:
+    - name: Azure 혼합 현실 클라우드 서비스 개요
+      href: mixed-reality-cloud-services.md
+    - name: Mixed Reality Learning 개요
+      href: mr-learning-overview.md
+    - name: 샘플 및 기능 앱
+      href: features-and-samples.md
 - name: 앱 포팅
   items:
     - name: 포팅 개요
@@ -216,8 +220,6 @@
           href: unity/unity-reverb-g2-controllers.md
     - name: 샘플 앱
       items:
-        - name: 개요
-          href: unity/samples.md
         - name: HoloLens 2
           items:
             - name: Surfaces
@@ -300,8 +302,6 @@
           href: unreal/unreal-reverb-g2-controllers.md
     - name: 샘플 앱
       items:
-        - name: 개요
-          href: unreal/unreal-samples.md
         - name: Kippy의 이스케이프
           href: unreal/unreal-kippys-escape.md
     - name: 배포 및 성능
@@ -396,6 +396,8 @@
           href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
         - name: 작동 방법 - 혼합 현실 캡처 스튜디오
           href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
+        - name: HoloLens 2용 PIX 설치
+          href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: 홀로그램 원격
       items:
         - name: 홀로그램 원격 플레이어
