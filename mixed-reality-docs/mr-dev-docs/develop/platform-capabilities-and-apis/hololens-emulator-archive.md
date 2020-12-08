@@ -3,22 +3,24 @@ title: HoloLens 에뮬레이터 아카이브
 description: Microsoft HoloLens 에뮬레이터의 릴리스된 빌드 목록입니다.
 author: hamalawi
 ms.author: moelhama
-ms.date: 11/10/2020
+ms.date: 12/08/2020
 ms.topic: article
 keywords: HoloLens, 에뮬레이터, 빌드, 버전, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 보관
-ms.openlocfilehash: e6030328a85525851fa8f4f5129f4544a3136b68
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 0de451d19f8f2f9d07d6481508784f79f391fbb8
+ms.sourcegitcommit: 0509cf6c57067cffd75a0189106e3369e9ecc5c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679562"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96855870"
 ---
 # <a name="hololens-2-emulator-archive"></a>HoloLens 2 에뮬레이터 보관
 
 HoloLens 에뮬레이터 (첫 번째 gen) 및 HoloLens 2 에뮬레이터 빌드는 함께 설치 됩니다. 일반적으로 사용 가능한 최신 빌드를 사용 하는 것이 좋지만, 이전 에뮬레이터에 대해 앱을 테스트 하거나 테스트 해야 하는 경우가 있을 수 있습니다. 이 페이지에는 릴리스 버전에 대 한 링크가 포함 되어 있습니다.
 
-|  빌드 |  출시 날짜 |  참고 |
+|  빌드 |  출시 날짜 |  메모 |
 |----------|----------|----------|
+|  [HoloLens 2 에뮬레이터 빌드 10.0.19041.1131](https://go.microsoft.com/fwlink/?linkid=2151523) | 2020년 12월 8일 | Windows Holographic 버전 20H2 12 월 2020 업데이트  일반적인 HoloLens 2 릴리스 정보는 다음을 참조 하세요. https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 에뮬레이터 빌드 10.0.18362.1088](https://go.microsoft.com/fwlink/?linkid=2151522) | 2020년 12월 8일 | Windows Holographic 버전 1903 12 월 2020 업데이트  일반적인 HoloLens 2 릴리스 정보는 다음을 참조 하세요. https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 에뮬레이터 빌드 10.0.18362.1081](https://go.microsoft.com/fwlink/?linkid=2148612) | 2020년 11월 10일 | Windows Holographic 버전 1903 11 월 2020 업데이트  일반적인 HoloLens 2 릴리스 정보는 다음을 참조 하세요. https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 에뮬레이터 빌드 10.0.19041.1124](https://go.microsoft.com/fwlink/?linkid=2145829) | 2020년 10월 13일 | Windows Holographic 버전 2004 10 월 2020 업데이트  일반적인 HoloLens 2 릴리스 정보는 다음을 참조 하세요. https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 에뮬레이터 빌드 10.0.18362.1081](https://go.microsoft.com/fwlink/?linkid=2145828) | 2020년 10월 13일 | Windows Holographic 버전 1903 10 월 2020 업데이트  일반적인 HoloLens 2 릴리스 정보는 다음을 참조 하세요. https://docs.microsoft.com/hololens/hololens-release-notes |
@@ -46,7 +48,7 @@ HoloLens 에뮬레이터 (첫 번째 gen) 및 HoloLens 2 에뮬레이터 빌드�
 
 ## <a name="hololens-emulator-1st-gen-archive"></a>HoloLens 에뮬레이터 (첫 번째 gen) 아카이브
 
-|  빌드 |  출시 날짜 |  참고 |
+|  빌드 |  출시 날짜 |  메모 |
 |----------|----------|----------|
 |  [HoloLens 에뮬레이터 빌드 10.0.17763.134](https://go.microsoft.com/fwlink/?linkid=2065980) | 2018년 11월 19일 | 최신 HoloLens (첫 번째 gen) 빌드. Windows 10 10 월 2018 업데이트 |
 |  [HoloLens 에뮬레이터 빌드 10.0.17134.80](https://go.microsoft.com/fwlink/?linkid=874531) | 2018년 5월 21일 |
