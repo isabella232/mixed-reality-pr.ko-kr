@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: 장면 이해, 공간 매핑, Windows Mixed Reality, Unity
-ms.openlocfilehash: 7541ab38cd8c90e774614af5ea457e5636ee66fe
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 731a4dfd0b714f22f25c0818de82680d4c576a27
+ms.sourcegitcommit: d11275796a1f65c31dd56b44a8a1bbaae4d7ec76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684952"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761765"
 ---
 # <a name="scene-understanding-sdk-overview"></a>장면 이해 SDK 개요
 
@@ -47,7 +47,7 @@ Unity 프로젝트에서 SDK를 사용 하는 경우 [unity 용 NuGet](https://g
 
 각 장면은 응용 프로그램의 메모리 공간에 해당 데이터를 저장 하기 때문에 장면 개체의 모든 기능 또는 내부 데이터가 항상 응용 프로그램의 프로세스에서 실행 된다고 가정할 수 있습니다.
 
-### <a name="layout"></a>Layout
+### <a name="layout"></a>레이아웃
 
 장면 이해를 이해 하려면 런타임이 구성 요소를 논리적 및 물리적으로 표시 하는 방법을 알고 이해 하는 것이 유용할 수 있습니다. 장면은 주요 수정이 필요 하지 않고 미래의 요구 사항을 충족 하는 pliable 기본 구조를 유지 하면서 간단 하 게 선택 된 특정 레이아웃을 가진 데이터를 나타냅니다. 장면에서는 모든 구성 요소 (모든 장면 개체의 빌딩 블록)를 단순 목록에 저장 하 고 특정 구성 요소가 다른 항목을 참조 하는 참조를 통해 계층 구조와 컴퍼지션을 정의 하 여이를 수행 합니다.
 
@@ -117,7 +117,7 @@ SceneObjects에는 다음 중 하나를 사용할 수 있습니다.
 
 <table>
 <tr>
-<th>SceneObjectKind</th> <th>Description</th>
+<th>SceneObjectKind</th> <th>설명</th>
 </tr>
 <tr><td>배경</td><td>SceneObject는 인식 되는 다른 종류의 장면 개체 중 하나가 <b>아닌</b> 것으로 알려져 있습니다. 이 클래스는 배경을 벽/층/천장 등이 아닌 것으로 알려진 경우 알 수 없는와 혼동 해서는 안 됩니다. unknown은 아직 분류 되지 않았습니다.</b></td></tr>
 <tr><td>벽</td><td>실제 벽입니다. 벽은 불균형 환경 구조로 간주 됩니다.</td></tr>
@@ -125,7 +125,7 @@ SceneObjects에는 다음 중 하나를 사용할 수 있습니다.
 <tr><td>Ceiling</td><td>방의 위쪽 표면입니다.</td></tr>
 <tr><td>플랫폼</td><td>Holograms를 놓을 수 있는 커다란 플랫 표면입니다. 이는 테이블, 싱크대 및 기타 넓은 가로 표면을 나타내는 경향이 있습니다.</td></tr>
 <tr><td>World</td><td>레이블 지정과 무관 한 기하학적 데이터의 예약 된 레이블입니다. EnableWorldMesh 업데이트 플래그를 설정 하 여 생성 된 메시는 세계로 분류 됩니다.</td></tr>
-<tr><td>Unknown</td><td>이 장면 개체는 아직 분류 되어 있으며 종류를 할당 해야 합니다. 이 개체는 아무것도 될 수 있으므로 배경과 혼동 해서는 안 됩니다. 시스템은 아직 충분히 강력한 분류로 제공 되지 않습니다.</td></tr>
+<tr><td>알 수 없음</td><td>이 장면 개체는 아직 분류 되어 있으며 종류를 할당 해야 합니다. 이 개체는 아무것도 될 수 있으므로 배경과 혼동 해서는 안 됩니다. 시스템은 아직 충분히 강력한 분류로 제공 되지 않습니다.</td></tr>
 </tr>
 </table>
 
@@ -135,9 +135,9 @@ SceneMesh은 삼각형 목록을 사용 하 여 임의 기하학적 개체의 �
 
 #### <a name="winding-order-and-coordinate-systems"></a>권선 순서 및 좌표계
 
-장면 이해에 의해 생성 된 모든 메시는 시계 방향 권선 순서를 사용 하 여 오른손 좌표계에서 메시를 반환할 것으로 예상 됩니다. 
+장면 이해로 생성 된 모든 메시는 시계 방향 권선 순서를 사용 하 여 Right-Handed 좌표계에서 메시를 반환할 것으로 예상 됩니다. 
 
-참고: 191105 이전 OS 빌드에는 "세계" 메시가 시계 반대 방향 권선 주문에서 반환 된 알려진 버그가 있을 수 있습니다 .이는 이후에 수정 되었습니다.
+참고: 191105 이전 OS 빌드에는 "세계" 메시가 이후에 수정 된 Counter-Clockwise 권선 순서로 반환 되는 알려진 버그가 있을 수 있습니다.
 
 ### <a name="scenequad"></a>SceneQuad
 
@@ -222,7 +222,7 @@ foreach (var sceneObject in myScene.SceneObjects)
 
 ### <a name="component-update-and-re-finding-components"></a>구성 요소 업데이트 및 구성 요소 다시 찾기
 
-***FindComponent*** 라는 장면에서 구성 요소를 검색 하는 또 다른 함수가 있습니다. 이 함수는 추적 개체를 업데이트 하 고 후속 장면에서 찾을 때 유용 합니다. 다음 코드는 이전 장면을 기준으로 새 장면을 계산 하 고 새 장면에서 바닥을 찾습니다.
+**_FindComponent_* _ 라는 장면에서 구성 요소를 검색 하는 다른 함수가 있습니다. 이 함수는 추적 개체를 업데이트 하 고 후속 장면에서 찾을 때 유용 합니다. 다음 코드는 이전 장면을 기준으로 새 장면을 계산 하 고 새 장면에서 바닥을 찾습니다.
 
 ```cs
 // Compute a new scene, and tell the system that we want to compute relative to the previous scene
@@ -239,7 +239,7 @@ if (firstFloor != null)
 
 ## <a name="accessing-meshes-and-quads-from-scene-objects"></a>장면 개체에서 메시 및 Quads 액세스
 
-SceneObjects 발견 되 면 응용 프로그램은 구성 된 quads/메시에 포함 된 데이터에 액세스 하려고 할 가능성이 높습니다. 이 데이터는 ***Quads*** 및 ***메시*** 속성을 사용 하 여 액세스 됩니다. 다음 코드는 floor 개체의 모든 quads 및 메시를 열거 합니다.
+SceneObjects 발견 되 면 응용 프로그램은 구성 된 quads/메시에 포함 된 데이터에 액세스 하려고 할 가능성이 높습니다. 이 데이터는 _*_Quads_*_ 및 _*_메시_*_ 속성을 사용 하 여 액세스 됩니다. 다음 코드는 floor 개체의 모든 quads 및 메시를 열거 합니다.
 
 ```cs
 
@@ -263,53 +263,95 @@ foreach (var mesh in firstFloor.Meshes)
 
 ### <a name="dealing-with-transforms"></a>변형 처리
 
-장면 이해는 변환을 처리할 때 일반적인 3D 장면 표현과 맞추는 시도를 만들었습니다. 따라서 각 장면은 가장 일반적인 3D 환경 표현과 마찬가지로 단일 좌표계로 한정 됩니다. SceneObjects는 각 위치를 해당 좌표계 내의 위치와 방향으로 제공 합니다. 응용 프로그램이 단일 원본에서 제공 하는 것의 제한을 스트레치 하는 장면을 처리 하는 경우 SpatialAnchors에 SceneObjects을 고정 하거나 여러 개의 장면을 생성 하 고 함께 병합할 수 있습니다. 하지만 간단 하 게 하기 위해에 의해 정의 된 하나의 NodeId로 지역화 된 자체 원본에 watertight 장면이 있다고 가정 합니다.
+장면 이해는 변환을 처리할 때 일반적인 3D 장면 표현과 맞추는 시도를 만들었습니다. 따라서 각 장면은 가장 일반적인 3D 환경 표현과 마찬가지로 단일 좌표계로 한정 됩니다. SceneObjects는 각 좌표계에 상대적인 위치를 제공 합니다. 응용 프로그램이 단일 원본에서 제공 하는 것의 제한을 스트레치 하는 장면을 처리 하는 경우 SpatialAnchors에 SceneObjects을 고정 하거나 여러 개의 장면을 생성 하 고 함께 병합할 수 있습니다. 하지만 간단 하 게 하기 위해에 의해 정의 된 하나의 NodeId로 지역화 된 자체 원본에 watertight 장면이 있다고 가정 합니다.
 
-예를 들어 다음 Unity 코드는 Windows 인식 및 Unity Api를 사용 하 여 좌표계를 함께 맞추는 방법을 보여 줍니다. Unity의 세계 원본에 해당 하는 SpatialCoordinateSystem를 가져오는 방법에 [대 한](https://docs.microsoft.com//windows/mixed-reality/unity-xrdevice-advanced) 자세한 내용과 및 간에 변환 하는 확장 메서드에 대 한 자세한 내용은 [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) 및 [SpatialGraphInteropPreview](https://docs.microsoft.com//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) 를 참조 하세요. `.ToUnity()` `System.Numerics.Matrix4x4` `UnityEngine.Matrix4x4`
+예를 들어 다음 Unity 코드는 Windows 인식 및 Unity Api를 사용 하 여 좌표계를 함께 맞추는 방법을 보여 줍니다. Unity의 세계 원본에 해당 하는 SpatialCoordinateSystem를 가져오는 방법에 대 한 자세한 내용은 [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) 및 [SpatialGraphInteropPreview](https://docs.microsoft.com//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) 에서 Windows 인식 api 및 [혼합 현실 네이티브 개체](https://docs.microsoft.com//windows/mixed-reality/unity-xrdevice-advanced) 에 대 한 자세한 내용을 참조 하세요.
 
 ```cs
-public class SceneRootComponent : MonoBehavior
+private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)
 {
-    public SpatialCoordinateSystem worldOrigin;
-    public Scene scene;
-    SpatialCoordinateSystem sceneOrigin;
-    
-    void Start()
-    {
-        // Initialize a SpatialCoordinateSystem for the scene's node in the system's Spatial Graph.
-        scene.origin = SpatialGraphInteropPreview.CreateCoordinateSystemForNode(scene.OriginSpatialGraphNodeId);
-    }
-    
-    void Update()
-    {
-        // Try to get the current transform of the scene's spatial graph node.
-        // This may not be available, e.g. when tracking has been lost.
-        var sceneToWorld = sceneOrigin.TryGetTransformTo(worldOrigin);
-        if (sceneToWorld.HasValue)
-        {
-            // Convert the transform to Unity numerics and update the game object.
-            var sceneToWorldUnity = sceneToWorld.Value.ToUnity();
-            this.gameObject.transform.SetPositionAndRotation(sceneToWorldUnity.GetColumn(3), sceneToWorldUnity.rotation);
-        }
-    }
+
+      System.Numerics.Matrix4x4? sceneToUnityTransform = System.Numerics.Matrix4x4.Identity;
+
+      Windows.Perception.Spatial.SpatialCoordinateSystem sceneCoordinateSystem = Microsoft.Windows.Perception.Spatial.Preview.SpatialGraphInteropPreview.CreateCoordinateSystemForNode(scene.OriginSpatialGraphNodeId);
+      HolograhicFrameData holoFrameData =  Marshal.PtrToStructure<HolograhicFrameData>(UnityEngine.XR.XRDevice.GetNativePtr());
+      Windows.Perception.Spatial.SpatialCoordinateSystem unityCoordinateSystem = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(holoFrameData.ISpatialCoordinateSystemPtr);
+
+      sceneToUnityTransform = sceneCoordinateSystem.TryGetTransformTo(unityCoordinateSystem);
+
+      if(sceneToUnityTransform != null)
+      {
+          sceneToUnityTransform = ConvertRightHandedMatrix4x4ToLeftHanded(sceneToUnityTransform.Value);
+      }
+      else
+      {
+          return null;
+      }
+
+    return sceneToUnityTransform;
 }
 ```
 
-각에는 `SceneObject` `Position` 포함 된 `Orientation` 의 출처를 기준으로 해당 콘텐츠를 배치 하는 데 사용할 수 있는 및 속성이 있습니다 `Scene` . 예를 들어 다음 예제에서는 게임이 장면 루트의 자식인 것으로 가정 하 고 지정 된에 맞게 로컬 위치와 회전을 할당 합니다 `SceneObject` .
+각 `SceneObject` 에는 해당 개체에 적용 되는 변환이 있습니다. Unity에서 다음과 같이 올바른 전달 좌표로 변환 하 고 로컬 변환을 할당 합니다.
 
 ```cs
-void SetLocalTransformFromSceneObject(GameObject gameObject, SceneObject sceneObject)
+private System.Numerics.Matrix4x4 ConvertRightHandedMatrix4x4ToLeftHanded(System.Numerics.Matrix4x4 matrix)
 {
-    gameObject.transform.localPosition = sceneObject.Position.ToUnity();
-    gameObject.transform.localRotation = sceneObject.Orientation.ToUnity());
+    matrix.M13 = -matrix.M13;
+    matrix.M23 = -matrix.M23;
+    matrix.M43 = -matrix.M43;
+
+    matrix.M31 = -matrix.M31;
+    matrix.M32 = -matrix.M32;
+    matrix.M34 = -matrix.M34;
+
+    return matrix;
 }
+
+ private void SetUnityTransformFromMatrix4x4(Transform targetTransform, System.Numerics.Matrix4x4 matrix, bool updateLocalTransformOnly = false)
+ {
+    if(targetTransform == null)
+    {
+        return;
+    }
+
+    Vector3 unityTranslation;
+    Quaternion unityQuat;
+    Vector3 unityScale;
+
+    System.Numerics.Vector3 vector3;
+    System.Numerics.Quaternion quaternion;
+    System.Numerics.Vector3 scale;
+
+    System.Numerics.Matrix4x4.Decompose(matrix, out scale, out quaternion, out vector3);
+
+    unityTranslation = new Vector3(vector3.X, vector3.Y, vector3.Z);
+    unityQuat        = new Quaternion(quaternion.X, quaternion.Y, quaternion.Z, quaternion.W);
+    unityScale       = new Vector3(scale.X, scale.Y, scale.Z);
+
+    if(updateLocalTransformOnly)
+    {
+        targetTransform.localPosition = unityTranslation;
+        targetTransform.localRotation = unityQuat;
+    }
+    else
+    {
+        targetTransform.SetPositionAndRotation(unityTranslation, unityQuat);
+    }
+}
+
+// Assume we have an SU object called suObject and a unity equivalent unityObject
+
+System.Numerics.Matrix4x4 converted4x4LocationMatrix = ConvertRightHandedMatrix4x4ToLeftHanded(suObject.GetLocationAsMatrix());
+SetUnityTransformFromMatrix4x4(unityObject.transform, converted4x4LocationMatrix, true);
+        
 ```
 
 ### <a name="quad"></a>Led
 
 Quads는 2D 배치 시나리오를 용이 하 게 하기 위해 설계 되었으며 2D canvas UX 요소에 대 한 확장으로 간주 되어야 합니다. Quads는 SceneObjects의 구성 요소이 고 3D로 렌더링 될 수 있지만 쿼드 Api 자체는 Quads이 2D 구조인 것으로 가정 합니다. 익스텐트, 모양, 배치를 위한 Api 제공 등의 정보를 제공 합니다.
 
-Quads는 사각형 범위를 갖지만 임의의 모양의 2D 표면을 나타냅니다. 3D 환경 quads와 상호 작용 하는 이러한 2D 표면에서 배치를 사용 하도록 설정 하려면 이러한 상호 작용을 가능 하 게 하는 유틸리티를 제공 합니다. 현재 장면 이해는 **Findcentermostplacement** 및 **GetOcclusionMask** 의 두 가지 함수를 제공 합니다. FindCentermostPlacement는 개체를 배치할 수 있는 쿼드에서 위치를 찾고, 제공 하는 경계 상자가 기본 화면에 상주할 수 있도록 하는 개체에 가장 적합 한 위치를 찾으려고 시도 하는 높은 수준의 API입니다.
+Quads는 사각형 범위를 갖지만 임의의 모양의 2D 표면을 나타냅니다. 3D 환경 quads와 상호 작용 하는 이러한 2D 표면에서 배치를 사용 하도록 설정 하려면 이러한 상호 작용을 가능 하 게 하는 유틸리티를 제공 합니다. 현재 장면 이해에서는 _ *Findcentermostplacement** 및 **GetSurfaceMask** 와 같은 두 가지 함수를 제공 합니다. FindCentermostPlacement는 개체를 배치할 수 있는 쿼드에서 위치를 찾고, 제공 하는 경계 상자가 기본 화면에 상주할 수 있도록 하는 개체에 가장 적합 한 위치를 찾으려고 시도 하는 높은 수준의 API입니다.
 
 > [!NOTE]
 > 출력의 좌표는 다른 windows Rect 형식에 있는 것 처럼 (x = 0, y = 0) 왼쪽 위 모퉁이가 있는 "쿼드 공간"의 쿼드에 상대적입니다. 사용자 고유의 개체의 원본으로 작업할 때는이를 고려해 야 합니다. 
@@ -372,7 +414,11 @@ mesh.GetVertexPositions(positions);
 
 인덱스/꼭 짓 점 버퍼는 인덱스/꼭 짓 점 수를 >해야 합니다. 그렇지 않으면 효율적인 메모리 다시 사용을 허용 하는 크기를 임의로 지정할 수 있습니다.
 
-## <a name="developing-with-scene-understandings"></a>장면 사항을 이해를 사용 하 여 개발
+### <a name="collidermesh"></a>ColliderMesh
+
+장면 개체는 메시 및 ColliderMeshes 속성을 통해 메시 및 collider 메시 데이터에 대 한 액세스를 제공 합니다. 이러한 메시는 항상 일치 합니다. 즉, 메시 속성의 i'th 인덱스는 ColliderMeshes 속성의 i'th 인덱스와 동일한 geometryh를 나타냅니다. 런타임/개체가 collider 메시를 지 원하는 경우 가장 낮은 polygon, 최고 주문 근사값을 guarateed 응용 프로그램에서 colliders를 사용 하는 모든 위치에서 ColliderMeshes를 사용 하는 genrally 좋은 방법입니다. 시스템에서 colliders을 지원 하지 않는 경우 ColliderMeshes에 반환 된 메시 개체는 메시에 서 메모리 제약 조건을 줄이는 것과 동일한 개체가 됩니다.
+
+## <a name="developing-with-scene-understanding"></a>장면 이해로 개발
 
 이 시점에서 런타임 및 SDK의 핵심 구성 요소를 이해 해야 합니다. 강력 하 고 복잡 한 점은 액세스 패턴, 3D 프레임 워크와의 상호 작용, 공간 계획, 방 분석, 탐색, 물리 등과 같은 고급 작업을 수행 하기 위해 이러한 Api 위에 작성할 수 있는 도구입니다. 시나리오를 표현할 수 있도록 적절 한 방향으로 안내 하는 샘플에서이를 캡처해야 합니다. 주소를 지정 하지 않는 샘플/시나리오가 있는 경우 microsoft에서 알려 주시기 바랍니다. 필요한 내용을 문서화/프로토타입으로 시도 합니다.
 
