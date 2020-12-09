@@ -3,15 +3,15 @@ title: Unity 입력 포팅 가이드
 description: Unity에서 Windows Mixed Reality의 입력을 처리 하는 방법에 대해 알아봅니다.
 author: thetuvix
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 12/9/2020
 ms.topic: article
 keywords: 입력, unity, 포팅
-ms.openlocfilehash: 4ad4b66b8238b3d00142fd14161113c6b912641c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 053918ec62f83c74655b0d4bb09a2b45b62bfc53
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683288"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925876"
 ---
 # <a name="input-porting-guide-for-unity"></a>Unity 입력 포팅 가이드
 
@@ -36,19 +36,19 @@ Windows Mixed Reality는 다양 한 폼 팩터에서 동작 컨트롤러를 지�
 이러한 컨트롤러를 더 잘 나타내기 위해 각 상호 작용 소스에 대해 조사할 수 있는 두 가지 종류의 포즈가 있습니다.
 
 * HoloLens에서 감지 된 손바닥의 위치 또는 이동 컨트롤러를 보유 하는 야자수의 위치를 나타내는 **그립 포즈** 입니다.
-    * 모던 헤드셋에서는이 포즈를 사용 하 여 사용자 **의 손을** 나 **사용자의 손으로 보유 한 개체** (예: 소드 또는 포)를 렌더링 하는 데 가장 적합 합니다.
-    * **그립 위치** : 컨트롤러를 자연스럽 게 유지 하는 경우 왼쪽 또는 오른쪽으로 조정 하 여 그립 내 위치를 가운데에 맞춥니다.
-    * **그립 방향 오른쪽 축** : 손 모양 5 손가락 포즈를 형성 하는 손을 완전히 열 때 palm (왼쪽 야자나무에서 오른쪽으로 뒤로)의 광선을 만듭니다.
+    * 모던 헤드셋에서는이 포즈를 사용 하 여 사용자 **의 손을** 나 **사용자의 손으로 보유 한 개체**(예: 소드 또는 포)를 렌더링 하는 데 가장 적합 합니다.
+    * **그립 위치**: 컨트롤러를 자연스럽 게 유지 하는 경우 왼쪽 또는 오른쪽으로 조정 하 여 그립 내 위치를 가운데에 맞춥니다.
+    * **그립 방향 오른쪽 축**: 손 모양 5 손가락 포즈를 형성 하는 손을 완전히 열 때 palm (왼쪽 야자나무에서 오른쪽으로 뒤로)의 광선을 만듭니다.
     * **그립 방향 전방 축: 핸들** 을 부분적으로 (컨트롤러를 보유 하는 것 처럼) 닫는 경우 비 엄지 손가락으로 형성 된 튜브를 통해 "전달" 하는 광선이 표시 됩니다.
-    * **그립 방향 up 축** : 오른쪽 및 전방 정의에 의해 암시 된 위쪽 축입니다.
-    * Unity의 교차 공급 업체 입력 API (XR)를 통해 그립 포즈에 액세스할 수 있습니다 **[. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation** ) 또는 Windows 특정 API ( **sourcestate/Rotation** , 그립 포즈 요청)를 통해
+    * **그립 방향 up 축**: 오른쪽 및 전방 정의에 의해 암시 된 위쪽 축입니다.
+    * Unity의 교차 공급 업체 입력 API (XR)를 통해 그립 포즈에 액세스할 수 있습니다 **[. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation**) 또는 Windows 특정 API (**sourcestate/Rotation**, 그립 포즈 요청)를 통해
 * 앞에 있는 컨트롤러의 팁을 나타내는 **포인터가 포즈** 입니다.
     * 이 포즈는 컨트롤러 모델 자체를 렌더링할 때 **UI를 가리킬** 때 raycast에 가장 잘 사용 됩니다.
-    * 현재 포인터 포즈는 Windows 관련 API ( **Sourcestate/Rotation** , 포인터 포즈 요청)를 통해서만 사용할 수 있습니다.
+    * 현재 포인터 포즈는 Windows 관련 API (**Sourcestate/Rotation**, 포인터 포즈 요청)를 통해서만 사용할 수 있습니다.
 
 이러한 포즈 좌표는 모두 Unity 세계 좌표로 표현 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [동작 컨트롤러](). /.. /design/motion-controllers.md)
 * [Unity의 제스처 및 모션 컨트롤러](../unity/gestures-and-motion-controllers-in-unity.md)
 * [UnityEngine. XR](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)

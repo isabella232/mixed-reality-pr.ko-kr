@@ -3,15 +3,15 @@ title: Unreal의 WinRT
 description: Unreal 엔진용 공간 오디오 플러그 인에 대한 개요입니다.
 author: hferrone
 ms.author: jacksonf
-ms.date: 07/08/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 스트리밍, 원격 기능, 혼합 현실, 개발, 시작, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, holograms, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, WinRT, DLL
-ms.openlocfilehash: f9001f3a9e36eb5d8553545f38cf10411bafd64b
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: f86939ee53b51fad1e31d18f810d92c3d20611f8
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609412"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926068"
 ---
 # <a name="winrt-in-unreal"></a>Unreal의 WinRT
 

@@ -3,15 +3,15 @@ title: 포팅 개요
 description: 기존 응용 프로그램을 혼합 현실으로 가져오기 위한 다양 한 이식 옵션에 대 한 개요입니다.
 author: hferrone
 ms.author: v-hferrone
-ms.date: 10/02/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: 포팅, unity, 미들웨어, 엔진, UWP, Win32
-ms.openlocfilehash: 074e0792a5ed43bb56b8f337613234efbd166eb7
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 1ec03610dd26e9f75162795cbdded77a8e0189ce
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443539"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925826"
 ---
 # <a name="porting-overview"></a>포팅 개요
 

@@ -3,15 +3,15 @@ title: 앱 배포
 description: 지원 되는 다양 한 플랫폼 및 게시 저장소에 대 한 다양 한 배포 옵션의 개요입니다.
 author: hferrone
 ms.author: v-hferrone
-ms.date: 10/02/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens, 혼합 현실, 모던 헤드셋, 앱, uwp, 제출, 제출, 필터, 메타 데이터, 시스템 요구 사항, 키워드, wack, 인증, 패키지, appx, 머천다이징
-ms.openlocfilehash: 4ea60d2111f99924eaa417d4ff6fa8830934588c
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 5c7a1d6e00610a4046bd71b07ca5184399c9e335
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96578882"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925774"
 ---
 # <a name="distributing-your-apps"></a>앱 배포
 
