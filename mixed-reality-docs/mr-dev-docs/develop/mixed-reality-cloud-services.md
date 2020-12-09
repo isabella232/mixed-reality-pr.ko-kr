@@ -1,6 +1,6 @@
 ---
 layout: LandingPage
-title: Azure Cloud Services
+title: Azure 혼합 현실 클라우드 서비스 개요
 description: 혼합 현실 클라우드 서비스 리소스
 author: hferrone
 ms.author: v-haferr
@@ -8,14 +8,14 @@ ms.date: 06/5/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 개발, 개발, HoloLens, 클라우드 서비스, Azure, remote rendering, spatial anchors, cognitive services, 인식, unity, 기계 학습, 음성 번역, 컴퓨터 비전, Microsoft Graph
-ms.openlocfilehash: 640e99637f9cfa1786e1e78ed5cec396748b2f47
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 338574ac5a06841a6a2a9920fc0dfbdfdbfd0bbf
+ms.sourcegitcommit: eba192e1cfaef35bc55161d4e9a0adea36ff1a18
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679692"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96526060"
 ---
-# <a name="azure-cloud-services"></a>Azure Cloud Services
+# <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 혼합 현실 클라우드 서비스 개요
 
 ![ Azure Spatial Anchors 이미지](../design/images/AzureSpatialAnchors.jpg)
 
