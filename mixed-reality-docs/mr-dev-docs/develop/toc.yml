@@ -6,8 +6,6 @@
   items:
     - name: Azure 혼합 현실 클라우드 서비스 개요
       href: mixed-reality-cloud-services.md
-    - name: Mixed Reality Learning 개요
-      href: mr-learning-overview.md
     - name: 샘플 및 기능 앱
       href: features-and-samples.md
 - name: 앱 포팅
@@ -254,6 +252,8 @@
   items:
     - name: Unreal 개발 개요
       href: unreal/unreal-development-overview.md
+    - name: Unreal에서 프로젝트 업그레이드
+      href: unreal/unreal-porting.md
     - name: 자습서
       items:
         - name: MRTK UX 도구를 사용하여 체스 앱 빌드
@@ -310,8 +310,6 @@
           href: unreal/unreal-deploying.md
         - name: Microsoft Store에 게시
           href: unreal/unreal-publishing-to-store.md
-        - name: Unreal에서 프로젝트 업그레이드
-          href: unreal/unreal-porting.md
         - name: Unreal을 사용하기 위한 권장 성능
           href: unreal/performance-recommendations-for-unreal.md
         - name: Unreal의 재질 권장 사항
