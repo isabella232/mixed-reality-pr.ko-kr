@@ -2,16 +2,16 @@
 title: 공간 오디오 자습서-5. 반향 효과를 이용해 공간 오디오에 거리감 부여
 description: 반향 효과를 추가 하 여 공간 오디오에 대 한 거리 변동의 의미를 향상 시킵니다.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head 관련 전송 함수, 반향, Microsoft Spatializer, 오디오 믹서, SFX 반향
-ms.openlocfilehash: d688955910d667edbdb79e63dab16587e66064a4
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: c63e5a239806c133e814eee8b44cbfb30f55aa5d
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679702"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002618"
 ---
 # <a name="using-reverb-to-add-distance-to-spatial-audio"></a>반향 효과를 이용해 공간 오디오에 거리감 부여
 

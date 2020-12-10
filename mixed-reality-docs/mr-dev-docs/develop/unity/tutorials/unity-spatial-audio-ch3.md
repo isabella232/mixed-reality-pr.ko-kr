@@ -2,16 +2,16 @@
 title: 공간 오디오 자습서-3. 비디오에서 공간화 오디오
 description: 비디오 자산을 Unity 프로젝트로 가져오고 비디오에서 오디오를 spatialize.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head 관련 전송 함수, 반향, Microsoft Spatializer, 비디오 가져오기, 비디오 플레이어
-ms.openlocfilehash: 43297fc4148600cc820111e6c206313560224ac9
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 46f2f88be6613096a835f04e826b776c32c1b8c2
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679722"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002628"
 ---
 # <a name="spatializing-audio-from-a-video"></a>비디오에서 공간화 오디오
 HoloLens 2 Unity 자습서의 공간 오디오 모듈의이 세 번째 챕터에서는 다음을 수행 합니다.

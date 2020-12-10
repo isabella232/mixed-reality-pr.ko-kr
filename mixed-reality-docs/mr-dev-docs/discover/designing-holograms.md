@@ -1,17 +1,17 @@
 ---
-title: Holograms 디자인
+title: 홀로그램 디자인
 description: Microsoft의 새로운 디자인 Holograms 응용 프로그램을 통해 혼합 현실에 대해 알아보세요.
 author: hferrone
 ms.author: daescu
 ms.date: 11/24/2020
 ms.topic: article
 keywords: MRTK, Mixed Reality Toolkit, holograms, 디자인 Holograms, 학습, 샘플 앱, 혼합 현실 헤드셋, 가상 현실 헤드셋, 가상 현실 이란?
-ms.openlocfilehash: 243b6f28da7b074b3ff6d48794d525ac08281fa7
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: bf904b319ed5b452f254b659315d9b531832a4d5
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96355434"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002588"
 ---
 # <a name="the-making-of-designing-holograms"></a>Holograms 디자인
 
@@ -122,6 +122,32 @@ Microsoft에는 샌프란시스코의 혼합 현실 캡처 스튜디오가 있�
 분명히 아이콘은 간단한 텍스트 보다 훨씬 더 잘 작동 하므로 훨씬 더 강력한 지침을 제공 하기 위해 각각의 시나리오에서 수행 되는 작업 및 사용 방법에 대 한 간단한 스토리를 알려 주는 개체 및 아바타의 집합을 만듭니다.
 
 ![대화형 holographic 메뉴 시스템의 애니메이션 GIF](images/designing-holograms/creative-process.gif)
+
+## <a name="core-concepts"></a>핵심 개념
+
+**홀로그램 프레임**
+
+![Holographic 프레임이 강조 표시 된 상태에서 dollhouse를 찾는 사용자의 애니메이션 GIF](images/designing-holograms/FOVandFOI.gif)
+
+**좌표계**
+
+![좌표계가 강조 표시 된 상태로 dollhouse를 찾는 사용자의 애니메이션 GIF](images/designing-holograms/CoordinateSystems.gif)
+
+**시선 추적**
+
+![눈에 보이는 응시 빛이 강조 표시 된 고정 된 holograms를 확인 하는 사용자의 애니메이션 GIF](images/designing-holograms/EyeTracking.gif)
+
+**대화방 스캔 시각화 및 공간 매핑**
+
+![매핑되는 dollhouse 내 모든 표면의 애니메이션 GIF](images/designing-holograms/SpatialMapping.gif)
+
+**장면 이해**
+
+![인식 되는 dollhouse의 개체에 대 한 애니메이션 GIF](images/designing-holograms/SceneUnderstanding.gif)
+
+**직접 광선을 사용 하 여 점 및 커밋**
+
+![손으로 강조 표시 된 손으로 그린 사용자의 애니메이션 GIF](images/designing-holograms/HandRays.gif)
 
 ## <a name="try-it-out-moments"></a>"시험 사용해 보기" 분
 

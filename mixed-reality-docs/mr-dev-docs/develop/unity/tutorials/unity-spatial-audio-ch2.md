@@ -2,16 +2,16 @@
 title: 공간 오디오 자습서-2. 공간화 단추 상호 작용 소리
 description: 프로젝트에 단추를 추가 하 고 단추 상호 작용 소리를 spatialize.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head 관련 전송 함수, 반향, Microsoft Spatializer, prefabs, volume curve
-ms.openlocfilehash: eb550c3127e13926d73428b337abfd7cf9872eb7
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 62825ed8922cd904212160748018446cbc76b839
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678192"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002598"
 ---
 # <a name="spatializing-button-interaction-sounds"></a>공간화 단추 상호 작용 소리
 
