@@ -1,24 +1,24 @@
 ---
 title: Unity의 지속성
-description: 지 속성을 사용 하면 사용자가 원하는 위치에 개별 holograms 또는 작업 영역을 고정 한 다음, 앱의 많은 사용을 원하는 경우 나중에 찾을 수 있습니다.
+description: 지 속성을 사용 하면 사용자의 pin을 원하는 위치에 holograms 나중에 앱의 여러 사용에서 찾을 수 있습니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, 지 속성, Unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: cff7f05a5a5695ae8e379ed681c3b7320622968c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: d74f9c0a118c1886037c564073742ebedc7d0146
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678532"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010444"
 ---
 # <a name="persistence-in-unity"></a>Unity의 지속성
 
 **네임 스페이스:** *UNITYENGINE. XR*<br>
 **클래스:** *WorldAnchorStore*
 
-WorldAnchorStore는 응용 프로그램의 여러 인스턴스에서 holograms 특정 실제 위치에 유지 되는 holographic 환경을 만드는 핵심입니다. 이렇게 하면 사용자가 원하는 위치에 개별 holograms 또는 작업 영역을 고정 한 다음, 앱의 여러 사용을 원하는 위치에서 나중에 찾을 수 있습니다.
+WorldAnchorStore는 응용 프로그램의 여러 인스턴스에서 holograms 특정 실제 위치에 유지 되는 holographic 환경을 만드는 핵심입니다. 사용자는 언제 든 지 개별 holograms을 고정 하 고, 나중에 앱의 여러 사용에 대 한 동일한 지점에서 찾을 수 있습니다.
 
 ## <a name="how-to-persist-holograms-across-sessions"></a>세션 간에 holograms를 유지 하는 방법
 
@@ -26,17 +26,17 @@ WorldAnchorStore를 사용 하면 세션 간에 WorldAnchor의 위치를 유지�
 
 이전 세션에서 holograms를 로드 하려면 다음을 수행 합니다.
 1. WorldAnchorStore 가져오기
-2. 세계 앵커와 관련 된 앱 데이터를 로드 하 여 세계 앵커의 id를 제공 합니다.
-3. 해당 id에서 전 세계 앵커 로드
+2. 세계 앵커와 관련 된 앱 데이터를 로드 하 여 세계 앵커의 ID를 제공 합니다.
+3. 해당 ID에서 전 세계 앵커 로드
 
 이후 세션에 대해 holograms를 저장 하려면:
 1. WorldAnchorStore 가져오기
-2. Id를 지정 하 여 전 세계 앵커 저장
-3. Id와 함께 세계 앵커와 관련 된 앱 데이터 저장
+2. ID를 지정 하 여 전 세계 앵커 저장
+3. ID와 함께 세계 앵커와 관련 된 앱 데이터 저장
 
 ### <a name="getting-the-worldanchorstore"></a>WorldAnchorStore 가져오기
 
-WorldAnchorStore에 대 한 참조를 유지 하 여 작업을 수행 하려는 경우 준비가 되었다는 것을 알 수 있습니다. 비동기 호출 이므로 시작 하는 즉시,를 호출 하려고 합니다.
+작업을 수행할 준비가 된 시기를 알 수 있도록 WorldAnchorStore에 대 한 참조를 유지 하려고 합니다. 비동기 호출 이므로 시작 하는 즉시 다음을 호출 합니다.
 
 ```
 WorldAnchorStore.GetAsync(StoreLoaded);
@@ -55,7 +55,7 @@ private void StoreLoaded(WorldAnchorStore store)
 
 ### <a name="saving-a-worldanchor"></a>WorldAnchor 저장
 
-저장 하기 위해 저장 하는 항목의 이름을로 하 고 저장 하려는 경우 앞에서 받은 WorldAnchor에 전달 하기만 하면 됩니다. 참고: 두 앵커를 같은 문자열에 저장 하려고 하면 실패 합니다 (store. Save는 false를 반환 합니다. 이전 저장을 삭제 한 후 새 저장을 저장 해야 합니다.
+저장 하기 위해 저장 하는 항목의 이름을로 하 고 저장 하려는 경우 앞에서 받은 WorldAnchor에 전달 하기만 하면 됩니다. 참고: 두 앵커를 같은 문자열에 저장 하려고 하면 실패 합니다 (store. Save는 false를 반환 합니다. 이전 저장을 삭제 한 후 새 저장을 저장 합니다.
 
 ```
 private void SaveGame()
@@ -101,7 +101,7 @@ for (int index = 0; index < ids.Length; index++)
 
 ## <a name="persisting-holograms-for-multiple-devices"></a>여러 장치에 대 한 holograms 유지
 
-<a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a> 를 사용 하 여 로컬 WorldAnchor에서 영 속 클라우드 앵커를 만들 수 있습니다. 그러면 앱이 여러 HoloLens, IOS 및 Android 장치에서 해당 장치를 동시에 함께 제공 하지 않는 경우에도 해당 장치를 찾을 수 있습니다.  클라우드 앵커는 지속 되기 때문에 시간에 따른 여러 장치는 동일한 물리적 위치에서 해당 앵커에 대해 렌더링 된 콘텐츠를 볼 수 있습니다.
+<a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a> 를 사용 하 여 로컬 WorldAnchor에서 영 속 클라우드 앵커를 만들 수 있습니다. 그러면 해당 장치가 동시에 함께 제공 되지 않는 경우에도 앱이 여러 HoloLens, IOS 및 Android 장치에서 찾을 수 있습니다.  클라우드 앵커는 지속 되기 때문에 시간에 따른 여러 장치는 동일한 물리적 위치에서 해당 앵커에 대해 렌더링 된 콘텐츠를 볼 수 있습니다.
 
 Unity에서 공유 환경 빌드를 시작 하려면 5 분 <a href="https://docs.microsoft.com/azure/spatial-anchors/unity-overview" target="_blank">Azure 공간 앵커 Unity 퀵 스타트</a>를 사용해 보세요.
 
@@ -109,7 +109,7 @@ Azure 공간 앵커를 사용 하 여 실행 하면 <a href="https://docs.micros
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 설명한 Unity 개발 검사점 경험을 팔로 사용할 경우 혼합 현실 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
+앞서 설명한 Unity 개발 검사점 경험을 팔로 사용할 경우 혼합 현실 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 계속 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [공간 매핑](spatial-mapping-in-unity.md)

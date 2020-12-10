@@ -6,18 +6,22 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit, holographic 렌더링, holographic, 몰입 형, 포커스 지점, 깊이 버퍼, 방향 전용, 위치, 불투명, 투명, 클립, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: c3c470634e2c5c9445ae8c0a29621971de22a92b
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 26eb8966004c958c6063d09de891ef835d973a82
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677622"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010434"
 ---
 # <a name="camera-in-unity"></a>Unity의 카메라
 
-혼합 현실 헤드셋을 착용 하면 holographic 세계의 중심이 됩니다. Unity [카메라](https://docs.unity3d.com/Manual/class-Camera.html) 구성 요소는 stereoscopic 렌더링을 자동으로 처리 하 고, 프로젝트에 "Windows Mixed reality"가 "Windows Mixed reality"로 선택 된 "가상 현실을 지원 됩니다. 이전 버전의 Unity에서 "Windows Holographic"로 표시 될 수 있습니다.
+혼합 현실 헤드셋을 착용 하면 holographic 세계의 중심이 됩니다. Unity [카메라](https://docs.unity3d.com/Manual/class-Camera.html) 구성 요소는 stereoscopic 렌더링을 자동으로 처리 하 고 헤드 이동 및 회전을 따릅니다. 그러나 시각적 품질 및 [홀로그램 안정성](../platform-capabilities-and-apis/hologram-stability.md)을 완벽 하 게 최적화 하려면 아래에서 설명 하는 카메라 설정을 설정 해야 합니다.
 
-그러나 시각적 품질 및 [홀로그램 안정성](../platform-capabilities-and-apis/hologram-stability.md)을 완벽 하 게 최적화 하려면 아래에서 설명 하는 카메라 설정을 설정 해야 합니다.
+## <a name="setup"></a>설치 프로그램
+
+1. **Windows 스토어 플레이어 설정** 의 **기타 설정** 섹션으로 이동 합니다.
+2. **Windows Mixed Reality** 를 장치로 선택 합니다 .이는 이전 버전의 Unity에서 **windows Holographic** 으로 나열 될 수 있습니다.
+3. **지원 되는 가상 현실** 선택
 
 >[!NOTE]
 >이러한 설정은 앱의 각 장면에서 카메라에 적용 해야 합니다.
@@ -26,10 +30,10 @@ ms.locfileid: "94677622"
 
 ## <a name="holographic-vs-immersive-headsets"></a>Holographic 및 몰입 형 헤드셋
 
-Unity 카메라 구성 요소의 기본 설정은 실제 세계에 있지 않기 때문에 skybox 같은 배경을 필요로 하는 기존의 3D 응용 프로그램을 위한 것입니다.
+Unity 카메라 구성 요소의 기본 설정은 일반적인 3D 응용 프로그램을 위한 것 이며 실제 세계에 있지 않기 때문에 skybox 같은 배경을 필요로 합니다.
 
-* **[몰입 형 헤드셋](../../discover/immersive-headset-hardware-details.md)** 에서 실행 하는 경우 사용자에 게 표시 되는 모든 항목을 렌더링 하므로 skybox을 유지할 수 있습니다.
-* 그러나 [HoloLens](../../hololens-hardware-details.md)와 같은 **holographic 헤드셋** 에서 실행 하는 경우 실제 세계는 카메라에서 렌더링 하는 모든 항목 뒤에 표시 되어야 합니다. 이렇게 하려면 카메라 배경을 투명 하 게 설정 합니다 (HoloLens에서 black 렌더링은 Skybox 질감이 아닌 투명 하 게 렌더링 됨).
+* **[몰입 형 헤드셋](../../discover/immersive-headset-hardware-details.md)** 에서 실행 하는 경우 사용자에 게 표시 되는 모든 항목을 렌더링 하 게 되므로 skybox를 유지할 수 있습니다.
+* 그러나 [HoloLens](../../hololens-hardware-details.md)와 같은 **holographic 헤드셋** 에서 실행 하는 경우 실제 세계는 카메라에서 렌더링 하는 모든 항목 뒤에 표시 되어야 합니다. Skybox 질감이 아닌 카메라 배경을 투명 하 게 설정 합니다 (HoloLens에서 검정색 렌더링 투명).
     1. 계층 패널에서 주 카메라를 선택 합니다.
     2. 검사기 패널에서 카메라 구성 요소를 찾아 Clear Flags dropdown을 Skybox에서 Solid Color로 변경 합니다.
     3. 배경색 선택을 선택 하 고 RGBA 값을 (0, 0, 0, 0)으로 변경 합니다.
@@ -51,11 +55,11 @@ Unity 카메라 구성 요소의 기본 설정은 실제 세계에 있지 않기
 사용자에 게 너무 가까운 렌더링 콘텐츠는 혼합 현실에서 불편을 수 있습니다. 카메라 구성 요소에서 [근거리 및 원거리 클립 평면](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances) 을 조정할 수 있습니다.
 
 1. 계층 패널에서 주 카메라를 선택 합니다.
-2. 검사기 패널에서 평면 클리핑 카메라 구성 요소를 찾아 가까운 텍스트 상자를 0.3에서 85로 변경 합니다. 더 가까이 렌더링 된 콘텐츠는 사용자 discomfort 발생할 수 있으므로 [렌더링 거리 지침](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances)에 따라 피해 야 합니다.
+2. 검사기 패널에서 평면 클리핑 카메라 구성 요소를 찾아 가까운 텍스트 상자를 0.3에서 0.85으로 변경 합니다. 더 가까이 렌더링 된 콘텐츠는 사용자 discomfort 발생할 수 있으므로 [렌더링 거리 지침](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances)에 따라 피해 야 합니다.
 
 ## <a name="multiple-cameras"></a>여러 카메라
 
-장면에 여러 카메라 구성 요소가 있는 경우 Unity는 MainCamera 태그가 있는 GameObject를 확인 하 여 stereoscopic 렌더링 및 헤드 추적에 사용할 카메라를 알고 있습니다.
+장면에 여러 카메라 구성 요소가 있는 경우 Unity는 MainCamera 태그가 있는 GameObject을 기준으로 stereoscopic 렌더링 및 헤드 추적에 사용할 카메라를 알고 있습니다.
 
 ## <a name="recentering-a-seated-experience"></a>장착 된 환경 입력
 
@@ -67,10 +71,10 @@ HoloLens 및 몰입 형 헤드셋은 모두 앱이 렌더링 하는 각 프레�
 
 기본적으로 다음과 같습니다.
 
-* **모던 헤드셋** 은 위치를 다시 프로젝션 하 고, 앱에서 지정 된 프레임에 대 한 깊이 버퍼를 제공 하는 경우 위치 및 방향 모두에서 misprediction에 대 한 holograms을 조정 합니다.  깊이 버퍼를 제공 하지 않으면 시스템은 방향 으로만 mispredictions을 수정 합니다.
+* 앱이 지정 된 프레임에 대 한 깊이 버퍼를 제공 하는 경우 **몰입 형 헤드셋** 은 위치 다시 프로젝션을 처리 합니다. 또한 몰입 형 헤드셋은 위치와 방향 모두에서 misprediction에 대 한 holograms을 조정 합니다. 깊이 버퍼가 제공 되지 않은 경우 시스템은 방향 으로만 mispredictions을 수정 합니다.
 * **Holographic 헤드셋** 과 같은 헤드셋은 앱이 깊이 버퍼를 제공 하는지 여부에 관계 없이 위치를 다시 프로젝션 합니다.  렌더링은 실제 세계에서 제공 하는 안정적인 배경을 사용 하는 스파스 인 경우가 많기 때문에 HoloLens의 깊이 버퍼 없이 위치 다시 프로젝션이 가능 합니다.
 
-엄격 본문에서 잠긴 콘텐츠 (예: 360도 비디오 콘텐츠)를 사용 하 여 [방향 전용 환경을](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience) 빌드하는 경우 [ReprojectionMode](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html) 를 [HolographicReprojectionMode](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html)로 설정 하 여 reprojection 모드를 방향 으로만 되도록 명시적으로 설정할 수 있습니다.
+엄격 본문 잠긴 콘텐츠 (예: 360도 비디오 콘텐츠)를 사용 하 여 [방향 전용 환경을](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience) 빌드하는 경우 [ReprojectionMode](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html) 를 [HolographicReprojectionMode](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html)로 설정 하 여 reprojection 모드를 방향 으로만 명시적으로 설정할 수 있습니다.
 
 ## <a name="sharing-your-depth-buffers-with-windows"></a>Windows와 깊이 버퍼 공유
 
@@ -83,17 +87,17 @@ Unity 앱이 Windows에 깊이 버퍼를 제공할지 여부를 설정 하려면
 
 1. **편집**  >  **프로젝트 설정**  >  **플레이어**  >  **유니버설 Windows 플랫폼 탭**  >  **XR 설정** 으로 이동 합니다.
 2. **Windows Mixed REALITY SDK** 항목을 확장 합니다.
-3. **깊이 버퍼 공유 사용** 확인란을 선택 하거나 선택 취소 합니다.  이 기능은 Unity에 추가 되 고 업그레이드 된 이전 프로젝트에서는 기본적으로 선택 되지 않으므로 새로 만든 프로젝트에서 기본적으로 선택 됩니다.
+3. **깊이 버퍼 공유 사용** 확인란을 선택 하거나 선택 취소 합니다.  새 프로젝트에서는이 기능이 Unity에 추가 되었으며 업그레이드 된 이전 프로젝트에 대해서는 기본적으로 선택 취소 되기 때문에 깊이 버퍼 공유 사용은 새 프로젝트에서 기본적으로 선택 되어 있습니다.
 
-Windows에 깊이 버퍼를 제공 하면 시각적 품질을 향상 시킬 수 있습니다. 즉, Windows에서 기본 카메라의 Unity에 설정 된 근처와 far를 사용 하 여 깊이 버퍼의 정규화 된 픽셀 당 깊이 값을 미터 단위로 다시 정확히 매핑할 수 있습니다.  렌더링 과정에서 일반적인 방법으로 깊이 값이 처리 되는 경우에는 일반적으로 여기에 자세히 설명 해야 합니다 .이는 기존 색 픽셀을 통해 표시 되는 동안 깊이 버퍼에 쓰는 반투명 렌더링 패스가 다시 프로젝션을 혼동 하는 것입니다.  렌더링 과정에서 잘못 된 깊이 값이 포함 된 많은 최종 깊이 픽셀을 유지 하는 경우 "깊이 버퍼 공유 사용"을 선택을 취소 하면 시각적 품질이 향상 될 가능성이 높습니다. # # 다음 개발 검사점
+깊이 버퍼를 사용 하면 Windows에서 기본 카메라의 Unity에 설정 된 근처 및 far 비행기를 사용 하 여 깊이 버퍼의 정규화 된 픽셀 당 깊이 값을 측정 단위로 다시 정확히 매핑할 수 있으므로 시각적 품질을 향상 시킬 수 있습니다.  렌더링 과정에서 일반적인 방법으로 깊이 값이 처리 되는 경우에는 일반적으로 여기에 자세히 설명 해야 합니다 .이는 기존 색 픽셀을 통해 표시 되는 동안 깊이 버퍼에 쓰는 반투명 렌더링 패스가 다시 프로젝션을 혼동 하는 것입니다.  렌더링 패스에서 깊이 값이 정확 하지 않은 최종 깊이 픽셀을 많이 사용 하는 경우 "깊이 버퍼 공유 사용"을 선택을 취소 하면 시각적 품질이 향상 될 가능성이 높습니다.
 
-## <a name="automatic-scene-and-camera-setup-with-mixed-reality-toolkit-v2"></a>혼합 현실 도구 키트 v2를 사용 하 여 자동 장면 및 카메라 설정
+## <a name="automatic-scene-and-camera-setup-with-mixed-reality-toolkit"></a>혼합 현실 도구 키트를 사용 하 여 자동 장면 및 카메라 설정 
 
-[단계별 가이드에](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) 따라 Unity 프로젝트에 Mixed Reality Toolkit v 2를 추가 하면 프로젝트가 자동으로 구성 됩니다. 아래 섹션의 가이드를 사용 하 여 MRTK 없이 프로젝트를 수동으로 구성할 수도 있습니다.
+[단계별 가이드에](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) 따라 Unity 프로젝트에 Mixed Reality Toolkit을 추가 하면 프로젝트가 자동으로 구성 됩니다. 아래 섹션의 가이드를 사용 하 여 MRTK 없이 프로젝트를 수동으로 구성할 수도 있습니다.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞에서 설명한 Unity 개발 검사점 경험을 수행하는 경우 MRTK 핵심 구성 요소를 탐색하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
+앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 계속 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [응시](gaze-in-unity.md)
@@ -105,7 +109,7 @@ Windows에 깊이 버퍼를 제공 하면 시각적 품질을 향상 시킬 수 
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [홀로그램 안정성](../platform-capabilities-and-apis/hologram-stability.md)
 * [MixedRealityToolkit 주 카메라 prefab](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Input/Prefabs)

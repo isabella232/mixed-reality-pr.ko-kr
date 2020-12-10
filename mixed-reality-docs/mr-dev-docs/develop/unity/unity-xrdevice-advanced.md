@@ -6,16 +6,16 @@ ms.author: vladkol
 ms.date: 05/20/2018
 ms.topic: article
 keywords: unity, mixed reality, 네이티브, xrdevice, spatialcoordinatesystem, holographicframe, holographiccamera, ispatialcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr, mixed reality 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: a64deb46db82e6d0401a803e45dcbbd854476745
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 8dda1152da9705147ca3a057faadb9edd8428df6
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679932"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010594"
 ---
 # <a name="mixed-reality-native-objects-in-unity"></a>Unity의 혼합 현실 기본 개체
 
-[HolographicSpace 가져오기](../native/getting-a-holographicspace.md) 는 모든 혼합 현실 앱이 카메라 데이터 및 렌더링 프레임 수신을 시작 하기 전에 수행 하는 작업입니다. Unity에서 엔진은 렌더링 루프의 일부로 내부적으로 Holographic 개체 및 업데이트를 처리 하는 이러한 단계를 처리 합니다.
+모든 혼합 현실 앱은 카메라 데이터를 수신 하 고 프레임을 렌더링 하기 시작 하기 전에 [HolographicSpace를 가져옵니다](../native/getting-a-holographicspace.md) . Unity에서 엔진은 Holographic 개체를 처리 하 고 내부적으로 렌더링 루프의 일부로 업데이트 하는 단계를 처리 합니다.
 
 그러나 고급 시나리오에서는 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> 및 current <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>와 같은 기본 네이티브 개체에 대 한 액세스 권한을 얻어야 할 수 있습니다. <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">Unityengine. XRDevice</a> 는 이러한 네이티브 개체에 대 한 액세스를 제공 합니다.
 
@@ -49,7 +49,7 @@ HolographicFrameNativeData hfd = Marshal.PtrToStructure<HolographicFrameNativeDa
 
 ### <a name="unmarshaling-native-pointers"></a>네이티브 포인터 역마샬링
 
-[MixedReality](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT) 를 사용 하는 경우 메서드를 사용 하 여 네이티브 포인터에서 관리 되는 개체를 생성할 수 있습니다. `FromNativePtr()`
+[MixedReality](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT)를 사용 하는 경우 메서드를 사용 하 여 네이티브 포인터에서 관리 되는 개체를 생성할 수 있습니다. `FromNativePtr()`
 
 ```cs
 var worldOrigin = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(hfd.ISpatialCoordinateSystemPtr);
@@ -96,9 +96,10 @@ namespace NumericsConversion
 > [!NOTE]
 > HolographicFrameNativeData를 통해 수신 된 네이티브 개체의 상태를 변경 하면 예기치 않은 동작 및 렌더링 아티팩트가 발생할 수 있습니다. 특히 Unity에서 동일한 상태를 갖는 이유가 있을 수 있습니다.  예를 들어 HolographicFrame를 호출 하면 안 됩니다. UpdateCurrentPrediction를 호출 하면 안 됩니다. 그렇지 않으면 Unity가 해당 프레임으로 렌더링 하는 포즈 예측이 Windows에서 기대 하는 포즈와 동기화 되지 않아 [홀로그램 안정성이](../platform-capabilities-and-apis/hologram-stability.md)감소 합니다.
 
-네이티브 인터페이스에 대 한 액세스가 네이티브 플러그 인 또는 c # 코드에서 렌더링 또는 디버깅 목적으로 필요한 경우 HolographicFrameNativeData의 데이터를 사용할 수 있습니다. 
+렌더링 또는 디버깅을 위해 네이티브 인터페이스에 액세스 해야 하는 경우 네이티브 플러그 인 또는 c # 코드에서 HolographicFrameNativeData의 데이터를 사용 합니다. 
 
 HolographicFrameNativeData를 사용 하 여 photon time에 대 한 현재 프레임의 예측을 가져오는 방법의 예는 다음과 같습니다. 
+
 ```cs
 using System;
 using System.Runtime.InteropServices;

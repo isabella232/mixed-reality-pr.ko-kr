@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: 제스처, 동작 컨트롤러, unity, 응시, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 122642bb7fc561e505098bca00b8bf65bfd4552e
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 8941fa05af21a7b2c7302f4a76f27cf38e1d5a65
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443576"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010324"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Unity의 제스처 및 모션 컨트롤러
 
 HoloLens의 [손으로](../../design/gaze-and-commit.md#composite-gestures) 는 [Unity](gaze-in-unity.md)에서 작업을 수행 하는 두 가지 주요 방법, 그리고 HOLOLENS 및 몰입 형 HMD의 [동작 컨트롤러](../../design/motion-controllers.md) 를 사용할 수 있습니다. Unity에서 동일한 Api를 통해 두 공간 입력 원본에 대 한 데이터에 액세스할 수 있습니다.
 
-Unity는 Windows Mixed Reality의 공간 입력 데이터에 액세스 하는 두 가지 기본 방법인 common *input. GetButton/input. Getbutton* api를 여러 Unity XR sdk에서 작동 하는 두 가지 기본 방법 및 사용 가능한 공간 입력 데이터의 전체 집합을 노출 하는 Windows Mixed Reality 관련 *InteractionManager/GestureRecognizer* api를 제공 합니다.
+Unity는 Windows Mixed Reality의 공간 입력 데이터에 액세스 하는 두 가지 기본 방법을 제공 합니다. 일반적인 *입력. GetButton/Input. Getbutton* api는 여러 Unity XR sdk에서 작동 하는 반면, Windows Mixed Reality와 관련 된 *InteractionManager/GestureRecognizer* api는 전체 공간 입력 데이터 집합을 제공 합니다.
 
 ## <a name="unity-xr-input-apis"></a>Unity XR 입력 Api
 
@@ -27,7 +27,7 @@ Unity는 Windows Mixed Reality의 공간 입력 데이터에 액세스 하는 �
 
 ## <a name="unity-buttonaxis-mapping-table"></a>Unity 단추/축 매핑 테이블
 
-아래 표의 단추 및 축 Id는 *입력. GetButton/Getbutton* api를 통해 Unity의 Windows Mixed Reality 동작 컨트롤러에서 지원 되지만, "Windows MR" 열은 *InteractionSourceState* 형식에서 사용할 수 있는 속성을 참조 합니다. 이러한 각 Api에 대해서는 아래 섹션에서 자세히 설명 합니다.
+Unity의 Windows Mixed Reality의 입력 관리자 동작 컨트롤러는 *입력. getbutton/Getbutton* api를 통해 아래에 나열 된 단추 및 축 id를 지원 합니다. "Windows MR" 열은 *InteractionSourceState* 유형에 서 사용할 수 있는 속성을 나타냅니다. 이러한 각 Api에 대해서는 아래 섹션에서 자세히 설명 합니다.
 
 Windows Mixed Reality의 단추/축 ID 매핑은 일반적으로 Oculus 단추/축 Id와 일치 합니다.
 
@@ -104,15 +104,15 @@ If you're using the HP Reverb G2 controllers, refer to the table below for butto
 
 ## <a name="grip-pose-vs-pointing-pose"></a>그립 포즈 및 포인팅 포즈
 
-Windows Mixed Reality는 다양 한 폼 팩터에서 동작 컨트롤러를 지원 하며, 각 컨트롤러의 디자인이 사용자의 손 위치와 앱이 컨트롤러를 렌더링할 때 사용 해야 하는 자연 스러운 "전달" 방향 간의 관계에 차이가 있습니다.
+Windows Mixed Reality는 다양 한 폼 팩터에서 동작 컨트롤러를 지원 합니다. 각 컨트롤러의 디자인은 사용자의 손 위치와 앱이 컨트롤러를 렌더링할 때를 가리키는 데 사용 해야 하는 자연 스러운 "전달" 방향 간의 관계에 차이가 있습니다.
 
 이러한 컨트롤러를 더 잘 나타내기 위해 각 상호 작용 소스, **그립 포즈** 및 **포인터 포즈** 에 대해 조사할 수 있는 두 가지 종류의 포즈를 확인할 수 있습니다. 그립 포즈 및 포인터 포즈 좌표는 모두 전역 Unity 세계 좌표의 모든 Unity Api에 의해 표현 됩니다.
 
 ### <a name="grip-pose"></a>그립 포즈
 
-**그립 포즈** 는 HoloLens에서 감지한 손바닥의 위치 또는 동작 컨트롤러를 보유 하는 야자나무를 나타냅니다.
+**그립 포즈** 는 HoloLens에서 검색 되거나 동작 컨트롤러를 보유 하는 사용자 palm의 위치를 나타냅니다.
 
-몰입 형 헤드셋에서 그립 포즈는 사용자 **의 손을** 만들거나 **사용자의 손으로 보유 한 개체**(예: 소드 또는 포)를 렌더링 하는 데 가장 적합 합니다. 동작 컨트롤러에 대해 Windows에서 제공 하는 **렌더링할 모델** 은 동작 컨트롤러를 시각화할 때에도 그립 포즈를 사용 합니다.
+몰입 형 헤드셋에서 그립 포즈는 사용자의 **손을** 만들거나 **사용자의 손을 보유 한 개체** 를 렌더링 하는 데 가장 적합 합니다. 그립 포즈는 동작 컨트롤러를 시각화할 때에도 사용 됩니다. 동작 컨트롤러에 대해 Windows에서 제공 하는 **렌더링할 모델** 은 그립 포즈를 원본 및 회전 중심으로 사용 합니다.
 
 그립 포즈는 구체적으로 다음과 같이 정의 됩니다.
 * **그립 위치**: 컨트롤러를 자연스럽 게 유지 하는 경우 왼쪽 또는 오른쪽으로 조정 하 여 그립 내 위치를 가운데에 맞춥니다. Windows Mixed Reality 동작 컨트롤러에서이 위치는 일반적으로 보통 클릭 단추와 맞춥니다.
@@ -126,7 +126,7 @@ Unity의 교차 공급 업체 입력 API (XR)를 통해 그립 포즈에 액세�
 
 **포인터 포즈** 는 컨트롤러의 팁을 나타냅니다.
 
-시스템 제공 포인터 포즈는 **컨트롤러 모델 자체를 렌더링** 하는 경우 raycast에 가장 잘 사용 됩니다. 컨트롤러 대신 다른 가상 개체 (예: 가상 사용자)를 렌더링 하는 경우 앱 정의 된 포 모델의 배럴을 따라 이동 하는 광선과 같이 해당 가상 개체에 가장 자연 스러운 광선을 가리켜야 합니다. 사용자는 가상 개체를 볼 수 있고 실제 컨트롤러는 볼 수 없으므로 가상 개체를 가리키면 앱을 사용 하는 것이 더 자연스럽 게 될 수 있습니다.
+시스템에서 제공 하는 포인터 포즈는 **컨트롤러 모델 자체를 렌더링** 하는 경우 raycast를 사용 하는 데 가장 적합 합니다. 컨트롤러 대신 다른 가상 개체 (예: 가상 사용자)를 렌더링 하는 경우 앱 정의 된 포 모델의 배럴을 따라 이동 하는 광선과 같이 해당 가상 개체에 가장 자연 스러운 광선을 가리켜야 합니다. 사용자는 가상 개체를 볼 수 있고 실제 컨트롤러는 볼 수 없으므로 가상 개체를 가리키면 앱을 사용 하는 것이 더 자연스럽 게 될 수 있습니다.
 
 현재 포인터 포즈는 *InteractionSourceNode* 를 인수로 전달 하는 Windows MR 특정 API 인 *TryGetPosition/Rotation* 을 통해서만 Unity에서 사용할 수 있습니다.
 
@@ -134,7 +134,7 @@ Unity의 교차 공급 업체 입력 API (XR)를 통해 그립 포즈에 액세�
 
 헤드셋 처럼 Windows Mixed Reality 동작 컨트롤러를 사용 하려면 외부 추적 센서를 설정 하지 않아도 됩니다. 대신, 컨트롤러는 헤드셋 자체의 센서에 의해 추적 됩니다.
 
-사용자가 컨트롤러를 헤드셋의 뷰 필드에서 밖으로 이동 하는 경우 대부분의 경우 Windows는 컨트롤러 위치를 계속 유추 하 고 앱에 제공 합니다. 컨트롤러에서 충분히 긴 시각적 추적을 분실 한 경우 컨트롤러의 위치는 대략적인 정확도 위치로 삭제 됩니다.
+사용자가 헤드셋의 보기 필드에서 컨트롤러를 이동 하면 대부분의 경우 Windows에서는 계속 해 서 컨트롤러 위치를 유추 합니다. 컨트롤러에서 충분히 긴 시각적 추적을 분실 한 경우 컨트롤러의 위치는 대략적인 정확도 위치로 삭제 됩니다.
 
 이 시점에서 시스템은 컨트롤러를 사용자에 게 본문 잠금을 설정 하 고, 이동 하는 동안 사용자의 위치를 추적 하 고, 내부 방향 센서를 사용 하 여 컨트롤러의 실제 방향을 계속 노출 합니다. 컨트롤러를 사용 하 여 UI 요소를 가리키고 활성화 하는 많은 앱이 정상적으로 작동 하 고, 사용자가 모르게 정확한 정확도를 사용할 수 있습니다.
 
@@ -163,10 +163,10 @@ Unity의 교차 공급 업체 입력 API (XR)를 통해 그립 포즈에 액세�
 </table>
 
 이러한 동작 컨트롤러 추적 상태는 다음과 같이 정의 됩니다.
-* **높은 정확도:** 동작 컨트롤러는 헤드셋의 보기 필드 내에 있지만 일반적으로 시각적 추적에 따라 정확도가 높은 위치를 제공 합니다. 일시적으로 보기의 필드를 벗어나거나 헤드셋 센서에서 일시적으로 가려진 이동 컨트롤러 (예: 사용자)는 컨트롤러 자체의 관성 추적을 기반으로 짧은 시간 동안 계속 해 서 정확도가 높은 동작을 반환 합니다.
-* **높은 정확도 (손실 위험):** 사용자가 이동 컨트롤러를 헤드셋의 보기 필드 가장자리를 지나서 이동할 때 헤드셋은 곧 컨트롤러의 위치를 시각적으로 추적할 수 없습니다. 앱은 **SourceLossRisk** reach 1.0을 확인 하 여 컨트롤러가이 FOV 경계에 도달한 경우를 인식 합니다. 이 시점에서 앱은 매우 높은 품질의 동작을 안정적으로 스트리밍하는 데 필요한 컨트롤러 제스처를 일시 중지 하도록 선택할 수 있습니다.
+* **높은 정확도:** 동작 컨트롤러는 헤드셋의 보기 필드 내에 있지만 일반적으로 시각적 추적에 따라 정확도가 높은 위치를 제공 합니다. 일시적으로 보기의 필드를 벗어나거나 헤드셋 센서에서 일시적으로 가려진 이동 컨트롤러 (예: 사용자)는 컨트롤러 자체의 관성 추적을 기반으로 짧은 시간 동안 계속 해 서 정확도가 높은 포즈를 반환 합니다.
+* **높은 정확도 (손실 위험):** 사용자가 이동 컨트롤러를 헤드셋의 보기 필드 가장자리를 지나서 이동할 때 헤드셋은 곧 컨트롤러의 위치를 시각적으로 추적할 수 없습니다. 앱은 **SourceLossRisk** reach 1.0을 확인 하 여 컨트롤러가이 FOV 경계에 도달한 경우를 인식 합니다. 이 시점에서 앱은 고품질 포즈의 안정적인 스트림을 필요로 하는 컨트롤러 제스처를 일시 중지 하도록 선택할 수 있습니다.
 * **대략적인 정확도:** 컨트롤러에서 충분히 긴 시각적 추적을 분실 한 경우 컨트롤러의 위치는 대략적인 정확도 위치로 삭제 됩니다. 이 시점에서 시스템은 컨트롤러를 사용자에 게 본문 잠금을 설정 하 고, 이동 하는 동안 사용자의 위치를 추적 하 고, 내부 방향 센서를 사용 하 여 컨트롤러의 실제 방향을 계속 노출 합니다. 컨트롤러를 사용 하 여 UI 요소를 가리키고 활성화 하는 많은 앱이 정상적으로 작동 하 고, 사용자가 모르게 정확한 정확도를 사용할 수 있습니다. 입력 요구 사항이 많은 앱은 사용자에 게이 시간 동안 오프 화면 대상에 대 한 hitbox을 제공 하는 등의 방법으로 **positionaccuracy** 속성을 검사 하 여 정확도가 **높은** **정확도부터 정확도까지** 이러한 삭제를 합리적으로 선택할 수 있습니다.
-* **위치 없음:** 컨트롤러는 오랜 시간 동안 정확한 정확도로 작동할 수 있지만 때때로 본문 잠금 위치가 중요 하지 않은 것을 시스템에서 인식 하는 경우도 있습니다. 예를 들어 방금 설정 된 컨트롤러가 시각적으로 관찰 되지 않았거나 사용자가 다른 사용자가 선택 하는 컨트롤러를 배치할 수 있습니다. 이러한 시간에 시스템은 앱에 어떤 위치도 제공 하지 않으며 *TryGetPosition* 는 false를 반환 합니다.
+* **위치 없음:** 컨트롤러는 오랜 시간 동안 정확한 정확도로 작동할 수 있지만, 경우에 따라 본문 잠금 위치가 중요 하지 않은 경우에도 시스템에서 알 수 있습니다. 예를 들어 설정 된 컨트롤러가 시각적으로 관찰 되지 않았거나 사용자가 다른 사용자가 선택 하는 컨트롤러를 배치할 수 있습니다. 이러한 시간에 시스템은 앱에 어떤 위치도 제공 하지 않으며 *TryGetPosition* 는 false를 반환 합니다.
 
 ## <a name="common-unity-apis-inputgetbuttongetaxis"></a>Common Unity Api (입력. GetButton/Getbutton)
 
@@ -214,9 +214,10 @@ Vector3 leftPosition = InputTracking.GetLocalPosition(XRNode.LeftHand);
 Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 ```
 
-이는 컨트롤러의 그립 포즈 (사용자가 컨트롤러를 보유 하는 위치)를 나타내며 사용자의 손을 사용 하거나 컨트롤러 자체의 모델을 렌더링 하는 데 유용 합니다.
-
-이 그립 포즈와 포인터 포즈 (컨트롤러의 팁) 간의 관계는 컨트롤러 마다 다를 수 있습니다. 이제 컨트롤러의 포인터 포즈에 액세스 하는 것은 아래 섹션에 설명 된 MR 특정 입력 API를 통해서만 가능 합니다.
+> [!NOTE] 
+> 위의 코드는 컨트롤러의 그립 포즈 (사용자가 컨트롤러를 보유 하는 위치)를 나타내며,이는 사용자 쪽에서 소드를 렌더링 하거나 컨트롤러 자체의 모델을 렌더링 하는 데 유용 합니다.
+> 
+> 이 그립 포즈와 포인터 포즈 (컨트롤러의 팁) 간의 관계는 컨트롤러 마다 다를 수 있습니다. 이제 컨트롤러의 포인터 포즈에 액세스 하는 것은 아래 섹션에 설명 된 MR 특정 입력 API를 통해서만 가능 합니다.
 
 ## <a name="windows-specific-apis-xrwsainput"></a>Windows 관련 Api (XR. WSA. 입력
 
@@ -265,7 +266,7 @@ foreach (var interactionSourceState in interactionSourceStates) {
 
 ### <a name="polling-for-forward-predicted-rendering-poses"></a>앞으로 예측 된 렌더링 동작에 대 한 폴링
 
-* 손이 나 컨트롤러에서 상호 작용 원본 데이터를 폴링하는 경우이 프레임의 photons 사용자의 눈에 도달 하 게 되는 순간에 대해 앞으로 예측 하는 포즈를 얻을 수 있습니다.  이러한 앞으로 예측 된 포즈는 컨트롤러를 **렌더링** 하거나 각 프레임을 보유 한 개체를 렌더링 하는 데 가장 적합 합니다.  컨트롤러를 사용 하 여 지정 된 보도 또는 릴리스를 대상으로 하는 경우 아래에 설명 된 기록 이벤트 Api를 사용 하는 경우 가장 정확 합니다.
+* 손이 나 컨트롤러에서 상호 작용 원본 데이터를 폴링하는 경우이 프레임의 photons 사용자의 눈에 도달 하 게 되는 순간에 대해 앞으로 예측 하는 포즈를 얻을 수 있습니다.  앞으로 예측 되는 포즈는 컨트롤러를 렌더링 하거나 각 프레임에서 보유 한 개체를 **렌더링** 하는 데 가장 적합 합니다.  Controller를 사용 하 여 지정 된 보도 또는 릴리스를 대상으로 하는 경우 아래에 설명 된 기록 이벤트 Api를 사용 하는 경우 가장 정확 합니다.
 
    ```cs
    var sourcePose = interactionSourceState.sourcePose;
@@ -334,10 +335,10 @@ InteractionManager.InteractionSourcePressed -= InteractionManager_InteractionSou
 ### <a name="events-for-historical-targeting-poses-that-most-accurately-match-a-press-or-release"></a>기록 대상 이벤트는 누름 또는 릴리스와 가장 정확 하 게 일치 합니다.
 
 앞에서 설명한 폴링 Api는 앱을 앞으로 예측 하는 포즈를 제공 합니다.  이러한 예측 된 포즈는 컨트롤러 또는 가상 핸드헬드 개체를 렌더링 하는 데 가장 적합 하지만 다음 두 가지 주요 이유로 이후 포즈는 대상 지정에 적합 하지 않습니다.
-* 사용자가 컨트롤러의 단추를 누르면 시스템이 press를 받기 전에 Bluetooth를 통해 무선 대기 시간이 20ms 될 수 있습니다.
-* 그런 다음 앞으로 예측 하는 포즈를 사용 하는 경우 현재 프레임의 photons가 사용자의 눈에 도달 하는 시간을 대상으로 하는 20ms 예측의 또 다른 10 개를 적용할 수 있습니다.
+* 사용자가 컨트롤러의 단추를 누를 때 시스템에서 누르기를 수신 하기 전에 Bluetooth를 통해 무선 대기 시간이 20 밀리초 정도 소요 될 수 있습니다.
+* 그런 다음 앞으로 예측 하는 포즈를 사용 하는 경우 현재 프레임의 photons 사용자의 눈에 도달 하는 시간을 대상으로 적용 하는 다른 10-20 ms의 전달 예측이 적용 됩니다.
 
-즉, 폴링을 통해 사용자의 헤드 및 손을 사용 하는 경우에는 사용자의 헤드를 30-40ms로 나타내는 소스 포즈 또는 헤드가 발생 합니다.  HoloLens 손으로 입력 한 경우 무선 전송 지연이 발생 하지 않지만, 누르기를 검색 하는 데 비슷한 처리 지연이 발생 합니다.
+즉, 폴링을 통해 사용자의 헤드와 손을 모두 사용 하는 경우에는 사용자의 헤드와 30-40를 전달 하는 소스 포즈 또는 헤드가 발생 합니다.  HoloLens 손으로 입력 한 경우 무선 전송 지연이 발생 하지 않지만, 누르기를 검색 하는 데 비슷한 처리 지연이 발생 합니다.
 
 직접 또는 컨트롤러에 대 한 사용자의 원래 의도에 따라 정확 하 게 대상으로 지정 하려면 해당 *InteractionSourcePressed* 또는 *InteractionSourceReleased* 입력 이벤트에서 기록 원본 포즈 또는 head 포즈를 사용 해야 합니다.
 
@@ -438,7 +439,7 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 **네임 스페이스:** *unityengine. XR*<br>
 **유형**: *GestureRecognizer*, *GestureSettings*, *InteractionSourceKind*
 
-앱은 공간 입력 원본, 탭, 유지, 조작 및 탐색 제스처에 대 한 상위 수준 복합 제스처를 인식할 수도 있습니다. GestureRecognizer를 사용 하 여 [직접](../../design/gaze-and-commit.md#composite-gestures) 및 [동작 컨트롤러](../../design/motion-controllers.md) 에서 이러한 복합 제스처를 인식할 수 있습니다.
+앱은 공간 입력 소스, 탭, 유지, 조작 및 탐색 제스처에 대 한 상위 수준 복합 제스처를 인식할 수도 있습니다. GestureRecognizer를 사용 하 여 [직접](../../design/gaze-and-commit.md#composite-gestures) 및 [동작 컨트롤러](../../design/motion-controllers.md) 에서 이러한 복합 제스처를 인식할 수 있습니다.
 
 GestureRecognizer의 각 제스처 이벤트는 입력에 대 한 SourceKind와 이벤트 시점의 대상 헤드 광선을 제공 합니다. 일부 이벤트는 추가 컨텍스트별 정보를 제공 합니다.
 
@@ -483,7 +484,7 @@ void Start()
 
 ### <a name="start-capturing-gestures"></a>제스처 캡처 시작
 
-기본적으로 *GestureRecognizer* 는 *Startcapturinggestures ()* 를 호출할 때까지 입력을 모니터링 하지 않습니다. *Stopcapturinggestures ()* 가 처리 된 프레임 보다 먼저 입력이 수행 되 면 *Stopcap의 ing제스처 ()* 가 호출 된 후에 제스처 이벤트가 생성 될 수 있습니다. *GestureRecognizer* 는 제스처가 실제로 발생 한 이전 프레임의 설정 또는 해제 여부를 기억할 것 이므로이 프레임의 응시 대상에 따라 제스처 모니터링을 시작 및 중지 하는 것은 안정적입니다.
+기본적으로 *GestureRecognizer* 는 *Startcapturinggestures ()* 를 호출할 때까지 입력을 모니터링 하지 않습니다. *Stopcapturinggestures ()* 가 처리 된 프레임 보다 먼저 입력이 수행 되 면 *Stopcap의 ing제스처 ()* 가 호출 된 후에 제스처 이벤트가 생성 될 수 있습니다. *GestureRecognizer* 는 제스처가 실제로 발생 한 이전 프레임의 설정 또는 해제 여부를 기억할 것 이므로이 프레임의 응시 대상에 따라 제스처 모니터링을 시작 하 고 중지 하는 것은 안정적입니다.
 
 ```cs
 recognizer.StartCapturingGestures();
@@ -519,14 +520,14 @@ void OnDestroy()
 응용 프로그램에서 사용자가 보유 하 고 있는 실제 컨트롤러와 일치 하는 동작 컨트롤러를 렌더링 하려면 [혼합 현실 도구 키트](https://github.com/Microsoft/MixedRealityToolkit-Unity/)에서 **motioncontroller prefab** 를 사용할 수 있습니다.  이 prefab는 시스템의 설치 된 동작 컨트롤러 드라이버에서 런타임에 올바른 인 글 Tf 모델을 동적으로 로드 합니다.  편집기에서 수동으로 가져오는 대신 이러한 모델을 동적으로 로드 하는 것이 중요 합니다. 따라서 앱은 사용자에 게 있을 수 있는 현재 및 미래의 모든 컨트롤러에 대해 물리적으로 정확한 3D 모델을 표시 합니다.
 
 1. [시작](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/GettingStarted.md) 지침에 따라 Mixed Reality Toolkit를 다운로드 하 여 Unity 프로젝트에 추가 합니다.
-2. 시작 단계의 일부로 카메라를 *MixedRealityCameraParent* prefab로 대체 한 경우에는 계속 진행 하는 것이 좋습니다.  이 prefab에는 동작 컨트롤러 렌더링이 포함 됩니다.  그렇지 않으면 프로젝트 창에서 장면에 asset */HoloToolkit/Input/Prefabs/MotionControllers. prefab* 를 추가 합니다.  사용자가 장면 내에서 teleports 때 카메라를 이동 하는 데 사용 하는 모든 부모 개체의 자식으로 해당 prefab을 추가 하 여 컨트롤러를 사용자와 함께 사용할 수 있습니다.  앱에 teleporting 포함 되지 않은 경우 장면의 루트에 prefab를 추가 합니다.
+2. 시작 단계의 일부로 카메라를 *MixedRealityCameraParent* prefab로 대체 한 경우에는 계속 진행 하는 것이 좋습니다.  이 prefab에는 동작 컨트롤러 렌더링이 포함 됩니다.  그렇지 않으면 프로젝트 창에서 장면에 asset */HoloToolkit/Input/Prefabs/MotionControllers. prefab* 를 추가 합니다.  사용자가 장면 내에서 teleports 때 카메라를 이동 하는 데 사용 하는 모든 부모 개체의 자식으로 해당 prefab을 추가 하 여 컨트롤러를 사용자와 함께 사용할 수 있습니다.  앱이 teleporting를 포함 하지 않는 경우 장면의 루트에 prefab를 추가 합니다.
 
 ## <a name="throwing-objects"></a>개체 throw
 
-가상 현실에서 개체를 throw 하는 것은 어려운 문제 이며, 처음에는 보일 수 있습니다. 대부분의 물리적 기반 상호 작용의 경우와 마찬가지로 게임에서 throw 되는 것이 예기치 않은 방식으로 작동 하는 경우에는 즉시 명확 하 고 집중 교육 중단 됩니다. 실제로 올바른 throw 동작을 나타내는 방법에 대해 자세히 살펴보고, 플랫폼 업데이트를 통해 사용할 수 있는 몇 가지 지침을 제공 하 여 사용자와 공유 하 고 싶습니다.
+가상 현실에서 개체를 throw 하는 것은 처음에 보이는 것 보다 더 어려운 문제입니다. 대부분의 물리적 기반 상호 작용의 경우와 마찬가지로 게임에서 throw 되는 것이 예기치 않은 방식으로 작동 하는 경우에는 즉시 명확 하 고 집중 교육 중단 됩니다. 실제로 올바른 throw 동작을 나타내는 방법에 대해 자세히 살펴보고, 플랫폼 업데이트를 통해 사용할 수 있는 몇 가지 지침을 제공 하 여 사용자와 공유 하 고 싶습니다.
 
 [여기](https://github.com/keluecke/MixedRealityToolkit-Unity/blob/master/External/Unitypackages/ThrowingStarter.unitypackage)에서 throw를 구현 하는 방법에 대 한 예제를 찾을 수 있습니다. 이 샘플은 다음 네 가지 지침을 따릅니다.
-* **위치 대신 컨트롤러의 *속도* 를 사용** 합니다. 11 월 Windows 업데이트에서는 [' ' 근사치 ' ' 위치 추적 상태](../../design/motion-controllers.md#controller-tracking-state)에 있는 경우 동작이 변경 되었습니다. 이 상태에서 컨트롤러에 대 한 속도 정보는 정확도가 높은 것으로 예상 되는 경우에도 계속 보고 됩니다 .이는 일반적으로 높은 정확도를 유지 합니다.
+* **위치 대신 컨트롤러의 *속도* 를 사용** 합니다. 11 월 Windows 업데이트에서는 [' ' 근사치 ' ' 위치 추적 상태](../../design/motion-controllers.md#controller-tracking-state)에 있는 경우 동작이 변경 되었습니다. 이 상태에서 컨트롤러에 대 한 속도 정보는 높은 정확도를 기대 하는 동안에도 계속 보고 됩니다 .이는 일반적으로 위치가 높은 정확도를 유지 합니다.
 * **컨트롤러의 *각도 속도* 를 통합** 합니다. 이 논리는 `throwing.cs` `GetThrownObjectVelAngVel` 위에 링크 된 패키지 내의 정적 메서드에 있는 파일에 모두 포함 됩니다.
    1. 각도 속도가 conserved throw 된 개체는 throw 시점에 있었던 것과 동일한 각도의 속도를 유지 해야 합니다. `objectAngularVelocity = throwingControllerAngularVelocity;`
    2. Throw 된 개체의 질량 중심은 그립 포즈의 원점에 있지 않을 수 있으므로 사용자 참조 프레임의 컨트롤러와 다른 속도를 가질 가능성이 높습니다. 이러한 방식으로 제공 되는 개체 속도의 부분은 컨트롤러 원본 주위에서 throw 된 개체의 질량 중심의 순간 탄젠트 속도입니다. 이 탄젠트 속도는 컨트롤러 원본 및 throw 된 개체의 질량 중심 사이의 거리를 나타내는 벡터와 컨트롤러의 각도 속도 간 곱입니다.
@@ -536,9 +537,9 @@ void OnDestroy()
       Vector3 tangentialVelocity = Vector3.Cross(throwingControllerAngularVelocity, radialVec);
       ```
 
-   3. 따라서 throw 된 개체의 총 속도는 컨트롤러의 속도와 이러한 탄젠트 속도의 합입니다. `objectVelocity = throwingControllerVelocity + tangentialVelocity;`
+   3. Throw 된 개체의 총 속도는 컨트롤러의 속도와 이러한 탄젠트 속도의 합입니다. `objectVelocity = throwingControllerVelocity + tangentialVelocity;`
 
-* **속도를 적용 하는 *시간* 에 대 한 주의를** 기울여야 합니다. 단추를 누르면 해당 이벤트가 Bluetooth를 통해 운영 체제에 20ms 최대의 시간이 걸릴 수 있습니다. 즉, 컨트롤러 상태 변경을 누른 상태에서 누르지 않음 또는 그 반대로 폴링할 때 발생 하는 컨트롤러의 정보는 실제로 이러한 변화에 대 한 것입니다. 또한 폴링 API에 의해 표시 되는 컨트롤러는 프레임이 표시 될 때 발생할 수 있는 포즈를 반영 하 여 향후 20ms 될 수 있는 것으로 예상 됩니다. 이는 보류 중인 개체를 *렌더링* 하는 데 유용 하지만 사용자가 throw를 릴리스한 순간의 궤적을 계산할 때 개체를 *대상으로 지정* 하는 데 시간이 복합어. 다행히 11 월 업데이트를 사용 하는 경우 *InteractionSourcePressed* 또는 *InteractionSourceReleased* 와 같은 Unity 이벤트가 전송 되 면이 상태에는 단추가 실제로 눌러져 있거나 해제 되었을 때의 기록 포즈 데이터가 반환 됩니다.  을 throw 하는 동안 가장 정확한 컨트롤러 렌더링과 컨트롤러를 대상으로 하려면 적절 한 폴링 및 이벤트를 올바르게 사용 해야 합니다.
+* **속도를 적용 하는 *시간* 에 대 한 주의를** 기울여야 합니다. 단추를 누르면 해당 이벤트에 대해 Bluetooth를 통해 운영 체제로 버블링 하는 데 최대 20 밀리초까지 걸릴 수 있습니다. 이는 컨트롤러 상태 변경을 누른 상태에서 누르지 않음으로 또는 다른 방법으로 변경 하는 것을 폴링하는 경우 발생 하는 컨트롤러의 상태에 대 한 이러한 변경 내용에 대 한 정보를 얻을 수 있습니다. 또한 폴링 API에 의해 표시 되는 컨트롤러는 프레임이 표시 될 때, 향후 20 밀리초를 초과할 수 있는 포즈를 반영 하는 것으로 예상 됩니다. 이는 보류 중인 개체를 *렌더링* 하는 데 유용 하지만, 사용자가 throw를 릴리스한 순간의 궤적을 계산할 때 개체를 *대상으로 지정* 하는 데 시간이 복합어. 다행히 11 월 업데이트를 사용 하는 경우 *InteractionSourcePressed* 또는 *InteractionSourceReleased* 와 같은 Unity 이벤트가 전송 되 면이 상태에는 단추를 눌렀다 놓았을 때의 기록 포즈 데이터가 반환 됩니다.  을 throw 하는 동안 가장 정확한 컨트롤러 렌더링과 컨트롤러를 대상으로 하려면 적절 한 폴링 및 이벤트를 올바르게 사용 해야 합니다.
    * 각 프레임을 렌더링 하는 **컨트롤러** 의 경우 응용 프로그램은 현재 프레임의 photon 시간에 대해 앞으로 예측 되는 컨트롤러에서 컨트롤러의 *GameObject* 위치를 지정 해야 합니다.  Unity 폴링 Api (예: XR)에서이 데이터를 가져옵니다 *[. InputTracking. GetLocalPosition](https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html)* 또는 *[XR. WSA. InteractionManager. GetCurrentReading](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.GetCurrentReading.html)*.
    * Press 또는 릴리스부터 **컨트롤러를 대상** 으로 하는 경우 앱은 해당 누르기 또는 릴리스 이벤트에 대 한 기록 컨트롤러의 포즈를 기준으로 궤적을 ray로 계산 해야 합니다.  *[InteractionManager InteractionSourcePressed](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.InteractionSourcePressed.html)* 와 같은 Unity 이벤트 api에서이 데이터를 가져옵니다.
 * **그립 포즈를 사용** 합니다. 각도 속도와 속도는 포인터가 아닌 그립 포즈를 기준으로 보고 됩니다.
@@ -564,7 +565,7 @@ Throw는 향후 Windows 업데이트를 사용 하 여 계속 개선 되며 여�
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞에서 설명한 Unity 개발 검사점 경험을 수행하는 경우 MRTK 핵심 구성 요소를 탐색하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
+앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 계속 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [손 및 시선 추적](hand-eye-in-unit.md)

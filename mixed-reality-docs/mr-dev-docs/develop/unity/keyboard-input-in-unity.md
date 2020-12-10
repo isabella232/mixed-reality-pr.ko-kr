@@ -6,29 +6,29 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 키보드, 입력, unity, touchscreenkeyboard, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: aa9bb3059a8d0cc5b829bf14d92928511259b7f9
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 613c9327b517205c340555b6423a3809906f9b9f
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677422"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010514"
 ---
 # <a name="keyboard-input-in-unity"></a>Unity의 키보드 입력
 
 **네임 스페이스:** *unityengine*<br>
  **유형**: *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*
 
-HoloLens는 Bluetooth 키보드를 비롯 한 다양 한 형태의 입력을 지원 하지만 대부분의 응용 프로그램에서는 모든 사용자가 실제 키보드를 사용할 수 있다고 간주할 수 없습니다. 응용 프로그램에 텍스트 입력이 필요한 경우 화면 키보드의 일부 형식을 제공 해야 합니다.
+HoloLens는 Bluetooth 키보드를 비롯 한 다양 한 형태의 입력을 지원 하지만 대부분의 응용 프로그램은 모든 사용자가 실제 키보드를 사용할 수 있다고 간주할 수 없습니다. 응용 프로그램에 텍스트 입력이 필요한 경우 화상 키보드의 일부 형식을 제공 해야 합니다.
 
 Unity는 사용할 수 있는 실제 키보드가 없을 때 키보드 입력을 허용 하기 위한 *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)* 클래스를 제공 합니다.
 
 ## <a name="hololens-system-keyboard-behavior-in-unity"></a>Unity의 HoloLens 시스템 키보드 동작
 
-HoloLens에서 *TouchScreenKeyboard* 는 시스템의 화면 키보드를 활용 합니다. 시스템의 화면 키보드는 대규모 보기 위에 오버레이 할 수 없기 때문에 Unity에서 키보드를 표시 하는 보조 2D XAML 뷰를 만든 다음 입력이 제출 되 면 대규모 보기로 돌아갑니다. 사용자 흐름은 다음과 같습니다.
+HoloLens에서 *TouchScreenKeyboard* 는 시스템의 화상 키보드를 활용 합니다. 시스템의 화상 키보드는 대규모 보기 위에 오버레이를 사용할 수 없습니다. Unity는 키보드를 표시 하는 보조 2D XAML 뷰를 만든 다음 입력이 제출 되 면 대규모 보기로 돌아갑니다. 사용자 흐름은 다음과 같습니다.
 1. 사용자가 응용 프로그램 코드에서 *TouchScreenKeyboard* 를 호출 하는 작업을 수행 합니다.
     * 앱은 *TouchScreenKeyboard* 를 호출 하기 전에 앱 상태를 일시 중지 해야 합니다.
     * 앱이 대규모 보기로 다시 전환 하기 전에 종료 될 수 있습니다.
-2. Unity는 전 세계에 자동 배치 되는 2D XAML 뷰로 전환 합니다.
+2. Unity는 전 세계에서 자동으로 배치 되는 2D XAML 뷰로 전환 합니다.
 3. 사용자가 시스템 키보드를 사용 하 여 텍스트를 입력 하 고 제출 하거나 취소 합니다.
 4. Unity에서 다시 대규모 보기로 전환
     * 앱은 *TouchScreenKeyboard* 완료 될 때 앱 상태를 다시 시작 해야 합니다.
@@ -49,7 +49,7 @@ HoloLens에서 *TouchScreenKeyboard* 는 시스템의 화면 키보드를 활용
 HoloLens 시스템 키보드는 "UWP 빌드 형식"을 "XAML"로 설정 하 여 내보낸 Unity 응용 프로그램 에서만 사용할 수 있습니다. "D3D"를 통해 "XAML"을 "UWP 빌드 형식"으로 선택 하는 경우에는 장단점이 있습니다. 이러한 절충에 익숙하지 않은 경우 시스템 키보드에 대 한 [대체 입력 솔루션](#alternative-keyboard-options) 을 탐색 하는 것이 좋습니다.
 1. **파일** 메뉴를 열고 **빌드 설정** ...을 선택 합니다.
 2. **플랫폼이** **Windows 스토어** 로 설정 되 고 **SDK** 가 **유니버설 10** 으로 설정 되었는지 확인 하 고 **UWP 빌드 형식을** **XAML** 로 설정 합니다.
-3. **빌드 설정** 대화 상자에서 **플레이어 설정 ...** 단추를 클릭 합니다.
+3. **빌드 설정** 대화 상자에서 **플레이어 설정 ...** 단추를 선택 합니다.
 4. **Windows 스토어에 대 한 설정 탭을** 선택 합니다.
 5. **기타 설정** 그룹 확장
 6. **렌더링** 섹션에서 **가상 현실 지원** 확인란을 선택 하 여 새 **가상 현실 장치** 목록을 추가 합니다.
@@ -71,7 +71,7 @@ public static string keyboardText = "";
 
 ### <a name="invoke-the-keyboard"></a>키보드 호출
 
-키보드 입력을 요청 하는 이벤트가 발생 하는 경우 원하는 입력 형식에 따라 이러한 함수 중 하나를 호출 합니다. 제목은 textPlaceholder 매개 변수에 지정 됩니다.
+키보드 입력을 요청 하는 이벤트가 발생 하는 경우 textPlaceholder 매개 변수의 제목을 사용 하 여 원하는 입력 형식에 따라 이러한 함수 중 하나를 호출 합니다.
 
 ```cs
 // Single-line textbox
@@ -118,7 +118,7 @@ Unity를 통한 시스템 키보드 활용에 대 한 현재 대안은 다음과
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 소개한 Unity 개발 검사점 경험을 팔로 하는 경우 혼합 현실 플랫폼 기능과 Api를 탐색 하는 과정을 진행 하 고 있습니다. 여기에서 [토픽](unity-development-overview.md#3-platform-capabilities-and-apis) 을 계속 진행 하거나 장치 또는 에뮬레이터에서 앱을 배포 하기 위해 바로 이동할 수 있습니다.
+앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 혼합 현실 플랫폼 기능과 Api를 탐색 하는 것이 좋습니다. 여기에서 [토픽](unity-development-overview.md#3-platform-capabilities-and-apis) 을 계속 하거나 장치 또는 에뮬레이터에서 앱을 배포 하기 위해 바로 이동할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [HoloLens 또는 Windows Mixed Reality 몰입 형 헤드셋에 배포](../platform-capabilities-and-apis/using-visual-studio.md)

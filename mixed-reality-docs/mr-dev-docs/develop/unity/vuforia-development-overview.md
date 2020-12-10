@@ -1,23 +1,23 @@
 ---
 title: Unity에서 Vuforia 사용
-description: Vuforia를 활용 하 여 Unity에서 Windows Mixed Reality 응용 프로그램을 빌드합니다.
+description: Vuforia를 사용 하 여 Unity에서 Windows Mixed Reality 응용 프로그램을 빌드합니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 12/20/2019
 ms.topic: article
 keywords: Vuforia, 표식, 좌표, 참조 프레임, 추적, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, unity, HoloLens, 장치 추적, 성능 모드, Vuforia 개발자 포털
-ms.openlocfilehash: 930f23d5bbc4115476c337dcb99f40096039d78f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: ecacf4036bfab38eb90782a194c445a83ca623ba
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679672"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010564"
 ---
 # <a name="using-vuforia-engine-with-unity"></a>Unity에서 Vuforia 엔진 사용
 
 Vuforia 엔진은 환경에서 특정 이미지 및 개체에 AR 환경을 연결 하는 기능을 제공 하는 중요 한 기능을 제공 합니다. 이 기능을 사용 하 여 산업 기업의 기계에 대 한 단계별 단계별 지침을 오버레이 하거나 실제 제품 또는 게임에 디지털 기능 및 환경을 추가할 수 있습니다.
 
-AR 환경을 개발할 때 유연성을 높이기 위해 Vuforia 엔진은 광범위 한 기능 및 대상을 제공 합니다. Vuforia 모델 대상의 최신 기능 중 하나는 상용 및 산업용에서 사용 하는 주요 기능입니다. 모델 대상을 사용 하면 응용 프로그램에서 컴퓨터, 자동차 또는 장난감과 같은 물리적 개체를 인식 하 고 CAD 또는 디지털 3D 모델에 따라 추적할 수 있습니다. 산업에서 사용 하는 경우이 기능을 통해 어셈블리 작업자 및 서비스 기술자에 게 공장 또는 현장에서 제공 되는 동안 AR 작업 지침과 절차 지침을 제공할 수 있습니다.
+Vuforia 엔진은 다양 한 기능과 목표를 제공 하 여 AR 개발 프로세스를 보다 유연 하 게 만듭니다. Vuforia 모델 대상의 최신 기능 중 하나는 상용 및 산업용에서 사용 하는 주요 기능입니다. 모델 대상을 사용 하면 응용 프로그램에서 컴퓨터, 자동차 또는 장난감과 같은 물리적 개체를 인식 하 고 CAD 또는 디지털 3D 모델에 따라 추적할 수 있습니다. 산업에서 사용 하는 경우이 기능을 통해 어셈블리 작업자 및 서비스 기술자에 게 공장 또는 현장에서 제공 되는 동안 AR 작업 지침과 절차 지침을 제공할 수 있습니다.
 
 휴대폰 및 태블릿 용으로 빌드된 기존 Vuforia 엔진 앱은 HoloLens에서 실행 되도록 Unity에서 쉽게 구성할 수 있습니다. Vuforia 엔진을 사용 하 여 새 HoloLens 앱을 Surface Pro 및 Surface 서적 같은 Windows 10 태블릿으로 가져올 수도 있습니다.
 
@@ -32,9 +32,9 @@ Unity를 설치 하는 경우 "Windows Store IL2CPP Scripting 백 엔드"를 설
 
 ## <a name="getting-started-with-vuforia-engine"></a>Vuforia 엔진 시작
 
-HoloLens에서 Vuforia 엔진 사용에 대해 배우는 가장 좋은 출발점은 [Vuforia 엔진 HoloLens 샘플](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) (Unity Asset Store에서 사용 가능)과 함께 사용 하는 것입니다. 이 샘플에서는 HoloLens에 배포할 수 있는 미리 구성 된 장면을 비롯 한 전체 HoloLens 프로젝트를 제공 합니다.
+Vuforia 엔진 및 HoloLens에 대해 배우는 가장 좋은 출발점은 [Vuforia 엔진 hololens 샘플](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) (Unity Asset Store에서 사용 가능)입니다. 이 샘플에서는 HoloLens에 배포할 수 있는 미리 구성 된 장면을 비롯 한 전체 HoloLens 프로젝트를 제공 합니다.
 
-이 장면에서는 Vuforia 이미지 대상을 사용 하 여 이미지를 인식 하 고 HoloLens 환경에서 디지털 콘텐츠로 확장 하는 방법을 보여 줍니다. Vuforia 엔진 Hololens 샘플에는 HoloLens의 모델 대상 및 VuMarks의 사용을 보여 주는 장면이 포함 되어 있습니다. 사용자 고유의 콘텐츠를 백그라운드에서 쉽게 대체 하 여 Vuforia 엔진을 사용 하는 HoloLens 앱을 만들 수 있습니다.
+이 장면에서는 Vuforia 이미지 대상을 사용 하 여 이미지를 인식 하 고 HoloLens 환경에서 디지털 콘텐츠로 확장 하는 방법을 보여 줍니다. Vuforia 엔진 HoloLens 샘플에는 HoloLens의 모델 대상 및 VuMarks의 사용을 보여 주는 장면이 포함 되어 있습니다. 사용자 고유의 콘텐츠를 백그라운드에서 쉽게 대체 하 여 Vuforia 엔진을 사용 하는 HoloLens 앱을 만들 수 있습니다.
 
 
 
@@ -48,7 +48,7 @@ HoloLens 용 Vuforia 엔진 앱을 개발 하는 것은 기본적으로 다른 �
 3.  빌드에서 **장면** 에 샘플 장면을 추가 **합니다.**
 4.  **빌드 설정** 에서 **열려 있는 장면 추가** 단추를 클릭 하 여 빌드 플랫폼을 **UWP** 로 전환 합니다.
 ![image](https://user-images.githubusercontent.com/45470042/89573103-173daa80-d7f8-11ea-9284-931a7b6c913d.png)
-5.  **플레이어 설정** 단추를 클릭 합니다.  
+5.  **플레이어 설정** 단추를 선택 합니다.  
    * **UWP** 아이콘을 선택 하 고 **XR 설정** 섹션을 확장 합니다.
    * **가상 현실 지원** 여부를 확인 합니다.    
    * **가상 현실 sdk** 에서 다음을 확인 합니다.
@@ -87,7 +87,6 @@ Vuforia 엔진은 카메라 추적 및 HoloLens의 공간 추적에서 포즈를
 
 검색 되었지만 더 이상 표시 되지 않는 대상은 EXTENDED_TRACKED로 보고 됩니다. 이러한 경우 모든 대상에 사용 되는 DefaultTrackableEventHandler 스크립트는 계속 해 서 확대 콘텐츠를 렌더링 합니다. 개발자는 사용자 지정 추적 가능 이벤트 처리기 스크립트를 구현 하 여이 동작을 제어할 수 있습니다.
 
-
 ## <a name="performance-mode-with-vuforia-engine"></a>Vuforia 엔진을 사용 하는 성능 모드 
 
 Vuforia 엔진을 통해 HoloLens의 성능을 관리 하 고 CPU에 대 한 워크 로드를 줄일 수 있습니다. Vuforia 엔진은 선택할 수 있는 세 가지 모드 (기본값, 속도 최적화 및 품질 최적화)를 제공 합니다. 
@@ -112,4 +111,4 @@ Unity에서 성능 모드를 변경 하려면 ARCamera GameObject의 구성 요�
 * [Vuforia 설명서: Vuforia Unity 확장을 설치 하는 방법](https://library.vuforia.com/articles/Solution/Installing-the-Unity-Extension)
 * [Vuforia 설명서: Unity에서 HoloLens 샘플 사용](https://library.vuforia.com/articles/Solution/Working-with-the-HoloLens-sample-in-Unity)
 * [Vuforia 설명서: Vuforia의 장치 추적](https://library.vuforia.com/features/environments/device-tracker-overview.html)
-* [Vuforia 설명서: 프레임 속도 및 성능 Optomization](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/Framerate-Optimization-for-Mixed-Reality-Apps.html)
+* [Vuforia 설명서: 프레임 속도 및 성능 최적화](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/Framerate-Optimization-for-Mixed-Reality-Apps.html)

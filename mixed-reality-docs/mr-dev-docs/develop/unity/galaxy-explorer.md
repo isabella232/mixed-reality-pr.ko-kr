@@ -6,18 +6,19 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: galaxy 탐색기, 사례 연구, 프로젝트, 샘플, MRTK, Mixed Reality Toolkit, Unity, 샘플 앱, 예제 앱, 오픈 소스, Microsoft Store, HoloLens, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: a58d07cd50679154fe68d3b8b7d424ea6cfbf39e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7ab439a1248895975c5ebff676862515ee79ecf0
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678622"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010304"
 ---
 # <a name="galaxy-explorer"></a>갤럭시 익스플로러
 
 **아이디어를 공유 했습니다. 코드를 공유 하 고 있습니다.**
 
-갤럭시 익스플로러 프로젝트가 준비되었습니다. 커뮤니티와 아이디어를 공유하고, 앱을 선택하고, 팀이 앱을 빌드하는 것을 살펴보았습니다. 이제 소스 코드를 구할 수도 있습니다. 장치가 있는 경우 Microsoft HoloLens 용 Windows 스토어에서 Galaxy 탐색기 프로젝트를 다운로드할 수도 있습니다.
+갤럭시 익스플로러 프로젝트가 준비되었습니다. 커뮤니티와 아이디어를 공유 하 고, 앱을 선택 하 고, 팀 빌드를 감시 했으며, 이제 소스 코드를 가져올 수 있습니다. 장치가 있는 경우 Microsoft HoloLens 용 Windows 스토어에서 Galaxy 탐색기 프로젝트를 다운로드할 수 있습니다.
+
 >[!TIP]
 >GitHub에서 [코드 가져오기](https://github.com/Microsoft/GalaxyExplorer)
 
@@ -92,7 +93,7 @@ Microsoft HoloLens 커뮤니티는 holographic 컴퓨팅이 전 세계를 어떻
 ![Galaxy 탐색기 개발 팀](images/syiteampic.jpg)<br>
 *Galaxy 탐색기 개발 팀*
 
-적절 한 팀을 구축 하는 것이 가장 중요 한 투자 중 하나입니다. 해당 개발 모델에 익숙한 게임 스튜디오의 경우와 유사 하 게이를 구성 하기로 결정 했습니다. 고정 된 시간 (2016 년 3 월 30 일에 빌드 전에 쿨 효과를 만듦)을 포함 하 여 범위를 제어 하기 위해 11 개의 코어 팀 멤버가 선택 했습니다.
+적절 한 팀을 구축 하는 것이 가장 중요 한 투자 중 하나 이며, 개발 모델에 익숙한 사용자를 위해 game studio와 유사 하 게 구성 하기로 결정 했습니다. 고정 된 시간 (2016 년 3 월 30 일에 빌드 전에 쿨 효과를 만듦)이 있으므로 범위를 제어 하기 위해 11 개의 코어 팀 멤버가 선택 했습니다.
 
 이 프로젝트에 대해 계획을 수행 하 고, 진행률을 검토 하 고, 하루 종일 실행 되는 것을 유지 하는 생산자, Jessica로 시작 했습니다. 분홍색 머리카락을 사용 하는 것입니다. Peter (디자인 감독)와 선임 디자이너 ()가 있습니다. Galaxy 탐색기를 위한 독창적인 비전을 보유 하 고 있습니다. Jon은 맨 앞 행에서의 고, Peter는 뒤쪽의 오른쪽에서 두 번째입니다.
 
@@ -100,10 +101,10 @@ Microsoft HoloLens 커뮤니티는 holographic 컴퓨팅이 전 세계를 어떻
 
 5 개 음악가 (Jedd, 뒷면에서 두 번째로 왼쪽), 모델러 (Andy, 뒷면에서 오른쪽으로), 기술 음악가 (Alex (오른쪽)) 및 애니메이터 (Steve (왼쪽에서 가장 함))로 시작 했습니다. 각 항목은 그 이상 이지만 주 책임이 있습니다.
 
-매일 빌드를 테스트 하 고, 빌드 검토를 설정 하 고, 온라인 상태가 되 면 기능을 검토 하는 한 가지 전체 시간 테스터 (레나 –)가 있습니다. 항상 빌드를 살펴보면 모든 사람이 지속적으로 테스트 되었습니다. 레나는 가죽 재킷 rocking입니다.
+매일 빌드를 테스트 하 고, 빌드 검토를 설정 하 고, 온라인 상태가 되 면 기능을 검토 하는 한 가지 전체 시간 테스터 (레나)가 있습니다. 항상 빌드를 살펴보면 모든 사람이 지속적으로 테스트 되었습니다. 레나는 가죽 재킷 rocking입니다.
 
-Microsoft에서 Microsoft의 큰 스튜디오에 참여 하 고 있습니다 (게임을 진행 하지 않는 개발 팀의 경우). 많은 다른 사람들이 참여 하 고 있습니다 .이는 프로젝트 전체에서 자주 사용 되는 귀사 재능, 오디오 엔지니어 및 스튜디오 리더십에서 자주 노력 했지만, 이러한 인력 들은 광범위 한 팀이 보유 한 다른 프로젝트와 리소스를 공유 했습니다.
+Microsoft에서 Microsoft의 큰 스튜디오에 참여 하 고 있습니다 (게임을 진행 하지 않는 개발의 경우 팀으로 생각). 많은 다른 사람들이 참여 하 고 있습니다 .이는 프로젝트 전체에서 자주 사용 되는 귀사 재능, 오디오 엔지니어 및 스튜디오 리더십에서 자주 호출 했지만, 이러한 인력 들은 더 광범위 한 팀이 보유 한 다른 프로젝트와 리소스를 공유 했습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [사례 연구-혼합 현실에서 galaxy 만들기](../../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)
 * [Galaxy 탐색기 GitHub 리포지토리](https://github.com/Microsoft/GalaxyExplorer)

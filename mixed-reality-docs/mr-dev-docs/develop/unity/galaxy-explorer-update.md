@@ -1,27 +1,27 @@
 ---
 title: HoloLens 용 Galaxy 탐색기 만들기 2
-description: HoloLens의 Galaxy 탐색기를 업데이트 하는 방법 2를 시작 합니다. 원래 Galaxy 탐색기와 마찬가지로 팀은 GitHub의 프로젝트를 열어 커뮤니티에 모든 권한이 있는지 확인 합니다.
+description: HoloLens의 Galaxy 탐색기를 업데이트 하는 방법 2를 시작 합니다. 원래 Galaxy 탐색기와 마찬가지로 팀은 GitHub에서 프로젝트를 열고 커뮤니티에 모든 권한이 있는지 확인 합니다.
 author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: galaxy 탐색기, 사례 연구, 프로젝트, 샘플, MRTK, Mixed Reality Toolkit, Unity, 샘플 앱, 예제 앱, 오픈 소스, Microsoft Store, HoloLens, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 00bf30224a820bd85394c4b97136f81b52fe4128
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 00bf589d738cf74cbfdb489bc43aadf931dda285
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677632"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010474"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>HoloLens 용 Galaxy 탐색기 만들기 2
 
-HoloLens의 Galaxy 탐색기를 업데이트 하는 방법 2를 시작 합니다. [Galaxy 탐색기](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer "갤럭시 익스플로러") 는 원래 아이디어 프로그램 공유를 통해 HoloLens (첫 번째 gen) 용 오픈 소스 응용 프로그램으로 개발 되었으며, 많은 사람들이 보유 하 고 있는 첫 번째 혼합 현실 환경 중 하나입니다. 이제 [HoloLens 2의 새롭고 흥미로운 기능](https://www.microsoft.com/hololens/hardware)을 위해 업데이트 하 고 있습니다.
+HoloLens 2 응용 프로그램에 대해 업데이트 된 Galaxy 탐색기를 시작 합니다. [Galaxy 탐색기](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer "갤럭시 익스플로러") 는 원래 아이디어 프로그램 공유를 통해 HoloLens (최초의 gen)를 위한 오픈 소스 응용 프로그램으로 개발 되었으며, 많은 사람들이 경험 하는 첫 번째 혼합 현실 환경 중 하나입니다. 이제 [HoloLens 2의 새롭고 흥미로운 기능](https://www.microsoft.com/hololens/hardware)을 위해 업데이트 하는 중입니다.
 
-[Microsoft Mixed Reality 스튜디오](galaxy-explorer-update.md#mixed-reality-studios)중 하나로, 일반적으로 상용 성적 솔루션을 개발 하 고 창의적인 개발 프로세스 전체에서 대상 플랫폼에 대 한 테스트를 & 개발 하 고 있습니다. 이제 HoloLens 2 장치에 아직 액세스할 수 없지만 Galaxy 탐색기에 대 한 업데이트를 시작 하는 것이 좋습니다. Microsoft는이 프로젝트에 대해 우리와 커뮤니티에서 사용할 수 있게 되는 프레임 워크 및 도구 (예: [Mrtk v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html))를 형성 하 고 있습니다.
+[Microsoft Mixed Reality 스튜디오](galaxy-explorer-update.md#mixed-reality-studios)중 하나로, 일반적으로 상용 성적 솔루션을 개발 하 고 창의적인 개발 프로세스 전체에서 대상 플랫폼에 대 한 테스트를 & 개발 하 고 있습니다. 우리와 커뮤니티에서 제공 되는 프레임 워크 및 도구 (예: [Mrtk](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html))를 사용 하 여이 프로젝트에 대해 형성 하 고 있습니다.
 
-원래 Galaxy 탐색기와 마찬가지로 [팀](galaxy-explorer-update.md#meet-the-team) 은 [GitHub의 프로젝트를 열어](https://github.com/Microsoft/GalaxyExplorer) 커뮤니티에 모든 권한이 있는지 확인 합니다. 여기서는 MRTK v1에서 MRTK v 2로 포팅 하는 방법, HoloLens 2에서 제공 되는 새로운 기능을 기반으로 하 여 환경을 개선 하는 방법, 그리고 Galaxy 탐색기에서 다중 플랫폼 환경을 유지 하도록 보장 하는 방법에 대 한 완전 한 투명성을 수행. 따라서 HoloLens에서 Galaxy 탐색기를 보고 있든 (첫 번째 gen), HoloLens 2, Windows Mixed Reality 헤드셋 또는 Windows 10 desktop 중 어디에 있든 간에 편안 하 게 편안 하 게 경험 하 고 경험을 최대한 활용 하고자 합니다.
+원래 Galaxy 탐색기와 마찬가지로 [팀](galaxy-explorer-update.md#meet-the-team) 은 [GitHub의 프로젝트를 열어](https://github.com/Microsoft/GalaxyExplorer) 커뮤니티에 모든 권한이 있는지 확인 합니다. 또한 MRTK v1에서 MRTK v 2로 이식 하는 방법에 대 한 완전 한 투명성, HoloLens 2에서 제공 되는 새로운 기능을 사용 하는 환경 개선 및 Galaxy 탐색기에서 다중 플랫폼 환경이 유지 되었는지 확인 하는 방법을 설명 합니다. HoloLens (처음 gen), HoloLens 2, Windows Mixed Reality 헤드셋 또는 Windows 10 desktop에서 Galaxy 탐색기를 보는 경우에는 최대한 많은 경험을 제공 하 고 싶습니다.
 
-이 페이지는 프로젝트를 진행할 때 확장 되며, 프로젝트에 대 한 참가자의 의견을 제공 하기 위해 더 자세한 문서, 코드, 디자인 아티팩트의, 추가 MRTK v2 설명서 등에 연결 합니다.
+이 페이지는 프로젝트에 대 한 자세한 문서, 코드, 디자인 아티팩트 및 추가 MRTK 설명서에 대 한 링크를 사용 하 여 프로젝트를 진행 하면서 확장 되어 프로젝트에 대 한 의견을 제공 합니다.
 
 ## <a name="unveiling-the-new-logo"></a>새 로고 예상치
 
@@ -33,17 +33,17 @@ HoloLens의 Galaxy 탐색기를 업데이트 하는 방법 2를 시작 합니다
 
 ## <a name="thinking-about-interactions"></a>상호 작용 고려
 
-독창적인 스튜디오는 Galaxy Explorer를 HoloLens 2로 이식할 수 있는 권한에 대 한 ecstatic입니다. 처음에는 새로운 장치에 대 한 축 하 드립니다. 그리고 혼합 현실 역량을 상상력으로 제한 한다는 것을 보여 줍니다.
+독창적인 스튜디오는 Galaxy Explorer를 HoloLens 2로 이식할 수 있는 권한에 대 한 ecstatic입니다. 처음에는 새로운 장치에 대 한 축 하 드립니다. 그리고 혼합 현실 역량은 상상력만 제한 된다는 것을 보여 줍니다.
 
 HoloLens 2를 사용 하면 사용자가 자연 스러운 방식으로 holograms을 터치, 판단 및 이동할 수 있습니다. 실제 개체와 같이 응답 합니다. 완전 한 트레일러 식 모델은 사용자가 자연스럽 게 작업할 수 있기 때문에 놀라운 역할을 합니다. 예를 들어 모든 사용자가 컵을 약간 다르게 선택 하 고 특정 한 방법을 적용 하는 대신, HoloLens 2를 사용 하 여 작업을 수행할 수 있습니다.
 
 >[!VIDEO https://www.youtube.com/embed/wogJv5v9x-s]
 
-이는 첫 번째 세대 HoloLens 장치에서 공기 탭 기반 인터페이스를 크게 변경 하는 것입니다. 사용자는 먼 거리에서 holograms와 상호 작용 하는 대신 "사용자가 가까이와 개인"을 가져올 수 있습니다. 기존 환경을 HoloLens 2로 포팅 하거나 새로운 환경을 계획할 때 holograms의 직접 조작을 이해 하는 것이 중요 합니다.
+이는 첫 번째 생성 HoloLens 장치에서 공기 탭 기반 인터페이스의 중요 한 변경 내용입니다. 사용자는 먼 거리에서 holograms와 상호 작용 하는 대신 "사용자가 가까이와 개인"을 가져올 수 있습니다. 기존 환경을 HoloLens 2로 포팅 하거나 새로운 환경을 계획할 때 holograms의 직접 조작을 이해 하는 것이 중요 합니다.
 
 ### <a name="direct-manipulation-vs-the-vast-distances-in-space"></a>직접 조작과 공간의 넓은 거리 비교
 
-이는 전 세계에 연락 하 고 전 세계에 보관할 수 있는 마법의 경험입니다. 이 방법의 과제는 태양계의 크기 이며 매우 다양 합니다. 사용자는 각 행성에 근접 하 여 상호 작용할 수 있도록 방 주위를 탐색 해야 합니다.
+이는 전 세계에 도달 하 고 전 세계에 있는 마법 경험입니다. 이 방법의 과제는 태양계의 크기 이며 매우 다양 합니다. 사용자는 각 전 세계에 근접 하 여 상호 작용할 수 있도록 공간을 탐색 해야 합니다.
 
 사용자가 더 멀리 떨어져 있는 개체와 상호 작용할 수 있도록 하기 위해 MRTK는 사용자의 팜 중심에서 제공 되는 손 광선을 제공 하 여 손 모양 확장으로 작동 합니다. 도넛 모양의 커서는 광선이 대상 개체와 교차 하는 위치를 나타내기 위해 광선 끝에 연결 됩니다. 그런 다음, 커서가 닿는 개체는 손에서 제스처 명령을 받을 수 있습니다. 
 
@@ -59,7 +59,7 @@ Telekinesis을 기반으로 하는 한 가지 개념은 개체를 조작할 수 
 
 ![강제 잡기 상호 작용에 대 한 개념](images/ge-update-interactions-concept-force-grab.png)
 
-사용자는 대상 피드백을 제공 하는 전 세계의 광선을 가리킵니다. 그런 다음 사용자가 자신의 오픈 손을 확장 하 게 되 면 전 세계에 가까이 있을 때까지 전 세계를 통해 사용자에 게 이동 합니다. 따라서 상호 작용에 대 한 이름: 강제 잡기. 사용자가 해당 지구를 사용 하 여 지구를 푸시하 면 해당 궤도로 다시 돌아옵니다.
+사용자는 대상 피드백을 제공 하는 전 세계의 광선을 가리킵니다. 그런 다음 사용자가 자신의 오픈 손을 확장 하 게 되 면 전 세계에 가까이 있을 때까지 전 세계를 대상으로 합니다. 따라서 상호 작용에 대 한 이름: 강제 잡기. 사용자가 해당 지구를 사용 하 여 지구를 푸시하 면 해당 궤도로 다시 돌아옵니다.
 
 ### <a name="force-grab-prototyping"></a>강제 잡기 프로토타입
 
@@ -79,7 +79,7 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 ### <a name="implementing-force-grab-into-the-application"></a>응용 프로그램에 대 한 강제 잡기 구현
 
-행성에 대해 강제 잡기를 시도 하면 태양계의 소수 자릿수를 변경 해야 했습니다. 사용자가 이해 하 고 탐색할 수 있을 때까지 태양계를 정확 하 고 중간 크기로 표현 하는 것은 어려운 일입니다. 그러나 정확 하 고 작은 크기의 표현이 너무 작아 쉽게 선택할 수 없습니다. 결과적으로 행성의 크기와 태양 개의 개체 간 간격은 상대 정확도를 유지 하면서 보통 크기의 공간 내에서 편안 하 게 설계 되었습니다.
+행성에 대해 강제 잡기를 시도 하면 태양계의 소수 자릿수를 변경 해야 했습니다. 사용자가 이해 하 고 탐색 하기 어려운 양력 시스템의 정확 하 고 보통 크기의 표현을 확인 하는 것은 쉽지 않습니다. 그러나 작은 크기의 표현이 너무 작아 쉽게 선택할 수 없습니다. 결과적으로 행성의 크기와 태양 개의 개체 간 간격은 상대 정확도를 유지 하면서 보통 크기의 공간 내에서 편안 하 게 설계 되었습니다.
 
 개발 스 프린트의 이후 단계를 진행 하는 동안 동료 MSFT Mixed Reality 전문가에 게 사내를 사용 하는 것이 충분 하기 때문에 전문 테스터로 서 입력을 받고 강제로 잡기 상호 작용에 대 한 빠른 반복을 수행할 수 있습니다.
 
@@ -91,17 +91,17 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 HoloLens 2를 실험 새 상호 작용이 자연스럽 고 직관적 이더라도 holograms는 가중치 또는 tactile sensations 없이 동일 하 게 유지 된다는 것을 알게 되었습니다. Holograms는 사용자가 개체와 상호 작용할 때 수신 하는 데 사용 하는 자연 스러운 피드백을 제공 하지 않으므로 만들어야 합니다.
 
-사용자가 상호 작용의 다양 한 단계를 위해 사용자에 게 제공 되는 시각적 및 오디오 피드백 및 강제 잡기 메커니즘이 Galaxy 탐색기와 상호 작용 하는 중심 이므로 많은 반복이 발생 했습니다. 목표는 각 상호 작용 단계에 대 한 오디오 및 시각적 피드백의 적절 한 균형을 찾는 것입니다. 즉, 의도 한 개체에 초점을 맞춘 후 사용자에 게 호출 하 고 릴리스 합니다. HoloLens (첫 번째 gen)에 사용 된 것 보다 훨씬 더 많은 오디오 및 시각적 피드백을 사용 하 여 더 많은 오디오 및 시각적 피드백이 필요 합니다.
+사용자가 상호 작용의 다양 한 단계를 위해 사용자에 게 제공 되는 시각적 및 오디오 피드백 및 강제 잡기 메커니즘이 Galaxy 탐색기와 상호 작용 하는 중심 이므로 많은 반복이 발생 했습니다. 목표는 각 상호 작용 단계에 대 한 오디오 및 시각적 피드백의 적절 한 균형을 찾는 것입니다. 즉, 의도 한 개체에 초점을 맞춘 후 사용자에 게 호출 하 고 릴리스 합니다. HoloLens (첫 번째 gen)에 사용 된 것과 상호 작용을 강화 하기 위해 더 많은 오디오 및 시각적 피드백이 필요 하다는 것을 알게 되었습니다.
 
 ![행성의 시각적 affordances](images/ge-update-planet-affordances.png)
 
 ### <a name="adding-affordances-for-force-grab"></a>강제 잡기에 affordances 추가
  
-Audio 및 visual affordances를 사용 하는 기본 강제 잡기 메커니즘이 있으면 더 많은 사용자에 게 더 많은 행성을 선택 하는 방법을 살펴보았습니다. 해결 해야 할 두 가지 주요 사항은 다음과 같습니다. 태양계가 3D 이동 인터페이스 이기 때문에 사용자가 개체를 일관 되 게 대상으로 하는 방법을 배울 수 있는 복잡성이 추가 됩니다. 이는 손을 빛이 매우 빠르기 때문에 개체를 선택 하 여 사용자를 매우 빠르게 이동 하는 것입니다.
+Audio 및 visual affordances를 사용 하는 기본 강제 잡기 메커니즘이 있으면 사용자에 게 더 친숙 한 행성을 선택 하는 방법을 살펴보았습니다. 해결 해야 할 두 가지 주요 사항은 다음과 같습니다. 태양계는 3D 이동 인터페이스 이므로 사용자가 개체를 일관 되 게 대상으로 하는 방법을 배울 수 있는 복잡성이 추가 되었습니다. 이는 개체를 선택 하는 속도가 빠르기 때문에 사용자에 게 신속 하 게 이동 하는 것입니다.
 
-대 접근 솔루션을 사용 하 여이에 대해 노력 했습니다. 첫 번째 방법은 매우 직관적입니다. 행성이 사용자에 게 보다 자연스럽 게 접근 하도록 선택 프로세스의 속도를 낮춥니다. 속도가 조정 된 후에는 오디오 및 시각적 affordances을 다시 방문 하 여 사용자에 게 추적 된 지구로 오디오 피드백을 추가 해야 했습니다.
+대 접근 솔루션을 사용 하 여이에 대해 노력 했습니다. 첫 번째 방법은 매우 직관적입니다. 행성이 사용자에 게 보다 자연스럽 게 접근 하도록 선택 프로세스의 속도를 낮춥니다. 속도가 조정 되 면 오디오 및 시각적 affordances을 다시 방문 하 여 사용자에 게 추적 된 지구로 오디오 피드백을 추가 해야 했습니다.
 
-솔루션의 두 번째 부분에서는 전체 강제 잡기 작업을 시각화 하는 것이 매우 중요 합니다. 손 모양 광선이 연결 된 후 대상 개체를 향해 이동 하는 굵은 선을 시각화 하 고 개체를 사용자와 같은 올가미로 다시 가져옵니다. 
+솔루션의 두 번째 부분에서는 전체 강제 잡기 작업을 시각화 하는 방법을 소개 했습니다. 손 모양 광선이 연결 된 후 대상 개체를 향해 이동 하는 굵은 선을 시각화 하 고 개체를 사용자와 같은 올가미로 다시 가져옵니다. 
 
 ![강제 잡기를 위한 시각적 "올가미" affordances](images/ge-update-lasso-affordances.png)
 
@@ -123,7 +123,7 @@ Milky 방식의 태양계를 만드는 것은 humbling 환경 이었습니다. �
 
 다음 방법은 순환 메시의 컴포지션에 컴파일된 대기 이동의 특정 측면을 처리 하는 투명 한 질감 계층으로 구성 된 ' 스모크 및 미러링 ' 솔루션 이었습니다.
 
-아래 이미지에서는 왼쪽의 내부 셸을 볼 수 있습니다. 이 matt 계층은 클라우드를 구성 하는 여러 계층 간의 작은 간격을 방지 하기 위해 컴포지션에 배경을 제공 했습니다. 계층의 저속 회전으로 인해 계층 전체에서 visual unity를 빌드하는 데 도움이 되도록 더 빠른 이동 밴드 사이에 시각적 버퍼로 제공 됩니다.
+아래 이미지에서는 왼쪽의 내부 셸을 볼 수 있습니다. 이 서 수 계층은 클라우드를 구성 하는 여러 계층 간의 작은 간격을 방지 하기 위해 컴포지션에 배경을 제공 했습니다. 계층의 저속 회전으로 인해 계층 전체에서 visual unity를 빌드하는 데 도움이 되도록 더 빠른 이동 밴드 간의 시각적 버퍼로도 제공 됩니다.
 
 모델에 대 한이 앵커를 설정한 후에는 아래에 표시 된 중간 및 오른쪽 메시에서 이동 하는 클라우드 계층이 투영 됩니다.
 
@@ -135,13 +135,13 @@ Milky 방식의 태양계를 만드는 것은 humbling 환경 이었습니다. �
 
 특성에 적합 한 빨간색도 다양 한 이동 부분으로 분리 된 다음, 다른 경우에는 질감의 보이지 않는 영역에 삽입 되었습니다. 이러한 구성 요소는 아래 이미지의 가운데 섹션에서 빨강-toned speckles로 볼 수 있습니다.
 
-각 밴드는 특정 방향과 속도를 가지 므로 각 메시에 개별적으로 질감을 적용 했습니다. 그러면 메시는 전체 표면에 애니메이션 효과를 concentrically 수 있는 공통 중심 및 피벗 점입니다.
+각 밴드는 특정 방향과 속도를 가지 므로 각 메시에 개별적으로 질감을 적용 했습니다. 그러면 메시에는 공통적인 중심 및 피벗 점이 있었으며이로 인해 전체 화면에 애니메이션 효과를 concentrically 수 있습니다.
 
 ![Jupiter 질감 개요](images/ge-update-jupiter-planet-cloud-texture.png)
 
 ### <a name="rotation-and-texture-behavior"></a>회전 및 질감 동작
 
-이제 Jupiter의 시각적 컴퍼지션을 설정 했으므로 회전 및 궤도 속도가 적절히 계산 되어 적용 되었는지 확인 해야 했습니다. Jupiter가 전체 회전을 완료 하는 데 약 9 시간이 걸립니다. 이는 차등 회전으로 인 한 정의의 문제입니다. 따라서 적도 스트림이 ' 마스터 스트림 '으로 설정 되어 전체 회전에 대해 3600 프레임을 차지 합니다. 600, 900, 1200, 1800 등의 초기 위치를 일치 시키기 위해 다른 모든 계층에는 3600의 요소로 회전 속도가 필요 합니다.
+Jupiter의 시각적 컴퍼지션을 설정 하면 회전 및 궤도 속도가 적절히 계산 되어 적용 되었는지 확인 해야 했습니다. Jupiter가 전체 회전을 완료 하는 데 약 9 시간이 걸립니다. 이는 차등 회전으로 인 한 정의의 문제입니다. 따라서 적도 스트림이 ' 마스터 스트림 '으로 설정 되어 전체 회전에 대해 3600 프레임을 차지 합니다. 다른 모든 계층에서는 초기 위치 (예: 600, 900, 1200, 1800 등)를 일치 시키기 위해 3600의 요소로 회전 속도를 높이는 데 필요 합니다.
 
 ![Jupiter shell 질감](images/ge-update-shell-texture.jpg)
 
@@ -176,11 +176,11 @@ Unity는 많은 투명 계층 집합을 처리할 때 쉽게 혼동 됩니다. �
 
 텍스처 된 Jupiter 계층은 처음에 설정 되었으며 구현에 충분 하지 않은 것으로 입증 되었습니다.
 
-원래 행성 표준 셰이더 (및 모든 변형)는 MRTK 표준 셰이더가 지원 하지 않는 SunLightReceiver 스크립트를 통해 해당 조명 정보를 받습니다.
+원래 행성 표준 셰이더 및 모든 변형은 MRTK 표준 셰이더에 지원 되지 않는 SunLightReceiver 스크립트를 통해 해당 조명 정보를 수신 합니다.
 
-전 세계 표준 셰이더는 투명지를 사용 하는 질감 맵을 지원 하지 않으므로 셰이더를 교체 하는 것은 솔루션이 아닙니다. Jupiter 빌드를 의도 한 대로 수행 하기 위해이 셰이더를 편집 했습니다.
+전 세계 표준 셰이더는 투명지를 사용 하는 질감 맵을 지원 하지 않으므로 셰이더를 교체 하는 것은 솔루션이 아닙니다. Jupiter 빌드를 의도 한 대로 작동 하도록이 셰이더를 편집 했습니다.
 
-마지막으로, 소스 Blend를 10으로 설정 하 고 대상 Blend를 5로 설정 하 여 알파 혼합을 설정 해야 했습니다.
+마지막으로, 소스 Blend를 10으로 설정 하 고 대상 Blend를 5로 설정 하 여 알파 혼합을 설정 해야 합니다.
 
 ![Jupiter Unity 속성](images/ge-update-jupiter-unity-render-queue.jpg)
 
@@ -188,13 +188,13 @@ Galaxy 탐색기에서 Jupiter의 최종 렌더링을 확인할 수 있습니다
 
 ## <a name="meet-the-team"></a>팀 소개 
 
-혼합 현실 스튜디오 팀은 디자이너, 3D 아티스트, UX 전문가, 개발자, 프로그램 관리자 및 스튜디오 헤드로 구성 됩니다. 우리는 모든 세계에서 한국, 캐나다, 독일, 이스라엘, 일본, 영국 및 미국에서 안녕 합니다. Microsoft는 다양 한 배경에서 제공 되는 여러 전문 분야 팀입니다. 게임-기존 및 비 주사위, 디지털 마케팅, 의료 및 과학을 모두 제공 합니다.
+혼합 현실 스튜디오 팀은 디자이너, 3D 아티스트, UX 전문가, 개발자, 프로그램 관리자 및 스튜디오 헤드로 구성 됩니다. 모든 세계에는 벨기에, 캐나다, 독일, 이스라엘, 일본, 영국, 미국 등이 있습니다. Microsoft는 다양 한 배경에서 제공 되는 여러 전문 분야 팀입니다. 게임-기존 및 비 주사위, 디지털 마케팅, 의료 및 과학을 모두 제공 합니다.
 
-HoloLens 2 용 Galaxy 탐색기를 만들고 HoloLens (첫 번째 gen), VR 및 데스크톱 버전을 업데이트 합니다. 
+HoloLens 2 용 Galaxy 탐색기를 만들고 HoloLens (최초의 gen), VR 및 데스크톱 버전을 업데이트 하는 것이 기쁘게 생각 합니다. 
 
 ![Galaxy 탐색기 팀](images/ge-update-team-image.png)
 
-위에서 왼쪽에서 오른쪽으로: Artemis Tsouflidou (Developer), Angie Teickner (비주얼 디자이너), David Janer (UX 디자이너), 김 미 숙 Garrett (배달 & 프로덕션 리드), Yasushi Zonno (Creative 리드), Eline Ledent (개발자) 및 이혜준 Turner ().
+위에서 왼쪽에서 오른쪽으로: Artemis Tsouflidou (Developer), Angie Teickner (비주얼 디자이너), David Janer (UX 디자이너), 김 Garrett (Delivery & 프로덕션 리드), Yasushi Zonno (Creative 리드), Eline Ledent (Developer) 및 이혜준 씨 Turner (Sr-iov).
 왼쪽에서 오른쪽으로: Amit Rojtblat (기술 음악가), Martin Wettig (3D 음악가) 및 Dik Songuer (스튜디오 헤드).
 추천 안 함: Tim Gerken (Tech 리드) 및 Oscar Salandin (비주얼 디자이너).
 
@@ -202,4 +202,4 @@ HoloLens 2 용 Galaxy 탐색기를 만들고 HoloLens (첫 번째 gen), VR 및 �
 
 ### <a name="mixed-reality-studios"></a>혼합 현실 스튜디오
 
-미국, 유럽 및 Asia-Pacific에 있는 Microsoft Mixed Reality 스튜디오 팀은 사용자 환경 디자인, holographic 컴퓨팅, AR/VR 기술 및 3D 개발의 전문가입니다. 3D 자산 만들기, DirectX, Unity, Unreal 등을 포함 합니다. 고객이 조직 전체에 측정 가능한 영향을 만들 수 있도록 하는 동시에 원하는 미래를 구상 하 고 설계, 빌드 및 제공 하는 데 도움이 됩니다. 스튜디오는 엔터프라이즈 응용 프로그램 통합, 도입, 운영 및 지원에 대 한 22000 이상의 Microsoft 서비스 전문가와 긴밀 하 게 협력 합니다.
+미국, 유럽 및 Asia-Pacific에 있는 Microsoft Mixed Reality 스튜디오 팀은 사용자 환경 디자인, holographic 컴퓨팅, AR/VR 기술 및 3D 개발의 전문가입니다. 3D 자산 만들기, DirectX, Unity, Unreal 등을 포함 합니다. 고객이 조직 전체에 측정 가능한 영향을 만들 수 있도록 하는 동시에 원하는 미래를 구상 하 고 설계, 빌드 및 제공 하는 데 도움이 됩니다. 스튜디오는 엔터프라이즈 응용 프로그램 통합, 도입, 운영 및 지원에 대 한 22000 이상의 Microsoft 서비스 전문가와 긴밀 하 게 협력 하 고 있습니다.

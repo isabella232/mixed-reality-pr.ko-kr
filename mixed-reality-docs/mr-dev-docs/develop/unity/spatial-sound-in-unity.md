@@ -2,16 +2,16 @@
 title: Unity의 공간 음향
 description: Unity 장면 내의 특정 3D 점에서 공간 소리를 재생 합니다.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
 keywords: Unity, 공간 음향, HRTF, 대화방 크기, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit, spatializer, 반향
-ms.openlocfilehash: db01fe81457d0f46b7f287458b4d48af4a98f2bc
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 1efe287855cc5b7738069c6d8183c2ecb5bd6d59
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678442"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010144"
 ---
 # <a name="spatial-sound-in-unity"></a>Unity의 공간 음향
 
@@ -19,12 +19,12 @@ ms.locfileid: "94678442"
 
 ## <a name="spatializer-options"></a>Spatializer 옵션
 혼합 현실 응용 프로그램에 대 한 Spatializer 옵션은 다음과 같습니다.
-* *MS HRTF Spatializer* 입니다. Unity는 *Windows Mixed Reality* 선택적 패키지의 일부로이를 제공 합니다.
-  * 이는 높은 비용의 단일 소스 아키텍처에서 CPU에 실행 됩니다.
-  * 이는 이전에 원본 HoloLens 응용 프로그램과의 호환성을 위해 제공 됩니다.
-* *Microsoft Spatializer* 입니다. [Microsoft Spatializer GitHub 리포지토리에서](https://github.com/microsoft/spatialaudio-unity)사용할 수 있습니다.
-  * 이는 저렴 한 ' 다중 원본 ' 아키텍처를 사용 합니다.
-  * HoloLens 2에서이는 하드웨어 가속기로 오프 로드 됩니다.
+* Unity는 *Windows Mixed Reality* 선택적 패키지의 일부로 *MS hrtf Spatializer* 을 제공 합니다.
+  * 는 높은 비용의 단일 소스 아키텍처에서 CPU를 실행 합니다.
+  * 이전에 원본 HoloLens 응용 프로그램과의 호환성을 위해 제공 됩니다.
+* Microsoft *Spatializer* 는 [microsoft Spatializer GitHub 리포지토리에서](https://github.com/microsoft/spatialaudio-unity)사용할 수 있습니다.
+  * 는 저렴 한 ' 다중 원본 ' 아키텍처를 사용 합니다.
+  * HoloLens 2에서 하드웨어 가속기로 오프 로드 되었습니다. 
 
 새 응용 프로그램의 경우 *Microsoft Spatializer* 를 권장 합니다.
 
@@ -34,7 +34,9 @@ ms.locfileid: "94678442"
 * 계층의 개체에 **오디오 소스** 연결
 * **Spatialization 사용** 확인란을 선택 합니다.
 * **공간 Blend** 슬라이더를 ' 1 '로 이동
-* 개발자 워크스테이션에서 공간 오디오를 사용 하도록 설정 했는지 확인 합니다. 작업 표시줄에서 볼륨 아이콘을 마우스 오른쪽 단추로 클릭 하 고 공간 사운드가 "꺼짐" 이외의 항목으로 설정 되었는지 확인 하 여 사용 하도록 설정 합니다. HoloLens 2에 대 한 최고의 정보를 얻으려면 **헤드폰 용 Windows Sonic** 을 선택 합니다.
+* 개발자 워크스테이션에서 공간 오디오를 사용 하도록 설정 했는지 확인 합니다. 
+    * 작업 표시줄에서 볼륨 아이콘을 마우스 오른쪽 단추로 클릭 하 고 공간 사운드가 "꺼짐" 이외의 항목으로 설정 되어 있는지 확인 합니다. 
+    * **Windows Sonic For 헤드폰** 을 선택 하 여 HoloLens 2에서 듣는 내용을 가장 잘 표현 해 보세요.
 
 >[!NOTE]
 >종속성 중 하나가 누락 되어 SpatialAudio에서 플러그 인 Spatializer를 로드 하지 못하는 경우 Unity에 오류가 발생 하는 경우 최신 버전의 [Microsoft Visual C++ 재배포 가능 패키지가](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) PC에 설치 되어 있는지 확인 합니다.
@@ -64,7 +66,7 @@ Unity의 공간 음향 예는 다음을 참조 하세요.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 설명한 Unity 개발 검사점 경험을 팔로 사용할 경우 혼합 현실 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
+앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 혼합 현실 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 계속 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)
@@ -76,6 +78,6 @@ Unity의 공간 음향 예는 다음을 참조 하세요.
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [혼합 현실에서의 소리 디자인](../../design/spatial-sound-design.md)
 * [Microsoft의 spatializer 자습서](tutorials/unity-spatial-audio-ch1.md)

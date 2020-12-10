@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 음성 입력, KeywordRecognizer, GrammarRecognizer, 마이크, 받아쓰기, 음성, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 20e2b8d4b8a18f38e72db7889a5d00cf15bfc0eb
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 66aba92c14eca4183739687934e12db289cd2302
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679892"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010574"
 ---
 # <a name="voice-input-in-unity"></a>Unity의 음성 입력
 
@@ -27,9 +27,9 @@ KeywordRecognizer (두 가지 유형의 PhraseRecognizers 중 하나)를 사용 
 
 ## <a name="enabling-the-capability-for-voice"></a>음성 기능 사용
 
-음성 입력을 활용 하려면 앱에 대해 **마이크** 기능을 선언 해야 합니다.
+음성 입력을 사용 하려면 앱에 대해 **마이크** 기능을 선언 해야 합니다.
 1. Unity 편집기에서 "편집 > 프로젝트 설정 > 플레이어"로 이동 하 여 플레이어 설정으로 이동 합니다.
-2. "Windows 스토어" 탭을 클릭 합니다.
+2. "Windows 스토어" 탭에서 선택 합니다.
 3. "게시 설정 > 기능" 섹션에서 **마이크** 기능을 확인 합니다.
 
 ## <a name="phrase-recognition"></a>문구 인식
@@ -58,7 +58,7 @@ KeywordRecognizer keywordRecognizer;
 Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
 ```
 
-이제 키워드를 사전에 추가 합니다 (예: Start () 메서드 내부). 이 예에서는 "activate" 키워드를 추가 하 고 있습니다.
+이제 Start () 메서드의 경우와 같이 사전에 키워드를 추가 합니다. 이 예에서는 "activate" 키워드를 추가 하 고 있습니다.
 
 ```
 //Create keywords for keyword recognizer
@@ -126,7 +126,7 @@ grammarRecognizer = new GrammarRecognizer(Application.streamingDataPath + "/SRGS
 grammarRecognizer.OnPhraseRecognized += grammarRecognizer_OnPhraseRecognized;
 ```
 
-적절 하 게 처리할 수 있는 SRGS 문법에 지정 된 정보를 포함 하는 콜백이 제공 됩니다. 대부분의 중요 한 정보는 semanticMeanings 배열에서 제공 됩니다.
+SRGS 문법에 지정 된 정보를 포함 하는 콜백을 받게 되며, 적절 하 게 처리할 수 있습니다. 대부분의 중요 한 정보는 semanticMeanings 배열에서 제공 됩니다.
 
 ```
 private void Grammar_OnPhraseRecognized(PhraseRecognizedEventArgs args)
@@ -158,7 +158,7 @@ DictationRecognizer를 사용 하 여 사용자의 음성을 텍스트로 변환
 
 받아쓰기를 활용 하기 위해 앱에 대해 위에서 언급 한 "마이크" 기능과 함께 "인터넷 클라이언트" 기능을 선언 해야 합니다.
 1. Unity 편집기에서 "> 프로젝트 설정 > 플레이어 편집" 페이지로 이동 하 여 플레이어 설정으로 이동 합니다.
-2. "Windows 스토어" 탭을 클릭 합니다.
+2. "Windows 스토어" 탭에서 선택 합니다.
 3. "게시 설정 > 기능" 섹션에서 **Internetclient** 기능을 확인 합니다.
 
 ### <a name="dictationrecognizer"></a>DictationRecognizer
@@ -272,7 +272,7 @@ dictationRecognizer.Dispose();
 * 인식기를 사용 하 여 작업을 완료 한 후에는 Dispose () 메서드를 사용 하 여 해당 리소스를 해제 해야 합니다. 이러한 리소스는 가비지 수집 중에 해제 되지 않은 경우 추가 성능 비용으로 자동으로 해제 됩니다.
 * 시간 제한은 설정 된 시간 후에 발생 합니다. DictationComplete 이벤트에서 이러한 시간 제한을 확인할 수 있습니다. 다음 두 가지 제한 시간을 인식 합니다.
    1. 인식기가 시작 되 고 처음 5 초 동안 오디오가 들리지 않으면 시간이 초과 됩니다.
-   2. 인식기가 결과를 제공 했지만 20 초 동안 침묵 소음을 받은 경우 시간이 초과 됩니다.
+   2. 인식기에서 결과를 제공 했지만 20 초 동안 침묵를 듣게 되 면 시간이 초과 됩니다.
 
 ## <a name="using-both-phrase-recognition-and-dictation"></a>구 인식과 받아쓰기 모두 사용
 

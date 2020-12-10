@@ -6,19 +6,19 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, 포커스 지점, 포커스 평면, 안정화 평면, 안정화 지점, reprojection, LSR, 깊이 버퍼, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 48c0d26e89124b9dbfc1d108354fb6e751e51783
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: d2708dcf39f1d2c67ab1abf69f8330f9dd536ab0
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678692"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010274"
 ---
 # <a name="focus-point-in-unity"></a>Unity의 포커스 포인트
 
 **네임 스페이스:** *unityengine. XR. WSA*<br>
 **유형**: *HolographicSettings*
 
-현재 표시 되는 holograms에서 안정화를 가장 잘 수행 하는 방법에 대 한 힌트를 HoloLens에 제공 하도록 [포커스 지점을](../platform-capabilities-and-apis/hologram-stability.md#reprojection) 설정할 수 있습니다.
+현재 표시 되는 holograms를 가장 잘 안정화 하는 방법에 대 한 힌트를 사용 하 여 HoloLens를 [제공 합니다.](../platform-capabilities-and-apis/hologram-stability.md#reprojection)
 
 Unity에서 포커스 지점을 설정 하려면 *HolographicSettings. SetFocusPointForFrame ()* 를 사용 하 여 모든 프레임을 설정 해야 합니다. 프레임에 대 한 포커스 지점이 설정 되지 않은 경우 기본 안정화 평면이 사용 됩니다.
 
@@ -48,11 +48,12 @@ void Update()
 }
 ```
 
-위의 간단한 코드는 포커스가 있는 개체가 사용자 뒤에서 종료 되는 경우 홀로그램의 안정성을 낮출 수 있습니다.  따라서 일반적으로 포커스 지점을 수동으로 지정 하는 대신 "깊이 버퍼 공유 사용"을 설정 해야 합니다.
+> [!NOTE]
+> 위의 간단한 코드는 포커스가 있는 개체가 사용자 뒤에서 종료 되는 경우 홀로그램의 안정성을 낮출 수 있습니다. 일반적으로 포커스 지점을 수동으로 지정 하는 대신 **[깊이 버퍼 공유 사용](camera-in-unity.md#sharing-your-depth-buffers-with-windows)** 을 설정 하는 것이 좋습니다.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 소개한 Unity 개발 검사점 경험을 팔로 하는 경우 혼합 현실 플랫폼 기능과 Api를 탐색 하는 과정을 진행 하 고 있습니다. 여기에서 다음 항목을 진행할 수 있습니다.
+앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 혼합 현실 플랫폼 기능과 Api를 탐색 하는 것이 좋습니다. 여기에서 다음 항목을 계속 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [추적 손실](tracking-loss-in-unity.md)
@@ -64,5 +65,5 @@ void Update()
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#3-platform-capabilities-and-apis)으로 돌아갈 수 있습니다.
 
-### <a name="see-also"></a>참조
+### <a name="see-also"></a>참고 항목
 * [안정화 평면](../platform-capabilities-and-apis/hologram-stability.md#reprojection)

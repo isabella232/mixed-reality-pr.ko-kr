@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 사진, 비디오, hololens, 카메라, unity, 과정이, PVC, photo video 카메라, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 웹캠, 사진 캡처, 비디오 캡처
-ms.openlocfilehash: c41ff88650da4aa6dc0d98c05b1b881362123a4f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 125521206421acbcc4c9ad6e5fb371314ddb48f2
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678602"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010104"
 ---
 # <a name="locatable-camera-in-unity"></a>Unity의 위치를 찾을 수 있는 카메라
 
@@ -19,10 +19,10 @@ ms.locfileid: "94678602"
 
 [카메라](../platform-capabilities-and-apis/locatable-camera.md)를 사용 하려면 앱에 대해 "웹캠" 기능을 선언 해야 합니다.
 1. Unity 편집기에서 "> 프로젝트 설정 > 플레이어 편집" 페이지로 이동 하 여 플레이어 설정으로 이동 합니다.
-2. "Windows 스토어" 탭을 클릭 합니다.
+2. "Windows 스토어" 탭을 선택 합니다.
 3. "게시 설정 > 기능" 섹션에서 **웹캠** 및 **마이크** 기능을 확인 합니다.
 
-카메라에서는 한 번에 하나의 작업만 수행할 수 있습니다. 카메라의 현재 모드 (사진, 비디오 또는 없음)를 확인 하려면 UnityEngine. XR을 확인할 수 있습니다.
+카메라에서는 한 번에 하나의 작업만 수행할 수 있습니다. 카메라의 현재 사용 중인 모드가 UnityEngine. XR을 사용 하 여 확인할 수 있습니다. 사용 가능한 모드는 사진, 동영상 또는 없음입니다.
 
 ## <a name="photo-capture"></a>사진 캡처
 
@@ -39,7 +39,7 @@ ms.locfileid: "94678602"
 
 ### <a name="common-set-up-for-photocapture"></a>사진 캡처에 대 한 일반적인 설정
 
-세 가지 용도 모두에서 위의 동일한 첫 3 단계를 시작 합니다.
+세 가지 용도 모두에서 위의 세 단계를 시작 합니다.
 
 *사진 캡처* 개체를 만들어 시작
 
@@ -124,9 +124,9 @@ void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
 
 ### <a name="capture-a-photo-to-a-texture2d"></a>Texture2D에 사진 캡처
 
-Texture2D으로 데이터를 캡처할 때 프로세스는 디스크에 캡처하는 것과 매우 비슷합니다.
+Texture2D에 데이터를 캡처할 때 프로세스는 디스크에 캡처하는 것과 비슷합니다.
 
-위의 설정 프로세스를 따릅니다.
+위의 설치 프로세스를 따르세요.
 
 *Onsale Modestarted* 에서 프레임을 메모리로 캡처합니다.
 
@@ -144,7 +144,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-그런 다음 결과를 질감에 적용 하 고 위의 정리 코드를 사용 합니다.
+그런 다음 결과를 질감에 적용 하 고 위의 일반적인 정리 코드를 사용 합니다.
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -165,9 +165,9 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 
 ### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a>사진 캡처 및 원시 바이트 조작
 
-메모리 프레임에 있는 원시 바이트와 상호 작용 하려면 Texture2D 사진 캡처에서와 같이 위와 동일한 설정 *단계를 수행* 합니다. 원시 바이트를 가져와 상호 작용할 수 있는 *OnCapturedPhotoToMemory* 에서 차이가 있습니다.
+메모리 프레임에 있는 원시 바이트와 상호 작용 하려면 Texture2D에 사진을 캡처하는 것 처럼 위와 동일한 설정 *단계를 수행* 합니다. 원시 바이트를 가져와 상호 작용할 수 있는 *OnCapturedPhotoToMemory* 에서 차이가 있습니다.
 
-이 예제에서는 *Setpixels ()* 을 통해 텍스처에 추가로 처리 하거나 적용할 수 있는 *목록을 <Color>* 만듭니다.
+이 예제에서는 *Setpixels ()* 을 통해 추가 처리 또는 텍스처에 적용 되는 *목록을 <Color>* 만듭니다.
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -205,7 +205,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 **네임 스페이스:** *unityengine. XR*<br>
 **유형:** *VideoCapture*
 
-*VideoCapture* 은 *사진 캡처와* 매우 유사 하 게 작동 합니다. 두 가지 차이점은 FPS (초당 프레임 수) 값을 지정 해야 하 고, mp4 파일로는 디스크에 직접 저장 하는 것입니다. *VideoCapture* 를 사용 하는 단계는 다음과 같습니다.
+*VideoCapture* 는 *사진 캡처* 와 유사 하 게 작동 합니다. 두 가지 차이점은 FPS (초당 프레임 수) 값을 지정 해야 하 고, mp4 파일로는 디스크에 직접 저장 하는 것입니다. *VideoCapture* 를 사용 하는 단계는 다음과 같습니다.
 1. *VideoCapture* 개체 만들기
 2. 원하는 설정을 사용 하 여 *CameraParameters* 개체를 만듭니다.
 3. *Startvideomodeasync* 를 통해 비디오 모드 시작
@@ -277,7 +277,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-나중에 기록을 중지 하는 것이 좋습니다. 이는 예를 들어 타이머 또는 사용자 입력에서 발생할 수 있습니다.
+나중에 타이머 또는 사용자 입력을 사용 하 여 기록을 중지할 수 있습니다 (예를 들어).
 
 ```cs
 // The user has indicated to stop recording
@@ -309,7 +309,7 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 소개한 Unity 개발 검사점 경험을 팔로 하는 경우 혼합 현실 플랫폼 기능과 Api를 탐색 하는 과정을 진행 하 고 있습니다. 여기에서 다음 항목을 진행할 수 있습니다.
+앞서 소개한 Unity 개발 검사점 경험을 팔로 하는 경우 혼합 현실 플랫폼 기능과 Api를 탐색 하는 과정을 진행 하 고 있습니다. 여기에서 다음 항목을 계속 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [포커스 지점](focus-point-in-unity.md)

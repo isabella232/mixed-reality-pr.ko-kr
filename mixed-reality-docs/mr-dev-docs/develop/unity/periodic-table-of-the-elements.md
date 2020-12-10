@@ -1,24 +1,24 @@
 ---
 title: 원소의 주기율표
-description: 요소의 정기 테이블은 Microsoft의 혼합 현실 디자인 랩에서 오픈 소스 샘플 앱으로, 개체 컬렉션을 사용 하 여 다양 한 표면 유형을 포함 하는 3D 공간에서 개체의 배열을 레이아웃 하는 방법을 배울 수 있습니다.
+description: 요소의 정기 테이블은 Microsoft의 혼합 현실 디자인 랩에서 오픈 소스 샘플 앱입니다. 개체 컬렉션을 사용하여 다양한 화면 형식의 3D 공간에서 개체 배열을 배치하는 방법을 알아봅니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, 디자인, 샘플 앱, 컨트롤, MRTK, Mixed Reality Toolkit, Unity, 샘플 앱, 예제 앱, 오픈 소스, Microsoft Store, HoloLens, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 4b85631fb044ee0b24c003f7808fd0455b87deec
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a4099c889fee886e63d3a8b773398a250621f26e
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677682"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010184"
 ---
 # <a name="periodic-table-of-the-elements"></a>원소의 주기율표
 
 >[!NOTE]
 >이 문서에서는 혼합 현실 앱 개발에 대 한 학습 정보 및 제안을 공유 하는 위치를 [혼합 현실 디자인 랩에서](https://github.com/Microsoft/MRDesignLabs_Unity)만든 예비 샘플에 대해 설명 합니다. 디자인 관련 문서와 코드는 새로운 검색을 수행할 때 개선 됩니다.
 
-[요소의 정기 테이블](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) 은 Microsoft의 혼합 현실 디자인 랩에서 오픈 소스 샘플 앱입니다. 이 프로젝트를 사용 하 여 **[개체 컬렉션](../../design/object-collection.md)** 을 사용 하는 다양 한 표면 형식으로 3d 공간에서 개체의 배열을 레이아웃 하는 방법을 배울 수 있습니다. 또한 HoloLens에서 표준 입력에 응답 하는 interactable 개체를 만드는 방법에 대해 알아봅니다. 이 프로젝트의 구성 요소를 사용 하 여 혼합 현실 앱 환경을 만들 수 있습니다.
+[요소의 정기 테이블](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) 은 Microsoft의 혼합 현실 디자인 랩에서 오픈 소스 샘플 앱입니다. **[개체 컬렉션](../../design/object-collection.md)** 을 사용 하 여 다양 한 표면 형식으로 3d 공간에서 개체의 배열을 레이아웃 하는 방법에 대해 알아봅니다. 또한 HoloLens에서 표준 입력에 응답 하는 interactable 개체를 만드는 방법에 대해 알아봅니다. 이 프로젝트의 구성 요소를 사용 하 여 혼합 현실 앱 환경을 만들 수 있습니다.
 
 ![요소 앱의 기간 테이블](images/640px-periodictable-hero.jpg)
 
@@ -33,7 +33,7 @@ ms.locfileid: "94677682"
 
 ## <a name="background"></a>배경
 
-HoloLens를 처음 경험 하 고 나면, 정기적 테이블 앱은 혼합 현실에서 시험해 보고 싶을 것입니다. 각 요소에는 텍스트와 함께 표시 되는 데이터 요소가 많기 때문에 3D 공간에서 입력 컴퍼지션을 탐색 하는 것이 좋습니다. 요소의 전자 모델을 시각화할 수 있는 것은이 프로젝트의 또 다른 흥미로운 부분 이었습니다.
+HoloLens를 처음 경험 한 후에는 혼합 현실에서 정기적으로 테이블 앱을 시험 하고자 했습니다. 각 요소에는 텍스트와 함께 표시 되는 데이터 요소가 많기 때문에 3D 공간에서 입력 컴퍼지션을 탐색 하는 것이 좋습니다. 사용자에 게 요소의 전자 모델을 시각화할 수 있는 기회를이 프로젝트의 또 다른 흥미로운 부분으로 제공 합니다.
 
 ## <a name="design"></a>디자인
 
@@ -44,7 +44,7 @@ HoloLens를 처음 경험 하 고 나면, 정기적 테이블 앱은 혼합 현�
 
 자세히 보기에서는 원활 렌더링 된 텍스트를 사용 하 여 각 요소의 정보를 3D 공간에 시각화 하고자 했습니다. 애니메이션 3D 전자 모델은 가운데 영역에 표시 되며 다른 각도에서 볼 수 있습니다.
 
-![조작](images/640px-periodictable-interaction.jpg)
+![상호 작용](images/640px-periodictable-interaction.jpg)
 
 ![모델링할](images/640px-periodictable-prototypes.jpg)<br>
 *상호 작용 프로토타입*
@@ -55,13 +55,13 @@ HoloLens를 처음 경험 하 고 나면, 정기적 테이블 앱은 혼합 현�
 
 ### <a name="interactable-object-button"></a>Interactable 개체 (button)
 
-[Interactable 개체](../../design/interactable-object.md) 는 기본 HoloLens 입력에 응답할 수 있는 개체입니다. 모든 개체에 쉽게 적용할 수 있는 prefab/스크립트로 제공 됩니다. 예를 들어 장면 interactable에서 커피 컵을 만들고 응시, 공중 탭, 탐색 및 조작 제스처와 같은 입력에 응답할 수 있습니다. [자세한 정보](../../design/interactable-object.md)
+[Interactable 개체](../../design/interactable-object.md) 는 기본 HoloLens 입력에 응답할 수 있는 개체입니다. Prefab/스크립트로 제공 되며 개체에 쉽게 적용할 수 있습니다. 예를 들어 장면 interactable에서 커피 컵을 만들고 응시, 공중 탭, 탐색 및 조작 제스처와 같은 입력에 응답할 수 있습니다. [자세한 정보](../../design/interactable-object.md)
 
 ![nteractable 개체](images/640px-periodictable-interactableobject.jpg)
 
 ### <a name="object-collection"></a>개체 컬렉션
 
-[개체 컬렉션](../../design/object-collection.md) 은 다양 한 셰이프에서 여러 개체의 레이아웃을 설정 하는 데 도움이 되는 개체입니다. 평면, 원통, 구 및 산을 지원 합니다. Radius, 행 수 및 간격과 같은 추가 속성을 구성할 수 있습니다. [자세한 정보](../../design/object-collection.md)
+[개체 컬렉션](../../design/object-collection.md) 은 다양 한 모양의 여러 개체를 배치 하는 데 도움이 되는 개체입니다. 평면, 원통, 구 및 산을 지원 합니다. Radius, 행 수 및 간격과 같은 추가 속성을 구성할 수 있습니다. [자세한 정보](../../design/object-collection.md)
 
 ![개체 컬렉션](images/640px-periodictable-collections.jpg)
 
@@ -87,7 +87,7 @@ HoloLens를 처음 경험 하 고 나면, 정기적 테이블 앱은 혼합 현�
 </tr>
 </table>
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [MRTK 예제 허브](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Surfaces](sampleapp-surfaces.md) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
