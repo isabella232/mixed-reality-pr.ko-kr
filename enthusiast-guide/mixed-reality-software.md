@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 소프트웨어 구성 요소, 릴리스 기록, 릴리스 정보, 버전 기록
 appliesto:
 - Windows 10
-ms.openlocfilehash: 76a913ae5890c908dda4e25d5b5c21554fdae7f0
-ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
+ms.openlocfilehash: 0dd2ef30252189d006bfaf5702c47dce72f2798d
+ms.sourcegitcommit: d8db38647cf45f05b9445ceaf057d4cd01721ee6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92011425"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97091307"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>혼합 현실 소프트웨어 개요 및 릴리스 기록
 
@@ -36,13 +36,13 @@ Windows Mixed Reality는 다음과 같은 주요 소프트웨어 구성 요소�
 
 Windows Mixed Reality 헤드셋 관리:
 
-8. 각 헤드셋 제조업체에서 개발 하 고 유지 관리 하는 **장치 도우미 앱**은 Windows Mixed Reality 헤드셋을 신속 하 게 소개 합니다. Bluetooth 기능이 기본 제공 되는 헤드셋에서 장치 도우미 앱을 사용 하면 동작 컨트롤러를 공장 Bluetooth 페어링으로 복원할 수 있습니다. 일부 헤드셋 (예: Samsung Odyssey 및 Samsung Odyssey +)은 장치 도우미 앱을 사용 하 여 헤드셋 제조업체의 헤드셋 펌웨어 업데이트를 제공 합니다. 이 앱은 헤드셋이 처음 연결 될 때 자동으로 다운로드 되 고 Windows 시작 메뉴에서 찾을 수 있습니다.
+8. 각 헤드셋 제조업체에서 개발 하 고 유지 관리 하는 **장치 도우미 앱** 은 Windows Mixed Reality 헤드셋을 신속 하 게 소개 합니다. Bluetooth 기능이 기본 제공 되는 헤드셋에서 장치 도우미 앱을 사용 하면 동작 컨트롤러를 공장 Bluetooth 페어링으로 복원할 수 있습니다. 일부 헤드셋 (예: Samsung Odyssey 및 Samsung Odyssey +)은 장치 도우미 앱을 사용 하 여 헤드셋 제조업체의 헤드셋 펌웨어 업데이트를 제공 합니다. 이 앱은 헤드셋이 처음 연결 될 때 자동으로 다운로드 되 고 Windows 시작 메뉴에서 찾을 수 있습니다.
 
 ## <a name="windows-10-release-notes---may-2020"></a>Windows 10 릴리스 정보-2020 년 5 월
 
 **Windows 10 5 월 2020 업데이트 (v2004)** 에는 혼합 현실 홈에서 Win32 응용 프로그램을 시작 하는 기능과 같은 VR (Windows mixed Reality) 헤드셋의 새로운 기능이 포함 되어 있습니다. HoloLens (첫 번째 gen)는 장기 서비스 (LTS)에서 제공 하는 서비스 업데이트가 매월 릴리스됩니다.
 
-Windows Mixed Reality 모던 (VR) 헤드셋의 PC에서 최신 릴리스로 업데이트 하려면 **설정** 앱을 열고 **업데이트 & 보안**으로 이동한 후 **업데이트 확인** 단추를 선택 합니다. Windows 10 PC에서는 [windows 미디어 만들기 도구](https://www.microsoft.com/software-download/windows10)를 사용 하 여 **Windows 10 5 월 2020 업데이트** 를 수동으로 설치할 수도 있습니다.
+Windows Mixed Reality 모던 (VR) 헤드셋의 PC에서 최신 릴리스로 업데이트 하려면 **설정** 앱을 열고 **업데이트 & 보안** 으로 이동한 후 **업데이트 확인** 단추를 선택 합니다. Windows 10 PC에서는 [windows 미디어 만들기 도구](https://www.microsoft.com/software-download/windows10)를 사용 하 여 **Windows 10 5 월 2020 업데이트** 를 수동으로 설치할 수도 있습니다.
 
 **데스크톱용 최신 릴리스**: Windows 10 v2004 (10.0.19041.264)
 
@@ -100,6 +100,7 @@ Windows Mixed Reality 모던 (VR) 헤드셋의 PC에서 최신 릴리스로 업�
 
    | 버전          | 출시 날짜          | 주요 변경 내용                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
+   | [10.0.19041.2037](https://www.microsoft.com/en-us/download/details.aspx?id=102527)  | 2020 년 12 월 10 일  | Windows 10, 버전 1903 및 최신 버전과 호환 됩니다.<br/><ul><li>일부 컨트롤러에 작동 하지 않는 트리거가 있는 문제를 해결 하기 위한 HP 컨트롤러의 새 컨트롤러 펌웨어</li>|
    | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | 10 월 8 일, 2020  | Windows 10, 버전 1903 및 최신 버전과 호환 됩니다.<br/><ul><li>HP 반향 G2, HP Omnicept 및 새 HP 컨트롤러에 대 한 공식적인 지원.</li><li>HP 반향 및 Samsung Odyssey + 헤드셋의 보조 디스플레이 수정 [Os 빌드 19041.546](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) 이상 또는 [os 빌드 18362.1110 및 18363.1110](https://support.microsoft.com/en-us/help/4577062/windows-10-update-kb4577062) 이상이 필요 합니다.</li><li>컴퓨터 전원 상태를 절전 모드로 전환 하 여 SWW 1-4 오류를 줄일 수 있습니다.</li><li>Windows Mixed Reality 헤드셋 플랫폼은 사소한 수정과 안정성을 개선 합니다.|
    | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | 2020 년 5 월 7 일      | Windows 10, 버전 1903 및 최신 버전과 호환 됩니다.<br/><ul><li>Windows Mixed Reality 헤드셋 플랫폼은 사소한 수정과 안정성을 개선 합니다.</li></ul>  |
 
@@ -162,7 +163,7 @@ Windows 10 버전 1809 이상에서 [혼합 현실 포털](https://www.microsoft
    | 버전            | 출시 날짜          | 주요 변경 내용                                                 |
    |--------------------|-----------------------|---------------------------------------------------------------|
    | 2000.20071.1133.0  | 2020년 8월 5일        | <ul><li>[OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) 을 지원 하 여 미리 보기 창을 일시 중지 합니다.</li></ul>  | 
-   | 2000.20041.1212.0  | 2020년 5월 11일          | <ul><li>일치 하지 않는 15-5 오류가 발생 한 타이밍 문제를 해결 합니다.</li><li>인터넷에 연결 되지 않은 Windows Mixed Reality 실행에 대 한 지원 향상.</li><li>**설정 컨트롤러**를 통해 동작 컨트롤러를 페어링 하는 기능이 향상 되었습니다.</li></ul>  | 
+   | 2000.20041.1212.0  | 2020년 5월 11일          | <ul><li>일치 하지 않는 15-5 오류가 발생 한 타이밍 문제를 해결 합니다.</li><li>인터넷에 연결 되지 않은 Windows Mixed Reality 실행에 대 한 지원 향상.</li><li>**설정 컨트롤러** 를 통해 동작 컨트롤러를 페어링 하는 기능이 향상 되었습니다.</li></ul>  | 
    | 2000.20031.1202.0  | 2020년 4월 14일        | <ul><li>Windows Mixed Reality 정보, 팁 및 제안에 대 한 등록 지원.</li></ul>  | 
    | 2000.20011.1312.0  | 2020년 2월 11일     | <ul><li>2019 년 5 월 업데이트를 사용 하는 장치에서 [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) 를 사용 하는 응용 프로그램에 대 한 지원 향상</li><li>접근성 및 키보드 포커스 문제를 해결 합니다.</li></ul>  | 
    | 2000.19101.1211.0  | 2019 년 11 월 11 일     | <ul><li>는 대화방 경계 시각적 개체를 전환 하지 못하도록 하는 문제를 해결 합니다.</li><li>실내 경계 설정 중 헤드셋을 가운데에 맞추지 못하게 하는 문제를 해결 합니다.</li></ul>  | 

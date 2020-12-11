@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 데이터 채널
-ms.openlocfilehash: 119a08a7f0e41aca694184879e33aaf54160220c
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 6fd2bbd8ce2dedc3b13674576a23a0484ebe1419
+ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443446"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97102908"
 ---
 # <a name="custom-holographic-remoting-data-channels"></a>사용자 지정 홀로그램 원격 데이터 채널
 
@@ -38,7 +38,7 @@ winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnDataReceived_revoker
 winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnClosed_revoker m_customChannelClosedEventRevoker;
 ```
 
-연결이 설정 되 면 원격 측 및/또는 플레이어 쪽에서 새 데이터 채널 만들기를 시작할 수 있습니다. RemoteContext 및 PlayerContext 모두 ```CreateDataChannel()``` 이 작업을 수행 하는 메서드를 제공 합니다. 첫 번째 매개 변수는 후속 작업에서 데이터 채널을 식별 하는 데 사용 되는 채널 ID입니다. 두 번째 매개 변수는이 채널의 데이터가 다른 쪽으로 전송 되는 우선 순위를 지정 하는 우선 순위입니다. 채널 Id에 대 한 유효한 범위는 0부터 시작 하 여 원격 64 측의 경우 63을 포함 하 고, 플레이어 쪽에 대 한 127을 포함 합니다. 유효한 우선 순위 ```Low``` 는 ```Medium``` 또는 ```High``` (양쪽 모두)입니다.
+연결이 성공적으로 설정 되 면 원격 측, 플레이어 측 또는 둘 다에서 새 데이터 채널을 만들 수 있습니다. RemoteContext 및 PlayerContext 모두 ```CreateDataChannel()``` 데이터 채널을 만들기 위한 메서드를 제공 합니다. 첫 번째 매개 변수는 후속 작업에서 데이터 채널을 식별 하는 데 사용 되는 채널 ID입니다. 두 번째 매개 변수는이 채널의 데이터가 다른 쪽으로 전송 되는 우선 순위를 지정 하는 우선 순위입니다. 원격 측의 유효한 채널 Id는 0에서 63까지, 64은 플레이어 쪽에 대 한 127을 포함 하는 0부터까지입니다. 유효한 우선 순위는 ```Low``` , ```Medium``` 또는 ```High``` (양쪽 모두)입니다.
 
 **원격** 쪽에서 데이터 채널 만들기를 시작 하려면 다음을 수행 합니다.
 ```cpp
@@ -114,7 +114,7 @@ m_customDataChannel.Close();
 ```
 
 ## <a name="see-also"></a>참고 항목
-* [Windows Mixed Rey Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-wmr.md)
+* [Windows Mixed Reality Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-wmr.md)
 * [OpenXR Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-openxr.md)
 * [사용자 지정 홀로그램 원격 플레이어 앱 작성](holographic-remoting-create-player.md)
 * [Holographic 원격 문제 해결 및 제한 사항](holographic-remoting-troubleshooting.md)

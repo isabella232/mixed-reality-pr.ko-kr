@@ -1,28 +1,28 @@
 ---
 title: 사용자 지정 홀로그램 원격 플레이어 작성
-description: 사용자 지정 Holographic 원격 플레이어 앱을 만들면 원격 컴퓨터에 렌더링 된 콘텐츠를 HoloLens 2로 표시할 수 있는 사용자 지정 응용 프로그램을 만들 수 있습니다. 이 문서에서는이를 달성할 수 있는 방법에 대해 설명 합니다.
+description: 사용자 지정 Holographic Remoting player 앱을 만들면 원격 컴퓨터에 렌더링 된 콘텐츠를 HoloLens 2로 표시할 수 있는 사용자 지정 응용 프로그램을 만들 수 있습니다.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, NuGet, 앱 매니페스트, 플레이어 컨텍스트, 원격 앱, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 69dc382873eb4fe0dc50f6f55e074c3491b02c02
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: ac3ee68cf3cff3e024ce40acceac61a2fe123399
+ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443640"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97102898"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>사용자 지정 홀로그램 원격 플레이어 앱 작성
 
 >[!IMPORTANT]
 >이 문서에서는 HoloLens 2에 대 한 사용자 지정 플레이어 응용 프로그램을 만드는 방법을 설명 합니다. HoloLens 2 용으로 작성 된 사용자 지정 플레이어는 HoloLens 1 용으로 작성 된 원격 응용 프로그램과 호환 되지 않습니다. 이는 두 응용 프로그램이 모두 NuGet **패키지 버전 2.x** 를 사용 해야 함을 의미 합니다.
 
-사용자 지정 Holographic 원격 플레이어 앱을 만들면 HoloLens 2의 원격 컴퓨터에서 [몰입 형 보기](../../design/app-views.md) 를 표시할 수 있는 사용자 지정 응용 프로그램을 만들 수 있습니다. 이 문서에서는이를 달성할 수 있는 방법에 대해 설명 합니다. 이 페이지 및 작업 프로젝트의 모든 코드는 [Holographic Remoting 샘플 github 리포지토리](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)에서 찾을 수 있습니다.
+사용자 지정 Holographic Remoting player 앱을 만들면 HoloLens 2의 원격 컴퓨터에서 [몰입 형 보기](../../design/app-views.md) 를 표시할 수 있는 사용자 지정 응용 프로그램을 만들 수 있습니다. 이 페이지 및 작업 프로젝트의 모든 코드는 [Holographic Remoting 샘플 github 리포지토리](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)에서 찾을 수 있습니다.
 
-Holographic 원격 플레이어를 사용 하면 앱에서 데스크톱 PC 또는 UWP 장치 (예: Xbox One)에서 [렌더링](rendering.md) 된 Holographic 콘텐츠를 표시 하 여 더 많은 시스템 리소스에 액세스할 수 있습니다. Holographic Remoting player 앱은 입력 데이터를 Holographic Remoting 원격 응용 프로그램으로 스트리밍하 고 비디오 및 오디오 스트림으로 몰입 형 보기를 다시 받습니다. 연결은 표준 Wi-fi를 사용 하 여 수행 됩니다. 플레이어 앱을 만들려면 NuGet 패키지를 사용 하 여 UWP 앱에 Holographic 원격을 추가 하 고, 연결을 처리 하 고 몰입 형 뷰를 표시 하는 코드를 작성 합니다. 
+Holographic 원격 플레이어를 사용 하면 앱이 데스크톱 PC 또는 UWP 장치 (예: Xbox One)에서 [렌더링](rendering.md) 된 콘텐츠를 더 많은 시스템 리소스에 액세스할 수 있는 Holographic 표시할 수 있습니다. Holographic Remoting player 앱은 입력 데이터를 Holographic Remoting 원격 응용 프로그램으로 스트리밍하 고 비디오 및 오디오 스트림으로 몰입 형 보기를 다시 받습니다. 연결은 표준 Wi-fi를 사용 하 여 수행 됩니다. 플레이어 앱을 만들려면 NuGet 패키지를 사용 하 여 Holographic 원격을 UWP 앱에 추가 합니다. 그런 다음 연결을 처리 하 고 몰입 형 뷰를 표시 하는 코드를 작성 합니다. 
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 좋은 출발점은 이미 Windows Mixed Reality API를 대상으로 하는 작동 하는 DirectX 기반 UWP 앱입니다. 자세한 내용은 [DirectX 개발 개요](../native/directx-development-overview.md)를 참조 하세요. 기존 앱이 없고 처음부터 시작 하려면 [c + + holographic 프로젝트 템플릿이](../native/creating-a-holographic-directx-project.md) 좋은 출발점입니다.
 
@@ -34,10 +34,10 @@ Holographic 원격 플레이어를 사용 하면 앱에서 데스크톱 PC 또�
 Visual Studio에서 프로젝트에 NuGet 패키지를 추가 하려면 다음 단계를 수행 해야 합니다.
 1. Visual Studio에서 프로젝트를 엽니다.
 2. 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **NuGet 패키지 관리 ...** 를 선택 합니다.
-3. 표시 되는 패널에서 **찾아보기** 를 클릭 한 다음 "Holographic Remoting"을 검색 합니다.
-4. **Holographic** 를 선택 하 고 최신 **2.x 버전을** 선택 하 고 **설치** 를 클릭 합니다.
-5. **미리 보기** 대화 상자가 표시 되 면 **확인** 을 클릭 합니다.
-6. 표시 되는 다음 대화 상자는 사용권 계약입니다. **동의** 함을 클릭 하 여 사용권 계약에 동의 합니다.
+3. 표시 되는 패널에서 **찾아보기** 를 선택한 다음 "Holographic Remoting"을 검색 합니다.
+4. **Holographic** 를 선택 하 **고 최신 2.x** 버전을 선택 하 고 **설치** 를 선택 합니다.
+5. **미리 보기** 대화 상자가 표시 되 면 **확인** 을 선택 합니다.
+6. 사용권 계약 대화 상자가 나타나면 **동의** 함을 선택 합니다.
 
 >[!IMPORTANT]
 ><a name="idl"></a>```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl```NuGet 패키지 내에는 Holographic Remoting에서 노출 하는 API에 대 한 자세한 설명서가 포함 되어 있습니다.
@@ -47,7 +47,7 @@ Visual Studio에서 프로젝트에 NuGet 패키지를 추가 하려면 다음 �
 응용 프로그램이 NuGet 패키지에 의해 추가 된 Microsoft.Holographic.AppRemoting.dll을 인식 하도록 하려면 프로젝트에서 다음 단계를 수행 해야 합니다.
 
 1. 솔루션 탐색기에서 **appxmanifest.xml** 파일을 마우스 오른쪽 단추로 클릭 하 고 **연결 프로그램 ...을** 선택 합니다.
-2. **XML (텍스트) 편집기** 를 선택 하 고 확인을 클릭 합니다.
+2. **XML (텍스트) 편집기** 를 선택 하 고 **확인** 을 선택 합니다.
 3. 파일에 다음 줄을 추가 하 고 저장 합니다.
 ```xml
   </Capabilities>
@@ -124,7 +124,7 @@ catch(winrt::hresult_error& e)
 >[!IMPORTANT]
 >모든 c + +/WinRT API와 마찬가지로 처리 해야 하 ```Connect``` 는 WinRT:: hresult_error을 throw 할 수 있습니다.
 
-플레이어 앱에서 들어오는 연결을 수신 하는 작업은 메서드를 호출 하 여 수행할 수 있습니다 ```Listen``` . 이 호출 중에 핸드셰이크 포트와 전송 포트를 모두 지정할 수 있습니다. 핸드셰이크 포트는 초기 핸드셰이크에 사용 됩니다. 그런 다음 데이터는 전송 포트를 통해 전송 됩니다. 기본적으로 포트 번호 **8265** 및 **8266** 이 사용 됩니다.
+플레이어 앱에서 들어오는 연결을 수신 하는 작업은 메서드를 호출 하 여 수행할 수 있습니다 ```Listen``` . 이 호출 중에 핸드셰이크 포트와 전송 포트를 모두 지정할 수 있습니다. 핸드셰이크 포트는 초기 핸드셰이크에 사용 됩니다. 그러면 전송 포트를 통해 데이터가 전송 됩니다. 기본적으로 포트 번호 **8265** 및 **8266** 이 사용 됩니다.
 
 ```cpp
 try
@@ -160,7 +160,7 @@ m_onDisconnectedEventToken = m_playerContext.OnDisconnected([](ConnectionFailure
 }
 ```
 >[!NOTE]
->가능한 ```ConnectionFailureReason``` 값은 파일에 설명 되어 있습니다 ```Microsoft.Holographic.AppRemoting.idl``` [file](#idl).
+>가능한 ```ConnectionFailureReason``` 값은 파일에 설명 되어 있습니다 ```Microsoft.Holographic.AppRemoting.idl``` [](#idl).
 
 3) OnListening: 들어오는 연결에 대 한 수신 대기를 시작 합니다.
 ```cpp
@@ -210,7 +210,7 @@ winrt::Microsoft::Holographic::AppRemoting::BlitResult result = m_playerContext.
 
 ### <a name="projection-transform-mode"></a>프로젝션 변환 모드
 
-Holographic Remoting을 통해 깊이 다시 프로젝션을 사용할 때 발생 하는 한 가지 문제는 사용자 지정 플레이어 앱에서 직접 렌더링 하는 로컬 콘텐츠와 다른 프로젝션 변환으로 원격 콘텐츠를 렌더링할 수 있다는 것입니다. 일반적인 사용 사례는 선수 및 원격 측면에서 근거리 및 far 평면 ( [HolographicCamera:: SetNearPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setnearplanedistance) 및 [HolographicCamera:: SetFarPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setfarplanedistance)를 통해)에 대해 서로 다른 값을 지정 하는 것입니다. 이 경우 플레이어 쪽의 프로젝션 변환에 멀리 떨어져 있는 원격 평면 거리 또는 로컬 항목이 반영 되어야 하는지는 명확 하지 않습니다.
+한 가지 문제는 Holographic Remoting을 통해 깊이 다시 프로젝션을 사용 하는 경우 사용자 지정 플레이어 앱에서 직접 렌더링 하는 로컬 콘텐츠와 다른 프로젝션 변환을 사용 하 여 원격 콘텐츠를 렌더링할 수 있는 것입니다. 일반적인 사용 사례는 선수 및 원격 측면에서 근거리 및 far 평면 ( [HolographicCamera:: SetNearPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setnearplanedistance) 및 [HolographicCamera:: SetFarPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setfarplanedistance)를 통해)에 대해 서로 다른 값을 지정 하는 것입니다. 이 경우 플레이어 쪽의 프로젝션 변환에 멀리 떨어져 있는 원격 평면 거리 또는 로컬 항목이 반영 되어야 하는지는 명확 하지 않습니다.
 
 버전 [2.1.0](holographic-remoting-version-history.md#v2.1.0) 부터를 통해 프로젝션 변환 모드를 제어할 수 있습니다 ```PlayerContext::ProjectionTransformConfig``` . 지원되는 값은 다음과 같습니다.
 
@@ -226,7 +226,7 @@ Holographic Remoting을 통해 깊이 다시 프로젝션을 사용할 때 발�
 
 일반적인 사용 사례는 특정 시간 동안 새 프레임을 받지 못한 경우 BlitRemoteFrame 시간 제한을 사용 하 여 빈 화면을 표시 하는 것입니다. 사용 하도록 설정 하면 메서드의 반환 형식을 ```BlitRemoteFrame``` 사용 하 여 로컬로 렌더링 된 대체 콘텐츠로 전환할 수도 있습니다. 
 
-시간 제한을 사용 하도록 설정 하려면 속성 값을 100ms 보다 크거나 같은 기간으로 설정 합니다. 시간 제한을 사용 하지 않도록 설정 하려면 속성을 0 duration으로 설정 합니다. 제한 시간을 설정 하 고 설정 된 기간 동안 원격 프레임을 받지 못한 경우에는 BlitRemoteFrame이 실패 하 고 ```Failed_RemoteFrameTooOld``` 새 원격 프레임을 받을 때까지 반환 됩니다.
+시간 제한을 사용 하도록 설정 하려면 속성 값을 100 밀리초 보다 크거나 같은 기간으로 설정 합니다. 시간 제한을 사용 하지 않도록 설정 하려면 속성을 0 duration으로 설정 합니다. 제한 시간을 설정 하 고 설정 된 기간 동안 원격 프레임을 받지 못한 경우에는 BlitRemoteFrame이 실패 하 고 ```Failed_RemoteFrameTooOld``` 새 원격 프레임을 받을 때까지 반환 됩니다.
 
 ```cpp
 using namespace std::chrono_literals;
@@ -244,14 +244,14 @@ m_playerContext.BlitRemoteFrameTimeout(500ms);
 winrt::Microsoft::Holographic::AppRemoting::PlayerFrameStatistics statistics = m_playerContext.LastFrameStatistics();
 ```
 
-자세한 내용은 ```PlayerFrameStatistics``` 파일의 설명서를 참조 하세요 ```Microsoft.Holographic.AppRemoting.idl``` [file](#idl).
+자세한 내용은 ```PlayerFrameStatistics``` 파일의 설명서를 참조 하십시오 ```Microsoft.Holographic.AppRemoting.idl``` [](#idl).
 
 ## <a name="optional-custom-data-channels"></a>선택 사항: 사용자 지정 데이터 채널
 
 사용자 지정 데이터 채널은 이미 설정 된 원격 연결을 통해 사용자 데이터를 전송 하는 데 사용할 수 있습니다. 자세한 내용은 [사용자 지정 데이터 채널](holographic-remoting-custom-data-channels.md) 을 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
-* [Windows Mixed Rey Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-wmr.md)
+* [Windows Mixed Reality Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-wmr.md)
 * [OpenXR Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-openxr.md)
 * [사용자 지정 홀로그램 원격 데이터 채널](holographic-remoting-custom-data-channels.md)
 * [홀로그램 원격을 사용하여 보안 연결 설정](holographic-remoting-secure-connection.md)
