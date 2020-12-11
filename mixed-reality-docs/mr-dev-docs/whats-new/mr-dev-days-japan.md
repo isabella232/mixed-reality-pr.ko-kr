@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality, 컨퍼런스, summit, developer, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: df7b6837653b309189e44d36853430b89b8b56a9
-ms.sourcegitcommit: 2eeee7bb1589148f5c9fe7f76ade58d3e08b5817
+ms.openlocfilehash: 94f38ff122826dfaea6282403c5958b127c81739
+ms.sourcegitcommit: ee87915132cf2874d4642ce2fe383f5eba6c49c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/11/2020
-ms.locfileid: "97104207"
+ms.locfileid: "97111885"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>혼합 현실 개발자의 날 일본
 
@@ -44,7 +44,7 @@ ms.locfileid: "97104207"
 ### <a name="december-16th"></a>12 월 16 일
 |**Time**|**세션 제목**|**발표자**|**언어**|**수준**|
 |---------|---------|---------|---------|---------|
-|10:00am-10:50am|키 노트 열기|Madoka Chiyoda, Alex Kipman, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA-JP/EN|해당 없음|
+|10:00am-10:50am|키 노트 열기|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA-JP/EN|해당 없음|
 |10:50am-11:00am|**중단 (10 분)**||||
 |11:00am-11:25am|*세션 1* 혼합 현실 소개|Atsushi Suzuki|JA|100|
 |11:30am-11:55am|*세션 2* 혼합 현실 비즈니스 모멘텀|Tetsu Muranaka|JA|200|
