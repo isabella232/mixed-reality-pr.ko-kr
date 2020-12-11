@@ -7,16 +7,16 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 기능, 설명서, 가이드, 홀로그램, qr 코드, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: f2f06e9aa8d458d58dc8551ab6cd726622c30d4c
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 7e39e1d822f0aa623a83678beef24f2c98a18944
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354422"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609644"
 ---
 # <a name="qr-codes-in-unreal"></a>Unreal의 QR 코드
 
-HoloLens 2는 웹캠을 사용하여 세계 공간에서 QR 코드를 볼 수 있습니다. 즉, 각 코드의 실세계 위치에서 좌표계를 사용하여 스스로를 홀로그램으로 렌더링합니다.  HoloLens 2는 단일 QR 코드 외에도, 공유 경험을 만들기 위해 여러 디바이스에서 동일한 위치에 홀로그램을 렌더링할 수 있습니다. 애플리케이션에 QR 코드를 추가하기 위한 모범 사례를 따라야 합니다.
+HoloLens 2는 웹캠을 사용하여 세계 공간에서 QR 코드를 볼 수 있습니다. 즉, 각 코드의 실제 세계 위치에서 홀로그램으로 렌더링합니다. HoloLens 2는 또한 공유 경험을 만들기 위해 여러 디바이스에서 동일한 위치에 홀로그램을 렌더링할 수 있습니다. 애플리케이션에 QR 코드를 추가하기 위한 모범 사례를 따라야 합니다.
 
 - 자동 영역
 - 조명 및 배경
@@ -29,11 +29,11 @@ QR 코드가 앱에 배치될 때 [환경 고려 사항](../../environment-consi
 
 ## <a name="enabling-qr-detection"></a>QR 검색 사용
 HoloLens 2는 웹캠을 사용하여 QR 코드를 확인해야 하므로 프로젝트 설정에서 사용하도록 설정해야 합니다.
-- **편집 > 프로젝트 설정** 을 열고 **플랫폼** 섹션까지 아래로 스크롤한 다음, **HoloLens** 를 클릭합니다.
+- **편집 > 프로젝트 설정** 을 열고 **플랫폼** 섹션까지 아래로 스크롤한 다음, **HoloLens** 를 선택합니다.
     + **기능** 섹션을 확장하고 **웹캠** 을 선택합니다.  
 - 또한 [ARSessionConfig 자산](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset)을 추가하여 QR 코드 추적을 옵트인해야 합니다.
 
-[!INCLUDE[](includes/tabs-qr-codes.md)]
+[!INCLUDE[](includes/tabs-qr-codes-1.md)]
 
 ## <a name="setting-up-a-tracked-qr-code"></a>추적된 QR 코드 설정
 
@@ -54,7 +54,7 @@ QR 코드는 Unreal의 AR 추적 기하 도형 시스템을 통해 추적 이미
 ## <a name="using-a-tracked-qr-code"></a>추적된 QR 코드 사용
 다음 이미지의 이벤트 그래프는 QR 코드의 가운데에 점을 렌더링하고 그 데이터를 출력하는 데 사용되는 **OnUpdateTrackedImage** 이벤트를 보여 줍니다.
 
-![QR 렌더링 예제](images/unreal-qr-render.PNG)
+[!INCLUDE[](includes/tabs-qr-codes-2.md)]
 
 진행 상황은 다음과 같습니다.
 1. 먼저 추적 이미지를 **ARTrackedQRCode** 에 캐스트하여 현재 업데이트된 이미지가 QR 코드인지 확인합니다.  

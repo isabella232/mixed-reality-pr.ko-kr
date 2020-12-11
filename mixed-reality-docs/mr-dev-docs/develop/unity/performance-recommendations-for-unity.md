@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: 그래픽, CPU, GPU, 렌더링, 가비지 컬렉션, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 2c5a459f673889dd4c52043f9b9df6a3fe43a93a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6fd12bec31bb721def8801a8f2bacb8c3cb75745
+ms.sourcegitcommit: d11275796a1f65c31dd56b44a8a1bbaae4d7ec76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699761"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761775"
 ---
 # <a name="performance-recommendations-for-unity"></a>Unity에 대한 성능 추천 사항
 
@@ -120,9 +120,9 @@ public class ExampleClass : MonoBehaviour
 
 3) **boxing에 주의**
 
-    [boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing)은 C# 언어 및 런타임의 핵심 개념입니다. 이는 char, int, bool 등과 같은 값 형식 변수를 참조 형식 변수로 래핑하는 프로세스입니다. 값 형식 변수가 "boxing"되면 관리형 힙에 저장된 System.Object 내부에 래핑됩니다. 이에 따라 메모리가 할당되며, 결국에는 삭제 시 가비지 수집기에서 처리해야 합니다. 이러한 할당 및 할당 취소는 성능 비용을 발생시키며, 많은 시나리오에서 필요하지 않거나 비용이 더 저렴한 대안으로 쉽게 대체할 수 있습니다.
+    [boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing)은 C# 언어 및 런타임의 핵심 개념입니다. 이는 `char`, `int`, `bool` 등과 같은 값 형식 변수를 참조 형식 변수로 래핑하는 프로세스입니다. 값 형식 변수가 "boxed"가 되면 관리형 힙에 저장된 `System.Object` 내부에 래핑됩니다. 이에 따라 메모리가 할당되며, 결국에는 삭제 시 가비지 수집기에서 처리해야 합니다. 이러한 할당 및 할당 취소는 성능 비용을 발생시키며, 많은 시나리오에서 필요하지 않거나 비용이 더 저렴한 대안으로 쉽게 대체할 수 있습니다.
 
-    개발에서 가장 일반적인 boxing 형태 중 하나는 [nullable 값 형식](https://docs.microsoft.com//dotnet/csharp/programming-guide/nullable-types/)을 사용하는 것입니다. 특히 작업에서 값을 가져오는 데 실패하는 경우 함수에서 일반적으로 값 형식으로 null을 반환하려고 시도할 수 있습니다. 이 방법의 잠재적인 문제는 이제 할당이 힙에서 발생하므로 나중에 가비지를 수집해야 한다는 것입니다.
+    boxing을 방지하려면 숫자 유형과 구조체(`Nullable<T>` 포함)를 저장하는 변수, 필드 및 속성의 형식이 개체를 사용하는 대신 `int`, `float?` 또는 `MyStruct`와 같은 특정 형식의 강력한 형식이어야 합니다.  이러한 개체를 목록에 넣는 경우 `List<object>` 또는 `ArrayList`가 아닌 `List<int>`와 같은 강력한 형식의 목록을 사용해야 합니다.
 
     **C#의 boxing 예제**
 
@@ -130,21 +130,6 @@ public class ExampleClass : MonoBehaviour
     // boolean value type is boxed into object boxedMyVar on the heap
     bool myVar = true;
     object boxedMyVar = myVar;
-    ```
-
-    **nullable 값 형식을 통한 문제가 있는 boxing의 예제**
-
-    다음 코드에서는 Unity 프로젝트에서 만들 수 있는 더미 파티클 클래스를 보여 줍니다. `TryGetSpeed()`를 호출하면 개체가 힙에 할당되며, 나중에 가비지를 수집해야 합니다. 이 예제는 한 장면에 1,000개 이상의 파티클이 있을 수 있으므로 특히 문제가 되며, 각각 현재 속도를 요구하고 있습니다. 따라서 1,000개의 개체가 할당되고, 결과적으로 모든 프레임에서 할당을 취소하여 성능이 크게 저하됩니다. 오류를 나타내기 위해 -1과 같은 음수 값을 반환하도록 함수를 다시 작성하면 이 문제가 방지되고 메모리가 스택에서 유지됩니다.
-
-    ```csharp
-        public class MyParticle
-        {
-            // Example of function returning nullable value type
-            public int? TryGetSpeed()
-            {
-                // Returns current speed int value or null if fails
-            }
-        }
     ```
 
 #### <a name="repeating-code-paths"></a>반복 코드 경로
@@ -229,8 +214,8 @@ Unity에는 개요를 제공하고 플랫폼에 대한 그리기 호출 일괄 �
 Unity에서 인스턴스화된 단일 패스 렌더링을 사용하면 각 눈에 대한 그리기 호출을 하나의 인스턴스화된 그리기 호출로 줄일 수 있습니다. 두 그리기 호출 간의 캐시 일관성으로 인해 GPU에서도 성능이 약간 향상됩니다.
 
 Unity 프로젝트에서 이 기능을 사용하도록 설정하려면 다음을 수행합니다.
-1)  **플레이어 XR 설정** 을 엽니다( **편집** > **프로젝트 설정** > **플레이어** > **XR 설정** 으로 차례로 이동).
-2) **스테레오 렌더링 방법** 드롭다운 메뉴에서 **단일 패스 인스턴스화됨** 을 선택합니다( **가상 현실 지원됨** 확인란을 선택해야 함).
+1)  **플레이어 XR 설정** 을 엽니다(**편집** > **프로젝트 설정** > **플레이어** > **XR 설정** 으로 차례로 이동).
+2) **스테레오 렌더링 방법** 드롭다운 메뉴에서 **단일 패스 인스턴스화됨** 을 선택합니다(**가상 현실 지원됨** 확인란을 선택해야 함).
 
 이 렌더링 방법에 대한 자세한 내용은 Unity에서 다음 문서를 참조하세요.
 - [고급 스테레오 렌더링을 사용하여 AR 및 VR 성능을 최대화하는 방법](https://blogs.unity3d.com/2017/11/21/how-to-maximize-ar-and-vr-performance-with-advanced-stereo-rendering/)

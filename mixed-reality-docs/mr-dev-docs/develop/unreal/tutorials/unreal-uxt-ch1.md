@@ -1,34 +1,34 @@
 ---
 title: 1. 시작
-description: Unreal Engine 4와 Mixed Reality Toolkit UX Tools 플러그 인을 사용하여 간단한 체스 앱을 만드는 자습서 시리즈 1/6부
+description: Unreal Engine 4와 Mixed Reality Toolkit UX Tools 플러그 인을 사용하여 체스 앱을 만드는 자습서 시리즈 1/6부
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: aa6d90bebbbfc10b108b97d05931a9926118ba7c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 465215efd953c0acb9f2d80a2905ee06963c5f8c
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679862"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609724"
 ---
 # <a name="1-getting-started"></a>1. 시작
 
-여기서는 혼합 현실을 처음 사용하거나 익숙한 사용자 모두를 위해 [HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/) 및 [Unreal Engine](https://www.unrealengine.com/en-US/)을 시작하는 출발점을 제시합니다. 이 자습서 시리즈에서는 [Unreal용 Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unreal)의 일부인 [UX Tools 플러그 인](https://github.com/microsoft/MixedReality-UXTools-Unreal)을 사용하여 대화형 체스 앱을 빌드하는 방법을 단계별로 안내합니다. 플러그 인은 코드, 청사진 및 예제를 통해 프로젝트에 일반 UX 기능을 추가하는 데 도움이 됩니다. 
+혼합 현실을 처음 접하든 노련한 전문가이든 관계 없이 [HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/) 및 [Unreal Engine](https://www.unrealengine.com/en-US/) 과정은 여기에서 시작됩니다. 이 자습서 시리즈에서는 [Unreal용 Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unreal)의 일부인 [UX Tools 플러그 인](https://github.com/microsoft/MixedReality-UXTools-Unreal)을 사용하여 대화형 체스 앱을 빌드하는 방법을 단계별로 안내합니다. 플러그 인은 코드, 청사진 및 예제를 통해 프로젝트에 일반 UX 기능을 추가하는 데 도움이 됩니다. 
 
 ![뷰포트에서 장면 종료](images/unreal-uxt/5-endscene.PNG)
 
-시리즈를 마치면 다음에 대한 실습 경험을 갖게 됩니다.
+시리즈를 마치면 다음에 대한 경험을 갖게 됩니다.
 * 새 프로젝트 시작
 * 혼합 현실 설정
 * 사용자 입력 작업
 * 단추 추가
 * 에뮬레이터 또는 디바이스에서 재생
 
-
 ## <a name="prerequisites"></a>필수 구성 요소
+
 진행하기 전에 다음을 설치했는지 확인합니다.
 * Windows 10 1809 이상
 * Windows 10 SDK 10.0.18362.0 이상
@@ -37,7 +37,8 @@ ms.locfileid: "94679862"
 * Visual Studio 2019(아래 워크로드 포함)
 
 ### <a name="installing-visual-studio-2019"></a>Visual Studio 2019 설치
-필요한 Visual Studio 패키지가 모두 있는지 확인하는 몇 가지 단계가 있습니다.
+
+먼저 다음과 같은 필수 Visual Studio 패키지를 모두 사용하여 설정을 확인합니다.
 1. 최신 버전의 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)를 다운로드합니다.
 2. 다음 [워크로드](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads)를 설치합니다.
     * C++를 사용한 데스크톱 개발

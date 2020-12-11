@@ -1,22 +1,20 @@
 ---
 title: 6. 패키징 후 디바이스 또는 에뮬레이터에 배포
-description: Unreal Engine 4와 Mixed Reality Toolkit UX Tools 플러그 인을 사용하여 간단한 체스 앱을 만드는 자습서 시리즈 6/6부
+description: Unreal Engine 4와 Mixed Reality Toolkit UX Tools 플러그 인을 사용하여 체스 앱을 만드는 자습서 시리즈 6/6부
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: cbdbf87d75dcfc56c8eea52f7dff4a646f3b6a5d
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4319b1171090b8ca7a320e98867bfb3635bab005
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679822"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609494"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. 패키징 후 디바이스 또는 에뮬레이터에 배포
-
-## <a name="overview"></a>개요
 
 이전 자습서에서는 체스 말을 원래 위치로 다시 설정하는 간단한 단추를 추가했습니다. 이 마지막 섹션에서는 HoloLens 2 또는 에뮬레이터에서 앱을 실행할 수 있게 준비합니다. HoloLens 2가 있는 경우 컴퓨터에서 스트리밍하거나 앱을 패키징하여 디바이스에서 직접 실행할 수 있습니다. 디바이스가 없는 경우 에뮬레이터에서 실행되도록 앱을 패키징합니다. 이 섹션을 마치면 재생할 수 있는 혼합 현실 앱이 배포되며 조작과 UI가 완성됩니다.
 
@@ -26,7 +24,8 @@ ms.locfileid: "94679822"
 * HoloLens 2 디바이스 또는 에뮬레이터에 앱 패키징 및 배포
 
 ## <a name="device-only-streaming"></a>[디바이스 전용] 스트리밍
-이 경우 [홀로그램 원격 기능](https://docs.microsoft.com/windows/mixed-reality/add-holographic-remoting)은 채널을 전환하는 것이 아니라 PC나 독립 실행형 UWP 디바이스에서 HoloLens 2로 데이터를 스트리밍합니다. 이 작업에서는 원격 호스트 앱이 HoloLens로부터 입력 데이터 스트림을 받고 가상 몰입형 보기에서 콘텐츠를 렌더링하며 다시 Wi-Fi를 통해 콘텐츠 프레임을 HoloLens로 돌려 보냅니다. 스트리밍에서는 사용자가 원격 몰입형 보기를 기존 데스크톱 PC 소프트웨어에 추가할 수 있고 다른 시스템 리소스에 액세스할 수 있습니다.
+
+[홀로그램 원격 접속](https://docs.microsoft.com/windows/mixed-reality/add-holographic-remoting)은 채널을 전환하는 것이 아니라 PC나 독립 실행형 UWP 디바이스에서 HoloLens 2로 데이터를 스트리밍합니다. 원격 호스트 앱은 HoloLens로부터 입력 데이터 스트림을 받고 가상 몰입형 보기에서 콘텐츠를 렌더링하며 다시 Wi-Fi를 통해 콘텐츠 프레임을 HoloLens로 돌려 보냅니다. 스트리밍을 통해 몰입형 보기를 기존 데스크톱 PC 소프트웨어에 추가할 수 있고 다른 시스템 리소스에 액세스할 수 있습니다.
 
 체스 앱에 이 경로를 적용하려면 다음 몇 가지가 필요합니다.
 
@@ -79,17 +78,17 @@ ms.locfileid: "94679822"
 
 7.  **찾아보기...** 를 클릭하고 **ChessApp.appxbundle** 파일로 이동한 다음, **열기** 를 클릭합니다.
 
-    * 디바이스에 앱을 처음 설치하는 경우 **프레임워크 패키지를 선택하도록 허용** 옆의 확인란을 선택합니다.
-    * 다음 대화 상자에서 적절한 **VCLibs** 및 **appx** 파일을 포함합니다(디바이스에는 arm64, 에뮬레이터에는 x64). 이 항목은 패키지를 저장한 폴더 안의 **HoloLens** 아래에 있습니다.
+    * 처음 디바이스에 앱을 설치하는 경우 **프레임워크 패키지를 선택하도록 허용** 옆의 확인란을 선택합니다.
+    * 다음 대화 상자에서 적절한 **VCLibs** 및 **appx** 파일, 디바이스에 **arm64**, 에뮬레이터에 **x64** 를 포함합니다. 파일은 패키지를 저장한 폴더 안의 **HoloLens** 아래에 있습니다.
 
 8.  **설치** 를 클릭합니다.
     * 이제 **모든 앱** 으로 이동하고 새로 설치된 앱을 탭하여 실행하거나 **Windows Device Portal** 에서 직접 앱을 시작할 수 있습니다. 
 
-축하합니다! HoloLens 혼합 현실 애플리케이션이 완료되어 진행할 준비가 되었습니다. 그러나 모두 끝난 것은 아닙니다. MRTK에는 공간 매핑, 응시, 음성 입력을 비롯하여 QR 코드에 이르기까지, 프로젝트에 추가할 수 있는 무수한 독립 실행형 기능이 있습니다. 이러한 기능에 대한 자세한 내용은 [Unreal 개발 개요](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview)에서 확인할 수 있습니다.
+축하합니다! HoloLens 혼합 현실 애플리케이션이 완료되어 진행할 준비가 되었습니다. 하지만 이것이 전부는 아닙니다. MRTK에는 공간 매핑, 응시, 음성 입력을 비롯하여 QR 코드에 이르기까지, 프로젝트에 추가할 수 있는 무수한 독립 실행형 기능이 있습니다. 이러한 기능에 대한 자세한 내용은 [Unreal 개발 개요](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview)에서 확인할 수 있습니다.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞에서 설명한 Unreal 개발 검사점 경험을 수행하는 경우 MRTK 핵심 구성 요소를 탐색하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
+앞에서 설명한 Unreal 개발 과정을 따르고 있다면 현재 MRTK 핵심 구성 요소를 살펴보는 중입니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [응시 입력](../unreal-gaze-input.md)

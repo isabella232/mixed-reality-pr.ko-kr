@@ -7,20 +7,18 @@ ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 스트리밍, 원격, 혼합 현실, 개발, 시작, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, 홀로그램, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 공간 오디오
-ms.openlocfilehash: 25fa60b4e55ec0f3bd0875ad88834981d198f7f5
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: fa87862f6a6af456ea344b67e22f1640c9cfafb4
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679802"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609544"
 ---
 # <a name="spatial-audio-in-unreal"></a>Unreal의 공간 오디오
 
-## <a name="overview"></a>개요
+인간은 시각과 달리 360도 서라운드 사운드를 들을 수 있습니다. 공간 음향은 인간의 청력이 작동하는 방식을 에뮬레이트하여 세계 좌표 공간에서의 소리 위치를 식별하는 데 필요한 신호를 제공합니다. 공간 음향을 혼합 현실 애플리케이션에 추가하면 사용자가 경험하는 몰입도가 높아집니다.  
 
-시각과 달리 인간은 360도 서라운드 사운드로 들을 수 있습니다. 공간 음향은 인간의 청력이 작동하는 방식을 에뮬레이트하여 세계 좌표 공간에서의 소리 위치를 식별하는 데 필요한 신호를 제공합니다. 공간 음향을 혼합 현실 애플리케이션에 추가하면 사용자가 경험하는 몰입도가 높아집니다.  
-
-고품질 공간 음향 처리는 복잡하므로 HoloLens 2에는 이러한 소리 개체를 처리하기 위한 전용 하드웨어가 제공됩니다.  이 하드웨어 처리 지원에 액세스하려면 먼저 **MicrosoftSpatialSound** 플러그 인을 Unreal 프로젝트에 설치해야 합니다. 이 문서에서는 해당 플러그 인을 설치하고 구성하는 과정을 안내하고, Unreal 엔진에서 공간 음향을 사용하는 데 필요한 더 자세한 리소스를 소개합니다.
+고품질 공간 음향 처리는 복잡하므로 HoloLens 2에는 이러한 소리 개체를 처리하기 위한 전용 하드웨어가 제공됩니다.  이 하드웨어 처리 지원에 액세스하려면 먼저 **MicrosoftSpatialSound** 플러그 인을 Unreal 프로젝트에 설치해야 합니다. 이 문서에서는 해당 플러그 인을 설치하고 구성하는 과정을 안내하고, 보다 심층적인 리소스를 안내합니다.
 
 ## <a name="installing-the-microsoft-spatial-sound-plugin"></a>MicrosoftSpatialSound 플러그 인 설치
 
@@ -39,8 +37,9 @@ ms.locfileid: "94679802"
 
 
 ## <a name="setting-the-spatialization-plugin-for-hololens-2-platform"></a>HoloLens 2 플랫폼용 공간화 플러그 인 설정
+
 공간화 플러그 인은 플랫폼별로 구성됩니다.  다음을 수행하여 HoloLens 2용 MicrosoftSpatialSound 플러그 인을 사용하도록 설정할 수 있습니다.
-1. **편집 > 프로젝트 설정** 을 차례로 선택하고, **플랫폼** 으로 스크롤하여 **HoloLens** 를 클릭합니다.
+1. **편집 > 프로젝트 설정** 을 차례로 선택하고, **플랫폼으로 스크롤하여 **HoloLens** 를 클릭합니다.
 2. **오디오** 속성을 펼치고, **공간화 플러그 인** 필드를 **MicrosoftSpatialSound** 로 설정합니다.
 
 ![HoloLens 플랫폼용 공간화 플러그 인](images/unreal-spatial-audio-img-02.png)
@@ -50,6 +49,7 @@ ms.locfileid: "94679802"
 ![Windows 플랫폼용 공간화 플러그 인](images/unreal-spatial-audio-img-05.png)
 
 ## <a name="enabling-spatial-audio-on-your-workstation"></a>워크스테이션에서 공간 오디오 사용
+
 데스크톱 버전의 Windows에서는 기본적으로 공간 오디오를 사용하지 않도록 설정되어 있습니다. 다음을 수행하여 이를 사용하도록 설정할 수 있습니다.
 * 작업 표시줄에서 마우스 오른쪽 단추로 **볼륨** 아이콘을 클릭합니다.
     + HoloLens 2에서 듣는 콘텐츠를 가장 잘 표현하려면 **공간 음향 -> 헤드폰용 Windows Sonic** 을 차례로 선택합니다.
@@ -60,6 +60,7 @@ ms.locfileid: "94679802"
 >이 설정은 Unreal 편집기에서 프로젝트를 테스트하려는 경우에만 필요합니다.
 
 ## <a name="creating-attenuation-objects"></a>감쇠 개체 만들기
+
 필요한 플러그 인이 설치되고 구성되면 다음을 수행합니다.
 1. **행위자 배치** 창에서 **주변 소리** 행위자를 검색하여 **장면** 창으로 끕니다.
 
@@ -82,7 +83,8 @@ ms.locfileid: "94679802"
 
 ![감쇠 설정](images/unreal-spatial-audio-img-08.png)
 
-6. 사용할 SoundAsset 파일을 지정하도록 주변 소리 행위자의 **소리** 속성을 업데이트하여 주변 소리 행위자에 연결하려는 **소리 자산** 을 설정합니다.
+6. 주변 소리 행위자에 연결하려는 **사운드 자산** 을 설정합니다.
+    * 주변 소리 행위자의 **사운드** 속성을 업데이트하여 사용할 SoundAsset 파일을 지정합니다.
 
 ![소리 자산 설정](images/unreal-spatial-audio-img-09.png)
 
@@ -91,9 +93,10 @@ ms.locfileid: "94679802"
 
 ![새 소리 감쇠 자산](images/unreal-spatial-audio-img-10.png)
 
-이러한 모든 설정이 구성되면 HoloLens 2의 전용 하드웨어 오프로드 지원을 사용하여 주변 소리를 공간화할 수 있습니다.
+사운드 자산이 구성되면 HoloLens 2의 전용 하드웨어 오프로드 지원을 사용하여 주변 소리를 공간화할 수 있습니다.
 
 ## <a name="configuring-objects-for-spatialization"></a>공간화 개체 구성
+
 공간 오디오를 사용한다는 것은 가상 환경에서 소리가 작동하는 방식을 관리해야 한다는 것을 의미합니다. 주요 초점은 사용자가 가까이 있을 때는 더 크게 표시되고, 멀리 있을 때는 더 조용하게 표시되는 소리 개체를 만드는 것입니다. 이를 소리 감쇠라고 하며, 소리가 고정된 지점에 있는 것처럼 표시되도록 합니다.
 
 모든 감쇠 개체에는 다음에 대한 수정 가능한 설정이 제공됩니다.
@@ -108,7 +111,7 @@ ms.locfileid: "94679802"
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞에서 설명한 Unreal 개발 검사점 경험을 수행하는 경우 MRTK 핵심 구성 요소를 탐색하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
+앞에서 설명한 Unreal 개발 과정을 따르고 있다면 현재 MRTK 핵심 구성 요소를 살펴보는 중입니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [음성 입력 ](unreal-voice-input.md)

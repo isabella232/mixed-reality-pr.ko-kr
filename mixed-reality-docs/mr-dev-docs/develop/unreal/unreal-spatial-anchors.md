@@ -1,24 +1,22 @@
 ---
 title: Unreal의 로컬 Spatial Anchors
-description: Unreal의 공간 앵커 사용 가이드
+description: Unreal의 Spatial Anchors 사용 가이드
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 기능, 설명서, 가이드, 홀로그램, spatial anchors, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 8be1521d44a9dda521c1570d3ac55955e475bc30
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: b517b1d89ddf7a35864db45a17336f4493816526
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354521"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609634"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Unreal의 로컬 Spatial Anchors
 
-## <a name="overview"></a>개요
-
-공간 앵커는 애플리케이션 세션 사이의 실제 공간에서 홀로그램을 저장하는 데 사용됩니다. 이는 Unreal을 통해 **ARPin** 으로 표시되며 향후 세션에 로드될 HoloLens의 앵커 저장소에 저장됩니다. 로컬 앵커는 인터넷에 연결되어 있지 않은 경우 대비책으로 적합합니다.
+Spatial Anchors는 애플리케이션 세션 간의 실제 공간에 홀로그램을 **ARPin** 으로 저장합니다. HoloLens의 앵커 저장소에 저장되면 ARPin은 향후 세션에 로드될 수 있으며 인터넷 연결이 없을 때 이상적인 대체 옵션입니다.
 
 > [!NOTE]
 > UE 4.25의 앵커 함수는 4.26에서 사용되지 않으며 새 함수로 바꿔야 합니다. 
@@ -44,7 +42,7 @@ ms.locfileid: "96354521"
 3. **ARPin** 에 행위자를 추가하고 HoloLens 앵커 저장소에 핀을 저장합니다.  
     * 선택한 앵커 이름은 고유해야 하며 이 예제에서는 현재 타임스탬프를 추가합니다. 
 
-4. 앵커가 앵커 저장소에 성공적으로 저장된 경우, **시스템 > 맵 관리자 > 디바이스에 저장된 앵커 파일** 에서 해당 항목을 HoloLens 장치 포털에서 검사할 수 있습니다. 
+4. 앵커가 앵커 저장소에 성공적으로 저장된 경우, **시스템 > 맵 관리자 > 디바이스에 저장된 앵커 파일** 에서 해당 항목을 HoloLens 디바이스 포털에서 볼 수 있습니다. 
 
 ## <a name="loading-anchors"></a>앵커 로드
 
@@ -68,11 +66,11 @@ ms.locfileid: "96354521"
 [!INCLUDE[](includes/tabs-sa-4.md)]
 
 > [!NOTE]
-> 공간 앵커가 아직 베타 버전이므로 업데이트된 정보 및 기능을 다시 확인해야 합니다.
+> Spatial Anchors가 아직 베타 버전이므로 업데이트된 정보 및 기능을 다시 확인해야 합니다.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞에서 설명한 Unreal 개발 검사점 경험을 수행하는 경우 MRTK 핵심 구성 요소를 탐색하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다. 
+앞에서 설명한 Unreal 개발 과정을 따르고 있다면 현재 MRTK 핵심 구성 요소를 살펴보는 중입니다. 여기에서 다음 구성 요소로 진행할 수 있습니다. 
 
 > [!div class="nextstepaction"]
 > [Azure Spatial Anchors](unreal-azure-spatial-anchors.md)
@@ -86,5 +84,5 @@ ms.locfileid: "96354521"
 
 ## <a name="see-also"></a>참고 항목
 * [Azure Spatial Anchors](unreal-azure-spatial-anchors.md)
-* [공간 앵커](../../design/spatial-anchors.md)
+* [Spatial Anchors](../../design/spatial-anchors.md)
 * [좌표계](../../design/coordinate-systems.md)

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5952cf94ba07a6d92903050a2a813cc911d4d70f
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: a8258f1ba99fdd1607014624c4ad4d6ec0a8e330
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354676"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609612"
 ---
 # <a name="425"></a>[4.25](#tab/425)
 
@@ -13,9 +13,9 @@ ms.locfileid: "96354676"
 > [!NOTE]
 > 여기에는 **Unreal Engine 4.25** 이상이 필요합니다.
 
-시스템 및 사용자 지정 MRC 레코더는 몰입형 앱에서 렌더링한 홀로그램과 PV 카메라를 결합하여 혼합 현실 캡처를 만듭니다.
+시스템 및 사용자 지정 MRC 레코더는 앱에서 렌더링한 홀로그램과 PV 카메라를 결합하여 혼합 현실 캡처를 만듭니다.
 
-기본적으로 혼합 현실 캡처는 오른쪽 눈의 홀로그램 출력을 사용합니다. 몰입 형 앱이 [PV 카메라에서 렌더링](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in)하도록 선택한 경우 해당 항목을 대신 사용합니다. 이를 통해 MRC 영상에서 실제 세계와 홀로그램의 매핑이 개선됩니다.
+기본적으로 혼합 현실 캡처는 오른쪽 눈의 홀로그램 출력을 사용합니다. 몰입 형 앱이 [PV 카메라에서 렌더링](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in)하도록 선택한 경우 해당 항목을 대신 사용합니다. PV 카메라에서 렌더링하면 MRC 영상에서 실제 세계와 홀로그램의 매핑이 개선됩니다.
 
 PV 카메라에서 렌더링하도록 옵트인하려면 다음을 수행합니다.
 
@@ -46,7 +46,7 @@ PV 카메라에서 렌더링하도록 옵트인하려면 다음을 수행합니�
 
 ![카메라 렌더링](../images/unreal-camera-render.PNG)
 
-4. 이 타이머에 대한 새로운 기능을 만들고(이 경우 **MaterialTimer**), **GetARCameraImage** 를 호출하여 웹캠에서 질감을 가져옵니다.  
+4. 이 타이머에 대한 새로운 함수를 만들고(이 경우 **MaterialTimer**), **GetARCameraImage** 를 호출하여 웹캠에서 질감을 가져옵니다.  
 5. 이 질감이 유효한 경우 음영의 질감 매개 변수를 이 이미지로 설정합니다.  그렇지 않으면 재질 타이머를 다시 시작합니다.
 
 ![웹캠의 카메라 텍스처](../images/unreal-camera-texture.PNG)
@@ -91,13 +91,13 @@ PV 카메라에서 렌더링하도록 옵트인하려면 다음을 수행합니�
 
 ## <a name="find-camera-positions-in-world-space"></a>세계 공간에서 카메라 위치 찾기
 
-HoloLens 2의 카메라는 디바이스의 머리 추적에서 수직으로 오프셋됩니다.  이 점을 고려하여 세계 공간에서 카메라를 찾는 새 함수가 도입되었습니다.
+HoloLens 2의 카메라는 디바이스의 머리 추적에서 수직으로 오프셋됩니다.  오프셋을 고려하여 세계 공간에서 카메라를 찾는 몇 가지 기능이 있습니다.
 
-GetPVCameraToWorldTransform은 PVCamera의 세계 공간에서 변환을 가져옵니다.  가져온 변환은 카메라 렌즈에 배치됩니다.
+GetPVCameraToWorldTransform은 PV 카메라의 세계 공간에서 변환을 가져오고 카메라 렌즈에 다음과 같이 배치됩니다.
 
 ![Get PVCamera to World Transform 함수의 청사진](../images/unreal-pvc-img-08.png)
 
-GetWorldSpaceRayFromCameraPoint는 카메라 렌즈의 광선을 Unreal 세계 공간의 장면으로 쏘아 카메라 프레임의 특정 픽셀에 무엇이 있는지 알아냅니다.
+GetWorldSpaceRayFromCameraPoint는 카메라 렌즈의 광선을 Unreal 세계 공간의 장면으로 투사하여 카메라 프레임에서 픽셀의 콘텐츠를 찾습니다.
 
 ![Get World Space Ray from Camera Point의 청사진](../images/unreal-pvc-img-09.png)
 
@@ -105,7 +105,7 @@ GetPVCameraIntrinsics는 카메라 프레임에서 컴퓨터 비전 처리를 �
 
 ![Get PVCamera Intrinsics 함수의 청사진](../images/unreal-pvc-img-10.png)
 
-세계 공간의 특정 픽셀 좌표에 무엇이 있는지 알아내려면 세계 공간 광선과 함께 선 추적을 사용하면 됩니다.
+세계 공간의 특정 픽셀 좌표에 무엇이 있는지 알아내려면 세계 공간 광선과 함께 선 추적을 사용합니다.
 
 ![세계 공간의 특정 좌표에 무엇이 있는지 알아내는 데 사용되는 세계 공간 광선의 청사진](../images/unreal-pvc-img-11.png)
 
