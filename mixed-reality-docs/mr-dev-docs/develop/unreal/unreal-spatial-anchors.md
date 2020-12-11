@@ -1,90 +1,88 @@
 ---
 title: Unreal의 로컬 Spatial Anchors
-description: Unreal의 공간 앵커 사용 가이드
+description: Unreal의 Spatial Anchors 사용 가이드
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 기능, 설명서, 가이드, 홀로그램, spatial anchors, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 8be1521d44a9dda521c1570d3ac55955e475bc30
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: b517b1d89ddf7a35864db45a17336f4493816526
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354521"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609634"
 ---
-# <a name="local-spatial-anchors-in-unreal"></a><span data-ttu-id="4846c-104">Unreal의 로컬 Spatial Anchors</span><span class="sxs-lookup"><span data-stu-id="4846c-104">Local Spatial Anchors in Unreal</span></span>
+# <a name="local-spatial-anchors-in-unreal"></a><span data-ttu-id="f5125-104">Unreal의 로컬 Spatial Anchors</span><span class="sxs-lookup"><span data-stu-id="f5125-104">Local Spatial Anchors in Unreal</span></span>
 
-## <a name="overview"></a><span data-ttu-id="4846c-105">개요</span><span class="sxs-lookup"><span data-stu-id="4846c-105">Overview</span></span>
-
-<span data-ttu-id="4846c-106">공간 앵커는 애플리케이션 세션 사이의 실제 공간에서 홀로그램을 저장하는 데 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-106">Spatial anchors are used to save holograms in real-world space between application sessions.</span></span> <span data-ttu-id="4846c-107">이는 Unreal을 통해 **ARPin** 으로 표시되며 향후 세션에 로드될 HoloLens의 앵커 저장소에 저장됩니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-107">These get surfaced through Unreal as **ARPin** s and saved in the HoloLens’ anchor store, which is loaded in future sessions.</span></span> <span data-ttu-id="4846c-108">로컬 앵커는 인터넷에 연결되어 있지 않은 경우 대비책으로 적합합니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-108">Local anchors are ideal as a fallback when there is no internet connectivity.</span></span>
+<span data-ttu-id="f5125-105">Spatial Anchors는 애플리케이션 세션 간의 실제 공간에 홀로그램을 **ARPin** 으로 저장합니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-105">Spatial anchors save holograms in real-world space between application sessions as **ARPin** s.</span></span> <span data-ttu-id="f5125-106">HoloLens의 앵커 저장소에 저장되면 ARPin은 향후 세션에 로드될 수 있으며 인터넷 연결이 없을 때 이상적인 대체 옵션입니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-106">Once saved in the HoloLens' anchor store, ARPin's can be loaded in future sessions and are an ideal fallback option when there's no internet connectivity.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="4846c-109">UE 4.25의 앵커 함수는 4.26에서 사용되지 않으며 새 함수로 바꿔야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-109">Anchor functions from UE 4.25 are obsolete in 4.26 and should be replaced with newer ones.</span></span> 
+> <span data-ttu-id="f5125-107">UE 4.25의 앵커 함수는 4.26에서 사용되지 않으며 새 함수로 바꿔야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-107">Anchor functions from UE 4.25 are obsolete in 4.26 and should be replaced with newer ones.</span></span> 
 
 > [!IMPORTANT]
-> <span data-ttu-id="4846c-110">로컬 앵커는 디바이스에 저장되는 반면, Azure Spatial Anchors는 클라우드에 저장됩니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-110">Local anchors are stored on device, while Azure Spatial Anchors are stored in the cloud.</span></span> <span data-ttu-id="4846c-111">Azure Cloud Services를 사용하여 앵커를 저장하려는 경우 [Azure Spatial Anchors](unreal-azure-spatial-anchors.md) 통합 과정을 안내하는 문서를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="4846c-111">If you're looking to use Azure cloud services to store your anchors, we have a document that can walk you through integrating [Azure Spatial Anchors](unreal-azure-spatial-anchors.md).</span></span> <span data-ttu-id="4846c-112">로컬 및 Azure 앵커는 동일한 프로젝트에서 충돌 없이 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-112">Note that you can have local and Azure anchors in the same project without conflict.</span></span>
+> <span data-ttu-id="f5125-108">로컬 앵커는 디바이스에 저장되는 반면, Azure Spatial Anchors는 클라우드에 저장됩니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-108">Local anchors are stored on device, while Azure Spatial Anchors are stored in the cloud.</span></span> <span data-ttu-id="f5125-109">Azure Cloud Services를 사용하여 앵커를 저장하려는 경우 [Azure Spatial Anchors](unreal-azure-spatial-anchors.md) 통합 과정을 안내하는 문서를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="f5125-109">If you're looking to use Azure cloud services to store your anchors, we have a document that can walk you through integrating [Azure Spatial Anchors](unreal-azure-spatial-anchors.md).</span></span> <span data-ttu-id="f5125-110">로컬 및 Azure 앵커는 동일한 프로젝트에서 충돌 없이 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-110">Note that you can have local and Azure anchors in the same project without conflict.</span></span>
 
-## <a name="checking-the-anchor-store"></a><span data-ttu-id="4846c-113">앵커 저장소 확인</span><span class="sxs-lookup"><span data-stu-id="4846c-113">Checking the anchor store</span></span>
+## <a name="checking-the-anchor-store"></a><span data-ttu-id="f5125-111">앵커 저장소 확인</span><span class="sxs-lookup"><span data-stu-id="f5125-111">Checking the anchor store</span></span>
 
-<span data-ttu-id="4846c-114">앵커를 저장하거나 로드하기 전에 먼저 앵커 저장소가 준비되었는지 확인해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-114">Before saving or loading anchors, you need to check if the anchor store is ready.</span></span>  <span data-ttu-id="4846c-115">앵커 저장소가 준비되기 전에는 HoloLens 앵커 함수의 호출에 성공하지 못합니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-115">Calling any of the HoloLens anchor functions before the anchor store is ready will not succeed.</span></span>  
+<span data-ttu-id="f5125-112">앵커를 저장하거나 로드하기 전에 먼저 앵커 저장소가 준비되었는지 확인해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-112">Before saving or loading anchors, you need to check if the anchor store is ready.</span></span>  <span data-ttu-id="f5125-113">앵커 저장소가 준비되기 전에는 HoloLens 앵커 함수의 호출에 성공하지 못합니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-113">Calling any of the HoloLens anchor functions before the anchor store is ready won't succeed.</span></span>  
 
 [!INCLUDE[](includes/tabs-sa-1.md)]
 
-## <a name="saving-anchors"></a><span data-ttu-id="4846c-116">앵커 저장</span><span class="sxs-lookup"><span data-stu-id="4846c-116">Saving anchors</span></span>
+## <a name="saving-anchors"></a><span data-ttu-id="f5125-114">앵커 저장</span><span class="sxs-lookup"><span data-stu-id="f5125-114">Saving anchors</span></span>
 
-<span data-ttu-id="4846c-117">세계에 고정해야 하는 구성 요소가 애플리케이션에 있으면 다음 순서에 따라 앵커 저장소에 저장할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-117">Once the application has a component that needs to be pinned to the world, it can be saved to the anchor store with the following sequence:</span></span> 
+<span data-ttu-id="f5125-115">세계에 고정해야 하는 구성 요소가 애플리케이션에 있으면 다음 순서에 따라 앵커 저장소에 저장할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-115">Once the application has a component you need to pin to the world, it can be saved to the anchor store with the following sequence:</span></span> 
 
 [!INCLUDE[](includes/tabs-sa-2.md)]
 
-<span data-ttu-id="4846c-118">상세 구분:</span><span class="sxs-lookup"><span data-stu-id="4846c-118">Breaking this down:</span></span>
-1. <span data-ttu-id="4846c-119">알려진 위치에 행위자를 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-119">Spawn an actor at a known location.</span></span>
-2. <span data-ttu-id="4846c-120">행위자의 클래스를 기준으로 해당 위치와 이름을 사용하여 **ARPin** 을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-120">Create an **ARPin** with that location and a name based on the actor’s class.</span></span> 
-3. <span data-ttu-id="4846c-121">**ARPin** 에 행위자를 추가하고 HoloLens 앵커 저장소에 핀을 저장합니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-121">Add the actor to the **ARPin** and save the pin to the HoloLens anchor store.</span></span>  
-    * <span data-ttu-id="4846c-122">선택한 앵커 이름은 고유해야 하며 이 예제에서는 현재 타임스탬프를 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-122">The anchor name you choose must be unique, which in this example is the current timestamp.</span></span> 
+<span data-ttu-id="f5125-116">상세 구분:</span><span class="sxs-lookup"><span data-stu-id="f5125-116">Breaking this down:</span></span>
+1. <span data-ttu-id="f5125-117">알려진 위치에 행위자를 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-117">Spawn an actor at a known location.</span></span>
+2. <span data-ttu-id="f5125-118">행위자의 클래스를 기준으로 해당 위치와 이름을 사용하여 **ARPin** 을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-118">Create an **ARPin** with that location and a name based on the actor’s class.</span></span> 
+3. <span data-ttu-id="f5125-119">**ARPin** 에 행위자를 추가하고 HoloLens 앵커 저장소에 핀을 저장합니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-119">Add the actor to the **ARPin** and save the pin to the HoloLens anchor store.</span></span>  
+    * <span data-ttu-id="f5125-120">선택한 앵커 이름은 고유해야 하며 이 예제에서는 현재 타임스탬프를 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-120">The anchor name you choose must be unique, which in this example is the current timestamp.</span></span> 
 
-4. <span data-ttu-id="4846c-123">앵커가 앵커 저장소에 성공적으로 저장된 경우, **시스템 > 맵 관리자 > 디바이스에 저장된 앵커 파일** 에서 해당 항목을 HoloLens 장치 포털에서 검사할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-123">If the anchor is successfully saved to the anchor store, you can be inspect it in the HoloLens device portal under **System > Map manager > Anchor Files Saved On Device**.</span></span> 
+4. <span data-ttu-id="f5125-121">앵커가 앵커 저장소에 성공적으로 저장된 경우, **시스템 > 맵 관리자 > 디바이스에 저장된 앵커 파일** 에서 해당 항목을 HoloLens 디바이스 포털에서 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-121">If the anchor is successfully saved to the anchor store, you can see it in the HoloLens device portal under **System > Map manager > Anchor Files Saved On Device**.</span></span> 
 
-## <a name="loading-anchors"></a><span data-ttu-id="4846c-124">앵커 로드</span><span class="sxs-lookup"><span data-stu-id="4846c-124">Loading anchors</span></span>
+## <a name="loading-anchors"></a><span data-ttu-id="f5125-122">앵커 로드</span><span class="sxs-lookup"><span data-stu-id="f5125-122">Loading anchors</span></span>
 
-<span data-ttu-id="4846c-125">애플리케이션이 시작되면 다음 청사진을 사용하여 구성 요소를 앵커 위치에 복원할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-125">When an application starts, you can use the following blueprint to restore components to their anchor locations:</span></span>
+<span data-ttu-id="f5125-123">애플리케이션이 시작되면 다음 청사진을 사용하여 구성 요소를 앵커 위치에 복원할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-123">When an application starts, you can use the following blueprint to restore components to their anchor locations:</span></span>
 
 [!INCLUDE[](includes/tabs-sa-3.md)]
 
-<span data-ttu-id="4846c-126">상세 구분:</span><span class="sxs-lookup"><span data-stu-id="4846c-126">Breaking this down:</span></span>
-1. <span data-ttu-id="4846c-127">앵커 저장소의 모든 앵커에 대해 반복합니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-127">Iterate over all of the anchors in the anchor store.</span></span> 
-2. <span data-ttu-id="4846c-128">ID에서 행위자를 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-128">Spawn an actor at identity.</span></span>
-3. <span data-ttu-id="4846c-129">해당 행위자를 앵커 저장소에서 **ARPin** 에 고정합니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-129">Pin that actor to the **ARPin** from the anchor store.</span></span>  
+<span data-ttu-id="f5125-124">상세 구분:</span><span class="sxs-lookup"><span data-stu-id="f5125-124">Breaking this down:</span></span>
+1. <span data-ttu-id="f5125-125">앵커 저장소의 모든 앵커에 대해 반복합니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-125">Iterate over all of the anchors in the anchor store.</span></span> 
+2. <span data-ttu-id="f5125-126">ID에서 행위자를 생성합니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-126">Spawn an actor at identity.</span></span>
+3. <span data-ttu-id="f5125-127">해당 행위자를 앵커 저장소에서 **ARPin** 에 고정합니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-127">Pin that actor to the **ARPin** from the anchor store.</span></span>  
 
-    * <span data-ttu-id="4846c-130">앵커는 홀로그램이 저장된 위치를 기준으로 홀로그램 위치를 다시 설정하는 것을 담당하므로 행위자를 ID에 생성하는 것이 중요합니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-130">It's important to spawn the actor at identity since the anchor is responsible for repositioning the hologram in the world based on where it was saved.</span></span> <span data-ttu-id="4846c-131">여기에 추가된 변환은 앵커에 오프셋을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-131">Any transform added here will add an offset to the anchor.</span></span> 
+    * <span data-ttu-id="f5125-128">앵커는 홀로그램이 저장된 위치를 기준으로 홀로그램 위치를 다시 설정하는 것을 담당하므로 행위자를 ID에 생성하는 것이 중요합니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-128">It's important to spawn the actor at identity since the anchor is responsible for repositioning the hologram in the world based on where it was saved.</span></span> <span data-ttu-id="f5125-129">여기에 추가된 변환은 앵커에 오프셋을 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-129">Any transform added here will add an offset to the anchor.</span></span> 
 
-<span data-ttu-id="4846c-132">앵커 ID는 앵커의 저장된 이름에 따라 다른 행위자가 생성될 수 있도록 쿼리되기도 합니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-132">The anchor ID is also queried so that different actors can be spawned depending on the anchor’s saved name.</span></span> 
+<span data-ttu-id="f5125-130">앵커 ID는 앵커의 저장된 이름에 따라 다른 행위자가 생성될 수 있도록 쿼리되기도 합니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-130">The anchor ID is also queried so that different actors can be spawned depending on the anchor’s saved name.</span></span> 
 
-## <a name="removing-anchors"></a><span data-ttu-id="4846c-133">앵커 제거</span><span class="sxs-lookup"><span data-stu-id="4846c-133">Removing anchors</span></span> 
+## <a name="removing-anchors"></a><span data-ttu-id="f5125-131">앵커 제거</span><span class="sxs-lookup"><span data-stu-id="f5125-131">Removing anchors</span></span> 
 
-<span data-ttu-id="4846c-134">앵커 작업을 마치면 **WMRAnchor 저장소에서 ARPin 제거** 및 **WMRAnchor 저장소 모든 ARPin 제거** 구성 요소를 통해 개별 앵커 또는 전체 앵커 저장소를 지울 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-134">When you're done with an anchor you can clear individual anchors or the entire anchor store with the **Remove ARPin from WMRAnchor Store** and **Remove All ARPins from WMRAnchor Store** components.</span></span>
+<span data-ttu-id="f5125-132">앵커 작업을 마치면 **WMRAnchor 저장소에서 ARPin 제거** 및 **WMRAnchor 저장소 모든 ARPin 제거** 구성 요소를 통해 개별 앵커 또는 전체 앵커 저장소를 지울 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-132">When you're done with an anchor, you can clear individual anchors or the entire anchor store with the **Remove ARPin from WMRAnchor Store** and **Remove All ARPins from WMRAnchor Store** components.</span></span>
 
 [!INCLUDE[](includes/tabs-sa-4.md)]
 
 > [!NOTE]
-> <span data-ttu-id="4846c-135">공간 앵커가 아직 베타 버전이므로 업데이트된 정보 및 기능을 다시 확인해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-135">Bear in mind that Spatial Anchors are still in Beta, so be sure to check back for updated information and features.</span></span>
+> <span data-ttu-id="f5125-133">Spatial Anchors가 아직 베타 버전이므로 업데이트된 정보 및 기능을 다시 확인해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-133">Bear in mind that Spatial Anchors are still in Beta, so be sure to check back for updated information and features.</span></span>
 
-## <a name="next-development-checkpoint"></a><span data-ttu-id="4846c-136">다음 개발 검사점</span><span class="sxs-lookup"><span data-stu-id="4846c-136">Next Development Checkpoint</span></span>
+## <a name="next-development-checkpoint"></a><span data-ttu-id="f5125-134">다음 개발 검사점</span><span class="sxs-lookup"><span data-stu-id="f5125-134">Next Development Checkpoint</span></span>
 
-<span data-ttu-id="4846c-137">앞에서 설명한 Unreal 개발 검사점 경험을 수행하는 경우 MRTK 핵심 구성 요소를 탐색하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-137">If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks.</span></span> <span data-ttu-id="4846c-138">여기에서 다음 구성 요소로 진행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-138">From here, you can proceed to the next building block:</span></span> 
-
-> [!div class="nextstepaction"]
-> [<span data-ttu-id="4846c-139">Azure Spatial Anchors</span><span class="sxs-lookup"><span data-stu-id="4846c-139">Azure Spatial Anchors</span></span>](unreal-azure-spatial-anchors.md)
-
-<span data-ttu-id="4846c-140">또는 Mixed Reality 플랫폼 기능 및 API로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-140">Or jump to Mixed Reality platform capabilities and APIs:</span></span>
+<span data-ttu-id="f5125-135">앞에서 설명한 Unreal 개발 과정을 따르고 있다면 현재 MRTK 핵심 구성 요소를 살펴보는 중입니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-135">If you're following the Unreal development journey we've laid out, you're in the midst of exploring the MRTK core building blocks.</span></span> <span data-ttu-id="f5125-136">여기에서 다음 구성 요소로 진행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-136">From here, you can continue to the next building block:</span></span> 
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="4846c-141">HoloLens 카메라</span><span class="sxs-lookup"><span data-stu-id="4846c-141">HoloLens camera</span></span>](unreal-hololens-camera.md)
+> [<span data-ttu-id="f5125-137">Azure Spatial Anchors</span><span class="sxs-lookup"><span data-stu-id="f5125-137">Azure Spatial Anchors</span></span>](unreal-azure-spatial-anchors.md)
 
-<span data-ttu-id="4846c-142">언제든지 [Unreal 개발 검사점](unreal-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4846c-142">You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#2-core-building-blocks) at any time.</span></span>
+<span data-ttu-id="f5125-138">또는 Mixed Reality 플랫폼 기능 및 API로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-138">Or jump to Mixed Reality platform capabilities and APIs:</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="4846c-143">참고 항목</span><span class="sxs-lookup"><span data-stu-id="4846c-143">See also</span></span>
-* [<span data-ttu-id="4846c-144">Azure Spatial Anchors</span><span class="sxs-lookup"><span data-stu-id="4846c-144">Azure Spatial Anchors</span></span>](unreal-azure-spatial-anchors.md)
-* [<span data-ttu-id="4846c-145">공간 앵커</span><span class="sxs-lookup"><span data-stu-id="4846c-145">Spatial anchors</span></span>](../../design/spatial-anchors.md)
-* [<span data-ttu-id="4846c-146">좌표계</span><span class="sxs-lookup"><span data-stu-id="4846c-146">Coordinate systems</span></span>](../../design/coordinate-systems.md)
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="f5125-139">HoloLens 카메라</span><span class="sxs-lookup"><span data-stu-id="f5125-139">HoloLens camera</span></span>](unreal-hololens-camera.md)
+
+<span data-ttu-id="f5125-140">언제든지 [Unreal 개발 검사점](unreal-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f5125-140">You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#2-core-building-blocks) at any time.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="f5125-141">참고 항목</span><span class="sxs-lookup"><span data-stu-id="f5125-141">See also</span></span>
+* [<span data-ttu-id="f5125-142">Azure Spatial Anchors</span><span class="sxs-lookup"><span data-stu-id="f5125-142">Azure Spatial Anchors</span></span>](unreal-azure-spatial-anchors.md)
+* [<span data-ttu-id="f5125-143">Spatial Anchors</span><span class="sxs-lookup"><span data-stu-id="f5125-143">Spatial anchors</span></span>](../../design/spatial-anchors.md)
+* [<span data-ttu-id="f5125-144">좌표계</span><span class="sxs-lookup"><span data-stu-id="f5125-144">Coordinate systems</span></span>](../../design/coordinate-systems.md)
