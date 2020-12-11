@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens, 혼합 현실, 모던 헤드셋, 앱, uwp, 제출, 제출, 필터, 메타 데이터, 시스템 요구 사항, 키워드, wack, 인증, 패키지, appx, 머천다이징
-ms.openlocfilehash: 5c7a1d6e00610a4046bd71b07ca5184399c9e335
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: b4b82557ba274852ebb3f97058017fa2e5db1c02
+ms.sourcegitcommit: 9e9d58de4513655c7daa71ff4b5b2c2b115ab959
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925774"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97034584"
 ---
 # <a name="distributing-your-apps"></a>앱 배포
 
@@ -45,7 +45,7 @@ ms.locfileid: "96925774"
     <td><strong>조직과 공유</strong></td>
 </tr>
 <tr>
-    <td><a href="https://docs.microsoft.com/hololens/app-deploy-app-installer"><strong>앱 설치 관리자</strong></a> ( <a href="https://docs.microsoft.com/hololens/hololens-insider">Windows 참가자 빌드</a>를 통해)</td>
+    <td><a href="https://docs.microsoft.com/hololens/app-deploy-app-installer"><strong>앱 설치 관리자</strong></td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>
@@ -66,7 +66,7 @@ ms.locfileid: "96925774"
     <td><a href="submitting-an-app-to-the-microsoft-store.md"><strong>Microsoft Store</strong></a></td>
     <td>❌</td>
     <td>✔️</td>
-    <td>✔️</td>
+    <td>✔️</td>초
 </tr>
 <tr>
     <td><a href="https://docs.microsoft.com/hololens/app-deploy-store-business"><strong>비즈니스용 Microsoft Store</strong></a></td>
@@ -102,14 +102,3 @@ ms.locfileid: "96925774"
 ## <a name="see-also"></a>참고 항목
 * [Microsoft Store에서 응용 프로그램 찾기, 설치 및 제거](https://docs.microsoft.com/hololens/holographic-store-apps)
 
-<!-- ## Submitting to the Microsoft Store
-
-You've finally made it to the last step on your distribution journey, actually getting your app into the Microsoft Store! Our [submission guidelines](submitting-an-app-to-the-microsoft-store.md) article will take you through: 
-
-* Partner Center registration 
-* Asset preparation
-* App packaging
-* Testing
-* Final submission process
-
-You can even give out free trials to get future consumers excited about your new immersive experience. Once your app is listed on the Microsoft Store you can sit back, engage with your expanding user community, and think about all the new features you want to add! -->
