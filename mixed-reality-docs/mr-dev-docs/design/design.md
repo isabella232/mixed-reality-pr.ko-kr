@@ -3,16 +3,16 @@ title: 디자인 및 프로토타입 생성 시작
 description: 만들 준비가 되면, 디자인 및 프로토타입 생성을 시작하는 데 필요한 기본 개념을 알아봅니다.
 author: grbury
 ms.author: grbury
-ms.date: 08/24/2019
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 검색, 배포, 인덱스, 방문 페이지, 디자인, 개발, 자습서, 샘플 앱, 기본 사항, 사례 연구, 리소스, HoloLens 방법, 오픈 소스 프로젝트, 핵심 개념, 상호 작용, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 3c28991fa35052a8b5cf5a071899ec14f2fec226
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: a11283ad4a7931c9e061cdbf25d4659fa4760822
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702719"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926008"
 ---
 # <a name="start-designing-and-prototyping"></a>디자인 및 프로토타입 생성 시작
 

@@ -3,16 +3,16 @@ title: Unreal의 Azure Spatial Anchors
 description: Unreal 엔진에서 Azure Spatial Anchors 만들기에 대한 개요입니다.
 author: hferrone
 ms.author: jacksonf
-ms.date: 07/01/2020
+ms.date: 12/9/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, azure development, spatial anchors, 혼합 현실, 개발, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 홀로그램, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 4714957c3ddab188a776c86f839208759c9d20de
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 18ec9db03341ad4fc6a5c10ea6f8fdd38c61c537
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609744"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926028"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Unreal의 Azure Spatial Anchors
 

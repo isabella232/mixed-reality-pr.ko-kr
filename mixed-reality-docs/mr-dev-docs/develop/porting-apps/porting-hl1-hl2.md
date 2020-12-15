@@ -3,16 +3,16 @@ title: HoloLens(1세대) 앱을 HoloLens 2로 포팅
 description: MRTK 버전 2 및 HoloLens 2로 이식하려는 HoloLens(1세대) 및/또는 이전 MRTK에 기존 앱이 있는 개발자를 위해 설계되었습니다.
 author: hferrone
 ms.author: grbury
-ms.date: 07/29/2020
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 테스트, MRTK, MRTK 버전 2, HoloLens 2, unity, 포팅, HoloLens 1세대, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 마이그레이션, 모범 사례, ARM
-ms.openlocfilehash: 9d76dcdb6fedb3297a781b9bf905b9d74521ad58
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 7a4c05ce4918ff3868265c40096bd37016d4546a
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96469730"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925954"
 ---
 # <a name="porting-hololens-1st-gen-apps-to-hololens-2"></a>HoloLens(1세대) 앱을 HoloLens 2로 포팅
 

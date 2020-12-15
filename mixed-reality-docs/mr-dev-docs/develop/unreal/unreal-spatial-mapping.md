@@ -3,16 +3,16 @@ title: Unreal의 공간 매핑
 description: Unreal의 공간 매핑 사용 가이드
 author: hferrone
 ms.author: jacksonf
-ms.date: 06/10/2020
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 기능, 설명서, 가이드, 홀로그램, 공간 매핑, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: bde5a1b53f6ad90bc84f54bd3e4f1237b78f2abe
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 6d70e7f2d32fbf39bc51534661b8224547c36acc
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609424"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926043"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Unreal의 공간 매핑
 
