@@ -1,30 +1,28 @@
 ---
 title: Holographic Remoting 원격 앱 작성 (WMR)
-description: 원격 컴퓨터에서 렌더링 되는 Holographic Remoting 원격 앱 원격 콘텐츠를 만들면 HoloLens 2로 스트리밍할 수 있습니다. 이 문서에서는이를 달성할 수 있는 방법에 대해 설명 합니다.
+description: 원격 컴퓨터에서 렌더링 되는 Holographic Remoting 원격 앱 원격 콘텐츠를 만들면 HoloLens 2로 스트리밍할 수 있습니다.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, NuGet
-ms.openlocfilehash: 3bbb75d9f1b6db64326f5b429103828266650a52
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 5eddcc117008ebc54eac11965592099601880d3e
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96469525"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530218"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-holographicspace-api"></a>HolographicSpace API를 사용 하 여 Holographic Remoting 원격 앱 작성
 
 >[!IMPORTANT]
 >이 문서에서는 [HOLOGRAPHICSPACE API](../native/getting-a-holographicspace.md)를 사용 하 여 HoloLens 2 용 원격 응용 프로그램을 만드는 방법을 설명 합니다. HoloLens 용 원격 응용 프로그램 **(첫 번째 gen)** 은 NuGet 패키지 **버전 1.x를 사용** 해야 합니다. 즉, HoloLens 2 용으로 작성 된 원격 응용 프로그램은 HoloLens 1과 호환 되지 않으며 그 반대의 경우도 마찬가지입니다. HoloLens 1에 대 한 설명서는 [여기](add-holographic-remoting.md)에서 찾을 수 있습니다.
 
-Holographic Remoting 원격 앱을 만들면 원격 컴퓨터에서 렌더링 되는 원격 콘텐츠를 Windows Mixed Reality 헤드셋과 같은 HoloLens 2 및 몰입 형 장치로 스트리밍할 수 있습니다. 이 문서에서는이를 달성할 수 있는 방법에 대해 설명 합니다. 이 페이지 및 작업 프로젝트의 모든 코드는 [Holographic Remoting 샘플 github 리포지토리](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)에서 찾을 수 있습니다.
+Holographic 원격 앱은 원격으로 렌더링 된 콘텐츠를 HoloLens 2 및 Windows Mixed Reality 모던 헤드셋으로 스트리밍할 수 있습니다. 더 많은 시스템 리소스에 액세스 하 고 기존 데스크톱 PC 소프트웨어에 원격 [몰입 형 보기](../../design/app-views.md) 를 통합할 수도 있습니다. 원격 앱은 HoloLens 2에서 입력 데이터 스트림을 받고, 가상 몰입 형 보기에서 콘텐츠를 렌더링 하 고, 콘텐츠 프레임을 HoloLens 2로 다시 스트리밍합니다. 연결은 표준 Wi-fi를 사용 하 여 수행 됩니다. Holographic Remoting은 NuGet 패킷을 통해 데스크톱 또는 UWP 앱에 추가 됩니다. 연결을 처리 하 고 몰입 형 보기에서 렌더링 하는 추가 코드가 필요 합니다. 일반적인 원격 연결의 경우 대기 시간은 50 밀리초로 낮습니다. 플레이어 앱은 실시간으로 대기 시간을 보고할 수 있습니다.
 
-Holographic remoting을 사용 하면 앱이 데스크톱 PC 또는 UWP 장치 (예: Xbox One)에서 렌더링 된 Holographic 콘텐츠를 사용 하 여 HoloLens 2 및 Windows Mixed Reality 헤드셋을 대상으로 할 수 있습니다 .이를 통해 더 많은 시스템 리소스에 액세스 하 고 원격 [몰입 형 보기](../../design/app-views.md) 를 기존 데스크톱 PC 소프트웨어에 통합할 수 있습니다. 원격 앱은 HoloLens 2에서 입력 데이터 스트림을 받고, 가상 몰입 형 보기에서 콘텐츠를 렌더링 하 고, 콘텐츠 프레임을 HoloLens 2로 다시 스트리밍합니다. 연결은 표준 Wi-fi를 사용 하 여 수행 됩니다. Holographic Remoting은 NuGet 패킷을 통해 데스크톱 또는 UWP 앱에 추가 됩니다. 연결을 처리 하 고 몰입 형 보기에서 렌더링 하는 추가 코드가 필요 합니다.
+이 페이지 및 작업 프로젝트의 모든 코드는 [Holographic Remoting 샘플 github 리포지토리](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)에서 찾을 수 있습니다.
 
-일반적인 원격 연결의 경우 대기 시간은 50 밀리초로 낮습니다. 플레이어 앱은 실시간으로 대기 시간을 보고할 수 있습니다.
-
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 좋은 출발점은 [HOLOGRAPHICSPACE API](../native/getting-a-holographicspace.md)를 대상으로 하는 작동 하는 DirectX 기반 데스크톱 또는 UWP 앱입니다. 자세한 내용은 [DirectX 개발 개요](../native/directx-development-overview.md)를 참조 하세요. [C + + holographic 프로젝트 템플릿이](../native/creating-a-holographic-directx-project.md) 좋은 출발점입니다.
 
@@ -38,10 +36,10 @@ Holographic remoting을 사용 하면 앱이 데스크톱 PC 또는 UWP 장치 (
 Visual Studio에서 프로젝트에 NuGet 패키지를 추가 하려면 다음 단계를 수행 해야 합니다.
 1. Visual Studio에서 프로젝트를 엽니다.
 2. 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **NuGet 패키지 관리 ...** 를 선택 합니다.
-3. 표시 되는 패널에서 **찾아보기** 를 클릭 한 다음 "Holographic Remoting"을 검색 합니다.
-4. **Holographic** 를 선택 하 고 최신 **2.x 버전을** 선택 하 고 **설치** 를 클릭 합니다.
-5. **미리 보기** 대화 상자가 표시 되 면 **확인** 을 클릭 합니다.
-6. 표시 되는 다음 대화 상자는 사용권 계약입니다. **동의** 함을 클릭 하 여 사용권 계약에 동의 합니다.
+3. 표시 되는 패널에서 **찾아보기** 를 선택한 다음 "Holographic Remoting"을 검색 합니다.
+4. **Holographic** 를 선택 하 **고 최신 2.x** 버전을 선택 하 고 **설치** 를 선택 합니다.
+5. **미리 보기** 대화 상자가 표시 되 면 **확인** 을 선택 합니다.
+6. 사용권 계약 대화 상자가 표시 되 면 **동의** 함을 선택 합니다.
 
 >[!NOTE]
 >HoloLens 1을 대상으로 하는 개발자에 게는 NuGet 패키지의 버전 **1. x. x** 를 계속 사용할 수 있습니다. 자세한 내용은 [Holographic 원격 추가 (HoloLens (첫 번째 gen))](add-holographic-remoting.md)를 참조 하세요.
@@ -108,7 +106,7 @@ catch(winrt::hresult_error& e)
 >[!TIP]
 >[C + +/vb](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/) 언어 프로젝션을 사용 하지 않으려면 ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` Holographic Remoting NuGet 패키지 내에 있는 파일을 포함할 수 있습니다. 여기에는 기본 COM 인터페이스의 선언이 포함 됩니다. 그러나 c + +/WinRT를 사용 하는 것이 좋습니다.
 
-원격 앱에서 들어오는 연결을 수신 하는 작업은 메서드를 호출 하 여 수행할 수 있습니다 ```Listen``` . 이 호출 중에 핸드셰이크 포트와 전송 포트를 모두 지정할 수 있습니다. 핸드셰이크 포트는 초기 핸드셰이크에 사용 됩니다. 그런 다음 데이터는 전송 포트를 통해 전송 됩니다. 기본적으로 **8265** 및 **8266** 이 사용 됩니다.
+원격 앱에서 들어오는 연결을 수신 하는 작업은 메서드를 호출 하 여 수행할 수 있습니다 ```Listen``` . 이 호출 중에 핸드셰이크 포트와 전송 포트를 모두 지정할 수 있습니다. 핸드셰이크 포트는 초기 핸드셰이크에 사용 됩니다. 그러면 전송 포트를 통해 데이터가 전송 됩니다. 기본적으로 **8265** 및 **8266** 이 사용 됩니다.
 
 ```cpp
 try
@@ -268,7 +266,7 @@ void SampleRemoteMain::OnRecognizedSpeech(const winrt::hstring& recognizedText)
 
 ## <a name="preview-streamed-content-locally"></a>스트리밍 콘텐츠를 로컬로 미리 봅니다.
 
-장치에 전송 되는 원격 앱에 동일한 콘텐츠를 표시 하려면 ```OnSendFrame``` 원격 컨텍스트의 이벤트를 사용할 수 있습니다. ```OnSendFrame```이 이벤트는 Holographic 원격 라이브러리가 현재 프레임을 원격 장치로 보낼 때마다 트리거됩니다. 이는 콘텐츠를 사용 하 여 데스크톱 또는 UWP 창으로 array.blit 하는 데 가장 적합 한 시간입니다.
+장치에 전송 된 원격 앱에 동일한 콘텐츠를 표시 하려면 ```OnSendFrame``` 원격 컨텍스트의 이벤트를 사용할 수 있습니다. ```OnSendFrame```이 이벤트는 Holographic 원격 라이브러리가 현재 프레임을 원격 장치로 보낼 때마다 트리거됩니다. 이는 콘텐츠를 사용 하 여 데스크톱 또는 UWP 창으로 array.blit 하는 데 가장 적합 한 시간입니다.
 
 ```cpp
 #include <windows.graphics.directx.direct3d11.interop.h>
@@ -293,7 +291,7 @@ m_onSendFrameEventRevoker = m_remoteContext.OnSendFrame(
 
 ## <a name="depth-reprojection"></a>깊이 예측
 
-[2.1.0](holographic-remoting-version-history.md#v2.1.0)버전부터 Holographic Remoting은 [깊이 재 프로젝션을](hologram-stability.md#reprojection)지원 합니다. 이를 위해서는 색 버퍼 외에도 원격 응용 프로그램에서 HoloLens 2로 깊이 버퍼를 스트리밍할 수 있습니다. 기본적으로 깊이 버퍼 스트리밍은 사용 하도록 설정 되 고 색 버퍼의 절반 정도를 사용 하도록 구성 됩니다. 다음과 같이 변경할 수 있습니다.
+[2.1.0](holographic-remoting-version-history.md#v2.1.0)버전부터 Holographic Remoting은 [깊이 재 프로젝션을](hologram-stability.md#reprojection)지원 합니다. 이렇게 하려면 색 버퍼와 깊이 버퍼가 원격 응용 프로그램에서 HoloLens 2로 스트리밍되는지 합니다. 기본적으로 깊이 버퍼 스트리밍은 사용 하도록 설정 되 고 색 버퍼의 절반 정도를 사용 하도록 구성 됩니다. 다음과 같이 변경할 수 있습니다.
 
 ```cpp
 // class implementation
@@ -317,7 +315,7 @@ m_remoteContext.ConfigureDepthVideoStream(DepthBufferStreamResolution::Half_Reso
 
 전체 해상도 깊이 버퍼를 사용 하면 대역폭 요구 사항에도 영향을 주며, 사용자가 제공 하는 최대 대역폭 값에서에 대해 고려해 야 ```CreateRemoteContext``` 합니다.
 
-해상도를 구성 하는 것 외에도 [HolographicCameraRenderingParameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)를 통해 깊이 버퍼를 커밋해야 합니다.
+해상도 구성 외에도 [HolographicCameraRenderingParameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)를 통해 깊이 버퍼를 커밋해야 합니다.
 
 ```cpp
 
