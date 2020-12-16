@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality, 컨퍼런스, summit, developer, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 94f38ff122826dfaea6282403c5958b127c81739
-ms.sourcegitcommit: ee87915132cf2874d4642ce2fe383f5eba6c49c2
+ms.openlocfilehash: 7ca5357c9d7f3536fc165d0663813ae98f45004f
+ms.sourcegitcommit: 1b5a5ce89f2edc86985a73e4f3828bb761e7543a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97111885"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97564258"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>혼합 현실 개발자의 날 일본
 
@@ -31,9 +31,9 @@ ms.locfileid: "97111885"
 
 ## <a name="registration"></a>등록
 
-[Registeration-이제 열림](https://mixedrealityprod.microsoftcrmportals.com/event/sessions?id=MR_Dev_Days_Japan864059683)
+[지금 보기-Microsoft 팀 라이브 이벤트](https://aka.ms/MRDDJPLive)
 
-일본의 혼합 현실 개발 일에 대 한 등록을 여는 것이 매우 기쁘게 생각 합니다.  이 이벤트는 무료 이며 Microsoft 팀 라이브 이벤트에서 온라인 상태로 유지 됩니다.  이벤트가 가까이 있어 이벤트의 대화형 요소에 참여할 수 있도록 참석자가 등록 되도록 요청 합니다.
+팀 PC 앱을 시청 하는 것이 좋지만 팀 모바일 앱 또는 데스크톱 브라우저에도 참여할 수 있습니다. 어떤 이유로 팀에 로그인 할 수 없는 경우 [YouTube 라이브](https://youtu.be/zxZu1uHjyo4)를 확인 하세요. 그러나 사용자는 발표자에 게 QA에 참여할 수 없습니다.
 
 ## <a name="schedule---subject-to-change"></a>일정-변경 될 대상
 
@@ -44,7 +44,7 @@ ms.locfileid: "97111885"
 ### <a name="december-16th"></a>12 월 16 일
 |**Time**|**세션 제목**|**발표자**|**언어**|**수준**|
 |---------|---------|---------|---------|---------|
-|10:00am-10:50am|키 노트 열기|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA-JP/EN|해당 없음|
+|10:00am-10:50am|키 노트 열기|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA-JP/EN|N/A|
 |10:50am-11:00am|**중단 (10 분)**||||
 |11:00am-11:25am|*세션 1* 혼합 현실 소개|Atsushi Suzuki|JA|100|
 |11:30am-11:55am|*세션 2* 혼합 현실 비즈니스 모멘텀|Tetsu Muranaka|JA|200|
@@ -60,7 +60,7 @@ ms.locfileid: "97111885"
 |4:15pm-4:40pm|*세션 9* Azure 공간 앵커를 통해 홀로그램 및 실제 세계 맞춤|Yingguang Mei|EN|300|
 |4:45pm-5: 오후 10 시|*세션 10* Unity + PiXYZ|Shinobu Takahashi (Unity 기술 일본)|JA|200|
 |5:15pm-5:40pm|*세션 11* Azure Kinect 진한 심층 분석, 사례 연구|Shinji Chiba|JA|400|
-|5:45pm-6:00pm|닫기|Madoka Chiyoda|JA|해당 없음|
+|5:45pm-6:00pm|닫기|Madoka Chiyoda|JA|N/A|
 
 #### <a name="contributors-technical-reviewers-for-the-subtitles"></a>참가자 (자막의 기술 검토자)
 
