@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality, 컨퍼런스, summit, developer, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 925e94931adab767fbca2544d781c9ba1c095216
-ms.sourcegitcommit: cecb76c6a9b4b2c4e9769a5829a7146c99086e85
+ms.openlocfilehash: bd51220e030af1e9c60a66eb43ea6985b95cd43f
+ms.sourcegitcommit: 16524778ece416e002f52c9ceae354e1122bcc74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/16/2020
-ms.locfileid: "97580549"
+ms.locfileid: "97582417"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>혼합 현실 개발자의 날 일본
 
@@ -29,11 +29,11 @@ ms.locfileid: "97580549"
 
 **주 언어-일본어**
 
-## <a name="registration"></a>등록
+## <a name="session-recordings"></a>세션 기록
 
-[지금 보기-Microsoft 팀 라이브 이벤트](https://aka.ms/MRDDJPLive)
+[모든 비디오 보기-YouTube 재생 목록](https://www.youtube.com/playlist?list=PLQEKit6tfVVIZaQWKTuNMONjPiIKMuJRH)
 
-팀 PC 앱을 시청 하는 것이 좋지만 팀 모바일 앱 또는 데스크톱 브라우저에도 참여할 수 있습니다. 어떤 이유로 팀에 로그인 할 수 없는 경우 [YouTube 라이브](https://youtu.be/zxZu1uHjyo4)를 확인 하세요. 그러나 사용자는 발표자에 게 QA에 참여할 수 없습니다.
+혼합 현실 Dev Days를 조인 해 주셔서 감사 합니다. 모든 비디오는 YouTube 채널에 보관 됩니다. 다시 확인 하 고 싶으십니까?
 
 ## <a name="schedule---subject-to-change"></a>일정-변경 될 대상
 
@@ -45,23 +45,23 @@ ms.locfileid: "97580549"
 
 |**Time**|**세션 제목**|**발표자**|**언어**|**수준**|
 |---------|---------|---------|---------|---------|
-|11:00am-11:50am|키 노트 열기|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA-JP/EN|N/A|
+|11:00am-11:50am|[Alex Kipman에서 특수 시작으로 키 노트 열기](https://youtu.be/MamMO11TnzY)|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA-JP/EN|해당 없음|
 |11: 오전 50am 12:00pm|**중단 (10 분)**||||
-|12:00pm-12:25pm|*세션 1* 혼합 현실 소개|Atsushi Suzuki|JA|100|
-|12:30pm-12:55pm|*세션 2* 혼합 현실 비즈니스 모멘텀|Tetsu Muranaka|JA|200|
-|1:00pm-1:50pm|*점심 세션* 패널: 대화형 무료 토론, 질문 및 답변, MRTK + Oculus 퀘스트 2|Madoka Chiyoda + Microsoft Mvp|JA|200|
+|12:00pm-12:25pm|[혼합 현실에서](https://youtu.be/HqJy91y8Of0) *세션 1* 소개|Atsushi Suzuki|JA|100|
+|12:30pm-12:55pm|*세션 2* [Mixed Reality 비즈니스 모멘텀](https://youtu.be/fJJ9I8UGbio)|Tetsu Muranaka|JA|200|
+|1:00pm-1:50pm|*점심 세션* 패널: 대화형 무료 토론, Q 및 A, MRTK + Oculus Quest 2 * 업데이트 나중에|Madoka Chiyoda + Microsoft Mvp|JA|200|
 |1:50pm-2:00pm|**중단 (10 분)**||||
-|2:00pm-2:25pm|*세션 3* HoloLens 2 개발 개요|Madoka Chiyoda|JA|200|
-|2:30pm-2:55pm|*세션 4* MRTK UX 구성 요소 v 2.5.0|Yoon 파킹|JA|300|
-|3:00pm-3:25pm|*세션 5* HoloLens 2 및 Unreal Engine 시작 (MRTK-Unreal)|Cameron 저 Micka|EN|300|
-|3:30pm-3:55pm|*세션 6* Holograms 디자인|Daniel Escudero|EN|300|
+|2:00pm-2:25pm|*세션 3* [HoloLens 2 개발 개요](https://youtu.be/_z0CwAVkbiQ)|Madoka Chiyoda|JA|200|
+|2:30pm-2:55pm|*세션 4* [MRTK UX 구성 요소 v 2.5.0](https://youtu.be/If5R9diyF50)|Yoon 파킹|JA|300|
+|3:00pm-3:25pm|*세션 5* [HoloLens 2 및 unreal Engine 시작 (mrtk-unreal)](https://youtu.be/AsAuPx0iz3o)|Cameron 저 Micka|EN|300|
+|3:30pm-3:55pm|*세션 6* [Holograms 디자인](https://youtu.be/jHn9yydiRTw)|Daniel Escudero|EN|300|
 |3:55pm-4:15pm|**중단 (20min)**||||
-|4:15pm-4:40pm|*세션 7* Azure 개체 앵커|Jesse McCulloch|EN|300|
-|4:45pm-5: 오후 10 시|*세션 8* Azure 원격 렌더링|Atsushi Suzuki|JA|300|
-|5:15pm-5:40pm|*세션 9* Azure 공간 앵커를 통해 홀로그램 및 실제 세계 맞춤|Yingguang Mei|EN|300|
-|5:45pm-6: 오후 10 시|*세션 10* Unity + PiXYZ|Shinobu Takahashi (Unity 기술 일본)|JA|200|
-|6:15pm-6:40pm|*세션 11* Azure Kinect 진한 심층 분석, 사례 연구|Shinji Chiba|JA|400|
-|6:45pm-7:00pm|닫기|Madoka Chiyoda|JA|N/A|
+|4:15pm-4:40pm|*세션 7* [Azure 개체 앵커](https://youtu.be/dZCb6VJlaaU)|Jesse McCulloch|EN|300|
+|4:45pm-5: 오후 10 시|*세션 8* [Azure 원격 렌더링](https://youtu.be/MEhL12WGOW0)|Atsushi Suzuki|JA|300|
+|5:15pm-5:40pm|*세션 9* [Azure 공간 앵커를 통해 홀로그램 및 실제 세계 맞춤](https://youtu.be/ApBd_jSHg9Q)|Yingguang Mei|EN|300|
+|5:45pm-6: 오후 10 시|*세션 10* [Unity + PiXYZ](https://youtu.be/ggRZRRN36VI)|Shinobu Takahashi (Unity 기술 일본)|JA|200|
+|6:15pm-6:40pm|*세션 11* [Azure Kinect 진한 심층 분석, 사례 연구](https://youtu.be/C6gg2jBL3Tw)|Shinji Chiba|JA|400|
+|6:45pm-7:00pm|닫기|Madoka Chiyoda|JA|해당 없음|
 
 #### <a name="contributors-technical-reviewers-for-the-subtitles"></a>참가자 (자막의 기술 검토자)
 
