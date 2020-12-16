@@ -6,17 +6,17 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 앱 품질 기준, 혼합 현실, 혼합 현실 앱, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: c18f4e8470f7f183fdf250472fd3a977f925dfbf
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 788a2e8ac1a364f8c33e3895992fd99fa220a26a
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677992"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530284"
 ---
 # <a name="app-quality-criteria"></a>앱 품질 기준
 
 이 문서에서는 혼합 현실 앱의 품질에 영향을 주는 주요 요소에 대해 설명 합니다. 각 요소에 대해 다음 정보가 제공 됩니다.
-* 개요 – 품질 요소에 대 한 간단한 설명 및 중요 한 이유입니다.
+* 개요 – 품질 요소와 중요 한 이유에 대 한 간단한 설명입니다.
 * 장치 영향-영향을 받는 창 혼합 현실 장치의 유형입니다.
 * 품질 기준 – 품질 요소를 평가 하는 방법입니다.
 * 방법 측정 – 문제를 측정 (또는 경험) 하는 방법
@@ -25,7 +25,7 @@ ms.locfileid: "94677992"
 
 ## <a name="frame-rate"></a>프레임 율
 
-프레임 요금은 홀로그램 안정성 및 사용자 편안의 첫 번째 기둥입니다. 권장 되는 목표 보다 낮은 프레임 속도로 holograms 표시 되 고 경험 believability에 부정적인 영향을 미치고 잠재적으로 눈 피로를 일으킬 수 있습니다. Windows Mixed Reality 몰입 형 헤드셋의 사용자 환경에 대 한 대상 프레임 요금은 지원 하려는 Windows 혼합 현실 호환 Pc에 따라 60Hz 또는 90Hz가 됩니다. HoloLens의 경우 대상 프레임 률은 60Hz입니다.
+프레임 요금은 홀로그램 안정성 및 사용자 편안의 첫 번째 기둥입니다. 권장 되는 목표 보다 낮은 프레임 속도로 holograms 표시 되 고 경험 believability에 부정적인 영향을 미치고 잠재적으로 눈 피로를 일으킬 수 있습니다. Windows Mixed Reality 몰입 형 헤드셋의 경험에 대 한 대상 프레임 요금은 지원 하는 Windows 혼합 현실 호환 Pc에 따라 60 Hz 또는 90 Hz입니다. HoloLens의 경우 대상 프레임 률은 60 Hz입니다.
 
 ### <a name="device-impact"></a>장치 영향
 
@@ -51,7 +51,7 @@ ms.locfileid: "94677992"
 
 |  가장 좋음  |  평가 |  실패 |
 --- | --- | ---
-| 앱이 대상 장치에 대 한 FPS (초당 프레임 수) 목표를 충족 합니다. HoloLens의 60fps 울트라 Pc의 90fps 및 기본 Pc의 60fps | 앱은 코어 환경을 방해할 하지 않는 간헐적 프레임 삭제를 포함 합니다. 또는 FPS는 원하는 목표 보다 지속적으로 낮지만 앱 환경을 방해 하지 않습니다. | 앱이 10 초 이내에 평균적으로 프레임 속도로 놓기가 발생 합니다. |
+| 앱이 대상 장치에 대 한 FPS (초당 프레임 수) 목표를 만족 하는 앱: HoloLens의 60 fps; 울트라 Pc의 90 fps; 기본 Pc의 경우 60 fps. | 앱은 코어 환경을 방해할 하지 않는 간헐적 프레임을 보유 하 고 있으며, FPS는 원하는 목표 보다 일관 되 게 유지 되지만 앱 환경을 방해 하지 않습니다. | 앱이 10 초 이내에 평균적으로 프레임 속도로 놓기가 발생 합니다. |
 
 ### <a name="how-to-measure"></a>측정 방법
 
@@ -66,7 +66,7 @@ ms.locfileid: "94677992"
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>설명서
+#### <a name="documentation"></a>문서
 
 * [혼합 현실 성능 이해](understanding-performance-for-mixed-reality.md)
 * [홀로그램 안정성 및 프레임 속도](hologram-stability.md#frame-rate)
@@ -75,8 +75,8 @@ ms.locfileid: "94677992"
 
 #### <a name="tools-and-tutorials"></a>도구 및 자습서
 
-* [MRToolkit, FPS 카운터 표시](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Utilities/README.md)
-* [MRToolkit, 셰이더](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Utilities/Shaders)
+* [혼합 현실 도구 키트, FPS 카운터 표시](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Utilities/README.md)
+* [혼합 현실 도구 키트, 셰이더](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Utilities/Shaders)
 
 #### <a name="external-references"></a>외부 참조
 
@@ -114,13 +114,13 @@ ms.locfileid: "94677992"
 
 |  가장 좋음  |  평가 |  실패 |
 --- | --- | ---
-|  Holograms 지속적으로 안정적으로 표시 됩니다. | 보조 콘텐츠가 예기치 않은 움직임을 보여 주는 경우 또는 예기치 않은 이동으로 전체 앱 환경을 방해 하지 않습니다. | 프레임의 기본 콘텐츠는 예기치 않은 움직임을 보여 주는 것입니다. |
+|  Holograms 지속적으로 안정적으로 표시 됩니다. | 보조 콘텐츠에 예기치 않은 이동이 표시 됩니다. 예기치 않은 이동은 전체 앱 환경을 방해 하지 않습니다. | 프레임의 기본 콘텐츠에 예기치 않은 이동이 표시 됩니다. |
 
 ### <a name="how-to-measure"></a>측정 방법
 
 장치를 입고 하 고 환경을 확인 하는 동안 다음을 수행 합니다.
 
-* Holograms가 예기치 않은 움직임을 표시 하는 경우, 낮은 프레임 속도가 나 초점면에 대 한 안정성 평면의 부적절 한 맞춤이 원인일 경우 면에서 쪽으로 이동 합니다.
+* 한쪽에서 쪽으로 헤드를 이동 합니다. Holograms가 예기치 않은 움직임을 표시 하는 경우 프레임 속도가 낮거나 초점면에 대 한 안정성 평면의 부적절 한 맞춤이 원인일 가능성이 높습니다.
 * Holograms 및 환경을 중심으로 이동 하 여 스윔 및 jumpiness와 같은 동작을 찾습니다. 이 유형의 동작은 장치에서 환경을 추적 하지 않거나 공간 앵커에 대 한 거리를 발생 시킬 수 있습니다.
 * 프레임에 큰 holograms 여러 개 있는 경우 다양 한 수준에서 홀로그램 동작을 관찰 하 여 헤드 위치를 측면에서 쪽으로 이동 합니다. shakiness가 표시 되 면 안정화 평면으로 인해 발생할 수 있습니다.
 
@@ -129,18 +129,18 @@ ms.locfileid: "94677992"
 * 개발 작업을 시작할 때 프레임 속도 카운터를 추가 합니다.
 * 안정화 평면을 사용 합니다.
 * 항상 앵커의 3 미터 내에 고정 된 holograms을 렌더링 합니다.
-* 적절 한 추적을 위해 환경이 설정 되어 있는지 확인 합니다.
+* 환경이 적절 한 추적을 위해 설정 되어 있는지 확인 합니다.
 * 프레임 내에서 다양 한 초점면 수준에서 holograms을 방지 하기 위해 환경을 디자인 합니다.
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>설명서
+#### <a name="documentation"></a>문서
 
 * [홀로그램 안정성 및 프레임 속도](hologram-stability.md#frame-rate)
 * [사례 연구, 안정화 평면 사용](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
 * [혼합 현실 성능 이해](understanding-performance-for-mixed-reality.md)
 * [Unity의 권장 성능](../unity/performance-recommendations-for-unity.md)
-* [공간 앵커](../../design/spatial-anchors.md)
+* [Spatial Anchors](../../design/spatial-anchors.md)
 * [추적 오류 처리](../../design/coordinate-systems.md#handling-tracking-errors)
 * [고정 참조 프레임](../../design/coordinate-systems.md#stationary-frame-of-reference)
 
@@ -176,11 +176,11 @@ ms.locfileid: "94677992"
 
 |  가장 좋음  |  평가 |  실패 |
 --- | --- | ---
-| Holograms는 일반적으로 센티미터에서 인치 범위의 표면에 맞춥니다. 더 많은 정확도가 필요한 경우 앱은 원하는 앱 사양 내에서 공동 작업을 위한 효율적인 수단을 제공 해야 합니다. | 해당 없음 | Holograms 화면 평면을 분리 하거나 화면에서 부동 상태로 표시 하 여 실제 대상 개체와 정렬 되지 않은 상태로 표시 됩니다. 정확도가 필요한 경우 Holograms는 시나리오의 근접 사양을 충족 해야 합니다. | 
+| Holograms는 일반적으로 센티미터에서 인치 범위의 표면에 맞춥니다. 더 많은 정확성이 필요한 경우 앱은 앱 사양 내에서 공동 작업을 위한 효율적인 수단을 제공 해야 합니다. | 해당 없음 | Holograms 화면 평면을 분리 하거나 화면에서 부동 상태로 표시 하 여 실제 대상 개체와 정렬 되지 않은 상태로 표시 됩니다. 정확도가 필요한 경우 Holograms는 시나리오의 근접 사양을 충족 해야 합니다. | 
 
 ### <a name="how-to-measure"></a>측정 방법
 
-* 공간 맵에 배치 된 Holograms는 화면 위 또는 아래에 크게 부동 상태로 표시 되어서는 안 됩니다.
+* 공간 맵에 배치 된 Holograms는 화면 위 또는 아래에 크게 부동으로 표시 되지 않습니다.
 * 정확한 배치가 필요한 Holograms에는 시나리오 요구 사항에 맞는 일종의 표식 및 보정 시스템이 있어야 합니다.
 
 ### <a name="recommendations"></a>권장 사항
@@ -192,7 +192,7 @@ ms.locfileid: "94677992"
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>설명서
+#### <a name="documentation"></a>문서
 
 * [공간 매핑 배치](../../design/spatial-mapping.md#placement)
 * [대화방 스캔 프로세스](../../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
@@ -213,7 +213,7 @@ ms.locfileid: "94677992"
 
 ## <a name="viewing-zone-of-comfort"></a>편안 하 게 영역 보기
 
-앱 개발자는 다양 한 깊이에서 콘텐츠 및 holograms를 배치 하 여 사용자의 눈이 수렴 하는 위치를 제어 합니다. Hololens를 사용 하는 사용자는 사용자 로부터 거의 2.0 m 거리 만큼 떨어진 곳에서 화면을 고정 하 여 깨끗 한 이미지를 유지 관리 하기 위해 항상 2.0 m을 수용 합니다. 콘텐츠 깊이가 잘못 되 면 visual discomfort 또는 피로이 발생할 수 있습니다.
+앱 개발자는 다양 한 깊이에서 콘텐츠 및 holograms를 배치 하 여 사용자의 눈이 수렴 하는 위치를 제어 합니다. Hololens를 입고 하는 사용자는 사용자 로부터 약 2.0 m 거리 만큼 떨어진 곳에서 화면을 고정 하 여 일반 이미지를 유지 하기 위해 항상 2.0 m에 적용 됩니다. 콘텐츠 깊이가 잘못 되 면 visual discomfort 또는 피로이 발생할 수 있습니다.
 
 ### <a name="device-impact"></a>장치 영향
 
@@ -240,26 +240,26 @@ ms.locfileid: "94677992"
 <table>
 <tr>
 <td> 가장 좋음 </td><td><ul>
-<li>2m에 콘텐츠를 저장 합니다.</li><li>2m에 holograms을 배치할 수 없고 수렴 및 범위 간 충돌을 방지할 수 없는 경우 가장 적합 한 영역 배치는 1.25 m과 5m 사이입니다.</li><li>모든 경우에서 디자이너는 콘텐츠 크기 및 기본 배치 매개 변수를 조정 하는 것과 같이 사용자가 1 + m 자리를 상호 작용할 수 있도록 콘텐츠를 구조화 해야 합니다.</li><li>시나리오에서 특별히 요구 하지 않는 한 클리핑 평면은 1m부터 fadeout을 사용 하 여 구현 해야 합니다.</li><li>더 작은 홀로그램을 더 자세히 관찰 해야 하는 경우에는 콘텐츠가 50cm 보다 가까이 있지 않아야 합니다.</li>
+<li>2 m에 콘텐츠를 저장 합니다.</li><li>Holograms를 2 m에 배치할 수 없고 수렴 및 범위 간 충돌을 피할 수 없는 경우 홀로그램 배치를 위한 최적의 영역은 1.25 m에서 5 m 사이입니다.</li><li>모든 경우에서 디자이너는 콘텐츠 크기 및 기본 배치 매개 변수를 조정 하는 것과 같이 사용자가 1 + m 자리를 상호 작용할 수 있도록 콘텐츠를 구조화 해야 합니다.</li><li>시나리오에 필요 하지 않는 한 클리핑 평면은 1 m부터 페이드 아웃 하 여 구현 해야 합니다.</li><li>가장 작은 홀로그램을 더 자세히 관찰 해야 하는 경우에는 콘텐츠가 50 cm 보다 가까이 있지 않아야 합니다.</li>
 </ul></td>
 </tr><tr>
 <td> 평가</td><td> 콘텐츠는 보기 및 동작 지침 내에 있지만 클리핑 평면을 부적절 하 게 사용 하거나 사용 하지 않습니다.</td>
 </tr><tr>
-<td> 실패 </td><td> 콘텐츠가 너무 가까이 표시 됩니다 (일반적으로 &lt; 1.25 m 또는 &lt; holograms를 더 자세히 관찰 해야 하는 고정 된의 경우 50cm).</td>
+<td> 실패 </td><td> 콘텐츠가 너무 가까이 표시 됩니다 (일반적으로 &lt; 1.25 m, 또는 &lt; holograms를 더 자세히 관찰 해야 하는 고정 된의 경우 50 cm).</td>
 </tr>
 </table>
 
 ### <a name="how-to-measure"></a>측정 방법
 
-* 콘텐츠는 일반적으로 2m 이상 이지만 1.25 보다 작거나 5m 보다 커야 합니다.
-* 몇 가지 예외를 제외 하 고, HoloLens 클리핑 렌더링 거리는 1m에서 시작 하는 콘텐츠가 있는 85CM으로 설정 되어야 합니다. 내용에 접근 하 고 클리핑 평면 효과를 확인 합니다.
-* 고정 콘텐츠는 50cm 떨어진 곳에 가까울수록 안됩니다.
+* 콘텐츠는 일반적으로 2 m 이상 이지만 1.25 보다 작거나 5 m 보다 커야 합니다.
+* 몇 가지 예외를 제외 하 고, HoloLens 클리핑 렌더링 거리는 1 m에서 시작 하는 콘텐츠 페이드 아웃을 사용 하 여 85CM으로 설정 해야 합니다. 내용에 접근 하 고 클리핑 평면 효과를 확인 합니다.
+* 고정 콘텐츠는 50 cm을 초과 해서는 안 됩니다.
 
 ### <a name="recommendations"></a>권장 사항
 
-* 2m의 최적의 보기 거리에 대 한 디자인 콘텐츠입니다.
-* 1m에서 시작 하 여 fadeout 콘텐츠를 사용 하 여 클리핑 렌더링 거리를 85cm로 설정 합니다.
-* 자세히 보기를 필요로 하는 고정 된 holograms의 경우에는 클립 평면이 30cm 보다 가까이 있지 않아야 하 고, fadeout이 클리핑 평면에서 10cm 이상 시작 되어야 합니다.
+* 2 m의 최적 보기 거리에 대 한 콘텐츠를 디자인 합니다.
+* 1 m에서 시작 하 여 콘텐츠의 페이드 아웃을 사용 하 여 클리핑 렌더링 거리를 85 cm으로 설정 합니다.
+* 자세히 보기를 필요로 하는 고정 된 holograms의 경우에는 클리핑 평면이 30 cm 보다 가까이 있지 않아야 하 고 페이드 아웃은 클리핑 평면에서 10 cm 이상 시작 해야 합니다.
 
 ### <a name="resources"></a>리소스
 
@@ -313,7 +313,7 @@ ms.locfileid: "94677992"
 
 ## <a name="use-of-spatial-sound"></a>공간 음향 사용
 
-Windows Mixed Reality에서 오디오 엔진은 방향, 거리 및 환경 시뮬레이션을 사용 하 여 3D 소리를 시뮬레이션 하 여 혼합 현실 환경의 aural 구성 요소를 제공 합니다. 개발자는 응용 프로그램에서 공간 소리를 사용 하 여 모든 사용자에 게 3 차원 공간 (구)의 소리를 convincingly 수 있습니다. 이러한 소리는 실제 물리적 개체 또는 사용자 환경에서 혼합 현실 holograms에서 가져온 것 처럼 보입니다. 공간 사운드는 혼합 현실 응용 프로그램에서 집중 교육, 접근성 및 UX 디자인을 위한 강력한 도구입니다.
+Windows Mixed Reality에서 오디오 엔진은 방향, 거리 및 환경 시뮬레이션을 사용 하 여 3D 소리를 시뮬레이션 하 여 혼합 현실 환경의 aural 구성 요소를 제공 합니다. 개발자는 응용 프로그램에서 공간 소리를 사용 하 여 사용자를 중심으로 3 차원 공간 (구)의 소리를 convincingly 수 있습니다. 이러한 소리는 실제 물리적 개체 또는 사용자 환경에서 혼합 현실 holograms에서 가져온 것 처럼 보입니다. 공간 사운드는 혼합 현실 응용 프로그램에서 집중 교육, 접근성 및 UX 디자인을 위한 강력한 도구입니다.
 
 ### <a name="device-impact"></a>장치 영향
 
@@ -357,7 +357,7 @@ Windows Mixed Reality에서 오디오 엔진은 방향, 거리 및 환경 시뮬
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>설명서
+#### <a name="documentation"></a>문서
 
 * [공간 음향](../../design/spatial-sound.md)
 * [공간 음향 디자인](../../design/spatial-sound-design.md)
@@ -367,7 +367,7 @@ Windows Mixed Reality에서 오디오 엔진은 방향, 거리 및 환경 시뮬
 
 #### <a name="tools-and-tutorials"></a>도구 및 자습서
 
-* [MRToolkit, 공간 오디오](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialSound/README.md)
+* [혼합 현실 도구 키트-공간 오디오](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialSound/README.md)
 
 ## <a name="focus-on-holographic-frame-fov-boundaries"></a>FOV (holographic frame) 경계에 집중
 
@@ -414,7 +414,7 @@ Windows Mixed Reality에서 오디오 엔진은 방향, 거리 및 환경 시뮬
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>설명서
+#### <a name="documentation"></a>문서
 
 * [홀로그램 프레임](../../design/holographic-frame.md)
 * [사례 연구, HoloStudio UI 및 상호 작용 디자인 학습](../../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md?#problem-2-modal-dialogs-are-sometimes-out-of-the-holographic-frame)
@@ -458,7 +458,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
 <td> 평가 </td><td> UI는 사용자 위치에 맞게 조정 되지만 사용자의 위치를 조정 해야 하는 주요 콘텐츠 보기를 방해할 수 있습니다.</td>
 </tr><tr>
 <td> 실패 </td><td><ol>
-<li>UI 요소는 이동 하는 동안 손실 되거나 잠기므로 사용자가 컨트롤로 반환 (또는 찾기) 하지 않습니다.</li><li>UI 요소는 기본 콘텐츠 보기를 제한 합니다.</li><li>UI 이동은 특히 <a href="../../design/billboarding-and-tag-along.md">태그 동반</a> ui 요소를 사용 하 여 거리 및 모멘텀를 볼 수 있도록 최적화 되어 있지 않습니다.</li>
+<li>UI 요소는 이동 하는 동안 손실 되거나 잠기므로 사용자가 컨트롤로 반환 (또는 찾기) 하지 않습니다.</li><li>UI 요소는 기본 콘텐츠 보기를 제한 합니다.</li><li>UI 이동은 특히 <a href="../../design/billboarding-and-tag-along.md">태그 동반</a> ui 요소를 사용 하 여 거리 및 모멘텀을 보기 위해 최적화 되지 않습니다.</li>
 </ol></td>
 </tr>
 </table>
@@ -476,7 +476,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>설명서
+#### <a name="documentation"></a>문서
 
 * [상호 작용 디자인](../../discover/hologram.md)
 * [색, 광원 및 재질](../../color,-light-and-materials.md)
@@ -486,7 +486,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
 
 ## <a name="input-interaction-clarity"></a>입력 상호 작용 명확성
 
-입력 상호 작용의 명확성은 앱의 유용성에 매우 중요 하며, 입력 일관성, approachability, 상호 작용 메서드의 검색 기능을 포함 합니다. 사용자는 재설정 없이 플랫폼 전체의 공통 상호 작용을 사용할 수 있어야 합니다. 앱에 사용자 지정 입력이 있는 경우 명확 하 게 통신 하 고 설명 해야 합니다.
+입력 상호 작용의 명확성은 앱의 유용성에 매우 중요 하며, 입력 일관성, approachability, 상호 작용 메서드의 검색 기능을 포함 합니다. 사용자는 재설정 없이 플랫폼 전체의 공통 상호 작용을 사용할 수 있습니다. 앱에 사용자 지정 입력이 있는 경우 명확 하 게 통신 하 고 설명 해야 합니다.
 
 ### <a name="device-impact"></a>장치 영향
 
@@ -512,7 +512,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
 
 |  가장 좋음  |  평가 |  실패 |
 --- | --- | ---
-|  입력 상호 작용 방법은 Windows Mixed Reality 제공 [지침](../../design/interaction-fundamentals.md)과 일치 합니다. 모든 사용자 지정 입력은 표준 상호 작용을 사용 하는 대신 표준 입력으로 중복 되어서는 안 되며, 사용자에 게 명확 하 게 전달 하 고 표시 해야 합니다. | 가장 좋지만 사용자 지정 입력은 표준 입력 방법으로 중복 됩니다. 사용자는 여전히 앱 환경을 통해 목표와 진행 상황을 달성할 수 있습니다. | 입력 방법 또는 단추 매핑을 이해 하기 어렵습니다. 입력은 과도 하 게 사용자 지정 되므로 표준 입력을 지원 하지 않거나 지침이 없거나 피로 및 편안 하 게 문제가 발생할 수 있습니다. | 
+|  입력 상호 작용 방법은 Windows Mixed Reality 제공 [지침](../../design/interaction-fundamentals.md)과 일치 합니다. 표준 상호 작용을 사용 하는 대신 표준 입력을 사용 하 여 모든 사용자 지정 입력을 중복 해서는 안 되며, 사용자에 게 명확 하 게 전달 하 여 표시 해야 합니다. | 가장 좋지만 사용자 지정 입력은 표준 입력 방법으로 중복 됩니다. 사용자는 여전히 앱 환경을 통해 목표와 진행 상황을 달성할 수 있습니다. | 입력 방법 또는 단추 매핑을 이해 하기 어렵습니다. 입력은 과도 하 게 사용자 지정 되므로 표준 입력을 지원 하지 않거나 지침이 없거나 피로 및 편안 하 게 문제가 발생할 수 있습니다. | 
 
 ### <a name="how-to-measure"></a>측정 방법
 
@@ -533,7 +533,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>설명서
+#### <a name="documentation"></a>문서
 
 * [Instinctual 상호 작용](../../design/interaction-fundamentals.md)
 * [Interactable 개체](../../design/interactable-object.md)
@@ -591,7 +591,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
 
 ### <a name="how-to-measure"></a>측정 방법
 
-* Interactable 개체는 ' Interactable '로 인식할 수 있습니다. 단추, 메뉴 및 앱 관련 콘텐츠를 포함 합니다. 이에 대 한 규칙은 interactable 개체를 대상으로 지정할 때 시각 및 오디오 큐가 있어야 합니다.
+* Interactable 개체는 ' Interactable '로 인식할 수 있습니다. 단추, 메뉴 및 앱 별 콘텐츠를 포함 합니다. 이에 대 한 규칙은 interactable 개체를 대상으로 지정할 때 시각 및 오디오 큐가 있어야 합니다.
 
 ### <a name="recommendations"></a>권장 사항
 
@@ -603,7 +603,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>설명서
+#### <a name="documentation"></a>문서
 
 * [상호 작용 가능한 개체](../../design/interactable-object.md)
 * [Unity의 텍스트](../unity/text-in-unity.md)
@@ -658,7 +658,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>설명서
+#### <a name="documentation"></a>문서
 
 * [실내 스캔 시각화](../../design/room-scan-visualization.md)
 * [사례 연구: HoloLens의 공간 매핑 기능 확장](../../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
@@ -714,7 +714,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
 
 ## <a name="data-loading"></a>데이터 로드
 
-진행률 컨트롤은 긴 작업을 진행 중인 사용자에게 피드백을 제공합니다. 진행률 표시기가 표시 될 때 사용자가 앱과 상호 작용할 수 없으며 대기 시간이 얼마나 길어질 수도 있음을 의미할 수 있습니다.
+진행률 컨트롤은 긴 작업을 진행 중인 사용자에게 피드백을 제공합니다. 진행률 표시기가 표시 될 때 사용자가 앱과 상호 작용할 수 없고 대기 시간이 얼마나 길어질 수도 있음을 의미할 수 있습니다.
 
 ### <a name="device-impact"></a>장치 영향
 

@@ -6,23 +6,23 @@ ms.author: pbarnett
 ms.date: 05/12/2020
 ms.topic: article
 keywords: HoloLens, 시뮬레이션, 테스트
-ms.openlocfilehash: d4cd9497f9adcea03ece222f09124ce593ea73cf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 64028c3a1ad58cecfebc93aee325b73c3a6a649a
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685016"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530401"
 ---
 # <a name="perception-simulation"></a>인식 시뮬레이션
 
-앱에 대 한 자동화 된 테스트를 빌드 하시 겠어요? 테스트를 구성 요소 수준 단위 테스트 이상으로 전환 하 고 응용 프로그램을 종단 간에 실행 하 시겠습니까? 인식 시뮬레이션은 원하는 것입니다. 인식 시뮬레이션 라이브러리는 테스트를 자동화할 수 있도록 사용자 및 세계 입력 데이터를 앱에 보냅니다. 예를 들어, 반복 가능한 특정 위치를 찾고 제스처를 수행 하거나 동작 컨트롤러를 사용 하 여 사용자의 입력을 시뮬레이션할 수 있습니다.
+앱에 대 한 자동화 된 테스트를 빌드 하시 겠어요? 테스트를 구성 요소 수준 단위 테스트 이상으로 전환 하 고 응용 프로그램을 종단 간에 실행 하 시겠습니까? 인식 시뮬레이션은 원하는 것입니다. 인식 시뮬레이션 라이브러리는 테스트를 자동화할 수 있도록 사용자 및 세계 입력 데이터를 앱에 보냅니다. 예를 들어, 반복 가능한 특정 위치를 찾고 제스처 나 동작 컨트롤러를 사용 하는 사용자의 입력을 시뮬레이션할 수 있습니다.
 
-인식 시뮬레이션에서는 이와 같은 시뮬레이션 된 입력을 물리적 HoloLens, HoloLens 에뮬레이터 (첫 번째 gen), HoloLens 2 에뮬레이터 또는 혼합 현실 포털이 설치 된 PC에 보낼 수 있습니다. 인식 시뮬레이션은 혼합 현실 장치에서 라이브 센서를 우회 하 고 장치에서 실행 되는 응용 프로그램에 시뮬레이트된 입력을 보냅니다. 응용 프로그램은 항상 사용 하는 것과 동일한 Api를 통해 이러한 입력 이벤트를 수신 하 고, 실제 센서를 사용 하 여 실행 하는 것과 인식 시뮬레이션으로 실행 되는 것 인식 시뮬레이션은 hololens 에뮬레이터에서 HoloLens 가상 컴퓨터에 시뮬레이트된 입력을 보내기 위해 사용 하는 것과 동일한 기술입니다.
+인식 시뮬레이션은이를 실제 HoloLens, HoloLens 에뮬레이터 (최초의 gen), HoloLens 2 에뮬레이터 또는 혼합 현실 포털이 설치 된 PC와 같은 시뮬레이트된 입력을 보낼 수 있습니다. 인식 시뮬레이션은 혼합 현실 장치에서 라이브 센서를 우회 하 고 장치에서 실행 되는 응용 프로그램에 시뮬레이트된 입력을 보냅니다. 응용 프로그램은 항상 사용 하는 것과 동일한 Api를 통해 이러한 입력 이벤트를 수신 하 고 실제 센서와 인식 시뮬레이션을 사용 하 여 실행 하는 방법에 대 한 차이점 인식 시뮬레이션은 hololens 에뮬레이터에서 HoloLens 가상 컴퓨터에 시뮬레이트된 입력을 보내기 위해 사용 하는 것과 동일한 기술입니다.
 
-코드에서 시뮬레이션 사용을 시작 하려면 먼저 IPerceptionSimulationManager 개체를 만듭니다. 이 개체에서 위치, 손 모양 및 제스처를 포함 하 여 시뮬레이션 된 "인간"의 속성을 제어 하는 명령을 실행 하 고, 동작 컨트롤러를 사용 하도록 설정 하 고 조작할 수 있습니다.
+코드에서 시뮬레이션 사용을 시작 하려면 먼저 IPerceptionSimulationManager 개체를 만듭니다. 해당 개체에서 헤드 위치, 손 모양 및 제스처를 포함 하 여 시뮬레이션 된 "휴먼"의 속성을 제어 하는 명령을 실행할 수 있습니다. 동작 컨트롤러를 사용 하도록 설정 하 고 조작할 수도 있습니다.
 
 ## <a name="setting-up-a-visual-studio-project-for-perception-simulation"></a>인식 시뮬레이션에 대 한 Visual Studio 프로젝트 설정
-1. 개발 PC에 [HoloLens 에뮬레이터를 설치](../install-the-tools.md) 합니다. 이 에뮬레이터는 인식 시뮬레이션에 사용할 라이브러리를 포함 합니다.
+1. 개발 PC에 [HoloLens 에뮬레이터를 설치](../install-the-tools.md) 합니다. 에뮬레이터는 인식 시뮬레이션에 사용 하는 라이브러리를 포함 합니다.
 2. 새 Visual Studio c # 데스크톱 프로젝트를 만듭니다. 콘솔 프로젝트는 시작 하는 데 유용 합니다.
 3. 프로젝트에 다음 이진 파일을 참조 (프로젝트 >추가 >참조 ...)로 추가 합니다. % ProgramFiles (x86)% \ Microsoft XDE \\ (버전) (예: HoloLens 2 에뮬레이터의 경우 **% ProgramFiles (x86)% \ microsoft xde \\ 10.0.18362.0** )에서 찾을 수 있습니다.  (참고: 이진 파일은 HoloLens 2 에뮬레이터의 일부 이지만 바탕 화면에서 Windows Mixed Reality에도 작동 합니다.) 은. 인식 시뮬레이션에 대 한 PerceptionSimulationManager.Interop.dll 관리 c # 래퍼입니다.
     b. PerceptionSimulationRest.dll-웹 소켓 통신 채널을 HoloLens 또는 에뮬레이터에 설정 하기 위한 라이브러리입니다.
@@ -34,15 +34,15 @@ ms.locfileid: "91685016"
 
 시뮬레이션을 제어 하기 위해 IPerceptionSimulationManager 개체에서 검색 된 개체에 대 한 업데이트를 실행 합니다. 첫 번째 단계는 해당 개체를 가져와 대상 장치 또는 에뮬레이터에 연결 하는 것입니다. [도구 모음](using-the-hololens-emulator.md) 에서 장치 포털 단추를 클릭 하 여 에뮬레이터의 IP 주소를 가져올 수 있습니다.
 
-![장치 포털 열기 아이콘 ](images/emulator-deviceportal.png) **장치 포털** : 에뮬레이터에서 HoloLens OS에 대 한 Windows 장치 포털을 엽니다.  Windows Mixed Reality의 경우 "업데이트 & 보안" 아래의 설정 앱에서 "장치 포털 사용"의 "연결 사용:" 섹션에 있는 "개발자 용" 섹션에서 검색할 수 있습니다.  IP 주소와 포트를 모두 기록해 두어야 합니다.
+![장치 포털 열기 아이콘 ](images/emulator-deviceportal.png) **장치 포털**: 에뮬레이터에서 HoloLens OS에 대 한 Windows 장치 포털을 엽니다.  Windows Mixed Reality의 경우 "업데이트 & 보안" 아래의 설정 앱에서 "장치 포털 사용"의 "연결 사용:" 섹션에 있는 "개발자 용" 섹션에서 검색할 수 있습니다.  IP 주소와 포트를 모두 기록해 두어야 합니다.
 
 먼저 RestSimulationStreamSink를 호출 하 여 RestSimulationStreamSink 개체를 가져옵니다. Http 연결을 제어 하는 대상 장치 또는 에뮬레이터입니다. 명령은 장치 또는 에뮬레이터에서 실행 되는 [Windows 장치 포털](using-the-windows-device-portal.md) 에 전달 되 고 처리 됩니다. 개체를 만드는 데 필요한 네 가지 매개 변수는 다음과 같습니다.
 * Uri uri-대상 장치의 IP 주소 (예: " https://123.123.123.123 " 또는 " https://123.123.123.123:50080 ")
-* 시스템 .Net. NetworkCredential 자격 증명-대상 장치 또는 에뮬레이터의 [Windows 장치 포털](using-the-windows-device-portal.md) 에 연결 하기 위한 사용자 이름/암호입니다. 로컬 주소를 통해 에뮬레이터에 연결 하는 경우 (예: *168 ...* *) 같은 PC에서 모든 자격 증명이 허용 됩니다.
-* bool normal-보통 우선 순위의 경우 True, 낮은 우선 순위의 경우 false 일반적으로 테스트 시나리오의 경우이를 *true* 로 설정 하 여 테스트를 제어할 수 있도록 합니다.  에뮬레이터 및 Windows Mixed Reality 시뮬레이션에서는 낮은 우선 순위의 연결을 사용 합니다.  또한 테스트에서 낮은 우선 순위의 연결을 사용 하는 경우 가장 최근에 설정 된 연결이 제어 됩니다.
+* 시스템 .Net. NetworkCredential 자격 증명-대상 장치 또는 에뮬레이터의 [Windows 장치 포털](using-the-windows-device-portal.md) 에 연결 하기 위한 사용자 이름/암호입니다. 로컬 주소를 통해 에뮬레이터에 연결 하는 경우 (예:*168 ...* *) 같은 PC에서 모든 자격 증명이 허용 됩니다.
+* bool normal-보통 우선 순위의 경우 True, 낮은 우선 순위의 경우 false 일반적으로 테스트 시나리오의 경우이를 *true* 로 설정 하 여 테스트를 제어할 수 있도록 합니다.  에뮬레이터 및 Windows Mixed Reality 시뮬레이션에서는 우선 순위가 낮은 연결을 사용 합니다.  또한 테스트에서 우선 순위가 낮은 연결을 사용 하는 경우 가장 최근에 설정 된 연결이 제어 됩니다.
 * CancellationToken 토큰-비동기 작업을 취소 하는 토큰입니다.
 
-두 번째는 IPerceptionSimulationManager를 만듭니다. 시뮬레이션을 제어 하는 데 사용 하는 개체입니다. 비동기 메서드에서도이 작업을 수행 해야 합니다.
+둘째, IPerceptionSimulationManager를 만듭니다. 시뮬레이션을 제어 하는 데 사용 하는 개체입니다. 비동기 메서드에서도이 작업을 수행 해야 합니다.
 
 ## <a name="control-the-simulated-human"></a>시뮬레이션 된 사용자 제어
 
@@ -226,7 +226,7 @@ Windows 10 10 월 2018 업데이트 및 그 이전 버전에서는 \Windows\Syst
     PerceptionSimulationDevice.exe <action> 6dof <instance>
 ```
 
-예
+예를 들면 다음과 같습니다.
 
 ```
     PerceptionSimulationDevice.exe i 6dof 1
@@ -531,7 +531,7 @@ public enum PlaybackState
 
 ### <a name="microsoftperceptionsimulationvector3"></a>PerceptionSimulation. Vector3
 
-3D 공간에서 점이 나 벡터를 설명할 수 있는 3 개의 구성 요소 벡터에 대해 설명 합니다.
+3D 공간에서 점이 나 벡터를 설명할 수 있는 3 가지 구성 요소 벡터에 대해 설명 합니다.
 
 ```
 public struct Vector3
@@ -566,7 +566,7 @@ public struct Vector3
 
 ### <a name="microsoftperceptionsimulationrotation3"></a>PerceptionSimulation. Rotation3
 
-3 개의 구성 요소 회전을 설명 합니다.
+3 가지 구성 요소 회전을 설명 합니다.
 
 ```
 public struct Rotation3
@@ -694,7 +694,7 @@ public struct SimulatedDisplayConfiguration
 
 **PerceptionSimulation. SimulatedDisplayConfiguration. ApplyEyeTransforms**
 
-왼쪽 및 오른쪽에서 변형에 대해 제공 된 값을 유효한 것으로 간주 하 고 실행 중인 시스템에 적용 해야 하는지 여부입니다.
+왼쪽 및 오른쪽에서 변형에 대해 제공 된 값을 유효한 것으로 간주 하 여 실행 중인 시스템에 적용할지 여부를 지정 합니다.
 
 **PerceptionSimulation. SimulatedDisplayConfiguration. ApplyIpd**
 
@@ -728,7 +728,7 @@ public interface IPerceptionSimulationManager
 
 ### <a name="microsoftperceptionsimulationisimulateddevice"></a>PerceptionSimulation. ISimulatedDevice
 
-시뮬레이션 된 사람들과 시뮬레이션 된 사용자를 해석 하는 장치를 설명 하는 인터페이스
+시뮬레이션 된 환경과 시뮬레이션 된 사용자를 해석 하는 장치를 설명 하는 인터페이스
 
 ```
 public interface ISimulatedDevice
@@ -837,7 +837,7 @@ public interface ISimulatedHuman
     float Height { get; set; }
     ISimulatedHand LeftHand { get; }
     ISimulatedHand RightHand { get; }
-    ISimulatedHead Head { get; }
+    ISimulatedHead Head { get; }s
     void Move(Vector3 translation);
     void Rotate(float radians);
 }
@@ -934,7 +934,7 @@ public interface ISimulatedHand
 
 **PerceptionSimulation. ISimulatedHand**
 
-손이 현재 SimulatedDevice에 표시 되는지 여부를 검색 합니다 .이는 핸드 트래커에서 검색할 위치에 있는지 여부를 검색 합니다.
+손이 현재 SimulatedDevice에 표시 되는지 (즉, 핸드 트래커에서 검색할 위치에 있는지)를 검색 합니다.
 
 **PerceptionSimulation. ISimulatedHand. Ensurevisible\**
 
@@ -1219,7 +1219,7 @@ public interface ISimulationRecording
 
 **PerceptionSimulation (ISimulationRecording).**
 
-지정 된 시간 (시작부터 100 나노초 간격)에 대 한 기록을 검색 하 고 해당 위치에서 일시 중지 합니다. 시간이 기록의 끝을 초과 하면 마지막 프레임에서 일시 중지 됩니다.
+지정 된 시간 (처음부터 100 나노초 간격으로)에 대 한 기록을 검색 하 고 해당 위치에서 일시 중지 합니다. 시간이 기록의 끝을 초과 하면 마지막 프레임에서 일시 중지 됩니다.
 
 매개 변수
 * 틱-검색 하는 시간입니다.
@@ -1272,7 +1272,7 @@ public static class PerceptionSimulationManager
 
 **PerceptionSimulation PerceptionSimulationManager. CreatePerceptionSimulationRecording (System.string)**
 
-받은 모든 패킷을 파일의 지정 된 경로에 저장 하는 싱크를 만듭니다.
+지정 된 경로에 있는 파일에 수신 된 모든 패킷을 저장 하는 싱크를 만듭니다.
 
 매개 변수
 * path-만들 파일의 경로입니다.
@@ -1300,7 +1300,7 @@ public static class PerceptionSimulationManager
 매개 변수
 * path-로드할 파일의 경로입니다.
 * 팩터리-필요할 때 ISimulationStreamSink를 만들기 위해 기록에서 사용 하는 팩터리입니다.
-* 콜백-녹화 상태를 다시 보고 하는 업데이트를 수신 하는 콜백입니다.
+* 콜백-녹음 상태를 다시 보고 하는 업데이트를 수신 하는 콜백입니다.
 
 반환 값
 
@@ -1332,11 +1332,11 @@ public enum StreamDataTypes
 
 **PerceptionSimulation. Head**
 
-헤드의 위치와 방향에 대 한 데이터 스트림입니다.
+헤드의 위치 및 방향에 대 한 데이터 스트림입니다.
 
 **PerceptionSimulation. 직접**
 
-바늘의 위치 및 제스처와 관련 된 데이터 스트림입니다.
+바늘의 위치 및 제스처에 대 한 데이터 스트림입니다.
 
 **PerceptionSimulation. SpatialMapping**
 
@@ -1356,11 +1356,11 @@ public enum StreamDataTypes
 
 **PerceptionSimulation입니다.**
 
-시뮬레이션 된 사람의 눈에 대 한 데이터 스트림입니다.
+시뮬레이션 된 사람의 눈에 해당 하는 데이터 스트림입니다.
 
 **PerceptionSimulation를 구성 합니다.**
 
-장치의 디스플레이 구성과 관련 된 데이터 스트림입니다.
+장치의 디스플레이 구성을 사용 하 여 데이터 스트림입니다.
 
 **PerceptionSimulation 데이터 형식**
 

@@ -6,28 +6,28 @@ ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, 안정화, 사례 연구, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: c268e7ee83fdcbb8c5ddd09cd643f4354d05ec29
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: e0eba3df5457ea06ee80682d99c82a5a23c1635d
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679612"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530440"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>사례 연구-안정화 평면을 사용 하 여 holographic turbulence 줄이기
 
-Holograms를 사용 하는 것은 복잡할 수 있습니다. 공간을 이동 하 고 다른 모든 각도에서 holograms을 볼 수 있다는 사실은 일반적인 컴퓨터 화면으로 가져올 수 없는 집중 교육 수준을 제공 합니다. 이러한 holograms을 준비 하 고 현실적인 느낌은 Microsoft HoloLens 하드웨어와 holographic apps의 지능형 디자인 모두에서 수행 하는 기술 측면입니다.
+Holograms를 사용 하는 작업은 복잡 합니다. 공간을 이동 하 고 다른 모든 각도에서 holograms를 살펴보면 일반 컴퓨터 화면에서 사용할 수 없는 집중 교육 수준이 제공 됩니다. 이러한 holograms을 준비 하 고 현실적인 느낌은 Microsoft HoloLens 하드웨어와 holographic apps의 지능형 디자인 모두에서 수행 하는 기술 측면입니다.
 
 ## <a name="the-tech"></a>기술
 
-실제로 공간을 공유 하는 것 처럼 holograms 표시 되도록 하려면 색 구분 없이 제대로 렌더링 해야 합니다. 이는 주로 [안정화 평면](hologram-stability.md#reprojection)을 호출 하는 항목에 holograms 고정 되도록 HoloLens 하드웨어에 기본 제공 되는 기술에 의해 이루어집니다.
+실제로 공간을 공유 하는 것 처럼 holograms 표시 되도록 하려면 색 구분 없이 적절히 렌더링 해야 합니다. 이는 부분적으로 HoloLens 하드웨어에 기본 제공 되는 기술에 의해 구현 되며, [안정화 평면](hologram-stability.md#reprojection)을 holograms 고정 된 상태로 유지 됩니다.
 
-평면은 point와 normal에서 정의 하지만 항상 평면에서 카메라를 가리키도록 하려고 하기 때문에 평면을 설정 하는 것이 중요 합니다. 모든 항목을 고정 하 고 안정적으로 유지 하기 위해 처리에 초점을 맞출 수 있도록 HoloLens를 지시할 수 있습니다. 그러나이 포커스 포인트를 설정 하는 방법은 앱에 따라 달라 지 며 콘텐츠에 따라 앱을 만들거나 중단할 수 있습니다.
+평면은 point 및 normal로 정의 됩니다. 평면에서 항상 카메라를 가리키도록 하려고 하기 때문에 평면을 설정 하는 것이 중요 합니다. 모든 것을 고정 하 고 안정적으로 유지 하기 위해 처리에 초점을 맞출 지점을 HoloLens에 지시할 수 있습니다. 그러나이 포커스 지점을 설정 하는 것은 응용 프로그램에 따라 달라 지 며 콘텐츠에 따라 앱을 만들거나 중단할 수 있습니다.
 
-간단히 말해서, 안정화 평면이 제대로 적용 되는 경우에는 holograms 가장 효과적 이지만 실제로는 생성 하는 응용 프로그램의 유형에 따라 달라 집니다. 현재 HoloLens에 사용할 수 있는 앱 중 일부를이 문제를 해결 하는 방법을 살펴보겠습니다.
+Holograms는 안정화 평면이 제대로 적용 될 때 가장 잘 작동 하지만 실제로는 생성 하는 응용 프로그램의 유형에 따라 달라 집니다. 현재 HoloLens에 사용할 수 있는 앱 중 일부를이 문제를 해결 하는 방법을 살펴보겠습니다.
 
 ## <a name="behind-the-scenes"></a>배후 상황
 
-다음 앱을 개발할 때 비행기를 사용 하지 않는 경우 개체가 sway로 이동 하면 개체가 sway가 되 고 빠른 헤드 또는 홀로그램 이동에 대 한 색 분리가 표시 되는 것을 알 수 있습니다. 개발 기간 동안, 안정화 평면을 가장 잘 활용 하는 방법과 해결할 수 없는 문제를 해결 하는 방법에 대 한 자세한 내용은 평가판 및 오류를 통해 배웠습니다.
+다음 앱을 개발 하는 동안 비행기를 사용 하지 않는 경우 개체는 헤드를 이동할 때 sway가 됩니다. 또한 빠른 헤드 또는 홀로그램 움직임으로 색 구분이 표시 됩니다. 경험을 통해 학습을 완료 하 고 안정화 평면을 가장 잘 활용 하 고 해결할 수 없는 문제에 대 한 앱을 설계 하는 방법을 설명 했습니다.
 
 ### <a name="galaxy-explorer-stationary-content-3d-interactivity"></a>Galaxy 탐색기: 고정 콘텐츠, 3D 대화형
 
@@ -47,25 +47,25 @@ HoloStudio에서 작업 하는 동일한 모델을 찾는 데 대부분의 시�
 
 HoloTour 및 3D 뷰어에서는 3D 효과가 있는 독립 애니메이션 개체 또는 동영상이 위에 추가 된 것을 볼 수 있습니다. 이러한 앱의 안정화는 현재 보고 있는 모든 사용자로 설정 됩니다.
 
-또한 HoloTour는 고정 된 위치를 유지 하는 대신 이동 하 여 가상 세계의 straying를 방지할 수 있습니다. 이렇게 하면 안정성 문제가 발생 하기 위해 다른 holograms에서 멀리 떨어져 있을 수 있습니다.
+또한 HoloTour는 고정 된 위치를 유지 하는 대신 이동 하 여 가상 세계의 straying을 방지 합니다. 이렇게 하면 안정성 문제가 발생 하기 위해 다른 holograms에서 멀리 떨어져 있을 수 있습니다.
 
 ![HoloTour의이 예제에서는 안정화 평면을 Hadrian의이 동영상으로 설정 합니다.](images/holotour-stabilization-plane-500px.jpg)
 
 ### <a name="roboraid-dynamic-content-and-environmental-interactions"></a>RoboRaid: 동적 콘텐츠 및 환경 상호 작용
 
-RoboRaid에서 안정화 평면을 설정 하는 것은 가장 갑작스러운 이동이 필요한 앱 이지만 매우 간단 합니다. 평면은 벽 또는 주변 개체에 대 한 효과를 달성 하는 데 적합 하며, 멀리 떨어져 있을 때 그 앞의 고정 거리에 고정 됩니다.
+RoboRaid에서 안정화 평면을 설정 하는 것은 가장 갑작스러운 이동이 필요한 앱 이지만 매우 간단 합니다. 평면은 벽 또는 주변 개체에 고정 하는 것을 중심으로 하 고, 충분히 멀리 떨어져 있는 경우 고정 된 거리에 고정 됩니다.
 
-RoboRaid는 안정화 평면을 염두에 두면 설계 되었습니다. Reticle를 가장 많이 이동 하는 것으로, 색 bleeding를 최소화 하는 빨강 및 파랑만 사용 하 여이를 우회 합니다. 또한 조각 사이에 약간의 깊이를 포함 하 여, 이미 예상 되는 시차 효과를 마스킹 하 여 발생 하는 색 도련을 최소화 합니다. 로봇은 신속 하 게 이동 하지 않고 정기적으로 짧은 거리 간격으로 이동 하지 않습니다. 기본적으로 안정화가 설정 되는 사용자의 앞에 2 미터를 유지 하는 경향이 있습니다.
+RoboRaid는 안정화 평면을 염두에 두면 설계 되었습니다. Reticle를 가장 많이 이동한 후 가장 많이 이동 하는는 빨강 및 파랑만 사용 하 여이를 우회 하 여 색 bleeding를 최소화 합니다. 또한 조각 사이에 약간의 깊이를 포함 하 여, 이미 예상 되는 시차 효과를 마스킹 하 여 발생 하는 색 도련을 최소화 합니다. 로봇이 신속 하 게 이동 하지 않고 짧은 거리 간격으로 이동 합니다. 기본적으로 안정화가 설정 되는 사용자의 앞에 2 미터를 유지 하는 경향이 있습니다.
 
 ### <a name="fragments-and-young-conker-dynamic-content-with-environmental-interaction"></a>조각 및 젊은 Conker: 환경 상호 작용을 포함 하는 동적 콘텐츠
 
-C + +에서 Asobo Studio로 작성 된 조각 및 젊은 Conker는 안정화 평면을 설정 하는 다른 방법을 사용 합니다. POI (관심 지점)는 코드에 정의 되 고 우선 순위를 기준으로 정렬 됩니다. Poi는 Conker 모델 (예: 젊은 Conker, 메뉴, 조 준 reticle 및 로고)입니다. Poi 사용자의 응시와 교차 하 고 평면이 가장 높은 개체의 중심으로 설정 됩니다. 교차가 발생 하지 않으면 평면이 기본 거리로 설정 됩니다.
+C + +에서 Asobo Studio로 작성 된 조각 및 젊은 Conker는 안정화 평면을 설정 하는 다른 방법을 사용 합니다. POI (관심 지점)는 코드에 정의 되 고 우선 순위별로 정렬 됩니다. Poi는 Conker 모델 (예: 젊은 Conker, 메뉴, 조 준 reticle 및 로고)입니다. Poi 사용자의 응시와 교차 하 고 평면이 가장 높은 개체의 중심으로 설정 됩니다. 교차가 발생 하지 않으면 평면이 기본 거리로 설정 됩니다.
 
 조각 및 젊은 Conker 이전에 재생 공간으로 검색 된 항목을 벗어나 이동 하는 경우 앱을 일시 중지 하 여 holograms에서 너무 멀리 straying 합니다. 따라서 가장 안정적인 환경을 제공 하기 위해 찾은 경계 내에 유지 됩니다.
 
 ## <a name="do-it-yourself"></a>직접 수행
 
-HoloLens가 있고이 문서 내의 개념을 연습 하려는 경우 테스트 장면을 다운로드 하 고 아래 연습을 수행해 볼 수 있습니다. Unity의 기본 제공 gizmo API를 사용 하며 평면이 설정 되는 위치를 시각화 하는 데 도움이 됩니다. 이 코드는이 사례 연구에서 스크린샷 캡처에도 사용 되었습니다.
+HoloLens가 있고이 문서의 개념을 사용 하려는 경우 테스트 장면을 다운로드 하 여 다음 연습을 수행해 볼 수 있습니다. 테스트 장면에서는 Unity의 기본 제공 gizmo API를 사용 하 여 평면이 설정 되는 위치를 시각화할 수 있습니다. 코드는이 사례 연구에서 스크린샷 캡처에도 사용 되었습니다.
 1. 최신 버전의 [MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)를 동기화 합니다.
 2. [HoloToolkit-Examples/유틸리티/장면/StabilizationPlaneSetting](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Utilities/Scenes/StabilizationPlaneSetting.unity) 장면을 엽니다.
 3. 생성 된 프로젝트를 빌드하고 구성 합니다.
@@ -97,7 +97,7 @@ HoloLens가 있고이 문서 내의 개념을 연습 하려는 경우 테스트 
 </tr>
 </table>
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [MR 기본 100: Unity 시작](../unity/tutorials/holograms-100.md)
 * [Unity의 포커스 포인트](../unity/focus-point-in-unity.md)
 * [홀로그램 안정성](hologram-stability.md)

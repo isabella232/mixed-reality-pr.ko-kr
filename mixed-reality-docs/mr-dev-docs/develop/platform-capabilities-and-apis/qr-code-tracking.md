@@ -6,22 +6,22 @@ ms.author: dobrown
 ms.date: 05/15/2019
 ms.topic: article
 keywords: vr, lbe, 위치 기반 엔터테인먼트, vr 아케이드, 아케이드, 모던, qr, qr 코드, hololens2
-ms.openlocfilehash: e7b1f04b51cb1011cd0d66c27fe6a8bff3aafb79
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 023da7a98d1559d9dd0387a7efbaf26ad577df50
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684977"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530006"
 ---
 # <a name="qr-code-tracking"></a>QR 코드 추적
 
-HoloLens 2는 헤드셋 주위의 환경에서 QR 코드를 검색 하 여 각 코드의 실제 위치에서 좌표계를 설정할 수 있습니다.
+HoloLens 2는 헤드셋 주변 환경의 QR 코드를 감지하여 각 코드의 실제 위치에 좌표계를 설정할 수 있습니다.
 
 ## <a name="device-support"></a>디바이스 지원
 
 <table>
 <tr>
-<th>기능</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens(1세대)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
+<th>기능</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (첫 번째 gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
 </tr><tr>
 <td> QR 코드 검색</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
 </tr>
@@ -31,11 +31,13 @@ HoloLens 2는 헤드셋 주위의 환경에서 QR 코드를 검색 하 여 각 �
 >데스크톱 Pc의 몰입 형 Windows Mixed Reality 헤드셋을 사용한 QR 코드 추적은 Windows 10 버전 2004 이상에서 지원 됩니다. MixedReality () API를 사용 하 여 기능이 현재 장치에서 지원 되는지 여부를 확인 합니다.
 
 ## <a name="getting-the-qr-package"></a>QR 패키지 가져오기
+
 [여기](https://nuget.org/Packages/Microsoft.MixedReality.QR)에서 QR 코드 검색을 위한 NuGet 패키지를 다운로드할 수 있습니다.
 
 ## <a name="detecting-qr-codes"></a>QR 코드 검색
 
 ### <a name="adding-the-webcam-capability"></a>웹캠 기능 추가
+
 `webcam`QR 코드를 검색 하려면 매니페스트에 기능을 추가 해야 합니다. 이 기능은 사용자 환경에서 검색 된 코드 내의 데이터에 중요 한 정보가 포함 될 수 있으므로 필요 합니다.
 
 다음을 호출 하 여 사용 권한을 요청할 수 있습니다 `QRCodeWatcher.RequestAccessAsync()` .
@@ -56,9 +58,7 @@ QR 코드 검색 `webcam` 기능을 사용 하려면 장치의 추적 카메라�
 
 ### <a name="detecting-qr-codes-in-unity"></a>Unity에서 QR 코드 검색
 
-MRTK에 대 한 종속성을 취하지 않고 Unity에서 QR 코드 검색 API를 사용할 수 있습니다. 이렇게 하려면 [Unity 용 nuget](https://github.com/GlitchEnzo/NuGetForUnity)을 사용 하 여 nuget 패키지를 설치 해야 합니다.
-
-Holographic square와 연결 된 데이터 (예: GUID, 실제 크기, 타임 스탬프 및 디코딩된 데이터)를 표시 하는 샘플 Unity 앱이 있습니다. 이 앱은에서 찾을 수 있습니다 https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes .
+[Unity 용 nuget을](https://github.com/GlitchEnzo/NuGetForUnity)사용 하 여 nuget 패키지를 설치 하 여 MRTK를 가져오지 않고 UNITY에서 QR 코드 검색 API를 사용할 수 있습니다. 작동 방식에 대 한 느낌을 얻으려면 [샘플 Unity 앱](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes)을 다운로드 합니다. 샘플 앱에는 QR 코드 및 GUID, 실제 크기, 타임 스탬프 및 디코딩된 데이터와 같은 관련 데이터에 대 한 holographic 제곱을 표시 하는 예제가 있습니다.
 
 ### <a name="detecting-qr-codes-in-c"></a>C + +에서 QR 코드 검색
 
@@ -122,13 +122,15 @@ private:
 
 ## <a name="getting-the-coordinate-system-for-a-qr-code"></a>QR 코드의 좌표계 가져오기
 
-검색 된 각 QR 코드는 아래와 같이 왼쪽 상단에 있는 빠른 검색 사각형의 왼쪽 위 모서리에 있는 QR 코드와 정렬 된 [공간 좌표계](../../design/coordinate-systems.md) 를 제공 합니다.  QR SDK를 직접 사용 하는 경우 Z 축이 문서를 가리키고 (표시 되지 않음) Unity 좌표로 변환 되 면 Z 축 지점은 용지에서 제외 되며 왼쪽으로 전달 됩니다.
-
-QR 코드의 SpatialCoordinateSystem은 표시 된 대로 정렬 됩니다. 이 좌표계는 <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview:: CreateCoordinateSystemForNode</a> 를 호출 하 고 코드의 SpatialGraphNodeId를 전달 하 여 플랫폼에서 가져올 수 있습니다.
+검색 된 각 QR 코드는 왼쪽 상단에 있는 빠른 검색 사각형의 왼쪽 위 모퉁이에 있는 QR 코드와 정렬 된 [공간 좌표계](../../design/coordinate-systems.md) 를 제공 합니다.  
 
 ![QR 코드 좌표계](images/Qr-coordinatesystem.png) 
 
-QRCode 개체의 경우 다음 c + + 코드는 사각형을 만들고 QR 코드의 좌표계를 사용 하 여 삽입 하는 방법을 보여 줍니다.
+QR SDK를 직접 사용 하는 경우 Z 축이 문서를 가리키고 (표시 되지 않음) Unity 좌표로 변환 되 면 Z 축 지점은 용지에서 제외 되며 왼쪽으로 전달 됩니다.
+
+QR 코드의 SpatialCoordinateSystem은 표시 된 대로 정렬 됩니다. <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview:: CreateCoordinateSystemForNode</a> 를 호출 하 고 코드의 SpatialGraphNodeId를 전달 하 여 플랫폼에서 좌표계를 가져올 수 있습니다.
+
+아래 c + + 코드는 사각형을 만들고 QR 코드의 좌표계를 사용 하 여 삽입 하는 방법을 보여 줍니다.
 
 ```cpp
 // Creates a 2D rectangle in the x-y plane, with the specified properties.
@@ -193,23 +195,23 @@ void MyApplication::OnAddedQRCode(const QRCodeAddedEventArgs& args)
 ### <a name="lighting-and-backdrop"></a>조명 및 배경
 QR 코드 검색 품질은 다양 한 조명 및 배경에 영향을 받습니다. 
 
-특히 밝은 조명이 있는 장면에서 회색 배경의 검정색 코드를 인쇄 합니다. 그렇지 않으면 흰색 배경으로 검정색 QR 코드를 인쇄 합니다.
+밝은 조명이 있는 장면에서 회색 배경의 검정색 코드를 인쇄 합니다. 그렇지 않으면 흰색 배경으로 검정색 QR 코드를 인쇄 합니다.
 
-코드에 대 한 배경이 특히 어두운 경우 검색 속도가 낮은 경우 회색 코드에서 검정을 시도 합니다. 배경이 비교적 밝은 경우 일반 코드가 정상적으로 작동 해야 합니다.
+코드에 대 한 배경이 진하게 표시 되는 경우 검색 속도가 낮은 경우 회색 코드를 검정으로 해보세요. 배경이 비교적 밝은 경우 일반 코드가 정상적으로 작동 해야 합니다.
 
 ### <a name="size-of-qr-codes"></a>QR 코드 크기
-Windows Mixed Reality 장치는 각각 5cm 보다 작은 QR 코드에서 작동 하지 않습니다.
+Windows Mixed Reality 장치는 각각 5cm 보다 작은 면에서 QR 코드에 대해 작동 하지 않습니다.
 
-5-10 cm 길이 면에서 QR 코드의 경우에는 코드를 검색 하는 데 상당히 가까이 두어야 합니다. 이 크기의 코드를 검색 하는 데 더 많은 시간이 걸립니다. 
+5gb와 10gb의 QR 코드의 경우에는 코드를 검색 하는 데 매우 가까운 시간을 두어야 합니다. 이 크기의 코드를 검색 하는 데 더 많은 시간이 걸립니다. 
 
 코드를 검색 하는 정확한 시간은 QR 코드의 크기 뿐만 아니라 코드에서 떨어져 있는 정도에 따라 달라 집니다. 코드에 가까이 이동 하면 크기와 관련 된 문제를 오프셋할 수 있습니다.
 
 ### <a name="distance-and-angular-position-from-the-qr-code"></a>QR 코드의 거리 및 각도 위치
-추적 카메라는 특정 수준의 세부 정보만 검색할 수 있습니다. 매우 작은 코드의 경우에는 옆쪽을 따라 < 10cm-반드시 가까워야 합니다. 버전 1 QR 코드의 경우 10 ~ 25cm의 범위에서 최소 검색 거리가 0.15 미터에서 0.5 미터 사이입니다. 
+추적 카메라는 특정 수준의 세부 정보만 검색할 수 있습니다. 작은 코드의 경우에는 옆쪽을 따라 < 10gb를 닫아야 합니다. 10 cm에서 25cm 너비까지 다양 한 버전 1 QR 코드의 경우 최소 검색 거리가 0.15 미터에서 0.5 미터 사이입니다. 
 
 크기에 대 한 검색 거리가 선형적으로 늘어납니다. 
 
-QR 검색은 각도 + = 45deg의 범위에서 작동 합니다. 코드를 검색 하기 위한 적절 한 해결 방법이 있는지 확인 하는 것입니다.
+QR 검색은 코드를 검색 하기 위한 적절 한 해상도를 보장 하기 위해 각도 + = 45도로 작동 합니다.
 
 ### <a name="qr-codes-with-logos"></a>로고가 포함 된 QR 코드
 로고가 포함 된 QR 코드는 테스트 되지 않았으며 현재 지원 되지 않습니다.
@@ -456,6 +458,6 @@ namespace Microsoft.MixedReality.QR
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [좌표계](../../design/coordinate-systems.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>

@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, 키보드, 마우스, 게임 컨트롤러, xbox 컨트롤러, HoloLens, 데스크톱, 연습, 샘플 코드
-ms.openlocfilehash: 47d5ac7c7517d607d29d004497f62ac0755c3051
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b7984c86b952612af020e2bd91063e0a9b0d92f6
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685040"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530044"
 ---
 # <a name="keyboard-mouse-and-controller-input-in-directx"></a>DirectX의 키보드, 마우스 및 컨트롤러 입력
 
@@ -51,7 +51,7 @@ AppView .cpp에서:
 ```
 
 ### <a name="virtual-keyboard-input"></a>가상 키보드 입력
-몰입 형 데스크톱 헤드셋의 경우 몰입 형 보기를 통해 Windows에서 렌더링 한 가상 키보드를 지원할 수도 있습니다. 이를 지원 하기 위해 앱은 **Coretexteditcontext** 를 구현할 수 있습니다. 이렇게 하면 Windows에서 사용자 고유의 앱 렌더링 텍스트 상자의 상태를 이해할 수 있으므로 가상 키보드에서 해당 텍스트 상자의 상태를 올바르게 적용할 수 있습니다.
+몰입 형 데스크톱 헤드셋의 경우 **Coretexteditcontext** 를 구현 하 여 창에서 렌더링 한 가상 키보드를 몰입 형 보기에서 지원할 수 있습니다. 이렇게 하면 Windows에서 사용자 고유의 앱 렌더링 텍스트 상자의 상태를 이해할 수 있으므로 가상 키보드에서 해당 텍스트 상자의 상태를 올바르게 적용할 수 있습니다.
 
 CoreTextEditContext 지원 구현에 대 한 자세한 내용은 [coretexteditcontext 샘플](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomEditControl)을 참조 하세요.
 
@@ -59,7 +59,8 @@ CoreTextEditContext 지원 구현에 대 한 자세한 내용은 [coretexteditco
 
 UWP CoreWindow 입력 이벤트 처리기를 통해 마우스 입력을 다시 사용할 수도 있습니다. 누름 제스처와 동일한 방식으로 마우스 클릭을 지원 하도록 Windows Holographic 앱 템플릿을 수정 하는 방법은 다음과 같습니다. 이렇게 수정한 후에는 몰입 형 헤드셋 장치를 작성 하는 동안 마우스를 클릭 하면 큐브의 위치가 변경 됩니다.
 
-UWP 앱은 [Mousedevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) API를 사용 하 여 마우스용 원시 XY 데이터를 가져올 수도 있습니다.
+> [!NOTE]
+> UWP 앱은 [Mousedevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) API를 사용 하 여 마우스용 원시 XY 데이터를 가져올 수도 있습니다.
 
 AppView. h에서 새 OnPointerPressed 처리기를 선언 하 여 시작 합니다.
 
@@ -128,13 +129,13 @@ SpatialInteractionSourceState^ pointerState = m_spatialInputHandler->CheckForInp
    m_pointerPressed = false;
 ```
 
-다시 컴파일하고 다시 배포 합니다. 이제 마우스 클릭이 몰입 형 헤드셋에서 큐브 위치를 변경 하는 것을 확인할 수 있으며, bluetooth 마우스가 연결 되어 있습니다.
+다시 컴파일하고 다시 배포 합니다. 이제 마우스 클릭이 몰입 형 헤드셋에서 큐브 위치를 변경 하 고 bluetooth 마우스가 연결 된 HoloLens를 다시 배치 합니다.
 
 ### <a name="game-controller-support"></a>게임 컨트롤러 지원
 
 게임 컨트롤러는 사용자가 몰입 형 Windows Mixed Reality 환경을 제어할 수 있게 하는 재미 있고 편리한 방법일 수 있습니다.
 
-Windows Holographic 앱 템플릿에 게임 컨트롤러에 대 한 지원을 추가 하는 첫 번째 단계는 기본 파일에 대 한 헤더 클래스에 다음 전용 멤버 선언을 추가 하는 것입니다.
+ 주 파일의 헤더 클래스에 다음 전용 멤버 선언을 추가 합니다.
 
 ```
 // Recognize gamepads that are plugged in after the app starts.
@@ -265,8 +266,8 @@ Microsoft HoloLens에서이 코드를 사용 하는 방법에는 몇 가지 중�
 * 키보드 또는 마우스 입력을 사용 하 여 표시할 수 없습니다. 모든 앱 기능은 응시, 제스처 및 음성 입력을 사용 해야 합니다.
 * Bluetooth 키보드가 연결 되 면 앱에서 요청할 수 있는 텍스트에 대해 키보드 입력을 사용 하도록 설정 하는 것이 유용할 수 있습니다. 예를 들어이는 받아쓰기에 유용한 보조가 될 수 있습니다.
 * 앱을 디자인 하는 경우에는 게임에 대 한 WASD 및 마우스 모양 컨트롤을 사용 하지 마세요. HoloLens는 사용자가 대화방을 탐색할 수 있도록 설계 되었습니다. 이 경우 사용자는 카메라를 직접 제어 합니다. 이동/보기 컨트롤을 사용 하 여 실내를 중심으로 카메라를 구동 하는 인터페이스는 동일한 환경을 제공 하지 않습니다.
-* 키보드 입력은 특히 사용자가 키보드를 사용할 필요가 없기 때문에 앱 또는 게임 엔진의 디버깅 측면을 제어 하는 뛰어난 방법일 수 있습니다. CoreWindow 이벤트 Api를 사용 하 여 연결 하는 것과 동일 합니다. 이 시나리오에서는 디버그 세션 중에 키보드 이벤트를 "디버그 입력 전용" 모드로 라우팅하도록 앱을 구성 하는 방법을 구현 하도록 선택할 수 있습니다.
+* 키보드 입력은 특히 사용자가 키보드를 사용 하지 않아도 되기 때문에 앱 또는 게임 엔진 디버깅을 제어 하는 좋은 방법입니다. CoreWindow 이벤트 Api를 사용 하 여 연결 하는 것과 동일 합니다. 이 시나리오에서는 디버그 세션 중에 키보드 이벤트를 "디버그 입력 전용" 모드로 라우팅하도록 앱을 구성 하는 방법을 구현 하도록 선택할 수 있습니다.
 * Bluetooth 컨트롤러도 작동 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [하드웨어 액세서리](../../discover/hardware-accessories.md)

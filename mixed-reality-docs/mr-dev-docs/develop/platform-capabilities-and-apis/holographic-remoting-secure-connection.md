@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 보안, 인증, 서버 간
-ms.openlocfilehash: b2c054d19044b89b487331806b8256de1379fd53
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 64eb54d9401f3fbc8b73ebb97b19de5a68cdc5c4
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443464"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530405"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Holographic Remoting에 대 한 연결 보안 사용
 
@@ -30,7 +30,7 @@ Holographic 원격은 네트워크를 통해 정보를 교환 합니다. 보안 
 
 Windows 스토어의 샘플 앱 및 Holographic Remoting 플레이어에는 보안이 사용 하지 않도록 설정 된 상태로 제공 됩니다. 이렇게 하면 샘플을 보다 쉽게 이해할 수 있습니다. 또한 개발을 빠르게 시작할 수 있습니다.
 
-그러나 필드 테스트 또는 프로덕션 사용을 위해 Holographic Remoting 솔루션에서 보안을 사용 하도록 설정 하는 것이 좋습니다.
+필드 테스트 또는 프로덕션의 경우 Holographic Remoting 솔루션에서 보안을 사용 하도록 설정 하는 것이 좋습니다.
 
 Holographic Remoting의 보안. 사용 사례에 대해 올바르게 설정 하면 다음을 보장할 수 있습니다.
 
@@ -66,7 +66,7 @@ Holographic Remoting에서 보안을 사용 하도록 설정 하면 원격 라�
 
 **사용 사례 1:** 서버 호스트 이름이 고정 되어 있지 않거나 서버에서 호스트 이름으로 주소가 지정 되지 않았습니다.
 
-이 사용 사례에서는 서버 호스트 이름에 대 한 인증서를 발급 하는 것이 실용적이 지 않거나 가능 하지 않습니다. 여기서 권장 사항은 대신 인증서의 지문을 확인 하는 것입니다. 인간 지문과 마찬가지로, 지 문은 인증서를 고유 하 게 식별 합니다.
+이 사용 사례에서는 서버 호스트 이름에 대 한 인증서를 발급 하는 것이 실용적이 지 않거나 가능 하지 않습니다. 대신 인증서의 지문을 확인 하는 것이 좋습니다. 인간 지문과 마찬가지로, 지 문은 인증서를 고유 하 게 식별 합니다.
 
 지문을 클라이언트에 대역 외로 전달 하는 것이 중요 합니다. 즉, 원격 작업에 사용 되는 것과 동일한 네트워크 연결을 통해 메시지를 보낼 수 없습니다. 대신, 클라이언트의 구성에 수동으로 입력 하거나 클라이언트에서 QR 코드를 검색 하도록 할 수 있습니다.
 
@@ -186,10 +186,10 @@ OpenXR 확장을 사용 하는 보안 연결의 주요 요소는 `XR_MSFT_hologr
 
 이러한 콜백은 및를 통해 remoting OpenXR 런타임에 제공할 수 있습니다 `xrRemotingSetSecureConnectionClientCallbacksMSFT` `xrRemotingSetSecureConnectionServerCallbacksMSFT` . 또한 `XrRemotingConnectInfoMSFT` `XrRemotingListenInfoMSFT` 또는를 사용 하는지 여부에 따라 구조 또는 구조에서 secureconnection 매개 변수를 통해 보안 연결을 설정 해야 합니다 `xrRemotingConnectMSFT` `xrRemotingListenMSFT` .
 
-이 API는 [holographic remoting 보안 구현](#implementing-holographic-remoting-security) 에 설명 된 IDL 기반 API와 매우 유사 하지만, 인터페이스를 구현 하는 대신에서 콜백 구현을 제공 해야 합니다. [Holographic Remoting 샘플 github 리포지토리](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)에 있는 OpenXR 샘플 앱의 일부로 자세한 예제를 찾을 수 있습니다.
+이 API는 [holographic remoting Security 구현](#implementing-holographic-remoting-security)에 설명 된 IDL 기반 api와 비슷합니다. 그러나 인터페이스를 구현 하는 대신 콜백 구현을 제공 해야 합니다. [OpenXR 샘플 앱](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)에서 자세한 예제를 찾을 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
-* [Windows Mixed Rey Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-wmr.md)
+* [Windows Mixed Reality Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-wmr.md)
 * [OpenXR Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-openxr.md)
 * [사용자 지정 홀로그램 원격 플레이어 앱 작성](holographic-remoting-create-player.md)
 * [Holographic 원격 문제 해결 및 제한 사항](holographic-remoting-troubleshooting.md)
