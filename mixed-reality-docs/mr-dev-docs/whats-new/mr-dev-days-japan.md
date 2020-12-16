@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality, 컨퍼런스, summit, developer, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 7ca5357c9d7f3536fc165d0663813ae98f45004f
-ms.sourcegitcommit: 1b5a5ce89f2edc86985a73e4f3828bb761e7543a
+ms.openlocfilehash: 925e94931adab767fbca2544d781c9ba1c095216
+ms.sourcegitcommit: cecb76c6a9b4b2c4e9769a5829a7146c99086e85
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/16/2020
-ms.locfileid: "97564258"
+ms.locfileid: "97580549"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>혼합 현실 개발자의 날 일본
 
@@ -39,28 +39,29 @@ ms.locfileid: "97564258"
 
 **모든 시간은 일본 표준시 (UTC + 9)입니다.** 
 
-
-
 ### <a name="december-16th"></a>12 월 16 일
+
+**원래 일정에서 1 시간 지연 되었습니다.**
+
 |**Time**|**세션 제목**|**발표자**|**언어**|**수준**|
 |---------|---------|---------|---------|---------|
-|10:00am-10:50am|키 노트 열기|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA-JP/EN|N/A|
-|10:50am-11:00am|**중단 (10 분)**||||
-|11:00am-11:25am|*세션 1* 혼합 현실 소개|Atsushi Suzuki|JA|100|
-|11:30am-11:55am|*세션 2* 혼합 현실 비즈니스 모멘텀|Tetsu Muranaka|JA|200|
-|12:00pm-12:50pm|*점심 세션* 패널: 대화형 무료 토론, 질문 및 답변, MRTK + Oculus 퀘스트 2|Madoka Chiyoda + Microsoft Mvp|JA|200|
-|12:50pm-1:00pm|**중단 (10 분)**||||
-|1:00pm-1:25pm|*세션 3* HoloLens 2 개발 개요|Madoka Chiyoda|JA|200|
-|1:30pm-1:55pm|*세션 4* MRTK UX 구성 요소 v 2.5.0|Yoon 파킹|JA|300|
-|2:00pm-2:25pm|*세션 5* HoloLens 2 및 Unreal Engine 시작 (MRTK-Unreal)|Cameron 저 Micka|EN|300|
-|2:30pm-2:55pm|*세션 6* Holograms 디자인|Daniel Escudero|EN|300|
-|2:55pm-3:15pm|**중단 (20min)**||||
-|3:15pm-3:40pm|*세션 7* Azure 개체 앵커|Jesse McCulloch|EN|300|
-|3:45pm-4: 오후 10 시|*세션 8* Azure 원격 렌더링|Atsushi Suzuki|JA|300|
-|4:15pm-4:40pm|*세션 9* Azure 공간 앵커를 통해 홀로그램 및 실제 세계 맞춤|Yingguang Mei|EN|300|
-|4:45pm-5: 오후 10 시|*세션 10* Unity + PiXYZ|Shinobu Takahashi (Unity 기술 일본)|JA|200|
-|5:15pm-5:40pm|*세션 11* Azure Kinect 진한 심층 분석, 사례 연구|Shinji Chiba|JA|400|
-|5:45pm-6:00pm|닫기|Madoka Chiyoda|JA|N/A|
+|11:00am-11:50am|키 노트 열기|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA-JP/EN|N/A|
+|11: 오전 50am 12:00pm|**중단 (10 분)**||||
+|12:00pm-12:25pm|*세션 1* 혼합 현실 소개|Atsushi Suzuki|JA|100|
+|12:30pm-12:55pm|*세션 2* 혼합 현실 비즈니스 모멘텀|Tetsu Muranaka|JA|200|
+|1:00pm-1:50pm|*점심 세션* 패널: 대화형 무료 토론, 질문 및 답변, MRTK + Oculus 퀘스트 2|Madoka Chiyoda + Microsoft Mvp|JA|200|
+|1:50pm-2:00pm|**중단 (10 분)**||||
+|2:00pm-2:25pm|*세션 3* HoloLens 2 개발 개요|Madoka Chiyoda|JA|200|
+|2:30pm-2:55pm|*세션 4* MRTK UX 구성 요소 v 2.5.0|Yoon 파킹|JA|300|
+|3:00pm-3:25pm|*세션 5* HoloLens 2 및 Unreal Engine 시작 (MRTK-Unreal)|Cameron 저 Micka|EN|300|
+|3:30pm-3:55pm|*세션 6* Holograms 디자인|Daniel Escudero|EN|300|
+|3:55pm-4:15pm|**중단 (20min)**||||
+|4:15pm-4:40pm|*세션 7* Azure 개체 앵커|Jesse McCulloch|EN|300|
+|4:45pm-5: 오후 10 시|*세션 8* Azure 원격 렌더링|Atsushi Suzuki|JA|300|
+|5:15pm-5:40pm|*세션 9* Azure 공간 앵커를 통해 홀로그램 및 실제 세계 맞춤|Yingguang Mei|EN|300|
+|5:45pm-6: 오후 10 시|*세션 10* Unity + PiXYZ|Shinobu Takahashi (Unity 기술 일본)|JA|200|
+|6:15pm-6:40pm|*세션 11* Azure Kinect 진한 심층 분석, 사례 연구|Shinji Chiba|JA|400|
+|6:45pm-7:00pm|닫기|Madoka Chiyoda|JA|N/A|
 
 #### <a name="contributors-technical-reviewers-for-the-subtitles"></a>참가자 (자막의 기술 검토자)
 
