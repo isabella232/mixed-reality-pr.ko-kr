@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 포트, unity, unreal, 미들웨어, engine, UWP, Win32, 포팅, HoloLens 1 gen, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 마이그레이션, Windows 10, 입력 매핑
-ms.openlocfilehash: 9f3e064c4462fc3d12a23bd94885476bcd2f9466
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 4137ff4dcc9f72dd66b9078b0d86c2d06f01f2bc
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925949"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613227"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>VR 앱을 Windows Mixed Reality로 포팅
 
-Windows 10에는 몰입 형 및 holographic 헤드셋을 직접 지원 합니다. Rift 또는 HTC Vive와 같은 다른 장치에 대 한 콘텐츠를 빌드한 경우 운영 체제의 플랫폼 API 위에 있는 라이브러리에 대 한 종속성이 있습니다. 기존 Win32 Unity VR 앱을 Windows Mixed Reality로 가져오면 공급 업체의 특정 VR Sdk 사용이 Unity의 공급 업체의 VR Api로 변경 됩니다.
+Windows 10에는 몰입 형 및 holographic 헤드셋에 대 한 지원이 포함 되어 있습니다. Oculus Rift 또는 HTC Vive와 같은 다른 장치에 대 한 콘텐츠를 빌드한 경우 운영 체제의 플랫폼 API 위에 있는 라이브러리에 대 한 종속성이 있습니다. 기존 Win32 Unity VR 앱을 Windows Mixed Reality로 가져오면 공급 업체의 특정 VR Sdk 사용이 Unity의 공급 업체의 VR Api로 변경 됩니다.
 
 ## <a name="porting-requirements"></a>포팅 요구 사항
 
@@ -23,7 +23,7 @@ Windows 10에는 몰입 형 및 holographic 헤드셋을 직접 지원 합니다
 1. **PC에서 Windows 10의 작성자 업데이트 (16299)를 실행 하 고 있는지 확인 합니다.** 이러한 빌드는 혼합 현실 개발에 가장 안정적이 아니므로 Insider Skip에서 preview 빌드를 수신 하는 것이 더 이상 권장 되지 않습니다.
 2. **최신 버전의 그래픽 또는 게임 엔진으로 업그레이드 합니다.** 게임 엔진은 Windows 10 SDK 버전 10.0.15063.0 (4 월 2017에 릴리스된) 이상을 지원 해야 합니다.
 3. **미들웨어, 플러그 인 또는 구성 요소를 업그레이드 합니다.** 앱에 구성 요소가 있는 경우 최신 버전으로 업그레이드 하는 것이 좋습니다.
-4. **중복 된 sdk에 대 한 종속성을 제거** 합니다. 콘텐츠를 대상으로 하는 장치에 따라 Windows Api를 대상으로 지정할 수 있도록 해당 SDK (예: SteamVR)를 제거 하거나 조건부로 컴파일해야 합니다.
+4. **중복 된 sdk에 대 한 종속성을 제거** 합니다. 콘텐츠를 대상으로 하는 장치에 따라 Windows Api를 대상으로 지정할 수 있도록 해당 SDK를 제거 하거나 조건적으로 컴파일해야 합니다. 이 시나리오의 예는 SteamVR입니다.
 5. **빌드 문제를 해결 합니다.** 이때 포팅 연습은 앱, 엔진 및 구성 요소 종속성에 따라 다릅니다.
 
 ## <a name="common-porting-steps"></a>일반적인 포팅 단계
@@ -41,7 +41,7 @@ Windows Mixed Reality 플랫폼은 아직 개발 중입니다. Windows 참가자
 4. **설정 > 업데이트 & 보안 섹션** 을 통해 [Windows Insider Fast flight](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview) 로 전환 합니다.
 
 ### <a name="3-upgrade-to-the-most-recent-build-of-visual-studio"></a>3. Visual Studio의 최신 빌드로 업그레이드
-* Visual Studio를 사용 하는 경우 가장 최근 빌드로 업그레이드 합니다.
+* Visual Studio를 사용 하는 경우 최신 빌드로 업그레이드 하세요.
 * Visual Studio 2019 [의 도구 설치 페이지를](../install-the-tools.md#installation-checklist) 참조 하세요.
 
 ### <a name="4-choose-the-correct-adapter"></a>4. 올바른 어댑터를 선택 합니다.

@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: mrc, 사진, 비디오, 캡처, 카메라
-ms.openlocfilehash: e9819995806784c512acee6ada10d0be56051fca
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 13765686c3e86822efff17b25995a6eaa4008e6c
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530125"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613347"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>개발자를 위한 혼합 현실 캡처
 
@@ -157,7 +157,7 @@ MRC는 추가 개발 작업 없이 작동할 것으로 예상 되지만, 최상�
 <table>
 <tr>
 <td>
-<img src="images/chessboardblackedges-300px.jpg" alt="Failing to clear to transparent black: black edge artifacts around holograms"/>
+<img src="images/chessboardblackedges-300px.jpg" alt="Failure to clear to transparent black: black edge artifacts around holograms"/>
 </td>
 <td>
 <img src="images/fieldblackedges-300px.jpg" alt="Failing to clear to transparent black: black edge artifacts around holograms"/>

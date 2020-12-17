@@ -6,16 +6,16 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 포팅, unity, 미들웨어, 엔진, UWP, Win32
-ms.openlocfilehash: 1ec03610dd26e9f75162795cbdded77a8e0189ce
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: d8cbb62500a81a29a00f4d32eaed0c2df3f5149d
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925826"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612837"
 ---
 # <a name="porting-overview"></a>포팅 개요
 
-혼합 현실에서 기존 프로젝트를 이식 하거나 업그레이드 하는 경우 앱이 Unity를 사용 하 여 빌드 되었는지 아니면 Unreal 엔진, HoloLens (첫 번째 Gen) 또는 HoloLens 2를 사용 하 여 빌드 되었는지 또는 SteamVR에 따라 몇 가지 시나리오가 적용 될 수 있습니다. 이 개요 페이지에는 각 플랫폼 및 장치에 대 한 현재 권장 사항이 포함 되어 있습니다. 이러한 프로세스는 항상 변경 될 때 다시 확인 해야 합니다.
+혼합 현실에 대 한 기존 프로젝트를 이식 하거나 업그레이드 하는 경우에는 앱이 Unity 또는 Unreal Engine을 사용 하 여 빌드 되었는지, HoloLens (1 Gen) 또는 HoloLens 2 또는 SteamVR를 대상으로 하는지 여부에 따라 포팅 기능이 달라 집니다. 이 개요 페이지에는 각 플랫폼 및 장치에 대 한 현재 권장 사항이 포함 되어 있습니다. 이러한 프로세스는 항상 변경 될 때 다시 확인 해야 합니다.
 
 먼저 [Unity](#unity) 및 [unreal](#unreal) 권장 사항에 따라 프로젝트 대상을 설정 하 고 포팅 시나리오 중 하나 이상을 수행 합니다.
 
@@ -26,7 +26,7 @@ ms.locfileid: "96925826"
 
 ## <a name="recommended-project-targets"></a>권장 프로젝트 대상
 
-응용 프로그램을 다른 대상 장치로 포팅 하는지 여부에 관계 없이 프로젝트를 최신 상태로 유지 하는 것이 중요 합니다. 현재 권장 사항은 아래에 나열 된 엔진 기반 리소스를 참조 하세요.
+앱을 다른 대상 장치로 포팅 하는지 여부에 관계 없이 프로젝트를 최신 상태로 유지 하는 것이 중요 합니다. 현재 권장 사항은 아래에 나열 된 엔진 기반 리소스를 참조 하세요.
 
 ### <a name="unity"></a>Unity
 
@@ -52,7 +52,7 @@ HoloLens 2로 이식할 기존 HoloLens (첫 번째 Gen) Unity 응용 프로그�
 
 ### <a name="windows-mixed-reality-headsets"></a>Windows Mixed Reality 헤드셋
 
-Oculus Rift 또는 HP 반향 G2와 같은 다른 장치에 대 한 콘텐츠를 빌드한 경우에는 공급 업체별 VR Sdk와 잠재적으로 입력 매핑 Api를 다시 대상으로 지정 해야 합니다. [모던 앱 포팅 가이드](porting-guides.md)에서 Unity 및 unreal 포팅 시나리오에 대 한 정보를 찾을 수 있습니다.
+Oculus Rift 또는 HP 반향 G2와 같은 다른 장치에 대 한 콘텐츠를 빌드한 경우 공급 업체별 VR Sdk 및 잠재적으로 입력 매핑 Api의 대상을 변경 해야 합니다. [모던 앱 포팅 가이드](porting-guides.md)에서 Unity 및 unreal 포팅 시나리오에 대 한 정보를 찾을 수 있습니다.
 
 ### <a name="steamvr-applications"></a>SteamVR 응용 프로그램
 
@@ -60,5 +60,5 @@ Windows Mixed Reality 헤드셋에 대해 업데이트 하려는 SteamVR 환경�
 
 ### <a name="2d-universal-windows-applications"></a>2D 유니버설 Windows 응용 프로그램
 
-Windows Mixed Reality 모던 헤드셋 또는 HoloLens로 이식 하려는 기존 2D UWP 앱이 있는 경우 [Windows Mixed reality 용 2D uwp 앱 포팅](building-2d-apps.md) 문서에 있는 지침을 따르세요.
+Windows Mixed Reality 몰입 형 헤드셋 또는 HoloLens로 이식 하려는 기존 2D UWP 앱이 있는 경우 [Windows Mixed reality 용 2D uwp 앱 포팅](building-2d-apps.md) 지침을 따르세요.
 

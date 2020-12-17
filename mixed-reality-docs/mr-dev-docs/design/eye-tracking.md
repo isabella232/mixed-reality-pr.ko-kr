@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 눈 추적, 혼합 현실, 입력, 눈에 응시, 보정, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 의도, 작업
-ms.openlocfilehash: c6167fc48a98de8f400400475c2057a2b4773b29
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 53a44fab72d3a15df3cf5929c6ddda4fec06af71
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702589"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612867"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>HoloLens 2의 시선 추적
 
@@ -81,7 +81,7 @@ HoloLens 2를 사용 하면 개발자에 게 사용자가 보고 있는 항목�
 ### <a name="user-intent"></a>사용자 의도    
 사용자에 게 표시 되는 위치와 위치에 대 한 정보는 음성, 손 및 컨트롤러와 같은 **다른 입력을 위한 강력한 컨텍스트** 를 제공 합니다.
 이러한 컨텍스트를 다양한 작업에서 사용할 수 있습니다.
-예를 들어,이는 홀로그램을 살펴보고 *"선택"* ( [응시 및 커밋](gaze-and-commit.md)) 또는 "준비 중 ... *"* 이라고 하 고 사용자가 홀로그램을 배치할 위치를 확인 한 다음, 사용자가 홀로그램을 배치할 위치를 확인 하 고 **targeting** *"*. 이에 대한 예는 [Mixed Reality Toolkit - 시선 지원 대상 선택](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) 및 [Mixed Reality Toolkit - 시선 지원 대상 위치 지정](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html)에서 찾을 수 있습니다.
+예를 들어,이는 홀로그램을 살펴보고 *"선택"* ( [응시 및 커밋](gaze-and-commit.md)) 또는 "준비 중 ... *"* 이라고 하 고 사용자가 홀로그램을 배치할 위치를 확인 한 다음, 사용자가 홀로그램을 배치할 위치를 확인 하 고  *"*. 이에 대한 예는 [Mixed Reality Toolkit - 시선 지원 대상 선택](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) 및 [Mixed Reality Toolkit - 시선 지원 대상 위치 지정](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html)에서 찾을 수 있습니다.
 
 또한 사용자 의도에 대 한 예제에는 사용자가 합의서 등 가상 에이전트 및 대화형 holograms 참여를 개선 하기 위해 확인 하는 내용에 대 한 정보가 포함 될 수 있습니다. 예를 들어 가상 에이전트는 현재 표시 되는 내용에 따라 사용 가능한 옵션과 해당 동작을 조정할 수 있습니다. 
 
@@ -133,7 +133,7 @@ Microsoft는 사용자에 게 눈 추적 정보를 사용 하는 방법에 대 �
 * 사용자에 게 시스템에서 아직 지원 하지 않는 고유한 안경 또는 아이 조건이 있습니다.    
 * 외부 요소는 활용 하지 못해, 안경, 강한 얼굴, occlusions 등의 얼룩과 같은 신뢰할 수 있는 눈 추적을 지원 합니다.   
 
-따라서 개발자는 이러한 사용자에 대 한 적절 한 대체 지원이 있는지 확인 해야 합니다. [DirectX의 눈 추적](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-is-not-available) 페이지에서 눈 추적 데이터를 사용할 수 있는지 여부를 검색 하는 데 필요한 api를 설명 합니다. 
+따라서 개발자는 이러한 사용자에 대 한 적절 한 대체 지원이 있는지 확인 해야 합니다. [DirectX의 눈 추적](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-isnt-available) 페이지에서 눈 추적 데이터를 사용할 수 있는지 여부를 검색 하는 데 필요한 api를 설명 합니다. 
 
 일부 사용자는 눈 추적 데이터에 대 한 액세스를 취소 하기로 결정 했을 수 있지만, 눈 추적 데이터에 대 한 액세스를 제공 하지 않는 경우의 개인 정보 보호에 대 한 사용자 환경의 절충은 consciously 수 있습니다.  
 따라서 앱에서 눈 추적을 사용 하는 경우이는 환경에서 중요 한 부분 이므로 사용자에 게이를 명확 하 게 전달 하는 것이 좋습니다.     
@@ -155,7 +155,7 @@ Microsoft는 사용자에 게 눈 추적 정보를 사용 하는 방법에 대 �
 이 페이지에서는 HoloLens 2에 대 한 눈에 보기 및 눈에 잘 맞는 입력의 역할을 이해 하기 시작 하는 데 도움이 되는 유용한 개요를 제공 합니다. 개발을 시작 하려면 [holograms와의 상호 작용을 위해 눈길](eye-gaze-interaction.md)을 [내](https://aka.ms/mrtk-eyes) 는 역할에 대 한 정보를 확인 [하세요.](../develop/native/gaze-in-directx.md)
 
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [조정](../calibration.md)
 * [편안함](comfort.md)
 * [시선 응시 기반 상호 작용](eye-gaze-interaction.md)

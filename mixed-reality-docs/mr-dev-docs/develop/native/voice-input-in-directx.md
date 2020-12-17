@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 연습, 음성 명령, 구, 인식, 음성, directx, 플랫폼, cortana, windows mixed 현실
-ms.openlocfilehash: bdd92f79b3dd9677ac5c2c64e532978477ac5bca
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c917fbc4215442bc66f52dc2c527e01b2c446594
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683809"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613107"
 ---
 # <a name="voice-input-in-directx"></a>DirectX의 음성 입력
 
@@ -29,7 +29,7 @@ ms.locfileid: "91683809"
 
 먼저 새 *Windows:: Media:: SpeechRecognition:: SpeechRecognizer* 인스턴스를 만듭니다.
 
-From *HolographicVoiceInputSampleMain:: CreateSpeechConstraintsForCurrentState* :
+From *HolographicVoiceInputSampleMain:: CreateSpeechConstraintsForCurrentState*:
 
 ```
 m_speechRecognizer = ref new SpeechRecognizer();
@@ -95,7 +95,7 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-*Onresultgenerated* 이벤트 처리기는 [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) 인스턴스에서 이벤트 데이터를 수신 합니다. 신뢰가 정의한 임계값 보다 크면 앱에서 이벤트가 발생 한 것을 확인 해야 합니다. 후속 업데이트 루프에서 사용할 수 있도록 이벤트 데이터를 저장 합니다.
+*Onresultgenerated* 이벤트 처리기는 [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) 인스턴스에서 이벤트 데이터를 수신 합니다. 신뢰가 정의한 임계값 보다 크면 앱에서 이벤트가 발생 한 것을 확인 해야 합니다. 이후 업데이트 루프에서 사용할 수 있도록 이벤트 데이터를 저장 합니다.
 
 *HolographicVoiceInputSampleMain* 에서:
 
@@ -156,7 +156,7 @@ auto constraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScen
    {
 ```
 
-컴파일이 성공 하면 음성 인식을 진행할 수 있습니다.
+컴파일이 성공 하면 음성 인식을 계속 진행할 수 있습니다.
 
 ```
 try
@@ -367,7 +367,7 @@ Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizer
 
 Holographic speech 샘플은 음성 합성을 사용 하 여 사용자에 게 가청 지침을 제공 합니다. 이 섹션에서는 합성 된 음성 샘플을 만든 다음 HRTF 오디오 Api를 통해 다시 재생 하는 방법을 보여 줍니다.
 
-구 입력을 요청할 때 사용자 고유의 음성 프롬프트를 제공 해야 합니다. 또한 프롬프트는 연속 인식 시나리오에서 음성 명령을 음성으로 사용할 수 있는 경우를 표시 하는 데 도움이 될 수 있습니다. 다음 예제에서는 음성 신시사이저를 사용 하 여이 작업을 수행 하는 방법을 보여 줍니다. 미리 녹음 된 음성 클립, 시각적 UI 또는 표시 되는 항목에 대 한 다른 표시기를 사용할 수도 있습니다. 예를 들어, 프롬프트가 동적이 지 않은 시나리오를 예로 들 수 있습니다.
+구 입력을 요청할 때 사용자 고유의 음성 프롬프트를 제공 하는 것이 좋습니다. 또한 프롬프트는 연속 인식 시나리오에서 음성 명령을 음성으로 사용할 수 있는 경우를 표시 하는 데 도움이 될 수 있습니다. 다음 예제에서는 음성 신시사이저를 사용 하 여이 작업을 수행 하는 방법을 보여 줍니다. 또한 미리 녹음 된 음성 클립, 시각적 UI 또는 표시 되는 항목에 대 한 다른 표시기를 사용할 수 있습니다. 예를 들어, 프롬프트가 동적이 지 않은 시나리오를 예로 들 수 있습니다.
 
 먼저 SpeechSynthesizer 개체를 만듭니다.
 
@@ -430,6 +430,6 @@ catch (Exception^ exception)
    });
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [음성 앱 디자인](https://msdn.microsoft.com/library/dn596121.aspx)
 * [SpeechRecognitionAndSynthesis 샘플](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)

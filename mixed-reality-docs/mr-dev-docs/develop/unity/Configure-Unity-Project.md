@@ -1,25 +1,23 @@
 ---
-title: Windows Mixed Reality에 대 한 새 Unity 프로젝트 구성
+title: MRTK를 사용 하지 않고 프로젝트 구성
 description: Windows Mixed Reality 용 Unity 프로젝트를 구성 하는 방법에 대 한 지침
-author: thetuvix
+author: hferrone
 ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, mixed reality, 개발, 시작, 새 프로젝트, Windows Mixed Reality, UWP, XR, 성능
-ms.openlocfilehash: cd7e6c5681c717c37368393a605998a2ab8e4175
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 1337001e8cc5c280c5789acbc8f10f40bca9b763
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677672"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613392"
 ---
-# <a name="configure-a-new-unity-project-for-windows-mixed-reality"></a>Windows Mixed Reality에 대 한 새 Unity 프로젝트 구성 
-
-## <a name="overview"></a>개요
+# <a name="configuring-your-project-without-mrtk"></a>MRTK를 사용 하지 않고 프로젝트 구성
 
 Windows Mixed Reality (WMR)는 Windows 10 운영 체제의 일부로 도입 된 Microsoft 플랫폼입니다. WMR 플랫폼을 사용 하면 holographic 및 VR 디스플레이 장치에서 디지털 콘텐츠를 렌더링 하는 응용 프로그램을 빌드할 수 있습니다.
 
-WMR에 대해 설정할 때 두 가지 경로를 사용할 수 있습니다. 첫 번째 옵션은 WMR 환경을 자동으로 설정 하는 [MRTK (Mixed Reality Toolkit)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)를 설치 하는 것입니다. 두 번째 옵션은 WMR를 사용 하기 위해 몇 가지 Unity 설정을 수동으로 변경 하는 것입니다. 
+Microsoft 및 커뮤니티에서는 WMR 환경을 자동으로 설정 하는 [mrtk (Mixed Reality Toolkit)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) 와 같은 활용 도구를 만들었으므로 많은 개발자 들이 처음부터 환경을 구축 하려고 합니다.  다음 설명서에서는 MRTK를 사용 하는지 여부에 관계 없이 혼합 현실 개발용으로 프로젝트를 올바르게 설정 하는 방법을 보여 줍니다.  변경 해야 하는 설정은 프로젝트 당 설정 및 장면 별 설정의 두 가지 범주로 구분 됩니다.
 
 > [!NOTE]
 > 나중에 언제 든 지 MRTK를 가져올 수 있으므로 수동 경로를 먼저 이동 하는 데는 아무런 영향이 없습니다.
@@ -28,25 +26,53 @@ WMR 수동 설치를 선택 하는 경우 변경 해야 하는 설정은 프로�
 
 ## <a name="per-project-settings"></a>프로젝트별 설정
 
-WMR에 대해 변경 해야 하는 첫 번째 설정은 프로젝트 플랫폼입니다. 
-1. **파일 > 빌드 설정** ...을 선택 합니다.
-2. 플랫폼 목록에서 **유니버설 Windows 플랫폼** 을 선택 하 고 **플랫폼 전환** 을 클릭 합니다.
-3. **SDK** 를 **유니버설 10** 으로 설정
-4. 몰입 형 헤드셋을 지원 하거나 **HoloLens** 로 전환 하기 위해 **대상 장치** 를 **모든 장치로** 설정
-5. **빌드 유형을** **D3D** 로 설정
-6. **UWP SDK** 를 **최신 설치** 로 설정
+데스크톱 VR를 대상으로 하는 경우 새 Unity 프로젝트에서 기본적으로 선택 된 PC 독립 실행형 플랫폼을 사용 하는 것이 좋습니다.
 
-<img src="images/unity-uwp-settings.png" width="550px" alt="Unity XR Settings">
-*Unity XR 설정*
+![PC, Mac & 독립 실행형 플랫폼이 강조 표시 된 unity 편집기에서 열리는 빌드 설정 창의 스크린샷](images/wmr-config-img-3.png)
 
-플랫폼이 올바르게 구성 된 후에는 앱이 내보낼 때 2D 보기 대신 [몰입 형 보기](../../design/app-views.md) 를 만들어야 한다는 것을 Unity에 알려야 합니다.
-1. **빌드 설정 ...** 창에서 **플레이어 설정 ...** 을 엽니다.
-2. 유니버설 Windows 플랫폼 탭 **에 대 한 설정** 을 선택 하 고 **XR 설정** 그룹을 확장 합니다.
-3. **XR 설정** 섹션에서 가상 **현실 지원 됨** 확인란을 선택 하 여 **가상 현실 장치** 목록을 추가 합니다.
-4. **XR 설정** 그룹에서 **"Windows Mixed Reality"** 가 지원 되는 장치로 나열 되는지 확인 합니다. 이 옵션은 이전 버전의 Unity에서 **Windows Holographic** 표시 될 수 있습니다.
+HoloLens 2를 대상으로 하는 경우 유니버설 Windows 플랫폼로 전환 해야 합니다.
 
-![Unity UWP 설정](images/xrsettings.png)<br>
-*Unity XR 설정*
+1.  **파일 > 빌드 설정** ...을 선택 합니다.
+2.  플랫폼 목록에서 **유니버설 Windows 플랫폼** 을 선택 하 고 **플랫폼 전환** 을 선택 합니다.
+3.  **아키텍처** 를 **ARM 64** 로 설정 합니다.
+4.  **대상 장치** 를 **HoloLens** 로 설정
+5.  **빌드 유형을** **D3D** 로 설정
+6.  **UWP SDK** 를 **최신 설치** 로 설정
+7.  디버그에 알려진 성능 문제가 있으므로 **빌드 구성을** **릴리스로** 설정 합니다.
+
+![유니버설 Windows 플랫폼 강조 표시 된 unity 편집기에서 열린 빌드 설정 창의 스크린샷](images/wmr-config-img-4.png)
+
+플랫폼을 설정한 후에는 내보낼 때 Unity에서 2D 보기 대신 [몰입 형 보기](../../design/app-views.md) 를 만들도록 해야 합니다.
+
+### <a name="for-xrsdk"></a>XRSDK의 경우 
+
+1. Unity 편집기에서 **편집 > 프로젝트 설정** 으로 이동 하 고 **XR 플러그 인 관리** 를 선택 합니다.
+
+2. **XR 플러그 인 관리 설치** 를 선택 합니다.
+
+![XR 플러그 인 관리가 강조 표시 된 unity 편집기에서 열리는 프로젝트 설정 창의 스크린샷](images/wmr-config-img-5.png)
+
+3. 시작 및 **Windows Mixed Reality** **에서 XR 초기화를** 선택 합니다.
+
+![XR 플러그 인 관리가 강조 표시 된 unity 편집기에서 열리는 프로젝트 설정 창의 스크린샷](images/wmr-config-img-7.png)
+
+4. **XR 플러그 인 관리** 섹션을 확장 하 고 **Windows Mixed Reality** 를 선택 합니다.
+5. 모든 상자를 선택 하 고 **깊이 전송 모드** 를 **깊이 16 비트로** 설정 합니다.
+
+![Windows Mixed Reality 섹션이 강조 표시 된 unity 편집기에서 열리는 프로젝트 설정 창의 스크린샷](images/wmr-config-img-8.png)
+
+### <a name="for-legacy-xr"></a>레거시 XR의 경우 
+
+> [!CAUTION]
+> 레거시 XR는 Unity 2019에서 더 이상 사용 되지 않으며 Unity 2020에서 제거 되었습니다.
+
+1. 빌드 설정에서 **플레이어 설정** ...을 엽니다. **** **XR 설정** 그룹을 확장 합니다.
+2. **XR 설정** 섹션에서 가상 현실 **지원 됨** 을 선택 하 여 가상 현실 장치 목록을 추가 합니다.
+3. **깊이 형식을** **16 비트 깊이로** 설정 하 고 **깊이 버퍼 공유** 를 사용 하도록 설정 합니다.
+4. **단일 패스 인스턴스로** **스테레오 렌더링 모드** 설정
+5. Holographic 원격 기능을 사용 하려는 경우에는 **WSA Holographic Remoting 지원** 을 선택 합니다. 
+
+![플레이어 설정 섹션이 강조 표시 된 unity 편집기에서 열리는 프로젝트 설정 창의 스크린샷](images/wmr-config-img-9.png)
 
 ### <a name="updating-the-manifest"></a>매니페스트를 업데이트 하는 중
 
@@ -65,10 +91,12 @@ WMR에 대해 변경 해야 하는 첫 번째 설정은 프로젝트 플랫폼�
 ### <a name="quality-settings"></a>품질 설정
 
 HoloLens에는 모바일 클래스 GPU가 있습니다. 앱이 HoloLens를 대상으로 하는 경우 앱의 품질 설정이 전체 프레임 속도를 유지 하기 위해 가장 빠른 성능을 위해 조정 되도록 합니다.
-1. **편집 > 프로젝트 설정 > 품질** 을 선택 합니다.
-2. **Windows 스토어** 로고 아래의 **드롭다운** 을 선택 하 고 **매우 낮음** 을 선택 합니다. Windows 스토어 열 및 **매우 낮음** 행의 상자가 녹색이면 설정이 올바르게 적용된 것입니다.
 
-![Unity 품질 설정](images/getting-started-unity-quality-settings.jpg)<br>
+1. **편집 > 프로젝트 설정 > 품질** 을 선택 합니다.
+2. **Windows 스토어** 로고 아래의 **드롭다운** 을 선택 하 고 **매우 낮음** 을 선택 합니다. Windows 스토어 열의 상자와 **매우 낮은** 행이 녹색 인 경우 설정이 올바르게 적용 됨을 알 수 있습니다.
+3. **그림자** 섹션에서 **그림자 사용 안 함** 을 선택 합니다.
+
+![품질 설정 섹션이 강조 표시 된 unity 편집기에서 열리는 프로젝트 설정 창의 스크린샷](images/wmr-config-img-10.png)<br>
 *Unity 품질 설정*
 
 ## <a name="per-scene-settings"></a>장면 별 설정
@@ -78,20 +106,27 @@ HoloLens에는 모바일 클래스 GPU가 있습니다. 앱이 HoloLens를 대�
 **가상 현실을 지원 됨** 을 선택 하면 [Unity 카메라](camera-in-unity.md) 구성 요소가 [헤드 추적 및 stereoscopic 렌더링](../platform-capabilities-and-apis/rendering.md)을 처리 합니다. 즉, 기본 카메라 개체를 사용자 지정 카메라로 바꿀 필요가 없습니다.
 
 앱이 특별히 HoloLens를 대상으로 하는 경우에는 장치의 투명 디스플레이를 최적화 하기 위해 몇 가지 설정을 변경 해야 합니다. 이러한 설정을 통해 holographic 콘텐츠를 실제 세계에 표시할 수 있습니다.
+
 1. **계층** 에서 **기본 카메라** 를 선택 합니다.
 2. **검사기** 패널에서 변환 **위치** 를 **0, 0, 0** 으로 설정 하 여 사용자의 헤드 위치가 Unity 세계 원점에서 시작 되도록 합니다.
 3. **Clear 플래그** 를 **Solid 색** 으로 변경 합니다.
 4. **배경색** 을 **RGBA 0, 0**, 0, 0으로 변경 합니다. 검은색은 HoloLens에서 투명 하 게 렌더링 됩니다.
 5. **클립 평면** 을 [HoloLens 권장](camera-in-unity.md#clip-planes) 0.85 (미터) 근처로 변경 합니다.
 
-![Unity 카메라 설정](images/Unitycamerasettings.png)<br>
+![Unity 편집기에서 열리는 검사기 탭의 스크린샷](images/wmr-config-img-11.png)<br>
 *Unity 카메라 설정*
 
 > [!IMPORTANT]
 > 새 카메라를 삭제 하 고 만드는 경우 새 카메라에 **maincamera** 로 태그가 지정 되어 있는지 확인 합니다.
 
-## <a name="see-also"></a>참조
-* [MRTK - 설치 가이드(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
-* [MRTK - 설명서 홈(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+## <a name="next-steps"></a>다음 단계
+
+이제 프로젝트가 준비 되었으므로 혼합 현실 환경 개발을 시작할 수 있습니다.
+
+* [핵심 구성 요소](unity-development-overview.md#2-core-building-blocks) 추가
+* 사용 가능한 [플랫폼 기능 및 api](unity-development-overview.md#3-platform-capabilities-and-apis) 확인
+* [앱을 배포](../platform-capabilities-and-apis/using-visual-studio.md#deploying-an-app-to-your-local-pc---immersive-headset) 하는 방법 알아보기
+* [혼합 현실 시뮬레이터](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) 사용
+
+## <a name="see-also"></a>참고 항목
 * [도구 설치](../install-the-tools.md)
-* [Unity 개발 개요](unity-development-overview.md)
