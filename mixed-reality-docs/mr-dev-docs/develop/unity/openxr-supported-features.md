@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/15/2020
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 보강 현실, 가상 현실, 혼합 현실 헤드셋, 학습, 자습서, 시작
-ms.openlocfilehash: dc908762d6e44e04f56b8ff82b90394106ca42e5
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 5db08dee6b26de6fa3f44d92709e4903bb90a44c
+ms.sourcegitcommit: 7595db7438398b5c78cec41a6f8ab625711bf8ec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/17/2020
-ms.locfileid: "97622947"
+ms.locfileid: "97664421"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Unity의 혼합 현실 OpenXR 지원 되는 기능
 
@@ -25,12 +25,12 @@ ms.locfileid: "97622947"
 * UWP 패키지를 최적화 하 고 HoloLens 2 응용 프로그램에 대해 CoreWindow 상호 작용 합니다.
 * 앵커와 바인딩되지 않은 공간을 사용한 세계 크기 조정 추적.
 * 저장소 API를 고정 하 여 HoloLens 2 로컬 저장소에 앵커를 유지 합니다.
-* 새 HP 반향 G2 컨트롤러를 포함 하 여 동작 컨트롤러 및 직접 상호 작용.
+* 새 HP 반향 G2 컨트롤러를 포함 하 여 [동작 컨트롤러 및 직접 상호 작용](#motion-controller-and-hand-interactions).
 * 26 개의 조인트와 조인트 반지름 입력을 사용 하 여 직접 추적 합니다.
 * HoloLens 2의 눈 응시 상호 작용입니다.
 * HoloLens 2에서 사진/비디오 (PV) 카메라를 찾는 중입니다.
 * 혼합 현실 PV 카메라를 통한 세 번째 눈동자 렌더링을 사용 하 여 캡처합니다.
-* 는 Holographic Remoting 앱을 사용 하 여 HoloLens 2에 대 한 "Play"를 지원 하므로 개발자는 장치에 빌드 및 배포 하지 않고도 스크립트를 디버그할 수 있습니다.
+* 는 [Holographic Remoting 앱을 사용 하 여 HoloLens 2에 대 한 "Play"를](#holographic-remoting-in-unity-editor-play-mode)지원 하므로 개발자는 장치에 빌드 및 배포 하지 않고도 스크립트를 디버그할 수 있습니다.
 * MRTK Unity 2.5.2를 통한 MRTK OpenXR 어댑터 패키지와 호환 됩니다. <missing link>
 * Unity [Arfoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) 이상 버전과 호환 됩니다.
 
