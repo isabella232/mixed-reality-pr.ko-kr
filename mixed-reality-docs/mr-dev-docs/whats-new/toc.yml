@@ -17,7 +17,5 @@
   href: release-notes-may-2020.md
 - name: 커뮤니티 리소스
   href: ../discover/community.md
-- name: 이 문서에 기고
-  href: contributing.md
 - name: 규모에 맞게 HoloLens 배포
   href: 'https://docs.microsoft.com/hololens/'
