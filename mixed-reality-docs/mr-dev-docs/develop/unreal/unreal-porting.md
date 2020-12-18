@@ -7,12 +7,12 @@ ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 설명서, 가이드, 기능, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 이식, 업그레이드
-ms.openlocfilehash: 0ba10b8ee1067da4494f147d43f8834010e1250f
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 5460ab55c887c44029e956545cf6a549f55716f7
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609664"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010624"
 ---
 # <a name="upgrading-projects-in-unreal"></a>Unreal에서 프로젝트 업그레이드
 
@@ -49,4 +49,8 @@ ms.locfileid: "96609664"
 | GetVersionString | ![Get Version String 함수의 청사진](images/unreal-porting-img-16.png) |
 | IsTrackingAvailable | ![IsTrackingAvailable 속성의 청사진](images/unreal-porting-img-17.png) |
 | IsButtonClicked, IsButtonDown, IsGrasped, IsSelectPressed | Unreal의 입력 작업 시스템을 사용합니다. |
-| SetFocusPointForFrame | 4\.26에서는 제거되었습니다.  이전에는 원격 접속 시 리프로젝션에 사용되었지만, 지금은 깊이 리프로젝션을 지원합니다. |
+| SetFocusPointForFrame | 4.26에서 제거되었습니다.  이전에는 원격 접속 시 리프로젝션에 사용되었지만, 지금은 깊이 리프로젝션을 지원합니다. |
+
+## <a name="426-changes"></a>4.26 변경 사항
+
+중요한 변경 사항은 Windows Mixed Reality 플러그 인을 시작하려면 **편집 > 프로젝트 설정 > 프로젝트 > 설명 > 설정** 에서 **VR에서 시작** 이 필수라는 점입니다. 해당 매개 변수를 사용하지 않으면 디바이스에 홀로그램이 표시되지 않습니다.

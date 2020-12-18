@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 4319b1171090b8ca7a320e98867bfb3635bab005
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 7f6f501a5e2cde9fdb6aa3ba1aa973a4ab697fd8
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609494"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010551"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. 패키징 후 디바이스 또는 에뮬레이터에 배포
 
@@ -37,7 +37,7 @@ ms.locfileid: "96609494"
 
 연결되면 **재생** 단추 오른쪽의 드롭다운 화살표를 클릭하여 **VR 미리 보기** 를 선택합니다. 그러면 HoloLens 헤드셋으로 스트리밍되는 VR 미리 보기 창에 앱이 실행됩니다.
 
-## <a name="packaging-and-deploying-the-app-via-device-portal"></a>디바이스 포털을 통해 앱 패키징 및 배포
+## <a name="packaging-and-deploying-the-app-via-device-portal"></a>장치 포털을 통해 앱 패키징 및 배포
 
 >[!NOTE]
 >HoloLens용 Unreal 앱을 처음으로 패키징하는 경우 Epic Launcher에서 지원 파일을 다운로드해야 합니다.
@@ -49,6 +49,7 @@ ms.locfileid: "96609494"
 1.  **편집 > 프로젝트 설정** 으로 이동합니다.
     * **프로젝트 > 설명 > 정보 > 프로젝트 이름** 에서 프로젝트 이름을 추가합니다.
     * **프로젝트 > 설명 > 게시자 > 회사 고유 이름** 아래에서 **CN=YourCompanyName** 을 추가합니다.
+    * **프로젝트 > 설명 > 설정** 에서 **VR에서 시작** 을 선택합니다.
 
 > [!IMPORTANT]
 > 이러한 필드 중 하나를 비워 두면 3단계에서 새 인증서를 생성하려고 할 때 오류가 발생합니다.
@@ -56,7 +57,10 @@ ms.locfileid: "96609494"
 > [!IMPORTANT]
 > 게시자의 이름은 [LADPv3 고유 이름 형식](https://www.ietf.org/rfc/rfc2253.txt)이어야 합니다. 패키지할 때 잘못된 형식의 게시자 이름으로 인해 "서명 키를 찾을 수 없습니다. 앱에 디지털 서명할 수 없습니다."라는 오류가 발생합니다.
 
-![프로젝트 설정 - 설명](images/unreal-uxt/6-cn.PNG)
+> [!IMPORTANT]
+> "VR에서 시작"을 선택하지 않으면 애플리케이션이 슬레이트에서 시작됩니다.
+
+![프로젝트 설정 - 설명](images/unreal-uxt/6-cn-new.PNG)
 
 2.  **플랫폼 > HoloLens** 에서 **HoloLens 에뮬레이션에 대해 빌드** 및/또는 **HoloLens 디바이스에 대해 빌드** 를 사용하도록 설정합니다.
 

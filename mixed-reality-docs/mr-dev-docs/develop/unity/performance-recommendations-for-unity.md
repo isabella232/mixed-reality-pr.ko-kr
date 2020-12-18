@@ -7,16 +7,16 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: 그래픽, CPU, GPU, 렌더링, 가비지 컬렉션, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 6fd12bec31bb721def8801a8f2bacb8c3cb75745
-ms.sourcegitcommit: d11275796a1f65c31dd56b44a8a1bbaae4d7ec76
+ms.openlocfilehash: 1a0509e656b7a6bf0d8d1f0b5d381b2fbdb39c2d
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761775"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010484"
 ---
 # <a name="performance-recommendations-for-unity"></a>Unity에 대한 성능 추천 사항
 
-이 문서에서는 [혼합 현실에 대한 성능 추천 사항](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)에 요약된 설명을 기반으로 하지만, Unity 엔진 환경과 관련된 학습에 집중하고 있습니다.
+이 문서에서는 [혼합 현실에 대한 성능 권장 사항](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)을 기반으로 하지만, Unity별 개선 사항을 중점적으로 다룹니다.
 
 ## <a name="use-recommended-unity-project-settings"></a>권장 Unity 프로젝트 설정 사용
 
@@ -24,7 +24,7 @@ Unity에서 혼합 현실 앱의 성능을 최적화할 때 가장 중요한 첫
 
 ## <a name="how-to-profile-with-unity"></a>Unity를 사용하여 프로파일링하는 방법
 
-Unity는 기본적으로 **[Unity 프로파일러](https://docs.unity3d.com/Manual/Profiler.html)** 를 제공하며, 이는 특정 앱에 대한 중요한 성능 인사이트를 수집할 수 있는 유용한 리소스입니다. 편집기 내에서 프로파일러를 실행할 수 있지만, 이러한 메트릭은 실제 런타임 환경을 나타내지 않으므로 해당 메트릭의 결과는 신중하게 사용해야 합니다. 가장 정확하고 실행 가능한 인사이트를 얻으려면 디바이스에서 실행하는 동안 애플리케이션을 원격으로 프로파일링하는 것이 좋습니다. 또한 Unity의 [프레임 디버거](https://docs.unity3d.com/Manual/FrameDebugger.html)도 매우 강력하고 인사이트를 제공하는 도구입니다.
+Unity는 기본적으로 **[Unity 프로파일러](https://docs.unity3d.com/Manual/Profiler.html)** 를 제공하며, 이는 특정 앱에 대한 중요한 성능 인사이트를 수집할 수 있는 유용한 리소스입니다. 편집기 내 프로파일러를 실행할 수 있지만 이러한 메트릭은 실제 런타임 환경을 나타내지 않으므로 결과를 신중하게 사용해야 합니다. 가장 정확하고 실행 가능한 인사이트를 얻으려면 디바이스에서 실행하는 동안 애플리케이션을 원격으로 프로파일링하는 것이 좋습니다. 또한 Unity의 [프레임 디버거](https://docs.unity3d.com/Manual/FrameDebugger.html)는 사용할 수 있는 강력하고 인사이트를 제공하는 도구이기도 합니다.
 
 Unity는 다음 항목에 대한 유용한 문서를 제공합니다.
 1) [Unity 프로파일러를 UWP 애플리케이션에 원격으로 연결](https://docs.unity3d.com/Manual/windowsstore-profiler.html)하는 방법
@@ -41,7 +41,7 @@ Unity는 다음 항목에 대한 유용한 문서를 제공합니다.
 
 #### <a name="cache-references"></a>캐시 참조
 
-초기화 시 모든 관련 구성 요소 및 GameObject에 대한 참조를 캐시하는 것이 좋습니다. 이는 *[GetComponent\<T>()](https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html)* 와 같은 반복 함수 호출이 포인터를 저장하는 메모리 비용보다 훨씬 더 비싸기 때문입니다. 또한 이는 매우 일반적으로 사용되는 [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html)에도 적용됩니다. *Camera.main* 은 실제로 아래의 *[FindGameObjectsWithTag()](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)* 만 사용합니다. 이는 *"MainCamera"* 태그를 사용하여 장면 그래프에서 카메라 개체를 검색하지만 많은 비용이 들어갑니다.
+*[GetComponent\<T>()](https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html)* 및 [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html)과 같은 반복적인 함수 호출이 포인터를 저장하는 메모리 비용에 비해 더 비싸기 때문에 초기화 시 모든 관련 구성 요소 및 GameObjects에 대한 참조를 캐싱하는 것이 좋습니다. . *Camera.main* 은 아래의 *[FindGameObjectsWithTag()](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)* 만 사용합니다. 이는 *"MainCamera"* 태그를 사용하여 장면 그래프에서 카메라 개체를 검색하지만 많은 비용이 들어갑니다.
 
 ```CS
 using UnityEngine;
@@ -86,7 +86,7 @@ public class ExampleClass : MonoBehaviour
 
 1) **[LINQ](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq) 사용 방지**
 
-    LINQ는 매우 깔끔하고 쉽게 읽고 쓸 수 있지만, 일반적으로 알고리즘을 수동으로 작성하는 것보다 훨씬 더 많은 계산, 특히 더 많은 메모리 할당이 필요합니다.
+    LINQ는 깨끗하고 읽기 및 쓰기가 쉬울 수 있지만 알고리즘을 수동으로 작성한 경우보다 일반적으로 더 많은 계산과 메모리가 필요합니다.
 
     ```CS
     // Example Code
@@ -102,7 +102,7 @@ public class ExampleClass : MonoBehaviour
 
 2) **일반 Unity API**
 
-    일부 Unity API는 유용하지만 실행 비용이 매우 많이 들 수 있습니다. 이러한 API 중 대부분은 전체 장면 그래프에서 일치하는 몇 가지 GameObject 목록을 찾습니다. 일반적으로 런타임에 참조를 추적하기 위해 참조를 캐시하거나 해당 GameObject에 대한 관리자 구성 요소를 구현하여 이러한 작업을 방지할 수 있습니다.
+    일부 Unity API는 유용하지만 실행 비용이 많이 들 수 있습니다. 이러한 API 중 대부분은 전체 장면 그래프에서 일치하는 몇 가지 GameObjects 목록을 찾습니다. 일반적으로 런타임에 참조를 추적하기 위해 참조를 캐싱하거나 GameObjects에 대한 관리자 구성 요소를 구현하여 이러한 작업을 방지할 수 있습니다.
 
     ```csharp
         GameObject.SendMessage()
@@ -120,7 +120,7 @@ public class ExampleClass : MonoBehaviour
 
 3) **boxing에 주의**
 
-    [boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing)은 C# 언어 및 런타임의 핵심 개념입니다. 이는 `char`, `int`, `bool` 등과 같은 값 형식 변수를 참조 형식 변수로 래핑하는 프로세스입니다. 값 형식 변수가 "boxed"가 되면 관리형 힙에 저장된 `System.Object` 내부에 래핑됩니다. 이에 따라 메모리가 할당되며, 결국에는 삭제 시 가비지 수집기에서 처리해야 합니다. 이러한 할당 및 할당 취소는 성능 비용을 발생시키며, 많은 시나리오에서 필요하지 않거나 비용이 더 저렴한 대안으로 쉽게 대체할 수 있습니다.
+    [boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing)은 C# 언어 및 런타임의 핵심 개념입니다. 이는 `char`, `int`, `bool` 등과 같은 값 형식 변수를 참조 형식 변수로 래핑하는 프로세스입니다. 값 형식 변수가 "boxed"가 되면 관리형 힙에 저장된 `System.Object`에 래핑됩니다. 메모리가 할당되며, 결국에는 삭제 시 가비지 수집기에서 처리해야 합니다. 이러한 할당 및 할당 취소는 성능 비용을 발생시키며, 많은 시나리오에서 필요하지 않거나 비용이 더 저렴한 대안으로 쉽게 대체할 수 있습니다.
 
     boxing을 방지하려면 숫자 유형과 구조체(`Nullable<T>` 포함)를 저장하는 변수, 필드 및 속성의 형식이 개체를 사용하는 대신 `int`, `float?` 또는 `MyStruct`와 같은 특정 형식의 강력한 형식이어야 합니다.  이러한 개체를 목록에 넣는 경우 `List<object>` 또는 `ArrayList`가 아닌 `List<int>`와 같은 강력한 형식의 목록을 사용해야 합니다.
 
@@ -134,11 +134,11 @@ public class ExampleClass : MonoBehaviour
 
 #### <a name="repeating-code-paths"></a>반복 코드 경로
 
-초당 여러 번 실행되는 Unity 콜백 반복 함수(예: Update) 및/또는 프레임은 매우 신중하게 작성해야 합니다. 여기서 비용이 많이 드는 작업은 성능에 크고 일관된 영향을 미칠 수 있습니다.
+초당 여러 번 실행되는 Unity 콜백 반복 함수(예: Update) 및/또는 프레임은 신중하게 작성해야 합니다. 여기서 비용이 많이 드는 작업은 성능에 크고 일관된 영향을 미칠 수 있습니다.
 
 1) **빈 콜백 함수**
 
-    아래 코드는 애플리케이션에 남겨 두는 것이 무해한 것처럼 보일 수 있지만, 특히 모든 Unity 스크립트가 이 코드 블록을 사용하여 자동으로 초기화되므로 이러한 빈 콜백은 실제로 매우 비쌀 수 있습니다. Unity는 UnityEngine 코드와 애플리케이션 코드 간에 비관리/관리 코드 경계를 넘나들며 작동합니다. 이 브리지를 통해 컨텍스트를 전환하는 것은 실행하는 작업이 없더라도 비용이 매우 많이 듭니다. 반복되는 빈 Unity 콜백이 있는 구성 요소가 포함된 100개의 GameObject가 앱에 있는 경우 특히 문제가 됩니다.
+    아래 코드는 애플리케이션에 남겨 두는 것이 무해한 것처럼 보일 수 있지만, 특히 모든 Unity 스크립트가 Update 메서드로 자동 초기화되기 때문에 이러한 빈 콜백은 비용이 많이 들 수 있습니다. Unity는 UnityEngine 코드와 애플리케이션 코드 간에 비관리/관리 코드 경계를 넘나들며 작동합니다. 이 브리지를 통해 컨텍스트를 전환하는 것은 실행하는 작업이 없더라도 비용이 매우 많이 듭니다. 반복되는 빈 Unity 콜백이 있는 구성 요소가 포함된 100개의 GameObjects가 앱에 있는 경우 특히 문제가 됩니다.
 
     ```CS
     void Update()
@@ -153,7 +153,7 @@ public class ExampleClass : MonoBehaviour
 
     다음 Unity API는 많은 홀로그램 앱의 일반적인 작업입니다. 이러한 함수의 결과는 항상 가능한 것은 아니지만 일반적으로 한 번 계산될 수 있으며, 지정된 프레임에 대해 애플리케이션 전체에서 다시 사용할 수 있습니다.
 
-    a) 일반적으로 각 구성 요소에서 반복적이고 본질적으로 동일한 Raycast 작업을 수행하는 대신, 장면에서 Raycast를 응시하도록 처리한 다음, 이 결과를 다른 모든 장면 구성 요소에서 다시 사용하는 전용 Singleton 클래스 또는 서비스를 사용하는 것이 좋습니다. 물론 일부 애플리케이션에는 다른 원본 또는 다른 [LayerMask](https://docs.unity3d.com/ScriptReference/LayerMask.html)에 대한 Raycast가 필요할 수 있습니다.
+    a) 각 구성 요소에서 반복적이고 동일한 Raycast 작업을 수행하는 대신, 장면에서 Raycast를 응시하도록 처리한 다음, 이 결과를 다른 모든 장면 구성 요소에서 다시 사용하는 전용 Singleton 클래스 또는 서비스를 사용하는 것이 좋습니다. 일부 애플리케이션에는 다른 원본 또는 다른 [LayerMask](https://docs.unity3d.com/ScriptReference/LayerMask.html)에 대한 Raycast가 필요할 수 있습니다.
     
     ```csharp
         UnityEngine.Physics.Raycast()
@@ -166,7 +166,7 @@ public class ExampleClass : MonoBehaviour
         UnityEngine.Object.GetComponent()
     ```
 
-    c) 가능한 경우 초기화 시 모든 개체를 인스턴스화하고 [개체 풀링](#object-pooling)을 사용하여 애플리케이션의 런타임 전체에서 GameObject를 재활용하고 다시 사용하는 것이 좋습니다.
+    c) 가능한 경우 초기화 시 모든 개체를 인스턴스화하고 [개체 풀링](#object-pooling)을 사용하여 애플리케이션의 런타임 전체에서 GameObjects를 재활용하고 다시 사용하는 것이 좋습니다.
 
     ```csharp
         UnityEngine.Object.Instantiate()
@@ -174,21 +174,21 @@ public class ExampleClass : MonoBehaviour
 
 3) **인터페이스 및 가상 구문 사용 방지**
 
-    직접 개체보다 인터페이스를 통해 함수 호출을 호출하거나 가상 함수를 호출하는 경우 종종 직접 구문 또는 직접 함수 호출을 활용하는 것보다 훨씬 더 비쌀 수 있습니다. 가상 함수 또는 인터페이스가 필요하지 않은 경우 이를 제거해야 합니다. 그러나 이러한 방법의 성능 결과는 이를 활용하여 개발 협업, 코드 가독성 및 코드 유지 관리가 간소화되는 경우 일반적으로 절충할 만한 가치가 있습니다.
+    직접 개체보다 인터페이스를 통해 함수 호출을 호출하거나 가상 함수를 호출하는 경우 종종 직접 구문 또는 직접 함수 호출을 활용하는 것보다 훨씬 비용이 많이 들 수 있습니다. 가상 함수 또는 인터페이스가 필요하지 않은 경우 이를 제거해야 합니다. 그러나 이러한 방법의 성능 결과는 이를 사용하여 개발 협업, 코드 가독성 및 코드 유지 관리가 간소화되는 경우 절충할 만한 가치가 있습니다.
 
     일반적으로 이 멤버를 덮어쓸 필요가 있는 경우에만 필드 및 함수를 가상으로 표시하는 것이 좋습니다. `UpdateUI()` 메서드와 같이 프레임당 여러 번 또는 한 번 호출되는 빈도가 높은 코드 경로에서는 특히 주의해야 합니다.
 
 4) **값으로 구조체 전달 방지**
 
-    클래스와 달리 구조체는 값 형식이며, 함수에 직접 전달되면 해당 내용이 새로 만든 인스턴스에 복사됩니다. 이 복사본으로 인해 CPU 비용과 스택의 추가 메모리가 추가됩니다. 작은 구조체의 경우 효과가 매우 작으므로 일반적으로 허용됩니다. 그러나 모든 프레임을 반복적으로 호출하는 함수와 큰 구조체를 사용하는 함수의 경우 가능하면 함수 정의를 참조로 전달하도록 수정합니다. [여기서 자세히 알아보세요.](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
+    클래스와 달리 구조체는 값 형식이며, 함수에 직접 전달되면 해당 내용이 새로 만든 인스턴스에 복사됩니다. 이 복사본으로 인해 CPU 비용과 스택의 추가 메모리가 추가됩니다. 작은 구조체의 경우 효과가 최소화되므로 허용됩니다. 그러나 모든 프레임을 반복적으로 호출하는 함수와 큰 구조체를 사용하는 함수의 경우 가능하면 함수 정의를 참조로 전달하도록 수정합니다. [여기서 자세히 알아보세요.](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
 
 #### <a name="miscellaneous"></a>기타
 
 1) **Physics**
 
-    a) 일반적으로 물리학을 향상시키는 가장 쉬운 방법은 Physics에 소요되는 시간 또는 초당 반복 횟수를 제한하는 것입니다. 물론 이렇게 하면 시뮬레이션 정확도가 떨어집니다. Unity의 [TimeManager](https://docs.unity3d.com/Manual/class-TimeManager.html)를 참조하세요.
+    a) 일반적으로 물리학을 향상시키는 가장 쉬운 방법은 Physics에 소요되는 시간 또는 초당 반복 횟수를 제한하는 것입니다. 이렇게 하면 시뮬레이션 정확도가 떨어집니다. Unity의 [TimeManager](https://docs.unity3d.com/Manual/class-TimeManager.html)를 참조하세요.
 
-    b) Unity의 collider 형식에는 매우 다양한 성능 특징이 있습니다. 아래 순서는 왼쪽에는 성능이 가장 높은 collider, 오른쪽에는 성능이 가장 낮은 collider의 순서로 나열되어 있습니다. 기본 collider보다 실질적으로 더 비싼 Mesh collider를 사용하지 않도록 방지하는 것이 가장 중요합니다.
+    b) Unity의 collider 형식에는 매우 다양한 성능 특징이 있습니다. 아래 순서는 왼쪽에는 성능이 가장 높은 collider, 오른쪽에는 성능이 가장 낮은 collider의 순서로 나열되어 있습니다. 기본 collider보다 실질적으로 더 비싼 메시 collider를 사용하지 않도록 방지하는 것이 중요합니다.
 
     구 < 캡슐 < 상자 < 볼록 <<< 메시(볼록) < 메시(비볼록)
 
@@ -211,7 +211,7 @@ Unity에는 개요를 제공하고 플랫폼에 대한 그리기 호출 일괄 �
 
 #### <a name="single-pass-instanced-rendering"></a>인스턴스화된 단일 패스 렌더링
 
-Unity에서 인스턴스화된 단일 패스 렌더링을 사용하면 각 눈에 대한 그리기 호출을 하나의 인스턴스화된 그리기 호출로 줄일 수 있습니다. 두 그리기 호출 간의 캐시 일관성으로 인해 GPU에서도 성능이 약간 향상됩니다.
+Unity에서 인스턴스화된 단일 패스 렌더링을 사용하면 각 눈에 대한 그리기 호출을 하나의 인스턴스화된 그리기 호출로 줄일 수 있습니다. 두 그리기 호출 간의 캐시 일관성 때문에 GPU에서도 성능이 약간 향상됩니다.
 
 Unity 프로젝트에서 이 기능을 사용하도록 설정하려면 다음을 수행합니다.
 1)  **플레이어 XR 설정** 을 엽니다(**편집** > **프로젝트 설정** > **플레이어** > **XR 설정** 으로 차례로 이동).
@@ -222,30 +222,30 @@ Unity 프로젝트에서 이 기능을 사용하도록 설정하려면 다음을
 - [단일 패스 인스턴스화](https://docs.unity3d.com/Manual/SinglePassInstancing.html) 
 
 >[!NOTE]
-> 인스턴스화된 단일 패스 렌더링의 일반적인 문제 중 하나는 개발자에게 인스턴스화에 맞게 작성되지 않은 기존 사용자 지정 셰이더가 이미 있는 경우에 발생합니다. 이 기능을 사용하도록 설정하면 개발자가 일부 GameObject를 한쪽 눈에만 렌더링한다는 것을 알 수 있습니다. 이는 인스턴스화에 적절한 속성이 연결된 사용자 지정 셰이더에 없기 때문입니다.
+> 인스턴스화된 단일 패스 렌더링의 일반적인 문제 중 하나는 개발자에게 인스턴스화에 맞게 작성되지 않은 기존 사용자 지정 셰이더가 이미 있는 경우에 발생합니다. 이 기능을 사용하도록 설정하면 개발자가 일부 GameObjects를 한쪽 눈에만 렌더링한다는 것을 알 수 있습니다. 이는 인스턴스화에 적절한 속성이 연결된 사용자 지정 셰이더에 없기 때문입니다.
 >
 > 이 문제를 해결하는 방법은 Unity의 [HoloLens에 대한 단일 패스 스테레오 렌더링](https://docs.unity3d.com/Manual/SinglePassStereoRenderingHoloLens.html)을 참조하세요.
 
 #### <a name="static-batching"></a>정적 일괄 처리
 
-Unity는 많은 정적 개체를 일괄 처리하여 GPU에 대한 그리기 호출을 줄일 수 있습니다. 정적 일괄 처리는 **1) 동일한 재질을 공유** 하고 **2) 모두 *Static* 으로 표시** 되는 Unity의 [Renderer](https://docs.unity3d.com/ScriptReference/Renderer.html) 개체 대부분에서 작동합니다(Unity에서 개체를 선택하고 검사기 오른쪽 위의 확인란을 클릭함). *Static* 으로 표시된 GameObject는 애플리케이션의 런타임 전체에서 이동할 수 없습니다. 따라서 정적 일괄 처리는 거의 모든 개체를 배치, 이동, 크기 조정해야 하는 HoloLens에서 활용하기가 어려울 수 있습니다. 몰입형 헤드셋의 경우 정적 일괄 처리를 통해 그리기 호출을 크게 줄여 성능을 향상시킬 수 있습니다.
+Unity는 많은 정적 개체를 일괄 처리하여 GPU에 대한 그리기 호출을 줄일 수 있습니다. 정적 일괄 처리는 **1) 동일한 재질을 공유** 하고 **2) 모두 *Static* 으로 표시** 되는 Unity의 [Renderer](https://docs.unity3d.com/ScriptReference/Renderer.html) 개체 대부분에서 작동합니다(Unity에서 개체를 선택하고 검사기 오른쪽 위의 확인란을 선택함). *Static* 으로 표시된 GameObjects는 애플리케이션의 런타임 전체에서 이동할 수 없습니다. 따라서 정적 일괄 처리는 거의 모든 개체를 배치, 이동, 크기 조정해야 하는 HoloLens에서 활용하기가 어려울 수 있습니다. 몰입형 헤드셋의 경우 정적 일괄 처리를 통해 그리기 호출을 크게 줄여 성능을 향상시킬 수 있습니다.
 
 자세한 내용은 [Unity의 그리기 호출 일괄 처리](https://docs.unity3d.com/Manual/DrawCallBatching.html)에서 *정적 일괄 처리* 를 참조하세요.
 
 #### <a name="dynamic-batching"></a>동적 일괄 처리
 
-HoloLens 개발에 대해 개체를 *Static* 으로 표시하는 것은 문제가 있으므로 동적 일괄 처리는 이러한 부족한 기능을 보완하는 훌륭한 도구가 될 수 있습니다. 물론, 그것은 또한 몰입형 헤드셋에도 유용할 수 있습니다. 그러나 GameObject는 **a) 동일한 Material을 공유** 하고 **b) 다른 기준의 긴 목록을 충족** 해야 하므로 Unity에서 동적 일괄 처리를 사용하도록 설정하기는 어려울 수 있습니다.
+HoloLens 개발에 대해 개체를 *Static* 으로 표시하는 것은 문제가 있으므로 동적 일괄 처리는 이러한 부족한 기능을 보완하는 훌륭한 도구가 될 수 있습니다. 이는 또한 몰입형 헤드셋에도 유용할 수 있습니다. 그러나 GameObjects는 **a) 동일한 Material을 공유** 하고 **b) 다른 기준의 긴 목록을 충족** 해야 하므로 Unity에서 동적 일괄 처리를 사용하도록 설정하기는 어려울 수 있습니다.
 
-자세한 내용은 [Unity의 그리기 호출 일괄 처리](https://docs.unity3d.com/Manual/DrawCallBatching.html)에서 *동적 일괄 처리* 를 참조하세요. 가장 일반적으로 연결된 메시 데이터에는 꼭짓점이 300개 이하이므로 GameObject는 동적으로 일괄 처리할 수 없습니다.
+자세한 내용은 [Unity의 그리기 호출 일괄 처리](https://docs.unity3d.com/Manual/DrawCallBatching.html)에서 *동적 일괄 처리* 를 참조하세요. 가장 일반적으로 연결된 메시 데이터에는 꼭짓점이 300개 이하이므로 GameObjects는 동적으로 일괄 처리할 수 없습니다.
 
 #### <a name="other-techniques"></a>기타 기술
 
-여러 GameObject에서 동일한 재질을 공유할 수 있는 경우에만 일괄 처리를 수행할 수 있습니다. 일반적으로 GameObject에는 각 Material에 고유한 질감이 있어야 하므로 이 기술이 차단됩니다. Texture를 하나의 큰 Texture로 결합하는 것이 일반적이며, 이를 [질감 아틀라싱(Texture Atlasing)](https://en.wikipedia.org/wiki/Texture_atlas)이라고 합니다.
+여러 GameObjects에서 동일한 재질을 공유할 수 있는 경우에만 일괄 처리를 수행할 수 있습니다. 일반적으로 GameObjects에는 각 Material에 고유한 질감이 있어야 하므로 이 기술이 차단됩니다. Texture를 하나의 큰 Texture로 결합하는 것이 일반적이며, 이를 [질감 아틀라싱(Texture Atlasing)](https://en.wikipedia.org/wiki/Texture_atlas)이라고 합니다.
 
-또한 일반적으로 메시를 가능하고 합리적인 하나의 GameObject에 결합하는 것이 좋습니다. 하나의 Renderer 아래에 결합된 메시를 제출하는 것과 비교하여 Unity의 각 Renderer에는 연결된 그리기 호출이 있습니다.
+또한 가능하고 합리적인 경우 메시를 하나의 GameObject로 결합하는 것이 좋습니다. 하나의 Renderer 아래에 결합된 메시를 제출하는 것과 비교하여 Unity의 각 Renderer에는 연결된 그리기 호출이 있습니다.
 
 >[!NOTE]
-> 런타임에 Renderer.material의 속성을 수정하면 Material의 복사본이 만들어지고 이로 인해 일괄 처리가 중단될 수 있습니다. Renderer.sharedMaterial을 사용하여 GameObject에서 공유 재질 속성을 수정합니다.
+> 런타임에 Renderer.material의 속성을 수정하면 Material의 복사본이 만들어지고 이로 인해 일괄 처리가 중단될 수 있습니다. Renderer.sharedMaterial을 사용하여 GameObjects에서 공유 재질 속성을 수정합니다.
 
 ## <a name="gpu-performance-recommendations"></a>GPU 성능 추천 사항
 
@@ -253,7 +253,7 @@ HoloLens 개발에 대해 개체를 *Static* 으로 표시하는 것은 문제�
 
 ### <a name="optimize-depth-buffer-sharing"></a>깊이 버퍼 공유 최적화
 
-일반적으로 **플레이어 XR 설정** 아래에서 **깊이 버퍼 공유** 를 사용하도록 설정하여 [홀로그램 안정성](../platform-capabilities-and-apis/Hologram-stability.md)을 최적화하는 것이 좋습니다. 그러나 이 설정을 사용하여 깊이 기반 후기 단계 리프로젝션을 사용하도록 설정할 경우 **24비트 깊이 형식** 대신 **16비트 깊이 형식** 을 선택하는 것이 좋습니다. 16비트 깊이 버퍼는 깊이 버퍼 트래픽과 관련된 대역폭(이에 따라 전력)을 크게 줄입니다. 이는 전력 감소와 성능 향상 모두에서 큰 결과를 얻을 수 있습니다. 그러나 *16비트 깊이 형식* 을 사용하면 두 측면에서 모두 부정적인 결과가 발생할 수 있습니다.
+**플레이어 XR 설정** 아래에서 **깊이 버퍼 공유** 를 사용하도록 설정하여 [홀로그램 안정성](../platform-capabilities-and-apis/Hologram-stability.md)을 최적화하는 것이 좋습니다. 그러나 이 설정을 사용하여 깊이 기반 후기 단계 리프로젝션을 사용하도록 설정할 경우 **24비트 깊이 형식** 대신 **16비트 깊이 형식** 을 선택하는 것이 좋습니다. 16비트 깊이 버퍼는 깊이 버퍼 트래픽과 관련된 대역폭(이에 따라 전력)을 크게 줄입니다. 이는 전력 감소와 성능 향상 모두에서 큰 결과를 얻을 수 있습니다. 그러나 *16비트 깊이 형식* 을 사용하면 두 측면에서 모두 부정적인 결과가 발생할 수 있습니다.
 
 **Z-Fighting**
 
@@ -265,11 +265,11 @@ Unity에서 [16비트 깊이의 렌더링 질감](https://docs.unity3d.com/Scrip
 
 ### <a name="avoid-full-screen-effects"></a>전체 화면 효과 사용 방지
 
-각 프레임의 크기에서 수백만 개의 작업을 요구하므로 전체 화면에서 작동하는 기술에는 비용이 많이 들 수 있습니다. 따라서 앤티 앨리어싱, 블룸 등과 같은 [후 처리 효과](https://docs.unity3d.com/Manual/PostProcessingOverview.html)를 사용하지 않도록 방지하는 것이 좋습니다.
+각 프레임의 크기에서 수백만 개의 작업을 요구하므로 전체 화면에서 작동하는 기술에는 비용이 많이 들 수 있습니다. 앤티앨리어싱, 블룸 등과 같은 [후 처리 효과](https://docs.unity3d.com/Manual/PostProcessingOverview.html)를 사용하지 않도록 방지하는 것이 좋습니다.
 
 ### <a name="optimal-lighting-settings"></a>최적 조명 설정
 
-Unity의 [실시간 글로벌 조명](https://docs.unity3d.com/Manual/GIIntro.html)은 뛰어난 시각적 결과를 제공할 수 있지만 상당히 비싼 조명 계산이 수반됩니다. **창** > **렌더링** > **조명 설정** > **실시간 글로벌 조명** 선택 취소를 통해 모든 Unity 장면 파일에 대해 실시간 글로벌 조명을 사용하지 않도록 설정하는 것이 좋습니다.
+Unity의 [실시간 글로벌 조명](https://docs.unity3d.com/Manual/GIIntro.html)은 뛰어난 시각적 결과를 제공할 수 있지만 비용이 많이 드는 조명 계산이 필요합니다. **창** > **렌더링** > **조명 설정** > **실시간 글로벌 조명** 선택 취소를 통해 모든 Unity 장면 파일에 대해 실시간 글로벌 조명을 사용하지 않는 것이 좋습니다.
 
 또한 이 기술은 Unity 장면에 비용이 많이 드는 GPU 패스를 추가하므로 모든 섀도 캐스팅을 사용하지 않도록 설정하는 것이 좋습니다. 섀도는 조명별로 사용하지 않도록 설정할 수 있지만 품질 설정을 통해 전체적으로 제어할 수도 있습니다.
 
@@ -279,7 +279,7 @@ Unity의 모델에서 굽기 조명을 사용하는 것이 좋습니다.
 
 ### <a name="reduce-poly-count"></a>다각형 수 감소
 
-다각형 수는 일반적으로 다음 방법 중 하나를 사용하여 줄어듭니다.
+다각형 수는 다음 중 하나를 수행하면 줄어듭니다.
 1) 장면에서 개체 제거
 2) 지정된 메시의 다각형 수를 줄이는 자산 부분 제거
 3) 동일한 기하 도형의 낮은 다각형 버전을 사용하여 멀리 떨어진 개체를 렌더링하는 애플리케이션에 [LOD(세부 정보 수준) 시스템](https://docs.unity3d.com/Manual/LevelOfDetail.html) 구현
@@ -291,7 +291,7 @@ Unity의 모델에서 굽기 조명을 사용하는 것이 좋습니다.
 1) 셰이더 자산을 선택하거나 재질을 선택한 다음, 검사기 창의 오른쪽 위 모서리에서 기어 아이콘을 선택한 다음, **"셰이더 선택"** 을 선택합니다.
 
     ![Unity에서 셰이더 선택](images/Select-shader-unity.png)
-2) 셰이더 자산을 선택한 상태에서 검사기 창 아래쪽에서 **"코드 컴파일 및 표시"** 단추를 클릭합니다.
+2) 셰이더 자산을 선택한 상태에서 검사기 창 아래쪽에서 **"코드 컴파일 및 표시"** 단추를 선택합니다.
 
     ![Unity에서 셰이더 코드 컴파일](images/compile-shader-code-unity.PNG)
 
@@ -311,7 +311,7 @@ Unity의 모델에서 굽기 조명을 사용하는 것이 좋습니다.
 
 PBR(물리적 기반 렌더링) 또는 다른 고품질 셰이더를 사용하는 대신, 성능이 더 뛰어나고 저렴한 셰이더를 활용하는 방법을 살펴봅니다. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)는 혼합 현실 프로젝트에 최적화된 [MRTK 표준 셰이더](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)를 제공합니다.
 
-또한 Unity는 Unity 표준 셰이더에 비해 훨씬 빠른 unlit(꺼짐), vertex lit(꼭짓점 깜박임), diffuse(확산) 및 간소화된 다른 셰이더 옵션을 제공합니다. 자세한 내용은 [기본 제공 셰이더 사용 및 성능](https://docs.unity3d.com/Manual/shader-Performance.html)을 참조하세요.
+또한 Unity는 Unity 표준 셰이더에 비해 더 빠른 unlit(꺼짐), vertex lit(꼭짓점 깜박임), diffuse(확산) 및 간소화된 다른 셰이더 옵션을 제공합니다. 자세한 내용은 [기본 제공 셰이더 사용 및 성능](https://docs.unity3d.com/Manual/shader-Performance.html)을 참조하세요.
 
 #### <a name="shader-preloading"></a>셰이더 미리 로드
 
@@ -327,14 +327,14 @@ Unity에서 **장면 보기** 의 왼쪽 위 모서리에서 [**그리기 모드
 
 과도한 메모리 할당 및 할당 취소 작업은 홀로그램 애플리케이션에 부정적인 영향을 줄 수 있으므로 일관성 없는 성능, 고정된 프레임 및 기타 부정적인 동작이 발생할 수 있습니다. 메모리 관리는 가비지 수집기를 통해 제어되므로 Unity에서 개발하는 경우 메모리 고려 사항을 이해하는 것이 특히 중요합니다.
 
-#### <a name="garbage-collection"></a>가비지 컬렉션
+#### <a name="garbage-collection"></a>가비지 수집
 
-실행 중에 더 이상 범위에 있지 않은 개체를 분석하기 위해 GC를 활성화하고 메모리를 해제해야 할 때 홀로그램 앱에서 GC(가비지 수집기)에 대한 처리 컴퓨팅 시간을 상실하여 다시 사용할 수 있도록 설정할 수 있습니다. 지속적인 할당 및 할당 취소는 일반적으로 가비지 수집기를 더 자주 실행해야 하므로 성능과 사용자 환경이 저하됩니다.
+실행 중에 더 이상 범위에 있지 않은 개체를 분석하기 위해 GC를 활성화하고 메모리를 해제해야 할 때 홀로그램 앱에서 GC(가비지 수집기)에 대한 처리 컴퓨팅 시간을 잃게 되기 때문에, 다시 사용할 수 있도록 설정할 수 있습니다. 지속적인 할당 및 할당 취소는 일반적으로 가비지 수집기를 더 자주 실행해야 하므로 성능과 사용자 환경이 저하됩니다.
 
 Unity는 가비지 수집기의 작동 방식 및 메모리 관리와 관련된 더 효율적인 코드를 작성하기 위한 팁을 자세히 설명하는 매우 유용한 페이지를 제공합니다.
 - [Unity 게임에서 가비지 컬렉션 최적화](https://unity3d.com/learn/tutorials/topics/performance-optimization/optimizing-garbage-collection-unity-games?playlist=44069)
 
-과도한 가비지 컬렉션으로 이어지는 가장 일반적인 사례 중 하나는 Unity 개발에서 구성 요소 및 클래스에 대한 참조를 캐시하지 않는 것입니다. 모든 참조는 Start() 또는 Awake() 중에 캡처되고, Update() 또는 LateUpdate()와 같은 이후 함수에서 다시 사용되어야 합니다.
+과도한 가비지 컬렉션으로 이어지는 가장 일반적인 사례 중 하나는 Unity 개발에서 구성 요소 및 클래스에 대한 참조를 캐싱하지 않는 것입니다. 모든 참조는 Start() 또는 Awake() 중에 캡처되고, Update() 또는 LateUpdate()와 같은 이후 함수에서 다시 사용되어야 합니다.
 
 기타 빠른 팁:
 - 런타임에 복잡한 문자열을 동적으로 빌드하려면 [StringBuilder](https://docs.microsoft.com/dotnet/api/system.text.stringbuilder) C# 클래스를 사용합니다.
@@ -343,13 +343,13 @@ Unity는 가비지 수집기의 작동 방식 및 메모리 관리와 관련된 
 
 #### <a name="object-pooling"></a>개체 풀링
 
-개체 풀링은 개체의 지속적인 할당 및 할당 취소에 드는 비용을 줄이는 데 널리 사용되는 기술입니다. 이 작업을 수행하려면 시간이 지남에 따라 개체를 지속적으로 만들고 삭제하는 대신, 동일한 개체의 대량 풀을 할당하고 이 풀에서 사용 가능한 비활성 인스턴스를 다시 사용합니다. 개체 풀은 앱 중에 수명이 가변적인 다시 사용할 수 있는 구성 요소에 적합합니다.
+개체 풀링은 지속적인 개체 할당 및 할당 취소에 드는 비용을 줄이는 데 널리 사용되는 기술입니다. 이 작업을 수행하려면 시간이 지남에 따라 개체를 지속적으로 만들고 삭제하는 대신, 동일한 개체의 대량 풀을 할당하고 이 풀에서 사용 가능한 비활성 인스턴스를 다시 사용합니다. 개체 풀은 앱 중에 수명이 가변적인 다시 사용할 수 있는 구성 요소에 적합합니다.
 
 - [Unity의 개체 풀링 자습서](https://unity3d.com/learn/tutorials/topics/scripting/object-pooling) 
 
 ## <a name="startup-performance"></a>시작 성능
 
-앱을 더 작은 장면으로 시작한 다음, *[SceneManager.LoadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html)* 를 사용하여 나머지 장면을 로드하는 것이 좋습니다. 이렇게 하면 앱이 최대한 빨리 대화형 상태로 전환될 수 있습니다. 새 장면이 활성화되는 동안 높은 CPU 스파이크가 발생할 수 있으며 렌더링된 콘텐츠가 끊기거나 길이가 조정될 수 있습니다. 이 문제를 해결하는 한 가지 방법은 로드되는 장면에서 AsyncOperation.allowSceneActivation 속성을 "false"로 설정하고, 장면이 로드될 때까지 기다리고, 화면을 검은색으로 지운 다음, "true"로 다시 설정하여 장면 활성화를 완료하는 것입니다.
+앱을 더 작은 장면으로 시작한 다음, *[SceneManager.LoadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html)* 를 사용하여 나머지 장면을 로드하는 것을 고려합니다. 이렇게 하면 앱이 최대한 빨리 대화형 상태로 전환될 수 있습니다. 새 장면이 활성화되는 동안 높은 CPU 스파이크가 발생할 수 있으며 렌더링된 콘텐츠가 끊기거나 장애가 발생할 수 있습니다. 이 문제를 해결하는 한 가지 방법은 로드되는 장면에서 AsyncOperation.allowSceneActivation 속성을 "false"로 설정하고, 장면이 로드될 때까지 기다렸다가, 화면을 검은색으로 지운 다음, "true"로 다시 설정하여 장면 활성화를 완료하는 것입니다.
 
 시작 장면을 로드하는 동안 사용자에게 홀로그램 시작 화면이 표시됩니다.
 

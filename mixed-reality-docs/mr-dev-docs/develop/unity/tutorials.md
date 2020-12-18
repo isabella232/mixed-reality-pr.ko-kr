@@ -8,14 +8,14 @@ ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, unity, unreal, HoloLens, Azure spatial anchors, Azure Speech Services
-ms.openlocfilehash: 0e3b1749790e3c372570bdd1d8e68fe3fd593dd8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a85792ba082450fb01f3c6f7bb008d3c7b17560b
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677282"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010464"
 ---
-# <a name="tutorials"></a>자습서 
+# <a name="tutorials"></a>자습서
 
 ![HoloLens 2 사용자](images/08_Tutorials.png)
 
@@ -23,7 +23,7 @@ ms.locfileid: "94677282"
 
 ## <a name="hololens-2"></a>HoloLens 2 
 
-HoloLens 2 자습서는 개발자가 혼합 현실 애플리케이션을 개발하기 위한 기술과 모범 사례를 모두 익힐 수 있도록 설계되었습니다. Unity 자습서는 [Mixed Reality Toolkit 2.0(MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity)를 기반으로 하며, Unreal 자습서는 [UX Tools for Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal)을 기반으로 합니다.
+HoloLens 2 자습서는 개발자가 혼합 현실 애플리케이션을 개발하기 위한 기술과 모범 사례를 교육하기 위해 설계되었습니다. Unity 자습서는 [Mixed Reality Toolkit 2.0(MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity)를 기반으로 하며, Unreal 자습서는 [UX Tools for Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal)을 기반으로 합니다.
 
 * 시작 자습서
     * Unity(총 9부) - [1 소개](tutorials/mr-learning-base-01.md)
@@ -198,7 +198,7 @@ Mixed Reality 아카데미는 해당 프로젝트 파일을 사용하는 일단�
                                           </div>
                                           <div class="cardText">
                                               <h3>MR 및 Azure 304: 얼굴 인식</h3>
-                                              <p>Azure Face API를 사용하여 혼합 현실 앱에서 얼굴 감지 및 인식을 수행하는 방법을 알아봅니다.</p>
+                                              <p>혼합 현실 앱에서 얼굴 감지 및 인식을 위해 Azure Face API를 사용하는 방법을 알아봅니다.</p>
                                           </div>
                                       </div>
                                   </div>

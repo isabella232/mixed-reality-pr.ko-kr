@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 465215efd953c0acb9f2d80a2905ee06963c5f8c
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 71a3edbc00c315ca68ac56985c54faee2492d74d
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609724"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010532"
 ---
 # <a name="1-getting-started"></a>1. 시작
 
@@ -33,20 +33,27 @@ ms.locfileid: "96609724"
 * Windows 10 1809 이상
 * Windows 10 SDK 10.0.18362.0 이상
 * [Unreal Engine](https://www.unrealengine.com/en-US/get-now) 4.25 이상
-* [개발용으로 구성된](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode) Microsoft HoloLens 2 디바이스 또는 에뮬레이터
+* [개발용으로 구성된](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode) Microsoft HoloLens 2 디바이스 또는 [에뮬레이터](../../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-2-emulator-overview)
 * Visual Studio 2019(아래 워크로드 포함)
 
 ### <a name="installing-visual-studio-2019"></a>Visual Studio 2019 설치
 
 먼저 다음과 같은 필수 Visual Studio 패키지를 모두 사용하여 설정을 확인합니다.
 1. 최신 버전의 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)를 다운로드합니다.
-2. 다음 [워크로드](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads)를 설치합니다.
+1. 다음 [워크로드](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads)를 설치합니다.
     * C++를 사용한 데스크톱 개발
     * .NET 데스크톱 개발
     * 유니버설 Windows 플랫폼 개발
+1. 유니버설 Windows 플랫폼 개발을 확장하고 다음을 선택합니다. 
+    * USB 디바이스 연결
+    * C++(v142) 유니버설 Windows 플랫폼 도구
 
-3. 다음 [구성 요소](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-individual-components)를 설치합니다.
+1. 다음 [구성 요소](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-individual-components)를 설치합니다.
     * 컴파일러, 빌드 도구 및 런타임 > MSVC v142 - VS 2019 C++ ARM64 빌드 도구(최신 버전)
+
+다음 그림을 통해 설치를 확인할 수 있습니다.
+
+![VS 설치 관리자의 중요한 틱](images/unreal-uxt/1-install-the-tools.png)
 
 간단하죠. 체스 프로젝트를 시작할 준비가 되었습니다.
 

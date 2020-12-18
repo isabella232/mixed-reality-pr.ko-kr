@@ -3,16 +3,16 @@ title: Mixed Reality 시작
 description: 혼합 현실을 처음 접하는 분들이 혼합 현실이란 무엇이며 어떤 기능이 있는지 이해하는 데 도움이 됩니다.
 author: grbury
 ms.author: grbury
-ms.date: 07/29/2020
+ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 검색, 배포, 인덱스, 방문 페이지, 디자인, 개발, 자습서, 샘플 앱, 기본 사항, 사례 연구, 리소스, HoloLens 방법, 오픈 소스 프로젝트, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: c085a60f78ef68e2139b8cc3dd2fdae24bce2a52
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ef39848fea512df9fa61ca4d538354e11fb8e042
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702273"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926056"
 ---
 # <a name="get-started-with-mixed-reality"></a>Mixed Reality 시작
 
@@ -60,6 +60,7 @@ Mixed Reality 에코시스템은 상상력에 의해서만 제한되는 물리�
 | --- | --- |
 | [스펙트럼으로서의 혼합 현실](../discover/mixed-reality.md) | 혼합 현실은 물리적 환경과 디지털 환경을 혼합하여 인간, 컴퓨터 및 환경 상호 작용의 차세대 진화를 구현합니다. |
 | [홀로그램이란?](../discover/hologram.md) | HoloLens를 사용하면 빛과 소리로 만든 개체가 마치 실제 개체인 것처럼 주변 세계에 나타나는 홀로그램을 만들 수 있습니다. 홀로그램은 응시, 제스처 및 음성 명령에 응답하고, 주변의 실제 세계 표면과 상호 작용할 수 있습니다. |
+| [Mixed Reality 학습 개요](mr-learning-overview.md#general-modules) | Microsoft Learn을 통해 큐레이트된 Mixed Reality 모듈 사용해보기 |
 | [디자인 프로세스 확장](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | 몰입형 환경을 만들 때 공간적 사고, 바디스토밍(bodystorming) 및 동작을 사용하여 디자인 사고 방식을 확장합니다.  |
 
 <br>

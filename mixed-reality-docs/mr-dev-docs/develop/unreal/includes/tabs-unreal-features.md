@@ -1,20 +1,22 @@
 ---
-ms.openlocfilehash: be2bbcc7e20a005ecb91228cdfa36b20f56acb33
-ms.sourcegitcommit: f31f3a54c7c46e21884d62b4a696acf122a3c2b9
+ms.openlocfilehash: 31f11712c2f1cbe7e6726ecf5a83ccd31a2e616e
+ms.sourcegitcommit: 0509cf6c57067cffd75a0189106e3369e9ecc5c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96781972"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96912297"
 ---
 # <a name="426"></a>[4.26](#tab/ue426)
 
 최신 Unreal Engine 4.26 릴리스에는 다음이 포함됩니다.
-* OpenXR 지원
-* Microsoft의 공급업체별 OpenXR 확장이 포함된 [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) 플러그 인 지원
+* 새로운 [디바이스 간 XR API](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-porting) 지원
+* OpenXR 지원 + [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) 플러그 인 
 * 고성능 비디오 재생을 위한 HoloLens Media Player 플러그 인
 * iOS 및 Android용 Azure Spatial Anchors(베타)
-* Azure에서 HoloLens 2로 스트리밍
+* 원격 사용 시 역방향 연결을 지원하여 Azure에서 HoloLens 2로 스트리밍 가능
+* HoloLens 2 시스템 키보드 액세스
 * 패키지에 포함된 앱에 대한 Windows 앱 인증 키트 규정 준수
+* HoloLens 2에 대한 Unreal Insights 지원
 * HP Reverb G2 컨트롤러 지원
 
 자세한 내용은 Unreal Engine 4.26 <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_26/index.html" target="_blank" title="Unreal Engine 4.26 릴리스 정보">릴리스 정보</a>를 참조하세요. 

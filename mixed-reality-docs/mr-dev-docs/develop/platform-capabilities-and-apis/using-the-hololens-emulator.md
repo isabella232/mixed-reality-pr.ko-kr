@@ -1,18 +1,18 @@
 ---
 title: HoloLens 에뮬레이터 사용
 description: HoloLens 에뮬레이터를 사용하면 실제 HoloLens 없이 PC에서 혼합 현실 앱을 테스트할 수 있습니다.
-author: pbarnettms
-ms.author: pbarnett
+author: hamalawi
+ms.author: moelhama
 ms.date: 10/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, 에뮬레이터
-ms.openlocfilehash: 702fb18d22808cb23fa5b31ac19b50645f86efe6
-ms.sourcegitcommit: 5bf2121490b7b76135f52d41216330023745f54c
+ms.openlocfilehash: e6dc8a7d38d5c7c9575723446350ee087a69dc18
+ms.sourcegitcommit: 0509cf6c57067cffd75a0189106e3369e9ecc5c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92001471"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96855910"
 ---
 # <a name="using-the-hololens-emulator"></a>HoloLens 에뮬레이터 사용
 
@@ -28,7 +28,7 @@ HoloLens 에뮬레이터를 사용하면 실제 HoloLens 없이 PC에서 홀로�
 HoloLens 에뮬레이터를 다운로드합니다.
 
 버전:
-* [HoloLens 2 에뮬레이터(Windows Holographic, 버전 2004, 2020년 10월 업데이트)](https://go.microsoft.com/fwlink/?linkid=2145829).
+* [HoloLens 2 에뮬레이터(Windows Holographic 버전 20H2, 2020년 12월 업데이트)](https://go.microsoft.com/fwlink/?linkid=2151523).
 * [HoloLens 에뮬레이터(1세대) 및 홀로그램 프로젝트 템플릿](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 HoloLens 에뮬레이터의 릴리스 정보 및 이전 빌드는 [HoloLens 에뮬레이터 아카이브](hololens-emulator-archive.md) 페이지에서 찾을 수 있습니다.
@@ -60,9 +60,9 @@ HoloLens 에뮬레이터는 하드웨어 가속 그래픽에는 RemoteFx(1세대
 1. Visual Studio에서 애플리케이션 솔루션을 로드합니다.
     >[!NOTE]
     >Unity를 사용하는 경우, 평소처럼 Unity에서 프로젝트를 빌드한 다음, 빌드된 솔루션을 Visual Studio에 로드합니다.
-2. HoloLens 에뮬레이터(1세대)의 경우 플랫폼이 **x86**으로 설정되었는지 확인합니다. HoloLens 2 에뮬레이터의 경우 플랫폼이 **x86** 또는 **x64**로 설정되었는지 확인합니다.
+2. HoloLens 에뮬레이터(1세대)의 경우 플랫폼이 **x86** 으로 설정되었는지 확인합니다. HoloLens 2 에뮬레이터의 경우 플랫폼이 **x86** 또는 **x64** 로 설정되었는지 확인합니다.
 3. 디버깅에 대한 대상 디바이스로 원하는 **HoloLens 에뮬레이터** 버전을 선택합니다.
-4. **디버그 > 디버깅 시작**으로 이동하거나, **F5** 키를 눌러 에뮬레이터를 시작하고 디버깅을 위해 애플리케이션을 배포합니다.
+4. **디버그 > 디버깅 시작** 으로 이동하거나, **F5** 키를 눌러 에뮬레이터를 시작하고 디버깅을 위해 애플리케이션을 배포합니다.
 
 에뮬레이터는 처음 시작할 때 부팅하는 데 1분 이상 걸릴 수 있습니다. 디버깅 세션 중에 에뮬레이터를 열어 두는 것이 좋습니다. 그래야 에뮬레이터에 애플리케이션을 신속하게 배포할 수 있습니다.
 
@@ -96,7 +96,7 @@ Windows Mixed Reality 몰입형 헤드셋이 있나요?  HoloLens 2 에뮬레이
 * ![화면에 맞추기 아이콘](images/emulator-fit.png) **화면에 맞추기**: 에뮬레이터를 화면에 맞춥니다.
 * ![확대/축소 아이콘](images/emulator-zoom.png) **확대/축소**: 에뮬레이터를 크거나 작게 합니다.
 * ![도움말 아이콘](images/emulator-help.png) **도움말**: 에뮬레이터 도움말을 엽니다.
-* ![디바이스 포털 열기 아이콘](images/emulator-deviceportal.png) **디바이스 포털 열기**: 에뮬레이터에서 HoloLens OS용 Windows 디바이스 포털을 엽니다.
+* ![장치 포털 열기 아이콘](images/emulator-deviceportal.png) **장치 포털 열기**: 에뮬레이터에서 HoloLens OS용 Windows 장치 포털을 엽니다.
 * ![도구 아이콘](images/emulator-tools.png) **도구**: **추가 도구** 창을 엽니다.
 
 ### <a name="simulation-control-panel"></a>시뮬레이션 제어판
@@ -128,7 +128,7 @@ Windows Mixed Reality 몰입형 헤드셋이 있나요?  HoloLens 2 에뮬레이
 
 ### <a name="diagnostics-tab"></a>진단 탭
 
-진단 탭에는 가상 GPU의 상태와 함께 에뮬레이터의 IP 주소가 Windows 디바이스 포털에 대한 링크 형태로 표시됩니다.
+진단 탭에는 가상 GPU의 상태와 함께 에뮬레이터의 IP 주소가 Windows 장치 포털에 대한 링크 형태로 표시됩니다.
 
 ### <a name="network-tab"></a>네트워크 탭
 
@@ -140,15 +140,15 @@ Windows 10 2019년 5월 업데이트 이상에서 에뮬레이터를 실행하�
 
 에뮬레이터는 PC의 네트워크 연결을 사용하고 NAT 뒤에 위치합니다.  이 탭을 사용하면 호스트 PC의 포트를 에뮬레이터에 매핑할 수 있습니다. 그러면 원격 디바이스가 에뮬레이터에서 실행되는 애플리케이션과 서비스에 연결될 수 있습니다.
 
-예를 들어 원격 PC의 에뮬레이터에서 디바이스 포털에 액세스하려면 다음을 수행합니다.
+예를 들어 원격 PC의 에뮬레이터에서 장치 포털에 액세스하려면 다음을 수행합니다.
 
-1. 테이블에서 빈 행을 두 번 클릭하여 내부 포트 80(디바이스 포털이 수신 대기하는 포트)에 대한 항목을 추가합니다.  다른 애플리케이션의 경우 해당 애플리케이션이 수신 대기하는 포트 번호를 입력합니다.
+1. 테이블에서 빈 행을 두 번 클릭하여 내부 포트 80(장치 포털이 수신 대기하는 포트)에 대한 항목을 추가합니다.  다른 애플리케이션의 경우 해당 애플리케이션이 수신 대기하는 포트 번호를 입력합니다.
 2. 사용 가능한 외부 포트를 선택합니다.  이 예제에서는 포트 8080을 외부 포트로 사용합니다.
-3. 프로토콜을 선택합니다.  기본값은 TCP입니다.  디바이스 포털은 TCP를 사용하므로 기본값을 그대로 둡니다.
+3. 프로토콜을 선택합니다.  기본값은 TCP입니다.  장치 포털은 TCP를 사용하므로 기본값을 그대로 둡니다.
 4. "변경 내용 적용"을 클릭하여 매핑을 활성화합니다.  '상태'가 '보류'에서 '활성'으로 변경됩니다.
-5. 원격 PC에서 브라우저를 열고 (IP-of-the-PC-running-the-emulator):8080으로 이동합니다.  디바이스 포털 인터페이스가 표시됩니다.  원격 PC에서 사용하는 IP 주소는 에뮬레이터 자체가 아닌 에뮬레이터를 실행하는 PC의 IP 주소여야 합니다.  IP는 다양한 방법으로 검색할 수 있습니다. 예를 들어, '네트워크 및 인터넷' 범주에 있는 PC의 설정 앱, 명령 프롬프트의 'ipconfig', 데스크톱 어댑터 항목을 찾아서 에뮬레이터 도구 대화 상자의 네트워크 탭과 같은 다양한 방법이 있습니다.
+5. 원격 PC에서 브라우저를 열고 (IP-of-the-PC-running-the-emulator):8080으로 이동합니다.  장치 포털 인터페이스가 표시됩니다.  원격 PC에서 사용하는 IP 주소는 에뮬레이터 자체가 아닌 에뮬레이터를 실행하는 PC의 IP 주소여야 합니다.  IP는 다양한 방법으로 검색할 수 있습니다. 예를 들어, '네트워크 및 인터넷' 범주에 있는 PC의 설정 앱, 명령 프롬프트의 'ipconfig', 데스크톱 어댑터 항목을 찾아서 에뮬레이터 도구 대화 상자의 네트워크 탭과 같은 다양한 방법이 있습니다.
 
-디바이스 포털에 대한 포트 매핑을 추가하는 경우, 에뮬레이터 설치에 포함된 인식 시뮬레이션 컨트롤 도구를 사용하거나, 호스트 PC의 IP 주소 및 디바이스 포털 외부 포트(위 예시의 경우 8080)에 연결하여 인식 시뮬레이션 API를 통해 에뮬레이터를 원격으로 제어할 수도 있습니다.  인식 시뮬레이션 컨트롤을 사용하여 에뮬레이터에 원격으로 연결하고 제어하는 경우에는, PC의 IP 주소와 구성된 포트만 지정합니다.  'https://'는 포함하지 마십시오.
+장치 포털에 대한 포트 매핑을 추가하는 경우, 에뮬레이터 설치에 포함된 인식 시뮬레이션 컨트롤 도구를 사용하거나, 호스트 PC의 IP 주소 및 장치 포털 외부 포트(위 예시의 경우 8080)에 연결하여 인식 시뮬레이션 API를 통해 에뮬레이터를 원격으로 제어할 수도 있습니다.  인식 시뮬레이션 컨트롤을 사용하여 에뮬레이터에 원격으로 연결하고 제어하는 경우에는, PC의 IP 주소와 구성된 포트만 지정합니다.  'https://'는 포함하지 마십시오.
 
 기본적으로 포트 매핑이 없습니다.  매핑을 구성하면 HoloLens 2 에뮬레이터를 시작해도 계속 유지되며 에뮬레이터가 완전히 부팅되면 자동으로 활성화됩니다.
 
@@ -213,7 +213,7 @@ HoloLens 2 에뮬레이터(Windows Holographic 2004 버전)부터 Windows Mixed 
 * ![화면에 맞추기 아이콘](images/emulator-fit.png) **화면에 맞추기**: 에뮬레이터를 화면에 맞춥니다.
 * ![확대/축소 아이콘](images/emulator-zoom.png) **확대/축소**: 에뮬레이터를 크거나 작게 합니다.
 * ![도움말 아이콘](images/emulator-help.png) **도움말**: 에뮬레이터 도움말을 엽니다.
-* ![디바이스 포털 열기 아이콘](images/emulator-deviceportal.png) **디바이스 포털 열기**: 에뮬레이터에서 HoloLens OS용 Windows 디바이스 포털을 엽니다.
+* ![장치 포털 열기 아이콘](images/emulator-deviceportal.png) **장치 포털 열기**: 에뮬레이터에서 HoloLens OS용 Windows 장치 포털을 엽니다.
 * ![도구 아이콘](images/emulator-tools.png) **도구**: **추가 도구** 창을 엽니다.
 
 ### <a name="simulation-tab"></a>시뮬레이션 탭
@@ -245,7 +245,7 @@ HoloLens 2 에뮬레이터(Windows Holographic 2004 버전)부터 Windows Mixed 
 * **GreatRoom.xef** - 거실, 식탁 및 주방이 있는 대규모 공간.
 * **LivingRoom.xef** - 벽난로, 소파, 안락의자 및 꽃병이 놓인 커피 테이블이 있는 거실.
 
-또한 HoloLens(1세대)에서 [Windows 디바이스 포털](using-the-windows-device-portal.md)의 시뮬레이션 페이지를 사용하여 에뮬레이터에서 사용할 자신의 공간을 기록할 수 있습니다.
+또한 HoloLens(1세대)에서 [Windows 장치 포털](using-the-windows-device-portal.md)의 시뮬레이션 페이지를 사용하여 에뮬레이터에서 사용할 자신의 공간을 기록할 수 있습니다.
 
 에뮬레이터에서 렌더링하는 홀로그램만 표시됩니다. 그러나 시뮬레이션된 공간은 홀로그램 뒤에 표시 되지 않습니다. 이것은 두 가지가 함께 혼합되어 보이는 실제 HoloLens와는 대조적입니다. HoloLens 에뮬레이터에서 시뮬레이트된 공간을 보려면 장면에서 공간적 매핑 메시를 렌더링하도록 애플리케이션을 업데이트해야 합니다.
 
