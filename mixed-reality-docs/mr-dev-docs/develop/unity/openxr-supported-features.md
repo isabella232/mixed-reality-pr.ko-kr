@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/15/2020
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 보강 현실, 가상 현실, 혼합 현실 헤드셋, 학습, 자습서, 시작
-ms.openlocfilehash: 5db08dee6b26de6fa3f44d92709e4903bb90a44c
-ms.sourcegitcommit: 7595db7438398b5c78cec41a6f8ab625711bf8ec
+ms.openlocfilehash: 1cbe9dd1ffb493bcc9da76e70dec9720f2d10340
+ms.sourcegitcommit: 4bbf2f802117a9a3788b2b0e3b0a2f58e187f6ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97664421"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97665367"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Unity의 혼합 현실 OpenXR 지원 되는 기능
 
@@ -24,7 +24,7 @@ ms.locfileid: "97664421"
 * Windows Mixed Reality 헤드셋의 HoloLens 2 및 Win32 VR 응용 프로그램에 대 한 UWP 응용 프로그램을 모두 지원 합니다.
 * UWP 패키지를 최적화 하 고 HoloLens 2 응용 프로그램에 대해 CoreWindow 상호 작용 합니다.
 * 앵커와 바인딩되지 않은 공간을 사용한 세계 크기 조정 추적.
-* 저장소 API를 고정 하 여 HoloLens 2 로컬 저장소에 앵커를 유지 합니다.
+* [저장소 API를 고정 하 여](#anchors-and-anchor-persistence) HoloLens 2 로컬 저장소에 앵커를 유지 합니다.
 * 새 HP 반향 G2 컨트롤러를 포함 하 여 [동작 컨트롤러 및 직접 상호 작용](#motion-controller-and-hand-interactions).
 * 26 개의 조인트와 조인트 반지름 입력을 사용 하 여 직접 추적 합니다.
 * HoloLens 2의 눈 응시 상호 작용입니다.
@@ -58,12 +58,67 @@ Visual Studio 프로젝트에서 UWP Unity 프로젝트를 빌드한 다음 패�
 > [!NOTE]
 > Holographic Remoting의 버전 0.1.0, 런타임은 앵커 기능을 지원 하지 않으며 ARAnchorManager 기능은 원격 작업을 통해 작동 하지 않습니다.  이 기능은 이후 릴리스에서 제공 될 예정입니다.
 
+## <a name="anchors-and-anchor-persistence"></a>앵커 및 앵커 지 속성
+
+Mixed Reality OpenXR 플러그 인은 Unity의 ARFoundation **ARAnchorManager** 구현을 통해 기본적인 앵커 기능을 제공 합니다. Aranchor의 **Aranchor** 에 대 한 기본 사항을 알아보려면 [AR 앵커 관리자에 대 한 aranchor 설명서](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/anchor-manager.html)를 참조 하세요. 버전 0.1.0이 플러그 인은 평면에 연결 된 앵커 만들기를 제외한 모든 ARAnchorManager 기능을 지원 하며,이는 이후 릴리스에서 제공 됩니다.
+
+### <a name="anchor-persistence-and-the-xranchorstore"></a>앵커 지 속성 및 XRAnchorStore
+
+**XRAnchorStore** 이라는 추가 API를 사용 하면 세션 간에 앵커가 지속 될 수 있습니다. XRAnchorStore는 장치에 저장 된 앵커를 나타냅니다. Unity 장면의 **Aranchors** 에서 앵커를 유지 하거나, 저장소에서 새 **aranchors** 로 로드 하거나, 저장소에서 삭제할 수 있습니다.
+
+> [!NOTE]
+> 이러한 앵커는 동일한 장치에 저장 되 고 로드 됩니다. 장치 간 앵커 저장소는 향후 릴리스에서 Azure 공간 앵커를 통해 지원 됩니다.
+
+``` cs
+public class Microsoft.MixedReality.ARSubsystems.XRAnchorStore
+{
+    // A list of all persisted anchors, which can be loaded.
+    public IReadOnlyList<string> PersistedAnchorNames { get; }
+
+    // Clear all persisted anchors
+    public void Clear();
+
+    // Load a single persisted anchor by name. The ARAnchorManager will create this new anchor and report it in
+    // the ARAnchorManager.anchorsChanged event. The TrackableId returned here is the same TrackableId the 
+    // ARAnchor will have when it is instantiated.
+    public TrackableId LoadAnchor(string name);
+
+    // Attempts to persist an existing ARAnchor with the given TrackableId to the local store. Returns true if 
+    // the storage is successful, false otherwise.
+    public bool TryPersistAnchor(string name, TrackableId trackableId);
+
+    // Removes a single persisted anchor from the anchor store. This will not affect any ARAnchors in the Unity
+    // scene, only the anchors in storage.
+    public void UnpersistAnchor(string name);
+}
+```
+
+XRAnchorStore를 로드 하기 위해 플러그 인은 ARAnchorManager의 하위 시스템인 XRAnchorSubsystem에 확장 메서드를 제공 합니다.
+
+``` cs
+public static Task<XRAnchorStore> LoadAnchorStoreAsync(this XRAnchorSubsystem anchorSubsystem)
+```
+
+이 확장 메서드를 사용 하려면 다음과 같이 ARAnchorManager의 하위 시스템에서 액세스 합니다.
+ 
+``` cs
+ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>(); 
+XRAnchorStore anchorStore = await arAnchorManager.subsystem.LoadAnchorStoreAsync(); 
+```
+
+앵커 지속/유지 안 됨의 전체 예를 보려면 [Mixed Reality OpenXR Plugin 샘플 장면의](openxr-getting-started.md#hololens-2-samples)앵커-> 앵커 샘플 GameObject 및 AnchorsSample.cs 스크립트를 확인 하세요.
+
+![앵커 샘플이 강조 표시 된 Unity 편집기에서 열린 계층 패널의 스크린샷](images/openxr-features-img-04.png)
+
+![앵커 샘플 스크립트가 강조 표시 된 상태로 Unity 편집기에서 열리는 검사기 패널의 스크린샷](images/openxr-features-img-05.png)
+
 ## <a name="motion-controller-and-hand-interactions"></a>동작 컨트롤러 및 직접 상호 작용
-Unity의 혼합 현실 상호 작용에 대 한 기본 사항을 알아보려면 unity [XR 입력](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html)을 참조 하세요. 이 Unity 설명서는 컨트롤러 특정 입력에서 보다 다양 한로의 매핑 `InputFeatureUsage` , 사용 가능한 XR 입력을 식별 하 고 분류 하는 방법, 이러한 입력에서 데이터를 읽는 방법 등에 대해 설명 합니다. 
+
+Unity의 혼합 현실 상호 작용에 대 한 기본 사항을 알아보려면 unity [XR 입력](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html)을 참조 하세요. 이 Unity 설명서에서는 컨트롤러 특정 입력에서 보다 일반화할 수 있는 **Inputfeatureusage** s에 대 한 매핑, 사용 가능한 XR 입력을 식별 하 고 분류 하는 방법, 이러한 입력에서 데이터를 읽는 방법 등에 대해 설명 합니다. 
  
-Mixed Reality OpenXR 플러그 인은 아래에 설명 된 대로 표준 s에 매핑되는 추가 입력 상호 작용 프로필을 제공 합니다 `InputFeatureUsage` . 
+Mixed Reality OpenXR 플러그 인은 아래에 설명 된 대로 표준 **Inputfeatureusage** 에 매핑되는 추가 입력 상호 작용 프로필을 제공 합니다. 
  
-| `InputFeatureUsage` | HP 반향 G2 컨트롤러 (OpenXR) | HoloLens 손 (OpenXR) |
+| InputFeatureUsage | HP 반향 G2 컨트롤러 (OpenXR) | HoloLens 손 (OpenXR) |
 | ---- | ---- | ---- |
 | primary2DAxis | 조이스틱이 | |
 | primary2DAxisClick | 조이스틱-클릭 | |
@@ -75,9 +130,25 @@ Mixed Reality OpenXR 플러그 인은 아래에 설명 된 대로 표준 s에 �
 | triggerButton | 트리거-누르기 | |
 | menuButton | 메뉴 | |
 
-#### <a name="haptics"></a>Haptics
-Unity의 XR 입력 시스템에서 haptics를 사용 하는 방법에 대 한 자세한 내용은 unity의 unity [설명서 XR haptics](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics)를 참조 하세요. 
+### <a name="aim-and-grip-poses"></a>목표 및 그립 포즈
 
+OpenXR 입력 상호 작용을 통해 두 가지 포즈 집합에 액세스할 수 있습니다. 
+* 손으로 개체를 렌더링 하는 그립
+* 세계를 가리키는 목표입니다. 
+
+이 디자인 및 두 포즈 간의 차이점에 대 한 자세한 내용은 [OpenXR 사양 입력 하위 경로](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#semantic-path-input)에서 찾을 수 있습니다.
+
+InputFeatureUsages **Deviceposition**, **devicerDeviceAngularVelocity ation**, **Devicevelocation** 및  에서 제공 하는 포즈는 모두 OpenXR **그립** 포즈를 나타냅니다. 그립 포즈와 관련 된 InputFeatureUsages은 Unity의 [CommonUsages](https://docs.unity3d.com/2020.2/Documentation/ScriptReference/XR.CommonUsages.html)에서 정의 됩니다.
+
+InputFeatureUsages **Pointerposition**, **pointerposition**, **pointerposition** 에서 제공 하는 포즈는  모두 OpenXR **목표** 포즈를 나타냅니다. 이러한 InputFeatureUsages은 포함 된 c # 파일에 정의 되어 있지 않으므로 다음과 같이 사용자 고유의 InputFeatureUsages을 정의 해야 합니다.
+
+``` cs
+public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFeatureUsage<Vector3>("PointerPosition");
+```
+
+### <a name="haptics"></a>Haptics
+
+Unity의 XR 입력 시스템에서 haptics를 사용 하는 방법에 대 한 자세한 내용은 unity의 unity [설명서 XR haptics](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics)를 참조 하세요. 
 
 ## <a name="whats-coming-soon"></a>출시 예정
 
