@@ -6,12 +6,12 @@ ms.author: randyw
 ms.date: 10/22/2019
 ms.topic: article
 keywords: 없음
-ms.openlocfilehash: 748685f89e44221ff50b90b57d871867b83f581c
-ms.sourcegitcommit: d4b96e5b51b64ff618dbf667e8b8eb069e1a2fe2
+ms.openlocfilehash: 1fc560d170c4e17f4d70b7068474a1aabda472a2
+ms.sourcegitcommit: 3762d207d3b5f4a1d932197aae7a4fae4baec960
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91717436"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97676136"
 ---
 # <a name="title-be-as-specific-as-possible-use-human-terms"></a>제목 (가능한 한 구체적이 고 인간 사용 약관) 
 
@@ -52,7 +52,7 @@ ms.locfileid: "91717436"
 
 섹션은 다음 중 일부 또는 모두를 포함할 수 있습니다.  
 
-*   링크
+*   설명
 *   고려 사항
 *   Thumb의 규칙 
 *   사용 방법 
@@ -65,7 +65,7 @@ ms.locfileid: "91717436"
 *   재미 있는 방법으로 시도 하지 마세요.
 *   En-us (미국 영어) 맞춤법 및 규칙을 사용 하 여 작성 합니다.
 *   **제목, 섹션 제목 및 ...에 대 한 문장 케이스를 사용 합니다. 모든 것이 있습니다.** 문장 내에서 대문자로 표시 되어야 하는 유일한 단어는 적절 한 명사입니다 (문법 학교에서 배운 것 처럼). 브랜드 이름 (예: Microsoft HoloLens)은 적절 한 명사입니다. 기능 이름 (예: 공간 매핑)은 상표 않는 한 적절 한 명사가 아닙니다.
-*   "자세한 내용은 [여기](../whats-new/contributing.md)로 이동" 형식의 링크를 작성 하지 마세요. 대신 판독기를 다른 곳으로 이동 하지 않고 [컨텍스트](../whats-new/contributing.md) 링크를 추가 합니다.
+*   "자세한 내용은 [여기](../contributing.md)로 이동" 형식의 링크를 작성 하지 마세요. 대신 판독기를 다른 곳으로 이동 하지 않고 [컨텍스트](../contributing.md) 링크를 추가 합니다.
 *   이 설명서는 진위의 원인입니다. 정보는 정확 하 고 최신 이어야 합니다.
 
 <br>
@@ -233,7 +233,7 @@ Iframe을 width = "99" height = "530"로 설정 합니다.
 
 ---
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [관련 문서 1 이름](../design/design.md)
 * [관련 문서 2 이름](../design/design.md)
