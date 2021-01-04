@@ -8,5 +8,7 @@
   href: develop/toc.yml
 - name: 배포
   href: distribute/toc.yml
+- name: 기여 가이드
+  href: contributing.md
 - name: 새로운 기능
   href: whats-new/toc.yml
