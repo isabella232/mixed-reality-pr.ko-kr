@@ -1,13 +1,11 @@
 - name: Mixed Reality 개발 소개
   href: development.md
+- name: Azure 혼합 현실 클라우드 서비스 개요
+  href: mixed-reality-cloud-services.md
+- name: 샘플 및 기능 앱
+  href: features-and-samples.md
 - name: 도구 설치
   href: install-the-tools.md
-- name: 시작
-  items:
-    - name: Azure 혼합 현실 클라우드 서비스 개요
-      href: mixed-reality-cloud-services.md
-    - name: 샘플 및 기능 앱
-      href: features-and-samples.md
 - name: 앱 포팅
   items:
     - name: 포팅 개요
@@ -24,19 +22,23 @@
   items:
     - name: Unity 개발 개요
       href: unity/unity-development-overview.md
-    - name: 시작
+    - name: 프로젝트 구성
       items:
-        - name: MRTK 시작
+        - name: MRTK 소개
           href: unity/mrtk-getting-started.md
-        - name: Windows Mixed Reality를 위한 Unity 프로젝트 구성
+        - name: MRTK를 사용하지 않고 프로젝트 구성
           href: unity/configure-unity-project.md
+        - name: 혼합 현실 OpenXR 플러그 인 사용
+          href: unity/openxr-getting-started.md
+        - name: OpenXR 플러그 인 지원 기능
+          href: unity/openxr-supported-features.md
     - name: 자습서
       items:
         - name: 개요
           href: unity/tutorials.md
         - name: HoloLens 2 자습서
           items:
-            - name: 시작 자습서
+            - name: MRTK 자습서
               items:
                 - name: 1. 소개
                   href: unity/tutorials/mr-learning-base-01.md
@@ -312,6 +314,8 @@
           href: unreal/unreal-publishing-to-store.md
         - name: Unreal을 사용하기 위한 권장 성능
           href: unreal/performance-recommendations-for-unreal.md
+        - name: Unreal의 재질 권장 사항
+          href: unreal/unreal-materials.md
         - name: Unreal Insights를 사용하여 프로파일링
           href: unreal/unreal-insights.md
         - name: Unreal의 재질 권장 사항
