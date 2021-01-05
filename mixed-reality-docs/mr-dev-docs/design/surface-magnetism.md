@@ -6,35 +6,35 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, surface 자기
-ms.openlocfilehash: 943c5e8a1f49a021b8f3a3dcfa749a1ae6a1250e
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 5bc1b22db00e46d95d05c719b46c8f17426be8ef
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703287"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848156"
 ---
 # <a name="surface-magnetism"></a>표면 자성
 
 ![표면 자성](images/MRTK_SurfaceMagnetism.gif)
 
-Surface 자기 기법을 사용 하 여 실제 실제 표면에 holographic 개체를 놓을 수 있습니다. 개체의 방향을 실제 화면에 정렬 하 여 사용자에 게 더 몰입 형 및 자연 스러운 환경을 만들 수 있습니다.
+Surface 자기를 사용 하면 실제 실제 표면에 holographic 개체를 추가할 수 있습니다. 개체의 방향을 실제 화면에 정렬 하 여 사용자에 게 더 몰입 형 및 자연 스러운 환경을 만들 수 있습니다.
 
 <br>
 
 ---
 
 ## <a name="surface-magnetism-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 표면
+
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 는 surface 자기 기법에 대 한 스크립트와 예제 장면을 제공 합니다. 핸드 레이, 눈 응시 및 동작 컨트롤러와 같은 다양 한 유형의 입력에 surface 자기를 사용할 수 있습니다.
 
 * [MRTK-Surface 자기 해 찾기](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html#surfacemagnetism)
 * [MRTK-공간 인식 + 표면 자기 예제 장면](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Examples/Demos/Solvers/Scenes/SurfaceMagnetismSpatialAwarenessExample.unity)
 
-
 <br>
 
 ---
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

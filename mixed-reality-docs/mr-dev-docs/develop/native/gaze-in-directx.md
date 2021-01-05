@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 눈에 응시, 헤드-응시, 헤드 추적, 눈 추적, directx, 입력, holograms, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 4e8c638d91125a30cb4121b09a699f9ff6db5892
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 4d7ed9b735b5f3cd7029e42ccc75bc539e3c4f4b
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613047"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848090"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>헤드-DirectX에서 응시 및 눈에 응시 입력
 
@@ -84,6 +84,7 @@ if (pointerPose)
 2. 패키지 매니페스트에서 "응시 입력" 기능을 사용 하도록 설정 합니다.
 
 ### <a name="requesting-access-to-eye-gaze-input"></a>눈동자-응시 입력에 대 한 액세스 요청
+
 앱이 시작 되 면 [EyesPose:: RequestAccessAsync](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) 를 호출 하 여 눈동자 추적에 대 한 액세스를 요청 합니다. 필요한 경우 시스템에서 사용자에 게 묻는 메시지를 표시 하 고 액세스가 부여 된 후에 [GazeInputAccessStatus:: Allowed](https://docs.microsoft.com//uwp/api/windows.ui.input.gazeinputaccessstatus) 를 반환 합니다. 비동기 호출 이므로 약간의 추가 관리가 필요 합니다. 다음 예제에서는 분리 된 std:: thread를 회전 하 여 *m_isEyeTrackingEnabled* 이라는 멤버 변수에 저장 하는 결과를 기다립니다.
 
 ```cpp
@@ -146,6 +147,7 @@ if (Windows::Perception::People::EyesPose::IsSupported() &&
 ```
 
 ### <a name="getting-the-eye-gaze-ray"></a>눈에 보기-응시 광선
+
 ET에 대 한 액세스를 받은 후에는 모든 프레임에서 눈에 볼 수 있습니다.
 Head-응시와 마찬가지로 원하는 타임 스탬프 및 좌표계를 사용 하 여 [SpatialPointerPose:: TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) 를 호출 하 여 [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) 를 가져옵니다. SpatialPointerPose는 [눈동자](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) 속성을 통해 [EyesPose](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose) 개체를 포함 합니다. 이는 눈동자 추적을 사용 하는 경우에만 null이 아닙니다. 여기에서 [EyesPose:: IsCalibrationValid](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid)를 호출 하 여 장치의 사용자에 게 눈 추적 보정이 있는지 확인할 수 있습니다.  그런 다음, [응시](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) 속성을 사용 하 여 눈에 SpatialRay 위치와 방향을 포함 하는 [](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialray) 를 가져옵니다. 응시 속성은 null 일 수 있으므로이를 확인 해야 합니다. 이는 보정 된 사용자가 일시적으로 눈동자를 닫는 경우에 발생할 수 있습니다.
 
@@ -174,7 +176,8 @@ if (pointerPose)
 ```
 
 ## <a name="fallback-when-eye-tracking-isnt-available"></a>눈동자 추적을 사용할 수 없는 경우 대체 (Fallback)
-[눈 추적 디자인 문서](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available)에 설명 된 대로 디자이너와 개발자는 모두 아이 추적 데이터를 사용할 수 없는 인스턴스를 인식 해야 합니다.
+
+[눈 추적 디자인 문서](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-isnt-available)에 설명 된 대로 디자이너와 개발자는 모두 아이 추적 데이터를 사용할 수 없는 인스턴스를 인식 해야 합니다.
 
 데이터를 사용할 수 없는 다양 한 이유는 다음과 같습니다.
 * 사용자가 보정 되지 않음
@@ -190,11 +193,12 @@ if (pointerPose)
 * 사용자에 게 눈 추적 데이터를 사용할 수 있는 권한을 부여 했는지 확인 합니다. 현재 _' GazeInputAccessStatus '_ 를 검색 합니다. 이 작업을 수행 하는 방법에 대 한 예제는 [응시 입력에 대 한 액세스 요청](https://docs.microsoft.com/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input)에 설명 되어 있습니다.   
 
 받은 눈동자 추적 데이터 업데이트 사이에 시간 제한을 추가 하 고, 아래 설명 된 대로 head-응시로 대체 하 여 눈동자 추적 데이터가 부실 하지 않은지 확인할 수도 있습니다.   
-자세한 내용은 [대체 디자인 고려 사항](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available) 을 참조 하세요.
+자세한 내용은 [대체 디자인 고려 사항](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-isnt-available) 을 참조 하세요.
 
 <br>
 
 ## <a name="correlating-gaze-with-other-inputs"></a>다른 입력과의 응시 상관 관계
+
 경우에 따라 과거의 이벤트에 해당 하는 [SpatialPointerPose](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose) 이 필요 하다는 것을 알 수 있습니다. 예를 들어 사용자가 공중 탭을 사용 하는 경우 앱에서 원하는 내용을 알고 싶을 수 있습니다. 이러한 목적을 위해 시스템 입력 처리와 표시 시간 사이의 대기 시간 때문에 예측 된 프레임 시간에 [SpatialPointerPose:: TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) 를 사용 하는 것은 정확 하지 않습니다. 또한 대상 지정을 위해 눈동자-응시를 사용 하는 경우 커밋 작업을 완료 하기 전에도 눈에 잘 이동 하는 경향이 있습니다. 이는 간단한 공기 탭에 대 한 문제는 적지만 긴 음성 명령을 빠른 시각 이동과 결합할 때 더 중요 합니다. 이 시나리오를 처리 하는 한 가지 방법은 입력 이벤트에 해당 하는 기록 타임 스탬프를 사용 하 여  [SpatialPointerPose:: TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp)에 대 한 추가 호출을 수행 하는 것입니다.  
 
 그러나 SpatialInteractionManager을 통해 라우팅하는 입력의 경우 더 쉬운 방법이 있습니다. [SpatialInteractionSourceState](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) 에는 고유한 [TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) 함수가 있습니다. 이를 호출 하면 추측 하지 않고 완벽 하 게 상호 관련 된 [SpatialPointerPose](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose) 제공 됩니다. SpatialInteractionSourceStates로 작업 하는 방법에 대 한 자세한 내용은 DirectX 설명서 [에서 직접 및 동작 컨트롤러](hands-and-motion-controllers-in-directx.md) 를 참조 하세요.
@@ -202,6 +206,7 @@ if (pointerPose)
 <br>
 
 ## <a name="calibration"></a>보정
+
 눈 추적을 정확 하 게 수행 하려면 각 사용자가 [눈 추적 사용자 보정](../../calibration.md)을 진행 해야 합니다. 이를 통해 장치는 사용자에 게 더 편안 하 고 높은 품질의 시청 환경을 제공 하 고 동시에 정확한 시각 추적을 보장 합니다. 개발자는 사용자 보정을 관리 하기 위해 최종 작업을 수행할 필요가 없습니다. 시스템은 다음과 같은 상황에서 사용자에 게 장치를 보정할 것인지 묻는 메시지를 표시 합니다.
 * 사용자가 처음으로 장치를 사용 하 고 있습니다.
 * 사용자가 이전에 보정 프로세스를 옵트아웃 했음
@@ -211,7 +216,8 @@ if (pointerPose)
 
 <br>
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
+
 * [조정](../../calibration.md)
 * [DirectX의 좌표계](coordinate-systems-in-directx.md)
 * [눈동자-HoloLens에서 응시 2](../../design/eye-tracking.md)

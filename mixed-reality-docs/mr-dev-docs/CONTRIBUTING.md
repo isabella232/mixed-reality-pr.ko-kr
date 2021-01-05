@@ -5,20 +5,28 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 03/21/2018
 ms.topic: article
-ms.openlocfilehash: 0a71072a27befc4295b82e1235cbc75655743056
-ms.sourcegitcommit: 0b406ccbc7ce619e42809ba8dfdc47d83f4917ff
+ms.openlocfilehash: 47689a53557e6ce9b97d0e9d834a70fb0a7786d0
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97691319"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865418"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>혼합 현실 개발자 설명서에 기여
 
 [혼합 현실 개발자 설명서에 대 한 공용 리포지토리](https://github.com/MicrosoftDocs/mixed-reality/tree/master/mixed-reality-docs)를 시작 합니다. 이 리포지토리에서 만들거나 편집 하는 모든 문서는 **공용에 표시 됩니다.** 
 
-혼합 현실 문서는 이제 docs.microsoft.com 플랫폼에 있습니다 .이 플랫폼에서는 Markdig Markdown와 함께 markdig 기능을 사용 합니다. 이 리포지토리에서 편집 하는 콘텐츠는에 표시 되는 스타일 있는 페이지로 서식 지정 https://docs.microsoft.com/windows/mixed-reality 됩니다. HoloLens 또는 VR 열성적인 설명서에 참여 하려는 경우 해당 [hololens](https://github.com/MicrosoftDocs/Hololens) 및 [vr](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) 리포지토리를 방문 하세요.
+혼합 현실 문서는 이제 docs.microsoft.com 플랫폼에 있습니다 .이 플랫폼에서는 Markdig Markdown와 함께 markdig 기능을 사용 합니다. 이 리포지토리에서 편집 하는 콘텐츠는에 표시 되는 스타일 있는 페이지로 서식 지정 https://docs.microsoft.com/windows/mixed-reality 됩니다. 
 
 이 페이지에서는 Markdown 기본 사항에 기여 하 고 연결 하는 데 필요한 기본 단계 및 지침을 설명 합니다. 기여해 주셔서 감사합니다.
+
+## <a name="available-repos"></a>사용 가능한 리포지토리
+
+| 리포지토리 이름 | URL |
+| --- | --- |
+| Mixed Reality | [MicrosoftDocs/mixed-현실](https://docs.microsoft.com/windows/mixed-reality) |
+| VR 매니아 가이드 | [MicrosoftDocs/mixed-현실/열성적인](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
+| HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 
 ## <a name="before-you-start"></a>시작하기 전에
 

@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, 디자인, 컨트롤, ui, ux, 진행률 표시기, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: aa74ae1bf9dae9831743aeaf6ce18df196784ded
-ms.sourcegitcommit: bec6029b2780c54cc04a45ef7ae5df3f5b4727c1
+ms.openlocfilehash: 3f24f7095147a0d220df8adc42b67a1b8e4053c9
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96470515"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848283"
 ---
 # <a name="progress-indicator"></a>진행률 표시기
 
@@ -19,7 +19,7 @@ ms.locfileid: "96470515"
 
 <img src="images/MRTK_ProgressIndicator.gif" alt="Progress ring example in HoloLens" width="940px">
 
-진행률 컨트롤은 긴 작업을 진행 중인 사용자에게 피드백을 제공합니다. 이는 진행률 표시기가 표시될 때 사용자가 앱을 조작할 수 없다는 의미이며 사용되는 표시기에 따라 대기 시간을 예측할 수도 있다는 의미입니다.
+진행률 컨트롤은 장기 실행 작업이 진행 중임을 피드백을 제공 합니다. 진행률 표시기가 표시 되 면 사용자는 대기 시간을 볼 수 있으며 앱과 상호 작용할 수 없습니다.
 
 <br>
 
@@ -27,12 +27,12 @@ ms.locfileid: "96470515"
 
 ## <a name="types-of-progress"></a>진행률 유형
 
-발생 한 상황에 대 한 사용자 정보를 제공 하는 것이 중요 합니다. 혼합 현실에서는 앱이 좋은 시각적 피드백을 제공 하지 않는 경우 실제 환경 또는 개체에 의해 사용자가 쉽게 무시 수 있습니다. 데이터를 로드 하거나 장면을 업데이트 하는 경우와 같이 몇 초 정도 걸리는 상황에서는 시각적 표시기를 표시 하는 것이 좋습니다. 작업이 진행 중인 사용자를 표시 하는 두 가지 옵션은 **진행률 표시줄이** 나 **진행 링** 입니다.
+발생 한 상황에 대 한 사용자 정보를 제공 하는 것이 중요 합니다. 혼합 현실에서는 앱이 좋은 시각적 피드백을가지고 있지 않은 경우 물리적 환경이 나 개체에 의해 사용자가 쉽게 무시 수 있습니다. 데이터를 로드 하거나 장면을 업데이트 하는 경우와 같이 몇 초 정도 걸리는 경우 시각적 표시기를 표시 하는 것이 좋습니다. 작업이 진행 중인 사용자를 표시 하는 두 가지 옵션은 **진행률 표시줄이** 나 **진행 링** 입니다.
 
 :::row:::
     :::column:::
         ### <a name="progress-barbr"></a>진행률 표시줄<br>
-        진행률 표시줄에는 태스크의 완료율이 표시 됩니다. 기간이 알려진 작업 (활성화 상태의) 중에 사용 해야 하지만, 진행률은 사용자가 앱과의 상호 작용을 차단 하지 않아야 합니다.<br>
+        진행률 표시줄에는 태스크의 완료율이 표시 됩니다. 기간이 알려진 작업 (활성화 상태의) 중에 사용 해야 하지만, 해당 진행률이 사용자의 앱 상호 작용을 차단 하지 않아야 합니다.<br>
         <br>
         *이미지: HoloLens의 진행률 표시줄 예*
     :::column-end:::
@@ -49,13 +49,13 @@ ms.locfileid: "96470515"
 :::row:::
     :::column:::
         ### <a name="progress-ringbr"></a>진행률 링<br>
-        진행률 링은 확정 되지 않은 상태 이며 작업이 완료 될 때까지 추가 사용자 조작이 차단 되는 경우에만 사용 해야 합니다.<br>
+        진행률 링은 확정 되지 않은 상태 이며 작업이 완료 될 때까지 사용자 상호 작용이 차단 될 때 사용 해야 합니다.<br>
         <br>
         *이미지: HoloLens의 진행 링 예*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![HoloLens의 진행률 링 예](images/640px-progressring.jpg)<br>
+       ![HoloLens 장치의 진행 링 예](images/640px-progressring.jpg)<br>
     :::column-end:::
 :::row-end:::
 
@@ -98,7 +98,7 @@ ms.locfileid: "96470515"
 
 ---
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

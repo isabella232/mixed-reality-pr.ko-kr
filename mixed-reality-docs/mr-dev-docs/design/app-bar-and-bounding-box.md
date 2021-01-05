@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
 keywords: Windows Mixed Reality, 앱 바, 경계 상자, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: f718babfa07c69b6579fbd78f306a10f0ed6aad5
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 0f94aa3842afbfbd544716b801c7cb88d7be3abc
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703059"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847656"
 ---
 # <a name="bounding-box-and-app-bar"></a>경계 상자 및 앱 바
 ![경계는 혼합 현실에서 개체 조작을 위한 표준 인터페이스입니다.](images/UX_Hero_BoundingBox.jpg)<br>
@@ -19,12 +19,12 @@ ms.locfileid: "94703059"
 
 ## <a name="what-is-the-bounding-box"></a>경계 상자는 무엇 인가요?
 
-경계는 혼합 현실에서 개체 조작을 위한 표준 인터페이스입니다. 사용자에 게 개체를 현재 조정할 수 있는 affordance 제공 합니다. HoloLens 2에서 경계 상자는 직접 조작을 사용 하 여 작동 하며 사용자의 finger's 근접에 응답 합니다. 사용자가 개체의 거리를 파악 하는 데 도움이 되는 시각적 피드백을 표시 합니다.
+경계는 혼합 현실에서 개체 조작을 위한 표준 인터페이스입니다. 이 기능은 개체를 현재 조정할 수 있음을 시각적으로 사용자에 게 제공 합니다. HoloLens 2에서 경계 상자는 직접 조작을 사용 하 여 작동 하며 사용자의 finger's 근접에 응답 합니다. 사용자가 개체의 거리를 파악 하는 데 도움이 되는 시각적 피드백을 표시 합니다.
 
 :::row:::
     :::column:::
         ### <a name="scaling-an-objectbr"></a>개체 크기 조정<br>
-        경계 상자의 모퉁이는 개체의 크기를 조정할 수 있음을 사용자에 게 알려줍니다. 핸들은 크기 조정을 조정 하기 위해 널리 이해 되는 패턴을 따릅니다. 이 시각적 개체는 조정 모드 외부에 표시 되지 않는 경우에도 사용자에 게 개체의 전체 영역을 affordance 표시 합니다. 이는 해당 개체가 없는 경우 다른 개체 또는 표면에 맞춰진 개체가 거기에 있어서는 안 되는 것 처럼 동작 하는 것 처럼 보일 수 있으므로 특히 중요 합니다.<br>
+        경계 상자의 모퉁이는 개체의 크기를 조정할 수 있음을 사용자에 게 알려줍니다. 핸들은 크기 조정을 조정 하기 위해 널리 이해 되는 패턴을 따릅니다. 이 시각적 표시는 조정 모드 외부에 표시 되지 않는 경우에도 개체의 전체 영역을 표시 합니다. 이 기능을 사용 하지 않을 경우 다른 개체 또는 화면에 스냅 된 개체는 여기에 있어서는 안 되는 공간이 없는 것 처럼 동작 하는 것 처럼 보일 수 있습니다.<br>
         <br>
         *비디오 루프: 경계 상자를 통해 개체 크기 조정*
     :::column-end:::
@@ -54,7 +54,7 @@ ms.locfileid: "94703059"
 :::row:::
     :::column:::
         ### <a name="visual-feedback-on-hand-proximity-on-hololens-2br"></a>HoloLens에서 근접 한 시각적 피드백 2<br>
-        HoloLens 2에는 사용자가 깊이를 인식 하는 데 도움이 될 수 있는 추가 시각적 표시가 있습니다. Fingertip 근처의 링은 개체에 가까울수록 fingertip가 위쪽으로 표시 되 고 축소 됩니다. 누름 상태에 도달 하면 링이 결국 점으로 수렴. 이 시각적 affordance는 사용자가 개체에서 얼마나 떨어져 있는지 이해 하는 데 도움이 됩니다.<br>
+        HoloLens 2에는 사용자가 깊이를 인식 하는 데 도움이 될 수 있는 추가적인 시각적 표시 큐가 있습니다. Fingertip 근처의 링은 개체에 가까울수록 fingertip가 위쪽으로 표시 되 고 축소 됩니다. 누름 상태에 도달 하면 링이 결국 점으로 수렴. 이 시각적 affordance는 사용자가 개체에서 얼마나 떨어져 있는지 이해 하는 데 도움이 됩니다.<br>
         <br>
         *비디오 루프: 경계 상자에 근접 한 시각적 피드백의 예*
     :::column-end:::
@@ -74,12 +74,12 @@ ms.locfileid: "94703059"
 
 ## <a name="what-is-the-app-bar"></a>앱 바 란?
 
-앱 바는 홀로그램 범위의 아래쪽 가장자리에 표시 되는 일련의 단추를 포함 하는 개체 수준 메뉴입니다. 이 패턴은 사용자에 게 holograms를 제거 하 고 조정 하는 기능을 제공 하는 데 일반적으로 사용 됩니다. 앱 바는 주로 사용자 환경에서 배치 된 개체를 관리 하는 방법으로 설계 되었습니다. 경계 상자와 함께 사용 하는 경우 사용자는 혼합 현실에서 개체의 방향 및 위치를 완전히 제어할 수 있습니다.
+앱 바는 창 고 창의 경계 아래쪽 가장자리에 표시 되는 일련의 단추를 포함 하는 개체 수준 메뉴입니다. 이 패턴은 사용자가 holograms를 제거 하 고 조정 하는 데 일반적으로 사용 됩니다. 앱 바는 주로 사용자 환경에서 배치 된 개체를 관리 하는 방법으로 설계 되었습니다. 경계 상자와 함께 사용 하는 경우 사용자는 혼합 현실에서 개체의 방향 및 위치를 완전히 제어할 수 있습니다.
 
 :::row:::
     :::column:::
         ### <a name="the-app-bar-follows-the-userbr"></a>앱 바는 사용자를 따릅니다.<br>
-        이 패턴은 세계에서 잠긴 개체와 함께 사용 되므로 사용자가 개체를 이동할 때 앱 바는 항상 사용자에 게 가장 가까운 개체 쪽에 표시 됩니다. 이는 billboarding 되지 않지만 실제로 동일한 결과를 얻는 것입니다. 사용자의 위치를 려 하거나 환경의 다른 위치에서 사용할 수 있는 기능을 차단 합니다. <br>
+        이 패턴은 세계에서 잠긴 개체와 함께 사용 되므로 사용자가 개체를 이동할 때 앱 바는 항상 사용자에 게 가장 가까운 개체 쪽에 표시 됩니다. 기술적으로는 billboarding 않지만이 기능은 사실상 동일한 결과를 얻을 수 있습니다. 사용자의 위치를 려 하거나 환경의 다른 위치에서 사용할 수 있는 기능을 차단 합니다. <br>
         <br>
         *비디오 루프: 홀로그램 둘러보기, 앱 바는 다음과 같습니다.*
     :::column-end:::
@@ -93,7 +93,7 @@ ms.locfileid: "94703059"
 
 
 ## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 경계 상자
-**[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 는 경계 상자와 앱 바에 대 한 스크립트 및 prefabs을 제공 합니다. BoundingBox.cs 스크립트를 개체에 할당 하기만 하면 경계 상자를 추가할 수 있습니다.
+**[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 는 경계 상자와 앱 바에 대 한 스크립트 및 prefabs을 제공 합니다. BoundingBox.cs 스크립트를 모든 개체에 할당 하 여 경계 상자를 추가할 수 있습니다.
 
 * [MRTK-경계 상자](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)
 
@@ -103,7 +103,7 @@ ms.locfileid: "94703059"
 ---
 
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

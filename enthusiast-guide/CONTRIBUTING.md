@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: d8b4e23603a09d39fef076b600364a55410d12c3
-ms.sourcegitcommit: 0b406ccbc7ce619e42809ba8dfdc47d83f4917ff
+ms.openlocfilehash: afb559937c2bde06d3c74c1c572aefec50502884
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97691463"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865438"
 ---
 # <a name="contributing-to-the-mixed-reality-enthusiast-guide"></a>Mixed Reality 열성적인 가이드에 기여
 
@@ -167,7 +167,7 @@ GitHub 계정을 설정할 때 다음과 같은 보안 예방 조치를 권장 �
 >[!NOTE]
 >review.docs.microsoft.com의 변경 내용 미리 보기는 Microsoft 직원 에게만 제공 됩니다.
 
-Microsoft 직원: 기여를 ' 마스터 ' 분기에 병합 한 후에는에서 공개 되기 전에 콘텐츠를 검토할 수 있습니다 https://review.docs.microsoft.com/windows/mixed-reality?branch=master . 왼쪽 열에 있는 목차를 사용 하 여 문서를 찾습니다.
+Microsoft 직원: 기여를 ' 마스터 ' 분기에 병합 한 후에는에서 공개 되기 전에 콘텐츠를 검토할 수 있습니다 https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide?branch=master . 왼쪽 열에 있는 목차를 사용 하 여 문서를 찾습니다.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>브라우저에서 편집 및 데스크톱 클라이언트를 사용 하 여 편집
 

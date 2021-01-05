@@ -1,45 +1,47 @@
 ---
 title: 공간 메시 시각화
+description: 장치에서 공간 메시를 사용 하 여 물리적 환경을 이해 하는 방법에 대해 알아봅니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: 혼합 현실, HoloLens, UI 컨트롤, 상호 작용, ui, ux, UX 디자인, 공간 UI, 공간 상호 작용, 3D UI, 3D UX, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: ec887f73b8561e0a91740d612227411683707364
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ffa13da6762b803ba2a3f370308ac2af65164ecf
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703299"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848190"
 ---
 # <a name="spatial-mesh"></a>공간 메시
 
 ![공간 메시](images/MRTK_PulseShader_SpatialMesh.gif)
 
-공간 메시 시각화를 통해 사용자는 장치가 물리적 환경을 인식 하 고 이해 하는 방법을 배울 수 있습니다. 공간 컨텍스트를 제공 하는 것 외에도 적절 한 공간 메시 시각화를 통해 매력적인 및 마법 환경을 만들 수 있습니다.  
+사용자는 장치에서 공간 메시 시각화를 통해 물리적 환경을 인식 하 고 이해 하는 방법을 알아봅니다. 적절 한 공간 메시 시각화는 공간 컨텍스트를 제공 하는 동시에 매력적인 및 마법 환경을 만들 수 있습니다.  
 
 ## <a name="design-guideline"></a>디자인 지침
-사용자가 콘텐츠를 집중적으로 사용 하 고 상호 작용할 수 있도록 하는 것이 중요 하기 때문에 백그라운드에서 공간 메시를 지속적으로 반복적으로 시각화 하는 작업은 혼란을 받을 수 있습니다. 초기 실행에서 한 번만 또는 사용자가 공간을 대상으로 하 여 환경 메시를 볼 수 있는 명확한 의도를 표시 하는 경우에만 환경을 시각화 하는 것이 좋습니다. HoloLens 셸에서이 동작을 관찰할 수 있습니다.
+
+사용자가 콘텐츠를 집중적으로 사용 하 고 상호 작용할 수 있도록 하는 것이 중요 합니다. 배경에서 공간 메시의 연속 시각화는 혼란을 수 있습니다. 초기 실행에서 한 번만 또는 사용자가 공간을 대상으로 하 여 환경 메시를 표시 하려는 경우에만 환경을 시각화 하는 것이 좋습니다. 혼합 현실 포털에서이 동작을 관찰할 수 있습니다.
 <br>
 
-
 ## <a name="spatial-mesh-visualization-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 공간 메시 시각화
+
 MRTK는 공간 메시 시각화에 대 한 여러 자료를 제공 합니다.
 
-- **MRTK_Wireframe, MRTK_Wireframe**: 기본 정적 공간 메시 재질: 애니메이션 없이 메시 윤곽선을 표시 합니다. 이 자료는 전체 공간 메시 기 하 도형을 표시 하기 때문에 디버깅 목적으로 유용 합니다. 그러나 프로덕션 환경에서는 권장 되지 않습니다.
+- **MRTK_Wireframe, MRTK_Wireframe**: 기본 정적 공간 메시 재질: 애니메이션 없이 메시 윤곽선을 표시 합니다. 이 자료는 전체 공간 메시 기 하 도형을 표시 하기 때문에 디버깅 목적으로 유용 합니다. 그러나 프로덕션에는 권장 되지 않습니다.
 <br>
 <img src="images/SurfaceReconstruction.jpg" alt="Wireframe spatial mesh visualization" width="640px">
 
-- **MRTK_SurfaceReconstruction.** 대만:이 자료는 공간 메시에 애니메이션 된 펄스 효과를 제공 합니다. 이 자료를 사용 하 여 특정 경험 또는 사용자의 공중 탭 입력에서 환경을 시각화할 수 있습니다. 예제는 **PulseShaderExamples** 을 참조 하세요.
+- **MRTK_SurfaceReconstruction.** 대만:이 자료는 공간 메시에 애니메이션 된 펄스 효과를 제공 합니다. 이 자료를 사용 하 여 특정 순간 이나 사용자의 공중 탭 입력에서 환경을 시각화할 수 있습니다. 예제는 **PulseShaderExamples** 을 참조 하세요.
 <br>
 <img src="images/MRTK_SRMesh_Pulse.jpg" alt="Pulse spatial mesh visualization" width="640px">
-* 자세한 내용은 [Mrtk-공간 인식](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html) 및 [Mrtk-펄스 셰이더](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/PulseShader/README.html) 를 참조 하세요.
+* 자세한 내용은 [Mrtk-공간 인식](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html) 및 [Mrtk-펄스 셰이더](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/PulseShader/README.html)를 참조 하세요.
 
 <br>
 
 ---
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

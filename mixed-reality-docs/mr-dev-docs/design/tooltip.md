@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 도구 설명, MRTK, 혼합 현실 도구 키트
-ms.openlocfilehash: a182b9100341709dfb78ab188cbff2bd7ed3512e
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ceb88fd89ec9d7bde50e23f2ae3ac158a301eb02
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703239"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848124"
 ---
 # <a name="tooltip"></a>도구 설명
 
@@ -31,7 +31,7 @@ ms.locfileid: "94703239"
 
 ---
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

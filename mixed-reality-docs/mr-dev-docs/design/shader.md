@@ -1,26 +1,26 @@
 ---
 title: 셰이더
-description: MRTK 표준 셰이더는 holograms와 함께 사용할 수 있는 다양 한 유형의 시각적 효과를 제공 합니다.
+description: Mixed Reality Toolkit 표준 셰이더는 holograms에서 사용할 수 있는 다양 한 유형의 시각적 효과를 제공 합니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 셰이더, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 시각적 효과
-ms.openlocfilehash: ced2d62f9304a8e6238febb8c485449f2e10b135
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 08701fb48d633f7de75b74b5e44655c3a01fade8
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703349"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848238"
 ---
 # <a name="shader"></a>셰이더
 
 ![셰이더](images/UX_Hero_StandardShader.jpg)
 
-Holographic 개체는 실제 환경에서 물리적 개체와 혼합 되므로 사용자에 게 시각적 신호를 제공 하는 것이 중요 합니다. MRTK 표준 셰이더는 holograms와 함께 사용할 수 있는 다양 한 유형의 시각적 효과를 제공 합니다. MRTK 표준 음영 시스템은 Unity의 표준 셰이더와 유사한 시각적 개체를 사용할 수 있는 유연한 단일 셰이더를 활용 하 고, [흐름 설계 시스템 원칙](https://www.microsoft.com/design/fluent/#/)을 구현 하며, 혼합 현실 장치에 대 한 성능을 유지 합니다.
+Holographic 개체는 실제 환경에서 물리적 개체와 혼합 되므로 사용자에 게 시각적 신호를 제공 하는 것이 중요 합니다. Mixed Reality Toolkit 표준 셰이더는 holograms와 함께 사용할 다양 한 형식의 시각적 효과를 제공 합니다. 음영 시스템은 단일의 유연한 셰이더를 사용 하 여 Unity의 표준 셰이더에 유사한 시각적 개체를 구현 합니다. 셰이더는 [흐름 설계 시스템 원칙](https://www.microsoft.com/design/fluent/#/) 을 구현 하 고 혼합 현실 장치에 대 한 성능을 유지 합니다.
 <br>
 
-## <a name="examples-of-visual-effects-using-mrtk-standard-shader"></a>MRTK 표준 셰이더를 사용 하는 시각적 효과의 예 
+## <a name="examples-of-visual-effects-using-mrtk-mixed-reality-toolkit-standard-shader"></a>MRTK (Mixed Reality Toolkit) 표준 셰이더를 사용 하는 시각적 효과의 예 
 :::row:::
     :::column:::
        ![이동](images/UX_Button_Affordance_ProximityLight.jpg)<br>
@@ -36,16 +36,15 @@ Holographic 개체는 실제 환경에서 물리적 개체와 혼합 되므로 �
 
 ---
 
-## <a name="mrtk-standard-shader-in-mrtk-mixed-reality-toolkit-for-unity"></a>MRTK의 MRTK 표준 셰이더 (혼합 현실 도구 키트) 및 Unity
+## <a name="standard-shader-in-mrtk-for-unity"></a>Unity 용 MRTK의 표준 셰이더
 
 * [MRTK-표준 셰이더](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)
-
 
 <br>
 
 ---
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)
