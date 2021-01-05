@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: cd6541dd651573f31ddc2e2a388be53394059c5f
-ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
+ms.openlocfilehash: 283bfffb2d59d92712e86e12c05be8974f04fae6
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94482421"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97718185"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -81,8 +81,6 @@ USB를 통해 애플리케이션을 직접 배포할 수 없는 경우 위에 �
 
 >[!WARNING]
 >이 지침을 몰입형 (VR) 헤드셋 앱 또는 게임을 대상으로 하는 *소비자 PC 사양* 을 나타내는 [최소 PC 하드웨어 호환성 지침](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)과 혼동하지 마세요.
-
-**Reverb G2** 헤드셋을 사용하는 경우 **Microsoft-Valve OpenXR** 플러그 인(TODO: // 링크 필요)을 다운로드합니다.
 
 몰입형 헤드셋 개발 PC에 전체 크기 HDMI 및/또는 USB 3.0 포트가 없는 경우 헤드셋에 연결하기 위한 [어댑터](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs)가 필요합니다.
 
@@ -196,8 +194,6 @@ USB를 통해 애플리케이션을 직접 배포할 수 없는 경우 위에 �
 
 >[!WARNING]
 >이 지침을 몰입형 (VR) 헤드셋 앱 또는 게임을 대상으로 하는 *소비자 PC 사양* 을 나타내는 [최소 PC 하드웨어 호환성 지침](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)과 혼동하지 마세요.
-
-**Reverb G2** 헤드셋을 사용하는 경우 **Microsoft-Valve OpenXR** 플러그 인(TODO: // 링크 필요)을 다운로드합니다.
 
 몰입형 헤드셋 개발 PC에 전체 크기 HDMI 및/또는 USB 3.0 포트가 없는 경우 헤드셋에 연결하기 위한 [어댑터](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs)가 필요합니다.
 

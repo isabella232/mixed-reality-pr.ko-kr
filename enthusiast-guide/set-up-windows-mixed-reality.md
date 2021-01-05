@@ -3,12 +3,12 @@ title: Windows Mixed Reality 설정
 description: Windows Mixed Reality 동작 컨트롤러, 음성 및 오디오를 설정 하 고 안전한 재생 공간에 대 한 공간 경계를 정의 하는 방법입니다.
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 시작, 설정, 동작 컨트롤러, 컨트롤러, 음성, 오디오, 장착 됨, 경계, 그래픽 드라이버, Microsoft Edge, chromium
-ms.openlocfilehash: 693c55a7375dd2cb1b4a6f880fca31ba8d50c7f9
-ms.sourcegitcommit: b90697776b7027ed7eb8dd49a72d52740a16d12d
+ms.openlocfilehash: 8cd313651665fe2e50deb21e2ba2434883dc873a
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96843131"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725944"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Windows Mixed Reality 설정
 
@@ -16,7 +16,7 @@ ms.locfileid: "96843131"
 
 Windows Mixed Reality를 실행 하려면 다음이 필요 합니다.
 
-* 호환 되는 혼합 현실 모던 헤드셋. [자세히 알아보기](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
+* 호환 되는 혼합 현실 모던 헤드셋. [자세한 정보](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
 * [Windows Mixed Reality READY PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) 와 헤드셋에 대 한 올바른 포트
 * 동작 [컨트롤러](controllers-in-wmr.md), Xbox 컨트롤러 또는 마우스 및 키보드
 * 마이크가 있는 헤드폰 (헤드셋에서 기본 제공 되지 않는 경우)
@@ -42,7 +42,7 @@ Windows Mixed Reality를 실행 하려면 다음이 필요 합니다.
 
 기본 제공 라디오 없이 헤드셋을 사용 하는 경우 PC에 연결 하 여 동작 컨트롤러를 설정 해야 합니다. 2018 이후 제조 된 대부분의 헤드셋에는 기본 제공 라디오가 있습니다.
 
-Xbox 게임 패드 또는 키보드와 마우스를 사용 하려는 경우에는 컨트롤러를 페어링 하지 않아도 됩니다.  컨트롤러를 사용 하려는 경우에는 해당 컨트롤러를 페어링 해야 할 수도 있습니다.
+Xbox 게임 패드 또는 키보드와 마우스를 사용 하려는 경우에는 컨트롤러를 페어링 하지 않아도 됩니다.  컨트롤러를 사용 하려는 경우에는 컨트롤러를 페어링 해야 합니다.
 
 **참고**: Windows Mixed Reality 동작 컨트롤러에는 Bluetooth 4.0이 필요 합니다. PC에 기본 제공 된 Bluetooth가 없는 경우에는 Bluetooth 4.0을 지 원하는 USB Bluetooth 어댑터를 연결 하 여 동작 컨트롤러를 사용 하도록 설정 해야 합니다. 헤드셋에서 기본 제공 라디오를 사용 하는 데에는 Bluetooth 어댑터가 필요 하지 않습니다.
 
@@ -56,7 +56,7 @@ Xbox 게임 패드 또는 키보드와 마우스를 사용 하려는 경우에�
 
 **옵션 1: 모든 환경 (공간 규모가 라고도 함)에 대해 설정** 하면 대화방을 탐색할 수 있으며, 가장 몰입가 혼합 된 현실 환경입니다. 혼합 현실에 대해 최소 5 피트 x 7 피트 (1.5 미터 x 2 미터)의 공간을 선택 하는 것이 좋습니다.
 
-**옵션 2: 사용자의 책상에서 작동 하는 (책상 크기 조정 라고도 함) 환경에 대해 설정** 합니다. 공간이 크지 않은 경우 좋은 옵션입니다. 또한 경계 없이 헤드셋을 사용 하는 것을 의미 합니다. 물리적 장애물을 방지 하는 데 도움이 되는 경계를 갖지 않으므로 한 곳에 유지 해야 합니다. 또한 일부 앱 및 게임은 경계와 함께 사용 되도록 설계 되었으므로 의도 한 대로 작동 하지 않을 수 있습니다.
+**옵션 2: 사용자의 책상에서 작동 하는 (책상 크기 조정 라고도 함) 환경에 대해 설정** 합니다. 공간이 크지 않은 경우 좋은 옵션입니다. 또한 경계 없이 헤드셋을 사용 하는 것을 의미 합니다. 물리적 장애물을 방지 하는 데 도움이 되는 경계를 갖지 않으므로 한 곳에 유지 해야 합니다. 일부 앱 및 게임은 경계 환경으로 설계 되지 않으므로 의도 한 대로 작동 하지 않을 수 있습니다.
 
 ![설정 선택](images/1050px-chooseasetup.png)
 
@@ -86,11 +86,11 @@ Xbox 게임 패드 또는 키보드와 마우스를 사용 하려는 경우에�
 
 ### <a name="if-you-choose-set-me-up-for-seated-and-standing"></a>"시작 및 고정에 대해 설정"을 선택 하는 경우
 
-이 옵션을 선택 하는 경우 추가 단계를 수행 하지 않아도 됩니다.
+이 옵션을 선택 하는 경우에는 추가 단계가 필요 하지 않습니다.
 
 ## <a name="what-is-the-maximum-size-of-the-boundary"></a>경계의 최대 크기는 얼마 인가요?
 
-Windows Mixed Reality에서 지원 되는 최대 경계 크기는 중앙에서 18x18ft (5.7 x 5.7 m) 또는 13 ft (4 m) 반경입니다.  경계 크기는 앵커 지점과 경계의 안정성을 위해 이동할 수 있는 앵커 지점의 거리에 따라 달라 집니다.  Windows Mixed Reality는 플랫폼의 단계 추상화를 기반으로 하며, 단계는에서 이동 하는 공간입니다. 해당 단계는 거의 모든 앱에서 사용 하는 단일 앵커에 의존 합니다. 즉, 단일 좌표계만 있기 때문에 Vive 및 Oculus가 함께 사용 됩니다.  이는 내부 추적을 사용 하는 경우에 중요 합니다 .이는 앵커 지점에서 더 멀리 이동할 때 헤드셋 추적이 안정적으로 경계를 유지할 수 있기 때문입니다.  경계는 물리적 장애물을 방지 하기 위해 고안 된 것 이며,이는 이동 하는 중심에서 더 많은 문제를 해결 하는 데 도움이 됩니다.  최대 경계 크기를 결정 하는 두 가지 요인이 있습니다. Windows Mixed Reality 헤드셋이 경계와 헤드셋 케이블의 길이에 가장 적합 한 공간 크기 조정 환경을 제공할 수 있는 최대 거리 (대부분의 Windows Mixed Reality 헤드셋은 10 피트 (3 m)).
+Windows Mixed Reality에서 지원 되는 최대 경계 크기는 중앙에서 18x18ft (5.7 x 5.7 m) 또는 13 ft (4 m) 반경입니다. 경계 크기는 앵커 지점과 경계의 안정성을 위해 이동할 수 있는 앵커 지점의 거리에 따라 달라 집니다.  Windows Mixed Reality는 단계 추상화를 기반으로 하며, 단계는에서 이동 하는 공간입니다. 해당 단계는 거의 모든 앱에서 가정 하는 단일 앵커에 종속 됩니다 .이는 Vive와 Oculus가 단일 좌표계로 작동 하는 방식입니다.  이는 내부 추적을 사용 하는 경우에 중요 합니다 .이는 앵커 지점에서 더 멀리 이동할 때 헤드셋 추적이 안정적으로 경계를 유지할 수 있기 때문입니다.  경계는 물리적 장애물을 방지 하기 위해 고안 된 것 이며,이는 이동 하는 중심에서 더 많은 문제를 해결 하는 데 도움이 됩니다.  최대 경계 크기를 결정 하는 두 가지 요인이 있습니다. Windows Mixed Reality 헤드셋이 경계와 헤드셋 케이블의 길이에 가장 적합 한 공간 크기 조정 환경을 제공할 수 있는 최대 거리 (대부분의 Windows Mixed Reality 헤드셋은 10 피트 (3 m)).
 
 ## <a name="set-up-speech"></a>음성 설정
 
@@ -100,7 +100,7 @@ Windows Mixed Reality에서 지원 되는 최대 경계 크기는 중앙에서 1
 
 ## <a name="set-up-your-audio-headset"></a>오디오 헤드셋 설정
 
-Ic AKG 헤드폰 및 이중 마이크 배열을 사용 하 여 Samsung HMD Odyssey를 구매한 경우를 제외 하 고 마이크와 헤드폰을 모두 사용 하 여 오디오 헤드셋을 받고 헤드셋의 3.5-mm 오디오 잭에 연결 해야 합니다. 헤드셋의 3.5-mm 오디오는 헤드셋 모델에 따라 헤드셋의 아래쪽에 있거나 헤드셋 센터에 연결 된 짧은 오디오 케이블의 끝에 있습니다.
+Ic AKG 헤드폰 및 이중 마이크 배열을 사용 하 여 Samsung HMD Odyssey를 구매한 경우를 제외 하 고 마이크와 헤드폰을 모두 사용 하 여 오디오 헤드셋을 받고 헤드셋의 3.5-mm 오디오 잭에 연결 해야 합니다. 헤드셋의 3.5-mm 오디오 잭이 헤드셋의 아래쪽에 있거나 헤드셋 모델에 따라 헤드셋 센터에 연결 된 짧은 오디오 케이블의 끝에 있습니다.
 
 ## <a name="adjusting-your-headsets-display-settings"></a>헤드셋의 디스플레이 설정 조정
 
@@ -118,7 +118,9 @@ Windows Mixed Reality는 PC의 하드웨어 구성에 따라 품질 및 성능�
 
 * 이 설정은 Windows Mixed Reality 컴퍼지션 스택에 대해 기본적으로 렌더링 (예: 4320x2160) 할 수 있는 옵션을 제공 하거나, 컴퍼지션 스택이 더 낮은 해상도 및 upscale (예: 2880x1440에서 렌더링 하 고, upscale에서 4320x2160으로 렌더링)를 렌더링 하는 옵션을 제공 합니다.
 * 기본 설정은 헤드셋에서 가능한 최상의 시각적 품질을 제공 하기 위해 기본적으로 렌더링 하는 것입니다 (예: **4320 x 2160 (최고 품질)** 옵션).
-* PC가 해상도가 더 높은 헤드셋의 최소 그래픽 하드웨어 요구 사항을 충족 하지 않는 경우 또는 그래픽 성능 문제가 발생 하는 경우 **자동 자동 확장 (최상의 성능)** 옵션을 선택 하 여 사용해 보세요.
+* 다음과 같은 경우 **자동 upscaling (최상의 성능)** 옵션을 사용 합니다.
+    * PC가 해상도가 높은 헤드셋의 최소 그래픽 하드웨어 요구 사항을 충족 하지 않습니다.
+    * 그래픽 성능 문제가 발생 하 고 있습니다.
 
 이 설정은 Windows 10, 버전 1903 이상에서 사용할 수 있습니다.
 
@@ -130,7 +132,7 @@ Windows Mixed Reality는 PC의 하드웨어 구성에 따라 품질 및 성능�
 
 이 고급 설정은 기본 헤드셋 디스플레이 새로 고침 빈도 환경을 재정의 합니다.
 
-* **자동 (기본값)**: PC의 하드웨어 구성에 따라 60 hz 또는 90 hz 환경을 자동으로 선택 합니다.
+* **자동 (기본값)**: PC의 하드웨어 구성에 따라 60 hz 또는 90-hz 환경을 자동으로 선택 합니다.
 * **60 Hz**
 * **90 Hz**
 
@@ -175,7 +177,7 @@ Windows Mixed Reality 홈에서 새로운 Chromium 기반 Microsoft Edge를 사�
 
 혼합 현실를 두 번째로 입력 하는 것은 PC에 연결 되어 있는 동안 헤드셋을 다시 배치 하는 것 만큼 쉽습니다. 시작 메뉴에서 열어 혼합 현실 포털 응용 프로그램을 수동으로 시작할 수도 있습니다. 입력 및 오디오는 설정 하면 헤드셋으로 자동으로 라우팅하거나 키보드에서 **Windows + Y** 를 눌러 수동으로 트리거할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 * [커뮤니티에 질문하기](https://answers.microsoft.com)
 * [지원 문의](https://support.microsoft.com/contactus/)

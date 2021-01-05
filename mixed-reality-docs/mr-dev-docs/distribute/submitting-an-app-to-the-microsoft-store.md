@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, HoloLens, 모던 헤드셋, 앱, uwp, 제출, 제출, 필터, 메타 데이터, 시스템 요구 사항, 키워드, wack, 인증, 패키지, appx, 머천다이징, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 1d37337279e46e5f0f9d5cea82813af8de9d0f76
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 92de6072300ed94873cc68dfa78531da4685d274
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96578902"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757841"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Microsoft Store에 앱 제출
 
@@ -41,13 +41,13 @@ Appx 빌드 도구에서 응용 프로그램을 Microsoft Store에 전송 하는
 
 | 필수 자산 | 권장 크기 조정 | 이미지 형식 | 자산이 표시 되는 위치 | 
 |----------|----------|----------|------------------|
-| 71x71 정사각형 로고 | 모두 |  PNG | N/A | 
+| 71x71 정사각형 로고 | 모두 |  PNG | 해당 없음 | 
 | 150x150 정사각형 로고 | 150x150 (100% scale) 또는 225x225 (150% scale) | PNG | Pin 및 모든 앱 시작 (310x310이 제공 되지 않은 경우), 스토어 검색 제안, 스토어 목록 페이지, 스토어 찾아보기, 스토어 검색 | 
-|  310x150 너비가 긴 로고 |  모두  |  PNG  |  N/A | 
+|  310x150 너비가 긴 로고 |  모두  |  PNG  |  해당 없음 | 
 |  스토어 로고 |  75x75 (150% scale)  |  PNG  |  파트너 센터, 보고서 앱, 리뷰 작성, 내 라이브러리 | 
 |  시작 화면 |  930x450 (150% scale)  |  PNG  |  2D 앱 시작 관리자 (슬레이트) | 
 
-HoloLens 용으로 개발 하는 경우 다음을 활용할 수 있는 추가 권장 자산이 있습니다.
+HoloLens 용으로 개발 하는 경우 다음을 활용할 수 있는 다른 권장 자산이 있습니다.
 
 | 권장 자산 | 권장 크기 조정 | 자산이 표시 되는 위치 | 
 |----------|----------|----------|
@@ -70,7 +70,7 @@ Visual Studio에서 새 유니버설 Windows 프로젝트를 만들 때 대상 �
 
 ### <a name="specifying-target-device-families"></a>대상 장치 패밀리 지정
 
-Windows Mixed Reality 응용 프로그램 ( [HoloLens](../hololens-hardware-details.md) 및 [몰입 형 헤드셋](../discover/immersive-headset-hardware-details.md)모두)은 유니버설 Windows 플랫폼의 일부 이므로 **windows. 유니버설** [대상 장치 제품군](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) 을 포함 하는 모든 앱 패키지는 Hololens 또는 모던 헤드셋을 사용 하는 windows 10 pc에서 실행할 수 있습니다. 응용 프로그램 매니페스트에서 대상 장치 제품군을 지정 하지 않은 경우 의도 하지 않은 Windows 10 장치까지 앱을 실수로 열 수 있습니다. 다음 단계를 수행 하 여 원하는 Windows 10 장치 제품군을 지정한 다음 [Microsoft Store 제출을 위해 파트너 센터에서 앱 패키지를 업로드할 때 올바른 장치 패밀리가 설정 되었는지 다시 한 번 확인 합니다.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+Windows Mixed Reality 응용 프로그램 ( [HoloLens](../hololens-hardware-details.md) 및 [몰입 형 헤드셋](../discover/immersive-headset-hardware-details.md)모두)은 유니버설 Windows 플랫폼의 일부 이므로 **windows. 유니버설** [대상 장치 제품군](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) 을 포함 하는 모든 앱 패키지는 Hololens 또는 모던 헤드셋을 사용 하는 windows 10 pc에서 실행할 수 있습니다. 응용 프로그램 매니페스트에서 대상 장치 제품군을 지정 하지 않은 경우 의도 하지 않은 Windows 10 장치까지 앱을 실수로 열 수 있습니다. 아래 단계에 따라 원하는 Windows 10 장치 제품군을 지정 하 고, [Microsoft Store 제출을 위해 파트너 센터에서 앱 패키지를 업로드할 때 올바른 장치 제품군을 설정 했는지 확인 합니다.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
 * Visual Studio에서이 필드를 설정 하려면 **appxmanifest.xml** 를 마우스 오른쪽 단추로 클릭 하 고 **코드 보기** 를 선택한 다음 **targetdevicefamily 이름** 필드를 찾습니다. 기본적으로 다음 항목과 같이 표시 됩니다.
 
@@ -172,7 +172,7 @@ Windows 유니버설 플랫폼을 사용 하 여 모든 Windows 10 장치 제품
 
 Unity 프로젝트를 기반으로 하는 혼합 현실 앱을 제출 하는 경우 먼저이 [비디오](https://channel9.msdn.com/Blogs/One-Dev-Minute/How-to-publish-your-Unity-game-as-a-UWP-app) 를 참조 하세요.
 
-일반적으로 HoloLens 및/또는 모던 헤드셋에서 작동 하는 Windows Mixed Reality 앱을 제출 하는 것은 Microsoft Store에 UWP 앱을 제출 하는 것과 같습니다. [이름을 예약 하 여 앱을 만들었으면](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name) [UWP 제출 검사 목록](https://docs.microsoft.com/windows/uwp/publish/app-submissions)을 따릅니다.
+일반적으로 HoloLens 또는 모던 헤드셋에서 작동 하는 Windows Mixed Reality 앱을 제출 하는 것은 Microsoft Store에 UWP 앱을 제출 하는 것과 같습니다. [이름을 예약 하 여 앱을 만들었으면](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name) [UWP 제출 검사 목록](https://docs.microsoft.com/windows/uwp/publish/app-submissions)을 따릅니다.
 
 가장 먼저 수행할 작업 중 하나는 혼합 현실 환경에 대 한 [범주 및 하위](https://docs.microsoft.com/windows/uwp/publish/category-and-subcategory-table) 범주를 선택 하는 것입니다. **앱에 대해 가장 정확한 범주를 선택** 하는 것이 중요 합니다. 범주를 사용 하면 올바른 저장소 범주에서 응용 프로그램을 상품 하 고 관련 검색 쿼리를 사용 하 여 표시 되도록 할 수 있습니다. **VR 타이틀을 게임으로 나열 해도 앱에 대 한 노출이 더 우수 하지 않으며, 더 잘** 맞춤 되 고 복잡 한 범주에 표시 되지 않을 수 있습니다.
 
@@ -192,7 +192,7 @@ Unity 프로젝트를 기반으로 하는 혼합 현실 앱을 제출 하는 경
 먼저 앱에서 혼합 현실 환경을 제공 하는 장치 유형을 확인 해야 합니다. 장치 유형을 식별 하면 앱이 스토어의 Windows Mixed Reality 컬렉션에 포함 됩니다.
 
 "이 환경은 다음 위치에서 Windows Mixed Reality를 위해 설계 되었습니다."
-* 모던 헤드셋이 사용자의 PC에 연결 된 경우 앱에서 VR 환경을 제공 하는 경우 **PC** 상자를 확인 합니다. 앱이 몰입 형 헤드셋에서 독점적으로 실행 되도록 설정 되었는지 또는 헤드셋이 연결 된 경우 혼합 현실 모드 및/또는 보너스 콘텐츠를 제공 하는 표준 PC 게임 또는 앱 인지 여부를 확인 하는 것이 좋습니다.
+* 모던 헤드셋이 사용자의 PC에 연결 된 경우 앱에서 VR 환경을 제공 하는 경우 **PC** 상자를 확인 합니다. 앱이 몰입 형 헤드셋에서 독점적으로 실행 되도록 설정 되어 있는지 또는 헤드셋이 연결 된 경우 혼합 현실 모드 또는 보너스 콘텐츠를 제공 하는 표준 PC 게임 인지 아니면이 확인란을 선택 하는 것이 좋습니다.
 * 앱이 HoloLens에서 실행 될 때 holographic 환경을 제공 하는 경우에만 **hololens** 상자를 확인 합니다.
 * 앱이 두 장치 유형에 혼합 된 현실 환경을 제공 하는 경우 두 상자를 **모두** 선택 합니다.
 
@@ -211,11 +211,11 @@ Unity 프로젝트를 기반으로 하는 혼합 현실 앱을 제출 하는 경
 
 **입력 하드웨어:**
 
-확인란을 사용 하 여 앱에서 [음성 입력](../design/voice-input.md)에 대 한 **마이크** 를 지 원하는 경우 잠재 고객에 게 알리고, **[Xbox 컨트롤러 또는 게임 패드](../discover/hardware-accessories.md#bluetooth-gamepads)** 및/또는 **[Windows Mixed Reality 동작 컨트롤러](../design/motion-controllers.md)** 를 제공 합니다. 이 정보는 스토어의 앱 제품 세부 정보 페이지에 표시 되며 앱이 적절 한 앱/게임 컬렉션에 포함 되는 데 도움이 됩니다. 예를 들어 이동 컨트롤러를 지 원하는 모든 게임에 대해 컬렉션이 있을 수 있습니다.
+확인란을 사용 하 여 앱에서 [음성 입력](../design/voice-input.md)용 **마이크** 를 지 원하는 경우 잠재 고객에 게 문의 하 고, **[Xbox 컨트롤러 또는 게임 패드](../discover/hardware-accessories.md#bluetooth-gamepads)** 또는 **[Windows Mixed Reality 동작 컨트롤러](../design/motion-controllers.md)** 를 제공 합니다. 이 정보는 스토어의 앱 제품 세부 정보 페이지에 표시 되며 앱이 적절 한 앱/게임 컬렉션에 포함 되는 데 도움이 됩니다. 예를 들어 이동 컨트롤러를 지 원하는 모든 게임에 대해 컬렉션이 있을 수 있습니다.
 
 "최소 하드웨어" 또는 입력 형식에 대 한 "권장 하드웨어" 확인란을 선택 하는 방법에 대해 설명 합니다. 
 
-다음은 그 예입니다.  
+예를 들면 다음과 같습니다. 
 * 게임에 동작 컨트롤러가 필요 하지만 마이크를 통해 음성 입력을 허용 하는 경우 "Windows Mixed Reality 동작 컨트롤러" 옆에 있는 "최소 하드웨어" 확인란을 선택 하 고 "마이크" 옆에 있는 "권장 하드웨어" 확인란을 선택 합니다. 
 * Xbox 컨트롤러, 게임 패드 또는 동작 컨트롤러 중 하나를 사용 하 여 게임을 재생할 수 있는 경우 "Xbox 컨트롤러 또는 게임 패드" 옆에 있는 "최소 하드웨어" 확인란을 선택 하 고, 동작 컨트롤러가 게임 패드의 단계별 경험을 제공할 가능성이 있으므로 "Windows Mixed Reality 동작 컨트롤러" 옆에 있는 "권장 하드웨어" 확인란을 선택할 수 있습니다.
 
@@ -266,8 +266,8 @@ Visual Studio의 Microsoft Store에 앱 연결
 
 대부분의 경우 소비자는 Windows Mixed Reality 몰입 형 헤드셋을 구입 하기 전에 가상 현실에 대 한 경험이 없도록 제한 됩니다. 이는 강한 게임에서 발생 하는 것을 알 수 없거나 몰입 형 환경에서 자신의 편안 함 임계값에 익숙해질 수 있습니다. 많은 고객이 Windows mixed reality [pc](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)로 직장 배지가 달린 되지 않는 Pc에서 Windows mixed reality 몰입 형 헤드셋을 사용해 볼 수도 있습니다. 이러한 고려 사항 때문에 유료 현실 앱 또는 게임의 [무료 평가판](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#free-trial) 을 제공 하는 것이 좋습니다.
 
-## <a name="see-also"></a>참고 항목
-* [혼합 현실이란?](../discover/mixed-reality.md)
+## <a name="see-also"></a>추가 정보
+* [혼합 현실 이란?](../discover/mixed-reality.md)
 * [개발 개요](../develop/development.md)
 * [앱 보기](../design/app-views.md)
 * [혼합 현실 성능 이해](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)

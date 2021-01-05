@@ -6,16 +6,16 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, 디자인, 3D 앱 시작 관리자, 모던 헤드셋, 라이브 큐브, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋, UWP, Win32, 조명, 색
-ms.openlocfilehash: a501b4bdc86df17f6d005c2f7ccf4fe6a94a4b43
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 2edb09e47da5bcbae34a37f004853002f3f65cf3
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703479"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757731"
 ---
 # <a name="3d-app-launcher-design-guidance"></a>3D 앱 시작 관리자 디자인 지침
 
-Windows Mixed Reality 몰입 (VR) 헤드셋에 배치 하는 경우에는 산 및 물로 둘러싸인 절벽에 집으로 시각화 된 Windows Mixed Reality 홈을 입력 합니다 ( [다른 환경을 선택 하 고 직접 만들](../design/add-custom-home-environments.md)수도 있음). 이 홈의 공간 내에서 사용자가 원하는 방식으로 관심 있는 3D 개체와 앱을 자유롭게 정렬 하 고 구성할 수 있습니다. **3d 앱 시작 관리자** 는 응용 프로그램을 시작 하도록 선택할 수 있는 사용자의 혼합 현실 집에 있는 "물리적" 개체입니다.
+Windows Mixed Reality 몰입 (VR) 헤드셋에 배치 하는 경우 Windows Mixed Reality 홈을 입력 합니다. Home은 산맥 및 물로 둘러싸인 절벽에서 집으로 시각화 되지만 [다른 환경을 선택 하 고 직접 만들](../design/add-custom-home-environments.md)수도 있습니다. 사용자는 홈의 공간 내에서 원하는 방식으로 관심 있는 3D 개체와 앱을 자유롭게 정렬 하 고 구성할 수 있습니다. **3d 앱 시작 관리자** 는 응용 프로그램을 시작 하도록 선택할 수 있는 사용자의 혼합 현실 집에 있는 "물리적" 개체입니다.
 
 ![예: Floaty Bird 3D 앱 시작 관리자](images/20171016-151526-mixedreality1-1200px-1000px.jpg)<br>
 *Floaty Bird 3D 앱 시작 관리자 예제 (가상 앱)*
@@ -56,7 +56,7 @@ Windows Mixed Reality 몰입 (VR) 헤드셋에 배치 하는 경우에는 산 �
 
 ### <a name="recognizable"></a>읽을
 
-3D 앱 시작 관리자는 "자신의 앱의 브랜드"를 표시 하는 사용자에 게 즉시 표현 해야 합니다. 앱에 별표 (*) 또는 특별히 식별 가능한 개체가 있는 경우 디자인의 큰 부분으로 사용 하는 것이 좋습니다. 혼합 현실 세계에서 개체는 단지 로고만이 아닌 사용자에 게 더 많은 관심을 그리도록 합니다. 인식 가능한 개체는 신속 하 고 명확 하 게 브랜드를 전달 합니다.
+3D 앱 시작 관리자는 "자신의 앱의 브랜드"를 표시 하는 사용자에 게 즉시 표현 해야 합니다. 앱에 별표 (*) 또는 특별히 식별 가능한 개체가 있는 경우 디자인의 중요 한 부분으로 사용 하는 것이 좋습니다. 혼합 현실 세계에서 개체는 단지 로고만이 아닌 사용자에 게 더 많은 관심을 그리도록 합니다. 인식 가능한 개체는 신속 하 고 명확 하 게 브랜드를 전달 합니다.
 
 ### <a name="volumetric"></a>대규모
 
@@ -67,7 +67,7 @@ Windows Mixed Reality 몰입 (VR) 헤드셋에 배치 하는 경우에는 산 �
         ![로고 전용 ](images/20171016-140436-mixedreality-640px.jpg) *로고 전용*
     :::column-end:::
     :::column:::
-        ![문자를 사용 하 여 더 쉽게 인식할 때 문자 사용 ](images/20171016-140557-mixedreality-640px.jpg) *More recognizable with a character*
+        ![문자를 사용 하 여 더 쉽게 인식할 때 문자 사용 ](images/20171016-140557-mixedreality-640px.jpg) 
     :::column-end:::
 :::row-end:::
 
@@ -82,11 +82,11 @@ Windows Mixed Reality 몰입 (VR) 헤드셋에 배치 하는 경우에는 산 �
 
 ## <a name="tips-for-good-3d-models"></a>좋은 3D 모델에 대 한 팁
 
-* 앱 시작 관리자에 대 한 차원을 계획할 때 약 30cm 큐브를 촬영 합니다. 따라서 1:1:1 크기 비율입니다.
+* 앱 시작 관리자에 대 한 차원을 계획할 때 약 30 cm 큐브를 촬영 합니다. 따라서 1:1:1 크기 비율입니다.
 * 모델은 1만 polygon 미만 이어야 합니다. [삼각형 개수 및 세부 정보 수준에 대 한 자세한 정보 (LODs)](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#triangle-counts-and-levels-of-detail-lods)
 * 몰입 형 헤드셋에서 테스트 합니다.
 * 가능 하면 모델의 기 하 도형에 세부 정보를 빌드 하세요. 자세한 내용은 질감을 사용 하지 마세요.
-* "물 근접" 폐쇄형 기 하 도형을 빌드합니다. 에서 모델링 되지 않은 구멍이 없습니다.
+* "물 근접" 폐쇄형 기 하 도형을 빌드합니다. 에서 모델링 되지 않는 구멍이 없습니다.
 * 개체의 기본 자료를 사용 합니다. 실제 세계에서 크 래 프 트를 만들어 보겠습니다.
 * 모델이 다른 거리와 크기에서 잘 읽도록 합니다.
 * 모델을 이동할 준비가 되 면 [자산 내보내기 지침](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#asset-requirements-overview)을 참조 하세요.
@@ -105,7 +105,7 @@ Windows Mixed Reality 몰입 (VR) 헤드셋에 배치 하는 경우에는 산 �
 
 ## <a name="how-to-handle-type"></a>형식을 처리 하는 방법
 
-* 앱 시작 관리자 (또는 그 이상)의 1/3에 대 한 형식을 구성 하는 것이 좋습니다. 사용자는 시작 관리자가 실제로 시작 관리자 임을 알 수 있도록 하는 주요 사항은 유형입니다.
+* 앱 시작 관리자 (또는 그 이상)의 1/3를 입력 하는 것이 좋습니다. 사용자는 시작 관리자가 실제로 시작 관리자 임을 알 수 있도록 하는 주요 기능을 제공 하는 것이 중요 합니다.
 * Super wide를 사용 하지 마십시오. 앱 시작 전 코어 차원의 범위 내에 유지 하려고 합니다.
 * 플랫 형식이 작동할 수 있지만 특정 환경 및 특정 환경에서 보는 것은 어려울 수 있습니다. 이를 지원 하기 위해이를 solid 개체 또는 배경으로 배치 하는 것을 고려할 수 있습니다.
 * 3D에서 형식에 차원을 추가 하는 것이 좋습니다. 형식의 면을 다른 색으로 음영을 사용 하면 가독성을 높일 수 있습니다.
@@ -144,7 +144,7 @@ Windows Mixed Reality 몰입 (VR) 헤드셋에 배치 하는 경우에는 산 �
 
 ## <a name="lighting"></a>조명
 
-앱 시작 관리자의 조명은 절벽 집 환경에서 제공 됩니다. 이 경우에는 집 전체의 여러 위치에서 시작 관리자를 테스트 하 여 밝은 및 그림자 모두에 적합 합니다. 좋은 소식은이 문서에 있는 다른 디자인 지침을 수행한 경우에는 관리자가 절벽 집에서 대부분의 조명에 매우 좋은 셰이프 여야 합니다.
+앱 시작 관리자의 조명은 절벽 집 환경에서 제공 됩니다. 이 경우에는 집 전체의 여러 위치에서 시작 관리자를 테스트 하 여 밝은 및 그림자 모두에 적합 합니다. 좋은 소식은이 문서에 있는 다른 디자인 지침을 수행한 경우에는 해당 시작 관리자가 절벽 집에서 대부분의 조명을 위한 좋은 셰이프 여야 합니다.
 
 시작 관리자가 환경에서 다양 한 조명의 화면에 표시 되는 모습을 테스트 하는 좋은 위치는 스튜디오, 미디어 객실 (Patio의 구체적인 영역)입니다. 또 다른 좋은 테스트는 반쪽 및 1/2 그림자에 배치 하 고 모양을 확인 하는 것입니다.
 
@@ -168,15 +168,15 @@ Allegorithmic [를 사용 하 여 최종](https://www.allegorithmic.com/products
 
 ### <a name="best-practices"></a>모범 사례
 
-* 앱 시작 관리자 개체가 .PBR 용으로 작성 된 경우에는 절벽 집 환경으로 변환 하는 것이 매우 간단 합니다.
+* 앱 시작 관리자 개체가 .PBR 용으로 작성 된 경우에는 절벽 집 환경으로 변환 하는 것이 간단 합니다.
 * 셰이더에는 금속/황삭 작업 흐름이 필요 합니다. Unreal .PBR 셰이더는 닫는 팩스입니다.
-* 질감을 내보내는 경우 [권장 되는 질감 크기](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#material-guidelines) 를 염두에 두십시오.
+* 질감을 내보낼 때는 [권장 되는 질감 크기](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#material-guidelines) 를 염두에 두어야 합니다.
 * 실시간 조명에 대 한 개체를 빌드해야 합니다. 즉, 다음을 의미 합니다.
   * 그림자를 구운 안 함
   * 질감에서 조명 구운 방지
   * .PBR 재질 제작 패키지 중 하나를 사용 하 여 셰이더에 대해 생성 된 올바른 맵 가져오기
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [혼합 현실 홈에서 사용할 3D 모델 만들기](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [3D 앱 시작 관리자(UWP 앱) 구현](implementing-3d-app-launchers.md)

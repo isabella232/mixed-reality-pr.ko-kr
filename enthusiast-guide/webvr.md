@@ -3,12 +3,12 @@ title: Windows Mixed Reality에서 WebVR 사용
 description: WebVR 및 Windows Mixed Reality 헤드셋에서 Microsoft Edge와 함께 사용 하는 방법을 설명 합니다.
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, WebVR, Edge, Microsoft Edge, 웹 검색
-ms.openlocfilehash: 8e8d7b5feefe5b1eccad0684808b40b63e9bbbca
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 92f1d00c7f635c88a727732fb743996a654ba775
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131857"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725604"
 ---
 # <a name="using-webvr-with-windows-mixed-reality"></a>Windows Mixed Reality에서 WebVR 사용
 
@@ -17,21 +17,21 @@ ms.locfileid: "93131857"
 
 ## <a name="what-is-webvr"></a>WebVR이란?
 
-[WebVR](https://webvr.info) 는 브라우저에서 VR 경험을 가능 하 게 하는 공개 사양입니다. 웹 사이트에서 WebVR 지원을 구현 하 고 3D 콘텐츠를 제공 하는 경우 사용자 동의를 사용 하 여 헤드셋에 몰입 형 콘텐츠를 표시할 수 있습니다.
+[WebVR](https://webvr.info) 는 브라우저에서 VR를 바로 사용할 수 있게 해 주는 오픈 사양입니다. 웹 사이트에서 WebVR 지원을 구현 하 고 3D 콘텐츠를 제공 하는 경우 사용자 동의를 사용 하 여 헤드셋에 몰입 형 콘텐츠를 표시할 수 있습니다.
 
 ## <a name="what-is-the-difference-between-webvr-and-browsing-the-web-in-vr"></a>WebVR와 VR의 웹 검색 간의 차이점은 무엇 인가요?
 
-WebVR는 웹 사이트 작성자가 페이지에 VR 기능을 추가할 수 있는 기술입니다. WebVR API는 페이지에서 3D 콘텐츠 (예: 360 학위 video, 3D 모델 또는 3D 게임)를 전체 헤드셋에 표시 하는 데 사용 됩니다. **예:** [Cnn.com/vr](http://cnn.com/vr)에서 360 비디오 보기 페이지에서 WebVR를 지 원하는 경우 단추 또는 다른 UI 요소를 추가 하 여 클릭 하 여 VR를 입력할 수 있습니다.
+WebVR는 웹 사이트 작성자가 페이지에 VR 기능을 추가할 수 있는 기술입니다. WebVR API는 페이지에서 3D 콘텐츠 (예: 360도 비디오, 3D 모델 또는 3D 게임)를 전체 헤드셋에 표시 하는 데 사용 됩니다. **예:** [Cnn.com/vr](http://cnn.com/vr)에서 360 비디오 보기 페이지에서 WebVR를 지 원하는 경우 단추 또는 다른 UI 요소를 추가 합니다 .이 요소는 VR를 입력 하도록 선택할 수 있습니다.
 
 VR에서 웹을 검색 하는 것은 Cliffhouse 내에서 2D 앱 슬레이트로 헤드셋을 입고 있는 동안 Edge 브라우저를 사용 하는 것을 의미 합니다.
 
 ## <a name="do-all-websites-support-webvr"></a>모든 websites 지원 WebVR
 
-아니요. 웹 사이트 작성자는 WebVR을 사용 하도록 옵트인 (opt in) 해야 하며, 특정 브라우저, 헤드셋 및 컨트롤러에 대해 최적화 된 사이트를 만들 수 있습니다. 예를 들어 일부 WebVR 콘텐츠는 모바일 VR 장치에 대해서만 최적화 됩니다. 또한 웹 사이트는 WebVR 콘텐츠를 명시적으로 만들고 제공 해야 한다는 점에 유의 하세요. WebVR 호환 콘텐츠가 있는 사이트의 수는 매일 증가 합니다.
+아니요. 웹 사이트 작성자는 WebVR을 사용 하도록 옵트인 (opt in) 해야 하며 특정 브라우저, 헤드셋 및 컨트롤러에 대해 최적화 된 사이트를 만들 수 있습니다. 일부 WebVR 콘텐츠는 모바일 VR 장치에 대해서만 최적화 됩니다. 또한 웹 사이트는 WebVR 콘텐츠를 명시적으로 만들고 제공 해야 한다는 점에 유의 하세요. WebVR 호환 콘텐츠가 있는 사이트의 수는 매일 증가 합니다.
 
 ## <a name="can-i-use-my-viveoculus-etc-to-view-webvr-content-in-microsoft-edge"></a>WebVR를 사용 하 여 Microsoft Edge에서 콘텐츠를 볼 수 있습니다.
 
-아니요. Edge에서 WebVR를 사용 하려면 Windows Mixed Reality 헤드셋을 사용 해야 합니다. 그러나 다른 브라우저에서 WebVR 콘텐츠에 액세스할 수 있습니다. 에서 호환 되는 장치 및 브라우저의 전체 목록을 참조 하세요. [WebVR](http://webvr.rocks/).
+아니요. Edge에서 WebVR를 사용 하려면 Windows Mixed Reality 헤드셋이 필요 합니다. 그러나 다른 브라우저에서 WebVR 콘텐츠에 액세스할 수 있습니다. 에서 호환 되는 장치 및 브라우저의 전체 목록을 참조 하세요. [WebVR](http://webvr.rocks/).
 
 ## <a name="where-can-i-find-the-webvr-developer-documentation"></a>WebVR 개발자 설명서는 어디서 찾을 수 있나요?
 
@@ -56,9 +56,9 @@ Windows Mixed Reality 헤드셋 (하드웨어 또는 시뮬레이션 사용)에�
 1. 헤드셋이 연결 되어 있는지 확인 합니다.
 2. 바탕 화면에서 또는 혼합 현실에서 Microsoft Edge를 시작 합니다.
 3. WebVR 사용 페이지로 이동 합니다.
-4. 페이지 내에서 VR 입력 단추를 클릭 합니다 .이 단추의 위치 및 시각적 표현은 웹 사이트 마다 다를 수 있습니다. 다음과 유사 하 게 표시 될 수 있습니다. \
+4. 페이지 내에서 VR 입력 단추를 선택 합니다 .이 단추의 위치 및 시각적 표현은 웹 사이트 마다 다를 수 있습니다. 다음과 유사 하 게 표시 될 수 있습니다. \
    ![VR Goggles 이미지](images/75px-enter-vr.png)
-5. 처음에 특정 도메인에서 VR를 입력 하려고 하면 브라우저는 몰입 형 보기 사용에 대 한 동의를 요청 하 고 예를 클릭 합니다. ![특정 도메인에 대 한 첫 번째 시도를 시작 하는 데 표시 되는 동의 UI](images/1053px-Webvr-consent-ui.png)
+5. 처음에 특정 도메인에서 VR를 입력 하려고 하면 브라우저는 몰입 형 보기 사용에 대 한 동의를 요청 하 고 예를 선택 합니다. ![특정 도메인에 대 한 첫 번째 시도를 시작 하는 데 표시 되는 동의 UI](images/1053px-Webvr-consent-ui.png)
 6. 헤드셋은 WebVR 콘텐츠를 표시 하기 시작 합니다.
 
 ## <a name="see-also"></a>추가 정보

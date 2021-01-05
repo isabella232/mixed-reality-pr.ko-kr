@@ -1,6 +1,6 @@
 ---
 title: Mixed Reality 학습
-description: Windows Mixed Reality를 사용 하 고 탐색 하는 방법을 설명 하는 Mixed Reality 배우기 앱을 실행 하는 방법을 설명 합니다.
+description: 알아보기 Mixed Reality 앱을 실행 하는 방법 및 Windows Mixed Reality를 탐색 하는 방법을 설명 합니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,24 +8,24 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 자습서, 시작 하기
 appliesto:
 - Windows 10
-ms.openlocfilehash: be85b88f356532df736d69f8319ca6a7337ae824
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 2cbfb171065b0f2cf616348194b286e37159d425
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132067"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726054"
 ---
 # <a name="learn-mixed-reality"></a>Mixed Reality 학습
 
 ## <a name="running-the-learning-experience-for-the-first-time"></a>처음으로 학습 환경 실행
 
-설치를 완료 한 후 혼합 현실 포털 앱은 Windows Mixed Reality를 사용 하는 방법을 설명 하는 **mixed** reality HMD에서 몰입 형 환경을 시작 해야 합니다. 시작 하려면 로드 화면에서 보석을 응시 합니다. 다음에 수행할 작업에 대 한 지침을 제공 하는 헤드셋 Cortana의 음성이 들려야 합니다.
+설치를 완료 한 후 혼합 현실 포털 앱은 **Mixed Reality 학습** 이라는 HMD에서 몰입 형 환경을 시작 해야 합니다. 이러한 몰입 형 환경에서는 Windows Mixed Reality를 사용 하는 방법을 설명 합니다. 시작 하려면 로드 화면에서 보석을 응시 합니다. 다음에 수행할 작업에 대 한 지침을 제공 하는 헤드셋 Cortana의 음성이 들려야 합니다.
 
 ![Mixed Reality 학습](images/file-learnmixedrealitystart.png)
 
-## <a name="re-run-the-learning-experience"></a>학습 환경 다시 실행
+## <a name="rerun-the-learning-experience"></a>학습 환경 다시 실행
 
-혼합 현실 알아보기 앱입니다. 앱은 [혼합 현실 홈](your-mixed-reality-home.md) 내부의 시작 메뉴에서 언제 든 지 시작할 수 있습니다. 동작 컨트롤러나 키보드 사용:
+혼합 현실 알아보기 앱입니다. 언제 든 지 [혼합 현실 홈](your-mixed-reality-home.md) 의 시작 메뉴에서 앱을 시작할 수 있습니다. 동작 컨트롤러나 키보드 사용:
 
 ### <a name="use-your-motion-controllers"></a>동작 컨트롤러 사용
 

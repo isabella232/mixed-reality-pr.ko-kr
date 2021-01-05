@@ -6,16 +6,16 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 셸, os, 플랫폼, 절벽 집, 집, 홈, 환경, 시작, 시작 메뉴, 홈 메뉴, 핀, 앱, 앱 시작, 앱 배치, 텔레포트, 이동, 탐색, 혼합 현실 헤드셋, 가상 현실 헤드셋, 가상 현실 이란?
-ms.openlocfilehash: 590e52de7caacc515e703da19e9efdc0a2b9c535
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 4d8aa88fa1057c550601feb7ad85ace15fcada54
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703449"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757691"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Windows Mixed Reality 홈 탐색
 
-Windows PC 환경이 바탕 화면에서 시작 하는 것 처럼 Windows Mixed Reality는 홈으로 시작 합니다. Windows Mixed Reality 홈은 3D 위치를 이해 하 고 탐색할 수 있는 innate 기능을 활용 합니다. HoloLens를 사용 하는 경우 홈은 실제 공간입니다. 모던 헤드셋을 사용 하 여 홈은 가상 장소입니다.
+Windows PC 환경이 바탕 화면에서 시작 하는 것 처럼 Windows Mixed Reality는 홈으로 시작 합니다. Windows Mixed Reality 홈에서는 3D 위치를 이해 하 고 탐색할 수 있는 innate 기능을 사용 합니다. HoloLens를 사용 하는 경우 홈은 실제 공간 이지만 몰입 형 헤드셋은 가상 장소입니다.
 
 또한 홈에서 시작 메뉴를 사용 하 여 앱과 콘텐츠를 열고 저장할 수 있습니다. 여러 앱을 동시에 사용 하 여 혼합 현실 콘텐츠 및 멀티태스킹을로 홈을 채울 수 있습니다. 장치를 다시 시작 하는 경우에도 홈에서 발생 하는 항목은 그대로 유지 됩니다.
 
@@ -52,17 +52,17 @@ Windows PC 환경이 바탕 화면에서 시작 하는 것 처럼 Windows Mixed 
 
 ![저장소 슬레이트는 조정 모드 (파란색 프레임)입니다. 참고 앱 바 (위쪽)가 ' 완료 ' 및 ' 제거 ' 단추를 포함 하도록 변경 되었습니다.](images/adjust-500px.png)
 
-앱 바에 다른 앱이 추가 옵션이 있을 수 있습니다. 예를 들어 Microsoft Edge는 *스크롤*, *끌기* 및 *확대/축소* 를 선택 합니다. 
+앱 바에 다른 옵션이 있을 수 있습니다. 예를 들어 Microsoft Edge는 *스크롤*, *끌기* 및 *확대/축소* 를 선택 합니다. 
 
 ![HoloLens에서 실행 되는 2D 앱에 대 한 앱 바](images/holobar-500px.png)
 
-**뒤로** 단추는 앱에서 이전에 표시 된 화면으로 다시 이동 합니다. 앱에 표시 된 환경의 시작에 도달 하면 중지 되며 다른 앱으로 이동 하지 않습니다.
+**뒤로** 단추는 앱에서 이전에 표시 된 화면으로 다시 이동 합니다. 앱에 표시 된 환경의 시작 부분에 도달 하면 중지 되며 다른 앱으로 이동 하지 않습니다.
 
 ## <a name="getting-around-your-home"></a>홈 살펴보기
 
 **HoloLens** 를 사용 하면 실제 공간으로 이동 하 여 집 사이를 이동 합니다.
 
-**모던 헤드셋** 을 사용 하 여 가상 세계의 비슷한 영역 내에서 이동할 수 있도록 playspace를 비슷하게 시작 하 고 살펴볼 수 있습니다. 더 긴 거리를 이동 하려면 컨트롤러에서 엄지 스틱을 거의 "워크"로 사용 하거나 *teleportation* 를 사용 하 여 더 긴 거리를 즉시 이동할 수 있습니다.
+**모던 헤드셋** 을 사용 하면 가상 세계의 비슷한 영역 내에서 이동할 수 있도록 playspace를 시작 하 고 살펴볼 수 있습니다. 더 많은 거리를 이동 하려면 컨트롤러에서 엄지 스틱을 사용 하 여 가상으로 "안내" 하거나 *teleportation* 를 사용 하 여 더 긴 거리를 즉시 이동할 수 있습니다.
 
 ![Windows Mixed Reality 홈의 Teleportation](images/teleportation-500px.png)
 
@@ -83,11 +83,11 @@ Windows PC 환경이 바탕 화면에서 시작 하는 것 처럼 Windows Mixed 
 
 ## <a name="immersive-headset-input-support"></a>모던 헤드셋 입력 지원
 
-[Windows Mixed reality 몰입 형 헤드셋](immersive-headset-hardware-details.md) 은 Windows mixed reality 홈을 탐색 하기 위한 여러 입력 형식을 지원 합니다. HoloLens는 실제로 안내 하 고 환경을 확인 하기 때문에 탐색을 위한 액세서리 입력을 지원 하지 않습니다. 그러나 HoloLens는 앱과 상호 작용 하기 위한 [입력을 지원](hardware-accessories.md) 합니다.
+[Windows Mixed reality 몰입 형 헤드셋](immersive-headset-hardware-details.md) 은 Windows mixed reality 홈을 탐색 하기 위한 여러 입력 형식을 지원 합니다. HoloLens를 실제로 안내 하 고 환경을 확인 하기 때문에 HoloLens는 탐색을 위한 액세서리 입력을 지원 하지 않습니다. 그러나 HoloLens는 앱과 상호 작용 하기 위한 [입력을 지원](hardware-accessories.md) 합니다.
 
 ### <a name="motion-controllers"></a>모션 컨트롤러
 
-Windows mixed reality 환경에는 헤드셋의 센서만 사용 하 여 6 자유도를 지 원하는 Windows Mixed Reality [동작 컨트롤러가](../design/motion-controllers.md) 있습니다. 여기에는 외부 카메라 또는 마커가 필요 하지 않습니다.
+Windows mixed reality 환경에는 헤드셋의 센서만 사용 하는 6 자유도 (외부 카메라 또는 표식 필요 없음)를 지 원하는 Windows Mixed Reality [동작 컨트롤러가](../design/motion-controllers.md) 있습니다.
 
 탐색 명령은 곧 제공 될 예정입니다.
 
@@ -97,7 +97,7 @@ Windows mixed reality 환경에는 헤드셋의 센서만 사용 하 여 6 자�
   * 왼쪽, 오른쪽 또는 뒤로 엄지 스틱을 탭 하 여 왼쪽, 오른쪽 또는 뒤로 이동 합니다.
   * 왼쪽 엄지 스틱 및 대기를 클릭 한 다음, 원하는 방향으로 엄지 스틱을 이동 [합니다.](navigating-the-windows-mixed-reality-home.md#getting-around-your-home)
 * **오른쪽 엄지 스틱** 을 왼쪽 또는 오른쪽으로 눌러서 45도로 향하는 방향을 회전 합니다.
-* **A** 단추를 누르면 선택이 수행 되 고 [공기 탭](../design/gaze-and-commit.md#composite-gestures) 제스처 처럼 작동 합니다.
+* **단추를 누르면가 선택** 되 고 [공기 탭](../design/gaze-and-commit.md#composite-gestures) 제스처 처럼 작동 합니다.
 * **가이드** 단추를 누르면 [시작 메뉴가](navigating-the-windows-mixed-reality-home.md#start-menu) 표시 되 고 [블 룸](../design/system-gesture.md#bloom) 제스처 처럼 작동 합니다.
 * **왼쪽 및 오른쪽 트리거** 를 누르면 홈에서 상호 작용 하는 2d 데스크톱 앱을 확대 및 축소할 수 있습니다.
 
@@ -106,20 +106,20 @@ Windows mixed reality 환경에는 헤드셋의 센서만 사용 하 여 6 자�
 **참고:** **Windows 키 + Y** 를 사용 하 여 PC의 데스크톱과 Windows Mixed Reality 홈을 제어 하기 위해 마우스를 전환 합니다.
 
 Windows Mixed Reality 홈 내에서:
-* 마우스 **왼쪽 단추 클릭** 단추를 누르면 선택이 수행 되 고 [air 탭](../design/gaze-and-commit.md#composite-gestures) 제스처 처럼 작동 합니다.
+* 마우스 왼쪽 단추를 **클릭** 하면 마우스 단추를 선택 하 여 선택 하 고 [공기 탭](../design/gaze-and-commit.md#composite-gestures) 제스처 처럼 작동 합니다.
 * 마우스 오른쪽 단추를 **클릭** 하면 [teleportation](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) reticle이 표시 됩니다.
 * 키보드에서 **Windows** 키를 누르면 [시작 메뉴가](navigating-the-windows-mixed-reality-home.md#start-menu) 표시 되 고 [블 룸](../design/system-gesture.md#bloom) 제스처 처럼 작동 합니다.
 * 2D 데스크톱 앱에서 [gazing](../design/gaze-and-commit.md) 때 마우스 왼쪽 단추를 **클릭** 하 여 선택 하 고 **마우스 오른쪽 단추를 클릭** 하 여 상황에 맞는 메뉴를 표시 한 다음 **스크롤 휠을** 사용 하 여 PC의 데스크톱과 마찬가지로 스크롤할 수 있습니다.
 
 ## <a name="cortana"></a>Cortana
 
-[Cortana](../design/voice-input.md#hey-cortana) 는 PC 및 휴대폰에서와 마찬가지로 Windows Mixed Reality의 개인 길잡이입니다. HoloLens에는 기본 제공 마이크가 있지만 몰입 형 헤드셋에는 추가 하드웨어가 필요할 수 있습니다. Cortana를 사용 하 여 앱을 열고, 장치를 다시 시작 하 고, 온라인으로 조회 하는 등의 작업을 수행 합니다. 개발자는 Cortana를 해당 환경에 [통합](https://dev.windows.com/cortana) 하도록 선택할 수도 있습니다.
+[Cortana](../design/voice-input.md#hey-cortana) 는 PC 및 휴대폰에서와 마찬가지로 Windows Mixed Reality의 개인 길잡이입니다. HoloLens에는 기본 제공 마이크가 있지만 몰입 형 헤드셋에는 추가 하드웨어가 필요할 수 있습니다. Cortana를 사용 하 여 앱을 열고, 장치를 다시 시작 하 고, 온라인으로 항목을 조회 합니다. 개발자는 Cortana를 해당 환경에 [통합](https://dev.windows.com/cortana) 하도록 선택할 수도 있습니다.
 
 음성 명령을 사용 하 여 집 주위를 볼 수도 있습니다. 예를 들어 장치에 따라 단추 ( [응시](../design/gaze-and-commit.md) 또는 컨트롤러 사용)를 가리키고 "선택" 이라고 합니다. 다른 음성 명령에는 "이동 홈", "크게", "더 작음", "닫기" 및 "얼굴"이 포함 됩니다.
 
 ## <a name="store-settings-and-system-apps"></a>저장소, 설정 및 시스템 앱
 
-Windows Mixed Reality에는 다음과 같은 다양 한 기본 제공 앱이 있습니다.
+Windows Mixed Reality에는 다음과 같은 몇 가지 기본 제공 앱이 있습니다.
 * 앱 및 게임을 가져오는 **Microsoft Store**
 * 시스템 및 시스템 앱에 대 한 피드백을 제출 하는 **피드백 허브**
 * 시스템 설정 (네트워킹 및 시스템 업데이트 [포함](../connecting-to-wi-fi-on-hololens.md) )을 구성 하는 **설정**
@@ -134,7 +134,7 @@ Windows Mixed Reality에는 다음과 같은 다양 한 기본 제공 앱이 있
 * 모던 헤드셋에서 데스크톱 모니터를 볼 때 사용할 **데스크톱** (몰입 형 헤드셋)
 * **파일 탐색기** 장치에 있는 파일 및 폴더에 액세스
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 * [앱 보기](../design/app-views.md)
 * [모션 컨트롤러](../design/motion-controllers.md)
 * [하드웨어 액세서리](hardware-accessories.md)

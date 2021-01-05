@@ -6,18 +6,18 @@ ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
 keywords: HoloLens, HoloLens 2, PIX, 캡처, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 5dfc16f97790b47af3c24ca44c060a9a2495a320
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 598a6b891798be7059eae2eff578c6bbbae442f6
+ms.sourcegitcommit: 9d79aaa313f003dd42d5610d458031890776ee8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530452"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97822927"
 ---
 # <a name="installing-pix-for-hololens-2"></a>HoloLens 2용 PIX 설치
 
 [PIX](https://devblogs.microsoft.com/pix) 는 Windows의 DirectX 12 응용 프로그램에 대 한 성능 조정 및 디버깅 도구입니다. 
 
-## <a name="setup"></a>설치
+## <a name="setup"></a>설치 프로그램
 
 1. 호스트 PC에서 최신 PIX [릴리스]( https://devblogs.microsoft.com/pix/download) 를 잡고 USB 케이블을 통해 HoloLens 2를 PC에 연결 합니다.
 
@@ -25,7 +25,7 @@ ms.locfileid: "97530452"
 
 3. **개발자 모드** 및 **장치 포털** 을 사용 하도록 설정 합니다.
 
-* 셸에서 **설정** 열기:
+* Mixed Reality 홈에서 **설정** 열기:
 
 ![설정 단추가 강조 표시 된 HoloLens 메뉴 스크린샷](images/pix-img-01.jpg)
 
@@ -114,5 +114,5 @@ ms.locfileid: "97530452"
 
 이제 PIX를 사용할 준비가 되었습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 * [PIX 홈페이지](https://devblogs.microsoft.com/pix)

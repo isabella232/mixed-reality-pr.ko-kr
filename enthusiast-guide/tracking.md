@@ -3,29 +3,29 @@ title: Faq 추적
 description: 표준 소비자 지원 설명서를 벗어나는 Windows Mixed Reality 문제 해결을 추적 합니다.
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, 추적
-ms.openlocfilehash: 7a7e6add79af5917749ba241347d6cf719f6ed90
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 2634b95cf876a5b540710f80d3dd7f9d48b3bad9
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132097"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725834"
 ---
 # <a name="tracking-faqs"></a>Faq 추적
 
 ## <a name="my-headset-has-stopped-tracking"></a>내 헤드셋에서 추적을 중지 했습니다.
 
-표시등이 켜져 있는지 확인 하 고 헤드셋의 전면에 내부 추적 카메라를 방해 하지 않는지 아무것도 없는지 확인 합니다. 추적이 손실 된 경우 다시 시작 하는 데 몇 초 정도 걸릴 수 있습니다. 다시 시작 하지 않으면 Windows Mixed Reality 포털을 다시 시작 합니다.
+표시등이 켜져 있는지 확인 하 고 헤드셋의 전면에 내부 추적 카메라를 방해 하지 않는지 아무것도 없는지 확인 합니다. 추적이 손실 된 경우 다시 시작 하는 데 몇 초 정도 걸릴 수 있습니다. Windows Mixed Reality 포털 다시 시작은 추적을 다시 시작 하지 않습니다.
 
 ## <a name="i-can-look-around-but-i-cant-translate-im-stuck-in-3dof"></a>찾을 수는 있지만 번역할 수 없습니다.
 
-즉, 추적 시스템에서 포즈를 생성할 수 없거나 응용 프로그램에서 새 포즈 데이터를 사용 하 여 렌더링할 수 없습니다. 다음 사항을 확인합니다.
+즉, 추적 시스템에서 포즈를 생성할 수 없거나 응용 프로그램에서 새 포즈 데이터를 사용 하 여 렌더링할 수 없습니다. 문제를 해결하려면 다음을 수행합니다.
 
 * 대화방에 충분 한 조명이 있는지 확인 합니다.
 * 공간에 추적할 충분 한 세부 정보가 있는지 확인 합니다.
 * 장치를 분리 하 고, Windows Mixed Reality를 닫고, 장치를 다시 연결 합니다.
 * 메시지가 계속 발생 하면 [고객 지원](https://support.microsoft.com/) 서비스에 문의 하십시오.
 
-## <a name="the-view-in-the-hmd-is-completely-frozen"></a>HMD의 뷰가 완전히 고정 되어 있습니다.
+## <a name="the-view-in-the-hmd-is-frozen"></a>HMD의 뷰가 고정 되어 있습니다.
 
 이는 일반적으로 응용 프로그램 또는 시스템 수준 구성 요소가 실패 했음을 의미 합니다. 다음을 시도 합니다.
 
@@ -33,11 +33,11 @@ ms.locfileid: "93132097"
 2. 장치를 분리 하 고 MRP를 닫은 후 장치를 다시 연결 합니다.
 3. PC를 다시 시작 합니다.
 
-## <a name="the-world-briefly-froze-and-perhaps-tilted-or-flipped-upside-down-before-returning-to-normal"></a>전 세계에서 잠깐 돌아가서 수직으로 돌아가기 전에 상하 대칭 이동
+## <a name="the-world-briefly-froze-and-tilted-or-flipped-upside-down-before-returning-to-normal"></a>표준으로 되돌리기 전에 잠시 후에는 잠시 후에만 잠깐 회전 하 고 기울이거나 대칭 이동 합니다.
 
-이 오류는 응용 프로그램 또는 시스템 수준 구성 요소가 심각한 오류 또는 일시적인 메모리 나 CPU 리소스가 부족 하 여 발생할 수 있습니다. 확인 하려면 다음을 수행 합니다.
+이는 응용 프로그램 또는 시스템 수준 구성 요소에서 오류가 발생 하거나 일시적으로 메모리 또는 CPU 리소스가 부족 한 경우에 발생할 수 있습니다. 확인 하려면 다음을 수행 합니다.
 
-1. 작업 관리자를 열고 CPU의 20% 이상이 사용 가능한 지 확인 하 고, 400MB의 메모리를 사용할 수 있으며, 디스크 IO가 80% 미만 이어야 합니다.
+1. 작업 관리자를 열고 CPU의 20% 이상이 사용 가능한 지 확인 하 고, 400 메모리를 사용할 수 있으며, 디스크 IO가 80% 미만 이어야 합니다.
 2. **이벤트 뷰어 > Windows 로그 > 응용 프로그램** 으로 이동 하 여 중지 시점에 발생 한 오류를 찾습니다. HoloLens 센서, 혼합 현실 또는 해당 시간에 실행 중인 응용 프로그램을 참조 하는 모든 항목을 찾습니다. 이러한 로그에서 오류의 원인을 설명할 수 있습니다.
 3. 문제가 지속 되 면 PC를 다시 시작 합니다.
 

@@ -3,12 +3,12 @@ title: Windows Mixed Reality에서 SteamVR 사용
 description: Windows Mixed Reality 헤드셋에서 SteamVR 게임을 재생 하는 방법 (호환 Pc 포함)
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 게임, SteamVR, 스트림, 시스템 요구 사항
-ms.openlocfilehash: a064e448979ed256a5ed09d8b1342e287078e01d
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: e91c5b7fcaed2f048e79843c47ae613761a5d3ad
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131927"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725744"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Windows Mixed Reality에서 SteamVR 사용
 
@@ -21,7 +21,7 @@ SteamVR에 대 한 windows Mixed Reality를 사용 하면 사용자가 Windows M
 
 ## <a name="set-up-windows-mixed-reality-for-steamvr"></a>SteamVR에 대 한 Windows Mixed Reality 설정
 
-1. [Windows Mixed Reality](set-up-windows-mixed-reality.md)를 아직 설치 하지 않은 경우
+1. 아직 [Windows Mixed Reality](set-up-windows-mixed-reality.md) 를 설정 하지 않은 경우
 2. [스트림](http://store.steampowered.com/about/) 를 설치 하 고 **로그인** 하거나 **새 계정을 만듭니다.**
 3. [SteamVR](https://store.steampowered.com/app/250820/SteamVR/)를 설치 합니다. 헤드셋이 연결 된 상태에서 스트림를 시작 하면 SteamVR을 설치 하 라는 대화 상자가 표시 됩니다. 대화 상자에 표시 되는 메시지에 따라 설치 합니다.
     * 팝업이 표시 되지 않으면 *라이브러리* 의 *도구* 섹션으로 이동 하 여 SteamVR를 설치 합니다. 목록에서 SteamVR를 찾은 다음 마우스 오른쪽 단추를 클릭 하 고 *게임 설치* 를 선택 합니다.
@@ -33,7 +33,7 @@ SteamVR에 대 한 windows Mixed Reality를 사용 하면 사용자가 Windows M
 2. Windows Mixed Reality 홈이 로드 되 고 컨트롤러가 표시 되 면 바탕 화면에서 스트림 앱을 엽니다.
 3. 스트림 앱을 사용 하 여 스트림 라이브러리에서 SteamVR 게임을 시작 합니다.
 
-**팁** : 헤드셋을 사용 하지 않고 SteamVR 게임을 시작 하려면 데스크톱 앱 ( **데스크톱 > 시작** )을 사용 하 여 Windows MIXED Reality 내에서 PC 데스크톱을 보고 상호 작용 합니다.
+**팁**: 헤드셋을 사용 하지 않고 SteamVR 게임을 시작 하려면 데스크톱 앱 (**데스크톱 > 시작**)을 사용 하 여 Windows MIXED Reality 내에서 PC 데스크톱을 보고 상호 작용 합니다.
 
 ## <a name="using-motion-controllers-with-steamvr"></a>SteamVR와 함께 동작 컨트롤러 사용
 
@@ -44,7 +44,7 @@ SteamVR에 대 한 windows Mixed Reality를 사용 하면 사용자가 Windows M
 
 ## <a name="changing-the-resolution"></a>해상도 변경
 
-고해상도에서 게임을 재생 하려는 경우 언제 든 지 SteamVR-> 설정 >-응용 프로그램 창에서 응용 프로그램 해상도 슬라이더를 조정할 수 있습니다. 높은 해상도의 승수를 사용 하는 경우 게임이 PC에 더 많은 부담 **을 주는 것** 을 예측할 수 있습니다. 승수를 늘리고 성능 저하를 확인 하는 경우이 슬라이더를 기본 수준으로 다시 조정 게임을 다시 시작 하 여 변경 내용이 적용 되도록 합니다. ![ 응용 프로그램 해상도 조정](images/SteamVR_Settings_Applications.png)
+고해상도에서 게임을 재생 하려는 경우 언제 든 지 SteamVR-> 설정 >-응용 프로그램 창에서 응용 프로그램 해상도 슬라이더를 조정할 수 있습니다. * * 높은 해상도의 승수를 사용 하는 경우 게임이 PC에 더 많은 부담을 주는 것을 예측할 수 있습니다. 승수를 늘리고 성능 저하를 확인 하는 경우 슬라이더를 기본 수준으로 다시 조정 게임을 다시 시작 하 여 변경 내용이 적용 되도록 합니다.![응용 프로그램 해상도 조정](images/SteamVR_Settings_Applications.png)
 
 ## <a name="using-multiple-headsets"></a>여러 헤드셋 사용
 
@@ -58,14 +58,14 @@ Windows Mixed Reality 모던 헤드셋에서 SteamVR 사용에 대 한 성능, �
 
 SteamVR에 대 한 windows Mixed Reality는 스트림 스토어에서 설치 하는 구성 요소입니다 .이 구성 요소는 SteamVR가 Windows Mixed Reality 헤드셋과 함께 작동할 수 있도록 합니다.  이 "브리지"에 업데이트를 정기적으로 게시 하 고 스트림 자동으로 설치 합니다.
 
-업데이트를 더 자주 받으려면 공용 베타에 참여 하는 것이 좋습니다.  업데이트는 먼저 베타 사용자로 이동 하며, 사용자 의견을 사용 하 여 모든 사용자에 게 게시 하기 전에 업데이트 품질이 높은 지 확인 합니다.  베타 프로그램에 있지 않은 경우에는 궁극적으로 동일한 픽스 및 기능을 모두 얻을 수 있습니다. 단, 베타 사용자가 테스트 한 후에도 마찬가지입니다.
+업데이트를 더 자주 받으려면 공용 베타에 참여 하는 것이 좋습니다.  업데이트는 먼저 베타 사용자로 이동 하며, 사용자 의견을 사용 하 여 모든 사용자에 게 게시 하기 전에 업데이트 품질이 높은 지 확인 합니다.  베타 프로그램을 이용 하지 않는 경우 궁극적으로 동일한 픽스 및 기능을 모두 사용할 수 있습니다. 단, 베타 사용자가 테스트 한 후에도 마찬가지입니다.
 
 조인:
 
   1. 스트림에서 **라이브러리** 메뉴 아래의 드롭다운을 사용 하 여 **소프트웨어** 를 필터링 합니다.
   2. 목록에서 **SteamVR에 대 한 Windows Mixed Reality** 를 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 선택 합니다.
-  3. **베타** 탭을 클릭 합니다.
-  4. **"베타-공용 베타"** 로 옵트인 하 고 **닫기** 를 클릭 하 여 확인 합니다. 베타 액세스 코드 필드는 비워 두어야 합니다.
+  3. **베타** 탭을 선택 합니다.
+  4. **"베타-공용 베타"** 로 옵트인 하 고 **닫기** 를 선택 하 여 확인 합니다. 베타 액세스 코드 필드는 비워 두어야 합니다.
   
 ### <a name="steamvr-beta"></a>SteamVR 베타
 
@@ -75,8 +75,8 @@ SteamVR는 밸브가 의해 빌드되고 릴리스됩니다. 모든 SteamVR 헤�
 
   1. 스트림에서 **라이브러리** 메뉴 아래의 드롭다운을 사용 하 여 **도구** 를 필터링 합니다.
   2. 목록에서 **SteamVR** 를 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 선택 합니다.
-  3. **베타** 탭을 클릭 합니다.
-  4. **"베타-공용 베타"** 로 옵트인 하 고 **닫기** 를 클릭 하 여 확인 합니다.  베타 액세스 코드 필드는 비워 두어야 합니다. ![ SteamVR에 대 한 속성 대화 상자에서 SteamVR beta로 전환 합니다.](images/steamvr-beta.png)
+  3. **베타** 탭을 선택 합니다.
+  4. **"베타-공용 베타"** 로 옵트인 하 고 **닫기** 를 선택 하 여 확인 합니다.  베타 액세스 코드 필드는 비워 두어야 합니다. ![ SteamVR에 대 한 속성 대화 상자에서 SteamVR beta로 전환 합니다.](images/steamvr-beta.png)
 
 ### <a name="windows-insider-program"></a> Windows 참가자 프로그램
 
@@ -90,27 +90,27 @@ SteamVR에 대 한 Windows Mixed Reality에는 90 FPS reprojection을 더 부드
 
 사용 가능한 동작 재 프로젝션 모드는 다음과 같습니다.
 
-* **SteamVR 설정** : STEAMVR 설정 UI를 통해 동작 reprojection을 제어할 수 있습니다. 그런 다음 SteamVR 설정을 열고 비디오 > Per-Application 비디오 설정으로 이동 하 여 "동작 다듬기"에 대 한 옵션을 선택할 수 있습니다.
-* **Auto** : 게임이 너무 느리게 렌더링 되어 90 FPS를 유지 하는 경우 동작 다시 프로젝션이 자동으로 켜 집니다. 게임에서 90 FPS를 유지 하기 시작 하거나 45 FPS 미만으로 렌더링을 시작 하면 동작 reprojection이 꺼집니다. 비동기 회전 reprojection은 항상 사용 됩니다.
-* **동작 벡터** : 응용 프로그램이 항상 동작 벡터 재 프로젝션을 사용 하 여 절반 프레임 속도로 실행 되도록 합니다.
-* **없음** : 동작 다시 프로젝션을 사용 하지 않습니다.
+* **SteamVR 설정**: STEAMVR 설정 UI를 통해 동작 reprojection을 제어할 수 있습니다. 그런 다음 SteamVR 설정을 열고 비디오 > Per-Application 비디오 설정으로 이동 하 여 "동작 다듬기"에 대 한 옵션을 선택할 수 있습니다.
+* **Auto**: 게임이 너무 느리게 렌더링 되어 90 FPS를 유지 하는 경우 동작 다시 프로젝션이 자동으로 켜 집니다. 게임에서 90 FPS를 유지 하기 시작 하거나 45 FPS 미만으로 렌더링을 시작 하면 동작 reprojection이 꺼집니다. 비동기 회전 reprojection은 항상 사용 됩니다.
+* **동작 벡터**: 응용 프로그램이 항상 동작 벡터 재 프로젝션을 사용 하 여 절반 프레임 속도로 실행 되도록 합니다.
+* **없음**: 동작 다시 프로젝션을 사용 하지 않습니다.
 
 **예상 시각적 아티팩트** 
 
-1. 150% 보다 큰 응용 프로그램 해상도를 사용 하면 흐리게 표시 될 수 있습니다. 동작 reprojection 사용 하는 경우 150% 보다 작은 값을 사용 하는 것이 좋습니다.
-2. 특히 게임 내 HUDs 또는 메뉴에서 선명한 대비 가장자리 또는 텍스트는 disocclusion로 인해 일시적으로 또는 왜곡 될 수 있습니다.
+1. 150% 보다 큰 응용 프로그램 해상도를 사용 하는 경우 흐리게 표시 될 수 있습니다. 동작 reprojection 사용 하는 경우 150% 보다 작은 값을 사용 하는 것이 좋습니다.
+2. 특히 게임 HUDs 또는 메뉴에서 선명한 대비 모서리나 텍스트는 disocclusion 때문에 일시적으로 또는 왜곡 될 수 있습니다.
 3. SteamVR Home 및 PC에서 50-60 FPS를 안정적으로 적중 하지 않는 많은 게임은이 모드에서 계속 해 서 더 나쁜 환경을 제공 합니다.
-4. 일부 게임은 50% 속도 또는 대기 시간 (지연)으로 실행 되도록 보고 되었습니다. 아래의 [Windows 피드백 허브](filing-feedback.md) 지침에 따라 이러한 게임을 보고 하세요.
+4. 일부 게임은 50% 속도 또는 대기 시간 (지연)으로 실행 되도록 보고 되었습니다. 아래 [Windows 피드백 허브](filing-feedback.md) 지침에 따라 이러한 게임을 보고 합니다.
 
-처음에는 최근에 생성 된 NVidia Gpu에 대 한 실험적 지원이 제공 됩니다. Microsoft는 추가 Gpu에 대 한 동작 재 프로젝션 지원을 지속적으로 개선 하 고 개선 하 고 있으며 사용자 의견을 기다리고 있습니다.
+처음에는 최근에 생성 된 NVidia Gpu에 대 한 실험적 지원이 제공 됩니다. 계속 해 서 더 많은 Gpu에서 동작 재 프로젝션 지원을 계속 반복 하 고 개선 하 고 있으며 사용자 의견을 기다리고 있습니다.
 
 **지원 되는 gpu:** Windows Mixed Reality 호환 그래픽 드라이버가 설치 된 Nvidia GeForce GTX1060, AMD RX470 이상
 
 동작 재 프로젝션을 사용 하려면:
 
-1. 위의 지침을 사용 하 여 **SteamVR Beta에 대 한 Windows Mixed Reality** 를 옵트인 (opt in) 했는지 확인 합니다.
+1. 위의 지침에 따라 **SteamVR Beta 용 Windows Mixed Reality** 를 옵트인 (opt in) 해야 합니다.
 2. SteamVR 대시보드를 엽니다.
-3. Windows Mixed Reality 로고를 사용 하 여 왼쪽에 있는 단추를 클릭 하 여 SteamVR 설정에 대해 Windows Mixed Reality를 엽니다.
+3. Windows Mixed Reality 로고를 사용 하 여 왼쪽에 있는 단추를 선택 하 여 **SteamVR 설정에 대 한 Windows Mixed reality** 를 엽니다.
 4. 팝업 되는 UI에서 그래픽 탭을 선택 합니다.
 5. 자동 동작 다시 프로젝션을 사용 하려면 "기본 SteamVR 앱 동작 reprojection 모드"에 대해 "자동"을 선택 합니다.
 
@@ -134,24 +134,24 @@ Blue = 응용 프로그램이 gpu 바인딩되어 있으므로 동작 다시 프
 
 ## <a name="sharing-feedback-on-steamvr"></a>SteamVR에 대 한 의견 공유
 
-사용자 의견은 Windows Mixed Reality SteamVR 환경을 개선 하는 데 유용 합니다. [Windows 피드백 허브](filing-feedback.md)를 통해 모든 피드백 및 버그를 제출 하세요. 사용자 의견을 최대한 활용할 수 있도록 다음 제안을 따르세요.
+사용자 의견은 Windows Mixed Reality SteamVR 환경을 개선 하는 데 유용 합니다. [Windows 피드백 허브](filing-feedback.md)를 통해 모든 피드백과 버그를 제출 합니다. 사용자 의견을 최대한 활용 하려면 다음 제안 사항을 따르세요.
 
 1. 피드백 허브에서 "사용자 의견의 종류는 무엇 인가요?"에서 새로운 문제를 보고 하 고 있음을 표시 합니다. 섹션을 위쪽으로 이동 합니다.
 2. **Mixed Reality** 범주 및 **앱** 하위 범주를 선택 합니다.
 3. 문제 요약에 "SteamVR" 라는 단어를 입력 합니다. 그러면 피드백을 쉽게 찾을 수 있습니다.
-4. 문제가 발생 했을 때 사용 하 던 SteamVR 게임 또는 응용 프로그램을 설명 합니다.
-5. 사용자 의견에 SteamVR 시스템 보고서를 연결 하는 것을 고려 하세요. 이는 문제를 진단 하는 데 도움이 될 수 있는 추가 로그를 제공 합니다.
-    1. SteamVR 창 (컨트롤러 상태를 표시 하는 작은 창)에서 제목을 클릭 하 여 메뉴를 엽니다.
+4. 문제를 해결 하는 동안 사용 했던 SteamVR 게임 또는 응용 프로그램을 설명 합니다.
+5. 사용자 의견에 SteamVR 시스템 보고서를 연결 하는 것이 좋습니다. 이렇게 하면 문제를 진단 하는 데 도움이 될 수 있는 더 많은 로그가 제공 됩니다.
+    1. SteamVR 창 (컨트롤러 상태를 표시 하는 작은 창)에서 제목을 선택 하 여 메뉴를 엽니다.
     2. "시스템 보고서 만들기"를 선택 합니다.
     3. 파일에 저장 합니다.
     4. 생성 된 파일을 피드백 허브 항목에 직접 연결 합니다.
-6. 사용자 의견을 SteamVR 하는 경우 혼합 현실 성능 추적을 수집 하세요. 
-    1. **내 문제 다시 만들기** 단추를 클릭 합니다.
+6. SteamVR에 대 한 의견이 있는 경우 혼합 현실 성능 추적을 수집 합니다. 
+    1. **내 문제 다시 만들기** 단추를 선택 합니다.
     2. "데이터 포함" 옆의 드롭다운에서 **혼합 현실 성능** 을 선택 합니다.
-    3. 게임이 실행 중인지 확인 하 고 **캡처 시작** 을 클릭 합니다.
-    4. 게임을 재생 하 여 추적을 캡처하는 데 몇 초 정도 걸립니다. 10-15 초 넘게 추적을 캡처하지 마세요. 그렇지 않으면 너무 커서 제출할 수 없습니다.
-    5. **캡처 중지** 를 클릭 합니다.
-7. 나머지 필드를 완료 한 후 **제출** 을 클릭 합니다.
+    3. 게임이 실행 중인지 확인 하 고 **캡처 시작** 을 선택 합니다.
+    4. 게임을 재생 하 여 추적을 캡처하는 데 몇 초 정도 걸립니다. 추적을 10-15 초 넘게 캡처하지 마세요. 그렇지 않으면 너무 커서 제출할 수 없게 됩니다.
+    5. **캡처 중지** 를 선택 합니다.
+7. 나머지 필드를 완료 한 후 **제출** 을 선택 합니다.
 
 공유에 대 한 질문이 나 의견이 있는 경우 [스트림 포럼](http://steamcommunity.com/app/719950/discussions/)에서 연락할 수도 있습니다.
 

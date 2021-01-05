@@ -1,22 +1,23 @@
 ---
 title: 대화 상자
+description: 혼합 현실 응용 프로그램에서 대화 상자 오버레이 및 사용 방법에 대해 알아봅니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: 혼합 현실, HoloLens, UI 컨트롤, 상호 작용, ui, ux, UX 디자인, 공간 UI, 공간 상호 작용, 3D UI, 3D UX, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 354581b5f0c2b63e5fdb7077c0d8cdba4c96c3d3
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 752c4cc03c90e498664c61fa3c53b303a2a83a2f
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702609"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847456"
 ---
 # <a name="dialog"></a>대화 상자
 
-![대화 상자](images/MRTK_UX_Dialog.jpg)
+![예 고 HoloLens에 단추가 표시 되지 않는 대화 상자 오버레이의 스크린샷](images/MRTK_UX_Dialog.jpg)
 
-대화 상자 컨트롤은 상황별 앱 정보를 제공 하는 UI 오버레이입니다. 종종 사용자의 작업을 요청하기도 합니다. 대화 상자를 사용하여 사용자에게 중요한 정보를 알리거나 확인 또는 추가 정보를 요청한 후에 작업을 완료할 수 있습니다.
+대화 상자 컨트롤은 종종 사용자 작업을 요청 하는 상황별 앱 정보를 제공 하는 UI 오버레이입니다. 대화 상자를 사용 하 여 작업을 완료 하기 전에 사용자에 게 중요 한 정보를 제공 하 고 확인 또는 추가 정보를 요청할 수 있습니다.
 
 <br>
 
@@ -29,16 +30,16 @@ MRTK는 하나 또는 두 개의 단추 옵션을 사용 하 여 세 가지 크�
 - DialogMedium_192x128 prefab: 192x128mm
 - DialogLarge_192x192 prefab: 192x192mm
 
-![대화 상자](images/MRTK_UX_Dialog_Types.jpg)
+![HoloLens에서 실행 되는 다양 한 크기 대화 상자 오버레이 스크린샷](images/MRTK_UX_Dialog_Types.jpg)
 
 
-* 자세한 내용은 [Mrtk-대화 상자](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html) 를 참조 하세요.
+* 자세한 내용은 [Mrtk-대화 상자](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html)를 참조 하세요.
 
 <br>
 
 ---
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

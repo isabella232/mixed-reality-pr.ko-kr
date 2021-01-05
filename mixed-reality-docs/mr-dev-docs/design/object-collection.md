@@ -6,20 +6,18 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, 컨트롤, 디자인, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 개체 컬렉션, 2D, 3D, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 41087c4a09e72b199c1ab03f504343bf7d6b1ba8
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: a459d03246b8df4c17d523f57ece54997849c209
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703409"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847208"
 ---
 # <a name="object-collection"></a>개체 컬렉션
 
 ![Elements app의 주기 테이블에 사용 되는 개체 컬렉션입니다.](images/UX_Hero_ObjectCollection.jpg)<br>
 
-
-개체 컬렉션은 미리 정의 된 3 차원 도형에서 개체의 배열을 레이아웃 하는 데 도움이 되는 레이아웃 컨트롤입니다. 이 도구는 다양 한 표면 스타일, 즉 **평면, 원통, 구** 및 **방사형** 을 지원 합니다. 개체의 반지름과 크기와 개체 사이의 간격을 조정할 수 있습니다. 개체 컬렉션은 Unity의 모든 개체 (2D 및 3D)를 지원 합니다. **[혼합 현실 도구 키트](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)** 에서 개체 컬렉션을 만드는 데 도움이 되는 Unity 스크립트와 예제를 만들었습니다.
-
+개체 컬렉션은 미리 정의 된 3 차원 도형에서 개체의 배열을 레이아웃 하는 데 도움이 되는 레이아웃 컨트롤입니다. 다양 한 표면 스타일 (* * 평면, 원통, 구 및 **방사형**)을 지원 합니다. 개체의 반지름과 크기와 개체 사이의 간격을 조정할 수 있습니다. 개체 컬렉션은 Unity의 모든 개체 (2D 및 3D)를 지원 합니다. **[혼합 현실 도구 키트](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)** 에서 개체 컬렉션을 만드는 데 도움이 되는 Unity 스크립트와 예제를 만들었습니다.
 
 ## <a name="object-collection-examples"></a>개체 컬렉션 예제
 
@@ -41,7 +39,7 @@ ms.locfileid: "94703409"
 
 ![개체 컬렉션을 사용 하는 2D 이미지의 예](images/940px-layout-3dobjects-3.jpg)
 
-![개체 컬렉션을 사용 하는 2D 이미지의 예](images/940px-layout-2dimages.jpg)<br>
+![2D 이미지를 사용 하 여 개체 컬렉션을 사용 하는 예제](images/940px-layout-2dimages.jpg)<br>
 *2D 이미지를 사용 하 여 개체 컬렉션을 사용 하는 예제*
 
 <br>
@@ -52,13 +50,11 @@ ms.locfileid: "94703409"
 
 * [MRTK-개체 컬렉션](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)
 
-
 <br>
 
 ---
 
-
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

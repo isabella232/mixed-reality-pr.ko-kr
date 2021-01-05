@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, 혼합 현실 포털
 appliesto:
 - Windows 10
-ms.openlocfilehash: 11fa60b16a350d794a08db6a5f6120d88259c9ac
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 2beb063afb3aea5f44be116e6cb906312447dbd8
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685873"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726044"
 ---
 # <a name="mixed-reality-portal-error-messages"></a>혼합 현실 포털 오류 메시지
 
@@ -29,7 +29,7 @@ Windows Mixed Reality를 다시 시작 합니다.
 2. 검색 상자에 "장치 관리자"를 입력 하 고 목록에서 선택 합니다. 
 3. "혼합 현실 장치"를 확장 하 고 헤드셋이 나열 되는지 확인 합니다. 
 
-나열 되지 않은 경우 다음을 시도 합니다.
+표시 되지 않는 경우:
 1. 사용 가능한 경우 헤드셋을 PC의 다른 포트에 연결 합니다.
 2. Windows 업데이트에서 최신 소프트웨어 업데이트를 확인 합니다.
 3. Windows Mixed Reality 제거 및 다시 설치:
@@ -44,8 +44,8 @@ Windows Mixed Reality를 다시 시작 합니다.
 
 ## <a name="im-getting-a-check-your-display-cable-error-message"></a>"디스플레이 케이블 확인" 오류 메시지를 받고 있습니다.
 
-다음을 시도해 보세요.
+다음 단계를 사용 하 여 문제를 해결 합니다.
 * 헤드셋을 DisplayPort 1.2 이상 또는 HDMI 1.4 이상에 연결 합니다. 포트가 PC의 고급 그래픽 카드와 일치 하는지 확인 합니다.
-* 어댑터를 사용 하는 경우 4K 가능 인지 확인 합니다.
+* 어댑터를 사용 하는 경우 4K를 사용할 수 있는지 확인 합니다.
 * 다른 HDMI 포트를 사용해 보세요.
 * 외부 모니터가 HDMI 포트에 연결 된 경우 DisplayPort에 연결 하 고 헤드셋에 대해 HDMI 포트를 사용 하세요.

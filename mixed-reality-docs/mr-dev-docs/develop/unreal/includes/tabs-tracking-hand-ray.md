@@ -1,11 +1,19 @@
 ---
-ms.openlocfilehash: 23bba22801f61f6b4814991c8b3bde68d2c5f6b7
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 18ccbf3e28eaa2f61157bd9585d633c987e9af48
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002744"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717884"
 ---
+# <a name="426"></a>[4.26](#tab/426)
+
+핸드 광선의 데이터를 가져오려면 이전 섹션에서 동작 컨트롤러 데이터 가져오기 함수를 사용 해야 합니다. 반환 된 구조체에는 바늘을 만드는 데 사용할 수 있는 두 개의 매개 변수 ( **목표 위치** 및 **표적 회전**)가 포함 되어 있습니다. 이러한 매개 변수는 엘보우로 향하는 광선을 형성 합니다. 이를 수행 하 고가 가리키는 홀로그램을 찾아야 합니다.
+
+다음은 광선이 위젯에 적중 되는지 여부를 결정 하 고 사용자 지정 적중 결과를 설정 하는 예입니다.
+
+![Get 모션 컨트롤러 데이터 함수의 청사진](../images/unreal-hand-tracking-img-04.png) 
+
 # <a name="425"></a>[4.25](#tab/425)
 
 청사진에서 손 광선을 사용 하려면 **Windows Mixed REALITY HMD** 에서 작업을 검색 합니다.
@@ -138,10 +146,3 @@ C++:
 ```cpp
 static EHMDTrackingStatus UWindowsMixedRealityFunctionLibrary::GetControllerTrackingStatus(EControllerHand hand);
 ```
-# <a name="426"></a>[4.26](#tab/426)
-
-핸드 광선의 데이터를 가져오려면 이전 섹션에서 동작 컨트롤러 데이터 가져오기 함수를 사용 해야 합니다. 반환 된 구조체에는 바늘을 만드는 데 사용할 수 있는 두 개의 매개 변수 ( **목표 위치** 및 **표적 회전**)가 포함 되어 있습니다. 이러한 매개 변수는 엘보우로 향하는 광선을 형성 합니다. 이를 수행 하 고가 가리키는 홀로그램을 찾아야 합니다.
-
-다음은 광선이 위젯에 적중 되는지 여부를 결정 하 고 사용자 지정 적중 결과를 설정 하는 예입니다.
-
-![Get 모션 컨트롤러 데이터 함수의 청사진](../images/unreal-hand-tracking-img-04.png) 

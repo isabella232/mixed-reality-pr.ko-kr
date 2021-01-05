@@ -1,24 +1,24 @@
 ---
 title: 응시 및 유지
-description: (눈/헤드) 응시 및 지속 입력 모델의 일반적인 개요
+description: (눈/헤드) 응시 및 지속 입력 모델의 일반 개요입니다.
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: 혼합 현실, 응시, 지속, 상호 작용, 디자인, 눈 추적, 헤드 추적, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: d47401b65f7d62e1fe59655c42efe72ac68acfc6
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: e8005551e08248a73098bd0f9c198b0919e2471a
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702199"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847344"
 ---
 # <a name="gaze-and-dwell"></a>응시 및 유지
 
 손에 도구와 파트가 있으면 제스처가 어렵거나 불가능할 수 있습니다.
 예를 들어 과도 하 게 큰 조건에서 음성 명령은 특정 컨텍스트에서 안정적이 아닐 수도 있습니다.
 응시 및 유지는 HoloLens에서 실습 작업을 수행할 수 있는 친숙 하 고 간편한 마스터 메커니즘을 제공 합니다.
-또한 응시 및 유지는 운영 환경에서 노이즈 간섭 또는 대기 제약 조건과 무관 한 좋은 대체 방법입니다.
+또한 응시 및 유지는 운영 환경에서 노이즈 간섭 또는 대기 제약 조건과 무관 한 좋은 대체 (fallback)입니다.
 여기서는 두 가지 변형 _,_ 즉 [헤드-응시 및](gaze-and-dwell-head.md) 유지와 [눈에 잘](gaze-and-dwell-eyes.md)해 서 유지를 구분 합니다.
 
 ## <a name="scenarios"></a>시나리오
@@ -63,12 +63,13 @@ HoloLens를 착용하고 자동차 엔진을 수리하는 동안 참조 정보�
 
 ---
 
- ## <a name="see-also"></a>참조
+ ## <a name="see-also"></a>추가 정보
+
 * [시선 기반 상호 작용](eye-gaze-interaction.md)
 * [HoloLens 2의 시선 추적](eye-tracking.md)
 * [응시 및 커밋](gaze-and-commit.md)
 * [손 - 직접 조작](direct-manipulation.md)
 * [손 - 제스처](gaze-and-commit.md#composite-gestures)
-* [손 - 가리키기 및 커밋](point-and-commit.md)
+* [손 - 가리키고 커밋](point-and-commit.md)
 * [Instinctual 상호 작용](interaction-fundamentals.md)
 * [음성 입력 ](voice-input.md)

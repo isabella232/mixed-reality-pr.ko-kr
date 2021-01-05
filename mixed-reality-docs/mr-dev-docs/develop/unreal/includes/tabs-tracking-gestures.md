@@ -1,11 +1,28 @@
 ---
-ms.openlocfilehash: 50b56f6f081f682c3f3655e81aa492d84d254314
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 6b9223481ed909961dbb88d03e4b55ef68448525
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002704"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717328"
 ---
+# <a name="426"></a>[4.26](#tab/426)
+
+### <a name="windows-mixed-reality"></a>Windows Mixed Reality
+
+![제스처 함수 구성에 연결 된 이벤트 begin play의 청사진](../images/unreal-hand-tracking-img-09.png)
+
+그런 다음 코드를 추가 하 여 다음 이벤트를 구독 해야 합니다.
+
+![Windows 공간 입력 보유, 탭 및 왼쪽 조작 제스처의 청사진 ](../images/unreal/key-events.png)
+ ![ 세부 정보 패널의 windows 공간 입력 탭 제스처 옵션 스크린샷](../images/unreal/key-events2.png)
+
+### <a name="openxr"></a>OpenXR
+
+OpenXR에서 제스처 이벤트는 입력 파이프라인을 통해 추적 됩니다. 직접 상호 작용을 사용 하는 경우 장치에서 탭을 자동으로 인식 하 고 다른 제스처는 선택할 수 없습니다. 이러한 이름을 OpenXRMsftHandInteraction Select 및 그립 매핑 이라고 합니다. 구독을 사용 하도록 설정 하지 않아도 됩니다. 다음과 같이 프로젝트 설정/엔진/입력에서 이벤트를 선언 해야 합니다.
+
+![OpenXR 동작 매핑의 스크린샷](../images/unreal-hand-tracking-img-12.png)
+
 # <a name="425"></a>[4.25](#tab/425)
 
 **Windows Mixed Reality 공간 입력** 및 호출 하는 `WindowsMixedRealitySpatialInputFunctionLibrary.h` 코드 파일에를 추가 하 여 c + + 함수에서 청사진 함수를 찾을 수 있습니다.
@@ -87,19 +104,3 @@ const FKey FSpatialInputKeys::RightNavigationYGesture(RightNavigationYGestureNam
 const FKey FSpatialInputKeys::RightNavigationZGesture(RightNavigationZGestureName);
 ```
 
-# <a name="426"></a>[4.26](#tab/426)
-
-### <a name="windows-mixed-reality"></a>Windows Mixed Reality
-
-![제스처 함수 구성에 연결 된 이벤트 begin play의 청사진](../images/unreal-hand-tracking-img-09.png)
-
-그런 다음 코드를 추가 하 여 다음 이벤트를 구독 해야 합니다.
-
-![Windows 공간 입력 보유, 탭 및 왼쪽 조작 제스처의 청사진 ](../images/unreal/key-events.png)
- ![ 세부 정보 패널의 windows 공간 입력 탭 제스처 옵션 스크린샷](../images/unreal/key-events2.png)
-
-### <a name="openxr"></a>OpenXR
-
-OpenXR에서 제스처 이벤트는 입력 파이프라인을 통해 추적 됩니다. 직접 상호 작용을 사용 하는 경우 장치에서 탭을 자동으로 인식 하 고 다른 제스처는 선택할 수 없습니다. 이러한 이름을 OpenXRMsftHandInteraction Select 및 그립 매핑 이라고 합니다. 구독을 사용 하도록 설정 하지 않아도 됩니다. 다음과 같이 프로젝트 설정/엔진/입력에서 이벤트를 선언 해야 합니다.
-
-![OpenXR 동작 매핑의 스크린샷](../images/unreal-hand-tracking-img-12.png)

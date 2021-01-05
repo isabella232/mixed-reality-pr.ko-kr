@@ -6,22 +6,22 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 앱에서 바로 구매, hololens, XAML, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 07601ab4961e14ff43dbc149f7d8cb5731d24013
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 905c1be72bf2a3d6fa167cab68a4cb71e6538acc
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703179"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757785"
 ---
 # <a name="in-app-purchases"></a>앱에서 바로 구매
 
 앱 내 구매는 HoloLens에서 지원 되지만 몇 가지 작업을 설정 해야 합니다.
 
-앱 구매 기능에서을 활용 하려면 다음을 수행 해야 합니다.
+앱 구매 기능에서을 사용 하려면 다음을 수행 해야 합니다.
 * 슬레이트로 표시할 XAML [2d 뷰](../design/app-views.md) 만들기
 * 이로 전환 하 여 배치를 활성화 하면 몰입 형 보기가 남습니다.
 * API: wait [Currentapp. RequestProductPurchaseAsync ("DurableItemIAPName");](https://docs.microsoft.com/uwp/api/windows.applicationmodel.store.currentapp#Windows_ApplicationModel_Store_CurrentApp_RequestProductPurchaseAsync_System_String_) 를 호출 합니다.
 
-이 API는 앱 내 구매 이름, 설명 및 가격을 표시 하는 stock Windows OS 팝업을 표시 합니다. 그러면 사용자가 구매 옵션을 선택할 수 있습니다. 작업이 완료 되 면 앱은 사용자가 [몰입 형 보기로](../design/app-views.md)다시 전환할 수 있도록 UI를 제공 해야 합니다.
+이 API는 앱 내 구매 이름, 설명 및 가격을 표시 하는 stock Windows OS 팝업을 표시 합니다. 그러면 사용자가 구매 옵션을 선택할 수 있습니다. 작업이 완료 되 면 앱은 UI를 제공 해야 합니다 .이를 통해 사용자는 [몰입 형 보기로](../design/app-views.md)다시 전환할 수 있습니다.
 
-데스크톱 기반 Windows Mixed Reality 모던 헤드셋을 대상으로 하는 앱의 경우 RequestProductPurchaseAsync API를 호출 하기 전에 XAML 뷰로 수동으로 전환할 필요가 없습니다.
+데스크톱 기반 Windows Mixed Reality 모던 헤드셋을 대상으로 하는 앱의 경우 RequestProductPurchaseAsync API를 호출 하기 전에 수동으로 XAML 뷰로 전환할 필요가 없습니다.

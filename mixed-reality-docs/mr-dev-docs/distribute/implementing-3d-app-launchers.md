@@ -6,25 +6,25 @@ ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, 로고, 아이콘, 모델링, 시작 관리자, 3D 시작 관리자, 타일, 라이브 큐브, 딥 링크, secondarytile, 보조 타일, UWP, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, XML, 경계 상자, unity
-ms.openlocfilehash: 926d0b3bb337517b65986f85f6977b3dd1975735
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 38f0932f20e3660c91b87de7bcb9d66799d9a51a
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703199"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757500"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>3D 앱 시작 관리자(UWP 앱) 구현
 
 > [!NOTE]
 > 이 기능은 몰입 형 헤드셋에 대해 RS3 (2017) 크리에이터 업데이트의 일부로 추가 되었으며 Windows 10 4 월 2018 업데이트를 사용 하 여 HoloLens에서 지원 됩니다. 응용 프로그램이 10.0.16299의 버전을 대상으로 하는 Windows SDK의 버전을 대상으로 하는 작업을 대상으로 합니다. [여기](https://developer.microsoft.com/windows/downloads/windows-10-sdk)에서 최신 Windows SDK를 찾을 수 있습니다.
 
-[Windows Mixed Reality 홈](../discover/navigating-the-windows-mixed-reality-home.md) 은 사용자가 응용 프로그램을 시작 하기 전에 수행 하는 시작 지점입니다. Windows Mixed Reality 용 UWP 응용 프로그램을 만들 때 기본적으로 앱은 앱 로고를 사용 하 여 2D 슬레이트 시작 됩니다. Windows Mixed Reality 환경을 개발 하는 경우 응용 프로그램의 기본 2D 시작 관리자를 재정의 하도록 3D 시작 관리자를 선택적으로 정의할 수 있습니다. 일반적으로 Windows Mixed Reality 홈에서 사용자를 제외 하는 몰입 형 응용 프로그램을 시작 하는 데 3D 시작을 사용 하는 것이 좋으며,이 경우에는 앱이 현재 활성화 될 때 기본 2D 시작 관리자가 선호 됩니다 [3d 딥 링크 (secondaryTile)](#3d-deep-links-secondarytiles) 를 2d UWP 앱 내 콘텐츠의 3d 시작 관리자로 만들 수도 있습니다.
+[Windows Mixed Reality 홈](../discover/navigating-the-windows-mixed-reality-home.md) 은 사용자가 응용 프로그램을 시작 하기 전에 수행 하는 시작 지점입니다. Windows Mixed Reality 용 UWP 응용 프로그램을 만들 때 기본적으로 앱은 앱 로고를 사용 하 여 2D 슬레이트 시작 됩니다. Windows Mixed Reality 환경을 개발 하는 경우 응용 프로그램의 기본 2D 시작 관리자를 재정의 하도록 3D 시작 관리자를 선택적으로 정의할 수 있습니다. 일반적으로 Windows Mixed Reality 홈에서 사용자를 제외 하는 몰입 형 응용 프로그램을 시작 하려면 3D 시작을 사용 하는 것이 좋습니다. 앱이 현재 활성화 된 경우 기본 2D 시작 관리자가 기본 설정입니다. [3d 딥 링크 (secondaryTile)](#3d-deep-links-secondarytiles) 를 2d UWP 앱 내 콘텐츠의 3d 시작 관리자로 만들 수도 있습니다.
 
 >[!VIDEO https://www.youtube.com/embed/TxIslHsEXno]
 
 ## <a name="3d-app-launcher-creation-process"></a>3D 앱 시작 관리자 만들기 프로세스
 
-3D 앱 시작 관리자를 만드는 단계는 세 가지입니다.
+3D 앱 시작 관리자를 만드는 세 가지 단계가 있습니다.
 1. [디자인 및 concepting](3d-app-launcher-design-guidance.md)
 2. [모델링 및 내보내기](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 3. 응용 프로그램에 통합 (이 문서)
@@ -72,7 +72,7 @@ Visual Studio에서 새 프로젝트를 만들면 앱의 이름과 로고가 표
 </Applications>
 ```
 
-MixedRealityModel 요소는 응용 프로그램 패키지에 저장 된 3D 자산을 가리키는 파일 경로를 허용 합니다. 현재는 .bb 파일 형식을 사용 하 여 전달 되 고 [Windows Mixed Reality 3d 자산 제작 지침](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) 에 따라 작성 된 3d 모델만 지원 됩니다. 자산은 앱 패키지에 저장 되어야 하 고 현재 애니메이션은 지원 되지 않습니다. "Path" 매개 변수를 비워 두면 Windows에서 3D 시작 관리자 대신 2D 슬레이트를 표시 합니다. **참고:** 응용 프로그램을 빌드하고 실행 하기 전에 빌드 설정에서 .bb 자산을 "콘텐츠"로 표시 해야 합니다.
+MixedRealityModel 요소는 응용 프로그램 패키지에 저장 된 3D 자산을 가리키는 파일 경로를 허용 합니다. 현재는 .bb 파일 형식을 사용 하 여 전달 되 고 [Windows Mixed Reality 3d 자산 제작 지침](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) 에 따라 작성 된 3d 모델만 지원 됩니다. 자산은 앱 패키지에 저장 되어야 하 고 애니메이션은 현재 지원 되지 않습니다. "Path" 매개 변수를 비워 두면 Windows에서 3D 시작 관리자 대신 2D 슬레이트를 표시 합니다. **참고:** 응용 프로그램을 빌드하고 실행 하기 전에 빌드 설정에서 .bb 자산을 "콘텐츠"로 표시 해야 합니다.
 
 
 ![솔루션 탐색기에서. a s b를 선택 하 고 속성 섹션을 사용 하 여 빌드 설정에서 "콘텐츠"로 표시 합니다.](images/buildsetting-content-300px.png)<br>
@@ -80,7 +80,7 @@ MixedRealityModel 요소는 응용 프로그램 패키지에 저장 된 3D 자�
 
 ### <a name="bounding-box"></a>경계 상자
 
-경계 상자는 개체 주위에 추가 버퍼 영역을 선택적으로 추가 하는 데 사용할 수 있습니다. 경계 상자는 경계 상자 중심에서 각 축의 가장자리 까지의 거리를 나타내는 중심점 및 범위를 사용 하 여 지정 됩니다. 경계 상자의 단위는 1 단위 = 1 미터에 매핑할 수 있습니다. 경계 상자를 제공 하지 않으면 하나는 개체의 메시에 자동으로 맞춰집니다. 제공 된 경계 상자가 모델 보다 작으면 망상에 맞게 크기가 조정 됩니다.
+경계 상자는 개체 주위에 추가 버퍼 영역을 선택적으로 추가 하는 데 사용할 수 있습니다. 경계 상자는 중심점 및 범위를 사용 하 여 지정 됩니다 .이 범위는 경계 상자 중심에서 각 축의 가장자리 까지의 거리를 표시 합니다. 경계 상자의 단위는 1 단위 = 1 미터에 매핑할 수 있습니다. 경계 상자를 제공 하지 않으면 개체의 메시에 자동으로 조정 됩니다. 제공 된 경계 상자가 모델 보다 작으면 망상에 맞게 크기가 조정 됩니다.
 
 경계 상자 특성에 대 한 지원은 Windows RS4 update와 함께 MixedRealityModel 요소에 대 한 속성으로 제공 됩니다. 응용 프로그램 매니페스트 맨 위에 있는 경계 상자를 먼저 정의 하려면 uap6 스키마를 추가 하 고이를 무시할 수 있는 네임 스페이스로 포함 합니다.
 
@@ -157,7 +157,7 @@ await tile.RequestCreateAsync();
 
 ### <a name="bounding-box"></a>경계 상자
 
-경계 상자는 개체 주위에 추가 버퍼 영역을 추가 하는 데 사용할 수 있습니다. 경계 상자는 경계 상자 중심에서 각 축의 가장자리 까지의 거리를 나타내는 중심점 및 범위를 사용 하 여 지정 됩니다. 경계 상자의 단위는 1 단위 = 1 미터에 매핑할 수 있습니다. 경계 상자를 제공 하지 않으면 하나는 개체의 메시에 자동으로 맞춰집니다. 제공 된 경계 상자가 모델 보다 작으면 망상에 맞게 크기가 조정 됩니다.
+경계 상자는 개체 주위에 추가 버퍼 영역을 추가 하는 데 사용할 수 있습니다. 경계 상자는 중심점 및 범위를 사용 하 여 지정 됩니다 .이 범위는 경계 상자 중심에서 각 축의 가장자리 까지의 거리를 표시 합니다. 경계 상자의 단위는 1 단위 = 1 미터에 매핑할 수 있습니다. 경계 상자를 제공 하지 않으면 개체의 메시에 자동으로 조정 됩니다. 제공 된 경계 상자가 모델 보다 작으면 망상에 맞게 크기가 조정 됩니다.
 
 ### <a name="activation-behavior"></a>활성화 동작
 
@@ -166,7 +166,7 @@ await tile.RequestCreateAsync();
 
 3D secondaryTile의 활성화 동작을 정의 하 여 사용자가 선택할 때 반응 하는 방식을 제어할 수 있습니다. 이는 순수 하 게 정보를 제공 하거나 장식 하는 혼합 현실 홈에 3D 개체를 저장 하는 데 사용할 수 있습니다. 다음 활성화 동작 유형이 지원 됩니다.
 1. 기본값: 사용자가 3D secondaryTile을 선택 하면 앱이 활성화 됩니다.
-2. 없음: 사용자가 3D secondaryTile을 선택 해도 아무것도 발생 하지 않으며 앱이 활성화 되지 않습니다.
+2. 없음: 사용자가 3D secondaryTile을 선택 하면 아무 작업도 수행 되지 않으며 앱이 활성화 되지 않습니다.
 
 ### <a name="obtaining-and-updating-an-existing-secondarytile"></a>기존 "secondaryTile" 가져오기 및 업데이트
 
@@ -196,13 +196,14 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 ## <a name="tile-notifications"></a>타일 알림
 
 타일 알림은 현재 3D 자산과 함께 업데이트를 전송 하는 것을 지원 하지 않습니다. 즉, 개발자가 다음을 수행할 수 없습니다.
+
 * 푸시 알림
 * 정기적 폴링
 * 예약 된 알림
 
 다른 타일 기능 및 특성과 2D 타일에 사용 되는 방법에 대 한 자세한 내용은 [UWP 앱에 대 한 타일 설명서](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * 3D 앱 시작 관리자를 포함 하는 [혼합 현실 모델 샘플](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) 입니다.
 * [3D 앱 시작 관리자 디자인 지침](3d-app-launcher-design-guidance.md)

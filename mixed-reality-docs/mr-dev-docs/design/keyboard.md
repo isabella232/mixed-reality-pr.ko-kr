@@ -6,19 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 키보드, MRTK, 혼합 현실 도구 키트
-ms.openlocfilehash: 52555dec04b42b7865e8d358d57cbc9112a7a326
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: b258ad7934cae76c581723d681cce32c68458b72
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703149"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847286"
 ---
 # <a name="keyboard"></a>키보드
 
 ![키보드](images/UX_Hero_Keyboard.jpg)
 
-혼합 현실 응용 프로그램은 언제 든 지 시스템 키보드를 호출할 수 있습니다. 시스템 키보드는 대상 플랫폼의 기능에 따라 동작 합니다. 예를 들어, HoloLens 2의 키보드는 직접 상호 작용을 지원 하는 반면, HoloLens의 키보드 (첫 번째 gen)는 응시 및 공기 탭 제스처 입력을 지원 합니다.
-
+혼합 현실 응용 프로그램은 언제 든 지 시스템 키보드를 호출할 수 있으며,이는 대상 플랫폼의 기능에 따라 동작 합니다. 예를 들어 HoloLens 2의 키보드는 직접 상호 작용을 지원 하는 반면 HoloLens (첫 번째 gen) 키보드는 응시 및 공기 탭을 지원 합니다.
 
 <br>
 
@@ -34,12 +33,12 @@ ms.locfileid: "94703149"
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 설명한 Unity 개발 검사점 경험을 팔로 하는 경우 다음 작업은 장치 또는 에뮬레이터에 응용 프로그램을 배포 하는 것입니다. 
+앞서 소개한 Unity 개발 경험을 팔로 하는 경우 다음 작업은 장치 또는 에뮬레이터에 응용 프로그램을 배포 하는 것입니다. 
 
 > [!div class="nextstepaction"]
 > [HoloLens 또는 Windows Mixed Reality 몰입 형 헤드셋에 배포](../develop/platform-capabilities-and-apis/using-visual-studio.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

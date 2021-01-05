@@ -6,20 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 메뉴, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 215147f0ded0c9594ddf075c1464ab04d031f2a9
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: fb64ecf4a0bc2d7a495e87d127b39aded1212a6f
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703399"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847266"
 ---
 # <a name="near-menu"></a>Near 메뉴
 
 ![Near 메뉴](images/UX_Hero_NearMenu.jpg)
 
-주변 메뉴는 [태그 동반 동작](billboarding-and-tag-along.md#what-is-a-tag-along)을 수행 하는 패널의 단추 모음입니다. 콘텐츠와 상호 작용할 수 있도록 특정 범위의 거리와 각도를 유지 합니다. 고정 단추 또는 잡기를 사용 하 고 메뉴를 사용 하 여 세계를 잠그고 태그 동반 동작을 사용 하지 않도록 설정할 수 있습니다. 이렇게 하면 부동 메뉴에 방해 하지 않고 대상 콘텐츠에 집중할 수 있습니다.
-
-Pin 단추를 눌러 태그를 다시 사용 하도록 설정 하 고 메뉴가 다시 표시 되도록 할 수 있습니다.
+가까운 메뉴는 사용자가 [태그를 따라 동작](billboarding-and-tag-along.md#what-is-a-tag-along)을 수행 하는 패널의 단추 모음입니다. 이 패널은 사용자가 콘텐츠와 편리 하 게 상호 작용할 수 있도록 설정 된 거리 범위 및 각도 내에 유지 됩니다. 세계에서 패널의 태그 동반 동작을 잠그거나 사용 하지 않도록 설정 해야 하는 경우 고정 단추 또는 잡기를 사용 하 여 메뉴를 놓습니다. 패널을 고정 하면 사용자가 혼란 없이 대상 콘텐츠에 집중할 수 있습니다. 언제 든 지 pin 단추를 눌러 태그 동반 동작을 다시 사용 하도록 설정 하 여 메뉴가 사용자를 다시 따르도록 할 수 있습니다.
 
 <br>
 
@@ -30,13 +28,11 @@ Pin 단추를 눌러 태그를 다시 사용 하도록 설정 하 고 메뉴가 
 
 * [MRTK-근접 메뉴](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_NearMenu.html)
 
-
 <br>
 
 ---
 
-
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

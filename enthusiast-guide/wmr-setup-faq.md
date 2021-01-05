@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: c789fbb19f406c6dc355e326f2f12a5d64030e32
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: bde88890f596e19dd9b5f9e87ceabbf91039af67
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131817"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725444"
 ---
 # <a name="windows-mixed-reality-setup-faq"></a>Windows Mixed Reality 설치 FAQ
 
@@ -21,10 +21,10 @@ Windows Mixed Reality 모던 헤드셋을 설정 하는 경우 발생할 수 있
 
 ## <a name="i-get-a-message-that-says-we-couldnt-download-the-window-mixed-reality-software-or-setup-is-stuck-on-the-hang-tight-while-we-do-some-downloading-page"></a>"Windows Mixed Reality 소프트웨어를 다운로드할 수 없습니다." 라는 메시지가 표시 되 면 "다운로드 하는 동안 잠시만 기다려 주세요." 페이지가 표시 됩니다.
 
-다음을 시도해 보세요.
+다음 단계를 수행합니다.
 
 * **설정 > 업데이트 & 보안 > Windows 업데이트** 로 이동 하 고 Windows 업데이트이 설정 되어 있는지 확인 합니다. 그런 다음 설치 대기 중인 모든 업데이트를 다운로드 하 여 설치 합니다.
-* PC가 인터넷에 연결 되어 있고 사용 가능한 저장소 공간이 2GB 이상 인지 확인 합니다.
+* PC가 인터넷에 연결 되어 있고 사용 가능한 저장소 공간이 2gb 이상 인지 확인 합니다.
 * PC를 다시 시작 하 고 다시 시도 하세요. 보류 중인 업데이트를 제거 하려면 여러 번 반복 하거나 Windows 업데이트 문제 해결사를 실행 해야 할 수 있습니다.
 
 > [!NOTE]
@@ -33,7 +33,7 @@ Windows Mixed Reality 모던 헤드셋을 설정 하는 경우 발생할 수 있
 
 ## <a name="i-get-a-message-that-says-something-went-wrong-and-we-couldnt-start-windows-mixed-reality"></a>"문제가 발생 하 여 Windows Mixed Reality를 시작할 수 없습니다." 라는 메시지를 받게 됩니다.
 
-다음을 시도해 보세요.
+다음 단계를 수행합니다.
 
 1. 컴퓨터에서 헤드셋을 분리 합니다 (두 케이블 모두).
 2. 컴퓨터를 다시 시작합니다.
@@ -44,11 +44,11 @@ Windows Mixed Reality 모던 헤드셋을 설정 하는 경우 발생할 수 있
 
 ## <a name="the-mixed-reality-portal-doesnt-open-when-i-plug-in-my-headset"></a>내 헤드셋에 연결 하면 혼합 현실 포털이 열리지 않음
 
-혼합 현실 포털, Windows Mixed Reality 설치를 통해 이동 하는 앱은 호환 되는 헤드셋을 연결할 때 자동으로 열리도록 설계 되었습니다. 열리지 않는 경우 시작으로 이동 하 여 검색 상자에 "Mixed Reality Portal"을 입력 하 여 앱을 엽니다. 혼합 현실 포털을 찾을 수 없는 경우 [최신 버전의 Windows로 업데이트](https://support.microsoft.com/en-us/help/12373/windows-update-faq)해야 하는 것일 수 있습니다.
+혼합 현실 포털, Windows Mixed Reality 설치를 통해 이동 하는 앱은 호환 되는 헤드셋을 연결할 때 자동으로 열리도록 설계 되었습니다. 열리지 않는 경우 시작으로 이동 하 여 검색 상자에 "Mixed Reality Portal"을 입력 하 여 앱을 엽니다. 혼합 현실 포털을 찾을 수 없는 경우 [최신 버전의 Windows로 업데이트](https://support.microsoft.com/en-us/help/12373/windows-update-faq) 해야 할 수 있습니다.
 
 ## <a name="i-get-a-message-that-says-my-pc-cant-run-windows-mixed-reality"></a>내 PC가 Windows Mixed Reality를 실행할 수 없다는 메시지가 표시 됩니다.
 
-이 메시지가 나타나면 PC가 Windows Mixed Reality를 실행 하는 데 필요한 [최소 요구 사항을](https://support.microsoft.com/help/4039260) 충족 하지 않습니다. 이는 컴퓨터의 하드웨어 설정이 Windows Mixed Reality와 호환 되지 않거나 [최신 버전의 windows로 업데이트](https://support.microsoft.com/help/12373)해야 하기 때문일 수 있습니다.
+이 메시지가 나타나면 PC가 Windows Mixed Reality를 실행 하는 데 필요한 [최소 요구 사항을](https://support.microsoft.com/help/4039260) 충족 하지 않습니다. 컴퓨터의 하드웨어 설정이 Windows Mixed Reality와 호환 되지 않거나 [최신 버전의 windows로 업데이트](https://support.microsoft.com/help/12373)해야 할 수 있습니다.
 
 그래픽 카드에 대 한 참고 사항:
 
@@ -57,11 +57,11 @@ Windows Mixed Reality 모던 헤드셋을 설정 하는 경우 발생할 수 있
 
 ## <a name="i-get-a-message-that-says-youre-nearly-therethis-pc-doesnt-meet-the-minimum-requirements-needed-to-run-windows-mixed-reality"></a>"Windows Mixed Reality를 실행 하는 데 필요한 최소 요구 사항을 충족 하지 않습니다." 라는 메시지를 받게 됩니다.
 
-이 메시지가 표시 되 면 PC가 Windows Mixed Reality의 최상의 환경에 필요한 최소 요구 사항을 충족 하지 않습니다. PC는 몰입 형 헤드셋을 실행할 수 있지만 특정 앱을 실행 하지 못하거나 성능에 문제가 있을 수 있습니다.
+이 메시지가 표시 되 면 PC가 Windows Mixed Reality의 최상의 환경에 필요한 최소 요구 사항을 충족 하지 않습니다. 사용자 PC는 몰입 형 헤드셋을 실행할 수 있지만 특정 앱을 실행 하지 못하거나 성능에 문제가 있을 수 있습니다.
 
 ## <a name="my-xbox-controller-isnt-working"></a>내 Xbox 컨트롤러가 작동 하지 않음
 
-다음을 시도해 보세요.
+다음 단계를 수행합니다.
 
 * 컨트롤러가 켜져 있고, 완전히 충전 되었으며, PC에 연결 되어 있는지 확인 합니다.
 * 컨트롤러의 배터리를 바꿉니다.
@@ -71,18 +71,18 @@ Windows Mixed Reality 모던 헤드셋을 설정 하는 경우 발생할 수 있
 
 ## <a name="my-motion-controllers-arent-working"></a>내 동작 컨트롤러가 작동 하지 않음
 
-다음을 시도해 보세요.
+다음 단계를 수행합니다.
 
 * 컨트롤러가 켜져 있고 완전히 청구 되었는지 확인 합니다.
 * 컨트롤러의 배터리를 교체 합니다.
-* 컨트롤러를 설정 하는 동안 다시 설정 하거나 다시 설정 합니다. Windows 단추 (4 초)를 길게 눌러 컨트롤러를 해제 한 다음 2 초 동안 다시 길게 눌러 설정 합니다.
+* 컨트롤러를 설정 하는 동안 다시 설정 하거나 다시 설정 합니다. Windows 단추를 길게 눌러 컨트롤러를 해제 한 다음 2 초 동안 다시 길게 눌러 설정 합니다.
 * **설정 > 장치 > Bluetooth & PC의 기타 장치로** 이동 하 여 쌍을 이루어야 하는지 확인 합니다 (페이지에 표시 되어야 함).
 
 [동작 컨트롤러에 대 한 자세한 정보](controllers-in-wmr.md)
 
 ## <a name="i-get-a-message-that-says-connect-your-headset-even-though-ive-plugged-in-my-headset"></a>헤드셋에 연결한 경우에도 "헤드셋 연결" 이라는 메시지가 표시 됩니다.
 
-다음을 시도해 보세요.
+다음 단계를 수행합니다.
 
 - 헤드셋이 컴퓨터의 올바른 포트에 연결 되어 있는지 확인 합니다. PC의 개별 그래픽 카드 및 USB 3.0 포트에 연결 해야 합니다. 올바른 포트를 확인 하는 방법은 다음과 같습니다.
     - USB 3.0 포트에는 "SS" 표시가 있는 특수 로고 ("SuperSpeed"를 나타냄)가 있습니다. 포트의 내부 부분은 일반적으로 파란색 이지만 이전 USB 2.0 포트는 일반적으로 내부에서 검정이 나 흰색입니다.
@@ -100,11 +100,11 @@ Windows Mixed Reality 모던 헤드셋을 설정 하는 경우 발생할 수 있
 
 ## <a name="the-floor-of-my-windows-mixed-reality-home-doesnt-appear-to-be-at-the-correct-height"></a>Windows Mixed Reality 홈의 높이가 올바른 높이로 표시 되지 않습니다.
 
-앱을 전 세계에 배치한 후 시작 하 여 헤드셋을 작성 하는 동안 변경 하는 **시작 > 층 조정** 을 선택 합니다. 이 앱에서 touch pad (동작 컨트롤러) 또는 방향 패드 (게임 패드)를 사용 하 여 층 높이를 조정 하도록 지정 합니다. 느낌이 올바르면 Windows 단추를 사용 하 여 홈페이지로 돌아갑니다.
+전 세계에 앱을 배치한 후 시작 하 여 헤드셋을 입고 있는 동안 변경 하는 **시작 > 층 조정** 을 선택 합니다. 이 앱에서 touch pad (동작 컨트롤러) 또는 방향 패드 (게임 패드)를 사용 하 여 바닥 높이를 조정 하도록 지시 합니다. 느낌이 올바르면 Windows 단추를 사용 하 여 홈페이지로 돌아갑니다.
 
 ## <a name="i-cant-show-a-preview-of-what-im-seeing-in-my-headset-on-my-desktop"></a>내 헤드셋에서 내가 보이는 항목의 미리 보기를 표시할 수 없습니다.
 
-Windows Mixed Reality 포털의 화면 맨 아래에는 바탕 화면 화면에 표시 되는 항목을 미리 볼 수 있는 **재생** 단추가 있습니다. 성능상의 이유로이 기능은 Windows Mixed Reality Ultra (90Hz)에서 실행 되는 Pc 에서만 사용할 수 있습니다.
+Windows Mixed Reality 포털의 화면 맨 아래에는 바탕 화면 화면에 표시 되는 항목을 미리 볼 수 있는 **재생** 단추가 있습니다. 성능상의 이유로이 기능은 Windows Mixed Reality Ultra (90 Hz)에서 실행 되는 Pc 에서만 사용할 수 있습니다.
 
 ## <a name="how-can-i-get-a-clearer-view-in-my-headset"></a>내 헤드셋에서 명확 하 게 볼 수 있는 방법
 
@@ -124,7 +124,7 @@ Windows Mixed Reality 포털의 화면 맨 아래에는 바탕 화면 화면에 
 
 ## <a name="my-wi-fi-slows-down-when-i-use-windows-mixed-reality"></a>Windows Mixed Reality를 사용 하면 내 Wi-Fi 느려집니다.
 
-2.4 g h z Wi-Fi 연결을 사용 하는 경우 동작 컨트롤러에서 Wi-fi 속도가 느려질 수 있습니다. 다음 작업 중 하나를 수행하세요.
+2.4 GHz Wi-Fi 연결을 사용 하는 경우 동작 컨트롤러에서 Wi-fi 속도가 느려질 수 있습니다. 다음 단계 중 하나를 수행 합니다.
 
 * 5 GHz Wi-Fi 연결로 전환 합니다 (사용할 수 있는 경우). 자세한 정보
 * 별도의 Bluetooth 어댑터를 사용 하 여 이동 컨트롤러를 PC에 연결 합니다. [권장 어댑터 참조](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)

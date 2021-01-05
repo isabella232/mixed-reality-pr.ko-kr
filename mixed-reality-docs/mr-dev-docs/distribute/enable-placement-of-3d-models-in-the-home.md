@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D, 모델, 홈, 장소, 세계, 모델링, 혼합 현실 홈, 웹, 앱, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 192c403ce50c3a47fb19f644af78d1150bb9aa3f
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ad35e1d010e32c4729b0d0dd58943dabdee86e09
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703189"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757811"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>혼합 현실 홈에서 3D 모델 배치 사용
 
@@ -20,7 +20,7 @@ ms.locfileid: "94703189"
 
 [Windows Mixed Reality 홈](../discover/navigating-the-windows-mixed-reality-home.md) 은 사용자가 응용 프로그램을 시작 하기 전에 수행 하는 시작 지점입니다. 일부 시나리오에서는 2D 앱 (예: Holograms 앱)을 사용 하 여 3D 모델을 혼합 현실 홈으로 직접 배치 하거나 전체 3D에서 추가 검사를 수행할 수 있습니다. *모델 추가 프로토콜* 을 사용 하 여 웹 사이트 또는 응용 프로그램의 3d 모델을 Windows Mixed Reality 홈으로 직접 보낼 수 있습니다. 여기서 [3d 앱](3d-app-launcher-design-guidance.md)시작, 2d 앱 및 holograms와 같은 상태로 유지 됩니다. 
 
-예를 들어 공간을 디자인 하기 위해 3D 가구의 카탈로그를 표시 하는 응용 프로그램을 개발 하는 경우 *모델 추가 프로토콜* 을 사용 하 여 사용자가 카탈로그에서 이러한 3d 가구 모델을 저장할 수 있습니다. 전 세계에 배치 되 면 사용자는 집에서 다른 holograms 마찬가지로 이러한 3D 모델을 이동 하 고 크기를 조정 하 고 제거할 수 있습니다. 이 문서에서는 사용자가 응용 프로그램 또는 웹에서 3D 개체를 사용 하 여 세계를 데코레이팅하는 데 사용할 수 있도록 하기 위해 *모델 추가 프로토콜* 을 구현 하는 방법에 대 한 개요를 제공 합니다.
+예를 들어 공간을 디자인 하기 위해 3D 가구의 카탈로그를 표시 하는 응용 프로그램을 개발 하는 경우 *모델 추가 프로토콜* 을 사용 하 여 사용자가 카탈로그에서 이러한 3d 가구 모델을 삽입할 수 있도록 합니다. 전 세계에 배치 되 면 사용자는 집에서 다른 holograms 마찬가지로 이러한 3D 모델을 이동 하 고 크기를 조정 하 고 제거할 수 있습니다. 이 문서에서는 사용자가 앱 또는 웹에서 3D 개체를 사용 하 여 전 세계를 사용할 수 있도록 하기 위해 *모델 추가 프로토콜* 을 구현 하는 방법에 대 한 개요를 제공 합니다.
 
 ## <a name="device-support"></a>디바이스 지원
 
@@ -89,9 +89,9 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 ## <a name="considerations-for-immersive-vr-headsets"></a>모던 (VR) 헤드셋 고려 사항
 
 * 모던 (VR) 헤드셋의 경우 혼합 현실 포털은 *모델 추가 프로토콜* 을 호출 하기 전에 실행 되 고 있지 않아도 됩니다. 이 경우 *모델 추가 프로토콜이* 혼합 현실 포털을 시작 하 고 혼합 현실 홈에서 도착 한 후 헤드셋에서 볼 수 있는 위치에 개체를 직접 배치 합니다. 
-* 혼합 현실 포털이 이미 실행 되 고 있는 바탕 화면에서 *모델 추가 프로토콜* 을 호출 하는 경우 헤드셋이 "활성" 상태 인지 확인 합니다. 그렇지 않으면 배치가 성공 하지 않습니다. 
+* 혼합 현실 포털이 이미 실행 되 고 있는 바탕 화면에서 *모델 추가 프로토콜* 을 호출 하는 경우 헤드셋이 "활성" 상태 인지 확인 합니다. 그렇지 않은 경우 배치가 성공 하지 않습니다. 
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [Windows Mixed Reality 홈에서 사용할 3D 모델 만들기](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [Windows Mixed Reality 홈 탐색](../discover/navigating-the-windows-mixed-reality-home.md)

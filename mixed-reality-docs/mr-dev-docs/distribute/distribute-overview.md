@@ -6,18 +6,18 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens, 혼합 현실, 모던 헤드셋, 앱, uwp, 제출, 제출, 필터, 메타 데이터, 시스템 요구 사항, 키워드, wack, 인증, 패키지, appx, 머천다이징
-ms.openlocfilehash: b4b82557ba274852ebb3f97058017fa2e5db1c02
-ms.sourcegitcommit: 9e9d58de4513655c7daa71ff4b5b2c2b115ab959
+ms.openlocfilehash: 632bb9c0c5bdb93041f71a4382802b02f6817f0e
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97034584"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757631"
 ---
 # <a name="distributing-your-apps"></a>앱 배포
 
 ![WMR home의 Floaty bird 3D 앱 lancher](images/distribute-hero-image.png)
 
-앱을 사용자에 게 전달 하거나 전 세계에 세밀히 하는 것이 가장 중요 하 고 때로는 개발 활동의 일부입니다. 아래에 나열 된 일련의 리소스에 대 한 프로세스를 간소화 했습니다. 모든는 사용자 또는 팀에 가장 적합 한 배포 및 배포 시나리오에 따라 달라 집니다.
+앱을 사용자에 게 전달 하거나 전 세계에 세밀히 하는 것이 가장 중요 하 고 때로는 개발 활동의 일부입니다. 사용자 또는 팀에 가장 적합 한 배포 및 배포 시나리오에 따라 달라 지는 일련의 리소스에 프로세스를 간소화 했습니다.
 
 [!INCLUDE[](includes/before-submission.md)]
 
@@ -81,7 +81,7 @@ ms.locfileid: "97034584"
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="#additional-scenarios"><strong>사용자 지정 Win32 배포</strong></a> (HoloLens 장치에는 사용할 수 없음-아래 참조)</td>
+    <td><a href="#other-scenarios"><strong>사용자 지정 Win32 배포</strong></a> (HoloLens 장치에는 사용할 수 없음-아래 참조)</td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>
@@ -91,14 +91,14 @@ ms.locfileid: "97034584"
 > [!IMPORTANT]
 > 현재는 관리 되는 장치 또는 HoloLens (첫 번째 Gen) 장치에 대해 앱 설치 관리자를 사용할 수 없습니다.
 
-## <a name="additional-scenarios"></a>추가 시나리오
+## <a name="other-scenarios"></a>기타 시나리오
 
-* 스트림 및 Game Pass를 포함 하는 Win32 응용 프로그램 배포의 경우 Win32를 생성할 수 있습니다. EXE 파일을 사용 하 여 Unity의 PC 독립 실행형 빌드 대상을 사용 하 고 선택한 플랫폼에 대 한 일반적인 앱을 제출 합니다. 
+* Win32를 생성할 수 있습니다. 스트림 및 Game Pass를 포함 하 여 Win32 응용 프로그램 배포를 위한 Unity의 PC 독립 실행형 빌드 대상을 사용 하는 EXE 파일. 이 있으면입니다. EXE를 선택 하면 선택한 플랫폼에 대 한 일반적인 방법으로 앱을 제출할 수 있습니다. 
 
-* 오프 라인 상태인 동안 HoloLens 2 응용 프로그램을 설치 해야 하는 경우 [오프 라인 보안 HoloLens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) 지침을 참조 하거나 개발자 모드를 사용 하도록 설정 하지 않고 프로 비전 패키지를 통해 앱을 설치할.
+* 오프 라인 상태인 동안 HoloLens 2 응용 프로그램을 설치 해야 하는 경우 [오프 라인 보안 HoloLens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) 지침을 참조 하거나 개발자 모드를 사용 하도록 설정 하지 않고 프로 비전 패키지를 통해 앱을 설치 합니다.
 
 * 빌드를 장치에 배포 하 고 [Visual Studio를 사용 하 여 배포 및 디버깅](../develop/platform-capabilities-and-apis/using-visual-studio.md) 하거나 [장치 포털로 응용 프로그램 패키지를 설치](https://docs.microsoft.com/hololens/holographic-custom-apps#installing-an-application-package-with-the-device-portal)하 여 개발자 모드를 사용 하는 다른 개발자와 공유할 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 * [Microsoft Store에서 응용 프로그램 찾기, 설치 및 제거](https://docs.microsoft.com/hololens/holographic-store-apps)
 

@@ -1,11 +1,23 @@
 ---
-ms.openlocfilehash: 9fdcbdfe115fa859081c28b768f9c213ac241d13
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: c5a13798ca6a73f1a6410abe310c2166b67f4626
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002725"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717319"
 ---
+# <a name="426"></a>[4.26](#tab/426)
+
+계층은 열거형으로 설명 됩니다 `EHandKeypoint` .
+
+![손 모양 keypoint bluprint 옵션 이미지](../images/hand-keypoint-bp.png)
+
+**동작 컨트롤러 데이터 가져오기** 함수를 사용 하 여 사용자의 손으로 모든 데이터를 가져올 수 있습니다. 이 함수는 **Xrmotioncontrollerdata** 구조체를 반환 합니다. 다음은 XRMotionControllerData 구조를 구문 분석 하 여 직접 공동 배치 위치를 가져오고 각 조인트의 위치에서 디버그 좌표계를 그리는 샘플 청사진 스크립트입니다.
+
+![채널 함수로 선 추적에 연결 된 get 응시 데이터 함수의 청사진](../images/unreal-hand-tracking-img-03.png)
+
+구조가 유효 하 고 정확한 지 확인 하는 것이 중요 합니다. 그렇지 않으면 위치, 회전 및 반지름 배열에 대 한 액세스에서 정의 되지 않은 동작이 발생할 수 있습니다.
+
 # <a name="425"></a>[4.25](#tab/425)
 
 `EWMRHandKeypoint`열거형은 손 모양의 뼈 계층을 설명 합니다. 청사진에 나열 된 각 손 keypoint을 찾을 수 있습니다.
@@ -84,15 +96,3 @@ static bool UWindowsMixedRealityHandTrackingFunctionLibrary::GetHandJointTransfo
 * * * Radius-뼈 밑의 반경입니다.
 * * * 반환 값-뼈가이 프레임을 추적 하면 true이 고, 뼈가 추적 되지 않으면 false입니다.
 
-
-# <a name="426"></a>[4.26](#tab/426)
-
-계층은 열거형으로 설명 됩니다 `EHandKeypoint` .
-
-![손 모양 keypoint bluprint 옵션 이미지](../images/hand-keypoint-bp.png)
-
-**동작 컨트롤러 데이터 가져오기** 함수를 사용 하 여 사용자의 손으로 모든 데이터를 가져올 수 있습니다. 이 함수는 **Xrmotioncontrollerdata** 구조체를 반환 합니다. 다음은 XRMotionControllerData 구조를 구문 분석 하 여 직접 공동 배치 위치를 가져오고 각 조인트의 위치에서 디버그 좌표계를 그리는 샘플 청사진 스크립트입니다.
-
-![채널 함수로 선 추적에 연결 된 get 응시 데이터 함수의 청사진](../images/unreal-hand-tracking-img-03.png)
-
-구조가 유효 하 고 정확한 지 확인 하는 것이 중요 합니다. 그렇지 않으면 위치, 회전 및 반지름 배열에 대 한 액세스에서 정의 되지 않은 동작이 발생할 수 있습니다.
