@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: e55c66599e47abff35b872a494a6afbb48774171
-ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
+ms.openlocfilehash: 8f6ba747c2f336194cb30241dce18bc1138143f2
+ms.sourcegitcommit: b331ec40b1e8869e6a6e7b2e32a03ff68e04b956
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859522"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97956066"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Windows Mixed Reality의 PC 호환성에 대 한 도움말 보기
 
@@ -27,13 +27,32 @@ Windows Mixed Reality를 설정 하거나 [Mixed Reality 포털](install-windows
 > * [권장 어댑터](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) 목록 확인
 > * **시작 > 설정 > 업데이트 & 보안 > 업데이트 확인을** 선택 하 여 그래픽 드라이버를 업데이트 합니다. 
 
+연락처를 받으려면 [커뮤니티에 요청](https://answers.microsoft.com)하거나 [지원 담당자](https://support.microsoft.com/contactus/)에 게 문의 하거나 [문제 해결](troubleshooting-windows-mixed-reality.md) 정보를 확인할 수 있습니다.
+
 ## <a name="youre-good-to-go"></a>이동 하는 것이 좋습니다.
 
 좋은 소식입니다. **바로 가기** 메시지가 표시 되 면 PC에서 Windows Mixed Reality를 실행할 수 있습니다. 컴퓨터 하드웨어와 구성 사이에 여전히 변형이 있으므로 혼합 현실 환경은 모든 PC에서 동일 하지 않을 수 있습니다.
 
 ## <a name="supports-some-features"></a>일부 기능 지원
 
-에서 **일부 기능을 지원** 합니다. 메시지가 표시 되는 경우 PC에서 일부 Windows Mixed Reality 환경을 실행할 수 있지만 가능한 최상의 환경을 제공 하지 못할 수 있습니다. 가능한 단점이에는 지연 그래픽, 성능 적중 횟수, 일부 응용 프로그램 및 게임을 실행할 수 없습니다. 표시 될 수 있는 메시지와 아래에서 수행할 작업을 나열 했습니다.
+에서 **일부 기능을 지원** 합니다. 메시지가 표시 되는 경우 PC에서 일부 Windows Mixed Reality 환경을 실행할 수 있지만 가능한 최상의 환경을 제공 하지 못할 수 있습니다. 가능한 단점이에는 지연 그래픽, 성능 적중 횟수, 일부 응용 프로그램 및 게임을 실행할 수 없습니다. 표시 될 수 있는 메시지 및 다음에 대해 수행할 작업을 나열 했습니다.
+
+* [이 PC에는 단일 채널 RAM이 있는 통합 그래픽 카드가 있습니다.](#this-pc-has-an-integrated-graphics-card-with-single-channel-ram)
+* [이 PC에는 호환 되지 않는 PCIe 링크로 하이브리드 그래픽 구성이 있습니다.](#this-pc-has-a-hybrid-graphics-configuration-with-an-incompatible-pcie-link)
+* [이 PC의 그래픽 드라이버는 Windows Mixed Reality에서 제대로 작동 하지 않을 수 있습니다.](#this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality)
+* [이 PC의 프로세서는 Windows Mixed Reality에서 제대로 작동 하지 않을 수 있습니다.](#this-pcs-processor-might-not-work-well-with-windows-mixed-reality)
+* [이 PC에는 호환 되는 USB 구성이 없을 수 있습니다.](#this-pc-might-not-have-a-compatible-usb-configuration)
+* [이 PC에는 컨트롤러에 대 한 Bluetooth 4.0가 없습니다.](#this-pc-doesnt-have-bluetooth-40-for-controllers)
+* [헤드셋에 따라 동작 컨트롤러를 사용 하려면 Bluetooth 어댑터가 필요할 수 있습니다.](#depending-on-your-headset-you-may-need-a-bluetooth-adapter-to-use-motion-controllers)
+* [이 PC에는 자체 기반 USB 포트가 없습니다.](#this-pc-doesnt-have-a-self-powered-usb-port)
+* [이 PC의 그래픽 카드는 Windows Mixed Reality에서 작동 하지 않습니다.](#this-pcs-graphics-card-wont-work-with-windows-mixed-reality)
+* [이 PC의 그래픽 드라이버는 Windows Mixed Reality에서 작동 하지 않습니다.](#this-pcs-graphics-driver-wont-work-with-windows-mixed-reality)
+* [이 PC의 프로세서는 Windows Mixed Reality에서 작동 하지 않습니다.](#this-pcs-processor-wont-work-with-windows-mixed-reality)
+* [이 PC에는 Windows Mixed Reality를 실행 하는 데 사용 가능한 디스크 공간이 충분 하지 않습니다.](#this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality)
+* [이 PC는 Windows Mixed Reality를 지원 하지 않는 Windows 버전을 실행 하 고 있습니다.](#this-pc-is-running-an-edition-of-windows-that-doesnt-support-windows-mixed-reality)
+* [이 PC는 최신 버전의 Windows 10을 실행 하지 않습니다.](#this-pc-isnt-running-the-latest-version-of-windows-10)
+* [이 PC에는 USB 3.0 포트가 없습니다.](#this-pc-has-no-usb-30-port)
+* [원격 데스크톱을 통해이 앱을 실행할 수 없습니다.](#you-cant-run-this-app-via-remote-desktop)
 
 ### <a name="this-pc-has-an-integrated-graphics-card-with-single-channel-ram"></a>이 PC에는 단일 채널 RAM이 있는 통합 그래픽 카드가 있습니다.
 
@@ -161,10 +180,11 @@ Windows Mixed Reality를 사용 하려면 모니터가 연결 된 PC가 필요 �
 
 일부 하드웨어 구성은 Windows Mixed Reality의 성능 문제를 일으킬 수 있습니다. 느린 로드, 고르지 않은 시각적 개체 또는 시각적 품질 저하와 같은 문제가 발생 하는 경우 다음과 같은 일반적인 수정 작업을 수행해 보세요.
 
-* PC 데스크톱에서 실행 되는 열려 있는 앱을 모두 닫습니다.
+* PC 데스크톱에서 실행 중인 모든 오픈 앱 닫기
 * USB-C를 사용 하거나 HDMI 어댑터에 DisplayPort를 사용 하는 경우 다른 것을 시도 합니다. 권장 어댑터 참조
 * PC의 그래픽 카드에 추가 모니터가 연결 되어 있는 경우 연결을 끊습니다.
-* Windows 스토어에서 몇 가지 혼합 현실 앱을 다운로드 해 보세요. 일부 앱은 컴퓨터 설치에서 더 잘 작동할 수 있습니다.
+* Windows 스토어에서 다른 혼합 현실 앱을 다운로드 해 보세요. 일부 앱은 컴퓨터 설치에서 더 잘 작동할 수 있습니다.
+* [성능 질문 설명서](performance-questions.md) 를 확인 하세요.
 
 성능 문제가 여전히 발생 하는 경우 최적의 사용자 환경에 대해 다음과 같은 [Windows Mixed Reality](set-up-windows-mixed-reality.md) 설정을 업데이트 합니다.
 
@@ -178,7 +198,7 @@ Windows Mixed Reality를 사용 하려면 모니터가 연결 된 PC가 필요 �
 
 ## <a name="working-with-steamvr"></a>SteamVR 사용
 
-SteamVR에서 게임을 제공 하는 것은 VR이 제공 해야 하는 모든 것을 경험 하는 좋은 방법입니다. 그러나 모던 장치에서 최상의 성능을 얻을 수 있는지 확인 하는 것이 좋습니다. [스트림](https://store.steampowered.com/about)를 설치한 후:
+SteamVR에서 게임을 제공 하는 것은 VR이 제공 해야 하는 모든 것을 경험 하는 좋은 방법입니다. 그러나 모던 장치에서 [최상의 성능을 얻을](performance-questions.md) 수 있는지 확인 하는 것이 좋습니다. [스트림](https://store.steampowered.com/about)를 설치한 후:
 
 * [Windows Mixed Reality에서 SteamVR 사용](using-steamvr-with-windows-mixed-reality.md) 에 대 한 지침을 따르세요.
 * [SteamVR 성능 테스트](https://store.steampowered.com/app/323910/SteamVR_Performance_Test) 앱 설치
@@ -196,9 +216,3 @@ SteamVR에서 게임을 제공 하는 것은 VR이 제공 해야 하는 모든 �
 > [Windows Mixed Reality 설정](set-up-windows-mixed-reality.md)
 
 언제 든 지 [VR 여행](vr-journey.md) 으로 돌아갈 수 있습니다.
-
-## <a name="see-also"></a>추가 정보
-
-* [커뮤니티에 질문하기](https://answers.microsoft.com)
-* [지원 문의](https://support.microsoft.com/contactus/)
-* [문제 해결](troubleshooting-windows-mixed-reality.md)
