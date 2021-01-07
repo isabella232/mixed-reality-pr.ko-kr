@@ -3,17 +3,17 @@ title: Windows Mixed Reality의 PC 호환성에 대 한 도움말 보기
 description: Windows Mixed Reality로 작업할 때 PC 호환성 문제에 대 한 도움말 리소스입니다.
 author: hferrone
 ms.author: v-hferrone
-ms.date: 09/15/2020
+ms.date: 01/07/2021
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: 8f6ba747c2f336194cb30241dce18bc1138143f2
-ms.sourcegitcommit: b331ec40b1e8869e6a6e7b2e32a03ff68e04b956
+ms.openlocfilehash: a3d8c21a6f9f94cbecca81915145603588e468ff
+ms.sourcegitcommit: e944f24d2deb4433865cc8f6fd9305d6d9676f48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97956066"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97971902"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Windows Mixed Reality의 PC 호환성에 대 한 도움말 보기
 
