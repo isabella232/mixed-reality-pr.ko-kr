@@ -1,17 +1,17 @@
 ---
 title: WebVR 개요
-description: Windows Mixed Reality에서 WebVR 사용 및 개발 개요
+description: Windows Mixed Reality 몰입 형 헤드셋에서 실행 되는 WebVR 응용 프로그램을 사용 하 고 개발 하는 기본 사항을 알아봅니다.
 author: yonet
 ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: WebVR, WebXR, WinMR, WebAR, web vr, web xr, 웹 mr, 웹 ar, 360, 360 비디오, 360 비디오, 360 photo, 360 사진, 360 콘텐츠, 몰입 형 웹, immersiveweb, IW
-ms.openlocfilehash: fdff2acf7816f36129d867650b16d9760a92e375
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: bf0335c0fa7fd42f60a20690d22b2ef9a4f6859a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91691193"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006963"
 ---
 # <a name="webvr-overview"></a>WebVR 개요
 

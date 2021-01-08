@@ -1,17 +1,17 @@
 ---
 title: Unity에서의 트레일러 및 눈 추적
-description: Unity에서 작업을 수행 하는 데는 두 가지 주요 방법, 즉 핸드 제스처와 동작 컨트롤러가 있습니다.
+description: Unity, 핸드 제스처 및 동작 컨트롤러의 응시에서 작업을 수행 하는 두 가지 주요 방법에 대해 알아봅니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 제스처, 동작 컨트롤러, unity, 응시, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: de8ea7968c36722f3690c5515e4f69e576898524
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 4c704677a78fee02b9da9d0db9bc2966ab6b3724
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97011560"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008959"
 ---
 # <a name="articulated-hand-and-eye-tracking-in-unity"></a>Unity에서의 트레일러 및 눈 추적
 
@@ -48,7 +48,7 @@ MRTK v2는 개발을 가속화 하는 데 도움이 되는 UI 컨트롤 및 구�
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 계속 진행할 수 있습니다.
+앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [공간 매핑](spatial-mapping-in-unity.md)
@@ -60,7 +60,7 @@ MRTK v2는 개발을 가속화 하는 데 도움이 되는 UI 컨트롤 및 구�
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [시선 기반 상호 작용](../../design/eye-gaze-interaction.md)
 * [HoloLens 2의 시선 추적](../../design/eye-tracking.md)

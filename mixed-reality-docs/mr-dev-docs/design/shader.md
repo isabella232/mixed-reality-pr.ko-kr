@@ -1,17 +1,17 @@
 ---
 title: 셰이더
-description: Mixed Reality Toolkit 표준 셰이더는 holograms에서 사용할 수 있는 다양 한 유형의 시각적 효과를 제공 합니다.
+description: 혼합 현실 도구 키트 표준 셰이더가 혼합 현실 앱에서 holograms와 함께 사용할 수 있는 다양 한 유형의 시각적 효과를 제공 하는 방법에 대해 알아봅니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 셰이더, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 시각적 효과
-ms.openlocfilehash: 08701fb48d633f7de75b74b5e44655c3a01fade8
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 68e40c053f9557debf9ad22baf2f48a8e06a1bbb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848238"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008863"
 ---
 # <a name="shader"></a>셰이더
 
@@ -44,7 +44,7 @@ Holographic 개체는 실제 환경에서 물리적 개체와 혼합 되므로 �
 
 ---
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

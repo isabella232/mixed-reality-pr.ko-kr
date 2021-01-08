@@ -1,17 +1,17 @@
 ---
 title: 포팅 개요
-description: 기존 응용 프로그램을 혼합 현실으로 가져오기 위한 다양 한 이식 옵션에 대 한 개요입니다.
+description: 기존 응용 프로그램을 HoloLens 및 VR의 혼합 현실로 가져오기 위한 다양 한 이식 옵션에 대 한 개요입니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 포팅, unity, 미들웨어, 엔진, UWP, Win32
-ms.openlocfilehash: d8cbb62500a81a29a00f4d32eaed0c2df3f5149d
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 5a57c73481e80e5ab6fac1bd02b83c5d3dfaabb6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612837"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007493"
 ---
 # <a name="porting-overview"></a>포팅 개요
 

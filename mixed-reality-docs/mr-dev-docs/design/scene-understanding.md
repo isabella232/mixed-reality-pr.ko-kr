@@ -1,17 +1,17 @@
 ---
 title: 장면 이해
-description: HoloLens의 장면 이해 기능 소개
+description: SDK, 기능 및 일반적인 사용 시나리오를 비롯 하 여 HoloLens에 대 한 장면 이해를 통해 개발 하는 방법에 대해 알아봅니다.
 author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: 장면 이해, 공간 매핑, Windows Mixed Reality, Unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 폐색, SDK
-ms.openlocfilehash: f46245c668e7cc58258fa4e28c4af5aa7812ef5f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: c4485c5501300d6ca629f4e587fde1f88eea7ea5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848260"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008873"
 ---
 # <a name="scene-understanding"></a>장면 이해
 

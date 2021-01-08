@@ -1,17 +1,17 @@
 ---
 title: DirectX의 좌표계
-description: 공간 로케이터, 참조 프레임 및 공간 앵커를 사용 하 여 DirectX 및 혼합 현실의 좌표계에 대해 알아봅니다. SpatialStage를 사용 하 고 추적 손실, 앵커 저장/로드 및 이미지 안정화를 처리 합니다.
+description: 공간 로케이터, 참조 프레임 및 공간 앵커를 사용 하 여 DirectX 및 혼합 현실의 좌표계에 대해 알아봅니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 혼합 현실, 공간 로케이터, 공간 참조 프레임, 공간 좌표 시스템, 공간 스테이지, 샘플 코드, 이미지 안정화, 공간 앵커, 공간 앵커 저장소, 추적 손실, 연습, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 7bf2309f3fb6264d6b1a5232f7ead78b771c1649
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 055eff0bb04228cb0a19b9ea208bfc9c00ce2dbe
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613117"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006863"
 ---
 # <a name="coordinate-systems-in-directx"></a>DirectX의 좌표계
 
@@ -804,7 +804,7 @@ Windows Holographic 앱 템플릿에는 이미 생성 된 LocatabilityChanged �
 
 [공간 매핑](spatial-mapping-in-directx.md) api는 좌표계를 사용 하 여 표면 망상의 모델 변환을 가져옵니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [좌표계](../../design/coordinate-systems.md)
 * [Spatial Anchors](../../design/spatial-anchors.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>

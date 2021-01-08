@@ -1,14 +1,14 @@
 ---
 title: Windows Mixed Reality에서 SteamVR 사용
-description: Windows Mixed Reality 헤드셋에서 SteamVR 게임을 재생 하는 방법 (호환 Pc 포함)
+description: 호환 되는 Pc를 사용 하 여 Windows Mixed Reality 헤드셋 및 컨트롤러에서 SteamVR 게임을 설정 하 고 재생 하는 방법을 알아봅니다.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 게임, SteamVR, 스트림, 시스템 요구 사항
-ms.openlocfilehash: e91c5b7fcaed2f048e79843c47ae613761a5d3ad
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9330d6026b74494c851aea6b4664c1ede787c1c5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725744"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006903"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Windows Mixed Reality에서 SteamVR 사용
 
@@ -155,7 +155,7 @@ Blue = 응용 프로그램이 gpu 바인딩되어 있으므로 동작 다시 프
 
 공유에 대 한 질문이 나 의견이 있는 경우 [스트림 포럼](http://steamcommunity.com/app/719950/discussions/)에서 연락할 수도 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [Windows Mixed Reality로 SteamVR 문제 해결](steamvr-questions.md)
 * [Windows Mixed Reality에서 게임과 앱 사용](using-games-and-apps-in-windows-mixed-reality.md)

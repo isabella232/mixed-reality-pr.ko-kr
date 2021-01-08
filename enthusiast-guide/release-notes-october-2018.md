@@ -1,17 +1,17 @@
 ---
 title: 릴리스 정보 - 2018년 10월
-description: Windows 10 10 월 2018 업데이트 (RS5 라고도 함)에 대 한 HoloLens 및 Windows Mixed Reality 릴리스 정보
+description: Windows 10 2018 년 10 월/RS5 업데이트에 대 한 HoloLens 및 Windows Mixed Reality 릴리스 정보를 최신 상태로 유지 합니다.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 10/02/2018
 ms.topic: article
 keywords: 릴리스 정보, 버전, windows 10, 빌드, rs5, os
-ms.openlocfilehash: 88d7393fdcf499b1fabd36668364ffb31b0e793d
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+ms.openlocfilehash: f7d95481d166f2c8795701c516946346101a21d0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91784029"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007113"
 ---
 # <a name="release-notes---october-2018"></a>릴리스 정보 - 2018년 10월
 
@@ -19,8 +19,8 @@ ms.locfileid: "91784029"
 
 HoloLens 또는 PC의 최신 릴리스로 업데이트 하려면 (Windows Mixed Reality 몰입 (VR) 헤드셋의 경우) **설정** 앱을 열고 **업데이트 & 보안** 으로 이동한 후 **업데이트 확인** 단추를 선택 합니다. Windows 10 PC에서는 [windows 미디어 만들기 도구](https://www.microsoft.com/software-download/windows10)를 사용 하 여 Windows 10 10 월 2018 업데이트를 수동으로 설치할 수도 있습니다.
 
-**데스크톱용 최신 릴리스:** Windows 10 10 월 2018 업데이트 ( **10.0.17763.107** )<br>
-**HoloLens의 최신 릴리스:** Windows 10 10 월 2018 업데이트 ( **10.0.17763.134** )<br>
+**데스크톱용 최신 릴리스:** Windows 10 10 월 2018 업데이트 (**10.0.17763.107**)<br>
+**HoloLens의 최신 릴리스:** Windows 10 10 월 2018 업데이트 (**10.0.17763.134**)<br>
 
 ## <a name="new-features-for-windows-mixed-reality-immersive-headsets"></a>Windows Mixed Reality 모던 헤드셋의 새로운 기능
 
@@ -41,7 +41,7 @@ Windows 10 10 월 2018 업데이트에는 데스크톱 PC와 함께 VR (Windows 
     * 정기적으로 큐 레이트 선택 된 WebVR 환경을 검색 하기 위한 새로운 *WebVR 전시* 앱입니다.
     * 처음 Windows Mixed Reality 고객은 절벽 집을 입력 하 고 Microsoft Store에서 즐겨 사용 하는 모던 앱 및 게임 중 일부에 대 한 3D 앱 시작 기가 미리 채워져 있습니다.
     * 이제 Microsoft Edge windows에 *공유* 단추가 포함 됩니다.
-* **빠른 작업 메뉴** -몰입 형 혼합 현실 앱 내에서 Windows 단추를 눌러 *SteamVR 메뉴* , *사진/비디오 캡처* , *손전등* 및 *홈* 에 쉽게 액세스할 수 있는 새 빠른 작업 메뉴에 액세스할 수 있습니다.
+* **빠른 작업 메뉴** -몰입 형 혼합 현실 앱 내에서 Windows 단추를 눌러 *SteamVR 메뉴*, *사진/비디오 캡처*, *손전등* 및 *홈* 에 쉽게 액세스할 수 있는 새 빠른 작업 메뉴에 액세스할 수 있습니다.
 * **백팩 Pc 지원** -설치가 완료 되 면 디스플레이 에뮬레이터를 요구 하지 않고 Windows Mixed Reality 몰입 (VR) 헤드셋이 백팩 pc에서 실행 됩니다.
 * **새로운 오디오 기능** -이제 Windows Mixed Reality 환경에서 헤드셋의 오디오 잭 (또는 헤드폰) *과* PC에 연결 된 오디오 장치 (예: 외부 스피커)로 오디오를 미러링할 수 있습니다. 헤드셋의 디스플레이에서 볼륨 수준에 대 한 시각적 표시기도 추가 했습니다.
 * **기타 개선 사항**
@@ -60,7 +60,7 @@ Windows 10 10 월 2018 업데이트는 모든 HoloLens 고객에 대해 공개�
 
 ### <a name="for-everyone"></a>모든 사용자
 
-* **빠른 작업 메뉴** -몰입 형 혼합 현실 앱 내에서 Windows 단추를 눌러 *비디오 녹화를 시작* 하 고, *그림을 가져오고* , 혼합 된 *현실 홈* , *볼륨 변경* 및 *연결* 을 쉽게 액세스할 수 있는 새 빠른 작업 메뉴에 액세스할 수 있습니다.
+* **빠른 작업 메뉴** -몰입 형 혼합 현실 앱 내에서 Windows 단추를 눌러 *비디오 녹화를 시작* 하 고, *그림을 가져오고*, 혼합 된 *현실 홈*, *볼륨 변경* 및 *연결* 을 쉽게 액세스할 수 있는 새 빠른 작업 메뉴에 액세스할 수 있습니다.
 * 시작 **/빠른 작업 메뉴에서 비디오 캡처 시작/중지** -시작 메뉴 또는 빠른 작업 메뉴에서 비디오 캡처를 시작 하면 동일한 위치에서 기록을 중지할 수 있습니다. (잊지 말고 항상 음성 명령을 사용 하 여이 작업을 수행할 수 있습니다.)
 * **Miracast 지원 장치로 프로젝션** -miracast 사용 디스플레이 또는 어댑터를 사용 하는 경우 주변 Surface 장치 또는 TV/모니터에 HoloLens 콘텐츠를 프로젝션 합니다.
 * **새 알림** -PC에서 수행 하는 것 처럼 HoloLens에서 알림을 보고 응답 합니다.  

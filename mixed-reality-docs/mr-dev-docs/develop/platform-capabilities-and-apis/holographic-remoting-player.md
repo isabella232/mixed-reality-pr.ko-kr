@@ -1,17 +1,17 @@
 ---
 title: 홀로그램 원격 플레이어
-description: 홀로그램 원격 플레이어는 홀로그램 원격 접속을 지원하는 PC 앱 및 게임에 연결하는 도우미 앱입니다. Holographic 원격 스트림은 Wi-Fi 연결을 사용 하 여 PC에서 실시간으로 Microsoft HoloLens로 콘텐츠를 Holographic 합니다.
+description: Holographic 원격 플레이어 및 Wi-fi를 통해 실시간으로 PC에서 HoloLens로 Holographic 콘텐츠 스트리밍에 대해 알아봅니다.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 진단, 성능
-ms.openlocfilehash: 07848f20fb23c15688dcb7cbc668b8011e34736b
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: c016221746efb34dd83ceb42a4a2cde156dde4c8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530224"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006533"
 ---
 # <a name="holographic-remoting-player"></a>홀로그램 원격 플레이어
 

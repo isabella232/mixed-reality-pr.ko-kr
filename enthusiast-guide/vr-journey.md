@@ -1,17 +1,17 @@
 ---
 title: VR 둘러보기 시작
-description: 검사점은 모던 VR 장치를 설정 하 고 사용 하 여 새 VR 장치 사용자를 안내 합니다.
+description: 모던 VR 장치를 설정 하 고 사용 하 여 새 장치 사용자를 안내 하는 큐 레이트 검사점을 살펴보세요.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR,
-ms.openlocfilehash: 9a82ab12b9cf91bd1fefcf84a2f6b4e62c8df24a
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 711c1b74b79ba510d29c17de0ec21270946ceb61
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725710"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007063"
 ---
 # <a name="start-your-vr-journey"></a>VR 둘러보기 시작
 

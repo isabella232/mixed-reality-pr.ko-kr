@@ -1,17 +1,17 @@
 ---
 title: 헤드 게이즈(head-gaze) 및 드웰(dwell)
-description: 헤드 게이즈(head-gaze) 및 드웰(dwell) 입력 모델에 대한 개요
+description: 일반적인 시나리오 및 디자인 원칙을 포함 하 여 헤드 응시 및 지속 입력 모델의 개요를 시작 합니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
 keywords: 혼합 현실, 응시, 지속, 상호 작용, 디자인, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, ux, 지침, 목록 뷰
-ms.openlocfilehash: 060d78ec629905ac9f2134851998ec131d85f0cd
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2bfd984a466c1ccd3913e889ca57663800f46380
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847373"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007083"
 ---
 # <a name="head-gaze-and-dwell"></a>헤드 게이즈(head-gaze) 및 드웰(dwell)
 
@@ -182,7 +182,7 @@ Yo – yo 효과는 콘텐츠 배치 및 헤드-응시 컨트롤이 반복적으
 
 ---
  
- ## <a name="see-also"></a>추가 정보
+ ## <a name="see-also"></a>참조
 
 * [응시 및 커밋](gaze-and-commit.md)
 * [손 - 직접 조작](direct-manipulation.md)

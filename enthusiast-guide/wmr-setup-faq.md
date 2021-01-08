@@ -1,6 +1,6 @@
 ---
 title: Windows Mixed Reality 설치 FAQ
-description: Windows Mixed Reality를 사용할 때의 일반적인 설정 질문에 대 한 대답을 확인 하세요.
+description: Windows Mixed Reality 응용 프로그램 및 장치를 사용 하는 경우 일반적인 설정 질문에 대 한 대답을 확인 하세요.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: bde88890f596e19dd9b5f9e87ceabbf91039af67
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 2da2524ae09014b990ea4f0301a21d4aac963eb9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725444"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008633"
 ---
 # <a name="windows-mixed-reality-setup-faq"></a>Windows Mixed Reality 설치 FAQ
 
@@ -158,7 +158,7 @@ PC가 헤드셋을 인식 하는지 확인 합니다.
     3. 동작 컨트롤러가 PC와 쌍으로 연결 된 경우 **설정 > 장치 > Bluetooth & 다른 장치** 에서 연결 해제를 선택 합니다. 각 컨트롤러를 선택 하 고 "장치 제거"를 선택 합니다. 컨트롤러가 헤드셋과 쌍으로 연결 된 경우이 단계를 건너뛸 수 있습니다.
     4. 헤드셋을 PC에 다시 연결 하 여 Windows Mixed Reality를 다시 설치 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [커뮤니티에 질문하기](https://answers.microsoft.com)
 * [지원 문의](https://support.microsoft.com/contactus/)

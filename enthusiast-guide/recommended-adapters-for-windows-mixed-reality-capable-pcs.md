@@ -1,5 +1,5 @@
 ---
-title: Windows Mixed Reality 지원 Pc의 권장 어댑터
+title: Windows Mixed Reality Pc의 권장 어댑터
 description: PC에 전체 크기의 USB 및 HDMI 포트가 없는 경우 Windows Mixed Reality 헤드셋에서 사용할 권장 어댑터의 목록입니다.
 author: hferrone
 ms.author: v-hferrone
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 어댑터, 동글, HDMI, USB, DisplayPort
 appliesto:
 - Windows 10
-ms.openlocfilehash: 248a202ce57c0b6872ddefc9ec9c2f89e2aa87a4
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 86eaa8d462d97a740f15859d2ab631aafb8dd68e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725984"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009103"
 ---
 # <a name="recommended-adapters"></a>권장 어댑터
 > [!NOTE]
@@ -278,6 +278,6 @@ PC에 열려 있는 USB 포트가 충분 하지 않은 경우 외부 USB 3.0 허
 * USB 3.0 허브는 외부에서 전원이 공급 되어야 합니다 (AC 어댑터가 추가 기능을 제공 하는 경우).
 * 48 W 전원 어댑터를 사용 하는 플러그형 10 포트 USB 3.0 SuperSpeed 허브는 Windows Mixed Reality 헤드셋 및 대부분의 Pc에서 잘 작동 하는 것으로 알려져 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 * [헤드셋 연결 문제 해결](headset-connectivity.md)
 * [Windows Mixed Reality 최소 PC 하드웨어 호환성 지침](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)

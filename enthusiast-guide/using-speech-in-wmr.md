@@ -1,6 +1,6 @@
 ---
 title: Windows Mixed Reality에서 음성 사용
-description: Windows Mixed Reality 앱에서 음성 입력을 사용 하는 방법에 대해 알아봅니다.
+description: 음성 입력을 사용 하 여 Windows Mixed Reality 앱에서 명령, 3D 개체 및 받아쓰기를 제어 하는 방법을 알아봅니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: 6a32b96fd932e3b7d47e29749fb47c70b64e32c3
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9c1863a3fb0c7d8681f82aa6e0d93400bef578c9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725774"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007673"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Windows Mixed Reality에서 음성 사용
 
@@ -114,7 +114,7 @@ Windows Mixed Reality에서 다음 음성 명령을 사용 하면 보다 빠르�
 | 미리 알림 설정 | 미리 알림 설정 |
 
 > [!NOTE]
-> * Cortana는 일부 지역 및 언어에서 사용할 수 없습니다. [자세히 알아보기](https://support.microsoft.com/help/4026948).
+> * Cortana는 일부 지역 및 언어에서 사용할 수 없습니다. [자세히 알아봅니다](https://support.microsoft.com/help/4026948).
 > * Cortana가 "안녕하세요 Cortana"에 응답 하지 않는 경우 **설정 > 개인 정보 > 음성** 및 온라인 음성 인식이 설정 되어 있는지 확인 하세요.
 > * Cortana를 끄면 "안녕 코타" 음성 명령을 사용할 수 없지만 다른 명령 (예: "선택" 및 "텔레포트")을 계속 사용할 수 있습니다.
 
@@ -152,7 +152,7 @@ Windows Mixed Reality에서 다음 음성 명령을 사용 하면 보다 빠르�
 
 받아쓰기를 중지 하려면 **완료** 를 선택 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [커뮤니티에 질문하기](https://answers.microsoft.com)
 * [지원 문의](https://support.microsoft.com/contactus/)

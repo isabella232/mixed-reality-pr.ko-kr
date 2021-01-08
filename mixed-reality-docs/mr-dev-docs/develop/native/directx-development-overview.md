@@ -1,17 +1,17 @@
 ---
 title: 네이티브 개발 개요
-description: Windows Mixed Reality Api를 직접 사용 하 여 DirectX 기반 혼합 현실 엔진을 빌드합니다.
+description: Windows Mixed Reality Api를 직접 사용 하 여 DirectX 기반 혼합 현실 엔진을 빌드하는 방법에 대해 알아봅니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: DirectX, holographic 렌더링, 네이티브, 네이티브 앱, WinRT, WinRT 앱, 플랫폼 Api, 사용자 지정 엔진, 미들웨어, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 493715660ff8df79df25e09c82fe48b863053ed3
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 764cbe0a37501cc176e9bb05a9a7771b03666f0c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613077"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006853"
 ---
 # <a name="native-development-overview"></a>네이티브 개발 개요
 
@@ -60,7 +60,7 @@ HoloLens 2 또는 Windows Mixed Reality 모던 헤드셋에서 OpenXR를 사용 
 
 특히 새 도구 또는 SDK를 학습하는 경우 개발자 작업이 수행되지 않습니다. 다음 섹션에서는 이미 완료 한 초보자 수준 자료를 벗어나는 영역으로 이동할 수 있습니다. 이러한 항목과 리소스는 순차적으로 정렬 되지 않으므로 자유롭게 이동 하 여 탐색할 수 있습니다.
 
-### <a name="additional-resources"></a>추가 리소스
+### <a name="additional-resources"></a>추가 자료
 
 OpenXR 게임의 수준을 설정 하려면 아래 링크를 확인 하세요.
 
@@ -68,6 +68,6 @@ OpenXR 게임의 수준을 설정 하려면 아래 링크를 확인 하세요.
 * [OpenXR 성능](openxr-performance.md)
 * [OpenXR 문제 해결](openxr-troubleshooting.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [앱 모델](../../design/app-model.md)
 * [앱 보기](../../design/app-views.md)

@@ -1,17 +1,17 @@
 ---
 title: Holographic 디스플레이용 콘텐츠 디자인
-description: Holographic 표시에 대 한 디자인 지침 및 모범 사례를 알아봅니다.
+description: HoloLens 장치에서 holographic 디스플레이를 위한 디자인 지침 및 모범 사례에 대해 알아봅니다.
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: UI 디자인, holographic 표시, 콘텐츠 디자인, 어두운 테마, 밝은 테마, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 디자인, 픽셀
-ms.openlocfilehash: 4a95f5df50a600035d9127c73f86a5d8be5e7131
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 371d9aac610a765e7ecc6dd1f17401e5d7855672
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847992"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009093"
 ---
 # <a name="designing-content-for-holographic-display"></a>Holographic 디스플레이용 콘텐츠 디자인
 
@@ -22,6 +22,7 @@ Holographic에 대 한 콘텐츠를 디자인할 때 최상의 환경을 달성 
 <br>
 
 ## <a name="challenges-with-bright-color-on-a-large-surface"></a>넓은 표면에서 밝은 색을 사용 하는 문제 
+
 HoloLens 경험 연구 및 테스트에 따라 디스플레이의 많은 영역에서 밝은 색을 사용 하면 여러 가지 문제가 발생할 수 있습니다. 
 
 **아이 피로** 
@@ -110,7 +111,7 @@ MRTK-Unity의 솔루션: https://microsoft.github.io/MixedRealityToolkit-Unity/D
 
 ---
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [색, 광원 및 재질](color-light-and-materials.md)
 * [커서](cursors.md)

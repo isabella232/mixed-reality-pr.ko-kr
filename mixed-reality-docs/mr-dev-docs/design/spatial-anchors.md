@@ -1,17 +1,17 @@
 ---
 title: Spatial Anchors
-description: 공간 앵커를 사용한 안정적인 홀로그램 렌더링의 모범 사례입니다.
+description: 공간 앵커를 사용 하 여 혼합 현실 응용 프로그램에서 안정적인 holograms를 렌더링 하기 위한 모범 사례에 대해 알아봅니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 좌표계, 공간 좌표계, 세계 크기 조정, 전 세계, 눈금, 위치, 방향, 앵커, 공간 고정, 세계 잠긴, 세계 잠금, 지 속성, 공유, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens
-ms.openlocfilehash: 7f6997e491f76e66845b88ea0897dbb037495ba6
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2db88f9bc5d128f4a9eb42cfb5211d0597b43cfa
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848208"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009113"
 ---
 # <a name="spatial-anchors"></a>Spatial Anchors
 
@@ -71,7 +71,7 @@ ms.locfileid: "97848208"
 
 클라우드 공간 앵커의 경우 상황에 따라 스토리지를 확장할 수 있습니다. 필요한 만큼 클라우드 앵커를 저장 하 고 사용자에 게 다시 앵커가 필요 하지 않을 때 릴리스를 해제할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [좌표계](coordinate-systems.md)
 * [혼합 현실의 공유 환경](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)

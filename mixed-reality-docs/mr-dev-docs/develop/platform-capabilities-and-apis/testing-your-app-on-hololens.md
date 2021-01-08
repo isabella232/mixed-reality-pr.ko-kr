@@ -1,17 +1,17 @@
 ---
 title: HoloLens에서 앱 테스트
-description: HoloLens 앱 테스트에 대 한 지침 및 제안
+description: HoloLens mixed reality 응용 프로그램의 테스트 및 성능 최적화에 대 한 일반적인 지침과 제안 사항에 대해 알아봅니다.
 author: jonmlyons
 ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, 테스트
-ms.openlocfilehash: e1a5a62cf52a3144f02b8acaa96b3c653246fd9c
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: d26a3717da2ee9943e92e3602b6029435815262b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530342"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008543"
 ---
 # <a name="testing-your-app-on-hololens"></a>HoloLens에서 앱 테스트
 
@@ -22,6 +22,7 @@ HoloLens 응용 프로그램 테스트는 Windows 응용 프로그램 테스트�
 Holographic 앱은 다양 한 환경 집합에서 원활 하 게 실행 해야 합니다. 또한 성능 및 사용자가 항상 편안 하 게 유지 해야 합니다. Holographic 앱을 사용 하는 사용자 환경에서는 전체 토픽을 사용 하는 것이 중요 합니다. [혼합 현실에 대 한 성능 이해](understanding-performance-for-mixed-reality.md) 를 읽고 준수 하는지 확인 합니다.
 
 ## <a name="testing-3d-in-3d"></a>3D에서 3d 테스트
+
 1. **가능한 한 많은 공간에서 앱을 테스트 합니다.** 대규모 대화방, bathrooms, kitchens, 침실, 사무실 등에서 사용해 보세요. 또한 비-세로 벽, 구부러진 벽, 비 수평선 최대값이 같은 비표준 기능이 포함 된 방을 고려 합니다. Hallways 또는 계단 간을 전환 하는 경우에도 제대로 작동 하나요?
 2. **다른 조명 조건으로 앱을 테스트 합니다.** 조명, 검정 표면, 투명 또는 반사 표면 (예: 미러 및 투명 벽)과 같은 다양 한 환경 조건에 적절 하 게 응답 합니다.
 3. **다른 동작 조건에서 앱을 테스트 합니다.** 장치에 배치 하 고 다양 한 동작 상태에서 시나리오를 사용해 보세요. 다른 이동 또는 안정적인 상태에 적절히 응답 하나요?
@@ -37,11 +38,11 @@ Holographic 앱은 다양 한 환경 집합에서 원활 하 게 실행 해야 �
 ![HoloLens 앱 개발용 환경 테스트 매트릭스](images/environment-matrix-600px.png)
 
 ## <a name="comfort"></a>편안함
+
 1. **클립 평면.** [Holograms가 렌더링 되는](hologram-stability.md#hologram-render-distances)위치를 attentive 합니다.
 2. **가상 이동이 실제 헤드 이동과 일치 하지 않습니다.** 사용자의 실제 동작을 나타내지 않는 방식으로 카메라를 이동 하지 마십시오. 앱에서 장면을 통해 사용자를 이동 해야 하는 경우 동작을 예측 가능 하 게 만들고 가속을 최소화 하 고 사용자가 움직임을 제어할 수 있도록 합니다.
 3. **홀로그램 품질 지침을 따릅니다.** [홀로그램 품질 지침](hologram-stability.md) 을 구현 하는 성능의 앱은 사용자 discomfort 수 있습니다.
 4. **세로 방향으로 holograms를 균등 하 게 배포 합니다.** 사용자가 위로 또는 아래로 이동 하는 오랜 시간 동안이를 사용 하 여 피로 수 있습니다.
-
 
 ## <a name="input"></a>입력
 
@@ -112,5 +113,6 @@ Holographic 앱은 다양 한 환경 집합에서 원활 하 게 실행 해야 �
 
 앱이 [Windows 스토어에 게시](../../distribute/submitting-an-app-to-the-microsoft-store.md)될 수 있는 가장 좋은 기회를 제공 하려면 인증을 위해 제출 하기 전에 로컬에서 유효성을 검사 하 고 테스트 합니다. 앱이 Holographic 장치 제품군을 대상으로 하는 경우 [Windows 앱 인증 키트](https://msdn.microsoft.com/library/windows/apps/xaml/mt186449.aspx) 는 PC 에서만 로컬 정적 분석 테스트를 실행 합니다. HoloLens에서 테스트가 실행 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
+
 * [Windows 스토어에 앱 제출](../../distribute/submitting-an-app-to-the-microsoft-store.md)

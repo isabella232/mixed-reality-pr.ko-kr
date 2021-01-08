@@ -1,6 +1,6 @@
 ---
 title: Windows Mixed Reality 사용 FAQ
-description: Windows Mixed Reality를 사용할 때 일반적인 질문에 대 한 답변을 받으세요.
+description: Windows Mixed Reality 응용 프로그램 및 하드웨어를 사용 하는 경우 일반적인 질문에 대 한 리소스를 찾을 수 있습니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: 75ed2699cc34af5f526e0799b762d45ef36e99b9
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 31a27afa9c96ee8beb8b38f74534fc6f58c01f1d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725674"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007053"
 ---
 # <a name="using-windows-mixed-reality-faq"></a>Windows Mixed Reality 사용 FAQ
 
@@ -24,7 +24,6 @@ Windows Mixed Reality 모던 헤드셋 사용에 대 한 도움이 필요한 경
 ## <a name="i-see-a-message-that-says-lost-tracking-or-we-dont-have-a-boundary-for-this-space"></a>"추적 끊김" 또는 "이 공간을 위한 경계가 없습니다." 라는 메시지가 표시 됩니다.
 
 바탕 화면에서 **> 혼합 현실 포털 시작** 을 선택 합니다. **메뉴** 를 선택한 다음 **설치 프로그램 실행** 을 선택 하 여 새 경계를 만듭니다. Windows Mixed Reality는 여러 위치를 지원 하 고, 공간이 변경 되지 않은 경우 시작 시의 공간을 식별 합니다.  
-
 
 ## <a name="i-cant-hear-any-sound-or-the-sound-is-coming-from-my-computer-instead-of-my-headset"></a>소리를 듣지 못합니다. 또는 소리가 내 컴퓨터에서 발생 합니다.
 
@@ -113,7 +112,7 @@ Mixed reality 시각적 개체가 가장 잘 보이지 않는 경우는 다음�
 2.4 g h z Wi-Fi 연결을 사용 하는 경우 동작 컨트롤러에서 Wi-fi 속도가 느려질 수 있습니다.
 
 <!-- TODO: Use Windows Mixed Reality PC hardware guidelines interlink -->
-* 5 GHz Wi-Fi 연결로 전환 합니다 (사용할 수 있는 경우). [자세한 정보](https://support.microsoft.com/help/4000461)
+* 5 GHz Wi-Fi 연결로 전환 합니다 (사용할 수 있는 경우). [자세히 알아보기](https://support.microsoft.com/help/4000461)
 * 별도의 Bluetooth 어댑터를 사용 하 여 이동 컨트롤러를 PC에 연결 합니다. [권장 어댑터 참조](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ## <a name="what-is-the-experience-options-setting"></a>환경 옵션 설정은 무엇 인가요?
@@ -132,6 +131,7 @@ Mixed reality 시각적 개체가 가장 잘 보이지 않는 경우는 다음�
 
 여전히 도움이 필요하세요? 고급 문제 해결에 대해서는 [이 문서](troubleshooting-windows-mixed-reality.md)를 확인 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
+
 * [커뮤니티에 질문하기](https://answers.microsoft.com)
 * [지원 문의](https://support.microsoft.com/contactus/)

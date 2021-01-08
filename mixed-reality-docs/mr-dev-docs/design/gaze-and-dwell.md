@@ -1,17 +1,17 @@
 ---
 title: 응시 및 유지
-description: (눈/헤드) 응시 및 지속 입력 모델의 일반 개요입니다.
+description: 혼합 현실 응용 프로그램의 눈 및 헤드 응시 및 유지 입력 모델에 대 한 일반적인 개요를 확인 하세요.
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: 혼합 현실, 응시, 지속, 상호 작용, 디자인, 눈 추적, 헤드 추적, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: e8005551e08248a73098bd0f9c198b0919e2471a
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2daeea996251b1220ee4753567b42117fbb2126c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847344"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007643"
 ---
 # <a name="gaze-and-dwell"></a>응시 및 유지
 
@@ -63,7 +63,7 @@ HoloLens를 착용하고 자동차 엔진을 수리하는 동안 참조 정보�
 
 ---
 
- ## <a name="see-also"></a>추가 정보
+ ## <a name="see-also"></a>참조
 
 * [시선 기반 상호 작용](eye-gaze-interaction.md)
 * [HoloLens 2의 시선 추적](eye-tracking.md)

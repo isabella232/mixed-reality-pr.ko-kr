@@ -1,17 +1,17 @@
 ---
 title: MR 기본 사항 100 - Unity 시작
-description: 첫 번째 기본 혼합 현실 "hello 세계" 응용 프로그램을 만드는 방법에 대해 알아봅니다.
+description: HoloLens 및 Windows Mixed Reality 장치에 대해 첫 번째 기본 혼합 현실 "hello 세계" 응용 프로그램을 만드는 방법을 알아봅니다.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: 혼합 현실, Windows Mixed Reality, HoloLens, 몰입 형, vr, mr, 시작, 홀로그램, 아카데미, 자습서, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, Windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 83ca133e341688f42fa2d53b4d50f1aefa9bb39b
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7b316314d7aa693e8be9006b2c5578c1bae7e3ff
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678412"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006513"
 ---
 # <a name="mr-basics-100-getting-started-with-unity"></a>MR 기본 100: Unity 시작
 
@@ -43,7 +43,7 @@ Unity를 사용 하 여 앱을 빌드하려면 먼저 프로젝트를 만들어�
 UWP 앱을 빌드 및 배포 하기 위해 Unity는 필요한 모든 자산과 코드 파일을 포함 하는 Visual Studio 솔루션으로 프로젝트를 내보낼 수 있습니다.
 
 1. Unity 시작
-2. **새로 만들기** 선택
+2. **새로 만들기** 를 선택합니다.
 3. 프로젝트 이름 (예: "MixedRealityIntroduction")을 입력 합니다.
 4. 프로젝트를 저장할 위치를 입력 하십시오.
 5. **3d** 토글이 선택 되어 있는지 확인 합니다.

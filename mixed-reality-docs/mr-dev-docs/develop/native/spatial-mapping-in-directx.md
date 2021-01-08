@@ -1,17 +1,17 @@
 ---
 title: DirectX의 공간 매핑
-description: 유니버설 Windows 플랫폼 SDK와 함께 제공 되는 공간 매핑 예제 응용 프로그램을 포함 하 여 DirectX 앱에서 공간 매핑을 구현 하는 방법에 대해 알아봅니다.
+description: DirectX 앱에서 공간 매핑을 구현 하는 방법 및 유니버설 Windows 플랫폼 SDK에서 공간 매핑 샘플 응용 프로그램을 사용 하는 방법에 대해 알아봅니다.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows mixed reality, 공간 매핑, 환경, 상호 작용, directx, winrt, api, 샘플 코드, UWP, SDK, 연습
-ms.openlocfilehash: fa372473939222ef4be7ca36076a17241173c441
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: bcd78487e96aaf09707aa4bf58917223cc2e8583
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612917"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006713"
 ---
 # <a name="spatial-mapping-in-directx"></a>DirectX의 공간 매핑
 
@@ -676,6 +676,6 @@ context->OMSetRenderTargets(1, targets, pCameraResources->GetSurfaceDepthStencil
 m_meshCollection->Render(pCameraResources->IsRenderingStereoscopic(), false);
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [홀로그램 DirectX 프로젝트 만들기](creating-a-holographic-directx-project.md)
 * [Windows. 인식 공간 API](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.aspx)

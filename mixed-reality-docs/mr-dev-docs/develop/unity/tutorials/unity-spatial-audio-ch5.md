@@ -1,26 +1,28 @@
 ---
-title: 공간 오디오 자습서-5. 반향 효과를 이용해 공간 오디오에 거리감 부여
-description: 반향 효과를 추가 하 여 공간 오디오에 대 한 거리 변동의 의미를 향상 시킵니다.
+title: 반향 효과를 이용해 공간 오디오에 거리감 부여
+description: 혼합 현실 응용 프로그램에서 공간 오디오에 대 한 거리 변동의 의미를 향상 시키기 위해 반향 효과를 추가 하는 방법에 대해 알아봅니다.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head 관련 전송 함수, 반향, Microsoft Spatializer, 오디오 믹서, SFX 반향
-ms.openlocfilehash: c63e5a239806c133e814eee8b44cbfb30f55aa5d
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 6c04ac1e4b52c7eb6104d54c184c789bec413852
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002618"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006363"
 ---
 # <a name="using-reverb-to-add-distance-to-spatial-audio"></a>반향 효과를 이용해 공간 오디오에 거리감 부여
 
 ## <a name="objectives"></a>목표
+
 이전 장에서는 spatialization를 소리에 추가 하 여 방향을 지정 했습니다. 이 다섯 번째 장에서는 소리에 거리를 지정 하기 위해 반향 효과를 추가 합니다. 목표는 다음과 같습니다.
 * 반향을 추가 하 여 사운드 소스의 인식 된 거리 향상
 * 홀로그램에 대 한 수신기의 거리를 사용 하 여 소리의 인식 거리 제어
 
 ## <a name="add-a-mixer-group-and-a-reverb-effect"></a>믹서 그룹 및 반향 효과 추가
+
 [2 장에서](unity-spatial-audio-ch2.md)는 믹서를 추가 했습니다. 믹서에는 기본적으로 **Master** 라는 **그룹** 하나가 포함 되어 있습니다. 약간의 소리에 반향 효과를 적용 하려는 경우에만 해당 소리에 대해 두 번째 **그룹** 을 추가 해 보겠습니다. **그룹** 을 추가 하려면 **오디오 믹서** 에서 **마스터** 그룹을 마우스 오른쪽 단추로 클릭 하 고 **하위 그룹 추가** 를 선택 합니다.
 
 ![자식 그룹 추가](images/spatial-audio/add-child-group.png)
@@ -44,6 +46,7 @@ ms.locfileid: "97002618"
 다른 설정은 시뮬레이트된 대화방의 느낌을 제어 합니다. 특히, **감소 시간은** 인식 된 대화방 크기와 관련이 있습니다. 
 
 ## <a name="enable-reverb-on-the-video-playback"></a>비디오 재생에서 반향 사용
+
 오디오 원본에서 반향를 사용 하도록 설정 하는 두 가지 단계가 있습니다.
 * **오디오 소스** 를 해당 **그룹** 으로 라우팅합니다.
 * 처리를 위해 오디오를 **그룹** 에 전달 하도록 **Microsoft Spatializer** 플러그 인을 설정 합니다.

@@ -1,17 +1,17 @@
 ---
 title: 슬레이트
-description: 슬레이트는 2D 콘텐츠를 표시 하기 위한 씬 창 스타일 컨트롤입니다.
+description: 혼합 현실 도구 키트를 사용 하 여 2D 콘텐츠를 표시 하기 위한 씬 창 스타일 컨트롤인 슬레이트에 대해 알아봅니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 슬레이트, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 53bcc9d8ac3b222e9b5a3dfcf47b327c212552d2
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: cbb4a741f4f78dcad603670bc282a25bc0e70fd2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848218"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008813"
 ---
 # <a name="slate"></a>슬레이트
 
@@ -31,7 +31,7 @@ ms.locfileid: "97848218"
 
 ---
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

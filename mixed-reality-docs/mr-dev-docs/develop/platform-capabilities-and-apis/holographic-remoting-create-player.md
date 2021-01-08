@@ -1,17 +1,17 @@
 ---
 title: 사용자 지정 홀로그램 원격 플레이어 작성
-description: 사용자 지정 Holographic Remoting player 앱을 만들면 원격 컴퓨터에 렌더링 된 콘텐츠를 HoloLens 2로 표시할 수 있는 사용자 지정 응용 프로그램을 만들 수 있습니다.
+description: 원격 컴퓨터에 렌더링 된 콘텐츠를 HoloLens 2에 표시 하는 사용자 지정 Hologaphic Remoting 앱을 만듭니다.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, NuGet, 앱 매니페스트, 플레이어 컨텍스트, 원격 앱, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: ac3ee68cf3cff3e024ce40acceac61a2fe123399
-ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
+ms.openlocfilehash: 23449749e709075e6530730e596bfcc9cd088c1e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97102898"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006553"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>사용자 지정 홀로그램 원격 플레이어 앱 작성
 
@@ -22,7 +22,7 @@ ms.locfileid: "97102898"
 
 Holographic 원격 플레이어를 사용 하면 앱이 데스크톱 PC 또는 UWP 장치 (예: Xbox One)에서 [렌더링](rendering.md) 된 콘텐츠를 더 많은 시스템 리소스에 액세스할 수 있는 Holographic 표시할 수 있습니다. Holographic Remoting player 앱은 입력 데이터를 Holographic Remoting 원격 응용 프로그램으로 스트리밍하 고 비디오 및 오디오 스트림으로 몰입 형 보기를 다시 받습니다. 연결은 표준 Wi-fi를 사용 하 여 수행 됩니다. 플레이어 앱을 만들려면 NuGet 패키지를 사용 하 여 Holographic 원격을 UWP 앱에 추가 합니다. 그런 다음 연결을 처리 하 고 몰입 형 뷰를 표시 하는 코드를 작성 합니다. 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
 
 좋은 출발점은 이미 Windows Mixed Reality API를 대상으로 하는 작동 하는 DirectX 기반 UWP 앱입니다. 자세한 내용은 [DirectX 개발 개요](../native/directx-development-overview.md)를 참조 하세요. 기존 앱이 없고 처음부터 시작 하려면 [c + + holographic 프로젝트 템플릿이](../native/creating-a-holographic-directx-project.md) 좋은 출발점입니다.
 

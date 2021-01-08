@@ -1,17 +1,17 @@
 ---
 title: Holographic 원격 추가
-description: Holographic 원격을 사용 하 여 네트워크를 통해 HoloLens에 holograms을 렌더링 하는 방법을 설명 합니다.
+description: Holographic 원격을 설치, 구성 및 사용 하 여 네트워크를 통해 HoloLens 장치에 holograms을 렌더링 하는 방법을 알아봅니다.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, holographic remoting, 원격 렌더링, 네트워크 렌더링, HoloLens, 원격 holograms, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 809258d3387b5e45885c0eb207544c176f891a1d
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 68c1dd43dac4830da061d4900ce768692057e781
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530312"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006673"
 ---
 # <a name="add-holographic-remoting-hololens-first-gen"></a>Holographic 원격 추가 (HoloLens (첫 번째 gen))
 

@@ -1,17 +1,17 @@
 ---
 title: Unity의 카메라
-description: Windows Mixed Reality 개발용 Unity의 기본 카메라를 사용 하 여 holographic 렌더링을 수행 하는 방법입니다.
+description: Holographic 렌더링을 수행 하기 위해 Windows Mixed Reality 개발용 Unity의 기본 카메라를 설정 하 고 사용 하는 방법에 대해 알아봅니다.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit, holographic 렌더링, holographic, 몰입 형, 포커스 지점, 깊이 버퍼, 방향 전용, 위치, 불투명, 투명, 클립, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 26eb8966004c958c6063d09de891ef835d973a82
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: cd5284a8fdef7254b7d0375b57877d30f5d0d708
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010434"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006393"
 ---
 # <a name="camera-in-unity"></a>Unity의 카메라
 
@@ -97,7 +97,7 @@ Unity 앱이 Windows에 깊이 버퍼를 제공할지 여부를 설정 하려면
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 계속 진행할 수 있습니다.
+앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [응시](gaze-in-unity.md)
@@ -109,7 +109,7 @@ Unity 앱이 Windows에 깊이 버퍼를 제공할지 여부를 설정 하려면
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [홀로그램 안정성](../platform-capabilities-and-apis/hologram-stability.md)
 * [MixedRealityToolkit 주 카메라 prefab](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Input/Prefabs)

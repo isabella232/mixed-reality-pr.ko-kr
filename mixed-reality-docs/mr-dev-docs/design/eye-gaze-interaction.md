@@ -1,17 +1,17 @@
 ---
 title: 시선 응시 기반 상호 작용
-description: HoloLens 2는 사용자가 보고 있는 대상에 대한 정보를 사용할 수 있는 기능을 개발자에게 제공하여 홀로그램 환경 내에서 이해할 수 있는 새로운 수준의 컨텍스트 및 사용자를 허용합니다. 이 페이지에서는 눈동자를 입력으로 사용 하려는 개발자를 위한 디자인 권장 사항을 설명 합니다.
+description: Holographic 환경에서 사용 하는 경우 HoloLens 2와 새로운 수준의 컨텍스트 및 인간 이해에 대 한 눈에 기반을 두는 방법에 대해 알아봅니다.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 눈 추적, 혼합 현실, 입력, 눈동자-응시, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 디자인, 상호 작용
-ms.openlocfilehash: e21d591d2843f67f3a0b0eed42a27c74942e8999
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: b5091b92fd048f72184212401d54ad0b7353875c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847329"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008583"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>HoloLens의 눈동자 기반 상호 작용 2
 

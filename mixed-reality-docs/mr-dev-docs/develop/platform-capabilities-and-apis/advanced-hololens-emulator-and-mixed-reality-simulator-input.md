@@ -1,17 +1,17 @@
 ---
-title: 고급 HoloLens 에뮬레이터 및 Mixed Reality 시뮬레이터 입력
+title: 고급 HoloLens 에뮬레이터 및 혼합 현실 시뮬레이터
 description: 키보드, 마우스 및 Xbox 컨트롤러를 사용 하 여 HoloLens 에뮬레이터 및 Windows Mixed Reality 시뮬레이터에 대 한 입력을 시뮬레이트하는 방법에 대 한 자세한 지침입니다.
 author: pbarnettms
 ms.author: pbarnett
 ms.date: 06/8/2020
 ms.topic: article
 keywords: HoloLens, 에뮬레이터, 시뮬레이션, Windows Mixed Reality, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: f5076e65ba1c5d95c1bb106d2d3181665177b43a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ff8a2830630b73266fe7348eee5459bcad98e2e0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530458"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006683"
 ---
 # <a name="advanced-hololens-emulator-and-mixed-reality-simulator-input"></a>고급 HoloLens 에뮬레이터 및 Mixed Reality 시뮬레이터 입력
 
@@ -50,7 +50,7 @@ HoloLens 에뮬레이터 및 Windows Mixed Reality 시뮬레이터에 대 한 �
 
 다음 표에서는 각 유형의 입력이 키보드, 마우스 및 Xbox 컨트롤러에 매핑되는 방법을 보여 줍니다. 각 형식에는 입력 컨트롤 모드에 따라 서로 다른 매핑이 있습니다. 입력 컨트롤 모드에 대 한 자세한 내용은이 문서의 뒷부분에서 찾을 수 있습니다.
 
-| 입력 |  Keyboard |  마우스 |  Xbox 컨트롤러 | 
+| 입력 |  키보드 |  마우스 |  Xbox 컨트롤러 | 
 |----------|----------|----------|----------|
 |  요 |  왼쪽/오른쪽 화살표 |  왼쪽/오른쪽으로 끌기 |  오른쪽 엄지 스틱 왼쪽/오른쪽 | 
 |  피치 |  위쪽/아래쪽 화살표 |  위로/아래로 끌기 |  오른쪽 엄지 스틱 위쪽/아래쪽 | 
@@ -71,7 +71,7 @@ HoloLens 에뮬레이터 및 Windows Mixed Reality 시뮬레이터에 대 한 �
 |  손으로 ' Open ' 포즈 (기본값) | 8 |  |  |
 |  손 모양 ' Point ' 포즈 | 9 |  |  |
 |  손 모양 ' 포즈 ' | 0 |  |  |
-|  초기화 |  키 이스케이프 |  |  시작 단추 | 
+|  다시 설정 |  키 이스케이프 |  |  시작 단추 | 
 |  추적 |  T 또는 F3 |  |  X 버튼 | 
 
 
@@ -107,7 +107,7 @@ HoloLens 에뮬레이터 및 Windows Mixed Reality 시뮬레이터에 대 한 �
 
 다음 컨트롤 집합은 일상적인 사용을 위해 제안 됩니다.
 
-|  연산 |  키보드 및 마우스 |  컨트롤러 | 
+|  작업(Operation) |  키보드 및 마우스 |  컨트롤러 | 
 |----------|----------|----------|
 |  본문 X |  A/D |  왼쪽 엄지 스틱 왼쪽/오른쪽 | 
 |  본문 Y |  Page up/page down |  DPad up/down | 
@@ -124,7 +124,7 @@ HoloLens 에뮬레이터 및 Windows Mixed Reality 시뮬레이터에 대 한 �
 |  손/컨트롤러 롤 |  Alt + Q/E |  왼쪽/오른쪽 어깨 + DPad | 
 |  작업 |  마우스 오른쪽 단추 |  트리거 | 
 |  블 룸/시스템/홈 |  F2 또는 Windows 키 |  B 단추 | 
-|  초기화 |  이스케이프 |  시작 단추 | 
+|  다시 설정 |  이스케이프 |  시작 단추 | 
 |  추적 |  T |  X 버튼 | 
 |  스크롤 |  Alt + 마우스 오른쪽 단추 + 마우스를 위로/아래로 끌기 |  어깨 + 트리거 + 오른쪽 엄지 스틱 위쪽/아래쪽 | 
 |  더 빠르게 이동/회전 | 왼쪽 또는 오른쪽 Shift 키 | 오른쪽 엄지 스틱을 누르고 있습니다. |
@@ -137,7 +137,7 @@ Windows Mixed Reality 몰입 형 헤드셋을 HoloLens 2 에뮬레이터와 함�
 > [!NOTE]
 > 헤드셋을 사용 하는 경우 표준 키보드, 마우스 및 게임 패드 컨트롤이 자동으로 무시 됩니다.
 
-|  연산 |  작업 |  메모 | 
+|  작업(Operation) |  작업 |  메모 | 
 |----------|----------|----------|
 |  본문 X |  왼쪽/오른쪽 엄지 스틱 |   | 
 |  본문 Z |  엄지 스틱 앞으로/뒤로 |   | 
@@ -153,7 +153,7 @@ Windows Mixed Reality 몰입 형 헤드셋을 HoloLens 2 에뮬레이터와 함�
 
 다음 바로 가기 키를 사용 하 여 인식 시뮬레이션 제어판에 액세스 하 고 PC 입력 장치를 사용 하거나 사용 하지 않도록 설정할 수 있습니다.
 
-| 연산 | 바로 가기 | 설명/참고 사항 |
+| 작업(Operation) | 바로 가기 | 설명/참고 사항 |
 |-----------|----------|-------------|
 | ' 시뮬레이션에 키보드 사용 ' 설정/해제 | F4 | 꺼져 있으면 키보드 입력이 HoloLens 또는 Windows Mixed Reality 응용 프로그램으로 이동 합니다. |
 | ' 시뮬레이션에 마우스 사용 ' 설정/해제 | F5 | 꺼진 경우 마우스 입력이 혼합 현실 환경으로 이동 합니다 (Windows Mixed Reality에만 해당). |

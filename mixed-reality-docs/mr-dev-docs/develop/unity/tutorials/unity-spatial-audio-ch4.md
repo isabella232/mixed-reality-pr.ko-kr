@@ -1,26 +1,28 @@
 ---
-title: 공간 오디오 자습서-4. 런타임 시 공간 오디오 사용 및 사용 안 함
-description: 단추를 사용 하 여 런타임에 spatialization 오디오를 사용 하거나 사용 하지 않도록 설정 합니다.
+title: 런타임 시 공간 오디오 사용 및 사용 안 함
+description: '단추를 사용 하 여 런타임에 오디오 spatialization를 사용 하거나 사용 하지 않도록 설정 하는 c # 스크립트를 작성 하는 방법을 알아봅니다.'
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head 관련 전송 함수, 반향, Microsoft Spatializer
-ms.openlocfilehash: c9e510e544962c5d1a4c462d20dafa222c6a5289
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: eaaf8a05088b5bab674ca11b15b0c63383faa479
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002608"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007343"
 ---
 # <a name="enabling-and-disabling-spatialization-at-run-time"></a>런타임에 spatialization 사용 및 사용 안 함
 
 ## <a name="objectives"></a>목표
+
 이 4 장에서는 다음을 수행 합니다.
 * 게임 개체에서 spatialization을 제어 하는 새 스크립트를 추가 합니다.
 * 단추 작업에서 spatialization 컨트롤 스크립트를 구동 합니다.
 
 ## <a name="add-spatialization-control-script"></a>Spatialization 컨트롤 스크립트 추가
+
 **프로젝트** 창을 마우스 오른쪽 단추로 클릭 하 고 **만들기-> c # 스크립트** 를 선택 하 여 새 c # 스크립트를 만듭니다. 스크립트 이름을 "SpatializeOnOff"로 합니다.
 
 ![스크립트 만들기](images/spatial-audio/create-script.png)
@@ -90,6 +92,7 @@ public class SpatializeOnOff : MonoBehaviour
 > Spatialization를 완전히 사용 하지 않도록 설정 하려면 스크립트를 수정 하 여 **SourceObject** 변수의 **spatialization** 부울 속성도 조정 합니다.
 
 ## <a name="attach-your-script-and-drive-it-from-the-button"></a>스크립트를 연결 하 고 단추에서이를 구동 합니다.
+
 **쿼드** 의 **검사기** 창에서 **구성 요소 추가** 를 클릭 하 고 **Spatialize On Off** 스크립트를 추가 합니다.
 
 ![쿼드 스크립트 추가](images/spatial-audio/add-script-to-quad.png)
@@ -115,6 +118,7 @@ public class SpatializeOnOff : MonoBehaviour
 ![단추 동작 설정](images/spatial-audio/button-action-settings.png)
 
 ## <a name="next-steps"></a>다음 단계
+
 HoloLens 2 또는 Unity 편집기에서 앱을 사용해 보세요. 이제 앱에서 단추를 눌러 비디오에서 spatialization을 활성화 하 고 비활성화할 수 있습니다. Unity 편집기에서 테스트 하는 경우 스페이스바를 눌러 스크롤 휠을 눌러 직접 시뮬레이션을 활성화 합니다. 
 
 > [!div class="nextstepaction"]

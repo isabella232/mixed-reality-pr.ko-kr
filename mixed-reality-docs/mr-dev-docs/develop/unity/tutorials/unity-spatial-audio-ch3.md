@@ -1,19 +1,20 @@
 ---
-title: 공간 오디오 자습서-3. 비디오에서 공간화 오디오
-description: 비디오 자산을 Unity 프로젝트로 가져오고 비디오에서 오디오를 spatialize.
+title: 비디오에서 공간화 오디오
+description: 비디오 자산을 Unity mixed reality 프로젝트로 가져오고 비디오에서 오디오를 spatialize는 방법에 대해 알아봅니다.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head 관련 전송 함수, 반향, Microsoft Spatializer, 비디오 가져오기, 비디오 플레이어
-ms.openlocfilehash: 46f2f88be6613096a835f04e826b776c32c1b8c2
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 211d1e32a8137444d0f33d442a60067dcd77ca36
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002628"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007414"
 ---
 # <a name="spatializing-audio-from-a-video"></a>비디오에서 공간화 오디오
+
 HoloLens 2 Unity 자습서의 공간 오디오 모듈의이 세 번째 챕터에서는 다음을 수행 합니다.
 * 비디오 가져오기 및 비디오 플레이어 추가
 * Quadrangle 비디오 재생
@@ -40,6 +41,7 @@ HoloLens 2 Unity 자습서의 공간 오디오 모듈의이 세 번째 챕터에
 ![계층의 비디오 플레이어](images/spatial-audio/video-player-in-hierarchy.png)
 
 ## <a name="play-video-onto-a-quadrangle"></a>Quadrangle 비디오 재생
+
 **비디오 플레이어** 개체에는 비디오를 렌더링할 질감 게임 개체가 필요 합니다. 먼저 **계층** 창을 마우스 오른쪽 단추로 클릭 하 고 **3d 개체-> 쿼드** 를 선택 하 여 **계층 구조** 에 **쿼드** 를 추가 합니다.
 
 ![계층에 쿼드 추가](images/spatial-audio/add-quad-to-hierarchy.png)
@@ -74,6 +76,7 @@ HoloLens 2 Unity 자습서의 공간 오디오 모듈의이 세 번째 챕터에
 ![비디오 플레이어 속성](images/spatial-audio/video-player-properties.png)
 
 ## <a name="spatialize-the-audio-from-the-video"></a>비디오에서 오디오 Spatialize
+
 **4** 의 **검사기** 창에서 비디오에서 오디오를 라우팅할 **오디오 소스** 를 만듭니다.
 * 창 맨 아래에 있는 **구성 요소 추가** 를 클릭 합니다.
 * **오디오 소스** 추가
@@ -96,6 +99,7 @@ HoloLens 2 Unity 자습서의 공간 오디오 모듈의이 세 번째 챕터에
 ![비디오 플레이어에서 오디오 원본 설정](images/spatial-audio/video-player-set-audio-source.png)
 
 ## <a name="next-steps"></a>다음 단계
+
 HoloLens 2 또는 Unity 편집기에서 앱을 사용해 보세요. 비디오를 보고 듣고 비디오에서 오디오가 spatialized 됩니다.
 
 > [!div class="nextstepaction"]

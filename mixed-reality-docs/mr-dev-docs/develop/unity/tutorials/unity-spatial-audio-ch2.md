@@ -1,26 +1,28 @@
 ---
-title: 공간 오디오 자습서-2. 공간화 단추 상호 작용 소리
-description: 프로젝트에 단추를 추가 하 고 단추 상호 작용 소리를 spatialize.
+title: 공간화 단추 상호 작용 소리
+description: 혼합 현실 응용 프로그램에서 단추를 추가 하 고 단추 상호 작용 소리를 spatialize는 방법에 대해 알아봅니다.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head 관련 전송 함수, 반향, Microsoft Spatializer, prefabs, volume curve
-ms.openlocfilehash: 62825ed8922cd904212160748018446cbc76b839
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 1f54ba8cab55ba375a6b1499796761ae02b03a02
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002598"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007363"
 ---
 # <a name="spatializing-button-interaction-sounds"></a>공간화 단추 상호 작용 소리
 
 ## <a name="objectives"></a>목표
+
 HoloLens 2 자습서의 공간 오디오 모듈의이 두 번째 장에서는 다음을 수행 합니다.
 * 단추 추가
 * 단추 클릭 소리 Spatialize
 
 ## <a name="add-a-button"></a>단추 추가
+
 **프로젝트** 창에서 **자산** 을 선택 하 고 검색 표시줄에 "PressableButtonHoloLens2"를 입력 합니다.
 
 ![자산에서 prefab 단추](images/spatial-audio/button-prefab-in-assets.png)
@@ -30,6 +32,7 @@ Prefab 단추는 흰색 아이콘이 아니라 파란색 아이콘으로 표시 
 ![단추 변형](images/spatial-audio/button-transform.png)
 
 ## <a name="spatialize-button-feedback"></a>Spatialize 단추 피드백
+
 이 단계에서는 단추에 대 한 오디오 피드백을 spatialize 합니다. 관련 디자인 제안 사항은 [공간 음향 디자인](../../../design/spatial-sound-design.md)을 참조 하세요. 
 
 오디오 **믹서** 창에서는 오디오 **원본** 구성 요소에서 오디오 재생을 위해 **믹서 그룹** 이라는 대상을 정의할 수 있습니다. 
@@ -60,6 +63,7 @@ Prefab 단추는 흰색 아이콘이 아니라 파란색 아이콘으로 표시 
 > **Spatialize** 확인란을 선택 하지 않고 **공간 Blend** 를 1 (3d)로 이동 하는 경우 Unity는 **Microsoft spatializer** with hrtfs 대신 패닝 spatializer를 사용 합니다.
 
 ## <a name="adjust-the-volume-curve"></a>볼륨 곡선 조정
+
 기본적으로 Unity는 수신기에서 더 멀리 경우 spatialized 소리를 표시 합니다. 이 감쇠가 상호 작용 피드백 소리에 적용 되 면 인터페이스를 사용 하기가 더 어려울 수 있습니다.
 
 이 감쇠를 사용 하지 않도록 설정 하려면 **볼륨** 곡선을 조정 합니다. **PressableButtonHoloLens2** 에 대 한 **검사기** 창의 **오디오 원본** 구성 요소에는 **3d 소리 설정** 이라는 섹션이 있습니다. 해당 섹션에서 다음을 수행 합니다.

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: holograms, 안정성, hololens, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 프레임 율, 렌더링, reprojection, 색 분리
 appliesto:
 - HoloLens
-ms.openlocfilehash: 4405cd0fa7cfca5205d312d1ccc54efc06db7bd7
-ms.sourcegitcommit: 13fe1e7f7f268730a0be720933d7414e9c63ac9b
+ms.openlocfilehash: 36abf928d8f665717bacaf8da372d299b41fabd6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97808834"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006643"
 ---
 # <a name="hologram-stability"></a>홀로그램 안정성
 
@@ -95,7 +95,7 @@ HoloLens에는 reprojection 이라는 정교한 하드웨어 지원 holographic 
 
 ### <a name="choosing-reprojection-technique"></a>Reprojection 기술 선택
 
-안정화 유형 |    몰입형 헤드셋 |    HoloLens 생성 1 | HoloLens 2
+안정화 유형 |    모던 헤드셋 |    HoloLens 생성 1 | HoloLens 2
 --- | --- | --- | ---
 깊이 예측 |    권장 |   해당 없음 |   권장<br/><br/>Unity 응용 프로그램은 Unity 2018.4.12 이상 또는 Unity 2019.3 이상을 사용 해야 합니다. 그렇지 않으면 자동 평면 다시 프로젝션을 사용 합니다.
 자동 평면 다시 프로젝션 | 해당 없음 |   권장 기본값 |   깊이 다시 프로젝션이 최상의 결과를 제공 하지 않는 경우 권장<br/><br/>Unity 응용 프로그램은 Unity 2018.4.12 이상 또는 Unity 2019.3 이상을 사용 하는 것이 좋습니다.  이전 Unity 버전은 약간 저하 된 다시 프로젝션 결과와 함께 작동 합니다.
@@ -181,7 +181,7 @@ HoloLens가 표시 되기 때문에 "색 구분" 이라는 아티팩트가 종�
 
 이전과 마찬가지로 60 FPS에서 렌더링 하 고 안정화 평면을 설정 하는 것은 홀로그램 안정성을 위한 가장 중요 한 기술입니다. 눈에 띄는 색 분리를 사용 하는 경우 먼저 프레임 속도에 기대를 충족 하는지 확인 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 * [혼합 현실 성능 이해](understanding-performance-for-mixed-reality.md)
 * [색, 광원 및 재질](../../color,-light-and-materials.md)
 * [Instinctual 상호 작용](../../design/interaction-fundamentals.md)

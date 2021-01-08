@@ -1,14 +1,14 @@
 ---
 title: WebVR Faq
-description: 표준 소비자 지원 설명서를 벗어나는 웹 혼합 현실 문제 해결.
+description: 표준 소비자 지원 설명서를 벗어나는 웹 응용 프로그램의 경우에는 혼합 현실 문제 해결을 최신 상태로 유지 하세요.
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, WebVR
-ms.openlocfilehash: fd9906ca36c71b1bf959466d90c57e07be0eca5e
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: dc7a0b28e19f4f1fc029489aae2ea375e43b8d3b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725634"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008663"
 ---
 # <a name="webvr-faqs"></a>WebVR Faq
 

@@ -1,17 +1,17 @@
 ---
 title: 핸드 코치
-description: 3D 바늘은 시스템에서 사용자가 도움을 받을 수 있도록 사용자의 손을 감지 하지 못하는 경우에 트리거됩니다.
+description: 시스템에서 사용자의 손을 검색 하 여 지원 하기 위해 직접 coach를 사용 하 여 3D 손을 트리거하는 방법에 대해 알아봅니다.
 author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality, 디자인, 수동 coach, 몰입 형 헤드셋, MRTK, 실습, 수동 지원, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: e46704a1cd2e93fc1764528c408c01d117444c34
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 07b42482d9258b4189ef43683370bd951f5c88e8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847962"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009163"
 ---
 # <a name="hand-coach"></a>핸드 코치
 
@@ -173,7 +173,7 @@ UI 메뉴를 사용 하 여 다양 한 손 크기를 테스트 하 고,이를 �
     *   프로젝트별 설정
         *   UWP로 설정 된 장면: Windows Mixed Reality의 [Unity 구성 프로젝트](../develop/unity/Configure-Unity-Project.md) 에서 지침을 찾을 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [상호 작용-기본 사항](interaction-fundamentals.md)
 * [자산 생성 프로세스](asset-creation-process.md)

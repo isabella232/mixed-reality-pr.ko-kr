@@ -1,17 +1,17 @@
 ---
 title: Holographic 원격 문제 해결 및 제한 사항
-description: HoloLens 2의 Holographic Remoting에 대 한 문제 해결 단계입니다.
+description: HoloLens 2 장치에서 Holographic 원격 기능에 대 한 문제 해결 리소스 및 지침을 찾습니다.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, holographic remoting, 원격 렌더링, 네트워크 렌더링, HoloLens, 원격 holograms, 문제 해결, 도움말, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 9b900238abc79b0f2f93691d4b4a67cce67a201a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ee1dce72af02374e930de4a1bdff94285c7a84ae
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530183"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006453"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Holographic 원격 문제 해결
 

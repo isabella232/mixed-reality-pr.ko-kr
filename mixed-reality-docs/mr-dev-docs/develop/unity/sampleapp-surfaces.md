@@ -1,17 +1,17 @@
 ---
 title: Surfaces
-description: 표면은 Microsoft의 혼합 현실 디자인 랩에서 오픈 소스 샘플 앱입니다. 시각적 개체, 오디오 및 완전히 구분 되는 tactile 하루아침를 만드는 방법을 살펴봅니다.
+description: Surface 샘플 앱에서 시각적 개체, 오디오 및 tactile를 사용 하 여 sensations를 만드는 방법에 대해 알아봅니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: Windows Mixed Reality, 디자인, 샘플 앱, 컨트롤, MRTK, Mixed Reality Toolkit, Unity, 샘플 앱, 예제 앱, 오픈 소스, Microsoft Store, HoloLens, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: c20ea17b20c867d9bf1da0d5f6244e36f2abbf27
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: bfb93574212dc9e6624d8baac636caf5c8df428a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678522"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009313"
 ---
 # <a name="surfaces"></a>Surfaces
 
@@ -22,12 +22,14 @@ ms.locfileid: "94678522"
 
 ![Surfaces](images/MRDL_Surfaces_1.jpg)
 
-## <a name="demo-video"></a>데모 비디오 
+## <a name="demo-video"></a>데모 동영상 
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IhWQ]
 
 혼합 현실 캡처를 사용 하 여 HoloLens 2로 기록 됨
 
 ## <a name="about-the-app"></a>앱 정보
+
 표면은 MRTK (Mixed Reality Toolkit)의 입력 시스템 및 구성 요소를 사용 하 여 HoloLens 2에 대 한 앱 환경을 만드는 방법을 보여 줍니다. 이 프로젝트에서는의 예제를 찾을 수 있습니다.
 - MRTK의 [입력 시스템](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html), 특히 직접/조인트 추적을 사용 합니다.
 - 고성능 그래픽에는 MRTK의 [표준 셰이더](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html) 를 사용 합니다.
@@ -35,14 +37,17 @@ ms.locfileid: "94678522"
 이 프로젝트의 구성 요소를 사용 하 여 사용자 고유의 혼합 현실 앱 환경을 만들 수 있습니다.
 
 ## <a name="mr-dev-days-2020---learnings-from-the-mr-surfaces-app"></a>MR 개발 일 2020-MR 표면 앱에서 학습
+
 [MR 표면 앱에서 학습](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App)
 
 Lars Simkins, MRDL surface 앱 뒤의 선임 디자이너는 앱의 디자인 스토리와 기술 주요 사항에 대해 설명 합니다.
 
 ## <a name="project-repository-on-github"></a>GitHub의 프로젝트 리포지토리
+
 [https://github.com/microsoft/MRDL_Unity_Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)
 
 ## <a name="download-app-from-microsoft-store-in-hololens-2"></a>HoloLens 2의 Microsoft Store에서 앱 다운로드
+
 https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overviewtab
 
 (앱은 HoloLens 2 에서만 사용할 수 있음)

@@ -1,6 +1,6 @@
 ---
-title: Windows Mixed Reality 최소 PC 하드웨어 호환성 지침
-description: Windows Mixed Reality와의 호환성을 위한 최소 PC 시스템 요구 사항을 요약 하는 차트입니다.
+title: Windows Mixed Reality PC 호환성 지침
+description: Windows Mixed Reality와의 호환성을 위한 최소 PC 시스템 요구 사항을 요약 하는 개요 차트입니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 울트라, compatible, compatibility, system 요구 사항, PC
 appliesto:
 - Windows 10
-ms.openlocfilehash: bd287e2089056be56330c2c2e8e9af2c079009ac
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: ed53c388797cb57a7f2a53ed40b18923a23c8b74
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725664"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009123"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>Windows Mixed Reality 최소 PC 하드웨어 호환성 지침
 
@@ -69,6 +69,7 @@ Windows Mixed reality를 사용 하는 최상의 경험을 위해 windows mixed 
  [혼합 현실 포털 결과에 대 한 도움말 보기](https://support.microsoft.com/en-us/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality)
 
 ## <a name="compatibility-guidelines"></a>호환성 지침
+
 > [!IMPORTANT]
 > Microsoft는 이러한 Windows Mixed Reality PC 호환성 지침을 업데이트 하 고 추가 하 고 수정 하 고 있습니다. 최신 지침 및 요구 사항은 정기적으로 다시 확인 하세요.
 
@@ -211,7 +212,7 @@ Windows Mixed Reality의 Surface 호환성에 대 한 자세한 내용은 아래
         </td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Book 2 (13.5 &quot; ) </td><td style="vertical-align: middle"> 부분 </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GTX 1050/16GB의 RAM </td>
+        <td style="vertical-align: middle"> Surface Book 2 (13.5 &quot; ) </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GTX 1050/16GB의 RAM </td>
         <td>
             <ul>
                 <li><b>참고</b>: Surface Book 2 (13 ")는 Windows mixed reality에서 직장 배지가 달린 되지 않지만 일부 Windows Mixed reality 기능을 지원 하므로 제한 된 수의 호환 앱과 게임을 사용할 수 있습니다.  성능은 사용자의 구성에 따라 달라 집니다.</li>
@@ -224,7 +225,7 @@ Windows Mixed Reality의 Surface 호환성에 대 한 자세한 내용은 아래
         </td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Studio </td><td style="vertical-align: middle"> 부분 </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GeForce GTX 980m/16GB RAM </td>
+        <td style="vertical-align: middle"> Surface Studio </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GeForce GTX 980m/16GB RAM </td>
         <td>
             <ul>
                 <li><b>참고</b>: Surface Studio는 Windows mixed reality에 직장 배지가 달린 되지 않지만 몇 가지 Windows Mixed reality 기능을 지원 하 여 제한 된 수의 호환 되는 앱과 게임을 사용할 수 있도록 합니다.  성능은 사용자의 구성에 따라 달라 집니다.</li>
@@ -236,7 +237,7 @@ Windows Mixed Reality의 Surface 호환성에 대 한 자세한 내용은 아래
         </td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Pro (2017) </td><td style="vertical-align: middle"> 부분 </td><td style="vertical-align: middle"> Intel Core i7/Intel® Iri™와 그래픽 640/16GB RAM </td>
+        <td style="vertical-align: middle"> Surface Pro (2017) </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/Intel® Iri™와 그래픽 640/16GB RAM </td>
         <td>
             <ul>
                 <li><b>참고</b>: Surface Pro (2017)는 Windows mixed reality에서 직장 배지가 달린 되지 않지만 일부 Windows Mixed reality 기능을 지원 하 여 제한 된 수의 호환 되는 앱과 게임을 사용할 수 있도록 합니다.  성능은 사용자의 구성에 따라 달라 집니다.</li>
@@ -247,7 +248,7 @@ Windows Mixed Reality의 Surface 호환성에 대 한 자세한 내용은 아래
             </ul>
         </td>
     </tr><br/>    <tr>
-        <td style="vertical-align: middle"> Surface Laptop </td><td style="vertical-align: middle"> 부분 </td><td style="vertical-align: middle"> Intel Core i7/Intel® Iri™와 그래픽 640/16GB RAM </td>
+        <td style="vertical-align: middle"> Surface Laptop </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/Intel® Iri™와 그래픽 640/16GB RAM </td>
         <td>
             <ul>
                 <li><b>참고</b>: Surface 노트북은 Windows mixed reality에 직장 배지가 달린 되지 않지만, 몇 가지 Windows Mixed reality 기능을 지원 하 여 제한 된 수의 호환 되는 앱과 게임을 사용할 수 있도록 합니다.  성능은 사용자의 구성에 따라 달라 집니다.</li>
@@ -260,7 +261,8 @@ Windows Mixed Reality의 Surface 호환성에 대 한 자세한 내용은 아래
     </tr>
 </table>
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
+
 * [커뮤니티에 질문하기](https://answers.microsoft.com)
 * [지원 문의](https://support.microsoft.com/contactus/)
 * [Windows Mixed Reality 지원 Pc의 권장 어댑터](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)

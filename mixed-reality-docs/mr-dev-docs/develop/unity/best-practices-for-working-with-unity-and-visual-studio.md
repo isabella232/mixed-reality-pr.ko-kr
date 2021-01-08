@@ -1,17 +1,17 @@
 ---
-title: Unity 및 Visual Studio 사용 모범 사례
+title: Unity 및 Visual Studio 모범 사례
 description: Unity 및 Visual Studio를 사용 하 여 혼합 현실 응용 프로그램을 만드는 워크플로를 간소화 하기 위한 팁과 요령.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 배포, unity, visual studio, HoloLens, HoloLens 2, 모던 헤드셋, 모범 사례, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, UWP, Visual Studio Tools Windows SDK
-ms.openlocfilehash: 9e80cad3e7154ae5548514297343db8efcdcb49e
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 9464c86826b9a8ea2c64384dfa699fc6d98743dd
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010264"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009373"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Unity 및 Visual Studio 사용 모범 사례
 
@@ -57,7 +57,7 @@ UWP Visual Studio 솔루션을 소스 제어에 체크 인 하면 새 Windows SD
 
 자산을 텍스트 형식으로 저장 하면 Visual Studio에서 콘텐츠 변경 차이을 보다 쉽게 검토할 수 있습니다. **편집 > 프로젝트 설정 > 편집기** 를 선택 하 여 자산을 텍스트 형식으로 저장 하 고, **강제로 텍스트** 를 변경 하 여 **자산 Serialization** 모드를 변경할 수 있습니다. 그러나 텍스트 자산 파일 변경 내용을 병합 하는 것은 오류가 발생 하기 쉬우며 권장 되지 않으므로 소스 제어에서 단독 이진 체크 아웃을 사용 하도록 설정 하는 것이 좋습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
 - [IL2CPP에 대 한 빌드 시간 최적화](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html)
 - [*Unityscriptanalyzer* Visual Studio 확장](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer)

@@ -1,17 +1,17 @@
 ---
 title: MR 및 Azure 313 - IoT Hub 서비스
-description: 이 과정을 완료 하 여 Ubuntu 16.4를 실행 하는 가상 머신에서 Azure IoT Hub 서비스를 구현한 다음 Microsoft HoloLens 또는 모던 (VR) 헤드셋을 사용 하 여 메시지 데이터를 시각화 하는 방법을 알아보세요.
+description: Ubuntu 16.4를 실행 하는 가상 머신에서 Azure IoT Hub 서비스를 구현 하 고 Microsoft HoloLens 또는 VR 헤드셋을 사용 하 여 메시지 데이터를 시각화 하는 방법을 알아봅니다.
 author: drneil
 ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: azure, mixed reality, 아카데미, edge, iot edge, 자습서, api, 알림, 함수, 테이블, hololens, 몰입 형, vr, iot, virtual machine, ubuntu, python, Windows 10, Visual Studio
-ms.openlocfilehash: 2a642bad363d86e37ca2d6c00ebf1ebb73908dec
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 3c01c7351ee284b72a15fd7d5bdd3205fec91e49
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679512"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009303"
 ---
 # <a name="mr-and-azure-313-iot-hub-service"></a>MR 및 Azure 313: IoT Hub 서비스
 
@@ -79,7 +79,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
 
 
-### <a name="before-you-start"></a>시작하기 전 확인 사항
+### <a name="before-you-start"></a>시작하기 전에
 
 1. HoloLens를 설정 하 고 테스트 합니다. HoloLens를 설정 하는 데 지원이 필요한 경우 [hololens 설정 문서를 방문](https://docs.microsoft.com/hololens/hololens-setup)해야 합니다.
 2. 새 HoloLens 앱 개발을 시작할 때 **보정** 및 **센서 조정을** 수행 하는 것이 좋습니다 (경우에 따라 각 사용자에 대해 해당 작업을 수행 하는 데 도움이 될 수 있음).
@@ -370,7 +370,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
 4. 확장이 설치 되 면 VS Code를 닫았다가 다시 엽니다.
 
-5. VS Code를 한 번 더 열면 **View**  >  **통합 터미널** 보기로 이동 합니다.
+5. VS Code를 한 번 더 열면   >  **통합 터미널** 보기로 이동 합니다.
 
 6. 이제 **Cookiecutter** 를 설치 합니다. 터미널에서 다음 bash 명령을 실행 합니다.
 
@@ -916,7 +916,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
 1. **Visual Studio** 를 엽니다 (Visual Studio Code **하지 않음** ).
 
-2. 메뉴에서 클라우드 탐색기 **보기** 를 클릭  >  **Cloud Explorer** 합니다.
+2. 메뉴에서 클라우드 탐색기 **보기** 를 클릭  >  합니다.
 
     ![클라우드 탐색기 열기](images/AzureLabs-Lab313-45.png)
 
@@ -1039,7 +1039,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
     ![리소스로 이동](images/AzureLabs-Lab313-57.png)
 
-11. 새 패널의 왼쪽에서 함수 옆에 있는 **+** 더하기 () 아이콘을 클릭 하 여 *Functions* 새 함수를 만듭니다.
+11. 새 패널의 왼쪽에서 함수 옆에 있는 **+** 더하기 () 아이콘을 클릭 하 여 새 함수를 만듭니다.
 
     ![새 함수 추가](images/AzureLabs-Lab313-58.png)
 

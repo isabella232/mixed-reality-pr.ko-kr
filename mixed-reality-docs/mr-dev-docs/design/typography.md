@@ -1,17 +1,17 @@
 ---
 title: 입력 체계
-description: 텍스트는 앱 환경에서 정보를 전달 하는 데 중요 한 요소입니다.
+description: 혼합 현실 앱 환경에서 정보를 제공 하기 위한 중요 한 요소로 텍스트를 디자인 하 고 구현 하는 방법에 대해 알아봅니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality, 디자인, 스타일, 글꼴, 입력 체계, ui, ux, 텍스트, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens
-ms.openlocfilehash: 09e0e6029011fdd7fda793f6b6645cb3744baa3b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 38acc8c0d2c7dbd7bcb192f82bb1bb52838323ac
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848144"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007653"
 ---
 # <a name="typography"></a>입력 체계
 
@@ -129,7 +129,7 @@ HoloLens에서 holograms은 가감 시스템을 사용 하 여 생성 되므로 
 
 ---
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [Unity의 텍스트](../develop/unity/text-in-unity.md)
 * [색, 광원 및 재질](../color,-light-and-materials.md)

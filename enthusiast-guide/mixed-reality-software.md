@@ -1,6 +1,6 @@
 ---
-title: 혼합 현실 소프트웨어 개요 및 릴리스 기록
-description: Windows Mixed Reality의 주요 소프트웨어 구성 요소에 대 한 개요 및 해당 릴리스 내역
+title: 소프트웨어 개요 및 릴리스 기록
+description: Windows Mixed Reality, 모던 헤드셋 및 해당 릴리스 내역에 대 한 주요 소프트웨어 구성 요소에 대 한 개요입니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 소프트웨어 구성 요소, 릴리스 기록, 릴리스 정보, 버전 기록
 appliesto:
 - Windows 10
-ms.openlocfilehash: 31adf0572482cb9857ff94c2b7ef3aee4fe538d9
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: b06bd835f1e2562e01bfb7bf240747919f422e8c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726024"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009253"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>혼합 현실 소프트웨어 개요 및 릴리스 기록
 
@@ -49,9 +49,11 @@ Windows Mixed Reality 모던 (VR) 헤드셋의 최신 PC 릴리스로 업그레�
 ### <a name="updates-for-windows-mixed-reality-immersive-headsets"></a>Windows Mixed Reality 모던 헤드셋의 업데이트
 
 #### <a name="introducing-the-new-microsoft-edge"></a>새 Microsoft Edge 소개
+
 [이전에 발표](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge)한 대로 Windows Mixed Reality에서 새로운 Microsoft Edge 브라우저를 사용 하 여 더 나은 지원을 제공 했습니다. 새 Microsoft Edge는 Chromium 오픈 소스 프로젝트를 채택 하 여 고객에 게 더 나은 웹 호환성을 만들며 모든 웹 개발자가 웹의 조각화를 줄일 수 있습니다. 또한 WebVR 대신 VR 헤드셋에 대 한 몰입 형 웹 환경을 만드는 새로운 표준인 WebXR도 지원 합니다.
 
 #### <a name="improved-settings-for-wmr"></a>WMR에 대 한 향상 된 설정
+
 피드백을 주셔서 감사 합니다. 헤드셋 표시 페이지에서 설정을 추가 하 고 설명 했습니다.
 
 * **내 홈의 시각적 품질이** 이 설정을 변경 하면 혼합 현실 집 환경 (절벽 집 및 Skyloft)에만 영향을 줍니다.
@@ -71,15 +73,18 @@ Windows Mixed Reality 모던 (VR) 헤드셋의 최신 PC 릴리스로 업그레�
 * **입력 전환** -입력 포커스 전환 (Win + Y) 동작을 자동 (현재 상태 센서 피드백에 따라) 또는 수동으로 전환 합니다.
 
 #### <a name="new-cortana-app"></a>새 Cortana 앱
+
 이 Windows 업데이트에는 현재 영어로만 제공 되는 Cortana 앱의 최신 버전이 포함 되어 있으며, "사진 찍기" 및 "비디오 가져오기"와 같은 특정 혼합 현실 특정 명령을 더 이상 지원 하지 않습니다. 사용자는 새로운 Cortana를 사용 하 여 앱을 시작할 수 있으며, "다음 모임이 언제 인가요?"와 같은 새로운 생산성 중심 명령도 지원 합니다. 또는 "늦게 실행 중인 것으로 전자 메일 보내기 <name> "
     
 #### <a name="additional-updates-in-available-in-19041546-released-october-2020"></a>19041.546에서 제공 되는 추가 업데이트 (10 월 2020 일 출시)
+
 이 데스크톱 월간 서비스 업데이트에는 Windows Mixed Reality 장치에 대 한 다음 변경 내용이 포함 되어 있습니다. 
 * Windows Mixed Reality 헤드 탑재 디스플레이 (HMD)의 왜곡 및 aberrations 줄어듭니다. 
 * 에는 예정 된 HP Windows Mixed Reality 동작 컨트롤러에 대 한 지원이 추가 되었습니다. 
 * 90 Hz를 달성할 수 없는 경우 특정 경우에 Windows Mixed Reality에서 90-Hz 새로 고침 빈도 설정의 동작을 더 이상 자동으로 60 Hz로 전환 하지 않도록 변경 합니다. 
 
 #### <a name="help-us-improve"></a>개선할 수 있도록 도와 주세요!
+
 호환성을 지속적으로 개선 하 고 있습니다.  Windows Mixed Reality에서 즐겨 사용 하는 클래식 Win32 응용 프로그램이 제대로 작동 하지 않는 경우 [피드백 허브](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub)를 통해 피드백을 제출 하세요.
 
 ### <a name="prior-release-notes"></a>이전 릴리스 정보

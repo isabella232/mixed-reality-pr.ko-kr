@@ -1,17 +1,17 @@
 ---
 title: Unity의 공유 환경
-description: Unity 응용 프로그램에서 여러 사용자 간에 동일한 holograms를 공유 합니다.
+description: Azure 공간 앵커를 사용 하 여 Unity 응용 프로그램에서 여러 사용자 간에 동일한 holograms를 공유 하는 방법을 알아봅니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 공유, 고정, WorldAnchor, MR 공유 250, WorldAnchorTransferBatch, SpatialPerception, Azure, Azure 공간 고정, GLOBAL.ASA, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 46588f84c39a48e22147d0fc246ceb8d5ee7c47d
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 26ff56c2f9d3feff33bcb7eb103b41a8dfcba971
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010093"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009283"
 ---
 # <a name="shared-experiences-in-unity"></a>Unity의 공유 환경
 
@@ -45,7 +45,7 @@ Azure 공간 앵커를 사용할 수 없는 경우 [로컬 앵커 전송은](../
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#3-platform-capabilities-and-apis)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [혼합 현실의 공유 환경](../platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * <a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Unity 용 Azure 공간 앵커 SDK</a>

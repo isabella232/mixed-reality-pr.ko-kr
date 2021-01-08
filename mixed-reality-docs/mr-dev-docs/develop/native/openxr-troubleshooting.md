@@ -1,17 +1,17 @@
 ---
 title: OpenXR 문제 해결
-description: OpenXR 응용 프로그램의 문제를 해결 합니다.
+description: Windows Mixed Reality OpenXR 응용 프로그램에서 일반적으로 발생 하는 문제 해결에 대 한 리소스 및 답변을 찾아보세요.
 author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, DirectX, 네이티브, 네이티브 앱, 사용자 지정 엔진, 미들웨어, 문제 해결
-ms.openlocfilehash: ddfe548d689d84576ad0ac06bda46d7c2757859c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 6e1696bca4f31f70af10c32087400ed56efa3c11
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612937"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006733"
 ---
 # <a name="openxr-troubleshooting"></a>OpenXR 문제 해결
 

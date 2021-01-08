@@ -1,17 +1,17 @@
 ---
 title: Unity의 공간 매핑
-description: Unity에서 사용자를 중심으로 실제 형상과의 렌더링 및 충돌
+description: Unity 혼합 현실 앱에서 사용자를 중심으로 실제 기 하 도형에서 렌더링 및 충돌을 사용 하 고 관리 하는 방법을 알아봅니다.
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, 공간 매핑, 렌더러, collider, 메시, 검색, 구성 요소, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 2e5518b1a54f967762143bb8602141b4199a2d54
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: b4c45ba91a3e864c8cd29f3ebc3396d0250948f4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002518"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009293"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity의 공간 매핑
 
@@ -484,10 +484,10 @@ Mixed Reality Toolkit v 2에서 공간 매핑을 사용 하는 방법에 대 한
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 계속 진행할 수 있습니다. 
+앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다. 
 
 > [!div class="nextstepaction"]
-> [Text](text-in-unity.md)
+> [텍스트](text-in-unity.md)
 
 또는 Mixed Reality 플랫폼 기능 및 API로 이동합니다.
 
@@ -496,7 +496,7 @@ Mixed Reality Toolkit v 2에서 공간 매핑을 사용 하는 방법에 대 한
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [좌표계](../../design/coordinate-systems.md)
 * [Unity의 좌표계](coordinate-systems-in-unity.md)
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>

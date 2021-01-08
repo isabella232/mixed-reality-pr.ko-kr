@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 보안, 인증, 서버 간
-ms.openlocfilehash: 64eb54d9401f3fbc8b73ebb97b19de5a68cdc5c4
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 0881238bfca199958802598a3e1829a9de0d8e5b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530405"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006483"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Holographic Remoting에 대 한 연결 보안 사용
 
@@ -24,7 +24,7 @@ ms.locfileid: "97530405"
 * 다른 사용 사례를 기반으로 권장 되는 측정값
 * Holographic Remoting 솔루션에서 보안 구현
 
-## <a name="overview"></a>개요
+## <a name="holographic-remoting-security"></a>Holographic 원격 보안
 
 Holographic 원격은 네트워크를 통해 정보를 교환 합니다. 보안 조치를 수행 하지 않는 경우 동일한 네트워크에서 악의적 사용자 통신의 무결성을 손상 하거나 기밀 정보에 액세스할 수 있습니다.
 

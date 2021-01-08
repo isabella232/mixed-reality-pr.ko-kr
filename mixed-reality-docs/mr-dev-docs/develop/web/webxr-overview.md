@@ -1,17 +1,17 @@
 ---
 title: Windows Mixed Reality에서 WebXR 사용
-description: Windows Mixed Reality에서 WebXR 사용 및 개발 개요
+description: Windows Mixed Reality 몰입 형 헤드셋에서 실행 되는 WebXR 응용 프로그램을 사용 하 고 개발 하는 기본 사항을 알아봅니다.
 author: yonet
 ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mixed reality, 웹 vr, 웹 xr, 웹 mr, 웹 ar, 360, 360 비디오, 360 비디오, 360 photo, 360 사진, 360 콘텐츠, 몰입 형 웹, immersiveweb, IW
-ms.openlocfilehash: b72d4968e59e3e631138b1ecfd17ca9bbdd95c84
-ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
+ms.openlocfilehash: e49f5f2422c9802f94b63943f8a38949a2969f83
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93416874"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006943"
 ---
 # <a name="webxr-overview"></a>WebXR 개요
 

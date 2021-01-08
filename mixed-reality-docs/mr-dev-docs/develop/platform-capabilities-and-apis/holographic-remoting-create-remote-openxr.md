@@ -1,17 +1,17 @@
 ---
 title: Holographic Remoting 원격 앱 작성 (OpenXR)
-description: 원격 컴퓨터에서 렌더링 되는 원격 콘텐츠를 Holographic Remoting 원격 앱을 만들면 HoloLens 2로 스트리밍할 수 있습니다.
+description: OpenXR를 사용 하 여 원격 컴퓨터에서 렌더링 된 원격 콘텐츠를 Holographic 원격 앱으로 HoloLens 2로 스트리밍하는 방법에 대해 알아봅니다.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, NuGet
-ms.openlocfilehash: 202f2108ade9998d25d87dee20d4bd456da0a118
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 616765143309fe2a4883c1393713133fcbe2a9d5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530416"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006493"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-openxr-api"></a>OpenXR API를 사용 하 여 Holographic Remoting 원격 앱 작성
 
@@ -22,7 +22,7 @@ Holographic 원격 앱은 원격으로 렌더링 된 콘텐츠를 HoloLens 2 및
 
 이 페이지 및 작업 프로젝트의 모든 코드는 [Holographic Remoting 샘플 github 리포지토리](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)에서 찾을 수 있습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
 
 좋은 출발점은 작업 OpenXR 기반 데스크톱 또는 UWP 앱입니다. 자세한 내용은 [OpenXR 시작](../native/openxr-getting-started.md)하기를 참조 하세요.
 

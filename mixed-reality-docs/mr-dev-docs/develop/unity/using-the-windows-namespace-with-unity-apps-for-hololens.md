@@ -1,17 +1,17 @@
 ---
 title: HoloLens 용 Unity를 사용 하는 WinRT Api
-description: HoloLens 용 Unity 프로젝트에서 WinRT Api (Windows 네임 스페이스)를 활용 하는 방법을 설명 합니다.
+description: Leanr의 Unity 혼합 현실 프로젝트에서 WinRT Api 및 Windows 네임 스페이스를 활용 하는 방법을 설명 합니다.
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, WinRT, windows mixed reality, API, 연습, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 혼합 현실 Api
-ms.openlocfilehash: ff12df7eb41350fe1f842b3450f3532e4ab8ffa1
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 2c57af72a10867b5ef4fc87ff96679e576d203f4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010584"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007323"
 ---
 # <a name="winrt-apis-with-unity-for-hololens"></a>HoloLens 용 Unity를 사용 하는 WinRT Api
 
@@ -64,6 +64,6 @@ public class WinRTAPI : MonoBehaviour {
 
 Unity 편집기에서 스크립트를 두 번 클릭 하면 기본적으로 편집기 프로젝트에서 스크립트가 시작 됩니다. Visual Studio 프로젝트가 Windows 런타임를 참조 하지 않으므로 WinRT Api를 알 수 없는 것으로 표시 됩니다. **ENABLE_WINMD_SUPPORT** 지시문은 정의 되지 않으며, UWP Visual Studio 솔루션에 프로젝트를 빌드할 때까지 *#if* 래핑된 코드는 무시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [Unity Visual Studio 솔루션 내보내기 및 빌드](exporting-and-building-a-unity-visual-studio-solution.md)
 * [Windows 런타임 지원 Unity](https://docs.unity3d.com/Manual/IL2CPP-WindowsRuntimeSupport.html)

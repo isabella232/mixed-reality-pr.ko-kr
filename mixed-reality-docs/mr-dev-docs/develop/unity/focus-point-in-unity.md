@@ -1,17 +1,17 @@
 ---
 title: Unity의 포커스 포인트
-description: 포커스 지점을 설정 하 여 Unity에서 홀로그램 안정성 수동 조정
+description: HoloLens 및 Windows Mixed Reality 모던 헤드셋의 포커스 지점을 설정 하 여 Unity의 홀로그램 안정성을 수동으로 조정 하는 방법을 알아봅니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, 포커스 지점, 포커스 평면, 안정화 평면, 안정화 지점, reprojection, LSR, 깊이 버퍼, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: d2708dcf39f1d2c67ab1abf69f8330f9dd536ab0
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: bd662a079f23ed590708d961e924859675a44917
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010274"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009343"
 ---
 # <a name="focus-point-in-unity"></a>Unity의 포커스 포인트
 
@@ -53,7 +53,7 @@ void Update()
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 혼합 현실 플랫폼 기능과 Api를 탐색 하는 것이 좋습니다. 여기에서 다음 항목을 계속 진행할 수 있습니다.
+앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 혼합 현실 플랫폼 기능과 Api를 탐색 하는 것이 좋습니다. 여기에서 다음 항목으로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [추적 손실](tracking-loss-in-unity.md)
@@ -65,5 +65,6 @@ void Update()
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#3-platform-capabilities-and-apis)으로 돌아갈 수 있습니다.
 
-### <a name="see-also"></a>참고 항목
+### <a name="see-also"></a>참조
+
 * [안정화 평면](../platform-capabilities-and-apis/hologram-stability.md#reprojection)

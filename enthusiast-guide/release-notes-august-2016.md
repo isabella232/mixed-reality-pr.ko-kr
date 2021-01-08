@@ -1,17 +1,17 @@
 ---
 title: 릴리스 정보 - 2016년 8월
-description: Windows 10 기념일 릴리스에 대 한 HoloLens 릴리스 정보 (낙하 2016)
+description: 2016에 대 한 Windows 10 기념일 릴리스에 대 한 HoloLens 릴리스 정보를 최신 상태로 유지 합니다.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, 릴리스 정보, os, 플랫폼, 기능, 상용 제품군
-ms.openlocfilehash: 870da1075dd1fa1a83926a89bad753233927abda
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9d65d0a2454b5eb076e7c350a6d26e11660af9a5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725964"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009263"
 ---
 # <a name="release-notes---august-2016"></a>릴리스 정보 - 2016년 8월
 
@@ -116,7 +116,7 @@ Microsoft HoloLens 상용 Suite를 구매 하려면 로컬 Microsoft 계정 관�
 * [릴리스 정보 - 2016년 5월](release-notes-may-2016.md)
 * [릴리스 정보 - 2016년 3월](release-notes-march-2016.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 * [HoloLens 알려진 문제](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
 * [상용 기능](https://docs.microsoft.com/windows/mixed-reality/commercial-features)
 * [도구 설치](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)

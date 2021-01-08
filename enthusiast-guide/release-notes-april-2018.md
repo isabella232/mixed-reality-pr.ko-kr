@@ -1,17 +1,17 @@
 ---
 title: 릴리스 정보-4 월 2018
-description: HoloLens 및 windows Mixed Reality 릴리스 정보 Windows 10 4 월 2018 업데이트 (RS4 라고도 함)를 참조 하세요.
+description: Windows 10 2018/RS4 업데이트에 대 한 HoloLens 및 Windows Mixed Reality 릴리스 정보를 최신 상태로 유지 하세요.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 05/21/2018
 ms.topic: article
 keywords: 릴리스 정보, 버전, windows 10, 빌드, rs4, os
-ms.openlocfilehash: 42d22feb582716be5ab0bd24ade4a8566dddb5cf
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 8590cf8f813f22fb4f91fef0862b1e2e4ad43b1a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725974"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009243"
 ---
 # <a name="release-notes---april-2018"></a>릴리스 정보-4 월 2018
 
@@ -266,7 +266,7 @@ HoloLens 용 Windows 10 4 월 2018 업데이트 (RS4)는 [새로운 기능](#new
 * [릴리스 정보 - 2016년 5월](release-notes-may-2016.md)
 * [릴리스 정보 - 2016년 3월](release-notes-march-2016.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 * [모던 헤드셋 지원 (외부 링크)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [HoloLens 지원 (외부 링크)](https://support.microsoft.com/products/hololens)
 * [도구 설치](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)

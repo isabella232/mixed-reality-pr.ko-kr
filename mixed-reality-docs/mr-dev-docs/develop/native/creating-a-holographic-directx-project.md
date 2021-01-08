@@ -1,17 +1,17 @@
 ---
 title: 홀로그램 DirectX 프로젝트 만들기
-description: Windows Mixed Reality 앱 템플릿을 기반으로 새 holographic 앱을 만드는 방법을 설명 합니다.
+description: Windows Mixed Reality 앱 템플릿을 기반으로 새 holographic DirectX 앱을 만드는 방법에 대해 알아봅니다.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holographic 앱, 새 앱, UWP 앱, 템플릿 앱, holograms, 새 프로젝트, 연습, 다운로드, 샘플 코드, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: f377ca5b8af08beb53c878e1ebf665b8074853f6
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 9259a85512555342877de0a5a8bae697fdd03b8d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613087"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006873"
 ---
 # <a name="creating-a-holographic-directx-project"></a>홀로그램 DirectX 프로젝트 만들기
 
@@ -177,11 +177,11 @@ int APIENTRY wWinMain(
 
 의 **Render** 메서드는 `AppMain.cpp` 현재 앱 및 공간 위치 지정 상태에 따라 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> 을 사용 하 여 각 holographic 카메라에 현재 프레임을 렌더링 합니다.
 
-## <a name="notes"></a>참고
+## <a name="notes"></a>메모
 
 이제 Windows Mixed Reality 앱 템플릿에서 스펙터 완화 플래그가 설정 된 (/Qspectre) 컴파일을 지원 합니다. 스펙터 완화 기능을 사용 하도록 설정 하 여 구성을 컴파일하기 전에 스펙터-완화 된 버전의 MSVC (Microsoft Visual C++) 런타임 라이브러리를 설치 해야 합니다. 스펙터-완화 된 c + + 라이브러리를 설치 하려면 Visual Studio 설치 관리자를 시작 하 고 **수정** 을 선택 합니다. **개별 구성 요소로** 이동 하 여 "스펙터"를 검색 합니다. 스펙터 완화 코드를 컴파일하는 데 필요한 대상 플랫폼 및 MSVC 버전에 해당 하는 상자를 선택 하 고 **수정** 을 클릭 하 여 설치를 시작 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [HolographicSpace 받기](getting-a-holographicspace.md)
 * <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspaceh" target="_blank">HolographicSpace</a>
 * [DirectX의 렌더링](rendering-in-directx.md)

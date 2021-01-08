@@ -1,6 +1,6 @@
 ---
 title: 시작하기 전에
-description: PC가 Windows Mixed Reality와 호환 되 고 준비 되었는지 확인 하는 방법입니다.
+description: PC가 호환 되 고 다양 한 Windows Mixed Reality 응용 프로그램 환경을 사용할 수 있도록 준비 하는 방법을 알아봅니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 호환, 호환성, 시작, 설정, PC, 시스템 요구 사항
 appliesto:
 - Windows 10
-ms.openlocfilehash: f4743b6548def227675944fcd742b1596963cb3c
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: b7e90477ed16170a5661f34798a5af822ad8e945
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725494"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006883"
 ---
 # <a name="before-you-start"></a>시작하기 전에
 
@@ -84,7 +84,7 @@ Windows Mixed Reality를 사용 하는 동안 이동 하려면 공간이 크고 
 
 "모든 환경"을 선택 하는 경우 경계를 설정 하 고 경계를 사용 하는 앱 환경과 필요로 하지 않는 앱 환경을 중심으로 이동할 수 있습니다. 사용 하려는 영역에 장애물, 위험 또는 손상 된 항목이 없는지 확인 하 여 공간을 준비 합니다. 머리 위에 포함 됩니다. 계단의 위쪽 이나 더 낮은 천장 팬에서 설정 하지 마세요. 영역에서 트 및 장애물을 제거 하 고 헤드셋을 사용 하는 모든 사용자가 [안전 지침](https://support.microsoft.com/en-us/help/4039969/windows-10-mixed-reality-immersive-headset-health-safety-comfort)을 읽고 이해 하도록 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [HMD에 연결](plug-in-your-headset.md)
 * [최소 PC 하드웨어 요구 사항](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)

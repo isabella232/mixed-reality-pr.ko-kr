@@ -1,17 +1,17 @@
 ---
 title: 혼합 현실 앱 유형
-description: 완전히 몰입 형 환경에서 사용자의 현재 환경에 대 한 조명 정보 계층화에 이르기까지 혼합 현실 플랫폼이 지원할 수 있는 환경의 스펙트럼에 대해 알아봅니다.
+description: 몰입 형 환경에서 사용자 환경에 대 한 조명 정보 계층화에 이르기까지 혼합 현실 플랫폼에서 지원 되는 환경에 대해 알아봅니다.
 author: rwinj
 ms.author: willyang
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, 디자인, 앱 패턴, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens
-ms.openlocfilehash: 8c9a051ff0b80461fe590efa37593bddb01c0e63
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 795d8733b9f509a79d9429f75dff2f88a2a63c93
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848098"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007623"
 ---
 # <a name="types-of-mixed-reality-apps"></a>혼합 현실 앱 유형
 

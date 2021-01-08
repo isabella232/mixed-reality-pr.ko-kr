@@ -1,5 +1,5 @@
 ---
-title: Windows Mixed Reality 모던 헤드셋 상태, 안전 및 편안 함
+title: Windows Mixed Reality 헤드셋 상태 및 안전
 description: Windows Mixed Reality 앱을 사용 하는 경우 사용자와 사용자를 안정적이 고 안전 하며 편안 하 게 유지 하는 방법을 알아보세요.
 author: hferrone
 ms.author: v-hferrone
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: a8b78cd637b3f3b68ef793aa76031e3151f1f0fe
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 32b29d11585bae4e803e516ae3733e1165f45587
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725574"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009003"
 ---
 # <a name="windows-mixed-reality-immersive-headset-health-safety-and-comfort"></a>Windows Mixed Reality 모던 헤드셋 상태, 안전 및 편안 함
 
@@ -57,6 +57,6 @@ Discomfort 발생 하는 경우 **주기적으로 중단** 하 고 중지 하 �
 **사용자 환경 관리를 지원 하기 위해** 사용 가능 하 고 구성 된 경우 장치 기능을 사용 하 여 장치에서 장애물을 방지 하는 데 필요한 경계를 설정할 수 있습니다.
 
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 * [커뮤니티에 질문하기](https://answers.microsoft.com)
 * [지원 문의](https://support.microsoft.com/contactus/)

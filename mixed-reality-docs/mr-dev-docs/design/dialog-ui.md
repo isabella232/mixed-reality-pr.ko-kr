@@ -1,17 +1,17 @@
 ---
 title: 대화 상자
-description: 혼합 현실 응용 프로그램에서 대화 상자 오버레이 및 사용 방법에 대해 알아봅니다.
+description: MRTK의 대화 상자 오버레이 및 혼합 현실 응용 프로그램에서이를 사용 하는 방법에 대해 알아봅니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: 혼합 현실, HoloLens, UI 컨트롤, 상호 작용, ui, ux, UX 디자인, 공간 UI, 공간 상호 작용, 3D UI, 3D UX, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 752c4cc03c90e498664c61fa3c53b303a2a83a2f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9ef4fc5e4d781d235996a645e8d1bb81e040a64c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847456"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009053"
 ---
 # <a name="dialog"></a>대화 상자
 
@@ -39,7 +39,7 @@ MRTK는 하나 또는 두 개의 단추 옵션을 사용 하 여 세 가지 크�
 
 ---
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

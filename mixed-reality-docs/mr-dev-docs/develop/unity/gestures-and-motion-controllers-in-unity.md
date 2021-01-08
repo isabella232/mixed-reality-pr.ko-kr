@@ -1,17 +1,17 @@
 ---
 title: Unity의 제스처 및 모션 컨트롤러
-description: 핸드 제스처 및 동작 컨트롤러를 사용 하 여 Unity의 응시에서 작업을 수행 하는 방법을 알아봅니다.
+description: XR 및 일반 단추/축 Api를 사용 하 여 핸드 제스처 및 동작 컨트롤러를 사용 하 여 Unity에서 작업을 수행 하는 방법에 대해 알아봅니다.
 author: hferrone
 ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: 제스처, 동작 컨트롤러, unity, 응시, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 8941fa05af21a7b2c7302f4a76f27cf38e1d5a65
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 3ef3e3d5a1d9171ff6cc04e19fa97bb73768370e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010324"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008793"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Unity의 제스처 및 모션 컨트롤러
 
@@ -152,9 +152,9 @@ Unity의 교차 공급 업체 입력 API (XR)를 통해 그립 포즈에 액세�
 <tr>
 <th> 상태 추적 </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>높은 정확도</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> 높음 </td><td style="background-color: green; color: white"> true</td>
+<td> <b>높은 정확도</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> 높은 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>높은 정확도 (손실 위험)</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: green; color: white"> 높음 </td><td style="background-color: green; color: white"> true</td>
+<td> <b>높은 정확도 (손실 위험)</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: green; color: white"> 높은 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>대략적인 정확도</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: orange"> 근사치 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -565,7 +565,7 @@ Throw는 향후 Windows 업데이트를 사용 하 여 계속 개선 되며 여�
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 계속 진행할 수 있습니다.
+앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [손 및 시선 추적](hand-eye-in-unit.md)

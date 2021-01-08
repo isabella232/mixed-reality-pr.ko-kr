@@ -1,17 +1,17 @@
 ---
 title: 릴리스 정보 - 2016년 3월
-description: Hololens 및 Windows Holographic 시작에 대 한 HoloLens 릴리스 정보입니다.
+description: Hololens 및 Windows Holographic 시작에 대 한 HoloLens 릴리스 정보를 최신 상태로 유지 합니다.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 릴리스 정보, HoloLens, os, 플랫폼, 기능, 빌드, 시작
-ms.openlocfilehash: 9129bb220d2a580235494a94ecbd3227e7d4c7c7
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: a7797483b5ba60203f0f0b3c2c4ce79b924d81dc
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725934"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009203"
 ---
 # <a name="release-notes---march-2016"></a>릴리스 정보 - 2016년 3월
 
@@ -33,7 +33,7 @@ Microsoft HoloLens에서 처음으로 사용할 수 있는 Windows Holographic�
 
 개발용 장치를 잠금 해제 하려면 *설정* 앱을 열고, *업데이트 & 보안* 으로 이동 하 고, *개발자 용* 으로 전환 페이지로 전환 하 고, 개발자 모드를 켜기로 설정 합니다. 여기에서 [장치 포털](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal) 을 사용 하도록 설정할 수도 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 * [HoloLens 알려진 문제](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
 * [도구 설치](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
 * [Windows Mixed Reality 홈 탐색](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)

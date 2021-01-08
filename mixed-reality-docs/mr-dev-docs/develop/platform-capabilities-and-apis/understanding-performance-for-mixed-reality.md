@@ -1,17 +1,17 @@
 ---
 title: 혼합 현실 성능 이해
-description: Windows Mixed Reality 앱 성능 최적화에 대 한 고급 정보 및 세부 정보입니다.
+description: Windows Mixed Reality 앱 성능을 분석 하 고 최적화 하기 위한 고급 정보 및 세부 정보를 알아보세요.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 성능, 최적화, CPU, GPU
-ms.openlocfilehash: fc7b6385acda9079a649131b9e6eccf5ac067819
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ff3db5d49ddab13a20c4c32de8e5640fff4f0d81
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530064"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008473"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>혼합 현실 성능 이해
 
@@ -134,9 +134,9 @@ Occluding 개체에 의해 숨겨질 때 여러 개체가 렌더링 되지만 �
 
 #### <a name="object-pooling"></a>개체 풀링
 
-개체 풀링은 연속 할당 및 개체 할당 해제 비용을 줄이는 인기 있는 기술입니다. 이 작업을 수행 하려면 시간이 지남에 따라 개체를 지속적으로 생성 및 제거 하는 대신 동일한 개체의 대량 풀을 할당 하 고이 풀에서 사용 가능한 활성 인스턴스를 다시 사용 합니다. 개체 풀은 앱을 실행 하는 동안 수명이 가변적인 reuseable 구성 요소에 적합 합니다.
+개체 풀링은 연속 할당 및 개체 할당 해제 비용을 줄이는 인기 있는 기술입니다. 이 작업을 수행하려면 시간이 지남에 따라 개체를 지속적으로 만들고 삭제하는 대신, 동일한 개체의 대량 풀을 할당하고 이 풀에서 사용 가능한 비활성 인스턴스를 다시 사용합니다. 개체 풀은 앱 중에 수명이 가변적인 다시 사용할 수 있는 구성 요소에 적합합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Unity의 권장 성능](../unity/performance-recommendations-for-unity.md)
 - [Unity 권장 설정](../unity/recommended-settings-for-unity.md)
 - [3D 모델 최적화](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)

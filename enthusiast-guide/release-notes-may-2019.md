@@ -1,17 +1,17 @@
 ---
 title: 릴리스 정보-2019 년 5 월
-description: Windows 10에 대 한 windows Mixed Reality 릴리스 정보는 2019 년 5 월 업데이트 (19H1이 라고도 함)를 참조 하세요.
+description: Windows 10, 2019/19H1 업데이트에 대 한 Windows Mixed Reality 릴리스 정보를 최신 상태로 유지 합니다.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: 릴리스 정보, 버전, windows 10, 빌드, 19h1, os, 2019 년 5 월
-ms.openlocfilehash: 19444732884a87de3f28e90d656deef6e51eb191
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: fd5688b7c68e0a16873ff153f3c158a3575e02e9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725924"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007123"
 ---
 # <a name="release-notes---may-2019"></a>릴리스 정보-2019 년 5 월
 
@@ -65,7 +65,7 @@ HoloLens (첫 번째 gen)가 LTS (장기 서비스) 상태를 입력 합니다. 
 * [릴리스 정보 - 2016년 5월](release-notes-may-2016.md)
 * [릴리스 정보 - 2016년 3월](release-notes-march-2016.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 * [모던 헤드셋 지원 (외부 링크)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [HoloLens 지원 (외부 링크)](https://support.microsoft.com/products/hololens)
 * [도구 설치](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)

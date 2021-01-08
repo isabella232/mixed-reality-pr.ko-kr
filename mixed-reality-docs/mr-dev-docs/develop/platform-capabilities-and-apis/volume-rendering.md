@@ -1,17 +1,17 @@
 ---
 title: 볼륨 렌더링
-description: 대규모 이미지는 화면으로 쉽게 표현할 수 없는 볼륨 전체에서 불투명도 및 색이 포함 된 다양 한 정보를 포함 합니다. Windows Mixed Reality 내에서 대규모 이미지를 효율적으로 렌더링 하는 방법에 대해 알아봅니다.
+description: Windows Mixed Reality에서 불투명도 및 색을 사용 하 여 다양 한 대규모 이미지를 효율적으로 렌더링 하는 방법에 대해 알아봅니다.
 author: kevinkennedy
 ms.author: kkennedy
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 대규모 이미지, 볼륨 렌더링, 성능, 혼합 현실
-ms.openlocfilehash: c0b68a2368823e5699e24d66bfafe1e4e05bdce8
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 2a76be80d786aea0c8bc1bd364155fa37d37e151
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612947"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008783"
 ---
 # <a name="volume-rendering"></a>볼륨 렌더링
 

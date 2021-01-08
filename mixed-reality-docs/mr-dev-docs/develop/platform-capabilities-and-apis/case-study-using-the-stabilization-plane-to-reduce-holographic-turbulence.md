@@ -1,17 +1,17 @@
 ---
-title: 사례 연구-안정화 평면을 사용 하 여 holographic turbulence 줄이기
-description: 안정화 평면을 사용하여 홀로그램 교란 줄이기
+title: 사례 연구-안정화 평면 사용
+description: 개발 팀이 안정화 평면을 사용 하 여 혼합 현실 응용 프로그램에서 holographic turbulence를 줄이는 방법에 대해 알아보세요.
 author: bstrukus
 ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, 안정화, 사례 연구, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: e0eba3df5457ea06ee80682d99c82a5a23c1635d
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 85caee589a5f031f605417639eab2e980cb613c5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530440"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006703"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>사례 연구-안정화 평면을 사용 하 여 holographic turbulence 줄이기
 
@@ -97,7 +97,7 @@ HoloLens가 있고이 문서의 개념을 사용 하려는 경우 테스트 장�
 </tr>
 </table>
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [MR 기본 100: Unity 시작](../unity/tutorials/holograms-100.md)
 * [Unity의 포커스 포인트](../unity/focus-point-in-unity.md)
 * [홀로그램 안정성](hologram-stability.md)

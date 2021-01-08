@@ -1,17 +1,17 @@
 ---
 title: 달착륙선
-description: 양손 추적 및 Xbox 컨트롤러 입력을 사용 하 여 HoloLens의 기본 제스처를 확장 하 고, 표면 매핑 및 평면 찾기에 반응 하는 개체를 만들고, 간단한 메뉴 시스템을 구현 하는 방법을 알아봅니다.
+description: 양손 추적 및 Xbox 컨트롤러 입력을 사용 하 여 HoloLens의 기본 제스처를 확장 하 고, 반응 하는 개체를 만들고, 메뉴 시스템을 구현 하는 방법을 알아봅니다.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, 샘플 앱, 디자인, MRTK, Mixed Reality Toolkit, Unity, 샘플 앱, 예제 앱, 오픈 소스, Microsoft Store, HoloLens, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 2861cb85ac2f4a51a80e586b2be42ddb1d395e8a
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: b0630df49fd8ad154017000893a08560793fb39e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010504"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008823"
 ---
 # <a name="lunar-module"></a>달착륙선
 
@@ -20,7 +20,7 @@ ms.locfileid: "97010504"
 
 [음력 모듈](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) 은 Microsoft의 혼합 현실 디자인 랩에서 오픈 소스 샘플 앱입니다. 양손 추적 및 Xbox 컨트롤러 입력을 사용 하 여 HoloLens의 기본 제스처를 확장 하 고, 표면 매핑 및 평면 찾기에 반응 하는 개체를 만들고, 간단한 메뉴 시스템을 구현 하는 방법을 알아봅니다. 모든 프로젝트의 구성 요소는 혼합 현실 앱 환경에서 사용할 수 있습니다.
 
-## <a name="demo-video"></a>데모 비디오 
+## <a name="demo-video"></a>데모 동영상 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IcIP]
 
 혼합 현실 캡처를 사용 하 여 HoloLens 2로 기록 됨
@@ -108,7 +108,7 @@ Xbox 컨트롤러에 비교적 간단 하 게 전달 되는 컨트롤 구성표�
 </tr>
 </table>
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [MRTK 예제 허브](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Surfaces](sampleapp-surfaces.md) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
 * [원소의 주기율표 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)

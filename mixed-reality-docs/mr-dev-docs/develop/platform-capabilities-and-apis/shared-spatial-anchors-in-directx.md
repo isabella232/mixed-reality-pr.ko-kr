@@ -1,17 +1,17 @@
 ---
 title: DirectX의 공유 공간 앵커
-description: 공간 앵커를 공유 하 여 두 HoloLens 장치를 동기화 하는 방법을 설명 합니다.
+description: DirectX 응용 프로그램에서 로컬 및 Azure 공간 앵커를 공유 하 여 두 HoloLens 장치를 동기화 하는 방법을 알아봅니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: HoloLens, 동기화, 공간 앵커, 전송, 여럿이, 보기, 시나리오, 연습, 샘플 코드, Azure, Azure 공간 앵커, 자신
-ms.openlocfilehash: 4e41975a18c28cb2228b20ebb5d3a445774cca44
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 46fe6be5d81a8fc68502500e318eb8e63d223089
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530329"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008533"
 ---
 # <a name="shared-experiences-in-directx"></a>DirectX의 공유 환경
 
@@ -34,7 +34,8 @@ Azure 공간 앵커를 사용 하 여 실행 하면 <a href="https://docs.micros
 
 Azure 공간 앵커를 사용할 수 없는 경우 [로컬 앵커 전송](../../out-of-scope/local-anchor-transfers-in-directx.md) 에서는 한 hololens 장치에서 두 번째 hololens 장치에서 가져올 앵커를 내보낼 수 있습니다.  이 방법은 Azure 공간 앵커 보다 더 강력 하지 않은 앵커 회수를 제공 하며, iOS 및 Android 장치는이 방식에서 지원 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
+
 * [혼합 현실의 공유 환경](shared-experiences-in-mixed-reality.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * <a href="https://docs.microsoft.com/cpp/api/spatial-anchors/winrt/" target="_blank">HoloLens 용 Azure 공간 앵커 SDK</a>

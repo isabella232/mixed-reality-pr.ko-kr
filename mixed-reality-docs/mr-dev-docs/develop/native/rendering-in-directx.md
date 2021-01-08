@@ -1,17 +1,17 @@
 ---
 title: DirectX의 렌더링
-description: Windows Mixed Reality의 holographic 렌더링에 대해 설명 합니다.
+description: Windows Mixed Reality 용 DirectX 응용 프로그램에서 콘텐츠를 업데이트 하 고 렌더링 하는 방법에 대해 알아봅니다.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, 렌더링, 3D 그래픽, HolographicFrame, 렌더링 루프, 업데이트 루프, 연습, 샘플 코드, Direct3D
-ms.openlocfilehash: 90d665e8054a185969a95e6ff6415979e728e9ab
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: aafead61b45550f499405ae63bda7d7f8e79d224
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613187"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006723"
 ---
 # <a name="rendering-in-directx"></a>DirectX의 렌더링
 
@@ -746,6 +746,6 @@ if (FAILED(hr))
     return hr;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [DirectX의 좌표계](coordinate-systems-in-directx.md)
 * [HoloLens 에뮬레이터 사용](../platform-capabilities-and-apis/using-the-hololens-emulator.md)

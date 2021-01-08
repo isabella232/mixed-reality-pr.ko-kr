@@ -1,17 +1,17 @@
 ---
 title: 상호 작용 가능한 개체
-description: 단추는 긴 2D 추상 세계에서 이벤트를 트리거하는 데 사용 되는 비유입니다. 3 차원 혼합 현실 세계에서는 이러한 추상화의 목표로 더 이상 국한 되지 않습니다.
+description: 혼합 현실 응용 프로그램에서 이벤트를 트리거하고 시각적 신호를 제공 하 고 개체와 상호 작용 하는 방법에 대해 알아봅니다.
 author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, 큐, ui, ux, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 오디오
-ms.openlocfilehash: fb7004c22602683e4edb1e38784cac5c0b7479c4
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: d0dc8ce6425d597d04b47a6c8b08f72534488594
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847858"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007203"
 ---
 # <a name="interactable-object"></a>상호 작용 가능한 개체
 
@@ -277,7 +277,7 @@ MixedRealityToolkit의 표준 셰이더는 시각적 및 오디오 큐를 만드
 ---
 
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)
