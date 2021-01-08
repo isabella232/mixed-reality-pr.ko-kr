@@ -1,17 +1,17 @@
 ---
 title: 3D 앱 시작 관리자(UWP 앱) 구현
-description: HoloLens 및 모던 (VR) 헤드셋 모두에서 Windows Mixed Reality UWP 앱 및 게임 (Microsoft Store을 통해 배포)에 대 한 3D 앱 다운로드 및 로고를 만드는 방법입니다.
+description: HoloLens 및 VR 헤드셋의 Windows Mixed Reality UWP 앱 및 게임에 대 한 3D 앱 다운로드 및 로고를 만드는 방법에 대해 알아봅니다.
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, 로고, 아이콘, 모델링, 시작 관리자, 3D 시작 관리자, 타일, 라이브 큐브, 딥 링크, secondarytile, 보조 타일, UWP, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, XML, 경계 상자, unity
-ms.openlocfilehash: 38f0932f20e3660c91b87de7bcb9d66799d9a51a
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 40a68d0835ec8fb92d6417650700f41e8a31aab6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757500"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009683"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>3D 앱 시작 관리자(UWP 앱) 구현
 
@@ -203,7 +203,7 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 
 다른 타일 기능 및 특성과 2D 타일에 사용 되는 방법에 대 한 자세한 내용은 [UWP 앱에 대 한 타일 설명서](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * 3D 앱 시작 관리자를 포함 하는 [혼합 현실 모델 샘플](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) 입니다.
 * [3D 앱 시작 관리자 디자인 지침](3d-app-launcher-design-guidance.md)

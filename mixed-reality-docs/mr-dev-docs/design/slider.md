@@ -1,17 +1,17 @@
 ---
 title: 슬라이더
-description: 슬라이더는 트랙에서 노브 또는 레버를 이동 하 여 값을 설정할 수 있도록 하는 UI 구성 요소입니다.
+description: 혼합 현실 도구 키트를 사용 하 여 트랙에서 노브 또는 레버를 이동 하 여 값을 설정 하는 데 슬라이더 UI 구성 요소를 사용 하는 방법을 알아봅니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 슬라이더, MRTK, 혼합 현실 도구 키트
-ms.openlocfilehash: b2f338dd25bbcc50a68a3c5e9b8d980d15827755
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 15a536074f8f873456482a55c1c9dbe418602bb1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848236"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009563"
 ---
 # <a name="slider"></a>슬라이더
 
@@ -31,7 +31,7 @@ ms.locfileid: "97848236"
 
 ---
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

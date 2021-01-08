@@ -1,18 +1,18 @@
 ---
 title: HP 반향 G2 Faq
-description: HP 반향 G2 헤드셋 사용에 대 한 자주 묻는 질문
+description: Windows Mixed Reality 모던 헤드셋에서 HP 반향 G2 헤드셋 사용에 대 한 질문과 대답을 최신으로 유지 합니다.
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, 성능
 appliesto:
 - Windows 10
-ms.openlocfilehash: 55baf3f076b8cf0f815f899658b3bbe61292e267
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 00338e1354dc04acc76fa2525c721a5e2bd4afe2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725904"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009473"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP 반향 G2 질문과 대답
 

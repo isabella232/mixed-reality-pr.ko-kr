@@ -1,21 +1,22 @@
 ---
 title: 혼합 현실 UX 요소
-description: 이 문서에는 혼합 현실 장치를 설계 하는 방법을 설명 하는 항목 집합이 포함 되어 있습니다.
+description: 기본 요소, 공용 컨트롤 및 동작을 사용 하 여 혼합 현실 장치용 앱을 설계 하는 방법에 대해 알아봅니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
 keywords: UX 디자인, 혼합 현실 UX, UX, 앱 패턴, 컨트롤, 스타일, HoloLens, 상호 작용, 공간 상호 작용, 공간 UI, UX 요소, 동작, 구성 요소, 입력 체계, 색, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 47f7877e9a5f8a71bcae9a16011210d9fc897040
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a1b087230b5a744cb6194c5cb791e4085aa791c6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847778"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009703"
 ---
 # <a name="ux-elements-overview"></a>UX 요소 개요
 
 ## <a name="foundational-elements"></a>기본 요소
+
 매우 혼합 된 현실 환경을 디자인 하는 데 필요한 기본적인 요소에 대해 알아봅니다.
 
 :::row:::
@@ -39,6 +40,7 @@ ms.locfileid: "97847778"
 <br>
 
 ## <a name="common-controls-and-behaviors"></a>공용 컨트롤 및 동작
+
 혼합 현실 환경에서 자주 사용되는 일반적인 공간 상호 작용 및 UI 구성 요소에 대해 알아봅니다.
 
 :::row:::

@@ -1,17 +1,17 @@
 ---
 title: 키보드
-description: MRTK에서 시스템 키보드를 호출 하는 방법에 대해 알아봅니다.
+description: 혼합 현실 도구 키트를 사용 하 여 시스템 키보드를 호출 하 고 사용 하는 방법을 알아봅니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 키보드, MRTK, 혼합 현실 도구 키트
-ms.openlocfilehash: b258ad7934cae76c581723d681cce32c68458b72
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 8efb5446479e53569349eda302c7d4dcb844a137
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847286"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009733"
 ---
 # <a name="keyboard"></a>키보드
 
@@ -38,7 +38,7 @@ ms.locfileid: "97847286"
 > [!div class="nextstepaction"]
 > [HoloLens 또는 Windows Mixed Reality 몰입 형 헤드셋에 배포](../develop/platform-capabilities-and-apis/using-visual-studio.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

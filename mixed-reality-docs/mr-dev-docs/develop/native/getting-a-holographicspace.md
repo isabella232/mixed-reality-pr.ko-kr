@@ -1,17 +1,17 @@
 ---
 title: HolographicSpace 받기
-description: Holographic 렌더링 및 공간 입력의 핵심 개념인 HolographicSpace API에 대해 설명 합니다.
+description: 혼합 현실 앱에서 holographic 렌더링 및 공간 입력에 HolographicSpace API를 사용 하는 방법에 대해 알아봅니다.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, 공간 입력, 렌더링, 스왑 체인, holographic 프레임, 업데이트 루프, 게임 루프, 참조 프레임, locatability, 샘플 코드, 연습, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 3b0e31b8d3bf0d7741e7976edd2069db68ea5121
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: c630905b4f7f3bf03d575201feb944c3b8f62f32
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613017"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009533"
 ---
 # <a name="getting-a-holographicspace"></a>HolographicSpace 받기
 
@@ -176,6 +176,6 @@ m_locatabilityChangedToken = m_spatialLocator.LocatabilityChanged(
 
 그런 다음이 이벤트를 사용 하 여 holograms가 전 세계에 고정 될 수 없는 시기를 확인 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [DirectX의 렌더링](rendering-in-directx.md)
 * [DirectX의 좌표계](coordinate-systems-in-directx.md)

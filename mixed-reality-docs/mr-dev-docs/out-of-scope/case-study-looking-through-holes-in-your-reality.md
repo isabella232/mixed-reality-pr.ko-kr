@@ -1,17 +1,17 @@
 ---
 title: 사례 연구 - 현실의 구멍 속 살펴보기
-description: 이 사례 연구에서는 HoloLens에 "자동 창" 효과를 구현 하 여 사용자가 실제 환경 내에서 옆면을 볼 수 있도록 하는 방법을 설명 합니다.
+description: 이 사례 연구에서는 HoloLens의 "자동 창" 효과 구현에 대해 설명 하 여 사용자가 바닥의 옆면 및 가상 입구를 볼 수 있도록 합니다.
 author: ericrehmeyer
 ms.author: bestruku
 ms.date: 10/18/2019
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, 마법 창, 시차
-ms.openlocfilehash: 84af124cc69e03b3502cee55c694b11ff5c9433b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 018e45a79d88cbc8e28204f023106fbe5dae39bc
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687425"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010113"
 ---
 # <a name="case-study---looking-through-holes-in-your-reality"></a>사례 연구 - 현실의 구멍 속 살펴보기
 
@@ -99,7 +99,7 @@ Unity 편집기에서이 모델을 보면 flowerpot 주위에 긴 검은색 상�
 * 가상 구멍 내에서 콘텐츠를 대화형으로 만드는 방법을 생각해 보겠습니다. 사용자가 자신의 벽을 넘어 약간의 영향을 줄 수 있도록 하면이 트릭에서 제공할 수 있는 불가사의의 의미를 크게 높일 수 있습니다.
 * 개체를 통해 알려진 영역으로 다시 확인 하는 방법을 고려 합니다. 예를 들어 커피 테이블에 holographic를 추가 하 고 그 아래에 있는 바닥을 확인 하려면 어떻게 해야 하나요?
 
-## <a name="about-the-author"></a>저자 정보
+## <a name="about-the-author"></a>작성자 정보
 
 <table style="border-collapse:collapse">
 <tr>

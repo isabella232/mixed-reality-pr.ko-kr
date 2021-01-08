@@ -1,17 +1,17 @@
 ---
 title: Near 메뉴
-description: 주변 메뉴는 태그 동반 동작을 수행 하는 패널의 단추 모음입니다.
+description: 혼합 현실 환경에서 태그 동반 동작을 수행 하는 패널의 단추 컬렉션인 근처 메뉴를 사용 하는 방법에 대해 알아봅니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 메뉴, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: fb64ecf4a0bc2d7a495e87d127b39aded1212a6f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 3cba4452861f05a1ce921c1f18f6636661ee34b0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847266"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009933"
 ---
 # <a name="near-menu"></a>Near 메뉴
 
@@ -32,7 +32,7 @@ ms.locfileid: "97847266"
 
 ---
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

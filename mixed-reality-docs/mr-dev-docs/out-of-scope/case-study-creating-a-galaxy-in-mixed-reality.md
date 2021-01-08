@@ -1,17 +1,17 @@
 ---
 title: 사례 연구-혼합 현실에서 galaxy 만들기
-description: Microsoft HoloLens를 제공 하기 전에 개발자 커뮤니티에서 새로운 장치에 대해 숙련 된 내부 팀 빌드를 확인 하려는 앱의 종류를 확인 했습니다. 5000 개 이상의 아이디어가 공유 되었으며 24 시간 Twitter 폴링 후에는 "Galaxy 탐색기" 라는 아이디어가 적용 되었습니다.
+description: "\"Galaxy 탐색기\" 응용 프로그램 및 커뮤니티 개발자가 24 시간 Twitter 폴링 후에이 응용 프로그램을 빌드하는 방법에 대해 알아봅니다."
 author: karimluccin
 ms.author: kaluccin
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Galaxy 탐색기, HoloLens, Windows Mixed Reality, 아이디어 공유, 사례 연구
-ms.openlocfilehash: 91e1c356d69d2b58795a0a0003dd5ffaf0ef1bdc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 0226c38e9fa21407a7a6529693a2adb3c5da7659
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687521"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009783"
 ---
 # <a name="case-study---creating-a-galaxy-in-mixed-reality"></a>사례 연구-혼합 현실에서 galaxy 만들기
 
@@ -41,7 +41,7 @@ Microsoft는 생생한 공간에서 3D 개체를 직접 렌더링 하는 데 Hol
 
 ### <a name="creating-the-position-of-the-stars"></a>별 위치 만들기
 
-팀 멤버 중 한 명에 게 처음 위치에서 별을 생성 하는 c # 코드를 이미 작성 했습니다. 별은 타원에 있고 해당 위치는 ( **curveOffset** , **ellipseSize** , **권한 상승** )로 설명할 수 있습니다. 여기서 **curveOffset** 은 타원을 따라 하는 별의 각도이 고, **ellipseSize** 은 X와 Z를 따라 하는 타원의 차원이 며, galaxy 내에서 적절 한 별 상승 수준을 상승 합니다. 따라서 각 별모양 특성을 사용 하 여 초기화 되는 버퍼 ([Unity의](https://docs.unity3d.com/ScriptReference/ComputeBuffer.html)경우)를 만들어 나머지 환경에 사용할 수 있는 GPU에 보낼 수 있습니다. 이 버퍼를 그리려면, galaxy를 나타내는 실제 메시 없이 임의의 요소 집합에서 셰이더 (GPU에서 코드)를 실행할 수 있는 [Unity의 DrawProcedural](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) 을 사용 합니다.
+팀 멤버 중 한 명에 게 처음 위치에서 별을 생성 하는 c # 코드를 이미 작성 했습니다. 별은 타원에 있고 해당 위치는 (**curveOffset**, **ellipseSize**, **권한 상승**)로 설명할 수 있습니다. 여기서 **curveOffset** 은 타원을 따라 하는 별의 각도이 고, **ellipseSize** 은 X와 Z를 따라 하는 타원의 차원이 며, galaxy 내에서 적절 한 별 상승 수준을 상승 합니다. 따라서 각 별모양 특성을 사용 하 여 초기화 되는 버퍼 ([Unity의](https://docs.unity3d.com/ScriptReference/ComputeBuffer.html)경우)를 만들어 나머지 환경에 사용할 수 있는 GPU에 보낼 수 있습니다. 이 버퍼를 그리려면, galaxy를 나타내는 실제 메시 없이 임의의 요소 집합에서 셰이더 (GPU에서 코드)를 실행할 수 있는 [Unity의 DrawProcedural](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) 을 사용 합니다.
 
 **CPU**
 
@@ -92,7 +92,7 @@ GPU 렌더링을 사용 하는 파티클 시스템 진행
 별은 긴 호에서 더 빠르게 이동 하 여 가장자리에서 더 느리게 이동 합니다.
 
 
-이를 사용 하 여 각 별은 ( **curveOffset** , **ellipseSize** , **권한 상승** , **age** )로 완전히 설명 됩니다. 여기서 **Age** 는 장면이 로드 된 이후 경과 된 총 시간의 누적입니다.
+이를 사용 하 여 각 별은 (**curveOffset**, **ellipseSize**, **권한 상승**, **age**)로 완전히 설명 됩니다. 여기서 **Age** 는 장면이 로드 된 이후 경과 된 총 시간의 누적입니다.
 
 
 

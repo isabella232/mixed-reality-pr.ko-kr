@@ -1,17 +1,17 @@
 ---
 title: 자산 생성 프로세스
-description: 혼합 현실 환경에 대 한 자산을 만드는 방법에 대 한 지침입니다.
+description: 혼합 현실 환경에 대 한 자산을 만들고 구매 하 고 포트 하는 방법에 대해 알아봅니다.
 author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 자산, 생성, 프로세스, 예산, 다각형, 질감, 셰이더, 성능, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 자산
-ms.openlocfilehash: 2089ac7a870d9b4b13d314774d6d6124b78bb15c
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a5f4271de522111b0ef994869b9ecf4910582562
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847554"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009622"
 ---
 # <a name="asset-creation-process"></a>자산 생성 프로세스
 

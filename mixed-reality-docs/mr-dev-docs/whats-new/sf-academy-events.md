@@ -1,17 +1,17 @@
 ---
 title: 혼합 현실 스피커 시리즈
-description: 샌프란시스코의 Reactor에서 혼합 현실 개발자 이벤트의 달력입니다.
+description: San 샌프란시스코의 Reactor에서 혼합 현실 개발자 이벤트의 일정을 최신으로 유지 합니다.
 author: danielescudero
 ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: 이벤트, 일정, 아카데미, 일정, sf, 샌프란시스코, 원자로
-ms.openlocfilehash: 169af00c61d1eeb5af6b0ea1249f5f4c3083a9f3
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: ce0fb818547af70252e7387a910207e333407363
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757431"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010003"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Microsoft Mixed Reality 이벤트
 
@@ -32,5 +32,3 @@ ms.locfileid: "97757431"
 | 혼합 현실 스피커 시리즈|2020 년 10 월 22 일|[BabylonJS를 사용 하는 WebXR 소개](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
 | 혼합 현실 스피커 시리즈|2020년 11월 17일|[미래 빌드: MRTK의 새로운 요소](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
 | 혼합 현실 스피커 시리즈|2020년 12월 1일|[Holograms 디자인]()|
-
-

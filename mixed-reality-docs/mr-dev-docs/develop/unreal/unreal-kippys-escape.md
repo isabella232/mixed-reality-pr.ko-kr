@@ -1,6 +1,6 @@
 ---
 title: Kippy의 이스케이프 만들기
-description: Unreal Engine에서 HoloLens 2에 대 한 Kippy의 이스케이프를 만드는 과정을 살펴볼 때에도 문의 하십시오.
+description: Unreal Engine에서 Kippy의의 이스케이프 혼합 현실 응용 프로그램을 만드는 방법에 대해 알아보겠습니다.
 author: sw5813
 ms.author: suwu
 ms.date: 9/4/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, 장치에 배포, PC, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: eaba6ea1ee77ffffb74008402eafd1f09fd822e5
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: df199b6a3215158e15fb1252dd75c58aea5bc2ab
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609684"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010043"
 ---
 # <a name="the-making-of-kippys-escape"></a>Kippy의 이스케이프 만들기
 
@@ -21,8 +21,6 @@ Kippy가 아일랜드에서 남겨진 상태를 찾도록 합니다. 문제를 �
 
 > [!IMPORTANT]
 > GitHub 리포지토리에서 Kippy의 이스케이프를 빌드하는 경우 **Unreal Engine 4.25** 이상을 사용 하 고 있는지 확인 합니다.
-
-## <a name="overview"></a>개요
 
 Kippy의 이스케이프는 Unreal Engine 4로 빌드된 오픈 소스 [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) 샘플 앱 이며, [Unreal 용 혼합 현실 UX 도구](https://github.com/microsoft/MixedReality-UXTools-Unreal)입니다. 이 게시물에서는 환경을 구현 하 고 최적화 하기 위한 첫 번째 원칙 및 시각적 디자인의 프로세스를 안내 합니다. MRTK UX 도구를 사용 하 여 혼합 현실 응용 프로그램을 개발 하는 방법에 대 한 자세한 내용은 [Unreal development 개요](unreal-development-overview.md)를 확인할 수 있습니다.
 

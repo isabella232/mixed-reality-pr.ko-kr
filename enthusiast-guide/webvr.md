@@ -1,14 +1,14 @@
 ---
 title: Windows Mixed Reality에서 WebVR 사용
-description: WebVR 및 Windows Mixed Reality 헤드셋에서 Microsoft Edge와 함께 사용 하는 방법을 설명 합니다.
+description: WebVR의 기본 사항, Windows Mixed Reality에서 Microsoft Edge를 사용 하는 방법 헤드셋 및 일반적인 문제 해결 문제에 대해 알아봅니다.
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, WebVR, Edge, Microsoft Edge, 웹 검색
-ms.openlocfilehash: 92f1d00c7f635c88a727732fb743996a654ba775
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 0b0d07383b43feaa11fb9bfac2b071d8d4d80b19
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725604"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009443"
 ---
 # <a name="using-webvr-with-windows-mixed-reality"></a>Windows Mixed Reality에서 WebVR 사용
 
@@ -61,7 +61,7 @@ Windows Mixed Reality 헤드셋 (하드웨어 또는 시뮬레이션 사용)에�
 5. 처음에 특정 도메인에서 VR를 입력 하려고 하면 브라우저는 몰입 형 보기 사용에 대 한 동의를 요청 하 고 예를 선택 합니다. ![특정 도메인에 대 한 첫 번째 시도를 시작 하는 데 표시 되는 동의 UI](images/1053px-Webvr-consent-ui.png)
 6. 헤드셋은 WebVR 콘텐츠를 표시 하기 시작 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [> WebVR 문제 해결](webvr-questions.md)
 * [첫 번째 WebVR 환경을 시작 하는 방법](using-games-and-apps-in-windows-mixed-reality.md#how-to-get-into-your-first-webvr-experience)

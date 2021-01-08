@@ -1,17 +1,17 @@
 ---
 title: QR 코드 추적
-description: HoloLens 2에서 QR 코드를 검색 하는 방법에 대해 알아봅니다.
+description: HoloLens 2의 혼합 현실 앱에서 QR 코드를 검색 하 고, 웹캠 기능을 추가 하 고, 좌표계를 관리 하는 방법에 대해 알아봅니다.
 author: dorreneb
 ms.author: dobrown
 ms.date: 05/15/2019
 ms.topic: article
 keywords: vr, lbe, 위치 기반 엔터테인먼트, vr 아케이드, 아케이드, 모던, qr, qr 코드, hololens2
-ms.openlocfilehash: 023da7a98d1559d9dd0387a7efbaf26ad577df50
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 7e5931e0d23ef6c905b8ec54d08e572a89e747e0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530006"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009403"
 ---
 # <a name="qr-code-tracking"></a>QR 코드 추적
 
@@ -458,6 +458,6 @@ namespace Microsoft.MixedReality.QR
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [좌표계](../../design/coordinate-systems.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>

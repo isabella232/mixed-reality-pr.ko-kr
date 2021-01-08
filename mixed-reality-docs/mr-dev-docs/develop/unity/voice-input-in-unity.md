@@ -1,17 +1,17 @@
 ---
 title: Unity의 음성 입력
-description: Unity는 Windows Mixed Reality 응용 프로그램에 음성 입력을 추가 하는 세 가지 방법을 제공 합니다.
+description: Unity에서 음성 입력, 음성 인식 및 받아쓰기를 추가 하는 세 가지 방법을 Windows Mixed Reality 응용 프로그램에 제공 하는 방법을 알아봅니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 음성 입력, KeywordRecognizer, GrammarRecognizer, 마이크, 받아쓰기, 음성, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 66aba92c14eca4183739687934e12db289cd2302
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: d07909bbf05ff882eb0a4b6123c39eae9280e3e8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010574"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009803"
 ---
 # <a name="voice-input-in-unity"></a>Unity의 음성 입력
 

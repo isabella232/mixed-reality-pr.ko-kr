@@ -1,17 +1,17 @@
 ---
 title: 공간 메시 시각화
-description: 장치에서 공간 메시를 사용 하 여 물리적 환경을 이해 하는 방법에 대해 알아봅니다.
+description: MRTK의 공간 메시 시각화를 사용 하 여 디자인 지침 및 물리적 환경 이해에 대해 알아봅니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: 혼합 현실, HoloLens, UI 컨트롤, 상호 작용, ui, ux, UX 디자인, 공간 UI, 공간 상호 작용, 3D UI, 3D UX, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: ffa13da6762b803ba2a3f370308ac2af65164ecf
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 0f9cdc218c6fe54b8892c39a6a76f023e203d334
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848190"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009923"
 ---
 # <a name="spatial-mesh"></a>공간 메시
 
@@ -41,7 +41,7 @@ MRTK는 공간 메시 시각화에 대 한 여러 자료를 제공 합니다.
 
 ---
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

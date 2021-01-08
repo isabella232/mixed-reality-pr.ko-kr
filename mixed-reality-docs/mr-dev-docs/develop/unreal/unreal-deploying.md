@@ -1,6 +1,6 @@
 ---
 title: Unreal의 디바이스에 배포
-description: 장치를 장치에 배포 하는 방법에 대 한 가이드 2 개
+description: 편집기나 장치 포털을 사용 하 여 HoloLens 2에 혼합 된 현실 앱을 배포 하는 방법에 대해 알아야 하는 모든 사항을 알아보세요.
 author: sw5813
 ms.author: suwu
 ms.date: 12/9/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, 장치에 배포, PC, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 390bd1a9f1bc643efb1a342421e8c96574e74334
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 24b2c013e1c9f25f54be9a6fefec8a86846c1746
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925909"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009753"
 ---
 # <a name="deploy-to-device-in-unreal"></a>Unreal의 디바이스에 배포
 

@@ -1,17 +1,17 @@
 ---
 title: DirectX의 헤드 및 눈 응시
-description: 기본 DirectX 앱에서 헤드 응시 및 눈 추적을 사용 하는 방법에 대해 알아봅니다.
+description: 네이티브 DirectX 앱에서 헤드 응시 및 눈 추적 으로부터 raycasting 데이터를 요청, 사용 및 압축 풀기 하는 방법에 대해 알아봅니다.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 눈에 응시, 헤드-응시, 헤드 추적, 눈 추적, directx, 입력, holograms, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 4d7ed9b735b5f3cd7029e42ccc75bc539e3c4f4b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a518e5e4153da9c58295abb257a8ed2d69145211
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848090"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009553"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>헤드-DirectX에서 응시 및 눈에 응시 입력
 
@@ -27,6 +27,7 @@ Windows Mixed Reality에서 눈 및 헤드 응시 입력은 사용자가 원하�
 [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) API를 통해 헤드 및 눈에 광선 모두에 액세스할 수 있습니다. [SpatialPointerPose:: TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) 를 호출 하 여 지정 된 타임 스탬프 및 [좌표계](coordinate-systems-in-directx.md)에서 새 SpatialPointerPose 개체를 받습니다. 이 SpatialPointerPose는 헤드-응시 원점 및 방향을 포함 합니다. 눈동자 추적을 사용할 수 있는 경우에도 눈에 잘 응시 된 원본 및 방향을 포함 합니다.
 
 ### <a name="device-support"></a>디바이스 지원
+
 <table>
 <colgroup>
     <col width="25%" />
@@ -216,7 +217,7 @@ if (pointerPose)
 
 <br>
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [조정](../../calibration.md)
 * [DirectX의 좌표계](coordinate-systems-in-directx.md)

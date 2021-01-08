@@ -1,17 +1,17 @@
 ---
 title: 앱 보기
-description: Windows Mixed Reality 앱에서 볼 수 있는 두 가지 종류의 보기는 몰입 형 뷰와 2D 뷰입니다.
+description: Windows Mixed Reality 앱에서 두 종류의 보기를 사용 하는 방법에 대해 알아봅니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 몰입 형 보기, 2D 보기, 슬레이트, 앱, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 0c6127427d5af118bb18aea5c19ddaef6fe8d5eb
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a9cd03212fcbb0d7b3d9e4d2b3108e4d09972455
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848073"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009633"
 ---
 # <a name="app-views"></a>앱 보기
 
@@ -43,7 +43,7 @@ Windows 앱에는 **몰입 형** 보기와 **2d 보기** 의 두 가지 보기�
 
 앱은 데스크톱 모니터와 데스크톱 PC의 연결 된 헤드셋 모두에 2D 보기를 포함할 수 있습니다. 예를 들어 주 2D 보기를 사용 하 여 데스크톱 모니터에서 Edge를 탐색 하 여 360 수준 비디오를 찾을 수 있습니다. 비디오를 재생할 때 Edge는 헤드셋 내에서 보조 몰입 형 보기를 시작 하 여 몰입 형 비디오 콘텐츠를 표시 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [앱 모델](app-model.md)
 * [혼합 현실에 사용되는 2D UWP 앱 업데이트](../develop/porting-apps/building-2d-apps.md)

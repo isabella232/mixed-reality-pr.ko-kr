@@ -1,17 +1,17 @@
 ---
 title: 헤드 게이즈(head-gaze) 및 커밋
-description: 헤드-응시 및 커밋 입력 모델의 개요입니다.
+description: 대상 크기 조정, 배치 및 안정화를 포함 하 여 헤드-응시 및 커밋 입력 모델을 시작 합니다.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
 keywords: 혼합 현실, 응시, 응시 대상 지정, 상호 작용, 디자인, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 대상, 포커스, 다듬기
-ms.openlocfilehash: cc12c349704a63c5b95c9eede91d0486f56787a2
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 13a040a8309d084fcfdbfa91cbd9d63b595b004a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847883"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009453"
 ---
 # <a name="head-gaze-and-commit"></a>헤드 게이즈(head-gaze) 및 커밋
 
@@ -89,7 +89,7 @@ _헤드-응시 및 커밋은_ 사용자의 방향으로 개체를 대상으로 �
 
 에서 제공 하는 근처 대화형 요소를 결정 하는 경우 포커스에 포커스를 지정 하면 현재 포커스가 있는 요소에 대 한 바이어스가 제공 됩니다. 이렇게 하면 자연 노이즈가 있는 두 요소 간의 중간점에서 부동 상태에 있는 경우 비정상적인 포커스 전환 동작을 줄일 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [시선 기반 상호 작용](eye-gaze-interaction.md)
 * [응시 및 유지](gaze-and-dwell.md)

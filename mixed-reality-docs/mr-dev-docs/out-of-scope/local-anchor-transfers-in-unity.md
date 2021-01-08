@@ -1,17 +1,17 @@
 ---
 title: Unity의 로컬 앵커 전송
-description: Unity 응용 프로그램에서 여러 HoloLens 장치 간에 앵커를 전송 합니다.
+description: Unity mixed reality 응용 프로그램에서 여러 HoloLens 장치 간에 앵커를 전송 하는 방법에 대해 알아봅니다.
 author: fieldsjacksong
 ms.author: jacksonf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 공유, 고정, WorldAnchor, MR 공유 250, WorldAnchorTransferBatch, SpatialPerception, 전송, 로컬 앵커 전송, 앵커 내보내기, 앵커 가져오기
-ms.openlocfilehash: d6aebfb89d05926b1f773dea58ee65fead57988e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1048e6a3cfc41a04cd49e201e5d1841e805a4193
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690761"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009643"
 ---
 # <a name="local-anchor-transfers-in-unity"></a>Unity의 로컬 앵커 전송
 
@@ -35,11 +35,11 @@ ms.locfileid: "91690761"
 ### <a name="anchor-transfer"></a>앵커 전송
 
 **네임 스페이스:** *UNITYENGINE. XR*<br>
-**유형** : *WorldAnchorTransferBatch*
+**유형**: *WorldAnchorTransferBatch*
 
 [WorldAnchor](../develop/unity/coordinate-systems-in-unity.md)를 전송 하려면 전송할 앵커를 설정 해야 합니다. 한 HoloLens 사용자는 자신의 환경을 검색 하 고 수동으로 또는 프로그래밍 방식으로 공간에서 공유 환경의 앵커로 지정 된 지점을 선택 합니다. 그런 다음이 지점을 나타내는 데이터를 직렬화 하 고 환경에서 공유 되는 다른 장치로 전송할 수 있습니다. 그런 다음 각 장치는 앵커 데이터를 역직렬화 하 고 공간에서 해당 지점을 찾으려고 시도 합니다. Anchor 전송이 작동 하려면 각 장치에서 앵커가 나타내는 점을 식별할 수 있도록 충분 한 환경에서 검색 해야 합니다.
 
-### <a name="setup"></a>설정
+### <a name="setup"></a>설치 프로그램
 
 이 페이지의 샘플 코드에는 초기화 해야 하는 몇 가지 필드가 있습니다.
 1. *GameObject rootGameObject* 는 *WorldAnchor* 구성 요소가 있는 Unity의 *GameObject* 입니다. 공유 환경의 한 사용자가이 *GameObject* 를 추가 하 고 다른 사용자에 게 데이터를 내보냅니다.

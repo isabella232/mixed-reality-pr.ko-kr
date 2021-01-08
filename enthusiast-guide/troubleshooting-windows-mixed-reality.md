@@ -1,14 +1,14 @@
 ---
 title: Windows Mixed Reality 문제 해결
-description: 표준 소비자 지원 설명서를 벗어나는 Windows Mixed Reality 문제 해결.
+description: 표준 소비자 지원 설명서를 벗어나는 Windows Mixed Reality 문제 해결을 최신 상태로 유지 합니다.
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원
-ms.openlocfilehash: f98bc55062f2e159e6ac6fca5514cee899f50bc5
-ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
+ms.openlocfilehash: 6e685aac0919d920f47c2bd8954706da79dbc8c4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859492"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009483"
 ---
 # <a name="troubleshooting-windows-mixed-reality-faqs"></a>Windows Mixed Reality 문제 해결 (Faq)
 
@@ -58,5 +58,5 @@ PC가 느리게 실행 되 고 있는 경우, 내부에 너무 많은 시각적 
 
 - [성능](performance-questions.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [기타 질문](other-questions.md)

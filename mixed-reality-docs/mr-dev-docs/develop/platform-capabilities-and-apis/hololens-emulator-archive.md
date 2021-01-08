@@ -1,17 +1,17 @@
 ---
 title: HoloLens 에뮬레이터 아카이브
-description: Microsoft HoloLens 에뮬레이터의 릴리스된 빌드 목록입니다.
+description: Microsoft HoloLens (첫 번째 gen) 및 HoloLens 2 에뮬레이터에 대해 출시 된 빌드의 보관 된 목록을 최신 상태로 유지 합니다.
 author: hamalawi
 ms.author: moelhama
 ms.date: 12/08/2020
 ms.topic: article
 keywords: HoloLens, 에뮬레이터, 빌드, 버전, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 보관
-ms.openlocfilehash: 4aae710d0e976f8e7b5a36201b4b0dad0c195a45
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 3f2fff072e5685e3c5c47d2e50e6c4a4588e9da4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530038"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009513"
 ---
 # <a name="hololens-2-emulator-archive"></a>HoloLens 2 에뮬레이터 보관
 
@@ -58,6 +58,7 @@ HoloLens 에뮬레이터 (첫 번째 gen) 및 HoloLens 2 에뮬레이터 빌드�
 |  [HoloLens 에뮬레이터 빌드 10.0.11082.1033](https://go.microsoft.com/fwlink/?LinkID=724053) |  2016년 3월 30일 |
 
 ## <a name="see-also"></a>참고 항목
+
 * [도구 설치](../../develop/install-the-tools.md)
 * [HoloLens 에뮬레이터 사용](using-the-hololens-emulator.md)
 * [고급 HoloLens 에뮬레이터 및 혼합 현실 시뮬레이터 입력](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)

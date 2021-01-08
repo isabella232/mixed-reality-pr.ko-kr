@@ -1,17 +1,17 @@
 ---
 title: Unity의 응시
-description: 응시는 사용자가 혼합 현실에서 앱이 만드는 holograms를 대상으로 하는 기본 방법입니다.
+description: 사용자가 혼합 현실에서 만든 holograms를 대상으로 하는 기본 방법으로 응시 입력을 사용 하는 방법에 대해 알아봅니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 눈에 응시, 헤드-응시, unity, 홀로그램, 혼합 현실, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: ca33fef5a5a761df83ed7991b366cf711a5db224
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 5dab8cb38aaa4b9a4547f4bf494afb093b6d8058
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010364"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009893"
 ---
 # <a name="head-gaze-in-unity"></a>헤드-Unity에서의 응시
 
@@ -56,7 +56,7 @@ MRTK의 [입력 관리자](https://microsoft.github.io/MixedRealityToolkit-Unity
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 계속 진행할 수 있습니다.
+앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [제스처 및 모션 컨트롤러](gestures-and-motion-controllers-in-unity.md)
@@ -68,7 +68,7 @@ MRTK의 [입력 관리자](https://microsoft.github.io/MixedRealityToolkit-Unity
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [카메라](camera-in-unity.md)
 * [커서](../../design/cursors.md)
 * [헤드 게이즈 및 커밋](../../design/gaze-and-commit.md)

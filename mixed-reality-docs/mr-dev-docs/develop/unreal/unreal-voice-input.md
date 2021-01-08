@@ -1,17 +1,17 @@
 ---
-title: 음성 입력
-description: HoloLens 2 및 Unreal engine에서 음성 입력 설정 및 사용에 대 한 자습서
+title: Unreal의 음성 입력
+description: HoloLens 2 장치에 대 한 Unreal mixed reality 앱에서 음성 입력, 음성 매핑 및 인식을 설정 하 고 사용 하는 방법에 대해 알아봅니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Unreal, Unreal Engine 4, UE4, HoloLens 2, 음성, 음성 입력, 음성 인식, 혼합 현실, 개발, 기능, 설명서, 가이드, holograms, 게임 개발, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 504a2d978e3c9bc698e8edd11ea8a4d6be13795a
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: c7ac523258dc44aa261470aea8cdf21f32c915b2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609754"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010073"
 ---
 # <a name="voice-input-in-unreal"></a>Unreal의 음성 입력
 

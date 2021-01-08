@@ -1,17 +1,17 @@
 ---
 title: 빌보딩 및 태그얼롱
-description: Billboarding를 사용 하는 개체는 항상 사용자를 대상으로 합니다.
+description: Billboarding에서 개체를 사용 하는 방법에 대해 알아봅니다 .이는 항상 혼합 현실 응용 프로그램에서 사용자에 게 직면 하 게 됩니다.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, billboarding, 태그 동반, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 44f2678fe2f8e4be071086f46037749d1df61ae4
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 92caa1bcd325cefecc6d3820b819cecfce6fc09c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848029"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009615"
 ---
 # <a name="billboarding-and-tag-along"></a>빌보딩 및 태그얼롱
 
@@ -57,7 +57,7 @@ Billboarding를 사용 하는 개체는 사용자 환경에서 자유롭게 회�
 
 ---
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

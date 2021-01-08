@@ -1,17 +1,17 @@
 ---
 title: MR 및 Azure 310 - 개체 검색
-description: 이 과정을 완료 하 여 machine learning 모델을 학습 한 다음, 학습 된 모델을 사용 하 여 혼합 현실 응용 프로그램 내에서 실제 세계의 유사한 개체와 해당 위치를 인식 하는 방법을 알아보세요.
+description: 이 과정을 완료 하면 기계 학습 모델을 학습 하 고 사용 하 여 실제 세계에서 유사한 개체와 해당 위치를 인식 하는 방법을 배울 수 있습니다.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, 사용자 지정 비전, 개체 검색, 혼합 현실, 아카데미, unity, 자습서, api, hololens, Windows 10, Visual Studio
-ms.openlocfilehash: 10f3b2b8f8422a20c39a4d89568e42ca530683c2
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 8f625ebc1e40edaa6364567686c345386ea37dbf
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679462"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010173"
 ---
 # <a name="mr-and-azure-310-object-detection"></a>Mr 및 Azure 310: 개체 검색
 
@@ -29,7 +29,7 @@ ms.locfileid: "94679462"
 **Azure Custom Vision, 개체 검색** 은 개발자가 사용자 지정 이미지 분류자를 빌드할 수 있게 해 주는 Microsoft 서비스입니다. 이러한 분류자는 이미지 자체 내에서 **상자 경계** 를 제공 하 여 새 이미지 내에서 개체를 검색 하는 데 사용할 수 있습니다. 이 서비스는 간단 하 고 사용 하기 쉬운 온라인 포털을 제공 하 여이 프로세스를 간소화 합니다. 자세한 내용은 다음 링크를 방문 하세요.
 
 * [Azure Custom Vision 페이지](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home)
-* [한도 및 할당량](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/limits-and-quotas)
+* [제한 및 할당량](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/limits-and-quotas)
 
 이 과정이 완료 되 면 다음을 수행할 수 있는 혼합 현실 응용 프로그램이 만들어집니다.
 
@@ -71,7 +71,7 @@ ms.locfileid: "94679462"
 - Azure 설정 및 Custom Vision Service 검색을 위한 인터넷 액세스
 -  Custom Vision에서 인식할 수 있는 각 개체에 대해 15 개 이상의 이미지가 필요 합니다. 원할 경우이 과정에서 이미 제공 된 이미지 ( [일련의 cup](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20310%20-%20Object%20detection/Cup%20Images.zip))를 사용할 수 있습니다.
 
-## <a name="before-you-start"></a>시작하기 전 확인 사항
+## <a name="before-you-start"></a>시작하기 전에
 
 1.  이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.)
 2.  HoloLens를 설정 하 고 테스트 합니다. HoloLens를 설정 하는 데 지원이 필요한 경우 [hololens 설정 문서를 방문](https://docs.microsoft.com/hololens/hololens-setup)해야 합니다. 
@@ -210,7 +210,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
     ![](images/AzureLabs-Lab310-22.png)
 
-3.  Unity를 연 상태에서 기본 **스크립트 편집기** 가 **Visual Studio** 로 설정 되어 있는지 확인 하는 것이 좋습니다. **Edit*  >  *기본 설정* 편집* 으로 이동한 다음 새 창에서 **외부 도구** 로 이동 합니다. **외부 스크립트 편집기** 를 **Visual Studio** 로 변경 합니다. **기본 설정** 창을 닫습니다.
+3.  Unity를 연 상태에서 기본 **스크립트 편집기** 가 **Visual Studio** 로 설정 되어 있는지 확인 하는 것이 좋습니다. * >  *기본 설정* 편집* 으로 이동한 다음 새 창에서 **외부 도구** 로 이동 합니다. **외부 스크립트 편집기** 를 **Visual Studio** 로 변경 합니다. **기본 설정** 창을 닫습니다.
 
     ![](images/AzureLabs-Lab310-23.png)
 
@@ -261,7 +261,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 9.  **빌드 설정** 창을 닫습니다.
 
-10. **편집기** 에서 **Edit**  >  **프로젝트 설정** 편집  >  **그래픽** 을 클릭 합니다.
+10. **편집기** 에서   >  **프로젝트 설정** 편집  >  **그래픽** 을 클릭 합니다.
 
     ![](images/AzureLabs-Lab310-30.png)
 
@@ -331,13 +331,13 @@ Custom Vision 프로젝트를 학습 하려면:
 
 이 클래스를 만들려면:
 
-1.  **프로젝트 패널** 에 있는 **자산 폴더** 를 마우스 오른쪽 단추로 클릭 한 다음 폴더 **만들기** 를 클릭  >  **Folder** 합니다. 폴더 **스크립트** 를 호출 합니다.
+1.  **프로젝트 패널** 에 있는 **자산 폴더** 를 마우스 오른쪽 단추로 클릭 한 다음 폴더 **만들기** 를 클릭  >  합니다. 폴더 **스크립트** 를 호출 합니다.
 
     ![](images/AzureLabs-Lab310-37.png)
 
 2.  새로 만든 폴더를 두 번 클릭 하 여 엽니다.
 
-3.  폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **Create**,  >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **CustomVisionAnalyser로 합니다.**
+3.  폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 ,  >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **CustomVisionAnalyser로 합니다.**
 
 4.  새 **CustomVisionAnalyser** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
 
@@ -470,7 +470,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 이 클래스를 만들려면:
 
-1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **Create**  >  **C \# 스크립트** 만들기를 클릭 합니다. CustomVisionObjects 스크립트를 호출 **합니다.**
+1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음   >  **C \# 스크립트** 만들기를 클릭 합니다. CustomVisionObjects 스크립트를 호출 **합니다.**
 
 2.  새 **CustomVisionObjects** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
 
@@ -626,7 +626,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 이 클래스를 만들려면:
 
-1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **Create**  >  **C \# 스크립트** 만들기를 클릭 합니다. SpatialMapping 스크립트를 호출 **합니다.**
+1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음   >  **C \# 스크립트** 만들기를 클릭 합니다. SpatialMapping 스크립트를 호출 **합니다.**
 
 2.  새 **SpatialMapping** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
 
@@ -703,7 +703,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 이 클래스를 만들려면:
 
-1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **Create**  >  **C \# 스크립트** 만들기를 클릭 합니다. **GazeCursor** 스크립트를 호출 합니다.
+1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음   >  **C \# 스크립트** 만들기를 클릭 합니다. **GazeCursor** 스크립트를 호출 합니다.
 
 2.  새 **GazeCursor** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
 
@@ -787,7 +787,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 이 클래스를 만들려면:
 
-1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **Create**  >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **SceneOrganiser** 로 합니다.
+1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음   >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **SceneOrganiser** 로 합니다.
 
 2.  새 **SceneOrganiser** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
 
@@ -1024,7 +1024,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 1.  이전에 만든 **스크립트** 폴더로 이동 합니다.
 
-2.  폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **Create**,  >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **ImageCapture** 로 합니다.
+2.  폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 ,  >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **ImageCapture** 로 합니다.
 
 3.  새 **ImageCapture** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
 
@@ -1296,7 +1296,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
     3.  **IPv4** 주소를 적어둡니다.
 
-    4.  그런 다음 **설정** 으로 다시 이동한 다음 개발자를 위한 **& 보안을 업데이트** 합니다.  >  **For Developers**
+    4.  그런 다음 **설정** 으로 다시 이동한 다음 개발자를 위한 **& 보안을 업데이트** 합니다.  >  
 
     5.  에서 **개발자 모드** *를* 설정 합니다.
 

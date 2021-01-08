@@ -1,17 +1,17 @@
 ---
 title: 릴리스 정보 - 2017년 10월
-description: Windows 10이 하 버전을 포함 하는 windows 10 크리에이터 업데이트에 대 한 windows Mixed Reality 릴리스 정보 (10 월 2017).
+description: Windows 10 구성 작성자 업데이트 (10 월 2017)에 대 한 Windows Mixed Reality 릴리스 정보를 최신 상태로 유지 합니다.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 릴리스 정보, 버전, windows 10, 빌드, rs3, os
-ms.openlocfilehash: 7c5af3b8ead4aa4bee9e342e9c41b696a30e5e2c
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 83c16a40388960547cfcf7444e1ae630c2f5b7f2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725914"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009493"
 ---
 # <a name="release-notes---october-2017"></a>릴리스 정보 - 2017년 10월
 
@@ -94,7 +94,7 @@ Windows 10이 하에 대 한 업데이트는 windows Mixed Reality 헤드셋 및
 * [릴리스 정보 - 2016년 5월](release-notes-may-2016.md)
 * [릴리스 정보 - 2016년 3월](release-notes-march-2016.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 * [모던 헤드셋 지원 (외부 링크)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [HoloLens 알려진 문제](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
 * [도구 설치](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)

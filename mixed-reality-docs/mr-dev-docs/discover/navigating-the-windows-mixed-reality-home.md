@@ -1,17 +1,17 @@
 ---
 title: Windows Mixed Reality 홈 탐색
-description: HoloLens 및 Windows Mixed Reality 헤드셋은 사용자 환경에서 앱 및 3D 모델을 시작, 배치 및 조작 하기 위한 패러다임 (실제 또는 디지털)을 공유 합니다. 두 장치 유형에 서 Windows Mixed Reality 홈을 탐색 하는 방법을 알아봅니다.
+description: HoloLens 및 Windows Mixed Reality 헤드셋에서 Windows Mixed Reality 홈을 탐색 하는 방법에 대해 알아봅니다.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 셸, os, 플랫폼, 절벽 집, 집, 홈, 환경, 시작, 시작 메뉴, 홈 메뉴, 핀, 앱, 앱 시작, 앱 배치, 텔레포트, 이동, 탐색, 혼합 현실 헤드셋, 가상 현실 헤드셋, 가상 현실 이란?
-ms.openlocfilehash: 4d8aa88fa1057c550601feb7ad85ace15fcada54
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 06e28c9c1f0f6244f7f502382d61d4740b5fb71f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757691"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009693"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Windows Mixed Reality 홈 탐색
 
@@ -134,7 +134,7 @@ Windows Mixed Reality에는 다음과 같은 몇 가지 기본 제공 앱이 있
 * 모던 헤드셋에서 데스크톱 모니터를 볼 때 사용할 **데스크톱** (몰입 형 헤드셋)
 * **파일 탐색기** 장치에 있는 파일 및 폴더에 액세스
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 * [앱 보기](../design/app-views.md)
 * [모션 컨트롤러](../design/motion-controllers.md)
 * [하드웨어 액세서리](hardware-accessories.md)

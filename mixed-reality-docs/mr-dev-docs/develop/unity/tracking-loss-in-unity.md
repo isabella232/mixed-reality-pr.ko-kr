@@ -1,17 +1,17 @@
 ---
 title: Unity의 손실 추적
-description: Unity 앱 내에서 추적 손실 처리.
+description: Unity mixed reality 앱에서 수동 및 기본 추적 손실을 처리 하는 방법에 대해 알아봅니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, 손실 추적, 추적 손실 이미지, 폴링, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 1df9f579abf43576284d065afa091bb26c631482
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 39ce4e079886b27ed35c419a3b3913c6700e0d32
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010054"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009853"
 ---
 # <a name="tracking-loss-in-unity"></a>Unity의 손실 추적
 
@@ -37,7 +37,7 @@ ms.locfileid: "97010054"
 
 ### <a name="polling"></a>폴링
 
-가장 중요 한 상태는 *Positionallocis state. 활성* 이며,이는 추적이 완전히 작동 함을 의미 합니다. 다른 모든 상태는 주 카메라에만 회전 델타를 발생 합니다. 예를 들어:
+가장 중요 한 상태는 *Positionallocis state. 활성* 이며,이는 추적이 완전히 작동 함을 의미 합니다. 다른 모든 상태는 주 카메라에만 회전 델타를 발생 합니다. 예를 들면 다음과 같습니다.
 
 ```cs
 void Update()
@@ -81,5 +81,6 @@ private void WorldManager_OnPositionalLocatorStateChanged(PositionalLocatorState
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
+
 * [DirectX에서 추적 손실 처리](../native/coordinate-systems-in-directx.md#handling-tracking-loss)

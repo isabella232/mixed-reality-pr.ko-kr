@@ -1,17 +1,17 @@
 ---
 title: HoloLens 용 Galaxy 탐색기 만들기 2
-description: HoloLens의 Galaxy 탐색기를 업데이트 하는 방법 2를 시작 합니다. 원래 Galaxy 탐색기와 마찬가지로 팀은 GitHub에서 프로젝트를 열고 커뮤니티에 모든 권한이 있는지 확인 합니다.
+description: 팀이 GitHub의 HoloLens 2에 대 한 Galaxy 탐색기 오픈 소스 프로젝트를 업데이트 하는 방법에 대해 알아봅니다.
 author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: galaxy 탐색기, 사례 연구, 프로젝트, 샘플, MRTK, Mixed Reality Toolkit, Unity, 샘플 앱, 예제 앱, 오픈 소스, Microsoft Store, HoloLens, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 00bf589d738cf74cbfdb489bc43aadf931dda285
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: d3a31204275b2d2a9f1f1ea1c283993d2e0285ed
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010474"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009583"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>HoloLens 용 Galaxy 탐색기 만들기 2
 

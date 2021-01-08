@@ -1,17 +1,17 @@
 ---
 title: 시작 제스처
-description: 시작 제스처를 호출 하 여 시작 메뉴를 호출 합니다.
+description: 시작 제스처를 사용 하 여 HoloLens 및 Windows Mixed Reality 모던 헤드셋의 시작 메뉴를 호출 하는 방법에 대해 알아봅니다.
 author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: 혼합 현실, 제스처, 상호 작용, 디자인, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 블 룸
-ms.openlocfilehash: 9df8d54dcf63c13dedabdbf55300b3516a2c9bf1
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9e29d483375db103cebc30be9117e40899a9f81f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848163"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009433"
 ---
 # <a name="start-gesture"></a>시작 제스처
 
@@ -114,7 +114,7 @@ HoloLens 2에서는 블 룸 제스처를 사용자에 게 더 많은 instinctual
 
 ---
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [Instinctual 상호 작용](interaction-fundamentals.md)
 * [눈-응시](eye-tracking.md)

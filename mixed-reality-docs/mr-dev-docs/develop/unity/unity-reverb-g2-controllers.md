@@ -1,17 +1,17 @@
 ---
 title: Unity의 HP 반향 G2 컨트롤러
-description: SteamVR 및 Windows Mixed Reality에서 HP 반향 G2 컨트롤러를 사용 하는 방법에 대 한 지침입니다.
+description: SteamVR 및 Windows Mixed Reality Unity 응용 프로그램에서 새로운 HP 반향 G2 컨트롤러를 설정 하 고 사용 하는 방법에 대해 알아봅니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/14/2020
 ms.topic: article
 keywords: Unity, 반향, 반향 G2, HP 반향 G2, 혼합 현실, 개발, 동작 컨트롤러, 사용자 입력, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, holograms, 게임 개발
-ms.openlocfilehash: 17f373a3d94740bf103821b85ee5d6fe4dbaa11f
-ms.sourcegitcommit: 8b16945d6a551f174a65fa3980ba392682ca45d4
+ms.openlocfilehash: 1c9d8f1279f81ea1d8020e2a3c689dae86496221
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92886256"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009833"
 ---
 # <a name="hp-reverb-g2-controllers-in-unity"></a>Unity의 HP 반향 G2 컨트롤러
 
@@ -505,7 +505,7 @@ private void stateCache_InputPressed(object sender, MotionControllerStateCache.M
 } 
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 <!-- ## Getting started
 

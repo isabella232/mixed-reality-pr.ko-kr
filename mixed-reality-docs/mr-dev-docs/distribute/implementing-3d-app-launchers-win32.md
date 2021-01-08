@@ -1,17 +1,17 @@
 ---
 title: 3D 앱 시작 관리자(Win32 앱) 구현
-description: Windows Mixed Reality 시작 메뉴 및 홈 환경용 Win32 VR 앱 및 게임을 위한 3D 앱 시작 및 로고를 만드는 방법에 대해 알아봅니다.
+description: 시작 메뉴 및 홈 환경에 대해 Win32 VR 앱 및 게임에 대 한 3D 앱 시작 및 로고를 만드는 방법에 대해 알아봅니다.
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, 로고, 아이콘, 모델링, 시작 관리자, 3D 시작 관리자, 타일, 라이브 큐브, win32, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 매니페스트
-ms.openlocfilehash: 5a3e38de54aad1fceb4804003043c87dddab61c4
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 63b07664cb09f51e6d0588fdc50d141ad8985093
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757821"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009672"
 ---
 # <a name="implement-3d-app-launchers-win32-apps"></a>3D 앱 시작 관리자(Win32 앱) 구현
 
@@ -165,7 +165,7 @@ IconFile=C:\Program Files (x86)\MyLauncher\apps\app-identifier\game.exe
 IconIndex=0
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * 3D 앱 시작 관리자를 포함 하는 [혼합 현실 모델 샘플](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) 입니다.
 * [3D 앱 시작 관리자 디자인 지침](3d-app-launcher-design-guidance.md)

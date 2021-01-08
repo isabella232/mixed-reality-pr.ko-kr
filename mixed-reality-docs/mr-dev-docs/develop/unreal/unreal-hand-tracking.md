@@ -1,17 +1,17 @@
 ---
 title: Unreal의 직접 추적
-description: Unreal에서 수동 추적을 사용 하는 방법을 설명 합니다.
+description: Unreal mixed reality 앱에서 직접 추적 입력, 포즈, 손 모양 및 라이브 링크 애니메이션을 사용 하는 방법에 대해 알아봅니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, 직접 추적, Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed reality, 개발, 기능, 설명서, 가이드, holograms, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 66ae1994f2bbee3ba4786a7c4eeebfe1cd57ca37
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: e482c93233348325736d2c224788e9174c1f3b67
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002709"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010163"
 ---
 # <a name="hand-tracking-in-unreal"></a>Unreal의 직접 추적
 
@@ -162,7 +162,7 @@ HoloLens 2는 공간 제스처를 추적 합니다. 즉, 이러한 제스처를 
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞에서 설명한 실제 개발 경험을 수행 하는 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 계속 진행할 수 있습니다.
+앞에서 설명한 Unreal 개발 과정을 따르고 있다면 현재 MRTK 핵심 구성 요소를 살펴보는 중입니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [로컬 Spatial Anchors](unreal-spatial-anchors.md)

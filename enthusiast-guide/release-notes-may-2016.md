@@ -1,17 +1,17 @@
 ---
 title: 릴리스 정보 - 2016년 5월
-description: Windows Holographic 2016 업데이트에 대 한 HoloLens 릴리스 정보입니다.
+description: Windows Holographic 2016 업데이트에 대 한 HoloLens 릴리스 정보를 최신 상태로 유지 합니다.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, 릴리스 정보, os, 기능, 빌드, 플랫폼
-ms.openlocfilehash: a1e5ab1ead2816baf2f03c1037299090e1246f17
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: db5e3b87eaf619a0f25e07d0698499a89a1b4b12
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725954"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009503"
 ---
 # <a name="release-notes---may-2016"></a>릴리스 정보 - 2016년 5월
 
@@ -112,7 +112,7 @@ Visual Studio와 관련 된 문제를 해결 했습니다.
 ## <a name="prior-release-notes"></a>이전 릴리스 정보
 * [릴리스 정보 - 2016년 3월](release-notes-march-2016.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 * [HoloLens 알려진 문제](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
 * [도구 설치](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
 * [셸](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)

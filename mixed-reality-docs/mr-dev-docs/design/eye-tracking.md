@@ -1,17 +1,17 @@
 ---
 title: 시선 추적
-description: HoloLens 2를 사용 하면 개발자에 게 사용자가 보고 있는 항목에 대 한 정보를 사용할 수 있는 기능을 제공 하 여 holographic 환경 내에서 새로운 수준의 컨텍스트 및 인간 이해를 허용할 수 있습니다.
+description: Holographic 환경에서 사용할 경우 HoloLens 2에 대 한 시각 추적 및 새로운 사용자 이해 수준을 알아봅니다.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 눈 추적, 혼합 현실, 입력, 눈에 응시, 보정, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 의도, 작업
-ms.openlocfilehash: 5ee957db85c2eefc32b7bfd716268262b347867b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: ffc9fd172f3e9a1cfd648e3fb431274690c9f190
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847940"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009603"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>HoloLens 2의 시선 추적
 
@@ -19,7 +19,7 @@ ms.locfileid: "97847940"
 
 HoloLens 2를 사용 하면 개발자에 게 사용자가 보고 있는 항목에 대 한 정보를 사용할 수 있는 기능을 제공 하 여 holographic 환경 내에서 새로운 수준의 컨텍스트 및 인간 이해를 허용할 수 있습니다. 이 페이지에서는 개발자가 다양 한 사용 사례에 대 한 눈 추적을 활용 하는 방법 및 눈에 잘 맞는 사용자 상호 작용을 디자인할 때 검색할 사항을 설명 합니다. 
 
-아이 추적 API는 사용자의 개인 정보를 염두에 두면 서 식별 가능한 정보, 특히 생체 인식을 피할 수 있도록 설계 되었습니다. 아이 추적 지원 응용 프로그램의 경우 사용자는 눈동자 추적 정보를 사용할 수 있는 권한을 앱에 부여 해야 합니다. 
+아이 추적 API는 사용자의 개인 정보를 염두에 두면 서 식별 가능한 정보, 특히 생체 인식을 피할 수 있도록 설계 되었습니다. 아이 추적 지원 응용 프로그램의 경우 사용자는 눈동자 추적 정보를 사용할 수 있는 권한을 앱에 부여 해야 합니다.
 
 ### <a name="device-support"></a>디바이스 지원
 
@@ -166,7 +166,7 @@ Microsoft는 사용자에 게 눈 추적 정보를 사용 하는 방법에 대 �
 
 이 페이지에서는 HoloLens 2에 대 한 눈에 보기 및 눈에 잘 맞는 입력의 역할을 이해 하기 시작 하는 데 도움이 되는 유용한 개요를 제공 합니다. 개발을 시작 하려면 [holograms와의 상호 작용을 위해 눈길](eye-gaze-interaction.md)을 [내](https://aka.ms/mrtk-eyes) 는 역할에 대 한 정보를 확인 [하세요.](../develop/native/gaze-in-directx.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [조정](../calibration.md)
 * [편안함](comfort.md)
