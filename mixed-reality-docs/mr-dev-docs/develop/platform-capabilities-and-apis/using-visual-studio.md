@@ -7,23 +7,23 @@ ms.date: 04/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, Mixed Reality, 디버그, 배포
-ms.openlocfilehash: b0280edb2116094f6443e262d12c62243c319250
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 20bda2cd247f18680d3f9fe95284e238a32e1140
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699345"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97529965"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>Visual Studio를 사용하여 배포 및 디버깅
 
-DirectX 또는 Unity를 사용하여 혼합 현실 앱을 개발할지에 관계없이 Visual Studio를 사용하여 디버그하고 배포할 수 있습니다. 이 섹션에서는 다음을 수행하는 방법을 알아봅니다.
+혼합 현실 앱을 개발할 때 DirectX와 Unity 중 무엇을 사용하든 관계없이 Visual Studio는 디버깅 및 배포에 적합한 도구입니다. 이 섹션에서는 다음을 수행하는 방법을 알아봅니다.
 * Visual Studio를 통해 애플리케이션을 HoloLens 또는 Windows Mixed Reality 몰입형 헤드셋에 배포합니다.
 * Visual Studio에 기본 제공된 HoloLens 에뮬레이터를 사용합니다.
 * 혼합 현실 앱을 디버그합니다.
 
 ## <a name="prerequisites"></a>필수 구성 요소
 1. 설치 지침은 [도구 설치](../../develop/install-the-tools.md)를 참조하세요.
-2. Visual Studio에서 새 유니버설 Windows 앱 프로젝트를 만듭니다.  HoloLens(1세대)의 경우 Visual Studio 2017 이상을 사용합니다.  Holololens 2의 경우 Visual Studio 2019 16.2 이상을 사용합니다. C# 및 C++가 지원됩니다. (또는 지침에 따라 [Unity에서 앱을 만듭니다](../../develop/unity/tutorials/holograms-100.md).)
+2. Visual Studio에서 새 유니버설 Windows 앱 프로젝트를 만듭니다.  HoloLens(1세대)의 경우 Visual Studio 2017 이상을 사용합니다.  HoloLens 2의 경우 Visual Studio 2019 16.2 이상을 사용합니다. C# 및 C++가 지원됩니다. (또는 지침에 따라 [Unity에서 앱을 만듭니다](../../develop/unity/tutorials/holograms-100.md).)
 
 ## <a name="enabling-developer-mode"></a>개발자 모드 사용
 
@@ -31,12 +31,12 @@ DirectX 또는 Unity를 사용하여 혼합 현실 앱을 개발할지에 관계
 
 ### <a name="hololens"></a>HoloLens
 1. HoloLens를 켜고 디바이스에 배치합니다.
-2. [시작 제스처](../../design/system-gesture.md)를 수행하여 주 메뉴를 시작합니다.
+2. [시작 제스처](../../design/system-gesture.md)를 사용하여 주 메뉴를 시작합니다.
 3. **설정** 타일을 선택하여 환경에서 앱을 시작합니다.
 4. **업데이트** 메뉴 항목을 선택합니다.
 5. **개발자용** 메뉴 항목을 선택합니다.
-6. **개발자 모드** 를 사용하도록 설정합니다. 그러면 [Visual Studio에서 HoloLens로 앱을 배포](using-visual-studio.md)할 수 있습니다.
-7. 옵션: 아래로 스크롤하여 **디바이스 포털** 도 사용하도록 설정합니다. 이렇게 하면 웹 브라우저에서 HoloLens의 [Windows 디바이스 포털](using-the-windows-device-portal.md)에도 연결할 수 있습니다.
+6. **개발자 모드** 를 사용하여 [Visual Studio에서 HoloLens로 앱을 배포](using-visual-studio.md)합니다.
+7. 옵션: 아래로 스크롤하고 **장치 포털** 도 사용하도록 설정하면 웹 브라우저에서 HoloLens의 [Windows 장치 포털](using-the-windows-device-portal.md)에 연결할 수 있습니다.
 
 ### <a name="windows-pc"></a>Windows PC
 
@@ -44,7 +44,7 @@ PC에 연결된 Windows Mixed Reality 헤드셋을 사용하는 경우 PC에서 
 1. **설정** 으로 이동합니다.
 2. **업데이트 및 보안** 을 선택합니다.
 3. **개발자용** 을 선택합니다.
-4. **개발자 모드** 를 사용하도록 설정하고, 선택한 설정에 대한 고지 사항을 읽은 다음, [예]를 클릭하여 변경 내용을 적용합니다.
+4. **개발자 모드** 를 사용하도록 설정하고, 선택한 설정에 대한 고지 사항을 읽은 다음, 예를 선택하여 변경 내용을 적용합니다.
 
 ## <a name="deploying-an-app-over-wi-fi---hololens-1st-gen"></a>Wi-Fi를 통해 앱 배포 - HoloLens(1세대)
 1. 앱에 대해 **x86** 빌드 구성을 선택합니다.</br>
@@ -97,16 +97,17 @@ HoloLens IP 주소가 변경되면 **프로젝트 > 속성 > 구성 속성 > 디
 
 ## <a name="deploying-an-app-to-your-local-pc---immersive-headset"></a>로컬 PC에 앱 배포 - 몰입형 헤드셋
 
-PC 또는 [Mixed Reality 시뮬레이터](using-the-windows-mixed-reality-simulator.md)에 연결되는 Windows Mixed Reality 몰입형 헤드셋을 사용하는 경우 다음 지침을 따릅니다. 이러한 경우 로컬 PC에 앱을 배포하고 실행하기만 하면 됩니다.
+PC 또는 [Mixed Reality 시뮬레이터](using-the-windows-mixed-reality-simulator.md)에 연결되는 Windows Mixed Reality 몰입형 헤드셋을 사용하려면 다음을 수행합니다.
 1. 앱에 대해 **x86** 또는 **x64** 빌드 구성을 선택합니다.
 2. 배포 대상 드롭다운 메뉴에서 **로컬 머신** 을 선택합니다.
 3. **디버그 > 디버깅 시작** 을 차례로 선택하여 앱을 배포하고, 디버깅을 시작합니다.
 
 ## <a name="pairing-your-device"></a>디바이스 페어링
 
-앱을 Visual Studio에서 HoloLens로 처음 배포하는 경우 PIN을 입력하라는 메시지가 표시됩니다. HoloLens에서 Settings 앱을 실행하여 PIN을 생성하고, **업데이트 > 개발자용** 으로 차례로 이동하여 **페어링** 을 탭합니다. HoloLens에 PIN이 표시됩니다. Visual Studio에서 이 PIN을 입력합니다. 페어링이 완료되면 HoloLens에서 **완료** 를 탭하여 대화 상자를 해제합니다. 이 PC는 이제 HoloLens와 페어링되어 앱을 자동으로 배포할 수 있습니다. 앱을 HoloLens에 배포하는 데 사용되는 모든 후속 PC에 대해 이러한 단계를 반복하세요.
+앱을 Visual Studio에서 HoloLens로 처음 배포하는 경우 PIN을 입력하라는 메시지가 표시됩니다. HoloLens에서 설정 앱을 실행하여 PIN을 생성하고, **업데이트 > 개발자용** 으로 차례로 이동하여 **페어링** 을 탭합니다. HoloLens에 표시되는 PIN을 Visual Studio에 입력합니다. 페어링이 완료되면 HoloLens에서 **완료** 를 탭하여 대화 상자를 해제합니다. 이 PC는 이제 HoloLens와 페어링되어 앱을 자동으로 배포할 수 있습니다. 앱을 HoloLens에 배포하는 데 사용되는 모든 PC에 대해 이러한 단계를 반복하세요.
 
-페어링된 모든 컴퓨터에서 HoloLens와의 페어링을 해제하려면 **Settings** 앱을 시작하고, **업데이트 > 개발자용** 으로 차례로 이동하여 **지우기** 를 탭합니다.
+페어링된 모든 컴퓨터에서 HoloLens를 언페어링하려면 다음을 수행합니다.
+* **설정** 앱을 시작하고, **업데이트 > 개발자용** 으로 이동하고, **지우기** 를 탭합니다.
 
 ## <a name="deploying-an-app-to-the-hololens-1st-gen-emulator"></a>HoloLens(1세대) 에뮬레이터에 앱 배포
 1. **[HoloLens 에뮬레이터를 설치](../install-the-tools.md)** 했는지 확인합니다.
@@ -128,12 +129,12 @@ PC 또는 [Mixed Reality 시뮬레이터](using-the-windows-mixed-reality-simula
 
 ## <a name="graphics-debugger-for-hololens-1st-gen"></a>HoloLens(1세대)용 그래픽 디버거
 
-Visual Studio 그래픽 진단 도구는 홀로그램 앱을 작성하고 최적화하는 경우에 매우 유용합니다. 자세한 내용은 [MSDN의 Visual Studio 그래픽 진단](https://msdn.microsoft.com/library/hh315751.aspx)을 참조하세요.
+Visual Studio 그래픽 진단 도구는 홀로그램 앱을 작성하고 최적화하는 경우에 유용합니다. 자세한 내용은 [MSDN의 Visual Studio 그래픽 진단](https://msdn.microsoft.com/library/hh315751.aspx)을 참조하세요.
 
 **그래픽 디버거를 시작하려면**
 1. 위의 지침에 따라 디바이스 또는 에뮬레이터를 대상으로 지정합니다.
 2. **디버그 > 그래픽 > 진단 시작** 으로 차례로 이동합니다.
-3. HoloLens를 사용하여 이 작업을 처음 수행하는 경우 "액세스 거부" 오류가 발생할 수 있습니다. 업데이트된 권한이 적용되도록 HoloLens를 다시 부팅하여 다시 시도하세요.
+3. HoloLens를 사용하여 진단을 처음 시작하는 경우 "액세스 거부" 오류가 발생할 수 있습니다. 업데이트된 권한이 적용되도록 HoloLens를 다시 부팅하여 다시 시도하세요.
 
 ## <a name="profiling"></a>프로파일링
 
@@ -143,23 +144,23 @@ Visual Studio 프로파일링 도구를 사용하면 앱의 성능 및 리소스
 1. 위의 지침에 따라 디바이스 또는 에뮬레이터를 대상으로 지정합니다.
 2. **디버그 > 디버깅하지 않고 진단 도구 시작...** 으로 차례로 이동합니다.
 3. 사용하려는 도구를 선택합니다.
-4. **시작** 을 클릭합니다.
-5. HoloLens를 사용하여 이 작업을 처음 수행하는 경우 "액세스 거부" 오류가 발생할 수 있습니다. 업데이트된 권한이 적용되도록 HoloLens를 다시 부팅하여 다시 시도하세요.
+4. **시작** 을 선택합니다.
+5. HoloLens를 사용하여 디버그 없이 진단을 처음 시작하는 경우 "액세스 거부" 오류가 발생할 수 있습니다. 업데이트된 권한이 적용되도록 HoloLens를 다시 부팅하여 다시 시도하세요.
 
 ## <a name="debugging-an-installed-or-running-app"></a>설치되었거나 실행 중인 앱 디버깅
 
-Visual Studio를 사용하여 Visual Studio 프로젝트에서 배포하지 않고 설치된 유니버설 Windows 앱을 디버그할 수 있습니다. 설치된 앱 패키지를 디버그하거나 이미 실행 중인 앱을 디버그하려는 경우에 유용합니다.
+Visual Studio를 사용하여 Visual Studio 프로젝트에서 배포하지 않고 설치된 유니버설 Windows 앱을 디버그할 수 있습니다. 이는 설치된 앱 패키지를 디버그하거나 이미 실행 중인 앱을 디버그하려는 경우에 유용합니다.
 1. **디버그 -> 기타 디버그 대상 -> 설치된 앱 패키지 디버그** 로 차례로 이동합니다.
 2. HoloLens의 경우 **원격 머신** 대상을 선택하고, 몰입형 헤드셋의 경우 **로컬 머신** 대상을 선택합니다.
 3. 디바이스의 **IP 주소** 를 입력합니다.
 4. **유니버설** 인증 모드를 선택합니다.
 5. 창에 실행 중인 앱과 비활성 앱이 모두 표시됩니다. 디버그하려는 앱을 선택합니다.
 6. 디버그할 코드 형식(관리, 네이티브, 혼합)을 선택합니다.
-7. **연결** 또는 **시작** 을 클릭합니다.
+7. **연결** 또는 **시작** 을 선택합니다.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞에서 설명한 Unity 개발 검사점 경험을 수행하는 경우 배포 단계를 진행하고 있는 것입니다. 여기에서 다음 항목을 진행할 수 있습니다.
+앞에서 설명한 Unity 개발 검사점 경험을 수행하는 경우 배포 단계를 진행하고 있는 것입니다. 여기에서 다음 항목으로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [HoloLens 에뮬레이터에 배포](using-the-hololens-emulator.md)

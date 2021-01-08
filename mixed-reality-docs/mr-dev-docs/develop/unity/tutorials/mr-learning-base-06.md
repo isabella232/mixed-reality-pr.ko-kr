@@ -1,5 +1,5 @@
 ---
-title: 시작 자습서 - 6. 사용자 인터페이스 만들기
+title: MRTK 자습서 - 6. 사용자 인터페이스 만들기
 description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 사용자 인터페이스를 만드는 방법을 보여 줍니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 프리팹, 홀로그램, 도구 설명
 ms.localizationpriority: high
-ms.openlocfilehash: 9ef3f17f8ec5508ace0c5d05cccf7a8383e54353
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 90b794dc6e88b724d16c339e428c4d2ed9cdac07
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679292"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613517"
 ---
 # <a name="6-creating-user-interfaces"></a>6. 사용자 인터페이스 만들기
 

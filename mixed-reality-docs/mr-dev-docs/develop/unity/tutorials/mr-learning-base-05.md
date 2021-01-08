@@ -1,5 +1,5 @@
 ---
-title: 시작 자습서 - 5. Solver를 사용하여 동적 콘텐츠 만들기
+title: MRTK 자습서 - 5. Solver를 사용하여 동적 콘텐츠 만들기
 description: 이 과정에서는 MRTK(Mixed Reality Toolkit) Solver를 사용하여 동적 콘텐츠를 만드는 방법을 보여 줍니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, solvers
 ms.localizationpriority: high
-ms.openlocfilehash: fb86cdfe82e8d89c65e8513b52e2de49f52a2f04
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 533aa1c9f2b0b7620e23d611714552fb19a5357b
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679302"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613507"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Solver를 사용하여 동적 콘텐츠 만들기
 
@@ -22,13 +22,13 @@ ms.locfileid: "94679302"
 
 ## <a name="objectives"></a>목표
 
-* MRTK의 Solver 소개
+* MRTK 해결기 소개
 * Solver를 사용하여 사용자를 개체로 안내하는 방법 알아보기
 * Solver를 사용하여 개체의 위치를 변경하는 방법 알아보기
 
-## <a name="location-of-solvers-in-the-mrtk"></a>MRTK에서 Solver의 위치
+## <a name="location-of-solvers-in-the-mrtk"></a>MRTK에서 해결기의 위치
 
- MRTK의 Solver는 MRTK SDK 폴더에 있습니다. 프로젝트에서 사용할 수 있는 Solver를 보려면 프로젝트 창에서 **Assets** > **MRTK** > **SDK** > **Features** > **Utilities** > **Solvers** 로 이동합니다.
+ MRTK의 해결기는 MRTK SDK 폴더에 있습니다. 프로젝트에서 사용할 수 있는 Solver를 보려면 프로젝트 창에서 **Assets** > **MRTK** > **SDK** > **Features** > **Utilities** > **Solvers** 로 이동합니다.
 
 ![Solvers 폴더가 선택된 Unity 프로젝트 창](images/mr-learning-base/base-05-section1-step1-1.png)
 

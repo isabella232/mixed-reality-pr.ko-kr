@@ -1,5 +1,5 @@
 ---
-title: 시작 자습서 - 4. 장면에서 개체 위치 지정
+title: MRTK 자습서 - 4. 장면에서 개체 위치 지정
 description: 이 과정에서는 장면에서 개체를 배치하는 방법과 MRTK(Mixed Reality Toolkit)를 사용하여 그리드에서 개체를 구성하는 방법을 보여줍니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, solvers, 그리드 개체 컬렉션
 ms.localizationpriority: high
-ms.openlocfilehash: b49d1b93b98a68e253239647262edc737fdbeb58
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: e09047e4f75697722f76301630c275f126b3cbda
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679312"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613257"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. 장면에서 개체 위치 지정
 
@@ -143,4 +143,4 @@ Hierarchy 창에서 **RoverParts** 개체를 선택한 다음, Inspector 창에�
 
 이 자습서에서는 사용자를 기준으로 장면에 개체를 배치하고 MRTK의 그리드 개체 컬렉션 기능을 사용하여 컬렉션의 개체를 구성하는 방법을 배웠습니다.
 
-[다음 자습서: 5. Solver를 사용하여 동적 콘텐츠 만들기](mr-learning-base-05.md)
+[다음 자습서: 5. 해결기를 사용하여 동적 콘텐츠 만들기](mr-learning-base-05.md)

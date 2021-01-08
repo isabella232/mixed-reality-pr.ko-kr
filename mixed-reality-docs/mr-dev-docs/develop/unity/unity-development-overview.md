@@ -1,24 +1,24 @@
 ---
-title: Unity 개발 개요
-description: Unity에서 혼합 현실 앱 빌드를 시작합니다.
-author: thetuvix
+title: HoloLens용 Unity 개발
+description: Unity 및 HoloLens에서 혼합 현실 앱 빌드를 시작합니다.
+author: hferrone
 ms.author: kurtie
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 혼합 현실, 개발, 시작, 새 프로젝트, 포팅, 기능, 카메라, 시뮬레이션, 에뮬레이션, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 공간 매핑, 음성 입력, 위치를 찾을 수 있는 카메라, 에뮬레이터, Azure, 자습서
-ms.openlocfilehash: 4eeec1544315ff2b9a43fc725d5bbd83c8cea89f
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 150d86d1522f3fa71dd9d9a1fe154baef89496e0
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926042"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613477"
 ---
-# <a name="unity-development-overview"></a>Unity 개발 개요
+# <a name="unity-development-for-hololens"></a>HoloLens용 Unity 개발 
 
 ![Unity 배너 로고](../images/unity_logo_banner.png)
 
-[Unity](https://unity.com)에서 [혼합 현실 앱](../../design/app-views.md)을 빌드하는 가장 빠른 경로는 Mixed Reality Toolkit를 사용하는 것입니다. Unity를 처음 접하는 경우 계속하기 전에 Unity 학습 플랫폼에서 초보자 수준 [자습서](https://unity3d.com/learn/tutorials)를 살펴보는 것이 좋습니다. 또한 포괄적인 [Asset Store](https://www.assetstore.unity3d.com/) 및 [Unity 혼합 현실 포럼](https://forum.unity3d.com/forums/hololens.102/)을 방문하여 혼합 현실 앱을 빌드하는 온라인 커뮤니티에 참여하는 것도 좋습니다. 거친 세계에서는 어떤 멋진 자산 또는 솔루션을 찾을 수 있는지 전혀 알 수 없습니다. MRTK를 시작할 준비가 되면 아래 개발 검사점으로 이동하세요!
+[Unity](https://unity.com)에서 HoloLens [혼합 현실 앱](../../design/app-views.md)을 빌드하는 가장 빠른 경로는 Mixed Reality Toolkit를 사용하는 것입니다. Unity를 처음 접하는 경우 계속하기 전에 Unity 학습 플랫폼에서 초보자 수준 [자습서](https://unity3d.com/learn/tutorials)를 살펴보는 것이 좋습니다. 또한 포괄적인 [Asset Store](https://www.assetstore.unity3d.com/) 및 [Unity 혼합 현실 포럼](https://forum.unity3d.com/forums/hololens.102/)을 방문하여 혼합 현실 앱을 빌드하는 온라인 커뮤니티에 참여하는 것도 좋습니다. 거친 세계에서는 어떤 멋진 자산 또는 솔루션을 찾을 수 있는지 전혀 알 수 없습니다. MRTK를 시작할 준비가 되면 아래 개발 검사점으로 이동하세요!
 
 > [!IMPORTANT]
 > HoloLens 2로 가져오려는 기존 Unity 프로젝트가 있는 경우 **[포트 가이드](../porting-apps/porting-overview.md)** 를 살펴보세요. HTK, MRTK v1, SteamVR을 사용하거나 Reverb G2, Oculus Rift, HTC Vive 같은 몰입형 헤드셋용으로 개발된 프로젝트에 대한 가이드가 준비되어 있습니다.

@@ -1,18 +1,18 @@
 ---
 title: 관람자 보기
-description: 외부 디스플레이에서 혼합 현실 환경을 보여 주거나 혼합 현실 환경의 비디오를 녹화하는 수단으로 외부 디바이스에서 홀로그램을 시각화합니다.
+description: 외부 디바이스에서 홀로그램을 시각화하여 외부 디스플레이에 혼합 현실 환경을 표시하거나 기록합니다.
 author: chrisfromwork
 ms.author: chriba
 ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 관람자 보기, iPhone, iOS, iPad, OpenCV, 카메라, ARKit, HoloLens, Mixed Reality, Mixed Reality Toolkit, 데모, 레코드
-ms.openlocfilehash: 7b48315753ada0ae7a94abca5377a083ac659a34
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c344edea9b499bdff15d1d93e400b8be626a63b6
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91700540"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530110"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>HoloLens 및 HoloLens 2의 관람자 보기
 
@@ -20,8 +20,7 @@ ms.locfileid: "91700540"
 
 ## <a name="overview"></a>개요
 
-HoloLens를 착용할 때 이를 착용하지 않은 사람이 놀라운 것을 경험하지 못할 수 있다는 것을 잊는 경우가 많습니다. 관람자 보기를 사용하면 다른 사용자가 2D 화면에서 HoloLens 사용자가 자신의 세계에서 보는 것을 볼 수 있습니다.
-관람자 보기는 모바일 디바이스를 사용하여 홀로그램을 HD로 녹화하는 빠르고 경제적인 방법을 제공합니다. 또한 비디오 카메라를 사용하여 홀로그램을 전문적인 품질로 녹화하는 기능을 제공합니다.
+HoloLens를 쓰고 있을 때는 HoloLens를 쓰고 있지 않은 다른 사람이 자신이 보는 것과 똑같은 경이로움을 경험할 수 없다는 사실을 잊기 쉽습니다. Spectator View를 사용하면 HoloLens 사용자가 보고 있는 것을 다른 사람도 2D 화면으로 볼 수 있습니다. 또한 모바일 디바이스를 사용하여 홀로그램을 HD로 녹화하고 비디오 카메라를 사용하여 홀로그램을 고화질로 녹화하는 것도 빠르고 경제적인 접근법입니다.
 
 ## <a name="key-resources"></a>주요 리소스
 
@@ -30,7 +29,8 @@ HoloLens를 착용할 때 이를 착용하지 않은 사람이 놀라운 것을 
 * [**관람자 보기 샘플**](https://github.com/microsoft/MixedReality-SpectatorView/tree/master/samples)
 
 ## <a name="use-cases"></a>사용 사례
-* iPhone 또는 Android 디바이스를 사용하여 혼합 현실 환경을 녹화할 수 있습니다. Full HD로 녹화하고, 안티앨리어싱을 홀로그램과 그림자에 적용합니다. 이는 홀로그램의 비디오를 캡처하는 비용 효율적이고 빠른 방법입니다.
+
+* iPhone 또는 Android 디바이스를 사용하여 혼합 현실 환경을 녹화할 수 있습니다. Full HD로 녹화하고 홀로그램과 그림자에 앤티앨리어싱을 적용하면 홀로그램 동영상을 경제적이고 빠르게 녹화할 수 있습니다.
 * 라이브 혼합 현실 환경을 지연 없이 iPhone 또는 iPad에서 Apple TV로 직접 스트림합니다!
 * 게스트와 경험을 공유합니다. 비 HoloLens 사용자가 휴대폰 또는 태블릿에서 홀로그램을 직접 경험할 수 있도록 합니다.
 

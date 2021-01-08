@@ -1,5 +1,5 @@
 ---
-title: 시작 자습서 - 3. MRTK 프로필 구성
+title: MRTK 자습서 - 3. MRTK 프로필 구성
 description: 이 과정에서는 MRTK(Mixed Reality Toolkit) 프로필을 구성하는 방법을 보여줍니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 공간 인식
 ms.localizationpriority: high
-ms.openlocfilehash: 7ac81c21e1658798b7f512c4afa2eea9f509d827
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 48bb6aa8705c9d874e6af8867d1edbe2385cb853
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679322"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613247"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. MRTK 프로필 구성
 

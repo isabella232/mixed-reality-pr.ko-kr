@@ -1,5 +1,5 @@
 ---
-title: 시작 자습서 - 7. 3D 개체와 상호 작용
+title: MRTK 자습서 - 7. 3D 개체와 상호 작용
 description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 3D 개체와 상호 작용하는 방법을 보여 줍니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 개체 상호 작용, 경계 상자
 ms.localizationpriority: high
-ms.openlocfilehash: 5e2857a7baf85187902bd98de6271e53dcc3539e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a457c850cdc5db7b9613ae20caab23d69b342997
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679272"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613497"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. 3D 개체와 상호 작용
 

@@ -1,5 +1,5 @@
 ---
-title: 시작 자습서 - 9. 음성 명령 사용
+title: MRTK 자습서 - 9. 음성 명령 사용
 description: 이 과정에서는 MRTK(Mixed Reality Toolkit)에서 음성 명령을 사용하는 방법을 보여줍니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 음성 명령, 음성 입력
 ms.localizationpriority: high
-ms.openlocfilehash: e51f9e816acbc2f98415deaec2c0885c97e40442
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6e008f3e46bc4a22499691e284020321d29a2f23
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679252"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613467"
 ---
 # <a name="9-using-speech-commands"></a>9. 음성 명령 사용
 

@@ -7,18 +7,18 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 검색, 배포, 인덱스, 방문 페이지, 디자인, 개발, 자습서, 샘플 앱, 기본 사항, 사례 연구, 리소스, HoloLens 방법, 오픈 소스 프로젝트, 핵심 개념, 상호 작용, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: a11283ad4a7931c9e061cdbf25d4659fa4760822
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 5c0eefe6f4811feba6d1d52164652acbc44945c3
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926008"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847603"
 ---
 # <a name="start-designing-and-prototyping"></a>디자인 및 프로토타입 생성 시작
 
 ![혼합 현실 디자인 요약](images/design-hero-image.png)
 
-Mixed Reality 애플리케이션은 오늘날 전 세계의 다른 애플리케이션과 다르며 이를 설계하는 것은 어려운 작업입니다. 만들고 있는 현실 세계와 가상 세계의 새로운 조합뿐만 아니라 테이블에 가져오는 새로운 종류의 사용자 환경도 고려해야 합니다. Mixed Reality는 큰 장소이므로 디자인 스펙트럼에 따라 중요한 지점을 선택하여 일련의 검사점으로 아래에 배치했습니다. 이러한 검사점은 순차적이어야 하지만, 이미 참여한 경우 다음 섹션 중 하나로 자유롭게 이동하세요.
+Mixed Reality 애플리케이션은 오늘날 전 세계의 다른 애플리케이션과 다르며 이를 설계하는 것은 어려운 작업입니다. 만들고 있는 현실 세계와 가상 세계의 새로운 조합뿐만 아니라 이 조합이 제공하는 새로운 사용자 환경도 고려해야 합니다. Mixed Reality는 큰 장소이므로 디자인 스펙트럼에 따라 중요한 지점을 선택하여 일련의 검사점으로 아래에 배치했습니다. 이러한 검사점은 순차적이어야 하지만, 이미 참여한 경우 다음 섹션 중 하나로 자유롭게 이동하세요.
 
 ## <a name="design-checkpoints"></a>디자인 검사점
 
@@ -34,8 +34,9 @@ Mixed Reality 애플리케이션은 오늘날 전 세계의 다른 애플리케�
 | --- | --- |
 | [디자인 프로세스 확장](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Microsoft 내부 및 외부의 디자이너로부터 수집한 Mixed Reality의 디자인 프로세스를 직접 살펴보세요. |
 | [Mixed Reality 앱 유형](types-of-mixed-reality-apps.md) | 앱 환경이 Mixed Reality 스펙트럼에서 라이브 상태가 되는 위치를 결정합니다. |
-| [Holograms 앱 디자인](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | 놀라운 HoloLens 앱을 만들기 위한 혼합 현실 동작, 팁 및 권장 사항을 자세히 살펴보고 직접 경험하면서 혼합 현실 UX 디자인의 기본 사항에 대해 알아봅니다(HoloLens 2의 Microsoft Store에서 다운로드 가능). |
+| [Holograms 앱 디자인](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | 놀라운 HoloLens 앱을 만들기 위한 동작, 팁 및 권장 사항을 경험하면서 혼합 현실 UX 디자인의 기본 사항에 대해 알아봅니다(HoloLens 2의 Microsoft Store에서 다운로드 가능). |
 | [MRTK 예제 허브](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | 혼합 현실을 위한 공통 공간 상호 작용 및 UX 구성 요소를 경험할 수 있습니다(HoloLens 2의 Microsoft Store에서 다운로드할 수 있음). |
+
 ### <a name="2-core-concepts"></a>2. 핵심 개념
 
 VR 또는 AR용으로 개발하는지에 관계없이 유동적인 몰입형 환경을 설계하는 데 적용되는 몇 가지 핵심 개념이 있습니다. 사용자의 관점을 이해하고, 개체를 배치하며, 모든 사람이 편안하고 안전한지 확인하는 것이 이 과정의 가장 중요한 단계입니다. 이 섹션이 완료되면 상호 작용 디자인을 통해 수행할 수 있는 견고한 토대가 갖추어집니다.
@@ -45,26 +46,26 @@ VR 또는 AR용으로 개발하는지에 관계없이 유동적인 몰입형 환
 |  개념  |  결과  |
 | --- | --- |
 | [홀로그램 프레임](holographic-frame.md) | 헤드셋을 착용하면 현실 세계에 겹쳐진 콘텐츠가 사용자에게 표시되는 방법을 이해합니다. |
-| [좌표계](coordinate-systems.md) | 물리적 공간인지, 아니면 직접 만든 가상 영역인지에 관계없이 사용자에게 의미 있는 위치에 홀로그램을 정확하게 배치하는 방법을 알아봅니다. |
+| [좌표계](coordinate-systems.md) | 물리적 공간인지, 아니면 직접 만든 가상 영역인지에 관계없이 의미 있는 위치에 홀로그램을 정확하게 배치하는 방법을 알아봅니다. |
 | [공간 매핑](spatial-mapping.md) | 개체를 사용자의 세계에 고정하고, 현실 세계의 물리적 표면을 활용합니다. |
 | [편안함 고려사항](comfort.md) | 자연 세계를 모방하는 방식으로 몰입형 콘텐츠를 만들고 제공하여 사용자의 편의와 안전을 보장합니다. |
 
 ### <a name="3-interaction-design"></a>3. 상호 작용 디자인
 
-가상 환경의 아름다움과 몰입감에 관계없이 상호 작용이 없으면 쓸모가 없습니다. 이 섹션에서는 음성 입력을 사용하고 사용자로부터 시선 추적 데이터를 수집하는 기본적인 상호 작용 모델, 손 및 모션 컨트롤러를 안내합니다. 이 섹션이 완료되면 디자인 과정의 마지막 주요 항목인 사용자 환경을 다룰 준비가 됩니다.
+가상 환경의 아름다움과 몰입감에 관계없이 상호 작용이 없으면 쓸모가 없습니다. 이 섹션에서는 기본적인 상호 작용 모델, 손 및 모션 컨트롤러, 음성 입력 및 사용자로부터 시선 추적 데이터를 수집하는 방법을 안내합니다. 이 섹션이 완료되면 디자인 과정의 마지막 주요 항목인 사용자 환경을 다룰 준비가 됩니다.
 
 ![상호 작용 디자인 요소](images/UX_Hero_Manipulation.jpg)
 
 |  개념  |  결과  |
 | --- | --- |
 | [상호 작용 모델](interaction-fundamentals.md) | 손, 눈, 음성 입력을 통해 사용자에게 직관적인 상호 작용을 제공합니다. |
-| [실습 및 모션 컨트롤러](hands-and-tools.md) | 사용자의 손으로 가까운 거리에서 또는 정확한 상호 작용으로 먼 거리에서 홀로그램을 만지고 조작할 수 있는 방법을 알아봅니다. |
+| [실습 및 모션 컨트롤러](hands-and-tools.md) | 사용자의 손으로 가까운 거리에서 또는 정확한 상호 작용으로 먼 거리에서 홀로그램과 상호 작용하는 방법을 알아봅니다. |
 | [음성 입력 ](voice-input.md) | 몰입형 앱에서 음성 명령을 입력으로 사용하여 주변의 홀로그램과 환경을 제어합니다.  |
 | [시선 추적](eye-tracking.md) | 사용자가 보고 있는 항목에 대한 정보를 사용하여 홀로그램 환경에서 새로운 수준의 컨텍스트 및 인간 이해를 추가합니다. |
 
 ### <a name="4-user-experience-elements"></a>4. 사용자 환경 요소
 
-이제 기본 상호 작용을 숙지했으므로 사용자 환경 요소의 세부 요소와 고유한 Mixed Reality 환경에 맞게 이를 조정하는 방법을 중점적으로 살펴볼 수 있습니다. 최대한 사용자에게 직관적인 앱을 만드는 데 집중하여 일반적인 동작, 자산 디자인, 개체 크기 조정 및 입력 체계에 대해 설명합니다. 이 섹션은 공식적인 Mixed Reality 디자인 과정의 끝을 나타내지만, [다음 작업](#whats-next) 섹션에는 계속 진행할 수 있는 더 많은 리소스가 있습니다.
+이제 기본 상호 작용을 숙지했으므로 사용자 환경 요소의 세부 요소와 고유한 Mixed Reality 환경에 맞게 이를 조정하는 방법을 중점적으로 살펴볼 수 있습니다. 사용자에게 직관적인 환경을 만들면서 일반적인 동작, 자산 디자인, 개체 크기 조정 및 입력 체계에 대해 설명합니다. 이 섹션은 공식적인 Mixed Reality 디자인 과정의 끝을 나타내지만, [다음 작업](#whats-next) 섹션에는 계속 진행할 수 있는 더 많은 리소스가 있습니다.
 
 ![UX 요소](images/UX_Hero_BoundingBox.jpg)
 
@@ -108,7 +109,7 @@ VR 또는 AR용으로 개발하는지에 관계없이 유동적인 몰입형 환
 
 ---
 
-### <a name="additional-resources"></a>추가 리소스
+### <a name="other-resources"></a>다른 리소스
 
 :::row:::
     :::column:::

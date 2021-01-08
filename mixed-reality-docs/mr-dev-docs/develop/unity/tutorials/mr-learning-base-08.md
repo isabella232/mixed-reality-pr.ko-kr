@@ -1,5 +1,5 @@
 ---
-title: 시작 자습서 - 8. 시선 추적 사용
+title: MRTK 자습서 - 8. 시선 추적 사용
 description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 시선 추적을 사용하는 방법을 보여 줍니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 시선 추적
 ms.localizationpriority: high
-ms.openlocfilehash: 2b572a106cba904231ed124260cd879cd3a9a944
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 538204513589b96bedb8b20c46eee5735b764a4c
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679752"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613487"
 ---
 # <a name="8-using-eye-tracking"></a>8. 시선 추적 사용
 
