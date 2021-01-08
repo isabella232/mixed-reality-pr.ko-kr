@@ -7,12 +7,12 @@ ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 성능, 최적화, 설정, 설명서
-ms.openlocfilehash: 295f5c3653d02e9ab7ab4cd51dba57cafb5b291f
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: a369a68f8ebf9b7084c22f0efa3bbf0bf5ecbebf
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609624"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865428"
 ---
 # <a name="performance-recommendations-for-unreal"></a>Unreal을 사용하기 위한 권장 성능
 
@@ -37,7 +37,7 @@ Unreal Engine에는 [혼합 현실에 대한 성능 권장 사항](../platform-c
 
 ![VR 렌더링 설정](images/unreal/performance-recommendations-img-03.png)
 
-4. OpenXR을 사용할 때 **기본** 또는 **D3D12** 가 **기본 RHI** 로 선택되어 있는지 확인합니다.
+4. **[OpenXR만]** **기본값** 또는 **D3D12** 가 **기본 RHI** 로 선택되어 있는지 확인합니다.
     * 추가 렌더링 패스를 수행하는 플랫폼으로 인해 **D3D11** 을 선택하면 성능에 부정적인 영향을 미칩니다. **D3D12** 는 추가 렌더링 패스를 피하는 것 외에도 렌더링 성능 향상을 제공해야 합니다.
 
 ![기본 RHI](images/unreal/performance-recommendations-img-09.png)

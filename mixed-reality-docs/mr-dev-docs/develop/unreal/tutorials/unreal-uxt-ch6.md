@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 7f6f501a5e2cde9fdb6aa3ba1aa973a4ab697fd8
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 83d8068ca8ce73f23edb85cf9044db5409105380
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010551"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865398"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. 패키징 후 디바이스 또는 에뮬레이터에 배포
 
@@ -30,6 +30,9 @@ ms.locfileid: "97010551"
 체스 앱에 이 경로를 적용하려면 다음 몇 가지가 필요합니다.
 
 1.  Microsoft Store에서 HoloLens 2에 **홀로그램 원격 플레이어** 를 설치하고 앱을 실행합니다. 앱에 표시되는 IP 주소를 확인합니다.
+    * **편집 > 프로젝트 설정** 으로 차례로 이동하여 Windows **기본 RHI** 가 **기본값** 또는 **D3D11** 로 설정되어 있는지 확인합니다.
+
+![기본 RHI](../images/unreal/performance-recommendations-img-09.png)
 
 2.  Unreal 편집기로 돌아가서 **편집 > 프로젝트 설정** 으로 이동하고 **홀로그램 원격** 섹션에서 **원격 사용** 을 선택합니다.
 
