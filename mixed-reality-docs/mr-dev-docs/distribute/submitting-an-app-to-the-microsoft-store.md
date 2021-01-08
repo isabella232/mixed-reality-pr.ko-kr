@@ -6,21 +6,26 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, HoloLens, 모던 헤드셋, 앱, uwp, 제출, 제출, 필터, 메타 데이터, 시스템 요구 사항, 키워드, wack, 인증, 패키지, appx, 머천다이징, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 92de6072300ed94873cc68dfa78531da4685d274
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 7b1953fe0244b06f019f0e28432b7f9be9c21081
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757841"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031979"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Microsoft Store에 앱 제출
 
 > [!IMPORTANT]
-> Unreal 응용 프로그램을 제출 하는 경우 계속 하기 전에 여기에서 **[게시 지침](../develop/unreal/unreal-publishing-to-store.md)** 을 따라야 합니다.
+> Unreal 응용 프로그램을 제출 하는 경우 계속 하기 전에 **[게시 지침](../develop/unreal/unreal-publishing-to-store.md)** 을 따라야 합니다.
+
+## <a name="prerequisites"></a>사전 요구 사항
 
 [HoloLens](../hololens-hardware-details.md) 와 WINDOWS 10 PC는 모두 [몰입 형 헤드셋](../discover/immersive-headset-hardware-details.md) 을 켜는 유니버설 Windows 플랫폼 앱을 실행 합니다. HoloLens, PC 또는 둘 다를 지 원하는 앱을 제출 하 든 앱 제출은 [파트너 센터](https://partner.microsoft.com/dashboard)를 통과 합니다.
 
-파트너 센터 개발자 계정이 아직 없는 경우 계속 진행 하기 전에 [등록](https://developer.microsoft.com/store/register) 합니다.
+파트너 센터 개발자 계정이 아직 없는 경우 계속 진행 하기 전에 [등록](https://developer.microsoft.com/store/register) 합니다. 제출 지침 및 검사 목록에 대 한 자세한 내용은이 [앱 서브 미션 문서](https://docs.microsoft.com/windows/uwp/publish/app-submissions)에서 찾을 수 있습니다.
+
+> [!IMPORTANT]
+> 파트너 센터 개발자 계정이 고용 확인 검사에 실패 하는 경우 Microsoft Store에 응용 프로그램을 제출할 수 없습니다. 자세한 내용은 파트너 센터 [지원 팀](https://developer.microsoft.com/windows/support) 에 문의 하세요.
 
 ## <a name="packaging-a-mixed-reality-app"></a>혼합 현실 앱 패키징
 
@@ -266,8 +271,8 @@ Visual Studio의 Microsoft Store에 앱 연결
 
 대부분의 경우 소비자는 Windows Mixed Reality 몰입 형 헤드셋을 구입 하기 전에 가상 현실에 대 한 경험이 없도록 제한 됩니다. 이는 강한 게임에서 발생 하는 것을 알 수 없거나 몰입 형 환경에서 자신의 편안 함 임계값에 익숙해질 수 있습니다. 많은 고객이 Windows mixed reality [pc](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)로 직장 배지가 달린 되지 않는 Pc에서 Windows mixed reality 몰입 형 헤드셋을 사용해 볼 수도 있습니다. 이러한 고려 사항 때문에 유료 현실 앱 또는 게임의 [무료 평가판](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#free-trial) 을 제공 하는 것이 좋습니다.
 
-## <a name="see-also"></a>추가 정보
-* [혼합 현실 이란?](../discover/mixed-reality.md)
+## <a name="see-also"></a>참고 항목
+* [혼합 현실이란?](../discover/mixed-reality.md)
 * [개발 개요](../develop/development.md)
 * [앱 보기](../design/app-views.md)
 * [혼합 현실 성능 이해](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
