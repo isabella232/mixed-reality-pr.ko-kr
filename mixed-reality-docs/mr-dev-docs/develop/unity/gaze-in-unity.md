@@ -1,29 +1,29 @@
 ---
 title: Unity의 응시
-description: 응시는 사용자가 혼합 현실에서 앱이 만드는 holograms를 대상으로 하는 기본 방법입니다.
+description: 사용자가 혼합 현실에서 만든 holograms를 대상으로 하는 기본 방법으로 응시 입력을 사용 하는 방법에 대해 알아봅니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 눈에 응시, 헤드-응시, unity, 홀로그램, 혼합 현실, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: ca33fef5a5a761df83ed7991b366cf711a5db224
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 5dab8cb38aaa4b9a4547f4bf494afb093b6d8058
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010364"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009893"
 ---
-# <a name="head-gaze-in-unity"></a><span data-ttu-id="826ba-104">헤드-Unity에서의 응시</span><span class="sxs-lookup"><span data-stu-id="826ba-104">Head-gaze in Unity</span></span>
+# <a name="head-gaze-in-unity"></a><span data-ttu-id="6c9ee-104">헤드-Unity에서의 응시</span><span class="sxs-lookup"><span data-stu-id="6c9ee-104">Head-gaze in Unity</span></span>
 
-<span data-ttu-id="826ba-105">[Holograms](../../discover/hologram.md) 는 사용자가 [혼합 현실](../../discover/mixed-reality.md)에서 만든 앱을 대상으로 [하는 기본](../../design/gaze-and-commit.md) 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="826ba-105">[Gaze](../../design/gaze-and-commit.md) is the primary way for users to target [holograms](../../discover/hologram.md) your app creates in [Mixed Reality](../../discover/mixed-reality.md).</span></span>
+<span data-ttu-id="6c9ee-105">[Holograms](../../discover/hologram.md) 는 사용자가 [혼합 현실](../../discover/mixed-reality.md)에서 만든 앱을 대상으로 [하는 기본](../../design/gaze-and-commit.md) 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="6c9ee-105">[Gaze](../../design/gaze-and-commit.md) is the primary way for users to target [holograms](../../discover/hologram.md) your app creates in [Mixed Reality](../../discover/mixed-reality.md).</span></span>
 
-## <a name="implementing-head-gaze"></a><span data-ttu-id="826ba-106">헤드-응시 구현</span><span class="sxs-lookup"><span data-stu-id="826ba-106">Implementing head-gaze</span></span>
+## <a name="implementing-head-gaze"></a><span data-ttu-id="6c9ee-106">헤드-응시 구현</span><span class="sxs-lookup"><span data-stu-id="6c9ee-106">Implementing head-gaze</span></span>
 
-<span data-ttu-id="826ba-107">개념적으로 사용자의 헤드셋에서 광선을 전달 하 여 [헤드](../../design/gaze-and-commit.md) 를 확인 합니다.</span><span class="sxs-lookup"><span data-stu-id="826ba-107">Conceptually, you determine [head-gaze](../../design/gaze-and-commit.md) by projecting a ray forward from the user's headset to see what it hits.</span></span> <span data-ttu-id="826ba-108">Unity에서 사용자의 헤드 위치와 방향은 [카메라](camera-in-unity.md) [(구체적으로](https://docs.unity3d.com/ScriptReference/Camera-main.html)는 안 됨)를 통해 노출 됩니다. [transform. forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) 및 [Unityengine. Camera. main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [transform. position](https://docs.unity3d.com/ScriptReference/Transform-position.html).</span><span class="sxs-lookup"><span data-stu-id="826ba-108">In Unity, the user's head position and direction are exposed through the [Camera](camera-in-unity.md), specifically [UnityEngine.Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).[transform.forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) and [UnityEngine.Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).[transform.position](https://docs.unity3d.com/ScriptReference/Transform-position.html).</span></span>
+<span data-ttu-id="6c9ee-107">개념적으로 사용자의 헤드셋에서 광선을 전달 하 여 [헤드](../../design/gaze-and-commit.md) 를 확인 합니다.</span><span class="sxs-lookup"><span data-stu-id="6c9ee-107">Conceptually, you determine [head-gaze](../../design/gaze-and-commit.md) by projecting a ray forward from the user's headset to see what it hits.</span></span> <span data-ttu-id="6c9ee-108">Unity에서 사용자의 헤드 위치와 방향은 [카메라](camera-in-unity.md) [(구체적으로](https://docs.unity3d.com/ScriptReference/Camera-main.html)는 안 됨)를 통해 노출 됩니다. [transform. forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) 및 [Unityengine. Camera. main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [transform. position](https://docs.unity3d.com/ScriptReference/Transform-position.html).</span><span class="sxs-lookup"><span data-stu-id="6c9ee-108">In Unity, the user's head position and direction are exposed through the [Camera](camera-in-unity.md), specifically [UnityEngine.Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).[transform.forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) and [UnityEngine.Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).[transform.position](https://docs.unity3d.com/ScriptReference/Transform-position.html).</span></span>
 
-<span data-ttu-id="826ba-109">GameObject [를 호출 하면](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) 3d 충돌 지점을 비롯 한 충돌에 대 한 정보를 포함 하는 [Raycasthit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) 및 헤드-응시 빛의 기타 제공 됩니다.</span><span class="sxs-lookup"><span data-stu-id="826ba-109">Calling [Physics.RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) gives you a [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) containing information about the collision, including the 3D collision point and the other GameObject the head-gaze ray hit.</span></span>
+<span data-ttu-id="6c9ee-109">GameObject [를 호출 하면](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) 3d 충돌 지점을 비롯 한 충돌에 대 한 정보를 포함 하는 [Raycasthit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) 및 헤드-응시 빛의 기타 제공 됩니다.</span><span class="sxs-lookup"><span data-stu-id="6c9ee-109">Calling [Physics.RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) gives you a [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) containing information about the collision, including the 3D collision point and the other GameObject the head-gaze ray hit.</span></span>
 
-### <a name="example-implement-head-gaze"></a><span data-ttu-id="826ba-110">예: 헤드-응시 구현</span><span class="sxs-lookup"><span data-stu-id="826ba-110">Example: Implement head-gaze</span></span>
+### <a name="example-implement-head-gaze"></a><span data-ttu-id="6c9ee-110">예: 헤드-응시 구현</span><span class="sxs-lookup"><span data-stu-id="6c9ee-110">Example: Implement head-gaze</span></span>
 
 ```cs
 void Update()
@@ -43,32 +43,32 @@ void Update()
 }
 ```
 
-### <a name="best-practices"></a><span data-ttu-id="826ba-111">모범 사례</span><span class="sxs-lookup"><span data-stu-id="826ba-111">Best practices</span></span>
+### <a name="best-practices"></a><span data-ttu-id="6c9ee-111">모범 사례</span><span class="sxs-lookup"><span data-stu-id="6c9ee-111">Best practices</span></span>
 
-<span data-ttu-id="826ba-112">위의 예제에서는 업데이트 루프에서 단일 raycast를 실행 하 여 사용자의 헤드가 가리키는 대상을 찾는 반면 단일 개체를 사용 하 여 모든 헤드-응시 프로세스를 관리 하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="826ba-112">While the example above fires a single raycast from the update loop to find the target the user's head points at, we recommended using a single object to manage all head-gaze processes.</span></span> <span data-ttu-id="826ba-113">헤드-응시 논리를 결합 하 여 앱의 귀중 한 처리 능력을 절약 하 고, raycasting를 프레임당 하나로 제한 합니다.</span><span class="sxs-lookup"><span data-stu-id="826ba-113">Combining your head-gaze logic will save your app precious processing power and limit your raycasting to one per frame.</span></span>
+<span data-ttu-id="6c9ee-112">위의 예제에서는 업데이트 루프에서 단일 raycast를 실행 하 여 사용자의 헤드가 가리키는 대상을 찾는 반면 단일 개체를 사용 하 여 모든 헤드-응시 프로세스를 관리 하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="6c9ee-112">While the example above fires a single raycast from the update loop to find the target the user's head points at, we recommended using a single object to manage all head-gaze processes.</span></span> <span data-ttu-id="6c9ee-113">헤드-응시 논리를 결합 하 여 앱의 귀중 한 처리 능력을 절약 하 고, raycasting를 프레임당 하나로 제한 합니다.</span><span class="sxs-lookup"><span data-stu-id="6c9ee-113">Combining your head-gaze logic will save your app precious processing power and limit your raycasting to one per frame.</span></span>
 
-## <a name="visualizing-head-gaze"></a><span data-ttu-id="826ba-114">헤드 시각화-응시</span><span class="sxs-lookup"><span data-stu-id="826ba-114">Visualizing head-gaze</span></span>
+## <a name="visualizing-head-gaze"></a><span data-ttu-id="6c9ee-114">헤드 시각화-응시</span><span class="sxs-lookup"><span data-stu-id="6c9ee-114">Visualizing head-gaze</span></span>
 
-<span data-ttu-id="826ba-115">컴퓨터에서 마우스 포인터를 사용 하는 것과 마찬가지로 사용자의 헤드를 나타내는 [커서](../../design/cursors.md) 를 구현 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="826ba-115">Just like with a mouse pointer on a computer, you should implement a [cursor](../../design/cursors.md) that represents the user's head-gaze.</span></span> <span data-ttu-id="826ba-116">사용자가 대상으로 하는 콘텐츠를 알면 상호 작용할 대상이 높아집니다.</span><span class="sxs-lookup"><span data-stu-id="826ba-116">Knowing what content a user is targeting increases confidence in what they're about to interact with.</span></span>
+<span data-ttu-id="6c9ee-115">컴퓨터에서 마우스 포인터를 사용 하는 것과 마찬가지로 사용자의 헤드를 나타내는 [커서](../../design/cursors.md) 를 구현 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="6c9ee-115">Just like with a mouse pointer on a computer, you should implement a [cursor](../../design/cursors.md) that represents the user's head-gaze.</span></span> <span data-ttu-id="6c9ee-116">사용자가 대상으로 하는 콘텐츠를 알면 상호 작용할 대상이 높아집니다.</span><span class="sxs-lookup"><span data-stu-id="6c9ee-116">Knowing what content a user is targeting increases confidence in what they're about to interact with.</span></span>
 
-## <a name="head-gaze-in-the-mixed-reality-toolkit"></a><span data-ttu-id="826ba-117">Head-Mixed Reality Toolkit의 Head-응시</span><span class="sxs-lookup"><span data-stu-id="826ba-117">Head-gaze in the Mixed Reality Toolkit</span></span> 
-<span data-ttu-id="826ba-118">MRTK의 [입력 관리자](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) 에서 헤드-응시에 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="826ba-118">You can access head-gaze from the [Input Manager](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) in MRTK.</span></span>
+## <a name="head-gaze-in-the-mixed-reality-toolkit"></a><span data-ttu-id="6c9ee-117">Head-Mixed Reality Toolkit의 Head-응시</span><span class="sxs-lookup"><span data-stu-id="6c9ee-117">Head-gaze in the Mixed Reality Toolkit</span></span> 
+<span data-ttu-id="6c9ee-118">MRTK의 [입력 관리자](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) 에서 헤드-응시에 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6c9ee-118">You can access head-gaze from the [Input Manager](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) in MRTK.</span></span>
 
-## <a name="next-development-checkpoint"></a><span data-ttu-id="826ba-119">다음 개발 검사점</span><span class="sxs-lookup"><span data-stu-id="826ba-119">Next Development Checkpoint</span></span>
+## <a name="next-development-checkpoint"></a><span data-ttu-id="6c9ee-119">다음 개발 검사점</span><span class="sxs-lookup"><span data-stu-id="6c9ee-119">Next Development Checkpoint</span></span>
 
-<span data-ttu-id="826ba-120">앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="826ba-120">If you're following the Unity development journey we've laid out, you're in the midst of exploring the MRTK core building blocks.</span></span> <span data-ttu-id="826ba-121">여기에서 다음 구성 요소를 계속 진행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="826ba-121">From here, you can continue to the next building block:</span></span>
-
-> [!div class="nextstepaction"]
-> [<span data-ttu-id="826ba-122">제스처 및 모션 컨트롤러</span><span class="sxs-lookup"><span data-stu-id="826ba-122">Gestures and motion controllers</span></span>](gestures-and-motion-controllers-in-unity.md)
-
-<span data-ttu-id="826ba-123">또는 Mixed Reality 플랫폼 기능 및 API로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="826ba-123">Or jump to Mixed Reality platform capabilities and APIs:</span></span>
+<span data-ttu-id="6c9ee-120">앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="6c9ee-120">If you're following the Unity development journey we've laid out, you're in the midst of exploring the MRTK core building blocks.</span></span> <span data-ttu-id="6c9ee-121">여기에서 다음 구성 요소로 진행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6c9ee-121">From here, you can continue to the next building block:</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="826ba-124">공유 환경</span><span class="sxs-lookup"><span data-stu-id="826ba-124">Shared experiences</span></span>](shared-experiences-in-unity.md)
+> [<span data-ttu-id="6c9ee-122">제스처 및 모션 컨트롤러</span><span class="sxs-lookup"><span data-stu-id="6c9ee-122">Gestures and motion controllers</span></span>](gestures-and-motion-controllers-in-unity.md)
 
-<span data-ttu-id="826ba-125">언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="826ba-125">You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.</span></span>
+<span data-ttu-id="6c9ee-123">또는 Mixed Reality 플랫폼 기능 및 API로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="6c9ee-123">Or jump to Mixed Reality platform capabilities and APIs:</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="826ba-126">참고 항목</span><span class="sxs-lookup"><span data-stu-id="826ba-126">See also</span></span>
-* [<span data-ttu-id="826ba-127">카메라</span><span class="sxs-lookup"><span data-stu-id="826ba-127">Camera</span></span>](camera-in-unity.md)
-* [<span data-ttu-id="826ba-128">커서</span><span class="sxs-lookup"><span data-stu-id="826ba-128">Cursors</span></span>](../../design/cursors.md)
-* [<span data-ttu-id="826ba-129">헤드 게이즈 및 커밋</span><span class="sxs-lookup"><span data-stu-id="826ba-129">Head-gaze and commit</span></span>](../../design/gaze-and-commit.md)
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="6c9ee-124">공유 환경</span><span class="sxs-lookup"><span data-stu-id="6c9ee-124">Shared experiences</span></span>](shared-experiences-in-unity.md)
+
+<span data-ttu-id="6c9ee-125">언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="6c9ee-125">You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="6c9ee-126">참조</span><span class="sxs-lookup"><span data-stu-id="6c9ee-126">See also</span></span>
+* [<span data-ttu-id="6c9ee-127">카메라</span><span class="sxs-lookup"><span data-stu-id="6c9ee-127">Camera</span></span>](camera-in-unity.md)
+* [<span data-ttu-id="6c9ee-128">커서</span><span class="sxs-lookup"><span data-stu-id="6c9ee-128">Cursors</span></span>](../../design/cursors.md)
+* [<span data-ttu-id="6c9ee-129">헤드 게이즈 및 커밋</span><span class="sxs-lookup"><span data-stu-id="6c9ee-129">Head-gaze and commit</span></span>](../../design/gaze-and-commit.md)

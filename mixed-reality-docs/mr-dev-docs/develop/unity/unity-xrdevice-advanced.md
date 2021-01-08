@@ -1,30 +1,30 @@
 ---
 title: Unity의 혼합 현실 기본 개체
-description: Unity에서 기본 Holographic 네이티브 개체에 대 한 액세스 권한을 얻습니다.
+description: XR 네임 스페이스를 사용 하 여 Unity에서 기본 Holographic 네이티브 개체에 액세스 하는 방법에 대해 알아봅니다.
 author: vladkol
 ms.author: vladkol
 ms.date: 05/20/2018
 ms.topic: article
 keywords: unity, mixed reality, 네이티브, xrdevice, spatialcoordinatesystem, holographicframe, holographiccamera, ispatialcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr, mixed reality 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 8dda1152da9705147ca3a057faadb9edd8428df6
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 7aa69286942ce98909e23508d92fb88c59ce9175
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010594"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009813"
 ---
-# <a name="mixed-reality-native-objects-in-unity"></a><span data-ttu-id="27ca2-104">Unity의 혼합 현실 기본 개체</span><span class="sxs-lookup"><span data-stu-id="27ca2-104">Mixed Reality native objects in Unity</span></span>
+# <a name="mixed-reality-native-objects-in-unity"></a><span data-ttu-id="118a9-104">Unity의 혼합 현실 기본 개체</span><span class="sxs-lookup"><span data-stu-id="118a9-104">Mixed Reality native objects in Unity</span></span>
 
-<span data-ttu-id="27ca2-105">모든 혼합 현실 앱은 카메라 데이터를 수신 하 고 프레임을 렌더링 하기 시작 하기 전에 [HolographicSpace를 가져옵니다](../native/getting-a-holographicspace.md) .</span><span class="sxs-lookup"><span data-stu-id="27ca2-105">Every Mixed Reality app [gets a HolographicSpace](../native/getting-a-holographicspace.md) before it starts receiving camera data and rendering frames.</span></span> <span data-ttu-id="27ca2-106">Unity에서 엔진은 Holographic 개체를 처리 하 고 내부적으로 렌더링 루프의 일부로 업데이트 하는 단계를 처리 합니다.</span><span class="sxs-lookup"><span data-stu-id="27ca2-106">In Unity, the engine takes care of those steps for you, handling Holographic objects and internally updating as part of its render loop.</span></span>
+<span data-ttu-id="118a9-105">모든 혼합 현실 앱은 카메라 데이터를 수신 하 고 프레임을 렌더링 하기 시작 하기 전에 [HolographicSpace를 가져옵니다](../native/getting-a-holographicspace.md) .</span><span class="sxs-lookup"><span data-stu-id="118a9-105">Every Mixed Reality app [gets a HolographicSpace](../native/getting-a-holographicspace.md) before it starts receiving camera data and rendering frames.</span></span> <span data-ttu-id="118a9-106">Unity에서 엔진은 Holographic 개체를 처리 하 고 내부적으로 렌더링 루프의 일부로 업데이트 하는 단계를 처리 합니다.</span><span class="sxs-lookup"><span data-stu-id="118a9-106">In Unity, the engine takes care of those steps for you, handling Holographic objects and internally updating as part of its render loop.</span></span>
 
-<span data-ttu-id="27ca2-107">그러나 고급 시나리오에서는 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> 및 current <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>와 같은 기본 네이티브 개체에 대 한 액세스 권한을 얻어야 할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="27ca2-107">However, in advanced scenarios you may need to get access to the underlying native objects, such as the <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> and current <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>.</span></span> <span data-ttu-id="27ca2-108"><a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">Unityengine. XRDevice</a> 는 이러한 네이티브 개체에 대 한 액세스를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="27ca2-108"><a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">UnityEngine.XR.XRDevice</a> is what provides access to these native objects.</span></span>
+<span data-ttu-id="118a9-107">그러나 고급 시나리오에서는 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> 및 current <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>와 같은 기본 네이티브 개체에 대 한 액세스 권한을 얻어야 할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="118a9-107">However, in advanced scenarios you may need to get access to the underlying native objects, such as the <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> and current <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>.</span></span> <span data-ttu-id="118a9-108"><a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">Unityengine. XRDevice</a> 는 이러한 네이티브 개체에 대 한 액세스를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="118a9-108"><a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">UnityEngine.XR.XRDevice</a> is what provides access to these native objects.</span></span>
 
-## <a name="xrdevice"></a><span data-ttu-id="27ca2-109">XRDevice</span><span class="sxs-lookup"><span data-stu-id="27ca2-109">XRDevice</span></span> 
+## <a name="xrdevice"></a><span data-ttu-id="118a9-109">XRDevice</span><span class="sxs-lookup"><span data-stu-id="118a9-109">XRDevice</span></span> 
 
-<span data-ttu-id="27ca2-110">**네임 스페이스:** *UNITYENGINE. XR*</span><span class="sxs-lookup"><span data-stu-id="27ca2-110">**Namespace:** *UnityEngine.XR*</span></span><br>
-<span data-ttu-id="27ca2-111">**유형:** *xrdevice*</span><span class="sxs-lookup"><span data-stu-id="27ca2-111">**Type:** *XRDevice*</span></span>
+<span data-ttu-id="118a9-110">**네임 스페이스:** *UNITYENGINE. XR*</span><span class="sxs-lookup"><span data-stu-id="118a9-110">**Namespace:** *UnityEngine.XR*</span></span><br>
+<span data-ttu-id="118a9-111">**유형:** *xrdevice*</span><span class="sxs-lookup"><span data-stu-id="118a9-111">**Type:** *XRDevice*</span></span>
 
-<span data-ttu-id="27ca2-112">*Xrdevice* 유형을 사용 하면 <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.GetNativePtr.html" target="_blank">GetNativePtr</a> 메서드를 사용 하 여 기본 네이티브 개체에 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="27ca2-112">The *XRDevice* type allows you to get access to underlying native objects using the <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.GetNativePtr.html" target="_blank">GetNativePtr</a> method.</span></span> <span data-ttu-id="27ca2-113">GetNativePtr 반환 되는 항목은 플랫폼 마다 다릅니다.</span><span class="sxs-lookup"><span data-stu-id="27ca2-113">What GetNativePtr returns varies between different platforms.</span></span> <span data-ttu-id="27ca2-114">유니버설 Windows 플랫폼에서 Windows Mixed Reality XR SDK를 대상으로 지정 하는 경우 GetNativePtr는 다음 구조에 대 한 포인터 (IntPtr)를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="27ca2-114">On the Universal Windows Platform, when targeting the Windows Mixed Reality XR SDK, XRDevice.GetNativePtr returns a pointer (IntPtr) to the following structure:</span></span> 
+<span data-ttu-id="118a9-112">*Xrdevice* 유형을 사용 하면 <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.GetNativePtr.html" target="_blank">GetNativePtr</a> 메서드를 사용 하 여 기본 네이티브 개체에 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="118a9-112">The *XRDevice* type allows you to get access to underlying native objects using the <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.GetNativePtr.html" target="_blank">GetNativePtr</a> method.</span></span> <span data-ttu-id="118a9-113">GetNativePtr 반환 되는 항목은 플랫폼 마다 다릅니다.</span><span class="sxs-lookup"><span data-stu-id="118a9-113">What GetNativePtr returns varies between different platforms.</span></span> <span data-ttu-id="118a9-114">유니버설 Windows 플랫폼에서 Windows Mixed Reality XR SDK를 대상으로 지정 하는 경우 GetNativePtr는 다음 구조에 대 한 포인터 (IntPtr)를 반환 합니다.</span><span class="sxs-lookup"><span data-stu-id="118a9-114">On the Universal Windows Platform, when targeting the Windows Mixed Reality XR SDK, XRDevice.GetNativePtr returns a pointer (IntPtr) to the following structure:</span></span> 
 
 ```cs
 using System;
@@ -40,22 +40,22 @@ struct HolographicFrameNativeData
     public IntPtr IHolographicCameraPtr; // // Windows::Graphics::Holographic::IHolographicCamera
 }
 ```
-<span data-ttu-id="27ca2-115">Marshal.sizeof와 marshal.ptrtostructure 메서드를 사용 하 여 HolographicFrameNativeData로 변환할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="27ca2-115">You can convert it to HolographicFrameNativeData using Marshal.PtrToStructure method:</span></span>
+<span data-ttu-id="118a9-115">Marshal.sizeof와 marshal.ptrtostructure 메서드를 사용 하 여 HolographicFrameNativeData로 변환할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="118a9-115">You can convert it to HolographicFrameNativeData using Marshal.PtrToStructure method:</span></span>
 ```cs
 var nativePtr = UnityEngine.XR.XRDevice.GetNativePtr();
 HolographicFrameNativeData hfd = Marshal.PtrToStructure<HolographicFrameNativeData>(nativePtr);
 ```
-<span data-ttu-id="27ca2-116">***IHolographicCameraPtr** 은 길이가 MaxNumberOfCameras와 같은 unmanagedtype.lpwstr ByValArray으로 마샬링되는 IntPtr의 배열입니다.*</span><span class="sxs-lookup"><span data-stu-id="27ca2-116">***IHolographicCameraPtr** is an array of IntPtr marshaled as UnmanagedType.ByValArray with a length equal to MaxNumberOfCameras*</span></span> 
+<span data-ttu-id="118a9-116">***IHolographicCameraPtr** 은 길이가 MaxNumberOfCameras와 같은 unmanagedtype.lpwstr ByValArray으로 마샬링되는 IntPtr의 배열입니다.*</span><span class="sxs-lookup"><span data-stu-id="118a9-116">***IHolographicCameraPtr** is an array of IntPtr marshaled as UnmanagedType.ByValArray with a length equal to MaxNumberOfCameras*</span></span> 
 
-### <a name="unmarshaling-native-pointers"></a><span data-ttu-id="27ca2-117">네이티브 포인터 역마샬링</span><span class="sxs-lookup"><span data-stu-id="27ca2-117">Unmarshaling native pointers</span></span>
+### <a name="unmarshaling-native-pointers"></a><span data-ttu-id="118a9-117">네이티브 포인터 역마샬링</span><span class="sxs-lookup"><span data-stu-id="118a9-117">Unmarshaling native pointers</span></span>
 
-<span data-ttu-id="27ca2-118">[MixedReality](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT)를 사용 하는 경우 메서드를 사용 하 여 네이티브 포인터에서 관리 되는 개체를 생성할 수 있습니다. `FromNativePtr()`</span><span class="sxs-lookup"><span data-stu-id="27ca2-118">If you are using [Microsoft.Windows.MixedReality.DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT), you can construct a managed object from a native pointer using the `FromNativePtr()` method:</span></span>
+<span data-ttu-id="118a9-118">[MixedReality](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT)를 사용 하는 경우 메서드를 사용 하 여 네이티브 포인터에서 관리 되는 개체를 생성할 수 있습니다. `FromNativePtr()`</span><span class="sxs-lookup"><span data-stu-id="118a9-118">If you are using [Microsoft.Windows.MixedReality.DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT), you can construct a managed object from a native pointer using the `FromNativePtr()` method:</span></span>
 
 ```cs
 var worldOrigin = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(hfd.ISpatialCoordinateSystemPtr);
 ```
 
-<span data-ttu-id="27ca2-119">그렇지 않으면를 사용 하 여 `Marshal.GetObjectForIUnknown()` 원하는 형식으로 캐스팅 합니다.</span><span class="sxs-lookup"><span data-stu-id="27ca2-119">Otherwise, use `Marshal.GetObjectForIUnknown()` and cast to the type you want:</span></span>
+<span data-ttu-id="118a9-119">그렇지 않으면를 사용 하 여 `Marshal.GetObjectForIUnknown()` 원하는 형식으로 캐스팅 합니다.</span><span class="sxs-lookup"><span data-stu-id="118a9-119">Otherwise, use `Marshal.GetObjectForIUnknown()` and cast to the type you want:</span></span>
 
 ```cs
 #if ENABLE_WINMD_SUPPORT
@@ -63,9 +63,9 @@ var worldOrigin = (Windows.Perception.Spatial.SpatialCoordinateSystem)Marshal.Ge
 #endif
 ```
 
-### <a name="converting-between-coordinate-systems"></a><span data-ttu-id="27ca2-120">좌표계 간 변환</span><span class="sxs-lookup"><span data-stu-id="27ca2-120">Converting between coordinate systems</span></span>
+### <a name="converting-between-coordinate-systems"></a><span data-ttu-id="118a9-120">좌표계 간 변환</span><span class="sxs-lookup"><span data-stu-id="118a9-120">Converting between coordinate systems</span></span>
 
-<span data-ttu-id="27ca2-121">Unity는 왼손 좌표계를 사용 하는 반면 Windows 인식 Api는 오른손 좌표계를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="27ca2-121">Unity uses a left-handed coordinate system, while the Windows Perception APIs use right-handed coordinate systems.</span></span> <span data-ttu-id="27ca2-122">이러한 두 가지 규칙을 변환 하기 위해 다음 도우미를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="27ca2-122">To convert between these two conventions, you can use the following helpers:</span></span>
+<span data-ttu-id="118a9-121">Unity는 왼손 좌표계를 사용 하는 반면 Windows 인식 Api는 오른손 좌표계를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="118a9-121">Unity uses a left-handed coordinate system, while the Windows Perception APIs use right-handed coordinate systems.</span></span> <span data-ttu-id="118a9-122">이러한 두 가지 규칙을 변환 하기 위해 다음 도우미를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="118a9-122">To convert between these two conventions, you can use the following helpers:</span></span>
 
 ```cs
 namespace NumericsConversion
@@ -91,14 +91,14 @@ namespace NumericsConversion
 }
 ```
 
-### <a name="using-holographicframe-native-data"></a><span data-ttu-id="27ca2-123">HolographicFrame 네이티브 데이터 사용</span><span class="sxs-lookup"><span data-stu-id="27ca2-123">Using HolographicFrame native data</span></span>
+### <a name="using-holographicframe-native-data"></a><span data-ttu-id="118a9-123">HolographicFrame 네이티브 데이터 사용</span><span class="sxs-lookup"><span data-stu-id="118a9-123">Using HolographicFrame native data</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="27ca2-124">HolographicFrameNativeData를 통해 수신 된 네이티브 개체의 상태를 변경 하면 예기치 않은 동작 및 렌더링 아티팩트가 발생할 수 있습니다. 특히 Unity에서 동일한 상태를 갖는 이유가 있을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="27ca2-124">Changing the state of the native objects received via HolographicFrameNativeData may cause unpredictable behaviour and rendering artifacts, especially if Unity also reasons about that same state.</span></span>  <span data-ttu-id="27ca2-125">예를 들어 HolographicFrame를 호출 하면 안 됩니다. UpdateCurrentPrediction를 호출 하면 안 됩니다. 그렇지 않으면 Unity가 해당 프레임으로 렌더링 하는 포즈 예측이 Windows에서 기대 하는 포즈와 동기화 되지 않아 [홀로그램 안정성이](../platform-capabilities-and-apis/hologram-stability.md)감소 합니다.</span><span class="sxs-lookup"><span data-stu-id="27ca2-125">For example, you should not call HolographicFrame.UpdateCurrentPrediction, or else the pose prediction that Unity renders with that frame will be out of sync with the pose that Windows is expecting, which will reduce [hologram stability](../platform-capabilities-and-apis/hologram-stability.md).</span></span>
+> <span data-ttu-id="118a9-124">HolographicFrameNativeData를 통해 수신 된 네이티브 개체의 상태를 변경 하면 예기치 않은 동작 및 렌더링 아티팩트가 발생할 수 있습니다. 특히 Unity에서 동일한 상태를 갖는 이유가 있을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="118a9-124">Changing the state of the native objects received via HolographicFrameNativeData may cause unpredictable behaviour and rendering artifacts, especially if Unity also reasons about that same state.</span></span>  <span data-ttu-id="118a9-125">예를 들어 HolographicFrame를 호출 하면 안 됩니다. UpdateCurrentPrediction를 호출 하면 안 됩니다. 그렇지 않으면 Unity가 해당 프레임으로 렌더링 하는 포즈 예측이 Windows에서 기대 하는 포즈와 동기화 되지 않아 [홀로그램 안정성이](../platform-capabilities-and-apis/hologram-stability.md)감소 합니다.</span><span class="sxs-lookup"><span data-stu-id="118a9-125">For example, you should not call HolographicFrame.UpdateCurrentPrediction, or else the pose prediction that Unity renders with that frame will be out of sync with the pose that Windows is expecting, which will reduce [hologram stability](../platform-capabilities-and-apis/hologram-stability.md).</span></span>
 
-<span data-ttu-id="27ca2-126">렌더링 또는 디버깅을 위해 네이티브 인터페이스에 액세스 해야 하는 경우 네이티브 플러그 인 또는 c # 코드에서 HolographicFrameNativeData의 데이터를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="27ca2-126">If you need access to native interfaces for rendering or debugging purposes, use data from HolographicFrameNativeData in your native plugins or C# code.</span></span> 
+<span data-ttu-id="118a9-126">렌더링 또는 디버깅을 위해 네이티브 인터페이스에 액세스 해야 하는 경우 네이티브 플러그 인 또는 c # 코드에서 HolographicFrameNativeData의 데이터를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="118a9-126">If you need access to native interfaces for rendering or debugging purposes, use data from HolographicFrameNativeData in your native plugins or C# code.</span></span> 
 
-<span data-ttu-id="27ca2-127">HolographicFrameNativeData를 사용 하 여 photon time에 대 한 현재 프레임의 예측을 가져오는 방법의 예는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="27ca2-127">Here's an example of how you can use HolographicFrameNativeData to get the current frame's prediction for photon time.</span></span> 
+<span data-ttu-id="118a9-127">HolographicFrameNativeData를 사용 하 여 photon time에 대 한 현재 프레임의 예측을 가져오는 방법의 예는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="118a9-127">Here's an example of how you can use HolographicFrameNativeData to get the current frame's prediction for photon time.</span></span> 
 
 ```cs
 using System;
@@ -129,9 +129,10 @@ public static bool GetCurrentFrameDateTime(out DateTime frameDateTime)
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="27ca2-128">참고 항목</span><span class="sxs-lookup"><span data-stu-id="27ca2-128">See Also</span></span>
-* [<span data-ttu-id="27ca2-129">HoloLens용 Unity 앱에서 Windows 네임스페이스 사용</span><span class="sxs-lookup"><span data-stu-id="27ca2-129">Using the Windows namespace with Unity apps for HoloLens</span></span>](using-the-windows-namespace-with-unity-apps-for-hololens.md)
-* <span data-ttu-id="27ca2-130"><a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a></span><span class="sxs-lookup"><span data-stu-id="27ca2-130"><a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a></span></span>
-* <span data-ttu-id="27ca2-131"><a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a></span><span class="sxs-lookup"><span data-stu-id="27ca2-131"><a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a></span></span>
-* <span data-ttu-id="27ca2-132"><a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a></span><span class="sxs-lookup"><span data-stu-id="27ca2-132"><a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a></span></span>
-* [<span data-ttu-id="27ca2-133">DirectX의 렌더링</span><span class="sxs-lookup"><span data-stu-id="27ca2-133">Rendering in DirectX</span></span>](../native/rendering-in-directx.md)
+## <a name="see-also"></a><span data-ttu-id="118a9-128">참고 항목</span><span class="sxs-lookup"><span data-stu-id="118a9-128">See Also</span></span>
+
+* [<span data-ttu-id="118a9-129">HoloLens용 Unity 앱에서 Windows 네임스페이스 사용</span><span class="sxs-lookup"><span data-stu-id="118a9-129">Using the Windows namespace with Unity apps for HoloLens</span></span>](using-the-windows-namespace-with-unity-apps-for-hololens.md)
+* <span data-ttu-id="118a9-130"><a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a></span><span class="sxs-lookup"><span data-stu-id="118a9-130"><a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a></span></span>
+* <span data-ttu-id="118a9-131"><a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a></span><span class="sxs-lookup"><span data-stu-id="118a9-131"><a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a></span></span>
+* <span data-ttu-id="118a9-132"><a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a></span><span class="sxs-lookup"><span data-stu-id="118a9-132"><a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a></span></span>
+* [<span data-ttu-id="118a9-133">DirectX의 렌더링</span><span class="sxs-lookup"><span data-stu-id="118a9-133">Rendering in DirectX</span></span>](../native/rendering-in-directx.md)
