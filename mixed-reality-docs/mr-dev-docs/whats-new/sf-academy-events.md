@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: 이벤트, 일정, 아카데미, 일정, sf, 샌프란시스코, 원자로
-ms.openlocfilehash: ce0fb818547af70252e7387a910207e333407363
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a7d592243f758415c0ca757f35567d80fbfc1f2f
+ms.sourcegitcommit: 44d0f2873c75003caf9d8d244ceaeb3faa89df63
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010003"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110441"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Microsoft Mixed Reality 이벤트
 
@@ -19,7 +19,7 @@ ms.locfileid: "98010003"
 
 <br>
 
-|이벤트|Date|테마|
+|이벤트|날짜|테마|
 |-------------|-------------|-----|
 | 혼합 현실 스피커 시리즈|2020년 4월 23일|[웹 확대](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Augmenting-WebXR-Standards)|
 | 혼합 현실 스피커 시리즈|6 월 22 일, 2020|[MR을 사용 하 여 교육 환경 만들기](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Educational-Experiences-in-MR)|
@@ -31,4 +31,4 @@ ms.locfileid: "98010003"
 | 혼합 현실 스피커 시리즈|2020년 9월 22일|[Kippy의 이스케이프: HoloLens의 Unreal & MRTK 2 소개]()|
 | 혼합 현실 스피커 시리즈|2020 년 10 월 22 일|[BabylonJS를 사용 하는 WebXR 소개](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
 | 혼합 현실 스피커 시리즈|2020년 11월 17일|[미래 빌드: MRTK의 새로운 요소](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
-| 혼합 현실 스피커 시리즈|2020년 12월 1일|[Holograms 디자인]()|
+| 혼합 현실 스피커 시리즈|2020년 12월 1일|[Holograms 디자인](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Making-of-Designing-Holograms)|
