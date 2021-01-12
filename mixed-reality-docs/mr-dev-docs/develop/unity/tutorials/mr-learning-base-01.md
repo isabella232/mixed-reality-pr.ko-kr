@@ -1,5 +1,5 @@
 ---
-title: MRTK 자습서 - 1. MRTK 자습서 소개
+title: MRTK 자습서 소개
 description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 처음부터 혼합 현실 애플리케이션을 만드는 방법을 보여줍니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, solvers, 시선 추적, 음성 명령
 ms.localizationpriority: high
-ms.openlocfilehash: 25a19d24a027000c78d6bffe2c74eb9f9d91370c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 27a5f2cae4f08fbc142c8b872c22d23ab41cdc62
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613207"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008083"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1. MRTK 자습서 소개
-
-## <a name="overview"></a>개요
 
 초보자를 위한 자습서 시리즈를 시작합니다. 이러한 자습서의 과정을 통해 MRTK(Mixed Reality Toolkit) 및 제공해야 하는 기능 중 일부에 대해 알아봅니다. 또한 사용자가 NASA의 Mars Curiosity Rover 이후에 모델링된 홀로그램을 탐색할 수 있는 혼합 현실 환경을 구축합니다. 이 시리즈의 끝 부분에서는 MRTK를 이해하고 개발 프로세스의 속도를 높이는 방법을 배웁니다.
 

@@ -1,5 +1,5 @@
 ---
-title: 다중 사용자 기능 자습서 - 5. 공유 환경에 Azure Spatial Anchors 통합
+title: 공유 환경에 Azure Spatial Anchors 통합
 description: 이 과정을 완료하여 Azure Spatial Anchors를 사용하여 공유된 다중 사용자 HoloLens 2 애플리케이션에서 개체를 고정하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: ec24a8dcdc8708e61184056df6d282f4496cb453
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 665979d860a2507fbf6cc9b962f5449c7d7d12f2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678252"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010133"
 ---
 # <a name="5-integrating-azure-spatial-anchors-into-a-shared-experience"></a>5. 공유 환경에 Azure Spatial Anchors 통합
 

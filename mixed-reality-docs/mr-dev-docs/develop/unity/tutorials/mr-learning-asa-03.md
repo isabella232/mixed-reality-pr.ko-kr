@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchors 자습서 - 3. Azure Spatial Anchors 저장, 검색 및 공유
+title: Azure Spatial Anchors 저장, 검색 및 공유
 description: 이 과정을 완료하여 혼합 현실 애플리케이션에서 Azure Spatial Anchors를 저장, 검색, 공유하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, 앱 세션
 ms.localizationpriority: high
-ms.openlocfilehash: c085aecef1ce32565d2f3bbbf1d5fdb2da91c217
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: abe0c8bc70469826e25f7016a3cc1ba971c1fcc1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679412"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008363"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3. Azure Spatial Anchors 저장, 검색 및 공유
 

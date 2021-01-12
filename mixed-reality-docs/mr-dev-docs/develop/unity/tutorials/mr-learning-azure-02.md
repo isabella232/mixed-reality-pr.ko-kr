@@ -1,5 +1,5 @@
 ---
-title: Azure 클라우드 자습서 - 2. Azure Storage 통합
+title: Azure Storage 통합
 description: 이 과정을 완료하여 HoloLens 2 애플리케이션 내에서 Azure Table Storage 및 Azure Blob Storage를 구현하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, hololens 2, azure storage, azure cloud services, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: f13014757c4a3d6f9a6f3ffd53ef6aaf19334e2f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a948e035a467588091a2b5e16a3e2632ab3049d3
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679372"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008203"
 ---
 # <a name="2-integrating-azure-storage"></a>2. Azure Storage 통합
 

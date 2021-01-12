@@ -1,5 +1,5 @@
 ---
-title: MRTK 자습서 - 2. 프로젝트 초기화 및 첫 번째 애플리케이션 배포
+title: 프로젝트 초기화 및 첫 번째 애플리케이션 배포
 description: 이 과정에서는 MRTK(Mixed Reality Toolkit)에 대해 Unity 프로젝트를 구성하는 방법과 HoloLens 2에 배포하는 방법을 보여 줍니다.
 author: jessemcculloch
 ms.author: v-vtieto
@@ -7,16 +7,14 @@ ms.date: 12/30/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: ebf81b9b1ae1abb5001b88e0f2b2929c45c22d7f
-ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
+ms.openlocfilehash: 2ce119e1dd18eacf02088d00e99fb70d06bf956e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859532"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008223"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. 프로젝트 초기화 및 첫 번째 애플리케이션 배포
-
-## <a name="overview"></a>개요
 
 이 자습서에서는 새 Unity 프로젝트를 만들어서 <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">MRTK(Mixed Reality Toolkit)</a> 개발에 맞게 구성하고, MRTK를 가져오는 방법을 알아봅니다. 기본 Unity 장면을 Visual Studio에서 HoloLens 2로 구성, 빌드 및 배포하는 과정도 안내합니다. HoloLens 2가 배포되면 HoloLens에서 인식한 표면을 포함하는 공간 매핑 메시가 표시됩니다. 또한 손 추적을 위해 손 및 손가락에 표시기가 나타나며, 앱 성능을 계속 확인하기 위한 프레임 속도 카운터가 표시됩니다.
 

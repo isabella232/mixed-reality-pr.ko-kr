@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchors 자습서 - 1. Azure Spatial Anchors 자습서 소개
+title: Azure Spatial Anchors 자습서 소개
 description: 이 과정을 완료하여 혼합 현실 애플리케이션에서 Azure Spatial Anchors를 구현하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, ios, android, Windows 10, ARCore, macOS, Android 빌드 지원, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 005bbf3f9ecb7ed7f15f78d4042b4090f00edca7
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6ac412913f8d475d213a26cb4f9f82e12d129b82
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679402"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008403"
 ---
 # <a name="1-introduction-to-the-azure-spatial-anchors-tutorials"></a>1. Azure Spatial Anchors 자습서 소개
-
-## <a name="overview"></a>개요
 
 Azure Spatial Anchors 자습서를 시작합니다. 이 자습서 시리즈를 통해 <a href="https://azure.microsoft.com/services/spatial-anchors" target="_blank">Azure Spatial Anchors</a>(ASA)의 기본 사항과 실제 환경에서 완벽하게 혼합된 현실 경험을 고정하는 방법을 알아봅니다. Android 및 iOS에 프로젝트를 배포하는 방법에 대해서도 알아봅니다.
 

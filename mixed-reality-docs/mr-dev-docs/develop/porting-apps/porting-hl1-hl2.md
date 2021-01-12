@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 테스트, MRTK, MRTK 버전 2, HoloLens 2, unity, 포팅, HoloLens 1세대, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 마이그레이션, 모범 사례, ARM
-ms.openlocfilehash: ddff4ddff70211a5af38e367e863f81fd5f0c82d
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: c55eb47c7fa8e87fd1fe96fd3b81f3cd3a3ee5a0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612887"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009913"
 ---
 # <a name="porting-hololens-1st-gen-apps-to-hololens-2"></a>HoloLens(1세대) 앱을 HoloLens 2로 포팅
 

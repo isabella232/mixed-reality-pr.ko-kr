@@ -1,5 +1,5 @@
 ---
-title: 다중 사용자 기능 자습서 - 1. 다중 사용자 기능 자습서 소개
+title: 다중 사용자 기능 자습서 소개
 description: 이 과정을 완료하여 HoloLens 2 애플리케이션에서 공유된 다중 사용자 환경을 구현하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 9bcaed777b8b98d95065324fc1fb5b33a1923e63
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 1000b4d2637e3a0f3bbc79df9866577427674767
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679742"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007223"
 ---
 # <a name="1-introduction-to-the-multi-user-capabilities-tutorials"></a>1. 다중 사용자 기능 자습서 소개
-
-## <a name="overview"></a>개요
 
 다중 사용자 기능 자습서를 시작합니다. 이 자습서 시리즈를 통해 <a href="https://www.photonengine.com/PUN" target="_blank">Photon Unity 네트워킹</a>(PUN)을 사용하여 다중 사용자 환경을 구축하는 기본 사항을 배우게 됩니다. PUN은 혼합 현실 개발자가 공유 환경을 만드는 데 사용할 수 있는 몇 가지 네트워킹 옵션 중 하나입니다.
 

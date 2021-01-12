@@ -1,5 +1,5 @@
 ---
-title: MRTK 자습서 - 5. Solver를 사용하여 동적 콘텐츠 만들기
+title: Solver를 사용하여 동적 콘텐츠 만들기
 description: 이 과정에서는 MRTK(Mixed Reality Toolkit) Solver를 사용하여 동적 콘텐츠를 만드는 방법을 보여 줍니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, solvers
 ms.localizationpriority: high
-ms.openlocfilehash: 533aa1c9f2b0b7620e23d611714552fb19a5357b
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 959ed164e566f5bee3db203437145fa08ce168d8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613507"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008023"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Solver를 사용하여 동적 콘텐츠 만들기
-
-## <a name="overview"></a>개요
 
 이 자습서에서는 복잡한 공간 배치 시나리오를 해결하기 위해 MRTK의 사용 가능한 배치 도구인 Solver를 사용하여 홀로그램을 동적으로 배치하는 방법을 살펴봅니다. MRTK의 Solver는 개체가 사용자 또는 장면의 기타 게임 개체를 따르도록 만드는 데 사용되는 스크립트 및 동작 시스템입니다. 또한 특정 위치에 맞춰서 앱을 보다 직관적으로 만들 수도 있습니다.
 

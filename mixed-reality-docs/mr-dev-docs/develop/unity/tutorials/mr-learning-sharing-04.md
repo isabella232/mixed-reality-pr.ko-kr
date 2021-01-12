@@ -1,5 +1,5 @@
 ---
-title: 다중 사용자 기능 자습서 - 4. 여러 사용자와 개체 움직임 공유
+title: 여러 사용자와 개체 움직임 공유
 description: 이 과정을 완료하여 HoloLens 2 애플리케이션에서 개체 이동을 여러 사용자와 공유하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 717bd1a259c8e21058023a7c45c3ee34783fec4a
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 872f33c3675f67d8afe47b0006aeff731751a7e4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679232"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007173"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4. 여러 사용자와 개체 움직임 공유
 
