@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: mrc, 사진, 비디오, 캡처, 카메라
-ms.openlocfilehash: e55100003859e3581bdd7f6e1da312e1fdd8cf57
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 40d621133d8aa4c7a58488b80a04ca3b4b46638d
+ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009943"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98108866"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>개발자를 위한 혼합 현실 캡처
 
@@ -254,37 +254,55 @@ MRC 오디오 효과 (**MixedRealityCapture. MixedRealityCaptureAudioEffect**)
 
 ### <a name="simultaneous-mrc-limitations"></a>동시 MRC 제한 사항
 
-MRC에 동시에 액세스 하는 여러 앱에 대 한 특정 제한 사항이 있습니다.
+여러 앱에서 MRC에 동시에 액세스 하는 경우 특정 제한 사항을 알고 있어야 합니다.
 
 #### <a name="photovideo-camera-access"></a>사진/비디오 카메라 액세스
 
-Photo/video 카메라는 동시에 액세스할 수 있는 프로세스의 수로 제한 됩니다. 프로세스가 비디오를 기록 하거나 사진을 촬영 하는 동안 다른 모든 프로세스는 사진/비디오 카메라를 획득 하지 못합니다. (혼합 현실 캡처와 표준 사진/비디오 캡처 모두에 적용 됨)
+HoloLens 1에서는 프로세스가 비디오를 기록 하거나 사진을 촬영 하는 동안 MRC가 사진을 캡처하거나 비디오를 캡처할 수 없습니다. 그 반대의 경우도 마찬가지입니다. MRC가 실행 중인 경우 응용 프로그램이 카메라에 액세스 하지 못합니다. 
 
-HoloLens 2를 사용 하는 경우 앱은 MediaCaptureInitializationSettings [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) 속성을 사용 하 여 photo/video 카메라를 독점적으로 제어할 필요가 없는 경우 sharedreadonly를 실행 하도록 지정할 수 있습니다. 캡처의 해상도와 프레임 속도는 카메라에서 제공 하도록 구성 된 다른 앱으로 제한 됩니다.
+HoloLens 2를 사용 하 여 카메라에 대 한 액세스를 공유할 수 있습니다. 해상도 또는 프레임 속도로 직접 제어 하지 않아도 되는 경우 Sharedmode를 사용 하는 [Sharedmode 속성](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) 을 사용 하 여 MediaCapture를 초기화할 수 있습니다.  
 
 ##### <a name="built-in-mrc-photovideo-camera-access"></a>기본 제공 MRC 사진/비디오 카메라 액세스
 
 Windows 10에 기본 제공 되는 MRC 기능 (Cortana, 시작 메뉴, 하드웨어 바로 가기, Miracast, Windows 장치 포털을 통해):
+
 * 기본적으로 ExclusiveControl를 사용 하 여 실행 됩니다.
 
-그러나 공유 모드에서 작동 하도록 각 하위 시스템에 대 한 지원이 추가 되었습니다.
-* 앱이 photo/video 카메라에 대 한 ExclusiveControl 액세스를 요청 하는 경우 기본 제공 MRC는 앱의 요청이 성공 하도록 photo/video 카메라를 사용 하 여 자동으로 중지 됩니다.
-* 앱이 ExclusiveControl 된 상태에서 기본 제공 MRC를 시작 하면 기본 제공 MRC가 SharedReadOnly 모드에서 실행 됩니다.
+그러나 공유 모드에서 작동 하도록 MRC 하위 시스템에 대 한 지원이 추가 되었습니다. 
+
+* 앱이 photo/video 카메라에 대 한 ExclusiveControl 액세스를 요청 하는 경우 기본 제공 MRC는 앱의 요청이 성공 하도록 photo/video 카메라를 사용 하 여 자동으로 중지 됩니다. 
+* 앱이 ExclusiveControl 된 상태에서 기본 제공 MRC를 시작 하면 기본 제공 MRC가 SharedReadOnly 모드에서 실행 됩니다. 
 
 이 공유 모드 기능에는 다음과 같은 제한 사항이 있습니다.
+
 * Cortana, 하드웨어 바로 가기 또는 시작 메뉴를 통한 사진: Windows 10 4 월 2018 업데이트 (이상)가 필요 합니다.
 * Cortana, 하드웨어 바로 가기 또는 시작 메뉴를 통한 비디오: Windows 10 4 월 2018 업데이트 (이상) 필요
 * Miracast를 통한 MRC 스트리밍: Windows 10 10 월 2018 업데이트 (이상)가 필요 합니다.
 * Windows 장치 포털을 통해 또는 HoloLens 도우미 앱을 통해 MRC 스트리밍: HoloLens 2 필요
 
 >[!NOTE]
-> 다른 앱에서 photo/video 카메라를 사용 하는 경우 기본 제공 MRC 카메라 UI의 해상도와 프레임 속도가 일반 값에서 감소할 수 있습니다.
+> 다른 앱에서 photo/video 카메라를 사용 하는 경우 기본 제공 MRC 카메라 UI의 해상도 및 프레임 비율이 일반 값에서 감소할 수 있습니다.
 
-#### <a name="mrc-access"></a>MRC 액세스
+#### <a name="mrc-access-for-developers"></a>개발자를 위한 MRC 액세스
 
-Windows 10 4 월 2018 업데이트를 사용 하면 MRC 스트림에 액세스 하는 여러 앱에 대해 더 이상 제한이 없습니다 (그러나 사진/비디오 카메라에 대 한 액세스에는 여전히 제한이 있음).
+MRC를 사용 하는 경우 항상 카메라에 대 한 단독 제어를 요청 하는 것이 좋습니다. 이렇게 하면 위에 나열 된 제한 사항을 알고 있는 한 응용 프로그램이 카메라의 설정에 대 한 모든 권한을 가집니다. 
 
-Windows 10 4 월 2018 업데이트 이전에는 앱의 사용자 지정 MRC 레코더를 시스템 MRC와 함께 사용할 수 없습니다 (사진 캡처, 비디오 캡처 또는 Windows 장치 포털에서 스트리밍).
+* [초기화 설정을](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings?view=winrt-19041) 사용 하 여 미디어 캡처 개체 만들기
+* [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) 속성을 **exclusive** 로 설정 합니다.
+
+> [!CAUTION]
+> 계속 하기 전에 [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#remarks) 주의 사항을 주의 깊게 읽어야 합니다.
+
+* 원하는 방식으로 카메라 설정
+* 앱을 시작 하 고, 시작 API로 비디오 프레임을 캡처한 다음, MRC를 사용 하도록 설정 합니다.
+
+> [!CAUTION]
+> 앱을 시작 하기 전에 MRC를 시작 하면 기능이 예상 대로 작동 하는 것을 보장할 수 없습니다.
+
+[Holographic face 추적 샘플](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicfacetracking)에서 위의 프로세스에 대 한 전체 샘플을 찾을 수 있습니다.
+
+> [!NOTE]
+> Windows 10 4 월 2018 업데이트 전에 앱의 사용자 지정 MRC 레코더는 시스템 MRC와 함께 사용할 수 없습니다 (사진 캡처, 비디오 캡처 또는 Windows 장치 포털에서 스트리밍).
 
 ## <a name="see-also"></a>참조
 
