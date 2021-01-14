@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 소프트웨어 구성 요소, 릴리스 기록, 릴리스 정보, 버전 기록
 appliesto:
 - Windows 10
-ms.openlocfilehash: b06bd835f1e2562e01bfb7bf240747919f422e8c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 763814e7ab81feeb22c4cbe4f5daf02d62db38fa
+ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009253"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98166758"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>혼합 현실 소프트웨어 개요 및 릴리스 기록
 
@@ -167,6 +167,7 @@ Windows 10 버전 1809 이상에서 [혼합 현실 포털](https://www.microsoft
 
    | 버전            | 출시 날짜          | 주요 변경 내용                                                 |
    |--------------------|-----------------------|---------------------------------------------------------------|
+   | 2000.20111.1381.0  | 2020 년 12 월 10 일        | <ul><li>혼합 현실 포털의 방문 페이지를 업데이트 합니다.</li><li>펌웨어를 업데이트 하는 동안 헤드셋 연결 오류가 줄어듭니다. </li></ul>  |    | 2000.20071.1133.0  | 2020년 8월 5일        | <ul><li>[OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) 을 지원 하 여 미리 보기 창을 일시 중지 합니다.</li></ul>  | 
    | 2000.20071.1133.0  | 2020년 8월 5일        | <ul><li>[OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) 을 지원 하 여 미리 보기 창을 일시 중지 합니다.</li></ul>  | 
    | 2000.20041.1212.0  | 2020년 5월 11일          | <ul><li>일치 하지 않는 15-5 오류가 발생 한 타이밍 문제를 해결 합니다.</li><li>인터넷에 연결 되지 않은 Windows Mixed Reality 실행에 대 한 지원 향상.</li><li>**설치 컨트롤러** 를 통해 동작 컨트롤러를 페어링 하는 기능이 향상 되었습니다.</li></ul>  | 
    | 2000.20031.1202.0  | 2020년 4월 14일        | <ul><li>Windows Mixed Reality 정보, 팁 및 제안에 대 한 등록 지원.</li></ul>  | 
