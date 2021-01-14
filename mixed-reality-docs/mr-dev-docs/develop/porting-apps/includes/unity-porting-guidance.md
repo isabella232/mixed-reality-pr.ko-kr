@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 487118403c2a8af1a6b54bc9aa9245fbe9d0568a
-ms.sourcegitcommit: bec6029b2780c54cc04a45ef7ae5df3f5b4727c1
+ms.openlocfilehash: 0ef22142ac2efc3ef47ece2619d31dbeddcff8fe
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96477278"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192668"
 ---
 # <a name="project-settings"></a>[프로젝트 설정](#tab/project)
 
@@ -120,7 +120,7 @@ Unity의 일반 입력의 두 방법 중 하나를 사용 하 여 입력 논리�
 
 Unity는 현재 일반 입력을 사용 합니다. GetButton/Input. Getbutton Api를 사용 하 여 [Oculus sdk](https://docs.unity3d.com/Manual/OculusControllers.html) 및 [openvr sdk](https://docs.unity3d.com/Manual/OpenVRControllers.html)의 입력을 노출 합니다. 앱이 입력에 이러한 Api를 이미 사용 하 고 있는 경우 Windows Mixed Reality에서 동작 컨트롤러를 지원 하기에 가장 쉬운 경로입니다. 입력 관리자에서 단추와 축을 다시 매핑해야 합니다.
 
-자세한 내용은 [unity 단추/축 매핑 표](../../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) 및 [일반적인 unity api 개요](../../unity/gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis)를 참조 하세요.
+자세한 내용은 [unity 단추/축 매핑 표](../../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) 및 [일반적인 unity api 개요](../../unity/motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis)를 참조 하세요.
 
 ## <a name="windows-specific-xrwsainput-apis"></a>Windows 관련 XR. WSA. 입력 Api
 
@@ -132,7 +132,7 @@ Unity는 현재 일반 입력을 사용 합니다. GetButton/Input. Getbutton Ap
 > [!NOTE]
 > HP 반향 G2 컨트롤러를 사용 하는 경우 InteractionSource를 제외 하 고 모든 입력 Api는 계속 작동 합니다 **. supportsTouchpad** 는 터치 패드 데이터 없이 false를 반환 합니다.
 
-자세한 내용은 [UnityEngine. XR api 개요](../../unity/gestures-and-motion-controllers-in-unity.md#windows-specific-apis-xrwsainput)를 참조 하세요.
+자세한 내용은 [UnityEngine. XR api 개요](../../unity/motion-controllers-in-unity.md#windows-specific-apis-xrwsainput)를 참조 하세요.
 
 ## <a name="grip-pose-vs-pointing-pose"></a>그립 포즈 및 포인팅 포즈
 

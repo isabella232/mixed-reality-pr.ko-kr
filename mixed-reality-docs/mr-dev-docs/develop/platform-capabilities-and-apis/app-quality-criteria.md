@@ -6,12 +6,12 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 앱 품질 기준, 혼합 현실, 혼합 현실 앱, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 788a2e8ac1a364f8c33e3895992fd99fa220a26a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 8037b573f50ef1f1137a6c50913990fadf40e92e
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530284"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192681"
 ---
 # <a name="app-quality-criteria"></a>앱 품질 기준
 
@@ -66,7 +66,7 @@ ms.locfileid: "97530284"
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>문서
+#### <a name="documentation"></a>설명서
 
 * [혼합 현실 성능 이해](understanding-performance-for-mixed-reality.md)
 * [홀로그램 안정성 및 프레임 속도](hologram-stability.md#frame-rate)
@@ -134,7 +134,7 @@ ms.locfileid: "97530284"
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>문서
+#### <a name="documentation"></a>설명서
 
 * [홀로그램 안정성 및 프레임 속도](hologram-stability.md#frame-rate)
 * [사례 연구, 안정화 평면 사용](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
@@ -192,7 +192,7 @@ ms.locfileid: "97530284"
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>문서
+#### <a name="documentation"></a>설명서
 
 * [공간 매핑 배치](../../design/spatial-mapping.md#placement)
 * [대화방 스캔 프로세스](../../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
@@ -357,7 +357,7 @@ Windows Mixed Reality에서 오디오 엔진은 방향, 거리 및 환경 시뮬
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>문서
+#### <a name="documentation"></a>설명서
 
 * [공간 음향](../../design/spatial-sound.md)
 * [공간 음향 디자인](../../design/spatial-sound-design.md)
@@ -414,7 +414,7 @@ Windows Mixed Reality에서 오디오 엔진은 방향, 거리 및 환경 시뮬
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>문서
+#### <a name="documentation"></a>설명서
 
 * [홀로그램 프레임](../../design/holographic-frame.md)
 * [사례 연구, HoloStudio UI 및 상호 작용 디자인 학습](../../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md?#problem-2-modal-dialogs-are-sometimes-out-of-the-holographic-frame)
@@ -476,7 +476,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>문서
+#### <a name="documentation"></a>설명서
 
 * [상호 작용 디자인](../../discover/hologram.md)
 * [색, 광원 및 재질](../../color,-light-and-materials.md)
@@ -533,7 +533,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>문서
+#### <a name="documentation"></a>설명서
 
 * [Instinctual 상호 작용](../../design/interaction-fundamentals.md)
 * [Interactable 개체](../../design/interactable-object.md)
@@ -545,7 +545,8 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
 * [Unity 입력 포팅 가이드](../porting-apps/input-porting-guide-for-unity.md)
 * [Unity의 키보드 입력](../unity/keyboard-input-in-unity.md)
 * [Unity의 응시](../unity/gaze-in-unity.md)
-* [Unity의 제스처 및 모션 컨트롤러](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Unity의 동작 컨트롤러](../unity/motion-controllers-in-unity.md)
+* [Unity의 제스처](../unity/gestures-in-unity.md)
 * [Unity의 음성 입력](../unity/voice-input-in-unity.md)
 * [DirectX의 키보드, 마우스 및 컨트롤러 입력](../../keyboard,-mouse,-and-controller-input-in-directx.md)
 * [DirectX의 헤드 및 눈 응시](../native/gaze-in-directx.md)
@@ -603,7 +604,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>문서
+#### <a name="documentation"></a>설명서
 
 * [상호 작용 가능한 개체](../../design/interactable-object.md)
 * [Unity의 텍스트](../unity/text-in-unity.md)
@@ -658,7 +659,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
 
 ### <a name="resources"></a>리소스
 
-#### <a name="documentation"></a>문서
+#### <a name="documentation"></a>설명서
 
 * [실내 스캔 시각화](../../design/room-scan-visualization.md)
 * [사례 연구: HoloLens의 공간 매핑 기능 확장](../../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)

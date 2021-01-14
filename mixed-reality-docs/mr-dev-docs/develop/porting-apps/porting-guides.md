@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 포트, unity, unreal, 미들웨어, engine, UWP, Win32, 포팅, HoloLens 1 gen, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 마이그레이션, Windows 10, 입력 매핑
-ms.openlocfilehash: f1cb7cd96ee1d6e32c9ef1f8d3e0e1b2654e0a79
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b43b42567183ef77ef76b301212233eeeb7c04ca
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009873"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192669"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>VR 앱을 Windows Mixed Reality로 포팅
 
@@ -56,12 +56,12 @@ Windows Mixed Reality 플랫폼은 아직 개발 중입니다. Windows 참가자
 > [!IMPORTANT]
 > HP 반향 G2 컨트롤러를 사용 하는 경우 추가 입력 매핑 지침은 [이 문서](../unreal/unreal-reverb-g2-controllers.md) 를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [Windows Mixed Reality 최소 PC 하드웨어 호환성 지침](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [혼합 현실 성능 이해](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Unity에 대 한 성능 권장 사항](../unity/performance-recommendations-for-unity.md)
 * [모션 컨트롤러](../../design/motion-controllers.md)
-* [Unity의 제스처 및 모션 컨트롤러](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Unity의 동작 컨트롤러](../unity/motion-controllers-in-unity.md)
 * [UnityEngine. XR](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [UnityEngine. XR 추적](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
 * [포팅 가이드](porting-guides.md)

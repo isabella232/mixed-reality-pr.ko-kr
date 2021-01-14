@@ -5,13 +5,13 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 6dof 컨트롤러, 동작 컨트롤러, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 스크롤, 그립, 상태
-ms.openlocfilehash: 2dbe0ab0b83b371a88e419e7b223f30670bfeaea
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: 6dof 컨트롤러, 동작 컨트롤러, 페어링, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 스크롤, 그립, 상태
+ms.openlocfilehash: 94a9292b3a765131ae197fd9f91c27a52a463eef
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009713"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192621"
 ---
 # <a name="motion-controllers"></a>모션 컨트롤러
 
@@ -71,7 +71,7 @@ Windows Mixed Reality 동작 컨트롤러는 몰입 형 헤드셋의 센서를 �
 
 ## <a name="setup"></a>설치 프로그램
 
-### <a name="before-you-begin"></a>시작하기 전 주의 사항
+### <a name="before-you-begin"></a>시작하기 전에
 
 **다음이 필요합니다:**
 * 두 개의 동작 컨트롤러 집합입니다.
@@ -203,9 +203,9 @@ Windows Mixed Reality는 다양 한 폼 팩터에서 동작 컨트롤러를 지�
 <tr>
 <th> 상태 추적 </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>높은 정확도</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> 높은 </td><td style="background-color: green; color: white"> true</td>
+<td> <b>높은 정확도</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> 높음 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>높은 정확도 (손실 위험)</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: green; color: white"> 높은 </td><td style="background-color: green; color: white"> true</td>
+<td> <b>높은 정확도 (손실 위험)</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: green; color: white"> 높음 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>대략적인 정확도</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: orange"> 근사치 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -239,7 +239,7 @@ Windows Mixed Reality는 다양 한 폼 팩터에서 동작 컨트롤러를 지�
 
 모델의 원점은 실제 세계의이 지점에 맞춰 정렬 되므로 컨트롤러의 **그립 포즈** 에서 모든 렌더링할 모델을 렌더링 하는 것이 좋습니다. 컨트롤러 모델을 렌더링 하는 경우에는 해당 컨트롤러의 물리적 디자인을 고려 하 여 사용자가 의도적으로 가리키는 광선을 나타내는 **포인터 포즈** 에서 장면으로의 장면을 raycast 수 있습니다.
 
-Unity에서 동적으로 컨트롤러 모델을 로드 하는 방법에 대 한 자세한 내용은 [unity에서 동작 컨트롤러 모델 렌더링](../develop/unity/gestures-and-motion-controllers-in-unity.md#rendering-the-motion-controller-model-in-unity) 섹션을 참조 하세요.
+Unity에서 동적으로 컨트롤러 모델을 로드 하는 방법에 대 한 자세한 내용은 [unity에서 동작 컨트롤러 모델 렌더링](../develop/unity/gestures-in-unity.md#rendering-the-motion-controller-model-in-unity) 섹션을 참조 하세요.
 
 **2d 컨트롤러 선 아트** 앱 내 컨트롤러 모델 자체에 앱 컨트롤러의 팁과 명령을 연결 하는 것이 좋지만 일부 개발자는 플랫 "자습서" 또는 "방법" UI에서 동작 컨트롤러의 2D 선 아트를 사용할 수 있습니다. 이러한 개발자에 게는 다음의 검은색과 흰색 모두에서 .png 동작 컨트롤러 라인 아트 파일을 사용할 수 있습니다 (저장 하려면 마우스 오른쪽 단추 클릭).
 
@@ -275,9 +275,9 @@ Unity에서 동적으로 컨트롤러 모델을 로드 하는 방법에 대 한 
 
 "혼합 현실-> 입력" 범주를 사용 하 여 피드백 허브에 [피드백을 제공](../give-us-feedback.md) 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-* [Unity의 제스처 및 모션 컨트롤러](../develop/unity/gestures-and-motion-controllers-in-unity.md)
+* [Unity의 동작 컨트롤러](../develop/unity/motion-controllers-in-unity.md)
 * [DirectX의 헤드 및 모션 컨트롤러](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [제스처](gaze-and-commit.md#composite-gestures)
 * [열성적인 's Guide: Windows Mixed Reality 홈](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)

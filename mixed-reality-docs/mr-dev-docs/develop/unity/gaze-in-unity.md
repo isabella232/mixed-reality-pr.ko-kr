@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 눈에 응시, 헤드-응시, unity, 홀로그램, 혼합 현실, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 5dab8cb38aaa4b9a4547f4bf494afb093b6d8058
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7efc77eff90a164fdc0476a90912a0f52c9bb33d
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009893"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192641"
 ---
 # <a name="head-gaze-in-unity"></a>헤드-Unity에서의 응시
 
@@ -43,7 +43,7 @@ void Update()
 }
 ```
 
-### <a name="best-practices"></a>모범 사례
+### <a name="best-practices"></a>최선의 구현 방법
 
 위의 예제에서는 업데이트 루프에서 단일 raycast를 실행 하 여 사용자의 헤드가 가리키는 대상을 찾는 반면 단일 개체를 사용 하 여 모든 헤드-응시 프로세스를 관리 하는 것이 좋습니다. 헤드-응시 논리를 결합 하 여 앱의 귀중 한 처리 능력을 절약 하 고, raycasting를 프레임당 하나로 제한 합니다.
 
@@ -59,7 +59,7 @@ MRTK의 [입력 관리자](https://microsoft.github.io/MixedRealityToolkit-Unity
 앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
-> [제스처 및 모션 컨트롤러](gestures-and-motion-controllers-in-unity.md)
+> [모션 컨트롤러](motion-controllers-in-unity.md)
 
 또는 Mixed Reality 플랫폼 기능 및 API로 이동합니다.
 
@@ -68,7 +68,7 @@ MRTK의 [입력 관리자](https://microsoft.github.io/MixedRealityToolkit-Unity
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [카메라](camera-in-unity.md)
 * [커서](../../design/cursors.md)
 * [헤드 게이즈 및 커밋](../../design/gaze-and-commit.md)

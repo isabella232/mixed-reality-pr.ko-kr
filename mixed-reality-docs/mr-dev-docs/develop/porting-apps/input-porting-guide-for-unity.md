@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 입력, unity, 포팅
-ms.openlocfilehash: 97280ff260729bfc2042f7760fa3950e949e27a4
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: d6bef0f10cf1fc20d5067ac77a126bb793385f59
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613267"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192651"
 ---
 # <a name="input-porting-guide-for-unity"></a>Unity 입력 포팅 가이드
 
@@ -21,13 +21,13 @@ ms.locfileid: "97613267"
 
 Unity는 현재 일반 입력을 사용 합니다. GetButton/Input. Getbutton Api를 사용 하 여 [Oculus sdk](https://docs.unity3d.com/Manual/OculusControllers.html) 및 [openvr sdk](https://docs.unity3d.com/Manual/OpenVRControllers.html)의 입력을 노출 합니다. 앱이 입력에 이러한 Api를 이미 사용 하 고 있는 경우에는 입력. GetButton/Input. Getbutton Api는 Windows Mixed Reality에서 동작 컨트롤러를 지원 하기에 가장 쉬운 경로입니다. 입력 관리자에서 단추 및 축만 다시 매핑해야 합니다.
 
-자세한 내용은 [unity 단추/축 매핑 표](../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) 및 [일반적인 unity api 개요](../unity/gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis)를 참조 하세요.
+자세한 내용은 [unity 단추/축 매핑 표](../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) 및 [일반적인 unity api 개요](../unity/motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis)를 참조 하세요.
 
 ## <a name="windows-specific-xrwsainput-apis"></a>Windows 관련 XR. WSA. 입력 Api
 
 앱에서 각 플랫폼에 대 한 사용자 지정 입력 논리를 이미 빌드하는 경우 **XR** 네임 스페이스에서 Windows 관련 공간 입력 api를 사용할 수 있습니다. 여기에서 위치 정확도 나 원본 종류와 같은 추가 정보에 액세스 하 여 HoloLens와 컨트롤러를 따로 지시할 수 있습니다.
 
-자세한 내용은 [UnityEngine. XR api 개요](../unity/gestures-and-motion-controllers-in-unity.md#windows-specific-apis-xrwsainput)를 참조 하세요.
+자세한 내용은 [UnityEngine. XR api 개요](../unity/motion-controllers-in-unity.md#windows-specific-apis-xrwsainput)를 참조 하세요.
 
 ## <a name="grip-pose-vs-pointing-pose"></a>그립 포즈 및 포인팅 포즈
 
@@ -50,7 +50,7 @@ Windows Mixed Reality는 다양 한 폼 팩터에서 동작 컨트롤러를 지�
 
 ## <a name="see-also"></a>참고 항목
 * [동작 컨트롤러](). /.. /design/motion-controllers.md)
-* [Unity의 제스처 및 모션 컨트롤러](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Unity의 동작 컨트롤러](../unity/motion-controllers-in-unity.md)
 * [UnityEngine. XR](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [UnityEngine. XR 추적](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
 * [포팅 가이드](porting-guides.md)

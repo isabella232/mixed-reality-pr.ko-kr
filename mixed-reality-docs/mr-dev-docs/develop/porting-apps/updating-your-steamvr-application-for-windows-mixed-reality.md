@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: SteamVR, Compatibility, 포팅, HoloLens 1 gen, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 마이그레이션, Windows 10, 스트림, 동작 컨트롤러, haptics
-ms.openlocfilehash: 94b6aad63156d752858c6566174ff01e6127d75d
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: c67eed489f626c804583592e496fcfaff5d8c291
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612907"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192631"
 ---
 # <a name="updating-steamvr-apps-for-windows-mixed-reality"></a>Windows Mixed Reality용 SteamVR 앱 업데이트
 
@@ -26,7 +26,7 @@ Windows Mixed Reality에서 게임 또는 앱 테스트를 시작 하려면 먼�
 1. 앱이 컨트롤러 모델을 렌더링 하는 경우:
     * [Windows Mixed Reality 동작 컨트롤러 모델](../../design/motion-controllers.md#rendering-the-motion-controller-model) 사용
     * IVRRenderModel:: GetComponentState를 사용 하 여 구성 요소 부분에 대 한 로컬 변환을 가져옵니다 (예: 포인터 포즈).
-2. 활용 이라는 개념이 있는 환경은 입력 Api에서 컨트롤러를 구별 하기 위해 힌트를 가져와야 합니다 [(Unity 예제)](../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) .
+2. 활용 이라는 개념이 있는 환경은 입력 Api에서 컨트롤러를 구별 하기 위해 힌트를 가져와야 합니다 [(Unity 예제)](../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) .
 
 ## <a name="controls"></a>컨트롤
 
