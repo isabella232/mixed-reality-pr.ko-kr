@@ -1,18 +1,18 @@
 ---
-title: 시작 자습서 - 1. 개요 및 목표
-description: 이 과정에서는 혼합 현실 애플리케이션 내에서 Azure 얼굴 인식을 구현하는 방법을 보여줍니다.
+title: 자습서 개요 및 목표
+description: 이 과정을 완료하여 혼합 현실 애플리케이션 내에서 Azure 얼굴 인식을 구현하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: 혼합 현실, Unity, 자습서, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 777203d0051c22b0f249db7d377ab08f92c089b7
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d767cca4fbb88d0cfdd7c2fdea1a0621523ad236
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701590"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010093"
 ---
 # <a name="1-overview-and-objectives"></a>1. 개요 및 목표
 
@@ -39,7 +39,7 @@ ms.locfileid: "91701590"
     </tr>
 </table>
 
-## <a name="before-you-start"></a>시작하기 전 확인 사항
+## <a name="before-you-start"></a>시작하기 전에
 
 ### <a name="prerequisites"></a>필수 구성 요소
 

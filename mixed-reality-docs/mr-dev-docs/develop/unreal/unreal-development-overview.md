@@ -1,18 +1,18 @@
 ---
 title: Unreal 개발 개요
-description: Unreal Engine 4를 사용하는 혼합 현실 개발의 개요
+description: 큐레이트된 검사점 경험과 함께 Unreal Engine 4를 사용하여 HoloLens 및 VR을 위한 혼합 현실 개발을 시작합니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 스트리밍, 원격, 혼합 현실, 개발, 시작, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, 홀로그램, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, OpenXR
-ms.openlocfilehash: af5883ad71acf919133c330b1da8eb846d3a039f
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 3d9a33ca98734d40a37e24805f28f7f70b6a4ba9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926015"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009763"
 ---
 # <a name="unreal-development-overview"></a>Unreal 개발 개요
 

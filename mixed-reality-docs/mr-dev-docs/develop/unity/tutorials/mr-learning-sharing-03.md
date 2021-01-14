@@ -1,18 +1,18 @@
 ---
-title: 다중 사용자 기능 자습서 - 3. 여러 사용자 연결
-description: 이 과정을 완료하여 HoloLens 2 애플리케이션에서 여러 사용자를 연결하는 방법을 알아봅니다.
+title: 여러 사용자 연결
+description: 이 과정을 완료하여 HoloLens 2 혼합 현실 애플리케이션에서 여러 사용자를 연결하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: c16182fe2363b4682a25d70715f5ee8cb65d5886
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6cc77b32e9479bafeb53dcb99cba4f2f29865fd7
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679762"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007213"
 ---
 # <a name="3-connecting-multiple-users"></a>3. 여러 사용자 연결
 
@@ -112,7 +112,7 @@ Unity 프로젝트를 빌드하고 HoloLens에 배포했으면 Unity로 돌아�
 ![네트워크 사용자를 사용하여 Unity를 보여주는 애니메이션](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
-> Unity 프로젝트를 빌드하고 HoloLens 2에 배포하는 방법은 [HoloLens 2에 앱 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침을 참조하세요.
+> Unity 프로젝트를 빌드하고 HoloLens 2에 배포하는 방법은 [HoloLens 2에 앱 빌드](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) 지침을 참조하세요.
 
 > [!CAUTION]
 > 앱에서 Photon에 연결해야 하므로 컴퓨터/디바이스가 인터넷에 연결되어 있는지 확인합니다.

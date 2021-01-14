@@ -1,18 +1,18 @@
 ---
 title: 손으로 가리키고 커밋
-description: 가리키고 커밋 입력 모델 개요
+description: 혼합 현실 애플리케이션에서 제스처 지원을 위한 포인트 및 커밋 입력 모델의 기본 사항에 대해 알아봅니다.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 상호 작용, 디자인, HoloLens, 손, 원거리, 가리키고 커밋, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 손 광선, 개체 조작, MRTK, Mixed Reality Toolkit, DoF
-ms.openlocfilehash: 13b692dada134f856ac6eed446cca45702030f67
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 4ee1fabac763a22006b956e46a908ff4d11e395f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848287"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009743"
 ---
 # <a name="point-and-commit-with-hands"></a>손으로 가리키고 커밋
 

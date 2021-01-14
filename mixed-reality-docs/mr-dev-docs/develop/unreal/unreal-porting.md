@@ -1,18 +1,18 @@
 ---
 title: Unreal에서 프로젝트 업그레이드
-description: Unreal 프로젝트의 버전 업그레이드 단계 및 사용되지 않는 API에 대한 개요입니다.
+description: Unreal 프로젝트의 버전 업그레이드 단계, API 변경 및 사용 중단을 최신 상태로 유지하세요.
 author: hferrone
 ms.author: jacksonf
 ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 설명서, 가이드, 기능, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 이식, 업그레이드
-ms.openlocfilehash: 5460ab55c887c44029e956545cf6a549f55716f7
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 27fb726bc0ca9c51b4e7b68ad28b76f89312262e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010624"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010053"
 ---
 # <a name="upgrading-projects-in-unreal"></a>Unreal에서 프로젝트 업그레이드
 

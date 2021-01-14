@@ -1,18 +1,18 @@
 ---
-title: Azure Speech Services 자습서 - 4. 의도 및 자연어 이해 설정
-description: 이 과정을 완료하여 혼합 현실 애플리케이션 내에서 Azure Speech SDK를 구현하는 방법을 알아봅니다.
+title: 의도 및 자연어 이해 설정
+description: 이 과정을 완료하여 혼합 현실 애플리케이션에서 의도 및 자연어 이해를 설정하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, 음성 인식, Windows 10, LUIS, LUIS 포털, 의도, 엔터티, 발화, 자연어 이해
 ms.localizationpriority: high
-ms.openlocfilehash: b21637fc0630b6cb024dcdbc0a1985979914d3a0
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 07044d3dc38be12d5d601d34a23a241a71c5b06d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678512"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007773"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4. 의도 및 자연어 이해 설정
 

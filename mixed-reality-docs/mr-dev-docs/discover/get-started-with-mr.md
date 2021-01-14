@@ -1,18 +1,18 @@
 ---
 title: Mixed Reality 시작
-description: 혼합 현실 이론, 개발 및 일반적인 사용 사례의 기본 사항에 대해 알아봅니다.
+description: 개발 추적을 선택하고 혼합 현실 이론, 개발 및 일반적인 사용 사례의 기본 사항에 대해 알아봅니다.
 author: grbury
 ms.author: grbury
 ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 검색, 배포, 인덱스, 방문 페이지, 디자인, 개발, 자습서, 샘플 앱, 기본 사항, 사례 연구, 리소스, HoloLens 방법, 오픈 소스 프로젝트, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: f50457fedb0223317e522c4d86bd56cc02657c77
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 03db5f79a531d77bfd1cd6513c5bed9ad1202189
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757671"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009723"
 ---
 # <a name="get-started-with-mixed-reality"></a>Mixed Reality 시작
 

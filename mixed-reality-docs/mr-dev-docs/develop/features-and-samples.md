@@ -1,18 +1,18 @@
 ---
 title: 샘플 및 기능 앱
-description: HoloLens에 사용할 수 있는 기능 샘플을 살펴보세요.
+description: 사용 가능한 모든 Microsoft 샘플 및 HoloLens용 혼합 현실 기능 앱을 최신 상태로 유지합니다.
 author: hferrone
 ms.author: jemccull
 ms.date: 12/3/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 학습, 샘플, MRTK, 연구 모드, HoloLens 2, qr 코드, WebRTC, 혼합 현실 캡처, 홀로그램 원격 접속, UX 도구
 ms.localizationpriority: high
-ms.openlocfilehash: 2624949dd21b4c8e14ed45f152d41900b5f91faf
-ms.sourcegitcommit: 924f8c1ceb93c378f800cf88d82944cf80f092bc
+ms.openlocfilehash: 3aa0e51a92b909689ff97a07b45900ab65579c59
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96615552"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007613"
 ---
 # <a name="samples-and-feature-apps"></a>샘플 및 기능 앱
 

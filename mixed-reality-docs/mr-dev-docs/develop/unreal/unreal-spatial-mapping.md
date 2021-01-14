@@ -1,18 +1,18 @@
 ---
 title: Unreal의 공간 매핑
-description: Unreal의 공간 매핑 사용 가이드
+description: HoloLens 디바이스에 대한 Unreal 혼합 현실 애플리케이션에서 공간 매핑 및 메시를 사용하는 방법에 대해 알아봅니다.
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 기능, 설명서, 가이드, 홀로그램, 공간 매핑, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 6d70e7f2d32fbf39bc51534661b8224547c36acc
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 3f07acc5bb4ad85084f6eb178fd1c33d94224408
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926043"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009963"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Unreal의 공간 매핑
 

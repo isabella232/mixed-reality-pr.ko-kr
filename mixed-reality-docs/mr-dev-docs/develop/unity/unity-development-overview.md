@@ -1,33 +1,34 @@
 ---
 title: HoloLens용 Unity 개발
-description: Unity 및 HoloLens에서 혼합 현실 앱 빌드를 시작합니다.
+description: 큐레이트된 검사점 경험을 통해 Unity 및 HoloLens에서 혼합 현실 앱 빌드를 시작합니다.
 author: hferrone
 ms.author: kurtie
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 혼합 현실, 개발, 시작, 새 프로젝트, 포팅, 기능, 카메라, 시뮬레이션, 에뮬레이션, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 공간 매핑, 음성 입력, 위치를 찾을 수 있는 카메라, 에뮬레이터, Azure, 자습서
-ms.openlocfilehash: 150d86d1522f3fa71dd9d9a1fe154baef89496e0
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 28ddaeed4218dc3433e13122806a2032e335dd56
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613477"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031989"
 ---
-# <a name="unity-development-for-hololens"></a>HoloLens용 Unity 개발 
+# <a name="unity-development-for-hololens"></a>HoloLens용 Unity 개발
 
 ![Unity 배너 로고](../images/unity_logo_banner.png)
 
 [Unity](https://unity.com)에서 HoloLens [혼합 현실 앱](../../design/app-views.md)을 빌드하는 가장 빠른 경로는 Mixed Reality Toolkit를 사용하는 것입니다. Unity를 처음 접하는 경우 계속하기 전에 Unity 학습 플랫폼에서 초보자 수준 [자습서](https://unity3d.com/learn/tutorials)를 살펴보는 것이 좋습니다. 또한 포괄적인 [Asset Store](https://www.assetstore.unity3d.com/) 및 [Unity 혼합 현실 포럼](https://forum.unity3d.com/forums/hololens.102/)을 방문하여 혼합 현실 앱을 빌드하는 온라인 커뮤니티에 참여하는 것도 좋습니다. 거친 세계에서는 어떤 멋진 자산 또는 솔루션을 찾을 수 있는지 전혀 알 수 없습니다. MRTK를 시작할 준비가 되면 아래 개발 검사점으로 이동하세요!
 
 > [!IMPORTANT]
-> HoloLens 2로 가져오려는 기존 Unity 프로젝트가 있는 경우 **[포트 가이드](../porting-apps/porting-overview.md)** 를 살펴보세요. HTK, MRTK v1, SteamVR을 사용하거나 Reverb G2, Oculus Rift, HTC Vive 같은 몰입형 헤드셋용으로 개발된 프로젝트에 대한 가이드가 준비되어 있습니다.
+> HoloLens 2로 가져오려는 기존 Unity 프로젝트가 있는 경우 **[포트 가이드](../porting-apps/porting-overview.md)** 를 살펴보세요. HTK, MRTK v1 또는 SteamVR을 사용하는 프로젝트에 대한 가이드가 있습니다.
 
 ## <a name="development-checkpoints"></a>개발 검사점
 
-다음 검사점을 사용하여 Unity 게임 및 애플리케이션을 혼합 현실 세계로 가져옵니다. [Holograms 샘플 애플리케이션 디자인](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)을 아직 살펴보지 않았다면 이를 다운로드하여 Mixed Reality UX의 기본 사항을 숙지하는 데 사용하는 것이 좋습니다. 
+다음 검사점을 사용하여 Unity 게임 및 애플리케이션을 혼합 현실 세계로 가져옵니다. [Holograms 샘플 애플리케이션 디자인](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)을 아직 살펴보지 않았다면 이를 다운로드하여 Mixed Reality UX의 기본 사항을 숙지하는 데 사용하는 것이 좋습니다.
 
 ### <a name="1-getting-started"></a>1. 시작
+
 Unity에서 개발하는 가장 쉬운 방법은 Mixed Reality Toolkit를 사용하는 것입니다. MRTK는 Mixed Reality 프로젝트를 자동으로 설정하고, 개발 프로세스를 가속화할 수 있는 기능 세트를 제공하는 데 도움이 됩니다. 이 섹션이 완료되면 Mixed Reality Toolkit, Mixed Reality 앱에 맞게 적절하게 구성된 개발 환경 및 직접 빌드한 Unity에서 작동하는 MRTK 프로젝트에 대해 기본적으로 이해할 수 있게 됩니다.
 
 |  검사점  |  결과  |
@@ -37,10 +38,10 @@ Unity에서 개발하는 가장 쉬운 방법은 Mixed Reality Toolkit를 사용
 | [HoloLens 2 자습서 시리즈](tutorials/mr-learning-base-01.md) | HoloLens 2 하드웨어에 대한 초보자 수준 MRTK 자습서를 살펴봅니다. |
 
 > [!IMPORTANT]
-> Mixed Reality Toolkit를 가져오지 않고 새 Unity 프로젝트를 만들려면 Windows Mixed Reality에 대해 수동으로 변경해야 하는 작은 Unity 설정 세트가 있습니다. 이러한 설정은 두 가지 범주, 즉 프로젝트별 및 장면별 범주로 구분됩니다. 단계별 프로세스에 대한 구성 가이드를 살펴보세요.
+> Mixed Reality Toolkit를 가져오지 않고 새 Unity 프로젝트를 만들려면 Windows Mixed Reality에 대해 수동으로 변경해야 하는 작은 Unity 설정 세트가 있습니다. 이러한 설정은 두 가지 범주, 즉 프로젝트별 및 장면별 범주로 구분됩니다. 단계별 프로세스에 대한 [구성 가이드](configure-unity-project.md)를 살펴보세요.
 
 > [!NOTE]
-> 프로젝트에서 MRTK V2가 설정되면 카메라와 같은 표준 Unity 게임 개체가 즉시 점등되어 좌석 크기의 환경을 제공합니다. 애플리케이션의 환경 크기를 조정하는 방법은 좌표계 페이지에서 확인할 수 있습니다.
+> 프로젝트에서 MRTK V2가 설정되면 카메라와 같은 표준 Unity 게임 개체가 즉시 점등되어 좌석 크기의 환경을 제공합니다. 애플리케이션의 환경 크기를 조정하는 방법은 [좌표계](coordinate-systems-in-unity.md) 페이지에서 확인할 수 있습니다.
 
 ### <a name="2-core-building-blocks"></a>2. 핵심 구성 요소
 
@@ -82,7 +83,7 @@ Unity에서 개발하는 가장 쉬운 방법은 Mixed Reality Toolkit를 사용
 
 ### <a name="porting"></a>포팅
 
-이식하려는 기존 앱이 있는 경우 아래 나열된 문서가 다음 단계입니다.
+포팅하려는 기존 앱이 있는 경우 아래 나열된 문서가 다음 단계입니다.
 
 * [HoloToolkit/MRTK에서 MRTK v2로](mrtk-porting-guide.md)
 * [몰입형 앱 포팅 가이드](../porting-apps/porting-guides.md)
@@ -113,11 +114,21 @@ Unity는 docs.microsoft.com에서 사용할 수 있는 이 설명서 외에도 W
 | [스크립팅 참조](https://docs.unity3d.com/ScriptReference/) | 설명서의 이 섹션에는 Unity에서 제공하는 스크립팅 API에 대한 세부 정보가 포함되어 있으며, **도움말 > 스크립팅 참조** 를 차례로 클릭하여 Unity 편집기에서 온라인으로 액세스할 수 있습니다. |
 | [수동](https://docs.unity3d.com/Manual/index.html) | 이 설명서는 기본 기술에서 고급 기술까지 Unity를 사용하는 방법을 학습하는 데 도움이 되도록 설계되었으며, 온라인 또는 Unity 편집기에서 **도움말 > 수동** 을 차례로 클릭하여 액세스할 수 있습니다. |
 
-
 > [!div class="nextstepaction"]
 > [MRTK 살펴보기](mrtk-getting-started.md)
 
+## <a name="have-feedback"></a>의견이 있으신가요?
+
+[Unity 포럼](https://aka.ms/unityforums)에서 **Microsoft** 를 태그로 지정하면 당사를 찾을 수 있으며 다음 태그를 조합하면 귀하가 피드백을 제공하는 플러그 인이 무엇인지 당사가 파악하는 데 도움이 됩니다.
+
+* HoloLens 2 
+* Windows Mixed Reality
+* OpenXR
+* XRSDK
+* Legacy XR 
+
 ## <a name="see-also"></a>참고 항목
+
 * [Mixed Reality Toolkit v2](mrtk-getting-started.md)
 * [MR 기본 100: Unity 시작](tutorials/holograms-100.md)
 * [Unity 권장 설정](recommended-settings-for-unity.md)

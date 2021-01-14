@@ -7,18 +7,22 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 검색, 배포, 인덱스, 방문 페이지, 디자인, 개발, 자습서, 샘플 앱, 기본 사항, 사례 연구, 리소스, HoloLens 방법, 오픈 소스 프로젝트, 핵심 개념, 상호 작용, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 5c0eefe6f4811feba6d1d52164652acbc44945c3
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: f4a4ea50c45263f18079da76dd8dfd5f31e2af44
+ms.sourcegitcommit: 44d0f2873c75003caf9d8d244ceaeb3faa89df63
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847603"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110451"
 ---
 # <a name="start-designing-and-prototyping"></a>디자인 및 프로토타입 생성 시작
 
 ![혼합 현실 디자인 요약](images/design-hero-image.png)
 
-Mixed Reality 애플리케이션은 오늘날 전 세계의 다른 애플리케이션과 다르며 이를 설계하는 것은 어려운 작업입니다. 만들고 있는 현실 세계와 가상 세계의 새로운 조합뿐만 아니라 이 조합이 제공하는 새로운 사용자 환경도 고려해야 합니다. Mixed Reality는 큰 장소이므로 디자인 스펙트럼에 따라 중요한 지점을 선택하여 일련의 검사점으로 아래에 배치했습니다. 이러한 검사점은 순차적이어야 하지만, 이미 참여한 경우 다음 섹션 중 하나로 자유롭게 이동하세요.
+Mixed Reality 애플리케이션은 오늘날 전 세계의 다른 애플리케이션과 다르며 이를 설계하는 것은 어려운 작업입니다. 만들고 있는 현실 세계와 가상 세계의 새로운 조합뿐만 아니라 이 조합이 제공하는 새로운 사용자 환경도 고려해야 합니다. Mixed Reality는 큰 장소이므로 디자인 스펙트럼에 따라 중요한 지점을 선택하여 일련의 검사점으로 아래에 배치했습니다. 이러한 검사점은 순차적이어야 하지만, 이미 참여한 경우 다음 섹션 중 하나로 자유롭게 이동하세요. 
+
+시작하려면 디자인 개요 비디오를 시청하세요.
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LhlW]
 
 ## <a name="design-checkpoints"></a>디자인 검사점
 

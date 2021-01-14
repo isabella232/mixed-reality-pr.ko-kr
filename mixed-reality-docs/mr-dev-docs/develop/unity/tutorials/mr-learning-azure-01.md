@@ -1,5 +1,5 @@
 ---
-title: Azure 클라우드 자습서 - 1. HoloLens 2용 Azure Cloud Services
+title: HoloLens 2용 Azure Cloud Services
 description: 이 과정을 완료하여 HoloLens 2 애플리케이션 내에서 다양한 Azure 서비스를 구현하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: azure, 혼합 현실, unity, 자습서, hololens, hololens 2, azure blob 스토리지, azure table 스토리지, azure spatial anchors, azure bot framework, azure cloud services, azure custom vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 98ca849722feeaa307cb43e568570897b48ed850
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 24f44e7ecef3aeab45978787bf09d1f947bc2411
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679422"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008323"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. HoloLens 2용 Azure Cloud Services
-
-## <a name="overview"></a>개요
 
 **Azure 클라우드** 서비스를 **HoloLens 2** 애플리케이션에 가져오는 데 초점을 맞춘 이 자습서 시리즈를 시작합니다. 5부로 구성된 이 자습서 시리즈에서는 여러 **Azure 클라우드** 서비스를 **HoloLens 2** 용 **Unity** 프로젝트에 통합하는 방법에 대해 알아봅니다. 연속된 각 챕터에서 새로운 **Azure 클라우드** 서비스를 추가하여 애플리케이션 기능 및 사용자 환경을 확장하는 한편, 각 **Azure 클라우드** 서비스의 기본 사항을 학습합니다.
 
@@ -84,13 +82,13 @@ ms.locfileid: "94679422"
 
 이 섹션에서는 새 Unity 프로젝트를 만들고 MRTK 개발을 준비합니다.
 
-이를 위해 먼저 [프로젝트 및 첫 번째 애플리케이션 초기화](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
+먼저 [프로젝트 및 첫 번째 애플리케이션 초기화](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
 
 1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름 지정(예: *Azure Cloud Tutorials*)
-2. [빌드 플랫폼 전환](mr-learning-base-02.md#configuring-the-unity-project)
+2. [빌드 플랫폼 전환](mr-learning-base-02.md#switching-the-build-platform)
 3. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project)
+5. [Unity 프로젝트 구성](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
 6. [장면 만들기 및 구성](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 적절한 장면 이름 지정(예: *AzureCloudServices*)
 
 그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면의 MRTK 구성 프로필을 **DefaultHoloLens2ConfigurationProfile** 로 변경하고, 공간 인식 메시의 표시 옵션을 **폐색** 으로 변경합니다.
@@ -199,7 +197,7 @@ Unity 메뉴에서 **Edit(편집)**  > **Project Settings(프로젝트 설정)..
 이 자습서 시리즈에서 사용할 일부 기능은 Unity 편집기 내에서 실행할 수 없습니다. 즉, 애플리케이션을 HoloLens 2 디바이스에 배포하는 방법을 잘 알고 있어야 합니다.
 
 > [!TIP]
-> Unity 프로젝트를 빌드하고 HoloLens 2에 배포하는 방법을 미리 알아보려면 [시작 자습서 - 디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침을 참조하세요.
+> Unity 프로젝트를 빌드하고 HoloLens 2에 배포하는 방법을 미리 알아보려면 [시작 자습서 - 디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) 지침을 참조하세요.
 
 ### <a name="3-run-the-app-on-your-hololens-2-and-follow-the-in-app-instructions"></a>3. HoloLens 2에서 앱 실행 및 앱 내 지침 수행
 

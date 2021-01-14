@@ -1,18 +1,18 @@
 ---
 title: 도구 설치
-description: 혼합 현실 개발을 위해 준비하려면 여기에서 시작합니다. 이 문서는 항상 Unity, Visual Studio, HoloLens와 Windows Mixed Reality 몰입형 헤드셋 개발에 권장되는 기타 도구의 최신 버전을 반영합니다.
+description: 최신 버전의 Unity, Visual Studio 및 도구를 사용하여 HoloLens 및 VR 개발에 권장되는 도구를 여기에서 시작합니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: 최신, 도구, 시작, 기본 사항, unity, visual studio, 도구 키트, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 설치, Windows, HoloLens, 에뮬레이터, unreal, openxr
-ms.openlocfilehash: addbab6a7bedc7c8065e7b68923bf1956a522a02
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 447f0713ef26757bd6fcf89684a7f5d59a052dcb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926001"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009423"
 ---
 # <a name="install-the-tools"></a>도구 설치
 

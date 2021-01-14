@@ -1,22 +1,20 @@
 ---
-title: MRTK 자습서 - 8. 시선 추적 사용
-description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 시선 추적을 사용하는 방법을 보여 줍니다.
+title: 시선 추적 사용
+description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 혼합 현실 앱에서 시선 추적을 사용하는 방법을 보여줍니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 시선 추적
 ms.localizationpriority: high
-ms.openlocfilehash: 538204513589b96bedb8b20c46eee5735b764a4c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: f464ba4e08f1446f1d50eda577aedf9d070630ee
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613487"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007893"
 ---
 # <a name="8-using-eye-tracking"></a>8. 시선 추적 사용
-
-## <a name="overview"></a>개요
 
 이 자습서에서는 HoloLens 2에 대해 시선 추적을 사용하도록 설정하고 개체에 시선 추적을 추가하여 사용자가 개체를 볼 때 작업을 트리거하는 방법을 배웁니다.
 
@@ -35,7 +33,7 @@ Unity 메뉴에서 Mixed Reality Toolkit > 유틸리티 > **Unity 프로젝트 �
 ![Unity MRTK Project Configurator 창](images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
-> 이 자습서 시리즈의 시작 부분에서 Unity 프로젝트를 구성한 경우 [MRTK Project Configurator 설정 적용](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings) 동안에는 응시 입력 기능이 사용하도록 설정되어 있어야 합니다. 그러나 사용하도록 설정되지 않은 경우 지금 사용하도록 설정해야 합니다.
+> 이 자습서 시리즈의 시작 부분에서 Unity 프로젝트를 구성한 경우 [MRTK Project Configurator 설정 적용](mr-learning-base-02.md#selecting-mrtk-and-project-settings) 동안에는 응시 입력 기능이 사용하도록 설정되어 있어야 합니다. 그러나 사용하도록 설정되지 않은 경우 지금 사용하도록 설정해야 합니다.
 
 ## <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>응시 공급자에서 시선 기반 응시 사용
 

@@ -1,19 +1,19 @@
 ---
 layout: LandingPage
 title: Azure 혼합 현실 클라우드 서비스 개요
-description: 혼합 현실 클라우드 서비스 리소스
+description: Unity 또는 Unreal 애플리케이션에 통합할 수 있는 모든 Azure 혼합 현실 클라우드 서비스에 대해 알아봅니다.
 author: hferrone
 ms.author: v-haferr
 ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 개발, 개발, HoloLens, 클라우드 서비스, Azure, remote rendering, spatial anchors, cognitive services, 인식, unity, 기계 학습, 음성 번역, 컴퓨터 비전, Microsoft Graph
-ms.openlocfilehash: e660556810cdea86321b7826217268e6c8d0850a
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 251fd68d2a3fea79c1db160b6aaf64aad05c686f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865408"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009573"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 혼합 현실 클라우드 서비스 개요
 

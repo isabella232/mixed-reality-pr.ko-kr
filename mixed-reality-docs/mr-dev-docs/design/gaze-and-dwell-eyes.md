@@ -1,18 +1,18 @@
 ---
 title: 시선 응시 및 유지(dwell)
-description: 시선 응시 및 유지(dwell) 입력 모델에 대한 개요입니다.
+description: 상호 작용 모델, 설계 지침 및 고유한 과제를 포함하여 시선 응시 및 유지(dwell) 입력 모델에 대한 개요를 시작합니다.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 시선 추적, Mixed Reality, 입력, 시선 응시, 시선 타깃팅, HoloLens 2, 시선 기반 선택, 유지, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 디자인
-ms.openlocfilehash: bf9ad97790093a08156660bfd6e33d16c06e6387
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 78f8dcec3c8368128ec5904df36ce1391aa8b879
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847808"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007713"
 ---
 # <a name="eye-gaze-and-dwell"></a>시선 응시 및 유지(dwell)
 
@@ -43,6 +43,7 @@ _"시선 응시 및 유지"_ 상호 작용 모델은 [시선 응시 및 커밋](
 ![유지(dwell) 상태](images/eyes_dwellstate_recommendation.png)<br>
 
 ## <a name="see-also"></a>참고 항목
+
 * [시선 추적](eye-tracking.md)
 * [시선 응시 및 커밋](gaze-and-commit-eyes.md)
 * [응시 및 커밋](gaze-and-commit.md)

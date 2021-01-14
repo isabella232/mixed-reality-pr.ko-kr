@@ -1,18 +1,18 @@
 ---
 title: Microsoft Store에 게시
-description: ''
+description: Microsoft Store에서 Unreal Mixed Reality 애플리케이션을 패키지하고, 인증하고, 게시하는 방법에 대해 알아봅니다.
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/3/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 문서화, 가이드, 기능, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 게시, 배포, Microsoft store
-ms.openlocfilehash: 37a17ba4a691ca8db6ce447abd485293454b8ae3
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 41f081f11cdb9ac2fdf96a81bb761a1321d1776f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96583950"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010023"
 ---
 # <a name="publishing-to-the-microsoft-store"></a>Microsoft Store에 게시
 
@@ -108,6 +108,7 @@ if(Target.Platform == UnrealTargetPlatform.Win64)
 4. Unreal을 닫고, 프로젝트를 다시 열고, HoloLens를 다시 패키징합니다.  WACK를 다시 실행하면 오류가 사라집니다. 
 
 ## <a name="see-also"></a>참고 항목
+
 * [Microsoft Store에 앱 제출](../../distribute/submitting-an-app-to-the-microsoft-store.md)
 * [Windows 앱 인증 키트](https://developer.microsoft.com/windows/downloads/app-certification-kit)
 * [수동으로 앱 설치 관리자 파일 만들기](https://docs.microsoft.com/windows/msix/app-installer/how-to-create-appinstaller-file)

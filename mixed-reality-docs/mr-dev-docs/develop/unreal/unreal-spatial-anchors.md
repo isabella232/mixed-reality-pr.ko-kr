@@ -1,18 +1,18 @@
 ---
 title: Unreal의 로컬 Spatial Anchors
-description: Unreal의 Spatial Anchors 사용 가이드
+description: Unreal 혼합 현실 애플리케이션에서 공간 앵커를 만들고, 저장하고, 관리하는 방법에 대해 알아봅니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 기능, 설명서, 가이드, 홀로그램, spatial anchors, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 1c9d9fa119e57c57ab126fc26a26a35d75e07db7
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: d44610ea0632dbc93941096007e60e4ae7be53e1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926090"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009983"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Unreal의 로컬 Spatial Anchors
 
@@ -83,6 +83,7 @@ Spatial Anchors는 애플리케이션 세션 간의 실제 공간에 홀로그�
 언제든지 [Unreal 개발 검사점](unreal-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
+
 * [Azure Spatial Anchors](unreal-azure-spatial-anchors.md)
 * [Spatial Anchors](../../design/spatial-anchors.md)
 * [좌표계](../../design/coordinate-systems.md)

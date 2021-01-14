@@ -1,20 +1,20 @@
 ---
-title: Azure Speech Services 자습서 - 2. 로컬 음성-텍스트 변환을 위한 오프라인 모드 추가
-description: 이 과정을 완료하여 혼합 현실 애플리케이션 내에서 Azure Speech SDK를 구현하는 방법을 알아봅니다.
+title: 로컬 음성-텍스트 변환을 위한 오프라인 모드 추가
+description: 이 과정을 완료하여 혼합 현실 애플리케이션에서 로컬 음성-텍스트 변환을 위해 오프라인 모드를 추가하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 06/27/2019
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, 음성 인식, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: d5b0e5140c698996c051eab10064d99280482886
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: db495d6cdfa99721e68b4004535a5411bde9b17d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679732"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010083"
 ---
-# <a name="2-using-speech-recognition-to-execute-commands"></a>2. 음성 인식을 사용하여 명령 실행
+# <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a>2. 로컬 음성-텍스트 변환에 오프라인 모드 추가
 
 이 자습서에서는 Azure 음성 인식을 통해 사용자가 정의하는 단어 또는 구에 따라 작업을 수행할 수 있는 명령을 실행하는 기능을 추가합니다.
 
@@ -29,18 +29,18 @@ ms.locfileid: "94679732"
 * **실행 단어** 필드에서 적절한 구를 입력합니다(예: _터미널 활성화_).
 * **해제 단어** 필드에서 적절한 구(예: _터미널 해제_)를 입력합니다.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-1.png)
+![Lunarcom 실행 단어 인식기 스크립트 구성 요소가 강조 표시된 Unity 편집기](images/mrlearning-speech/tutorial2-section1-step1-1.png)
 
 > [!NOTE]
 > Lunarcom 실행 단어 인식기(스크립트) 구성 요소는 MRTK의 일부가 아닙니다. 이 자습서의 자산과 함께 제공되었습니다.
 
 이전 자습서에서와 같이 이제 게임 모드로 들어가면 터미널 패널을 기본적으로 사용하도록 설정되어 있지만, **터미널 해제** 라는 해제 단어를 말하여 터미널 패널을 사용하지 않도록 설정할 수 있습니다.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-2.png)
+![음성 인식 기능이 사용 중인 재생 모드의 Unity 편집기](images/mrlearning-speech/tutorial2-section1-step1-2.png)
 
 그리고 **터미널 활성화** 라는 실행 단어를 말하여 터미널 패널을 다시 사용하도록 설정합니다.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-3.png)
+![활성 터미널이 있는 재생 모드의 Unity 편집기](images/mrlearning-speech/tutorial2-section1-step1-3.png)
 
 > [!CAUTION]
 > 애플리케이션에서 Azure에 연결해야 하므로 컴퓨터/디바이스가 인터넷에 연결되어 있는지 확인합니다.

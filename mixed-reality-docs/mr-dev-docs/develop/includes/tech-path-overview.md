@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 11533175057217bddcc7e121a524da1f26d2764e
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: c74a6c0c22439376a84ecb8254b945295c8988a2
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915550"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98052957"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -40,11 +40,11 @@ Unity로 Mixed Reality 앱을 빌드하는 경우 몇 가지 하드웨어 및 �
 
 Unity에서 빌드된 Mixed Reality 프로젝트, 특히 **Azure Remote Rendering** 및 **Azure Spatial Anchors** 에 통합할 수 있는 여러 클라우드 서비스가 있습니다. 이러한 서비스는 공유 홀로그램 콘텐츠와 실시간 3D 렌더링을 애플리케이션에 추가하여 사용자에게 더욱 매력적이고 몰입감 있게 만들 수 있습니다.
 
-이러한 모든 서비스는 [Unity 개발 과정](../unity/unity-development-overview.md)에서 설명하며, 이는 **Unity를 사용하여 Mixed Reality를 학습시키는 데 강력히 추천되는 경로** 입니다. 이미 이 경로상에 있으므로 계속 읽어 보고 문서 아래쪽에 있는 큰 파란색 단추를 따릅니다. 그러나 고급 개발 단계에 있고 이미 참여하려고 원하는 경우 [클라우드 서비스 개요](../mixed-reality-cloud-services.md)를 확인하거나 [서비스 리소스](../unity/unity-development-overview.md#5-adding-services)로 직접 이동합니다.
+이러한 모든 서비스는 [HoloLens용 Unity 개발 경험](../unity/unity-development-overview.md) 과정에서 설명하며, 이는 **Unity를 사용하여 Mixed Reality를 학습시키는 데 강력히 추천되는 경로** 입니다. 이미 이 경로상에 있으므로 계속 읽어 보고 문서 아래쪽에 있는 큰 파란색 단추를 따릅니다. 그러나 고급 개발 단계에 있고 이미 참여하려고 원하는 경우 [클라우드 서비스 개요](../mixed-reality-cloud-services.md)를 확인하거나 [서비스 리소스](../unity/unity-development-overview.md#5-adding-services)로 직접 이동합니다.
 
 ## <a name="dynamics-365-guides"></a>Dynamics 365 Guides
 
-**Microsoft Dynamics 365 Guides** 를 사용하여 홀로그램 지침을 앱 가상 환경에 시각적으로 테더링하여 필요한 시간과 장소에 중요한 정보를 사용자에게 제공할 수 있습니다. 또한 이 기능은 Unity 개발 과정에서도 설명하지만, 더 빨리 진행하려면 [여기](../unity/unity-development-overview.md#5-adding-services)에서 **Dynamics 365** 탭을 선택하여 제공되는 기능을 확인할 수 있습니다.
+**Microsoft Dynamics 365 Guides** 를 사용하여 홀로그램 지침을 앱 가상 환경에 시각적으로 테더링하여 필요한 시간과 장소에 중요한 정보를 사용자에게 제공할 수 있습니다. 또한 이 기능은 HoloLens용 Unity 개발 과정에서도 설명하지만, 더 빨리 진행하려면 [여기](../unity/unity-development-overview.md#5-adding-services)에서 **Dynamics 365** 탭을 선택하여 제공되는 기능을 확인할 수 있습니다.
 
 ## <a name="examples"></a>예
 

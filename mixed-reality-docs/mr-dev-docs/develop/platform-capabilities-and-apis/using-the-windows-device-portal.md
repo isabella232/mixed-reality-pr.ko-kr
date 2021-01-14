@@ -1,18 +1,18 @@
 ---
 title: Windows 장치 포털 사용
-description: HoloLens용 Windows 장치 포털을 사용하면 Wi-Fi 또는 USB를 통해 원격으로 디바이스를 구성하고 관리할 수 있습니다. Device Portal은 PC의 웹 브라우저에서 연결 가능한 HoloLens에 있는 웹 서버입니다. 장치 포털에는 HoloLens를 관리하고 앱을 디버깅 및 최적화하는 데 도움이 되는 많은 도구가 포함되어 있습니다.
+description: Windows 장치 포털을 사용하여 Wi-Fi 또는 USB를 통해 원격으로 디바이스를 구성하고 관리하는 방법에 대해 알아봅니다.
 author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows 장치 포털, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 168d4175a7e55d5116f19c51a802c9a8abdc1e19
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 75eda2775486b1ace82b574816db34a2f895c80b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530321"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007793"
 ---
 # <a name="using-the-windows-device-portal"></a>Windows 장치 포털 사용
 

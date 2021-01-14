@@ -1,18 +1,18 @@
 ---
 title: Unreal의 공간 오디오
-description: Unreal 엔진용 공간 오디오 플러그 인의 내/외부에 대해 알아봅니다.
+description: HoloLens 디바이스에 대한 Unreal 혼합 현실 애플리케이션용 공간 오디오 플러그 인에 대해 자세히 알아봅니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 스트리밍, 원격, 혼합 현실, 개발, 시작, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, 홀로그램, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 공간 오디오
-ms.openlocfilehash: fa87862f6a6af456ea344b67e22f1640c9cfafb4
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 98c10e370cd4ca5e437a4677be6fce3d3aee53a9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609544"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009973"
 ---
 # <a name="spatial-audio-in-unreal"></a>Unreal의 공간 오디오
 
@@ -34,7 +34,6 @@ ms.locfileid: "96609544"
 ![Unreal 공간 오디오 플러그 인](images/unreal-spatial-audio-img-01.png)
 
 편집기가 다시 시작되면 프로젝트가 모두 설정됩니다.
-
 
 ## <a name="setting-the-spatialization-plugin-for-hololens-2-platform"></a>HoloLens 2 플랫폼용 공간화 플러그 인 설정
 

@@ -1,18 +1,18 @@
 ---
 title: HoloLens 에뮬레이터 사용
-description: HoloLens 에뮬레이터를 사용하면 실제 HoloLens 없이 PC에서 혼합 현실 앱을 테스트할 수 있습니다.
+description: HoloLens 에뮬레이터를 사용하여 실제 HoloLens 없이 PC에서 혼합 현실 앱을 테스트합니다.
 author: hamalawi
 ms.author: moelhama
 ms.date: 10/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, 에뮬레이터
-ms.openlocfilehash: 891ca9516fbf0179d57995282a9dd0fc57f25c5e
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 105b358e53012ca30e0ced5000280f39fefb8983
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530370"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006663"
 ---
 # <a name="using-the-hololens-emulator"></a>HoloLens 에뮬레이터 사용
 

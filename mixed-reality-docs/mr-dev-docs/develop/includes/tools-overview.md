@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 283bfffb2d59d92712e86e12c05be8974f04fae6
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: 4b9a1c20a8d885ea796c296f6a542d41e3ab58ef
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97718185"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98052944"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -21,7 +21,7 @@ ms.locfileid: "97718185"
 
 MRTK([Mixed Reality Toolkit](../unity/mrtk-getting-started.md))는 혼합 현실 애플리케이션을 위한 오픈 소스 플랫폼 간 개발 키트입니다. MRTK는 플랫폼 간 입력 시스템, 기본 구성 요소 및 공간 상호 작용을 위한 공통 빌딩 블록을 제공합니다. 도구 키트는 Microsoft HoloLens, Windows Mixed Reality 몰입형(VR) 헤드셋 및 OpenVR 플랫폼을 대상으로 하는 애플리케이션 개발을 가속화하기 위해 고안되었습니다.
 
-설치의 경우 큐레이션된 [Unity 개발 경험](../unity/unity-development-overview.md)의 [시작 섹션](../unity/unity-development-overview.md#1-getting-started)을 완료하는 것이 좋습니다. Unity 개발 경험을 이미 수행하고 있는 경우 아래 나열된 나머지 설정 단계를 완료하고 [HoloLens 2 시작 자습서](../unity/tutorials/mr-learning-base-01.md)를 계속 진행하세요.
+설치의 경우 큐레이션된 [HoloLens](../unity/unity-development-overview.md#1-getting-started) 또는 [VR](../unity/unity-development-wmr-overview.md#1-getting-started) 개발 경험의 시작 섹션을 완료하는 것이 좋습니다. HoloLens용 Unity 개발 경험을 이미 따르고 있는 경우 아래 나열된 나머지 설정 단계를 완료하고 [HoloLens 2 시작 자습서](../unity/tutorials/mr-learning-base-01.md)를 계속 진행하세요.
 
 > [!IMPORTANT]
 > 설치 지침은 **MRTK 2.4.0** 및 **Unity 2019.3.15** 인 MRTK 및 Unity 릴리스의 안정적인 최신 조합을 대상으로 합니다.
@@ -72,7 +72,7 @@ HoloLens와 Windows Mixed Reality 몰입형(VR) 헤드셋용으로 개발을 수
 
 ##### <a name="i-cant-deploy-over-usb"></a>USB를 통해 배포할 수 없습니다.
 
-USB를 통해 애플리케이션을 직접 배포할 수 없는 경우 위에 나열된 모든 설치 요구 사항을 충족했는지 확인하고 [단계별 자습서](../unity/tutorials/mr-learning-base-02.md#building-your-application-to-your-hololens-2)를 따르세요.
+USB를 통해 애플리케이션을 직접 배포할 수 없는 경우 위에 나열된 모든 설치 요구 사항을 충족했는지 확인하고 [단계별 자습서](../unity/tutorials/mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)를 따르세요.
 
 #### <a name="immersive-vr-headset-requirements"></a>몰입형 (VR) 헤드셋 요구 사항
 
@@ -115,16 +115,24 @@ USB를 통해 애플리케이션을 직접 배포할 수 없는 경우 위에 �
 Unity를 사용하는 MRTK 개발을 처음 접하는 경우 큐레이션된 Unity 개발 경험을 따르는 것이 좋습니다.
 
 > [!div class="nextstepaction"]
-> [Unity 경험 시작](../unity/unity-development-overview.md)
+> [HoloLens용 Unity 경험 시작](../unity/unity-development-overview.md)
+
+> [!div class="nextstepaction"]
+> [VR용 Unity 경험 시작](../unity/unity-development-wmr-overview.md)
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞에서 설명한 Unity 개발 검사점 경험을 수행하는 경우 다음 작업은 HoloLens 2 자습서 시리즈를 통해 작업하는 것입니다.
+앞에서 설명한 HoloLens용 Unity 개발 검사점 경험을 수행하는 경우 다음 작업은 HoloLens 2 자습서 시리즈를 통해 작업하는 것입니다.
 
 > [!div class="nextstepaction"]
 > [HoloLens 2 자습서 시리즈](../unity/tutorials/mr-learning-base-01.md)
 
-언제든지 [Unity 개발 검사점](../unity/unity-development-overview.md#1-getting-started)으로 돌아갈 수 있습니다.
+VR용 Unity 경험을 따르고 있는 경우, 다음 작업은 프로젝트를 설정하는 것입니다.
+
+> [!div class="nextstepaction"]
+> [WMR용 프로젝트 구성](../unity/configure-unity-project.md)
+
+언제든지 [HoloLens](../unity/unity-development-overview.md#1-getting-started) 및 [VR](../unity/unity-development-wmr-overview.md#1-getting-started)용 Unity 개발 검사점으로 돌아갈 수 있습니다.
 
 # <a name="unreal"></a>[Unreal](#tab/unreal)
 

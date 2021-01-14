@@ -1,28 +1,26 @@
 ---
-title: PC 홀로그램 원격 자습서 - 1. PC 홀로그램 원격 시작
-description: 이 과정을 완료하여 혼합 현실 환경을 PC에서 HoloLens 2로 원격으로 수행하는 방법을 알아봅니다.
+title: PC 홀로그램 원격 시작
+description: 이 과정을 완료하여 혼합 현실 애플리케이션을 PC에서 HoloLens 2로 원격으로 수행하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/29/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, PC 홀로그램 원격, 도구 설명, 시선 추적
 ms.localizationpriority: high
-ms.openlocfilehash: eae7b57544b8a544d3df926296ad5f2a720d5529
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 551c6427d9659dd7f5bad8558c777e918456b4d7
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679772"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007923"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. PC 홀로그램 원격 시작
 
-## <a name="overview"></a>개요
+HoloLens 2 자습서를 시작합니다. 2부로 구성된 이 자습서 시리즈에서는 혼합 현실 환경 데모를 만드는 방법 및 홀로그램 원격 접속을 위한 PC 앱을 만드는 방법에 대해 알아봅니다.
 
-  HoloLens 2 자습서를 시작합니다. 2부로 구성된 이 자습서 시리즈에서는 혼합 현실 환경 데모를 만드는 방법 및 홀로그램 원격 접속을 위한 PC 앱을 만드는 방법에 대해 알아봅니다.
+이 자습서에서는 혼합 현실 환경을 만드는 방법에 대해 알아봅니다. 여기서는 UI 요소, 3D 모델 조작, 모델 클리핑 및 시선 추적 기능을 시연합니다.
 
-   이 자습서에서는 혼합 현실 환경을 만드는 방법에 대해 알아봅니다. 여기서는 UI 요소, 3D 모델 조작, 모델 클리핑 및 시선 추적 기능을 시연합니다.
-
-  두 번째 [홀로그램 원격 애플리케이션 만들기](mr-learning-pc-holographic-remoting-02.md) 자습서에서는 홀로그램 원격 접속을 위한 PC 앱을 만드는 방법을 알아봅니다. 그리고 언제든지 HoloLens 2에 연결하여 혼합 현실에서 3D 콘텐츠를 시각화할 수 있는 방법을 제공합니다.
+두 번째 [홀로그램 원격 애플리케이션 만들기](mr-learning-pc-holographic-remoting-02.md) 자습서에서는 홀로그램 원격 접속을 위한 PC 앱을 만드는 방법을 알아봅니다. 그리고 언제든지 HoloLens 2에 연결하여 혼합 현실에서 3D 콘텐츠를 시각화할 수 있는 방법을 제공합니다.
 
 ## <a name="objectives"></a>목표
 
@@ -48,19 +46,19 @@ ms.locfileid: "94679772"
 
 이 섹션에서는 새 Unity 프로젝트를 만들고 MRTK 개발을 준비합니다.
 
-이를 위해 먼저 [프로젝트 및 첫 번째 애플리케이션 초기화](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
+이를 위해 먼저 [프로젝트 및 첫 번째 애플리케이션 초기화](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
 
-1. [새 Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름 지정(예: *MRTK Tutorials*)
+1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름(예: *MRTK Tutorials*) 지정
 
-1. [빌드 플랫폼 전환](mr-learning-base-02.md#configuring-the-unity-project)
+2. [빌드 플랫폼 전환](mr-learning-base-02.md#switching-the-build-platform)
 
-1. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+3. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 
-1. [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+4. [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
 
-1. [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project)
+5. [Unity 프로젝트 구성](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
 
-1. [장면 만들기 및 설정](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름 지정(예: **PC Holographic Remoting**)
+6. [장면 만들기 및 설정](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름 지정(예: **PC Holographic Remoting**)
 
 그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면의 MRTK 구성 프로필을 **DefaultHoloLens2ConfigurationProfile** 로 변경합니다. 공간 인식 메시의 표시 옵션을 **폐색** 으로 변경합니다.
 

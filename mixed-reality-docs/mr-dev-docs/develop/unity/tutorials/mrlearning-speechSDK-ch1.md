@@ -1,23 +1,20 @@
 ---
-title: Azure Speech Services 자습서 - 1. 음성 인식 및 전사 통합 및 사용
-description: 이 과정을 완료하여 혼합 현실 애플리케이션 내에서 Azure Speech SDK를 구현하는 방법을 알아봅니다.
+title: 음성 인식 및 전사 통합 및 사용
+description: 이 과정을 완료하여 혼합 현실 애플리케이션에서 Azure 음성 인식 및 기록을 추가하고 사용하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, 음성 인식, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: ec158de1aa8b8e6401802b68098eb7acd883d7e6
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f0c26c861cb3400c552d17d45f77cfe3a5cc284c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679282"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010123"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1. 음성 인식 및 전사 통합 및 사용
-
-## <a name="overview"></a>개요
-
 
 이 자습서 시리즈에서는 HoloLens 2에서 Azure Speech Services의 사용을 검색하는 Mixed Reality 애플리케이션을 만듭니다. 이 자습서 시리즈를 완료하면 디바이스의 마이크를 사용하여 음성을 텍스트로 실시간으로 전사하고, 음성을 다른 언어로 번역하고, 의도 인식 기능을 활용하여 AI를 통해 음성 명령을 이해할 수 있습니다.
 
@@ -44,13 +41,13 @@ ms.locfileid: "94679282"
 
 이 섹션에서는 새 Unity 프로젝트를 만들고 MRTK 개발을 준비합니다.
 
-이를 위해 먼저 [프로젝트 및 첫 번째 애플리케이션 초기화](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
+이를 위해 먼저 [프로젝트 및 첫 번째 애플리케이션 초기화](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
 
 1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름(예: *MRTK Tutorials*) 지정
-2. [빌드 플랫폼 전환](mr-learning-base-02.md#configuring-the-unity-project)
+2. [빌드 플랫폼 전환](mr-learning-base-02.md#switching-the-build-platform)
 3. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project)
+5. [Unity 프로젝트 구성](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
 6. [장면 만들기 및 구성](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름(예: *AzureSpeechServices*) 지정
 
 그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면의 MRTK 구성 프로필을 **DefaultHoloLens2ConfigurationProfile** 로 변경하고, 공간 인식 메시의 표시 옵션을 **폐색** 으로 변경합니다.

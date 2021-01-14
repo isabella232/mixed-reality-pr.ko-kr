@@ -1,6 +1,6 @@
 ---
 title: Unreal의 스트리밍
-description: Unreal에서 HoloLens 2로 스트리밍하는 방법에 대한 지침입니다.
+description: 스트리밍 제한 및 명령줄 옵션을 포함하여, Unreal 앱을 HoloLens 2로 스트리밍하는 방법에 대해 알아봅니다.
 author: sw5813
 ms.author: suwu
 ms.date: 12/7/2020
@@ -10,12 +10,12 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 스
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 3638f07753355061f251bb2d6fa47233872d5b90
-ms.sourcegitcommit: 0509cf6c57067cffd75a0189106e3369e9ecc5c8
+ms.openlocfilehash: a0c376ed6366e57b8a521c52db2fc02fcd1c0285
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96855888"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009953"
 ---
 # <a name="streaming-in-unreal"></a>Unreal의 스트리밍
 

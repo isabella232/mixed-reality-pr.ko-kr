@@ -1,18 +1,18 @@
 ---
 title: Mixed Reality Learn 모듈 개요
-description: 사용 가능한 Mixed Reality Learn 모듈을 확인하세요.
+description: Microsoft Learn 플랫폼에서 호스팅되는 모든 사용 가능한 혼합 현실 모듈을 최신 상태로 유지합니다.
 author: hferrone
 ms.author: jemccull
 ms.date: 11/30/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, learn, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 언어 번역, Azure, Azure cognitive services, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 5d59f09b98b4228b52a87a7c91e64129060f754c
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 211d8e61a45a59df725f4c6c7d11c93f129d63b5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757801"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006913"
 ---
 # <a name="mixed-reality-learn-overview"></a>Mixed Reality Learn 개요
 

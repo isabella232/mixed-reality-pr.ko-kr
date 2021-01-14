@@ -1,18 +1,18 @@
 ---
 title: Unreal의 QR 코드
-description: Unreal에서 QR 코드 사용 가이드
+description: Unreal 혼합 현실 애플리케이션에서 QR 코드를 설정하고, 사용하고, 추적하는 방법에 대해 알아봅니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 기능, 설명서, 가이드, 홀로그램, qr 코드, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 72f08c22b8dcab5e13de2baae817b3496ada1a60
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 1daa368ee9f98accec58c6621073bd7caefdfdcb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926079"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010013"
 ---
 # <a name="qr-codes-in-unreal"></a>Unreal의 QR 코드
 
@@ -28,6 +28,7 @@ QR 코드가 앱에 배치될 때 [환경 고려 사항](../../environment-consi
 > QR 코드는 HoloLens에서 기본적으로 추적할 수 있는 유일한 이미지 유형입니다. Unreal의 **UARTrackedImage** 모듈은 HoloLens에서 지원되지 않습니다. 사용자 지정 이미지를 추적해야 하는 경우에는 타사 이미지 인식 라이브러리를 사용하여 디바이스의 [웹캠](unreal-hololens-camera.md)에 액세스한 후 이미지를 처리할 수 있습니다. 
 
 ## <a name="enabling-qr-detection"></a>QR 검색 사용
+
 HoloLens 2는 웹캠을 사용하여 QR 코드를 확인해야 하므로 프로젝트 설정에서 사용하도록 설정해야 합니다.
 - **편집 > 프로젝트 설정** 을 열고 **플랫폼** 섹션까지 아래로 스크롤한 다음, **HoloLens** 를 선택합니다.
     + **기능** 섹션을 확장하고 **웹캠** 을 선택합니다.  
@@ -52,6 +53,7 @@ QR 코드는 Unreal의 AR 추적 기하 도형 시스템을 통해 추적 이미
 ![추적된 기하 도형 추가 시 노드 추가](images/unreal-qr-codes-tracked-geometry.png)
 
 ## <a name="using-a-tracked-qr-code"></a>추적된 QR 코드 사용
+
 다음 이미지의 이벤트 그래프는 QR 코드의 가운데에 점을 렌더링하고 그 데이터를 출력하는 데 사용되는 **OnUpdateTrackedImage** 이벤트를 보여 줍니다.
 
 [!INCLUDE[](includes/tabs-qr-codes-2.md)]
@@ -63,6 +65,7 @@ QR 코드는 Unreal의 AR 추적 기하 도형 시스템을 통해 추적 이미
 코드에서 [QR 코드 좌표계를 가져올 수](https://docs.microsoft.com/windows/mixed-reality/qr-code-tracking#getting-the-coordinate-system-for-a-qr-code)도 있습니다.
 
 ## <a name="finding-the-unique-id"></a>고유 ID 찾기
+
 모든 QR 코드에는 다음을 통해 찾을 수 있는 고유한 guid ID가 있습니다.
 - **As ARTracked QRCode** 핀을 끌어서 놓고 검색하여 **고유 ID 가져오기**
 

@@ -1,22 +1,20 @@
 ---
-title: MRTK 자습서 - 6. 사용자 인터페이스 만들기
-description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 사용자 인터페이스를 만드는 방법을 보여 줍니다.
+title: 사용자 인터페이스 만들기
+description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 정적 및 동적 사용자 인터페이스를 만드는 방법을 보여줍니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 프리팹, 홀로그램, 도구 설명
 ms.localizationpriority: high
-ms.openlocfilehash: 90b794dc6e88b724d16c339e428c4d2ed9cdac07
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 989de4871332608448619e75ffd760c616332533
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613517"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008063"
 ---
 # <a name="6-creating-user-interfaces"></a>6. 사용자 인터페이스 만들기
-
-## <a name="overview"></a>개요
 
 이 자습서에서는 Unity의 TextMeshPro 구성 요소와 함께 MRTK의 단추와 메뉴 프리팹을 사용하여 간단한 사용자 인터페이스를 만드는 방법에 대해 알아봅니다. 또한 이벤트를 트리거하도록 단추를 구성하고, 사용자에게 추가 정보를 제공하기 위해 동적 도구 설명 UI 요소를 추가하는 방법에 대해서도 알아봅니다.
 

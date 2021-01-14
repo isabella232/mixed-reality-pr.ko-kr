@@ -1,24 +1,25 @@
 ---
 title: Unreal을 사용하기 위한 권장 성능
-description: Unreal의 혼합 현실 앱에 대한 최적의 성능을 위한 권장 사항
+description: 권장 Unreal 프로젝트 설정을 사용하여 혼합 현실 앱을 최대한 활용하는 방법에 대해 알아봅니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 성능, 최적화, 설정, 설명서
-ms.openlocfilehash: a369a68f8ebf9b7084c22f0efa3bbf0bf5ecbebf
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: a1a8dacd0206882c7ebd67b2658fa2e6300aa66a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865428"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009823"
 ---
 # <a name="performance-recommendations-for-unreal"></a>Unreal을 사용하기 위한 권장 성능
 
 Unreal Engine에는 [혼합 현실에 대한 성능 권장 사항](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)에 설명된 내용을 기반으로 앱 성능을 향상시킬 수 있는 여러 기능이 있습니다. 계속하기 전에 애플리케이션 병목, 혼합 현실 앱 분석 및 프로파일링, 일반 성능 수정 사항을 확인해 보는 것이 좋습니다.
 
 ## <a name="recommended-unreal-project-settings"></a>권장 Unreal 프로젝트 설정
+
 **편집 > 프로젝트 설정** 에서 다음의 각 설정을 찾을 수 있습니다.
 
 1. 모바일 VR 렌더러 사용:
@@ -78,4 +79,5 @@ Unreal Engine에는 [혼합 현실에 대한 성능 권장 사항](../platform-c
 ![모바일 셰이더 순열 감소](images/unreal/performance-recommendations-img-08.png)
 
 ## <a name="see-also"></a>참조
+
 * [Unreal 엔진 모바일 성능 지침]( https://docs.unrealengine.com/Platforms/Mobile/Performance/index.html)

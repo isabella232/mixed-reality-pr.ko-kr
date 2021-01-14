@@ -1,22 +1,20 @@
 ---
-title: 다중 사용자 기능 자습서 - 2. Photon Unity 네트워킹 설정
-description: 이 과정을 완료하여 HoloLens 2 애플리케이션에서 Photon Unity Network를 구현하는 방법을 알아봅니다.
+title: Photon Unity 네트워킹 설정
+description: 이 과정을 완료하여 HoloLens 2 혼합 현실 애플리케이션에서 Photon Unity Network를 구현하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 062c39ab6973c7c71e305cfc7a695fb250c76596
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 8bf8d440cb47d817514e34c98ac45f34f495c2bb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679262"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007303"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Photon Unity 네트워킹 설정
-
-## <a name="overview"></a>개요
 
 이 자습서에서는 PUN(Photon Unity Networking)을 사용하여 공유 환경을 만들기 위해 준비합니다. PUN 앱을 만들고 PUN 자산을 Unity 프로젝트로 가져오고 Unity 프로젝트를 PUN 앱에 연결하는 방법을 알아봅니다.
 
@@ -30,14 +28,14 @@ ms.locfileid: "94679262"
 
 이 섹션에서는 새 Unity 프로젝트를 만들고 MRTK 개발을 준비합니다.
 
-이를 위해 먼저 [프로젝트 초기화 및 첫 번째 애플리케이션 배포](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
+먼저 [프로젝트 초기화 및 첫 번째 애플리케이션 배포](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
 
 1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름(예: *MRTK Tutorials*) 지정
-1. [빌드 플랫폼 전환](mr-learning-base-02.md#configuring-the-unity-project)
-1. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-1. [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-1. [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project)
-1. [장면 만들기 및 구성](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름(예: *MultiUserCapabilities*) 지정
+2. [빌드 플랫폼 전환](mr-learning-base-02.md#switching-the-build-platform)
+3. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+4. [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+5. [Unity 프로젝트 구성](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+6. [장면 만들기 및 구성](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름(예: *MultiUserCapabilities*) 지정
 
 그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 다음을 수행합니다.
 
@@ -50,7 +48,7 @@ Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 차례로 선택�
 
 ![Unity Player 설정](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-**게시 설정** 에서 **기능** 섹션까지 아래로 스크롤하여 위의 [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project) 단계 중에 사용하도록 설정한 **InternetClient**, **Microphone**, **SpatialPerception** 및 **GazeInput** 기능이 사용하도록 설정되어 있는지 다시 확인합니다.
+**게시 설정** 에서 **기능** 섹션까지 아래로 스크롤하여 위의 [Unity 프로젝트 구성](mr-learning-base-02.md#selecting-mrtk-and-project-settings) 단계 중에 사용하도록 설정한 **InternetClient**, **Microphone**, **SpatialPerception** 및 **GazeInput** 기능이 사용하도록 설정되어 있는지 다시 확인합니다.
 
 그런 다음, 다음과 같은 추가 기능을 사용하도록 설정합니다.
 
@@ -61,7 +59,7 @@ Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 차례로 선택�
 
 ## <a name="installing-inbuilt-unity-packages"></a>기본 제공 Unity 패키지 설치
 
-Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 [패키지 관리자] 창을 연 다음, **AR Foundation** 을 선택하고, **설치** 단추를 클릭하여 패키지를 설치합니다.
+Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 패키지 관리자 창을 연 다음, **AR Foundation** 을 선택하고, **설치** 단추를 클릭하여 패키지를 설치합니다.
 
 ![AR Foundation이 선택된 Unity Package Manager](images/mr-learning-sharing/sharing-02-section3-step1-1.png)
 
