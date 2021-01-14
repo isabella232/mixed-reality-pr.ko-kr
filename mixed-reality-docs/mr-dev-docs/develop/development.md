@@ -1,19 +1,19 @@
 ---
 layout: LandingPage
 title: 도구 및 아키텍처 알아보기
-description: HoloLens 및 몰입형 헤드셋에 대한 혼합 현실 개발자 설명서입니다.
+description: HoloLens 및 몰입형 헤드셋용 앱 만들기를 시작하는 데 필요한 혼합 현실 개발 도구에 대해 알아봅니다.
 author: grbury
 ms.author: grbury
 ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 개발, 개발, HoloLens, unity, unreal, directx, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, 가상 현실 개발, 증강 현실 개발
-ms.openlocfilehash: 75501e299b0bccbc35056ebb2da6657bd5d1e335
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 9bb0f1c62315bf106a0d6d45b8a2a24203ac9296
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925968"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007633"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>Mixed Reality 개발 소개
 

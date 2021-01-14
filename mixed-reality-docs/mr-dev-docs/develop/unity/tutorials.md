@@ -1,19 +1,19 @@
 ---
 layout: LandingPage
 title: 자습서
-description: 혼합 현실 개발에 대한 자습서를 제공합니다.
+description: HoloLens 및 Azure 서비스에 대해 제공하는 혼합 현실 개발 자습서를 최신 상태로 유지합니다.
 author: keveleigh
 ms.author: kurtie
 ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, unity, unreal, HoloLens, Azure spatial anchors, Azure Speech Services
-ms.openlocfilehash: a85792ba082450fb01f3c6f7bb008d3c7b17560b
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 76c8cdcddd9617df8e823b4967593c37fa1e6bb9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010464"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006523"
 ---
 # <a name="tutorials"></a>자습서
 
