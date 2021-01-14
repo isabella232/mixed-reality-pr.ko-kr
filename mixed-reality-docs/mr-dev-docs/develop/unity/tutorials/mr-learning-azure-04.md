@@ -1,5 +1,5 @@
 ---
-title: Azure 클라우드 자습서 - 4. Integrating Azure Spatial 통합
+title: Integrating Azure Spatial 통합
 description: 이 과정을 완료하여 HoloLens 2 애플리케이션 내에서 Azure Spatial Anchors를 구현하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, hololens 2, Azure spatial anchors, azure cloud services, azure custom vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 5245f3522e7822c16ebc0d0113634f152f223086
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 50e5bccf09e03ebda8057dbb3ca9d83fc01694bd
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679342"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008173"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Integrating Azure Spatial 통합
 
@@ -60,7 +60,7 @@ Hierarchy에서 **Anchor Manager** GameObject를 선택하고 Inspector 섹션�
 Azure Spatial Anchors는 Unity에서 실행할 수 없으므로 Azure Spatial Anchors 기능을 테스트하려면 프로젝트를 디바이스에 배포해야 합니다.
 
 > [!TIP]
-> Unity 프로젝트를 빌드하고 HoloLens 2에 배포하는 방법은 [HoloLens 2에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침을 참조하세요.
+> Unity 프로젝트를 빌드하고 HoloLens 2에 배포하는 방법은 [HoloLens 2에 애플리케이션 빌드]((mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) 지침을 참조하세요.
 
 ## <a name="run-the-app-on-your-hololens-2-and-follow-the-in-app-instructions"></a>HoloLens 2에서 앱 실행 및 앱 내 지침 수행
 
