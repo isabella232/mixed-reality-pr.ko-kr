@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens, 혼합 현실, 모던 헤드셋, 앱, uwp, 제출, 제출, 필터, 메타 데이터, 시스템 요구 사항, 키워드, wack, 인증, 패키지, appx, 머천다이징
-ms.openlocfilehash: 632bb9c0c5bdb93041f71a4382802b02f6817f0e
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: b729bd65413587d3ad3b05bef495349b60a6fffd
+ms.sourcegitcommit: 47a5c86b4694449c825902631777a9962a40e332
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757631"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98215978"
 ---
 # <a name="distributing-your-apps"></a>앱 배포
 
@@ -66,7 +66,7 @@ ms.locfileid: "97757631"
     <td><a href="submitting-an-app-to-the-microsoft-store.md"><strong>Microsoft Store</strong></a></td>
     <td>❌</td>
     <td>✔️</td>
-    <td>✔️</td>초
+    <td>✔️</td>
 </tr>
 <tr>
     <td><a href="https://docs.microsoft.com/hololens/app-deploy-store-business"><strong>비즈니스용 Microsoft Store</strong></a></td>
@@ -97,7 +97,7 @@ ms.locfileid: "97757631"
 
 * 오프 라인 상태인 동안 HoloLens 2 응용 프로그램을 설치 해야 하는 경우 [오프 라인 보안 HoloLens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) 지침을 참조 하거나 개발자 모드를 사용 하도록 설정 하지 않고 프로 비전 패키지를 통해 앱을 설치 합니다.
 
-* 빌드를 장치에 배포 하 고 [Visual Studio를 사용 하 여 배포 및 디버깅](../develop/platform-capabilities-and-apis/using-visual-studio.md) 하거나 [장치 포털로 응용 프로그램 패키지를 설치](https://docs.microsoft.com/hololens/holographic-custom-apps#installing-an-application-package-with-the-device-portal)하 여 개발자 모드를 사용 하는 다른 개발자와 공유할 수도 있습니다.
+* 빌드를 장치에 배포 하 고 [Visual Studio를 사용 하 여 배포 및 디버깅](../develop/platform-capabilities-and-apis/using-visual-studio.md) 하거나 [장치 포털로 응용 프로그램 패키지를 설치](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#sideloading-applications)하 여 개발자 모드를 사용 하는 다른 개발자와 공유할 수도 있습니다.
 
 ## <a name="see-also"></a>추가 정보
 * [Microsoft Store에서 응용 프로그램 찾기, 설치 및 제거](https://docs.microsoft.com/hololens/holographic-store-apps)
