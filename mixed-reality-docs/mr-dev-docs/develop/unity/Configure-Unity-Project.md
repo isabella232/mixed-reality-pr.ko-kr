@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, mixed reality, 개발, 시작, 새 프로젝트, Windows Mixed Reality, UWP, XR, 성능
-ms.openlocfilehash: 1d4acb80a7ad0c5143a4408829759aab0a2c012b
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 70df0314cb714d78c2eeb17335f67d6d90134770
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009903"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226452"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>MRTK를 사용하지 않고 프로젝트 구성
 
@@ -124,7 +124,7 @@ HoloLens에는 모바일 클래스 GPU가 있습니다. 앱이 HoloLens를 대�
 이제 프로젝트가 준비 되었으므로 혼합 현실 환경 개발을 시작할 수 있습니다.
 
 * [핵심 구성 요소](unity-development-overview.md#2-core-building-blocks) 추가
-* 사용 가능한 [플랫폼 기능 및 api](unity-development-overview.md#3-platform-capabilities-and-apis) 확인
+* 사용 가능한 [플랫폼 기능 및 api](unity-development-overview.md#3-advanced-features) 확인
 * [앱을 배포](../platform-capabilities-and-apis/using-visual-studio.md#deploying-an-app-to-your-local-pc---immersive-headset) 하는 방법 알아보기
 * [혼합 현실 시뮬레이터](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) 사용
 
