@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, 성능
 appliesto:
 - Windows 10
-ms.openlocfilehash: 00338e1354dc04acc76fa2525c721a5e2bd4afe2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 60854785d526c7abff6327ddbb8d39d4eef23ae4
+ms.sourcegitcommit: c904d47ab2ce03d433d5eff394ec4078f404a0f7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009473"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98242541"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP 반향 G2 질문과 대답
 
@@ -92,3 +92,13 @@ Windows PC에서 HP 반향 G2 마이크를 처음 인식 하면 입력 볼륨 �
 
 여기에서 활성 컨트롤러 바인딩을 "Custom"으로 변경 하 여 커뮤니티 공유 게임 바인딩을 시도 하는 옵션을 열 수 있습니다.
 이 게임에 대해 사용자 지정 게임 바인딩이 아직 공유 되지 않은 경우 (또는 시도한 사용자에 게 완전히 만족 하지 않는 경우) 사용자 지정 게임 바인딩을 만들 수도 있으며, 몇 가지 게임 세션 후에도 커뮤니티의 나머지 부분을 공유할 수도 있습니다.
+
+## <a name="i-have-all-cables-connected-to-the-headset-and-pc-but-it-wont-turn-on"></a>모든 케이블이 헤드셋 및 PC에 연결 되었지만 켜지 않음
+
+헤드셋에 연결 된 케이블이 완전히 끼워져 있는지 확인 합니다. 케이블이 완전히 삽입 된 경우 헤드셋의 위쪽 가장자리 옆에 줄이 있는 작은 점이 있습니다.
+
+![케이블 위쪽의 작은 점](images/small-dot.jpg)
+
+## <a name="how-can-i-power-down-the-headset-while-still-using-my-pc"></a>내 PC를 사용 하는 동안 헤드셋의 전원을 다운 하려면 어떻게 해야 하나요?
+
+헤드셋 케이블의 링크 상자에서 AC 연결 어댑터를 분리 하 여 헤드셋의 전원을 제거 합니다.
