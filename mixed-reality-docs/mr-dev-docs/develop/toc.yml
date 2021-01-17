@@ -176,8 +176,6 @@
           href: unity/openxr-supported-features.md
     - name: 기본 구성 요소
       items:
-        - name: MRTK 101 - Mixed Reality Toolkit Unity를 사용하여 핵심 상호 작용 빌드
-          href: unity/mrtk-101.md
         - name: 카메라
           href: unity/camera-in-unity.md
         - name: 좌표계
