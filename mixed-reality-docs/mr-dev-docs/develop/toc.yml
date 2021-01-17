@@ -20,25 +20,17 @@
       href: porting-apps/building-2d-apps.md
 - name: Unity
   items:
-    - name: Unity 개발 개요
+    - name: HoloLens용 Unity 개발
       href: unity/unity-development-overview.md
-    - name: 프로젝트 구성
-      items:
-        - name: MRTK 소개
-          href: unity/mrtk-getting-started.md
-        - name: MRTK를 사용하지 않고 프로젝트 구성
-          href: unity/configure-unity-project.md
-        - name: 혼합 현실 OpenXR 플러그 인 사용
-          href: unity/openxr-getting-started.md
-        - name: OpenXR 플러그 인 지원 기능
-          href: unity/openxr-supported-features.md
+    - name: VR용 Unity 개발
+      href: unity/unity-development-wmr-overview.md
     - name: 자습서
       items:
         - name: 개요
           href: unity/tutorials.md
         - name: HoloLens 2 자습서
           items:
-            - name: MRTK 자습서
+            - name: 초보자 MRTK 자습서
               items:
                 - name: 1. 소개
                   href: unity/tutorials/mr-learning-base-01.md
@@ -172,51 +164,63 @@
               href: unity/tutorials/mr-azure-312.md
             - name: MR 및 Azure 313 - IoT Hub 서비스
               href: unity/tutorials/mr-azure-301.md
-    - name: 핵심 구성 요소
+    - name: 프로젝트 설정
+      items:
+        - name: MRTK 소개
+          href: unity/mrtk-getting-started.md
+        - name: MRTK를 사용하지 않고 프로젝트 구성
+          href: unity/configure-unity-project.md
+        - name: 혼합 현실 OpenXR 플러그 인 사용
+          href: unity/openxr-getting-started.md
+        - name: OpenXR 플러그 인 지원 기능
+          href: unity/openxr-supported-features.md
+    - name: 기본 구성 요소
       items:
         - name: MRTK 101 - Mixed Reality Toolkit Unity를 사용하여 핵심 상호 작용 빌드
           href: unity/mrtk-101.md
-        - name: Unity의 카메라
+        - name: 카메라
           href: unity/camera-in-unity.md
-        - name: Unity의 좌표계
+        - name: 좌표계
           href: unity/coordinate-systems-in-unity.md
-        - name: Unity의 지속성
+        - name: 지속성
           href: unity/persistence-in-unity.md
-        - name: Unity의 응시
+        - name: 헤드 게이즈(head-gaze)
           href: unity/gaze-in-unity.md
-        - name: Unity의 텍스트
+        - name: 텍스트
           href: unity/text-in-unity.md
-        - name: Unity의 제스처 및 모션 컨트롤러
-          href: unity/gestures-and-motion-controllers-in-unity.md
-        - name: Unity에서 손 및 시선 추적
+        - name: 모션 컨트롤러
+          href: unity/motion-controllers-in-unity.md
+        - name: 제스처
+          href: unity/gestures-in-unity.md
+        - name: 손 및 시선 추적
           href: unity/hand-eye-in-unit.md
-        - name: Unity의 음성 입력
+        - name: 음성 입력
           href: unity/voice-input-in-unity.md
-        - name: Unity의 공간 매핑
+        - name: 공간 매핑
           href: unity/spatial-mapping-in-unity.md
-        - name: Unity의 공간 음향
+        - name: 공간 음향
           href: unity/spatial-sound-in-unity.md
-    - name: 플랫폼 기능 및 API
+    - name: 고급 기능
       items:
-        - name: Unity의 공유 환경
+        - name: 공유 환경
           href: unity/shared-experiences-in-unity.md
-        - name: Unity의 위치를 찾을 수 있는 카메라
+        - name: 위치를 찾을 수 있는 카메라
           href: unity/locatable-camera-in-unity.md
-        - name: Unity의 포커스 포인트
+        - name: 포커스 지점
           href: unity/focus-point-in-unity.md
-        - name: Unity의 손실 추적
+        - name: 추적 손실
           href: unity/tracking-loss-in-unity.md
-        - name: Unity의 키보드 입력
+        - name: 키보드 입력
           href: unity/keyboard-input-in-unity.md
         - name: HoloLens용 Unity 앱에서 Windows 네임스페이스 사용
           href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
-        - name: Unity의 혼합 현실 기본 개체
+        - name: Mixed Reality 기본 개체
           href: unity/unity-xrdevice-advanced.md
-        - name: Unity에서 Vuforia 사용
+        - name: Vuforia 사용
           href: unity/vuforia-development-overview.md
     - name: 몰입형 VR
       items:
-        - name: Unity의 HP Reverb G2 컨트롤러
+        - name: HP Reverb G2 컨트롤러
           href: unity/unity-reverb-g2-controllers.md
     - name: 샘플 앱
       items:
@@ -236,7 +240,7 @@
               href: unity/galaxy-explorer.md
             - name: 달착륙선
               href: unity/lunar-module.md
-    - name: 설정 및 디버깅
+    - name: 디버깅 및 성능
       items:
         - name: Unity IL2CPP를 사용하여 디버깅 관리
           href: unity/managed-debugging-with-unity-il2cpp.md
@@ -272,35 +276,35 @@
               href: unreal/tutorials/unreal-uxt-ch5.md
             - name: 패키징 및 배포
               href: unreal/tutorials/unreal-uxt-ch6.md
-    - name: 핵심 구성 요소
+    - name: 기본 구성 요소
       items:
-        - name: Unreal의 응시 입력
+        - name: 응시 입력
           href: unreal/unreal-gaze-input.md
-        - name: Unreal의 직접 추적
+        - name: 손 추적
           href: unreal/unreal-hand-tracking.md
-        - name: Unreal의 공간 매핑
+        - name: 공간 매핑
           href: unreal/unreal-spatial-mapping.md
-        - name: Unreal의 공간 오디오
+        - name: 공간 오디오
           href: unreal/unreal-spatial-audio.md
-        - name: Unreal의 로컬 공간 앵커
+        - name: 로컬 공간 앵커
           href: unreal/unreal-spatial-anchors.md
-        - name: Unreal의 Azure Spatial Anchors
+        - name: Azure 공간 앵커
           href: unreal/unreal-azure-spatial-anchors.md
-        - name: Unreal의 음성 입력
+        - name: 음성 입력
           href: unreal/unreal-voice-input.md
-    - name: 플랫폼 기능 및 API
+    - name: 고급 기능
       items:
-        - name: Unreal의 HoloLens 사진/비디오 카메라
+        - name: HoloLens 사진/비디오 카메라
           href: unreal/unreal-hololens-camera.md
-        - name: Unreal의 QR 코드
+        - name: QR 코드
           href: unreal/unreal-qr-codes.md
-        - name: Unreal의 UMG 및 키보드
+        - name: UMG 및 키보드
           href: unreal/unreal-umg-keyboard.md
-        - name: Unreal의 WinRT
+        - name: WinRT
           href: unreal/unreal-winrt.md
     - name: 몰입형 VR
       items:
-        - name: Unreal의 HP Reverb G2 컨트롤러
+        - name: HP Reverb G2 컨트롤러
           href: unreal/unreal-reverb-g2-controllers.md
     - name: 샘플 앱
       items:
@@ -308,17 +312,17 @@
           href: unreal/unreal-kippys-escape.md
     - name: 배포 및 성능
       items:
-        - name: Unreal의 디바이스에 배포
+        - name: 디바이스에 배포
           href: unreal/unreal-deploying.md
         - name: Microsoft Store에 게시
           href: unreal/unreal-publishing-to-store.md
-        - name: Unreal을 사용하기 위한 권장 성능
+        - name: 성능 추천 사항
           href: unreal/performance-recommendations-for-unreal.md
-        - name: Unreal의 재질 권장 사항
+        - name: 재질 권장 사항
           href: unreal/unreal-materials.md
         - name: Unreal Insights를 사용하여 프로파일링
           href: unreal/unreal-insights.md
-        - name: Unreal의 스트리밍
+        - name: 스트리밍
           href: unreal/unreal-streaming.md
 - name: 웹
   items:
