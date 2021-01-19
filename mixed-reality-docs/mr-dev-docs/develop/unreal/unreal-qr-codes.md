@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 기능, 설명서, 가이드, 홀로그램, qr 코드, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 1daa368ee9f98accec58c6621073bd7caefdfdcb
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d896af683a86a1b27e5d100df744222085574a93
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010013"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247746"
 ---
 # <a name="qr-codes-in-unreal"></a>Unreal의 QR 코드
 
@@ -85,7 +85,7 @@ QR 코드를 사용하기 위해서는 뒤에서 많은 작업이 필요하므�
 > [!div class="nextstepaction"]
 > [디바이스에 배포](unreal-deploying.md)
 
-언제든지 [Unreal 개발 검사점](unreal-development-overview.md#3-platform-capabilities-and-apis)으로 돌아갈 수 있습니다.
+언제든지 [Unreal 개발 검사점](unreal-development-overview.md#3-advanced-features)으로 돌아갈 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 * [공간 매핑](../../design/spatial-mapping.md)
