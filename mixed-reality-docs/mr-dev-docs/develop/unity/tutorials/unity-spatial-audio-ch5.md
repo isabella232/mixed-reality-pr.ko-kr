@@ -1,70 +1,72 @@
 ---
-title: 반향 효과를 이용해 공간 오디오에 거리감 부여
-description: 혼합 현실 응용 프로그램에서 공간 오디오에 대 한 거리 변동의 의미를 향상 시키기 위해 반향 효과를 추가 하는 방법에 대해 알아봅니다.
+title: 공간 오디오 자습서-5. 반향 효과를 이용해 공간 오디오에 거리감 부여
+description: 반향 효과를 추가 하 여 공간 오디오에 대 한 거리 변동의 의미를 향상 시킵니다.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head 관련 전송 함수, 반향, Microsoft Spatializer, 오디오 믹서, SFX 반향
-ms.openlocfilehash: 6c04ac1e4b52c7eb6104d54c184c789bec413852
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 3d19bb0b22c507eb692a752aa318ecb82a1cf2f7
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006363"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98578384"
 ---
-# <a name="using-reverb-to-add-distance-to-spatial-audio"></a><span data-ttu-id="4f545-104">반향 효과를 이용해 공간 오디오에 거리감 부여</span><span class="sxs-lookup"><span data-stu-id="4f545-104">Using reverb to add distance to spatial audio</span></span>
+# <a name="5-using-reverb-to-add-distance-to-spatial-audio"></a><span data-ttu-id="fd0da-105">5. 반향 효과를 이용해 공간 오디오에 거리감 부여</span><span class="sxs-lookup"><span data-stu-id="fd0da-105">5. Using reverb to add distance to spatial audio</span></span>
 
-## <a name="objectives"></a><span data-ttu-id="4f545-105">목표</span><span class="sxs-lookup"><span data-stu-id="4f545-105">Objectives</span></span>
+## <a name="overview"></a><span data-ttu-id="fd0da-106">개요</span><span class="sxs-lookup"><span data-stu-id="fd0da-106">Overview</span></span>
 
-<span data-ttu-id="4f545-106">이전 장에서는 spatialization를 소리에 추가 하 여 방향을 지정 했습니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-106">In previous chapters, we added spatialization to sounds to give them a sense of direction.</span></span> <span data-ttu-id="4f545-107">이 다섯 번째 장에서는 소리에 거리를 지정 하기 위해 반향 효과를 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-107">In this 5th chapter, we'll add a reverb effect to give sounds a sense of distance.</span></span> <span data-ttu-id="4f545-108">목표는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-108">Our objectives are to:</span></span>
-* <span data-ttu-id="4f545-109">반향을 추가 하 여 사운드 소스의 인식 된 거리 향상</span><span class="sxs-lookup"><span data-stu-id="4f545-109">Improve perceived distance of sound sources by adding reverb</span></span>
-* <span data-ttu-id="4f545-110">홀로그램에 대 한 수신기의 거리를 사용 하 여 소리의 인식 거리 제어</span><span class="sxs-lookup"><span data-stu-id="4f545-110">Control perceived distance of the sound using the listener's distance to the hologram</span></span>
+<span data-ttu-id="fd0da-107">이전 자습서에서는 소리에 대 한 spatialization를 추가 하 여이 자습서의 지침을 제공 합니다. 소리에 거리를 지정 하는 반향 효과를 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-107">In previous tutorial, you have added spatialization for the sounds to give them a sense of direction in this tutorial you'll add a reverb effect to give sounds a sense of distance.</span></span>
 
-## <a name="add-a-mixer-group-and-a-reverb-effect"></a><span data-ttu-id="4f545-111">믹서 그룹 및 반향 효과 추가</span><span class="sxs-lookup"><span data-stu-id="4f545-111">Add a mixer group and a reverb effect</span></span>
+## <a name="objectives"></a><span data-ttu-id="fd0da-108">목표</span><span class="sxs-lookup"><span data-stu-id="fd0da-108">Objectives</span></span>
 
-<span data-ttu-id="4f545-112">[2 장에서](unity-spatial-audio-ch2.md)는 믹서를 추가 했습니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-112">In [Chapter 2](unity-spatial-audio-ch2.md), we added a mixer.</span></span> <span data-ttu-id="4f545-113">믹서에는 기본적으로 **Master** 라는 **그룹** 하나가 포함 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-113">The mixer includes one **Group** by default called **Master**.</span></span> <span data-ttu-id="4f545-114">약간의 소리에 반향 효과를 적용 하려는 경우에만 해당 소리에 대해 두 번째 **그룹** 을 추가 해 보겠습니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-114">Because we'll only want to apply a reverb effect to some sounds, let's add a second **Group** for those sounds.</span></span> <span data-ttu-id="4f545-115">**그룹** 을 추가 하려면 **오디오 믹서** 에서 **마스터** 그룹을 마우스 오른쪽 단추로 클릭 하 고 **하위 그룹 추가** 를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-115">To add a **Group**, right click on the **Master** group in the **Audio Mixer** and choose **Add child group**:</span></span>
+* <span data-ttu-id="fd0da-109">반향을 추가 하 여 사운드 소스의 인식 된 거리를 개선 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-109">Improve perceived distance of sound sources by adding reverb.</span></span>
+* <span data-ttu-id="fd0da-110">홀로그램의 수신자 거리를 사용 하 여 사운드의 인식 거리를 제어 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-110">Control perceived distance of the sound using the listener's distance to the hologram.</span></span>
 
-![자식 그룹 추가](images/spatial-audio/add-child-group.png)
+## <a name="add-a-mixer-group-and-a-reverb-effect"></a><span data-ttu-id="fd0da-111">믹서 그룹 및 반향 효과 추가</span><span class="sxs-lookup"><span data-stu-id="fd0da-111">Add a mixer group and a reverb effect</span></span>
 
-<span data-ttu-id="4f545-117">이 예제에서는 새 그룹 "방 효과"의 이름을 지정 했습니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-117">In this example, we've named the new group "Room Effect".</span></span>
+<span data-ttu-id="fd0da-112">[Spatializing button 인터랙션 소리 자습서](unity-spatial-audio-ch2.md)에서 믹서를 추가 했습니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-112">In [Spatializing button interaction sounds Tutorial](unity-spatial-audio-ch2.md), we added a mixer.</span></span> <span data-ttu-id="fd0da-113">믹서에는 기본적으로 **Master** 라는 **그룹** 하나가 포함 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-113">The mixer includes one **Group** by default called **Master**.</span></span> <span data-ttu-id="fd0da-114">약간의 소리에 반향 효과를 적용 하려는 경우에만 해당 소리에 대해 두 번째 그룹을 추가 해 보겠습니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-114">Because we'll only want to apply a reverb effect to some sounds, let's add a second Group for those sounds.</span></span> <span data-ttu-id="fd0da-115">그룹을 추가 하려면 **오디오 믹서** 에서 마스터 그룹을 마우스 오른쪽 단추로 클릭 하 고, **하위 그룹 추가** 를 선택 하 고, 적합 한 이름을 지정 _합니다. 예_:</span><span class="sxs-lookup"><span data-stu-id="fd0da-115">To add a Group, right click on the Master group in the **Audio Mixer** choose **Add child group** and give suitable name for example _Room Effect_:</span></span>
 
-<span data-ttu-id="4f545-118">각 **그룹** 에는 고유한 영향 집합이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-118">Each **Group** has its own set of effects.</span></span> <span data-ttu-id="4f545-119">새 그룹에서 **추가 ...** 를 클릭 하 고 **SFX 반향** 를 선택 하 여 새 그룹에 반향 효과를 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-119">Add a reverb effect to the new group by clicking **Add...** on the new group, and choosing **SFX Reverb**:</span></span>
+![자식 그룹 추가](images/spatial-audio/spatial-audio-05-section1-step1-1.png)
 
-![SFX 반향 추가](images/spatial-audio/add-sfx-reverb.png)
+<span data-ttu-id="fd0da-117">각 **그룹** 에는 고유한 영향 집합이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-117">Each **Group** has its own set of effects.</span></span> <span data-ttu-id="fd0da-118">새 그룹에서 **추가 ...** 를 클릭 하 고 **SFX 반향** 를 선택 하 여 새 그룹에 반향 효과를 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-118">Add a reverb effect to the new group by clicking **Add...** on the new group, and choosing **SFX Reverb**:</span></span>
 
-<span data-ttu-id="4f545-121">오디오 용어로 원래의 unreverberated 오디오를 _마른 경로_ 라고 하며, 반향 필터를 사용 하 여 필터링 한 후의 오디오를도로 _경로_ 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-121">In audio terminology, the original, unreverberated audio is called the _dry path_, and the audio after filtering with the reverb filter is called the _wet path_.</span></span> <span data-ttu-id="4f545-122">두 경로는 모두 오디오 출력으로 전송 되 고, 이러한 혼합의 상대적인 강도를 고 지 _/건조_ 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-122">Both paths are sent to the audio output, and their relative strengths in this mixture is called the _wet/dry mix_.</span></span> <span data-ttu-id="4f545-123">가 중/마른 조합은 거리의 의미에 크게 영향을 줍니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-123">The wet/dry mix strongly affects the sense of distance.</span></span>
+![SFX 반향 추가](images/spatial-audio/spatial-audio-05-section1-step1-2.png)
 
-<span data-ttu-id="4f545-124">**SFX 반향** 에는 효과 내에서도로/마른 조합을 조정 하는 컨트롤이 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-124">The **SFX Reverb** includes controls to adjust the wet/dry mix within the effect.</span></span> <span data-ttu-id="4f545-125">**Microsoft Spatializer** 플러그 인은 마른 경로를 처리 하기 때문에 **SFX 반향** 를 사용 하 고 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-125">Because the **Microsoft Spatializer** plugin handles the dry path, we'll be using the **SFX Reverb** only for the wet path.</span></span> <span data-ttu-id="4f545-126">**SFX 반향** 의 **검사기** 창에서 다음을 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-126">On the **Inspector** pane of your **SFX Reverb**:</span></span>
-* <span data-ttu-id="4f545-127">마른 수준 속성을 가장 낮은 설정 (-1만 mB)로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-127">Set the Dry Level property to the lowest setting (-10000 mB)</span></span>
-* <span data-ttu-id="4f545-128">방 속성을 가장 높은 설정 (0mb)으로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-128">Set the Room property to the highest setting (0 mB)</span></span>
+<span data-ttu-id="fd0da-120">오디오 용어로 원래의 unreverberated 오디오를 _마른 경로_ 라고 하며, 반향 필터를 사용 하 여 필터링 한 후의 오디오를도로 _경로_ 라고 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-120">In audio terminology, the original, unreverberated audio is called the _dry path_, and the audio after filtering with the reverb filter is called the _wet path_.</span></span> <span data-ttu-id="fd0da-121">두 경로는 모두 오디오 출력으로 전송 되 고, 이러한 혼합의 상대적인 강도를 고 지 _/건조_ 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-121">Both paths are sent to the audio output, and their relative strengths in this mixture is called the _wet/dry mix_.</span></span> <span data-ttu-id="fd0da-122">가 중/마른 조합은 거리의 의미에 크게 영향을 줍니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-122">The wet/dry mix strongly affects the sense of distance.</span></span>
 
-<span data-ttu-id="4f545-129">이러한 변경 후에는 **SFX 반향** 의 **검사기** 창이 다음과 같이 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-129">After these changes, the **Inspector** pane of the **SFX Reverb** will look like this:</span></span>
+<span data-ttu-id="fd0da-123">**SFX 반향** 에는 효과 내에서도로/마른 조합을 조정 하는 컨트롤이 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-123">The **SFX Reverb** includes controls to adjust the wet/dry mix within the effect.</span></span> <span data-ttu-id="fd0da-124">**Microsoft Spatializer** 플러그 인은 마른 경로를 처리 하기 때문에 **SFX 반향** 를 사용 하 고 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-124">Because the **Microsoft Spatializer** plugin handles the dry path, we'll be using the **SFX Reverb** only for the wet path.</span></span> <span data-ttu-id="fd0da-125">**SFX 반향** 의 검사기 창에서 다음을 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-125">On the Inspector pane of your **SFX Reverb**:</span></span>
 
-![SFX 반향 속성](images/spatial-audio/sfx-reverb-properties.png)
+* <span data-ttu-id="fd0da-126">**마른 수준** 속성을 가장 낮은 설정 (-1만 mB)로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-126">Set the **Dry Level** property to the lowest setting (-10000 mB)</span></span>
+* <span data-ttu-id="fd0da-127">**방 속성** 을 가장 높은 설정 (0mb)으로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-127">Set the **Room property** to the highest setting (0 mB)</span></span>
 
-<span data-ttu-id="4f545-131">다른 설정은 시뮬레이트된 대화방의 느낌을 제어 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-131">The other settings control the feel of the simulated room.</span></span> <span data-ttu-id="4f545-132">특히, **감소 시간은** 인식 된 대화방 크기와 관련이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-132">In particular, **Decay Time** is related to perceived room size.</span></span> 
+![SFX 반향 속성](images/spatial-audio/spatial-audio-05-section1-step1-3.png)
 
-## <a name="enable-reverb-on-the-video-playback"></a><span data-ttu-id="4f545-133">비디오 재생에서 반향 사용</span><span class="sxs-lookup"><span data-stu-id="4f545-133">Enable reverb on the video playback</span></span>
+<span data-ttu-id="fd0da-129">다른 설정은 시뮬레이트된 대화방의 느낌을 제어 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-129">The other settings control the feel of the simulated room.</span></span> <span data-ttu-id="fd0da-130">특히, **감소 시간은** 인식 된 대화방 크기와 관련이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-130">In particular, **Decay Time** is related to perceived room size.</span></span>
 
-<span data-ttu-id="4f545-134">오디오 원본에서 반향를 사용 하도록 설정 하는 두 가지 단계가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-134">There are two steps to enable reverb on an audio source:</span></span>
-* <span data-ttu-id="4f545-135">**오디오 소스** 를 해당 **그룹** 으로 라우팅합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-135">Route the **Audio Source** to the appropriate **Group**</span></span>
-* <span data-ttu-id="4f545-136">처리를 위해 오디오를 **그룹** 에 전달 하도록 **Microsoft Spatializer** 플러그 인을 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-136">Set the **Microsoft Spatializer** plugin to pass audio into the **Group** for processing</span></span>
+## <a name="enable-reverb-on-the-video-playback"></a><span data-ttu-id="fd0da-131">비디오 재생에서 반향 사용</span><span class="sxs-lookup"><span data-stu-id="fd0da-131">Enable reverb on the video playback</span></span>
 
-<span data-ttu-id="4f545-137">다음 단계에서는 오디오 라우팅을 제어 하도록 스크립트를 조정 하 고 **Microsoft Spatializer** 플러그 인과 함께 제공 되는 컨트롤 스크립트를 연결 하 여 데이터를 반향에 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-137">In the following steps, we'll adjust our script to control the audio routing, and attach a control script provided with the **Microsoft Spatializer** plugin to feed data into the reverb.</span></span>
+<span data-ttu-id="fd0da-132">오디오 원본에서 반향를 사용 하도록 설정 하는 두 가지 단계가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-132">There are two steps to enable reverb on an audio source:</span></span>
 
-<span data-ttu-id="4f545-138">**쿼드** 의 **검사기** 창에서 **구성 요소 추가** 를 클릭 하 고 **방 효과 보내기 수준** 스크립트를 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-138">On the **Inspector** pane for the **Quad**, click **Add Component** and add the **Room Effect Send Level** script:</span></span>
+* <span data-ttu-id="fd0da-133">**오디오 소스** 를 해당 **그룹** 으로 라우팅합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-133">Route the **Audio Source** to the appropriate **Group**</span></span>
+* <span data-ttu-id="fd0da-134">처리를 위해 오디오를 **그룹** 에 전달 하도록 **Microsoft Spatializer** 플러그 인을 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-134">Set the **Microsoft Spatializer** plugin to pass audio into the **Group** for processing</span></span>
 
-![송신 수준 스크립트 추가](images/spatial-audio/add-send-level-script.png)
+<span data-ttu-id="fd0da-135">다음 단계에서는 오디오 라우팅을 제어 하도록 스크립트를 조정 하 고 **Microsoft Spatializer** 플러그 인과 함께 제공 된 제어 스크립트를 연결 하 여 데이터를 반향에 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-135">In the following steps, you will adjust the script to control the audio routing, and attach a control script provided with the **Microsoft Spatializer** plugin to feed data into the reverb.</span></span>
+
+<span data-ttu-id="fd0da-136">계층 구조에서 **4** 를 선택한 상태에서 검사기 창에서 **구성 요소 추가** 를 클릭 하 고 **방 효과 보내기 수준 (스크립트)** 을 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-136">With the **Quad** selected in the Hierarchy click **Add Component** On the Inspector window and add the **Room Effect Send Level(Script)**:</span></span>
+
+![송신 수준 스크립트 추가](images/spatial-audio/spatial-audio-05-section2-step1-1.png)
 
 > [!NOTE]
-> <span data-ttu-id="4f545-140">**Microsoft Spatializer** 플러그 인의 **공간 효과 보내기 수준** 기능을 사용 하도록 설정 하지 않으면 효과 처리를 위해 오디오를 Unity 오디오 엔진으로 다시 보내지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-140">Unless you enable **Room Effect Send Level** feature of the **Microsoft Spatializer** plugin, it doesn't send any audio back to the Unity audio engine for effect processing.</span></span>
+> <span data-ttu-id="fd0da-138">**Microsoft Spatializer** 플러그 인의 **공간 효과 보내기 수준** 기능을 사용 하도록 설정 하지 않으면 효과 처리를 위해 오디오를 Unity 오디오 엔진으로 다시 보내지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-138">Unless you enable **Room Effect Send Level** feature of the **Microsoft Spatializer** plugin, it doesn't send any audio back to the Unity audio engine for effect processing.</span></span>
 
-<span data-ttu-id="4f545-141">**대화방 효과 송신 수준** 구성 요소에는 반향 처리를 위해 Unity 오디오 엔진으로 보낸 오디오의 수준을 설정 하는 그래프 컨트롤이 포함 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-141">The **Room Effect Send Level** component includes a graph control that sets the level of the audio sent to the Unity audio engine for reverb processing.</span></span> <span data-ttu-id="4f545-142">곡선을 클릭 하 고 아래로 끌어 수준을 about-30dB로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-142">Click and drag the curve downwards to set the level to about -30dB:</span></span>
+<span data-ttu-id="fd0da-139">**대화방 효과 송신 수준** 구성 요소에는 반향 처리를 위해 Unity 오디오 엔진으로 보낸 오디오의 수준을 설정 하는 그래프 컨트롤이 포함 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-139">The **Room Effect Send Level** component includes a graph control that sets the level of the audio sent to the Unity audio engine for reverb processing.</span></span> <span data-ttu-id="fd0da-140">그래프 컨트롤을 열려면 **방 효과 보내기 수준을** 클릭 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-140">To open the graph control, click on the **Room Effect Send Level**.</span></span>  <span data-ttu-id="fd0da-141">녹색 곡선을 클릭 하 여 아래쪽으로 끌어서 수준을 about-30dB로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-141">Click and drag the green curve downwards to set the level to about -30dB:</span></span>
 
-![반향 곡선 조정](images/spatial-audio/adjust-reverb-curve.png)
+![반향 곡선 조정](images/spatial-audio/spatial-audio-05-section2-step1-2.png)
 
-<span data-ttu-id="4f545-144">다음으로 **SpatializeOnOff** 스크립트에서 주석 처리 된 4 줄의 주석 처리를 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-144">Next, uncomment the 4 commented lines in the **SpatializeOnOff** script.</span></span> <span data-ttu-id="4f545-145">이제 스크립트는 다음과 같이 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-145">The script will now look like this:</span></span>
+<span data-ttu-id="fd0da-143">다음으로 **SpatializeOnOff** 스크립트에서 주석 처리 된 4 줄의 주석 처리를 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-143">Next, uncomment the 4 commented lines in the **SpatializeOnOff** script.</span></span> <span data-ttu-id="fd0da-144">이제 스크립트는 다음과 같이 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-144">The script will now look like this:</span></span>
+
 ```c#
 using System.Collections;
 using System.Collections.Generic;
@@ -120,18 +122,18 @@ public class SpatializeOnOff : MonoBehaviour
 }
 ```
 
-<span data-ttu-id="4f545-146">이러한 줄 주석 처리 스크립트에 대 한 두 개의 속성을 **검사기** 창에 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-146">Uncommenting these lines adds two properties to the **Inspector** pane for the script.</span></span> <span data-ttu-id="4f545-147">이를 설정 하려면 **쿼드** **Spatialize on Off** 구성 요소의 **검사기** 창에서 다음을 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-147">To set these, on the **Inspector** pane of the **Spatialize On Off** component of the **Quad**:</span></span>
-* <span data-ttu-id="4f545-148">**방 효과 그룹** 속성을 새 대화방 효과 믹서 그룹으로 설정</span><span class="sxs-lookup"><span data-stu-id="4f545-148">Set the **Room Effect Group** property to your new Room Effect mixer group</span></span>
-* <span data-ttu-id="4f545-149">마스터 **그룹** 속성을 마스터 믹서 그룹으로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-149">Set the **Master Group** property to the Master mixer group</span></span>
+<span data-ttu-id="fd0da-145">이러한 줄이 주석 처리가 제거 되 면 **SpatializeOnOff 스크립트** 의 검사기에 두 개의 속성을 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-145">Once these lines are Uncommented  it adds two properties to the Inspector of the **SpatializeOnOff script**.</span></span> <span data-ttu-id="fd0da-146">이를 **4** 개의 **SpatializeOnOff** 구성 요소에 대 한 검사기 창에 할당 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-146">assign these on the Inspector window of **SpatializeOnOff** component of the **Quad**.</span></span>
 
-<span data-ttu-id="4f545-150">이러한 변경 후 **Spatialize On Off** 속성은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-150">After these changes, the **Spatialize On Off** properties will look like this:</span></span>
+<span data-ttu-id="fd0da-147">계층 구조에서 4 개의 개체가 선택 된 상태에서 검사기 창은 **SpatializeOnOff 스크립트** 구성 요소를 찾습니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-147">With the Quad object still selected in the Hierarchy , in the Inspector window locate the **SpatializeOnOff Script** component and :</span></span>
 
-![Spatialize On Off 확장](images/spatial-audio/spatialize-on-off-extended.png)
+* <span data-ttu-id="fd0da-148">**방 효과 그룹** 속성을 새 대화방 효과 믹서 그룹으로 설정</span><span class="sxs-lookup"><span data-stu-id="fd0da-148">Set the **Room Effect Group** property to your new Room Effect mixer group</span></span>
+* <span data-ttu-id="fd0da-149">마스터 **그룹** 속성을 마스터 믹서 그룹으로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-149">Set the **Master Group** property to the Master mixer group</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="4f545-152">다음 단계</span><span class="sxs-lookup"><span data-stu-id="4f545-152">Next steps</span></span>
+![Spatialize On Off 확장](images/spatial-audio/spatial-audio-05-section2-step1-3.png)
 
-<span data-ttu-id="4f545-153">HoloLens 2 또는 Unity 편집기에서 앱을 사용해 보세요.</span><span class="sxs-lookup"><span data-stu-id="4f545-153">Try out your app on a HoloLens 2 or in the Unity editor.</span></span> <span data-ttu-id="4f545-154">이제 앱에서 단추를 터치 하 여 spatialization를 활성화 하는 경우 스크립트는 비디오의 오디오를 대화방 효과 그룹으로 라우팅하고 반향를 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-154">Now, when touching the button in the app to activate spatialization, the script will route the video's audio to the Room Effect Group to add reverb.</span></span> <span data-ttu-id="4f545-155">스테레오로 전환 하는 경우 오디오를 마스터 그룹으로 라우팅하고 반향를 추가 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-155">When switching to stereo, it will route the audio to the Master group, and avoid adding reverb.</span></span>
+## <a name="congratulations"></a><span data-ttu-id="fd0da-151">축하합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-151">Congratulations</span></span>
 
-<span data-ttu-id="4f545-156">Unity 용 HoloLens 2 공간 오디오 자습서를 완료 했습니다.</span><span class="sxs-lookup"><span data-stu-id="4f545-156">You've completed the HoloLens 2 spatial audio tutorials for Unity.</span></span> <span data-ttu-id="4f545-157">축하합니다!</span><span class="sxs-lookup"><span data-stu-id="4f545-157">Congratulations!</span></span>
+<span data-ttu-id="fd0da-152">Unity 용 HoloLens 2 공간 오디오 자습서를 완료 했습니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-152">You've completed the HoloLens 2 spatial audio tutorials for Unity.</span></span> <span data-ttu-id="fd0da-153">HoloLens 2 또는 Unity에서 앱을 사용해 보세요.</span><span class="sxs-lookup"><span data-stu-id="fd0da-153">Try out the app on a HoloLens 2 or Unity.</span></span> <span data-ttu-id="fd0da-154">앱에서 단추를 클릭 하 여 spatialization을 활성화 하면 스크립트는 비디오의 오디오를 대화방 효과 그룹으로 라우팅하고 반향를 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-154">When you click the button in the app to activate spatialization, the script will route the video's audio to the Room Effect Group to add reverb.</span></span> <span data-ttu-id="fd0da-155">스테레오로 전환 하는 경우 오디오를 마스터 그룹으로 라우팅하고 반향를 추가 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="fd0da-155">When switching to stereo, it will route the audio to the Master group, and avoid adding reverb.</span></span>
 
-
+> [!TIP]
+> <span data-ttu-id="fd0da-156">Unity 프로젝트를 빌드하고 HoloLens 2에 배포하는 방법은 [HoloLens 2에 앱 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="fd0da-156">For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your app to your HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.</span></span>
