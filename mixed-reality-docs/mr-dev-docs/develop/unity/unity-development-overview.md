@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 혼합 현실, 개발, 시작, 새 프로젝트, 포팅, 기능, 카메라, 시뮬레이션, 에뮬레이션, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 공간 매핑, 음성 입력, 위치를 찾을 수 있는 카메라, 에뮬레이터, Azure, 자습서
-ms.openlocfilehash: 28ddaeed4218dc3433e13122806a2032e335dd56
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: c5b7683574378565c71e95bc6205be3dbf92fcaf
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031989"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226442"
 ---
 # <a name="unity-development-for-hololens"></a>HoloLens용 Unity 개발
 
@@ -49,7 +49,7 @@ Unity에서 개발하는 가장 쉬운 방법은 Mixed Reality Toolkit를 사용
 
 [!INCLUDE[](../includes/unity-building-blocks.md)]
 
-### <a name="3-platform-capabilities-and-apis"></a>3. 플랫폼 기능 및 API
+### <a name="3-advanced-features"></a>3. 고급 기능
 
 혼합 현실 애플리케이션에서 역할을 수행하는 다른 주요 기능은 추가 패키지 또는 설정 없이 Unity API를 통해 사용할 수 있습니다. 이러한 기능은 MRTK의 설치 여부에 관계없이 Unity 프로젝트에 추가할 수 있습니다. Unity에서 제공하는 고급 기능을 자세히 살펴보았으면 더 깊고 복잡한 Mixed Reality 앱을 빌드할 수 있습니다.
 

@@ -17,9 +17,9 @@
 - name: HoloLens 하드웨어
   items:
     - name: HoloLens 2 하드웨어 세부 정보
-      href: 'https://docs.microsoft.com/hololens/hololens2-hardware'
+      href: /hololens/hololens2-hardware
     - name: HoloLens(1세대) 하드웨어 세부 정보
-      href: 'https://docs.microsoft.com/hololens/hololens1-hardware'
+      href: /hololens/hololens1-hardware
 - name: 몰입형 헤드셋
   items:
     - name: 몰입형 헤드셋 하드웨어 세부 정보
@@ -27,7 +27,7 @@
     - name: Windows Mixed Reality 홈 탐색
       href: navigating-the-windows-mixed-reality-home.md
     - name: VR 마니아 가이드
-      href: 'https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/'
+      href: /windows/mixed-reality/enthusiast-guide/
     - name: 위치 기반 엔터테인먼트
       href: location-based-experiences.md
 - name: 커뮤니티 리소스

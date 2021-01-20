@@ -44,7 +44,7 @@
 ### [몰입형 헤드셋 상태, 안전 및 편안함](wmr-health-safety-comfort.md)
 ### [혼합 현실 소프트웨어 개요 및 릴리스 기록](mixed-reality-software.md)
 ### [내부에서 외부로 추적의 작동 방식](tracking-system.md)
-### [Unity의 HP Reverb G2 컨트롤러](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-### [Unreal의 HP Reverb G2 컨트롤러](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+### [Unity의 HP Reverb G2 컨트롤러](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+### [Unreal의 HP Reverb G2 컨트롤러](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 
 ## [기여 가이드](contributing.md)
