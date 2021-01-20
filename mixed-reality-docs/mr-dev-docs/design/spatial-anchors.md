@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 좌표계, 공간 좌표계, 세계 크기 조정, 전 세계, 눈금, 위치, 방향, 앵커, 공간 고정, 세계 잠긴, 세계 잠금, 지 속성, 공유, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens
-ms.openlocfilehash: 2db88f9bc5d128f4a9eb42cfb5211d0597b43cfa
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b11dc8cada8b67a21795dd9838579fc5dd735e6d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009113"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583264"
 ---
 # <a name="spatial-anchors"></a>Spatial Anchors
 
@@ -19,8 +19,8 @@ ms.locfileid: "98009113"
 
 또한 응용 프로그램 세션 및 장치 간에 공간 앵커를 유지 하 고 공유할 수 있습니다.
 * 로컬 공간 앵커를 디스크에 저장 하 고 나중에 다시 로드 하면 응용 프로그램은 단일 HoloLens의 여러 응용 프로그램 세션에서 실제 세계의 동일한 위치를 계산할 수 있습니다.
-* <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 공간</a> 앵커를 사용 하 여 클라우드 앵커를 만들면 응용 프로그램은 여러 HoloLens, IOS 및 Android 장치에서 공간 앵커를 공유할 수 있습니다. 각 장치가 동일한 공간 앵커를 사용 하 여 홀로그램을 렌더링 하도록 하면 홀로그램은 실제 세계의 동일한 위치에 표시 됩니다. 이렇게 실제 세계 공유 환경을 제공합니다.
-* HoloLens, iOS 및 Android 장치에서 비동기 홀로그램 지 속성에 대해 <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a> 를 사용할 수도 있습니다. 내구성이 있는 클라우드 공간 앵커를 공유 하 여 여러 장치는 동시에 함께 제공 되지 않더라도 시간이 지남에 따라 동일한 지속형 홀로그램을 관찰할 수 있습니다.
+* <a href="/azure/spatial-anchors/overview" target="_blank">Azure 공간</a> 앵커를 사용 하 여 클라우드 앵커를 만들면 응용 프로그램은 여러 HoloLens, IOS 및 Android 장치에서 공간 앵커를 공유할 수 있습니다. 각 장치가 동일한 공간 앵커를 사용 하 여 홀로그램을 렌더링 하도록 하면 홀로그램은 실제 세계의 동일한 위치에 표시 됩니다. 이렇게 실제 세계 공유 환경을 제공합니다.
+* HoloLens, iOS 및 Android 장치에서 비동기 홀로그램 지 속성에 대해 <a href="/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a> 를 사용할 수도 있습니다. 내구성이 있는 클라우드 공간 앵커를 공유 하 여 여러 장치는 동시에 함께 제공 되지 않더라도 시간이 지남에 따라 동일한 지속형 홀로그램을 관찰할 수 있습니다.
 
 5 미터 지름 내에 유지 되는 테더 링 된 desktop 헤드셋에 대 한 대규모 또는 공간 규모의 환경을 위해 일반적으로 모든 콘텐츠를 렌더링할 단일 좌표계를 제공 하는 공간 앵커 대신 [스테이지 프레임](coordinate-systems.md#stage-frame-of-reference) 을 사용할 수 있습니다. 그러나 응용 프로그램에서 사용자가 HoloLens에서 5 미터를 wander 수 있는 경우 건물 전체에 걸쳐 작동 하는 경우 콘텐츠를 안정적으로 유지 하려면 공간 앵커가 필요 합니다.
 
@@ -71,11 +71,11 @@ ms.locfileid: "98009113"
 
 클라우드 공간 앵커의 경우 상황에 따라 스토리지를 확장할 수 있습니다. 필요한 만큼 클라우드 앵커를 저장 하 고 사용자에 게 다시 앵커가 필요 하지 않을 때 릴리스를 해제할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [좌표계](coordinate-systems.md)
 * [혼합 현실의 공유 환경](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [Unity의 지속성](../develop/unity/persistence-in-unity.md)
 * [DirectX의 공간 앵커](../develop/native/coordinate-systems-in-directx.md#place-holograms-in-the-world-using-spatial-anchors)
 * [사례 연구 - 현실의 구멍 속 살펴보기](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

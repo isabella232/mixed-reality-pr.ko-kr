@@ -6,12 +6,12 @@ ms.author: dobrown
 ms.date: 05/15/2019
 ms.topic: article
 keywords: vr, lbe, 위치 기반 엔터테인먼트, vr 아케이드, 아케이드, 모던, qr, qr 코드, hololens2
-ms.openlocfilehash: 7e5931e0d23ef6c905b8ec54d08e572a89e747e0
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 08ed651deaab0c230142f45b93858f41ee300323
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009403"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583144"
 ---
 # <a name="qr-code-tracking"></a>QR 코드 추적
 
@@ -21,7 +21,7 @@ HoloLens 2는 헤드셋 주변 환경의 QR 코드를 감지하여 각 코드의
 
 <table>
 <tr>
-<th>기능</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (첫 번째 gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
+<th>기능</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens (첫 번째 gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
 </tr><tr>
 <td> QR 코드 검색</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
 </tr>
@@ -128,7 +128,7 @@ private:
 
 QR SDK를 직접 사용 하는 경우 Z 축이 문서를 가리키고 (표시 되지 않음) Unity 좌표로 변환 되 면 Z 축 지점은 용지에서 제외 되며 왼쪽으로 전달 됩니다.
 
-QR 코드의 SpatialCoordinateSystem은 표시 된 대로 정렬 됩니다. <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview:: CreateCoordinateSystemForNode</a> 를 호출 하 고 코드의 SpatialGraphNodeId를 전달 하 여 플랫폼에서 좌표계를 가져올 수 있습니다.
+QR 코드의 SpatialCoordinateSystem은 표시 된 대로 정렬 됩니다. <a href="/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview:: CreateCoordinateSystemForNode</a> 를 호출 하 고 코드의 SpatialGraphNodeId를 전달 하 여 플랫폼에서 좌표계를 가져올 수 있습니다.
 
 아래 c + + 코드는 사각형을 만들고 QR 코드의 좌표계를 사용 하 여 삽입 하는 방법을 보여 줍니다.
 
@@ -222,7 +222,7 @@ Windows Mixed Reality 장치는 드라이버의 시스템 수준에서 QR 코드
 특정 타임 스탬프 보다 오래 된 QR 코드를 무시 하도록 앱을 구성 하는 것이 좋습니다. 현재이 API는 QR 코드 기록 지우기를 지원 하지 않습니다.
 
 ### <a name="qr-code-placement-in-a-space"></a>공간에서 QR 코드 배치
-QR 코드를 저장 하는 위치 및 방법에 대 한 권장 사항은 [HoloLens 환경 고려 사항](../../environment-considerations-for-hololens.md)을 참조 하세요.
+QR 코드를 저장 하는 위치 및 방법에 대 한 권장 사항은 [HoloLens 환경 고려 사항](/hololens/hololens-environment-considerations)을 참조 하세요.
 
 ## <a name="qr-api-reference"></a>QR API 참조
 
@@ -458,6 +458,6 @@ namespace Microsoft.MixedReality.QR
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [좌표계](../../design/coordinate-systems.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>
+* <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>

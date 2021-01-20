@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: 제스처, unity, 응시, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 2a968235abaeff9187580b7f5f77263b27c38c28
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 44c42abdd4628cacd6af334a916fb725da8bb022
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192960"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583889"
 ---
 # <a name="gestures-in-unity"></a>Unity의 제스처
 
@@ -145,7 +145,7 @@ Throw는 향후 Windows 업데이트를 사용 하 여 계속 개선 되며 여�
 - [MR 입력 211: 제스처](tutorials/holograms-211.md)
 - [MR 입력 213: 모션 컨트롤러](../../deprecated/mixed-reality-213.md)
 
-[![MR 입력 213-동작 컨트롤러](images/mr213-main-600px.jpg)](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-213)<br>
+[![MR 입력 213-동작 컨트롤러](images/mr213-main-600px.jpg)](/windows/mixed-reality/mixed-reality-213)<br>
 *MR 입력 213-동작 컨트롤러*
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
@@ -153,7 +153,7 @@ Throw는 향후 Windows 업데이트를 사용 하 여 계속 개선 되며 여�
 앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
-> [손 및 시선 추적](hand-eye-in-unit.md)
+> [손 및 시선 추적](./hand-eye-in-unity.md)
 
 또는 Mixed Reality 플랫폼 기능 및 API로 이동합니다.
 

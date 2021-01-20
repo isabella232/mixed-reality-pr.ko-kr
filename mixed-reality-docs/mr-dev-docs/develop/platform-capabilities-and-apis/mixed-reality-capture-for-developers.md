@@ -6,19 +6,19 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: mrc, 사진, 비디오, 캡처, 카메라
-ms.openlocfilehash: 88b31d139f01c6cbe0567203e39f7640270f7716
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
+ms.openlocfilehash: cbdd99ab7ab405163fb7e0ba366ee85f8bcc634d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98247726"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583677"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>개발자를 위한 혼합 현실 캡처
 
 > [!NOTE]
 > HoloLens 2에 대 한 새로운 MRC 기능에 대 한 지침은 아래의 [PV 카메라에서 렌더링](#render-from-the-pv-camera-opt-in) 을 참조 하세요.
 
-언제 든 지 [혼합 현실 캡처](../../mixed-reality-capture.md) (mrc) 사진 또는 비디오를 사용할 수 있지만 응용 프로그램을 개발할 때는 몇 가지 사항을 염두에 두어야 합니다. 여기에는 MRC 시각적 품질에 대 한 모범 사례와 Mrc가 캡처될 때 시스템 변경 내용에 대 한 응답성이 포함 됩니다.
+언제 든 지 [혼합 현실 캡처](/hololens/holographic-photos-and-videos) (mrc) 사진 또는 비디오를 사용할 수 있지만 응용 프로그램을 개발할 때는 몇 가지 사항을 염두에 두어야 합니다. 여기에는 MRC 시각적 품질에 대 한 모범 사례와 Mrc가 캡처될 때 시스템 변경 내용에 대 한 응답성이 포함 됩니다.
 
 또한 개발자는 혼합 현실 캡처 및 삽입을 앱에 원활 하 게 통합할 수 있습니다.
 
@@ -61,7 +61,7 @@ PV 카메라에서 렌더링을 사용 하도록 설정 하는 세 가지 단계
 
 ##### <a name="enable-the-photovideocamera-holographicviewconfiguration-in-directx"></a>DirectX에서 PhotoVideoCamera HolographicViewConfiguration 사용
 
-PV 카메라에서 렌더링을 옵트인 (opt in) 하려면 앱에서 PhotoVideoCamera의 [HolographicViewConfiguration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration)을 사용 하도록 설정 하기만 하면 됩니다.
+PV 카메라에서 렌더링을 옵트인 (opt in) 하려면 앱에서 PhotoVideoCamera의 [HolographicViewConfiguration](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration)을 사용 하도록 설정 하기만 하면 됩니다.
 ```csharp
 var display = Windows.Graphics.Holographic.HolographicDisplay.GetDefault();
 var view = display.TryGetViewConfiguration(Windows.Graphics.Holographic.HolographicViewConfigurationKind.PhotoVideoCamera);
@@ -79,7 +79,7 @@ if (view != null)
 
 혼합 현실 캡처가 중지 될 때 (또는 혼합 현실 캡처가 실행 되는 동안 앱에서 보기 구성을 사용 하지 않도록 설정 하는 경우) HolographicCamera는 다음 HolographicFrame의 RemovedCameras 목록에 표시 되 고 HolographicSpace의 CameraRemoved 이벤트가 발생 합니다.
 
-HolographicCamera에는 카메라가 속한 구성을 식별 하는 데 도움이 되는 [Viewconfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration) 속성이 추가 되었습니다.
+HolographicCamera에는 카메라가 속한 구성을 식별 하는 데 도움이 되는 [Viewconfiguration](/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration) 속성이 추가 되었습니다.
 
 ##### <a name="enable-the-photovideocamera-holographicviewconfiguration-in-unity"></a>Unity에서 PhotoVideoCamera HolographicViewConfiguration 사용
 
@@ -121,15 +121,15 @@ PV 카메라에서 렌더링하도록 옵트인하려면 다음을 수행합니�
 #### <a name="2d-app"></a>2D 앱
 
 혼합 현실 캡처가를 실행 하는 경우 2D 앱은 시각적 콘텐츠를 가립니다 선택할 수 있습니다.
-* [DXGI_PRESENT_RESTRICT_TO_OUTPUT](https://docs.microsoft.com/windows/desktop/direct3ddxgi/dxgi-present) 플래그로 제공
-* [DXGI_SWAP_CHAIN_FLAG_HW_PROTECTED](https://docs.microsoft.com/windows/desktop/api/dxgi/ne-dxgi-dxgi_swap_chain_flag) 플래그를 사용 하 여 앱의 스왑 체인 만들기
-* Windows 10 5 월 2019 업데이트를 사용 하 여 ApplicationView의 [IsScreenCaptureEnabled](https://docs.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.isscreencaptureenabled) 을 설정 합니다.
+* [DXGI_PRESENT_RESTRICT_TO_OUTPUT](/windows/desktop/direct3ddxgi/dxgi-present) 플래그로 제공
+* [DXGI_SWAP_CHAIN_FLAG_HW_PROTECTED](/windows/desktop/api/dxgi/ne-dxgi-dxgi_swap_chain_flag) 플래그를 사용 하 여 앱의 스왑 체인 만들기
+* Windows 10 5 월 2019 업데이트를 사용 하 여 ApplicationView의 [IsScreenCaptureEnabled](/uwp/api/windows.ui.viewmanagement.applicationview.isscreencaptureenabled) 을 설정 합니다.
 
 #### <a name="immersive-app"></a>몰입 형 앱
 
 몰입 형 앱은 다음과 같은 방법으로 혼합 현실 캡처에서 해당 시각적 콘텐츠를 제외 하도록 선택할 수 있습니다.
-* HolographicCameraRenderingParameter의 [IsContentProtectionEnabled](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.iscontentprotectionenabled) 을 설정 하 여 연결 된 프레임에 대 한 혼합 현실 캡처 사용 안 함
-* 연결 된 holographic 카메라에 대해 혼합 현실 캡처를 사용 하지 않도록 HolographicCamera의 [IsHardwareContentProtectionEnabled](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.ishardwarecontentprotectionenabled) 설정
+* HolographicCameraRenderingParameter의 [IsContentProtectionEnabled](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.iscontentprotectionenabled) 을 설정 하 여 연결 된 프레임에 대 한 혼합 현실 캡처 사용 안 함
+* 연결 된 holographic 카메라에 대해 혼합 현실 캡처를 사용 하지 않도록 HolographicCamera의 [IsHardwareContentProtectionEnabled](/uwp/api/windows.graphics.holographic.holographiccamera.ishardwarecontentprotectionenabled) 설정
 
 #### <a name="password-keyboard"></a>암호 키보드
 
@@ -137,10 +137,10 @@ Windows 10 5 월 2019 업데이트를 사용 하면 암호나 pin 키보드를 �
 
 ### <a name="knowing-when-mrc-is-active"></a>MRC가 활성 상태인 경우 파악
 
-앱에서 [appcapture](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.AppCapture) 클래스를 사용 하 여 시스템 혼합 현실 캡처가 실행 되는 시기 (오디오 또는 비디오)를 알 수 있습니다.
+앱에서 [appcapture](/uwp/api/Windows.Media.Capture.AppCapture) 클래스를 사용 하 여 시스템 혼합 현실 캡처가 실행 되는 시기 (오디오 또는 비디오)를 알 수 있습니다.
 
 >[!NOTE]
->AppCapture의 [GetForCurrentView](https://docs.microsoft.com/uwp/api/windows.media.capture.appcapture.getforcurrentview) API는 장치에서 혼합 현실 캡처를 사용할 수 없는 경우 null을 반환할 수 있습니다. 앱이 일시 중단 될 때 CapturingChanged 이벤트의 등록을 취소 하는 것도 중요 합니다. 그렇지 않으면 MRC가 차단 된 상태가 될 수 있습니다.
+>AppCapture의 [GetForCurrentView](/uwp/api/windows.media.capture.appcapture.getforcurrentview) API는 장치에서 혼합 현실 캡처를 사용할 수 없는 경우 null을 반환할 수 있습니다. 앱이 일시 중단 될 때 CapturingChanged 이벤트의 등록을 취소 하는 것도 중요 합니다. 그렇지 않으면 MRC가 차단 된 상태가 될 수 있습니다.
 
 ### <a name="best-practices-hololens-specific"></a>모범 사례 (HoloLens 관련)
 
@@ -196,7 +196,7 @@ MRC는 추가 개발 작업 없이 작동할 것으로 예상 되지만, 최상�
 
 ### <a name="mrc-with-built-in-camera-ui"></a>기본 제공 카메라 UI를 사용 하는 MRC
 
-개발자는 *[카메라 캡처 UI API](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui)* 를 사용 하 여 몇 줄의 코드만으로 사용자가 캡처한 혼합 현실 사진 또는 비디오를 가져올 수 있습니다.
+개발자는 *[카메라 캡처 UI API](/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui)* 를 사용 하 여 몇 줄의 코드만으로 사용자가 캡처한 혼합 현실 사진 또는 비디오를 가져올 수 있습니다.
 
 이 API는 기본 제공 MRC 카메라 UI를 시작 하 여 사용자가 사진 또는 비디오를 촬영 하 고 결과 캡처를 앱에 반환할 수 있습니다. 사용자 고유의 카메라 UI 또는 더 낮은 수준의 액세스를 캡처 스트림에 추가 해야 하는 경우 사용자 지정 혼합 현실 캡처 레코더를 만들 수 있습니다.
 
@@ -210,20 +210,20 @@ MRC는 추가 개발 작업 없이 작동할 것으로 예상 되지만, 최상�
 
 Unity 응용 프로그램은 holograms를 사용 하도록 설정 하는 속성에 대 한 [Locatable_camera_in_Unity](../unity/locatable-camera-in-unity.md) 를 확인 해야 합니다.
 
-다른 응용 프로그램은 [Windows 미디어 캡처 api](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaCapture) 를 사용 하 여 카메라를 제어 하 고, 스틸 및 비디오에 가상 holograms 및 응용 프로그램 오디오를 포함 하는 Mrc 비디오 및 오디오 효과를 추가 하 여이 작업을 수행할 수 있습니다.
+다른 응용 프로그램은 [Windows 미디어 캡처 api](/uwp/api/Windows.Media.Capture.MediaCapture) 를 사용 하 여 카메라를 제어 하 고, 스틸 및 비디오에 가상 holograms 및 응용 프로그램 오디오를 포함 하는 Mrc 비디오 및 오디오 효과를 추가 하 여이 작업을 수행할 수 있습니다.
 
 응용 프로그램에는 효과를 추가 하는 두 가지 옵션이 있습니다.
-* 이전 API: [MediaCapture. AddEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addeffectasync)
-* 새 Microsoft 권장 API (개체를 반환 하 여 동적 속성을 조작할 수 있음): [MediaCapture () AddVideoEffectAsync (](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync))  /  응용 프로그램이 [IVideoEffectDefinition](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.IVideoEffectDefinition) 및 [IAudioEffectDefinition](https://docs.microsoft.com/uwp/api/windows.media.effects.iaudioeffectdefinition)의 자체 구현을 만들도록 요구 하는[MediaCapture () AddAudioEffectAsync ()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) . 예제는 [Mrc 샘플 앱](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/HolographicMixedRealityCapture) 을 참조 하세요.
+* 이전 API: [MediaCapture. AddEffectAsync ()](/uwp/api/windows.media.capture.mediacapture.addeffectasync)
+* 새 Microsoft 권장 API (개체를 반환 하 여 동적 속성을 조작할 수 있음): [MediaCapture () AddVideoEffectAsync (](/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync))  /  응용 프로그램이 [IVideoEffectDefinition](/uwp/api/Windows.Media.Effects.IVideoEffectDefinition) 및 [IAudioEffectDefinition](/uwp/api/windows.media.effects.iaudioeffectdefinition)의 자체 구현을 만들도록 요구 하는[MediaCapture () AddAudioEffectAsync ()](/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) . 예제는 [Mrc 샘플 앱](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/HolographicMixedRealityCapture) 을 참조 하세요.
 
 >[!NOTE]
 > MixedRealityCapture 네임 스페이스는 Visual Studio에서 인식 되지 않지만 문자열은 여전히 유효 합니다.
 
 MRC 비디오 효과 (**MixedRealityCapture. MixedRealityCaptureVideoEffect**)
 
-|  속성 이름  |  유형  |  기본값  |  Description |
+|  속성 이름  |  유형  |  기본값  |  설명 |
 |----------|----------|----------|----------|
-|  StreamType  |  UINT32 ([Mediastreamtype](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaStreamType))  |  1 (VideoRecord)  |  이 효과가 사용 되는 캡처 스트림을 설명 합니다. 오디오를 사용할 수 없습니다. |
+|  StreamType  |  UINT32 ([Mediastreamtype](/uwp/api/Windows.Media.Capture.MediaStreamType))  |  1 (VideoRecord)  |  이 효과가 사용 되는 캡처 스트림을 설명 합니다. 오디오를 사용할 수 없습니다. |
 |  HologramCompositionEnabled  |  boolean  |  TRUE  |  비디오 캡처에서 holograms을 사용 하거나 사용 하지 않도록 설정 하는 플래그입니다. |
 |  RecordingIndicatorEnabled  |  boolean  |  TRUE  |  홀로그램 캡처 중에 화면에서 기록 표시기를 사용 하거나 사용 하지 않도록 설정 하는 플래그입니다. |
 |  VideoStabilizationEnabled  |  boolean  |  FALSE  |  HoloLens 트래커에서 구동 하는 비디오 안정화를 사용 하거나 사용 하지 않도록 설정 하는 플래그입니다. |
@@ -231,7 +231,7 @@ MRC 비디오 효과 (**MixedRealityCapture. MixedRealityCaptureVideoEffect**)
 |  GlobalOpacityCoefficient  |  float  |  0.9 (HoloLens) 1.0 (모던 헤드셋)  |  홀로그램의 전역 불투명도 계수를 0.0 (완전히 투명)에서 1.0 (완전히 불투명)로 설정 합니다. |
 |  BlankOnProtectedContent  |  boolean  |  FALSE  |  보호 된 콘텐츠를 표시 하는 2d UWP 앱이 있는 경우 빈 프레임을 반환 하거나 사용 하지 않도록 설정 하는 플래그입니다. 이 플래그가 false이 고 2d UWP 앱이 보호 된 콘텐츠를 표시 하는 경우 2d UWP 앱은 헤드셋과 혼합 현실 캡처 모두에서 보호 된 콘텐츠 질감으로 교체 됩니다. |
 |  ShowHiddenMesh  |  boolean  |  FALSE  |  Holographic 카메라의 숨겨진 영역 메시 및 인접 콘텐츠를 표시 하거나 사용 하지 않도록 설정 하는 플래그입니다. |
-| OutputSize | 크기 | 0, 0 | 비디오 안정화를 위해 자른 후 원하는 출력 크기를 설정 합니다. 0 또는 잘못 된 출력 크기가 지정 된 경우 기본 자르기 크기가 선택 됩니다. |
+| OutputSize | Size | 0, 0 | 비디오 안정화를 위해 자른 후 원하는 출력 크기를 설정 합니다. 0 또는 잘못 된 출력 크기가 지정 된 경우 기본 자르기 크기가 선택 됩니다. |
 | PreferredHologramPerspective | UINT32 | Windows 장치 포털의 **카메라에서 렌더링** 설정 | 캡처할 holographic 카메라 보기 구성을 나타내는 데 사용 되는 열거형입니다. 0 (표시)은 앱이 사진/비디오 카메라에서 렌더링 하도록 요청 하지 않는다는 것을 의미 합니다. 1 (PhotoVideoCamera)은 앱이 사진/비디오 카메라에서 렌더링 하도록 요청 합니다 (앱에서 지 원하는 경우). HoloLens 2 에서만 지원 됨 |
 
 >[!NOTE]
@@ -241,7 +241,7 @@ MRC 비디오 효과 (**MixedRealityCapture. MixedRealityCaptureVideoEffect**)
 
 MRC 오디오 효과 (**MixedRealityCapture. MixedRealityCaptureAudioEffect**)
 
-| 속성 이름 | 유형 | 기본값 | Description |
+| 속성 이름 | 유형 | 기본값 | 설명 |
 |----------|----------|----------|----------|
 | MixerMode | UINT32 | 2 (Mic 및 시스템 오디오) | 사용 해야 하는 오디오 원본을 나타내는 데 사용 되는 열거형입니다. 0 (Mic 오디오 전용), 1 (시스템 오디오만), 2 (Mic 및 시스템 오디오) |
 | LoopbackGain | float | Windows 장치 포털의 **앱 오디오 게인** 설정 | 시스템 오디오 볼륨에 적용 됩니다. 범위는 0.0에서 5.0 사이입니다. HoloLens 2 에서만 지원 됨 |
@@ -260,7 +260,7 @@ MRC 오디오 효과 (**MixedRealityCapture. MixedRealityCaptureAudioEffect**)
 
 HoloLens 1에서는 프로세스가 비디오를 기록 하거나 사진을 촬영 하는 동안 MRC가 사진을 캡처하거나 비디오를 캡처할 수 없습니다. 그 반대의 경우도 마찬가지입니다. MRC가 실행 중인 경우 응용 프로그램이 카메라에 액세스 하지 못합니다. 
 
-HoloLens 2를 사용 하 여 카메라에 대 한 액세스를 공유할 수 있습니다. 해상도 또는 프레임 속도로 직접 제어 하지 않아도 되는 경우 Sharedmode를 사용 하는 [Sharedmode 속성](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) 을 사용 하 여 MediaCapture를 초기화할 수 있습니다.  
+HoloLens 2를 사용 하 여 카메라에 대 한 액세스를 공유할 수 있습니다. 해상도 또는 프레임 속도로 직접 제어 하지 않아도 되는 경우 Sharedmode를 사용 하는 [Sharedmode 속성](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) 을 사용 하 여 MediaCapture를 초기화할 수 있습니다.  
 
 ##### <a name="built-in-mrc-photovideo-camera-access"></a>기본 제공 MRC 사진/비디오 카메라 액세스
 
@@ -287,11 +287,11 @@ Windows 10에 기본 제공 되는 MRC 기능 (Cortana, 시작 메뉴, 하드웨
 
 MRC를 사용 하는 경우 항상 카메라에 대 한 단독 제어를 요청 하는 것이 좋습니다. 이렇게 하면 위에 나열 된 제한 사항을 알고 있는 한 응용 프로그램이 카메라의 설정에 대 한 모든 권한을 가집니다. 
 
-* [초기화 설정을](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings?view=winrt-19041) 사용 하 여 미디어 캡처 개체 만들기
-* [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) 속성을 **exclusive** 로 설정 합니다.
+* [초기화 설정을](/uwp/api/windows.media.capture.mediacaptureinitializationsettings?view=winrt-19041) 사용 하 여 미디어 캡처 개체 만들기
+* [SharingMode](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) 속성을 **exclusive** 로 설정 합니다.
 
 > [!CAUTION]
-> 계속 하기 전에 [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#remarks) 주의 사항을 주의 깊게 읽어야 합니다.
+> 계속 하기 전에 [SharingMode](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#remarks) 주의 사항을 주의 깊게 읽어야 합니다.
 
 * 원하는 방식으로 카메라 설정
 * 앱을 시작 하 고, 시작 API로 비디오 프레임을 캡처한 다음, MRC를 사용 하도록 설정 합니다.
@@ -299,14 +299,14 @@ MRC를 사용 하는 경우 항상 카메라에 대 한 단독 제어를 요청 
 > [!CAUTION]
 > 앱을 시작 하기 전에 MRC를 시작 하면 기능이 예상 대로 작동 하는 것을 보장할 수 없습니다.
 
-[Holographic face 추적 샘플](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicfacetracking)에서 위의 프로세스에 대 한 전체 샘플을 찾을 수 있습니다.
+[Holographic face 추적 샘플](/samples/microsoft/windows-universal-samples/holographicfacetracking)에서 위의 프로세스에 대 한 전체 샘플을 찾을 수 있습니다.
 
 > [!NOTE]
 > Windows 10 4 월 2018 업데이트 전에 앱의 사용자 지정 MRC 레코더는 시스템 MRC와 함께 사용할 수 없습니다 (사진 캡처, 비디오 캡처 또는 Windows 장치 포털에서 스트리밍).
 
 ## <a name="see-also"></a>참조
 
-* [혼합 현실 캡처](../../mixed-reality-capture.md)
+* [혼합 현실 캡처](/hololens/holographic-photos-and-videos)
 * [Spectator View](spectator-view.md)
 * [Unity 개발 개요](../unity/unity-development-overview.md)
 * [Unreal 개발 개요](../unreal/unreal-development-overview.md)

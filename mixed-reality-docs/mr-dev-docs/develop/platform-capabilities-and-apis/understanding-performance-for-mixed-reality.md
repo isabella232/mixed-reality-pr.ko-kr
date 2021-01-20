@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 성능, 최적화, CPU, GPU
-ms.openlocfilehash: ff3db5d49ddab13a20c4c32de8e5640fff4f0d81
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 68aae6408a59b197227ab8cd9042e11f8a255d10
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008473"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583086"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>혼합 현실 성능 이해
 
@@ -21,7 +21,7 @@ ms.locfileid: "98008473"
 
 | 플랫폼 | 대상 프레임 율 |
 |----------|-------------------|
-| [HoloLens](../../hololens-hardware-details.md) | 60FPS |
+| [HoloLens](/hololens/hololens1-hardware) | 60FPS |
 | [Windows Mixed Reality 울트라 Pc](../../discover/immersive-headset-hardware-details.md) | 90 FPS |
 | [Windows Mixed Reality Pc](../../discover/immersive-headset-hardware-details.md) | 60FPS |
 
@@ -46,7 +46,7 @@ ms.locfileid: "98008473"
 
 응용 프로그램에 대 한 심층 프로 파일링 정보를 수집 하는 데 도움이 되는 몇 가지 일반적인 도구는 다음과 같습니다.
 - [Intel 그래픽 성능 분석기](https://software.intel.com/gpa)
-- [Visual Studio 그래픽 디버거](https://docs.microsoft.com/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
+- [Visual Studio 그래픽 디버거](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
 - [Unity 프로파일러](https://docs.unity3d.com/Manual/Profiler.html)
 - [Unity 프레임 디버거](https://docs.unity3d.com/Manual/FrameDebugger.html)
 
@@ -100,7 +100,7 @@ GPU에서 프레임을 렌더링할 때 응용 프로그램은 메모리 대역�
 
 #### <a name="reduce-polygon-count"></a>다각형 수 줄이기
 
-다각형 수가 높을수록 GPU에 대 한 추가 작업이 발생 하므로 장면의 [다각형 수를 줄이면](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets) 렌더링 시간이 줄어듭니다. 기 하 도형에 비용이 많이 들 수 있는 다른 요인이 있지만 다각형 수는 장면을 렌더링 하는 데 걸리는 작업의 양을 결정 하는 가장 간단한 메트릭입니다.
+다각형 수가 높을수록 GPU에 대 한 추가 작업이 발생 하므로 장면의 [다각형 수를 줄이면](/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets) 렌더링 시간이 줄어듭니다. 기 하 도형에 비용이 많이 들 수 있는 다른 요인이 있지만 다각형 수는 장면을 렌더링 하는 데 걸리는 작업의 양을 결정 하는 가장 간단한 메트릭입니다.
 
 #### <a name="limit-overdraw"></a>과도한 그리기 제한
 
@@ -136,9 +136,8 @@ Occluding 개체에 의해 숨겨질 때 여러 개체가 렌더링 되지만 �
 
 개체 풀링은 연속 할당 및 개체 할당 해제 비용을 줄이는 인기 있는 기술입니다. 이 작업을 수행하려면 시간이 지남에 따라 개체를 지속적으로 만들고 삭제하는 대신, 동일한 개체의 대량 풀을 할당하고 이 풀에서 사용 가능한 비활성 인스턴스를 다시 사용합니다. 개체 풀은 앱 중에 수명이 가변적인 다시 사용할 수 있는 구성 요소에 적합합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Unity의 권장 성능](../unity/performance-recommendations-for-unity.md)
 - [Unity 권장 설정](../unity/recommended-settings-for-unity.md)
-- [3D 모델 최적화](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
-- [실시간 3D 모델 변환 및 최적화를 위한 모범 사례](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/best-practices)
-
+- [3D 모델 최적화](/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
+- [실시간 3D 모델 변환 및 최적화를 위한 모범 사례](/dynamics365/mixed-reality/import-tool/best-practices)

@@ -6,12 +6,12 @@ ms.author: kaluccin
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Galaxy 탐색기, HoloLens, Windows Mixed Reality, 아이디어 공유, 사례 연구
-ms.openlocfilehash: 0226c38e9fa21407a7a6529693a2adb3c5da7659
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: ef97920d22df65a9d4fa5e630840759e58c80b53
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009783"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583543"
 ---
 # <a name="case-study---creating-a-galaxy-in-mixed-reality"></a>사례 연구-혼합 현실에서 galaxy 만들기
 
@@ -147,7 +147,7 @@ Quads 대신 다이아몬드입니다.
 
 ### <a name="a-bit-of-context-first"></a>첫 번째 컨텍스트의 비트
 
-게임에서 텍스처를 사용 하는 경우 질감 크기는 사용 하려는 영역과 거의 일치 하지 않지만, 질감 필터링을 사용 하 여 그래픽 카드를 가져와서 질감의 픽셀에서 원하는 색을 보간 ([질감 필터링](https://msdn.microsoft.com/library/dn642451.aspx)) 할 수 있습니다. 관심이 있는 필터링은 가장 인접 한 4 개를 사용 하 여 모든 픽셀의 값을 계산 하는 [이중 선형 필터링](https://msdn.microsoft.com/library/windows/desktop/bb172357.aspx) 입니다.
+게임에서 텍스처를 사용 하는 경우 질감 크기는 사용 하려는 영역과 거의 일치 하지 않지만, 질감 필터링을 사용 하 여 그래픽 카드를 가져와서 질감의 픽셀에서 원하는 색을 보간 ([질감 필터링](/previous-versions/visualstudio/visual-studio-2015/debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants)) 할 수 있습니다. 관심이 있는 필터링은 가장 인접 한 4 개를 사용 하 여 모든 픽셀의 값을 계산 하는 [이중 선형 필터링](/windows/win32/direct3d9/bilinear-texture-filtering) 입니다.
 
 ![필터링 전 원래](images/texture-1.png)
 
@@ -203,6 +203,6 @@ Galaxy 탐색기의 개발 프로세스에 대 한 자세한 정보를 확인 �
 </table>
 
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [GitHub의 Galaxy 탐색기](https://github.com/Microsoft/GalaxyExplorer)
 * [YouTube의 Galaxy 탐색기 프로젝트 업데이트](https://www.youtube.com/playlist?list=PLZCHH_4VqpRj0Nl46J0LNRkMyBNU4knbL)

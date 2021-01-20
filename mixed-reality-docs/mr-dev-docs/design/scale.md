@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed reality, 스타일, 디자인, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 규모, holograms
-ms.openlocfilehash: 6711a58fb4dde2aa28272c3003e642c4f4d3e236
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 12b1c96146f76274831c9bc3427cef93bb326f70
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848270"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583313"
 ---
 # <a name="scale"></a>확장
 
@@ -80,7 +80,7 @@ ms.locfileid: "97848270"
 
 ---
 
-## <a name="see-also"></a>추가 정보
-* [색, 광원 및 재질](../color,-light-and-materials.md)
+## <a name="see-also"></a>참고 항목
+* [색, 광원 및 재질](./color-light-and-materials.md)
 * [입력 체계](typography.md)
 * [공간 음향 디자인](spatial-sound-design.md)

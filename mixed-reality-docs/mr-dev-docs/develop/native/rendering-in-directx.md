@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, 렌더링, 3D 그래픽, HolographicFrame, 렌더링 루프, 업데이트 루프, 연습, 샘플 코드, Direct3D
-ms.openlocfilehash: aafead61b45550f499405ae63bda7d7f8e79d224
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f62df75f8febc3f3ee6e7c98f2c8fd91082a4466
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006723"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583788"
 ---
 # <a name="rendering-in-directx"></a>DirectX의 렌더링
 
@@ -25,7 +25,7 @@ Windows Mixed Reality는 DirectX를 기반으로 하 여 사용자를 위한 풍
 ## <a name="update-for-the-current-frame"></a>현재 프레임에 대 한 업데이트
 
 Holograms에 대 한 응용 프로그램 상태를 업데이트 하려면 앱에서 다음을 수행 합니다.
-* 디스플레이 관리 시스템에서 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> 를 가져옵니다.
+* 디스플레이 관리 시스템에서 <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> 를 가져옵니다.
 * 렌더링이 완료 되 면 카메라 보기가 표시 되는 현재 예측으로 장면을 업데이트 합니다. Holographic 장면에는 카메라를 두 개 이상 사용할 수 있습니다.
 
 Holographic 카메라 보기로 렌더링 하려면 프레임당 한 번, 앱에서 다음을 수행 합니다.
@@ -33,7 +33,7 @@ Holographic 카메라 보기로 렌더링 하려면 프레임당 한 번, 앱에
 
 ### <a name="create-a-new-holographic-frame-and-get-its-prediction"></a>새 holographic 프레임을 만들고 해당 예측을 가져옵니다.
 
-<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> 에는 앱에서 현재 프레임을 업데이트 하 고 렌더링 하는 데 필요한 정보가 있습니다. 앱은 **Createnextframe** 메서드를 호출 하 여 각 새 프레임을 시작 합니다. 이 메서드가 호출 되 면 사용 가능한 최신 센서 데이터를 사용 하 여 예측을 수행 하 고 **currentprediction** 개체에 캡슐화 합니다.
+<a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> 에는 앱에서 현재 프레임을 업데이트 하 고 렌더링 하는 데 필요한 정보가 있습니다. 앱은 **Createnextframe** 메서드를 호출 하 여 각 새 프레임을 시작 합니다. 이 메서드가 호출 되 면 사용 가능한 최신 센서 데이터를 사용 하 여 예측을 수행 하 고 **currentprediction** 개체에 캡슐화 합니다.
 
 새 프레임 개체는 특정 시간 동안만 유효 하므로 렌더링 된 각 프레임에 사용 해야 합니다. **Currentprediction** 속성은 카메라 위치와 같은 정보를 포함 합니다. 이 정보는 프레임이 사용자에 게 표시 될 것으로 예상 되는 정확한 시점에 추정 됩니다.
 
@@ -73,7 +73,7 @@ for (HolographicCameraPose const& cameraPose : prediction.CameraPoses())
 
 ### <a name="get-the-coordinate-system-to-use-as-a-basis-for-rendering"></a>렌더링을 위한 기반으로 사용할 좌표계를 가져옵니다.
 
-Windows Mixed Reality를 사용 하면 앱에서 실제 세계의 위치를 추적 하는 데 연결 된 고정 참조 프레임과 같은 다양 한 [좌표계](coordinate-systems-in-directx.md)를 만들 수 있습니다. 그러면 앱이 이러한 좌표계를 사용 하 여 각 프레임 holograms를 렌더링 하는 위치를 지정할 수 있습니다. API에서 좌표를 요청 하는 경우 항상 해당 좌표를 표시 하려는 <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a> 를 전달 합니다.
+Windows Mixed Reality를 사용 하면 앱에서 실제 세계의 위치를 추적 하는 데 연결 된 고정 참조 프레임과 같은 다양 한 [좌표계](coordinate-systems-in-directx.md)를 만들 수 있습니다. 그러면 앱이 이러한 좌표계를 사용 하 여 각 프레임 holograms를 렌더링 하는 위치를 지정할 수 있습니다. API에서 좌표를 요청 하는 경우 항상 해당 좌표를 표시 하려는 <a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a> 를 전달 합니다.
 
 **Appmain:: Update** 에서:
 
@@ -313,7 +313,7 @@ context->VSSetConstantBuffers(
 
 Windows Mixed Reality에는 개발자 또는 사용자가 세계에 배치 하는 위치에 holograms을 유지 하기 위한 [이미지 안정화](../platform-capabilities-and-apis/hologram-stability.md) 기능이 포함 되어 있습니다. 이미지 안정화를 사용 하면 렌더링 파이프라인에서 내재 된 대기 시간을 숨겨 사용자에 게 가장 적합 한 holographic 환경을 보장할 수 있습니다. 포커스 지점을 지정 하 여 이미지 안정화를 향상 시킬 수도 있고, 실시간으로 최적화 된 이미지를 계산 하기 위한 깊이 버퍼가 제공 될 수도 있습니다.
 
-최상의 결과를 위해 앱은 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer" target="_blank">CommitDirect3D11DepthBuffer</a> API를 사용 하 여 깊이 버퍼를 제공 해야 합니다. Windows Mixed Reality는 깊이 버퍼의 기 하 도형 정보를 사용 하 여 이미지 안정화를 실시간으로 최적화할 수 있습니다. Windows Holographic 앱 템플릿은 기본적으로 응용 프로그램의 깊이 버퍼를 커밋 하 여 홀로그램 안정성을 최적화 하도록 지원 합니다.
+최상의 결과를 위해 앱은 <a href="/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer" target="_blank">CommitDirect3D11DepthBuffer</a> API를 사용 하 여 깊이 버퍼를 제공 해야 합니다. Windows Mixed Reality는 깊이 버퍼의 기 하 도형 정보를 사용 하 여 이미지 안정화를 실시간으로 최적화할 수 있습니다. Windows Holographic 앱 템플릿은 기본적으로 응용 프로그램의 깊이 버퍼를 커밋 하 여 홀로그램 안정성을 최적화 하도록 지원 합니다.
 
 **Appmain:: Render** 에서:
 
@@ -600,7 +600,7 @@ void main(triangle GeometryShaderInput input[3], inout TriangleStream<GeometrySh
 
 ### <a name="enable-the-holographic-frame-to-present-the-swap-chain"></a>Holographic 프레임을 사용 하 여 스왑 체인을 표시 합니다.
 
-Windows Mixed Reality를 사용 하는 경우 시스템은 스왑 체인을 제어 합니다. 그러면 시스템에서 각 holographic 카메라에 대 한 프레임을 관리 하 여 고품질 사용자 환경을 보장 합니다. 또한 각 카메라에 대해 이미지 안정화 또는 혼합 현실 캡처와 같은 시스템 측면을 최적화 하기 위해 각 프레임을 업데이트 하는 뷰포트를 제공 합니다. 따라서 DirectX를 사용 하는 holographic 앱은 DXGI 스왑 체인에 **존재** 하는을 호출 하지 않습니다. 대신 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> 클래스를 사용 하 여 그리기를 완료 한 후 프레임에 대 한 모든 swapchain을 표시 합니다.
+Windows Mixed Reality를 사용 하는 경우 시스템은 스왑 체인을 제어 합니다. 그러면 시스템에서 각 holographic 카메라에 대 한 프레임을 관리 하 여 고품질 사용자 환경을 보장 합니다. 또한 각 카메라에 대해 이미지 안정화 또는 혼합 현실 캡처와 같은 시스템 측면을 최적화 하기 위해 각 프레임을 업데이트 하는 뷰포트를 제공 합니다. 따라서 DirectX를 사용 하는 holographic 앱은 DXGI 스왑 체인에 **존재** 하는을 호출 하지 않습니다. 대신 <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> 클래스를 사용 하 여 그리기를 완료 한 후 프레임에 대 한 모든 swapchain을 표시 합니다.
 
 **DeviceResources::P 다시 보낸** 위치:
 
@@ -608,11 +608,11 @@ Windows Mixed Reality를 사용 하는 경우 시스템은 스왑 체인을 제�
 HolographicFramePresentResult presentResult = frame.PresentUsingCurrentPrediction();
 ```
 
-기본적으로이 API는 프레임이 반환 될 때까지 대기 합니다. Holographic apps는 새 프레임에서 작업을 시작 하기 전에 이전 프레임이 완료 될 때까지 기다려야 합니다 .이는 대기 시간을 줄이고 프레임 예측에서 더 나은 결과를 허용 하기 때문입니다. 이것은 하드 규칙이 아니며, 렌더링을 위해 한 화면 새로 고침 보다 오랜 시간이 걸리는 프레임을 사용 하는 경우 HolographicFramePresentWaitBehavior 매개 변수를 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction" target="_blank">PresentUsingCurrentPrediction</a>에 전달 하 여이 대기를 비활성화할 수 있습니다. 이 경우에는 비동기 렌더링 스레드를 사용 하 여 GPU에서 연속 로드를 유지 관리할 가능성이 높습니다. HoloLens 장치의 새로 고침 빈도는 60 hz 이며, 한 프레임의 기간은 약 16 밀리초입니다. 모던 헤드셋 장치는 60 hz에서 90 hz 사이에 있을 수 있습니다. 90 hz에서 디스플레이를 새로 고치면 각 프레임의 기간이 약 11 밀리초가 됩니다.
+기본적으로이 API는 프레임이 반환 될 때까지 대기 합니다. Holographic apps는 새 프레임에서 작업을 시작 하기 전에 이전 프레임이 완료 될 때까지 기다려야 합니다 .이는 대기 시간을 줄이고 프레임 예측에서 더 나은 결과를 허용 하기 때문입니다. 이것은 하드 규칙이 아니며, 렌더링을 위해 한 화면 새로 고침 보다 오랜 시간이 걸리는 프레임을 사용 하는 경우 HolographicFramePresentWaitBehavior 매개 변수를 <a href="/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction" target="_blank">PresentUsingCurrentPrediction</a>에 전달 하 여이 대기를 비활성화할 수 있습니다. 이 경우에는 비동기 렌더링 스레드를 사용 하 여 GPU에서 연속 로드를 유지 관리할 가능성이 높습니다. HoloLens 장치의 새로 고침 빈도는 60 hz 이며, 한 프레임의 기간은 약 16 밀리초입니다. 모던 헤드셋 장치는 60 hz에서 90 hz 사이에 있을 수 있습니다. 90 hz에서 디스플레이를 새로 고치면 각 프레임의 기간이 약 11 밀리초가 됩니다.
 
 ### <a name="handle-devicelost-scenarios-in-cooperation-with-the-holographicframe"></a>HolographicFrame와 협력 하 여 DeviceLost 시나리오를 처리 합니다.
 
-DirectX 11 앱은 일반적으로 **DeviceLost** 오류가 있는지 확인 하기 위해 DXGI 스왑 체인의 **present** 함수에서 반환 된 HRESULT를 확인 하려고 합니다. <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> 클래스는이를 처리 합니다. 반환 된 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframepresentresult" target="_blank">HolographicFramePresentResult</a> 를 검사 하 여 Direct3D 장치 및 장치 기반 리소스를 해제 하 고 다시 만들어야 하는지 여부를 확인 합니다.
+DirectX 11 앱은 일반적으로 **DeviceLost** 오류가 있는지 확인 하기 위해 DXGI 스왑 체인의 **present** 함수에서 반환 된 HRESULT를 확인 하려고 합니다. <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> 클래스는이를 처리 합니다. 반환 된 <a href="/uwp/api/windows.graphics.holographic.holographicframepresentresult" target="_blank">HolographicFramePresentResult</a> 를 검사 하 여 Direct3D 장치 및 장치 기반 리소스를 해제 하 고 다시 만들어야 하는지 여부를 확인 합니다.
 
 ```cpp
 // The PresentUsingCurrentPrediction API will detect when the graphics device
@@ -625,7 +625,7 @@ if (presentResult == HolographicFramePresentResult::DeviceRemoved)
 }
 ```
 
-Direct3D 장치를 분실 하 고 다시 만든 경우 새 장치를 사용 하기 시작 하도록 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> 에 지시 해야 합니다. 이 장치에 대해 스왑 체인이 다시 작성 됩니다.
+Direct3D 장치를 분실 하 고 다시 만든 경우 새 장치를 사용 하기 시작 하도록 <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> 에 지시 해야 합니다. 이 장치에 대해 스왑 체인이 다시 작성 됩니다.
 
 From **DeviceResources:: InitializeUsingHolographicSpace**:
 
@@ -641,7 +641,7 @@ Windows 10 크리에이터 업데이트 Pc는 개별 및 통합 Gpu를 **모두*
 
 가장 일반적인 Direct3D 샘플 코드는 하이브리드 시스템이 헤드셋에 사용 되는 것과 다를 수 있는 기본 하드웨어 어댑터를 사용 하 여 DirectX 장치를 만드는 방법을 보여 줍니다.
 
-문제를 해결 하려면 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a>의 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicadapterid" target="_blank">HolographicAdapterID</a> 를 사용 합니다. PrimaryAdapterId () 또는 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay" target="_blank">HolographicDisplay</a>. AdapterId (). 그런 다음이 adapterId를 사용 하 여 IDXGIFactory4 Adapterbyluid를 사용 하는 올바른 DXGIAdapter를 선택할 수 있습니다.
+문제를 해결 하려면 <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a>의 <a href="/uwp/api/windows.graphics.holographic.holographicadapterid" target="_blank">HolographicAdapterID</a> 를 사용 합니다. PrimaryAdapterId () 또는 <a href="/uwp/api/windows.graphics.holographic.holographicdisplay" target="_blank">HolographicDisplay</a>. AdapterId (). 그런 다음이 adapterId를 사용 하 여 IDXGIFactory4 Adapterbyluid를 사용 하는 올바른 DXGIAdapter를 선택할 수 있습니다.
 
 From **DeviceResources:: InitializeUsingHolographicSpace**:
 
@@ -711,7 +711,7 @@ const HRESULT hr = D3D11CreateDevice(
 
 하이브리드 시스템에서 미디어 파운데이션를 사용 하면 미디어 파운데이션가 시스템 동작을 기본값으로 설정 하므로 비디오가 렌더링 되지 않거나 비디오 질감이 손상 되는 문제가 발생할 수 있습니다. 일부 시나리오에서는 다중 스레딩을 지원 하기 위해 별도의 ID3D11Device를 만들어야 하며, 올바른 생성 플래그가 설정 됩니다.
 
-ID3D11Device를 초기화할 때 D3D11_CREATE_DEVICE_VIDEO_SUPPORT 플래그는 D3D11_CREATE_DEVICE_FLAG의 일부로 정의 해야 합니다. 장치 및 컨텍스트를 만든 후에는 <a href="https://docs.microsoft.com/windows/desktop/api/d3d10/nf-d3d10-id3d10multithread-setmultithreadprotected" target="_blank">Setmultithreadprotected</a> 를 호출 하 여 다중 스레딩을 사용 하도록 설정 합니다. 장치를 <a href="https://docs.microsoft.com/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager" target="_blank">IMFDXGIDeviceManager</a>에 연결 하려면 <a href="https://docs.microsoft.com/windows/desktop/api/mfobjects/nf-mfobjects-imfdxgidevicemanager-resetdevice" target="_blank">IMFDXGIDeviceManager:: resetdevice</a> 함수를 사용 합니다.
+ID3D11Device를 초기화할 때 D3D11_CREATE_DEVICE_VIDEO_SUPPORT 플래그는 D3D11_CREATE_DEVICE_FLAG의 일부로 정의 해야 합니다. 장치 및 컨텍스트를 만든 후에는 <a href="/windows/desktop/api/d3d10/nf-d3d10-id3d10multithread-setmultithreadprotected" target="_blank">Setmultithreadprotected</a> 를 호출 하 여 다중 스레딩을 사용 하도록 설정 합니다. 장치를 <a href="/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager" target="_blank">IMFDXGIDeviceManager</a>에 연결 하려면 <a href="/windows/desktop/api/mfobjects/nf-mfobjects-imfdxgidevicemanager-resetdevice" target="_blank">IMFDXGIDeviceManager:: resetdevice</a> 함수를 사용 합니다.
 
 **ID3D11Device와 IMFDXGIDeviceManager를 연결 하는** 코드:
 
@@ -746,6 +746,6 @@ if (FAILED(hr))
     return hr;
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [DirectX의 좌표계](coordinate-systems-in-directx.md)
 * [HoloLens 에뮬레이터 사용](../platform-capabilities-and-apis/using-the-hololens-emulator.md)

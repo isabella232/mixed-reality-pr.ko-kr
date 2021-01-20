@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 동작 컨트롤러, 아카데미, 자습서
-ms.openlocfilehash: c83fd4970e40919e146b0a4e8b4f0f516e9d0906
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1f747c73846f59fdc62a0559068123a50f8a1b07
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685377"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583057"
 ---
 # <a name="mr-input-213-motion-controllers"></a>MR 입력 213: 모션 컨트롤러
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_** .  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](../mr-learning-base-01.md)가 게시되었습니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](../develop/unity/tutorials/mr-learning-base-01.md)가 게시되었습니다.
 
 혼합 현실 세계의 동작 컨트롤러는 다른 수준의 대화형 작업을 추가 합니다. [동작 컨트롤러](../design/motion-controllers.md)를 사용 하 여 집중 교육 및 즐거움를 응용 프로그램 환경에서 확장 하는 실제 상호 작용과 비슷하게 보다 자연스럽 게 개체와 직접 상호 작용할 수 있습니다.
 
@@ -33,7 +33,7 @@ MR 입력 213에서는 간단한 공간 그리기 환경을 만들어 동작 컨
 
 <table>
 <tr>
-<th>과정</th><th style="width:150px"> <a href="../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
+<th>과정</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
 </tr><tr>
 <td>MR 입력 213: 모션 컨트롤러</td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -41,7 +41,7 @@ MR 입력 213에서는 간단한 공간 그리기 환경을 만들어 동작 컨
 
 ## <a name="before-you-start"></a>시작하기 전에
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>필수 구성 요소
 
 [이 페이지](../develop/install-the-tools.md)의 모던 헤드셋에 대 한 설치 검사 목록을 참조 하세요.
 
@@ -64,7 +64,7 @@ MR 입력 213에서는 간단한 공간 그리기 환경을 만들어 동작 컨
 * 혼합 현실 설치 카메라
 * 설정 환경
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * Unity를 시작합니다.
 * **열기** 를 선택합니다.
@@ -99,22 +99,22 @@ MR 입력 213에서는 간단한 공간 그리기 환경을 만들어 동작 컨
 **참조용으로 완료 된 장면**
 
 * **백그라운드** 폴더 아래에 두 개의 완료 된 Unity 장면을 찾을 수 있습니다.
-    * **MixedReality213** : 단일 브러시를 사용 하 여 완료 된 장면
-    * **MixedReality213Advanced** : 여러 브러시를 사용 하 여 고급 디자인을 위한 장면 완료
+    * **MixedReality213**: 단일 브러시를 사용 하 여 완료 된 장면
+    * **MixedReality213Advanced**: 여러 브러시를 사용 하 여 고급 디자인을 위한 장면 완료
 
 **자습서에 대 한 새 장면 설정**
 
 * Unity에서 **파일 > 새 장면** 을 클릭 합니다.
 * **기본 카메라** 및 **방향성 광원** 삭제
 * **프로젝트 패널** 에서 다음 prefabs을 검색 하 여 **계층** 패널로 끌어옵니다.
-    * Asset/HoloToolkit/Input/Prefabs/ **MixedRealityCamera**
-    * 자산/AppPrefabs/ **환경**
+    * Asset/HoloToolkit/Input/Prefabs/**MixedRealityCamera**
+    * 자산/AppPrefabs/**환경**
 
     ![카메라 및 환경](images/mr213-cameraenvironment-300px.jpg)
 
 * 혼합 현실 도구 키트에는 두 가지 카메라 prefabs 있습니다.
-    * **MixedRealityCamera. prefab** : 카메라 전용
-    * **MixedRealityCameraParent prefab** : 카메라 + Teleportation + 경계
+    * **MixedRealityCamera. prefab**: 카메라 전용
+    * **MixedRealityCameraParent prefab**: 카메라 + Teleportation + 경계
     * 이 자습서에서는 teleportation 기능 없이 **MixedRealityCamera** 를 사용 합니다. 이로 인해 사용자가 접지 되도록 기본적인 층을 포함 하는 간단한 **환경** prefab를 추가 했습니다.
     * **MixedRealityCameraParent** 를 사용 하 여 teleportation에 대 한 자세한 내용은 [고급 디자인-teleportation 및 locomotion](#advanced-design---teleportation-and-locomotion) 를 참조 하세요.
 
@@ -153,7 +153,7 @@ Windows Mixed Reality는 컨트롤러 시각화를 위한 애니메이션 컨트
 
 이 장에서는 이러한 컨트롤러 사용자 지정의 예제에 대해 알아봅니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * **프로젝트** 패널의 검색 상자에 **motioncontrollers** 를 입력 합니다. 자산/HoloToolkit/입력/Prefabs/에서 찾을 수도 있습니다.
 * **Motioncontrollers** Prefab을 **계층** 패널로 끌어 옵니다.
@@ -189,7 +189,7 @@ protected override void Awake()
 
 이후 장에서는 이러한 스크립트를 사용 하 여 UI 요소를 컨트롤러에 연결 하는 방법을 배웁니다.
 
-*일부 스크립트에서는 #if 된 코드 블록을 찾을 수 있습니다 **. UNITY_EDITOR** 또는 **UNITY_WSA** . 이러한 코드 블록은 Windows에 배포할 때 UWP 런타임에만 실행 됩니다. Unity 편집기와 UWP 앱 런타임에서 사용 하는 Api 집합이 다르기 때문입니다.*
+*일부 스크립트에서는 #if 된 코드 블록을 찾을 수 있습니다 **. UNITY_EDITOR** 또는 **UNITY_WSA**. 이러한 코드 블록은 Windows에 배포할 때 UWP 런타임에만 실행 됩니다. Unity 편집기와 UWP 앱 런타임에서 사용 하는 Api 집합이 다르기 때문입니다.*
 
 * 장면을 **저장** 하 고 **재생** 단추를 클릭 합니다.
 
@@ -208,7 +208,7 @@ protected override void Awake()
 
 이 장에서는 사용자가 언제 든 지 쉽게 액세스 하 고 조작할 수 있는 사용자 인터페이스 요소를 컨트롤러에 추가 하는 방법을 배웁니다. 또한 터치 패드 입력을 사용 하 여 간단한 색 선택 UI를 추가 하는 방법을 알아봅니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * **프로젝트** 패널에서 **Motioncontrollerinfo** 스크립트를 검색 합니다.
 * 검색 결과에서 **Motioncontrollerinfo** 스크립트를 두 번 클릭 하 여 Visual Studio의 코드를 확인 합니다.
@@ -219,7 +219,7 @@ protected override void Awake()
 
 ![MR213 MotionControllerElements](images/mr213-motioncontrollerelements-1000px.jpg)
 
-* **홈**
+* **Home**
 * **메뉴**
 * **잡습니다**
 * **사용해**
@@ -288,7 +288,7 @@ private void AttachElementToController(MotionControllerInfo newController)
 
 **Color Kerwheel 스크립트**
 
-**ColorAttachToController Kerwheel** 은 **AttachToController** 를 상속 하므로 **검사기** 패널에 **손** 및 **요소가** 표시 됩니다. UI를 왼쪽 컨트롤러의 터치 패드 요소에 연결 합니다.
+**ColorAttachToController Kerwheel** 은 를 상속 하므로 **검사기** 패널에 **손** 및 **요소가** 표시 됩니다. UI를 왼쪽 컨트롤러의 터치 패드 요소에 연결 합니다.
 
 ![Color Kerwheel 스크립트](images/mr213-attachtocontroller-300px.jpg)
 
@@ -341,7 +341,7 @@ private IEnumerator Start() {
 * 터치 패드 입력 데이터 이벤트를 가져오는 방법 알아보기
 * 앱 환경에 대 한 터치 패드 축 위치 정보를 사용 하는 방법을 알아봅니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * **계층** 패널에서 **Colorpickerwheel** 을 클릭 합니다.
 * **검사기** 패널의 **애니메이터** 아래에서 **ColorPickerWheelController** 를 두 번 클릭 합니다.
@@ -364,10 +364,10 @@ private IEnumerator Start() {
 
 **InteractionSourceUpdated ()** 에서 스크립트는 먼저 다음을 확인 합니다.
 
-* 는 실제로 터치 패드 이벤트 (.obj. 상태)입니다. **touchpadTouched** )
-* 왼쪽 컨트롤러에서 생성 됩니다 **(obj. source. 손** )
+* 는 실제로 터치 패드 이벤트 (.obj. 상태)입니다.**touchpadTouched**)
+* 왼쪽 컨트롤러에서 생성 됩니다 **(obj. source. 손**)
 
-둘 다 true 이면 터치 패드 위치 (obj. 상태)입니다. **touchpadPosition** )가 **selectorPosition** 에 할당 됩니다.
+둘 다 true 이면 터치 패드 위치 (obj. 상태)입니다.**touchpadPosition**)가 **selectorPosition** 에 할당 됩니다.
 
 ```cs
 private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
@@ -439,11 +439,11 @@ if (visible != visibleLastFrame)
 
 ![MR213_BrushToolOverride](images/mr213-brushtooloverride-500px.jpg)
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * **계층** 패널에서 **motioncontrollers** 를 클릭 합니다.
 * **오른쪽의 대체 컨트롤러** 필드 오른쪽에 있는 원을 클릭 합니다.
-* **' BrushController** '을 입력 하 고 결과에서 prefab를 선택 합니다. 자산/AppPrefabs/ **BrushController** 에서 찾을 수 있습니다.
+* **' BrushController**'을 입력 하 고 결과에서 prefab를 선택 합니다. 자산/AppPrefabs/**BrushController** 에서 찾을 수 있습니다.
 * **항상 대체 권한 모델 사용** 을 선택 합니다.
 
 ![MR213_BrushToolOverrideSlot](images/mr213-motioncontrollersoverride-700px.jpg)
@@ -467,7 +467,7 @@ if (visible != visibleLastFrame)
 
 * 선택 단추 이벤트를 사용 하 여 선 그리기를 시작 및 중지 하는 방법에 대해 알아봅니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * **프로젝트** 패널에서 **BrushController** prefab를 검색 합니다.
 * **검사기** 패널에서 **BrushController** 스크립트를 두 번 클릭 하 여 Visual Studio에서 코드를 확인 합니다.
@@ -535,7 +535,7 @@ private IEnumerator DrawOverTime()
 }
 ```
 
-색 선택 휠 UI에서 현재 선택 된 색을 사용 하려면 **BrushController** 에 **Colorpickerwheel** 개체에 대 한 참조가 있어야 합니다. **BrushController** prefab는 런타임에 대체 컨트롤러로 인스턴스화되기 때문에 장면의 개체에 대 한 모든 참조는 런타임에 설정 되어야 합니다. 이 경우 GameObject를 사용 하 여 **ColorFindObjectOfType** 를 찾습니다 **ColorPickerWheel** .
+색 선택 휠 UI에서 현재 선택 된 색을 사용 하려면 **BrushController** 에 **Colorpickerwheel** 개체에 대 한 참조가 있어야 합니다. **BrushController** prefab는 런타임에 대체 컨트롤러로 인스턴스화되기 때문에 장면의 개체에 대 한 모든 참조는 런타임에 설정 되어야 합니다. 이 경우 GameObject를 사용 하 여 **ColorFindObjectOfType** 를 찾습니다 .
 
 ```cs
 private void OnEnable()
@@ -560,7 +560,7 @@ private void OnEnable()
 * 선택 및 이해 단추 입력 이벤트를 사용 하는 방법을 알아봅니다.
 * 개체를 인스턴스화하는 방법 알아보기
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * **프로젝트** 패널의 검색 상자에 **ObjectSpawner** 를 입력 합니다. 자산/AppPrefabs/에서 찾을 수도 있습니다.
 * **ObjectSpawner** Prefab를 **계층** 패널로 끌어 옵니다.
@@ -660,18 +660,18 @@ private void SpawnObject()
 
 이 장에서는 기본 동작 컨트롤러 모델을 사용자 지정 브러시 도구 컬렉션으로 바꾸는 방법을 배웁니다. 참조를 위해, **장면 폴더 아래** 에서 완료 된 장면 **MixedReality213Advanced** 를 찾을 수 있습니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * **프로젝트** 패널의 검색 상자에 **BrushSelector** 를 입력 합니다. 자산/AppPrefabs/에서 찾을 수도 있습니다.
 * **BrushSelector** Prefab를 **계층** 패널로 끌어 옵니다.
 * 조직의 경우 **브러시** 라는 빈 GameObject를 만듭니다.
 * **프로젝트** 패널에서 다음 Prefabs을 **브러시로** 끌어 옵니다.
-    * 자산/AppPrefabs/ **BrushFat**
-    * 자산/AppPrefabs/ **BrushThin**
-    * 자산/AppPrefabs/ **지우개**
-    * 자산/AppPrefabs/ **Markerfat**
-    * 자산/AppPrefabs/ **Markerthin**
-    * 자산/AppPrefabs/ **연필**
+    * 자산/AppPrefabs/**BrushFat**
+    * 자산/AppPrefabs/**BrushThin**
+    * 자산/AppPrefabs/**지우개**
+    * 자산/AppPrefabs/**Markerfat**
+    * 자산/AppPrefabs/**Markerthin**
+    * 자산/AppPrefabs/**연필**
 
     ![브러시](images/mixedreality213-brushes-250px.png)
 
@@ -695,8 +695,8 @@ private void SpawnObject()
 
 **BrushSelector** 는 다음과 같은 두 가지 유틸리티를 사용 합니다.
 
-* **Ellipse** : 타원 셰이프를 따라 공간에 요소를 생성 하는 데 사용 됩니다.
-* **Lineobjectcollection** : 모든 줄 클래스 (예: 타원)에서 생성 된 요소를 사용 하 여 개체를 배포 합니다. 타원 셰이프를 따라 브러시를 배치 하는 데 사용할 것입니다.
+* **Ellipse**: 타원 셰이프를 따라 공간에 요소를 생성 하는 데 사용 됩니다.
+* **Lineobjectcollection**: 모든 줄 클래스 (예: 타원)에서 생성 된 요소를 사용 하 여 개체를 배포 합니다. 타원 셰이프를 따라 브러시를 배치 하는 데 사용할 것입니다.
 
 결합 하면 이러한 유틸리티를 사용 하 여 방사형 메뉴를 만들 수 있습니다.
 
@@ -801,13 +801,13 @@ private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
 
 사용자가 엄지 스틱을 사용 하 여 teleportation를 사용 하 여 장면 주위로 이동할 수 있도록 하려면 **MixedRealityCamera** 대신 **MixedRealityCameraParent** 를 사용 합니다. **Inputmanager** 및 **defaultcursor** 도 추가 해야 합니다. **MixedRealityCameraParent** 에는 이미 **Motioncontrollers** 와 **경계가** 자식 구성 요소로 포함 되어 있으므로 기존 **motioncontrollers** 및 **Environment** prefab을 제거 해야 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
-* **계층** 패널에서 **MixedRealityCamera** , **Environment** 및 **motioncontrollers** 를 삭제 합니다.
+* **계층** 패널에서 **MixedRealityCamera**, **Environment** 및 **motioncontrollers** 를 삭제 합니다.
 * **프로젝트 패널** 에서 다음 prefabs을 검색 하 여 **계층** 패널로 끌어옵니다.
-    * Asset/AppPrefabs/Input/Prefabs/ **MixedRealityCameraParent**
-    * 자산/AppPrefabs/입력/Prefabs/ **Inputmanager**
-    * 자산/AppPrefabs/입력/Prefabs/커서/ **Defaultcursor**
+    * Asset/AppPrefabs/Input/Prefabs/**MixedRealityCameraParent**
+    * 자산/AppPrefabs/입력/Prefabs/**Inputmanager**
+    * 자산/AppPrefabs/입력/Prefabs/커서/**Defaultcursor**
 
     ![혼합 현실 카메라 부모](images/mr213-cameraparent-300px.png)
 
@@ -833,10 +833,10 @@ private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
 
 * Unity의 **프로젝트** 패널에서 **장면** 폴더를 클릭 합니다.
 * **MixedReality213** 및 **MixedReality213Advanced** 의 두 Unity 장면을 찾을 수 있습니다.
-    * **MixedReality213** : 단일 브러시를 사용 하 여 완료 된 장면
-    * **MixedReality213Advanced** : 선택 단추의 보도 금액 예제를 사용 하는 여러 브러시가 있는 완료 된 장면
+    * **MixedReality213**: 단일 브러시를 사용 하 여 완료 된 장면
+    * **MixedReality213Advanced**: 선택 단추의 보도 금액 예제를 사용 하는 여러 브러시가 있는 완료 된 장면
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [MR 입력 213 프로젝트 파일](https://github.com/Microsoft/MixedReality213)
 * [혼합 현실 도구 키트-동작 컨트롤러 테스트 장면](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/Input/Scenes)

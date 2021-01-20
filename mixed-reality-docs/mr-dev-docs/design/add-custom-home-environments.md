@@ -6,19 +6,19 @@ ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 홈, 사용자 지정 환경, 장소, 절벽 집, skyloft, 사용자, 만들기, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 2d88b4e20c2703b554572c0d39d5c69767164694
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: ca6a41f8388a767b1191ddc3b377822567a603a6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848086"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583304"
 ---
 # <a name="design-your-own-immersive-environments"></a>사용자 고유의 몰입형 환경 디자인
 
 >[!NOTE]
 >이는 실험적인 기능입니다. 시도 하 고 재미 있게 해 주지만, 모든 것이 예상 대로 작동 하지 않을 경우에는 걱정할 필요가 없습니다. 이 기능의 실행 가능성을 평가 하 고 사용 하는 데 관심이 있기 때문에 [개발자 포럼](https://forums.hololens.com/categories/custom-home-environments)에서 사용자 환경 및 발견 한 버그를 알려 주세요.
 
-[Windows 10 4 월 2018 업데이트](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)부터 [windows Mixed Reality 홈](../discover/navigating-the-windows-mixed-reality-home.md)으로 사용할 수 있는 사용자 지정 환경을 시작 메뉴의 위치 선택기에 추가할 수 있는 실험적 기능을 사용 하도록 설정 했습니다. Windows Mixed Reality에는 두 가지 기본 환경, 즉, 절벽 집과 Skyloft가 있으며, 홈으로 선택할 수 있습니다. 사용자 지정 환경을 만들면 직접 만든 목록을 사용 하 여 목록을 확장할 수 있습니다. 작성자와 개발자의 관심을 평가 하기 위해 초기에이 기능을 사용할 수 있도록 하 고 있습니다. 다양 한 제작 도구를 사용 하 여 어떤 종류의 작업을 만들고 있는지 파악 합니다.
+[Windows 10 4 월 2018 업데이트](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)부터 [windows Mixed Reality 홈](../discover/navigating-the-windows-mixed-reality-home.md)으로 사용할 수 있는 사용자 지정 환경을 시작 메뉴의 위치 선택기에 추가할 수 있는 실험적 기능을 사용 하도록 설정 했습니다. Windows Mixed Reality에는 두 가지 기본 환경, 즉, 절벽 집과 Skyloft가 있으며, 홈으로 선택할 수 있습니다. 사용자 지정 환경을 만들면 직접 만든 목록을 사용 하 여 목록을 확장할 수 있습니다. 작성자와 개발자의 관심을 평가 하기 위해 초기에이 기능을 사용할 수 있도록 하 고 있습니다. 다양 한 제작 도구를 사용 하 여 어떤 종류의 작업을 만들고 있는지 파악 합니다.
 
 사용자 지정 환경을 사용 하는 경우 teleporting, 앱과의 상호 작용 및 holograms 배치는 절벽 집 및 Skyloft에서와 같이 작동 하는 것을 알 수 있습니다. 판타지에서 웹을 찾아보거나 holograms를 사용 하 여 futuristic 도시를 채울 수 있습니다. 가능성은 무한 합니다.
 
@@ -32,7 +32,7 @@ ms.locfileid: "97848086"
     </colgroup>
     <tr>
         <td><strong>기능</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
     </tr>
      <tr>
@@ -149,6 +149,5 @@ Windows Mixed Reality는 환경을 로드 하는 경우 글 Tf 단위를 1 미�
 
 사용자 지정 환경을 만들 때 만든 실제 공간과 일치 하지 않는 acoustics 렌더링 시뮬레이션을 사용 합니다. 소리는 잘못 된 방향에서 제공 될 수 있으며 소리가 muffled 수 있습니다. 
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 * [Windows Mixed Reality 자산 변환기 (GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases)
-

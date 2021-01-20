@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows mixed reality, 공간 매핑, 환경, 상호 작용, directx, winrt, api, 샘플 코드, UWP, SDK, 연습
-ms.openlocfilehash: bcd78487e96aaf09707aa4bf58917223cc2e8583
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 19479a4efb577bad629e46b59334f0d23b0b2db4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006713"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583775"
 ---
 # <a name="spatial-mapping-in-directx"></a>DirectX의 공간 매핑
 
@@ -36,7 +36,7 @@ ms.locfileid: "98006713"
     </colgroup>
     <tr>
         <td><strong>기능</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens(1세대)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
     </tr>
@@ -50,35 +50,35 @@ ms.locfileid: "98006713"
 
 ## <a name="directx-development-overview"></a>DirectX 개발 개요
 
-공간 매핑에 대 한 네이티브 응용 프로그램 개발에서는 [Windows.. 공간](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.aspx) 네임 스페이스의 api를 사용 합니다. 이러한 Api를 통해 공간 매핑 Api가 [Unity](../unity/spatial-mapping-in-unity.md)에 의해 노출 되는 것과 동일한 방식으로 공간 매핑 기능을 완벽 하 게 제어할 수 있습니다.
+공간 매핑에 대 한 네이티브 응용 프로그램 개발에서는 [Windows.. 공간](/uwp/api/Windows.Perception.Spatial) 네임 스페이스의 api를 사용 합니다. 이러한 Api를 통해 공간 매핑 Api가 [Unity](../unity/spatial-mapping-in-unity.md)에 의해 노출 되는 것과 동일한 방식으로 공간 매핑 기능을 완벽 하 게 제어할 수 있습니다.
 
 ### <a name="perception-apis"></a>인식 Api
 
 공간 매핑 개발을 위해 제공 되는 기본 유형은 다음과 같습니다.
-* [SpatialSurfaceObserver](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.aspx) 는 응용 프로그램에서 지정한 공간의 영역에 대 한 정보를 SpatialSurfaceInfo 개체의 형태로 제공 합니다.
-* [SpatialSurfaceInfo](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceinfo.aspx) 는 고유한 ID, 경계 볼륨 및 마지막 변경 시간을 포함 하 여 단일 파티션의 공간 표면을 설명 합니다. 요청 시 비동기적으로 SpatialSurfaceMesh을 제공 합니다.
-* [SpatialSurfaceMeshOptions](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemeshoptions.aspx) 에는 SpatialSurfaceInfo에서 요청 된 SpatialSurfaceMesh 개체를 사용자 지정 하는 데 사용 되는 매개 변수가 포함 됩니다
-* [SpatialSurfaceMesh](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.aspx) 는 단일 공간 표면의 메시 데이터를 나타냅니다. 꼭 짓 점 위치, 꼭 짓 점, 꼭 짓 점 및 삼각형 인덱스의 데이터는 멤버 SpatialSurfaceMeshBuffer 개체에 포함 되어 있습니다.
-* [SpatialSurfaceMeshBuffer](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemeshbuffer.aspx) 는 단일 유형의 메시 데이터를 래핑합니다.
+* [SpatialSurfaceObserver](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver) 는 응용 프로그램에서 지정한 공간의 영역에 대 한 정보를 SpatialSurfaceInfo 개체의 형태로 제공 합니다.
+* [SpatialSurfaceInfo](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo) 는 고유한 ID, 경계 볼륨 및 마지막 변경 시간을 포함 하 여 단일 파티션의 공간 표면을 설명 합니다. 요청 시 비동기적으로 SpatialSurfaceMesh을 제공 합니다.
+* [SpatialSurfaceMeshOptions](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshOptions) 에는 SpatialSurfaceInfo에서 요청 된 SpatialSurfaceMesh 개체를 사용자 지정 하는 데 사용 되는 매개 변수가 포함 됩니다
+* [SpatialSurfaceMesh](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceMesh) 는 단일 공간 표면의 메시 데이터를 나타냅니다. 꼭 짓 점 위치, 꼭 짓 점, 꼭 짓 점 및 삼각형 인덱스의 데이터는 멤버 SpatialSurfaceMeshBuffer 개체에 포함 되어 있습니다.
+* [SpatialSurfaceMeshBuffer](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshBuffer) 는 단일 유형의 메시 데이터를 래핑합니다.
 
 이러한 Api를 사용 하 여 응용 프로그램을 개발 하는 경우 기본 프로그램 흐름은 다음과 같이 표시 됩니다 (아래에 설명 된 샘플 응용 프로그램 참조).
 - **SpatialSurfaceObserver 설정**
-  - [Requestaccessasync](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.requestaccessasync.aspx)를 호출 하 여 사용자가 장치의 공간 매핑 기능을 사용 하는 응용 프로그램에 대 한 권한을 부여 했는지 확인 합니다.
+  - [Requestaccessasync](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver)를 호출 하 여 사용자가 장치의 공간 매핑 기능을 사용 하는 응용 프로그램에 대 한 권한을 부여 했는지 확인 합니다.
   - SpatialSurfaceObserver 개체를 인스턴스화합니다.
-  - [SetBoundingVolumes](https://msdn.microsoft.com/library/windows/apps/mt592747.aspx) 를 호출 하 여 공간 표면에 대 한 정보를 원하는 공간 영역을 지정 합니다. 나중에이 함수를 다시 호출 하 여 이러한 영역을 수정할 수 있습니다. 각 지역은 [SpatialBoundingVolume](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialboundingvolume.aspx)를 사용 하 여 지정 됩니다.
-  - [ObservedSurfacesChanged](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.observedsurfaceschanged.aspx) 이벤트에 등록 합니다 .이 이벤트는 지정 된 공간 영역에서 공간 표면과 관련 된 새 정보를 사용할 수 있을 때마다 발생 합니다.
+  - [SetBoundingVolumes](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver) 를 호출 하 여 공간 표면에 대 한 정보를 원하는 공간 영역을 지정 합니다. 나중에이 함수를 다시 호출 하 여 이러한 영역을 수정할 수 있습니다. 각 지역은 [SpatialBoundingVolume](/uwp/api/Windows.Perception.Spatial.SpatialBoundingVolume)를 사용 하 여 지정 됩니다.
+  - [ObservedSurfacesChanged](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver) 이벤트에 등록 합니다 .이 이벤트는 지정 된 공간 영역에서 공간 표면과 관련 된 새 정보를 사용할 수 있을 때마다 발생 합니다.
 - **ObservedSurfacesChanged 이벤트 처리**
-  - 이벤트 처리기에서 [GetObservedSurfaces](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.getobservedsurfaces.aspx) 를 호출 하 여 SpatialSurfaceInfo 개체의 맵을 받습니다. 이 맵을 사용 하 여 [사용자 환경에](../../design/spatial-mapping.md#mesh-caching)있는 공간 표면의 레코드를 업데이트할 수 있습니다.
-  - 각 SpatialSurfaceInfo 개체에 대해 [TryGetBounds](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceinfo.trygetbounds.aspx) 를 쿼리하여 선택한 [공간 좌표계](../../design/coordinate-systems.md) 로 표현 된 표면의 공간 범위를 확인할 수 있습니다.
-  - 공간 표면의 메시를 요청 하기로 결정 한 경우 [TryComputeLatestMeshAsync](https://msdn.microsoft.com/library/windows/apps/mt592715.aspx)를 호출 합니다. 삼각형의 밀도와 반환 된 메시 데이터의 형식을 지정 하는 옵션을 제공할 수 있습니다.
+  - 이벤트 처리기에서 [GetObservedSurfaces](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver) 를 호출 하 여 SpatialSurfaceInfo 개체의 맵을 받습니다. 이 맵을 사용 하 여 [사용자 환경에](../../design/spatial-mapping.md#mesh-caching)있는 공간 표면의 레코드를 업데이트할 수 있습니다.
+  - 각 SpatialSurfaceInfo 개체에 대해 [TryGetBounds](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo) 를 쿼리하여 선택한 [공간 좌표계](../../design/coordinate-systems.md) 로 표현 된 표면의 공간 범위를 확인할 수 있습니다.
+  - 공간 표면의 메시를 요청 하기로 결정 한 경우 [TryComputeLatestMeshAsync](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo)를 호출 합니다. 삼각형의 밀도와 반환 된 메시 데이터의 형식을 지정 하는 옵션을 제공할 수 있습니다.
 - **수신 및 프로세스 메시**
   - TryComputeLatestMeshAsync에 대 한 각 호출에서 SpatialSurfaceMesh 개체를 비동기적으로 반환 합니다.
-  - 이 개체를 사용 하 여 포함 된 SpatialSurfaceMeshBuffer 개체에 액세스할 수 있습니다 .이 개체를 요청 하면 메시의 삼각형 인덱스, 꼭 짓 점, 꼭 짓 점, 꼭 짓 점 법선에 액세스할 수 있습니다. 이 데이터는 메시 렌더링에 사용 되는 [Direct3D 11 api](https://msdn.microsoft.com/library/windows/desktop/ff476501(v=vs.85).aspx) 와 직접 호환 되는 형식입니다.
+  - 이 개체를 사용 하 여 포함 된 SpatialSurfaceMeshBuffer 개체에 액세스할 수 있습니다 .이 개체를 요청 하면 메시의 삼각형 인덱스, 꼭 짓 점, 꼭 짓 점, 꼭 짓 점 법선에 액세스할 수 있습니다. 이 데이터는 메시 렌더링에 사용 되는 [Direct3D 11 api](/windows/win32/api/d3d11/nf-d3d11-id3d11device-createbuffer) 와 직접 호환 되는 형식입니다.
   - 여기에서 응용 프로그램은 필요에 따라 메시 데이터를 분석 하거나 [처리](../../design/spatial-mapping.md#mesh-processing) 하 고, [렌더링](../../design/spatial-mapping.md#rendering) 및 물리적 [rayray캐스트 및 충돌](../../design/spatial-mapping.md#raycasting-and-collision)에 사용할 수 있습니다.
-  - 한 가지 중요 한 정보는 메시 꼭 짓 점 위치 (예: 메시를 렌더링 하는 데 사용 되는 꼭 짓 점 셰이더)에 배율을 적용 하 여 버퍼에 저장 되는 최적화 된 정수 단위에서 미터까지 변환 해야 한다는 것입니다. [VertexPositionScale](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx)를 호출 하 여이 규모를 검색할 수 있습니다.
+  - 한 가지 중요 한 정보는 메시 꼭 짓 점 위치 (예: 메시를 렌더링 하는 데 사용 되는 꼭 짓 점 셰이더)에 배율을 적용 하 여 버퍼에 저장 되는 최적화 된 정수 단위에서 미터까지 변환 해야 한다는 것입니다. [VertexPositionScale](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceMesh)를 호출 하 여이 규모를 검색할 수 있습니다.
 
 ### <a name="troubleshooting"></a>문제 해결
-* SpatialSurfaceMesh에서 반환 된 소수 자릿수를 사용 하 여 꼭 짓 점 셰이더의 메시 꼭 짓 점 위치를 조정 하는 것을 잊지 마세요 [. VertexPositionScale](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx)
+* SpatialSurfaceMesh에서 반환 된 소수 자릿수를 사용 하 여 꼭 짓 점 셰이더의 메시 꼭 짓 점 위치를 조정 하는 것을 잊지 마세요 [. VertexPositionScale](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceMesh)
 
 ## <a name="spatial-mapping-code-sample-walkthrough"></a>공간 매핑 코드 샘플 연습
 
@@ -159,7 +159,7 @@ initSurfaceObserverTask.then([this, coordinateSystem](Windows::Perception::Spati
 
 ### <a name="create-a-surface-observer"></a>Surface 관찰자 만들기
 
-**Windows::P erception:: 공간::** surface 네임 스페이스는 [SpatialCoordinateSystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.aspx)에서 지정 하는 하나 이상의 볼륨을 관찰 하는 [SpatialSurfaceObserver](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.aspx) 클래스를 포함 합니다. [SpatialSurfaceObserver](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.aspx) 인스턴스를 사용 하 여 실시간으로 표면 메시 데이터에 액세스할 수 있습니다.
+**Windows::P erception:: 공간::** surface 네임 스페이스는 [SpatialCoordinateSystem](/uwp/api/Windows.Perception.Spatial.SpatialCoordinateSystem)에서 지정 하는 하나 이상의 볼륨을 관찰 하는 [SpatialSurfaceObserver](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver) 클래스를 포함 합니다. [SpatialSurfaceObserver](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver) 인스턴스를 사용 하 여 실시간으로 표면 메시 데이터에 액세스할 수 있습니다.
 
 **Appmain .h** 에서:
 
@@ -219,7 +219,7 @@ m_surfaceObserver->SetBoundingVolume(
             );
 ```
 
-Surface 매핑 데이터를 사용할 수 없을 때 앱에서 다른 작업을 수행 해야 하는 경우 [SpatialPerceptionAccessStatus](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialperceptionaccessstatus.aspx) **허용** 되지 않는 경우에 응답 하는 코드를 작성할 수 있습니다. 예를 들어, 이러한 장치에 공간 매핑에 대 한 하드웨어가 없기 때문에 장치를 연결 하는 pc에서는 허용 되지 않습니다. 이러한 장치의 경우 대신 사용자 환경 및 장치 구성에 대 한 정보를 위해 공간 단계를 사용 해야 합니다.
+Surface 매핑 데이터를 사용할 수 없을 때 앱에서 다른 작업을 수행 해야 하는 경우 [SpatialPerceptionAccessStatus](/uwp/api/Windows.Perception.Spatial.SpatialPerceptionAccessStatus) **허용** 되지 않는 경우에 응답 하는 코드를 작성할 수 있습니다. 예를 들어, 이러한 장치에 공간 매핑에 대 한 하드웨어가 없기 때문에 장치를 연결 하는 pc에서는 허용 되지 않습니다. 이러한 장치의 경우 대신 사용자 환경 및 장치 구성에 대 한 정보를 위해 공간 단계를 사용 해야 합니다.
 
 ### <a name="initialize-and-update-the-surface-mesh-collection"></a>표면 메시 컬렉션 초기화 및 업데이트
 
@@ -250,7 +250,7 @@ m_surfaceObserver->ObservedSurfacesChanged += ref new TypedEventHandler<SpatialS
 
 **참고:** 이는 앱이 메시 데이터를 처리 하는 가장 효율적인 방법이 아닐 수 있습니다. 이 코드는 명확 하 게 작성 되었으며 최적화 되지 않았습니다.
 
-Surface 메시 데이터는 [Platform:: guid](https://msdn.microsoft.com/library/windows/desktop/aa373931.aspx) 를 키 값으로 사용 하 여 [SpatialSurfaceInfo](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceinfo.aspx) 개체를 저장 하는 읽기 전용 맵에 제공 됩니다.
+Surface 메시 데이터는 [Platform:: guid](https://msdn.microsoft.com/library/windows/desktop/aa373931.aspx) 를 키 값으로 사용 하 여 [SpatialSurfaceInfo](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo) 개체를 저장 하는 읽기 전용 맵에 제공 됩니다.
 
 ```cpp
 IMapView<Guid, SpatialSurfaceInfo^>^ const& surfaceCollection = sender->GetObservedSurfaces();
@@ -397,7 +397,7 @@ CreateDirectXBuffer(device, D3D11_BIND_VERTEX_BUFFER, positions, m_vertexPositio
 
 ### <a name="update-and-render-surface-meshes"></a>표면 메시 업데이트 및 렌더링
 
-SurfaceMesh 클래스에는 특수 업데이트 함수가 있습니다. 각 [SpatialSurfaceMesh](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.aspx) 에는 고유한 변환이 있으며,이 샘플에서는 **SpatialStationaryReferenceFrame** 에 현재 좌표계를 사용 하 여 변환을 가져옵니다. 그런 다음 GPU에서 모델 상수 버퍼를 업데이트 합니다.
+SurfaceMesh 클래스에는 특수 업데이트 함수가 있습니다. 각 [SpatialSurfaceMesh](/uwp/api/Windows.Perception.Spatial.Surfaces.SpatialSurfaceMesh) 에는 고유한 변환이 있으며,이 샘플에서는 **SpatialStationaryReferenceFrame** 에 현재 좌표계를 사용 하 여 변환을 가져옵니다. 그런 다음 GPU에서 모델 상수 버퍼를 업데이트 합니다.
 
 ```cpp
 void SurfaceMesh::UpdateTransform(
@@ -676,6 +676,6 @@ context->OMSetRenderTargets(1, targets, pCameraResources->GetSurfaceDepthStencil
 m_meshCollection->Render(pCameraResources->IsRenderingStereoscopic(), false);
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [홀로그램 DirectX 프로젝트 만들기](creating-a-holographic-directx-project.md)
-* [Windows. 인식 공간 API](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.aspx)
+* [Windows. 인식 공간 API](/uwp/api/Windows.Perception.Spatial)

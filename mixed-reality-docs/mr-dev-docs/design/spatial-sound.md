@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
 keywords: 공간 사운드, 서라운드 사운드, 3d 오디오, 3d 사운드, 공간 오디오, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 사례 연구, acoustics
-ms.openlocfilehash: b65a4ff3dc64863f02f1459fa0c3adc5d34b0703
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 335ff8acf036591bbbf9868f591ca2c3cef1386c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848169"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583255"
 ---
 # <a name="audio-in-mixed-reality"></a>혼합 현실에서 오디오
 
@@ -43,7 +43,7 @@ Acoustics는 혼합 현실 세계에 holograms을 더욱 깊이 있게 연결 �
     </colgroup>
     <tr>
         <td><strong>기능</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (첫 번째 gen)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (첫 번째 gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
     </tr>
@@ -91,7 +91,7 @@ HRTFs는 frequency 스펙트럼 간의 수준 및 단계 차이를 조작 합니
 
 ### <a name="spatializer-platform-support"></a>Spatializer 플랫폼 지원
 
-Windows에서는 [ISPATIALAUDIOCLIENT API](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound)를 통해 hrtfs를 비롯 한 spatialization을 제공 합니다. 이 API는 HoloLens 2 HRTF 하드웨어 가속을 응용 프로그램에 노출 합니다.
+Windows에서는 [ISPATIALAUDIOCLIENT API](/windows/win32/coreaudio/spatial-sound)를 통해 hrtfs를 비롯 한 spatialization을 제공 합니다. 이 API는 HoloLens 2 HRTF 하드웨어 가속을 응용 프로그램에 노출 합니다.
 
 ### <a name="spatializer-middleware-support"></a>Spatializer 미들웨어 지원
 
@@ -103,7 +103,7 @@ Windows ' HRTFs에 대 한 지원은 다음 타사 오디오 엔진에서 사용
 
 공간 오디오는 방향에 대 한 정보입니다. 다른 차원에는 폐색, 장애물, 반향, portaling 및 원본 모델링이 포함 됩니다. 이러한 차원을 통틀어 *acoustics* 라고 합니다. Acoustics 없이 spatialized 소리는 인식 거리가 부족 합니다.
 
-Acoustics 처리가의 범위는 단순에서 복잡 합니다. 모든 오디오 엔진에서 지 원하는 반향을 사용 하 여 수신기 환경에 spatialized 소리를 푸시할 수 있습니다. [Project Acoustics](https://aka.ms/acoustics) 와 같은 Acoustics 시스템은 보다 풍부 하 고 뛰어난 Acoustics 처리를 제공 합니다. 프로젝트 Acoustics 벽, 도어 및 기타 장면 기 하 도형의 효과를 소리로 모델링할 수 있습니다. 이는 관련 장면 기 하 도형을 개발 시에 알려진 경우에 효과적으로 사용할 수 있는 옵션입니다.
+Acoustics 처리가의 범위는 단순에서 복잡 합니다. 모든 오디오 엔진에서 지 원하는 반향을 사용 하 여 수신기 환경에 spatialized 소리를 푸시할 수 있습니다. [Project Acoustics](/gaming/acoustics/what-is-acoustics) 와 같은 Acoustics 시스템은 보다 풍부 하 고 뛰어난 Acoustics 처리를 제공 합니다. 프로젝트 Acoustics 벽, 도어 및 기타 장면 기 하 도형의 효과를 소리로 모델링할 수 있습니다. 이는 관련 장면 기 하 도형을 개발 시에 알려진 경우에 효과적으로 사용할 수 있는 옵션입니다.
 
 ## <a name="next-steps"></a>다음 단계
 

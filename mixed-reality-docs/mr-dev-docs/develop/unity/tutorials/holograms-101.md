@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: 혼합 현실, Windows Mixed Reality, HoloLens, 홀로그램, 아카데미, 자습서, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
-ms.openlocfilehash: f2725db17a2991b956c777ee7106b7f094582f77
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4ca16542060e1cee746ba5095a7bf68ca8136267
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677202"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583712"
 ---
 # <a name="mr-basics-101-complete-project-with-device"></a>MR 기본 101: 디바이스를 사용하여 프로젝트 수행
 
@@ -32,15 +32,15 @@ ms.locfileid: "94677202"
 
 <table>
 <tr>
-<th>과정</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
+<th>과정</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
 </tr><tr>
 <td>MR 기본 101: 디바이스를 사용하여 프로젝트 수행</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
 </table>
 
-## <a name="before-you-start"></a>시작하기 전 확인 사항
+## <a name="before-you-start"></a>시작하기 전에
 
-### <a name="prerequisites"></a>사전 요구 사항
+### <a name="prerequisites"></a>필수 구성 요소
 
 * 올바른 [도구로](../../install-the-tools.md)구성 된 WINDOWS 10 PC입니다.
 * [개발용으로 구성 된](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)HoloLens 장치입니다.
@@ -677,7 +677,7 @@ public class HitTarget : MonoBehaviour
 
 * Unity에서 **대상** 개체를 선택 합니다.
 * 이제 **적중 대상** 구성 요소에서 두 개의 공용 속성이 표시 되 고 장면에서 개체를 참조 해야 합니다.
-  * 계층 **패널의** 지 **Hierarchy** **속성을** **적중 대상** 구성 요소의 지 속성 속성으로 끌어 옵니다.
+  * 계층 **패널의** 지  **속성을** **적중 대상** 구성 요소의 지 속성 속성으로 끌어 옵니다.
   * **단계** 를 **계층** 패널에서 개체로 끌어 **적중 대상** 구성 요소의 속성을 **숨깁니다** .
 * 앱을 내보내고 빌드하고 배포 합니다.
 * 바닥에 종이를 놓고 선택 제스처를 사용 하 여 구를 끌어 놓습니다.
@@ -695,7 +695,7 @@ public class HitTarget : MonoBehaviour
 
 이제 사용자 고유의 holographic 환경을 만들 준비가 되었습니다!
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [MR 기본 101E: 에뮬레이터를 사용하는 완전한 프로젝트](holograms-101e.md)
 * [응시](../../../design/gaze-and-commit.md)

@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: SteamVR, Compatibility, 포팅, HoloLens 1 gen, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 마이그레이션, Windows 10, 스트림, 동작 컨트롤러, haptics
-ms.openlocfilehash: c67eed489f626c804583592e496fcfaff5d8c291
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: b6d92d558218f71af0e8c7693f64a50a44524c63
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192631"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583820"
 ---
 # <a name="updating-steamvr-apps-for-windows-mixed-reality"></a>Windows Mixed Reality용 SteamVR 앱 업데이트
 
@@ -19,7 +19,7 @@ ms.locfileid: "98192631"
 
 ## <a name="initial-setup-instructions"></a>초기 설치 지침
 
-Windows Mixed Reality에서 게임 또는 앱 테스트를 시작 하려면 먼저 [시작 가이드](https://aka.ms/WindowsMixedRealitySteamVR) 를 따르세요.
+Windows Mixed Reality에서 게임 또는 앱 테스트를 시작 하려면 먼저 [시작 가이드](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality) 를 따르세요.
 
 ## <a name="controller-models"></a>컨트롤러 모델
 
@@ -48,7 +48,7 @@ Windows Mixed Reality에서 게임 또는 앱 테스트를 시작 하려면 먼�
 
 ## <a name="haptics"></a>Haptics
 
-[Windows 10 4 월 2018 업데이트](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)부터 Windows Mixed Reality의 SteamVR 환경에 대 한 haptics가 지원 됩니다. SteamVR app 또는 game에 이미 haptics에 대 한 지원이 포함 된 경우 [Windows Mixed Reality 동작 컨트롤러](../../design/motion-controllers.md)에서 추가 작업 없이 작동 해야 합니다.
+[Windows 10 4 월 2018 업데이트](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)부터 Windows Mixed Reality의 SteamVR 환경에 대 한 haptics가 지원 됩니다. SteamVR app 또는 game에 이미 haptics에 대 한 지원이 포함 된 경우 [Windows Mixed Reality 동작 컨트롤러](../../design/motion-controllers.md)에서 추가 작업 없이 작동 해야 합니다.
 
 Windows Mixed Reality 동작 컨트롤러는 다른 SteamVR 동작 컨트롤러에서 발견 된 선형 작동기와는 달리 표준 haptics 모터를 사용 합니다. 이로 인해 약간 다르게 예상 되는 사용자 환경이 발생할 수 있습니다. 따라서 Windows Mixed Reality 동작 컨트롤러를 사용 하 여 haptics 디자인을 테스트 하 고 조정 하는 것이 좋습니다. 예를 들어 Windows Mixed Reality 동작 컨트롤러에서 짧은 햅 펄스 (5-10 밀리초)가 더 눈에 띄지 않을 수도 있습니다. 더 눈에 띄는 펄스를 생성 하려면 더 긴 "클릭" (40-70 밀리초)을 사용 하 여 모터를 다시 전원 꺼짐으로 설정 하기 전에 표시 하는 시간을 더 많이 제공 합니다.
 
@@ -62,16 +62,16 @@ Windows Mixed Reality 동작 컨트롤러는 다른 SteamVR 동작 컨트롤러�
 
 ## <a name="bugs-and-feedback"></a>버그 및 피드백
 
-사용자 의견은 Windows Mixed Reality SteamVR 환경을 개선 하는 데 유용 합니다. [Windows 피드백 허브](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/filing-feedback)를 통해 모든 피드백과 버그를 제출 합니다. [SteamVR 피드백을 최대한 활용 하는 방법에 대 한](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality#sharing-feedback-on-steamvr)몇 가지 팁은 다음과 같습니다.
+사용자 의견은 Windows Mixed Reality SteamVR 환경을 개선 하는 데 유용 합니다. [Windows 피드백 허브](/windows/mixed-reality/enthusiast-guide/filing-feedback)를 통해 모든 피드백과 버그를 제출 합니다. [SteamVR 피드백을 최대한 활용 하는 방법에 대 한](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality#sharing-feedback-on-steamvr)몇 가지 팁은 다음과 같습니다.
 
 공유에 대 한 질문이 나 의견이 있는 경우 [스트림 포럼](https://steamcommunity.com/app/719950/discussions/)에서 연락할 수도 있습니다.
 
 ## <a name="faqs-and-troubleshooting"></a>Faq 및 문제 해결
 
-경험을 설정 하거나 재생 하는 일반적인 문제를 실행 하는 경우 [최신 문제 해결 단계를 확인](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#steamvr)하세요.
+경험을 설정 하거나 재생 하는 일반적인 문제를 실행 하는 경우 [최신 문제 해결 단계를 확인](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#steamvr)하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 * [도구 설치](../install-the-tools.md)
-* [헤드셋 및 동작 컨트롤러 드라이버 기록](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software)
-* [Windows Mixed Reality 최소 PC 하드웨어 호환성 지침](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
+* [헤드셋 및 동작 컨트롤러 드라이버 기록](/windows/mixed-reality/enthusiast-guide/mixed-reality-software)
+* [Windows Mixed Reality 최소 PC 하드웨어 호환성 지침](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)

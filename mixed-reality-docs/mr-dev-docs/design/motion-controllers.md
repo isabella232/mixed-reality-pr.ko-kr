@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 6dof 컨트롤러, 동작 컨트롤러, 페어링, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 스크롤, 그립, 상태
-ms.openlocfilehash: 94a9292b3a765131ae197fd9f91c27a52a463eef
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 367c9d9e0179c82af05af3fded9341ff7960d19e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192621"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583665"
 ---
 # <a name="motion-controllers"></a>모션 컨트롤러
 
@@ -41,7 +41,7 @@ ms.locfileid: "98192621"
 </colgroup>
 <tr>
      <td><strong>기능</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens(1세대)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
 </tr>
@@ -80,14 +80,14 @@ Windows Mixed Reality 동작 컨트롤러는 몰입 형 헤드셋의 센서를 �
 
 **Windows, Unity 및 드라이버 업데이트 확인**
 * 혼합 현실 개발을 위해 기본 버전의 Windows, Unity 등의 [도구를 설치](../develop/install-the-tools.md) 하세요.
-* 최신 [헤드셋 및 동작 컨트롤러 드라이버가](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software)있는지 확인 합니다.
+* 최신 [헤드셋 및 동작 컨트롤러 드라이버가](/windows/mixed-reality/enthusiast-guide/mixed-reality-software)있는지 확인 합니다.
 
 ### <a name="pairing-controllers"></a>페어링 컨트롤러
 
 다른 Bluetooth 장치와 마찬가지로 Windows 설정을 사용 하 여 호스트 PC와 동작 컨트롤러를 연결할 수 있습니다.
 
 1. 두 개의 AA 배터리를 컨트롤러 후면에 삽입 합니다. 지금은 배터리 덮개를 종료 합니다.
-2. 기본 제공 Bluetooth 라디오 대신 외부 USB Bluetooth 어댑터를 사용 하는 경우 계속 하기 전에 [bluetooth 모범 사례](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) 를 검토 하세요. 기본 제공 라디오를 사용 하는 데스크톱 구성의 경우 안테나가 연결 되어 있는지 확인 합니다.
+2. 기본 제공 Bluetooth 라디오 대신 외부 USB Bluetooth 어댑터를 사용 하는 경우 계속 하기 전에 [bluetooth 모범 사례](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) 를 검토 하세요. 기본 제공 라디오를 사용 하는 데스크톱 구성의 경우 안테나가 연결 되어 있는지 확인 합니다.
 3. **Windows 설정**  ->  **장치** 열기  ->  **bluetooth 또는 기타 장치**  ->  **bluetooth** 를 추가 하 고 "동작 컨트롤러 – 오른쪽" 및 "동작 컨트롤러-왼쪽"의 이전 인스턴스를 모두 제거 합니다. 목록의 맨 아래에 있는 기타 장치 범주도 선택 합니다.
 4. **Bluetooth 또는 다른 장치 추가** 를 선택 하 고 bluetooth 장치 검색을 시작 합니다.
 5. 컨트롤러의 Windows 단추를 길게 눌러 컨트롤러를 켜고 buzzes 면 해제 합니다.
@@ -142,7 +142,7 @@ Windows Mixed Reality 동작 컨트롤러는 몰입 형 헤드셋의 센서를 �
 
 * 컨트롤러가 제대로 작동 하는지 확인 합니다.
     1. **혼합 현실 포털** 을 시작 하 고 혼합 현실 홈을 입력 합니다.
-    2. 컨트롤러를 이동 하 고 추적, 테스트 단추를 확인 하 고 [teleportation](../discover/navigating-the-windows-mixed-reality-home.md#getting-around-your-home) 작동 하는지 확인 합니다. 그렇지 않으면 [동작 컨트롤러 문제 해결](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers)을 확인 하세요.
+    2. 컨트롤러를 이동 하 고 추적, 테스트 단추를 확인 하 고 [teleportation](../discover/navigating-the-windows-mixed-reality-home.md#getting-around-your-home) 작동 하는지 확인 합니다. 그렇지 않으면 [동작 컨트롤러 문제 해결](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers)을 확인 하세요.
 
 ## <a name="gazing-and-pointing"></a>Gazing 및 가리키기
 
@@ -203,9 +203,9 @@ Windows Mixed Reality는 다양 한 폼 팩터에서 동작 컨트롤러를 지�
 <tr>
 <th> 상태 추적 </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>높은 정확도</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> 높음 </td><td style="background-color: green; color: white"> true</td>
+<td> <b>높은 정확도</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> 높은 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>높은 정확도 (손실 위험)</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: green; color: white"> 높음 </td><td style="background-color: green; color: white"> true</td>
+<td> <b>높은 정확도 (손실 위험)</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: green; color: white"> 높은 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>대략적인 정확도</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: orange"> 근사치 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -257,7 +257,7 @@ Unity에서 동적으로 컨트롤러 모델을 로드 하는 방법에 대 한 
 
 ### <a name="how-do-i-update-motion-controller-firmware"></a>동작 컨트롤러 펌웨어를 업데이트 어떻게 할까요??
 
-동작 컨트롤러 펌웨어는 헤드셋 드라이버의 일부 이며 필요한 경우 연결 시 자동으로 업데이트 됩니다. 펌웨어 업데이트는 일반적으로 Bluetooth 송수신 장치 및 링크 품질에 따라 1-2 분이 소요 됩니다. 드문 경우 지만 컨트롤러 펌웨어 업데이트에는 최대 10 분이 걸릴 수 있으며,이로 인해 Bluetooth 연결 또는 라디오 간섭을 일으킬 수 있습니다. 연결 문제를 해결 하려면 [열성적인 가이드의 Bluetooth 모범 사례](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) 를 참조 하세요. 펌웨어 업데이트 후 컨트롤러는 다시 부팅 되 고 호스트 PC에 다시 연결 됩니다. (Led가 추적을 위해 밝게 표시 될 수 있습니다.) 펌웨어 업데이트가 중단 된 경우 (예: 컨트롤러에 전원이 들어오지 않음) 다음에 컨트롤러 전원을 켤 때 다시 시도 됩니다.
+동작 컨트롤러 펌웨어는 헤드셋 드라이버의 일부 이며 필요한 경우 연결 시 자동으로 업데이트 됩니다. 펌웨어 업데이트는 일반적으로 Bluetooth 송수신 장치 및 링크 품질에 따라 1-2 분이 소요 됩니다. 드문 경우 지만 컨트롤러 펌웨어 업데이트에는 최대 10 분이 걸릴 수 있으며,이로 인해 Bluetooth 연결 또는 라디오 간섭을 일으킬 수 있습니다. 연결 문제를 해결 하려면 [열성적인 가이드의 Bluetooth 모범 사례](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) 를 참조 하세요. 펌웨어 업데이트 후 컨트롤러는 다시 부팅 되 고 호스트 PC에 다시 연결 됩니다. (Led가 추적을 위해 밝게 표시 될 수 있습니다.) 펌웨어 업데이트가 중단 된 경우 (예: 컨트롤러에 전원이 들어오지 않음) 다음에 컨트롤러 전원을 켤 때 다시 시도 됩니다.
 
 ### <a name="how-i-can-check-battery-level"></a>배터리 수준을 확인할 수 있는 방법은 무엇입니까?
 
@@ -269,17 +269,17 @@ Unity에서 동적으로 컨트롤러 모델을 로드 하는 방법에 대 한 
 
 ## <a name="troubleshooting"></a>문제 해결
 
-열성적인 가이드의 [동작 컨트롤러 문제 해결](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) 을 참조 하세요.
+열성적인 가이드의 [동작 컨트롤러 문제 해결](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) 을 참조 하세요.
 
 ## <a name="filing-motion-controller-feedbackbugs"></a>동작 컨트롤러 피드백/버그 파일링
 
-"혼합 현실-> 입력" 범주를 사용 하 여 피드백 허브에 [피드백을 제공](../give-us-feedback.md) 합니다.
+"혼합 현실-> 입력" 범주를 사용 하 여 피드백 허브에 [피드백을 제공](/hololens/hololens-feedback) 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
 * [Unity의 동작 컨트롤러](../develop/unity/motion-controllers-in-unity.md)
 * [DirectX의 헤드 및 모션 컨트롤러](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [제스처](gaze-and-commit.md#composite-gestures)
-* [열성적인 's Guide: Windows Mixed Reality 홈](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
-* [열성적인 's Guide: Windows Mixed Reality에서 게임 & 앱 사용](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
-* [내부에서 외부로 추적의 작동 방식](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)
+* [열성적인 's Guide: Windows Mixed Reality 홈](/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
+* [열성적인 's Guide: Windows Mixed Reality에서 게임 & 앱 사용](/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
+* [내부에서 외부로 추적의 작동 방식](/windows/mixed-reality/enthusiast-guide/tracking-system)

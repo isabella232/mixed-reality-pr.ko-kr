@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, 아카데미, unity, 자습서, api, application insights, hololens, 모던, vr, Windows 10, Visual Studio
-ms.openlocfilehash: d663da0e3a0d00532669a122dc95f2089bf08712
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5d599e7c3c6f887675bf010a10fb8841e80143db
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679472"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582965"
 ---
 # <a name="mr-and-azure-309-application-insights"></a>MR 및 Azure 309: Application Insights
 
@@ -40,7 +40,7 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
 
 <table>
 <tr>
-<th>과정</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
+<th>과정</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
 </tr><tr>
 <td> MR 및 Azure 309: Application Insights</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -61,11 +61,11 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
 - [최신 Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- 개발자 모드가 사용 하도록 설정 된 [Windows Mixed Reality 모던 (VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md) 또는 [Microsoft HoloLens](../../../hololens-hardware-details.md)
+- 개발자 모드가 사용 하도록 설정 된 [Windows Mixed Reality 모던 (VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md) 또는 [Microsoft HoloLens](/hololens/hololens1-hardware)
 - 기본 제공 마이크가 있는 헤드폰 집합 (헤드셋에 기본 제공 mic 및 스피커가 없는 경우)
 - Azure 설정 및 Application Insights 데이터 검색을 위한 인터넷 액세스
 
-## <a name="before-you-start"></a>시작하기 전 확인 사항
+## <a name="before-you-start"></a>시작하기 전에
 
 이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.)
 
@@ -102,7 +102,7 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
 
     4.  리소스 그룹을 선택 하거나 새 **리소스 그룹** 을 만듭니다. 리소스 그룹은 Azure 자산의 컬렉션에 대 한 청구를 모니터링 하 고, 액세스를 제어 하 고, 프로 비전 하 고, 관리 하는 방법을 제공 합니다. 단일 프로젝트와 연결 된 모든 Azure 서비스 (예: 이러한 과정)를 공용 리소스 그룹에 유지 하는 것이 좋습니다.
 
-        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹 문서를 참조](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)하세요.
+        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹 문서를 참조](/azure/azure-resource-manager/resource-group-portal)하세요.
 
     5.  **위치** 를 선택합니다.
 
@@ -277,7 +277,7 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
 
 이 장에서는 카메라와 컨트롤을 설정 하 여 사용자가 장면을 보고 이동할 수 있도록 합니다.
 
-1.  계층 패널에서 빈 영역을 마우스 오른쪽 단추로 클릭 한 다음 빈 영역 **만들기** 를 클릭  >  **Empty** 합니다.
+1.  계층 패널에서 빈 영역을 마우스 오른쪽 단추로 클릭 한 다음 빈 영역 **만들기** 를 클릭  >  합니다.
 
     ![카메라 및 사용자 컨트롤 설정](images/AzureLabs-Lab309-26.png)
 
@@ -379,11 +379,11 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
 
 이 클래스를 만들려면:
 
-1.  *프로젝트 패널* 을 마우스 오른쪽 단추로 클릭 한 다음 **Create**  >  **폴더** 만들기를 클릭 합니다. 폴더 이름을 **스크립트** 로 합니다.
+1.  *프로젝트 패널* 을 마우스 오른쪽 단추로 클릭 한 다음   >  **폴더** 만들기를 클릭 합니다. 폴더 이름을 **스크립트** 로 합니다.
 
     ![ApplicationInsightsTracker 클래스 만들기](images/AzureLabs-Lab309-46.png)  ![ApplicationInsightsTracker 클래스 만들기](images/AzureLabs-Lab309-47.png)
 
-2.  **Scripts** 폴더를 만든 다음 두 번 클릭 하 여 엽니다. 그런 다음 해당 폴더 내에서 **Create**  >  **c # 스크립트** 만들기를 마우스 오른쪽 단추로 클릭 합니다. 스크립트 이름을 **ApplicationInsightsTracker** 로 합니다.
+2.  **Scripts** 폴더를 만든 다음 두 번 클릭 하 여 엽니다. 그런 다음 해당 폴더 내에서   >  **c # 스크립트** 만들기를 마우스 오른쪽 단추로 클릭 합니다. 스크립트 이름을 **ApplicationInsightsTracker** 로 합니다.
 
 3.  새 **ApplicationInsightsTracker** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
 
@@ -507,7 +507,7 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
 
 1.  **Scripts** 폴더를 두 번 클릭 하 여 엽니다.
 
-2.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 하 **Create** 고  >  **c # 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **응시** 로 합니다.
+2.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 하 고  >  **c # 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **응시** 로 합니다.
 
 3.  스크립트를 두 번 클릭 하 여 Visual Studio에서 엽니다.
 
@@ -701,7 +701,7 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
 
 1.  **Scripts** 폴더를 두 번 클릭 하 여 엽니다.
 
-2.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 하 **Create** 고  >  **c # 스크립트** 만들기를 클릭 합니다. 스크립트 **Objecttrigger** 의 이름을로 합니다.
+2.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 하 고  >  **c # 스크립트** 만들기를 클릭 합니다. 스크립트 **Objecttrigger** 의 이름을로 합니다.
 
 3.  스크립트를 두 번 클릭 하 여 Visual Studio에서 엽니다. 기존 코드를 다음으로 바꿉니다.
 
@@ -773,7 +773,7 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
 
 1.  **Scripts** 폴더를 두 번 클릭 하 여 엽니다.
 
-2.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 하 **Create** 고  >  **c # 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **DataFromAnalytics** 로 합니다.
+2.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 하 고  >  **c # 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **DataFromAnalytics** 로 합니다.
 
 3.  스크립트를 두 번 클릭 하 여 Visual Studio에서 엽니다.
 
@@ -1002,7 +1002,7 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
 
 1.  **Scripts** 폴더를 두 번 클릭 하 여 엽니다.
 
-2.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 하 **Create** 고  >  **c # 스크립트** 만들기를 클릭 합니다. 스크립트 **이동** 의 이름을로 합니다.
+2.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 하 고  >  **c # 스크립트** 만들기를 클릭 합니다. 스크립트 **이동** 의 이름을로 합니다.
 
 3.  스크립트를 두 번 클릭 하 여 *Visual Studio* 에서 엽니다.
 
@@ -1281,4 +1281,3 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
 **연습 2**
 
 Application Insights 결과를 시간별로 정렬 하 여 가장 관련성이 높은 데이터를 가져오고 응용 프로그램에서 해당 시간이 중요 한 데이터를 구현 합니다.
-

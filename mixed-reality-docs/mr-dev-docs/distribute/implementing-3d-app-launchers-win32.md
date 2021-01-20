@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, 로고, 아이콘, 모델링, 시작 관리자, 3D 시작 관리자, 타일, 라이브 큐브, win32, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 매니페스트
-ms.openlocfilehash: 63b07664cb09f51e6d0588fdc50d141ad8985093
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 46d3419d3c8267291496d8f788103d7002e6f230
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009672"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583032"
 ---
 # <a name="implement-3d-app-launchers-win32-apps"></a>3D 앱 시작 관리자(Win32 앱) 구현
 
@@ -33,11 +33,11 @@ ms.locfileid: "98009672"
 
 ## <a name="configuring-the-3d-launcher"></a>3D 시작 관리자 구성
 
-Win32 응용 프로그램은 3D 앱 시작 관리자를 만드는 경우 Windows Mixed Reality 시작 메뉴의 "모든 앱" 목록에 표시 됩니다. 이렇게 하려면 다음 단계를 수행 하 여 3D 앱 시작 관리자를 참조 하는 [시각적 요소 매니페스트](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx) XML 파일을 만듭니다.
+Win32 응용 프로그램은 3D 앱 시작 관리자를 만드는 경우 Windows Mixed Reality 시작 메뉴의 "모든 앱" 목록에 표시 됩니다. 이렇게 하려면 다음 단계를 수행 하 여 3D 앱 시작 관리자를 참조 하는 [시각적 요소 매니페스트](/previous-versions/windows/apps/dn393983(v=win.10)) XML 파일을 만듭니다.
 
 1. **3D 앱 시작 관리자 자산 및 파일** 만들기 ( [모델링 및 내보내기](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)참조)
-2. 응용 프로그램에 대 한 **[시각적 요소 매니페스트](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx)** 를 만듭니다.
-    1. [아래 샘플](#sample-visual-elements-manifest)에서 시작할 수 있습니다.  자세한 내용은 전체 [시각적 요소 매니페스트](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx) 설명서를 참조 하세요.
+2. 응용 프로그램에 대 한 **[시각적 요소 매니페스트](/previous-versions/windows/apps/dn393983(v=win.10))** 를 만듭니다.
+    1. [아래 샘플](#sample-visual-elements-manifest)에서 시작할 수 있습니다.  자세한 내용은 전체 [시각적 요소 매니페스트](/previous-versions/windows/apps/dn393983(v=win.10)) 설명서를 참조 하세요.
     2. **Square150x150Logo** 및 **Square70x70Logo** 를 앱에 대 한 PNG/JPG/GIF로 업데이트 합니다.
         * 이러한 응용 프로그램은 Windows Mixed Reality의 모든 앱 목록과 데스크톱의 시작 메뉴에서 앱의 2D 로고에 사용 됩니다.
         * 파일 경로는 시각적 요소 매니페스트를 포함 하는 폴더를 기반으로 합니다.
@@ -165,7 +165,7 @@ IconFile=C:\Program Files (x86)\MyLauncher\apps\app-identifier\game.exe
 IconIndex=0
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * 3D 앱 시작 관리자를 포함 하는 [혼합 현실 모델 샘플](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) 입니다.
 * [3D 앱 시작 관리자 디자인 지침](3d-app-launcher-design-guidance.md)

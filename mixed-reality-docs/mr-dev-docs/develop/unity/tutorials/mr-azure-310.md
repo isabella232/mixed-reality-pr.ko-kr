@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, 사용자 지정 비전, 개체 검색, 혼합 현실, 아카데미, unity, 자습서, api, hololens, Windows 10, Visual Studio
-ms.openlocfilehash: 8f625ebc1e40edaa6364567686c345386ea37dbf
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: edbd583c5361f8074dc57fedb66d6ab01df16de8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010173"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583471"
 ---
 # <a name="mr-and-azure-310-object-detection"></a>Mr 및 Azure 310: 개체 검색
 
@@ -28,8 +28,8 @@ ms.locfileid: "98010173"
 
 **Azure Custom Vision, 개체 검색** 은 개발자가 사용자 지정 이미지 분류자를 빌드할 수 있게 해 주는 Microsoft 서비스입니다. 이러한 분류자는 이미지 자체 내에서 **상자 경계** 를 제공 하 여 새 이미지 내에서 개체를 검색 하는 데 사용할 수 있습니다. 이 서비스는 간단 하 고 사용 하기 쉬운 온라인 포털을 제공 하 여이 프로세스를 간소화 합니다. 자세한 내용은 다음 링크를 방문 하세요.
 
-* [Azure Custom Vision 페이지](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home)
-* [제한 및 할당량](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/limits-and-quotas)
+* [Azure Custom Vision 페이지](/azure/cognitive-services/custom-vision-service/home)
+* [한도 및 할당량](/azure/cognitive-services/custom-vision-service/limits-and-quotas)
 
 이 과정이 완료 되 면 다음을 수행할 수 있는 혼합 현실 응용 프로그램이 만들어집니다.
 
@@ -49,7 +49,7 @@ ms.locfileid: "98010173"
 
 <table>
 <tr>
-<th>과정</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
+<th>과정</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
 </tr><tr>
 <td> MR 및 Azure 310: 개체 감지</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
@@ -63,23 +63,23 @@ ms.locfileid: "98010173"
 이 과정에는 다음 하드웨어 및 소프트웨어를 권장 합니다.
 
 - 개발 PC
-- [개발자 모드를 사용 하는 Windows 10이 하 버전의 작성자 업데이트 (또는 이상)](https://docs.microsoft.com/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [최신 Windows 10 SDK](https://docs.microsoft.com/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [Unity 2017.4 LTS](https://docs.microsoft.com/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [Visual Studio 2017](https://docs.microsoft.com/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- 개발자 모드를 사용 하는 [Microsoft HoloLens](https://docs.microsoft.com/windows/mixed-reality/hololens-hardware-details)
+- [개발자 모드를 사용 하는 Windows 10이 하 버전의 작성자 업데이트 (또는 이상)](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- [최신 Windows 10 SDK](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- [Unity 2017.4 LTS](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- [Visual Studio 2017](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- 개발자 모드를 사용 하는 [Microsoft HoloLens](/windows/mixed-reality/hololens-hardware-details)
 - Azure 설정 및 Custom Vision Service 검색을 위한 인터넷 액세스
 -  Custom Vision에서 인식할 수 있는 각 개체에 대해 15 개 이상의 이미지가 필요 합니다. 원할 경우이 과정에서 이미 제공 된 이미지 ( [일련의 cup](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20310%20-%20Object%20detection/Cup%20Images.zip))를 사용할 수 있습니다.
 
 ## <a name="before-you-start"></a>시작하기 전에
 
 1.  이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.)
-2.  HoloLens를 설정 하 고 테스트 합니다. HoloLens를 설정 하는 데 지원이 필요한 경우 [hololens 설정 문서를 방문](https://docs.microsoft.com/hololens/hololens-setup)해야 합니다. 
+2.  HoloLens를 설정 하 고 테스트 합니다. HoloLens를 설정 하는 데 지원이 필요한 경우 [hololens 설정 문서를 방문](/hololens/hololens-setup)해야 합니다. 
 3.  새 HoloLens 앱 개발을 시작할 때 보정 및 센서 조정을 수행 하는 것이 좋습니다 (경우에 따라 각 사용자에 대해 해당 작업을 수행 하는 데 도움이 될 수 있음). 
 
-보정에 대 한 도움말을 보려면 [HoloLens 보정 문서에](../../../calibration.md#hololens-2)대 한 다음 링크를 참조 하세요.
+보정에 대 한 도움말을 보려면 [HoloLens 보정 문서에](/hololens/hololens-calibration#hololens-2)대 한 다음 링크를 참조 하세요.
 
-센서 조정에 대 한 도움말을 보려면 [HoloLens 센서 조정 문서에 대 한 링크를](../../../sensor-tuning.md)참조 하세요.
+센서 조정에 대 한 도움말을 보려면 [HoloLens 센서 조정 문서에 대 한 링크를](/hololens/hololens-updates)참조 하세요.
 
 ## <a name="chapter-1---the-custom-vision-portal"></a>1 장-Custom Vision 포털
 
@@ -116,7 +116,7 @@ ms.locfileid: "98010173"
         ![](images/AzureLabs-Lab310-05.png)
 
         > [!NOTE]
-        > [Azure 리소스 그룹에 대 한 자세한 내용을 보려면 관련 문서를 탐색](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal) 하세요.
+        > [Azure 리소스 그룹에 대 한 자세한 내용을 보려면 관련 문서를 탐색](/azure/azure-resource-manager/resource-group-portal) 하세요.
 
     4.  **프로젝트 형식을** **개체 검색 (미리 보기)** 으로 설정 합니다.
 

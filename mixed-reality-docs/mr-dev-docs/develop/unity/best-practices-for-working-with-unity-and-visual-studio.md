@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 배포, unity, visual studio, HoloLens, HoloLens 2, 모던 헤드셋, 모범 사례, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, UWP, Visual Studio Tools Windows SDK
-ms.openlocfilehash: 9464c86826b9a8ea2c64384dfa699fc6d98743dd
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6940382af605c28686cec862cf2d9b6cb8411387
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009373"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583467"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Unity 및 Visual Studio 사용 모범 사례
 
@@ -35,7 +35,7 @@ Unity의 .NET scripting 백 엔드 지원은 Unity 2018에서 더 이상 사용 
 
 ## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 
-다운로드 [Visual Studio Tools for Unity](https://docs.microsoft.com/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity)
+다운로드 [Visual Studio Tools for Unity](/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity)
 
 **Visual Studio Tools for Unity의 이점**
 * 중단점을 배치 하 고 변수와 복잡 한 식을 평가 하 여 Visual Studio에서 Unity의 편집기 내 재생 모드를 디버그 합니다.
@@ -57,7 +57,7 @@ UWP Visual Studio 솔루션을 소스 제어에 체크 인 하면 새 Windows SD
 
 자산을 텍스트 형식으로 저장 하면 Visual Studio에서 콘텐츠 변경 차이을 보다 쉽게 검토할 수 있습니다. **편집 > 프로젝트 설정 > 편집기** 를 선택 하 여 자산을 텍스트 형식으로 저장 하 고, **강제로 텍스트** 를 변경 하 여 **자산 Serialization** 모드를 변경할 수 있습니다. 그러나 텍스트 자산 파일 변경 내용을 병합 하는 것은 오류가 발생 하기 쉬우며 권장 되지 않으므로 소스 제어에서 단독 이진 체크 아웃을 사용 하도록 설정 하는 것이 좋습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
 - [IL2CPP에 대 한 빌드 시간 최적화](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html)
 - [*Unityscriptanalyzer* Visual Studio 확장](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer)

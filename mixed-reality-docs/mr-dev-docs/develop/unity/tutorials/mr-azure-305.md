@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 함수, 저장소, hololens, 모던, vr, Windows 10, Visual Studio
-ms.openlocfilehash: bc609e5a4a1c4252f498ada4dba2206140635667
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5c9784446923b3eae7a600b8e672574ce6465038
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679492"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583420"
 ---
 # <a name="mr-and-azure-305-functions-and-storage"></a>MR 및 Azure 305: 함수 및 스토리지
 
@@ -26,9 +26,9 @@ ms.locfileid: "94679492"
 
 이 과정에서는 혼합 현실 응용 프로그램 내에서 Azure Storage 리소스를 사용 하 여 Azure Functions를 만들고 사용 하 고 데이터를 저장 하는 방법에 대해 설명 합니다.
 
-*Azure Functions* 는 개발자가 Azure에서 작은 코드, ' 함수 '를 실행할 수 있도록 해 주는 Microsoft 서비스입니다. 이렇게 하면 다양 한 이점을 얻을 수 있는 로컬 응용 프로그램이 아닌 클라우드로 작업을 위임할 수 있습니다. *Azure Functions* 는 C \# , F \# , Node.js, Java 및 PHP를 비롯 한 몇 가지 개발 언어를 지원 합니다. 자세한 내용은 [Azure Functions 문서](https://docs.microsoft.com/azure/azure-functions/functions-overview)를 참조 하세요.
+*Azure Functions* 는 개발자가 Azure에서 작은 코드, ' 함수 '를 실행할 수 있도록 해 주는 Microsoft 서비스입니다. 이렇게 하면 다양 한 이점을 얻을 수 있는 로컬 응용 프로그램이 아닌 클라우드로 작업을 위임할 수 있습니다. *Azure Functions* 는 C \# , F \# , Node.js, Java 및 PHP를 비롯 한 몇 가지 개발 언어를 지원 합니다. 자세한 내용은 [Azure Functions 문서](/azure/azure-functions/functions-overview)를 참조 하세요.
 
-*Azure Storage* 는 개발자가 데이터를 저장 하 고, 항상 사용 가능 하 고, 안전 하 고, 내구성이 있으며, 확장 가능 하 고, 중복 될 수 있는 보험 데이터를 저장할 수 있는 Microsoft 클라우드 서비스입니다. 즉, Microsoft는 모든 유지 관리 및 중요 한 문제를 처리 합니다. 자세한 내용은 [Azure Storage 문서](https://docs.microsoft.com/azure/storage/common/storage-introduction)를 참조 하세요.
+*Azure Storage* 는 개발자가 데이터를 저장 하 고, 항상 사용 가능 하 고, 안전 하 고, 내구성이 있으며, 확장 가능 하 고, 중복 될 수 있는 보험 데이터를 저장할 수 있는 Microsoft 클라우드 서비스입니다. 즉, Microsoft는 모든 유지 관리 및 중요 한 문제를 처리 합니다. 자세한 내용은 [Azure Storage 문서](/azure/storage/common/storage-introduction)를 참조 하세요.
 
 이 과정을 완료 하면 다음과 같은 작업을 수행할 수 있는 혼합 현실 모던 헤드셋 응용 프로그램이 만들어집니다.
 
@@ -44,7 +44,7 @@ ms.locfileid: "94679492"
 
 <table>
 <tr>
-<th>과정</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
+<th>과정</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
 </tr><tr>
 <td>MR 및 Azure 305: 함수 및 스토리지</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -65,11 +65,11 @@ ms.locfileid: "94679492"
 - [최신 Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- 개발자 모드가 사용 하도록 설정 된 [Windows Mixed Reality 모던 (VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md) 또는 [Microsoft HoloLens](../../../hololens-hardware-details.md)
+- 개발자 모드가 사용 하도록 설정 된 [Windows Mixed Reality 모던 (VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md) 또는 [Microsoft HoloLens](/hololens/hololens1-hardware)
 - Azure 리소스를 만들기 위한 Azure 계정에 대 한 구독
 - Azure 설정 및 데이터 검색을 위한 인터넷 액세스
 
-## <a name="before-you-start"></a>시작하기 전 확인 사항
+## <a name="before-you-start"></a>시작하기 전에
 
 이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.)
 
@@ -113,7 +113,7 @@ ms.locfileid: "94679492"
 
     9. 리소스 그룹을 선택 하거나 새 *리소스 그룹* 을 만듭니다. 리소스 그룹은 Azure 자산의 컬렉션에 대 한 청구를 모니터링 하 고, 액세스를 제어 하 고, 프로 비전 하 고, 관리 하는 방법을 제공 합니다. 단일 프로젝트와 연결 된 모든 Azure 서비스 (예: 이러한 랩)를 공용 리소스 그룹에 유지 하는 것이 좋습니다. 
 
-        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹 문서를 참조](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)하세요.
+        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹 문서를 참조](/azure/azure-resource-manager/resource-group-portal)하세요.
 
     10. 또한이 서비스에 적용 된 사용 약관을 이해 했는지 확인 해야 합니다.
 
@@ -166,7 +166,7 @@ Azure 함수를 만들려면 다음을 수행 합니다.
 
     3. 리소스 그룹을 선택 하거나 새 *리소스 그룹* 을 만듭니다. 리소스 그룹은 Azure 자산의 컬렉션에 대 한 청구를 모니터링 하 고, 액세스를 제어 하 고, 프로 비전 하 고, 관리 하는 방법을 제공 합니다. 단일 프로젝트와 연결 된 모든 Azure 서비스 (예: 이러한 랩)를 공용 리소스 그룹에 유지 하는 것이 좋습니다. 
 
-        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹 문서를 참조](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)하세요.
+        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹 문서를 참조](/azure/azure-resource-manager/resource-group-portal)하세요.
 
     4.  이 연습에서는 선택 된 **OS** 로 *Windows* 를 선택 합니다.
 
@@ -252,7 +252,7 @@ Azure 함수를 만들려면 다음을 수행 합니다.
 
     ![새 unity 프로젝트에 이름을 지정 합니다.](images/AzureLabs-Lab5-18.png)
 
-3.  Unity를 연 상태에서 기본 **스크립트 편집기** 가 **Visual Studio** 로 설정 되어 있는지 확인 하는 것이 좋습니다. **Edit**  >  **기본 설정** 편집으로 이동한 다음 새 창에서 **외부 도구** 로 이동 합니다. **외부 스크립트 편집기** 를 **Visual Studio 2017** 로 변경 합니다. **기본 설정** 창을 닫습니다.
+3.  Unity를 연 상태에서 기본 **스크립트 편집기** 가 **Visual Studio** 로 설정 되어 있는지 확인 하는 것이 좋습니다.   >  **기본 설정** 편집으로 이동한 다음 새 창에서 **외부 도구** 로 이동 합니다. **외부 스크립트 편집기** 를 **Visual Studio 2017** 로 변경 합니다. **기본 설정** 창을 닫습니다.
 
     ![visual studio를 스크립트 편집기로 설정](images/AzureLabs-Lab5-19.png)
 
@@ -463,13 +463,13 @@ Azure 함수를 만들려면 다음을 수행 합니다.
 
 ## <a name="chapter-6---import-azure-storage-for-unity"></a>6 장-Unity Azure Storage 가져오기
 
-Unity에 Azure Storage를 사용 하 게 됩니다 (자체는 Azure 용 .Net SDK를 활용). 이에 대 한 자세한 내용은 [Unity의 Azure Storage 문서](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity)를 참조 하세요.
+Unity에 Azure Storage를 사용 하 게 됩니다 (자체는 Azure 용 .Net SDK를 활용). 이에 대 한 자세한 내용은 [Unity의 Azure Storage 문서](/sandbox/gamedev/unity/azure-storage-unity)를 참조 하세요.
 
 현재 Unity에는 가져온 후 플러그 인을 다시 구성 해야 하는 알려진 문제가 있습니다. 이러한 단계 (이 섹션에서는 4-7)는 버그가 해결 된 후 더 이상 필요 하지 않습니다.
 
 SDK를 고유한 프로젝트로 가져오려면 [GitHub에서 최신 '. unitypackage '](https://aka.ms/azstorage-unitysdk)를 다운로드 했는지 확인 합니다. 그런 후 다음을 수행합니다.
 
-1.  **.unitypackage** **자산**  >  **가져오기 패키지**  >  **사용자 지정 패키지** 메뉴 옵션을 사용 하 여 unitypackage 파일을 Unity에 추가 합니다.
+1.   **자산**  >  **가져오기 패키지**  >  **사용자 지정 패키지** 메뉴 옵션을 사용 하 여 unitypackage 파일을 Unity에 추가 합니다.
 
 2.  표시 되는 **Unity 패키지 가져오기** 상자에서 **플러그 인**  >  **저장소** 아래의 모든 항목을 선택할 수 있습니다. 이 과정에서 필요 하지 않으므로 다른 모든 항목을 선택 취소 합니다.
 
@@ -521,7 +521,7 @@ SDK를 고유한 프로젝트로 가져오려면 [GitHub에서 최신 '. unitypa
 
 이 클래스를 만들려면:
 
-1.  프로젝트 패널에 있는 *자산* 폴더를 마우스 오른쪽 단추로 클릭 하 고 폴더 **만들기** 를 클릭  >  **Folder** 합니다. 폴더 이름을 **스크립트** 로 합니다.
+1.  프로젝트 패널에 있는 *자산* 폴더를 마우스 오른쪽 단추로 클릭 하 고 폴더 **만들기** 를 클릭  >  합니다. 폴더 이름을 **스크립트** 로 합니다.
 
     ![새 폴더 만들기](images/AzureLabs-Lab5-50.png)
 
@@ -529,7 +529,7 @@ SDK를 고유한 프로젝트로 가져오려면 [GitHub에서 최신 '. unitypa
 
 2.  위에서 만든 폴더를 두 번 클릭 하 여 엽니다.
 
-3.  폴더 내부를 마우스 오른쪽 단추로 클릭 **Create** 하 고  >  **c # 스크립트** 를 만듭니다. *Azureservices* 스크립트를 호출 합니다.
+3.  폴더 내부를 마우스 오른쪽 단추로 클릭 하 고  >  **c # 스크립트** 를 만듭니다. *Azureservices* 스크립트를 호출 합니다.
 
 4.  새 *Azureservices* 클래스를 두 번 클릭 하 여 *Visual Studio* 에서 엽니다.
 
@@ -659,7 +659,7 @@ SDK를 고유한 프로젝트로 가져오려면 [GitHub에서 최신 '. unitypa
 
 1.  이전에 만든 **스크립트** 폴더로 이동 합니다.
 
-2.  폴더 내부를 마우스 오른쪽 단추로 클릭 **Create** 하 고  >  **c # 스크립트** 를 만듭니다. *ShapeFactory* 스크립트를 호출 합니다.
+2.  폴더 내부를 마우스 오른쪽 단추로 클릭 하 고  >  **c # 스크립트** 를 만듭니다. *ShapeFactory* 스크립트를 호출 합니다.
 
 3.  새 *ShapeFactory* 스크립트를 두 번 클릭 하 여 *Visual Studio* 에서 엽니다.
 
@@ -755,7 +755,7 @@ SDK를 고유한 프로젝트로 가져오려면 [GitHub에서 최신 '. unitypa
 
 8.  Unity 편집기로 돌아가서 **Scripts** 폴더의 *ShapeFactory* 클래스를 클릭 하 여 *계층 패널* 의 **기본 카메라** 개체로 끕니다.
 
-9. 기본 카메라를 선택 하면 *ShapeFactory* script 구성 요소에 *생성 지점* 참조가 없다는 것을 알 수 있습니다. 이 문제를 해결 하려면 *계층 패널* 에서 **생성 지점** 참조 대상으로 끌어 놓습니다. **ShapeSpawnPoint**
+9. 기본 카메라를 선택 하면 *ShapeFactory* script 구성 요소에 *생성 지점* 참조가 없다는 것을 알 수 있습니다. 이 문제를 해결 하려면 *계층 패널* 에서 **생성 지점** 참조 대상으로 끌어 놓습니다. 
 
     ![셰이프 팩터리 참조 대상 설정](images/AzureLabs-Lab5-53.png)
 
@@ -769,7 +769,7 @@ SDK를 고유한 프로젝트로 가져오려면 [GitHub에서 최신 '. unitypa
 
 1.  이전에 만든 **스크립트** 폴더로 이동 합니다.
 
-2.  프로젝트 패널을 마우스 오른쪽 단추로 클릭 하 **Create** 고  >  **c # 스크립트** 를 만듭니다. 스크립트 *응시* 를 호출 합니다.
+2.  프로젝트 패널을 마우스 오른쪽 단추로 클릭 하 고  >  **c # 스크립트** 를 만듭니다. 스크립트 *응시* 를 호출 합니다.
 
 3.  새 *응시* 스크립트를 두 번 클릭 하 여 *Visual Studio* 에서 엽니다.
 
@@ -1220,8 +1220,8 @@ SDK를 고유한 프로젝트로 가져오려면 [GitHub에서 최신 '. unitypa
 3.  **솔루션 구성** 에서 **디버그** 를 선택 합니다.
 
     > Microsoft HoloLens의 경우 컴퓨터에 테더 링 된 하지 않도록 *원격 컴퓨터* 를 설정 하는 것이 더 쉬울 수 있습니다. 그러나 다음을 수행 해야 합니다.
-    > - **IP Address** **설정**  >  **네트워크 & Internet**  >  **wi-fi** 고급 옵션에서 찾을 수 있는 HoloLens의 IP 주소를 알고  >  **Advanced Options** 있어야 합니다. IPv4는 사용 해야 하는 주소입니다. 
-    > - **개발자 모드가** **설정** 되어 있는지 확인 합니다. **Settings**  >  개발자를 위한 설정 **업데이트 & 보안** 에서 찾을 수  >  **For developers** 있습니다.
+    > -  **설정**  >  **네트워크 & Internet**  >  **wi-fi** 고급 옵션에서 찾을 수 있는 HoloLens의 IP 주소를 알고  >  있어야 합니다. IPv4는 사용 해야 하는 주소입니다. 
+    > - **개발자 모드가** **설정** 되어 있는지 확인 합니다.   >  개발자를 위한 설정 **업데이트 & 보안** 에서 찾을 수  >  있습니다.
 
     ![솔루션 배포](images/AzureLabs-Lab5-55.png)
 
@@ -1243,4 +1243,4 @@ SDK를 고유한 프로젝트로 가져오려면 [GitHub에서 최신 '. unitypa
 
 ### <a name="exercise-2"></a>연습 2
 
-매번 다시 열지 않고 앱을 다시 시작 하는 방법을 만듭니다. **장면을 로드** 하는 것이 좋은 시작 지점입니다. 이 작업을 수행한 후에는 앱에서 쉽게 다시 설정할 수 있도록 *Azure Storage* 저장 된 목록을 지우는 방법을 만듭니다. 
+매번 다시 열지 않고 앱을 다시 시작 하는 방법을 만듭니다. **장면을 로드** 하는 것이 좋은 시작 지점입니다. 이 작업을 수행한 후에는 앱에서 쉽게 다시 설정할 수 있도록 *Azure Storage* 저장 된 목록을 지우는 방법을 만듭니다.

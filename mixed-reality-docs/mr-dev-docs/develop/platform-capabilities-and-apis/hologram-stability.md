@@ -8,12 +8,12 @@ ms.topic: article
 keywords: holograms, 안정성, hololens, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 프레임 율, 렌더링, reprojection, 색 분리
 appliesto:
 - HoloLens
-ms.openlocfilehash: 36abf928d8f665717bacaf8da372d299b41fabd6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 064e42f771391e77874796e91ea8e4d563c08ec2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006643"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582884"
 ---
 # <a name="hologram-stability"></a>홀로그램 안정성
 
@@ -25,11 +25,11 @@ Holograms의 품질은 좋은 환경 및 좋은 앱 개발의 결과입니다. H
 
 다음 용어는 환경, 일치 하지 않거나 낮은 렌더링 요금 또는 기타 항목의 문제를 식별 하는 데 도움이 될 수 있습니다.
 * **높아집니다.** 홀로그램은 전 세계에 있고 실제 세계에 배치 된 후에는 주변 환경에 상대적으로 배치 되는 위치를 유지 하 고 사용자 동작 또는 소규모 및 스파스 환경 변화를 독립적으로 유지 해야 합니다. 나중에 홀로그램이 예기치 않은 위치에 표시 되는 경우에는 *정확도* 문제가 됩니다. 이러한 시나리오는 서로 다른 두 개의 대화방을 동일한 경우에 발생할 수 있습니다.
-* **지터.** 사용자는 홀로그램의 빈도가 높은 핸드쉐이킹으로 지터를 관찰 합니다 .이는 환경의 추적이 저하 될 때 발생할 수 있습니다. 사용자의 경우 솔루션에서 [센서 튜닝](../../sensor-tuning.md)을 실행 합니다.
+* **지터.** 사용자는 홀로그램의 빈도가 높은 핸드쉐이킹으로 지터를 관찰 합니다 .이는 환경의 추적이 저하 될 때 발생할 수 있습니다. 사용자의 경우 솔루션에서 [센서 튜닝](/hololens/hololens-updates)을 실행 합니다.
 * **Judder.** 렌더링 빈도가 낮으면 holograms의 두 배가 아닌 동작 및 이중 이미지가 생성 됩니다. Judder는 holograms에서 특히 중요 합니다. 개발자는 [상수 60 FPS](hologram-stability.md#frame-rate)를 유지 해야 합니다.
 * **드리프트.** 사용자는 홀로그램이 원래 위치에서 벗어나 이동 하는 것 처럼 보이는 것 처럼 보입니다. Holograms [공간 앵커](../../design/spatial-anchors.md)에서 멀리 떨어져 있는 경우, 특히 환경의 매핑되지 않은 부분에 있는 경우에는 드리프트가 발생 합니다. 공간 앵커로 holograms 가까이를 만들면 드리프트의 가능성이 낮아집니다.
 * **Jumpiness.** 홀로그램에서 "pop" 또는 "점프"를 때때로 해당 위치에서 벗어날 때. Jumpiness는 사용자 환경에 대 한 업데이트 된 이해와 일치 하도록 holograms를 조정 하기 때문에 발생할 수 있습니다.
-* **스윔.** 홀로그램이 사용자 헤드의 동작에 해당 하는 sway에 표시 되는 경우 스윔는 응용 프로그램이 다시 [프로젝션을](hologram-stability.md#reprojection)완전히 구현 하지 않은 경우와 HoloLens가 현재 사용자에 맞게 [보정](../../calibration.md) 되지 않은 경우에 발생 합니다. 사용자가 [보정](../../calibration.md) 응용 프로그램을 다시 실행 하 여 문제를 해결할 수 있습니다. 개발자는 안정화 평면을 업데이트 하 여 안정성을 향상 시킬 수 있습니다.
+* **스윔.** 홀로그램이 사용자 헤드의 동작에 해당 하는 sway에 표시 되는 경우 스윔는 응용 프로그램이 다시 [프로젝션을](hologram-stability.md#reprojection)완전히 구현 하지 않은 경우와 HoloLens가 현재 사용자에 맞게 [보정](/hololens/hololens-calibration) 되지 않은 경우에 발생 합니다. 사용자가 [보정](/hololens/hololens-calibration) 응용 프로그램을 다시 실행 하 여 문제를 해결할 수 있습니다. 개발자는 안정화 평면을 업데이트 하 여 안정성을 향상 시킬 수 있습니다.
 * **색 구분** HoloLens에 표시 되는 색은 색이 표시 되는 색으로 표시 됩니다 .이는 60 Hz (개별 색 필드는 240 Hz에 표시 됨)의 색 채널이 빨강-녹색-파랑-녹색입니다. 사용자가 눈동자를 사용 하 여 이동 홀로그램을 추적할 때마다 홀로그램의 선행 및 후행 가장자리가 해당 구성 색에서 분리 되어 레인 효과를 생성 합니다. 분리 수준은 홀로그램의 속도에 따라 달라 집니다. 일부 드물게 경우에는 고정 홀로그램을 보는 동안 빠르게 이동 하는 경우 *[색 구분](hologram-stability.md#color-separation)* 이라고 하는 무지개 효과를 얻을 수 있습니다.
 
 ## <a name="frame-rate"></a>프레임 율
@@ -45,7 +45,7 @@ Holograms의 품질은 좋은 환경 및 좋은 앱 개발의 결과입니다. H
 
 **프레임 수준 일관성** 프레임 률 일관성은 초당 높은 프레임 수 만큼 중요 합니다. 때때로 드롭된 프레임은 모든 콘텐츠가 풍부한 응용 프로그램에서 피할 수 있으며, HoloLens는 간헐적으로 발생 하는 결함 으로부터 복구 하는 몇 가지 복잡 한 알고리즘을 구현 합니다. 그러나 지속적으로 변동 된 프레임 속도는 더 낮은 프레임 속도에서 지속적으로 실행 하는 것 보다 훨씬 더 두드러집니다. 예를 들어 5 개 프레임 (이러한 5 개 프레임의 기간 동안 60 FPS)에 대해 원활 하 게 렌더링 한 후 다음 10 개 프레임에 대 한 다른 모든 프레임을 삭제 하는 응용 프로그램 (이 10 개 프레임의 기간에 대해 30FPS)은 약 30FPS로 렌더링 되는 응용 프로그램 보다 불안정 하 게 표시 됩니다.
 
-이와 관련 된 정보를 통해 운영 체제는 [혼합 현실 캡처가](../../mixed-reality-capture.md) 실행 될 때 응용 프로그램을 30 FPS로 제한 합니다.
+이와 관련 된 정보를 통해 운영 체제는 [혼합 현실 캡처가](/hololens/holographic-photos-and-videos) 실행 될 때 응용 프로그램을 30 FPS로 제한 합니다.
 
 **성능 분석** 다음과 같은 다양 한 종류의 도구를 사용 하 여 응용 프로그램 프레임 속도로 벤치 마크를 만들 수 있습니다.
 * GPUView
@@ -66,7 +66,7 @@ Holograms의 품질은 좋은 환경 및 좋은 앱 개발의 결과입니다. H
 
 Hololens를 입고 하는 사용자는 항상 2.0 m을 사용 하 여 사용자 로부터 약 2.0 m 거리 만큼의 광학 거리에 HoloLens가 표시 되기 때문에 명확한 이미지를 유지 합니다. 앱 개발자는 다양 한 깊이에서 콘텐츠 및 holograms를 배치 하 여 사용자의 눈이 수렴 하는 위치를 제어 합니다. 사용자가 다른 거리를 수용 하 고 다른 거리를 수렴 하면 두 큐 간의 자연 스러운 연결이 끊어지고 특히 충돌 크기가 discomfort 경우에 따라 visual 또는 피로이 발생할 수 있습니다. 
 
-Discomfort 충돌을 방지 하거나 최소화할 수 있습니다. 즉, 수렴 형 콘텐츠를 가능한 한 2.0 m에 가깝게 유지 하 여 (즉, 많은 깊이가 있는 장면에서 가능한 경우 2.0 m 근처에 관심 영역을 저장 합니다.) 콘텐츠를 2.0 m 근처에 배치할 수 없는 경우 사용자가 서로 다른 거리 사이에서 discomfort 때 vergence 충돌의 발생이 가장 큽니다. 즉, 시간이 지남에 따라 이동 하 고 멀리 이동 하는 홀로그램 50 cm을 확인 하는 것 보다 50 cm이 유지 되는 고정 홀로그램을 살펴보는 것이 훨씬 더 편안 합니다.
+Discomfort 충돌을 방지 하거나 최소화할 수 있습니다. 즉, 수렴 형 콘텐츠를 가능한 한 2.0 m에 가깝게 유지 하 여 (즉, 많은 깊이가 있는 장면에서 가능한 경우 2.0 m 근처에 관심 영역을 저장 합니다.) 콘텐츠를 2.0 m 근처에 배치할 수 없는 경우 사용자가 서로 다른 거리 사이에서 discomfort 때 vergence 충돌의 발생이 가장 큽니다. 다시 말해, 자신과 50cm 떨어져 있고 시간이 지남에 따라 자신과 멀어지는 홀로그램을 보는 것보다 50cm 떨어져 있는 고정 홀로그램을 보는 것이 훨씬 더 편안합니다.
 
 2.0 m에 콘텐츠를 배치 하는 것도이 거리에서 완전히 겹치도록 디자인 되었기 때문에 유용 합니다. 이 평면에 배치 된 이미지의 경우 holographic 프레임의 측면에서 벗어나 이동 하는 동안 다른 디스플레이에서 표시 됩니다. 이 쌍안경 모양 rivalry는 홀로그램의 깊이 인식에 방해가 될 수 있습니다.
 
@@ -91,7 +91,7 @@ HoloLens에는 reprojection 이라는 정교한 하드웨어 지원 holographic 
 응용 프로그램은 다양 한 형식의 reprojection을 사용 하기 위해 특정 작업을 수행 해야 합니다.
 * **깊이 예측:** 응용 프로그램은 렌더링 된 모든 프레임에 대해 시스템에 깊이 버퍼를 제출 합니다.  Unity에서는 **XR 플러그 인 관리** 의 **Windows Mixed Reality 설정** 창에서 **공유 깊이 버퍼** 옵션을 사용 하 여 깊이 다시 프로젝션을 수행 합니다.  DirectX apps 호출 CommitDirect3D11DepthBuffer.  응용 프로그램은 SetFocusPoint를 호출 하지 않아야 합니다.
 * **평면 재 프로젝션:** 응용 프로그램은 모든 프레임에서 안정화 할 평면의 위치를 시스템에 알려 줍니다.  Unity 응용 프로그램은 SetFocusPointForFrame를 호출 하 고 **공유 깊이 버퍼** 를 사용 하지 않도록 설정 해야 합니다.  DirectX 앱은 SetFocusPoint를 호출 하 고 CommitDirect3D11DepthBuffer를 호출 해서는 안 됩니다.
-* **자동 평면 재 프로젝션:** 을 사용 하도록 설정 하려면 응용 프로그램에서 깊이 다시 프로젝션 할 때 처럼 깊이 버퍼를 시스템에 제출 해야 합니다. MRTK (Mixed Reality Toolkit)를 사용 하는 앱은 자동 평면 재 프로젝션을 사용 하도록 [카메라 설정 공급자](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) 를 구성할 수 있습니다. 네이티브 앱은 `DepthReprojectionMode` [HolographicCameraRenderingParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) 에서를 각 프레임으로 설정 해야 합니다 `AutoPlanar` . HoloLens 생성 1의 경우 응용 프로그램에서 SetFocusPoint를 호출 하면 안 됩니다.
+* **자동 평면 재 프로젝션:** 을 사용 하도록 설정 하려면 응용 프로그램에서 깊이 다시 프로젝션 할 때 처럼 깊이 버퍼를 시스템에 제출 해야 합니다. MRTK (Mixed Reality Toolkit)를 사용 하는 앱은 자동 평면 재 프로젝션을 사용 하도록 [카메라 설정 공급자](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) 를 구성할 수 있습니다. 네이티브 앱은 `DepthReprojectionMode` [HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) 에서를 각 프레임으로 설정 해야 합니다 `AutoPlanar` . HoloLens 생성 1의 경우 응용 프로그램에서 SetFocusPoint를 호출 하면 안 됩니다.
 
 ### <a name="choosing-reprojection-technique"></a>Reprojection 기술 선택
 
@@ -181,8 +181,8 @@ HoloLens가 표시 되기 때문에 "색 구분" 이라는 아티팩트가 종�
 
 이전과 마찬가지로 60 FPS에서 렌더링 하 고 안정화 평면을 설정 하는 것은 홀로그램 안정성을 위한 가장 중요 한 기술입니다. 눈에 띄는 색 분리를 사용 하는 경우 먼저 프레임 속도에 기대를 충족 하는지 확인 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [혼합 현실 성능 이해](understanding-performance-for-mixed-reality.md)
-* [색, 광원 및 재질](../../color,-light-and-materials.md)
+* [색, 광원 및 재질](../../design/color-light-and-materials.md)
 * [Instinctual 상호 작용](../../design/interaction-fundamentals.md)
 * [MRTK 홀로그램 안정화](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/hologram-stabilization.html)

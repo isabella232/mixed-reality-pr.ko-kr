@@ -6,12 +6,12 @@ ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, 테스트
-ms.openlocfilehash: d26a3717da2ee9943e92e3602b6029435815262b
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b6f1c6bcff9f9db1a1fb7f5b3ea9d2c4c2be969a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008543"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583765"
 ---
 # <a name="testing-your-app-on-hololens"></a>HoloLens에서 앱 테스트
 
@@ -111,8 +111,8 @@ Holographic 앱은 다양 한 환경 집합에서 원활 하 게 실행 해야 �
 
 ## <a name="windows-app-certification-kit"></a>Windows 앱 인증 키트
 
-앱이 [Windows 스토어에 게시](../../distribute/submitting-an-app-to-the-microsoft-store.md)될 수 있는 가장 좋은 기회를 제공 하려면 인증을 위해 제출 하기 전에 로컬에서 유효성을 검사 하 고 테스트 합니다. 앱이 Holographic 장치 제품군을 대상으로 하는 경우 [Windows 앱 인증 키트](https://msdn.microsoft.com/library/windows/apps/xaml/mt186449.aspx) 는 PC 에서만 로컬 정적 분석 테스트를 실행 합니다. HoloLens에서 테스트가 실행 되지 않습니다.
+앱이 [Windows 스토어에 게시](../../distribute/submitting-an-app-to-the-microsoft-store.md)될 수 있는 가장 좋은 기회를 제공 하려면 인증을 위해 제출 하기 전에 로컬에서 유효성을 검사 하 고 테스트 합니다. 앱이 Holographic 장치 제품군을 대상으로 하는 경우 [Windows 앱 인증 키트](/windows/uwp/debug-test-perf/windows-app-certification-kit) 는 PC 에서만 로컬 정적 분석 테스트를 실행 합니다. HoloLens에서 테스트가 실행 되지 않습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [Windows 스토어에 앱 제출](../../distribute/submitting-an-app-to-the-microsoft-store.md)

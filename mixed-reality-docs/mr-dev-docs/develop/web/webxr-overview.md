@@ -6,12 +6,12 @@ ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mixed reality, 웹 vr, 웹 xr, 웹 mr, 웹 ar, 360, 360 비디오, 360 비디오, 360 photo, 360 사진, 360 콘텐츠, 몰입 형 웹, immersiveweb, IW
-ms.openlocfilehash: e49f5f2422c9802f94b63943f8a38949a2969f83
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 99cf5cf151c41252e43c6051c0d6281d33fe695a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006943"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582904"
 ---
 # <a name="webxr-overview"></a>WebXR 개요
 
@@ -19,7 +19,7 @@ ms.locfileid: "98006943"
 
 **WebXR DEVICE API** 는 **웹** 의 **센서** 및 **헤드 탑재 된 디스플레이** 를 비롯 하 여 **VR (가상 현실)** 및 **AR (보강 된 현실)** 장치에 액세스 하기 위한 것입니다. WebXR device API는 현재 Microsoft Edge에서 사용할 수 있으며 Chrome 버전 79 이상 버전에서는 WebXR을 기본값으로 지원 합니다. WebXR에서 [caniuse.com](https://caniuse.com/#search=webxr)에 대 한 최신 브라우저 지원 상태를 확인할 수 있습니다.
 
-[Windows Mixed Reality 및](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)새로운 [기능](https://docs.microsoft.com/windows/mixed-reality/mrtk-porting-guide) 섹션에서 새로운 Microsoft Edge에 대해 자세히 알아보세요.
+[Windows Mixed Reality 및](/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)새로운 [기능](/windows/mixed-reality/mrtk-porting-guide) 섹션에서 새로운 Microsoft Edge에 대해 자세히 알아보세요.
 
 ## <a name="viewing-webxr"></a>WebXR 보기
 
@@ -36,9 +36,9 @@ ms.locfileid: "98006943"
 * [WebXR 장치 API 설명서](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API)
 * [Immersiveweb](https://immersiveweb.dev/)
 * [WebXR 샘플](https://immersive-web.github.io/webxr-samples/)
-* [Windows Mixed Reality 및 새 Microsoft Edge](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)
+* [Windows Mixed Reality 및 새 Microsoft Edge](/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)
 * [몰입 형 Web W3C Github](https://github.com/immersive-web)
-* [WebGL API](https://msdn.microsoft.com/library/bg182648(v=vs.85).aspx)
+* [WebGL API](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182648(v=vs.85))
 * [게임 패드 API](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) 및 [게임 패드 확장](https://w3c.github.io/gamepad/extensions.html)
 * [WebGL에서 손실 된 컨텍스트 처리](https://www.khronos.org/webgl/wiki/HandlingContextLost)
 * [Pointerlock](https://www.w3.org/TR/pointerlock/)

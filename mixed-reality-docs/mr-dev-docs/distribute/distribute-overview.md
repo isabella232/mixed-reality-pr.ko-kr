@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens, 혼합 현실, 모던 헤드셋, 앱, uwp, 제출, 제출, 필터, 메타 데이터, 시스템 요구 사항, 키워드, wack, 인증, 패키지, appx, 머천다이징
-ms.openlocfilehash: b729bd65413587d3ad3b05bef495349b60a6fffd
-ms.sourcegitcommit: 47a5c86b4694449c825902631777a9962a40e332
+ms.openlocfilehash: eb06ff46be6fbe6e480f9b43fa7f23ee47982192
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98215978"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582854"
 ---
 # <a name="distributing-your-apps"></a>앱 배포
 
@@ -27,8 +27,8 @@ ms.locfileid: "98215978"
 > * 다른 파티와 앱을 공유 하는 경우 appx 파일을 빌드하고 제공 해야 합니다. 
 >     * 앱 설치 관리자를 사용 하는 경우 사용자와 인증서를 공유 해야 합니다.
 > 
-> * 조직과 공유 하는 경우 회사 또는 학교 계정이 필요 하 고 조직 [MDM (모바일 장치 관리)](https://docs.microsoft.com/hololens/hololens-enroll-mdm) 인프라에 대 한 액세스 권한이 필요 합니다.  
->    * 공유 당사자 인 경우 테 넌 트의 관리자 여야 하며 [Microsoft Endpoint Manager 관리 센터](https://docs.microsoft.com/mem/intune/apps/apps-deploy) 를 사용 하 여 앱을 사용할 수 있도록 설정 해야 합니다. 또 다른 옵션은 최종 사용자와 appx 파일 및 앱 종속성을 공유 하는 것입니다.
+> * 조직과 공유 하는 경우 회사 또는 학교 계정이 필요 하 고 조직 [MDM (모바일 장치 관리)](/hololens/hololens-enroll-mdm) 인프라에 대 한 액세스 권한이 필요 합니다.  
+>    * 공유 당사자 인 경우 테 넌 트의 관리자 여야 하며 [Microsoft Endpoint Manager 관리 센터](/mem/intune/apps/apps-deploy) 를 사용 하 여 앱을 사용할 수 있도록 설정 해야 합니다. 또 다른 옵션은 최종 사용자와 appx 파일 및 앱 종속성을 공유 하는 것입니다.
 >    * 최종 사용자 인 경우 공유 조직의 테 넌 트에 등록 하면 앱이 자동으로 다운로드 되거나 다운로드 가능 합니다. 
 
 <table>
@@ -51,13 +51,13 @@ ms.locfileid: "98215978"
     <td>❌</td>
 </tr>
 <tr>
-    <td><a href="https://docs.microsoft.com/hololens/app-deploy-app-installer"><strong>MDM-회사 포털</strong></a></td>
+    <td><a href="/hololens/app-deploy-app-installer"><strong>MDM-회사 포털</strong></a></td>
     <td>❌</td>
     <td>❌</td>
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="https://docs.microsoft.com/hololens/app-deploy-intune"><strong>MDM-필수 앱 설치</strong></a></td>
+    <td><a href="/hololens/app-deploy-intune"><strong>MDM-필수 앱 설치</strong></a></td>
     <td>❌</td>
     <td>❌</td>
     <td>✔️</td>
@@ -69,13 +69,13 @@ ms.locfileid: "98215978"
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="https://docs.microsoft.com/hololens/app-deploy-store-business"><strong>비즈니스용 Microsoft Store</strong></a></td>
+    <td><a href="/hololens/app-deploy-store-business"><strong>비즈니스용 Microsoft Store</strong></a></td>
     <td>❌</td>
     <td>❌</td>
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="https://docs.microsoft.com/hololens/app-deploy-provisioning-package"><strong>프로 비전 패키지</strong></a></td>
+    <td><a href="/hololens/app-deploy-provisioning-package"><strong>프로 비전 패키지</strong></a></td>
     <td>✔️</td>
     <td>✔️</td>
     <td>✔️</td>
@@ -95,10 +95,9 @@ ms.locfileid: "98215978"
 
 * Win32를 생성할 수 있습니다. 스트림 및 Game Pass를 포함 하 여 Win32 응용 프로그램 배포를 위한 Unity의 PC 독립 실행형 빌드 대상을 사용 하는 EXE 파일. 이 있으면입니다. EXE를 선택 하면 선택한 플랫폼에 대 한 일반적인 방법으로 앱을 제출할 수 있습니다. 
 
-* 오프 라인 상태인 동안 HoloLens 2 응용 프로그램을 설치 해야 하는 경우 [오프 라인 보안 HoloLens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) 지침을 참조 하거나 개발자 모드를 사용 하도록 설정 하지 않고 프로 비전 패키지를 통해 앱을 설치 합니다.
+* 오프 라인 상태인 동안 HoloLens 2 응용 프로그램을 설치 해야 하는 경우 [오프 라인 보안 HoloLens 2](/hololens/hololens-common-scenarios-offline-secure) 지침을 참조 하거나 개발자 모드를 사용 하도록 설정 하지 않고 프로 비전 패키지를 통해 앱을 설치 합니다.
 
 * 빌드를 장치에 배포 하 고 [Visual Studio를 사용 하 여 배포 및 디버깅](../develop/platform-capabilities-and-apis/using-visual-studio.md) 하거나 [장치 포털로 응용 프로그램 패키지를 설치](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#sideloading-applications)하 여 개발자 모드를 사용 하는 다른 개발자와 공유할 수도 있습니다.
 
-## <a name="see-also"></a>추가 정보
-* [Microsoft Store에서 응용 프로그램 찾기, 설치 및 제거](https://docs.microsoft.com/hololens/holographic-store-apps)
-
+## <a name="see-also"></a>참고 항목
+* [Microsoft Store에서 응용 프로그램 찾기, 설치 및 제거](/hololens/holographic-store-apps)

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 포팅, unity, 미들웨어, 엔진, UWP, Win32
-ms.openlocfilehash: 5a57c73481e80e5ab6fac1bd02b83c5d3dfaabb6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 268d98b45aa659614e0266bfd1add7c7ed2f684a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007493"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583586"
 ---
 # <a name="porting-overview"></a>포팅 개요
 
@@ -48,7 +48,7 @@ ms.locfileid: "98007493"
 
 ### <a name="hololens-1st-gen-unity-apps-to-hololens-2"></a>Hololens (첫 번째 Gen) Unity 앱-HoloLens 2
 
-HoloLens 2로 이식할 기존 HoloLens (첫 번째 Gen) Unity 응용 프로그램이 있는 경우 [hololens 포팅 문서의](../unity/mrtk-porting-guide.md)지침을 따르세요.
+HoloLens 2로 이식할 기존 HoloLens (첫 번째 Gen) Unity 응용 프로그램이 있는 경우 [hololens 포팅 문서의](./porting-hl1-hl2.md)지침을 따르세요.
 
 ### <a name="windows-mixed-reality-headsets"></a>Windows Mixed Reality 헤드셋
 
@@ -61,4 +61,3 @@ Windows Mixed Reality 헤드셋에 대해 업데이트 하려는 SteamVR 환경�
 ### <a name="2d-universal-windows-applications"></a>2D 유니버설 Windows 응용 프로그램
 
 Windows Mixed Reality 몰입 형 헤드셋 또는 HoloLens로 이식 하려는 기존 2D UWP 앱이 있는 경우 [Windows Mixed reality 용 2D uwp 앱 포팅](building-2d-apps.md) 지침을 따르세요.
-

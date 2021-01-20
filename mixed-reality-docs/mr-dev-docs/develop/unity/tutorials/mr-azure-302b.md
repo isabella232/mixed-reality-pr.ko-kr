@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/03/2018
 ms.topic: article
 keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 사용자 지정 비전, hololens, 모던, vr, Windows 10, Visual Studio
-ms.openlocfilehash: d40dc1cf23ee8040406047eaddd7ee3b70365199
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: cba2df5841911df6d60a7060a70f835975a21f62
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679552"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583399"
 ---
 # <a name="mr-and-azure-302b-custom-vision"></a>MR 및 Azure 302b: Custom Vision
 
@@ -29,7 +29,7 @@ ms.locfileid: "94679552"
 
 ![과정 결과](images/AzureLabs-Lab302b-00.png)
 
-Azure Custom Vision는 개발자가 사용자 지정 이미지 분류자를 빌드할 수 있게 해 주는 Microsoft 인지 서비스입니다. 이러한 분류자는 새 이미지와 함께 사용 하 여 새 이미지 내의 개체를 인식 하거나 분류할 수 있습니다. 이 서비스는 간단 하 고 사용 하기 쉬운 온라인 포털을 제공 하 여 프로세스를 간소화 합니다. 자세한 내용은 [Azure Custom Vision Service 페이지](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home)를 참조 하세요.
+Azure Custom Vision는 개발자가 사용자 지정 이미지 분류자를 빌드할 수 있게 해 주는 Microsoft 인지 서비스입니다. 이러한 분류자는 새 이미지와 함께 사용 하 여 새 이미지 내의 개체를 인식 하거나 분류할 수 있습니다. 이 서비스는 간단 하 고 사용 하기 쉬운 온라인 포털을 제공 하 여 프로세스를 간소화 합니다. 자세한 내용은 [Azure Custom Vision Service 페이지](/azure/cognitive-services/custom-vision-service/home)를 참조 하세요.
 
 이 과정을 완료 하면 다음과 같은 두 가지 모드로 작업할 수 있는 혼합 현실 응용 프로그램이 만들어집니다.
 
@@ -43,7 +43,7 @@ Azure Custom Vision는 개발자가 사용자 지정 이미지 분류자를 빌�
 
 <table>
 <tr>
-<th>과정</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
+<th>과정</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
 </tr><tr>
 <td> MR 및 Azure 302b: Custom Vision</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -64,20 +64,20 @@ Azure Custom Vision는 개발자가 사용자 지정 이미지 분류자를 빌�
 - [최신 Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- 개발자 모드가 사용 하도록 설정 된 [Windows Mixed Reality 모던 (VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md) 또는 [Microsoft HoloLens](../../../hololens-hardware-details.md)
+- 개발자 모드가 사용 하도록 설정 된 [Windows Mixed Reality 모던 (VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md) 또는 [Microsoft HoloLens](/hololens/hololens1-hardware)
 - PC에 연결 된 카메라 (몰입 형 헤드셋 개발용)
 - Azure 설정 및 Custom Vision API 검색을 위한 인터넷 액세스
 - Custom Vision Service에서 인식 하고자 하는 각 개체에 대해 5 개 이상의 이미지 (10 개 이상 권장)를 표시 합니다. 원할 경우 [이 과정에서 이미 제공 된 이미지 (컴퓨터 마우스 및 키보드) ](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20302b%20-%20Custom%20vision/ComputerVision_Images.zip)를 사용할 수 있습니다.
 
-## <a name="before-you-start"></a>시작하기 전 확인 사항
+## <a name="before-you-start"></a>시작하기 전에
 
 1.  이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.)
-2.  HoloLens를 설정 하 고 테스트 합니다. HoloLens를 설정 하는 데 지원이 필요한 경우 [hololens 설정 문서를 방문](https://docs.microsoft.com/hololens/hololens-setup)해야 합니다. 
+2.  HoloLens를 설정 하 고 테스트 합니다. HoloLens를 설정 하는 데 지원이 필요한 경우 [hololens 설정 문서를 방문](/hololens/hololens-setup)해야 합니다. 
 3.  새 HoloLens 앱 개발을 시작할 때 보정 및 센서 조정을 수행 하는 것이 좋습니다 (경우에 따라 각 사용자에 대해 해당 작업을 수행 하는 데 도움이 될 수 있음). 
 
-보정에 대 한 도움말을 보려면 [HoloLens 보정 문서에](../../../calibration.md#hololens-2)대 한 다음 링크를 참조 하세요.
+보정에 대 한 도움말을 보려면 [HoloLens 보정 문서에](/hololens/hololens-calibration#hololens-2)대 한 다음 링크를 참조 하세요.
 
-센서 조정에 대 한 도움말을 보려면 [HoloLens 센서 조정 문서에 대 한 링크를](../../../sensor-tuning.md)참조 하세요.
+센서 조정에 대 한 도움말을 보려면 [HoloLens 센서 조정 문서에 대 한 링크를](/hololens/hololens-updates)참조 하세요.
 
 ## <a name="chapter-1---the-custom-vision-service-portal"></a>1 장-Custom Vision Service 포털
 
@@ -118,7 +118,7 @@ Azure에서 *Custom Vision Service* 을 사용 하려면 응용 프로그램에�
 
         ![도메인 설정](images/AzureLabs-Lab302b-05.png)
 
-        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹 문서를 참조](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)하세요.
+        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹 문서를 참조](/azure/azure-resource-manager/resource-group-portal)하세요.
 
 7.  작업이 완료 되 면 **프로젝트 만들기** 를 클릭 하면 Custom Vision Service 프로젝트 페이지로 리디렉션됩니다.
 
@@ -198,7 +198,7 @@ Custom Vision Service 프로젝트를 학습 하려면:
 
     ![프로젝트 설정 구성](images/AzureLabs-Lab302b-18.png)
 
-3.  Unity를 연 상태에서 기본 **스크립트 편집기** 가 **Visual Studio** 로 설정 되어 있는지 확인 하는 것이 좋습니다. **Edit*  >  *기본 설정* 편집* 으로 이동한 다음 새 창에서 **외부 도구** 로 이동 합니다. **외부 스크립트 편집기** 를 **Visual Studio 2017** 로 변경 합니다. **기본 설정** 창을 닫습니다.
+3.  Unity를 연 상태에서 기본 **스크립트 편집기** 가 **Visual Studio** 로 설정 되어 있는지 확인 하는 것이 좋습니다. * >  *기본 설정* 편집* 으로 이동한 다음 새 창에서 **외부 도구** 로 이동 합니다. **외부 스크립트 편집기** 를 **Visual Studio 2017** 로 변경 합니다. **기본 설정** 창을 닫습니다.
 
     ![외부 도구 구성](images/AzureLabs-Lab302b-19.png)
 
@@ -300,7 +300,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
 
 6.  다음으로 **newtonsoft.json** 폴더 내에서 **WSA** 폴더를 열어야 합니다. 방금 구성한 파일의 복사본이 표시 됩니다. 파일을 선택 하 고 검사기에서 다음을 확인 합니다.
     -   **모든 플랫폼이** **선택 취소** 되어 있음 
-    -   **only** **WSAPlayer** 만 **선택** 됩니다.
+    -    **WSAPlayer** 만 **선택** 됩니다.
     -   **Dont 프로세스** 를 **선택 했습니다** .
 
     ![Newtonsoft.json 플러그 인 플랫폼 설정 구성](images/AzureLabs-Lab302b-31.png)
@@ -351,7 +351,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
 
 2.  위에서 만든 폴더를 두 번 클릭 하 여 엽니다.
 
-3.  폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **Create**,  >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 *CustomVisionAnalyser* 로 합니다.
+3.  폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 ,  >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 *CustomVisionAnalyser* 로 합니다.
 
 4.  새 *CustomVisionAnalyser* 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
 
@@ -476,7 +476,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
 
 이 클래스를 만들려면:
 
-1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **Create**  >  **C \# 스크립트** 만들기를 클릭 합니다. *CustomVisionObjects* 스크립트를 호출 합니다.
+1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음   >  **C \# 스크립트** 만들기를 클릭 합니다. *CustomVisionObjects* 스크립트를 호출 합니다.
 
 2.  새 **CustomVisionObjects** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
 
@@ -613,7 +613,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
 
 이 클래스를 만들려면:
 
-1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **Create**  >  **C \# 스크립트** 만들기를 클릭 합니다. *VoiceRecognizer* 스크립트를 호출 합니다.
+1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음   >  **C \# 스크립트** 만들기를 클릭 합니다. *VoiceRecognizer* 스크립트를 호출 합니다.
 
 2.  새 **VoiceRecognizer** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
 
@@ -721,7 +721,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
 
 이 클래스를 만들려면:
 
-1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **Create**  >  **C \# 스크립트** 만들기를 클릭 합니다. *CustomVisionTrainer* 스크립트를 호출 합니다.
+1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음   >  **C \# 스크립트** 만들기를 클릭 합니다. *CustomVisionTrainer* 스크립트를 호출 합니다.
 
 2.  새 *CustomVisionTrainer* 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
 
@@ -1082,7 +1082,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
 
 이 클래스를 만들려면:
 
-1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **Create**  >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 *SceneOrganiser* 로 합니다.
+1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음   >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 *SceneOrganiser* 로 합니다.
 
 2.  새 *SceneOrganiser* 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
 
@@ -1670,7 +1670,7 @@ HoloLens에 배포 하려면:
 
     3.  **IPv4** 주소를 적어둡니다.
 
-    4.  그런 다음 **설정** 으로 다시 이동한 다음 개발자를 위한 **& 보안을 업데이트** 합니다.  >  **For Developers**
+    4.  그런 다음 **설정** 으로 다시 이동한 다음 개발자를 위한 **& 보안을 업데이트** 합니다.  >  
 
     5.  **에서 개발자 모드를** 설정 합니다.
 
@@ -1691,7 +1691,7 @@ HoloLens에 배포 하려면:
 
 ## <a name="to-use-the-application"></a>응용 프로그램을 사용 하려면:
 
-*학습* 모드와 *예측* 모드 간에 앱 기능을 전환 하려면 ImageCapture 클래스 내에 있는 *ImageCapture* **()** 메서드에 있는 **appmode** 변수를 업데이트 해야 합니다.
+*학습* 모드와 *예측* 모드 간에 앱 기능을 전환 하려면 ImageCapture 클래스 내에 있는  **()** 메서드에 있는 **appmode** 변수를 업데이트 해야 합니다.
 
 ```
         // Change this flag to switch between Analysis mode and Training mode 

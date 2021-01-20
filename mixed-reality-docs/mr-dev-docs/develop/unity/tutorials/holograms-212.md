@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 음성, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
-ms.openlocfilehash: b9d9002180da7a59c62b77b83872e77499da4c09
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6fb3e10cb440fdda941a6d68b106da1bbaaedbc9
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677242"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583680"
 ---
 # <a name="mr-input-212-voice"></a>MR 입력 212: 음성
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](../../../mr-learning-base-01.md)가 게시되었습니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](./mr-learning-base-01.md)가 게시되었습니다.
 
 [음성 입력](../../../design/voice-input.md) 은 holograms와 상호 작용 하는 또 다른 방법을 제공 합니다. 음성 명령은 매우 자연스럽 고 쉬운 방법으로 작동 합니다. 음성 명령은 다음과 같이 설계 합니다.
 
@@ -45,15 +45,15 @@ ms.locfileid: "94677242"
 
 <table>
 <tr>
-<th>과정</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
+<th>과정</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
 </tr><tr>
 <td>MR 입력 212: 음성</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
-## <a name="before-you-start"></a>시작하기 전 확인 사항
+## <a name="before-you-start"></a>시작하기 전에
 
-### <a name="prerequisites"></a>사전 요구 사항
+### <a name="prerequisites"></a>필수 구성 요소
 
 * 올바른 [도구로](../../../develop/install-the-tools.md)구성 된 WINDOWS 10 PC입니다.
 * 몇 가지 기본적인 c # 프로그래밍 기능.
@@ -81,7 +81,7 @@ ms.locfileid: "94677242"
 1. Unity를 시작합니다.
 2. **열기** 를 선택합니다.
 3. 이전에 보관 하지 않은 **HolographicAcademy-Holograms-212-Voice** 폴더로 이동 합니다.
-4. **Starting** / **모델 탐색기** 시작 폴더를 찾아 선택 합니다.
+4.  / **모델 탐색기** 시작 폴더를 찾아 선택 합니다.
 5. **폴더 선택** 단추를 클릭 합니다.
 6. **프로젝트** 패널에서 **장면** 폴더를 확장 합니다.
 7. **모델 탐색기** 장면을 두 번 클릭 하 여 Unity에서 로드 합니다.
@@ -259,7 +259,7 @@ MessageUIRenderer.gameObject.SetActive(false);
 5. **중지 단추** 를 누르거나 mic 세션이 시간 초과 되 면 **DictationRecognizer를 중지** 합니다.
 6. **메시지 보내기** 명령을 수신 대기 하는 **KeywordRecognizer** 를 다시 시작 합니다.
 
-이제 시작하겠습니다. **MicrophoneManager.cs** 에서 3. a에 대 한 모든 코딩 연습을 완료 하거나 아래에 있는 완성 된 코드를 복사 하 여 붙여넣습니다.
+이제 시작해 보겠습니다. **MicrophoneManager.cs** 에서 3. a에 대 한 모든 코딩 연습을 완료 하거나 아래에 있는 완성 된 코드를 복사 하 여 붙여넣습니다.
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.

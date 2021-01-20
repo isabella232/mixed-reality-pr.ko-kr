@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: 혼합 현실, Windows Mixed Reality, HoloLens, 몰입 형, vr, mr, 시작, 홀로그램, 아카데미, 자습서, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, Windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 7b316314d7aa693e8be9006b2c5578c1bae7e3ff
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 86ac759cb73e39f88d62db5dab0c38108bb17d55
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006513"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583735"
 ---
 # <a name="mr-basics-100-getting-started-with-unity"></a>MR 기본 100: Unity 시작
 
@@ -24,7 +24,7 @@ ms.locfileid: "98006513"
 
 <table>
 <tr>
-<th>과정</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
+<th>과정</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
 </tr><tr>
 <td>MR 기본 100: Unity 시작</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -223,7 +223,7 @@ USB 케이블을 통해 장치가 연결 되어 있는지 확인 합니다.
 
 이제 앱이 배포 되었으므로 큐브를 모두 이동 하 여 전 세계에 유지 되는지 확인 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [Unity 개발 개요](../unity-development-overview.md)
 * [Unity 및 Visual Studio 사용 모범 사례](../best-practices-for-working-with-unity-and-visual-studio.md)

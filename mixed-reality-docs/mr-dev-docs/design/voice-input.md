@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: ggv, 음성, cortana, 음성, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 응시
-ms.openlocfilehash: 09f99083d769be80d8c15016b3de8713eae76515
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 079a3d457da9403611d2f825dd6e599a4e9f0353
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848128"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583224"
 ---
 # <a name="voice-input"></a>음성 입력
 
@@ -19,7 +19,7 @@ ms.locfileid: "97848128"
 
 음성은 HoloLens의 주요 입력 형태 중 하나입니다. 직접 [제스처](gaze-and-commit.md#composite-gestures)를 사용 하지 않고도 홀로그램을 직접 명령을 수행할 수 있습니다. 음성 입력은 의도를 전달하는 자연스러운 방법일 수 있습니다. 음성은 복잡 한 인터페이스를 트래버스하는 데 특히 유용 합니다 .이를 통해 사용자는 단일 명령을 사용 하 여 중첩 된 메뉴를 잘라낼 수 있습니다.
 
-음성 입력은 모든 _유니버설 Windows 앱_ 에서 음성을 지 원하는 [동일한 엔진](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) 에 의해 구동 됩니다. HoloLens에서 음성 인식은 항상 장치 설정에서 구성 된 Windows 표시 언어로 작동 합니다. 
+음성 입력은 모든 _유니버설 Windows 앱_ 에서 음성을 지 원하는 [동일한 엔진](/windows/uwp/design/input/speech-recognition) 에 의해 구동 됩니다. HoloLens에서 음성 인식은 항상 장치 설정에서 구성 된 Windows 표시 언어로 작동 합니다. 
 
 <br>
 
@@ -43,7 +43,7 @@ ms.locfileid: "97848128"
     </colgroup>
     <tr>
         <td><strong>기능</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens(1세대)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
     </tr>
@@ -59,7 +59,7 @@ ms.locfileid: "97848128"
 
 **HoloLens(1세대)**
 
-앱에 음성 지원을 특별히 추가 하지 않은 경우에도 사용자는 시스템 음성 명령 "select"를 통해 holograms을 활성화할 수 있습니다. 이는 HoloLens의 [공기 탭](gaze-and-commit.md#composite-gestures) , [hololens clicker](https://docs.microsoft.com/hololens/hololens1-clicker)의 선택 단추 누르기 또는 [Windows Mixed Reality 동작 컨트롤러](motion-controllers.md)에서 트리거 누르기와 동일 하 게 작동 합니다. 소리가 들리고 "선택"이 확인으로 표시 된 도구 설명이 표시 됩니다. "Select"는 저전원 키워드 검색 알고리즘에서 사용 하도록 설정 됩니다. 즉, 배터리 수명에 영향을 주지 않고 언제 든 지 말할 수 있습니다. 사용자 측의 손을 통해 "선택" 할 수도 있습니다.
+앱에 음성 지원을 특별히 추가 하지 않은 경우에도 사용자는 시스템 음성 명령 "select"를 통해 holograms을 활성화할 수 있습니다. 이는 HoloLens의 [공기 탭](gaze-and-commit.md#composite-gestures) , [hololens clicker](/hololens/hololens1-clicker)의 선택 단추 누르기 또는 [Windows Mixed Reality 동작 컨트롤러](motion-controllers.md)에서 트리거 누르기와 동일 하 게 작동 합니다. 소리가 들리고 "선택"이 확인으로 표시 된 도구 설명이 표시 됩니다. "Select"는 저전원 키워드 검색 알고리즘에서 사용 하도록 설정 됩니다. 즉, 배터리 수명에 영향을 주지 않고 언제 든 지 말할 수 있습니다. 사용자 측의 손을 통해 "선택" 할 수도 있습니다.
 
 <br>
 
@@ -266,7 +266,7 @@ Holographic 키보드가 활성화 될 때마다 입력 하는 대신 받아쓰�
 
 ## <a name="communication"></a>통신
 
-HoloLens에서 제공 하는 사용자 지정 된 오디오 입력 처리 옵션을 활용 하려는 응용 프로그램의 경우 앱에서 사용할 수 있는 다양 한 [오디오 스트림 범주](https://msdn.microsoft.com/library/windows/desktop/hh404178(v=vs.85).aspx) 를 이해 하는 것이 중요 합니다. Windows 10은 다양 한 스트림 범주를 지원 하 고, HoloLens는 이러한 세 가지를 사용 하 여 주변 환경 오디오 캡처 (즉, "캠코더") 시나리오에 사용할 수 있는 음성, 통신 등에 맞게 조정 된 마이크 오디오 품질을 최적화할 수 있도록 합니다.
+HoloLens에서 제공 하는 사용자 지정 된 오디오 입력 처리 옵션을 활용 하려는 응용 프로그램의 경우 앱에서 사용할 수 있는 다양 한 [오디오 스트림 범주](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) 를 이해 하는 것이 중요 합니다. Windows 10은 다양 한 스트림 범주를 지원 하 고, HoloLens는 이러한 세 가지를 사용 하 여 주변 환경 오디오 캡처 (즉, "캠코더") 시나리오에 사용할 수 있는 음성, 통신 등에 맞게 조정 된 마이크 오디오 품질을 최적화할 수 있도록 합니다.
 * AudioCategory_Communications stream 범주는 통화 품질 및 내레이션 시나리오에 맞게 사용자 지정 되며 클라이언트에 사용자 음성의 16Khz 24 비트 mono 오디오 스트림을 제공 합니다.
 * AudioCategory_Speech stream 범주는 HoloLens (Windows) 음성 엔진에 맞게 사용자 지정 되며 사용자 음성의 16Khz 24 비트 mono 스트림을 제공 합니다. 이 범주는 필요한 경우 타사 음성 엔진에서 사용할 수 있습니다.
 * AudioCategory_Other stream 범주는 주변 환경 오디오 녹음에 맞게 사용자 지정 되며 클라이언트에 48-kHz 24 비트 스테레오 오디오 스트림을 제공 합니다.
@@ -275,7 +275,7 @@ HoloLens에서 제공 하는 사용자 지정 된 오디오 입력 처리 옵션
 
 ## <a name="languages"></a>언어
 
-HoloLens 2는 [여러 언어를 지원](https://docs.microsoft.com/hololens/hololens2-language-support)합니다. 음성 명령은 여러 키보드가 설치 되어 있거나 앱이 다른 언어로 음성 인식기를 만들려고 하는 경우에도 항상 시스템의 표시 언어로 실행 됩니다.
+HoloLens 2는 [여러 언어를 지원](/hololens/hololens2-language-support)합니다. 음성 명령은 여러 키보드가 설치 되어 있거나 앱이 다른 언어로 음성 인식기를 만들려고 하는 경우에도 항상 시스템의 표시 언어로 실행 됩니다.
 
 ## <a name="troubleshooting"></a>문제 해결
 
@@ -294,7 +294,7 @@ Windows Mixed Reality Developer Edition 릴리스 2017에서는 초기 HMD 연�
 
 ---
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 * [응시 및 커밋](gaze-and-commit.md)
 * [Instinctual 상호 작용](interaction-fundamentals.md)

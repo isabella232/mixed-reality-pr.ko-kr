@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: azure, mixed reality, 아카데미, edge, iot edge, 자습서, api, 알림, 함수, 테이블, hololens, 몰입 형, vr, iot, virtual machine, ubuntu, python, Windows 10, Visual Studio
-ms.openlocfilehash: 3c01c7351ee284b72a15fd7d5bdd3205fec91e49
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f23a9bf5bcdb0868ef9b0e6f77fbdb7a15dfdce1
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009303"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582811"
 ---
 # <a name="mr-and-azure-313-iot-hub-service"></a>MR 및 Azure 313: IoT Hub 서비스
 
@@ -39,9 +39,9 @@ ms.locfileid: "98009303"
 
 - **Azure Container Registry** 는 개발자가 다양 한 유형의 컨테이너에 대해 컨테이너 이미지를 저장할 수 있도록 하는 Microsoft Azure 서비스입니다. 자세한 내용은 [ **Azure Container Registry 서비스** 페이지](https://azure.microsoft.com/services/container-registry/)를 참조 하세요.
 
-- **Azure 함수 앱** 는 개발자가 azure에서 작은 코드, ' 함수 '를 실행할 수 있도록 하는 Microsoft Azure 서비스입니다. 이렇게 하면 다양 한 이점을 얻을 수 있는 로컬 응용 프로그램이 아닌 클라우드로 작업을 위임할 수 있습니다. **Azure Functions** 는 C \# , F \# , Node.js, Java 및 PHP를 비롯 한 몇 가지 개발 언어를 지원 합니다. 자세한 내용은 [ **Azure Functions** 페이지](https://docs.microsoft.com/azure/azure-functions/functions-overview)를 참조 하세요.
+- **Azure 함수 앱** 는 개발자가 azure에서 작은 코드, ' 함수 '를 실행할 수 있도록 하는 Microsoft Azure 서비스입니다. 이렇게 하면 다양 한 이점을 얻을 수 있는 로컬 응용 프로그램이 아닌 클라우드로 작업을 위임할 수 있습니다. **Azure Functions** 는 C \# , F \# , Node.js, Java 및 PHP를 비롯 한 몇 가지 개발 언어를 지원 합니다. 자세한 내용은 [ **Azure Functions** 페이지](/azure/azure-functions/functions-overview)를 참조 하세요.
 
-- **Azure Storage: Tables** 는 개발자가 구조화 된 비 SQL 데이터를 클라우드에 저장 하 여 어디서 나 쉽게 액세스할 수 있도록 하는 Microsoft Azure 서비스입니다. 이 서비스는 스키마 없는 디자인을 boasts, 필요에 따라 테이블의 진화를 허용 하므로 매우 유연 합니다. 자세한 내용은 [ **Azure Tables** 페이지를 참조 하세요.](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview)
+- **Azure Storage: Tables** 는 개발자가 구조화 된 비 SQL 데이터를 클라우드에 저장 하 여 어디서 나 쉽게 액세스할 수 있도록 하는 Microsoft Azure 서비스입니다. 이 서비스는 스키마 없는 디자인을 boasts, 필요에 따라 테이블의 진화를 허용 하므로 매우 유연 합니다. 자세한 내용은 [ **Azure Tables** 페이지를 참조 하세요.](/azure/cosmos-db/table-storage-overview)
 
 이 과정에서는 IoT Hub 서비스를 설정 하 고 사용 하는 방법을 설명 하 고 장치에서 제공 하는 응답을 시각화 합니다. 사용자가 빌드할 수 있는 사용자 지정 IoT Hub 서비스 설정에 이러한 개념을 적용 하는 것이 좋습니다.
 
@@ -49,7 +49,7 @@ ms.locfileid: "98009303"
 
 <table>
 <tr>
-<th>과정</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
+<th>과정</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
 </tr><tr>
 <td> MR 및 Azure 313: IoT Hub 서비스</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -57,7 +57,7 @@ ms.locfileid: "98009303"
 
 ## <a name="prerequisites"></a>사전 요구 사항
 
-Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 최신 필수 구성 요소는 [도구 설치](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) 문서를 참조 하세요.
+Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 최신 필수 구성 요소는 [도구 설치](/windows/mixed-reality/install-the-tools) 문서를 참조 하세요.
 
 > [!NOTE]
 > 이 자습서는 Python을 사용 하는 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (7 월 2018)을 나타냅니다. [도구 설치](../../install-the-tools.md) 문서에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래에 나열 된 것과 같은 최신 소프트웨어에서 찾을 수 있는 것으로 가정 하면 안 됩니다.
@@ -81,17 +81,17 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
 ### <a name="before-you-start"></a>시작하기 전에
 
-1. HoloLens를 설정 하 고 테스트 합니다. HoloLens를 설정 하는 데 지원이 필요한 경우 [hololens 설정 문서를 방문](https://docs.microsoft.com/hololens/hololens-setup)해야 합니다.
+1. HoloLens를 설정 하 고 테스트 합니다. HoloLens를 설정 하는 데 지원이 필요한 경우 [hololens 설정 문서를 방문](/hololens/hololens-setup)해야 합니다.
 2. 새 HoloLens 앱 개발을 시작할 때 **보정** 및 **센서 조정을** 수행 하는 것이 좋습니다 (경우에 따라 각 사용자에 대해 해당 작업을 수행 하는 데 도움이 될 수 있음).
 
-보정에 대 한 도움말을 보려면 [HoloLens 보정 문서에](../../../calibration.md#hololens-2)대 한 다음 링크를 참조 하세요.
+보정에 대 한 도움말을 보려면 [HoloLens 보정 문서에](/hololens/hololens-calibration#hololens-2)대 한 다음 링크를 참조 하세요.
 
-센서 조정에 대 한 도움말을 보려면 [HoloLens 센서 조정 문서에 대 한 링크를](../../../sensor-tuning.md)참조 하세요.
+센서 조정에 대 한 도움말을 보려면 [HoloLens 센서 조정 문서에 대 한 링크를](/hololens/hololens-updates)참조 하세요.
 
 3. **Hyper-v** 를 사용 하 여 **Ubuntu 가상 머신을** 설정 합니다. 프로세스에 도움이 되는 리소스는 다음과 같습니다.
     1.  먼저이 링크에 따라 [Ubuntu 16.04.4 LTS (Xenial Xerus) ISO를 다운로드](https://au.releases.ubuntu.com/16.04/)합니다. **AMD64 (64 비트 PC) 데스크톱 이미지** 를 선택 합니다.
-    2.  Windows 10 컴퓨터에서 **hyper-v** 를 사용 하도록 설정 했는지 확인 합니다. [Windows 10에서 hyper-v를 설치 하 고 사용 하도록 설정](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)하는 방법에 대 한 지침은이 링크를 참조 하세요.
-    3.  Hyper-v를 시작 하 고 새 Ubuntu VM을 만듭니다. [Hyper-v를 사용 하 여 VM을 만드는 방법에](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine)대 한 단계별 가이드는 다음 링크를 참조 하세요. **"부팅 가능한 이미지 파일에서 운영 체제 설치"** 를 요청 하는 경우 이전에 다운로드 한 **Ubuntu ISO** 를 선택 합니다.
+    2.  Windows 10 컴퓨터에서 **hyper-v** 를 사용 하도록 설정 했는지 확인 합니다. [Windows 10에서 hyper-v를 설치 하 고 사용 하도록 설정](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)하는 방법에 대 한 지침은이 링크를 참조 하세요.
+    3.  Hyper-v를 시작 하 고 새 Ubuntu VM을 만듭니다. [Hyper-v를 사용 하 여 VM을 만드는 방법에](/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine)대 한 단계별 가이드는 다음 링크를 참조 하세요. **"부팅 가능한 이미지 파일에서 운영 체제 설치"** 를 요청 하는 경우 이전에 다운로드 한 **Ubuntu ISO** 를 선택 합니다.
 
     > [!NOTE]
     > **Hyper-v 빠른 생성** 을 사용 하지 않는 것이 좋습니다.  
@@ -186,7 +186,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
     1. 리소스 그룹을 선택 하거나 새 **리소스 그룹** 을 만듭니다. 리소스 그룹은 Azure 자산의 컬렉션에 대 한 청구를 모니터링 하 고, 액세스를 제어 하 고, 프로 비전 하 고, 관리 하는 방법을 제공 합니다. 단일 프로젝트와 연결 된 모든 Azure 서비스 (예: 이러한 과정)를 공용 리소스 그룹에 유지 하는 것이 좋습니다.
 
-        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹을 관리 하는 방법에 대](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)한 다음 링크를 참조 하세요.
+        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹을 관리 하는 방법에 대](/azure/azure-resource-manager/resource-group-portal)한 다음 링크를 참조 하세요.
 
 
     2. 적절 한 **위치** 를 선택 합니다 .이 과정에서 만드는 모든 서비스에서 동일한 위치를 사용 합니다.
@@ -382,7 +382,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
     >1. VS Code 및/또는 컴퓨터를 다시 시작 합니다.
     >2. Python을 설치 하는 데 사용 하는 것으로 **VS Code 터미널** 을 전환 해야 할 수도 **있습니다. 즉** , 특히 python 환경이 컴퓨터에 이미 설치 되어 있는 경우에 한 합니다. 터미널이 열리면 터미널의 오른쪽에 있는 드롭다운 메뉴를 찾을 수 있습니다.
      ![컨테이너 만들기](images/AzureLabs-Lab313-24b.png) 
-    >3. **Python** 설치 경로가 컴퓨터에 **환경 변수로** 추가 되었는지 확인 합니다. Cookiecutter는 동일한 위치 경로의 일부 여야 합니다. [환경 변수에 대 한 자세한 내용은 다음 링크](https://msdn.microsoft.com/library/windows/desktop/ms682653(v=vs.85).aspx)를 참조 하세요. 
+    >3. **Python** 설치 경로가 컴퓨터에 **환경 변수로** 추가 되었는지 확인 합니다. Cookiecutter는 동일한 위치 경로의 일부 여야 합니다. [환경 변수에 대 한 자세한 내용은 다음 링크](/windows/win32/procthread/environment-variables)를 참조 하세요. 
 
 7. **Cookiecutter** 설치가 완료 되 면 시스템 환경 내에서 **Cookiecutter** 가 명령으로 인식 되도록 컴퓨터를 다시 시작 해야 합니다.
 
@@ -870,7 +870,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
     9. 리소스 그룹을 선택 하거나 새 **리소스 그룹** 을 만듭니다. 리소스 그룹은 Azure 자산 컬렉션에 대 한 모니터링, 제어 액세스, 프로 비전 및 관리를 위한 방법을 제공 합니다. 단일 프로젝트와 연결 된 모든 Azure 서비스 (예: 이러한 과정)를 공용 리소스 그룹에 유지 하는 것이 좋습니다.
 
-        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹을 관리 하는 방법에 대](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)한 다음 링크를 참조 하세요.
+        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹을 관리 하는 방법에 대](/azure/azure-resource-manager/resource-group-portal)한 다음 링크를 참조 하세요.
 
     10. 이 옵션을 선택 하는 경우 **가상 네트워크** 를 **사용 안 함** 으로 유지 합니다.
 
@@ -1011,7 +1011,7 @@ Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 �
 
     4. 리소스 그룹을 선택 하거나 새 **리소스 그룹** 을 만듭니다. 리소스 그룹은 Azure 자산 컬렉션에 대 한 모니터링, 제어 액세스, 프로 비전 및 관리를 위한 방법을 제공 합니다. 단일 프로젝트와 연결 된 모든 Azure 서비스 (예: 이러한 과정)를 공용 리소스 그룹에 유지 하는 것이 좋습니다.
 
-        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹을 관리 하는 방법에 대](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)한 다음 링크를 참조 하세요.
+        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹을 관리 하는 방법에 대](/azure/azure-resource-manager/resource-group-portal)한 다음 링크를 참조 하세요.
 
     5. **OS** 의 경우 원하는 플랫폼인 Windows를 클릭 합니다.
 

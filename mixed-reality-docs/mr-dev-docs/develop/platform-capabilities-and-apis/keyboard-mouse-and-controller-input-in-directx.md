@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, 키보드, 마우스, 게임 컨트롤러, xbox 컨트롤러, HoloLens, 데스크톱, 연습, 샘플 코드
-ms.openlocfilehash: b7984c86b952612af020e2bd91063e0a9b0d92f6
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 3cf35ba195e839332cbedb8b2c3945334a158cbc
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530044"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583630"
 ---
 # <a name="keyboard-mouse-and-controller-input-in-directx"></a>DirectX의 키보드, 마우스 및 컨트롤러 입력
 
@@ -60,7 +60,7 @@ CoreTextEditContext 지원 구현에 대 한 자세한 내용은 [coretexteditco
 UWP CoreWindow 입력 이벤트 처리기를 통해 마우스 입력을 다시 사용할 수도 있습니다. 누름 제스처와 동일한 방식으로 마우스 클릭을 지원 하도록 Windows Holographic 앱 템플릿을 수정 하는 방법은 다음과 같습니다. 이렇게 수정한 후에는 몰입 형 헤드셋 장치를 작성 하는 동안 마우스를 클릭 하면 큐브의 위치가 변경 됩니다.
 
 > [!NOTE]
-> UWP 앱은 [Mousedevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) API를 사용 하 여 마우스용 원시 XY 데이터를 가져올 수도 있습니다.
+> UWP 앱은 [Mousedevice](/uwp/api/Windows.Devices.Input.MouseDevice) API를 사용 하 여 마우스용 원시 XY 데이터를 가져올 수도 있습니다.
 
 AppView. h에서 새 OnPointerPressed 처리기를 선언 하 여 시작 합니다.
 

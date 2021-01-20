@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 7/29/2019
 ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, DirectX, 네이티브, 네이티브 앱, 사용자 지정 엔진, 미들웨어
-ms.openlocfilehash: ba03799ff42d3a4c27799dcf2f4035d408360120
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 76193cdf3c790037474b66de9fbbbd1da8f31199
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613134"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583790"
 ---
 # <a name="openxr"></a>OpenXR
 
@@ -80,7 +80,7 @@ OpenXR 확장에는 세 가지 종류가 있습니다.
 
 *Minecraft 's new RenderDragon 엔진은 OpenXR를 사용 하 여 데스크톱 VR 지원을 구축 하 고 있습니다.*
 
-Microsoft는 전 [세계의 새로운 반향 G2 헤드셋](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)을 비롯 한 모든 범위의 PC VR 전체에서 (HoloLens 2 뿐만 아니라), 혼합 현실의 미래를 개방 하도록 Unity 및 대규모 사용자 스토리 게임을 사용 했습니다.  HoloLens (첫 번째 gen)를 개발 하는 방법에 대 한 자세한 내용은 [릴리스 정보](https://docs.microsoft.com/hololens/hololens1-release-notes)를 참조 하세요.
+Microsoft는 전 [세계의 새로운 반향 G2 헤드셋](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)을 비롯 한 모든 범위의 PC VR 전체에서 (HoloLens 2 뿐만 아니라), 혼합 현실의 미래를 개방 하도록 Unity 및 대규모 사용자 스토리 게임을 사용 했습니다.  HoloLens (첫 번째 gen)를 개발 하는 방법에 대 한 자세한 내용은 [릴리스 정보](/hololens/hololens1-release-notes)를 참조 하세요.
 
 Unity, Unreal Engine 또는 사용자 고유의 엔진에서 OpenXR를 시작 하는 방법을 알아보려면을 읽어 보세요.
 

@@ -6,16 +6,16 @@ ms.author: wguyman
 ms.date: 06/12/2019
 ms.topic: article
 keywords: 카메라, hololens, 컬러 카메라, 전면, hololens 2, cv, 컴퓨터 비전, fiducial, 표식, qr 코드, qr, 사진, 비디오
-ms.openlocfilehash: 9261465f362e6aa0e97d9f6b1f61af305c178079
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: bc478aa658b26eb3a4efb16c62d0874b12992e78
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530375"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583623"
 ---
 # <a name="locatable-camera"></a>위치를 찾을 수 있는 카메라
 
-HoloLens는 장치 전면에 탑재 된 세계 카메라를 포함 하 여 앱이 사용자에 게 표시 되는 내용을 볼 수 있도록 합니다. 개발자는 스마트폰, 노트북 또는 데스크톱에서 색 카메라를 사용할 때와 마찬가지로 카메라에 액세스 하 고 해당 카메라를 제어할 수 있습니다. 모바일 및 데스크톱에서 작동 하는 동일한 유니버설 windows [미디어 캡처](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.aspx) 및 windows Media foundation Api는 HoloLens에서 작업 합니다. Unity [는 이러한 Windows api](../unity/locatable-camera-in-unity.md) 를 HoloLens의 카메라 사용 기능을 추상화 하도록 래핑 했습니다. 기능 작업에는 holograms를 사용 하거나 사용 하지 않고 일반 사진과 비디오를 촬영 하 고 카메라의 위치와 장면의 원근감을 찾는 작업이 포함 됩니다.
+HoloLens는 장치 전면에 탑재 된 세계 카메라를 포함 하 여 앱이 사용자에 게 표시 되는 내용을 볼 수 있도록 합니다. 개발자는 스마트폰, 노트북 또는 데스크톱에서 색 카메라를 사용할 때와 마찬가지로 카메라에 액세스 하 고 해당 카메라를 제어할 수 있습니다. 모바일 및 데스크톱에서 작동 하는 동일한 유니버설 windows [미디어 캡처](/uwp/api/Windows.Media.Capture.MediaCapture) 및 windows Media foundation Api는 HoloLens에서 작업 합니다. Unity [는 이러한 Windows api](../unity/locatable-camera-in-unity.md) 를 HoloLens의 카메라 사용 기능을 추상화 하도록 래핑 했습니다. 기능 작업에는 holograms를 사용 하거나 사용 하지 않고 일반 사진과 비디오를 촬영 하 고 카메라의 위치와 장면의 원근감을 찾는 작업이 포함 됩니다.
 
 ## <a name="device-camera-information"></a>장치 카메라 정보
 
@@ -25,10 +25,10 @@ HoloLens는 장치 전면에 탑재 된 세계 카메라를 포함 하 여 앱�
 * 카메라가 활성화 될 때마다 전 세계의 개인 개인 정보 취급 LED가 켜 집니다.
 * 카메라는 30, 24, 20, 15, 5fps의 다음 모드 (모든 모드에서 16:9 가로 세로 비율)를 지원 합니다.
 
-  |  비디오  |  미리 보기  |  실패할  |  뷰의 가로 필드 (H-FOV) |  권장 사용법 | 
+  |  동영상  |  미리 보기  |  실패할  |  뷰의 가로 필드 (H-FOV) |  권장 사용법 | 
   |----------|----------|----------|----------|----------|
   |  1280x720 |  1280x720 |  1280x720 |  45도  |  (비디오 안정화를 사용 하는 기본 모드) | 
-  |  N/A |  N/A |  2048x1152 |  67도 |  가장 높은 해상도의 이미지 | 
+  |  해당 없음 |  해당 없음 |  2048x1152 |  67도 |  가장 높은 해상도의 이미지 | 
   |  1408x792 |  1408x792 |  1408x792 |  48도 |  비디오 안정화 전 Overscan (패딩) 해상도 | 
   |  1344x756 |  1344x756 |  1344x756 |  67도 |  Overscan를 사용 하는 넓은 FOV 비디오 모드 | 
   |  896x504 |  896x504 |  896x504 |  48도 |  이미지 처리 작업에 대 한 낮은 전원/저해상도 모드 | 
@@ -37,10 +37,10 @@ HoloLens는 장치 전면에 탑재 된 세계 카메라를 포함 하 여 앱�
 
 * 자동 흰색 잔액, 자동 노출 및 전체 이미지 처리 파이프라인이 있는 PV (자동 포커스 사진/비디오) 카메라
 * 카메라가 활성화 될 때마다 전 세계의 개인 개인 정보 취급 LED가 켜 집니다.
-* HoloLens 2는 다른 카메라 프로필을 지원 합니다. [카메라 기능을 검색 하 고 선택](https://docs.microsoft.com//windows/uwp/audio-video-camera/camera-profiles)하는 방법을 알아봅니다.
+* HoloLens 2는 다른 카메라 프로필을 지원 합니다. [카메라 기능을 검색 하 고 선택](//windows/uwp/audio-video-camera/camera-profiles)하는 방법을 알아봅니다.
 * 카메라는 다음 프로필 및 해상도를 지원 합니다 (모든 비디오 모드는 16:9 가로 세로 비율).
   
-  | 프로필                                         | 비디오     | 미리 보기   | 실패할     | 프레임 속도 | 뷰의 가로 필드 (H-FOV) | 권장 사용법                             |
+  | 프로필                                         | 동영상     | 미리 보기   | 실패할     | 프레임 속도 | 뷰의 가로 필드 (H-FOV) | 권장 사용법                             |
   |-------------------------------------------------|-----------|-----------|-----------|-------------|----------------------------------|---------------------------------------------|
   | 레거시, 0 BalancedVideoAndPhoto, 100             | 2272x1278 | 2272x1278 |           | 15.30       | 64.69                            | 고품질 비디오 녹화                |
   | 레거시, 0 BalancedVideoAndPhoto, 100             | 896x504   | 896x504   |           | 15.30       | 64.69                            | 고품질 사진 캡처에 대 한 미리 보기 스트림 |
@@ -59,7 +59,7 @@ HoloLens는 장치 전면에 탑재 된 세계 카메라를 포함 하 여 앱�
   | 비디오 회의, 100 BalancedVideoAndPhoto, 120 | 424x240   |           |           | 15, 30       | 64.69                            | 비디오 회의, 긴 기간 시나리오 |
 
 > [!NOTE]
-> 고객은 [혼합 현실 캡처](../../mixed-reality-capture.md) 를 활용 하 여 holograms 및 비디오 안정화를 포함 하는 앱의 비디오 또는 사진을 찍을 수 있습니다.
+> 고객은 [혼합 현실 캡처](/hololens/holographic-photos-and-videos) 를 활용 하 여 holograms 및 비디오 안정화를 포함 하는 앱의 비디오 또는 사진을 찍을 수 있습니다.
 >
 >개발자는 응용 프로그램을 만들 때 고객이 콘텐츠를 캡처할 때 최대한 적절 하 게 보이도록 하려는 경우 고려해 야 할 사항이 있습니다. 앱 내에서 직접 혼합 현실 캡처를 사용 하도록 설정 (및 사용자 지정) 할 수도 있습니다. [개발자를 위한 혼합 현실 캡처에서](mixed-reality-capture-for-developers.md)자세히 알아보세요.
 
@@ -75,20 +75,20 @@ HoloLens 설명서의 다른 곳에서 "카메라"는 "가상 게임 카메라" 
 
 ### <a name="using-mediaframereference"></a>MediaFrameReference 사용
 
-이러한 지침은 you'r가 [MediaFrameReference](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference) 클래스를 사용 하 여 카메라에서 이미지 프레임을 읽는 경우에 적용 됩니다.
+이러한 지침은 you'r가 [MediaFrameReference](//uwp/api/windows.media.capture.frames.mediaframereference) 클래스를 사용 하 여 카메라에서 이미지 프레임을 읽는 경우에 적용 됩니다.
 
-각 이미지 프레임 (사진 또는 비디오)에는 캡처 시점에 카메라를 기반으로 하는 [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) 이 포함 되어 있으며,이는 [MediaFrameReference](https://docs.microsoft.com//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)의 [CoordinateSystem](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) 속성을 사용 하 여 액세스할 수 있습니다. 각 프레임에는 [CameraIntrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 속성에서 찾을 수 있는 카메라 렌즈 모델에 대 한 설명이 포함 되어 있습니다. 이러한 변환은 함께 각 픽셀에 대해 픽셀을 생성 한 photons에서 가져온 경로를 나타내는 3D 공간의 광선을 정의 합니다. 이러한 광선은 프레임의 좌표계에서 다른 좌표계 (예: [고정 참조 프레임](../../design/coordinate-systems.md#stationary-frame-of-reference))로 변환을 가져와서 앱의 다른 콘텐츠와 관련 될 수 있습니다. 
+각 이미지 프레임 (사진 또는 비디오)에는 캡처 시점에 카메라를 기반으로 하는 [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) 이 포함 되어 있으며,이는 [MediaFrameReference](//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)의 [CoordinateSystem](//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) 속성을 사용 하 여 액세스할 수 있습니다. 각 프레임에는 [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 속성에서 찾을 수 있는 카메라 렌즈 모델에 대 한 설명이 포함 되어 있습니다. 이러한 변환은 함께 각 픽셀에 대해 픽셀을 생성 한 photons에서 가져온 경로를 나타내는 3D 공간의 광선을 정의 합니다. 이러한 광선은 프레임의 좌표계에서 다른 좌표계 (예: [고정 참조 프레임](../../design/coordinate-systems.md#stationary-frame-of-reference))로 변환을 가져와서 앱의 다른 콘텐츠와 관련 될 수 있습니다. 
 
 각 이미지 프레임은 다음을 제공 합니다.
 * 픽셀 데이터 (RGB/NV12/JPEG/등 형식)
-* 캡처 위치의 [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem)
-* 카메라의 렌즈 모드가 포함 된 [CameraIntrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 클래스입니다.
+* 캡처 위치의 [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem)
+* 카메라의 렌즈 모드가 포함 된 [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 클래스입니다.
 
 [HolographicFaceTracking 샘플](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking) 에서는 카메라의 좌표계와 사용자 고유의 응용 프로그램 좌표계 간에 변환을 쿼리 하는 매우 간단한 방법을 보여 줍니다.
 
 ### <a name="using-media-foundation"></a>미디어 파운데이션 사용
 
-카메라에서 이미지 프레임을 읽기 위해 미디어 파운데이션를 직접 사용 하는 경우 다음 샘플 코드에 표시 된 것 처럼 각 프레임의 [MFSampleExtension_CameraExtrinsics 특성](https://docs.microsoft.com/windows/win32/medfound/mfsampleextension-cameraextrinsics) 및 [MFSampleExtension_PinholeCameraIntrinsics 특성](https://docs.microsoft.com/windows/win32/medfound/mfsampleextension-pinholecameraintrinsics) 을 사용 하 여 응용 프로그램의 다른 좌표계를 기준으로 카메라 프레임을 찾을 수 있습니다.
+카메라에서 이미지 프레임을 읽기 위해 미디어 파운데이션를 직접 사용 하는 경우 다음 샘플 코드에 표시 된 것 처럼 각 프레임의 [MFSampleExtension_CameraExtrinsics 특성](/windows/win32/medfound/mfsampleextension-cameraextrinsics) 및 [MFSampleExtension_PinholeCameraIntrinsics 특성](/windows/win32/medfound/mfsampleextension-pinholecameraintrinsics) 을 사용 하 여 응용 프로그램의 다른 좌표계를 기준으로 카메라 프레임을 찾을 수 있습니다.
 
 ```cpp
 #include <winrt/windows.perception.spatial.preview.h>
@@ -251,7 +251,7 @@ public static Vector3 ClosestPointBetweenRays(
 
 ### <a name="track-or-identify-tagged-stationary-or-moving-real-world-objectsfaces-using-leds-or-other-recognizer-libraries"></a>Led 또는 다른 인식기 라이브러리를 사용 하 여 태그가 지정 된 고정 또는 실제 개체/얼굴 이동 추적 또는 식별
 
-예제:
+예:
 * Led가 있는 산업 로봇 (또는 느린 개체 이동에 대 한 QR 코드)
 * 대화방의 개체 식별 및 인식
 * 대화방에서 사람을 식별 하 고 인식 합니다 (예: 얼굴에 holographic 접점 카드 배치).
@@ -259,7 +259,7 @@ public static Vector3 ClosestPointBetweenRays(
 ## <a name="see-also"></a>참고 항목
 * [과정이 카메라 샘플](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
 * [Unity의 위치를 찾을 수 있는 카메라](../unity/locatable-camera-in-unity.md)
-* [혼합 현실 캡처](../../mixed-reality-capture.md)
+* [혼합 현실 캡처](/hololens/holographic-photos-and-videos)
 * [개발자를 위한 혼합 현실 캡처](mixed-reality-capture-for-developers.md)
-* [미디어 캡처 소개](https://msdn.microsoft.com/library/windows/apps/mt243896.aspx)
+* [미디어 캡처 소개](/windows/uwp/audio-video-camera/)
 * [Holographic face 추적 샘플](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)

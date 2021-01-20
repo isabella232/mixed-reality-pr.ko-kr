@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, HoloLens, 모던 헤드셋, 앱, uwp, 제출, 제출, 필터, 메타 데이터, 시스템 요구 사항, 키워드, wack, 인증, 패키지, appx, 머천다이징, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 7b1953fe0244b06f019f0e28432b7f9be9c21081
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: 8597526d35aa7ac7afadec0dd33fd23ef82d668a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031979"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583880"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Microsoft Store에 앱 제출
 
@@ -20,9 +20,9 @@ ms.locfileid: "98031979"
 
 ## <a name="prerequisites"></a>사전 요구 사항
 
-[HoloLens](../hololens-hardware-details.md) 와 WINDOWS 10 PC는 모두 [몰입 형 헤드셋](../discover/immersive-headset-hardware-details.md) 을 켜는 유니버설 Windows 플랫폼 앱을 실행 합니다. HoloLens, PC 또는 둘 다를 지 원하는 앱을 제출 하 든 앱 제출은 [파트너 센터](https://partner.microsoft.com/dashboard)를 통과 합니다.
+[HoloLens](/hololens/hololens1-hardware) 와 WINDOWS 10 PC는 모두 [몰입 형 헤드셋](../discover/immersive-headset-hardware-details.md) 을 켜는 유니버설 Windows 플랫폼 앱을 실행 합니다. HoloLens, PC 또는 둘 다를 지 원하는 앱을 제출 하 든 앱 제출은 [파트너 센터](https://partner.microsoft.com/dashboard)를 통과 합니다.
 
-파트너 센터 개발자 계정이 아직 없는 경우 계속 진행 하기 전에 [등록](https://developer.microsoft.com/store/register) 합니다. 제출 지침 및 검사 목록에 대 한 자세한 내용은이 [앱 서브 미션 문서](https://docs.microsoft.com/windows/uwp/publish/app-submissions)에서 찾을 수 있습니다.
+파트너 센터 개발자 계정이 아직 없는 경우 계속 진행 하기 전에 [등록](https://developer.microsoft.com/store/register) 합니다. 제출 지침 및 검사 목록에 대 한 자세한 내용은이 [앱 서브 미션 문서](/windows/uwp/publish/app-submissions)에서 찾을 수 있습니다.
 
 > [!IMPORTANT]
 > 파트너 센터 개발자 계정이 고용 확인 검사에 실패 하는 경우 Microsoft Store에 응용 프로그램을 제출할 수 없습니다. 자세한 내용은 파트너 센터 [지원 팀](https://developer.microsoft.com/windows/support) 에 문의 하세요.
@@ -42,7 +42,7 @@ ms.locfileid: "98031979"
 
 ### <a name="prepare-image-assets-included-in-the-appx"></a>Appx에 포함 된 이미지 자산 준비
 
-Appx 빌드 도구에서 응용 프로그램을 Microsoft Store에 전송 하는 데 필요한 appx 패키지에 빌드하려면 다음 이미지 자산이 필요 합니다. MSDN의 [타일 및 아이콘 자산에 대 한 지침](https://msdn.microsoft.com/library/windows/apps/mt412102.aspx) 을 자세히 알아볼 수 있습니다.
+Appx 빌드 도구에서 응용 프로그램을 Microsoft Store에 전송 하는 데 필요한 appx 패키지에 빌드하려면 다음 이미지 자산이 필요 합니다. MSDN의 [타일 및 아이콘 자산에 대 한 지침](/windows/uwp/app-resources/images-tailored-for-scale-theme-contrast) 을 자세히 알아볼 수 있습니다.
 
 | 필수 자산 | 권장 크기 조정 | 이미지 형식 | 자산이 표시 되는 위치 | 
 |----------|----------|----------|------------------|
@@ -75,7 +75,7 @@ Visual Studio에서 새 유니버설 Windows 프로젝트를 만들 때 대상 �
 
 ### <a name="specifying-target-device-families"></a>대상 장치 패밀리 지정
 
-Windows Mixed Reality 응용 프로그램 ( [HoloLens](../hololens-hardware-details.md) 및 [몰입 형 헤드셋](../discover/immersive-headset-hardware-details.md)모두)은 유니버설 Windows 플랫폼의 일부 이므로 **windows. 유니버설** [대상 장치 제품군](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) 을 포함 하는 모든 앱 패키지는 Hololens 또는 모던 헤드셋을 사용 하는 windows 10 pc에서 실행할 수 있습니다. 응용 프로그램 매니페스트에서 대상 장치 제품군을 지정 하지 않은 경우 의도 하지 않은 Windows 10 장치까지 앱을 실수로 열 수 있습니다. 아래 단계에 따라 원하는 Windows 10 장치 제품군을 지정 하 고, [Microsoft Store 제출을 위해 파트너 센터에서 앱 패키지를 업로드할 때 올바른 장치 제품군을 설정 했는지 확인 합니다.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+Windows Mixed Reality 응용 프로그램 ( [HoloLens](/hololens/hololens1-hardware) 및 [몰입 형 헤드셋](../discover/immersive-headset-hardware-details.md)모두)은 유니버설 Windows 플랫폼의 일부 이므로 **windows. 유니버설** [대상 장치 제품군](/uwp/schemas/appxpackage/uapmanifestschema/element-targetdevicefamily) 을 포함 하는 모든 앱 패키지는 Hololens 또는 모던 헤드셋을 사용 하는 windows 10 pc에서 실행할 수 있습니다. 응용 프로그램 매니페스트에서 대상 장치 제품군을 지정 하지 않은 경우 의도 하지 않은 Windows 10 장치까지 앱을 실수로 열 수 있습니다. 아래 단계에 따라 원하는 Windows 10 장치 제품군을 지정 하 고, [Microsoft Store 제출을 위해 파트너 센터에서 앱 패키지를 업로드할 때 올바른 장치 제품군을 설정 했는지 확인 합니다.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
 * Visual Studio에서이 필드를 설정 하려면 **appxmanifest.xml** 를 마우스 오른쪽 단추로 클릭 하 고 **코드 보기** 를 선택한 다음 **targetdevicefamily 이름** 필드를 찾습니다. 기본적으로 다음 항목과 같이 표시 됩니다.
 
@@ -118,7 +118,7 @@ Windows Mixed Reality 응용 프로그램 ( [HoloLens](../hololens-hardware-deta
 </Dependencies>
 ```
 
-[Targetdevicefamily UWP 설명서](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-targetdevicefamily)를 읽어 장치 패밀리를 대상으로 지정 하는 방법에 대해 자세히 알아볼 수 있습니다.
+[Targetdevicefamily UWP 설명서](/uwp/schemas/appxpackage/uapmanifestschema/element-targetdevicefamily)를 읽어 장치 패밀리를 대상으로 지정 하는 방법에 대해 자세히 알아볼 수 있습니다.
 
 ### <a name="associate-app-with-the-store"></a>앱을 스토어에 연결
 
@@ -136,14 +136,14 @@ Visual Studio 솔루션으로 이동 하 고 > 프로젝트를 선택 하 **> �
 
 ### <a name="creating-an-upload-package"></a>업로드 패키지 만들기
 
-[Windows 10 용 유니버설 windows 앱 패키징](https://msdn.microsoft.com/library/hh454036.aspx#Anchor_2)의 지침을 따르세요.
+[Windows 10 용 유니버설 windows 앱 패키징](/previous-versions/windows/apps/hh454036(v=vs.140)#Anchor_2)의 지침을 따르세요.
 
 업로드 패키지를 만드는 마지막 단계는 [Windows 앱 인증 키트](#windows-app-certification-kit)를 사용 하 여 패키지의 유효성을 검사 하는 것입니다.
 
 다른 Windows 10 장치 제품군에서 사용할 수 있는 기존 제품에 HoloLens 관련 패키지를 추가 하는 경우 다음에 주의 해야 합니다. 
 
-* [특정 고객에 게 제공 되는 패키지에 대 한 버전 번호의 영향을 받는 방법](https://msdn.microsoft.com/library/windows/apps/mt188602.aspx)
-* [다른 운영 체제에 패키지를 배포 하는 방법](https://msdn.microsoft.com/library/windows/apps/mt188601.aspx)
+* [특정 고객에 게 제공 되는 패키지에 대 한 버전 번호의 영향을 받는 방법](/windows/uwp/publish/package-version-numbering)
+* [다른 운영 체제에 패키지를 배포 하는 방법](/windows/uwp/publish/guidance-for-app-package-management)
 
 일반적인 지침은 장치에 대 한 버전 번호가 가장 높은 패키지가 저장소에서 배포 하는 것입니다.
 
@@ -167,7 +167,7 @@ Visual Studio 솔루션으로 이동 하 고 > 프로젝트를 선택 하 **> �
 
 ### <a name="windows-app-certification-kit"></a>Windows 앱 인증 키트
 
-Visual Studio를 통해 파트너 센터에 제출할 앱 패키지를 만들 때 앱 패키지 만들기 마법사는 생성 된 패키지에 대해 Windows 앱 인증 키트를 실행 하 라는 메시지를 표시 합니다. 저장소에 대 한 원활한 전송 프로세스를 수행 하려면 스토어에 제출 하기 전에 앱의 로컬 복사본이 [Windows 앱 인증 키트 테스트](https://msdn.microsoft.com/library/windows/apps/jj657973.aspx) 를 통과 하는지 확인 하는 것이 가장 좋습니다. 원격 HoloLens에서 Windows 앱 인증 키트를 실행 하는 것은 현재 지원 되지 않습니다.
+Visual Studio를 통해 파트너 센터에 제출할 앱 패키지를 만들 때 앱 패키지 만들기 마법사는 생성 된 패키지에 대해 Windows 앱 인증 키트를 실행 하 라는 메시지를 표시 합니다. 저장소에 대 한 원활한 전송 프로세스를 수행 하려면 스토어에 제출 하기 전에 앱의 로컬 복사본이 [Windows 앱 인증 키트 테스트](/previous-versions/windows/apps/jj657973(v=win.10)) 를 통과 하는지 확인 하는 것이 가장 좋습니다. 원격 HoloLens에서 Windows 앱 인증 키트를 실행 하는 것은 현재 지원 되지 않습니다.
 
 ### <a name="run-on-all-targeted-device-families"></a>모든 대상 장치 제품군에서 실행
 
@@ -177,19 +177,19 @@ Windows 유니버설 플랫폼을 사용 하 여 모든 Windows 10 장치 제품
 
 Unity 프로젝트를 기반으로 하는 혼합 현실 앱을 제출 하는 경우 먼저이 [비디오](https://channel9.msdn.com/Blogs/One-Dev-Minute/How-to-publish-your-Unity-game-as-a-UWP-app) 를 참조 하세요.
 
-일반적으로 HoloLens 또는 모던 헤드셋에서 작동 하는 Windows Mixed Reality 앱을 제출 하는 것은 Microsoft Store에 UWP 앱을 제출 하는 것과 같습니다. [이름을 예약 하 여 앱을 만들었으면](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name) [UWP 제출 검사 목록](https://docs.microsoft.com/windows/uwp/publish/app-submissions)을 따릅니다.
+일반적으로 HoloLens 또는 모던 헤드셋에서 작동 하는 Windows Mixed Reality 앱을 제출 하는 것은 Microsoft Store에 UWP 앱을 제출 하는 것과 같습니다. [이름을 예약 하 여 앱을 만들었으면](/windows/uwp/publish/create-your-app-by-reserving-a-name) [UWP 제출 검사 목록](/windows/uwp/publish/app-submissions)을 따릅니다.
 
-가장 먼저 수행할 작업 중 하나는 혼합 현실 환경에 대 한 [범주 및 하위](https://docs.microsoft.com/windows/uwp/publish/category-and-subcategory-table) 범주를 선택 하는 것입니다. **앱에 대해 가장 정확한 범주를 선택** 하는 것이 중요 합니다. 범주를 사용 하면 올바른 저장소 범주에서 응용 프로그램을 상품 하 고 관련 검색 쿼리를 사용 하 여 표시 되도록 할 수 있습니다. **VR 타이틀을 게임으로 나열 해도 앱에 대 한 노출이 더 우수 하지 않으며, 더 잘** 맞춤 되 고 복잡 한 범주에 표시 되지 않을 수 있습니다.
+가장 먼저 수행할 작업 중 하나는 혼합 현실 환경에 대 한 [범주 및 하위](/windows/uwp/publish/category-and-subcategory-table) 범주를 선택 하는 것입니다. **앱에 대해 가장 정확한 범주를 선택** 하는 것이 중요 합니다. 범주를 사용 하면 올바른 저장소 범주에서 응용 프로그램을 상품 하 고 관련 검색 쿼리를 사용 하 여 표시 되도록 할 수 있습니다. **VR 타이틀을 게임으로 나열 해도 앱에 대 한 노출이 더 우수 하지 않으며, 더 잘** 맞춤 되 고 복잡 한 범주에 표시 되지 않을 수 있습니다.
 
 그러나 제출 프로세스에는 다음과 같은 네 가지 주요 영역이 있습니다.
-1. [속성](https://docs.microsoft.com/windows/uwp/publish/enter-app-properties)의 **[제품 선언](submitting-an-app-to-the-microsoft-store.md#mixed-reality-product-declarations)** 섹션에서
-2. **[시스템 요구 사항](submitting-an-app-to-the-microsoft-store.md#mixed-reality-system-requirements)** 섹션의 [속성](https://docs.microsoft.com/windows/uwp/publish/enter-app-properties)아래에 있습니다.
-3. [패키지](https://docs.microsoft.com/windows/uwp/publish/upload-app-packages)의 **[장치 제품군 가용성](submitting-an-app-to-the-microsoft-store.md#device-family-availability)** 섹션에서
+1. [속성](/windows/uwp/publish/enter-app-properties)의 **[제품 선언](submitting-an-app-to-the-microsoft-store.md#mixed-reality-product-declarations)** 섹션에서
+2. **[시스템 요구 사항](submitting-an-app-to-the-microsoft-store.md#mixed-reality-system-requirements)** 섹션의 [속성](/windows/uwp/publish/enter-app-properties)아래에 있습니다.
+3. [패키지](/windows/uwp/publish/upload-app-packages)의 **[장치 제품군 가용성](submitting-an-app-to-the-microsoft-store.md#device-family-availability)** 섹션에서
 4. **[저장소 목록 페이지](submitting-an-app-to-the-microsoft-store.md#store-listing-page)** 의 여러 필드에 있습니다.
 
 ### <a name="mixed-reality-product-declarations"></a>혼합 현실 제품 선언
 
-앱 제출 프로세스의 **[속성](https://docs.microsoft.com/windows/uwp/publish/enter-app-properties)** 페이지에는 **[제품 선언](https://docs.microsoft.com/windows/uwp/publish/app-declarations)** 섹션에서 혼합 현실과 관련 된 몇 가지 옵션이 있습니다.
+앱 제출 프로세스의 **[속성](/windows/uwp/publish/enter-app-properties)** 페이지에는 **[제품 선언](/windows/uwp/publish/app-declarations)** 섹션에서 혼합 현실과 관련 된 몇 가지 옵션이 있습니다.
 
 ![혼합 현실 제품 선언](images/product-declarations-900px.png)<br>
 혼합 현실 제품 선언
@@ -207,7 +207,7 @@ Unity 프로젝트를 기반으로 하는 혼합 현실 앱을 제출 하는 경
 
 ### <a name="mixed-reality-system-requirements"></a>혼합 현실 시스템 요구 사항
 
-앱 제출 프로세스의 **[속성](https://docs.microsoft.com/windows/uwp/publish/enter-app-properties)** 페이지에는 **[시스템 요구 사항](https://docs.microsoft.com/windows/uwp/publish/enter-app-properties#system-requirements)** 섹션에서 혼합 현실과 관련 된 몇 가지 옵션이 있습니다.
+앱 제출 프로세스의 **[속성](/windows/uwp/publish/enter-app-properties)** 페이지에는 **[시스템 요구 사항](/windows/uwp/publish/enter-app-properties#system-requirements)** 섹션에서 혼합 현실과 관련 된 몇 가지 옵션이 있습니다.
 
 ![시스템 요구 사항](images/system-reqs-800px.png)<br>
 시스템 요구 사항
@@ -234,7 +234,7 @@ Unity 프로젝트를 기반으로 하는 혼합 현실 앱을 제출 하는 경
 
 **PC 사양:**
 
-앱이 최대한 많은 Windows Mixed Reality 모던 헤드셋 사용자에 게 도달 하 게 하려면 [통합 그래픽이 포함 된 Windows Mixed reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)PC의 PC 사양을 [대상](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) 으로 지정 합니다.
+앱이 최대한 많은 Windows Mixed Reality 모던 헤드셋 사용자에 게 도달 하 게 하려면 [통합 그래픽이 포함 된 Windows Mixed reality](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)PC의 PC 사양을 [대상](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) 으로 지정 합니다.
 
 혼합 현실 앱이 최소 Windows Mixed Reality PC 요구 사항을 대상으로 하는지 또는 [Windows Mixed Reality Ultra PC]의 전용 GPU와 같은 특정 PC 구성이 필요한 지 여부에 관계 없이 https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines "최소 하드웨어" 열에 관련 pc 사양을 추가 해야 합니다.
 
@@ -259,7 +259,7 @@ Visual Studio의 Microsoft Store에 앱 연결
 
 ### <a name="store-listing-page"></a>스토어 목록 페이지
 
-앱 제출 프로세스의 [스토어 목록](https://docs.microsoft.com/windows/uwp/publish/create-app-store-listings) 페이지에는 혼합 현실 앱에 대 한 유용한 정보를 추가할 수 있는 여러 위치가 있습니다.
+앱 제출 프로세스의 [스토어 목록](/windows/uwp/publish/create-app-store-listings) 페이지에는 혼합 현실 앱에 대 한 유용한 정보를 추가할 수 있는 여러 위치가 있습니다.
 
 >[!IMPORTANT]
 >앱이 스토어에 의해 올바르게 분류 되 고 Windows Mixed Reality 고객이 검색할 수 있도록 하려면 앱에 대 한 "검색 용어" 중 하나로 **"Windows Mixed reality"** 를 추가 해야 합니다. "공유 필드" 섹션을 확장 하 여 검색 단어를 찾을 수 있습니다.
@@ -269,7 +269,7 @@ Visual Studio의 Microsoft Store에 앱 연결
 
 ## <a name="offering-a-free-trial-for-your-game-or-app"></a>게임 또는 앱에 대 한 무료 평가판 제공
 
-대부분의 경우 소비자는 Windows Mixed Reality 몰입 형 헤드셋을 구입 하기 전에 가상 현실에 대 한 경험이 없도록 제한 됩니다. 이는 강한 게임에서 발생 하는 것을 알 수 없거나 몰입 형 환경에서 자신의 편안 함 임계값에 익숙해질 수 있습니다. 많은 고객이 Windows mixed reality [pc](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)로 직장 배지가 달린 되지 않는 Pc에서 Windows mixed reality 몰입 형 헤드셋을 사용해 볼 수도 있습니다. 이러한 고려 사항 때문에 유료 현실 앱 또는 게임의 [무료 평가판](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#free-trial) 을 제공 하는 것이 좋습니다.
+대부분의 경우 소비자는 Windows Mixed Reality 몰입 형 헤드셋을 구입 하기 전에 가상 현실에 대 한 경험이 없도록 제한 됩니다. 이는 강한 게임에서 발생 하는 것을 알 수 없거나 몰입 형 환경에서 자신의 편안 함 임계값에 익숙해질 수 있습니다. 많은 고객이 Windows mixed reality [pc](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)로 직장 배지가 달린 되지 않는 Pc에서 Windows mixed reality 몰입 형 헤드셋을 사용해 볼 수도 있습니다. 이러한 고려 사항 때문에 유료 현실 앱 또는 게임의 [무료 평가판](/windows/uwp/publish/set-app-pricing-and-availability#free-trial) 을 제공 하는 것이 좋습니다.
 
 ## <a name="see-also"></a>참고 항목
 * [혼합 현실이란?](../discover/mixed-reality.md)
@@ -278,4 +278,4 @@ Visual Studio의 Microsoft Store에 앱 연결
 * [혼합 현실 성능 이해](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Unity에 대 한 성능 권장 사항](../develop/unity/performance-recommendations-for-unity.md)
 * [HoloLens에서 앱 테스트](../develop/platform-capabilities-and-apis/testing-your-app-on-hololens.md)
-* [Windows Mixed Reality 최소 PC 하드웨어 호환성 지침](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
+* [Windows Mixed Reality 최소 PC 하드웨어 호환성 지침](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)

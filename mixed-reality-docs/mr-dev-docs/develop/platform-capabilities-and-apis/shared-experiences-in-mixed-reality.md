@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 02/10/2019
 ms.topic: article
 keywords: 공유 환경, 혼합 현실, 홀로그램, 공간 앵커, 다중 사용자, 다중
-ms.openlocfilehash: 6db5bb13d7e04dbee6b4d9d6568b821347bd769a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 3383bcd8b87dad6e817262d96b8ac1ebb3d0c8f5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530119"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583156"
 ---
 # <a name="shared-experiences-in-mixed-reality"></a>혼합 현실에서 공유 환경
 
@@ -95,7 +95,7 @@ HoloLens 파트너 기관의 내부 프로토타입 및 탐색을 통해 공유 
 * **유사**: 비슷한 가구, 주변 광원 및 음향, 실내 크기를 포함 하는 환경입니다. 예를 들어 교수은 강의 홀 A와 학생 들이 강의 홀 B에 있습니다. 강의 홀 홀은 B 보다 더 적거나, 둘 다 holograms를 놓을 수 있는 물리적 책상이 있을 수 있습니다.
 * **다른 방법:** 가구 설정, 방 크기, 광원 및 소리 고려 사항에서 다른 환경 예를 들어, 교수는 포커스 공간에 있지만 학생 들이 학생 및 교사와 함께 채워진 대기업에 있습니다.
 
-[환경에 대 한 고려](../../environment-considerations-for-hololens.md)사항은 다음과 같습니다.
+[환경에 대 한 고려](/hololens/hololens-environment-considerations)사항은 다음과 같습니다.
 
 * 사용자가 이러한 개체를 경험 하는 방법입니다. 예: 테이블이 테이블에 가장 잘 작동 하 고 사용자에 게 테이블이 없는 경우 또는 평면에 있지만 사용자에 게 복잡 한 공간이 있는 경우
 * 개체의 소수 자릿수입니다. 예를 들어 테이블에 6 피트 인간 모델을 배치 하는 것은 어려울 수 있지만 하트 모델은 매우 유용 합니다.
@@ -137,11 +137,11 @@ NASA의 Jet Jpl 실험에서 개발한 [Onsight 공동 작업 도구](https://ww
 
 공유 환경의 핵심은 여러 사용자가 자신의 장치에서 동일한 holograms를 볼 수 있도록 하는 것입니다 .이 경우에는 여러 장치에서 좌표를 정렬 하기 위해 앵커를 공유 하 여 자주 수행 됩니다.
 
-앵커를 공유 하려면 [Azure 공간 앵커](https://docs.microsoft.com/azure/spatial-anchors)를 사용 합니다.
+앵커를 공유 하려면 [Azure 공간 앵커](/azure/spatial-anchors)를 사용 합니다.
 
 * 먼저 사용자가 홀로그램을 배치 합니다.
 * 앱은 [공간 앵커](../../design/spatial-anchors.md)를 만들어 전 세계에 해당 홀로그램을 정확 하 게 고정 합니다.
-* [Azure 공간 앵커](https://docs.microsoft.com/azure/spatial-anchors/)를 통해 HoloLens, IOS 및 Android 장치에 대 한 앵커를 공유할 수 있습니다.
+* [Azure 공간 앵커](/azure/spatial-anchors/)를 통해 HoloLens, IOS 및 Android 장치에 대 한 앵커를 공유할 수 있습니다.
 
 공유 공간 앵커를 사용 하는 경우 각 장치에서 앱은 이제 콘텐츠를 저장할 수 있는 [공용 좌표계](../../design/coordinate-systems.md) 를 사용 합니다. 이제 앱에서 홀로그램을 동일한 위치에 배치 하 고 방향을 지정할 수 있습니다.
 
@@ -153,7 +153,7 @@ HoloLens 장치에서 한 장치에서 다른 장치로 앵커를 오프 라인�
 
 ## <a name="shared-static-holograms-no-interactions"></a>Shared static holograms (상호 작용 없음)
 
-앱에서 [Azure 공간 앵커](https://docs.microsoft.com/azure/spatial-anchors/) 를 활용 합니다.  장치에서 공간 앵커를 사용 하도록 설정 하 고 공유 하면 사용자가 동시에 동일한 위치에서 holograms를 볼 수 있는 응용 프로그램을 만들 수 있습니다.  사용자가 holograms와 상호 작용 하 고 holograms의 이동 또는 상태 업데이트를 볼 수 있도록 하려면 장치 간 추가 동기화가 필요 합니다.
+앱에서 [Azure 공간 앵커](/azure/spatial-anchors/) 를 활용 합니다.  장치에서 공간 앵커를 사용 하도록 설정 하 고 공유 하면 사용자가 동시에 동일한 위치에서 holograms를 볼 수 있는 응용 프로그램을 만들 수 있습니다.  사용자가 holograms와 상호 작용 하 고 holograms의 이동 또는 상태 업데이트를 볼 수 있도록 하려면 장치 간 추가 동기화가 필요 합니다.
 
 ## <a name="share-first-person-perspective"></a>첫 번째 사용자 관점 공유
 
@@ -172,7 +172,7 @@ PC 또는 TV와 같이 지원 되는 Miracast 수신기가 있는 경우 로컬 
 
 ## <a name="multi-user-collaborative-experience"></a>다중 사용자 공동 작업 환경
 
-로컬 사용자의 경우 [Azure 공간 앵커](https://docs.microsoft.com/azure/spatial-anchors/) 를 활용 하 고 장면의 콘텐츠/상태를 동기화 하는 [Photon SDK](https://www.photonengine.com/PUN) 를 활용 하는 [다중 사용자 학습 자습서](../../mrlearning-sharing(photon)-ch1.md)부터 시작 하세요. 각 사용자에 게 장면의 holograms에 대 한 고유한 큐브 뷰가 있고 각각 holograms와 완전히 상호 작용할 수 있는 로컬 공동 작업 응용 프로그램을 만듭니다.  업데이트는 모든 장치에서 제공 되며 상호 작용 충돌 관리는 Photon에서 처리 됩니다.
+로컬 사용자의 경우 [Azure 공간 앵커](/azure/spatial-anchors/) 를 활용 하 고 장면의 콘텐츠/상태를 동기화 하는 [Photon SDK](https://www.photonengine.com/PUN) 를 활용 하는 [다중 사용자 학습 자습서](../unity/tutorials/mr-learning-sharing-02.md)부터 시작 하세요. 각 사용자에 게 장면의 holograms에 대 한 고유한 큐브 뷰가 있고 각각 holograms와 완전히 상호 작용할 수 있는 로컬 공동 작업 응용 프로그램을 만듭니다.  업데이트는 모든 장치에서 제공 되며 상호 작용 충돌 관리는 Photon에서 처리 됩니다.
 
 > [!NOTE]
 > [Photon](https://www.photonengine.com/) 은 타사 제품 이므로 Photon와의 요금 청구 관계를 productize 하 고 더 높은 사용량을 위해 크기를 조정 해야 할 수 있습니다.
@@ -185,7 +185,7 @@ PC 또는 TV와 같이 지원 되는 Miracast 수신기가 있는 경우 로컬 
 
 ## <a name="see-also"></a>참고 항목
 
-* [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
+* [Azure Spatial Anchors](/azure/spatial-anchors)
 * [DirectX의 공유 공간 앵커](shared-spatial-anchors-in-directx.md)
 * [Unity의 공유 환경](../unity/shared-experiences-in-unity.md)
 * [Spectator View](spectator-view.md)

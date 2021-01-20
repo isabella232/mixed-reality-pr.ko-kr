@@ -5,12 +5,12 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 01/11/2021
 ms.topic: article
-ms.openlocfilehash: 8add6413b0ff4bb32c15d1fce10977397aa33ba1
-ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
+ms.openlocfilehash: f60179c35f6103c4771ea2777e05829bfb7a8ce4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98108856"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583040"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>혼합 현실 개발자 설명서에 기여
 
@@ -24,7 +24,7 @@ ms.locfileid: "98108856"
 
 | 리포지토리 이름 | URL |
 | --- | --- |
-| Mixed Reality | [MicrosoftDocs/mixed-현실](https://docs.microsoft.com/windows/mixed-reality) |
+| Mixed Reality | [MicrosoftDocs/mixed-현실](/windows/mixed-reality) |
 | VR 매니아 가이드 | [MicrosoftDocs/mixed-현실/열성적인](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 | HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 
@@ -131,13 +131,13 @@ GitHub 계정을 설정할 때 다음과 같은 보안 예방 조치를 권장 �
 
 - [Markdown 기본 사항](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [한눈에 Markdown 참조 포스터](images/MarkdownPoster.pdf)
-- [Docs.microsoft.com에 대 한 Markdown 쓰기에 대 한 추가 리소스](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [Docs.microsoft.com에 대 한 Markdown 쓰기에 대 한 추가 리소스](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>테이블 추가
 
 스타일 docs.microsoft.com 스타일을 지정 하는 방식 때문에 인라인 CSS를 시도 하더라도 테두리나 사용자 지정 스타일은 없습니다. 짧은 시간 동안 작동 하는 것 처럼 보이지만 결국 플랫폼은 테이블에서 스타일을 제거 합니다. 따라서 미리 계획 하 고 테이블을 단순하게 유지 합니다. [Markdown 테이블을 쉽게 만들 수 있는 사이트는 다음과 같습니다](https://www.tablesgenerator.com/markdown_tables).
 
-[Visual Studio Code에 대 한 Docs Markdown 확장](https://docs.microsoft.com/teamblog/docs-extension) 은 [Visual Studio Code (아래 참조)](#using-visual-studio-code) 를 사용 하 여 문서를 편집 하는 경우에도 테이블을 쉽게 생성할 수 있습니다.
+[Visual Studio Code에 대 한 Docs Markdown 확장](/teamblog/docs-extension) 은 [Visual Studio Code (아래 참조)](#using-visual-studio-code) 를 사용 하 여 문서를 편집 하는 경우에도 테이블을 쉽게 생성할 수 있습니다.
 
 ### <a name="adding-images"></a>이미지 추가
 

@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 04/21/2019
 ms.topic: article
 keywords: Windows Mixed Reality, design, interaction, voice
-ms.openlocfilehash: 156927f43a09474c3dd6da8e400767f13700a7ce
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d027dd32e1d7ea0391d2d9262e164a671a57bd29
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690729"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582830"
 ---
 # <a name="voice-commanding"></a>음성 명령
 
@@ -29,7 +29,7 @@ ms.locfileid: "91690729"
     </colgroup>
     <tr>
         <td><strong>기능</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens(1세대)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
     </tr>
@@ -94,7 +94,7 @@ Windows Mixed Reality는 **단추의 레이블이 연결된 음성 명령과 동
 
 ### <a name="voice-feedback-states"></a>음성 피드백 상태
 
-음성이 제대로 적용되면 사용자는 **말할 수 있는 사항** 을 이해하고 시스템이 **올바르게 알아 들었다는 명확한 피드백을 받게 됩니다** . 이러한 두 신호를 통해 사용자는 음성을 기본 입력으로 사용할 때 안심할 수 있습니다. 다음은 음성 입력이 인식될 때 커서에 나타나는 결과와 사용자에게 이러한 사실을 전달하는 방법을 보여 주는 다이어그램입니다.
+음성이 제대로 적용되면 사용자는 **말할 수 있는 사항** 을 이해하고 시스템이 **올바르게 알아 들었다는 명확한 피드백을 받게 됩니다**. 이러한 두 신호를 통해 사용자는 음성을 기본 입력으로 사용할 때 안심할 수 있습니다. 다음은 음성 입력이 인식될 때 커서에 나타나는 결과와 사용자에게 이러한 사실을 전달하는 방법을 보여 주는 다이어그램입니다.
 
 ![커서에 대한 음성 피드백 상태](../design/images/voicefeedbackstates.png)<br>
 *커서에 대한 음성 피드백 상태*
@@ -113,6 +113,6 @@ Windows Mixed Reality는 **단추의 레이블이 연결된 음성 명령과 동
 * 특정 앱이나 앱 명령을 대상으로 음성 명령을 내리려면 어떻게 하나요?
 * 음성을 사용해서 항목을 HoloLens의 홀로그래픽 프레임 밖으로 보낼 수 있나요?
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [제스처](../design/gaze-and-commit.md#composite-gestures)
 * [헤드 게이즈 및 유지](../design/gaze-and-dwell.md)

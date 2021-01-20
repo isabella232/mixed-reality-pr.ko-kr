@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 기계 학습, ml, machine learning studio, hololens, 몰입 형, vr, Windows 10, Visual Studio
-ms.openlocfilehash: 3bb50c146e11a340f4223d71dd401ac2b84dd6d4
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 95213c3d17bbe0f0f81438d4808db142ad21c595
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679482"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583398"
 ---
 # <a name="mr-and-azure-307-machine-learning"></a>MR 및 Azure 307: 기계 학습
 
@@ -42,7 +42,7 @@ ms.locfileid: "94679482"
 
 <table>
 <tr>
-<th>과정</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
+<th>과정</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
 </tr><tr>
 <td> MR 및 Azure 307: 기계 학습</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -63,10 +63,10 @@ ms.locfileid: "94679482"
 - [최신 Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- 개발자 모드가 사용 하도록 설정 된 [Windows Mixed Reality 모던 (VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md) 또는 [Microsoft HoloLens](../../../hololens-hardware-details.md)
+- 개발자 모드가 사용 하도록 설정 된 [Windows Mixed Reality 모던 (VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md) 또는 [Microsoft HoloLens](/hololens/hololens1-hardware)
 - Azure 설정 및 ML 데이터 검색에 대 한 인터넷 액세스
 
-## <a name="before-you-start"></a>시작하기 전 확인 사항
+## <a name="before-you-start"></a>시작하기 전에
 
 이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.) 
 
@@ -100,7 +100,7 @@ Azure Translator API를 사용 하려면 응용 프로그램에서 사용할 수
     7.  **구독** 을 선택합니다.
     4. 리소스 그룹을 선택 하거나 새 **리소스 그룹** 을 만듭니다. 리소스 그룹은 Azure 자산의 컬렉션에 대 한 청구를 모니터링 하 고, 액세스를 제어 하 고, 프로 비전 하 고, 관리 하는 방법을 제공 합니다. 단일 프로젝트와 연결 된 모든 Azure 서비스 (예: 이러한 랩)를 공용 리소스 그룹에 유지 하는 것이 좋습니다.
 
-        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹 문서를 참조](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)하세요.
+        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹 문서를 참조](/azure/azure-resource-manager/resource-group-portal)하세요.
     
     5.  새 리소스 그룹을 만드는 경우 리소스 그룹의 **위치** 를 확인 합니다. 위치는 응용 프로그램이 실행 되는 영역에 있는 것이 가장 좋습니다. 일부 Azure 자산은 특정 지역 에서만 사용할 수 있습니다.
 
@@ -132,7 +132,7 @@ Azure Translator API를 사용 하려면 응용 프로그램에서 사용할 수
 
     3. 리소스 그룹을 선택 하거나 새 **리소스 그룹** 을 만듭니다. 리소스 그룹은 Azure 자산의 컬렉션에 대 한 청구를 모니터링 하 고, 액세스를 제어 하 고, 프로 비전 하 고, 관리 하는 방법을 제공 합니다. 단일 프로젝트와 연결 된 모든 Azure 서비스 (예: 이러한 랩)를 공용 리소스 그룹에 유지 하는 것이 좋습니다. 
 
-        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹 문서를 참조](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)하세요.
+        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹 문서를 참조](/azure/azure-resource-manager/resource-group-portal)하세요.
 
     4.  새 리소스 그룹을 만드는 경우 리소스 그룹의 **위치** 를 확인 합니다. 위치는 응용 프로그램이 실행 되는 영역에 있는 것이 가장 좋습니다. 일부 Azure 자산은 특정 지역 에서만 사용할 수 있습니다. 이전 장에서 Azure Storage를 만드는 데 사용한 것과 동일한 리소스 그룹을 사용 해야 합니다.
 
@@ -216,7 +216,7 @@ Machine Learning 알고리즘의 작동 방법 중 하나는 기존 데이터를
 
 실험 만들기를 시작 하려면 다음을 수행 합니다.
 
-1.  페이지 왼쪽 아래에 있는 **+ 새로 만들기** 단추를 다시 클릭 하 고 **Experiment**  >  **빈 실험** 실험을 클릭 합니다.
+1.  페이지 왼쪽 아래에 있는 **+ 새로 만들기** 단추를 다시 클릭 하 고   >  **빈 실험** 실험을 클릭 합니다.
 
     ![Machine Learning Studio (클래식): 실험](images/AzureLabs-Lab7-15.png)
 
@@ -252,9 +252,9 @@ Machine Learning 알고리즘의 작동 방법 중 하나는 기존 데이터를
 
     ![Machine Learning Studio (클래식): 실험](images/AzureLabs-Lab7-22.png)
 
-11. **다중 클래스 로지스틱 회귀** 알고리즘을 학습 하 여 시간 및 날짜를 기준으로 가장 많이 판매 되는 **제품** 을 예측 하려고 합니다. Azure Machine Learning studio에서 제공 하는 다양 한 알고리즘에 대 한 세부 정보를 설명 하기 위해이 문서에서는 다루지 않지만 [Machine Learning Algorithm 참고 자료 시트](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet) 에서 더 많은 정보를 확인할 수 있습니다.
+11. **다중 클래스 로지스틱 회귀** 알고리즘을 학습 하 여 시간 및 날짜를 기준으로 가장 많이 판매 되는 **제품** 을 예측 하려고 합니다. Azure Machine Learning studio에서 제공 하는 다양 한 알고리즘에 대 한 세부 정보를 설명 하기 위해이 문서에서는 다루지 않지만 [Machine Learning Algorithm 참고 자료 시트](/azure/machine-learning/studio/algorithm-cheat-sheet) 에서 더 많은 정보를 확인할 수 있습니다.
 
-12. 왼쪽의 실험 항목 패널에서 **Machine Learning**  >  **모델 분류 초기화** Machine Learning를 확장  >  **Classification** 하 고 **다중 클래스 로지스틱 회귀** 항목을 실험 캔버스로 끕니다.
+12. 왼쪽의 실험 항목 패널에서   >  **모델 분류 초기화** Machine Learning를 확장  >  하 고 **다중 클래스 로지스틱 회귀** 항목을 실험 캔버스로 끕니다.
 
 13. **다중 클래스 로지스틱 회귀** 의 아래쪽에 있는 출력을 **모델 학습** 항목의 왼쪽 위 입력에 연결 합니다.
 
@@ -336,7 +336,7 @@ Machine Learning 알고리즘의 작동 방법 중 하나는 기존 데이터를
 
 1.  **Unity** 를 열고 **MR \_ MachineLearning** 이라는 새 unity 프로젝트를 만듭니다. 프로젝트 형식이 **3d** 로 설정 되었는지 확인 합니다.
 
-2.  Unity를 연 상태에서 기본 **스크립트 편집기** 가 **Visual Studio** 로 설정 되어 있는지 확인 하는 것이 좋습니다. **Edit**  >  **기본 설정** 편집으로 이동한 다음 새 창에서 **외부 도구** 로 이동 합니다. **외부 스크립트 편집기** 를 **Visual Studio 2017** 로 변경 합니다. **기본 설정** 창을 닫습니다.
+2.  Unity를 연 상태에서 기본 **스크립트 편집기** 가 **Visual Studio** 로 설정 되어 있는지 확인 하는 것이 좋습니다.   >  **기본 설정** 편집으로 이동한 다음 새 창에서 **외부 도구** 로 이동 합니다. **외부 스크립트 편집기** 를 **Visual Studio 2017** 로 변경 합니다. **기본 설정** 창을 닫습니다.
 
 3.  그런 다음 **파일**  >  **빌드 설정** 으로 이동 하 고 **_스위치 플랫폼_* _ 단추를 클릭 하 여 플랫폼을 **유니버설 Windows 플랫폼** 로 전환 합니다.
 
@@ -507,7 +507,7 @@ Machine Learning 알고리즘의 작동 방법 중 하나는 기존 데이터를
     > 1.  **ShelfKeeper** 구성 요소 스크립트를 마우스 왼쪽 단추를 클릭 하 여 **생성 지점** 배열을 엽니다. 하위 섹션은 배열 크기를 나타내는 **size** 라는 것으로 나타납니다. **크기** 옆의 텍스트 상자에 **3** 을 입력 하 고 **enter** 키를 누릅니다. 그러면 아래에 세 개의 슬롯이 생성 됩니다.
     > 2. **계층 구조** 내에서 해당 개체 옆에 있는 화살표를 마우스 왼쪽 단추를 클릭 하 여 **시간 표시** 개체를 확장 합니다. 다음으로 **_ 계층 구조 *내에서* _주 카메라_ _** 를 클릭 하 여 **검사기** 가 해당 정보를 표시 하도록 합니다.
     > 3. **계층 패널** 에서 **주 카메라** 를 선택 합니다. **계층 패널** 의 **날짜** 및 **시간** 개체를 **ShelfKeeper** 구성 요소에 있는 **주 카메라** 의 **검사기** 내에서 **날짜 텍스트** 및 **시간 텍스트** 슬롯으로 끕니다.
-    > 4. 이미지에 표시 된 것 처럼 **계층 패널** ( *선반* 개체 아래)의 **생성** 지점을 **3 개의** **요소** 참조 대상으로 **Spawn Point** 끌어옵니다.
+    > 4. 이미지에 표시 된 것 처럼 **계층 패널** ( *선반* 개체 아래)의 **생성** 지점을 **3 개의** **요소** 참조 대상으로  끌어옵니다.
     > 
     >     ![ShelfKeeper 클래스 만들기](images/AzureLabs-Lab7-52.png)
 
@@ -529,7 +529,7 @@ Machine Learning 알고리즘의 작동 방법 중 하나는 기존 데이터를
 
 1.  **프로젝트 패널** 의 **스크립트** 폴더로 이동 합니다.
 
-2.  폴더 내부를 마우스 오른쪽 단추로 클릭 **Create** 하 고  >  **c # 스크립트** 를 만듭니다. 스크립트 **제품 예측** 을 호출 합니다.
+2.  폴더 내부를 마우스 오른쪽 단추로 클릭 하 고  >  **c # 스크립트** 를 만듭니다. 스크립트 **제품 예측** 을 호출 합니다.
 
 3.  새 **제품 예측** 스크립트를 두 번 클릭 하 여 **Visual Studio 2017** 에서 엽니다.
 
@@ -813,7 +813,7 @@ Machine Learning 알고리즘의 작동 방법 중 하나는 기존 데이터를
 
 14. **스크립트** 폴더의 **제품 예측** 클래스 스크립트를 **기본 카메라** 개체로 끌어 놓습니다.
 
-15. 장면 및 프로젝트 파일 저장 **File**  >  **장면/파일**  >  **저장 프로젝트** 를 저장 합니다.
+15. 장면 및 프로젝트 파일 저장   >  **장면/파일**  >  **저장 프로젝트** 를 저장 합니다.
 
 ## <a name="chapter-10---build-the-uwp-solution"></a>10 장-UWP 솔루션 빌드
 

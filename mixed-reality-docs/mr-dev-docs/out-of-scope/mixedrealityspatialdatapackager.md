@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 08/03/2020
 ms.topic: article
 keywords: lbe, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPackager
-ms.openlocfilehash: df6757730c8a5448d96811bfe4ce024f6942dc07
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 93d598a6add8350850faadab241b254e9cb341aa
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686265"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583641"
 ---
 # <a name="mixed-reality-spatial-data-packager-documentation"></a>혼합 현실 공간 데이터 포장기 설명서
 
@@ -37,7 +37,7 @@ ms.locfileid: "91686265"
     </colgroup>
     <tr>
         <td><strong>기능</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens(1세대)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
     </tr>
@@ -71,8 +71,7 @@ ms.locfileid: "91686265"
 4. 비어 있는 textureless 서피스를 최소화 합니다. 예를 들어, 흰색 벽에 다른 포스터의 범위를 둡니다.
 5. 장면에서 이동 하는 것과 같은 동적 개체 없이 공간 매핑
 6. 가져올 때 맵 잠금 (Insider Preview를 통해 사용 가능)
-7. 지도의 잠금을 해제 하 고 품질이 저하 되거나 환경에서 변경 된 경우 (개체 레이아웃의 조명 또는 변경) 환경을 다시 검사 합니다.
-***
+7. 지도의 잠금을 해제 하 고 품질이 저하 되거나 환경에서 변경 된 경우 (개체 레이아웃의 조명 또는 변경) * * _
 
 ## <a name="running-mixed-reality-spatial-data-packager-with-companion-script"></a>부록 스크립트를 사용 하 여 혼합 현실 공간 데이터 패키지 실행
 
@@ -154,7 +153,7 @@ MixedRealitySpatialDataPackager.exe import <folderpath to mapx files> <target pa
 가져오기는 기존 공간 데이터를 삭제 하 고 지정 된 디렉터리의 데이터로 바꿉니다. 앱 이름 입력은 공간 앵커를 가져올 대상 앱의 패키지 이름을 지정 하 고, 대상 사용자 SID는 가져온 공간 앵커에 대 한 액세스 권한이 있어야 하는 사용자를 지정 합니다. 대상 패키지 제품군 이름 및 사용자 Sid는 PC의 기존 값과 일치 해야 합니다. 그렇지 않으면 exe가 실패 합니다.
 
 
-***
+_**
 ## <a name="error-messages"></a>오류 메시지
 또한 오류 아래의 오류 메시지도 HRESULT와 함께 제공 됩니다.
 

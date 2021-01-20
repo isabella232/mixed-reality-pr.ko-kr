@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 제스처, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
-ms.openlocfilehash: 9f83e2f3b02cf8d83b2fb58a3a0d05dc8576b0e8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: dfb31901001f760abd60bda3022902267b7c05cf
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678292"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583708"
 ---
 # <a name="mr-input-211-gesture"></a>MR 입력 211: 제스처
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](../../../mr-learning-base-01.md)가 게시되었습니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](./mr-learning-base-01.md)가 게시되었습니다.
 
 [제스처](../../../design/gaze-and-commit.md#composite-gestures) 사용자 의도를 작업으로 설정 합니다. 제스처를 사용하면 사용자가 홀로그램과 상호 작용할 수 있습니다. 이 과정에서는 사용자의 손을 추적 하 고, 사용자 입력에 응답 하 고, 직접 상태 및 위치에 따라 사용자에 게 피드백을 제공 하는 방법을 알아봅니다.
 
@@ -38,15 +38,15 @@ ms.locfileid: "94678292"
 
 <table>
 <tr>
-<th>과정</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
+<th>과정</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
 </tr><tr>
 <td>MR 입력 211: 제스처</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
-## <a name="before-you-start"></a>시작하기 전 확인 사항
+## <a name="before-you-start"></a>시작하기 전에
 
-### <a name="prerequisites"></a>사전 요구 사항
+### <a name="prerequisites"></a>필수 구성 요소
 
 * 올바른 [도구로](../../../develop/install-the-tools.md)구성 된 WINDOWS 10 PC입니다.
 * 몇 가지 기본적인 c # 프로그래밍 기능.
@@ -73,7 +73,7 @@ ms.locfileid: "94678292"
 1. Unity를 시작합니다.
 2. **열기** 를 선택합니다.
 3. 이전에 보관 하지 않은 **제스처** 폴더로 이동 합니다.
-4. **Starting** / **모델 탐색기** 시작 폴더를 찾아 선택 합니다.
+4.  / **모델 탐색기** 시작 폴더를 찾아 선택 합니다.
 5. **폴더 선택** 단추를 클릭 합니다.
 6. **프로젝트** 패널에서 **장면** 폴더를 확장 합니다.
 7. **모델 탐색기** 장면을 두 번 클릭 하 여 Unity에서 로드 합니다.
@@ -139,7 +139,7 @@ HoloLens에 배포 하는 경우:
 
 1. **계층** 패널에서 **커서** 개체를 선택 하 고 삭제 합니다.
 2. **프로젝트** 패널에서 **CursorWithFeedback** 를 검색 하 여 **계층** 패널로 끌어 옵니다.
-3. **계층** 패널에서 **inputmanager** 를 클릭 한 다음,이 **계층** 에서 **CursorWithFeedback** 개체를 **검사기** 의 맨 아래에 있는 inputmanager의 **simplesinglepointerselector** 필드로 끕니다. **Cursor**
+3. **계층** 패널에서 **inputmanager** 를 클릭 한 다음,이 **계층** 에서 **CursorWithFeedback** 개체를 **검사기** 의 맨 아래에 있는 inputmanager의 **simplesinglepointerselector** 필드로 끕니다. 
 4. **계층** 에서 **CursorWithFeedback** 를 클릭 합니다.
 5. **검사기** 패널에서 **개체 커서** 스크립트의 **커서 상태 데이터** 를 확장 합니다.
 
@@ -346,7 +346,7 @@ GestureManager.cs 및 AstronautManager.cs를 사용 하면 다음을 수행할 �
 1. 음성 키워드 "**Move Astronaut**"를 사용 하 여 **조작** 제스처를 사용 하도록 설정 하 고 "**Rotate Astronaut**"를 사용 하지 않도록 설정 합니다.
 2. **조작 제스처 인식기** 에 대 한 응답으로 전환 합니다.
 
-이제 시작하겠습니다.
+이제 시작해 보겠습니다.
 
 1. **계층** 패널에서 비어 있는 새 GameObject을 만듭니다. 이름을 "**AstronautManager**"로 합니다.
 2. **검사기** 패널에서 **구성 요소 추가** 단추를 클릭 합니다.
@@ -370,7 +370,7 @@ GestureManager.cs 및 AstronautManager.cs를 사용 하면 다음을 수행할 �
 1. **프로젝트** 패널 **Holograms** 폴더에서 **pathingfeedback** 자산을 찾습니다.
 2. **Pathingfeedback** Prefab을 **계층** 의 **CursorWithFeedback** 개체로 끌어서 놓습니다.
 3. **계층** 패널에서 **CursorWithFeedback** 를 클릭 합니다.
-4. **Inspector** 의 **커서 피드백** 구성 요소에서 **Pathing 검색 된 게임 개체** 속성에 **pathingfeedback** 개체를 끌어서 놓습니다. **Hierarchy**
+4. **Inspector** 의 **커서 피드백** 구성 요소에서 **Pathing 검색 된 게임 개체** 속성에 **pathingfeedback** 개체를 끌어서 놓습니다. 
 
 이제 **GestureAction.cs** 에 코드를 추가 하 여 다음을 사용 하도록 설정 해야 합니다.
 

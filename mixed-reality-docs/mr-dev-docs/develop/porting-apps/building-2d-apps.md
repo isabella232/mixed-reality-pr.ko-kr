@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 2D 앱, UWP, 플랫 앱, HoloLens, 모던 헤드셋, 앱 모델, 뒤로 단추, 앱 바, dpi, 해상도, 크기 조정, 포팅, HoloLens 1 gen, HoloLens 2, mixed reality 헤드셋, windows mixed reality 헤드셋, 마이그레이션, Windows 10
-ms.openlocfilehash: b2df0b0a7cb598fead09016c528bd6a81c6ea238
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 2d6b03a8cca70ac2db810209263139ebdf3c22a7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612967"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583533"
 ---
 # <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>Windows Mixed Reality용 2D UWP 앱 업데이트
 
@@ -25,7 +25,7 @@ Windows Mixed Reality를 사용 하면 사용자에 게 실제 및 디지털 세
 
 혼합 현실 용 새 2D 앱을 빌드하려면 표준 UWP (2D 유니버설 Windows 플랫폼) 앱을 빌드합니다. 해당 앱에 대 한 다른 앱 변경은 필요 하지 않으므로 혼합 현실에서 슬레이트로 실행 됩니다.
 
-2D UWP 앱 빌드를 시작 하려면 [첫 번째 앱 만들기](https://docs.microsoft.com/windows/uwp/get-started/your-first-app) 문서를 확인 하세요.
+2D UWP 앱 빌드를 시작 하려면 [첫 번째 앱 만들기](/windows/uwp/get-started/your-first-app) 문서를 확인 하세요.
 
 ### <a name="bringing-an-existing-2d-store-app-to-uwp"></a>기존 2D 스토어 앱을 UWP로 가져오기
 
@@ -34,10 +34,10 @@ Windows Mixed Reality를 사용 하면 사용자에 게 실제 및 디지털 세
 
 |  시작 지점  |  AppX 매니페스트 플랫폼 대상  |  이 유니버설를 만드는 방법 | 
 |----------|----------|----------|
-|  Windows Phone(Silverlight)  |  Silverlight 응용 프로그램 매니페스트 |  [WinRT로 마이그레이션](https://msdn.microsoft.com/library/windows/apps/dn642486(v=vs.105).aspx) | 
-|  Windows Phone 8.1 범용  |  8.1 플랫폼 대상을 포함 하지 않는 AppX 매니페스트  |  [앱을 유니버설 Windows 플랫폼로 마이그레이션](https://msdn.microsoft.com/library/mt148501.aspx) | 
-|  Windows 스토어 8  |  플랫폼 대상이 포함 되지 않은 8 개의 AppX 매니페스트  |  [앱을 유니버설 Windows 플랫폼로 마이그레이션](https://msdn.microsoft.com/library/mt148501.aspx) | 
-|  Windows 스토어 8.1 유니버설  |  8.1 플랫폼 대상을 포함 하지 않는 AppX 매니페스트  |  [앱을 유니버설 Windows 플랫폼로 마이그레이션](https://msdn.microsoft.com/library/mt148501.aspx) | 
+|  Windows Phone(Silverlight)  |  Silverlight 응용 프로그램 매니페스트 |  [WinRT로 마이그레이션](/previous-versions/windows/apps/dn642486(v=vs.105)) | 
+|  Windows Phone 8.1 범용  |  8.1 플랫폼 대상을 포함 하지 않는 AppX 매니페스트  |  [앱을 유니버설 Windows 플랫폼로 마이그레이션](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
+|  Windows 스토어 8  |  플랫폼 대상이 포함 되지 않은 8 개의 AppX 매니페스트  |  [앱을 유니버설 Windows 플랫폼로 마이그레이션](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
+|  Windows 스토어 8.1 유니버설  |  8.1 플랫폼 대상을 포함 하지 않는 AppX 매니페스트  |  [앱을 유니버설 Windows 플랫폼로 마이그레이션](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
 
 현재 2D Unity 앱이 **PC, Mac & Linux 독립 실행형** 빌드 대상에서 Win32 앱으로 빌드된 경우 혼합 현실의 **유니버설 Windows 플랫폼** 빌드 대상으로 전환 합니다.
 
@@ -116,7 +116,7 @@ UWP에서 시작 하 여 UWP 앱을 중지 하는 가능한 문제에 대 한 �
 
 ![반응 형 디자인에서](images/scale-500px.png)
 
-Windows 10은 모든 시각적 디자인을 실제 화면 픽셀에서 **유효 픽셀로** 이동 합니다. 즉, 개발자는 효율적인 픽셀에 대 한 Windows 10 인적 인터페이스 지침에 따라 UI를 디자인 하 고, Windows 크기 조정을 사용 하면 장치, 해상도, DPI 등의 유용성을 위한 적절 한 픽셀을 적절 한 크기로 유지할 수 있습니다. 자세한 내용은 [MSDN의이 유용한](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) 내용과이 [빌드 프레젠테이션](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx) 을 참조 하십시오.
+Windows 10은 모든 시각적 디자인을 실제 화면 픽셀에서 **유효 픽셀로** 이동 합니다. 즉, 개발자는 효율적인 픽셀에 대 한 Windows 10 인적 인터페이스 지침에 따라 UI를 디자인 하 고, Windows 크기 조정을 사용 하면 장치, 해상도, DPI 등의 유용성을 위한 적절 한 픽셀을 적절 한 크기로 유지할 수 있습니다. 자세한 내용은 [MSDN의이 유용한](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design) 내용과이 [빌드 프레젠테이션](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx) 을 참조 하십시오.
 
 다양 한 거리에서 전 세계에 앱을 제공 하는 고유한 기능을 사용 하는 경우에도 대화형/제스처를 사용 하 여 최상의 가독성을 얻을 수 있도록 TV와 유사한 거리를 표시 하는 것이 좋습니다. 이로 인해 Mixed Reality 홈의 가상 슬레이트는 다음 위치에 플랫 UWP 보기를 표시 합니다.
 
@@ -131,7 +131,7 @@ Windows 10은 모든 시각적 디자인을 실제 화면 픽셀에서 **유효 
 
 **시겠습니까**
 * 스타일, 글꼴 크기 및 단추 크기에 대 한 [Windows 10 휴먼 인터페이스 지침 (gg)](https://dev.windows.com/design) 을 따릅니다. HoloLens는 앱이 호환 되는 앱 패턴, 읽을 수 있는 텍스트 크기 및 적절 한 적중 대상 크기 조정 작업을 수행 하도록 합니다.
-* UI가 [반응 형 디자인](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx) 에 대 한 모범 사례를 준수 하는지 확인 하 여 HoloLens의 고유한 해상도 및 DPI를 가장 효과적으로 확인 합니다.
+* UI가 [반응 형 디자인](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design) 에 대 한 모범 사례를 준수 하는지 확인 하 여 HoloLens의 고유한 해상도 및 DPI를 가장 효과적으로 확인 합니다.
 * Windows의 "light" 색 테마 권장 사항을 사용 합니다.
 
 **안 함:**
@@ -147,7 +147,7 @@ Windows 10은 모든 시각적 디자인을 실제 화면 픽셀에서 **유효 
 
 **제목:** 응용 프로그램 인스턴스와 연결 된 타일의 *displayname* 을 표시 합니다.
 
-**뒤로 단추:** 누를 때 *[요청](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* 된 이벤트를 발생 시킵니다. 뒤로 단추 표시 유형은 *[Systemnavigationmanager. AppViewBackButtonVisibility](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)* 에 의해 제어 됩니다.
+**뒤로 단추:** 누를 때 *[요청](/uwp/api/Windows.UI.Core.SystemNavigationManager)* 된 이벤트를 발생 시킵니다. 뒤로 단추 표시 유형은 *[Systemnavigationmanager. AppViewBackButtonVisibility](/uwp/api/Windows.UI.Core.SystemNavigationManager)* 에 의해 제어 됩니다.
 
 ![2D 앱 보기의 앱 바 UI](images/12697297-10104100857470613-1470416918759008487-o-500px.jpg)<br>
 *2D 앱 보기의 앱 바 UI*
@@ -162,7 +162,7 @@ HoloLens는 고급 깊이 센서를 사용 하 여 전 세계를 보고 사용�
 
 데스크톱 헤드셋을 사용 하면 사용자가 동작 컨트롤러를 사용 하 여 앱을 가리키고 조치를 취할 수 있습니다. 또한 사용자는 게임 패드를 사용 하 여 개체를 해당 응시로 대상으로 지정할 수 있습니다.
 
-Windows는 UWP 앱에 대해 이러한 복잡성을 모두 처리 하 고, [응시](../../design/gaze-and-commit.md), 제스처, 음성 및 동작 컨트롤러 입력을 입력 메커니즘을 추상화 하는 [포인터 이벤트](https://msdn.microsoft.com/library/windows/apps/mt404610#pointer_events) 로 변환 합니다. 예를 들어 사용자가 손 모양으로 마우스를 이동 하거나 이동 컨트롤러에서 Select 트리거를 끌어올 수 있지만, 2D 응용 프로그램은 입력의 출처를 알 필요가 없습니다. 즉, 터치 스크린에서와 같이 2D touch press만 표시 됩니다.
+Windows는 UWP 앱에 대해 이러한 복잡성을 모두 처리 하 고, [응시](../../design/gaze-and-commit.md), 제스처, 음성 및 동작 컨트롤러 입력을 입력 메커니즘을 추상화 하는 [포인터 이벤트](/windows/uwp/design/input/handle-pointer-input#pointer_events) 로 변환 합니다. 예를 들어 사용자가 손 모양으로 마우스를 이동 하거나 이동 컨트롤러에서 Select 트리거를 끌어올 수 있지만, 2D 응용 프로그램은 입력의 출처를 알 필요가 없습니다. 즉, 터치 스크린에서와 같이 2D touch press만 표시 됩니다.
 
 UWP 앱을 HoloLens로 가져올 때 입력에 대해 알고 있어야 하는 개략적인 개념/시나리오는 다음과 같습니다.
 * [응시](../../design/gaze-and-commit.md) 는 호버 이벤트로 바뀌고,이 이벤트는 예기치 않게 메뉴, flyouts 또는 기타 사용자 인터페이스 요소를 앱 주위에 gazing 하 여 팝업 할 수 있습니다.

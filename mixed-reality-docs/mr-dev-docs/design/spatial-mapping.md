@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 공간 매핑, HoloLens, 혼합 현실, 표면 재구성, 메시, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 장면 이해, 세계 메시, 폐색, 물리, 탐색, 표면 관찰자, 렌더링, 메시 처리
-ms.openlocfilehash: 4305a291a2a83f4425c5a80d25dd8145a7033492
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 1c41706abc0a393e8530b38be83fed49ed3e20a6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848206"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583276"
 ---
 # <a name="spatial-mapping"></a>공간 매핑
 
@@ -32,7 +32,7 @@ ms.locfileid: "97848206"
     </colgroup>
     <tr>
         <td><strong>기능</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens(1세대)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
     </tr>
@@ -78,7 +78,7 @@ HoloLens 2의 경우 [장면 이해 SDK](../develop/platform-capabilities-and-ap
 
 ## <a name="what-influences-spatial-mapping-quality"></a>공간 매핑 품질에 영향을 주는 것은 무엇 인가요?
 
-[여기](../environment-considerations-for-hololens.md)에서 자세히 설명 하는 몇 가지 요소는 이러한 오류의 빈도 및 심각도에 영향을 줄 수 있습니다.  그러나 공간 매핑 데이터에 오류가 있는 경우에도 사용자가 목표를 달성할 수 있도록 응용 프로그램을 디자인 해야 합니다.
+[여기](/hololens/hololens-environment-considerations)에서 자세히 설명 하는 몇 가지 요소는 이러한 오류의 빈도 및 심각도에 영향을 줄 수 있습니다.  그러나 공간 매핑 데이터에 오류가 있는 경우에도 사용자가 목표를 달성할 수 있도록 응용 프로그램을 디자인 해야 합니다.
 
 ## <a name="common-usage-scenarios"></a>일반 시나리오
 
@@ -209,13 +209,13 @@ Surface 관찰자가 제공 하는 ' 표면 변화 ' 이벤트를 해석할 때 
    * 공간 메시는 3D 음악가에서 만들 수 있는 메시의 종류와는 다르다는 점입니다. 삼각형 토폴로지는 사람이 만든 토폴로지에서는 ' 정리 ' 되지 않으며 메시는 [다양 한 오류를 발생](spatial-mapping.md#what-influences-spatial-mapping-quality)시킬 수 있습니다.
    * 보기 편 visual 미적을 만들려면 몇 가지 [메시 처리](spatial-mapping.md#mesh-processing)(예: 구멍 또는 부드러운 표면 법선 채우기)를 수행 하는 것이 좋습니다. 메시 토폴로지 및 법선을 직접 시각화 하는 대신 셰이더를 사용 하 여 삽화에서 디자인 한 질감을 망상에 프로젝션 할 수도 있습니다.
 * 실제 세계 표면 뒤의 occluding holograms
-   * 공간 표면은 깊이 전용 패스에서 렌더링 될 수 있으며이는 [깊이 버퍼](https://msdn.microsoft.com/library/windows/desktop/bb219616(v=vs.85).aspx) 에만 영향을 주며 색 렌더링 대상에는 영향을 주지 않습니다.
+   * 공간 표면은 깊이 전용 패스에서 렌더링 될 수 있으며이는 [깊이 버퍼](/windows/win32/direct3d9/depth-buffers) 에만 영향을 주며 색 렌더링 대상에는 영향을 주지 않습니다.
    * 이렇게 하면 prime는 깊이 버퍼를 려 공간 표면 뒤에 holograms 렌더링 합니다. Holograms의 정확한 폐색은 실제로 사용자의 실제 공간 내에 존재 하는 의미를 향상 시킵니다.
-   * 깊이 전용 렌더링을 사용 하려면 모든 색 렌더링 대상에 대해 blend 상태를 업데이트 하 여 [RenderTargetWriteMask](https://msdn.microsoft.com/library/windows/desktop/hh404492(v=vs.85).aspx) 을 0으로 설정 합니다.
+   * 깊이 전용 렌더링을 사용 하려면 모든 색 렌더링 대상에 대해 blend 상태를 업데이트 하 여 [RenderTargetWriteMask](/windows/win32/api/d3d11_1/ns-d3d11_1-d3d11_render_target_blend_desc1) 을 0으로 설정 합니다.
 * 실제 표면에의 한 holograms 폐색의 모양 수정
-   * 일반적으로 렌더링 된 기 하 도형은 폐색 때 숨겨집니다. 이렇게 하려면 [깊이 스텐실 상태](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx) 에서 깊이 함수를 "작거나 같음"으로 설정 합니다. 이렇게 하면 이전에 렌더링 된 모든 기 하 도형 보다 카메라에 **가까이** 있는 경우에만 기 하 도형을 볼 수 있습니다.
+   * 일반적으로 렌더링 된 기 하 도형은 폐색 때 숨겨집니다. 이렇게 하려면 [깊이 스텐실 상태](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc) 에서 깊이 함수를 "작거나 같음"으로 설정 합니다. 이렇게 하면 이전에 렌더링 된 모든 기 하 도형 보다 카메라에 **가까이** 있는 경우에만 기 하 도형을 볼 수 있습니다.
    * 그러나 폐색 경우에도 특정 기 하 도형을 표시 하 고 사용자에 게 시각적 피드백을 제공 하는 방법으로 폐색 때 모양을 수정 하는 것이 유용할 수 있습니다. 예를 들어 응용 프로그램에서 사용자에 게 개체의 위치를 표시 하는 동시에 실제 화면 뒤에 있는 것 처럼 명확 하 게 표시할 수 있습니다.
-   * 이렇게 하려면 원하는 ' 폐색 ' 모양을 만드는 다른 셰이더를 사용 하 여 기 하 도형을 두 번째로 렌더링 합니다. 기 하 도형을 두 번째로 렌더링 하기 전에 [깊이 스텐실 상태](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx)를 두 번 변경 해야 합니다. 먼저, 이전에 렌더링 된 모든 기 하 도형 보다 카메라에서 **추가** 된 경우에만 기 하 도형을 볼 수 있도록 깊이 함수를 "크거나 같음"으로 설정 합니다. 두 번째로, 깊이 버퍼가 수정 되지 않도록 DepthWriteMask를 0으로 설정 합니다. 깊이 버퍼는 카메라와 **가장 가까운** 기 하 도형의 깊이를 계속 나타냅니다.
+   * 이렇게 하려면 원하는 ' 폐색 ' 모양을 만드는 다른 셰이더를 사용 하 여 기 하 도형을 두 번째로 렌더링 합니다. 기 하 도형을 두 번째로 렌더링 하기 전에 [깊이 스텐실 상태](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc)를 두 번 변경 해야 합니다. 먼저, 이전에 렌더링 된 모든 기 하 도형 보다 카메라에서 **추가** 된 경우에만 기 하 도형을 볼 수 있도록 깊이 함수를 "크거나 같음"으로 설정 합니다. 두 번째로, 깊이 버퍼가 수정 되지 않도록 DepthWriteMask를 0으로 설정 합니다. 깊이 버퍼는 카메라와 **가장 가까운** 기 하 도형의 깊이를 계속 나타냅니다.
 
 공간 매핑 메시를 렌더링할 때 [성능은](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) 중요 한 문제입니다. 다음은 공간 매핑 메시 렌더링과 관련 된 몇 가지 렌더링 성능 기술입니다.
 * 삼각형 밀도 조정
@@ -227,11 +227,11 @@ Surface 관찰자가 제공 하는 ' 표면 변화 ' 이벤트를 해석할 때 
    * 고르기는 메시 마다 수행 되 고 공간 표면은 클 수 있으므로 공간 표면이 클 수 있습니다. 각 공간 표면 메시를 작은 청크로 나누면 더 효율적인 고르기 (이 경우에는 더 적은 수의 스크린 된 삼각형이 렌더링 됨)가 생성 될 수 있습니다. 그러나 다음과 같은 단점이 있습니다. 메시가 많을 수록 더 많은 그리기 호출을 수행 해야 하므로 CPU 비용이 늘어날 수 있습니다. 극단적인 경우에는 대/소문자 고르기 계산 자체에서 CPU 비용이 측정 될 수도 있습니다.
 * 렌더링 순서 조정
    * 공간 표면은이를 둘러싼 사용자의 전체 환경을 나타내므로 공간 표면은 클 수 있습니다. GPU의 픽셀 처리 비용은 특히 표시 되는 기 하 도형 (공간 서피스와 기타 holograms 모두 포함)의 계층이 둘 이상 있는 경우에 매우 높을 수 있습니다. 이 경우 사용자에 게 가장 가까운 계층은 모든 계층을 occluding 하 게 되므로 더 멀리 떨어져 있는 계층을 렌더링 하는 데 걸린 GPU 시간은 낭비 됩니다.
-   * GPU에서 이러한 중복 작업을 줄이기 위해 불투명 표면을 앞에서 뒤로 순서로 렌더링 하는 데 도움이 됩니다. ' 불투명 '은 [깊이 스텐실 상태](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx)에서 DepthWriteMask가 1로 설정 된 표면을 의미 합니다. 가장 가까운 서피스가 렌더링 되 면 GPU의 픽셀 프로세서에서 더 멀리 떨어져 있는 표면을 효율적으로 건너뛰도록 깊이 버퍼를 소수 대로 만듭니다.
+   * GPU에서 이러한 중복 작업을 줄이기 위해 불투명 표면을 앞에서 뒤로 순서로 렌더링 하는 데 도움이 됩니다. ' 불투명 '은 [깊이 스텐실 상태](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc)에서 DepthWriteMask가 1로 설정 된 표면을 의미 합니다. 가장 가까운 서피스가 렌더링 되 면 GPU의 픽셀 프로세서에서 더 멀리 떨어져 있는 표면을 효율적으로 건너뛰도록 깊이 버퍼를 소수 대로 만듭니다.
 
 ## <a name="mesh-processing"></a>메시 처리
 
-응용 프로그램은 요구 사항에 맞게 공간 노출 메시에서 [다양 한 작업](spatial-mapping.md#mesh-processing) 을 수행 하려고 할 수 있습니다. 각 공간 표면 메시와 함께 제공 되는 인덱스 및 꼭 짓 점 데이터는 모든 최신 렌더링 Api에서 삼각형 메시를 렌더링 하는 데 사용 되는 [꼭 짓 점 및 인덱스 버퍼](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) 와 동일한 익숙한 레이아웃을 사용 합니다. 그러나 기억해 야 할 한 가지 중요 한 사실은 공간 매핑 삼각형에 **시계 반대 방향 굴곡 순서가** 있다는 것입니다. 각 삼각형은 메시의 인덱스 버퍼에서 3 개의 꼭 짓 점 인덱스로 표시 되 고, 이러한 인덱스는 삼각형이 **front** 에서 표시 되는 경우 **시계 방향** 으로 삼각형의 꼭 짓 점을 식별 합니다. 공간 표면 망상의 전면 (또는 외부)은 실제 세계 표면의 정면 (표시)와 일치 하는 것으로 간주 됩니다.
+응용 프로그램은 요구 사항에 맞게 공간 노출 메시에서 [다양 한 작업](spatial-mapping.md#mesh-processing) 을 수행 하려고 할 수 있습니다. 각 공간 표면 메시와 함께 제공 되는 인덱스 및 꼭 짓 점 데이터는 모든 최신 렌더링 Api에서 삼각형 메시를 렌더링 하는 데 사용 되는 [꼭 짓 점 및 인덱스 버퍼](/windows/win32/direct3d9/rendering-from-vertex-and-index-buffers) 와 동일한 익숙한 레이아웃을 사용 합니다. 그러나 기억해 야 할 한 가지 중요 한 사실은 공간 매핑 삼각형에 **시계 반대 방향 굴곡 순서가** 있다는 것입니다. 각 삼각형은 메시의 인덱스 버퍼에서 3 개의 꼭 짓 점 인덱스로 표시 되 고, 이러한 인덱스는 삼각형이 **front** 에서 표시 되는 경우 **시계 방향** 으로 삼각형의 꼭 짓 점을 식별 합니다. 공간 표면 망상의 전면 (또는 외부)은 실제 세계 표면의 정면 (표시)와 일치 하는 것으로 간주 됩니다.
 
 Surface 관찰자가 제공 하는 coarsest 삼각형 밀도가 아직 불충분 않은 경우 응용 프로그램은 메시 단순화만 수행 해야 합니다 .이 작업은 계산 비용이 많이 들고 런타임에 의해 제공 되는 다양 한 세부 정보 수준을 생성 하는 데 이미 수행 됩니다.
 
@@ -292,7 +292,7 @@ Surface 관찰자가 제공 하는 coarsest 삼각형 밀도가 아직 불충분
    * 응용 프로그램을 사용 하려면 사용자 뒤의 모든 화면을 포함 하 여 현재 대화방의 모든 화면을 검색 해야 할 수 있습니다.
    * 예를 들어 게임에서 사용자가 Gulliver의 역할을 할 수 있습니다 .이는 모든 방향에서 가장 적은 수의 Lilliputians에 대 한 공 성함입니다.
    * 이러한 경우 응용 프로그램은 현재 방에서 이미 검색 된 표면의 수를 확인 하 고, 사용자의 응시를 통해 상당한 격차를 채우도록 해야 합니다.
-   * 이 프로세스의 핵심은 아직 검색 되지 않은 화면을 사용자에 게 명확 하 게 표시 하는 시각적 피드백을 제공 하는 것입니다. 예를 들어, 응용 프로그램은 [거리 기반 안개](https://msdn.microsoft.com/library/windows/desktop/bb173401%28v=vs.85%29.aspx) 를 사용 하 여 공간 매핑 화면에서 다루지 않는 영역을 시각적으로 강조 표시할 수 있습니다.
+   * 이 프로세스의 핵심은 아직 검색 되지 않은 화면을 사용자에 게 명확 하 게 표시 하는 시각적 피드백을 제공 하는 것입니다. 예를 들어, 응용 프로그램은 [거리 기반 안개](/windows/win32/direct3d9/fog-formulas) 를 사용 하 여 공간 매핑 화면에서 다루지 않는 영역을 시각적으로 강조 표시할 수 있습니다.
 
 * **환경에 대 한 초기 스냅숏 만들기**
    * 응용 프로그램은 초기 ' 스냅숏 '을 수행한 후 환경의 모든 변경 내용을 무시 하려고 할 수 있습니다.
@@ -373,7 +373,7 @@ Surface 관찰자가 제공 하는 coarsest 삼각형 밀도가 아직 불충분
 * 표면 메시를 올바르게 지향 하려면 각 GameObject가 활성 상태 여야 메시를 생성 하기 위해 SurfaceObserver에 전송 해야 합니다. 그렇지 않으면 메시는 공간에 표시 되지만 이상한 각도로 회전 됩니다.
 * SurfaceObserver와 통신 하는 스크립트를 실행 하는 GameObject를 원본으로 설정 해야 합니다. 그렇지 않으면 사용자가 만들고 SurfaceObserver에 전송 하 여 메시를 생성 하는 모든 Gameobject 부모 게임 개체의 오프셋과 동일한 오프셋을 갖게 됩니다. 이렇게 하면 메시를 몇 미터 떨어진 상태로 표시 하 여 진행 상황을 디버그 하기가 어려울 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 * [좌표계](coordinate-systems.md)
 * [DirectX의 공간 매핑](../develop/native/spatial-mapping-in-directx.md)

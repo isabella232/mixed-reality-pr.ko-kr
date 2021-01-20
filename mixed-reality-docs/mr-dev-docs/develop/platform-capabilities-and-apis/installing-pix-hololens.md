@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
 keywords: HoloLens, HoloLens 2, PIX, 캡처, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 598a6b891798be7059eae2eff578c6bbbae442f6
-ms.sourcegitcommit: 9d79aaa313f003dd42d5610d458031890776ee8e
+ms.openlocfilehash: 29cb741cd986fbb98dabb1faf2051450fd0286c3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97822927"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583095"
 ---
 # <a name="installing-pix-for-hololens-2"></a>HoloLens 2용 PIX 설치
 
@@ -21,7 +21,7 @@ ms.locfileid: "97822927"
 
 1. 호스트 PC에서 최신 PIX [릴리스]( https://devblogs.microsoft.com/pix/download) 를 잡고 USB 케이블을 통해 HoloLens 2를 PC에 연결 합니다.
 
-2. HoloLens 2가 [Windows 참가자 빌드](https://insider.windows.com) 에 있거나 PIX를 중단 하는 구성을 포함 하는 경우  [장치를 경감 하기 위해](https://docs.microsoft.com/hololens/hololens-recovery) 하 여 모든 데이터를 지웁니다.
+2. HoloLens 2가 [Windows 참가자 빌드](https://insider.windows.com) 에 있거나 PIX를 중단 하는 구성을 포함 하는 경우  [장치를 경감 하기 위해](/hololens/hololens-recovery) 하 여 모든 데이터를 지웁니다.
 
 3. **개발자 모드** 및 **장치 포털** 을 사용 하도록 설정 합니다.
 
@@ -46,7 +46,7 @@ ms.locfileid: "97822927"
 * 장치를 계속 연결 하 고, 사용자가 로그인 한 상태에서 Visual Studio를 시작 합니다.
 
 > [!IMPORTANT]
-> 장치가 대기 모드 또는 절전 모드에 있지 않은지 확인 합니다. 이 단계에서 문제가 발생 하는 경우 [Windows 장치 포털 지침](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)을 참조 하세요.
+> 장치가 대기 모드 또는 절전 모드에 있지 않은지 확인 합니다. 이 단계에서 문제가 발생 하는 경우 [Windows 장치 포털 지침](./using-the-windows-device-portal.md)을 참조 하세요.
 
 ## <a name="preparing-for-deployment"></a>배포 준비
 
@@ -114,5 +114,5 @@ ms.locfileid: "97822927"
 
 이제 PIX를 사용할 준비가 되었습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 * [PIX 홈페이지](https://devblogs.microsoft.com/pix)

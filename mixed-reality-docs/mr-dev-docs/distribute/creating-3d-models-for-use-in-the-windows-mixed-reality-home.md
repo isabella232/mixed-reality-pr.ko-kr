@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 3D, 모델링, 모델링 지침, 자산 요구 사항, 제작 지침, 시작 관리자, 3D 시작 관리자, 질감, 재질, 복잡도, 삼각형, 메시, 다각형, polycount, 제한, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 17014e3deaaa161dd7949a55679b916e872ad5a7
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: c5447661bdbe6aeb59a3e7a524863d68b717ee0e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757790"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583813"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>집에서 사용할 3D 모델 만들기
 
@@ -101,7 +101,7 @@ Windows Mixed Reality 홈에서는 64 개 이상의 노드가 있는 모델이 �
 Windows Mixed Reality 홈은 사용자 지정 확장 프로그램을 사용 하 여 정의 된 핵심 글 트 Tf 사양 위에 일련의 최적화를 제공 합니다. 이러한 최적화는 Windows 버전 <= 1709에 필요 하며 최신 버전의 Windows에서 권장 됩니다. [GitHub에서 제공 되는 Windows Mixed Reality 자산 변환기](https://github.com/Microsoft/glTF-Toolkit/releases)를 사용 하 여 모든 글 2.0 모델을 쉽게 최적화할 수 있습니다. 이 도구는 아래 지정 된 대로 올바른 질감 압축 및 최적화를 수행 합니다. 일반적인 사용을 위해 WindowsMRAssetConverter를 사용 하는 것이 좋습니다. 그러나 환경을 보다 세부적으로 제어 해야 하 고 사용자 고유의 최적화 파이프라인을 빌드 하려는 경우 아래 상세 사양을 참조할 수 있습니다.  
 
 > [!NOTE]
-> 정확한 모델 제한의 가능성을 명확 하 게 확인 하려면 Dynamics 365 응용 프로그램에서 사용할 수 있는 [3d 모델 최적화](https://docs.microsoft.com/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) 문서를 참조 하세요.
+> 정확한 모델 제한의 가능성을 명확 하 게 확인 하려면 Dynamics 365 응용 프로그램에서 사용할 수 있는 [3d 모델 최적화](/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) 문서를 참조 하세요.
 
 ### <a name="materials"></a>재질
 
@@ -192,7 +192,7 @@ LODs는 각 LOD에 설정 된 화면 범위 값으로 구동 되는 시스템에
 ## <a name="animation-guidelines"></a>애니메이션 지침
 
 > [!NOTE]
-> 이 기능은 [Windows 10 4 월 2018 업데이트](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)의 일부로 추가 되었습니다. 이전 버전의 Windows에서는 이러한 애니메이션이 재생 되지 않지만이 문서의 지침에 따라 작성 된 경우에도 로드 됩니다.  
+> 이 기능은 [Windows 10 4 월 2018 업데이트](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)의 일부로 추가 되었습니다. 이전 버전의 Windows에서는 이러한 애니메이션이 재생 되지 않지만이 문서의 지침에 따라 작성 된 경우에도 로드 됩니다.  
 
 혼합 현실 홈은 HoloLens 및 몰입 형 (VR) 헤드셋에서 애니메이션 된 인 글 하는 개체를 지원 합니다. 모델에 대 한 애니메이션을 트리거하려면 애니메이션 맵 확장을 지 원하는 Tf 형식으로 사용 해야 합니다. 이 확장을 사용 하면 전 세계 사용자의 현재 상태를 기반으로 하 여 인 사이트에서 애니메이션을 트리거할 수 있습니다. 예를 들어 사용자가 개체에 가까이 있거나 보고 있는 동안 애니메이션을 트리거할 수 있습니다. Tf 개체에 애니메이션이 있지만 트리거를 정의 하지 않으면 애니메이션이 재생 되지 않습니다. 다음 섹션에서는 이러한 트리거를 애니메이션 된 모든 개체에 추가 하는 한 가지 워크플로를 설명 합니다.
 
@@ -247,7 +247,7 @@ LODs는 각 LOD에 설정 된 화면 범위 값으로 구동 되는 시스템에
 
 |기능|최대|
 |-----|-----|
-|기간|20분|
+|Duration|20분|
 |키프레임에서|36000| 
 |모핑 대상 꼭 짓 점|8192|
 
@@ -255,7 +255,7 @@ LODs는 각 LOD에 설정 된 화면 범위 값으로 구동 되는 시스템에
 
 Windows MR은 음수 눈금을 사용한 대칭 이동 기를 지원 하지 않습니다. 배율이 음수인 기 하 도형은 시각적 아티팩트가 될 가능성이 높습니다.
 
-Windows MR에서 렌더링 되는 장면 특성을 사용 하 여 글 글 Tf 자산은 기본 장면을 가리켜야 합니다. 또한 windows [10 4 월 2018 업데이트](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) 를 수행 하기 전에 Windows MR 글 tf loader는 접근자를 **요구** 합니다.
+Windows MR에서 렌더링 되는 장면 특성을 사용 하 여 글 글 Tf 자산은 기본 장면을 가리켜야 합니다. 또한 windows [10 4 월 2018 업데이트](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) 를 수행 하기 전에 Windows MR 글 tf loader는 접근자를 **요구** 합니다.
 * Min 및 max 값이 있어야 합니다.
 * 스칼라 형식은 componentType UNSIGNED_SHORT (5123) 또는 UNSIGNED_INT (5125) 여야 합니다.
 * VEC2 및 VEC3 형식은 componentType FLOAT 여야 합니다 (5126).
@@ -289,7 +289,7 @@ Windows MR은 기본 모드 선 및 요소를 지원 하지 않습니다.
 * [HoloLens 혼합 현실 질감 압축 확장 사양](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_normalRoughnessMetallic/README.md)
 * [Microsoft DDS 질감 및 Tf 확장 사양](https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/MSFT_texture_dds)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 * [3D 앱 시작 관리자(UWP 앱) 구현](implementing-3d-app-launchers.md)
 * [3D 앱 시작 관리자(Win32 앱) 구현](implementing-3d-app-launchers-win32.md)

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, holograms, 디자인, 상호 작용, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 확대 된 현실
-ms.openlocfilehash: b390910fcece8e6263d19f52c80b784efb2561f6
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: cc6b4a4838e7a275b1ef3a45e54c4b894a04b9c2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757561"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583342"
 ---
 # <a name="what-is-a-hologram"></a>홀로그램이란?
 
@@ -33,7 +33,7 @@ HoloLens를 사용 하면 실제 개체와 같이 전 세계에 표시 되는 �
     </colgroup>
     <tr>
         <td><strong>기능</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens(1세대)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
     </tr>
@@ -126,8 +126,7 @@ Holograms는 실제 개체에 의해 폐색 수도 있습니다. 예를 들어, 
 
 ## <a name="next-discovery-checkpoint"></a>다음 검색 검사점
 
-준비된 [검색 과정](get-started-with-mr.md)을 수행하는 경우 Mixed Reality에 대한 기본 사항을 살펴보게 됩니다. 여기에서 다음 기본 항목으로 진행할 수 있습니다. 
+준비된 [검색 과정](get-started-with-mr.md)을 수행하는 경우 Mixed Reality에 대한 기본 사항을 살펴보게 됩니다. 이제 다음 기본 항목으로 계속 진행할 수 있습니다. 
 
 > [!div class="nextstepaction"]
 > [디자인 프로세스 확장](case-study-expanding-the-design-process-for-mixed-reality.md)
-

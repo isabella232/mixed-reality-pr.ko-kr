@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, 로고, 아이콘, 모델링, 시작 관리자, 3D 시작 관리자, 타일, 라이브 큐브, 딥 링크, secondarytile, 보조 타일, UWP, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, XML, 경계 상자, unity
-ms.openlocfilehash: 40a68d0835ec8fb92d6417650700f41e8a31aab6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7a0b73a0b3638c1aa2c9cbffacd548fb461589ea
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009683"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582969"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>3D 앱 시작 관리자(UWP 앱) 구현
 
@@ -118,7 +118,7 @@ Unity를 사용 하는 경우 응용 프로그램 매니페스트를 편집 하�
 >[!IMPORTANT]
 >3D 딥 링크 (secondaryTiles)는 2D UWP 앱 에서만 작동 합니다. 그러나 Windows Mixed Reality 홈에서 전용 앱을 시작 하는 [3d 앱 시작 관리자](implementing-3d-app-launchers.md) 를 만들 수 있습니다.
 
-Windows 시작 메뉴의 2d [보조 타일과](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) 마찬가지로, 응용 프로그램의 3d 모델을 [windows mixed reality 홈](../discover/navigating-the-windows-mixed-reality-home.md) 에 포함 하는 기능을 추가 하 여 windows mixed reality에 2d 응용 프로그램을 향상 시킬 수 있습니다. 예를 들어 360 ° photo viewer 앱에 직접 연결 되는 360 ° 인화지를 만들거나, 사용자가 저자에 대 한 세부 정보 페이지를 여는 자산 컬렉션에서 3D 콘텐츠를 넣을 수 있습니다. 3D 콘텐츠를 사용 하 여 2D 응용 프로그램의 기능을 확장 하는 몇 가지 방법입니다.
+Windows 시작 메뉴의 2d [보조 타일과](/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) 마찬가지로, 응용 프로그램의 3d 모델을 [windows mixed reality 홈](../discover/navigating-the-windows-mixed-reality-home.md) 에 포함 하는 기능을 추가 하 여 windows mixed reality에 2d 응용 프로그램을 향상 시킬 수 있습니다. 예를 들어 360 ° photo viewer 앱에 직접 연결 되는 360 ° 인화지를 만들거나, 사용자가 저자에 대 한 세부 정보 페이지를 여는 자산 컬렉션에서 3D 콘텐츠를 넣을 수 있습니다. 3D 콘텐츠를 사용 하 여 2D 응용 프로그램의 기능을 확장 하는 몇 가지 방법입니다.
 
 ### <a name="creating-a-3d-secondarytile"></a>3D "secondaryTile" 만들기
 
@@ -191,7 +191,7 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 
 ### <a name="checking-that-the-user-is-in-windows-mixed-reality"></a>사용자가 Windows Mixed Reality에 있는지 확인 하는 중
 
-3D 딥 링크 (secondaryTiles)는 보기가 Windows Mixed Reality 헤드셋에 표시 되는 동안에만 만들 수 있습니다. Windows Mixed Reality 헤드셋에 보기가 표시 되지 않는 경우 진입점을 숨기 거 나 오류 메시지를 표시 하 여이를 정상적으로 처리 하는 것이 좋습니다. [IsCurrentViewPresentedOnHolographic ()](https://docs.microsoft.com/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_)를 쿼리하여이를 확인할 수 있습니다.
+3D 딥 링크 (secondaryTiles)는 보기가 Windows Mixed Reality 헤드셋에 표시 되는 동안에만 만들 수 있습니다. Windows Mixed Reality 헤드셋에 보기가 표시 되지 않는 경우 진입점을 숨기 거 나 오류 메시지를 표시 하 여이를 정상적으로 처리 하는 것이 좋습니다. [IsCurrentViewPresentedOnHolographic ()](/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_)를 쿼리하여이를 확인할 수 있습니다.
 
 ## <a name="tile-notifications"></a>타일 알림
 
@@ -201,9 +201,9 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 * 정기적 폴링
 * 예약 된 알림
 
-다른 타일 기능 및 특성과 2D 타일에 사용 되는 방법에 대 한 자세한 내용은 [UWP 앱에 대 한 타일 설명서](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles)를 참조 하세요.
+다른 타일 기능 및 특성과 2D 타일에 사용 되는 방법에 대 한 자세한 내용은 [UWP 앱에 대 한 타일 설명서](/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * 3D 앱 시작 관리자를 포함 하는 [혼합 현실 모델 샘플](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) 입니다.
 * [3D 앱 시작 관리자 디자인 지침](3d-app-launcher-design-guidance.md)
