@@ -3,12 +3,12 @@ title: Windows Mixed Reality에서 게임과 앱 사용
 description: 몰입 형 및 2D 앱과 게임을 시작 하는 방법, 바탕 화면을 확인 하 고 WebVR 및 SteamVR 콘텐츠를 경험해 보세요.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 앱, 게임, 데스크톱, SteamVR, WebVR, 스트림
-ms.openlocfilehash: 24d8e0fcf93b40e21484c9b1dddd1adaaf75fb00
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: e277ede1af3e38d7f1525412431d9006092f93b6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725854"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581370"
 ---
 # <a name="using-games-and-apps-in-windows-mixed-reality"></a>Windows Mixed Reality에서 게임과 앱 사용
 
@@ -75,9 +75,9 @@ Windows Mixed Reality는 Windows에 불과합니다. 즉 혼합 현실에 맞게
 
 SteamVR에 대 한 windows Mixed Reality를 사용 하면 사용자가 Windows Mixed Reality 모던 헤드셋에서 SteamVR 환경을 실행할 수 있습니다. SteamVR에 대 한 Windows Mixed Reality를 설치한 후 데스크톱 또는 스트림 라이브러리에서 즐겨 찾는 SteamVR 응용 프로그램을 시작 하 고 해당 Windows 헤드셋에서 직접 재생할 수 있습니다.
 
-시작 하려면 [Windows Mixed Reality의 SteamVR 설치 지침](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)을 따르세요.
+시작 하려면 [Windows Mixed Reality의 SteamVR 설치 지침](./using-steamvr-with-windows-mixed-reality.md)을 따르세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 Windows Mixed Reality의 작동 방식에 대해 자세히 알아보려면 다음을 참조 하세요.
 * [혼합 현실 홈](your-mixed-reality-home.md)

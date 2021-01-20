@@ -6,32 +6,32 @@ ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, 동기화, 공간 앵커, 전송, 여럿이, 보기, 시나리오, 연습, 샘플 코드, 전송, 로컬 앵커 전송, 앵커 내보내기, 앵커 가져오기
-ms.openlocfilehash: 5007220f480a3093864502e624737e9707bd3952
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 5d539338a25657441ee07acac38a4edd6cd86e58
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009653"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582800"
 ---
 # <a name="local-anchor-transfers-in-directx"></a>DirectX의 로컬 앵커 전송
 
-<a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure 공간 앵커</a>를 사용할 수 없는 경우 로컬 앵커 전송에서는 한 hololens 장치에서 두 번째 hololens 장치에서 가져올 앵커를 내보낼 수 있습니다.
+<a href="/azure/spatial-anchors" target="_blank">Azure 공간 앵커</a>를 사용할 수 없는 경우 로컬 앵커 전송에서는 한 hololens 장치에서 두 번째 hololens 장치에서 가져올 앵커를 내보낼 수 있습니다.
 
 >[!NOTE]
->로컬 앵커 전송은 <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure 공간 앵커</a>보다 더 강력 하지 않은 앵커 회수를 제공 하며, IOS 및 Android 장치는이 방식에서 지원 되지 않습니다.
+>로컬 앵커 전송은 <a href="/azure/spatial-anchors" target="_blank">Azure 공간 앵커</a>보다 더 강력 하지 않은 앵커 회수를 제공 하며, IOS 및 Android 장치는이 방식에서 지원 되지 않습니다.
 
 >[!NOTE]
 >이 문서의 코드 조각은 현재 c + + [holographic 프로젝트 템플릿에](../develop/native/creating-a-holographic-directx-project.md)사용 되는 c + 17-So-far working 호환 c + +/winrt 대신 c + +/cx를 사용 하는 방법을 보여 줍니다.  이 개념은 c + +/WinRT 프로젝트와 동일 하지만 코드를 변환 해야 합니다.
 
 ## <a name="transferring-spatial-anchors"></a>공간 앵커 전송
 
-[SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx)를 사용 하 여 Windows Mixed Reality 장치 간에 공간 앵커를 전송할 수 있습니다. 이 API를 사용 하면 전 세계의 정확한 위치를 찾는 데 필요한 모든 지원 센서 데이터를 사용 하 여 앵커를 번들로 묶은 다음 해당 번들을 다른 장치에서 가져올 수 있습니다. 두 번째 장치의 앱이 해당 앵커를 가져온 후에는 각 앱이 해당 공유 공간 앵커의 좌표계를 사용 하 여 holograms를 렌더링할 수 있습니다. 그러면 실제 세계의 동일한 위치에 표시 됩니다.
+[SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager)를 사용 하 여 Windows Mixed Reality 장치 간에 공간 앵커를 전송할 수 있습니다. 이 API를 사용 하면 전 세계의 정확한 위치를 찾는 데 필요한 모든 지원 센서 데이터를 사용 하 여 앵커를 번들로 묶은 다음 해당 번들을 다른 장치에서 가져올 수 있습니다. 두 번째 장치의 앱이 해당 앵커를 가져온 후에는 각 앱이 해당 공유 공간 앵커의 좌표계를 사용 하 여 holograms를 렌더링할 수 있습니다. 그러면 실제 세계의 동일한 위치에 표시 됩니다.
 
 공간 앵커는 서로 다른 장치 유형 간에 전송할 수 없습니다. 예를 들어 HoloLens 공간 앵커는 몰입 형 헤드셋을 사용 하 여 과정이 되지 않을 수 있습니다.  전송 된 앵커도 iOS 또는 Android 장치와 호환 되지 않습니다.
 
 ## <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>SpatialPerception 기능을 사용 하도록 앱 설정
 
-앱에는 [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx)를 사용 하기 전에 SpatialPerception 기능을 사용할 수 있는 권한이 부여 되어야 합니다. 공간 앵커를 전송 하려면 해당 앵커 근처에서 시간에 따라 수집 된 센서 이미지를 공유 해야 합니다. 여기에는 중요 한 정보가 포함 될 수 있습니다.
+앱에는 [SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager)를 사용 하기 전에 SpatialPerception 기능을 사용할 수 있는 권한이 부여 되어야 합니다. 공간 앵커를 전송 하려면 해당 앵커 근처에서 시간에 따라 수집 된 센서 이미지를 공유 해야 합니다. 여기에는 중요 한 정보가 포함 될 수 있습니다.
 
 앱에 대 한 appxmanifest.xml 파일에서이 기능을 선언 합니다. 예를 들면 다음과 같습니다.
 
@@ -53,11 +53,11 @@ ms.locfileid: "98009653"
     >
 ```
 
-**참고:** 앱은 런타임에 SpatialAnchor 내보내기/가져오기 Api에 액세스할 수 있는 기능을 요청 해야 합니다. 아래 예제에서 [Requestaccessasync](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.requestaccessasync.aspx) 를 참조 하세요.
+**참고:** 앱은 런타임에 SpatialAnchor 내보내기/가져오기 Api에 액세스할 수 있는 기능을 요청 해야 합니다. 아래 예제에서 [Requestaccessasync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) 를 참조 하세요.
 
 ## <a name="serialize-anchor-data-by-exporting-it-with-the-spatialanchortransfermanager"></a>SpatialAnchorTransferManager로 내보내서 앵커 데이터를 직렬화 합니다.
 
-도우미 함수는 [SpatialAnchor](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx) 데이터를 내보내기 (직렬화) 하는 코드 샘플에 포함 되어 있습니다. 이 내보내기 API는 앵커와 함께 문자열을 연결 하는 키-값 쌍 컬렉션의 모든 앵커를 직렬화 합니다.
+도우미 함수는 [SpatialAnchor](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) 데이터를 내보내기 (직렬화) 하는 코드 샘플에 포함 되어 있습니다. 이 내보내기 API는 앵커와 함께 문자열을 연결 하는 키-값 쌍 컬렉션의 모든 앵커를 직렬화 합니다.
 
 ```
 // ExportAnchorDataAsync: Exports a byte buffer containing all of the anchors in the given collection.
@@ -274,7 +274,7 @@ return create_task(SpatialAnchorTransferManager::RequestAccessAsync()).then(
 
 ## <a name="special-considerations"></a>특별 고려 사항
 
-[TryExportAnchorsAsync](https://msdn.microsoft.com/library/windows/apps/mt592763.aspx) API를 사용 하면 여러 [SpatialAnchors](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx) 을 동일한 불투명 이진 blob으로 내보낼 수 있습니다. 그러나 단일 호출에서 단일 SpatialAnchor 또는 여러 SpatialAnchors를 내보낼지 여부에 따라 blob에 포함 되는 데이터에는 약간의 차이가 있습니다.
+[TryExportAnchorsAsync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) API를 사용 하면 여러 [SpatialAnchors](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) 을 동일한 불투명 이진 blob으로 내보낼 수 있습니다. 그러나 단일 호출에서 단일 SpatialAnchor 또는 여러 SpatialAnchors를 내보낼지 여부에 따라 blob에 포함 되는 데이터에는 약간의 차이가 있습니다.
 
 ### <a name="export-of-a-single-spatialanchor"></a>단일 SpatialAnchor 내보내기
 
@@ -672,9 +672,9 @@ void SampleAnchorTcpClient::HandleException(Exception^ exception)
 }
 ```
 
-간단하죠. 이제 네트워크를 통해 받은 앵커를 찾으려고 시도 하는 데 충분 한 정보가 있어야 합니다. 다시, 클라이언트는 앵커를 찾기 위해 공간에 대 한 충분 한 시각적 추적 데이터가 있어야 합니다. 바로 작동 하지 않는 경우 잠시 연습을 수행해 보세요. 그래도 작동 하지 않으면 서버에서 더 많은 앵커를 보내고 네트워크 통신을 사용 하 여 클라이언트에 적용 되는 것에 동의 합니다. HolographicSpatialAnchorTransferSample를 다운로드 하 고 클라이언트 및 서버 Ip를 구성 하 고 클라이언트 및 서버 HoloLens 장치에 배포 하 여이를 시험해 볼 수 있습니다.
+정말 간단하죠. 이제 네트워크를 통해 받은 앵커를 찾으려고 시도 하는 데 충분 한 정보가 있어야 합니다. 다시, 클라이언트는 앵커를 찾기 위해 공간에 대 한 충분 한 시각적 추적 데이터가 있어야 합니다. 바로 작동 하지 않는 경우 잠시 연습을 수행해 보세요. 그래도 작동 하지 않으면 서버에서 더 많은 앵커를 보내고 네트워크 통신을 사용 하 여 클라이언트에 적용 되는 것에 동의 합니다. HolographicSpatialAnchorTransferSample를 다운로드 하 고 클라이언트 및 서버 Ip를 구성 하 고 클라이언트 및 서버 HoloLens 장치에 배포 하 여이를 시험해 볼 수 있습니다.
 
-## <a name="see-also"></a>참조
-* [PPL(병렬 패턴 라이브러리)](https://msdn.microsoft.com/library/dd492418.aspx)
-* [Windows. f i f. StreamSocket](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocket.aspx)
-* [StreamSocketListener](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocketlistener.aspx)
+## <a name="see-also"></a>참고 항목
+* [PPL(병렬 패턴 라이브러리)](/cpp/parallel/concrt/parallel-patterns-library-ppl)
+* [Windows. f i f. StreamSocket](/uwp/api/Windows.Networking.Sockets.StreamSocket)
+* [StreamSocketListener](/uwp/api/Windows.Networking.Sockets.StreamSocketListener)

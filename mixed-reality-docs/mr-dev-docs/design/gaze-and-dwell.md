@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: 혼합 현실, 응시, 지속, 상호 작용, 디자인, 눈 추적, 헤드 추적, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 2daeea996251b1220ee4753567b42117fbb2126c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: aa4fceeb8875da89fd7f84c3709ff6db07fd96f4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007643"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582131"
 ---
 # <a name="gaze-and-dwell"></a>응시 및 유지
 
@@ -40,7 +40,7 @@ HoloLens를 착용하고 자동차 엔진을 수리하는 동안 참조 정보�
     </colgroup>
     <tr>
         <td><strong>입력 모델</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens(1세대)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
     </tr>
@@ -63,7 +63,7 @@ HoloLens를 착용하고 자동차 엔진을 수리하는 동안 참조 정보�
 
 ---
 
- ## <a name="see-also"></a>참조
+ ## <a name="see-also"></a>참고 항목
 
 * [시선 기반 상호 작용](eye-gaze-interaction.md)
 * [HoloLens 2의 시선 추적](eye-tracking.md)

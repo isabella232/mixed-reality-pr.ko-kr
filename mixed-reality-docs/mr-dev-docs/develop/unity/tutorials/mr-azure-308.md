@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 알림, 기능, 테이블, notification hubs, hololens, 몰입 형, vr, Windows 10, Visual Studio
-ms.openlocfilehash: 4b71968eb546cc5d7a5cd767f2ecafae102c763c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5bf6720fe7be178bf4fb15ae2b87f4ff502afe9b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679542"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581278"
 ---
 # <a name="mr-and-azure-308-cross-device-notifications"></a>MR 및 Azure 308: 디바이스 간 알림
 
@@ -26,11 +26,11 @@ ms.locfileid: "94679542"
 
 이 과정에서는 Azure Notification Hubs, Azure 테이블 및 Azure Functions를 사용 하 여 혼합 현실 응용 프로그램에 Notification Hubs 기능을 추가 하는 방법에 대해 설명 합니다.
 
-**Azure Notification Hubs** 는 개발자가 대상 및 개인 설정 된 푸시 알림을 모든 플랫폼에 보낼 수 있도록 하는 Microsoft 서비스입니다. 모두 클라우드 내에서 제공 됩니다. 이를 통해 개발자는 시나리오에 따라 최종 사용자와 통신 하거나 다양 한 응용 프로그램 간에 통신할 수 있습니다. 자세한 내용은 **Azure Notification Hubs** [페이지](https://docs.microsoft.com/azure/notification-hubs/notification-hubs-push-notification-overview)를 참조 하세요.
+**Azure Notification Hubs** 는 개발자가 대상 및 개인 설정 된 푸시 알림을 모든 플랫폼에 보낼 수 있도록 하는 Microsoft 서비스입니다. 모두 클라우드 내에서 제공 됩니다. 이를 통해 개발자는 시나리오에 따라 최종 사용자와 통신 하거나 다양 한 응용 프로그램 간에 통신할 수 있습니다. 자세한 내용은 **Azure Notification Hubs** [페이지](/azure/notification-hubs/notification-hubs-push-notification-overview)를 참조 하세요.
 
-**Azure Functions** 는 개발자가 Azure에서 작은 코드, ' 함수 '를 실행할 수 있도록 해 주는 Microsoft 서비스입니다. 이렇게 하면 다양 한 이점을 얻을 수 있는 로컬 응용 프로그램이 아닌 클라우드로 작업을 위임할 수 있습니다. **Azure Functions** 는 C \# , F \# , Node.js, Java 및 PHP를 비롯 한 몇 가지 개발 언어를 지원 합니다. 자세한 내용은 **Azure Functions** [페이지](https://docs.microsoft.com/azure/azure-functions/functions-overview)를 참조 하세요.
+**Azure Functions** 는 개발자가 Azure에서 작은 코드, ' 함수 '를 실행할 수 있도록 해 주는 Microsoft 서비스입니다. 이렇게 하면 다양 한 이점을 얻을 수 있는 로컬 응용 프로그램이 아닌 클라우드로 작업을 위임할 수 있습니다. **Azure Functions** 는 C \# , F \# , Node.js, Java 및 PHP를 비롯 한 몇 가지 개발 언어를 지원 합니다. 자세한 내용은 **Azure Functions** [페이지](/azure/azure-functions/functions-overview)를 참조 하세요.
 
-**Azure Tables** 는 개발자가 구조화 되지 않은 SQL 데이터를 클라우드에 저장 하 여 어디서 나 쉽게 액세스할 수 있도록 하는 Microsoft 클라우드 서비스입니다. 이 서비스는 스키마 boasts 디자인 하 여 필요에 따라 테이블의 진화를 허용 하므로 매우 유연 합니다. 자세한 내용은 **Azure Tables** [페이지](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview) 를 참조 하세요.
+**Azure Tables** 는 개발자가 구조화 되지 않은 SQL 데이터를 클라우드에 저장 하 여 어디서 나 쉽게 액세스할 수 있도록 하는 Microsoft 클라우드 서비스입니다. 이 서비스는 스키마 boasts 디자인 하 여 필요에 따라 테이블의 진화를 허용 하므로 매우 유연 합니다. 자세한 내용은 **Azure Tables** [페이지](/azure/cosmos-db/table-storage-overview) 를 참조 하세요.
 
 이 과정을 완료 한 후에는 다음과 같은 작업을 수행할 수 있는 혼합 현실 모던 헤드셋 응용 프로그램 및 데스크톱 PC 응용 프로그램이 포함 됩니다.
 
@@ -48,7 +48,7 @@ ms.locfileid: "94679542"
 
 <table>
 <tr>
-<th>과정</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
+<th>과정</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
 </tr><tr>
 <td> MR 및 Azure 308: 디바이스 간 알림</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -69,10 +69,10 @@ ms.locfileid: "94679542"
 - [최신 Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- 개발자 모드가 사용 하도록 설정 된 [Windows Mixed Reality 모던 (VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md) 또는 [Microsoft HoloLens](../../../hololens-hardware-details.md)
+- 개발자 모드가 사용 하도록 설정 된 [Windows Mixed Reality 모던 (VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md) 또는 [Microsoft HoloLens](/hololens/hololens1-hardware)
 - Azure 설치 및 Notification Hubs 액세스를 위한 인터넷 액세스
 
-## <a name="before-you-start"></a>시작하기 전 확인 사항
+## <a name="before-you-start"></a>시작하기 전에
 
 - 이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.)
 - Microsoft 개발자 포털 및 응용 프로그램 등록 포털의 소유자 여야 합니다. 그렇지 않으면 [2 장의](#chapter-2---retrieve-your-new-apps-credentials)앱에 액세스할 수 있는 권한이 없는 것입니다.
@@ -145,7 +145,7 @@ ms.locfileid: "94679542"
 
     4.  리소스 그룹을 선택 하거나 새 **리소스 그룹** 을 만듭니다. 리소스 그룹은 Azure 자산의 컬렉션에 대 한 청구를 모니터링 하 고, 액세스를 제어 하 고, 프로 비전 하 고, 관리 하는 방법을 제공 합니다. 단일 프로젝트와 연결 된 모든 Azure 서비스 (예: 이러한 랩)를 공용 리소스 그룹에 유지 하는 것이 좋습니다.
 
-        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹을 관리 하는 방법에 대](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)한 다음 링크를 참조 하세요. 
+        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹을 관리 하는 방법에 대](/azure/azure-resource-manager/resource-group-portal)한 다음 링크를 참조 하세요. 
 
     5.  적절 한 **구독** 을 선택 합니다.
 
@@ -212,7 +212,7 @@ Notification Hubs 서비스 인스턴스를 만든 후에는 Azure Portal로 다
 
     9.  리소스 그룹을 선택 하거나 새 **리소스 그룹** 을 만듭니다. 리소스 그룹은 Azure 자산의 컬렉션에 대 한 청구를 모니터링 하 고, 액세스를 제어 하 고, 프로 비전 하 고, 관리 하는 방법을 제공 합니다. 단일 프로젝트와 연결 된 모든 Azure 서비스 (예: 이러한 랩)를 공용 리소스 그룹에 유지 하는 것이 좋습니다.
 
-        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹을 관리 하는 방법에 대](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)한 다음 링크를 참조 하세요.
+        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹을 관리 하는 방법에 대](/azure/azure-resource-manager/resource-group-portal)한 다음 링크를 참조 하세요.
 
     10. 이 옵션을 선택 하는 경우 **가상 네트워크** 를 **사용 하지 않도록 설정** 된 상태로 둡니다.
 
@@ -253,7 +253,7 @@ Notification Hubs 서비스 인스턴스를 만든 후에는 Azure Portal로 다
 
 1.  **Visual Studio** 를 엽니다.
 
-2.  메뉴에서 클라우드 탐색기 **보기** 를 클릭  >  **Cloud Explorer** 합니다.
+2.  메뉴에서 클라우드 탐색기 **보기** 를 클릭  >  합니다.
 
     ![클라우드 탐색기 열기](images/AzureLabs-Lab8-22.png)
 
@@ -362,13 +362,13 @@ Notification Hubs 서비스 인스턴스를 만든 후에는 Azure Portal로 다
 
     4. 리소스 그룹을 선택 하거나 새 **리소스 그룹** 을 만듭니다. 리소스 그룹은 Azure 자산의 컬렉션에 대 한 청구를 모니터링 하 고, 액세스를 제어 하 고, 프로 비전 하 고, 관리 하는 방법을 제공 합니다. 단일 프로젝트와 연결 된 모든 Azure 서비스 (예: 이러한 랩)를 공용 리소스 그룹에 유지 하는 것이 좋습니다.
 
-        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹을 관리 하는 방법에 대](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)한 다음 링크를 참조 하세요.
+        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹을 관리 하는 방법에 대](/azure/azure-resource-manager/resource-group-portal)한 다음 링크를 참조 하세요.
 
     5. **OS** 의 경우 원하는 플랫폼인 Windows를 클릭 합니다.
 
     6. **호스팅 계획** 을 선택 합니다 .이 자습서는 **소비 계획** 을 사용 합니다.
 
-    7. 위치 선택 **Location** **(이전 단계에서 빌드한 저장소와 동일한 위치 선택)**
+    7. 위치 선택  **(이전 단계에서 빌드한 저장소와 동일한 위치 선택)**
 
     8. **저장소** 섹션의 경우 **이전 단계에서 만든 저장소 서비스를 선택 해야** 합니다.
 
@@ -390,7 +390,7 @@ Notification Hubs 서비스 인스턴스를 만든 후에는 Azure Portal로 다
 
     ![리소스로 이동](images/AzureLabs-Lab8-36.png)
 
-11. 함수 옆에 있는 **+** 더하기 () 아이콘 *Functions* 을 클릭 하 여 *새를 만듭니다*.
+11. 함수 옆에 있는 **+** 더하기 () 아이콘 을 클릭 하 여 *새를 만듭니다*.
 
     ![새 함수 추가](images/AzureLabs-Lab8-37.png)
 
@@ -653,7 +653,7 @@ Notification Hubs 서비스 인스턴스를 만든 후에는 Azure Portal로 다
 
     ![프로젝트 만들기](images/AzureLabs-Lab8-53.png)
 
-3.  Unity를 연 상태에서 기본 **스크립트 편집기** 가 **Visual Studio** 로 설정 되어 있는지 확인 하는 것이 좋습니다. **Edit**  >  **기본 설정** 편집으로 이동한 다음 새 창에서 **외부 도구** 로 이동 합니다. **외부 스크립트 편집기** 를 **Visual Studio 2017** 로 변경 합니다. **기본 설정** 창을 닫습니다.
+3.  Unity를 연 상태에서 기본 **스크립트 편집기** 가 **Visual Studio** 로 설정 되어 있는지 확인 하는 것이 좋습니다.   >  **기본 설정** 편집으로 이동한 다음 새 창에서 **외부 도구** 로 이동 합니다. **외부 스크립트 편집기** 를 **Visual Studio 2017** 로 변경 합니다. **기본 설정** 창을 닫습니다.
 
     ![외부 VS 도구 설정](images/AzureLabs-Lab8-54.png)
 
@@ -715,14 +715,14 @@ Notification Hubs 서비스 인스턴스를 만든 후에는 Azure Portal로 다
 
 9.  **빌드 설정** 창을 닫습니다.
 
-10. 장면 및 프로젝트 파일 저장 **File**  >  **장면/파일**  >  **저장 프로젝트** 를 저장 합니다.
+10. 장면 및 프로젝트 파일 저장   >  **장면/파일**  >  **저장 프로젝트** 를 저장 합니다.
 
     > [!IMPORTANT]
     > 이 프로젝트에 대 한 *Unity 설정* 구성 요소 (데스크톱 앱)를 건너뛰고 코드를 바로 계속 하려면 [unitypackage를 다운로드](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20308%20-%20Cross-device%20notifications/Azure-MR-308-Desktop.unitypackage)하 여 프로젝트에 [**사용자 지정 패키지로**](https://docs.unity3d.com/Manual/AssetPackages.html)가져온 다음 [9 장](#chapter-9---create-the-tabletoscene-class-in-the-desktop-unity-project)에서 계속 합니다.  스크립트 구성 요소를 추가 해야 합니다.
 
 ## <a name="chapter-8---importing-the-dlls-in-unity"></a>8 장-Unity에서 Dll 가져오기
 
-Unity에 Azure Storage를 사용 하 게 됩니다 (자체는 Azure 용 .Net SDK를 활용). 자세한 내용은 [Unity Azure Storage에 대](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity)한이 링크를 참조 하세요.
+Unity에 Azure Storage를 사용 하 게 됩니다 (자체는 Azure 용 .Net SDK를 활용). 자세한 내용은 [Unity Azure Storage에 대](/sandbox/gamedev/unity/azure-storage-unity)한이 링크를 참조 하세요.
 
 현재 Unity에는 가져온 후 플러그 인을 다시 구성 해야 하는 알려진 문제가 있습니다. 이러한 단계 (이 섹션에서는 4-7)는 버그가 해결 된 후 더 이상 필요 하지 않습니다.
 
@@ -782,7 +782,7 @@ SDK를 고유한 프로젝트로 가져오려면 GitHub에서 최신 [**unitypac
 
 이 클래스를 만들려면:
 
-1.  프로젝트 패널에 있는 **자산** 폴더를 마우스 오른쪽 단추로 클릭 하 고 **Create**  >  **폴더** 를 만듭니다. 폴더 이름을 **스크립트** 로 합니다.
+1.  프로젝트 패널에 있는 **자산** 폴더를 마우스 오른쪽 단추로 클릭 하 고   >  **폴더** 를 만듭니다. 폴더 이름을 **스크립트** 로 합니다.
 
     ![스크립트 폴더 만들기](images/AzureLabs-Lab8-66.png)
 
@@ -790,7 +790,7 @@ SDK를 고유한 프로젝트로 가져오려면 GitHub에서 최신 [**unitypac
 
 2.  위에서 만든 폴더를 두 번 클릭 하 여 엽니다.
 
-3.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 하 **Create** 고  >  **c # 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **TableToScene** 로 합니다.
+3.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 하 고  >  **c # 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **TableToScene** 로 합니다.
 
     ![새 c # 스크립트 ](images/AzureLabs-Lab8-68.png)
      ![ TableToScene 이름 바꾸기](images/AzureLabs-Lab8-69.png)
@@ -1169,7 +1169,7 @@ SDK를 고유한 프로젝트로 가져오려면 GitHub에서 최신 [**unitypac
 
     ![이름 UnityMRNotifHub](images/AzureLabs-Lab8-80.png)
 
-3.  Unity를 연 상태에서 기본 **스크립트 편집기** 가 **Visual Studio** 로 설정 되어 있는지 확인 하는 것이 좋습니다. **Edit**  >  **기본 설정** 편집으로 이동한 다음 새 창에서 **외부 도구** 로 이동 합니다. **외부 스크립트 편집기** 를 **Visual Studio 2017** 로 변경 합니다. **기본 설정** 창을 닫습니다.
+3.  Unity를 연 상태에서 기본 **스크립트 편집기** 가 **Visual Studio** 로 설정 되어 있는지 확인 하는 것이 좋습니다.   >  **기본 설정** 편집으로 이동한 다음 새 창에서 **외부 도구** 로 이동 합니다. **외부 스크립트 편집기** 를 **Visual Studio 2017** 로 변경 합니다. **기본 설정** 창을 닫습니다.
 
     ![외부 편집기를 VS로 설정](images/AzureLabs-Lab8-81.png)
 
@@ -1235,14 +1235,14 @@ SDK를 고유한 프로젝트로 가져오려면 GitHub에서 최신 [**unitypac
 
 9.  이러한 변경 작업을 수행한 후 빌드 설정 창을 닫습니다.
 
-10. 장면 및 프로젝트 파일 저장 **File**  >  **장면/파일**  >  **저장 프로젝트** 를 저장 합니다.
+10. 장면 및 프로젝트 파일 저장   >  **장면/파일**  >  **저장 프로젝트** 를 저장 합니다.
 
     > [!IMPORTANT]
     > 이 프로젝트에 대 한 *Unity 설정* 구성 요소 (혼합 현실 앱)를 건너뛰고 계속 해 서 코드를 계속 사용 하려면 [unitypackage를 다운로드](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20308%20-%20Cross-device%20notifications/Azure-MR-308-MR.unitypackage)하 여 프로젝트에 [**사용자 지정 패키지로**](https://docs.unity3d.com/Manual/AssetPackages.html)가져온 후 [14 장](#chapter-14---creating-the-tabletoscene-class-in-the-mixed-reality-unity-project)에서 계속 합니다. 스크립트 구성 요소를 추가 해야 합니다.
 
 ### <a name="chapter-13---importing-the-dlls-in-the-mixed-reality-unity-project"></a>13 장-Mixed Reality Unity 프로젝트에서 Dll 가져오기
 
-Unity 라이브러리 (Azure 용 .Net SDK 사용)에 대 한 Azure Storage를 사용 합니다. Unity를 사용 하 여 [Azure Storage를 사용 하는 방법에 대 한 링크를](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity)참조 하세요.
+Unity 라이브러리 (Azure 용 .Net SDK 사용)에 대 한 Azure Storage를 사용 합니다. Unity를 사용 하 여 [Azure Storage를 사용 하는 방법에 대 한 링크를](/sandbox/gamedev/unity/azure-storage-unity)참조 하세요.
 현재 Unity에는 가져온 후 플러그 인을 다시 구성 해야 하는 알려진 문제가 있습니다. 이러한 단계 (이 섹션에서는 4-7)는 버그가 해결 된 후 더 이상 필요 하지 않습니다.
 
 SDK를 고유한 프로젝트로 가져오려면 최신 [unitypackage](https://aka.ms/azstorage-unitysdk)를 다운로드 했는지 확인 합니다. 그런 후 다음을 수행합니다.
@@ -1623,7 +1623,7 @@ NuGet 패키지를 가져오려면:
 
 4.  로그인 한 계정과 연결 된 모든 응용 프로그램을 로드 합니다. 계정에 로그인 하지 않은 경우이 페이지 **에 로그인 할 수 있습니다** .
 
-5.  이 자습서의 시작 부분에서 만든 **스토어 앱 이름을** 찾아 선택 합니다. **다음** 을 클릭합니다.
+5.  이 자습서의 시작 부분에서 만든 **스토어 앱 이름을** 찾아 선택 합니다. 그런 후 **Next** 를 클릭합니다.
 
     ![상점 이름 찾기 및 선택](images/AzureLabs-Lab8-107.png)
 

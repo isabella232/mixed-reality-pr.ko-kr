@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6bed33ee9b41a4ee66ce4c1c579d398f0958143d
-ms.sourcegitcommit: db01faaf76bccd4f0432cf6b383fefa04ab7a085
+ms.openlocfilehash: 7d530b66596bb79a082b98e5417bd125a7c5687d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97745736"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580412"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -69,7 +69,7 @@ WinRT를 지 원하는 NuGet 패키지를 추가 해야 하는 경우에는 좀 
 </packages>
 ```
 
-이제 NuGet 또는 필수 패키지를 다운로드 하거나 NuGet [설명서](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-nuget-cli)를 참조할 수 있습니다.
+이제 NuGet 또는 필수 패키지를 다운로드 하거나 NuGet [설명서](/nuget/consume-packages/install-use-packages-nuget-cli)를 참조할 수 있습니다.
 
 YourModule.Build.cs를 열고 다음 코드를 추가 합니다.
 
@@ -533,5 +533,4 @@ Unreal에서 OpenFileDialogue을 호출 하면 .txt 파일 이름에 대 한 Hol
 
 ## <a name="summary"></a>요약 
 
-Windows와 동일한 파일 대화 상자를 사용 하 여 HoloLens 디스크에 파일을 저장 해야 하는 경우에는이 자습서를 사용 하지 않는 것이 좋습니다.  HoloLensWinrtDLL 헤더에서 추가 함수를 내보내고 Unreal에서 사용 하는 경우에도 동일한 프로세스가 적용 됩니다.  백그라운드 MTA 스레드에서 비동기 WinRT 코드를 대기 하는 DLL 코드에 특히 주의를 기울여야 합니다 .이 경우에는 Unreal 게임 스레드가 교착 상태를 방지 합니다. 
-
+Windows와 동일한 파일 대화 상자를 사용 하 여 HoloLens 디스크에 파일을 저장 해야 하는 경우에는이 자습서를 사용 하지 않는 것이 좋습니다.  HoloLensWinrtDLL 헤더에서 추가 함수를 내보내고 Unreal에서 사용 하는 경우에도 동일한 프로세스가 적용 됩니다.  백그라운드 MTA 스레드에서 비동기 WinRT 코드를 대기 하는 DLL 코드에 특히 주의를 기울여야 합니다 .이 경우에는 Unreal 게임 스레드가 교착 상태를 방지 합니다.

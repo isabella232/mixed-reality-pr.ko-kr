@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 0ef22142ac2efc3ef47ece2619d31dbeddcff8fe
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 6c33618e6d09da156bc4a4480fbecf3c0da94378
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192668"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580576"
 ---
 # <a name="project-settings"></a>[프로젝트 설정](#tab/project)
 
@@ -39,7 +39,7 @@ Unity 응용 프로그램 내에서:
 > 응용 프로그램에 스트림에서의 match와 같은 장치 관련 서비스에 대 한 종속성이 있는 경우이 단계에서 사용 하지 않도록 설정 해야 합니다. Windows에서 나중에 제공 하는 것과 동일한 서비스에 연결할 수 있습니다.
 
 ### <a name="5-setup-your-windows-mixed-reality-hardware"></a>5. Windows Mixed Reality 하드웨어 설정
-1. [모던 헤드셋 설정](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/before-you-start
+1. [모던 헤드셋 설정](/windows/mixed-reality/enthusiast-guide/before-you-start
 ) 의 단계 검토
 2. [Windows Mixed reality 시뮬레이터를 사용 하](../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) 고 [windows mixed Reality 홈을 탐색](../../../discover/navigating-the-windows-mixed-reality-home.md) 하는 방법을 알아봅니다.
 
@@ -95,13 +95,13 @@ else
 
 기존 HMD를 대상으로 하는 각 게임 또는 응용 프로그램에는 처리 하는 일련의 입력, 환경에 필요한 입력 형식 및 해당 입력을 가져오기 위해 호출 하는 특정 Api가 있습니다. Windows Mixed Reality에서 제공 되는 입력을 활용할 수 있도록 간단 하 고 간단 하 게 만드는 데 투자 했습니다.
 
-Windows Mixed Reality에서 입력을 노출 하는 방법 및 응용 프로그램의 용도에 매핑되는 방법에 대 한 자세한 내용은 인접 탭의 [Unity에 대 한 입력 포팅 가이드](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-guides?tabs=input) 를 참조 하세요.
+Windows Mixed Reality에서 입력을 노출 하는 방법 및 응용 프로그램의 용도에 매핑되는 방법에 대 한 자세한 내용은 인접 탭의 [Unity에 대 한 입력 포팅 가이드](../porting-guides.md?tabs=input) 를 참조 하세요.
 
 ### <a name="9-performance-testing-and-tuning"></a>9. 성능 테스트 및 튜닝
 
-Windows Mixed Reality는 하이엔드 게임 Pc부터 광범위 한 시장 메인스트림 Pc까지 광범위 한 장치 클래스에서 사용할 수 있습니다. 대상으로 지정 하는 시장에 따라 응용 프로그램에 사용할 수 있는 계산 및 그래픽 예산에 상당한 차이가 있습니다. 이 포팅 연습을 수행 하는 동안 프리미엄 PC를 활용 하 고 앱에 사용할 수 있는 중요 한 계산 및 그래픽 예산이 있을 수 있습니다. 앱을 더 광범위 한 사용자가 사용할 수 있도록 하려는 경우 [대상으로 지정 하려는 대표 하드웨어](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)에서 앱을 테스트 하 고 프로 파일링 해야 합니다.
+Windows Mixed Reality는 하이엔드 게임 Pc부터 광범위 한 시장 메인스트림 Pc까지 광범위 한 장치 클래스에서 사용할 수 있습니다. 대상으로 지정 하는 시장에 따라 응용 프로그램에 사용할 수 있는 계산 및 그래픽 예산에 상당한 차이가 있습니다. 이 포팅 연습을 수행 하는 동안 프리미엄 PC를 활용 하 고 앱에 사용할 수 있는 중요 한 계산 및 그래픽 예산이 있을 수 있습니다. 앱을 더 광범위 한 사용자가 사용할 수 있도록 하려는 경우 [대상으로 지정 하려는 대표 하드웨어](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)에서 앱을 테스트 하 고 프로 파일링 해야 합니다.
 
-[Unity](https://docs.unity3d.com/Manual/Profiler.html) 및 [Visual Studio](https://docs.microsoft.com/visualstudio/profiling/index) 에는 성능 프로파일러가 포함 되며, [Microsoft](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) 및 [Intel](https://software.intel.com/articles/vr-content-developer-guide) 은 성능 프로 파일링 및 최적화에 대 한 지침을 게시 합니다. [혼합 현실 성능을 이해](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)하는 데 사용할 수 있는 성능에 대 한 광범위 한 설명이 있습니다. Unity에 [대 한 성능 권장 사항](../../unity/performance-recommendations-for-unity.md)에서 unity에 대 한 구체적인 정보를 제공 합니다.
+[Unity](https://docs.unity3d.com/Manual/Profiler.html) 및 [Visual Studio](/visualstudio/profiling/index) 에는 성능 프로파일러가 포함 되며, [Microsoft](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) 및 [Intel](https://software.intel.com/articles/vr-content-developer-guide) 은 성능 프로 파일링 및 최적화에 대 한 지침을 게시 합니다. [혼합 현실 성능을 이해](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)하는 데 사용할 수 있는 성능에 대 한 광범위 한 설명이 있습니다. Unity에 [대 한 성능 권장 사항](../../unity/performance-recommendations-for-unity.md)에서 unity에 대 한 구체적인 정보를 제공 합니다.
 
 # <a name="input-mapping"></a>[입력 매핑](#tab/input)
 

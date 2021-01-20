@@ -6,12 +6,12 @@ ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: HoloLens, Windows 장치 포털, API, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 13845a5a5668ee8c86178196326425f46be9b321
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: cdbe9635fc51a0d19c978b72fdc8d5db6b8e8e01
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006653"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581258"
 ---
 # <a name="device-portal-api-reference"></a>디바이스 포털 API 참조
 
@@ -185,7 +185,7 @@ Websocket 업그레이드를 수락 하 고 30fps로 업데이트를 전송 하�
 매개 변수
 * 파일 이름: 다운로드할 파일의 이름입니다.
 
-예: 
+예제: 
 ```
 $.post("/api/holographic/mapmanager/download?FileName=" + spaceID)
 ```
@@ -197,7 +197,7 @@ $.post("/api/holographic/mapmanager/download?FileName=" + spaceID)
 매개 변수
 * file: 업로드할 파일의 이름입니다.
 
-예:
+예제:
 ```
 var form_data = new FormData();
 form_data.append("file", file_data);
@@ -220,7 +220,7 @@ $.ajax({
 매개 변수
 * FileName: 삭제할 파일의 이름입니다.
 
-예: 
+예제: 
 ```
 $.post("/api/holographic/mapmanager/delete?FileName=" + spaceID)
 ```
@@ -231,21 +231,21 @@ $.post("/api/holographic/mapmanager/delete?FileName=" + spaceID)
 
 시스템에서 현재 사용 중인 맵을 내보냅니다. 내보낸 후에는 다운로드할 수 있습니다. 
 
-예: 
+예제: 
 ```
 $.post("/api/holographic/mapmanager/export")
 ```
 
 **/api/holographic/mapmanager/exportanchors (POST)**
 
-시스템에서 현재 사용 중인 맵을 내보냅니다. 내보낸 후에는 다운로드할 수 있습니다. 예: 
+시스템에서 현재 사용 중인 맵을 내보냅니다. 내보낸 후에는 다운로드할 수 있습니다. 예제: 
 ```
 $.post("/api/holographic/mapmanager/exportanchors")
 ```
 
 **/api/holographic/mapmanager/exportmapandanchors (POST)**
 
-시스템에서 현재 사용 중인 맵과 앵커를 내보냅니다. 내보낸 후에는 다운로드할 수 있습니다. 예: 
+시스템에서 현재 사용 중인 맵과 앵커를 내보냅니다. 내보낸 후에는 다운로드할 수 있습니다. 예제: 
 ```
 $.post("/api/holographic/mapmanager/exportmapandanchors")
 ```
@@ -254,7 +254,7 @@ $.post("/api/holographic/mapmanager/exportmapandanchors")
 
 시스템에서 현재 사용 중인 맵 및 공간 재구성 데이터베이스를 내보냅니다. 내보낸 후에는 다운로드할 수 있습니다. 
 
-예: 
+예제: 
 ```
 $.post("/api/holographic/mapmanager/exportmapandspatialmappingdb")
 ```
@@ -268,7 +268,7 @@ $.post("/api/holographic/mapmanager/exportmapandspatialmappingdb")
 매개 변수
 * FileName: 사용할 맵의 이름입니다. 
 
-예: 
+예제: 
 ```
 $.post("/api/holographic/mapmanager/import?FileName=" + spaceID, function() { alert("Import was successful!"); })
 ```
@@ -280,7 +280,7 @@ $.post("/api/holographic/mapmanager/import?FileName=" + spaceID, function() { al
 매개 변수
 * FileName: 사용할 앵커의 이름입니다. 
 
-예: 
+예제: 
 ```
 $.post("/api/holographic/mapmanager/import?FileName=" + spaceID, function() { alert("Import was successful!"); })
 ```
@@ -292,7 +292,7 @@ $.post("/api/holographic/mapmanager/import?FileName=" + spaceID, function() { al
 매개 변수
 * FileName: 사용할 공간 매핑 db의 이름입니다. 
 
-예: 
+예제: 
 ```
 $.post("/api/holographic/mapmanager/import?FileName=" + spaceID, function() { alert("Import was successful!"); })
 ```
@@ -303,7 +303,7 @@ $.post("/api/holographic/mapmanager/import?FileName=" + spaceID, function() { al
 
 시스템을 맵, 앵커 및 공간 재구성 데이터베이스로 다시 설정 합니다.
 
-예: 
+예제: 
 ```
 $.post("/api/holographic/mapmanager/resetmapandanchorsandsrdb")
 ```
@@ -584,7 +584,7 @@ HoloLens는 조각화 된 mp4의 청크 다운로드를 통해 혼합 현실의 
 데이터 반환
 * 시스템 정보를 포함 하는 JSON: CPU, GPU, 메모리, 네트워크, IO
 
-## <a name="power"></a>전력
+## <a name="power"></a>고급
 
 **/sh/svhhhhhs (GET)**
 
@@ -696,6 +696,6 @@ WPR (성능) 추적 세션을 시작 합니다.
 데이터 반환
 * 시작 시 WPR 세션 상태를 반환 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [Windows 디바이스 포털 사용](using-the-windows-device-portal.md)
-* [장치 포털 핵심 API 참조 (UWP)](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)
+* [장치 포털 핵심 API 참조 (UWP)](/windows/uwp/debug-test-perf/device-portal-api-core)

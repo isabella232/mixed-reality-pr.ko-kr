@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원
 appliesto:
 - Windows 10
-ms.openlocfilehash: 6bcd6db30bf3a8a6e69d45c10be523d45ee4f82a
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: f448cafe3d0952ada63d545e44b58001779a1470
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725414"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580513"
 ---
 # <a name="headset-display-faqs"></a>헤드셋 표시 Faq
 
@@ -52,7 +52,7 @@ ms.locfileid: "97725414"
 
 ## <a name="my-headset-display-occasionally-turns-black-after-some-use"></a>일부 사용 후 헤드셋이 검정색으로 표시 되는 경우
 
-* PC에서 USB 일시 중단 또는 전원 절약 기능을 사용 하지 않도록 설정 해 보세요. 예를 들어 **설정 > 시스템 > 전원 & 절전 > [USB 선택적 일시 중단](https://docs.microsoft.com/windows-hardware/drivers/usbcon/usb-selective-suspend)**, "컴퓨터에서 전원 절약을 위해이 장치를 끌 수 있도록 허용" 설정, Device Manager의 모든 USB 절전 설정 및 PC의 펌웨어에 있습니다.
+* PC에서 USB 일시 중단 또는 전원 절약 기능을 사용 하지 않도록 설정 해 보세요. 예를 들어 **설정 > 시스템 > 전원 & 절전 > [USB 선택적 일시 중단](/windows-hardware/drivers/usbcon/usb-selective-suspend)**, "컴퓨터에서 전원 절약을 위해이 장치를 끌 수 있도록 허용" 설정, Device Manager의 모든 USB 절전 설정 및 PC의 펌웨어에 있습니다.
 * PC에 연결 된 다른 모든 USB 장치 및 주변 장치와 일시적으로 연결을 끊습니다.
 * GPU 드라이버 버전이 최신 인지 확인 하 고 새 드라이버에서 새로운 성능 및 호환성 문제 및 재발을 확인 하십시오.
 

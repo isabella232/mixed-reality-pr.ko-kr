@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: DirectX, holographic 렌더링, 네이티브, 네이티브 앱, WinRT, WinRT 앱, 플랫폼 Api, 사용자 지정 엔진, 미들웨어, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 764cbe0a37501cc176e9bb05a9a7771b03666f0c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b137fad12740542deb4995485201a9bd0d1d7662
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006853"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581045"
 ---
 # <a name="native-development-overview"></a>네이티브 개발 개요
 
@@ -32,7 +32,7 @@ Windows Mixed Reality는 다음과 같은 [두 가지 종류의 앱을](../../de
 * [HOLOGRAPHICSPACE api](getting-a-holographicspace.md) 또는 [OpenXR api](openxr.md) 를 사용 하는 UWP 또는 Win32 **Mixed Reality 응용 프로그램** 은 헤드셋 표시를 채우는 [몰입 형 보기](../../design/app-views.md) 를 렌더링 합니다.
 * DirectX, XAML 또는 다른 프레임 워크를 사용 하 여 Windows Mixed Reality 홈의 슬레이트에서 [2d 뷰](../../design/app-views.md#2d-views) 를 렌더링 하는 **2d 앱** (UWP)
 
-[2d 보기 및 몰입 형 보기](../../design/app-views.md) 에 대 한 DirectX 개발 간의 차이점은 주로 holographic 렌더링 및 공간 입력에 문제가 있습니다. UWP 응용 프로그램의 [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) 또는 Win32 응용 프로그램의 HWND는 필수 이며 거의 동일 하 게 유지 됩니다. 앱에서 사용할 수 있는 WinRT Api의 경우에도 마찬가지입니다. 하지만 holographic 기능을 활용 하려면 이러한 Api의 다른 하위 집합을 사용 해야 합니다. 예를 들어 holographic 용 시스템 응용 프로그램은 포즈 예측 프레임 루프를 사용 하도록 설정 된이 swapchain present 및 프레임을 관리 합니다.
+[2d 보기 및 몰입 형 보기](../../design/app-views.md) 에 대 한 DirectX 개발 간의 차이점은 주로 holographic 렌더링 및 공간 입력에 문제가 있습니다. UWP 응용 프로그램의 [IFrameworkView](/uwp/api/Windows.ApplicationModel.Core.IFrameworkView) 또는 Win32 응용 프로그램의 HWND는 필수 이며 거의 동일 하 게 유지 됩니다. 앱에서 사용할 수 있는 WinRT Api의 경우에도 마찬가지입니다. 하지만 holographic 기능을 활용 하려면 이러한 Api의 다른 하위 집합을 사용 해야 합니다. 예를 들어 holographic 용 시스템 응용 프로그램은 포즈 예측 프레임 루프를 사용 하도록 설정 된이 swapchain present 및 프레임을 관리 합니다.
 
 [!INCLUDE[](../includes/native-getting-started.md)]
 
@@ -60,7 +60,7 @@ HoloLens 2 또는 Windows Mixed Reality 모던 헤드셋에서 OpenXR를 사용 
 
 특히 새 도구 또는 SDK를 학습하는 경우 개발자 작업이 수행되지 않습니다. 다음 섹션에서는 이미 완료 한 초보자 수준 자료를 벗어나는 영역으로 이동할 수 있습니다. 이러한 항목과 리소스는 순차적으로 정렬 되지 않으므로 자유롭게 이동 하 여 탐색할 수 있습니다.
 
-### <a name="additional-resources"></a>추가 자료
+### <a name="additional-resources"></a>추가 리소스
 
 OpenXR 게임의 수준을 설정 하려면 아래 링크를 확인 하세요.
 
@@ -68,6 +68,6 @@ OpenXR 게임의 수준을 설정 하려면 아래 링크를 확인 하세요.
 * [OpenXR 성능](openxr-performance.md)
 * [OpenXR 문제 해결](openxr-troubleshooting.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [앱 모델](../../design/app-model.md)
 * [앱 보기](../../design/app-views.md)

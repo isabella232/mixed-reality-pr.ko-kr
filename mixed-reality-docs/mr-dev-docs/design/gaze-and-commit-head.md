@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
 keywords: 혼합 현실, 응시, 응시 대상 지정, 상호 작용, 디자인, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 대상, 포커스, 다듬기
-ms.openlocfilehash: 13a040a8309d084fcfdbfa91cbd9d63b595b004a
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a69b855e2246327affeeb0f771f565b94ea65cb2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009453"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582286"
 ---
 # <a name="head-gaze-and-commit"></a>헤드 게이즈(head-gaze) 및 커밋
 
@@ -28,7 +28,7 @@ _헤드-응시 및 커밋은_ 사용자의 방향으로 개체를 대상으로 �
     </colgroup>
     <tr>
         <td><strong>입력 모델</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens(1세대)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
     </tr>
@@ -89,7 +89,7 @@ _헤드-응시 및 커밋은_ 사용자의 방향으로 개체를 대상으로 �
 
 에서 제공 하는 근처 대화형 요소를 결정 하는 경우 포커스에 포커스를 지정 하면 현재 포커스가 있는 요소에 대 한 바이어스가 제공 됩니다. 이렇게 하면 자연 노이즈가 있는 두 요소 간의 중간점에서 부동 상태에 있는 경우 비정상적인 포커스 전환 동작을 줄일 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [시선 기반 상호 작용](eye-gaze-interaction.md)
 * [응시 및 유지](gaze-and-dwell.md)
@@ -98,6 +98,3 @@ _헤드-응시 및 커밋은_ 사용자의 방향으로 개체를 대상으로 �
 * [손 - 가리키고 커밋](point-and-commit.md)
 * [Instinctual 상호 작용](interaction-fundamentals.md)
 * [음성 입력 ](voice-input.md)
-
-
-

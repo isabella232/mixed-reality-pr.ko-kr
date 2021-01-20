@@ -6,16 +6,16 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, 릴리스 정보, os, 기능, 빌드, 플랫폼
-ms.openlocfilehash: db5e3b87eaf619a0f25e07d0698499a89a1b4b12
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 290369f94797a790ec0a2bb4227d84902d31eb43
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009503"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581526"
 ---
 # <a name="release-notes---may-2016"></a>릴리스 정보 - 2016년 5월
 
-HoloLens 팀은 Windows 참가자 프로그램을 통해 최신 기능 업데이트 및 주요 픽스를 제공 하기 위해 최선을 다하고 있습니다. 모든 제안에 대 한 의견을 보내 주셔서 감사 합니다. 피드백 허브, [개발자 포럼](https://forums.hololens.com) [ @HoloLens 및 Twitter ](https://twitter.com/hololens)를 통해 피드백을 계속 해 서 [보내 주세요](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) .
+HoloLens 팀은 Windows 참가자 프로그램을 통해 최신 기능 업데이트 및 주요 픽스를 제공 하기 위해 최선을 다하고 있습니다. 모든 제안에 대 한 의견을 보내 주셔서 감사 합니다. 피드백 허브, [개발자 포럼](https://forums.hololens.com) [ @HoloLens 및 Twitter ](https://twitter.com/hololens)를 통해 피드백을 계속 해 서 [보내 주세요](/windows/mixed-reality/give-us-feedback) .
 
 **릴리스 버전:** Windows Holographic 2016 5 월 업데이트 (**10.0.14342.1016**)
 
@@ -23,7 +23,7 @@ HoloLens 팀은 Windows 참가자 프로그램을 통해 최신 기능 업데이
 
 현재 릴리스로 업데이트 하려면 *설정* 앱을 열고 *업데이트 & 보안* 으로 이동한 후 *업데이트 확인* 단추를 선택 합니다.
 
-## <a name="new-features"></a>새 기능
+## <a name="new-features"></a>새로운 기능
 
 * 이제 **2d 보기에서 동시에 최대 3 개의 앱을 실행할** 수 있습니다 .이 경우 HoloLens에서 다중 작업을 수행 하는 데 무한 사용 사례가 가능 합니다. 이 비행에서 새로운 기능을 탐색 하는 동안 새 피드백 허브를 연 퀘스트 목록과 함께 새 피드백 허브를 제공 합니다.
 
@@ -34,7 +34,7 @@ HoloLens 팀은 Windows 참가자 프로그램을 통해 최신 기능 업데이
    * 홀로그램을 확인 하 고 "얼굴"을 말하여이를 회전 해 보세요.
    * "크게" 또는 "작게"를 말하여 크기를 변경 합니다.
    * "안녕하세요. 여기에서 *앱 이름* 이동" 이라는 의견을 보내 앱을 이동 합니다.
-* **HoloLens를 보다 쉽게 개발할** 수 있습니다. 이제 [Windows 장치 포털](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)을 통해 파일을 찾아보고, 업로드 하 고, 다운로드할 수 있습니다. 문서 폴더, 그림 폴더 및 Visual Studio를 통해 함께 로드 또는 배포 된 앱에 대 한 로컬 저장소에 액세스할 수 있습니다.
+* **HoloLens를 보다 쉽게 개발할** 수 있습니다. 이제 [Windows 장치 포털](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)을 통해 파일을 찾아보고, 업로드 하 고, 다운로드할 수 있습니다. 문서 폴더, 그림 폴더 및 Visual Studio를 통해 함께 로드 또는 배포 된 앱에 대 한 로컬 저장소에 액세스할 수 있습니다.
 * 이제 에뮬레이터는 추가 도구 메뉴 ">>"에서 사용 하도록 설정할 수 있는 실제 HoloLens와 마찬가지로 **Microsoft 계정으로 로그인을 지원** 합니다.
 * **이제 2D 앱은 비디오 전체 화면을 시청할 때 앱 바와 커서를 숨겨** 혼란을 방지 합니다. 비디오 시청 환경이 HoloLens에 훨씬 더 즐겁게 제공 될 예정입니다.
 * 또한 전 세계에 **앱 바 없이 사진을 고정할** 수 있습니다.
@@ -59,7 +59,7 @@ HoloLens 팀은 Windows 참가자 프로그램을 통해 최신 기능 업데이
 * OOBE를 실행 하는 동안 **표준 시간대** 를 빠르게 **앱을 등록** 하 고 자동으로 검색 하 여 최상의 첫 번째 사용자 환경을 제공 합니다.
 * **저장소 센스** 를 사용 하면 설정 앱에서 시스템 및 앱에 사용 되는 남은 디스크 공간을 볼 수 있습니다.
 * 피드백 앱 및 허브 내에서 단일 앱 **피드백 허브** 로 수렴 했습니다 .이는 선호 하는 기능에 대 한 **피드백을 제공** 하는 데 필요한 도구입니다. Insider Program에 참여 하는 경우 피드백 허브에서 **최신 insider news를 받고**, **빌드를 평가** 하 고, **피드백** 을 받을 수 있습니다.
-* [업데이트 된 HoloLens 에뮬레이터](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools) 빌드도 게시 했습니다.
+* [업데이트 된 HoloLens 에뮬레이터](/windows/mixed-reality/develop/install-the-tools) 빌드도 게시 했습니다.
 * 이제 혼합 현실 비디오는 자동 **비디오 안정화** 때문에 더 잘 보입니다.
 
 ## <a name="major-fixes"></a>주요 수정
@@ -112,13 +112,13 @@ Visual Studio와 관련 된 문제를 해결 했습니다.
 ## <a name="prior-release-notes"></a>이전 릴리스 정보
 * [릴리스 정보 - 2016년 3월](release-notes-march-2016.md)
 
-## <a name="see-also"></a>참조
-* [HoloLens 알려진 문제](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
-* [도구 설치](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [셸](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)
-* [혼합 현실에 사용되는 2D UWP 앱 업데이트](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/building-2d-apps)
-* [하드웨어 액세서리](https://docs.microsoft.com/windows/mixed-reality/discover/hardware-accessories)
-* [혼합 현실 캡처](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-capture)
-* [음성 입력 ](https://docs.microsoft.com/windows/mixed-reality/design/voice-input)
-* [Windows 스토어에 앱 제출](https://docs.microsoft.com/windows/mixed-reality/distribute/submitting-an-app-to-the-microsoft-store)
-* [HoloLens 에뮬레이터 사용](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)
+## <a name="see-also"></a>참고 항목
+* [HoloLens 알려진 문제](/windows/mixed-reality/hololens-known-issues)
+* [도구 설치](/windows/mixed-reality/develop/install-the-tools)
+* [셸](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)
+* [혼합 현실에 사용되는 2D UWP 앱 업데이트](/windows/mixed-reality/develop/porting-apps/building-2d-apps)
+* [하드웨어 액세서리](/windows/mixed-reality/discover/hardware-accessories)
+* [혼합 현실 캡처](/windows/mixed-reality/mixed-reality-capture)
+* [음성 입력 ](/windows/mixed-reality/design/voice-input)
+* [Windows 스토어에 앱 제출](/windows/mixed-reality/distribute/submitting-an-app-to-the-microsoft-store)
+* [HoloLens 에뮬레이터 사용](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)

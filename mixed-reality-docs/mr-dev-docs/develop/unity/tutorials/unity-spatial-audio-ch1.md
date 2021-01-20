@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head 관련 전송 함수, 반향, Microsoft Spatializer
-ms.openlocfilehash: 1eb2913f1953e334cfe75b786f96bb51a9852fc5
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 7d4702a21fccbb18c7c4b07675953c37785ae6db
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578456"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580228"
 ---
 # <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. Unity 프로젝트에 공간 오디오 추가
 
@@ -21,7 +21,7 @@ HoloLens2의 Unity 용 공간 오디오 자습서를 시작 합니다. 이 자�
 
 [Microsoft Spatializer GitHub 리포지토리](https://github.com/microsoft/spatialaudio-unity) 는이 자습서 시퀀스의 완료 된 Unity 프로젝트를 포함 합니다.
 
-유용 하 게 사용할 수 있는 경우 HRTF 기반 spatialization 기술과 권장 사항을 사용 하 여 소리를 spatialize 소리를 이해 하려면 [공간 음향 디자인](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design)을 참조 하세요.
+유용 하 게 사용할 수 있는 경우 HRTF 기반 spatialization 기술과 권장 사항을 사용 하 여 소리를 spatialize 소리를 이해 하려면 [공간 음향 디자인](/windows/mixed-reality/spatial-sound-design)을 참조 하세요.
 
 ## <a name="what-is-hrtf-offload"></a>HRTF 오프 로드 란?
 

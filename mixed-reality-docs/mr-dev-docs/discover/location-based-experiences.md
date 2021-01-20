@@ -6,12 +6,12 @@ ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
 keywords: 혼합 현실, vr, lbe, 위치, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 하드웨어, HoloLens, 다중 플레이어, 클라우드 서비스, azure
-ms.openlocfilehash: 323981d49c99f5cb175b71645851496bfa1f268c
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 41b35e7f92f8410357c685362ebc1714aea616e8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757831"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580670"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Windows Mixed Reality를 사용 하는 위치 기반 엔터테인먼트
 
@@ -98,11 +98,11 @@ JSON 파일에는 설정 하려는 위의 설정에 대해 "true"로 설정 된 
  
 **Q: playspace를 구성 하는 방법에 대 한 지침이 있나요?**
 
-A: 플레이 공간 구성은 소비자 설정 환경에서 수행 해야 합니다. 대화방 설정 프로세스를 사용 하 여 대화방 경계를 정의할 수도 있습니다. 방 경계 구성에 대 한 자세한 내용은 [여기](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)를 참조 하세요.
+A: 플레이 공간 구성은 소비자 설정 환경에서 수행 해야 합니다. 대화방 설정 프로세스를 사용 하 여 대화방 경계를 정의할 수도 있습니다. 방 경계 구성에 대 한 자세한 내용은 [여기](//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)를 참조 하세요.
 
 위의 문서에 설명 된 대로 최대 합리적인 단일 좌표 playspace는 5mx5m 주위에 있습니다. 더 큰 영역을 사용 하려는 경우 Windows Holographic API 스택에서 공간 앵커 기능을 사용할 수 있습니다. 이 API를 사용 하려면 사용자가 생성 하는 환경에서 사용자 지정 엔지니어링이 필요 합니다.  
 
-다른 공간 크기에 대 한 콘텐츠를 최적화 하는 방법에 대 한 자세한 내용은 [여기](https://docs.microsoft.com//windows/mixed-reality/coordinate-systems)를 참조 하세요.
+다른 공간 크기에 대 한 콘텐츠를 최적화 하는 방법에 대 한 자세한 내용은 [여기](//windows/mixed-reality/coordinate-systems)를 참조 하세요.
  
 
 **Q: 공간이 너무 크고 경계를 사용 하 여 가동 환경을 설정 하려고 할 때 오류가 발생 합니다. 내 대량 로밍 환경 작업을 설정 하려면 어떻게 해야 하나요?**
@@ -113,7 +113,7 @@ A: ~ 18x18ft 보다 큰 공간을 설정 하려면 시스템에서 제공 하는
 
 응용 프로그램 개발자는 사용자가 실제 환경에서 충돌 하지 않도록 필요한 보호 기능을 표시 해야 합니다.  이러한 작업은 환경 내에서 디지털 벽 이거나 사용자 지정 된 게임 경계 시각적 개체 일 수 있습니다. 
 
-WMR를 사용 하 여 대화방 경계를 설정 하는 방법에 대 한 지침은 [여기](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)에서 찾을 수 있습니다.
+WMR를 사용 하 여 대화방 경계를 설정 하는 방법에 대 한 지침은 [여기](//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)에서 찾을 수 있습니다.
 
 **Q: playspace의 원점은 어디에 있나요?**
 
@@ -125,7 +125,7 @@ A: 플레이 공간 원본은 실내 설정 환경에 따라 결정 되며, 설�
 
 A: microsoft Insider program을 통해 Windows 20H1 이상 빌드를 옵트인 (opt in) 할 경우 지도 공유를 위한 새 인터페이스에 액세스할 수 있습니다. 이 새로운 기능은 Windows 장치 포털의 [Map Manager](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) 인터페이스를 통해 사용할 수 있습니다. 이 도구를 사용 하려면 다음 단계를 수행 합니다.
 * 20H1 이상이 옵트인 되었는지 확인 합니다. 9 월 2019 일 이후 Insider program 사용을 의미 합니다.
-* 이러한 [지침](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop) 을 사용 하 여 Windows 장치 포털 (WDP)을 사용 하도록 설정 합니다.
+* 이러한 [지침](/windows/uwp/debug-test-perf/device-portal-desktop) 을 사용 하 여 Windows 장치 포털 (WDP)을 사용 하도록 설정 합니다.
 * Windows Mixed Reality HMD의 플러그 인에서 기존 맵을 다운로드 하거나 새 맵을 가져와야 합니다.
 * 설정 화면에 제공 된 URL을 사용 하 여 브라우저에서 선택한 WDP로 이동 합니다.
     * "Mixed Reality" 섹션으로 이동 하 고 "맵 관리자"를 선택 합니다.
@@ -140,13 +140,13 @@ A: microsoft Insider program을 통해 Windows 20H1 이상 빌드를 옵트인 (
 
 Q: Windows Mixed Reality 헤드셋의 추적 기술은 어떻게 작동 하나요?  
 
-혼합 현실에서는 HoloLens와 동일한 추적 기술을 공유 합니다. 내부 추적 시스템에 대 한 자세한 내용을 보려면 [여기](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/tracking-system)에서 설명서를 확인 하세요.
+혼합 현실에서는 HoloLens와 동일한 추적 기술을 공유 합니다. 내부 추적 시스템에 대 한 자세한 내용을 보려면 [여기](//windows/mixed-reality/enthusiast-guide/tracking-system)에서 설명서를 확인 하세요.
 
 상위 수준 공간 매핑 시스템의 작동 방식에 대 한 설명을 보려면 [여기](../design/spatial-mapping.md)에서 설명을 참조 하세요.
 
 **Q: 안정적인 추적 볼륨을 얻기 위한 모범 사례가 있나요?**
 
-성공 여부를 추적 하기 위한 환경을 최대한 구성 하기 위해이 [게시물](../environment-considerations-for-hololens.md)의 모범 사례를 읽을 수 있습니다.
+성공 여부를 추적 하기 위한 환경을 최대한 구성 하기 위해이 [게시물](/hololens/hololens-environment-considerations)의 모범 사례를 읽을 수 있습니다.
 
 **Q: 웨어하우스 규모의 공간 또는 최적화에 대 한 추적을 포함 하는 특정 미묘한 차이이 있나요?**
 
@@ -188,13 +188,13 @@ A: Azure PlayFab은 라이브 게임을 위한 완벽 한 백 엔드 플랫폼�
 
 **Q: SteamVR를 사용 하 여 내 환경을 배포 합니다. Windows Mixed Reality가 SteamVR에서 작동 하나요?**
 
-A: SteamVR에 대 한 Windows Mixed Reality를 통해 사용자는 Windows Mixed Reality 모던 헤드셋에서 SteamVR 환경을 실행할 수 있습니다. WMR with SteamVR에 대 한 자세한 내용은 [여기](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)를 참조 하세요.
+A: SteamVR에 대 한 Windows Mixed Reality를 통해 사용자는 Windows Mixed Reality 모던 헤드셋에서 SteamVR 환경을 실행할 수 있습니다. WMR with SteamVR에 대 한 자세한 내용은 [여기](//windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)를 참조 하세요.
 
 ### <a name="support-and-community"></a>지원 및 커뮤니티  
 
 팀의 실무 전문가와 협력 하 고, 문제 해결 지원을 받고, 광범위 한 mixed reality 개발자 커뮤니티에 참여 하는 데 도움이 되는 몇 가지 유용한 리소스를 제공 합니다.  
 
-공개적으로 릴리스된 기능에 문제가 발생 하는 경우 피드백 허브를 사용 하 여 버그를 작성 합니다. 지침에 대해서는이 [페이지](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/filing-feedback)를 참조 하세요.
+공개적으로 릴리스된 기능에 문제가 발생 하는 경우 피드백 허브를 사용 하 여 버그를 작성 합니다. 지침에 대해서는이 [페이지](//windows/mixed-reality/enthusiast-guide/filing-feedback)를 참조 하세요.
 
 WMR에 대 한 기타 문제 해결 도움말은 고객 지원 팀과 함께 [지원 요청](https://support.microsoft.com//supportforbusiness/productselection?sapId=96bfb202-bc79-741b-bf7a-774d8b767782) 을 파일에 포함 하세요.
 

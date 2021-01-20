@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 10/02/2018
 ms.topic: article
 keywords: 릴리스 정보, 버전, windows 10, 빌드, rs5, os
-ms.openlocfilehash: f7d95481d166f2c8795701c516946346101a21d0
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f62bc5b1e172958a6aebf366852cfd921f7817a3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007113"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581480"
 ---
 # <a name="release-notes---october-2018"></a>릴리스 정보 - 2018년 10월
 
@@ -33,7 +33,7 @@ Windows 10 10 월 2018 업데이트에는 데스크톱 PC와 함께 VR (Windows 
     ![혼합 현실 손전등](images/mr-flashlight.png)
 
 * **혼합 현실 홈에서 새로운 앱 및 콘텐츠를 시작 하는 방법**
-    * [SteamVR에 대해 Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)를 사용 하는 경우 이제 SteamVR 제목이 시작 메뉴에 표시 되 고 각각에 대 한 앱 시작 기가 혼합 현실 홈에 배치 될 수 있습니다.
+    * [SteamVR에 대해 Windows Mixed Reality](./using-steamvr-with-windows-mixed-reality.md)를 사용 하는 경우 이제 SteamVR 제목이 시작 메뉴에 표시 되 고 각각에 대 한 앱 시작 기가 혼합 현실 홈에 배치 될 수 있습니다.
     
         ![SteamVR 앱 관리자](images/steamvr-launchers.png)
         
@@ -50,9 +50,9 @@ Windows 10 10 월 2018 업데이트에는 데스크톱 PC와 함께 VR (Windows 
     
 ### <a name="for-developers"></a>개발자용
 
-* **[Qr 코드 추적](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/qr-code-tracking)** -혼합 현실 앱에서 qr 코드 추적을 사용 하도록 설정 하 여 WINDOWS의 VR (mixed reality 몰입) 헤드셋에서 qr 코드를 검색 하 고이를 관심이 있는 앱에 다시 보고 하도록 허용 합니다.
+* **[Qr 코드 추적](/windows/mixed-reality/develop/platform-capabilities-and-apis/qr-code-tracking)** -혼합 현실 앱에서 qr 코드 추적을 사용 하도록 설정 하 여 WINDOWS의 VR (mixed reality 몰입) 헤드셋에서 qr 코드를 검색 하 고이를 관심이 있는 앱에 다시 보고 하도록 허용 합니다.
 * **몰입 형 앱에 대 한 하드웨어 DRM 지원** -이제 개발자는 디스플레이 하드웨어에서 지 원하는 경우 하드웨어로 보호 된 백 버퍼 텍스처를 요청 하 여 응용 프로그램이 PlayReady와 같은 원본의 하드웨어로 보호 된 콘텐츠를 사용할 수 있습니다.
-* **[혼합 현실 캡처 ui를 몰입 형 앱에 통합](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app)** -개발자는 몇 줄의 코드만으로 기본 제공 Windows [카메라 캡처 ui](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) 를 사용 하 여 혼합 현실 캡처를 앱에 통합할 수 있습니다.
+* **[혼합 현실 캡처 ui를 몰입 형 앱에 통합](/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app)** -개발자는 몇 줄의 코드만으로 기본 제공 Windows [카메라 캡처 ui](/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) 를 사용 하 여 혼합 현실 캡처를 앱에 통합할 수 있습니다.
 
 ## <a name="new-features-for-hololens"></a>HoloLens의 새로운 기능
 
@@ -72,7 +72,7 @@ Windows 10 10 월 2018 업데이트는 모든 HoloLens 고객에 대해 공개�
 
 ### <a name="for-developers"></a>개발자용
 
-* **[혼합 현실 캡처 ui를 몰입 형 앱에 통합](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app)** -개발자는 몇 줄의 코드만으로 기본 제공 Windows [카메라 캡처 ui](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) 를 사용 하 여 혼합 현실 캡처를 앱에 통합할 수 있습니다.
+* **[혼합 현실 캡처 ui를 몰입 형 앱에 통합](/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app)** -개발자는 몇 줄의 코드만으로 기본 제공 Windows [카메라 캡처 ui](/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) 를 사용 하 여 혼합 현실 캡처를 앱에 통합할 수 있습니다.
 
 ### <a name="for-commercial-customers"></a>상업적 고객의 경우
 
@@ -88,7 +88,7 @@ Windows 10 10 월 2018 업데이트는 모든 HoloLens 고객에 대해 공개�
 
 ## <a name="known-issues"></a>알려진 문제
 
-뛰어난 Windows Mixed Reality 환경을 제공 하기 위해 노력 했지만 여전히 몇 가지 알려진 문제를 추적 하 고 있습니다. 다른 항목을 찾으면 [의견](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)을 보내 주시기 바랍니다.
+뛰어난 Windows Mixed Reality 환경을 제공 하기 위해 노력 했지만 여전히 몇 가지 알려진 문제를 추적 하 고 있습니다. 다른 항목을 찾으면 [의견](/windows/mixed-reality/give-us-feedback)을 보내 주시기 바랍니다.
 
 ### <a name="hololens"></a>HoloLens
  
@@ -99,7 +99,7 @@ HoloLens에서 Windows 10 10 월 2018 업데이트를 사용 하는 경우 다�
 
 ## <a name="provide-feedback-and-report-issues"></a>사용자 의견을 제공 하 고 문제를 보고 합니다.
 
-사용자 의견을 제공 하 고 문제를 보고 하려면 [HoloLens 또는 Windows 10 PC에서 피드백 허브 앱](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) 을 사용 하세요. 피드백 허브를 사용 하면 엔지니어가 신속 하 게 디버그 하 고 문제를 해결 하는 데 필요한 모든 진단 정보가 포함 됩니다.
+사용자 의견을 제공 하 고 문제를 보고 하려면 [HoloLens 또는 Windows 10 PC에서 피드백 허브 앱](/windows/mixed-reality/give-us-feedback) 을 사용 하세요. 피드백 허브를 사용 하면 엔지니어가 신속 하 게 디버그 하 고 문제를 해결 하는 데 필요한 모든 진단 정보가 포함 됩니다.
 
 >[!NOTE]
 >사용자 의견 허브에서 문서 폴더에 액세스할 지 여부를 묻는 메시지를 수락 해야 합니다 (메시지가 표시 되 면 **예** 선택).
@@ -112,9 +112,8 @@ HoloLens에서 Windows 10 10 월 2018 업데이트를 사용 하는 경우 다�
 * [릴리스 정보 - 2016년 5월](release-notes-may-2016.md)
 * [릴리스 정보 - 2016년 3월](release-notes-march-2016.md)
 
-## <a name="see-also"></a>참조
-* [모던 헤드셋 지원 (외부 링크)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+## <a name="see-also"></a>참고 항목
+* [모던 헤드셋 지원 (외부 링크)](./troubleshooting-windows-mixed-reality.md)
 * [HoloLens 지원 (외부 링크)](https://support.microsoft.com/products/hololens)
-* [도구 설치](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [피드백 보내기](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)
-
+* [도구 설치](/windows/mixed-reality/develop/install-the-tools)
+* [피드백 보내기](/windows/mixed-reality/give-us-feedback)

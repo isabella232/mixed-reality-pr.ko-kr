@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality, 디자인, 수동 coach, 몰입 형 헤드셋, MRTK, 실습, 수동 지원, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 07b42482d9258b4189ef43683370bd951f5c88e8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 69afe767e01c57535b79575e4f25fabe4a9f6f39
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009163"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582276"
 ---
 # <a name="hand-coach"></a>핸드 코치
 
@@ -173,11 +173,11 @@ UI 메뉴를 사용 하 여 다양 한 손 크기를 테스트 하 고,이를 �
     *   프로젝트별 설정
         *   UWP로 설정 된 장면: Windows Mixed Reality의 [Unity 구성 프로젝트](../develop/unity/Configure-Unity-Project.md) 에서 지침을 찾을 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [상호 작용-기본 사항](interaction-fundamentals.md)
 * [자산 생성 프로세스](asset-creation-process.md)
-* [제스처](../gestures.md)
+* [제스처](./interaction-fundamentals.md)
 * [도구 설치](../develop/install-the-tools.md)
 * [Unity 프로젝트 구성](../develop/unity/Configure-Unity-Project.md)
 * [Unity 개발 개요](../develop/unity/unity-development-overview.md)

@@ -2,16 +2,16 @@
 title: Unreal의 재질 권장 사항
 description: Unreal engine의 재질 개요.
 author: hferrone
-ms.author: v-hferrone
+ms.author: safarooq
 ms.date: 09/18/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 개발, 자료, 설명서, 가이드, 기능, holograms, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 11c10577bd3946facb96fd77b09265ab5ca26f24
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: bfe70e730c5fbd6e5d103737b03e76bfd0ab65f6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609574"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580794"
 ---
 # <a name="material-recommendations-in-unreal"></a>Unreal의 재질 권장 사항
 
@@ -29,7 +29,7 @@ ms.locfileid: "96609574"
  *권장 자료* 설정의 권장 자료 설정
 
 실제 권장 되지 않는 재질 설정 [ ![ 의 권장 되지 않는 재질 설정 ](images/unreal-materials-img-01b.png) ](images/unreal-materials-img-01b.png#lightbox) 
- *Non-recommended material setup*
+ 
 
 ## <a name="changing-blend-mode"></a>Blend 모드 변경
 

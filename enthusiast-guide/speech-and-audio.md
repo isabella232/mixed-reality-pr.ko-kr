@@ -3,12 +3,12 @@ title: 음성 및 오디오 Faq
 description: 표준 소비자 지원 설명서를 벗어나는 음성 및 오디오 Windows 혼합 현실 문제 해결.
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, 오디오 문제, 음성 문제
-ms.openlocfilehash: d685190248dd17792f941cf53e3a57499cd3e662
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: fff5d661dbe61d4c9364c83e3bd0c6ddb8ab5cc6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725894"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581411"
 ---
 # <a name="speech-and-audio-faqs"></a>음성 및 오디오 Faq
 
@@ -35,7 +35,7 @@ ms.locfileid: "97725894"
 
 * SteamVR을 통해 시작 된 앱과 같은 일부 앱은 혼합 현실 포털을 시작 하거나 중지할 때 오디오 장치가 변경 될 때 오디오를 잃어 버릴 수 있습니다. 이를 해결 하려면 Mixed Reality 포털을 다시 열고 앱을 다시 시작 합니다.
 * 다른 멀티미디어 USB 장치 (예: 웹 cam)가 Windows Mixed Reality 헤드셋과 동일한 내부 또는 외부 USB 허브를 공유 하는 경우 헤드셋 오디오 잭 또는 헤드폰에는 때때로 소리가 나 오디오가 없을 수 있습니다. 다른 허브를 사용 하는 USB 포트에 헤드셋을 꽂거나 다른 USB 멀티미디어 장치를 분리/사용 하지 않도록 설정 합니다.
-* 연결 된 헤드폰에서 큰 양의 소음이 발생 하는 경우 PC의 USB 허브가 Windows Mixed Reality 헤드셋에 충분 한 전원을 제공 하지 못할 수 있습니다. 이 경우 [피드백 허브](https://docs.microsoft.com/hololens/hololens-feedback) 버그로 파일을 작성 하 고 다음을 시도 합니다.
+* 연결 된 헤드폰에서 큰 양의 소음이 발생 하는 경우 PC의 USB 허브가 Windows Mixed Reality 헤드셋에 충분 한 전원을 제공 하지 못할 수 있습니다. 이 경우 [피드백 허브](/hololens/hololens-feedback) 버그로 파일을 작성 하 고 다음을 시도 합니다.
     * 확장 케이블 제거
     * 전용 외부 기반 USB 3.0 허브 사용
     * PC의 다른 USB 포트

@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 공간 사운드, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
-ms.openlocfilehash: 043443c0c197e3b606c4845966e0cf60102d0b85
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: da130a5a93ec261d2e767874faa31dbc50d51b12
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678372"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582766"
 ---
 # <a name="mr-spatial-220-spatial-sound"></a>MR 공간 220: 공간 음향
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](../../../mr-learning-base-01.md)가 게시되었습니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](./mr-learning-base-01.md)가 게시되었습니다.
 
 [공간 사운드](../../../design/spatial-sound.md) 를 holograms로 breathes 세계에 제공 합니다. Holograms은 가볍고 소리로 구성 되며 Holograms의 시야가 손실 되는 경우 공간 소리를 통해 찾을 수 있습니다. 공간 사운드는 라디오 공간에 배치 되는 일반적인 사운드와는 달리, 라디오 공간에 있습니다. 공간 사운드를 사용 하면 사용자, 사용자 옆 또는 머리에 있는 것 처럼 holograms 소리를 만들 수 있습니다. 이 과정에서는 다음을 수행 합니다.
 
@@ -30,15 +30,15 @@ ms.locfileid: "94678372"
 
 <table>
 <tr>
-<th>과정</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
+<th>과정</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
 </tr><tr>
 <td>MR 공간 220: 공간 음향</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
-## <a name="before-you-start"></a>시작하기 전 확인 사항
+## <a name="before-you-start"></a>시작하기 전에
 
-### <a name="prerequisites"></a>사전 요구 사항
+### <a name="prerequisites"></a>필수 구성 요소
 
 * 올바른 [도구로](../../../develop/install-the-tools.md)구성 된 WINDOWS 10 PC입니다.
 * 몇 가지 기본적인 c # 프로그래밍 기능.
@@ -238,8 +238,8 @@ Doppler level을 0으로 설정 하면 이동 (홀로그램 또는 사용자 중
   * **배치 사운드** **를 설정** 합니다.
   * 픽업 **소리** 를 **픽업** 소리로 설정 합니다.
   * **픽업 동작** 및 **배치 동작** 양쪽의 오른쪽 아래에 있는 +를 누릅니다. EnergyHub를 장면에서 **없음 (개체)** 필드로 끕니다.
-    * **픽업 동작에서** **No Function**  ->  **EnergyHubBase**  ->  **resetanimation** 함수를 클릭 합니다.
-    * **배치 동작에서** **No Function**  ->  **EnergyHubBase**  ->  **onselect** 함수를 클릭 합니다.
+    * **픽업 동작에서**   ->  **EnergyHubBase**  ->  **resetanimation** 함수를 클릭 합니다.
+    * **배치 동작에서**   ->  **EnergyHubBase**  ->  **onselect** 함수를 클릭 합니다.
 
 ![소리 및 동작으로 이동 하려면 탭 하세요.](images/holograms220-taptoplace.png)
 
@@ -487,7 +487,7 @@ Unity에서는 파일의 가져오기 설정에서 스트리밍을 위해 오디
 ![키워드: 지 각 표시](images/showunderworld.png)
 
 * 지 각 **지를 확장** 합니다.
-* UnderworldBase **함수** 를 변경 **UnderworldBase.OnDisable** 하지 않습니다.
+* UnderworldBase **함수** 를 변경 하지 않습니다.
 
 ![키워드: 지 각을 숨깁니다.](images/hideunderworld.png)
 

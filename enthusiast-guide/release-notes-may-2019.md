@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: 릴리스 정보, 버전, windows 10, 빌드, 19h1, os, 2019 년 5 월
-ms.openlocfilehash: fd5688b7c68e0a16873ff153f3c158a3575e02e9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b8df518b03544bd2473ff67030ed008e1a2bc26e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007123"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581501"
 ---
 # <a name="release-notes---may-2019"></a>릴리스 정보-2019 년 5 월
 
@@ -50,7 +50,7 @@ HoloLens (첫 번째 gen)가 LTS (장기 서비스) 상태를 입력 합니다. 
 
 ## <a name="provide-feedback-and-report-issues"></a>사용자 의견을 제공 하 고 문제를 보고 합니다.
 
-[Windows 10 PC 또는 HoloLens 장치에서 피드백 허브 앱](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) 을 사용 하 여 피드백을 제공 하 고 문제를 보고 합니다. 피드백 허브를 사용 하면 엔지니어가 신속 하 게 디버그 하 고 문제를 해결 하는 데 필요한 모든 진단 정보가 포함 됩니다.
+[Windows 10 PC 또는 HoloLens 장치에서 피드백 허브 앱](/windows/mixed-reality/give-us-feedback) 을 사용 하 여 피드백을 제공 하 고 문제를 보고 합니다. 피드백 허브를 사용 하면 엔지니어가 신속 하 게 디버그 하 고 문제를 해결 하는 데 필요한 모든 진단 정보가 포함 됩니다.
 
 >[!NOTE]
 >사용자 의견 허브에서 문서 폴더에 액세스할 지 여부를 묻는 메시지를 수락 해야 합니다 (메시지가 표시 되 면 **예** 선택).
@@ -65,9 +65,8 @@ HoloLens (첫 번째 gen)가 LTS (장기 서비스) 상태를 입력 합니다. 
 * [릴리스 정보 - 2016년 5월](release-notes-may-2016.md)
 * [릴리스 정보 - 2016년 3월](release-notes-march-2016.md)
 
-## <a name="see-also"></a>참조
-* [모던 헤드셋 지원 (외부 링크)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+## <a name="see-also"></a>참고 항목
+* [모던 헤드셋 지원 (외부 링크)](./troubleshooting-windows-mixed-reality.md)
 * [HoloLens 지원 (외부 링크)](https://support.microsoft.com/products/hololens)
-* [도구 설치](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
+* [도구 설치](/windows/mixed-reality/develop/install-the-tools)
 * [사용자 의견 제공] (https://docs.microsoft.com/windows/mixed-reality/give-us-feedback
-

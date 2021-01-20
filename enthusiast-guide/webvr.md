@@ -3,12 +3,12 @@ title: Windows Mixed Reality에서 WebVR 사용
 description: WebVR의 기본 사항, Windows Mixed Reality에서 Microsoft Edge를 사용 하는 방법 헤드셋 및 일반적인 문제 해결 문제에 대해 알아봅니다.
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, WebVR, Edge, Microsoft Edge, 웹 검색
-ms.openlocfilehash: 0b0d07383b43feaa11fb9bfac2b071d8d4d80b19
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 89d9e51bf4adb63e7836968a0112849f7ac403d0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009443"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581752"
 ---
 # <a name="using-webvr-with-windows-mixed-reality"></a>Windows Mixed Reality에서 WebVR 사용
 
@@ -35,7 +35,7 @@ VR에서 웹을 검색 하는 것은 Cliffhouse 내에서 2D 앱 슬레이트로
 
 ## <a name="where-can-i-find-the-webvr-developer-documentation"></a>WebVR 개발자 설명서는 어디서 찾을 수 있나요?
 
-개발자 설명서는 여기에 있습니다. [WebVR Developer 설명서](https://docs.microsoft.com/microsoft-edge/webvr/)를 참조 하세요.
+개발자 설명서는 여기에 있습니다. [WebVR Developer 설명서](/microsoft-edge/webvr/)를 참조 하세요.
 
 ## <a name="ive-found-a-website-with-webvr-that-doesnt-work-in-windows-mixed-reality-what-do-i-do"></a>Windows Mixed Reality에서 작동 하지 않는 WebVR가 있는 웹 사이트를 찾았습니다. 뭐 할까요
 
@@ -61,7 +61,7 @@ Windows Mixed Reality 헤드셋 (하드웨어 또는 시뮬레이션 사용)에�
 5. 처음에 특정 도메인에서 VR를 입력 하려고 하면 브라우저는 몰입 형 보기 사용에 대 한 동의를 요청 하 고 예를 선택 합니다. ![특정 도메인에 대 한 첫 번째 시도를 시작 하는 데 표시 되는 동의 UI](images/1053px-Webvr-consent-ui.png)
 6. 헤드셋은 WebVR 콘텐츠를 표시 하기 시작 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [> WebVR 문제 해결](webvr-questions.md)
 * [첫 번째 WebVR 환경을 시작 하는 방법](using-games-and-apps-in-windows-mixed-reality.md#how-to-get-into-your-first-webvr-experience)

@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 스트리밍, 원격 기능, 혼합 현실, 개발, 시작, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, holograms, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, WinRT, DLL
-ms.openlocfilehash: 0d181d1eff644de0512c40a140474612a1540b40
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
+ms.openlocfilehash: f32b5b3ddbee2e24e61d08b0a1b887b7b06e6da4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98247756"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580399"
 ---
 # <a name="winrt-in-unreal"></a>Unreal의 WinRT
 
@@ -28,6 +28,6 @@ HoloLens 개발 과정에서 WinRT를 사용 하 여 기능을 작성 해야 할
 
 ## <a name="see-also"></a>참고 항목
 
-* [C + +/WinRT Api](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/)
-* [FileSavePicker 클래스](https://docs.microsoft.com/uwp/api/Windows.Storage.Pickers.FileSavePicker) 
-* [실제 타사 라이브러리](https://docs.unrealengine.com/Programming/BuildTools/UnrealBuildTool/ThirdPartyLibraries/index.html) 
+* [C + +/WinRT Api](/windows/uwp/cpp-and-winrt-apis/)
+* [FileSavePicker 클래스](/uwp/api/Windows.Storage.Pickers.FileSavePicker) 
+* [실제 타사 라이브러리](https://docs.unrealengine.com/Programming/BuildTools/UnrealBuildTool/ThirdPartyLibraries/index.html)

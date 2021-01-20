@@ -6,12 +6,12 @@ ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: JavaScript, WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mixed reality, 웹 vr, 웹 xr, 웹 mr, 웹 ar, 360, 360 비디오, 360 비디오, 360 photo, 360 사진, 360 콘텐츠, 몰입 형 웹, 몰입 형 웹, IW, immersiveweb
-ms.openlocfilehash: 26d1edf536eb23673393caaee0a833e036adc194
-ms.sourcegitcommit: 8e91ff47ef70e80a41137f80aa1093e711d27bf7
+ms.openlocfilehash: 573db6f739292b7e67148d260a5ba1880d24fb20
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91957783"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580326"
 ---
 # <a name="javascript-development-overview"></a>JavaScript 개발 개요
 
@@ -63,8 +63,8 @@ WebGL Api를 사용 하 여 WebXR 장치 Api에 직접 액세스할 수 있습�
 * [Immersiveweb](https://immersiveweb.dev/)
 * [WebXR 샘플](https://immersive-web.github.io/webxr-samples/)
 * [Babylon.js를 사용 하 여 WebXR 환경 만들기](https://doc.babylonjs.com/how_to/introduction_to_webxr)
-* [Windows Mixed Reality 및 새 Microsoft Edge](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)
+* [Windows Mixed Reality 및 새 Microsoft Edge](/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)
 * [몰입 형 Web W3C Github](https://github.com/immersive-web)
-* [WebGL API](https://msdn.microsoft.com/library/bg182648(v=vs.85).aspx)
+* [WebGL API](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182648(v=vs.85))
 * [게임 패드 API](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) 및 [게임 패드 확장](https://w3c.github.io/gamepad/extensions.html)
 * [WebVR 개요](webvr-overview.md)

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 혼합 현실, 공간 로케이터, 공간 참조 프레임, 공간 좌표 시스템, 공간 스테이지, 샘플 코드, 이미지 안정화, 공간 앵커, 공간 앵커 저장소, 추적 손실, 연습, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 055eff0bb04228cb0a19b9ea208bfc9c00ce2dbe
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7cf463e4c3bb9b2fe06c834376eb46e3ee20c1ee
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006863"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581070"
 ---
 # <a name="coordinate-systems-in-directx"></a>DirectX의 좌표계
 
@@ -27,27 +27,27 @@ ms.locfileid: "98006863"
 
 ## <a name="spatial-coordinate-systems-in-windows"></a>Windows의 공간 좌표계
 
-Windows에서 실제 좌표계를 설명 하는 데 사용 되는 핵심 유형은 <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>입니다. 이 형식의 인스턴스는 임의의 좌표계를 나타내며, 각 좌표계의 세부 정보를 이해 하지 않고도 두 좌표계 간에 변환 하는 데 사용할 수 있는 변환 행렬 데이터를 가져오는 메서드를 제공 합니다.
+Windows에서 실제 좌표계를 설명 하는 데 사용 되는 핵심 유형은 <a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>입니다. 이 형식의 인스턴스는 임의의 좌표계를 나타내며, 각 좌표계의 세부 정보를 이해 하지 않고도 두 좌표계 간에 변환 하는 데 사용할 수 있는 변환 행렬 데이터를 가져오는 메서드를 제공 합니다.
 
 공간 정보를 반환 하는 메서드는 SpatialCoordinateSystem 매개 변수를 사용 하 여 이러한 좌표가 반환 될 때 가장 유용한 좌표계를 결정할 수 있습니다. 공간 정보는 사용자의 환경에서 점으로, 광선 또는 볼륨으로 표시 되 고 이러한 좌표의 단위는 항상 미터 단위로 표시 됩니다.
 
 SpatialCoordinateSystem에는 장치의 위치를 나타내는 것을 비롯 하 여 다른 좌표계와의 동적 관계가 있습니다. 언제 든 지 장치는 다른 좌표계가 아닌 일부 좌표계를 찾을 수 있습니다. 대부분의 좌표계에서 앱은 찾을 수 없는 기간을 처리할 준비를 해야 합니다.
 
 응용 프로그램은 직접 SpatialCoordinateSystems를 만들지 않아야 합니다. 대신 인식 Api를 통해 사용 해야 합니다. 인식 Api에는 좌표계의 세 가지 기본 소스가 있습니다. 각 소스는 [좌표계](../../design/coordinate-systems.md) 페이지에 설명 된 개념에 매핑됩니다.
-* 고정 참조 프레임을 가져오려면 <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstationaryframeofreference" target="_blank">SpatialStationaryFrameOfReference</a> 을 만들거나 현재 <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference" target="_blank">SpatialStageFrameOfReference</a>에서 하나를 가져옵니다.
-* 공간 앵커를 가져오려면 <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor" target="_blank">SpatialAnchor</a>을 만듭니다.
-* 참조의 연결 된 프레임을 가져오려면 <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocatorattachedframeofreference" target="_blank">SpatialLocatorAttachedFrameOfReference</a>을 만듭니다.
+* 고정 참조 프레임을 가져오려면 <a href="/uwp/api/windows.perception.spatial.spatialstationaryframeofreference" target="_blank">SpatialStationaryFrameOfReference</a> 을 만들거나 현재 <a href="/uwp/api/windows.perception.spatial.spatialstageframeofreference" target="_blank">SpatialStageFrameOfReference</a>에서 하나를 가져옵니다.
+* 공간 앵커를 가져오려면 <a href="/uwp/api/windows.perception.spatial.spatialanchor" target="_blank">SpatialAnchor</a>을 만듭니다.
+* 참조의 연결 된 프레임을 가져오려면 <a href="/uwp/api/windows.perception.spatial.spatiallocatorattachedframeofreference" target="_blank">SpatialLocatorAttachedFrameOfReference</a>을 만듭니다.
 
 이러한 개체에서 반환 되는 모든 좌표계는 직각으로, + y up, + x를 오른쪽에, + z는 역방향입니다. 양의 x 방향에서 왼쪽 또는 오른쪽 손가락을 가리키고 양의 y 방향으로 curl 하 여 양의 z 축 점이 가리키는 방향을 기억할 수 있습니다. 엄지 방향이 사용자에 게 표시 되는 방향에 따라 해당 좌표계의 양의 z 축이 가리키는 방향이 표시 됩니다. 다음 그림에서는 이러한 두 좌표계를 보여 줍니다.
 
 ![왼쪽 및 오른쪽 좌표계](images/left-hand-right-hand.gif)<br>
 *왼쪽 및 오른쪽 좌표계*
 
-<a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a> 클래스를 사용 하 여 연결 된 참조 또는 고정 프레임 프레임을 만들어 HoloLens 위치를 기반으로 SpatialCoordinateSystem에 부트스트랩 합니다. 이 프로세스에 대 한 자세한 내용을 보려면 다음 섹션을 계속 진행 합니다.
+<a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a> 클래스를 사용 하 여 연결 된 참조 또는 고정 프레임 프레임을 만들어 HoloLens 위치를 기반으로 SpatialCoordinateSystem에 부트스트랩 합니다. 이 프로세스에 대 한 자세한 내용을 보려면 다음 섹션을 계속 진행 합니다.
 
 ## <a name="place-holograms-in-the-world-using-a-spatial-stage"></a>공간 단계를 사용 하 여 전 세계에 holograms 두기
 
-불투명 Windows Mixed Reality 몰입 형 헤드셋의 좌표계는 정적 <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current" target="_blank">SpatialStageFrameOfReference:: Current</a> 속성을 사용 하 여 액세스 됩니다. 이 API는 다음을 제공 합니다.
+불투명 Windows Mixed Reality 몰입 형 헤드셋의 좌표계는 정적 <a href="/uwp/api/windows.perception.spatial.spatialstageframeofreference.current" target="_blank">SpatialStageFrameOfReference:: Current</a> 속성을 사용 하 여 액세스 됩니다. 이 API는 다음을 제공 합니다.
 
 * 좌표계
 * 플레이어의 장착 여부에 대 한 정보
@@ -289,9 +289,9 @@ std::vector<unsigned short> SpatialStageManager::TriangulatePoints(std::vector<f
 
 ## <a name="place-holograms-in-the-world-using-a-stationary-frame-of-reference"></a>고정 된 참조 프레임을 사용 하 여 holograms를 전 세계에 두기
 
-[SpatialStationaryFrameOfReference](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialstationaryframeofreference.aspx) 클래스는 사용자가 이동 하는 동안 사용자의 주변을 기준으로 [고정 된 상태로 유지](../../design/coordinate-systems.md#stationary-frame-of-reference) 되는 참조 프레임을 나타냅니다. 이 참조 프레임은 장치 근처의 좌표를 안정적으로 유지 합니다. SpatialStationaryFrameOfReference의 한 가지 주요 사용은 holograms를 렌더링할 때 렌더링 엔진 내에서 기본 세계 좌표계로 작동 하는 것입니다.
+[SpatialStationaryFrameOfReference](/uwp/api/Windows.Perception.Spatial.SpatialStationaryFrameOfReference) 클래스는 사용자가 이동 하는 동안 사용자의 주변을 기준으로 [고정 된 상태로 유지](../../design/coordinate-systems.md#stationary-frame-of-reference) 되는 참조 프레임을 나타냅니다. 이 참조 프레임은 장치 근처의 좌표를 안정적으로 유지 합니다. SpatialStationaryFrameOfReference의 한 가지 주요 사용은 holograms를 렌더링할 때 렌더링 엔진 내에서 기본 세계 좌표계로 작동 하는 것입니다.
 
-SpatialStationaryFrameOfReference을 가져오려면 [SpatialLocator](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatiallocator.aspx) 클래스를 사용 하 고 [Createstationaryframeofreferenceatcurrentlocation](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatiallocator.createstationaryframeofreferenceatcurrentlocation.aspx)을 호출 합니다.
+SpatialStationaryFrameOfReference을 가져오려면 [SpatialLocator](/uwp/api/Windows.Perception.Spatial.SpatialLocator) 클래스를 사용 하 고 [Createstationaryframeofreferenceatcurrentlocation](/uwp/api/Windows.Perception.Spatial.SpatialLocator)을 호출 합니다.
 
 Windows Holographic 앱 템플릿 코드에서 다음을 수행 합니다.
 
@@ -314,21 +314,21 @@ Windows Holographic 앱 템플릿 코드에서 다음을 수행 합니다.
 
 앵커를 그대로 유지 하는 조정 효과는 앵커에서의 거리가 증가할수록 확대 됩니다. 해당 앵커의 원점에서 약 3 미터 이상인 앵커를 기준으로 콘텐츠를 렌더링 하지 않아야 합니다.
 
-[CoordinateSystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.coordinatesystem.aspx) 속성은 장치에서 앵커의 정확한 위치를 조정할 때 감속/가속을 적용 하 여 앵커를 기준으로 콘텐츠를 배치 하는 데 사용할 수 있는 좌표계를 가져옵니다.
+[CoordinateSystem](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) 속성은 장치에서 앵커의 정확한 위치를 조정할 때 감속/가속을 적용 하 여 앵커를 기준으로 콘텐츠를 배치 하는 데 사용할 수 있는 좌표계를 가져옵니다.
 
-[RawCoordinateSystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.rawcoordinatesystem.aspx) 속성 및 해당 [RawCoordinateSystemAdjusted](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.rawcoordinatesystemadjusted.aspx) 이벤트를 사용 하 여 이러한 조정을 직접 관리할 수 있습니다.
+[RawCoordinateSystem](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) 속성 및 해당 [RawCoordinateSystemAdjusted](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) 이벤트를 사용 하 여 이러한 조정을 직접 관리할 수 있습니다.
 
 ### <a name="persist-and-share-spatial-anchors"></a>공간 앵커 유지 및 공유
 
-[SpatialAnchorStore](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx) 클래스를 사용 하 여 SpatialAnchor를 로컬로 유지 한 다음 동일한 HoloLens 장치에서 이후 앱 세션으로 다시 가져올 수 있습니다.
+[SpatialAnchorStore](/uwp/api/Windows.Perception.Spatial.SpatialAnchorStore) 클래스를 사용 하 여 SpatialAnchor를 로컬로 유지 한 다음 동일한 HoloLens 장치에서 이후 앱 세션으로 다시 가져올 수 있습니다.
 
-<a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a>를 사용 하 여 로컬 SpatialAnchor에서 영 속 클라우드 앵커를 만들 수 있습니다. 그러면 앱이 여러 HoloLens, IOS 및 Android 장치에서 찾을 수 있습니다.  여러 장치에서 공통 공간 앵커를 공유 하면 각 사용자가 실시간으로 동일한 물리적 위치에서 해당 앵커에 대해 렌더링 된 콘텐츠를 볼 수 있습니다. 
+<a href="/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a>를 사용 하 여 로컬 SpatialAnchor에서 영 속 클라우드 앵커를 만들 수 있습니다. 그러면 앱이 여러 HoloLens, IOS 및 Android 장치에서 찾을 수 있습니다.  여러 장치에서 공통 공간 앵커를 공유 하면 각 사용자가 실시간으로 동일한 물리적 위치에서 해당 앵커에 대해 렌더링 된 콘텐츠를 볼 수 있습니다. 
 
-HoloLens, iOS 및 Android 장치에서 비동기 홀로그램 지 속성에 대해 <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a> 를 사용할 수도 있습니다.  내구성이 있는 클라우드 공간 앵커를 공유 하 여 여러 장치는 동시에 함께 제공 되지 않더라도 시간이 지남에 따라 동일한 지속형 홀로그램을 관찰할 수 있습니다.
+HoloLens, iOS 및 Android 장치에서 비동기 홀로그램 지 속성에 대해 <a href="/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a> 를 사용할 수도 있습니다.  내구성이 있는 클라우드 공간 앵커를 공유 하 여 여러 장치는 동시에 함께 제공 되지 않더라도 시간이 지남에 따라 동일한 지속형 홀로그램을 관찰할 수 있습니다.
 
-HoloLens 앱에서 공유 환경 빌드를 시작 하려면 5 분 <a href="https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">Azure 공간 앵커 HoloLens 빠른</a>시작을 사용해 보세요.
+HoloLens 앱에서 공유 환경 빌드를 시작 하려면 5 분 <a href="/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">Azure 공간 앵커 HoloLens 빠른</a>시작을 사용해 보세요.
 
-Azure 공간 앵커를 사용 하 여 실행 하면 <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-cpp-winrt" target="_blank">HoloLens에서 앵커를 만들고 찾을</a>수 있습니다.  <a href="https://docs.microsoft.com/azure/spatial-anchors/create-locate-anchors-overview" target="_blank">Android 및 iOS</a> 에 대 한 연습을 사용할 수 있으므로 모든 장치에서 동일한 앵커를 공유할 수 있습니다.
+Azure 공간 앵커를 사용 하 여 실행 하면 <a href="/azure/spatial-anchors/concepts/create-locate-anchors-cpp-winrt" target="_blank">HoloLens에서 앵커를 만들고 찾을</a>수 있습니다.  <a href="/azure/spatial-anchors/create-locate-anchors-overview" target="_blank">Android 및 iOS</a> 에 대 한 연습을 사용할 수 있으므로 모든 장치에서 동일한 앵커를 공유할 수 있습니다.
 
 ### <a name="create-spatialanchors-for-holographic-content"></a>Holographic 콘텐츠에 대 한 SpatialAnchors 만들기
 
@@ -382,7 +382,7 @@ Azure 공간 앵커를 사용 하 여 실행 하면 <a href="https://docs.micros
 * 로컬 메모리 내 컬렉션과 별도로 유지 되는 시스템의 SpatialAnchorStore에서 앵커를 로드 하는 중입니다.
 * 앱에서이 작업을 선택 하면 SpatialAnchorStore에 대 한 로컬 메모리 내 앵커 컬렉션을 저장 합니다.
 
-[SpatialAnchorStore](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx)에 [SpatialAnchor](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx) 개체를 저장 하는 방법은 다음과 같습니다.
+[SpatialAnchorStore](/uwp/api/Windows.Perception.Spatial.SpatialAnchorStore)에 [SpatialAnchor](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) 개체를 저장 하는 방법은 다음과 같습니다.
 
 클래스가 시작 되 면 SpatialAnchorStore를 비동기적으로 요청 합니다. 이 작업에는 API가 앵커 저장소를 로드할 때 시스템 i/o가 포함 됩니다 .이 API는 비동기 방식으로 수행 되므로 i/o가 차단 되지 않습니다.
 
@@ -539,7 +539,7 @@ SpatialAnchorStore에서 앵커를 복원 하려면 원하는 각 항목을 자�
 
 ### <a name="clear-the-anchor-store-when-needed"></a>필요한 경우 앵커 저장소 지우기
 
-경우에 따라 앱 상태를 지우고 새 데이터를 작성 해야 합니다. [SpatialAnchorStore](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx)를 사용 하 여이 작업을 수행 하는 방법은 다음과 같습니다.
+경우에 따라 앱 상태를 지우고 새 데이터를 작성 해야 합니다. [SpatialAnchorStore](/uwp/api/Windows.Perception.Spatial.SpatialAnchorStore)를 사용 하 여이 작업을 수행 하는 방법은 다음과 같습니다.
 
 도우미 클래스를 사용 하 여 Clear 함수를 래핑하는 것은 거의 필요 하지 않습니다. 도우미 클래스에는 SpatialAnchorStore 인스턴스를 소유 하는 책임이 있으므로 샘플 구현에서이 작업을 수행 하도록 선택 했습니다.
 
@@ -561,7 +561,7 @@ SpatialAnchorStore에서 앵커를 복원 하려면 원하는 각 항목을 자�
 
 ### <a name="example-relating-anchor-coordinate-systems-to-stationary-reference-frame-coordinate-systems"></a>예: 앵커 좌표계와 고정 참조 프레임 좌표계 연결
 
-앵커가 있고 앵커의 좌표계에 있는 항목을 다른 콘텐츠에 대해 이미 사용 하 고 있는 SpatialStationaryReferenceFrame와 연결 하려는 경우를 가정해 보겠습니다. [TryGetTransformTo](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.trygettransformto.aspx) 를 사용 하 여 앵커의 좌표계에서 고정 참조 프레임으로의 변환을 가져올 수 있습니다.
+앵커가 있고 앵커의 좌표계에 있는 항목을 다른 콘텐츠에 대해 이미 사용 하 고 있는 SpatialStationaryReferenceFrame와 연결 하려는 경우를 가정해 보겠습니다. [TryGetTransformTo](/uwp/api/Windows.Perception.Spatial.SpatialCoordinateSystem) 를 사용 하 여 앵커의 좌표계에서 고정 참조 프레임으로의 변환을 가져올 수 있습니다.
 
 ```
    // In this code snippet, someAnchor is a SpatialAnchor^ that has been initialized and is valid in the current environment.
@@ -740,7 +740,7 @@ From **HolographicTagAlongSampleMain:: Render**:
        );
 ```
 
-간단하죠. 그러면 홀로그램은 사용자의 응시 방향 앞에서 2 미터의 위치를 "추적" 합니다.
+정말 간단하죠. 그러면 홀로그램은 사용자의 응시 방향 앞에서 2 미터의 위치를 "추적" 합니다.
 
 >[!NOTE]
 >이 예제에서는 추가 콘텐츠도 로드 합니다. StationaryQuadRenderer를 참조 하세요.
@@ -804,10 +804,10 @@ Windows Holographic 앱 템플릿에는 이미 생성 된 LocatabilityChanged �
 
 [공간 매핑](spatial-mapping-in-directx.md) api는 좌표계를 사용 하 여 표면 망상의 모델 변환을 가져옵니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [좌표계](../../design/coordinate-systems.md)
 * [Spatial Anchors](../../design/spatial-anchors.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [DirectX의 헤드 및 눈 응시](gaze-in-directx.md)
 * [DirectX의 헤드 및 모션 컨트롤러](hands-and-motion-controllers-in-directx.md)
 * [DirectX의 공간 매핑](spatial-mapping-in-directx.md)

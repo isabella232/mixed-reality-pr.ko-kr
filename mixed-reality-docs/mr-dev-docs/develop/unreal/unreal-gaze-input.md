@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, HoloLens 2, 눈 추적, 응시 입력, 헤드 탑재 된 디스플레이, Unreal engine, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: e546867fe02acd5e72ee76b4108a369ec25fd32f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0c5191534313b94a5382d1065f5a5dd1a208bb49
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010143"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98579986"
 ---
 # <a name="gaze-input"></a>응시 입력
 
@@ -117,7 +117,7 @@ void AEyeTracker::Tick(float DeltaTime)
 언제든지 [Unreal 개발 검사점](unreal-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
-* [조정](../../calibration.md)
+* [조정](/hololens/hololens-calibration)
 * [편안함](../../design/comfort.md)
 * [응시 및 커밋](../../design/gaze-and-commit.md)
 * [음성 입력 ](../../out-of-scope/voice-design.md)

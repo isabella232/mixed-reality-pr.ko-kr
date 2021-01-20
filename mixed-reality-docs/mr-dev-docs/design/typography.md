@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality, 디자인, 스타일, 글꼴, 입력 체계, ui, ux, 텍스트, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens
-ms.openlocfilehash: 38acc8c0d2c7dbd7bcb192f82bb1bb52838323ac
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 015273c84462e48e145af77421da4131bb650d9e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007653"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580275"
 ---
 # <a name="typography"></a>입력 체계
 
@@ -37,15 +37,15 @@ HoloLens에서 덧셈 색 시스템을 기반으로 하는 holograms를 사용 �
 
 ### <a name="limit-your-fonts"></a>글꼴 제한
 
-단일 컨텍스트에서 두 개 이상의 다른 글꼴 패밀리를 사용 하지 마십시오. 글꼴이 너무 많으면 사용자 환경의 조화와 일관성이 손상 되어 정보를 사용 하기가 어려워집니다. HoloLens에서 정보는 물리적 환경 위에 중첩 되므로 글꼴 스타일을 너무 많이 사용 하면 환경이 저하 됩니다. 맑은 고딕은 모든 Microsoft 디지털 디자인의 글꼴입니다. Windows Mixed Reality 셸에서 일관 되 게 사용 됩니다. [Windows 디자인 도구 키트 페이지](https://docs.microsoft.com/windows/uwp/design-downloads/)에서 맑은 고딕 글꼴 파일을 다운로드할 수 있습니다.
+단일 컨텍스트에서 두 개 이상의 다른 글꼴 패밀리를 사용 하지 마십시오. 글꼴이 너무 많으면 사용자 환경의 조화와 일관성이 손상 되어 정보를 사용 하기가 어려워집니다. HoloLens에서 정보는 물리적 환경 위에 중첩 되므로 글꼴 스타일을 너무 많이 사용 하면 환경이 저하 됩니다. 맑은 고딕은 모든 Microsoft 디지털 디자인의 글꼴입니다. Windows Mixed Reality 셸에서 일관 되 게 사용 됩니다. [Windows 디자인 도구 키트 페이지](/windows/uwp/design-downloads/)에서 맑은 고딕 글꼴 파일을 다운로드할 수 있습니다.
 
-[맑은 고딕 서체에 대 한 자세한 정보](https://docs.microsoft.com/windows/uwp/design/style/typography)
+[맑은 고딕 서체에 대 한 자세한 정보](/windows/uwp/design/style/typography)
 
 ### <a name="avoid-thin-font-weights"></a>씬 글꼴 가중치 방지
 
 씬 수직선을 진동 하 고 가독성을 저하 시킬 수 있으므로 42 pt 아래의 형식 크기에 대 한 밝거나 글꼴 가중치를 사용 하지 마십시오. 스트로크 두께가 충분 한 최신 글꼴이 제대로 작동 합니다. 예를 들어, Helvetica 및 Arial은 일반 또는 굵게 가중치를 사용 하 여 HoloLens에서 읽을 수 있습니다.
 
-### <a name="color"></a>Color
+### <a name="color"></a>색
 
 HoloLens에서 holograms은 가감 시스템을 사용 하 여 생성 되므로 흰색 텍스트는 매우 읽기 쉽게 합니다. 시작 메뉴와 앱 바에서 흰색 텍스트의 예제를 찾을 수 있습니다. HoloLens의 백 플레이트 없이 흰색 텍스트가 제대로 작동 하는 경우에도 복잡 한 물리적 배경으로 인해 형식을 읽기가 어려울 수 있습니다. 사용자의 포커스를 개선 하 고 물리적 배경에서 혼란을 최소화 하기 위해 어두운 색 또는 컬러 백 분판에 흰색 텍스트를 사용 하는 것이 좋습니다.
 
@@ -129,7 +129,7 @@ HoloLens에서 holograms은 가감 시스템을 사용 하 여 생성 되므로 
 
 ---
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [Unity의 텍스트](../develop/unity/text-in-unity.md)
-* [색, 광원 및 재질](../color,-light-and-materials.md)
+* [색, 광원 및 재질](./color-light-and-materials.md)

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 좌표계, 공간 좌표계, 방향 전용, 고정 규모, 대규모, 실내 규모, 전 세계 규모, 360 수준, 연결 됨, 순위, 방, 세계, 크기 조정, 위치, 방향, 고정, 연결 됨, 스테이지, 앵커, 공간 고정, 전 세계 잠금, 전 세계 잠금, 지역에서 잠김, 본문-잠금, 경계, 지 속성, 공유, 손실 추적, 클라우드 공간 앵커, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실
-ms.openlocfilehash: 42efc1444c030641ad215501c4a12d6315ea9857
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 6d4bddc17027ad32f82fbc8c37860e64b2bc57eb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848023"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582411"
 ---
 # <a name="coordinate-systems"></a>좌표계
 
@@ -32,9 +32,9 @@ ms.locfileid: "97848023"
     </colgroup>
     <tr>
         <td><strong>기능</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>몰입형 헤드셋</strong></a></td>
+        <td><a href="/windows/mixed-reality/immersive-headset-hardware-details"><strong>몰입형 헤드셋</strong></a></td>
     </tr>
      <tr>
         <td><a href="coordinate-systems.md#stationary-frame-of-reference">고정 참조 프레임</a></td>
@@ -94,7 +94,7 @@ ms.locfileid: "97848023"
 
 | 6DOF 추적 | 바닥 정의 | 360 ° 추적 | 범위가 정의 됨 | Spatial Anchors | 최대 환경 | 
 |----------|----------|----------|----------|----------|----------|
-|  No |  - |  - |  - |  - |  **방향 전용** | 
+|  아니요 |  - |  - |  - |  - |  **방향 전용** | 
 |  **예** |  아니요 |  - |  - |  - |  **끼운** | 
 |  **예** |  **예** |  아니요 |  - |  - |  **이후** | 
 |  **예** |  **예** |  **예** |  아니요 |  - |  **서-360 °** | 
@@ -105,7 +105,7 @@ ms.locfileid: "97848023"
 
 ## <a name="spatial-coordinate-systems"></a>공간 좌표계
 
-모든 3D 그래픽 응용 프로그램은 [데카르트 좌표계](https://docs.microsoft.com/windows/uwp/graphics-concepts/coordinate-systems) 를 사용 하 여 가상 개체의 위치와 방향을 설명 합니다. 이러한 좌표계는 X, Y, Z 축의 개체를 배치 하는 데 사용할 3 개의 수직선 축을 설정 합니다.
+모든 3D 그래픽 응용 프로그램은 [데카르트 좌표계](/windows/uwp/graphics-concepts/coordinate-systems) 를 사용 하 여 가상 개체의 위치와 방향을 설명 합니다. 이러한 좌표계는 X, Y, Z 축의 개체를 배치 하는 데 사용할 3 개의 수직선 축을 설정 합니다.
 
 [혼합 현실](../discover/mixed-reality.md)에서는 응용 프로그램에서 가상 및 물리적 좌표계를 설명 합니다. Windows에서는 실제 세계 **공간 좌표계** 에서 실제 의미를 갖는 좌표계를 호출 합니다.
 
@@ -191,13 +191,13 @@ Windows Mixed Reality는 이전 섹션에서 설명 하는 문제를 해결 합�
 
 사용자는 저장소에 대 한 앵커를 유지 하 여 개별 holograms를 배치 하거나 앱이 다양 한 holograms을 배치할 작업 영역을 배치한 다음, 앱의 여러 사용에 대해 나중에 해당 holograms를 찾을 수 있습니다.
 
-HoloLens, iOS 및 Android 장치에서 비동기 홀로그램 지 속성에 대해 <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a> 를 사용할 수도 있습니다.  내구성이 있는 클라우드 공간 앵커를 공유 하 여 여러 장치는 동시에 함께 제공 되지 않더라도 시간이 지남에 따라 동일한 지속형 홀로그램을 관찰할 수 있습니다.
+HoloLens, iOS 및 Android 장치에서 비동기 홀로그램 지 속성에 대해 <a href="/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a> 를 사용할 수도 있습니다.  내구성이 있는 클라우드 공간 앵커를 공유 하 여 여러 장치는 동시에 함께 제공 되지 않더라도 시간이 지남에 따라 동일한 지속형 홀로그램을 관찰할 수 있습니다.
 
 ### <a name="spatial-anchor-sharing"></a>공간 앵커 공유
 
 앱은 실시간 공유 환경을 허용 하 여 공간 앵커를 실시간으로 다른 장치와 공유할 수도 있습니다.
 
-앱은 <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a>를 사용 하 여 여러 HoloLens, IOS 및 Android 장치에서 공간 앵커를 공유할 수 있습니다. 각 디바이스가 동일한 공간 앵커를 사용하여 홀로그램을 렌더링하면 모든 사용자가 실제 세계에서 같은 위치에 표시되는 홀로그램을 보게 됩니다.
+앱은 <a href="/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a>를 사용 하 여 여러 HoloLens, IOS 및 Android 장치에서 공간 앵커를 공유할 수 있습니다. 각 디바이스가 동일한 공간 앵커를 사용하여 홀로그램을 렌더링하면 모든 사용자가 실제 세계에서 같은 위치에 표시되는 홀로그램을 보게 됩니다.
 
 ## <a name="avoid-head-locked-content"></a>콘텐츠 잠금 방지
 
@@ -233,11 +233,11 @@ HoloLens, iOS 및 Android 장치에서 비동기 홀로그램 지 속성에 대�
 
 경우에 따라 홈 또는 기타 공간에 동일한 두 개의 영역이 있을 수 있습니다. 예를 들어 두 개의 동일한 회의실, 동일한 두 개의 동일한 모퉁이 영역, 장치의 보기 필드를 포함 하는 두 개의 매우 동일한 포스터입니다. 이러한 시나리오에서 장치는 때때로 동일한 부분을 혼동 하 고 내부 표현에서 동일 하 게 표시 될 수 있습니다. 이로 인해 일부 영역의 holograms 다른 위치에 나타날 수 있습니다. 환경에 대 한 내부 표현이 손상 되었기 때문에 장치에서 추적 손실을 자주 시작할 수 있습니다. 이 경우 시스템의 환경적 이해를 다시 설정 하는 것이 좋습니다. 지도를 다시 설정 하면 모든 공간 앵커 배치가 손실 됩니다. 이렇게 하면 헤드셋이 환경의 고유한 영역에서 잘 추적 됩니다. 그러나 장치가 동일한 영역 간에 혼동 되는 경우 문제가 발생할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 * [공간 좌표계 및 holographic 렌더링의 GDC 2017 프레젠테이션](https://channel9.msdn.com/events/GDC/GDC-2017/GDC2017-008)
 * [Unity의 좌표계](../develop/unity/coordinate-systems-in-unity.md)
 * [DirectX의 좌표계](../develop/native/coordinate-systems-in-directx.md)
 * [Spatial Anchors](spatial-anchors.md)
 * [혼합 현실의 공유 환경](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [사례 연구 - 현실의 구멍 속 살펴보기](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

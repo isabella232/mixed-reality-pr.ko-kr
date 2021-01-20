@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
 keywords: 혼합 현실, 응시, 지속, 상호 작용, 디자인, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, ux, 지침, 목록 뷰
-ms.openlocfilehash: 2bfd984a466c1ccd3913e889ca57663800f46380
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: e70536b7247153979b8650ba1f5bcbe1a7cd08af
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007083"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582200"
 ---
 # <a name="head-gaze-and-dwell"></a>헤드 게이즈(head-gaze) 및 드웰(dwell)
 
@@ -32,7 +32,7 @@ ms.locfileid: "98007083"
     </colgroup>
     <tr>
         <td><strong>입력 모델</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens(1세대)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
     </tr>
@@ -182,7 +182,7 @@ Yo – yo 효과는 콘텐츠 배치 및 헤드-응시 컨트롤이 반복적으
 
 ---
  
- ## <a name="see-also"></a>참조
+ ## <a name="see-also"></a>참고 항목
 
 * [응시 및 커밋](gaze-and-commit.md)
 * [손 - 직접 조작](direct-manipulation.md)

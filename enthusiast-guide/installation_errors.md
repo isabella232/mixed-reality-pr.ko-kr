@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, 설치
 appliesto:
 - Windows 10
-ms.openlocfilehash: 56ead28a5809eadef1797507168b68cbaf79953e
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 056caca0b7e562007178929d4a59c2faeaece450
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726064"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581667"
 ---
 # <a name="installation-errors"></a>설치 오류
 
@@ -31,7 +31,7 @@ Windows Mixed Reality에는 최소한 WDDM 2.2을 지 원하는 그래픽 카드
 
 ## <a name="before-we-can-set-up-windows-mixed-reality-your-administrator-will-need-to-enable-it-for-your-organization-learn-more"></a>"Windows Mixed Reality를 설정 하기 전에 관리자가 조직에 대해 사용 하도록 설정 해야 합니다. 자세히 알아보기 "
 
-회사에서 관리 하는 네트워크를 사용 하 고 조직에서 WSUS (Windows Server Update Services)를 사용 하 고 있는 것 같습니다. 이러한 정책 및 다운로드를 차단할 수 있는 기타 정책 [Windows Mixed Reality를 사용](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality#enable)하려면 조직의 IT 부서 또는 시스템 관리자에 게 문의 하세요.
+회사에서 관리 하는 네트워크를 사용 하 고 조직에서 WSUS (Windows Server Update Services)를 사용 하 고 있는 것 같습니다. 이러한 정책 및 다운로드를 차단할 수 있는 기타 정책 [Windows Mixed Reality를 사용](/windows/application-management/manage-windows-mixed-reality#enable)하려면 조직의 IT 부서 또는 시스템 관리자에 게 문의 하세요.
 
 ## <a name="we-couldnt-download-the-mixed-reality-software-or-hang-tight-while-we-do-some-downloading"></a>"혼합 현실 소프트웨어를 다운로드할 수 없습니다." 또는 "다운로드 하는 동안 잠시 기다려 주세요."
 

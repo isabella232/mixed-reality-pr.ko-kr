@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사전 판매, 연구, 구매, 구입 하기 전
 appliesto:
 - Windows 10
-ms.openlocfilehash: e9b9254166b3ac4c188531d3651407ecfd853460
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 1f7eaa59a18598d1df2ecef611a9ea7d58e6a36a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725514"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580293"
 ---
 # <a name="before-you-buy-frequently-asked-questions"></a>질문과 대답을 구입 하기 전에
 
@@ -63,7 +63,7 @@ ms.locfileid: "97725514"
 
 * **외부에서 추적** Oculus, 기타는 외부에서 추적을 사용 합니다.  외부에서 추적을 사용 하 여 헤드셋은 하나 이상의 외부 장치에 의해 추적 됩니다. 카메라는 환경에 배치 되 고 환경을 기반으로 하는 헤드셋의 위치를 결정 하는 데 사용 되는 외부 장치에 기본 제공 됩니다.
 
-[내부 추적](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)에 대해 자세히 알아보세요.
+[내부 추적](./tracking-system.md)에 대해 자세히 알아보세요.
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>움직임 컨트롤러의 내부 추적 추적에서 카메라 FOV로 인 한 게임 재생에 영향을 줄 수 있음
 
@@ -89,7 +89,7 @@ ms.locfileid: "97725514"
 <th style="width:10%"> Bluetooth </th>
 <th style="width:10%"> IPD 조정 </th>
 <th style="width:10%"> 출시 날짜 </th>
-<th style="width:25%"> 자세한 정보 </th>
+<th style="width:25%"> 추가 정보 </th>
 </tr>
 
 <tr>
@@ -368,7 +368,7 @@ ms.locfileid: "97725514"
 
 **빠른 응답:** 예, Windows Mixed Reality는 공간이 많지 않은 경우에도 작동 합니다. "책상-규모" 환경을 선택 하 여 설치 하는 동안이를 설정할 수 있습니다.
 
-## <a name="content"></a>콘텐츠
+## <a name="content"></a>Content
 
 ### <a name="what-games-and-apps-run-on-windows-mixed-reality"></a>Windows Mixed Reality에서 실행 되는 게임 및 앱은 무엇 인가요?
 

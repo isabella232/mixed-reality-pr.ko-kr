@@ -6,18 +6,18 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 릴리스 정보, 버전, windows 10, 빌드, rs3, os
-ms.openlocfilehash: 83c16a40388960547cfcf7444e1ae630c2f5b7f2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: e3be8edab2aedd18013622c671283b71f95f98d8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009493"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581443"
 ---
 # <a name="release-notes---october-2017"></a>릴리스 정보 - 2017년 10월
 
-Windows Mixed Reality를 시작 합니다. Windows 10에 적합 하지 않은 **[작성자 업데이트](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/)** 릴리스는 새로운 [windows Mixed Reality 몰입 형 헤드셋](https://docs.microsoft.com/windows/mixed-reality/discover/immersive-headset-hardware-details) 및 [동작 컨트롤러](https://docs.microsoft.com/windows/mixed-reality/design/motion-controllers)에 대 한 지원을 도입 했습니다. 이제 새로운 세계를 탐색 하 고, VR 게임을 재생 하 고, [Windows Mixed Reality 지원 PC](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)에 연결 된 경우 몰입 형 엔터테인먼트를 즐길 수 있습니다.
+Windows Mixed Reality를 시작 합니다. Windows 10에 적합 하지 않은 **[작성자 업데이트](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/)** 릴리스는 새로운 [windows Mixed Reality 몰입 형 헤드셋](/windows/mixed-reality/discover/immersive-headset-hardware-details) 및 [동작 컨트롤러](/windows/mixed-reality/design/motion-controllers)에 대 한 지원을 도입 했습니다. 이제 새로운 세계를 탐색 하 고, VR 게임을 재생 하 고, [Windows Mixed Reality 지원 PC](./windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)에 연결 된 경우 몰입 형 엔터테인먼트를 즐길 수 있습니다.
 
-Windows Mixed Reality 헤드셋 및 동작 컨트롤러 릴리스는 [Microsoft HoloLens](https://docs.microsoft.com/windows/mixed-reality/hololens-hardware-details)를 비롯 한 [windows mixed reality 플랫폼](https://docs.microsoft.com/windows/mixed-reality/discover/mixed-reality)에 대 한 대규모 팀 활동 및 중요 한 다룬입니다. HoloLens는 Windows 10에서의 작성자 업데이트 업데이트로 업데이트를 수신 하지 않지만 HoloLens에서 작업은 중지 되지 않습니다. Windows Mixed Reality의 최근 작업에서 전체적으로 적용 되는 많은 학습 및 통찰력을 얻을 수 있습니다. 실제로 Windows Mixed Reality 몰입 형 헤드셋 및 동작 컨트롤러는 동일한 Api, 도구 및 개념이 둘 다에 적용 되므로 HoloLens를 개발 하는 데 적합 한 진입점을 나타냅니다.
+Windows Mixed Reality 헤드셋 및 동작 컨트롤러 릴리스는 [Microsoft HoloLens](/windows/mixed-reality/hololens-hardware-details)를 비롯 한 [windows mixed reality 플랫폼](/windows/mixed-reality/discover/mixed-reality)에 대 한 대규모 팀 활동 및 중요 한 다룬입니다. HoloLens는 Windows 10에서의 작성자 업데이트 업데이트로 업데이트를 수신 하지 않지만 HoloLens에서 작업은 중지 되지 않습니다. Windows Mixed Reality의 최근 작업에서 전체적으로 적용 되는 많은 학습 및 통찰력을 얻을 수 있습니다. 실제로 Windows Mixed Reality 몰입 형 헤드셋 및 동작 컨트롤러는 동일한 Api, 도구 및 개념이 둘 다에 적용 되므로 HoloLens를 개발 하는 데 적합 한 진입점을 나타냅니다.
 
 각 장치에 대 한 최신 릴리스로 업데이트 하려면 **설정** 앱을 열고 **업데이트 & 보안** 으로 이동한 후 **업데이트 확인** 단추를 선택 합니다. Windows 10 PC에서 windows [미디어 만들기 도구](https://www.microsoft.com/software-download/windows10)를 사용 하 여 windows 10에이를 수동으로 설치할 수도 있습니다.
 
@@ -30,16 +30,16 @@ Windows Mixed Reality 헤드셋 및 동작 컨트롤러 릴리스는 [Microsoft 
 
 Windows 10이 하에 대 한 업데이트는 windows Mixed Reality 헤드셋 및 동작 컨트롤러에 대 한 지원을 공식적으로 소개 하 고 Windows 10을 세계 최초의 공간 운영 체제로 만듭니다. 다음은 주요 사항입니다.
 * **[다양 한 헤드셋](https://blogs.windows.com/windowsexperience/2017/10/03/how-to-pre-order-your-windows-mixed-reality-headset/)** -Windows Mixed Reality는 파트너가 동작 컨트롤러와 함께 제공 되는 $399 USD부터 다양 한 헤드셋 유형을 제공할 수 있도록 합니다.
-* **[동작 컨트롤러](https://docs.microsoft.com/windows/mixed-reality/design/motion-controllers)** -Windows Mixed Reality 동작 컨트롤러는 Bluetooth와 기능을 통해 PC와 무선으로 페어링 하 고 자유롭게 추적 하 고 많은 입력 방법 및 imus를 사용 합니다.
-* **[간편한 설정 및 이식성](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs)** -10 분 이내에 설정 하 고 시작 합니다. 몰입 형 헤드셋은 내부 추적을 사용 하 여 권한과 자유의 이동 및 동작 컨트롤러를 추적 합니다. 외부 카메라 또는 lighthouse 표식이 필요 하지 않습니다.
-* **[광범위 한 pc에 대 한 지원](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)** -Windows Mixed Reality를 사용 하면 $499 USD부터 시작 하는 통합 그래픽 카드 및 pc 선택에 대 한 지원으로 이전 보다 훨씬 더 많은 사람들이 데스크톱을 경험할 수 있습니다.
-* **[Windows Mixed Reality 홈](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)** -세계 최초의 공간 운영 체제는 2d 앱을 사용 하 여 다중 작업 하 고, VR 게임 및 앱을 시작 하 고, 장식용 holograms을 배치 하기 위한 친숙 한 홈 환경을 제공 합니다.
+* **[동작 컨트롤러](/windows/mixed-reality/design/motion-controllers)** -Windows Mixed Reality 동작 컨트롤러는 Bluetooth와 기능을 통해 PC와 무선으로 페어링 하 고 자유롭게 추적 하 고 많은 입력 방법 및 imus를 사용 합니다.
+* **[간편한 설정 및 이식성](./recommended-adapters-for-windows-mixed-reality-capable-pcs.md)** -10 분 이내에 설정 하 고 시작 합니다. 몰입 형 헤드셋은 내부 추적을 사용 하 여 권한과 자유의 이동 및 동작 컨트롤러를 추적 합니다. 외부 카메라 또는 lighthouse 표식이 필요 하지 않습니다.
+* **[광범위 한 pc에 대 한 지원](./windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)** -Windows Mixed Reality를 사용 하면 $499 USD부터 시작 하는 통합 그래픽 카드 및 pc 선택에 대 한 지원으로 이전 보다 훨씬 더 많은 사람들이 데스크톱을 경험할 수 있습니다.
+* **[Windows Mixed Reality 홈](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)** -세계 최초의 공간 운영 체제는 2d 앱을 사용 하 여 다중 작업 하 고, VR 게임 및 앱을 시작 하 고, 장식용 holograms을 배치 하기 위한 친숙 한 홈 환경을 제공 합니다.
 * **[Microsoft Store의 놀라운 VR 게임 및 앱](https://www.microsoft.com/store/collections/MR-All-ImmersiveContent/)** -HULU 루 vr 및 360 비디오와 같은 몰입 형 엔터테인먼트에서 슈퍼 핫 VR 및 애리조나 햇빛과와 같은 대규모의 게임에 이르기까지 Microsoft Store는 Windows Mixed Reality에서 경험을 할 수 있는 다양 한 콘텐츠를 제공 합니다.
-* **[SteamVR 초기 액세스](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)** -windows 10에 적합 작성자 업데이트를 통해 Windows mixed reality 헤드셋 및 컨트롤러를 사용 하 여 SteamVR 타이틀을 재생할 수 있으므로 Windows mixed reality 사용자가 가장 많은 VR 타이틀 카탈로그를 사용할 수 있습니다.
+* **[SteamVR 초기 액세스](./using-steamvr-with-windows-mixed-reality.md)** -windows 10에 적합 작성자 업데이트를 통해 Windows mixed reality 헤드셋 및 컨트롤러를 사용 하 여 SteamVR 타이틀을 재생할 수 있으므로 Windows mixed reality 사용자가 가장 많은 VR 타이틀 카탈로그를 사용할 수 있습니다.
 
 ## <a name="known-issues"></a>알려진 문제
 
-뛰어난 Windows Mixed Reality 환경을 제공 하기 위해 노력 했지만 여전히 몇 가지 알려진 문제를 추적 하 고 있습니다. 다른 항목을 찾을 경우 [피드백을 제공 해 주세요](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback).
+뛰어난 Windows Mixed Reality 환경을 제공 하기 위해 노력 했지만 여전히 몇 가지 알려진 문제를 추적 하 고 있습니다. 다른 항목을 찾을 경우 [피드백을 제공 해 주세요](/windows/mixed-reality/give-us-feedback).
 
 ### <a name="desktop-app-in-the-windows-mixed-reality-home"></a>Windows Mixed Reality 홈의 데스크톱 앱
 * 캡처 도구는 데스크톱 앱에서 작동 하지 않습니다.
@@ -94,8 +94,8 @@ Windows 10이 하에 대 한 업데이트는 windows Mixed Reality 헤드셋 및
 * [릴리스 정보 - 2016년 5월](release-notes-may-2016.md)
 * [릴리스 정보 - 2016년 3월](release-notes-march-2016.md)
 
-## <a name="see-also"></a>참조
-* [모던 헤드셋 지원 (외부 링크)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
-* [HoloLens 알려진 문제](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
-* [도구 설치](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [피드백 보내기](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)
+## <a name="see-also"></a>참고 항목
+* [모던 헤드셋 지원 (외부 링크)](./troubleshooting-windows-mixed-reality.md)
+* [HoloLens 알려진 문제](/windows/mixed-reality/hololens-known-issues)
+* [도구 설치](/windows/mixed-reality/develop/install-the-tools)
+* [피드백 보내기](/windows/mixed-reality/give-us-feedback)

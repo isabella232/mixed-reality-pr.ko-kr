@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, 공간 매핑, 렌더러, collider, 메시, 검색, 구성 요소, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: b4c45ba91a3e864c8cd29f3ebc3396d0250948f4
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 841cc1fa2a37884545ae12865f9b7cf56338dc07
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009293"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582540"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity의 공간 매핑
 
@@ -34,7 +34,7 @@ Unity에는 다음과 같은 방법으로 개발자에 게 노출 되는 공간 
     </colgroup>
     <tr>
         <td><strong>기능</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (첫 번째 gen)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (첫 번째 gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
     </tr>
@@ -487,7 +487,7 @@ Mixed Reality Toolkit v 2에서 공간 매핑을 사용 하는 방법에 대 한
 앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다. 
 
 > [!div class="nextstepaction"]
-> [텍스트](text-in-unity.md)
+> [Text](text-in-unity.md)
 
 또는 Mixed Reality 플랫폼 기능 및 API로 이동합니다.
 
@@ -496,7 +496,7 @@ Mixed Reality Toolkit v 2에서 공간 매핑을 사용 하는 방법에 대 한
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [좌표계](../../design/coordinate-systems.md)
 * [Unity의 좌표계](coordinate-systems-in-unity.md)
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>

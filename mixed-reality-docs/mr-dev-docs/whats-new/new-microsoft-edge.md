@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 08/04/2020
 ms.topic: article
 keywords: edge, new, 몰입 형 웹, microsoft edge, browser, vr, 360, 360 video, 360 viewer, webxr, webvr
-ms.openlocfilehash: ef55ee564e0a7ea11aaaad62ebf259459454ab72
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 041c374e1e2120c3aac35bd09889b8594825a186
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010033"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582508"
 ---
 # <a name="the-new-microsoft-edge-for-windows-mixed-reality"></a>새로운 Windows Mixed Reality 용 Microsoft Edge
 
@@ -52,7 +52,7 @@ Windows 10 버전 1903 이상에 대 한 2020-01 누적 업데이트를 수행�
 
 **이러한 상황이 발생 하는 이유**
 
-Windows Mixed Reality의 클래식 Win32 응용 프로그램에 대 한 지원은 [windows 10 2019 업데이트](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-may-2019)에서 도입 되었습니다. 이 지원을 사용 하려면 Win32 응용 프로그램을 호스트 하는 가상 모니터를 만들어야 합니다. 새 Win32 응용 프로그램이 시작 될 때마다 다른 가상 모니터를 만들어야 합니다. 불행 하 게도 가상 모니터를 만드는 작업은 헤드셋 표시를 잠깐 중지 하는 데 많이 사용 되는 작업입니다. 고객은이에 대 한 피드백을 사용자에 게 제공 하 여 불편을 경험 하 고 있습니다. 사용자 의견 및 향상 된 Win32 응용 프로그램 사용으로 인해 Windows Mixed Reality를 시작 하는 동안 3 개의 가상 모니터를 미리 할당 하기로 결정 했습니다. 이로 인해 중단이 발생 하지 않으며 고객이 헤드셋 표시 중지를 발생 시 키 지 않고 최대 3 개의 동시 Win32 응용 프로그램을 시작할 수 있습니다.
+Windows Mixed Reality의 클래식 Win32 응용 프로그램에 대 한 지원은 [windows 10 2019 업데이트](/windows/mixed-reality/enthusiast-guide/release-notes-may-2019)에서 도입 되었습니다. 이 지원을 사용 하려면 Win32 응용 프로그램을 호스트 하는 가상 모니터를 만들어야 합니다. 새 Win32 응용 프로그램이 시작 될 때마다 다른 가상 모니터를 만들어야 합니다. 불행 하 게도 가상 모니터를 만드는 작업은 헤드셋 표시를 잠깐 중지 하는 데 많이 사용 되는 작업입니다. 고객은이에 대 한 피드백을 사용자에 게 제공 하 여 불편을 경험 하 고 있습니다. 사용자 의견 및 향상 된 Win32 응용 프로그램 사용으로 인해 Windows Mixed Reality를 시작 하는 동안 3 개의 가상 모니터를 미리 할당 하기로 결정 했습니다. 이로 인해 중단이 발생 하지 않으며 고객이 헤드셋 표시 중지를 발생 시 키 지 않고 최대 3 개의 동시 Win32 응용 프로그램을 시작할 수 있습니다.
 
 **해결 방법**
 

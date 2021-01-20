@@ -6,18 +6,18 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 눈 추적, 혼합 현실, 입력, 눈동자-응시, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 디자인, 상호 작용
-ms.openlocfilehash: b5091b92fd048f72184212401d54ad0b7353875c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: db3cb774d72de13c2f1e51d446969ee7a4cdf2b7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008583"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582388"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>HoloLens의 눈동자 기반 상호 작용 2
 
 ![MRTK의 아이 추적 데모](images/mrtk_et_scenemenu.jpg)
 
-HoloLens 2에 대 한 흥미로운 새로운 기능 중 하나는 눈 추적입니다. [HoloLens의 눈동자 추적 2](eye-tracking.md) 페이지에서는 몇 가지 개발자 지침을 제공 하 고 눈 추적을 위해 강조 된 사용 사례를 제공 하는 각 사용자가 [보정](https://docs.microsoft.com/hololens/hololens-calibration)을 수행 해야 하는 필요성에 대해 설명 했습니다. 눈동자-응시 입력은 여전히 새로운 유형의 사용자 입력 이며 배워야 할 내용이 많습니다. 
+HoloLens 2에 대 한 흥미로운 새로운 기능 중 하나는 눈 추적입니다. [HoloLens의 눈동자 추적 2](eye-tracking.md) 페이지에서는 몇 가지 개발자 지침을 제공 하 고 눈 추적을 위해 강조 된 사용 사례를 제공 하는 각 사용자가 [보정](/hololens/hololens-calibration)을 수행 해야 하는 필요성에 대해 설명 했습니다. 눈동자-응시 입력은 여전히 새로운 유형의 사용자 입력 이며 배워야 할 내용이 많습니다. 
 
 눈에 잘 맞는 입력은 Holographic Shell 환경 (HoloLens 2를 시작할 때 표시 되는 사용자 인터페이스)에서 약간만 사용 되지만 ["hololens 탭"](https://www.microsoft.com/p/mr-playground/9nb31lh723s2)과 같은 여러 앱은 눈에 입력이 Holographic 환경의 매직에 추가 되는 방법에 대 한 좋은 예를 보여 줍니다.
 이 페이지에서는 holographic 응용 프로그램과 상호 작용 하기 위해 눈 응시 입력을 통합 하기 위한 디자인 고려 사항에 대해 설명 합니다.
@@ -35,7 +35,7 @@ HoloLens 2에 대 한 흥미로운 새로운 기능 중 하나는 눈 추적입�
 </colgroup>
 <tr>
      <td><strong>기능</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens(1세대)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
 </tr>

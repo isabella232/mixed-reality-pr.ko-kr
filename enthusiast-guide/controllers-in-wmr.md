@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5f2e02c85b443497f539d1bfcbf165214e3ac3c1
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 960b26d16e9edd387eb94c469d45b0c669fadc10
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007803"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580542"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Windows Mixed Reality의 모션 컨트롤러
 
@@ -149,10 +149,10 @@ Led가 켜지는 때까지 2 초 동안 Windows 단추를 눌러 컨트롤러를
 
 "혼합 현실-> 입력" 범주를 사용 하 여 피드백 허브에 피드백을 제공 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-- [Unity의 HP 컨트롤러](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-- [진짜의 HP 컨트롤러](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+- [Unity의 HP 컨트롤러](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+- [진짜의 HP 컨트롤러](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 - [커뮤니티에 질문하기](https://answers.microsoft.com)
 - [지원 문의](https://support.microsoft.com/contactus/)
 - [문제 해결](troubleshooting-windows-mixed-reality.md)

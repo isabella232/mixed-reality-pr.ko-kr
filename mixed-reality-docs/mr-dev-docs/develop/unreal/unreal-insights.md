@@ -1,19 +1,19 @@
 ---
-title: Unreal Insights를 사용 하 여 프로 파일링
+title: Unreal Insights를 사용하여 프로파일링
 description: HoloLens 2에서 Unreal Insights를 사용 하는 방법에 대해 알아봅니다.
 author: sajidfarooq
 ms.author: v-hferrone
 ms.date: 12/10/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 개발, 프로 파일링, Unreal insights, 설명서, 가이드, 기능, holograms, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 20e620f147f2cf5ee05073467c8ce7335340d59d
-ms.sourcegitcommit: 53bde413a174712cb9d3794d02d96363a2d599cd
+ms.openlocfilehash: b41d36679adfb35b5cc3561b8d5e7734654e7fb5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97486376"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580835"
 ---
-# <a name="profiling-with-unreal-insights"></a>Unreal Insights를 사용 하 여 프로 파일링 
+# <a name="profiling-with-unreal-insights"></a>Unreal Insights를 사용하여 프로파일링 
 
 [Unreal Insights](https://docs.unrealengine.com/TestingAndOptimization/PerformanceAndProfiling/UnrealInsights/Overview/index.html) 는 Unreal Engine에서 데이터를 수집, 분석 및 시각화 하는 프로 파일링 시스템입니다. 프로 파일링 시스템은 응용 프로그램 성능이 향상 될 수 있는 최적화 병목 상태와 영역을 찾는 데 도움이 될 수 있습니다. 일반적으로 편집기에서 바로 Unreal Insights를 사용 하도록 설정 하지만 HoloLens 2의 경우 명령줄을 사용 해야 합니다.  
 
@@ -102,6 +102,6 @@ Unreal Insights로 돌아가서 프로 파일링을 시작 하려면 장치에 �
 
 프로젝트 간에 사용자 지정 프로필이 공유 됩니다. 여기에서 매번이 작업을 수행 하지 않고 만든 사용자 지정 프로필을 사용할 수 있습니다. [설정 섹션](#setup)에서 3 ~ 6 단계를 사용 하 여 사용 하지 않는 작업을 시작할 때마다 장치에 대 한 연결을 다시 만들어야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [Unreal Insights 설명서](https://docs.unrealengine.com/TestingAndOptimization/PerformanceAndProfiling/UnrealInsights/index.html)
 

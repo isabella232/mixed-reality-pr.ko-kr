@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: afb559937c2bde06d3c74c1c572aefec50502884
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 28ca1653019252c749fe5977a06bff4503800c10
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865438"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580186"
 ---
 # <a name="contributing-to-the-mixed-reality-enthusiast-guide"></a>Mixed Reality 열성적인 가이드에 기여
 
@@ -22,7 +22,7 @@ ms.locfileid: "97865438"
 > [!IMPORTANT]
 > docs.microsoft.com에 참여하는 모든 리포지토리는 [Microsoft 오픈 소스 준수 사항](https://opensource.microsoft.com/codeofconduct/)을 채택했습니다. 자세한 내용은 [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)(준수 사항 FAQ)를 참조하거나 [opencode@microsoft.com](mailto:opencode@microsoft.com)에 질문 또는 의견을 알려주세요.<br>
 >
-> 공용 리포지토리의 설명서 및 코드 예제에 대한 사소한 수정 또는 확인 내용은 [docs.microsoft.com 사용 약관](https://docs.microsoft.com/legal/termsofuse)에서 다룹니다. 새롭거나 중요한 변경 내용으로 인해 끌어오기 요청에서 Microsoft 직원이 아닌 경우 온라인 CLA(참가 사용권 계약)을 제출하도록 요청하는 주석이 생성됩니다. 온라인 양식 작성을 먼저 완료해야 Microsoft에서 끌어오기 요청을 수락할 수 있습니다.
+> 공용 리포지토리의 설명서 및 코드 예제에 대한 사소한 수정 또는 확인 내용은 [docs.microsoft.com 사용 약관](/legal/termsofuse)에서 다룹니다. 새롭거나 중요한 변경 내용으로 인해 끌어오기 요청에서 Microsoft 직원이 아닌 경우 온라인 CLA(참가 사용권 계약)을 제출하도록 요청하는 주석이 생성됩니다. 온라인 양식 작성을 먼저 완료해야 Microsoft에서 끌어오기 요청을 수락할 수 있습니다.
 
 ## <a name="before-you-start"></a>시작하기 전에
 
@@ -53,7 +53,7 @@ GitHub 계정을 설정할 때 다음과 같은 보안 예방 조치를 권장 �
 | 5. 변경 내용 미리 보기를 클릭 하 여 서식이 예상 대로 표시 되는지 확인 합니다. | ![변경 내용 미리 보기](images/edit-in-github.png)|
 | 6. 완료 되 면 페이지 아래쪽으로 스크롤하고 "파일 변경 내용 제안"을 클릭 하면 변경 내용을 확인할 수 있는 "변경 내용 비교" 페이지가 표시 됩니다. 그런 다음 "끌어오기 요청 만들기" 단추를 클릭 하 여 변경 내용을 제출 합니다. 이 시점에서 작업이 마무리됩니다. | ![변경 제안](images/propose.jpg)|
 
-끌어오기 요청을 통해 변경 내용을 전송 하면 설명서 팀의 구성원에 의해 검토 됩니다. 요청이 수락 되 면 업데이트가에 게시 됩니다 [https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide) .
+끌어오기 요청을 통해 변경 내용을 전송 하면 설명서 팀의 구성원에 의해 검토 됩니다. 요청이 수락 되 면 업데이트가에 게시 됩니다 [https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide](/windows/mixed-reality/enthusiast-guide) .
 
 * 내부 검토 전용의 경우 변경 내용을 볼 수 있습니다 [https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide](https://review.docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/?branch=master) .
 
@@ -128,7 +128,7 @@ GitHub 계정을 설정할 때 다음과 같은 보안 예방 조치를 권장 �
 
 ## <a name="working-with-branches"></a>분기 작업
 
-[Mixed Reality 열성적인 가이드 GitHub 리포지토리](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide) 는 두 개의 기본 부모 분기 인 [Master](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/master)를 활용 합니다. Master,이 콘텐츠는 [스테이징 사이트](https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide)에서 검토 하 고 라이브 [사이트](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)에 표시 되는 콘텐츠를 [실시간](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live)으로 확인할 수 있습니다.
+[Mixed Reality 열성적인 가이드 GitHub 리포지토리](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide) 는 두 개의 기본 부모 분기 인 [Master](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/master)를 활용 합니다. Master,이 콘텐츠는 [스테이징 사이트](https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide)에서 검토 하 고 라이브 [사이트](/windows/mixed-reality/enthusiast-guide)에 표시 되는 콘텐츠를 [실시간](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live)으로 확인할 수 있습니다.
 
 기여를 만들 때 **마스터** 분기에 끌어오기 요청 (PR)을 제출 하세요. 이 분기는 스테이징 사이트에서 볼 수 있으며 실시간으로 게시할 준비가 완료된 기고문만 포함해야 합니다. 스테이징 사이트에서 선택 하 고 볼 수 있는 고유한 분기 이름으로 분기를 만들고 제출할 수도 있습니다. **라이브** 분기는 콘텐츠 관리자만 사용할 수 있습니다.
 
@@ -138,13 +138,13 @@ GitHub 계정을 설정할 때 다음과 같은 보안 예방 조치를 권장 �
 
 - [Markdown 기본 사항](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [한눈에 Markdown 참조 포스터](images/MarkdownPoster.pdf)
-- [Docs.microsoft.com에 대 한 Markdown 쓰기에 대 한 추가 리소스](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [Docs.microsoft.com에 대 한 Markdown 쓰기에 대 한 추가 리소스](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>테이블 추가
 
 스타일 docs.microsoft.com 스타일을 지정 하는 방식 때문에 인라인 CSS를 시도 하더라도 테두리나 사용자 지정 스타일은 없습니다. 짧은 시간 동안 작동 하는 것 처럼 보이지만 결국 플랫폼은 테이블에서 스타일을 제거 합니다. 따라서 미리 계획 하 고 테이블을 단순하게 유지 합니다. [Markdown 테이블을 쉽게 만들 수 있는 사이트는 다음과 같습니다](https://www.tablesgenerator.com/markdown_tables).
 
-[Visual Studio Code에 대 한 Docs Markdown 확장](https://docs.microsoft.com/teamblog/docs-extension) 은 [Visual Studio Code (아래 참조)](#using-visual-studio-code) 를 사용 하 여 문서를 편집 하는 경우에도 테이블을 쉽게 생성할 수 있습니다.
+[Visual Studio Code에 대 한 Docs Markdown 확장](/teamblog/docs-extension) 은 [Visual Studio Code (아래 참조)](#using-visual-studio-code) 를 사용 하 여 문서를 편집 하는 경우에도 테이블을 쉽게 생성할 수 있습니다.
 
 ### <a name="adding-images"></a>이미지 추가
 

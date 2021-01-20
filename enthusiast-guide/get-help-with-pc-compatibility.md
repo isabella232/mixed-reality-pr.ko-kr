@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: e3d150544c3bce99d1aa808229d282b3d2fe1dd0
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 28b377108fdb51d7f922710e579d62e7103ef765
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007483"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580535"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Windows Mixed Reality의 PC 호환성에 대 한 도움말 보기
 
@@ -116,7 +116,7 @@ Windows Mixed Reality를 실행 하는 문제:
 
 ### <a name="this-pc-doesnt-have-bluetooth-40-for-controllers"></a>이 PC에는 컨트롤러에 대 한 Bluetooth 4.0가 없습니다.
 
-2018 이상 Windows Mixed Reality 헤드셋에는 기본 제공 블루투스가 이미 있지만 이전 헤드셋이 있는 경우 혼합 현실 동작 컨트롤러에는 bluetooth 4.0이 필요 합니다. [Windows Mixed Reality를 Xbox 컨트롤러](motion-controller-problems.md#can-i-pair-my-xbox-controller-to-my-pc-so-i-can-use-it-in-headset), [마우스 및 키보드](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home#keyboard-and-mouse)또는 [USB Bluetooth 어댑터](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology) 와 함께 사용 하 여 이동 컨트롤러를 PC에 연결할 수 있습니다. [권장 어댑터 참조](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+2018 이상 Windows Mixed Reality 헤드셋에는 기본 제공 블루투스가 이미 있지만 이전 헤드셋이 있는 경우 혼합 현실 동작 컨트롤러에는 bluetooth 4.0이 필요 합니다. [Windows Mixed Reality를 Xbox 컨트롤러](motion-controller-problems.md#can-i-pair-my-xbox-controller-to-my-pc-so-i-can-use-it-in-headset), [마우스 및 키보드](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home#keyboard-and-mouse)또는 [USB Bluetooth 어댑터](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology) 와 함께 사용 하 여 이동 컨트롤러를 PC에 연결할 수 있습니다. [권장 어댑터 참조](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ### <a name="depending-on-your-headset-you-may-need-a-bluetooth-adapter-to-use-motion-controllers"></a>헤드셋에 따라 동작 컨트롤러를 사용 하려면 Bluetooth 어댑터가 필요할 수 있습니다.
 

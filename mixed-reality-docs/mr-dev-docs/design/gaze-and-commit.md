@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: 혼합 현실, 응시, 응시 대상 지정, 상호 작용, 디자인, 눈 추적, 헤드 추적, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트
-ms.openlocfilehash: f9e79f8d600002f63e87316ea588741a21c0d68b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: bfbf58ad065f91b27208d36ba63672ee5c28dfdd
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847932"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582336"
 ---
 # <a name="gaze-and-commit"></a>응시 및 커밋
 
@@ -40,7 +40,7 @@ _응시 및 commit_ 은 마우스를 사용 하 여 컴퓨터와 상호 작용 �
     </colgroup>
     <tr>
         <td><strong>입력 모델</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens(1세대)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
     </tr>
@@ -135,7 +135,7 @@ _응시 및 commit_ 은 마우스를 사용 하 여 컴퓨터와 상호 작용 �
 지원되는 커밋 메서드는 다음과 같습니다.
 - 공기 탭 제스처 (즉, 앞으로 손을 올리고 인덱스 손가락 및 엄지 단추를 통합)
 - _"Select"_ 또는 대상 음성 명령 중 하나를 말합니다.
-- [HoloLens Clicker](https://docs.microsoft.com/hololens/hololens1-clicker) 에서 단일 단추를 누릅니다.
+- [HoloLens Clicker](/hololens/hololens1-clicker) 에서 단일 단추를 누릅니다.
 - Xbox 게임 패드에서 ' A ' 단추를 누릅니다.
 - Xbox 적응 컨트롤러에서 ' A ' 단추를 누릅니다.
 
@@ -286,7 +286,7 @@ HoloLens의 제스처의 경우이 손을 제스처 프레임 내에 있어야 �
 
 
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 * [시선 기반 상호 작용](eye-gaze-interaction.md)
 * [HoloLens 2의 시선 추적](eye-tracking.md)
 * [응시 및 유지](gaze-and-dwell.md)
@@ -295,4 +295,3 @@ HoloLens의 제스처의 경우이 손을 제스처 프레임 내에 있어야 �
 * [손 - 가리키고 커밋](point-and-commit.md)
 * [Instinctual 상호 작용](interaction-fundamentals.md)
 * [음성 입력 ](voice-input.md)
-

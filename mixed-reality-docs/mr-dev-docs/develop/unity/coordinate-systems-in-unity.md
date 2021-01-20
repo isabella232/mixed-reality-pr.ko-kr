@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 좌표계, 공간 좌표계, 방향 전용, 고정 크기 조정, 대규모 공간 규모, 세계 규모, 360 학위, 고가, 장소, 전 세계, 규모, 위치, 방향, Unity, 앵커, 공간 고정, 전 세계 앵커, 전 세계 잠금, 세계 recenter, 본문 잠금, 본문 잠금, 손실 추적, locatability, 경계,, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 900c393bf9ab09f1ac49e3108488d081f8025c19
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: aa68ae44e09dfe579f8ab8924d1b300506a1f00e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010284"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581069"
 ---
 # <a name="coordinate-systems-in-unity"></a>Unity의 좌표계
 
@@ -102,7 +102,7 @@ Unity에서는 GameObject에 **WorldAnchor** Unity 구성 요소를 추가 하 �
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-간단하죠. 이 게임 개체는 이제 실제 세계의 현재 위치에 고정 되어 있습니다 .이를 통해 Unity 세계 좌표가 약간 조정 되어 물리적 맞춤을 확인할 수 있습니다. [지 속성](persistence-in-unity.md) 을 사용 하 여 이후 앱 세션에서이 앵커 된 위치를 다시 찾습니다.
+정말 간단하죠. 이 게임 개체는 이제 실제 세계의 현재 위치에 고정 되어 있습니다 .이를 통해 Unity 세계 좌표가 약간 조정 되어 물리적 맞춤을 확인할 수 있습니다. [지 속성](persistence-in-unity.md) 을 사용 하 여 이후 앱 세션에서이 앵커 된 위치를 다시 찾습니다.
 
 ### <a name="removing-a-world-anchor"></a>세계 앵커 제거
 
@@ -163,15 +163,15 @@ Anchor_OnTrackingChanged(anchor, anchor.isLocated);
 
 ## <a name="sharing-anchors-across-devices"></a>장치에서 앵커 공유
 
-<a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a> 를 사용 하 여 로컬 WorldAnchor에서 지속적인 클라우드 앵커를 만듭니다. 그러면 앱이 여러 HoloLens, IOS 및 Android 장치에서 찾을 수 있습니다.  여러 장치에서 공통 공간 앵커를 공유 하 여 각 사용자는 동일한 물리적 위치에서 해당 앵커에 대해 렌더링 된 콘텐츠를 볼 수 있습니다.  이렇게 실제 세계 공유 환경을 제공합니다.
+<a href="/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a> 를 사용 하 여 로컬 WorldAnchor에서 지속적인 클라우드 앵커를 만듭니다. 그러면 앱이 여러 HoloLens, IOS 및 Android 장치에서 찾을 수 있습니다.  여러 장치에서 공통 공간 앵커를 공유 하 여 각 사용자는 동일한 물리적 위치에서 해당 앵커에 대해 렌더링 된 콘텐츠를 볼 수 있습니다.  이렇게 실제 세계 공유 환경을 제공합니다.
 
-Unity에서 공유 환경 빌드를 시작 하려면 5 분 <a href="https://docs.microsoft.com/azure/spatial-anchors/unity-overview" target="_blank">Azure 공간 앵커 Unity 퀵 스타트</a>를 사용해 보세요.
+Unity에서 공유 환경 빌드를 시작 하려면 5 분 <a href="/azure/spatial-anchors/unity-overview" target="_blank">Azure 공간 앵커 Unity 퀵 스타트</a>를 사용해 보세요.
 
-Azure 공간 앵커를 사용 하 여 실행 하면 <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Unity에서 앵커를 만들고 찾을</a>수 있습니다.
+Azure 공간 앵커를 사용 하 여 실행 하면 <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Unity에서 앵커를 만들고 찾을</a>수 있습니다.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 설명한 Unity 개발 검사점 경험을 팔로 사용할 경우 혼합 현실 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 계속 진행할 수 있습니다.
+앞서 설명한 Unity 개발 검사점 경험을 팔로 사용할 경우 혼합 현실 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [응시](gaze-in-unity.md)
@@ -187,8 +187,8 @@ Azure 공간 앵커를 사용 하 여 실행 하면 <a href="https://docs.micros
 * [환경 크기 조정](../../design/coordinate-systems.md#mixed-reality-experience-scales)
 * [공간 스테이지](../../design/coordinate-systems.md#stage-frame-of-reference)
 * [Unity의 손실 추적](tracking-loss-in-unity.md)
-* [공간 앵커](../../design/spatial-anchors.md)
+* [Spatial Anchors](../../design/spatial-anchors.md)
 * [Unity의 지속성](persistence-in-unity.md)
 * [Unity의 공유 환경](shared-experiences-in-unity.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
-* <a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Unity 용 Azure 공간 앵커 SDK</a>
+* <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Unity 용 Azure 공간 앵커 SDK</a>

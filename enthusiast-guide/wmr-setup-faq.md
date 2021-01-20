@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: 2da2524ae09014b990ea4f0301a21d4aac963eb9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 87eb22e600ca2426bdd3fec1fd428c11d9c45313
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008633"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581811"
 ---
 # <a name="windows-mixed-reality-setup-faq"></a>Windows Mixed Reality 설치 FAQ
 
@@ -28,7 +28,7 @@ Windows Mixed Reality 모던 헤드셋을 설정 하는 경우 발생할 수 있
 * PC를 다시 시작 하 고 다시 시도 하세요. 보류 중인 업데이트를 제거 하려면 여러 번 반복 하거나 Windows 업데이트 문제 해결사를 실행 해야 할 수 있습니다.
 
 > [!NOTE]
-> * 엔터프라이즈 관리 네트워크를 사용 하는 경우 관리자에 게 문의 하세요. Windows Mixed Reality를 사용 하도록 설정 해야 할 수도 있습니다. IT 전문가 지침을 찾고 있나요? **[이 문서](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality)** 를 참조 하세요.
+> * 엔터프라이즈 관리 네트워크를 사용 하는 경우 관리자에 게 문의 하세요. Windows Mixed Reality를 사용 하도록 설정 해야 할 수도 있습니다. IT 전문가 지침을 찾고 있나요? **[이 문서](/windows/application-management/manage-windows-mixed-reality)** 를 참조 하세요.
 > * Wi-Fi 네트워크 연결이 요금제로 설정 된 경우에는 데이터 통신이 아닌 것으로 변경 합니다. **[자세한 정보](https://support.microsoft.com/help/4028458)**
 
 ## <a name="i-get-a-message-that-says-something-went-wrong-and-we-couldnt-start-windows-mixed-reality"></a>"문제가 발생 하 여 Windows Mixed Reality를 시작할 수 없습니다." 라는 메시지를 받게 됩니다.
@@ -158,7 +158,7 @@ PC가 헤드셋을 인식 하는지 확인 합니다.
     3. 동작 컨트롤러가 PC와 쌍으로 연결 된 경우 **설정 > 장치 > Bluetooth & 다른 장치** 에서 연결 해제를 선택 합니다. 각 컨트롤러를 선택 하 고 "장치 제거"를 선택 합니다. 컨트롤러가 헤드셋과 쌍으로 연결 된 경우이 단계를 건너뛸 수 있습니다.
     4. 헤드셋을 PC에 다시 연결 하 여 Windows Mixed Reality를 다시 설치 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [커뮤니티에 질문하기](https://answers.microsoft.com)
 * [지원 문의](https://support.microsoft.com/contactus/)

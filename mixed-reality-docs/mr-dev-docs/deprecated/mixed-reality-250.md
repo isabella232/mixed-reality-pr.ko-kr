@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 이동 컨트롤러, 공유, xbox 컨트롤러, 네트워킹, 장치 간
-ms.openlocfilehash: a980441ee73cd8f45afff446d9315eaf08549575
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 8b6711ab3ee833306742fe938dfa501dc5b4ed0e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685329"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580127"
 ---
 # <a name="mr-sharing-250-hololens-and-immersive-headsets"></a>MR 공유 250: HoloLens 및 몰입형 헤드셋
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_** .  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](../mr-learning-base-01.md)가 게시되었습니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](../develop/unity/tutorials/mr-learning-base-01.md)가 게시되었습니다.
 
 UWP (유니버설 Windows 플랫폼)를 사용 하면 여러 장치에 걸쳐 있는 응용 프로그램을 쉽게 만들 수 있습니다. 이러한 유연성을 통해 각 장치의 장점을 활용 하는 환경을 만들 수 있습니다. 이 자습서에서는 HoloLens 및 Windows Mixed Reality 몰입 형 헤드셋에서 실행 되는 기본 공유 환경을 소개 합니다. 이 콘텐츠는 원래 시애틀, WA의 Microsoft Build 2017 회의에서 제공 되었습니다.
 
@@ -31,7 +31,7 @@ UWP (유니버설 Windows 플랫폼)를 사용 하면 여러 장치에 걸쳐 �
 
 <table>
 <tr>
-<th>과정</th><th style="width:150px"> <a href="../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
+<th>과정</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
 </tr><tr>
 <td>MR 공유 250: HoloLens 및 몰입형 헤드셋</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -39,9 +39,9 @@ UWP (유니버설 Windows 플랫폼)를 사용 하면 여러 장치에 걸쳐 �
 
 ## <a name="before-you-start"></a>시작하기 전에
 
-### <a name="prerequisites"></a>전제 조건
+### <a name="prerequisites"></a>필수 구성 요소
 
-* [필요한 개발 도구가](../develop/install-the-tools.md) 포함 된 WINDOWS 10 PC 이며 [windows Mixed Reality 모던 헤드셋을 지원 하도록 구성 되어](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)있습니다.
+* [필요한 개발 도구가](../develop/install-the-tools.md) 포함 된 WINDOWS 10 PC 이며 [windows Mixed Reality 모던 헤드셋을 지원 하도록 구성 되어](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)있습니다.
 * PC에서 작동 하는 Xbox 컨트롤러
 * 하나 이상의 HoloLens 장치 및 하나의 몰입 형 헤드셋.
 * UDP 브로드캐스트 검색을 허용 하는 네트워크입니다.
@@ -74,7 +74,7 @@ HoloLens 또는 Windows Mixed Reality 몰입 형 헤드셋에서 홀로그램을
     * **폴더 선택** 을 클릭합니다.
     * *Unity가 처음으로 프로젝트를 처리 하는 데는 약간의 시간이 걸립니다.*
 * 혼합 현실이 Unity에서 사용 되는지 확인 합니다.
-    * 빌드 설정 대화 상자를 엽니다 ( **컨트롤 + Shift + B** 또는 **파일 > 빌드 설정** ...).
+    * 빌드 설정 대화 상자를 엽니다 (**컨트롤 + Shift + B** 또는 **파일 > 빌드 설정**...).
     * **유니버설 Windows 플랫폼** 선택한 후 **플랫폼 전환** 을 클릭 합니다.
     * **편집>플레이어 설정** 을 선택 합니다.
     * 오른쪽의 **검사기** 패널에서 **XR 설정** 을 확장 합니다.
@@ -86,12 +86,12 @@ HoloLens 또는 Windows Mixed Reality 몰입 형 헤드셋에서 홀로그램을
 * 장면에 Holograms 추가
     * **AppPrefabs** 에서 **Skybox** 를 **장면 뷰로** 끕니다.
     * **AppPrefabs** 에서 **관리자** 를 **계층** 으로 끕니다.
-    * **AppPrefabs** 를 계층 **으로 끕니다** . **Hierarchy**
+    * **AppPrefabs** 를 계층 **으로 끕니다** . 
 * 저장 및 빌드
-    * 저장 ( **컨트롤 + S** 또는 **파일 > 장면 저장** )
+    * 저장 ( **컨트롤 + S** 또는 **파일 > 장면 저장**)
     * 새 장면 이므로 이름을로 해야 합니다. 이름은 중요 하지 않지만 SharedMixedReality를 사용 합니다.
 * Visual Studio로 내보내기
-    * 빌드 메뉴 열기 ( **컨트롤 + Shift + B** 또는 **파일 > 빌드 설정** )
+    * 빌드 메뉴 열기 (**컨트롤 + Shift + B** 또는 **파일 > 빌드 설정**)
     * **열려 있는 장면 추가를 클릭 합니다.**
     * **Unity c # 프로젝트** 확인
     * **빌드** 를 클릭한 다음
@@ -354,6 +354,6 @@ LevelControl.cs에서 SetGoalIndex를 살펴보세요. 여기서는 syclist (AtG
 
 이전 장을 기반으로 하 여 세션을 시작 하겠습니다. 지금은 몰입 형 헤드셋의 사용자가 경로에서 "도어"로 이동 하면 HoloLens 사용자만 볼 수 있는 도구 설명이 표시 됩니다. HoloLens 사용자는 몰입 형 헤드셋의 사용자에 게이 단서를 전달 하는 일을 담당 합니다. 각 아바타가 화산 내에서 해당 하는 갈색 패드를 단계별로 실행 하면 로켓이 공간에 시작 됩니다. 장면을 다시 설정 하기 위해 60 초 후에 다시 설정 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [MR 입력 213: 모션 컨트롤러](mixed-reality-213.md)

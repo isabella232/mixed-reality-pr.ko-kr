@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 눈 추적, 혼합 현실, 입력, 눈에 응시, 보정, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 의도, 작업
-ms.openlocfilehash: ffc9fd172f3e9a1cfd648e3fb431274690c9f190
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d603e2576856fe48080a1a1f06c1814a78381192
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009603"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582328"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>HoloLens 2의 시선 추적
 
@@ -32,7 +32,7 @@ HoloLens 2를 사용 하면 개발자에 게 사용자가 보고 있는 항목�
 </colgroup>
 <tr>
      <td><strong>기능</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens(1세대)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
 </tr>
@@ -48,7 +48,7 @@ HoloLens 2를 사용 하면 개발자에 게 사용자가 보고 있는 항목�
 
 ## <a name="calibration"></a>보정 
 
-눈 추적을 정확 하 게 수행 하려면 각 사용자가 holographic 대상 집합을 확인 해야 하는 [눈 추적 사용자 보정](../calibration.md) 을 통과 해야 합니다. 이를 통해 장치는 사용자에 게 더 편안 하 고 높은 품질의 시청 환경을 제공 하 고 동시에 정확한 시각 추적을 보장 합니다. 
+눈 추적을 정확 하 게 수행 하려면 각 사용자가 holographic 대상 집합을 확인 해야 하는 [눈 추적 사용자 보정](/hololens/hololens-calibration) 을 통과 해야 합니다. 이를 통해 장치는 사용자에 게 더 편안 하 고 높은 품질의 시청 환경을 제공 하 고 동시에 정확한 시각 추적을 보장 합니다. 
 
 시각 추적은 대부분의 사용자에 게 작동 하지만 사용자가 성공적으로 보정할 수 없는 드문 경우도 있습니다. 보정은 다음을 비롯 한 다양 한 이유로 실패할 수 있습니다. 
 * 사용자가 이전에 보정 프로세스를 옵트아웃 했음
@@ -59,13 +59,13 @@ HoloLens 2를 사용 하면 개발자에 게 사용자가 보고 있는 항목�
 
 개발자는 아이 추적 데이터를 사용 하지 못할 수 있는 사용자에 게 적절 한 지원을 제공 해야 합니다 (성공적으로 보정할 수 없음). 이 페이지의 맨 아래에 있는 섹션에서 대체 솔루션에 대 한 권장 사항을 제공 했습니다. 
 
-보정에 대 한 자세한 내용과 원활한 환경을 보장 하는 방법에 대 한 자세한 내용은 [눈동자 추적 사용자 보정](../calibration.md) 페이지를 참조 하세요.
+보정에 대 한 자세한 내용과 원활한 환경을 보장 하는 방법에 대 한 자세한 내용은 [눈동자 추적 사용자 보정](/hololens/hololens-calibration) 페이지를 참조 하세요.
 
 <br>
 
 ## <a name="available-eye-tracking-data"></a>사용 가능한 눈 추적 데이터
 
-눈동자를 입력 하는 특정 사용 사례에 대 한 세부 정보를 살펴보기 전에 HoloLens 2 [눈동자 추적 API](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) 에서 제공 하는 기능을 간단히 확인 하고자 합니다. 개발자는 약 _30FPS (30 Hz)_ 의 단일 눈길 응시 광선 (응시 원본 및 방향)에 액세스할 수 있습니다.
+눈동자를 입력 하는 특정 사용 사례에 대 한 세부 정보를 살펴보기 전에 HoloLens 2 [눈동자 추적 API](/uwp/api/windows.perception.people.eyespose) 에서 제공 하는 기능을 간단히 확인 하고자 합니다. 개발자는 약 _30FPS (30 Hz)_ 의 단일 눈길 응시 광선 (응시 원본 및 방향)에 액세스할 수 있습니다.
 아이 추적 데이터에 액세스 하는 방법에 대 한 자세한 내용은 [DirectX에서 눈길](../develop/native/gaze-in-directx.md) 을 사용 하기 위한 개발자 가이드 및 [Unity에서 눈에 보기-응시](https://aka.ms/mrtk-eyes)를 참조 하세요.
 
 예측 된 눈은 실제 목표 중심의 시각적 각도에서 약 1.5도 이내입니다 (아래 그림 참조). 약간의 imprecision가 예상 되는 것으로 개발자는이 하한값을 중심으로 약간의 공간을 계획 해야 합니다. 예를 들어 2.0-3.0도도 훨씬 더 편안 하 게 경험을 얻을 수 있습니다. 아래에서 작은 대상의 선택 사항을 해결 하는 방법을 설명 합니다. 시선 추적이 정확히 작동하려면 각 사용자가 시선 추적 사용자 보정을 진행해야 합니다. 
@@ -135,8 +135,8 @@ Microsoft는 사용자에 게 눈 추적 정보를 사용 하는 방법에 대 �
 
 드문 경우 지만 눈 추적 데이터를 사용 하지 못할 수도 있습니다.
 이는 다음과 같은 여러 가지 이유로 인해 발생할 수 있습니다.
-* 시스템이 [사용자를 보정](../calibration.md)하지 못했습니다.
-* 사용자가 [보정](../calibration.md)을 건너뛰었습니다.    
+* 시스템이 [사용자를 보정](/hololens/hololens-calibration)하지 못했습니다.
+* 사용자가 [보정](/hololens/hololens-calibration)을 건너뛰었습니다.   
 * 사용자가 보정 되었지만 앱에서 눈 추적 데이터를 사용할 수 있는 권한을 부여 하지 않기로 결정 했습니다.    
 * 사용자에 게 시스템에서 아직 지원 하지 않는 고유한 안경 또는 아이 조건이 있습니다. 
 * 외부 요소는 활용 하지 못해, 안경, 강한 얼굴, occlusions 등의 얼룩과 같은 신뢰할 수 있는 눈에, 눈 앞에 있는 머리카락 때문에 발생 합니다.  
@@ -166,14 +166,12 @@ Microsoft는 사용자에 게 눈 추적 정보를 사용 하는 방법에 대 �
 
 이 페이지에서는 HoloLens 2에 대 한 눈에 보기 및 눈에 잘 맞는 입력의 역할을 이해 하기 시작 하는 데 도움이 되는 유용한 개요를 제공 합니다. 개발을 시작 하려면 [holograms와의 상호 작용을 위해 눈길](eye-gaze-interaction.md)을 [내](https://aka.ms/mrtk-eyes) 는 역할에 대 한 정보를 확인 [하세요.](../develop/native/gaze-in-directx.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-* [조정](../calibration.md)
+* [조정](/hololens/hololens-calibration)
 * [편안함](comfort.md)
 * [시선 응시 기반 상호 작용](eye-gaze-interaction.md)
 * [눈-DirectX에서 응시](../develop/native/gaze-in-directx.md)
 * [눈동자-Unity에서 응시 (혼합 현실 도구 키트)](https://aka.ms/mrtk-eyes)
 * [응시 및 커밋](gaze-and-commit.md)
 * [음성 입력 ](../out-of-scope/voice-design.md)
-
-

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, 직접 추적, Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed reality, 개발, 기능, 설명서, 가이드, holograms, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: e482c93233348325736d2c224788e9174c1f3b67
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 1888258321af978ca52623008193e6dae94833a8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010163"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581106"
 ---
 # <a name="hand-tracking-in-unreal"></a>Unreal의 직접 추적
 
@@ -156,7 +156,7 @@ UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 
 ## <a name="gestures"></a>제스처
 
-HoloLens 2는 공간 제스처를 추적 합니다. 즉, 이러한 제스처를 입력으로 캡처할 수 있습니다. 제스처 추적은 구독 모델을 기반으로 합니다. "제스처 구성" 함수를 사용 하 여 추적 하려는 제스처를 장치에 알려야 합니다.  제스처에 대 한 자세한 내용은 [HoloLens 2 기본 사용](https://docs.microsoft.com/hololens/hololens2-basic-usage) 문서에 나와 있습니다.
+HoloLens 2는 공간 제스처를 추적 합니다. 즉, 이러한 제스처를 입력으로 캡처할 수 있습니다. 제스처 추적은 구독 모델을 기반으로 합니다. "제스처 구성" 함수를 사용 하 여 추적 하려는 제스처를 장치에 알려야 합니다.  제스처에 대 한 자세한 내용은 [HoloLens 2 기본 사용](/hololens/hololens2-basic-usage) 문서에 나와 있습니다.
 
 [!INCLUDE[](includes/tabs-tracking-gestures.md)]
 

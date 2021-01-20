@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 포트, unity, unreal, 미들웨어, engine, UWP, Win32, 포팅, HoloLens 1 gen, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 마이그레이션, Windows 10, 입력 매핑
-ms.openlocfilehash: b43b42567183ef77ef76b301212233eeeb7c04ca
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: dd09c6479bfcf3659b3e9355be898d77bccc6dc6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192669"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580586"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>VR 앱을 Windows Mixed Reality로 포팅
 
@@ -37,8 +37,8 @@ Windows 10에는 몰입 형 및 holographic 헤드셋에 대 한 지원이 포�
 Windows Mixed Reality 플랫폼은 아직 개발 중입니다. Windows 참가자 [프로그램에 가입](https://insider.windows.com/) 하 여 "windows 참가자가 빠르게" 비행에 액세스 하는 것이 좋습니다.
 1. [Windows 10 크리에이터 스 업데이트](https://www.microsoft.com/software-download/windows10) 설치
 2. Windows 참가자 프로그램에 [참여](https://insider.windows.com/) 합니다.
-3. [개발자 모드](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development) 사용
-4. **설정 > 업데이트 & 보안 섹션** 을 통해 [Windows Insider Fast flight](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview) 로 전환 합니다.
+3. [개발자 모드](/windows/uwp/get-started/enable-your-device-for-development) 사용
+4. **설정 > 업데이트 & 보안 섹션** 을 통해 [Windows Insider Fast flight](/archive/blogs/uktechnet/joining-insider-preview) 로 전환 합니다.
 
 ### <a name="3-upgrade-to-the-most-recent-build-of-visual-studio"></a>3. Visual Studio의 최신 빌드로 업그레이드
 * Visual Studio를 사용 하는 경우 최신 빌드로 업그레이드 하세요.
@@ -57,7 +57,7 @@ Windows Mixed Reality 플랫폼은 아직 개발 중입니다. Windows 참가자
 > HP 반향 G2 컨트롤러를 사용 하는 경우 추가 입력 매핑 지침은 [이 문서](../unreal/unreal-reverb-g2-controllers.md) 를 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
-* [Windows Mixed Reality 최소 PC 하드웨어 호환성 지침](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
+* [Windows Mixed Reality 최소 PC 하드웨어 호환성 지침](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [혼합 현실 성능 이해](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Unity에 대 한 성능 권장 사항](../unity/performance-recommendations-for-unity.md)
 * [모션 컨트롤러](../../design/motion-controllers.md)

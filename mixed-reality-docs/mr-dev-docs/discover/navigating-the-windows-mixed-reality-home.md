@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 셸, os, 플랫폼, 절벽 집, 집, 홈, 환경, 시작, 시작 메뉴, 홈 메뉴, 핀, 앱, 앱 시작, 앱 배치, 텔레포트, 이동, 탐색, 혼합 현실 헤드셋, 가상 현실 헤드셋, 가상 현실 이란?
-ms.openlocfilehash: 06e28c9c1f0f6244f7f502382d61d4740b5fb71f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6b021aff20363f0e3efc1c2675df41ee5819aef6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009693"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582635"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Windows Mixed Reality 홈 탐색
 
@@ -28,7 +28,7 @@ Windows PC 환경이 바탕 화면에서 시작 하는 것 처럼 Windows Mixed 
 * Cortana (모던 헤드셋, 시작 타일, HoloLens의 맨 위에 있는 경우)
 * 고정 된 앱
 * 모든 앱 단추 (더하기 기호)
-* [혼합 현실 캡처](../mixed-reality-capture.md) 에 대 한 사진 및 비디오 단추
+* [혼합 현실 캡처](/hololens/holographic-photos-and-videos) 에 대 한 사진 및 비디오 단추
 
 더하기 또는 빼기 단추를 선택 하 여 고정 된 앱과 모든 앱 보기 사이를 전환 합니다. HoloLens에서 시작 메뉴를 열려면 블 룸 제스처를 사용 합니다. 몰입 형 헤드셋에서 컨트롤러의 Windows 단추를 누릅니다.
 
@@ -40,7 +40,7 @@ Windows PC 환경이 바탕 화면에서 시작 하는 것 처럼 Windows Mixed 
 1. 사용자의 [응시](../design/gaze-and-commit.md) 또는 컨트롤러를 사용 하 여 앱을 원하는 위치에 배치 합니다. 크기 및 위치를 자동으로 조정 하 여 배치 하는 공간에 맞게 조정 됩니다.
 2. 항공기 탭 (HoloLens) 또는 선택 단추 (몰입 형 헤드셋)를 사용 하 여 앱을 넣습니다. 시작 메뉴를 취소 하 고 다시 가져오려면 블 룸 제스처 또는 Windows 단추를 사용 합니다.
 
-데스크톱, 모바일 또는 Xbox 용으로 만든 [2d 앱](../develop/porting-apps/building-2d-apps.md)은 [HolographicSpace API](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicspace.aspx)를 사용 하 여 혼합 된 현실 앱으로 실행 되도록 수정할 수 있습니다. 몰입 형 앱은 사용자가 집에서 나 몰입 형 환경으로 이동 합니다. 사용자는 HoloLens (블 룸 제스처)를 사용 하거나 자신의 컨트롤러 (몰입 형 헤드셋)에서 Windows 단추를 눌러 홈을 반환할 수 있습니다.
+데스크톱, 모바일 또는 Xbox 용으로 만든 [2d 앱](../develop/porting-apps/building-2d-apps.md)은 [HolographicSpace API](/uwp/api/Windows.Graphics.Holographic.HolographicSpace)를 사용 하 여 혼합 된 현실 앱으로 실행 되도록 수정할 수 있습니다. 몰입 형 앱은 사용자가 집에서 나 몰입 형 환경으로 이동 합니다. 사용자는 HoloLens (블 룸 제스처)를 사용 하거나 자신의 컨트롤러 (몰입 형 헤드셋)에서 Windows 단추를 눌러 홈을 반환할 수 있습니다.
 
 앱 간 API 또는 Cortana를 통해 앱을 시작할 수도 있습니다.
 
@@ -122,7 +122,7 @@ Windows Mixed Reality 홈 내에서:
 Windows Mixed Reality에는 다음과 같은 몇 가지 기본 제공 앱이 있습니다.
 * 앱 및 게임을 가져오는 **Microsoft Store**
 * 시스템 및 시스템 앱에 대 한 피드백을 제출 하는 **피드백 허브**
-* 시스템 설정 (네트워킹 및 시스템 업데이트 [포함](../connecting-to-wi-fi-on-hololens.md) )을 구성 하는 **설정**
+* 시스템 설정 (네트워킹 및 시스템 업데이트 [포함](/hololens/hololens-network) )을 구성 하는 **설정**
 * 웹 사이트를 찾아보는 **Microsoft Edge**
 * 사진과 비디오를 보고 공유할 수 있는 **사진**
 * 현재 사용자에 게 HoloLens 환경을 조정 하기 위한 **보정** (HoloLens에만 해당)
@@ -134,10 +134,10 @@ Windows Mixed Reality에는 다음과 같은 몇 가지 기본 제공 앱이 있
 * 모던 헤드셋에서 데스크톱 모니터를 볼 때 사용할 **데스크톱** (몰입 형 헤드셋)
 * **파일 탐색기** 장치에 있는 파일 및 폴더에 액세스
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 * [앱 보기](../design/app-views.md)
 * [모션 컨트롤러](../design/motion-controllers.md)
 * [하드웨어 액세서리](hardware-accessories.md)
-* [HoloLens의 환경 고려 사항](../environment-considerations-for-hololens.md)
+* [HoloLens의 환경 고려 사항](/hololens/hololens-environment-considerations)
 * [3D 앱 시작 관리자 구현](../distribute/implementing-3d-app-launchers.md)
 * [Windows Mixed Reality 홈에서 사용할 3D 모델 만들기](../distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)

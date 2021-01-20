@@ -6,12 +6,12 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 앱 품질 기준, 혼합 현실, 혼합 현실 앱, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 8037b573f50ef1f1137a6c50913990fadf40e92e
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 3f6752c0a15ae7db21be1f4a6d2843339ab28a5c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192681"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581267"
 ---
 # <a name="app-quality-criteria"></a>앱 품질 기준
 
@@ -36,7 +36,7 @@ ms.locfileid: "98192681"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
         <td></td>
     </tr>
@@ -99,7 +99,7 @@ ms.locfileid: "98192681"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
         <td></td>
     </tr>
@@ -161,7 +161,7 @@ ms.locfileid: "98192681"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
         <td></td>
     </tr>
@@ -224,7 +224,7 @@ ms.locfileid: "98192681"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
         <td></td>
     </tr>
@@ -281,7 +281,7 @@ ms.locfileid: "98192681"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
         <td></td>
     </tr>
@@ -324,7 +324,7 @@ Windows Mixed Reality에서 오디오 엔진은 방향, 거리 및 환경 시뮬
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
         <td></td>
     </tr>
@@ -382,7 +382,7 @@ Windows Mixed Reality에서 오디오 엔진은 방향, 거리 및 환경 시뮬
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
         <td></td>
     </tr>
@@ -438,7 +438,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
         <td></td>
     </tr>
@@ -479,7 +479,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
 #### <a name="documentation"></a>설명서
 
 * [상호 작용 디자인](../../discover/hologram.md)
-* [색, 광원 및 재질](../../color,-light-and-materials.md)
+* [색, 광원 및 재질](../../design/color-light-and-materials.md)
 * [빌보딩 및 태그얼롱](../../design/billboarding-and-tag-along.md)
 * [Instinctual 상호 작용](../../design/interaction-fundamentals.md)
 * [자체 모션 및 사용자 보행](../../design/comfort.md#self-motion-and-user-locomotion)
@@ -497,7 +497,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
         <td></td>
     </tr>
@@ -548,7 +548,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
 * [Unity의 동작 컨트롤러](../unity/motion-controllers-in-unity.md)
 * [Unity의 제스처](../unity/gestures-in-unity.md)
 * [Unity의 음성 입력](../unity/voice-input-in-unity.md)
-* [DirectX의 키보드, 마우스 및 컨트롤러 입력](../../keyboard,-mouse,-and-controller-input-in-directx.md)
+* [DirectX의 키보드, 마우스 및 컨트롤러 입력](./keyboard-mouse-and-controller-input-in-directx.md)
 * [DirectX의 헤드 및 눈 응시](../native/gaze-in-directx.md)
 * [DirectX의 헤드 및 모션 컨트롤러](../native/hands-and-motion-controllers-in-directx.md)
 * [DirectX의 음성 입력](../native/voice-input-in-directx.md)
@@ -573,7 +573,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
         <td></td>
     </tr>
@@ -628,7 +628,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
         <td></td>
     </tr>
@@ -683,7 +683,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
         <td></td>
     </tr>
@@ -726,7 +726,7 @@ Holograms은 "실제" 개체와 거의 동일한 방식으로 사용자의 위�
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
         <td></td>
     </tr>

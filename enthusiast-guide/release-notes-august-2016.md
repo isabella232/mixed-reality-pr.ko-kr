@@ -6,30 +6,30 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, 릴리스 정보, os, 플랫폼, 기능, 상용 제품군
-ms.openlocfilehash: 9d65d0a2454b5eb076e7c350a6d26e11660af9a5
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: c70da10043cfbcfa88105635f2467c8feaadbedf
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009263"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581644"
 ---
 # <a name="release-notes---august-2016"></a>릴리스 정보 - 2016년 8월
 
-HoloLens 팀은 Windows 참가자 프로그램의 개발자가 작업의 우선 순위를 지정 하는 피드백을 수신 대기 합니다. 피드백 허브, [개발자 포럼](https://forums.hololens.com) [ @HoloLens 및 Twitter ](https://twitter.com/hololens)를 통해 피드백을 계속 해 서 [보내 주세요](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) . Windows 10에서 기념일 업데이트를 수용 하는 경우 HoloLens 팀은 holographic 환경에 대 한 향상 된 기능을 제공 합니다. 이 업데이트에서는 중요 한 수정 사항, 개선 사항 및 비즈니스에서 요청 하 고 Microsoft HoloLens 상용 제품군에서 사용 가능한 기능 소개에 초점을 맞추고 있습니다.
+HoloLens 팀은 Windows 참가자 프로그램의 개발자가 작업의 우선 순위를 지정 하는 피드백을 수신 대기 합니다. 피드백 허브, [개발자 포럼](https://forums.hololens.com) [ @HoloLens 및 Twitter ](https://twitter.com/hololens)를 통해 피드백을 계속 해 서 [보내 주세요](/windows/mixed-reality/give-us-feedback) . Windows 10에서 기념일 업데이트를 수용 하는 경우 HoloLens 팀은 holographic 환경에 대 한 향상 된 기능을 제공 합니다. 이 업데이트에서는 중요 한 수정 사항, 개선 사항 및 비즈니스에서 요청 하 고 Microsoft HoloLens 상용 제품군에서 사용 가능한 기능 소개에 초점을 맞추고 있습니다.
 
 **최신 릴리스:** Windows Holographic 8 월 2016 업데이트 (**10.0.14393.0**, Windows 10 기념일 릴리스)
 
 >[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
 
-[현재 릴리스로 업데이트](https://docs.microsoft.com/windows/mixed-reality/updating-hololens)하려면 *설정* 앱을 열고 *업데이트 & 보안* 으로 이동한 후 *업데이트 확인* 단추를 선택 합니다.
+[현재 릴리스로 업데이트](/windows/mixed-reality/updating-hololens)하려면 *설정* 앱을 열고 *업데이트 & 보안* 으로 이동한 후 *업데이트 확인* 단추를 선택 합니다.
 
-## <a name="new-features"></a>새 기능
+## <a name="new-features"></a>새로운 기능
 
-**프로세스 디버깅에 연결** 이제 HoloLens에서 프로세스에 대 한 디버깅을 지원 합니다. Visual Studio 2015 업데이트 3을 사용 하 여 HoloLens에서 실행 중인 앱에 연결 하 고 [디버깅을 시작할](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio#debugging-an-installed-or-running-app)수 있습니다. Visual Studio 프로젝트에서 배포할 필요 없이 작동 합니다.
+**프로세스 디버깅에 연결** 이제 HoloLens에서 프로세스에 대 한 디버깅을 지원 합니다. Visual Studio 2015 업데이트 3을 사용 하 여 HoloLens에서 실행 중인 앱에 연결 하 고 [디버깅을 시작할](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio#debugging-an-installed-or-running-app)수 있습니다. Visual Studio 프로젝트에서 배포할 필요 없이 작동 합니다.
 
 **업데이트 된 HoloLens 에뮬레이터** 또한 업데이트 된 버전의 HoloLens 에뮬레이터를 출시 했습니다.
 
-**게임 패드 지원** 이제 HoloLens를 사용 하 여 Bluetooth gamepads를 페어링 하 고 사용할 수 있습니다. 새로 릴리스된 Xbox 무선 컨트롤러는 Bluetooth 기능을 갖추고 있으며 즐겨 사용 하는 게임 패드를 사용 하는 게임 및 앱을 재생 하는 데 사용할 수 있습니다. Xbox 무선 컨트롤러 S를 HoloLens와 연결 하려면 먼저 [컨트롤러 업데이트](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) 를 적용 해야 합니다. Xbox 무선 컨트롤러는 XInput 및 [Windows](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) [](https://msdn.microsoft.com/library/windows/desktop/hh405053(v=vs.85).aspx) api에서 지원 됩니다. [Windows. 게이밍](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) API를 통해 더 많은 Bluetooth 컨트롤러 모델에 액세스할 수 있습니다.
+**게임 패드 지원** 이제 HoloLens를 사용 하 여 Bluetooth gamepads를 페어링 하 고 사용할 수 있습니다. 새로 릴리스된 Xbox 무선 컨트롤러는 Bluetooth 기능을 갖추고 있으며 즐겨 사용 하는 게임 패드를 사용 하는 게임 및 앱을 재생 하는 데 사용할 수 있습니다. Xbox 무선 컨트롤러 S를 HoloLens와 연결 하려면 먼저 [컨트롤러 업데이트](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) 를 적용 해야 합니다. Xbox 무선 컨트롤러는 XInput 및 [Windows](/uwp/api/Windows.Gaming.Input) [](/windows/win32/xinput/xinput-game-controller-apis-portal) api에서 지원 됩니다. [Windows. 게이밍](/uwp/api/Windows.Gaming.Input) API를 통해 더 많은 Bluetooth 컨트롤러 모델에 액세스할 수 있습니다.
 
 ## <a name="improvements-and-fixes"></a>향상된 기능 및 수정 프로그램
 
@@ -53,7 +53,7 @@ Microsoft는 Windows 10 기념일 업데이트의 나머지 부분과 동기화 
 
 ## <a name="introducing-microsoft-hololens-commercial-suite"></a>Microsoft HoloLens 상용 제품군 소개
 
-Microsoft HoloLens 상용 제품군은 엔터프라이즈 배포할 준비가 되었습니다. 초기 비즈니스 파트너 로부터 요청 된 [상업적 기능](https://docs.microsoft.com/windows/mixed-reality/commercial-features) 을 몇 개 추가 했습니다.
+Microsoft HoloLens 상용 제품군은 엔터프라이즈 배포할 준비가 되었습니다. 초기 비즈니스 파트너 로부터 요청 된 [상업적 기능](/windows/mixed-reality/commercial-features) 을 몇 개 추가 했습니다.
 
 Microsoft HoloLens 상용 Suite를 구매 하려면 로컬 Microsoft 계정 관리자에 게 문의 하세요.
 
@@ -78,7 +78,7 @@ Microsoft HoloLens 상용 Suite를 구매 하려면 로컬 Microsoft 계정 관�
 </tr><tr>
 <td>VPN(가상 사설망)</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#kiosk-mode">키오스크 모드</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#kiosk-mode">키오스크 모드</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> 관리 및 배포</th>
 </tr><tr>
@@ -90,7 +90,7 @@ Microsoft HoloLens 상용 Suite를 구매 하려면 로컬 Microsoft 계정 관�
 </tr><tr>
 <td>Microsoft Store (소비자)</td><td style="text-align: center;">소비자</td><td style="text-align: center;">MDM을 통해 필터링</td>
 </tr><tr>
-<td><a href="https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps">비즈니스 스토어 포털</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="/microsoft-store/working-with-line-of-business-apps">비즈니스 스토어 포털</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> 보안 및 ID</th>
 </tr><tr>
@@ -100,13 +100,13 @@ Microsoft HoloLens 상용 Suite를 구매 하려면 로컬 Microsoft 계정 관�
 </tr><tr>
 <td>PIN 잠금 해제를 사용 하는 차세대 자격 증명</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview">보안 부팅</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td><a href="/windows-hardware/design/device-experiences/oem-secure-boot">보안 부팅</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> 서비스 및 지원</th>
 </tr><tr>
 <td>도착 하면 자동 시스템 업데이트</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="/windows/deployment/update/waas-manage-updates-wufb">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td>장기 서비스 분기</td><td></td><td style="text-align: center;">✔️</td>
 </tr>
@@ -116,8 +116,8 @@ Microsoft HoloLens 상용 Suite를 구매 하려면 로컬 Microsoft 계정 관�
 * [릴리스 정보 - 2016년 5월](release-notes-may-2016.md)
 * [릴리스 정보 - 2016년 3월](release-notes-march-2016.md)
 
-## <a name="see-also"></a>참조
-* [HoloLens 알려진 문제](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
-* [상용 기능](https://docs.microsoft.com/windows/mixed-reality/commercial-features)
-* [도구 설치](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [HoloLens 에뮬레이터 사용](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)
+## <a name="see-also"></a>참고 항목
+* [HoloLens 알려진 문제](/windows/mixed-reality/hololens-known-issues)
+* [상용 기능](/windows/mixed-reality/commercial-features)
+* [도구 설치](/windows/mixed-reality/develop/install-the-tools)
+* [HoloLens 에뮬레이터 사용](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)

@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit, holographic 렌더링, holographic, 몰입 형, 포커스 지점, 깊이 버퍼, 방향 전용, 위치, 불투명, 투명, 클립, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: cd5284a8fdef7254b7d0375b57877d30f5d0d708
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: ba42e8a384f62dddcf7b8e685859ddeff7b666bb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006393"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581128"
 ---
 # <a name="camera-in-unity"></a>Unity의 카메라
 
@@ -33,7 +33,7 @@ ms.locfileid: "98006393"
 Unity 카메라 구성 요소의 기본 설정은 일반적인 3D 응용 프로그램을 위한 것 이며 실제 세계에 있지 않기 때문에 skybox 같은 배경을 필요로 합니다.
 
 * **[몰입 형 헤드셋](../../discover/immersive-headset-hardware-details.md)** 에서 실행 하는 경우 사용자에 게 표시 되는 모든 항목을 렌더링 하 게 되므로 skybox를 유지할 수 있습니다.
-* 그러나 [HoloLens](../../hololens-hardware-details.md)와 같은 **holographic 헤드셋** 에서 실행 하는 경우 실제 세계는 카메라에서 렌더링 하는 모든 항목 뒤에 표시 되어야 합니다. Skybox 질감이 아닌 카메라 배경을 투명 하 게 설정 합니다 (HoloLens에서 검정색 렌더링 투명).
+* 그러나 [HoloLens](/hololens/hololens1-hardware)와 같은 **holographic 헤드셋** 에서 실행 하는 경우 실제 세계는 카메라에서 렌더링 하는 모든 항목 뒤에 표시 되어야 합니다. Skybox 질감이 아닌 카메라 배경을 투명 하 게 설정 합니다 (HoloLens에서 검정색 렌더링 투명).
     1. 계층 패널에서 주 카메라를 선택 합니다.
     2. 검사기 패널에서 카메라 구성 요소를 찾아 Clear Flags dropdown을 Skybox에서 Solid Color로 변경 합니다.
     3. 배경색 선택을 선택 하 고 RGBA 값을 (0, 0, 0, 0)으로 변경 합니다.
@@ -81,7 +81,7 @@ HoloLens 및 몰입 형 헤드셋은 모두 앱이 렌더링 하는 각 프레�
 Windows에 앱의 깊이 버퍼를 공유 하면 각 프레임에서 렌더링 하는 헤드셋의 유형에 따라 홀로그램 안정성의 두 가지 향상 된 기능 중 하나를 앱에 제공 합니다.
 
 * **몰입 형 헤드셋** 은 깊이 버퍼가 제공 될 때 위치를 다시 프로젝션 하 여 위치와 방향 모두에서 misprediction에 대 한 holograms를 조정할 수 있습니다.
-* **Holographic 헤드셋** 에는 몇 가지 방법이 있습니다. HoloLens 1은 깊이 버퍼가 제공 될 때 [포커스 지점을](focus-point-in-unity.md) 자동으로 선택 하 여 대부분의 콘텐츠와 교차 하는 평면을 따라 홀로그램의 안정성을 최적화 합니다. HoloLens 2는 [깊이 LSR (설명 참조)](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)을 사용 하 여 콘텐츠를 안정화 합니다.
+* **Holographic 헤드셋** 에는 몇 가지 방법이 있습니다. HoloLens 1은 깊이 버퍼가 제공 될 때 [포커스 지점을](focus-point-in-unity.md) 자동으로 선택 하 여 대부분의 콘텐츠와 교차 하는 평면을 따라 홀로그램의 안정성을 최적화 합니다. HoloLens 2는 [깊이 LSR (설명 참조)](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)을 사용 하 여 콘텐츠를 안정화 합니다.
 
 Unity 앱이 Windows에 깊이 버퍼를 제공할지 여부를 설정 하려면 다음을 수행 합니다.
 
@@ -109,7 +109,7 @@ Unity 앱이 Windows에 깊이 버퍼를 제공할지 여부를 설정 하려면
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [홀로그램 안정성](../platform-capabilities-and-apis/hologram-stability.md)
 * [MixedRealityToolkit 주 카메라 prefab](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Input/Prefabs)

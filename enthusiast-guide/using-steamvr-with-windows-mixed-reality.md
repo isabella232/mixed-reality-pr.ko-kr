@@ -3,12 +3,12 @@ title: Windows Mixed Reality에서 SteamVR 사용
 description: 호환 되는 Pc를 사용 하 여 Windows Mixed Reality 헤드셋 및 컨트롤러에서 SteamVR 게임을 설정 하 고 재생 하는 방법을 알아봅니다.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 게임, SteamVR, 스트림, 시스템 요구 사항
-ms.openlocfilehash: 01fac0f6ce88e473da8a8d9300a4169b37b74078
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: 4a2d3065a12cdc413eae5b7ad164db6e820455ae
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031969"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581798"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Windows Mixed Reality에서 SteamVR 사용
 
@@ -163,6 +163,6 @@ Blue = 응용 프로그램이 gpu 바인딩되어 있으므로 동작 다시 프
 
 * [Windows Mixed Reality로 SteamVR 문제 해결](steamvr-questions.md)
 * [Windows Mixed Reality에서 게임과 앱 사용](using-games-and-apps-in-windows-mixed-reality.md)
-* [Unity에서 HP 컨트롤러 사용](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-* [Unreal에서 HP 컨트롤러 사용](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+* [Unity에서 HP 컨트롤러 사용](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+* [Unreal에서 HP 컨트롤러 사용](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 * [버그 및 피드백 신고](filing-feedback.md)
