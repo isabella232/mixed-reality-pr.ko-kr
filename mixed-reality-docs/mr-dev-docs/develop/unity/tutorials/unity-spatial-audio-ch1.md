@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head 관련 전송 함수, 반향, Microsoft Spatializer
-ms.openlocfilehash: 7d4702a21fccbb18c7c4b07675953c37785ae6db
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: cc7a4db5a3b4d853f2912a5e8e022fddd372e105
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580228"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635391"
 ---
 # <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. Unity 프로젝트에 공간 오디오 추가
 
@@ -63,7 +63,7 @@ HRTF 기반 알고리즘을 사용 하 여 오디오를 처리 하려면 많은 
 
 1. [장면을 만들고 설정](mr-learning-base-02.md#creating-and-configuring-the-scene) 하 고 장면에 적절 한 이름 (예: *SpatialAudio* )을 제공 합니다.
 
-그런 다음 [공간 인식 디스플레이 변경 옵션](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면의 MRTK 구성 프로필이 **DefaultXRSDKConfigurationProfile** 고 공간 인식 메시의 표시 옵션을 **폐색** 로 변경 합니다.
+그런 다음 [공간 인식 디스플레이 변경 옵션](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면의 MRTK 구성 프로필이 **DefaultHoloLens2ConfigurationProfile** 고 공간 인식 메시의 표시 옵션을 **폐색** 로 변경 합니다.
 
 ## <a name="adding-microsoft-spatializer-to-the-project"></a>프로젝트에 Microsoft Spatializer 추가
 

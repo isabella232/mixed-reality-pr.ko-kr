@@ -3,19 +3,19 @@ title: QR 코드 추적
 description: HoloLens 2의 혼합 현실 앱에서 QR 코드를 검색 하 고, 웹캠 기능을 추가 하 고, 좌표계를 관리 하는 방법에 대해 알아봅니다.
 author: dorreneb
 ms.author: dobrown
-ms.date: 05/15/2019
+ms.date: 01/21/2021
 ms.topic: article
 keywords: vr, lbe, 위치 기반 엔터테인먼트, vr 아케이드, 아케이드, 모던, qr, qr 코드, hololens2
-ms.openlocfilehash: 08ed651deaab0c230142f45b93858f41ee300323
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 0f53b8def268b2d501c6efe3c3e40ea18f9323e0
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583144"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635435"
 ---
 # <a name="qr-code-tracking"></a>QR 코드 추적
 
-HoloLens 2는 헤드셋 주변 환경의 QR 코드를 감지하여 각 코드의 실제 위치에 좌표계를 설정할 수 있습니다.
+HoloLens 2는 헤드셋 주변 환경의 QR 코드를 감지하여 각 코드의 실제 위치에 좌표계를 설정할 수 있습니다. 장치의 웹캠을 사용 하도록 설정 하면 최신 버전의 Unreal 또는 Unity 프로젝트에서 QR 코드를 인식할 수 있습니다. 프로덕션으로 전환 하기 전에 문서 끝에 있는 [모범 사례](#best-practices-for-qr-code-detection) 를 따르는 것이 좋습니다.
 
 ## <a name="device-support"></a>디바이스 지원
 

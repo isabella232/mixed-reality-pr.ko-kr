@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, 장치에 배포, PC, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7302e6c8d5de866b652ec4741fbef128eca616e0
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: eca0b12cd9ba4e3d5d4033790184ffd770b44280
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580814"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635401"
 ---
 # <a name="the-making-of-kippys-escape"></a>Kippy의 이스케이프 만들기
 
@@ -62,21 +62,21 @@ HoloLens 2는 현재 게임에서 다른 곳에서 찾을 수 없는 디자인 �
 
 Kippy의 이스케이프는 혼합 현실 UX 도구 구성 요소에 크게 의존 하 여 게임을 대화형으로 진행 하 고, 범위 컨트롤, 조작자, 슬라이더 및 단추를 만듭니다.   
 
-[손 상호 작용 행위자](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html) 는 holograms의 직접 조작과 직접 조작을 모두 가능 하 게 합니다. Kippy의 이스케이프 시작 부분에서 사용자에 게 게임의 위치를 설정할 수 있는 기회가 제공 됩니다. 빔 사용자의 palm에서 확장 하면 아래에 나와 있는 것 처럼 훨씬 멀리 떨어져 있는 holograms를 쉽게 조작할 수 있습니다.  
+[손 상호 작용 행위자](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) 는 holograms의 직접 조작과 직접 조작을 모두 가능 하 게 합니다. Kippy의 이스케이프 시작 부분에서 사용자에 게 게임의 위치를 설정할 수 있는 기회가 제공 됩니다. 빔 사용자의 palm에서 확장 하면 아래에 나와 있는 것 처럼 훨씬 멀리 떨어져 있는 holograms를 쉽게 조작할 수 있습니다.  
 
 ![직접 상호 작용 행위자 gif](images/kippys-escape/kippys-escape-img-06.gif)
 
-UX 도구의 [범위 컨트롤](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/BoundsControl.html) 구성 요소를 사용 하 여 자리 표시자 장면 자체를 끌어서 회전할 수 있습니다.  
+UX 도구의 [범위 컨트롤](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/BoundsControl.html) 구성 요소를 사용 하 여 자리 표시자 장면 자체를 끌어서 회전할 수 있습니다.  
 
-두 번째 아일랜드에서 사용자는 보석을 선택 하 여 일치 하는 슬롯에 넣어야 합니다. 보석에는 사용자가 선택 하 여 배치할 수 있도록 하는 [조작자](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/Manipulator.html) 가 연결 되어 있습니다. 
+두 번째 아일랜드에서 사용자는 보석을 선택 하 여 일치 하는 슬롯에 넣어야 합니다. 보석에는 사용자가 선택 하 여 배치할 수 있도록 하는 [조작자](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Manipulator.html) 가 연결 되어 있습니다. 
 
 ![조작자 예제 gif](images/kippys-escape/kippys-escape-img-07.gif)
 
-[Pressable 단추](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PressableButton.html) 는 세 번째 섬에서 사용할 폭탄를 가져오는 키입니다.  
+[Pressable 단추](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PressableButton.html) 는 세 번째 섬에서 사용할 폭탄를 가져오는 키입니다.  
 
 ![Pressable button 예제 gif](images/kippys-escape/kippys-escape-img-08.gif)
 
-네 번째 섬에 [슬라이더](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PinchSlider.html) 구성 요소가 표시 되 고 발생 시킬 최종 브리지가 트리거됩니다.  
+네 번째 섬에 [슬라이더](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PinchSlider.html) 구성 요소가 표시 되 고 발생 시킬 최종 브리지가 트리거됩니다.  
 
 ![Slider 구성 요소 예제 gif](images/kippys-escape/kippys-escape-img-09.gif) 
 
