@@ -6,17 +6,22 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 버전 기록, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 0eab33a058aee8003b352fbfae3ba038b80319d4
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: e1f80d0d2cbd02b78ed07e3ec60825ffe1059309
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582873"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699012"
 ---
 # <a name="holographic-remoting-version-history"></a>Holographic 원격 버전 기록
 
 > [!IMPORTANT]
 > 이 지침은 HoloLens 2의 Holographic Remoting에만 적용 됩니다.
+
+## <a name="version-241-january-22-2021"></a>버전 2.4.1 (2021 년 1 월 22 일) <a name="v2.4.1"></a>
+
+* 연결 하는 동안 호출 되는 경우 SpatialAnchorManager:: RequestStoreAsync가 안정적으로 작동 하지 않는 문제가 해결 되었습니다.
+* 문제의 앵커가 과정이 되지 않는 경우 SpatialAnchorManager:: Trsave가 앵커를 올바르게 저장 하지 않는 문제를 해결 했습니다.
 
 ## <a name="version-240-december-1-2020"></a>버전 2.4.0 (2020 년 12 월 1 일) <a name="v2.4.0"></a>
 
