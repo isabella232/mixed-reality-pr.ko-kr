@@ -256,8 +256,14 @@
   items:
     - name: Unreal 개발 개요
       href: unreal/unreal-development-overview.md
+    - name: MRTK 소개
+      href: unreal/unreal-mrtk-introduction.md
     - name: Unreal에서 프로젝트 업그레이드
       href: unreal/unreal-porting.md
+    - name: 빠른 시작
+      items:
+        - name: HoloLens 프로젝트 만들기
+          href: unreal/unreal-quickstart.md
     - name: 자습서
       items:
         - name: MRTK UX 도구를 사용하여 체스 앱 빌드
@@ -290,7 +296,19 @@
           href: unreal/unreal-azure-spatial-anchors.md
         - name: 음성 입력
           href: unreal/unreal-voice-input.md
-    - name: 고급 기능
+    - name: 모범 사례
+      items:
+        - name: 일반적인 유용한 정보
+          href: unreal/unreal-best-practices.md
+        - name: Unreal을 사용하기 위한 권장 성능
+          href: unreal/performance-recommendations-for-unreal.md
+        - name: Unreal의 재질 권장 사항
+          href: unreal/unreal-materials.md
+        - name: Unreal Insights를 사용하여 프로파일링
+          href: unreal/unreal-insights.md
+        - name: Unreal의 편집기 확장
+          href: unreal/unreal-editor-extensions.md
+    - name: 플랫폼 기능 및 API
       items:
         - name: HoloLens 사진/비디오 카메라
           href: unreal/unreal-hololens-camera.md
@@ -300,6 +318,8 @@
           href: unreal/unreal-umg-keyboard.md
         - name: WinRT
           href: unreal/unreal-winrt.md
+        - name: Unreal의 스트리밍
+          href: unreal/unreal-streaming.md
     - name: 몰입형 VR
       items:
         - name: HP Reverb G2 컨트롤러
@@ -308,20 +328,12 @@
       items:
         - name: Kippy의 이스케이프
           href: unreal/unreal-kippys-escape.md
-    - name: 배포 및 성능
+    - name: 배포 및 게시
       items:
         - name: 디바이스에 배포
           href: unreal/unreal-deploying.md
         - name: Microsoft Store에 게시
           href: unreal/unreal-publishing-to-store.md
-        - name: 성능 추천 사항
-          href: unreal/performance-recommendations-for-unreal.md
-        - name: 재질 권장 사항
-          href: unreal/unreal-materials.md
-        - name: Unreal Insights를 사용하여 프로파일링
-          href: unreal/unreal-insights.md
-        - name: 스트리밍
-          href: unreal/unreal-streaming.md
 - name: 웹
   items:
     - name: 웹 개발 개요
@@ -387,7 +399,7 @@
         - name: 혼합 현실의 공유 환경
           href: platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md
         - name: Azure Spatial Anchors
-          href: 'https://docs.microsoft.com/azure/spatial-anchors/'
+          href: /azure/spatial-anchors/
         - name: Spectator View
           href: platform-capabilities-and-apis/spectator-view.md
         - name: WebRTC
@@ -423,9 +435,9 @@
         - name: 버전 기록
           href: platform-capabilities-and-apis/holographic-remoting-version-history.md
         - name: 홀로그램 원격 소프트웨어 사용 조건
-          href: 'https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms'
+          href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: HoloLens(1세대)의 홀로그램 원격
-          href: 'https://docs.microsoft.com'
+          href: null
         - name: 홀로그램 원격 접속 추가
           href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: 앱 품질 및 테스트
