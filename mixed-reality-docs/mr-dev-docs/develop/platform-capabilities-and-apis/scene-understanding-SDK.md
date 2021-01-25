@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: 장면 이해, 공간 매핑, Windows Mixed Reality, Unity
-ms.openlocfilehash: 10cb96ffe0496a20c7244ba4c40dec097ebd4bd8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 748ec444bfcbabb534f391a889fcc16c7671bf7d
+ms.sourcegitcommit: 753f0ee94cf86be645cad8efd60f1b43ac529c96
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583757"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98758371"
 ---
 # <a name="scene-understanding-sdk-overview"></a>장면 이해 SDK 개요
 
@@ -47,7 +47,7 @@ Unity 프로젝트에서 SDK를 사용 하는 경우 [unity 용 NuGet](https://g
 
 각 장면은 응용 프로그램의 메모리 공간에 해당 데이터를 저장 하기 때문에 장면 개체의 모든 기능 또는 내부 데이터가 항상 응용 프로그램의 프로세스에서 실행 된다고 가정할 수 있습니다.
 
-### <a name="layout"></a>레이아웃
+### <a name="layout"></a>Layout
 
 장면 이해를 사용 하려면 런타임이 구성 요소를 논리적 및 물리적으로 표시 하는 방법을 알고 이해 하는 것이 유용할 수 있습니다. 장면은 주요 수정이 필요 하지 않고 미래의 요구 사항을 충족 하는 pliable 기본 구조를 유지 하면서 간단 하 게 선택 된 특정 레이아웃을 가진 데이터를 나타냅니다. 장면에서는 모든 구성 요소 (모든 장면 개체의 빌딩 블록)를 단순 목록에 저장 하 고 특정 구성 요소가 다른 항목을 참조 하는 참조를 통해 계층 구조와 컴퍼지션을 정의 하 여이를 수행 합니다.
 
@@ -117,7 +117,7 @@ SceneObjects에는 다음 중 하나를 사용할 수 있습니다.
 
 <table>
 <tr>
-<th>SceneObjectKind</th> <th>설명</th>
+<th>SceneObjectKind</th> <th>Description</th>
 </tr>
 <tr><td>배경</td><td>SceneObject는 인식 되는 다른 종류의 장면 개체 중 하나가 <b>아닌</b> 것으로 알려져 있습니다. 이 클래스는 배경을 벽/층/천장 등이 아닌 것으로 알려진 경우 알 수 없는와 혼동 해서는 안 됩니다. unknown은 아직 분류 되지 않습니다.</b></td></tr>
 <tr><td>벽</td><td>실제 벽입니다. 벽은 불균형 환경 구조로 간주 됩니다.</td></tr>
@@ -125,7 +125,7 @@ SceneObjects에는 다음 중 하나를 사용할 수 있습니다.
 <tr><td>Ceiling</td><td>방의 위쪽 표면입니다.</td></tr>
 <tr><td>플랫폼</td><td>Holograms를 놓을 수 있는 커다란 플랫 표면입니다. 이는 테이블, countertops 및 기타 넓은 가로 표면을 나타내는 경향이 있습니다.</td></tr>
 <tr><td>World</td><td>레이블 지정과 무관 한 기하학적 데이터의 예약 된 레이블입니다. EnableWorldMesh 업데이트 플래그를 설정 하 여 생성 된 메시는 세계로 분류 됩니다.</td></tr>
-<tr><td>알 수 없음</td><td>이 장면 개체는 아직 분류 되어 있으며 종류를 할당 해야 합니다. 이 개체는 아무것도 될 수 있으므로 배경과 혼동 해서는 안 됩니다. 시스템은 아직 충분히 강력한 분류로 제공 되지 않습니다.</td></tr>
+<tr><td>Unknown</td><td>이 장면 개체는 아직 분류 되어 있으며 종류를 할당 해야 합니다. 이 개체는 아무것도 될 수 있으므로 배경과 혼동 해서는 안 됩니다. 시스템은 아직 충분히 강력한 분류로 제공 되지 않습니다.</td></tr>
 </tr>
 </table>
 
@@ -432,7 +432,7 @@ HoloLens2가 있는 경우 ComputeSerializedAsync의 출력을 파일에 저장 
 
 HoloLens2 장치가 없지만 장면 이해를 재생 하려는 경우에는 미리 캡처된 장면을 다운로드 해야 합니다. 장면 이해 샘플은 현재 사용자의 편의를 위해 다운로드 하 여 사용할 수 있는 직렬화 된 장면과 함께 제공 됩니다. 여기에서 찾을 수 있습니다.
 
-[장면 이해 샘플 장면](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples/tree/master/Assets/Resources/SerializedScenesForPCPath)
+[장면 이해 샘플 장면](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)
 
 ## <a name="see-also"></a>참고 항목
 
