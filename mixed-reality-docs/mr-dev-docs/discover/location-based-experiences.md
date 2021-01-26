@@ -6,12 +6,12 @@ ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
 keywords: 혼합 현실, vr, lbe, 위치, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 하드웨어, HoloLens, 다중 플레이어, 클라우드 서비스, azure
-ms.openlocfilehash: 41b35e7f92f8410357c685362ebc1714aea616e8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 1cc54ad0ef4b9892c49e13c7437a4d5356093c79
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580670"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810110"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Windows Mixed Reality를 사용 하는 위치 기반 엔터테인먼트
 
@@ -49,7 +49,7 @@ PC 테더 링 된 VR 환경에서 Oem은 해당 요구에 맞게 작성 된 백�
 
 HP는 전 세계의 가장 강력한 wearable PC 인 HP VR 백팩 G2를 출시 했습니다. 이제 무료 로밍 환경에 최적화 되어 있으며, 이제 RTX 2080 GPU를 사용 하 여 30% 더 강력한 기능을 제공 합니다. [세부 정보](https://www8.hp.com/us/en/vr/vr-backpack.html)
 
-### <a name="setup"></a>설치 프로그램
+### <a name="setup"></a>설정
 
 **Q: 보다 쉽게 설치를 구성 하 고 LBE에 대 한 혼합 현실 포털을 사용자 지정 하려면 어떻게 해야 하나요?**
 
@@ -98,11 +98,11 @@ JSON 파일에는 설정 하려는 위의 설정에 대해 "true"로 설정 된 
  
 **Q: playspace를 구성 하는 방법에 대 한 지침이 있나요?**
 
-A: 플레이 공간 구성은 소비자 설정 환경에서 수행 해야 합니다. 대화방 설정 프로세스를 사용 하 여 대화방 경계를 정의할 수도 있습니다. 방 경계 구성에 대 한 자세한 내용은 [여기](//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)를 참조 하세요.
+A: 플레이 공간 구성은 소비자 설정 환경에서 수행 해야 합니다. 대화방 설정 프로세스를 사용 하 여 대화방 경계를 정의할 수도 있습니다. 방 경계 구성에 대 한 자세한 내용은 [여기](/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)를 참조 하세요.
 
 위의 문서에 설명 된 대로 최대 합리적인 단일 좌표 playspace는 5mx5m 주위에 있습니다. 더 큰 영역을 사용 하려는 경우 Windows Holographic API 스택에서 공간 앵커 기능을 사용할 수 있습니다. 이 API를 사용 하려면 사용자가 생성 하는 환경에서 사용자 지정 엔지니어링이 필요 합니다.  
 
-다른 공간 크기에 대 한 콘텐츠를 최적화 하는 방법에 대 한 자세한 내용은 [여기](//windows/mixed-reality/coordinate-systems)를 참조 하세요.
+다른 공간 크기에 대 한 콘텐츠를 최적화 하는 방법에 대 한 자세한 내용은 [여기](/windows/mixed-reality/coordinate-systems)를 참조 하세요.
  
 
 **Q: 공간이 너무 크고 경계를 사용 하 여 가동 환경을 설정 하려고 할 때 오류가 발생 합니다. 내 대량 로밍 환경 작업을 설정 하려면 어떻게 해야 하나요?**
@@ -113,7 +113,7 @@ A: ~ 18x18ft 보다 큰 공간을 설정 하려면 시스템에서 제공 하는
 
 응용 프로그램 개발자는 사용자가 실제 환경에서 충돌 하지 않도록 필요한 보호 기능을 표시 해야 합니다.  이러한 작업은 환경 내에서 디지털 벽 이거나 사용자 지정 된 게임 경계 시각적 개체 일 수 있습니다. 
 
-WMR를 사용 하 여 대화방 경계를 설정 하는 방법에 대 한 지침은 [여기](//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)에서 찾을 수 있습니다.
+WMR를 사용 하 여 대화방 경계를 설정 하는 방법에 대 한 지침은 [여기](/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)에서 찾을 수 있습니다.
 
 **Q: playspace의 원점은 어디에 있나요?**
 
@@ -140,7 +140,7 @@ A: microsoft Insider program을 통해 Windows 20H1 이상 빌드를 옵트인 (
 
 Q: Windows Mixed Reality 헤드셋의 추적 기술은 어떻게 작동 하나요?  
 
-혼합 현실에서는 HoloLens와 동일한 추적 기술을 공유 합니다. 내부 추적 시스템에 대 한 자세한 내용을 보려면 [여기](//windows/mixed-reality/enthusiast-guide/tracking-system)에서 설명서를 확인 하세요.
+혼합 현실에서는 HoloLens와 동일한 추적 기술을 공유 합니다. 내부 추적 시스템에 대 한 자세한 내용을 보려면 [여기](/windows/mixed-reality/enthusiast-guide/tracking-system)에서 설명서를 확인 하세요.
 
 상위 수준 공간 매핑 시스템의 작동 방식에 대 한 설명을 보려면 [여기](../design/spatial-mapping.md)에서 설명을 참조 하세요.
 
@@ -188,13 +188,13 @@ A: Azure PlayFab은 라이브 게임을 위한 완벽 한 백 엔드 플랫폼�
 
 **Q: SteamVR를 사용 하 여 내 환경을 배포 합니다. Windows Mixed Reality가 SteamVR에서 작동 하나요?**
 
-A: SteamVR에 대 한 Windows Mixed Reality를 통해 사용자는 Windows Mixed Reality 모던 헤드셋에서 SteamVR 환경을 실행할 수 있습니다. WMR with SteamVR에 대 한 자세한 내용은 [여기](//windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)를 참조 하세요.
+A: SteamVR에 대 한 Windows Mixed Reality를 통해 사용자는 Windows Mixed Reality 모던 헤드셋에서 SteamVR 환경을 실행할 수 있습니다. WMR with SteamVR에 대 한 자세한 내용은 [여기](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)를 참조 하세요.
 
 ### <a name="support-and-community"></a>지원 및 커뮤니티  
 
 팀의 실무 전문가와 협력 하 고, 문제 해결 지원을 받고, 광범위 한 mixed reality 개발자 커뮤니티에 참여 하는 데 도움이 되는 몇 가지 유용한 리소스를 제공 합니다.  
 
-공개적으로 릴리스된 기능에 문제가 발생 하는 경우 피드백 허브를 사용 하 여 버그를 작성 합니다. 지침에 대해서는이 [페이지](//windows/mixed-reality/enthusiast-guide/filing-feedback)를 참조 하세요.
+공개적으로 릴리스된 기능에 문제가 발생 하는 경우 피드백 허브를 사용 하 여 버그를 작성 합니다. 지침에 대해서는이 [페이지](/windows/mixed-reality/enthusiast-guide/filing-feedback)를 참조 하세요.
 
 WMR에 대 한 기타 문제 해결 도움말은 고객 지원 팀과 함께 [지원 요청](https://support.microsoft.com//supportforbusiness/productselection?sapId=96bfb202-bc79-741b-bf7a-774d8b767782) 을 파일에 포함 하세요.
 

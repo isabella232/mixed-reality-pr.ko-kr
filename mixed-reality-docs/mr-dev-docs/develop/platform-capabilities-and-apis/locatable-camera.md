@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 06/12/2019
 ms.topic: article
 keywords: 카메라, hololens, 컬러 카메라, 전면, hololens 2, cv, 컴퓨터 비전, fiducial, 표식, qr 코드, qr, 사진, 비디오
-ms.openlocfilehash: bc478aa658b26eb3a4efb16c62d0874b12992e78
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f34973fee56f9469632b320a62dd441ed32e5805
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583623"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810158"
 ---
 # <a name="locatable-camera"></a>위치를 찾을 수 있는 카메라
 
@@ -25,7 +25,7 @@ HoloLens는 장치 전면에 탑재 된 세계 카메라를 포함 하 여 앱�
 * 카메라가 활성화 될 때마다 전 세계의 개인 개인 정보 취급 LED가 켜 집니다.
 * 카메라는 30, 24, 20, 15, 5fps의 다음 모드 (모든 모드에서 16:9 가로 세로 비율)를 지원 합니다.
 
-  |  동영상  |  미리 보기  |  실패할  |  뷰의 가로 필드 (H-FOV) |  권장 사용법 | 
+  |  비디오  |  미리 보기  |  실패할  |  뷰의 가로 필드 (H-FOV) |  권장 사용법 | 
   |----------|----------|----------|----------|----------|
   |  1280x720 |  1280x720 |  1280x720 |  45도  |  (비디오 안정화를 사용 하는 기본 모드) | 
   |  해당 없음 |  해당 없음 |  2048x1152 |  67도 |  가장 높은 해상도의 이미지 | 
@@ -37,10 +37,10 @@ HoloLens는 장치 전면에 탑재 된 세계 카메라를 포함 하 여 앱�
 
 * 자동 흰색 잔액, 자동 노출 및 전체 이미지 처리 파이프라인이 있는 PV (자동 포커스 사진/비디오) 카메라
 * 카메라가 활성화 될 때마다 전 세계의 개인 개인 정보 취급 LED가 켜 집니다.
-* HoloLens 2는 다른 카메라 프로필을 지원 합니다. [카메라 기능을 검색 하 고 선택](//windows/uwp/audio-video-camera/camera-profiles)하는 방법을 알아봅니다.
+* HoloLens 2는 다른 카메라 프로필을 지원 합니다. [카메라 기능을 검색 하 고 선택](/windows/uwp/audio-video-camera/camera-profiles)하는 방법을 알아봅니다.
 * 카메라는 다음 프로필 및 해상도를 지원 합니다 (모든 비디오 모드는 16:9 가로 세로 비율).
   
-  | 프로필                                         | 동영상     | 미리 보기   | 실패할     | 프레임 속도 | 뷰의 가로 필드 (H-FOV) | 권장 사용법                             |
+  | 프로필                                         | 비디오     | 미리 보기   | 실패할     | 프레임 속도 | 뷰의 가로 필드 (H-FOV) | 권장 사용법                             |
   |-------------------------------------------------|-----------|-----------|-----------|-------------|----------------------------------|---------------------------------------------|
   | 레거시, 0 BalancedVideoAndPhoto, 100             | 2272x1278 | 2272x1278 |           | 15.30       | 64.69                            | 고품질 비디오 녹화                |
   | 레거시, 0 BalancedVideoAndPhoto, 100             | 896x504   | 896x504   |           | 15.30       | 64.69                            | 고품질 사진 캡처에 대 한 미리 보기 스트림 |
@@ -75,14 +75,14 @@ HoloLens 설명서의 다른 곳에서 "카메라"는 "가상 게임 카메라" 
 
 ### <a name="using-mediaframereference"></a>MediaFrameReference 사용
 
-이러한 지침은 you'r가 [MediaFrameReference](//uwp/api/windows.media.capture.frames.mediaframereference) 클래스를 사용 하 여 카메라에서 이미지 프레임을 읽는 경우에 적용 됩니다.
+이러한 지침은 you'r가 [MediaFrameReference](/uwp/api/windows.media.capture.frames.mediaframereference) 클래스를 사용 하 여 카메라에서 이미지 프레임을 읽는 경우에 적용 됩니다.
 
-각 이미지 프레임 (사진 또는 비디오)에는 캡처 시점에 카메라를 기반으로 하는 [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) 이 포함 되어 있으며,이는 [MediaFrameReference](//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)의 [CoordinateSystem](//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) 속성을 사용 하 여 액세스할 수 있습니다. 각 프레임에는 [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 속성에서 찾을 수 있는 카메라 렌즈 모델에 대 한 설명이 포함 되어 있습니다. 이러한 변환은 함께 각 픽셀에 대해 픽셀을 생성 한 photons에서 가져온 경로를 나타내는 3D 공간의 광선을 정의 합니다. 이러한 광선은 프레임의 좌표계에서 다른 좌표계 (예: [고정 참조 프레임](../../design/coordinate-systems.md#stationary-frame-of-reference))로 변환을 가져와서 앱의 다른 콘텐츠와 관련 될 수 있습니다. 
+각 이미지 프레임 (사진 또는 비디오)에는 캡처 시점에 카메라를 기반으로 하는 [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) 이 포함 되어 있으며,이는 [MediaFrameReference](/uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)의 [CoordinateSystem](/uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) 속성을 사용 하 여 액세스할 수 있습니다. 각 프레임에는 [CameraIntrinsics](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 속성에서 찾을 수 있는 카메라 렌즈 모델에 대 한 설명이 포함 되어 있습니다. 이러한 변환은 함께 각 픽셀에 대해 픽셀을 생성 한 photons에서 가져온 경로를 나타내는 3D 공간의 광선을 정의 합니다. 이러한 광선은 프레임의 좌표계에서 다른 좌표계 (예: [고정 참조 프레임](../../design/coordinate-systems.md#stationary-frame-of-reference))로 변환을 가져와서 앱의 다른 콘텐츠와 관련 될 수 있습니다. 
 
 각 이미지 프레임은 다음을 제공 합니다.
 * 픽셀 데이터 (RGB/NV12/JPEG/등 형식)
-* 캡처 위치의 [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem)
-* 카메라의 렌즈 모드가 포함 된 [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 클래스입니다.
+* 캡처 위치의 [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem)
+* 카메라의 렌즈 모드가 포함 된 [CameraIntrinsics](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 클래스입니다.
 
 [HolographicFaceTracking 샘플](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking) 에서는 카메라의 좌표계와 사용자 고유의 응용 프로그램 좌표계 간에 변환을 쿼리 하는 매우 간단한 방법을 보여 줍니다.
 
@@ -251,7 +251,7 @@ public static Vector3 ClosestPointBetweenRays(
 
 ### <a name="track-or-identify-tagged-stationary-or-moving-real-world-objectsfaces-using-leds-or-other-recognizer-libraries"></a>Led 또는 다른 인식기 라이브러리를 사용 하 여 태그가 지정 된 고정 또는 실제 개체/얼굴 이동 추적 또는 식별
 
-예:
+예제:
 * Led가 있는 산업 로봇 (또는 느린 개체 이동에 대 한 QR 코드)
 * 대화방의 개체 식별 및 인식
 * 대화방에서 사람을 식별 하 고 인식 합니다 (예: 얼굴에 holographic 접점 카드 배치).

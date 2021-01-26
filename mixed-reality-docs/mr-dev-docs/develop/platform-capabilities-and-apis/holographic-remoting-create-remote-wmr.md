@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, NuGet
-ms.openlocfilehash: 65c76266c00f51cbe17f6bfd2991a6adf4103855
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6884c2679b155c36a21bcf89352524e4957a9f20
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583856"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810071"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-holographicspace-api"></a>HolographicSpace API를 사용 하 여 Holographic Remoting 원격 앱 작성
 
@@ -22,12 +22,12 @@ Holographic 원격 앱은 원격으로 렌더링 된 콘텐츠를 HoloLens 2 및
 
 이 페이지 및 작업 프로젝트의 모든 코드는 [Holographic Remoting 샘플 github 리포지토리](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)에서 찾을 수 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 좋은 출발점은 [HOLOGRAPHICSPACE API](../native/getting-a-holographicspace.md)를 대상으로 하는 작동 하는 DirectX 기반 데스크톱 또는 UWP 앱입니다. 자세한 내용은 [DirectX 개발 개요](../native/directx-development-overview.md)를 참조 하세요. [C + + holographic 프로젝트 템플릿이](../native/creating-a-holographic-directx-project.md) 좋은 출발점입니다.
 
 >[!IMPORTANT]
->Holographic 원격을 사용 하는 모든 앱은 [다중 스레드 아파트](//windows/win32/com/multithreaded-apartments)를 사용 하도록 작성 되어야 합니다. [단일 스레드 아파트](//windows/win32/com/single-threaded-apartments) 를 사용 하는 것은 지원 되지만, 재생 하는 동안 일지 성능이 저하 될 수 있습니다. C + +/WinRT [winrt:: init_apartment](//windows/uwp/cpp-and-winrt-apis/get-started) 사용 하는 경우 다중 스레드 아파트는 기본값입니다.
+>Holographic 원격을 사용 하는 모든 앱은 [다중 스레드 아파트](/windows/win32/com/multithreaded-apartments)를 사용 하도록 작성 되어야 합니다. [단일 스레드 아파트](/windows/win32/com/single-threaded-apartments) 를 사용 하는 것은 지원 되지만, 재생 하는 동안 일지 성능이 저하 될 수 있습니다. C + +/WinRT [winrt:: init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) 사용 하는 경우 다중 스레드 아파트는 기본값입니다.
 
 
 
@@ -104,7 +104,7 @@ catch(winrt::hresult_error& e)
 >모든 c + +/WinRT API와 마찬가지로 처리 해야 하 ```Connect``` 는 WinRT:: hresult_error을 throw 할 수 있습니다.
 
 >[!TIP]
->[C + +/vb](//windows/uwp/cpp-and-winrt-apis/) 언어 프로젝션을 사용 하지 않으려면 ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` Holographic Remoting NuGet 패키지 내에 있는 파일을 포함할 수 있습니다. 여기에는 기본 COM 인터페이스의 선언이 포함 됩니다. 그러나 c + +/WinRT를 사용 하는 것이 좋습니다.
+>[C + +/vb](/windows/uwp/cpp-and-winrt-apis/) 언어 프로젝션을 사용 하지 않으려면 ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` Holographic Remoting NuGet 패키지 내에 있는 파일을 포함할 수 있습니다. 여기에는 기본 COM 인터페이스의 선언이 포함 됩니다. 그러나 c + +/WinRT를 사용 하는 것이 좋습니다.
 
 원격 앱에서 들어오는 연결을 수신 하는 작업은 메서드를 호출 하 여 수행할 수 있습니다 ```Listen``` . 이 호출 중에 핸드셰이크 포트와 전송 포트를 모두 지정할 수 있습니다. 핸드셰이크 포트는 초기 핸드셰이크에 사용 됩니다. 그러면 전송 포트를 통해 데이터가 전송 됩니다. 기본적으로 **8265** 및 **8266** 이 사용 됩니다.
 
@@ -197,7 +197,7 @@ if (auto remoteSpeech = m_remoteContext.GetRemoteSpeech())
 }
 ```
 
-비동기 도우미 메서드를 사용 하 여 원격 음성을 초기화할 수 있습니다. 초기화는 상당한 시간이 걸릴 수 있으므로이 작업은 비동기적으로 수행 해야 합니다. [C + +/WinRT를 사용한 동시성 및 비동기 작업](//windows/uwp/cpp-and-winrt-apis/concurrency) 은 c + +/WinRT. 사용 하 여 비동기 함수를 작성 하는 방법을 설명
+비동기 도우미 메서드를 사용 하 여 원격 음성을 초기화할 수 있습니다. 초기화는 상당한 시간이 걸릴 수 있으므로이 작업은 비동기적으로 수행 해야 합니다. [C + +/WinRT를 사용한 동시성 및 비동기 작업](/windows/uwp/cpp-and-winrt-apis/concurrency) 은 c + +/WinRT. 사용 하 여 비동기 함수를 작성 하는 방법을 설명
 
 ```cpp
 winrt::Windows::Foundation::IAsyncOperation<winrt::Windows::Storage::StorageFile> LoadGrammarFileAsync()
@@ -234,7 +234,7 @@ winrt::fire_and_forget InitializeSpeechAsync(
 ```
 
 인식 될 구를 지정 하는 방법에는 두 가지가 있습니다.
-1) 음성 문법 xml 파일 내의 사양입니다. 자세한 내용은 [기본 XML 문법을 만드는 방법](//previous-versions/office/developer/speech-technologies/hh361658(v=office.14)) 을 참조 하세요.
+1) 음성 문법 xml 파일 내의 사양입니다. 자세한 내용은 [기본 XML 문법을 만드는 방법](/previous-versions/office/developer/speech-technologies/hh361658(v=office.14)) 을 참조 하세요.
 2) 를 사전 벡터 내부에 전달 하 여 지정 ```ApplyParameters``` 합니다.
 
 OnRecognizedSpeech 콜백 내에서 음성 이벤트를 처리할 수 있습니다.
@@ -362,5 +362,5 @@ HoloLens 2에서 깊이 다시 프로젝션이 제대로 작동 하는지 확인
 * [사용자 지정 홀로그램 원격 데이터 채널](holographic-remoting-custom-data-channels.md)
 * [홀로그램 원격을 사용하여 보안 연결 설정](holographic-remoting-secure-connection.md)
 * [Holographic 원격 문제 해결 및 제한 사항](holographic-remoting-troubleshooting.md)
-* [홀로그램 원격 소프트웨어 사용 조건](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [홀로그램 원격 소프트웨어 사용 조건](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?LinkId=521839)
