@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, hololens 2, azure custom vision, azure cognitive services, azure cloud services, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: bd99b2ca8f41c276db747dc7fc75328c31807512
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: aa3ad219ab2cd45b14d06881757ec776d3e098f3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008213"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581930"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Azure Custom Vision 통합
 
@@ -28,13 +28,13 @@ ms.locfileid: "98008213"
 
 **Azure Custom Vision** 은 **Cognitive Services** 제품군에 속하며 이미지 분류자를 학습시키는 데 사용됩니다. 이미지 분류자는 학습된 모델을 사용하여 일치하는 태그를 적용하는 AI 서비스입니다. 이 분류 기능은 애플리케이션이 *추적된 개체* 를 감지하는 데 사용됩니다.
 
-[Azure Custom Vision](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home)에 대해 자세히 알아보세요.
+[Azure Custom Vision](/azure/cognitive-services/custom-vision-service/home)에 대해 자세히 알아보세요.
 
 ## <a name="preparing-azure-custom-vision"></a>Azure Custom Vision 준비
 
 시작하려면 그 전에 사용자 지정 비전 프로젝트를 만들어야 하며, 가장 빠른 방법은 웹 포털을 사용하는 것입니다.
 
-이 [빠른 시작 자습서](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images)를 *이미지 업로드 및 태그 지정* 섹션까지 수행하여 계정과 프로젝트를 설정합니다.
+이 [빠른 시작 자습서](/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images)를 *이미지 업로드 및 태그 지정* 섹션까지 수행하여 계정과 프로젝트를 설정합니다.
 
 > [!WARNING]
 > 모델을 학습시키려면 태그당 태그 2개 및 이미지 5개 이상이 있어야 합니다. 이 애플리케이션을 사용하려면 이미지가 5개 이상인 태그를 하나 이상 만들어야 합니다. 그래야 나중에 학습 과정에서 실패하지 않습니다.

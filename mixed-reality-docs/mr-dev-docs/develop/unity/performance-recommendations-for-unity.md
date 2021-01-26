@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: 그래픽, CPU, GPU, 렌더링, 가비지 컬렉션, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 3508edae9fa0e60e9d9b60000186dfd3e49ff134
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 738f9032b0e0500e0f5daa3b59cc1740ef570928
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009353"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583179"
 ---
 # <a name="performance-recommendations-for-unity"></a>Unity에 대한 성능 추천 사항
 
@@ -84,7 +84,7 @@ public class ExampleClass : MonoBehaviour
 
 #### <a name="avoid-expensive-operations"></a>비용이 많이 드는 작업 방지
 
-1) **[LINQ](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq) 사용 방지**
+1) **[LINQ](/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq) 사용 방지**
 
     LINQ는 깨끗하고 읽기 및 쓰기가 쉬울 수 있지만 알고리즘을 수동으로 작성한 경우보다 일반적으로 더 많은 계산과 메모리가 필요합니다.
 
@@ -120,7 +120,7 @@ public class ExampleClass : MonoBehaviour
 
 3) **boxing에 주의**
 
-    [boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing)은 C# 언어 및 런타임의 핵심 개념입니다. 이는 `char`, `int`, `bool` 등과 같은 값 형식 변수를 참조 형식 변수로 래핑하는 프로세스입니다. 값 형식 변수가 "boxed"가 되면 관리형 힙에 저장된 `System.Object`에 래핑됩니다. 메모리가 할당되며, 결국에는 삭제 시 가비지 수집기에서 처리해야 합니다. 이러한 할당 및 할당 취소는 성능 비용을 발생시키며, 많은 시나리오에서 필요하지 않거나 비용이 더 저렴한 대안으로 쉽게 대체할 수 있습니다.
+    [boxing](/dotnet/csharp/programming-guide/types/boxing-and-unboxing)은 C# 언어 및 런타임의 핵심 개념입니다. 이는 `char`, `int`, `bool` 등과 같은 값 형식 변수를 참조 형식 변수로 래핑하는 프로세스입니다. 값 형식 변수가 "boxed"가 되면 관리형 힙에 저장된 `System.Object`에 래핑됩니다. 메모리가 할당되며, 결국에는 삭제 시 가비지 수집기에서 처리해야 합니다. 이러한 할당 및 할당 취소는 성능 비용을 발생시키며, 많은 시나리오에서 필요하지 않거나 비용이 더 저렴한 대안으로 쉽게 대체할 수 있습니다.
 
     boxing을 방지하려면 숫자 유형과 구조체(`Nullable<T>` 포함)를 저장하는 변수, 필드 및 속성의 형식이 개체를 사용하는 대신 `int`, `float?` 또는 `MyStruct`와 같은 특정 형식의 강력한 형식이어야 합니다.  이러한 개체를 목록에 넣는 경우 `List<object>` 또는 `ArrayList`가 아닌 `List<int>`와 같은 강력한 형식의 목록을 사용해야 합니다.
 
@@ -180,7 +180,7 @@ public class ExampleClass : MonoBehaviour
 
 4) **값으로 구조체 전달 방지**
 
-    클래스와 달리 구조체는 값 형식이며, 함수에 직접 전달되면 해당 내용이 새로 만든 인스턴스에 복사됩니다. 이 복사본으로 인해 CPU 비용과 스택의 추가 메모리가 추가됩니다. 작은 구조체의 경우 효과가 최소화되므로 허용됩니다. 그러나 모든 프레임을 반복적으로 호출하는 함수와 큰 구조체를 사용하는 함수의 경우 가능하면 함수 정의를 참조로 전달하도록 수정합니다. [여기서 자세히 알아보세요.](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
+    클래스와 달리 구조체는 값 형식이며, 함수에 직접 전달되면 해당 내용이 새로 만든 인스턴스에 복사됩니다. 이 복사본으로 인해 CPU 비용과 스택의 추가 메모리가 추가됩니다. 작은 구조체의 경우 효과가 최소화되므로 허용됩니다. 그러나 모든 프레임을 반복적으로 호출하는 함수와 큰 구조체를 사용하는 함수의 경우 가능하면 함수 정의를 참조로 전달하도록 수정합니다. [여기서 자세히 알아보세요.](/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
 
 #### <a name="miscellaneous"></a>기타
 
@@ -337,9 +337,9 @@ Unity는 가비지 수집기의 작동 방식 및 메모리 관리와 관련된 
 과도한 가비지 컬렉션으로 이어지는 가장 일반적인 사례 중 하나는 Unity 개발에서 구성 요소 및 클래스에 대한 참조를 캐싱하지 않는 것입니다. 모든 참조는 Start() 또는 Awake() 중에 캡처되고, Update() 또는 LateUpdate()와 같은 이후 함수에서 다시 사용되어야 합니다.
 
 기타 빠른 팁:
-- 런타임에 복잡한 문자열을 동적으로 빌드하려면 [StringBuilder](https://docs.microsoft.com/dotnet/api/system.text.stringbuilder) C# 클래스를 사용합니다.
+- 런타임에 복잡한 문자열을 동적으로 빌드하려면 [StringBuilder](/dotnet/api/system.text.stringbuilder) C# 클래스를 사용합니다.
 - 앱의 모든 빌드 버전에서 계속 실행되므로 더 이상 필요하지 않은 Debug.Log()에 대한 호출을 제거합니다.
-- 홀로그램 앱에 일반적으로 많은 메모리가 필요한 경우 로드 또는 전환 화면을 표시할 때와 같이 로드 단계 중에 [_**System.GC.Collect()**_](https://docs.microsoft.com/dotnet/api/system.gc.collect)를 호출하는 것이 좋습니다.
+- 홀로그램 앱에 일반적으로 많은 메모리가 필요한 경우 로드 또는 전환 화면을 표시할 때와 같이 로드 단계 중에 [_**System.GC.Collect()**_](/dotnet/api/system.gc.collect)를 호출하는 것이 좋습니다.
 
 #### <a name="object-pooling"></a>개체 풀링
 

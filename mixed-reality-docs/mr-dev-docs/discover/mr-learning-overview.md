@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, learn, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 언어 번역, Azure, Azure cognitive services, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 211d8e61a45a59df725f4c6c7d11c93f129d63b5
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f8188cc8c417b60864cd963120ad004d6169c3c2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006913"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583524"
 ---
 # <a name="mixed-reality-learn-overview"></a>Mixed Reality Learn 개요
 
@@ -26,7 +26,7 @@ Microsoft Learn 모듈을 통해 Mixed Reality에서 능숙하게 개발할 수 
 
 Mixed Reality의 기반이 궁금하거나 개발 경로를 아직 선택하지 않은 경우에는 기술적 제약이 없는 Microsoft의 학습 모듈로 시작해 보세요.
 
-### <a name="introduction-to-mixed-reality"></a>[Mixed Reality 소개](https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/)
+### <a name="introduction-to-mixed-reality"></a>[Mixed Reality 소개](/learn/modules/intro-to-mixed-reality/)
 
 Mixed Reality 개발 공간만의 고유한 핵심 개념, 용어 및 디자인 프로세스에서 기반을 구축하세요.
 
@@ -44,7 +44,7 @@ Mixed Reality 개발 공간만의 고유한 핵심 개념, 용어 및 디자인 
 
 이제 막 개발을 시작한 초보부터 경험 많은 전문가까지, Unity의 Mixed Reality 개발에 대한 실습 방식을 통해 더 빠르게, 더 자신 있게, 본인이 원하는 진도로 목표를 달성할 수 있습니다.
 
-### <a name="set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit"></a>[Mixed Reality Toolkit를 사용하여 Unity에서 혼합 현실 프로젝트 설정](https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/)
+### <a name="set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit"></a>[Mixed Reality Toolkit를 사용하여 Unity에서 혼합 현실 프로젝트 설정](/learn/modules/mixed-reality-toolkit-project-unity/)
 
 Mixed Reality Toolkit를 Unity 프로젝트로 가져와서 혼합 현실 개발을 가속화하세요.
 
@@ -58,7 +58,7 @@ Mixed Reality Toolkit를 Unity 프로젝트로 가져와서 혼합 현실 개발
 * 세 가지 기본 MRTK 상호 작용 모델 비교 및 대조
 * ObjectManipulator를 사용하여 홀로그램 조작
 
-### <a name="create-a-language-translator-app-with-unity--azure-cognitive-services"></a>[Unity + Azure Cognitive Services를 사용하여 언어 변환기 앱 만들기](https://docs.microsoft.com/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/)
+### <a name="create-a-language-translator-app-with-unity--azure-cognitive-services"></a>[Unity + Azure Cognitive Services를 사용하여 언어 변환기 앱 만들기](/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/)
 
 Cognitive Services를 사용하여 Mixed Reality 디바이스(Windows Mixed Reality, HoloLens 2 등)용 언어 변환기 애플리케이션을 만듭니다.
 

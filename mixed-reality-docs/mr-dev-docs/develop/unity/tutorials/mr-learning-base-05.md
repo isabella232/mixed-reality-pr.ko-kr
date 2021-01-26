@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, solvers
 ms.localizationpriority: high
-ms.openlocfilehash: 959ed164e566f5bee3db203437145fa08ce168d8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6006bf5e3edaee13c8ede0bdc04fd5ea928f1757
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008023"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98579164"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Solver를 사용하여 동적 콘텐츠 만들기
 
@@ -141,4 +141,5 @@ Hierarchy(계층 구조) 창에서 임시 큐브를 선택한 상태로 Inspecto
 
 MRTK에 포함된 이러한 Solver와 다른 Solver에 대해 자세히 알아보려면 [MRTK 설명서 포털](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)의 [Solvers](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) 가이드를 참조하세요.
 
-[다음 자습서: 6. 사용자 인터페이스 만들기](mr-learning-base-06.md)
+> [!div class="nextstepaction"]
+>[다음 자습서: 6. 사용자 인터페이스 만들기](mr-learning-base-06.md)

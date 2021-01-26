@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, 앱 세션
 ms.localizationpriority: high
-ms.openlocfilehash: abe0c8bc70469826e25f7016a3cc1ba971c1fcc1
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4bae36bfb24130fc7914563af07c09374162f3cb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008363"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582054"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3. Azure Spatial Anchors 저장, 검색 및 공유
 
@@ -58,7 +58,7 @@ Hierarchy 창에서 **ButtonParent** 개체를 확장하고 **SaveAzureAnchorIdT
 8. Azure 앵커를 찾습니다(Rover 탐색기를 3단계의 위치에 배치함).
 
 > [!NOTE]
-> 앱을 완전히 다시 시작하려면 몰입형 앱 보기를 종료한 후, 혼합 현실 홈의 앱 창을 닫고 [시작] 메뉴에서 앱을 다시 시작합니다. 자세한 내용은 [HoloLens에서 앱 사용](https://docs.microsoft.com/hololens/holographic-home#using-apps-on-hololens) 설명서를 참조하세요.
+> 앱을 완전히 다시 시작하려면 몰입형 앱 보기를 종료한 후, 혼합 현실 홈의 앱 창을 닫고 [시작] 메뉴에서 앱을 다시 시작합니다. 자세한 내용은 [HoloLens에서 앱 사용](/hololens/holographic-home#using-apps-on-hololens) 설명서를 참조하세요.
 
 ## <a name="sharing-azure-spatial-anchors-between-devices"></a>디바이스 간에 Azure Spatial Anchors 공유
 

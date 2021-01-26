@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 스트리밍, 원격, 혼합 현실, 개발, 시작, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, 홀로그램, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 공간 오디오
-ms.openlocfilehash: 98c10e370cd4ca5e437a4677be6fce3d3aee53a9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: fdb4f401188a813b99884929cd835453dec5aaf0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009973"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580433"
 ---
 # <a name="spatial-audio-in-unreal"></a>Unreal의 공간 오디오
 
@@ -124,6 +124,6 @@ ms.locfileid: "98009973"
 
 
 ## <a name="see-also"></a>참고 항목
-* [공간 음향](https://docs.microsoft.com/windows/mixed-reality/spatial-sound)
-* [공간 음향 디자인](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design)
-* [MR 공간 220: 공간 음향](https://docs.microsoft.com/windows/mixed-reality/holograms-220)
+* [공간 음향](/windows/mixed-reality/spatial-sound)
+* [공간 음향 디자인](/windows/mixed-reality/spatial-sound-design)
+* [MR 공간 220: 공간 음향](/windows/mixed-reality/holograms-220)

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, hololens 2, Azure spatial anchors, azure cloud services, azure custom vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 50e5bccf09e03ebda8057dbb3ca9d83fc01694bd
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 75c3f98c2f40f03240906716d9b942a157994130
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008173"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581895"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Integrating Azure Spatial 통합
 
@@ -28,12 +28,12 @@ ms.locfileid: "98008173"
 
  **Azure Spatial Anchors** 는 Azure Cloud Services 제품군의 일부이며 앵커 위치를 저장하는 데 사용됩니다. 저장된 앵커 위치는 클라우드의 *앵커 ID* 기반으로 검색할 수 있습니다. 이 앵커 위치는 HoloLens, iOS 및 Android 디바이스와 같은 다중 플랫폼 디바이스에서 공유하고 액세스할 수 있습니다.
 
-[Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview)에 대해 자세히 알아보세요.
+[Azure Spatial Anchors](/azure/spatial-anchors/overview)에 대해 자세히 알아보세요.
 
 ## <a name="preparing-azure-spatial-anchors"></a>Azure Spatial Anchors 준비
 
 시작하기 전에 Azure Portal에서 공간 앵커 리소스를 만들어야 합니다.
-[공간 앵커 리소스](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource)를 만드는 방법에 대해 알아봅니다.
+[공간 앵커 리소스](/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource)를 만드는 방법에 대해 알아봅니다.
 
 ## <a name="preparing-the-scene"></a>장면 준비
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, solvers, 그리드 개체 컬렉션
 ms.localizationpriority: high
-ms.openlocfilehash: e09047e4f75697722f76301630c275f126b3cbda
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 27964cad03111a3f7dad89c66df0cb9a4f95a9e2
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613257"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98579212"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. 장면에서 개체 위치 지정
 
@@ -143,4 +143,5 @@ Hierarchy 창에서 **RoverParts** 개체를 선택한 다음, Inspector 창에�
 
 이 자습서에서는 사용자를 기준으로 장면에 개체를 배치하고 MRTK의 그리드 개체 컬렉션 기능을 사용하여 컬렉션의 개체를 구성하는 방법을 배웠습니다.
 
-[다음 자습서: 5. 해결기를 사용하여 동적 콘텐츠 만들기](mr-learning-base-05.md)
+> [!div class="nextstepaction"]
+>[다음 자습서: 5. 해결기를 사용하여 동적 콘텐츠 만들기](mr-learning-base-05.md)

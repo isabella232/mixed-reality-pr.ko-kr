@@ -7,12 +7,12 @@ ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 12e94e880f8b681ed9c4720b841f8a44ae9e0fd7
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: c26f5579aad29624c9a8f374caa4799423d0637e
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609584"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635443"
 ---
 # <a name="4-making-your-scene-interactive"></a>4. 대화형 장면 만들기
 
@@ -56,7 +56,7 @@ UX 요소에서의 손 조작은 인접 및 원거리 조작을 위한 포인터
 - 폰을 통해 조작할 수 있는 관절식 손 입력 이벤트를 제공합니다.
 - 가상 손의 손바닥에서부터 나오는 손 광선을 통해 원거리 조작 입력 이벤트를 허용합니다.
 
-계속하기 전에 손 조작에 대한 [설명서](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html)를 읽는 것이 좋습니다.
+계속하기 전에 손 조작에 대한 [설명서](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html)를 읽는 것이 좋습니다.
 
 준비되면 **MRPawn** 청사진을 열고 **이벤트 그래프** 로 이동합니다.
 
@@ -85,7 +85,7 @@ Uxt 손 조작 행위자에는 소유자와 최초 변환 위치가 필요합니
 
 ![UXT 손 조작 행위자 설정 완료](images/unreal-uxt/4-fingerptrs.PNG)
 
-손 조작 행위자에 대한 자세한 내용은 [UX Tools 설명서](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html)에서 확인할 수 있습니다.
+손 조작 행위자에 대한 자세한 내용은 [UX Tools 설명서](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html)에서 확인할 수 있습니다.
 
 이제 프로젝트의 가상 손이 개체를 선택할 수 있게 되었지만 아직은 조작하지 못합니다. 앱을 테스트 하기 전의 마지막 작업은 장면의 행위자에 조작자 구성 요소를 추가하는 것입니다.
 

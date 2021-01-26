@@ -7,16 +7,16 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 762247f550a3471bbbb6d1004283c6f901346503
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a46b9fef96f75f3d80b9ebbd5cbd724730374b41
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009793"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580566"
 ---
 # <a name="1-getting-started"></a>1. 시작
 
-혼합 현실을 처음 접하든 노련한 전문가이든 관계 없이 [HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/) 및 [Unreal Engine](https://www.unrealengine.com/en-US/) 과정은 여기에서 시작됩니다. 이 자습서 시리즈에서는 [Unreal용 Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unreal)의 일부인 [UX Tools 플러그 인](https://github.com/microsoft/MixedReality-UXTools-Unreal)을 사용하여 대화형 체스 앱을 빌드하는 방법을 단계별로 안내합니다. 플러그 인은 코드, 청사진 및 예제를 통해 프로젝트에 일반 UX 기능을 추가하는 데 도움이 됩니다. 
+혼합 현실을 처음 접하든 노련한 전문가이든 관계 없이 [HoloLens 2](../../../index.yml) 및 [Unreal Engine](https://www.unrealengine.com/en-US/) 과정은 여기에서 시작됩니다. 이 자습서 시리즈에서는 [Unreal용 Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unreal)의 일부인 [UX Tools 플러그 인](https://github.com/microsoft/MixedReality-UXTools-Unreal)을 사용하여 대화형 체스 앱을 빌드하는 방법을 단계별로 안내합니다. 플러그 인은 코드, 청사진 및 예제를 통해 프로젝트에 일반 UX 기능을 추가하는 데 도움이 됩니다. 
 
 ![뷰포트에서 장면 종료](images/unreal-uxt/5-endscene.PNG)
 
@@ -40,7 +40,7 @@ ms.locfileid: "98009793"
 
 먼저 다음과 같은 필수 Visual Studio 패키지를 모두 사용하여 설정을 확인합니다.
 1. 최신 버전의 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)를 다운로드합니다.
-1. 다음 [워크로드](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads)를 설치합니다.
+1. 다음 [워크로드](/visualstudio/install/modify-visual-studio#modify-workloads)를 설치합니다.
     * C++를 사용한 데스크톱 개발
     * .NET 데스크톱 개발
     * 유니버설 Windows 플랫폼 개발
@@ -48,7 +48,7 @@ ms.locfileid: "98009793"
     * USB 디바이스 연결
     * C++(v142) 유니버설 Windows 플랫폼 도구
 
-1. 다음 [구성 요소](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-individual-components)를 설치합니다.
+1. 다음 [구성 요소](/visualstudio/install/modify-visual-studio#modify-individual-components)를 설치합니다.
     * 컴파일러, 빌드 도구 및 런타임 > MSVC v142 - VS 2019 C++ ARM64 빌드 도구(최신 버전)
 
 다음 그림을 통해 설치를 확인할 수 있습니다.

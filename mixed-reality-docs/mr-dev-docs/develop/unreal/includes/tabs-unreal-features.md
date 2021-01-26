@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 31f11712c2f1cbe7e6726ecf5a83ccd31a2e616e
-ms.sourcegitcommit: 0509cf6c57067cffd75a0189106e3369e9ecc5c8
+ms.openlocfilehash: 2ccad1adee0098233d08c6694dbb84d9fc1df6ff
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96912297"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580031"
 ---
 # <a name="426"></a>[4.26](#tab/ue426)
 
 최신 Unreal Engine 4.26 릴리스에는 다음이 포함됩니다.
-* 새로운 [디바이스 간 XR API](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-porting) 지원
+* 새로운 [디바이스 간 XR API](../unreal-porting.md) 지원
 * OpenXR 지원 + [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) 플러그 인 
 * 고성능 비디오 재생을 위한 HoloLens Media Player 플러그 인
 * iOS 및 Android용 Azure Spatial Anchors(베타)
@@ -31,4 +31,4 @@ Unreal Engine 4.25에는 다음이 포함됩니다.
 * 혼합 현실 캡처
 * Azure Spatial Anchors 초기 지원
 
-자세한 내용은 Unreal Engine 4.25 <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_25/index.html" target="_blank" title="Unreal Engine 4.25 릴리스 정보">릴리스 정보</a>를 참조하세요. 
+자세한 내용은 Unreal Engine 4.25 <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_25/index.html" target="_blank" title="Unreal Engine 4.25 릴리스 정보">릴리스 정보</a>를 참조하세요.

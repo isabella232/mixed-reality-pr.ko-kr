@@ -7,12 +7,12 @@ ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 상호 작용, 디자인, HoloLens, 손, 원거리, 가리키고 커밋, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 손 광선, 개체 조작, MRTK, Mixed Reality Toolkit, DoF
-ms.openlocfilehash: 4ee1fabac763a22006b956e46a908ff4d11e395f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 3351a38cad99089a60555ffe450447fc5c356fdc
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009743"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583201"
 ---
 # <a name="point-and-commit-with-hands"></a>손으로 가리키고 커밋
 
@@ -31,7 +31,7 @@ ms.locfileid: "98009743"
 </colgroup>
 <tr>
      <td><strong>입력 모델</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens(1세대)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
 </tr>

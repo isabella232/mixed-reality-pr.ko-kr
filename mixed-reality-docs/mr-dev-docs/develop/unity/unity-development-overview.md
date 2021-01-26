@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 혼합 현실, 개발, 시작, 새 프로젝트, 포팅, 기능, 카메라, 시뮬레이션, 에뮬레이션, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 공간 매핑, 음성 입력, 위치를 찾을 수 있는 카메라, 에뮬레이터, Azure, 자습서
-ms.openlocfilehash: c5b7683574378565c71e95bc6205be3dbf92fcaf
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: fc444f4d40d8bc013253869fe77ddd563e889d85
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226442"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582998"
 ---
 # <a name="unity-development-for-hololens"></a>HoloLens용 Unity 개발
 
@@ -85,7 +85,7 @@ Unity에서 개발하는 가장 쉬운 방법은 Mixed Reality Toolkit를 사용
 
 포팅하려는 기존 앱이 있는 경우 아래 나열된 문서가 다음 단계입니다.
 
-* [HoloToolkit/MRTK에서 MRTK v2로](mrtk-porting-guide.md)
+* [HoloToolkit/MRTK에서 MRTK v2로](../porting-apps/porting-hl1-hl2.md)
 * [몰입형 앱 포팅 가이드](../porting-apps/porting-guides.md)
 * [입력 포팅 가이드](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 

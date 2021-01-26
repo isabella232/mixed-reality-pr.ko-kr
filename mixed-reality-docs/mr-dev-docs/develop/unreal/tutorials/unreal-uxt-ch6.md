@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 83d8068ca8ce73f23edb85cf9044db5409105380
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 7b706cf2a8685954ed916c825c3617ade190f1e0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865398"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583658"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. 패키징 후 디바이스 또는 에뮬레이터에 배포
 
@@ -25,7 +25,7 @@ ms.locfileid: "97865398"
 
 ## <a name="device-only-streaming"></a>[디바이스 전용] 스트리밍
 
-[홀로그램 원격 접속](https://docs.microsoft.com/windows/mixed-reality/add-holographic-remoting)은 채널을 전환하는 것이 아니라 PC나 독립 실행형 UWP 디바이스에서 HoloLens 2로 데이터를 스트리밍합니다. 원격 호스트 앱은 HoloLens로부터 입력 데이터 스트림을 받고 가상 몰입형 보기에서 콘텐츠를 렌더링하며 다시 Wi-Fi를 통해 콘텐츠 프레임을 HoloLens로 돌려 보냅니다. 스트리밍을 통해 몰입형 보기를 기존 데스크톱 PC 소프트웨어에 추가할 수 있고 다른 시스템 리소스에 액세스할 수 있습니다.
+[홀로그램 원격 접속](/windows/mixed-reality/add-holographic-remoting)은 채널을 전환하는 것이 아니라 PC나 독립 실행형 UWP 디바이스에서 HoloLens 2로 데이터를 스트리밍합니다. 원격 호스트 앱은 HoloLens로부터 입력 데이터 스트림을 받고 가상 몰입형 보기에서 콘텐츠를 렌더링하며 다시 Wi-Fi를 통해 콘텐츠 프레임을 HoloLens로 돌려 보냅니다. 스트리밍을 통해 몰입형 보기를 기존 데스크톱 PC 소프트웨어에 추가할 수 있고 다른 시스템 리소스에 액세스할 수 있습니다.
 
 체스 앱에 이 경로를 적용하려면 다음 몇 가지가 필요합니다.
 
@@ -81,7 +81,7 @@ ms.locfileid: "97865398"
 5. **파일 > 패키지 프로젝트** 으로 이동하여 **HoloLens** 를 선택합니다.
     * 새 폴더를 만들어 패키지를 저장하고 **폴더 선택** 을 선택합니다.
 
-6.  앱 패키징 후 [Windows 장치 포털](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)을 열고 **보기 > 앱** 으로 이동한 다음, **앱 배포** 섹션을 찾습니다.
+6.  앱 패키징 후 [Windows 장치 포털](/windows/mixed-reality/using-the-windows-device-portal)을 열고 **보기 > 앱** 으로 이동한 다음, **앱 배포** 섹션을 찾습니다.
 
 7.  **찾아보기...** 를 클릭하고 **ChessApp.appxbundle** 파일로 이동한 다음, **열기** 를 클릭합니다.
 
@@ -91,7 +91,7 @@ ms.locfileid: "97865398"
 8.  **설치** 를 클릭합니다.
     * 이제 **모든 앱** 으로 이동하고 새로 설치된 앱을 탭하여 실행하거나 **Windows Device Portal** 에서 직접 앱을 시작할 수 있습니다. 
 
-축하합니다! HoloLens 혼합 현실 애플리케이션이 완료되어 진행할 준비가 되었습니다. 하지만 이것이 전부는 아닙니다. MRTK에는 공간 매핑, 응시, 음성 입력을 비롯하여 QR 코드에 이르기까지, 프로젝트에 추가할 수 있는 무수한 독립 실행형 기능이 있습니다. 이러한 기능에 대한 자세한 내용은 [Unreal 개발 개요](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview)에서 확인할 수 있습니다.
+축하합니다! HoloLens 혼합 현실 애플리케이션이 완료되어 진행할 준비가 되었습니다. 하지만 이것이 전부는 아닙니다. MRTK에는 공간 매핑, 응시, 음성 입력을 비롯하여 QR 코드에 이르기까지, 프로젝트에 추가할 수 있는 무수한 독립 실행형 기능이 있습니다. 이러한 기능에 대한 자세한 내용은 [Unreal 개발 개요](/windows/mixed-reality/unreal-development-overview)에서 확인할 수 있습니다.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 53d22260603c4e52096eccf1d7af6a3b0732124e
-ms.sourcegitcommit: 672a7a145cfc656273af4ea34f99583eb9fa849c
+ms.openlocfilehash: e79b14c19a452b5b78c6f8cf7ea24bd65bfa0eaa
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98225601"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98605081"
 ---
 # <a name="426"></a>[4.26](#tab/426) 
 
@@ -197,7 +197,7 @@ PV 카메라에서 렌더링하도록 옵트인하려면 다음을 수행합니�
 그러면 Unreal은 PV 카메라의 관점에서 렌더링하는 MRC의 요청을 처리합니다.
 
 > [!NOTE]
-> [혼합 현실 캡처](../../../mixed-reality-capture.md)가 트리거된 경우에만 앱이 사진/비디오 카메라의 관점에서 렌더링하도록 요청됩니다.
+> [혼합 현실 캡처](/hololens/holographic-photos-and-videos)가 트리거된 경우에만 앱이 사진/비디오 카메라의 관점에서 렌더링하도록 요청됩니다.
 
 ## <a name="using-the-pv-camera"></a>PV 카메라 사용
 
@@ -224,4 +224,3 @@ PV 카메라에서 렌더링하도록 옵트인하려면 다음을 수행합니�
 5. 재질에 색 항목에 바인딩된 **SetTextureParameterValue** 의 이름과 일치하는 매개 변수가 있는지 확인합니다. 매개 변수가 없으면 카메라 이미지를 제대로 표시할 수 없습니다.
 
 ![카메라 텍스처](../images/unreal-camera-material.PNG)
-

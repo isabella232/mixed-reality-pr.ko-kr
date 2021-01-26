@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: azure, 혼합 현실, unity, 자습서, hololens, hololens 2, azure blob 스토리지, azure table 스토리지, azure spatial anchors, azure bot framework, azure cloud services, azure custom vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 24f44e7ecef3aeab45978787bf09d1f947bc2411
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 8f8727074870d07ac9fcd7190f5f53931d75643f
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008323"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635547"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. HoloLens 2용 Azure Cloud Services
 
@@ -82,13 +82,13 @@ ms.locfileid: "98008323"
 
 이 섹션에서는 새 Unity 프로젝트를 만들고 MRTK 개발을 준비합니다.
 
-먼저 [프로젝트 및 첫 번째 애플리케이션 초기화](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
+먼저 [프로젝트 및 첫 번째 애플리케이션 초기화](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
 
 1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름 지정(예: *Azure Cloud Tutorials*)
 2. [빌드 플랫폼 전환](mr-learning-base-02.md#switching-the-build-platform)
 3. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Unity 프로젝트 구성](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+5. [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project)
 6. [장면 만들기 및 구성](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 적절한 장면 이름 지정(예: *AzureCloudServices*)
 
 그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면의 MRTK 구성 프로필을 **DefaultHoloLens2ConfigurationProfile** 로 변경하고, 공간 인식 메시의 표시 옵션을 **폐색** 으로 변경합니다.
@@ -197,7 +197,7 @@ Unity 메뉴에서 **Edit(편집)**  > **Project Settings(프로젝트 설정)..
 이 자습서 시리즈에서 사용할 일부 기능은 Unity 편집기 내에서 실행할 수 없습니다. 즉, 애플리케이션을 HoloLens 2 디바이스에 배포하는 방법을 잘 알고 있어야 합니다.
 
 > [!TIP]
-> Unity 프로젝트를 빌드하고 HoloLens 2에 배포하는 방법을 미리 알아보려면 [시작 자습서 - 디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) 지침을 참조하세요.
+> Unity 프로젝트를 빌드하고 HoloLens 2에 배포하는 방법을 미리 알아보려면 [시작 자습서 - 디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침을 참조하세요.
 
 ### <a name="3-run-the-app-on-your-hololens-2-and-follow-the-in-app-instructions"></a>3. HoloLens 2에서 앱 실행 및 앱 내 지침 수행
 

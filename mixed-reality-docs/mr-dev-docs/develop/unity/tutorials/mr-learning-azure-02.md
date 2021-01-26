@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, hololens 2, azure storage, azure cloud services, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: a948e035a467588091a2b5e16a3e2632ab3049d3
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 9c2041f9dac284fc4a7bea7d79b95e3e6240902a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008203"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581922"
 ---
 # <a name="2-integrating-azure-storage"></a>2. Azure Storage 통합
 
@@ -28,7 +28,7 @@ ms.locfileid: "98008203"
 
 **Azure 스토리지** 는 클라우드에서 다양한 시나리오와 요구 사항을 처리할 수 있는 Microsoft 스토리지 솔루션입니다. 이는 크기를 대규모로 조정할 수 있고 개발자가 쉽게 접근할 수 있습니다. 모든 서비스는 **Azure 스토리지 계정** 의 지원을 통해 사용할 수 있습니다. 사용 사례에서는 *Table 스토리지* 및 *Blob 스토리지* 를 사용합니다.
 
-[Azure 스토리지 서비스](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-overview)에 대해 자세히 알아보세요.
+[Azure 스토리지 서비스](/azure/storage/blobs/storage-blobs-overview)에 대해 자세히 알아보세요.
 
 ### <a name="azure-table-storage"></a>Azure Table 스토리지
 
@@ -36,18 +36,18 @@ ms.locfileid: "98008203"
 
 데모 애플리케이션의 경우 두 개의 테이블이 필요합니다. 하나는 자습서([Azure Custom Vision 통합](mr-learning-azure-03.md))에서 학습된 모델의 상태에 대한 정보와 함께 프로젝트 관련 정보를 더 많이 저장하려는 테이블이고, 다른 하나는 *추적된 개체* 에 대한 정보를 저장하는 테이블입니다.
 
-[Azure Table 스토리지](https://docs.microsoft.com/azure/storage/tables/table-storage-overview)에 대해 자세히 알아보세요.
+[Azure Table 스토리지](/azure/storage/tables/table-storage-overview)에 대해 자세히 알아보세요.
 
 ### <a name="azure-blob-storage"></a>Azure Blob 스토리지
 
 이 서비스를 사용하면 큰 이진 파일을 저장할 수 있습니다. 이 서비스는 *추적된 개체* 에 대해 찍은 사진을 썸네일 이미지로 저장하는 데 사용됩니다.
 데모 애플리케이션의 경우 이미지를 저장할 하나의 Blob 컨테이너가 필요합니다.
 
-[Azure Blob 스토리지](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)에 대해 자세히 알아보세요.
+[Azure Blob 스토리지](/azure/storage/blobs/storage-blobs-introduction)에 대해 자세히 알아보세요.
 
 ## <a name="preparing-azure-storage"></a>Azure Storage 준비
 
-Azure 스토리지 서비스를 사용하려면 Azure 스토리지 계정이 필요합니다. 스토리지 계정을 만들려면 [스토리지 계정 만들기](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal)를 참조하세요. 스토리지 계정에 대한 자세한 내용은 [Azure 스토리지 계정 개요](https://docs.microsoft.com/azure/storage/common/storage-account-overview)를 참조하세요.
+Azure 스토리지 서비스를 사용하려면 Azure 스토리지 계정이 필요합니다. 스토리지 계정을 만들려면 [스토리지 계정 만들기](/azure/storage/common/storage-account-create?tabs=azure-portal)를 참조하세요. 스토리지 계정에 대한 자세한 내용은 [Azure 스토리지 계정 개요](/azure/storage/common/storage-account-overview)를 참조하세요.
 
 스토리지 계정이 있으면 **Azure Portal** 에서 이 단원의 다음 섹션에 필요한 연결 문자열을 검색할 수 있습니다.
 
@@ -57,7 +57,7 @@ Azure 스토리지 서비스를 사용하려면 Azure 스토리지 계정이 필
 
 > [!TIP]
 > Unity 편집기 내에서 테스트하는 경우 로컬 에뮬레이터를 사용할 수 있습니다.
-> * Windows 10에서는 [Azure Storage 에뮬레이터](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)를 사용할 수 있습니다.
+> * Windows 10에서는 [Azure Storage 에뮬레이터](/azure/storage/common/storage-use-emulator)를 사용할 수 있습니다.
 > * MacOS/Linux에서는 Docker용 [Azurite Docker Image](https://hub.docker.com/_/microsoft-azure-storage-azurite)를 사용할 수 있습니다.
 
 ## <a name="preparing-the-scene"></a>장면 준비

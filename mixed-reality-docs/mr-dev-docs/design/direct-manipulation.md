@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 응시, 응시 타깃팅, 상호 작용, 디자인, 핸즈 니어, HoloLens, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit, 단추, 충돌체, 경계 상자, 2D, 직관적 제스처
-ms.openlocfilehash: a5e3497926d977f2a60cd32bb5f009d27d7b86ee
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 194212fd19196990eaf873299afbf1c11846946d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848054"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583414"
 ---
 # <a name="direct-manipulation-with-hands"></a>수동으로 직접 조작
 
@@ -31,9 +31,9 @@ ms.locfileid: "97848054"
 </colgroup>
 <tr>
      <td><strong>입력 모델</strong></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
-     <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>몰입형 헤드셋</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
+     <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
+     <td><a href="/windows/mixed-reality/immersive-headset-hardware-details"><strong>몰입형 헤드셋</strong></a></td>
 </tr>
 <tr>
      <td>수동으로 직접 조작</td>

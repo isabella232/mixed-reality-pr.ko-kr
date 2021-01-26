@@ -7,12 +7,12 @@ ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 관람자 보기, iPhone, iOS, iPad, OpenCV, 카메라, ARKit, HoloLens, Mixed Reality, Mixed Reality Toolkit, 데모, 레코드
-ms.openlocfilehash: 1f61d2094ec2762ab22576d2eac85ed6bf81d5c7
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: aa85b54283b260447c36072b74031554e1aa1939
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008613"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583114"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>HoloLens 및 HoloLens 2의 관람자 보기
 
@@ -60,6 +60,6 @@ HoloLens를 쓰고 있을 때는 HoloLens를 쓰고 있지 않은 다른 사람�
 | 런타임 설치 기간               |         인스턴트          |                     느림                    |
 ## <a name="see-also"></a>참조
 
-* [혼합 현실 캡처](../../mixed-reality-capture.md) 
+* [혼합 현실 캡처](/hololens/holographic-photos-and-videos) 
 * [개발자를 위한 혼합 현실 캡처](mixed-reality-capture-for-developers.md)
 * [혼합 현실의 공유 환경](shared-experiences-in-mixed-reality.md)

@@ -7,12 +7,12 @@ ms.date: 07/29/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, PC 홀로그램 원격, 도구 설명, 시선 추적
 ms.localizationpriority: high
-ms.openlocfilehash: 551c6427d9659dd7f5bad8558c777e918456b4d7
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d8c7de8a93a32107afe67a1d0375612ab6245be9
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007923"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581960"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. PC 홀로그램 원격 시작
 
@@ -46,7 +46,7 @@ HoloLens 2 자습서를 시작합니다. 2부로 구성된 이 자습서 시리�
 
 이 섹션에서는 새 Unity 프로젝트를 만들고 MRTK 개발을 준비합니다.
 
-이를 위해 먼저 [프로젝트 및 첫 번째 애플리케이션 초기화](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
+이를 위해 먼저 [프로젝트 및 첫 번째 애플리케이션 초기화](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
 
 1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름(예: *MRTK Tutorials*) 지정
 
@@ -56,7 +56,7 @@ HoloLens 2 자습서를 시작합니다. 2부로 구성된 이 자습서 시리�
 
 4. [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
 
-5. [Unity 프로젝트 구성](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+5. [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project)
 
 6. [장면 만들기 및 설정](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름 지정(예: **PC Holographic Remoting**)
 
@@ -67,7 +67,7 @@ HoloLens 2 자습서를 시작합니다. 2부로 구성된 이 자습서 시리�
 [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage)를 다운로드하고 **가져옵니다**.
 
 >[!TIP]
-> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [Mixed Reality Toolkit 가져오기](../../../mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) 지침을 참조할 수 있습니다.
+> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [Mixed Reality Toolkit 가져오기](./mr-learning-base-02.md#importing-the-mixed-reality-toolkit) 지침을 참조할 수 있습니다.
 
 자습서 자산을 가져오면 [프로젝트] 창이 다음과 비슷하게 표시됩니다.
 
@@ -191,7 +191,7 @@ Hierarchy(계층 구조) 창에서 ***POI-Camera** _ 개체를 선택합니다. 
 
 동일한 프로세스를 수행하고, 각 도구 설명 개체를 동일한 **MarsCuriosityRover** 부품의 **While Looking At Target ()**  & **On Look Away ()** 이벤트에 할당합니다.
 
-시선 추적을 사용하도록 설정하려면 이러한 [지침](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations)을 따르세요.
+시선 추적을 사용하도록 설정하려면 이러한 [지침](/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations)을 따르세요.
 
 ## <a name="congratulations"></a>축하합니다.
 

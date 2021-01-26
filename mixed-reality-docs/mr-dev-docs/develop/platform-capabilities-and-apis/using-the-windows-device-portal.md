@@ -7,18 +7,18 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows 장치 포털, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 75eda2775486b1ace82b574816db34a2f895c80b
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: c354a6f7c3afd6164182f915c39bbf1ce306ef39
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007793"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583248"
 ---
 # <a name="using-the-windows-device-portal"></a>Windows 장치 포털 사용
 
 <table>
 <tr>
-<th>기능</th><th style="width:150px"><a href="../../hololens-hardware-details.md">HoloLens(1세대)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px">
+<th>기능</th><th style="width:150px"><a href="/hololens/hololens1-hardware">HoloLens(1세대)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px">
 </tr><tr>
 <td> Windows Device Portal</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
 </tr>
@@ -26,19 +26,19 @@ ms.locfileid: "98007793"
 
 HoloLens용 Windows 장치 포털을 사용하면 Wi-Fi 또는 USB를 통해 원격으로 디바이스를 구성하고 관리할 수 있습니다. Device Portal은 PC의 웹 브라우저에서 연결 가능한 HoloLens에 있는 웹 서버입니다. 장치 포털에는 HoloLens를 관리하고 앱을 디버깅 및 최적화하는 데 도움이 되는 많은 도구가 포함되어 있습니다.
 
-이 설명서에서는 HoloLens용 Windows 장치 포털을 중점적으로 설명합니다. Windows Mixed Reality를 포함한 데스크톱용 Windows 장치 포털을 사용하려면 [Windows 장치 포털 개요](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal)를 참조하세요.
+이 설명서에서는 HoloLens용 Windows 장치 포털을 중점적으로 설명합니다. Windows Mixed Reality를 포함한 데스크톱용 Windows 장치 포털을 사용하려면 [Windows 장치 포털 개요](/windows/uwp/debug-test-perf/device-portal)를 참조하세요.
 
 ## <a name="setting-up-hololens-to-use-windows-device-portal"></a>Windows 장치 포털을 사용하도록 HoloLens 설정
 
 1. HoloLens의 전원을 켜고 디바이스에 배치합니다.
-2. [시작 제스처](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture)(HoloLens 2) 또는 [블룸](https://docs.microsoft.com/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom)(HoloLens 1세대)을 사용하여 주 메뉴를 실행합니다. 
-3. **설정** 타일을 응시하고 [에어 탭](https://docs.microsoft.com/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) 제스처(HoloLens 1세대)를 수행합니다. 또한 HoloLens 2에서는 [설정 타일을 터치하거나 손 광선을 사용](https://docs.microsoft.com/hololens/hololens2-basic-usage)하는 방식으로 선택할 수 있습니다. 
+2. [시작 제스처](/hololens/hololens2-basic-usage#start-gesture)(HoloLens 2) 또는 [블룸](/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom)(HoloLens 1세대)을 사용하여 주 메뉴를 실행합니다. 
+3. **설정** 타일을 응시하고 [에어 탭](/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) 제스처(HoloLens 1세대)를 수행합니다. 또한 HoloLens 2에서는 [설정 타일을 터치하거나 손 광선을 사용](/hololens/hololens2-basic-usage)하는 방식으로 선택할 수 있습니다. 
 4. **업데이트** 메뉴 항목을 선택합니다.
 5. **개발자용** 메뉴 항목을 선택합니다.
 6. **개발자 모드** 를 사용하도록 설정합니다.
 
 > [!IMPORTANT]
-> 관리자가 아닌 다중 사용자인 경우 개발자 모드를 시작할 수 있는 기능이 회색으로 표시될 수 있습니다. **[디바이스에 대한 관리자](https://docs.microsoft.com/hololens/security-adminless-os)** 인지 확인하세요.
+> 관리자가 아닌 다중 사용자인 경우 개발자 모드를 시작할 수 있는 기능이 회색으로 표시될 수 있습니다. **[디바이스에 대한 관리자](/hololens/security-adminless-os)** 인지 확인하세요.
 
 7. [아래로 스크롤](../../design/gaze-and-commit.md#composite-gestures)하여 **장치 포털** 을 사용하도록 설정합니다.
 8. USB 또는 Wi-Fi를 통해 이 HoloLens에 앱을 배포할 수 있도록 Windows 장치 포털을 설정하려면 **페어링** 을 선택하여 [페어링 PIN을 생성](using-visual-studio.md)합니다. 첫 번째 배포 시에는 Visual Studio에 PIN을 입력할 때까지 PIN 팝업에서 설정 앱을 그대로 둡니다.
@@ -47,7 +47,7 @@ HoloLens용 Windows 장치 포털을 사용하면 Wi-Fi 또는 USB를 통해 원
 
 ## <a name="connecting-over-wi-fi"></a>Wi-Fi를 통한 연결
 
-1. [HoloLens를 Wi-Fi에 연결합니다](../../connecting-to-wi-fi-on-hololens.md).
+1. [HoloLens를 Wi-Fi에 연결합니다](/hololens/hololens-network).
 2. 다음 중 하나를 수행하여 디바이스의 IP 주소를 조회합니다.
    * **설정 > 네트워크 및 인터넷 > Wi-Fi > 고급 옵션** 으로 차례로 이동합니다.
    * **설정 > 네트워크 및 인터넷** 으로 차례로 이동하고, **하드웨어 속성** 을 선택합니다.
@@ -281,13 +281,13 @@ HoloLens에서 장치 포털에 처음 연결하면 사용자 이름 및 암호�
 ![Microsoft HoloLens에 대한 Windows 장치 포털의 성능 추적 페이지](images/using-windows-portal-img-08.png)<br>
 *Microsoft HoloLens에 대한 Windows 장치 포털의 성능 추적 페이지*
 
-HoloLens에서 [WPR(Windows Performance Recorder)](https://msdn.microsoft.com/library/windows/hardware/hh448205.aspx) 추적을 캡처합니다.
+HoloLens에서 [WPR(Windows Performance Recorder)](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448205(v=win.10)) 추적을 캡처합니다.
 * **사용 가능한 프로필**: 드롭다운 목록에서 WPR 프로필을 선택하고 **시작** 을 선택하거나 탭하여 추적을 시작합니다.
 * **사용자 지정 프로필**: PC에서 WPR 프로필을 선택하려면 **찾아보기** 를 선택하거나 탭합니다. 추적을 시작하려면 **업로드 및 시작** 을 선택하거나 탭합니다.
 
 추적을 중지하려면 중지 링크를 선택합니다. 추적 파일이 다운로드를 완료할 때까지 이 페이지에 계속 있습니다.
 
-캡처된 ETL 파일은 [Windows Performance Analyzer](https://msdn.microsoft.com/library/windows/hardware/hh448170.aspx)에서 분석을 위해 열 수 있습니다.
+캡처된 ETL 파일은 [Windows Performance Analyzer](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448170(v=win.10))에서 분석을 위해 열 수 있습니다.
 
 ### <a name="processes"></a>프로세스
 
@@ -330,7 +330,7 @@ HoloLens에 설치된 앱을 관리합니다.
 ![Microsoft HoloLens에 대한 Windows 장치 포털의 앱 크래시 덤프 페이지](images/using-windows-portal-img-12.png)<br>
 *Microsoft HoloLens에 대한 Windows 장치 포털의 앱 크래시 덤프 페이지*
 
-이 페이지에서는 테스트용으로 로드된 앱에 대한 크래시 덤프를 수집할 수 있습니다. 크래시 덤프를 수집하려는 각 앱에 대해 **크래시 덤프 사용** 확인란을 선택합니다. 이 페이지로 돌아와서 크래시 덤프를 수집합니다. 덤프 파일은 [디버깅을 위해 Visual Studio에서 열릴 수 있습니다](https://msdn.microsoft.com/library/d5zhxt22.aspx).
+이 페이지에서는 테스트용으로 로드된 앱에 대한 크래시 덤프를 수집할 수 있습니다. 크래시 덤프를 수집하려는 각 앱에 대해 **크래시 덤프 사용** 확인란을 선택합니다. 이 페이지로 돌아와서 크래시 덤프를 수집합니다. 덤프 파일은 [디버깅을 위해 Visual Studio에서 열릴 수 있습니다](/previous-versions/visualstudio/visual-studio-2015/debugger/using-dump-files).
 
 ### <a name="file-explorer"></a>파일 탐색기
 
@@ -342,11 +342,11 @@ HoloLens에 설치된 앱을 관리합니다.
 ### <a name="kiosk-mode"></a>키오스크 모드
 
 >[!NOTE]
->키오스크 모드는 [Microsoft HoloLens Commercial Suite](../../commercial-features.md)에서만 사용할 수 있습니다.
+>키오스크 모드는 [Microsoft HoloLens Commercial Suite](/hololens/hololens-commercial-features)에서만 사용할 수 있습니다.
 
 ![Microsoft HoloLens에 있는 Windows 장치 포털의 키오스크 모드 페이지](images/using-windows-portal-img-14.png)
 
-Windows 장치 포털을 통해 키오스크 모드를 사용하도록 설정하는 방법에 대한 최신 지침은 Windows IT 전문가 센터의 [키오스크 모드로 HoloLens 설정 ](https://docs.microsoft.com/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) 문서를 확인하세요.
+Windows 장치 포털을 통해 키오스크 모드를 사용하도록 설정하는 방법에 대한 최신 지침은 Windows IT 전문가 센터의 [키오스크 모드로 HoloLens 설정 ](/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) 문서를 확인하세요.
 
 ### <a name="logging"></a>로깅
 

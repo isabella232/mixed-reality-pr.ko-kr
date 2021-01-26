@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 혼합 현실, 개발, 시작, 새 프로젝트, 포팅, 기능, 카메라, 시뮬레이션, 에뮬레이션, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 음성 입력, 위치를 찾을 수 있는 카메라, 에뮬레이터, Azure, 자습서
-ms.openlocfilehash: edd75def71ad31a1d29a480d0b2a7f7ffbd8c037
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: 65b45d448854f8903ed37466ebaa3c427dea3089
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226432"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582947"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>VR 및 Windows Mixed Reality용 Unity 개발
 
@@ -66,14 +66,14 @@ Windows Mixed Reality 및 VR 개발을 위해 수동으로 변경해야 하는 �
 
 포팅하려는 기존 앱이 있는 경우 아래 나열된 문서가 다음 단계입니다.
 
-* [VR 앱을 Windows Mixed Reality로 포팅](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-guides?tabs=project)
-* [Windows Mixed Reality용 SteamVR 앱 업데이트](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/updating-your-steamvr-application-for-windows-mixed-reality)
+* [VR 앱을 Windows Mixed Reality로 포팅](../porting-apps/porting-guides.md?tabs=project)
+* [Windows Mixed Reality용 SteamVR 앱 업데이트](../porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md)
 
 ### <a name="additional-resources"></a>추가 자료
 
 혼합 현실 세계로 직접 들어가기 전에 아래에 나열된 추가 설명서를 살펴보는 것이 좋습니다. 
 
-* [VR 마니아 가이드](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/vr-journey)
+* [VR 마니아 가이드](/windows/mixed-reality/enthusiast-guide/vr-journey)
 * [Unity 자산 스토어](https://www.assetstore.unity3d.com)
 
 ## <a name="see-also"></a>참조 

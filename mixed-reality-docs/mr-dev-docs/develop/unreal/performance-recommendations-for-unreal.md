@@ -2,17 +2,17 @@
 title: Unreal을 사용하기 위한 권장 성능
 description: 권장 Unreal 프로젝트 설정을 사용하여 혼합 현실 앱을 최대한 활용하는 방법에 대해 알아봅니다.
 author: hferrone
-ms.author: v-hferrone
+ms.author: safarooq
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 성능, 최적화, 설정, 설명서
-ms.openlocfilehash: a1a8dacd0206882c7ebd67b2658fa2e6300aa66a
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: e956f12d27c826cff35e0b65957060953073a28b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009823"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583062"
 ---
 # <a name="performance-recommendations-for-unreal"></a>Unreal을 사용하기 위한 권장 성능
 

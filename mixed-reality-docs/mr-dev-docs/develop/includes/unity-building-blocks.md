@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d6d5f40f94f490901d95d70583da38bf393b2599
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 8ca6c6b4eea1d49f98e7a04b091a4a08cb859ff3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98195339"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582995"
 ---
 # <a name="available-in-mrtk"></a>[MRTK에서 사용 가능](#tab/mrtk)
 
@@ -15,7 +15,7 @@ ms.locfileid: "98195339"
 | [응시](../unity/gaze-in-unity.md) | 사용자가 홀로그램을 확인하여 대상으로 할 수 있습니다. |
 | [모션 컨트롤러](../unity/motion-controllers-in-unity.md) | 혼합 현실 앱에 공간 작업 추가 |
 | [제스처](../unity/gestures-in-unity.md) | 혼합 현실 경험에서 손 제스처를 입력으로 사용 |
-| [손 및 시선 추적](../unity/hand-eye-in-unit.md) | 연결된 손 및 시선 추적 입력을 사용자 환경에 통합 |
+| [손 및 시선 추적](../unity/hand-eye-in-unity.md) | 연결된 손 및 시선 추적 입력을 사용자 환경에 통합 |
 | [공간 매핑](../unity/spatial-mapping-in-unity.md) | 가상 메시 오버레이를 사용하여 실제 공간을 매핑하여 환경 경계 표시 |
 | [Text](../unity/text-in-unity.md) | 관리 가능한 크기 및 품질 렌더링을 사용하는 선명한 고품질 텍스트 가져오기 |
 | [음성 입력 ](../unity/voice-input-in-unity.md) | 사용자의 음성 키워드, 구 및 받아쓰기 캡처|
@@ -34,5 +34,3 @@ ms.locfileid: "98195339"
 | [공간 음향](../unity/spatial-sound-in-unity.md) | 몰입형 3D 오디오를 사용하여 앱 향상 |
 | [Text](../unity/text-in-unity.md) | 관리 가능한 크기 및 품질 렌더링을 사용하는 선명한 고품질 텍스트 가져오기 |
 | [음성 입력 ](../unity/voice-input-in-unity.md) | 사용자의 음성 키워드, 구 및 받아쓰기 캡처|
-
-

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 음성 명령, 음성 입력
 ms.localizationpriority: high
-ms.openlocfilehash: 8aea8ead6416787f2979e0deff46ee5d6d45eb19
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: c052c3501ab34811f33f1f6464c8394669eebe77
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007913"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635451"
 ---
 # <a name="9-using-speech-commands"></a>9. 음성 명령 사용
 
@@ -30,7 +30,7 @@ Unity 메뉴에서 Mixed Reality Toolkit > 유틸리티 > **Unity 프로젝트 �
 ![마이크 기능 사용](images/mr-learning-base/base-09-section1-step1-1.png)
 
 > [!NOTE]
-> 이 자습서 시리즈의 시작 부분에서 Unity 프로젝트를 구성할 때 [MRTK Project Configurator 설정 적용](mr-learning-base-02.md#selecting-mrtk-and-project-settings) 지침을 진행하는 동안 마이크 기능을 사용하도록 설정되어 있어야 합니다. 하지만 사용하도록 설정되지 않으면 지금 사용하도록 설정해야 합니다.
+> 이 자습서 시리즈의 시작 부분에서 Unity 프로젝트를 구성할 때 [MRTK Project Configurator 설정 적용](mr-learning-base-02.md#creating-and-configuring-the-scene) 지침을 진행하는 동안 마이크 기능을 사용하도록 설정되어 있어야 합니다. 하지만 사용하도록 설정되지 않으면 지금 사용하도록 설정해야 합니다.
 
 ## <a name="creating-speech-commands"></a>음성 명령 만들기
 
@@ -147,4 +147,3 @@ SpeechInputHandler 구성 요소에서 작은 **+** 아이콘을 클릭하여 �
 > [기본 상호 작용](../mrtk-101.md)
 
 언제든지 [Unity 개발 검사점](../unity-development-overview.md#1-getting-started)으로 돌아갈 수 있습니다.
-

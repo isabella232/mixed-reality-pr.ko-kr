@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: Mixed Reality, 홀로그래픽, AR, VR, MR, XR, 증강 현실, 가상 현실, 설명, 사례 연구, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란
 ms.localizationpriority: high
-ms.openlocfilehash: 7f06909b12137598649d113697651277751bcb22
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 2eac20b85ceeb9413dfc0b6820cceda2ddf335c5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757701"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583015"
 ---
 # <a name="what-is-mixed-reality"></a>혼합 현실이란?
 
@@ -34,7 +34,7 @@ Mixed Reality는 실제 세계와 디지털 세계가 혼합되어 인간, 컴�
 
 지난 수십 년 동안 인간과 컴퓨터 입력 간의 관계에 대한 연구가 계속되어 *HCI(인간 컴퓨터 상호 작용)* 로 알려진 분야로 이어졌습니다. 사용자 입력은 키보드, 마우스, 터치, 잉크, 음성, 심지어 Kinect 골격 추적을 포함하여 다양한 방법을 통해 수행됩니다.
 
-센서 및 처리 기술이 발전함에 따라 환경에서 컴퓨터 입력의 새로운 영역이 만들어지고 있습니다. 컴퓨터와 환경 간의 상호 작용은 환경 이해 또는 *인식* 이므로 환경 정보를 표시하는 Windows의 API 이름을 [인식 API](https://docs.microsoft.com/uwp/api/Windows.Perception)라고 합니다. 환경 입력은 세계에서 사람의 위치([머리 추적](../design/coordinate-systems.md)), 표면 및 경계([공간 매핑](../design/spatial-mapping.md) 및 [장면 이해](../design/scene-understanding.md)), 주변 조명, 환경 소리, 개체 인식 및 위치와 같은 항목을 캡처합니다.
+센서 및 처리 기술이 발전함에 따라 환경에서 컴퓨터 입력의 새로운 영역이 만들어지고 있습니다. 컴퓨터와 환경 간의 상호 작용은 환경 이해 또는 *인식* 이므로 환경 정보를 표시하는 Windows의 API 이름을 [인식 API](/uwp/api/Windows.Perception)라고 합니다. 환경 입력은 세계에서 사람의 위치([머리 추적](../design/coordinate-systems.md)), 표면 및 경계([공간 매핑](../design/spatial-mapping.md) 및 [장면 이해](../design/scene-understanding.md)), 주변 조명, 환경 소리, 개체 인식 및 위치와 같은 항목을 캡처합니다.
 
 <br>
 
@@ -117,5 +117,3 @@ Windows Mixed Reality 환경을 제공하는 두 가지 주요 디바이스가 �
 
 > [!div class="nextstepaction"]
 > [홀로그램이란?](hologram.md)
-
-

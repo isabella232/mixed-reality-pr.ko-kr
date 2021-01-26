@@ -7,12 +7,12 @@ ms.date: 04/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, Mixed Reality, 디버그, 배포
-ms.openlocfilehash: 20bda2cd247f18680d3f9fe95284e238a32e1140
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: c4ffe3a426ad82c324efef20639cf836f16a7f63
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97529965"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583611"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>Visual Studio를 사용하여 배포 및 디버깅
 
@@ -129,7 +129,7 @@ PC 또는 [Mixed Reality 시뮬레이터](using-the-windows-mixed-reality-simula
 
 ## <a name="graphics-debugger-for-hololens-1st-gen"></a>HoloLens(1세대)용 그래픽 디버거
 
-Visual Studio 그래픽 진단 도구는 홀로그램 앱을 작성하고 최적화하는 경우에 유용합니다. 자세한 내용은 [MSDN의 Visual Studio 그래픽 진단](https://msdn.microsoft.com/library/hh315751.aspx)을 참조하세요.
+Visual Studio 그래픽 진단 도구는 홀로그램 앱을 작성하고 최적화하는 경우에 유용합니다. 자세한 내용은 [MSDN의 Visual Studio 그래픽 진단](/previous-versions/visualstudio/visual-studio-2015/debugger/visual-studio-graphics-diagnostics)을 참조하세요.
 
 **그래픽 디버거를 시작하려면**
 1. 위의 지침에 따라 디바이스 또는 에뮬레이터를 대상으로 지정합니다.
@@ -138,7 +138,7 @@ Visual Studio 그래픽 진단 도구는 홀로그램 앱을 작성하고 최적
 
 ## <a name="profiling"></a>프로파일링
 
-Visual Studio 프로파일링 도구를 사용하면 앱의 성능 및 리소스 사용을 분석할 수 있습니다. 여기에는 CPU, 메모리, 그래픽 및 네트워크 사용을 최적화하는 도구가 포함됩니다. 자세한 내용은 [MSDN의 디버깅하지 않고 진단 도구 실행](https://msdn.microsoft.com/library/dn957936.aspx)을 참조하세요.
+Visual Studio 프로파일링 도구를 사용하면 앱의 성능 및 리소스 사용을 분석할 수 있습니다. 여기에는 CPU, 메모리, 그래픽 및 네트워크 사용을 최적화하는 도구가 포함됩니다. 자세한 내용은 [MSDN의 디버깅하지 않고 진단 도구 실행](/previous-versions/visualstudio/visual-studio-2015/profiling/profiling-tools)을 참조하세요.
 
 **HoloLens를 사용하여 프로파일링 도구를 시작하려면**
 1. 위의 지침에 따라 디바이스 또는 에뮬레이터를 대상으로 지정합니다.
@@ -175,5 +175,5 @@ Visual Studio를 사용하여 Visual Studio 프로젝트에서 배포하지 않�
 ## <a name="see-also"></a>참고 항목
 * [도구 설치](../install-the-tools.md)
 * [HoloLens 에뮬레이터 사용](using-the-hololens-emulator.md)
-* [UWP(유니버설 Windows 플랫폼) 앱 배포 및 디버깅](https://msdn.microsoft.com/library/windows/apps/xaml/mt613243.aspx)
-* [디바이스를 개발에 사용하도록 설정](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
+* [UWP(유니버설 Windows 플랫폼) 앱 배포 및 디버깅](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps)
+* [디바이스를 개발에 사용하도록 설정](/windows/uwp/get-started/enable-your-device-for-development)

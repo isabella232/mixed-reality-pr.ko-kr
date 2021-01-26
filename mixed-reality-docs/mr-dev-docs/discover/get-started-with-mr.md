@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 검색, 배포, 인덱스, 방문 페이지, 디자인, 개발, 자습서, 샘플 앱, 기본 사항, 사례 연구, 리소스, HoloLens 방법, 오픈 소스 프로젝트, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 03db5f79a531d77bfd1cd6513c5bed9ad1202189
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 222c70882826e61d2b60e104c460156687f8b5df
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009723"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583355"
 ---
 # <a name="get-started-with-mixed-reality"></a>Mixed Reality 시작
 
@@ -152,7 +152,7 @@ Mixed Reality 에코시스템은 상상력에 의해서만 제한되는 물리�
 |  개념  |  결과  |
 | --- | --- |
 | [HoloLens 하드웨어](https://www.microsoft.com//hololens/hardware) | HoloLens 2는 몇 분 만에 가치를 제공하는 업계 최고의 솔루션을 통해 가장 편안한 몰입형 혼합 현실 환경을 제공하며, 이는 Microsoft의 클라우드 및 AI 서비스의 안정성, 보안 및 확장성의 향상으로 인해 모두 가능하게 되었습니다. |
-| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview), Layout 및 [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/)를 포함하여 Dynamics 365를 통해 직원의 역량을 강화하고 작업을 최적화할 수 있는 다양한 제품을 살펴봅니다. 실제 작업, 실제 디바이스 및 실제 사용자를 통해 실제로 수행하여 유용한 인사이트를 얻을 수 있습니다. |
+| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | [Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview), Layout 및 [Guides](/dynamics365/mixed-reality/guides/)를 포함하여 Dynamics 365를 통해 직원의 역량을 강화하고 작업을 최적화할 수 있는 다양한 제품을 살펴봅니다. 실제 작업, 실제 디바이스 및 실제 사용자를 통해 실제로 수행하여 유용한 인사이트를 얻을 수 있습니다. |
 | [Azure Cloud Services](../develop/mixed-reality-cloud-services.md) | 공간 인식, 공간 앵커 및 복잡한 3D 모델 렌더링을 사용하여 다양한 플랫폼에서 뛰어난 몰입형 환경을 구축합니다. |
 
 ## <a name="what-would-you-like-to-do-next"></a>다음에 수행할 작업은 무엇인가요?
@@ -181,5 +181,4 @@ Mixed Reality 에코시스템은 상상력에 의해서만 제한되는 물리�
 <br>
 
 >[!IMPORTANT]
->이 사이트의 모든 혼합 현실 개발 자료는 참조 목적으로만 제공됩니다. 애플리케이션, 애플리케이션 사용, 애플리케이션 사용이 최종 사용자에게 미치는 영향은 전적으로 애플리케이션 개발자인 여러분의 책임이며 여기에는 앱이 최종 사용자에게 불편, 부상 또는 기타 형태의 피해를 주는 일이 없도록 주의하고 적절한 경고와 법적 고지를 제공하는 것이 포함됩니다. 애플리케이션을 개발하고 게시하는 과정에서 항상 적절한 단계를 수행하여 애플리케이션을 안전하게 보호하고 [Microsoft와 맺은 앱 개발자 계약](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement)에 규정된 모든 의무를 이행해야 합니다.
-
+>이 사이트의 모든 혼합 현실 개발 자료는 참조 목적으로만 제공됩니다. 애플리케이션, 애플리케이션 사용, 애플리케이션 사용이 최종 사용자에게 미치는 영향은 전적으로 애플리케이션 개발자인 여러분의 책임이며 여기에는 앱이 최종 사용자에게 불편, 부상 또는 기타 형태의 피해를 주는 일이 없도록 주의하고 적절한 경고와 법적 고지를 제공하는 것이 포함됩니다. 애플리케이션을 개발하고 게시하는 과정에서 항상 적절한 단계를 수행하여 애플리케이션을 안전하게 보호하고 [Microsoft와 맺은 앱 개발자 계약](/legal/windows/agreements/app-developer-agreement)에 규정된 모든 의무를 이행해야 합니다.

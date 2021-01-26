@@ -7,12 +7,12 @@ ms.date: 12/3/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 학습, 샘플, MRTK, 연구 모드, HoloLens 2, qr 코드, WebRTC, 혼합 현실 캡처, 홀로그램 원격 접속, UX 도구
 ms.localizationpriority: high
-ms.openlocfilehash: 3aa0e51a92b909689ff97a07b45900ab65579c59
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 78cfc726bdffdb461a83bd1e9805d8f0e64b0f01
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007613"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583194"
 ---
 # <a name="samples-and-feature-apps"></a>샘플 및 기능 앱
 
@@ -30,7 +30,7 @@ ms.locfileid: "98007613"
 
 ### <a name="research-mode"></a>연구 모드
 
-연구 모드는 1세대 HoloLens에 도입되어 특히 배포용이 아닌 연구용 디바이스의 주요 센서에 대한 액세스 권한을 부여합니다. 아래의 샘플 애플리케이션은 연구 모드 스트림을 액세스 및 기록하고 [내재 및 외재적 기능](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world)을 사용하는 예입니다.
+연구 모드는 1세대 HoloLens에 도입되어 특히 배포용이 아닌 연구용 디바이스의 주요 센서에 대한 액세스 권한을 부여합니다. 아래의 샘플 애플리케이션은 연구 모드 스트림을 액세스 및 기록하고 [내재 및 외재적 기능](/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world)을 사용하는 예입니다.
 
 <br>
 
@@ -67,7 +67,7 @@ MRC(혼합 현실 캡처)는 실제 세계와 디지털 세계를 혼합한 1인
 
 | 참조 문서 | 샘플 |
 | --- | --- |
-| [혼합 현실 캡처](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [혼합 현실 캡처 샘플](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
+| [혼합 현실 캡처](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [혼합 현실 캡처 샘플](/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
 
 ### <a name="holographic-remoting"></a>홀로그램 원격 접속
 
