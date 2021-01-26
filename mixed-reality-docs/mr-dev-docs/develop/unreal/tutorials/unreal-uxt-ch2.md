@@ -7,19 +7,19 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 464df846d0fc6e1bd22ee3862adcdf110c377728
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 9e02ea6cb2710b4661e97dc8b0d5f4f48ab09fa7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609654"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583906"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2. 프로젝트 및 첫 번째 애플리케이션 초기화
 
 첫 번째 자습서에서는 새 Unreal 프로젝트에서 시작하여 HoloLens 플러그 인을 사용하도록 설정하고 수준을 만들어 조명을 비추어 체스 말을 추가합니다. 모든 3D 개체 및 재질에 대해 사전 제작된 자산을 사용하므로, 모든 것을 직접 모델링하는 것은 아닙니다. 이 자습서의 끝 부분에서는 혼합 현실에 사용할 수 있는 빈 캔버스를 제공합니다.
 
 > [!IMPORTANT]
-> [시작](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch1) 페이지에서 모든 필수 구성 요소를 갖추었는지 확인합니다.
+> [시작](/windows/mixed-reality/unreal-uxt-ch1) 페이지에서 모든 필수 구성 요소를 갖추었는지 확인합니다.
 
 ## <a name="objectives"></a>목표
 
@@ -29,7 +29,7 @@ ms.locfileid: "96609654"
 
 ## <a name="creating-a-new-unreal-project"></a>새 Unreal 프로젝트 만들기
 
-가장 먼저 필요한 것은 작업할 프로젝트입니다. 초보 Unreal 개발자라면 Epic Launcher에서 [지원 파일을 다운로드](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/tutorials/unreal-uxt-ch6#packaging-and-deploying-the-app-via-device-portal)해야 합니다.
+가장 먼저 필요한 것은 작업할 프로젝트입니다. 초보 Unreal 개발자라면 Epic Launcher에서 [지원 파일을 다운로드](./unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal)해야 합니다.
 
 1. Unreal Engine 실행
 

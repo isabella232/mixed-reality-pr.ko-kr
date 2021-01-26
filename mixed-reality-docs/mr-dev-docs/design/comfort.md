@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 디자인, 편안함, HoloLens 2, HoloLens(1세대), 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 보행
-ms.openlocfilehash: 74ead209beb3396db83e5e446490efe17293b14e
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9f366b2eb3ef33d3f63d3227d14aec642e8203b7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847491"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582492"
 ---
 # <a name="comfort"></a>편안함
 
@@ -78,15 +78,15 @@ IPD는 개인의 눈동자 또는 눈 중심 사이의 거리를 나타냅니다
 
 #### <a name="hololens-1st-gen"></a>HoloLens(1세대)
 
-HoloLens(1세대)의 경우 디바이스 [보정](https://docs.microsoft.com/hololens/hololens-calibration) 중에 IPD가 추정되고 설정됩니다. 이미 설정된 디바이스에 대한 새 사용자의 경우 보정을 실행하거나 IPD를 수동으로 설정해야 합니다. VO는 전적으로 디바이스에 맞게 결정됩니다. 특히, VO를 최소화하려면 디바이스가 눈의 축과 수평이 되도록 디스플레이가 사용자의 머리 위에 있을 필요가 있습니다. 
+HoloLens(1세대)의 경우 디바이스 [보정](/hololens/hololens-calibration) 중에 IPD가 추정되고 설정됩니다. 이미 설정된 디바이스에 대한 새 사용자의 경우 보정을 실행하거나 IPD를 수동으로 설정해야 합니다. VO는 전적으로 디바이스에 맞게 결정됩니다. 특히, VO를 최소화하려면 디바이스가 눈의 축과 수평이 되도록 디스플레이가 사용자의 머리 위에 있을 필요가 있습니다. 
 
 #### <a name="hololens-2"></a>HoloLens 2
 
-HoloLens 2의 경우 눈/디바이스 [보정](https://docs.microsoft.com/hololens/hololens-calibration) 중에 IPD가 추정되고 설정됩니다. 이미 설정된 디바이스에 대한 새 사용자의 경우 IPD가 올바르게 설정되도록 보정을 실행해야 합니다. VO는 HoloLens 2에서 자동으로 처리됩니다. 
+HoloLens 2의 경우 눈/디바이스 [보정](/hololens/hololens-calibration) 중에 IPD가 추정되고 설정됩니다. 이미 설정된 디바이스에 대한 새 사용자의 경우 IPD가 올바르게 설정되도록 보정을 실행해야 합니다. VO는 HoloLens 2에서 자동으로 처리됩니다. 
 
 ### <a name="guidance-for-immersive-devices"></a>몰입형 디바이스에 대한 지침
 
-Windows Mixed Reality 몰입형 HMD에는 IPD 또는 VO에 대한 자동 보정이 없습니다. IPD는 소프트웨어에서 수동으로 설정할 수 있습니다(Mixed Reality 포털 설정 아래의 [보정](https://docs.microsoft.com/hololens/hololens-calibration) 참조). 또는 일부 HMD에는 사용자가 렌즈 간격을 편안한 위치(IPD와 거의 일치)로 조정할 수 있는 기계적 슬라이더가 있습니다. 
+Windows Mixed Reality 몰입형 HMD에는 IPD 또는 VO에 대한 자동 보정이 없습니다. IPD는 소프트웨어에서 수동으로 설정할 수 있습니다(Mixed Reality 포털 설정 아래의 [보정](/hololens/hololens-calibration) 참조). 또는 일부 HMD에는 사용자가 렌즈 간격을 편안한 위치(IPD와 거의 일치)로 조정할 수 있는 기계적 슬라이더가 있습니다. 
 
 ## <a name="rendering-rates"></a>렌더링 속도
 
@@ -177,4 +177,4 @@ Windows Mixed Reality 몰입형 HMD에는 IPD 또는 VO에 대한 자동 보정�
 * [홀로그램 안정성](../develop/platform-capabilities-and-apis/hologram-stability.md)
 * [Instinctual 상호 작용](interaction-fundamentals.md)
 * [홀로그램 프레임](holographic-frame.md)
-* [조정](https://docs.microsoft.com/hololens/hololens-calibration)
+* [조정](/hololens/hololens-calibration)

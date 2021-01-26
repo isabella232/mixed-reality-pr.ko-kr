@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 기능, 설명서, 가이드, 홀로그램, qr 코드, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: d896af683a86a1b27e5d100df744222085574a93
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
+ms.openlocfilehash: d9f23bacf31b310da6d49e74de2153b50e642c7d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98247746"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582665"
 ---
 # <a name="qr-codes-in-unreal"></a>Unreal의 QR 코드
 
@@ -22,7 +22,7 @@ HoloLens 2는 웹캠을 사용하여 세계 공간에서 QR 코드를 볼 수 �
 - 조명 및 배경
 - 크기, 거리 및 각도 위치
 
-QR 코드가 앱에 배치될 때 [환경 고려 사항](../../environment-considerations-for-hololens.md)에 특히 주의해야 합니다. 이러한 각각의 토픽에 대한 자세한 정보와 필요한 NuGet 패키지를 다운로드하는 방법에 대한 지침은 주 [QR 코드 추적](../platform-capabilities-and-apis/qr-code-tracking.md) 설명서에서 확인할 수 있습니다.
+QR 코드가 앱에 배치될 때 [환경 고려 사항](/hololens/hololens-environment-considerations)에 특히 주의해야 합니다. 이러한 각각의 토픽에 대한 자세한 정보와 필요한 NuGet 패키지를 다운로드하는 방법에 대한 지침은 주 [QR 코드 추적](../platform-capabilities-and-apis/qr-code-tracking.md) 설명서에서 확인할 수 있습니다.
 
 > [!CAUTION]
 > QR 코드는 HoloLens에서 기본적으로 추적할 수 있는 유일한 이미지 유형입니다. Unreal의 **UARTrackedImage** 모듈은 HoloLens에서 지원되지 않습니다. 사용자 지정 이미지를 추적해야 하는 경우에는 타사 이미지 인식 라이브러리를 사용하여 디바이스의 [웹캠](unreal-hololens-camera.md)에 액세스한 후 이미지를 처리할 수 있습니다. 
@@ -32,7 +32,7 @@ QR 코드가 앱에 배치될 때 [환경 고려 사항](../../environment-consi
 HoloLens 2는 웹캠을 사용하여 QR 코드를 확인해야 하므로 프로젝트 설정에서 사용하도록 설정해야 합니다.
 - **편집 > 프로젝트 설정** 을 열고 **플랫폼** 섹션까지 아래로 스크롤한 다음, **HoloLens** 를 선택합니다.
     + **기능** 섹션을 확장하고 **웹캠** 을 선택합니다.  
-- 또한 [ARSessionConfig 자산](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset)을 추가하여 QR 코드 추적을 옵트인해야 합니다.
+- 또한 [ARSessionConfig 자산](/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset)을 추가하여 QR 코드 추적을 옵트인해야 합니다.
 
 [!INCLUDE[](includes/tabs-qr-codes-1.md)]
 
@@ -62,7 +62,7 @@ QR 코드는 Unreal의 AR 추적 기하 도형 시스템을 통해 추적 이미
 1. 먼저 추적 이미지를 **ARTrackedQRCode** 에 캐스트하여 현재 업데이트된 이미지가 QR 코드인지 확인합니다.  
 2. 인코딩된 데이터는 **QRCode** 변수에서 검색합니다. **GetLocalToWorldTransform** 위치에서 QR 코드의 왼쪽 위를, **GetEstimateSize** 로 크기를 가져올 수 있습니다.
 
-코드에서 [QR 코드 좌표계를 가져올 수](https://docs.microsoft.com/windows/mixed-reality/qr-code-tracking#getting-the-coordinate-system-for-a-qr-code)도 있습니다.
+코드에서 [QR 코드 좌표계를 가져올 수](/windows/mixed-reality/qr-code-tracking#getting-the-coordinate-system-for-a-qr-code)도 있습니다.
 
 ## <a name="finding-the-unique-id"></a>고유 ID 찾기
 
