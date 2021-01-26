@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 개발, 개발, HoloLens, 클라우드 서비스, Azure, remote rendering, spatial anchors, cognitive services, 인식, unity, 기계 학습, 음성 번역, 컴퓨터 비전, Microsoft Graph
-ms.openlocfilehash: 251fd68d2a3fea79c1db160b6aaf64aad05c686f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 725e41e94923f1738eb11064c772f9138a6be09a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009573"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582702"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 혼합 현실 클라우드 서비스 개요
 
@@ -66,10 +66,10 @@ ASA는 다음을 포함하여 Mixed Reality의 일반적인 사용 사례를 위
 
 :::row:::
     :::column:::
-       [![음성](../whats-new/images/speech.jpg)](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
+       [![음성](../whats-new/images/speech.jpg)](/azure/cognitive-services/speech-service/)
     :::column-end:::
     :::column span="2":::
-        ### <a name="speech"></a>[Speech](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
+        ### <a name="speech"></a>[Speech](/azure/cognitive-services/speech-service/)
         Speech를 통해 음성 처리 기능을 앱 또는 서비스에 통합하는 방법을 알아봅니다. 음성 언어를 텍스트로 변환하거나, 표준(또는 사용자 지정 가능) 음성 글꼴을 사용하여 텍스트에서 자연스러운 음성을 생성합니다. 체험 서비스를 사용해 봅니다. 뒤에 나오는 기능을 사용하여 음성 지원 앱 및 서비스를 빠르게 빌드합니다.
     :::column-end:::
 :::row-end:::
@@ -78,10 +78,10 @@ ASA는 다음을 포함하여 Mixed Reality의 일반적인 사용 사례를 위
 
 :::row:::
     :::column:::
-       [![Vision](../whats-new/images/vision.jpg)](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
+       [![Vision](../whats-new/images/vision.jpg)](/azure/cognitive-services/computer-vision/)
     :::column-end:::
     :::column span="2":::
-        ### <a name="vision"></a>[Vision](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
+        ### <a name="vision"></a>[Vision](/azure/cognitive-services/computer-vision/)
         사진, 비디오 및 디지털 잉크 콘텐츠를 인식, 식별, 캡션, 인덱싱 및 조정합니다. Vision을 통해 앱과 서비스에서 이미지, 비디오 및 디지털 잉크 내의 콘텐츠를 정확히 식별하고 분석할 수 있는 방법을 알아봅니다.
     :::column-end:::
 :::row-end:::
@@ -95,7 +95,7 @@ ASA는 다음을 포함하여 Mixed Reality의 일반적인 사용 사례를 위
 <table>
     <tr>
         <td><strong>Azure Cloud Service</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens 1세대</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens 1세대</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
     </tr>
      <tr>
@@ -167,5 +167,5 @@ ASA는 다음을 포함하여 Mixed Reality의 일반적인 사용 사례를 위
 
 ## <a name="see-also"></a>참조
 
-* HoloLens 2용 Azure Spatial Anchor 자습서 - [3-1 Azure Spatial Anchors 시작](../mrlearning-asa-ch1.md)
+* HoloLens 2용 Azure Spatial Anchor 자습서 - [3-1 Azure Spatial Anchors 시작](./unity/tutorials/mr-learning-asa-02.md)
 * HoloLens 2용 Azure Speech Services 자습서 - [4-1 음성 인식/전사 통합 및 사용](../develop/unity/tutorials/mrlearning-speechSDK-ch1.md)
