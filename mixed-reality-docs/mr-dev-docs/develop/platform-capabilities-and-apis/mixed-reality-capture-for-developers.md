@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: mrc, 사진, 비디오, 캡처, 카메라
-ms.openlocfilehash: cbdd99ab7ab405163fb7e0ba366ee85f8bcc634d
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2539c8e2a6f26ba1f36cd28502bf8d0f50803657
+ms.sourcegitcommit: bd9b2734903652b106db86686428c03acf104707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583677"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98763717"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>개발자를 위한 혼합 현실 캡처
 
@@ -84,7 +84,7 @@ HolographicCamera에는 카메라가 속한 구성을 식별 하는 데 도움�
 ##### <a name="enable-the-photovideocamera-holographicviewconfiguration-in-unity"></a>Unity에서 PhotoVideoCamera HolographicViewConfiguration 사용
 
 > [!NOTE]
-> 이 경우 **unity 2018.4.13 f1**, **unity 2019.3.0 f1** 또는 최신 버전이 필요 합니다.
+> Unity 2018를 사용 하는 경우 **unity 2018.4.13 f1** 이상이 필요 합니다. Unity 2019을 사용 하는 경우 **unity 2019.4** 이상이 필요 합니다.
 
 [혼합 현실 도구 키트](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)를 사용 하는 경우 pv 카메라에서 렌더링을 옵트인 (opt in) 하려면 [Windows Mixed reality 카메라 설정](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html) 공급자를 사용 하도록 설정 하 고 **pv 카메라에서 렌더링** 을 선택 합니다.
 
@@ -221,7 +221,7 @@ Unity 응용 프로그램은 holograms를 사용 하도록 설정 하는 속성�
 
 MRC 비디오 효과 (**MixedRealityCapture. MixedRealityCaptureVideoEffect**)
 
-|  속성 이름  |  유형  |  기본값  |  설명 |
+|  속성 이름  |  유형  |  기본값  |  Description |
 |----------|----------|----------|----------|
 |  StreamType  |  UINT32 ([Mediastreamtype](/uwp/api/Windows.Media.Capture.MediaStreamType))  |  1 (VideoRecord)  |  이 효과가 사용 되는 캡처 스트림을 설명 합니다. 오디오를 사용할 수 없습니다. |
 |  HologramCompositionEnabled  |  boolean  |  TRUE  |  비디오 캡처에서 holograms을 사용 하거나 사용 하지 않도록 설정 하는 플래그입니다. |
@@ -231,7 +231,7 @@ MRC 비디오 효과 (**MixedRealityCapture. MixedRealityCaptureVideoEffect**)
 |  GlobalOpacityCoefficient  |  float  |  0.9 (HoloLens) 1.0 (모던 헤드셋)  |  홀로그램의 전역 불투명도 계수를 0.0 (완전히 투명)에서 1.0 (완전히 불투명)로 설정 합니다. |
 |  BlankOnProtectedContent  |  boolean  |  FALSE  |  보호 된 콘텐츠를 표시 하는 2d UWP 앱이 있는 경우 빈 프레임을 반환 하거나 사용 하지 않도록 설정 하는 플래그입니다. 이 플래그가 false이 고 2d UWP 앱이 보호 된 콘텐츠를 표시 하는 경우 2d UWP 앱은 헤드셋과 혼합 현실 캡처 모두에서 보호 된 콘텐츠 질감으로 교체 됩니다. |
 |  ShowHiddenMesh  |  boolean  |  FALSE  |  Holographic 카메라의 숨겨진 영역 메시 및 인접 콘텐츠를 표시 하거나 사용 하지 않도록 설정 하는 플래그입니다. |
-| OutputSize | Size | 0, 0 | 비디오 안정화를 위해 자른 후 원하는 출력 크기를 설정 합니다. 0 또는 잘못 된 출력 크기가 지정 된 경우 기본 자르기 크기가 선택 됩니다. |
+| OutputSize | 크기 | 0, 0 | 비디오 안정화를 위해 자른 후 원하는 출력 크기를 설정 합니다. 0 또는 잘못 된 출력 크기가 지정 된 경우 기본 자르기 크기가 선택 됩니다. |
 | PreferredHologramPerspective | UINT32 | Windows 장치 포털의 **카메라에서 렌더링** 설정 | 캡처할 holographic 카메라 보기 구성을 나타내는 데 사용 되는 열거형입니다. 0 (표시)은 앱이 사진/비디오 카메라에서 렌더링 하도록 요청 하지 않는다는 것을 의미 합니다. 1 (PhotoVideoCamera)은 앱이 사진/비디오 카메라에서 렌더링 하도록 요청 합니다 (앱에서 지 원하는 경우). HoloLens 2 에서만 지원 됨 |
 
 >[!NOTE]
@@ -241,7 +241,7 @@ MRC 비디오 효과 (**MixedRealityCapture. MixedRealityCaptureVideoEffect**)
 
 MRC 오디오 효과 (**MixedRealityCapture. MixedRealityCaptureAudioEffect**)
 
-| 속성 이름 | 유형 | 기본값 | 설명 |
+| 속성 이름 | 유형 | 기본값 | Description |
 |----------|----------|----------|----------|
 | MixerMode | UINT32 | 2 (Mic 및 시스템 오디오) | 사용 해야 하는 오디오 원본을 나타내는 데 사용 되는 열거형입니다. 0 (Mic 오디오 전용), 1 (시스템 오디오만), 2 (Mic 및 시스템 오디오) |
 | LoopbackGain | float | Windows 장치 포털의 **앱 오디오 게인** 설정 | 시스템 오디오 볼륨에 적용 됩니다. 범위는 0.0에서 5.0 사이입니다. HoloLens 2 에서만 지원 됨 |
