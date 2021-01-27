@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, WinRT, windows mixed reality, API, 연습, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 혼합 현실 Api
-ms.openlocfilehash: 2116f0025449fdf127998e605f87de456e9bdaf9
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: cf80eff408b54c610c9e7878ccfa5185b3fbcca1
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583556"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809995"
 ---
 # <a name="winrt-apis-with-unity-for-hololens"></a>HoloLens 용 Unity를 사용 하는 WinRT Api
 
@@ -19,7 +19,7 @@ ms.locfileid: "98583556"
 
 ## <a name="mixed-reality-apis"></a>혼합 현실 Api
 
-Windows SDK의 혼합 현실 하위 집합은 전처리기 지시문이 없는 프로젝트에서 사용할 수 있는 .NET Standard 2.0 호환 프로젝션에서 사용할 수 있게 되었습니다. 대부분의 Windows Api 인식 및 Windows 네임 스페이스는 포함 되며 나중에 추가 Api를 포함 하도록 확장할 수 있습니다. 투영 된 Api는 편집기에서 실행 되는 동안 사용할 수 있으며이를 통해 [재생 모드](//windows/mixed-reality/unity-play-mode)를 사용할 수 있습니다. 이 프로젝션을 사용 하려면 프로젝트를 다음과 같이 수정 합니다.
+Windows SDK의 혼합 현실 하위 집합은 전처리기 지시문이 없는 프로젝트에서 사용할 수 있는 .NET Standard 2.0 호환 프로젝션에서 사용할 수 있게 되었습니다. 대부분의 Windows Api 인식 및 Windows 네임 스페이스는 포함 되며 나중에 추가 Api를 포함 하도록 확장할 수 있습니다. 투영 된 Api는 편집기에서 실행 되는 동안 사용할 수 있으며이를 통해 [재생 모드](/windows/mixed-reality/unity-play-mode)를 사용할 수 있습니다. 이 프로젝션을 사용 하려면 프로젝트를 다음과 같이 수정 합니다.
 
 1) [Unity 용 nuget](https://github.com/GlitchEnzo/NuGetForUnity)을 사용 하 여 [MixedReality DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT) nuget 패키지에 대 한 참조를 추가 합니다.
 2) `Windows`다음을 사용 하 여 네임 스페이스에 대 한 참조 접두사 `Microsoft.` :

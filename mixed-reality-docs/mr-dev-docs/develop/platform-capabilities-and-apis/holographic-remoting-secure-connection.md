@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 보안, 인증, 서버 간
-ms.openlocfilehash: 6b8c26bfa32661a180f1f58acc5c4aa13529f3bb
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: ea00565580fdbc850a11d103520351be53cb37b5
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583842"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810114"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Holographic Remoting에 대 한 연결 보안 사용
 
@@ -115,7 +115,7 @@ Id 공급자의 한 가지 예는 [Microsoft id 플랫폼](/azure/active-directo
 모든 인터페이스에는 콜백 개체를 매개 변수로 수신 하는 작업을 수행 하도록 요청 하는 함수가 있습니다. 이 개체를 사용 하 여 요청에 대 한 비동기 처리를 쉽게 구현할 수 있습니다. 이 개체에 대 한 참조를 유지 하 고 비동기 작업이 완료 되 면 완료 함수를 호출 합니다. 모든 스레드에서 완료 함수를 호출할 수 있습니다.
 
 >[!TIP]
->WinRT 인터페이스 구현은 c + +/WinRT. 사용 하 여 쉽게 수행할 수 있습니다. [C + +/vb를 사용 하는 작성자 api](//windows/uwp/cpp-and-winrt-apis/author-apis) 장에서는이에 대해 자세히 설명 합니다.
+>WinRT 인터페이스 구현은 c + +/WinRT. 사용 하 여 쉽게 수행할 수 있습니다. [C + +/vb를 사용 하는 작성자 api](/windows/uwp/cpp-and-winrt-apis/author-apis) 장에서는이에 대해 자세히 설명 합니다.
 
 >[!IMPORTANT]
 >`build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl`NuGet 패키지 내에는 보안 연결과 관련 된 API에 대 한 자세한 설명서가 포함 되어 있습니다.
@@ -193,5 +193,5 @@ OpenXR 확장을 사용 하는 보안 연결의 주요 요소는 `XR_MSFT_hologr
 * [OpenXR Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-openxr.md)
 * [사용자 지정 홀로그램 원격 플레이어 앱 작성](holographic-remoting-create-player.md)
 * [Holographic 원격 문제 해결 및 제한 사항](holographic-remoting-troubleshooting.md)
-* [홀로그램 원격 소프트웨어 사용 조건](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [홀로그램 원격 소프트웨어 사용 조건](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?LinkId=521839)
