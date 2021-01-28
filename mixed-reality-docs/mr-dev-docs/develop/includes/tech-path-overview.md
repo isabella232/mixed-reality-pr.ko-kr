@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c74a6c0c22439376a84ecb8254b945295c8988a2
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: c61fda885b6cffba2a16b368aa48ad1426fd9fa6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98052957"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98605070"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -17,8 +17,8 @@ Unity를 사용하여 플랫폼 간 전체 기능을 갖춘 혼합 현실 앱을
 Unity로 Mixed Reality 앱을 빌드하는 경우 몇 가지 하드웨어 및 에뮬레이터 옵션이 있습니다. 개발자 설명서는 HoloLens 디바이스에 중점을 두지만, 필요한 경우 몰입형 헤드셋 배포에 대한 세부 정보가 있는 디바이스 지원 섹션을 찾을 수 있습니다.
 
 **증강 현실 디바이스**
-* [HoloLens(1세대)](https://docs.microsoft.com/hololens/hololens1-hardware)
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens(1세대)](/hololens/hololens1-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **몰입형 VR 헤드셋**
 * HP Reverb 및 Reverb G2
@@ -48,7 +48,7 @@ Unity에서 빌드된 Mixed Reality 프로젝트, 특히 **Azure Remote Renderin
 
 ## <a name="examples"></a>예
 
-몇 가지 오픈 소스 [샘플 앱](../unity/samples.md)을 다운로드하여 사용해 보고 Unity에서 Mixed Reality 최종 제품에 대한 느낌을 알아볼 수 있습니다. 특정 기능을 테스트하는 데 사용할 수 있는 MRTK 예제 장면도 있습니다.
+몇 가지 오픈 소스 [샘플 앱](../features-and-samples.md)을 다운로드하여 사용해 보고 Unity에서 Mixed Reality 최종 제품에 대한 느낌을 알아볼 수 있습니다. 특정 기능을 테스트하는 데 사용할 수 있는 MRTK 예제 장면도 있습니다.
 * [Unity의 손 상호 작용 예시 장면(MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor) - HandInteractionExamples.unity 예시 장면에는 관절식 손 입력에 중점을 둔 다양한 유형의 상호 작용 및 UI 컨트롤이 있습니다.
 
 * [Unity의 시선 추적 예시(MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html) - 이 페이지에서는 제공된 MRTK 시선 추적 예제를 기반으로 MRTK에서 시선 추적을 사용하여 빠르게 시작하는 방법을 설명합니다.
@@ -67,8 +67,8 @@ Unreal을 사용하여 플랫폼 간 전체 기능을 갖춘 혼합 현실 앱�
 Unreal Engine으로 Mixed Reality 앱을 빌드하는 경우 몇 가지 하드웨어, 에뮬레이터 및 스트리밍 옵션이 있습니다. 개발자 설명서는 HoloLens 디바이스에 중점을 두고 있지만 Unreal 프로젝트를 x64 데스크톱 앱으로 패키징하여 몰입형 헤드셋에서 실행해도 괜찮습니다.
 
 **증강 현실 디바이스**
-* [HoloLens(1세대)](https://docs.microsoft.com/hololens/hololens1-hardware)
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens(1세대)](/hololens/hololens1-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **몰입형 VR 헤드셋**
 * HP Reverb 및 Reverb G2
@@ -84,7 +84,8 @@ Unreal Engine으로 Mixed Reality 앱을 빌드하는 경우 몇 가지 하드�
 
 |  도구/SDK  |  설명  |
 | --- | --- |
-| [Unreal용 Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unreal) | MRTK-Unreal(Unreal용 Mixed Reality Toolkit)은 플러그인, 샘플 및 설명서의 형태로 구성된 구성 요소 세트로, Unreal Engine을 사용하여 혼합 현실 애플리케이션의 개발을 가속화하도록 설계되었습니다. |
+| [UX Tools for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) | UX Tools는 릴리스된 첫 번째 플로그 인이며 현재 HoloLens 2에서만 지원됩니다. 플러그 인에는 C++ 코드, 청사진 그리고 입력 시뮬레이션, 손 조작, 표면 자기 등에 대한 일반적인 UX 기능의 예제 자산이 포함됩니다. |
+| [Graphics Tools for Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) | Graphics Tools는 성능 예산을 맞추면서 혼합 현실 애플리케이션의 시각적 충실도를 개선하는 데 도움이 되는 코드, 청사진 및 예제 자산을 포함하는 UE 게임 플러그 인입니다. |
 
 ## <a name="cloud-services"></a>Cloud Services
 
@@ -119,7 +120,7 @@ Windows Mixed Reality API에 직접 연결하여 혼합 현실 앱을 만들 수
 OpenXR 개발을 통해 Mixed Reality 앱을 빌드하는 경우 몇 가지 하드웨어, 에뮬레이터 및 스트리밍 옵션이 있습니다. 
 
 **증강 현실 디바이스**
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **몰입형 VR 헤드셋**
 * HP Reverb 및 Reverb G2

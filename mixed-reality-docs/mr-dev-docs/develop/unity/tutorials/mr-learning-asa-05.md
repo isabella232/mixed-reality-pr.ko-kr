@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, android, ios, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 545373ed169a77614b0a00264f5ba1bf1f3deb8e
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 741c000de0ab2feb3dcbff33e2a0b0acc70838e8
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008393"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699256"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5. Android 및 iOS용 Azure Spatial Anchors
 
@@ -28,7 +28,7 @@ ms.locfileid: "98008393"
 이 섹션에서는 다음과 같은 기본 제공 패키지를 업그레이드하고 설치합니다.
 
 * AR Foundation 3.1.3
-* XR Legacy Input Helpers 2.1.4
+* XR Legacy Input Helpers 2.1.6
 * Android 지원을 위한 ARCore XR 플러그 인 3.1.3
 * iOS 지원을 위한 ARKit XR 플러그 인 3.1.3
 
@@ -73,6 +73,10 @@ Hierarchy(계층 구조) 창에서 **MixedRealityToolkit** 개체를 선택한 �
 > [!NOTE]
 > AR 참조 지점 관리자(스크립트) 구성 요소를 추가하면 AR 세션 원본(스크립트) 구성 요소가 AR 참조 지점 관리자(스크립트) 구성 요소에 필요하기 때문에 자동으로 추가됩니다.
 
+
+
+메뉴 항목을 호출하여 MRTK UnityAR 스크립팅 정의를 업데이트합니다. **Mixed Reality Toolkit** > **유틸리티** > **UnityAR** > 스크립팅 정의 업데이트
+
 ## <a name="building-your-application-to-your-android-device"></a>Android 디바이스에 애플리케이션 빌드
 
 이 섹션에서는 프로젝트를 구성하고 빌드하여 Android 디바이스에 배포하는 방법을 알아봅니다.
@@ -86,13 +90,17 @@ Unity 메뉴에서 **파일** > **빌드 설정...** 을 선택하여 빌드 설
 
 빌드 설정 창을 닫습니다.
 
-Unity 메뉴에서 **Mixed Reality Toolkit** > **유틸리티** > **Unity 프로젝트 구성** 을 선택하여 **MRTK Project Configurator** 창을 열고 모든 옵션이 선택되어 있는지 확인한 다음, **적용** 단추를 클릭하여 설정을 적용합니다.
+Unity 메뉴에서 **Mixed Reality Toolkit** > **유틸리티** > **Unity 프로젝트 구성** 을 선택하여 **MRTK 프로젝트 구성기** 창을 열고 모든 옵션이 선택되어 있는지 확인한 다음, **적용** 단추를 클릭하여 설정을 적용합니다.
 
 ![Unity MRTK Project Configurator 창 Android](images/mr-learning-asa/asa-05-section3-step1-2.png)
 
 Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 차례로 선택하여 플레이어 설정 창을 연 다음, **플레이어** >  **기타 설정** 섹션을 찾아서 **Vulkan** 을 선택하고 **"-"** 기호를 클릭하여 제거합니다.
 
 ![Vulcan이 선택된 Unity Other Settings](images/mr-learning-asa/asa-05-section3-step1-3.png)
+
+Unity 메뉴에서 **Edit(편집)**  > **Project Settings(프로젝트 설정)...**  >**Player(플레이어)** > **XR Setting(설정)** 을 선택하고 **Android** 플랫폼에 있는지 확인하고 **Virtual Reality Supported(가상 현실 지원)** 확인란을 선택한 후 + 아이콘을 클릭하고 없음을 선택합니다.
+
+![Unity MRTK Project Configurator 창 Android](images/mr-learning-asa/asa-05-section3-step1-2-1.png)
 
 플레이어 설정 창을 닫고 빌드 설정 창을 다시 엽니다.
 
@@ -147,7 +155,7 @@ Xcode 프로젝트를 저장할 적당한 위치(예: _D:\MixedRealityLearning\B
 
 ![저장 프롬프트 창이 있는 Unity Build Settings 창 iOS](images/mr-learning-asa/asa-05-section4-step1-5.png)
 
-빌드 프로세스가 완료되면 [Xcode 프로젝트 내보내기](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) 지침에 따라 Xcode 프로젝트를 iOS 디바이스에 배포하는 방법을 알아봅니다.
+빌드 프로세스가 완료되면 [Xcode 프로젝트 내보내기](/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) 지침에 따라 Xcode 프로젝트를 iOS 디바이스에 배포하는 방법을 알아봅니다.
 
 ## <a name="congratulations"></a>축하합니다.
 

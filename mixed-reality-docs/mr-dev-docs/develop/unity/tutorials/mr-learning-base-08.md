@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 시선 추적
 ms.localizationpriority: high
-ms.openlocfilehash: f464ba4e08f1446f1d50eda577aedf9d070630ee
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 5efe1c54d9e3b4096dfec4221e4ce04e7370ca47
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007893"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635475"
 ---
 # <a name="8-using-eye-tracking"></a>8. 시선 추적 사용
 
@@ -33,7 +33,7 @@ Unity 메뉴에서 Mixed Reality Toolkit > 유틸리티 > **Unity 프로젝트 �
 ![Unity MRTK Project Configurator 창](images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
-> 이 자습서 시리즈의 시작 부분에서 Unity 프로젝트를 구성한 경우 [MRTK Project Configurator 설정 적용](mr-learning-base-02.md#selecting-mrtk-and-project-settings) 동안에는 응시 입력 기능이 사용하도록 설정되어 있어야 합니다. 그러나 사용하도록 설정되지 않은 경우 지금 사용하도록 설정해야 합니다.
+> 이 자습서 시리즈의 시작 부분에서 Unity 프로젝트를 구성한 경우 [MRTK Project Configurator 설정 적용](mr-learning-base-02.md#creating-and-configuring-the-scene) 동안에는 응시 입력 기능이 사용하도록 설정되어 있어야 합니다. 그러나 사용하도록 설정되지 않은 경우 지금 사용하도록 설정해야 합니다.
 
 ## <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>응시 공급자에서 시선 기반 응시 사용
 
@@ -55,9 +55,9 @@ Hierarchy 창에서 **MixedRealityToolkit** 개체를 선택한 다음, Inspecto
 
 * **입력 데이터 공급자** > **입력 시뮬레이션 서비스** 섹션을 확장합니다.
 * **DefaultMixedRealityInputSimulationProfile** 을 복제하고 적절한 이름(예: _GettingStarted_MixedRealityInputSimulationProfile_)을 설정합니다.
-* **시선 시뮬레이션** 섹션을 찾아 **시선 위치 시뮬레이션** 확인란을 선택합니다.
+* **Eye Gaze Simulation(눈 응시 시뮬레이션)** 를 찾고 **Default Eye Gaze Simulation Mode(기본 눈 응시 시뮬레이션 모드)** 를 **Camera Forward Axis(카메라 전방 축)** 로 설정합니다.
 
-![새로 만든 프로필이 적용되고 시선 시뮬레이션을 사용하도록 설정된 Unity MixedRealityToolkit 구성 요소](images/mr-learning-base/base-08-section3-step1-1.png)
+![TextMeshPro 개체가 선택된 Unity](images/mr-learning-base/base-08-section3-step1-1.png)
 
 ## <a name="adding-eye-tracking-to-objects"></a>개체에 시선 추적 추가
 

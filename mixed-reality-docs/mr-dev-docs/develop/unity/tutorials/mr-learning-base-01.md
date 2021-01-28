@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, solvers, 시선 추적, 음성 명령
 ms.localizationpriority: high
-ms.openlocfilehash: 27a5f2cae4f08fbc142c8b872c22d23ab41cdc62
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a917aea812c262e3589110a29e2399da4c1e5348
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008083"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98579272"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1. MRTK 자습서 소개
 
@@ -42,14 +42,14 @@ ms.locfileid: "98008083"
 * 올바른 [도구가 설치](../../install-the-tools.md)된 상태로 구성된 Windows 10 PC
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 이상
 * [개발용으로 구성](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)된 HoloLens 2 디바이스
+
 * Unity 2019 LTS가 설치되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가된 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
 
 > [!CAUTION]
-> 이 자습서 시리즈에 추천되는 MRTK 버전은 MRTK 2.4.0입니다.
+> 이 자습서 시리즈에 추천되는 MRTK 버전은 MRTK 2.5.1입니다.
 
 > [!CAUTION]
 > 이 자습서 시리즈에 추천되는 Unity 버전은 Unity 2019 LTS입니다. 이 버전은 필수 구성 요소에서 설명한 모든 Unity 버전 요구 사항을 대체합니다.
 
 > [!div class="nextstepaction"]
 > [다음 자습서: 2. 프로젝트 초기화 및 첫 번째 애플리케이션 배포](mr-learning-base-02.md)
-

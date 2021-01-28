@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 공간 인식
 ms.localizationpriority: high
-ms.openlocfilehash: 58f9c5f756a12e99fd10b136b2a450c6227b2dad
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 9b0c914bd1f518d53abdd681b3a5f6959c9a6211
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008013"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98579354"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. MRTK 프로필 구성
 
@@ -47,7 +47,7 @@ ms.locfileid: "98008013"
 > [!NOTE]
 > 구성 프로필은 최상위 수준 프로필입니다. 따라서 다른 프로필을 편집하려면 먼저 구성 프로필을 복제해야 합니다.
 
-Hierarchy 창에서 **MixedRealityToolkit** 개체를 선택한 다음, Inspector 창에서 **MixedRealityToolkit** 구성 프로필을 **DefaultHoloLens2ConfigurationProfile** 로 변경합니다.
+Hierarchy(계층 구조) 창에서 **MixedRealityToolkit** 개체를 선택한 다음, Inspector(검사기) 창에서 **MixedRealityToolkit** 구성 프로필이 **DefaultXRSDKConfigurationProfile** 로 설정되어 있는지 확인합니다.
 
 ![DefaultHoloLens2ConfigurationProfile이 선택된 Unity MixedRealityToolkit 구성 요소](images/mr-learning-base/base-03-section1-step1-1.png)
 
@@ -55,7 +55,7 @@ Hierarchy 창에서 **MixedRealityToolkit** 개체를 선택한 다음, Inspecto
 
 ![Unity MixedRealityToolkit 구성 요소 Copy & Customize 단추](images/mr-learning-base/base-03-section1-step1-2.png)
 
-Clone Profile 창에서 적절한 **프로필 이름**(예: _GettingStarted_HoloLens2ConfigurationProfile_)을 입력한 다음, **복제** 단추를 클릭하여 **DefaultHololens2ConfigurationProfile** 의 편집 가능한 복사본을 만듭니다.
+Clone Profile(프로필 복제) 창에서 적절한 **Profile Name(프로필 이름)** (예: _GettingStarted_XRSDKConfigurationProfile_)을 입력한 다음, **Clone(복제)** 단추를 클릭하여 **DefaultXRSDKConfigurationProfile** 의 편집 가능한 복사본을 만듭니다.
 
 ![Unity MixedRealityToolkit 복제 Configuration Profile 팝업 창](images/mr-learning-base/base-03-section1-step1-3.png)
 
@@ -83,7 +83,7 @@ Hierarchy 창에서 **MixedRealityToolkit** 개체를 선택한 다음, Inspecto
 
 ![공간 인식 탭이 선택된 Unity MixedRealityToolkit 구성 요소](images/mr-learning-base/base-03-section1-step3-1.png)
 
-Clone Profile 창에서 적절한 **프로필 이름**(예: _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_)을 입력한 다음, **복제** 단추를 클릭하여 **DefaultMixedRealitySpatialAwarenessSystemProfile** 의 편집 가능한 복사본을 만듭니다.
+Clone Profile(프로필 복제) 창에서 적절한 **프로필 이름**(예: _GettingStarted_XRSDKSpatialAwarenessSystemProfile_)을 입력한 다음, **Clone(복제)** 단추를 클릭하여 **DefaultXRSDKSpatialAwarenessSystemProfile** 의 편집 가능한 복사본을 만듭니다.
 
 ![Unity MixedRealityToolkit 복제 공간 인식 시스템 프로필 팝업 창](images/mr-learning-base/base-03-section1-step3-2.png)
 
@@ -93,7 +93,7 @@ Clone Profile 창에서 적절한 **프로필 이름**(예: _GettingStarted_Mixe
 
 ### <a name="4-clone-the-default-spatial-awareness-mesh-observer-profile"></a>4. 기본 공간 인식 메시 관찰자 프로필 복제
 
-다음과 같이 **공간 인식** 탭을 선택한 상태로 **Windows Mixed Reality 공간 메시 관찰자** 섹션을 확장한 다음, **복제** 단추를 클릭하여 [프로필 복제] 창을 엽니다.
+다음과 같이 **Spatial Awareness(공간 인식)** 탭을 선택한 상태로 **XR SDK Windows Mixed Reality Spatial Mesh Observer(XR SDK Windows Mixed Reality 공간 메시 관찰자)** 섹션을 확장한 다음, **Clone(복제)** 단추를 클릭하여 Clone Profile(프로필 복제) 창을 엽니다.
 
 ![Windows Mixed Reality 공간 메시 관찰자 섹션이 확장된 Unity MixedRealityToolkit 구성 요소](images/mr-learning-base/base-03-section1-step4-1.png)
 

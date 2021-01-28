@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 프리팹, 홀로그램, 도구 설명
 ms.localizationpriority: high
-ms.openlocfilehash: 989de4871332608448619e75ffd760c616332533
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4fe4b016be36e04abffeb415f690cc0c01a6f767
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008063"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635555"
 ---
 # <a name="6-creating-user-interfaces"></a>6. 사용자 인터페이스 만들기
 
@@ -97,17 +97,17 @@ ms.locfileid: "98008063"
 
 ![Menu 개체가 선택되고 ButtonCollection 개체가 펼쳐진 Unity](images/mr-learning-base/base-06-section2-step1-2.png)
 
-첫 번째 단추의 이름을 **Indicator** 로 바꾼 다음, [검사기] 창에서 **단추 구성 도우미(스크립트)** 구성 요소를 다음과 같이 구성합니다.
+ButtonCollection에서 첫 번째 단추의 이름을 Indicator로 바꾼 다음, 검사기 창에서 단추 구성 도우미(스크립트) 구성 요소를 다음과 같이 구성합니다.
 
 * **기본 레이블 텍스트** 를 단추 이름과 일치하도록 변경합니다.
-* **Indicator** 개체를 **없음(개체)** 필드에 할당합니다.
+* 갈매기형 Indicator 개체를 None (Object)(없음(개체)) 필드에 할당합니다.
 * **함수 없음** 드롭다운에서 **GameObject** > **SetActive(부울)** 를 차례로 선택하여 이 함수를 이벤트가 트리거될 때 실행할 작업으로 설정합니다.
 * 인수 확인란이 **선택되어** 있는지 확인합니다.
 * **아이콘** 을 '검색' 아이콘으로 변경합니다.
 
 ![Indicator 단추 개체 Button Config Helper가 구성된 Unity](images/mr-learning-base/base-06-section2-step1-3.png)
 
-[계층 구조] 창에서 **표시기** 개체를 선택한 다음, [검사기] 창에서 다음을 수행합니다.
+갈매기형 Indicator 개체를 사용하지 않으려면 Hierarchy(계층 구조) 창에서 갈매기형 Indicator 개체를 선택한 다음, Inspector(검사기) 창에서 다음을 수행합니다.
 
 * 이름 옆에 있는 확인란을 선택 취소하여 기본적으로 비활성화합니다.
 * **구성 요소 추가** 단추를 사용하여 **Directional Indicator Controller(스크립트)** 구성 요소를 추가합니다.
@@ -115,7 +115,7 @@ ms.locfileid: "98008063"
 ![Indicator 개체가 선택되어 사용하지 않도록 설정되고 DirectionalIndicatorController 구성 요소가 추가된 Unity](images/mr-learning-base/base-06-section2-step1-4.png)
 
 > [!NOTE]
-> 이제 앱이 시작되면 Indicator가 기본적으로 사용하지 않도록 설정되며, Indicator 단추를 눌러 사용하도록 설정할 수 있습니다.
+> 이제 앱이 시작되면 갈매기형 Indicator(검사기)가 기본적으로 사용하지 않도록 설정되며, Indicator(검사기) 단추를 눌러 사용하도록 설정할 수 있습니다.
 
 두 번째 단추의 이름을 **TapToPlace** 로 바꾼 다음, [검사기] 창에서 **단추 구성 도우미(스크립트)** 구성 요소를 다음과 같이 구성합니다.
 
@@ -169,7 +169,7 @@ ms.locfileid: "98008063"
 [계층 구조] 창에서 RoverExplorer > **RoverParts** 개체를 차례로 펼치고, 해당 자식 로버 부품 개체를 모두 선택한 다음, [검사기] 창에서 **구성 요소 추가** 단추를 사용하여 **ToolTipSpawner** 구성 요소를 추가하고 다음과 같이 구성합니다.
 
 * 사용자가 도구 설명이 표시되는 부품을 살펴볼 수 있도록 하려면 **포커스 사용** 확인란이 선택되어 있는지 확인합니다.
-* [프로젝트] 창에서 **한 줄 도구 설명** 프리팹을 **도구 설명 프리팹** 필드에 할당합니다.
+* 프로젝트 창에서 **Simple Line ToolTip(한 줄 도구 설명)** 프리팹을 **Prefab(프리팹)** 필드에 할당합니다.
 * 도구 설명 재정의 설정 > **설정 모드** 를 **재정의** 로 변경합니다.
 * 도구 설명 재정의 설정 > **수동 피벗 로컬 위치 Y** 를 **1.5** 로 변경합니다.
 
@@ -196,4 +196,5 @@ ms.locfileid: "98008063"
 
 이 자습서에서는 Unity의 TextMeshPro 구성 요소와 함께 MRTK에서 제공하는 단추 및 메뉴 프리팹을 사용하여 간단한 사용자 인터페이스를 만드는 방법 및 눌렀을 때 이벤트를 트리거하도록 단추를 구성하는 방법을 알아보았습니다. 또한 동적 도구 설명 UI 요소를 추가하여 사용자에게 추가 정보를 제공하는 방법도 알아보았습니다.
 
-[다음 자습서: 7. 3D 개체와 상호 작용](mr-learning-base-07.md)
+> [!div class="nextstepaction"]
+>[다음 자습서: 7. 3D 개체와 상호 작용](mr-learning-base-07.md)

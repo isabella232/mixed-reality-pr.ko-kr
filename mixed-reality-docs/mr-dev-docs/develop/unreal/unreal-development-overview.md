@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 스트리밍, 원격, 혼합 현실, 개발, 시작, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, 홀로그램, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, OpenXR
-ms.openlocfilehash: eb9ec39d663dec2b5bf4c9177524449f31aaf554
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
+ms.openlocfilehash: a5b65bbfe5a1f365a93836406365fdc395b73c47
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98247736"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580045"
 ---
 # <a name="unreal-development-overview"></a>Unreal 개발 개요
 
@@ -49,6 +49,8 @@ Unreal 개발이 처음이라면 모르는 상태에서 넘어가지 마세요. 
 
 * [Unreal UX Tools](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools)는 릴리스된 첫 번째 플로그 인이며 현재 HoloLens 2에서만 지원됩니다. 플러그 인에는 C++ 코드, 청사진 그리고 입력 시뮬레이션, 손 조작, 표면 자기 등에 대한 일반적인 UX 기능의 예제 자산이 포함됩니다.
 
+* [Graphics Tools for Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/)은 성능 예산을 맞추면서 혼합 현실 애플리케이션의 시각적 충실도를 개선하는 데 도움이 되는 코드, 청사진 및 예제 자산을 포함하는 UE 게임 플러그 인입니다.
+
 [!INCLUDE[](../includes/unreal-building-blocks.md)]
 
 > [!NOTE]
@@ -82,7 +84,7 @@ HoloLens 2에 Unreal 앱을 처음 배포하는 경우 Epic Launcher에서 [지�
 
 ### <a name="debugging"></a>디버깅
 
-Visual Studio가 설치된 디바이스에서 실행되는 동안 애플리케이션을 디버깅하려면 다음 [지침](https://docs.microsoft.com/visualstudio/debugger/debug-installed-app-package#remote)을 따르세요.
+Visual Studio가 설치된 디바이스에서 실행되는 동안 애플리케이션을 디버깅하려면 다음 [지침](/visualstudio/debugger/debug-installed-app-package#remote)을 따르세요.
 
 ### <a name="performance"></a>성능
 
@@ -104,7 +106,7 @@ Visual Studio가 설치된 디바이스에서 실행되는 동안 애플리케�
 | 공간 오디오 | 4.23 | ✔️ |
 | 스트리밍을 위한 관람자 화면 지원 | 4.24 |
 | 스트리밍을 통한 평면 LSR | 4.24 |
-| [샘플 앱](unreal-samples.md) | 4.24 | ✔️ |
+| [샘플 앱](../features-and-samples.md) | 4.24 | ✔️ |
 | 모바일 다중 보기: 60FPS 성능 도달 | 4.25 | ✔️ |
 | 세 번째 카메라 렌더링 | 4.25 |
 | 패키지 데스크톱 앱에서 스트리밍 | 4.25.1 | ✔️ |

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 6cc77b32e9479bafeb53dcb99cba4f2f29865fd7
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0c6bf0871836ad7aae9c3906b2042f97ae003ebf
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007213"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699067"
 ---
 # <a name="3-connecting-multiple-users"></a>3. 여러 사용자 연결
 
@@ -63,13 +63,13 @@ Inspector 창에서 **Add Component** 단추를 사용하여 **Generic Net Sync 
 
 Inspector 창에서 **Add Component** 단추를 사용하여 **Photon View (Script)** 구성 요소를 PhotonUser 개체에 추가하고 다음과 같이 구성합니다.
 
-* **Observed Components** 필드에 **Generic Net Sync(Script)** 구성 요소를 할당합니다.
+* **Observed Components(관찰된 구성 요소)** 필드에 **Generic Net Sync(Script)(일반 네트워크 동기화(스크립트))** 구성 요소가 할당되어 있는지 확인합니다.
 
 ![Photon View 구성 요소가 추가되고 구성된 Unity](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
 
 ### <a name="2-create-the-avatar"></a>2. 아바타 만들기
 
-Project 창에서 **Assets** > **MRTK** > **SDK** > **StandardAssets** > **Materials** 폴더로 이동하여 MRTK 자료를 찾습니다.
+Project 창에서 **Assets(자산)**  > **MRTK** > **StandardAssets** > **Materials(자료)** 폴더로 이동하여 MRTK 자료를 찾습니다.
 
 그런 다음, Hierarchy 창에서 **PhotonUser** 개체를 마우스 오른쪽 단추로 클릭하고 **3D Object** > **Sphere** 를 선택하여 PhotonUser 개체의 자식으로 구형 개체를 만들어서 다음과 같이 구성합니다.
 
@@ -112,7 +112,7 @@ Unity 프로젝트를 빌드하고 HoloLens에 배포했으면 Unity로 돌아�
 ![네트워크 사용자를 사용하여 Unity를 보여주는 애니메이션](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
-> Unity 프로젝트를 빌드하고 HoloLens 2에 배포하는 방법은 [HoloLens 2에 앱 빌드](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) 지침을 참조하세요.
+> Unity 프로젝트를 빌드하고 HoloLens 2에 배포하는 방법은 [HoloLens 2에 앱 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침을 참조하세요.
 
 > [!CAUTION]
 > 앱에서 Photon에 연결해야 하므로 컴퓨터/디바이스가 인터넷에 연결되어 있는지 확인합니다.

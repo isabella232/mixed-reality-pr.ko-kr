@@ -1,20 +1,22 @@
 ---
-title: 음성 인식 및 전사 통합 및 사용
-description: 이 과정을 완료하여 혼합 현실 애플리케이션에서 Azure 음성 인식 및 기록을 추가하고 사용하는 방법을 알아봅니다.
+title: Azure Speech Services 자습서 - 1. 음성 인식 및 전사 통합 및 사용
+description: 이 과정을 완료하여 혼합 현실 애플리케이션 내에서 Azure Speech SDK를 구현하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, 음성 인식, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: f0c26c861cb3400c552d17d45f77cfe3a5cc284c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: c663bbf443c206750854c1b8f4cd8946eacd28b1
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010123"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635459"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1. 음성 인식 및 전사 통합 및 사용
+
+## <a name="overview"></a>개요
 
 이 자습서 시리즈에서는 HoloLens 2에서 Azure Speech Services의 사용을 검색하는 Mixed Reality 애플리케이션을 만듭니다. 이 자습서 시리즈를 완료하면 디바이스의 마이크를 사용하여 음성을 텍스트로 실시간으로 전사하고, 음성을 다른 언어로 번역하고, 의도 인식 기능을 활용하여 AI를 통해 음성 명령을 이해할 수 있습니다.
 
@@ -41,16 +43,16 @@ ms.locfileid: "98010123"
 
 이 섹션에서는 새 Unity 프로젝트를 만들고 MRTK 개발을 준비합니다.
 
-이를 위해 먼저 [프로젝트 및 첫 번째 애플리케이션 초기화](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
+이를 위해 먼저 [프로젝트 및 첫 번째 애플리케이션 초기화](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
 
 1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름(예: *MRTK Tutorials*) 지정
-2. [빌드 플랫폼 전환](mr-learning-base-02.md#switching-the-build-platform)
+2. [빌드 플랫폼 전환](mr-learning-base-02.md#configuring-the-unity-project)
 3. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Unity 프로젝트 구성](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+5. [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project)
 6. [장면 만들기 및 구성](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름(예: *AzureSpeechServices*) 지정
 
-그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면의 MRTK 구성 프로필을 **DefaultHoloLens2ConfigurationProfile** 로 변경하고, 공간 인식 메시의 표시 옵션을 **폐색** 으로 변경합니다.
+그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면의 MRTK 구성 프로필이 **DefaultHoloLens2ConfigurationProfile** 인지 확인하고, 공간 인식 메시의 표시 옵션을 **Occlusion(폐색)** 으로 변경합니다.
 
 ## <a name="configuring-the-speech-commands-start-behavior"></a>음성 명령 시작 동작 구성
 
@@ -79,7 +81,7 @@ Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 차례로 선택�
 
 * [Microsoft.CognitiveServices.Speech.N.N.N.unitypackage](https://aka.ms/csspeech/unitypackage)(최신 버전)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.3/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.3.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-speech-services-v2.3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.3.0.0.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/2.5.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.1.unitypackage)
 
 > [!TIP]
 > Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) 지침을 참조할 수 있습니다.
@@ -117,7 +119,7 @@ Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 차례로 선택�
 
 ## <a name="connecting-the-unity-project-to-the-azure-resource"></a>Unity 프로젝트를 Azure 리소스에 연결
 
-Azure Speech Services를 사용하려면 Azure 리소스를 만들고, Speech Service에 대한 API 키를 얻어야 합니다. [Speech Service 체험해 보기](https://docs.microsoft.com/azure/cognitive-services/speech-service/get-started) 지침을 수행하고, 서비스 지역(위치라고도 함) 및 API 키(Key1 또는 Key2라고도 함)를 적어둡니다.
+Azure Speech Services를 사용하려면 Azure 리소스를 만들고, Speech Service에 대한 API 키를 얻어야 합니다. [Speech Service 체험해 보기](/azure/cognitive-services/speech-service/get-started) 지침을 수행하고, 서비스 지역(위치라고도 함) 및 API 키(Key1 또는 Key2라고도 함)를 적어둡니다.
 
 [계층 구조] 창에서 **Lunarcom** 개체를 선택한 다음, [검사기] 창에서 **Lunarcom 컨트롤러(스크립트)** 구성 요소의 **Speech SDK 자격 증명** 섹션을 찾아서 다음과 같이 구성합니다.
 
@@ -142,7 +144,6 @@ Azure Speech Services를 사용하려면 Azure 리소스를 만들고, Speech Se
 그런 다음, 마이크가 컴퓨터에 있다고 가정하여 사용자가 무언가를 말하면 음성이 터미널 패널에 전사됩니다.
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section7-step1-3.png)
-
 
 > [!CAUTION]
 > 애플리케이션에서 Azure에 연결해야 하므로 컴퓨터/디바이스가 인터넷에 연결되어 있는지 확인합니다.
