@@ -7,193 +7,194 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 프리팹, 홀로그램, 도구 설명
 ms.localizationpriority: high
-ms.openlocfilehash: 989de4871332608448619e75ffd760c616332533
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4fe4b016be36e04abffeb415f690cc0c01a6f767
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008063"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635555"
 ---
-# <a name="6-creating-user-interfaces"></a><span data-ttu-id="b542f-104">6. 사용자 인터페이스 만들기</span><span class="sxs-lookup"><span data-stu-id="b542f-104">6. Creating user interfaces</span></span>
+# <a name="6-creating-user-interfaces"></a><span data-ttu-id="bad25-104">6. 사용자 인터페이스 만들기</span><span class="sxs-lookup"><span data-stu-id="bad25-104">6. Creating user interfaces</span></span>
 
-<span data-ttu-id="b542f-105">이 자습서에서는 Unity의 TextMeshPro 구성 요소와 함께 MRTK의 단추와 메뉴 프리팹을 사용하여 간단한 사용자 인터페이스를 만드는 방법에 대해 알아봅니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-105">In this tutorial, you will learn how to create a simple user interface using MRTK's button and menu prefabs alongside Unity's TextMeshPro component.</span></span> <span data-ttu-id="b542f-106">또한 이벤트를 트리거하도록 단추를 구성하고, 사용자에게 추가 정보를 제공하기 위해 동적 도구 설명 UI 요소를 추가하는 방법에 대해서도 알아봅니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-106">You will also learn how to configure the buttons to trigger events and add dynamic tooltip UI elements to provide the user with additional information.</span></span>
+<span data-ttu-id="bad25-105">이 자습서에서는 Unity의 TextMeshPro 구성 요소와 함께 MRTK의 단추와 메뉴 프리팹을 사용하여 간단한 사용자 인터페이스를 만드는 방법에 대해 알아봅니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-105">In this tutorial, you will learn how to create a simple user interface using MRTK's button and menu prefabs alongside Unity's TextMeshPro component.</span></span> <span data-ttu-id="bad25-106">또한 이벤트를 트리거하도록 단추를 구성하고, 사용자에게 추가 정보를 제공하기 위해 동적 도구 설명 UI 요소를 추가하는 방법에 대해서도 알아봅니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-106">You will also learn how to configure the buttons to trigger events and add dynamic tooltip UI elements to provide the user with additional information.</span></span>
 
-## <a name="objectives"></a><span data-ttu-id="b542f-107">목표</span><span class="sxs-lookup"><span data-stu-id="b542f-107">Objectives</span></span>
+## <a name="objectives"></a><span data-ttu-id="bad25-107">목표</span><span class="sxs-lookup"><span data-stu-id="bad25-107">Objectives</span></span>
 
-* <span data-ttu-id="b542f-108">컬렉션에서 단추를 구성하는 방법 알아보기</span><span class="sxs-lookup"><span data-stu-id="b542f-108">Learn how to organize buttons in a collection</span></span>
-* <span data-ttu-id="b542f-109">MRTK의 메뉴 프리팹을 사용하는 방법 알아보기</span><span class="sxs-lookup"><span data-stu-id="b542f-109">Learn how to use MRTK's menu prefabs</span></span>
-* <span data-ttu-id="b542f-110">UI 요소 및 단추를 사용하여 홀로그램과 상호 작용하는 방법 알아보기</span><span class="sxs-lookup"><span data-stu-id="b542f-110">Learn how to interact with holograms using UI menus and buttons</span></span>
-* <span data-ttu-id="b542f-111">텍스트 요소를 추가하는 방법 알아보기</span><span class="sxs-lookup"><span data-stu-id="b542f-111">Learn how to add text elements</span></span>
-* <span data-ttu-id="b542f-112">개체에 대한 도구 설명을 동적으로 생성하는 방법 알아보기</span><span class="sxs-lookup"><span data-stu-id="b542f-112">Learn how to spawn tooltips on objects dynamically</span></span>
+* <span data-ttu-id="bad25-108">컬렉션에서 단추를 구성하는 방법 알아보기</span><span class="sxs-lookup"><span data-stu-id="bad25-108">Learn how to organize buttons in a collection</span></span>
+* <span data-ttu-id="bad25-109">MRTK의 메뉴 프리팹을 사용하는 방법 알아보기</span><span class="sxs-lookup"><span data-stu-id="bad25-109">Learn how to use MRTK's menu prefabs</span></span>
+* <span data-ttu-id="bad25-110">UI 요소 및 단추를 사용하여 홀로그램과 상호 작용하는 방법 알아보기</span><span class="sxs-lookup"><span data-stu-id="bad25-110">Learn how to interact with holograms using UI menus and buttons</span></span>
+* <span data-ttu-id="bad25-111">텍스트 요소를 추가하는 방법 알아보기</span><span class="sxs-lookup"><span data-stu-id="bad25-111">Learn how to add text elements</span></span>
+* <span data-ttu-id="bad25-112">개체에 대한 도구 설명을 동적으로 생성하는 방법 알아보기</span><span class="sxs-lookup"><span data-stu-id="bad25-112">Learn how to spawn tooltips on objects dynamically</span></span>
 
-## <a name="creating-a-static-panel-of-buttons"></a><span data-ttu-id="b542f-113">정적 단추 패널 만들기</span><span class="sxs-lookup"><span data-stu-id="b542f-113">Creating a static panel of buttons</span></span>
+## <a name="creating-a-static-panel-of-buttons"></a><span data-ttu-id="bad25-113">정적 단추 패널 만들기</span><span class="sxs-lookup"><span data-stu-id="bad25-113">Creating a static panel of buttons</span></span>
 
-<span data-ttu-id="b542f-114">[계층 구조] 창에서 마우스 오른쪽 단추로 **RoverExplorer** 개체를 클릭하고, **빈 항목 만들기** 를 선택하여 빈 개체를 RoverExplorer의 자식으로 추가하고, 개체 이름을 **Buttons** 로 지정하고, **변환** 구성 요소를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-114">In the Hierarchy window, right-click on the **RoverExplorer** object and select **Create Empty** to add an empty object as a child of the RoverExplorer, name the object **Buttons**, and configure the **Transform** component as follows:</span></span>
+<span data-ttu-id="bad25-114">[계층 구조] 창에서 마우스 오른쪽 단추로 **RoverExplorer** 개체를 클릭하고, **빈 항목 만들기** 를 선택하여 빈 개체를 RoverExplorer의 자식으로 추가하고, 개체 이름을 **Buttons** 로 지정하고, **변환** 구성 요소를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-114">In the Hierarchy window, right-click on the **RoverExplorer** object and select **Create Empty** to add an empty object as a child of the RoverExplorer, name the object **Buttons**, and configure the **Transform** component as follows:</span></span>
 
-* <span data-ttu-id="b542f-115">**위치**: X = -0.6, Y = 0.036, Z = -0.5</span><span class="sxs-lookup"><span data-stu-id="b542f-115">**Position**: X = -0.6, Y = 0.036, Z = -0.5</span></span>
-* <span data-ttu-id="b542f-116">**회전**: X = 90, Y = 0, Z = 0</span><span class="sxs-lookup"><span data-stu-id="b542f-116">**Rotation**: X = 90, Y = 0, Z = 0</span></span>
-* <span data-ttu-id="b542f-117">**배율**: X = 1, Y = 1, Z = 1</span><span class="sxs-lookup"><span data-stu-id="b542f-117">**Scale**: X = 1, Y = 1, Z = 1</span></span>
+* <span data-ttu-id="bad25-115">**위치**: X = -0.6, Y = 0.036, Z = -0.5</span><span class="sxs-lookup"><span data-stu-id="bad25-115">**Position**: X = -0.6, Y = 0.036, Z = -0.5</span></span>
+* <span data-ttu-id="bad25-116">**회전**: X = 90, Y = 0, Z = 0</span><span class="sxs-lookup"><span data-stu-id="bad25-116">**Rotation**: X = 90, Y = 0, Z = 0</span></span>
+* <span data-ttu-id="bad25-117">**배율**: X = 1, Y = 1, Z = 1</span><span class="sxs-lookup"><span data-stu-id="bad25-117">**Scale**: X = 1, Y = 1, Z = 1</span></span>
 
 ![새로 만든 Buttons 개체가 선택되고 배치된 Unity](images/mr-learning-base/base-06-section1-step1-1.png)
 
-<span data-ttu-id="b542f-119">[프로젝트] 창에서 **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** 폴더로 차례로 이동하고, **PressableRoundButton** 프리팹을 클릭하여 **Buttons** 개체로 끈 다음, 마우스 오른쪽 단추로 PressableRoundButton을 클릭하고, **중복** 을 선택하여 복사본을 만듭니다. 총 세 개의 PressableRoundButton 개체 복사본을 만들 때까지 반복합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-119">In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder, click-and-drag the **PressableRoundButton** prefab on to the **Buttons** object, then right-click on the PressableRoundButton and select **Duplicate** to create a copy, repeat until you have a total of three PressableRoundButton objects:</span></span>
+<span data-ttu-id="bad25-119">[프로젝트] 창에서 **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** 폴더로 차례로 이동하고, **PressableRoundButton** 프리팹을 클릭하여 **Buttons** 개체로 끈 다음, 마우스 오른쪽 단추로 PressableRoundButton을 클릭하고, **중복** 을 선택하여 복사본을 만듭니다. 총 세 개의 PressableRoundButton 개체 복사본을 만들 때까지 반복합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-119">In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder, click-and-drag the **PressableRoundButton** prefab on to the **Buttons** object, then right-click on the PressableRoundButton and select **Duplicate** to create a copy, repeat until you have a total of three PressableRoundButton objects:</span></span>
 
 ![새로 추가한 PressableRoundButton 프리팹이 있는 Unity](images/mr-learning-base/base-06-section1-step1-2.png)
 
-<span data-ttu-id="b542f-121">[계층 구조] 창에서 **Buttons** 개체를 선택한 다음, [검사기] 창에서 **구성 요소 추가** 단추를 사용하여 **GridObjectCollection** 구성 요소를 추가하고 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-121">In the Hierarchy window, select the **Buttons** object, then in the Inspector window, use the **Add Component** button to add the **GridObjectCollection** component and configure it as follows:</span></span>
+<span data-ttu-id="bad25-121">[계층 구조] 창에서 **Buttons** 개체를 선택한 다음, [검사기] 창에서 **구성 요소 추가** 단추를 사용하여 **GridObjectCollection** 구성 요소를 추가하고 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-121">In the Hierarchy window, select the **Buttons** object, then in the Inspector window, use the **Add Component** button to add the **GridObjectCollection** component and configure it as follows:</span></span>
 
-* <span data-ttu-id="b542f-122">**정렬 유형**: 자식 순서</span><span class="sxs-lookup"><span data-stu-id="b542f-122">**Sort Type**: Child Order</span></span>
-* <span data-ttu-id="b542f-123">**레이아웃**: 수평</span><span class="sxs-lookup"><span data-stu-id="b542f-123">**Layout**: Horizontal</span></span>
-* <span data-ttu-id="b542f-124">**셀 너비**: 0.2</span><span class="sxs-lookup"><span data-stu-id="b542f-124">**Cell Width**: 0.2</span></span>
-* <span data-ttu-id="b542f-125">**앵커**: 왼쪽 가운데</span><span class="sxs-lookup"><span data-stu-id="b542f-125">**Anchor**: Middle Left</span></span>
+* <span data-ttu-id="bad25-122">**정렬 유형**: 자식 순서</span><span class="sxs-lookup"><span data-stu-id="bad25-122">**Sort Type**: Child Order</span></span>
+* <span data-ttu-id="bad25-123">**레이아웃**: 수평</span><span class="sxs-lookup"><span data-stu-id="bad25-123">**Layout**: Horizontal</span></span>
+* <span data-ttu-id="bad25-124">**셀 너비**: 0.2</span><span class="sxs-lookup"><span data-stu-id="bad25-124">**Cell Width**: 0.2</span></span>
+* <span data-ttu-id="bad25-125">**앵커**: 왼쪽 가운데</span><span class="sxs-lookup"><span data-stu-id="bad25-125">**Anchor**: Middle Left</span></span>
 
-<span data-ttu-id="b542f-126">그런 다음, **컬렉션 업데이트** 단추를 클릭하여 Buttons 개체의 자식 개체에 대한 위치를 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-126">Then click the **Update Collection** button to update the position of the Buttons object's child objects:</span></span>
+<span data-ttu-id="bad25-126">그런 다음, **컬렉션 업데이트** 단추를 클릭하여 Buttons 개체의 자식 개체에 대한 위치를 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-126">Then click the **Update Collection** button to update the position of the Buttons object's child objects:</span></span>
 
 ![GridObjectCollection 구성 요소가 추가, 구성 및 적용된 Unity Buttons 개체](images/mr-learning-base/base-06-section1-step1-3.png)
 
-<span data-ttu-id="b542f-128">[계층 구조] 창에서 단추 이름을 **Hints**, **Explode** 및 **Reset** 으로 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-128">In the Hierarchy window, name the buttons **Hints**, **Explode**, and **Reset**.</span></span>
+<span data-ttu-id="bad25-128">[계층 구조] 창에서 단추 이름을 **Hints**, **Explode** 및 **Reset** 으로 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-128">In the Hierarchy window, name the buttons **Hints**, **Explode**, and **Reset**.</span></span>
 
-<span data-ttu-id="b542f-129">각 단추에 대해 **SeeItSayItLabel** > **TextMeshPro** 자식 개체를 차례로 선택한 다음, [검사기] 창에서 각 **TextMeshPro - 텍스트** 구성 요소 텍스트를 단추 이름과 일치하도록 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-129">For each button, select the **SeeItSayItLabel** > **TextMeshPro** child object, then in the Inspector window, change the respective **TextMeshPro - Text** component text to match the button names:</span></span>
+<span data-ttu-id="bad25-129">각 단추에 대해 **SeeItSayItLabel** > **TextMeshPro** 자식 개체를 차례로 선택한 다음, [검사기] 창에서 각 **TextMeshPro - 텍스트** 구성 요소 텍스트를 단추 이름과 일치하도록 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-129">For each button, select the **SeeItSayItLabel** > **TextMeshPro** child object, then in the Inspector window, change the respective **TextMeshPro - Text** component text to match the button names:</span></span>
 
 ![단추 텍스트 레이블이 구성된 Unity](images/mr-learning-base/base-06-section1-step1-4.png)
 
-<span data-ttu-id="b542f-131">완료되면 Buttons 개체의 자식 개체를 접습니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-131">Once done, collapse the Buttons object's child objects.</span></span>
+<span data-ttu-id="bad25-131">완료되면 Buttons 개체의 자식 개체를 접습니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-131">Once done, collapse the Buttons object's child objects.</span></span>
 
-<span data-ttu-id="b542f-132">[계층 구조] 창에서 **Hints** 단추 개체를 선택한 다음, [검사기] 창에서 **Interactable.OnClick ()** 이벤트를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-132">In the Hierarchy window, select the **Hints** button object, then in the Inspector window, configure the **Interactable.OnClick ()** event as follows:</span></span>
+<span data-ttu-id="bad25-132">[계층 구조] 창에서 **Hints** 단추 개체를 선택한 다음, [검사기] 창에서 **Interactable.OnClick ()** 이벤트를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-132">In the Hierarchy window, select the **Hints** button object, then in the Inspector window, configure the **Interactable.OnClick ()** event as follows:</span></span>
 
-* <span data-ttu-id="b542f-133">**RoverAssembly** 개체를 **없음(개체)** 필드에 할당합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-133">Assign the **RoverAssembly** object to the **None (Object)** field</span></span>
-* <span data-ttu-id="b542f-134">**함수 없음** 드롭다운에서 **PlacementHintsController** > **TogglePlacementHints ()** 를 차례로 선택하여 이 함수를 이벤트가 트리거될 때 실행할 작업으로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-134">From the **No Function** dropdown, select **PlacementHintsController** > **TogglePlacementHints ()** to set this function as the action to be executed when the event is triggered</span></span>
+* <span data-ttu-id="bad25-133">**RoverAssembly** 개체를 **없음(개체)** 필드에 할당합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-133">Assign the **RoverAssembly** object to the **None (Object)** field</span></span>
+* <span data-ttu-id="bad25-134">**함수 없음** 드롭다운에서 **PlacementHintsController** > **TogglePlacementHints ()** 를 차례로 선택하여 이 함수를 이벤트가 트리거될 때 실행할 작업으로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-134">From the **No Function** dropdown, select **PlacementHintsController** > **TogglePlacementHints ()** to set this function as the action to be executed when the event is triggered</span></span>
 
 ![Hints 단추 개체 OnClick 이벤트가 구성된 Unity](images/mr-learning-base/base-06-section1-step1-5.png)
 
 > [!TIP]
-> <span data-ttu-id="b542f-136">Interactable 구성 요소는 모든 객체가 입력에 쉽게 상호 작용하고 응답할 수 있도록 하는 일체형 컨테이너입니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-136">The Interactable component is an all-in-one container to make any object easily interactable and responsive to input.</span></span> <span data-ttu-id="b542f-137">Interactable은 터치, 손 광선, 말하기 등을 포함한 모든 유형의 입력에 대한 캐치 올(catch-all) 역할을 하며 이러한 상호 작용을 이벤트 및 시각적 테마 응답으로 전달합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-137">Interactable acts as a catch-all for all types of input including touch, hand rays, speech, etc. and funnels these interactions into events and visual theme responses.</span></span> <span data-ttu-id="b542f-138">다양한 입력 유형에 맞게 구성하고 시각적 테마를 사용자 지정하는 방법에 대한 자세한 내용은 [MRTK 설명서 포털](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)의 [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) 가이드를 참조할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-138">To learn how to configure it for different input types and customize it's visual theme, you can refer to the [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).</span></span>
+> <span data-ttu-id="bad25-136">Interactable 구성 요소는 모든 객체가 입력에 쉽게 상호 작용하고 응답할 수 있도록 하는 일체형 컨테이너입니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-136">The Interactable component is an all-in-one container to make any object easily interactable and responsive to input.</span></span> <span data-ttu-id="bad25-137">Interactable은 터치, 손 광선, 말하기 등을 포함한 모든 유형의 입력에 대한 캐치 올(catch-all) 역할을 하며 이러한 상호 작용을 이벤트 및 시각적 테마 응답으로 전달합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-137">Interactable acts as a catch-all for all types of input including touch, hand rays, speech, etc. and funnels these interactions into events and visual theme responses.</span></span> <span data-ttu-id="bad25-138">다양한 입력 유형에 맞게 구성하고 시각적 테마를 사용자 지정하는 방법에 대한 자세한 내용은 [MRTK 설명서 포털](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)의 [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) 가이드를 참조할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-138">To learn how to configure it for different input types and customize it's visual theme, you can refer to the [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).</span></span>
 
-<span data-ttu-id="b542f-139">[계층 구조] 창에서 **Explode** 단추 개체를 선택한 다음, [검사기] 창에서 **Interactable.OnClick ()** 이벤트를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-139">In the Hierarchy window, select the **Explode** button object, then in the Inspector window, configure the **Interactable.OnClick ()** event as follows:</span></span>
+<span data-ttu-id="bad25-139">[계층 구조] 창에서 **Explode** 단추 개체를 선택한 다음, [검사기] 창에서 **Interactable.OnClick ()** 이벤트를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-139">In the Hierarchy window, select the **Explode** button object, then in the Inspector window, configure the **Interactable.OnClick ()** event as follows:</span></span>
 
-* <span data-ttu-id="b542f-140">**RoverAssembly** 개체를 **없음(개체)** 필드에 할당합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-140">Assign the **RoverAssembly** object to the **None (Object)** field</span></span>
-* <span data-ttu-id="b542f-141">**함수 없음** 드롭다운에서 **ExplodedViewController** > **ToggleExplodedView ()** 를 차례로 선택하여 이 함수를 이벤트가 트리거될 때 실행할 작업으로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-141">From the **No Function** dropdown, select **ExplodedViewController** > **ToggleExplodedView ()** to set this function as the action to be executed when the event is triggered</span></span>
+* <span data-ttu-id="bad25-140">**RoverAssembly** 개체를 **없음(개체)** 필드에 할당합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-140">Assign the **RoverAssembly** object to the **None (Object)** field</span></span>
+* <span data-ttu-id="bad25-141">**함수 없음** 드롭다운에서 **ExplodedViewController** > **ToggleExplodedView ()** 를 차례로 선택하여 이 함수를 이벤트가 트리거될 때 실행할 작업으로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-141">From the **No Function** dropdown, select **ExplodedViewController** > **ToggleExplodedView ()** to set this function as the action to be executed when the event is triggered</span></span>
 
 ![Explode 단추 개체 OnClick 이벤트가 구성된 Unity](images/mr-learning-base/base-06-section1-step1-6.png)
 
-<span data-ttu-id="b542f-143">[재생] 단추를 눌러 게임 모드를 시작한 다음, 스페이스 바 단추를 길게 눌러 손을 활성화하고, 마우스를 사용하여 **Hints** 단추를 눌러 배치 힌트 개체의 표시 유형을 설정/해제합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-143">Press the Play button to enter Game mode, then press-and-hold the space bar button to activate the hand and use the mouse to press the **Hints** button to toggle the visibility of the placement hint objects:</span></span>
+<span data-ttu-id="bad25-143">[재생] 단추를 눌러 게임 모드를 시작한 다음, 스페이스 바 단추를 길게 눌러 손을 활성화하고, 마우스를 사용하여 **Hints** 단추를 눌러 배치 힌트 개체의 표시 유형을 설정/해제합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-143">Press the Play button to enter Game mode, then press-and-hold the space bar button to activate the hand and use the mouse to press the **Hints** button to toggle the visibility of the placement hint objects:</span></span>
 
 ![Hints 단추가 눌러져 있는 Unity 재생 모드 분할 보기](images/mr-learning-base/base-06-section1-step1-7.png)
 
-<span data-ttu-id="b542f-145">그리고 **Explode** 단추를 눌러 분해된 보기를 설정/해제합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-145">and the **Explode** button to toggle the exploded view on and off:</span></span>
+<span data-ttu-id="bad25-145">그리고 **Explode** 단추를 눌러 분해된 보기를 설정/해제합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-145">and the **Explode** button to toggle the exploded view on and off:</span></span>
 
 ![Explode 단추가 눌러져 있는 Unity 재생 모드 분할 보기](images/mr-learning-base/base-06-section1-step1-8.png)
 
-## <a name="creating-a-dynamic-menu-that-follows-the-user"></a><span data-ttu-id="b542f-147">사용자를 따르는 동적 메뉴 만들기</span><span class="sxs-lookup"><span data-stu-id="b542f-147">Creating a dynamic menu that follows the user</span></span>
+## <a name="creating-a-dynamic-menu-that-follows-the-user"></a><span data-ttu-id="bad25-147">사용자를 따르는 동적 메뉴 만들기</span><span class="sxs-lookup"><span data-stu-id="bad25-147">Creating a dynamic menu that follows the user</span></span>
 
-<span data-ttu-id="b542f-148">[프로젝트] 창에서 **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **UX** > **Menus** 폴더로 차례로 이동하고, **NearMenu4x1** 프리팹을 클릭하여 [계층 구조] 창으로 끈 다음, 해당 변환 **위치** 를 X = 0, Y = -0.4, Z = 0으로 설정하고 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-148">In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **Menus** folder, click-and-drag the **NearMenu4x1** prefab into the Hierarchy window, set its Transform **Position** to X = 0, Y = -0.4, Z = 0 and configure it as follows:</span></span>
+<span data-ttu-id="bad25-148">[프로젝트] 창에서 **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **UX** > **Menus** 폴더로 차례로 이동하고, **NearMenu4x1** 프리팹을 클릭하여 [계층 구조] 창으로 끈 다음, 해당 변환 **위치** 를 X = 0, Y = -0.4, Z = 0으로 설정하고 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-148">In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **Menus** folder, click-and-drag the **NearMenu4x1** prefab into the Hierarchy window, set its Transform **Position** to X = 0, Y = -0.4, Z = 0 and configure it as follows:</span></span>
 
-* <span data-ttu-id="b542f-149">**SolverHandler** 구성 요소의 **추적 대상 형식** 이 **Head** 로 설정되어 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-149">Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**</span></span>
-* <span data-ttu-id="b542f-150">**RadialView** 해결기 구성 요소 옆에 있는 확인란을 선택하여 기본적으로 사용하도록 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-150">Check the checkbox next to the **RadialView** Solver component so it is enabled by default</span></span>
+* <span data-ttu-id="bad25-149">**SolverHandler** 구성 요소의 **추적 대상 형식** 이 **Head** 로 설정되어 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-149">Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**</span></span>
+* <span data-ttu-id="bad25-150">**RadialView** 해결기 구성 요소 옆에 있는 확인란을 선택하여 기본적으로 사용하도록 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-150">Check the checkbox next to the **RadialView** Solver component so it is enabled by default</span></span>
 
 ![새로 추가한 Near Menu 프리팹이 선택된 Unity](images/mr-learning-base/base-06-section2-step1-1.png)
 
-<span data-ttu-id="b542f-152">[계층 구조] 창에서 개체 이름을 **Menu** 로 바꾼 다음, 해당 **ButtonCollection** 자식 개체를 펼쳐서 4개의 단추를 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-152">In the Hierarchy window, rename the object to **Menu**, then expand its **ButtonCollection** child object to reveal the four buttons:</span></span>
+<span data-ttu-id="bad25-152">[계층 구조] 창에서 개체 이름을 **Menu** 로 바꾼 다음, 해당 **ButtonCollection** 자식 개체를 펼쳐서 4개의 단추를 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-152">In the Hierarchy window, rename the object to **Menu**, then expand its **ButtonCollection** child object to reveal the four buttons:</span></span>
 
 ![Menu 개체가 선택되고 ButtonCollection 개체가 펼쳐진 Unity](images/mr-learning-base/base-06-section2-step1-2.png)
 
-<span data-ttu-id="b542f-154">첫 번째 단추의 이름을 **Indicator** 로 바꾼 다음, [검사기] 창에서 **단추 구성 도우미(스크립트)** 구성 요소를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-154">Rename the first button to **Indicator**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:</span></span>
+<span data-ttu-id="bad25-154">ButtonCollection에서 첫 번째 단추의 이름을 Indicator로 바꾼 다음, 검사기 창에서 단추 구성 도우미(스크립트) 구성 요소를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-154">Rename the first button in the ButtonCollection to Indicator, then in the Inspector window, configure the Button Config Helper (Script) component as follows:</span></span>
 
-* <span data-ttu-id="b542f-155">**기본 레이블 텍스트** 를 단추 이름과 일치하도록 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-155">Change the **Main Label Text** to match the name of the button</span></span>
-* <span data-ttu-id="b542f-156">**Indicator** 개체를 **없음(개체)** 필드에 할당합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-156">Assign the **Indicator** object to the **None (Object)** field</span></span>
-* <span data-ttu-id="b542f-157">**함수 없음** 드롭다운에서 **GameObject** > **SetActive(부울)** 를 차례로 선택하여 이 함수를 이벤트가 트리거될 때 실행할 작업으로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-157">From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set this function as the action to be executed when the event is triggered</span></span>
-* <span data-ttu-id="b542f-158">인수 확인란이 **선택되어** 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-158">Verify that the argument checkbox is **checked**</span></span>
-* <span data-ttu-id="b542f-159">**아이콘** 을 '검색' 아이콘으로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-159">Change the **Icon** to the 'search' icon</span></span>
+* <span data-ttu-id="bad25-155">**기본 레이블 텍스트** 를 단추 이름과 일치하도록 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-155">Change the **Main Label Text** to match the name of the button</span></span>
+* <span data-ttu-id="bad25-156">갈매기형 Indicator 개체를 None (Object)(없음(개체)) 필드에 할당합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-156">Assign the Indicator object that looks like a chevron, to the None (Object) field</span></span>
+* <span data-ttu-id="bad25-157">**함수 없음** 드롭다운에서 **GameObject** > **SetActive(부울)** 를 차례로 선택하여 이 함수를 이벤트가 트리거될 때 실행할 작업으로 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-157">From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set this function as the action to be executed when the event is triggered</span></span>
+* <span data-ttu-id="bad25-158">인수 확인란이 **선택되어** 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-158">Verify that the argument checkbox is **checked**</span></span>
+* <span data-ttu-id="bad25-159">**아이콘** 을 '검색' 아이콘으로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-159">Change the **Icon** to the 'search' icon</span></span>
 
 ![Indicator 단추 개체 Button Config Helper가 구성된 Unity](images/mr-learning-base/base-06-section2-step1-3.png)
 
-<span data-ttu-id="b542f-161">[계층 구조] 창에서 **표시기** 개체를 선택한 다음, [검사기] 창에서 다음을 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-161">In the Hierarchy window, select the **Indicator** object, then in the Inspector window:</span></span>
+<span data-ttu-id="bad25-161">갈매기형 Indicator 개체를 사용하지 않으려면 Hierarchy(계층 구조) 창에서 갈매기형 Indicator 개체를 선택한 다음, Inspector(검사기) 창에서 다음을 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-161">To disable the chevron Indicator object, in the Hierarchy window, select the Indicator object that looks like chevron, then in the Inspector window:</span></span>
 
-* <span data-ttu-id="b542f-162">이름 옆에 있는 확인란을 선택 취소하여 기본적으로 비활성화합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-162">Uncheck the checkbox next to its name to make it inactive by default</span></span>
-* <span data-ttu-id="b542f-163">**구성 요소 추가** 단추를 사용하여 **Directional Indicator Controller(스크립트)** 구성 요소를 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-163">Use the **Add Component** button to add the **Directional Indicator Controller (Script)** component</span></span>
+* <span data-ttu-id="bad25-162">이름 옆에 있는 확인란을 선택 취소하여 기본적으로 비활성화합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-162">Uncheck the checkbox next to its name to make it inactive by default</span></span>
+* <span data-ttu-id="bad25-163">**구성 요소 추가** 단추를 사용하여 **Directional Indicator Controller(스크립트)** 구성 요소를 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-163">Use the **Add Component** button to add the **Directional Indicator Controller (Script)** component</span></span>
 
 ![Indicator 개체가 선택되어 사용하지 않도록 설정되고 DirectionalIndicatorController 구성 요소가 추가된 Unity](images/mr-learning-base/base-06-section2-step1-4.png)
 
 > [!NOTE]
-> <span data-ttu-id="b542f-165">이제 앱이 시작되면 Indicator가 기본적으로 사용하지 않도록 설정되며, Indicator 단추를 눌러 사용하도록 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-165">Now, when the app starts, the Indicator is disabled by default and can be enabled by pressing the Indicator button.</span></span>
+> <span data-ttu-id="bad25-165">이제 앱이 시작되면 갈매기형 Indicator(검사기)가 기본적으로 사용하지 않도록 설정되며, Indicator(검사기) 단추를 눌러 사용하도록 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-165">Now, when the app starts, the chevron Indicator is disabled by default and can be enabled by pressing the Indicator button.</span></span>
 
-<span data-ttu-id="b542f-166">두 번째 단추의 이름을 **TapToPlace** 로 바꾼 다음, [검사기] 창에서 **단추 구성 도우미(스크립트)** 구성 요소를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-166">Rename the second button to **TapToPlace**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:</span></span>
+<span data-ttu-id="bad25-166">두 번째 단추의 이름을 **TapToPlace** 로 바꾼 다음, [검사기] 창에서 **단추 구성 도우미(스크립트)** 구성 요소를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-166">Rename the second button to **TapToPlace**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:</span></span>
 
-* <span data-ttu-id="b542f-167">**기본 레이블 텍스트** 를 단추 이름과 일치하도록 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-167">Change the **Main Label Text** to match the name of the button</span></span>
-* <span data-ttu-id="b542f-168">RoverExplorer > **RoverAssembly** 개체를 **없음(개체)** 필드에 할당합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-168">Assign the RoverExplorer > **RoverAssembly** object to the **None (Object)** field</span></span>
-* <span data-ttu-id="b542f-169">**함수 없음** 드롭다운에서 **TapToPlace** > **부울 사용** 을 차례로 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-169">From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update this property value when the event is triggered</span></span>
-* <span data-ttu-id="b542f-170">인수 확인란이 **선택되어** 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-170">Verify that the argument checkbox is **checked**</span></span>
-* <span data-ttu-id="b542f-171">**아이콘** 을 '광선이 있는 손' 아이콘으로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-171">Change the **Icon** to the 'hand with ray' icon</span></span>
+* <span data-ttu-id="bad25-167">**기본 레이블 텍스트** 를 단추 이름과 일치하도록 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-167">Change the **Main Label Text** to match the name of the button</span></span>
+* <span data-ttu-id="bad25-168">RoverExplorer > **RoverAssembly** 개체를 **없음(개체)** 필드에 할당합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-168">Assign the RoverExplorer > **RoverAssembly** object to the **None (Object)** field</span></span>
+* <span data-ttu-id="bad25-169">**함수 없음** 드롭다운에서 **TapToPlace** > **부울 사용** 을 차례로 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-169">From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update this property value when the event is triggered</span></span>
+* <span data-ttu-id="bad25-170">인수 확인란이 **선택되어** 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-170">Verify that the argument checkbox is **checked**</span></span>
+* <span data-ttu-id="bad25-171">**아이콘** 을 '광선이 있는 손' 아이콘으로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-171">Change the **Icon** to the 'hand with ray' icon</span></span>
 
 ![TapToPlace 단추 개체 Button Config Helper가 구성된 Unity](images/mr-learning-base/base-06-section2-step1-5.png)
 
-<span data-ttu-id="b542f-173">[계층 구조] 창에서 **RoverAssembly** 개체를 선택한 다음, [검사기] 창에서 다음과 같이 **탭하여 위치 지정(스크립트)** 구성 요소를 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-173">In the Hierarchy window, select the **RoverAssembly** object, then in the Inspector window, configure the **Tap To Place (Script)** component as follows:</span></span>
+<span data-ttu-id="bad25-173">[계층 구조] 창에서 **RoverAssembly** 개체를 선택한 다음, [검사기] 창에서 다음과 같이 **탭하여 위치 지정(스크립트)** 구성 요소를 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-173">In the Hierarchy window, select the **RoverAssembly** object, then in the Inspector window, configure the **Tap To Place (Script)** component as follows:</span></span>
 
-* <span data-ttu-id="b542f-174">이름 옆에 있는 확인란을 선택 취소하여 기본적으로 비활성화합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-174">Uncheck the checkbox next to its name to make it inactive by default</span></span>
-* <span data-ttu-id="b542f-175">**On Placing Stopped ()** 이벤트 섹션에서 **+** 아이콘을 클릭하여 새 이벤트를 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-175">In the **On Placing Stopped ()** event section, click the **+** icon to add a new event:</span></span>
-* <span data-ttu-id="b542f-176">RoverExplorer > **RoverAssembly** 개체를 **없음(개체)** 필드에 할당합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-176">Assign the RoverExplorer > **RoverAssembly** object to the **None (Object)** field</span></span>
-* <span data-ttu-id="b542f-177">**함수 없음** 드롭다운에서 **TapToPlace** > **부울 사용** 을 차례로 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-177">From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update this property value when the event is triggered</span></span>
-* <span data-ttu-id="b542f-178">인수 확인란이 **선택 취소되어** 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-178">Verify that the argument checkbox is **unchecked**</span></span>
+* <span data-ttu-id="bad25-174">이름 옆에 있는 확인란을 선택 취소하여 기본적으로 비활성화합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-174">Uncheck the checkbox next to its name to make it inactive by default</span></span>
+* <span data-ttu-id="bad25-175">**On Placing Stopped ()** 이벤트 섹션에서 **+** 아이콘을 클릭하여 새 이벤트를 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-175">In the **On Placing Stopped ()** event section, click the **+** icon to add a new event:</span></span>
+* <span data-ttu-id="bad25-176">RoverExplorer > **RoverAssembly** 개체를 **없음(개체)** 필드에 할당합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-176">Assign the RoverExplorer > **RoverAssembly** object to the **None (Object)** field</span></span>
+* <span data-ttu-id="bad25-177">**함수 없음** 드롭다운에서 **TapToPlace** > **부울 사용** 을 차례로 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-177">From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update this property value when the event is triggered</span></span>
+* <span data-ttu-id="bad25-178">인수 확인란이 **선택 취소되어** 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-178">Verify that the argument checkbox is **unchecked**</span></span>
 
 ![TapToPlace 구성 요소가 다시 구성된 Unity](images/mr-learning-base/base-06-section2-step1-6.png)
 
 > [!NOTE]
-> <span data-ttu-id="b542f-180">이제 앱이 시작되면 Tap to Place(탭하여 위치 지정) 기능이 기본적으로 사용하지 않도록 설정되며, Tap to Place 단추를 눌러 사용하도록 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-180">Now, when the app starts, the Tap to Place functionality is disabled by default and can be enabled by pressing the Tap to Place button.</span></span> <span data-ttu-id="b542f-181">또한 탭하여 위치 지정이 완료되면 자체적으로 사용하지 않도록 설정됩니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-181">Additionally, when the tap to place is completed, it will disable itself.</span></span>
+> <span data-ttu-id="bad25-180">이제 앱이 시작되면 Tap to Place(탭하여 위치 지정) 기능이 기본적으로 사용하지 않도록 설정되며, Tap to Place 단추를 눌러 사용하도록 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-180">Now, when the app starts, the Tap to Place functionality is disabled by default and can be enabled by pressing the Tap to Place button.</span></span> <span data-ttu-id="bad25-181">또한 탭하여 위치 지정이 완료되면 자체적으로 사용하지 않도록 설정됩니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-181">Additionally, when the tap to place is completed, it will disable itself.</span></span>
 
-## <a name="adding-text-to-the-scene"></a><span data-ttu-id="b542f-182">장면에 텍스트 추가</span><span class="sxs-lookup"><span data-stu-id="b542f-182">Adding text to the scene</span></span>
+## <a name="adding-text-to-the-scene"></a><span data-ttu-id="bad25-182">장면에 텍스트 추가</span><span class="sxs-lookup"><span data-stu-id="bad25-182">Adding text to the scene</span></span>
 
-<span data-ttu-id="b542f-183">[계층 구조] 창에서 마우스 오른쪽 단추로 **Table** 개체를 클릭하고, **3D 개체** > **텍스트 - TextMeshPro** 를 차례로 선택하여 텍스트 개체를 Table 개체의 자식으로 추가한 다음, [검사기] 창에서 **사각형 변환** 구성 요소를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-183">In the Hierarchy window, right-click on the **Table** object and select **3D Object** > **Text - TextMeshPro** to add a text object as a child of the Table object, then in the Inspector window, configure the **Rect Transform** component as follows:</span></span>
+<span data-ttu-id="bad25-183">[계층 구조] 창에서 마우스 오른쪽 단추로 **Table** 개체를 클릭하고, **3D 개체** > **텍스트 - TextMeshPro** 를 차례로 선택하여 텍스트 개체를 Table 개체의 자식으로 추가한 다음, [검사기] 창에서 **사각형 변환** 구성 요소를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-183">In the Hierarchy window, right-click on the **Table** object and select **3D Object** > **Text - TextMeshPro** to add a text object as a child of the Table object, then in the Inspector window, configure the **Rect Transform** component as follows:</span></span>
 
-* <span data-ttu-id="b542f-184">**세로 위치** 를 1로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-184">Change **Pos Y** to 1</span></span>
-* <span data-ttu-id="b542f-185">**너비** 를 1로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-185">Change **Width** to 1</span></span>
-* <span data-ttu-id="b542f-186">**높이** 를 1로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-186">Change **Height** to 1</span></span>
-* <span data-ttu-id="b542f-187">**회전 X** 를 90으로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-187">Change **Rotation X** to 90</span></span>
+* <span data-ttu-id="bad25-184">**세로 위치** 를 1로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-184">Change **Pos Y** to 1</span></span>
+* <span data-ttu-id="bad25-185">**너비** 를 1로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-185">Change **Width** to 1</span></span>
+* <span data-ttu-id="bad25-186">**높이** 를 1로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-186">Change **Height** to 1</span></span>
+* <span data-ttu-id="bad25-187">**회전 X** 를 90으로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-187">Change **Rotation X** to 90</span></span>
 
 ![새로 만든 TextMeshPro 개체가 선택된 Unity](images/mr-learning-base/base-06-section3-step1-1.png)
 
-<span data-ttu-id="b542f-189">그런 다음, **TextMeshPro - 텍스트** 구성 요소를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-189">Then configure the **TextMeshPro - Text** component as follows::</span></span>
+<span data-ttu-id="bad25-189">그런 다음, **TextMeshPro - 텍스트** 구성 요소를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-189">Then configure the **TextMeshPro - Text** component as follows::</span></span>
 
-* <span data-ttu-id="b542f-190">**텍스트** 를 Rover Explorer로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-190">Change **Text** to Rover Explorer</span></span>
-* <span data-ttu-id="b542f-191">**글꼴 스타일** 을 [굵게]로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-191">Change **Font Style** to Bold</span></span>
-* <span data-ttu-id="b542f-192">**글꼴 크기** 를 1로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-192">Change **Font Size** to 1</span></span>
-* <span data-ttu-id="b542f-193">추가 설정 > **여백** 을 0.03으로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-193">Change Extra Settings > **Margins** to 0.03</span></span>
+* <span data-ttu-id="bad25-190">**텍스트** 를 Rover Explorer로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-190">Change **Text** to Rover Explorer</span></span>
+* <span data-ttu-id="bad25-191">**글꼴 스타일** 을 [굵게]로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-191">Change **Font Style** to Bold</span></span>
+* <span data-ttu-id="bad25-192">**글꼴 크기** 를 1로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-192">Change **Font Size** to 1</span></span>
+* <span data-ttu-id="bad25-193">추가 설정 > **여백** 을 0.03으로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-193">Change Extra Settings > **Margins** to 0.03</span></span>
 
 ![TextMeshPro 구성 요소가 구성된 Unity](images/mr-learning-base/base-06-section3-step1-2.png)
 
-## <a name="adding-tooltips"></a><span data-ttu-id="b542f-195">도구 설명 추가</span><span class="sxs-lookup"><span data-stu-id="b542f-195">Adding tooltips</span></span>
+## <a name="adding-tooltips"></a><span data-ttu-id="bad25-195">도구 설명 추가</span><span class="sxs-lookup"><span data-stu-id="bad25-195">Adding tooltips</span></span>
 
-<span data-ttu-id="b542f-196">[프로젝트] 창에서 **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** 폴더로 차례로 이동하여 도구 설명 프리팹을 찾습니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-196">In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:</span></span>
+<span data-ttu-id="bad25-196">[프로젝트] 창에서 **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** 폴더로 차례로 이동하여 도구 설명 프리팹을 찾습니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-196">In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:</span></span>
 
 ![ToolTips 폴더가 선택된 Unity 프로젝트 창](images/mr-learning-base/base-06-section4-step1-1.png)
 
-<span data-ttu-id="b542f-198">[계층 구조] 창에서 RoverExplorer > **RoverParts** 개체를 차례로 펼치고, 해당 자식 로버 부품 개체를 모두 선택한 다음, [검사기] 창에서 **구성 요소 추가** 단추를 사용하여 **ToolTipSpawner** 구성 요소를 추가하고 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-198">In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and select all its child rover part objects, then in the Inspector window, use the **Add Component** button to add the **ToolTipSpawner** component and configure it as follows:</span></span>
+<span data-ttu-id="bad25-198">[계층 구조] 창에서 RoverExplorer > **RoverParts** 개체를 차례로 펼치고, 해당 자식 로버 부품 개체를 모두 선택한 다음, [검사기] 창에서 **구성 요소 추가** 단추를 사용하여 **ToolTipSpawner** 구성 요소를 추가하고 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-198">In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and select all its child rover part objects, then in the Inspector window, use the **Add Component** button to add the **ToolTipSpawner** component and configure it as follows:</span></span>
 
-* <span data-ttu-id="b542f-199">사용자가 도구 설명이 표시되는 부품을 살펴볼 수 있도록 하려면 **포커스 사용** 확인란이 선택되어 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-199">Ensure the **Focus Enabled** checkbox is checked to require the user to look at the part for the tooltip to appear</span></span>
-* <span data-ttu-id="b542f-200">[프로젝트] 창에서 **한 줄 도구 설명** 프리팹을 **도구 설명 프리팹** 필드에 할당합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-200">Assign the **Simple Line ToolTip** prefab from the Project window to the **Tool Tip Prefab** field</span></span>
-* <span data-ttu-id="b542f-201">도구 설명 재정의 설정 > **설정 모드** 를 **재정의** 로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-201">Change the ToolTip Override Settings > **Settings Mode** to **Override**</span></span>
-* <span data-ttu-id="b542f-202">도구 설명 재정의 설정 > **수동 피벗 로컬 위치 Y** 를 **1.5** 로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-202">Change the ToolTip Override Settings > **Manual Pivot Local Position Y** to **1.5**</span></span>
+* <span data-ttu-id="bad25-199">사용자가 도구 설명이 표시되는 부품을 살펴볼 수 있도록 하려면 **포커스 사용** 확인란이 선택되어 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-199">Ensure the **Focus Enabled** checkbox is checked to require the user to look at the part for the tooltip to appear</span></span>
+* <span data-ttu-id="bad25-200">프로젝트 창에서 **Simple Line ToolTip(한 줄 도구 설명)** 프리팹을 **Prefab(프리팹)** 필드에 할당합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-200">Assign the **Simple Line ToolTip** prefab from the Project window to the **Prefab** field</span></span>
+* <span data-ttu-id="bad25-201">도구 설명 재정의 설정 > **설정 모드** 를 **재정의** 로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-201">Change the ToolTip Override Settings > **Settings Mode** to **Override**</span></span>
+* <span data-ttu-id="bad25-202">도구 설명 재정의 설정 > **수동 피벗 로컬 위치 Y** 를 **1.5** 로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-202">Change the ToolTip Override Settings > **Manual Pivot Local Position Y** to **1.5**</span></span>
 
 ![모든 로버 부품 개체가 선택되고 ToolTipSpawner 구성 요소가 추가되고 구성된 Unity](images/mr-learning-base/base-06-section4-step1-2.png)
 
-<span data-ttu-id="b542f-204">[계층 구조] 창에서 첫 번째 로버 부품인 RoverParts > **Camera_Part** 를 차례로 선택하고, **ToolTipSpawner** 구성 요소를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-204">In the Hierarchy window, select the first rover part, RoverParts > **Camera_Part**, and configure the **ToolTipSpawner** component as follows:</span></span>
+<span data-ttu-id="bad25-204">[계층 구조] 창에서 첫 번째 로버 부품인 RoverParts > **Camera_Part** 를 차례로 선택하고, **ToolTipSpawner** 구성 요소를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-204">In the Hierarchy window, select the first rover part, RoverParts > **Camera_Part**, and configure the **ToolTipSpawner** component as follows:</span></span>
 
-* <span data-ttu-id="b542f-205">부품 이름(예: **Camera**)을 반영하도록 **도구 설명 텍스트** 를 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-205">Change **Tool Tip Text** to reflect the name of the part, i.e., **Camera**</span></span>
+* <span data-ttu-id="bad25-205">부품 이름(예: **Camera**)을 반영하도록 **도구 설명 텍스트** 를 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-205">Change **Tool Tip Text** to reflect the name of the part, i.e., **Camera**</span></span>
 
 ![Camera ToolTipText가 구성된 Unity](images/mr-learning-base/base-06-section4-step1-3.png)
 
-<span data-ttu-id="b542f-207">각 로버 부품 개체에 대해 이 단계를 **반복** 하여 **ToolTipSpawner** 구성 요소를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-207">**Repeat** this step for each of the rover part objects to configure the **ToolTipSpawner** component as follows:</span></span>
+<span data-ttu-id="bad25-207">각 로버 부품 개체에 대해 이 단계를 **반복** 하여 **ToolTipSpawner** 구성 요소를 다음과 같이 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-207">**Repeat** this step for each of the rover part objects to configure the **ToolTipSpawner** component as follows:</span></span>
 
-* <span data-ttu-id="b542f-208">**Generator_Part** 에 대한 **도구 설명 텍스트** 를 **발전기** 로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-208">For the **Generator_Part**, change the **Tool Tip Text** to **Generator**</span></span>
-* <span data-ttu-id="b542f-209">**Lights_Part** 에 대한 **도구 설명 텍스트** 를 **조명** 으로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-209">For the **Lights_Part**, change the **Tool Tip Text** to **Lights**</span></span>
-* <span data-ttu-id="b542f-210">**UHFAntenna_Part** 에 대한 **도구 설명 텍스트** 를 **UHF 안테나** 필드로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-210">For the **UHFAntenna_Part**, change the **Tool Tip Text** to **UHF Antenna** field</span></span>
-* <span data-ttu-id="b542f-211">**Spectrometer_Part** 에 대한 **도구 설명 텍스트** 를 **분광계** 로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-211">For the **Spectrometer_Part**, change the **Tool Tip Text** to **Spectrometer**</span></span>
+* <span data-ttu-id="bad25-208">**Generator_Part** 에 대한 **도구 설명 텍스트** 를 **발전기** 로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-208">For the **Generator_Part**, change the **Tool Tip Text** to **Generator**</span></span>
+* <span data-ttu-id="bad25-209">**Lights_Part** 에 대한 **도구 설명 텍스트** 를 **조명** 으로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-209">For the **Lights_Part**, change the **Tool Tip Text** to **Lights**</span></span>
+* <span data-ttu-id="bad25-210">**UHFAntenna_Part** 에 대한 **도구 설명 텍스트** 를 **UHF 안테나** 필드로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-210">For the **UHFAntenna_Part**, change the **Tool Tip Text** to **UHF Antenna** field</span></span>
+* <span data-ttu-id="bad25-211">**Spectrometer_Part** 에 대한 **도구 설명 텍스트** 를 **분광계** 로 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-211">For the **Spectrometer_Part**, change the **Tool Tip Text** to **Spectrometer**</span></span>
 
-<span data-ttu-id="b542f-212">[재생] 단추를 눌러 게임 모드를 시작한 다음, 시선이 부품 중 하나에 적중하여 해당 부품에 대한 도구 설명이 표시될 때까지 마우스 오른쪽 단추를 누른 채 마우스를 움직입니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-212">Press the Play button to enter Game mode, then press-and-hold the right mouse button while moving your mouse until the gaze hit's one of the parts and the tooltip for that part will be displayed:</span></span>
+<span data-ttu-id="bad25-212">[재생] 단추를 눌러 게임 모드를 시작한 다음, 시선이 부품 중 하나에 적중하여 해당 부품에 대한 도구 설명이 표시될 때까지 마우스 오른쪽 단추를 누른 채 마우스를 움직입니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-212">Press the Play button to enter Game mode, then press-and-hold the right mouse button while moving your mouse until the gaze hit's one of the parts and the tooltip for that part will be displayed:</span></span>
 
 ![응시로 트리거된 도구 설명이 있는 Unity 재생 모드 분할 보기](images/mr-learning-base/base-06-section4-step1-4.png)
 
-## <a name="congratulations"></a><span data-ttu-id="b542f-214">축하합니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-214">Congratulations</span></span>
+## <a name="congratulations"></a><span data-ttu-id="bad25-214">축하합니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-214">Congratulations</span></span>
 
-<span data-ttu-id="b542f-215">이 자습서에서는 Unity의 TextMeshPro 구성 요소와 함께 MRTK에서 제공하는 단추 및 메뉴 프리팹을 사용하여 간단한 사용자 인터페이스를 만드는 방법 및 눌렀을 때 이벤트를 트리거하도록 단추를 구성하는 방법을 알아보았습니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-215">In this tutorial, you learned how to create a simple user interface using MRTK's provided button and menu prefabs alongside Unity's TextMeshPro component and how to configure the buttons to trigger events when they are pressed.</span></span> <span data-ttu-id="b542f-216">또한 동적 도구 설명 UI 요소를 추가하여 사용자에게 추가 정보를 제공하는 방법도 알아보았습니다.</span><span class="sxs-lookup"><span data-stu-id="b542f-216">You also learned how to add dynamic tooltip UI elements to provide the user with additional information.</span></span>
+<span data-ttu-id="bad25-215">이 자습서에서는 Unity의 TextMeshPro 구성 요소와 함께 MRTK에서 제공하는 단추 및 메뉴 프리팹을 사용하여 간단한 사용자 인터페이스를 만드는 방법 및 눌렀을 때 이벤트를 트리거하도록 단추를 구성하는 방법을 알아보았습니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-215">In this tutorial, you learned how to create a simple user interface using MRTK's provided button and menu prefabs alongside Unity's TextMeshPro component and how to configure the buttons to trigger events when they are pressed.</span></span> <span data-ttu-id="bad25-216">또한 동적 도구 설명 UI 요소를 추가하여 사용자에게 추가 정보를 제공하는 방법도 알아보았습니다.</span><span class="sxs-lookup"><span data-stu-id="bad25-216">You also learned how to add dynamic tooltip UI elements to provide the user with additional information.</span></span>
 
-[<span data-ttu-id="b542f-217">다음 자습서: 7. 3D 개체와 상호 작용</span><span class="sxs-lookup"><span data-stu-id="b542f-217">Next Tutorial: 7. Interacting with 3D objects</span></span>](mr-learning-base-07.md)
+> [!div class="nextstepaction"]
+>[<span data-ttu-id="bad25-217">다음 자습서: 7. 3D 개체와 상호 작용</span><span class="sxs-lookup"><span data-stu-id="bad25-217">Next Tutorial: 7. Interacting with 3D objects</span></span>](mr-learning-base-07.md)
