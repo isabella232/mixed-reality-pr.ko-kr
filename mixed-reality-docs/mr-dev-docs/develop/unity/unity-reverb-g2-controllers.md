@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/14/2020
 ms.topic: article
 keywords: Unity, 반향, 반향 G2, HP 반향 G2, 혼합 현실, 개발, 동작 컨트롤러, 사용자 입력, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, holograms, 게임 개발
-ms.openlocfilehash: fa9b80076d65978ae1602fc4f9519d7e11c651b5
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 26435ef57c9baf59b1008fb4750aedd913a19814
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583575"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421399"
 ---
 # <a name="hp-reverb-g2-controllers-in-unity"></a>Unity의 HP 반향 G2 컨트롤러
 
@@ -31,38 +31,11 @@ HP 모션 컨트롤러는 새로운 유형의 Windows Mixed Reality 컨트롤러
 
 *InteractionManager* events를 사용 하 여 새 *InteractionSource* 인스턴스를 검색 하는 것과 마찬가지로 *motioncontroller감시자* 를 만들고 해당 이벤트를 구독 하 여 motioncontroller 인스턴스를 사용할 수 있습니다. MotionController의 메서드 및 속성은 해당 단추, 트리거, 2D 축 및 엄지 스틱을 포함 하 여 컨트롤러에서 지원 되는 입력을 설명 합니다. 또한 MotionController 클래스는 *Motioncontroller판독값* 클래스를 통해 입력 상태에 액세스 하는 메서드를 노출 합니다. MotionControllerReading 클래스는 지정 된 시간에 컨트롤러 상태의 스냅숏을 나타냅니다. 
 
-## <a name="installing-microsoftmixedrealityinput-using-the-unity-package-manager"></a>Unity 패키지 관리자를 사용 하 여 MixedReality 설치 
+## <a name="installing-microsoftmixedrealityinput-with-the-mixed-reality-feature-tool"></a>Mixed Reality 기능 도구를 사용 하 여 MixedReality 설치
 
-Unity 패키지 관리자는 [매니페스트 파일](https://docs.unity3d.com/Manual/upm-manifestPkg.html) (manifest.js)을 사용 하 여 설치할 패키지와 설치할 수 있는 레지스트리 (서버)를 결정 합니다. MixedReality 패키지를 사용 하려면 먼저 혼합 현실 구성 요소 서버를 등록 해야 합니다.
+새 Mixed Reality 기능 도구 응용 프로그램을 사용 하 여 MixedReality 플러그 인을 설치 합니다. [설치 및 사용 지침](welcome-to-mr-feature-tool.md) 을 따르고 Mixed Reality 도구 키트 범주의 **혼합 현실 입력** 패키지를 선택 합니다.
 
-### <a name="registering-the-mixed-reality-component-server"></a>Mixed Reality 구성 요소 서버 등록 
-
-혼합 현실 입력 패키지를 사용 하는 각 프로젝트에 대해 패키지 폴더에 있는 파일의 manifest.js에는 혼합 현실 범위 레지스트리가 추가 되어야 합니다. 혼합 현실 지원에 대 한 manifest.js를 적절히 수정 하려면: 
-    1. <projectRoot>Visual Studio Code와 같은 텍스트 편집기에서/Packages/manifest.js를 엽니다. 
-    2. 매니페스트 파일의 맨 위에서 혼합 현실 서버를 범위가 지정 된 레지스트리 섹션에 추가 하 고 파일을 저장 합니다. 
-    
-<pre>
-{ 
-  "scopedRegistries": [ 
-    { 
-      "name": "Microsoft Mixed Reality", 
-      "url": "https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/", 
-      "scopes": [ 
-        "com.microsoft.mixedreality" 
-      ] 
-    } 
-  ], 
-</pre>
-
-### <a name="adding-the-microsoftmixedrealityinput-package"></a>MixedReality 패키지 추가 
-
-<projectRoot>텍스트 편집기에서 파일의/Packages/manifest.js종속성 섹션을 수정 하 여 mixedreality 패키지를 추가 하 고 파일을 저장 합니다. 
-
-<pre>
-  "dependencies": { 
-    "com.microsoft.mixedreality.input": "0.9.2006", 
-  }
-</pre>
+![혼합 현실 기능이 강조 표시 된 혼합 현실 기능 도구 패키지 창](images/feature-tool-mrinput.png)
 
 ## <a name="using-microsoftmixedrealityinput"></a>MixedReality 사용 
 
