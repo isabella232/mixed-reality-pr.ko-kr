@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 개발, 개발, HoloLens, 클라우드 서비스, Azure, remote rendering, spatial anchors, cognitive services, 인식, unity, 기계 학습, 음성 번역, 컴퓨터 비전, Microsoft Graph
-ms.openlocfilehash: 725e41e94923f1738eb11064c772f9138a6be09a
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: e4ddfd5951945cc6a5bc9d7b71cad86a296fe725
+ms.sourcegitcommit: cd2987467044fde1e2eb227e6c25d00e744aabfc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582702"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98923807"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 혼합 현실 클라우드 서비스 개요
 
@@ -26,7 +26,10 @@ ms.locfileid: "98582702"
 **Azure Remote Rendering** 및 **Azure Spatial Anchors** 와 같은 Mixed Reality 클라우드 서비스는 개발자가 다양한 플랫폼에서 매력적인 몰입형 경험을 빌드할 수 있도록 도와줍니다. 이러한 서비스를 사용하면 사용자 환경의 컨텍스트에서 3D 학습, 예측 장비 유지 관리 및 디자인 검토를 위한 애플리케이션을 만들 때 공간 인식을 프로젝트에 통합할 수 있습니다.
 
 ### <a name="azure-remote-rendering"></a>Azure Remote Rendering
-ARR(Azure Remote Rendering)은 매우 복잡한 3D 모델을 실시간으로 렌더링하고 디바이스로 스트리밍할 수 있는 서비스입니다. ARR은 현재 공개 미리 보기 상태이며, HoloLens 2 또는 Windows 데스크톱 PC를 대상으로 하는 Unity 또는 네이티브 C++ 프로젝트에 추가할 수 있습니다.
+
+[ARR(Azure Remote Rendering)](https://docs.microsoft.com/azure/remote-rendering/)은 매우 복잡한 3D 모델을 실시간으로 렌더링하고 디바이스로 스트리밍할 수 있는 서비스입니다. ARR은 현재 공개 미리 보기 상태이며, HoloLens 2 또는 Windows 데스크톱 PC를 대상으로 하는 Unity 또는 네이티브 C++ 프로젝트에 추가할 수 있습니다.
+
+<br>
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-Azure-Mixed-Reality-Services-Azure-Remote-Rendering/player]
 
@@ -43,7 +46,8 @@ ARR은 렌더링 워크로드를 클라우드의 고급 GPU로 이동하여 이 
 ![Unity 쇼케이스 앱에서 Azure Remote Rendering의 예](images/showcase-app.png)
 
 ### <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
-ASA(Azure Spatial Anchors)는 공간 인식 혼합 현실 애플리케이션을 빌드할 수 있는 플랫폼 간 서비스입니다. Azure Spatial Anchors를 사용하면 여러 디바이스에서 홀로그램 콘텐츠를 현실 세계 규모로 매핑, 유지 및 공유할 수 있습니다. 
+
+[ASA(Azure Spatial Anchors)](https://docs.microsoft.com /azure/spatial-anchors/)는 공간 인식 혼합 현실 애플리케이션을 빌드할 수 있는 플랫폼 간 서비스입니다. Azure Spatial Anchors를 사용하면 여러 디바이스에서 홀로그램 콘텐츠를 현실 세계 규모로 매핑, 유지 및 공유할 수 있습니다. 
 
 ASA는 다음을 포함하여 Mixed Reality의 일반적인 사용 사례를 위한 고유한 맞춤형 솔루션입니다.
 * **경로 찾기**: 둘 이상의 공간 앵커를 연결하여 사용자가 상호 작용해야 하는 작업 목록 또는 관심 지점을 만들 수 있습니다.
