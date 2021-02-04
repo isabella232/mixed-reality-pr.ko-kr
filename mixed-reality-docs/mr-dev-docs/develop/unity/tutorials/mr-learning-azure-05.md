@@ -7,16 +7,16 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, hololens 2, azure bot service, luis, 자연어, 대화 봇, azure cloud services, azure custom vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 7119dfd54c2b5384ff0e219a494ca8423fe4ebfc
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 10386bf75f9f3d0c9669ad37195188220a1dcb75
+ms.sourcegitcommit: daa45a19a3a353334380cda78fee7fa149f0e48b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583380"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98981802"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5. Azure Bot Service 통합
 
-이 자습서에서는 **HoloLens 2** 데모 애플리케이션에서 **Azure Bot Service** 를 사용하여 LUIS(Language Understanding)를 추가하고 **추적된 개체** 를 검색할 때 봇에서 사용자를 지원할 수 있도록 하는 방법에 대해 알아봅니다. 이 자습서는 2부로 구성되어 있습니다. 1부에서는 [봇 작성기](/composer/introduction)를 코드프리 솔루션으로 사용하여 봇을 만들고, 필요한 데이터를 봇에 공급하는 Azure Function을 간략히 살펴봅니다. 2부에서는 Unity 프로젝트에서 **BotManager(스크립트)** 를 통해 호스팅된 Bot Service를 사용합니다.
+이 자습서에서는 **HoloLens 2** 데모 애플리케이션에서 **Azure Bot Service** 를 사용하여 LUIS(Language Understanding)를 추가하고 **추적된 개체** 를 검색할 때 봇에서 사용자를 지원할 수 있도록 하는 방법에 대해 알아봅니다. 이 자습서는 2부로 구성되어 있습니다. 1부에서는 [봇 작성기](https://docs.microsoft.com/composer/introduction)를 코드프리 솔루션으로 사용하여 봇을 만들고, 필요한 데이터를 봇에 공급하는 Azure Function을 간략히 살펴봅니다. 2부에서는 Unity 프로젝트에서 **BotManager(스크립트)** 를 통해 호스팅된 Bot Service를 사용합니다.
 
 ## <a name="objectives"></a>목표
 
@@ -33,9 +33,9 @@ ms.locfileid: "98583380"
 
 ## <a name="understanding-azure-bot-service"></a>Azure Bot Service 이해
 
-**Azure Bot Service** 를 사용하면 개발자가 **LUIS** 를 통해 사용자와 자연스러운 대화를 유지할 수 있는 인텔리전트 봇을 만들 수 있습니다. 대화형 봇은 사용자가 애플리케이션과 상호 작용할 수 있는 방법을 확장할 수 있는 좋은 방법입니다. 봇은 [LUIS(Language Understanding)](/azure/bot-service/bot-builder-howto-v4-luis?preserve-view=true&tabs=csharp&view=azure-bot-service-4.0) 기능과 정교한 대화를 유지하기 위해 [QnA Maker](/azure/bot-service/bot-builder-howto-qna?preserve-view=true&tabs=cs&view=azure-bot-service-4.0)와 함께 기술 자료 역할을 수행할 수 있습니다.
+**Azure Bot Service** 를 사용하면 개발자가 **LUIS** 를 통해 사용자와 자연스러운 대화를 유지할 수 있는 인텔리전트 봇을 만들 수 있습니다. 대화형 봇은 사용자가 애플리케이션과 상호 작용할 수 있는 방법을 확장할 수 있는 좋은 방법입니다. 봇은 [LUIS(Language Understanding)](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true) 기능과 정교한 대화를 유지하기 위해 [QnA Maker](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&tabs=cs&preserve-view=true)와 함께 기술 자료 역할을 수행할 수 있습니다.
 
-[Azure Bot Service](/azure/bot-service/bot-service-overview-introduction?preserve-view=true&view=azure-bot-service-4.0)에 대해 자세히 알아보세요.
+[Azure Bot Service](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0&preserve-view=true)에 대해 자세히 알아보세요.
 
 ## <a name="part-1---creating-the-bot"></a>1부 - 봇 만들기
 
@@ -50,18 +50,50 @@ Unity 애플리케이션에서 봇을 사용하려면 먼저 봇을 개발하여
 
 이 Azure Function에는 기본 *HTTP* *GET* 호출을 통해 호출할 수 있는 **Count** 및 **Find** 의 두 가지 작업이 있습니다. 코드는 **Visual Studio** 에서 검사할 수 있습니다.
 
-[Azure Functions](/azure/azure-functions/functions-overview)에 대해 자세히 알아보세요.
+[Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview)에 대해 자세히 알아보세요.
 
 **Count** 함수는 **Table 스토리지** 에서 테이블의 모든 **TrackedObjects** 를 매우 간단하게 쿼리합니다. 반면 **Find** 함수는 *GET* 요청에서 *name* 쿼리 매개 변수를 사용하고, 일치하는 **TrackedObject** 를 **Table 스토리지** 에 쿼리하고, DTO를 JSON으로 반환합니다.
 
-이 **Azure Function** 은 **Visual Studio** 에서 직접 배포할 수 있습니다.
-[Azure Function 배포](/azure/devops/pipelines/targets/azure-functions?preserve-view=true&tabs=dotnet-core%2cyaml&view=azure-devops)에서 모든 관련 정보를 확인하세요.
+이 **Azure 함수** 를 **Visual Studio** 에서 직접 배포하려면 다운로드한 AzureFunction_TrackedObjectsService 폴더를 열고 ![Bot Framework Composer 홈](images/mr-learning-azure/tutorial5-section3-step1-1.png)에서 **.sln** 파일을 엽니다.
 
-배포가 완료되면 **Azure Portal** 에서 해당 리소스를 열고, *설정* 섹션 아래에서 **구성** 을 클릭합니다. **애플리케이션 설정** 에서 *연결 문자열* 을 **추적된 개체** 가 저장된 **Azure Storage** 에 제공해야 합니다. **새 애플리케이션 설정** 을 클릭하고, 이름에 대해 **AzureStorageConnectionString** 을 사용하며, 값에 대해 올바른 *연결 문자열* 을 제공합니다. 그런 다음, **저장** 을 클릭합니다. 그러면 **Azure Function** 이 나중에 만들 *봇* 을 지원할 준비가 됩니다.
+Visual Studio에서 파일이 로드되면 솔루션 탐색기에서 **추적된 개체 서비스** 를 마우스 오른쪽 단추로 클릭하고 ![Bot Framework Composer 홈](images/mr-learning-azure/tutorial5-section3-step1-2.png) 게시를 선택합니다.
+
+게시 팝업이 표시되고 대상 플랫폼을 선택하라는 메시지가 표시됩니다. Azure를 선택하고 **다음** 단추를 클릭합니다.
+
+![Bot Framework Composer 홈](images/mr-learning-azure/tutorial5-section3-step1-3.png)
+
+구체적인 대상에서 **Azure 함수 앱(Windows)** 을 선택하고 **다음** 단추를 클릭합니다.
+
+![Bot Framework Composer 홈](images/mr-learning-azure/tutorial5-section3-step1-4.png)
+
+Azure에 로그인하지 않은 경우 Visual Studio를 통해 로그인합니다. 그러면 창이 다음과 같이 표시됩니다.
+
+![Bot Framework Composer 홈](images/mr-learning-azure/tutorial5-section3-step1-5.png)
+
+펄스 단추를 클릭하여 Azure 계정에 새 함수 앱을 만듭니다.
+
+![Bot Framework Composer 홈](images/mr-learning-azure/tutorial5-section3-step1-6.png)
+
+* **이름** 으로 적절한 서비스 이름을 입력합니다(예: *TrackedObjectsService*).
+* **요금제 유형** 으로 사용량을 선택합니다.
+* **위치** 로는 앱 사용자의 실제 위치와 가까운 위치(예: *(미국) 미국 서부*)를 선택합니다.
+* **리소스 그룹** 및 **스토리지** 로는 이전 챕터에서 만든 Azure 그룹과 스토리지 계정을 선택합니다.
+
+함수 앱을 만든 후 **마침** 단추를 클릭합니다. 
+
+![Bot Framework Composer 홈](images/mr-learning-azure/tutorial5-section3-step1-7.png)
+
+종료 프로세스가 완료되면 게시 팝업이 열립니다. **게시** 단추를 클릭하여 함수를 게시하고 게시될 때까지 기다립니다.
+
+![Bot Framework Composer 홈](images/mr-learning-azure/tutorial5-section3-step1-8.png)
+
+게시가 완료된 후 [작업] 섹션에서 **Azure Portal에서 관리** 를 클릭하면 Azure Portal의 특정 함수로 이동됩니다. 그러면 *설정* 섹션에서 **구성** 을 클릭합니다. **애플리케이션 설정** 에서 *연결 문자열* 을 **추적된 개체** 가 저장된 **Azure Storage** 에 제공해야 합니다. **새 애플리케이션 설정** 을 클릭하고, 이름에 대해 **AzureStorageConnectionString** 을 사용하며, 값에 대해 올바른 *연결 문자열* 을 제공합니다. 그런 다음, **저장** 을 클릭합니다. 그러면 **Azure Function** 이 나중에 만들 *봇* 을 지원할 준비가 됩니다.
+
+개수 및 찾기 URL을 가져오려면 *함수* 섹션 아래에서 **함수** 를 선택합니다. 여기서 Count 함수와 Find 함수를 모두 찾을 수 있습니다. 위쪽에서 Count 함수를 선택하면 *함수 Url 가져오기* 단추를 찾을 수 있습니다. 동일한 절차에 따라 Find 함수 Url을 가져옵니다.
 
 ### <a name="creating-a-conversation-bot"></a>대화 봇 만들기
 
-Bot Framework 기반 대화 봇은 여러 가지 방법으로 개발할 수 있습니다. 이 단원에서는 빠른 개발을 위한 완벽한 비주얼 디자이너인 [Bot Framework 작성기](/composer/) 데스크톱 애플리케이션을 사용합니다.
+Bot Framework 기반 대화형 봇은 여러 가지 방법으로 개발할 수 있습니다. 이 단원에서는 빠른 개발을 위한 완벽한 비주얼 디자이너인 [Bot Framework 작성기](https://docs.microsoft.com/composer/) 데스크톱 애플리케이션을 사용합니다.
 
 최신 릴리스는 [Github 리포지토리](https://github.com/microsoft/BotFramework-Composer/releases)에서 다운로드할 수 있습니다. Windows, Mac 및 Linux에서 사용할 수 있습니다.
 
@@ -77,7 +109,7 @@ Bot Framework 기반 대화 봇은 여러 가지 방법으로 개발할 수 있�
 
 **대화 상자 패널** 을 볼 수 있는 왼쪽에 집중하겠습니다. **TrackedObjectsBot** 이라는 하나의 대화 상자가 있으며, 그 아래에는 여러 개의 **트리거** 가 표시되어 있습니다.
 
-[Bot Framework 개념](/composer/concept-dialog)에 대해 자세히 알아보세요.
+[Bot Framework 개념](https://docs.microsoft.com/composer/concept-dialog)에 대해 자세히 알아보세요.
 
 이러한 트리거는 다음을 수행합니다.
 
@@ -97,7 +129,7 @@ Bot Framework 기반 대화 봇은 여러 가지 방법으로 개발할 수 있�
 
 ![TrackedObjectsBot 프로젝트 대화 상자 트리거 AskForCount](images/mr-learning-azure/tutorial5-section4-step1-4.png)
 
-[LUIS](/composer/how-to-use-luis)에서 지원하므로 *사용자* 는 이러한 구를 *사용자* 와 자연스럽게 대화할 수 있는 정확한 방법으로 요청할 필요가 없습니다.
+[LUIS](https://docs.microsoft.com/composer/how-to-use-luis)에서 지원하므로 *사용자* 는 이러한 구를 *사용자* 와 자연스럽게 대화할 수 있는 정확한 방법으로 요청할 필요가 없습니다.
 
 이 대화 상자에서 *봇* 은 **Count** Azure Function과도 통신하며, 나중에 이에 대해 자세히 설명합니다.
 
@@ -130,7 +162,7 @@ Bot Framework 기반 대화 봇은 여러 가지 방법으로 개발할 수 있�
 
 모든 설정이 완료되면 이제 봇을 배포할 준비가 되었습니다. Bot Framework 작성기가 설치되어 있으므로 여기서 직접 게시할 수 있습니다.
 
-[봇 작성기에서 봇 게시](/composer/how-to-publish-bot)에 대해 자세히 알아보세요.
+[봇 작성기에서 봇 게시](https://docs.microsoft.com/composer/how-to-publish-bot)에 대해 자세히 알아보세요.
 
 > [!TIP]
 > 더 많은 트리거 구, 새 응답 또는 대화 분기를 추가하여 봇을 자유롭게 재생해 보세요.

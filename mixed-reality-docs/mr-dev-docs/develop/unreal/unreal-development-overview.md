@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 스트리밍, 원격, 혼합 현실, 개발, 시작, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, 홀로그램, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, OpenXR
-ms.openlocfilehash: a5b65bbfe5a1f365a93836406365fdc395b73c47
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 99540b9cd3473097896d847943b9736300000305
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580045"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421422"
 ---
 # <a name="unreal-development-overview"></a>Unreal 개발 개요
 
@@ -38,6 +38,7 @@ Unreal 개발이 처음이라면 모르는 상태에서 넘어가지 마세요. 
 |  검사점  |  결과  |
 | --- | --- |
 | [최신 도구 설치](../install-the-tools.md) | 최신 버전의 Unreal Engine 다운로드/설치 및 혼합 현실 프로젝트 설정 |
+| [첫 번째 HoloLens Unreal 애플리케이션 만들기](unreal-quickstart.md) | 기본 혼합 현실 애플리케이션을 빌드하여 Unreal 및 HoloLens 개발 여정 시작 |
 | [HoloLens 2 자습서 시리즈](tutorials/unreal-uxt-ch1.md) | Unreal에서 혼합 현실 개발 설정, MRTK로 첫 번째 앱 빌드, HoloLens 2에 앱 배포 |
 | (선택 사항) Unreal에서 [OpenXR](../native/openxr.md) 시작 | Unreal에서 OpenXR 앱을 빌드하려면 다음 엔진 플러그 인을 사용하지 않도록 설정해야 합니다.<ul><li>Windows Mixed Reality</li></ul><br>GitHub에서 프로젝트에 다음 플러그 인을 다운로드하고 사용합니다.<ul><li> [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal)</li></ul><br>OpenXR에서 현재 지원되는 기능의 전체 목록은 [아래](#supported-features)에 나와 있습니다.|
 

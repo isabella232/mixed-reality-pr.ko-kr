@@ -1,5 +1,5 @@
 ---
-title: HoloLens 프로젝트 만들기
+title: 첫 번째 HoloLens Unreal 애플리케이션 만들기
 description: HoloLens 혼합 현실 개발을 위해 장면 개체 및 입력 상호 작용을 사용하여 Unreal 프로젝트를 올바르게 구성하는 방법을 알아봅니다.
 author: hferrone
 ms.author: safarooq
@@ -7,14 +7,27 @@ ms.date: 01/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, Unreal 편집기, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 설명서, 가이드, 기능, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 이식, 업그레이드
-ms.openlocfilehash: 3b2b88ac897a8791fec1ca2942d0db34efcee598
-ms.sourcegitcommit: be33fcda10d1cb98df90b428a923289933d42c77
+ms.openlocfilehash: 467987f69b50c0ec635c99899d6bcecab5a62af0
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98672740"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421432"
 ---
-# <a name="creating-a-hololens-project"></a>HoloLens 프로젝트 만들기
+# <a name="creating-your-first-hololens-unreal-application"></a>첫 번째 HoloLens Unreal 애플리케이션 만들기
+
+이 가이드는 Unreal Engine의 HoloLens에서 첫 번째 혼합 현실 앱을 실행하는 과정을 안내합니다. 화면에 큐브를 표시하는 간단한 앱을 만듭니다("Hello World"와 유사함). 유용성을 높이기 위해 큐브를 돌리고 애플리케이션을 종료하는 첫 번째 제스처도 만듭니다. 
+
+## <a name="objectives"></a>목표
+
+* HoloLens 프로젝트 시작
+* 올바른 플러그 인 사용
+* ARSessionConfig 데이터 자산 만들기
+* 제스처 입력 설정
+* 기본 수준 빌드
+* 손가락 모으기 제스처 구현
+
+## <a name="creating-a-new-project"></a>새 프로젝트 만들기
 
 가장 먼저 필요한 것은 작업할 프로젝트입니다. 초보 Unreal 개발자라면 Epic Launcher에서 [지원 파일을 다운로드](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal)해야 합니다.
 
@@ -29,7 +42,8 @@ ms.locfileid: "98672740"
 
 4. **Project Settings(프로젝트 설정)** 에서 **C++, Scalable 3D or 2D(확장 가능한 3D 또는 2D), Mobile/Tablet(모바일/태블릿)** , **No Starter Content(시작 콘텐츠 없음)** 를 설정한 후 **Create Project(프로젝트 만들기)** 를 클릭합니다.
 
-> [!NOTE] 나중에 OpenXR 플러그 인을 사용할 수 있도록 청사진 프로젝트가 아닌 C++를 사용하는 것입니다. 이 빠른 시작에서는 Unreal Engine과 함께 제공되는 기본 OpenXR 플러그 인을 사용합니다. 하지만 공식 Microsoft OpenXR 플러그 인을 다운로드하여 사용하는 것이 좋습니다. 이렇게 하려면 프로젝트가 C++ 프로젝트여야 합니다.
+> [!NOTE] 
+> 나중에 OpenXR 플러그 인을 사용할 수 있도록 청사진 프로젝트가 아닌 C++를 사용하는 것입니다. 이 빠른 시작에서는 Unreal Engine과 함께 제공되는 기본 OpenXR 플러그 인을 사용합니다. 하지만 공식 Microsoft OpenXR 플러그 인을 다운로드하여 사용하는 것이 좋습니다. 이렇게 하려면 프로젝트가 C++ 프로젝트여야 합니다.
 
 ![프로젝트, 성능, 대상 플랫폼 및 시작 콘텐츠 선택 항목이 강조 표시된 프로젝트 설정 창](images/unreal-quickstart-img-03.png)
 
@@ -131,13 +145,17 @@ Unreal의 AR 세션은 스스로 발생하지 않습니다. 세션을 사용하�
 
 ![OpenXR Msft Hand Interaction 옵션이 강조 표시된 작업 매핑](images/unreal-quickstart-img-16.jpg)
 
-4. **Level Blueprint(수준 청사진)** 를 열고 **InputAction RightPinch** 및 **InputAction LeftPinch** 를 추가합니다.
+## <a name="setting-up-gestures"></a>제스처 설정
+
+이제 입력을 설정했으므로 흥미로운 부분으로 넘어가 보겠습니다. 바로 제스처를 추가하는 겁니다. 오른쪽 손가락을 모아서 큐브를 돌리고 왼쪽 손가락을 모아서 애플리케이션을 종료해 보겠습니다.
+
+1. **Level Blueprint(수준 청사진)** 를 열고 **InputAction RightPinch** 및 **InputAction LeftPinch** 를 추가합니다.
 * **Cube(큐브)** 를 대상으로 사용하고 **Delta Rotation(델타 회전)** 을 **X = 0, Y = 0** 및 **Z = 20** 으로 설정하여 오른쪽 손가락 모으기 이벤트를 **AddActorLocalRotation** 에 연결합니다. 이제 손가락을 모을 때마다 큐브가 20도 회전합니다.
 * 왼쪽 손가락 모으기 이벤트를 **Quit Game(게임 종료)** 에 연결합니다.
 
 ![오른쪽 및 왼쪽 손가락 모으기 이벤트에 대한 입력 작업을 사용하여 열린 수준 청사진](images/unreal-quickstart-img-17.jpg)
 
-5. 큐브의 **Transform(변환)** 설정에서 **Mobility(이동성)** 를 **Movable(이동 가능)** 로 설정하여 동적으로 이동할 수 있도록 합니다.
+2. 큐브의 **Transform(변환)** 설정에서 **Mobility(이동성)** 를 **Movable(이동 가능)** 로 설정하여 동적으로 이동할 수 있도록 합니다.
 
 ![이동성 속성이 강조 표시된 변환 설정](images/unreal-quickstart-img-18.jpg)
 

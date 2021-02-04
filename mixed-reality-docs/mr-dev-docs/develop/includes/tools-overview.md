@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: b6e75419ef9cdd4595e23e6217ab1b1762cd134e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c205e3b812eeb7a85bfe361d4fd83f9aec7b7999
+ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98605125"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99244911"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -13,21 +13,30 @@ ms.locfileid: "98605125"
 ### <a name="1-download-the-latest-version"></a>1. 최신 버전 다운로드
 
 새 프로젝트를 시작할 때 사용하기 가장 좋은 버전은 [Unity LTS(장기 지원)](https://unity3d.com/unity/qa/lts-releases) 스트림이며, 이것을 최신 개정판으로 업데이트하여 안정적인 최신 수정 프로그램을 선택하는 것이 좋습니다.
-* 현재 추천 사항은 아래의 MRTK v2에 필요한 LTS 빌드인 **Unity 2019** 를 사용하는 것입니다.
+* 현재 권장 사항은 아래의 MRTK v2에 필요한 LTS 빌드인 **[Unity 2019.4 LTS](https://unity3d.com/unity/qa/lts-releases?version=2019.4)** 를 사용하는 것입니다.
 * 특정 이유로 인해 다른 Unity 버전을 사용해야 하는 경우 Unity는 서로 다른 버전을 함께 설치하도록 지원합니다.
 
-### <a name="2-import-mixed-reality-toolkit-mrtk"></a>2. MRTK(Mixed Reality Toolkit) 가져오기
+### <a name="2-install-the-mixed-reality-feature-tool"></a>2. Mixed Reality Feature Tool 설치
+
+[Mixed Reality Feature Tool](../unity/welcome-to-mr-feature-tool.md)은 개발자가 혼합형 현실 기능 패키지를 검색하고 Unity 프로젝트에 추가하는 데 사용되는 새로운 방법입니다. 
+
+이름 또는 범주로 패키지를 검색하고, 종속성을 확인하고, 가져오기 전에 프로젝트 매니페스트 파일에 대한 제안된 변경 내용도 볼 수 있습니다. 원하는 패키지의 유효성을 검사하면 Mixed Reality Feature Tool에서 사용자가 선택한 프로젝트로 해당 패키지를 다운로드합니다.
+
+#### <a name="importing-the-mixed-reality-toolkit"></a>Mixed Reality Toolkit 가져오기
+
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
 
-MRTK([Mixed Reality Toolkit](../unity/mrtk-getting-started.md))는 혼합 현실 애플리케이션을 위한 오픈 소스 플랫폼 간 개발 키트입니다. MRTK는 플랫폼 간 입력 시스템, 기본 구성 요소 및 공간 상호 작용을 위한 공통 빌딩 블록을 제공합니다. 도구 키트는 Microsoft HoloLens, Windows Mixed Reality 몰입형(VR) 헤드셋 및 OpenVR 플랫폼을 대상으로 하는 애플리케이션 개발을 가속화하기 위해 고안되었습니다.
+MRTK([Mixed Reality Toolkit](../unity/mrtk-getting-started.md))는 혼합 현실 애플리케이션을 위한 오픈 소스 플랫폼 간 개발 키트입니다. 
 
-설치의 경우 큐레이션된 [HoloLens](../unity/unity-development-overview.md#1-getting-started) 또는 [VR](../unity/unity-development-wmr-overview.md#1-getting-started) 개발 경험의 시작 섹션을 완료하는 것이 좋습니다. HoloLens용 Unity 개발 경험을 이미 따르고 있는 경우 아래 나열된 나머지 설정 단계를 완료하고 [HoloLens 2 시작 자습서](../unity/tutorials/mr-learning-base-01.md)를 계속 진행하세요.
+* [설치 및 사용 지침](../unity/welcome-to-mr-feature-tool.md#system-requirements)을 따르고 **Mixed Reality Toolkit Foundation** 패키지를 선택하여 Mixed Reality Toolkit 패키지를 설치합니다.
+
+큐레이트된 [HoloLens](../unity/unity-development-overview.md#1-getting-started) 또는 [VR](../unity/unity-development-wmr-overview.md#1-getting-started) 개발 경험의 시작 섹션을 완료하는 것이 좋습니다. HoloLens용 Unity 개발 경험을 이미 따르고 있는 경우 아래 나열된 나머지 설정 단계를 완료하고 [HoloLens 2 시작 자습서](../unity/tutorials/mr-learning-base-01.md)를 계속 진행하세요.
 
 > [!IMPORTANT]
-> 설치 지침은 **MRTK 2.4.0** 및 **Unity 2019.3.15** 인 MRTK 및 Unity 릴리스의 안정적인 최신 조합을 대상으로 합니다.
+> 설치 지침은 MRTK 및 Unity 릴리스의 안정적인 최신 조합인 **MRTK 2.5.1** 및 **Unity 2019.4 LTS** 를 대상으로 합니다.
 
 > [!NOTE]
-> Unity에 MRTK를 사용하지 않으려면 모든 상호 작용과 동작을 직접 스크립팅해야 합니다.
+> Unity에 MRTK를 사용하지 않으려면 [모든 상호 작용과 동작을 직접 스크립팅](../unity/configure-unity-project.md)해야 합니다.
 
 :::row:::
     :::column:::

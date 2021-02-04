@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 테스트, Mixed Reality Toolkit, MRTK 버전 2, MRTK, 도구, SDK, HoloLens, HoloLens 2, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 플랫폼 간
-ms.openlocfilehash: 4c013f1fa50518404f899b4181e7c07b9e4e0e56
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 54ad49bbf4da577a398a0bfb12fbdc84cdff34d9
+ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581708"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99238121"
 ---
 # <a name="introducing-mrtk-for-unity"></a>Unity용 MRTK 소개
 
@@ -22,13 +22,15 @@ ms.locfileid: "98581708"
 
 MRTK는 HoloLens가 처음 릴리스된 이후부터 사용되어 온 놀라운 오픈 소스 도구 키트입니다. 기여 개발자 커뮤니티의 노력이 없었다면 오늘날의 도구 키트가 될 수 없었을 것입니다. 가장 중요한 문제를 고려하기 위해 지난 3년간 개발자 커뮤니티의 피드백을 주의 깊게 살피면서 MRTK v2를 구축했습니다.  
 
-Unity용 MRTK는 혼합 현실 애플리케이션을 위한 오픈 소스 플랫폼 간 개발 키트입니다. 도구 키트는 플랫폼 간 입력 시스템, 기본 구성 요소 및 공간 상호 작용을 위한 공통 빌딩 블록을 제공합니다. MRTK 버전 2는 Microsoft HoloLens, Windows Mixed Reality 몰입형(VR) 헤드셋 및 OpenVR 플랫폼용 애플리케이션 개발을 가속화하기 위한 것입니다. 이 프로젝트는 진입 장벽을 낮추고 혼합 현실 애플리케이션을 만들며 커뮤니티에 다시 기여하는 것을 목표로 합니다.
+Unity용 MRTK는 혼합 현실 애플리케이션을 위한 오픈 소스 플랫폼 간 개발 키트입니다. 도구 키트를 설치하는 가장 쉬운 방법은 새로운 Mixed Reality Feature Tool 애플리케이션을 사용하는 것입니다. [설치 및 사용 지침](welcome-to-mr-feature-tool.md)을 따르고 Mixed Reality Toolkit 범주에서 **Mixed Reality Toolkit Foundation** 패키지를 선택합니다. 
+
+Unity용 MRTK는 플랫폼 간 입력 시스템, 기본 구성 요소 및 공간 상호 작용을 위한 공통 빌딩 블록을 제공합니다. MRTK 버전 2는 Microsoft HoloLens, Windows Mixed Reality 몰입형(VR) 헤드셋 및 OpenVR 플랫폼용 애플리케이션 개발을 가속화하기 위한 것입니다. 이 프로젝트는 진입 장벽을 낮추고 혼합 현실 애플리케이션을 만들며 커뮤니티에 다시 기여하는 것을 목표로 합니다.
 
 <br>
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCG]
 
-[GitHub에 대한 MRTK 설명서](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)를 살펴보고 [설치 가이드](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)를 시작하세요.
+자세한 기능 정보는 [GitHub의 MRTK 설명서](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)를 살펴보세요.
 
 ## <a name="new-with-mrtk-v2"></a>MRTK v2의 새로운 기능
 
@@ -49,7 +51,7 @@ Unity용 MRTK는 혼합 현실 애플리케이션을 위한 오픈 소스 플랫
 ## <a name="see-also"></a>참고 항목
 
 * [도구 설치](../install-the-tools.md)
+* [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md)
 * [Unity용 MRTK를 사용한 개발](unity-development-overview.md)
-* [MRTK - 설치 가이드(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
 * [MRTK - 설명서 홈(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 * [HoloToolkit/MRTK에서 MRTK 버전 2로 포팅(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
