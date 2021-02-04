@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, hololens 2, azure custom vision, azure cognitive services, azure cloud services, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: aa3ad219ab2cd45b14d06881757ec776d3e098f3
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 7676a55a2276b88f3bc123dda90a1b8d39536a61
+ms.sourcegitcommit: daa45a19a3a353334380cda78fee7fa149f0e48b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581930"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98981722"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Azure Custom Vision 통합
 
@@ -50,17 +50,17 @@ ms.locfileid: "98581930"
 ![Inspector(검사기)에 표시된 ObjectDetectionManager 스크립트 구성 요소 구성 필드가 있는 Unity](images/mr-learning-azure/tutorial3-section4-step1-2.png)
 
 Hierarchy(계층 구조) 창에서 **ObjectDetectionManager** 개체를 찾아서 선택합니다.
-**ObjectDetectionManager** 프리팹에는 **ObjectDetectionManager(스크립트)** 가 포함되어 있으며 Inspector(인스펙터) 창에서 볼 수 있듯이 여러 설정에 따라 달라집니다.
+**ObjectDetectionManager** 프리팹에는 **ObjectDetectionManager(스크립트)** 구성 요소가 포함되어 있으며 Inspector(인스펙터) 창에서 볼 수 있듯이 Azure 설정 및 프로젝트 설정에 따라 달라집니다.
 
 ## <a name="retrieving-azure-api-resource-credentials"></a>Azure API 리소스 자격 증명 검색
 
 **ObjectDetectionManager(스크립트)** 설정에 필요한 자격 증명은 Azure Portal 및 Custom Vision 포털에서 검색할 수 있습니다.
 
-### <a name="azure-portal"></a>Azure Portal
+### <a name="retrieving-azure-settings-credentials"></a>Azure 설정 자격 증명 검색
 
-이 자습서의 *장면 준비* 섹션에서 만든 **Cognitive Services** 유형의 Custom Vision 리소스를 찾아서 이동합니다. 여기에서 *키 및 엔드포인트* 를 클릭하여 필요한 자격 증명을 검색합니다.
+이 자습서의 *장면 준비* 섹션에서 만든 **Cognitive Services** 유형의 Custom Vision 리소스를 찾아서 이동합니다(Custom Vision 리소스 이름을 선택하고 *-Prediction* 선택). 여기서 *개요* 또는 *키 및 엔드포인트* 를 클릭하여 필요한 자격 증명을 검색합니다.
 
-### <a name="custom-vision-dashboard"></a>Custom Vision 대시보드
+### <a name="retrieving-project-settings-credentials"></a>프로젝트 설정 자격 증명 검색
 
 [Custom Vision](https://www.customvision.ai/projects) 대시보드에서 이 자습서용으로 만든 프로젝트를 열고 페이지 오른쪽 위 모서리 기어 아이콘을 클릭하여 설정 페이지를 엽니다. 오른쪽 *리소스* 섹션에서 필요한 자격 증명을 찾을 수 있습니다.
 
@@ -87,6 +87,10 @@ Hierarchy(계층 구조) 창에서 **ObjectDetectionManager** 개체를 찾아�
 > **ObjectDetectionManager(스크립트)** 는 찍힌 이미지를 Custom Vision 서비스에 직접 업로드합니다. 대안으로, Custom Vision API는 이미지 URL을 허용하며, 연습으로 **ObjectDetectionManager(script)** 를 수정하여 이미지를 Blob 스토리지에 대신 업로드할 수 있습니다.
 
 ## <a name="detect-objects"></a>개체 감지
+
+개체를 검색하기 전에, Custom Vision 키를 사용하여 이미 할당되고 있는 프로젝트 설정에서 **ObjectDetectionManager(스크립트)** 에 있는 Api 키를 변경해야 합니다.
+
+Azure Portal에서 Custom Vision 리소스를 찾아서 이동합니다. 여기서 *키 및 엔드포인트* 를 클릭하여 Api 키를 검색하고 프로젝트 설정에서 이전 Api 키로 바꿉니다.
 
 이제 학습된 모델을 테스트에 추가하고, 애플리케이션을 실행하고, 주 메뉴에서 **검색 개체** 를 클릭하고 해당 **추적된 개체** 의 이름을 입력할 수 있습니다. **Object Card**(개체 카드)가 표시되면 **Custom Vision** 단추를 클릭합니다. 여기에서 **ObjectDetectionManager** 는 카메라의 배경에서 이미지를 캡처하기 시작하고 진행률이 메뉴에 표시됩니다. 모델을 학습시키는 데 사용한 개체로 카메라를 향하게 하면 잠시 후에 개체를 감지하는 것이 보입니다.
 
