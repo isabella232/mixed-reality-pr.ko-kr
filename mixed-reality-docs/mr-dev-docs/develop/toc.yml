@@ -174,6 +174,20 @@
           href: unity/openxr-getting-started.md
         - name: OpenXR 플러그 인 지원 기능
           href: unity/openxr-supported-features.md
+        - name: Mixed Reality Feature Tool
+          items:
+            - name: MR Feature Tool을 시작합니다.
+              href: unity/welcome-to-mr-feature-tool.md
+            - name: 구성
+              href: unity/configuring-feature-tool.md
+            - name: 검색
+              href: unity/discovering-features.md
+            - name: 가져오기
+              href: unity/importing-features.md
+            - name: 패키지 세부 정보
+              href: unity/viewing-package-details.md
+            - name: 변경 내용 검토
+              href: unity/reviewing-changes.md
     - name: 기본 구성 요소
       items:
         - name: 카메라
@@ -262,7 +276,7 @@
       href: unreal/unreal-porting.md
     - name: 빠른 시작
       items:
-        - name: HoloLens 프로젝트 만들기
+        - name: 첫 번째 HoloLens Unreal 애플리케이션 만들기
           href: unreal/unreal-quickstart.md
     - name: 자습서
       items:
