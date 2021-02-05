@@ -3,15 +3,15 @@ title: 공간 오디오 자습서-2. 공간화 단추 상호 작용 소리
 description: 프로젝트에 단추를 추가 하 고 단추 상호 작용 소리를 spatialize.
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head 관련 전송 함수, 반향, Microsoft Spatializer, prefabs, volume curve
-ms.openlocfilehash: e4b2ed99f56fea82b1c72e4fce5205c14e1d3533
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 12d159cb162cbf136483f7be94b0d297319a0737
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578494"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590765"
 ---
 # <a name="2-spatializing-button-interaction-sounds"></a>2. 공간화 단추 상호 작용 소리
 
@@ -25,7 +25,7 @@ ms.locfileid: "98578494"
 
 ## <a name="add-a-button"></a>단추 추가
 
-Prefab 단추를 추가 하려면 **프로젝트** 창에서 **자산** 을 선택 하 고 검색 표시줄에 "PressableButtonHoloLens2"을 입력 합니다.
+Prefab 단추를 추가 하려면 **프로젝트** 창에서 **패키지** 를 선택 하 고 검색 표시줄에 "PressableButtonHoloLens2"을 입력 합니다.
 
 ![자산에서 prefab 단추](images/spatial-audio/spatial-audio-02-section1-step1-1.png)
 
