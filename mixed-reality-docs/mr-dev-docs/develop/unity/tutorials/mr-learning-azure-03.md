@@ -3,16 +3,16 @@ title: Azure Custom Vision 통합
 description: 이 과정을 완료하여 HoloLens 2 혼합 현실 애플리케이션 내에서 Azure Custom Vision을 구현하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, hololens 2, azure custom vision, azure cognitive services, azure cloud services, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 7676a55a2276b88f3bc123dda90a1b8d39536a61
-ms.sourcegitcommit: daa45a19a3a353334380cda78fee7fa149f0e48b
+ms.openlocfilehash: cb391aa2cdb7944234cdeede7dd05825c008d0d8
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98981722"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590575"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Azure Custom Vision 통합
 

@@ -3,16 +3,16 @@ title: 로컬 음성-텍스트 변환을 위한 오프라인 모드 추가
 description: 이 과정을 완료하여 혼합 현실 애플리케이션에서 로컬 음성-텍스트 변환을 위해 오프라인 모드를 추가하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 06/27/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, 음성 인식, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: db495d6cdfa99721e68b4004535a5411bde9b17d
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 2e7a48dc4bb64eb177e6fa290f4918345c3d642f
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010083"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590155"
 ---
 # <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a>2. 로컬 음성-텍스트 변환에 오프라인 모드 추가
 
