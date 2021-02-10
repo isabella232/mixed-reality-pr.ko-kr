@@ -7,20 +7,22 @@ ms.date: 01/13/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 최신, 도구, 시작, 기본 사항, unity, visual studio, 도구 키트, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 설치, Windows, HoloLens, 에뮬레이터, unreal, openxr
-ms.openlocfilehash: c45fa347768e5d35441f2c1fd59da815a80ec707
-ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
+ms.openlocfilehash: 0b952922c7723bf0e2c87ddb7fed9a896d65e833
+ms.sourcegitcommit: 8c3af63fb49494f75c8ab46236fc3dd8533c1e9d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98166778"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99606128"
 ---
 # <a name="install-the-tools"></a>도구 설치
 
 Microsoft HoloLens 및 Windows Mixed Reality 몰입형(VR) 헤드셋을 위한 애플리케이션을 빌드하는 데 필요한 도구를 다운로드하세요. Windows Mixed Reality 개발을 위한 별도 SDK는 없으므로 Windows 10 SDK에서 Visual Studio를 사용합니다.
 
-혼합 현실 디바이스가 없나요? [HoloLens 에뮬레이터](platform-capabilities-and-apis/using-the-hololens-emulator.md)를 설치하면 HoloLens 없이도 혼합 현실 앱의 일부 기능을 테스트할 수 있습니다. [Windows Mixed Reality 시뮬레이터](platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)를 사용하여 몰입형 헤드셋을 위한 혼합 현실 앱을 테스트할 수도 있습니다. Unity를 사용하는 경우 [MRTK(Mixed Reality Toolkit)](https://github.com/Microsoft/MixedRealityToolkit-Unity)의 입력 시뮬레이션을 사용하여 손 인식 및 시선 추적 입력과 같은 다양한 유형의 입력 상호 작용을 테스트할 수 있습니다.
+혼합 현실 디바이스가 없나요? [HoloLens 에뮬레이터](platform-capabilities-and-apis/using-the-hololens-emulator.md)를 설치하면 HoloLens 없이도 혼합 현실 앱의 일부 기능을 테스트할 수 있습니다. [Windows Mixed Reality 시뮬레이터](platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)를 사용하여 몰입형 헤드셋을 위한 혼합 현실 앱을 테스트할 수도 있습니다. 
 
-혼합 현실 앱 만들기를 시작하는 가장 쉬운 방법은 Unity 게임 엔진을 설치하는 것입니다. 그러나 사용자 지정 엔진을 사용하려는 경우에는 DirectX에 대해 빌드할 수도 있습니다.
+혼합 현실 앱 만들기를 시작하는 가장 쉬운 방법은 Unity 또는 Unreal 게임 엔진을 설치하는 것입니다. 그러나 사용자 지정 엔진을 사용하려는 경우에는 DirectX에 대해 빌드할 수도 있습니다.
+
+Unity를 사용하는 경우 [Mixed Reality Toolkit for Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)의 입력 시뮬레이션을 사용하여 손 인식 및 시선 추적 입력과 같은 다양한 유형의 입력 상호 작용을 테스트할 수 있습니다. Unreal 프로젝트의 경우 [UX Tools 플러그 인](https://github.com/microsoft/MixedReality-UXTools-Unreal)을 사용하여 공통 입력 상호 작용 및 사용자 환경 기능을 테스트합니다.
 
 >[!TIP]
 >이 페이지에 책갈피를 지정하고 정기적으로 확인하면서 혼합 현실 개발에 권장되는 각 도구를 최신 상태로 유지하세요.

@@ -7,12 +7,12 @@ ms.date: 01/27/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 최신, 도구, 시작, 기본 사항, unity, visual studio, 도구 키트, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 설치, Windows, HoloLens, 에뮬레이터, unreal, openxr
-ms.openlocfilehash: b9d54edb251cfe22d4f5fbea6fa8c923f6ff2d69
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: 0aad81ddd625467dd9159232d590b1a4bf68d06b
+ms.sourcegitcommit: d9f87635c87627adba7db37834e4627c149f9a28
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99244068"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99570256"
 ---
 # <a name="welcome-to-the-mixed-reality-feature-tool"></a>Mixed Reality Feature Tool 시작
 
@@ -33,9 +33,11 @@ Mixed Reality Feature Tool을 실행하려면 다음이 필요합니다.
 > [!NOTE]
 > Mixed Reality Feature Tool은 현재 Windows에서만 실행되지만 MacOS 지원이 곧 제공될 예정입니다.
 
+## <a name="download"></a>다운로드 
+
 환경을 설정한 후 다음을 수행합니다.
 
-* [Microsoft 다운로드 센터](https://aka.ms/MRFeatureTool)에서 최신 버전의 Mixed Reality Feature Tool을 다운로드합니다.
+* Microsoft 다운로드 센터에서 [최신 버전의 Mixed Reality Feature Tool을 다운로드합니다](https://aka.ms/MRFeatureTool).
 * 다운로드가 완료되면 파일의 압축을 풀고 바탕 화면에 저장합니다.
     * 더 빠른 액세스를 위해 실행 파일에 대한 바로 가기를 만드는 것이 좋습니다.
 

@@ -3,16 +3,16 @@ title: MRTK 자습서 소개
 description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 처음부터 혼합 현실 애플리케이션을 만드는 방법을 보여줍니다.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, solvers, 시선 추적, 음성 명령
 ms.localizationpriority: high
-ms.openlocfilehash: a917aea812c262e3589110a29e2399da4c1e5348
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 8bae8b821e7ffe67b745bbbab763193612a58485
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98579272"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590415"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1. MRTK 자습서 소개
 
@@ -46,7 +46,7 @@ ms.locfileid: "98579272"
 * Unity 2019 LTS가 설치되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가된 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
 
 > [!CAUTION]
-> 이 자습서 시리즈에 추천되는 MRTK 버전은 MRTK 2.5.1입니다.
+> 이 자습서 시리즈에 추천되는 MRTK 버전은 MRTK 2.5.3입니다.
 
 > [!CAUTION]
 > 이 자습서 시리즈에 추천되는 Unity 버전은 Unity 2019 LTS입니다. 이 버전은 필수 구성 요소에서 설명한 모든 Unity 버전 요구 사항을 대체합니다.

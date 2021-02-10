@@ -3,16 +3,16 @@ title: 여러 사용자 연결
 description: 이 과정을 완료하여 HoloLens 2 혼합 현실 애플리케이션에서 여러 사용자를 연결하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 0c6bf0871836ad7aae9c3906b2042f97ae003ebf
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 58ea52332485a3e0ca460322f6af60266b119ede
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699067"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590195"
 ---
 # <a name="3-connecting-multiple-users"></a>3. 여러 사용자 연결
 
@@ -69,7 +69,7 @@ Inspector 창에서 **Add Component** 단추를 사용하여 **Photon View (Scri
 
 ### <a name="2-create-the-avatar"></a>2. 아바타 만들기
 
-Project 창에서 **Assets(자산)**  > **MRTK** > **StandardAssets** > **Materials(자료)** 폴더로 이동하여 MRTK 자료를 찾습니다.
+Project 창에서 **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **StandardAssets** > **Materials** 폴더로 이동하여 MRTK 자료를 찾습니다.
 
 그런 다음, Hierarchy 창에서 **PhotonUser** 개체를 마우스 오른쪽 단추로 클릭하고 **3D Object** > **Sphere** 를 선택하여 PhotonUser 개체의 자식으로 구형 개체를 만들어서 다음과 같이 구성합니다.
 

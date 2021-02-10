@@ -3,16 +3,16 @@ title: Photon Unity 네트워킹 설정
 description: 이 과정을 완료하여 HoloLens 2 혼합 현실 애플리케이션에서 Photon Unity Network를 구현하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 1c47da28b3ccdc706f372749f265ac0329a2327b
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 372cb7c9516a994cb7c3da1efb6cade792e862d1
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699147"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590315"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Photon Unity 네트워킹 설정
 
@@ -82,7 +82,7 @@ AzurespatialAnchors SDK V2.7.1을 Unity 프로젝트에 추가합니다. 패키�
 ![자습서 자산을 가져온 후의 Unity 계층 구조, 장면 및 프로젝트 창](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
 > [!TIP]
-> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) 지침을 참조할 수 있습니다.
+> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [자습서 자산 가져오기](mr-learning-base-04.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.
 
 > [!NOTE]
 > MultiUserCapabilities 자습서 자산 패키지를 가져오면 유형 또는 네임스페이스가 누락되었음을 나타내는 [CS0246](/dotnet/csharp/language-reference/compiler-messages/cs0246) 오류가 Console 창에 보입니다. 이것은 예상한 오류이며, 다음 섹션에서 PUN 자산을 가져오면 해결됩니다.

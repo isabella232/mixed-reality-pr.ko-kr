@@ -3,16 +3,16 @@ title: 홀로그램 원격 PC 애플리케이션 만들기
 description: 이 과정을 완료하여 혼합 현실 환경을 PC에서 HoloLens 2로 원격으로 수행하는 PC 애플리케이션을 만드는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, PC 홀로그램 원격, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: fd357b0b487b948afb6ae15c9e84362e2bc1ef90
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 916a9396c0b29637d5619bac203718e05112b598
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007333"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590305"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2. 홀로그램 원격 PC 애플리케이션 만들기
 
@@ -53,11 +53,11 @@ Unity 메뉴에서 편집 >프로젝트 설정을 차례로 선택하여 플레�
 
 Unity 메뉴에서 파일 > 빌드 설정을 차례로 선택하여 빌드 설정 창을 엽니다.
 
-Build Settings(빌드 설정) 창에서 **_Add Open Scenes_* _ 단추를 클릭하여 현재 장면을 Scenes(장면)에 추가합니다. Build(빌드) 목록에서 _*_Build 단추_*_ 를 클릭하여 Build Universal Windows Platform(유니버설 Windows 플랫폼 빌드) 창을 엽니다.
+Build Settings(빌드 설정) 창에서 ***Add Open Scenes** _ 단추를 클릭하여 현재 장면을 Scenes(장면)에 추가합니다. Build 목록에서 _ *_Build 단추_**를 클릭하여 유니버설 Windows 플랫폼 빌드 창을 엽니다.
 
 ![장면이 추가된 Unity Build Settings 창](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-1.png)
 
-빌드 유니버설 Windows 플랫폼 창에서 빌드를 저장할 적합한 위치(예: Documents\MixedRealityLearning)를 선택합니다. 새 폴더를 만들고 적절한 이름(예: PCHolographicRemoting)을 지정합니다. 그런 다음, _*_Select Folder(폴더 선택)_*_ 단추를 클릭하여 빌드 프로세스를 시작합니다.
+빌드 유니버설 Windows 플랫폼 창에서 빌드를 저장할 적합한 위치(예: Documents\MixedRealityLearning)를 선택합니다. 새 폴더를 만들고 적절한 이름(예: PCHolographicRemoting)을 지정합니다. 그런 다음, ***폴더 선택*** 단추를 클릭하여 빌드 프로세스를 시작합니다.
 
 ![Select Folder 프롬프트 창이 있는 Unity Build Settings 창](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-2.png)
 
@@ -78,7 +78,7 @@ Unity에서 빌드 프로세스가 완료될 때까지 기다립니다.
 
 ![로컬 컴퓨터에 대해 구성된 Visual Studio](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step3-2.png)
 
-_*_로컬 컴퓨터_*_ 라고 표시된 단추를 클릭합니다. 애플리케이션을 빌드하고 PC에 배포하기 시작합니다. 애플리케이션은 기본적으로 PC에 설치됩니다.
+***로컬 머신*** 이라고 표시된 단추를 클릭합니다. 애플리케이션을 빌드하고 PC에 배포하기 시작합니다. 애플리케이션은 기본적으로 PC에 설치됩니다.
 
 ## <a name="testing-holographic-remoting-remote-application"></a>홀로그램 원격 원격 애플리케이션 테스트
 
@@ -86,7 +86,7 @@ PC 애플리케이션을 HoloLens 2에 연결하려면 아래 프로세스를 �
 
 ### <a name="1-install-the-remoting-player-application-on-hololens-2-device"></a>1. HoloLens 2 디바이스에 원격 플레이어 애플리케이션 설치
 
-HoloLens 2에서 스토어 앱을 방문하여 "**원격 플레이어**"를 검색합니다.
+* HoloLens 2에서 스토어 앱을 방문하여 "**원격 플레이어**"를 검색합니다.
 * **원격 플레이어** 앱을 선택합니다.
 * **설치** 를 탭하여 앱을 다운로드하고 설치합니다.
 

@@ -3,16 +3,16 @@ title: Solver를 사용하여 동적 콘텐츠 만들기
 description: 이 과정에서는 MRTK(Mixed Reality Toolkit) Solver를 사용하여 동적 콘텐츠를 만드는 방법을 보여 줍니다.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, solvers
 ms.localizationpriority: high
-ms.openlocfilehash: 6006bf5e3edaee13c8ede0bdc04fd5ea928f1757
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 73fbbc64eadec1e3b83d6e10866bd227217f0c9c
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98579164"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590485"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Solver를 사용하여 동적 콘텐츠 만들기
 
@@ -26,14 +26,14 @@ ms.locfileid: "98579164"
 
 ## <a name="location-of-solvers-in-the-mrtk"></a>MRTK에서 해결기의 위치
 
- MRTK의 해결기는 MRTK SDK 폴더에 있습니다. 프로젝트에서 사용할 수 있는 Solver를 보려면 프로젝트 창에서 **Assets** > **MRTK** > **SDK** > **Features** > **Utilities** > **Solvers** 로 이동합니다.
+ MRTK의 해결기는 MRTK SDK 폴더에 있습니다. 프로젝트에서 사용할 수 있는 Solvers를 확인하려면 Project 창에서 **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **Utilities** > **Solvers** 로 이동합니다.
 
 ![Solvers 폴더가 선택된 Unity 프로젝트 창](images/mr-learning-base/base-05-section1-step1-1.png)
 
 이 자습서에서는 Directional Indicator(방향 표시) Solver 및 Tap To Place(탭하여 위치 지정) Solver 구현을 검토합니다. MRTK에서 사용할 수 있는 Solver의 전체 범위를 알아보려면 [MRTK 설명서 포털](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)에서 [Solvers](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) 가이드를 참조하세요.
 
 > [!NOTE]
-> Directional Indicator(방향 표시) Solver는 실험적인 기능이 때문에 위에 언급된 Solver 폴더에 없지만 Assets > MRTK > SDK > Experimental > Features > Utilities 폴더에 있습니다.
+> Directional Indicator Solver는 실험적인 기능 때문에 위에 언급된 Solver 폴더에 없지만 Packages > Mixed Reality Toolkit Foundation > SDK > Experimental > Features > Utilities 폴더에 있습니다.
 
 ## <a name="using-the-directional-indicator-solver-to-direct-the-user-to-objects"></a>Directional Indicator(방향 표시) Solver를 사용하여 사용자를 개체로 안내
 

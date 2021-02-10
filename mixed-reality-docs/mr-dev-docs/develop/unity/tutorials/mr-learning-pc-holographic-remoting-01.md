@@ -3,16 +3,16 @@ title: PC 홀로그램 원격 시작
 description: 이 과정을 완료하여 혼합 현실 애플리케이션을 PC에서 HoloLens 2로 원격으로 수행하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/29/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, PC 홀로그램 원격, 도구 설명, 시선 추적
 ms.localizationpriority: high
-ms.openlocfilehash: d8c7de8a93a32107afe67a1d0375612ab6245be9
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5a779ca03921701b2111e4ed5525b6f7bc250070
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581960"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590385"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. PC 홀로그램 원격 시작
 
@@ -67,7 +67,7 @@ HoloLens 2 자습서를 시작합니다. 2부로 구성된 이 자습서 시리�
 [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage)를 다운로드하고 **가져옵니다**.
 
 >[!TIP]
-> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [Mixed Reality Toolkit 가져오기](./mr-learning-base-02.md#importing-the-mixed-reality-toolkit) 지침을 참조할 수 있습니다.
+> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [자습서 자산 가져오기](mr-learning-base-04.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.
 
 자습서 자산을 가져오면 [프로젝트] 창이 다음과 비슷하게 표시됩니다.
 
@@ -129,9 +129,9 @@ HoloLens 2 자습서를 시작합니다. 2부로 구성된 이 자습서 시리�
 
 이제 단추는 모델 전환 및 클리핑 기능을 시연하도록 구성되었습니다. 이번에는 3D 모델 및 클리핑 개체를 스크립트에 추가해야 합니다.
 
-데모를 위해 6개의 서로 다른 3D 모델이 제공되었습니다. **_ModelParentobject_* _를 펼쳐서 이러한 3D 모델을 표시합니다.
+시연을 위해 6가지 3D 모델이 제공되었습니다. ***ModelParentobject*** 를 펼쳐서 이러한 3D 모델을 표시합니다.
 
-Hierarchy(계층 구조) 창에서 ButtonParent 개체가 선택된 채로 Inspector(검사기) 창에서 *View Button Control (Script)* * 구성 요소를 찾아서 **Models** 변수를 펼칩니다.
+[계층 구조] 창에서 ButtonParent 개체를 여전히 선택한 상태에서 [검사기] 창에서 **보기 단추 컨트롤(스크립트)** 구성 요소를 찾아서 **모델** 변수를 펼칩니다.
 
 **크기** 필드에서 장면에 포함하려는 3D 모델의 수를 입력합니다. 여기서는 6입니다. 새 3D 모델을 추가하기 위한 필드가 만들어집니다.
 
@@ -169,7 +169,7 @@ ModelParent 개체의 각 자식 개체를 이러한 필드로 끌어서 놓습�
 
 ### <a name="1-identify-target-objects-and-associated-tooltips"></a>1. 대상 개체 및 연결된 도구 설명 식별
 
-[계층 구조] 창에서 ModelParent 개체를 선택합니다. **_MarsCuriosity -> Rover_ *_를 차례로 펼쳐서 5개의 MarsCuriosityRover 주요 부품(_* POI-Camera**, **POI-Wheels**, **POI-Antena**, **POI-Spectrometer**, **POI-RUHF Antenna**)을 찾습니다.
+[계층 구조] 창에서 ModelParent 개체를 선택합니다. ***MarsCuriosity -> Rover** _를 차례로 펼쳐서 5개의 MarsCuriosityRover 주요 부품(_*POI-Camera**, **POI-Wheels**, **POI-Antena**, **POI-Spectrometer**, **POI-RUHF Antenna**)을 찾습니다.
 
 * [계층 구조] 창에서 MarsCuriosityRover 부품과 연결된 5개의 해당 도구 설명 개체를 확인합니다.
 * MarsCuriosityRover 부품을 살펴볼 때 환경을 강조 표시하도록 이러한 개체를 구성합니다.

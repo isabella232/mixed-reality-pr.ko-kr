@@ -3,16 +3,16 @@ title: 음성 명령 사용
 description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 혼합 현실 앱에서 음성 명령을 설정하고 만들고 사용하는 방법을 보여줍니다.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 음성 명령, 음성 입력
 ms.localizationpriority: high
-ms.openlocfilehash: c052c3501ab34811f33f1f6464c8394669eebe77
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: bb238ee6ca4c657d7e2cb8e3c41f2cdebc7fc0de
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635451"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590395"
 ---
 # <a name="9-using-speech-commands"></a>9. 음성 명령 사용
 
@@ -59,7 +59,7 @@ Speech(음성) > **Speech Commands**(음성 명령) 섹션에서 **+ Add a New S
 
 ## <a name="controlling-speech-commands"></a>음성 명령 제어
 
-프로젝트 창에서 **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** 폴더로 이동하여 도구 설명 프리팹을 찾습니다.
+Project 창에서 **Package** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** 폴더로 이동하여 도구 설명 프리팹을 찾습니다.
 
 ![도구 설명 폴더 열기](images/mr-learning-base/base-09-section3-step1-1.png)
 

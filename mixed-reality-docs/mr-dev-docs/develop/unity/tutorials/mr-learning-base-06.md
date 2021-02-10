@@ -3,16 +3,16 @@ title: 사용자 인터페이스 만들기
 description: 이 과정에서는 MRTK(Mixed Reality Toolkit)를 사용하여 정적 및 동적 사용자 인터페이스를 만드는 방법을 보여줍니다.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 프리팹, 홀로그램, 도구 설명
 ms.localizationpriority: high
-ms.openlocfilehash: 4fe4b016be36e04abffeb415f690cc0c01a6f767
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 3b32faab4be13d42f228659285244c206680466e
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635555"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590555"
 ---
 # <a name="6-creating-user-interfaces"></a>6. 사용자 인터페이스 만들기
 
@@ -86,7 +86,7 @@ ms.locfileid: "98635555"
 
 ## <a name="creating-a-dynamic-menu-that-follows-the-user"></a>사용자를 따르는 동적 메뉴 만들기
 
-[프로젝트] 창에서 **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **UX** > **Menus** 폴더로 차례로 이동하고, **NearMenu4x1** 프리팹을 클릭하여 [계층 구조] 창으로 끈 다음, 해당 변환 **위치** 를 X = 0, Y = -0.4, Z = 0으로 설정하고 다음과 같이 구성합니다.
+Project 창에서 **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **Menus** 폴더로 차례로 이동하고, **NearMenu4x1** 프리팹을 클릭하여 Hierarchy 창으로 끈 다음, 해당 변환 **위치** 를 X = 0, Y = -0.4, Z = 0으로 설정하고 다음과 같이 구성합니다.
 
 * **SolverHandler** 구성 요소의 **추적 대상 형식** 이 **Head** 로 설정되어 있는지 확인합니다.
 * **RadialView** 해결기 구성 요소 옆에 있는 확인란을 선택하여 기본적으로 사용하도록 설정합니다.
@@ -162,7 +162,7 @@ ButtonCollection에서 첫 번째 단추의 이름을 Indicator로 바꾼 다음
 
 ## <a name="adding-tooltips"></a>도구 설명 추가
 
-[프로젝트] 창에서 **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** 폴더로 차례로 이동하여 도구 설명 프리팹을 찾습니다.
+Project 창에서 **Package** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** 폴더로 이동하여 도구 설명 프리팹을 찾습니다.
 
 ![ToolTips 폴더가 선택된 Unity 프로젝트 창](images/mr-learning-base/base-06-section4-step1-1.png)
 

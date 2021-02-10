@@ -3,16 +3,16 @@ title: Azure Spatial Anchors 시작
 description: 이 과정을 완료하여 혼합 현실 애플리케이션에서 Azure Spatial Anchors를 사용하여 개체를 고정하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 60d4ae99629f0caf7e5cc7e73b05ed35ee3f4ac4
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: a0621403ec3c4d8d0fa6f13672530756bcb6da39
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699223"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590752"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Azure Spatial Anchors 시작
 
@@ -58,7 +58,7 @@ AzurespatialAnchors SDK V2.7.1을 Unity 프로젝트에 추가합니다. 패키�
 
 
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.5.3/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage)
 
 자습서 자산을 가져오면 [프로젝트] 창이 다음과 같이 표시됩니다.
 
@@ -68,7 +68,7 @@ AzurespatialAnchors SDK V2.7.1을 Unity 프로젝트에 추가합니다. 패키�
 > 더 이상 사용되지 않는 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)'과 관련된 CS0618 경고가 표시되는 경우 이러한 경고를 무시할 수 있습니다.
 
 > [!TIP]
-> Unity 사용자 지정 패키지를 가져오는 방법은 [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) 지침을 참조하세요.
+> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [자습서 자산 가져오기](mr-learning-base-04.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.
 
 ## <a name="preparing-the-scene"></a>장면 준비
 
@@ -140,6 +140,7 @@ Hierarchy(계층 구조) 창에서 **ParentAnchor** 개체를 선택하고, Insp
 
 * **Spatial Anchors Account ID** 필드에 Azure Spatial Anchors 계정의 **계정 ID** 를 붙여넣습니다.
 * **Spatial Anchors Account Key** 필드에 Azure Spatial Anchors 계정의 기본 또는 보조 **액세스 키** 를 붙여넣습니다.
+* **Spatial Anchors Account 도메인** 필드에 Azure Spatial Anchors 계정의 **계정 도메인** 을 붙여넣습니다.
 
 ![Spatial Anchor Manager가 구성된 Unity](images/mr-learning-asa/asa-02-section6-step1-1.png)
 

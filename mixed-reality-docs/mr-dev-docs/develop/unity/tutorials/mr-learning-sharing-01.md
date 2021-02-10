@@ -3,16 +3,16 @@ title: 다중 사용자 기능 자습서 소개
 description: 이 과정을 완료하여 HoloLens 2 애플리케이션에서 공유된 다중 사용자 환경을 구현하는 방법을 알아봅니다.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: c18bd7c10ed042278053a51c2d1894564000dfe2
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 90c5b2ee3f25c39fc644aee0fbbf49643f7d2a59
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699022"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590175"
 ---
 # <a name="1-introduction-to-the-multi-user-capabilities-tutorials"></a>1. 다중 사용자 기능 자습서 소개
 
@@ -50,7 +50,7 @@ ms.locfileid: "98699022"
   * Unity 2019 LTS가 설치되고 iOS 빌드 지원 모듈이 추가된 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
 
 > [!CAUTION]
-> 이 자습서 시리즈에 권장되는 Mixed Reality Toolkit 버전은 MRTK 2.5.1입니다.
+> 이 자습서 시리즈에 권장되는 Mixed Reality Toolkit 버전은 MRTK 2.5.3입니다.
 
 > [!CAUTION]
 > 이 자습서 시리즈에 권장되는 Unity 버전은 Unity 2019 LTS입니다. 이 버전은 위의 링크에 연결된 필수 구성 요소에서 설명한 모든 Unity 버전 요구 사항을 대체합니다.
