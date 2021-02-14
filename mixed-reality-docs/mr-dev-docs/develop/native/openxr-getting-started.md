@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, Windows Mixed Reality, OpenXR 개발자 도구, DirectX, 네이티브, 네이티브 앱, 사용자 지정 엔진, 미들웨어, 시작 하기, 101, preview 확장, OpenXR runtime 버전, 시스템 상태
-ms.openlocfilehash: 918dfb1f336598548735b1699c61d1b350fed293
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 99bf2e19c0bd7708f8c2421d7a466e77a6a75d84
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613197"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496071"
 ---
 # <a name="getting-started-with-openxr"></a>OpenXR 시작
 
@@ -35,7 +35,7 @@ HoloLens 2 용 OpenXR 응용 프로그램 개발을 시작 하려면:
 1. Windows Mixed Reality 최종 사용자가 OpenXR 응용 프로그램을 실행 하는 데 필요한 최소 요구 사항인 Windows 10 2019 업데이트 (1903) 이상을 실행 하 고 있어야 합니다.  이전 버전의 Windows 10을 사용 하는 경우 <a href="https://www.microsoft.com/software-download/windows10" target="_blank">windows 10 업데이트 길잡이</a>를 사용 하 여 업그레이드할 수 있습니다.
 2. Windows Mixed Reality 헤드셋을 설정 하거나 지침에 따라 [Windows Mixed reality 시뮬레이터를 사용 하도록](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)설정 합니다.
 
-간단하죠.  Windows Mixed Reality OpenXR 런타임은 모든 Windows Mixed Reality 사용자에 대해 자동으로 설치 되 고 활성화 됩니다.  그런 다음 Microsoft Store는 런타임을 최신 상태로 유지 합니다.
+정말 간단하죠.  Windows Mixed Reality OpenXR 런타임은 모든 Windows Mixed Reality 사용자에 대해 자동으로 설치 되 고 활성화 됩니다.  그런 다음 Microsoft Store는 런타임을 최신 상태로 유지 합니다.
 
 Windows Mixed Reality OpenXR 런타임을 다시 활성화 하려면 시작 메뉴에서 Mixed Reality 포털을 시작 하 고 창 위쪽에서 "Fix it"를 선택 합니다.  해당 단추가 없으면 OpenXR 런타임이 이미 활성 상태입니다.<br>
 

@@ -3,15 +3,15 @@ title: HoloLens 에뮬레이터 아카이브
 description: Microsoft HoloLens (첫 번째 gen) 및 HoloLens 2 에뮬레이터에 대해 출시 된 빌드의 보관 된 목록을 최신 상태로 유지 합니다.
 author: hamalawi
 ms.author: moelhama
-ms.date: 01/13/2021
+ms.date: 02/09/2021
 ms.topic: article
 keywords: HoloLens, 에뮬레이터, 빌드, 버전, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 보관
-ms.openlocfilehash: 754fef2b22df50a8bbf7a88572f8292ed2087e62
-ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
+ms.openlocfilehash: 40a9428aee0aa115ee9ac20de6d6813a31d46970
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98166768"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496050"
 ---
 # <a name="hololens-2-emulator-archive"></a>HoloLens 2 에뮬레이터 보관
 
@@ -19,6 +19,8 @@ HoloLens 에뮬레이터 (첫 번째 gen) 및 HoloLens 2 에뮬레이터 빌드�
 
 |  빌드 |  출시 날짜 |  참고 |
 |----------|----------|----------|
+|  [HoloLens 2 에뮬레이터 빌드 10.0.19041.1136](https://go.microsoft.com/fwlink/?linkid=2154784) | 2021년 2월 9일 | Windows Holographic 버전 20H2 2 월 2021 업데이트  일반 HoloLens 2 릴리스 정보는 다음을 참조 하세요. https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 에뮬레이터 빌드 10.0.18362.1098](https://go.microsoft.com/fwlink/?linkid=2154381) | 2021년 2월 9일 | Windows Holographic 버전 1903 2 월 2021 업데이트  일반 HoloLens 2 릴리스 정보는 다음을 참조 하세요. https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 에뮬레이터 빌드 10.0.19041.1134](https://go.microsoft.com/fwlink/?linkid=2152389) | 2021 년 1 월 13 일 | Windows Holographic 버전 20H2 1 월 2021 업데이트  일반 HoloLens 2 릴리스 정보는 다음을 참조 하세요. https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 에뮬레이터 빌드 10.0.18362.1091](https://go.microsoft.com/fwlink/?linkid=2152388) | 2021 년 1 월 13 일 | Windows Holographic 버전 1903 1 월 2021 업데이트  일반 HoloLens 2 릴리스 정보는 다음을 참조 하세요. https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 에뮬레이터 빌드 10.0.19041.1131](https://go.microsoft.com/fwlink/?linkid=2151523) | 2020년 12월 8일 | Windows Holographic 버전 20H2 12 월 2020 업데이트  일반 HoloLens 2 릴리스 정보는 다음을 참조 하세요. https://docs.microsoft.com/hololens/hololens-release-notes |

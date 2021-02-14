@@ -6,17 +6,29 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 버전 기록, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: e1f80d0d2cbd02b78ed07e3ec60825ffe1059309
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 8fa1671657a7cb057f88da24fe4cfe68b0401397
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699012"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496041"
 ---
 # <a name="holographic-remoting-version-history"></a>Holographic 원격 버전 기록
 
 > [!IMPORTANT]
 > 이 지침은 HoloLens 2의 Holographic Remoting에만 적용 됩니다.
+
+## <a name="version-250-february-12-2021"></a>버전 2.5.0 (2 월 12 일, 2021) <a name="v2.5.0"></a>
+* [OPENXR API](../native/openxr.md) 를 사용 하는 Holographic Remoting은 이제 다음을 지원 합니다.
+  * XR_MSFT_spatial_anchor 확장입니다. 이 확장을 통해 응용 프로그램은 사용자의 실제 환경에서 런타임에 의해 추적 되는 임의의 freespace 지점만 공간 앵커를 만들 수 있습니다.
+  * XR_MSFT_controller_model 확장입니다. 이 확장은 컨트롤러에 대 한 지 수 TF 모델을 로드 하는 메커니즘을 제공 합니다.
+  * XR_MSFT_holographic_remoting 확장의 일부로 사용자 지정 데이터 채널 이에 대 한 예제는 [OpenXR 원격 샘플](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)에 나와 있습니다.
+* 플레이어와 원격 측 간의 동기화가 향상 되었습니다. 이를 통해 동적으로 변경 되는 포즈 및 프레임 버퍼링을 사용할 수 있습니다 .이를 통해 원격 렌더링 된 콘텐츠가 필요한 대상 프레임 속도의 디스플레이에 매끄럽게 전달 됩니다.
+* Microsoft Store를 통해 사용할 수 있는 Holographic 원격 플레이어의 성능이 개선 되었습니다. HoloLens 2에서 플레이어는 이제 초당 60 프레임에서 solid를 실행 합니다.
+* 원격 앱에서 [SpatialSurfaceObserver](https://docs.microsoft.com/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) 를 통해 쿼리할 수 있는 공간 노출 영역 메시의 전송 최적화.
+* SpatialAnchorManager 메서드를 호출 하거나 앵커 해제 시 예외가 발생 하는 문제를 해결 했습니다.
+* PlayerContext 또는 RemoteContext 인스턴스를 닫을 때 충돌 하는 스레딩 문제가 발생 합니다.
+* 다른 많은 버그 수정 및 안정성 향상.
 
 ## <a name="version-241-january-22-2021"></a>버전 2.4.1 (2021 년 1 월 22 일) <a name="v2.4.1"></a>
 
