@@ -6,68 +6,68 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 보강 현실, 가상 현실, 혼합 현실 헤드셋, 학습, 자습서, 시작
-ms.openlocfilehash: 1adfb979cfc22be5da18ed990c9db55e6bad97f3
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: cae588acbcddeefae45a555f335f1c74389f1824
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99238142"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496171"
 ---
-# <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a><span data-ttu-id="1c14e-104">Unity 용 Mixed Reality OpenXR 플러그 인 사용</span><span class="sxs-lookup"><span data-stu-id="1c14e-104">Using the Mixed Reality OpenXR Plugin for Unity</span></span>
+# <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a><span data-ttu-id="619c5-104">Unity 용 Mixed Reality OpenXR 플러그 인 사용</span><span class="sxs-lookup"><span data-stu-id="619c5-104">Using the Mixed Reality OpenXR Plugin for Unity</span></span>
 
-<span data-ttu-id="1c14e-105">Unity 버전 2020.2부터 Microsoft의 Mixed Reality OpenXR 플러그 인 패키지는 UPM (Unity 패키지 관리자)를 사용 하 여 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-105">Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin package is available using the Unity Package Manager (UPM).</span></span>
+<span data-ttu-id="619c5-105">Unity 버전 2020.2부터 Microsoft의 Mixed Reality OpenXR 플러그 인 패키지는 UPM (Unity 패키지 관리자)를 사용 하 여 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-105">Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin package is available using the Unity Package Manager (UPM).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1c14e-106">필수 구성 요소</span><span class="sxs-lookup"><span data-stu-id="1c14e-106">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="619c5-106">사전 요구 사항</span><span class="sxs-lookup"><span data-stu-id="619c5-106">Prerequisites</span></span>
 
-* <span data-ttu-id="1c14e-107">Unity 2020.2 이상</span><span class="sxs-lookup"><span data-stu-id="1c14e-107">Unity 2020.2 or later</span></span>
-* <span data-ttu-id="1c14e-108">Unity OpenXR plugin 0.1.2 이상</span><span class="sxs-lookup"><span data-stu-id="1c14e-108">Unity OpenXR plugin 0.1.2 or later</span></span>
-* <span data-ttu-id="1c14e-109">Visual Studio 2019 이상</span><span class="sxs-lookup"><span data-stu-id="1c14e-109">Visual Studio 2019 or later</span></span>
-* <span data-ttu-id="1c14e-110">HoloLens 2 앱 용 Unity에서 **UWP** 플랫폼 지원 설치</span><span class="sxs-lookup"><span data-stu-id="1c14e-110">Install **UWP** platform support in Unity for HoloLens 2 apps</span></span>
+* <span data-ttu-id="619c5-107">Unity 2020.2 이상</span><span class="sxs-lookup"><span data-stu-id="619c5-107">Unity 2020.2 or later</span></span>
+* <span data-ttu-id="619c5-108">Unity OpenXR plugin 0.1.3 이상</span><span class="sxs-lookup"><span data-stu-id="619c5-108">Unity OpenXR plugin 0.1.3 or later</span></span>
+* <span data-ttu-id="619c5-109">Visual Studio 2019 이상</span><span class="sxs-lookup"><span data-stu-id="619c5-109">Visual Studio 2019 or later</span></span>
+* <span data-ttu-id="619c5-110">HoloLens 2 앱 용 Unity에서 **UWP** 플랫폼 지원 설치</span><span class="sxs-lookup"><span data-stu-id="619c5-110">Install **UWP** platform support in Unity for HoloLens 2 apps</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1c14e-111">Windows PC에서 VR 응용 프로그램을 작성 하는 경우 Mixed Reality OpenXR 플러그 인이 반드시 필요한 것은 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-111">If you're building VR applications on Windows PC, the Mixed Reality OpenXR plugin is not necessarily required.</span></span> <span data-ttu-id="1c14e-112">그러나 HP 반향 G2 컨트롤러에 대 한 컨트롤러 매핑을 사용자 지정 하거나 HoloLens 2와 VR 헤드셋 모두에서 작동 하는 앱을 빌드하는 경우에는 플러그 인을 설치 하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-112">However, you'll want to install the plugin if you're customizing controller mapping for HP Reverb G2 controllers or building apps that work on both HoloLens 2 and VR headsets.</span></span>
+> <span data-ttu-id="619c5-111">Windows PC에서 VR 응용 프로그램을 작성 하는 경우 Mixed Reality OpenXR 플러그 인이 반드시 필요한 것은 아닙니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-111">If you're building VR applications on Windows PC, the Mixed Reality OpenXR plugin is not necessarily required.</span></span> <span data-ttu-id="619c5-112">그러나 HP 반향 G2 컨트롤러에 대 한 컨트롤러 매핑을 사용자 지정 하거나 HoloLens 2와 VR 헤드셋 모두에서 작동 하는 앱을 빌드하는 경우에는 플러그 인을 설치 하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-112">However, you'll want to install the plugin if you're customizing controller mapping for HP Reverb G2 controllers or building apps that work on both HoloLens 2 and VR headsets.</span></span>
 
-## <a name="installing-openxr-with-the-mixed-reality-feature-tool"></a><span data-ttu-id="1c14e-113">혼합 현실 기능 도구를 사용 하 여 OpenXR 설치</span><span class="sxs-lookup"><span data-stu-id="1c14e-113">Installing OpenXR with the Mixed Reality Feature Tool</span></span>
+## <a name="installing-openxr-with-the-mixed-reality-feature-tool"></a><span data-ttu-id="619c5-113">혼합 현실 기능 도구를 사용 하 여 OpenXR 설치</span><span class="sxs-lookup"><span data-stu-id="619c5-113">Installing OpenXR with the Mixed Reality Feature Tool</span></span>
 
-<span data-ttu-id="1c14e-114">새 Mixed Reality 기능 도구 응용 프로그램을 사용 하 여 OpenXR 플러그 인을 설치 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-114">Install the OpenXR plugin with the new Mixed Reality Feature Tool application.</span></span> <span data-ttu-id="1c14e-115">[설치 및 사용 지침](welcome-to-mr-feature-tool.md) 을 따르고 Mixed reality Toolkit 범주의 **Mixed Reality OpenXR 플러그 인** 패키지를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-115">Follow the [installation and usage instructions](welcome-to-mr-feature-tool.md) and select the **Mixed Reality OpenXR Plugin** package in the Mixed Reality Toolkit category:</span></span>
+<span data-ttu-id="619c5-114">새 Mixed Reality 기능 도구 응용 프로그램을 사용 하 여 OpenXR 플러그 인을 설치 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-114">Install the OpenXR plugin with the new Mixed Reality Feature Tool application.</span></span> <span data-ttu-id="619c5-115">[설치 및 사용 지침](welcome-to-mr-feature-tool.md) 을 따르고 Mixed reality Toolkit 범주의 **Mixed Reality OpenXR 플러그 인** 패키지를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-115">Follow the [installation and usage instructions](welcome-to-mr-feature-tool.md) and select the **Mixed Reality OpenXR Plugin** package in the Mixed Reality Toolkit category:</span></span>
 
 ![Open xr 플러그 인이 강조 표시 된 혼합 현실 기능 도구 패키지 창](images/feature-tool-openxr.png)
 
-## <a name="configuring-xr-plugin-management-for-openxr"></a><span data-ttu-id="1c14e-117">OpenXR에 대 한 XR 플러그 인 관리 구성</span><span class="sxs-lookup"><span data-stu-id="1c14e-117">Configuring XR Plugin Management for OpenXR</span></span>
+## <a name="configuring-xr-plugin-management-for-openxr"></a><span data-ttu-id="619c5-117">OpenXR에 대 한 XR 플러그 인 관리 구성</span><span class="sxs-lookup"><span data-stu-id="619c5-117">Configuring XR Plugin Management for OpenXR</span></span>
 
-<span data-ttu-id="1c14e-118">OpenXR을 Unity에서 런타임으로 설정 하려면 다음을 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-118">To set OpenXR as the the runtime in Unity:</span></span>
+<span data-ttu-id="619c5-118">OpenXR을 Unity에서 런타임으로 설정 하려면 다음을 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-118">To set OpenXR as the the runtime in Unity:</span></span>
 
-1. <span data-ttu-id="1c14e-119">Unity 편집기에서 **편집 > 프로젝트 설정** 으로 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-119">In the Unity Editor, navigate to **Edit > Project Settings**</span></span>
-2. <span data-ttu-id="1c14e-120">설정 목록에서 **XR 플러그 인 관리** 를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-120">In the list of Settings, select **XR Plugin Management**</span></span>
-3. <span data-ttu-id="1c14e-121">**INITIALIZE XR On Startup** and **OpenXR (미리 보기)** 상자를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-121">Check the **Initialize XR on Startup** and **OpenXR (Preview)** boxes</span></span>
-4. <span data-ttu-id="1c14e-122">HoloLens 2를 대상으로 하는 경우 UWP 플랫폼에 있는지 확인 하 고 **Microsoft HoloLens 기능 집합** 을 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-122">If targeting HoloLens 2, make sure you're on the UWP platform and select **Microsoft HoloLens Feature Set**</span></span>
+1. <span data-ttu-id="619c5-119">Unity 편집기에서 **편집 > 프로젝트 설정** 으로 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-119">In the Unity Editor, navigate to **Edit > Project Settings**</span></span>
+2. <span data-ttu-id="619c5-120">설정 목록에서 **XR 플러그 인 관리** 를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-120">In the list of Settings, select **XR Plugin Management**</span></span>
+3. <span data-ttu-id="619c5-121">**INITIALIZE XR On Startup** and **OpenXR (미리 보기)** 상자를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-121">Check the **Initialize XR on Startup** and **OpenXR (Preview)** boxes</span></span>
+4. <span data-ttu-id="619c5-122">HoloLens 2를 대상으로 하는 경우 UWP 플랫폼에 있는지 확인 하 고 **Microsoft HoloLens 기능 집합** 을 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-122">If targeting HoloLens 2, make sure you're on the UWP platform and select **Microsoft HoloLens Feature Set**</span></span>
 
 ![XR 플러그 인 관리를 강조 표시 한 Unity 편집기에서 열리는 프로젝트 설정 패널의 스크린샷](images/openxr-img-05.png)
 
 > [!IMPORTANT]
-> <span data-ttu-id="1c14e-124">**OpenXR 플러그 인 (미리 보기)** 옆에 빨간색 경고 아이콘이 표시 되는 경우 계속 하기 전에 아이콘을 클릭 하 고 **모두 수정** 을 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-124">If you see a red warning icon next to **OpenXR Plugin (Preview)**, click the icon and select **Fix all** before continuing.</span></span> <span data-ttu-id="1c14e-125">Unity 편집기를 다시 시작 해야 변경 내용이 적용 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-125">The Unity Editor may need to restart itself for the changes to take effect.</span></span>
+> <span data-ttu-id="619c5-124">**OpenXR 플러그 인 (미리 보기)** 옆에 빨간색 경고 아이콘이 표시 되는 경우 계속 하기 전에 아이콘을 클릭 하 고 **모두 수정** 을 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-124">If you see a red warning icon next to **OpenXR Plugin (Preview)**, click the icon and select **Fix all** before continuing.</span></span> <span data-ttu-id="619c5-125">Unity 편집기를 다시 시작 해야 변경 내용이 적용 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-125">The Unity Editor may need to restart itself for the changes to take effect.</span></span>
 
 ![OpenXR 프로젝트 유효성 검사 창의 스크린샷](images/openxr-img-06.png)
 
-<span data-ttu-id="1c14e-127">이제 Unity에서 OpenXR를 사용 하 여 개발을 시작할 준비가 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-127">You're now ready to begin developing with OpenXR in Unity!</span></span>  <span data-ttu-id="1c14e-128">OpenXR 샘플을 사용 하는 방법을 알아보려면 다음 섹션을 계속 진행 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-128">Continue on to the next section to learn how to use the OpenXR samples.</span></span>
+<span data-ttu-id="619c5-127">이제 Unity에서 OpenXR를 사용 하 여 개발을 시작할 준비가 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-127">You're now ready to begin developing with OpenXR in Unity!</span></span>  <span data-ttu-id="619c5-128">OpenXR 샘플을 사용 하는 방법을 알아보려면 다음 섹션을 계속 진행 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-128">Continue on to the next section to learn how to use the OpenXR samples.</span></span>
 
-## <a name="optimization"></a><span data-ttu-id="1c14e-129">Optimization</span><span class="sxs-lookup"><span data-stu-id="1c14e-129">Optimization</span></span>
+## <a name="optimization"></a><span data-ttu-id="619c5-129">Optimization</span><span class="sxs-lookup"><span data-stu-id="619c5-129">Optimization</span></span>
 
-<span data-ttu-id="1c14e-130">HoloLens 2 용으로 개발 하는 경우 **> OpenXR> Mixed Reality로 이동 하 여 hololens 2에 권장 되는 프로젝트 설정을 적용** 하 여 더 나은 앱 성능을 얻을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-130">If you're developing for HoloLens 2, navigate to **Mixed Reality> OpenXR > Apply recommended project settings for HoloLens 2** to get better app performance.</span></span>
+<span data-ttu-id="619c5-130">HoloLens 2 용으로 개발 하는 경우 **> OpenXR> Mixed Reality로 이동 하 여 hololens 2에 권장 되는 프로젝트 설정을 적용** 하 여 더 나은 앱 성능을 얻을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-130">If you're developing for HoloLens 2, navigate to **Mixed Reality> OpenXR > Apply recommended project settings for HoloLens 2** to get better app performance.</span></span>
 
 ![OpenXR가 선택 된 혼합 현실 메뉴 항목 열기의 스크린샷](images/openxr-img-08.png)
 
-## <a name="try-out-the-unity-sample-scenes"></a><span data-ttu-id="1c14e-132">Unity 샘플 장면을 사용해 보세요.</span><span class="sxs-lookup"><span data-stu-id="1c14e-132">Try out the Unity sample scenes</span></span>
+## <a name="try-out-the-unity-sample-scenes"></a><span data-ttu-id="619c5-132">Unity 샘플 장면을 사용해 보세요.</span><span class="sxs-lookup"><span data-stu-id="619c5-132">Try out the Unity sample scenes</span></span>
 
-<span data-ttu-id="1c14e-133">하나 이상의 예제를 활용 하려면 **패키지 관리자** 에서 [arfoundation 4.0 +](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) 를 설치 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-133">To utilize one or more of the examples, install [ARFoundation 4.0+](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) from the **Package Manager**:</span></span>
+<span data-ttu-id="619c5-133">하나 이상의 예제를 활용 하려면 **패키지 관리자** 에서 [arfoundation 4.0 +](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) 를 설치 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-133">To utilize one or more of the examples, install [ARFoundation 4.0+](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) from the **Package Manager**:</span></span>
 
 ![AR가 강조 표시 된 unity 편집기에서 open Unity 패키지 관리자의 스크린샷](images/openxr-img-09.png)
 
-### <a name="hololens-2-samples"></a><span data-ttu-id="1c14e-135">HoloLens 2 샘플</span><span class="sxs-lookup"><span data-stu-id="1c14e-135">HoloLens 2 samples</span></span>
+### <a name="hololens-2-samples"></a><span data-ttu-id="619c5-135">HoloLens 2 샘플</span><span class="sxs-lookup"><span data-stu-id="619c5-135">HoloLens 2 samples</span></span>
 
-1. <span data-ttu-id="1c14e-136">Unity 편집기에서 **창 > 패키지 관리자** 로 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-136">In the Unity Editor, navigate to **Window > Package Manager**</span></span>
-2. <span data-ttu-id="1c14e-137">패키지 목록에서 **Mixed Reality OpenXR 플러그 인** 을 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-137">In the list of packages, select **Mixed Reality OpenXR Plugin**</span></span>
-3. <span data-ttu-id="1c14e-138">**샘플 목록에서** 샘플을 찾고 **가져오기** 를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-138">Locate the sample in the **Samples** list and select **Import**</span></span>
+1. <span data-ttu-id="619c5-136">Unity 편집기에서 **창 > 패키지 관리자** 로 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-136">In the Unity Editor, navigate to **Window > Package Manager**</span></span>
+2. <span data-ttu-id="619c5-137">패키지 목록에서 **Mixed Reality OpenXR 플러그 인** 을 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-137">In the list of packages, select **Mixed Reality OpenXR Plugin**</span></span>
+3. <span data-ttu-id="619c5-138">**샘플 목록에서** 샘플을 찾고 **가져오기** 를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-138">Locate the sample in the **Samples** list and select **Import**</span></span>
 
 ![Unity 편집기에서 open Reality OpenXR 플러그 인을 선택 하 고 샘플 가져오기 단추가 강조 표시 된 Unity 패키지 관리자의 스크린샷](images/openxr-img-03.png)
 
@@ -80,49 +80,35 @@ ms.locfileid: "99238142"
 ![Screenshot of Unity Package Manager open in Unity editor with OpenXR Plugin selected and samples import button highlighted](images/openxr-img-10.png) -->
 
 > [!NOTE]
-> <span data-ttu-id="1c14e-140">패키지가 업데이트 되 면 Unity는 가져온 샘플을 업데이트 하는 옵션을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-140">When a package is updated, Unity provides the option to update imported samples.</span></span>  <span data-ttu-id="1c14e-141">가져온 샘플을 업데이트 하면 샘플 및 연결 된 자산에 대 한 모든 변경 내용이 덮어쓰여집니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-141">Updating an imported sample will overwrite any changes that have been made to the sample and associated assets.</span></span>
+> <span data-ttu-id="619c5-140">패키지가 업데이트 되 면 Unity는 가져온 샘플을 업데이트 하는 옵션을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-140">When a package is updated, Unity provides the option to update imported samples.</span></span>  <span data-ttu-id="619c5-141">가져온 샘플을 업데이트 하면 샘플 및 연결 된 자산에 대 한 모든 변경 내용이 덮어쓰여집니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-141">Updating an imported sample will overwrite any changes that have been made to the sample and associated assets.</span></span>
 
-## <a name="using-mrtk-with-openxr-support"></a><span data-ttu-id="1c14e-142">OpenXR 지원과 함께 MRTK 사용</span><span class="sxs-lookup"><span data-stu-id="1c14e-142">Using MRTK with OpenXR support</span></span>
+## <a name="using-mrtk-with-openxr-support"></a><span data-ttu-id="619c5-142">OpenXR 지원과 함께 MRTK 사용</span><span class="sxs-lookup"><span data-stu-id="619c5-142">Using MRTK with OpenXR support</span></span>
 
-<span data-ttu-id="1c14e-143">MRTK Unity는 2.5.3 릴리스로 시작 하는 Mixed Reality OpenXR 플러그 인을 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-143">MRTK Unity supports the Mixed Reality OpenXR plugin starting with the 2.5.3 release.</span></span>  
+<span data-ttu-id="619c5-143">MRTK Unity는 2.5.3 릴리스로 시작 하는 Mixed Reality OpenXR 플러그 인을 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-143">MRTK Unity supports the Mixed Reality OpenXR plugin starting with the 2.5.3 release.</span></span>  
 
-1. <span data-ttu-id="1c14e-144">[혼합 현실 기능 도구](welcome-to-mr-feature-tool.md) 를 다시 열고 Platform Support 범주의 **Mixed Reality OpenXR 플러그 인** 패키지를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-144">Open the [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md) again and select the **Mixed Reality OpenXR Plugin** package in the Platform Support category</span></span>
-
-<!-- MRTK plugins can be installed from the same scoped registries as you set up when [installing the Mixed Reality OpenXR plugin](#installing-the-mixed-reality-openxr-plugin). You can find more detailed information in the [MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/usingupm.html#registering-the-mixed-reality-component-server).
-
-1. Add following packages in your **[projectRoot]/Packages/manifest.json** file:
-
-```json
-"dependencies": {
-    "com.microsoft.mixedreality.toolkit.foundation": "2.5.3",
-    "com.microsoft.mixedreality.toolkit.tools": "2.5.3",
-    "com.microsoft.mixedreality.toolkit.examples": "2.5.3",
-    …
-}
-``` -->
-
-2. <span data-ttu-id="1c14e-145">검사기에서 MixedReality Toolkit 구성 요소 스크립트로 이동 하 고 **Defaultopenxrconfigurationprofile** 프로필로 전환 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-145">Go to the MixedReality Toolkit component script in the Inspector and switch to the **DefaultOpenXRConfigurationProfile** profile:</span></span>
+1. <span data-ttu-id="619c5-144">[혼합 현실 기능 도구](welcome-to-mr-feature-tool.md) 를 다시 열고 Platform Support 범주의 **Mixed Reality OpenXR 플러그 인** 패키지를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-144">Open the [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md) again and select the **Mixed Reality OpenXR Plugin** package in the Platform Support category</span></span>
+2. <span data-ttu-id="619c5-145">검사기에서 MixedReality Toolkit 구성 요소 스크립트로 이동 하 고 **Defaultopenxrconfigurationprofile** 프로필로 전환 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-145">Go to the MixedReality Toolkit component script in the Inspector and switch to the **DefaultOpenXRConfigurationProfile** profile:</span></span>
 
 ![검사기의 Mixed Reality Toolkit 구성 요소에서 MRTK 구성 전환 스크린샷](images/openxr-img-11.png)
 
-### <a name="known-issues"></a><span data-ttu-id="1c14e-147">알려진 문제</span><span class="sxs-lookup"><span data-stu-id="1c14e-147">Known issues</span></span> 
+### <a name="known-issues"></a><span data-ttu-id="619c5-147">알려진 문제</span><span class="sxs-lookup"><span data-stu-id="619c5-147">Known issues</span></span> 
 
-<span data-ttu-id="1c14e-148">손으로 추적 기능을 사용 하는 경우 **자산/MixedRealityToolkit/link.xml** 파일에 다음 줄을 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-148">When using the Hand Tracking feature, add following line in the **Assets/MixedRealityToolkit.Generated/link.xml** file:</span></span>
+<span data-ttu-id="619c5-148">손으로 추적 기능을 사용 하는 경우 **자산/MixedRealityToolkit/link.xml** 파일에 다음 줄을 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-148">When using the Hand Tracking feature, add following line in the **Assets/MixedRealityToolkit.Generated/link.xml** file:</span></span>
 
 ```
 <assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>
 ```
 
-## <a name="next-steps"></a><span data-ttu-id="1c14e-149">다음 단계</span><span class="sxs-lookup"><span data-stu-id="1c14e-149">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="619c5-149">다음 단계</span><span class="sxs-lookup"><span data-stu-id="619c5-149">Next steps</span></span>
 
-<span data-ttu-id="1c14e-150">이제 OpenXR에 대해 프로젝트를 구성 하 고 샘플에 액세스할 수 있으므로, OpenXR 플러그 인에서 현재 지원 되는 [기능](openxr-supported-features.md) 을 확인 하세요.</span><span class="sxs-lookup"><span data-stu-id="1c14e-150">Now that you have your project configured for OpenXR and have access to samples, check out what [features](openxr-supported-features.md) are currently supported in our OpenXR plugin.</span></span>
+<span data-ttu-id="619c5-150">이제 OpenXR에 대해 프로젝트를 구성 하 고 샘플에 액세스할 수 있으므로, OpenXR 플러그 인에서 현재 지원 되는 [기능](openxr-supported-features.md) 을 확인 하세요.</span><span class="sxs-lookup"><span data-stu-id="619c5-150">Now that you have your project configured for OpenXR and have access to samples, check out what [features](openxr-supported-features.md) are currently supported in our OpenXR plugin.</span></span>
 
-## <a name="have-feedback"></a><span data-ttu-id="1c14e-151">피드백이 있나요?</span><span class="sxs-lookup"><span data-stu-id="1c14e-151">Have Feedback?</span></span>
+## <a name="have-feedback"></a><span data-ttu-id="619c5-151">피드백이 있나요?</span><span class="sxs-lookup"><span data-stu-id="619c5-151">Have Feedback?</span></span>
 
-<span data-ttu-id="1c14e-152">OpenXR는 여전히 실험적 이므로 피드백을 제공 하는 데 도움이 되도록 피드백을 보내 주셔서 감사 합니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-152">OpenXR is still experimental, so we’d appreciate any feedback you can give us to help make it better.</span></span> <span data-ttu-id="1c14e-153">[](https://aka.ms/unityforums) **Microsoft**  +  **OpenXR** 및 **HoloLens 2** 또는 **Windows Mixed Reality** 를 사용 하 여 포럼 게시물에 태그를 지정 하 여 Unity 포럼에서이를 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1c14e-153">You'll find us on the [Unity Forums](https://aka.ms/unityforums) by tagging your forum post with **Microsoft** + **OpenXR** and either **HoloLens 2** or **Windows Mixed Reality**.</span></span>
+<span data-ttu-id="619c5-152">OpenXR는 여전히 실험적 이므로 피드백을 제공 하는 데 도움이 되도록 피드백을 보내 주셔서 감사 합니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-152">OpenXR is still experimental, so we’d appreciate any feedback you can give us to help make it better.</span></span> <span data-ttu-id="619c5-153">[](https://aka.ms/unityforums) **Microsoft**  +  **OpenXR** 및 **HoloLens 2** 또는 **Windows Mixed Reality** 를 사용 하 여 포럼 게시물에 태그를 지정 하 여 Unity 포럼에서이를 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="619c5-153">You'll find us on the [Unity Forums](https://aka.ms/unityforums) by tagging your forum post with **Microsoft** + **OpenXR** and either **HoloLens 2** or **Windows Mixed Reality**.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="1c14e-154">참고 항목</span><span class="sxs-lookup"><span data-stu-id="1c14e-154">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="619c5-154">추가 정보</span><span class="sxs-lookup"><span data-stu-id="619c5-154">See also</span></span>
 
-* [<span data-ttu-id="1c14e-155">MRTK를 사용하지 않고 프로젝트 구성</span><span class="sxs-lookup"><span data-stu-id="1c14e-155">Configuring your project without MRTK</span></span>](configure-unity-project.md)
-* [<span data-ttu-id="1c14e-156">Unity 권장 설정</span><span class="sxs-lookup"><span data-stu-id="1c14e-156">Recommended settings for Unity</span></span>](recommended-settings-for-unity.md)
-* [<span data-ttu-id="1c14e-157">Unity의 권장 성능</span><span class="sxs-lookup"><span data-stu-id="1c14e-157">Performance recommendations for Unity</span></span>](performance-recommendations-for-unity.md#how-to-profile-with-unity)
+* [<span data-ttu-id="619c5-155">MRTK를 사용하지 않고 프로젝트 구성</span><span class="sxs-lookup"><span data-stu-id="619c5-155">Configuring your project without MRTK</span></span>](configure-unity-project.md)
+* [<span data-ttu-id="619c5-156">Unity 권장 설정</span><span class="sxs-lookup"><span data-stu-id="619c5-156">Recommended settings for Unity</span></span>](recommended-settings-for-unity.md)
+* [<span data-ttu-id="619c5-157">Unity의 권장 성능</span><span class="sxs-lookup"><span data-stu-id="619c5-157">Performance recommendations for Unity</span></span>](performance-recommendations-for-unity.md#how-to-profile-with-unity)
