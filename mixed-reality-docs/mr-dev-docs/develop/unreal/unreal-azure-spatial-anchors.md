@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, azure development, spatial anchors, 혼합 현실, 개발, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 홀로그램, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 5797cd48198b163b55f3724685126b1d4d85c69c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 01d7217f038519d68eabfbf4f273c7ff8cbe7193
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583023"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496199"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Unreal의 Azure Spatial Anchors
 
@@ -44,6 +44,12 @@ Azure Spatial Anchors는 Microsoft Mixed Reality 서비스이며, 증강 현실 
 
 > [!NOTE]
 > Unreal 4.25의 Azure Spatial Anchors는 Azure AD 인증 토큰을 지원하지 않지만 이후 릴리스에서는 이 기능에 대한 지원이 제공될 예정입니다.
+
+## <a name="enabling-internet-access"></a>인터넷 액세스 사용
+
+**프로젝트 설정 > HoloLens** 를 열고 **인터넷 클라이언트** 기능을 사용합니다.
+
+![기능이 강조 표시된 HoloLens 프로젝트 설정](images/asa-enable-wifi-connection.jpg)
 
 ## <a name="adding-azure-spatial-anchors-plugins"></a>Azure Spatial Anchors 플러그 인 추가
 
