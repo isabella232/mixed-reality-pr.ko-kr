@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: ggv, 음성, cortana, 음성, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 응시
-ms.openlocfilehash: 079a3d457da9403611d2f825dd6e599a4e9f0353
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: cc1ecd7d236748c3c4de77678e6f67c69a2c1af1
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583224"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759144"
 ---
 # <a name="voice-input"></a>음성 입력
 
@@ -290,7 +290,7 @@ Windows Mixed Reality Developer Edition 릴리스 2017에서는 초기 HMD 연�
 ## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 음성 입력
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 를 사용 하면 개체에 음성 명령을 쉽게 할당할 수 있습니다. MRTK의 **음성 입력 프로필** 을 사용 하 여 키워드를 정의 합니다. **SpeechInputHandler** 스크립트를 할당 하 여 음성 입력 프로필에 정의 된 키워드에 대 한 모든 개체 응답을 만들 수 있습니다. 또한 SpeechInputHandler는 사용자의 신뢰도를 높이기 위해 음성 확인 레이블을 제공 합니다.
 
-* [MRTK-음성 명령](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html)
+* [MRTK-음성 명령](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/speech.md)
 
 ---
 

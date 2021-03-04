@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, 큐, ui, ux, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 오디오
-ms.openlocfilehash: d0dc8ce6425d597d04b47a6c8b08f72534488594
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b93092b597d0267c1169cf823b1a5c1fa03c3c3f
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007203"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759879"
 ---
 # <a name="interactable-object"></a>상호 작용 가능한 개체
 
@@ -41,19 +41,19 @@ Holographic 개체는 혼합 현실에서 실제 환경과 혼합 되므로 상�
 
 :::row:::
     :::column:::
-       ![interactibleobject-기본값](images/interactibleobject-states-default.jpg)<br>
+       ![기본 상태를 사용 하는 Interactable 개체](images/interactibleobject-states-default.jpg)<br>
        **기본 (관찰) 상태**<br>
         개체의 기본 유휴 상태입니다.
     커서가 개체에 없습니다. 직접 검색 되지 않았습니다.
     :::column-end:::
     :::column:::
-       ![interactibleobject-상태-대상](images/interactibleobject-states-targeted.jpg)<br>
+       ![대상 및 가리키기 상태의 Interactable 개체](images/interactibleobject-states-targeted.jpg)<br>
         **대상 (가리키기) 상태**<br>
         개체가 응시 커서, 손가락 근접 또는 동작 컨트롤러의 포인터를 대상으로 하는 경우
     커서가 개체에 있습니다. 준비가 완료 되었습니다.
     :::column-end:::
     :::column:::
-       ![interactibleobject-상태-누름](images/interactibleobject-states-pressed.jpg)<br>
+       ![눌린 상태의 Interactable 개체](images/interactibleobject-states-pressed.jpg)<br>
        **누름 상태**<br>
         공기 탭 제스처를 사용 하 여 개체를 누르면 손가락을 누르거나 동작 컨트롤러의 선택 단추를 선택 합니다.
     커서가 개체에 있습니다. 손으로 검색 되었습니다.
@@ -70,15 +70,15 @@ Holographic 개체는 혼합 현실에서 실제 환경과 혼합 되므로 상�
 
 :::row:::
     :::column:::
-       ![interactibleobject-기본값](images/MRTK_InteractableState-default.jpg)<br>
+       ![기본 상태의 Holographic 단추](images/MRTK_InteractableState-default.jpg)<br>
        **기본 (관찰) 상태**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-상태-대상](images/MRTK_InteractableState-targeted.jpg)<br>
+       ![대상 및 가리키기 상태의 Holographic 단추](images/MRTK_InteractableState-targeted.jpg)<br>
         **대상 (가리키기) 상태**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-상태-누름](images/MRTK_InteractableState-pressed.jpg)<br>
+       ![누름 상태의 Holographic 단추](images/MRTK_InteractableState-pressed.jpg)<br>
        **누름 상태**<br>
     :::column-end:::
 :::row-end:::
@@ -264,12 +264,12 @@ HoloLens 2는 개체와 상호 작용할 수 있도록 하는 트레일러 추�
 
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 에서는 [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) 스크립트를 사용 하 여 개체를 다양 한 유형의 입력 상호 작용 상태에 응답할 수 있습니다. 색, 크기, 재질, 셰이더 등의 개체 속성을 제어 하 여 시각적 상태를 정의할 수 있도록 하는 다양 한 형식의 테마를 지원 합니다.
 
-* [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
-* [단추](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* [Interactable](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/interactable.md)
+* [단추](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md)
 * [직접 상호 작용 예제 장면](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 MixedRealityToolkit의 표준 셰이더는 시각적 및 오디오 큐를 만드는 데 도움이 되는 **근접 조명** 과 같은 다양 한 옵션을 제공 합니다.
-* [MRTK 표준 셰이더](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_MRTKStandardShader.md)
+* [MRTK 표준 셰이더](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
 
 
 <br>
@@ -277,7 +277,7 @@ MixedRealityToolkit의 표준 셰이더는 시각적 및 오디오 큐를 만드
 ---
 
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

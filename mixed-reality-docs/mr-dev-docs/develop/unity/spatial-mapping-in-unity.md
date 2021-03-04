@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, 공간 매핑, 렌더러, collider, 메시, 검색, 구성 요소, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 841cc1fa2a37884545ae12865f9b7cf56338dc07
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: a713497e0c5f061e9e81bf66197b3e2116218219
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582540"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759749"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity의 공간 매핑
 
@@ -480,7 +480,7 @@ Dll 이해는 내부적으로 playspace를 8 센티미터 크기의 voxel 큐브
 * 추적이 손실 되 면 다음 OnSurfaceChanged 이벤트는 모든 메시를 제거 합니다.
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Mixed Reality Toolkit의 공간 매핑
-Mixed Reality Toolkit v 2에서 공간 매핑을 사용 하는 방법에 대 한 자세한 내용은 MRTK docs의 <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html" target="_blank">공간 인식 섹션</a> 을 참조 하세요.
+Mixed Reality Toolkit v 2에서 공간 매핑을 사용 하는 방법에 대 한 자세한 내용은 MRTK docs의 <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">공간 인식 섹션</a> 을 참조 하세요.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 

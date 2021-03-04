@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: 동작 컨트롤러, unity, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: db103e674a369f13e62aac5e8c0513b2c2c17f9e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6dee5f03ab5fe84ac11a4eb10ef0483fea6e0083
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583505"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759064"
 ---
 # <a name="motion-controllers-in-unity"></a>Unity의 동작 컨트롤러
 
@@ -152,9 +152,9 @@ Unity의 교차 공급 업체 입력 API (XR)를 통해 그립 포즈에 액세�
 <tr>
 <th> 상태 추적 </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>높은 정확도</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> 높은 </td><td style="background-color: green; color: white"> true</td>
+<td> <b>높은 정확도</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> 높음 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>높은 정확도 (손실 위험)</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: green; color: white"> 높은 </td><td style="background-color: green; color: white"> true</td>
+<td> <b>높은 정확도 (손실 위험)</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: green; color: white"> 높음 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>대략적인 정확도</b> </td><td style="background-color: orange"> = = 1.0 </td><td style="background-color: orange"> 근사치 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -434,9 +434,9 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 }
 ```
 
-## <a name="motion-controllers-in-mrtk-v2"></a>MRTK v2의 동작 컨트롤러
+## <a name="motion-controllers-in-mrtk"></a>MRTK의 동작 컨트롤러
 
-입력 관리자에서 [제스처 및 동작 컨트롤러](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Controllers.html) 에 액세스할 수 있습니다.
+입력 관리자에서 [제스처 및 동작 컨트롤러](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/controllers.md) 에 액세스할 수 있습니다.
 
 ## <a name="follow-along-with-tutorials"></a>안내 따르기
 

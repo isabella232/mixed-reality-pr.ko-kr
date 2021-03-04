@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 눈에 응시, 헤드-응시, unity, 홀로그램, 혼합 현실, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 7efc77eff90a164fdc0476a90912a0f52c9bb33d
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 7602eb27da19dc77e4eab1c1a428dc9a1cf8b252
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192641"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759689"
 ---
 # <a name="head-gaze-in-unity"></a>헤드-Unity에서의 응시
 
@@ -43,7 +43,7 @@ void Update()
 }
 ```
 
-### <a name="best-practices"></a>최선의 구현 방법
+### <a name="best-practices"></a>모범 사례
 
 위의 예제에서는 업데이트 루프에서 단일 raycast를 실행 하 여 사용자의 헤드가 가리키는 대상을 찾는 반면 단일 개체를 사용 하 여 모든 헤드-응시 프로세스를 관리 하는 것이 좋습니다. 헤드-응시 논리를 결합 하 여 앱의 귀중 한 처리 능력을 절약 하 고, raycasting를 프레임당 하나로 제한 합니다.
 
@@ -52,7 +52,7 @@ void Update()
 컴퓨터에서 마우스 포인터를 사용 하는 것과 마찬가지로 사용자의 헤드를 나타내는 [커서](../../design/cursors.md) 를 구현 해야 합니다. 사용자가 대상으로 하는 콘텐츠를 알면 상호 작용할 대상이 높아집니다.
 
 ## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Head-Mixed Reality Toolkit의 Head-응시 
-MRTK의 [입력 관리자](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) 에서 헤드-응시에 액세스할 수 있습니다.
+MRTK의 [입력 관리자](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md) 에서 헤드-응시에 액세스할 수 있습니다.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 

@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: 혼합 현실, HoloLens, UI 컨트롤, 상호 작용, ui, ux, UX 디자인, 공간 UI, 공간 상호 작용, 3D UI, 3D UX, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 0f9cdc218c6fe54b8892c39a6a76f023e203d334
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 5e8ffbb90b1143cd4e11bf45a889c11c233232df
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009923"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759809"
 ---
 # <a name="spatial-mesh"></a>공간 메시
 
@@ -35,13 +35,13 @@ MRTK는 공간 메시 시각화에 대 한 여러 자료를 제공 합니다.
 - **MRTK_SurfaceReconstruction.** 대만:이 자료는 공간 메시에 애니메이션 된 펄스 효과를 제공 합니다. 이 자료를 사용 하 여 특정 순간 이나 사용자의 공중 탭 입력에서 환경을 시각화할 수 있습니다. 예제는 **PulseShaderExamples** 을 참조 하세요.
 <br>
 <img src="images/MRTK_SRMesh_Pulse.jpg" alt="Pulse spatial mesh visualization" width="640px">
-* 자세한 내용은 [Mrtk-공간 인식](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html) 및 [Mrtk-펄스 셰이더](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/PulseShader/README.html)를 참조 하세요.
+* 자세한 내용은 [Mrtk-공간 인식](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md) 및 [Mrtk-펄스 셰이더](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/pulse-shader.md)를 참조 하세요.
 
 <br>
 
 ---
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, 성능
 appliesto:
 - Windows 10
-ms.openlocfilehash: 60854785d526c7abff6327ddbb8d39d4eef23ae4
-ms.sourcegitcommit: c904d47ab2ce03d433d5eff394ec4078f404a0f7
+ms.openlocfilehash: 9b477042ebed33600a007778cd534d3074e34770
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98242541"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759288"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP 반향 G2 질문과 대답
 
@@ -102,3 +102,8 @@ Windows PC에서 HP 반향 G2 마이크를 처음 인식 하면 입력 볼륨 �
 ## <a name="how-can-i-power-down-the-headset-while-still-using-my-pc"></a>내 PC를 사용 하는 동안 헤드셋의 전원을 다운 하려면 어떻게 해야 하나요?
 
 헤드셋 케이블의 링크 상자에서 AC 연결 어댑터를 분리 하 여 헤드셋의 전원을 제거 합니다.
+
+## <a name="the-image-of-the-displays-of-the-reverb-g2-is-smaller-and-only-in-the-upper-left"></a>반향 G2의 디스플레이 이미지가 작으며 왼쪽 위에만 표시 됩니다.
+
+AMD power GPU가 있는 경우 자동 upscaling 조정을 사용 하지 않도록 설정 해야 합니다. 헤드셋이 연결 되어 있는 동안 설정-> 혼합 현실-> 헤드셋-> 해상도로 이동 합니다.
+드롭다운 메뉴에서 "4320 x 2160 (최고 품질)" 옵션을 선택 합니다. "자동 자동 크기 조정 (최상의 성능)"을 선택 하면 표시와 관련 된 문제가 발생할 수 있습니다.

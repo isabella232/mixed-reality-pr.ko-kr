@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens (첫 번째 gen), HoloLens 2, 혼합 현실, 커서, 대상 지정, 응시, 제스처, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 광선, 입력
-ms.openlocfilehash: 0525bb9b30dfe71fba7b8ebf2afd2c87a8c97a27
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 0b35c832e6d13ff10d14686909754de60b83fa23
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582403"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759419"
 ---
 # <a name="cursors"></a>커서
 
@@ -141,7 +141,7 @@ ms.locfileid: "98582403"
 * 커서를 사용 하 여 사용자의 입력 상태나 의도를 표시할 수 있습니다. 예를 들어 사용자에 게 시스템 상태를 확인 하 고 응용 프로그램에서 사용자에 게 조치를 취할 준비가 되었음을 알리는 아이콘을 표시할 수 있습니다.
 * 또한 시스템에서 일시 정지 된 색 변경을 통해 음성 명령을 수신 하는 사용자를 표시 하는 커서를 사용할 수 있습니다.
 
-* 다음 커서 상태를 다양 한 방법으로 구현할 수 있습니다. 상태 시스템 처럼 커서를 모델링 하 여 이러한 다양 한 상태를 구현할 수 있습니다. 예를 들면 다음과 같습니다.
+* 다음 커서 상태를 다양 한 방법으로 구현할 수 있습니다. 상태 시스템 처럼 커서를 모델링 하 여 이러한 다양 한 상태를 구현할 수 있습니다. 다음은 그 예입니다. 
     * 유휴 상태는 기본 커서를 표시 하는 위치입니다.
     * 준비 상태는 사용자가 준비 위치에서 사용자 손을 검색 한 경우입니다.
     * 상호 작용 상태는 사용자가 특정 상호 작용을 수행 하는 경우입니다.
@@ -165,9 +165,9 @@ ms.locfileid: "98582403"
 
 기본적으로 [Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity) 는 셸 시스템 커서와 동일한 시각적 상태를 가진 커서 Prefab ([defaultcursor. prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors))를 제공 합니다. MRTK 입력 프로필의 포인터 아래에 할당됩니다. 사용자 환경에 맞게이 커서를 바꾸거나 사용자 지정할 수 있습니다. 아이 추적 입력 환경에서 MRTK는 혼란을 최소화 하기 위해 미묘한 시각적 개체를 포함 하는 EyeGazeCursor를 제공 합니다.
 
-* [MRTK - 포인터 프로필](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
-* [MRTK - 입력 시스템](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
-* [MRTK - 포인터](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html)
+* [MRTK - 포인터 프로필](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/mixed-reality-configuration-guide.md#pointer-configuration)
+* [MRTK - 입력 시스템](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md)
+* [MRTK - 포인터](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/pointers.md)
 
 ---
 

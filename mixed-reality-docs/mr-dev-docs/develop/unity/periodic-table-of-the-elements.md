@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, 디자인, 샘플 앱, 컨트롤, MRTK, Mixed Reality Toolkit, Unity, 샘플 앱, 예제 앱, 오픈 소스, Microsoft Store, HoloLens, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: fd525b0d41efa15ff55097456fb6b06dd3d60c25
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 19307b310d104f418e4f7739b0576c63407d83fd
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009363"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759739"
 ---
 # <a name="periodic-table-of-the-elements"></a>원소의 주기율표
 
@@ -87,9 +87,9 @@ HoloLens를 처음 경험 한 후에는 혼합 현실에서 정기적으로 테�
 </tr>
 </table>
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-* [MRTK 예제 허브](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [MRTK 예제 허브](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/example-scenes/example-hub.md) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Surfaces](sampleapp-surfaces.md) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
 * [원소의 주기율표 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 * [갤럭시 익스플로러 2.0](galaxy-explorer-update.md)

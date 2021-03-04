@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, 샘플 앱, 디자인, MRTK, Mixed Reality Toolkit, Unity, 샘플 앱, 예제 앱, 오픈 소스, Microsoft Store, HoloLens, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: b0630df49fd8ad154017000893a08560793fb39e
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f16652cd8ebbf1349dc3b04cb1b5f4751687ea6d
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008823"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759094"
 ---
 # <a name="lunar-module"></a>달착륙선
 
@@ -108,8 +108,8 @@ Xbox 컨트롤러에 비교적 간단 하 게 전달 되는 컨트롤 구성표�
 </tr>
 </table>
 
-## <a name="see-also"></a>참조
-* [MRTK 예제 허브](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+## <a name="see-also"></a>참고 항목
+* [MRTK 예제 허브](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/example-scenes/example-hub.md) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Surfaces](sampleapp-surfaces.md) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
 * [원소의 주기율표 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 * [갤럭시 익스플로러 2.0](galaxy-explorer-update.md)

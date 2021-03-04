@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: 이벤트, 일정, 아카데미, 일정, sf, 샌프란시스코, 원자로
-ms.openlocfilehash: a7d592243f758415c0ca757f35567d80fbfc1f2f
-ms.sourcegitcommit: 44d0f2873c75003caf9d8d244ceaeb3faa89df63
+ms.openlocfilehash: 2e7cb5d06cb0903e3dc3f850f452ded6597cd929
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98110441"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101760059"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Microsoft Mixed Reality 이벤트
 
@@ -19,7 +19,7 @@ ms.locfileid: "98110441"
 
 <br>
 
-|이벤트|날짜|테마|
+|이벤트|Date|테마|
 |-------------|-------------|-----|
 | 혼합 현실 스피커 시리즈|2020년 4월 23일|[웹 확대](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Augmenting-WebXR-Standards)|
 | 혼합 현실 스피커 시리즈|6 월 22 일, 2020|[MR을 사용 하 여 교육 환경 만들기](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Educational-Experiences-in-MR)|
@@ -28,7 +28,7 @@ ms.locfileid: "98110441"
 | 혼합 현실 스피커 시리즈|2020 년 9 월 1 일|[AR/VR 용 오락 문자 만들기](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Creating-Entertaining-Characters-for-Mixed-Reality)|
 | 혼합 현실 스피커 시리즈|2020 년 9 월 3 일|[Unreal 사용에 대 한 모범 사례 & 팁](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Tips-and-Best-Practices-for-using-UE4-in-MR)|
 | HoloLens & Mixed Reality 모임|2020년 9월 8일|[인간 인식 및 혼합 현실](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Human-Perception-and-Mixed-Reality)|
-| 혼합 현실 스피커 시리즈|2020년 9월 22일|[Kippy의 이스케이프: HoloLens의 Unreal & MRTK 2 소개]()|
+| 혼합 현실 스피커 시리즈|2020년 9월 22일|[Kippy의 이스케이프: HoloLens의 Unreal & MRTK 2 소개](../develop/unreal/unreal-kippys-escape.md)|
 | 혼합 현실 스피커 시리즈|2020 년 10 월 22 일|[BabylonJS를 사용 하는 WebXR 소개](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
 | 혼합 현실 스피커 시리즈|2020년 11월 17일|[미래 빌드: MRTK의 새로운 요소](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
 | 혼합 현실 스피커 시리즈|2020년 12월 1일|[Holograms 디자인](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Making-of-Designing-Holograms)|

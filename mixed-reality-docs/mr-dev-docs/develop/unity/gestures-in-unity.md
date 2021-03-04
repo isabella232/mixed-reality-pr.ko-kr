@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: 제스처, unity, 응시, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 44c42abdd4628cacd6af334a916fb725da8bb022
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 4c3db98e3047cdc74663c5cbee1c4607b77008e0
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583889"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759084"
 ---
 # <a name="gestures-in-unity"></a>Unity의 제스처
 
@@ -131,11 +131,11 @@ void OnDestroy()
 
 Throw는 향후 Windows 업데이트를 사용 하 여 계속 개선 되며 여기에서 자세한 정보를 찾을 수 있습니다.
 
-## <a name="gesture-and-motion-controllers-in-mrtk-v2"></a>MRTK v2의 제스처 및 동작 컨트롤러
+## <a name="gesture-and-motion-controllers-in-mrtk"></a>MRTK의 제스처 및 동작 컨트롤러
 
 입력 관리자에서 제스처 및 동작 컨트롤러에 액세스할 수 있습니다.
-* [MRTK v2의 제스처](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Gestures.html)
-* [MRTK v2의 동작 컨트롤러](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Controllers.html)
+* [MRTK의 제스처](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/gestures.md)
+* [MRTK의 동작 컨트롤러](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/controllers.md)
 
 
 ## <a name="follow-along-with-tutorials"></a>안내 따르기

@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: 혼합 현실, HoloLens, UI 컨트롤, 상호 작용, ui, ux, UX 디자인, 공간 UI, 공간 상호 작용, 3D UI, 3D UX, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 9ef4fc5e4d781d235996a645e8d1bb81e040a64c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: c9e1bf3e263214f9691f6c788f6115f93e690489
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009053"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759258"
 ---
 # <a name="dialog"></a>대화 상자
 
@@ -33,13 +33,13 @@ MRTK는 하나 또는 두 개의 단추 옵션을 사용 하 여 세 가지 크�
 ![HoloLens에서 실행 되는 다양 한 크기 대화 상자 오버레이 스크린샷](images/MRTK_UX_Dialog_Types.jpg)
 
 
-* 자세한 내용은 [Mrtk-대화 상자](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html)를 참조 하세요.
+* 자세한 내용은 [Mrtk-대화 상자](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/dialog.md)를 참조 하세요.
 
 <br>
 
 ---
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit, holographic 렌더링, holographic, 몰입 형, 포커스 지점, 깊이 버퍼, 방향 전용, 위치, 불투명, 투명, 클립, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: ba42e8a384f62dddcf7b8e685859ddeff7b666bb
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 865d19482e5f612eab95fa2f74cb2bad59171496
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581128"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759769"
 ---
 # <a name="camera-in-unity"></a>Unity의 카메라
 
@@ -93,7 +93,7 @@ Unity 앱이 Windows에 깊이 버퍼를 제공할지 여부를 설정 하려면
 
 ## <a name="automatic-scene-and-camera-setup-with-mixed-reality-toolkit"></a>혼합 현실 도구 키트를 사용 하 여 자동 장면 및 카메라 설정 
 
-[단계별 가이드에](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) 따라 Unity 프로젝트에 Mixed Reality Toolkit을 추가 하면 프로젝트가 자동으로 구성 됩니다. 아래 섹션의 가이드를 사용 하 여 MRTK 없이 프로젝트를 수동으로 구성할 수도 있습니다.
+[단계별 가이드에](tutorials/mr-learning-base-01.md) 따라 Unity 프로젝트에 Mixed Reality Toolkit을 추가 하면 프로젝트가 자동으로 구성 됩니다. 아래 섹션의 가이드를 사용 하 여 MRTK 없이 프로젝트를 수동으로 구성할 수도 있습니다.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 

@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 메뉴, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 3cba4452861f05a1ce921c1f18f6636661ee34b0
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 71e88ab94f9051d58b666f2b3c27c33564194e19
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009933"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759174"
 ---
 # <a name="near-menu"></a>Near 메뉴
 
@@ -26,13 +26,13 @@ ms.locfileid: "98009933"
 ## <a name="near-menu-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 메뉴 근처
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 는 다양 한 주변 메뉴 prefab 예제를 제공 합니다.
 
-* [MRTK-근접 메뉴](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_NearMenu.html)
+* [MRTK-근접 메뉴](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/near-menu.md)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

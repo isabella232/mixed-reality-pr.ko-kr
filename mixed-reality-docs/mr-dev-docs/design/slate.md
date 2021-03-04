@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 슬레이트, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: cbb4a741f4f78dcad603670bc282a25bc0e70fd2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 444116b8946c763b284cdc83d45f5de118e965aa
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008813"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759839"
 ---
 # <a name="slate"></a>슬레이트
 
@@ -25,13 +25,13 @@ ms.locfileid: "98008813"
 
 ## <a name="slate-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 슬레이트
 
-* [MRTK-슬레이트](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Slate.html)
+* [MRTK-슬레이트](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/slate.md)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 2D 앱, UWP, 플랫 앱, HoloLens, 모던 헤드셋, 앱 모델, 뒤로 단추, 앱 바, dpi, 해상도, 크기 조정, 포팅, HoloLens 1 gen, HoloLens 2, mixed reality 헤드셋, windows mixed reality 헤드셋, 마이그레이션, Windows 10
-ms.openlocfilehash: 2d6b03a8cca70ac2db810209263139ebdf3c22a7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6e8e000f694b40f637c932ee9764415ec3a57698
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583533"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759799"
 ---
 # <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>Windows Mixed Reality용 2D UWP 앱 업데이트
 

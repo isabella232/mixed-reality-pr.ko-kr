@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 셰이더, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 시각적 효과
-ms.openlocfilehash: 68e40c053f9557debf9ad22baf2f48a8e06a1bbb
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 046969d1d16c2bddcf5b0a392d721c291b945a94
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008863"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759124"
 ---
 # <a name="shader"></a>셰이더
 
@@ -38,13 +38,13 @@ Holographic 개체는 실제 환경에서 물리적 개체와 혼합 되므로 �
 
 ## <a name="standard-shader-in-mrtk-for-unity"></a>Unity 용 MRTK의 표준 셰이더
 
-* [MRTK-표준 셰이더](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)
+* [MRTK-표준 셰이더](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

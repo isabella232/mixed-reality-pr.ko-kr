@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 단추
-ms.openlocfilehash: b4e8388c4e3ea855c191cbdfc06621018274ff86
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9e4d0637d8c10c3cd23bd2ee1369fd57137af795
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847588"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759429"
 ---
 # <a name="button"></a>단추
 
@@ -46,19 +46,19 @@ ms.locfileid: "97847588"
 ---
 
 ## <a name="button-in-mrtkmixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 단추
-**[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 는 hololens 2 및 hololens (첫 번째 gen)의 셸 스타일 단추를 포함 하 여 다양 한 유형의 단추 prefabs 제공 합니다. HoloLens 2 단추 prefab에는 사용자 신뢰도를 개선 하는 데 도움이 되는 몇 가지 상세 affordances 있습니다.
+**[Unity 용 Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 는 hololens 2 및 hololens (첫 번째 gen)의 셸 스타일 단추를 비롯 한 다양 한 유형의 단추 prefabs을 제공 합니다. HoloLens 2 단추 prefab에는 사용자 신뢰도를 개선 하는 데 도움이 되는 몇 가지 상세 affordances 있습니다.
 
 * 근접 기반 강조 표시
 * 전면 케이지 압축
 * 트리거의 펄스 효과입니다.
 
-* 자세한 지침 및 사용자 지정 예제를 보려면 [Mrtk 단추](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) 를 확인 하세요.
+* 자세한 지침 및 사용자 지정 예제를 보려면 [Mrtk 단추](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md) 를 확인 하세요.
 
 <br>
 
 ---
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)
