@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, mixed reality, 개발, 시작, 새 프로젝트, Windows Mixed Reality, UWP, XR, 성능
-ms.openlocfilehash: 6a9bc0d9a565de1d25e1906c439e39773cb99244
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: bd25c56947007f90c0310ea9802bba91a81b0914
+ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496081"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102117627"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>MRTK를 사용하지 않고 프로젝트 구성
 
@@ -56,8 +56,10 @@ HoloLens 2를 대상으로 하는 경우 유니버설 Windows 플랫폼로 전�
 
 ![XR 플러그 인 관리가 강조 표시 된 unity 편집기에서 열리는 프로젝트 설정 창의 스크린샷](images/wmr-config-img-7.png)
 
-4. **XR 플러그 인 관리** 섹션을 확장 하 고 **Windows Mixed Reality** 를 선택 합니다.
-5. 모든 상자를 선택 하 고 **깊이 전송 모드** 를 **깊이 16 비트로** 설정 합니다.
+4. **XR 플러그 인 관리** 섹션을 확장 하 고 **유니버설 Windows 플랫폼 설정** 탭을 선택 합니다.
+5. Unity 2020 이상 버전을 사용 하는 경우 **OpenXR (미리 보기)** 또는 **Windows Mixed Reality** 를 확인 하는 옵션이 표시 됩니다.
+6. 런타임 중 하나를 선택할 수 있습니다.  HoloLens 2 또는 HP 반향 G2에 대해 구체적으로 개발 하 고 **OpenXR (미리 보기)** 를 시도 하기로 결정 한 경우 OpenXR (미리 보기) 상자를 선택 하 고,이 자습서로 돌아가기 전에 (미리 보기) 상자를 선택 하 고 [Unity에 대해 Mixed Reality OpenXR 플러그 인을 사용 하 여](openxr-getting-started.md) 이러한 장치를 올바르게 설정 하는 가이드를 검토 합니다.
+7. **Windows Mixed Reality** 플러그 인을 선택 하기로 결정 한 경우 모든 상자를 선택 하 고 **깊이 전송 모드** 를 **깊이 16 비트로** 설정 합니다.
 
 ![Windows Mixed Reality 섹션이 강조 표시 된 unity 편집기에서 열리는 프로젝트 설정 창의 스크린샷](images/wmr-config-img-8.png)
 
@@ -90,11 +92,11 @@ HoloLens 2를 대상으로 하는 경우 유니버설 Windows 플랫폼로 전�
 
 ### <a name="quality-settings"></a>품질 설정
 
-HoloLens에는 모바일 클래스 GPU가 있습니다. 앱이 HoloLens를 대상으로 하는 경우 앱의 품질 설정이 전체 프레임 속도를 유지 하기 위해 가장 빠른 성능을 위해 조정 되도록 합니다.
+HoloLens에는 모바일 클래스 GPU가 있습니다. 앱이 HoloLens를 대상으로 하는 경우 전체 프레임 속도를 유지 하기 위해 가장 빠른 성능을 위해 조정 된 앱의 품질 설정으로 시작 하는 것이 좋습니다.  개발에 대 한 추가 작업을 수행 하는 경우 품질 및 성능에 대 한 적절 한 균형을 찾기 위해 품질 설정을 upping 할 수 있습니다. 
 
-1. **편집 > 프로젝트 설정 > 품질** 을 선택 합니다.
-2. **Windows 스토어** 로고 아래의 **드롭다운** 을 선택 하 고 **매우 낮음** 을 선택 합니다. Windows 스토어 열의 상자와 **매우 낮은** 행이 녹색 인 경우 설정이 올바르게 적용 됨을 알 수 있습니다.
-3. **그림자** 섹션에서 **그림자 사용 안 함** 을 선택 합니다.
+1.  **편집 > 프로젝트 설정 > 품질** 을 선택 합니다. 
+2.  **Windows 스토어** 로고 아래의 **드롭다운** 을 선택   하 고  **매우 낮음** 을 선택 합니다. Windows 스토어 열의 상자와 매우 낮은 행이 녹색 인 경우 설정이 올바르게 적용 됨을 알 수 있습니다. 
+3.  **그림자**   섹션에서 **그림자 사용 안 함** 을 선택 합니다. 
 
 ![품질 설정 섹션이 강조 표시 된 unity 편집기에서 열리는 프로젝트 설정 창의 스크린샷](images/wmr-config-img-10.png)<br>
 *Unity 품질 설정*
