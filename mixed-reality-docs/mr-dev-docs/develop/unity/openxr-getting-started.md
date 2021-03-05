@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 보강 현실, 가상 현실, 혼합 현실 헤드셋, 학습, 자습서, 시작
-ms.openlocfilehash: cae588acbcddeefae45a555f335f1c74389f1824
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: a4606eeb1fa6c8dc0858653a196c1e536ae473d4
+ms.sourcegitcommit: e2228b9585302eeff1d853ddb54be8421a21c954
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496171"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102189125"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Unity 용 Mixed Reality OpenXR 플러그 인 사용
 
 Unity 버전 2020.2부터 Microsoft의 Mixed Reality OpenXR 플러그 인 패키지는 UPM (Unity 패키지 관리자)를 사용 하 여 사용할 수 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>전제 조건
 
 * Unity 2020.2 이상
 * Unity OpenXR plugin 0.1.3 이상
@@ -84,20 +84,23 @@ HoloLens 2 용으로 개발 하는 경우 **> OpenXR> Mixed Reality로 이동 �
 
 ## <a name="using-mrtk-with-openxr-support"></a>OpenXR 지원과 함께 MRTK 사용
 
-MRTK Unity는 2.5.3 릴리스로 시작 하는 Mixed Reality OpenXR 플러그 인을 지원 합니다.  
+MRTK-Unity 2.5.3 릴리스부터 혼합 현실 OpenXR 플러그 인을 지원 합니다.
 
-1. [혼합 현실 기능 도구](welcome-to-mr-feature-tool.md) 를 다시 열고 Platform Support 범주의 **Mixed Reality OpenXR 플러그 인** 패키지를 선택 합니다.
+1. 혼합 현실 [기능 도구](welcome-to-mr-feature-tool.md) 를 다시 열어 혼합 현실 도구 키트 (아직 없는 경우)를 설치 합니다. OpenXR 지원은 **Foundation** 패키지에 있습니다.
 2. 검사기에서 MixedReality Toolkit 구성 요소 스크립트로 이동 하 고 **Defaultopenxrconfigurationprofile** 프로필로 전환 합니다.
 
-![검사기의 Mixed Reality Toolkit 구성 요소에서 MRTK 구성 전환 스크린샷](images/openxr-img-11.png)
+    ![검사기의 Mixed Reality Toolkit 구성 요소에서 MRTK 구성 전환 스크린샷](images/openxr-img-11.png)
 
-### <a name="known-issues"></a>알려진 문제 
+    1. [OpenXR로 마이그레이션하](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk#configuring-mrtk-for-the-xr-sdk-pipeline)는 방법에 대 한 자세한 내용은 MRTK 설명서를 참조 하세요.
 
-손으로 추적 기능을 사용 하는 경우 **자산/MixedRealityToolkit/link.xml** 파일에 다음 줄을 추가 합니다.
-
-```
-<assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>
-```
+> [!NOTE]
+> 이전 버전의 MRTK에서 업그레이드 하는 경우 asset **/MixedRealityToolkit/link.xml** 파일에 다음 줄이 있는지 확인 합니다.
+>
+> ```xml
+> <assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>
+> ```
+>
+> 이 줄은 MRTK 2.5.4 이상으로 시작한 경우 기본적으로 추가 됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 
@@ -107,7 +110,7 @@ MRTK Unity는 2.5.3 릴리스로 시작 하는 Mixed Reality OpenXR 플러그 �
 
 OpenXR는 여전히 실험적 이므로 피드백을 제공 하는 데 도움이 되도록 피드백을 보내 주셔서 감사 합니다. [](https://aka.ms/unityforums) **Microsoft**  +  **OpenXR** 및 **HoloLens 2** 또는 **Windows Mixed Reality** 를 사용 하 여 포럼 게시물에 태그를 지정 하 여 Unity 포럼에서이를 찾을 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 * [MRTK를 사용하지 않고 프로젝트 구성](configure-unity-project.md)
 * [Unity 권장 설정](recommended-settings-for-unity.md)
