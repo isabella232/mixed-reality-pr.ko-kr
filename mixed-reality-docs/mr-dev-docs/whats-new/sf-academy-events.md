@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: 이벤트, 일정, 아카데미, 일정, sf, 샌프란시스코, 원자로
-ms.openlocfilehash: 2e7cb5d06cb0903e3dc3f850f452ded6597cd929
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f534a170594eb26e0d7f56e8694b9112cb0acbac
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101760059"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230884"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Microsoft Mixed Reality 이벤트
 
@@ -30,5 +30,7 @@ ms.locfileid: "101760059"
 | HoloLens & Mixed Reality 모임|2020년 9월 8일|[인간 인식 및 혼합 현실](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Human-Perception-and-Mixed-Reality)|
 | 혼합 현실 스피커 시리즈|2020년 9월 22일|[Kippy의 이스케이프: HoloLens의 Unreal & MRTK 2 소개](../develop/unreal/unreal-kippys-escape.md)|
 | 혼합 현실 스피커 시리즈|2020 년 10 월 22 일|[BabylonJS를 사용 하는 WebXR 소개](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
+| 혼합 현실 스피커 시리즈|2020년 11월 3일|[혼합 현실에서의 시각적 효과](https://channel9.msdn.com/Shows/Mixed-Reality/Visual-Effects-in-Mixed-Reality)|
 | 혼합 현실 스피커 시리즈|2020년 11월 17일|[미래 빌드: MRTK의 새로운 요소](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
 | 혼합 현실 스피커 시리즈|2020년 12월 1일|[Holograms 디자인](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Making-of-Designing-Holograms)|
+| 혼합 현실 스피커 시리즈|2021 년 2 월 11 일|[MR의 1 일: 매일 수명 공간 컴퓨팅의 효과](https://channel9.msdn.com/Shows/Mixed-Reality/One-Day-In-MR-How-Spatial-Computing-Effects-Every-Day-Life)|
