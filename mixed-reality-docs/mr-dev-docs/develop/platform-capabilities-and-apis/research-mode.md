@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 07/31/2020
 ms.topic: article
 keywords: 연구 모드, cv, rs4, 컴퓨터 비전, 연구, HoloLens, HoloLens 2
-ms.openlocfilehash: c8e626969f87eda8b686ba759a167a2bf48e3277
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6737f9b668b73258e65f8d00e85dcd19c28ddfb5
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583136"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237134"
 ---
 # <a name="hololens-research-mode"></a>HoloLens 연구 모드
 
@@ -104,7 +104,7 @@ HoloLens 2를 사용 하는 경우 아래 추가 입력에 액세스할 수도 �
 *HoloLens 장치 포털의 연구 모드 창*
 
 > [!IMPORTANT]
-> HoloLens 2의 연구 모드는 빌드 19041.1356부터 사용할 수 있습니다. 이전 빌드에서 액세스 해야 하는 경우 [Insider preview](/hololens/hololens-insider) 프로그램에 등록 합니다.
+> HoloLens 2의 연구 모드는 빌드 19041.1364부터 사용할 수 있습니다. 이전 빌드에서 액세스 해야 하는 경우 [Insider preview](/hololens/hololens-insider) 프로그램에 등록 합니다. 자세한 내용은 [연구 모드 GitHub 리포지토리에서](https://github.com/microsoft/HoloLens2ForCV)확인할 수 있습니다.
 
 ### <a name="using-sensor-data-in-your-apps"></a>앱에서 센서 데이터 사용
 
@@ -116,7 +116,7 @@ HoloLens 개발에 대해 작동 하는 모든 Api는 연구 모드 에서도 �
 * [HoloLens (첫 번째 gen)](https://github.com/Microsoft/HoloLensForCV)
 * [HoloLens 2](https://github.com/microsoft/HoloLens2ForCV)
 
-## <a name="support"></a>Support(지원)
+## <a name="support"></a>지원
 
 HoloLens (첫 번째 gen)의 경우 HoloLensForCV 리포지토리에서 [문제 추적기](https://github.com/Microsoft/HololensForCV/issues) 를 사용 하 여 피드백을 게시 하 고 알려진 문제를 추적 합니다.
 

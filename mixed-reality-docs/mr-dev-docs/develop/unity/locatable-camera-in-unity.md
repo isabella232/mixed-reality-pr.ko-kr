@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 사진, 비디오, hololens, 카메라, unity, 과정이, PVC, photo video 카메라, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 웹캠, 사진 캡처, 비디오 캡처
-ms.openlocfilehash: 8916b332774185e4453b514ca7b6916947bdcd81
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: ccf0c17a5f419341e64a87fb9ef04ef0a40c2a33
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226422"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236904"
 ---
 # <a name="locatable-camera-in-unity"></a>Unity의 위치를 찾을 수 있는 카메라
 
@@ -26,7 +26,8 @@ ms.locfileid: "98226422"
 
 ## <a name="photo-capture"></a>사진 캡처
 
-**네임 스페이스:** *unityengine. XR*<br>
+**네임스페이스:**  
+*UNITYENGINE (Unity \~ 2018) UnityEngine. Windows 웹캠 (unity 2019 \~ )*<br>
 **형식:** *사진 캡처*
 
 사진 *캡처* 유형을 사용 하면 사진 비디오 카메라와 사진을 계속 사용할 수 있습니다. 사진 *캡처* 를 사용 하 여 사진을 촬영 하는 일반적인 패턴은 다음과 같습니다.

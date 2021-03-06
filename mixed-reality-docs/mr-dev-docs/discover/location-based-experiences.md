@@ -6,12 +6,12 @@ ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
 keywords: 혼합 현실, vr, lbe, 위치, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 하드웨어, HoloLens, 다중 플레이어, 클라우드 서비스, azure
-ms.openlocfilehash: 1cc54ad0ef4b9892c49e13c7437a4d5356093c79
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: 49e96b99d3f74bd24a4a0e71f212018108148ad2
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810110"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236914"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Windows Mixed Reality를 사용 하는 위치 기반 엔터테인먼트
 
@@ -49,7 +49,7 @@ PC 테더 링 된 VR 환경에서 Oem은 해당 요구에 맞게 작성 된 백�
 
 HP는 전 세계의 가장 강력한 wearable PC 인 HP VR 백팩 G2를 출시 했습니다. 이제 무료 로밍 환경에 최적화 되어 있으며, 이제 RTX 2080 GPU를 사용 하 여 30% 더 강력한 기능을 제공 합니다. [세부 정보](https://www8.hp.com/us/en/vr/vr-backpack.html)
 
-### <a name="setup"></a>설정
+### <a name="setup"></a>설치 프로그램
 
 **Q: 보다 쉽게 설치를 구성 하 고 LBE에 대 한 혼합 현실 포털을 사용자 지정 하려면 어떻게 해야 하나요?**
 
@@ -68,7 +68,7 @@ HP는 전 세계의 가장 강력한 wearable PC 인 HP VR 백팩 G2를 출시 �
 
 전체 화면에 미리 보기 표시 – 혼합 현실 포털은 헤드셋을 사용 하는 동안 데스크톱 PC의 전체 화면에 헤드셋 미리 보기를 표시 합니다.  
 
-왼쪽 패널에 대 한 새 숨기기 – 혼합 현실 포털을 시작할 때 패널의 새가 확장 되지 않도록 방지 합니다.  
+왼쪽 패널에 대 한 새 숨기기 – 혼합 현실 포털을 시작할 때 새 패널의 새 패널이 확장 되지 않도록 합니다.  
 
 #### <a name="how-to-configure"></a>구성 방법:  
 
