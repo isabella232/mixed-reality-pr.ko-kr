@@ -1,0 +1,6 @@
+- name: 진단 구성
+  href: configuring-diagnostics.md
+- name: 진단 시스템 시작
+  href: diagnostics-system-getting-started.md
+- name: Using-Visual-Profiler
+  href: using-visual-profiler.md
