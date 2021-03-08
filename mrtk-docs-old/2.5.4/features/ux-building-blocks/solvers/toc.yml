@@ -1,0 +1,4 @@
+- name: Solver
+  href: solver.md
+- name: 탭하여 가져오기
+  href: tap-to-place.md
