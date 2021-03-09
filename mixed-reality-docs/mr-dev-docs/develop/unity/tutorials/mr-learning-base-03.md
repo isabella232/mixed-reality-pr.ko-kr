@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 공간 인식
 ms.localizationpriority: high
-ms.openlocfilehash: 8a45037f7a73d9e74cd714ae4af49b58f44ce297
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 0a8beb647516ebcb5bc07cb58d0193e8fe71e9fc
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590475"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101760019"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. MRTK 프로필 구성
 
@@ -20,11 +20,11 @@ ms.locfileid: "99590475"
 
 이 자습서에서는 MRTK 프로필을 사용자 지정하고 구성하는 방법을 알아봅니다.
 
-<a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html" target="_blank">MRTK 프로필</a>은 MRTK 시스템 및 기능을 초기화하는 방법에 대한 구성 정보를 구성하는 중첩된 프로필 트리입니다. 최상위 프로필인 Configuration Profile에는 각 기본 코어 시스템에 대한 중첩 프로필이 포함되어 있습니다. 각 중첩 프로필은 해당 시스템의 동작을 구성하도록 설계되었습니다.
+<a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/profiles/profiles.md" target="_blank">MRTK 프로필</a>은 MRTK 시스템 및 기능을 초기화하는 방법에 대한 구성 정보를 구성하는 중첩된 프로필 트리입니다. 최상위 프로필인 Configuration Profile에는 각 기본 코어 시스템에 대한 중첩 프로필이 포함되어 있습니다. 각 중첩 프로필은 해당 시스템의 동작을 구성하도록 설계되었습니다.
 
 이 예제에서는 공간 메시 관찰자의 설정을 변경하여 공간 인식 메시를 숨기는 방법을 보여줍니다. 그러나 MRTK 프로필의 설정 또는 값을 사용자 지정할 때 이러한 원칙을 그대로 적용해도 됩니다.
 
-[이전 자습서](mr-learning-base-02.md#congratulations)에서 HoloLens 2에 프로젝트를 배포할 때처럼 <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html" target="_blank">공간 인식</a> 메시는 환경의 기하 도형을 나타내는 메시 컬렉션입니다. 처음에 볼 때는 유용하지만, 시각적 산만함과 이 기능을 사용할 때의 추가 성능 저하를 피하기 위해 일반적으로 꺼져 있습니다.
+[이전 자습서](mr-learning-base-02.md#congratulations)에서 HoloLens 2에 프로젝트를 배포할 때처럼 <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">공간 인식</a> 메시는 환경의 기하 도형을 나타내는 메시 컬렉션입니다. 처음에 볼 때는 유용하지만, 시각적 산만함과 이 기능을 사용할 때의 추가 성능 저하를 피하기 위해 일반적으로 꺼져 있습니다.
 
 ## <a name="objectives"></a>목표
 
@@ -116,7 +116,7 @@ Clone Profile 창에서 적절한 **프로필 이름**(예: _GettingStarted_Mixe
 > [!NOTE]
 > 공간 매핑 메시가 보이지 않더라도 여전히 존재하며 작동 중입니다. 예를 들어 실제 벽 뒤의 홀로그램처럼 공간 매핑 메시 뒤의 홀로그램은 보이지 않습니다.
 
-MRTK 프로필에서 설정을 수정하는 방법을 알아보았습니다. 보시는 것처럼, MRTK 설정을 사용자 지정하려면 먼저 기본 프로필의 복사본을 만들어야 합니다. 기본 프로필은 편집이 불가능하므로, 기본 설정으로 되돌리고 싶을 때 항상 기본 프로필을 참조로 사용할 수 있습니다. MRTK 프로필 및 해당 아키텍처에 대한 자세한 내용은 [MRTK 설명서 포털](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)의 [MRTK 프로필 구성 가이드](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html)를 참조하세요.
+MRTK 프로필에서 설정을 수정하는 방법을 알아보았습니다. 보시는 것처럼, MRTK 설정을 사용자 지정하려면 먼저 기본 프로필의 복사본을 만들어야 합니다. 기본 프로필은 편집이 불가능하므로, 기본 설정으로 되돌리고 싶을 때 항상 기본 프로필을 참조로 사용할 수 있습니다. MRTK 프로필 및 해당 아키텍처에 대한 자세한 내용은 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs)의 [MRTK 프로필 구성 가이드](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mixed-reality-configuration-guide.md)를 참조하세요.
 
 ## <a name="congratulations"></a>축하합니다.
 

@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows 장치 포털, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: c354a6f7c3afd6164182f915c39bbf1ce306ef39
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 83bc2183d40f9dbfb00799475522606ff59ccfa0
+ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583248"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102117647"
 ---
 # <a name="using-the-windows-device-portal"></a>Windows 장치 포털 사용
 
@@ -65,7 +65,7 @@ HoloLens용 Windows 장치 포털을 사용하면 Wi-Fi 또는 USB를 통해 원
 > USB 연결과 관련된 문제가 있으면 USB 디바이스 연결 선택적 구성 요소가 **[Visual Studio 도구 패키지](../install-the-tools.md#installation-checklist)** 의 일부로 설치되어 있는지 다시 확인하세요.
 
 2. 마이크로 USB 케이블(HoloLens 1세대) 또는 USB-C(HoloLens 2)를 사용하여 HoloLens를 PC에 연결합니다.
-3. PC의 웹 브라우저에서 [https://127.0.0.1:10080](https://127.0.0.1:10080)으로 이동합니다.
+3. PC의 웹 브라우저에서 [http://127.0.0.1:10080](http://127.0.0.1:10080)으로 이동합니다.
 
 ### <a name="moving-files-over-usb"></a>USB를 통해 파일 이동
 
