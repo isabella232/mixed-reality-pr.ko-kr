@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: a0621403ec3c4d8d0fa6f13672530756bcb6da39
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: a44e79d656875d7730ee155e10260bd5ebb6265f
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590752"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237124"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Azure Spatial Anchors 시작
 
@@ -43,7 +43,7 @@ ms.locfileid: "99590752"
 
 ## <a name="installing-inbuilt-unity-packages"></a>기본 제공 Unity 패키지 설치
 
-Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 패키지 관리자 창을 연 다음, **AR Foundation** 을 선택하고, **설치** 단추를 클릭하여 패키지를 설치합니다.
+Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 [패키지 관리자] 창을 연 다음, **AR Foundation** 을 선택하고, **설치** 단추를 클릭하여 패키지를 설치합니다.
 
 ![AR Foundation이 선택된 Unity Package Manager](images/mr-learning-asa/asa-02-section2-step1-1.png)
 
@@ -129,7 +129,7 @@ Hierarchy(계층 구조) 창에서 **FindAzureAnchor** 라는 다음 단추를 �
 
 Hierarchy(계층 구조) 창에서 **DeleteAzureAnchor** 라는 다음 단추를 선택한 후, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
-* **DeleteAzureAnchor** 개체를 **None (Object)** 필드에 할당
+* **ParentAnchor** 개체를 **None (Object)** 필드에 할당
 * **No Function**(함수 없음) 드롭다운에서 **AnchorModuleScript** > **DeleteAzureAnchor ()** 를 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 
 ![DeleteAzureAnchor 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-asa/asa-02-section5-step1-6.png)
@@ -149,7 +149,7 @@ Hierarchy(계층 구조) 창에서 **ParentAnchor** 개체를 선택하고, Insp
 Azure Spatial Anchors는 Unity에서 실행할 수 없으므로 Azure Spatial Anchors 기능을 테스트하려면 프로젝트를 빌드하고 디바이스에 앱을 배포해야 합니다.
 
 > [!TIP]
-> Unity 프로젝트를 빌드하고 HoloLens 2에 배포하는 방법은 [HoloLens 2에 애플리케이션 빌드]((mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침을 참조하세요.
+> Unity 프로젝트를 빌드하고 HoloLens 2에 배포하는 방법은 [HoloLens 2에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침을 참조하세요.
 
 앱이 디바이스에서 실행되는 경우 Azure Spatial Anchor 자습서 지침 패널에 표시되는 화면의 지시를 따릅니다.
 

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 개체 상호 작용, 경계 컨트롤
 ms.localizationpriority: high
-ms.openlocfilehash: f92eca294e2114207a5e28ebe80aa480b9029b66
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 1ab7b3a334639be564717d77d3bbc478a25e8326
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590453"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237244"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. 3D 개체와 상호 작용
 
@@ -113,7 +113,7 @@ Hierarchy(계층 구조) 창에서 RoverExplorer > Buttons > **Reset**(초기화
 
 ![Reset 단추가 눌러져 있는 Unity 재생 모드 분할 보기](images/mr-learning-base/base-07-section1-step1-7.png)
 
-Object Manipulator 구성 요소 및 관련 속성에 대해 자세히 알아보려면 [MRTK 설명서 포털](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)에서 [Object Manipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) 가이드를 참조하세요.
+Object Manipulator 구성 요소 및 관련 속성에 대해 자세히 알아보려면 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/)에서 [Object Manipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) 가이드를 참조하세요.
 
 ## <a name="adding-bounds-control"></a>경계 컨트롤 추가
 
@@ -132,9 +132,6 @@ Hierarchy(계층 구조) 창에서 **RoverExplorer** 개체를 선택한 다음,
 
 > [!NOTE]
 > 경계 컨트롤 시각화는 런타임에 생성되므로 게임 모드로 전환하기 전에는 보이지 않습니다.
-
-> [!NOTE]
->BoundsControl 구성 요소는 런타임에 NearInteractionGrabbable 구성 요소를 자동으로 추가합니다. 따라서 추적 손으로 감싼 개체를 잡기 위해 이 구성 요소를 추가할 필요가 없습니다.
 
 > [!NOTE]
 >개체 조작자(스크립트)는 제약 조건 관리자(스크립트)를 자동으로 추가합니다.
@@ -171,7 +168,7 @@ Hierarchy 창에서 Menu > **ButtonCollection** 개체를 펼쳐서 단추 4개�
 
 ![경계 컨트롤이 조작되고 있는 Unity 재생 모드 분할 보기](images/mr-learning-base/base-07-section2-step1-4.png)
 
-경계 컨트롤 구성 요소 및 관련 속성에 대한 자세한 정보를 보려면 [MRTK 설명서 포털](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)에서 [경계 컨트롤](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) 가이드를 참조하세요.
+경계 컨트롤 구성 요소 및 관련 속성에 대한 자세한 정보를 보려면 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/)에서 [경계 컨트롤](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) 가이드를 참조하세요.
 
 ## <a name="congratulations"></a>축하합니다.
 
