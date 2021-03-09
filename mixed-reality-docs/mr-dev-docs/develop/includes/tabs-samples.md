@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: e4eb106a92b953f7c16f5cf1fc9322d7103ad182
-ms.sourcegitcommit: 924f8c1ceb93c378f800cf88d82944cf80f092bc
+ms.openlocfilehash: 465229efca35a5ac3e254ac60481a447c8708ea1
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96615547"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102244665"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -29,7 +29,7 @@ ms.locfileid: "96615547"
 
 ### <a name="hololens-2-open-source-sample-apps"></a>HoloLens 2 오픈 소스 샘플 앱
 
-* [HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/HoloLens2Example) 
+* [HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/HoloLens2Example)
 * [HoloPipes](https://github.com/microsoft/MixedReality-Unreal-HoloPipes) - HoloLens 2의 [Microsoft Store](https://www.microsoft.com/p/holopipes/9mszb3nnrxn9)에서 다운로드
 
 ### <a name="made-with-the-mixed-reality-toolkit-for-unreal"></a>Unreal용 Mixed Reality Toolkit을 통해 수행
@@ -41,10 +41,9 @@ ms.locfileid: "96615547"
 
 ### <a name="made-by-epic-games"></a>대규모 사용자 스토리 게임을 통해 수행
 
-대규모 사용자 스토리 게임의 파트너는 Unreal Marketplace에서 우수한 HoloLens 2 샘플 프로젝트를 출시했습니다. 
+대규모 사용자 스토리 게임의 파트너는 Unreal Marketplace에서 우수한 HoloLens 2 샘플 프로젝트를 출시했습니다.
 
-> [!NOTE] 
+> [!NOTE]
 > 이 환경은 고사양 PC에서 헤드셋으로 스트리밍되어야 합니다.
 
 * [미션 AR](https://docs.unrealengine.com/Resources/Showcases/MissionAR/index.html)
-
