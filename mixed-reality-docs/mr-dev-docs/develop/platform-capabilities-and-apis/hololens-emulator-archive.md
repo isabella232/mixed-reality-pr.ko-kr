@@ -6,12 +6,12 @@ ms.author: moelhama
 ms.date: 02/09/2021
 ms.topic: article
 keywords: HoloLens, 에뮬레이터, 빌드, 버전, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 보관
-ms.openlocfilehash: 40a9428aee0aa115ee9ac20de6d6813a31d46970
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: 0466ebe84388164e1c29f6f93325987118bb80b4
+ms.sourcegitcommit: 55dab2b9f2d9b98fdb1cb9f26d3d075bb8f95dcd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496050"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102526020"
 ---
 # <a name="hololens-2-emulator-archive"></a>HoloLens 2 에뮬레이터 보관
 
@@ -19,6 +19,8 @@ HoloLens 에뮬레이터 (첫 번째 gen) 및 HoloLens 2 에뮬레이터 빌드�
 
 |  빌드 |  출시 날짜 |  참고 |
 |----------|----------|----------|
+|  [HoloLens 2 에뮬레이터 빌드 10.0.19041.1140](https://go.microsoft.com/fwlink/?linkid=2156684) | 2021 년 3 월 9 일 | Windows Holographic 버전 20H2 3 월 2021 업데이트  일반 HoloLens 2 릴리스 정보는 다음을 참조 하세요. https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 에뮬레이터 빌드 10.0.18362.1102](https://go.microsoft.com/fwlink/?linkid=2156989) | 2021 년 3 월 9 일 | Windows Holographic 버전 1903 3 월 2021 업데이트  일반 HoloLens 2 릴리스 정보는 다음을 참조 하세요. https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 에뮬레이터 빌드 10.0.19041.1136](https://go.microsoft.com/fwlink/?linkid=2154784) | 2021년 2월 9일 | Windows Holographic 버전 20H2 2 월 2021 업데이트  일반 HoloLens 2 릴리스 정보는 다음을 참조 하세요. https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 에뮬레이터 빌드 10.0.18362.1098](https://go.microsoft.com/fwlink/?linkid=2154381) | 2021년 2월 9일 | Windows Holographic 버전 1903 2 월 2021 업데이트  일반 HoloLens 2 릴리스 정보는 다음을 참조 하세요. https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 에뮬레이터 빌드 10.0.19041.1134](https://go.microsoft.com/fwlink/?linkid=2152389) | 2021 년 1 월 13 일 | Windows Holographic 버전 20H2 1 월 2021 업데이트  일반 HoloLens 2 릴리스 정보는 다음을 참조 하세요. https://docs.microsoft.com/hololens/hololens-release-notes |
