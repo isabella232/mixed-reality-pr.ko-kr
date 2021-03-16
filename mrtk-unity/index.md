@@ -6,16 +6,20 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 3ac16a1aae6681ddd7e144679b76b4d2b778306f
-ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
+ms.openlocfilehash: a774a5c08cb2d8bbaeebeca19cec366504efba58
+ms.sourcegitcommit: 5c81c19905b26818882e49679bd71f5dd7bc6d3b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102237254"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103202818"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>Mixed Reality Toolkit이란 무엇인가요?
 
 ![Mixed Reality Toolkit](features/images/Logo_MRTK_Unity_Banner.png)
+
+<br>
+
+<iframe width="940" height="530" src="https://www.youtube.com/embed/qfONlUCSWdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 MRTK-Unity는 Unity에서 플랫폼 간 MR 앱 개발을 가속화하는 데 사용되는 구성 요소 및 기능 집합을 제공하는 Microsoft 기반 프로젝트입니다. 일부 기능은 다음과 같습니다.
 
@@ -68,58 +72,73 @@ Unity에서 MRTK 또는 Mixed Reality 개발이 처음인 경우 필요한 도�
 
 :::row:::
     :::column:::
-       [![입력 시스템](features/images/MRTK_Icon_InputSystem.png)](features/input/overview.md) **[입력 시스템](features/input/overview.md)**<br>
+       [![입력 시스템](features/images/MRTK_Icon_InputSystem.png)](features/input/overview.md)<br>
+        **[입력 시스템](features/input/overview.md)**<br>
     :::column-end:::
     :::column:::
-        [![손 추적(HoloLens 2)](features/images/MRTK_Icon_HandTracking.png)](features/input/overview.md) **[손 추적 <br> (HoloLens 2)](features/input/hand-tracking.md)**<br>
+        [![손 추적(HoloLens 2)](features/images/MRTK_Icon_HandTracking.png)](features/input/overview.md)<br>
+        **[손 추적 <br> (HoloLens 2)](features/input/hand-tracking.md)**<br>
     :::column-end:::
     :::column:::
-        [![시선 추적(HoloLens 2)](features/images/MRTK_Icon_EyeTracking.png)](features/input/eye-tracking/eye-tracking-Main.md) **[시선 추적 <br/> (HoloLens 2)](features/input/eye-tracking/eye-tracking-Main.md)**<br>
+        [![시선 추적(HoloLens 2)](features/images/MRTK_Icon_EyeTracking.png)](features/input/eye-tracking/eye-tracking-Main.md)<br>
+        **[시선 추적 <br/> (HoloLens 2)](features/input/eye-tracking/eye-tracking-Main.md)**<br>
     :::column-end:::
     :::column:::
-        [![프로필](features/images/MRTK_Icon_Profiles.png)](configuration/mixed-reality-configuration-guide.md) **[프로필](configuration/mixed-reality-configuration-guide.md)**<br>
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-       [![손 추적(Ultraleap)](features/images/MRTK_Icon_HandTracking.png)](features/cross-platform/leap-motion-mrtk.md) **[손 추적 <br/> (Ultraleap)](features/cross-platform/leap-motion-mrtk.md)**<br>
-    :::column-end:::
-    :::column:::
-        [![UI 컨트롤](features/images/MRTK_Icon_UIControls.png)](#ux-building-blocks) **[UI 컨트롤](#ux-building-blocks)**<br>
-    :::column-end:::
-    :::column:::
-        [![Solvers](features/images/MRTK_Icon_Solver.png)](features/ux-building-blocks/solvers/solver.md) **[Solvers](features/ux-building-blocks/solvers/solver.md)**<br>
-    :::column-end:::
-    :::column:::
-        [![다중 장면 관리자](features/images/MRTK_Icon_SceneSystem.png)](features/scene-system/scene-system-getting-started.md) **[다중 장면<br/> 관리자](features/scene-system/scene-system-getting-started.md)**<br>
+        [![Profiles](features/images/MRTK_Icon_Profiles.png)](configuration/mixed-reality-configuration-guide.md)<br>
+        **[Profiles](configuration/mixed-reality-configuration-guide.md)**<br>
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [![공간 인식](features/images/MRTK_Icon_SpatialUnderstanding.png)](features/spatial-awareness/spatial-awareness-getting-started.md) **[공간 <br/> 인식](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
+       [![손 추적(Ultraleap)](features/images/MRTK_Icon_HandTracking.png)](features/cross-platform/leap-motion-mrtk.md)<br>
+        **[손 추적 <br/> (Ultraleap)](features/cross-platform/leap-motion-mrtk.md)**<br>
     :::column-end:::
     :::column:::
-        [![진단 도구](features/images/MRTK_Icon_Diagnostics.png)](features/diagnostics/diagnostics-system-getting-started.md) **[진단 <br/> 도구](features/diagnostics/diagnostics-system-getting-started.md)**<br>
+        [![UI 컨트롤](features/images/MRTK_Icon_UIControls.png)](#ux-building-blocks)<br>
+        **[UI 컨트롤](#ux-building-blocks)**<br>
     :::column-end:::
     :::column:::
-        [![MRTK 표준 셰이더 보기](features/images/MRTK_Icon_StandardShader.png)](features/rendering/mrtk-standard-shader.md?q=shader) **[MRTK 표준 셰이더 예제 보기](features/rendering/mrtk-standard-shader.md?q=shader)**<br>
+        [![해결기](features/images/MRTK_Icon_Solver.png)](features/ux-building-blocks/solvers/solver.md)<br>
+        **[해결기](features/ux-building-blocks/solvers/solver.md)**<br>
     :::column-end:::
     :::column:::
-        [![음성 및 받아쓰기](features/images/MRTK_Icon_VoiceCommand.png)](features/scene-system/scene-system-getting-started.md) **[음성](features/input/speech.md)<br/> & [받아쓰기](features/input/dictation.md)**<br>
+        [![다중 장면 관리자](features/images/MRTK_Icon_SceneSystem.png)](features/scene-system/scene-system-getting-started.md)<br>
+        **[다중 장면<br/> 관리자](features/scene-system/scene-system-getting-started.md)**<br>
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [![경계 시스템](features/images/MRTK_Icon_Boundary.png)](features/boundary/boundary-system-getting-started.md) **[경계 <br/>시스템](features/boundary/boundary-system-getting-started.md)**<br>
+       [![공간 인식](features/images/MRTK_Icon_SpatialUnderstanding.png)](features/spatial-awareness/spatial-awareness-getting-started.md)<br>
+        **[공간<br/> 인식](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
     :::column-end:::
     :::column:::
-        [![편집기 내 시뮬레이션](features/images/MRTK_Icon_InputSystem.png)](features/diagnostics/diagnostics-system-getting-started.md) **[편집기 내 <br/> 시뮬레이션](features/diagnostics/diagnostics-system-getting-started.md)**<br>
+        [![진단 도구](features/images/MRTK_Icon_Diagnostics.png)](features/diagnostics/diagnostics-system-getting-started.md)<br>
+        **[진단 <br/> 도구](features/diagnostics/diagnostics-system-getting-started.md)**<br>
     :::column-end:::
     :::column:::
-        [![실험적 기능](features/images/MRTK_Icon_Experimental.png)](contributing/experimental-features.md) **[실험적 <br/> 기능](contributing/experimental-features.md)**<br>
+        [![MRTK 표준 셰이더 보기](features/images/MRTK_Icon_StandardShader.png)](features/rendering/mrtk-standard-shader.md?q=shader)<br>
+        **[MRTK 표준 셰이더 예제 보기](features/rendering/mrtk-standard-shader.md?q=shader)**<br>
+    :::column-end:::
+    :::column:::
+        [![음성 및 받아쓰기](features/images/MRTK_Icon_VoiceCommand.png)](features/scene-system/scene-system-getting-started.md)<br>
+        **[음성](features/input/speech.md)<br/> & [받아쓰기](features/input/dictation.md)**<br>
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![경계 시스템](features/images/MRTK_Icon_Boundary.png)](features/boundary/boundary-system-getting-started.md)<br>
+        **[경계 <br/>시스템](features/boundary/boundary-system-getting-started.md)**<br>
+    :::column-end:::
+    :::column:::
+        [![편집기 내 시뮬레이션](features/images/MRTK_Icon_InputSystem.png)](features/diagnostics/diagnostics-system-getting-started.md)<br>
+        **[편집기 내 <br/> 시뮬레이션](features/diagnostics/diagnostics-system-getting-started.md)**<br>
+    :::column-end:::
+    :::column:::
+        [![실험적 기능](features/images/MRTK_Icon_Experimental.png)](contributing/experimental-features.md)<br>
+        **[실험적<br/> 기능](contributing/experimental-features.md)**<br>
     :::column-end:::
     :::column:::
     :::column-end:::
