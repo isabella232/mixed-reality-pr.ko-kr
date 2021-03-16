@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, learn, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 언어 번역, Azure, Azure cognitive services, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: f8188cc8c417b60864cd963120ad004d6169c3c2
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c4e068dda72c4dc2f22ca0a56a835b334d90c713
+ms.sourcegitcommit: a2b1c75f25adcd238b6a93b103a13aa898a62c76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583524"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102770331"
 ---
 # <a name="mixed-reality-learn-overview"></a>Mixed Reality Learn 개요
 
@@ -69,3 +69,15 @@ Cognitive Services를 사용하여 Mixed Reality 디바이스(Windows Mixed Real
 * Azure Cognitive Services에서 음성 서비스에 대한 Unity 프로젝트 구성
 * 음성 서비스와 Windows Mixed Reality 애플리케이션 통합
 * 음성 인식을 사용하여 텍스트 번역
+
+### <a name="render-a-model-with-azure-remote-rendering"></a>[Azure Remote Rendering을 사용하여 모델 렌더링](/learn/modules/render-model-azure-remote-rendering-unity/)
+
+Azure Remote Rendering 세션을 만들고 3D 모델을 렌더링합니다.
+
+**학습 목표**
+
+이 모듈을 마치면 다음을 수행할 수 있습니다.
+
+* Remote Rendering 세션 만들기
+* 3D 모델 로드
+* 3D 모델 렌더링
