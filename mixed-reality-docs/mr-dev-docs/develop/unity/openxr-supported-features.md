@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 보강 현실, 가상 현실, 혼합 현실 헤드셋, 학습, 자습서, 시작
-ms.openlocfilehash: 0501abe5a417c17283347455ccea8ec6f49a6a45
-ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
+ms.openlocfilehash: 1c9e185c63d3efef66cdc2782d8d8d4e3692c705
+ms.sourcegitcommit: d5e4eb94c87b86a7774a639f11cd9e35a7050107
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102230744"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103623633"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Unity의 혼합 현실 OpenXR 지원 되는 기능
 
@@ -24,7 +24,7 @@ ms.locfileid: "102230744"
 * HoloLens 2 용 UWP 응용 프로그램을 지원 하 고 HoloLens 2 응용 프로그램 모델을 최적화 합니다.
 * 최신 컨트롤러 프로필 및 holographic app remoting과 함께 Windows Mixed Reality 헤드셋에 대해 Win32 VR 응용 프로그램을 지원 합니다.
 * 앵커와 바인딩되지 않은 공간을 사용한 세계 크기 조정 추적.
-* [저장소 API를 고정 하 여](#anchors-and-anchor-persistence) HoloLens 2 로컬 저장소에 앵커를 유지 합니다.
+* [저장소 API를 고정 하 여](spatial-anchors-in-unity.md) HoloLens 2 로컬 저장소에 앵커를 유지 합니다.
 * 새 HP 반향 G2 컨트롤러를 포함 하 여 [동작 컨트롤러 및 직접 상호 작용](#motion-controller-and-hand-interactions).
 * 26 개의 조인트와 조인트 반지름 입력을 사용 하 여 직접 추적 합니다.
 * HoloLens 2의 눈 응시 상호 작용입니다.
@@ -33,7 +33,7 @@ ms.locfileid: "102230744"
 * 는 [Holographic Remoting 앱을 사용 하 여 HoloLens 2에 대 한 "Play"를](#holographic-remoting-in-unity-editor-play-mode)지원 하므로 개발자는 장치에 빌드 및 배포 하지 않고도 스크립트를 디버그할 수 있습니다.
 * [Mrtk OpenXR 공급자 지원을](openxr-getting-started.md#using-mrtk-with-openxr-support)통해 Mrtk Unity 2.5.3 이상 버전과 호환 됩니다.
 * Unity [Arfoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) 이상 버전과 호환 됩니다.
-* (0.1.3에 추가 됨) 빌드 및 배포 된 Windows 독립 실행형 앱에서 [데스크톱 앱 Holographic 원격](#holographic-remoting-in-desktop-app) 을 지원 합니다.
+* (0.1.3에 추가 됨) 빌드 및 배포 된 Windows 독립 실행형 앱에서 [데스크톱 앱 Holographic 원격](holographic-remoting-desktop.md) 을 지원 합니다.
 * (0.1.4에 추가 됨) SpatialGraphNode을 통해 HoloLens2에서 [QR 코드 추적](#qr-codes) 을 지원 합니다.
 
 ## <a name="holographic-remoting-setup"></a>Holographic 원격 설치
@@ -62,110 +62,6 @@ Visual Studio 프로젝트에서 UWP Unity 프로젝트를 빌드한 다음 패�
 
 > [!NOTE]
 > 버전 0.1.0에서 Holographic Remoting 런타임은 앵커를 지원 하지 않으며 ARAnchorManager 기능은 원격 작업을 통해 작동 하지 않습니다.  이 기능은 이후 릴리스에서 제공 될 예정입니다.
-
-## <a name="holographic-remoting-in-desktop-app"></a>데스크톱 앱의 Holographic 원격 기능
-
-> [!NOTE]
-> Windows 독립 실행형 앱 원격 지원이 0.1.3 패키지 릴리스에 추가 되었습니다.
-> 버전 0.1.3이 기능은 UWP 빌드를 지원 하지 않습니다.
-
-1. [Holographic 원격 설치](#holographic-remoting-setup) 의 단계를 따릅니다.
-2. **편집 > 프로젝트 설정을** 열고 **XR 플러그 인 관리** 로 이동 하 여 **Windows Mixed Reality 기능 집합** 상자를 선택 합니다. 또한 **시작 시 XR 초기화** 를 선택 취소 합니다.
-
-    ![시작 시 XR 초기화가 선택 취소 된 Unity 편집기에서 열리는 프로젝트 설정 패널의 스크린샷](images/openxr-features-img-02-app.png)
-
-3. **OpenXR** 아래의 **기능** 섹션을 확장 하 고 **모두 표시** 를 선택 합니다.
-4. **Holographic App Remoting** 확인란을 선택 합니다.
-
-    ![앱 원격 기능을 사용할 수 있는 Unity 편집기에서 열리는 프로젝트 설정 패널의 스크린샷](images/openxr-features-img-03-app.png)
-
-5. 다음으로, 원격 구성을 설정 하 고 XR 초기화를 트리거하는 코드를 작성 합니다. [Mixed Reality OpenXR 플러그](openxr-getting-started.md#hololens-2-samples) 인을 사용 하 여 배포 된 샘플 앱에는 런타임에 특정 IP 주소에 연결 하는 예제 시나리오를 보여 주는 AppRemoting.cs이 포함 되어 있습니다. 이 시점에서 로컬 컴퓨터에 샘플 앱을 배포 하면 연결 단추를 사용 하 여 IP 주소 입력 필드가 표시 됩니다. IP 주소를 입력 하 고 연결을 클릭 하면 XR이 초기화 되 고 대상 장치에 연결을 시도 합니다.
-
-    ![예제 앱 원격 UI를 표시 하는 샘플 앱 스크린샷](images/openxr-sample-app-remoting.png)
-
-6. 사용자 지정 연결 코드를 작성 하려면 `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Connect` 채워진를 사용 하 여를 호출 `RemotingConfiguration` 합니다. 샘플 앱은 검사기에서이를 노출 하 고 텍스트 필드에서 IP 주소를 채우는 방법을 보여 줍니다. `Connect`를 호출 하면 구성이 설정 되 고 XR가 자동으로 초기화 됩니다. 따라서 코 루틴로 호출 해야 합니다.
-
-    ``` cs
-    StartCoroutine(Remoting.AppRemoting.Connect(remotingConfiguration));
-    ```
-
-7. 을 실행 하는 동안 API를 사용 하 여 현재 연결 상태를 가져오고 `AppRemoting.TryGetConnectionState` 필요에 따라를 사용 하 여 XR의 연결을 해제 하 고 초기화를 취소할 수 있습니다 `AppRemoting.Disconnect()` . 이는 동일한 앱 세션 내에서 다른 장치에 대 한 연결을 끊고 다시 연결 하는 데 사용할 수 있습니다. 샘플 앱은 원격 세션을 탭 할 경우 연결을 끊을 tappable 큐브를 제공 합니다.
-
-### <a name="migration-from-previous-apis"></a>이전 Api에서 마이그레이션
-
-#### <a name="unityenginexrwsaholographicremoting"></a>UnityEngine. XR. HolographicRemoting
-
-[Unity의 문서](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/XR.WSA.HolographicRemoting.html)에 있는 샘플 코드:
-
-| XR. WSA. HolographicRemoting | OpenXR |
-| ---- | ---- |
-| `HolographicRemoting.Connect(String)` | `AppRemoting.Connect(RemotingConfiguration)` |
-| `HolographicRemoting.ConnectionState` | `AppRemoting.TryGetConnectionState(out ConnectionState, out DisconnectReason)`|
-| `StartCoroutine(LoadDevice("WindowsMR"))`| [N/A:를 호출할 때 자동으로 발생 `AppRemoting.Connect` ]  |
-
-#### <a name="unityenginexrwindowsmrwindowsmrremoting"></a>UnityEngine WindowsMRRemoting
-
-| XR. WindowsMR. WindowsMRRemoting | OpenXR |
-| ---- | ---- |
-| `WindowsMRRemoting.Connect()` | `AppRemoting.Connect(RemotingConfiguration)` |
-| `WindowsMRRemoting.Disconnect()` | `AppRemoting.Disconnect()` |
-| `WindowsMRRemoting.TryGetConnectionState(out ConnectionState)` 및 `WindowsMRRemoting.TryGetConnectionFailureReason(out ConnectionFailureReason)`| `AppRemoting.TryGetConnectionState(out ConnectionState, out DisconnectReason)`|
-| `WindowsMRRemoting.isAudioEnabled`, `WindowsMRRemoting.maxBitRateKbps`, `WindowsMRRemoting.remoteMachineName` | `AppRemoting.Connect`구조체를 통해에 전달 됩니다. `RemotingConfiguration` |
-| `WindowsMRRemoting.isConnected` | `AppRemoting.TryGetConnectionState(out ConnectionState state, out _) && state == ConnectionState.Connected`
-
-## <a name="anchors-and-anchor-persistence"></a>앵커 및 앵커 지 속성
-
-Mixed Reality OpenXR 플러그 인은 Unity의 ARFoundation **ARAnchorManager** 구현을 통해 기본적인 앵커 기능을 제공 합니다. Aranchor의 **Aranchor** 에 대 한 기본 사항을 알아보려면 [AR 앵커 관리자에 대 한 aranchor 설명서](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/anchor-manager.html)를 참조 하세요. 버전 0.1.0이 플러그 인은 평면에 연결 된 앵커 만들기를 제외한 모든 ARAnchorManager 기능을 지원 하며,이는 이후 릴리스에서 제공 됩니다.
-
-### <a name="anchor-persistence-and-the-xranchorstore"></a>앵커 지 속성 및 XRAnchorStore
-
-**XRAnchorStore** 이라는 추가 API를 사용 하면 세션 간에 앵커가 지속 될 수 있습니다. XRAnchorStore는 장치에 저장 된 앵커를 나타냅니다. Unity 장면의 **Aranchors** 에서 앵커를 유지 하거나, 저장소에서 새 **aranchors** 로 로드 하거나, 저장소에서 삭제할 수 있습니다.
-
-> [!NOTE]
-> 이러한 앵커는 동일한 장치에 저장 되 고 로드 됩니다. 장치 간 앵커 저장소는 향후 릴리스에서 Azure 공간 앵커를 통해 지원 됩니다.
-
-``` cs
-public class Microsoft.MixedReality.ARSubsystems.XRAnchorStore
-{
-    // A list of all persisted anchors, which can be loaded.
-    public IReadOnlyList<string> PersistedAnchorNames { get; }
-
-    // Clear all persisted anchors
-    public void Clear();
-
-    // Load a single persisted anchor by name. The ARAnchorManager will create this new anchor and report it in
-    // the ARAnchorManager.anchorsChanged event. The TrackableId returned here is the same TrackableId the
-    // ARAnchor will have when it is instantiated.
-    public TrackableId LoadAnchor(string name);
-
-    // Attempts to persist an existing ARAnchor with the given TrackableId to the local store. Returns true if
-    // the storage is successful, false otherwise.
-    public bool TryPersistAnchor(string name, TrackableId trackableId);
-
-    // Removes a single persisted anchor from the anchor store. This will not affect any ARAnchors in the Unity
-    // scene, only the anchors in storage.
-    public void UnpersistAnchor(string name);
-}
-```
-
-XRAnchorStore를 로드 하기 위해 플러그 인은 ARAnchorManager의 하위 시스템인 XRAnchorSubsystem에 확장 메서드를 제공 합니다.
-
-``` cs
-public static Task<XRAnchorStore> LoadAnchorStoreAsync(this XRAnchorSubsystem anchorSubsystem)
-```
-
-이 확장 메서드를 사용 하려면 다음과 같이 ARAnchorManager의 하위 시스템에서 액세스 합니다.
-
-``` cs
-ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
-XRAnchorStore anchorStore = await arAnchorManager.subsystem.LoadAnchorStoreAsync();
-```
-
-앵커 지속/유지 안 됨의 전체 예를 보려면 [Mixed Reality OpenXR Plugin 샘플 장면의](openxr-getting-started.md#hololens-2-samples)앵커-> 앵커 샘플 GameObject 및 AnchorsSample.cs 스크립트를 확인 하세요.
-
-![앵커 샘플이 강조 표시 된 Unity 편집기에서 열린 계층 패널의 스크린샷](images/openxr-features-img-04.png)
-
-![앵커 샘플 스크립트가 강조 표시 된 상태로 Unity 편집기에서 열리는 검사기 패널의 스크린샷](images/openxr-features-img-05.png)
 
 ## <a name="motion-controller-and-hand-interactions"></a>동작 컨트롤러 및 직접 상호 작용
 

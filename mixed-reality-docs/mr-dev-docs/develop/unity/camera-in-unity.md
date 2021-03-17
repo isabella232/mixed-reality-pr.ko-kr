@@ -1,23 +1,23 @@
 ---
-title: Unity의 카메라
+title: Unity에서 카메라 설정
 description: Holographic 렌더링을 수행 하기 위해 Windows Mixed Reality 개발용 Unity의 기본 카메라를 설정 하 고 사용 하는 방법에 대해 알아봅니다.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit, holographic 렌더링, holographic, 몰입 형, 포커스 지점, 깊이 버퍼, 방향 전용, 위치, 불투명, 투명, 클립, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 865d19482e5f612eab95fa2f74cb2bad59171496
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 23f6f1c996ba71b1bcfa62e0c64136bc9fda34b7
+ms.sourcegitcommit: e51e18e443d73a74a9c0b86b3ca5748652cd1b24
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759769"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103574969"
 ---
 # <a name="camera-in-unity"></a>Unity의 카메라
 
 혼합 현실 헤드셋을 착용 하면 holographic 세계의 중심이 됩니다. Unity [카메라](https://docs.unity3d.com/Manual/class-Camera.html) 구성 요소는 stereoscopic 렌더링을 자동으로 처리 하 고 헤드 이동 및 회전을 따릅니다. 그러나 시각적 품질 및 [홀로그램 안정성](../platform-capabilities-and-apis/hologram-stability.md)을 완벽 하 게 최적화 하려면 아래에서 설명 하는 카메라 설정을 설정 해야 합니다.
 
-## <a name="setup"></a>설치 프로그램
+## <a name="setup"></a>설정
 
 1. **Windows 스토어 플레이어 설정** 의 **기타 설정** 섹션으로 이동 합니다.
 2. **Windows Mixed Reality** 를 장치로 선택 합니다 .이는 이전 버전의 Unity에서 **windows Holographic** 으로 나열 될 수 있습니다.
@@ -109,7 +109,7 @@ Unity 앱이 Windows에 깊이 버퍼를 제공할지 여부를 설정 하려면
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [홀로그램 안정성](../platform-capabilities-and-apis/hologram-stability.md)
 * [MixedRealityToolkit 주 카메라 prefab](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Input/Prefabs)

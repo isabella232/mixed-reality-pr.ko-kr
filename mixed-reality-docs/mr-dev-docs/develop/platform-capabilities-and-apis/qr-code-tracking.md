@@ -6,12 +6,12 @@ ms.author: dobrown
 ms.date: 01/21/2021
 ms.topic: article
 keywords: vr, lbe, 위치 기반 엔터테인먼트, vr 아케이드, 아케이드, 모던, qr, qr 코드, hololens2
-ms.openlocfilehash: 0f53b8def268b2d501c6efe3c3e40ea18f9323e0
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 2617d5f811b9d437ece0d5ba2e7dbc909eb16988
+ms.sourcegitcommit: e51e18e443d73a74a9c0b86b3ca5748652cd1b24
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635435"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103574949"
 ---
 # <a name="qr-code-tracking"></a>QR 코드 추적
 
@@ -209,9 +209,10 @@ Windows Mixed Reality 장치는 각각 5cm 보다 작은 면에서 QR 코드에 
 ### <a name="distance-and-angular-position-from-the-qr-code"></a>QR 코드의 거리 및 각도 위치
 추적 카메라는 특정 수준의 세부 정보만 검색할 수 있습니다. 작은 코드의 경우에는 옆쪽을 따라 < 10gb를 닫아야 합니다. 10 cm에서 25cm 너비까지 다양 한 버전 1 QR 코드의 경우 최소 검색 거리가 0.15 미터에서 0.5 미터 사이입니다. 
 
-크기에 대 한 검색 거리가 선형적으로 늘어납니다. 
+크기에 대 한 검색 거리가 선형으로 늘어나지만 QR 버전이 나 모듈 크기에 따라서도 달라 집니다. 버전이 높을수록 더 작은 모듈은 더 가까운 위치 에서만 검색할 수 있습니다. 검색 거리가 더 길면 마이크로 QR 코드를 사용해 볼 수도 있습니다. QR 검색은 코드를 검색 하기 위한 적절 한 해상도를 보장 하기 위해 각도 + = 45도로 작동 합니다.
 
-QR 검색은 코드를 검색 하기 위한 적절 한 해상도를 보장 하기 위해 각도 + = 45도로 작동 합니다.
+> [!IMPORTANT]
+> 항상 대비와 적절 한 테두리가 있는지 확인 합니다.
 
 ### <a name="qr-codes-with-logos"></a>로고가 포함 된 QR 코드
 로고가 포함 된 QR 코드는 테스트 되지 않았으며 현재 지원 되지 않습니다.
@@ -458,6 +459,6 @@ namespace Microsoft.MixedReality.QR
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 * [좌표계](../../design/coordinate-systems.md)
 * <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>
