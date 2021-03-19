@@ -192,24 +192,24 @@
               href: unity/reviewing-changes.md
     - name: 기본 구성 요소
       items:
-        - name: 카메라
+        - name: 카메라 설정
           href: unity/camera-in-unity.md
-        - name: 좌표계
-          href: unity/coordinate-systems-in-unity.md
-        - name: 지속성
-          href: unity/persistence-in-unity.md
-        - name: 헤드 게이즈(head-gaze)
-          href: unity/gaze-in-unity.md
+        - name: Spatial Anchors
+          href: unity/spatial-anchors-in-unity.md
+        - name: 상호 작용
+          items:
+            - name: 모션 컨트롤러
+              href: unity/motion-controllers-in-unity.md
+            - name: 제스처
+              href: unity/gestures-in-unity.md
+            - name: 손 및 시선 추적
+              href: unity/hand-eye-in-unity.md
+            - name: 머리 응시
+              href: unity/gaze-in-unity.md
+            - name: 음성 입력
+              href: unity/voice-input-in-unity.md
         - name: 텍스트
           href: unity/text-in-unity.md
-        - name: 모션 컨트롤러
-          href: unity/motion-controllers-in-unity.md
-        - name: 제스처
-          href: unity/gestures-in-unity.md
-        - name: 손 및 시선 추적
-          href: unity/hand-eye-in-unit.md
-        - name: 음성 입력
-          href: unity/voice-input-in-unity.md
         - name: 공간 매핑
           href: unity/spatial-mapping-in-unity.md
         - name: 공간 음향
@@ -220,6 +220,8 @@
           href: unity/shared-experiences-in-unity.md
         - name: 위치를 찾을 수 있는 카메라
           href: unity/locatable-camera-in-unity.md
+        - name: 데스크톱 앱의 홀로그램 원격 접속
+          href: unity/holographic-remoting-desktop.md
         - name: 포커스 지점
           href: unity/focus-point-in-unity.md
         - name: 추적 손실
