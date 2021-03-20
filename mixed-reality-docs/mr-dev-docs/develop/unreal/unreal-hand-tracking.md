@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, 직접 추적, Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed reality, 개발, 기능, 설명서, 가이드, holograms, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: ea4ba3ad5905e899eae474e4d571585fef77c0c2
-ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
+ms.openlocfilehash: 415a0773586ab232e925fd0f18a3a8e6f8217e88
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102117657"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695807"
 ---
 # <a name="hand-tracking-in-unreal"></a>Unreal의 직접 추적
 
@@ -21,7 +21,8 @@ ms.locfileid: "102117657"
 
 직접 사용 하면 사용자의 손으로, 손가락을 입력으로 사용 하 여 청사진과 c + +에서 액세스할 수 있습니다. Unreal API는 틱이 Unreal 엔진과 동기화 된 좌표계로 데이터를 전송 합니다.
 
-![직접 기초](images/hand-tracking-skeleton-update.png)
+![조인트 오버레이 이미지를 사용 하는 손 ](images/hand-tracking-img-02.png)
+ 모양 기본 이미지 ![](images/hand-tracking-skeleton-update.png)
 
 [!INCLUDE[](includes/tabs-tracking-hand-pose.md)]
 

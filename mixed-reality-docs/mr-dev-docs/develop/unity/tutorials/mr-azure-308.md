@@ -1,19 +1,19 @@
 ---
-title: MR 및 Azure 308 - 디바이스 간 알림
+title: HoloLens (첫 번째 gen) 및 Azure 308-장치 간 알림
 description: 이 과정을 완료 하 여 혼합 현실 응용 프로그램 내에서 Azure Notification Hubs, Azure Functions 및 Azure Storage와 테이블을 구현 하는 방법을 알아보세요.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 알림, 기능, 테이블, notification hubs, hololens, 몰입 형, vr, Windows 10, Visual Studio
-ms.openlocfilehash: 5bf6720fe7be178bf4fb15ae2b87f4ff502afe9b
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8fef7fe2da76e228264037ca51daa57662fbc554
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581278"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730590"
 ---
-# <a name="mr-and-azure-308-cross-device-notifications"></a>MR 및 Azure 308: 디바이스 간 알림
+# <a name="hololens-1st-gen-and-azure-308-cross-device-notifications"></a>HoloLens (첫 번째 gen) 및 Azure 308: 장치 간 알림
 
 <br>
 
@@ -57,7 +57,7 @@ ms.locfileid: "98581278"
 > [!NOTE]
 > 이 과정에서 주로 Windows Mixed Reality (VR) 헤드셋에 초점을 맞춘 반면,이 과정에서 학습 하는 내용을 Microsoft HoloLens에도 적용할 수 있습니다. 과정을 진행할 때 HoloLens를 지원 하기 위해 사용 해야 하는 모든 변경 내용에 대 한 메모를 볼 수 있습니다. HoloLens를 사용 하는 경우 음성 캡처 중에 몇 가지 echo를 확인할 수 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 > [!NOTE]
 > 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (2018 일 수 있음)을 나타냅니다. [도구 설치](../../install-the-tools.md) 문서에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.
@@ -124,22 +124,22 @@ ms.locfileid: "98581278"
     > [!NOTE] 
     > 아직 Azure 계정이 없는 경우 새로 만들어야 합니다. 교실 또는 랩 상황에서이 자습서를 수행 하는 경우 강사 또는 proctors 중 하나에 문의 하 여 새 계정을 설정 하는 데 도움이 될 수 있습니다.
 
-2.  로그인 되 면 왼쪽 위 모서리에서 **새로 만들기** 를 클릭 하 고 **알림 허브** 를 검색 한 다음 **_Enter_* _를 클릭 합니다.
+2.  로그인 되 면 왼쪽 위 모서리에서 **새로 만들기** 를 클릭 하 고 **알림 허브** 를 검색 한 다음 **_Enter 키_** 를 누릅니다.
 
     ![알림 허브 검색](images/AzureLabs-Lab8-06.png)
 
     > [!NOTE] 
-    > 새 단어는 _*_새_*_ 포털에서 _ * 리소스 만들기 * *로 대체 되었을 수 있습니다.
+    > ***New** _ 라는 단어는 새 포털에서 _ * 리소스 만들기 * *로 대체 되었을 수 있습니다.
 
 3.  새 페이지에 *Notification Hubs* 서비스에 대 한 설명이 제공 됩니다. 이 프롬프트의 왼쪽 아래에서 **만들기** 단추를 선택 하 여이 서비스와의 연결을 만듭니다.
 
     ![notification hubs 인스턴스 만들기](images/AzureLabs-Lab8-07.png)
 
-4.  **_Create_* _를 클릭 한 후:
+4.  ***만들기*** 를 클릭 하면 다음을 클릭 합니다.
 
     1.  이 서비스 인스턴스의 원하는 이름을 삽입 합니다.
 
-    2.  이 앱과 연결할 수 있는 _ *namespace**를 제공 합니다.
+    2.  이 앱에 연결할 수 있는 **네임 스페이스** 를 제공 합니다.
 
     3.  위치를 선택 **합니다.**
 
@@ -182,7 +182,7 @@ Notification Hubs 서비스 인스턴스를 만든 후에는 Azure Portal로 다
 2.  로그인 되 면 왼쪽 위 모서리에서 **새로 만들기** 를 클릭 하 고 **저장소 계정** 을 검색 한 다음 **Enter 키** 를 누릅니다.
 
     > [!NOTE] 
-    > New _ 라는 단어는 **_새_ 포털에서 _ 리소스 만들기 *로 대체 되었을 수 있습니다***.
+    > ***New** _ 라는 단어는 새 포털에서 _ * 리소스 만들기 * *로 대체 되었을 수 있습니다.
 
 3.  목록에서 **저장소 계정-blob, 파일, 테이블, 큐** 를 선택 합니다.
 
@@ -734,9 +734,9 @@ SDK를 고유한 프로젝트로 가져오려면 GitHub에서 최신 [**unitypac
 
     ![패키지로 가져오기](images/AzureLabs-Lab8-61.png)
 
-3.  **_가져오기_* _ 단추를 클릭 하 여 프로젝트에 항목을 추가 합니다.
+3.  ***가져오기*** 단추를 클릭 하 여 프로젝트에 항목을 추가 합니다.
 
-4.  프로젝트 뷰의 **플러그 인** 에서 _ *Storage** 폴더로 이동 하 고 다음 플러그 인 *만* 선택 합니다.
+4.  프로젝트 뷰에서 **플러그 인** 의 **저장소** 폴더로 이동 하 고 다음 플러그 인 *만* 선택 합니다.
 
     -   Microsoft.Data.Edm
     -   Microsoft.Data.OData
@@ -759,7 +759,7 @@ SDK를 고유한 프로젝트로 가져오려면 GitHub에서 최신 [**unitypac
 
         ![dll에 대해 처리 안 함 설정](images/AzureLabs-Lab8-64.png)
 
-7.  **플랫폼 설정** 에서 **처리 안 함** 상자를 선택 하 고 **_적용_* _을 클릭 합니다.
+7.  **플랫폼 설정** 에서 **처리 안 함** 상자를 선택 하 고 **_적용_** 을 클릭 합니다.
 
     ![처리 안 함 적용](images/AzureLabs-Lab8-65.png)
 
@@ -770,7 +770,7 @@ SDK를 고유한 프로젝트로 가져오려면 GitHub에서 최신 [**unitypac
 
 이제이 응용 프로그램을 실행 하는 코드가 포함 된 스크립트를 만들어야 합니다.
 
-만들어야 하는 첫 번째 스크립트는 다음을 담당 하는 _ * TableToScene * *입니다.
+만들어야 하는 첫 번째 스크립트는 다음을 담당 하는 **TableToScene** 입니다.
 
 -   Azure 테이블 내에서 엔터티를 읽습니다.
 -   테이블 데이터를 사용 하 여 생성할 개체와 위치를 결정 합니다.
@@ -1216,8 +1216,8 @@ SDK를 고유한 프로젝트로 가져오려면 GitHub에서 최신 [**unitypac
     1.  **기타 설정** 탭에서 다음을 수행 합니다.
 
         1.  **스크립팅 런타임 버전이** **실험적** 이어야 함 (.net 4.6 해당)
-        2.  **Scripting 백엔드** 는 **_.net_* _ 이어야 합니다.
-        3.  _ *API 호환성 수준**은 **.net 4.6** 이어야 합니다.
+        2.  **Scripting 백엔드** 는 .net 이어야 합니다. ****
+        3.  **API 호환성 수준은** **.net 4.6** 이어야 합니다.
 
             ![api 호환성](images/AzureLabs-Lab8-87.png)
 
@@ -1487,9 +1487,9 @@ SDK를 고유한 프로젝트로 가져오려면 최신 [unitypackage](https://a
 
 1.  **빌드 설정** ( **파일**  >  **빌드 설정** )으로 이동 합니다.
 
-2.  **빌드 설정** 메뉴에서 **Unity c # 프로젝트** _ is 선택 (빌드 후이 프로젝트의 스크립트를 편집할 수 있음)를 확인 합니다.
+2.  **빌드 설정** 메뉴에서 **Unity c # 프로젝트***가 선택 (빌드 후이 프로젝트의 스크립트를 편집할 수 있음) 확인 합니다.
 
-3.  이 작업을 완료 한 후 _ * 빌드 * *를 클릭 합니다.
+3.  이 작업을 완료 한 후 **빌드** 를 클릭 합니다.
 
     ![프로젝트 빌드](images/AzureLabs-Lab8-99.png)
 
@@ -1523,7 +1523,7 @@ NuGet 패키지를 가져오려면:
 
     ![nuget 관리자 열기](images/AzureLabs-Lab8-102.png)
 
-3.  **_찾아보기_*_ 탭을 선택 하 고 _ windowsazure.servicebus을 검색*** 합니다.
+3.  ***찾아보기** _ 탭을 선택 하 고 _ * windowsazure.servicebus * *를 검색 합니다.
 
     ![windows azure 메시징 패키지 찾기](images/AzureLabs-Lab8-103.png)
 
@@ -1623,7 +1623,7 @@ NuGet 패키지를 가져오려면:
 
 4.  로그인 한 계정과 연결 된 모든 응용 프로그램을 로드 합니다. 계정에 로그인 하지 않은 경우이 페이지 **에 로그인 할 수 있습니다** .
 
-5.  이 자습서의 시작 부분에서 만든 **스토어 앱 이름을** 찾아 선택 합니다. 그런 후 **Next** 를 클릭합니다.
+5.  이 자습서의 시작 부분에서 만든 **스토어 앱 이름을** 찾아 선택 합니다. **다음** 을 클릭합니다.
 
     ![상점 이름 찾기 및 선택](images/AzureLabs-Lab8-107.png)
 
