@@ -1,19 +1,19 @@
 ---
-title: MR 입력 210 - 응시
+title: HoloLens (첫 번째 gen) 입력 210-응시
 description: Unity, Visual Studio 및 HoloLens를 사용 하 여이 코딩 연습을 수행 하 여 응시 개념에 대 한 자세한 내용을 알아보세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 응시, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
-ms.openlocfilehash: 7e8d72bc4d37d76f8f9ec40956cb85591e237ac8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 99c0d2ae00416f5d26e99e6d7d00c73ea07e5fb3
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583866"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730330"
 ---
-# <a name="mr-input-210-gaze"></a>MR 입력 210: 응시
+# <a name="hololens-1st-gen-input-210-gaze"></a>HoloLens (첫 번째 gen) 입력 210: 응시
 
 >[!NOTE]
 >Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](./mr-learning-base-01.md)가 게시되었습니다.
@@ -74,7 +74,7 @@ ms.locfileid: "98583866"
 * 자산을 가져오고 장면을 설정합니다.
 * HoloLens에서 astronaut를 확인 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 1. Unity를 시작합니다.
 2. **새 프로젝트** 를 선택합니다.
@@ -184,7 +184,7 @@ HoloLens에 배포 하는 경우:
 * 커서를 너무 작거나 크게 표시 하지 않습니다.
 * 방해 하지 않는지 콘텐츠를 방지 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 1. **HoloToolkit\Input\Prefabs** 폴더에서 **inputmanager** 자산을 찾습니다.
 2. **Inputmanager** 를 **계층 구조** 에 끌어다 놓습니다.
@@ -203,11 +203,11 @@ HoloLens에 배포 하는 경우:
 4. **디버그를 클릭 하 > 디버깅 하지 않고 시작** 을 클릭 하거나 **ctrl + F5** 를 누릅니다.
 5. 커서를 그리는 방법 및 홀로그램을 터치 하는 경우 모양이 어떻게 변경 되는지 관찰 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 1. **계층** 패널에서 **AstroMan** -> **GEO_G** -> **Back_Center** 개체를 확장 합니다.
-2. **Interactible.cs** 를 두 번 클릭 하 여 Visual Studio에서 엽니다.
-3. **Interactible.cs** 의 **OnFocusEnter ()** 및 **OnFocusExit ()** 콜백에서 줄의 주석 처리를 제거 합니다. 이는 포커스 (응시 또는 컨트롤러 포인팅)가 특정 GameObject의 collider를 입력 하 고 종료 하는 경우 Mixed Reality Toolkit의 InputManager에서 호출 됩니다.
+2. **Interactible** 를 두 번 클릭 하 여 Visual Studio에서 엽니다.
+3. **Interactible** 의 **OnFocusEnter ()** 및 **OnFocusExit ()** 콜백에서 줄의 주석 처리를 제거 합니다. 이는 포커스 (응시 또는 컨트롤러 포인팅)가 특정 GameObject의 collider를 입력 하 고 종료 하는 경우 Mixed Reality Toolkit의 InputManager에서 호출 됩니다.
 
 ```cs
 /* TODO: DEVELOPER CODING EXERCISE 2.d */
@@ -248,7 +248,7 @@ void IFocusable.OnFocusExit()
 * Holograms을 더 쉽게 대상으로 지정 합니다.
 * 안정화 자연 헤드 이동.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 1. **계층** 패널에서 **inputmanager** 개체를 선택 합니다.
 2. **검사기** 패널에서 **응시 안정기** 스크립트를 찾습니다. 원하는 경우 클릭 하 여 Visual Studio에서 엽니다.
@@ -263,15 +263,15 @@ void IFocusable.OnFocusExit()
 
 * 커서에 방향 표시기를 추가 하 여 holograms를 찾을 수 있습니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
-**DirectionIndicator.cs** 파일을 사용할 예정입니다.
+**DirectionIndicator** 파일을 사용할 예정입니다.
 
 1. 사용자가 holograms에 gazing 되지 않은 경우 방향 표시기를 표시 합니다.
 2. 사용자가 holograms에 gazing 경우 방향 표시기를 숨깁니다.
 3. Holograms를 가리키도록 방향 표시기를 업데이트 합니다.
 
-이제 시작해 보겠습니다.
+이제 시작하겠습니다.
 
 1. **계층** 패널에서 **AstroMan** 개체를 클릭 하 고 **화살표를 클릭** 하 여 확장 합니다.
 2. **계층** 패널의 **AstroMan** 아래에서 **DirectionalIndicator** 개체를 선택 합니다.
@@ -279,7 +279,7 @@ void IFocusable.OnFocusExit()
 4. 메뉴에서 검색 상자 **방향 표시기** 를 입력 합니다. 검색 결과를 선택 합니다.
 5. **계층** 패널에서 **커서** 개체를 **검사기** 의 **cursor** 속성으로 끌어 놓습니다.
 6. **프로젝트** 패널의 **Holograms** 폴더에서 **DirectionalIndicator** 자산을 **검사기** 의 **방향 표시기** 속성으로 끌어다 놓습니다.
-7. 앱을 빌드 및 배포 합니다.
+7. 앱을 빌드 및 배포합니다.
 8. 방향 표시기 개체를 사용 하 여 astronaut를 찾는 방법을 시청 하세요.
 
 ## <a name="chapter-5---billboarding"></a>5 장-Billboarding
@@ -290,7 +290,7 @@ void IFocusable.OnFocusExit()
 
 * Billboarding를 사용 하 여 holograms 항상 사용자를 중심으로 합니다.
 
-**Billboard.cs** 파일을 사용 하 여 사용자가 항상 연결 되도록 GameObject 지향을 유지 합니다.
+GameObject 파일을 사용 하 여 사용자가 항상 연결 되도록 하는 방향을 유지 **합니다.**
 
 1. **계층** 패널에서 **AstroMan** 개체를 선택 합니다.
 2. **검사기** 패널에서 **구성 요소 추가** 단추를 클릭 합니다.
@@ -318,15 +318,15 @@ void IFocusable.OnFocusExit()
 
 태그 동반 개체는 사용자의 보기를 완전히 유지 하지 않습니다. 태그는 고무 밴드에 의해 사용자의 헤드에 연결 된 개체로 생각할 수 있습니다. 사용자가 이동 하면 완전히 종료 하지 않고 뷰의 가장자리를 향해 이동 하 여 콘텐츠를 쉽게 한눈에 볼 수 있습니다. 사용자가 태그를 따라 개체를 gazes 하는 경우에는 더 자세히 볼 수 있습니다.
 
-**SimpleTagalong.cs** 파일을 사용할 예정입니다.
+여기서는 다음과 같은 작업을 수행 하는 **Simpletagalong** 파일을 사용 합니다.
 
 1. Tag-Along 개체가 카메라 범위 내에 있는지 여부를 확인 합니다.
 2. 뷰 내에 있지 않은 경우 Tag-Along를 뷰 사이에 부분적으로 배치 합니다.
 3. 그렇지 않으면 사용자의 기본 거리에 Tag-Along을 배치 합니다.
 
-이렇게 하려면 먼저 **TagalongAction** 를 호출 하도록 **Interactible.cs** 스크립트를 변경 해야 합니다.
+이렇게 하려면 먼저 **TagalongAction** 를 호출 하도록 **Interactible** 스크립트를 변경 해야 합니다.
 
-1. 코딩 연습 6. a (주석 처리 줄 84 ~ 87)를 완료 하 여 **Interactible.cs** 를 편집 합니다.
+1. 코딩 연습 6. a (주석 처리 줄 84 ~ 87)를 수행 하 여 **Interactible** 를 편집 합니다.
 
 ```cs
 /* TODO: DEVELOPER CODING EXERCISE 6.a */
@@ -337,9 +337,9 @@ if (interactibleAction != null)
 }
 ```
 
-**Interactible.cs** 와 쌍을 이루는 **InteractibleAction.cs** 스크립트는 holograms을 탭 할 때 사용자 지정 작업을 수행 합니다. 이 경우 태그에 대해 구체적으로 사용 합니다.
+**Interactible** 와 쌍을 이루는 **InteractibleAction** 스크립트는 holograms을 탭 할 때 사용자 지정 작업을 수행 합니다. 이 경우 태그에 대해 구체적으로 사용 합니다.
 
-* **Scripts** 폴더에서 **TagalongAction.cs** 자산을 클릭 하 여 Visual Studio에서 엽니다.
+* **Scripts** 폴더에서 **TagalongAction** 자산을 클릭 하 여 Visual Studio에서 엽니다.
 * 코딩 연습을 완료 하거나 다음과 같이 변경 합니다.
   * **계층** 의 맨 위에 있는 검색 표시줄에서 **ChestButton_Center** 을 입력 하 고 결과를 선택 합니다.
   * **검사기** 패널에서 **구성 요소 추가** 단추를 클릭 합니다.
@@ -357,7 +357,7 @@ if (interactibleAction != null)
 * Billboarding을 gazed 개체에 추가 하 고 피벗 축을 XY로 설정 합니다.
 * 그런 다음 단순 Tag-Along를 개체에 추가 합니다.
 
-**TagalongAction.cs** 의 솔루션은 다음과 같습니다.
+다음은 TagalongAction의 솔루션 **입니다.**
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -407,5 +407,5 @@ public class TagalongAction : InteractibleAction
 }
 ```
 
-* 사용해 보세요. 앱을 빌드 및 배포 합니다.
+* 사용해 보세요. 앱을 빌드 및 배포합니다.
 * 콘텐츠가 응시 지점의 중심을 따라가는 지를 확인 합니다.

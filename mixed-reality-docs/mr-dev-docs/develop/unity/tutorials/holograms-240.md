@@ -1,19 +1,19 @@
 ---
-title: MR 공유 240 - 여러 HoloLens 디바이스
+title: HoloLens (첫 번째 gen) 공유 240-여러 HoloLens 장치
 description: Holograms를 공유 하는 방법에 대 한 자세한 내용은 Unity, Visual Studio 및 HoloLens를 사용 하 여이 코딩 연습을 따르세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 공유, 네트워킹, 아카데미, 자습서, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
-ms.openlocfilehash: 97f2067c043912e7608361e73e54fdf769b8bf51
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8e3631c80702f04e9f7e50c98bed91d92c332841
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582926"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730150"
 ---
-# <a name="mr-sharing-240-multiple-hololens-devices"></a>MR 공유 240: 여러 HoloLens 디바이스
+# <a name="hololens-1st-gen-sharing-240-multiple-hololens-devices"></a>HoloLens (첫 번째 gen) 공유 240: 여러 HoloLens 장치
 
 >[!NOTE]
 >Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](./mr-learning-base-01.md)가 게시되었습니다.
@@ -66,7 +66,7 @@ Holograms는 공간에서 이동 하면서 전 세계에 남아 있습니다. Ho
 * Holographic apps를 개발 하는 Unity를 설정 합니다.
 * 홀로그램을 확인 하세요.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * Unity를 시작합니다.
 * **열기** 를 선택합니다.
@@ -121,7 +121,7 @@ Holograms는 공간에서 이동 하면서 전 세계에 남아 있습니다. Ho
 * 응시 입력을 사용 하 여 커서를 제어 합니다.
 * 제스처 입력을 사용 하 여 holograms와 상호 작용 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 **응시**
 
@@ -168,7 +168,7 @@ Holograms를 확인 하 고 상호 작용 하는 데 재미 있지만 더 살펴
 >2. "Windows 스토어" 탭을 클릭 합니다.
 >3. "게시 설정 > 기능" 섹션에서 **Internetclientserver** 기능 및 **PrivateNetworkClientServer** 기능을 확인 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * **프로젝트 패널** 에서 **HoloToolkit-Sharing-240\Prefabs\Sharing** 폴더로 이동 합니다.
 * **공유** Prefab을 **계층 패널로** 끌어 놓습니다.
@@ -319,7 +319,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 * 플레이어 아바타를 선택 하 고 공유 합니다.
 * 플레이어 아바타를 모든 사용자의 헤드 옆에 연결 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * **프로젝트 패널** 에서 **Holograms** 폴더로 이동 합니다.
 * **PlayerAvatarStore** 를 **계층** 으로 끌어 놓습니다.
@@ -618,7 +618,7 @@ public class AppStateManager : Singleton<AppStateManager>
 
 * 플레이어의 헤드 위치에 따라 공간 매핑 메시에 holograms을 배치 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * **프로젝트 패널** 에서 **Holograms** 폴더로 이동 합니다.
 * **CustomSpatialMapping** Prefab를 **계층 구조** 에 끌어다 놓습니다.
@@ -997,7 +997,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 * 실제 표면에서 바운스 된 projectiles를 시작 합니다.
 * 다른 플레이어가 볼 수 있도록 projectiles을 공유 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * **계층** 에서 **HologramCollection** 개체를 선택 합니다.
 * **검사기** 에서 **구성 요소 추가** 를 클릭 합니다.
@@ -1019,7 +1019,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 
 * 함께 작동 하 여 비밀 포털을 projectiles 앵커에서 충분 한를 시작 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * **프로젝트 패널** 에서 **Holograms** 폴더로 이동 합니다.
 * 지 **각 자산을** **HologramCollection의 자식** 으로 끌어 놓습니다.

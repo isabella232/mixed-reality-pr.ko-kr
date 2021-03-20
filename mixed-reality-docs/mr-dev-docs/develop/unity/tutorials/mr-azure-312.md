@@ -1,19 +1,19 @@
 ---
-title: MR 및 Azure 312 - 봇 통합
+title: HoloLens (첫 번째 gen) 및 Azure 312-봇 통합
 description: 이 과정을 완료 하 여 Microsoft 봇 Framework v4를 사용 하는 bot을 만들어 배포 하 고 혼합 현실 응용 프로그램에서 통신 하는 방법을 알아보세요.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 컴퓨터 비전, hololens, 모던, vr, microsoft 봇 framework v4, 웹 앱 봇, 봇 프레임 워크, microsoft 봇, Windows 10, Visual Studio
-ms.openlocfilehash: 6b8b4624615a3c3f62800b396803572b0b67ad1a
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5bef129b9ccbbba6bf2bce835bd1567d4f596932
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582460"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730320"
 ---
-# <a name="mr-and-azure-312-bot-integration"></a>MR 및 Azure 312: Bot 통합
+# <a name="hololens-1st-gen-and-azure-312-bot-integration"></a>HoloLens (첫 번째 gen) 및 Azure 312: 봇 통합
 
 >[!NOTE]
 >Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
@@ -45,7 +45,7 @@ ms.locfileid: "98582460"
 > [!NOTE]
 > 이 과정에서 주로 HoloLens에 초점을 맞춘 반면,이 과정에서 배운 내용을 Windows Mixed Reality 모던 (VR) 헤드셋에도 적용할 수 있습니다. 모던 (VR) 헤드셋은 액세스할 수 있는 카메라를 포함 하지 않으므로 PC에 연결 된 외부 카메라가 필요 합니다. 이 과정을 진행 하면서 모던 (VR) 헤드셋을 지원 하기 위해 사용 해야 하는 변경 내용에 대 한 정보를 볼 수 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 > [!NOTE]
 > 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (7 월 2018)을 나타냅니다. [도구 설치](../../install-the-tools.md) 문서에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.

@@ -1,19 +1,19 @@
 ---
-title: MR 및 Azure 309-Application insights
+title: HoloLens (첫 번째 gen) 및 Azure 309-Application insights
 description: Azure 애플리케이션 Insights 서비스를 사용 하 여 혼합 현실 응용 프로그램 내에서 사용자 동작에 대 한 분석을 수집 하는 방법을 알아보려면이 과정을 완료 합니다.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, 아카데미, unity, 자습서, api, application insights, hololens, 모던, vr, Windows 10, Visual Studio
-ms.openlocfilehash: 5d599e7c3c6f887675bf010a10fb8841e80143db
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: efd6a3f8bf526dcf6a7eaee199f5c22ffa1dd639
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582965"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730380"
 ---
-# <a name="mr-and-azure-309-application-insights"></a>MR 및 Azure 309: Application Insights
+# <a name="hololens-1st-gen-and-azure-309-application-insights"></a>HoloLens (첫 번째 gen) 및 Azure 309: Application insights
 
 <br>
 
@@ -49,7 +49,7 @@ Application Insights는 개발자가 응용 프로그램에서 분석을 수집 
 > [!NOTE]
 > 이 과정에서 주로 Windows Mixed Reality (VR) 헤드셋에 초점을 맞춘 반면,이 과정에서 학습 하는 내용을 Microsoft HoloLens에도 적용할 수 있습니다. 과정을 진행할 때 HoloLens를 지원 하기 위해 사용 해야 하는 모든 변경 내용에 대 한 메모를 볼 수 있습니다. HoloLens를 사용 하는 경우 음성 캡처 중에 몇 가지 echo를 확인할 수 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 > [!NOTE]
 > 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (7 월 2018)을 나타냅니다. [도구 설치](../../install-the-tools.md) 문서에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.

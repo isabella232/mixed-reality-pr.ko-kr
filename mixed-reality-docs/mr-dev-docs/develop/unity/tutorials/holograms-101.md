@@ -1,19 +1,19 @@
 ---
-title: MR 기본 사항 101 - 디바이스를 사용하여 프로젝트 수행
+title: HoloLens (첫 번째 gen) 기본 사항 101-장치를 사용 하 여 프로젝트 완료
 description: Unity, Visual Studio 및 HoloLens를 사용 하 여이 코딩 연습을 수행 하 여 Windows Mixed Reality의 기본 사항을 알아보세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: 혼합 현실, Windows Mixed Reality, HoloLens, 홀로그램, 아카데미, 자습서, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
-ms.openlocfilehash: 4ca16542060e1cee746ba5095a7bf68ca8136267
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5015dff1487dce9ff761a4ca606657eca6f75406
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583712"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730340"
 ---
-# <a name="mr-basics-101-complete-project-with-device"></a>MR 기본 101: 디바이스를 사용하여 프로젝트 수행
+# <a name="hololens-1st-gen-basics-101-complete-project-with-device"></a>HoloLens (첫 번째 gen) 기본 사항 101: 장치를 사용 하 여 프로젝트 완료
 
 <br>
 
@@ -68,7 +68,7 @@ ms.locfileid: "98583712"
 * 홀로그램을 만듭니다.
 * 만든 홀로그램을 확인 하세요.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * Unity를 시작합니다.
 * **열기** 를 선택합니다.
@@ -137,7 +137,7 @@ ms.locfileid: "98583712"
 
 * 전 세계 잠긴 커서를 사용 하 여 응시를 시각화 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * Unity 프로젝트로 돌아가서 빌드 설정 창이 열려 있으면 닫습니다.
 * **프로젝트 패널** 에서 **Holograms** 폴더를 선택 합니다.
@@ -150,7 +150,7 @@ ms.locfileid: "98583712"
 * **계층 패널** 에서 **Cursor** 개체를 선택 합니다.
 * **WorldCursor** 스크립트를 **검사기 패널로** 끌어 놓습니다.
 * **WorldCursor** 스크립트를 두 번 클릭 하 여 Visual Studio에서 엽니다.
-* 이 코드를 복사 하 여 **WorldCursor.cs** 에 붙여넣고 **모두 저장** 합니다.
+* 이 코드를 복사 하 여 **WorldCursor** 에 붙여넣고 **모두 저장** 합니다.
 
 ```cs
 using UnityEngine;
@@ -213,7 +213,7 @@ public class WorldCursor : MonoBehaviour
 
 * 선택 제스처를 사용 하 여 holograms를 제어 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 먼저 스크립트를 만든 다음 선택 제스처를 검색할 수 있습니다.
 
@@ -325,12 +325,12 @@ public class SphereCommands : MonoBehaviour
 * 백그라운드에서 항상 수신 대기 하는 음성 명령을 추가 합니다.
 * 음성 명령에 반응 하는 홀로그램을 만듭니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * **Scripts** 폴더에서 **SpeechManager** 라는 스크립트를 만듭니다.
 * **SpeechManager** 스크립트를 계층의 **OrigamiCollection** 개체로 끌어 옵니다.
 * Visual Studio에서 **SpeechManager** 스크립트를 엽니다.
-* 이 코드를 복사 하 여 **SpeechManager.cs** 에 붙여넣고 **모두 저장** 합니다.
+* 이 코드를 복사 하 여 **SpeechManager** 에 붙여넣고 **모두 저장** 합니다.
 
 ```cs
 using System.Collections.Generic;
@@ -447,7 +447,7 @@ public class SphereCommands : MonoBehaviour
 
 * 전 세계에서 holograms를 들어봅니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * Unity의 상단 메뉴에서 선택 **> 프로젝트 설정 > 오디오를 편집** 합니다.
 * 오른쪽의 검사기 패널에서 **Spatializer 플러그 인** 설정을 찾아 **MS hrtf Spatializer** 를 선택 합니다.
@@ -557,7 +557,7 @@ public class SphereSounds : MonoBehaviour
 * 실제 세계를 가상 세계에 가져오세요.
 * 가장 중요 한 위치에 holograms을 두십시오.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * Unity의 프로젝트 패널에서 **Holograms** 폴더를 클릭 합니다.
 * **공간 매핑** 자산을 **계층** 의 루트로 끌어 옵니다.
@@ -641,7 +641,7 @@ public class TapToPlaceParent : MonoBehaviour
 
 * Holographic 지 수에 대 한 입구를 표시 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 이제 holographic 지 수를 파악 하는 방법을 보여 드리겠습니다.
 

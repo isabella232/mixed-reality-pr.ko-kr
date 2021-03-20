@@ -1,19 +1,19 @@
 ---
-title: MR 및 Azure 313 - IoT Hub 서비스
+title: HoloLens (첫 번째 gen) 및 Azure 313-IoT Hub 서비스
 description: Ubuntu 16.4를 실행 하는 가상 머신에서 Azure IoT Hub 서비스를 구현 하 고 Microsoft HoloLens 또는 VR 헤드셋을 사용 하 여 메시지 데이터를 시각화 하는 방법을 알아봅니다.
 author: drneil
 ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: azure, mixed reality, 아카데미, edge, iot edge, 자습서, api, 알림, 함수, 테이블, hololens, 몰입 형, vr, iot, virtual machine, ubuntu, python, Windows 10, Visual Studio
-ms.openlocfilehash: f23a9bf5bcdb0868ef9b0e6f77fbdb7a15dfdce1
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f4306e7940e2447fe31afb8c7071c00abc98dd34
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582811"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730500"
 ---
-# <a name="mr-and-azure-313-iot-hub-service"></a>MR 및 Azure 313: IoT Hub 서비스
+# <a name="hololens-1st-gen-and-azure-313-iot-hub-service"></a>HoloLens (첫 번째 gen) 및 Azure 313: IoT Hub 서비스
 
 >[!NOTE]
 >Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
@@ -55,7 +55,7 @@ ms.locfileid: "98582811"
 </tr>
 </table>
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 Microsoft HoloLens를 비롯 하 여 혼합 현실에서 개발 하기 위한 최신 필수 구성 요소는 [도구 설치](/windows/mixed-reality/install-the-tools) 문서를 참조 하세요.
 
