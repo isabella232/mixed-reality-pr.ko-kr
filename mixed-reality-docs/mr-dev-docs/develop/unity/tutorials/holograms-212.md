@@ -1,19 +1,19 @@
 ---
-title: MR 입력 212 - 음성
+title: HoloLens (첫 번째 gen) 입력 212-음성
 description: Unity, Visual Studio 및 HoloLens를 사용 하 여이 코딩 연습을 수행 하 여 음성 개념에 대 한 세부 정보를 알아보세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 음성, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
-ms.openlocfilehash: 6fb3e10cb440fdda941a6d68b106da1bbaaedbc9
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 3218585c8c485e05fc511cf06b32542709027493
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583680"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730450"
 ---
-# <a name="mr-input-212-voice"></a>MR 입력 212: 음성
+# <a name="hololens-1st-gen-input-212-voice"></a>HoloLens (첫 번째 gen) 입력 212: 음성
 
 >[!NOTE]
 >Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](./mr-learning-base-01.md)가 게시되었습니다.
@@ -76,7 +76,7 @@ ms.locfileid: "98583680"
 
 ## <a name="unity-setup"></a>Unity 설치
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 1. Unity를 시작합니다.
 2. **열기** 를 선택합니다.
@@ -152,14 +152,14 @@ HoloLens에 배포 하는 경우:
     6. 제거
 * 비슷한 소리를 사용 합니다. Rhyme 음성 명령을 사용 하지 않도록 하십시오. *"저장소 표시"* 및 *"자세히 표시"* 를 지 원하는 쇼핑 응용 프로그램이 있는 경우 다른 명령 중 하나를 사용 하 고 있는 동안에는 명령 중 하나를 사용 하지 않도록 설정 하는 것이 좋습니다. 예를 들어 *"저장소 표시"* 단추를 사용 하 여 저장소를 연 후 *"자세히 표시"* 명령을 사용 하 여 검색을 할 수 있도록 저장소가 표시 될 때 해당 명령을 사용 하지 않도록 설정할 수 있습니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * Unity의 **계층** 패널에서 검색 도구를 사용 하 여 **holoComm_screen_mesh** 개체를 찾습니다.
 * **HoloComm_screen_mesh** 개체를 두 번 클릭 하 여 **화면** 에 표시 합니다. 음성 명령에 응답 하는 astronaut의 조사식입니다.
 * **검사기** 패널에서 **음성 입력 원본 (스크립트)** 구성 요소를 찾습니다.
 * **키워드** 섹션을 확장 하 여 지원 되는 음성 명령: **Communicator 열기** 를 표시 합니다.
 * 오른쪽의 코그를 클릭 한 다음 **스크립트 편집** 을 선택 합니다.
-* **SpeechInputSource.cs** 를 탐색 하 여 **KeywordRecognizer** 를 사용 하 여 음성 명령을 추가 하는 방법을 이해 합니다.
+* **SpeechInputSource** 를 탐색 하 여 **KeywordRecognizer** 를 사용 하 여 음성 명령을 추가 하는 방법을 이해 합니다.
 
 ### <a name="build-and-deploy"></a>빌드 및 배포
 
@@ -192,7 +192,7 @@ HoloLens에 배포 하는 경우:
 >2. "유니버설 Windows 플랫폼" 탭을 클릭 합니다.
 >3. "게시 설정 > 기능" 섹션에서 **마이크** 기능을 확인 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * Unity의 **계층 구조** 패널에서 **holoComm_screen_mesh** 개체가 선택 되어 있는지 확인 합니다.
 * **검사기** 패널에서 **Astronaut Watch (스크립트)** 구성 요소를 찾습니다.
@@ -203,9 +203,9 @@ HoloLens에 배포 하는 경우:
 * **Communicator** 개체에는 **메시지 보내기** 명령에 응답 하기 위한 **음성 입력 처리기 (스크립트)** 구성 요소가 있습니다.
 * **Communicator (스크립트)** 구성 요소를 확인 하 고 스크립트를 두 번 클릭 하 여 Visual Studio에서 엽니다.
 
-Communicator.cs는 communicator 장치에서 적절 한 단추 상태를 설정 하는 일을 담당 합니다. 이렇게 하면 사용자가 메시지를 기록 하 고, 다시 재생 하 고, 메시지를 astronaut으로 보낼 수 있습니다. 또한 애니메이션이 적용 된 웨이브 폼을 시작 하 고 중지 하 여 사용자에 게 음성이 들리는지를 승인 합니다.
+Communicator는 communicator 장치에서 적절 한 단추 상태를 설정 하는 일을 담당 합니다. 이렇게 하면 사용자가 메시지를 기록 하 고, 다시 재생 하 고, 메시지를 astronaut으로 보낼 수 있습니다. 또한 애니메이션이 적용 된 웨이브 폼을 시작 하 고 중지 하 여 사용자에 게 음성이 들리는지를 승인 합니다.
 
-* **Communicator.cs** 에서 **Start** 메서드에서 다음 줄 (81 및 82)을 삭제 합니다. 그러면 communicator에서 ' 레코드 ' 단추가 활성화 됩니다.
+* **Communicator .cs** 에서 **Start** 메서드에서 다음 줄 (81 및 82)을 삭제 합니다. 그러면 communicator에서 ' 레코드 ' 단추가 활성화 됩니다.
 
 ```cs
 // TODO: 2.a Delete the following two lines:
@@ -248,9 +248,9 @@ MessageUIRenderer.gameObject.SetActive(false);
 >2. "유니버설 Windows 플랫폼" 탭을 클릭 합니다.
 >3. "게시 설정 > 기능" 섹션에서 **마이크** 기능을 확인 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
-받아쓰기 인식기를 사용 하도록 **MicrophoneManager.cs** 를 편집 하겠습니다. 다음을 추가 합니다.
+받아쓰기 인식기를 사용 하도록 **MicrophoneManager** 를 편집 하겠습니다. 다음을 추가 합니다.
 
 1. **기록 단추** 를 누르면 **DictationRecognizer이 시작** 됩니다.
 2. DictationRecognizer가 이해 하는 사항의 **가설** 을 표시 합니다.
@@ -259,7 +259,7 @@ MessageUIRenderer.gameObject.SetActive(false);
 5. **중지 단추** 를 누르거나 mic 세션이 시간 초과 되 면 **DictationRecognizer를 중지** 합니다.
 6. **메시지 보내기** 명령을 수신 대기 하는 **KeywordRecognizer** 를 다시 시작 합니다.
 
-이제 시작해 보겠습니다. **MicrophoneManager.cs** 에서 3. a에 대 한 모든 코딩 연습을 완료 하거나 아래에 있는 완성 된 코드를 복사 하 여 붙여넣습니다.
+이제 시작하겠습니다. **MicrophoneManager** 에서 3. a에 대 한 모든 코딩 연습을 완료 하거나 아래에 있는 완성 된 코드를 복사 하 여 붙여넣습니다.
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -475,7 +475,7 @@ namespace Academy
 >2. "유니버설 Windows 플랫폼" 탭을 클릭 합니다.
 >3. "게시 설정 > 기능" 섹션에서 **마이크** 기능을 확인 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 1. **계층** 패널에서 **Jetpack_Center** 을 검색 하 고 선택 합니다.
 2. **검사기** 패널에서 **Tagalong Action** 스크립트를 찾습니다.

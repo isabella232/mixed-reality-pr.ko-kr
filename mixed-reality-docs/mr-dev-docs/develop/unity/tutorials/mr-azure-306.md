@@ -1,19 +1,19 @@
 ---
-title: MR 및 Azure 306 - 스트리밍 비디오
+title: HoloLens (첫 번째 gen) 및 Azure 306-스트리밍 비디오
 description: 이 과정을 완료 하 여 혼합 현실 응용 프로그램 내에서 Azure Media Services을 구현 하는 방법을 알아보세요.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, 아카데미, unity, 자습서, api, media services, 스트리밍 비디오, 360, 몰입 형, vr, Windows 10, Visual Studio
-ms.openlocfilehash: 3a0401b7503d8a783ba529cf24cdf6cc55c88311
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c6afedfd2dae9da3bcd6b044381a6dc20604ded8
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583457"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730570"
 ---
-# <a name="mr-and-azure-306-streaming-video"></a>MR 및 Azure 306: 비디오 스트리밍
+# <a name="hololens-1st-gen-and-azure-306-streaming-video"></a>HoloLens (첫 번째 gen) 및 Azure 306: 스트리밍 비디오
 
 <br>
 
@@ -49,7 +49,7 @@ ms.locfileid: "98583457"
 </tr>
 </table>
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 > [!NOTE]
 > 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (2018 일 수 있음)을 나타냅니다. [도구 설치 문서](../../install-the-tools.md)에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.
@@ -285,7 +285,7 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
 
     ![Azure Portal](images/AzureLabs-Lab6-30.png)
 
-4.  그런 다음 **_파일_ *빌드 설정*** 으로 이동 하 고 플랫폼 **전환** 단추를 클릭 하 여 플랫폼을 **유니버설 Windows 플랫폼** 로 전환 합니다.
+4.  그런 다음 ***파일* *빌드 설정*** 으로 이동 하 고 플랫폼 **전환** 단추를 클릭 하 여 플랫폼을 **유니버설 Windows 플랫폼** 로 전환 합니다.
 
 5.  또한 다음을 확인 합니다.
 
@@ -629,7 +629,7 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
 
 2.  **프로젝트** 패널을 마우스 오른쪽 단추로 클릭 하 고 **만들기* * C \# 스크립트 * *를 클릭 합니다. 스크립트 이름을 **응시** 로 합니다.
 
-3.  새 **_응시_ _ 스크립트를 두 번 클릭 하 여 _ Visual Studio 2017 *을 사용 하 여 엽니다*.**
+3.  새 ***응시** _ 스크립트를 두 번 클릭 하 여 _ *Visual Studio 2017* 을 사용 하 여 엽니다.*
 
 4.  다음 네임 스페이스가 스크립트의 맨 위에 있는지 확인 하 고 다른 네임 스페이스를 제거 합니다.
 

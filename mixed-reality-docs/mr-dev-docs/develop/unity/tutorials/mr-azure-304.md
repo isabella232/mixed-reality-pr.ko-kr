@@ -1,19 +1,19 @@
 ---
-title: MR 및 Azure 304 - 얼굴 인식
+title: HoloLens (첫 번째 gen) 및 Azure 304-얼굴 인식
 description: 이 과정을 완료하여 혼합 현실 애플리케이션 내에서 Azure 얼굴 인식을 구현하는 방법을 알아봅니다.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 얼굴 인식, hololens, 모던, vr, Windows 10, Visual Studio
-ms.openlocfilehash: 6cdb8b7af9988bbfbc6670d0ef79f00487db7f3c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6266cb206a0686745bcd7a92f64d78436c71a228
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583371"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730510"
 ---
-# <a name="mr-and-azure-304-face-recognition"></a>MR 및 Azure 304: 얼굴 인식
+# <a name="hololens-1st-gen-and-azure-304-face-recognition"></a>HoloLens (첫 번째 gen) 및 Azure 304: 얼굴 인식
 
 <br>
 
@@ -52,7 +52,7 @@ ms.locfileid: "98583371"
 > [!NOTE]
 > 이 과정에서 주로 HoloLens에 초점을 맞춘 반면,이 과정에서 배운 내용을 Windows Mixed Reality 모던 (VR) 헤드셋에도 적용할 수 있습니다. 모던 (VR) 헤드셋은 액세스할 수 있는 카메라를 포함 하지 않으므로 PC에 연결 된 외부 카메라가 필요 합니다. 이 과정을 진행 하면서 모던 (VR) 헤드셋을 지원 하기 위해 사용 해야 하는 변경 내용에 대 한 정보를 볼 수 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 > [!NOTE]
 > 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (2018 일 수 있음)을 나타냅니다. [도구 설치](../../install-the-tools.md) 문서에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.
@@ -842,7 +842,7 @@ HoloLens에 배포 하려면:
 ## <a name="chapter-10---using-the-application"></a>10 장-응용 프로그램 사용
 
 1.  HoloLens를 입고 앱을 시작 합니다.
-2.  *Face API* 등록 한 사용자를 확인 합니다. 다음 사항을 확인합니다.
+2.  *Face API* 등록 한 사용자를 확인 합니다. 확인할 사항은 다음과 같습니다.
 
     -  개인의 얼굴이 너무 멀리 떨어져 있으며 명확 하 게 표시 됩니다.
     -  환경 조명이 너무 어두움

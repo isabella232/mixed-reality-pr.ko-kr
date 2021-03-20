@@ -1,19 +1,19 @@
 ---
-title: MR 기본 사항 100 - Unity 시작
+title: HoloLens (첫 번째 gen) 기본 사항 100-Unity 시작
 description: HoloLens 및 Windows Mixed Reality 장치에 대해 첫 번째 기본 혼합 현실 "hello 세계" 응용 프로그램을 만드는 방법을 알아봅니다.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: 혼합 현실, Windows Mixed Reality, HoloLens, 몰입 형, vr, mr, 시작, 홀로그램, 아카데미, 자습서, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, Windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 86ac759cb73e39f88d62db5dab0c38108bb17d55
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 999ab7dc87a639f10aad9eaf2a7ef8de2cf92633
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583735"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730360"
 ---
-# <a name="mr-basics-100-getting-started-with-unity"></a>MR 기본 100: Unity 시작
+# <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>HoloLens (첫 번째 gen) 기본 사항 100: Unity 시작
 
 >[!IMPORTANT]
 >Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](mrlearning-base.md)가 게시되었습니다.
@@ -30,7 +30,7 @@ ms.locfileid: "98583735"
 </tr>
 </table>
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 * 올바른 [도구로](../../install-the-tools.md)구성 된 WINDOWS 10 PC입니다.
 

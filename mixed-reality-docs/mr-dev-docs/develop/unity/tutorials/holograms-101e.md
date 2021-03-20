@@ -1,19 +1,19 @@
 ---
-title: MR 기본 사항 101E - 에뮬레이터를 사용하여 프로젝트 수행
+title: HoloLens (첫 번째 gen) 기본 사항 101E-에뮬레이터를 사용 하 여 프로젝트 완료
 description: Unity, Visual Studio 및 HoloLens 에뮬레이터를 사용 하 여이 코딩 연습을 수행 하 여 holographic 응용 프로그램의 기본 사항을 알아보세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: 혼합 현실, Windows Mixed Reality, 홀로그램, 아카데미, 자습서, 에뮬레이터, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10, 응시, 제스처, 음성 입력, 공간 소리, 공간 매핑
-ms.openlocfilehash: afe62dbc3385b41d08011bf7893672272f25485b
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8d75ee610f352d11ac8396ad50c336b541a062a2
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583691"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730290"
 ---
-# <a name="mr-basics-101e-complete-project-with-emulator"></a>MR 기본 101E: 에뮬레이터를 사용하여 프로젝트 수행
+# <a name="hololens-1st-gen-basics-101e-complete-project-with-emulator"></a>HoloLens (첫 번째 gen) 기본 사항 101E: 에뮬레이터를 사용 하 여 프로젝트 완료
 
 >[!NOTE]
 >Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](mrlearning-base.md)가 게시되었습니다.
@@ -63,7 +63,7 @@ ms.locfileid: "98583691"
 * 홀로그램을 만듭니다.
 * 만든 홀로그램을 확인 하세요.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * Unity를 시작합니다.
 * **열기** 를 선택합니다.
@@ -128,7 +128,7 @@ ms.locfileid: "98583691"
 
 * 전 세계 잠긴 커서를 사용 하 여 응시를 시각화 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * Unity 프로젝트로 돌아가서 빌드 설정 창이 열려 있으면 닫습니다.
 * **프로젝트 패널** 에서 **Holograms** 폴더를 선택 합니다.
@@ -141,7 +141,7 @@ ms.locfileid: "98583691"
 * **계층 패널** 에서 **Cursor** 개체를 선택 합니다.
 * **WorldCursor** 스크립트를 **검사기 패널로** 끌어 놓습니다.
 * **WorldCursor** 스크립트를 두 번 클릭 하 여 Visual Studio에서 엽니다.
-* 이 코드를 복사 하 여 **WorldCursor.cs** 에 붙여넣고 **모두 저장** 합니다.
+* 이 코드를 복사 하 여 **WorldCursor** 에 붙여넣고 **모두 저장** 합니다.
 
 ```cs
 using UnityEngine;
@@ -204,7 +204,7 @@ public class WorldCursor : MonoBehaviour
 
 * 선택 제스처를 사용 하 여 holograms를 제어 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 먼저 선택 제스처를 검색할 수 있는 것 보다 스크립트를 만듭니다.
 
@@ -316,12 +316,12 @@ public class SphereCommands : MonoBehaviour
 * 백그라운드에서 항상 수신 대기 하는 음성 명령을 추가 합니다.
 * 음성 명령에 반응 하는 홀로그램을 만듭니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * **Scripts** 폴더에서 **SpeechManager** 라는 스크립트를 만듭니다.
 * **SpeechManager** 스크립트를 계층의 **OrigamiCollection** 개체로 끌어 옵니다.
 * Visual Studio에서 **SpeechManager** 스크립트를 엽니다.
-* 이 코드를 복사 하 여 **SpeechManager.cs** 에 붙여넣고 **모두 저장** 합니다.
+* 이 코드를 복사 하 여 **SpeechManager** 에 붙여넣고 **모두 저장** 합니다.
 
 ```cs
 using System.Collections.Generic;
@@ -438,7 +438,7 @@ public class SphereCommands : MonoBehaviour
 
 * 전 세계에서 holograms를 들어봅니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * Unity의 상단 메뉴에서 select **> 프로젝트 설정 > 오디오를 편집** 합니다.
 * **Spatializer 플러그 인** 설정을 찾아 **MS hrtf Spatializer** 를 선택 합니다.
@@ -548,7 +548,7 @@ public class SphereSounds : MonoBehaviour
 * 실제 세계를 가상 세계에 가져오세요.
 * 가장 중요 한 위치에 holograms을 두십시오.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * 프로젝트 패널에서 **Holograms** 폴더를 클릭 합니다.
 * **공간 매핑** 자산을 **계층** 의 루트로 끌어 옵니다.

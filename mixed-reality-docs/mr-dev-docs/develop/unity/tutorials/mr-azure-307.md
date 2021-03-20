@@ -1,19 +1,19 @@
 ---
-title: MR 및 Azure 307-Machine learning
+title: HoloLens (첫 번째 gen) 및 Azure 307-Machine learning
 description: 이 과정을 완료 하 여 혼합 현실 응용 프로그램 내에서 Azure Machine Learning Studio (클래식)을 구현 하는 방법을 알아보세요.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 기계 학습, ml, machine learning studio, hololens, 몰입 형, vr, Windows 10, Visual Studio
-ms.openlocfilehash: 95213c3d17bbe0f0f81438d4808db142ad21c595
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c9d6408d41340b1c0fcb1f41b61d84ba115258c3
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583398"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730520"
 ---
-# <a name="mr-and-azure-307-machine-learning"></a>MR 및 Azure 307: 기계 학습
+# <a name="hololens-1st-gen-and-azure-307-machine-learning"></a>HoloLens (첫 번째 gen) 및 Azure 307: Machine learning
 
 <br>
 
@@ -51,7 +51,7 @@ ms.locfileid: "98583398"
 > [!NOTE]
 > 이 과정에서 주로 Windows Mixed Reality (VR) 헤드셋에 초점을 맞춘 반면,이 과정에서 학습 하는 내용을 Microsoft HoloLens에도 적용할 수 있습니다. 과정을 진행할 때 HoloLens를 지원 하기 위해 사용 해야 하는 모든 변경 내용에 대 한 메모를 볼 수 있습니다. HoloLens를 사용 하는 경우 음성 캡처 중에 몇 가지 echo를 확인할 수 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 > [!NOTE]
 > 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (2018 일 수 있음)을 나타냅니다. [도구 설치 문서](../../install-the-tools.md)에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.
@@ -242,7 +242,7 @@ Machine Learning 알고리즘의 작동 방법 중 하나는 기존 데이터를
 
     ![Machine Learning Studio (클래식): 실험](images/AzureLabs-Lab7-20.png)
 
-8.  **_ 분할 데이터 항목 *의* _왼쪽 아래_** 에 있는 연결을 **모델 학습** 항목의 **오른쪽 위에** 끌어 놓습니다. 데이터 집합에서 처음 70%의 분할은 학습 모델에서 알고리즘을 학습 하는 데 사용 됩니다.
+8.  _ *분할 데이터** 항목의 ***왼쪽 아래** _에서 **모델 학습** 항목의 **오른쪽 위에** 연결을 끌어 놓습니다. 데이터 집합에서 처음 70%의 분할은 학습 모델에서 알고리즘을 학습 하는 데 사용 됩니다.
 
     ![Machine Learning Studio (클래식): 실험](images/AzureLabs-Lab7-21.png)
 
@@ -338,11 +338,11 @@ Machine Learning 알고리즘의 작동 방법 중 하나는 기존 데이터를
 
 2.  Unity를 연 상태에서 기본 **스크립트 편집기** 가 **Visual Studio** 로 설정 되어 있는지 확인 하는 것이 좋습니다.   >  **기본 설정** 편집으로 이동한 다음 새 창에서 **외부 도구** 로 이동 합니다. **외부 스크립트 편집기** 를 **Visual Studio 2017** 로 변경 합니다. **기본 설정** 창을 닫습니다.
 
-3.  그런 다음 **파일**  >  **빌드 설정** 으로 이동 하 고 **_스위치 플랫폼_* _ 단추를 클릭 하 여 플랫폼을 **유니버설 Windows 플랫폼** 로 전환 합니다.
+3.  그런 다음 **파일**  >  **빌드 설정** 으로 이동 하 고 플랫폼 **_전환_** 단추를 클릭 하 여 플랫폼을 **유니버설 Windows 플랫폼** 로 전환 합니다.
 
 4.  또한 다음을 확인 합니다.
 
-    1.  _ *대상 장치**는 **임의의 장치로** 설정 됩니다.
+    1.  **대상 장치** 는 **임의의 장치로** 설정 됩니다.
 
         > Microsoft HoloLens의 경우 **대상 장치** 를 *HoloLens* 로 설정 합니다.
 
@@ -368,9 +368,9 @@ Machine Learning 알고리즘의 작동 방법 중 하나는 기존 데이터를
 
         1.  **스크립팅** **런타임 버전이** **실험적** 이어야 함 (.net 4.6 해당)
 
-        2. **Scripting 백엔드** 는 **_.net_* _ 이어야 합니다.
+        2. **Scripting 백엔드** 는 .net 이어야 합니다. ****
 
-        3. _ *API 호환성 수준**은 **.net 4.6** 이어야 합니다.
+        3. **API 호환성 수준은** **.net 4.6** 이어야 합니다.
 
             ![Unity 프로젝트 설정](images/AzureLabs-Lab7-36.png)
 

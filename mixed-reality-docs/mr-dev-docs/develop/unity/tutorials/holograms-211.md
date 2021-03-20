@@ -1,19 +1,19 @@
 ---
-title: MR 입력 211 - 제스처
+title: HoloLens (첫 번째 gen) 입력 211-제스처
 description: Unity, Visual Studio 및 HoloLens를 사용 하 여이 코딩 연습을 수행 하 여 제스처 개념에 대 한 세부 정보를 알아보세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 제스처, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
-ms.openlocfilehash: dfb31901001f760abd60bda3022902267b7c05cf
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: fe5d3d736c3ad460feeb7aaf66597344618bc1cb
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583708"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730460"
 ---
-# <a name="mr-input-211-gesture"></a>MR 입력 211: 제스처
+# <a name="hololens-1st-gen-input-211-gesture"></a>HoloLens (첫 번째 gen) 입력 211: 제스처
 
 >[!NOTE]
 >Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](./mr-learning-base-01.md)가 게시되었습니다.
@@ -68,7 +68,7 @@ ms.locfileid: "98583708"
 
 ## <a name="chapter-0---unity-setup"></a>0 장-Unity 설치
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 1. Unity를 시작합니다.
 2. **열기** 를 선택합니다.
@@ -124,12 +124,12 @@ HoloLens에 배포 하는 경우:
 >[!NOTE]
 >HoloLens 2에서 손이 표시 될 때마다 손 모양 (손가락을 가리키는 경우가 아님)이 발생 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 * **계층** 패널에서 **inputmanager** 개체를 확장 합니다.
 * **GesturesInput** 개체를 찾고 선택 합니다.
 
-**InteractionInputSource.cs** 스크립트는 다음 단계를 수행 합니다.
+**InteractionInputSource** 스크립트는 다음 단계를 수행 합니다.
 
 1. InteractionSourceDetected 및 InteractionSourceLost 이벤트를 구독 합니다.
 2. 수동 검색 상태를 설정 합니다.
@@ -170,9 +170,9 @@ HoloLens에 배포 하는 경우:
 
 * 탐색 제스처 이벤트를 사용 하 여 astronaut를 회전 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
-앱에서 탐색 제스처를 사용 하려면 탐색 제스처가 발생할 때 **GestureAction.cs** 를 편집 하 여 개체를 회전 합니다. 또한 탐색을 사용할 수 있을 때 표시할 피드백을 커서에 추가 합니다.
+앱에서 탐색 제스처를 사용 하려면 탐색 제스처가 발생할 때 개체를 회전 하도록 GestureAction를 편집 **합니다** . 또한 탐색을 사용할 수 있을 때 표시할 피드백을 커서에 추가 합니다.
 
 1. **계층** 패널에서 **CursorWithFeedback** 를 확장 합니다.
 2. **Holograms** 폴더에서 **ScrollFeedback** 자산을 찾습니다.
@@ -185,7 +185,7 @@ HoloLens에 배포 하는 경우:
 9. **검사기** 패널에서 **구성 요소 추가** 단추를 클릭 합니다.
 10. 메뉴에서 검색 상자 **제스처 동작** 을 입력 합니다. 검색 결과를 선택 합니다.
 
-다음으로, Visual Studio에서 **GestureAction.cs** 을 엽니다. 연습 2. c 코딩에서 스크립트를 편집 하 여 다음을 수행 합니다.
+다음으로 Visual Studio에서 **GestureAction** 을 엽니다. 연습 2. c 코딩에서 스크립트를 편집 하 여 다음을 수행 합니다.
 
 1. 탐색 제스처가 수행 될 때마다 **AstroMan 개체를 회전** 합니다.
 2. **RotationFactor** 를 계산 하 여 개체에 적용 되는 회전의 양을 제어 합니다.
@@ -314,7 +314,7 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 * 수동 **가이드 점수** 를 사용 하 여 수동 추적이 손실 되는 경우를 예측할 수 있습니다.
 * **커서에 대 한 피드백** 을 제공 하 여 사용자가 카메라의 보기 가장자리에 가까이 있는 경우를 표시 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 1. **계층** 패널에서 **CursorWithFeedback** 개체를 선택 합니다.
 2. **검사기** 패널에서 **구성 요소 추가** 단추를 클릭 합니다.
@@ -339,14 +339,14 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 * 조작 이벤트를 사용 하 여 astronaut를 손으로 이동 합니다.
 * 조작을 사용할 수 있는 경우 사용자에 게 알릴 수 있도록 커서에 대 한 피드백을 제공 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
-GestureManager.cs 및 AstronautManager.cs를 사용 하면 다음을 수행할 수 있습니다.
+GestureManager 및 AstronautManager를 사용 하면 다음을 수행할 수 있습니다.
 
 1. 음성 키워드 "**Move Astronaut**"를 사용 하 여 **조작** 제스처를 사용 하도록 설정 하 고 "**Rotate Astronaut**"를 사용 하지 않도록 설정 합니다.
 2. **조작 제스처 인식기** 에 대 한 응답으로 전환 합니다.
 
-이제 시작해 보겠습니다.
+이제 시작하겠습니다.
 
 1. **계층** 패널에서 비어 있는 새 GameObject을 만듭니다. 이름을 "**AstronautManager**"로 합니다.
 2. **검사기** 패널에서 **구성 요소 추가** 단추를 클릭 합니다.
@@ -361,7 +361,7 @@ GestureManager.cs 및 AstronautManager.cs를 사용 하면 다음을 수행할 �
 3. 키워드를 **Move Astronaut** 로 입력 합니다. 원한다 면 키 바로 가기를 자유롭게 추가할 수 있습니다.
 4. 오른쪽의를 클릭 **+** 하 여 새 키워드를 추가 합니다.
 5. **Astronaut 회전** 으로 키워드를 입력 합니다. 원한다 면 키 바로 가기를 자유롭게 추가할 수 있습니다.
-6. 해당 처리기 코드는 **GestureAction.cs** 의 **ISpeechHandler OnSpeechKeywordRecognized** 처리기에서 찾을 수 있습니다.
+6. 해당 처리기 코드는 **GestureAction** 의 **ISpeechHandler OnSpeechKeywordRecognized** 처리기에서 찾을 수 있습니다.
 
 ![4 장의 음성 입력 소스를 설정 하는 방법](images/holograms211-speech.png)
 
@@ -372,13 +372,13 @@ GestureManager.cs 및 AstronautManager.cs를 사용 하면 다음을 수행할 �
 3. **계층** 패널에서 **CursorWithFeedback** 를 클릭 합니다.
 4. **Inspector** 의 **커서 피드백** 구성 요소에서 **Pathing 검색 된 게임 개체** 속성에 **pathingfeedback** 개체를 끌어서 놓습니다. 
 
-이제 **GestureAction.cs** 에 코드를 추가 하 여 다음을 사용 하도록 설정 해야 합니다.
+이제 **GestureAction** 에 코드를 추가 하 여 다음을 사용 하도록 설정 해야 합니다.
 
 1. **IManipulationHandler** 함수에 코드를 추가 합니다 .이 함수는 **조작** 제스처가 검색 될 때 astronaut를 이동 합니다.
 2. **이동 벡터** 를 계산 하 여 astronaut 위치에 따라 이동 해야 하는 위치를 결정 합니다.
 3. Astronaut를 새 위치로 **이동** 합니다.
 
-**GestureAction.cs** 에서 연습 4-5를 완료 하거나 아래에서 완성 된 솔루션을 사용 합니다.
+**GestureAction** 에서 연습 4-5를 완료 하거나 아래에서 완성 된 솔루션을 사용 합니다.
 
 ```cs
 using HoloToolkit.Unity.InputModule;
@@ -506,7 +506,7 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 * Astronaut 모델을 사용자가 상호 작용할 수 있는 여러 개의 작은 조각으로 확장 합니다.
 * 탐색 및 조작 제스처를 사용 하 여 각 부분을 개별적으로 이동 합니다.
 
-### <a name="instructions"></a>지침
+### <a name="instructions"></a>Instructions
 
 이 섹션에서는 다음 작업을 수행 합니다.
 

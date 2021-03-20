@@ -1,19 +1,19 @@
 ---
-title: MR 및 Azure 303-자연어 이해 (LUIS)
+title: HoloLens (첫 번째 gen) 및 Azure 303-자연어 이해 (LUIS)
 description: 이 과정을 완료 하 여 혼합 현실 응용 프로그램 내에서 Azure LUIS (Language Understanding 인텔리전스 서비스)를 구현 하는 방법을 알아보세요.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 언어 이해 인텔리전스 서비스, luis, hololens, 몰입 형, vr, Windows 10, Visual Studio
-ms.openlocfilehash: a91fcd2e20ce1e1731bd398fa72923f6ff5e8406
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 663ac44dbf15ce2db63d7ffe0ecc605d3555857f
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583436"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730560"
 ---
-# <a name="mr-and-azure-303-natural-language-understanding-luis"></a>MR 및 Azure 303: 자연어 이해 (LUIS)
+# <a name="hololens-1st-gen-and-azure-303-natural-language-understanding-luis"></a>HoloLens (첫 번째 gen) 및 Azure 303: 자연어 이해 (LUIS)
 
 <br>
 
@@ -53,7 +53,7 @@ ms.locfileid: "98583436"
 > [!NOTE]
 > 이 과정에서 주로 Windows Mixed Reality (VR) 헤드셋에 초점을 맞춘 반면,이 과정에서 학습 하는 내용을 Microsoft HoloLens에도 적용할 수 있습니다. 과정을 진행할 때 HoloLens를 지원 하기 위해 사용 해야 하는 모든 변경 내용에 대 한 메모를 볼 수 있습니다. HoloLens를 사용 하는 경우 음성 캡처 중에 몇 가지 echo를 확인할 수 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 > [!NOTE]
 > 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (2018 일 수 있음)을 나타냅니다. [도구 설치](../../install-the-tools.md) 문서에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.

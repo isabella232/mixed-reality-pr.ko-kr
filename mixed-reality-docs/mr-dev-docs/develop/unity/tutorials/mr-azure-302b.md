@@ -1,19 +1,19 @@
 ---
-title: MR 및 Azure 302b - Custom Vision
+title: HoloLens (첫 번째 gen) 및 Azure 302b-사용자 지정 비전
 description: 이 과정을 완료 하 여 machine learning 모델을 학습 한 다음 학습 된 모델을 사용 하 여 혼합 현실 응용 프로그램 내에서 유사한 개체를 인식 하는 방법을 알아보세요.
 author: drneil
 ms.author: jemccull
 ms.date: 07/03/2018
 ms.topic: article
 keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 사용자 지정 비전, hololens, 모던, vr, Windows 10, Visual Studio
-ms.openlocfilehash: cba2df5841911df6d60a7060a70f835975a21f62
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 97fd0ae72401b67a83752cb2cf6799fa2b1ccc0c
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583399"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730530"
 ---
-# <a name="mr-and-azure-302b-custom-vision"></a>MR 및 Azure 302b: Custom Vision
+# <a name="hololens-1st-gen-and-azure-302b-custom-vision"></a>HoloLens (첫 번째 gen) 및 Azure 302b: 사용자 지정 비전
 
 <br>
 
@@ -52,7 +52,7 @@ Azure Custom Vision는 개발자가 사용자 지정 이미지 분류자를 빌�
 > [!NOTE]
 > 이 과정에서 주로 HoloLens에 초점을 맞춘 반면,이 과정에서 배운 내용을 Windows Mixed Reality 모던 (VR) 헤드셋에도 적용할 수 있습니다. 모던 (VR) 헤드셋은 액세스할 수 있는 카메라를 포함 하지 않으므로 PC에 연결 된 외부 카메라가 필요 합니다. 이 과정을 진행 하면서 모던 (VR) 헤드셋을 지원 하기 위해 사용 해야 하는 변경 내용에 대 한 정보를 볼 수 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 > [!NOTE]
 > 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (7 월 2018)을 나타냅니다. [도구 설치](../../install-the-tools.md) 문서에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.

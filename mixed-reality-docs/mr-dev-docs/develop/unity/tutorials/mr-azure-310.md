@@ -1,19 +1,19 @@
 ---
-title: MR 및 Azure 310 - 개체 검색
+title: HoloLens (첫 번째 gen) 및 Azure 310-개체 검색
 description: 이 과정을 완료 하면 기계 학습 모델을 학습 하 고 사용 하 여 실제 세계에서 유사한 개체와 해당 위치를 인식 하는 방법을 배울 수 있습니다.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, 사용자 지정 비전, 개체 검색, 혼합 현실, 아카데미, unity, 자습서, api, hololens, Windows 10, Visual Studio
-ms.openlocfilehash: edbd583c5361f8074dc57fedb66d6ab01df16de8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 29b3622e510a0d97ee3f1dea04661b7d6ab51f9f
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583471"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730350"
 ---
-# <a name="mr-and-azure-310-object-detection"></a>Mr 및 Azure 310: 개체 검색
+# <a name="hololens-1st-gen-and-azure-310-object-detection"></a>HoloLens (첫 번째 gen) 및 Azure 310: 개체 검색
 
 >[!NOTE]
 >Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
@@ -55,7 +55,7 @@ ms.locfileid: "98583471"
 </tr>
 </table>
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 > [!NOTE]
 > 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (7 월 2018)을 나타냅니다. [도구 설치](../../install-the-tools.md) 문서에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.
