@@ -118,53 +118,53 @@
           items:
             - name: Mixed Reality 기능
               items:
-                - name: MR 기본 사항 100 - Unity 시작
+                - name: HoloLens(1세대) 기본 사항 100 - Unity 시작
                   href: unity/tutorials/holograms-100.md
-                - name: MR 기본 사항 101 - 디바이스를 사용하여 프로젝트 수행
+                - name: HoloLens(1세대) 기본 사항 101 - 디바이스를 사용하여 프로젝트 완료
                   href: unity/tutorials/holograms-101.md
-                - name: MR 기본 사항 101E - 에뮬레이터를 사용하여 프로젝트 수행
+                - name: HoloLens(1세대) 기본 사항 101E - 에뮬레이터를 사용하여 프로젝트 완료
                   href: unity/tutorials/holograms-101e.md
-                - name: MR 입력 210 - 응시
+                - name: HoloLens(1세대) 입력 210 - 응시
                   href: unity/tutorials/holograms-210.md
-                - name: MR 입력 211 - 제스처
+                - name: HoloLens(1세대) 입력 211 - 제스처
                   href: unity/tutorials/holograms-211.md
-                - name: MR 입력 212 - 음성
+                - name: HoloLens(1세대) 입력 212 - 음성
                   href: unity/tutorials/holograms-212.md
-                - name: MR 공간 220 - 공간 사운드
+                - name: HoloLens(1세대) 공간 220 - 공간 사운드
                   href: unity/tutorials/holograms-220.md
-                - name: MR 공간 230 - 공간 매핑
+                - name: HoloLens(1세대) 공간 230 - 공간 매핑
                   href: unity/tutorials/holograms-230.md
-                - name: MR 공유 240 - 여러 HoloLens 디바이스
+                - name: HoloLens(1세대) 공유 240 - 여러 HoloLens 디바이스
                   href: unity/tutorials/holograms-240.md
             - name: Mixed Reality 및 Azure Services
               items:
-                - name: MR 및 Azure 301 - 언어 번역
+                - name: HoloLens(1세대) 및 Azure 301 - 언어 번역
                   href: unity/tutorials/mr-azure-301.md
-                - name: MR 및 Azure 302 - 컴퓨터 비전
+                - name: HoloLens(1세대) 및 Azure 302 - 컴퓨터 비전
                   href: unity/tutorials/mr-azure-302.md
-                - name: MR 및 Azure 302b - Custom Vision
+                - name: HoloLens(1세대) 및 Azure 302b - 사용자 지정 비전
                   href: unity/tutorials/mr-azure-302b.md
-                - name: MR 및 Azure 303 - 자연어 이해
+                - name: HoloLens(1세대) 및 Azure 303 - 자연어 이해
                   href: unity/tutorials/mr-azure-303.md
-                - name: MR 및 Azure 304 - 얼굴 인식
+                - name: HoloLens(1세대) 및 Azure 304 - 얼굴 인식
                   href: unity/tutorials/mr-azure-304.md
-                - name: MR 및 Azure 305 - 함수 및 스토리지
+                - name: HoloLens(1세대) 및 Azure 305 - 함수 및 스토리지
                   href: unity/tutorials/mr-azure-305.md
-                - name: MR 및 Azure 306 - 스트리밍 비디오
+                - name: HoloLens(1세대) 및 Azure 306 - 스트리밍 비디오
                   href: unity/tutorials/mr-azure-306.md
-                - name: MR 및 Azure 307 - 기계 학습
+                - name: HoloLens(1세대) 및 Azure 307 - 기계 학습
                   href: unity/tutorials/mr-azure-307.md
-                - name: MR 및 Azure 308 - 디바이스 간 알림
+                - name: HoloLens(1세대) 및 Azure 308 - 디바이스 간 알림
                   href: unity/tutorials/mr-azure-308.md
-                - name: MR 및 Azure 309 - 애플리케이션 인사이트
+                - name: HoloLens(1세대) 및 Azure 309 - 애플리케이션 인사이트
                   href: unity/tutorials/mr-azure-309.md
-                - name: MR 및 Azure 310 - 개체 검색
+                - name: HoloLens(1세대) 및 Azure 310 - 개체 검색
                   href: unity/tutorials/mr-azure-310.md
-                - name: MR 및 Azure 311 - Microsoft Graph
+                - name: HoloLens(1세대) 및 Azure 311 - Microsoft Graph
                   href: unity/tutorials/mr-azure-311.md
-                - name: MR 및 Azure 312 - 봇 통합
+                - name: HoloLens(1세대) 및 Azure 312 - 봇 통합
                   href: unity/tutorials/mr-azure-312.md
-                - name: MR 및 Azure 313 - IoT Hub 서비스
+                - name: HoloLens(1세대) 및 Azure 313 - IoT Hub 서비스
                   href: unity/tutorials/mr-azure-301.md
     - name: 프로젝트 설정
       items:

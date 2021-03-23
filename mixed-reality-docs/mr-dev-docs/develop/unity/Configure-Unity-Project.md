@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, mixed reality, 개발, 시작, 새 프로젝트, Windows Mixed Reality, UWP, XR, 성능
-ms.openlocfilehash: 8d247a6a5b7c8a3d8b7ea26ebc72e86ada5dc99f
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 47ca4041e997d623d08fa1732f7039c655810bfc
+ms.sourcegitcommit: b0fb5497bf9f280ba5610c30e4b9e5aa1cda52c9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730170"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104837422"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>MRTK를 사용하지 않고 프로젝트 구성
 
@@ -57,8 +57,8 @@ HoloLens 2를 대상으로 하는 경우 유니버설 Windows 플랫폼로 전�
 ![XR 플러그 인 관리가 강조 표시 된 unity 편집기에서 열리는 프로젝트 설정 창의 스크린샷](images/wmr-config-img-7.png)
 
 4. **XR 플러그 인 관리** 섹션을 확장 하 고 **유니버설 Windows 플랫폼 설정** 탭을 선택 합니다.
-5. Unity 2020 이상 버전을 사용 하는 경우 **OpenXR (미리 보기)** 또는 **Windows Mixed Reality** 를 확인 하는 옵션이 표시 됩니다. 
-    * 런타임 중 하나를 선택할 수 있습니다.  HoloLens 2 또는 HP 반향 G2에 대해 구체적으로 개발 하 고 **OpenXR (미리 보기)** 를 시도 하기로 결정 한 경우 OpenXR (미리 보기) 상자를 선택 하 고,이 자습서로 돌아가기 전에 [Mixed Reality OpenXR 플러그 인을 사용 하 여](openxr-getting-started.md) 이러한 장치에 대해 올바르게 설정 하는 가이드를 검토 합니다.
+5. Unity 2020 이상 버전을 사용 하는 경우 **OpenXR** 또는 **Windows Mixed Reality** 를 확인 하는 옵션이 표시 됩니다. 
+    * 런타임 중 하나를 선택할 수 있습니다.  HoloLens 2 또는 HP 반향 G2에 대해 구체적으로 개발 하 고 **OpenXR** 을 시도 하기로 결정 한 경우 OpenXR 상자를 선택 하 고이 자습서로 돌아가기 전에 [Mixed Reality OpenXR 플러그 인 Unity를 사용 하 여](openxr-getting-started.md) 이러한 장치에 대해 올바르게 설정 하는 가이드를 검토 합니다.
 
 > [!NOTE]
 > Unity 2020 LTS부터 Microsoft는 OpenXR을 사용 하 여 개발을 수용 하 고 있습니다.  이 경로로 마이그레이션하는 동안 Unity 2021.1에서 Windows XR 플러그 인이 지원 되지 않고 2021.2에서 OpenXR만 지원 됩니다. [Mixed Reality OpenXR 플러그 인을 사용 하 여](openxr-getting-started.md)에서 자세한 정보를 찾을 수 있습니다.
