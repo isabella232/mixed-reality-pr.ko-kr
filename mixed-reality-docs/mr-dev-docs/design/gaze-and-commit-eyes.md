@@ -8,15 +8,15 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: 시선 추적, Mixed Reality, 입력, 시선 응시, 시선 타깃팅, HoloLens 2, 시선 기반 선택, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 응시
 ms.openlocfilehash: 1f337d3cbc1f82b4f69194d4b903687be067f9d6
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97847873"
 ---
 # <a name="eye-gaze-and-commit"></a>시선 응시 및 커밋
 
-_시선 및 커밋_ 은 개체를 확인하여 대상으로 지정하는 특수한 [시선 및 커밋 ](gaze-and-commit.md) 입력 모델 사례입니다. 손 제스처, 음성 명령 또는 주변 장치 입력(예: 게임 컨트롤러)과 같은 보조 _커밋_ 입력을 사용하여 대상에 대한 작업을 수행할 수 있습니다. 
+_시선 및 커밋_ 은 개체를 확인하여 대상으로 지정하는 특수한 [시선 및 커밋](gaze-and-commit.md) 입력 모델 사례입니다. 손 제스처, 음성 명령 또는 주변 장치 입력(예: 게임 컨트롤러)과 같은 보조 _커밋_ 입력을 사용하여 대상에 대한 작업을 수행할 수 있습니다. 
 
 HoloLens 2를 사용할 경우 머리 응시 대신 시선 응시를 사용하여 _응시 및 커밋_ 을 더 빠르고 편안하게 만들 수 있습니다. 일반적인 [머리 응시 및 커밋](gaze-and-commit.md) 상호 작용 모델을 확장하려면 다음을 수행합니다. 
 1. 대상을 확인합니다. 
@@ -46,6 +46,6 @@ HoloLens 2를 사용할 경우 머리 응시 대신 시선 응시를 사용하�
 * [응시 및 유지](gaze-and-dwell.md)
 * [손 - 직접 조작](direct-manipulation.md)
 * [손 - 제스처](gaze-and-commit.md#composite-gestures)
-* [손 - 가리키기 및 커밋](point-and-commit.md)
+* [손 - 가리키고 커밋](point-and-commit.md)
 * [Instinctual 상호 작용](interaction-fundamentals.md)
 * [음성 입력 ](voice-input.md)

@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 홈, 사용자 지정 환경, 장소, 절벽 집, skyloft, 사용자, 만들기, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: ca6a41f8388a767b1191ddc3b377822567a603a6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2a626b91b79eadb49c9da95c9d61f92a375015a0
+ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583304"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104881220"
 ---
 # <a name="design-your-own-immersive-environments"></a>사용자 고유의 몰입형 환경 디자인
 
@@ -82,7 +82,7 @@ Windows Mixed Reality는 환경에 대 한 자산 배달 형식으로 이진 글
 
 사용자 지정 홈 환경으로 사용할 자산을 내보내는 첫 번째 단계는 글 2.0 모델을 생성 하는 것입니다. 내보내기 Tf 작업 그룹은 [지원 되는 및 변환기의 목록을](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) 유지 관리 하 여 글 2.0 모델을 만듭니다. 시작 하려면이 페이지에 나열 된 프로그램 중 하나를 사용 하 여 글 2.0 모델을 만들거나 내보내거나 지원 되는 변환기 중 하나를 사용 하 여 기존 모델을 변환 합니다.
 
-또한 Blender 및 3DS Max에서 직접 인 글 록 모델을 내보내기 위한 art 워크플로의 개요를 제공 하는이 유용한 문서를 확인 하세요. 
+<!-- Additionally, check out [this helpful article, which provides an overview of an art workflow for exporting glTF models from Blender and 3DS Max directly.  -->
 
 ### <a name="environment-limits"></a>환경 제한
 
@@ -96,7 +96,7 @@ Windows Mixed Reality는 환경 로드 시간을 크게 줄일 수 있는 다양
 
 변환기는 현재 최적화의 정확한 동작을 조정 하기 위해 여러 플래그를 지원 합니다. 최상의 결과를 위해 다음 플래그를 사용 하 여를 실행 하는 것이 좋습니다.
 
-플래그|권장 값|설명
+플래그|권장 값|Description
 ---|---|---
 -최대 질감-크기|1024 또는 2048| 값을 조정 하 여 질감의 품질을 향상 시키려면 기본값은 512x512입니다. 값이 클수록 환경의 파일 크기에 크게 영향을 주므로 256 mb 제한을 염두에 두어야 합니다.
 -최소 버전|1803|사용자 지정 환경은 windows >= 1803 버전 에서만 지원 됩니다. 이 플래그는 이전 버전의 질감을 제거 하 고 최종 자산의 파일 크기를 줄입니다.

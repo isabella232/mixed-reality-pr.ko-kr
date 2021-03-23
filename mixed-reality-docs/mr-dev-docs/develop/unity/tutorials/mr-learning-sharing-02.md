@@ -8,10 +8,10 @@ ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, PUN
 ms.localizationpriority: high
 ms.openlocfilehash: 372cb7c9516a994cb7c3da1efb6cade792e862d1
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99590315"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Photon Unity 네트워킹 설정
@@ -59,7 +59,7 @@ Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 차례로 선택�
 
 ## <a name="installing-inbuilt-unity-packages"></a>기본 제공 Unity 패키지 설치
 
-Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 패키지 관리자 창을 연 다음, **AR Foundation** 을 선택하고, **설치** 단추를 클릭하여 패키지를 설치합니다.
+Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 [패키지 관리자] 창을 연 다음, **AR Foundation** 을 선택하고, **설치** 단추를 클릭하여 패키지를 설치합니다.
 
 ![AR Foundation이 선택된 Unity Package Manager](images/mr-learning-sharing/sharing-02-section3-step1-1.png)
 

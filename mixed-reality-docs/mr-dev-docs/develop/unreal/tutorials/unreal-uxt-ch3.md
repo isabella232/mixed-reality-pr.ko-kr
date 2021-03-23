@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
 ms.openlocfilehash: 26bb874578e56b21d319741b8b1c1ff6decebe4b
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "96609704"
 ---
 # <a name="3-setting-up-your-project-for-mixed-reality"></a>3. 혼합 현실용 프로젝트 설정

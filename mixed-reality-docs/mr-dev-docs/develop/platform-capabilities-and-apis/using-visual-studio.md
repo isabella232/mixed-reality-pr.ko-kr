@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, Mixed Reality, 디버그, 배포
 ms.openlocfilehash: 2ab89311163a48ee3c14511446a1498ce883a232
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100496098"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>Visual Studio를 사용하여 배포 및 디버깅
@@ -110,7 +110,7 @@ PC에 연결된 Windows Mixed Reality 헤드셋을 사용하는 경우 PC에서 
 ![Visual Studio에서 디바이스 배포](images/buildsettingsusbdeploy_arm64.png)
 
 4. 필요에 따라 앱 빌드, 배포 및 디버그
-    * **디버그 > 디버깅 시작** 을 선택하여 앱을 배포하고 디버깅을 시작합니다.
+    * **디버그 > 디버깅 시작** 을 차례로 선택하여 앱을 배포하고, 디버깅을 시작합니다.
     * **빌드 > 배포** 를 선택하여 디버깅하지 않고 빌드 및 배포합니다.
 
 ![Visual Studio에서 디버깅 없이 시작](images/deploywithdebugging.png)</br>

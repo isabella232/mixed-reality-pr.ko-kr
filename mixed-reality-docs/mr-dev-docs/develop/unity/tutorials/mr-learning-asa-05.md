@@ -8,10 +8,10 @@ ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, android, ios, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
 ms.openlocfilehash: 699c7689fcd23543f4d4b0e86f64cdbf98debc1f
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99590715"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5. Android 및 iOS용 Azure Spatial Anchors
@@ -90,7 +90,7 @@ Unity 메뉴에서 **파일** > **빌드 설정...** 을 선택하여 빌드 설
 
 빌드 설정 창을 닫습니다.
 
-Unity 메뉴에서 **Mixed Reality Toolkit** > **유틸리티** > **Unity 프로젝트 구성** 을 선택하여 **MRTK 프로젝트 구성기** 창을 열고 모든 옵션이 선택되어 있는지 확인한 다음, **적용** 단추를 클릭하여 설정을 적용합니다.
+Unity 메뉴에서 **Mixed Reality Toolkit** > **유틸리티** > **Unity 프로젝트 구성** 을 선택하여 **MRTK Project Configurator** 창을 열고 모든 옵션이 선택되어 있는지 확인한 다음, **적용** 단추를 클릭하여 설정을 적용합니다.
 
 ![Unity MRTK Project Configurator 창 Android](images/mr-learning-asa/asa-05-section3-step1-2.png)
 

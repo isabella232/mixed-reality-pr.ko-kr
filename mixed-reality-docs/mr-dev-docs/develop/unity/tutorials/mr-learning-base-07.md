@@ -8,10 +8,10 @@ ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 개체 상호 작용, 경계 컨트롤
 ms.localizationpriority: high
 ms.openlocfilehash: 1ab7b3a334639be564717d77d3bbc478a25e8326
-ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "102237244"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. 3D 개체와 상호 작용

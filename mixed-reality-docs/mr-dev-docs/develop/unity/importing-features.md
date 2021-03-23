@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: 최신, 도구, 시작, 기본 사항, unity, visual studio, 도구 키트, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 설치, Windows, HoloLens, 에뮬레이터, unreal, openxr
 ms.openlocfilehash: 0d9139835b9eb4e3e5ce3d1f378c56a4724bfa55
-ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "102230827"
 ---
 # <a name="importing-features"></a>기능 가져오기

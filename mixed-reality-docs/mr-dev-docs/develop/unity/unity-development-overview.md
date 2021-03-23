@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 혼합 현실, 개발, 시작, 새 프로젝트, 포팅, 기능, 카메라, 시뮬레이션, 에뮬레이션, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 공간 매핑, 음성 입력, 위치를 찾을 수 있는 카메라, 에뮬레이터, Azure, 자습서
-ms.openlocfilehash: ed0f27822ab83baa2c1de6575067bdbd6b00a5e6
-ms.sourcegitcommit: 5694cc472bde67c940204ebe6671b0598501e62a
+ms.openlocfilehash: 4979c6f0f88544b4f00cd0859e5c807ddef137e5
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102126616"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730490"
 ---
 # <a name="unity-development-for-hololens"></a>HoloLens용 Unity 개발
 
@@ -27,7 +27,7 @@ ms.locfileid: "102126616"
 
 다음 검사점을 사용하여 Unity 게임 및 애플리케이션을 혼합 현실 세계로 가져옵니다. [Holograms 샘플 애플리케이션 디자인](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)을 아직 살펴보지 않았다면 이를 다운로드하여 Mixed Reality UX의 기본 사항을 숙지하는 데 사용하는 것이 좋습니다.
 
-### <a name="1-getting-started"></a>1. 시작
+## <a name="1-getting-started"></a>1. 시작
 
 Unity에서 개발하는 가장 쉬운 방법은 Mixed Reality Toolkit를 사용하는 것입니다. MRTK는 Mixed Reality 프로젝트를 자동으로 설정하고, 개발 프로세스를 가속화할 수 있는 기능 세트를 제공하는 데 도움이 됩니다. 이 섹션이 완료되면 Mixed Reality Toolkit, Mixed Reality 앱에 맞게 적절하게 구성된 개발 환경 및 직접 빌드한 Unity에서 작동하는 MRTK 프로젝트에 대해 기본적으로 이해할 수 있게 됩니다.
 
@@ -44,13 +44,13 @@ Unity에서 개발하는 가장 쉬운 방법은 Mixed Reality Toolkit를 사용
 > [!NOTE]
 > 프로젝트에서 MRTK V2가 설정되면 카메라와 같은 표준 Unity 게임 개체가 즉시 점등되어 좌석 크기의 환경을 제공합니다. 애플리케이션의 환경 크기를 조정하는 방법은 [좌표계](coordinate-systems-in-unity.md) 페이지에서 확인할 수 있습니다.
 
-### <a name="2-core-building-blocks"></a>2. 핵심 구성 요소
+## <a name="2-core-building-blocks"></a>2. 핵심 구성 요소
 
 혼합 현실 애플리케이션의 모든 핵심 구성 요소는 다른 Unity API와 일치하는 방식으로 공개됩니다. 이러한 구성 요소는 독립 실행형 기능으로 사용하거나 Mixed Reality Toolkit를 통해 사용할 수 있습니다. 한 번에 모두 필요하지 않을 수도 있지만 일찍 살펴보는 것이 좋습니다. 아래에 나열된 핵심 구성 요소를 살펴보았으면 자체적으로 또는 MRTK를 통해 Mixed Reality 프로젝트에 통합할 수 있는 모든 기능을 갖춘 도구 상자를 사용할 수 있습니다.
 
 [!INCLUDE[](../includes/unity-building-blocks.md)]
 
-### <a name="3-advanced-features"></a>3. 고급 기능
+## <a name="3-advanced-features"></a>3. 고급 기능
 
 혼합 현실 애플리케이션에서 역할을 수행하는 다른 주요 기능은 추가 패키지 또는 설정 없이 Unity API를 통해 사용할 수 있습니다. 이러한 기능은 MRTK의 설치 여부에 관계없이 Unity 프로젝트에 추가할 수 있습니다. Unity에서 제공하는 고급 기능을 자세히 살펴보았으면 더 깊고 복잡한 Mixed Reality 앱을 빌드할 수 있습니다.
 
@@ -62,7 +62,7 @@ Unity에서 개발하는 가장 쉬운 방법은 Mixed Reality Toolkit를 사용
 | [추적 손실](tracking-loss-in-unity.md) | 디바이스가 애플리케이션 세계 공간에서 자체를 찾을 수 없는 시나리오를 처리합니다. |
 | [키보드 입력](keyboard-input-in-unity.md) | 현실 세계 및 Mixed Reality 키보드의 입력을 앱에 가져옵니다. |
 
-### <a name="4-deploying-to-a-device-or-emulator"></a>4. 디바이스 또는 에뮬레이터에 배포
+## <a name="4-deploying-to-a-device-or-emulator"></a>4. 디바이스 또는 에뮬레이터에 배포
 
 홀로그램 Unity 프로젝트를 테스트할 준비가 되면 다음 단계로 Unity Visual Studio 솔루션을 내보내고 빌드합니다. 해당 VS 솔루션을 직접 사용하는 경우 실제 디바이스 또는 시뮬레이션된 디바이스에서 다음 세 가지 방법 중 하나로 애플리케이션을 실행할 수 있습니다. 이 섹션이 완료되면 개발 요구 사항에 맞는 디바이스 또는 에뮬레이터에 애플리케이션을 배포할 수 있습니다.
 
@@ -70,7 +70,7 @@ Unity에서 개발하는 가장 쉬운 방법은 Mixed Reality Toolkit를 사용
 * [HoloLens 에뮬레이터](../platform-capabilities-and-apis/using-the-hololens-emulator.md)
 * [Windows Mixed Reality 몰입형 헤드셋 시뮬레이터](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 
-### <a name="5-adding-services"></a>5. 서비스 추가
+## <a name="5-adding-services"></a>5. 서비스 추가
 
 개발 과정의 이 시점에서 서비스를 추가하거나 상업적 배포에 도움을 받을 수 있습니다. [Azure Cloud Services](../mixed-reality-cloud-services.md) 및 Dynamics 365 기능을 통합하면 프로젝트 수준을 주요 방식으로 높일 수 있습니다. Mixed Reality 지식을 검색하고 확장할 수 있는 몇 가지 시작 지점을 컴파일했습니다.
 

@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: 시선 추적, Mixed Reality, 입력, 시선 응시, 시선 타깃팅, HoloLens 2, 시선 기반 선택, 유지, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 디자인
 ms.openlocfilehash: 78f8dcec3c8368128ec5904df36ce1391aa8b879
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98007713"
 ---
 # <a name="eye-gaze-and-dwell"></a>시선 응시 및 유지(dwell)
