@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 소프트웨어 구성 요소, 릴리스 기록, 릴리스 정보, 버전 기록
 appliesto:
 - Windows 10
-ms.openlocfilehash: a5261303a8ba1c0ffbf87ec9e28bd392c19da9a7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: ea65dd2c6c821189b1248bf3b418e38fdd7a6d7f
+ms.sourcegitcommit: 919bdc3e46325f3c44a022c8852cd38ffec33d33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581652"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105029391"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>혼합 현실 소프트웨어 개요 및 릴리스 기록
 
@@ -105,6 +105,7 @@ Windows Mixed Reality 모던 (VR) 헤드셋의 최신 PC 릴리스로 업그레�
 
    | 버전          | 출시 날짜          | 주요 변경 내용                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
+   | [10.0.19041.2041](https://www.microsoft.com/download/details.aspx?id=102903)  | 3 월 23 일, 2021  | Windows 10, 버전 1903 및 최신 버전과 호환 됩니다.<br/><ul><li>다른 헤드셋과 일관 되도록 HP 반향 G2에 대 한 숨겨진 영역 메시의 굴곡 순서를 업데이트 합니다.</li><li>HP 반향 G2 헤드셋의 시각적 품질 향상</li><li>Windows Mixed Reality 헤드셋 플랫폼 및 안정성 향상.</li>|
    | [10.0.19041.2037](https://www.microsoft.com/en-us/download/details.aspx?id=102527)  | 2020 년 12 월 10 일  | Windows 10, 버전 1903 및 최신 버전과 호환 됩니다.<br/><ul><li>일부 컨트롤러에 작동 하지 않는 트리거가 있는 문제를 해결 하기 위한 HP 컨트롤러의 새 컨트롤러 펌웨어</li>|
    | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | 2020 년 10 월 8 일  | Windows 10, 버전 1903 및 최신 버전과 호환 됩니다.<br/><ul><li>HP 반향 G2, HP Omnicept 및 새 HP 컨트롤러에 대 한 공식적인 지원.</li><li>HP 반향 및 Samsung Odyssey + 헤드셋의 보조 디스플레이 수정 [Os 빌드 19041.546](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) 이상 또는 [os 빌드 18362.1110 및 18363.1110](https://support.microsoft.com/en-us/help/4577062/windows-10-update-kb4577062) 이상이 필요 합니다.</li><li>컴퓨터 전원 상태를 절전 모드로 전환 하는 기능이 향상 되어 SWW 1-4 오류가 줄어듭니다.</li><li>Windows Mixed Reality 헤드셋 플랫폼은 사소한 수정과 안정성을 개선 합니다.|
    | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | 2020년 5월 7일      | Windows 10, 버전 1903 및 최신 버전과 호환 됩니다.<br/><ul><li>Windows Mixed Reality 헤드셋 플랫폼은 사소한 수정과 안정성을 개선 합니다.</li></ul>  |
