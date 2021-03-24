@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 상호 작용, 디자인, HoloLens, 손, 원거리, 가리키고 커밋, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 손 광선, 개체 조작, MRTK, Mixed Reality Toolkit, DoF
 ms.openlocfilehash: 8196b67f103bae346ba4da065ee6045ff231b004
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101759869"
 ---
 # <a name="point-and-commit-with-hands"></a>손으로 가리키고 커밋

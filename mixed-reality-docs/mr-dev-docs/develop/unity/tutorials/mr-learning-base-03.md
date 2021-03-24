@@ -8,10 +8,10 @@ ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 공간 인식
 ms.localizationpriority: high
 ms.openlocfilehash: 0a8beb647516ebcb5bc07cb58d0193e8fe71e9fc
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101760019"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. MRTK 프로필 구성
