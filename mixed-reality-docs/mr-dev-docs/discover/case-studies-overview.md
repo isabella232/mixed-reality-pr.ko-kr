@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
 keywords: Windows Mixed Reality, HoloLens, 사례 연구, 비전, 시나리오, 사례 연구, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 7d3e2f3bbbc6a89bf4f136e2657f8a9abe7b9560
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 696223d2c5d122a1b1c092a2769d27ac0e94046c
+ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757651"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895163"
 ---
 # <a name="case-study-gallery"></a>사례 연구 갤러리
 
@@ -19,23 +19,28 @@ ms.locfileid: "97757651"
 
 :::row:::
     :::column:::
-       [ ![ 3 HoloStudio ui 및 상호 작용 디자인 학습](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 HoloStudio ui 및 상호 작용 디자인 학습](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
-        HoloStudio는 HoloLens의 첫 번째 앱 중 하나입니다. 따라서 3D UI 및 상호 작용 디자인에 대 한 새로운 모범 사례를 만들어야 했습니다. 사용자 테스트, 프로토타입, 평가판 및 오류를 통해이를 수행 했습니다.<br>
-        *2016년 7월*
+       [ ![ Ford GT40 experience](../develop/unreal/images/ford-gt40-img-01.jpg)](../develop/unreal/unreal-ford-gt40.md) **[Ford GT40 experience](../develop/unreal/unreal-ford-gt40.md)**<br>
+        이 사례 연구를 통해 1966 24 시간 Le Mans 레이스의 Ferrari을 racecar 하는 전설의을 최대한 활용할 수 있습니다 .이를 위해 Ford GT40가 앞의 테이블을 사용 합니다.<br>
+        *2021년 2월*
+    :::column-end:::
+    :::column:::
+       서로 다른 성능 확장 [ ![ 을 사용 하 여 여러 장치에서 성능 확장을 확장 하 여](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md) **[성능 향상](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
+        이 사례 연구는 다양 한 성능 기능을 갖춘 다양 한 장치에서 매력적인 환경을 제공 하기 위해 Microsoft 개발자가 어떻게 강화 카보베르데 앱을 최적화 하는 방법에 대 한 통찰력을 제공 합니다.<br>
+        *2017년 8월*
     :::column-end:::
     :::column:::
        [ ![ HoloSketch 빌드, hololens 용 공간 레이아웃 및 ux 스케치 앱](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md) **[HoloSketch, 공간 레이아웃 및 hololens 용 ux 스케치 앱](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
         HoloSketch는 holographic 환경을 빌드하는 데 도움이 되는 장치 상의 공간 레이아웃 및 UX 스케치 도구입니다.<br>
          *2017년 7월*
     :::column-end:::
-    :::column:::
-       조각 [ ![ 에서 몰입 형 환경 만들기](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md) 조각 **[에서 몰입 형 환경 만들기](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
-        조각은 Microsoft HoloLens의 대화형 범죄 드라마 이며,이는 단서를 따라 실제 공간에서 발생 하는 미스 트를 해결 하는 데 사용 됩니다.<br>
-        *2016년 8월*
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+       안정화 평면을 사용 하 여 [ ![](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) **[holographic turbulence를 줄이는 안정화 평면을 사용](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) 하 여 holographic turbulence 줄이기**<br>
+        Holograms를 사용 하는 것은 복잡할 수 있습니다. 공간을 이동 하 고 다른 모든 각도에서 holograms을 볼 수 있다는 사실은 일반적인 컴퓨터 화면으로 가져올 수 없는 집중 교육 수준을 제공 합니다.<br>
+        *2017년 4월*
+    :::column-end:::
     :::column:::
        Hololens의 [ ![ 공간 매핑 기능 확장](images/away-from-camera-position-500px.png)](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md) **[hololens의 공간 매핑 기능 확장](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)**<br>
         Microsoft HoloLens에 대 한 첫 번째 앱을 만들 때 장치에서 공간 매핑의 경계를 푸시할 수 있는 정도를 확인 합니다.<br>
@@ -46,20 +51,18 @@ ms.locfileid: "97757651"
         HoloLens 팀은 Lowe의 HoloLens 프로젝트에서 파생 된 몇 가지 모범 사례를 공유 하려고 합니다.<br>
         *2016년 9월*
     :::column-end:::
-    :::column:::
-       안정화 평면을 사용 하 여 [ ![](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) **[holographic turbulence를 줄이는 안정화 평면을 사용](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) 하 여 holographic turbulence 줄이기**<br>
-        Holograms를 사용 하는 것은 복잡할 수 있습니다. 공간을 이동 하 고 다른 모든 각도에서 holograms을 볼 수 있다는 사실은 일반적인 컴퓨터 화면으로 가져올 수 없는 집중 교육 수준을 제공 합니다.<br>
-        *2017년 4월*
-    :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       서로 다른 성능 확장 [ ![ 을 사용 하 여 여러 장치에서 성능 확장을 확장 하 여](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md) **[성능 향상](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
-        이 사례 연구는 다양 한 성능 기능을 갖춘 다양 한 장치에서 매력적인 환경을 제공 하기 위해 Microsoft 개발자가 어떻게 강화 카보베르데 앱을 최적화 하는 방법에 대 한 통찰력을 제공 합니다.<br>
-        *2017년 8월*
+       조각 [ ![ 에서 몰입 형 환경 만들기](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md) 조각 **[에서 몰입 형 환경 만들기](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
+        조각은 Microsoft HoloLens의 대화형 범죄 드라마 이며,이는 단서를 따라 실제 공간에서 발생 하는 미스 트를 해결 하는 데 사용 됩니다.<br>
+        *2016년 8월*
     :::column-end:::
     :::column:::
+       [ ![ 3 HoloStudio ui 및 상호 작용 디자인 학습](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 HoloStudio ui 및 상호 작용 디자인 학습](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
+        HoloStudio는 HoloLens의 첫 번째 앱 중 하나입니다. 따라서 3D UI 및 상호 작용 디자인에 대 한 새로운 모범 사례를 만들어야 했습니다. 사용자 테스트, 프로토타입, 평가판 및 오류를 통해이를 수행 했습니다.<br>
+        *2016년 7월*
     :::column-end:::
     :::column:::
     :::column-end:::

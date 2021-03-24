@@ -8,14 +8,18 @@ ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, 장치에 배포, PC, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d610907123898471e92598da134e9c4d77a195e9
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+ms.openlocfilehash: ca577bdc5bc30aebf80c9888345eb0e2d5c3ce6d
+ms.sourcegitcommit: cc9d90b046a9fce792058fea25ae13a9186e43e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104909142"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105008928"
 ---
 # <a name="the-making-of-the-ford-gt40-experience"></a>Ford GT40 환경 만들기
+
+*C + +에서 모든 공간 상호 작용을 직접 코딩 해야 하기 때문에 "이전 MRTK는 Unreal을 사용 하 여 HoloLens 2를 개발 하는 것이 다소 지루한 였습니다. Unreal의 MRTK는 이와 동일한 많은 작업을 간단 하 게 만들었습니다. 초기 프로토타입에 필요한 시간을 절반으로 줄일 수 있습니다. "* -Jose Rodriguez, 소프트웨어 개발자
+
+*"Ford GT40 환경은 최고 수준의 예산으로 한 달만에 최고 품질의 HoloLens 2 앱을 완료할 수 있지만 여전히 매우 뛰어난 결과를 제공 합니다."*  -Daniel Cheetham, 최고 혁신 담당자, 행복 한 마무리
 
 MRTK (Mixed Reality Toolkit)를 사용 하면 독창적인 프로덕션 회사의 행복 한 완료는 Ford GT40에 대 한 새로운 큐브 뷰를 제공 하는 HoloLens 2 환경을 제공 하며,이는 24 시간 Le Mans에서 Ferrari를 갱신 하는 전설의 레이스 자동차입니다.
 
@@ -120,14 +124,6 @@ Cheetham에 따르면 전 세계 전염병는 잠재적 고객 간에 다양 하
 > [Ford GT40 앱 다운로드](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp)
 
 GitHub에서 [Unreal의 경우 HoloLens 2 또는 Mrtk](https://github.com/microsoft/MixedRealityToolkit-Unreal) 에 대 한 [혼합 현실 개발 소개를](../development.md) 확인 하세요.
-
-## <a name="what-people-are-saying"></a>사용자 의견
-
-*C + +에서 모든 공간 상호 작용을 직접 코딩 해야 하기 때문에 "이전 MRTK는 Unreal을 사용 하 여 HoloLens 2를 개발 하는 것이 다소 지루한 였습니다. Unreal의 MRTK는 이와 동일한 많은 작업을 간단 하 게 만들었습니다. 초기 프로토타입에 필요한 시간을 절반으로 줄일 수 있습니다. "*
-- Jose Rodriguez, 소프트웨어 개발자
-
-*"Ford GT40 환경은 최고 수준의 예산으로 한 달만에 최고 품질의 HoloLens 2 앱을 완료할 수 있지만 여전히 매우 뛰어난 결과를 제공 합니다."*  
-- Daniel Cheetham, 최고 혁신 책임자, 행복 한 마무리
 
 <!-- ## About the team
 
