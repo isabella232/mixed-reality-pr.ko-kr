@@ -8,10 +8,10 @@ ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, learn, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 언어 번역, Azure, Azure cognitive services, Microsoft Learn
 ms.localizationpriority: high
 ms.openlocfilehash: c4e068dda72c4dc2f22ca0a56a835b334d90c713
-ms.sourcegitcommit: a2b1c75f25adcd238b6a93b103a13aa898a62c76
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "102770331"
 ---
 # <a name="mixed-reality-learn-overview"></a>Mixed Reality Learn 개요
