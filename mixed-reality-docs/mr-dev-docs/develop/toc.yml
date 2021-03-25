@@ -348,6 +348,8 @@
       items:
         - name: Kippy의 이스케이프
           href: unreal/unreal-kippys-escape.md
+        - name: Ford GT40 환경
+          href: unreal/unreal-ford-gt40.md
     - name: 배포 및 게시
       items:
         - name: 디바이스에 배포
@@ -357,11 +359,19 @@
 - name: JavaScript
   items:
     - name: JavaScript 개발 개요
-      href: web/javascript-development-overview.md
+      href: javascript/javascript-development-overview.md
     - name: WebXR
-      href: web/webxr-overview.md
-    - name: WebVR
-      href: web/webvr-overview.md
+      href: javascript/webxr-overview.md
+    - name: 자습서
+      items:
+        - name: BabylonJS를 사용하는 Hello World
+          items:
+            - name: 1. 소개
+              href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
+            - name: 2. 기본 3D 개체를 사용하여 장면 준비
+              href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
+            - name: 3. 3D 개체와 상호 작용
+              href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
 - name: 네이티브
   items:
     - name: 네이티브 개발 개요
