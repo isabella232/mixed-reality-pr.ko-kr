@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: a774a5c08cb2d8bbaeebeca19cec366504efba58
-ms.sourcegitcommit: 5c81c19905b26818882e49679bd71f5dd7bc6d3b
+ms.openlocfilehash: 85a203f22c62871265f7775c364f5388194b53a1
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103202818"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550973"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>Mixed Reality Toolkit이란 무엇인가요?
 
@@ -51,7 +51,7 @@ Unity에서 MRTK 또는 Mixed Reality 개발이 처음인 경우 필요한 도�
 > [도구 설치](install-the-tools.md)
 
 > [!div class="nextstepaction"]
-> [HoloLens 2 자습서 시리즈](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
+> [HoloLens 2 자습서 시리즈](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
 
 작동 원리를 자세히 알고 싶으신가요?
 > [!div class="nextstepaction"]
@@ -59,7 +59,7 @@ Unity에서 MRTK 또는 Mixed Reality 개발이 처음인 경우 필요한 도�
 
 ## <a name="documentation"></a>설명서
 
-| [![릴리스 정보](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-26-release-notes.md)<br/>[릴리스 정보](release-notes/mrtk-26-release-notes.md)| [![MRTK 개요](features/images/MRTK_Icon_ArchitectureOverview.png)](architecture/overview.md)<br/>[MRTK 개요](architecture/overview.md)|[![API 참조](features/images/MRTK_Icon_APIReference.png)](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API 참조](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.Toolkit)|
+| [![릴리스 정보](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-26-release-notes.md)<br/>[릴리스 정보](release-notes/mrtk-26-release-notes.md)| [![MRTK 개요](features/images/MRTK_Icon_ArchitectureOverview.png)](architecture/overview.md)<br/>[MRTK 개요](architecture/overview.md)|[![API 참조](features/images/MRTK_Icon_APIReference.png)](/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API 참조](/dotnet/api/Microsoft.MixedReality.Toolkit)|
 |:---|:---|:---|
 
 ## <a name="build-status"></a>빌드 상태
@@ -296,7 +296,7 @@ Unity에서 MRTK 또는 Mixed Reality 개발이 처음인 경우 필요한 도�
 ## <a name="mrtk-examples-hub"></a>MRTK 예제 허브
 
 MRTK 예제 허브를 사용하여 MRTK에서 다양한 예제 장면을 사용해 볼 수 있습니다.
-[MR Feature Tool](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)에서 "Mixed Reality Toolkit 예제" 패키지를 선택하여 HoloLens(x86), HoloLens 2(ARM) 및 Windows Mixed Reality 몰입형 헤드셋(x64)용으로 미리 작성된 앱 패키지를 다운로드할 수 있습니다. [Windows 장치 포털을 사용하여 HoloLens(1세대)에 앱을 설치](https://docs.microsoft.com/hololens/hololens-install-apps#use-the-windows-device-portal-to-install-apps-on-hololens)해야 합니다. HoloLens 2에서 [Microsoft Store 앱을 통해 MRTK 예제 허브](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4)를 다운로드하고 설치할 수 있습니다.
+[MR Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)에서 "Mixed Reality Toolkit 예제" 패키지를 선택하여 HoloLens(x86), HoloLens 2(ARM) 및 Windows Mixed Reality 몰입형 헤드셋(x64)용으로 미리 작성된 앱 패키지를 다운로드할 수 있습니다. [Windows 장치 포털을 사용하여 HoloLens(1세대)에 앱을 설치](/hololens/hololens-install-apps#use-the-windows-device-portal-to-install-apps-on-hololens)해야 합니다. HoloLens 2에서 [Microsoft Store 앱을 통해 MRTK 예제 허브](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4)를 다운로드하고 설치할 수 있습니다.
 
 MRTK의 장면 시스템과 장면 전환 서비스를 사용하여 다중 장면 허브를 만드는 방법에 대한 자세한 내용은 [예제 허브 추가 정보 페이지](features/example-scenes/example-hub.md)를 참조하세요.
 
@@ -304,9 +304,9 @@ MRTK의 장면 시스템과 장면 전환 서비스를 사용하여 다중 장�
 
 ## <a name="sample-apps-made-with-mrtk"></a>MRTK를 사용하여 만든 샘플 앱
 
-| [![원소의 주기율표](features/images/MRDL_PeriodicTable.jpg)](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)| [![갤럭시 익스플로러](features/images/MRTK_GalaxyExplorer.jpg)](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer-update)| [![Surfaces 샘플 앱](features/images/MRDL_Surfaces.jpg)](https://docs.microsoft.com/windows/mixed-reality/sampleapp-surfaces)|
+| [![원소의 주기율표](features/images/MRDL_PeriodicTable.jpg)](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)| [![갤럭시 익스플로러](features/images/MRTK_GalaxyExplorer.jpg)](/windows/mixed-reality/galaxy-explorer-update)| [![Surfaces 샘플 앱](features/images/MRDL_Surfaces.jpg)](/windows/mixed-reality/sampleapp-surfaces)|
 |:--- | :--- | :--- |
-| [원소의 주기율표](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)는 MRTK의 입력 시스템 및 구성 요소를 사용하여 HoloLens 및 몰입형 헤드셋을 위한 앱 환경을 만드는 방법을 보여주는 오픈 소스 샘플 앱입니다. 포팅 사례 읽기: [MRTK v2를 사용하는 HoloLens 2에 원소의 주기율표 앱 가져오기](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158) |[갤럭시 익스플로러](https://github.com/Microsoft/GalaxyExplorer)는 HoloLens '아이디어 공유' 캠페인의 일환으로 2016년 3월에 처음 개발된 오픈 소스 샘플 앱입니다. 갤럭시 익스플로러는 MRTK v2를 사용하는 HoloLens 2를 위한 새 기능으로 업데이트되었습니다. 사례 읽기: [HoloLens 2용 갤럭시 익스플로러 제작](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer-update) |[Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)는 HoloLens 2용 오픈 소스 샘플 앱으로, 시각적 개체, 오디오, 완전히 연결된 손 추적으로 촉감을 만드는 방법을 살펴봅니다. 자세한 디자인 및 개발 사례는 Microsoft 혼합 현실 개발자의 날 세션 [Surfaces 앱을 통한 학습](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App)을 확인하세요. |
+| [원소의 주기율표](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)는 MRTK의 입력 시스템 및 구성 요소를 사용하여 HoloLens 및 몰입형 헤드셋을 위한 앱 환경을 만드는 방법을 보여주는 오픈 소스 샘플 앱입니다. 포팅 사례 읽기: [MRTK v2를 사용하는 HoloLens 2에 원소의 주기율표 앱 가져오기](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158) |[갤럭시 익스플로러](https://github.com/Microsoft/GalaxyExplorer)는 HoloLens '아이디어 공유' 캠페인의 일환으로 2016년 3월에 처음 개발된 오픈 소스 샘플 앱입니다. 갤럭시 익스플로러는 MRTK v2를 사용하는 HoloLens 2를 위한 새 기능으로 업데이트되었습니다. 사례 읽기: [HoloLens 2용 갤럭시 익스플로러 제작](/windows/mixed-reality/galaxy-explorer-update) |[Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)는 HoloLens 2용 오픈 소스 샘플 앱으로, 시각적 개체, 오디오, 완전히 연결된 손 추적으로 촉감을 만드는 방법을 살펴봅니다. 자세한 디자인 및 개발 사례는 Microsoft 혼합 현실 개발자의 날 세션 [Surfaces 앱을 통한 학습](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App)을 확인하세요. |
 
 ## <a name="session-videos-from-mixed-reality-dev-days-2020"></a>2020 혼합 현실 개발자의 날의 세션 동영상
 
@@ -314,7 +314,7 @@ MRTK의 장면 시스템과 장면 전환 서비스를 사용하여 다중 장�
 |:--- | :--- | :--- |
 | 간단한 MRTK 앱을 만드는 방법을 처음부터 끝까지 설명하는 자습서입니다. 상호 작용 개념 및 MRTK의 다중 플랫폼 기능에 대해 알아보세요. | 멋진 혼합 현실 환경을 빌드하는 데 도움이 되는 MRTK의 UX 구성 요소에 대해 자세히 알아보세요. | MRTK 및 외부의 성능 도구에 대한 소개와 MRTK 표준 셰이더에 대한 개요입니다. |
 
-더 많은 세션 동영상을 살펴보려면 [혼합 현실 개발자의 날](https://docs.microsoft.com/windows/mixed-reality/mr-dev-days-sessions)을 참조하세요.
+더 많은 세션 동영상을 살펴보려면 [혼합 현실 개발자의 날](/windows/mixed-reality/mr-dev-days-sessions)을 참조하세요.
 
 ## <a name="engage-with-the-community"></a>커뮤니티에 참여
 
@@ -331,13 +331,13 @@ MRTK의 장면 시스템과 장면 전환 서비스를 사용하여 다중 장�
 
 ## <a name="useful-resources-on-the-mixed-reality-dev-center"></a>혼합 현실 개발자 센터의 유용한 리소스
 
-| ![검색](features/images/mrdevcenter/icon-discover.png) [검색](https://docs.microsoft.com/windows/mixed-reality/)| ![디자인](features/images/mrdevcenter/icon-design.png) [디자인](https://docs.microsoft.com/windows/mixed-reality/design)| ![개발](features/images/mrdevcenter/icon-develop.png) [개발](https://docs.microsoft.com/windows/mixed-reality/development)| ![배포)](features/images/mrdevcenter/icon-distribute.png) [배포](https://docs.microsoft.com/windows/mixed-reality/implementing-3d-app-launchers)|
+| ![검색](features/images/mrdevcenter/icon-discover.png) [검색](/windows/mixed-reality/)| ![디자인](features/images/mrdevcenter/icon-design.png) [디자인](/windows/mixed-reality/design)| ![개발](features/images/mrdevcenter/icon-develop.png) [개발](/windows/mixed-reality/development)| ![배포)](features/images/mrdevcenter/icon-distribute.png) [배포](/windows/mixed-reality/implementing-3d-app-launchers)|
 | :--------------------- | :----------------- | :------------------ | :------------------------ |
 | HoloLens 및 몰입형 헤드셋(VR)을 위한 혼합 현실 환경을 빌드하는 방법을 알아보세요.          | 디자인 가이드를 가져옵니다. 사용자 인터페이스를 구축합니다. 상호 작용 및 입력을 알아봅니다.     | 개발 가이드를 가져옵니다. 기술을 알아봅니다. 과학을 이해합니다.       | 다른 사용자에게 앱을 제공할 수 있도록 준비하고 3D 시작 관리자를 만드는 방안을 고려해 보세요. |
 
 ## <a name="useful-resources-on-azure"></a>Azure에 대한 유용한 리소스
 
-| ![Spatial Anchors](features/images/mrdevcenter/icon-azurespatialanchors.png)<br> [Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/)| ![Speech Services](features/images/mrdevcenter/icon-azurespeechservices.png) [Speech Services](https://docs.microsoft.com/azure/cognitive-services/speech-service/)| ![비전 서비스](features/images/mrdevcenter/icon-azurevisionservices.png) [비전 서비스](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)|
+| ![Spatial Anchors](features/images/mrdevcenter/icon-azurespatialanchors.png)<br> [Spatial Anchors](/azure/spatial-anchors/)| ![Speech Services](features/images/mrdevcenter/icon-azurespeechservices.png) [Speech Services](/azure/cognitive-services/speech-service/)| ![비전 서비스](features/images/mrdevcenter/icon-azurevisionservices.png) [비전 서비스](/azure/cognitive-services/computer-vision/)|
 | :------------------------| :--------------------- | :---------------------- |
 | Spatial Anchors는 시간이 지나도 디바이스에서 위치를 유지하는 개체를 사용하여 Mixed Reality 환경을 만들 수 있는 플랫폼 간 서비스입니다.| 음성을 텍스트로 변환, 화자 인식, 음성 번역 등의 Azure 기반 음성 기능을 검색하고 애플리케이션에 통합하세요.| 컴퓨터 비전, 얼굴 감지, 감정 인식, 비디오 인덱서 등의 비전 서비스를 사용하여 이미지 또는 비디오 콘텐츠를 식별하고 분석하세요. |
 
