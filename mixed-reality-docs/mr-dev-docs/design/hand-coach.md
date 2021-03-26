@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality, 디자인, 수동 coach, 몰입 형 헤드셋, MRTK, 실습, 수동 지원, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: ca23617e18c84f592ebd0575195b6bf4a98e80e5
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 56a56893a7c5bc772268ab9980f25327eae83af5
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759479"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550073"
 ---
 # <a name="hand-coach"></a>핸드 코치
 
@@ -85,7 +85,7 @@ UI 메뉴를 사용 하 여 다양 한 손 크기를 테스트 하 고,이를 �
 
 ## <a name="can-i-create-my-own"></a>직접 만들 수 있나요?
 
-예. 게임에 고유한 제스처를 만들어 커뮤니티에 다시 참가 하는 것이 좋습니다.
+예 게임에 고유한 제스처를 만들어 커뮤니티에 다시 참가 하는 것이 좋습니다.
 앱에 사용할 수 있는 Rigged 손의 Maya 파일을 제공 합니다 .이 파일은 다운로드 하 여 다운로드할 수 있습니다 <a href="files/HandCoach_MRTK.zip"> HandCoach_MRTK.zip </a>
 
 ![Maya의 애니메이션 실습 예](images/HandCoach/MayaSelect_Gif.gif)<br>
@@ -169,11 +169,11 @@ UI 메뉴를 사용 하 여 다양 한 손 크기를 테스트 하 고,이를 �
 * 손을 한 번만 지정 해야 합니다. 교육을 통해 혼란을 야기 하 고 messiness 수 있습니다.
 *   Unity로 가져와서 최신 MRTK를 다운로드 합니다. https://github.com/microsoft/MixedRealityToolkit-Unity
     *   재질: Teaching_Hand2
-    *   스크립트: <a href= "https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md">mrtk 손 coach</a> 에 대 한 mrtk 지침 참조
+    *   스크립트: <a href= "/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md">mrtk 손 coach</a> 에 대 한 mrtk 지침 참조
     *   프로젝트별 설정
         *   UWP로 설정 된 장면: Windows Mixed Reality의 [Unity 구성 프로젝트](../develop/unity/Configure-Unity-Project.md) 에서 지침을 찾을 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [상호 작용-기본 사항](interaction-fundamentals.md)
 * [자산 생성 프로세스](asset-creation-process.md)
@@ -181,4 +181,4 @@ UI 메뉴를 사용 하 여 다양 한 손 크기를 테스트 하 고,이를 �
 * [도구 설치](../develop/install-the-tools.md)
 * [Unity 프로젝트 구성](../develop/unity/Configure-Unity-Project.md)
 * [Unity 개발 개요](../develop/unity/unity-development-overview.md)
-* [MRTK 101](../develop/unity/mrtk-101.md)
+* [MRTK 101](../out-of-scope/mrtk-101.md)

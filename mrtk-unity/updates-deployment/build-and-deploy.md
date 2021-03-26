@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, Visual Studio, Android, IOS
-ms.openlocfilehash: 235255dcb94f2df3c1ab4c8e8ccc71ba53992b2f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 6f014bbd1ffd5dc0214bc52e1d3d3861409f85f6
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104690133"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550863"
 ---
 # <a name="building-and-deploying-mrtk"></a>MRTK 빌드 및 배포
 
@@ -18,7 +18,7 @@ ms.locfileid: "104690133"
 
 ## <a name="building-and-deploying-mrtk-to-hololens-1-and-hololens-2-uwp"></a>HoloLens 1 및 HoloLens 2(UWP)에 MRTK 빌드 및 배포
 
-HoloLens 1 및 HoloLens 2(UWP)를 빌드하고 배포하는 방법에 대한 지침은 [디바이스에 애플리케이션 빌드](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device)에서 찾을 수 있습니다.
+HoloLens 1 및 HoloLens 2(UWP)를 빌드하고 배포하는 방법에 대한 지침은 [디바이스에 애플리케이션 빌드](/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device)에서 찾을 수 있습니다.
 
 **팁:** WMR, HoloLens 1 또는 HoloLens 2를 빌드할 때에는 빌드 설정 "대상 SDK 버전" 및 "최소 플랫폼 버전"은 아래 그림과 같이 표시되는 것이 좋습니다.
 

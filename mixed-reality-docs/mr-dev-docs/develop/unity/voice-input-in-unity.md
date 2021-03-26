@@ -6,17 +6,17 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 음성 입력, KeywordRecognizer, GrammarRecognizer, 마이크, 받아쓰기, 음성, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 7268a4df9c7fce03029937c72540ed274574067d
-ms.sourcegitcommit: 8c3af63fb49494f75c8ab46236fc3dd8533c1e9d
+ms.openlocfilehash: c062289a1a26365528a86761b6b68a9a24041f7c
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99606118"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550383"
 ---
 # <a name="voice-input-in-unity"></a>Unity의 음성 입력
 
 > [!CAUTION]
-> 시작 하기 전에 인식 음성 서비스 SDK에 대 한 Unity 플러그 인을 사용 하는 것이 좋습니다. 플러그 인은 더 나은 음성 정확도 결과를 제공 하 고 음성 텍스트 디코딩에 쉽게 액세스할 수 있으며 대화, 의도 기반 상호 작용, 번역, 텍스트 음성 변환 및 자연어 음성 인식과 같은 고급 음성 기능을 제공 합니다. 시작 하려면 [샘플 및 설명서](https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-csharp-unity)를 확인 하세요.
+> 시작 하기 전에 인식 음성 서비스 SDK에 대 한 Unity 플러그 인을 사용 하는 것이 좋습니다. 플러그 인은 더 나은 음성 정확도 결과를 제공 하 고 음성 텍스트 디코딩에 쉽게 액세스할 수 있으며 대화, 의도 기반 상호 작용, 번역, 텍스트 음성 변환 및 자연어 음성 인식과 같은 고급 음성 기능을 제공 합니다. 시작 하려면 [샘플 및 설명서](/azure/cognitive-services/speech-service/quickstart-csharp-unity)를 확인 하세요.
 
 Unity는 Unity 응용 프로그램에 [음성 입력](../../design/voice-input.md) 을 추가 하는 세 가지 방법을 제공 하며,이 중 처음 두 가지는 PhraseRecognizer의 유형입니다.
 * 는 `KeywordRecognizer` 수신 대기할 문자열 명령의 배열을 앱에 제공 합니다.

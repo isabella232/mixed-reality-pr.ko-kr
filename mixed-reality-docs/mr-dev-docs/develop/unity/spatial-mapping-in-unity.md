@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, 공간 매핑, 렌더러, collider, 메시, 검색, 구성 요소, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: a713497e0c5f061e9e81bf66197b3e2116218219
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e2ef6ac43e81ff2b8e66a4bd197ea41c198a1626
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759749"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105549953"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity의 공간 매핑
 
@@ -311,7 +311,7 @@ struct TopologyResult
 ```
 
 > [!NOTE]
-> Unity 샘플에서 이러한 각 쿼리는 가상 UI 패널의 단추에 연결 됩니다. 샘플에서는 이러한 각 쿼리에 대 한 매개 변수를 적절 한 값으로 하드 코드 합니다. 더 많은 예제는 샘플 코드의 SpaceVisualizer.cs를 참조 하세요.
+> Unity 샘플에서 이러한 각 쿼리는 가상 UI 패널의 단추에 연결 됩니다. 샘플에서는 이러한 각 쿼리에 대 한 매개 변수를 적절 한 값으로 하드 코드 합니다. 더 많은 예제는 샘플 코드의 SpaceVisualizer를 참조 하세요.
 
 ### <a name="shape-queries"></a>셰이프 쿼리
 
@@ -319,7 +319,7 @@ Dll에서 shape analyzer ("ShapeAnalyzer_W")는 토폴로지 분석기를 사용
 
 셰이프 분석은 가로 표면 에서만 작동 합니다. 예를 들어, 소파는 평평한 좌석 표면 및 소파 위쪽의 평면에 의해 정의 됩니다. 셰이프 쿼리는 두 개의 서피스가 정렬 되 고 연결 된 특정 크기, 높이 및 가로 세로 막대의 두 표면을 찾습니다. Api 용어를 사용 하 여 소파와 후면 위쪽은 셰이프 구성 요소 이며 맞춤 요구 사항은 셰이프 구성 요소 제약 조건입니다.
 
-"Sittable" 개체에 대 한 Unity 샘플 (ShapeDefinition.cs)에 정의 된 예제 쿼리는 다음과 같습니다.
+Unity 샘플 (ShapeDefinition)에 정의 된 "sittable" 개체에 대 한 예제 쿼리는 다음과 같습니다.
 
 ```cs
 shapeComponents = new List<ShapeComponent>()
@@ -350,7 +350,7 @@ shapeConstraints = new List<ShapeConstraint>()
 };
 ```
 
-래퍼 함수는 사용자 지정 셰이프 정의를 쉽게 만들기 위해 Unity 모듈에서 제공 됩니다. 구성 요소 및 모양 제약 조건의 전체 목록은 "ShapeComponentConstraint"의 "SpatialUnderstandingDll.cs" 및 "ShapeConstraint" 구조체에서 찾을 수 있습니다.
+래퍼 함수는 사용자 지정 셰이프 정의를 쉽게 만들기 위해 Unity 모듈에서 제공 됩니다. 구성 요소 및 모양 제약 조건의 전체 목록은 "ShapeComponentConstraint"의 "SpatialUnderstandingDll" 및 "ShapeConstraint" 구조체에서 찾을 수 있습니다.
 
 ![이 화면에서 사각형 모양을 찾았습니다.](images/su-shapequery-300px.jpg)<br>
 *이 화면에서 사각형 모양을 찾았습니다.*
@@ -421,7 +421,7 @@ Solver_PlaceObject(
     UnderstandingDLL.GetStaticObjectPlacementResultPtr());
 ```
 
-성공 하면 배치 위치, 차원 및 방향을 포함 하는 "ObjectPlacementResult" 구조가 반환 됩니다. 또한 배치가 배치 된 개체의 내부 목록에 추가 됩니다. 이후 배치 쿼리에서는이 개체를 고려 합니다. Unity 샘플의 "LevelSolver.cs" 파일에는 더 많은 예제 쿼리가 포함 되어 있습니다.
+성공 하면 배치 위치, 차원 및 방향을 포함 하는 "ObjectPlacementResult" 구조가 반환 됩니다. 또한 배치가 배치 된 개체의 내부 목록에 추가 됩니다. 이후 배치 쿼리에서는이 개체를 고려 합니다. Unity 샘플의 "LevelSolver 찾기 .cs" 파일에는 더 많은 예제 쿼리가 포함 되어 있습니다.
 
 ![개체 배치 결과](images/su-objectplacement-1000px.jpg)<br>
 *그림 3: 파란 상자에 카메라 위치 규칙을 사용 하 여 바닥 쿼리를 수행 하는 세 위치의 결과*
@@ -441,7 +441,7 @@ One-time scan process –
     Query functions will not function until after the scan has been finalized.
 ```
 
-사용자 기반 플레이 공간 "그리기"-검사 단계 중에 사용자가 재생 속도를 이동 하 고 표시 하 여 영역을 효과적으로 그려야 합니다. 생성 된 메시는이 단계에서 사용자 의견을 제공 하는 데 중요 합니다. 실내 홈 또는 office 설정 – 쿼리 함수는 직각으로 평면 및 벽 주위에 디자인 됩니다. 소프트 제한입니다. 그러나 검사 단계 중에 주 축 분석을 완료 하 여 주 및 보조 축을 따라 메시 공간 분할을 최적화 합니다. 포함 된 SpatialUnderstanding.cs 파일은 검사 단계 프로세스를 관리 합니다. 다음 함수를 호출 합니다.
+사용자 기반 플레이 공간 "그리기"-검사 단계 중에 사용자가 재생 속도를 이동 하 고 표시 하 여 영역을 효과적으로 그려야 합니다. 생성 된 메시는이 단계에서 사용자 의견을 제공 하는 데 중요 합니다. 실내 홈 또는 office 설정 – 쿼리 함수는 직각으로 평면 및 벽 주위에 디자인 됩니다. 소프트 제한입니다. 그러나 검사 단계 중에 주 축 분석을 완료 하 여 주 및 보조 축을 따라 메시 공간 분할을 최적화 합니다. 포함 된 SpatialUnderstanding 파일은 검사 단계 프로세스를 관리 합니다. 다음 함수를 호출 합니다.
 
 ```
 SpatialUnderstanding_Init – Called once at the start.
@@ -480,7 +480,7 @@ Dll 이해는 내부적으로 playspace를 8 센티미터 크기의 voxel 큐브
 * 추적이 손실 되 면 다음 OnSurfaceChanged 이벤트는 모든 메시를 제거 합니다.
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Mixed Reality Toolkit의 공간 매핑
-Mixed Reality Toolkit v 2에서 공간 매핑을 사용 하는 방법에 대 한 자세한 내용은 MRTK docs의 <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">공간 인식 섹션</a> 을 참조 하세요.
+Mixed Reality Toolkit v 2에서 공간 매핑을 사용 하는 방법에 대 한 자세한 내용은 MRTK docs의 <a href="/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">공간 인식 섹션</a> 을 참조 하세요.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
@@ -496,7 +496,7 @@ Mixed Reality Toolkit v 2에서 공간 매핑을 사용 하는 방법에 대 한
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [좌표계](../../design/coordinate-systems.md)
 * [Unity의 좌표계](coordinate-systems-in-unity.md)
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>

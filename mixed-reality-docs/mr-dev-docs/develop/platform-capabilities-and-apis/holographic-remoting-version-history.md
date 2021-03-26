@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 버전 기록, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 8fa1671657a7cb057f88da24fe4cfe68b0401397
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: 101061f69fcd4bd3885aa265f32ba2a8f93bf3dc
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496041"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550133"
 ---
 # <a name="holographic-remoting-version-history"></a>Holographic 원격 버전 기록
 
@@ -25,7 +25,7 @@ ms.locfileid: "100496041"
   * XR_MSFT_holographic_remoting 확장의 일부로 사용자 지정 데이터 채널 이에 대 한 예제는 [OpenXR 원격 샘플](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)에 나와 있습니다.
 * 플레이어와 원격 측 간의 동기화가 향상 되었습니다. 이를 통해 동적으로 변경 되는 포즈 및 프레임 버퍼링을 사용할 수 있습니다 .이를 통해 원격 렌더링 된 콘텐츠가 필요한 대상 프레임 속도의 디스플레이에 매끄럽게 전달 됩니다.
 * Microsoft Store를 통해 사용할 수 있는 Holographic 원격 플레이어의 성능이 개선 되었습니다. HoloLens 2에서 플레이어는 이제 초당 60 프레임에서 solid를 실행 합니다.
-* 원격 앱에서 [SpatialSurfaceObserver](https://docs.microsoft.com/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) 를 통해 쿼리할 수 있는 공간 노출 영역 메시의 전송 최적화.
+* 원격 앱에서 [SpatialSurfaceObserver](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) 를 통해 쿼리할 수 있는 공간 노출 영역 메시의 전송 최적화.
 * SpatialAnchorManager 메서드를 호출 하거나 앵커 해제 시 예외가 발생 하는 문제를 해결 했습니다.
 * PlayerContext 또는 RemoteContext 인스턴스를 닫을 때 충돌 하는 스레딩 문제가 발생 합니다.
 * 다른 많은 버그 수정 및 안정성 향상.
