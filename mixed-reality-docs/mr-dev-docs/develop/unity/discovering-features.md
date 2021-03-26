@@ -1,18 +1,18 @@
 ---
 title: 기능 검색 및 가져오기
-description: 혼합 현실 기능을 알아보고 다운로드합니다.
+description: 혼합 현실 기능을 검색하고 다운로드합니다.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 01/27/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 최신, 도구, 시작, 기본 사항, unity, visual studio, 도구 키트, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 설치, Windows, HoloLens, 에뮬레이터, unreal, openxr
-ms.openlocfilehash: 4da6b6fdfc0205d4fa7fb5bf4ae9e48993d7c1e6
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: 859abd0c8e538392a7ba2a1adbb4387956c50028
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99244025"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "102230721"
 ---
 # <a name="discovering-and-acquiring-features"></a>기능 검색 및 가져오기
 
@@ -51,8 +51,7 @@ Mixed Reality Feature Tool은 원하는 항목을 쉽게 찾을 수 있도록 �
 
 ## <a name="refresh-the-feature-catalog"></a>기능 카탈로그 새로 고침
 
-새 기능 및 업데이트된 기능을 확인하려면 새로 고침을 클릭합니다. ![새로 고침 단추](images/RefreshButton.png) 단추를 선택합니다. 그러면 카탈로그 사이트에 연결되고 최신 정보가 검색됩니다.
-* 카탈로그를 읽으면 마지막 업데이트 날짜 및 시간이 표시됩니다.
+새 기능 및 업데이트된 기능을 확인하려면 새로 고침을 클릭합니다. ![새로 고침 단추](images/RefreshButton.png) 단추를 선택합니다. 그러면 카탈로그 사이트에 연결되고 최신 정보가 검색됩니다. 카탈로그를 읽으면 마지막 업데이트 날짜 및 시간이 표시됩니다.
 
 ## <a name="select-features"></a>기능 선택
 
@@ -73,7 +72,7 @@ Mixed Reality Feature Tool은 원하는 항목을 쉽게 찾을 수 있도록 �
 
 ## <a name="going-back-to-the-previous-step"></a>이전 단계로 돌아가기
 
-**Discover features(기능 검색)** 에서 Mixed Reality Feature Tool을 사용하여 처음으로 다시 돌아갈 수 있습니다. **Go back(돌아가기)** 을 선택하여 다시 시작합니다.
+**Discover features(기능 검색)** 에서 Mixed Reality Feature Tool을 사용하여 프로젝트 선택으로 다시 돌아갈 수 있습니다. **Go back(돌아가기)** 을 선택하여 다시 시작합니다.
 
 ## <a name="see-also"></a>참조
 

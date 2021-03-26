@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 시선 추적
 ms.localizationpriority: high
-ms.openlocfilehash: e4104dfd0d7b27425217c8cb92fa36c807053081
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 08793622917ca977c51be56267d8710e5abb78e8
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590375"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "102237183"
 ---
 # <a name="8-using-eye-tracking"></a>8. 시선 추적 사용
 
@@ -61,35 +61,34 @@ Hierarchy 창에서 **MixedRealityToolkit** 개체를 선택한 다음, Inspecto
 
 ## <a name="adding-eye-tracking-to-objects"></a>개체에 시선 추적 추가
 
-Hierarchy 창에서 RoverExplorer > **Buttons** 개체를 확장한 다음, 세 개의 자식 단추 개체 각각에 대해 SeeItSayItLabel > **TextMeshPro** 개체를 확장하고 선택합니다.
+Hierarchy(계층 구조) 창에서 **RoverExplorer** > **Buttons** 를 확장한 다음, 세 개의 자식 단추 개체를 모두 선택합니다.
 
-![TextMeshPro 개체가 선택된 Unity](images/mr-learning-base/base-08-section4-step1-1.png)
+![Button 개체가 선택된 Unity](images/mr-learning-base/base-08-section4-step1-1.png)
 
-TextMeshPro 개체를 선택한 상태로 Inspector 창에서 **구성 요소 추가** 단추를 사용하여 다음 구성 요소를 선택한 모든 개체에 추가합니다.
-
-* **Box Collider** 구성 요소
-* **EyeTrackingTarget** 구성 요소
+세 개의 Button 개체를 모두 선택한 상태로 Inspector 창에서 **구성 요소 추가** 단추를 사용하여 **EyeTrackingTarget** 구성 요소를 선택한 모든 개체에 추가합니다.
 
 ![TextMeshPro 개체가 선택되고 구성 요소가 추가된 Unity](images/mr-learning-base/base-08-section4-step1-2.png)
 
-Hierarchy 창에서 **Hints** > SeeItSayItLabel > **TextMeshPro** 개체를 선택한 다음, 다음과 같이 **EyeTrackingTarget** 구성 요소를 구성합니다.
+Hierarchy(계층 구조) 창에서 **RoverExplorer** > **Buttons** > **Hints** > **SeeItSayItLabel** > **TextMeshPro** 를 확장합니다.
+
+그런 다음, Hierarchy(계층 구조) 창에서 **Hints** 단추 개체를 선택하고, 다음과 같이 **EyeTrackingTarget** 구성 요소를 구성합니다.
 
 * **On Look At Start ()** 이벤트 섹션에서
   * 작은 **+** 아이콘을 클릭하여 다른 이벤트를 추가합니다.
-  * 개체 자체(즉, 동일한 **TextMeshPro** 개체)를 **없음(개체)** 필드에 할당합니다.
-  * **함수 없음** 드롭다운에서 **TextMeshPro** > **float fontSize** 를 차례로 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트합니다.
+  * **Hints** 단추의 **TextMeshPro** 개체를 **None (Object)** 필드에 할당합니다.
+  * **No Function**(함수 없음) 드롭다운에서 **TextMeshPro** > **float fontSize** 를 차례로 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트합니다.
   * 인수를 **0.06** 으로 설정하여 현재 글꼴 크기인 0.04 x 50%를 늘립니다.
 * **On Look Away ()** 이벤트 섹션에서
   * 작은 **+** 아이콘을 클릭하여 다른 이벤트를 추가합니다.
-  * 개체 자체(즉, 동일한 **TextMeshPro** 개체)를 **없음(개체)** 필드에 할당합니다.
-  * **함수 없음** 드롭다운에서 **TextMeshPro** > **float fontSize** 를 차례로 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트합니다.
+  * **Hints** 단추의 **TextMeshPro** 개체를 **None (Object)** 필드에 할당합니다.
+  * **No Function**(함수 없음) 드롭다운에서 **TextMeshPro** > **float fontSize** 를 차례로 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트합니다.
   * 인수를 **0.04** 로 설정하여 글꼴 크기를 0.04로 다시 설정합니다.
 
 ![Hints TextMeshPro 개체가 선택되고 EyeTrackingTarget 구성 요소가 구성된 Unity](images/mr-learning-base/base-08-section4-step1-3.png)
 
-**Explode** > SeeItSayItLabel > **TextMeshPro** 개체 및 **Reset** > SeeItSayItLabel > **TextMeshPro** 개체에 대해 이 단계를 **반복** 합니다.
+**Explode** 및 **Reset** 단추 개체에 대해 이 단계를 **반복** 하여 나머지 단추에 대해 시선 추적을 구성합니다.
 
-이제 게임 모드로 들어간 다음, 마우스 오른쪽 버튼을 누른 채로 마우스를 이동하면서 응시가 레이블 중 하나를 적중할 때까지 누르면 글꼴 크기가 50%씩 증가하고 시선을 돌렸을 때 원래 크기로 다시 설정됩니다.
+이제 게임 모드로 들어간 다음, 마우스 오른쪽 버튼을 누른 상태에서 시선이 버튼 중 하나에 닿을 때까지 마우스를 움직이면 텍스트 글꼴 크기가 50%씩 증가하고 시선을 돌렸을 때 원래 크기로 다시 설정됩니다.
 
 ![시선 추적 대상 Explode 단추 레이블을 응시하고 있는 Unity 재생 모드 분할 보기](images/mr-learning-base/base-08-section4-step1-4.png)
 

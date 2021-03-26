@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 음성 명령, 음성 입력
 ms.localizationpriority: high
-ms.openlocfilehash: bb238ee6ca4c657d7e2cb8e3c41f2cdebc7fc0de
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 65f989f6f587b236d7931c295e9375ad20a53218
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590395"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "102237223"
 ---
 # <a name="9-using-speech-commands"></a>9. 음성 명령 사용
 
@@ -49,8 +49,8 @@ Speech(음성) > **Speech Commands**(음성 명령) 섹션에서 **+ Add a New S
 
 * Enable Indicator(표시기 사용)
 * Enable Tap to Place(탭하여 위치 지정 사용)
-* Enable Bounding Box(경계 상자 사용)
-* Disable Bounding Box(경계 상자 사용 안 함)
+* Enable Bounds Control(범위 제어 사용)
+* Disable Bounds Control(범위 제어 사용 안 함)
 
 ![새 음성 명령 추가](images/mr-learning-base/base-09-section2-step1-2.png)
 
@@ -88,10 +88,10 @@ SpeechInputHandler 구성 요소에서 작은 **+** 아이콘을 3번 클릭하�
 
 **Element 1**(요소 1)을 펼치고 다음과 같이 구성합니다.
 
-* 이전 섹션에서 만든 Enable Bounding Box(경계 상자 사용) 명령을 참조하도록 **키워드** 필드에 **Enable Bounding Box**(경계 상자 사용)를 입력
+* 이전 섹션에서 만든 Enable Bounds Box(경계 상자 사용) 명령을 참조하도록 **키워드** 필드에 **Enable Bounds Box**(경계 상자 사용)를 입력
 * 작은 **+** 아이콘을 클릭하여 이벤트를 추가
 * Hierarchy(계층 구조) 창에서 **RoverExplorer** 개체를 **None (Object)** 필드에 할당
-* **No Function**(함수 없음) 드롭다운에서 **BoundingBox** > **bool enabled** 를 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트
+* **No Function**(함수 없음) 드롭다운에서 **BoundsControl** > **bool enabled** 를 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트
 * 인수 확인란이 **선택** 되어 있는지 확인
 * 작은 **+** 아이콘을 클릭하여 또 다른 이벤트를 추가
 * Hierarchy(계층 구조) 창에서 **RoverExplorer** 개체를 **None (Object)** 필드에 할당
@@ -102,10 +102,10 @@ SpeechInputHandler 구성 요소에서 작은 **+** 아이콘을 3번 클릭하�
 
 **Element 2**(요소 2)를 펼치고 다음과 같이 구성합니다.
 
-* 이전 섹션에서 만든 Disable Bounding Box(경계 상자 사용 안 함) 명령을 참조하도록 **키워드** 필드에 **Disable Bounding Box**(경계 상자 사용 안 함)를 입력
+* 이전 섹션에서 만든 Disable Bounds Box(경계 상자 사용 안 함) 명령을 참조하도록 **키워드** 필드에 **Disable Bounds Box**(경계 상자 사용 안 함)를 입력
 * 작은 **+** 아이콘을 클릭하여 이벤트를 추가
 * Hierarchy(계층 구조) 창에서 **RoverExplorer** 개체를 **None (Object)** 필드에 할당
-* **No Function**(함수 없음) 드롭다운에서 **BoundingBox** > **bool enabled** 를 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트
+* **No Function**(함수 없음) 드롭다운에서 **BoundsControl** > **bool enabled** 를 선택하여 이벤트가 트리거될 때 이 속성 값을 업데이트
 * 인수 확인란이 **선택 취소** 되어 있는지 확인
 * 작은 **+** 아이콘을 클릭하여 또 다른 이벤트를 추가
 * Hierarchy(계층 구조) 창에서 **RoverExplorer** 개체를 **None (Object)** 필드에 할당

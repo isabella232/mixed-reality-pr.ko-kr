@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, ios, android, Windows 10, ARCore, macOS, Android 빌드 지원, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 6ef488dec38a918e0a3707b06644002a51c7d5e5
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 613aa50e1cfaadcf245b719d5a846f35e9e6159e
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590695"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "101883368"
 ---
 # <a name="1-introduction-to-the-azure-spatial-anchors-tutorials"></a>1. Azure Spatial Anchors 자습서 소개
 
@@ -50,7 +50,7 @@ Azure Spatial Anchors 자습서를 시작합니다. 이 자습서 시리즈를 �
   * Unity 2019 LTS가 설치되고 iOS 빌드 지원 모듈이 추가된 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
 
 > [!CAUTION]
-> 이 자습서 시리즈에 권장되는 Mixed Reality Toolkit 버전은 MRTK 2.5.3입니다.
+> 이 자습서 시리즈에 권장되는 Mixed Reality Toolkit 버전은 MRTK 2.6입니다.
 
 > [!CAUTION]
 > 이 자습서 시리즈에 권장되는 Unity 버전은 Unity 2019 LTS입니다. 이 버전은 위의 링크에 연결된 필수 구성 요소에서 설명한 모든 Unity 버전 요구 사항을 대체합니다.
