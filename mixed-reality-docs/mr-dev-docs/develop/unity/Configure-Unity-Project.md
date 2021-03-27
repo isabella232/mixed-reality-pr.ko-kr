@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, mixed reality, 개발, 시작, 새 프로젝트, Windows Mixed Reality, UWP, XR, 성능
-ms.openlocfilehash: 47ca4041e997d623d08fa1732f7039c655810bfc
-ms.sourcegitcommit: b0fb5497bf9f280ba5610c30e4b9e5aa1cda52c9
+ms.openlocfilehash: 5889a76941c36e24f600df5a459440d93bdd4c64
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104837422"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636395"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>MRTK를 사용하지 않고 프로젝트 구성
 
@@ -117,7 +117,7 @@ HoloLens에는 모바일 클래스 GPU가 있습니다. 앱이 HoloLens를 대�
 2. **검사기** 패널에서 변환 **위치** 를 **0, 0, 0** 으로 설정 하 여 사용자의 헤드 위치가 Unity 세계 원점에서 시작 되도록 합니다.
 3. **Clear 플래그** 를 **Solid 색** 으로 변경 합니다.
 4. **배경색** 을 **RGBA 0, 0**, 0, 0으로 변경 합니다. 검은색은 HoloLens에서 투명 하 게 렌더링 됩니다.
-5. **클립 평면** 을 [HoloLens 권장](camera-in-unity.md#clip-planes) 0.85 (미터) 근처로 변경 합니다.
+5. **클립 평면** 을 [HoloLens 권장](camera-in-unity.md#using-clipping-planes) 0.85 (미터) 근처로 변경 합니다.
 
 ![Unity 편집기에서 열리는 검사기 탭의 스크린샷](images/wmr-config-img-11.png)<br>
 *Unity 카메라 설정*

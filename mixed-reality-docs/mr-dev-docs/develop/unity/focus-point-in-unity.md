@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, 포커스 지점, 포커스 평면, 안정화 평면, 안정화 지점, reprojection, LSR, 깊이 버퍼, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 2ceb5f2b58cbd1571b2d9f4de79acfe45779bfea
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: 16f359e1742b86c5f12c0c5965ac9e818ea76aee
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226402"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636225"
 ---
 # <a name="focus-point-in-unity"></a>Unity의 포커스 포인트
 
@@ -49,7 +49,7 @@ void Update()
 ```
 
 > [!NOTE]
-> 위의 간단한 코드는 포커스가 있는 개체가 사용자 뒤에서 종료 되는 경우 홀로그램의 안정성을 낮출 수 있습니다. 일반적으로 포커스 지점을 수동으로 지정 하는 대신 **[깊이 버퍼 공유 사용](camera-in-unity.md#sharing-your-depth-buffers-with-windows)** 을 설정 하는 것이 좋습니다.
+> 위의 간단한 코드는 포커스가 있는 개체가 사용자 뒤에서 종료 되는 경우 홀로그램의 안정성을 낮출 수 있습니다. 일반적으로 포커스 지점을 수동으로 지정 하는 대신 **[깊이 버퍼 공유 사용](camera-in-unity.md#sharing-depth-buffers)** 을 설정 하는 것이 좋습니다.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 

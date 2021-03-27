@@ -1,17 +1,17 @@
 ---
-title: HoloLens (첫 번째 gen) 기본 사항 100-Unity 시작
+title: HoloLens(1세대) 기본 사항 100 - Unity 시작
 description: HoloLens 및 Windows Mixed Reality 장치에 대해 첫 번째 기본 혼합 현실 "hello 세계" 응용 프로그램을 만드는 방법을 알아봅니다.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: 혼합 현실, Windows Mixed Reality, HoloLens, 몰입 형, vr, mr, 시작, 홀로그램, 아카데미, 자습서, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, Windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 999ab7dc87a639f10aad9eaf2a7ef8de2cf92633
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: c764c28cea812314d9c83136fe771c5b4077adc5
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730360"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636175"
 ---
 # <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>HoloLens (첫 번째 gen) 기본 사항 100: Unity 시작
 
@@ -30,7 +30,7 @@ ms.locfileid: "104730360"
 </tr>
 </table>
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>전제 조건
 
 * 올바른 [도구로](../../install-the-tools.md)구성 된 WINDOWS 10 PC입니다.
 
@@ -77,7 +77,7 @@ Unity 기본 카메라는 헤드 추적 및 stereoscopic 렌더링을 처리 합
 
 셋째, Unity에서 가까운 클립 평면을 고려 하 고 사용자가 개체 또는 개체에 접근 하기 때문에 개체가 사용자 눈에 너무 가깝게 렌더링 되지 않도록 할 수 있습니다.
 
-**Hololens 응용 프로그램의** 경우 가까운 클립 평면을 [hololens 권장](../camera-in-unity.md#clip-planes) 0.85 미터로 설정할 수 있습니다.
+**Hololens 응용 프로그램의** 경우 가까운 클립 평면을 [hololens 권장](../camera-in-unity.md#using-clipping-planes) 0.85 미터로 설정할 수 있습니다.
 
 1. **계층** 패널 **에서 주 카메라** 를 선택 하 고, **검사기** 패널에서 **카메라** 구성 요소를 찾아 **가까운 클립 평면** 필드를 기본 **0.3** 에서 HoloLens 권장 **0.85** 로 변경 합니다.
 
@@ -223,7 +223,7 @@ USB 케이블을 통해 장치가 연결 되어 있는지 확인 합니다.
 
 이제 앱이 배포 되었으므로 큐브를 모두 이동 하 여 전 세계에 유지 되는지 확인 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Unity 개발 개요](../unity-development-overview.md)
 * [Unity 및 Visual Studio 사용 모범 사례](../best-practices-for-working-with-unity-and-visual-studio.md)
