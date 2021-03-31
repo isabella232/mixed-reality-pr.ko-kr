@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 보강 현실, 가상 현실, 혼합 현실 헤드셋, 학습, 자습서, 시작
-ms.openlocfilehash: 1c9e185c63d3efef66cdc2782d8d8d4e3692c705
-ms.sourcegitcommit: d5e4eb94c87b86a7774a639f11cd9e35a7050107
+ms.openlocfilehash: 1fbc03fe446d9e9619348618c6d0b9aab828fe1a
+ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103623633"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105937429"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Unity의 혼합 현실 OpenXR 지원 되는 기능
 
-**Mixed Reality OpenXR 플러그 인** 패키지는 Unity의 **OpenXR 플러그 인** 을 확장 한 것으로, HoloLens 2 및 Windows Mixed Reality 헤드셋의 기능 모음을 지원 합니다. 계속 하기 전에 **unity 2020.2** 이상, **OpenXR 플러그 인 버전 0.1.3** 이상을 설치 했는지 확인 하 고 unity 프로젝트가 [OpenXR에 대해 구성](openxr-getting-started.md)되어 있는지 확인 합니다.
+**Mixed Reality OpenXR 플러그 인** 패키지는 Unity의 **OpenXR 플러그 인** 을 확장 한 것으로, HoloLens 2 및 Windows Mixed Reality 헤드셋의 기능 모음을 지원 합니다. 계속 하기 전에 Unity 프로젝트가 [OpenXR에 대해 구성](openxr-getting-started.md)되어 있는지 확인 합니다.
 
 ## <a name="whats-supported"></a>지원되는 내용
 
@@ -35,6 +35,9 @@ ms.locfileid: "103623633"
 * Unity [Arfoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) 이상 버전과 호환 됩니다.
 * (0.1.3에 추가 됨) 빌드 및 배포 된 Windows 독립 실행형 앱에서 [데스크톱 앱 Holographic 원격](holographic-remoting-desktop.md) 을 지원 합니다.
 * (0.1.4에 추가 됨) SpatialGraphNode을 통해 HoloLens2에서 [QR 코드 추적](#qr-codes) 을 지원 합니다.
+* (0.2.0에 추가 됨) Holographic Remoting에서 **앵커** 지원
+* (0.2.0에 추가 됨) **손을 조인트 및 손 모양 추적을** 모두 지원 합니다.
+* (0.2.0에 추가 됨) 평면 검색을 위한 **Ar설계도 Esubsystems** 를 지원 하 고 **ARRaycastManager** 를 사용 하 여 홀로그램을 넣습니다.
 
 ## <a name="holographic-remoting-setup"></a>Holographic 원격 설치
 
@@ -112,9 +115,6 @@ HoloLens 2는 헤드셋 주변 환경의 QR 코드를 감지하여 각 코드의
 
 혼합 현실 OpenXR 플러그 인 **버전 0.1.0** 에는 다음과 같은 문제와 누락 된 기능이 알려져 있습니다. 이 작업을 수행 하 고 있으며 향후 릴리스에서 수정 사항 및 새로운 기능을 출시할 예정입니다.
 
-* **Ar설계도 Esubsystem** 은 아직 지원 되지 않습니다. **ARAnchorManager. AttachAnchor** 와 같은 **ar설계도 emanager**, **ARRaycastManager** 및 관련 API도 HoloLens 2에서 지원 되지 않습니다.
-* **앵커 지 속성** 은 Holographic Remoting에서 아직 지원 되지 않지만 가까운 장래에 제공 될 예정입니다.
-* **수동 메시** 추적 및 **XRMeshSubsystem** 는 아직 지원 되지 않습니다.
 * **Azure 공간 앵커** 지원은 이후 릴리스에서 제공 될 예정입니다.
 * **ARM64** 는 HoloLens 2 앱에 대해 유일 하 게 지원 되는 플랫폼입니다. **ARM** 플랫폼은 향후 릴리스에서 출시 될 예정입니다.
 

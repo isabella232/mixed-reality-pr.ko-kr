@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 보강 현실, 가상 현실, 혼합 현실 헤드셋, 학습, 자습서, 시작
-ms.openlocfilehash: 61474ecf749b16c8c78352d9f28a6482bfa3334c
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 6e300c6117e04e2a49b060bcd7a6d268204f14da
+ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105549923"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105937478"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Unity 용 Mixed Reality OpenXR 플러그 인 사용
 
@@ -19,19 +19,48 @@ Unity 버전 2020.2부터 Microsoft의 Mixed Reality OpenXR 플러그 인 패키
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
-* Unity 2020.2 이상
-* Unity OpenXR plugin 0.1.4 이상
+* Unity 2020.3 LTS 이상
+* Unity OpenXR plugin 1.0.3 이상
 * Visual Studio 2019 이상
 * HoloLens 2 앱 용 Unity에서 **UWP** 플랫폼 지원 설치
 
 > [!NOTE]
 > Windows PC에서 VR 응용 프로그램을 작성 하는 경우 Mixed Reality OpenXR 플러그 인이 반드시 필요한 것은 아닙니다. 그러나 HP 반향 G2 컨트롤러에 대 한 컨트롤러 매핑을 사용자 지정 하거나 HoloLens 2와 VR 헤드셋 모두에서 작동 하는 앱을 빌드하는 경우에는 플러그 인을 설치 하는 것이 좋습니다.
 
-## <a name="installing-openxr-with-the-mixed-reality-feature-tool"></a>혼합 현실 기능 도구를 사용 하 여 OpenXR 설치
+<!-- ## Setting up your project with MRTK
+
+MRTK for Unity provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. MRTK version 2 intends to speed up application development for Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. The project is aimed at reducing barriers to entry, creating mixed reality applications, and contributing back to the community as we all grow.
+
+> [!div class="nextstepaction"]
+> [Set up your project using MRTK](tutorials/mr-learning-base-01.md)
+
+Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for more feature details. -->
+
+## <a name="manual-setup-without-mrtk"></a>MRTK 없이 수동 설치
 
 새 Mixed Reality 기능 도구 응용 프로그램을 사용 하 여 OpenXR 플러그 인을 설치 합니다. [설치 및 사용 지침](welcome-to-mr-feature-tool.md) 을 따르고 Mixed reality Toolkit 범주의 **Mixed Reality OpenXR 플러그 인** 패키지를 선택 합니다.
 
 ![Open xr 플러그 인이 강조 표시 된 혼합 현실 기능 도구 패키지 창](images/feature-tool-openxr.png)
+
+## <a name="setting-your-build-target"></a>빌드 대상 설정
+
+데스크톱 VR를 대상으로 하는 경우 새 Unity 프로젝트에서 기본적으로 선택 된 PC 독립 실행형 플랫폼을 사용 하는 것이 좋습니다.
+
+![PC, Mac & 독립 실행형 플랫폼이 강조 표시 된 unity 편집기에서 열리는 빌드 설정 창의 스크린샷](images/wmr-config-img-3.png)
+
+HoloLens 2를 대상으로 하는 경우 유니버설 Windows 플랫폼로 전환 해야 합니다.
+
+1.  **파일 > 빌드 설정** ...을 선택 합니다.
+2.  플랫폼 목록에서 **유니버설 Windows 플랫폼** 을 선택 하 고 **플랫폼 전환** 을 선택 합니다.
+3.  **아키텍처** 를 **ARM 64** 로 설정 합니다.
+4.  **대상 장치** 를 **HoloLens** 로 설정
+5.  **빌드 유형을** **D3D** 로 설정
+6.  **UWP SDK** 를 **최신 설치** 로 설정
+7.  디버그에 알려진 성능 문제가 있으므로 **빌드 구성을** **릴리스로** 설정 합니다.
+
+![유니버설 Windows 플랫폼 강조 표시 된 unity 편집기에서 열린 빌드 설정 창의 스크린샷](images/wmr-config-img-4.png)
+
+플랫폼을 설정한 후에는 내보낼 때 Unity에서 2D 보기 대신 [몰입 형 보기](../../design/app-views.md) 를 만들도록 해야 합니다.
 
 ## <a name="configuring-xr-plugin-management-for-openxr"></a>OpenXR에 대 한 XR 플러그 인 관리 구성
 
@@ -39,10 +68,16 @@ OpenXR을 Unity에서 런타임으로 설정 하려면 다음을 수행 합니�
 
 1. Unity 편집기에서 **편집 > 프로젝트 설정** 으로 이동 합니다.
 2. 설정 목록에서 **XR 플러그 인 관리** 를 선택 합니다.
-3. **INITIALIZE XR On Startup** and **OpenXR (미리 보기)** 상자를 선택 합니다.
+3. **INITIALIZE XR On Startup** and **OpenXR** 상자를 선택 합니다.
 4. HoloLens 2를 대상으로 하는 경우 UWP 플랫폼에 있는지 확인 하 고 **Microsoft HoloLens 기능 집합** 을 선택 합니다.
 
 ![XR 플러그 인 관리를 강조 표시 한 Unity 편집기에서 열리는 프로젝트 설정 패널의 스크린샷](images/openxr-img-05.png)
+
+## <a name="optimization"></a>Optimization
+
+HoloLens 2 용으로 개발 하는 경우 **> OpenXR> Mixed Reality로 이동 하 여 hololens 2에 권장 되는 프로젝트 설정을 적용** 하 여 더 나은 앱 성능을 얻을 수 있습니다.
+
+![OpenXR가 선택 된 혼합 현실 메뉴 항목 열기의 스크린샷](images/openxr-img-08.png)
 
 > [!IMPORTANT]
 > **OpenXR 플러그 인 (미리 보기)** 옆에 빨간색 경고 아이콘이 표시 되는 경우 계속 하기 전에 아이콘을 클릭 하 고 **모두 수정** 을 선택 합니다. Unity 편집기를 다시 시작 해야 변경 내용이 적용 될 수 있습니다.
@@ -51,17 +86,7 @@ OpenXR을 Unity에서 런타임으로 설정 하려면 다음을 수행 합니�
 
 이제 Unity에서 OpenXR를 사용 하 여 개발을 시작할 준비가 되었습니다.  OpenXR 샘플을 사용 하는 방법을 알아보려면 다음 섹션을 계속 진행 합니다.
 
-## <a name="optimization"></a>Optimization
-
-HoloLens 2 용으로 개발 하는 경우 **> OpenXR> Mixed Reality로 이동 하 여 hololens 2에 권장 되는 프로젝트 설정을 적용** 하 여 더 나은 앱 성능을 얻을 수 있습니다.
-
-![OpenXR가 선택 된 혼합 현실 메뉴 항목 열기의 스크린샷](images/openxr-img-08.png)
-
 ## <a name="try-out-the-unity-sample-scenes"></a>Unity 샘플 장면을 사용해 보세요.
-
-하나 이상의 예제를 활용 하려면 **패키지 관리자** 에서 [arfoundation 4.0 +](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) 를 설치 합니다.
-
-![AR가 강조 표시 된 unity 편집기에서 open Unity 패키지 관리자의 스크린샷](images/openxr-img-09.png)
 
 ### <a name="hololens-2-samples"></a>HoloLens 2 샘플
 
@@ -110,7 +135,7 @@ MRTK-Unity 2.5.3 릴리스부터 혼합 현실 OpenXR 플러그 인을 지원 �
 
 OpenXR는 여전히 실험적 이므로 피드백을 제공 하는 데 도움이 되도록 피드백을 보내 주셔서 감사 합니다. [](https://aka.ms/unityforums) **Microsoft**  +  **OpenXR** 및 **HoloLens 2** 또는 **Windows Mixed Reality** 를 사용 하 여 포럼 게시물에 태그를 지정 하 여 Unity 포럼에서이를 찾을 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [MRTK를 사용하지 않고 프로젝트 구성](configure-unity-project.md)
 * [Unity 권장 설정](recommended-settings-for-unity.md)
