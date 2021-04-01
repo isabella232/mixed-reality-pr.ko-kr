@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 372cb7c9516a994cb7c3da1efb6cade792e862d1
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: dd4eb8400a7aac491cb893d19e18afc6d6401d1b
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590315"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550243"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Photon Unity 네트워킹 설정
 
@@ -68,7 +68,7 @@ Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 
 
 ## <a name="importing-the-tutorial-assets"></a>자습서 자산 가져오기
 
-AzurespatialAnchors SDK V2.7.1을 Unity 프로젝트에 추가합니다. 패키지를 추가하려면 이 [자습서](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)를 따르세요.
+AzurespatialAnchors SDK V2.7.1을 Unity 프로젝트에 추가합니다. 패키지를 추가하려면 이 [자습서](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)를 따르세요.
 
 
 다음 Unity 사용자 지정 패키지를 **나열된 순서대로** 다운로드하여 **가져옵니다**.

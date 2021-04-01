@@ -7,12 +7,12 @@ ms.date: 02/09/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 최신, 도구, 시작, 기본 사항, unity, visual studio, 도구 키트, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 설치, Windows, HoloLens, 에뮬레이터, unreal, openxr
-ms.openlocfilehash: ac8e4dab8b9d9021c834e0a9d673c81ac3b7f1dc
-ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
+ms.openlocfilehash: 28546e751d3d8001eb2fe69a74624215a6619d4c
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104881240"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550043"
 ---
 # <a name="install-the-tools"></a>도구 설치
 
@@ -42,7 +42,6 @@ Unity를 사용하는 경우 [Mixed Reality Toolkit for Unity](https://github.co
 
 이제 Windows 10, Visual Studio 및 Windows 10 SDK를 사용할 준비가 되었으므로 원하는 엔진을 설치하고 설정하겠습니다. 
 
-여전히 엔진을 선택해야 하는 경우 [Mixed Reality 개발 소개](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity#what-technology-path-are-you-interested-in)를 참조하세요. 
+여전히 엔진을 선택해야 하는 경우 [Mixed Reality 개발 소개](./development.md?tabs=unity#what-technology-path-are-you-interested-in)를 참조하세요. 
 
 [!INCLUDE[](includes/tools-overview.md)]
-

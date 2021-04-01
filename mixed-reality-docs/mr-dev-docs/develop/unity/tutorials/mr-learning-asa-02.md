@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: ab216fc89c7161e4b3e7ee6fd9bcf9022b83c7fa
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ca7eef92721afb24ae359ddf00e810ecc63c2eb4
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "103574959"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550403"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Azure Spatial Anchors 시작
 
@@ -52,7 +52,7 @@ Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 
 
 ## <a name="importing-the-tutorial-assets"></a>자습서 자산 가져오기
 
-AzurespatialAnchors SDK V2.7.1을 Unity 프로젝트에 추가합니다. 패키지를 추가하려면 이 [자습서](https://docs.microsoft.com/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)를 따르세요.
+AzurespatialAnchors SDK V2.7.1을 Unity 프로젝트에 추가합니다. 패키지를 추가하려면 이 [자습서](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)를 따르세요.
 
 다음 Unity 사용자 지정 패키지를 **나열된 순서대로** 다운로드하여 **가져옵니다**.
 

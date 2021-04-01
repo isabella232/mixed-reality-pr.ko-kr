@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 음성 명령, 음성 입력
 ms.localizationpriority: high
-ms.openlocfilehash: 65f989f6f587b236d7931c295e9375ad20a53218
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: c87f3bb801b2fc32ed1aa42f2a4754bc83320587
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237223"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550253"
 ---
 # <a name="9-using-speech-commands"></a>9. 음성 명령 사용
 
@@ -144,6 +144,6 @@ SpeechInputHandler 구성 요소에서 작은 **+** 아이콘을 클릭하여 �
 앞서 설명한 Unity 개발 검사점 경험을 사용하는 경우 다음 작업은 Mixed Reality 앱의 핵심 구성 요소를 숙지하는 것입니다.
 
 > [!div class="nextstepaction"]
-> [기본 상호 작용](../mrtk-101.md)
+> [기본 상호 작용](../../../out-of-scope/mrtk-101.md)
 
 언제든지 [Unity 개발 검사점](../unity-development-overview.md#1-getting-started)으로 돌아갈 수 있습니다.

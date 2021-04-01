@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 90c5b2ee3f25c39fc644aee0fbbf49643f7d2a59
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 5b7ad27d41147a57d03f4a1b5a78b92e6e1234d4
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590175"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550213"
 ---
 # <a name="1-introduction-to-the-multi-user-capabilities-tutorials"></a>1. 다중 사용자 기능 자습서 소개
 
@@ -38,7 +38,7 @@ ms.locfileid: "99590175"
 * Windows 10 SDK 10.0.18362.0 이상
 * [개발용으로 구성](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)된 HoloLens 2 디바이스
 * Unity 2019 LTS가 설치되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가된 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
-* 다음 자습서의 [Spatial Anchors 리소스 만들기](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) 섹션을 완료했습니다. [빠른 시작: Azure Spatial Anchors를 사용하는 Unity HoloLens 앱 만들기](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) 자습서)을 완료했습니다.
+* 다음 자습서의 [Spatial Anchors 리소스 만들기](/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) 섹션을 완료했습니다. [빠른 시작: Azure Spatial Anchors를 사용하는 Unity HoloLens 앱 만들기](/azure/spatial-anchors/quickstarts/get-started-unity-hololens) 자습서)을 완료했습니다.
 * [시작 자습서](mr-learning-base-01.md) 시리즈 또는 Unity 및 MRTK를 사용하는 몇 가지 기본 사전 경험을 완료했습니다.
 * Azure Spatial Anchors 계정을 만드는 [Azure Spatial Anchors 자습서](mr-learning-asa-01.md) 시리즈 또는 이전 환경을 완료했습니다.
 * Android 및 HoloLens에 배포하려는 경우
@@ -50,7 +50,7 @@ ms.locfileid: "99590175"
   * Unity 2019 LTS가 설치되고 iOS 빌드 지원 모듈이 추가된 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
 
 > [!CAUTION]
-> 이 자습서 시리즈에 권장되는 Mixed Reality Toolkit 버전은 MRTK 2.5.3입니다.
+> 이 자습서 시리즈에 권장되는 Mixed Reality Toolkit 버전은 MRTK 2.6입니다.
 
 > [!CAUTION]
 > 이 자습서 시리즈에 권장되는 Unity 버전은 Unity 2019 LTS입니다. 이 버전은 위의 링크에 연결된 필수 구성 요소에서 설명한 모든 Unity 버전 요구 사항을 대체합니다.
