@@ -1,19 +1,19 @@
 ---
-title: VR 둘러보기 시작
+title: VR 여행 시작
 description: 모던 VR 장치를 설정 하 고 사용 하 여 새 장치 사용자를 안내 하는 큐 레이트 검사점을 살펴보세요.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR,
-ms.openlocfilehash: 711c1b74b79ba510d29c17de0ec21270946ceb61
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f373e0a55557fe38dfa598912296252293fa6d34
+ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007063"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106223934"
 ---
-# <a name="start-your-vr-journey"></a>VR 둘러보기 시작
+# <a name="start-your-vr-journey"></a>VR 여행 시작
 
 ![VR 오버레이 환경의 스톡 이미지](images/mr-win32-slates-pinspanel.png)
 
@@ -82,6 +82,7 @@ Windows Mixed Reality 및 몰입 개의 VR 헤드셋을 통해 다양 한 기능
 | [SteamVR 사용](using-steamvr-with-windows-mixed-reality.md) | 장치를 연결 하 고 SteamVR 게임을 재생 하 고 Windows 참가자 프로그램에 대해 알아봅니다. |
 | [Microsoft Edge 사용](using-microsoft-edge.md) | 모던 장치에 최신 버전의 Microsoft Edge 설치 |
 | [WebVR 사용](webvr.md) | 브라우저 환경에서 VR 경험을 위한 설치 프로그램 다운로드 |
+| [AltspaceVR 탐색](https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey) | AltspaceVR를 사용 하 여 VR 이벤트의 확장 살펴보기 |
 
 ## <a name="troubleshooting-tips--resources"></a>문제 해결, 팁 & 리소스
 

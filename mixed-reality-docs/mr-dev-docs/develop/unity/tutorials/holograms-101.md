@@ -1,24 +1,24 @@
 ---
-title: HoloLens (첫 번째 gen) 기본 사항 101-장치를 사용 하 여 프로젝트 완료
+title: HoloLens(1세대) 기본 사항 101 - 디바이스를 사용하여 프로젝트 완료
 description: Unity, Visual Studio 및 HoloLens를 사용 하 여이 코딩 연습을 수행 하 여 Windows Mixed Reality의 기본 사항을 알아보세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: 혼합 현실, Windows Mixed Reality, HoloLens, 홀로그램, 아카데미, 자습서, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
-ms.openlocfilehash: 5015dff1487dce9ff761a4ca606657eca6f75406
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 0ebfeb017271b7f98093a8ba6cac59dccae2a440
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730340"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269949"
 ---
 # <a name="hololens-1st-gen-basics-101-complete-project-with-device"></a>HoloLens (첫 번째 gen) 기본 사항 101: 장치를 사용 하 여 프로젝트 완료
 
 <br>
 
->[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](mrlearning-base.md)가 게시되었습니다.
+>[!IMPORTANT]
+>혼합 현실 아카데미 자습서는 HoloLens (첫 번째 gen), Unity 2017 및 혼합 현실 모던 헤드셋을 고려 하 여 설계 되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다. 이러한 자습서는 HoloLens 2에 사용 되는 최신 도구 집합 또는 상호 작용으로 업데이트 **_되지_** 않으며 최신 버전의 Unity와 호환 되지 않을 수 있습니다.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](mrlearning-base.md)가 게시되었습니다.
 
 <br>
 
@@ -68,7 +68,7 @@ ms.locfileid: "104730340"
 * 홀로그램을 만듭니다.
 * 만든 홀로그램을 확인 하세요.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * Unity를 시작합니다.
 * **열기** 를 선택합니다.
@@ -137,7 +137,7 @@ ms.locfileid: "104730340"
 
 * 전 세계 잠긴 커서를 사용 하 여 응시를 시각화 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * Unity 프로젝트로 돌아가서 빌드 설정 창이 열려 있으면 닫습니다.
 * **프로젝트 패널** 에서 **Holograms** 폴더를 선택 합니다.
@@ -213,7 +213,7 @@ public class WorldCursor : MonoBehaviour
 
 * 선택 제스처를 사용 하 여 holograms를 제어 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 먼저 스크립트를 만든 다음 선택 제스처를 검색할 수 있습니다.
 
@@ -325,7 +325,7 @@ public class SphereCommands : MonoBehaviour
 * 백그라운드에서 항상 수신 대기 하는 음성 명령을 추가 합니다.
 * 음성 명령에 반응 하는 홀로그램을 만듭니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * **Scripts** 폴더에서 **SpeechManager** 라는 스크립트를 만듭니다.
 * **SpeechManager** 스크립트를 계층의 **OrigamiCollection** 개체로 끌어 옵니다.
@@ -447,7 +447,7 @@ public class SphereCommands : MonoBehaviour
 
 * 전 세계에서 holograms를 들어봅니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * Unity의 상단 메뉴에서 선택 **> 프로젝트 설정 > 오디오를 편집** 합니다.
 * 오른쪽의 검사기 패널에서 **Spatializer 플러그 인** 설정을 찾아 **MS hrtf Spatializer** 를 선택 합니다.
@@ -557,7 +557,7 @@ public class SphereSounds : MonoBehaviour
 * 실제 세계를 가상 세계에 가져오세요.
 * 가장 중요 한 위치에 holograms을 두십시오.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * Unity의 프로젝트 패널에서 **Holograms** 폴더를 클릭 합니다.
 * **공간 매핑** 자산을 **계층** 의 루트로 끌어 옵니다.
@@ -641,7 +641,7 @@ public class TapToPlaceParent : MonoBehaviour
 
 * Holographic 지 수에 대 한 입구를 표시 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 이제 holographic 지 수를 파악 하는 방법을 보여 드리겠습니다.
 

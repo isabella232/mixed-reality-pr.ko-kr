@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: 이벤트, 일정, 아카데미, 일정, sf, 샌프란시스코, 원자로
-ms.openlocfilehash: f534a170594eb26e0d7f56e8694b9112cb0acbac
-ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
+ms.openlocfilehash: 17db5ecac5953326eeb30c33693be18243579869
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102230884"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106270019"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Microsoft Mixed Reality 이벤트
 
@@ -21,6 +21,7 @@ ms.locfileid: "102230884"
 
 |이벤트|Date|테마|
 |-------------|-------------|-----|
+| 혼합 현실 스피커 시리즈|오전 6 월 6 일 오전 2021 시 @10 PST|[Microsoft PowerApps를 사용 하 여 혼합 현실 앱 만들기](https://www.meetup.com/hololens-mr/events/277257132)|
 | 혼합 현실 스피커 시리즈|2020년 4월 23일|[웹 확대](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Augmenting-WebXR-Standards)|
 | 혼합 현실 스피커 시리즈|6 월 22 일, 2020|[MR을 사용 하 여 교육 환경 만들기](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Educational-Experiences-in-MR)|
 | [Microsoft 가상 현실 이벤트](https://www.meetup.com/hololens-mr/events/272364822/)|2020 년 8 월 20 일|VR 미니 Summit|

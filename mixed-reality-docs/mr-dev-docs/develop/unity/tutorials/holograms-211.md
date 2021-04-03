@@ -1,22 +1,22 @@
 ---
-title: HoloLens (첫 번째 gen) 입력 211-제스처
+title: HoloLens(1세대) 입력 211 - 제스처
 description: Unity, Visual Studio 및 HoloLens를 사용 하 여이 코딩 연습을 수행 하 여 제스처 개념에 대 한 세부 정보를 알아보세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 제스처, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
-ms.openlocfilehash: fe5d3d736c3ad460feeb7aaf66597344618bc1cb
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 1431c9b53657e2cec1bd6ade1a3629e628e15917
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730460"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269989"
 ---
 # <a name="hololens-1st-gen-input-211-gesture"></a>HoloLens (첫 번째 gen) 입력 211: 제스처
 
->[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](./mr-learning-base-01.md)가 게시되었습니다.
+>[!IMPORTANT]
+>혼합 현실 아카데미 자습서는 HoloLens (첫 번째 gen), Unity 2017 및 혼합 현실 모던 헤드셋을 고려 하 여 설계 되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다. 이러한 자습서는 HoloLens 2에 사용 되는 최신 도구 집합 또는 상호 작용으로 업데이트 **_되지_** 않으며 최신 버전의 Unity와 호환 되지 않을 수 있습니다.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](mrlearning-base.md)가 게시되었습니다.
 
 [제스처](../../../design/gaze-and-commit.md#composite-gestures) 사용자 의도를 작업으로 설정 합니다. 제스처를 사용하면 사용자가 홀로그램과 상호 작용할 수 있습니다. 이 과정에서는 사용자의 손을 추적 하 고, 사용자 입력에 응답 하 고, 직접 상태 및 위치에 따라 사용자에 게 피드백을 제공 하는 방법을 알아봅니다.
 
@@ -68,7 +68,7 @@ ms.locfileid: "104730460"
 
 ## <a name="chapter-0---unity-setup"></a>0 장-Unity 설치
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 1. Unity를 시작합니다.
 2. **열기** 를 선택합니다.
@@ -124,7 +124,7 @@ HoloLens에 배포 하는 경우:
 >[!NOTE]
 >HoloLens 2에서 손이 표시 될 때마다 손 모양 (손가락을 가리키는 경우가 아님)이 발생 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * **계층** 패널에서 **inputmanager** 개체를 확장 합니다.
 * **GesturesInput** 개체를 찾고 선택 합니다.
@@ -170,7 +170,7 @@ HoloLens에 배포 하는 경우:
 
 * 탐색 제스처 이벤트를 사용 하 여 astronaut를 회전 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 앱에서 탐색 제스처를 사용 하려면 탐색 제스처가 발생할 때 개체를 회전 하도록 GestureAction를 편집 **합니다** . 또한 탐색을 사용할 수 있을 때 표시할 피드백을 커서에 추가 합니다.
 
@@ -314,7 +314,7 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 * 수동 **가이드 점수** 를 사용 하 여 수동 추적이 손실 되는 경우를 예측할 수 있습니다.
 * **커서에 대 한 피드백** 을 제공 하 여 사용자가 카메라의 보기 가장자리에 가까이 있는 경우를 표시 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 1. **계층** 패널에서 **CursorWithFeedback** 개체를 선택 합니다.
 2. **검사기** 패널에서 **구성 요소 추가** 단추를 클릭 합니다.
@@ -339,7 +339,7 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 * 조작 이벤트를 사용 하 여 astronaut를 손으로 이동 합니다.
 * 조작을 사용할 수 있는 경우 사용자에 게 알릴 수 있도록 커서에 대 한 피드백을 제공 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 GestureManager 및 AstronautManager를 사용 하면 다음을 수행할 수 있습니다.
 
@@ -506,7 +506,7 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 * Astronaut 모델을 사용자가 상호 작용할 수 있는 여러 개의 작은 조각으로 확장 합니다.
 * 탐색 및 조작 제스처를 사용 하 여 각 부분을 개별적으로 이동 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 이 섹션에서는 다음 작업을 수행 합니다.
 

@@ -1,22 +1,22 @@
 ---
-title: HoloLens (첫 번째 gen) 공간 220-공간 사운드
+title: HoloLens(1세대) 공간 220 - 공간 사운드
 description: Unity, Visual Studio 및 HoloLens를 사용 하 여이 코딩 연습을 수행 하 여 공간 소리 개념에 대 한 세부 정보를 알아보세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 공간 사운드, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
-ms.openlocfilehash: aea093aa8f5e6c983cd66acf8cec89d8e7ecf52d
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 789f4da924c00554042ad991cc5610d3e816f12d
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730310"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269999"
 ---
 # <a name="hololens-1st-gen-spatial-220-spatial-sound"></a>HoloLens (첫 번째 gen) 공간 220: 공간 사운드
 
->[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](./mr-learning-base-01.md)가 게시되었습니다.
+>[!IMPORTANT]
+>혼합 현실 아카데미 자습서는 HoloLens (첫 번째 gen), Unity 2017 및 혼합 현실 모던 헤드셋을 고려 하 여 설계 되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다. 이러한 자습서는 HoloLens 2에 사용 되는 최신 도구 집합 또는 상호 작용으로 업데이트 **_되지_** 않으며 최신 버전의 Unity와 호환 되지 않을 수 있습니다.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](mrlearning-base.md)가 게시되었습니다.
 
 [공간 사운드](../../../design/spatial-sound.md) 를 holograms로 breathes 세계에 제공 합니다. Holograms은 가볍고 소리로 구성 되며 Holograms의 시야가 손실 되는 경우 공간 소리를 통해 찾을 수 있습니다. 공간 사운드는 라디오 공간에 배치 되는 일반적인 사운드와는 달리, 라디오 공간에 있습니다. 공간 사운드를 사용 하면 사용자, 사용자 옆 또는 머리에 있는 것 처럼 holograms 소리를 만들 수 있습니다. 이 과정에서는 다음을 수행 합니다.
 
@@ -67,7 +67,7 @@ ms.locfileid: "104730310"
 * Microsoft 공간 소리를 사용 하도록 Unity의 소리 구성을 변경 합니다.
 * Unity에서 개체에 3D 소리를 추가 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 * Unity를 시작합니다.
 * **열기** 를 선택합니다.
@@ -134,7 +134,7 @@ HoloLens에 배포 하는 경우:
 
 적절 한 소리 위치는 홀로그램에 따라 달라 집니다. 예를 들어, 홀로그램이 사람이 라면 음은 피트가 아니라 입 근처에 위치 해야 합니다.
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>지침
 
 다음 지침에서는 spatialized 소리를 홀로그램에 연결 합니다.
 
@@ -159,7 +159,7 @@ Doppler level을 0으로 설정 하면 이동 (홀로그램 또는 사용자 중
 
 배운 기대에 대 한 한 가지 예는 일반 사람이 일반적으로 사람을 나타내는 것입니다. 사용자가 소리를 듣게 되 면 초기 반응을 조회 하는 것입니다. 사용자를 아래에 배치 하면 올바른 소리 방향을 향하도록 할 수 있지만 조회 해야 하는 기대에 따라 홀로그램을 찾을 수는 없습니다.
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>지침
 
 다음 지침에 따라 P0LY를 사용 하 여 홀로그램을 찾을 수 있습니다.
 
@@ -178,7 +178,7 @@ Doppler level을 0으로 설정 하면 이동 (홀로그램 또는 사용자 중
 * 사용자가 과도 하 게 소리를 이동 하지 않도록 합니다.
 * 미세한 소리는 최적으로 작동 합니다. 환경을 과도 하 게 숨기지 마십시오.
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>지침
 
 * **계층** 패널에서 **HologramCollection** 를 확장 합니다.
 * **EnergyHub** 를 확장 하 고 **Base** 를 선택 합니다.
@@ -228,7 +228,7 @@ Doppler level을 0으로 설정 하면 이동 (홀로그램 또는 사용자 중
 
 예를 들어 테이블에서 컵을 설정 하는 것은 금속을 제거 하는 것 보다 더 조용한 소리를 두어야 합니다.
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>지침
 
 * **계층** 패널에서 **HologramCollection** 를 확장 합니다.
 * **EnergyHub** 를 확장 하 고 **기본** 을 선택 합니다.
@@ -251,7 +251,7 @@ Doppler level을 0으로 설정 하면 이동 (홀로그램 또는 사용자 중
 
 일반적인 예로는 콘서트 홀이 있습니다. 수신기가 홀 외부에 있을 때 도어가 닫혀 있으면 음악은 muffled. 일반적으로 볼륨을 축소 하기도 합니다. 도어가 열리면 실제 볼륨에서 소리의 전체 스펙트럼을 듣게 됩니다. 일반적으로 빈도가 낮은 소리는 낮은 주파수 보다 더 많이 흡수 됩니다.
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>지침
 
 * **계층** 패널에서 **HologramCollection** 를 확장 하 고 **P0LY** 를 선택 합니다.
 * **검사기** 패널에서 **구성 요소 추가** 를 클릭 하 고 **오디오 송신기** 를 추가 합니다.
@@ -435,7 +435,7 @@ Unity에서는 파일의 가져오기 설정에서 스트리밍을 위해 오디
 * 숨겨진 세계에 뷰를 만들면 시각적으로 매력적인 것입니다.
 * 홀로그램 또는 사용자가 숨겨진 세계 가까이 있을 때 오디오 효과를 추가 하 여 현실감을 향상 시킵니다.
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>지침
 
 * **계층** 패널에서 **HologramCollection** 를 확장 하 고 지 각 **를 선택 합니다**.
 * 지 각 **를 확장 하** 고 **VoiceSource** 를 선택 합니다.

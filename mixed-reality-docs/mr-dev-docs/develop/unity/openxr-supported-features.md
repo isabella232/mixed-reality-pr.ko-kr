@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 보강 현실, 가상 현실, 혼합 현실 헤드셋, 학습, 자습서, 시작
-ms.openlocfilehash: 1fbc03fe446d9e9619348618c6d0b9aab828fe1a
-ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
+ms.openlocfilehash: d45cc9ab0c0c922c1946f4c188202a99f049f4fc
+ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105937429"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106088492"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Unity의 혼합 현실 OpenXR 지원 되는 기능
 
@@ -38,6 +38,7 @@ ms.locfileid: "105937429"
 * (0.2.0에 추가 됨) Holographic Remoting에서 **앵커** 지원
 * (0.2.0에 추가 됨) **손을 조인트 및 손 모양 추적을** 모두 지원 합니다.
 * (0.2.0에 추가 됨) 평면 검색을 위한 **Ar설계도 Esubsystems** 를 지원 하 고 **ARRaycastManager** 를 사용 하 여 홀로그램을 넣습니다.
+* (0.9.0)는 공간 매핑에 대 한 **XRMeshSubsystem** 및 **ARMeshManager** 를 지원 합니다.
 
 ## <a name="holographic-remoting-setup"></a>Holographic 원격 설치
 
@@ -113,7 +114,7 @@ HoloLens 2는 헤드셋 주변 환경의 QR 코드를 감지하여 각 코드의
 
 ## <a name="whats-coming-soon"></a>출시 예정
 
-혼합 현실 OpenXR 플러그 인 **버전 0.1.0** 에는 다음과 같은 문제와 누락 된 기능이 알려져 있습니다. 이 작업을 수행 하 고 있으며 향후 릴리스에서 수정 사항 및 새로운 기능을 출시할 예정입니다.
+혼합 현실 OpenXR 플러그 인 **버전 0.9.0** 에는 다음과 같은 문제와 누락 된 기능이 알려져 있습니다. 이 작업을 수행 하 고 있으며 향후 릴리스에서 수정 사항 및 새로운 기능을 출시할 예정입니다.
 
 * **Azure 공간 앵커** 지원은 이후 릴리스에서 제공 될 예정입니다.
 * **ARM64** 는 HoloLens 2 앱에 대해 유일 하 게 지원 되는 플랫폼입니다. **ARM** 플랫폼은 향후 릴리스에서 출시 될 예정입니다.

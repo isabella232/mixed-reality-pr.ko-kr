@@ -1,22 +1,22 @@
 ---
-title: HoloLens (첫 번째 gen) 공간 230-공간 매핑
+title: HoloLens(1세대) 공간 230 - 공간 매핑
 description: Unity, Visual Studio 및 HoloLens를 사용 하 여이 코딩 연습을 수행 하 여 공간 매핑 개념에 대 한 자세한 내용을 알아보세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 공간 매핑, 표면 재구성, 메시, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
-ms.openlocfilehash: 933b5d331e814cdb2ced2689e06e0c8508f2d68a
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 24814925bfc154989822e326d2f088fe459c7aa0
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730140"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269907"
 ---
 # <a name="hololens-1st-gen-spatial-230-spatial-mapping"></a>HoloLens (첫 번째 gen) 공간 230: 공간 매핑
 
->[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](./mr-learning-base-01.md)가 게시되었습니다.
+>[!IMPORTANT]
+>혼합 현실 아카데미 자습서는 HoloLens (첫 번째 gen), Unity 2017 및 혼합 현실 모던 헤드셋을 고려 하 여 설계 되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다. 이러한 자습서는 HoloLens 2에 사용 되는 최신 도구 집합 또는 상호 작용으로 업데이트 **_되지_** 않으며 최신 버전의 Unity와 호환 되지 않을 수 있습니다.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](mrlearning-base.md)가 게시되었습니다.
 
 [공간 매핑은](../../../design/spatial-mapping.md) 환경에 대 한 holograms을 교육 하 여 실제 세계와 가상 세계를 함께 결합 합니다. MR 공간 230 (Project Planetarium)에서 다음을 수행 하는 방법을 알아봅니다.
 

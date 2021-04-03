@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 보강 현실, 가상 현실, 혼합 현실 헤드셋, 학습, 자습서, 시작
-ms.openlocfilehash: 6e300c6117e04e2a49b060bcd7a6d268204f14da
-ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
+ms.openlocfilehash: ebe7d32b236e28259b2ed9a7915bd337f84f8762
+ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105937478"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106088516"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Unity 용 Mixed Reality OpenXR 플러그 인 사용
 
@@ -27,14 +27,14 @@ Unity 버전 2020.2부터 Microsoft의 Mixed Reality OpenXR 플러그 인 패키
 > [!NOTE]
 > Windows PC에서 VR 응용 프로그램을 작성 하는 경우 Mixed Reality OpenXR 플러그 인이 반드시 필요한 것은 아닙니다. 그러나 HP 반향 G2 컨트롤러에 대 한 컨트롤러 매핑을 사용자 지정 하거나 HoloLens 2와 VR 헤드셋 모두에서 작동 하는 앱을 빌드하는 경우에는 플러그 인을 설치 하는 것이 좋습니다.
 
-<!-- ## Setting up your project with MRTK
+## <a name="setting-up-your-project-with-mrtk"></a>MRTK를 사용 하 여 프로젝트 설정
 
-MRTK for Unity provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. MRTK version 2 intends to speed up application development for Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. The project is aimed at reducing barriers to entry, creating mixed reality applications, and contributing back to the community as we all grow.
+Unity용 MRTK는 플랫폼 간 입력 시스템, 기본 구성 요소 및 공간 상호 작용을 위한 공통 빌딩 블록을 제공합니다. MRTK 버전 2는 Microsoft HoloLens, Windows Mixed Reality 몰입형(VR) 헤드셋 및 OpenVR 플랫폼용 애플리케이션 개발을 가속화하기 위한 것입니다. 이 프로젝트는 진입 장벽을 낮추고 혼합 현실 애플리케이션을 만들며 커뮤니티에 다시 기여하는 것을 목표로 합니다.
 
 > [!div class="nextstepaction"]
-> [Set up your project using MRTK](tutorials/mr-learning-base-01.md)
+> [MRTK를 사용 하 여 프로젝트 설정](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=openxr)
 
-Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for more feature details. -->
+추가 기능에 대 한 자세한 내용은 [Mrtk의 설명서](/windows/mixed-reality/mrtk-unity) 를 참조 하세요.
 
 ## <a name="manual-setup-without-mrtk"></a>MRTK 없이 수동 설치
 
@@ -80,7 +80,7 @@ HoloLens 2 용으로 개발 하는 경우 **> OpenXR> Mixed Reality로 이동 �
 ![OpenXR가 선택 된 혼합 현실 메뉴 항목 열기의 스크린샷](images/openxr-img-08.png)
 
 > [!IMPORTANT]
-> **OpenXR 플러그 인 (미리 보기)** 옆에 빨간색 경고 아이콘이 표시 되는 경우 계속 하기 전에 아이콘을 클릭 하 고 **모두 수정** 을 선택 합니다. Unity 편집기를 다시 시작 해야 변경 내용이 적용 될 수 있습니다.
+> **OpenXR 플러그 인** 옆에 빨간색 경고 아이콘이 표시 되 면이 아이콘을 클릭 하 고 계속 하기 전에 **모두 수정** 을 선택 합니다. Unity 편집기를 다시 시작 해야 변경 내용이 적용 될 수 있습니다.
 
 ![OpenXR 프로젝트 유효성 검사 창의 스크린샷](images/openxr-img-06.png)
 

@@ -1,22 +1,22 @@
 ---
-title: HoloLens (첫 번째 gen) 입력 210-응시
+title: HoloLens(1세대) 입력 210 - 응시
 description: Unity, Visual Studio 및 HoloLens를 사용 하 여이 코딩 연습을 수행 하 여 응시 개념에 대 한 자세한 내용을 알아보세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 응시, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
-ms.openlocfilehash: 99c0d2ae00416f5d26e99e6d7d00c73ea07e5fb3
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 7598e6f6822c86fa34ac526fbe7468d535f7fba7
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730330"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269969"
 ---
 # <a name="hololens-1st-gen-input-210-gaze"></a>HoloLens (첫 번째 gen) 입력 210: 응시
 
->[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](./mr-learning-base-01.md)가 게시되었습니다.
+>[!IMPORTANT]
+>혼합 현실 아카데미 자습서는 HoloLens (첫 번째 gen), Unity 2017 및 혼합 현실 모던 헤드셋을 고려 하 여 설계 되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다. 이러한 자습서는 HoloLens 2에 사용 되는 최신 도구 집합 또는 상호 작용으로 업데이트 **_되지_** 않으며 최신 버전의 Unity와 호환 되지 않을 수 있습니다.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](mrlearning-base.md)가 게시되었습니다.
 
 [응시](../../../design/gaze-and-commit.md) 는 첫 번째 입력 형태 이며 사용자의 의도 및 인식을 표시 합니다. MR 입력 210 (즉, 프로젝트 탐색기)은 Windows Mixed Reality의 응시 관련 개념을 자세히 설명 합니다. 앱이 사용자의 응시에 대해 알고 있는 기능을 최대한 활용 하 여 커서 및 holograms에 상황별 인식을 추가할 예정입니다.
 
@@ -74,7 +74,7 @@ ms.locfileid: "104730330"
 * 자산을 가져오고 장면을 설정합니다.
 * HoloLens에서 astronaut를 확인 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 1. Unity를 시작합니다.
 2. **새 프로젝트** 를 선택합니다.
@@ -184,7 +184,7 @@ HoloLens에 배포 하는 경우:
 * 커서를 너무 작거나 크게 표시 하지 않습니다.
 * 방해 하지 않는지 콘텐츠를 방지 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 1. **HoloToolkit\Input\Prefabs** 폴더에서 **inputmanager** 자산을 찾습니다.
 2. **Inputmanager** 를 **계층 구조** 에 끌어다 놓습니다.
@@ -203,7 +203,7 @@ HoloLens에 배포 하는 경우:
 4. **디버그를 클릭 하 > 디버깅 하지 않고 시작** 을 클릭 하거나 **ctrl + F5** 를 누릅니다.
 5. 커서를 그리는 방법 및 홀로그램을 터치 하는 경우 모양이 어떻게 변경 되는지 관찰 합니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 1. **계층** 패널에서 **AstroMan** -> **GEO_G** -> **Back_Center** 개체를 확장 합니다.
 2. **Interactible** 를 두 번 클릭 하 여 Visual Studio에서 엽니다.
@@ -248,7 +248,7 @@ void IFocusable.OnFocusExit()
 * Holograms을 더 쉽게 대상으로 지정 합니다.
 * 안정화 자연 헤드 이동.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 1. **계층** 패널에서 **inputmanager** 개체를 선택 합니다.
 2. **검사기** 패널에서 **응시 안정기** 스크립트를 찾습니다. 원하는 경우 클릭 하 여 Visual Studio에서 엽니다.
@@ -263,7 +263,7 @@ void IFocusable.OnFocusExit()
 
 * 커서에 방향 표시기를 추가 하 여 holograms를 찾을 수 있습니다.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>지침
 
 **DirectionIndicator** 파일을 사용할 예정입니다.
 
