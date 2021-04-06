@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, solvers
 ms.localizationpriority: high
-ms.openlocfilehash: 11d25a13e679308ef7f0f4302dd7df29e413a435
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 5e231fe91c96dc8b6a7c07c6fdbc2c07286d6ab2
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237066"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982986"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Solver를 사용하여 동적 콘텐츠 만들기
 
@@ -30,7 +30,7 @@ ms.locfileid: "102237066"
 
 ![Solvers 폴더가 선택된 Unity 프로젝트 창](images/mr-learning-base/base-05-section1-step1-1.png)
 
-이 자습서에서는 Directional Indicator(방향 표시) Solver 및 Tap To Place(탭하여 위치 지정) Solver 구현을 검토합니다. MRTK에서 사용할 수 있는 Solver의 전체 범위를 알아보려면 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs)에서 [Solvers](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md) 가이드를 참조하세요.
+이 자습서에서는 Directional Indicator(방향 표시) Solver 및 Tap To Place(탭하여 위치 지정) Solver 구현을 검토합니다. MRTK에서 사용할 수 있는 Solver의 전체 범위를 알아보려면 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity)에서 [Solvers](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver.md) 가이드를 참조하세요.
 
 > [!NOTE]
 > Directional Indicator Solver는 실험적인 기능 때문에 위에 언급된 Solver 폴더에 없지만 Packages > Mixed Reality Toolkit Foundation > SDK > Experimental > Features > Utilities 폴더에 있습니다.
@@ -72,7 +72,7 @@ DirectionalIndicator 및 SolverHandler 구성 요소를 다음과 같이 구성�
 > Scene(장면) 창에 카메라 광선이 보이지 않으면 위 이미지와 같이 Gizmo 메뉴가 활성화되어 있는지 확인합니다.
 
 > [!TIP]
-> 편집기 내 입력 시뮬레이션을 사용하는 방법은 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs)의 [편집기 내 손 입력 시뮬레이션을 사용하여 장면 테스트](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene) 가이드를 참조하세요.
+> 편집기 내 입력 시뮬레이션을 사용하는 방법은 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity)의 [편집기 내 손 입력 시뮬레이션을 사용하여 장면 테스트](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene) 가이드를 참조하세요.
 
 > [!TIP]
 > 컴퓨터에 마이크가 있으면 음성 명령 "toggle diagnostics"를 사용하여 게임 창에 나타나는 Diagnostics(진단) 패널의 활성 상태를 쉽게 전환할 수 있습니다. 또는, MRTK Configuration Profile(MRTK 구성 프로필) > Diagnostics(진단) > Enable Diagnostics System(진단 시스템 활성화)에서 사용하지 않도록 설정할 수 있습니다. 하지만 일반적으로 개발 중에 Diagnostics System(진단 시스템)을 활성 상태로 유지하는 것이 좋습니다.
@@ -140,7 +140,7 @@ Hierarchy(계층 구조) 창에서 임시 큐브를 선택한 상태로 Inspecto
 
 이 자습서에서는 MRTK의 Directional Indicator(방향 표시) Solver를 사용하여 UI 요소가 직관적으로 사용자를 개체로 안내하는 방법을 알아보았습니다. Tap To Place(탭하여 위치 지정) Solver를 사용하여 개체의 위치를 쉽게 조정하는 방법도 알아보았습니다.
 
-MRTK에 포함된 이러한 Solver와 다른 Solver에 대해 자세히 알아보려면 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/)의 [Solvers](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md) 가이드를 참조하세요.
+MRTK에 포함된 이러한 Solver와 다른 Solver에 대해 자세히 알아보려면 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)의 [Solvers](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver.md) 가이드를 참조하세요.
 
 > [!div class="nextstepaction"]
 >[다음 자습서: 6. 사용자 인터페이스 만들기](mr-learning-base-06.md)

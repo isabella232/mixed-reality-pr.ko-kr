@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: 8ca6c6b4eea1d49f98e7a04b091a4a08cb859ff3
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 53cb83725bcc9f8f810ba40df5d08e81ec545f19
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98582995"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105582520"
 ---
 # <a name="available-in-mrtk"></a>[MRTK에서 사용 가능](#tab/mrtk)
 
 |  기능  |  기능  |
 | --- | --- |
-| [기본 상호 작용](../unity/mrtk-101.md) | 몰입형 공간에서 개체와 상호 작용하는 기본 사항에 대해 알아봅니다. |
+| [기본 상호 작용](../../out-of-scope/mrtk-101.md) | 몰입형 공간에서 개체와 상호 작용하는 기본 사항에 대해 알아봅니다. |
 | [카메라](../unity/camera-in-unity.md) | Mixed Reality 앱에서 시각적 품질 및 홀로그램 안정성을 완벽하게 최적화 |
 | [응시](../unity/gaze-in-unity.md) | 사용자가 홀로그램을 확인하여 대상으로 할 수 있습니다. |
 | [모션 컨트롤러](../unity/motion-controllers-in-unity.md) | 혼합 현실 앱에 공간 작업 추가 |

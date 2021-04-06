@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 혼합 현실, 개발, 시작, 새 프로젝트, 포팅, 기능, 카메라, 시뮬레이션, 에뮬레이션, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 공간 매핑, 음성 입력, 위치를 찾을 수 있는 카메라, 에뮬레이터, Azure, 자습서
-ms.openlocfilehash: 4979c6f0f88544b4f00cd0859e5c807ddef137e5
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 52c6fb57473255e440d9c2f795cc228cca44ea32
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730490"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982786"
 ---
 # <a name="unity-development-for-hololens"></a>HoloLens용 Unity 개발
 
@@ -102,9 +102,9 @@ Unity에서 개발하는 가장 쉬운 방법은 Mixed Reality Toolkit를 사용
 
 |  항목  |  Description  |
 | --- | --- |
-| [MRTK 아키텍처 개요](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Architecture/Overview.html) | MRTK SDK가 프로젝트에서 작동하는 방법을 더 자세히 이해합니다. |
-| [설정 및 성능](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html) | 앱을 프로파일링하고, Unity 설정을 업데이트하고, 최상의 홀로그램 안정화 성능을 제공합니다. |
-| [MRTK + XR 시작](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/getting-started-with-mrtk-and-xrsdk.md) | Unity에서 제공하는 대체 XR 파이프라인으로 전송합니다. |
+| [MRTK 아키텍처 개요](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/architecture/overview) | MRTK SDK가 프로젝트에서 작동하는 방법을 더 자세히 이해합니다. |
+| [설정 및 성능](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | 앱을 프로파일링하고, Unity 설정을 업데이트하고, 최상의 홀로그램 안정화 성능을 제공합니다. |
+| [MRTK + XR 시작](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | Unity에서 제공하는 대체 XR 파이프라인으로 전송합니다. |
 
 ### <a name="unity-resources"></a>Unity 리소스
 

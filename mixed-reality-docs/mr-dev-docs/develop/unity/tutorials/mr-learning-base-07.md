@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 개체 상호 작용, 경계 컨트롤
 ms.localizationpriority: high
-ms.openlocfilehash: 1ab7b3a334639be564717d77d3bbc478a25e8326
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: c2cca67afe19665ea899eb56140011bd9c756a7f
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237244"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982866"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. 3D 개체와 상호 작용
 
@@ -113,7 +113,7 @@ Hierarchy(계층 구조) 창에서 RoverExplorer > Buttons > **Reset**(초기화
 
 ![Reset 단추가 눌러져 있는 Unity 재생 모드 분할 보기](images/mr-learning-base/base-07-section1-step1-7.png)
 
-Object Manipulator 구성 요소 및 관련 속성에 대해 자세히 알아보려면 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/)에서 [Object Manipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) 가이드를 참조하세요.
+Object Manipulator 구성 요소 및 관련 속성에 대해 자세히 알아보려면 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)에서 [Object Manipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) 가이드를 참조하세요.
 
 ## <a name="adding-bounds-control"></a>경계 컨트롤 추가
 
@@ -168,7 +168,7 @@ Hierarchy 창에서 Menu > **ButtonCollection** 개체를 펼쳐서 단추 4개�
 
 ![경계 컨트롤이 조작되고 있는 Unity 재생 모드 분할 보기](images/mr-learning-base/base-07-section2-step1-4.png)
 
-경계 컨트롤 구성 요소 및 관련 속성에 대한 자세한 정보를 보려면 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/)에서 [경계 컨트롤](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) 가이드를 참조하세요.
+경계 컨트롤 구성 요소 및 관련 속성에 대한 자세한 정보를 보려면 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)에서 [경계 컨트롤](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) 가이드를 참조하세요.
 
 ## <a name="congratulations"></a>축하합니다.
 

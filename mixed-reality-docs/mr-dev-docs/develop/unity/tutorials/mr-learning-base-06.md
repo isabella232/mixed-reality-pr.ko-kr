@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 프리팹, 홀로그램, 도구 설명
 ms.localizationpriority: high
-ms.openlocfilehash: 8e7ab83fa195fc48d8fe1c1daf8207c49e3ec71e
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4400ce669863b719b409e11076ceb5689e21893e
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101760029"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982976"
 ---
 # <a name="6-creating-user-interfaces"></a>6. 사용자 인터페이스 만들기
 
@@ -67,7 +67,7 @@ ms.locfileid: "101760029"
 ![Hints 단추 개체 OnClick 이벤트가 구성된 Unity](images/mr-learning-base/base-06-section1-step1-5.png)
 
 > [!TIP]
-> Interactable 구성 요소는 모든 객체가 입력에 쉽게 상호 작용하고 응답할 수 있도록 하는 일체형 컨테이너입니다. Interactable은 터치, 손 광선, 말하기 등을 포함한 모든 유형의 입력에 대한 캐치 올(catch-all) 역할을 하며 이러한 상호 작용을 이벤트 및 시각적 테마 응답으로 전달합니다. 다양한 입력 유형에 맞게 구성하고 시각적 테마를 사용자 지정하는 방법에 대한 자세한 내용은 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/)의 [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) 가이드를 참조할 수 있습니다.
+> Interactable 구성 요소는 모든 객체가 입력에 쉽게 상호 작용하고 응답할 수 있도록 하는 일체형 컨테이너입니다. Interactable은 터치, 손 광선, 말하기 등을 포함한 모든 유형의 입력에 대한 캐치 올(catch-all) 역할을 하며 이러한 상호 작용을 이벤트 및 시각적 테마 응답으로 전달합니다. 다양한 입력 유형에 맞게 구성하고 시각적 테마를 사용자 지정하는 방법에 대한 자세한 내용은 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)의 [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) 가이드를 참조할 수 있습니다.
 
 [계층 구조] 창에서 **Explode** 단추 개체를 선택한 다음, [검사기] 창에서 **Interactable.OnClick ()** 이벤트를 다음과 같이 구성합니다.
 

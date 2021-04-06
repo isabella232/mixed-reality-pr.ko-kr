@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: azure, 혼합 현실, unity, 자습서, hololens, hololens 2, azure blob 스토리지, azure table 스토리지, azure spatial anchors, azure bot framework, azure cloud services, azure custom vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: fbb48cfd3c2c9d5c48099f3dfe8ddca8c6136c87
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: f82253ce4894038a8d8e34b06f5d699289fef691
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550393"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982916"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. HoloLens 2용 Azure Cloud Services
 
@@ -112,7 +112,7 @@ AzurespatialAnchors SDK V2.7.1을 Unity 프로젝트에 추가합니다. 패키�
 * [MRTK.Tutorials.AzureCloudServices.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.unitypackage)
 
 > [!TIP]
-> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [자습서 자산 가져오기](mr-learning-base-04.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.
+> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [자습서 자산 가져오기](mr-learning-base-02.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.
 
 자습서 자산을 가져오면 [프로젝트] 창이 다음과 같이 표시됩니다.
 

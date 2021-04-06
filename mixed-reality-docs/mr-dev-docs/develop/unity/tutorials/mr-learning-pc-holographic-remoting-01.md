@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, PC 홀로그램 원격, 도구 설명, 시선 추적
 ms.localizationpriority: high
-ms.openlocfilehash: 5a779ca03921701b2111e4ed5525b6f7bc250070
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 3c564c28485ca7e0595b9fd438af961dc5bc5986
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590385"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982966"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. PC 홀로그램 원격 시작
 
@@ -67,7 +67,7 @@ HoloLens 2 자습서를 시작합니다. 2부로 구성된 이 자습서 시리�
 [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage)를 다운로드하고 **가져옵니다**.
 
 >[!TIP]
-> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [자습서 자산 가져오기](mr-learning-base-04.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.
+> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [자습서 자산 가져오기](mr-learning-base-02.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.
 
 자습서 자산을 가져오면 [프로젝트] 창이 다음과 비슷하게 표시됩니다.
 

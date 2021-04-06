@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: ca7eef92721afb24ae359ddf00e810ecc63c2eb4
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 5f16d3c12e6dbb977ecedc1598a28073cfb39222
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550403"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105983146"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Azure Spatial Anchors 시작
 
@@ -56,7 +56,6 @@ AzurespatialAnchors SDK V2.7.1을 Unity 프로젝트에 추가합니다. 패키�
 
 다음 Unity 사용자 지정 패키지를 **나열된 순서대로** 다운로드하여 **가져옵니다**.
 
-
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.5.3/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage)
 
@@ -68,7 +67,7 @@ AzurespatialAnchors SDK V2.7.1을 Unity 프로젝트에 추가합니다. 패키�
 > 더 이상 사용되지 않는 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)'과 관련된 CS0618 경고가 표시되는 경우 이러한 경고를 무시할 수 있습니다.
 
 > [!TIP]
-> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [자습서 자산 가져오기](mr-learning-base-04.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.
+> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [자습서 자산 가져오기](mr-learning-base-02.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.
 
 ## <a name="preparing-the-scene"></a>장면 준비
 
