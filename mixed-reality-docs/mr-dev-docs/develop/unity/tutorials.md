@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: 자습서
 description: HoloLens 및 Azure 서비스에 대해 제공하는 혼합 현실 개발 자습서를 최신 상태로 유지합니다.
 author: keveleigh
@@ -8,12 +7,12 @@ ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, unity, unreal, HoloLens, Azure spatial anchors, Azure Speech Services
-ms.openlocfilehash: 76c8cdcddd9617df8e823b4967593c37fa1e6bb9
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: c64ceb918cfec31b7ac934d9a1f9c719a4dde244
+ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98006523"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106223944"
 ---
 # <a name="tutorials"></a>자습서
 
@@ -25,12 +24,13 @@ ms.locfileid: "98006523"
 
 HoloLens 2 자습서는 개발자가 혼합 현실 애플리케이션을 개발하기 위한 기술과 모범 사례를 교육하기 위해 설계되었습니다. Unity 자습서는 [Mixed Reality Toolkit 2.0(MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity)를 기반으로 하며, Unreal 자습서는 [UX Tools for Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal)을 기반으로 합니다.
 
-* 시작 자습서
-    * Unity(총 9부) - [1 소개](tutorials/mr-learning-base-01.md)
-    * Unreal(총 6부) - [1 시작](../unreal/tutorials/unreal-uxt-ch1.md)
-* Azure Spatial Anchors 자습서(총 5부) - [1 소개](tutorials/mr-learning-asa-01.md)
-* 다중 사용자 기능 자습서(총 5부) - [1 소개](tutorials/mr-learning-sharing-01.md)
-* Azure Speech Services 자습서(총 4부) - [1 음성 인식 및 전사 통합 및 사용](tutorials/mrlearning-speechSDK-ch1.md)
+* 초급 MRTK 자습서 - [소개(1/9)](tutorials/mr-learning-base-01.md)
+* Azure Spatial Anchors 자습서 - [소개(1/5)](tutorials/mr-learning-asa-01.md)
+* 다중 사용자 기능 자습서 - [소개(1/5)](tutorials/mr-learning-sharing-01.md)
+* Azure Speech Services 자습서 - [ 음성 인식 및 대화 내용 기록 통합 및 사용(1/4)](tutorials/mrlearning-speechSDK-ch1.md)
+* 공간 오디오 자습서 - [공간 오디오 추가(1/5)](tutorials/unity-spatial-audio-ch1.md)
+* Azure Cloud Services 자습서- [소개(1/5)](tutorials/mr-learning-azure-01.md)
+* PC Holographic 원격 자습서- [시작(1/2)](tutorials/mr-learning-pc-holographic-remoting-01.md)
 
 ## <a name="mixed-reality-academy"></a>Mixed Reality 아카데미 
 

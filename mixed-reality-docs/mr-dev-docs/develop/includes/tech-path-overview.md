@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c61fda885b6cffba2a16b368aa48ad1426fd9fa6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5b99eda2ca8bc2ba48a46513b867e94c45b198c1
+ms.sourcegitcommit: 919bdc3e46325f3c44a022c8852cd38ffec33d33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98605070"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105105907"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -35,6 +35,7 @@ Unity로 Mixed Reality 앱을 빌드하는 경우 몇 가지 하드웨어 및 �
 |  도구/SDK  |  설명  |
 | --- | --- |
 | [Unity용 Mixed Reality Toolkit](../unity/mrtk-getting-started.md) | Unity용 Mixed Reality Toolkit은 Microsoft HoloLens, Windows Mixed Reality 몰입형 (VR) 헤드셋 및 OpenVR 플랫폼을 대상으로 하는 애플리케이션 개발을 가속화하기 위해 고안된 오픈 소스 플랫폼 간 개발 키트입니다. |
+| [Microsoft Mesh](/mesh/overview) 비공개 미리 보기 | Mesh에 관한 최신 공지 및 뉴스를 받아 보려면 [Microsoft Mesh 관심 등록](https://aka.ms/meshsignup) 양식을 작성하세요. Mesh를 사용하면 가상 모임을 개선하고, 가상 디자인 세션을 수행하고, 다른 사용자를 원격으로 지원하고, 가상 모임을 주최할 수 있습니다. |
 
 ## <a name="cloud-services"></a>Cloud Services
 
@@ -49,9 +50,10 @@ Unity에서 빌드된 Mixed Reality 프로젝트, 특히 **Azure Remote Renderin
 ## <a name="examples"></a>예
 
 몇 가지 오픈 소스 [샘플 앱](../features-and-samples.md)을 다운로드하여 사용해 보고 Unity에서 Mixed Reality 최종 제품에 대한 느낌을 알아볼 수 있습니다. 특정 기능을 테스트하는 데 사용할 수 있는 MRTK 예제 장면도 있습니다.
-* [Unity의 손 상호 작용 예시 장면(MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor) - HandInteractionExamples.unity 예시 장면에는 관절식 손 입력에 중점을 둔 다양한 유형의 상호 작용 및 UI 컨트롤이 있습니다.
 
-* [Unity의 시선 추적 예시(MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html) - 이 페이지에서는 제공된 MRTK 시선 추적 예제를 기반으로 MRTK에서 시선 추적을 사용하여 빠르게 시작하는 방법을 설명합니다.
+* [Unity의 손 상호 작용 예시 장면(MRTK)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples) - HandInteractionExamples.unity 예시 장면에는 관절식 손 입력에 중점을 둔 다양한 유형의 상호 작용 및 UI 컨트롤이 있습니다.
+
+* [Unity의 시선 추적 예시(MRTK)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/eye-tracking-examples-overview) - 이 페이지에서는 제공된 MRTK 시선 추적 예제를 기반으로 MRTK에서 시선 추적을 사용하여 빠르게 시작하는 방법을 설명합니다.
 
 >[!NOTE]
 >두 가지 MRTK 예시 장면 모두 MRTK Foundation 및 Example Unity 패키지를 설치해야 합니다.
@@ -106,7 +108,7 @@ Azure Spatial Anchors는 [Unreal 개발 과정](../unreal/unreal-development-ove
 
 ![웹](../images/javascript_logo_banner.png)
 
-WebXR Device API는 모든 플랫폼의 브라우저에서 Mixed Reality 앱을 경험할 수 있는 개방형 사양입니다. 원하는 플랫폼에서 Mixed Reality 앱 개발을 시작하려면 [JavaScript 개발 개요](../web/javascript-development-overview.md)를 참조하세요.
+WebXR Device API는 모든 플랫폼의 브라우저에서 Mixed Reality 앱을 경험할 수 있는 개방형 사양입니다. 원하는 플랫폼에서 Mixed Reality 앱 개발을 시작하려면 [JavaScript 개발 개요](../javascript/javascript-development-overview.md)를 참조하세요.
 
 
 # <a name="native-openxr"></a>[네이티브(OpenXR)](#tab/native)
