@@ -168,11 +168,13 @@
                   href: unity/tutorials/mr-azure-301.md
     - name: 프로젝트 설정
       items:
-        - name: MRTK 소개
-          href: unity/mrtk-getting-started.md
-        - name: MRTK를 사용하지 않고 프로젝트 구성
-          href: unity/configure-unity-project.md
-        - name: 혼합 현실 OpenXR 플러그 인 사용
+        - name: Unity 버전 및 XR 플러그 인 선택
+          href: unity/choosing-unity-version.md
+        - name: 레거시 기본 제공 XR 지원 사용
+          href: unity/legacy-xr-support.md
+        - name: Windows XR 플러그 인 사용
+          href: unity/windows-xr-plugin.md
+        - name: OpenXR 플러그 인 사용
           href: unity/openxr-getting-started.md
         - name: OpenXR 플러그 인 지원 기능
           href: unity/openxr-supported-features.md
