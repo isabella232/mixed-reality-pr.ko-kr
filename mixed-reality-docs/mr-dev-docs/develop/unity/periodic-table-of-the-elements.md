@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, 디자인, 샘플 앱, 컨트롤, MRTK, Mixed Reality Toolkit, Unity, 샘플 앱, 예제 앱, 오픈 소스, Microsoft Store, HoloLens, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 19307b310d104f418e4f7739b0576c63407d83fd
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 36491d230f9d236db77f34b9540f19609c7619ef
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759739"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300178"
 ---
 # <a name="periodic-table-of-the-elements"></a>원소의 주기율표
 
@@ -55,13 +55,13 @@ HoloLens를 처음 경험 한 후에는 혼합 현실에서 정기적으로 테�
 
 ### <a name="interactable-object-button"></a>Interactable 개체 (button)
 
-[Interactable 개체](../../design/interactable-object.md) 는 기본 HoloLens 입력에 응답할 수 있는 개체입니다. Prefab/스크립트로 제공 되며 개체에 쉽게 적용할 수 있습니다. 예를 들어 장면 interactable에서 커피 컵을 만들고 응시, 공중 탭, 탐색 및 조작 제스처와 같은 입력에 응답할 수 있습니다. [자세히 알아보기](../../design/interactable-object.md)
+[Interactable 개체](../../design/interactable-object.md) 는 기본 HoloLens 입력에 응답할 수 있는 개체입니다. Prefab/스크립트로 제공 되며 개체에 쉽게 적용할 수 있습니다. 예를 들어 장면 interactable에서 커피 컵을 만들고 응시, 공중 탭, 탐색 및 조작 제스처와 같은 입력에 응답할 수 있습니다. [자세한 정보](../../design/interactable-object.md)
 
 ![nteractable 개체](images/640px-periodictable-interactableobject.jpg)
 
 ### <a name="object-collection"></a>개체 컬렉션
 
-[개체 컬렉션](../../design/object-collection.md) 은 다양 한 모양의 여러 개체를 배치 하는 데 도움이 되는 개체입니다. 평면, 원통, 구 및 산을 지원 합니다. Radius, 행 수 및 간격과 같은 추가 속성을 구성할 수 있습니다. [자세히 알아보기](../../design/object-collection.md)
+[개체 컬렉션](../../design/object-collection.md) 은 다양 한 모양의 여러 개체를 배치 하는 데 도움이 되는 개체입니다. 평면, 원통, 구 및 산을 지원 합니다. Radius, 행 수 및 간격과 같은 추가 속성을 구성할 수 있습니다. [자세한 정보](../../design/object-collection.md)
 
 ![개체 컬렉션](images/640px-periodictable-collections.jpg)
 
@@ -87,9 +87,9 @@ HoloLens를 처음 경험 한 후에는 혼합 현실에서 정기적으로 테�
 </tr>
 </table>
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-* [MRTK 예제 허브](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/example-scenes/example-hub.md) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [MRTK 예제 허브](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Surfaces](sampleapp-surfaces.md) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
 * [원소의 주기율표 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 * [갤럭시 익스플로러 2.0](galaxy-explorer-update.md)

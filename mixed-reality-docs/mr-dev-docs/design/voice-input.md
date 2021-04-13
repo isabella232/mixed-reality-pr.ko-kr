@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: ggv, 음성, cortana, 음성, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 응시
-ms.openlocfilehash: cc1ecd7d236748c3c4de77678e6f67c69a2c1af1
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 3f178442d892e284ed3e3454d2d54ed68c732313
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759144"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300298"
 ---
 # <a name="voice-input"></a>음성 입력
 
@@ -248,11 +248,11 @@ Holographic 키보드가 활성화 될 때마다 입력 하는 대신 받아쓰�
 
 <br>
 
-## <a name="top-things-users-should-know-about-speech-in-mixed-reality"></a>혼합 현실에서 "음성"에 대해 알아야 할 주요 사항
+## <a name="top-things-users-should-know-about-speech-in-mixed-reality&quot;></a>혼합 현실에서 &quot;음성&quot;에 대해 알아야 할 주요 사항
 
-* 단추를 대상으로 하는 동안 **"선택"** 이라고 말할 수 있습니다 .이 단추를 사용 하 여 단추를 선택할 수 있습니다.
-* 일부 앱에서는 작업을 수행하기 위해 **label name of an app bar button** 이라고 말할 수 있습니다. 예를 들어 앱을 확인 하는 동안 사용자는 "제거" 명령을 사용 하 여 전 세계에서 앱을 제거할 수 있습니다. 이렇게 하면 사용자가 손을 선택 하지 않아도 됩니다.
-* Cortana 수신 대기를 시작할 수 있습니다 **.** 질문을 하거나("Hey Cortana, how tall is the Eiffel tower"), 앱을 열도록 말하거나("Hey Cortana, open Netflix"), 시작 메뉴를 불러오도록 말할 수 있습니다("Hey Cortana, take me home").
+* 단추를 대상으로 하는 동안 **&quot;선택&quot;** 이라고 말할 수 있습니다 .이 단추를 사용 하 여 단추를 선택할 수 있습니다.
+* 일부 앱에서는 작업을 수행하기 위해 **label name of an app bar button** 이라고 말할 수 있습니다. 예를 들어 앱을 확인 하는 동안 사용자는 &quot;제거&quot; 명령을 사용 하 여 전 세계에서 앱을 제거할 수 있습니다. 이렇게 하면 사용자가 손을 선택 하지 않아도 됩니다.
+* Cortana 수신 대기를 시작할 수 있습니다 **.** 질문을 하거나(&quot;Hey Cortana, how tall is the Eiffel tower"), 앱을 열도록 말하거나("Hey Cortana, open Netflix"), 시작 메뉴를 불러오도록 말할 수 있습니다("Hey Cortana, take me home").
 
 ## <a name="common-questions-and-concerns-users-have-about-voice"></a>음성에 대한 사용자의 일반적인 질문 및 어려움
 
@@ -290,11 +290,11 @@ Windows Mixed Reality Developer Edition 릴리스 2017에서는 초기 HMD 연�
 ## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 음성 입력
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 를 사용 하면 개체에 음성 명령을 쉽게 할당할 수 있습니다. MRTK의 **음성 입력 프로필** 을 사용 하 여 키워드를 정의 합니다. **SpeechInputHandler** 스크립트를 할당 하 여 음성 입력 프로필에 정의 된 키워드에 대 한 모든 개체 응답을 만들 수 있습니다. 또한 SpeechInputHandler는 사용자의 신뢰도를 높이기 위해 음성 확인 레이블을 제공 합니다.
 
-* [MRTK-음성 명령](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/speech.md)
+* [MRTK-음성 명령](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/speech)
 
 ---
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [응시 및 커밋](gaze-and-commit.md)
 * [Instinctual 상호 작용](interaction-fundamentals.md)

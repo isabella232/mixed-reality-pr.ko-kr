@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, 큐, ui, ux, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 오디오
-ms.openlocfilehash: b93092b597d0267c1169cf823b1a5c1fa03c3c3f
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 0e9f4dc09e3c4a4c38ffeb1a9042f39996918e36
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759879"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300468"
 ---
 # <a name="interactable-object"></a>상호 작용 가능한 개체
 
@@ -140,7 +140,7 @@ HoloLens 2는 개체와 상호 작용할 수 있도록 하는 트레일러 추�
 :::row:::
     :::column:::
         ![기본값](images/640px-interactibleobject-pressablebutton-default.jpg)<br>
-        **기본값**<br>
+        **기본**<br>
     :::column-end:::
     :::column:::
         ![가리키기](images/640px-interactibleobject-pressablebutton-hover.jpg)<br>
@@ -214,13 +214,11 @@ HoloLens 2는 개체와 상호 작용할 수 있도록 하는 트레일러 추�
 
 ---
 
-
-## <a name="sizing-recommendations"></a>크기 조정 권장 사항 
+## <a name="sizing-recommendations"></a>크기 조정 권장 사항
 
 모든 interactable 개체의 작업을 쉽게 수행할 수 있도록 하려면 사용자에 게 배치 된 거리를 기준으로 interactable가 최소 크기를 충족 하는지 확인 하는 것이 좋습니다. 시각적 각도는 종종 시각적 호의 각도로 측정 됩니다. 시각적 각도는 사용자의 눈동자와 개체 간의 거리를 기준으로 하며 일정 하 게 유지 되 고, 대상의 실제 크기는 사용자의 거리가 변경 될 때 변경 될 수 있습니다. 사용자의 거리를 기준으로 개체의 필요한 실제 크기를 확인 하려면 [다음과 같은 시각적](https://elvers.us/perception/visualAngle/)각도 계산기를 사용해 보세요.
 
 다음은 interactable 콘텐츠의 최소 크기에 대 한 권장 사항입니다.
-
 
 ### <a name="target-size-for-direct-hand-interaction"></a>직접 상호 작용의 대상 크기
 
@@ -254,30 +252,27 @@ HoloLens 2는 개체와 상호 작용할 수 있도록 하는 트레일러 추�
 ![핸드 레이 또는 응시 상호 작용의 대상 크기](images/TargetSizingFar.jpg)<br>
 *핸드 레이 또는 응시 상호 작용의 대상 크기*
 
-
 <br>
 
 ---
-
 
 ## <a name="interactable-object-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 Interactable 개체
 
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 에서는 [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) 스크립트를 사용 하 여 개체를 다양 한 유형의 입력 상호 작용 상태에 응답할 수 있습니다. 색, 크기, 재질, 셰이더 등의 개체 속성을 제어 하 여 시각적 상태를 정의할 수 있도록 하는 다양 한 형식의 테마를 지원 합니다.
 
-* [Interactable](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/interactable.md)
-* [단추](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md)
+* [상호 작용 가능](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable)
+* [Button](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)
 * [직접 상호 작용 예제 장면](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 MixedRealityToolkit의 표준 셰이더는 시각적 및 오디오 큐를 만드는 데 도움이 되는 **근접 조명** 과 같은 다양 한 옵션을 제공 합니다.
-* [MRTK 표준 셰이더](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
 
+* [MRTK 표준 세이더](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
 
 <br>
 
 ---
 
-
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

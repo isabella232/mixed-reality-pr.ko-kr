@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: UI 디자인, holographic 표시, 콘텐츠 디자인, 어두운 테마, 밝은 테마, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 디자인, 픽셀
-ms.openlocfilehash: 6bf65b9e40e42f1609b1108b366ac65637fcf106
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 325b7bf6318d1b54c4b4c33aa58faea7388e0864
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759278"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300038"
 ---
 # <a name="designing-content-for-holographic-display"></a>Holographic 디스플레이용 콘텐츠 디자인
 
@@ -85,7 +85,7 @@ Holographic reprojection 또는 홀로그램 안정성을 향상 시키기 위�
 
 투명 하거나 투명 한 개체는 기본적으로 적절 한 혼합을 위해 깊이를 쓰지 않습니다. 이러한 문제를 완화 하는 방법으로는 불투명 한 개체를 사용 하 여 투명 한 개체를 불투명 한 개체 (예: 불투명 한 판 앞의 반투명 단추)에 가깝게 표시 하거나 투명 한 개체를 사용 하 여 깊이 (모든 시나리오에서 적용 되지 않음)를 적용 하거나, 프레임의 끝에 깊이 값을 적용 하는 프록시 개체를 렌더링 합니다.
 
-MRTK-Unity의 솔루션: https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/performance/hologram-stabilization.md#depth-buffer-sharing-in-unity  
+MRTK-Unity의 솔루션: https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/hologram-stabilization#depth-buffer-sharing-in-unity  
 
 단색 및 불투명 백 판을 사용 하 여 가독성 및 상호 작용 신뢰도를 안전 하 게 보호할 수 있습니다.
 
@@ -103,15 +103,15 @@ MRTK-Unity의 솔루션: https://docs.microsoft.com/windows/mixed-reality/mrtk-d
 
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 는 짙은 색 체계를 기반으로 다양 한 UI 빌딩 블록 예제를 제공 합니다.
 
-* [메뉴 근처](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/near-menu.md)
-* [대화 상자](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/dialog.md)
-* [손 모양 메뉴](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/hand-menu.md)
+* [메뉴 근처](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
+* [대화 상자](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/dialog)
+* [손 모양 메뉴](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [색, 광원 및 재질](color-light-and-materials.md)
 * [커서](cursors.md)

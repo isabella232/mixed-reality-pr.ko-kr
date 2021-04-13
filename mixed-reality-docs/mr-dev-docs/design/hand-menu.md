@@ -6,12 +6,12 @@ ms.author: nobarr
 ms.date: 08/27/2019
 ms.topic: article
 keywords: 손, 메뉴, 단추, 빠른 액세스, 레이아웃, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 8a8b80843b7a107255a45b11868b0bd29a4e3108
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e222d792d883ccacc71b177fbde21979c8dfcc77
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759459"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299918"
 ---
 # <a name="hand-menu"></a>손 메뉴
 
@@ -21,7 +21,7 @@ ms.locfileid: "101759459"
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AJAg]
 
-아래 목록에서 직접 메뉴를 사용 하는 방법에 대 한 권장 모범 사례를 찾을 수 있습니다. [Mrtk](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/hand-menu.md)의 손 메뉴를 보여 주는 예제 장면을 찾을 수도 있습니다.
+아래 목록에서 직접 메뉴를 사용 하는 방법에 대 한 권장 모범 사례를 찾을 수 있습니다. [Mrtk](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)의 손 메뉴를 보여 주는 예제 장면을 찾을 수도 있습니다.
 
 <br>
 
@@ -170,17 +170,18 @@ Arm을 발생 시키고 위치를 유지 하면 arm 피로이 쉽게 발생할 �
 
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 는 손 메뉴에 대 한 스크립트와 예제 장면을 제공 합니다. HandConstraintPalmUp 해결 프로그램 스크립트를 사용 하면 다양 한 구성 가능한 옵션을 통해 개체를 직접 연결할 수 있습니다. MRTK의 손 메뉴 예제에는 거짓 활성화를 방지 하기 위한 flat palm 및 응시 요구 사항과 같은 유용한 옵션이 포함 되어 있습니다.
 
-* [손 메뉴 설명서](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/hand-menu.md)
-* [손 모양 메뉴 예제 장면](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandMenuExamples.unity)
+* [손 메뉴 설명서](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
+* [손 모양 메뉴 예제 장면](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandMenuExamples.unity)
 
-MRTK 예제 허브 앱을 사용 하 여 HoloLens 2에서 직접 메뉴 예제를 사용해 볼 수 있습니다. 
+MRTK 예제 허브 앱을 사용 하 여 HoloLens 2에서 직접 메뉴 예제를 사용해 볼 수 있습니다.
+
 * [MRTK 예제 허브의 손 메뉴 장면](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4?activetab=pivot:overviewtab)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

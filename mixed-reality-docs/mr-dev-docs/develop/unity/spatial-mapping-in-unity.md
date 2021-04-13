@@ -6,18 +6,19 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, 공간 매핑, 렌더러, collider, 메시, 검색, 구성 요소, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: e2ef6ac43e81ff2b8e66a4bd197ea41c198a1626
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: f7fe6e86f9672f36a34f9d7c32d25fccd7760f5e
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105549953"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300168"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity의 공간 매핑
 
 [공간 매핑을](../../design/spatial-mapping.md) 사용 하면 HoloLens 장치 주변의 화면을 나타내는 삼각형 메시를 검색할 수 있습니다. Placement, 폐색 및 room 분석에 surface 데이터를 사용 하 여 Unity 프로젝트에 집중 교육의 추가 백신를 제공할 수 있습니다.
 
 Unity에는 다음과 같은 방법으로 개발자에 게 노출 되는 공간 매핑에 대 한 완벽 한 지원이 포함 되어 있습니다.
+
 1. 공간 매핑 구성 요소는 MixedRealityToolkit에서 사용할 수 있으며 공간 매핑을 시작 하기 위한 편리 하 고 빠른 경로를 제공 합니다.
 2. 모든 권한을 제공 하 고 보다 정교한 응용 프로그램 관련 사용자 지정을 가능 하 게 하는 하위 수준 공간 매핑 Api
 
@@ -51,6 +52,7 @@ Unity에는 다음과 같은 방법으로 개발자에 게 노출 되는 공간 
 앱이 공간 매핑 데이터를 사용 하도록 하려면 SpatialPerception 기능을 사용 하도록 설정 해야 합니다.
 
 SpatialPerception 기능을 사용 하도록 설정 하는 방법:
+
 1. Unity 편집기에서 **"플레이어 설정"** 창 (편집 > 프로젝트 설정 > 플레이어)을 엽니다.
 2. **"Windows 스토어"** 탭에서 선택 합니다.
 3. " **게시 설정"** 을 확장 하 고 " **기능"** 목록에서 **"SpatialPerception"** 기능을 확인 합니다.
@@ -59,6 +61,7 @@ SpatialPerception 기능을 사용 하도록 설정 하는 방법:
 > Unity 프로젝트를 Visual Studio 솔루션으로 이미 내보낸 경우에는 새 폴더로 내보내거나 [Visual studio의 appxmanifest.xml에서이 기능](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)을 수동으로 설정 해야 합니다.
 
 공간 매핑에는 10.0.10586.0 이상의 MaxVersionTested 필요 합니다.
+
 1. Visual Studio의 솔루션 탐색기에서 appxmanifest.xml를 마우스 오른쪽 단추로 클릭 하 고 **코드 보기** 를 선택 **합니다.**
 2. **Targetdevicefamily** 를 지정 하 고 **MaxVersionTested = "10.0.10240.0"** 를 **MaxVersionTested = "10.0.10586.0"** 로 변경 하는 줄을 찾습니다.
 3. Appxmanifest.xml를 **저장** 합니다.
@@ -84,6 +87,7 @@ Unity는 앱, **공간 매핑 렌더러** 및 **공간 매핑 Collider** 에 공
 실제 화면을 시각화 하 고 상호 작용 하려는 경우 두 구성 요소를 모두 앱에 추가할 수 있습니다.
 
 Unity 앱에서 이러한 두 구성 요소를 사용 하려면 다음을 수행 합니다.
+
 1. 공간 표면 메시를 검색할 영역의 가운데에 있는 GameObject를 선택 합니다.
 2. 검사기 창에서 **구성 요소**  >  **XR**  >  **공간 매핑 Collider** 또는 **공간 매핑 렌더러** 를 추가 합니다.
 
@@ -92,6 +96,7 @@ Unity 앱에서 이러한 두 구성 요소를 사용 하려면 다음을 수행
 ### <a name="going-beyond-the-built-in-spatial-mapping-components"></a>기본 제공 공간 매핑 구성 요소 이상
 
 이러한 구성 요소를 사용 하면 쉽게 끌어서 놓기를 통해 공간 매핑을 시작할 수 있습니다.  자세히 알아보려면 다음 두 가지 주요 경로를 살펴볼 수 있습니다.
+
 * 낮은 수준의 메시 처리를 수행 하려면 하위 수준 공간 매핑 스크립트 API에 대 한 아래 섹션을 참조 하세요.
 * 높은 수준의 메시 분석을 수행 하려면 <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit</a>의 SpatialUnderstanding 라이브러리에 대 한 아래 섹션을 참조 하세요.
 
@@ -137,6 +142,7 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 ### <a name="handling-surface-changes"></a>화면 변경 내용 처리
 
 처리 하는 몇 가지 주요 사례가 있으며, 동일한 코드 경로를 사용 하 고 제거할 수 있습니다.
+
 * 추가 되 고 업데이트 된 경우에는 사전에서이 메시를 나타내는 GameObject를 추가 하거나 가져오고, 필요한 구성 요소를 사용 하 여 SurfaceData 구조체를 만든 다음, RequestMeshDataAsync를 호출 하 여 GameObject을 망상 데이터와 장면의 위치로 채웁니다.
 * 제거 된 경우에는이 메시를 나타내는 GameObject를 사전에서 제거 하 고 삭제 합니다.
 
@@ -268,7 +274,7 @@ Unity 샘플에서 커서는 각 프레임을 비춥니다. 먼저, Unity의 col
 
 ### <a name="topology-queries"></a>토폴로지 쿼리
 
-DLL 내에서 토폴로지 관리자는 환경의 레이블 지정을 처리 합니다. 위에서 언급 한 것 처럼 대부분의 데이터는 voxel 볼륨 내에 포함 된 surfels 내에 저장 됩니다. 또한 "PlaySpaceInfos" 구조체를 사용 하 여 전 세계 맞춤 (아래에 자세히 설명), 층 및 천장 높이를 포함 하 여 playspace에 대 한 정보를 저장 합니다. 추론은 바닥, 천장 및 벽을 결정 하는 데 사용 됩니다. 예를 들어 1-m2 노출 영역을 포함 하는 가장 크거나 가장 작은 가로 표면은 바닥으로 간주 됩니다. 
+DLL 내에서 토폴로지 관리자는 환경의 레이블 지정을 처리 합니다. 위에서 언급 한 것 처럼 대부분의 데이터는 voxel 볼륨 내에 포함 된 surfels 내에 저장 됩니다. 또한 "PlaySpaceInfos" 구조체를 사용 하 여 전 세계 맞춤 (아래에 자세히 설명), 층 및 천장 높이를 포함 하 여 playspace에 대 한 정보를 저장 합니다. 추론은 바닥, 천장 및 벽을 결정 하는 데 사용 됩니다. 예를 들어 1-m2 노출 영역을 포함 하는 가장 크거나 가장 작은 가로 표면은 바닥으로 간주 됩니다.
 
 > [!NOTE]
 > 검색 프로세스 중에 카메라 경로도이 프로세스에서 사용 됩니다.
@@ -470,21 +476,23 @@ Import_UnderstandingMesh –
 
 ### <a name="understanding-mesh"></a>메시 이해
 
-Dll 이해는 내부적으로 playspace를 8 센티미터 크기의 voxel 큐브 그리드로 저장 합니다. 검색의 초기 부분에서 주 구성 요소 분석을 완료 하 여 방의 축을 확인 합니다. 내부적으로 이러한 축에 맞춰진 voxel 공간을 저장 합니다. 메시는 거의 매 초 마다 voxel 볼륨에서 isosurface를 추출 하 여 생성 됩니다. 
+Dll 이해는 내부적으로 playspace를 8 센티미터 크기의 voxel 큐브 그리드로 저장 합니다. 검색의 초기 부분에서 주 구성 요소 분석을 완료 하 여 방의 축을 확인 합니다. 내부적으로 이러한 축에 맞춰진 voxel 공간을 저장 합니다. 메시는 거의 매 초 마다 voxel 볼륨에서 isosurface를 추출 하 여 생성 됩니다.
 
 ![Voxel 볼륨에서 생성 된 메시 생성](images/su-custommesh.jpg)<br>
 *Voxel 볼륨에서 생성 된 메시 생성*
 
 ## <a name="troubleshooting"></a>문제 해결
+
 * [SpatialPerception](#setting-the-spatialperception-capability) 기능을 설정 했는지 확인 합니다.
 * 추적이 손실 되 면 다음 OnSurfaceChanged 이벤트는 모든 메시를 제거 합니다.
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Mixed Reality Toolkit의 공간 매핑
-Mixed Reality Toolkit v 2에서 공간 매핑을 사용 하는 방법에 대 한 자세한 내용은 MRTK docs의 <a href="/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">공간 인식 섹션</a> 을 참조 하세요.
+
+Mixed Reality Toolkit v 2에서 공간 매핑을 사용 하는 방법에 대 한 자세한 내용은 MRTK docs의 <a href="/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started" target="_blank">공간 인식 섹션</a> 을 참조 하세요.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다. 
+앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)
@@ -497,6 +505,7 @@ Mixed Reality Toolkit v 2에서 공간 매핑을 사용 하는 방법에 대 한
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
 ## <a name="see-also"></a>참조
+
 * [좌표계](../../design/coordinate-systems.md)
 * [Unity의 좌표계](coordinate-systems-in-unity.md)
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>

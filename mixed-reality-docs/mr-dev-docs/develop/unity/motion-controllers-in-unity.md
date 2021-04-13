@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: 동작 컨트롤러, unity, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 6dee5f03ab5fe84ac11a4eb10ef0483fea6e0083
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: d3df49c2f6c626e9f4eb47c38f4a8e61059a8438
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759064"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300478"
 ---
 # <a name="motion-controllers-in-unity"></a>Unity의 동작 컨트롤러
 
@@ -436,7 +436,7 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 
 ## <a name="motion-controllers-in-mrtk"></a>MRTK의 동작 컨트롤러
 
-입력 관리자에서 [제스처 및 동작 컨트롤러](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/controllers.md) 에 액세스할 수 있습니다.
+입력 관리자에서 [제스처 및 동작 컨트롤러](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/controllers) 에 액세스할 수 있습니다.
 
 ## <a name="follow-along-with-tutorials"></a>안내 따르기
 

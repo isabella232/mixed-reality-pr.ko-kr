@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
 keywords: unity, 설정, 혼합 현실, HoloLens, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 성능, 품질 설정, 조명 설정, 깊이 버퍼, xr, 추적 손실
-ms.openlocfilehash: cc1d2692a172c84274299580a0ce580264f65fcf
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: b8da51bdc57d8586706d11e86ca3b7543023c119
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759699"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300128"
 ---
 # <a name="recommended-settings-for-unity"></a>Unity 권장 설정
 
@@ -68,7 +68,7 @@ Unity 프로젝트에서 이 기능을 사용하도록 설정하려면 다음을
 
 Windows Mixed Reality 플랫폼에서 홀로그램 안정성을 최적화 하기 위해 깊이 버퍼를 사용 하 여 정확 하 고 렌더링 된 모든 holograms 화면에 일치 시킵니다. 따라서에서 깊이 버퍼를 공유 하는 경우 색을 렌더링할 때 깊이를 렌더링 하는 것도 중요 합니다. Unity에서 대부분의 불투명 또는 TransparentCutout 재질은 기본적으로 깊이를 렌더링 하지만 투명 하 고 텍스트 개체는 셰이더가 종속 되는 경우에도 깊이를 렌더링 하지 않습니다.
 
-[Mixed Reality Toolkit 표준 셰이더](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md)를 사용 하 여 투명 개체의 깊이를 렌더링 하는 경우:
+[Mixed Reality Toolkit 표준 셰이더](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)를 사용 하 여 투명 개체의 깊이를 렌더링 하는 경우:
 
 1) MRTK 표준 셰이더를 사용 하는 투명 재질을 선택 하 고 검사기 편집기 창을 엽니다.
 2) 깊이 버퍼 공유 경고 내에서 **지금 수정** 단추를 선택 합니다. **렌더링 모드** 를 **사용자 지정** 으로 설정 하 여 수동으로 수행할 수도 있습니다. 그런 다음 **모드** 를 **Transparent** 로 설정 하 고 마지막으로 **Depth Write** 를 **On** 으로 설정 합니다.
@@ -114,10 +114,10 @@ Holographic 시작 화면을 전환 하려면:
 
 |  Unity 시작 화면 표시  |  Holographic 시작 이미지  |  동작 |
 |----------|----------|----------|
-|  설정  |  없음  |  5 초 동안 또는 앱이 로드 될 때까지 기본 Unity 시작 화면을 표시 합니다. |
-|  설정  |  사용자 지정  |  5 초 동안 또는 앱이 로드 될 때까지 사용자 지정 시작 화면을 표시 합니다. |
-|  꺼짐  |  없음  |  앱이 로드 될 때까지 투명 한 검정색 (없음)을 표시 합니다. |
-|  꺼짐  |  사용자 지정  |  5 초 동안 또는 앱이 로드 될 때까지 사용자 지정 시작 화면을 표시 합니다. |
+|  켜기  |  없음  |  5 초 동안 또는 앱이 로드 될 때까지 기본 Unity 시작 화면을 표시 합니다. |
+|  켜기  |  사용자 지정  |  5 초 동안 또는 앱이 로드 될 때까지 사용자 지정 시작 화면을 표시 합니다. |
+|  끄기  |  없음  |  앱이 로드 될 때까지 투명 한 검정색 (없음)을 표시 합니다. |
+|  끄기  |  사용자 지정  |  5 초 동안 또는 앱이 로드 될 때까지 사용자 지정 시작 화면을 표시 합니다. |
 
 자세한 내용은 [Unity의 시작 화면 설명서](https://docs.unity3d.com/Manual/class-PlayerSettingsSplashScreen.html) 를 참조 하세요.
 
@@ -167,7 +167,7 @@ Holographic apps에 일반적으로 사용 되는 Api를 사용 하도록 설정
 |  마이크  |  VideoCapture (오디오 캡처 시), DictationRecognizer, GrammarRecognizer 및 KeywordRecognizer |
 |  InternetClient  |  DictationRecognizer (및 Unity 프로파일러를 사용 하려면) |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Unity 개발 개요](unity-development-overview.md)
 * [혼합 현실의 성능 이해](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)

@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality, 디자인, 수동 coach, 몰입 형 헤드셋, MRTK, 실습, 수동 지원, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 56a56893a7c5bc772268ab9980f25327eae83af5
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: ec302cecb106b339828adf1c8777c2ea7ec7fa30
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550073"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300048"
 ---
 # <a name="hand-coach"></a>핸드 코치
 
@@ -85,7 +85,7 @@ UI 메뉴를 사용 하 여 다양 한 손 크기를 테스트 하 고,이를 �
 
 ## <a name="can-i-create-my-own"></a>직접 만들 수 있나요?
 
-예 게임에 고유한 제스처를 만들어 커뮤니티에 다시 참가 하는 것이 좋습니다.
+예! 게임에 고유한 제스처를 만들어 커뮤니티에 다시 참가 하는 것이 좋습니다.
 앱에 사용할 수 있는 Rigged 손의 Maya 파일을 제공 합니다 .이 파일은 다운로드 하 여 다운로드할 수 있습니다 <a href="files/HandCoach_MRTK.zip"> HandCoach_MRTK.zip </a>
 
 ![Maya의 애니메이션 실습 예](images/HandCoach/MayaSelect_Gif.gif)<br>
@@ -157,7 +157,7 @@ UI 메뉴를 사용 하 여 다양 한 손 크기를 테스트 하 고,이를 �
 *   한 번 이상 실습 한 경우 사용자가 중지 된 것을 감지 하는 경우에만 제스처를 반복 합니다.
 *   특정 손가락/손 위치가 중요 한 경우 사용자가 애니메이션에서 이러한 미묘한 차이를 명확 하 게 볼 수 있도록 합니다. 가장 중요 한 부분이 명확 하 게 표시 되도록 손을 준. 
 * 손으로 왜곡 된 경우 Unity의 품질 설정으로 이동 하 여 뼈의 수를 늘려야 합니다. 
- Unity의 편집 > 프로젝트 설정 > 품질 > 기타 > 혼합 가중치로 이동 합니다. 부드러운 조인트를 보려면 "4 뼈"가 선택 되어 있는지 확인 합니다. 
+ Unity의 편집 > 프로젝트 설정 > 품질 > 기타 > 혼합 가중치로 이동 합니다. 부드러운 조인트를 보려면 "4 뼈"가 선택 되어 있는지 확인 합니다.
 
    ![예: 프로젝트 설정 창](images/HandCoach/ProjectSettings.png)<br>
 
@@ -167,11 +167,11 @@ UI 메뉴를 사용 하 여 다양 한 손 크기를 테스트 하 고,이를 �
 * 너무 크게 크기 조정
 * 사용자에 게 너무 가까운 손을 두기
 * 손을 한 번만 지정 해야 합니다. 교육을 통해 혼란을 야기 하 고 messiness 수 있습니다.
-*   Unity로 가져와서 최신 MRTK를 다운로드 합니다. https://github.com/microsoft/MixedRealityToolkit-Unity
-    *   재질: Teaching_Hand2
-    *   스크립트: <a href= "/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md">mrtk 손 coach</a> 에 대 한 mrtk 지침 참조
-    *   프로젝트별 설정
-        *   UWP로 설정 된 장면: Windows Mixed Reality의 [Unity 구성 프로젝트](../develop/unity/Configure-Unity-Project.md) 에서 지침을 찾을 수 있습니다.
+* Unity로 가져와서 최신 MRTK를 다운로드 합니다. https://github.com/microsoft/MixedRealityToolkit-Unity
+  * 재질: Teaching_Hand2
+  * 스크립트: <a href= "/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-coach">mrtk 손 coach</a> 에 대 한 mrtk 지침 참조
+  * 프로젝트별 설정
+    * UWP로 설정 된 장면: Windows Mixed Reality의 [Unity 구성 프로젝트](../develop/unity/Configure-Unity-Project.md) 에서 지침을 찾을 수 있습니다.
 
 ## <a name="see-also"></a>참조
 

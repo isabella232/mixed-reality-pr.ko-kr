@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, 컨트롤, 디자인, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 개체 컬렉션, 2D, 3D, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 53ec99b998f1c65fdd3ca8b5d935b43ff0070500
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 109dcd59a2b52a8eec82096c5aa88cd1070f5649
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759154"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299728"
 ---
 # <a name="object-collection"></a>개체 컬렉션
 
@@ -48,13 +48,13 @@ ms.locfileid: "101759154"
 
 ## <a name="object-collection-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 개체 컬렉션
 
-* [MRTK-개체 컬렉션](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/object-collection.md)
+* [MRTK-개체 컬렉션](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

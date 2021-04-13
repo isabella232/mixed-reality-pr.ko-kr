@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, billboarding, 태그 동반, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: f0a5c4fc66e287c04fe8fa42c0c671e895a26169
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 48c7aa28217a38c6c226b65a6e16ed7c950cec59
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759409"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299888"
 ---
 # <a name="billboarding-and-tag-along"></a>빌보딩 및 태그얼롱
 
@@ -47,9 +47,9 @@ Billboarding를 사용 하는 개체는 사용자 환경에서 자유롭게 회�
 ---
 
 ## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Billboarding 및 태그-Unity 용 MRTK (혼합 현실 도구 키트)
-**[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 는 Billboarding 및 태그 동반 동작에 대 한 스크립트를 제공 합니다. Billboard.cs 스크립트를 모든 개체에 할당 하 여 billboarding 동작을 추가 하 고 개체를 항상 사용자에 게 표시 합니다. 태그 동반 동작을 추가 하려면 RadialView.cs 스크립트를 사용 합니다. Lerping 시간, 거리, 학위 등의 다양 한 옵션을 조정할 수 있습니다.
+**[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 는 Billboarding 및 태그 동반 동작에 대 한 스크립트를 제공 합니다. Billboarding 동작을 추가 하 고 개체에 항상 직면 하도록 하려면 모든 개체에 빌보드 스크립트를 할당 합니다. 태그 동반 동작을 추가 하려면 RadialView 스크립트를 사용 합니다. Lerping 시간, 거리, 학위 등의 다양 한 옵션을 조정할 수 있습니다.
 
-* [MRTK-방사형 보기 해 찾기](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md#radialview)
+* [MRTK-방사형 보기 해 찾기](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#radialview)
 * [MRTK-빌보드 스크립트](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
 
 
@@ -57,7 +57,7 @@ Billboarding를 사용 하는 개체는 사용자 환경에서 자유롭게 회�
 
 ---
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

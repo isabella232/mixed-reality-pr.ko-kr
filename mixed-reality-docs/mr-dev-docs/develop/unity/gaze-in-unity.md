@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 눈에 응시, 헤드-응시, unity, 홀로그램, 혼합 현실, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 7602eb27da19dc77e4eab1c1a428dc9a1cf8b252
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 98eb4445d04b236dea74917d9c51108b66d6df3b
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759689"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300368"
 ---
 # <a name="head-gaze-in-unity"></a>헤드-Unity에서의 응시
 
@@ -51,8 +51,9 @@ void Update()
 
 컴퓨터에서 마우스 포인터를 사용 하는 것과 마찬가지로 사용자의 헤드를 나타내는 [커서](../../design/cursors.md) 를 구현 해야 합니다. 사용자가 대상으로 하는 콘텐츠를 알면 상호 작용할 대상이 높아집니다.
 
-## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Head-Mixed Reality Toolkit의 Head-응시 
-MRTK의 [입력 관리자](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md) 에서 헤드-응시에 액세스할 수 있습니다.
+## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Head-Mixed Reality Toolkit의 Head-응시
+
+MRTK의 [입력 관리자](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview) 에서 헤드-응시에 액세스할 수 있습니다.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
@@ -68,7 +69,7 @@ MRTK의 [입력 관리자](https://docs.microsoft.com/windows/mixed-reality/mrtk
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [카메라](camera-in-unity.md)
 * [커서](../../design/cursors.md)
 * [헤드 게이즈 및 커밋](../../design/gaze-and-commit.md)

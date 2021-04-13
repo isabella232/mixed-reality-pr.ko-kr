@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 제스처, 동작 컨트롤러, unity, 응시, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: ac122a0353bc5a35202c9aeba0d27c489b72fd68
-ms.sourcegitcommit: 6ae047bf0d78819ee68681f7d9450961efbc8595
+ms.openlocfilehash: bad6448b4b9c8f8f5769e08112bbce5c9090b029
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103022875"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300268"
 ---
 # <a name="articulated-hand-and-eye-tracking-in-unity"></a>Unity에서의 트레일러 및 눈 추적
 
@@ -19,23 +19,23 @@ HoloLens 2에는 여러 가지 새롭고 흥미로운 기능 (예: 트레일러 
 
 Unity에서 새로운 기능을 활용 하는 가장 쉬운 방법은 MRTK를 통하는 것입니다. 또한 시작 하는 데 도움이 되는 몇 가지 예제 장면이 있습니다.
 
-* [MRTK에서 트레일러 식 시작](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/hand-tracking.md)
-* [MRTK에서 눈 추적 시작](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/eye-tracking/eye-tracking-main.md)
+* [MRTK에서 트레일러 식 시작](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/hand-tracking)
+* [MRTK에서 눈 추적 시작](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 
-## <a name="building-blocks-supporting-hands-eyes-and-others-in-mrtk"></a>MRTK에서 실습, 눈동자 및 기타 항목을 지 원하는 빌딩 블록 
+## <a name="building-blocks-supporting-hands-eyes-and-others-in-mrtk"></a>MRTK에서 실습, 눈동자 및 기타 항목을 지 원하는 빌딩 블록
 
 MRTK v2는 개발을 가속화 하는 데 도움이 되는 UI 컨트롤 및 구성 요소 집합을 제공 합니다.
 
-|  [![단추](images/MRTK_Button_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button.md) [단추](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button.md) | [ ![ 경계 상자](images/MRTK_BoundingBox_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box.md) [경계 상자](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box.md) | [ ![ 조작 처리기](images/MRTK_Manipulation_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/manipulation-handler.md) [조작 처리기](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/manipulation-handler.md) |
+|  [![단추](images/MRTK_Button_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) [단추](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) | [ ![ 경계 상자](images/MRTK_BoundingBox_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box) [경계 상자](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box) | [ ![ 조작 처리기](images/MRTK_Manipulation_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/manipulation-handler) [조작 처리기](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/manipulation-handler) |
 |:--- | :--- | :--- |
 | HoloLens2's를 포함 하는 다양 한 입력 메서드를 지 원하는 button 컨트롤입니다. | 3D 공간에서 개체 조작을 위한 표준 UI | 한 손 또는 양손을 사용하여 개체를 조작하기 위한 스크립트 |
-|  [![슬레이트](images/MRTK_Slate_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/slate.md) [슬레이트](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/slate.md) | [![시스템 키보드](images/MRTK_SystemKeyboard_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/system-keyboard.md) [시스템 키보드](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/system-keyboard.md) | [![상호 작용 가능](images/InteractableExamples.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable.md) [상호 작용 가능](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable.md) |
+|  [![슬레이트](images/MRTK_Slate_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/slate) [슬레이트](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/slate) | [![시스템 키보드](images/MRTK_SystemKeyboard_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/system-keyboard) [시스템 키보드](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/system-keyboard) | [![상호 작용 가능](images/InteractableExamples.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable) [상호 작용 가능](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable) |
 | 트레일러 식 입력으로 스크롤을 지 원하는 2D 스타일 평면 | Unity에서 시스템 키보드를 사용하는 예제 스크립트  | 시각적 상태 및 테마 지원으로 개체를 상호 작용 가능하게 만드는 스크립트 |
-|  [![Solver](images/MRTK_Solver_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver.md) [Solver](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver.md) | [![개체 컬렉션](images/MRTK_ObjectCollection_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection.md) [개체 컬렉션](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection.md) | [![도구 설명](images/MRTK_Tooltip_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/tooltip.md) [도구 설명](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/tooltip.md) |
+|  [![Solver](images/MRTK_Solver_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver) [Solver](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver) | [![개체 컬렉션](images/MRTK_ObjectCollection_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection) [개체 컬렉션](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection) | [![도구 설명](images/MRTK_Tooltip_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/tooltip) [도구 설명](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/tooltip) |
 | 태그 동반, 본문 잠금, 상수 보기 크기 및 표면 자기와 같은 다양 한 개체 위치 지정 동작 | 3 차원 모양의 개체 배열을 레이아웃 하는 스크립트 | 동작 컨트롤러 및 개체에 레이블을 지정 하는 데 사용할 수 있는 유연한 앵커/피벗 시스템을 포함 하는 주석 UI입니다. |
-|  [![앱 바](images/MRTK_AppBar_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/app-bar.md) [앱 바](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/app-bar.md) | [![포인터](images/MRTK_Pointer_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/pointers.md) [포인터](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/pointers.md) | [![손끝 시각화](images/MRTK_FingertipVisualization_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/fingertip-visualization.md) [손끝 시각화](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/fingertip-visualization.md) |
+|  [![앱 바](images/MRTK_AppBar_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/app-bar) [앱 바](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/app-bar) | [![포인터](images/MRTK_Pointer_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/pointers) [포인터](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/pointers) | [![손끝 시각화](images/MRTK_FingertipVisualization_Main.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/fingertip-visualization) [손끝 시각화](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/fingertip-visualization) |
 | 경계 상자의 수동 활성화를 위한 UI | 다양한 종류의 포인터에 대해 알아보기 | 직접 상호 작용에 대 한 신뢰도를 향상 시키는 fingertip의 시각적 affordance |
-|  [![시선 추적: 대상 선택](images/mrtk_et_targetselect.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/eye-tracking/eye-tracking-target-selection.md) [시선 추적: 대상 선택](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/eye-tracking/eye-tracking-target-selection.md) | [![시선 추적: 탐색](images/mrtk_et_navigation.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/eye-tracking/eye-tracking-navigation.md) [시선 추적: 탐색](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/eye-tracking/eye-tracking-navigation.md) | [![시선 추적: 열 지도](images/mrtk_et_heatmaps.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Visualization.html) [시선 추적: 열 지도](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Visualization.html) |
+|  [![시선 추적: 대상 선택](images/mrtk_et_targetselect.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-target-selection) [시선 추적: 대상 선택](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-target-selection) | [![시선 추적: 탐색](images/mrtk_et_navigation.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation) [시선 추적: 탐색](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation) | [![시선 추적: 열 지도](images/mrtk_et_heatmaps.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Visualization.html) [시선 추적: 열 지도](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Visualization.html) |
 | 눈, 음성 및 손 입력을 결합 하 여 장면 전체의 holograms을 빠르고 간편 하 게 선택 | 표시 되는 내용에 따라 텍스트를 자동으로 스크롤하거나 중요 한 콘텐츠를 확대 하는 방법에 대해 알아봅니다.| 사용자의 앱에서 보고 있는 사용자를 기록, 로드 및 시각화 하는 예제 |
 
 ## <a name="example-scenes"></a>예제 장면
@@ -44,7 +44,7 @@ MRTK v2는 개발을 가속화 하는 데 도움이 되는 UI 컨트롤 및 구�
 
 **자산/MixedRealityToolkit/데모** 폴더의 [Mixed Reality Toolkit GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity) 에서 다른 예제 장면을 찾을 수 있습니다.
 
-[![장면 예](images/MRTK_Examples.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples.md)
+[![장면 예](images/MRTK_Examples.png)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples)
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
@@ -60,7 +60,7 @@ MRTK v2는 개발을 가속화 하는 데 도움이 되는 UI 컨트롤 및 구�
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [시선 기반 상호 작용](../../design/eye-gaze-interaction.md)
 * [HoloLens 2의 시선 추적](../../design/eye-tracking.md)

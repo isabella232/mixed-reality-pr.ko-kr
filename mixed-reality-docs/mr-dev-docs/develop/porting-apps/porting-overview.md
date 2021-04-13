@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 포팅, unity, 미들웨어, 엔진, UWP, Win32
-ms.openlocfilehash: 693891d67ae26098f0810a539059da8d34f4731c
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 5b89d3448a7baf12cc76dd3677140fcf6e297ee2
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759114"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299788"
 ---
 # <a name="porting-overview"></a>포팅 개요
 
@@ -33,14 +33,13 @@ ms.locfileid: "101759114"
 혼합 현실에서 Unity 개발에 대 한 현재 권장 사항은 **레거시 XR 패키지를 사용 하는 unity 2019 LTS** 입니다. 프로젝트가 Mixed Reality Toolkit를 사용 하는 경우 현재 **Mrtk-Unity 2.5** 인 최신 버전을 사용 하 고 있는지 다시 확인 합니다.
 
 > [!CAUTION]
-> XR SDK는이 버전의 Unity와 함께 사용할 수 있지만, Azure 공간 앵커는 현재이 설정과 호환 되지 않습니다. 이 권장 사항은 Unity 용 Azure 공간 앵커 패키지의 이후 릴리스에서 업데이트 될 예정입니다. 
+> XR SDK는이 버전의 Unity와 함께 사용할 수 있지만, Azure 공간 앵커는 현재이 설정과 호환 되지 않습니다. 이 권장 사항은 Unity 용 Azure 공간 앵커 패키지의 이후 릴리스에서 업데이트 될 예정입니다.
 > 
-> * Azure 공간 앵커가 필요 하지 않은 경우 [XR에 대 한 Unity 프로젝트를 구성](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) 하 고 [MRTK 및 XR SDK를 사용 하 여 시작할](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/getting-started-with-mrtk-and-xrsdk.md)수 있습니다.
+> * Azure 공간 앵커가 필요 하지 않은 경우 [XR에 대 한 Unity 프로젝트를 구성](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) 하 고 [MRTK 및 XR SDK를 사용 하 여 시작할](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk)수 있습니다.
 > 
 > * 현재 프로젝트에서 XR SDK를 사용 하 고 있으며 Azure 공간 앵커를 사용 하려는 경우 XR SDK를 제거 하 고 레거시 XR 패키지를 다시 설치 하 여 프로젝트 설정을 되돌립니다.
 
-
-### <a name="unreal"></a>Unreal 
+### <a name="unreal"></a>Unreal
 
 혼합 현실에서의 실제 개발에 대 한 현재 권장 사항은 **Unreal Engine 4.26** 입니다. 프로젝트가 Mixed Reality Toolkit UX 도구를 사용 하는 경우 현재 **Uxt 0.10** 최신 버전을 사용 하 고 있는지 확인 합니다.
 

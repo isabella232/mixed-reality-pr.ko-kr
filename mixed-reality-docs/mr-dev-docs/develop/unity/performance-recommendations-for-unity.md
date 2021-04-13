@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: 그래픽, CPU, GPU, 렌더링, 가비지 컬렉션, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: f8757e5a5f5c9163dc70d8c8d0e93848c49a6694
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 2ff766c3fb2c9f8a91c3c8cc81bb21adae9956e8
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101759729"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300158"
 ---
 # <a name="performance-recommendations-for-unity"></a>Unity에 대한 성능 추천 사항
 
@@ -301,15 +301,15 @@ Unity의 모델에서 굽기 조명을 사용하는 것이 좋습니다.
 
 #### <a name="optimize-pixel-shaders"></a>픽셀 셰이더 최적화
 
-위의 방법을 사용하여 컴파일된 통계 결과를 살펴보면 일반적으로 [조각 셰이더](https://en.wikipedia.org/wiki/Shader#Pixel_shaders)에서 평균적으로 [꼭짓점 셰이더](https://en.wikipedia.org/wiki/Shader#Vertex_shaders)보다 더 많은 작업을 실행합니다. 픽셀 셰이더라고도 하는 조각 셰이더는 화면 출력에서 픽셀 단위로 실행되지만, 꼭짓점 셰이더는 화면에 그려지는 모든 메시의 꼭짓점 단위로만 실행됩니다. 
+위의 방법을 사용하여 컴파일된 통계 결과를 살펴보면 일반적으로 [조각 셰이더](https://en.wikipedia.org/wiki/Shader#Pixel_shaders)에서 평균적으로 [꼭짓점 셰이더](https://en.wikipedia.org/wiki/Shader#Vertex_shaders)보다 더 많은 작업을 실행합니다. 픽셀 셰이더라고도 하는 조각 셰이더는 화면 출력에서 픽셀 단위로 실행되지만, 꼭짓점 셰이더는 화면에 그려지는 모든 메시의 꼭짓점 단위로만 실행됩니다.
 
-따라서 모든 조명 계산으로 인해 조각 셰이더에는 꼭짓점 셰이더보다 더 많은 명령이 포함될 뿐만 아니라, 조각 셰이더가 거의 항상 더 큰 데이터 세트에서 실행됩니다. 예를 들어 화면 출력이 2,000 x 2,000 이미지인 경우 조각 셰이더는 2,000 * 2,000 = 4,000,000회 실행될 수 있습니다. 두 눈을 렌더링하는 경우 두 개의 화면이 있으므로 이 횟수가 두 배가 됩니다. 혼합 현실 애플리케이션에서 여러 패스, 전체 화면 후 처리 효과 또는 동일한 픽셀에 여러 메시 렌더링을 수행하는 경우 이 횟수는 크게 늘어납니다. 
+따라서 모든 조명 계산으로 인해 조각 셰이더에는 꼭짓점 셰이더보다 더 많은 명령이 포함될 뿐만 아니라, 조각 셰이더가 거의 항상 더 큰 데이터 세트에서 실행됩니다. 예를 들어 화면 출력이 2,000 x 2,000 이미지인 경우 조각 셰이더는 2,000 * 2,000 = 4,000,000회 실행될 수 있습니다. 두 눈을 렌더링하는 경우 두 개의 화면이 있으므로 이 횟수가 두 배가 됩니다. 혼합 현실 애플리케이션에서 여러 패스, 전체 화면 후 처리 효과 또는 동일한 픽셀에 여러 메시 렌더링을 수행하는 경우 이 횟수는 크게 늘어납니다.
 
 따라서 조각 셰이더의 작업 수를 줄이면 일반적으로 꼭짓점 셰이더의 최적화에 비해 훨씬 더 큰 성능 향상을 달성할 수 있습니다.
 
 #### <a name="unity-standard-shader-alternatives"></a>Unity 표준 셰이더 대안
 
-PBR(물리적 기반 렌더링) 또는 다른 고품질 셰이더를 사용하는 대신, 성능이 더 뛰어나고 저렴한 셰이더를 활용하는 방법을 살펴봅니다. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)는 혼합 현실 프로젝트에 최적화된 [MRTK 표준 셰이더](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md)를 제공합니다.
+PBR(물리적 기반 렌더링) 또는 다른 고품질 셰이더를 사용하는 대신, 성능이 더 뛰어나고 저렴한 셰이더를 활용하는 방법을 살펴봅니다. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)는 혼합 현실 프로젝트에 최적화된 [MRTK 표준 셰이더](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)를 제공합니다.
 
 또한 Unity는 Unity 표준 셰이더에 비해 더 빠른 unlit(꺼짐), vertex lit(꼭짓점 깜박임), diffuse(확산) 및 간소화된 다른 셰이더 옵션을 제공합니다. 자세한 내용은 [기본 제공 셰이더 사용 및 성능](https://docs.unity3d.com/Manual/shader-Performance.html)을 참조하세요.
 

@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 단추
-ms.openlocfilehash: 9e4d0637d8c10c3cd23bd2ee1369fd57137af795
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 177ccfc1c07df9a9523c9ed6733d3da61bdb7921
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759429"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299758"
 ---
 # <a name="button"></a>단추
 
@@ -52,13 +52,13 @@ ms.locfileid: "101759429"
 * 전면 케이지 압축
 * 트리거의 펄스 효과입니다.
 
-* 자세한 지침 및 사용자 지정 예제를 보려면 [Mrtk 단추](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md) 를 확인 하세요.
+* 자세한 지침 및 사용자 지정 예제를 보려면 [Mrtk 단추](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) 를 확인 하세요.
 
 <br>
 
 ---
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)
