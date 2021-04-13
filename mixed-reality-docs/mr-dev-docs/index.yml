@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Mixed Reality 설명서
-summary: HoloLens 및 Windows 몰입형 헤드셋에서 Windows Mixed Reality, MRTK(Mixed Reality Toolkit), Unity, Unreal 등을 사용하는 Mixed Reality 애플리케이션의 확장된 환경을 살펴봅니다.
+summary: 'HoloLens 및 Windows 몰입형 헤드셋에서 Windows Mixed Reality, MRTK(Mixed Reality Toolkit), Unity, Unreal 등을 사용하는 Mixed Reality 애플리케이션의 확장된 환경을 살펴봅니다.'
 brand: windows
 metadata:
   title: Mixed Reality 설명서
@@ -13,176 +13,170 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: 61f51b3cfb76e42d869cffe327a14cccd4389afe
-  ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
-  ms.translationtype: HT
-  ms.contentlocale: ko-KR
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "105550623"
 highlightedContent:
   items:
-  - title: 혼합 현실이란?
-    itemType: concept
-    url: discover/mixed-reality.md
-  - title: HoloLens 2 소개
-    itemType: overview
-    url: /hololens/hololens2-hardware
-  - title: Dynamics 365 혼합 현실 애플리케이션
-    itemType: reference
-    url: /dynamics365/mixed-reality/
-  - title: Azure 혼합 현실 클라우드 서비스
-    itemType: whats-new
-    url: develop/mixed-reality-cloud-services.md
-  - title: 개발자
-    itemType: get-started
-    url: develop/development.md
-  - title: IT 관리자
-    itemType: quickstart
-    url: /hololens/hololens-requirements
-  - title: VR 마니아
-    itemType: how-to-guide
-    url: /windows/mixed-reality/enthusiast-guide/vr-journey
-  - title: Microsoft Mesh(미리 보기)
-    itemType: whats-new
-    url: /mesh/overview
+    - title: 혼합 현실이란?
+      itemType: concept
+      url: discover/mixed-reality.md
+    - title: HoloLens 2 소개
+      itemType: overview
+      url: /hololens/hololens2-hardware
+    - title: Dynamics 365 혼합 현실 애플리케이션
+      itemType: reference
+      url: /dynamics365/mixed-reality/
+    - title: 개발자
+      itemType: get-started
+      url: develop/development.md
+    - title: IT 관리자
+      itemType: quickstart
+      url: /hololens/hololens-requirements
+    - title: VR 마니아
+      itemType: how-to-guide
+      url: /windows/mixed-reality/enthusiast-guide/vr-journey
+    - title: Microsoft Mesh(미리 보기)
+      itemType: whats-new
+      url: /mesh/overview
+    - title: AltspaceVR
+      itemType: whats-new
+      url: 'https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey'
 productDirectory:
   title: Mixed Reality 살펴보기
-  summary: 디자이너, 개발자, IT 전문가인지 여부에 관계없이 실행하기 전에 안내받을 수 있는 적절하게 준비된 경로를 제공합니다.
+  summary: '디자이너, 개발자, IT 전문가인지 여부에 관계없이 실행하기 전에 안내받을 수 있는 적절하게 준비된 경로를 제공합니다.'
   items:
-  - title: 디자인
-    imageSrc: images/icon-design.png
-    links:
-    - url: design/design.md
-      text: 디자인 및 프로토타입
-    - url: design/types-of-mixed-reality-apps.md
-      text: Mixed Reality 앱 유형 선택
-    - url: discover/case-study-expanding-the-design-process-for-mixed-reality.md
-      text: 디자인 프로세스 확장
-    - url: design/app-patterns-landingpage.md
-      text: UX 요소에 대해 알아보기
-    - url: design/comfort.md
-      text: 사용자 편의성에 대해 알아보기
-    - url: design/interaction-fundamentals.md
-      text: 상호 작용 기본 사항 이해
-  - title: 개발
-    imageSrc: design/images/icon-developer.png
-    links:
-    - url: develop/development.md
-      text: 기술 경로 선택
-    - url: develop/features-and-samples.md
-      text: 샘플 및 기능 앱 찾기
-    - url: develop/unity/unity-development-overview.md
-      text: Unity 시작
-    - url: develop/unreal/unreal-development-overview.md
-      text: Unreal 시작
-    - url: develop/porting-apps/porting-overview.md
-      text: 기존 앱 포팅
-    - url: distribute/distribute-overview.md
-      text: 앱 게시
-  - title: 배포
-    imageSrc: images/icon-distribution.jpg
-    links:
-    - url: /hololens/hololens-requirements
-      text: 상업용 배포 준비
-    - url: /hololens/hololens-identity
-      text: 사용자 ID 및 로그인 관리
-    - url: /hololens/hololens-enroll-mdm
-      text: 디바이스 등록
-    - url: /hololens/hololens-updates
-      text: HoloLens 업데이트 관리
-    - url: /hololens/hololens2-cloud-connected-overview
-      text: 원격 지원으로 클라우드 연결 배포
-    - url: /hololens/hololens-troubleshooting
-      text: 문제 해결 및 지원
+    - title: 디자인
+      imageSrc: images/icon-design.png
+      links:
+        - url: design/design.md
+          text: 디자인 및 프로토타입
+        - url: design/types-of-mixed-reality-apps.md
+          text: Mixed Reality 앱 유형 선택
+        - url: discover/case-study-expanding-the-design-process-for-mixed-reality.md
+          text: 디자인 프로세스 확장
+        - url: design/app-patterns-landingpage.md
+          text: UX 요소에 대해 알아보기
+        - url: design/comfort.md
+          text: 사용자 편의성에 대해 알아보기
+        - url: design/interaction-fundamentals.md
+          text: 상호 작용 기본 사항 이해
+    - title: 개발
+      imageSrc: design/images/icon-developer.png
+      links:
+        - url: develop/development.md
+          text: 기술 경로 선택
+        - url: develop/features-and-samples.md
+          text: 샘플 및 기능 앱 찾기
+        - url: develop/unity/unity-development-overview.md
+          text: Unity 시작
+        - url: develop/unreal/unreal-development-overview.md
+          text: Unreal 시작
+        - url: develop/porting-apps/porting-overview.md
+          text: 기존 앱 포팅
+        - url: distribute/distribute-overview.md
+          text: 앱 게시
+    - title: 배포
+      imageSrc: images/icon-distribution.jpg
+      links:
+        - url: /hololens/hololens-requirements
+          text: 상업용 배포 준비
+        - url: /hololens/hololens-identity
+          text: 사용자 ID 및 로그인 관리
+        - url: /hololens/hololens-enroll-mdm
+          text: 디바이스 등록
+        - url: /hololens/hololens-updates
+          text: HoloLens 업데이트 관리
+        - url: /hololens/hololens2-cloud-connected-overview
+          text: 원격 지원으로 클라우드 연결 배포
+        - url: /hololens/hololens-troubleshooting
+          text: 문제 해결 및 지원
 conceptualContent:
   title: 프레임워크
   summary: 개발 프로세스에서 선호하는 엔진이나 언어 또는 준비된 하드웨어를 사용하는지 여부에 관계없이 모든 프레임워크를 지원합니다.
   items:
-  - title: Unity
-    summary: Mixed Reality Toolkit SDK를 사용하여 Unity에서 애플리케이션을 만들고, 구성하고, 배포합니다.
-    links:
-    - url: develop/unity/unity-development-overview.md
-      itemType: overview
-      text: Unity 개발 개요
-    - url: develop/unity/mrtk-getting-started.md
-      itemType: overview
-      text: MRTK란?
-    - url: develop/unity/tutorials/mr-learning-base-01.md
-      itemType: tutorial
-      text: HoloLens 2 자습서 시리즈
-    - url: ./out-of-scope/mrtk-101.md
-      itemType: concept
-      text: 핵심 구성 요소
-    - url: develop/unity/shared-experiences-in-unity.md
-      itemType: concept
-      text: 플랫폼 기능 및 API
-    - url: develop/unity/exporting-and-building-a-unity-visual-studio-solution.md
-      itemType: deploy
-      text: 디바이스 또는 에뮬레이터에 배포
-    footerLink:
-      url: develop/unity/unity-development-overview.md
-      text: 자세한 내용
-  - title: Unreal
-    summary: Mixed Reality Toolkit SDK를 사용하여 Unreal에서 애플리케이션을 빌드하고, 사용자 지정하고, 배포합니다.
-    links:
-    - url: develop/unreal/unreal-development-overview.md
-      itemType: overview
-      text: Unreal 개발 개요
-    - url: develop/unreal/tutorials/unreal-uxt-ch1.md
-      itemType: tutorial
-      text: 체스 앱 자습서 시리즈 빌드
-    - url: develop/unreal/unreal-gaze-input.md
-      itemType: concept
-      text: 핵심 구성 요소
-    - url: develop/unreal/unreal-hololens-camera.md
-      itemType: concept
-      text: 플랫폼 기능 및 API
-    - url: develop/unreal/performance-recommendations-for-unreal.md
-      itemType: concept
-      text: 성능 추천 사항
-    - url: develop/unreal/unreal-deploying.md
-      itemType: deploy
-      text: 디바이스 또는 에뮬레이터에 배포
-    footerLink:
-      url: develop/unreal/unreal-development-overview.md
-      text: 자세한 내용
-  - title: 기본
-    summary: OpenXR, WinRT, DirectX를 사용하여 네이티브 홀로그램 환경을 생성합니다.
-    links:
-    - url: develop/native/directx-development-overview.md
-      itemType: overview
-      text: 네이티브 개발 개요
-    - url: develop/native/openxr.md
-      itemType: overview
-      text: OpenXR이란?
-    - url: develop/native/openxr-getting-started.md
-      itemType: get-started
-      text: OpenXR 시작
-    - url: develop/native/openxr-best-practices.md
-      itemType: concept
-      text: OpenXR 모범 사례
-    - url: develop/native/openxr-troubleshooting.md
-      itemType: reference
-      text: OpenXR 문제 해결
-    footerLink:
-      url: develop/native/directx-development-overview.md
-      text: 자세한 내용
+    - title: Unity
+      summary: 'Mixed Reality Toolkit SDK를 사용하여 Unity에서 애플리케이션을 만들고, 구성하고, 배포합니다.'
+      links:
+        - url: develop/unity/unity-development-overview.md
+          itemType: overview
+          text: Unity 개발 개요
+        - url: develop/unity/mrtk-getting-started.md
+          itemType: overview
+          text: MRTK란?
+        - url: develop/unity/tutorials/mr-learning-base-01.md
+          itemType: tutorial
+          text: HoloLens 2 자습서 시리즈
+        - url: ./out-of-scope/mrtk-101.md
+          itemType: concept
+          text: 핵심 구성 요소
+        - url: develop/unity/shared-experiences-in-unity.md
+          itemType: concept
+          text: 플랫폼 기능 및 API
+        - url: develop/unity/exporting-and-building-a-unity-visual-studio-solution.md
+          itemType: deploy
+          text: 디바이스 또는 에뮬레이터에 배포
+      footerLink:
+        url: develop/unity/unity-development-overview.md
+        text: 자세한 내용
+    - title: Unreal
+      summary: 'Mixed Reality Toolkit SDK를 사용하여 Unreal에서 애플리케이션을 빌드하고, 사용자 지정하고, 배포합니다.'
+      links:
+        - url: develop/unreal/unreal-development-overview.md
+          itemType: overview
+          text: Unreal 개발 개요
+        - url: develop/unreal/tutorials/unreal-uxt-ch1.md
+          itemType: tutorial
+          text: 체스 앱 자습서 시리즈 빌드
+        - url: develop/unreal/unreal-gaze-input.md
+          itemType: concept
+          text: 핵심 구성 요소
+        - url: develop/unreal/unreal-hololens-camera.md
+          itemType: concept
+          text: 플랫폼 기능 및 API
+        - url: develop/unreal/performance-recommendations-for-unreal.md
+          itemType: concept
+          text: 성능 추천 사항
+        - url: develop/unreal/unreal-deploying.md
+          itemType: deploy
+          text: 디바이스 또는 에뮬레이터에 배포
+      footerLink:
+        url: develop/unreal/unreal-development-overview.md
+        text: 자세한 내용
+    - title: 기본
+      summary: 'OpenXR, WinRT, DirectX를 사용하여 네이티브 홀로그램 환경을 생성합니다.'
+      links:
+        - url: develop/native/directx-development-overview.md
+          itemType: overview
+          text: 네이티브 개발 개요
+        - url: develop/native/openxr.md
+          itemType: overview
+          text: OpenXR이란?
+        - url: develop/native/openxr-getting-started.md
+          itemType: get-started
+          text: OpenXR 시작
+        - url: develop/native/openxr-best-practices.md
+          itemType: concept
+          text: OpenXR 모범 사례
+        - url: develop/native/openxr-troubleshooting.md
+          itemType: reference
+          text: OpenXR 문제 해결
+      footerLink:
+        url: develop/native/directx-development-overview.md
+        text: 자세한 내용
 tools:
   title: SDK 및 API
   summary: 즐겨찾는 게임 엔진에서 Mixed Reality Toolkit SDK를 시작합니다.
   items:
-  - title: Unity용 MRTK
-    imageSrc: images/Final_mrtk-small_logo.png
-    url: https://github.com/microsoft/MixedRealityToolkit-Unity
-  - title: Unreal용 MRTK
-    imageSrc: images/Final_mrtk-small_logo.png
-    url: https://github.com/microsoft/MixedRealityToolkit-Unreal
-  - title: Unity용 Windows XR 플러그 인
-    imageSrc: images/icon-plugin.png
-    url: https://docs.unity3d.com/Manual/com.unity.xr.windowsmr.html
-  - title: OpenXR 사양
-    imageSrc: images/Final_mrdl_logo.png
-    url: https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html
-  - title: OpenXR API
-    imageSrc: images/Final_mrdl_logo.png
-    url: https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html
+    - title: Unity용 MRTK
+      imageSrc: images/Final_mrtk-small_logo.png
+      url: 'https://github.com/microsoft/MixedRealityToolkit-Unity'
+    - title: Unreal용 MRTK
+      imageSrc: images/Final_mrtk-small_logo.png
+      url: 'https://github.com/microsoft/MixedRealityToolkit-Unreal'
+    - title: Unity용 Windows XR 플러그 인
+      imageSrc: images/icon-plugin.png
+      url: 'https://docs.unity3d.com/Manual/com.unity.xr.windowsmr.html'
+    - title: OpenXR 사양
+      imageSrc: images/Final_mrdl_logo.png
+      url: 'https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html'
+    - title: OpenXR API
+      imageSrc: images/Final_mrdl_logo.png
+      url: 'https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html'
