@@ -6,48 +6,48 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 도구 설명, MRTK, 혼합 현실 도구 키트
-ms.openlocfilehash: ac8d12dbf681fb02df6fe70f3fd7b67615f4a5d6
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 1ab3c00557329fbe53161cbb58c06ee7ede0b66b
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759779"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300318"
 ---
-# <a name="tooltip"></a><span data-ttu-id="fc269-104">도구 설명</span><span class="sxs-lookup"><span data-stu-id="fc269-104">Tooltip</span></span>
+# <a name="tooltip"></a><span data-ttu-id="8bc91-104">도구 설명</span><span class="sxs-lookup"><span data-stu-id="8bc91-104">Tooltip</span></span>
 
 ![도구 설명](images/UX_Hero_Tooltip.jpg)
 
-<span data-ttu-id="fc269-106">도구 설명은 다른 컨트롤이나 개체에 연결된 간단한 설명입니다.</span><span class="sxs-lookup"><span data-stu-id="fc269-106">A tooltip is a short description that is linked to another control or object.</span></span> <span data-ttu-id="fc269-107">이러한 정보는 더 가까운 검사 시 힌트 또는 추가 정보를 전달 하는 데 사용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="fc269-107">They're used to convey a hint or extra information upon closer inspection.</span></span> <span data-ttu-id="fc269-108">도구 설명을 통해 사용자는 실제 환경에서 직접적으로 설명 되지 않은 잘 모르는 개체를 이해할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="fc269-108">Tooltips help users understand unfamiliar objects in the physical environment that aren't described directly.</span></span> 
+<span data-ttu-id="8bc91-106">도구 설명은 다른 컨트롤이나 개체에 연결된 간단한 설명입니다.</span><span class="sxs-lookup"><span data-stu-id="8bc91-106">A tooltip is a short description that is linked to another control or object.</span></span> <span data-ttu-id="8bc91-107">이러한 정보는 더 가까운 검사 시 힌트 또는 추가 정보를 전달 하는 데 사용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="8bc91-107">They're used to convey a hint or extra information upon closer inspection.</span></span> <span data-ttu-id="8bc91-108">도구 설명을 통해 사용자는 실제 환경에서 직접적으로 설명 되지 않은 잘 모르는 개체를 이해할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8bc91-108">Tooltips help users understand unfamiliar objects in the physical environment that aren't described directly.</span></span> 
 
 <br>
 
 ---
 
-## <a name="tooltip-in-mrtk-mixed-reality-toolkit-for-unity"></a><span data-ttu-id="fc269-109">Unity 용 MRTK (Mixed Reality Toolkit)의 도구 설명</span><span class="sxs-lookup"><span data-stu-id="fc269-109">Tooltip in MRTK (Mixed Reality Toolkit) for Unity</span></span>
+## <a name="tooltip-in-mrtk-mixed-reality-toolkit-for-unity"></a><span data-ttu-id="8bc91-109">Unity 용 MRTK (Mixed Reality Toolkit)의 도구 설명</span><span class="sxs-lookup"><span data-stu-id="8bc91-109">Tooltip in MRTK (Mixed Reality Toolkit) for Unity</span></span>
 
-* [<span data-ttu-id="fc269-110">MRTK-도구 설명</span><span class="sxs-lookup"><span data-stu-id="fc269-110">MRTK - Tooltip</span></span>](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/tooltip.md)
+* [<span data-ttu-id="8bc91-110">MRTK-도구 설명</span><span class="sxs-lookup"><span data-stu-id="8bc91-110">MRTK - Tooltip</span></span>](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/tooltip)
 
 <br>
 
 ---
 
-## <a name="see-also"></a><span data-ttu-id="fc269-111">참고 항목</span><span class="sxs-lookup"><span data-stu-id="fc269-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8bc91-111">참조</span><span class="sxs-lookup"><span data-stu-id="8bc91-111">See also</span></span>
 
-* [<span data-ttu-id="fc269-112">커서</span><span class="sxs-lookup"><span data-stu-id="fc269-112">Cursors</span></span>](cursors.md)
-* [<span data-ttu-id="fc269-113">손 광선</span><span class="sxs-lookup"><span data-stu-id="fc269-113">Hand ray</span></span>](point-and-commit.md)
-* [<span data-ttu-id="fc269-114">Button</span><span class="sxs-lookup"><span data-stu-id="fc269-114">Button</span></span>](button.md)
-* [<span data-ttu-id="fc269-115">상호 작용 가능한 개체</span><span class="sxs-lookup"><span data-stu-id="fc269-115">Interactable object</span></span>](interactable-object.md)
-* [<span data-ttu-id="fc269-116">경계 상자 및 앱 바</span><span class="sxs-lookup"><span data-stu-id="fc269-116">Bounding box and App bar</span></span>](app-bar-and-bounding-box.md)
-* [<span data-ttu-id="fc269-117">조작</span><span class="sxs-lookup"><span data-stu-id="fc269-117">Manipulation</span></span>](direct-manipulation.md)
-* [<span data-ttu-id="fc269-118">손 메뉴</span><span class="sxs-lookup"><span data-stu-id="fc269-118">Hand menu</span></span>](hand-menu.md)
-* [<span data-ttu-id="fc269-119">Near 메뉴</span><span class="sxs-lookup"><span data-stu-id="fc269-119">Near menu</span></span>](near-menu.md)
-* [<span data-ttu-id="fc269-120">개체 컬렉션</span><span class="sxs-lookup"><span data-stu-id="fc269-120">Object collection</span></span>](object-collection.md)
-* [<span data-ttu-id="fc269-121">음성 명령</span><span class="sxs-lookup"><span data-stu-id="fc269-121">Voice command</span></span>](voice-input.md)
-* [<span data-ttu-id="fc269-122">키보드</span><span class="sxs-lookup"><span data-stu-id="fc269-122">Keyboard</span></span>](keyboard.md)
-* [<span data-ttu-id="fc269-123">Tooltip</span><span class="sxs-lookup"><span data-stu-id="fc269-123">Tooltip</span></span>](tooltip.md)
-* [<span data-ttu-id="fc269-124">슬레이트</span><span class="sxs-lookup"><span data-stu-id="fc269-124">Slate</span></span>](slate.md)
-* [<span data-ttu-id="fc269-125">슬라이더</span><span class="sxs-lookup"><span data-stu-id="fc269-125">Slider</span></span>](slider.md)
-* [<span data-ttu-id="fc269-126">셰이더</span><span class="sxs-lookup"><span data-stu-id="fc269-126">Shader</span></span>](shader.md)
-* [<span data-ttu-id="fc269-127">빌보딩 및 태그얼롱</span><span class="sxs-lookup"><span data-stu-id="fc269-127">Billboarding and tag-along</span></span>](billboarding-and-tag-along.md)
-* [<span data-ttu-id="fc269-128">진행률 표시</span><span class="sxs-lookup"><span data-stu-id="fc269-128">Displaying progress</span></span>](progress.md)
-* [<span data-ttu-id="fc269-129">표면 자성</span><span class="sxs-lookup"><span data-stu-id="fc269-129">Surface magnetism</span></span>](surface-magnetism.md)
+* [<span data-ttu-id="8bc91-112">커서</span><span class="sxs-lookup"><span data-stu-id="8bc91-112">Cursors</span></span>](cursors.md)
+* [<span data-ttu-id="8bc91-113">손 광선</span><span class="sxs-lookup"><span data-stu-id="8bc91-113">Hand ray</span></span>](point-and-commit.md)
+* [<span data-ttu-id="8bc91-114">Button</span><span class="sxs-lookup"><span data-stu-id="8bc91-114">Button</span></span>](button.md)
+* [<span data-ttu-id="8bc91-115">상호 작용 가능한 개체</span><span class="sxs-lookup"><span data-stu-id="8bc91-115">Interactable object</span></span>](interactable-object.md)
+* [<span data-ttu-id="8bc91-116">경계 상자 및 앱 바</span><span class="sxs-lookup"><span data-stu-id="8bc91-116">Bounding box and App bar</span></span>](app-bar-and-bounding-box.md)
+* [<span data-ttu-id="8bc91-117">조작</span><span class="sxs-lookup"><span data-stu-id="8bc91-117">Manipulation</span></span>](direct-manipulation.md)
+* [<span data-ttu-id="8bc91-118">손 메뉴</span><span class="sxs-lookup"><span data-stu-id="8bc91-118">Hand menu</span></span>](hand-menu.md)
+* [<span data-ttu-id="8bc91-119">Near 메뉴</span><span class="sxs-lookup"><span data-stu-id="8bc91-119">Near menu</span></span>](near-menu.md)
+* [<span data-ttu-id="8bc91-120">개체 컬렉션</span><span class="sxs-lookup"><span data-stu-id="8bc91-120">Object collection</span></span>](object-collection.md)
+* [<span data-ttu-id="8bc91-121">음성 명령</span><span class="sxs-lookup"><span data-stu-id="8bc91-121">Voice command</span></span>](voice-input.md)
+* [<span data-ttu-id="8bc91-122">키보드</span><span class="sxs-lookup"><span data-stu-id="8bc91-122">Keyboard</span></span>](keyboard.md)
+* [<span data-ttu-id="8bc91-123">Tooltip</span><span class="sxs-lookup"><span data-stu-id="8bc91-123">Tooltip</span></span>](tooltip.md)
+* [<span data-ttu-id="8bc91-124">슬레이트</span><span class="sxs-lookup"><span data-stu-id="8bc91-124">Slate</span></span>](slate.md)
+* [<span data-ttu-id="8bc91-125">슬라이더</span><span class="sxs-lookup"><span data-stu-id="8bc91-125">Slider</span></span>](slider.md)
+* [<span data-ttu-id="8bc91-126">셰이더</span><span class="sxs-lookup"><span data-stu-id="8bc91-126">Shader</span></span>](shader.md)
+* [<span data-ttu-id="8bc91-127">빌보딩 및 태그얼롱</span><span class="sxs-lookup"><span data-stu-id="8bc91-127">Billboarding and tag-along</span></span>](billboarding-and-tag-along.md)
+* [<span data-ttu-id="8bc91-128">진행률 표시</span><span class="sxs-lookup"><span data-stu-id="8bc91-128">Displaying progress</span></span>](progress.md)
+* [<span data-ttu-id="8bc91-129">표면 자성</span><span class="sxs-lookup"><span data-stu-id="8bc91-129">Surface magnetism</span></span>](surface-magnetism.md)
