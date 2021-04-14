@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 검색, 배포, 인덱스, 방문 페이지, 디자인, 개발, 자습서, 샘플 앱, 기본 사항, 사례 연구, 리소스, HoloLens 방법, 오픈 소스 프로젝트, 핵심 개념, 상호 작용, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: f4a4ea50c45263f18079da76dd8dfd5f31e2af44
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 36af6b1c439c47eef2126408d1185ecfe151cf8b
+ms.sourcegitcommit: e9a0ba97fd288479ad324cdaabee9b6abc9f4dc2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98110451"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107221565"
 ---
 # <a name="start-designing-and-prototyping"></a>디자인 및 프로토타입 생성 시작
 
@@ -40,6 +40,7 @@ Mixed Reality 애플리케이션은 오늘날 전 세계의 다른 애플리케�
 | [Mixed Reality 앱 유형](types-of-mixed-reality-apps.md) | 앱 환경이 Mixed Reality 스펙트럼에서 라이브 상태가 되는 위치를 결정합니다. |
 | [Holograms 앱 디자인](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | 놀라운 HoloLens 앱을 만들기 위한 동작, 팁 및 권장 사항을 경험하면서 혼합 현실 UX 디자인의 기본 사항에 대해 알아봅니다(HoloLens 2의 Microsoft Store에서 다운로드 가능). |
 | [MRTK 예제 허브](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | 혼합 현실을 위한 공통 공간 상호 작용 및 UX 구성 요소를 경험할 수 있습니다(HoloLens 2의 Microsoft Store에서 다운로드할 수 있음). |
+| **선택 사항** [Figma 도구 키트 다운로드](figma-toolkit.md) | Figma 도구 키트는 MRTK에서 사용할 수 있는 구성 요소를 기반으로 UI를 스케치하고 레이아웃하는 데 사용할 자산을 제공합니다. |
 
 ### <a name="2-core-concepts"></a>2. 핵심 개념
 

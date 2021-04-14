@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 테스트, MRTK, MRTK 버전 2, HoloLens 2, unity, 포팅, HoloLens 1세대, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 마이그레이션, 모범 사례, ARM
-ms.openlocfilehash: c55eb47c7fa8e87fd1fe96fd3b81f3cd3a3ee5a0
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 5315e4d391824bbc17bc4cc4c3c047d671063895
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009913"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299898"
 ---
 # <a name="porting-hololens-1st-gen-apps-to-hololens-2"></a>HoloLens(1세대) 앱을 HoloLens 2로 포팅
 
@@ -80,36 +80,36 @@ HoloLens(1세대)는 x86 프로세서에서 애플리케이션을 실행하지�
 
 MRTK 버전 2를 사용하는 방법에 대한 자세한 내용은 다음 리소스를 확인하세요.
 
-- [MRTK - 설명서 홈(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
-- [설치 가이드(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
-- [MRTK - 손 추적(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/HandTracking.html)
-- [MRTK - 시선 추적(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)
+- [MRTK - 설명서 홈](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity)
+- [설치 가이드](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/install-the-tools)
+- [MRTK - 손 추적](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/hand-tracking)
+- [MRTK - 시선 추적](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 
 ### <a name="prepare-for-the-migration"></a>마이그레이션 준비
 
-새 [MRTK v2용 *.unitypackage 파일](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)을 삽입하기 전에 **1) MRTK v1과 통합되는 사용자 지정 코드** 및 **2) 입력 상호 작용 또는 UX 구성 요소에 대한 사용자 지정 코드** 인벤토리를 만드는 것이 좋습니다. MRTK v2를 수집하는 혼합 현실 개발자에게 가장 흔하게 나타나는 충돌은 입력 및 조작과 관련된 것입니다. 먼저 [MRTK v2 입력 모델](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)을 읽고 이해하는 것이 중요합니다.
+새 [MRTK v2용 *.unitypackage 파일](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)을 삽입하기 전에 **1) MRTK v1과 통합되는 사용자 지정 코드** 및 **2) 입력 상호 작용 또는 UX 구성 요소에 대한 사용자 지정 코드** 인벤토리를 만드는 것이 좋습니다. MRTK v2를 수집하는 혼합 현실 개발자에게 가장 흔하게 나타나는 충돌은 입력 및 조작과 관련된 것입니다. 먼저 [MRTK v2 입력 모델](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview)을 읽고 이해하는 것이 중요합니다.
 
-마지막으로, 새 [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity)는 스크립트 및 장면 내 관리자 개체의 모델에서 구성 및 서비스 공급자 아키텍처로 전환되었습니다. 이로 인해 보다 명확한 장면 계층 구조 및 아키텍처 모델이 구현되지만, 새로운 구성 프로필을 이해하기 위한 학습 곡선이 필요합니다. [Mixed Reality Toolkit 구성 가이드](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html)를 읽어보고 애플리케이션 요구에 맞게 조정해야 하는 중요한 설정 및 프로필에 익숙해지도록 합니다.
+마지막으로, 새 [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity)는 스크립트 및 장면 내 관리자 개체의 모델에서 구성 및 서비스 공급자 아키텍처로 전환되었습니다. 이로 인해 보다 명확한 장면 계층 구조 및 아키텍처 모델이 구현되지만, 새로운 구성 프로필을 이해하기 위한 학습 곡선이 필요합니다. [Mixed Reality Toolkit 구성 가이드](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide)를 읽어보고 애플리케이션 요구에 맞게 조정해야 하는 중요한 설정 및 프로필에 익숙해지도록 합니다.
 
 ### <a name="migrating-the-project"></a>프로젝트 마이그레이션
 
 [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity)를 가져온 후 Unity 프로젝트에 컴파일러 관련 오류가 많이 나타날 가능성이 높습니다. 이러한 오류가 발생하는 가장 일반적인 이유는 새로운 네임스페이스 구조 및 새로운 구성 요소 이름 때문입니다. 새로운 네임스페이스 및 구성 요소에 맞게 스크립트를 수정하여 이러한 오류를 계속 해결합니다.
 
-HTK/MRTK와 MRTK v2 간의 특정 API 차이점에 대한 자세한 내용은 [MRTK 버전 2 wiki](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)의 포팅 가이드를 참조하세요.
+HTK/MRTK와 MRTK v2 간의 특정 API 차이점에 대한 자세한 내용은 [MRTK 버전 2 wiki](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/updates-deployment/htk-to-mrtk-porting-guide)의 포팅 가이드를 참조하세요.
 
 ### <a name="best-practices"></a>모범 사례
 
-- 기본적으로 [MRTK 표준 셰이더](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)를 사용합니다.
-- 한 번에 한 가지 중요 변경 유형 처리(예: IFocusable에서 [IMixedRealityFocusHandler](https://microsoft.github.io/MixedRealityToolkit-Unity/api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusHandler.html)로의 변경)
+- 기본적으로 [MRTK 표준 셰이더](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)를 사용합니다.
+- 한 번에 한 가지 중요 변경 유형 처리(예: IFocusable에서 [IMixedRealityFocusHandler](https://docs.microsoft.com/dotnet/api/microsoft.mixedreality.toolkit.input.imixedrealityfocushandler)로의 변경)
 - 변경할 때마다 테스트하고 소스 제어를 사용합니다.
 - 가능한 경우 기본 MRTK UX(단추, 슬레이트 등)를 사용합니다.
 - MRTK 파일을 직접 수정하지 않고, MRTK 구성 요소에 대해 래퍼를 만듭니다.
-    - 그러면 향후 MRTK 삽입 및 업데이트가 편리해집니다.
+  - 이 작업을 수행하면 향후 MRTK 수집 및 업데이트가 쉬워집니다.
 - MRTK에 제공된 샘플 장면(특히 *HandInteractionExamples.scene*)을 검토 및 탐색합니다.
 - quads, colliders 및 TextMeshPro 텍스트를 사용하여 캔버스 기반 UI를 다시 빌드합니다.
-- [깊이 버퍼 공유](../unity/camera-in-unity.md#sharing-your-depth-buffers-with-windows) 또는 [포커스 포인트 설정](../unity/focus-point-in-unity.md)을 사용하도록 설정합니다. 성능 향상을 위해 16비트 깊이 버퍼를 사용하는 것이 좋습니다. 색을 렌더링할 때 깊이도 렌더링하는지 확인합니다. Unity는 일반적으로 투명 및 텍스트 gameobject에 대한 심도를 작성하지 않습니다. 
+- [깊이 버퍼 공유](../unity/camera-in-unity.md#sharing-depth-buffers) 또는 [포커스 포인트 설정](../unity/focus-point-in-unity.md)을 사용하도록 설정합니다. 성능 향상을 위해 16비트 깊이 버퍼를 사용하는 것이 좋습니다. 색을 렌더링할 때 깊이도 렌더링하는지 확인합니다. Unity는 일반적으로 투명 및 텍스트 gameobject에 대한 심도를 작성하지 않습니다.
 - 단일 패스 인스턴스 렌더링 경로를 설정합니다.
-- [MRTK에 대한 HoloLens 2 구성 프로필](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html#hololens-2-profile) 사용
+- [MRTK에 대한 HoloLens 2 구성 프로필](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/profiles/profiles#hololens-2-profile) 사용
 
 ### <a name="testing-your-application"></a>애플리케이션 테스트
 
@@ -150,10 +150,10 @@ HoloLens 2에 가장 적합하게 애플리케이션 디자인을 업데이트�
 - ARM의 셰이더 컴파일러는 셰이더 로드 타임이 아니라, 셰이더가 로드되었거나 셰이더가 의존하는 대상이 변경된 이후의 첫 번째 그리기 호출 동안 실행됩니다. 프레임 속도에 미치는 영향은 컴파일해야 하는 셰이더 수에 따라 눈에 띄게 달라질 수 있으며, 셰이더 처리, 패키징, 업데이트 방법에 미치는 영향은 HoloLens 2와 HoloLens(1세대)에서 서로 다릅니다.
 
 ## <a name="see-also"></a>참고 항목
+
 * [도구 설치](../install-the-tools.md)
-* [MRTK - 설치 가이드(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
-* [MRTK - 설명서 홈(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
-* [HoloToolkit/MRTK에서 MRTK 버전 2로 포팅(GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
+* [MRTK - 설치 가이드](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/install-the-tools)
+* [MRTK - 설명서 홈](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity)
+* [HoloToolkit/MRTK에서 MRTK 버전 2로 포팅](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/updates-deployment/htk-to-mrtk-porting-guide)
 * [Unity 권장 설정](../unity/recommended-settings-for-unity.md)
 * [혼합 현실의 성능 이해](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
-
