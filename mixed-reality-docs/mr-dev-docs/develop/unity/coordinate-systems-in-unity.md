@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 좌표계, 공간 좌표계, 방향 전용, 고정 크기 조정, 대규모 공간 규모, 세계 규모, 360 학위, 고가, 장소, 전 세계, 규모, 위치, 방향, Unity, 앵커, 공간 고정, 전 세계 앵커, 전 세계 잠금, 세계 recenter, 본문 잠금, 본문 잠금, 손실 추적, locatability, 경계,, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: aa68ae44e09dfe579f8ab8924d1b300506a1f00e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 91b1adf6dcf1c54d0d29a02bfb97ac4674a87c88
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581069"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107528744"
 ---
 # <a name="coordinate-systems-in-unity"></a>Unity의 좌표계
 
-Windows Mixed Reality는 규모에 상관 없이 공간 규모 앱을 통해 응용 프로그램을 수평으로 확장 하 여 규모에 상관 없이 광범위 한 [환경](../../design/coordinate-systems.md)에서 앱을 지원 합니다. HoloLens에서 더 나아가 사용자가 5 미터 이상 이동할 수 있도록 하는 세계적인 규모의 앱을 빌드할 수 있습니다.
+Windows Mixed Reality는 규모에 상관 없이 공간 규모 앱을 통해 응용 프로그램을 수평으로 확장 하 여 규모에 상관 없이 광범위 한 환경에서 앱을 지원 합니다. HoloLens에서 더 나아가 사용자가 5 미터 이상 이동할 수 있도록 하는 세계적인 규모의 앱을 빌드할 수 있습니다.
 
-Unity에서 혼합 현실 환경을 빌드하는 첫 번째 단계는 앱이 대상으로 하는 [환경 규모](../../design/coordinate-systems.md) 를 결정 하는 것입니다.
+Unity에서 혼합 현실 환경을 빌드하는 첫 번째 단계는 좌표계를 이해 하 고 앱이 대상으로 하는 [환경 크기를 선택](../../design/coordinate-systems.md) 하는 것입니다.
 
 ## <a name="building-an-orientation-only-or-seated-scale-experience"></a>방향 전용 또는 확장 된 환경 구축
 
@@ -102,7 +102,7 @@ Unity에서는 GameObject에 **WorldAnchor** Unity 구성 요소를 추가 하 �
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-정말 간단하죠. 이 게임 개체는 이제 실제 세계의 현재 위치에 고정 되어 있습니다 .이를 통해 Unity 세계 좌표가 약간 조정 되어 물리적 맞춤을 확인할 수 있습니다. [지 속성](persistence-in-unity.md) 을 사용 하 여 이후 앱 세션에서이 앵커 된 위치를 다시 찾습니다.
+이것으로 끝입니다. 이 게임 개체는 이제 실제 세계의 현재 위치에 고정 되어 있습니다 .이를 통해 Unity 세계 좌표가 약간 조정 되어 물리적 맞춤을 확인할 수 있습니다. [지 속성](persistence-in-unity.md) 을 사용 하 여 이후 앱 세션에서이 앵커 된 위치를 다시 찾습니다.
 
 ### <a name="removing-a-world-anchor"></a>세계 앵커 제거
 
