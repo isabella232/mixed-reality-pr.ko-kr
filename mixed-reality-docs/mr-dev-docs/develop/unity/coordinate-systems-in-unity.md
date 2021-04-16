@@ -6,53 +6,53 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 좌표계, 공간 좌표계, 방향 전용, 고정 크기 조정, 대규모 공간 규모, 세계 규모, 360 학위, 고가, 장소, 전 세계, 규모, 위치, 방향, Unity, 앵커, 공간 고정, 전 세계 앵커, 전 세계 잠금, 세계 recenter, 본문 잠금, 본문 잠금, 손실 추적, locatability, 경계,, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: aa68ae44e09dfe579f8ab8924d1b300506a1f00e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 91b1adf6dcf1c54d0d29a02bfb97ac4674a87c88
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581069"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107528744"
 ---
-# <a name="coordinate-systems-in-unity"></a><span data-ttu-id="66116-104">Unity의 좌표계</span><span class="sxs-lookup"><span data-stu-id="66116-104">Coordinate systems in Unity</span></span>
+# <a name="coordinate-systems-in-unity"></a><span data-ttu-id="a46d7-104">Unity의 좌표계</span><span class="sxs-lookup"><span data-stu-id="a46d7-104">Coordinate systems in Unity</span></span>
 
-<span data-ttu-id="66116-105">Windows Mixed Reality는 규모에 상관 없이 공간 규모 앱을 통해 응용 프로그램을 수평으로 확장 하 여 규모에 상관 없이 광범위 한 [환경](../../design/coordinate-systems.md)에서 앱을 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="66116-105">Windows Mixed Reality supports apps across a wide range of [experience scales](../../design/coordinate-systems.md), from orientation-only and seated-scale apps up through room-scale apps.</span></span> <span data-ttu-id="66116-106">HoloLens에서 더 나아가 사용자가 5 미터 이상 이동할 수 있도록 하는 세계적인 규모의 앱을 빌드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-106">On HoloLens, you can go further and build world-scale apps that let users walk beyond 5 meters, exploring an entire floor of a building and beyond.</span></span>
+<span data-ttu-id="a46d7-105">Windows Mixed Reality는 규모에 상관 없이 공간 규모 앱을 통해 응용 프로그램을 수평으로 확장 하 여 규모에 상관 없이 광범위 한 환경에서 앱을 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-105">Windows Mixed Reality supports apps across a wide range of experience scales, from orientation-only and seated-scale apps up through room-scale apps.</span></span> <span data-ttu-id="a46d7-106">HoloLens에서 더 나아가 사용자가 5 미터 이상 이동할 수 있도록 하는 세계적인 규모의 앱을 빌드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-106">On HoloLens, you can go further and build world-scale apps that let users walk beyond 5 meters, exploring an entire floor of a building and beyond.</span></span>
 
-<span data-ttu-id="66116-107">Unity에서 혼합 현실 환경을 빌드하는 첫 번째 단계는 앱이 대상으로 하는 [환경 규모](../../design/coordinate-systems.md) 를 결정 하는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="66116-107">Your first step in building a mixed reality experience in Unity is to determine which [experience scale](../../design/coordinate-systems.md) your app will target.</span></span>
+<span data-ttu-id="a46d7-107">Unity에서 혼합 현실 환경을 빌드하는 첫 번째 단계는 좌표계를 이해 하 고 앱이 대상으로 하는 [환경 크기를 선택](../../design/coordinate-systems.md) 하는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-107">Your first step in building a mixed reality experience in Unity is to understand [coordinate systems and choose the experience scale](../../design/coordinate-systems.md) your app will target.</span></span>
 
-## <a name="building-an-orientation-only-or-seated-scale-experience"></a><span data-ttu-id="66116-108">방향 전용 또는 확장 된 환경 구축</span><span class="sxs-lookup"><span data-stu-id="66116-108">Building an orientation-only or seated-scale experience</span></span>
+## <a name="building-an-orientation-only-or-seated-scale-experience"></a><span data-ttu-id="a46d7-108">방향 전용 또는 확장 된 환경 구축</span><span class="sxs-lookup"><span data-stu-id="a46d7-108">Building an orientation-only or seated-scale experience</span></span>
 
-<span data-ttu-id="66116-109">**네임 스페이스:** *UNITYENGINE. XR*</span><span class="sxs-lookup"><span data-stu-id="66116-109">**Namespace:** *UnityEngine.XR*</span></span><br>
-<span data-ttu-id="66116-110">**유형:** *xrdevice*</span><span class="sxs-lookup"><span data-stu-id="66116-110">**Type:** *XRDevice*</span></span>
+<span data-ttu-id="a46d7-109">**네임 스페이스:** *UNITYENGINE. XR*</span><span class="sxs-lookup"><span data-stu-id="a46d7-109">**Namespace:** *UnityEngine.XR*</span></span><br>
+<span data-ttu-id="a46d7-110">**유형:** *xrdevice*</span><span class="sxs-lookup"><span data-stu-id="a46d7-110">**Type:** *XRDevice*</span></span>
 
-<span data-ttu-id="66116-111">**방향 전용** 또는 통합 된 **환경을** 구축 하려면 Unity를 고정 된 추적 공간 형식으로 설정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="66116-111">To build an **orientation-only** or **seated-scale experience**, you need to set Unity to the Stationary tracking space type.</span></span> <span data-ttu-id="66116-112">고정 된 추적 공간에서는 Unity의 세계 좌표 시스템을 설정 하 여 [고정 된 참조 프레임](../../design/coordinate-systems.md#spatial-coordinate-systems)을 추적 합니다.</span><span class="sxs-lookup"><span data-stu-id="66116-112">Stationary tracking space sets Unity's world coordinate system to track the [stationary frame of reference](../../design/coordinate-systems.md#spatial-coordinate-systems).</span></span> <span data-ttu-id="66116-113">고정 추적 모드에서 카메라의 기본 위치 바로 앞에 있는 편집기에 배치 된 콘텐츠 (앞으로-Z)는 앱이 시작 될 때 사용자 앞에 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="66116-113">In the Stationary tracking mode, content placed in the editor just in front of the camera's default location (forward is -Z) will appear in front of the user when the app launches.</span></span>
+<span data-ttu-id="a46d7-111">**방향 전용** 또는 통합 된 **환경을** 구축 하려면 Unity를 고정 된 추적 공간 형식으로 설정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-111">To build an **orientation-only** or **seated-scale experience**, you need to set Unity to the Stationary tracking space type.</span></span> <span data-ttu-id="a46d7-112">고정 된 추적 공간에서는 Unity의 세계 좌표 시스템을 설정 하 여 [고정 된 참조 프레임](../../design/coordinate-systems.md#spatial-coordinate-systems)을 추적 합니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-112">Stationary tracking space sets Unity's world coordinate system to track the [stationary frame of reference](../../design/coordinate-systems.md#spatial-coordinate-systems).</span></span> <span data-ttu-id="a46d7-113">고정 추적 모드에서 카메라의 기본 위치 바로 앞에 있는 편집기에 배치 된 콘텐츠 (앞으로-Z)는 앱이 시작 될 때 사용자 앞에 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-113">In the Stationary tracking mode, content placed in the editor just in front of the camera's default location (forward is -Z) will appear in front of the user when the app launches.</span></span>
 
 ```cs
 XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
 ```
 
-<span data-ttu-id="66116-114">**네임 스페이스:** *UNITYENGINE. XR*</span><span class="sxs-lookup"><span data-stu-id="66116-114">**Namespace:** *UnityEngine.XR*</span></span><br>
-<span data-ttu-id="66116-115">**형식:** *inputtracking*</span><span class="sxs-lookup"><span data-stu-id="66116-115">**Type:** *InputTracking*</span></span>
+<span data-ttu-id="a46d7-114">**네임 스페이스:** *UNITYENGINE. XR*</span><span class="sxs-lookup"><span data-stu-id="a46d7-114">**Namespace:** *UnityEngine.XR*</span></span><br>
+<span data-ttu-id="a46d7-115">**형식:** *inputtracking*</span><span class="sxs-lookup"><span data-stu-id="a46d7-115">**Type:** *InputTracking*</span></span>
 
-<span data-ttu-id="66116-116">360도 비디오 뷰어 (위치 헤드 업데이트에서 환상 효과를 ruin)와 같은 순수한 **방향 전용 환경** 에서는 XR를 설정할 수 있습니다 [. InputTracking. disablePositionalTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking-disablePositionalTracking.html) 을 true로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="66116-116">For a pure **orientation-only experience** such as a 360-degree video viewer (where positional head updates would ruin the illusion), you can then set [XR.InputTracking.disablePositionalTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking-disablePositionalTracking.html) to true:</span></span>
+<span data-ttu-id="a46d7-116">360도 비디오 뷰어 (위치 헤드 업데이트에서 환상 효과를 ruin)와 같은 순수한 **방향 전용 환경** 에서는 XR를 설정할 수 있습니다 [. InputTracking. disablePositionalTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking-disablePositionalTracking.html) 을 true로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-116">For a pure **orientation-only experience** such as a 360-degree video viewer (where positional head updates would ruin the illusion), you can then set [XR.InputTracking.disablePositionalTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking-disablePositionalTracking.html) to true:</span></span>
 
 ```cs
 InputTracking.disablePositionalTracking = true;
 ```
 
-<span data-ttu-id="66116-117">사용자가 나중에 연결 된 원본을 recenter 할 수 있도록 하는 **확장 된 환경의** 경우 XR를 호출할 수 있습니다 [. Recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) 메서드:</span><span class="sxs-lookup"><span data-stu-id="66116-117">For a **seated-scale experience**, to let the user later recenter the seated origin, you can call the [XR.InputTracking.Recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) method:</span></span>
+<span data-ttu-id="a46d7-117">사용자가 나중에 연결 된 원본을 recenter 할 수 있도록 하는 **확장 된 환경의** 경우 XR를 호출할 수 있습니다 [. Recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) 메서드:</span><span class="sxs-lookup"><span data-stu-id="a46d7-117">For a **seated-scale experience**, to let the user later recenter the seated origin, you can call the [XR.InputTracking.Recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) method:</span></span>
 
 ```cs
 InputTracking.Recenter();
 ```
 
-## <a name="building-a-standing-scale-or-room-scale-experience"></a><span data-ttu-id="66116-118">대규모 또는 공간 확장 환경 구축</span><span class="sxs-lookup"><span data-stu-id="66116-118">Building a standing-scale or room-scale experience</span></span>
+## <a name="building-a-standing-scale-or-room-scale-experience"></a><span data-ttu-id="a46d7-118">대규모 또는 공간 확장 환경 구축</span><span class="sxs-lookup"><span data-stu-id="a46d7-118">Building a standing-scale or room-scale experience</span></span>
 
-<span data-ttu-id="66116-119">**네임 스페이스:** *UNITYENGINE. XR*</span><span class="sxs-lookup"><span data-stu-id="66116-119">**Namespace:** *UnityEngine.XR*</span></span><br>
-<span data-ttu-id="66116-120">**유형:** *xrdevice*</span><span class="sxs-lookup"><span data-stu-id="66116-120">**Type:** *XRDevice*</span></span>
+<span data-ttu-id="a46d7-119">**네임 스페이스:** *UNITYENGINE. XR*</span><span class="sxs-lookup"><span data-stu-id="a46d7-119">**Namespace:** *UnityEngine.XR*</span></span><br>
+<span data-ttu-id="a46d7-120">**유형:** *xrdevice*</span><span class="sxs-lookup"><span data-stu-id="a46d7-120">**Type:** *XRDevice*</span></span>
 
-<span data-ttu-id="66116-121">**대규모 또는** **공간 규모의 경험** 을 위해 바닥을 기준으로 콘텐츠를 넣어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="66116-121">For a **standing-scale** or **room-scale experience**, you'll need to place content relative to the floor.</span></span> <span data-ttu-id="66116-122">사용자의 층을 사용 하는 이유는 사용자의 정의 된 최고 수준 원점 및 선택적 대화방 경계를 나타내는 **[공간 단계](../../design/coordinate-systems.md#spatial-coordinate-systems)** 를 처음 실행 하는 동안 설정 하는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="66116-122">You reason about the user's floor using the **[spatial stage](../../design/coordinate-systems.md#spatial-coordinate-systems)**, which represents the user's defined floor-level origin and optional room boundary, set up during first run.</span></span>
+<span data-ttu-id="a46d7-121">**대규모 또는** **공간 규모의 경험** 을 위해 바닥을 기준으로 콘텐츠를 넣어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-121">For a **standing-scale** or **room-scale experience**, you'll need to place content relative to the floor.</span></span> <span data-ttu-id="a46d7-122">사용자의 층을 사용 하는 이유는 사용자의 정의 된 최고 수준 원점 및 선택적 대화방 경계를 나타내는 **[공간 단계](../../design/coordinate-systems.md#spatial-coordinate-systems)** 를 처음 실행 하는 동안 설정 하는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-122">You reason about the user's floor using the **[spatial stage](../../design/coordinate-systems.md#spatial-coordinate-systems)**, which represents the user's defined floor-level origin and optional room boundary, set up during first run.</span></span>
 
-<span data-ttu-id="66116-123">Unity가 최고 좌표계로 작동 하는지 확인 하기 위해 RoomScale 추적 공간 유형을 사용 하 여 Unity를 설정 하 고 테스트할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-123">To ensure that Unity is operating with its world coordinate system at floor-level, you can set and test that Unity is using the RoomScale tracking space type:</span></span>
+<span data-ttu-id="a46d7-123">Unity가 최고 좌표계로 작동 하는지 확인 하기 위해 RoomScale 추적 공간 유형을 사용 하 여 Unity를 설정 하 고 테스트할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-123">To ensure that Unity is operating with its world coordinate system at floor-level, you can set and test that Unity is using the RoomScale tracking space type:</span></span>
 
 ```cs
 if (XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale))
@@ -64,18 +64,18 @@ else
     // RoomScale mode was not set successfully.  App cannot make assumptions about where the floor plane is.
 }
 ```
-* <span data-ttu-id="66116-124">SetTrackingSpaceType가 true를 반환 하는 경우 Unity는 세계 좌표계를 정상적으로 전환 하 여 [참조의 스테이지 프레임](../../design/coordinate-systems.md#spatial-coordinate-systems)을 추적 했습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-124">If SetTrackingSpaceType returns true, Unity has successfully switched its world coordinate system to track the [stage frame of reference](../../design/coordinate-systems.md#spatial-coordinate-systems).</span></span>
-* <span data-ttu-id="66116-125">SetTrackingSpaceType가 false를 반환 하는 경우 Unity는 사용자의 환경에서 바닥을 설정 하지 않았기 때문에 참조의 스테이지 프레임으로 전환할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-125">If SetTrackingSpaceType returns false, Unity was unable to switch to the stage frame of reference, likely because the user has not set up a floor in their environment.</span></span> <span data-ttu-id="66116-126">False 반환 값은 일반적이 지 않지만 다른 방에 단계를 설정 하 고 사용자가 새 단계를 설정 하지 않은 상태에서 현재 대화방으로 장치를 이동 하는 경우 발생할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-126">While a false return value isn't common, it can happen if the stage is set up in a different room and the device is moved to the current room without the user setting up a new stage.</span></span>
+* <span data-ttu-id="a46d7-124">SetTrackingSpaceType가 true를 반환 하는 경우 Unity는 세계 좌표계를 정상적으로 전환 하 여 [참조의 스테이지 프레임](../../design/coordinate-systems.md#spatial-coordinate-systems)을 추적 했습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-124">If SetTrackingSpaceType returns true, Unity has successfully switched its world coordinate system to track the [stage frame of reference](../../design/coordinate-systems.md#spatial-coordinate-systems).</span></span>
+* <span data-ttu-id="a46d7-125">SetTrackingSpaceType가 false를 반환 하는 경우 Unity는 사용자의 환경에서 바닥을 설정 하지 않았기 때문에 참조의 스테이지 프레임으로 전환할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-125">If SetTrackingSpaceType returns false, Unity was unable to switch to the stage frame of reference, likely because the user has not set up a floor in their environment.</span></span> <span data-ttu-id="a46d7-126">False 반환 값은 일반적이 지 않지만 다른 방에 단계를 설정 하 고 사용자가 새 단계를 설정 하지 않은 상태에서 현재 대화방으로 장치를 이동 하는 경우 발생할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-126">While a false return value isn't common, it can happen if the stage is set up in a different room and the device is moved to the current room without the user setting up a new stage.</span></span>
 
-<span data-ttu-id="66116-127">앱이 RoomScale 추적 공간 유형을 성공적으로 설정 하면 y = 0 평면에 배치 된 콘텐츠가 바닥에 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="66116-127">Once your app successfully sets the RoomScale tracking space type, content placed on the y=0 plane will appear on the floor.</span></span> <span data-ttu-id="66116-128">0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 구현</span><span class="sxs-lookup"><span data-stu-id="66116-128">The origin at 0, 0, 0 will be the specific place on the floor where the user stood during room setup, with -Z representing the forward direction they were facing during setup.</span></span>
+<span data-ttu-id="a46d7-127">앱이 RoomScale 추적 공간 유형을 성공적으로 설정 하면 y = 0 평면에 배치 된 콘텐츠가 바닥에 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-127">Once your app successfully sets the RoomScale tracking space type, content placed on the y=0 plane will appear on the floor.</span></span> <span data-ttu-id="a46d7-128">0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 구현</span><span class="sxs-lookup"><span data-stu-id="a46d7-128">The origin at 0, 0, 0 will be the specific place on the floor where the user stood during room setup, with -Z representing the forward direction they were facing during setup.</span></span>
 
-<span data-ttu-id="66116-129">**네임 스페이스:** *UNITYENGINE. XR*</span><span class="sxs-lookup"><span data-stu-id="66116-129">**Namespace:** *UnityEngine.Experimental.XR*</span></span><br>
-<span data-ttu-id="66116-130">**형식:** *경계*</span><span class="sxs-lookup"><span data-stu-id="66116-130">**Type:** *Boundary*</span></span>
+<span data-ttu-id="a46d7-129">**네임 스페이스:** *UNITYENGINE. XR*</span><span class="sxs-lookup"><span data-stu-id="a46d7-129">**Namespace:** *UnityEngine.Experimental.XR*</span></span><br>
+<span data-ttu-id="a46d7-130">**형식:** *경계*</span><span class="sxs-lookup"><span data-stu-id="a46d7-130">**Type:** *Boundary*</span></span>
 
-<span data-ttu-id="66116-131">그런 다음 스크립트 코드에서 XR 형식에 대해 TryGetGeometry 메서드를 호출 하 여 경계 다각형을 가져오고 TrackedArea 경계 형식을 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-131">In script code, you can then call the TryGetGeometry method on the UnityEngine.Experimental.XR.Boundary type to get a boundary polygon, specifying a boundary type of TrackedArea.</span></span> <span data-ttu-id="66116-132">사용자가 경계를 정의 하는 경우 (꼭 짓 점 목록 다시 표시) 사용자에 게 **공간 확장 환경을** 제공 하 여 사용자가 만든 장면을 탐색할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-132">If the user defined a boundary (you get back a list of vertices), it's safe to deliver a **room-scale experience** to the user, where they can walk around the scene you create.</span></span>
+<span data-ttu-id="a46d7-131">그런 다음 스크립트 코드에서 XR 형식에 대해 TryGetGeometry 메서드를 호출 하 여 경계 다각형을 가져오고 TrackedArea 경계 형식을 지정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-131">In script code, you can then call the TryGetGeometry method on the UnityEngine.Experimental.XR.Boundary type to get a boundary polygon, specifying a boundary type of TrackedArea.</span></span> <span data-ttu-id="a46d7-132">사용자가 경계를 정의 하는 경우 (꼭 짓 점 목록 다시 표시) 사용자에 게 **공간 확장 환경을** 제공 하 여 사용자가 만든 장면을 탐색할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-132">If the user defined a boundary (you get back a list of vertices), it's safe to deliver a **room-scale experience** to the user, where they can walk around the scene you create.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="66116-133">사용자가 접근 하면 시스템에서 자동으로 경계를 렌더링 합니다.</span><span class="sxs-lookup"><span data-stu-id="66116-133">The system will automatically render the boundary when the user approaches it.</span></span> <span data-ttu-id="66116-134">앱은 경계 자체를 렌더링 하기 위해이 다각형을 사용할 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-134">Your app doesn't need to use this polygon to render the boundary itself.</span></span> <span data-ttu-id="66116-135">그러나이 경계 다각형을 사용 하 여 장면 개체의 레이아웃을 선택 하 여 사용자가 teleporting 없이 해당 개체에 실제로 연결할 수 있는지 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-135">However, you may choose to lay out your scene objects using this boundary polygon, to ensure the user can physically reach those objects without teleporting:</span></span>
+> <span data-ttu-id="a46d7-133">사용자가 접근 하면 시스템에서 자동으로 경계를 렌더링 합니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-133">The system will automatically render the boundary when the user approaches it.</span></span> <span data-ttu-id="a46d7-134">앱은 경계 자체를 렌더링 하기 위해이 다각형을 사용할 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-134">Your app doesn't need to use this polygon to render the boundary itself.</span></span> <span data-ttu-id="a46d7-135">그러나이 경계 다각형을 사용 하 여 장면 개체의 레이아웃을 선택 하 여 사용자가 teleporting 없이 해당 개체에 실제로 연결할 수 있는지 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-135">However, you may choose to lay out your scene objects using this boundary polygon, to ensure the user can physically reach those objects without teleporting:</span></span>
 
 ```cs
 var vertices = new List<Vector3>();
@@ -85,45 +85,45 @@ if (UnityEngine.Experimental.XR.Boundary.TryGetGeometry(vertices, Boundary.Type.
 }
 ```
 
-## <a name="building-a-world-scale-experience"></a><span data-ttu-id="66116-136">세계 최고 규모 환경 구축</span><span class="sxs-lookup"><span data-stu-id="66116-136">Building a world-scale experience</span></span>
+## <a name="building-a-world-scale-experience"></a><span data-ttu-id="a46d7-136">세계 최고 규모 환경 구축</span><span class="sxs-lookup"><span data-stu-id="a46d7-136">Building a world-scale experience</span></span>
 
-<span data-ttu-id="66116-137">**네임 스페이스:** *unityengine. XR. WSA*</span><span class="sxs-lookup"><span data-stu-id="66116-137">**Namespace:** *UnityEngine.XR.WSA*</span></span><br>
-<span data-ttu-id="66116-138">**유형:** *WorldAnchor*</span><span class="sxs-lookup"><span data-stu-id="66116-138">**Type:** *WorldAnchor*</span></span>
+<span data-ttu-id="a46d7-137">**네임 스페이스:** *unityengine. XR. WSA*</span><span class="sxs-lookup"><span data-stu-id="a46d7-137">**Namespace:** *UnityEngine.XR.WSA*</span></span><br>
+<span data-ttu-id="a46d7-138">**유형:** *WorldAnchor*</span><span class="sxs-lookup"><span data-stu-id="a46d7-138">**Type:** *WorldAnchor*</span></span>
 
-<span data-ttu-id="66116-139">사용자가 5 미터를 wander 수 있도록 하는 HoloLens의 진정한 **세계 규모 환경** 에서는 공간 규모 환경에 사용 되는 기술이 아닌 새로운 기술이 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="66116-139">For true **world-scale experiences** on HoloLens that let users wander beyond 5 meters, you'll need new techniques beyond those used for room-scale experiences.</span></span> <span data-ttu-id="66116-140">사용할 수 있는 한 가지 핵심 기술은 holograms의 클러스터를 물리적 환경에서 정확 [하 게 배치 하 여](../../design/coordinate-systems.md#spatial-anchors) 사용자가 로밍 하는 거리에 관계 없이 [해당 holograms를 다시 찾는](../../design/coordinate-systems.md#spatial-anchor-persistence)것입니다.</span><span class="sxs-lookup"><span data-stu-id="66116-140">One key technique you'll use is to create a [spatial anchor](../../design/coordinate-systems.md#spatial-anchors) to lock a cluster of holograms precisely in place in the physical world, no matter how far the user has roamed, and then [find those holograms again in later sessions](../../design/coordinate-systems.md#spatial-anchor-persistence).</span></span>
+<span data-ttu-id="a46d7-139">사용자가 5 미터를 wander 수 있도록 하는 HoloLens의 진정한 **세계 규모 환경** 에서는 공간 규모 환경에 사용 되는 기술이 아닌 새로운 기술이 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-139">For true **world-scale experiences** on HoloLens that let users wander beyond 5 meters, you'll need new techniques beyond those used for room-scale experiences.</span></span> <span data-ttu-id="a46d7-140">사용할 수 있는 한 가지 핵심 기술은 holograms의 클러스터를 물리적 환경에서 정확 [하 게 배치 하 여](../../design/coordinate-systems.md#spatial-anchors) 사용자가 로밍 하는 거리에 관계 없이 [해당 holograms를 다시 찾는](../../design/coordinate-systems.md#spatial-anchor-persistence)것입니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-140">One key technique you'll use is to create a [spatial anchor](../../design/coordinate-systems.md#spatial-anchors) to lock a cluster of holograms precisely in place in the physical world, no matter how far the user has roamed, and then [find those holograms again in later sessions](../../design/coordinate-systems.md#spatial-anchor-persistence).</span></span>
 
-<span data-ttu-id="66116-141">Unity에서는 GameObject에 **WorldAnchor** Unity 구성 요소를 추가 하 여 공간 앵커를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="66116-141">In Unity, you create a spatial anchor by adding the **WorldAnchor** Unity component to a GameObject.</span></span>
+<span data-ttu-id="a46d7-141">Unity에서는 GameObject에 **WorldAnchor** Unity 구성 요소를 추가 하 여 공간 앵커를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-141">In Unity, you create a spatial anchor by adding the **WorldAnchor** Unity component to a GameObject.</span></span>
 
-### <a name="adding-a-world-anchor"></a><span data-ttu-id="66116-142">세계 앵커 추가</span><span class="sxs-lookup"><span data-stu-id="66116-142">Adding a World Anchor</span></span>
+### <a name="adding-a-world-anchor"></a><span data-ttu-id="a46d7-142">세계 앵커 추가</span><span class="sxs-lookup"><span data-stu-id="a46d7-142">Adding a World Anchor</span></span>
 
-<span data-ttu-id="66116-143">세계 앵커를 추가 하려면 <WorldAnchor> 실제 지역에서 고정 하려는 변환을 사용 하 여 game 개체에서 AddComponent ()를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="66116-143">To add a world anchor, call AddComponent<WorldAnchor>() on the game object with the transform you want to anchor in the real world.</span></span>
+<span data-ttu-id="a46d7-143">세계 앵커를 추가 하려면 <WorldAnchor> 실제 지역에서 고정 하려는 변환을 사용 하 여 game 개체에서 AddComponent ()를 호출 합니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-143">To add a world anchor, call AddComponent<WorldAnchor>() on the game object with the transform you want to anchor in the real world.</span></span>
 
 ```cs
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-<span data-ttu-id="66116-144">정말 간단하죠.</span><span class="sxs-lookup"><span data-stu-id="66116-144">That's it!</span></span> <span data-ttu-id="66116-145">이 게임 개체는 이제 실제 세계의 현재 위치에 고정 되어 있습니다 .이를 통해 Unity 세계 좌표가 약간 조정 되어 물리적 맞춤을 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-145">This game object will now be anchored to its current location in the physical world - you may see its Unity world coordinates adjust slightly over time to ensure that physical alignment.</span></span> <span data-ttu-id="66116-146">[지 속성](persistence-in-unity.md) 을 사용 하 여 이후 앱 세션에서이 앵커 된 위치를 다시 찾습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-146">Use [persistence](persistence-in-unity.md) to find this anchored location again in a future app session.</span></span>
+<span data-ttu-id="a46d7-144">이것으로 끝입니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-144">That's it!</span></span> <span data-ttu-id="a46d7-145">이 게임 개체는 이제 실제 세계의 현재 위치에 고정 되어 있습니다 .이를 통해 Unity 세계 좌표가 약간 조정 되어 물리적 맞춤을 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-145">This game object will now be anchored to its current location in the physical world - you may see its Unity world coordinates adjust slightly over time to ensure that physical alignment.</span></span> <span data-ttu-id="a46d7-146">[지 속성](persistence-in-unity.md) 을 사용 하 여 이후 앱 세션에서이 앵커 된 위치를 다시 찾습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-146">Use [persistence](persistence-in-unity.md) to find this anchored location again in a future app session.</span></span>
 
-### <a name="removing-a-world-anchor"></a><span data-ttu-id="66116-147">세계 앵커 제거</span><span class="sxs-lookup"><span data-stu-id="66116-147">Removing a World Anchor</span></span>
+### <a name="removing-a-world-anchor"></a><span data-ttu-id="a46d7-147">세계 앵커 제거</span><span class="sxs-lookup"><span data-stu-id="a46d7-147">Removing a World Anchor</span></span>
 
-<span data-ttu-id="66116-148">GameObject를 실제 세계 위치로 잠글 필요가 없으며이 프레임으로 이동 하지 않으려면 세계 앵커 구성 요소에 대해 소멸을 호출 하면 됩니다.</span><span class="sxs-lookup"><span data-stu-id="66116-148">If you no longer want the GameObject locked to a physical world location and don't intend on moving it this frame, then you can just call Destroy on the World Anchor component.</span></span>
+<span data-ttu-id="a46d7-148">GameObject를 실제 세계 위치로 잠글 필요가 없으며이 프레임으로 이동 하지 않으려면 세계 앵커 구성 요소에 대해 소멸을 호출 하면 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-148">If you no longer want the GameObject locked to a physical world location and don't intend on moving it this frame, then you can just call Destroy on the World Anchor component.</span></span>
 
 ```cs
 Destroy(gameObject.GetComponent<WorldAnchor>());
 ```
 
-<span data-ttu-id="66116-149">GameObject이 프레임을 이동 하려면 DestroyImmediate를 대신 호출 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="66116-149">If you want to move the GameObject this frame, you need to call DestroyImmediate instead.</span></span>
+<span data-ttu-id="a46d7-149">GameObject이 프레임을 이동 하려면 DestroyImmediate를 대신 호출 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-149">If you want to move the GameObject this frame, you need to call DestroyImmediate instead.</span></span>
 
 ```cs
 DestroyImmediate(gameObject.GetComponent<WorldAnchor>());
 ```
 
-### <a name="moving-a-world-anchored-gameobject"></a><span data-ttu-id="66116-150">세계 고정 GameObject 이동</span><span class="sxs-lookup"><span data-stu-id="66116-150">Moving a World Anchored GameObject</span></span>
+### <a name="moving-a-world-anchored-gameobject"></a><span data-ttu-id="a46d7-150">세계 고정 GameObject 이동</span><span class="sxs-lookup"><span data-stu-id="a46d7-150">Moving a World Anchored GameObject</span></span>
 
-<span data-ttu-id="66116-151">GameObject은 세계 앵커가 있는 동안 이동할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-151">GameObject's cannot be moved while a World Anchor is on it.</span></span> <span data-ttu-id="66116-152">GameObject이 프레임을 이동 해야 하는 경우 다음을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="66116-152">If you need to move the GameObject this frame, you need to:</span></span>
-1. <span data-ttu-id="66116-153">세계 앵커 구성 요소 DestroyImmediate</span><span class="sxs-lookup"><span data-stu-id="66116-153">DestroyImmediate the World Anchor component</span></span>
-2. <span data-ttu-id="66116-154">GameObject 이동</span><span class="sxs-lookup"><span data-stu-id="66116-154">Move the GameObject</span></span>
-3. <span data-ttu-id="66116-155">GameObject에 새 세계 앵커 구성 요소를 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="66116-155">Add a new World Anchor component to the GameObject.</span></span>
+<span data-ttu-id="a46d7-151">GameObject은 세계 앵커가 있는 동안 이동할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-151">GameObject's cannot be moved while a World Anchor is on it.</span></span> <span data-ttu-id="a46d7-152">GameObject이 프레임을 이동 해야 하는 경우 다음을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-152">If you need to move the GameObject this frame, you need to:</span></span>
+1. <span data-ttu-id="a46d7-153">세계 앵커 구성 요소 DestroyImmediate</span><span class="sxs-lookup"><span data-stu-id="a46d7-153">DestroyImmediate the World Anchor component</span></span>
+2. <span data-ttu-id="a46d7-154">GameObject 이동</span><span class="sxs-lookup"><span data-stu-id="a46d7-154">Move the GameObject</span></span>
+3. <span data-ttu-id="a46d7-155">GameObject에 새 세계 앵커 구성 요소를 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-155">Add a new World Anchor component to the GameObject.</span></span>
 
 ```cs
 DestroyImmediate(gameObject.GetComponent<WorldAnchor>());
@@ -131,21 +131,21 @@ gameObject.transform.position = new Vector3(0, 0, 2);
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-### <a name="handling-locatability-changes"></a><span data-ttu-id="66116-156">Locatability 변경 내용 처리</span><span class="sxs-lookup"><span data-stu-id="66116-156">Handling Locatability Changes</span></span>
+### <a name="handling-locatability-changes"></a><span data-ttu-id="a46d7-156">Locatability 변경 내용 처리</span><span class="sxs-lookup"><span data-stu-id="a46d7-156">Handling Locatability Changes</span></span>
 
-<span data-ttu-id="66116-157">WorldAnchor는 특정 시점에 물리적 세계에 과정이 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-157">A WorldAnchor may not be locatable in the physical world at a point in time.</span></span> <span data-ttu-id="66116-158">이 경우 Unity는 고정 된 개체의 변환을 업데이트 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-158">If that occurs, Unity won't be updating the transform of the anchored object.</span></span> <span data-ttu-id="66116-159">이는 앱이 실행 되는 동안에도 변경 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-159">This also can change while an app is running.</span></span> <span data-ttu-id="66116-160">Locatability의 변경을 처리 하지 못하면 개체가 전 세계의 올바른 물리적 위치에 표시 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-160">Failure to handle the change in locatability will cause the object to not appear in the correct physical location in the world.</span></span>
+<span data-ttu-id="a46d7-157">WorldAnchor는 특정 시점에 물리적 세계에 과정이 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-157">A WorldAnchor may not be locatable in the physical world at a point in time.</span></span> <span data-ttu-id="a46d7-158">이 경우 Unity는 고정 된 개체의 변환을 업데이트 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-158">If that occurs, Unity won't be updating the transform of the anchored object.</span></span> <span data-ttu-id="a46d7-159">이는 앱이 실행 되는 동안에도 변경 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-159">This also can change while an app is running.</span></span> <span data-ttu-id="a46d7-160">Locatability의 변경을 처리 하지 못하면 개체가 전 세계의 올바른 물리적 위치에 표시 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-160">Failure to handle the change in locatability will cause the object to not appear in the correct physical location in the world.</span></span>
 
-<span data-ttu-id="66116-161">Locatability 변경 내용에 대 한 알림이 표시 되는 경우:</span><span class="sxs-lookup"><span data-stu-id="66116-161">To be notified about locatability changes:</span></span>
-1. <span data-ttu-id="66116-162">OnTrackingChanged 이벤트 구독</span><span class="sxs-lookup"><span data-stu-id="66116-162">Subscribe to the OnTrackingChanged event</span></span>
-2. <span data-ttu-id="66116-163">이벤트를 처리 합니다.</span><span class="sxs-lookup"><span data-stu-id="66116-163">Handle the event</span></span>
+<span data-ttu-id="a46d7-161">Locatability 변경 내용에 대 한 알림이 표시 되는 경우:</span><span class="sxs-lookup"><span data-stu-id="a46d7-161">To be notified about locatability changes:</span></span>
+1. <span data-ttu-id="a46d7-162">OnTrackingChanged 이벤트 구독</span><span class="sxs-lookup"><span data-stu-id="a46d7-162">Subscribe to the OnTrackingChanged event</span></span>
+2. <span data-ttu-id="a46d7-163">이벤트를 처리 합니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-163">Handle the event</span></span>
 
-<span data-ttu-id="66116-164">**Ontrackingchanged** 이벤트는 기본 공간 앵커가 과정이의 상태와 과정이 되지 않는 사이에 변경 될 때마다 호출 됩니다.</span><span class="sxs-lookup"><span data-stu-id="66116-164">The **OnTrackingChanged** event will be called whenever the underlying spatial anchor changes between a state of being locatable vs. not being locatable.</span></span>
+<span data-ttu-id="a46d7-164">**Ontrackingchanged** 이벤트는 기본 공간 앵커가 과정이의 상태와 과정이 되지 않는 사이에 변경 될 때마다 호출 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-164">The **OnTrackingChanged** event will be called whenever the underlying spatial anchor changes between a state of being locatable vs. not being locatable.</span></span>
 
 ```cs
 anchor.OnTrackingChanged += Anchor_OnTrackingChanged;
 ```
 
-<span data-ttu-id="66116-165">그런 다음 이벤트를 처리 합니다.</span><span class="sxs-lookup"><span data-stu-id="66116-165">Then handle the event:</span></span>
+<span data-ttu-id="a46d7-165">그런 다음 이벤트를 처리 합니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-165">Then handle the event:</span></span>
 
 ```cs
 private void Anchor_OnTrackingChanged(WorldAnchor self, bool located)
@@ -155,40 +155,40 @@ private void Anchor_OnTrackingChanged(WorldAnchor self, bool located)
 }
 ```
 
-<span data-ttu-id="66116-166">경우에 따라 앵커가 즉시 배치 됩니다.</span><span class="sxs-lookup"><span data-stu-id="66116-166">Sometimes anchors are located immediately.</span></span> <span data-ttu-id="66116-167">이 경우 AddComponent ()가 반환 되 면 앵커의이 isLocated 속성은 true로 설정 됩니다 <WorldAnchor> .</span><span class="sxs-lookup"><span data-stu-id="66116-167">In this case, this isLocated property of the anchor will be set to true when AddComponent<WorldAnchor>() returns.</span></span> <span data-ttu-id="66116-168">따라서 OnTrackingChanged 이벤트가 트리거되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-168">As a result, the OnTrackingChanged event won't be triggered.</span></span> <span data-ttu-id="66116-169">깨끗 한 패턴은 앵커를 연결한 후 초기 IsLocated 상태를 사용 하 여 OnTrackingChanged 처리기를 호출 하는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="66116-169">A clean pattern would be to call your OnTrackingChanged handler with the initial IsLocated state after attaching an anchor.</span></span>
+<span data-ttu-id="a46d7-166">경우에 따라 앵커가 즉시 배치 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-166">Sometimes anchors are located immediately.</span></span> <span data-ttu-id="a46d7-167">이 경우 AddComponent ()가 반환 되 면 앵커의이 isLocated 속성은 true로 설정 됩니다 <WorldAnchor> .</span><span class="sxs-lookup"><span data-stu-id="a46d7-167">In this case, this isLocated property of the anchor will be set to true when AddComponent<WorldAnchor>() returns.</span></span> <span data-ttu-id="a46d7-168">따라서 OnTrackingChanged 이벤트가 트리거되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-168">As a result, the OnTrackingChanged event won't be triggered.</span></span> <span data-ttu-id="a46d7-169">깨끗 한 패턴은 앵커를 연결한 후 초기 IsLocated 상태를 사용 하 여 OnTrackingChanged 처리기를 호출 하는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-169">A clean pattern would be to call your OnTrackingChanged handler with the initial IsLocated state after attaching an anchor.</span></span>
 
 ```cs
 Anchor_OnTrackingChanged(anchor, anchor.isLocated);
 ```
 
-## <a name="sharing-anchors-across-devices"></a><span data-ttu-id="66116-170">장치에서 앵커 공유</span><span class="sxs-lookup"><span data-stu-id="66116-170">Sharing anchors across devices</span></span>
+## <a name="sharing-anchors-across-devices"></a><span data-ttu-id="a46d7-170">장치에서 앵커 공유</span><span class="sxs-lookup"><span data-stu-id="a46d7-170">Sharing anchors across devices</span></span>
 
-<span data-ttu-id="66116-171"><a href="/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a> 를 사용 하 여 로컬 WorldAnchor에서 지속적인 클라우드 앵커를 만듭니다. 그러면 앱이 여러 HoloLens, IOS 및 Android 장치에서 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-171">Use <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> to create a durable cloud anchor from a local WorldAnchor, which your app can then locate across multiple HoloLens, iOS and Android devices.</span></span>  <span data-ttu-id="66116-172">여러 장치에서 공통 공간 앵커를 공유 하 여 각 사용자는 동일한 물리적 위치에서 해당 앵커에 대해 렌더링 된 콘텐츠를 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-172">By sharing a common spatial anchor across multiple devices, each user can see content rendered relative to that anchor in the same physical location.</span></span>  <span data-ttu-id="66116-173">이렇게 실제 세계 공유 환경을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="66116-173">This allows for real-time shared experiences.</span></span>
+<span data-ttu-id="a46d7-171"><a href="/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a> 를 사용 하 여 로컬 WorldAnchor에서 지속적인 클라우드 앵커를 만듭니다. 그러면 앱이 여러 HoloLens, IOS 및 Android 장치에서 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-171">Use <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> to create a durable cloud anchor from a local WorldAnchor, which your app can then locate across multiple HoloLens, iOS and Android devices.</span></span>  <span data-ttu-id="a46d7-172">여러 장치에서 공통 공간 앵커를 공유 하 여 각 사용자는 동일한 물리적 위치에서 해당 앵커에 대해 렌더링 된 콘텐츠를 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-172">By sharing a common spatial anchor across multiple devices, each user can see content rendered relative to that anchor in the same physical location.</span></span>  <span data-ttu-id="a46d7-173">이렇게 실제 세계 공유 환경을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-173">This allows for real-time shared experiences.</span></span>
 
-<span data-ttu-id="66116-174">Unity에서 공유 환경 빌드를 시작 하려면 5 분 <a href="/azure/spatial-anchors/unity-overview" target="_blank">Azure 공간 앵커 Unity 퀵 스타트</a>를 사용해 보세요.</span><span class="sxs-lookup"><span data-stu-id="66116-174">To get started building shared experiences in Unity, try out the 5-minute <a href="/azure/spatial-anchors/unity-overview" target="_blank">Azure Spatial Anchors Unity quickstarts</a>.</span></span>
+<span data-ttu-id="a46d7-174">Unity에서 공유 환경 빌드를 시작 하려면 5 분 <a href="/azure/spatial-anchors/unity-overview" target="_blank">Azure 공간 앵커 Unity 퀵 스타트</a>를 사용해 보세요.</span><span class="sxs-lookup"><span data-stu-id="a46d7-174">To get started building shared experiences in Unity, try out the 5-minute <a href="/azure/spatial-anchors/unity-overview" target="_blank">Azure Spatial Anchors Unity quickstarts</a>.</span></span>
 
-<span data-ttu-id="66116-175">Azure 공간 앵커를 사용 하 여 실행 하면 <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Unity에서 앵커를 만들고 찾을</a>수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-175">Once you're up and running with Azure Spatial Anchors, you can then <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">create and locate anchors in Unity</a>.</span></span>
+<span data-ttu-id="a46d7-175">Azure 공간 앵커를 사용 하 여 실행 하면 <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Unity에서 앵커를 만들고 찾을</a>수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-175">Once you're up and running with Azure Spatial Anchors, you can then <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">create and locate anchors in Unity</a>.</span></span>
 
-## <a name="next-development-checkpoint"></a><span data-ttu-id="66116-176">다음 개발 검사점</span><span class="sxs-lookup"><span data-stu-id="66116-176">Next Development Checkpoint</span></span>
+## <a name="next-development-checkpoint"></a><span data-ttu-id="a46d7-176">다음 개발 검사점</span><span class="sxs-lookup"><span data-stu-id="a46d7-176">Next Development Checkpoint</span></span>
 
-<span data-ttu-id="66116-177">앞서 설명한 Unity 개발 검사점 경험을 팔로 사용할 경우 혼합 현실 핵심 빌딩 블록을 탐색 하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-177">If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality core building blocks.</span></span> <span data-ttu-id="66116-178">여기에서 다음 구성 요소로 진행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-178">From here, you can continue to the next building block:</span></span>
-
-> [!div class="nextstepaction"]
-> [<span data-ttu-id="66116-179">응시</span><span class="sxs-lookup"><span data-stu-id="66116-179">Gaze</span></span>](gaze-in-unity.md)
-
-<span data-ttu-id="66116-180">또는 Mixed Reality 플랫폼 기능 및 API로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="66116-180">Or jump to Mixed Reality platform capabilities and APIs:</span></span>
+<span data-ttu-id="a46d7-177">앞서 설명한 Unity 개발 검사점 경험을 팔로 사용할 경우 혼합 현실 핵심 빌딩 블록을 탐색 하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-177">If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality core building blocks.</span></span> <span data-ttu-id="a46d7-178">여기에서 다음 구성 요소로 진행할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-178">From here, you can continue to the next building block:</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="66116-181">공유 환경</span><span class="sxs-lookup"><span data-stu-id="66116-181">Shared experiences</span></span>](shared-experiences-in-unity.md)
+> [<span data-ttu-id="a46d7-179">응시</span><span class="sxs-lookup"><span data-stu-id="a46d7-179">Gaze</span></span>](gaze-in-unity.md)
 
-<span data-ttu-id="66116-182">언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="66116-182">You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.</span></span>
+<span data-ttu-id="a46d7-180">또는 Mixed Reality 플랫폼 기능 및 API로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-180">Or jump to Mixed Reality platform capabilities and APIs:</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="66116-183">참고 항목</span><span class="sxs-lookup"><span data-stu-id="66116-183">See Also</span></span>
-* [<span data-ttu-id="66116-184">환경 크기 조정</span><span class="sxs-lookup"><span data-stu-id="66116-184">Experience scales</span></span>](../../design/coordinate-systems.md#mixed-reality-experience-scales)
-* [<span data-ttu-id="66116-185">공간 스테이지</span><span class="sxs-lookup"><span data-stu-id="66116-185">Spatial stage</span></span>](../../design/coordinate-systems.md#stage-frame-of-reference)
-* [<span data-ttu-id="66116-186">Unity의 손실 추적</span><span class="sxs-lookup"><span data-stu-id="66116-186">Tracking loss in Unity</span></span>](tracking-loss-in-unity.md)
-* [<span data-ttu-id="66116-187">Spatial Anchors</span><span class="sxs-lookup"><span data-stu-id="66116-187">Spatial anchors</span></span>](../../design/spatial-anchors.md)
-* [<span data-ttu-id="66116-188">Unity의 지속성</span><span class="sxs-lookup"><span data-stu-id="66116-188">Persistence in Unity</span></span>](persistence-in-unity.md)
-* [<span data-ttu-id="66116-189">Unity의 공유 환경</span><span class="sxs-lookup"><span data-stu-id="66116-189">Shared experiences in Unity</span></span>](shared-experiences-in-unity.md)
-* <span data-ttu-id="66116-190"><a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a></span><span class="sxs-lookup"><span data-stu-id="66116-190"><a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a></span></span>
-* <span data-ttu-id="66116-191"><a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Unity 용 Azure 공간 앵커 SDK</a></span><span class="sxs-lookup"><span data-stu-id="66116-191"><a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchors SDK for Unity</a></span></span>
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="a46d7-181">공유 환경</span><span class="sxs-lookup"><span data-stu-id="a46d7-181">Shared experiences</span></span>](shared-experiences-in-unity.md)
+
+<span data-ttu-id="a46d7-182">언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a46d7-182">You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="a46d7-183">참고 항목</span><span class="sxs-lookup"><span data-stu-id="a46d7-183">See Also</span></span>
+* [<span data-ttu-id="a46d7-184">환경 크기 조정</span><span class="sxs-lookup"><span data-stu-id="a46d7-184">Experience scales</span></span>](../../design/coordinate-systems.md#mixed-reality-experience-scales)
+* [<span data-ttu-id="a46d7-185">공간 스테이지</span><span class="sxs-lookup"><span data-stu-id="a46d7-185">Spatial stage</span></span>](../../design/coordinate-systems.md#stage-frame-of-reference)
+* [<span data-ttu-id="a46d7-186">Unity의 손실 추적</span><span class="sxs-lookup"><span data-stu-id="a46d7-186">Tracking loss in Unity</span></span>](tracking-loss-in-unity.md)
+* [<span data-ttu-id="a46d7-187">Spatial Anchors</span><span class="sxs-lookup"><span data-stu-id="a46d7-187">Spatial anchors</span></span>](../../design/spatial-anchors.md)
+* [<span data-ttu-id="a46d7-188">Unity의 지속성</span><span class="sxs-lookup"><span data-stu-id="a46d7-188">Persistence in Unity</span></span>](persistence-in-unity.md)
+* [<span data-ttu-id="a46d7-189">Unity의 공유 환경</span><span class="sxs-lookup"><span data-stu-id="a46d7-189">Shared experiences in Unity</span></span>](shared-experiences-in-unity.md)
+* <span data-ttu-id="a46d7-190"><a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a></span><span class="sxs-lookup"><span data-stu-id="a46d7-190"><a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a></span></span>
+* <span data-ttu-id="a46d7-191"><a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Unity 용 Azure 공간 앵커 SDK</a></span><span class="sxs-lookup"><span data-stu-id="a46d7-191"><a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchors SDK for Unity</a></span></span>
