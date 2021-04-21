@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: c9cf580b1123002e9e8cdfd5c3914c3aa39e2825
-ms.sourcegitcommit: 848b4b7bb8514c2e088a3a55512b1a8075d29093
+ms.openlocfilehash: b0b8d97471dfae9d6dc6bbee26079af04f97de62
+ms.sourcegitcommit: 94ae851f78e5b861af601b445f8f0a3405197c40
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "107003132"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107716024"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. 프로젝트 초기화 및 첫 번째 애플리케이션 배포
 
@@ -186,7 +186,7 @@ Hierarchy 창에서 **Cube** 를 선택한 상태로 Inspector 창에서 **Add C
 > [!NOTE]
 > 이 자습서의 학습 목표를 달성하기 위해 이미 Cube Object에 충돌체가 추가되어 있습니다. 충돌체에 대한 자세한 내용은 Unity의 <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">충돌체</a> 설명서를 참조하세요.
 
-Unity 편집기에서 이 테스트를 수행하려면 재생 모드로 들어가서 **LeftShift** 또는 **Space** 키를 누르고 있으면 컨트롤러를 마우스로 이동시킬 수 있으며 마우스 휠로 컨트롤러를 더 멀리 또는 더 가까이 이동할 수도 있습니다. 포인터가 Cube에 있으면 **마우스 오른쪽 단추** 를 누른 상태로 Cube 개체를 이동합니다.
+Unity 편집기에서 이 테스트를 수행하려면 재생 모드로 들어가서 **LeftShift** 또는 **Space** 키를 누르고 있으면 컨트롤러를 마우스로 이동시킬 수 있으며 마우스 휠로 컨트롤러를 더 멀리 또는 더 가까이 이동할 수도 있습니다. 포인터가 Cube에 있으면 **마우스 왼쪽 단추** 를 누른 상태로 Cube 개체를 이동합니다.
 
 ![게임 모드](images/mr-learning-base/base-02-section8-step1-4.png)
 

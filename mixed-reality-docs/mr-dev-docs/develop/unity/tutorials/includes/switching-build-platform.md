@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 78605b17e93429ad974e1ca21e7859035f38d615
-ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
+ms.openlocfilehash: 2a2dcb6ec9133eb5efa0dc04e4d757cabd48461a
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106088719"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107327509"
 ---
 # <a name="unity-20192020--windows-xr-plugin"></a>[Unity 2019/2020 + Windows XR 플러그 인](#tab/winxr)
 
@@ -34,7 +34,7 @@ Build Settings(빌드 설정) 창에서 **Universal Windows Platform(유니버�
 1.  **Target device(대상 디바이스)** 를 **HoloLens** 로 설정합니다.
 2.  **Architecture(아키텍처)** 를 **ARM 64** 로 설정합니다.
 3.  **Build Type(빌드 형식)** 을 **D3D** 로 설정합니다.
-4.  **Minimum Platform Version(최소 플랫폼 버전)** 을 **10.2.18362** 로 설정합니다.
+4.  **Minimum Platform Version(최소 플랫폼 버전)** 을 **10.0.18362** 로 설정합니다.
 5.  **UWP SDK** 를 **Latest installed(최근에 설치)** 로 설정합니다.
 6.  디버그와 관련하여 알려진 성능 문제가 있으므로 **Build configuration(빌드 구성)** 을 **Release(릴리스)** 로 설정합니다.
 7.  Switch Platform(플랫폼 전환) 단추를 클릭합니다.

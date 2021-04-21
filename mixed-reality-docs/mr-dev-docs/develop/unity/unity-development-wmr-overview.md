@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 혼합 현실, 개발, 시작, 새 프로젝트, 포팅, 기능, 카메라, 시뮬레이션, 에뮬레이션, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 음성 입력, 위치를 찾을 수 있는 카메라, 에뮬레이터, Azure, 자습서
-ms.openlocfilehash: e80c5411c7d180e0d78e031599455235dabaceb7
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 50300ff08dd06c5fc250bc93979d537e10b38044
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237144"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107528715"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>VR 및 Windows Mixed Reality용 Unity 개발
 
@@ -34,13 +34,23 @@ Windows Mixed Reality 및 VR 개발을 위해 수동으로 변경해야 하는 �
 |  검사점  |  결과  |
 | --- | --- |
 | [최신 도구 설치](../install-the-tools.md) | 최신 Unity 패키지를 다운로드 및 설치하고, 혼합 현실에 맞게 프로젝트를 설정합니다. |
-| [WMR용 프로젝트 구성](configure-unity-project.md) | 홀로그램 및 VR 디스플레이 디바이스에서 디지털 콘텐츠를 렌더링하는 애플리케이션을 빌드하는 방법에 대해 알아봅니다. |
+| [WMR용 프로젝트 구성](windows-xr-plugin.md) | 홀로그램 및 VR 디스플레이 디바이스에서 디지털 콘텐츠를 렌더링하는 애플리케이션을 빌드하는 방법에 대해 알아봅니다. |
+
+> [!IMPORTANT]
+> 프로젝트 설정에 대한 자세한 내용은 Unity 프로젝트 [구성 가이드](choosing-unity-version.md)를 참조하세요.
 
 ### <a name="2-core-building-blocks"></a>2. 핵심 구성 요소
 
 새로운 몰입형 프로젝트를 시작한 후에는 몰입형 앱을 개발하기 위해 몇 가지 기본 구성 요소가 필요합니다. 혼합 현실 애플리케이션의 모든 핵심 구성 요소는 다른 Unity API와 일치하는 방식으로 공개됩니다. 한 번에 모두 필요하지 않을 수도 있지만 일찍 살펴보는 것이 좋습니다. 아래에 나열된 핵심 구성 요소를 살펴본 후 VR 프로젝트에 통합할 수 있는 모든 기능을 갖춘 도구 상자를 사용할 수 있습니다.
 
-[!INCLUDE[](../includes/unity-building-blocks-wmr.md)]
+|  기능  |  기능  |
+| --- | --- |
+| [카메라](../unity/camera-in-unity.md) | Mixed Reality 앱에서 시각적 품질 및 홀로그램 안정성을 완벽하게 최적화 |
+| [세계 잠금 및 공간 앵커](spatial-anchors-in-unity.md) | 안정화 문제 해결, 카메라 조정 및 안정적인 좌표계 솔루션 통합 || [모션 컨트롤러](../unity/motion-controllers-in-unity.md) | 혼합 현실 앱에 공간 작업 추가 |
+| [제스처](../unity/gestures-in-unity.md) | 혼합 현실 경험에서 손 제스처를 입력으로 사용 |
+| [공간 음향](../unity/spatial-sound-in-unity.md) | 몰입형 3D 오디오를 사용하여 앱 향상 |
+| [Text](../unity/text-in-unity.md) | 관리 가능한 크기 및 품질 렌더링을 사용하는 선명한 고품질 텍스트 가져오기 |
+| [음성 입력 ](../unity/voice-input-in-unity.md) | 사용자의 음성 키워드, 구 및 받아쓰기 캡처|
 
 ### <a name="3-advanced-features"></a>3. 고급 기능
 

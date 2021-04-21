@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 혼합 현실, 개발, 시작, 새 프로젝트, 포팅, 기능, 카메라, 시뮬레이션, 에뮬레이션, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 공간 매핑, 음성 입력, 위치를 찾을 수 있는 카메라, 에뮬레이터, Azure, 자습서
-ms.openlocfilehash: 52c6fb57473255e440d9c2f795cc228cca44ea32
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: ba68c3d74f58fc43af3de039e5eba1712d195cc0
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982786"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107528737"
 ---
 # <a name="unity-development-for-hololens"></a>HoloLens용 Unity 개발
 
@@ -33,22 +33,34 @@ Unity에서 개발하는 가장 쉬운 방법은 Mixed Reality Toolkit를 사용
 
 |  검사점  |  결과  |
 | --- | --- |
-| [MRTK란?](mrtk-getting-started.md) | Mixed Reality Toolkit 및 이 도구 키트에서 제공해야 하는 항목을 숙지하여 과정을 시작합니다. |
-| [최신 도구 설치](../install-the-tools.md) | 최신 Unity 패키지를 다운로드 및 설치하고, 혼합 현실에 맞게 프로젝트를 설정합니다. |
-| [HoloLens 2 자습서 시리즈](tutorials/mr-learning-base-01.md) | HoloLens 2 하드웨어에 대한 초보자 수준 MRTK 자습서를 살펴봅니다. |
-| **(선택 사항)** [Mixed Reality Feature Tool 다운로드](welcome-to-mr-feature-tool.md) | 혼합 현실 기능 패키지를 검색, 업데이트하고 Unity 프로젝트에 추가하는 데 사용되는 새로운 개발자 도구입니다. |
+| [Mixed Reality Toolkit 소개](mrtk-getting-started.md) | Mixed Reality Toolkit 및 이 도구 키트에서 제공해야 하는 항목을 숙지하여 과정을 시작합니다. |
+| [Mixed Reality Feature Tool 다운로드](welcome-to-mr-feature-tool.md) | 혼합 현실 기능 패키지를 검색, 업데이트하고 Unity 프로젝트에 추가하는 데 사용되는 새로운 개발자 도구입니다. |
+| [개발자 환경 설정](../install-the-tools.md) | 최신 Unity 패키지를 다운로드 및 설치하고, 혼합 현실에 맞게 프로젝트를 설정합니다. |
+| [HoloLens 2 자습서 시리즈 완료](tutorials/mr-learning-base-01.md) | HoloLens 2 하드웨어에 대한 초보자 수준 MRTK 자습서를 살펴봅니다. |
 
 > [!IMPORTANT]
-> Mixed Reality Toolkit를 가져오지 않고 새 Unity 프로젝트를 만들려면 Windows Mixed Reality에 대해 수동으로 변경해야 하는 작은 Unity 설정 세트가 있습니다. 이러한 설정은 두 가지 범주, 즉 프로젝트별 및 장면별 범주로 구분됩니다. 단계별 프로세스에 대한 [구성 가이드](configure-unity-project.md)를 살펴보세요.
+> Mixed Reality Toolkit를 가져오지 않고 새 Unity 프로젝트를 만들려면 Windows Mixed Reality에 대해 수동으로 변경해야 하는 작은 Unity 설정 세트가 있습니다. 자세한 내용은 [구성 가이드](choosing-unity-version.md)를 참조하세요.
 
 > [!NOTE]
-> 프로젝트에서 MRTK V2가 설정되면 카메라와 같은 표준 Unity 게임 개체가 즉시 점등되어 좌석 크기의 환경을 제공합니다. 애플리케이션의 환경 크기를 조정하는 방법은 [좌표계](coordinate-systems-in-unity.md) 페이지에서 확인할 수 있습니다.
+> 프로젝트에서 MRTK가 설정되면 카메라와 같은 표준 Unity 게임 개체가 즉시 점등되어 좌석 크기의 환경을 제공합니다. 애플리케이션의 환경 크기를 조정하는 방법은 [좌표계](coordinate-systems-in-unity.md) 페이지에서 확인할 수 있습니다.
 
 ## <a name="2-core-building-blocks"></a>2. 핵심 구성 요소
 
 혼합 현실 애플리케이션의 모든 핵심 구성 요소는 다른 Unity API와 일치하는 방식으로 공개됩니다. 이러한 구성 요소는 독립 실행형 기능으로 사용하거나 Mixed Reality Toolkit를 통해 사용할 수 있습니다. 한 번에 모두 필요하지 않을 수도 있지만 일찍 살펴보는 것이 좋습니다. 아래에 나열된 핵심 구성 요소를 살펴보았으면 자체적으로 또는 MRTK를 통해 Mixed Reality 프로젝트에 통합할 수 있는 모든 기능을 갖춘 도구 상자를 사용할 수 있습니다.
 
-[!INCLUDE[](../includes/unity-building-blocks.md)]
+|  기능  |  기능  |
+| --- | --- |
+| [카메라](../unity/camera-in-unity.md) | Mixed Reality 앱에서 시각적 품질 및 홀로그램 안정성을 완벽하게 최적화 |
+| [세계 잠금 및 공간 앵커](spatial-anchors-in-unity.md) | 안정화 문제 해결, 카메라 조정 및 안정적인 좌표계 솔루션 통합 |
+| [공유 환경](shared-experiences-in-unity.md) | 공간 앵커 공유를 사용하여 공간의 고정 지점에서 동일한 홀로그램을 보고 집합적으로 상호 작용합니다. |
+| [응시](../unity/gaze-in-unity.md) | 사용자가 홀로그램을 확인하여 대상으로 할 수 있습니다. |
+| [모션 컨트롤러](../unity/motion-controllers-in-unity.md) | 혼합 현실 앱에 공간 작업 추가 |
+| [제스처](../unity/gestures-in-unity.md) | 혼합 현실 경험에서 손 제스처를 입력으로 사용 |
+| [손 및 시선 추적](../unity/hand-eye-in-unity.md) | 연결된 손 및 시선 추적 입력을 사용자 환경에 통합 |
+| [공간 매핑](../unity/spatial-mapping-in-unity.md) | 가상 메시 오버레이를 사용하여 실제 공간을 매핑하여 환경 경계 표시 |
+| [공간 음향](../unity/spatial-sound-in-unity.md) | 몰입형 3D 오디오를 사용하여 앱 향상 |
+| [Text](../unity/text-in-unity.md) | 관리 가능한 크기 및 품질 렌더링을 사용하는 선명한 고품질 텍스트 가져오기 |
+| [음성 입력 ](../unity/voice-input-in-unity.md) | 사용자의 음성 키워드, 구 및 받아쓰기 캡처|
 
 ## <a name="3-advanced-features"></a>3. 고급 기능
 
@@ -56,8 +68,7 @@ Unity에서 개발하는 가장 쉬운 방법은 Mixed Reality Toolkit를 사용
 
 |  기능  |  기능  |
 | --- | --- |
-| [공유 환경](shared-experiences-in-unity.md) | 공간 앵커 공유를 사용하여 공간의 고정 지점에서 동일한 홀로그램을 보고 집합적으로 상호 작용합니다. |
-| [위치를 찾을 수 있는 카메라](locatable-camera-in-unity.md) | Mixed Reality 애플리케이션에서 사진 및 비디오 콘텐츠를 캡처합니다. |
+| [사진 비디오 카메라](locatable-camera-in-unity.md) | Mixed Reality 애플리케이션에서 사진 및 비디오 콘텐츠를 캡처합니다. |
 | [포커스 지점](focus-point-in-unity.md) | 현재 표시 중인 홀로그램에서 안정화를 가장 효율적으로 수행하는 방법에 대한 힌트를 HoloLens에 제공합니다. |
 | [추적 손실](tracking-loss-in-unity.md) | 디바이스가 애플리케이션 세계 공간에서 자체를 찾을 수 없는 시나리오를 처리합니다. |
 | [키보드 입력](keyboard-input-in-unity.md) | 현실 세계 및 Mixed Reality 키보드의 입력을 앱에 가져옵니다. |

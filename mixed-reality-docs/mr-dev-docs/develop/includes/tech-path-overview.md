@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5b99eda2ca8bc2ba48a46513b867e94c45b198c1
-ms.sourcegitcommit: 919bdc3e46325f3c44a022c8852cd38ffec33d33
+ms.openlocfilehash: ab95f0c89a4b77c6ea69fefa331bfbdccf35f79d
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105105907"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107564726"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -35,6 +35,7 @@ Unity로 Mixed Reality 앱을 빌드하는 경우 몇 가지 하드웨어 및 �
 |  도구/SDK  |  설명  |
 | --- | --- |
 | [Unity용 Mixed Reality Toolkit](../unity/mrtk-getting-started.md) | Unity용 Mixed Reality Toolkit은 Microsoft HoloLens, Windows Mixed Reality 몰입형 (VR) 헤드셋 및 OpenVR 플랫폼을 대상으로 하는 애플리케이션 개발을 가속화하기 위해 고안된 오픈 소스 플랫폼 간 개발 키트입니다. |
+| [Microsoft 세계 잠금 도구](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/GettingStartedWithWorldLocking.html) | 눈에 띄는 불일치를 최소화하는 안정적인 좌표계와 카메라 조정을 제공합니다. |
 | [Microsoft Mesh](/mesh/overview) 비공개 미리 보기 | Mesh에 관한 최신 공지 및 뉴스를 받아 보려면 [Microsoft Mesh 관심 등록](https://aka.ms/meshsignup) 양식을 작성하세요. Mesh를 사용하면 가상 모임을 개선하고, 가상 디자인 세션을 수행하고, 다른 사용자를 원격으로 지원하고, 가상 모임을 주최할 수 있습니다. |
 
 ## <a name="cloud-services"></a>Cloud Services
