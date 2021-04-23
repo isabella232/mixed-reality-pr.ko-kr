@@ -6,21 +6,21 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 보강 현실, 가상 현실, 혼합 현실 헤드셋, 학습, 자습서, 시작
-ms.openlocfilehash: ebe7d32b236e28259b2ed9a7915bd337f84f8762
-ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
+ms.openlocfilehash: 97169507e2b61110d2d16580ba957feff3755258
+ms.sourcegitcommit: aca5fddb98fbbd9aa22bdf8174d7fdcdb9d4c08a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106088516"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107894027"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Unity 용 Mixed Reality OpenXR 플러그 인 사용
 
 Unity 버전 2020.2부터 Microsoft의 Mixed Reality OpenXR 플러그 인 패키지는 UPM (Unity 패키지 관리자)를 사용 하 여 사용할 수 있습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 * Unity 2020.3 LTS 이상
-* Unity OpenXR plugin 1.0.3 이상
+* Unity OpenXR plugin 1.1.1 이상
 * Visual Studio 2019 이상
 * HoloLens 2 앱 용 Unity에서 **UWP** 플랫폼 지원 설치
 
@@ -34,7 +34,7 @@ Unity용 MRTK는 플랫폼 간 입력 시스템, 기본 구성 요소 및 공간
 > [!div class="nextstepaction"]
 > [MRTK를 사용 하 여 프로젝트 설정](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=openxr)
 
-추가 기능에 대 한 자세한 내용은 [Mrtk의 설명서](/windows/mixed-reality/mrtk-unity) 를 참조 하세요.
+기능에 대한 자세한 내용은 [MRTK 설명서](/windows/mixed-reality/mrtk-unity)를 살펴보세요.
 
 ## <a name="manual-setup-without-mrtk"></a>MRTK 없이 수동 설치
 
@@ -52,11 +52,11 @@ HoloLens 2를 대상으로 하는 경우 유니버설 Windows 플랫폼로 전�
 
 1.  **파일 > 빌드 설정** ...을 선택 합니다.
 2.  플랫폼 목록에서 **유니버설 Windows 플랫폼** 을 선택 하 고 **플랫폼 전환** 을 선택 합니다.
-3.  **아키텍처** 를 **ARM 64** 로 설정 합니다.
-4.  **대상 장치** 를 **HoloLens** 로 설정
-5.  **빌드 유형을** **D3D** 로 설정
-6.  **UWP SDK** 를 **최신 설치** 로 설정
-7.  디버그에 알려진 성능 문제가 있으므로 **빌드 구성을** **릴리스로** 설정 합니다.
+3.  **Architecture(아키텍처)** 를 **ARM 64** 로 설정합니다.
+4.  **Target device(대상 디바이스)** 를 **HoloLens** 로 설정합니다.
+5.  **Build Type(빌드 형식)** 을 **D3D** 로 설정합니다.
+6.  **UWP SDK** 를 **Latest installed(최근에 설치)** 로 설정합니다.
+7.  디버그와 관련하여 알려진 성능 문제가 있으므로 **Build configuration(빌드 구성)** 을 **Release(릴리스)** 로 설정합니다.
 
 ![유니버설 Windows 플랫폼 강조 표시 된 unity 편집기에서 열린 빌드 설정 창의 스크린샷](images/wmr-config-img-4.png)
 
@@ -73,14 +73,14 @@ OpenXR을 Unity에서 런타임으로 설정 하려면 다음을 수행 합니�
 
 ![XR 플러그 인 관리를 강조 표시 한 Unity 편집기에서 열리는 프로젝트 설정 패널의 스크린샷](images/openxr-img-05.png)
 
-## <a name="optimization"></a>Optimization
+## <a name="optimization"></a>최적화
 
 HoloLens 2 용으로 개발 하는 경우 **> OpenXR> Mixed Reality로 이동 하 여 hololens 2에 권장 되는 프로젝트 설정을 적용** 하 여 더 나은 앱 성능을 얻을 수 있습니다.
 
 ![OpenXR가 선택 된 혼합 현실 메뉴 항목 열기의 스크린샷](images/openxr-img-08.png)
 
 > [!IMPORTANT]
-> **OpenXR 플러그 인** 옆에 빨간색 경고 아이콘이 표시 되 면이 아이콘을 클릭 하 고 계속 하기 전에 **모두 수정** 을 선택 합니다. Unity 편집기를 다시 시작 해야 변경 내용이 적용 될 수 있습니다.
+> **OpenXR 플러그 인** 옆에 빨간색 경고 아이콘이 표시 되 면이 아이콘을 클릭 하 고 계속 하기 전에 **모두 수정** 을 선택 합니다. Unity Editor를 다시 시작해야 변경 내용이 적용될 수 있습니다.
 
 ![OpenXR 프로젝트 유효성 검사 창의 스크린샷](images/openxr-img-06.png)
 
