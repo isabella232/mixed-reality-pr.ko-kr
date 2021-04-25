@@ -9,7 +9,7 @@
 ### [헤드셋 연결](plug-in-your-headset.md)
 ### [Windows Mixed Reality 설치](install-windows-mixed-reality.md)
 ### [Windows Mixed Reality 설정](set-up-windows-mixed-reality.md)
-### [Windows Mixed Reality 설치 FAQ](wmr-setup-faq.md)
+### [Windows Mixed Reality 설치 FAQ](wmr-setup-faq.yml)
 
 ## Windows Mixed Reality 사용
 ### [혼합 현실의 학습 환경](learn-mixed-reality.md)
@@ -20,7 +20,7 @@
 ### [SteamVR 사용](using-steamvr-with-windows-mixed-reality.md)
 ### [Microsoft Edge 사용](using-microsoft-edge.md)
 ### [WebVR이란?](webvr.md)
-### [Windows Mixed Reality 사용 FAQ](using-wmr-faq.md)
+### [Windows Mixed Reality 사용 FAQ](using-wmr-faq.yml)
 
 ## 문제 해결 및 FAQ
 ### [FAQ 개요](troubleshooting-windows-mixed-reality.md)
@@ -38,7 +38,7 @@
 ### [추적 시스템](tracking.md)
 ### [WebVR](webvr-questions.md)
 ### [기타 질문](other-questions.md)
-### [HP Reverb G2 FAQ](reverbG2-faq.md)
+### [HP Reverb G2 FAQ](reverbG2-faq.yml)
 
 ## 리소스
 ### [몰입형 헤드셋 상태, 안전 및 편안함](wmr-health-safety-comfort.md)
