@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: 960b26d16e9edd387eb94c469d45b0c669fadc10
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 66b352696016577ab121520102dd766b030ccf0e
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580542"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944634"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Windows Mixed Reality의 모션 컨트롤러
 
@@ -36,7 +36,7 @@ Windows Mixed Reality 동작 컨트롤러는 몰입 형 헤드셋 센서를 통�
 > * PC와 직접 연결 되는 컨트롤러의 경우, 연결 모드를 켜고 표시등이 깜박일 때까지 배터리 구획 내에서 페어링 단추를 눌러 페어링 모드로 전환 해야 합니다.
 > * 동작 컨트롤러는 한 번에 하나의 PC로만 쌍으로 연결 되도록 지원 합니다. 다른 헤드셋에서 사용 해야 하는 경우 페어링 프로세스를 진행 해야 합니다. [Windows Mixed Reality 설정을](set-up-windows-mixed-reality.md) 참조 하세요.
 
-[연결 도움말 보기](wmr-setup-faq.md#my-motion-controllers-arent-working)
+[연결 도움말 보기](wmr-setup-faq.yml#my-motion-controllers-aren-t-working)
 
 > [!IMPORTANT]
 > **Xbox 컨트롤러를 얻었습니다?**
@@ -75,7 +75,7 @@ Led가 켜지는 때까지 2 초 동안 Windows 단추를 눌러 컨트롤러를
 
 ### <a name="common-issues"></a>일반적인 문제
 
-* PC에서 하나의 Bluetooth 라디오가 활성화 되어 있는지 확인 합니다. Bluetooth 라디오가 둘 이상 있는 경우 Device Manager에서 다른 라디오 단추를 사용 하지 않도록 설정 해야 합니다.
+* PC에서 하나의 Bluetooth 라디오가 활성화 되어 있는지 확인 합니다. Bluetooth 라디오가 둘 이상 있는 경우 장치 관리자에서 다른 라디오 단추를 사용 하지 않도록 설정 해야 합니다.
 * 컨트롤러에 대 한 명백한 줄이 있는 포트에 Bluetooth 동글을 추가 하 고 USB 3.0 장치에 연결 되어 있습니다. USB 3.0는 Bluetooth에 RF 간섭을 있는 것으로 알려져 있습니다 (자세한 내용은 [이 문서](https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/usb3-frequency-interference-paper.pdf) 를 참조). USB 2.0 포트가 Bluetooth 동글을 더 잘 작동할 수 있습니다.
 * Bluetooth 동글이 HMD의 USB 케이블 옆에 있는 USB 포트에 연결 되어 있지 않은지 확인 합니다. 헤드셋 케이블로 Bluetooth 동글 간섭을 발생 시키는 것으로 알려져 있습니다. 최상의 결과를 위해 PC의 전면 USB 포트에 동글을 연결 합니다.
 * 노트북의 경우 최상의 환경을 위해 WiFi가 5ghz 대역에 연결 되어 있는지 확인 합니다. 무선 네트워크 아이콘을 선택 하 고 사용 중인 네트워크에 대 한 속성을 선택 합니다. Bluetooth 및 WiFi 연결을 위해 2.4 GHz 안테나를 공유 하도록 설계 된 노트북은 느린 네트워크 속도에서의 데이터 정체 또는 잘못 된 동작 컨트롤러 추적 성능을 표시 합니다.

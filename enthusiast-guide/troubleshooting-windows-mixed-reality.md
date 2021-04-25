@@ -3,12 +3,12 @@ title: Windows Mixed Reality 문제 해결
 description: 표준 소비자 지원 설명서를 벗어나는 Windows Mixed Reality 문제 해결을 최신 상태로 유지 합니다.
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원
-ms.openlocfilehash: 6e685aac0919d920f47c2bd8954706da79dbc8c4
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 2fbdb434eb3ccc0a327af990b4f4854faafbdf85
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009483"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944644"
 ---
 # <a name="troubleshooting-windows-mixed-reality-faqs"></a>Windows Mixed Reality 문제 해결 (Faq)
 
@@ -16,7 +16,7 @@ ms.locfileid: "98009483"
 
 ## <a name="whats-new"></a>새로운 기능!
 
-새로 릴리스된 HP 반향 G2 헤드셋 및 컨트롤러를 사용할 때 모든 항목에 대 한 [전용 FAQ 페이지](reverbG2-faq.md) 를 컴파일 했습니다. 이 문서에서는 연결 문제 및 이미지 명확성에서 동작 컨트롤러 문제 및 혼합 현실 실행과 관련 한 모든 사항을 다룹니다.
+새로 릴리스된 HP 반향 G2 헤드셋 및 컨트롤러를 사용할 때 모든 항목에 대 한 [전용 FAQ 페이지](reverbG2-faq.yml) 를 컴파일 했습니다. 이 문서에서는 연결 문제 및 이미지 명확성에서 동작 컨트롤러 문제 및 혼합 현실 실행과 관련 한 모든 사항을 다룹니다.
 
 ## <a name="troubleshooting-topics"></a>문제 해결 항목
 
@@ -27,7 +27,7 @@ ms.locfileid: "98009483"
 설치에 대 한 문제, Windows Mixed Reality, 설치 오류, 최소 PC 요구 사항 또는 관리자 권한 실행에 대 한 자세한 내용은 다음 두 Faq를 확인 하세요.
 
 - [설치 오류](installation_errors.md)
-- [설치](wmr-setup-faq.md)
+- [설치](wmr-setup-faq.yml)
 
 ### <a name="hardware-issues"></a>하드웨어 문제
 
@@ -58,5 +58,5 @@ PC가 느리게 실행 되 고 있는 경우, 내부에 너무 많은 시각적 
 
 - [성능](performance-questions.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [기타 질문](other-questions.md)

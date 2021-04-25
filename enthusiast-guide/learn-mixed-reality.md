@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 자습서, 시작 하기
 appliesto:
 - Windows 10
-ms.openlocfilehash: 2cbfb171065b0f2cf616348194b286e37159d425
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9210f9bb7dd4c922c0d202ddc114beab60e66de8
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726054"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944734"
 ---
 # <a name="learn-mixed-reality"></a>Mixed Reality 학습
 
@@ -51,8 +51,8 @@ ms.locfileid: "97726054"
 
 혼합 현실 포털 앱 아래쪽의 **재생** 아이콘을 누르기만 하면 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 * [설치 문제 해결](installation_errors.md)
-* [설치 문제 해결](wmr-setup-faq.md)
+* [설치 문제 해결](wmr-setup-faq.yml)
 * [혼합 현실 집](your-mixed-reality-home.md)

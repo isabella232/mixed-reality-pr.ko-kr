@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 시작 하기, 설정, 혼합 현실 포털
 appliesto:
 - Windows 10
-ms.openlocfilehash: 72782d14218e0a95b5a88297310f791c977fe094
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: a0ce559372d854e5f0bd51d25d112ba285e4d81e
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726074"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944744"
 ---
 # <a name="install-windows-mixed-reality-software"></a>Windows Mixed Reality 소프트웨어 설치
 
@@ -91,10 +91,10 @@ Windows Mixed Reality는 크기가 1gb 이며 다운로드 시간은 인터넷 �
 
 ![설정 준비](images/1050px-gettingsetup.png)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 * [커뮤니티에 질문하기](https://answers.microsoft.com)
 * [지원 문의](https://support.microsoft.com/contactus/)
 * [설치 문제 해결](installation_errors.md)
-* [설치 문제 해결](wmr-setup-faq.md)
+* [설치 문제 해결](wmr-setup-faq.yml)
 * [Windows Mixed Reality 설정](set-up-windows-mixed-reality.md)

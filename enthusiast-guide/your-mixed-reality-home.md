@@ -3,12 +3,12 @@ title: 혼합 현실 집
 description: Windows Mixed Reality 홈 내에서 탐색 하 고 텔레포트 하 고 앱과 게임을 시작 하며 홈을 개인 설정 하 고 시각적 개체, 오디오 및 음성 설정을 변경 하는 방법입니다.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 홈, 탐색, 시작, 앱, 게임
-ms.openlocfilehash: 4fd4fb70edf9aadb9b34187f4d8fd421ca1e8a95
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 440660b12b92e0c818cd3601be486d6fd1dfdb92
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725544"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944694"
 ---
 # <a name="your-windows-mixed-reality-home"></a>Windows Mixed Reality 홈
 
@@ -82,9 +82,9 @@ Windows Mixed Reality 홈에는 각 앱의 사운드가 앱의 위치에서 제�
 > [!NOTE]
 > GPU에 부하가 많기 때문에 통합 그래픽이 있는 Pc에서는이 기능을 사용할 수 없습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
-* [Windows Mixed Reality 홈 문제 해결](wmr-setup-faq.md#my-motion-controllers-arent-working)
+* [Windows Mixed Reality 홈 문제 해결](wmr-setup-faq.yml#my-motion-controllers-aren-t-working)
 * [Windows Mixed Reality에서 게임과 앱 사용](using-games-and-apps-in-windows-mixed-reality.md)
 * [내부에서 외부로 추적의 작동 방식](tracking-system.md)
 * [모션 컨트롤러의 작동 방식](controllers-in-wmr.md)

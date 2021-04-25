@@ -8,18 +8,18 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: 9c1863a3fb0c7d8681f82aa6e0d93400bef578c9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0254b7c4ac6a9602517adb3d9e5c024ebd69db4e
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007673"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944680"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Windows Mixed Reality에서 음성 사용
 
 음성을 사용 하 여 Windows Mixed Reality를 빠르게 파악할 수 있습니다. 앱을 여는 것은 빠른 사진을 열고 컨트롤러 없이도 teleporting. 쉽게 입력 하는 방법에 대해 mixed reality 키보드에서 받아쓰기 모드를 시도 합니다. 
 
-음성에 문제가 있나요? [도움말 보기](using-wmr-faq.md#speech-commands-arent-working)
+음성에 문제가 있나요? [도움말 보기](using-wmr-faq.yml#speech-commands-aren-t-working)
 
 <!-- NEED VIDEO: https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality -->
 
@@ -114,7 +114,7 @@ Windows Mixed Reality에서 다음 음성 명령을 사용 하면 보다 빠르�
 | 미리 알림 설정 | 미리 알림 설정 |
 
 > [!NOTE]
-> * Cortana는 일부 지역 및 언어에서 사용할 수 없습니다. [자세히 알아봅니다](https://support.microsoft.com/help/4026948).
+> * Cortana는 일부 지역 및 언어에서 사용할 수 없습니다. [자세히 알아보기](https://support.microsoft.com/help/4026948).
 > * Cortana가 "안녕하세요 Cortana"에 응답 하지 않는 경우 **설정 > 개인 정보 > 음성** 및 온라인 음성 인식이 설정 되어 있는지 확인 하세요.
 > * Cortana를 끄면 "안녕 코타" 음성 명령을 사용할 수 없지만 다른 명령 (예: "선택" 및 "텔레포트")을 계속 사용할 수 있습니다.
 
@@ -152,7 +152,7 @@ Windows Mixed Reality에서 다음 음성 명령을 사용 하면 보다 빠르�
 
 받아쓰기를 중지 하려면 **완료** 를 선택 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [커뮤니티에 질문하기](https://answers.microsoft.com)
 * [지원 문의](https://support.microsoft.com/contactus/)

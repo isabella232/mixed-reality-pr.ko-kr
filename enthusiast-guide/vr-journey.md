@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR,
-ms.openlocfilehash: f373e0a55557fe38dfa598912296252293fa6d34
-ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
+ms.openlocfilehash: c238ec41c75e565cc3eb2bb8bcb9b68eff015f59
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106223934"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944654"
 ---
 # <a name="start-your-vr-journey"></a>VR 여행 시작
 
@@ -47,7 +47,7 @@ PC에서 가장 좋은 설정 및 사용 환경을 제공 하기 위해 구입 �
 |  검사점  |  결과  |
 | --- | --- |
 | [Windows Mixed Reality 설정](set-up-windows-mixed-reality.md) | 새 VR 장치의 컨트롤러, 실내 경계, 음성 입력 및 Microsoft Edge에 대 한 편안한 도움 받기 |
-| [Windows Mixed Reality 설정 Faq](wmr-setup-faq.md) | Windows Mixed Reality를 설정할 때 알려진 문제에 대 한 답변 및 문제 해결 도움말 보기 |
+| [Windows Mixed Reality 설정 Faq](wmr-setup-faq.yml) | Windows Mixed Reality를 설정할 때 알려진 문제에 대 한 답변 및 문제 해결 도움말 보기 |
 | [상태, 안전 및 편안 함 지침](wmr-health-safety-comfort.md) | 헤드셋을 사용 하기 전에 Windows Mixed Reality를 사용 하는 동안 안전 하 게 유지 하기 위한 권장 사항  |
 
 ### <a name="3-using-windows-mixed-reality"></a>3. Windows Mixed Reality 사용
@@ -68,7 +68,7 @@ Windows Mixed Reality 및 몰입 개의 VR 헤드셋을 통해 다양 한 기능
 | [음성 입력 사용](using-speech-in-wmr.md) | 3D 개체, 앱 바, 시작 메뉴 및 Cortana와 상호 작용할 수 있는 다양 한 음성 명령을 숙지 합니다. |
 
 > [!NOTE]
-> 위의 기능 중 하나에서 문제가 발생 하는 경우 **[Windows Mixed REALITY FAQ 사용](using-wmr-faq.md)** 을 확인 하세요.
+> 위의 기능 중 하나에서 문제가 발생 하는 경우 **[Windows Mixed REALITY FAQ 사용](using-wmr-faq.yml)** 을 확인 하세요.
 
 ## <a name="4-discover-apps-and-content"></a>4. 앱 및 콘텐츠 검색
 

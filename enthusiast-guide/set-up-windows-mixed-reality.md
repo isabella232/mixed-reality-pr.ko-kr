@@ -3,12 +3,12 @@ title: Windows Mixed Reality 설정
 description: Windows Mixed Reality 동작 컨트롤러, 음성 및 오디오를 설정 하 고 안전한 재생 공간에 대 한 공간 경계를 정의 하는 방법입니다.
 ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 시작, 설정, 동작 컨트롤러, 컨트롤러, 음성, 오디오, 장착 됨, 경계, 그래픽 드라이버, Microsoft Edge, chromium
-ms.openlocfilehash: 8cd313651665fe2e50deb21e2ba2434883dc873a
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: a08982112fea4d1b67b690233ae387b76afc2f90
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725944"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944754"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Windows Mixed Reality 설정
 
@@ -16,7 +16,7 @@ ms.locfileid: "97725944"
 
 Windows Mixed Reality를 실행 하려면 다음이 필요 합니다.
 
-* 호환 되는 혼합 현실 모던 헤드셋. [자세한 정보](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
+* 호환 되는 혼합 현실 모던 헤드셋. [자세히 알아보기](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
 * [Windows Mixed Reality READY PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) 와 헤드셋에 대 한 올바른 포트
 * 동작 [컨트롤러](controllers-in-wmr.md), Xbox 컨트롤러 또는 마우스 및 키보드
 * 마이크가 있는 헤드폰 (헤드셋에서 기본 제공 되지 않는 경우)
@@ -177,12 +177,12 @@ Windows Mixed Reality 홈에서 새로운 Chromium 기반 Microsoft Edge를 사�
 
 혼합 현실를 두 번째로 입력 하는 것은 PC에 연결 되어 있는 동안 헤드셋을 다시 배치 하는 것 만큼 쉽습니다. 시작 메뉴에서 열어 혼합 현실 포털 응용 프로그램을 수동으로 시작할 수도 있습니다. 입력 및 오디오는 설정 하면 헤드셋으로 자동으로 라우팅하거나 키보드에서 **Windows + Y** 를 눌러 수동으로 트리거할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 * [커뮤니티에 질문하기](https://answers.microsoft.com)
 * [지원 문의](https://support.microsoft.com/contactus/)
 * [설치 문제 해결](installation_errors.md)
-* [설치 문제 해결](wmr-setup-faq.md)
+* [설치 문제 해결](wmr-setup-faq.yml)
 * [Mixed Reality 학습](learn-mixed-reality.md)
 * [모션 컨트롤러](controllers-in-wmr.md)
 * [내부에서 외부로 추적의 작동 방식](tracking-system.md)

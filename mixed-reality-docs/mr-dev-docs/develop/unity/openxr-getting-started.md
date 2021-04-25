@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 보강 현실, 가상 현실, 혼합 현실 헤드셋, 학습, 자습서, 시작
-ms.openlocfilehash: 97169507e2b61110d2d16580ba957feff3755258
-ms.sourcegitcommit: aca5fddb98fbbd9aa22bdf8174d7fdcdb9d4c08a
+ms.openlocfilehash: 4c220deeca13c6807857375b71640207823b94ed
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107894027"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944664"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Unity 용 Mixed Reality OpenXR 플러그 인 사용
 
-Unity 버전 2020.2부터 Microsoft의 Mixed Reality OpenXR 플러그 인 패키지는 UPM (Unity 패키지 관리자)를 사용 하 여 사용할 수 있습니다.
+Unity 버전 2020.2 부터는 [혼합 현실 기능 도구](welcome-to-mr-feature-tool.md)를 사용 하 여 Microsoft의 Mixed Reality OpenXR 플러그 인 패키지를 사용할 수 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 * Unity 2020.3 LTS 이상
 * Unity OpenXR plugin 1.1.1 이상

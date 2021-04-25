@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 버전 기록, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 101061f69fcd4bd3885aa265f32ba2a8f93bf3dc
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 93ab38108d5ad557d61ad366ebb7aebd8cb65ab7
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550133"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944705"
 ---
 # <a name="holographic-remoting-version-history"></a>Holographic 원격 버전 기록
 
@@ -28,6 +28,7 @@ ms.locfileid: "105550133"
 * 원격 앱에서 [SpatialSurfaceObserver](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) 를 통해 쿼리할 수 있는 공간 노출 영역 메시의 전송 최적화.
 * SpatialAnchorManager 메서드를 호출 하거나 앵커 해제 시 예외가 발생 하는 문제를 해결 했습니다.
 * PlayerContext 또는 RemoteContext 인스턴스를 닫을 때 충돌 하는 스레딩 문제가 발생 합니다.
+* 데스크톱의 Holographic 원격 플레이어: 자동으로 닫지 않고 Windows Mixed Reality가 설치 되지 않은 경우 오류 메시지를 표시 합니다.
 * 다른 많은 버그 수정 및 안정성 향상.
 
 ## <a name="version-241-january-22-2021"></a>버전 2.4.1 (2021 년 1 월 22 일) <a name="v2.4.1"></a>
