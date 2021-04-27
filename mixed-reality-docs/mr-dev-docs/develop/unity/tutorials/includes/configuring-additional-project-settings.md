@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 2b0dc328a1a47d9a0bd385cac6a88563dcc3938d
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: d8d46da1a1a095074f059b53ebd997e1b6f89961
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107327029"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107984377"
 ---
 # <a name="unity-20192020--windows-xr-plugin"></a>[Unity 2019/2020 + Windows XR 플러그 인](#tab/winxr)
 
@@ -60,13 +60,13 @@ Unity에서 XR Plug-in Management 설치를 완료한 후 유니버설 Windows �
 
 ![OpenXR 및 Microsoft HoloLens 기능 추가가 선택된 Unity XR 설정](../images/mr-learning-base/base-02-section5-step2-2-1-openxr.png)
 
-화면 상단의 메뉴 모음에서 **Mixed Reality > OpenXR > Apply recommended project settings for HoloLens 2(HoloLens 2에 권장되는 프로젝트 설정 적용)** 로 이동하여 앱 성능을 높입니다.
-
-![OpenXR 및 HoloLens 2에 권장되는 프로젝트 설정 적용이 선택된 Mixed Reality 메뉴](../images/mr-learning-base/base-02-section5-step2-openxr-2.png)
-
 >[!Important]
 >OpenXR 플러그 인(미리 보기) 옆에 빨간색 경고 아이콘이 표시되는 경우 계속하기 전에 아이콘을 클릭하고 Fix all(모두 해결)을 선택합니다. Unity Editor를 다시 시작해야 변경 내용이 적용될 수 있습니다.
 >![모든 문제가 해결 대상으로 선택된 OpenXR 프로젝트 유효성 검사 메뉴](../images/mr-learning-base/base-02-section5-step2-openxr-3.png)
+
+화면 상단의 메뉴 모음에서 **Mixed Reality > OpenXR > Apply recommended project settings for HoloLens 2(HoloLens 2에 권장되는 프로젝트 설정 적용)** 로 이동하여 앱 성능을 높입니다.
+
+![OpenXR 및 HoloLens 2에 권장되는 프로젝트 설정 적용이 선택된 Mixed Reality 메뉴](../images/mr-learning-base/base-02-section5-step2-openxr-2.png)
 
 Unity가 필요한 파일 가져오기를 마치면 MRTK Project Configurator(MRTK 프로젝트 구성기) 창이 다시 표시됩니다. 그렇지 않으면 Unity 메뉴를 사용하여 엽니다.
 
