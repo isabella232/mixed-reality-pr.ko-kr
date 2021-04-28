@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, 동작 컨트롤러
 appliesto:
 - Windows 10
-ms.openlocfilehash: 372e9ca294e7b65d3450e76b1dbd826a7b5b736b
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: cf45794d5c5c6c790578e76be4b222d851b5a73c
+ms.sourcegitcommit: 229c33afab7c70341982f48962028aad13956356
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726034"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "108069197"
 ---
 # <a name="motion-controller-faqs"></a>동작 컨트롤러 Faq
 
@@ -45,7 +45,7 @@ LED constellation 링 및 haptics은 동작 컨트롤러의 상태를 표시 합
     * 손실 추적 – 혼합 현실 포털에서 컨트롤러를 찾을 수 없습니다. 헤드셋 앞에 있는 상태에서 Windows 단추를 4 초간 누르고 2 초 동안 다시 시작 하 여 다시 시작 합니다.
     * 배터리 부족 – 컨트롤러 배터리를 교체 합니다.
 7. 외부 USB Bluetooth 어댑터를 사용 하는 경우 USB 2.0 포트에 연결 되어 있는지 확인 합니다 (항상 검정색은 아니지만). 또한 헤드셋의 USB 커넥터를 비롯 하 여 다른 무선 송신기 또는 USB 플래시 드라이브에서 가능한 한 빨리 연결 해야 합니다. 
-8. **Device Manager > bluetooth** 로 이동 하 고 하나의 어댑터를 찾아 PC에 bluetooth 라디오가 하나만 있는지 확인 합니다. 기본 제공 라디오에서 데스크톱 PC 구성을 사용 하는 경우 외부 안테나가 연결 되어 있는지 확인 합니다. 외부 안테나가 연결 되어 있지 않으면 추적 문제가 발생할 수 있습니다. 또는 외부 Bluetooth 동글을 사용 하 고, 내부 Bluetooth 기능을 사용 하지 않도록 설정 하 고, 페어링 및 연결을 다시 시도 합니다.
+8. **장치 관리자 > bluetooth** 로 이동 하 고 하나의 어댑터를 찾아 PC에 bluetooth 라디오가 하나만 있는지 확인 합니다. 기본 제공 라디오에서 데스크톱 PC 구성을 사용 하는 경우 외부 안테나가 연결 되어 있는지 확인 합니다. 외부 안테나가 연결 되어 있지 않으면 추적 문제가 발생할 수 있습니다. 또는 외부 Bluetooth 동글을 사용 하 고, 내부 Bluetooth 기능을 사용 하지 않도록 설정 하 고, 페어링 및 연결을 다시 시도 합니다.
 9. Bluetooth 설정 창이 백그라운드로 열려 있으면 Bluetooth 프로토콜에 대 한 많은 추가 호출이 수행 됩니다. 설치 미디어를 닫습니다.
 10. 혼합 현실에서 컨트롤러를 켜서 배터리 아이콘을 확인 하 여 동작 컨트롤러의 가상 배터리 수준을 확인 합니다. 보고 된 수준이 컨트롤러를 연결한 직후의 실제 수준 보다 높기 때문에 수준을 읽기 전에 15 초 정도 기다립니다. 아이콘이 빨간색 이면 배터리를 교체 합니다.
 11. Bluetooth 헤드폰 및 스피커를 **설정 > 장치 > bluetooth & 기타 장치** 를 제거 하 고 장치를 끕니다. 최상의 오디오 환경을 위해 혼합 현실 헤드셋의 헤드폰 잭 또는 기본 제공 스피커를 사용 합니다.
@@ -54,7 +54,7 @@ LED constellation 링 및 haptics은 동작 컨트롤러의 상태를 표시 합
 14. 컨트롤러는 펌웨어 업데이트를 진행 하는 동안 깜박입니다. 업데이트가 완료 될 때까지 기다리거나, 컨트롤러가 혼합 현실에 표시 되어야 합니다.
 15. PC가 5ghz Wi-Fi 네트워크에 연결 되어 있는지 확인 합니다. 랩톱이 2.4 GHz Wi-Fi 네트워크에 연결 된 경우 일반적으로 Bluetooth 연결을 공유 합니다. 이는 제품 설계에 따라 Wi-Fi 또는 Bluetooth 성능에 부정적인 영향을 미칠 수 있습니다. 네트워크 어댑터 설정에서 기본 설정 밴드를 5ghz로 변경 합니다. 네트워크가 5ghz를 지원 하지 않는 경우 내부 Bluetooth 기능 대신 Bluetooth 동글을 사용할 수 있습니다.
 16. Bluetooth 설정에 이미 페어링 된 동작 컨트롤러가 있는 경우 Windows는 제거 될 때까지 새 장치를 검색 하지 않습니다. 특정 동글을 사용 하 여 추가 된 경우 해당 동글을 제거할 수 있습니다.
-17. PC가 기본 제공 블루투스를 사용 하는 경우 연결 문제가 있는 경우 USB Bluetooth 어댑터를 사용해 보세요. 이렇게 하려면 Device Manager에서 기본 제공 Bluetooth 라디오를 끄고 다른 Bluetooth 장치를 새 어댑터와 페어링 합니다.
+17. PC가 기본 제공 블루투스를 사용 하는 경우 연결 문제가 있는 경우 USB Bluetooth 어댑터를 사용해 보세요. 이렇게 하려면 장치 관리자에서 기본 제공 Bluetooth 라디오를 끄고 다른 Bluetooth 장치를 새 어댑터와 페어링 합니다.
 
 ## <a name="my-controllers-jitter-get-stuck-or-flicker-and-disappear-in-mixed-reality"></a>혼합 현실에서 내 컨트롤러 지터, 정지 또는 깜박임
 
@@ -90,11 +90,9 @@ LED constellation 링 및 haptics은 동작 컨트롤러의 상태를 표시 합
 절벽에서 컨트롤러를 볼 수 있지만 SteamVR apps 및 게임이 아닌 경우에는 동작 컨트롤러 모델 드라이버가 제대로 설치 되지 않을 수 있습니다. 동작 컨트롤러 모델 드라이버가 올바르게 설치 되었는지 확인 하려면 다음을 수행 합니다.
 
 1. 두 동작 컨트롤러를 모두 켭니다. 동작 컨트롤러의 [쌍](controllers-in-wmr.md#pair-motion-controllers)이 올바른지 확인 합니다.
-2. **Device Manager > Bluetooth** 로 이동 하 고 "동작 컨트롤러"를 찾습니다.
-3. 장치를 선택한 다음, **연결로 > 장치 보기** 로 이동 합니다.
-4. **시스템 설정 > 장치 > Bluetooth > &** 기타 장치로 이동 하 여 표시 되는지 확인 합니다. 두 개의 "Bluetooth HID 장치" 장치가 있으며 각 Bluetooth HID 장치 아래에 동작 컨트롤러와 같은 노드에 "동작 컨트롤러" (회색 아이콘 포함) 라는 장치가 있어야 합니다.
-5. 각 "동작 컨트롤러" 장치를 두 번 클릭 하 고 "드라이버" 탭으로 이동 합니다. 나열 된 드라이버 버전이 [이러한 버전](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history)중 하나에 해당 하는지 확인 합니다.
-6. 그렇지 않으면 드라이버를 자동으로 다운로드 하 여 설치 하는 Windows 업데이트를 실행 합니다. 엔터프라이즈 정책이 있는 PC를 만들거나 Windows 업데이트 달리 제한 된 경우에는 동작 컨트롤러 모델 드라이버를 수동으로 설치 해야 할 수 있습니다. 이렇게 하려면 [이 페이지](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history) 를 방문 하 여 Windows 10 버전에 해당 하는 드라이버 버전을 확인 합니다. 설치 지침은 다운로드 페이지에서 확인할 수 있습니다.
+2. **장치 관리자 > 휴먼 인터페이스 장치로** 이동 하 여 "동작 컨트롤러"를 찾습니다.
+3. 각 "동작 컨트롤러" 장치를 두 번 클릭 하 고 "드라이버" 탭으로 이동 합니다. 나열 된 드라이버 버전이 [이러한 버전](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history)중 하나에 해당 하는지 확인 합니다.
+4. 드라이버 버전이 일치 하지 않거나 "동작 컨트롤러" 라는 장치를 찾을 수 없는 경우 Windows 업데이트를 실행 합니다.  그러면 드라이버가 자동으로 다운로드 되어 설치 됩니다. 엔터프라이즈 정책이 있는 PC를 만들거나 Windows 업데이트 달리 제한 된 경우에는 동작 컨트롤러 모델 드라이버를 수동으로 설치 해야 할 수 있습니다. 이렇게 하려면 [이 페이지](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history) 를 방문 하 여 컨트롤러 하드웨어에 해당 하는 드라이버 버전을 확인 합니다. 설치 지침은 다운로드 페이지에서 확인할 수 있습니다.
 
 ## <a name="the-controller-firmware-update-takes-longer-than-two-minutes"></a>컨트롤러 펌웨어 업데이트는 2 분 이상 소요 됩니다.
 
@@ -166,16 +164,16 @@ AA 배터리에 대해 모션 컨트롤러 배터리 수준이 조정 됩니다.
 
 동작 컨트롤러는 많은 소비자 장치에서 발견 된 것과 동일한 Bluetooth 기술을 사용 하며, 최근 PC에 포함 된 Bluetooth 기능을 사용할 수 있도록 설계 되었습니다. 혼합 현실 호환성 검사를 통과 하면 PC에 Bluetooth 라디오가 있어야 합니다. 확인하려면 다음을 수행합니다.
 
-* "Device Manager"를 엽니다.
+* "장치 관리자"를 엽니다.
 * Bluetooth 섹션을 확장 하 고 어댑터를 찾습니다.
 
-![Device Manager 예의 스크린샷 어댑터는 Bluetooth 송수신 장치입니다.](images/devicemanagerbtadapterpic.png)
+![장치 관리자 예의 스크린샷 어댑터는 Bluetooth 송수신 장치입니다.](images/devicemanagerbtadapterpic.png)
 
 PC에 Bluetooth가 없는 경우 플러그형 USB Bluetooth 4.0 저 에너지 마이크로 어댑터를 사용 합니다.
 
 ## <a name="wi-fi-slows-down-on-my-notebook-when-motion-controllers-are-turned-on"></a>이동 컨트롤러를 켜면 내 노트북에서 Wi-Fi 느려집니다.
 
-노트북은 2.4 GHz 액세스 지점에 연결 된 경우 Bluetooth와 Wi-Fi 안테나를 공유할 수 있습니다. 대역 기본 설정을 5ghz로 전환할 수 있는 경우 Device Manager 체크인 합니다. 5 GHz 네트워크를 사용할 수 없고 성능이 심각한 영향을 받는 경우 Bluetooth 동글을 사용 하는 것이 좋습니다.
+노트북은 2.4 GHz 액세스 지점에 연결 된 경우 Bluetooth와 Wi-Fi 안테나를 공유할 수 있습니다. 대역 기본 설정을 5ghz로 전환할 수 있는 경우 장치 관리자 체크인 합니다. 5 GHz 네트워크를 사용할 수 없고 성능이 심각한 영향을 받는 경우 Bluetooth 동글을 사용 하는 것이 좋습니다.
 
 ![장치 관리자를 통해 Wifi 대역 선택 설정을 찾을 수 있습니다.](images/wifi5ghz.png)
 
@@ -183,7 +181,7 @@ PC에 Bluetooth가 없는 경우 플러그형 USB Bluetooth 4.0 저 에너지 �
 
 동작 컨트롤러는 다른 Bluetooth 키보드, 마우스 및 게임 컨트롤러에서 작동 해야 합니다. 경험은 사용 하는 키보드, 마우스 또는 게임 컨트롤러의 모델에 따라 달라 집니다. 성능을 향상 시키기 위해 수행할 수 있는 몇 가지 작업은 다음과 같습니다.
 
-* 컴퓨터에 Bluetooth가 있지만 계속 해 서 동작 컨트롤러에 문제가 있는 경우에는 USB로 연결 된 플러그형 외부 Bluetooth 어댑터를 사용 하 여 Bluetooth 라디오를 교체 하는 것이 좋습니다. Bluetooth 라디오 어댑터는 한 번에 하나만 활성 상태로 만들 수 있습니다. 기존 라디오와 함께 외부 라디오를 연결 하는 경우 Device Manager에서 기존 Bluetooth 라디오를 사용 하지 않도록 설정 해야 합니다. 어댑터를 마우스 오른쪽 단추로 클릭 하 고 "장치 사용 안 함"을 선택 하 고 이전 Bluetooth 장치를 모두 연결 해제/다시 페어링 합니다.
+* 컴퓨터에 Bluetooth가 있지만 계속 해 서 동작 컨트롤러에 문제가 있는 경우에는 USB로 연결 된 플러그형 외부 Bluetooth 어댑터를 사용 하 여 Bluetooth 라디오를 교체 하는 것이 좋습니다. Bluetooth 라디오 어댑터는 한 번에 하나만 활성 상태로 만들 수 있습니다. 기존 라디오와 함께 외부 라디오를 연결 하는 경우 장치 관리자에서 기존 Bluetooth 라디오를 사용 하지 않도록 설정 해야 합니다. 어댑터를 마우스 오른쪽 단추로 클릭 하 고 "장치 사용 안 함"을 선택 하 고 이전 Bluetooth 장치를 모두 연결 해제/다시 페어링 합니다.
 * USB Bluetooth 어댑터를 사용 하는 경우 USB 2.0 포트에 연결 합니다 (2.0 포트는 일반적으로 검정색 이며 "SS"로 레이블이 지정 되지 않음) (사용 가능한 경우). 포트는 다음과 같이 물리적으로 분리 되어야 합니다.
     - HMD USB 커넥터
     - 플래시 드라이브
@@ -206,4 +204,4 @@ PC에 Bluetooth가 없는 경우 플러그형 USB Bluetooth 4.0 저 에너지 �
 
 ## <a name="im-experiencing-poor-controller-tracking-with-marvell-radio"></a>Marvell 라디오를 사용 하 여 잘못 된 컨트롤러 추적이 발생 함
 
-**Device Manager > bluetooth > MARVELL AVASTAR Bluetooth 라디오 어댑터 > 속성 > 드라이버로** 이동 하 여 driver 15.68.9210.47 이상을 사용 중인지 확인 합니다.
+**장치 관리자 > bluetooth > MARVELL AVASTAR Bluetooth 라디오 어댑터 > 속성 > 드라이버로** 이동 하 여 driver 15.68.9210.47 이상을 사용 중인지 확인 합니다.
