@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 85a203f22c62871265f7775c364f5388194b53a1
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 6576eaedbfba11fae62e59fa9777fe928f0c6a69
+ms.sourcegitcommit: 728f4523188628950478cc03ec7145e89569e0d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550973"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108172565"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>Mixed Reality Toolkit이란 무엇인가요?
 
@@ -26,32 +26,31 @@ MRTK-Unity는 Unity에서 플랫폼 간 MR 앱 개발을 가속화하는 데 사
 * **공간 상호 작용 및 UI를 위한 플랫폼 간 입력 시스템 및 구성 요소** 를 제공합니다.
 * 변경 내용을 즉시 볼 수 있는 편집기 내 시뮬레이션을 통해 **프로토타입을 신속하게 제작** 할 수 있습니다.
 * **확장 가능한 프레임워크** 로서 작동해 개발자에게 핵심 구성 요소를 교환하는 기능을 제공합니다.
-* 다음을 포함한 **다양한 플랫폼을 지원** 합니다.
-  * OpenXR(Unity 2020.2 이상)
-    * Microsoft HoloLens 2
-    * Windows Mixed Reality 헤드셋
-  * Windows Mixed Reality
-    * Microsoft HoloLens
-    * Microsoft HoloLens 2
-    * Windows Mixed Reality 헤드셋
-  * Oculus(Unity 2019.3 이상)
-    * Oculus Quest
-  * OpenVR
-    * Windows Mixed Reality 헤드셋
-    * HTC Vive
-    * Oculus Rift
-  * Ultraleap Hand Tracking
-  * iOS, Android 같은 모바일 디바이스
+* **다양한 플랫폼을 지원합니다**.
+
+| 플랫폼 | 지원되는 디바이스 |
+|---|---|
+| OpenXR(Unity 2020.2 이상) | Microsoft HoloLens 2 <br> Windows Mixed Reality 헤드셋 |
+| Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality 헤드셋  |
+| Oculus(Unity 2019.3 이상) | Oculus Quest |
+| OpenVR |  Windows Mixed Reality 헤드셋 <br> HTC Vive <br> Oculus Rift |
+| Ultraleap Hand Tracking | Ultraleap Leap 모션 컨트롤러 |
+| 모바일 | iOS 및 Android |
 
 ## <a name="getting-started-with-mrtk"></a>MRTK 시작
 
-Unity에서 MRTK 또는 Mixed Reality 개발이 처음인 경우 필요한 도구를 설치한 다음, HoloLens 2 자습서 시리즈를 따르는 것이 좋습니다.
+Unity에서 MRTK 또는 Mixed Reality 개발을 처음 사용하는 경우 디바이스 또는 에뮬레이터에 MRTK 예제 허브 샘플 애플리케이션을 설치하고 탐색하는 것이 좋습니다. 
 
 > [!div class="nextstepaction"]
-> [도구 설치](install-the-tools.md)
+> [MRTK 예제 허브 앱 다운로드](running-examples-hub.md)
+
+Mixed Reality 및 MRTK가 제공하는 기능을 파악했다면 필요한 도구를 설치하고 초급 HoloLens 2 자습서 시리즈를 따르세요.
 
 > [!div class="nextstepaction"]
-> [HoloLens 2 자습서 시리즈](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
+> [도구 설치](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+
+> [!div class="nextstepaction"]
+> [HoloLens 2 자습서 시리즈](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
 
 작동 원리를 자세히 알고 싶으신가요?
 > [!div class="nextstepaction"]

@@ -6,18 +6,18 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: vr, 하드웨어, 사양, 사양, 기술, 센서, 광학, 디스플레이, 혼합 현실 헤드셋, 가상 현실 헤드셋, 가상 현실 정의, 모던 헤드셋
-ms.openlocfilehash: c4c6457f3a32994dc242f603c48fe90eb8194ed0
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: a8febeb10dde40cbb4faba49881ee156544d698f
+ms.sourcegitcommit: 9ab1d2de03bb046bb73bddbaa38907d0890f6e66
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757711"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108293551"
 ---
 # <a name="immersive-headset-hardware-details"></a>몰입형 헤드셋 하드웨어 세부 정보
 
 ![다양 한 Windows Mixed Reality 헤드셋](images/MR-headsets.png)
 
-다양 한 글로벌 소매점에서 공개적으로 사용할 수 있는 Windows Mixed Reality 모던 헤드셋을 구매할 수 있습니다. [온라인 Microsoft Store](https://www.microsoft.com/store/collections/VRandMixedrealityheadsets)에서 헤드셋을 찾을 수도 있습니다 .이는 모두 혼합 현실 개발에 사용할 수 있습니다. 이러한 몰입 형 헤드셋은 기본적으로 제공 되는 내부 추적을 제공 합니다. 즉, 외부 추적기를 구입 또는 설치 하거나 벽면에 센서를 배치 하지 않아도 됩니다. 플러그 앤 플레이를 비롯 하 여 복잡 한 설정이 없습니다.
+다양 한 글로벌 소매점에서 공개적으로 사용할 수 있는 Windows Mixed Reality 모던 헤드셋을 구매할 수 있습니다. [온라인 Microsoft Store](https://www.microsoft.com/en-us/store/collections/AR-MR-VRheadsets)에서 헤드셋을 찾을 수도 있습니다 .이는 모두 혼합 현실 개발에 사용할 수 있습니다. 이러한 몰입 형 헤드셋은 기본적으로 제공 되는 내부 추적을 제공 합니다. 즉, 외부 추적기를 구입 또는 설치 하거나 벽면에 센서를 배치 하지 않아도 됩니다. 플러그 앤 플레이를 비롯 하 여 복잡 한 설정이 없습니다.
 
 ## <a name="device-specifications"></a>디바이스 사양
 
