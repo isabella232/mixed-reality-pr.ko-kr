@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: 장면 이해, 공간 매핑, Windows Mixed Reality, Unity
-ms.openlocfilehash: 2a1bf87ae4ce13b47d373f44e398d02382674fe7
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: 2f6e0c9d0370caed2b2bc01399b9e4fc00836556
+ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810132"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644839"
 ---
 # <a name="scene-understanding-sdk-overview"></a>장면 이해 SDK 개요
 
@@ -19,17 +19,13 @@ ms.locfileid: "98810132"
 
 ## <a name="where-do-i-get-the-sdk"></a>SDK는 어디에서 얻을 까 요?
 
-SceneUnderstanding SDK는 NuGet을 통해 다운로드할 수 있습니다.
-
-[SceneUnderstanding SDK](https://www.nuget.org/packages/Microsoft.MixedReality.SceneUnderstanding/)
+SceneUnderstanding SDK는 [혼합 현실 기능 도구](../unity/welcome-to-mr-feature-tool.md)를 통해 다운로드할 수 있습니다.
 
 **참고:** 최신 릴리스는 미리 보기 패키지에 의존 하므로 시험판 패키지를 사용 하도록 설정 하 여 해당 릴리스를 확인 해야 합니다.
 
 버전 0.5.2022 이상에서, 장면 이해는 c # 및 c + +에 대 한 언어 프로젝션을 지원 하 여 응용 프로그램에서 Win32 또는 UWP 플랫폼용 응용 프로그램을 개발할 수 있도록 합니다. 이 버전부터 SceneUnderstanding는 HoloLens2와의 통신에만 사용 되는 SceneObserver를 제한 하는 unity의 unity 지원 기능을 지원 합니다. 
 
 SceneUnderstanding에 Windows SDK 버전 18362 이상이 필요 합니다. 
-
-Unity 프로젝트에서 SDK를 사용 하는 경우 [unity 용 NuGet](https://github.com/GlitchEnzo/NuGetForUnity) 을 사용 하 여 프로젝트에 패키지를 설치 합니다.
 
 ## <a name="conceptual-overview"></a>개념적 개요
 
@@ -117,7 +113,7 @@ SceneObjects에는 다음 중 하나를 사용할 수 있습니다.
 
 <table>
 <tr>
-<th>SceneObjectKind</th> <th>설명</th>
+<th>SceneObjectKind</th> <th>Description</th>
 </tr>
 <tr><td>배경</td><td>SceneObject는 인식 되는 다른 종류의 장면 개체 중 하나가 <b>아닌</b> 것으로 알려져 있습니다. 이 클래스는 배경을 벽/층/천장 등이 아닌 것으로 알려진 경우 알 수 없는와 혼동 해서는 안 됩니다. unknown은 아직 분류 되지 않습니다.</b></td></tr>
 <tr><td>벽</td><td>실제 벽입니다. 벽은 불균형 환경 구조로 간주 됩니다.</td></tr>
@@ -125,7 +121,7 @@ SceneObjects에는 다음 중 하나를 사용할 수 있습니다.
 <tr><td>Ceiling</td><td>방의 위쪽 표면입니다.</td></tr>
 <tr><td>플랫폼</td><td>Holograms를 놓을 수 있는 커다란 플랫 표면입니다. 이는 테이블, countertops 및 기타 넓은 가로 표면을 나타내는 경향이 있습니다.</td></tr>
 <tr><td>World</td><td>레이블 지정과 무관 한 기하학적 데이터의 예약 된 레이블입니다. EnableWorldMesh 업데이트 플래그를 설정 하 여 생성 된 메시는 세계로 분류 됩니다.</td></tr>
-<tr><td>Unknown</td><td>이 장면 개체는 아직 분류 되어 있으며 종류를 할당 해야 합니다. 이 개체는 아무것도 될 수 있으므로 배경과 혼동 해서는 안 됩니다. 시스템은 아직 충분히 강력한 분류로 제공 되지 않습니다.</td></tr>
+<tr><td>알 수 없음</td><td>이 장면 개체는 아직 분류 되어 있으며 종류를 할당 해야 합니다. 이 개체는 아무것도 될 수 있으므로 배경과 혼동 해서는 안 됩니다. 시스템은 아직 충분히 강력한 분류로 제공 되지 않습니다.</td></tr>
 </tr>
 </table>
 
@@ -222,7 +218,7 @@ foreach (var sceneObject in myScene.SceneObjects)
 
 ### <a name="component-update-and-refinding-components"></a>구성 요소 업데이트 및 refinding 구성 요소
 
-**_FindComponent_* _ 라는 장면에서 구성 요소를 검색 하는 다른 함수가 있습니다. 이 함수는 추적 개체를 업데이트 하 고 나중에 백그라운드에서 찾을 때 유용 합니다. 다음 코드는 이전 장면을 기준으로 새 장면을 계산 하 고 새 장면에서 바닥을 찾습니다.
+***FindComponent*** 라는 장면에서 구성 요소를 검색 하는 다른 함수가 있습니다. 이 함수는 추적 개체를 업데이트 하 고 나중에 백그라운드에서 찾을 때 유용 합니다. 다음 코드는 이전 장면을 기준으로 새 장면을 계산 하 고 새 장면에서 바닥을 찾습니다.
 
 ```cs
 // Compute a new scene, and tell the system that we want to compute relative to the previous scene
@@ -239,7 +235,7 @@ if (firstFloor != null)
 
 ## <a name="accessing-meshes-and-quads-from-scene-objects"></a>장면 개체에서 메시 및 Quads 액세스
 
-SceneObjects 발견 되 면 응용 프로그램은 구성 된 quads/메시에 포함 된 데이터에 액세스 하려고 할 가능성이 높습니다. 이 데이터는 _*_Quads_*_ 및 _*_메시_*_ 속성을 사용 하 여 액세스 됩니다. 다음 코드는 floor 개체의 모든 quads 및 메시를 열거 합니다.
+SceneObjects 발견 되 면 응용 프로그램은 구성 된 quads/메시에 포함 된 데이터에 액세스 하려고 할 가능성이 높습니다. 이 데이터는 ***Quads** _ 및 _ *_메시_** 속성을 사용 하 여 액세스 됩니다. 다음 코드는 floor 개체의 모든 quads 및 메시를 열거 합니다.
 
 ```cs
 
@@ -351,7 +347,7 @@ SetUnityTransformFromMatrix4x4(unityObject.transform, converted4x4LocationMatrix
 
 Quads는 2D 배치 시나리오를 지원 하도록 설계 되었으며 2D canvas UX 요소에 대 한 확장으로 간주 되어야 합니다. Quads는 SceneObjects의 구성 요소이 고 3D로 렌더링 될 수 있지만 쿼드 Api 자체는 Quads이 2D 구조인 것으로 가정 합니다. 익스텐트, 모양, 배치를 위한 Api 제공 등의 정보를 제공 합니다.
 
-Quads는 사각형 범위를 갖지만 임의의 모양의 2D 표면을 나타냅니다. 3D 환경 quads와 상호 작용 하는 이러한 2D 표면에서 배치를 사용 하도록 설정 하려면 이러한 상호 작용을 가능 하 게 하는 유틸리티를 제공 합니다. 현재 장면 이해에서는 _ *Findcentermostplacement** 및 **GetSurfaceMask** 와 같은 두 가지 함수를 제공 합니다. FindCentermostPlacement는 개체를 배치할 수 있는 쿼드 위치를 찾고 개체에 가장 적합 한 위치를 찾으려고 시도 하는 상위 수준의 API로, 사용자가 제공 하는 경계 상자가 기본 화면에 유지 되도록 보장 합니다.
+Quads는 사각형 범위를 갖지만 임의의 모양의 2D 표면을 나타냅니다. 3D 환경 quads와 상호 작용 하는 이러한 2D 표면에서 배치를 사용 하도록 설정 하려면 이러한 상호 작용을 가능 하 게 하는 유틸리티를 제공 합니다. 현재 장면 이해는 **Findcentermostplacement** 및 **GetSurfaceMask** 의 두 가지 함수를 제공 합니다. FindCentermostPlacement는 개체를 배치할 수 있는 쿼드 위치를 찾고 개체에 가장 적합 한 위치를 찾으려고 시도 하는 상위 수준의 API로, 사용자가 제공 하는 경계 상자가 기본 화면에 유지 되도록 보장 합니다.
 
 > [!NOTE]
 > 출력의 좌표는 다른 windows Rect 형식에 있는 것 처럼 (x = 0, y = 0) 왼쪽 위 모퉁이가 있는 "쿼드 공간"의 쿼드에 상대적입니다. 사용자 고유의 개체의 원본으로 작업할 때는이를 고려해 야 합니다. 

@@ -1,37 +1,37 @@
 ---
 title: Unity의 텍스트
-description: Unity에 텍스트를 표시 하기 위해 사용할 수 있는 텍스트 구성 요소에는 UI 텍스트와 3D 텍스트 메시의 두 가지 유형이 있습니다.
+description: Unity에서 텍스트를 표시하기 위해 사용할 수 있는 텍스트 구성 요소에는 UI 텍스트와 3D 텍스트 메시의 두 가지 유형이 있습니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
-keywords: Windows Mixed Reality, 디자인, 컨트롤, 글꼴, 입력 체계, ui, ux, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: da2932234793a6db160d3bc2bd6dba02318c83bd
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+keywords: Windows Mixed Reality, 디자인, 컨트롤, 글꼴, 입력 체계, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: dde8989998cf422c40ada927c0d8462cb4cd97b9
+ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010494"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109489283"
 ---
 # <a name="text-in-unity"></a>Unity의 텍스트
 
-텍스트는 holographic apps에서 가장 중요 한 구성 요소 중 하나입니다. Unity에 텍스트를 표시 하기 위해 사용할 수 있는 텍스트 구성 요소에는 UI 텍스트, 3D 텍스트 메시 및 텍스트 메시 Pro의 세 가지 유형이 있습니다. 기본적으로 UI 텍스트 및 3D 텍스트 메시는 흐리게 표시 되며 너무 깁니다. 몇 가지 변수를 변경 하면 HoloLens에서 크기를 관리 하는 더 선명한 텍스트가 생성 됩니다. UI 텍스트 및 3D 텍스트 메시 구성 요소를 사용할 때 적절 한 크기를 얻기 위해 크기 조정 요소를 적용 하 여 렌더링 품질을 향상 시킬 수 있습니다.
+텍스트는 홀로그램 앱에서 가장 중요한 구성 요소 중 하나입니다. Unity에서 텍스트를 표시하기 위해 사용할 수 있는 텍스트 구성 요소에는 UI 텍스트, 3D 텍스트 메시 및 Text Mesh Pro의 세 가지 유형이 있습니다. 기본적으로 UI 텍스트 및 3D 텍스트 메시는 흐리게 표시되고 너무 큽니다. 몇 가지 변수를 변경하면 HoloLens에서 관리가 용이한 크기로 더 선명하고 품질이 높은 텍스트가 발생합니다. UI 텍스트 및 3D 텍스트 메시 구성 요소를 사용할 때 크기 조정 요소를 적용하여 적절한 차원을 가져오면 렌더링 품질을 향상할 수 있습니다.
 
-![선명 하 고 멋진 텍스트를 얻는 방법](images/hug-text-02-640px.png)<br>
+![선명하고 멋진 텍스트를 얻는 방법](images/hug-text-02-640px.png)<br>
 *Unity의 흐린 기본 텍스트*
 
-## <a name="working-with-unitys-3d-text-text-mesh-and-ui-text"></a>Unity의 3D 텍스트 (텍스트 메시) 및 UI 텍스트 작업
+## <a name="working-with-unitys-3d-text-text-mesh-and-ui-text"></a>Unity의 3D 텍스트(텍스트 메시) 및 UI 텍스트 작업
 
-Unity는 장면에 추가 된 모든 새 요소가 단일 Unity 단위 (크기) 또는 100% 변형 배율 이라고 가정 합니다. 하나의 Unity 단위는 HoloLens에서 약 1 미터로 변환 됩니다. 글꼴의 경우 3D TextMesh의 경계 상자는 기본적으로 높이 (약 1 미터)로 제공 됩니다.
+Unity는 장면에 추가된 모든 새 요소가 하나의 Unity 단위 크기 또는 100% 변환 배율이라고 가정합니다. 하나의 Unity 단위는 HoloLens에서 약 1미터로 변환됩니다. 글꼴의 경우 3D TextMesh에 대한 경계 상자는 기본적으로 약 1미터 높이로 제공됩니다.
 
 ![Unity에서 글꼴 작업](images/640px-hug-text-03.png)<br>
-*기본 Unity 3D 텍스트 (텍스트 메시)는 1 미터의 Unity 단위 하나를 차지 합니다.*
+*기본 Unity 3D 텍스트(텍스트 메시)는 하나의 Unity 단위(1미터)를 차지합니다.*
 
 <br>
 
-대부분의 비주얼 디자이너는 요소를 사용 하 여 실제 세계의 글꼴 크기를 정의 합니다. 1 미터에 약 2835 (2, 834.645666399962) 점이 있습니다. 1 미터에 대 한 시점 시스템 변환과 Unity의 기본 텍스트 메시 글꼴 크기 13을 기반으로 하는 간단한 수학 13은 0.0046 2835 (정확 하 게 0.004586111116)로 시작 하는 데 적합 한 표준 배율을 제공 합니다 (일부는 0.005로 반올림). 텍스트 개체 또는 컨테이너를 이러한 값으로 크기를 조정 하면 디자인 프로그램에서 글꼴 크기를 1:1으로 변환할 수 있을 뿐만 아니라 사용자 환경 전체에서 일관성을 유지할 수 있도록 표준도 제공 됩니다.
+대부분의 비주얼 디자이너는 점을 사용하여 실제 세계에서 글꼴 크기를 정의합니다. 1미터에는 약 2835(2,834.645666399962)의 지점이 있습니다. 포인트 시스템을 1미터로 변환하고 Unity의 기본 텍스트 메시 글꼴 크기 13을 2835로 나눈 간단한 수학은 0.0046(정확히 0.004586111116)과 같습니다(일부는 0.005로 반올림할 수 있음). 텍스트 개체 또는 컨테이너를 이러한 값으로 확장하면 디자인 프로그램에서 글꼴 크기를 1:1로 변환할 수 있을 뿐만 아니라 환경 전체에서 일관성을 유지할 수 있도록 표준을 제공합니다.
 
-![Unity 3D 텍스트 및 UI 텍스트에 대 한 값 크기 조정](images/Text_In_Unity_Measurements1.png)<br>
+![Unity 3D 텍스트 및 UI 텍스트 값 크기 조정](images/Text_In_Unity_Measurements1.png)<br>
 *Unity 3D 텍스트 및 UI 텍스트에 대 한 값 크기 조정*
 
 <br>
@@ -59,24 +59,27 @@ Unity의 텍스트 메시 Pro를 사용 하 여 텍스트 렌더링 품질을 �
 *Unity 3D 텍스트 및 UI의 값 크기 조정*
 
 ## <a name="recommended-text-size"></a>권장 텍스트 크기
-짐작할 수 있듯이, PC 또는 태블릿 장치에서 사용 하는 형식 크기 (일반적으로 12 – 32pt 사이)는 2 미터 거리에서 작은 모습을 보입니다. 각 글꼴의 특성에 따라 달라 지지만 일반적으로 권장 되는 최소 보기 각도와 가독성을 위한 글꼴 높이는 사용자 연구 연구를 기반으로 하는 0.35 °-0.4 °/12.21-13.97 mm 주위에 있습니다. 위에서 소개한 크기 조정 인수를 사용 하는 약 35-40 pt입니다.
 
-0.45 m (45 cm)에서 거의 상호 작용 하는 경우에는 최소한의 읽기 쉬운 글꼴 보기 각도와 높이가 0.4 °-0.5 °/3.14 – 3.9 mm입니다. 위에서 소개한 크기 조정 인수를 사용 하는 약 9-12 pt입니다.
+짐작할 수 있듯이, PC 또는 태블릿 장치에서 사용 하는 형식 크기 (일반적으로 12 – 32pt 사이)는 2 미터 거리에서 작은 모습을 보입니다. 각 글꼴의 특성에 따라 달라지지만 일반적으로 권장되는 최소 보기 각도와 가독성을 위한 글꼴 높이는 사용자 연구 연구를 기반으로 약 0.35°-0.4°/12.21-13.97mm입니다. 위에서 도입된 배율 비율은 약 35-40pt입니다.
 
-![](images/typography-distance-1000px.jpg)
-*근거리 및 원거리 상호 작용 범위 콘텐츠 (근거리 및 원거리* 상호 작용 범위)
+0.45m(45cm)에서 가까운 상호 작용의 경우 읽을 수 있는 최소 글꼴의 보기 각도와 높이는 0.4°-0.5° / 3.14–3.9mm입니다. 위에서 도입된 크기 조정 계수가 있는 약 9-12pt입니다.
 
-### <a name="the-minimum-legible-font-size"></a>읽을 때 최소 글꼴 크기
+![근거리 및 원거리 상호 작용 범위 ](images/typography-distance-1000px.jpg)
+ *근거리 및 원거리 상호 작용 범위의 콘텐츠*
+
+### <a name="the-minimum-legible-font-size"></a>읽을 수 있는 최소 글꼴 크기
+
 | 거리 | 시야각 | 텍스트 높이 | 글꼴 크기 |
 |---------|---------|---------|---------|
-| 45 cm (직접 조작 거리) | 0.4 °-0.5 ° | 3.14 – 3.9 mm | 8.9 – 11.13 pt |
-| 2 m | 0.35 °-0.4 ° | 12.21 – 13.97 mm | 34.63-39.58 pt |
+| 45cm(직접 조작 거리) | 0.4°-0.5° | 3.14–3.9mm | 8.9–11.13pt |
+| 2m | 0.35°-0.4° | 12.21–13.97mm | 34.63-39.58pt |
 
 
-### <a name="the-comfortably-legible-font-size"></a>편안 하 게 읽을 때의 글꼴 크기
+### <a name="the-comfortably-legible-font-size"></a>읽을 수 있는 쉬운 글꼴 크기입니다.
+
 | 거리 | 시야각 | 텍스트 높이 | 글꼴 크기 |
 |---------|---------|---------|---------|
-| 45 cm (직접 조작 거리) | 0.65 °-0.8 ° | 5.1-6.3 mm | 14.47-17.8 pt |
+| 45cm(직접 조작 거리) | 0.65 °-0.8 ° | 5.1-6.3 mm | 14.47-17.8 pt |
 | 2 m | 0.6 °-0.75 ° | 20.9-26.2 mm | 59.4-74.2 pt |
 
 맑은 고딕 (Windows의 기본 글꼴)은 대부분의 경우 잘 작동 합니다. 그러나 밝은 수직선을 진동 하 고 가독성을 저하 시킬 수 있으므로 작은 크기로 밝은 색 또는 반투명 글꼴 패밀리를 사용 하지 마십시오. 스트로크 두께가 충분 한 최신 글꼴이 제대로 작동 합니다. 예를 들어 Helvetica 및 Arial은 멋진 하 고 일반 또는 굵게 가중치를 사용 하 여 HoloLens에서 읽을 수 있습니다.
@@ -88,21 +91,21 @@ Unity의 텍스트 메시 Pro를 사용 하 여 텍스트 렌더링 품질을 �
 
 ### <a name="sharp-text-rendering-quality-with-proper-dimension"></a>적절 한 차원의 선명한 텍스트 렌더링 품질
 
-이러한 크기 조정 요소에 따라 [UI 텍스트 및 3D 텍스트 메시를 사용 하 여 텍스트 prefabs](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)를 만들었습니다. 개발자는 이러한 prefabs를 사용 하 여 선명한 텍스트와 일관 된 글꼴 크기를 가져올 수 있습니다.
+이러한 크기 조정 요소에 따라 [UI 텍스트 및 3D 텍스트 메시를 사용 하 여 텍스트 prefabs](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)를 만들었습니다. 개발자는 이러한 prefabs를 사용 하 여 선명한 텍스트와 일관 된 글꼴 크기를 가져올 수 있습니다.
 
 ![적절 한 차원의 선명한 텍스트 렌더링 품질](images/hug-text-06-1000px.png)<br>
 *적절 한 차원의 선명한 텍스트 렌더링 품질*
 
 ### <a name="shader-with-occlusion-support"></a>폐색가 지원 되는 셰이더
 
-Unity의 기본 글꼴 재질은 폐색를 지원 하지 않습니다. 이로 인해 기본적으로 개체 뒤에 텍스트가 표시 됩니다. [폐색를 지 원하는 간단한 셰이더](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/StandardAssets/Shaders/Text3DShader.shader)를 포함 했습니다. 아래 이미지는 기본 글꼴 재질 (왼쪽) 및 적절 한 폐색 (오른쪽) 텍스트가 포함 된 텍스트를 보여 줍니다.
+Unity의 기본 글꼴 재질은 폐색를 지원 하지 않습니다. 이 때문에 기본적으로 개체 뒤에 텍스트가 표시됩니다. 폐색 을 지원하는 간단한 [셰이더를 포함했습니다.](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/StandardAssets/Shaders/Text3DShader.shader) 아래 이미지는 기본 글꼴 재질(왼쪽)이 있는 텍스트와 적절한 폐색이 있는 텍스트(오른쪽)를 보여줍니다.
 
-![폐색가 지원 되는 셰이더](images/hug-text-07-1000px.png)<br>
-*폐색가 지원 되는 셰이더*
+![폐색이 지원된 셰이더](images/hug-text-07-1000px.png)<br>
+*폐색이 지원된 셰이더*
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소를 계속 진행할 수 있습니다.
+앞에서 설명한 Unity 개발 여정을 수행하는 경우 MRTK 핵심 구성 요소 탐색을 진행하는 중입니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [음성 입력 ](voice-input-in-unity.md)
@@ -114,7 +117,7 @@ Unity의 기본 글꼴 재질은 폐색를 지원 하지 않습니다. 이로 �
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-
 ## <a name="see-also"></a>참고 항목
-* [MRTK의 텍스트 Prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)
+
+* [MRTK의 텍스트 프리팹](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)
 * [입력 체계](../../design/typography.md)

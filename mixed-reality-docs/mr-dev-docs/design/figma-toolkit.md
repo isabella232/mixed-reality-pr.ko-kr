@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
 keywords: 고가, 스케치, Adobe XD, 디자인, 디자이너, 디자인 파일, UX 디자인, HoloLens, MRTK, 혼합 현실 도구 키트
-ms.openlocfilehash: 1386ce6238a406c2e2b45c9a6a551ae57c52cc59
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: a24f06b29accaa64a9095054f1e6f8df13a9162e
+ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299958"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644859"
 ---
 # <a name="figma-toolkit"></a>Figma 도구 키트
 
@@ -24,6 +24,7 @@ ms.locfileid: "107299958"
 
 ## <a name="how-to-use-figma-toolkit"></a>는 방법 도구 키트를 사용 하는 방법
 **초안 메뉴에 중복** 을 사용 하 여 복사본을 만듭니다.
+
 <img src="images/UX_Figma_Use1.png" width="500px" alt="Menu duplicate 1"><br>
 
 **파일에 대해 뒤로를** 클릭 하 여 중복 된 복사본을 확인 합니다. 이 복사본을 직접 만들 때 사용할 수 있습니다.
@@ -54,7 +55,7 @@ UI 갤러리 및 구성 요소 페이지는 디자인에 사용할 수 있는 �
 <img src="images/UX_FigmaToolkit_Components_Menu3.png" width="200px" alt="Assets tab"><br>
 
 
-## <a name="examples"></a>예제
+## <a name="examples"></a>예
 
 는 메뉴 UI를 스케치 하는 데 유용 하 게 사용할 수 있습니다. 
 
@@ -66,7 +67,7 @@ UI 갤러리 및 구성 요소 페이지는 디자인에 사용할 수 있는 �
 ![가이 도구 키트 예제-스토리 보 딩](images/UX_FigmaToolkit_Examples_Storyboarding.png)<br>
 
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

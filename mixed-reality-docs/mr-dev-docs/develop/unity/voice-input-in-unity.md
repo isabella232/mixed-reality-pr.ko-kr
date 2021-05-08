@@ -1,43 +1,43 @@
 ---
 title: Unity의 음성 입력
-description: Unity에서 음성 입력, 음성 인식 및 받아쓰기를 추가 하는 세 가지 방법을 Windows Mixed Reality 응용 프로그램에 제공 하는 방법을 알아봅니다.
+description: Unity가 음성 입력, 음성 인식 및 받아쓰기를 Windows Mixed Reality 애플리케이션에 추가하는 세 가지 방법을 노출하는 방법을 알아봅니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 음성 입력, KeywordRecognizer, GrammarRecognizer, 마이크, 받아쓰기, 음성, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: c062289a1a26365528a86761b6b68a9a24041f7c
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 6b040443606e05843f85b2f74f5ea812daafba31
+ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550383"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109489203"
 ---
 # <a name="voice-input-in-unity"></a>Unity의 음성 입력
 
 > [!CAUTION]
-> 시작 하기 전에 인식 음성 서비스 SDK에 대 한 Unity 플러그 인을 사용 하는 것이 좋습니다. 플러그 인은 더 나은 음성 정확도 결과를 제공 하 고 음성 텍스트 디코딩에 쉽게 액세스할 수 있으며 대화, 의도 기반 상호 작용, 번역, 텍스트 음성 변환 및 자연어 음성 인식과 같은 고급 음성 기능을 제공 합니다. 시작 하려면 [샘플 및 설명서](/azure/cognitive-services/speech-service/quickstart-csharp-unity)를 확인 하세요.
+> 시작하기 전에 Cognitive Speech Services SDK에 Unity 플러그 인을 사용하는 것이 좋습니다. 플러그 인은 더 나은 음성 정확도 결과 및 음성-텍스트 디코딩에 쉽게 액세스할 수 있으며 대화 상자, 의도 기반 상호 작용, 번역, 텍스트 음성 변환 및 자연어 음성 인식과 같은 고급 음성 기능을 제공합니다. 시작하려면 [샘플 및 설명서를 확인하세요.](/azure/cognitive-services/speech-service/quickstart-csharp-unity)
 
-Unity는 Unity 응용 프로그램에 [음성 입력](../../design/voice-input.md) 을 추가 하는 세 가지 방법을 제공 하며,이 중 처음 두 가지는 PhraseRecognizer의 유형입니다.
-* 는 `KeywordRecognizer` 수신 대기할 문자열 명령의 배열을 앱에 제공 합니다.
-* 는 `GrammarRecognizer` 수신 대기할 특정 문법을 정의 하는 SRGS 파일을 앱에 제공 합니다.
-* 를 `DictationRecognizer` 사용 하면 앱이 모든 단어를 수신 대기 하 고 사용자에 게 음성의 메모 또는 다른 표시를 제공할 수 있습니다.
+Unity는 Unity 애플리케이션에 [음성 입력을](../../design/voice-input.md) 추가하는 세 가지 방법을 노출하며, 그 중 처음 두 가지는 PhraseRecognizer 형식입니다.
+* 는 `KeywordRecognizer` 수신 대기할 문자열 명령 배열을 앱에 제공합니다.
+* 는 `GrammarRecognizer` 수신 대기할 특정 문법을 정의하는 SRGS 파일을 앱에 제공합니다.
+* `DictationRecognizer`을 사용하면 앱이 단어를 수신 대기하고 사용자에게 음성의 메모 또는 기타 표시를 제공할 수 있습니다.
 
 > [!NOTE]
-> 받아쓰기 및 구 인식을 동시에 처리할 수 없습니다. GrammarRecognizer 또는 KeywordRecognizer가 활성 상태 이면 DictationRecognizer은 활성 상태가 될 수 없으며 그 반대의 경우도 마찬가지입니다.
+> 받아쓰기 및 구 인식은 동시에 처리할 수 없습니다. GrammarRecognizer 또는 KeywordRecognizer가 활성 상태인 경우 DictationRecognizer는 활성 상태일 수 없으며 그 반대의 경우도 마찬가지입니다.
 
-## <a name="enabling-the-capability-for-voice"></a>음성 기능 사용
+## <a name="enabling-the-capability-for-voice"></a>음성에 기능 사용
 
-음성 입력을 사용 하려면 앱에 대해 **마이크** 기능을 선언 해야 합니다.
-1. Unity 편집기에서 **편집 > 프로젝트 설정** 으로 이동 하 > 플레이어로 이동 합니다.
-2. **Windows 스토어** 탭을 선택 합니다.
-3. **게시 설정 > 기능** 섹션에서 **마이크** 기능을 확인 합니다.
-4. HoloLens 장치에서 마이크 액세스를 위해 앱에 사용 권한 부여
-    * 장치를 시작할 때이 작업을 수행 하 라는 메시지가 표시 됩니다. 하지만 실수로 "아니요"를 클릭 한 경우 장치 설정에서 사용 권한을 변경할 수 있습니다.
+**앱에서** 음성 입력을 사용하려면 마이크 기능을 선언해야 합니다.
+1. Unity 편집기에서 **프로젝트 설정 > 플레이어 > 편집으로** 이동합니다.
+2. Windows **스토어** 탭 선택
+3. 게시 **설정 > 기능** 섹션에서 **마이크** 기능을 확인합니다.
+4. HoloLens 디바이스에서 마이크 액세스 권한을 앱에 부여
+    * 디바이스 시작 시 이 작업을 수행하라는 메시지가 표시되지만 실수로 "아니요"를 클릭한 경우 디바이스 설정에서 사용 권한을 변경할 수 있습니다.
 
-## <a name="phrase-recognition"></a>문구 인식
+## <a name="phrase-recognition"></a>구 인식
 
-앱이 사용자가 말하는 특정 문구를 수신 대기 하도록 하려면 다음 작업을 수행 해야 합니다.
+앱이 사용자가 말하는 특정 구를 수신 대기한 다음, 일부 작업을 수행하도록 하려면 다음을 수행해야 합니다.
 1. 또는을 사용 하 여 수신 대기할 문구 지정 `KeywordRecognizer``GrammarRecognizer`
 2. 이벤트를 처리 `OnPhraseRecognized` 하 고 인식 된 구에 해당 하는 작업을 수행 합니다.
 
@@ -116,20 +116,20 @@ SRGS 문법이 있고 [Streamingassets 폴더](https://docs.unity3d.com/Manual/S
 <PROJECT_ROOT>/Assets/StreamingAssets/SRGS/myGrammar.xml
 ```
 
-를 만들어 `GrammarRecognizer` SRGS 파일에 대 한 경로를 전달 합니다.
+를 만들고 `GrammarRecognizer` SRGS 파일에 경로를 전달합니다.
 
 ```
 private GrammarRecognizer grammarRecognizer;
 grammarRecognizer = new GrammarRecognizer(Application.streamingDataPath + "/SRGS/myGrammar.xml");
 ```
 
-이제 `OnPhraseRecognized` 이벤트 등록
+이제 이벤트에 등록합니다. `OnPhraseRecognized`
 
 ```
 grammarRecognizer.OnPhraseRecognized += grammarRecognizer_OnPhraseRecognized;
 ```
 
-SRGS 문법에 지정 된 정보를 포함 하는 콜백을 받게 되며, 적절 하 게 처리할 수 있습니다. 대부분의 중요 한 정보가 배열에 제공 됩니다 `semanticMeanings` .
+적절하게 처리할 수 있는 SRGS 문법에 지정된 정보가 포함된 콜백이 표시됩니다. 대부분의 중요한 정보는 `semanticMeanings` 배열에 제공됩니다.
 
 ```
 private void Grammar_OnPhraseRecognized(PhraseRecognizedEventArgs args)
@@ -139,7 +139,7 @@ private void Grammar_OnPhraseRecognized(PhraseRecognizedEventArgs args)
 }
 ```
 
-마지막으로 인식을 시작 합니다.
+마지막으로, 인식하기 시작합니다.
 
 ```
 grammarRecognizer.Start();
@@ -147,20 +147,20 @@ grammarRecognizer.Start();
 
 ## <a name="dictation"></a>받아쓰기
 
-**네임 스페이스:** *Unityengine. Windows. Speech*<br>
-**유형**: *DictationRecognizer*, *SpeechError*, *SpeechSystemStatus*
+**네임스페이스:** *UnityEngine.Windows.Speech*<br>
+**형식:** *DictationRecognizer,* *SpeechError*, *SpeechSystemStatus*
 
-`DictationRecognizer`사용자의 음성을 텍스트로 변환 하려면를 사용 합니다. DictationRecognizer는 [받아쓰기](../../design/voice-input.md#dictation) 기능을 노출 하 고, 가설 및 구가 완료 된 이벤트에 대 한 등록 및 수신 대기를 지원 하므로, 나중에 말할 때 사용자에 게 피드백을 제공할 수 있습니다. `Start()` 및 `Stop()` 메서드는 각각 받아쓰기 인식을 사용 하거나 사용 하지 않도록 설정 합니다. 인식기를 사용 하 여 작업을 완료 한 후에는 사용 하 `Dispose()` 는 리소스를 해제 하기 위해를 사용 하 여 삭제 해야 합니다. 이러한 리소스는 가비지 수집 중에 해제 되지 않은 경우 추가 성능 비용으로 자동으로 해제 됩니다.
+를 사용하여 `DictationRecognizer` 사용자의 음성을 텍스트로 변환합니다. DictationRecognizer는 [받아쓰기](../../design/voice-input.md#dictation) 기능을 노출하고 가설 및 구가 완료된 이벤트의 등록 및 수신 대기를 지원하므로 사용자가 말하는 동안 및 나중에 사용자에게 피드백을 제공할 수 있습니다. `Start()` 및 `Stop()` 메서드는 각각 받아쓰기 인식을 사용하거나 사용하지 않도록 설정합니다. 인식기를 사용하여 완료되면 를 사용하여 삭제하여 `Dispose()` 사용하는 리소스를 해제해야 합니다. 이전에 릴리스되지 않은 경우 추가 성능 비용으로 가비지 수집 중에 이러한 리소스를 자동으로 해제합니다.
 
-받아쓰기를 시작 하는 데 필요한 몇 가지 단계만 있습니다.
+받아쓰기를 시작하는 데 필요한 몇 가지 단계만 있습니다.
 1. 새 만들기 `DictationRecognizer`
 2. 받아쓰기 이벤트 처리
 3. DictationRecognizer 시작
 
 ### <a name="enabling-the-capability-for-dictation"></a>받아쓰기 기능 사용
 
-받아쓰기를 사용 하려면 앱에 대해 **인터넷 클라이언트** 및 **마이크** 기능을 선언 해야 합니다.
-1. Unity 편집기에서 **편집 > 프로젝트 설정** 으로 이동 하 > 플레이어로 이동 합니다.
+앱에서 받아쓰기를 사용하려면 **인터넷 클라이언트** 및 **마이크** 기능을 선언해야 합니다.
+1. Unity 편집기에서 **프로젝트 설정 > 플레이어 > 편집으로** 이동합니다.
 2. **Windows 스토어** 탭에서 선택
 3. **게시 설정 > 기능** 섹션에서 **internetclient** 기능을 확인 합니다.
     * 필요에 따라 마이크를 아직 사용 하도록 설정 하지 않은 경우 **마이크** 기능을 확인 합니다.
@@ -229,7 +229,7 @@ private void DictationRecognizer_DictationHypothesis(string text)
 dictationRecognizer.DictationComplete += DictationRecognizer_DictationComplete;
 ```
 
-그런 다음 DictationComplete 콜백을 처리 합니다.
+그런 다음, DictationComplete 콜백을 처리합니다.
 
 ```
 private void DictationRecognizer_DictationComplete(DictationCompletionCause cause)
@@ -240,15 +240,15 @@ private void DictationRecognizer_DictationComplete(DictationCompletionCause caus
 
 **DictationError**
 
-이 이벤트는 오류가 발생할 때 발생 합니다.
+이 이벤트는 오류가 발생할 때 발생합니다.
 
-먼저 이벤트를 구독 합니다 `DictationError` .
+먼저 이벤트를 구독합니다. `DictationError`
 
 ```
 dictationRecognizer.DictationError += DictationRecognizer_DictationError;
 ```
 
-그런 다음 DictationError 콜백을 처리 합니다.
+그런 다음, DictationError 콜백을 처리합니다.
 
 ```
 private void DictationRecognizer_DictationError(string error, int hresult)
@@ -257,13 +257,13 @@ private void DictationRecognizer_DictationError(string error, int hresult)
 }
 ```
 
-관심이 있는 받아쓰기 이벤트를 구독 하 고 처리 한 후에는 받아쓰기 인식기를 시작 하 여 이벤트 수신을 시작 합니다.
+관심 있는 받아쓰기 이벤트를 구독하고 처리한 후에는 받아쓰기 인식기를 시작하여 이벤트 수신을 시작합니다.
 
 ```
 dictationRecognizer.Start();
 ```
 
-DictationRecognizer을 더 이상 유지 하지 않으려면 이벤트를 구독 취소 하 고 DictationRecognizer를 삭제 해야 합니다.
+DictationRecognizer를 더 이상 유지하지 않으려는 경우 이벤트 구독을 취소하고 DictationRecognizer를 삭제해야 합니다.
 
 ```
 dictationRecognizer.DictationResult -= DictationRecognizer_DictationResult;
@@ -274,33 +274,33 @@ dictationRecognizer.Dispose();
 ```
 
 **팁**
-* `Start()` 및 `Stop()` 메서드는 각각 받아쓰기 인식을 사용 하거나 사용 하지 않도록 설정 합니다.
-* 인식기를 사용 하 여 작업을 완료 한 후에는 사용 하 `Dispose()` 는 리소스를 해제 하기 위해를 사용 하 여 삭제 해야 합니다. 이러한 리소스는 가비지 수집 중에 해제 되지 않은 경우 추가 성능 비용으로 자동으로 해제 됩니다.
-* 시간 제한은 설정 된 시간 후에 발생 합니다. 이벤트에서 이러한 시간 초과를 확인할 수 있습니다 `DictationComplete` . 다음 두 가지 제한 시간을 인식 합니다.
-   1. 인식기가 시작 되 고 처음 5 초 동안 오디오가 들리지 않으면 시간이 초과 됩니다.
-   2. 인식기에서 결과를 제공 했지만 20 초 동안 침묵를 듣게 되 면 시간이 초과 됩니다.
+* `Start()` 및 `Stop()` 메서드는 각각 받아쓰기 인식을 사용하거나 사용하지 않도록 설정합니다.
+* 인식기를 사용하여 작업을 완료한 후에는 를 사용하여 삭제하여 `Dispose()` 사용하는 리소스를 해제해야 합니다. 이전에 릴리스되지 않은 경우 추가 성능 비용으로 가비지 수집 중에 이러한 리소스를 자동으로 해제합니다.
+* 시간 제한은 설정된 기간 후에 발생합니다. 이벤트에서 이러한 시간 초과를 확인할 수 `DictationComplete` 있습니다. 다음 두 가지 시간 제한에 유의해야 합니다.
+   1. 인식기 시작 하 고 처음 5 초 동안 오디오를 하지 않으면 시간 부족 합니다.
+   2. 인식기에서 결과를 제공했지만 20초 동안 묵음이 들은 경우 시간이 부족합니다.
 
-## <a name="using-both-phrase-recognition-and-dictation"></a>구 인식과 받아쓰기 모두 사용
+## <a name="using-both-phrase-recognition-and-dictation"></a>구 인식 및 받아쓰기 사용
 
-앱에서 구 인식과 받아쓰기를 모두 사용 하려는 경우에는 다른 항목을 시작 하기 전에 하나를 완전히 종료 해야 합니다. 여러 KeywordRecognizers를 실행 하는 경우 다음을 사용 하 여 한 번에 모두 종료할 수 있습니다.
+앱에서 구 인식과 받아쓰기를 모두 사용하려면 한 구를 완전히 종료해야 다른 구문을 시작할 수 있습니다. 여러 KeywordRecognizer를 실행하는 경우 다음을 통해 한 번에 모두 종료할 수 있습니다.
 
 ```
 PhraseRecognitionSystem.Shutdown();
 ```
 
-`Restart()`DictationRecognizer가 중지 된 후를 호출 하 여 모든 인식기를 이전 상태로 복원할 수 있습니다.
+`Restart()`를 호출하여 DictationRecognizer가 중지된 후 모든 인식기를 이전 상태로 복원할 수 있습니다.
 
 ```
 PhraseRecognitionSystem.Restart();
 ```
 
-KeywordRecognizer를 시작할 수도 있습니다. 그러면 PhraseRecognitionSystem도 다시 시작 됩니다.
+KeywordRecognizer를 시작하면 PhraseRecognitionSystem도 다시 시작될 수 있습니다.
 
 ## <a name="voice-input-in-mixed-reality-toolkit"></a>Mixed Reality Toolkit의 음성 입력
 
 다음 데모 장면에서 음성 입력에 대 한 MRTK 예제를 찾을 수 있습니다.
-* [받아쓰기](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/Input/Scenes/Dictation)
-* [Speech](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/Input/Scenes/Speech)
+* [받아쓰기](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/Input/Scenes/Dictation)
+* [Speech](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/Input/Scenes/Speech)
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 

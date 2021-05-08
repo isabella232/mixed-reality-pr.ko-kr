@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, PR,
-ms.openlocfilehash: c49934139ae23b714addcb9c015e95377f47900e
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
-ms.translationtype: HT
+ms.openlocfilehash: 008e719cd2fd3c854cbbe6876090b2de96f369be
+ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693290"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109489233"
 ---
 # <a name="pull-requests"></a>끌어오기 요청
 
@@ -24,7 +24,7 @@ PR의 설명을 통해 귀하의 서명 가능 여부를 알 수 있습니다.
 
 ## <a name="creating-a-pull-request"></a>끌어오기 요청 만들기
 
-끌어오기 요청을 제출할 준비가 되면 [mrtk_development](https://github.com/microsoft/mixedrealitytoolkit-unity/tree/mrtk_development) 분기를 대상으로 하는 [끌어오기 요청을 만듭니다](https://github.com/microsoft/MixedRealityToolkit-Unity/compare/mrtk_development...mrtk_development?expand=1).
+끌어오기 요청을 제출할 준비가 되면 [주](https://github.com/microsoft/mixedrealitytoolkit-unity/tree/main) 분기를 대상으로 [하는 끌어오기 요청을 만듭니다.](https://github.com/microsoft/MixedRealityToolkit-Unity/compare/main...main?expand=1) 릴리스 안정화 기간 동안 버그 수정은 최신 `prerelease/*` 분기를 찾습니다. 새 기능은 항상 로 이동해야 `main` 합니다.
 
 지침을 읽고 끌어오기 요청이 지침을 충족하는지 확인합니다.
 
