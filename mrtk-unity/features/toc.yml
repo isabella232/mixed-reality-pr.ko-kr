@@ -2,8 +2,6 @@
   href: boundary/toc.yml
 - name: 카메라 시스템
   href: camera-system/toc.yml
-- name: 플랫폼 간
-  href: cross-platform/toc.yml
 - name: 진단
   href: diagnostics/toc.yml
 - name: 예제 장면

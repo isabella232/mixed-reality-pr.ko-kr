@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: cb8b95cf9e563e8a277fa0d4b253639a763f5ad5
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: cef4bcf671caaaf8d5cb7cdc639446c6c6e91fa0
+ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489303"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109850439"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>Mixed Reality Toolkit이란 무엇인가요?
 
@@ -47,10 +47,10 @@ Unity에서 MRTK 또는 Mixed Reality 개발을 처음 사용하는 경우 디�
 Mixed Reality 및 MRTK가 제공하는 기능을 파악했다면 필요한 도구를 설치하고 초급 HoloLens 2 자습서 시리즈를 따르세요.
 
 > [!div class="nextstepaction"]
-> [도구 설치](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+> [도구 설치](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 
 > [!div class="nextstepaction"]
-> [HoloLens 2 자습서 시리즈](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
+> [HoloLens 2 자습서 시리즈](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
 
 작동 원리를 자세히 알고 싶으신가요?
 > [!div class="nextstepaction"]
@@ -90,8 +90,8 @@ Mixed Reality 및 MRTK가 제공하는 기능을 파악했다면 필요한 도�
 
 :::row:::
     :::column:::
-       [![손 추적(Ultraleap)](features/images/MRTK_Icon_HandTracking.png)](features/cross-platform/leap-motion-mrtk.md)<br>
-        **[손 추적 <br/> (Ultraleap)](features/cross-platform/leap-motion-mrtk.md)**<br>
+       [![손 추적(Ultraleap)](features/images/MRTK_Icon_HandTracking.png)](supported-devices/leap-motion-mrtk.md)<br>
+        **[손 추적 <br/> (Ultraleap)](supported-devices/leap-motion-mrtk.md)**<br>
     :::column-end:::
     :::column:::
         [![UI 컨트롤](features/images/MRTK_Icon_UIControls.png)](#ux-building-blocks)<br>

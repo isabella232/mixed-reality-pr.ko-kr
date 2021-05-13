@@ -5,18 +5,18 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, XRSDK,
-ms.openlocfilehash: d5ab9bf51828c84759b72e87e1c41f885c7d6738
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: fe50de31ae24b415738db64073822b2aff061636
+ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300422"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109850429"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>MRTK 및 XR SDK 시작
 
 XR SDK는 unity [2019.3 이상에서 unity의 새로운 XR 파이프라인](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/)입니다. Unity 2019에서는 기존 XR 파이프라인에 대 한 대안을 제공 합니다. Unity 2020에서는 Unity의 유일한 XR 파이프라인이 됩니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>필수 조건
 
 Mixed Reality Toolkit를 시작 하려면 [제공 된 단계](../install-the-tools.md#importing-the-mixed-reality-toolkit) 에 따라 MRTK를 프로젝트에 추가 합니다.
 
@@ -37,32 +37,32 @@ XR SDK 파이프라인은 현재 Windows Mixed Reality, Oculus 및 OpenXR의 3 �
 3. 프로젝트 설정 창에서 XR 플러그 인 관리 탭을 클릭 합니다.
 4. 유니버설 Windows 플랫폼 설정으로 이동 하 고 플러그 인 공급자에서 Windows Mixed Reality가 선택 되어 있는지 확인 합니다.
 5. 시작 시 XR 초기화가 선택 되어 있는지 확인 합니다.
-6. (**_편집기 내 HoloLens 원격 기능에 필요 하며, 그렇지 않은 경우 선택 사항_**) 독립 실행형 설정으로 이동 하 고 플러그 인 공급자에서 Windows Mixed Reality가 선택 되어 있는지 확인 합니다. 또한 시작 시 XR 초기화가 선택 되어 있는지 확인 합니다.
+6. **_(편집기 내 HoloLens Remoting에 필요하고, 그렇지 않으면 선택 사항)_** 독립 실행형 설정으로 이동하여 플러그 인 공급자에서 Windows Mixed Reality 확인합니다. 또한 시작 시 XR 초기화가 선택되어 있는지 확인합니다.
 
-![독립 실행형 탭이 선택 된 XR 플러그 인 관리](images/xr-management-img-02.png)
+![독립 실행형 탭이 선택된 XR 플러그 인 관리](images/xr-management-img-02.png)
 
-7. (**_선택 사항_**) XR 플러그 인 관리에서 Windows Mixed Reality 탭을 클릭 하 고 사용자 지정 설정 프로필을 만들어 기본값을 변경 합니다. 설정 목록이 이미 있는 경우 프로필을 만들 필요가 없습니다.
+7. (**_선택 사항)_** XR 플러그 인 관리 아래의 Windows Mixed Reality 탭을 클릭하고 사용자 지정 설정 프로필을 만들어 기본값을 변경합니다. 설정 목록이 이미 있는 경우 프로필을 만들 필요가 없습니다.
 
-![Windows 탭이 선택 된 XR 플러그 인 관리](images/xr-management-img-01.png)
+![Windows 탭이 선택된 XR 플러그 인 관리](images/xr-management-img-01.png)
 
 ### <a name="oculus"></a>Oculus
 
-1. [XR SDK 파이프라인 가이드를 사용 하 여 MRTK에서 Oculus 퀘스트를 구성 하는 방법](../features/cross-platform/oculus-quest-mrtk.md) 을 참조 하세요. 이 가이드에서는 XR SDK 파이프라인을 사용 하도록 Unity와 MRTK를 모두 구성 하는 데 필요한 단계를 설명 합니다.
+1. [끝으로 XR SDK 파이프라인을 사용하여 MRTK에서 Oculus Quest를 구성하는 방법](../supported-devices/oculus-quest-mrtk.md) 가이드를 따릅니다. 이 가이드에서는 Oculus Quest에 XR SDK 파이프라인을 사용하도록 Unity 및 MRTK를 구성하는 데 필요한 단계를 간략하게 설명합니다.
 
-### <a name="openxr-preview"></a>OpenXR (미리 보기)
+### <a name="openxr-preview"></a>OpenXR(미리 보기)
 
 > [!IMPORTANT]
-> Unity의 OpenXR는 Unity 2020.2 이상 에서만 지원 됩니다.
+> Unity의 OpenXR은 Unity 2020.2 이상에서만 지원됩니다.
 >
-> 현재는 x64 및 ARM64 빌드에서만 지원 합니다.
+> 현재 x64 및 ARM64 빌드만 지원합니다.
 
-1. XR 플러그 인 관리 및 최적화를 구성 하 여 프로젝트에 OpenXR 플러그 인을 설치 하는 단계를 포함 하 여 [OpenXR에 대 한 혼합 현실 플러그 인을 사용 하](/windows/mixed-reality/develop/unity/openxr-getting-started) 는 방법 가이드를 따릅니다. 다음이 성공적으로 설치 되었는지 확인 합니다.
+1. 프로젝트에 [OpenXR 플러그 인을](/windows/mixed-reality/develop/unity/openxr-getting-started) 설치하도록 XR 플러그 인 관리 및 최적화를 구성하는 단계를 포함하여 Unity용 Mixed Reality OpenXR 플러그 인 사용 가이드를 따릅니다. 다음이 성공적으로 설치되었는지 확인합니다.
    1. XR 플러그 인 관리
    1. OpenXR 플러그 인
-   1. 혼합 현실 OpenXR 플러그 인
-1. 편집 > 프로젝트 설정으로 이동 합니다.
-1. 프로젝트 설정 창에서 XR 플러그 인 관리 탭을 클릭 합니다.
-1. 시작 시 XR 초기화가 선택 되어 있는지 확인 합니다.
+   1. OpenXR 플러그 인 Mixed Reality
+1. 프로젝트 설정 > 편집으로 이동합니다.
+1. 프로젝트 설정 창에서 XR 플러그 인 관리 탭을 클릭합니다.
+1. 시작 시 XR 초기화가 선택되어 있는지 확인합니다.
 1. (**_선택 사항_**) HoloLens 2를 대상으로 하는 경우 UWP 플랫폼에 있는지 확인 하 고 Microsoft HoloLens 기능 집합을 선택 합니다.
 
 ![플러그 인 관리 열기 XR](../features/images/xrsdk/PluginManagementOpenXR.png)
@@ -91,7 +91,7 @@ Windows Mixed Reality 또는 Oculus와 같은 XR 플러그 인 관리 구성에�
 
 ![레거시 카메라 설정](../features/images/xrsdk/CameraSystemLegacy.png)
 
-을
+to
 
 | OpenXR | Windows Mixed Reality |
 |--------|-----------------------|
@@ -105,7 +105,7 @@ Windows Mixed Reality 또는 Oculus와 같은 XR 플러그 인 관리 구성에�
 
 ![레거시 입력 설정](../features/images/xrsdk/InputSystemWMRLegacy.png)
 
-을
+to
 
 | OpenXR | Windows Mixed Reality |
 |--------|-----------------------|
@@ -125,7 +125,7 @@ __Windows Mixed Reality__:
 
 ![레거시 경계 설정](../features/images/xrsdk/BoundarySystemLegacy.png)
 
-을
+to
 
 | OpenXR | Windows Mixed Reality |
 |--------|-----------------------|
@@ -139,7 +139,7 @@ __Windows Mixed Reality__:
 
 ![레거시 공간 인식 설정](../features/images/xrsdk/SpatialAwarenessLegacy.png)
 
-을
+to
 
 | OpenXR | Windows Mixed Reality |
 |--------|-----------------------|
@@ -149,9 +149,9 @@ __Windows Mixed Reality__:
 
 ### <a name="controller-mappings"></a>컨트롤러 매핑
 
-사용자 지정 컨트롤러 매핑 프로필을 사용 하는 경우 이러한 프로필 중 하나를 열고 혼합 현실 도구 키트 > 유틸리티-> 업데이트-> 컨트롤러 매핑 프로필 메뉴 항목을 실행 하 여 새 XR SDK 컨트롤러 유형이 정의 되었는지 확인 합니다.
+사용자 지정 컨트롤러 매핑 프로필을 사용하는 경우 해당 프로필 중 하나를 열고 Mixed Reality Toolkit -> Utilities -> Update -> Controller Mapping Profiles 메뉴 항목을 실행하여 새 XR SDK 컨트롤러 형식이 정의되었는지 확인합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
-* [Unity에서 AR 개발 시작 하기](https://docs.unity3d.com/Manual/AROverview.html)
+* [Unity에서 AR 개발 시작](https://docs.unity3d.com/Manual/AROverview.html)
 * [Unity에서 VR 개발 시작](https://docs.unity3d.com/Manual/VROverview.html)
