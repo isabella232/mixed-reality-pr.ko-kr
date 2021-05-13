@@ -20,3 +20,5 @@
   href: roadmap.md
 - name: 참여
   href: contributing/toc.yml
+- name: 보관된 문서 (2.6 이전)
+  href: 'https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/WelcomeToMRTK.html'
