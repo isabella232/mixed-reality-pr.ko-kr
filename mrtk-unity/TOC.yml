@@ -4,13 +4,15 @@
   href: running-examples-hub.md
 - name: 구성
   href: configuration/toc.yml
-- name: 아키텍처
+- name: 지원되는 디바이스 개요
+  href: supported-devices/toc.yml
+- name: Architecture
   href: architecture/toc.yml
 - name: 기능 개요
   href: features/toc.yml
 - name: 성능 및 모범 사례
   href: performance/toc.yml
-- name: 업데이트 및 배포
+- name: 업데이트 및 업그레이드
   href: updates-deployment/toc.yml
 - name: 패키지
   href: packages/toc.yml
