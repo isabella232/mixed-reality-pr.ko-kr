@@ -3,16 +3,16 @@ title: 도구 설치
 description: 최신 버전의 Unity, Visual Studio 및 도구를 사용하여 HoloLens 및 VR 개발에 권장되는 도구를 여기에서 시작합니다.
 author: thetuvix
 ms.author: alexturn
-ms.date: 04/13/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 최신, 도구, 시작, 기본 사항, unity, visual studio, 도구 키트, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 설치, Windows, HoloLens, 에뮬레이터, unreal, openxr
-ms.openlocfilehash: 40bf9930124e6f64197aaa5daca8b332dc741546
-ms.sourcegitcommit: be79d8e9ebac553aabec7c57c44eee56123aa00e
+ms.openlocfilehash: 03977467b27f7a4a70f241f25f3046675cd824ad
+ms.sourcegitcommit: f77adfa23a98ccc0412eb6be5871ad4b1da0f755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107369876"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109740634"
 ---
 # <a name="install-the-tools"></a>도구 설치
 
@@ -36,7 +36,7 @@ Unity를 사용하는 경우 [Mixed Reality Toolkit for Unity](https://github.co
 | ![Windows 로고](images/Windows10_logo.png)<br><br><a href="https://www.microsoft.com/software-download/windows10" target="_blank">**Windows 10**(수동 설치 링크)</a><br><br>PC의 운영 체제가 혼합 현실 애플리케이션을 빌드하는 플랫폼과 일치하도록 최신 버전의 Windows 10을 설치합니다.  | **Windows 10 설치** <br> 설정의 Windows 업데이트를 통해 또는 설치 미디어를 만들어(왼쪽 열의 링크 사용) 최신 버전의 Windows 10을 설치할 수 있습니다. <br><br>각 릴리스의 Windows 10에서 사용할 수 있는 최신 혼합 현실 기능에 대한 내용은 [현재 릴리스 정보](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-october-2018.md)를 참조하세요. 설정 > 업데이트 및 보안 > 개발자용에서 **PC의 개발자 모드를 사용하도록 설정** 합니다. <br><br> **엔터프라이즈 및 회사 관리용 PC에 대한 참고 사항**<br>조직의 IT 부서에서 PC를 관리하는 경우 업데이트하려면 해당 부서에 문의해야 할 수도 있습니다. <br><br> **Windows용 'N' 버전**<br> Windows Mixed Reality 몰입형(VR) 헤드셋은 'N' 버전의 Windows에서 지원되지 않습니다. |
 | ![Visual Studio 로고 이미지](images/visualstudio_logo.png)<br><br><a href="https://visualstudio.microsoft.com/downloads/" target="_blank">**Visual Studio 2019(16.8 이상)** (설치 링크)</a> <br><br>Windows 등을 위한 전기능 IDE(통합 개발 환경)입니다. Visual Studio를 사용하여 코드를 작성하고, 디버그하고, 테스트하고, 배포합니다. | **Visual Studio 2019 설치** <br> 다음 워크로드를 설치합니다. <br><br>*● C++를 사용한 데스크톱 개발*<br>*● UWP(유니버설 Windows 플랫폼) 개발*<br><br>HoloLens 앱을 개발하려는 경우 UWP 워크로드 내에서 다음과 같은 선택적 구성 요소를 확인해야 합니다.<br><br>*● USB 디바이스 연결*<br><br>**USB 연결에 대한 참고 사항**<br>설치하는 동안 **IP over USB(USB를 통한 IP)** 확인란을 선택해야 합니다. 이는 기본적으로 선택되어 있지 않습니다. 이는 USB를 통해 HoloLens와 통신하는 데 필요합니다.<br><br>**● Unity에 대한 참고 사항:**<br>최신 버전의 Unity(비 LTS)를 의도적으로 설치하려는 경우가 아니라면 Unity 워크로드를 Visual Studio 설치의 일부로 설치하지 *말고*, **Unity 2019 LTS** 를 설치하는 것이 좋습니다.<br><br>**알려진 문제**<br>Visual Studio 2019 버전 16.0의 혼합 현실 앱 디버깅에는 몇 가지 알려진 이슈가 있습니다.  **Visual Studio 2019 버전 16.8 이상** 으로 업데이트하세요. |
 | ![Windows 로고](images/Windows10_logo.png)<br><br><a href="https://developer.microsoft.com//windows/downloads/windows-10-sdk" target="_blank">**Windows 10 SDK(10.0.18362.0)** (수동 설치 링크)</a> <br><br>HoloLens 2에서 Windows 10 앱을 빌드하기 위한 최신 헤더와 라이브러리, 메타데이터, 도구를 제공합니다. | **HoloLens 2 앱을 빌드하려면 Windows SDK 빌드 18362 이상을 설치해야 합니다.**<br> <br> 데스크톱 Windows Mixed Reality 헤드셋 또는 HoloLens(1세대)용 애플리케이션만 개발하는 경우에는 Visual Studio 2017에서 설치된 Windows SDK를 사용할 수 있습니다. |
-| ![Visual Studio 로고](images/HoloLensIcon.jpg)<br><br><a href="https://go.microsoft.com/fwlink/?linkid=2160829" target="_blank">**HoloLens 2 에뮬레이터(Windows Holographic, 버전 20H2, 2021년 4월 업데이트)** (설치 링크: 10.0.19041.1144)</a><br> <br><a href="https://go.microsoft.com/fwlink/?linkid=2065980" target="_blank">**HoloLens(1세대) 에뮬레이터**(설치 링크: 10.0.17763.134)</a> <br><br>이 에뮬레이터를 사용하면 실제 HoloLens 없이도 HoloLens 가상 머신 이미지에서 애플리케이션을 실행할 수 있습니다.<br> <br> | 에뮬레이터 시작 방법에 대한 자세한 내용은 [HoloLens 에뮬레이터 사용](../develop/platform-capabilities-and-apis/using-the-hololens-emulator.md)을 참조하세요.<br> <br> 에뮬레이터 설치를 성공적으로 수행하려면 **시스템에서 Hyper-V를 지원해야 합니다**. 자세한 내용은 아래 시스템 요구 사항 섹션을 참조하세요. <br> <br> **HoloLens(1세대) 에뮬레이터에 대한 참고 사항** <br>  설치를 성공적으로 완료하려면 Visual Studio 2017이 필요합니다. Visual Studio 2019를 사용하여 HoloLens(1세대) 에뮬레이터를 설치하는 경우 VS 템플릿을 선택 취소하고 [Visual Studio Marketplace에서 설치해야 합니다](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX). |
+| ![Visual Studio 로고](images/HoloLensIcon.jpg)<br><br><a href="https://go.microsoft.com/fwlink/?linkid=2162581" target="_blank">**HoloLens 2 에뮬레이터(Windows Holographic 버전 21H1, 2021년 5월 업데이트)** (설치 링크: 10.0.20346.1002)</a><br> <br><a href="https://go.microsoft.com/fwlink/?linkid=2065980" target="_blank">**HoloLens(1세대) 에뮬레이터**(설치 링크: 10.0.17763.134)</a> <br><br>이 에뮬레이터를 사용하면 실제 HoloLens 없이도 HoloLens 가상 머신 이미지에서 애플리케이션을 실행할 수 있습니다.<br> <br> | 에뮬레이터 시작 방법에 대한 자세한 내용은 [HoloLens 에뮬레이터 사용](../develop/platform-capabilities-and-apis/using-the-hololens-emulator.md)을 참조하세요.<br> <br> 에뮬레이터 설치를 성공적으로 수행하려면 **시스템에서 Hyper-V를 지원해야 합니다**. 자세한 내용은 아래 시스템 요구 사항 섹션을 참조하세요. <br> <br> **HoloLens(1세대) 에뮬레이터에 대한 참고 사항** <br>  설치를 성공적으로 완료하려면 Visual Studio 2017이 필요합니다. Visual Studio 2019를 사용하여 HoloLens(1세대) 에뮬레이터를 설치하는 경우 VS 템플릿을 선택 취소하고 [Visual Studio Marketplace에서 설치해야 합니다](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX). |
 
 ## <a name="install-your-engine-of-choice"></a>원하는 엔진 설치
 
