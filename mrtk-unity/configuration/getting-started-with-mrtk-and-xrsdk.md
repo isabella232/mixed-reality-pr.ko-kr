@@ -1,16 +1,16 @@
 ---
-title: GettingStartedWithMRTKAndXRSDK
+title: MRTK 및 XRSDK 시작
 description: XRSDK를 사용 하는 MRTK의 방문 페이지
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, XRSDK,
-ms.openlocfilehash: fe50de31ae24b415738db64073822b2aff061636
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: ef6d8c9205a9d801e8cb0ec2690d77b74c72b5fb
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109850429"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143520"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>MRTK 및 XR SDK 시작
 
@@ -149,9 +149,9 @@ to
 
 ### <a name="controller-mappings"></a>컨트롤러 매핑
 
-사용자 지정 컨트롤러 매핑 프로필을 사용하는 경우 해당 프로필 중 하나를 열고 Mixed Reality Toolkit -> Utilities -> Update -> Controller Mapping Profiles 메뉴 항목을 실행하여 새 XR SDK 컨트롤러 형식이 정의되었는지 확인합니다.
+사용자 지정 컨트롤러 매핑 프로필을 사용하는 경우 해당 프로필 중 하나를 열고 Mixed Reality Toolkit -> Utilities -> Update -> Controller Mapping Profiles 메뉴 항목을 실행하여 새 XR SDK 컨트롤러 유형이 정의되었는지 확인합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 * [Unity에서 AR 개발 시작](https://docs.unity3d.com/Manual/AROverview.html)
 * [Unity에서 VR 개발 시작](https://docs.unity3d.com/Manual/VROverview.html)

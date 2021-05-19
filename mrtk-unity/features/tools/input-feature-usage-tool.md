@@ -1,16 +1,16 @@
 ---
-title: InputFeatureUsageTool
+title: 입력 기능 사용 도구
 description: MRTK의 설명서 InputFeatureUsage 도구
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 35b28557df37abee19a0c950b362117eb6a120b0
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 0f2d3d3eb07d8b631f3f11a8b497a22a028a2f24
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300205"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110145017"
 ---
 # <a name="inputfeatureusage-tool"></a>InputFeatureUsage 도구
 
@@ -43,7 +43,7 @@ InputFeatureUsage 도구를 시작 하려면 **Mrtk/tools/RuntimeTools/tools/Inp
 
 위쪽의 작은 패널에는 검색 된 모든 원본의 이름이 나열 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [입력 시스템 데이터 공급자 만들기](../input/create-data-provider.md)
 - [컨트롤러 매핑 도구](controller-mapping-tool.md)

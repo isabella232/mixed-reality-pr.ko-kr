@@ -1,36 +1,36 @@
 ---
-title: 홀로그램-안정화
-description: 다른 환경 및 프레임 속도 조건에서 holograms의 성능
+title: 홀로그램 안정화
+description: 다양한 환경 및 프레임 속도 조건에서 홀로그램의 성능.
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 환경 추적, TMP,
-ms.openlocfilehash: 4ea3f62153676154188584221c83ac97b5589e05
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: e2c83e7e4ca909e31803d55aabbc0c2344e89139
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528728"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143890"
 ---
 # <a name="hologram-stabilization"></a>홀로그램 안정화
 
 ## <a name="performance"></a>성능
 
-기본 혼합 현실 플랫폼과 장치에서 최상의 결과를 얻으려면 프레임 속도를 수행 하는 것이 중요 합니다. 대상 프레임 속도 (예: 60 FPS 또는 90 FPS)는 플랫폼과 장치에 따라 다릅니다. 그러나 프레임 속도를 충족 하는 혼합 현실 응용 프로그램은 안정적인 holograms 뿐만 아니라 효율적인 헤드 추적, 수동 추적 등을 포함 합니다.  
+기본 혼합 현실 플랫폼 및 디바이스가 최상의 결과를 생성하려면 프레임 속도를 달성하는 것이 중요합니다. 대상 프레임 속도(예: 60 FPS 또는 90 FPS)는 플랫폼 및 디바이스에 따라 달라집니다. 그러나 프레임 속도 충족 혼합 현실 애플리케이션에는 안정적인 홀로그램뿐만 아니라 효율적인 헤드 추적, 손 추적 등이 있습니다.  
 
 ## <a name="environment-tracking"></a>환경 추적
 
-안정적인 holographic 렌더링은 플랫폼 & 장치에의 한 헤드 포즈 추적에 크게 의존 합니다. Unity는 카메라의 모든 프레임을 예상 하 고 기본 플랫폼에서 제공 하는 장면으로 렌더링 합니다. 이 추적이 실제 헤드 이동을 올바르게 따르지 않으면 holograms가 시각적으로 부정확 하 게 표시 됩니다. 이는 사용자가 가상 holograms를 실제 세계와 연결할 수 있는 HoloLens와 같은 AR 장치에서 특히 명확 하 고 중요 합니다. 안정적인 헤드 추적에는 성능이 중요 하지만 [다른 중요 한 기능도](/windows/mixed-reality/environment-considerations-for-hololens)있을 수 있습니다. 사용자 환경에 영향을 주는 환경 요소의 형식은 대상 플랫폼 세부 사항에 따라 달라 집니다.
+안정적인 홀로그램 렌더링은 플랫폼 & 디바이스의 머리 자세 추적에 크게 의존합니다. Unity는 기본 플랫폼에서 예측하고 제공하는 카메라 자세의 모든 프레임마다 장면을 렌더링합니다. 이 추적이 실제 머리 이동을 올바르게 따르지 않으면 홀로그램이 시각적으로 부정확하게 표시됩니다. 이는 특히 사용자가 가상 홀로그램을 실제 세계와 관련할 수 있는 HoloLens와 같은 AR 디바이스에서 분명하고 중요합니다. 성능은 신뢰할 수 있는 헤드 추적에 중요하지만 [다른 중요한 기능도](/windows/mixed-reality/environment-considerations-for-hololens)있을 수 있습니다. 사용자 환경에 영향을 미치는 환경 요소의 유형은 대상 플랫폼 세부 사항에 따라 달라집니다.
 
 ## <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-Windows Mixed Reality 플랫폼은 플랫폼에서 holograms를 안정화 하기 위한 [참조 자료](/windows/mixed-reality/hologram-stability) 를 제공 합니다. 개발자가 사용자를 위한 홀로그램 시각적 환경을 개선 하는 데 활용할 수 있는 몇 가지 주요 도구가 있습니다.
+Windows Mixed Reality 플랫폼은 플랫폼에서 홀로그램을 안정화하기 위한 몇 가지 [참조 자료를](/windows/mixed-reality/hologram-stability) 제공합니다. 개발자가 사용자의 홀로그램 시각적 환경을 개선하는 데 활용할 수 있는 몇 가지 주요 도구가 있습니다.
 
 ### <a name="depth-buffer-sharing"></a>깊이 버퍼 공유
 
-Unity 개발자에 게는 응용 프로그램의 깊이 버퍼를 플랫폼과 공유할 수 있는 옵션이 있습니다. 이는 holograms가 현재 프레임에 대 한 정보를 제공 하 고, 플랫폼은 Late-Stage Reprojection 이라는 하드웨어 기반 프로세스를 통해 안정화 holograms을 활용할 수 있습니다.
+Unity 개발자는 플랫폼과 애플리케이션의 깊이 버퍼를 공유할 수 있습니다. 이를 통해 현재 프레임에 홀로그램이 존재하는 경우 플랫폼이 Late-Stage Reprojection이라는 하드웨어 지원 프로세스를 통해 홀로그램을 안정화하는 데 활용할 수 있는 정보를 제공합니다.
 
-#### <a name="late-stage-reprojection"></a>후반 단계 다시 프로젝션
+#### <a name="late-stage-reprojection"></a>대기 단계 다시 프로젝션
 
 프레임을 렌더링 하는 끝에 Windows Mixed Reality 플랫폼은 응용 프로그램에서 생성 된 색 & 깊이 렌더링 대상을 사용 하 고 마지막 화면 출력을 변환 하 여 마지막 head 포즈 이후 약간의 이동 작업을 고려 합니다. 응용 프로그램의 게임 루프를 실행 하는 데 시간이 걸립니다. 예를 들어 60 FPS에서 응용 프로그램은 프레임을 렌더링 하는 데 ~ 16.667 m을 사용 하는 것을 의미 합니다. 이는 짧습니다 된 시간 처럼 보일 수 있지만, 사용자의 head 위치와 방향은 렌더링 시 카메라에 대 한 새 프로젝션 매트릭스를 변경 하 게 됩니다. 후반 단계 다시 프로젝션은 최종 이미지의 픽셀을이 새로운 큐브 뷰에 대 한 고려로 변환 합니다.
 
@@ -48,33 +48,33 @@ Windows Mixed Reality 장치에서 실행 되는 장치 끝점 및 OS 버전에 
 
 #### <a name="depth-buffer-format"></a>깊이 버퍼 형식
 
-개발을 위해 HoloLens를 대상으로 지정 하는 경우 24 비트와 비교 하 여 16 비트 깊이 버퍼 형식을 활용 하는 것이 좋습니다. 이 경우 깊이 값의 정밀도가 크게 성능이 저하 될 수 있습니다. 더 낮은 정밀도를 보정 하 고 [z를 사용](https://en.wikipedia.org/wiki/Z-fighting)하지 않도록 하려면 Unity에 설정 된 1000m 기본값에서 [먼 클립 평면](https://docs.unity3d.com/Manual/class-Camera.html) 을 줄이는 것이 좋습니다.
+개발을 위해 HoloLens를 대상으로 하는 경우 24비트 대비 16비트 깊이 버퍼 형식을 활용하는 것이 좋습니다. 깊이 값의 정밀도가 낮아지더라도 성능이 크게 저하될 수 있습니다. 낮은 정밀도를 보정하고 [z-fighting을](https://en.wikipedia.org/wiki/Z-fighting)방지하려면 Unity에서 설정한 1000m 기본값에서 [원거리 클립 평면을](https://docs.unity3d.com/Manual/class-Camera.html) 줄이는 것이 좋습니다.
 
 > [!NOTE]
-> *16 비트 깊이 형식을* 사용 하는 경우 Unity에서이 설정에 [스텐실 버퍼를 만들지](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) 않으므로 스텐실 버퍼 필요 효과가 작동 하지 않습니다. 이와 반대로 *24 비트 깊이 형식을* 선택 하면 일반적으로 끝점 그래픽 플랫폼에 해당 하는 경우 [8 비트 스텐실 버퍼가](https://docs.unity3d.com/Manual/SL-Stencil.html)생성 됩니다.
+> *16비트 깊이 형식을* 사용하는 경우 Unity가 이 설정에서 [스텐실 버퍼를 만들지 않으므로 스텐실 버퍼에](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) 필요한 효과가 작동하지 않습니다. *24비트 깊이 형식을* 선택하면 일반적으로 엔드포인트 그래픽 플랫폼에 해당하는 경우 [8비트 스텐실 버퍼](https://docs.unity3d.com/Manual/SL-Stencil.html)가 생성됩니다.
 
 #### <a name="depth-buffer-sharing-in-unity"></a>Unity의 깊이 버퍼 공유
 
-깊이 기반 LSR를 활용 하기 위해 개발자가 수행 해야 하는 두 가지 중요 한 단계가 있습니다.
+깊이 기반 LSR을 활용하려면 개발자가 수행해야 하는 두 가지 중요한 단계가 있습니다.
 
-1.   >  **프로젝트 설정** 편집에서  >  **플레이어**  >  **XR 설정**  >  **가상 현실 sdk** > **깊이 버퍼 공유** 사용
-    1. HoloLens를 대상으로 하는 경우 **16 비트 깊이 형식만** 선택 하는 것이 좋습니다.
-1. 화면에서 색을 렌더링할 때 깊이도 렌더링 합니다.
+1. 프로젝트 설정 **편집**  >    >  **플레이어**  >  **XR 설정** Virtual Reality  >  **SDK** > 깊이 **버퍼 공유** 사용
+    1. HoloLens를 대상으로 하는 경우 **16비트 깊이 형식도** 선택하는 것이 좋습니다.
+1. 화면에서 색을 렌더링하는 경우 렌더링 깊이도
 
-Unity의 [불투명 gameobject](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html) 일반적으로 깊이에 자동으로 기록 됩니다. 그러나 투명 & 텍스트 개체는 일반적으로 기본적으로 깊이에 기록 되지 않습니다. MRTK 표준 셰이더 또는 텍스트 메시 Pro를 활용 하는 경우이를 쉽게 해결할 수 있습니다.
+Unity의 [불투명 GameObjects는](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html) 일반적으로 깊이에 자동으로 기록됩니다. 그러나 투명 & 텍스트 개체는 일반적으로 기본적으로 깊이로 작성되지 않습니다. MRTK 표준 셰이더 또는 Text Mesh Pro를 활용하는 경우 쉽게 해결할 수 있습니다.
 
 > [!NOTE]
-> 장면에서 깊이 버퍼에 시각적으로 쓰지 않는 개체를 신속 하 게 확인 하기 위해 MRTK 구성 프로필의 *편집기 설정* 에서 [ *렌더링 수준 버퍼* 유틸리티](../configuration/mixed-reality-configuration-guide.md#editor-utilities) 를 사용할 수 있습니다.
+> 장면에서 깊이 버퍼에 시각적으로 쓰지 않는 개체를 빠르게 확인하려면 MRTK 구성 프로필의 *편집기 설정에서* [ *렌더링 깊이 버퍼* 유틸리티를](../configuration/mixed-reality-configuration-guide.md#editor-utilities) 사용할 수 있습니다.
 
-##### <a name="transparent-mrtk-standard-shader"></a>투명 MRTK 표준 셰이더
+##### <a name="transparent-mrtk-standard-shader"></a>투명한 MRTK 표준 셰이더
 
-[Mrtk 표준 셰이더](../features/rendering/MRTK-standard-shader.md)를 사용 하는 투명 재질의 경우 *검사기* 창에서 볼 자료를 선택 합니다. 그런 다음 [ *지금 수정* ] 단추를 클릭 하 여 자료를 자세히 (즉, Z-쓰기).
+[MRTK 표준 셰이더를](../features/rendering/MRTK-standard-shader.md)사용하는 투명 재질의 경우 *검사기* 창에서 볼 재질을 선택합니다. 그런 다음 *지금 수정* 단추를 클릭하여 재질을 깊이에 쓰도록 변환합니다(즉, Z-Write On).
 
 이전
 
-![MRTK 표준 셰이더 수정 전 깊이 버퍼](../features/images/performance/DepthBufferFixNow_Before.PNG)
+![MRTK 표준 셰이더를 수정하기 전의 깊이 버퍼](../features/images/performance/DepthBufferFixNow_Before.PNG)
 
-After
+이러한
 
 ![깊이 버퍼 고정 MRTK 표준 셰이더](../features/images/performance/DepthBufferFixNow_After.PNG)
 

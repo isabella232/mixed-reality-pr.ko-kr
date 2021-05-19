@@ -1,39 +1,39 @@
 ---
 title: 홀로그램 디자인
-description: Microsoft의 새로운 디자인 Holograms 응용 프로그램을 통해 혼합 현실에 대해 알아보세요.
+description: Microsoft의 새로운 Holograms 애플리케이션 디자인을 통해 Mixed Reality 대해 알아봅니다.
 author: hferrone
 ms.author: daescu
 ms.date: 11/24/2020
 ms.topic: article
-keywords: MRTK, Mixed Reality Toolkit, holograms, 디자인 Holograms, 학습, 샘플 앱, 혼합 현실 헤드셋, 가상 현실 헤드셋, 가상 현실 이란?
-ms.openlocfilehash: 2480b5e0b4dca502c746dad6f070226ffa8cd1f9
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+keywords: MRTK, Mixed Reality Toolkit, 홀로그램, 홀로그램 디자인, 학습, 샘플 앱, 혼합 현실 헤드셋, 가상 현실 헤드셋, 가상 현실이란?
+ms.openlocfilehash: 6e37c3f1ba98f202addb9c323632bca8bffae3b6
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757761"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143632"
 ---
-# <a name="the-making-of-designing-holograms"></a>Holograms 디자인
+# <a name="the-making-of-designing-holograms"></a>홀로그램 디자인
 
 > [!NOTE]
-> 이 페이지의 모든 쿨 Gif 및 포함 된 비디오를 고려 하는 작은 로드 창에 대해 허용 하세요.
+> 이 페이지의 모든 멋진 GIF 및 포함된 비디오를 설명하는 작은 로드 창을 허용하세요.
 
-약간의 혼합 현실 디자인 방법은 항상 2D 디자인 프로세스에 잘 변환 되지 않기 때문에 어려울 수 있습니다. Microsoft의 Microsoft는이 문서에 나와 있는 Microsoft의 Microsoft에서는 혼합 현실 UX Design 어떠한 체험의 기본 사항을 배우는 데 도움이 되는 HoloLens 2 용 무료 앱을 만들었습니다. Holograms 앱 디자인의 고유한 접근 방식은 혼합 현실 동작, 팁 및 권장 사항을 제공 하 여 사용자가 직접 매력적인 HoloLens 앱을 만드는 데 도움이 됩니다. Microsoft Store에서 무료로 무료로 앱을 다운로드 하 고 Microsoft의 혼합 현실 디자인 팀에 대해 알아보세요.
+혼합 현실용으로 디자인하는 방법을 학습하는 것은 미디어가 항상 2D 디자인 프로세스로 잘 변환되지 않기 때문에 어려울 수 있습니다. Microsoft에서는 혼합 현실 UX 디자인의 기본 내용을 직접 학습하는 데 도움이 되는 HoloLens 2 대한 무료 앱을 만들었습니다. Holograms 앱 디자인의 고유한 접근 방식은 혼합 현실 동작, 팁 및 권장 사항을 자세히 분석하여 사용자 고유의 흥미롭고 놀라운 HoloLens 앱을 만드는 데 도움이 됩니다. Microsoft Store 무료로 앱을 다운로드하고 Microsoft의 Mixed Reality 디자인 팀에서 알아보세요.
 
 > [!div class="nextstepaction"]
-> [Holograms 앱 디자인 다운로드](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)
+> [홀로그램 디자인 앱 다운로드](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)
 
 <br>
 
-![홀로그램의 데모 객실 디자인에서 헤드 추적 장면의 애니메이션 GIF](images/designing-holograms/demo-room.gif)
+![디자인 홀로그램 데모실의 머리 추적 장면에 대한 애니메이션 GIF](images/designing-holograms/demo-room.gif)
 
-*홀로그램의 데모 실 디자인 (인형 집이 라고도 함)*
+*Hologram의 데모실 디자인(마스어하우스라고도 함)*
 
 ## <a name="designing-for-mixed-reality"></a>혼합 현실 디자인
 
-많은 사용자와 마찬가지로 모바일 앱을 설계 하는 데 사용 했습니다. 2D 디자인 환경에서 제공 되는 모든 것이 세계에 있는 공간 컴퓨팅에서 전체로 이동 하는 것이 중요 합니다. 혼합 현실에서 앱은 더 이상 2D 화면으로 제한 되지 않습니다. 실제로는 거의 무료 이며 실제 개체와 상호 작용할 수 있습니다.
+많은 사용자와 마찬가지로 모바일 앱을 디자인하는 데 사용했습니다. 2D 디자인 세계에서 들어오는 공간 컴퓨팅은 이제 모든 것이 전 세계에 있는 전체 공간 컴퓨팅으로 전환하는 것이 상당한 변화였습니다. 혼합 현실에서 앱은 더 이상 2D 화면으로 제한되지 않습니다. 실제로 거의 무료이며 실제 세계에 배치되고 실제 개체와 상호 작용합니다.
 
-기존 2D 디자인 프로세스에 3D 환경을 연결 하는 것은 혼합 현실 개발의 가장 어려운 측면입니다. 고객과 대화 하는 경우 "포함할 기능 및 다운로드 및 실행 방법에 대해 알고 싶습니다. 코드입니다. 문서와 자습서를 따를 수 있지만 사용자 경험을 따를 수 있나요? 따라서 다양 한 기능, 다양 한 입력 옵션, 다양 한 시나리오 및 물리적 환경을 제공 합니다. "
+3D 환경을 기존 2D 디자인 프로세스에 연결하는 것은 혼합 현실 개발에서 가장 어려운 측면입니다. 고객과의 대화에서 "포함할 기능과 기능을 시작하고 실행하는 방법을 알고 있습니다. 코드입니다. 문서와 자습서를 따를 수 있지만 사용자 환경은 무엇인가요? 많은 기능, 다양한 입력 옵션, 다양한 시나리오 및 물리적 환경이 너무 많아서 너무 많습니다."
 
 ![Hololens 2의 hololens 2 디자인 워크숍의 이미지-샌프란시스코 ](images/designing-holograms/workshop.jpeg)
  *2 디자인 워크숍* 의 샌프란시스코 이미지
@@ -63,37 +63,37 @@ Holograms 디자인은 혼합 현실 디자인 개념 및 권장 사항을 설�
 
 - 대부분의 개발자는 사무실에서 앱을 실행 하거나, 데모 공간 보다 작은 방에서 앱을 실행 하므로 적합 하지 않습니다.
 - 표시는 추가 가능 합니다. 즉, 전체 가상 환경이 사용자의 방에 걸쳐 중첩 됩니다. 두 테이블, 즉 두 개의 테이블을 사용 하면 혼동을 couches 수 있습니다.
-- 그리고 모든 가상 환경의 최악의 경우 보기의 필드에 의해 과도 하 게 제한 됩니다.
+- 그리고 모든 가상 환경이 보기 필드로 크게 제한되는 최악의 경우입니다.
 
-미니 1:10 규모를 사용해 볼 때 그 결과는 현실적인 공간에 대 한 훌륭한 상의 눈에 보기 였습니다. 모든 각도에서 동시에 진행 된 모든 항목을 볼 수 있습니다. 가장 놀라운 일은 대부분의 테스터가 작은 버전을 보기 위해 훨씬 더 몰입 형을 발견 하는 것입니다. 즉, 1:1 배율로 다시 전환 하지 않습니다. 따라서 실제로 1:1 버전을 스크랩 하 고 UI 및 앱의 다른 측면을 조정 하는 데 필요한 추가 작업을 방지 하기로 결정 했습니다.
+미니 1:10 배율로 시도한 결과는 사실적인 방의 멋진 조감도였습니다. 모든 각도에서 동시에 진행되는 모든 것을 볼 수 있습니다. 가장 놀라운 점은 대부분의 테스터가 작은 버전을 보기 위해 훨씬 더 몰입형을 찾은 다음, 1:1 규모로 다시 전환하지 않는다는 것입니다. 따라서 실제로 1:1 버전을 폐기하고 UI 및 앱의 다른 측면을 조정하는 데 필요한 추가 작업을 방지하기로 결정했습니다.
 
-![](images/designing-holograms/1-1-scale.png)
-*1:1 소수 자릿수가 있는* 보기의 1:1 눈금 필드가 있는 보기 필드
+![1:1 배율의 ](images/designing-holograms/1-1-scale.png)
+ *필드1:1 배율의 보기 필드*
 
-![](images/designing-holograms/1-10-scale.png)
-*1:10 소수 자릿수가 있는* 보기의 1:10 눈금 필드가 있는 보기 필드
+![1:10 배율의 ](images/designing-holograms/1-10-scale.png)
+ *필드1:10 배율의 보기 필드*
 
 ## <a name="using-mixed-reality-capture"></a>혼합 현실 캡처 사용
 
-이 앱의 특징 중 하나는 혼합 현실 캡처를 사용 하 여 혼합 현실 디자인 개념을 학습 하 고 시연 하는 것입니다.
+이 앱의 가장 특징적인 기능 중 하나는 혼합 현실 캡처 사용하여 혼합 현실 디자인 개념을 교육하고 시연하는 것입니다.
 
-Microsoft에는 샌프란시스코의 혼합 현실 캡처 스튜디오가 있습니다. Microsoft는 워싱턴 D.C, Metastage의 스튜디오, 런던의 Dimension 스튜디오, 서울의, 서울의, 서울의 Vol텔레콤 및 베를린의 Volap와 같은 다른에이 기술을 라이선스 합니다. [여기에서 혼합 현실 캡처 스튜디오](https://www.microsoft.com/mixed-reality/capture-studios)에 대 한 자세한 내용을 확인할 수 있습니다.
+Microsoft는 샌프란시스코에 혼합 현실 캡처 Studio를 보유하고 있습니다. 또한 Microsoft는 이 기술을 워싱턴 D.C.의 아바타 차원, 로스앤젤레스의 메타 스테이지, 런던 차원 스튜디오, Sk Telecom inAngeles 및필로의 Volucap을 비롯한 다른 스튜디오에 라이선스를 부여합니다. [혼합 현실 캡처 Studio에](https://www.microsoft.com/mixed-reality/capture-studios)대한 자세한 내용은 여기에서 확인할 수 있습니다.
 
 <br>
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Raw-capture-footage-for-the-Designing-Holograms-app/player]
-*Daniel Escudero의 원시 푸티지는 샌프란시스코의 혼합 현실 캡처 스튜디오에서 106 카메라 중 하나에서 시작 합니다.*
+*샌프란시스코의 혼합 현실 캡처 Studio에 있는 106대의 카메라 중 하나에서 나온 Daniel Escudero의 원시 장면입니다.*
 
-캡처 프로세스는 keyframed 메시, 법선 및 질감을 생성 합니다 .이는 추가 사후 프로덕션을 위해 OBJ/PNG 파일로 전달 하거나, h.264 압축 MP4 파일로 재생할 준비를 할 수 있습니다. 이러한 파일은 Unity, Unreal, Native 및 WebXR 프로젝트로 가져올 수 있습니다. 파일은 Windows, iOS, Mac, Android, 매직 Leap 및 Playstation VR에서 실행할 수 있습니다.
+캡처 프로세스는 추가 프로덕션 후를 위해 OBJ/PNG 파일로 배달되거나 H.264 압축 MP4 파일로 재생할 준비가 될 수 있는 키 프레임 메시, 기본 및 질감을 생성합니다. 이러한 파일을 Unity, Unreal, Native 및 WebXR 프로젝트로 가져올 수 있습니다. 파일은 Windows, iOS, Mac, Android, Magic Leap 및 Playstation VR에서 실행할 수 있습니다.
 
 <br>
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Mixed-Reality-Capture-footage-for-the-Designing-Holograms-app/player]
-*오디오 및 포함 된 메시를 사용 하 여 비디오를 포함 하는 mp4를 분석 하기 위해 제공 된 캡처 플레이어입니다.*
+*오디오 및 포함된 메시가 있는 비디오가 포함된 mp4를 분석하기 위해 제공된 캡처 플레이어입니다.*
 
 ## <a name="manipulating-captures-and-virtual-objects"></a>캡처 및 가상 개체 조작
 
-혼합 현실 캡처는 사람이 나 동물의 가상 표현을 생성 하지만, 때때로 다른 가상 개체와 상호 작용 하는 문자를 필요로 할 수 있습니다. 다음 두 예제에서는 이러한 효과를 얻기 위해 장면을 조작 하는 다양 한 방법을 보여 줍니다.
+Mixed Reality 캡처는 사람 또는 동물에 대한 가상 표현을 생성하지만, 때로는 다른 가상 개체와 상호 작용하기 위해 해당 문자가 필요할 수 있습니다. 다음 두 예제에서는 이러한 효과를 얻기 위해 장면을 조작 하는 다양 한 방법을 보여 줍니다.
 
 ### <a name="head-gaze-adjustment"></a>헤드 응시 조정
 
@@ -115,35 +115,47 @@ Microsoft에는 샌프란시스코의 혼합 현실 캡처 스튜디오가 있�
 
 ### <a name="ui-creative-process"></a>UI 창작 프로세스
 
-UI 디자인을 시작할 때 holograms에서 제공 해야 하는 몇 가지 매직 및 가능성을 보여 원했습니다. 단순히 정적 2D 창과 텍스트 상자를 표시 하는 것은 3D 세계에서 적절 하지 않습니다. 그 외에도 대부분의 가능성은 표시 되지 않으므로 처음부터 그 밖으로 이동 하 여 holographic 3D 공간을 모두 사용 하도록 결정 했습니다.
+UI 디자인을 시작할 때 holograms에서 제공 해야 하는 몇 가지 매직 및 가능성을 보여 원했습니다. 단순히 정적 2D 창과 텍스트 상자를 표시 하는 것은 3D 세계에서 적절 하지 않습니다. 많은 가능성이 표시되지 않으므로 처음부터 바로 이를 벗어나 홀로그램 3D 공간을 최대한 활용하기로 결정했습니다.
 
-처음에는 패널, 아이콘 및 텍스트 정보에 일부 두께를 추가 하는 작업을 시작 했습니다. 사용자로 서는 텍스트 상자를 표시 합니다. 이미지가 있는 텍스트 상자에는 포함 되어 있지 않습니다. 이제 MRTK (Mixed Reality Toolkit) 셰이더를 사용 하 여 추가 했습니다. MRTK 셰이더는 강력한 도구가 되었으며 스텐실 기능을 사용 하 여 패널에 음수 깊이를 추가 했습니다. 즉, 입력란 앞에 요소를 추가 하는 대신 아이콘이 투명 패널 뒤에 표시 됩니다. 사용자로 서 이제는 더 이상 실제 지역에서 복제할 수 없는 것으로 표시 되며,이는 holographic magic이 시작 되는 위치입니다. 또한 실제로 읽을 필요가 없는 사용자는 이미 실제 세계에 있는 많은 작업을 수행 합니다.
+처음에는 패널, 아이콘 및 텍스트 정보에 일부 두께를 추가하는 것으로 시작했습니다. 그래도 사용자가 볼 수 있는 것은 텍스트 상자입니다. 이미지가 있는 입력란이지만, 아직 없습니다. MRTK(Mixed Reality Toolkit) 셰이더를 사용하여 더 발전했습니다. MRTK 셰이더가 강력한 도구가 되었으며, 스텐실 기능을 사용하여 패널에 음의 깊이를 추가했습니다. 즉, 텍스트 상자 앞에 요소를 추가하는 대신 이제 아이콘이 투명 패널 뒤에 표시됩니다. 이제 사용자로 볼 수 있는 것은 실제 세계에서 더 이상 복제할 수 없는 것이며, 홀로그램 매직이 발생하기 시작했습니다. 또한 실제로 읽고 싶지 않은 사용자로서 실제 세계에서 이미 많은 작업을 수행합니다.
 
-분명히 아이콘은 간단한 텍스트 보다 훨씬 더 효율적으로 작동 하므로 훨씬 더 강력한 지침을 제공 하 고, 애니메이션 개체 및 아바타 집합을 만들기 시작 하 고 각각의 시나리오에서 수행 되는 작업 및 사용 방법에 대 한 간단한 스토리를 알려 줍니다.
+물론 아이콘은 간단한 텍스트보다 훨씬 더 잘 작동합니다. 훨씬 더 강력한 지침을 제공하기 위해 애니메이션 개체 및 아바타 집합을 만들기 시작했습니다. 각 아이콘은 각 시나리오에서 수행되는 작업과 사용 방법에 대한 작은 스토리를 제공하기 시작했습니다.
 
-![대화형 holographic 메뉴 시스템의 애니메이션 GIF](images/designing-holograms/creative-process.gif)
+![대화형 홀로그램 메뉴 시스템의 애니메이션 GIF](images/designing-holograms/creative-process.gif)
 
 ## <a name="core-concepts"></a>핵심 개념
 
+**헤드 추적 및 시선 추적**
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+**손 추적**
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
+
+**공간 인식**
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
+
 **홀로그램 프레임**
 
-![Holographic 프레임이 강조 표시 된 상태에서 dollhouse를 찾는 사용자의 애니메이션 GIF](images/designing-holograms/FOVandFOI.gif)
+![홀로그램 프레임이 강조 표시된 톨로지 주변을 둘러보는 사용자의 애니메이션 GIF](images/designing-holograms/FOVandFOI.gif)
 
 **좌표계**
 
-![좌표계가 강조 표시 된 상태로 dollhouse를 찾는 사용자의 애니메이션 GIF](images/designing-holograms/CoordinateSystems.gif)
+![좌표계가 강조 표시된 좌표집을 둘러보는 사용자의 애니메이션 GIF](images/designing-holograms/CoordinateSystems.gif)
 
 **시선 추적**
 
-![눈에 보이는 응시 빛이 강조 표시 된 고정 된 holograms를 확인 하는 사용자의 애니메이션 GIF](images/designing-holograms/EyeTracking.gif)
+![시선 응시 광선이 강조 표시된 고정 홀로그램을 보는 사용자의 애니메이션 GIF](images/designing-holograms/EyeTracking.gif)
 
-**대화방 스캔 시각화 및 공간 매핑**
+**공간 검색 시각화 및 공간 매핑**
 
-![매핑되는 dollhouse 내 모든 표면의 애니메이션 GIF](images/designing-holograms/SpatialMapping.gif)
+![매핑되는 히어하우스 내의 모든 표면의 애니메이션 GIF](images/designing-holograms/SpatialMapping.gif)
 
 **장면 이해**
 
-![인식 되는 dollhouse의 개체에 대 한 애니메이션 GIF](images/designing-holograms/SceneUnderstanding.gif)
+![인식되는 달하우스의 개체에 대한 애니메이션 GIF](images/designing-holograms/SceneUnderstanding.gif)
 
 **직접 광선을 사용 하 여 점 및 커밋**
 
@@ -181,7 +193,7 @@ Holograms을 디자인 하는 것은 혼합 현실 개념 이지만 방에서 �
 </tr>
 </table>
 
-매우 많은 정보를 공유 하 고, [개체 이론](https://objecttheory.com/) 에서 프로젝트의 모든 단계를 통해 필수적인 팀으로 서 많은 정보를 공유 하기 위해 혼합 현실 설계 팀에 감사 합니다. 열정과 디자인의 뛰어난 눈에 대해 놀라운 인재을 주셔서 감사 합니다.
+매우 많은 정보를 공유 하 고, [개체 이론](https://objecttheory.com/) 에서 프로젝트의 모든 단계를 통해 필수적인 팀으로 서 많은 정보를 공유 하기 위해 혼합 현실 설계 팀에 감사 합니다. 디자인에 대한 열정을 가지고 뛰어난 시각을 발휘해 주셔서 감사합니다.
 
 > [!div class="nextstepaction"]
-> [Holograms 앱 디자인 다운로드](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)
+> [홀로그램 디자인 앱 다운로드](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)
