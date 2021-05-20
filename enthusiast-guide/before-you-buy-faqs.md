@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사전 판매, 연구, 구매, 구입 하기 전
 appliesto:
 - Windows 10
-ms.openlocfilehash: 1f7eaa59a18598d1df2ecef611a9ea7d58e6a36a
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 82ae2af5a8edd60317ba7d7c343c80a25b226301
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580293"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196618"
 ---
 # <a name="before-you-buy-frequently-asked-questions"></a>질문과 대답을 구입 하기 전에
 
@@ -45,23 +45,23 @@ ms.locfileid: "98580293"
 
 **빠른 응답:** 혼합 현실은 확대 된 현실 및 holograms에서 가상 현실까지 공간 컴퓨팅의 전체 스펙트럼을 의미 합니다. Windows Mixed Reality 플랫폼은 VR (가상 현실)와 AR (확대 현실) 전반의 장치를 지원 합니다. 현재는 이러한 스펙트럼에서 동일한 기술을 사용 하는 두 가지 장치 유형 (HoloLens (AR) 및 Windows Mixed Reality (VR) 헤드셋)을 지원 합니다.
 
-여기에서 혼합 현실에 대해 자세히 알아보세요. <https://docs.microsoft.com/windows/mixed-reality/mixed-reality>
+여기에서 Mixed Reality 대해 자세히 알아보세요. <https://docs.microsoft.com/windows/mixed-reality/mixed-reality>
 
-### <a name="what-is-the-difference-between-windows-mixed-reality-and-other-vr-headsets"></a>Windows Mixed Reality와 기타 VR 헤드셋 간의 차이점은 무엇 인가요?
+### <a name="what-is-the-difference-between-windows-mixed-reality-and-other-vr-headsets"></a>Windows Mixed Reality 다른 VR 헤드셋의 차이점은 무엇인가요?
 
-**빠른 응답:** Windows Mixed Reality 헤드셋은 내부 추적 (추적 카메라는 헤드셋에 포함 됨)과 Windows 10의 플러그 앤 플레이 설치 기능을 포함 합니다.
+**빠른 답변:** Windows Mixed Reality 헤드셋은 내부 추적(추적 카메라가 헤드셋에 있습니다)과 Windows 10 플러그 앤 플레이 설정을 제공합니다.
 
-**자세한 정보**: Windows Mixed Reality는 간편한 설치 (사용자 및 컨트롤러를 추적할 수 있는 외부 센서에 대 한 필요 없음), 편안 하 게 사용 하는 헤드셋의 선택, 경쟁 우위를 제공 하는 헤드셋 선택, Microsoft Store에서 수천 개의 앱을 사용할 수 있는 공간 인터페이스를 제공 하는 고유한 사용자 환경 등의 여러 가지 기능을 제공 합니다.
+**자세한 정보:** Windows Mixed Reality 간편한 설정(외부 센서가 사용자와 컨트롤러를 추적할 필요 없음), 편리하고 가격 대비 좋은 헤드셋 선택, 경쟁력 있는 해상도를 갖춘 헤드셋, 마지막으로 공간 인터페이스를 갖춘 고유한 사용자 환경을 포함하여 Microsoft Store 수천 개의 앱을 사용할 수 있도록 하는 몇 가지 기능을 제공합니다.
 
-### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>혼합 현실에서는 내부 카메라가 통과 하는 것을 의미 하나요? 가상 현실 외에도 확대 현실를 경험할 수 있습니다.
+### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>Mixed Reality 내부 카메라가 통과되는 것을 의미하나요? 가상 현실 외에 증강 현실도 경험할 수 있나요?
 
-**빠른 응답:** 아니요, Windows Mixed Reality 헤드셋의 내부 카메라는 위치 추적에만 사용 됩니다. Windows Mixed Reality 헤드셋은 폐색 이며,이는 가상 현실 이며 실제 세계 또는 보강 된 현실에 대 한 보기를 제공 하지 않음을 의미 합니다.
+**빠른 답변:** 아니요, Windows Mixed Reality 헤드셋의 내부 카메라는 위치 추적에만 사용됩니다. Windows Mixed Reality 헤드셋은 가상 현실용이며 실제 세계 또는 증강 현실에 대한 보기를 제공하지 않는다는 것을 의미합니다.
 
-### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>내부 추적 이란? 외부에서 추적 또는 lighthouse 추적과는 다른 방법
+### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>내부 추적이란? 외부 추적 또는 등대 추적과 어떻게 다른가요?
 
-* **내부 추적** Windows Mixed Reality에서는 내부 추적을 사용 합니다. 외부 추적 카메라는 헤드셋에 내장 되어 있으며 환경에서 변경 내용을 추적 하 여 이동 하는 환경에 따라 헤드셋 위치를 결정 합니다.
+* **내부 추적** Windows Mixed Reality, Oculus Quest 및 Vive/Index 시스템은 내부 아웃 추적을 사용합니다. 내부 아웃 추적 카메라는 헤드셋에 기본 제공되고 환경의 변경 내용을 추적하여 이동할 때 환경에 따라 헤드셋의 위치를 결정합니다. HTC Vive 및 밸브 인덱스와 같은 일부 시스템은 카메라 대신 센서를 사용하고 외부 "등대" 또는 "기본 스테이션"에 의존하여 환경을 추적합니다.
 
-* **외부에서 추적** Oculus, 기타는 외부에서 추적을 사용 합니다.  외부에서 추적을 사용 하 여 헤드셋은 하나 이상의 외부 장치에 의해 추적 됩니다. 카메라는 환경에 배치 되 고 환경을 기반으로 하는 헤드셋의 위치를 결정 하는 데 사용 되는 외부 장치에 기본 제공 됩니다.
+* **외부 추적** OculusStation 및 PlayStation VR과 같은 시스템은 외부 추적을 사용합니다.  외부 추적을 통해 헤드셋은 하나 이상의 외부 디바이스에서 추적됩니다. 카메라는 환경에 배치 되 고 환경을 기반으로 하는 헤드셋의 위치를 결정 하는 데 사용 되는 외부 장치에 기본 제공 됩니다.
 
 [내부 추적](./tracking-system.md)에 대해 자세히 알아보세요.
 
@@ -95,35 +95,35 @@ ms.locfileid: "98580293"
 <tr>
 <td> Acer AH101 </td>
 <td> 2880x1440 </td>
-<td> LCD </td>
-<td> 최대 90 Hz </td>
-<td> 100 ° </td>
-<td> 3.5-mm 잭 </td>
+<td> Lcd </td>
+<td> 최대 90Hz </td>
+<td> 100˚ </td>
+<td> 3.5mm jack </td>
 <td> 없음 </td>
 <td style="text-align: center;">소프트웨어</td>
-<td> 2017 </td>
+<td> 2017년 2월 </td>
 <td> <a href="https://www.acer.com/ac/en/US/content/windows-mixed-reality-home">Acer</a> </td>
 </tr>
 
 <tr>
 <td> Acer OJO 500 </td>
 <td> 2880x1440 </td>
-<td> LCD </td>
-<td> 최대 90 Hz </td>
-<td> 100 ° </td>
-<td> 통합 + 3.5-mm 잭 </td>
+<td> Lcd </td>
+<td> 최대 90Hz </td>
+<td> 100˚ </td>
+<td> 통합 + 3.5mm jack </td>
 <td> 기본 제공 </td>
-<td style="text-align: center;">기계적</td>
-<td> 2018 </td>
+<td style="text-align: center;">기계식</td>
+<td> 2018년 2월 </td>
 <td> <a href="https://www.acer.com/ac/en/US/press/2018/427890">Acer</a> </td>
 </tr>
 
 <tr>
 <td> ASUS HC102 </td>
 <td> 2880x1440 </td>
-<td> LCD </td>
-<td> 최대 90 Hz </td>
-<td> 95 ° </td>
+<td> Lcd </td>
+<td> 최대 90Hz </td>
+<td> 95˚ </td>
 <td> 3.5-mm 잭 </td>
 <td> 없음 </td>
 <td style="text-align: center;">소프트웨어</td>
@@ -160,39 +160,39 @@ ms.locfileid: "98580293"
 <tr>
 <td> HP 반향 </td>
 <td> 4320x2160 </td>
-<td> LCD </td>
-<td> 최대 90 Hz </td>
-<td> 114 ° </td>
-<td> 통합 + 3.5-mm 잭 </td>
+<td> Lcd </td>
+<td> 최대 90Hz </td>
+<td> 114˚ </td>
+<td> 통합 + 3.5mm jack </td>
 <td> 기본 제공 </td>
 <td style="text-align: center;">소프트웨어</td>
-<td> 스프링 2019 </td>
-<td> <a href="https://www8.hp.com/us/en/workstations/mixed-reality-headset/index.html">HP</a> </td>
+<td> 2019년 봄 </td>
+<td> <a href="https://www8.hp.com/us/en/workstations/mixed-reality-headset/index.html">Hp</a> </td>
 </tr>
 
 <tr>
 <td> HP VR1000 </td>
 <td> 2880x1440 </td>
-<td> LCD </td>
-<td> 최대 90 Hz </td>
-<td> 105 ° </td>
-<td> 3.5-mm 잭 </td>
+<td> Lcd </td>
+<td> 최대 90Hz </td>
+<td> 105˚ </td>
+<td> 3.5mm jack </td>
 <td> 없음 </td>
 <td style="text-align: center;">소프트웨어</td>
-<td> 2017 </td>
-<td> <a href="https://store.hp.com/us/en/pdp/hp-windows-mixed-reality-headset-vr1000-100">HP</a> </td>
+<td> 2017년 2월 </td>
+<td> <a href="https://store.hp.com/us/en/pdp/hp-windows-mixed-reality-headset-vr1000-100">Hp</a> </td>
 </tr>
 
 <tr>
 <td> Lenovo Explorer </td>
 <td> 2880x1440 </td>
-<td> LCD </td>
-<td> 최대 90 Hz </td>
-<td> 105 ° </td>
-<td> 3.5-mm 잭 </td>
+<td> Lcd </td>
+<td> 최대 90Hz </td>
+<td> 105˚ </td>
+<td> 3.5mm jack </td>
 <td> 없음 </td>
 <td style="text-align: center;">소프트웨어</td>
-<td> 2017 </td>
+<td> 2017년 2월 </td>
 <td> <a href="https://www.lenovo.com/us/en/virtual-reality-and-smart-devices/virtual-and-augmented-reality/lenovo-explorer/Lenovo-Explorer/p/G10NREAG0A2">Lenovo</a> </td>
 </tr>
 
@@ -217,7 +217,7 @@ ms.locfileid: "98580293"
 <td> 110 ° </td>
 <td> 통합 </td>
 <td> 없음 </td>
-<td style="text-align: center;">기계적</td>
+<td style="text-align: center;">기계식</td>
 <td> 2017 </td>
 <td> <a href="https://www.samsung.com/us/computing/hmd/windows-mixed-reality/xe800zaa-hc1us-xe800zaa-hc1us/?redir=windows%20mixed%20reality">삼성</a> </td>
 </tr>
@@ -230,38 +230,38 @@ ms.locfileid: "98580293"
 <td> 110 ° </td>
 <td> 통합 </td>
 <td> 기본 제공 </td>
-<td style="text-align: center;">기계적</td>
-<td> 2018 </td>
+<td style="text-align: center;">기계식</td>
+<td> 2018년 2월 </td>
 <td> <a href="https://www.samsung.com/us/computing/hmd/windows-mixed-reality/hmd-odyssey-windows-mixed-reality-headset-xe800zba-hc1us/">삼성</a> </td>
 </tr>
 
 <tr>
-<td> 3BcBlubur S2</td>
+<td> 3Glasses Blubur S2</td>
 <td> 2880x1440 </td>
-<td> LCD </td>
-<td> 최대 90 Hz </td>
-<td> 105 ° </td>
-<td> 3.5-mm 잭 </td>
+<td> Lcd </td>
+<td> 최대 90Hz </td>
+<td> 105˚ </td>
+<td> 3.5mm jack </td>
 <td> 없음 </td>
 <td style="text-align: center;">소프트웨어</td>
-<td> 2017 </td>
-<td> <a href="http://3glasses.com/goods.action?gid=30">3.</a> </td>
+<td> 2017년 2월 </td>
+<td> <a href="http://3glasses.com/goods.action?gid=30">3Glasses</a> </td>
 </tr>
 </table>
 
-위에 나열 된 기술 세부 정보는 제조업체 사양에서 참조 되며 변경 될 수 있습니다.
+위에 나열된 기술 세부 정보는 제조업체 사양에서 참조되며 변경될 수 있습니다.
 
-### <a name="does-mixed-reality-mean-that-the-inside-out-cameras-are-passthrough"></a>"Mixed Reality"는 내부 카메라를 통과 하는 것을 의미 하나요?
+### <a name="does-mixed-reality-mean-that-the-inside-out-cameras-are-passthrough"></a>"Mixed Reality"는 내부 카메라의 통과를 의미하나요?
 
-**빠른 응답:** 아니요, 내부 카메라는 위치 추적에만 사용 됩니다. Windows Mixed Reality 헤드셋은 폐색입니다.
+**빠른 답변:** 아니요, 내부 외부 카메라는 위치 추적에만 사용됩니다. Windows Mixed Reality 헤드셋이 폐색됩니다.
 
-### <a name="do-the-mixed-reality-headsets-have-ipd-adjustment"></a>혼합 현실 헤드셋은 IPD 조정을 하나요?
+### <a name="do-the-mixed-reality-headsets-have-ipd-adjustment"></a>혼합 현실 헤드셋에 IPD 조정이 있나요?
 
-**빠른 응답:** 헤드셋에 따라 일부 혼합 현실 헤드셋은 기계적 IPD 조정을 기능 합니다. 다른 헤드셋은 소프트웨어 IPD 조정 기능을 사용 하 여 IPD를 기반으로 이미지 왜곡 및 깊이 정확도를 향상 시킵니다. 사용자는 **> 헤드셋 디스플레이 > 보정을 > 혼합 현실 설정을** 통해 사용자 지정 IPD을 설정할 수 있습니다.
+**빠른 답변:** 헤드셋에 따라 일부 혼합 현실 헤드셋은 기계식 IPD 조정 기능을 제공합니다. 다른 헤드셋은 IPD에 따라 이미지 왜곡 및 깊이 정확도를 향상시키는 소프트웨어 IPD 조정 기능을 제공합니다. 사용자는 설정 > Mixed Reality > 헤드셋 **표시 > 보정을** 통해 사용자 지정 IPD를 설정할 수 있습니다.
 
-### <a name="do-the-mixed-reality-headsets-have-eye-relief-adjustment"></a>혼합 현실 헤드셋은 눈동자 릴리프 조정을 수행 하나요?
+### <a name="do-the-mixed-reality-headsets-have-eye-relief-adjustment"></a>혼합 현실 헤드셋에 시선 조절 조정이 있나요?
 
-**빠른 응답:** 아니요, Windows Mixed Reality 헤드셋은 눈동자 릴리프 조정을 하지 않습니다.
+**빠른 답변:** 아니요, Windows Mixed Reality 헤드셋에는 시선 조절 조정이 없습니다.
 
 ### <a name="will-there-be-issues-with-motion-controller-tracking-if-multiple-windows-mixed-reality-headsets-are-in-close-proximity"></a>여러 Windows Mixed Reality 헤드셋이 가까운 근접 한 경우 동작 컨트롤러 추적에 문제가 있나요?
 
@@ -293,36 +293,36 @@ ms.locfileid: "98580293"
 
 **빠른 응답:** 아니요. Windows Mixed Reality는 Pc 에서만 작동 합니다. [혼합 현실 포털](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) 을 다운로드 하 고 실행 하 여 PC가 WMR ready 인지 확인 합니다.
 
-### <a name="what-pcs-have-been-badged-for-windows-mixed-reality"></a>Windows Mixed Reality에 직장 배지가 달린 된 Pc는 무엇 인가요?
+### <a name="what-pcs-have-been-badged-for-windows-mixed-reality"></a>Windows Mixed Reality 위해 배지가 있는 PC는 무엇인가요?
 
-**빠른 응답:** 직장 배지가 달린 Pc의 전체 목록은 아직 게시 되지 않았지만 올해 후반에 예정 되어 있습니다. [혼합 현실 포털](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) 을 다운로드 하 고 실행 하 여 PC가 WMR ready 인지 확인 합니다.
+**빠른 답변:** 배지가 있는 PC의 전체 목록은 아직 게시되지 않았지만 올해 말에 게시될 예정입니다. [Mixed Reality 포털](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) 다운로드하고 실행하여 PC가 WMR 준비되었는지 확인합니다.
 
-### <a name="what-windows-version-supports-windows-mixed-reality"></a>Windows Mixed Reality를 지 원하는 Windows 버전은 무엇입니까?
+### <a name="what-windows-version-supports-windows-mixed-reality"></a>Windows Mixed Reality 지원하는 Windows 버전은 무엇인가요?
 
-**빠른 응답:** Windows 10이 하 버전 업데이트 (버전 1709) 이상이 설치 되어 있어야 합니다. [혼합 현실 포털](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) 을 다운로드 하 고 실행 하 여 PC가 WMR ready 인지 확인 합니다.
+**빠른 답변:** Windows 10 Fall Creators Update(버전 1709) 이상 설치되어 있어야 합니다. [Mixed Reality 포털](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) 다운로드하고 실행하여 PC가 WMR 준비되었는지 확인합니다.
 
-### <a name="does-the-windows-mixed-reality-platform-support-rift-and-vive-hardware"></a>Windows Mixed Reality 플랫폼은 Rift 및 Vive 하드웨어를 지원 하나요?
+### <a name="does-the-windows-mixed-reality-platform-support-rift-and-vive-hardware"></a>Windows Mixed Reality 플랫폼에서는 2차원 하드웨어와 Vive 하드웨어를 지원하나요?
 
-**빠른 응답:** Windows Mixed Reality는 승인 된 Windows 혼합 현실 헤드셋/컨트롤러 에서만 작동 합니다. <https://www.microsoft.com/en-us/store/b/virtualreality>을 참조하십시오.
+**빠른 답변:** Windows Mixed Reality 승인된 Windows Mixed Reality 헤드셋/컨트롤러에서만 작동합니다. <https://www.microsoft.com/en-us/store/b/virtualreality>을 참조하십시오.
 
-## <a name="motion-controllers"></a>동작 컨트롤러
+## <a name="motion-controllers"></a>모션 컨트롤러
 
-### <a name="how-do-motion-controllers-work-with-my-pc"></a>내 PC에서 동작 컨트롤러는 어떻게 작동 하나요?
+### <a name="how-do-motion-controllers-work-with-my-pc"></a>내 PC에서 모션 컨트롤러는 어떻게 작동하나요?
 
-**빠른 응답:** Windows Mixed Reality 동작 컨트롤러는 Bluetooth를 사용 합니다. 헤드셋에 따라 이동 컨트롤러는 헤드셋의 Bluetooth 라디오 (장착 된 경우) 또는 PC의 Bluetooth 송수신 장치에 연결 됩니다.
+**빠른 답변:** Windows Mixed Reality 모션 컨트롤러는 Bluetooth를 사용합니다. 헤드셋에 따라 모션 컨트롤러는 헤드셋의 Bluetooth 라디오(장착된 경우) 또는 PC의 Bluetooth 라디오에 페어링됩니다.
 
-* Acer OJO 500, Samsung Odyssey +, HP 반향 및 HP 반향 G2 기능을 비롯 한 일부 Windows Mixed Reality 헤드셋은 동작 컨트롤러에서 사용할 기본 제공 되는 Bluetooth 라디오를 제공 합니다. 이러한 헤드셋과 함께 제공 되는 동작 컨트롤러는 팩터리의 헤드셋에 미리 페어링 되며 PC에 별도의 Bluetooth 라디오가 필요 하지 않습니다.
-* 다른 Windows Mixed Reality 헤드셋은 PC의 Bluetooth 라디오와 쌍을 이루어야 합니다.
+* Acer OJO 500, Samsung Odyssey+, HP Reverb 및 HP Reverb G2를 포함한 일부 Windows Mixed Reality 헤드셋은 모션 컨트롤러에서 사용할 수 있는 기본 제공 Bluetooth 라디오를 제공합니다. 이러한 헤드셋과 함께 제공되는 모션 컨트롤러는 팩터리에서 헤드셋에 미리 페어링되며 PC에 별도의 Bluetooth 라디오가 필요하지 않습니다.
+* 다른 Windows Mixed Reality 헤드셋은 PC에서 Bluetooth 라디오와 페어링되어야 합니다.
 
-### <a name="are-windows-mixed-reality-motion-controllers-cross-compatible-between-windows-mixed-reality-headsets"></a>Windows mixed reality 동작 컨트롤러가 Windows Mixed Reality 헤드셋 간에 상호 호환 되나요?
+### <a name="are-windows-mixed-reality-motion-controllers-cross-compatible-between-windows-mixed-reality-headsets"></a>Windows Mixed Reality 모션 컨트롤러는 Windows Mixed Reality 헤드셋 간에 교차 호환합니까?
 
-**빠른 응답:** 예, Windows Mixed Reality 동작 컨트롤러는 모든 Windows Mixed Reality 헤드셋에서 작동 합니다.
+**빠른 답변:** 예, Windows Mixed Reality 모션 컨트롤러는 모든 Windows Mixed Reality 헤드셋에서 작동합니다.
 
-### <a name="how-do-i-connect-motion-controllers-if-i-do-not-have-built-in-bluetooth"></a>기본 제공 되는 Bluetooth가 없는 경우 동작 컨트롤러를 연결 어떻게 할까요?
+### <a name="how-do-i-connect-motion-controllers-if-i-do-not-have-built-in-bluetooth"></a>기본 제공 Bluetooth가 없는 경우 모션 컨트롤러를 연결할 어떻게 할까요? 있나요?
 
-**빠른 응답:** PC에 Bluetooth 지원이 기본 제공 되지 않는 경우, 동작 컨트롤러를 사용할 수 있도록 Bluetooth 4.0을 지 원하는 USB Bluetooth 어댑터를 연결 해야 합니다.
+**빠른 답변:** PC에 기본 제공 Bluetooth 지원이 없는 경우 Bluetooth 4.0을 지원하는 USB Bluetooth 어댑터를 연결하여 모션 컨트롤러를 사용하도록 설정해야 합니다.
 
-### <a name="will-the-controllers-work-with-bluetooth-31-or-do-i-need-bluetooth-40"></a>컨트롤러가 Bluetooth 3.1에서 작동 하나요? 아니면 Bluetooth 4.0이 필요 한가요?
+### <a name="will-the-controllers-work-with-bluetooth-31-or-do-i-need-bluetooth-40"></a>컨트롤러가 Bluetooth 3.1에서 작동합니까 아니면 Bluetooth 4.0이 필요한가요?
 
 **빠른 응답:** Windows Mixed Reality에 대해 지원 되는 최소 사양은 Bluetooth 4.0입니다. PC에 Bluetooth 3.1이 있으면 컨트롤러 사용이 차단 되지 않지만, 최상의 환경은 BT 4.0에 있습니다. [혼합 현실 포털](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) 을 다운로드 하 고 실행 하 여 PC가 WMR ready 인지 확인 합니다.
 
@@ -358,35 +358,35 @@ ms.locfileid: "98580293"
 
 ### <a name="what-games-require-a-gamepad-as-opposed-to-motion-controllers"></a>움직임 컨트롤러와 달리 게임 패드를 필요로 하는 게임은 무엇 인가요?
 
-**빠른 응답:** Windows Mixed Reality 응용 프로그램은 대부분 동작 컨트롤러를 지원 하도록 선택 하는 것이 좋지만 요구 사항은 아닙니다. 동작 컨트롤러 지원은 환경의 개발자에 게 있습니다. 개발자는 게임에서 지원 하려는 입력 모드를 결정 해야 합니다. 스토어의 특정 게임 또는 앱의 제품 세부 정보 페이지에서 지원 되는 컨트롤러 유형을 확인할 수 있습니다.
+**빠른 답변:** 대부분의 몰입형 Windows Mixed Reality 애플리케이션은 모션 컨트롤러를 지원하도록 선택하지만 요구 사항은 아닙니다. 모션 컨트롤러 지원은 환경 개발자에게 달려 있습니다. 개발자는 게임에서 지원하려는 입력 모드를 결정해야 합니다. 스토어에서 특정 게임 또는 앱의 제품 세부 정보 페이지에서 지원되는 컨트롤러 유형을 확인할 수 있습니다.
 
-### <a name="if-i-am-using-xbox-game-streaming-can-i-use-my-xbox-controller"></a>Xbox 게임 스트리밍을 사용 하는 경우 Xbox 컨트롤러를 사용할 수 있나요?
+### <a name="if-i-am-using-xbox-game-streaming-can-i-use-my-xbox-controller"></a>Xbox 게임 스트리밍을 사용하는 경우 Xbox 컨트롤러를 사용할 수 있나요?
 
-**빠른 응답:** 예, Xbox에서 게임을 스트리밍하는 경우 처럼 Xbox 컨트롤러가 필요 합니다.
+**빠른 답변:** 예, Xbox에서 게임을 스트리밍하려면 콘솔에 있을 때와 마찬가지로 Xbox 컨트롤러가 필요합니다.
 
-### <a name="will-windows-mixed-reality-work-if-i-have-no-space-in-my-room"></a>대화방에 공간이 없는 경우 Windows Mixed Reality가 작동 하나요?
+### <a name="will-windows-mixed-reality-work-if-i-have-no-space-in-my-room"></a>내 공간에 공간이 없으면 Windows Mixed Reality 작동합니까?
 
-**빠른 응답:** 예, Windows Mixed Reality는 공간이 많지 않은 경우에도 작동 합니다. "책상-규모" 환경을 선택 하 여 설치 하는 동안이를 설정할 수 있습니다.
+**빠른 답변:** 예, 공간이 많지 않은 경우에도 Windows Mixed Reality 작동합니다. 설치하는 동안 "데스크 규모" 환경을 선택하여 설정할 수 있습니다.
 
-## <a name="content"></a>Content
+## <a name="content"></a>콘텐츠
 
-### <a name="what-games-and-apps-run-on-windows-mixed-reality"></a>Windows Mixed Reality에서 실행 되는 게임 및 앱은 무엇 인가요?
+### <a name="what-games-and-apps-run-on-windows-mixed-reality"></a>Windows Mixed Reality 실행되는 게임 및 앱은 무엇인가요?
 
-**빠른 응답:** Windows Mixed Reality는 [Microsoft store](https://www.microsoft.com/en-us/store/collections/MR-All-ImmersiveContent/pc?rtc=2)에서 제공 되는 콘텐츠와 SteamVR 라이브러리와 호환 됩니다. 스트림의 Windows Mixed Reality 로고에서 게임 호환성을 확인 하세요.  
+**빠른 답변:** Windows Mixed Reality 는 SteamVR 라이브러리 및 [Microsoft 스토어에서](https://www.microsoft.com/en-us/store/collections/MR-All-ImmersiveContent/pc?rtc=2)사용할 수 있는 콘텐츠와 호환됩니다. 게임 호환성을 위해 Steam에서 Windows Mixed Reality 로고를 찾습니다.  
 
-### <a name="will-vive-be-able-to-run-windows-mixed-reality-content"></a>Windows Mixed Reality 콘텐츠를 실행할 수 있나요?
+### <a name="will-vive-be-able-to-run-windows-mixed-reality-content"></a>Vive에서 Windows Mixed Reality 콘텐츠를 실행할 수 있나요?
 
-**빠른 응답:** Vive 헤드셋은 Windows Mixed Reality와 호환 되지 않습니다.
+**빠른 답변:** Vive 헤드셋은 Windows Mixed Reality 호환되지 않습니다.
 
-### <a name="can-i-play-my-xbox-one-games-in-windows-mixed-reality"></a>Windows Mixed Reality에서 Xbox One 게임을 재생할 수 있나요?
+### <a name="can-i-play-my-xbox-one-games-in-windows-mixed-reality"></a>Windows Mixed Reality 내 Xbox One 게임을 재생할 수 있나요?
 
-**빠른 응답:** Windows 10 용 Xbox 앱의 스트리밍 기능을 사용 하 여 Windows Mixed Reality에서 즐겨 찾는 Xbox One 게임을 모두 재생할 수 있습니다. Windows Mixed Reality 홈 내에서 앱의 크기를 조정 하 여 벽을 채울 수 있습니다. Xbox One 게임 스트리밍을 설정 하는 방법을 알아보려면 여기에서 지침을 확인할 수 있습니다. <http://support.xbox.com/en-US/games/game-setup/how-to-use-game-streaming>
+**빠른 답변:** Windows 10 Xbox 앱 스트리밍 기능을 사용하여 Windows Mixed Reality 즐겨 찾는 Xbox One 게임을 모두 재생할 수 있습니다. Windows Mixed Reality 홈 내에서 앱의 크기를 조정하여 벽면을 채울 수 있습니다. 게임 스트리밍을 Xbox One 설정하는 방법을 알아보려면 다음 지침을 확인하세요. <http://support.xbox.com/en-US/games/game-setup/how-to-use-game-streaming>
 
 ## <a name="steamvr"></a>SteamVR
 
-### <a name="are-the-minimum-specs-for-steamvr-higher-than-a-windows-mixed-reality-ultra-pc"></a>Windows Mixed Reality 울트라 PC 보다 SteamVR에 대 한 최소 사양이 높아야 하나요?
+### <a name="are-the-minimum-specs-for-steamvr-higher-than-a-windows-mixed-reality-ultra-pc"></a>SteamVR의 최소 사양이 Windows Mixed Reality Ultra PC보다 높나요?
 
-**빠른 응답:** Windows Mixed Reality의 Ultra PC 요구 사항을 사용 하 여 SteamVR을 실행할 수 있습니다. 그러나 GTX 1070 비디오 카드 (또는 더 나은)와 Intel Core i7 프로세서를 사용 하는 PC에서 SteamVR Preview를 실행 하는 것이 좋습니다. 향후 업데이트에서 추가 시스템 구성을 지원 하기 위해 계속 피드백을 검토 하 고 성능을 최적화 합니다. 이러한 더 높은 사양을 충족 하지 않으면 PC가 Windows Mixed Reality SteamVR의 실행을 차단 하지 않습니다. 그러나 전반적인 환경의 성능 및 품질에 영향을 줍니다.
+**빠른 답변:** Windows Mixed Reality Ultra PC 요구 사항으로 SteamVR을 실행할 수 있습니다. 그러나 GTX 1070 비디오 카드 (또는 더 나은)와 Intel Core i7 프로세서를 사용 하는 PC에서 SteamVR Preview를 실행 하는 것이 좋습니다. 향후 업데이트에서 추가 시스템 구성을 지원 하기 위해 계속 피드백을 검토 하 고 성능을 최적화 합니다. 이러한 더 높은 사양을 충족 하지 않으면 PC가 Windows Mixed Reality SteamVR의 실행을 차단 하지 않습니다. 그러나 전반적인 환경의 성능 및 품질에 영향을 줍니다.
 
 ### <a name="are-all-steam-vr-games-be-supported"></a>모든 스트림 VR 게임은 지원 되나요?
 
