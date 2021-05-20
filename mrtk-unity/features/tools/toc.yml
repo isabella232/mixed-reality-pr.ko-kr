@@ -1,3 +1,5 @@
+- name: 빌드 창
+  href: build-window.md
 - name: 자산 교환 유틸리티
   href: asset-swap-utility.md
 - name: 컨트롤러 매핑 도구
