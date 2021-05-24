@@ -18,6 +18,8 @@
   href: new-microsoft-edge.md
 - name: 프로그램 및 이벤트
   items:
+    - name: 빌드 2021 - 혼합 현실
+      href: mr-build.md
     - name: 혼합 현실 스피커 시리즈
       href: sf-academy-events.md
     - name: 혼합 현실 개발자의 날

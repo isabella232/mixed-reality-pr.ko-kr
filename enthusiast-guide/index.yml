@@ -1,99 +1,93 @@
 ### YamlMime:Hub
 title: Windows Mixed Reality VR 설명서
-summary: 짜릿한 가상 현실 게임, 여행 및 스트리밍을 경험하세요. Windows Mixed Reality에서 VR을 시작하고 진행하는 방법을 배울 수 있습니다.
+summary: '짜릿한 가상 현실 게임, 여행 및 스트리밍을 경험하세요. Windows Mixed Reality에서 VR을 시작하고 진행하는 방법을 배울 수 있습니다.'
 brand: windows
 metadata:
   title: Windows Mixed Reality VR 설명서
-  description: 짜릿한 가상 현실 게임, 여행 및 스트리밍을 경험하세요. Windows Mixed Reality에서 VR을 시작하고 진행하는 방법을 배울 수 있습니다.
+  description: '짜릿한 가상 현실 게임, 여행 및 스트리밍을 경험하세요. Windows Mixed Reality에서 VR을 시작하고 진행하는 방법을 배울 수 있습니다.'
   ms.topic: hub-page
   ms.prod: mixed-reality
   ms.technology: enthusiast-guide
   author: mattwojo
   ms.author: mattwoj
-  ms.openlocfilehash: ebe77df574235b7ddee2a4b65392836a39642d6c
-  ms.sourcegitcommit: 753f0ee94cf86be645cad8efd60f1b43ac529c96
-  ms.translationtype: HT
-  ms.contentlocale: ko-KR
-  ms.lasthandoff: 01/25/2021
-  ms.locfileid: "98758357"
 highlightedContent:
   items:
-  - title: Windows Mixed Reality VR 정보
-    itemType: overview
-    url: vr-journey.md
-  - title: 헤드셋 구입 방법
-    itemType: learn
-    url: https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?rtc=1
-  - title: 하드웨어 요구 사항 이해
-    itemType: learn
-    url: windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md
-  - title: 가상 현실 시작
-    itemType: get-started
-    url: set-up-windows-mixed-reality.md
-  - title: 상태 및 안전 지침
-    itemType: concept
-    url: wmr-health-safety-comfort.md
-  - title: 혼합 현실 소프트웨어 개요 및 릴리스 기록
-    itemType: concept
-    url: mixed-reality-software.md
+    - title: Windows Mixed Reality VR 정보
+      itemType: overview
+      url: vr-journey.md
+    - title: 헤드셋 구입 방법
+      itemType: learn
+      url: 'https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?rtc=1'
+    - title: 하드웨어 요구 사항 이해
+      itemType: learn
+      url: windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md
+    - title: 가상 현실 시작
+      itemType: get-started
+      url: set-up-windows-mixed-reality.md
+    - title: 상태 및 안전 지침
+      itemType: concept
+      url: wmr-health-safety-comfort.md
+    - title: AltspaceVR 탐색
+      itemType: whats-new
+      url: 'https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey?tabs=application'
 conceptualContent:
   title: Windows Mixed Reality 시작
-  summary: 혼합 현실 소프트웨어, 하드웨어 및 문제 해결에 대한 추가 정보를 확인하세요.
+  summary: '혼합 현실 소프트웨어, 하드웨어 및 문제 해결에 대한 추가 정보를 확인하세요.'
   items:
-  - title: 방법
-    links:
-    - url: plug-in-your-headset.md
-      itemType: quickstart
-      text: 헤드셋 연결
-    - url: install-windows-mixed-reality.md
-      itemType: quickstart
-      text: Windows Mixed Reality 소프트웨어 설치
-    - url: learn-mixed-reality.md
-      itemType: quickstart
-      text: 학습 환경 실행
-    - url: using-games-and-apps-in-windows-mixed-reality.md
-      itemType: quickstart
-      text: 게임 및 앱 사용
-  - title: 참조
-    links:
-    - url: your-mixed-reality-home.md
-      itemType: concept
-      text: 혼합 현실 홈
-    - url: controllers-in-wmr.md
-      itemType: concept
-      text: Windows Mixed Reality의 모션 컨트롤러
-    - url: using-steamvr-with-windows-mixed-reality.md
-      itemType: concept
-      text: Windows Mixed Reality를 지원하는 SteamVR
-    - url: using-speech-in-wmr.md
-      itemType: concept
-      text: Windows Mixed Reality의 음성
-  - title: 문제 해결
-    links:
-    - url: troubleshooting-windows-mixed-reality.md
-      itemType: concept
-      text: 일반 FAQ
-    - url: filing-feedback.md
-      itemType: concept
-      text: 버그 및 피드백 신고
-    - url: error-codes.md
-      itemType: concept
-      text: 오류 코드
-    - url: installation_errors.md
-      itemType: concept
-      text: 설치 오류
+    - title: 방법
+      links:
+        - url: plug-in-your-headset.md
+          itemType: quickstart
+          text: 헤드셋 연결
+        - url: install-windows-mixed-reality.md
+          itemType: quickstart
+          text: Windows Mixed Reality 소프트웨어 설치
+        - url: learn-mixed-reality.md
+          itemType: quickstart
+          text: 학습 환경 실행
+        - url: using-games-and-apps-in-windows-mixed-reality.md
+          itemType: quickstart
+          text: 게임 및 앱 사용
+    - title: 참조
+      links:
+        - url: your-mixed-reality-home.md
+          itemType: concept
+          text: 혼합 현실 홈
+        - url: controllers-in-wmr.md
+          itemType: concept
+          text: Windows Mixed Reality의 모션 컨트롤러
+        - url: using-steamvr-with-windows-mixed-reality.md
+          itemType: concept
+          text: Windows Mixed Reality를 지원하는 SteamVR
+        - url: using-speech-in-wmr.md
+          itemType: concept
+          text: Windows Mixed Reality의 음성
+    - title: 문제 해결
+      links:
+        - url: troubleshooting-windows-mixed-reality.md
+          itemType: concept
+          text: 지원 및 도움말 옵션
+        - url: filing-feedback.md
+          itemType: concept
+          text: 버그 및 피드백 신고
+        - url: error-codes.md
+          itemType: concept
+          text: 오류 코드
+        - url: installation_errors.md
+          itemType: concept
+          text: 설치 오류
 additionalContent:
   sections:
-  - title: 추가 리소스
-    summary: 추가 리소스 개발 문서 및 포럼에 대한 관련 링크를 찾습니다.
-    items:
-    - title: 내부에서 외부로 추적
-      summary: 내부에서 외부로 추적의 작동 방식 알아보기
-      url: tracking-system.md
-    - title: 혼합 현실 소프트웨어 개요
-      summary: 혼합 현실 소프트웨어 개요 및 릴리스 기록
-      url: mixed-reality-software.md
-    - title: Windows Mixed Reality에서 개발
-      summary: 개발 및 디자인 설명서
-      url: /windows/mixed-reality/develop/development?tabs=unity
-  footer: 사이트에 문제가 있습니까? [저희에게 알려주세요.](https://forums.hololens.com/categories/using-windows-mixed-reality)
+    - title: 추가 리소스
+      summary: 추가 리소스 개발 문서 및 포럼에 대한 관련 링크를 찾습니다.
+      items:
+        - title: 내부에서 외부로 추적
+          summary: 내부에서 외부로 추적의 작동 방식 알아보기
+          url: tracking-system.md
+        - title: 혼합 현실 소프트웨어 개요
+          summary: 혼합 현실 소프트웨어 개요 및 릴리스 기록
+          url: mixed-reality-software.md
+        - title: Windows Mixed Reality에서 개발
+          summary: 개발 및 디자인 설명서
+          url: /windows/mixed-reality/develop/development?tabs=unity
+  footer: 'Found a problem on our site? [Let us know!](https://forums.hololens.com/categories/using-windows-mixed-reality)'
