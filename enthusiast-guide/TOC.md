@@ -22,8 +22,8 @@
 ### [WebVR이란?](webvr.md)
 ### [Windows Mixed Reality 사용 FAQ](using-wmr-faq.yml)
 
-## 문제 해결 및 FAQ
-### [FAQ 개요](troubleshooting-windows-mixed-reality.md)
+## 지원 및 도움말 옵션
+### [Windows Mixed Reality에서 문제 해결](troubleshooting-windows-mixed-reality.md)
 ### [버그 및 피드백 신고](filing-feedback.md)
 ### [오류 코드](error-codes.md)
 ### [설치 오류](installation_errors.md)
@@ -37,7 +37,7 @@
 ### [SteamVR](steamvr-questions.md)
 ### [추적 시스템](tracking.md)
 ### [WebVR](webvr-questions.md)
-### [기타 질문](other-questions.md)
+### [몰입형 하드웨어 FAQ](other-questions.md)
 ### [HP Reverb G2 FAQ](reverbG2-faq.yml)
 
 ## 리소스

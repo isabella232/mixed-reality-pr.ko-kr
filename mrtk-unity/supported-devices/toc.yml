@@ -4,6 +4,8 @@
   href: oculus-quest-mrtk.md
 - name: Leap Motion 사용
   href: leap-motion-mrtk.md
+- name: MRTK에서 컨트롤러 검색
+  href: controllers-mrtk.md
 - name: AR Foundation 사용
   href: using-ar-foundation.md
 - name: 플랫폼 기능 검색
