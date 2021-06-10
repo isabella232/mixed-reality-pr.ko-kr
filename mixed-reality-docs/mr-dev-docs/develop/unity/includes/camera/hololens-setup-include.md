@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 7470690a96380184ead7319d4461005042c6db82
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 6e751f5376110ddc6ae92c75b4182fba8240a356
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636321"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110748489"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-이 단계별 [자습서](../../tutorials/mr-learning-base-01.md) 에 따라 Unity 프로젝트에서 Mixed Reality Toolkit을 추가 하 고 자동으로 구성 합니다. 또한 [MixedRealityPlayspace](https://docs.microsoft.com/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) 클래스에서 Unity를 사용 하 여 직접 작업 하 고 **대상 규모** 를 **세계** 로 설정할 수 있습니다.
+이 단계별 [자습서](../../tutorials/mr-learning-base-01.md) 에 따라 Unity 프로젝트에서 Mixed Reality Toolkit을 추가 하 고 자동으로 구성 합니다. 또한 [MixedRealityPlayspace](/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) 클래스에서 Unity를 사용 하 여 직접 작업 하 고 **대상 규모** 를 **세계** 로 설정할 수 있습니다.
 
 ![MRTK 설정 창](../../images/mrtk-target-scale.png)
 

@@ -1,17 +1,17 @@
 ---
 title: 빌보딩 및 태그얼롱
-description: Billboarding에서 개체를 사용 하는 방법에 대해 알아봅니다 .이는 항상 혼합 현실 응용 프로그램에서 사용자에 게 직면 하 게 됩니다.
+description: 혼합 현실 애플리케이션에서 사용자를 상대하도록 항상 지향하는 개체를 사용하는 방법을 알아봅니다.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, billboarding, 태그 동반, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 48c7aa28217a38c6c226b65a6e16ed7c950cec59
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Windows Mixed Reality, 스트래핑, 태그 따라, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 0bd1ac2168284d714240c6775468a61ed3e665b8
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299888"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600342"
 ---
 # <a name="billboarding-and-tag-along"></a>빌보딩 및 태그얼롱
 
@@ -20,37 +20,37 @@ ms.locfileid: "107299888"
 <img src="images/MRTK_TagAlong.gif" alt="HoloLens perspective of a menu system that always faces the user" width="940px">
 <br>
 
-## <a name="what-is-billboarding"></a>Billboarding 란?
+## <a name="what-is-billboarding"></a>가장이란?
 
-Billboarding는 혼합 현실에서 개체에 적용할 수 있는 동작 개념입니다. Billboarding를 사용 하는 개체는 항상 사용자를 대상으로 합니다. 텍스트 및 메뉴 시스템은 사용자의 환경에 배치 된 정적 개체 (세계에서 잠김)를 사용 하는 경우 사용자가 이동할 때 보이지 않거나 읽을 수 없게 되는 일반적인 사용 사례입니다.
+복습은 혼합 현실의 개체에 적용할 수 있는 동작 개념입니다. 싱이 있는 개체는 항상 사용자를 향하도록 방향을 정합니다. 텍스트 및 메뉴 시스템은 일반적인 사용 사례로, 사용자의 환경에 배치된 정적 개체(세계 잠금)는 사용자가 이동할 때 가려지거나 읽을 수 없게 됩니다.
 
-Billboarding를 사용 하는 개체는 사용자 환경에서 자유롭게 회전할 수 있습니다. 디자인 고려 사항에 따라 단일 축으로 제한 될 수도 있습니다. Billboarded 개체는 다른 개체에 너무 가까이 배치 되거나 HoloLens에 스캔 된 표면이 너무 가까이 있을 때 클리핑 또는 려 수 있습니다. 이를 방지 하려면 billboarding에 대해 사용 하도록 설정 된 축에서 회전할 때 개체가 생성할 수 있는 총 공간을 고려해 야 합니다.
-
-<br>
-
----
-## <a name="what-is-a-tag-along"></a>태그의 정의
-
-태그 동반은 holograms에 추가할 수 있는 동작 개념입니다. 태그 동반 개체는 사용자가 편안 하 게 상호 작용할 수 있도록 범위를 유지 하려고 합니다.
-
-![HoloLens 핀 패널은 태그 동반 동작을 보여 주는 좋은 예입니다.](images/tagalong-1000px.jpg)<br>
-*HoloLens 시작 메뉴는 태그 동반 동작의 좋은 예입니다.*
-
-태그를 포함 하는 개체에는 매개 변수가 있습니다 .이 매개 변수를 통해 동작 방식을 세밀 하 게 조정할 수 있습니다. 사용자가 자신의 환경에서 이동 하는 동안 사용자의 시야에 콘텐츠를 배치 하거나 축소할 수 있습니다. 이동할 때 콘텐츠는 뷰의 가장자리를 향해 이동 하 여 사용자의 주변 내에 유지 하려고 합니다. 콘텐츠는 사용자가 이동 하는 속도에 따라 일시적으로 표시 되지 않을 수 있습니다. 사용자가 태그를 따라 개체를 gazes 하는 경우에는 더 자세히 볼 수 있습니다. 콘텐츠를 항상 "한 눈에 파악" 하는 것은 사용자에 게 콘텐츠가 있는 방향을 잊지 않도록 하는 것입니다.
-
-추가 매개 변수를 사용 하면 사용자의 헤드에 대 한 태그 동반 개체 느낌을 고무 띠로 만들 수 있습니다. 완충 가속 또는 감속은 개체에 대 한 가중치를 제공 하 여 더 물리적으로 표시 되도록 합니다. 이 스프링 동작은 사용자가 태그를 사용 하는 방법에 대 한 정확한 멘 탈 모델을 빌드하는 데 도움이 되는 affordance입니다. 오디오는 사용자가 태그를 함께 사용 하는 경우 다른 큐를 제공 하는 데 도움이 됩니다. 오디오는 이동 속도를 보강 해야 합니다. 고속 헤드 턴은 보다 눈에 띄는 음향 효과를 제공 하 고, 자연 스러운 속도로 이동 하려면 오디오 효과를 최소화 해야 합니다.
-
-진정한 헤드 잠금 콘텐츠와 마찬가지로 태그를 사용 하는 개체는 사용자의 뷰에서 무분별 또는 스프링을 너무 많이 이동 하는 경우 과도 하 게 또는 nauseating을 입증할 수 있습니다. 사용자가이를 확인 한 후 신속 하 게 중지 하면 해당 사용자가 중지 된 것을 알 수 있습니다. 잔액은 헤드를 중지 하 고 세계에서 중단을 확인 하는 것을 알립니다. 그러나 사용자가 중지 되었을 때 태그를 따라 이동 하는 경우에는 해당 사용자의 감지를 혼동할 수 있습니다.
+래핑이 활성화된 개체는 사용자 환경에서 자유롭게 회전할 수 있습니다. 디자인 고려 사항에 따라 단일 축으로 제한될 수도 있습니다. 다른 개체에 너무 가까이 배치하거나 HoloLens에서 스캔된 표면을 너무 가깝게 배치하면 비추는 개체가 자신을 잘라내거나 폐색할 수 있습니다. 이를 방지하려면 축에서 회전할 때 개체가 생성할 수 있는 총 공간을 생각해야 합니다.
 
 <br>
 
 ---
+## <a name="what-is-a-tag-along"></a>태그가란?
 
-## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Billboarding 및 태그-Unity 용 MRTK (혼합 현실 도구 키트)
-**[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 는 Billboarding 및 태그 동반 동작에 대 한 스크립트를 제공 합니다. Billboarding 동작을 추가 하 고 개체에 항상 직면 하도록 하려면 모든 개체에 빌보드 스크립트를 할당 합니다. 태그 동반 동작을 추가 하려면 RadialView 스크립트를 사용 합니다. Lerping 시간, 거리, 학위 등의 다양 한 옵션을 조정할 수 있습니다.
+태그는 홀로그램에 추가할 수 있는 동작 개념입니다. 태그 따라 개체는 사용자가 편안하게 상호 작용할 수 있는 범위에 유지하려고 합니다.
 
-* [MRTK-방사형 보기 해 찾기](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#radialview)
-* [MRTK-빌보드 스크립트](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
+![HoloLens 핀 패널은 태그가 함께 작동하는 방식의 좋은 예입니다.](images/tagalong-1000px.jpg)<br>
+*HoloLens 시작 메뉴 태그 따라 동작의 좋은 예입니다.*
+
+태그 따라 개체에는 동작 방식을 미세 조정할 수 있는 매개 변수가 있습니다. 사용자가 환경을 이동하는 동안 콘텐츠는 사용자의 시야 안이나 외부에 있을 수 있습니다. 이동하면 콘텐츠가 보기의 가장자리 쪽으로 밀어 사용자의 주변을 유지하려고 합니다. 사용자가 이동하는 빈도에 따라 콘텐츠가 일시적으로 보기에서 벗어날 수 있습니다. 사용자가 태그 따라 개체를 응시할 때 더 완벽하게 표시됩니다. 콘텐츠는 항상 "한눈에 보기"라고 생각하므로 사용자는 콘텐츠의 방향을 절대 잊어버리지 않습니다.
+
+추가 매개 변수는 태그와 함께 개체가 밴드에 의해 사용자의 헤드에 연결된 느낌을 줄 수 있습니다. 가속 또는 감속을 강화하면 개체에 가중치가 부여되어 물리적으로 더 많은 느낌을 줍니다. 이 봄 동작은 태그가 작동하는 방식에 대한 정확한 멘탈 모델을 작성하는 데 도움이 되는 어패던스입니다. 오디오는 사용자가 태그 따라 모드에서 개체가 있는 경우에 대한 다른 신호를 제공하는 데 도움이 됩니다. 오디오는 이동 속도를 강화해야 합니다. 빠른 헤드 턴이 더 눈에 띄는 음향 효과를 제공해야 하는 반면, 자연스러운 속도로 복습하는 경우 오디오 효과를 최소화하거나 전혀 영향을 미치지 않아야 합니다.
+
+실제로 헤드 잠금된 콘텐츠와 마찬가지로 태그를 따라 이동한 개체는 사용자의 보기에서 너무 많이 이동하거나 너무 많이 움직이면 너무 많이 또는 움갈리게 될 수 있습니다. 사용자가 주변을 둘러본 후 빠르게 중지하면 해당 감지는 중지되었다고 알려줍니다. 이들의 균형은 머리의 회전이 중지되고 비전이 전 세계의 회전을 중지한다는 것을 알립니다. 그러나 사용자가 중지되었을 때 태그가 계속 이동하면 인식이 혼동될 수 있습니다.
+
+<br>
+
+---
+
+## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity용 MRTK(Mixed Reality Toolkit)의 스트리밍 및 태그
+**[MRTK는](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 스트링 및 태그 따라 동작에 대한 스크립트를 제공합니다. Object.cs 스크립트를 개체에 할당하여 동작을 추가하고 개체가 항상 사용자를 향하도록 합니다. 태그 따라 동작을 추가하려면 RadialView.cs 스크립트를 사용합니다. lerping time, distance 및 degree와 같은 다양한 옵션을 조정할 수 있습니다.
+
+* [MRTK - 방사형 뷰 해결기](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#radialview)
+* [MRTK - 스크립트](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
 
 
 <br>

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: 제스처, unity, 응시, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 523f05f9b3dd05a140bb40168b654a2dc0b00bb5
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 87666c120686547b1a07f6da41519219d4a47720
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299718"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600642"
 ---
 # <a name="gestures-in-unity"></a>Unity의 제스처
 
@@ -135,8 +135,8 @@ Throw는 향후 Windows 업데이트를 사용 하 여 계속 개선 되며 여�
 
 입력 관리자에서 제스처 및 동작 컨트롤러에 액세스할 수 있습니다.
 
-* [MRTK의 제스처](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/gestures)
-* [MRTK의 동작 컨트롤러](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/controllers)
+* [MRTK의 제스처](/windows/mixed-reality/mrtk-unity/features/input/gestures)
+* [MRTK의 동작 컨트롤러](/windows/mixed-reality/mrtk-unity/features/input/controllers)
 
 ## <a name="follow-along-with-tutorials"></a>안내 따르기
 

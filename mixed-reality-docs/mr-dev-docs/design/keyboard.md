@@ -1,31 +1,31 @@
 ---
 title: 키보드
-description: 혼합 현실 도구 키트를 사용 하 여 시스템 키보드를 호출 하 고 사용 하는 방법을 알아봅니다.
+description: Mixed Reality 도구 키트를 사용하여 시스템 키보드를 호출하고 사용하는 방법을 알아봅니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 키보드, MRTK, 혼합 현실 도구 키트
-ms.openlocfilehash: d20fabb2536b028ce4c48aac84592bbdc3a0c291
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Mixed Reality, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 키보드, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 096a408a8106ec5ee6a820865e158c3cd019f702
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300438"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600142"
 ---
 # <a name="keyboard"></a>키보드
 
 ![키보드](images/UX_Hero_Keyboard.jpg)
 
-혼합 현실 응용 프로그램은 언제 든 지 시스템 키보드를 호출할 수 있으며,이는 대상 플랫폼의 기능에 따라 동작 합니다. 예를 들어 HoloLens 2의 키보드는 직접 상호 작용을 지원 하는 반면 HoloLens (첫 번째 gen) 키보드는 응시 및 공기 탭을 지원 합니다.
+혼합 현실 애플리케이션은 대상 플랫폼의 기능에 따라 동작하는 시스템 키보드를 언제든지 호출할 수 있습니다. 예를 들어 HoloLens 2 키보드는 직접 손 상호 작용을 지원하지만 HoloLens(1세대) 키보드는 응시 및 에어 탭을 지원합니다.
 
 <br>
 
 ---
 
-## <a name="system-keyboard-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 시스템 키보드
+## <a name="system-keyboard-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity용 MRTK(Mixed Reality Toolkit)의 시스템 키보드
 
-* [MRTK-시스템 키보드](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/system-keyboard)
+* [MRTK - 시스템 키보드](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/system-keyboard)
 
 <br>
 
@@ -33,10 +33,10 @@ ms.locfileid: "107300438"
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 소개한 Unity 개발 경험을 팔로 하는 경우 다음 작업은 장치 또는 에뮬레이터에 응용 프로그램을 배포 하는 것입니다.
+배치한 Unity 개발 여정을 수행하는 경우 다음 작업은 디바이스 또는 에뮬레이터에 애플리케이션을 배포하는 것입니다.
 
 > [!div class="nextstepaction"]
-> [HoloLens 또는 Windows Mixed Reality 몰입 형 헤드셋에 배포](../develop/platform-capabilities-and-apis/using-visual-studio.md)
+> [HoloLens 또는 Windows Mixed Reality 몰입형 헤드셋에 배포](../develop/platform-capabilities-and-apis/using-visual-studio.md)
 
 ## <a name="see-also"></a>참조
 

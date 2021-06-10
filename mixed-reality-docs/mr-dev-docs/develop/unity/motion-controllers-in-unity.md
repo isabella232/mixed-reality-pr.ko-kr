@@ -1,78 +1,78 @@
 ---
-title: Unity의 동작 컨트롤러
-description: XR 및 일반 단추 및 축 Api를 사용 하 여 동작 컨트롤러 입력을 통해 Unity에서 작업을 수행 하는 방법에 대해 알아봅니다.
+title: Unity의 모션 컨트롤러
+description: XR 및 공통 단추 및 축 API를 사용하여 모션 컨트롤러 입력을 사용하여 Unity에서 응시에 대한 조치를 취하는 방법을 알아봅니다.
 author: hferrone
 ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
-keywords: 동작 컨트롤러, unity, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: d3df49c2f6c626e9f4eb47c38f4a8e61059a8438
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: 모션 컨트롤러, unity, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: ff1eedcc337edd2d7edfe8d961bb88bcb859cd23
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300478"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743483"
 ---
-# <a name="motion-controllers-in-unity"></a>Unity의 동작 컨트롤러
+# <a name="motion-controllers-in-unity"></a>Unity의 모션 컨트롤러
 
-HoloLens의 [손으로](../../design/gaze-and-commit.md#composite-gestures) 는 [Unity](gaze-in-unity.md)에서 작업을 수행 하는 두 가지 주요 방법, 그리고 HOLOLENS 및 몰입 형 HMD의 [동작 컨트롤러](../../design/motion-controllers.md) 를 사용할 수 있습니다. Unity에서 동일한 Api를 통해 두 공간 입력 원본에 대 한 데이터에 액세스할 수 있습니다.
+HoloLens 및 몰입형 HMD에서 Unity , [손 제스처](../../design/gaze-and-commit.md#composite-gestures) 및 [모션 컨트롤러의](../../design/motion-controllers.md) [응시에](gaze-in-unity.md)대한 작업을 수행하려면 두 가지 주요 방법이 있습니다. Unity에서 동일한 API를 통해 공간 입력의 두 원본에 대한 데이터에 액세스합니다.
 
-Unity는 Windows Mixed Reality의 공간 입력 데이터에 액세스 하는 두 가지 기본 방법을 제공 합니다. 일반적인 *입력. GetButton/Input. Getbutton* api는 여러 Unity XR sdk에서 작동 하는 반면, Windows Mixed Reality와 관련 된 *InteractionManager/GestureRecognizer* api는 전체 공간 입력 데이터 집합을 제공 합니다.
+Unity는 Windows Mixed Reality 공간 입력 데이터에 액세스하는 두 가지 기본 방법을 제공합니다. 일반적인 *Input.GetButton/Input.GetAxis* API는 여러 Unity XR SDK에서 작동하지만, Windows Mixed Reality 특정 *InteractionManager/GestureRecognizer* API는 공간 입력 데이터의 전체 집합을 노출합니다.
 
-## <a name="unity-xr-input-apis"></a>Unity XR 입력 Api
+## <a name="unity-xr-input-apis"></a>Unity XR 입력 API
 
-새 프로젝트의 경우 처음부터 새 XR 입력 Api를 사용 하는 것이 좋습니다. 
+새 프로젝트의 경우 처음부터 새 XR 입력 API를 사용하는 것이 좋습니다. 
 
-[XR api](https://docs.unity3d.com/Manual/xr_input.html)에 대 한 자세한 내용은 여기에서 찾을 수 있습니다.
+[XR API에](https://docs.unity3d.com/Manual/xr_input.html)대한 자세한 내용은 에서 확인할 수 있습니다.
 
 ## <a name="unity-buttonaxis-mapping-table"></a>Unity 단추/축 매핑 테이블
 
-Unity의 Windows Mixed Reality의 입력 관리자 동작 컨트롤러는 *입력. getbutton/Getbutton* api를 통해 아래에 나열 된 단추 및 축 id를 지원 합니다. "Windows MR" 열은 *InteractionSourceState* 유형에 서 사용할 수 있는 속성을 나타냅니다. 이러한 각 Api에 대해서는 아래 섹션에서 자세히 설명 합니다.
+Unity의 Windows Mixed Reality 동작 컨트롤러용 Input Manager는 *Input.GetButton/GetAxis* API를 통해 아래에 나열된 단추 및 축 ID를 지원합니다. "Windows MR 관련" 열은 *InteractionSourceState* 형식에서 사용할 수 있는 속성을 나타냅니다. 이러한 각 API는 아래 섹션에 자세히 설명되어 있습니다.
 
-Windows Mixed Reality의 단추/축 ID 매핑은 일반적으로 Oculus 단추/축 Id와 일치 합니다.
+Windows Mixed Reality 대한 단추/축 ID 매핑은 일반적으로 Oculus 단추/축 ID와 일치합니다.
 
-Windows Mixed Reality의 단추/축 ID 매핑은 다음 두 가지 방법으로 OpenVR 매핑과 다릅니다.
-1. 이 매핑은 thumbsticks와 터치 패드를 모두 사용 하는 컨트롤러를 지원 하기 위해 엄지 스틱과는 다른 터치 패드 Id를 사용 합니다.
-2. 매핑은 메뉴 단추의 A 및 X 단추 Id를 오버 로드 하지 않고 실제 ABXY 단추에 사용할 수 있도록 합니다.
+Windows Mixed Reality 대한 단추/축 ID 매핑은 다음 두 가지 방법으로 OpenVR의 매핑과 다릅니다.
+1. 매핑은 엄지스틱과 구별되는 터치 패드 ID를 사용하여 엄지스틱과 터치패드를 모두 사용하는 컨트롤러를 지원합니다.
+2. 매핑은 메뉴 단추에 대한 A 및 X 단추의 ID를 오버로드하여 실제 ABXY 단추에 사용할 수 있도록 하는 것을 방지합니다.
 
 <table>
 <tr>
-<th rowspan="2">입력 </th><th colspan="2"><a href="motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis">일반 Unity API</a><br />(입력. GetButton/Getbutton) </th><th rowspan="2"><a href="motion-controllers-in-unity.md#windows-specific-apis-xrwsainput">Windows MR 특정 입력 API</a><br />XR. WSA. 입력</th>
+<th rowspan="2">입력 </th><th colspan="2"><a href="motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis">일반 Unity API</a><br />(Input.GetButton/GetAxis) </th><th rowspan="2"><a href="motion-controllers-in-unity.md#windows-specific-apis-xrwsainput">Windows MR 관련 입력 API</a><br />(XR. Wsa. 입력)</th>
 </tr><tr>
-<th> 왼쪽 </th><th> 오른쪽</th>
+<th> 왼손 </th><th> 오른쪽</th>
 </tr><tr>
-<td> 트리거를 선택 합니다. </td><td> 축 9 = 1.0 </td><td> 축 10 = 1.0 </td><td> selectPressed</td>
+<td> 트리거 누른 선택 </td><td> 축 9 = 1.0 </td><td> 축 10 = 1.0 </td><td> selectPressed</td>
 </tr><tr>
-<td> 아날로그 값 트리거를 선택 합니다. </td><td> 축 9 </td><td> 축 10 </td><td> Select보도 금액</td>
+<td> 트리거 아날로그 값 선택 </td><td> 축 9 </td><td> 축 10 </td><td> SelectPressedAmount</td>
 </tr><tr>
-<td> 부분적으로 누른 트리거 선택 </td><td> 단추 14 <i>(게임 패드 호환성)</i> </td><td> 단추 15 <i>(게임 패드 호환성)</i> </td><td> Select보도 Sedamount &gt; 0.0</td>
+<td> 트리거를 부분적으로 누른 경우 선택 </td><td> 단추 <i>14(게임 패드 호환성)</i> </td><td> 단추 <i>15(게임 패드 호환성)</i> </td><td> selectPressedAmount &gt; 0.0</td>
 </tr><tr>
-<td> 메뉴 단추 누름 </td><td> 단추 6 * </td><td> 단추 7 * </td><td> menuPressed</td>
+<td> 메뉴 단추를 눌렀습니다. </td><td> 단추 6* </td><td> 단추 7* </td><td> menuPressed</td>
 </tr><tr>
-<td> 그립 단추 누름 </td><td> 축 11 = 1.0 (아날로그 값 없음)<br />단추 4 <i>(게임 패드 호환성)</i> </td><td> 축 12 = 1.0 (아날로그 값 없음)<br />단추 5 <i>(게임 패드 호환성)</i> </td><td> grasped</td>
+<td> 그립 단추를 눌렀습니다. </td><td> 축 11 = 1.0(아날로그 값 없음)<br />단추 <i>4(게임 패드 호환성)</i> </td><td> 축 12 = 1.0(아날로그 값 없음)<br />단추 <i>5(게임 패드 호환성)</i> </td><td> 파악</td>
 </tr><tr>
-<td> 엄지 스틱 X <i>(왼쪽:-1.0, 오른쪽: 1.0)</i> </td><td> 축 1 </td><td> 축 4 </td><td> thumbstickPosition</td>
+<td> Thumbstick <i>X(왼쪽: -1.0, 오른쪽: 1.0)</i> </td><td> 축 1 </td><td> 축 4 </td><td> thumbstickPosition.x</td>
 </tr><tr>
-<td> 엄지 스틱 Y <i>(위쪽:-1.0, 아래쪽: 1.0)</i> </td><td> 축 2 </td><td> 축 5 </td><td> thumbstickPosition</td>
+<td> Thumbstick <i>Y(top: -1.0, bottom: 1.0)</i> </td><td> 축 2 </td><td> 축 5 </td><td> thumbstickPosition.y</td>
 </tr><tr>
-<td> 엄지 스틱 누름 </td><td> 단추 8 </td><td> 단추 9 </td><td> thumbstickPressed</td>
+<td> Thumbstick 누른 경우 </td><td> 단추 8 </td><td> 단추 9 </td><td> thumbstickPressed</td>
 </tr><tr>
-<td> 터치 패드 X <i>(왼쪽:-1.0, 오른쪽: 1.0)</i> </td><td> 축 17 * </td><td> 축 19 * </td><td> touchpadPosition</td>
+<td> 터치 패드 <i>X(왼쪽: -1.0, 오른쪽: 1.0)</i> </td><td> 축 17* </td><td> 축 19* </td><td> touchpadPosition.x</td>
 </tr><tr>
-<td> 터치 패드 Y <i>(위쪽:-1.0, 아래쪽: 1.0)</i> </td><td> 축 18 * </td><td> 축 20 * </td><td> touchpadPosition</td>
+<td> 터치 패드 <i>Y(위쪽: -1.0, 아래쪽: 1.0)</i> </td><td> 축 18* </td><td> 축 20* </td><td> touchpadPosition.y</td>
 </tr><tr>
-<td> 터치 패드 작업 </td><td> 단추 18 * </td><td> 단추 19 * </td><td> touchpadTouched</td>
+<td> 터치 패드 터치 </td><td> 단추 18* </td><td> 단추 19* </td><td> touchpadTouched</td>
 </tr><tr>
-<td> 터치 패드 누름 </td><td> 단추 16 * </td><td> 단추 17 * </td><td> touchpadPressed</td>
+<td> 터치 패드 누른 </td><td> 단추 16* </td><td> 단추 17* </td><td> touchpadPressed</td>
 </tr><tr>
-<td> 6DoF 그립 포즈 또는 포인터 포즈 </td><td colspan="2"> <i>그립</i> 포즈만: <a href="https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html">XR. InputTracking. GetLocalPosition</a><br /><a href="https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalRotation.html">XR. InputTracking. GetLocalRotation</a></td><td> 전달 <i>그립</i> 또는 <i>포인터</i> 를 인수로 전달 합니다. sourcestate TryGetPosition<br />sourceState<br /></td>
+<td> 6DoF 그립 자세 또는 포인터 자세 </td><td colspan="2"> <i>그립</i> 자세만: <a href="https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html">XR. InputTracking.GetLocalPosition</a><br /><a href="https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalRotation.html">Xr. InputTracking.GetLocalRotation</a></td><td> <i>그립</i> 또는 <i>포인터를</i> 인수로 전달: sourceState.sourcePose.TryGetPosition<br />sourceState.sourcePose.TryGetRotation<br /></td>
 </tr><tr>
-<td> 상태 추적 </td><td colspan="2"> <i>MR 특정 API를 통해서만 사용할 수 있는 위치 정확도 및 원본 손실 위험</i> </td><td> <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionSourcePose-positionAccuracy.html">sourceState. positionAccuracy</a><br /><a href="https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionSourceProperties-sourceLossRisk.html">sourceLossRisk</a></td>
+<td> 추적 상태 </td><td colspan="2"> <i>MR별 API를 통해서만 사용할 수 있는 위치 정확도 및 원본 손실 위험</i> </td><td> <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionSourcePose-positionAccuracy.html">sourceState.sourcePose.positionAccuracy</a><br /><a href="https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionSourceProperties-sourceLossRisk.html">sourceState.properties.sourceLossRisk</a></td>
 </tr>
 </table>
 
 >[!NOTE]
->이러한 단추/축 Id는 gamepads, Oculus Touch 및 OpenVR에서 사용 하는 매핑의 충돌로 인해 Unity에서 OpenVR에 사용 하는 Id와 다릅니다.
+>이러한 단추/축 ID는 게임 패드, Oculus Touch 및 OpenVR에서 사용하는 매핑의 충돌로 인해 Unity에서 OpenVR에 사용하는 ID와 다릅니다.
 
 <!-- ### Using HP Reverb G2 controllers
 
@@ -102,21 +102,21 @@ If you're using the HP Reverb G2 controllers, refer to the table below for butto
 </table> -->
 
 
-## <a name="grip-pose-vs-pointing-pose"></a>그립 포즈 및 포인팅 포즈
+## <a name="grip-pose-vs-pointing-pose"></a>그립 자세와 포인팅 자세
 
-Windows Mixed Reality는 다양 한 폼 팩터에서 동작 컨트롤러를 지원 합니다. 각 컨트롤러의 디자인은 사용자의 손 위치와 앱이 컨트롤러를 렌더링할 때를 가리키는 데 사용 해야 하는 자연 스러운 "전달" 방향 간의 관계에 차이가 있습니다.
+Windows Mixed Reality 다양한 폼 팩터에서 모션 컨트롤러를 지원합니다. 각 컨트롤러의 디자인은 사용자의 손 위치와 앱이 컨트롤러를 렌더링할 때 가리키는 데 사용해야 하는 자연스러운 "앞으로" 방향 간의 관계가 다릅니다.
 
-이러한 컨트롤러를 더 잘 나타내기 위해 각 상호 작용 소스, **그립 포즈** 및 **포인터 포즈** 에 대해 조사할 수 있는 두 가지 종류의 포즈를 확인할 수 있습니다. 그립 포즈 및 포인터 포즈 좌표는 모두 전역 Unity 세계 좌표의 모든 Unity Api에 의해 표현 됩니다.
+이러한 컨트롤러를 더 잘 나타내기 위해 각 상호 작용 소스에 대해 조사할 수 있는 두 가지 종류의 자세인 **그립 자세와** **포인터 자세가** 있습니다. 그립 자세와 포인터 자세 좌표는 모두 전역 Unity 세계 좌표의 모든 Unity API로 표현됩니다.
 
-### <a name="grip-pose"></a>그립 포즈
+### <a name="grip-pose"></a>그립 자세
 
-**그립 포즈** 는 HoloLens에서 검색 되거나 동작 컨트롤러를 보유 하는 사용자 palm의 위치를 나타냅니다.
+**그립 자세는** HoloLens에서 감지하거나 모션 컨트롤러를 보유하는 사용자의 손무한 위치를 나타냅니다.
 
-몰입 형 헤드셋에서 그립 포즈는 사용자의 **손을** 만들거나 **사용자의 손을 보유 한 개체** 를 렌더링 하는 데 가장 적합 합니다. 그립 포즈는 동작 컨트롤러를 시각화할 때에도 사용 됩니다. 동작 컨트롤러에 대해 Windows에서 제공 하는 **렌더링할 모델** 은 그립 포즈를 원본 및 회전 중심으로 사용 합니다.
+몰입형 헤드셋에서 그립 자세는 **사용자의 손** 또는 사용자의 **손 에 보관된 개체를 렌더링하는** 데 가장 적합합니다. 그립 자세는 모션 컨트롤러를 시각화할 때도 사용됩니다. 동작 컨트롤러에 대해 Windows에서 제공하는 **렌더링 가능한 모델은** 그립 자세를 회전의 원점과 중심으로 사용합니다.
 
-그립 포즈는 구체적으로 다음과 같이 정의 됩니다.
-* **그립 위치**: 컨트롤러를 자연스럽 게 유지 하는 경우 왼쪽 또는 오른쪽으로 조정 하 여 그립 내 위치를 가운데에 맞춥니다. Windows Mixed Reality 동작 컨트롤러에서이 위치는 일반적으로 보통 클릭 단추와 맞춥니다.
-* **그립 방향 오른쪽 축**: 손 모양 5 손가락 포즈를 형성 하는 손을 완전히 열 때 palm (왼쪽 야자나무에서 오른쪽으로 뒤로)의 광선을 만듭니다.
+그립 자세는 다음과 같이 구체적으로 정의됩니다.
+* **그립 위치:** 컨트롤러를 자연스럽게 보유할 때의 손만 중심으로, 그립 내의 위치를 가운데에 맞도록 왼쪽 또는 오른쪽으로 조정됩니다. Windows Mixed Reality 모션 컨트롤러에서 이 위치는 일반적으로 이해 단추에 맞춥니다.
+* **그립 방향의 오른쪽 축:** 손을 완전히 열어 플랫 5 손가락 자세를 형성하면 손끝에 정상인 광선(왼쪽 손끝에서 앞으로, 오른쪽 손끝에서 뒤로)입니다.
 * **그립 방향 전방 축: 핸들** 을 부분적으로 (컨트롤러를 보유 하는 것 처럼) 닫는 경우 비 엄지 손가락으로 형성 된 튜브를 통해 "전달" 하는 광선이 표시 됩니다.
 * **그립 방향 up 축**: 오른쪽 및 전방 정의에 의해 암시 된 위쪽 축입니다.
 
@@ -138,11 +138,11 @@ Unity의 교차 공급 업체 입력 API (XR)를 통해 그립 포즈에 액세�
 
 이 시점에서 시스템은 컨트롤러를 사용자에 게 본문 잠금을 설정 하 고, 이동 하는 동안 사용자의 위치를 추적 하 고, 내부 방향 센서를 사용 하 여 컨트롤러의 실제 방향을 계속 노출 합니다. 컨트롤러를 사용 하 여 UI 요소를 가리키고 활성화 하는 많은 앱이 정상적으로 작동 하 고, 사용자가 모르게 정확한 정확도를 사용할 수 있습니다.
 
-이를 위한 가장 좋은 방법은 직접 시도해 보는 것입니다. 다양 한 추적 상태에서 동작 컨트롤러와 함께 작동 하는 몰입 형 콘텐츠 예제를 통해이 비디오를 확인 하세요.
+<!-- The best way to get a feel for this is to try it yourself. Check out this video with examples of immersive content that works with motion controllers across various tracking states:
 
 <br>
 
- >[!VIDEO https://www.youtube.com/embed/QK_fOFDHj0g]
+ >[!VIDEO https://www.youtube.com/embed/QK_fOFDHj0g] -->
 
 ### <a name="reasoning-about-tracking-state-explicitly"></a>명시적 추적 상태에 대 한 추론
 
@@ -436,7 +436,7 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 
 ## <a name="motion-controllers-in-mrtk"></a>MRTK의 동작 컨트롤러
 
-입력 관리자에서 [제스처 및 동작 컨트롤러](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/controllers) 에 액세스할 수 있습니다.
+입력 관리자에서 [제스처 및 동작 컨트롤러](/windows/mixed-reality/mrtk-unity/features/input/controllers) 에 액세스할 수 있습니다.
 
 ## <a name="follow-along-with-tutorials"></a>안내 따르기
 

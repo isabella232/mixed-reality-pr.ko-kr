@@ -1,26 +1,35 @@
 ---
-title: Hololens 및 WMR 디바이스에 배포
+title: Hololens 및 WMR 헤드셋에 배포
 description: 다양한 디바이스에 앱을 빌드하고 배포하기 위한 설명서입니다.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, Visual Studio
-ms.openlocfilehash: ec66c6ccb8cf1c702fed804230f5cf3ca0526139
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: 1547f0630d307e9e87505890adef4cad366d6c00
+ms.sourcegitcommit: 4c1dd5c22af69eeb192425118c2bfb95344b8dd9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852442"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110441152"
 ---
-# <a name="building-and-deploying-mrtk-uwp"></a>MRTK(UWP) 빌드 및 배포
+# <a name="deploying-to-hololens-and-wmr-headsets"></a>Hololens 및 WMR 헤드셋에 배포
 
-디바이스에서 앱을 독립 실행형 앱(HoloLens, Android, iOS 등)으로 실행하려면 Unity 프로젝트에서 빌드 및 배포 단계를 실행해야 합니다. MRTK를 사용하는 앱을 빌드하고 배포하는 것은 다른 Unity 앱을 빌드하고 배포하는 것과 같습니다. MRTK 관련 지침은 없습니다. HoloLens용 Unity 앱을 빌드하고 배포하는 방법에 대한 자세한 단계를 보려면 아래를 참조하세요. [빌드 게시](https://docs.unity3d.com/Manual/PublishingBuilds.html)에서 다른 플랫폼용 빌드에 대해 자세히 알아보세요.
+MRTK를 사용 하 여 빌드된 응용 프로그램을 windows 장치, UWP (유니버설 Windows Platform) 및 독립 실행형 플랫폼에 배포 하는 방법에는 두 가지가 있습니다. HoloLens 1 또는 HoloLens 2 용으로 빌드된 응용 프로그램은 UWP를 대상으로 해야 하지만 WMR 헤드셋 용으로 빌드된 응용 프로그램은 UWP 또는 독립 실행형을 대상으로 할 수 있습니다.
 
-## <a name="building-and-deploying-mrtk-to-hololens-1-hololens-2-and-wmr-headsets-uwp"></a>HoloLens 1, HoloLens 2 및 WMR 헤드셋(UWP)에 MRTK 빌드 및 배포
+## <a name="building-and-deploying-mrtk-to-hololens-1-hololens-2-and-wmr-headsets-uwp"></a>HoloLens 1, HoloLens 2 및 WMR 헤드셋 (UWP)으로 MRTK 빌드 및 배포
 
-**HoloLens 1** 및 UWP(HoloLens 2)에 대한 빌드 및 배포 방법에 대한 지침은 [디바이스에 애플리케이션을 빌드할](/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device)때 찾을 수 있습니다.  이러한 단계를 통해 **WMR 헤드셋** 에 배포할 수도 있습니다.
+**Hololens 1** 및 **hololens** 를 빌드하는 방법에 대 한 지침은 [장치에 대 한 응용 프로그램](/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device)빌드에서 찾을 수 있습니다. 이러한 단계를 통해 **WMR 헤드셋** 에 배포할 수도 있습니다.
 
-**팁:** HoloLens 1, HoloLens 2 또는 WMR용으로 빌드할 때 빌드 설정 "대상 SDK 버전" 및 "최소 플랫폼 버전"은 아래 그림과 같이 보이는 것이 좋습니다.
+> [!NOTE]
+> Visual Studio에서 장치에 응용 프로그램을 배포 하는 경우 장치에 따라 Visual Studio를 약간 다르게 구성 해야 합니다. 구성은 다음과 같습니다.
+>
+>| 플랫폼 | Configuration | 아키텍처 | 대상 |
+|---|---|---|---|
+| HoloLens 2 | 릴리스 또는 마스터 | ARM64 | 디바이스 |
+| HoloLens 1 | 릴리스 또는 마스터 | x86 | 디바이스 |
+| WMR 헤드셋 | 릴리스 또는 마스터 | X64 | 로컬 컴퓨터 |
+
+**팁:** HoloLens 1, HoloLens 2 또는 WMR에 대해 빌드할 때 빌드 설정 "대상 SDK 버전" 및 "최소 플랫폼 버전"은 아래 그림에 나와 있는 것 처럼 보입니다.
 
 ![빌드 창](../features/images/getting-started/BuildWindow.png)
 
@@ -50,7 +59,7 @@ XR-Plugin을 사용하는 경우:
 >
 > ARM 아키텍처가 필요한 경우 **편집 > 프로젝트 설정, 플레이어** 로 이동하고 **기타 설정** 메뉴에서 **그래픽 작업** 을 사용하지 않도록 설정합니다. **그래픽 작업** 을 사용하지 않도록 설정하면 앱이 Unity 2019.3.x용 ARM 빌드 아키텍처를 사용하여 배포할 수는 있지만 ARM64가 권장됩니다.
 
-## <a name="building-and-deploying-mrtk-standalone"></a>MRTK 빌드 및 배포(독립 실행형)
+## <a name="building-and-deploying-mrtk-to-wmr-headsets-standalone"></a>WMR 헤드셋에 MRTK 빌드 및 배포 (독립 실행형)
 
 WMR 헤드셋에서 MRTK의 독립 실행형 빌드를 사용할 수 있습니다. WMR 헤드셋에 대한 독립 실행형 빌드를 사용하려면 다음과 같은 추가 단계가 필요합니다.
 

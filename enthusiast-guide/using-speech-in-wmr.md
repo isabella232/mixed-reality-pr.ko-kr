@@ -1,94 +1,94 @@
 ---
-title: Windows Mixed Reality에서 음성 사용
-description: 음성 입력을 사용 하 여 Windows Mixed Reality 앱에서 명령, 3D 개체 및 받아쓰기를 제어 하는 방법을 알아봅니다.
+title: Windows Mixed Reality 음성 사용
+description: 음성 입력을 사용하여 Windows Mixed Reality 앱에서 명령, 3D 개체 및 받아쓰기를 제어하는 방법을 알아봅니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
 ms.topic: article
-keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 사용자 의견, 피드백 허브, 버그
+keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, 피드백, 피드백 허브, 버그
 appliesto:
 - Windows 10
-ms.openlocfilehash: 0254b7c4ac6a9602517adb3d9e5c024ebd69db4e
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: 23e3ea9014612d5df8935552d7b767454b9eefa7
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944680"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647026"
 ---
-# <a name="using-speech-in-windows-mixed-reality"></a>Windows Mixed Reality에서 음성 사용
+# <a name="using-speech-in-windows-mixed-reality"></a>Windows Mixed Reality 음성 사용
 
-음성을 사용 하 여 Windows Mixed Reality를 빠르게 파악할 수 있습니다. 앱을 여는 것은 빠른 사진을 열고 컨트롤러 없이도 teleporting. 쉽게 입력 하는 방법에 대해 mixed reality 키보드에서 받아쓰기 모드를 시도 합니다. 
+음성을 사용하여 더 빠르게 Windows Mixed Reality 수 있습니다. 빠른 사진을 찍고, 앱을 열고, 컨트롤러 없이 원격으로 전송하는 것도 한마디로 사라지게 됩니다. 쉽게 입력하려면 혼합 현실 키보드에서 받아쓰기 모드를 사용해 보세요. 
 
 음성에 문제가 있나요? [도움말 보기](using-wmr-faq.yml#speech-commands-aren-t-working)
 
 <!-- NEED VIDEO: https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality -->
 
 > [!NOTE]
-> * 음성이 켜 졌을 때 Windows Mixed Reality는 항상 수신 대기 합니다. 인터넷에 연결 되어 있는 경우 Microsoft speech services가 훨씬 더 많은 명령을 인식할 수 있도록 클라우드로 모든 것을 보냅니다.
-> * 음성 명령은 일부 언어에서 지원 되지 않습니다. 자세한 정보
-> * Windows Mixed Reality에서는 Bluetooth 헤드셋 및 스피커가 지원 되지 않습니다.
+> * 음성이 켜져 있으면 Windows Mixed Reality 항상 수신 대기합니다. 인터넷에 연결된 경우 Microsoft 음성 서비스에서 더 많은 명령을 인식할 수 있도록 모든 것을 클라우드로 보냅니다.
+> * 음성 명령은 모든 언어에서 지원되지 않습니다. 자세한 정보
+> * Bluetooth 헤드셋 및 스피커는 Windows Mixed Reality 지원되지 않습니다.
 
 ## <a name="see-it-say-it"></a>보기, 말하기
 
-Windows Mixed Reality 홈에서 단어가 표시 되는 경우 자주 음성 명령으로 사용할 수 있습니다. 예를 들어 단추 이름을 클릭 하 여 선택 하면 됩니다. 이름이 표시 되지 않는 경우 단추에서 동작 컨트롤러를 가리켜 표시 될 내용을 확인 합니다. Xbox gamepads의 경우 단추를 클릭 합니다.
+Windows Mixed Reality 홈에 단어가 표시되면 종종 음성 명령으로 사용할 수 있습니다. 예를 들어 단추를 선택하려면 단추의 이름을 말하면 입니다. 이름이 표시되지 않으면 동작 컨트롤러가 단추를 가리키도록 하여 무엇을 말해야 하는지 확인합니다. Xbox 게임 패드의 경우 단추를 응시합니다.
 
 ## <a name="general-speech-commands"></a>일반 음성 명령
 
-Windows Mixed Reality에서 다음 음성 명령을 사용 하면 보다 빠르게 해결할 수 있습니다. 일부 명령은 "select" 라고 표시 하는 응시 커서를 사용 합니다.
+Windows Mixed Reality 전체에서 다음 음성 명령을 사용하여 더 빠르게 탐색할 수 있습니다. 일부 명령은 응시 커서를 사용합니다. 이 커서는 "select"라고 말하여 표시합니다.
 
-| 원하는 작업 | 예 |
+| 원하는 작업 | 다음을 가정해 봅시다. |
 | --- | --- |
-| 선택 | "선택"을 클릭 하 여 응시 커서를 표시 합니다. 그런 다음 원하는 위치에 커서를 배치 하 고 다시 "선택" 한다고 표시 되도록 헤드를 설정 합니다. |
-| 시작 메뉴 열기 | 시작으로 이동 |
-| 몰입 형 앱 나가기 | "시작으로 이동"을 클릭 하 여 빠른 작업 메뉴를 표시 한 다음 "Mixed reality 홈" 이라고 말할 수 있습니다. |
-| 손전등 설정/해제 | "시작으로 이동"을 클릭 하 여 빠른 작업 메뉴를 표시 한 다음 "Mixed reality 홈" 이라고 말할 수 있습니다. |
-| 하세요 | 원하는 위치에 맞게 헤드를 전환 하 고 "텔레포트" 라고 합니다. (보다 정확한 대상을 지정 하려면 먼저 "선택"을 클릭 하 여 응시 커서를 표시 한 다음 "텔레포트" 라고 말합니다. |
-| 왼쪽 또는 오른쪽으로 전환 | 왼쪽/오른쪽으로 설정 |
-| 180도 설정 | 뒤돌아 보세요 |
-| 앞으로 이동 | 앞으로/앞으로 이동 |
-| 백업 | 뒤로 이동/탐색 |
-| 왼쪽으로 이동 | 왼쪽/왼쪽으로 이동 |
+| 선택 | 응시 커서를 표시하려면 "select"라고 말합니다. 그런 다음, 머리로 커서를 선택하려는 위치에 놓고 "select"라고 다시 말합니다. |
+| 시작 메뉴 열기 | Go to Start |
+| 몰입형 앱 나가기 | "Go to Start"라고 말하여 빠른 작업 메뉴를 표시한 다음, "Mixed reality home"라고 말합니다. |
+| 손전등 켜기/끄기 | 손전등 켜기/손전등 끄기 |
+| 텔 레 포트 | 이동하려는 위치로 고개를 돌려 "teleport"라고 말합니다. (보다 정확한 대상 지정을 위해 먼저 "select"라고 말하여 응시 커서를 불러와서 "teleport"라고 말하십시오.) |
+| 왼쪽 또는 오른쪽으로 전환 | 좌회전/오른쪽으로 전환 |
+| 180도 회전 | 뒤돌아 보세요 |
+| 앞으로 이동 | 앞으로 이동/앞으로 이동 |
+| 백업 | 뒤로 이동/뒤로 이동 |
+| 왼쪽으로 이동 | 왼쪽으로 이동/왼쪽으로 이동 |
 | 오른쪽으로 이동 | 오른쪽으로 이동/오른쪽으로 이동 |
 
 ## <a name="3d-object-commands"></a>3D 개체 명령
 
-3D 개체, 홀로그램 또는 앱 창에서 다음 명령을 사용 하 여 응시 합니다.
+3D 개체, 홀로그램 또는 앱 창을 응시하여 다음 명령을 사용합니다.
 
-| 원하는 작업 | 예 |
+| 원하는 작업 | 다음을 가정해 봅시다. |
 | --- | --- |
-| 더 크게 만들기 | 확대 |
-| 더 작게 만들기 | 짧은 |
-| 얼굴을 표시 하도록 설정 | 얼굴 얼굴 |
-| 이동할 준비 완료-응시를 따릅니다. | 이동 |
-| 이동이 완료 되 면 입력 | 위치 |
+| 더 크게 만들기 | 큰 |
+| 더 작게 만들기 | 작음 |
+| 얼굴로 전환 | Face me |
+| 이동 준비 - 응시를 따릅니다. | Move this |
+| 이동이 완료되면 배치합니다. | 위치 |
 
 ## <a name="app-bar-commands"></a>앱 바 명령
 
-앱 창이 나 3D 개체를 응시 하 여 다음 명령을 사용 합니다.
+앱 창 또는 3D 개체를 응시하여 다음 명령을 사용합니다.
 
-| 원하는 작업 | 예 |
+| 원하는 작업 | 다음을 가정해 봅시다. |
 | --- | --- |
-| 앱 또는 3D 개체를 닫습니다. | 닫기 |
-| 항목 조정 (크기 조정 또는 이동) | Adjust |
+| 앱 또는 3D 개체 닫기 | 닫습니다 |
+| 조정(크기 조정 또는 이동) | Adjust |
 | 조정 중지 | 완료 |
 | 3D 개체에서 앱 바 숨기기 | 메뉴 숨기기 |
 | 3D 개체에 앱 바 표시 | 메뉴 표시 |
-| 뒤로 이동 단추가 있는 앱의 이전 화면 또는 페이지로 돌아갑니다.  | 돌아가기 |
-| 보려는 앱에서 혼합 현실 컨트롤러 대신 게임 기를 사용 하 여 Xbox 컨트롤러를 사용 하세요. | 게임 패드로 사용 |
-| Xbox 컨트롤러를 혼합 현실 컨트롤러 (게임 패드로 사용 하는 경우)로 사용 | 응시에 사용 |
+| 돌아가기 단추가 있는 앱의 이전 화면 또는 페이지로 돌아가기  | 돌아가기 |
+| 보고 있는 앱에서 Xbox 컨트롤러를 혼합 현실 컨트롤러가 아닌 게임 패드로 사용 | 게임 패드로 사용 |
+| Xbox 컨트롤러를 혼합 현실 컨트롤러로 사용(게임 패드로 사용한 경우) | 응시와 함께 사용 |
 
 ## <a name="start-menu-commands"></a>시작 메뉴 명령
 
-시작 메뉴를 응시 하 여 다음 명령을 사용 합니다.
+시작 메뉴 응시하여 다음 명령을 사용합니다.
 
-| 원하는 작업 | 예 |
+| 원하는 작업 | 다음을 가정해 봅시다. |
 | --- | --- |
-| 모든 앱 목록으로 이동 | 모든 앱 |
-| 시작 또는 모든 앱에서 위아래로 이동 | Page up/down |
-| 모든 앱에서 시작 메뉴로 돌아가기 | 돌아가기 |
+| 모든 앱 목록으로 이동합니다. | 모든 앱 |
+| 시작 또는 모든 앱 위로 또는 아래로 이동 | Page up/축소 |
+| 모든 앱 시작 메뉴 돌아가기 | 돌아가기 |
 | 사진 찍기 | 카메라 |
-| 비디오 가져오기 | 동영상 |
-| 데스크톱에서 혼합 현실 포털의 헤드셋 보기 표시 | 미리 보기 |
+| Take a video | 동영상 |
+| 데스크톱의 Mixed Reality 포털 헤드셋 보기 표시 | 미리 보기 |
 | 시작 시 볼륨 컨트롤 열기 | 볼륨 변경 |
 | 음소거 | 음소거 |
 | Unmute | Unmute |
@@ -114,7 +114,7 @@ Windows Mixed Reality에서 다음 음성 명령을 사용 하면 보다 빠르�
 | 미리 알림 설정 | 미리 알림 설정 |
 
 > [!NOTE]
-> * Cortana는 일부 지역 및 언어에서 사용할 수 없습니다. [자세히 알아보기](https://support.microsoft.com/help/4026948).
+> * Cortana는 일부 지역 및 언어에서 사용할 수 없습니다. [자세한 정보](https://support.microsoft.com/help/4026948).
 > * Cortana가 "안녕하세요 Cortana"에 응답 하지 않는 경우 **설정 > 개인 정보 > 음성** 및 온라인 음성 인식이 설정 되어 있는지 확인 하세요.
 > * Cortana를 끄면 "안녕 코타" 음성 명령을 사용할 수 없지만 다른 명령 (예: "선택" 및 "텔레포트")을 계속 사용할 수 있습니다.
 
@@ -129,7 +129,7 @@ Windows Mixed Reality에서 다음 음성 명령을 사용 하면 보다 빠르�
 
 | 원하는 작업 | 예 |
 | --- | --- |
-| 키보드 닫기 | 닫기 |
+| 키보드 닫기 | 닫습니다 |
 | 받아쓰기 시작 | 받아쓰기 시작 |
 | 받아쓰기 중지 | 받아쓰기 중지 |
 | 지시한 내용 삭제 | 삭제 |
@@ -152,7 +152,7 @@ Windows Mixed Reality에서 다음 음성 명령을 사용 하면 보다 빠르�
 
 받아쓰기를 중지 하려면 **완료** 를 선택 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [커뮤니티에 질문하기](https://answers.microsoft.com)
 * [지원 문의](https://support.microsoft.com/contactus/)

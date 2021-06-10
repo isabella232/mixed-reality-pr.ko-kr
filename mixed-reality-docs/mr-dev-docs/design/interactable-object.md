@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: 혼합 현실, 컨트롤, 상호 작용, 큐, ui, ux, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 오디오
-ms.openlocfilehash: 0e9f4dc09e3c4a4c38ffeb1a9042f39996918e36
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 8a68006d68b985f8d26a3d1a11e4d52fcfb5acb5
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300468"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600442"
 ---
 # <a name="interactable-object"></a>상호 작용 가능한 개체
 
@@ -140,7 +140,7 @@ HoloLens 2는 개체와 상호 작용할 수 있도록 하는 트레일러 추�
 :::row:::
     :::column:::
         ![기본값](images/640px-interactibleobject-pressablebutton-default.jpg)<br>
-        **기본**<br>
+        **기본값**<br>
     :::column-end:::
     :::column:::
         ![가리키기](images/640px-interactibleobject-pressablebutton-hover.jpg)<br>
@@ -157,7 +157,7 @@ HoloLens 2는 개체와 상호 작용할 수 있도록 하는 트레일러 추�
     :::column-end:::
     :::column:::
         ![작업 방법](images/640px-interactibleobject-pressablebutton-press.jpg)<br>
-        **작업 방법**<br>
+        **누르면**<br>
         프런트 판을 이동 합니다.
     :::column-end:::
 :::row-end:::
@@ -260,13 +260,13 @@ HoloLens 2는 개체와 상호 작용할 수 있도록 하는 트레일러 추�
 
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 에서는 [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) 스크립트를 사용 하 여 개체를 다양 한 유형의 입력 상호 작용 상태에 응답할 수 있습니다. 색, 크기, 재질, 셰이더 등의 개체 속성을 제어 하 여 시각적 상태를 정의할 수 있도록 하는 다양 한 형식의 테마를 지원 합니다.
 
-* [상호 작용 가능](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable)
-* [Button](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)
+* [상호 작용 가능](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable)
+* [Button](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)
 * [직접 상호 작용 예제 장면](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 MixedRealityToolkit의 표준 셰이더는 시각적 및 오디오 큐를 만드는 데 도움이 되는 **근접 조명** 과 같은 다양 한 옵션을 제공 합니다.
 
-* [MRTK 표준 세이더](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
+* [MRTK 표준 세이더](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
 
 <br>
 

@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 59bf0df2a32030281c8bf0a1a8574b4dd9bf4607
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: a0c66969a9058adc790919f0054783b7368da8f6
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143796"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647082"
 ---
 # <a name="screenshot-utility"></a>스크린샷 유틸리티
 
@@ -20,7 +20,7 @@ ScreenshotUtility 클래스는 Unity 편집기 내의 메뉴 항목 및 공용 A
 
 ## <a name="taking-screenshots"></a>스크린샷 찍기
 
-편집기에서 *Mixed Reality Toolkit->Utilities->Take Screenshot* 을 선택하고 원하는 옵션을 선택하면 스크린샷을 쉽게 캡처할 수 있습니다. 게임을 플레이하지 않고 캡처하는 경우 게임 창 탭이 표시되는지 확인하세요. 스크린샷이 저장되지 않을 수 있습니다.
+스크린샷은 **Mixed Reality**  >  **도구 키트**  >  **유틸리티**  >  **스크린샷을** 선택한 다음 원하는 옵션을 선택하여 편집기에서 쉽게 캡처할 수 있습니다. 게임을 플레이하지 않고 캡처하는 경우 게임 창 탭이 표시되는지 확인하세요. 스크린샷이 저장되지 않을 수 있습니다.
 
 기본적으로 모든 스크린샷은 [임시 캐시 경로](https://docs.unity3d.com/ScriptReference/Application-temporaryCachePath.html)에 저장되며 스크린샷 경로는 Unity 콘솔에 표시됩니다.
 

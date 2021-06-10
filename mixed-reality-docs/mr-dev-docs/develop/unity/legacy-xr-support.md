@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/26/2021
 ms.topic: article
 keywords: Unity, mixed reality, 개발, 시작, 새 프로젝트, Windows Mixed Reality, UWP, XR, 성능, 레거시, mrtk
-ms.openlocfilehash: 09989b3b2b7fa1d351235a2cc9b885d4795dc2b6
-ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
+ms.openlocfilehash: b5faa48ec913c5095b12361318729b6f14276f30
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106088532"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743500"
 ---
 # <a name="using-legacy-built-in-xr-support"></a>레거시 기본 제공 XR 지원 사용
 
@@ -20,9 +20,9 @@ ms.locfileid: "106088532"
 Unity용 MRTK는 플랫폼 간 입력 시스템, 기본 구성 요소 및 공간 상호 작용을 위한 공통 빌딩 블록을 제공합니다. MRTK 버전 2는 Microsoft HoloLens, Windows Mixed Reality 몰입형(VR) 헤드셋 및 OpenVR 플랫폼용 애플리케이션 개발을 가속화하기 위한 것입니다. 이 프로젝트는 진입 장벽을 낮추고 혼합 현실 애플리케이션을 만들며 커뮤니티에 다시 기여하는 것을 목표로 합니다.
 
 > [!div class="nextstepaction"]
-> [MRTK 자습서를 사용해 보세요.](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=wsa)
+> [MRTK 자습서 사용해보기](./tutorials/mr-learning-base-02.md?tabs=wsa)
 
-추가 기능에 대 한 자세한 내용은 [Mrtk의 설명서](/windows/mixed-reality/mrtk-unity) 를 참조 하세요.
+기능에 대한 자세한 내용은 [MRTK 설명서](/windows/mixed-reality/mrtk-unity)를 살펴보세요.
 
 ## <a name="manual-setup-without-mrtk"></a>MRTK 없이 수동 설치
 
@@ -34,11 +34,11 @@ HoloLens 2를 대상으로 하는 경우 유니버설 Windows 플랫폼로 전�
 
 1.  **파일 > 빌드 설정** ...을 선택 합니다.
 2.  플랫폼 목록에서 **유니버설 Windows 플랫폼** 을 선택 하 고 **플랫폼 전환** 을 선택 합니다.
-3.  **아키텍처** 를 **ARM 64** 로 설정 합니다.
-4.  **대상 장치** 를 **HoloLens** 로 설정
-5.  **빌드 유형을** **D3D** 로 설정
-6.  **UWP SDK** 를 **최신 설치** 로 설정
-7.  디버그에 알려진 성능 문제가 있으므로 **빌드 구성을** **릴리스로** 설정 합니다.
+3.  **Architecture(아키텍처)** 를 **ARM 64** 로 설정합니다.
+4.  **Target device(대상 디바이스)** 를 **HoloLens** 로 설정합니다.
+5.  **Build Type(빌드 형식)** 을 **D3D** 로 설정합니다.
+6.  **UWP SDK** 를 **Latest installed(최근에 설치)** 로 설정합니다.
+7.  디버그와 관련하여 알려진 성능 문제가 있으므로 **Build configuration(빌드 구성)** 을 **Release(릴리스)** 로 설정합니다.
 
 ![유니버설 Windows 플랫폼 강조 표시 된 unity 편집기에서 열린 빌드 설정 창의 스크린샷](images/wmr-config-img-4.png)
 

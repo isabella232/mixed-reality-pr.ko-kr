@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: 혼합 현실, HoloLens, UI 컨트롤, 상호 작용, ui, ux, UX 디자인, 공간 UI, 공간 상호 작용, 3D UI, 3D UX, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 0d8d2811c2fae96f679eeb1df2f1053e7ecf5def
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 5bdcba60f38ac67bbf0f394337735f4a2d4ec423
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300348"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600632"
 ---
 # <a name="spatial-mesh"></a>공간 메시
 
@@ -36,7 +36,7 @@ MRTK는 공간 메시 시각화에 대 한 여러 자료를 제공 합니다.
 <br>
 <img src="images/MRTK_SRMesh_Pulse.jpg" alt="Pulse spatial mesh visualization" width="640px">
 
-* 자세한 내용은 [Mrtk-공간 인식](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) 및 [Mrtk-펄스 셰이더](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/experimental/pulse-shader)를 참조 하세요.
+* 자세한 내용은 [Mrtk-공간 인식](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) 및 [Mrtk-펄스 셰이더](/windows/mixed-reality/mrtk-unity/features/experimental/pulse-shader)를 참조 하세요.
 
 <br>
 

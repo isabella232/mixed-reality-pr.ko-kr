@@ -1,31 +1,31 @@
 ---
-title: 공간 오디오 자습서-1. 프로젝트에 공간 오디오 추가
-description: Microsoft Spatializer 플러그 인을 Unity 프로젝트에 추가 하 여 HoloLens 2 HRTF 하드웨어 오프 로드에 액세스 합니다.
+title: 공간 오디오 자습서 - 1. 프로젝트에 공간 오디오 추가
+description: Microsoft Spatializer 플러그 인을 Unity 프로젝트에 추가하여 HoloLens 2 HRTF 하드웨어 오프로드에 액세스합니다.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
-keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head 관련 전송 함수, 반향, Microsoft Spatializer
-ms.openlocfilehash: 7964ecdc8adee7c61c4c7086b8d04983f6e3903f
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, 혼합 현실 도구 키트, UWP, Windows 10, HRTF, 헤드 관련 전송 함수, reverb, Microsoft Spatializer
+ms.openlocfilehash: 112531a3248461a5b380ad4b93de34545a2f2c3f
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982796"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403364"
 ---
 # <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. Unity 프로젝트에 공간 오디오 추가
 
 ## <a name="overview"></a>개요
 
-HoloLens2의 Unity 용 공간 오디오 자습서를 시작 합니다. 이 자습서 시리즈를 통해 HoloLens 2에서 HRTF (head 관련 전송 함수) 오프 로드를 사용 하는 방법과 HRTF 오프 로드를 사용할 때 반향를 사용 하도록 설정 하는 방법에 대해 알아봅니다.
+HoloLens2의 Unity에 대한 공간 오디오 자습서를 시작합니다. 이 자습서 시리즈를 통해 HoloLens 2 HRTF(헤드 관련 전송 함수) 오프로드를 사용하는 방법과 HRTF 오프로드를 사용할 때 반향을 사용하도록 설정하는 방법을 알아봅니다.
 
-[Microsoft Spatializer GitHub 리포지토리](https://github.com/microsoft/spatialaudio-unity) 는이 자습서 시퀀스의 완료 된 Unity 프로젝트를 포함 합니다.
+[Microsoft Spatializer GitHub 리포지토리에는](https://github.com/microsoft/spatialaudio-unity) 이 자습서 시퀀스의 완료된 Unity 프로젝트가 있습니다.
 
-유용 하 게 사용할 수 있는 경우 HRTF 기반 spatialization 기술과 권장 사항을 사용 하 여 소리를 spatialize 소리를 이해 하려면 [공간 음향 디자인](/windows/mixed-reality/spatial-sound-design)을 참조 하세요.
+HRTF 기반 공간화 기술을 사용하여 소리를 공간화하는 것의 의미와 도움이 될 수 있는 경우에 대한 권장 사항을 이해하려면 [공간 음향 디자인을](/windows/mixed-reality/spatial-sound-design)참조하세요.
 
-## <a name="what-is-hrtf-offload"></a>HRTF 오프 로드 란?
+## <a name="what-is-hrtf-offload"></a>HRTF 오프로드란?
 
-HRTF 기반 알고리즘을 사용 하 여 오디오를 처리 하려면 많은 양의 특수 한 계산을 수행 해야 합니다. HoloLens 2에는 응용 프로그램 프로세서의 부담을 방지 하기 위해 활용할 수 있는 전용 하드웨어가 포함 되어 있습니다. 따라서 HRTF 기반 알고리즘의 처리를 "오프 로딩" 합니다.  Microsoft spatializer 플러그 인을 사용 하면 응용 프로그램이 공간 오디오 이외의 작업에 더 많은 응용 프로그램 프로세서를 사용할 수 있도록 응용 프로그램에서 전용 HRTF 하드웨어를 활용할 수 있는 쉬운 방법을 제공 합니다.
+HRTF 기반 알고리즘을 사용하여 오디오를 처리하려면 많은 양의 특수 계산이 필요합니다. HoloLens 2 애플리케이션 프로세서의 부담을 피하기 위해 활용할 수 있는 전용 하드웨어를 포함하므로 HRTF 기반 알고리즘의 처리를 "오프로드"합니다.  Microsoft spatializer 플러그 인은 애플리케이션이 전용 HRTF 하드웨어를 활용할 수 있는 쉬운 방법을 제공하므로 애플리케이션이 공간 오디오 이외의 작업에 더 많은 애플리케이션 프로세서를 사용할 수 있습니다.
 
 ## <a name="objectives"></a>목표
 
@@ -37,13 +37,12 @@ HRTF 기반 알고리즘을 사용 하 여 오디오를 처리 하려면 많은 
 * 올바른 [도구가 설치](../../install-the-tools.md)된 상태로 구성된 Windows 10 PC
 * 기본적인 C# 프로그래밍 지식
 * [개발용으로 구성](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)된 HoloLens 2 디바이스
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>(Unity 2019 LTS가 탑재되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가되어 있음)
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity</a> 2020/2019 LTS가 탑재되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가된 Unity Hub
 
-계속 하기 전에 [초보자](mr-learning-base-01.md) 를 위한 자습서 시리즈를 완료 하거나 Unity 및 MRTK를 사용 하 여 몇 가지 기본 사전 경험을 사용 하는 **것이 좋습니다** .
+계속하기 전에 [시작](mr-learning-base-01.md) 자습서 시리즈를 완료하거나 Unity 및 MRTK에 대한 기본적인 사전 경험을 갖추는 **것이 좋습니다.**
 
-> [!IMPORTANT]
->
-> * 이 자습서 시리즈에 추천되는 Unity 버전은 Unity 2019 LTS입니다. 이는 위에서 연결된 필수 구성 요소에서 설명하는 모든 Unity 버전 요구 사항 또는 추천 사항을 대체합니다.
+> [!Important]
+> 이 자습서 시리즈는 Open XR 또는 Windows XR 플러그 인을 사용하는 경우 Unity 2020 LTS(현재 2020.3.x)를 지원하고 레거시 WSA 또는 Windows XR 플러그 인을 사용하는 경우 Unity 2019 LTS(현재 2019.4.x)도 지원합니다. 이 버전은 필수 구성 요소에서 설명한 모든 Unity 버전 요구 사항을 대체합니다.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Unity 프로젝트 만들기 및 준비
 
@@ -57,40 +56,42 @@ HRTF 기반 알고리즘을 사용 하 여 오디오를 처리 하려면 많은 
 
 1. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 
-1. [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+1. [Mixed Reality 도구 키트 가져오기 및 Unity 프로젝트 구성](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 
-1. [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project)
+1. [장면 만들기 및 구성](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) 및 장면에 적절한 이름(예: *SpatialAudio)을* 지정합니다.
 
-1. [장면을 만들고 설정](mr-learning-base-02.md#creating-and-configuring-the-scene) 하 고 장면에 적절 한 이름 (예: *SpatialAudio* )을 제공 합니다.
-
-그런 다음 [공간 인식 디스플레이 변경 옵션](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면의 MRTK 구성 프로필이 **DefaultHoloLens2ConfigurationProfile** 고 공간 인식 메시의 표시 옵션을 **폐색** 로 변경 합니다.
+그런 다음 [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면에 대한 MRTK 구성 프로필이 **DefaultHoloLens2ConfigurationProfile인지** 확인하고 공간 인식 메시의 표시 옵션을 **폐색으로 변경합니다.**
 
 ## <a name="adding-microsoft-spatializer-to-the-project"></a>프로젝트에 Microsoft Spatializer 추가
 
-Microsoft Spatializer <a href="https://github.com/microsoft/spatialaudio-unity/releases/download/v1.0.18/Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage" target="_blank">SpatialAudio Spatializer</a> 를 다운로드 하 여 가져옵니다. 1.0.18. unitypackage
+Microsoft Spatializer <a href="https://github.com/microsoft/spatialaudio-unity/releases/download/v1.0.18/Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage" target="_blank">Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage</a> 다운로드 및 가져오기
 
 >[!TIP]
 > Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [자습서 자산 가져오기](mr-learning-base-02.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.
 
 ## <a name="enable-the-microsoft-spatializer-plugin"></a>Microsoft Spatializer 플러그 인 사용
 
-**Microsoft Spatializer** 를 가져온 후에는 사용 하도록 설정 해야 합니다. **편집 > 프로젝트 설정-오디오 >** 열고 **Spatializer 플러그 인** 을 "Microsoft Spatializer"로 변경 합니다.
+Microsoft Spatializer를 Unity 프로젝트로 가져오면 **MRTK Project Configurator** 창이 **나타나고, Audio spatializer** 드롭다운을 사용하여 **Microsoft Spatializer** 를 선택한 다음, 적용 단추를 클릭하여 설정을 적용합니다.
 
-![Spatializer 플러그 인을 보여 주는 프로젝트 설정](images/spatial-audio/spatial-audio-01-section3-step1-1.png)
+![MRTK 프로젝트 구성기](images/spatial-audio/spatial-audio-01-section3-step1-1.PNG)
+
+Microsoft Spatializer: **Edit -> Project Settings -> Audio를** 수동으로 사용하도록 설정하고 **Spatializer 플러그 인을** "Microsoft Spatializer"로 변경할 수도 있습니다.
+
+![spatializer 플러그 인을 보여주는 프로젝트 설정](images/spatial-audio/spatial-audio-01-section3-step1-2.PNG)
 
 ## <a name="enable-spatial-audio-on-your-workstation"></a>워크스테이션에서 공간 오디오 사용
 
-데스크톱 버전의 Windows에서는 공간 오디오가 기본적으로 사용 하지 않도록 설정 되어 있습니다. 작업 표시줄에서 볼륨 아이콘을 마우스 오른쪽 단추로 클릭 하 여 사용 하도록 설정 합니다. HoloLens 2에서 제공 하는 내용을 가장 잘 표시 하려면 **공간 사운드-헤드폰 용 Windows Sonic >** 선택 합니다.
+데스크톱 버전의 Windows에서는 공간 오디오가 기본적으로 사용하지 않도록 설정됩니다. 작업 표시줄에서 볼륨 아이콘을 마우스 오른쪽 단추로 클릭하여 사용하도록 설정합니다. HoloLens 2 가장 잘 표현하려면 **공간 소리 -> 헤드폰용 Windows Sonic** 를 선택합니다.
 
-![데스크톱 공간 오디오 설정](images/spatial-audio/spatial-audio-01-section4-step1-1.png)
+![데스크톱 공간 오디오 설정](images/spatial-audio/spatial-audio-01-section4-step1-1.PNG)
 
 > [!NOTE]
-> 이 설정은 Unity 편집기에서 프로젝트를 테스트 하려는 경우에만 필요 합니다.
+> 이 설정은 Unity 편집기에서 프로젝트를 테스트하려는 경우에만 필요합니다.
 
 ## <a name="congratulations"></a>축하합니다.
 
-이 자습서에서는 Microsoft Spatializer 플러그 인을 가져오고 사용 하도록 설정 하는 방법 및 워크스테이션에서 공간 오디오를 사용 하도록 설정 하는 방법을 학습.
-다음 자습서에서는 unity 프로젝트에서 공간 오디오를 추가 하는 방법을 알아봅니다.
+이 자습서에서는 Microsoft Spatializer 플러그 인을 가져오고 사용하도록 설정하고 워크스테이션에서 공간 오디오를 사용하도록 설정하는 방법을 알아봅니다.
+다음 자습서에서는 Unity 프로젝트에서 공간 오디오를 추가하는 방법을 알아봅니다.
 
 > [!div class="nextstepaction"]
-> [다음 자습서: 2. Spatializing button 상호 작용 소리](unity-spatial-audio-ch2.md)
+> [다음 자습서: 2. 단추 상호 작용 소리 공간화](unity-spatial-audio-ch2.md)

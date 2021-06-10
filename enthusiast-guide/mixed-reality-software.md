@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 소프트웨어 구성 요소, 릴리스 기록, 릴리스 정보, 버전 기록
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5e0673f8ead5bd1211b403a7b67287cec95c0d4a
-ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
+ms.openlocfilehash: 2d11a43e96843073bf86919f1c4a10425fa12c00
+ms.sourcegitcommit: 62e5909b837c9c7ecedd040164f2308868db4723
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108644829"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111741915"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>혼합 현실 소프트웨어 개요 및 릴리스 기록
 
@@ -160,29 +160,30 @@ Windows Mixed Reality 모던 (VR) 헤드셋의 최신 PC 릴리스로 업그레�
    |------------------|-----------------------|---------------------------------------------------------------|
    | [10.0.16291.1000, 10.0.16299.1012](https://www.microsoft.com/download/details.aspx?id=56414)  | 2017년 10월 17일    | 드라이버의 초기 공개 릴리스                          |
 
-### <a name="mixed-reality-portal-release-history"></a>혼합 현실 포털 릴리스 기록 ###
+### <a name="mixed-reality-portal-release-history"></a>Mixed Reality 포털 릴리스 기록 ###
 
-Windows 10 버전 1809 이상에서 [혼합 현실 포털](https://www.microsoft.com/store/apps/9NG1H8B3ZC7M) 은 Microsoft Store 앱을 통해 업데이트 됩니다.
+Windows 10, 버전 1809 이상에서는 [Mixed Reality 포털 Microsoft Store](https://www.microsoft.com/store/apps/9NG1H8B3ZC7M) 앱을 통해 업데이트됩니다.
 
 #### <a name="windows-10-version-1809-and-newer"></a>Windows 10, 버전 1809 이상 ####
 
    | 버전            | 출시 날짜          | 주요 변경 내용                                                 |
    |--------------------|-----------------------|---------------------------------------------------------------|
-   | 2000.21041.1051.0  | 2021 4 월 26 일        | <ul><li>혼합 현실 포털에 대 한 앱 아이콘을 업데이트 합니다.</li></ul>  |
-   | 2000.20111.1381.0  | 2020 년 12 월 10 일        | <ul><li>혼합 현실 포털의 방문 페이지를 업데이트 합니다.</li><li>펌웨어를 업데이트 하는 동안 헤드셋 연결 오류가 줄어듭니다. </li></ul>  |
-   | 2000.20071.1133.0  | 2020년 8월 5일        | <ul><li>[OpenXR](/windows/mixed-reality/openxr) 을 지원 하 여 미리 보기 창을 일시 중지 합니다.</li></ul>  | 
-   | 2000.20041.1212.0  | 2020년 5월 11일          | <ul><li>일치 하지 않는 15-5 오류가 발생 한 타이밍 문제를 해결 합니다.</li><li>인터넷에 연결 되지 않은 Windows Mixed Reality 실행에 대 한 지원 향상.</li><li>**설치 컨트롤러** 를 통해 동작 컨트롤러를 페어링 하는 기능이 향상 되었습니다.</li></ul>  | 
-   | 2000.20031.1202.0  | 2020년 4월 14일        | <ul><li>Windows Mixed Reality 정보, 팁 및 제안에 대 한 등록 지원.</li></ul>  | 
-   | 2000.20011.1312.0  | 2020년 2월 11일     | <ul><li>2019 년 5 월 업데이트를 사용 하는 장치에서 [OpenXR](/windows/mixed-reality/openxr) 를 사용 하는 응용 프로그램에 대 한 지원 향상</li><li>접근성 및 키보드 포커스 문제를 해결 합니다.</li></ul>  | 
-   | 2000.19101.1211.0  | 2019 년 11 월 11 일     | <ul><li>는 대화방 경계 시각적 개체를 전환 하지 못하도록 하는 문제를 해결 합니다.</li><li>실내 경계 설정 중 헤드셋을 가운데에 맞추지 못하게 하는 문제를 해결 합니다.</li></ul>  | 
-   | 2000.19081.1301.0  | 2019년 9월 23일    | <ul><li>하드웨어 문제가 있는 헤드셋이 잘못 된 오류 메시지를 표시 하는 문제를 해결 합니다. 이전 버전에서 1-4 오류 코드를 받은 사용자는 이제 장치 상태에 대 한 보다 구체적인 오류 코드를 받을 수 있습니다.</li></ul>  |
-   | 2000.19071.1302.0  | 2019년 8월 13일     | <ul><li>2019 년 5 월 업데이트를 사용 하는 장치에서 [OpenXR](/windows/mixed-reality/openxr) 를 사용 하는 응용 프로그램 지원.</li></ul>  | 
-   | 2000.19061.1011.0  | 2019년 7월 16일         | <ul><li>JSON 구성 옵션을 지원 하 여 앱 동작을 사용자 지정 합니다. 자세한 내용은을 참조 https://docs.microsoft.com/windows/mixed-reality/location-based-experiences#setup 하세요.</li></ul>  | 
+   | 2000.21051.1282.0  | 2021년 6월 8일          | <ul><li>일반적인 헤드셋 오류에 대한 문제 해결 링크를 도움말 앱에 추가합니다.</li><li>초기 설정 중에 헤드셋 디바이스 도우미 앱을 건너뛸 수 있는 문제를 해결합니다.</li><li>고해상도 헤드셋에 대한 추가 정보로 시스템 요구 사항 페이지를 업데이트합니다.</li><li>시작 화면 및 방문 페이지를 새 시각적 개체로 업데이트합니다.</li></ul>  |
+   | 2000.21041.1051.0  | 2021년 4월 26일        | <ul><li>Mixed Reality 포털 대한 앱 아이콘을 업데이트합니다.</li></ul>  |
+   | 2000.20111.1381.0  | 2020년 12월 10일     | <ul><li>Mixed Reality 포털 방문 페이지를 업데이트합니다.</li><li>펌웨어 업데이트 중 헤드셋 연결 오류를 줄입니다. </li></ul>  |
+   | 2000.20071.1133.0  | 2020년 8월 5일        | <ul><li>[OpenXR이](/windows/mixed-reality/openxr) 미리 보기 창을 일시 중지하도록 지원합니다.</li></ul>  | 
+   | 2000.20041.1212.0  | 2020년 5월 11일          | <ul><li>일관되지 않은 15-5 오류를 발생시킨 타이밍 문제를 해결합니다.</li><li>인터넷에 연결되지 않은 Windows Mixed Reality 실행에 대한 지원이 향상되었습니다.</li><li>설치 컨트롤러를 통해 모션 컨트롤러를 페어링하는 지원이 **향상되었습니다.**</li></ul>  | 
+   | 2000.20031.1202.0  | 2020년 4월 14일        | <ul><li>Windows Mixed Reality 대한 정보, 팁 및 제안 등록 지원</li></ul>  | 
+   | 2000.20011.1312.0  | 2020년 2월 11일     | <ul><li>2019년 5월 업데이트가 있는 디바이스에서 [OpenXR을](/windows/mixed-reality/openxr) 사용하는 애플리케이션에 대한 지원이 향상되었습니다.</li><li>접근성 및 키보드 포커스 문제 해결</li></ul>  | 
+   | 2000.19101.1211.0  | 2019년 11월 11일     | <ul><li>방 경계 시각적 개체를 전환하지 못하게 하는 문제를 해결합니다.</li><li>실내 경계를 설정하는 동안 헤드셋을 가운데에 배치하지 못하게 하는 문제를 해결합니다.</li></ul>  | 
+   | 2000.19081.1301.0  | 2019년 9월 23일    | <ul><li>하드웨어 문제가 있는 헤드셋에 잘못된 오류 메시지가 표시된 문제를 해결합니다. 이전 버전에서 1-4 오류 코드를 받은 사용자는 이제 디바이스 상태에 대한 보다 구체적인 오류 코드를 받을 수 있습니다.</li></ul>  |
+   | 2000.19071.1302.0  | 2019년 8월 13일     | <ul><li>2019년 5월 업데이트가 있는 디바이스에서 [OpenXR을](/windows/mixed-reality/openxr) 사용하는 애플리케이션에 대한 지원.</li></ul>  | 
+   | 2000.19061.1011.0  | 2019년 7월 16일         | <ul><li>JSON 구성 옵션을 지원하여 앱 동작을 사용자 지정합니다. 에서 자세히 읽어보기 https://docs.microsoft.com/windows/mixed-reality/location-based-experiences#setup</li></ul>  | 
 
 ### <a name="steamvr-release-history"></a>SteamVR 릴리스 기록 ###
 
-SteamVR에 대 한 밸브의 릴리스 정보는 다음 위치에서 찾을 수 있습니다. [https://steamcommunity.com/app/250820](https://steamcommunity.com/app/250820)
+SteamVR에 대한 밸브의 릴리스 내용은 다음에서 확인할 수 있습니다. [https://steamcommunity.com/app/250820](https://steamcommunity.com/app/250820)
 
-### <a name="windows-mixed-reality-for-steamvr-release-history"></a>SteamVR 릴리스 내역에 대 한 Windows Mixed Reality ###
+### <a name="windows-mixed-reality-for-steamvr-release-history"></a>SteamVR 릴리스 기록에 대한 Windows Mixed Reality ###
 
-Windows Mixed Reality for SteamVR 구성 요소에 대 한 릴리스 정보는 다음 위치에서 찾을 수 있습니다. [http://steamcommunity.com/games/719950/announcements/](http://steamcommunity.com/games/719950/announcements/)
+SteamVR 구성 요소에 대한 Windows Mixed Reality 릴리스 정보에서 찾을 수 있습니다. [http://steamcommunity.com/games/719950/announcements/](http://steamcommunity.com/games/719950/announcements/)

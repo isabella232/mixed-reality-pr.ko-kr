@@ -1,40 +1,40 @@
 ---
 title: 표면 자성
-description: 표면 자성 기술을 사용하여 실제 실제 표면에 홀로그램 개체를 배치할 수 있습니다.
+description: Surface 자기 기법을 사용 하 여 실제 실제 표면에 holographic 개체를 놓을 수 있습니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Mixed Reality, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 표면 자성
-ms.openlocfilehash: e3cf8511a2486c8ea862fcc70a20f5956e5095c4
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, surface 자기
+ms.openlocfilehash: 4afed1ff9a1e8a7cb46f4810ac388739bca1b19e
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489223"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600622"
 ---
 # <a name="surface-magnetism"></a>표면 자성
 
 ![표면 자성](images/MRTK_SurfaceMagnetism.gif)
 
-표면 자성을 사용하면 실제 실제 표면에 홀로그램 개체를 배치할 수 있습니다. 개체의 방향을 실제 표면과 맞추면 사용자에게 더 몰입적이고 자연스러운 환경을 만들 수 있습니다.
+Surface 자기를 사용 하면 실제 실제 표면에 holographic 개체를 추가할 수 있습니다. 개체의 방향을 실제 화면에 정렬 하 여 사용자에 게 더 몰입 형 및 자연 스러운 환경을 만들 수 있습니다.
 
 <br>
 
 ---
 
-## <a name="surface-magnetism-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity용 MRTK(Mixed Reality Toolkit)의 표면 자성
+## <a name="surface-magnetism-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 표면
 
-**[MRTK는](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 표면 자성 기술에 대한 스크립트 및 예제 장면을 제공합니다. 손 광선, 시선 응시 및 모션 컨트롤러와 같은 다양한 유형의 입력에 표면 자성을 사용할 수 있습니다.
+**[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 는 surface 자기 기법에 대 한 스크립트와 예제 장면을 제공 합니다. 핸드 레이, 눈 응시 및 동작 컨트롤러와 같은 다양 한 유형의 입력에 surface 자기를 사용할 수 있습니다.
 
-* [MRTK - 표면 자성 해결기](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#surfacemagnetism)
-* [MRTK - 공간 인식 + 표면 자성 예제 장면](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/Examples/Demos/Solvers/Scenes/SurfaceMagnetismSpatialAwarenessExample.unity)
+* [MRTK-Surface 자기 해 찾기](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#surfacemagnetism)
+* [MRTK-공간 인식 + 표면 자기 예제 장면](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/Examples/Demos/Solvers/Scenes/SurfaceMagnetismSpatialAwarenessExample.unity)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

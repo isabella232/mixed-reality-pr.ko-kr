@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d9b8bc79859ab74c799188326731b3c8722bc49a
-ms.sourcegitcommit: b9d0155ae0d37a9f55f2cf0bcd954a2b148a26e0
+ms.openlocfilehash: 3f65fa90279e9a10c1aad9bd46f02233808936b8
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98181740"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647012"
 ---
 ![사람 손에 앉은 가상 벌새](mixed-reality-docs/mr-dev-docs/discover/images/01_MixedReality.png)
 
@@ -12,10 +12,10 @@ Microsoft의 모든 사물, VR 및 AR에 대 한 모든 것을 포함 하는 혼
 
 ## <a name="contributing"></a>참여
 
-문서 콘텐츠를 사용 하거나 업데이트 하는 경우 끌어오기 요청이 올바른 하위 docset (mr 개발자, 열성적인 등)를 대상으로 하는지 확인 하세요. 새 참가자는 각 subdocset에 대 한 자세한 기여 지침을 확인 해야 합니다.
+문서 콘텐츠를 사용 하거나 업데이트 하는 경우 끌어오기 요청이 올바른 하위 docset (열성적인, 등)를 대상으로 하는지 확인 하세요. 새 참가자는 각 subdocset에 대 한 자세한 기여 지침을 확인 해야 합니다.
 
 * [혼합 현실 기여자](mixed-reality-docs/mr-dev-docs/CONTRIBUTING.md)
-* [VR 열성적인 가이드 참가자](mixed-reality-docs/enthusiast-guide/CONTRIBUTING.md)
+* [VR 열성적인 가이드 참가자](enthusiast-guide/CONTRIBUTING.md)
 
 문서 관련 문제의 경우 각 문서의 맨 아래에 있는 바닥글을 사용 하거나 [MicrosoftDocs/mixed-현실/문제](https://github.com/MicrosoftDocs/mixed-reality/issues)에 직접 제출 합니다.
 

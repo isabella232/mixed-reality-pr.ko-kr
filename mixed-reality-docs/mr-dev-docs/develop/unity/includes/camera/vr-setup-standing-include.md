@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 5f990569ae4052377cba717b5526bb8ba51b8016
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 61fe8754192c1fbd0634fd9d1e1994327599321b
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636385"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110748537"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-[MixedRealityPlayspace](https://docs.microsoft.com/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) 클래스를 사용 하 여 Unity에서 MRTK를 사용 하 고 **대상 크기** 를 방 **또는 서** 로 설정 합니다. 
+[MixedRealityPlayspace](/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) 클래스를 사용 하 여 Unity에서 MRTK를 사용 하 고 **대상 크기** 를 방 **또는 서** 로 설정 합니다. 
 
 ![MRTK 설정 창](../../images/mrtk-target-scale.png)
 

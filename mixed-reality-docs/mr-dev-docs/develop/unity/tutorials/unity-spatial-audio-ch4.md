@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head 관련 전송 함수, 반향, Microsoft Spatializer
-ms.openlocfilehash: 26143975707b2cd6141803a6335cec89db5bbd26
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 9d0fa432f2e653cdd6820cb6c779cc1acc5c4b15
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590735"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712758"
 ---
 # <a name="4-enabling-and-disabling-spatialization-at-run-time"></a>4. 런타임에 spatialization 사용 및 사용 안 함
 
@@ -28,7 +28,7 @@ ms.locfileid: "99590735"
 
  프로젝트 창을 마우스 오른쪽 단추로 클릭 하 고   >  **c # 스크립트** 만들기를 선택 하 여 새 c # 스크립트를 만들고 스크립트에 적합 한 이름 (예: _SpatializeOnOff_)을 입력 합니다.
 
-![스크립트 만들기](images/spatial-audio/spatial-audio-04-section1-step1-1.png)
+![Create 스크립트](images/spatial-audio/spatial-audio-04-section1-step1-1.PNG)
 
 프로젝트 창에서 스크립트를 두 번 클릭 하 여 Visual Studio에서 엽니다. 기본 스크립트 내용을 다음과 같이 바꿉니다.
 
@@ -98,13 +98,13 @@ public class SpatializeOnOff : MonoBehaviour
 
 계층 구조에서 **쿼드** 을 선택 하 고 검사기 창에서 구성 요소 추가 단추를 사용 하 여 **SpatializeOnOff (스크립트)** 을 추가 합니다.
 
-![쿼드 스크립트 추가](images/spatial-audio/spatial-audio-04-section2-step1-1.png)
+![쿼드 스크립트 추가](images/spatial-audio/spatial-audio-04-section2-step1-1.PNG)
 
 계층 구조에서 **PressableButtonHoloLens2**  >  **iconandtext**  >  **TextMeshPro** 를 찾습니다.
 
 계층 구조에서 **4 개의** 개체가 선택 된 상태에서 검사기 창의 **Spatialize On Off (Script)** 구성 요소를 찾아 PressableButtonHoloLens2의 **TextMeshPro** 구성 요소를 끌어서 놓습니다.
 
-![계층에서 PressableButtonHoloLens2 개체 찾기](images/spatial-audio/spatial-audio-04-section2-step1-2.png)
+![계층에서 PressableButtonHoloLens2 개체 찾기](images/spatial-audio/spatial-audio-04-section2-step1-2.PNG)
 
 단추가 릴리스될 때 **SpatializeOnOff** 스크립트를 호출 하는 단추를 설정 하려면 interactable 스크립트를 구성 해야 합니다.
 
@@ -114,7 +114,7 @@ public class SpatializeOnOff : MonoBehaviour
 
 * 동일한 이벤트의 **함수 없음** 드롭다운을 클릭합니다. 그런 다음 **SpatializeOnOff**  >  **SwapSpatialization ()** 를 선택 하 여 공간 오디오를 켜고 끕니다.
 
-![단추 동작 설정](images/spatial-audio/spatial-audio-04-section2-step1-3.png)
+![단추 동작 설정](images/spatial-audio/spatial-audio-04-section2-step1-3.PNG)
 
 ## <a name="congratulations"></a>축하합니다.
 

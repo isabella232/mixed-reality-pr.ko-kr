@@ -1,29 +1,29 @@
 ---
 title: Unity의 응시
-description: 사용자가 혼합 현실에서 만든 holograms를 대상으로 하는 기본 방법으로 응시 입력을 사용 하는 방법에 대해 알아봅니다.
+description: 사용자가 혼합 현실에서 앱이 만드는 홀로그램을 대상으로 지정하는 기본 방법으로 응시 입력을 사용하는 방법을 알아봅니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 눈에 응시, 헤드-응시, unity, 홀로그램, 혼합 현실, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 98eb4445d04b236dea74917d9c51108b66d6df3b
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: 시선 응시, 헤드 게이즈, unity, 홀로그램, 혼합 현실, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: f10079d36f737e5d8a2ee74a88ca0f8b2b3d791c
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300368"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600152"
 ---
-# <a name="head-gaze-in-unity"></a>헤드-Unity에서의 응시
+# <a name="head-gaze-in-unity"></a>Unity의 헤드 응시
 
-[Holograms](../../discover/hologram.md) 는 사용자가 [혼합 현실](../../discover/mixed-reality.md)에서 만든 앱을 대상으로 [하는 기본](../../design/gaze-and-commit.md) 방법입니다.
+[응시는](../../design/gaze-and-commit.md) 사용자가 앱이 [Mixed Reality](../../discover/mixed-reality.md)만드는 [홀로그램을](../../discover/hologram.md) 대상으로 지정하는 기본 방법입니다.
 
-## <a name="implementing-head-gaze"></a>헤드-응시 구현
+## <a name="implementing-head-gaze"></a>헤드 응시 구현
 
-개념적으로 사용자의 헤드셋에서 광선을 전달 하 여 [헤드](../../design/gaze-and-commit.md) 를 확인 합니다. Unity에서 사용자의 헤드 위치와 방향은 [카메라](camera-in-unity.md) [(구체적으로](https://docs.unity3d.com/ScriptReference/Camera-main.html)는 안 됨)를 통해 노출 됩니다. [transform. forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) 및 [Unityengine. Camera. main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [transform. position](https://docs.unity3d.com/ScriptReference/Transform-position.html).
+개념적으로 사용자의 헤드셋에서 광선을 앞으로 프로젝팅하여 [헤드 게이즈(head-gaze)를](../../design/gaze-and-commit.md) 결정하여 적중되는 것을 확인합니다. Unity에서 사용자의 머리 위치와 방향은 [카메라,](camera-in-unity.md)특히 [UnityEngine.Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html)을 통해 노출됩니다. [transform.forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) 및 [UnityEngine.Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [transform.position](https://docs.unity3d.com/ScriptReference/Transform-position.html).
 
-GameObject [를 호출 하면](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) 3d 충돌 지점을 비롯 한 충돌에 대 한 정보를 포함 하는 [Raycasthit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) 및 헤드-응시 빛의 기타 제공 됩니다.
+[Physics.RayCast를](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) 호출하면 3D 충돌 지점 및 헤드 응시 광선 적중을 포함한 다른 GameObject를 포함하여 충돌에 대한 정보가 포함된 [RaycastHit가](https://docs.unity3d.com/ScriptReference/RaycastHit.html) 있습니다.
 
-### <a name="example-implement-head-gaze"></a>예: 헤드-응시 구현
+### <a name="example-implement-head-gaze"></a>예제: 헤드 응시 구현
 
 ```cs
 void Update()
@@ -45,19 +45,19 @@ void Update()
 
 ### <a name="best-practices"></a>모범 사례
 
-위의 예제에서는 업데이트 루프에서 단일 raycast를 실행 하 여 사용자의 헤드가 가리키는 대상을 찾는 반면 단일 개체를 사용 하 여 모든 헤드-응시 프로세스를 관리 하는 것이 좋습니다. 헤드-응시 논리를 결합 하 여 앱의 귀중 한 처리 능력을 절약 하 고, raycasting를 프레임당 하나로 제한 합니다.
+위의 예제에서는 업데이트 루프에서 단일 광선 캐스팅을 발생하여 사용자의 헤드포인트가 있는 대상을 찾는 동안 단일 개체를 사용하여 모든 헤드 응시 프로세스를 관리하는 것이 좋습니다. 헤드 게이즈 논리를 결합하면 앱의 처리 능력이 절약되고 광선 캐스팅이 프레임당 하나로 제한됩니다.
 
-## <a name="visualizing-head-gaze"></a>헤드 시각화-응시
+## <a name="visualizing-head-gaze"></a>머리 응시 시각화
 
-컴퓨터에서 마우스 포인터를 사용 하는 것과 마찬가지로 사용자의 헤드를 나타내는 [커서](../../design/cursors.md) 를 구현 해야 합니다. 사용자가 대상으로 하는 콘텐츠를 알면 상호 작용할 대상이 높아집니다.
+컴퓨터의 마우스 포인터와 마찬가지로 사용자의 머리 응시를 나타내는 [커서를](../../design/cursors.md) 구현해야 합니다. 사용자가 대상으로 하는 콘텐츠를 알면 상호 작용하려는 내용에 대한 신뢰도가 높아질 수 있습니다.
 
-## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Head-Mixed Reality Toolkit의 Head-응시
+## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Mixed Reality 도구 키트의 머리 응시
 
-MRTK의 [입력 관리자](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview) 에서 헤드-응시에 액세스할 수 있습니다.
+MRTK의 [입력 관리자에서](/windows/mixed-reality/mrtk-unity/features/input/overview) 헤드 응시에 액세스할 수 있습니다.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
+앞에서 설명한 Unity 개발 여정을 수행하는 경우 MRTK 핵심 구성 요소 탐색을 진행하는 중입니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [모션 컨트롤러](motion-controllers-in-unity.md)

@@ -1,51 +1,51 @@
 ---
-title: Mixed Reality 구성 가이드
-description: MRTK를 unity로 구성하는 설명서입니다.
+title: 혼합 현실 구성 가이드
+description: Unity에 MRTK를 구성 하는 방법에 대 한 설명서입니다.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: fc97a2d7c6182b4836d644d91be237e2aef01feb
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK,
+ms.openlocfilehash: b714e01a0969b88a4ca7a3a5047bc5d61516e3f3
+ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143577"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110345146"
 ---
-# <a name="mixed-reality-toolkit-profile-configuration-guide"></a>Mixed Reality 도구 키트 프로필 구성 가이드
+# <a name="mixed-reality-toolkit-profile-configuration-guide"></a>Mixed Reality Toolkit 프로필 구성 가이드
 
 ![MRTK 로고](../features/images/MRTK_Logo_Rev.png)
 
-Mixed Reality 도구 키트는 도구 키트를 관리하는 데 필요한 구성을 최대한 많이 중앙 집중화합니다(진정한 런타임 "사물"제외).
+혼합 현실 도구 키트는 가능한 한 도구 키트를 관리 하는 데 필요한 많은 구성 (진정한 런타임 "사물" 제외)을 중앙 집중식으로 관리 합니다.
 
-이 가이드는 현재 도구 키트에 사용할 수 있는 각 구성 프로필 화면에 대한 간단한 연습입니다.
+이 가이드는 도구 키트에 대해 현재 사용할 수 있는 각 구성 프로필 화면에 대 한 간단한 연습입니다.
 
-## <a name="the-main-mixed-reality-toolkit-configuration-profile"></a>기본 Mixed Reality 도구 키트 구성 프로필
+## <a name="the-main-mixed-reality-toolkit-configuration-profile"></a>기본 Mixed Reality Toolkit 구성 프로필
 
-장면의 *MixedRealityToolkit* GameObject에 연결된 기본 구성 프로필은 프로젝트의 도구 키트에 대한 기본 진입점을 제공합니다.
+장면의 *MixedRealityToolkit* GameObject에 연결 된 기본 구성 프로필은 프로젝트의 도구 키트에 대 한 기본 진입점을 제공 합니다.
 
 > [!NOTE]
-> Mixed Reality 도구 키트는 기본 구성 화면을 "잠가" 프로젝트에 대한 공통 시작점이 항상 있는지 확인하고 프로젝트가 발전함에 따라 사용자 고유의 설정을 정의하는 것이 좋습니다. 재생 모드 중에는 MRTK 구성을 편집할 수 없습니다.
+> 혼합 현실 도구 키트는 기본 구성 화면을 "잠금" 하 여 프로젝트에 대 한 공통 시작 지점이 항상 있는지 확인 하 고 프로젝트가 진화 함에 따라 사용자 고유의 설정을 정의 하기 시작 하는 것이 좋습니다. MRTK 구성은 재생 모드에서 편집할 수 없습니다.
 
 ![MRTK 구성 프로필](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ActiveConfiguration.png)
 
-Mixed Reality Toolkit에 대한 모든 "기본" 프로필은 Assets/MRTK/SDK/Profiles 폴더의 SDK 프로젝트에서 찾을 수 있습니다.
+혼합 현실 도구 키트의 모든 "기본" 프로필은 asset/MRTK/SDK/Profiles 폴더의 SDK 프로젝트에서 찾을 수 있습니다.
 
 > [!IMPORTANT]
-> DefaultHoloLens2ConfigurationProfile은 HoloLens 2 최적화됩니다. 자세한 내용은 [프로필을](../features/profiles/profiles.md) 참조하세요.
+> DefaultHoloLens2ConfigurationProfile는 HoloLens 2에 최적화 되어 있습니다. 자세한 내용은 [프로필](../features/profiles/profiles.md) 을 참조 하세요.
 
-기본 Mixed Reality 도구 키트 구성 프로필을 열면 검사기에서 다음 화면이 표시됩니다.
+기본 Mixed Reality Toolkit 구성 프로필을 열면 검사기에 다음 화면이 표시 됩니다.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_MixedRealityToolkitConfigurationScreen.png" width="650px" alt="MRTK configuration scene" style="display:block;">
 
-장면에서 MixedRealityToolkit 없이 MixedRealityToolkitConfigurationProfile 자산을 선택하면 MRTK가 자동으로 장면을 설정할지 묻는 메시지가 표시됩니다. 선택 사항이긴 하지만 모든 구성 화면에 액세스하려면 장면에 활성 MixedRealityToolkit 개체가 있어야 합니다.
+장면에서 MixedRealityToolkit 없이 MixedRealityToolkitConfigurationProfile 자산을 선택 하는 경우 MRTK에서 자동으로 장면을 설정 하도록 할 것인지 묻는 메시지가 표시 됩니다. 이 옵션은 선택 사항 이지만 모든 구성 화면에 액세스 하려면 장면에 활성 MixedRealityToolkit 개체가 있어야 합니다.
 
-여기에는 프로젝트에 대한 현재 활성 런타임 구성이 저장됩니다.
+프로젝트에 대 한 현재 활성 런타임 구성을 저장 합니다.
 
-여기에서 다음을 포함하여 MRTK에 대한 모든 구성 프로필로 이동할 수 있습니다.
+여기에서 다음을 포함 하 여 MRTK에 대 한 모든 구성 프로필을 탐색할 수 있습니다.
 
-- [Mixed Reality 도구 키트 프로필 구성 가이드](#mixed-reality-toolkit-profile-configuration-guide)
-  - [기본 Mixed Reality 도구 키트 구성 프로필](#the-main-mixed-reality-toolkit-configuration-profile)
+- [Mixed Reality Toolkit 프로필 구성 가이드](#mixed-reality-toolkit-profile-configuration-guide)
+  - [기본 Mixed Reality Toolkit 구성 프로필](#the-main-mixed-reality-toolkit-configuration-profile)
   - [환경 설정](#experience-settings)
   - [카메라 설정](#camera-settings)
   - [입력 시스템 설정](#input-system-settings)
@@ -77,7 +77,7 @@ Mixed Reality Toolkit에 대한 모든 "기본" 프로필은 Assets/MRTK/SDK/Pro
 
 ## <a name="experience-settings"></a>환경 설정
 
-기본 Mixed Reality 도구 키트 구성 페이지에 있는 이 설정은 프로젝트에 대한 [Mixed Reality 환경 확장의](/windows/mixed-reality/coordinate-systems-in-unity) 기본 작업을 정의합니다.
+기본 Mixed Reality 도구 키트 구성 페이지에 있는이 설정은 프로젝트에 대 한 [혼합 현실 환경 규모](/windows/mixed-reality/coordinate-systems-in-unity) 의 기본 작업을 정의 합니다.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ExperienceSettings.png" width="650px" alt="Experiance settings" style="display:block;">
 
@@ -86,7 +86,7 @@ Mixed Reality Toolkit에 대한 모든 "기본" 프로필은 Assets/MRTK/SDK/Pro
 
 ## <a name="camera-settings"></a>카메라 설정
 
-카메라 설정은 일반 클리핑, 품질 및 투명도 설정을 정의하여 Mixed Reality 프로젝트에 대한 카메라를 설정하는 방법을 정의합니다.
+카메라 설정은 혼합 현실 프로젝트에 대해 카메라를 설정 하는 방법을 정의 하 여 일반 클리핑, 품질 및 투명도 설정을 정의 합니다.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_CameraProfile.png" width="650px" alt="Camera Profile" style="display:block;">
 
@@ -95,15 +95,15 @@ Mixed Reality Toolkit에 대한 모든 "기본" 프로필은 Assets/MRTK/SDK/Pro
 
 ## <a name="input-system-settings"></a>입력 시스템 설정
 
-Mixed Reality 프로젝트는 기본적으로 선택된 프로젝트 주변의 모든 입력 이벤트를 라우팅하기 위한 강력하고 잘 학습된 입력 시스템을 제공합니다.
+Mixed Reality 프로젝트는 기본적으로 선택 되는 프로젝트에 대 한 모든 입력 이벤트를 라우팅하기 위한 강력 하 고 잘 학습 된 입력 시스템을 제공 합니다.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputSystemSelection.png" width="650px" alt="Input System settings 1" style="display:block;">
 
-MRTK에서 제공하는 입력 시스템 뒤에는 여러 다른 시스템이 있으며, 다중 플랫폼/혼합 현실 프레임워크의 복잡성을 추상화하기 위해 필요한 복잡한 직비 간을 구동하고 관리하는 데 도움이 될 수 있습니다.
+MRTK에서 제공 하는 입력 시스템 뒤에는 여러 다른 시스템이 있으며,이를 통해 다중 플랫폼/혼합 현실 프레임 워크의 복잡성을 추상화 하는 데 필요한 복잡 한 비-weavings를 구동 하 고 관리할 수 있습니다.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputSystemProfile.png" width="650px" alt="Input System settings 2" style="display:block;">
 
-각 개별 프로필은 아래에 자세히 설명되어 있습니다.
+각 개별 프로필은 아래에 자세히 설명 되어 있습니다.
 
 - 포커스 설정
 - [입력 작업 설정](#input-actions-settings)
@@ -119,16 +119,16 @@ MRTK에서 제공하는 입력 시스템 뒤에는 여러 다른 시스템이 �
 
 ## <a name="boundary-visualization-settings"></a>경계 시각화 설정
 
-경계 시스템은 기본 플랫폼 경계/보호자 시스템에서 보고하는 인식된 경계를 변환합니다. 경계 시각화 도우미 구성을 사용하면 사용자의 위치를 기준으로 장면 내에서 기록된 경계를 자동으로 표시할 수 있습니다. 또한 경계는 사용자가 장면 내에서 원격으로 전송하는 위치에 따라 반응/업데이트됩니다.
+경계 시스템은 기본 플랫폼 경계/보호자 시스템에서 보고 하는 인식 된 경계를 변환 합니다. 경계 시각화 도우미 구성은 사용자의 위치를 기준으로 장면 내에 기록 된 경계를 자동으로 표시 하는 기능을 제공 합니다. 경계는 사용자의 장면 내 teleports 위치에 따라 반응 하거나 업데이트 합니다.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_BoundaryVisualizationProfile.png" width="650px" alt="Boundry Visualization Settings" style="display:block;">
 
 ---
 <a name="teleportation"></a>
 
-## <a name="teleportation-system-selection"></a>원격 보고 시스템 선택
+## <a name="teleportation-system-selection"></a>Teleportation 시스템 선택
 
-Mixed Reality 프로젝트는 기본적으로 선택된 프로젝트에서 원격 보고 이벤트를 관리하기 위한 모든 기능을 갖춘 원격 보고 시스템을 제공합니다.
+Mixed Reality 프로젝트는 기본적으로 선택 되는 프로젝트에서 Teleportation 이벤트를 관리 하기 위한 완전 한 기능을 갖춘 Teleportation 시스템을 제공 합니다.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_TeleportationSystemSelection.png" width="650px" alt="Teleport System settings" style="display:block;">
 
@@ -137,15 +137,15 @@ Mixed Reality 프로젝트는 기본적으로 선택된 프로젝트에서 원�
 
 ## <a name="spatial-awareness-settings"></a>공간 인식 설정
 
-Mixed Reality 프로젝트는 기본적으로 선택된 프로젝트에서 공간 검색 시스템을 사용할 수 있는 다시 빌드된 공간 인식 시스템을 제공합니다.
+혼합 현실 프로젝트는 기본적으로 선택 되는 프로젝트에서 공간 검색 시스템을 사용 하기 위해 다시 작성 된 공간 인식 시스템을 제공 합니다.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SpatialAwarenessSystemSelection.png" width="650px" alt="Spatial Awareness settings 1" style="display:block;">
 
-Mixed Reality 도구 키트 공간 인식 구성을 사용하면 애플리케이션이 프로그래밍 방식으로 시작되거나 나중에 시작될 때 자동으로 시작되는지 여부와 관계없이 시스템이 시작되는 방식을 조정할 수 있을 뿐만 아니라 보기 필드에 대한 익스텐트를 설정합니다.
+혼합 현실 도구 키트 공간 인식 구성을 사용 하면 응용 프로그램이 시작 될 때 자동으로 실행 되는 경우 자동으로 실행 되는 방식으로 또는 보기의 필드에 대 한 익스텐트를 설정 하는 방식으로 시스템 시작 방식을 조정할 수 있습니다.
 
-또한 메시 및 표면 설정을 구성하고 프로젝트에서 주변 환경을 이해하는 방법을 추가로 사용자 지정할 수 있습니다.
+또한 메시 및 surface 설정을 구성 하 여 프로젝트에서 사용자의 환경을 이해 하는 방법을 사용자 지정할 수 있습니다.
 
-이는 검색된 환경을 제공할 수 있는 디바이스에만 적용됩니다.
+검색 된 환경을 제공할 수 있는 장치에만 적용 됩니다.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SpatialAwarenessProfile.png" width="650px" alt="Spatial Awareness settings 2" style="display:block;">
 
@@ -154,20 +154,20 @@ Mixed Reality 도구 키트 공간 인식 구성을 사용하면 애플리케이
 
 ## <a name="diagnostics-settings"></a>진단 설정
 
-MRTK의 선택적이지만 매우 유용한 기능은 플러그 인 진단 기능입니다.
+MRTK의 선택적 이지만 매우 유용한 기능은 플러그 인 진단 기능입니다.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_DiagnosticsSystemSelection.png" width="650px" alt="Diagnostics settings" style="display:block;">
 
-진단 프로필은 프로젝트가 실행되는 동안 모니터링할 수 있는 몇 가지 간단한 시스템을 제공합니다. 여기에는 장면에서 디스플레이 패널을 사용하거나 사용하지 않도록 설정하는 편리한 켜기/끄기 스위치가 포함됩니다.
+진단 프로필은 화면에서 디스플레이 패널을 사용/사용 하지 않도록 설정 하는 편리한 켜기/끄기 스위치를 포함 하 여 프로젝트가 실행 되는 동안 모니터링 하는 몇 가지 간단한 시스템을 제공 합니다.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_DiagnosticsProfile.png" width="650px" alt="Diagnostics settings System settings 2" style="display:block;">
 
 ---
 <a name="scenesystem"></a>
 
-## <a name="scene-system-settings"></a>장면 시스템 설정
+## <a name="scene-system-settings"></a>시스템 설정 장면
 
-MRTK는 복잡한 가감 장면 로드/언로드를 관리하는 데 도움이 되는 이 선택적 서비스를 제공합니다. 장면 시스템이 프로젝트에 적합한지 여부를 결정하려면 [장면 시스템 시작 가이드를 참조하세요.](../features/scene-system/scene-system-getting-started.md)
+MRTK는 복잡 한 추가 장면 로드/언로드를 관리 하는 데 도움이 되는 선택적 서비스를 제공 합니다. 장면 시스템이 프로젝트에 적합 한지 여부를 결정 하려면 [장면 시스템 시작 가이드를 참조 하세요.](../features/scene-system/scene-system-getting-started.md)
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SceneSystemProfile.png" width="650px" alt="Scene System settings 1" style="display:block;">
 
@@ -176,9 +176,9 @@ MRTK는 복잡한 가감 장면 로드/언로드를 관리하는 데 도움이 �
 
 ## <a name="additional-services-settings"></a>추가 서비스 설정
 
-Mixed Reality 도구 키트의 고급 영역 중 하나는 프레임워크에 "서비스"를 등록할 수 있는 [서비스 로케이터 패턴](https://en.wikipedia.org/wiki/Service_locator_pattern) 구현입니다. 이렇게 하면 프레임워크를 새로운 기능/시스템으로 쉽게 확장할 수 있을 뿐만 아니라 프로젝트에서 이러한 기능을 활용하여 자체 런타임 구성 요소를 등록할 수도 있습니다.
+Mixed Reality Toolkit의 고급 영역 중 하나는 프레임 워크에 "서비스"를 등록 하는 데 사용할 수 있는 [서비스 로케이터 패턴](https://en.wikipedia.org/wiki/Service_locator_pattern) 구현입니다. 이를 통해 프레임 워크를 새로운 기능/시스템으로 쉽게 확장할 수 있습니다. 또한 프로젝트에서 이러한 기능을 활용 하 여 고유한 런타임 구성 요소를 등록할 수 있습니다.
 
-등록된 모든 서비스는 MonoBehaviour 또는 어설프게 싱글톤 패턴을 구현하는 오버헤드와 비용 없이 모든 Unity 이벤트를 최대한 활용할 수 있습니다. 이를 통해 포그라운드 및 백그라운드 프로세스(예: 시스템 생성, 런타임 게임 논리 또는 거의 모든 것)를 실행하기 위한 장면 오버헤드가 없는 순수 C# 구성 요소를 사용할 수 있습니다.
+등록 된 서비스에서는 MonoBehaviour 또는 clunky singleton 패턴을 구현 하는 오버 헤드와 비용 없이 모든 Unity 이벤트의 모든 이점을 누릴 수 있습니다. 이를 통해 포그라운드 및 백그라운드 프로세스를 실행 하는 데 필요한 장면 오버 헤드가 없는 순수 c # 구성 요소 (예: 시스템, 런타임 게임 논리 또는 거의 모든 항목)를 사용할 수 있습니다.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_RegisteredServiceProvidersProfile.png" width="650px" alt="additional System settings" style="display:block;">
 
@@ -194,11 +194,11 @@ Mixed Reality 도구 키트의 고급 영역 중 하나는 프레임워크에 "�
 | 축 제약 조건 | 데이터 형식 | 설명 | 예제 사용 |
 | :--- | :--- | :--- | :--- |
 | 없음 | 데이터 없음 | 빈 동작 또는 이벤트에 사용 됩니다. | 이벤트 트리거 |
-| Raw (예약 됨) | object | 나중에 사용하도록 예약되어 있습니다. | 해당 없음 |
-| 디지털 | bool | 부울 on 또는 off 형식 데이터 | 컨트롤러 단추 |
-| 단일 축 | float | 단일 전체 자릿수 데이터 값 | 트리거 등의 원거리 입력 |
-| 이중 축 | Vector2.x | 여러 축에 대 한 이중 부동 소수점 형식 날짜 | Dpad 또는 엄지 스틱 |
-| 세 개의 Dof 위치 | Vector3 | float 축이 3개인 의 위치 형식 데이터 | 3D 위치 스타일 전용 컨트롤러 |
+| Raw (예약 됨) | object | 나중에 사용하도록 예약되어 있습니다. | N/A |
+| 디지털 | bool | 형식 데이터의 부울 켜기 또는 끄기 | 컨트롤러 단추 |
+| 단일 축 | float | 단정밀도 데이터 값 | 범위가 있는 입력(예: 트리거) |
+| 이중 축 | Vector2 | 여러 축에 대한 이중 float 형식 날짜 | Dpad 또는 Thumbstick |
+| Dof 위치 3개 | Vector3 | float 축이 3개인 의 위치 형식 데이터 | 3D 위치 스타일만 컨트롤러 |
 | Dof 회전 3개 | 쿼터니언 | float 축이 4개인 회전 전용 입력 | 3도 스타일 컨트롤러(예: Oculus Go 컨트롤러) |
 | Six Dof | Mixed Reality 자세(Vector3, Quaternion) | Vector3 및 Quaternion 구성 요소가 모두 있는 위치 및 회전 스타일 입력 | 모션 컨트롤러 또는 포인터 |
 
@@ -220,7 +220,7 @@ Mixed Reality 도구 키트의 고급 영역 중 하나는 프레임워크에 "�
 
 사용자 고유의 코드에서 이 작업을 수행할 수도 있습니다. 그러나 이것이 매우 일반적인 패턴인 것을 볼 때 프레임워크는 이 작업을 "기본 제공"하는 메커니즘을 제공합니다.
 
-입력 작업 규칙은 사용 가능한 입력 축에 대해 구성할 수 있습니다. 그러나 한 축 유형의 입력 작업은 동일한 축 유형의 다른 입력 동작으로 변환 될 수 있습니다. 이중 축 동작을 다른 이중 축 작업에 매핑할 수 있지만 디지털 또는 없음 작업에 매핑할 수 없습니다.
+입력 작업 사용 가능한 입력 축에 대해 규칙을 구성할 수 있습니다. 그러나 한 축 형식의 입력 동작을 동일한 축 형식의 다른 입력 동작으로 변환할 수 있습니다. 이중 축 동작을 다른 이중 축 작업에 매핑할 수 있지만 디지털 또는 없음 작업에는 매핑할 수 없습니다.
 
 ![입력 작업 규칙 프로필](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputActionRulesProfile.png)
 
@@ -229,29 +229,29 @@ Mixed Reality 도구 키트의 고급 영역 중 하나는 프레임워크에 "�
 
 ## <a name="pointer-configuration"></a>포인터 구성
 
-포인터는 모든 입력 장치에서 장면에서 상호 작용을 구동 하는 데 사용 됩니다 .이 경우에는 (collider가 연결 되어 있거나 UI 구성 요소) 장면의 모든 개체에 방향 및 적중 테스트를 모두 제공 합니다. 포인터는 기본적으로 컨트롤러, 헤드셋 (응시/포커스) 및 마우스/터치 입력에 대해 자동으로 구성 됩니다.
+포인터는 입력 디바이스에서 장면의 대화형 활동을 구동하는 데 사용되며, 장면의 모든 개체(충돌체가 연결되어 있거나 UI 구성 요소)를 사용하여 방향과 적중 테스트를 모두 제공합니다. 포인터는 기본적으로 컨트롤러, 헤드셋(응시/포커스) 및 마우스/터치 입력에 대해 자동으로 구성됩니다.
 
-혼합 현실 도구 키트에서 제공 하는 다 수의 선 구성 요소 중 하나를 사용 하거나 MRTK IMixedRealityPointer 인터페이스를 구현 하는 경우 사용자 고유의 포인터를 사용 하 여 활성 장면 내에서 포인터를 시각화할 수도 있습니다.
+Mixed Reality Toolkit에서 제공하는 여러 줄 구성 요소 중 하나를 사용하거나 MRTK IMixedRealityPointer 인터페이스를 구현하는 경우 직접 포인터를 사용하여 활성 장면 내에서 포인터를 시각화할 수도 있습니다.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputPointerProfile.png" width="650px" alt="Input Pointer Profile" style="display:block;">
 
-- 가리키기 익스텐트: 응시를 포함 하 여 모든 포인터에 대 한 전역 포인팅 익스텐트를 결정 합니다.
-- Raycast 계층 마스크 가리키기: raycast 계층 포인터를 결정 합니다.
-- 디버그 그리기 포인팅 광선: raycasting에 사용 되는 광선을 시각화 하는 디버그 도우미입니다.
-- 디버그 그리기 광선 색: 시각화에 사용할 색 집합입니다.
-- 응시 cursor prefab: 장면에 대해 전역 응시 커서를 쉽게 지정할 수 있습니다.
+- 포인팅 익스텐트: 응시를 비롯한 모든 포인터에 대한 전역 포인팅 익스텐트 결정
+- 포인팅 광선 캐스트 계층 마스크: 광선 캐스팅할 레이어 포인터를 결정합니다.
+- 디버그 그리기 포인팅 광선: 광선 캐스팅에 사용되는 광선을 시각화하기 위한 디버그 도우미입니다.
+- 그리기 포인팅 광선 색 디버그: 시각화에 사용할 색 집합입니다.
+- 응시 커서 프리팹: 모든 장면에 대한 전역 응시 커서를 쉽게 지정할 수 있습니다.
 
-필요한 경우에는 응시 공급자로 신속 하 게 이동 하 여 응시의 특정 값을 재정의할 수 있는 추가 도우미 단추가 있습니다.
+필요한 경우 응시에 대한 특정 값을 재정의하기 위해 응시 공급자로 빠르게 이동할 수 있는 추가 도우미 단추가 있습니다.
 
 ---
 <a name="gestures"></a>
 
 ## <a name="gestures-configuration"></a>제스처 구성
 
-제스처는 다양 한 Sdk (예: HoloLens)에서 제공 하는 다양 한 "제스처" 입력 메서드에 입력 작업을 할당 하는 데 사용할 수 있는 시스템 관련 구현입니다.
+제스처는 다양한 SDK(예: HoloLens)에서 제공하는 다양한 "제스처" 입력 메서드에 입력 작업을 할당할 수 있도록 하는 시스템별 구현입니다.
 
 > [!NOTE]
-> 현재 제스처 구현은 HoloLens 전용 이며 나중에 도구 키트에 추가 될 때 다른 시스템에 대해 향상 됩니다 (아직 날짜 없음).
+> 현재 제스처 구현은 HoloLens 전용이며 나중에 도구 키트에 추가될 때(아직 날짜 없음) 다른 시스템에 대해 향상될 예정입니다.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_GesturesProfile.png" width="650px" alt="Gesture configuration" style="display:block;">
 
@@ -260,13 +260,13 @@ Mixed Reality 도구 키트의 고급 영역 중 하나는 프레임워크에 "�
 
 ## <a name="speech-commands"></a>음성 명령
 
-제스처와 마찬가지로 일부 런타임 플랫폼은 Unity 프로젝트에서 받을 수 있는 명령을 생성 하는 기능과 함께 지능형 "음성 텍스트" 기능을 제공 합니다. 이 구성 프로필을 사용 하 여 다음을 구성할 수 있습니다.
+제스처와 마찬가지로 일부 런타임 플랫폼은 Unity 프로젝트에서 수신할 수 있는 명령을 생성하는 기능과 함께 지능형 "Speech to Text" 기능도 제공합니다. 이 구성 프로필을 사용하면 다음을 구성할 수 있습니다.
 
-1. 일반 설정-자동 시작 또는 수동 시작으로 설정 된 "시작 동작"은 입력 시스템 시작 시 KeywordRecognizer를 초기화할 지 여부를 결정 하거나, 프로젝트에서 KeywordRecognizer를 초기화할 시기를 결정 하도록 합니다. "인식 신뢰 수준"은 Unity의 [KEYWORDRECOGNIZER API](https://docs.unity3d.com/ScriptReference/Windows.Speech.KeywordRecognizer-ctor.html) 를 초기화 하는 데 사용 됩니다.
-2. 음성 명령-"단어"를 등록 하 고에서 프로젝트에 수신 될 수 있는 입력 작업으로 변환 합니다. 필요한 경우 키보드 작업에 연결할 수도 있습니다.
+1. 일반 설정 - 자동 시작 또는 수동 시작으로 설정된 "시작 동작"은 입력 시스템 시작 시 KeywordRecognizer를 초기화할지 또는 프로젝트에서 KeywordRecognizer를 초기화할 시기를 결정하도록 할지를 결정합니다. "인식 신뢰도 수준"은 Unity의 [KeywordRecognizer API를](https://docs.unity3d.com/ScriptReference/Windows.Speech.KeywordRecognizer-ctor.html) 초기화하는 데 사용됩니다.
+2. 음성 명령 - "단어"를 등록하고 프로젝트에서 받을 수 있는 입력 작업으로 변환합니다. 필요한 경우 키보드 작업에 연결할 수도 있습니다.
 
 > [!IMPORTANT]
-> 시스템은 현재 Windows 10 플랫폼 (예: HoloLens 및 Windows 10 desktop)에서 실행 되는 경우에만 음성을 지원 하 고 나중에 MRTK에 추가 될 때 다른 시스템에 대해 향상 됩니다 (아직 날짜 없음).
+> 시스템은 현재 Windows 10 플랫폼에서 실행하는 경우에만 음성을 지원합니다(예: HoloLens 및 Windows 10 Desktop). 향후 MRTK에 추가될 때(아직 날짜 없음) 다른 시스템에 대해 향상될 예정입니다.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SpeechCommandsProfile.png" width="650px" alt="Configuration Profile screens" style="display:block;">
 
@@ -275,29 +275,29 @@ Mixed Reality 도구 키트의 고급 영역 중 하나는 프레임워크에 "�
 
 ## <a name="controller-mapping-configuration"></a>컨트롤러 매핑 구성
 
-Mixed Reality Toolkit의 핵심 구성 화면 중 하나는 프로젝트에서 사용할 수 있는 다양 한 유형의 컨트롤러를 구성 하 고 매핑할 수 있는 기능입니다.
+Mixed Reality 도구 키트의 핵심 구성 화면 중 하나는 프로젝트에서 활용할 수 있는 다양한 유형의 컨트롤러를 구성하고 매핑하는 기능입니다.
 
-아래 구성 화면에서는 도구 키트에서 현재 인식 되는 컨트롤러를 구성할 수 있습니다.
+아래 구성 화면에서는 도구 키트에서 현재 인식되는 컨트롤러를 구성할 수 있습니다.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ControllerMappingProfile.png" width="650px" alt="Controller Mapping" style="display:block;">
 
-MRTK는 다음 컨트롤러/시스템에 대 한 기본 구성을 제공 합니다.
+MRTK는 다음 컨트롤러/시스템에 대한 기본 구성을 제공합니다.
 
-- 마우스 (3D 공간 마우스 지원 포함)
+- 마우스(3D 공간 마우스 지원 포함)
 - 터치 스크린
 - Xbox 컨트롤러
 - Windows Mixed Reality 컨트롤러
 - HoloLens 제스처
-- HTC Vive 지팡이 컨트롤러
-- Octouch 컨트롤러
-- 원격 컨트롤러 (oculus)
-- 일반 OpenVR 장치 (고급 사용자만 해당)
+- HTC Vive wand 컨트롤러
+- Oculus Touch 컨트롤러
+- Oculus 원격 컨트롤러
+- 일반 OpenVR 디바이스(고급 사용자만 해당)
 
-미리 빌드된 컨트롤러 시스템 중 하나에 대 한 이미지를 클릭 하면 해당 하는 모든 입력에 대해 단일 입력 작업을 구성할 수 있습니다. 예를 들어 아래 Oculus Touch controller 구성 화면을 볼 수 있습니다.
+미리 빌드된 컨트롤러 시스템의 이미지를 클릭하면 모든 해당 입력에 대해 단일 입력 작업을 구성할 수 있습니다. 예를 들어 아래의 Oculus Touch 컨트롤러 구성 화면을 참조하세요.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_WindowsMixedRealityControllerConfigScreen.png" width="650px" alt="Controller config screen" style="display:block;">
 
-위에서 식별 되지 않은 다른 OpenVR 또는 Unity 입력 컨트롤러를 구성 하는 고급 화면도 있습니다.
+위에서 식별되지 않은 다른 OpenVR 또는 Unity 입력 컨트롤러를 구성하기 위한 고급 화면도 있습니다.
 
 ---
 <a name="visualization"></a>
@@ -308,7 +308,7 @@ MRTK는 다음 컨트롤러/시스템에 대 한 기본 구성을 제공 합니�
 
 "전역"(특정 손으로 컨트롤러의 모든 인스턴스) 또는 개별 컨트롤러 유형/손에서 구성할 수 있습니다.
 
-MRTK는 Windows Mixed Reality 및 OpenVR에 대한 네이티브 SDK 컨트롤러 모델도 지원합니다. 이는 장면에 GameObjects로 로드되고 플랫폼의 컨트롤러 추적을 사용하여 배치됩니다.
+MRTK는 Windows Mixed Reality 및 OpenVR에 대한 네이티브 SDK 컨트롤러 모델도 지원합니다. 이러한 구성은 장면에 GameObjects로 로드되고 플랫폼의 컨트롤러 추적을 사용하여 배치됩니다.
 
 장면의 컨트롤러 표현이 실제 컨트롤러 위치에서 오프셋되어야 하는 경우 컨트롤러 모델의 프리팹에 대해 해당 오프셋을 설정하기만 하면 됩니다(예: 오프셋 위치로 컨트롤러 프리팹의 변환 위치 설정).
 
@@ -322,7 +322,7 @@ MRTK는 Windows Mixed Reality 및 OpenVR에 대한 네이티브 SDK 컨트롤러
 
 ![MRTK 편집기 구성 유틸리티](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_EditorConfiguration.png)
 
-### <a name="service-inspectors"></a>서비스 검사자
+### <a name="service-inspectors"></a>서비스 검사기
 
 서비스 검사기는 활성 서비스를 나타내는 장면 내 개체를 생성하는 편집기 전용 기능입니다. 이러한 개체를 선택하면 설명서 링크, 편집기 시각화 제어 및 서비스 상태에 대한 인사이트를 제공하는 검사기가 표시됩니다.
 
@@ -334,17 +334,17 @@ MRTK는 Windows Mixed Reality 및 OpenVR에 대한 네이티브 SDK 컨트롤러
 
 일부 혼합 현실 플랫폼과 깊이 버퍼를 공유하면 [홀로그램 안정화가](../performance/hologram-stabilization.md)향상될 수 있습니다. 예를 들어 Windows Mixed Reality 플랫폼은 프레임을 렌더링하는 데 걸리는 시간 동안 미묘한 머리 이동을 고려하도록 픽셀당 렌더링된 장면을 수정할 수 있습니다. 그러나 이러한 기술을 사용하려면 정확한 데이터가 있는 깊이 버퍼가 필요하므로 기하 도형이 사용자로부터 얼마나 멀리 떨어져 있는지 알 수 있습니다.
 
-장면에서 필요한 모든 데이터를 깊이 버퍼에 렌더링하도록 하기 위해 개발자는 구성 프로필의 *편집기 설정에서* *렌더링 깊이 버퍼* 기능을 전환할 수 있습니다. 그러면 현재 깊이 버퍼가 사용 되 고 [`DepthBufferRenderer`](xref:Microsoft.MixedReality.Toolkit.Rendering.DepthBufferRenderer) , 기본 카메라에 사후 처리 효과를 적용 하 여 장면 보기에 색으로 렌더링 합니다.
+장면에서 필요한 모든 데이터를 깊이 버퍼에 렌더링하도록 하기 위해 개발자는 구성 프로필의 *편집기 설정에서* *렌더링 깊이 버퍼* 기능을 전환할 수 있습니다. 그러면 현재 깊이 버퍼가 적용되고 후처리 효과인 를 주 카메라에 적용하여 장면 보기에 색으로 [`DepthBufferRenderer`](xref:Microsoft.MixedReality.Toolkit.Rendering.DepthBufferRenderer) 렌더링됩니다.
 
 ![렌더링 깊이 버퍼 유틸리티 ](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_DepthBufferExample.gif)
- <sup>장면의 파란색 실린더에는 깊이 데이터가 기록 되지 않도록 zwrite off가 포함 된 재료가 있습니다</sup> .
+ <sup>장면의 파란색 실린더에는 ZWrite가 꺼진 재질이 있으므로 깊이 데이터가 기록되지 않습니다.</sup>
 
-## <a name="changing-profiles-at-runtime"></a>런타임에 프로필 변경
+## <a name="changing-profiles-at-runtime"></a>런타임 시 프로필 변경
 
-런타임에 프로필을 업데이트할 수 있으며, 일반적으로 다음과 같은 두 가지 시나리오와 시간이 유용 합니다.
+런타임에 프로필을 업데이트할 수 있으며 일반적으로 다음과 같은 두 가지 시나리오와 시간이 있습니다.
 
-1. **이전 mrtk 초기화 프로필 스위치**: 시작 시 mrtk가 초기화 되 고 프로필이 활성 상태가 되기 전에 장치 기능에 따라 다른 기능을 사용 하거나 사용 하지 않도록 설정 하는 사용 하지 않는 프로필을 대체 합니다. 예를 들어 환경이 공간 매핑 하드웨어가 없는 VR에서 실행 되는 경우 공간 매핑 구성 요소를 사용 하도록 설정 하는 것이 적합 하지 않을 수 있습니다.
-1. **활성 프로필 스위치**: 시작 후 MRTK가 초기화 되 고 프로필이 활성 상태가 된 후 현재 사용 중인 프로필을 교환 하 여 특정 기능의 동작 방식을 변경 합니다. 예를 들어 응용 프로그램에 특정 하위 환경이 있을 수 있습니다.
+1. **MRTK 초기화 프로필 전환 전:** 시작 시 MRTK가 초기화되고 프로필이 활성화되기 전에 아직 사용되지 않는 프로필을 대체하여 디바이스 기능에 따라 다른 기능을 사용하거나 사용하지 않도록 설정합니다. 예를 들어 환경이 공간 매핑 하드웨어가 없는 VR에서 실행되는 경우 공간 매핑 구성 요소를 사용하도록 설정하는 것이 타의가 아닐 수 있습니다.
+1. **활성 프로필 전환:** 시작 후 MRTK가 초기화되고 프로필이 활성화된 후 현재 사용 중인 프로필을 교환하여 특정 기능의 동작 방식을 변경합니다. 예를 들어 원거리 포인터를 완전히 제거하려는 애플리케이션의 특정 하위 환경이 있을 수 있습니다.
 
 ### <a name="pre-mrtk-initialization-profile-switch"></a>이전 MRTK 초기화 프로필 스위치
 
@@ -389,12 +389,12 @@ public class PreInitProfileSwapper : MonoBehaviour
 MixedRealityToolkit.Instance.ActiveProfile = profileToUse;
 ```
 
-런타임 중에 를 설정하는 경우 `ActiveProfile` 현재 실행 중인 서비스의 소멸은 모든 서비스의 마지막 LateUpdate() 이후에 발생하며, 새 프로필과 연결된 서비스의 인스턴스화 및 초기화는 모든 서비스의 첫 번째 Update() 전에 발생합니다.
+참고 런타임 중에 설정 하는 경우 `ActiveProfile` 현재 실행 중인 서비스의 삭제는 모든 서비스의 마지막 behaviour () 이후에 발생 하며, 새 프로필과 연결 된 서비스의 인스턴스화 및 초기화는 모든 서비스의 첫 번째 업데이트 () 이전에 발생 합니다.
 
-이 프로세스 중에 눈에 띄는 애플리케이션 망설임이 발생할 수 있습니다. 또한 스크립트보다 우선 순위가 높은 `MixedRealityToolkit` 스크립트는 새 프로필을 제대로 설정하기 전에 업데이트를 입력할 수 있습니다. 스크립트 우선 순위에 대한 자세한 내용은 [스크립트 실행 순서 설정을](https://docs.unity3d.com/Manual/class-MonoManager.html) 참조하세요.
+이 프로세스 중에는 눈에 띄는 응용 프로그램 hesitation 발생할 수 있습니다. 또한 스크립트 보다 우선 순위가 높은 모든 스크립트는 `MixedRealityToolkit` 새 프로필이 제대로 설정 되기 전에 해당 업데이트를 입력할 수 있습니다. 스크립트 우선 순위에 대 한 자세한 내용은 [스크립트 실행 순서 설정](https://docs.unity3d.com/Manual/class-MonoManager.html) 을 참조 하세요.
 
-프로필 전환 프로세스에서 기존 UI 카메라는 변경되지 않은 상태로 유지되어 캔버스가 필요한 Unity UI 구성 요소가 스위치 후에도 계속 작동합니다.
+프로필 전환 프로세스에서 기존 UI 카메라는 변경 되지 않은 상태로 유지 되 고, canvas를 필요로 하는 Unity UI 구성 요소가 스위치 후에도 계속 작동 하도록 보장 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [홀로그램 안정화](../performance/hologram-stabilization.md)

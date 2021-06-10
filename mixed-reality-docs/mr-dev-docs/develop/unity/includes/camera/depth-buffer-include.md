@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 3306a9925c55c24c4d72ecb58d7c744dd64b283e
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 481a063cac3cb4d7e5ef7521ad19af43cb68e2cf
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636316"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110631142"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-[Mrtk의 구성 대화 상자](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mrtk-configuration-dialog) 는 XR SDK 및 레거시 WSA에 대해 깊이 버퍼 설정을 설정 하려고 하지만 해당 탭을 확인 하 고 Unity에서 설정을 확인 하는 것이 좋습니다.
+[Mrtk의 구성 대화 상자](/windows/mixed-reality/mrtk-unity/configuration/mrtk-configuration-dialog) 는 XR SDK 및 레거시 WSA에 대해 깊이 버퍼 설정을 설정 하려고 하지만 해당 탭을 확인 하 고 Unity에서 설정을 확인 하는 것이 좋습니다.
 
 # <a name="xr-sdk"></a>[XR SDK](#tab/xr)
 <!-- NEVER CHANGE THE ABOVE LINE! -->

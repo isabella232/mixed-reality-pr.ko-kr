@@ -1,35 +1,35 @@
 ---
-ms.openlocfilehash: 25e42ba872764a98d4cb966b5a4922cc1dea0dc9
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: 96da41f28533c227fb106d8842907747f34098ec
+ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528780"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110350010"
 ---
-# <a name="world-locking-tools-recommended"></a>[세계 잠금 도구 (권장)](#tab/wlt)
+# <a name="world-locking-tools-recommended"></a>[World Locking Tools(권장)](#tab/wlt)
 
-기본적으로 세계 잠금 도구는 전체 세션에서 실제 세계를 기준으로 Unity의 좌표계를 복원 합니다. 즉, 응용 프로그램을 종료 하 고 다시 실행 한 후에도 홀로그램이 물리적 환경에서 동일 하 게 표시 되도록 하기 위해 홀로그램은 동일한 포즈를 다시 사용 해야 합니다.
+기본적으로 World Locking Tools는 세션 전체에서 실제 세계를 기준으로 Unity의 좌표계를 복원합니다. 즉, 홀로그램이 애플리케이션을 종료하고 다시 실행한 후 실제 세계에서 동일한 위치에 나타나도록 하려면 홀로그램이 동일한 자세만 다시 가져야 합니다.
 
-![Unity 검사기의 세계 잠금 컨텍스트 구성 요소](../../images/world-locking-tools-img-02.png)
+![Unity 검사기에서 세계 잠금 컨텍스트 구성 요소](../../images/world-locking-tools-img-02.png)
 
-응용 프로그램에 더 세밀 하 게 제어 해야 하는 경우 검사기에서 **자동 저장** 및 **자동 로드** 를 사용 하지 않도록 설정 하 고, [설명서의 지 속성 섹션](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html)에 설명 된 대로 스크립트에서 지 속성을 관리할 수 있습니다.
+애플리케이션에 더 세부적인 제어가 필요한 경우 검사기에서 **자동 저장** 및 **자동 로드를** 사용하지 않도록 설정하고 [설명서의 지속성 섹션에](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html)설명된 대로 스크립트에서 관리되는 지속성을 사용할 수 있습니다.
 
 # <a name="aranchormanager"></a>[ARAnchorManager](#tab/anchorstore)
 
-**XRAnchorStore** 이라는 추가 API를 사용 하면 세션 간에 앵커가 지속 될 수 있습니다. XRAnchorStore는 장치에 저장 된 앵커를 표현한 것입니다. Unity 장면의 **Aranchors** 에서 앵커를 유지 하거나, 저장소에서 새 **aranchors** 로 로드 하거나, 저장소에서 삭제할 수 있습니다.
+**XRAnchorStore라는** 추가 API를 사용하면 세션 간에 앵커를 유지할 수 있습니다. XRAnchorStore는 디바이스에 저장된 앵커의 표현입니다. 앵커는 Unity 장면의 **ARAnchors에서** 유지되거나, 스토리지에서 새 **ARAnchors로** 로드되거나, 스토리지에서 삭제될 수 있습니다.
 
 > [!NOTE]
-> 이러한 앵커는 동일한 장치에 저장 되 고 로드 됩니다. 장치 간 앵커 저장소는 향후 릴리스에서 Azure 공간 앵커를 통해 지원 됩니다.
+> 이러한 앵커는 동일한 디바이스에 저장되고 로드됩니다. 디바이스 간 앵커 스토리지는 향후 릴리스에서 Azure Spatial Anchors 통해 지원될 예정입니다.
 
 ### <a name="namespaces"></a>네임스페이스
 
-**Unity 2020 및 OpenXR**: 
+**Unity 2020 및 OpenXR의** 경우: 
 
 ``` cs
 using Microsoft.MixedReality.ARSubsystems.XRAnchorStore
 ```
 
-또는 **Unity 2019/2020 + WINDOWS XR 플러그 인**: 
+또는 **Unity 2019/2020 + Windows XR 플러그 인:** 
 
 ```cs 
 using UnityEngine.XR.WindowsMR.XRAnchorStore
@@ -60,15 +60,15 @@ using UnityEngine.XR.WindowsMR.XRAnchorStore
 }
 ```
 
-### <a name="getting-an-anchor-store-reference"></a>앵커 저장소 참조 가져오기 
+### <a name="getting-an-anchor-store-reference"></a>앵커 저장소 참조 얻기 
 
-**Unity 2020 및 OpenXR** 를 사용 하 여 XRAnchorStore를 로드 하려면 XRAnchorSubsystem의 ARAnchorManager 하위 시스템에 확장 메서드를 사용 합니다.
+**Unity 2020 및 OpenXR을** 사용하여 XRAnchorStore를 로드하려면 ARAnchorManager의 하위 시스템인 XRAnchorSubsystem에서 확장 메서드를 사용합니다.
 
 ``` cs
 public static Task<XRAnchorStore> LoadAnchorStoreAsync(this XRAnchorSubsystem anchorSubsystem)
 ```
 
-**Unity 2019/2020 및 WINDOWS XR 플러그** 인을 사용 하 여 XRAnchorStore를 로드 하려면 XRReferencePointSubsystem (unity 2019) 또는 XRAnchorSubsystem (unity 2020)의 확장 메서드 (ARReferencePointManager/ARAnchorManager의 하위 시스템)를 사용 합니다.
+**Unity 2019/2020 및 Windows XR 플러그 인을** 사용하여 XRAnchorStore를 로드하려면 ARReferencePointManager/ARAnchorManager의 하위 시스템인 XRReferencePointSubsystem(Unity 2019) 또는 XRAnchorSubsystem(Unity 2020)에서 확장 메서드를 사용합니다.
 
 ```cs
 // Unity 2019 + Windows XR Plugin
@@ -80,14 +80,14 @@ public static Task<XRAnchorStore> TryGetAnchorStoreAsync(this XRAnchorSubsystem 
 
 ### <a name="loading-an-anchor-store"></a>앵커 저장소 로드
 
-**Unity 2020 및 OpenXR** 에서 앵커 저장소를 로드 하려면 다음과 같이 ARAnchorManager의 하위 시스템에서이 저장소에 액세스 합니다.
+**Unity 2020 및 OpenXR에서** 앵커 저장소를 로드하려면 다음과 같이 ARAnchorManager의 하위 시스템으로부터 앵커 저장소에 액세스합니다.
 
 ``` cs
 ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
 XRAnchorStore anchorStore = await arAnchorManager.subsystem.LoadAnchorStoreAsync();
 ```
 
-또는 **Unity 2019/2020 및 WINDOWS XR 플러그** 인을 사용 하 여 다음을 수행 합니다.
+또는 **Unity 2019/2020 및 Windows XR 플러그 인:**
 
 ``` cs
 // Unity 2019
@@ -99,42 +99,42 @@ ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
 XRAnchorStore anchorStore = await arAnchorManager.subsystem.TryGetAnchorStoreAsync();
 ```
 
-앵커 지속/유지 안 됨의 전체 예를 보려면 [Mixed Reality OpenXR 플러그 인 샘플 장면](../../openxr-getting-started.md#hololens-2-samples)에서 앵커-> 앵커 샘플 GameObject 및 AnchorsSample 스크립트를 확인 하세요.
+앵커 유지/비지속성의 전체 예제를 보려면 Mixed Reality [OpenXR 플러그 인 샘플 장면에서](../../openxr-getting-started.md#unity-sample-projects-for-openxr-and-hololens-2)앵커 -> Anchors 샘플 GameObject 및 AnchorsSample.cs 스크립트를 확인하세요.
 
-![앵커 샘플이 강조 표시 된 Unity 편집기에서 열린 계층 패널의 스크린샷](../../images/openxr-features-img-04.png)
+![앵커 샘플이 강조 표시된 Unity 편집기에서 열린 계층 구조 패널의 스크린샷](../../images/openxr-features-img-04.png)
 
-![앵커 샘플 스크립트가 강조 표시 된 상태로 Unity 편집기에서 열리는 검사기 패널의 스크린샷](../../images/openxr-features-img-05.png)
+![앵커 샘플 스크립트가 강조 표시된 Unity 편집기에서 열린 검사기 패널의 스크린샷](../../images/openxr-features-img-05.png)
 
 # <a name="worldanchor"></a>[WorldAnchor](#tab/worldanchor)
 
-**WorldAnchorStore** 는 응용 프로그램의 여러 인스턴스에서 holograms 특정 실제 위치에 유지 되는 holographic 환경을 만드는 핵심입니다. 사용자는 언제 든 지 개별 holograms을 고정 하 고, 나중에 앱의 여러 사용에 대 한 동일한 지점에서 찾을 수 있습니다.
+**WorldAnchorStore는** 홀로그램이 애플리케이션 인스턴스에서 특정 실제 위치에 유지되는 홀로그램 환경을 만드는 핵심입니다. 그런 다음, 사용자는 원하는 위치에 개별 홀로그램을 고정하고 나중에 앱의 여러 용도에 대해 동일한 지점에서 찾을 수 있습니다.
 
-**네임 스페이스:** *UNITYENGINE. XR*<br>
+**네임스페이스:** *UnityEngine.XR.WSA.Persistence*<br>
 **클래스:** *WorldAnchorStore*
 
-WorldAnchorStore를 사용 하면 세션 간에 WorldAnchor의 위치를 유지할 수 있습니다. 실제로 세션 간에 holograms을 유지 하려면 특정 세계 앵커를 사용 하는 Gameobject를 별도로 추적 해야 합니다. 일반적으로 세계 앵커를 사용 하 여 GameObject 루트를 만들고 로컬 위치 오프셋을 사용 하 여 자식을 holograms 고정 하는 것이 좋습니다.
+WorldAnchorStore를 사용하면 세션 간에 WorldAnchor의 위치를 유지할 수 있습니다. 세션 간에 홀로그램을 실제로 유지하려면 특정 세계 앵커를 사용하는 GameObjects를 별도로 추적해야 합니다. 종종 세계 앵커를 사용하여 GameObject 루트를 만들고 로컬 위치 오프셋을 사용하여 자식 홀로그램을 고정하는 것이 타당합니다.
 
-이전 세션에서 holograms를 로드 하려면 다음을 수행 합니다.
+이전 세션에서 홀로그램을 로드하려면 다음을 수행합니다.
 
-1. WorldAnchorStore 가져오기
-2. 세계 앵커와 관련 된 앱 데이터를 로드 하 여 세계 앵커의 ID를 제공 합니다.
-3. 해당 ID에서 전 세계 앵커 로드
+1. WorldAnchorStore를 얻습니다.
+2. 세계 앵커의 ID를 제공하는 세계 앵커와 관련된 앱 데이터 로드
+3. ID에서 세계 앵커 로드
 
-이후 세션에 대해 holograms를 저장 하려면:
+향후 세션에 대해 홀로그램을 저장하려면 다음을 수행합니다.
 
-1. WorldAnchorStore 가져오기
-2. ID를 지정 하 여 전 세계 앵커 저장
-3. ID와 함께 세계 앵커와 관련 된 앱 데이터 저장
+1. WorldAnchorStore를 얻습니다.
+2. ID를 지정하여 세계 앵커 저장
+3. ID와 함께 세계 앵커와 관련된 앱 데이터 저장
 
-### <a name="getting-the-worldanchorstore"></a>WorldAnchorStore 가져오기
+### <a name="getting-the-worldanchorstore"></a>WorldAnchorStore 얻기
 
-작업을 수행할 준비가 된 시기를 알 수 있도록 WorldAnchorStore에 대 한 참조를 유지 하려고 합니다. 비동기 호출 이므로 시작 하는 즉시 다음을 호출 합니다.
+작업을 수행할 준비가 되면 알 수 있도록 WorldAnchorStore에 대한 참조를 유지하려고 합니다. 비동기 호출이므로 시작하는 즉시 다음을 호출하려고 합니다.
 
 ```cs
 WorldAnchorStore.GetAsync(StoreLoaded);
 ```
 
-이 경우 WorldAnchorStore가 로드를 완료 한 경우에 대 한 처리기입니다.
+이 경우 StoreLoaded는 WorldAnchorStore가 로드를 완료한 경우에 대한 처리기입니다.
 
 ```cs
 private void StoreLoaded(WorldAnchorStore store)
@@ -143,11 +143,11 @@ private void StoreLoaded(WorldAnchorStore store)
 }
 ```
 
-이제 특정 세계 앵커를 저장 하 고 로드 하는 데 사용할 WorldAnchorStore에 대 한 참조가 있습니다.
+이제 특정 World Anchors를 저장하고 로드하는 데 사용할 WorldAnchorStore에 대한 참조가 있습니다.
 
 ### <a name="saving-a-worldanchor"></a>WorldAnchor 저장
 
-저장 하기 위해 저장 하는 항목의 이름을로 하 고 저장 하려는 경우 앞에서 받은 WorldAnchor에 전달 하기만 하면 됩니다. 참고: 두 앵커를 같은 문자열에 저장 하려고 하면 실패 합니다 (store. Save는 false를 반환 합니다. 이전 저장을 삭제 한 후 새 저장을 저장 합니다.
+저장하려면 저장하려는 이름을 지정하고 저장하려는 경우 이전에 얻은 WorldAnchor에 전달하기만 하면됩니다. 참고: 동일한 문자열에 두 개의 앵커를 저장하려고 하면 실패합니다(저장소. 저장하면 false가 반환됩니다.) 새 저장을 저장하기 전에 이전 저장을 삭제합니다.
 
 ```cs
 private void SaveGame()
@@ -163,7 +163,7 @@ private void SaveGame()
 
 ### <a name="loading-a-worldanchor"></a>WorldAnchor 로드
 
-로드 하려면 다음을 수행 합니다.
+로드하려면 다음을 수행합니다.
 
 ```cs
 private void LoadGame()
@@ -177,11 +177,11 @@ private void LoadGame()
 }
 ```
 
-저장소를 추가로 사용할 수도 있습니다. Delete ()-이전에 저장 하 고 저장 한 앵커를 제거 합니다. 이전에 저장 된 모든 데이터를 제거 하려면 ()를 선택 취소 합니다.
+저장소를 사용할 수도 있습니다. Delete() - 이전에 저장하고 저장한 앵커를 제거합니다. 이전에 저장된 모든 데이터를 제거하려면 Clear()를 선택합니다.
 
 ### <a name="enumerating-existing-anchors"></a>기존 앵커 열거
 
-이전에 저장 된 앵커를 검색 하려면 GetAllIds를 호출 합니다.
+이전에 저장된 앵커를 검색하려면 GetAllIds를 호출합니다.
 
 ```cs
 string[] ids = this.store.GetAllIds();
@@ -191,10 +191,10 @@ for (int index = 0; index < ids.Length; index++)
 }
 ```
 
-## <a name="persisting-holograms-for-multiple-devices"></a>여러 장치에 대 한 holograms 유지
+## <a name="persisting-holograms-for-multiple-devices"></a>여러 디바이스에 대한 홀로그램 유지
 
-<a href="/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a> 를 사용 하 여 로컬 WorldAnchor에서 영 속 클라우드 앵커를 만들 수 있습니다. 그러면 해당 장치가 동시에 함께 제공 되지 않는 경우에도 앱이 여러 HoloLens, IOS 및 Android 장치에서 찾을 수 있습니다.  클라우드 앵커는 지속 되기 때문에 시간에 따른 여러 장치는 동일한 물리적 위치에서 해당 앵커에 대해 렌더링 된 콘텐츠를 볼 수 있습니다.
+<a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> 사용하여 로컬 WorldAnchor에서 지속형 클라우드 앵커를 만들 수 있습니다. 그러면 앱이 여러 HoloLens, iOS 및 Android 디바이스에서 찾을 수 있습니다( 해당 디바이스가 동시에 함께 표시되지 않더라도).  클라우드 앵커는 영구적이므로 시간이 지남에 따라 여러 디바이스에서 동일한 물리적 위치에서 해당 앵커를 기준으로 렌더링된 콘텐츠를 볼 수 있습니다.
 
-Unity에서 공유 환경 빌드를 시작 하려면 5 분 <a href="/azure/spatial-anchors/unity-overview" target="_blank">Azure 공간 앵커 Unity 퀵 스타트</a>를 사용해 보세요.
+Unity에서 공유 환경 빌드를 시작하려면 5분 Azure Spatial Anchors Unity 빠른 시작을 사용해 <a href="/azure/spatial-anchors/unity-overview" target="_blank">보세요.</a>
 
-Azure 공간 앵커를 사용 하 여 실행 하면 <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Unity에서 앵커를 만들고 찾을</a>수 있습니다.
+Azure Spatial Anchors 사용하여 실행하면 <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Unity 에서 앵커를 만들고 찾을</a>수 있습니다.

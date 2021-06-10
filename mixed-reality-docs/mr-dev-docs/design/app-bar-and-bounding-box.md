@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
 keywords: Windows Mixed Reality, 앱 바, 경계 상자, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 0ccec5240854de9a7db6a79d5b90b97f1e6b81de
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 750fb238e5b7f22998a86f71607498c8f6982076
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299908"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600522"
 ---
 # <a name="bounding-box-and-app-bar"></a>경계 상자 및 앱 바
 ![경계는 혼합 현실에서 개체 조작을 위한 표준 인터페이스입니다.](images/UX_Hero_BoundingBox.jpg)<br>
@@ -95,7 +95,7 @@ ms.locfileid: "107299908"
 ## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 경계 상자
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 는 경계 상자와 앱 바에 대 한 스크립트 및 prefabs을 제공 합니다. BoundingBox 스크립트를 모든 개체에 할당 하 여 경계 상자를 추가할 수 있습니다.
 
-* [MRTK-경계 상자](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)
+* [MRTK-경계 상자](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)
 
 
 <br>

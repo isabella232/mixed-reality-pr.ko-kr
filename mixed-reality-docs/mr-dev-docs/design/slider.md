@@ -1,31 +1,31 @@
 ---
 title: 슬라이더
-description: 혼합 현실 도구 키트를 사용 하 여 트랙에서 노브 또는 레버를 이동 하 여 값을 설정 하는 데 슬라이더 UI 구성 요소를 사용 하는 방법을 알아봅니다.
+description: 슬라이더 UI 구성 요소를 사용하여 Mixed Reality Toolkit를 사용하여 트랙에서 노브 또는 레버를 이동하여 값을 설정하는 방법을 알아봅니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 슬라이더, MRTK, 혼합 현실 도구 키트
-ms.openlocfilehash: e3a50ea617beac6b341ebdf27cad333168222c07
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Mixed Reality, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 슬라이더, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: c1619a90b7df1a34fa1541663a3f521ba5e75662
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299708"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600162"
 ---
 # <a name="slider"></a>슬라이더
 
 ![슬라이더](images/UX_Hero_Slider.jpg)
 
-슬라이더는 값을 설정 하는 데 사용 되는 UI 구성 요소입니다. 조정 가능한 콘텐츠를 시각적으로 표시 하 고 전체 콘텐츠 범위에서 현재 설정을 제공 합니다. 한쪽에 옵션을 사용 하 여 추적으로 표시 됩니다. 노브 또는 레버를 한 쪽 끝 이나 다른 쪽으로 끌어 현재 값을 나타내는 항목을 선택 합니다. 손가락을 직접 또는 거리로 직접 이동 하 여 손가락을 끄는 슬라이더를 이동할 수 있습니다. 슬라이더는 응시, 공기 탭 및 동작 컨트롤러와 같은 다양 한 입력 형식에서 작동 합니다.
+슬라이더 는 값을 설정하는 데 사용되는 UI 구성 요소입니다. 조정 가능한 콘텐츠의 시각적 표시와 콘텐츠의 전체 범위에서 현재 설정을 제공합니다. 양쪽에 옵션이 있는 트랙으로 표시됩니다. 현재 값을 나타내는 노브 또는 레버를 한 쪽 또는 다른 쪽 끝으로 끌어서 선택할 수 있습니다. 슬라이더를 직접 또는 멀리서 직접 잡으면 손가락 모으기 슬라이더를 이동할 수 있습니다. 슬라이더는 응시, 에어 탭 및 모션 컨트롤러와 같은 다양한 입력 형식으로 작동합니다.
 
 <br>
 
 ---
 
-## <a name="slider-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 슬라이더
+## <a name="slider-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity용 MRTK(Mixed Reality Toolkit)의 슬라이더
 
-* [MRTK-슬라이더](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/sliders)
+* [MRTK - 슬라이더](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/sliders)
 
 <br>
 

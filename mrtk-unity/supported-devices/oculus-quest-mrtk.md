@@ -5,24 +5,23 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, Oculus 퀘스트,
-ms.openlocfilehash: c0eccd0b366d39529eafc51d23031fc30144b1ae
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 0892e0d416cd07d1bedbeea0ddb316e3eb012b94
+ms.sourcegitcommit: 4c1dd5c22af69eeb192425118c2bfb95344b8dd9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143966"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110441174"
 ---
-# <a name="how-to-configure-oculus-quest-in-mrtk-using-the-xr-sdk-pipeline"></a>XR SDK 파이프라인을 사용 하 여 MRTK에서 Oculus 퀘스트를 구성 하는 방법
+# <a name="building-and-deploying-mrtk-to-oculus-quest-using-the-xr-sdk-pipeline"></a>XR SDK 파이프라인을 사용 하 여 MRTK를 빌드하고 배포 하는 방법
 
 [Oculus 퀘스트](https://www.oculus.com/quest/) 를 수행 해야 합니다.
 
-Oculus 퀘스트에 대 한 MRTK의 지원은 두 개의 다른 원본, 즉 Unity의 XR 파이프라인과 Oculus Integration Unity 패키지를 통해 제공 됩니다. **Oculus XRSDK Data Provider** 는 두 소스를 사용 하도록 설정 하 고 Oculus 퀘스트에서 MRTK를 사용 하는 데 사용 해야 합니다.
+Oculus 퀘스트에 대 한 MRTK의 지원은 두 개의 다른 원본, 즉 Unity의 XR SDK 파이프라인 및 Oculus Integration Unity 패키지를 통해 제공 됩니다. **Oculus XRSDK Data Provider** 는 두 소스를 사용 하도록 설정 하 고, Oculus 퀘스트에서 MRTK를 배포 하는 데 사용 해야 합니다.
 
-[Unity의 XR 파이프라인](https://docs.unity3d.com/Manual/XR.html) 을 사용 하면 Oculus Quest로 헤드 추적 및 헤드 추적을 사용할 수 있습니다.
-이 파이프라인은 Unity 2019.3 이상에서 XR 응용 프로그램을 개발 하는 데 사용할 수 있는 표준입니다. 이 파이프라인을 사용 하려면 **Unity 2019.3 이상 버전** 을 사용 해야 합니다.
+[UNITY XR SDK 파이프라인](https://docs.unity3d.com/Manual/XR.html) 을 사용 하면 Oculus Quest로 헤드 추적 및 헤드 추적을 사용할 수 있습니다.
+이 파이프라인은 Unity 2019.3 이상에서 XR 응용 프로그램을 개발 하는 데 사용할 수 있는 표준입니다. 이 파이프라인을 사용 하려면 **Unity 2019.3 이상 버전** 을 사용 해야 합니다. 이는 MRTK 응용 프로그램을 Oculus 퀘스트에 배포 하는 **데 필요** 합니다. 
 
-[Oculus 통합 Unity 패키지](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) 를 사용 하면 Oculus 퀘스트를 통해 **손으로 추적할** 수 있습니다.
-이 데이터 공급자는 Unity의 **XR 파이프라인** 또는 **레거시 XR 파이프라인** 을 사용 **하지** 않지만, 컨트롤러 및 헤드 추적이 unity의 XR 파이프라인에 의해 처리 되므로, 사용 되지 않는 **레거시 XR 파이프라인이** 아니라 **XR 파이프라인** 을 사용 하 고 있는지 확인 하기 위해 **oculus 퀘스트에 대 한 프로젝트를 설정** 하는 단계를 따라야 합니다.
+[Oculus 통합 Unity 패키지](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) 를 사용 하면 Oculus 퀘스트를 통해 **손으로 추적할** 수 있습니다. 이 데이터 공급자는 Unity의 **XR SDK 파이프라인** 또는 **레거시 XR 파이프라인** 을 사용 **하지** 않습니다.
 
 ## <a name="setting-up-project-for-the-oculus-quest"></a>Oculus 퀘스트에 대 한 프로젝트 설정
 
@@ -30,7 +29,7 @@ Oculus 퀘스트에 대 한 MRTK의 지원은 두 개의 다른 원본, 즉 Unit
 
 1. 장치에서 [개발자 모드](https://developer.oculus.com/documentation/native/android/mobile-device-setup/) 를 사용 하도록 설정 했는지 확인 합니다. Oculus ADB 드라이버를 설치 하는 것은 선택 사항입니다.
 
-## <a name="setting-up-the-xr-pipeline-for-oculus-quest"></a>Oculus 퀘스트에 대 한 XR 파이프라인 설정
+## <a name="setting-up-the-xr-sdk-pipeline-for-oculus-quest"></a>Oculus 퀘스트에 대 한 XR SDK 파이프라인 설정
 
 1. **Oculus XR 플러그 인** 이 창에 설치 되어 있는지 확인 합니다 **(> 패키지 관리자)** .
 
@@ -64,35 +63,35 @@ Oculus 퀘스트에 대 한 MRTK의 지원은 두 개의 다른 원본, 즉 Unit
         - 프로필을 DefaultXRSDKConfigurationProfile로 변경 하 고 빌드로 이동 하 여 [프로젝트를 빌드 및 배포](oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest) 로 이동 합니다.
 
     - 그렇지 않으면 다음을 수행 합니다.
-        - 계층 구조에서 MixedRealityToolkit 게임 개체를 선택하고 **복사 및 사용자 지정을** 선택하여 기본 혼합 현실 프로필을 복제합니다.
+        - 계층에서 MixedRealityToolkit game 개체를 선택 하 고 **복사 및 사용자 지정** 을 선택 하 여 기본 혼합 현실 프로필을 복제 합니다.
 
         ![프로필 복제](../images/cross-platform/CloneProfile.png)
 
-        - **입력** 구성 프로필 선택
+        - **입력** 구성 프로필을 선택 합니다.
 
         ![입력 구성 프로필](../images/cross-platform/InputConfigurationProfile.png)
 
-        - 입력 시스템 프로필에서 **복제를** 선택하여 수정을 사용하도록 설정합니다.
+        - 입력 시스템 프로필에서 **복제** 를 선택 하 여 수정할 수 있도록 합니다.
 
         ![입력 시스템 프로필 복제](../images/cross-platform/CloneInputSystemProfile.png)
 
-        - 입력 **데이터 공급자 섹션을** 열고 맨 위에서 **Data Provider 추가를** 선택하면 목록 끝에 새 데이터 공급자가 추가됩니다.  새 데이터 공급자를 열고 **형식을** **Microsoft.MixedReality.Toolkit.XRSDK.Oculus > OculusXRSDKDeviceManager로** 설정합니다.
+        - **입력 데이터 공급자** 섹션을 열고 맨 위에 있는 **Data Provider 추가** 를 선택 하면 새 데이터 공급자가 목록의 끝에 추가 됩니다.  새 데이터 공급자를 열고 **Type** 을 MixedReality으로 설정 합니다. **OculusXRSDKDeviceManager >.**
 
-        ![Oculus XRSDK Data Provider 추가](../images/cross-platform/oculus-quest/OculusAddDataXRSDKProvider.png)
+        ![XRSDK Data Provider 추가](../images/cross-platform/oculus-quest/OculusAddDataXRSDKProvider.png)
 
-1. Oculus XR SDK Data Provider 입력을 올바르게 라우팅하도록 OVR Camera Rig 및 OVR Hands를 사용하여 프로젝트를 자동으로 구성하는 OVR Camera Rig Prefab이 포함되어 있습니다. 장면에 OVR Camera Manual을 수동으로 추가하려면 설정 및 입력을 수동으로 구성해야 합니다.
+1. Oculus XR SDK Data Provider에는 OVR Camera Rig와 OVR 손을 사용 하 여 프로젝트를 자동으로 구성 하는 OVR 카메라 Rig Prefab 포함 되어 있습니다. 장면에 OVR 카메라 Rig를 수동으로 추가 하려면 설정 및 입력을 수동으로 구성 해야 합니다.
 
-## <a name="build-and-deploy-your-project-to-oculus-quest"></a>프로젝트를 빌드하고 Oculus Quest에 배포
+## <a name="build-and-deploy-your-project-to-oculus-quest"></a>프로젝트를 빌드하고 배포 하 여 Oculus 퀘스트
 
-1. USB 3.0 -> USB C 케이블을 통해 Oculus Quest 플러그 인
-1. 파일 **> 빌드 설정으로 이동합니다.**
-1. **배포를 Android로** 변경
-1. Oculus Quest가 해당 실행 디바이스로 선택되었는지 확인합니다.
+1. USB 3.0-> USB C 케이블을 통해 Oculus 퀘스트를 연결 합니다.
+1. **파일 > 빌드 설정** 으로 이동 합니다.
+1. **Android** 로 배포 변경
+1. Oculus 퀘스트를 해당 실행 장치로 선택 했는지 확인 합니다.
 
-    ![Oculus 디바이스 실행](../images/cross-platform/oculus-quest/OculusRunDevice.png)
+    ![장치 실행 장치](../images/cross-platform/oculus-quest/OculusRunDevice.png)
 
-1. 빌드 및 실행 선택
-    - 빌드 *및 실행을* 처음 선택하면 다음과 같은 빌드 오류 집합이 발생할 수 있습니다. *빌드 및 실행을* 다시 선택하면 성공적으로 배포할 수 있습니다.
+1. 빌드 및 실행을 선택 합니다.
+    - *빌드를* 선택 하 고 처음 실행 하는 경우 다음과 같은 빌드 오류가 발생할 수 있습니다. 빌드를 선택 하 *고 다시 실행할* 때 성공적으로 배포할 수 있습니다.
 
     ![예상 빌드 오류가 발생 했습니다.](../images/cross-platform/oculus-quest/OculusExpectedBuildErrors.png)
 

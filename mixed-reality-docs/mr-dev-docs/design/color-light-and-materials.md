@@ -6,12 +6,12 @@ ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, 디자인, 색, 조명, 자료, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: b3ee769208bdcd0d86beb05760de377f2a776a47
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 2e1626e72d49107c2a83bf1123b306d3ee5c8640
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299748"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600362"
 ---
 # <a name="color-light-and-materials"></a>색, 광원 및 재질
 
@@ -88,7 +88,7 @@ Holographic에 대 한 콘텐츠를 디자인할 때 최상의 환경을 달성 
     :::column:::
 자료는 현실적인 holograms을 만들기 위한 중요 한 요소입니다. 적절 한 시각적 특성을 제공 하 여 물리적 환경과 혼합할 수 있는 매력적인 holographic 개체를 만들 수 있습니다. 또한 자료는 다양 한 유형의 사용자 입력 상호 작용에 대 한 시각적 피드백을 제공 하는 데 중요 합니다.  
 
-[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity) 는 시각적 피드백에 사용할 수 있는 다양 한 시각적 효과 옵션을 포함 하는 Mrtk 표준 셰이더를 제공 합니다. 예를 들어, ' 근접 조명 ' 속성을 사용 하 여 사용자의 손가락이 개체의 화면에 도달할 때 조명 효과를 제공할 수 있습니다. [Mrtk 표준 셰이더](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) 에 대해 자세히 알아보기
+[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity) 는 시각적 피드백에 사용할 수 있는 다양 한 시각적 효과 옵션을 포함 하는 Mrtk 표준 셰이더를 제공 합니다. 예를 들어, ' 근접 조명 ' 속성을 사용 하 여 사용자의 손가락이 개체의 화면에 도달할 때 조명 효과를 제공할 수 있습니다. [Mrtk 표준 셰이더](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) 에 대해 자세히 알아보기
     :::column-end:::
         :::column:::
     *비디오 루프: 경계 상자* 
