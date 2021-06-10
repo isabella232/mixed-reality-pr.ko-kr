@@ -1,0 +1,48 @@
+---
+ms.openlocfilehash: 17719d2547aa10981e7b8cdf0d2c7d56823e6da5
+ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110345114"
+---
+# <a name="unity-2020--openxr"></a>[<span data-ttu-id="f6491-101">Unity 2020 + OpenXR</span><span class="sxs-lookup"><span data-stu-id="f6491-101">Unity 2020 + OpenXR</span></span>](#tab/openxr)
+
+1. <span data-ttu-id="f6491-102">HoloLens에서 **Microsoft Store** 이동하여 **[Holographic Remoting Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** 앱을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-102">On your HoloLens, go to the **Microsoft Store** and install the **[Holographic Remoting Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** app.</span></span>
+1. <span data-ttu-id="f6491-103">HoloLens에서 **홀로그램 Remoting Player** 앱을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-103">On your HoloLens, start the **Holographic Remoting Player** app.</span></span>
+1. <span data-ttu-id="f6491-104">Unity에서 **편집** 메뉴로 이동하여 **프로젝트 설정** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-104">In Unity, go to the **Edit** menu and select **Project Settings**.</span></span>
+1. <span data-ttu-id="f6491-105">**XR 플러그 인 관리를** 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-105">Select **XR Plug-in Management**.</span></span>
+1. <span data-ttu-id="f6491-106">Windows **독립 실행형** 탭이 선택되어 있는지 확인하고, 목록에서 **OpenXR** 및 **Windows Mixed Reality 기능 집합을** 찾고, 해당 확인란을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-106">Ensure the **Windows Standalone** tab is selected, find **OpenXR** and **Windows Mixed Reality feature set** in the list, and check their checkboxes.</span></span>
+1. <span data-ttu-id="f6491-107">**다음으로, 창** 메뉴로 이동하여 **XR** 하위 메뉴를 확장하고 **OpenXR Editor Remoting을** 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-107">Next, go to the **Window** menu, expand the **XR** submenu, and select **OpenXR Editor Remoting**.</span></span>
+1. <span data-ttu-id="f6491-108">**편집기 Remoting 사용을** 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-108">Click **Enable Editor Remoting**.</span></span>
+1. <span data-ttu-id="f6491-109">**누락된 Dependencies 사용** 단추가 나타나면 해당 단추도 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-109">If the **Enable Missing Dependencies** button appears, click that as well.</span></span> <span data-ttu-id="f6491-110">단추 위의 오류 상자는 사용 중인 기능과 이유를 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-110">The error box above the button describes the features it's enabling and why.</span></span>
+1. <span data-ttu-id="f6491-111">**원격 호스트 이름** 에 HoloLens의 IP 주소를 입력합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-111">For **Remote Host Name**, enter the IP address of your HoloLens.</span></span>
+   1. <span data-ttu-id="f6491-112">필요에 따라 다른 설정을 변경합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-112">Change other settings as needed.</span></span>
+   1. <span data-ttu-id="f6491-113">재생 모드가 시작되면 편집기에서 연결을 시도합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-113">The editor will attempt to connect once Play Mode is started.</span></span>
+1. <span data-ttu-id="f6491-114">재생 단추를 선택하여 **재생** 모드를 시작하고 HoloLens에서 앱을 경험합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-114">Select the **Play** button to start Play Mode and experience the app on your HoloLens.</span></span>
+
+# <a name="unity-20192020--windows-xr-plugin"></a>[<span data-ttu-id="f6491-115">Unity 2019/2020 + Windows XR 플러그 인</span><span class="sxs-lookup"><span data-stu-id="f6491-115">Unity 2019/2020 + Windows XR Plugin</span></span>](#tab/winxr)
+
+1. <span data-ttu-id="f6491-116">HoloLens에서 **Microsoft Store** 이동하여 **[Holographic Remoting Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** 앱을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-116">On your HoloLens, go to the **Microsoft Store** and install the **[Holographic Remoting Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** app.</span></span>
+1. <span data-ttu-id="f6491-117">HoloLens에서 **홀로그램 Remoting Player** 앱을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-117">On your HoloLens, start the **Holographic Remoting Player** app.</span></span>
+1. <span data-ttu-id="f6491-118">Unity에서 **편집** 메뉴로 이동하여 **프로젝트 설정** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-118">In Unity, go to the **Edit** menu and select **Project Settings**.</span></span>
+1. <span data-ttu-id="f6491-119">**XR 플러그 인 관리를** 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-119">Select **XR Plug-in Management**.</span></span>
+1. <span data-ttu-id="f6491-120">Windows **독립 실행형** 탭이 선택되어 있는지 확인하고 목록에서 **Windows Mixed Reality** 찾은 다음 확인란을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-120">Ensure the **Windows Standalone** tab is selected, find **Windows Mixed Reality** in the list, and check its checkbox.</span></span>
+1. <span data-ttu-id="f6491-121">**다음으로, 창** 메뉴로 이동하여 **XR** 하위 메뉴를 확장하고 **Windows XR 플러그 인 Remoting을** 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-121">Next, go to the **Window** menu, expand the **XR** submenu, and select **Windows XR Plugin Remoting**.</span></span>
+1. <span data-ttu-id="f6491-122">**에뮬레이션 모드를** **원격으로 디바이스 로** 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-122">Set **Emulation Mode** to **Remote to Device**.</span></span>
+1. <span data-ttu-id="f6491-123">**원격 컴퓨터의** 경우 HoloLens의 IP 주소를 입력합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-123">For **Remote Machine**, enter the IP address of your HoloLens.</span></span>
+1. <span data-ttu-id="f6491-124">연결하려면 다음 중 하나를 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-124">To connect, either:</span></span>
+   1. <span data-ttu-id="f6491-125">수동으로 연결하려면 **재생 시 연결을** 선택 취소하고 **연결을** 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-125">To manually connect, uncheck **Connect on Play**, and select **Connect**.</span></span> <span data-ttu-id="f6491-126">**연결 상태가** **연결됨으로** 변경되고 HoloLens에서 화면이 비어 있는 것을 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-126">You should see **Connection Status** change to **Connected** and see the screen go blank in the HoloLens.</span></span>
+   1. <span data-ttu-id="f6491-127">자동으로 연결하려면 **재생 시 연결을** 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-127">To automatically connect, check **Connect on Play**.</span></span> <span data-ttu-id="f6491-128">재생 모드가 시작되면 편집기에서 연결을 시도합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-128">The editor will attempt to connect once Play Mode is started.</span></span>
+1. <span data-ttu-id="f6491-129">재생 단추를 선택하여 **재생** 모드를 시작하고 HoloLens에서 앱을 경험합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-129">Select the **Play** button to start Play Mode and experience the app on your HoloLens.</span></span>
+
+# <a name="legacy-wsa"></a>[<span data-ttu-id="f6491-130">레거시 WSA</span><span class="sxs-lookup"><span data-stu-id="f6491-130">Legacy WSA</span></span>](#tab/wsa)
+
+1. <span data-ttu-id="f6491-131">HoloLens에서 **Microsoft Store** 이동하여 **[Holographic Remoting Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** 앱을 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-131">On your HoloLens, go to the **Microsoft Store** and install the **[Holographic Remoting Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** app.</span></span>
+1. <span data-ttu-id="f6491-132">HoloLens에서 **홀로그램 Remoting Player** 앱을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-132">On your HoloLens, start the **Holographic Remoting Player** app.</span></span>
+1. <span data-ttu-id="f6491-133">Unity에서 **창** 메뉴로 이동하여 **XR** 하위 메뉴를 확장하고 **홀로그램 에뮬레이션(Unity** 2019에서 사용되지 않는 것으로 표시됨)을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-133">In Unity, go to the **Window** menu, expand the **XR** submenu, and select **Holographic Emulation** (marked as deprecated in Unity 2019).</span></span>
+1. <span data-ttu-id="f6491-134">**에뮬레이션 모드를** **원격으로 디바이스 로** 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-134">Set **Emulation Mode** to **Remote to Device**.</span></span>
+1. <span data-ttu-id="f6491-135">1세대 HoloLens 또는 HoloLens 2 사용하는 경우 에 따라 **디바이스 버전을** 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-135">Set **Device Version** according to if you're using a first generation HoloLens or a HoloLens 2.</span></span>
+1. <span data-ttu-id="f6491-136">**원격 컴퓨터의** 경우 HoloLens의 IP 주소를 입력합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-136">For **Remote Machine**, enter the IP address of your HoloLens.</span></span>
+1. <span data-ttu-id="f6491-137">**연결** 을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-137">Select **Connect**.</span></span> <span data-ttu-id="f6491-138">**연결 상태가** **연결됨으로** 변경되고 HoloLens에서 화면이 비어 있는 것을 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-138">You should see **Connection Status** change to **Connected** and see the screen go blank in the HoloLens.</span></span>
+1. <span data-ttu-id="f6491-139">재생 단추를 선택하여 **재생** 모드를 시작하고 HoloLens에서 앱을 경험합니다.</span><span class="sxs-lookup"><span data-stu-id="f6491-139">Select the **Play** button to start Play Mode and experience the app on your HoloLens.</span></span>
