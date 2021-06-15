@@ -3,12 +3,12 @@ title: Windows Mixed Reality에서 SteamVR 사용
 description: 호환 되는 Pc를 사용 하 여 Windows Mixed Reality 헤드셋 및 컨트롤러에서 SteamVR 게임을 설정 하 고 재생 하는 방법을 알아봅니다.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 게임, SteamVR, 스트림, 시스템 요구 사항
-ms.openlocfilehash: 4a2d3065a12cdc413eae5b7ad164db6e820455ae
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 641f2b7db890229b88c0614b6b2bc2e3e88ec309
+ms.sourcegitcommit: 65f58055c831d58a3d38fb333f09b323ee2ac9b7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581798"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112064125"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Windows Mixed Reality에서 SteamVR 사용
 
@@ -30,6 +30,24 @@ SteamVR에 대 한 windows Mixed Reality를 사용 하면 사용자가 Windows M
 > 2. [SteamVR](https://store.steampowered.com/app/250820/SteamVR/)를 설치 합니다. 헤드셋이 연결 된 상태에서 스트림를 시작 하면 SteamVR을 설치 하 라는 대화 상자가 표시 됩니다. 대화 상자에 표시 되는 메시지에 따라 설치 합니다.
     * 팝업이 표시 되지 않으면 *라이브러리* 의 *도구* 섹션으로 이동 하 여 SteamVR를 설치 합니다. 목록에서 SteamVR를 찾은 다음 마우스 오른쪽 단추를 클릭 하 고 *게임 설치* 를 선택 합니다.
 > 3. [SteamVR에 대 한 Windows Mixed Reality를](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/)설치 합니다.
+
+## <a name="set-up-windows-mixed-reality-for-steamvr-in-an-environment-without-internet-access"></a>인터넷에 액세스 하지 않고 환경에서 SteamVR에 대 한 Windows Mixed Reality 설정
+
+**필요한 미디어를 휴대용 저장소 장치에 저장**
+1. 전체 인터넷 액세스가 있는 PC에서 [스트림](http://store.steampowered.com/about/) 를 사용 하 여 위에서 설명한 대로 [SteamVR에 대 한 SteamVR 및 Windows Mixed Reality](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/) 를 설치 합니다. [](https://store.steampowered.com/app/250820/SteamVR/)
+2. 스트림에서 Library 섹션을 열고 "도구" 라는 파트를 찾습니다.
+3. SteamVR가 설치 되 면 "SteamVR" 항목을 마우스 오른쪽 단추로 클릭 하 고 결과 팝업 메뉴에서 "속성" 항목을 클릭 합니다.
+4. 여러 탭이 포함 된 새 창이 열립니다. "로컬 파일" 탭을 선택 하 고 "로컬 파일 찾아보기" 라는 레이블이 지정 된 단추를 클릭 합니다.
+5. SteamVR 런타임을 포함 하는 디렉터리가 열립니다. 이 전체 디렉터리 (이름이 SteamVR)를 선택한 휴대용 미디어 (예: USB 플래시 드라이브)로 복사 합니다.
+6. SteamVR에 대 한 Windows Mixed Reality와 대상 PC에 설치 하려는 모든 SteamVR 호환 앱과 동일한 작업을 수행 합니다.
+
+**대상 PC에서 SteamVR 실행**
+1. 휴대용 저장 장치를 대상 PC에 연결한 후에는 SteamVR, MixedRealityVRDriver 및 기타 폴더를 대상 PC의 편리한 위치로 이동 합니다.
+2. SteamVR 및 MixedRealityVRDriver가 동일한 폴더에 있는 것을 확인 하 고 포함 하는 폴더에 [steamvr-add-wmr-driver.bat](scripts/steamvr-add-wmr-driver.bat) 를 다운로드 한 다음 두 번 클릭 합니다. 이렇게 하면 런타임이 사용자 지정 설치에서 SteamVR 드라이버에 대 한 Windows Mixed Reality를 찾을 수 있습니다.
+![대상 PC에 설치 된 SteamVR에 대 한 SteamVR 및 Windows Mixed Reality](images/steamvr-install-files.png)
+3. SteamVR를 실행 하려면 *SteamVR\bin\win64\vrstartup.exe* 에 있는 "vrstartup.exe" 파일을 두 번 클릭 하거나 대상 PC가 32 비트 버전의 Windows를 실행 하는 경우 *SteamVR\bin\win32\vrstartup.exe* 합니다.
+
+[자세한 내용 및 문제 해결에 대해서는 Steamworks 설명서 페이지](https://partner.steamgames.com/doc/features/steamvr/enterprise#2)를 참조 하세요.
 
 ## <a name="play-steamvr-games"></a>SteamVR 게임 재생
 
@@ -159,7 +177,7 @@ Blue = 응용 프로그램이 gpu 바인딩되어 있으므로 동작 다시 프
 
 공유에 대 한 질문이 나 의견이 있는 경우 [스트림 포럼](http://steamcommunity.com/app/719950/discussions/)에서 연락할 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Windows Mixed Reality로 SteamVR 문제 해결](steamvr-questions.md)
 * [Windows Mixed Reality에서 게임과 앱 사용](using-games-and-apps-in-windows-mixed-reality.md)
