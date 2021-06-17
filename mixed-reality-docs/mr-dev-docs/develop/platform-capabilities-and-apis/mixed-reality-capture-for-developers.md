@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: mrc, 사진, 비디오, 캡처, 카메라
-ms.openlocfilehash: 2539c8e2a6f26ba1f36cd28502bf8d0f50803657
-ms.sourcegitcommit: bd9b2734903652b106db86686428c03acf104707
+ms.openlocfilehash: ec1a53d2f623a8047c2ee1973d8d6f20458ade88
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98763717"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110246"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>개발자를 위한 혼합 현실 캡처
 
@@ -86,7 +86,7 @@ HolographicCamera에는 카메라가 속한 구성을 식별 하는 데 도움�
 > [!NOTE]
 > Unity 2018를 사용 하는 경우 **unity 2018.4.13 f1** 이상이 필요 합니다. Unity 2019을 사용 하는 경우 **unity 2019.4** 이상이 필요 합니다.
 
-[혼합 현실 도구 키트](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)를 사용 하는 경우 pv 카메라에서 렌더링을 옵트인 (opt in) 하려면 [Windows Mixed reality 카메라 설정](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html) 공급자를 사용 하도록 설정 하 고 **pv 카메라에서 렌더링** 을 선택 합니다.
+[혼합 현실 도구 키트](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)를 사용 하는 경우 pv 카메라에서 렌더링을 옵트인 (opt in) 하려면 [Windows Mixed reality 카메라 설정](/windows/mixed-reality/mrtk-unity/features/camera-system/windows-mixed-reality-camera-settings) 공급자를 사용 하도록 설정 하 고 **pv 카메라에서 렌더링** 을 선택 합니다.
 
 혼합 현실 도구 키트를 사용 하지 않는 경우 DirectX에 대해 위에서 설명한 대로 구성 요소를 사용 하 여 [수동으로 옵트인 (opt in)](#enable-the-photovideocamera-holographicviewconfiguration-in-directx) 할 수 있습니다.
 
@@ -221,7 +221,7 @@ Unity 응용 프로그램은 holograms를 사용 하도록 설정 하는 속성�
 
 MRC 비디오 효과 (**MixedRealityCapture. MixedRealityCaptureVideoEffect**)
 
-|  속성 이름  |  유형  |  기본값  |  Description |
+|  속성 이름  |  형식  |  기본값  |  Description |
 |----------|----------|----------|----------|
 |  StreamType  |  UINT32 ([Mediastreamtype](/uwp/api/Windows.Media.Capture.MediaStreamType))  |  1 (VideoRecord)  |  이 효과가 사용 되는 캡처 스트림을 설명 합니다. 오디오를 사용할 수 없습니다. |
 |  HologramCompositionEnabled  |  boolean  |  TRUE  |  비디오 캡처에서 holograms을 사용 하거나 사용 하지 않도록 설정 하는 플래그입니다. |
@@ -241,68 +241,68 @@ MRC 비디오 효과 (**MixedRealityCapture. MixedRealityCaptureVideoEffect**)
 
 MRC 오디오 효과 (**MixedRealityCapture. MixedRealityCaptureAudioEffect**)
 
-| 속성 이름 | 유형 | 기본값 | Description |
+| 속성 이름 | 형식 | 기본값 | Description |
 |----------|----------|----------|----------|
 | MixerMode | UINT32 | 2 (Mic 및 시스템 오디오) | 사용 해야 하는 오디오 원본을 나타내는 데 사용 되는 열거형입니다. 0 (Mic 오디오 전용), 1 (시스템 오디오만), 2 (Mic 및 시스템 오디오) |
 | LoopbackGain | float | Windows 장치 포털의 **앱 오디오 게인** 설정 | 시스템 오디오 볼륨에 적용 됩니다. 범위는 0.0에서 5.0 사이입니다. HoloLens 2 에서만 지원 됨 |
-| MicrophoneGain | float | Windows 장치 포털의 **마이크 오디오 게인** 설정 | 마이크 볼륨에 적용 됩니다. 범위는 0.0에서 5.0 사이입니다. HoloLens 2 에서만 지원 됨 |
+| MicrophoneGain | float | Windows 장치 포털 **마이크 오디오 게인** 설정 | 마이크 볼륨에 적용할 게인입니다. 범위는 0.0에서 5.0까지입니다. HoloLens 2 경우에만 지원됨 |
 
 >[!NOTE]
-> [혼합 현실 캡처 페이지로](using-the-windows-device-portal.md#mixed-reality-capture) 이동 하 고 해당 설정 옆에 있는 슬라이더를 조정 하 여 Windows 장치 포털에서 **LoopbackGain** 또는 **MicrophoneGain** 의 기본값을 변경할 수 있습니다. 두 설정의 기본값은 모두 **1.0** 이지만 **0.0** 에서 **5.0** 사이의 값으로 설정할 수 있습니다.
+> 혼합 현실 캡처 [페이지로](using-the-windows-device-portal.md#mixed-reality-capture) 가서 해당 설정 옆에 있는 슬라이더를 조정하여 Windows 장치 포털 **LoopbackGain** 또는 **MicrophoneGain의** 기본값을 변경할 수 있습니다. 두 설정 모두 **기본값은 1.0이지만** **0.0에서** **5.0** 사이의 모든 값으로 설정할 수 있습니다.
 >
-> Windows Device Portal을 사용 하 여 기본 획득 값을 구성 하는 것이 6 월 2020 업데이트 (Windows Holographic, 버전 2004 빌드 19041.1106 및 Windows Holographic, 버전 1903 build 18362.1064)와 함께 추가 되었습니다.
+> Windows 장치 포털 사용하여 기본 게인 값을 구성하면 2020년 6월 업데이트(Windows Holographic, 버전 2004 빌드 19041.1106 및 Windows Holographic, 버전 1903 빌드 18362.1064)가 추가되었습니다.
 
 ### <a name="simultaneous-mrc-limitations"></a>동시 MRC 제한 사항
 
-여러 앱에서 MRC에 동시에 액세스 하는 경우 특정 제한 사항을 알고 있어야 합니다.
+여러 앱이 동시에 MRC에 액세스하는 경우 특정 제한 사항을 알고 있어야 합니다.
 
 #### <a name="photovideo-camera-access"></a>사진/비디오 카메라 액세스
 
-HoloLens 1에서는 프로세스가 비디오를 기록 하거나 사진을 촬영 하는 동안 MRC가 사진을 캡처하거나 비디오를 캡처할 수 없습니다. 그 반대의 경우도 마찬가지입니다. MRC가 실행 중인 경우 응용 프로그램이 카메라에 액세스 하지 못합니다. 
+HoloLens 1에서 MRC는 프로세스가 비디오를 녹화하거나 사진을 찍는 동안 사진을 캡처하거나 비디오를 캡처하지 못합니다. 반대의 경우도 마찬가지입니다. MRC가 실행 중이면 애플리케이션이 카메라에 액세스하지 못합니다. 
 
-HoloLens 2를 사용 하 여 카메라에 대 한 액세스를 공유할 수 있습니다. 해상도 또는 프레임 속도로 직접 제어 하지 않아도 되는 경우 Sharedmode를 사용 하는 [Sharedmode 속성](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) 을 사용 하 여 MediaCapture를 초기화할 수 있습니다.  
+HoloLens 2 사용하면 카메라에 대한 액세스를 공유할 수 있습니다. 해상도 또는 프레임 속도를 직접 제어할 필요가 없는 경우 SharedReadOnly와 함께 [SharedMode 속성을](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) 사용하여 MediaCapture를 초기화할 수 있습니다.  
 
 ##### <a name="built-in-mrc-photovideo-camera-access"></a>기본 제공 MRC 사진/비디오 카메라 액세스
 
-Windows 10에 기본 제공 되는 MRC 기능 (Cortana, 시작 메뉴, 하드웨어 바로 가기, Miracast, Windows 장치 포털을 통해):
+Windows 10 기본 제공되는 MRC 기능(Cortana, 시작 메뉴, 하드웨어 바로 가기, Miracast Windows 장치 포털)
 
-* 기본적으로 ExclusiveControl를 사용 하 여 실행 됩니다.
+* 기본적으로 ExclusiveControl로 실행됩니다.
 
-그러나 공유 모드에서 작동 하도록 MRC 하위 시스템에 대 한 지원이 추가 되었습니다. 
+그러나 MRC 하위 시스템이 공유 모드에서 작동하도록 지원이 추가되었습니다. 
 
-* 앱이 photo/video 카메라에 대 한 ExclusiveControl 액세스를 요청 하는 경우 기본 제공 MRC는 앱의 요청이 성공 하도록 photo/video 카메라를 사용 하 여 자동으로 중지 됩니다. 
-* 앱이 ExclusiveControl 된 상태에서 기본 제공 MRC를 시작 하면 기본 제공 MRC가 SharedReadOnly 모드에서 실행 됩니다. 
+* 앱이 사진/비디오 카메라에 대한 ExclusiveControl 액세스를 요청하는 경우 기본 제공 MRC는 사진/비디오 카메라 사용을 자동으로 중지하므로 앱의 요청이 성공합니다. 
+* 앱에 ExclusiveControl이 있는 동안 기본 제공 MRC가 시작되면 기본 제공 MRC가 SharedReadOnly 모드에서 실행됩니다. 
 
-이 공유 모드 기능에는 다음과 같은 제한 사항이 있습니다.
+이 공유 모드 기능에는 특정 제한 사항은 다음과 같습니다.
 
-* Cortana, 하드웨어 바로 가기 또는 시작 메뉴를 통한 사진: Windows 10 4 월 2018 업데이트 (이상)가 필요 합니다.
-* Cortana, 하드웨어 바로 가기 또는 시작 메뉴를 통한 비디오: Windows 10 4 월 2018 업데이트 (이상) 필요
-* Miracast를 통한 MRC 스트리밍: Windows 10 10 월 2018 업데이트 (이상)가 필요 합니다.
-* Windows 장치 포털을 통해 또는 HoloLens 도우미 앱을 통해 MRC 스트리밍: HoloLens 2 필요
+* Cortana, 하드웨어 바로 가기 또는 시작 메뉴를 통한 사진: Windows 10 2018년 4월 업데이트(이상) 필요
+* Cortana, 하드웨어 바로 가기 또는 시작 메뉴를 통한 비디오: Windows 10 2018년 4월 업데이트(이상) 필요
+* Miracast를 통해 MRC 스트리밍: Windows 10 2018년 10월 업데이트 이상 필요
+* Windows 장치 포털 또는 HoloLens 도우미 앱을 통해 MRC 스트리밍: HoloLens 2
 
 >[!NOTE]
-> 다른 앱에서 photo/video 카메라를 사용 하는 경우 기본 제공 MRC 카메라 UI의 해상도 및 프레임 비율이 일반 값에서 감소할 수 있습니다.
+> 다른 앱에서 사진/비디오 카메라를 사용하는 경우 기본 제공 MRC 카메라 UI의 해상도와 프레임 속도가 일반 값에서 감소할 수 있습니다.
 
 #### <a name="mrc-access-for-developers"></a>개발자를 위한 MRC 액세스
 
-MRC를 사용 하는 경우 항상 카메라에 대 한 단독 제어를 요청 하는 것이 좋습니다. 이렇게 하면 위에 나열 된 제한 사항을 알고 있는 한 응용 프로그램이 카메라의 설정에 대 한 모든 권한을 가집니다. 
+MRC를 사용할 때는 항상 카메라에 대한 배타적 제어를 요청하는 것이 좋습니다. 이렇게 하면 위에 나열된 제한 사항을 알고 있는 한 애플리케이션이 카메라에 대한 설정을 완전히 제어할 수 있습니다. 
 
-* [초기화 설정을](/uwp/api/windows.media.capture.mediacaptureinitializationsettings?view=winrt-19041) 사용 하 여 미디어 캡처 개체 만들기
-* [SharingMode](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) 속성을 **exclusive** 로 설정 합니다.
+* [초기화 설정을](/uwp/api/windows.media.capture.mediacaptureinitializationsettings?view=winrt-19041) 사용하여 미디어 캡처 개체 만들기
+* [SharingMode](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) 속성을 **exclusive로** 설정
 
 > [!CAUTION]
-> 계속 하기 전에 [SharingMode](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#remarks) 주의 사항을 주의 깊게 읽어야 합니다.
+> 계속하기 전에 [SharingMode 주의 내용을](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#remarks) 주의 깊게 읽어야 합니다.
 
 * 원하는 방식으로 카메라 설정
-* 앱을 시작 하 고, 시작 API로 비디오 프레임을 캡처한 다음, MRC를 사용 하도록 설정 합니다.
+* 앱을 시작하고 시작 API를 사용하여 비디오 프레임을 캡처한 다음 MRC를 사용하도록 설정합니다.
 
 > [!CAUTION]
-> 앱을 시작 하기 전에 MRC를 시작 하면 기능이 예상 대로 작동 하는 것을 보장할 수 없습니다.
+> 앱을 시작하기 전에 MRC를 시작하는 경우 기능이 예상대로 작동할 것이라고 보장할 수 없습니다.
 
-[Holographic face 추적 샘플](/samples/microsoft/windows-universal-samples/holographicfacetracking)에서 위의 프로세스에 대 한 전체 샘플을 찾을 수 있습니다.
+[홀로그램 얼굴 추적](/samples/microsoft/windows-universal-samples/holographicfacetracking)샘플 에서 위 프로세스의 전체 샘플을 찾을 수 있습니다.
 
 > [!NOTE]
-> Windows 10 4 월 2018 업데이트 전에 앱의 사용자 지정 MRC 레코더는 시스템 MRC와 함께 사용할 수 없습니다 (사진 캡처, 비디오 캡처 또는 Windows 장치 포털에서 스트리밍).
+> Windows 10 2018년 4월 업데이트 전에 앱의 사용자 지정 MRC 레코더는 시스템 MRC(사진 캡처, 비디오 캡처 또는 Windows 장치 포털 스트리밍)와 함께 사용할 수 없습니다.
 
 ## <a name="see-also"></a>참조
 

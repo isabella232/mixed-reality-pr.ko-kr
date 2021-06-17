@@ -8,12 +8,12 @@ ms.topic: article
 keywords: holograms, 안정성, hololens, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 프레임 율, 렌더링, reprojection, 색 분리
 appliesto:
 - HoloLens
-ms.openlocfilehash: 064e42f771391e77874796e91ea8e4d563c08ec2
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 560b1551b153f1735b0106869c6a82c977693968
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582884"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110101"
 ---
 # <a name="hologram-stability"></a>홀로그램 안정성
 
@@ -24,7 +24,7 @@ ms.locfileid: "98582884"
 Holograms의 품질은 좋은 환경 및 좋은 앱 개발의 결과입니다. HoloLens에서 주변을 추적할 수 있는 환경에서 초당 일정 한 60 프레임으로 실행 되는 앱은 홀로그램 및 일치 하는 좌표계가 동기화 되도록 합니다. 사용자의 관점에서 고정 된 holograms는 환경에 상대적으로 이동 하지 않습니다.
 
 다음 용어는 환경, 일치 하지 않거나 낮은 렌더링 요금 또는 기타 항목의 문제를 식별 하는 데 도움이 될 수 있습니다.
-* **높아집니다.** 홀로그램은 전 세계에 있고 실제 세계에 배치 된 후에는 주변 환경에 상대적으로 배치 되는 위치를 유지 하 고 사용자 동작 또는 소규모 및 스파스 환경 변화를 독립적으로 유지 해야 합니다. 나중에 홀로그램이 예기치 않은 위치에 표시 되는 경우에는 *정확도* 문제가 됩니다. 이러한 시나리오는 서로 다른 두 개의 대화방을 동일한 경우에 발생할 수 있습니다.
+* **정확도.** 홀로그램은 전 세계에 있고 실제 세계에 배치 된 후에는 주변 환경에 상대적으로 배치 되는 위치를 유지 하 고 사용자 동작 또는 소규모 및 스파스 환경 변화를 독립적으로 유지 해야 합니다. 나중에 홀로그램이 예기치 않은 위치에 표시 되는 경우에는 *정확도* 문제가 됩니다. 이러한 시나리오는 서로 다른 두 개의 대화방을 동일한 경우에 발생할 수 있습니다.
 * **지터.** 사용자는 홀로그램의 빈도가 높은 핸드쉐이킹으로 지터를 관찰 합니다 .이는 환경의 추적이 저하 될 때 발생할 수 있습니다. 사용자의 경우 솔루션에서 [센서 튜닝](/hololens/hololens-updates)을 실행 합니다.
 * **Judder.** 렌더링 빈도가 낮으면 holograms의 두 배가 아닌 동작 및 이중 이미지가 생성 됩니다. Judder는 holograms에서 특히 중요 합니다. 개발자는 [상수 60 FPS](hologram-stability.md#frame-rate)를 유지 해야 합니다.
 * **드리프트.** 사용자는 홀로그램이 원래 위치에서 벗어나 이동 하는 것 처럼 보이는 것 처럼 보입니다. Holograms [공간 앵커](../../design/spatial-anchors.md)에서 멀리 떨어져 있는 경우, 특히 환경의 매핑되지 않은 부분에 있는 경우에는 드리프트가 발생 합니다. 공간 앵커로 holograms 가까이를 만들면 드리프트의 가능성이 낮아집니다.
@@ -91,7 +91,7 @@ HoloLens에는 reprojection 이라는 정교한 하드웨어 지원 holographic 
 응용 프로그램은 다양 한 형식의 reprojection을 사용 하기 위해 특정 작업을 수행 해야 합니다.
 * **깊이 예측:** 응용 프로그램은 렌더링 된 모든 프레임에 대해 시스템에 깊이 버퍼를 제출 합니다.  Unity에서는 **XR 플러그 인 관리** 의 **Windows Mixed Reality 설정** 창에서 **공유 깊이 버퍼** 옵션을 사용 하 여 깊이 다시 프로젝션을 수행 합니다.  DirectX apps 호출 CommitDirect3D11DepthBuffer.  응용 프로그램은 SetFocusPoint를 호출 하지 않아야 합니다.
 * **평면 재 프로젝션:** 응용 프로그램은 모든 프레임에서 안정화 할 평면의 위치를 시스템에 알려 줍니다.  Unity 응용 프로그램은 SetFocusPointForFrame를 호출 하 고 **공유 깊이 버퍼** 를 사용 하지 않도록 설정 해야 합니다.  DirectX 앱은 SetFocusPoint를 호출 하 고 CommitDirect3D11DepthBuffer를 호출 해서는 안 됩니다.
-* **자동 평면 재 프로젝션:** 을 사용 하도록 설정 하려면 응용 프로그램에서 깊이 다시 프로젝션 할 때 처럼 깊이 버퍼를 시스템에 제출 해야 합니다. MRTK (Mixed Reality Toolkit)를 사용 하는 앱은 자동 평면 재 프로젝션을 사용 하도록 [카메라 설정 공급자](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) 를 구성할 수 있습니다. 네이티브 앱은 `DepthReprojectionMode` [HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) 에서를 각 프레임으로 설정 해야 합니다 `AutoPlanar` . HoloLens 생성 1의 경우 응용 프로그램에서 SetFocusPoint를 호출 하면 안 됩니다.
+* **자동 평면 재 프로젝션:** 을 사용 하도록 설정 하려면 응용 프로그램에서 깊이 다시 프로젝션 할 때 처럼 깊이 버퍼를 시스템에 제출 해야 합니다. MRTK (Mixed Reality Toolkit)를 사용 하는 앱은 자동 평면 재 프로젝션을 사용 하도록 [카메라 설정 공급자](/windows/mixed-reality/mrtk-unity/features/camera-system/windows-mixed-reality-camera-settings#hololens-2-reprojection-method) 를 구성할 수 있습니다. 네이티브 앱은 `DepthReprojectionMode` [HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) 에서를 각 프레임으로 설정 해야 합니다 `AutoPlanar` . HoloLens 생성 1의 경우 응용 프로그램에서 SetFocusPoint를 호출 하면 안 됩니다.
 
 ### <a name="choosing-reprojection-technique"></a>Reprojection 기술 선택
 
@@ -99,7 +99,7 @@ HoloLens에는 reprojection 이라는 정교한 하드웨어 지원 holographic 
 --- | --- | --- | ---
 깊이 예측 |    권장 |   해당 없음 |   권장<br/><br/>Unity 응용 프로그램은 Unity 2018.4.12 이상 또는 Unity 2019.3 이상을 사용 해야 합니다. 그렇지 않으면 자동 평면 다시 프로젝션을 사용 합니다.
 자동 평면 다시 프로젝션 | 해당 없음 |   권장 기본값 |   깊이 다시 프로젝션이 최상의 결과를 제공 하지 않는 경우 권장<br/><br/>Unity 응용 프로그램은 Unity 2018.4.12 이상 또는 Unity 2019.3 이상을 사용 하는 것이 좋습니다.  이전 Unity 버전은 약간 저하 된 다시 프로젝션 결과와 함께 작동 합니다.
-평면 재 프로젝션 |   권장 하지 않음 |   자동 평면에서 최상의 결과를 제공 하지 않는 경우 권장 | 깊이 옵션이 원하는 결과를 제공 하지 않는 경우 사용    
+평면 재 프로젝션 |   권장하지 않음 |   자동 평면에서 최상의 결과를 제공 하지 않는 경우 권장 | 깊이 옵션이 원하는 결과를 제공 하지 않는 경우 사용    
 
 ### <a name="verifying-depth-is-set-correctly"></a>깊이가 올바르게 설정 되었는지 확인 하는 중
             
@@ -181,8 +181,8 @@ HoloLens가 표시 되기 때문에 "색 구분" 이라는 아티팩트가 종�
 
 이전과 마찬가지로 60 FPS에서 렌더링 하 고 안정화 평면을 설정 하는 것은 홀로그램 안정성을 위한 가장 중요 한 기술입니다. 눈에 띄는 색 분리를 사용 하는 경우 먼저 프레임 속도에 기대를 충족 하는지 확인 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [혼합 현실 성능 이해](understanding-performance-for-mixed-reality.md)
 * [색, 광원 및 재질](../../design/color-light-and-materials.md)
 * [Instinctual 상호 작용](../../design/interaction-fundamentals.md)
-* [MRTK 홀로그램 안정화](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/hologram-stabilization.html)
+* [MRTK 홀로그램 안정화](/windows/mixed-reality/mrtk-unity/performance/hologram-stabilization)

@@ -3,12 +3,12 @@ title: Windows Mixed Reality에서 SteamVR 사용
 description: 호환 되는 Pc를 사용 하 여 Windows Mixed Reality 헤드셋 및 컨트롤러에서 SteamVR 게임을 설정 하 고 재생 하는 방법을 알아봅니다.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 게임, SteamVR, 스트림, 시스템 요구 사항
-ms.openlocfilehash: 641f2b7db890229b88c0614b6b2bc2e3e88ec309
-ms.sourcegitcommit: 65f58055c831d58a3d38fb333f09b323ee2ac9b7
+ms.openlocfilehash: 0d79b0c2079875b32387d616e77c5f497ab4aa59
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112064125"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110148"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Windows Mixed Reality에서 SteamVR 사용
 
@@ -43,9 +43,18 @@ SteamVR에 대 한 windows Mixed Reality를 사용 하면 사용자가 Windows M
 
 **대상 PC에서 SteamVR 실행**
 1. 휴대용 저장 장치를 대상 PC에 연결한 후에는 SteamVR, MixedRealityVRDriver 및 기타 폴더를 대상 PC의 편리한 위치로 이동 합니다.
-2. SteamVR 및 MixedRealityVRDriver가 동일한 폴더에 있는 것을 확인 하 고 포함 하는 폴더에 [steamvr-add-wmr-driver.bat](scripts/steamvr-add-wmr-driver.bat) 를 다운로드 한 다음 두 번 클릭 합니다. 이렇게 하면 런타임이 사용자 지정 설치에서 SteamVR 드라이버에 대 한 Windows Mixed Reality를 찾을 수 있습니다.
 ![대상 PC에 설치 된 SteamVR에 대 한 SteamVR 및 Windows Mixed Reality](images/steamvr-install-files.png)
-3. SteamVR를 실행 하려면 *SteamVR\bin\win64\vrstartup.exe* 에 있는 "vrstartup.exe" 파일을 두 번 클릭 하거나 대상 PC가 32 비트 버전의 Windows를 실행 하는 경우 *SteamVR\bin\win32\vrstartup.exe* 합니다.
+
+2. SteamVR 및 MixedRealityVRDriver가 동일한 폴더에 있도록 하 고 명령 프롬프트를 엽니다. 이 예제에서는 포함 하는 폴더가 *C:\SteamVRInstall* 에 있다고 가정 합니다. 이 경우 명령 프롬프트에서 다음을 실행 해야 합니다.
+```powershell
+chdir "C:\SteamVRInstall"
+.\SteamVR\bin\win64\vrpathreg.exe adddriver "C:\SteamVRInstall\MixedRealityVRDriver"
+```
+(32 비트 버전의 Windows를 실행 하는 경우 `win64` 위의 경로 부분이 대신 포함 되어야 `win32` 합니다.)
+
+이렇게 하면 런타임이 사용자 지정 설치에서 SteamVR 드라이버에 대 한 Windows Mixed Reality를 찾을 수 있습니다.
+
+4. SteamVR를 실행 하려면 *SteamVR\bin\win64\vrstartup.exe* 에 있는 "vrstartup.exe" 파일을 두 번 클릭 하거나 대상 PC가 32 비트 버전의 Windows를 실행 하는 경우 *SteamVR\bin\win32\vrstartup.exe* 합니다.
 
 [자세한 내용 및 문제 해결에 대해서는 Steamworks 설명서 페이지](https://partner.steamgames.com/doc/features/steamvr/enterprise#2)를 참조 하세요.
 
@@ -113,74 +122,74 @@ SteamVR에 대 한 Windows Mixed Reality에는 90 FPS reprojection을 더 부드
 사용 가능한 동작 재 프로젝션 모드는 다음과 같습니다.
 
 * **SteamVR 설정**: STEAMVR 설정 UI를 통해 동작 reprojection을 제어할 수 있습니다. 그런 다음 SteamVR 설정을 열고 비디오 > Per-Application 비디오 설정으로 이동 하 여 "동작 다듬기"에 대 한 옵션을 선택할 수 있습니다.
-* **Auto**: 게임이 너무 느리게 렌더링 되어 90 FPS를 유지 하는 경우 동작 다시 프로젝션이 자동으로 켜 집니다. 게임에서 90 FPS를 유지 하기 시작 하거나 45 FPS 미만으로 렌더링을 시작 하면 동작 reprojection이 꺼집니다. 비동기 회전 reprojection은 항상 사용 됩니다.
-* **동작 벡터**: 응용 프로그램이 항상 동작 벡터 재 프로젝션을 사용 하 여 절반 프레임 속도로 실행 되도록 합니다.
-* **없음**: 동작 다시 프로젝션을 사용 하지 않습니다.
+* **자동:** 게임이 너무 느리게 렌더링되어 90 FPS를 유지 관리하는 경우 동작 다시 프로젝션이 자동으로 켜지도록 합니다. 게임이 90 FPS를 유지 관리하기 시작하거나 45FPS 미만으로 렌더링을 시작하면 동작 다시 프로젝션이 꺼집니다. 비동기 회전 다시 프로젝션은 항상 사용하도록 설정됩니다.
+* **동작 벡터:** 애플리케이션이 항상 동작 벡터 다시 프로젝션을 사용하여 반 프레임 속도로 실행하도록 합니다.
+* **None:** 동작 다시 프로젝션을 사용하지 않도록 설정합니다.
 
 **예상 시각적 아티팩트** 
 
-1. 150% 보다 큰 응용 프로그램 해상도를 사용 하는 경우 흐리게 표시 될 수 있습니다. 동작 reprojection 사용 하는 경우 150% 보다 작은 값을 사용 하는 것이 좋습니다.
-2. 특히 게임 HUDs 또는 메뉴에서 선명한 대비 모서리나 텍스트는 disocclusion 때문에 일시적으로 또는 왜곡 될 수 있습니다.
-3. SteamVR Home 및 PC에서 50-60 FPS를 안정적으로 적중 하지 않는 많은 게임은이 모드에서 계속 해 서 더 나쁜 환경을 제공 합니다.
-4. 일부 게임은 50% 속도 또는 대기 시간 (지연)으로 실행 되도록 보고 되었습니다. 아래 [Windows 피드백 허브](filing-feedback.md) 지침에 따라 이러한 게임을 보고 합니다.
+1. 150%보다 큰 애플리케이션 해상도를 사용하는 경우 흐리게 나타날 수 있습니다. 동작 다시 프로젝션을 사용하는 경우 150% 미만의 값을 사용하는 것이 좋습니다.
+2. 특히 게임 내 HUD 또는 메뉴에서 선명하게 대비되는 가장자리 또는 텍스트는 폐색으로 인해 일시적으로 뒤틀리거나 왜곡된 것처럼 보일 수 있습니다.
+3. Pc에서 50-60 FPS를 안정적으로 적중하지 않는 SteamVR Home 및 기타 많은 게임에는 이 모드에서 계속 좋지 않은 환경이 있습니다.
+4. 일부 게임은 50% 속도로 실행되거나 대기 시간(지연)이 증가한 것으로 보고되었습니다. 아래 [Windows 피드백 허브](filing-feedback.md) 지침을 통해 이러한 게임을 보고합니다.
 
-처음에는 최근에 생성 된 NVidia Gpu에 대 한 실험적 지원이 제공 됩니다. 계속 해 서 더 많은 Gpu에서 동작 재 프로젝션 지원을 계속 반복 하 고 개선 하 고 있으며 사용자 의견을 기다리고 있습니다.
+처음에는 최신 세대 NVidia GPU에 대한 실험적 지원이 있습니다. 더 많은 GPU에 대한 동작 다시 프로젝션 지원을 계속 반복하고 개선하고 있으며 피드백을 보내 드립니다.
 
-**지원 되는 gpu:** Windows Mixed Reality 호환 그래픽 드라이버가 설치 된 Nvidia GeForce GTX1060, AMD RX470 이상
+**지원되는 GPU:** Nvidia GeForce GTX1060, AMD RX470 이상, Windows Mixed Reality 호환되는 그래픽 드라이버가 설치되어 있습니다.
 
-동작 재 프로젝션을 사용 하려면:
+동작 다시 프로젝션을 사용하도록 설정하려면 다음을 수행합니다.
 
-1. 위의 지침에 따라 **SteamVR Beta 용 Windows Mixed Reality** 를 옵트인 (opt in) 해야 합니다.
+1. 위의 지침을 사용하여 **SteamVR Beta에 대한 Windows Mixed Reality** 옵트인했는지 확인합니다.
 2. SteamVR 대시보드를 엽니다.
-3. Windows Mixed Reality 로고를 사용 하 여 왼쪽에 있는 단추를 선택 하 여 **SteamVR 설정에 대 한 Windows Mixed reality** 를 엽니다.
-4. 팝업 되는 UI에서 그래픽 탭을 선택 합니다.
-5. 자동 동작 다시 프로젝션을 사용 하려면 "기본 SteamVR 앱 동작 reprojection 모드"에 대해 "자동"을 선택 합니다.
+3. Windows Mixed Reality 로고가 있는 왼쪽 단추를 선택하여 **SteamVR 설정에 대한 Windows Mixed Reality** 엽니다.
+4. 팝업되는 UI에서 그래픽 탭을 선택합니다.
+5. "기본 SteamVR 앱 동작 다시 프로젝션 모드"에 대해 "자동"을 선택하여 자동 동작 다시 프로젝션을 사용하도록 설정합니다.
 
-![SettingsUX로 lsr & LSR 표시기 사용](images/settingsux-enable-lsr.gif)
+![설정UX에서 LSR & LSR 표시기 사용](images/settingsux-enable-lsr.gif)
 
-**동작 Reprojection 표시기**
+**동작 다시 프로젝션 표시기**
 
-동작 reprojection 표시기는 실험적 자동 동작 reprojection 기능을 사용 하 여 문제를 진단 하는 데 도움이 됩니다. True로 설정 하면 자동 동작 다시 프로젝션을 수행 하는 동안 헤드셋 표시의 왼쪽 위에 표시기가 표시 됩니다. 이 표시기의 색과 위치는 현재 동작 다시 프로젝션 모드에 해당 합니다. 예는 아래 다이어그램을 참조 하세요.
+동작 다시 프로젝션 표시기를 사용하면 실험적 자동 동작 다시 프로젝션 기능과 관련된 문제를 진단할 수 있습니다. true로 설정하면 자동 동작 다시 프로젝션 중에 헤드셋의 왼쪽 위에 표시기가 표시됩니다. 이 표시기의 색과 위치는 현재 동작 다시 프로젝션 모드에 해당합니다. 예제는 아래 다이어그램을 참조하세요.
 
-![mvLSR 지표](images/mvLSRIndicator.png)
+![mvLSR 표시기](images/mvLSRIndicator.png)
 
-녹색 = 응용 프로그램이 전체 프레임 속도로 렌더링 될 수 있으므로 동작 다시 프로젝션이 꺼져 있습니다.
+녹색 = 애플리케이션이 전체 프레임 속도로 렌더링할 수 있으므로 동작 다시 프로젝션이 꺼져 있습니다.
 
-사이안 = 응용 프로그램이 cpu 바인딩되어 있으므로 동작 다시 프로젝션이 설정 되어 있습니다.
+Cyan = 애플리케이션이 cpu bound이므로 동작 다시 프로젝션이 켜져 있습니다.
 
-Blue = 응용 프로그램이 gpu 바인딩되어 있으므로 동작 다시 프로젝션이 설정 되어 있습니다.
+파랑 = 애플리케이션이 gpu 바인딩되어 있기 때문에 동작 다시 프로젝션이 켜진 경우
 
-빨강 = 응용 프로그램이 절반 미만의 프레임 속도에서 실행 중 이므로 동작 다시 프로젝션이 꺼져 있습니다. 사용 하도록 설정 된 경우 슈퍼 샘플링을 줄여 보세요.
+빨간색 = 애플리케이션이 프레임 속도의 절반 미만으로 실행 중이므로 동작 다시 프로젝션이 해제되었습니다. 사용하도록 설정된 경우 슈퍼 샘플링을 줄이십시오.
 
-녹색 + 사이안 + Blue = 움직임 다시 프로젝션이 절반 프레임 속도 모드 이거나 응용 프로그램에서 동작 다시 프로젝션을 요청 했습니다.
+녹색 + 녹청 + 파랑 = 동작 다시 프로젝션이 반 프레임 속도 모드이거나 애플리케이션에서 요청한 동작 다시 프로젝션입니다.
 
-## <a name="sharing-feedback-on-steamvr"></a>SteamVR에 대 한 의견 공유
+## <a name="sharing-feedback-on-steamvr"></a>SteamVR에 대한 피드백 공유
 
-사용자 의견은 Windows Mixed Reality SteamVR 환경을 개선 하는 데 유용 합니다. [Windows 피드백 허브](filing-feedback.md)를 통해 모든 피드백과 버그를 제출 합니다. 사용자 의견을 최대한 활용 하려면 다음 제안 사항을 따르세요.
+Windows Mixed Reality SteamVR 환경을 개선하는 데 있어 여러분의 피드백은 매우 중요합니다. [Windows 피드백 허브](filing-feedback.md)통해 모든 피드백 및 버그를 제출합니다. 사용자 의견을 최대한 활용하려면 다음 제안을 따르세요.
 
-1. 피드백 허브에서 "사용자 의견의 종류는 무엇 인가요?"에서 새로운 문제를 보고 하 고 있음을 표시 합니다. 섹션을 위쪽으로 이동 합니다.
-2. **Mixed Reality** 범주 및 **앱** 하위 범주를 선택 합니다.
-3. 문제 요약에 "SteamVR" 라는 단어를 입력 합니다. 그러면 피드백을 쉽게 찾을 수 있습니다.
-4. 문제를 해결 하는 동안 사용 했던 SteamVR 게임 또는 응용 프로그램을 설명 합니다.
-5. 사용자 의견에 SteamVR 시스템 보고서를 연결 하는 것이 좋습니다. 이렇게 하면 문제를 진단 하는 데 도움이 될 수 있는 더 많은 로그가 제공 됩니다.
-    1. SteamVR 창 (컨트롤러 상태를 표시 하는 작은 창)에서 제목을 선택 하 여 메뉴를 엽니다.
-    2. "시스템 보고서 만들기"를 선택 합니다.
-    3. 파일에 저장 합니다.
-    4. 생성 된 파일을 피드백 허브 항목에 직접 연결 합니다.
-6. SteamVR에 대 한 의견이 있는 경우 혼합 현실 성능 추적을 수집 합니다. 
-    1. **내 문제 다시 만들기** 단추를 선택 합니다.
-    2. "데이터 포함" 옆의 드롭다운에서 **혼합 현실 성능** 을 선택 합니다.
-    3. 게임이 실행 중인지 확인 하 고 **캡처 시작** 을 선택 합니다.
-    4. 게임을 재생 하 여 추적을 캡처하는 데 몇 초 정도 걸립니다. 추적을 10-15 초 넘게 캡처하지 마세요. 그렇지 않으면 너무 커서 제출할 수 없게 됩니다.
-    5. **캡처 중지** 를 선택 합니다.
-7. 나머지 필드를 완료 한 후 **제출** 을 선택 합니다.
+1. 피드백 허브 "어떤 종류의 피드백인가요?"에서 새 문제를 보고하고 있음을 나타냅니다. 섹션이 맨 위에 있습니다.
+2. **Mixed Reality** 범주 및 **앱** 하위 범주를 선택합니다.
+3. 문제 요약에 "SteamVR"이라는 단어를 넣습니다. 피드백을 찾는 데 도움이 됩니다.
+4. 문제가 발생하면 어떤 SteamVR 게임 또는 애플리케이션을 사용했는지 설명합니다.
+5. Feedback에 SteamVR 시스템 보고서를 첨부하는 것이 좋습니다. 이렇게 하면 문제를 진단하는 데 도움이 되는 더 많은 로그가 제공됩니다.
+    1. SteamVR 창(컨트롤러 상태를 표시하는 작은 창)에서 제목을 선택하여 메뉴를 엽니다.
+    2. "시스템 보고서 만들기"를 선택합니다.
+    3. 파일에 저장합니다.
+    4. 생성된 파일을 피드백 허브 항목에 직접 연결합니다.
+6. Feedback이 SteamVR 성능에 대한 피드백인 경우 Mixed Reality 성능 추적을 수집합니다. 
+    1. 내 **문제 다시 만들기** 단추를 선택합니다.
+    2. "정보 데이터 포함" 옆의 드롭다운에서 **성능 Mixed Reality** 선택합니다.
+    3. 게임이 실행 중인지 확인하고 **캡처 시작을** 선택합니다.
+    4. 몇 초 동안 게임을 재생하여 추적을 캡처합니다. 10-15초 이상 추적을 캡처하지 마세요. 그렇지 않으면 너무 커서 제출할 수 없습니다.
+    5. **캡처 중지를** 선택합니다.
+7. 나머지 필드를 완료하면 **제출을** 선택합니다.
 
-공유에 대 한 질문이 나 의견이 있는 경우 [스트림 포럼](http://steamcommunity.com/app/719950/discussions/)에서 연락할 수도 있습니다.
+공유할 질문이나 의견이 있는 경우 [Steam 포럼](http://steamcommunity.com/app/719950/discussions/)에서 문의해 주세요.
 
 ## <a name="see-also"></a>참조
 
-* [Windows Mixed Reality로 SteamVR 문제 해결](steamvr-questions.md)
-* [Windows Mixed Reality에서 게임과 앱 사용](using-games-and-apps-in-windows-mixed-reality.md)
+* [Windows Mixed Reality를 통해 SteamVR 문제 해결](steamvr-questions.md)
+* [Windows Mixed Reality 게임 및 앱 사용](using-games-and-apps-in-windows-mixed-reality.md)
 * [Unity에서 HP 컨트롤러 사용](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
 * [Unreal에서 HP 컨트롤러 사용](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 * [버그 및 피드백 신고](filing-feedback.md)
