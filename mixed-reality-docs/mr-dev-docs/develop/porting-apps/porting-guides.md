@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 포트, unity, unreal, 미들웨어, engine, UWP, Win32, 포팅, HoloLens 1 gen, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 마이그레이션, Windows 10, 입력 매핑
-ms.openlocfilehash: dd09c6479bfcf3659b3e9355be898d77bccc6dc6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: bb76325c0a2d10150cff6604e29c7ead8a97df8e
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580586"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394467"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>VR 앱을 Windows Mixed Reality로 포팅
 
@@ -30,7 +30,7 @@ Windows 10에는 몰입 형 및 holographic 헤드셋에 대 한 지원이 포�
 
 ### <a name="1-make-sure-you-have-the-right-development-hardware"></a>1. 올바른 개발 하드웨어가 있는지 확인 합니다.
 
-[도구 설치](../install-the-tools.md#immersive-vr-headset-requirements) 페이지에 권장 되는 개발 하드웨어가 나열 됩니다.
+[VR 열성적인 가이드](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines) 페이지에는 권장 되는 개발 하드웨어가 나열 되어 있습니다.
 
 ### <a name="2-upgrade-to-the-latest-flight-of-windows-10"></a>2. Windows 10의 최신 비행로 업그레이드
 
@@ -56,7 +56,7 @@ Windows Mixed Reality 플랫폼은 아직 개발 중입니다. Windows 참가자
 > [!IMPORTANT]
 > HP 반향 G2 컨트롤러를 사용 하는 경우 추가 입력 매핑 지침은 [이 문서](../unreal/unreal-reverb-g2-controllers.md) 를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [Windows Mixed Reality 최소 PC 하드웨어 호환성 지침](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [혼합 현실 성능 이해](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Unity에 대 한 성능 권장 사항](../unity/performance-recommendations-for-unity.md)
