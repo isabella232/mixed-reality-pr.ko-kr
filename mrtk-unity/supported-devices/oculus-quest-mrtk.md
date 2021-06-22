@@ -1,18 +1,18 @@
 ---
-title: Oculus Quest MRTK
+title: Oculus Quest 빌드 및 배포
 description: MRTK에서 Oculus Quest를 구성하기 위한 설명서
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, Oculus Quest,
-ms.openlocfilehash: 6b9c3a8f51388785f685714ef02be680bb98e14c
-ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, Oculus Quest
+ms.openlocfilehash: 96b4b5b8a68c3b61d54b6796ba01c9e2516ba959
+ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111908390"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112449762"
 ---
-# <a name="building-and-deploying-mrtk-to-oculus-quest-using-the-xr-sdk-pipeline"></a>XR SDK 파이프라인을 사용하여 Oculus Quest에 MRTK 빌드 및 배포
+# <a name="building-and-deploying-to-oculus-quest-using-the-xr-sdk-pipeline"></a>XR SDK 파이프라인을 사용하여 Oculus Quest 빌드 및 배포
 
 [Oculus Quest가](https://www.oculus.com/quest/) 필요합니다.
 

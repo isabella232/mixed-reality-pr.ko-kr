@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: 장면 이해, 공간 매핑, Windows Mixed Reality, Unity
-ms.openlocfilehash: 2f6e0c9d0370caed2b2bc01399b9e4fc00836556
-ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
+ms.openlocfilehash: dee561e49a9457aa35c44037f4573caaefd00f2a
+ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108644839"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112449732"
 ---
 # <a name="scene-understanding-sdk-overview"></a>장면 이해 SDK 개요
 
@@ -113,7 +113,7 @@ SceneObjects에는 다음 중 하나를 사용할 수 있습니다.
 
 <table>
 <tr>
-<th>SceneObjectKind</th> <th>Description</th>
+<th>SceneObjectKind</th> <th>설명</th>
 </tr>
 <tr><td>배경</td><td>SceneObject는 인식 되는 다른 종류의 장면 개체 중 하나가 <b>아닌</b> 것으로 알려져 있습니다. 이 클래스는 배경을 벽/층/천장 등이 아닌 것으로 알려진 경우 알 수 없는와 혼동 해서는 안 됩니다. unknown은 아직 분류 되지 않습니다.</b></td></tr>
 <tr><td>벽</td><td>실제 벽입니다. 벽은 불균형 환경 구조로 간주 됩니다.</td></tr>
@@ -121,7 +121,7 @@ SceneObjects에는 다음 중 하나를 사용할 수 있습니다.
 <tr><td>Ceiling</td><td>방의 위쪽 표면입니다.</td></tr>
 <tr><td>플랫폼</td><td>Holograms를 놓을 수 있는 커다란 플랫 표면입니다. 이는 테이블, countertops 및 기타 넓은 가로 표면을 나타내는 경향이 있습니다.</td></tr>
 <tr><td>World</td><td>레이블 지정과 무관 한 기하학적 데이터의 예약 된 레이블입니다. EnableWorldMesh 업데이트 플래그를 설정 하 여 생성 된 메시는 세계로 분류 됩니다.</td></tr>
-<tr><td>알 수 없음</td><td>이 장면 개체는 아직 분류 되어 있으며 종류를 할당 해야 합니다. 이 개체는 아무것도 될 수 있으므로 배경과 혼동 해서는 안 됩니다. 시스템은 아직 충분히 강력한 분류로 제공 되지 않습니다.</td></tr>
+<tr><td>Unknown</td><td>이 장면 개체는 아직 분류 되어 있으며 종류를 할당 해야 합니다. 이 개체는 아무것도 될 수 있으므로 배경과 혼동 해서는 안 됩니다. 시스템은 아직 충분히 강력한 분류로 제공 되지 않습니다.</td></tr>
 </tr>
 </table>
 
@@ -144,6 +144,9 @@ SceneQuad는 3d 세계를 차지 하는 2d 표면을 나타내는 SceneComponent
 SceneQuads는 2d에서 경계가 지정 된 사각형 표면을 정의 합니다. 그러나 SceneQuads는 임의의 잠재적으로 복잡 한 모양 (예: 도넛형 모양의 표)을 포함 하는 표면을 나타냅니다. 쿼드 표면의 복합 셰이프를 나타내려면 GetSurfaceMask API를 사용 하 여 표면의 셰이프를 제공 된 이미지 버퍼에 렌더링할 수 있습니다. 쿼드를 포함 하는 SceneObject에도 메쉬가 있으면 망상 삼각형은 렌더링 된 이미지와 동일 해야 하며, 둘 다 2d 또는 3d 좌표에서 표면의 실제 기 하 도형을 나타냅니다.
 
 ## <a name="scene-understanding-sdk-details-and-reference"></a>SDK 세부 정보 및 참조 장면 이해
+
+> [!NOTE] 
+> MRTK를 사용 하는 경우 MRTK와 상호 작용 [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) 하므로 대부분의 경우이 섹션을 건너뛸 수 있습니다. 자세한 내용은 [Mrtk 장면 이해 문서](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/scene-understanding) 를 참조 하세요.
 
 다음 섹션에서는 SceneUnderstanding의 기본 사항에 대해 알아봅니다. 이 섹션에서는 SceneUnderstanding를 사용 하는 방법을 확인 하기 위해 샘플 응용 프로그램을 탐색 하는 데 충분 한 컨텍스트를 제공 해야 하는 기본 사항에 대해 설명 합니다.
 
@@ -422,11 +425,11 @@ mesh.GetVertexPositions(positions);
 
 Unity 샘플 코드에 대 한 장면 이해는 [Unity 샘플 페이지](https://github.com/sceneunderstanding-microsoft/unitysample) 페이지에서 찾을 수 있습니다. 이 응용 프로그램을 사용 하면 장치와 통신 하 여 다양 한 장면 개체를 렌더링 하거나, PC에서 serialize 된 장면을 로드 하 고, 장치 없이 장면 이해를 경험할 수 있습니다.
 
-### <a name="where-can-i-get-sample-scenes"></a>샘플 장면을 어디에서 얻을 수 있나요?
+### <a name="where-can-i-get-sample-scenes"></a>샘플 장면의 위치는 어디서 얻을 수 있나요?
 
-HoloLens2가 있는 경우 ComputeSerializedAsync의 출력을 파일에 저장 하 고 사용자의 편의를 위해이를 deserialize 하 여 캡처한 장면을 저장할 수 있습니다. 
+HoloLens2가 있는 경우 ComputeSerializedAsync의 출력을 파일에 저장하고 자신의 편의를 위해 deserializing하여 캡처한 모든 장면을 저장할 수 있습니다. 
 
-HoloLens2 장치가 없지만 장면 이해를 재생 하려는 경우에는 미리 캡처된 장면을 다운로드 해야 합니다. 장면 이해 샘플은 현재 사용자의 편의를 위해 다운로드 하 여 사용할 수 있는 직렬화 된 장면과 함께 제공 됩니다. 여기에서 찾을 수 있습니다.
+HoloLens2 디바이스가 없지만 Scene Understanding을 사용하려는 경우 미리 캡처된 장면을 다운로드해야 합니다. Scene Understanding 샘플은 현재 사용자 편의를 위해 다운로드하여 사용할 수 있는 직렬화된 장면과 함께 제공됩니다. 여기에서 찾을 수 있습니다.
 
 [장면 이해 샘플 장면](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)
 

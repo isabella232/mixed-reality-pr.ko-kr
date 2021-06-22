@@ -5,12 +5,12 @@ author: MaxWang-MS
 ms.author: wangmax
 ms.date: 05/27/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 장면 이해
-ms.openlocfilehash: 1ed6f93216fc90e7c6332f2b9c40911d25d96d2a
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 67a8b99a281b6deecd621edb5600578806812d8a
+ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743551"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112449752"
 ---
 # <a name="scene-understanding"></a>장면 이해
 
@@ -69,7 +69,7 @@ Unity에서 프로젝트 탐색기를 사용 하 여에서 장면 파일을 열�
 ::: moniker range="= mrtkunity-2021-05"
 
 > [!NOTE] 
-> 샘플 장면에서는 `There is no active AsyncCoroutineRunner when an action is posted.` 초기화/스레드 실행 순서로 인해 특정 상황에서 경고를 기록 합니다. `AsyncCoroutineRunner`구성 요소가 "Demo Controller" GameObject에 연결 되어 있는지 확인 하 고 구성 요소/GameObject가 장면 (기본 경우)에서 사용 하도록 설정 된 상태를 유지 하도록 할 수 있는 경우 경고를 안전 하 게 무시할 수 있습니다.
+> 샘플 장면에서는 `There is no active AsyncCoroutineRunner when an action is posted.` 초기화/스레드 실행 순서로 인해 특정 상황에서 경고를 기록 합니다. `AsyncCoroutineRunner`구성 요소가 "Demo Controller" GameObject에 연결 되어 있는지 확인 하 고 구성 요소/GameObject가 장면 (기본 경우)에서 사용 하도록 설정 된 상태를 유지 하도록 할 수 있는 경우 경고를 안전 하 게 무시할 수 있습니다. **그러나 장면 이해를 사용 하 여 새 장면을 만들 때 루트에 빈 GameObject를 만들어 `AsyncCoroutineRunner` 스크립트를 연결 해야 합니다. 그렇지 않으면 장면 이해가 제대로 작동 하지 않을 수 있습니다.**
 ::: moniker-end
 
 #### <a name="configuring-the-observer-service"></a>관찰자 서비스 구성
