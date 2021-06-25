@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 96da41f28533c227fb106d8842907747f34098ec
-ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
+ms.openlocfilehash: f937b705f10cc4a287600349283ecaed4ae44666
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110350010"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112908080"
 ---
 # <a name="world-locking-tools-recommended"></a>[World Locking Tools(권장)](#tab/wlt)
 
@@ -99,7 +99,7 @@ ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
 XRAnchorStore anchorStore = await arAnchorManager.subsystem.TryGetAnchorStoreAsync();
 ```
 
-앵커 유지/비지속성의 전체 예제를 보려면 Mixed Reality [OpenXR 플러그 인 샘플 장면에서](../../openxr-getting-started.md#unity-sample-projects-for-openxr-and-hololens-2)앵커 -> Anchors 샘플 GameObject 및 AnchorsSample.cs 스크립트를 확인하세요.
+앵커 유지/비지속성의 전체 예제를 보려면 Mixed Reality [OpenXR 플러그 인 샘플 장면에서](../../xr-project-setup.md#unity-sample-projects-for-openxr-and-hololens-2)앵커 -> Anchors 샘플 GameObject 및 AnchorsSample.cs 스크립트를 확인하세요.
 
 ![앵커 샘플이 강조 표시된 Unity 편집기에서 열린 계층 구조 패널의 스크린샷](../../images/openxr-features-img-04.png)
 
