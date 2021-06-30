@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/24/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, unity
-ms.openlocfilehash: 646a0ec3b3b332b038509cba39caa085c1590c1a
-ms.sourcegitcommit: 593e8f80297ac0b5eccb2488d3f333885eab9adf
+ms.openlocfilehash: 11f930f014ff579db1f8845d52b7a2d65dd85d6b
+ms.sourcegitcommit: 4ea9ba1ca1cde426b016111c4176a4b0a9c17553
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112921430"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113080700"
 ---
 # <a name="choosing-a-unity-version-and-xr-plugin"></a>Unity 버전 및 XR 플러그 인 선택
 
@@ -25,12 +25,9 @@ HoloLens 2 및 Windows Mixed Reality 개발을 위한 Microsoft의 현재 권장
 > Unity 2020은 HoloLens(1세대)를 대상으로 하는 것을 지원하지 않습니다. 이러한 헤드셋은 **[Unity 2019 LTS의](#unity-20194-lts)** 전체 수명 주기에서 2022년 중간까지 레거시 기본 제공 XR이 있는 Unity 2019 LTS에서 계속 지원됩니다.
 >
 > [!NOTE]
-> 일부 패키지는 Unity 2020 LTS의 혼합 현실 프로젝트와 아직 호환되지 않습니다.
-> 
-> * URP(유니버설 렌더링 파이프라인) 10.5.0 이상에는 HoloLens 2 디바이스에서 알려진 성능 문제가 있습니다. _(다음 URP 릴리스에서 수정됨)_
-> * Azure Remote Rendering Unity 2020을 지원하는 업데이트된 릴리스를 아직 제공하지 않았습니다.
+> Azure Remote Rendering Unity 2020을 지원하는 업데이트된 릴리스를 아직 제공하지 않았습니다.
 >
-> Unity 프로젝트에서 유니버설 렌더링 파이프라인 또는 Azure Remote Rendering 사용하는 경우 업데이트된 패키지를 사용할 수 있을 때까지 프로젝트를 Unity 2020으로 업그레이드하는 것을 보류하는 것이 좋습니다.
+> Unity 프로젝트에서 Azure Remote Rendering 사용하는 경우 업데이트된 패키지를 사용할 수 있을 때까지 프로젝트를 Unity 2020으로 업그레이드하는 것을 보류하는 것이 좋습니다.
 
 Unity를 설치하고 관리할 때 가장 좋은 방법은 <a href="https://unity3d.com/get-unity/download" target="_blank">Unity Hub</a>를 사용하는 것입니다. 설치되면 Unity Hub를 엽니다.
 
