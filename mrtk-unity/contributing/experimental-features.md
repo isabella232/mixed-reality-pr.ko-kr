@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 705b7ab96d22c5c94c04476de30e5524095c1ce2
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 341ba0ee3e5900cc52f1ef715232f49064102309
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144782"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121381"
 ---
 # <a name="experimental-features"></a>실험적 기능
 
@@ -84,35 +84,35 @@ public static void MyCommand()
 MRTK가 변경 되 면 실험에서 작업을 수행할 수 있지만 예상치 못한 방식으로 다른 사용자에 게 영향을 줄 수 있습니다.
 MRTK core 코드에 대 한 모든 재발으로 인해 끌어오기 요청이 되돌려집니다.
 
-실험적 폴더 이외의 폴더에는 0으로 변경 하는 것을 목표로 합니다. 실험적 변경이 있을 수 있는 폴더 목록은 다음과 같습니다.
+실험적 폴더 이외의 폴더에는 0으로 변경 하는 것을 목표로 합니다. 다음은 실험적 변경을 수행할 수 있는 폴더 목록입니다.
 
 - MRTK/SDK/실험적
-- MRTK/SDK/Inspectors/Experimental
+- MRTK/SDK/검사기/실험적
 - MRTK/예제/실험적
 
-이러한 폴더 외부의 변경 내용은 매우 신중하게 처리해야 합니다. 실험적 기능에 MRTK 핵심 코드 변경 내용이 포함되어야 하는 경우 MRTK 변경 내용을 테스트 및 설명서를 포함하는 별도의 끌어오기 요청으로 분할하는 것이 좋습니다.
+이러한 폴더의 외부에 있는 변경 내용은 매우 신중 하 게 처리 해야 합니다. 실험적 기능에 MRTK core 코드에 대 한 변경 내용을 포함 해야 하는 경우 테스트 및 설명서를 포함 하는 별도의 끌어오기 요청으로 MRTK 변경 내용을 분할 하는 것이 좋습니다.
 
-### <a name="using-your-experimental-feature-should-not-impact-peoples-ability-to-use-core-controls"></a>실험적 기능을 사용하는 것은 핵심 컨트롤을 사용하는 사용자의 기능에 영향을 미치지 않아야 합니다.
+### <a name="using-your-experimental-feature-should-not-impact-peoples-ability-to-use-core-controls"></a>실험적 기능을 사용 하면 사용자의 핵심 컨트롤 사용 능력에 영향을 주지 않습니다.
 
-대부분의 사람들은 Button, ManipulationHandler 및 Interactable과 같은 핵심 UX 구성 요소를 매우 자주 사용합니다. 단추를 사용할 수 없는 경우 실험적 기능을 사용하지 못할 수 있습니다.
+대부분의 사람들은 ManipulationHandler 및 Interactable 단추와 같은 핵심 UX 구성 요소를 매우 자주 사용 합니다. 사용자가 단추를 사용 하지 못하도록 하는 경우 실험적 기능을 사용 하지 않을 가능성이 높습니다.
 
-구성 요소를 사용하면 단추, ManipulationHandler, BoundingBox 또는 상호 작용이 중단되지 않아야 합니다.
+구성 요소를 사용 하는 경우 ManipulationHandler, BoundingBox 또는 interactable 단추가 중단 되어서는 안 됩니다.
 
-예를 들어 [이 ScrollableObjectCollection PR에서](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001)ScrollableObjectCollection을 추가하면 사람들이 HoloLens 단추 프리팹을 사용할 수 없습니다. PR의 버그로 인한 것이 아니라 기존 버그를 노출했지만 PR이 체크 인되지 않았습니다.
+예를 들어 [이 SCROLLABLEOBJECTCOLLECTION PR](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001)에서 ScrollableObjectCollection를 추가 하면 사용자가 HoloLens 단추 prefabs를 사용할 수 없습니다. PR의 버그로 인해 발생 하는 것은 아니지만 기존 버그를 노출 하는 경우에도 PR을 체크 인할 수 없습니다.
 
-### <a name="provide-an-example-scene-that-demonstrates-how-to-use-the-feature"></a>기능을 사용하는 방법을 보여 주는 예제 장면 제공
+### <a name="provide-an-example-scene-that-demonstrates-how-to-use-the-feature"></a>기능을 사용 하는 방법을 보여 주는 예제 장면을 제공 합니다.
 
-사람들은 기능을 사용하는 방법과 테스트하는 방법을 확인해야 합니다.
+사용자는 기능을 사용 하는 방법 및 테스트 하는 방법을 확인 해야 합니다.
 
-MRTK/Examples/Experimental/YOUR_FEATURE 아래에 예제를 제공합니다.
+MRTK/example/실험적/YOUR_FEATURE 아래에 예제를 제공 합니다.
 
-### <a name="minimize-user-visible-flaws-in-experimental-features"></a>실험적 기능에서 사용자 표시 결함 최소화
+### <a name="minimize-user-visible-flaws-in-experimental-features"></a>실험적 기능에서 사용자에 게 보이는 결함 최소화
 
-실험적 기능이 작동하지 않는 경우 다른 사람은 실험적 기능을 사용하지 않고 기능을 사용하지 않습니다.
+다른 사용자는 실험적 기능을 사용 하지 않는 경우 해당 기능을 사용 하지 않습니다.
 
-대상 플랫폼에서 예제 장면을 테스트하고 예상대로 작동하는지 확인합니다. 편집기에서도 기능이 작동하는지 확인합니다. 따라서 사용자는 대상 플랫폼이 없어도 신속하게 반복하고 기능을 볼 수 있습니다.
+대상 플랫폼에서 예제 장면을 테스트 하 고 예상 대로 작동 하는지 확인 합니다. 기능이 편집기에서 작동 하는지 확인 하 여 대상 플랫폼이 없더라도 사용자가 신속 하 게 반복 하 고 기능을 볼 수 있도록 합니다.
 
-## <a name="graduating-experimental-code-into-mrtk-code"></a>실험적 코드를 MRTK 코드로 다시 변환
+## <a name="graduating-experimental-code-into-mrtk-code"></a>MRTK 코드에 실험적 코드 졸업
 
 기능이 매우 많은 사용을 표시 하는 경우에는 핵심 MRTK 코드를 졸업 해야 합니다. 이렇게 하려면 기능에 테스트, 설명서 및 예제 장면이 있어야 합니다.
 

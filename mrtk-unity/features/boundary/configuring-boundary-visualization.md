@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 경계 시스템,
-ms.openlocfilehash: 36717493107b129a7200dd3f912bcbdc3337b9a1
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 0f1a9edd9f9a31e7ba20f630406b299909a4864c
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144498"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121251"
 ---
 # <a name="configuring-the-boundary-visualization"></a>경계 시각화 구성
 
@@ -50,31 +50,31 @@ ms.locfileid: "110144498"
 
 **표시**
 
-재생 영역 사각형을 만들고 장면에 추가할지 여부를 나타냅니다. 기본값은 true입니다.
+재생 영역 사각형을 만들어 장면에 추가할지 여부를 나타냅니다. 기본값은 true입니다.
 
 **재질**
 
-재생 영역 개체를 만들 때 사용 해야 하는 자료를 나타냅니다.
+재생 영역 개체를 만들 때 사용해야 하는 재질을 나타냅니다.
 
-**물리 계층**
+**물리학 계층**
 
-재생 영역을 설정 해야 하는 계층입니다. 기본값은 *Raycast 계층 무시* 계층입니다.
+재생 영역을 설정해야 하는 계층입니다. 기본값은 *Raycast 무시* 계층입니다.
 
-## <a name="tracked-area-settings"></a>추적 영역 설정
+## <a name="tracked-area-settings"></a>추적된 영역 설정
 
 ![경계 시각화 추적 영역 설정](../images/boundary/BoundaryVisualizationTrackedAreaSettings.png)
 
 **표시**
 
-추적 영역의 개요를 만들어 장면에 추가할지 여부를 나타냅니다. 기본값은 true입니다.
+추적된 영역의 윤곽선을 만들어 장면에 추가할지 여부를 나타냅니다. 기본값은 true입니다.
 
 **재질**
 
-추적 된 영역 개요를 만들 때 사용 해야 하는 자료를 나타냅니다.
+추적된 영역 윤곽선을 만들 때 사용해야 하는 재질을 나타냅니다.
 
-**물리 계층**
+**물리학 계층**
 
-추적 된 영역을 설정할 계층입니다. 기본값은 *Raycast 계층 무시* 계층입니다.
+추적된 영역을 설정해야 하는 계층입니다. 기본값은 *Raycast 무시* 계층입니다.
 
 ## <a name="boundary-wall-settings"></a>경계 벽 설정
 
@@ -82,18 +82,18 @@ ms.locfileid: "110144498"
 
 **표시**
 
-경계 벽 평면을 만들고 장면에 추가할지 여부를 나타냅니다. 기본값은 false입니다.
+경계 벽면을 만들어 장면에 추가할지 여부를 나타냅니다. 기본값은 false입니다.
 
 **재질**
 
-경계 벽 평면을 만들 때 사용 해야 하는 재질을 나타냅니다.
+경계 벽면을 만들 때 사용해야 하는 재질을 나타냅니다.
 
-**물리 계층**
+**물리학 계층**
 
-경계 벽을 설정 해야 하는 계층입니다. 기본값은 *Raycast 계층 무시* 계층입니다.
+경계 벽이 설정되어야 하는 계층입니다. 기본값은 *Raycast 무시* 계층입니다.
 
 > [!NOTE]
-> 경계 벽 구성 요소를 *Raycast 무시* 이외의 물리 계층으로 설정 하면 사용자가 장면 내의 개체와 상호 작용 하지 못할 수 있습니다.
+> 경계 벽 구성 요소를 *Raycast 무시* 이외의 물리학 계층으로 설정하면 사용자가 장면 내의 개체와 상호 작용하지 못할 수 있습니다.
 
 ## <a name="boundary-ceiling-settings"></a>경계 상한 설정
 
@@ -114,7 +114,7 @@ ms.locfileid: "110144498"
 > [!NOTE]
 > 경계 최대값 구성 요소를 *Raycast 무시* 이외의 물리학 계층으로 설정하면 사용자가 장면 내의 개체와 상호 작용하지 못할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [경계 API 설명서](xref:Microsoft.MixedReality.Toolkit.Boundary)
 - [경계 시스템](boundary-system-getting-started.md)

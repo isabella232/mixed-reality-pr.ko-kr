@@ -5,12 +5,12 @@ author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 이벤트
-ms.openlocfilehash: 12719a6c749a03648d4f75e9e6461b85cc9ab275
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 79ebd3855cd991db168233f00058ab5d42f87d83
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144294"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121601"
 ---
 # <a name="core-system"></a>핵심 시스템
 
@@ -37,30 +37,30 @@ ms.locfileid: "110144294"
 이벤트는 포커스가 있는 GameObject로 직접 보낼 수 있습니다. 예를 들어 개체에는 를 구현하는 스크립트가 있을 수 [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler) 있습니다.
 이 개체는 가까이 있는 손에서 포커스가 있을 때 터치 이벤트를 가져옵니다. 이러한 유형의 이벤트는 이벤트를 처리할 수 있는 GameObject를 찾을 때까지 GameObject 계층 구조를 "위로" 이동합니다.
 
-이는 기본 입력 시스템 구현 내에서 [Executehierarchy](https://docs.unity3d.com/ScriptReference/EventSystems.ExecuteEvents.ExecuteHierarchy.html) 를 사용 하 여 수행 됩니다.
+이 작업은 기본 입력 시스템 구현 내에서 [ExecuteHierarchy를](https://docs.unity3d.com/ScriptReference/EventSystems.ExecuteEvents.ExecuteHierarchy.html) 사용하여 수행됩니다.
 
 ### <a name="global-listeners"></a>전역 수신기
 
-이벤트는 전역 수신기로 전송 될 수 있습니다. 입력 시스템의 인터페이스를 사용 하 여 모든 입력 이벤트를 등록할 수 [`IMixedRealityEventSystem`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem) 있습니다. 전역 이벤트를 등록 하는 데 [Registerhandler](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem.RegisterHandler%2A) 메서드를 사용 하는 것이 좋습니다. 사용 되지 않는 `Register` 함수는 특정 형식의 입력 이벤트 (형식이 이벤트 인터페이스에 의해 정의 됨)가 아닌 모든 입력 이벤트에 대 한 알림 메시지를 받습니다.
+전역 수신기로 이벤트를 보낼 수 있습니다. 입력 시스템의 인터페이스를 사용하여 모든 입력 이벤트에 등록할 수 [`IMixedRealityEventSystem`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem) 있습니다. [RegisterHandler](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem.RegisterHandler%2A) 메서드를 사용하여 전역 이벤트를 등록하는 것이 좋습니다. 사용되지 않는 `Register` 함수를 사용하면 수신기가 특정 형식의 입력 이벤트(여기서 형식은 이벤트 인터페이스에 의해 정의됨)가 아니라 모든 입력 이벤트에 대한 알림을 받습니다.
 
-[대체 수신기](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystem.PushFallbackInputHandler%2A) 는 장면의 다른 위치에서 처리 되지 않은 모든 단일 입력 이벤트를 수신 하기 때문에 권장 되지 않는 또 다른 형식의 전역 수신기입니다.
+대체 [수신기는](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystem.PushFallbackInputHandler%2A) 장면의 다른 곳에서 처리되지 않은 모든 단일 입력 이벤트를 수신하기 때문에 권장되지 않는 또 다른 유형의 전역 수신기입니다.
 
 ### <a name="order-of-event-dispatch"></a>이벤트 디스패치 순서
 
-일반적으로 이벤트는 다음과 같은 방식으로 수신기에 전송 됩니다. 아래 단계 중 하나라도 이벤트를 [처리](https://docs.unity3d.com/ScriptReference/EventSystems.AbstractEventData-used.html)된 것으로 표시 하면 이벤트 디스패치 프로세스가 중지 됩니다.
+일반적으로 이벤트는 다음과 같은 방식으로 수신기에 전송됩니다. 아래 단계 중에서 이벤트를 [처리된](https://docs.unity3d.com/ScriptReference/EventSystems.AbstractEventData-used.html)것으로 표시하면 이벤트 디스패치 프로세스가 중지됩니다.
 
-1. 이벤트는 전역 수신기에 전송 됩니다.
-2. 포커스가 있는 개체의 모달 대화 상자로 이벤트가 전송 됩니다.
-3. 포커스가 있는 개체로 이벤트가 전송 됩니다.
-4. 이벤트는 대체 수신기에 전송 됩니다.
+1. 이벤트가 전역 수신기로 전송됩니다.
+2. 이벤트는 포커스가 있는 개체의 모달 대화 상자로 전송됩니다.
+3. 이벤트는 포커스가 있는 개체로 전송됩니다.
+4. 이벤트는 대체 수신기로 전송됩니다.
 
-## <a name="device-managers-and-data-providers"></a>장치 관리자 및 데이터 공급자
+## <a name="device-managers-and-data-providers"></a>디바이스 관리자 및 데이터 공급자
 
-이러한 엔터티는 하위 수준 Api (예: Windows Mixed Reality Api 또는 OpenVR Api)와의 상호 작용을 담당 하 고 이러한 시스템의 데이터를 MRTK의 더 높은 수준의 입력 추상화에 맞는 데이터로 변환 합니다. [컨트롤러](controllers-pointers-and-focus.md#controllers)의 수명을 검색 하 고 만들고 관리 하는 일을 담당 합니다.
+이러한 엔터티는 하위 수준 API(예: Windows Mixed Reality API 또는 OpenVR API)와 상호 작용하고 해당 시스템의 데이터를 MRTK의 상위 수준 입력 추상화에 맞는 데이터로 변환하는 역할을 담당합니다. 컨트롤러의 수명을 검색, 생성 및 관리하는 업무를 [담당합니다.](controllers-pointers-and-focus.md#controllers)
 
-장치 관리자의 기본 흐름은 다음과 같습니다.
+디바이스 관리자의 기본 흐름에는 다음이 포함됩니다.
 
-1. 장치 관리자는 입력 시스템 서비스에 의해 인스턴스화됩니다.
-2. 장치 관리자가 기본 시스템에 등록 합니다. 예를 들어 Windows Mixed Reality 장치 관리자는 [입력](../features/input/input-events.md) 및 [제스처](../features/input/gestures.md#gesture-events) 이벤트를 등록 합니다.
-3. 기본 시스템에서 검색 하는 컨트롤러를 만듭니다. 예를 들어 공급자가 트레일러 식의 존재를 감지할 수 있습니다.
+1. 디바이스 관리자는 입력 시스템 서비스에 의해 인스턴스화됩니다.
+2. 디바이스 관리자는 기본 시스템에 등록합니다(예: Windows Mixed Reality 디바이스 관리자는 [입력](../features/input/input-events.md) 및 [제스처](../features/input/gestures.md#gesture-events) 이벤트를 등록합니다.
+3. 기본 시스템에서 검색하는 컨트롤러를 만듭니다(예: 공급자가 굴절된 손의 존재를 감지할 수 있는 경우).
 4. Update() 루프에서 UpdateController()를 호출하여 기본 시스템의 새 상태를 폴링하고 해당 컨트롤러 표현을 업데이트합니다.

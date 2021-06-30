@@ -1,42 +1,42 @@
 ---
-title: 경계 시스템 시작
-description: MRTK의 경계 시스템에 대한 방문 페이지
+title: 경계 시스템 개요
+description: MRTK의 경계 시스템에 대 한 방문 페이지
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 경계 시스템,
-ms.openlocfilehash: 2858b770fb49a44d1e2d704e8d3a81affe74d272
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 경계 시스템
+ms.openlocfilehash: 405a2d06be5d929d5c276fc8cd7ab36b6b3cf68c
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144736"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121361"
 ---
 # <a name="boundary-system"></a>경계 시스템
 
-경계 시스템은 혼합 현실 애플리케이션에서 가상 현실 경계 구성 요소를 시각화하기 위한 지원을 제공합니다. 경계는 VR 헤드셋을 걸 때 사용자가 안전하게 이동할 수 있는 영역을 정의합니다. 경계는 사용자가 VR 헤드셋을 걸 때 보이지 않는 장애물을 방지하는 데 도움이 되는 혼합 현실 환경의 중요한 구성 요소입니다.
+경계 시스템은 혼합 현실 응용 프로그램에서 가상 현실 경계 구성 요소를 시각화 하기 위한 지원을 제공 합니다. 경계는 VR 헤드셋을 입고 하는 동안 사용자가 안전 하 게 이동할 수 있는 영역을 정의 합니다. 경계는 사용자가 VR 헤드셋을 입고 하는 동안 보이지 않는 장애물을 피할 수 있도록 하는 혼합 현실 환경의 중요 한 구성 요소입니다.
 
-많은 Virtual Reality 플랫폼은 사용자 또는 컨트롤러가 경계에 가까워지면 가상 세계에 겹쳐진 흰색 윤곽선과 같은 자동 디스플레이를 제공합니다. Mixed Reality 도구 키트의 경계 시스템은 이 기능을 확장하여 추적된 영역의 개요, 평면 및 사용자에게 추가 정보를 제공하는 데 사용할 수 있는 기타 기능을 표시할 수 있도록 합니다.
+많은 가상 현실 플랫폼은 사용자 또는 해당 컨트롤러가 경계에 가까워지면 가상 세계에 있는 흰색 개요와 같은 자동 표시를 제공 합니다. 혼합 현실 도구 키트의 경계 시스템은이 기능을 확장 하 여 사용자에 게 추가 정보를 제공 하는 데 사용할 수 있는 추적 된 영역, 층 평면 및 기타 기능에 대 한 개요를 표시할 수 있도록 합니다.
 
 ## <a name="getting-started"></a>시작
 
-경계 지원을 추가하려면 Mixed Reality Toolkit의 두 가지 주요 구성 요소인 경계 시스템과 경계로 구성된 가상 현실 플랫폼이 필요합니다.
+경계에 대 한 지원을 추가 하려면 혼합 현실 도구 키트의 두 가지 주요 구성 요소인 경계 시스템과 경계를 사용 하 여 구성 된 가상 현실 플랫폼이 필요 합니다.
 
 1. 경계 시스템 [사용](#enable-boundary-system)
 2. 경계 시각화 [구성](#configure-boundary-visualization)
-3. 구성된 경계를 사용하여 VR 플랫폼 [빌드 및 배포](#build-and-deploy)
+3. 구성 된 경계를 사용 하 여 VR 플랫폼 [빌드 및 배포](#build-and-deploy)
 
 ## <a name="enable-boundary-system"></a>경계 시스템 사용
 
-경계 시스템은 MixedRealityToolkit 개체(또는 다른 [서비스 등록 기관](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) 구성 요소)에 의해 관리됩니다.
+경계 시스템은 MixedRealityToolkit 개체 또는 다른 [서비스 등록자](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) 구성 요소에 의해 관리 됩니다.
 
-다음 단계에서는 MixedRealityToolkit 개체의 사용을 가정합니다. 다른 서비스 등록 기관에 필요한 단계는 다를 수 있습니다.
+다음 단계에서는 MixedRealityToolkit 개체를 사용 하는 것으로 가정 합니다. 다른 서비스 등록 기관 필요한 단계는 다를 수 있습니다.
 
-1. 장면 계층 구조에서 MixedRealityToolkit 개체를 선택합니다.
+1. 장면 계층 구조에서 MixedRealityToolkit 개체를 선택 합니다.
 
     ![MRTK 구성 장면 계층 구조](../images/MRTK_ConfiguredHierarchy.png)
 
-1. 검사기 패널을 경계 시스템 섹션으로 이동하고 사용을 선택합니다.
+1. 검사기 패널을 경계 시스템 섹션으로 이동 하 고 사용을 선택 합니다.
 
     ![경계 시스템 사용](../images/boundary/MRTKConfig_Boundary.png)
 
@@ -75,7 +75,7 @@ CoreServices.BoundarySystem.ShowBoundaryWalls = false;
 GameObject floorVisual = CoreServices.BoundarySystem.GetFloorVisualization();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [경계 API 설명서](xref:Microsoft.MixedReality.Toolkit.Boundary)
 - [경계 시각화 구성](configuring-boundary-visualization.md)
