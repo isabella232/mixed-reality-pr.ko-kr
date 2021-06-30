@@ -1,18 +1,18 @@
 ---
-title: Hololens 및 WMR 헤드셋에 배포
+title: HoloLens 및 WMR 헤드셋에 배포
 description: 다양한 디바이스에 앱을 빌드하고 배포하기 위한 설명서입니다.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, Visual Studio
-ms.openlocfilehash: 1547f0630d307e9e87505890adef4cad366d6c00
-ms.sourcegitcommit: 4c1dd5c22af69eeb192425118c2bfb95344b8dd9
+ms.openlocfilehash: 12384c3d3c0c2208d86a9a946580d0311f8a8955
+ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110441152"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113042304"
 ---
-# <a name="deploying-to-hololens-and-wmr-headsets"></a>Hololens 및 WMR 헤드셋에 배포
+# <a name="deploying-to-hololens-and-wmr-headsets"></a>HoloLens 및 WMR 헤드셋에 배포
 
 MRTK를 사용 하 여 빌드된 응용 프로그램을 windows 장치, UWP (유니버설 Windows Platform) 및 독립 실행형 플랫폼에 배포 하는 방법에는 두 가지가 있습니다. HoloLens 1 또는 HoloLens 2 용으로 빌드된 응용 프로그램은 UWP를 대상으로 해야 하지만 WMR 헤드셋 용으로 빌드된 응용 프로그램은 UWP 또는 독립 실행형을 대상으로 할 수 있습니다.
 
@@ -23,7 +23,7 @@ MRTK를 사용 하 여 빌드된 응용 프로그램을 windows 장치, UWP (유
 > [!NOTE]
 > Visual Studio에서 장치에 응용 프로그램을 배포 하는 경우 장치에 따라 Visual Studio를 약간 다르게 구성 해야 합니다. 구성은 다음과 같습니다.
 >
->| 플랫폼 | Configuration | 아키텍처 | 대상 |
+>| 플랫폼 | 구성 | 아키텍처 | 대상 |
 |---|---|---|---|
 | HoloLens 2 | 릴리스 또는 마스터 | ARM64 | 디바이스 |
 | HoloLens 1 | 릴리스 또는 마스터 | x86 | 디바이스 |
@@ -37,17 +37,17 @@ MRTK를 사용 하 여 빌드된 응용 프로그램을 windows 장치, UWP (유
 
 "대상 SDK 버전" 드롭다운에 "10.0.18362.0" 옵션이 포함되어 있는지 확인합니다. 이 항목이 없으면 [최신 Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk)를 설치해야 합니다.
 
-### <a name="unity-20193-and-hololens"></a>Unity 2019.3 및 HoloLens
+### <a name="unity-20192020-and-hololens"></a>Unity 2019/2020 및 HoloLens
 
-HoloLens 앱이 디바이스에서 2D 패널로 표시되는 경우 UWP 앱을 배포하기 전에 Unity 2019.3.x에서 다음 설정이 구성되었는지 확인합니다.
+HoloLens 앱이 장치에서 2D 패널로 표시 되는 경우 UWP 앱을 배포 하기 전에 Unity에서 다음 설정이 구성 되었는지 확인 합니다.
 
-레거시 XR을 사용하는 경우:
+레거시 기본 제공 XR 지원 (Unity 2019에만 해당)을 사용 하는 경우:
 
 1. 편집 > 프로젝트 설정, 플레이어로 이동합니다.
 1. UWP 탭의 **XR 설정** 에서 **가상 현실 지원** 이 활성화되어 있고 **Windows Mixed Reality** SDK가 SDK에 추가되었는지 확인합니다.
 1. Visual Studio에서 빌드 및 배포
 
-XR-Plugin을 사용하는 경우:
+OpenXR 또는 Windows XR 플러그 인을 사용 하는 경우:
 
 1. [XRSDK 시작](../configuration/getting-started-with-mrtk-and-xrsdk.md)에 있는 단계를 따릅니다.
 1. 구성 프로필이 **DefaultXRSDKConfigurationProfile** 인지 확인합니다.
@@ -55,9 +55,11 @@ XR-Plugin을 사용하는 경우:
 1. Visual Studio에서 빌드 및 배포
 
 >[!IMPORTANT]
-> Unity 2019.3.x를 사용하는 경우 Visual Studio의 빌드 아키텍처로 **ARM64** 를 선택하고 **ARM** 은 선택하지 않습니다. Unity 2019.3.x의 기본 Unity 설정을 사용하면 Unity 버그로 인해 ARM이 선택된 경우 Unity 앱은 HoloLens에 배포하지 않습니다. 이는 [Unity의 문제 추적기](https://issuetracker.unity3d.com/issues/enabling-graphics-jobs-in-2019-dot-3-x-results-in-a-crash-or-nothing-rendering-on-hololens-2)에서 추적할 수 있습니다.
+> Unity 2019.3.x를 사용하는 경우 Visual Studio의 빌드 아키텍처로 **ARM64** 를 선택하고 **ARM** 은 선택하지 않습니다. Unity 2019.3.x의 기본 Unity 설정을 사용하면 Unity 버그로 인해 ARM이 선택된 경우 Unity 앱은 HoloLens에 배포하지 않습니다.
 >
 > ARM 아키텍처가 필요한 경우 **편집 > 프로젝트 설정, 플레이어** 로 이동하고 **기타 설정** 메뉴에서 **그래픽 작업** 을 사용하지 않도록 설정합니다. **그래픽 작업** 을 사용하지 않도록 설정하면 앱이 Unity 2019.3.x용 ARM 빌드 아키텍처를 사용하여 배포할 수는 있지만 ARM64가 권장됩니다.
+>
+> 이 문제는 Unity 2019.4 및 Unity 2020.3에서 해결 되었습니다.
 
 ## <a name="building-and-deploying-mrtk-to-wmr-headsets-standalone"></a>WMR 헤드셋에 MRTK 빌드 및 배포 (독립 실행형)
 

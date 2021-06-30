@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 배포, unity, visual studio, HoloLens, HoloLens 2, 모던 헤드셋, 모범 사례, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, UWP, Visual Studio Tools Windows SDK
-ms.openlocfilehash: 6940382af605c28686cec862cf2d9b6cb8411387
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: edd79b95d02cfeb1da4effc485fc57078e3d24a3
+ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583467"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113042264"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Unity 및 Visual Studio 사용 모범 사례
 
@@ -19,7 +19,7 @@ Unity를 사용 하 여 혼합 현실 응용 프로그램을 만드는 경우 �
 
 ## <a name="improving-iteration-time"></a>반복 시간 향상
 
-Unity의 .NET scripting 백 엔드 지원은 Unity 2018에서 더 이상 사용 되지 않으며 Unity 2019 이상에서 제거 되었습니다. 따라서 [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html)로 전환 하는 것이 좋습니다. 그러나 Unity에서 Visual Studio로 빌드 시간이 길어질 수 있습니다. 더 빠른 반복을 위해 환경을 개선 하려면 최상의 컴파일 결과를 위해 환경을 설정 합니다.
+Unity의 .NET scripting 백 엔드 지원은 Unity 2018에서 더 이상 사용 되지 않으며 Unity 2019 이상에서 제거 되었으므로 [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html)로 전환 하는 것이 좋습니다. 그러나 Unity에서 Visual Studio로 빌드 시간이 길어질 수 있습니다. 더 빠른 반복을 위해 환경을 개선 하려면 최상의 컴파일 결과를 위해 환경을 설정 합니다.
 
 1) 매번 동일한 디렉터리에 프로젝트를 빌드하여 증분 빌드를 사용 하 여 미리 작성 된 파일을 다시 사용 합니다.
 2) 프로젝트에 대 한 맬웨어 방지 소프트웨어 검색 사용 안 함 & 빌드 폴더
@@ -57,7 +57,7 @@ UWP Visual Studio 솔루션을 소스 제어에 체크 인 하면 새 Windows SD
 
 자산을 텍스트 형식으로 저장 하면 Visual Studio에서 콘텐츠 변경 차이을 보다 쉽게 검토할 수 있습니다. **편집 > 프로젝트 설정 > 편집기** 를 선택 하 여 자산을 텍스트 형식으로 저장 하 고, **강제로 텍스트** 를 변경 하 여 **자산 Serialization** 모드를 변경할 수 있습니다. 그러나 텍스트 자산 파일 변경 내용을 병합 하는 것은 오류가 발생 하기 쉬우며 권장 되지 않으므로 소스 제어에서 단독 이진 체크 아웃을 사용 하도록 설정 하는 것이 좋습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
 - [IL2CPP에 대 한 빌드 시간 최적화](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html)
 - [*Unityscriptanalyzer* Visual Studio 확장](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer)
