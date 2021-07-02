@@ -1,18 +1,18 @@
 ---
-title: 단위 테스트
+title: 테스트 작성 및 실행
 description: MRTK의 안정성을 확인하기 위한 단위 테스트입니다.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, UnitTest,
-ms.openlocfilehash: a915b005a69de1864a5674bbb0363f18d1c74b19
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: c8efb192982a1cb9ca07e91d29a69b11aaffc290
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121351"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177114"
 ---
-# <a name="writing-and-running-tests-in-mrtk"></a>MRTK에서 테스트 작성 및 실행
+# <a name="writing-and-running-tests"></a>테스트 작성 및 실행
 
 MRTK의 안정성을 보장하기 위해 MRTK에는 코드 변경 내용이 기존 동작을 회귀하지 않도록 하는 일련의 테스트가 있습니다. MRTK와 같은 큰 코드베이스에서 테스트 검사를 잘 하는 것은 안정성과 변경 시 신뢰도에 매우 중요합니다.
 
@@ -221,7 +221,7 @@ namespace Microsoft.MixedReality.Toolkit.Tests
 
 ### <a name="edit-mode-tests"></a>모드 테스트 편집
 
-편집 모드 테스트는 Unity의 편집 모드에서 실행되며 Mixed Reality Toolkit 리포지션의 **MRTK**  >  **테스트**  >  **EditModeTests** 폴더 아래에 추가할 수 있습니다.
+편집 모드 테스트는 Unity의 편집 모드에서 실행되며 Mixed Reality Toolkit 리포지온의 **MRTK**  >  **테스트**  >  **EditModeTests** 폴더 아래에 추가할 수 있습니다.
 새 테스트를 만들려면 다음 템플릿을 사용할 수 있습니다.
 
 ```c#
@@ -285,7 +285,7 @@ Test: Assets/MRTK/Tests/EditModeTests/Core/Utilities/InterestingUtilityClassTest
 
 새 테스트를 추가할 때 올바른 MRTK 아이콘을 갖도록 스크립트를 수정하세요. 이렇게 하기 쉬운 MRTK 도구가 있습니다.
 
-1. Mixed Reality 도구 키트 메뉴 항목으로 이동합니다.
+1. Mixed Reality Toolkit 메뉴 항목으로 이동합니다.
 1. 유틸리티, 업데이트, 아이콘을 차례로 클릭합니다.
 1. 테스트를 클릭하면 업데이트가 자동으로 실행되어 아이콘이 누락된 테스트 스크립트가 업데이트됩니다.
 

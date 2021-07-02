@@ -5,25 +5,25 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: a39616a091a3f6800c429dc797ec2f3130e96f40
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: f8f7b8dbac0355c226e4bbfae39246e5c1c58f69
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144542"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176269"
 ---
 # <a name="extension-services"></a>확장 서비스
 
-확장 서비스는 Mixed Reality 도구 키트의 기능을 확장하는 구성 요소입니다. 이러한 서비스는 MRTK 또는 다른 당사자가 제공할 수 있습니다.
+확장 서비스는 Mixed Reality Toolkit 기능을 확장하는 구성 요소입니다. 이러한 서비스는 MRTK 또는 다른 당사자가 제공할 수 있습니다.
 
 ## <a name="creating-an-extension-service"></a>확장 서비스 만들기
 
 확장 서비스를 만드는 가장 효율적인 방법은 [확장 서비스 만들기 마법사](../tools/extension-service-creation-wizard.md)를 사용하는 것입니다.
-확장 서비스 만들기 마법사를 시작하려면 **Mixed Reality 도구 키트 > 유틸리티 > 확장 서비스 만들기를** 선택합니다.
+확장 서비스 만들기 마법사를 시작하려면 **Mixed Reality Toolkit > 유틸리티 > 확장 서비스 만들기를** 선택합니다.
 
 ![확장 서비스 만들기 마법사](../images/extension-wizard/ExtensionServiceCreationWizard.png)
 
-마법사는 서비스 구성 요소 만들기를 자동화하고 적절한 인터페이스 상속을 보장합니다.
+마법사는 서비스 구성 요소 생성을 자동화하고 적절한 인터페이스 상속을 보장합니다.
 
 ![확장 서비스 만들기 마법사에서 만든 구성 요소](../images/extension-wizard/ExtensionServiceComponents.png)
 
@@ -34,7 +34,7 @@ ms.locfileid: "110144542"
 
 ## <a name="registering-an-extension-service"></a>확장 서비스 등록
 
-애플리케이션에서 액세스할 수 있도록 하려면 새 확장 서비스를 Mixed Reality 도구 키트에 등록해야 합니다.
+애플리케이션에서 액세스할 수 있도록 하려면 새 확장 서비스를 Mixed Reality Toolkit 등록해야 합니다.
 
 확장 서비스 만들기 마법사를 사용하여 서비스를 등록할 수 있습니다.
 
@@ -46,13 +46,13 @@ Mixed Reality Toolkit 구성 검사기를 사용하여 서비스를 수동으로
 
 확장 서비스에서 프로필을 사용하는 경우 검사기에서 프로필을 지정했는지 확인하세요.
 
-![구성 된 확장 서비스](../images/profiles/ConfiguredExtensionService.png)
+![구성된 확장 서비스](../images/profiles/ConfiguredExtensionService.png)
 
 구성 요소 이름 및 우선 순위를 조정할 수도 있습니다.
 
 ## <a name="accessing-an-extension-service"></a>확장 서비스 액세스
 
-아래 예제와 같이를 사용 하 여 코드에서 확장 서비스에 액세스 합니다 [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry) .
+아래 예제와 같이 를 사용하여 코드에서 확장 서비스에 [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry) 액세스합니다.
 
 ```c#
 INewService service = null;
@@ -62,7 +62,7 @@ if (MixedRealityServiceRegistry.TryGetService<INewService>(out service))
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [시스템, 확장 서비스 및 데이터 공급자](../../architecture/systems-extensions-providers.md)
 - [확장 서비스 만들기 마법사](../tools/extension-service-creation-wizard.md)

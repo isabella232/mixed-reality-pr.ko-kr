@@ -1,20 +1,20 @@
 ---
-title: 장면 이해
+title: 관찰자의 관찰자 이해
 description: MRTK의 장면 이해에 대해 설명 합니다.
 author: MaxWang-MS
 ms.author: wangmax
 ms.date: 05/27/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 장면 이해
-ms.openlocfilehash: 67a8b99a281b6deecd621edb5600578806812d8a
-ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
+keywords: Unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk, 장면 이해
+ms.openlocfilehash: d5430e7885055a550347c4ccebc1452f68125922
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112449752"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176237"
 ---
-# <a name="scene-understanding"></a>장면 이해
+# <a name="scene-understanding-observer"></a>관찰자의 관찰자 이해
 
-[장면 이해](/windows/mixed-reality/scene-understanding) 는 장면 엔터티에 대 한 의미 체계 및 __hololens 2__ 의 기하학적 형태 (hololens 1 Gen은 지원 되지 않음)를 반환 합니다.
+[장면 이해](/windows/mixed-reality/scene-understanding) 는 장면 엔터티에 대 한 의미 체계와 __HoloLens 2__ 에서의 기하학적 형태를 반환 합니다 (HoloLens 1 Gen은 지원 되지 않음).
 
 이 기술의 몇 가지 예상 사용 사례는 다음과 같습니다.
 * 특정 종류의 가장 가까운 표면 (예: 벽 및 층)에 개체를 삽입 합니다.
@@ -22,7 +22,7 @@ ms.locfileid: "112449752"
 * Quads로 물리학 엔진 친화적인 기 하 도형을 제공 합니다.
 * 비슷한 알고리즘을 작성할 필요가 없도록 하 여 개발 가속화
 
-장면 이해는 MRTK 2.6에서 __실험적__ 기능으로 도입 되었습니다. 이라는 [공간 관찰자](spatial-awareness-getting-started.md#register-observers) 로 MRTK에 통합 됩니다 [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) . 장면 이해는 레거시 XR 파이프라인과 XR SDK 파이프라인 (OpenXR (MRTK 2.7에서 시작) 및 Windows XR Plugin) 모두에서 작동 합니다. 두 경우 모두 `WindowsSceneUnderstandingObserver` 이 사용 됩니다.
+장면 이해는 MRTK 2.6에서 __실험적__ 기능으로 도입 되었습니다. 이라는 [공간 관찰자](spatial-awareness-getting-started.md#register-observers) 로 MRTK에 통합 됩니다 [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) . 장면 이해는 레거시 XR 파이프라인과 XR SDK 파이프라인 (OpenXR (mrtk 2.7에서 시작) 및 Windows XR Plugin) 모두에서 작동 합니다. 두 경우 모두 `WindowsSceneUnderstandingObserver` 이 사용 됩니다.
 
 > [!NOTE] 
 > 원격에서 장면 이해를 사용 하는 것은 지원 되지 않습니다.
@@ -45,7 +45,7 @@ ms.locfileid: "112449752"
 
 ### <a name="scene-understanding-sample-scene"></a>장면 이해 샘플 장면
 
-Unity에서 프로젝트 탐색기를 사용 하 여에서 장면 파일을 열고 `Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity` play를 누릅니다.
+Unity에서 Project 탐색기를 사용 하 여에서 장면 파일을 열고 `Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity` play를 누릅니다.
 
 ::: moniker range="< mrtkunity-2021-05"
 > [!IMPORTANT]
@@ -98,7 +98,7 @@ Unity에서 프로젝트 탐색기를 사용 하 여에서 장면 파일을 열�
 
 ### <a name="built-app-notes"></a>빌드된 앱 메모
 
-표준 방식으로 HoloLens에 빌드 및 배포 합니다. 실행 한 후에는 기능을 사용 하 여 많은 단추가 표시 되어야 합니다.
+표준 방식으로 HoloLens를 빌드하고 배포 합니다. 실행 한 후에는 기능을 사용 하 여 많은 단추가 표시 되어야 합니다.
 
 관찰자에 게 쿼리를 만드는 일부 pit가 있습니다. 인출 요청이 잘못 구성 되 면 이벤트 페이로드가 필요한 데이터를 포함 하지 않습니다. 예를 들어 quads를 요청 하지 않는 경우 폐색 mask 질감이 표시 되지 않습니다. 예를 들어 관찰자가 메시를 요청 하도록 구성 되지 않은 경우에는 세계 메쉬가 나타나지 않습니다. `DemoSceneUnderstandingController`스크립트는 이러한 종속성 중 일부를 처리 하지만 모두는 처리 하지 않습니다.
 

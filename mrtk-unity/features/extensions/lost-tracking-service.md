@@ -5,14 +5,14 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 96090b05c60cfaa6ff5d8c5e1dc7a58cc2658b71
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 70274639326563b1f3c3a2061dcdbf824fd43709
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144521"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176224"
 ---
-# <a name="lost-tracking-visualization"></a>추적 시각화 손실
+# <a name="lost-tracking-service"></a>추적 서비스 손실
 
 ![추적 손실](../images/lost-tracking/LostTrackingVisualization.jpg)
 

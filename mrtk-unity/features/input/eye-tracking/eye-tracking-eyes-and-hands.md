@@ -1,18 +1,18 @@
 ---
-title: 시선 추적 눈과 손
+title: 눈과 손
 description: MRTK에서 손 동작과 함께 시선 대상 지정을 기본 포인터로 사용하는 방법
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, EyeTracking,
-ms.openlocfilehash: c9d5f23610d821aa1e50a3217a4be736601dc14d
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: ff464c6f2381a9df020a9ccf807672d4463d662c
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143991"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175112"
 ---
-# <a name="eyes--hand-interaction"></a>눈 + 손 상호 작용
+# <a name="eyes-and-hands"></a>눈과 손
 
 ## <a name="how-to-support-_look--hand-motions_-eye-gaze--hand-gestures"></a>_모양 + 손 동작(시선_ 응시 & 손 제스처)을 지원하는 방법
 

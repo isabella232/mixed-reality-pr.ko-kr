@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, 혼합 현실 도구 키트, UWP, Windows 10, HRTF, 헤드 관련 전송 함수, reverb, Microsoft Spatializer
-ms.openlocfilehash: 112531a3248461a5b380ad4b93de34545a2f2c3f
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: a61e709f24c2162bc6e6e1248de658128674d49e
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403364"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175368"
 ---
 # <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. Unity 프로젝트에 공간 오디오 추가
 
@@ -51,37 +51,33 @@ HRTF 기반 알고리즘을 사용하여 오디오를 처리하려면 많은 양
 이를 위해 먼저 [프로젝트 및 첫 번째 애플리케이션 초기화](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
 
 1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름(예: *MRTK Tutorials*) 지정
-
-1. [빌드 플랫폼 전환](mr-learning-base-02.md#configuring-the-unity-project)
-
-1. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-
-1. [Mixed Reality 도구 키트 가져오기 및 Unity 프로젝트 구성](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
-
-1. [장면 만들기 및 구성](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) 및 장면에 적절한 이름(예: *SpatialAudio)을* 지정합니다.
+2. [빌드 플랫폼 전환](mr-learning-base-02.md#configuring-the-unity-project)
+3. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
+4. [Mixed Reality Toolkit 가져오기 및 Unity 프로젝트 구성](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [장면 만들기 및 구성](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) 및 장면에 적절한 이름(예: *SpatialAudio)을* 지정합니다.
 
 그런 다음 [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면에 대한 MRTK 구성 프로필이 **DefaultHoloLens2ConfigurationProfile인지** 확인하고 공간 인식 메시의 표시 옵션을 **폐색으로 변경합니다.**
 
-## <a name="adding-microsoft-spatializer-to-the-project"></a>프로젝트에 Microsoft Spatializer 추가
+## <a name="adding-microsoft-spatializer-to-the-project"></a>Project Microsoft Spatializer 추가
 
 Microsoft Spatializer <a href="https://github.com/microsoft/spatialaudio-unity/releases/download/v1.0.18/Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage" target="_blank">Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage</a> 다운로드 및 가져오기
 
 >[!TIP]
-> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [자습서 자산 가져오기](mr-learning-base-02.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.
+> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [자습서 자산 가져오기](mr-learning-base-04.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.
 
 ## <a name="enable-the-microsoft-spatializer-plugin"></a>Microsoft Spatializer 플러그 인 사용
 
-Microsoft Spatializer를 Unity 프로젝트로 가져오면 **MRTK Project Configurator** 창이 **나타나고, Audio spatializer** 드롭다운을 사용하여 **Microsoft Spatializer** 를 선택한 다음, 적용 단추를 클릭하여 설정을 적용합니다.
+Microsoft Spatializer를 Unity 프로젝트로 가져오면 **MRTK Project Configurator** 창이 **나타나고, Audio spatializer** 드롭다운을 사용하여 Microsoft **Spatializer** 를 선택한 다음, 적용 단추를 클릭하여 설정을 적용합니다.
 
-![MRTK 프로젝트 구성기](images/spatial-audio/spatial-audio-01-section3-step1-1.PNG)
+![MRTK Project 구성기](images/spatial-audio/spatial-audio-01-section3-step1-1.PNG)
 
-Microsoft Spatializer: **Edit -> Project Settings -> Audio를** 수동으로 사용하도록 설정하고 **Spatializer 플러그 인을** "Microsoft Spatializer"로 변경할 수도 있습니다.
+Microsoft Spatializer: **Edit -> Project 설정 -> Audio를** 수동으로 사용하도록 설정하고 **Spatializer 플러그 인을** "Microsoft Spatializer"로 변경할 수도 있습니다.
 
-![spatializer 플러그 인을 보여주는 프로젝트 설정](images/spatial-audio/spatial-audio-01-section3-step1-2.PNG)
+![spatializer 플러그 인을 보여 Project 설정](images/spatial-audio/spatial-audio-01-section3-step1-2.PNG)
 
 ## <a name="enable-spatial-audio-on-your-workstation"></a>워크스테이션에서 공간 오디오 사용
 
-데스크톱 버전의 Windows에서는 공간 오디오가 기본적으로 사용하지 않도록 설정됩니다. 작업 표시줄에서 볼륨 아이콘을 마우스 오른쪽 단추로 클릭하여 사용하도록 설정합니다. HoloLens 2 가장 잘 표현하려면 **공간 소리 -> 헤드폰용 Windows Sonic** 를 선택합니다.
+데스크톱 버전의 Windows 공간 오디오는 기본적으로 사용하지 않도록 설정됩니다. 작업 표시줄에서 볼륨 아이콘을 마우스 오른쪽 단추로 클릭하여 사용하도록 설정합니다. HoloLens 2 가장 잘 표현하려면 **공간 소리 -> 헤드폰용 Windows Sonic** 를 선택합니다.
 
 ![데스크톱 공간 오디오 설정](images/spatial-audio/spatial-audio-01-section4-step1-1.PNG)
 

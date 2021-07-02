@@ -1,16 +1,16 @@
 ---
-title: 진단 구성
+title: 진단 시스템 구성
 description: MRTK에서 진단을 구성하는 설명서
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 211ee2ed06ba9b13bd90169bcc7ee50da4594034
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: d81b441cd9bcd40846eb94320f6f7de1bbd2f0a8
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121801"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177253"
 ---
 # <a name="configuring-the-diagnostics-system"></a>진단 시스템 구성
 

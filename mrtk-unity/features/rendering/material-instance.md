@@ -4,13 +4,13 @@ description: MRTK의 자재 인스턴스 및 사용에 대 한 설명서
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, MaterialInstance,
-ms.openlocfilehash: 216fa72af6bb6caaf47e30c156f7caf1b1dab71e
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, mrtk, MaterialInstance,
+ms.openlocfilehash: ecd8f9e14564cbd03cb6faa848b06ca55a024207
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145218"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176725"
 ---
 # <a name="material-instance"></a>자재 인스턴스
 
@@ -54,7 +54,7 @@ public class NoLeak : MonoBehaviour
 }
 ```
 
-## <a name="usage"></a>사용량
+## <a name="usage"></a>사용
 
 Unity의 [렌더러](https://docs.unity3d.com/ScriptReference/Renderer-material.html)를 호출할 때 unity는 새 자료를 자동으로 인스턴스화합니다. 자료가 더 이상 필요 하지 않거나 게임 개체가 제거 될 때 자료를 제거 하는 것은 호출자의 책임입니다. [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance)동작을 사용 하면 편집 및 실행 중에 자재 누수를 방지 하 고 재질 할당 경로를 일관 되 게 유지할 수 있습니다.
 
@@ -105,6 +105,6 @@ public class MyBehaviour : MonoBehaviour,  IMaterialInstanceOwner
 
 자세한 내용은 동작 내에서 보여 주는 예제 사용법을 참조 하세요 [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [MRTK 표준 세이더](mrtk-standard-shader.md)

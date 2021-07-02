@@ -1,20 +1,20 @@
 ---
-title: Mixed Reality 서비스 레지스트리 및 IMixedRealityServiceRegistrar
+title: Mixed Reality 서비스 레지스트리
 description: MixedRealityServiceRegistry 및 IMixedRealityServiceRegistrar에 대한 설명서
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 09b20537824af42d241b6c33496cedcb4f530bc7
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 061e4233d61de817b1aaed7faaa6d461427d6f07
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145235"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176699"
 ---
-# <a name="what-are-the-mixedrealityserviceregistry-and-imixedrealityserviceregistrar"></a>MixedRealityServiceRegistry 및 IMixedRealityServiceRegistrar란?
+# <a name="mixed-reality-service-registry"></a>Mixed Reality 서비스 레지스트리
 
-Mixed Reality Toolkit에는 관련 작업을 수행하는 매우 유사한 두 가지 구성 요소인 MixedRealityServiceRegistry 및 IMixedRealityServiceRegistrar가 있습니다.
+Mixed Reality Toolkit 관련 작업을 수행하는 매우 유사한 두 가지 구성 요소인 MixedRealityServiceRegistry 및 IMixedRealityServiceRegistrar가 있습니다.
 
 ## <a name="mixedrealityserviceregistry"></a>MixedRealityServiceRegistry
 
@@ -51,11 +51,11 @@ if (!MixedRealityServiceRegistry.TryGetService<IMixedRealityInputSystem>(out inp
 - [SpatialAwarenessSystemManager](xref:Microsoft.MixedReality.Toolkit.Experimental.SpatialAwareness.SpatialAwarenessSystemManager)
 - [TeleportSystemManager](xref:Microsoft.MixedReality.Toolkit.Experimental.Teleport.TeleportSystemManager)
 
-InputSystemManager를 제외한 위의 각 구성 요소는 단일 서비스 유형의 등록 및 상태를 관리해야 합니다. InputSystem에는 InputSystemManager에서도 관리되는 몇 가지 추가 지원 서비스(예: FocusProvider)가 필요합니다.
+InputSystemManager를 제외하고 위의 각 구성 요소는 단일 서비스 유형의 등록 및 상태를 관리해야 합니다. InputSystem에는 InputSystemManager에서도 관리되는 몇 가지 추가 지원 서비스(예: FocusProvider)가 필요합니다.
 
-일반적으로 IMixedRealityServiceRegistrar에 의해 정의된 메서드는 서비스 관리 구성 요소에 의해 내부적으로 호출되거나 추가 서비스 구성 요소가 올바르게 작동해야 하는 서비스에 의해 호출됩니다. 애플리케이션 코드는 일반적으로 이러한 메서드를 호출하지 않아야 합니다. 이렇게 하면 애플리케이션이 예기치 않게 동작할 수 있습니다(예: 캐시된 서비스 인스턴스가 잘못될 수 있음).
+일반적으로 IMixedRealityServiceRegistrar에 의해 정의된 메서드는 서비스 관리 구성 요소에 의해 내부적으로 호출되거나 추가 서비스 구성 요소가 올바르게 작동해야 하는 서비스에 의해 호출됩니다. 애플리케이션 코드는 일반적으로 이러한 메서드를 호출하지 않아야 합니다. 이렇게 하면 애플리케이션이 예측 불가능하게 동작할 수 있습니다(예: 캐시된 서비스 인스턴스가 무효화될 수 있음).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [IMixedRealityServiceRegistrar API 설명서](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar)
 - [MixedRealityServiceRegistry API 설명서](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry)

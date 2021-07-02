@@ -5,16 +5,16 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: ad4a643d0fb46cdb15cee3c37edaffb4f51ed44b
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: f53932b5e12e60b3638c1d6c31e569016de983ee
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145260"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176750"
 ---
 # <a name="input-providers"></a>입력 공급자
 
-입력 공급자는 Mixed Reality 도구 키트 구성 요소에 있는 **등록된 서비스 공급자 프로필에** 등록됩니다.
+입력 공급자는 Mixed Reality Toolkit 구성 요소에 있는 **등록된 서비스 공급자 프로필** 에 등록됩니다.
 
 <img src="../images/input/RegisteredServiceProviders.PNG" width="650px" style="display:block;" alt="Service providers">
 

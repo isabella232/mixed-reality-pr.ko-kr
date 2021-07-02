@@ -1,27 +1,27 @@
 ---
-title: 시스템로 텔레포트 개요
-description: MRTK에서의 텔레포트 시스템 설정 및 해제에 대 한 개요
+title: Teleport 시스템
+description: MRTK에서 Teleport 시스템 사용 및 사용 안 됨 개요
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 텔레포트 시스템,
-ms.openlocfilehash: a44ad1827597dd0b27bc88a9420a3b251f934afd
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, Teleport 시스템,
+ms.openlocfilehash: 7a49b1fea36eb1809c57abee4cede1216c07d5bf
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144141"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176185"
 ---
 # <a name="teleport-system"></a>시스템 텔레포트
 
-텔레포트 시스템은 응용 프로그램에서 불투명 한 디스플레이를 사용할 때 teleporting를 처리 하는 MRTK의 하위 시스템입니다. AR 환경 (예: HoloLens)의 경우 teleportation 시스템이 활성화 되어 있지 않습니다. 모던 HMD 환경 (OpenVR, WMR)의 경우 텔레포트 시스템을 사용 하도록 설정할 수 있습니다.
+원격 통신 시스템은 애플리케이션이 불투명 표시를 사용할 때 사용자에게 원격 전송을 처리하는 MRTK의 하위 시스템입니다. AR 환경(예: HoloLens)의 경우 원격 보고 시스템이 활성화되지 않습니다. 몰입형 HMD 환경(OpenVR, WMR)의 경우 원격 포트 시스템을 사용하도록 설정할 수 있습니다.
 
-## <a name="enabling-and-disabling"></a>사용 및 사용 안 함
+## <a name="enabling-and-disabling"></a>사용 및 사용 안 됨
 
-자신의 프로필에서 확인란을 선택 취소 하 여 텔레포트 시스템을 사용 하거나 사용 하지 않도록 설정할 수 있습니다.
-이 작업을 수행 하려면 장면에서 MixedRealityToolkit 개체를 선택 하 고 "텔레포트"을 클릭 한 다음 "텔레포트 시스템 사용" 확인란을 선택 취소 합니다.
+프로필에서 확인란을 설정/해제하여 원격 포트 시스템을 사용하거나 사용하지 않도록 설정할 수 있습니다.
+이 작업은 장면에서 MixedRealityToolkit 개체를 선택하고 "Teleport"를 클릭한 다음 "Teleport 시스템 사용" 확인란을 토글하여 수행할 수 있습니다.
 
-이 작업은 런타임 시에도 수행할 수 있습니다.
+이 작업은 런타임에 수행할 수도 있습니다.
 
 ```c#
 void DisableTeleportSystem()
@@ -37,14 +37,14 @@ void EnableTeleportSystem()
 
 ## <a name="events"></a>이벤트
 
-텔레포트 시스템은 인터페이스를 통해 이벤트 [`IMixedRealityTeleportHandler`](xref:Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHandler) 를 노출 하 여 텔레포트 작업이 시작, 종료 또는 취소 될 때 신호를 제공 합니다.
-이벤트 및 관련 페이로드의 메커니즘에 대 한 자세한 내용은 연결 된 API 설명서를 참조 하세요.
+teleport 시스템은 인터페이스를 통해 이벤트를 [`IMixedRealityTeleportHandler`](xref:Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHandler) 노출하여 원격 전송 작업이 시작, 종료 또는 취소될 때 신호를 제공합니다.
+이벤트 메커니즘 및 관련 페이로드에 대한 자세한 내용은 연결된 API 설명서를 참조하세요.
 
-## <a name="usage"></a>사용량
+## <a name="usage"></a>사용
 
-### <a name="how-to-register-for-teleportation-events"></a>Teleportation 이벤트를 등록 하는 방법
+### <a name="how-to-register-for-teleportation-events"></a>원격 보고 이벤트에 등록하는 방법
 
-아래 코드에서는 teleportation 이벤트를 수신 하는 MonoBehaviour를 만드는 방법을 보여 줍니다. 이 코드에서는 텔레포트 시스템이 활성화 된 것으로 가정 합니다.
+아래 코드는 원격 보고 이벤트를 수신 대기하는 MonoBehaviour를 만드는 방법을 보여줍니다. 이 코드는 원격 포트 시스템을 사용하도록 설정되어 있다고 가정합니다.
 
 ```c#
 using Microsoft.MixedReality.Toolkit;
@@ -89,8 +89,8 @@ public class TeleportHandlerExample : MonoBehaviour, IMixedRealityTeleportHandle
 }
 ```
 
-## <a name="teleporting-on-mrtk"></a>MRTK의 Teleporting
+## <a name="teleporting-on-mrtk"></a>MRTK에서 원격 보고
 
-기본 구성을 사용 하 여 MR 장치의 컨트롤러를 텔레포트 하려면 엄지 스틱을 사용 합니다. 트레일러 식으로 텔레포트 하려면 인덱스 손가락을 curl 하 여 텔레포트를 완료 하 고 인덱스 및 엄지 단추를 사용 하 여 손을 향한 제스처를 만듭니다. 입력 시뮬레이션을 사용 하 여 텔레포트 하려면 업데이트 된 [입력 시뮬레이션 서비스 설명서](../input-simulation/input-simulation-service.md)를 참조 하세요.
+기본 구성을 사용하여 MR 디바이스에서 컨트롤러와 원격 통신하려면 엄지스틱을 사용합니다. 굴절된 손으로 원격 이동하려면 손끝이 인덱스 및 엄지 손가락으로 바깥쪽을 향하도록 제스처를 만들고, 인덱스 손가락으로 말려서 원격 통신을 완료합니다. 입력 시뮬레이션을 사용하여 원격 전송하려면 업데이트된 [입력 시뮬레이션 서비스 설명서를](../input-simulation/input-simulation-service.md)참조하세요.
 
-  ![텔레포트 제스처](../images/teleport/handteleport.gif)
+  ![원격 이동 제스처](../images/teleport/handteleport.gif)

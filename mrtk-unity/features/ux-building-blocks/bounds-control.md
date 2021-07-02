@@ -1,16 +1,16 @@
 ---
-title: BoundsControl
+title: 범위 제어
 description: MRTK의 범위 컨트롤에 대 한 개요
 author: thalbern
 ms.author: bethalha
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 경계 제어,
-ms.openlocfilehash: 65558861955f782cf9d81a8bb4ec3a31dee03fde
-ms.sourcegitcommit: 95ea5f3cf873acc93c4614fbccaa093e0f5186f0
+keywords: Unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk, 범위 제어,
+ms.openlocfilehash: f5f5e1f463f741eb23f75c9826034b8974baf947
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "110487730"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176465"
 ---
 # <a name="bounds-control"></a>범위 제어
 
@@ -129,122 +129,122 @@ Box 구성은 collider size 및 box 안쪽 여백을 통해 정의 된 범위를
 * **핸들 크기**: 핸들의 크기입니다.
 * **Collider 패딩**: 핸들 Collider에 추가할 패딩입니다.
 * **조작할 때 그리기**: 활성화 되 면 상호 작용 시작 지점에서 현재 손 모양 또는 포인터 위치로의 tether 그리기를 그립니다.
-* **핸들은 충돌체 무시:** 충돌체가 여기에 연결되면 핸들은 이 충돌체와의 충돌을 무시합니다.
-* **프리팹 충돌체 형식 처리:** 생성된 핸들과 함께 사용할 충돌체 형식입니다.
-* **X에 대한 핸들 표시**: X축에 대한 핸들의 표시를 제어합니다.
-* **Y에 대한 핸들 표시: Y축** 핸들의 표시를 제어합니다.
-* **Z에 대한 핸들 표시: Z축에** 대한 핸들의 표시를 제어합니다.
+* **핸들 무시 collider**: collider가 여기에 연결 된 경우 핸들은이 collider와 충돌을 무시 합니다.
+* **Prefab collider type**: 만든 핸들과 함께 사용할 collider Type을 처리 합니다.
+* **X에 대 한 핸들 표시**: x 축의 핸들 표시 여부를 제어 합니다.
+* **Y에 대 한 핸들 표시**: y 축에 대 한 핸들의 표시 여부를 제어 합니다.
+* **Z에 대 한 핸들 표시**: z 축의 핸들 표시 여부를 제어 합니다.
 
-### <a name="links-configuration-wireframe"></a>링크 구성(와이어프레임)
+### <a name="links-configuration-wireframe"></a>링크 구성 (와이어 프레임)
 
-링크 구성을 사용하면 경계 컨트롤의 와이어프레임 기능을 사용할 수 있습니다. 다음 속성을 구성할 수 있습니다.
+링크 구성은 경계 제어의 와이어 프레임 기능을 사용 하도록 설정 합니다. 다음 속성을 구성할 수 있습니다.
 
-* **와이어프레임 재질:** 와이어프레임 메시에 적용되는 재질입니다.
-* **와이어프레임 가장자리 반지름:** 와이어프레임의 두께입니다.
-* **Wireframe 셰이프:** 와이어프레임의 모양은 입방형 또는 원통형일 수 있습니다.
-* **와이어프레임 표시: 와이어프레임의** 표시를 제어합니다.
+* **와이어 프레임 재질**: 와이어 프레임 망상에 적용 되는 재질입니다.
+* **와이어 프레임 가장자리 반경**: 와이어 프레임 두께입니다.
+* **골격형 shape**: 와이어 프레임의 모양은 입방 또는 원통형 중 하나로 지정할 수 있습니다.
+* **와이어 프레임 표시**: 와이어 프레임의 표시 여부를 제어 합니다.
 
 ### <a name="proximity-effect-configuration"></a>근접 효과 구성
 
-손까지의 거리를 기준으로 애니메이션이 있는 핸들을 표시하고 숨깁니다. 2단계 크기 조정 애니메이션이 있습니다. 기본값은 HoloLens 2 스타일 동작으로 설정됩니다.
+손으로의 거리에 따라 애니메이션이 포함 된 핸들을 표시 하 고 숨깁니다. 2 단계 크기 조정 애니메이션을 포함 합니다. 기본값은 HoloLens 2 스타일 동작으로 설정 됩니다.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Proximity.png" alt="Bounds control Proximity">
 
-* **근접 효과 활성:** 근접 기반 핸들 활성화 사용
-* **개체 중간 근접:** 첫 번째 단계 크기 조정을 위한 거리입니다.
-* **개체 근접:** 두 번째 단계 크기 조정을 위한 거리입니다.
-* **원거리 크기 조정:** 손의 범위가 범위 컨트롤 상호 작용('중간 근접 처리'로 정의된 거리)을 벗어나는 경우 핸들 자산의 기본 소수점 값입니다. 기본적으로 핸들을 숨기려면 0을 사용합니다.)
-* **중간 규모:** 손을 경계 컨트롤 상호 작용 범위 내에 있는 경우 핸들 자산의 배율 값입니다(위의 '근접 핸들'에 의해 정의된 거리). 1을 사용하여 정상 크기 표시)
-* **닫기 배율:** 손의 잡기 상호 작용 범위 내에 있을 때 핸들 자산의 배율 값(위에서 '근접 핸들'로 정의된 거리)입니다. 1.x를 사용하여 더 큰 크기 표시)
-* **원거리 증가율:** 손의 크기가 중간에서 원거리로 이동하면 근접 크기 조정된 개체의 배율을 조정합니다.
-* **중간 증가율:** 손을 중간에서 가까운 근접으로 이동할 때 근접 크기 조정된 개체 배율을 평가합니다.
-* **증가율 닫기:** 손의 근접한 위치에서 개체 중심까지 이동할 때 근접 크기 조정된 개체 배율을 평가합니다.
+* **근접 효과 활성**: 근접 기반 핸들 활성화 활성화
+* **개체 중간 근접**: 1 단계 크기 조정에 대 한 거리
+* **개체 근접 근접**: 두 번째 단계 크기 조정에 대 한 거리
+* **Far**: 손이 범위 제어 상호 작용 (위에 정의 된 ' handle Medium ') 범위를 벗어날 때 핸들 자산의 기본 배율 값입니다. 0을 사용 하 여 기본적으로 핸들을 숨깁니다.)
+* **중간 규모**: 핸들이 범위 제어 상호 작용 (위에서 ' 핸들 닫기 '로 정의 된 거리) 내에 있는 경우 핸들 자산의 배율 값입니다. 1을 사용 하 여 보통 크기 표시)
+* **종가**: 핸들 자산의 크기 조정 값 (위에서 ' 핸들 닫기 '에 의해 위에서 정의 된 거리) 내에 있는 경우입니다. 1. x를 사용 하 여 더 큰 크기 표시)
+* **Far 증가율**: 중간에서 멀리 떨어진 곳으로 이동할 때 근접 하 게 조정 된 개체의 비율을 조정 합니다.
+* **Medium 증가율**: 중간에서 근접 하 게 가까이 이동할 때 근접 하 게 조정 된 개체의 크기를 조정 합니다.
+* **확대 비율 닫기**: 근접 한 쪽에서 개체 중심으로 이동 하는 경우 근접 배율이 조정 된 개체의 비율을 조정 합니다.
 
 ## <a name="constraint-system"></a>제약 조건 시스템
 
-경계 컨트롤은 제약 [조건 관리자를](constraint-manager.md) 사용하여 경계 컨트롤 핸들을 사용하는 동안 변환, 회전 또는 크기 조정 동작을 제한하거나 수정할 수 있도록 지원합니다.
+범위 제어는 범위 제어 핸들을 사용 하는 동안 [제약 조건 관리자](constraint-manager.md) 를 사용 하 여 변환, 회전 또는 크기 조정 동작을 제한 하거나 수정 하도록 지원 합니다.
 
-속성 검사자는 선택한 제약 조건 관리자를 스크롤하고 강조 표시하는 옵션을 사용하여 동일한 게임 개체에 연결된 사용 가능한 모든 제약 조건 관리자를 드롭다운에 표시합니다.
+속성 검사자는 선택한 제약 조건 관리자를 스크롤하고 강조 표시 하는 옵션을 사용 하 여 드롭다운에서 동일한 게임 개체에 연결 된 모든 사용 가능한 제약 조건 관리자를 표시 합니다.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Constraints.png" width="450" alt="Bounds control Constraints">
 
 ## <a name="events"></a>이벤트
 
-범위 컨트롤은 다음 이벤트를 제공합니다. 이 예제에서는 이러한 이벤트를 사용하여 오디오 피드백을 재생합니다.
+범위 제어는 다음과 같은 이벤트를 제공 합니다. 이 예제에서는 이러한 이벤트를 사용 하 여 오디오 피드백을 재생 합니다.
 
-* **회전 시작: 회전이** 시작될 때 발생합니다.
-* **회전 중지: 회전이 중지될** 때 발생합니다.
-* **Scale Started:** 크기 조정이 시작될 때 발생합니다.
-* **크기 조정 중지:** 크기 조정이 중지되면 발생합니다.
-* **번역 시작됨:** 번역이 시작될 때 발생합니다.
-* **중지된 번역: 번역이** 중지되면 발생합니다.
+* **회전 시작**: 회전이 시작 될 때 발생 합니다.
+* **회전 중지 됨**: 회전이 중지 될 때 발생 합니다.
+* **크기 조정 시작**: 크기 조정을 시작할 때 발생 합니다.
+* **크기 조정 중지 됨**: 크기 조정이 중지 될 때 발생 합니다.
+* **변환 시작**: 변환이 시작 될 때 발생 합니다.
+* **변환 중지 됨**: 번역이 중지 될 때 발생 합니다.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Events.png" width="450" alt="Bounds control Events">
 
-## <a name="elastics-experimental"></a>Elastics(실험적)
+## <a name="elastics-experimental"></a>탄력적 (실험적)
 
-범위 컨트롤을 통해 개체를 조작할 때 탄력적 을 사용할 수 있습니다. [탄력적 시스템은](../elastics/elastic-system.md) 여전히 실험적 상태입니다. 탄력적 기능을 사용하려면 기존 Elastics Manager 구성 요소를 연결하거나 단추를 통해 새 Elastics Manager를 만들고 `Add Elastics Manager` 연결합니다.
+탄력적는 범위 제어를 통해 개체를 조작할 때 사용할 수 있습니다. [탄력적 시스템](../experimental/elastic-system.md) 은 여전히 실험적 상태에 있습니다. 탄력적를 사용 하도록 설정 하려면 기존 탄력적 manager 구성 요소를 연결 하거나 단추를 통해 새 탄력적 manager를 만들어 연결 `Add Elastics Manager` 합니다.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Elastics.png" width="450" alt="Bounds control Elastics">
 
-## <a name="handle-styles"></a>스타일 처리
+## <a name="handle-styles"></a>핸들 스타일
 
-기본적으로 스크립트를 할당하면 [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) HoloLens 1세대 스타일의 핸들이 표시됩니다. HoloLens 2 스타일 핸들을 사용하려면 적절한 핸들 프리팹 및 재질을 할당해야 합니다.
+기본적으로 스크립트를 할당 하면 [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) HoloLens 1 세대 스타일의 핸들이 표시 됩니다. HoloLens 2 스타일 핸들을 사용 하려면 적절 한 핸들 prefabs 및 자료를 할당 해야 합니다.
 
-![경계 컨트롤 핸들 스타일 2](../images/bounds-control/MRTK_BoundsControl_HandleStyles1.png)
+![범위 컨트롤 핸들 스타일 2](../images/bounds-control/MRTK_BoundsControl_HandleStyles1.png)
 
-다음은 HoloLens 2 스타일 범위 컨트롤 핸들의 프리팹, 재질 및 크기 조정 값입니다. 장면에서 이 예제를 찾을 수 `BoundsControlExamples` 있습니다.
+다음은 HoloLens 2 스타일 경계 컨트롤 핸들에 대 한 prefabs, 재질 및 배율 값입니다. 이 예제는 장면에서 찾을 수 있습니다 `BoundsControlExamples` .
 
 <img src="../images/bounds-control/MRTK_BoundsControl_HandleStyles2.png" width="450" alt="Bounds control HandleStyles">
 
-### <a name="handles-setup-for-hololens-2-style"></a>핸들(HoloLens 2 스타일에 대한 설정)
+### <a name="handles-setup-for-hololens-2-style"></a>Handles (HoloLens 2 스타일에 대 한 설정)
 
-* **핸들 재질:** BoundingBoxHandleWhite.mat
-* **핸들 잡기 재질:** BoundingBoxHandleBlueGrabbed.mat
-* **배율 핸들 프리팹:** MRTK_BoundingBox_ScaleHandle.prefab
-* **배율 핸들 슬레이트 프리팹:** MRTK_BoundingBox_ScaleHandle_Slate.prefab
-* **배율 핸들 크기:** 0.016(1.6cm)
-* **배율 핸들 Collider Padding:** 0.016(잡기 가능한 충돌체를 핸들 시각적 개체보다 약간 더 크게 만듭니다.)
-* **회전 핸들 프리팹:** MRTK_BoundingBox_RotateHandle.prefab
-* **회전 핸들 크기:** 0.016
-* **회전 핸들 Collider Padding:** 0.016(잡기 가능한 충돌체를 핸들 시각적 개체보다 약간 더 크게 만듭니다.)
+* **처리 자료**: BoundingBoxHandleWhite
+* **핸들 Grabbed 재질**: BoundingBoxHandleBlueGrabbed
+* **크기 조정 핸들 Prefab**: MRTK_BoundingBox_ScaleHandle. Prefab
+* **크기 조정 핸들 슬레이트 Prefab**: MRTK_BoundingBox_ScaleHandle_Slate. Prefab
+* 크기 **조정 핸들 크기**: 0.016 (1.6 cm)
+* **크기 조정 핸들 Collider 패딩**: 0.016 (grabbable Collider가 시각적 개체를 처리 하는 것 보다 약간 큼)
+* **회전 핸들 Prefab**: MRTK_BoundingBox_RotateHandle. Prefab
+* **회전 핸들 크기**: 0.016
+* **회전 핸들 Collider 패딩**: 0.016 (grabbable Collider가 시각적 개체를 처리 하는 것 보다 약간 큼)
 
-## <a name="transformation-changes-with-object-manipulator"></a>개체 조작자를 통해 변환 변경
+## <a name="transformation-changes-with-object-manipulator"></a>개체 조작자를 사용 하 여 변환 변경
 
-범위 컨트롤을 와 함께 사용하여 특정 유형의 조작을 허용할 수 [`ObjectManipulator.cs`](object-manipulator.md) 있습니다(예: 개체 이동) 핸들을 사용하지 않습니다. 조작 처리기는 한 손 조작과 양손 상호 작용을 모두 지원합니다. [손 추적을](../input/hand-tracking.md) 사용하여 개체와 가까이에서 상호 작용할 수 있습니다.
+범위 컨트롤은와 함께 사용 [`ObjectManipulator.cs`](object-manipulator.md) 하 여 특정 유형의 조작을 허용할 수 있습니다 (예: 핸들을 사용 하지 않고 개체를 이동 합니다. 조작 처리기는 하나 및 두 번의 상호 작용을 지원 합니다. [수동 추적](../input/hand-tracking.md) 을 사용 하 여 개체와의 상호 작용을 종료할 수 있습니다.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_ObjectManipulator.png" width="450" alt="Bounds control Object Manipulator">
 
-의 원거리 상호 작용을 사용하여 이동할 때 경계 컨트롤 가장자리가 동일한 방식으로 동작하도록 하려면 [`ObjectManipulator`](object-manipulator.md)   /   `BoundsControl.HighlightWires`  /  `BoundsControl.UnhighlightWires` 위의 스크린샷에 표시된 것처럼 조작 종료 시 조작 시작 시 에 대한 이벤트를 각각 에 연결하는 것이 좋습니다.
+경계 컨트롤 가장자리가의 far 상호 작용을 사용 하 여 이동할 때와 동일한 방식으로 동작 하도록 하려면 [`ObjectManipulator`](object-manipulator.md)   /   `BoundsControl.HighlightWires`  /  `BoundsControl.UnhighlightWires` 위의 스크린샷에 표시 된 것 처럼 조작에서 시작 된 조작을 위해 해당 이벤트를 각각에 연결 하는 것이 좋습니다.
 
-## <a name="how-to-add-and-configure-a-bounds-control-using-unity-inspector"></a>Unity 검사기를 사용하여 경계 컨트롤을 추가하고 구성하는 방법
+## <a name="how-to-add-and-configure-a-bounds-control-using-unity-inspector"></a>Unity 검사자를 사용 하 여 경계 컨트롤을 추가 및 구성 하는 방법
 
-1. 개체에 Box Collider 추가
+1. 개체에 상자 Collider 추가
 2. `BoundsControl`개체에 스크립트 할당
-3. 'Activation' 메서드와 같은 옵션 구성(아래 [검사기 속성](#inspector-properties) 섹션 참조)
-4. (선택 사항) HoloLens 2 스타일 경계 컨트롤에 대한 프리팹 및 재질 할당(아래 [스타일 처리](#handle-styles) 섹션 참조)
+3. ' 활성화 ' 메서드와 같은 옵션을 구성 합니다 (아래 [Inspector 속성](#inspector-properties) 섹션 참조).
+4. 필드 HoloLens 2 스타일 범위 컨트롤에 대 한 prefabs 자료를 할당 합니다 (아래의 [핸들 스타일](#handle-styles) 섹션 참조).
 
 > [!NOTE]
-> 검사기에서 *대상 개체* 및 *경계 재정의* 필드를 사용하여 여러 자식 구성 요소가 있는 개체의 특정 개체 및 충돌체를 할당합니다.
+> Inspector에서 *대상 개체* 및 *범위 재정의* 필드를 사용 하 여 개체의 특정 개체 및 collider를 여러 자식 구성 요소와 함께 할당 합니다.
 
 ![범위 제어](../images/bounds-control/MRTK_BoundsControl_Assign.png)
 
-## <a name="how-to-add-and-configure-a-bounds-control-in-the-code"></a>코드에서 경계 컨트롤을 추가하고 구성하는 방법
+## <a name="how-to-add-and-configure-a-bounds-control-in-the-code"></a>코드에서 범위 컨트롤을 추가 하 고 구성 하는 방법
 
-1. GameObject 큐브 인스턴스화
+1. 큐브 GameObject 인스턴스화
 
     ```c#
     GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
     ```
 
-1. `BoundsControl`AddComponent<>()를 사용하여 충돌체가 있는 개체에 스크립트 할당
+1. `BoundsControl`AddComponent<> ()를 사용 하 여 collider를 사용 하는 개체에 스크립트 할당
 
     ```c#
     private BoundsControl boundsControl;
     boundsControl = cube.AddComponent<BoundsControl>();
     ```
 
-1. 컨트롤에서 직접 또는 스크립트 가능한 구성 중 하나를 통해 옵션을 구성합니다(아래 [검사기 속성](#inspector-properties) 및 [구성](#configuration-objects) 섹션 참조).
+1. 컨트롤에서 직접 또는 스크립트 가능한 구성 중 하나를 통해 옵션을 구성 합니다 (아래 [검사기 속성](#inspector-properties) 및 [구성](#configuration-objects) 섹션 참조).
 
     ```c#
     // Change activation method
@@ -255,10 +255,10 @@ Box 구성은 collider size 및 box 안쪽 여백을 통해 정의 된 범위를
     boundsControl.RotationHandlesConfig.ShowRotationHandleForX = false;
     ```
 
-1. (선택 사항) HoloLens 2 스타일 경계 컨트롤에 대한 프리팹 및 재질을 할당합니다. 재질과 프리팹을 동적으로 로드해야 하므로 검사자를 통해 할당해야 합니다.
+1. 필드 HoloLens 2 스타일 범위 컨트롤에 대 한 prefabs 및 자료를 할당 합니다. 이 경우 자료와 prefabs를 동적으로 로드 해야 하므로 검사기를 통해 할당 해야 합니다.
 
 > [!NOTE]
-> Unity의 'Resources' 폴더 또는 [Shader.Find를]( https://docs.unity3d.com/ScriptReference/Shader.Find.html) 사용하여 셰이더를 동적으로 로드하는 것은 런타임에 셰이더 순열이 누락될 수 있기 때문에 권장되지 않습니다.
+> Unity의 ' Resources ' 폴더 또는 셰이더를 사용 하 고 [있습니다.]( https://docs.unity3d.com/ScriptReference/Shader.Find.html) 셰이더 순열이 런타임에 누락 될 수 있으므로 셰이더를 동적으로 로드 하는 것은 권장 되지 않습니다.
 
 ```c#
 BoxDisplayConfiguration boxConfiguration = boundsControl.BoxDisplayConfig;
@@ -279,11 +279,11 @@ rotationHandleConfiguration.HandleSize = 0.016f;
 rotationHandleConfiguration.ColliderPadding = 0.016f;
 ```
 
-### <a name="example-set-minimum-maximum-bounds-control-scale-using-minmaxscaleconstraint"></a>예제: MinMaxScaleConstraint를 사용하여 최소, 최대 범위 컨트롤 배율 설정
+### <a name="example-set-minimum-maximum-bounds-control-scale-using-minmaxscaleconstraint"></a>예: MinMaxScaleConstraint를 사용 하 여 최소, 최대 경계 제어 배율 설정
 
-최소 및 최대 크기 조정을 설정하려면 [`MinMaxScaleConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.MinMaxScaleConstraint) 컨트롤에 를 연결합니다. 경계 컨트롤이 제약 조건 관리자를 자동으로 연결하고 활성화하면 MinMaxScaleConstraint가 연결 및 구성되면 변환 변경 내용에 자동으로 적용됩니다.
+최소 및 최대 눈금을 설정 하려면 [`MinMaxScaleConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.MinMaxScaleConstraint) 컨트롤에를 연결 합니다. 범위 제어에서 자동으로 제약 조건 관리자를 연결 하 고 활성화 하면 MinMaxScaleConstraint가 연결 및 구성 된 후 변환 변경 내용에 자동으로 적용 됩니다.
 
-MinMaxScaleConstraint를 사용하여 에 대한 최소 및 최대 배율도 설정할 수 [`ObjectManipulator`](xref:Microsoft.MixedReality.Toolkit.UI.ObjectManipulator) 있습니다.
+MinMaxScaleConstraint를 사용 하 여에 대 한 최소 및 최대 크기를 설정할 수도 있습니다 [`ObjectManipulator`](xref:Microsoft.MixedReality.Toolkit.UI.ObjectManipulator) .
 
 ```c#
 GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
@@ -295,9 +295,9 @@ scaleConstraint.ScaleMinimum = 1f;
 scaleConstraint.ScaleMaximum = 2f;
 ```
 
-## <a name="example-add-bounds-control-around-a-game-object"></a>예제: 게임 개체 주위에 경계 컨트롤 추가
+## <a name="example-add-bounds-control-around-a-game-object"></a>예: 게임 개체 주위에 경계 컨트롤 추가
 
-개체 주위에 경계 컨트롤을 추가하려면 `BoundsControl` 구성 요소를 추가하기만 하면됩니다.
+개체 주위에 경계 컨트롤을 추가 하려면 구성 요소를 추가 하기만 하면 됩니다 `BoundsControl` .
 
 ```c#
 private void PutABoundsControlAroundIt(GameObject target)
@@ -308,9 +308,9 @@ private void PutABoundsControlAroundIt(GameObject target)
 
 ## <a name="migrating-from-bounding-box"></a>경계 상자에서 마이그레이션
 
-[경계 상자를](bounding-box.md) 사용하는 기존 프리팹 및 인스턴스는 MRTK 도구 패키지의 일부인 [마이그레이션 창을](../tools/migration-window.md) 통해 새 경계 컨트롤로 업그레이드할 수 있습니다.
+[경계 상자](bounding-box.md) 를 사용 하는 기존 prefabs 및 인스턴스는 MRTK 도구 패키지의 일부인 [마이그레이션 창을](../tools/migration-window.md) 통해 새 범위 제어로 업그레이드할 수 있습니다.
 
-경계 상자의 개별 인스턴스를 업그레이드하기 위해 구성 요소의 속성 검사자 내에 마이그레이션 옵션도 있습니다.
+경계 상자의 개별 인스턴스를 업그레이드 하는 경우 구성 요소의 속성 검사자 내에 마이그레이션 옵션도 있습니다.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Migrate.png" width="450" alt="Bounds control Migrate">
 
@@ -319,4 +319,4 @@ private void PutABoundsControlAroundIt(GameObject target)
 * [개체 조작자](object-manipulator.md)
 * [제약 조건 관리자](constraint-manager.md)
 * [마이그레이션 기간](../tools/migration-window.md)
-* [탄력적 시스템(실험적)](../elastics/elastic-system.md)
+* [탄력적 시스템 (실험적)](../experimental/elastic-system.md)

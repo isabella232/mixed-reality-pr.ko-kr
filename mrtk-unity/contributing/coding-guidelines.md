@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, C#,
-ms.openlocfilehash: 122c51962c55796c037302c7b79cc4df643a47b7
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: c14f5f72d391c5474a01c798bfdaa5529700a509
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121441"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175335"
 ---
 # <a name="coding-guidelines"></a>코딩 지침
 
@@ -92,18 +92,18 @@ public struct Controller
 
 ### <a name="mrtk-namespace-rules"></a>MRTK 네임스페이스 규칙
 
-Mixed Reality 도구 키트는 모든 기본 네임스페이스가 "Microsoft.MixedReality.Toolkit"로 시작하는 기능 기반 네임스페이스 모델을 사용합니다. 일반적으로 네임스페이스에서 도구 키트 계층(예: Core, Providers, Services)을 지정할 필요가 없습니다.
+Mixed Reality Toolkit 모든 기본 네임스페이스가 "Microsoft.MixedReality로 시작하는 기능 기반 네임스페이스 모델을 사용합니다. Toolkit". 일반적으로 네임스페이스에서 도구 키트 계층(예: Core, Providers, Services)을 지정할 필요가 없습니다.
 
 현재 정의된 네임스페이스는 다음과 같습니다.
 
-- Microsoft.MixedReality.Toolkit
-- Microsoft.MixedReality.Toolkit.Boundary
-- Microsoft.MixedReality.Toolkit.Diagnostics
-- Microsoft.MixedReality.Toolkit.Editor
-- Microsoft.MixedReality.Toolkit.Input
-- Microsoft.MixedReality.Toolkit.SpatialAwareness
-- Microsoft.MixedReality.Toolkit.Teleport
-- Microsoft.MixedReality.Toolkit.Utilities
+- Microsoft.MixedReality. Toolkit
+- Microsoft.MixedReality. Toolkit. 경계
+- Microsoft.MixedReality. Toolkit. 진단
+- Microsoft.MixedReality. Toolkit. 편집기
+- Microsoft.MixedReality. Toolkit. 입력
+- Microsoft.MixedReality. Toolkit. SpatialAwareness
+- Microsoft.MixedReality. Toolkit. 텔 레 포트
+- Microsoft.MixedReality. Toolkit. 유틸리티
 
 형식이 많은 네임스페이스의 경우 범위 지정 사용을 돕기 위해 제한된 수의 하위 네임스페이스를 만들 수 있습니다.
 
@@ -197,27 +197,27 @@ public class MyNewProfile : ScriptableObject
 
 ### <a name="logging"></a>로깅
 
-새 기능을 추가하거나 기존 기능을 업데이트하는 경우 향후 디버깅에 유용할 수 있는 흥미로운 코드에 DebugUtilities.LogVerbose 로그를 추가하는 것이 좋습니다. 여기에는 로깅 추가와 노이즈가 추가되고 로깅이 충분하지 않음(진단이 어려워지게 함) 간에 절충이 있습니다.
+새 기능을 추가 하거나 기존 기능을 업데이트 하는 경우 나중에 디버깅 하는 데 유용할 수 있는 흥미로운 코드에 DebugUtilities LogVerbose 로그를 추가 하는 것이 좋습니다. 로깅 및 추가 된 노이즈를 추가 하는 것 사이에는 장단점이 있으며,이로 인해 진단이 어려워집니다.
 
-로깅이 유용한 흥미로운 예제는 다음과 같습니다(흥미로운 페이로드와 함께).
+유용한 페이로드를 사용 하 여 로깅을 사용 하는 흥미로운 예는 다음과 같습니다.
 
 ```c#
 DebugUtilities.LogVerboseFormat("RaiseSourceDetected: Source ID: {0}, Source Type: {1}", source.SourceId, source.SourceType);
 ```
 
-이 유형의 로깅은 일치하지 않는 소스 검색 및 소스 손실 이벤트로 인해 발생한 와 같은 문제를 catch하는 데 도움이 될 수 [https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016) 있습니다.
+이 로깅 유형은 [https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016) 일치 하지 않는 소스 검색 및 원본 손실 이벤트로 인해 발생 한 문제를 파악 하는 데 도움이 될 수 있습니다.
 
-모든 프레임에서 발생하는 데이터 및 이벤트에 대한 로그를 추가하지 않는 것이 좋습니다. 로깅은 고유한 사용자 입력(즉, 사용자의 "클릭"과 로그에 흥미로운 변경 내용 및 이벤트 집합)에 의해 구동되는 "흥미로운" 이벤트를 포함하는 것이 가장 좋습니다. 모든 프레임에 기록된 "사용자가 여전히 제스처를 보유하고 있습니다"라는 지속적인 상태는 흥미롭지 않으며 로그에 과부하가 붙습니다.
+모든 프레임에 대해 발생 하는 데이터 및 이벤트에 대 한 로그를 추가 하지 마세요. 가장 적합 한 로깅에는 고유한 사용자 입력 (예: 사용자가 "클릭" 하 고 로그에 관심이 있는 변경 내용 및 이벤트 집합)에 의해 제어 되는 "흥미로운" 이벤트를 포함 해야 합니다. "사용자가 계속 제스처를 보유 하 고 있습니다."의 진행 상태는 모든 프레임에 관심이 없으며 로그에 과부하가 발생 합니다.
 
-이 자세한 정보 로깅은 기본적으로 설정되지 [않습니다(진단 시스템 설정에서](../features/diagnostics/configuring-diagnostics.md#enable-verbose-logging)사용하도록 설정해야 합니다).
+이 자세한 정보 표시 로깅은 기본적으로 설정 되어 있지 않습니다 ( [진단 시스템 설정](../features/diagnostics/configuring-diagnostics.md#enable-verbose-logging)에서 사용 하도록 설정 해야 함).
 
-### <a name="spaces-vs-tabs"></a>공백과 탭
+### <a name="spaces-vs-tabs"></a>공백 및 탭
 
-이 프로젝트에 기여할 때 탭 대신 4개의 공백을 사용해야 합니다.
+이 프로젝트에 참여 하는 경우 탭 대신 4 개의 공백을 사용 하십시오.
 
 ### <a name="spacing"></a>간격
 
-대괄호와 괄호 사이에 공백을 더 추가하지 마십시오.
+대괄호와 괄호 사이에 공백을 추가 하지 마십시오.
 
 #### <a name="dont"></a>안 함
 
@@ -242,7 +242,7 @@ private Foo()
 
 ### <a name="naming-conventions"></a>명명 규칙
 
-속성에는 항상 `PascalCase` 를 사용합니다. `camelCase`및 필드에 대한 사용을 제외하고 대부분의 필드에 `PascalCase` `static readonly` `const` 사용합니다. 이에 대한 유일한 예외는 필드를 로 serialized해야 하는 데이터 구조에 대한 `JsonUtility` 것입니다.
+`PascalCase`속성에는 항상를 사용 합니다. `camelCase`및 필드를 사용 하는 경우를 제외 하 고 대부분의 필드에 사용 `PascalCase` `static readonly` `const` 합니다. 이에 대 한 유일한 예외는에서 필드를 serialize 해야 하는 데이터 구조에 대 한 것입니다 `JsonUtility` .
 
 #### <a name="dont"></a>안 함
 
@@ -262,13 +262,13 @@ private string myField;
 
 ### <a name="access-modifiers"></a>액세스 한정자
 
-항상 모든 필드, 속성 및 메서드에 대한 액세스 한정자를 선언합니다.
+항상 모든 필드, 속성 및 메서드에 대 한 액세스 한정자를 선언 합니다.
 
-- 파생 클래스에서 재정의해야 하는 경우가 아니면 모든 Unity API 메서드는 기본적으로 여야 `private` 합니다. 이 경우 `protected` 를 사용해야 합니다.
+- `private`파생 클래스에서 재정의 해야 하는 경우가 아니면 모든 UNITY API 메서드는 기본적으로 여야 합니다. 이 경우에 `protected` 는를 사용 해야 합니다.
 
-- 필드는 항상 `private` 또는 속성 접근자를 가진 이어야 `public` `protected` 합니다.
+- 필드는 항상 `private` `public` 또는 속성 접근자를 사용 해야 합니다 `protected` .
 
-- 가능한 경우 [식 멤버](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#expression-bodied-function-members) 및 [자동 속성](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#auto-property-enhancements) 사용
+- 가능 하면 [식 본문 멤버](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#expression-bodied-function-members) 와 [자동 속성](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#auto-property-enhancements) 사용
 
 #### <a name="dont"></a>안 함
 
@@ -296,7 +296,7 @@ protected virtual void FooBar() { }
 
 ### <a name="use-braces"></a>중괄호 사용
 
-항상 각 문 블록 다음에 중괄호를 사용하고 다음 줄에 배치합니다.
+각 문 블록 뒤에 중괄호를 항상 사용 하 고 다음 줄에 삽입 합니다.
 
 #### <a name="dont"></a>안 함
 
@@ -335,9 +335,9 @@ private Foo()
 }
 ```
 
-### <a name="public-classes-structs-and-enums-should-all-go-in-their-own-files"></a>공용 클래스, 구조체 및 열거형은 모두 자체 파일로 이동해야 합니다.
+### <a name="public-classes-structs-and-enums-should-all-go-in-their-own-files"></a>Public 클래스, 구조체 및 열거형은 모두 자체 파일에 있어야 합니다.
 
-클래스, 구조체 또는 열거형을 private으로 만들 수 있는 경우 동일한 파일에 포함할 수 있습니다.  이렇게 하면 Unity와 관련된 컴파일 문제를 방지하고 적절한 코드 추상화가 발생하도록 하고 코드를 변경해야 할 때 충돌 및 주요 변경 내용도 줄입니다.
+클래스, 구조체 또는 열거형을 비공개로 설정할 수 있으면 동일한 파일에 포함 됩니다.  이를 통해 Unity의 컴파일 문제를 방지 하 고 적절 한 코드 추상화가 발생 하지 않도록 하 고 코드를 변경 해야 하는 경우 충돌 및 주요 변경 내용을 줄일 수 있습니다.
 
 #### <a name="dont"></a>안 함
 
@@ -364,7 +364,7 @@ public class MyClass
 
 #### <a name="do"></a>수행
 
-MyStruct.cs
+MyStruct .cs
 
 ```c#
 // Public Struct / Enum definitions for use in your class.  Try to make them generic for reuse.
@@ -375,7 +375,7 @@ public struct MyStruct
 }
 ```
 
-MyEnumType.cs
+MyEnumType
 
 ```c#
 public enum MuEnumType
@@ -385,7 +385,7 @@ public enum MuEnumType
 }
 ```
 
-MyClass.cs
+MyClass .cs
 
 ```c#
 public class MyClass
@@ -397,7 +397,7 @@ public class MyClass
 
 ### <a name="initialize-enums"></a>열거형 초기화
 
-모든 열거형이 0부터 올바르게 초기화되도록 하기 위해 .NET에서는 첫 번째(시작) 값을 추가하여 열거형을 자동으로 초기화하는 깔끔한 바로 가기를 제공합니다. (예: 값 1 = 0 나머지 값은 필요하지 않음)
+0부터 시작 하 여 모든 열거형이 올바르게 초기화 되도록 하기 위해 .NET에서는 첫 번째 (시작) 값만 추가 하 여 열거형을 자동으로 초기화 하는 정리 된 바로 가기를 제공 합니다. (예: 값 1 = 0 나머지 값은 필요 하지 않음)
 
 #### <a name="dont"></a>안 함
 
@@ -421,9 +421,9 @@ public enum ValueType
 }
 ```
 
-### <a name="order-enums-for-appropriate-extension"></a>적절한 확장에 대한 열거형 순서
+### <a name="order-enums-for-appropriate-extension"></a>적절 한 확장의 열거 순서
 
-열거형이 나중에 확장될 가능성이 있는 경우 열거형 맨 위에 기본값을 정렬하면 열거형 인덱스가 새로운 추가에 영향을 받지 않습니다.
+나중에 열거형을 확장 해야 하는 경우 열거형의 맨 위에 있는 기본값을 순서 대로 정렬 하는 것이 중요 합니다. 이렇게 하면 열거형 인덱스에 새 추가 항목이 적용 되지 않습니다.
 
 #### <a name="dont"></a>안 함
 
@@ -470,11 +470,11 @@ public enum SDKType
 }
 ```
 
-### <a name="review-enum-use-for-bitfields"></a>비트 필드에 대한 열거형 사용 검토
+### <a name="review-enum-use-for-bitfields"></a>비트 필드에 대 한 열거형 사용 검토
 
-열거형이 값으로 여러 상태를 요구할 가능성이 있는 경우(예: 손수 = 왼쪽 & 오른쪽) 그런 다음, 열거형을 BitFlags로 올바르게 데코레이트하여 올바르게 사용할 수 있도록 해야 합니다.
+열거형이 값으로 여러 상태를 요구 하는 경우, 예를 들어 = Left & Right를 사용할 수 있습니다. 그런 다음, 열거형을 올바르게 사용할 수 있도록 BitFlags로 올바르게 데코레이팅 해야 합니다.
 
-Handedness.cs 파일에는 이에 대한 구체적인 구현이 있습니다.
+이 파일에는이에 대 한 구체적인 구현이 있습니다.
 
 ### <a name="dont"></a>안 함
 
@@ -500,14 +500,14 @@ public enum Handedness
 }
 ```
 
-### <a name="hard-coded-file-paths"></a>하드 코드된 파일 경로
+### <a name="hard-coded-file-paths"></a>하드 코드 된 파일 경로
 
-문자열 파일 경로를 생성하고 특히 하드 코드된 문자열 경로를 작성하는 경우 다음을 수행합니다.
+문자열 파일 경로를 생성할 때 특히 하드 코드 된 문자열 경로를 작성 하는 경우에는 다음을 수행 합니다.
 
-1. 또는 와 같이 가능하면 C#의 [ `Path` API를](/dotnet/api/system.io.path?preserve-view=true&view=netframework-4.8) `Path.Combine` `Path.GetFullPath` 사용합니다.
-1. \ 또는 대신 / [`Path.DirectorySeparatorChar`](/dotnet/api/system.io.path.directoryseparatorchar?preserve-view=true&view=netframework-4.8) 또는 를 \\ \\ 사용합니다.
+1. 또는와 같이 가능한 경우 c #의 [ `Path` api](/dotnet/api/system.io.path?preserve-view=true&view=netframework-4.8) 를 사용 `Path.Combine` `Path.GetFullPath` 합니다.
+1. [`Path.DirectorySeparatorChar`](/dotnet/api/system.io.path.directoryseparatorchar?preserve-view=true&view=netframework-4.8)\ 또는 대신/또는를 사용 \\ \\ 합니다.
 
-이러한 단계를 수행하면 MRTK가 Windows 및 Unix 기반 시스템에서 모두 작동합니다.
+이러한 단계는 mrtk가 Windows 및 Unix 기반 시스템 모두에서 작동 하는지 확인 합니다.
 
 ### <a name="dont"></a>안 함
 
@@ -530,16 +530,16 @@ string filePath = Path.Combine(myVarRootPath,myRelativePath);
 string cleanedFilePath = Path.GetFullPath(unknownSourceFilePath);
 ```
 
-## <a name="best-practices-including-unity-recommendations"></a>Unity 권장 사항을 포함한 모범 사례
+## <a name="best-practices-including-unity-recommendations"></a>Unity 권장 사항을 비롯 한 모범 사례
 
-이 프로젝트의 대상 플랫폼 중 일부는 성능을 고려해야 합니다. 이 점을 염두에 두고 꽉 찬 업데이트 루프 또는 알고리즘에서 자주 호출되는 코드에 메모리를 할당할 때는 항상 주의해야 합니다.
+이 프로젝트의 일부 대상 플랫폼을 사용 하려면 성능을 고려해 야 합니다. 이러한 점을 염두에 두면 매우 강력한 업데이트 루프 또는 알고리즘에서 자주 호출 되는 코드에 메모리를 할당할 때 항상 주의 해야 합니다.
 
 ### <a name="encapsulation"></a>캡슐화
 
-클래스 또는 구조체 외부에서 필드에 액세스해야 하는 경우 항상 전용 필드 및 공용 속성을 사용합니다.  private 필드와 public 속성을 함께 배치해야 합니다. 이렇게 하면 속성을 백업하는 내용과 스크립트로 필드를 수정할 수 있는 필드를 한눈에 쉽게 확인할 수 있습니다.
+필드에 대 한 액세스가 클래스 또는 구조체 외부에서 필요한 경우에는 항상 전용 필드 및 공용 속성을 사용 합니다.  Private 필드와 public 속성을 함께 배치 해야 합니다. 이렇게 하면 속성을 백업 하는 항목과 스크립트에서 수정할 수 있는 필드를 한눈에 볼 수 있습니다.
 
 > [!NOTE]
-> 이에 대한 유일한 예외는 에서 필드를 serialization해야 하는 데이터 구조에 대한 것입니다. `JsonUtility` 여기서 데이터 클래스는 serialization이 작동하기 위해 모든 공용 필드를 가져야 합니다.
+> 이에 대 한 유일한 예외는를 사용 하 여 필드를 serialize 해야 하는 데이터 구조에 대 한 것입니다 .이 경우 `JsonUtility` 데이터 클래스는 직렬화를 위해 모든 public 필드를 포함 해야 합니다.
 
 #### <a name="dont"></a>안 함
 
@@ -594,9 +594,9 @@ public float AbsMyValue
 }
 ```
 
-### <a name="cache-values-and-serialize-them-in-the-sceneprefab-whenever-possible"></a>가능하면 값을 캐시하고 장면/프리팹에서 직렬화합니다.
+### <a name="cache-values-and-serialize-them-in-the-sceneprefab-whenever-possible"></a>가능한 경우 항상 장면/prefab에서 값을 캐시 하 고 serialize 합니다.
 
-HoloLens를 염두에 두고 장면 또는 프리팹의 성능 및 캐시 참조를 최적화하여 런타임 메모리 할당을 제한하는 것이 가장 좋습니다.
+HoloLens 고려 하 여 런타임 메모리 할당을 제한 하기 위해 장면 또는 prefab에서 성능 및 캐시 참조를 최적화 하는 것이 좋습니다.
 
 #### <a name="dont"></a>안 함
 
@@ -628,9 +628,9 @@ private void Update()
 }
 ```
 
-### <a name="cache-references-to-materials-do-not-call-the-material-each-time"></a>재질에 대한 참조를 캐시하고 매번 ".material"을 호출하지 않습니다.
+### <a name="cache-references-to-materials-do-not-call-the-material-each-time"></a>자료에 대 한 참조를 캐시 하 고 매번 ". material"을 호출 하지 마세요.
 
-Unity는 ".material"을 사용할 때마다 새 재질을 만듭니다. 이 경우 제대로 정리되지 않으면 메모리 누수가 발생합니다.
+Unity는 ". material"을 사용할 때마다 새 자료를 만듭니다. 이렇게 하면 제대로 정리 되지 않은 경우 메모리 누수가 발생 합니다.
 
 #### <a name="dont"></a>안 함
 
@@ -671,14 +671,14 @@ public class MyClass
 ```
 
 > [!NOTE]
-> 또는 참조할 때마다 새 재질을 만들지 않는 Unity의 "SharedMaterial" 속성을 사용합니다.
+> 또는 참조 될 때마다 새 자료를 만들지 않는 Unity의 "SharedMaterial" 속성을 사용 합니다.
 
-### <a name="use-platform-dependent-compilation-to-ensure-the-toolkit-wont-break-the-build-on-another-platform"></a>[플랫폼 종속 컴파일을](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) 사용하여 도구 키트가 다른 플랫폼에서 빌드를 중단하지 않도록 합니다.
+### <a name="use-platform-dependent-compilation-to-ensure-the-toolkit-wont-break-the-build-on-another-platform"></a>[플랫폼 종속 컴파일을](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) 사용 하 여 Toolkit 다른 플랫폼에서 빌드를 중단 하지 않도록 합니다.
 
-- `WINDOWS_UWP`UWP 관련 비 Unity API를 사용하려면 를 사용합니다. 이렇게 하면 편집기 또는 지원되지 않는 플랫폼에서 실행하지 못하게 됩니다. 이는 와 `UNITY_WSA && !UNITY_EDITOR` 동일하며 를 위해 사용해야 합니다.
-- `UNITY_WSA`를 사용하여 네임스페이스와 같은 UWP 관련 Unity API를 `UnityEngine.XR.WSA` 사용합니다. 플랫폼이 UWP로 설정된 경우 편집기에서 실행되며 빌드된 UWP 앱에서도 실행됩니다.
+- `WINDOWS_UWP`UWP 전용 Unity api를 사용 하기 위해를 사용 합니다. 이렇게 하면 편집기 나 지원 되지 않는 플랫폼에서 실행을 시도 하지 않습니다. 이는와 같으며에 `UNITY_WSA && !UNITY_EDITOR` 사용 되어야 합니다.
+- `UNITY_WSA`를 사용 하 여 네임 스페이스와 같은 UWP 관련 Unity api를 사용 `UnityEngine.XR.WSA` 합니다. 이는 플랫폼이 UWP로 설정 되 고 빌드된 UWP 앱에서 실행 될 때 편집기에서 실행 됩니다.
 
-이 차트는 사용 사례 및 예상하는 빌드 설정에 따라 사용할 를 결정하는 데 도움이 될 수 `#if` 있습니다.
+이 차트는 사용 `#if` 사례 및 원하는 빌드 설정에 따라 사용할 사항을 결정 하는 데 도움이 될 수 있습니다.
 
 |플랫폼 | UWP IL2CPP | UWP .NET | 편집기 |
 | --- | --- | --- | --- |

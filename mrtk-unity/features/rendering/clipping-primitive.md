@@ -1,44 +1,44 @@
 ---
 title: 기본 클리핑
-description: MRTK의 예제를 통해 클리핑 기본형에 대한 설명서
+description: MRTK의 예제를 사용한 클리핑 기본 형식에 대 한 설명서
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 클리핑 기본형,
-ms.openlocfilehash: 35b7166045986df34eaf2c23161efc6379160ead
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk, 클리핑 기본 형식,
+ms.openlocfilehash: c3331084f87ccc57208426910d84ed7bef457bc1
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145205"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176743"
 ---
 # <a name="clipping-primitive"></a>기본 클리핑
 
-[`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive)동작을 사용하면 [`plane`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane) [`sphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) [`box`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) MRTK 셰이더와 함께 사용할 때 (내부 또는 외부)에 대해 클립할 기본형의 측면을 지정하는 기능을 사용하여 , 및 도형 클리핑을 수행할 수 있습니다.
+[`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) [`plane`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane) 이 동작은 [`sphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) [`box`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) mrtk 셰이더에 사용할 때 클리핑할 기본 형식 (내부 또는 외부)을 지정할 수 있는 기능을 사용 하 여 성능, 및 셰이프 클리핑을 가능 하 게 합니다.
 
-![기본 클리핑 gizmos](../images/mrtk-standard-shader/MRTK_PrimitiveClippingGizmos.gif)
+![기본 클리핑 gizmo 그리려면](../images/mrtk-standard-shader/MRTK_PrimitiveClippingGizmos.gif)
 
 > [!NOTE]
-> [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) 셰이더 내에서 [클립/삭제](https://developer.download.nvidia.com/cg/clip.html) 명령을 활용하고 잘린 렌더러를 일괄 처리할 수 있는 Unity 기능을 사용하지 않도록 설정합니다. 클리핑 기본형을 활용할 때는 이러한 성능 영향을 염두에 두어야 합니다.
+> [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) 셰이더 내에서 [clip/버리도록](https://developer.download.nvidia.com/cg/clip.html) 명령을 활용 하 고 Unity에서 잘린 렌더러를 일괄 처리 하는 기능을 사용 하지 않도록 설정 합니다. 클리핑 기본 형식을 사용할 때 이러한 성능 문제를 염두에 두어야 합니다.
 
-[`ClippingPlane.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane)[`ClippingSphere.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere), 및 는 [`ClippingBox.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) 클리핑 기본 속성을 쉽게 제어하는 데 사용할 수 있습니다. 다음 셰이더에서 이러한 구성 요소를 사용하여 클리핑 시나리오를 활용합니다.
+[`ClippingPlane.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane), [`ClippingSphere.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) 및를 [`ClippingBox.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) 사용 하 여 기본 속성 클리핑을 쉽게 제어할 수 있습니다. 다음 셰이더를 사용 하 여 이러한 구성 요소를 사용 하 여 클리핑 시나리오를 활용 합니다.
 
-- *Mixed Reality 도구 키트/표준*
-- *Mixed Reality Toolkit/TextMeshPro*
-- *Mixed Reality Toolkit/Text3DShader*
+- *혼합 현실 Toolkit/standard*
+- *혼합 현실 Toolkit/TextMeshPro*
+- *혼합 현실 Toolkit/text이상 셰이더*
 
 ## <a name="examples"></a>예
 
-**ClippingExamples** 및 **MaterialGallery** 장면에서는 동작의 사용을 보여 [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) 줍니다. MRTK/Examples/Demos/StandardShader/Scenes/
+**ClippingExamples** 및 **MaterialGallery** 장면에서는 동작의 사용법 [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) 을 보여 주고, Mrtk/예제/데모/standardshader/장면에서 찾을 수 있습니다.
 
 ## <a name="advanced-usage"></a>고급 사용 방법
 
-기본적으로 한 번에 하나의 [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) [렌더러만 클리닝할](https://docs.unity3d.com/ScriptReference/Renderer.html) 수 있습니다. 프로젝트에 [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) [렌더러에](https://docs.unity3d.com/ScriptReference/Renderer.html)  영향을 주는 데 두 개 이상이 필요한 경우 아래 샘플 코드는 이를 달성하는 방법을 보여 줍니다.
+기본적으로 한 번 [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) 에 하나씩 [렌더러](https://docs.unity3d.com/ScriptReference/Renderer.html) 를 클리핑할 수 있습니다. 프로젝트에서 [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) [렌더러에](https://docs.unity3d.com/ScriptReference/Renderer.html)  영향을 주기 위해 두 개 이상 필요한 경우 아래 샘플 코드에서는이를 수행 하는 방법을 보여 줍니다.
 
 > [!NOTE]
-> [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) [렌더러에](https://docs.unity3d.com/ScriptReference/Renderer.html) 여러 클립이 있으면 픽셀 셰이더 명령이 증가하고 성능에 영향을 미칩니다. 프로젝트 내에서 이러한 변경 내용을 프로파일러합니다.
+> 클립을 여러 개 포함 하는 [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) 경우에는 픽셀 셰이더 명령이 증가 하 고 성능에 영향을 줍니다. [](https://docs.unity3d.com/ScriptReference/Renderer.html) 이러한 변경 내용을 프로젝트 내에서 프로 파일링 하세요.
 
-*두 개의 다른 [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) 클립을 렌더링하는 방법입니다. 예를 들어 [`ClippingSphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) 및 를 동시에 사용할 수 [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) 있습니다.*
+*두 개의 다른 [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) 클립을 렌더링 하는 방법입니다. 예를 들어 [`ClippingSphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) 및는 [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) 다음과 같습니다.*
 
 ```C#
 // Within MRTK/Core/StandardAssets/Shaders/MixedRealityStandard.shader (or another MRTK shader) change:
@@ -53,9 +53,9 @@ ms.locfileid: "110145205"
 ```
 
 > [!NOTE]
-> 위의 변경으로 추가 셰이더 컴파일 시간이 발생합니다.
+> 위의 변경 내용으로 인해 추가 셰이더 컴파일 시간이 발생 합니다.
 
-*두 개의 동일한 [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) 클립을 렌더링하는 방법입니다. 예를 들어 [`ClippingBoxes`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) 두 가지를 동시에 수행합니다.*
+*동일한 클립 두 개를 렌더링 하는 방법입니다 [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) . 예를 들어 [`ClippingBoxes`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) , 다음과 같은 두 가지 경우입니다.*
 
 ```C#
 // 1) Add the below MonoBehaviour to your project:
@@ -121,8 +121,8 @@ public class SecondClippingBox : ClippingBox
 #endif
 ```
 
-마지막으로 [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) 및 SecondClippingBox 구성 요소를 장면에 추가하고 두 상자에 동일한 렌더러를 지정합니다. 이제 렌더러를 두 상자 모두 동시에 잘라내야 합니다.
+마지막으로, [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) 장면에 및 SecondClippingBox 구성 요소를 추가 하 고 두 상자에 동일한 렌더러를 지정 합니다. 이제 렌더러를 두 상자 모두 동시에 잘라내야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [MRTK 표준 세이더](mrtk-standard-shader.md)

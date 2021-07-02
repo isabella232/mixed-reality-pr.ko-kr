@@ -4,13 +4,13 @@ description: MRTK에서 사용자 아이 보정을 설정 하는 방법
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, EyeTracking, 보정,
-ms.openlocfilehash: d7ae9885b77798b44b3d63bb7f92283658e05411
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk, EyeTracking, 보정,
+ms.openlocfilehash: a2023a2d7f6a0254e8fef32f4faf09def956e94f
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144002"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177204"
 ---
 # <a name="eye-calibration"></a>눈 보정
 
@@ -42,21 +42,21 @@ MRTK의 아이 추적 구성은 인터페이스를 통해 구성 됩니다 [`IMi
 2. Load _EyeTrackingDemo-00-rootscene. unity_ 장면
 
 3. _EyeCalibrationChecker_ 확인:
-   - 이 장면에는 현재 사용자가 *_EyeCalibrationChecker_ 게임 개체* 에서 보정되었는지 여부를 감지하는 샘플이 이미 있습니다.
-단순히 몇 가지 텍스트 메시의 부모이며 알림을 혼합하기 위한 몇 가지 추가 트리거가 있습니다. 여기에는 정품 인증 시 크기 및 불투명도를 느리게 늘리는 것이 포함됩니다.
-알림이 해제되면 크기가 느려지고 페이드 아웃됩니다.
+   - 이 장면에는 현재 사용자가 *_EyeCalibrationChecker_ game 개체* 에서 보정 되는지 여부를 검색 하는 샘플이 이미 있습니다.
+단순히 몇 개의 텍스트 메시를 부모로 하 고 알림을 혼합 하 고 추가 하기 위한 몇 가지 추가 트리거를 포함 합니다. 여기에는 정품 인증에 대 한 크기 및 불투명도가 천천히 늘어납니다.
+알림이 해제 되 면 천천히 크기가 줄어들고 페이드 아웃 됩니다.
 
-   - *_EyeCalibrationChecker_ 게임 개체에* 연결된 은 두 개의 Unity 이벤트를 노출하는 [EyeCalibrationChecker](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.EyeCalibrationChecker) 스크립트입니다.
+   - *_EyeCalibrationChecker_ game 개체* 에 연결 되는 [EyeCalibrationChecker](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.EyeCalibrationChecker) 스크립트는 두 Unity 이벤트를 노출 합니다.
       - `OnEyeCalibrationDetected()`
       - `OnNoEyeCalibrationDetected()`
 
-   - 이러한 이벤트는 보정 상태가 변경될 때만 트리거됩니다. 따라서 사용자가 알림을 해제하도록 선택하면 알림이 다시 표시되지 않습니다.
-      - 앱이 다시 시작됩니다.
-      - 유효한 사용자가 검색된 다음, 계산되지 않은 새 사용자가 디바이스를 켜고 있습니다.
+   - 이러한 이벤트는 보정 상태가 변경 되는 경우에만 트리거됩니다. 따라서 사용자가 알림을 해제 하도록 선택 하면 알림이 다시 표시 되지 않습니다.
+      - 앱이 다시 시작 됩니다.
+      - 유효한 사용자가 검색 된 후 새 uncalibrated 사용자가 장치를에 배치 했습니다.
 
-   - 애니메이션 및 이벤트가 올바르게 트리거되는지 여부를 테스트하기 위해 EyeCalibrationChecker 스크립트에는 `bool editorTestUserIsCalibrated` 플래그가 있습니다. 예를 들어 Unity 편집기에서 실행하는 경우 다음을 테스트할 수 있습니다.
-      1. 보정 상태가 true에서 false로 변경되면 알림이 자동으로 팝업되는지 여부
-      1. 상태가 false에서 true로 변경되면 알림을 다시 자동으로 해제할지 여부입니다.
+   - 애니메이션 및 이벤트가 올바르게 트리거되는지 여부를 테스트 하기 위해 EyeCalibrationChecker 스크립트는 플래그를 소유 합니다 `bool editorTestUserIsCalibrated` . 예를 들어 Unity 편집기에서 실행 되는 경우 다음을 테스트할 수 있습니다.
+      1. 보정 상태가 true에서 false로 변경 되 면 알림이 자동으로 표시 되는지 여부
+      1. 상태가 false에서 true로 변경 되 면 자동으로 알림을 해제 하는지 여부를 지정 합니다.
 
 ```c#
     private bool? prevCalibrationStatus = null;
@@ -87,9 +87,9 @@ MRTK의 아이 추적 구성은 인터페이스를 통해 구성 됩니다 [`IMi
    }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-- [MRTK 시선 추적 개요](eye-tracking-main.md)
-- [MRTK 시선 추적 설정](eye-tracking-basic-setup.md)
-- [코드를 통한 MRTK 시선 추적](eye-tracking-eye-gaze-provider.md)
-- [HoloLens 2 시선 추적 설명서](/windows/mixed-reality/eye-tracking)
+- [MRTK 눈 추적 개요](eye-tracking-main.md)
+- [MRTK 눈동자 추적 설정](eye-tracking-basic-setup.md)
+- [코드를 통한 MRTK 눈동자 추적](eye-tracking-eye-gaze-provider.md)
+- [HoloLens 2 아이 추적 설명서](/windows/mixed-reality/eye-tracking)

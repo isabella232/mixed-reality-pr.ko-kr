@@ -1,18 +1,18 @@
 ---
-title: 직접 물리학 서비스 개요
+title: 직접 물리학 서비스
 description: MRTK에서 직접 물리학 확장 서비스를 사용 하는 설명서
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 751aec148d3a40da4728d2fdd60a60402b59a4de
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: af7ea753d52b5e478c54ca19d6d8e391401eea6d
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145086"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176252"
 ---
-# <a name="hand-physics-extension-service"></a>직접 물리학 확장 서비스
+# <a name="hand-physics-service"></a>직접 물리학 서비스
 
 ![직접 물리학 확장 서비스](../images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)
 
@@ -38,18 +38,18 @@ ms.locfileid: "110145086"
 - Collider
 - `JointKinematicBody` 구성 요소
 
-### <a name="use-palm-kinematic-body"></a>손무한 키니틱 본문 사용
+### <a name="use-palm-kinematic-body"></a>팜 기구학 본문 사용
 
-서비스가 손만 조인트에서 프리팹을 인스턴스화하려고 하는지 여부를 제어합니다.
+서비스에서 팜 prefab의 인스턴스화를 시도할지 여부를 제어 합니다.
 
-### <a name="palm-kinematic-body-prefab"></a>손무한 키네틱 본문 프리팹
+### <a name="palm-kinematic-body-prefab"></a>야자수 기구학 본문 prefab
 
-`UsePalmKinematicBody`를 사용하도록 설정하면 인스턴스화할 프리팹입니다. 와 마찬가지로 `FingerTipKinematicBodyPrefab` 이 프리팹에는 다음이 필요합니다.
+`UsePalmKinematicBody`을 사용 하도록 설정 하면이 prefab 됩니다. 마찬가지로 `FingerTipKinematicBodyPrefab` 이 prefab에는 다음이 필요 합니다.
 
-- isKinematic을 사용하도록 설정된 고정된 구성 요소
-- 충돌(collider)
+- IsKinematic이 활성화 된 rigidbody 구성 요소
+- Collider
 - `JointKinematicBody` 구성 요소
 
-## <a name="how-to-use-the-service"></a>서비스를 사용하는 방법
+## <a name="how-to-use-the-service"></a>서비스를 사용 하는 방법
 
-사용하도록 설정되면 모든 충돌자의 속성을 사용하여 `IsTrigger` 10자리 전체에서 충돌 이벤트를 수신합니다(활성화된 경우 손아귀).
+사용 하도록 설정 되 면 모든 collider의 속성을 사용 `IsTrigger` 하 여 10 자리 (그리고 사용 하도록 설정 된 경우 palms)에서 충돌 이벤트를 수신 합니다.

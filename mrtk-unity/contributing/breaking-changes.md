@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 713cb5a0965d713c7073004059218ab2ab37201d
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 4cd5e0b085a182377aacdf35e1298ad1180ee641
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121551"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177269"
 ---
 # <a name="breaking-changes"></a>주요 변경 내용
 
@@ -83,4 +83,4 @@ MRTK의 소비자는 안정적인 릴리스-릴리스 API 표면을 사용하여
 
 - [내부 키워드](/dotnet/csharp/language-reference/keywords/internal)의 사용법입니다.
   이렇게 하면 외부 소비자에게 공개하지 않고도 자체 어셈블리 내에서 공유 코드를 가질 수 있습니다(코드 중복을 줄이기 위해).
-- "내부" 네임스페이스 만들기(예: Microsoft.MixedReality.Toolkit.Internal.Utilities) 여기서 해당 내부 네임스페이스 내에 포함된 모든 항목은 언제든지 변경될 수 있으며 제거될 수 있음을 공개적으로 문서화합니다. 이는 C++ 헤더 라이브러리가 ::internal 네임스페이스를 사용하여 구현 세부 정보를 숨기는 방법과 비슷합니다.
+- "내부" 네임스페이스 만들기(예: Microsoft.MixedReality.Toolkit. Internal.Utilities) - 내부 네임스페이스 내에 포함된 모든 항목은 언제든지 변경될 수 있으며 제거될 수 있음을 공개적으로 문서화합니다. 이는 C++ 헤더 라이브러리가 ::internal 네임스페이스를 사용하여 구현 세부 정보를 숨기는 방법과 비슷합니다.

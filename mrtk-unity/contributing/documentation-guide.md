@@ -1,22 +1,22 @@
 ---
-title: 문서 가이드
+title: 설명서 지침
 description: MRTK에 대 한 설명서 지침과 표준입니다.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 37233141bd43f27db47935574bac7630b8bea8d7
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 95af19b71a9fe06dabad058e75f78d951262ba4a
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121391"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175357"
 ---
 # <a name="documentation-guidelines"></a>설명서 지침
 
 <img src="../features/images/MRTK_Logo_Rev.png" alt="MRTK">
 
-이 문서에서는 MRTK (혼합 현실 도구 키트)에 대 한 설명서 지침과 표준에 대해 간략하게 설명 합니다. 이를 통해 문서 작성과 생성의 기술적 측면을 소개 하 고 일반적인 문제를 강조 표시 하 고 권장 되는 쓰기 스타일을 설명할 수 있습니다.
+이 문서에서는 mrtk (Mixed Reality Toolkit)에 대 한 설명서 지침과 표준에 대해 간략하게 설명 합니다. 이를 통해 문서 작성과 생성의 기술적 측면을 소개 하 고 일반적인 문제를 강조 표시 하 고 권장 되는 쓰기 스타일을 설명할 수 있습니다.
 
 페이지 자체는 예제로 제공 되므로 설명서의 원하는 스타일과 가장 일반적인 태그 기능을 사용 합니다.
 
@@ -136,7 +136,7 @@ Toc 파일은 MRTK github.io 설명서에서 탐색 모음을 생성 하는 데 
 
 ### <a name="mentioning-menu-entries"></a>메뉴 항목을 언급 합니다.
 
-사용자가 클릭 해야 하는 메뉴 항목을 언급할 때 현재 규칙은 *프로젝트 > 파일 > > 리프 만들기* 입니다.
+사용자가 클릭 해야 하는 메뉴 항목을 언급할 때 현재 규칙은 *Project > 파일 > > 리프 만들기* 입니다.
 
 ### <a name="links"></a>링크
 
@@ -277,7 +277,7 @@ Unity의 tooltip 특성을 사용 하 여 검사기에서 스크립트의 필드
 
 ## <a name="how-to-documentation"></a>방법 설명서
 
-혼합 현실 도구 키트의 많은 사용자는 API 설명서를 사용할 필요가 없습니다. 이러한 사용자는 미리 만들어진 재사용 가능한 prefabs 및 스크립트를 활용 하 여 환경을 만듭니다.
+혼합 현실 Toolkit의 많은 사용자는 API 설명서를 사용 하지 않아도 됩니다. 이러한 사용자는 미리 만들어진 재사용 가능한 prefabs 및 스크립트를 활용 하 여 환경을 만듭니다.
 
 각 기능 영역에는 매우 높은 수준에서 설명 하는 하나 이상의 markdown (md) 파일이 포함 됩니다. 제공 됩니다. 지정 된 기능 영역의 크기 및/또는 복잡도에 따라 제공 된 기능별로 하나의 추가 파일이 필요할 수 있습니다.
 
@@ -310,13 +310,13 @@ When using the spatial mapping component, the performance impact will increase w
 It is recommended to use the least detail possible for the desired experience.
 ```
 
-성능 정보는 CPU 및/또는 GPU 사용량이 많은 구성 요소에 권장 되며, 끌어오기 요청 검토의 일부로 요청 될 **수 있습니다** . 모든 해당 성능 정보는 API **및** 개요 설명서에 포함 되어 있습니다.
+성능 정보는 CPU 및/또는 GPU 사용량이 많은 구성 요소에 권장 되며, 끌어오기 요청 검토의 일부로 요청 될 **수 있습니다** . 적용 가능한 모든 성능 정보는 API **및** 개요 설명서에 포함되어야 합니다.
 
 ## <a name="breaking-changes"></a>주요 변경 내용
 
-주요 변경 내용 설명서는 각 기능 영역의 개별 breaking-changes.md 연결 되는 최상위 수준 [파일로](../contributing/breaking-changes.md) 구성 되어 있습니다.
+주요 변경 내용 설명서는 각 기능 영역의 개별 breaking-changes.md 연결되는 최상위 [파일로](../contributing/breaking-changes.md) 구성됩니다.
 
-기능 영역 breaking-changes.md 파일은 지정 된 릴리스에 대해 알려진 모든 주요 변경 내용 목록과 **이전 릴리스의 주요** 변경 내용에 대 한 기록을 포함 합니다.
+breaking-changes.md 파일의 기능 영역에는 지정된 릴리스에 대해 알려진 모든 주요 변경 내용 **목록과** 과거 릴리스의 주요 변경 내용 기록이 포함됩니다.
 
 예를 들어:
 
@@ -334,22 +334,22 @@ No known breaking changes
 ...
 ```
 
-기능 수준 breaking-changes.md 파일에 포함 된 정보는 각각의 새 MRTK 릴리스에 대 한 릴리스 정보로 집계 됩니다.
+기능 수준 breaking-changes.md 파일에 포함된 정보는 각 새 MRTK 릴리스에 대한 릴리스 정보로 집계됩니다.
 
-변경의 일부인 주요 변경 내용은 끌어오기 요청의 일부로 문서화 되어야 **합니다** .
+변경의 일부인 주요 변경 내용은 끌어오기 요청의 일부로 **문서화되어야 합니다.**
 
 ## <a name="tools-for-editing-markdown"></a>MarkDown 편집 도구
 
-[Visual Studio Code](https://code.visualstudio.com/) 은 MRTK 설명서의 일부인 markdown 파일을 편집 하는 데 유용한 도구입니다.
+[Visual Studio Code](https://code.visualstudio.com/) MRTK 설명서의 일부인 Markdown 파일을 편집하는 데 적합한 도구입니다.
 
-설명서를 작성할 때는 다음 두 가지 확장을 설치 하는 것도 좋습니다.
+설명서를 작성할 때 다음 두 확장을 설치하는 것도 좋습니다.
 
-- Visual Studio Code 용 docs Markdown 확장-Alt + M을 사용 하 여 docs 제작 옵션 메뉴를 표시 합니다.
+- Visual Studio Code 대한 Docs Markdown 확장 - Alt+M을 사용하여 문서 작성 옵션 메뉴를 표시합니다.
 
-- 코드 맞춤법 검사기-철자가 잘못 된 단어에는 밑줄이 그어집니다. 철자가 잘못 된 단어를 마우스 오른쪽 단추로 클릭 하 여 변경 하거나 사전에 저장 합니다.
+- 코드 맞춤법 검사기 - 철자가 잘못된 단어에 밑줄이 표시됩니다. 철자가 잘못된 단어를 마우스 오른쪽 단추로 클릭하여 변경하거나 사전에 저장합니다.
 
-이러한 두 가지 모두 Microsoft 게시 된 문서 작성 팩에 패키지 됩니다.
+이 두 가지 모두 Microsoft에서 게시한 Docs Authoring Pack에 패키지되어 있습니다.
 
-## <a name="see-also"></a>참조 
+## <a name="see-also"></a>참조
 
-* [예제 링크](https://www.google.com)
+- [설명서에 대한 예제 "참고" 링크](https://www.microsoft.com)

@@ -1,24 +1,24 @@
 ---
 title: 장면 시스템 콘텐츠 로드
-description: MRTK를 사용 하 여 장면 시스템 로드 설명서
+description: MRTK를 통해 장면 시스템을 로드하는 설명서
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: f310b3687a6773404c7a998a3764163daf159857
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: c6bc6474afd50fe265853e53c0f29009d816cf51
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145145"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177579"
 ---
-# <a name="content-scene-loading"></a>콘텐츠 장면 로드
+# <a name="scene-system-content-loading"></a>장면 시스템 콘텐츠 로드
 
-모든 콘텐츠 로드 작업은 비동기적으로 수행 되며 기본적으로 모든 콘텐츠 로드는 누적 됩니다. 관리자 및 조명 장면을 콘텐츠 로드 작업의 영향을 받지 않습니다. 로드 진행률 및 장면 활성화 모니터링에 대 한 자세한 내용은 [콘텐츠 로드 모니터링](scene-system-load-progress.md)을 참조 하세요.
+모든 콘텐츠 로드 작업은 비동기적이며 기본적으로 모든 콘텐츠 로드는 가산적입니다. 관리자 및 조명 장면에는 콘텐츠 로드 작업의 영향을 받지 않습니다. 부하 진행률 및 장면 활성화 모니터링에 대한 자세한 내용은 [콘텐츠 로드 모니터링을 참조하세요.](scene-system-load-progress.md)
 
-## <a name="loading-content"></a>콘텐츠 로드 중
+## <a name="loading-content"></a>콘텐츠 로드
 
-콘텐츠 장면을 로드 하려면 메서드를 사용 합니다 `LoadContent` .
+콘텐츠 장면을 로드하려면 메서드를 사용합니다. `LoadContent`
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -32,7 +32,7 @@ await sceneSystem.LoadContent(new string[] { "MyContentScene1", "MyContentScene2
 
 ## <a name="single-scene-loading"></a>단일 장면 로드
 
-단일 장면 로드에 해당 하는 것은 선택적 인수를 통해 구현할 수 있습니다 `mode` . `LoadSceneMode.Single` 는 로드를 계속 하기 전에 로드 된 모든 콘텐츠 장면을 먼저 언로드합니다.
+단일 장면 로드에 해당하는 는 선택적 인수를 통해 달성할 수 `mode` 있습니다. `LoadSceneMode.Single` 는 로드를 계속하기 전에 먼저 로드된 모든 콘텐츠 장면을 언로드합니다.
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -49,11 +49,11 @@ await sceneSystem.LoadContent("SingleContentScene", LoadSceneMode.Single);
 
 ## <a name="next--previous-scene-loading"></a>다음/이전 장면 로드
 
-콘텐츠는 빌드 인덱스의 순서로 단일 로드 될 수 있습니다. 이는 일련의 데모 장면을 하나씩 통해 사용자를 가져오는 응용 프로그램을 소개 하는 데 유용 합니다.
+콘텐츠는 빌드 인덱스 순으로 로드될 수 있습니다. 이는 사용자가 일련의 데모 장면을 하나씩 안내하는 애플리케이션을 소개하는 데 유용합니다.
 
 ![플레이어 설정에서 빌드의 현재 장면](../images/scene-system/MRTK_SceneSystemBuildSettings.png)
 
-다음/이전 콘텐츠 로드는 기본적으로 LoadSceneMode를 사용 하 여 이전 콘텐츠가 언로드되는 지 확인 합니다.
+다음/prev 콘텐츠 로드는 기본적으로 LoadSceneMode.Single을 사용하여 이전 콘텐츠가 언로드되도록 합니다.
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -69,9 +69,9 @@ if (prevSceneRequested && sceneSystem.PrevContentExists)
 }
 ```
 
-`PrevContentExists` 는 현재 로드 된 가장 낮은 빌드 인덱스 보다 더 낮은 빌드 인덱스를 가진 콘텐츠 장면이 하나 이상 있는 경우 true를 반환 합니다. `NextContentExists` 는 현재 로드 된 가장 높은 빌드 인덱스 보다 더 높은 빌드 인덱스가 있는 콘텐츠 장면이 하나 이상 있는 경우 true를 반환 합니다.
+`PrevContentExists` 는 현재 로드된 가장 낮은 빌드 인덱스보다 낮은 빌드 인덱스 가 있는 콘텐츠 장면이 하나 이상 있는 경우 true를 반환합니다. `NextContentExists` 는 현재 로드된 가장 높은 빌드 인덱스보다 높은 빌드 인덱스 가 있는 콘텐츠 장면이 하나 이상 있는 경우 true를 반환합니다.
 
-`wrap`인수가 true 이면 내용이 첫 번째/마지막 빌드 인덱스로 다시 반복 됩니다. 이렇게 하면 다음/이전 콘텐츠를 확인할 필요가 없습니다.
+`wrap`인수가 true이면 콘텐츠가 첫 번째/마지막 빌드 인덱스로 다시 반복됩니다. 이렇게 하면 다음/이전 콘텐츠를 확인할 필요가 없습니다.
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -127,19 +127,19 @@ Trees | 식물 | •
 
 ### <a name="final-content"></a>최종 콘텐츠
 
-장면 이름 | 장면 태그 | 스크립트에 의해 로드 됨
+장면 이름 | 장면 태그 | 스크립트로 로드
 ---|---|---
 DebugTerrainPhysics | DoNotInclude |
 StructureTesting | DoNotInclude |
 VegetationTools | DoNotInclude |
 Mountain | 지형 | •
 Cabin | 구조체 | •
-Trees | Vegetation | •
+Trees | 식물 | •
 
 ---
 
 ## <a name="editor-behavior"></a>편집기 동작
 
-장면 시스템의 [service inspector](../../configuration/mixed-reality-configuration-guide.md#editor-utilities) 를 사용 하 여 편집기와 재생 모드에서 이러한 모든 작업을 수행할 수 있습니다. 편집 모드에서 장면 로드는 즉시 수행 되지만 재생 모드에서는 로드 진행 상태를 관찰 하 고 [활성화 토큰](scene-system-load-progress.md) 을 사용할 수 있습니다.
+장면 시스템의 [서비스 검사기를](../../configuration/mixed-reality-configuration-guide.md#editor-utilities) 사용하여 편집기 및 재생 모드에서 이러한 모든 작업을 수행할 수 있습니다. 편집 모드에서는 장면 로드가 즉시 진행되지만 재생 모드에서는 로드 진행 상황을 관찰하고 [활성화 토큰을](scene-system-load-progress.md) 사용할 수 있습니다.
 
-![콘텐츠 로드가 강조 표시 된 검사기의 장면 시스템](../images/scene-system/MRTK_SceneSystemServiceInspector.PNG)
+![콘텐츠 로드가 강조 표시된 검사자의 장면 시스템](../images/scene-system/MRTK_SceneSystemServiceInspector.PNG)

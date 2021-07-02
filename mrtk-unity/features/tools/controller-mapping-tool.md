@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: f00dc01555ef158dab21334761bd23ef6a70dba4
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 8c1da7ae6a46bd00599a77b1c4cbb0b2f7baa632
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144088"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176169"
 ---
 # <a name="controller-mapping-tool"></a>컨트롤러 매핑 도구
 
@@ -26,13 +26,13 @@ ms.locfileid: "110144088"
 
 컨트롤러에 대한 Unity의 매핑을 검사하려면 다음을 수행합니다.
 
-- 컨트롤러 연결
+- 컨트롤러 커넥트
 - 각 단추를 누르고 각 축 이동
 - 디스플레이의 매핑을 기록해 둡니다.
 - 컨트롤러에 대한 입력 시스템 데이터 공급자의 컨트롤 매핑 업데이트
 
 > [!NOTE]
-> 컨트롤러 매핑 도구는 Microsoft Mixed Reality 도구 키트 구성 요소를 사용하지 않습니다. Unity와 직접 통신하여 컨트롤 매핑을 확인하고 표시합니다.
+> 컨트롤러 매핑 도구는 Microsoft Mixed Reality Toolkit 구성 요소를 사용하지 않습니다. Unity와 직접 통신하여 컨트롤 매핑을 확인하고 표시합니다.
 
 ### <a name="all-controls-display"></a>모든 컨트롤 표시
 
@@ -42,11 +42,11 @@ ms.locfileid: "110144088"
 
 ### <a name="active-controls-display"></a>활성 컨트롤 표시
 
-더 작은 좁은 디스플레이 패널에는 Unity 입력 axed 및 활성 상태의 단추가 표시 됩니다 (예: 단추가 누름). 활성 컨트롤 표시를 통해 컨트롤러의 상태에 대 한 요약 보기를 쉽게 읽을 수 있습니다.
+더 작고 좁은 디스플레이 패널에는 Unity 입력 축과 활성 상태의 단추(예: 단추를 누른 경우)가 표시됩니다. 활성 컨트롤 표시는 컨트롤러 상태에 대한 읽기 쉬운 요약 보기를 제공합니다.
 
 ![활성 컨트롤 표시](../images/controller-mapping-tool/ActiveControls.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [입력 시스템 데이터 공급자 만들기](../input/create-data-provider.md)
 - [InputFeatureUsage 도구](input-feature-usage-tool.md)

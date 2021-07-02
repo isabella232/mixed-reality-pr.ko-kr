@@ -1,18 +1,18 @@
 ---
-title: MRTK의 컨트롤러
+title: MRTK에서 컨트롤러 검색
 description: MRTK와 함께 다양 한 컨트롤러 사용에 대 한 설명서
 author: RogPodge
 ms.author: roliu
 ms.date: 05/13/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 컨트롤러, HP 반향, Oculus, HTC Vive, 실습
-ms.openlocfilehash: 111ebf2b1eb26bbef8cde16832f780acfa758595
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+keywords: Unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk, 컨트롤러, HP 반향, oculus, HTC vive, 실습
+ms.openlocfilehash: 2bb749f4e2f6294c4feb74f97af55ecb857d5f76
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743585"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175594"
 ---
-# <a name="controllers-in-mrtk"></a>MRTK의 컨트롤러
+# <a name="detecting-controllers-in-mrtk"></a>MRTK에서 컨트롤러 검색
 
 MRTK는 다양 한 컨트롤러에 대 한 지원을 제공 합니다. HTC Vive Knuckles 및 HTC Vive 지팡이와 같은 많은 컨트롤러는 호환 되는 장치에서 MRTK로 빌드된 응용 프로그램이 시작 되 면 기본적으로 작동 합니다. Oculus 퀘스트 및 HP 반향 G2 컨트롤러에 대 한 트레일러 식 같은 다른 컨트롤러는 MRTK에서 인식 하기 전에 추가 패키지가 필요 합니다.
 

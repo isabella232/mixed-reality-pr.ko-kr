@@ -1,22 +1,22 @@
 ---
-title: 가리키기 라이트
+title: 마우스로 가리키기 조명
 description: MRTK의 예제를 통해 HoverLight에 대한 설명서
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 가리키기 조명,
-ms.openlocfilehash: b98dff0dd3ff0312f6ce607a5fb8a26f94959ff2
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: ed45d3345931376283cfca2372ac57459c777f6e
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145170"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176729"
 ---
-# <a name="hover-light"></a>가리키기 라이트
+# <a name="hover-light"></a>마우스로 가리키기 조명
 
-[`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight)은 개체 표면 근처에 마우스를 가져가는 [점 광원을](https://docs.unity3d.com/Manual/Lighting.html) 모방하는 [Fluent Design 시스템](https://www.microsoft.com/design/fluent/) 패러다임입니다. 멀리 떨어진 상호 작용에 자주 사용되는 애플리케이션은 구성 요소를 통해 가리키기 조명의 속성을 제어할 수 [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 있습니다.
+[`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight)는 개체 표면 근처에 마우스를 가져가는 점 [광원을](https://docs.unity3d.com/Manual/Lighting.html) 모방하는 [Fluent Design 시스템](https://www.microsoft.com/design/fluent/) 패러다임입니다. 멀리 떨어진 상호 작용에 자주 사용되는 애플리케이션은 구성 요소를 통해 가리키기 조명의 속성을 제어할 수 [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 있습니다.
 
-[`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) *Mixed Reality 도구 키트/표준* 셰이더의 영향을 받는 재질을 사용하려면 Hover *Light* 속성을 사용해야 합니다.
+[`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) *재질이 Mixed Reality Toolkit/표준* 셰이더의 영향을 받도록 하려면 을 사용하고 *Hover Light* 속성을 사용하도록 설정해야 합니다.
 
 > [!Note]
 > MRTK/표준 셰이더에서는 기본적으로 최대 2개의 [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 셰이더를 지원하지만 장면에 조명이 추가되면 4개와 10개를 지원하도록 확장됩니다.
@@ -61,6 +61,6 @@ private const int hoverLightCountHigh = 12;
 >
 > `Property (_HoverLightData) exceeds previous array size (24 vs 20). Cap to previous >size.`
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [MRTK 표준 세이더](mrtk-standard-shader.md)

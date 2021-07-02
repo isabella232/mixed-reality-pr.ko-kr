@@ -4,17 +4,17 @@ description: MRTK 작성자 목록
 author: cadia
 ms.author: cadia
 ms.date: 05/27/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, C#, 기여자, 커뮤니티
-ms.openlocfilehash: e952926f067cb6be10621b2914372aaa47af5b7d
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, C#, 기여자, Community
+ms.openlocfilehash: ae8cc8b1ab26a12188622a2c846dddd381491dc2
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647881"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177295"
 ---
 # <a name="authors"></a>Authors
 
-Microsoft Mixed Reality Toolkit는 전 세계 개인의 기여를 포함하는 공동 작업 프로젝트입니다. 기여해 주신 모든 분들에게 감사드리며 계속 기여해 주셔서 감사합니다.
+Microsoft Mixed Reality Toolkit 전 세계 개인의 기여를 포함하는 공동 작업 프로젝트입니다. 기여해 주신 모든 분들에게 감사드리며 계속 기여해 주셔서 감사합니다.
 
 - achaperon
 - Adam Adam(AdamMitchell-ms)

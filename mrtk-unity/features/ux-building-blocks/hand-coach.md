@@ -1,16 +1,16 @@
 ---
-title: README_HandCoach
+title: 핸드 코치
 description: 직접 coach에 대 한 설명 및 예제입니다.
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 8b4069f25692c4058c912ccd06ae678d67882fcd
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: f6042fce7c95c106de9c72adc854e2b7112da63c
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489273"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177150"
 ---
 # <a name="hand-coach"></a>핸드 코치
 
@@ -33,36 +33,36 @@ ms.locfileid: "109489273"
 
 [MixedRealityToolkit/실험적/HandCoach/장면을](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/HandCoach/Scenes) 통해 **수동 공동 작업 예제** 장면에서 예제를 찾을 수 있습니다.
 
-## <a name="hand-3d-assets"></a>손 3D 자산
+## <a name="hand-3d-assets"></a>수동 3D 자산
 
-[MixedRealityToolkit.SDK/Experimental/HandCoach에서](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/HandCoach) 자산을 찾을 수 있습니다.
+다음에서 자산을 찾을 수 있습니다. [MixedRealityToolkit/실험적/HandCoach](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/HandCoach)
 
 ## <a name="quality"></a>품질
 
-스킨 메시에서 왜곡이 발견되면 프로젝트에서 적절한 양의 조인트를 사용하고 있는지 확인해야 합니다.
-Unity의 편집 > 프로젝트 설정 > 품질 > 기타 > Blend Weights로 이동합니다. 부드러운 조인을 보려면 "4개 연동"이 선택되어 있는지 확인합니다.
-![프로젝트 설정](../images/hand-coach/MRTK_ProjectSettings.png)
+스킨 메시에 왜곡이 있는 경우 프로젝트에서 적절 한 수의 조인트를 사용 하 고 있는지 확인 해야 합니다.
+Unity의 편집 > Project 설정 > 품질 > 기타 > 혼합 가중치로 이동 합니다. 부드러운 조인트를 보려면 "4 뼈"가 선택 되어 있는지 확인 합니다.
+![Project 설정](../images/hand-coach/MRTK_ProjectSettings.png)
 
 ## <a name="scripts"></a>스크립트
 
 ### <a name="interaction-hint"></a>상호 작용 힌트
 
-`InteractionHint.cs`스크립트는 애니메이션을 트리거하기 위한 래퍼 기능을 제공하고 손 조작을 위해 페이드합니다.
+`InteractionHint.cs`스크립트는 애니메이션을 트리거하는 래퍼 기능을 제공 하 고 손 모양에 대해 페이드를 제공 합니다.
 
-#### <a name="how-to-set-up-an-interaction-hint"></a>상호 작용 힌트를 설정하는 방법
+#### <a name="how-to-set-up-an-interaction-hint"></a>상호 작용 힌트를 설정 하는 방법
 
-상호 작용 힌트를 설정하려면 제공된 프리팹 "StaticHandCoachRoot_L.prefab" 및 "StaticHandCoachRoot_R.prefab"을 사용하는 것이 좋습니다. 이 프리팹에는 InteractionHint 스크립트 및 손 조작뿐만 아니라 제공된 힌트 애니메이션이 의도한 대로 작동하도록 하는 적절한 계층 구조가 포함되어 있습니다.
-그렇지 않으면 animator를 사용하여 손 조작에서 한 부모 수준 위로 gameObject에 스크립트를 배치해야 합니다.
+상호 작용 힌트를 설정 하려면 제공 된 prefabs "StaticHandCoachRoot_L. prefab" 및 StaticHandCoachRoot_R "prefab"를 사용 하는 것이 좋습니다. 이 prefab에는 제공 된 힌트 애니메이션이 의도 한 대로 작동 하도록 적절 한 계층 뿐만 아니라 InteractionHint 스크립트 및 손 (영문)이 포함 되어 있습니다.
+그렇지 않으면 애니메이터를 사용 하 여 gameObject 한 부모 수준에서 한 부모 수준으로 스크립트를 저장 해야 합니다.
 
-#### <a name="inspector-properties"></a>검사기 속성
+#### <a name="inspector-properties"></a>Inspector 속성
 
-- **HideIfHandTracked** 이 부울은 사용자의 손을 추적할 때 손 추적 상태를 사용하여 시각적 개체를 숨길지 여부를 지정합니다. false로 설정하면 스크립팅 속성 "customShouldHideVisuals"만 사용하여 힌트를 숨길지 여부를 결정합니다.
+- **HideIfHandTracked** 이 부울은 사용자의 손을 추적할 때 시각적 추적 상태를 사용 하 여 시각적 개체를 숨길지 여부를 지정 합니다. False로 설정 하면 "customShouldHideVisuals" 스크립팅 속성만 힌트를 숨길지 여부를 결정 하는 데 사용 됩니다.
 
-- **MinDelay** 이 속성은 시각적 개체를 표시하기 위한 최소 지연을 지정합니다. 기본적으로 손의 시각적 개체는 사용자의 손을 추적하지 않는 경우 몇 초 후에 표시됩니다.
+- **Mindelay** 이 속성은 시각적 개체 표시에 대 한 최소 지연을 지정 합니다. 사용자의 손을 추적 하지 않는 경우 기본적으로이 몇 초 후에 손 모양에 대 한 시각적 개체가 표시 됩니다.
 
-- **MaxDelay** 이 속성은 시각적 개체를 표시하기 위한 최대 지연을 지정합니다. 기본적으로 손의 시각적 개체는 사용자의 손을 추적하는 경우에도 몇 초 후에 표시됩니다.
+- **Maxdelay** 이 속성은 시각적 개체 표시에 대 한 최대 지연을 지정 합니다. 기본적으로 사용자의 손을 추적 하는 경우에도이 몇 초 후에 손 모양에 대 한 시각적 개체가 표시 됩니다.
 
-- **UseMaxTimer** 이 부울을 false로 설정하면 최대 타이머를 사용하지 않도록 설정하고 사용자의 손을 볼 수 없거나 사용자 지정 조건이 false를 반환하는 경우에만 손 힌트를 표시할 수 있습니다.
+- **UseMaxTimer** 이 부울 값이 false로 설정 된 경우 최대 타이머를 사용 하지 않도록 설정 하 고 사용자의 손을 볼 수 없거나 사용자 지정 조건이 false를 반환 하는 경우에만 손 힌트가 표시 되도록 합니다.
 
 - **반복** 이 속성은 min 또는 max 타이머가 통과 했을 때 힌트 애니메이션을 재생 하는 횟수를 제어 합니다. 그런 다음 힌트를 숨기고 지연을 다시 기다립니다.
 
@@ -83,24 +83,24 @@ Unity의 편집 > 프로젝트 설정 > 품질 > 기타 > Blend Weights로 이�
 
 제공 된 기본 페이드 인 및 페이드 아웃 상태, Fade_In 및 Fade_Out는 페이드 길이를 설정 하기 위해 두 번째 키프레임의 타임 스탬프를 변경 하 여 조정할 수 있습니다.
 
-애니메이터 및 스크립트는 가능한 한 간단 하 게 설치 하는 방식으로 설정 되었습니다. 새 애니메이션 상태를 추가하려면 fbx를 가져오고, 애니메이션 이름이 고유한 이름으로 설정되어 있는지 확인하고, 해당 애니메이션을 animator로 끌어 놓습니다.
+애니메이터 및 스크립트는 가능한 한 간단 하 게 설치 하는 방식으로 설정 되었습니다. 새 애니메이션 상태를 추가 하려면 fbx를 가져온 후 애니메이션 이름이 고유한 이름으로 설정 되어 있는지 확인 하 고 해당 애니메이션을 애니메이터로 끌어 놓습니다.
 
 ### <a name="movetotarget"></a>MoveToTarget
 
-MoveToTarget.cs 스크립트는 시간별 추적 위치에서 대상 위치로 손 힌트를 이동하는 기능을 제공합니다.
+MoveToTarget 스크립트는 시간에 따라 추적 위치에서 대상 위치로 손 힌트를 이동 하는 기능을 제공 합니다.
 
-#### <a name="how-to-set-up-movetotarget"></a>MoveToTarget을 설정하는 방법
+#### <a name="how-to-set-up-movetotarget"></a>MoveToTarget를 설정 하는 방법
 
-제공된 프리팹 "MovingHandCoachRoot_L.prefab" 및 "MovingHandCoachRoot_R.prefab"은 해당 계층에 MoveToTarget을 포함합니다. 사용자 고유의 설정에서 이 스크립트를 사용하려면 조작에 대한 Animator를 포함하는 루트 gameobject에 배치해야 합니다.
+제공 된 prefabs "MovingHandCoachRoot_L. prefab" 및 MovingHandCoachRoot_R "prefab"의 계층에는 MoveToTarget가 포함 되어 있습니다. 사용자의 설정에 따라이 스크립트를 사용 하려는 경우에는 rig의 애니메이터를 포함 하는 루트 gameobject에이 스크립트를 저장 해야 합니다.
 
-#### <a name="inspector-properties"></a>검사기 속성
+#### <a name="inspector-properties"></a>Inspector 속성
 
-- **TrackingObject** 조작이 동작을 시작하기 전에 따라야 하는 개체를 사용하여 이 개체를 설정합니다. 빈 GameObject를 만들고 추적을 정확히 파악할 수 있도록 특정 위치로 이동하는 것이 좋습니다.
-- **TargetObject** 동작하는 동안 이동하려는 개체를 사용하여 이 개체를 설정합니다. 빈 GameObject를 만들고 추적을 정확히 파악할 수 있도록 특정 위치로 이동하는 것이 좋습니다.
-- **RootObject** 상대 위치를 올바르게 계산할 수 있도록 추적 개체와 대상 개체 간의 공유 부모로 설정합니다. 포함된 프리팹에는 추적 개체와 대상 개체가 모두 계층 구조에 있지만 대상 개체를 프리팹 외부의 gameObject로 설정하고 루트 개체를 공유 부모로 변경할 수 있습니다.
-- **기간** TrackingObject에서 TargetObject로 이동하는 데 걸리는 시간(초)입니다.
-- **TargetOffset** GameObject가 올바른 대상 위치에 도달하도록 하는 튜닝 가능한 오프셋입니다. 애니메이션 중에 위치 오프셋이 애니메이션에 포함된 경우에 유용합니다.
-- **AnimationCurve** 이는 기본적으로 선형 곡선으로 설정되지만 동작 경로를 시작하고 중지할 때 감속/외부 감속을 제공하도록 곡선을 변경할 수 있습니다.
+- **Trackingobject** 작업을 시작 하기 전에 rig에서 따라야 하는 개체를 사용 하 여이를 설정 합니다. 빈 GameObject을 만들어 특정 위치로 이동 하 여 추적을 쉽게 파악할 수 있도록 하는 것이 좋습니다.
+- **TargetObject** 이동 하는 동안 rig를 이동 하려는 개체를 사용 하 여이를 설정 합니다. 빈 GameObject을 만들어 특정 위치로 이동 하 여 추적을 쉽게 파악할 수 있도록 하는 것이 좋습니다.
+- **Rootobject** 상대 위치를 정확 하 게 계산할 수 있도록 추적 및 대상 개체 간의 공유 부모로 설정 합니다. 포함 된 prefab에는 계층 구조에 추적 및 대상 개체가 모두 있지만 대상 개체를 prefab 외부의 gameObject로 설정 하 고 루트 개체를 공유 부모로 변경할 수 있습니다.
+- **기간** 몇 초 안에 TrackingObject에서 TargetObject로 이동 하는 데 소요 되는 시간 (초)입니다.
+- **Targetoffset** 올바른 대상 위치에 도달할 GameObject을 가져오기 위한 조정 가능한 오프셋입니다. 애니메이션에 애니메이션을 포함 하는 위치 오프셋이 포함 된 경우에 유용 합니다.
+- **애니메이션 곡선** 이는 기본적으로 선형 곡선으로 설정 되지만 동작 패스를 시작 하 고 중지할 때 감속/가속을 제공 하도록 곡선을 변경할 수 있습니다.
 
 #### <a name="controlling-movetotarget-via-script"></a>스크립트를 통해 MoveToTarget 제어
 
@@ -129,8 +129,8 @@ RotateAroundPoint 스크립트는 시간에 따라 피벗 점을 중심으로 �
 
 #### <a name="controlling-rotatearoundpoint-via-script"></a>스크립트를 통해 RotateAroundPoint 제어
 
-사용자 지정 스크립트에서 손 조작이 CenteredParent를 중심으로 회전을 시작하도록 하려면 RotateToTarget()을 호출합니다. 위치를 원래 PivotPosition으로 다시 설정하려면 ResetAndDeterminePivot()을 호출합니다.
+사용자 지정 스크립트에서 RotateToTarget ()를 호출 하 여 수동으로 가운데 Edparent를 중심으로 회전을 시작 합니다. 위치를 원래 PivotPosition 다시 설정 하려면 ResetAndDeterminePivot ()를 호출 합니다.
 
 #### <a name="controlling-rotatearoundpoint-via-animations"></a>애니메이션을 통해 RotateAroundPoint 제어
 
-이동해야 하는 애니메이션에서 두 개의 이벤트를 설정합니다. 하나는 ResetAndDeterminePivot()을 호출하고 다른 하나는 RotateToTarget()을 호출합니다. ResetAndDeterminePivot은 손 조작을 PivotPosition으로 다시 설정하게 되므로 첫 번째 키 프레임에서 설정해야 합니다. RotateToTarget은 CenteredParent를 중심으로 회전을 시작할 키 프레임에 설정해야 합니다. 이 방법은 제공된 프리팹에서 스크립트 기능을 사용하는 방법입니다.
+이동 해야 하는 애니메이션에서 두 이벤트를 설정 합니다. 하나는 ResetAndDeterminePivot () 호출을 사용 하 고 다른 하나는 RotateToTarget ()를 호출 합니다. ResetAndDeterminePivot는 PivotPosition로 다시 설정 되기 때문에 첫 번째 키 프레임에서 설정 해야 합니다. RotateToTarget는 rig를 중심으로 회전을 시작 하려는 키 프레임에서 설정 해야 합니다. 이는 제공 된 prefabs 스크립트 기능을 사용 하는 방법입니다.

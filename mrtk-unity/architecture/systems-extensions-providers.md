@@ -1,24 +1,24 @@
 ---
-title: 시스템 확장 공급자
+title: 시스템, 확장 서비스 및 데이터 공급자
 description: MRTK 확장 및 데이터 공급자
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 시스템 확장
-ms.openlocfilehash: 358294702971b7d9e8de1b842d3bc1844e5dc9bf
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+keywords: Unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk, 시스템 확장
+ms.openlocfilehash: 668df40cec9b9443b37f63d80fcf8a1ca2e0bcbc
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121471"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177418"
 ---
 # <a name="systems-extension-services-and-data-providers"></a>시스템, 확장 서비스 및 데이터 공급자
 
-혼합 현실 도구 키트에서 많은 기능이 서비스 형태로 제공 됩니다. 서비스는 시스템, 확장 서비스 및 데이터 공급자의 세 가지 기본 범주로 그룹화 됩니다.
+혼합 현실 Toolkit에서 대부분의 기능은 서비스 형태로 제공 됩니다. 서비스는 시스템, 확장 서비스 및 데이터 공급자의 세 가지 기본 범주로 그룹화 됩니다.
 
 ## <a name="systems"></a>시스템
 
-시스템은 혼합 현실 도구 키트의 핵심 기능을 제공 하는 서비스입니다. 모든 시스템은 인터페이스의 구현 [`IMixedRealityService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityService) 입니다.
+시스템은 혼합 현실 Toolkit의 핵심 기능을 제공 하는 서비스입니다. 모든 시스템은 인터페이스의 구현 [`IMixedRealityService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityService) 입니다.
 
 - [BoundarySystem](../features/boundary/boundary-system-getting-started.md)
 - [CameraSystem](../features/camera-system/camera-system-overview.md)
@@ -32,7 +32,7 @@ ms.locfileid: "113121471"
 
 ## <a name="extensions"></a>확장
 
-확장 서비스는 혼합 현실 도구 키트의 기능을 확장 하는 구성 요소입니다. 모든 확장 서비스는 인터페이스를 구현 하도록 지정 해야 합니다 [`IMixedRealityExtensionService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService) .
+확장 서비스는 혼합 현실 Toolkit의 기능을 확장 하는 구성 요소입니다. 모든 확장 서비스는 인터페이스를 구현 하도록 지정 해야 합니다 [`IMixedRealityExtensionService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService) .
 
 확장 서비스를 만드는 방법에 대 한 자세한 내용은 [확장 서비스](../features/extensions/extension-services.md) 문서를 참조 하세요.
 
@@ -42,10 +42,10 @@ MRTK에 액세스할 수 있게 하려면 MixedRealityToolkit 구성 요소 구�
 
 ## <a name="data-providers"></a>데이터 공급자
 
-데이터 공급자는 해당 이름에 따라 혼합 현실 Toolkit 서비스에 데이터를 제공 하는 구성 요소입니다. 모든 데이터 공급자는 인터페이스를 구현 하도록 지정 해야 합니다 [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) .
+데이터 공급자는 이름에 따라 혼합 현실 Toolkit 서비스에 데이터를 제공 하는 구성 요소입니다. 모든 데이터 공급자는 인터페이스를 구현 하도록 지정 해야 합니다 [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) .
 
 > [!NOTE]
-> 일부 서비스의 경우 데이터 공급자가 필요 하지 않습니다. 혼합 현실 도구 키트 시스템의 경우 데이터 공급자를 활용 하는 유일한 서비스는 입력 및 공간 인식 시스템입니다.
+> 일부 서비스의 경우 데이터 공급자가 필요 하지 않습니다. 혼합 현실 Toolkit의 시스템에서 데이터 공급자를 활용 하는 데는 입력 및 공간 인식 시스템이 유일 하 게 서비스입니다.
 
 특정 MRTK 서비스에 액세스할 수 있도록 데이터 공급자는 서비스의 구성 프로필에 등록 됩니다.
 
