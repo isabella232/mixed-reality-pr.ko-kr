@@ -1,83 +1,83 @@
 ---
-title: 단위 테스트
+title: 테스트 작성 및 실행
 description: MRTK의 안정성을 확인하기 위한 단위 테스트입니다.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, UnitTest,
-ms.openlocfilehash: a915b005a69de1864a5674bbb0363f18d1c74b19
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: c8efb192982a1cb9ca07e91d29a69b11aaffc290
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121351"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177114"
 ---
-# <a name="writing-and-running-tests-in-mrtk"></a><span data-ttu-id="e4892-104">MRTK에서 테스트 작성 및 실행</span><span class="sxs-lookup"><span data-stu-id="e4892-104">Writing and running tests in MRTK</span></span>
+# <a name="writing-and-running-tests"></a><span data-ttu-id="86bbe-104">테스트 작성 및 실행</span><span class="sxs-lookup"><span data-stu-id="86bbe-104">Writing and running tests</span></span>
 
-<span data-ttu-id="e4892-105">MRTK의 안정성을 보장하기 위해 MRTK에는 코드 변경 내용이 기존 동작을 회귀하지 않도록 하는 일련의 테스트가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-105">To ensure MRTK is reliable, MRTK has a set of tests to ensure that changes to the code does not regress existing behavior.</span></span> <span data-ttu-id="e4892-106">MRTK와 같은 큰 코드베이스에서 테스트 검사를 잘 하는 것은 안정성과 변경 시 신뢰도에 매우 중요합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-106">Having good test coverage in a big codebase like MRTK is crucial for stability and having confidence when making changes.</span></span>
+<span data-ttu-id="86bbe-105">MRTK의 안정성을 보장하기 위해 MRTK에는 코드 변경 내용이 기존 동작을 회귀하지 않도록 하는 일련의 테스트가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-105">To ensure MRTK is reliable, MRTK has a set of tests to ensure that changes to the code does not regress existing behavior.</span></span> <span data-ttu-id="86bbe-106">MRTK와 같은 큰 코드베이스에서 테스트 검사를 잘 하는 것은 안정성과 변경 시 신뢰도에 매우 중요합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-106">Having good test coverage in a big codebase like MRTK is crucial for stability and having confidence when making changes.</span></span>
 
-<span data-ttu-id="e4892-107">MRTK는 [NUnit의](https://nunit.org/)Unity 통합을 사용하는 Unity [Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-107">MRTK uses the [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) which uses a Unity integration of [NUnit](https://nunit.org/).</span></span> <span data-ttu-id="e4892-108">이 가이드에서는 MRTK에 테스트를 추가하는 방법에 대한 시작점을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-108">This guide will provide a starting point on how to add tests to MRTK.</span></span> <span data-ttu-id="e4892-109">제공된 링크에서 조회할 수 있는 [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) 및 [NUnit은](https://nunit.org/) 설명하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-109">It will not explain the [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) and [NUnit](https://nunit.org/) which can be looked up in the links provided.</span></span>
+<span data-ttu-id="86bbe-107">MRTK는 [NUnit의](https://nunit.org/)Unity 통합을 사용하는 Unity [Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-107">MRTK uses the [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) which uses a Unity integration of [NUnit](https://nunit.org/).</span></span> <span data-ttu-id="86bbe-108">이 가이드에서는 MRTK에 테스트를 추가하는 방법에 대한 시작점을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-108">This guide will provide a starting point on how to add tests to MRTK.</span></span> <span data-ttu-id="86bbe-109">제공된 링크에서 조회할 수 있는 [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) 및 [NUnit은](https://nunit.org/) 설명하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-109">It will not explain the [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) and [NUnit](https://nunit.org/) which can be looked up in the links provided.</span></span>
 
-<span data-ttu-id="e4892-110">끌어오기 요청을 제출하기 전에 다음을 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-110">Before submitting a pull request, make sure to:</span></span>
+<span data-ttu-id="86bbe-110">끌어오기 요청을 제출하기 전에 다음을 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-110">Before submitting a pull request, make sure to:</span></span>
 
-1. <span data-ttu-id="e4892-111">변경 내용이 기존 동작을 회귀하지 않도록 테스트를 로컬로 실행합니다(테스트가 실패하는 경우 PR 완료가 허용되지 않습니다).</span><span class="sxs-lookup"><span data-stu-id="e4892-111">Run the tests locally so your changes don't regress existing behavior (completing PRs won't be allowed if any tests fail).</span></span>
+1. <span data-ttu-id="86bbe-111">변경 내용이 기존 동작을 회귀하지 않도록 테스트를 로컬로 실행합니다(테스트가 실패하는 경우 PR 완료가 허용되지 않습니다).</span><span class="sxs-lookup"><span data-stu-id="86bbe-111">Run the tests locally so your changes don't regress existing behavior (completing PRs won't be allowed if any tests fail).</span></span>
 
-1. <span data-ttu-id="e4892-112">버그를 수정하는 경우 테스트를 작성하여 수정 사항을 테스트하고 향후 코드 수정으로 다시 중단되지 않도록 합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-112">If fixing a bug, write a test to test the fix and ensure that future code modifications won't break it again.</span></span>
+1. <span data-ttu-id="86bbe-112">버그를 수정하는 경우 테스트를 작성하여 수정 사항을 테스트하고 향후 코드 수정으로 다시 중단되지 않도록 합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-112">If fixing a bug, write a test to test the fix and ensure that future code modifications won't break it again.</span></span>
 
-1. <span data-ttu-id="e4892-113">기능을 작성하는 경우 새 테스트를 작성하여 예정된 코드 변경으로 인해 이 기능이 중단되는 것을 방지합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-113">If writing a feature, write new tests to prevent upcoming code changes breaking this feature.</span></span>
+1. <span data-ttu-id="86bbe-113">기능을 작성하는 경우 새 테스트를 작성하여 예정된 코드 변경으로 인해 이 기능이 중단되는 것을 방지합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-113">If writing a feature, write new tests to prevent upcoming code changes breaking this feature.</span></span>
 
-<span data-ttu-id="e4892-114">현재 playmode 테스트는 Unity 2018.4에서 실행되며 다른 버전의 Unity에서 실패할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-114">Currently playmode tests are meant to be run in Unity 2018.4 and may fail in other versions of Unity</span></span>
+<span data-ttu-id="86bbe-114">현재 playmode 테스트는 Unity 2018.4에서 실행되며 다른 버전의 Unity에서 실패할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-114">Currently playmode tests are meant to be run in Unity 2018.4 and may fail in other versions of Unity</span></span>
 
-## <a name="running-tests"></a><span data-ttu-id="e4892-115">테스트 실행</span><span class="sxs-lookup"><span data-stu-id="e4892-115">Running tests</span></span>
+## <a name="running-tests"></a><span data-ttu-id="86bbe-115">테스트 실행</span><span class="sxs-lookup"><span data-stu-id="86bbe-115">Running tests</span></span>
 
-### <a name="unity-editor"></a><span data-ttu-id="e4892-116">Unity 편집기</span><span class="sxs-lookup"><span data-stu-id="e4892-116">Unity editor</span></span>
+### <a name="unity-editor"></a><span data-ttu-id="86bbe-116">Unity 편집기</span><span class="sxs-lookup"><span data-stu-id="86bbe-116">Unity editor</span></span>
 
-<span data-ttu-id="e4892-117">[Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) **창** 일반 Test Runner 있으며 사용 가능한 모든  >    >   MRTK 재생 및 편집 모드 테스트를 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-117">The [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) can be found under **Window** > **General** > **Test Runner** and will show all available MRTK play and edit mode tests.</span></span>
+<span data-ttu-id="86bbe-117">[Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) **창** 일반 Test Runner 있으며 사용 가능한 모든  >    >   MRTK 재생 및 편집 모드 테스트를 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-117">The [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) can be found under **Window** > **General** > **Test Runner** and will show all available MRTK play and edit mode tests.</span></span>
 
-### <a name="command-line"></a><span data-ttu-id="e4892-118">명령 줄</span><span class="sxs-lookup"><span data-stu-id="e4892-118">Command line</span></span>
+### <a name="command-line"></a><span data-ttu-id="86bbe-118">명령 줄</span><span class="sxs-lookup"><span data-stu-id="86bbe-118">Command line</span></span>
 
-<span data-ttu-id="e4892-119">에 있는 [powershell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6) 스크립트를 통해 테스트를 실행할 수도 `Scripts\test\run_playmode_tests.ps1` 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-119">Tests can also be run by a [powershell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6) script located at `Scripts\test\run_playmode_tests.ps1`.</span></span> <span data-ttu-id="e4892-120">그러면 playmode 테스트가 github/CI에서 실행되는 대로 정확하게 실행되고(아래 참조) 결과를 출력합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-120">This will run the playmode tests exactly as they are executed on github / CI (see below), and print results.</span></span> <span data-ttu-id="e4892-121">다음은 스크립트를 실행하는 방법의 몇 가지 예입니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-121">Here are some examples of how to run the script</span></span>
+<span data-ttu-id="86bbe-119">에 있는 [powershell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6) 스크립트를 통해 테스트를 실행할 수도 `Scripts\test\run_playmode_tests.ps1` 있습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-119">Tests can also be run by a [powershell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6) script located at `Scripts\test\run_playmode_tests.ps1`.</span></span> <span data-ttu-id="86bbe-120">그러면 playmode 테스트가 github/CI에서 실행되는 대로 정확하게 실행되고(아래 참조) 결과를 출력합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-120">This will run the playmode tests exactly as they are executed on github / CI (see below), and print results.</span></span> <span data-ttu-id="86bbe-121">다음은 스크립트를 실행하는 방법의 몇 가지 예입니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-121">Here are some examples of how to run the script</span></span>
 
-<span data-ttu-id="e4892-122">Unity 2018.4(예: Unity 2018.4.26f1)를 통해 H:\mrtk.dev 있는 프로젝트에서 테스트를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-122">Run the tests on the project located at H:\mrtk.dev, with Unity 2018.4 (for example Unity 2018.4.26f1)</span></span>
+<span data-ttu-id="86bbe-122">Unity 2018.4(예: Unity 2018.4.26f1)를 통해 H:\mrtk.dev 있는 프로젝트에서 테스트를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-122">Run the tests on the project located at H:\mrtk.dev, with Unity 2018.4 (for example Unity 2018.4.26f1)</span></span>
 
 ```ps
 .\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
 ```
 
-<span data-ttu-id="e4892-123">Unity 2018.4를 사용하여 H:\mrtk.dev 있는 프로젝트에서 테스트를 실행하여 결과를 C:\playmode_test_out</span><span class="sxs-lookup"><span data-stu-id="e4892-123">Run the tests on the project located at H:\mrtk.dev, with Unity 2018.4, output results to C:\playmode_test_out</span></span>
+<span data-ttu-id="86bbe-123">Unity 2018.4를 사용하여 H:\mrtk.dev 있는 프로젝트에서 테스트를 실행하여 결과를 C:\playmode_test_out</span><span class="sxs-lookup"><span data-stu-id="86bbe-123">Run the tests on the project located at H:\mrtk.dev, with Unity 2018.4, output results to C:\playmode_test_out</span></span>
 
 ```ps
 .\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
 ```
 
-<span data-ttu-id="e4892-124">스크립트를 통해 playmode 테스트를 여러 번 실행할 수도 `run_repeat_tests.ps1` 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-124">It's also possible to run the playmode tests multiple times via the `run_repeat_tests.ps1` script.</span></span> <span data-ttu-id="e4892-125">에 사용되는 모든 매개 `run_playmode_tests.ps1` 변수를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-125">All parameters used in `run_playmode_tests.ps1` may be used.</span></span>
+<span data-ttu-id="86bbe-124">스크립트를 통해 playmode 테스트를 여러 번 실행할 수도 `run_repeat_tests.ps1` 있습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-124">It's also possible to run the playmode tests multiple times via the `run_repeat_tests.ps1` script.</span></span> <span data-ttu-id="86bbe-125">에 사용되는 모든 매개 `run_playmode_tests.ps1` 변수를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-125">All parameters used in `run_playmode_tests.ps1` may be used.</span></span>
 
 ```ps
 .\run_repeat_tests.ps1 -Times 5
 ```
 
-### <a name="pull-request-validation"></a><span data-ttu-id="e4892-126">끌어오기 요청 유효성 검사</span><span class="sxs-lookup"><span data-stu-id="e4892-126">Pull request validation</span></span>
+### <a name="pull-request-validation"></a><span data-ttu-id="86bbe-126">끌어오기 요청 유효성 검사</span><span class="sxs-lookup"><span data-stu-id="86bbe-126">Pull request validation</span></span>
 
-<span data-ttu-id="e4892-127">MRTK의 CI는 모든 구성에서 MRTK를 빌드하고 모든 편집 및 재생 모드 테스트를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-127">MRTK's CI will build MRTK in all configurations and run all edit and play mode tests.</span></span> <span data-ttu-id="e4892-128">사용자에게 충분한 권한이 있는 경우 Github PR에 주석을 게시하여 CI를 트리거할 수 `/azp run mrtk_pr` 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-128">CI can be triggered by posting a comment on the github PR `/azp run mrtk_pr` if the user has sufficient rights.</span></span> <span data-ttu-id="e4892-129">CI 실행은 PR의 '검사' 탭에서 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-129">CI runs can be seen in the 'checks' tab of the PR.</span></span>
+<span data-ttu-id="86bbe-127">MRTK의 CI는 모든 구성에서 MRTK를 빌드하고 모든 편집 및 재생 모드 테스트를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-127">MRTK's CI will build MRTK in all configurations and run all edit and play mode tests.</span></span> <span data-ttu-id="86bbe-128">사용자에게 충분한 권한이 있는 경우 Github PR에 주석을 게시하여 CI를 트리거할 수 `/azp run mrtk_pr` 있습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-128">CI can be triggered by posting a comment on the github PR `/azp run mrtk_pr` if the user has sufficient rights.</span></span> <span data-ttu-id="86bbe-129">CI 실행은 PR의 '검사' 탭에서 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-129">CI runs can be seen in the 'checks' tab of the PR.</span></span>
 
-<span data-ttu-id="e4892-130">모든 테스트가 성공적으로 통과된 후에만 PR을 main에 병합할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-130">Only after all of the tests have passed successfully can the PR be merged into main.</span></span>
+<span data-ttu-id="86bbe-130">모든 테스트가 성공적으로 통과된 후에만 PR을 main에 병합할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-130">Only after all of the tests have passed successfully can the PR be merged into main.</span></span>
 
-### <a name="stress-tests--bulk-tests"></a><span data-ttu-id="e4892-131">스트레스 테스트/대량 테스트</span><span class="sxs-lookup"><span data-stu-id="e4892-131">Stress tests / bulk tests</span></span>
+### <a name="stress-tests--bulk-tests"></a><span data-ttu-id="86bbe-131">스트레스 테스트/대량 테스트</span><span class="sxs-lookup"><span data-stu-id="86bbe-131">Stress tests / bulk tests</span></span>
 
-<span data-ttu-id="e4892-132">경우에 따라 테스트가 가끔씩만 실패하여 디버그하는 것이 어려울 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-132">Sometimes tests will only fail occasionally which can be frustrating to debug.</span></span>
+<span data-ttu-id="86bbe-132">경우에 따라 테스트가 가끔씩만 실패하여 디버그하는 것이 어려울 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-132">Sometimes tests will only fail occasionally which can be frustrating to debug.</span></span>
 
-<span data-ttu-id="e4892-133">여러 테스트를 로컬로 실행하려면 테스트 스크립트에 따라 를 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-133">To have multiple test runs locally, modify the according test scripts.</span></span> <span data-ttu-id="e4892-134">다음 Python 스크립트를 통해 이 시나리오를 더 편리하게 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-134">The following python script should make this scenario more convenient.</span></span>
+<span data-ttu-id="86bbe-133">여러 테스트를 로컬로 실행하려면 테스트 스크립트에 따라 를 수정합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-133">To have multiple test runs locally, modify the according test scripts.</span></span> <span data-ttu-id="86bbe-134">다음 Python 스크립트를 통해 이 시나리오를 더 편리하게 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-134">The following python script should make this scenario more convenient.</span></span>
 
-<span data-ttu-id="e4892-135">Python 스크립트를 실행하기 위한 필수 구성 요소에는 [Python 3.X가 설치되어 있습니다.](https://www.python.org/downloads/)</span><span class="sxs-lookup"><span data-stu-id="e4892-135">Prerequisite for running the python script is having [Python 3.X installed](https://www.python.org/downloads/).</span></span>
+<span data-ttu-id="86bbe-135">Python 스크립트를 실행하기 위한 필수 구성 요소에는 [Python 3.X가 설치되어 있습니다.](https://www.python.org/downloads/)</span><span class="sxs-lookup"><span data-stu-id="86bbe-135">Prerequisite for running the python script is having [Python 3.X installed](https://www.python.org/downloads/).</span></span>
 
-<span data-ttu-id="e4892-136">여러 번 실행해야 하는 단일 테스트의 경우:</span><span class="sxs-lookup"><span data-stu-id="e4892-136">For a single test that needs to be executed multiple times:</span></span>
+<span data-ttu-id="86bbe-136">여러 번 실행해야 하는 단일 테스트의 경우:</span><span class="sxs-lookup"><span data-stu-id="86bbe-136">For a single test that needs to be executed multiple times:</span></span>
 
 ```c#
 [UnityTest]
 public IEnumerator MyTest() {...}
 ```
 
-<span data-ttu-id="e4892-137">명령줄에서 다음을[실행합니다(PowerShell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6#powershell-core) 권장).</span><span class="sxs-lookup"><span data-stu-id="e4892-137">Run the following from a command line ([PowerShell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6#powershell-core) is recommended)</span></span>
+<span data-ttu-id="86bbe-137">명령줄에서 다음을[실행합니다(PowerShell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6#powershell-core) 권장).</span><span class="sxs-lookup"><span data-stu-id="86bbe-137">Run the following from a command line ([PowerShell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6#powershell-core) is recommended)</span></span>
 
 ```powershell
 cd scripts\tests
@@ -85,7 +85,7 @@ cd scripts\tests
 python .\generate_repeat_tests.py -n 5 -t MyTest
 ```
 
-<span data-ttu-id="e4892-138">출력을 복사하여 테스트 파일에 붙여넣습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-138">Copy and paste the output into your test file.</span></span> <span data-ttu-id="e4892-139">다음 스크립트는 여러 테스트를 순서대로 실행하기 위한 것입니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-139">The following script is for running multiple tests in sequence:</span></span>
+<span data-ttu-id="86bbe-138">출력을 복사하여 테스트 파일에 붙여넣습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-138">Copy and paste the output into your test file.</span></span> <span data-ttu-id="86bbe-139">다음 스크립트는 여러 테스트를 순서대로 실행하기 위한 것입니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-139">The following script is for running multiple tests in sequence:</span></span>
 
 ```powershell
 cd scripts\tests
@@ -93,7 +93,7 @@ cd scripts\tests
 python .\generate_repeat_tests.py -n 5 -t MyTest MySecondTest
 ```
 
-<span data-ttu-id="e4892-140">이제 새 테스트 파일에 포함해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-140">The new test file should now contain</span></span>
+<span data-ttu-id="86bbe-140">이제 새 테스트 파일에 포함해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-140">The new test file should now contain</span></span>
 
 ```c#
 [UnityTest]
@@ -108,26 +108,26 @@ public IEnumerator A4MyTest0(){ yield return MyTest();}
 public IEnumerator MyTest() {...}
 ```
 
-<span data-ttu-id="e4892-141">Test Runner를 열고 이제 반복적으로 호출할 수 있는 새 테스트를 관찰합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-141">Open the test runner and observe the new tests that can now be called repeatedly.</span></span>
+<span data-ttu-id="86bbe-141">Test Runner를 열고 이제 반복적으로 호출할 수 있는 새 테스트를 관찰합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-141">Open the test runner and observe the new tests that can now be called repeatedly.</span></span>
 
-## <a name="writing-tests"></a><span data-ttu-id="e4892-142">테스트 작성</span><span class="sxs-lookup"><span data-stu-id="e4892-142">Writing tests</span></span>
+## <a name="writing-tests"></a><span data-ttu-id="86bbe-142">테스트 작성</span><span class="sxs-lookup"><span data-stu-id="86bbe-142">Writing tests</span></span>
 
-<span data-ttu-id="e4892-143">새 코드에 대해 추가할 수 있는 테스트에는 두 가지 유형이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-143">There are two types of tests that can be added for new code</span></span>
+<span data-ttu-id="86bbe-143">새 코드에 대해 추가할 수 있는 테스트에는 두 가지 유형이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-143">There are two types of tests that can be added for new code</span></span>
 
-* <span data-ttu-id="e4892-144">재생 모드 테스트</span><span class="sxs-lookup"><span data-stu-id="e4892-144">Play mode tests</span></span>
-* <span data-ttu-id="e4892-145">모드 테스트 편집</span><span class="sxs-lookup"><span data-stu-id="e4892-145">Edit mode tests</span></span>
+* <span data-ttu-id="86bbe-144">재생 모드 테스트</span><span class="sxs-lookup"><span data-stu-id="86bbe-144">Play mode tests</span></span>
+* <span data-ttu-id="86bbe-145">모드 테스트 편집</span><span class="sxs-lookup"><span data-stu-id="86bbe-145">Edit mode tests</span></span>
 
-### <a name="play-mode-tests"></a><span data-ttu-id="e4892-146">재생 모드 테스트</span><span class="sxs-lookup"><span data-stu-id="e4892-146">Play mode tests</span></span>
+### <a name="play-mode-tests"></a><span data-ttu-id="86bbe-146">재생 모드 테스트</span><span class="sxs-lookup"><span data-stu-id="86bbe-146">Play mode tests</span></span>
 
-<span data-ttu-id="e4892-147">MRTK 재생 모드 테스트에는 새 기능이 손이나 눈과 같은 다양한 입력 소스에 응답하는 방법을 테스트하는 기능이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-147">MRTK play mode tests have the ability to test how your new feature responds to different input sources such as hands or eyes.</span></span>
+<span data-ttu-id="86bbe-147">MRTK 재생 모드 테스트에는 새 기능이 손이나 눈과 같은 다양한 입력 소스에 응답하는 방법을 테스트하는 기능이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-147">MRTK play mode tests have the ability to test how your new feature responds to different input sources such as hands or eyes.</span></span>
 
-<span data-ttu-id="e4892-148">새 재생 모드 테스트는 [BasePlayModeTests를](xref:Microsoft.MixedReality.Toolkit.Tests) 상속하거나 아래의 기본을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-148">New play mode tests can inherit [BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests) or the skeleton below can be used.</span></span>
+<span data-ttu-id="86bbe-148">새 재생 모드 테스트는 [BasePlayModeTests를](xref:Microsoft.MixedReality.Toolkit.Tests) 상속하거나 아래의 기본을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-148">New play mode tests can inherit [BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests) or the skeleton below can be used.</span></span>
 
-<span data-ttu-id="e4892-149">새 재생 모드 테스트를 만들려면 다음을 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-149">To create a new play mode test:</span></span>
+<span data-ttu-id="86bbe-149">새 재생 모드 테스트를 만들려면 다음을 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-149">To create a new play mode test:</span></span>
 
-* <span data-ttu-id="e4892-150">자산 > MRTK > 테스트 > PlayModeTests로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-150">Navigate to Assets > MRTK > Tests > PlayModeTests</span></span>
-* <span data-ttu-id="e4892-151">마우스 오른쪽 단추로 클릭하고 > 테스트 > C# 테스트 스크립트 만들기</span><span class="sxs-lookup"><span data-stu-id="e4892-151">Right click, Create > Testing > C# Test Script</span></span>
-* <span data-ttu-id="e4892-152">기본 템플릿을 아래 구조로 바꾸기</span><span class="sxs-lookup"><span data-stu-id="e4892-152">Replace the default template with the skeleton below</span></span>
+* <span data-ttu-id="86bbe-150">자산 > MRTK > 테스트 > PlayModeTests로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-150">Navigate to Assets > MRTK > Tests > PlayModeTests</span></span>
+* <span data-ttu-id="86bbe-151">마우스 오른쪽 단추로 클릭하고 > 테스트 > C# 테스트 스크립트 만들기</span><span class="sxs-lookup"><span data-stu-id="86bbe-151">Right click, Create > Testing > C# Test Script</span></span>
+* <span data-ttu-id="86bbe-152">기본 템플릿을 아래 구조로 바꾸기</span><span class="sxs-lookup"><span data-stu-id="86bbe-152">Replace the default template with the skeleton below</span></span>
 
 ```c#
 #if !WINDOWS_UWP
@@ -219,10 +219,10 @@ namespace Microsoft.MixedReality.Toolkit.Tests
 #endif
 ```
 
-### <a name="edit-mode-tests"></a><span data-ttu-id="e4892-153">모드 테스트 편집</span><span class="sxs-lookup"><span data-stu-id="e4892-153">Edit mode tests</span></span>
+### <a name="edit-mode-tests"></a><span data-ttu-id="86bbe-153">모드 테스트 편집</span><span class="sxs-lookup"><span data-stu-id="86bbe-153">Edit mode tests</span></span>
 
-<span data-ttu-id="e4892-154">편집 모드 테스트는 Unity의 편집 모드에서 실행되며 Mixed Reality Toolkit 리포지션의 **MRTK**  >  **테스트**  >  **EditModeTests** 폴더 아래에 추가할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-154">Edit mode tests are executed in Unity's edit mode and can be added under the **MRTK** > **Tests** > **EditModeTests** folder in the Mixed Reality Toolkit repo.</span></span>
-<span data-ttu-id="e4892-155">새 테스트를 만들려면 다음 템플릿을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-155">To create a new test the following template can be used:</span></span>
+<span data-ttu-id="86bbe-154">편집 모드 테스트는 Unity의 편집 모드에서 실행되며 Mixed Reality Toolkit 리포지온의 **MRTK**  >  **테스트**  >  **EditModeTests** 폴더 아래에 추가할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-154">Edit mode tests are executed in Unity's edit mode and can be added under the **MRTK** > **Tests** > **EditModeTests** folder in the Mixed Reality Toolkit repo.</span></span>
+<span data-ttu-id="86bbe-155">새 테스트를 만들려면 다음 템플릿을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-155">To create a new test the following template can be used:</span></span>
 
 ```c#
 // Copyright (c) Microsoft Corporation.
@@ -244,10 +244,10 @@ namespace Microsoft.MixedReality.Toolkit.Tests
 }
 ```
 
-### <a name="test-naming-conventions"></a><span data-ttu-id="e4892-156">테스트 명명 규칙</span><span class="sxs-lookup"><span data-stu-id="e4892-156">Test naming conventions</span></span>
+### <a name="test-naming-conventions"></a><span data-ttu-id="86bbe-156">테스트 명명 규칙</span><span class="sxs-lookup"><span data-stu-id="86bbe-156">Test naming conventions</span></span>
 
-<span data-ttu-id="e4892-157">테스트는 일반적으로 테스트하는 클래스 또는 테스트 중인 시나리오에 따라 이름을 지정해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-157">Tests should generally be named based on the class they are testing, or the scenario that they are testing.</span></span>
-<span data-ttu-id="e4892-158">예를 들어 테스트할 클래스를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-158">For example, given a to-be-tested class:</span></span>
+<span data-ttu-id="86bbe-157">테스트는 일반적으로 테스트하는 클래스 또는 테스트 중인 시나리오에 따라 이름을 지정해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-157">Tests should generally be named based on the class they are testing, or the scenario that they are testing.</span></span>
+<span data-ttu-id="86bbe-158">예를 들어 테스트할 클래스를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-158">For example, given a to-be-tested class:</span></span>
 
 ```c#
 namespace Microsoft.MixedReality.Toolkit.Input
@@ -258,7 +258,7 @@ namespace Microsoft.MixedReality.Toolkit.Input
 }
 ```
 
-<span data-ttu-id="e4892-159">테스트 이름을 지정하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-159">Consider naming the test</span></span>
+<span data-ttu-id="86bbe-159">테스트 이름을 지정하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-159">Consider naming the test</span></span>
 
 ```c#
 namespace Microsoft.MixedReality.Toolkit.Tests.Input
@@ -269,36 +269,36 @@ namespace Microsoft.MixedReality.Toolkit.Tests.Input
 }
 ```
 
-<span data-ttu-id="e4892-160">테스트가 아닌 해당 파일과 유사한 폴더 계층 구조에 테스트를 배치하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-160">Consider placing the test in a folder hierarchy that is similar to its corresponding non-test file.</span></span>
-<span data-ttu-id="e4892-161">예를 들어:</span><span class="sxs-lookup"><span data-stu-id="e4892-161">For example:</span></span>
+<span data-ttu-id="86bbe-160">테스트가 아닌 해당 파일과 유사한 폴더 계층 구조에 테스트를 배치하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-160">Consider placing the test in a folder hierarchy that is similar to its corresponding non-test file.</span></span>
+<span data-ttu-id="86bbe-161">예를 들어:</span><span class="sxs-lookup"><span data-stu-id="86bbe-161">For example:</span></span>
 
 ```md
 Non-Test: Assets/MRTK/Core/Utilities/InterestingUtilityClass.cs
 Test: Assets/MRTK/Tests/EditModeTests/Core/Utilities/InterestingUtilityClassTest.cs
 ```
 
-<span data-ttu-id="e4892-162">이는 이러한 테스트 클래스가 있는 경우 각 클래스의 해당 테스트 클래스를 찾는 명확한 방법이 있는지 확인하기 위한 것입니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-162">This is to ensure that there's a clear an obvious way of finding each class's corresponding test class, if such a test class exists.</span></span>
+<span data-ttu-id="86bbe-162">이는 이러한 테스트 클래스가 있는 경우 각 클래스의 해당 테스트 클래스를 찾는 명확한 방법이 있는지 확인하기 위한 것입니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-162">This is to ensure that there's a clear an obvious way of finding each class's corresponding test class, if such a test class exists.</span></span>
 
-<span data-ttu-id="e4892-163">시나리오 기반 테스트 배치는 덜 정의됩니다. 예를 들어 테스트가 전체 입력 시스템을 연습하는 경우 해당 편집 모드 또는 재생 모드 테스트 폴더의 "InputSystem" 폴더에 배치하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-163">Placement of scenario based tests is less defined - if the test exercises the overall input system, for example, consider putting it into an "InputSystem" folder in the corresponding edit mode or play mode test folder.</span></span>
+<span data-ttu-id="86bbe-163">시나리오 기반 테스트 배치는 덜 정의됩니다. 예를 들어 테스트가 전체 입력 시스템을 연습하는 경우 해당 편집 모드 또는 재생 모드 테스트 폴더의 "InputSystem" 폴더에 배치하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-163">Placement of scenario based tests is less defined - if the test exercises the overall input system, for example, consider putting it into an "InputSystem" folder in the corresponding edit mode or play mode test folder.</span></span>
 
-### <a name="test-script-icons"></a><span data-ttu-id="e4892-164">테스트 스크립트 아이콘</span><span class="sxs-lookup"><span data-stu-id="e4892-164">Test script icons</span></span>
+### <a name="test-script-icons"></a><span data-ttu-id="86bbe-164">테스트 스크립트 아이콘</span><span class="sxs-lookup"><span data-stu-id="86bbe-164">Test script icons</span></span>
 
-<span data-ttu-id="e4892-165">새 테스트를 추가할 때 올바른 MRTK 아이콘을 갖도록 스크립트를 수정하세요.</span><span class="sxs-lookup"><span data-stu-id="e4892-165">When adding a new test, please modify the script to have the correct MRTK icon.</span></span> <span data-ttu-id="e4892-166">이렇게 하기 쉬운 MRTK 도구가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-166">There's an easy MRTK tool to do so:</span></span>
+<span data-ttu-id="86bbe-165">새 테스트를 추가할 때 올바른 MRTK 아이콘을 갖도록 스크립트를 수정하세요.</span><span class="sxs-lookup"><span data-stu-id="86bbe-165">When adding a new test, please modify the script to have the correct MRTK icon.</span></span> <span data-ttu-id="86bbe-166">이렇게 하기 쉬운 MRTK 도구가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-166">There's an easy MRTK tool to do so:</span></span>
 
-1. <span data-ttu-id="e4892-167">Mixed Reality 도구 키트 메뉴 항목으로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-167">Go go the Mixed Reality Toolkit menu item</span></span>
-1. <span data-ttu-id="e4892-168">유틸리티, 업데이트, 아이콘을 차례로 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-168">Click on Utilities, then Update, then Icons</span></span>
-1. <span data-ttu-id="e4892-169">테스트를 클릭하면 업데이트가 자동으로 실행되어 아이콘이 누락된 테스트 스크립트가 업데이트됩니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-169">Click on Tests, and the updater will run automatically, updating any test scripts missing their icons</span></span>
+1. <span data-ttu-id="86bbe-167">Mixed Reality Toolkit 메뉴 항목으로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-167">Go go the Mixed Reality Toolkit menu item</span></span>
+1. <span data-ttu-id="86bbe-168">유틸리티, 업데이트, 아이콘을 차례로 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-168">Click on Utilities, then Update, then Icons</span></span>
+1. <span data-ttu-id="86bbe-169">테스트를 클릭하면 업데이트가 자동으로 실행되어 아이콘이 누락된 테스트 스크립트가 업데이트됩니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-169">Click on Tests, and the updater will run automatically, updating any test scripts missing their icons</span></span>
 
-### <a name="mrtk-utility-methods"></a><span data-ttu-id="e4892-170">MRTK 유틸리티 메서드</span><span class="sxs-lookup"><span data-stu-id="e4892-170">MRTK Utility methods</span></span>
+### <a name="mrtk-utility-methods"></a><span data-ttu-id="86bbe-170">MRTK 유틸리티 메서드</span><span class="sxs-lookup"><span data-stu-id="86bbe-170">MRTK Utility methods</span></span>
 
-<span data-ttu-id="e4892-171">이 섹션에서는 MRTK에 대한 테스트를 작성할 때 일반적으로 사용되는 코드 조각/메서드 중 일부를 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-171">This section shows some of the commonly used code snippets / methods when writing tests for MRTK.</span></span>
+<span data-ttu-id="86bbe-171">이 섹션에서는 MRTK에 대한 테스트를 작성할 때 일반적으로 사용되는 코드 조각/메서드 중 일부를 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-171">This section shows some of the commonly used code snippets / methods when writing tests for MRTK.</span></span>
 
-<span data-ttu-id="e4892-172">MRTK를 설정하고 MRTK의 구성 요소와의 상호 작용을 테스트하는 데 도움이 되는 두 가지 유틸리티 클래스가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-172">There are two Utility classes that help with setting up MRTK and testing interactions with components in MRTK</span></span>
+<span data-ttu-id="86bbe-172">MRTK를 설정하고 MRTK의 구성 요소와의 상호 작용을 테스트하는 데 도움이 되는 두 가지 유틸리티 클래스가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-172">There are two Utility classes that help with setting up MRTK and testing interactions with components in MRTK</span></span>
 
 * [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities)
 * [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities)
 
-<span data-ttu-id="e4892-173">TestUtilities는 MRTK 장면 및 GameObjects를 설정하는 다음 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="e4892-173">TestUtilities provide the following methods to set up your MRTK scene and GameObjects:</span></span>
+<span data-ttu-id="86bbe-173">TestUtilities는 MRTK 장면 및 GameObjects를 설정하는 다음 메서드를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="86bbe-173">TestUtilities provide the following methods to set up your MRTK scene and GameObjects:</span></span>
 
 ```c#
 /// creates the mrtk GameObject and sets the default profile if passed param is true
@@ -314,4 +314,4 @@ TestUtilities.InitializePlayspace();
 TestUtilities.ShutdownMixedRealityToolkit();
 ```
 
-<span data-ttu-id="e4892-174">[`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) 새 테스트가 MRTK에 추가된 동안 정기적으로 확장됨에 따라 이러한 유틸리티 클래스의 추가 메서드는 및 의 API 문서를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="e4892-174">Please refer to the API docs of [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) and [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) for further methods of these util classes as they're extended on a regular basis while new tests get added to MRTK.</span></span>
+<span data-ttu-id="86bbe-174">[`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) 새 테스트가 MRTK에 추가된 동안 정기적으로 확장됨에 따라 이러한 유틸리티 클래스의 추가 메서드는 및 의 API 문서를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="86bbe-174">Please refer to the API docs of [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) and [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) for further methods of these util classes as they're extended on a regular basis while new tests get added to MRTK.</span></span>
