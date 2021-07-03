@@ -7,12 +7,12 @@ ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 상호 작용, 디자인, HoloLens, 손, 원거리, 가리키고 커밋, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 손 광선, 개체 조작, MRTK, Mixed Reality Toolkit, DoF
-ms.openlocfilehash: 78a3ff87a48bbff838df4ee8baab7f8ea80203c0
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: a33927396d0d9a349d655245355733d24ea7d9ad
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299808"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600612"
 ---
 # <a name="point-and-commit-with-hands"></a>손으로 가리키고 커밋
 
@@ -32,7 +32,7 @@ ms.locfileid: "107299808"
 <tr>
      <td><strong>입력 모델</strong></td>
      <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+     <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
 </tr>
 <tr>
@@ -204,9 +204,9 @@ Mixed Reality 포털(MRP)에 원거리 상호 작용을 위한 가리키고 커�
 
 기본적으로 MRTK는 셸의 시스템 손 광선과 동일한 시각적 상태의 손 광선 prefab([DefaultControllerPointer. prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers))를 제공합니다. MRTK 입력 프로필의 포인터 아래에 할당됩니다. 몰입형 헤드셋에서 동일한 광선이 모션 컨트롤러에 사용됩니다.
 
-* [MRTK - 포인터 프로필](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
-* [MRTK - 입력 시스템](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview)
-* [MRTK - 포인터](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/pointers)
+* [MRTK - 포인터 프로필](/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
+* [MRTK - 입력 시스템](/windows/mixed-reality/mrtk-unity/features/input/overview)
+* [MRTK - 포인터](/windows/mixed-reality/mrtk-unity/features/input/pointers)
 
 ---
 

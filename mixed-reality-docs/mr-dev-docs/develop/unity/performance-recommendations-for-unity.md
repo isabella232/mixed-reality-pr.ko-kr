@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: 그래픽, CPU, GPU, 렌더링, 가비지 컬렉션, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 2ff766c3fb2c9f8a91c3c8cc81bb21adae9956e8
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 7d672af0c9309e4dd2965cc3cb315671a720a58a
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300158"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743435"
 ---
 # <a name="performance-recommendations-for-unity"></a>Unity에 대한 성능 추천 사항
 
@@ -309,7 +309,7 @@ Unity의 모델에서 굽기 조명을 사용하는 것이 좋습니다.
 
 #### <a name="unity-standard-shader-alternatives"></a>Unity 표준 셰이더 대안
 
-PBR(물리적 기반 렌더링) 또는 다른 고품질 셰이더를 사용하는 대신, 성능이 더 뛰어나고 저렴한 셰이더를 활용하는 방법을 살펴봅니다. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)는 혼합 현실 프로젝트에 최적화된 [MRTK 표준 셰이더](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)를 제공합니다.
+PBR(물리적 기반 렌더링) 또는 다른 고품질 셰이더를 사용하는 대신, 성능이 더 뛰어나고 저렴한 셰이더를 활용하는 방법을 살펴봅니다. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)는 혼합 현실 프로젝트에 최적화된 [MRTK 표준 셰이더](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)를 제공합니다.
 
 또한 Unity는 Unity 표준 셰이더에 비해 더 빠른 unlit(꺼짐), vertex lit(꼭짓점 깜박임), diffuse(확산) 및 간소화된 다른 셰이더 옵션을 제공합니다. 자세한 내용은 [기본 제공 셰이더 사용 및 성능](https://docs.unity3d.com/Manual/shader-Performance.html)을 참조하세요.
 

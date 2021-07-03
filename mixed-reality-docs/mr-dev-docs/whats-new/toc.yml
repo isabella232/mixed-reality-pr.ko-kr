@@ -5,7 +5,7 @@
 - name: Azure 혼합 현실 클라우드 서비스에 대해 알아보기
   href: ../develop/mixed-reality-cloud-services.md
 - name: Unity에서 OpenXR 시작
-  href: ../develop/unity/openxr-getting-started.md
+  href: ../develop/unity/xr-project-setup.md
 - name: 새 HP Reverb G2 컨트롤러 사용
   items:
     - name: Unity

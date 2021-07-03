@@ -29,52 +29,43 @@ highlightedContent:
       url: wmr-health-safety-comfort.md
     - title: AltspaceVR 탐색
       itemType: whats-new
-      url: 'https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey?tabs=application'
-conceptualContent:
+      url: /windows/mixed-reality/altspace-vr/journey?tabs=application
+productDirectory:
   title: Windows Mixed Reality 시작
   summary: '혼합 현실 소프트웨어, 하드웨어 및 문제 해결에 대한 추가 정보를 확인하세요.'
   items:
     - title: 방법
+      imageSrc: images/WMR_Docs_Landing_How-To's.png
       links:
         - url: plug-in-your-headset.md
-          itemType: quickstart
           text: 헤드셋 연결
         - url: install-windows-mixed-reality.md
-          itemType: quickstart
           text: Windows Mixed Reality 소프트웨어 설치
         - url: learn-mixed-reality.md
-          itemType: quickstart
           text: 학습 환경 실행
         - url: using-games-and-apps-in-windows-mixed-reality.md
-          itemType: quickstart
           text: 게임 및 앱 사용
     - title: 참조
+      imageSrc: images/WMR_Docs_Landing_References.png
       links:
         - url: your-mixed-reality-home.md
-          itemType: concept
           text: 혼합 현실 홈
         - url: controllers-in-wmr.md
-          itemType: concept
           text: Windows Mixed Reality의 모션 컨트롤러
         - url: using-steamvr-with-windows-mixed-reality.md
-          itemType: concept
           text: Windows Mixed Reality를 지원하는 SteamVR
         - url: using-speech-in-wmr.md
-          itemType: concept
           text: Windows Mixed Reality의 음성
     - title: 문제 해결
+      imageSrc: images/WMR_Docs_Landing_TroubleShooting.png
       links:
         - url: troubleshooting-windows-mixed-reality.md
-          itemType: concept
           text: 지원 및 도움말 옵션
         - url: filing-feedback.md
-          itemType: concept
           text: 버그 및 피드백 신고
         - url: error-codes.md
-          itemType: concept
           text: 오류 코드
         - url: installation_errors.md
-          itemType: concept
           text: 설치 오류
 additionalContent:
   sections:

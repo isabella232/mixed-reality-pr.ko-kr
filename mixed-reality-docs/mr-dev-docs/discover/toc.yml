@@ -8,29 +8,29 @@
   href: mr-learning-overview.md
 - name: 디자인 프로세스 확장
   href: case-study-expanding-the-design-process-for-mixed-reality.md
-- name: MRTK 예제 허브 실행
-  href: 'https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/running-examples-hub'
 - name: 홀로그램 디자인
   href: designing-holograms.md
 - name: 사례 연구 개요
   href: case-studies-overview.md
-- name: HoloLens 하드웨어
+- name: 하드웨어
   items:
-    - name: HoloLens 2 하드웨어 세부 정보
-      href: /hololens/hololens2-hardware
-    - name: HoloLens(1세대) 하드웨어 세부 정보
-      href: /hololens/hololens1-hardware
-- name: 몰입형 헤드셋
-  items:
-    - name: 몰입형 헤드셋 하드웨어 세부 정보
-      href: immersive-headset-hardware-details.md
-    - name: Windows Mixed Reality 홈 탐색
-      href: navigating-the-windows-mixed-reality-home.md
-    - name: VR 마니아 가이드
-      href: /windows/mixed-reality/enthusiast-guide/
-    - name: 위치 기반 엔터테인먼트
-      href: location-based-experiences.md
+    - name: HoloLens
+      items:
+        - name: HoloLens 2 하드웨어 세부 정보
+          href: /hololens/hololens2-hardware
+        - name: HoloLens(1세대) 하드웨어 세부 정보
+          href: /hololens/hololens1-hardware
+    - name: 몰입형 헤드셋
+      items:
+        - name: 몰입형 헤드셋 하드웨어 세부 정보
+          href: immersive-headset-hardware-details.md
+        - name: Windows Mixed Reality 홈 탐색
+          href: navigating-the-windows-mixed-reality-home.md
+        - name: VR 마니아 가이드
+          href: /windows/mixed-reality/enthusiast-guide/
+        - name: 위치 기반 엔터테인먼트
+          href: location-based-experiences.md
+    - name: Accessories
+      href: hardware-accessories.md
 - name: 커뮤니티 리소스
   href: community.md
-- name: 하드웨어 액세서리
-  href: hardware-accessories.md
