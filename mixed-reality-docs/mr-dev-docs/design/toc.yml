@@ -141,7 +141,7 @@
     - name: Unity 배우기
       href: 'https://learn.unity.com/'
     - name: Mixed Reality Toolkit
-      href: 'https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/'
+      href: /windows/mixed-reality/mrtk-unity/
     - name: 혼합 현실 디자인 랩
       href: 'https://github.com/microsoft/MixedRealityDesignLabs_Unity'
     - name: Microsoft Maquette

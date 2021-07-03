@@ -1,0 +1,29 @@
+---
+ms.openlocfilehash: d12ef1cdf1d61ff362faa3fde09ba30674374d55
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175438"
+---
+# <a name="unity-2020--openxr"></a>[<span data-ttu-id="f89e4-101">Unity 2020 + OpenXR</span><span class="sxs-lookup"><span data-stu-id="f89e4-101">Unity 2020 + OpenXR</span></span>](#tab/openxr)
+
+<span data-ttu-id="f89e4-102">[MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.1/MRTK.Tutorials.PCHolographicRemoting.OpenXR.unitypackage)를 다운로드하고 **가져옵니다**.</span><span class="sxs-lookup"><span data-stu-id="f89e4-102">Download and **import** the [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.1/MRTK.Tutorials.PCHolographicRemoting.OpenXR.unitypackage).</span></span>
+
+> [!TIP]
+> <span data-ttu-id="f89e4-103">Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [Mixed Reality Toolkit 가져오기](../mr-learning-base-04.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f89e4-103">For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](../mr-learning-base-04.md#importing-the-tutorial-assets) instructions.</span></span>
+
+<span data-ttu-id="f89e4-104">자습서 자산을 가져오면 [프로젝트] 창이 다음과 비슷하게 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="f89e4-104">After importing the tutorial assets, your Project window should look similar to this:</span></span>
+
+![자습서 자산을 가져온 후의 Unity 계층 구조, 장면 및 프로젝트 창](../images/mrlearning-pc-holographic-remoting/Tutorial1-Section2-Step1-1.png)
+
+# <a name="legacy-wsa"></a>[<span data-ttu-id="f89e4-106">레거시 WSA</span><span class="sxs-lookup"><span data-stu-id="f89e4-106">Legacy WSA</span></span>](#tab/wsa)
+
+<span data-ttu-id="f89e4-107">[MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.1/MRTK.Tutorials.PCHolographicRemoting.LegacyWSA.unitypackage)를 다운로드하고 **가져옵니다**.</span><span class="sxs-lookup"><span data-stu-id="f89e4-107">Download and **import** the [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.1/MRTK.Tutorials.PCHolographicRemoting.LegacyWSA.unitypackage).</span></span>
+
+> [!TIP]
+> <span data-ttu-id="f89e4-108">Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [Mixed Reality Toolkit 가져오기](../mr-learning-base-04.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="f89e4-108">For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](../mr-learning-base-04.md#importing-the-tutorial-assets) instructions.</span></span>
+
+<span data-ttu-id="f89e4-109">자습서 자산을 가져오면 [프로젝트] 창이 다음과 비슷하게 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="f89e4-109">After importing the tutorial assets, your Project window should look similar to this:</span></span>
+
+![자습서 자산을 가져온 후의 Unity 계층 구조, 장면 및 프로젝트 창](../images/mrlearning-pc-holographic-remoting/Tutorial1-Section2-Step1-1.png)
