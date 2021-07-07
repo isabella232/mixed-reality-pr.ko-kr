@@ -6,6 +6,8 @@
   href: diagnostics/toc.yml
 - name: 예제 장면
   href: example-scenes/toc.yml
+- name: 환경 설정
+  href: experience-settings/toc.yml
 - name: 실험적
   href: experimental/toc.yml
 - name: 확장

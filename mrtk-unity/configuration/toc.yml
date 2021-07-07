@@ -2,7 +2,7 @@
   href: usingupm.md
 - name: MRTK 구성 대화 상자
   href: mrtk-configuration-dialog.md
-- name: MRTK 및 XRSDK 시작
+- name: MRTK 및 XR SDK 시작
   href: getting-started-with-mrtk-and-xrsdk.md
-- name: Mixed Reality 구성 가이드
+- name: MRTK 프로필 구성 가이드
   href: mixed-reality-configuration-guide.md

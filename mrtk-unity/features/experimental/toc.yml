@@ -1,7 +1,7 @@
 - name: Dock
   href: dock.md
-- name: 직접 물리학 서비스
-  href: hand-physics-service.md
+- name: 탄력적 시스템
+  href: elastic-system.md
 - name: 대화형 요소
   href: interactive-element.md
 - name: Mixed Reality 키보드

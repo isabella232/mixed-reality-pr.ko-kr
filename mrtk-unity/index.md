@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: cef4bcf671caaaf8d5cb7cdc639446c6c6e91fa0
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: cf2aa536087af659abe7d124a4dd35ff0175de49
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109850439"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177364"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>Mixed Reality Toolkit이란 무엇인가요?
 
@@ -19,7 +19,7 @@ ms.locfileid: "109850439"
 
 <br>
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/qfONlUCSWdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyXHW]
 
 MRTK-Unity는 Unity에서 플랫폼 간 MR 앱 개발을 가속화하는 데 사용되는 구성 요소 및 기능 집합을 제공하는 Microsoft 기반 프로젝트입니다. 일부 기능은 다음과 같습니다.
 
@@ -28,18 +28,30 @@ MRTK-Unity는 Unity에서 플랫폼 간 MR 앱 개발을 가속화하는 데 사
 * **확장 가능한 프레임워크** 로서 작동해 개발자에게 핵심 구성 요소를 교환하는 기능을 제공합니다.
 * **다양한 플랫폼을 지원합니다**.
 
+::: moniker range=">= mrtkunity-2021-05"
 | 플랫폼 | 지원되는 디바이스 |
 |---|---|
-| OpenXR(Unity 2020.2 이상) | Microsoft HoloLens 2 <br> Windows Mixed Reality 헤드셋 |
+| OpenXR(Unity 2020.3.8+) | Microsoft HoloLens 2 <br> Windows Mixed Reality 헤드셋 |
 | Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality 헤드셋  |
 | Oculus(Unity 2019.3 이상) | Oculus Quest |
 | OpenVR |  Windows Mixed Reality 헤드셋 <br> HTC Vive <br> Oculus Rift |
 | Ultraleap Hand Tracking | Ultraleap Leap 모션 컨트롤러 |
 | 모바일 | iOS 및 Android |
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
+| 플랫폼 | 지원되는 디바이스 |
+|---|---|
+| OpenXR(MRTK 2.6, Unity 2020.3.8+에서 미리 보기) | Microsoft HoloLens 2 <br> Windows Mixed Reality 헤드셋 |
+| Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality 헤드셋  |
+| Oculus(Unity 2019.3 이상) | Oculus Quest |
+| OpenVR |  Windows Mixed Reality 헤드셋 <br> HTC Vive <br> Oculus Rift |
+| Ultraleap Hand Tracking | Ultraleap Leap 모션 컨트롤러 |
+| 모바일 | iOS 및 Android |
+::: moniker-end
 
 ## <a name="getting-started-with-mrtk"></a>MRTK 시작
 
-Unity에서 MRTK 또는 Mixed Reality 개발을 처음 사용하는 경우 디바이스 또는 에뮬레이터에 MRTK 예제 허브 샘플 애플리케이션을 설치하고 탐색하는 것이 좋습니다. 
+Unity에서 MRTK 또는 Mixed Reality 개발을 처음 사용하는 경우 디바이스 또는 [에뮬레이터](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)에 MRTK 예제 허브 샘플 애플리케이션을 설치하고 탐색하는 것이 좋습니다. 
 
 > [!div class="nextstepaction"]
 > [MRTK 예제 허브 앱 다운로드](running-examples-hub.md)
@@ -58,7 +70,7 @@ Mixed Reality 및 MRTK가 제공하는 기능을 파악했다면 필요한 도�
 
 ## <a name="documentation"></a>설명서
 
-| [![릴리스 정보](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-26-release-notes.md)<br/>[릴리스 정보](release-notes/mrtk-26-release-notes.md)| [![MRTK 개요](features/images/MRTK_Icon_ArchitectureOverview.png)](architecture/overview.md)<br/>[MRTK 개요](architecture/overview.md)|[![API 참조](features/images/MRTK_Icon_APIReference.png)](/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API 참조](/dotnet/api/Microsoft.MixedReality.Toolkit)|
+| [![릴리스 정보](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-27-release-notes.md)<br/>[릴리스 정보](release-notes/mrtk-26-release-notes.md)| [![MRTK 개요](features/images/MRTK_Icon_ArchitectureOverview.png)](architecture/overview.md)<br/>[MRTK 개요](architecture/overview.md)|[![API 참조](features/images/MRTK_Icon_APIReference.png)](/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API 참조](/dotnet/api/Microsoft.MixedReality.Toolkit)|
 |:---|:---|:---|
 
 ## <a name="build-status"></a>빌드 상태
@@ -252,7 +264,7 @@ Mixed Reality 및 MRTK가 제공하는 기능을 파악했다면 필요한 도�
 
 :::row:::
     :::column:::
-       [![직접 물리학 서비스](features/images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)](features/experimental/hand-physics-service.md) **[직접 물리학 서비스 [실험용]](features/experimental/hand-physics-service.md)**<br>
+       [![직접 물리학 서비스](features/images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)](features/extensions/hand-physics-service.md) **[직접 물리학 서비스 [실험용]](features/extensions/hand-physics-service.md)**<br>
         직접 물리학 서비스는 강체 충돌 이벤트 및 연결된 손과의 상호 작용을 지원합니다.
     :::column-end:::
     :::column:::
@@ -282,19 +294,19 @@ Mixed Reality 및 MRTK가 제공하는 기능을 파악했다면 필요한 도�
 
 ## <a name="tools"></a>도구
 
-|  [![최적화 창](features/images/MRTK_Icon_OptimizeWindow.png)](features/tools/optimize-window.md) [최적화 창](features/tools/optimize-window.md) | [![종속성 창](features/images/MRTK_Icon_DependencyWindow.png)](features/tools/dependency-window.md) [종속성 창](features/tools/dependency-window.md) | ![빌드 창](features/images/MRTK_Icon_BuildWindow.png) 빌드 창 | [![입력 기록](features/images/MRTK_Icon_InputRecording.png)](features/input-simulation/input-animation-recording.md) [입력 기록](features/input-simulation/input-animation-recording.md) |
+|  [![최적화 창](features/images/MRTK_Icon_OptimizeWindow.png)](features/tools/optimize-window.md) [최적화 창](features/tools/optimize-window.md) | [![종속성 창](features/images/MRTK_Icon_DependencyWindow.png)](features/tools/dependency-window.md) [종속성 창](features/tools/dependency-window.md) | [![빌드 창](features/images/MRTK_Icon_BuildWindow.png)](features/tools/build-window.md)[빌드 창](features/tools/build-window.md) | [![입력 기록](features/images/MRTK_Icon_InputRecording.png)](features/input-simulation/input-animation-recording.md) [입력 기록](features/input-simulation/input-animation-recording.md) |
 |:--- | :--- | :--- | :--- |
 | 성능 최적화를 위해 Mixed Reality 프로젝트의 구성 자동화 | 자산 간 종속성 분석 및 사용되지 않는 자산 식별 |  Mixed Reality 애플리케이션을 위한 엔드투엔드 빌드 프로세스 구성 및 실행 | 편집기에서 머리 이동 및 손 추적 데이터 기록 및 재생 |
 
 ## <a name="example-scenes"></a>예제 장면
 
-[이 예제 장면](features/example-scenes/hand-interaction-examples.md)에서 MRTK의 다양한 상호 작용 유형과 UI 컨트롤을 살펴봅니다.
+MRTK는 MRTK의 기능을 사용하는 방법을 보여주는 예제 장면을 제공합니다. 자산/MRTK/Examples/Demos 폴더에서 예제 장면을 찾을 수 있습니다. 예제 장면을 획득하고 실행하는 방법을 알아보려면 [예제 장면](running-example-scenes.md) 페이지를 읽어보세요. [손 상호 작용 예제 장면](features/example-scenes/hand-interaction-examples.md)은 상호 작용 및 UI를 위한 MRTK의 구성 요소를 경험할 수 있는 좋은 장소입니다.
 
 [![예제 장면 2](features/images/MRTK_Examples.png)](features/example-scenes/hand-interaction-examples.md)
 
 ## <a name="mrtk-examples-hub"></a>MRTK 예제 허브
 
-MRTK 예제 허브를 사용하여 MRTK에서 다양한 예제 장면을 사용해 볼 수 있습니다.
+MRTK 예제 허브를 사용하면 각 장면을 빌드하고 배포하지 않고도 MRTK에서 다양한 예제 장면을 시도할 수 있습니다.
 [MR Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)에서 "Mixed Reality Toolkit 예제" 패키지를 선택하여 HoloLens(x86), HoloLens 2(ARM) 및 Windows Mixed Reality 몰입형 헤드셋(x64)용으로 미리 작성된 앱 패키지를 다운로드할 수 있습니다. [Windows 장치 포털을 사용하여 HoloLens(1세대)에 앱을 설치](/hololens/hololens-install-apps#use-the-windows-device-portal-to-install-apps-on-hololens)해야 합니다. HoloLens 2에서 [Microsoft Store 앱을 통해 MRTK 예제 허브](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4)를 다운로드하고 설치할 수 있습니다.
 
 MRTK의 장면 시스템과 장면 전환 서비스를 사용하여 다중 장면 허브를 만드는 방법에 대한 자세한 내용은 [예제 허브 추가 정보 페이지](features/example-scenes/example-hub.md)를 참조하세요.

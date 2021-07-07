@@ -1,3 +1,5 @@
+- name: 작성자
+  href: authors.md
 - name: 기여 개요
   href: contributing.md
 - name: 코딩 지침
@@ -10,5 +12,5 @@
   href: pull-requests.md
 - name: 실험적 기능
   href: experimental-features.md
-- name: 주요 변경 내용
+- name: 호환성이 손상되는 변경
   href: breaking-changes.md

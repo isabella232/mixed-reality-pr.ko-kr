@@ -2,9 +2,9 @@
   href: eye-tracking-main.md
 - name: 기본 설정
   href: eye-tracking-basic-setup.md
-- name: 시선 공급자
+- name: 시선 응시 공급자
   href: eye-tracking-eye-gaze-provider.md
-- name: 눈과 손
+- name: 눈 및 손
   href: eye-tracking-eyes-and-hands.md
 - name: 눈 보정
   href: eye-tracking-is-user-calibrated.md
