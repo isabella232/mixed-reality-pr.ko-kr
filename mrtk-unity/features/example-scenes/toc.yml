@@ -1,8 +1,8 @@
-- name: 예제 Hub
+- name: 예제 허브
   href: example-hub.md
-- name: 직접 상호 작용 예제
+- name: 손 상호 작용 예제
   href: hand-interaction-examples.md
-- name: 손 조인트 체이서
+- name: 손 관절 체이서
   href: hand-joint-chaser.md
 - name: 시선 추적 예제 개요
   href: eye-tracking-examples-overview.md

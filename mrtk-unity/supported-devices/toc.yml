@@ -1,12 +1,12 @@
-- name: Hololens 및 WMR에 배포
+- name: HoloLens 및 WMR에 배포
   href: wmr-mrtk.md
 - name: Oculus Quest에 배포
   href: oculus-quest-mrtk.md
+- name: Android 및 iOS에 배포(AR Foundation)
+  href: using-ar-foundation.md
 - name: Leap Motion 사용
   href: leap-motion-mrtk.md
 - name: MRTK에서 컨트롤러 검색
   href: controllers-mrtk.md
-- name: AR Foundation 사용
-  href: using-ar-foundation.md
 - name: 플랫폼 기능 검색
   href: detecting-platform-capabilities.md

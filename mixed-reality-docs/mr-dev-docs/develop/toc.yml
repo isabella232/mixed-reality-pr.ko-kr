@@ -1,11 +1,15 @@
 - name: Mixed Reality 개발 소개
-  href: development.md
+  items:
+    - name: 시작
+      href: development.md
+    - name: 도구 설치
+      href: install-the-tools.md
+    - name: 엔진 선택
+      href: choosing-an-engine.md
 - name: Azure 혼합 현실 클라우드 서비스 개요
   href: mixed-reality-cloud-services.md
 - name: 샘플 및 기능 앱
   href: features-and-samples.md
-- name: 도구 설치
-  href: install-the-tools.md
 - name: 앱 포팅
   items:
     - name: 포팅 개요
@@ -170,14 +174,8 @@
       items:
         - name: Unity 버전 및 XR 플러그 인 선택
           href: unity/choosing-unity-version.md
-        - name: 레거시 기본 제공 XR 지원 사용
-          href: unity/legacy-xr-support.md
-        - name: Windows XR 플러그 인 사용
-          href: unity/windows-xr-plugin.md
-        - name: OpenXR 플러그 인 사용
-          href: unity/openxr-getting-started.md
-        - name: OpenXR 플러그 인 지원 기능
-          href: unity/openxr-supported-features.md
+        - name: XR 구성 설정
+          href: unity/xr-project-setup.md
         - name: Mixed Reality Feature Tool
           items:
             - name: MR Feature Tool을 시작합니다.
@@ -234,7 +232,7 @@
           href: unity/udp-packets-in-unity.md
         - name: HoloLens용 Unity 앱에서 Windows 네임스페이스 사용
           href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
-        - name: Mixed Reality 기본 개체
+        - name: Unity의 Mixed Reality 네이티브 interop
           href: unity/unity-xrdevice-advanced.md
         - name: Vuforia 사용
           href: unity/vuforia-development-overview.md
@@ -262,7 +260,7 @@
               href: unity/lunar-module.md
     - name: 디버깅 및 성능
       items:
-        - name: Unity IL2CPP를 사용하여 디버깅 관리
+        - name: Unity로 관리되는 디버깅
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Unity 권장 설정
           href: unity/recommended-settings-for-unity.md
@@ -274,12 +272,18 @@
           href: unity/exporting-and-building-a-unity-visual-studio-solution.md
         - name: Unity 및 Visual Studio 사용 모범 사례
           href: unity/best-practices-for-working-with-unity-and-visual-studio.md
+    - name: 릴리스 정보
+      items:
+        - name: Mixed Reality OpenXR 플러그 인
+          href: unity/openxr-release-notes.md
 - name: Unreal
   items:
     - name: Unreal 개발 개요
       href: unreal/unreal-development-overview.md
     - name: MRTK 소개
       href: unreal/unreal-mrtk-introduction.md
+    - name: 프로젝트 설정
+      href: unreal/unreal-project-setup.md
     - name: Unreal에서 프로젝트 업그레이드
       href: unreal/unreal-porting.md
     - name: 빠른 시작
@@ -361,12 +365,10 @@
 - name: JavaScript
   items:
     - name: JavaScript 개발 개요
-      href: javascript/javascript-development-overview.md
-    - name: WebXR
       href: javascript/webxr-overview.md
     - name: 자습서
       items:
-        - name: BabylonJS를 사용하는 Hello World
+        - name: BabylonJS를 사용하는 VR Hello World
           items:
             - name: 1. 소개
               href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
@@ -374,9 +376,9 @@
               href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
             - name: 3. 3D 개체와 상호 작용
               href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
-- name: 네이티브
+- name: 사용자 지정 엔진
   items:
-    - name: 네이티브 개발 개요
+    - name: 사용자 지정 엔진 개발 개요
       href: native/directx-development-overview.md
     - name: OpenXR
       items:
@@ -469,9 +471,9 @@
         - name: 홀로그램 원격 소프트웨어 사용 조건
           href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: HoloLens(1세대)의 홀로그램 원격
-          href: null
-        - name: 홀로그램 원격 접속 추가
-          href: platform-capabilities-and-apis/add-holographic-remoting.md
+          items:
+            - name: 홀로그램 원격 접속 추가
+              href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: 앱 품질 및 테스트
       items:
         - name: 앱 품질 기준

@@ -2,6 +2,8 @@
   href: index.md
 - name: 예제 허브 사용해보기
   href: running-examples-hub.md
+- name: 예제 장면
+  href: running-example-scenes.md
 - name: 구성
   href: configuration/toc.yml
 - name: 지원되는 디바이스 개요
@@ -20,7 +22,7 @@
   href: release-notes/toc.yml
 - name: 로드맵
   href: roadmap.md
-- name: 참여
+- name: 기여
   href: contributing/toc.yml
-- name: 보관된 문서 (2.6 이전)
+- name: 보관된 문서(2.6 이전)
   href: 'https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/WelcomeToMRTK.html'

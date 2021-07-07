@@ -1,6 +1,6 @@
 - name: 확장 서비스
   href: extension-services.md
-- name: 직접 물리학 서비스
+- name: 손 물리학 서비스
   href: hand-physics-service.md
 - name: 장면 전환 서비스
   href: scene-transition-service.md

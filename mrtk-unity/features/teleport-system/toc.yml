@@ -1,2 +1,4 @@
 - name: 시스템 텔레포트
   href: teleport-system.md
+- name: 핫스팟 텔레포트
+  href: teleport-hotspot.md
