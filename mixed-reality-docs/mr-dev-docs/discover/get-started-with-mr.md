@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 검색, 배포, 인덱스, 방문 페이지, 디자인, 개발, 자습서, 샘플 앱, 기본 사항, 사례 연구, 리소스, HoloLens 방법, 오픈 소스 프로젝트, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 222c70882826e61d2b60e104c460156687f8b5df
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: e3c30429109de367993357701092154741ca571b
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583355"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403384"
 ---
 # <a name="get-started-with-mixed-reality"></a>Mixed Reality 시작
 
@@ -20,35 +20,12 @@ ms.locfileid: "98583355"
 
 Mixed Reality 에코시스템은 상상력에 의해서만 제한되는 물리적 및 디지털 상호 작용의 새로운 환경입니다. 숙련된 개발자 또는 새로운 변환인지 여부에 관계없이 아래에 나와 있는 리소스를 사용하여 Mixed Reality 경험을 시작하는 것이 좋습니다. 새로운 영역을 많이 다룰 수 있으므로 시작해 보겠습니다! 
 
-## <a name="choose-your-track"></a>트랙 선택
-
-살펴보려는 혼합 현실 영역을 이미 알고 있는 경우 자유롭게 아래 트랙 중 하나로 바로 이동할 수 있습니다. 그러나 나중에 기본 개념 콘텐츠를 참조할 수 있도록 이 페이지를 책갈피에 보관합니다.
-
-:::row:::
-    :::column:::
-       [![혼합 현실을 처음 접하는 경우](images/Tile-New.jpg)](#understand-the-basics)<br>
-        **[혼합 현실을 처음 접하는 경우](#understand-the-basics)**<br>
-        기본 사항 이해
-    :::column-end:::
-    :::column:::
-       [![현직 디자이너](images/Tile-Create.jpg)](../design/design.md)<br>
-        **[현직 디자이너](../design/design.md)**<br>
-        디자인 및 프로토타입 생성 시작
-    :::column-end:::
-    :::column:::
-       [![현직 개발자](images/Tile-Develop.jpg)](../develop/development.md)<br>
-        **[현직 개발자](../develop/development.md)**<br>
-        도구 및 아키텍처 알아보기
-    :::column-end:::
-:::row-end:::
-
-<br>
-
----
-
 ## <a name="understand-the-basics"></a>기본 사항 이해
 
-혼합 현실을 처음 접하는 경우 기초부터 시작하여 핵심 개념, 환경 및 기능을 통해 순서에 따라 하나씩 수행해야 합니다. Mixed Reality에서 고유한 아이디어를 설계하고 개발하기 위한 확고한 기반을 설정하는 데 도움이 되도록 순차적으로 정렬된 과정을 만들었습니다.
+혼합 현실을 처음 접하는 경우 기초부터 시작하여 핵심 개념, 환경 및 기능을 통해 순서에 따라 하나씩 수행해야 합니다. 여기에는 두 가지 옵션이 있습니다. Microsoft Learn의 집중 모듈을 통해 시간을 단축할 수 있습니다. 또는 아래에 설정한 각각의 여정을 탐색할 수 있습니다. 이 두 가지 경로는 Mixed Reality에서 자신의 아이디어를 설계하고 개발하기 위한 확고한 기반을 설정하는 데 도움이 됩니다.
+
+> [!div class="nextstepaction"]
+> [Mixed Reality 모듈 소개](/learn/modules/intro-to-mixed-reality)
 
 ### <a name="what-is-mixed-reality"></a>혼합 현실이란?
 
@@ -154,16 +131,17 @@ Mixed Reality 에코시스템은 상상력에 의해서만 제한되는 물리�
 | [HoloLens 하드웨어](https://www.microsoft.com//hololens/hardware) | HoloLens 2는 몇 분 만에 가치를 제공하는 업계 최고의 솔루션을 통해 가장 편안한 몰입형 혼합 현실 환경을 제공하며, 이는 Microsoft의 클라우드 및 AI 서비스의 안정성, 보안 및 확장성의 향상으로 인해 모두 가능하게 되었습니다. |
 | [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | [Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview), Layout 및 [Guides](/dynamics365/mixed-reality/guides/)를 포함하여 Dynamics 365를 통해 직원의 역량을 강화하고 작업을 최적화할 수 있는 다양한 제품을 살펴봅니다. 실제 작업, 실제 디바이스 및 실제 사용자를 통해 실제로 수행하여 유용한 인사이트를 얻을 수 있습니다. |
 | [Azure Cloud Services](../develop/mixed-reality-cloud-services.md) | 공간 인식, 공간 앵커 및 복잡한 3D 모델 렌더링을 사용하여 다양한 플랫폼에서 뛰어난 몰입형 환경을 구축합니다. |
+| [Microsoft Mesh](/mesh/overview) | Mesh를 사용하면 Mesh 지원 혼합 현실 환경을 통해 사용자가 현재 상태에서 연결하고, 공간을 공유하고, 전 세계 어디에서나 공동 작업할 수 있습니다. Mesh를 사용하면 가상 모임을 개선하고, 가상 디자인 세션을 수행하고, 다른 사용자를 원격으로 지원하고, 가상 모임을 주최할 수 있습니다. |
 
 ## <a name="what-would-you-like-to-do-next"></a>다음에 수행할 작업은 무엇인가요?
 
 :::row:::
     :::column:::
-        [![개발자 되기](images/icon-design.png)](../design/design.md)<br>
-        **[개발자 되기](../design/design.md)**<br>
+        [![디자인 시작](images/icon-design.png)](../design/design.md)<br>
+        **[디자인 시작](../design/design.md)**<br>
         디자인 및 프로토타입 생성을 시작하는 데 필요한 기본 개념을 알아봅니다.
     :::column-end:::
-        :::column:::
+    :::column:::
         [![개발 시작](images/icon-developer.png)](../develop/development.md)<br>
         **[개발 시작](../develop/development.md)**<br>
         자신의 기술 수준, 작업 스타일 또는 플랫폼 관심 분야에 따라 개발 경로를 선택합니다.
@@ -174,9 +152,6 @@ Mixed Reality 에코시스템은 상상력에 의해서만 제한되는 물리�
         하드웨어를 살펴보고 첫 번째 HoloLens 2 애플리케이션을 만들기 위한 실습 자습서를 받으세요.
     :::column-end:::
 :::row-end:::
-
-
-<br>
 
 <br>
 

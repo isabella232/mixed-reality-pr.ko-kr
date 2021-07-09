@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 공간 인식
 ms.localizationpriority: high
-ms.openlocfilehash: f6c17dc361846808ec10f1d94932e3089072e642
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: dc30997bbb43b29bf2495aa98be392af6885f6b8
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300458"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112907009"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. MRTK 프로필 구성
 
@@ -44,7 +44,67 @@ ms.locfileid: "107300458"
 > [!NOTE]
 > 기본적으로 MRTK 프로필은 편집할 수 없습니다. 이러한 기본 프로필 템플릿을 편집하려면 먼저 복제해야 합니다. 중첩된 여러 프로필 레이어가 있습니다. 따라서 하나 이상의 설정을 구성할 때 여러 프로필을 복제하여 편집하는 것이 일반적입니다.
 
+### <a name="1-clone-the-default-configuration-profile"></a>1. 기본 구성 프로필 복제
+
+> [!NOTE]
+> 구성 프로필은 최상위 수준 프로필입니다. 따라서 다른 프로필을 편집하려면 먼저 구성 프로필을 복제해야 합니다.
+
+Hierarchy 창에서 **MixedRealityToolkit** 개체를 선택한 다음, Inspector 창에서 **MixedRealityToolkit** 구성 프로필을 **DefaultHoloLens2ConfigurationProfile** 로 변경합니다.
+
+![DefaultHoloLens2ConfigurationProfile이 선택된 Unity MixedRealityToolkit 구성 요소](images/mr-learning-base/base-03-section1-step1-1.png)
+
+다음과 같이 **MixedRealityToolkit** 개체를 선택한 상태로, 검사기 창에서 **복제** 단추를 클릭하여 프로필 복제 창을 엽니다.
+
+![Unity MixedRealityToolkit 구성 요소 Copy & Customize 단추](images/mr-learning-base/base-03-section1-step1-2.png)
+
+Clone Profile 창에서 적절한 **프로필 이름**(예: _GettingStarted_HoloLens2ConfigurationProfile_)을 입력한 다음, **복제** 단추를 클릭하여 **DefaultHololens2ConfigurationProfile** 의 편집 가능한 복사본을 만듭니다.
+
+![Unity MixedRealityToolkit 복제 Configuration Profile 팝업 창](images/mr-learning-base/base-03-section1-step1-3.png)
+
+이제 새로 만든 구성 프로필이 다음과 같이 장면의 구성 프로필로 할당됩니다.
+
+![새로 만든 사용자 지정 HoloLens2ConfigurationProfile이 적용된 Unity MixedRealityToolkit 구성 요소](images/mr-learning-base/base-03-section1-step1-4.png)
+
+Unity 메뉴에서 **파일** > **저장** 을 선택하여 장면을 저장합니다.
+
+> [!TIP]
+> 자습서를 진행하는 동안 항상 작업을 저장해야 합니다.
+
+### <a name="2-enable-the-spatial-awareness-system"></a>2. 공간 인식 시스템 사용
+
+Hierarchy 창에서 **MixedRealityToolkit** 개체를 선택한 다음, Inspector 창에서 **공간 인식** 탭을 선택한 다음, **공간 인식 시스템 사용** 확인란을 선택합니다.
+
+![공간 인식 시스템이 사용된 Unity MixedRealityToolkit 구성 요소](images/mr-learning-base/base-03-section1-step2-1.png)
+
+> [!NOTE]
+> 향후 프로젝트에서 앱이 환경에 응답하거나 상호 작용할 필요가 없는 경우, 성능 비용을 줄이기 위해 공간 인식을 계속 해제해 두는 것이 좋습니다.
+
+### <a name="3-clone-the-default-spatial-awareness-system-profile"></a>3. 기본 공간 인식 시스템 프로필 복제
+
+다음과 같이 **공간 인식** 탭에서 **복제** 단추를 클릭하여 [프로필 복제] 창을 엽니다.
+
+![공간 인식 탭이 선택된 Unity MixedRealityToolkit 구성 요소](images/mr-learning-base/base-03-section1-step3-1.png)
+
+Clone Profile 창에서 적절한 **프로필 이름**(예: _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_)을 입력한 다음, **복제** 단추를 클릭하여 **DefaultMixedRealitySpatialAwarenessSystemProfile** 의 편집 가능한 복사본을 만듭니다.
+
+![Unity MixedRealityToolkit 복제 공간 인식 시스템 프로필 팝업 창](images/mr-learning-base/base-03-section1-step3-2.png)
+
+이제 새로 만든 공간 인식 시스템 프로필이 다음과 같이 구성 프로필에 자동으로 할당됩니다.
+
+![새로 만든 사용자 지정 MixedRealitySpatialAwarenessSystemProfile이 적용된 Unity MixedRealityToolkit 구성 요소](images/mr-learning-base/base-03-section1-step3-3.png)
+
 [!INCLUDE[](includes/configuring-profile.md)]
+
+### <a name="5-change-the-visibility-of-the-spatial-awareness-mesh"></a>5. 공간 인식 메시의 표시 유형 변경
+
+다음과 같이 **공간 메시 관찰자 설정** 에서 **표시 옵션** 을 **폐색** 으로 변경하여 공간 매핑 메시가 계속 작동하는 동안에도 보이지 않도록 설정합니다.
+
+![공간 메시 관찰자 표시 옵션이 폐색으로 설정된 Unity MixedRealityToolkit 구성 요소](images/mr-learning-base/base-03-section1-step5-1.png)
+
+> [!NOTE]
+> 공간 매핑 메시가 보이지 않더라도 여전히 존재하며 작동 중입니다. 예를 들어 실제 벽 뒤의 홀로그램처럼 공간 매핑 메시 뒤의 홀로그램은 보이지 않습니다.
+
+MRTK 프로필에서 설정을 수정하는 방법을 알아보았습니다. 보시는 것처럼, MRTK 설정을 사용자 지정하려면 먼저 기본 프로필의 복사본을 만들어야 합니다. 기본 프로필은 편집이 불가능하므로, 기본 설정으로 되돌리고 싶을 때 항상 기본 프로필을 참조로 사용할 수 있습니다. MRTK 프로필 및 해당 아키텍처에 대한 자세한 내용은 [MRTK 설명서 포털](/windows/mixed-reality/mrtk-unity)의 [MRTK 프로필 구성 가이드](/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide)를 참조하세요.
 
 ## <a name="congratulations"></a>축하합니다.
 

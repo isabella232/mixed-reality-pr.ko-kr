@@ -7,18 +7,18 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 혼합 현실, 개발, 시작, 새 프로젝트, 포팅, 기능, 카메라, 시뮬레이션, 에뮬레이션, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 공간 매핑, 음성 입력, 위치를 찾을 수 있는 카메라, 에뮬레이터, Azure, 자습서
-ms.openlocfilehash: ba68c3d74f58fc43af3de039e5eba1712d195cc0
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: b6d8d44851813f340997c41b2f25104b51dee2fa
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528737"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394297"
 ---
 # <a name="unity-development-for-hololens"></a>HoloLens용 Unity 개발
 
 ![Unity 배너 로고](../images/unity_logo_banner.png)
 
-[Unity](https://unity.com)에서 HoloLens [혼합 현실 앱](../../design/app-views.md)을 빌드하는 가장 빠른 경로는 Mixed Reality Toolkit를 사용하는 것입니다. Unity를 처음 접하는 경우 계속하기 전에 Unity 학습 플랫폼에서 초보자 수준 [자습서](https://unity3d.com/learn/tutorials)를 살펴보는 것이 좋습니다. 또한 포괄적인 [Asset Store](https://assetstore.unity.com) 및 [Unity 혼합 현실 포럼](https://forum.unity3d.com/forums/hololens.102/)을 방문하여 혼합 현실 앱을 빌드하는 온라인 커뮤니티에 참여하는 것도 좋습니다. 거친 세계에서는 어떤 멋진 자산 또는 솔루션을 찾을 수 있는지 전혀 알 수 없습니다. MRTK를 시작할 준비가 되면 아래 개발 검사점으로 이동하세요!
+Unity는 시장을 선도하는 실시간 개발 플랫폼 중 하나로, C++로 작성된 기본 런타임 코드를 제공하며 모든 개발 스크립팅이 C#에서 수행됩니다. Unity는 게임, 영화 및 애니메이션 영화 예술을 빌드하거나 건축 또는 엔지니어링 개념을 가상 세계에 렌더링하려는 사용자를 지원할 수 있는 인프라를 갖추고 있습니다. 시작할 준비가 되면 아래 개발 검사점으로 이동하세요!
 
 > [!IMPORTANT]
 > HoloLens 2로 가져오려는 기존 Unity 프로젝트가 있는 경우 **[포트 가이드](../porting-apps/porting-overview.md)** 를 살펴보세요. HTK, MRTK v1 또는 SteamVR을 사용하는 프로젝트에 대한 가이드가 있습니다.
@@ -83,11 +83,15 @@ Unity에서 개발하는 가장 쉬운 방법은 Mixed Reality Toolkit를 사용
 
 ## <a name="5-adding-services"></a>5. 서비스 추가
 
-개발 과정의 이 시점에서 서비스를 추가하거나 상업적 배포에 도움을 받을 수 있습니다. [Azure Cloud Services](../mixed-reality-cloud-services.md) 및 Dynamics 365 기능을 통합하면 프로젝트 수준을 주요 방식으로 높일 수 있습니다. Mixed Reality 지식을 검색하고 확장할 수 있는 몇 가지 시작 지점을 컴파일했습니다.
+개발 과정의 이 시점에서 서비스를 추가하거나 상업적 배포에 도움을 받을 수 있습니다. [Azure Cloud Services](../mixed-reality-cloud-services.md)를 통합하면 주요 방식으로 프로젝트 수준을 높일 수 있습니다. Mixed Reality 지식을 검색하고 확장할 수 있는 몇 가지 시작 지점을 컴파일했습니다.
 
 [!INCLUDE[](../includes/unity-cloud-services-d365.md)]
 
 또한 자체 서비스를 기반으로 하여 Unity 프로젝트에 추가할 수 있는 [추가 Azure 서비스에 대한 포괄적인 지원 설명서 목록](../mixed-reality-cloud-services.md#standalone-unity-services)이 있습니다.
+
+## <a name="6-low-code-alternatives"></a>6. 로우 코드 대안
+
+[!INCLUDE[](../includes/unity-low-code.md)]
 
 ## <a name="whats-next"></a>다음 작업
 
@@ -113,9 +117,9 @@ Unity에서 개발하는 가장 쉬운 방법은 Mixed Reality Toolkit를 사용
 
 |  항목  |  Description  |
 | --- | --- |
-| [MRTK 아키텍처 개요](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/architecture/overview) | MRTK SDK가 프로젝트에서 작동하는 방법을 더 자세히 이해합니다. |
-| [설정 및 성능](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | 앱을 프로파일링하고, Unity 설정을 업데이트하고, 최상의 홀로그램 안정화 성능을 제공합니다. |
-| [MRTK + XR 시작](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | Unity에서 제공하는 대체 XR 파이프라인으로 전송합니다. |
+| [MRTK 아키텍처 개요](/windows/mixed-reality/mrtk-unity/architecture/overview) | MRTK SDK가 프로젝트에서 작동하는 방법을 더 자세히 이해합니다. |
+| [설정 및 성능](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | 앱을 프로파일링하고, Unity 설정을 업데이트하고, 최상의 홀로그램 안정화 성능을 제공합니다. |
+| [MRTK + XR 시작](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | Unity에서 제공하는 대체 XR 파이프라인으로 전송합니다. |
 
 ### <a name="unity-resources"></a>Unity 리소스
 
@@ -137,7 +141,7 @@ Unity는 docs.microsoft.com에서 사용할 수 있는 이 설명서 외에도 W
 * Windows Mixed Reality
 * OpenXR
 * XRSDK
-* Legacy XR 
+* Legacy XR
 
 ## <a name="see-also"></a>참고 항목
 

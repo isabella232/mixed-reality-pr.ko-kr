@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, 음성 인식, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 9a149e5b80c5989ab960db3e9522b67473b2095c
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: a728e3520539723c4b38849eeb60524995e572eb
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982776"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175456"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1. 음성 인식 및 전사 통합 및 사용
 
@@ -34,10 +34,10 @@ ms.locfileid: "105982776"
 * Windows 10 SDK 10.0.18362.0 이상
 * 몇 가지 기본 C# 프로그래밍 기능
 * [개발용으로 구성](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)된 HoloLens 2 디바이스
-* Unity 2019 LTS가 설치되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가된 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
+* Unity 2020/2019 LTS가 설치되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가된 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
 
-> [!IMPORTANT]
-> 이 자습서 시리즈에 추천되는 Unity 버전은 Unity 2019 LTS입니다. 이 버전은 필수 구성 요소에서 설명한 모든 Unity 버전 요구 사항 또는 추천 사항을 대체합니다.
+> [!Important]
+> 이 자습서 시리즈는 Open XR 또는 Windows XR 플러그 인을 사용하는 경우 Unity 2020 LTS(현재 2020.3.x)와 레거시 WSA 또는 Windows XR 플러그 인을 사용하는 경우 Unity 2019 LTS(현재 2019.4.x)를 지원합니다. 이 버전은 필수 구성 요소에서 설명한 모든 Unity 버전 요구 사항을 대체합니다.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Unity 프로젝트 만들기 및 준비
 
@@ -47,10 +47,9 @@ ms.locfileid: "105982776"
 
 1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름(예: *MRTK Tutorials*) 지정
 2. [빌드 플랫폼 전환](mr-learning-base-02.md#configuring-the-unity-project)
-3. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project)
-6. [장면 만들기 및 구성](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름(예: *AzureSpeechServices*) 지정
+3. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
+4. [Mixed Reality Toolkit 가져오기 및 Unity 프로젝트 구성](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [장면 만들기 및 구성](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) 및 장면에 적절한 이름(예: *AzureSpeechServices*) 지정
 
 그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면의 MRTK 구성 프로필이 **DefaultHoloLens2ConfigurationProfile** 인지 확인하고, 공간 인식 메시의 표시 옵션을 **Occlusion(폐색)** 으로 변경합니다.
 
@@ -60,20 +59,17 @@ ms.locfileid: "105982776"
 
 [계층 구조] 창에서 **MixedRealityToolkit** 개체를 선택한 채 [검사기] 창에서 **입력** 탭을 선택하고, **DefaultHoloLens2InputSystemProfile** 및 **DefaultMixedRealitySpeechCommandsProfile** 을 복제한 다음, 음성 명령 **시작 동작** 을 **수동 시작** 으로 변경합니다.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section2-step1-1.png)
-
-> [!TIP]
-> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [자습서 자산 가져오기](mr-learning-base-02.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.
+![mrlearning-speech 1](images/mrlearning-speech/tutorial1-section2-step1-1.png)
 
 ## <a name="configuring-the-capabilities"></a>기능 구성
 
 Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 차례로 선택하여 [플레이어 설정] 창을 연 다음, **플레이어** >  **게시 설정** 섹션을 차례로 찾습니다.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section3-step1-1.png)
+![mrlearning-speech 2](images/mrlearning-speech/tutorial1-section3-step1-1.png)
 
 **게시 설정** 에서 **기능** 섹션까지 아래로 스크롤하여 자습서의 시작 부분에서 프로젝트를 만들 때 사용하도록 설정한 **InternetClient**, **Microphone** 및 **SpatialPerception** 기능이 사용하도록 설정되어 있는지 다시 확인합니다. 그런 다음, **InternetClientServer** 및 **PrivateNetworkClientServer** 기능을 사용하도록 설정합니다.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section3-step1-2.png)
+![mrlearning-speech 3](images/mrlearning-speech/tutorial1-section3-step1-2.png)
 
 ## <a name="importing-the-tutorial-assets"></a>자습서 자산 가져오기
 
@@ -81,14 +77,29 @@ Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 차례로 선택�
 
 * [Microsoft.CognitiveServices.Speech.N.N.N.unitypackage](https://aka.ms/csspeech/unitypackage)(최신 버전)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.3/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/2.5.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.1.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.2.unitypackage](https://github.com/onginnovations/MixedRealityLearning/releases/download/azure-speech-services-v2.5.2/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.2.unitypackage)
 
 > [!TIP]
-> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) 지침을 참조할 수 있습니다.
+> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [Mixed Reality Toolkit 가져오기](mr-learning-base-04.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.
 
 자습서 자산을 가져오면 [프로젝트] 창이 다음과 같이 표시됩니다.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section4-step1-1.png)
+![mrlearning-speech 4](images/mrlearning-speech/tutorial1-section4-step1-1.png)
+
+ARM64용 Azure Speech 플러그 인을 게시하도록 Unity 프로젝트를 설정해야 합니다. 프로젝트 창에서 이 작업을 수행하려면 **자산** > **SpeechSDK** > **플러그 인** > **WSA** > **ARM64** 로 이동하고 **Microsoft.CognitiveServices.Speech.core** 플러그 인을 선택합니다.
+
+![mrlearning-speech 5](images/mrlearning-speech/tutorial1-section4-step1-2.PNG)
+
+**Microsoft.CognitiveServices.Speech.core** 플러그 인이 선택된 상태에서 검사기 창에서 **WSA Player** 를 사용하도록 설정한 다음 **플랫폼 설정** 에서 SDK에 대해 **UWP** 를, CPU에 대해 **ARM64** 를 선택하고 적용을 클릭하여 이 설정을 플러그 인에 적용합니다.
+
+![mrlearning-speech 6](images/mrlearning-speech/tutorial1-section4-step1-3.PNG)
+
+나머지 각 플러그 인에 대해 이 단계를 반복합니다.
+
+* **Microsoft.CognitiveServices.Speech.extension.audio.sys**
+* **Microsoft.CognitiveServices.Speech.extension.kws**
+* **Microsoft.CognitiveServices.Speech.extension.lu**
+* **Microsoft.CognitiveServices.Speech.extension.silk_codec**
 
 ## <a name="preparing-the-scene"></a>장면 준비
 
@@ -96,26 +107,26 @@ Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 차례로 선택�
 
 [프로젝트] 창에서 **Assets** > **MRTK.Tutorials.AzureSpeechServices** > **Prefabs** 폴더로 차례로 이동하고, **Lunarcom** 프리팹을 [계층 구조] 창으로 끌어 장면에 추가합니다.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-1.png)
+![mrlearning-speech 7](images/mrlearning-speech/tutorial1-section5-step1-1.png)
 
 [계층 구조] 창에서 **Lunarcom** 개체를 선택한 채로 [검사기] 창에서 **구성 요소 추가** 단추를 사용하여 **Lunarcom 컨트롤러(스크립트)** 구성 요소를 Lunarcom 개체에 추가합니다.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-2.png)
+![mrlearning-speech 8](images/mrlearning-speech/tutorial1-section5-step1-2.png)
 
 > [!NOTE]
 > Lunarcom 컨트롤러(스크립트) 구성 요소는 MRTK의 일부가 아닙니다. 이 자습서의 자산과 함께 제공되었습니다.
 
 **Lunarcom** 개체를 선택한 상태에서 이 개체를 펼쳐 자식 개체를 표시한 다음, **Terminal** 개체를 Lunarcom 컨트롤러(스크립트) 구성 요소의 **터미널** 필드로 끕니다.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-3.png)
+![mrlearning-speech 9](images/mrlearning-speech/tutorial1-section5-step1-3.png)
 
 **Lunarcom** 개체를 선택한 상태에서 Terminal 개체를 펼쳐 자식 개체를 표시한 다음, **ConnectionLight** 개체 및 **OutputText** 개체를 각각 Lunarcom 컨트롤러(스크립트) 구성 요소의 **연결 조명** 필드 및 **출력 텍스트** 필드로 끕니다.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-4.png)
+![mrlearning-speech 10](images/mrlearning-speech/tutorial1-section5-step1-4.png)
 
 **Lunarcom** 개체를 선택한 상태에서 Buttons 개체를 펼쳐 자식 개체를 표시한 다음, [검사기] 창에서 **단추** 목록을 펼치고, **크기** 를 3으로 설정하고, **MicButton**, **SatelliteButton** 및 **RocketButton** 필드를 각각 **요소** 0, 1 및 2 필드로 끕니다.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-5.png)
+![mrlearning-speech 11](images/mrlearning-speech/tutorial1-section5-step1-5.png)
 
 ## <a name="connecting-the-unity-project-to-the-azure-resource"></a>Unity 프로젝트를 Azure 리소스에 연결
 
@@ -126,24 +137,24 @@ Azure Speech Services를 사용하려면 Azure 리소스를 만들고, Speech Se
 * **Speech Service API 키** 필드에서 API 키(Key1 또는 Key2)를 입력합니다.
 * **Speech Service 지역** 필드에서 공백 없이 소문자를 사용하여 서비스 지역(위치)을 입력합니다.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section6-step1-1.png)
+![mrlearning-speech 12](images/mrlearning-speech/tutorial1-section6-step1-1.png)
 
 ## <a name="using-speech-recognition-to-transcribe-speech"></a>음성 인식을 사용하여 음성 전사
 
 [계층 구조] 창에서 **Lunarcom** 개체를 선택한 다음, [검사기] 창에서 **구성 요소 추가** 단추를 사용하여 **Lunarcom 음성 인식기(스크립트)** 구성 요소를 Lunarcom 개체에 추가합니다.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section7-step1-1.png)
+![mrlearning-speech 13](images/mrlearning-speech/tutorial1-section7-step1-1.png)
 
 > [!NOTE]
 > Lunarcom 음성 인식기(스크립트) 구성 요소는 MRTK의 일부가 아닙니다. 이 자습서의 자산과 함께 제공되었습니다.
 
 이제 게임 모드로 들어가면 먼저 마이크 단추를 눌러 음성 인식을 테스트할 수 있습니다.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section7-step1-2.png)
+![mrlearning-speech 14](images/mrlearning-speech/tutorial1-section7-step1-2.png)
 
 그런 다음, 마이크가 컴퓨터에 있다고 가정하여 사용자가 무언가를 말하면 음성이 터미널 패널에 전사됩니다.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section7-step1-3.png)
+![mrlearning-speech 15](images/mrlearning-speech/tutorial1-section7-step1-3.png)
 
 > [!CAUTION]
 > 애플리케이션에서 Azure에 연결해야 하므로 컴퓨터/디바이스가 인터넷에 연결되어 있는지 확인합니다.

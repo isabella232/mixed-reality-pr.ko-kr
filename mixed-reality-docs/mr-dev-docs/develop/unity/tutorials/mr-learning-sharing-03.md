@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 58ea52332485a3e0ca460322f6af60266b119ede
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 976593fd2f107d456da4f04da19621dd253f2ae1
+ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590195"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111772426"
 ---
 # <a name="3-connecting-multiple-users"></a>3. 여러 사용자 연결
 
@@ -69,7 +69,7 @@ Inspector 창에서 **Add Component** 단추를 사용하여 **Photon View (Scri
 
 ### <a name="2-create-the-avatar"></a>2. 아바타 만들기
 
-Project 창에서 **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **StandardAssets** > **Materials** 폴더로 이동하여 MRTK 자료를 찾습니다.
+프로젝트 창에서 **패키지** > **Mixed Reality Toolkit 표준 자산** > **자료** 폴더로 이동하여 MRTK 자료를 찾습니다.
 
 그런 다음, Hierarchy 창에서 **PhotonUser** 개체를 마우스 오른쪽 단추로 클릭하고 **3D Object** > **Sphere** 를 선택하여 PhotonUser 개체의 자식으로 구형 개체를 만들어서 다음과 같이 구성합니다.
 

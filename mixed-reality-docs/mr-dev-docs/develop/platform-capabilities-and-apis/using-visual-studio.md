@@ -7,12 +7,12 @@ ms.date: 04/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, Mixed Reality, 디버그, 배포
-ms.openlocfilehash: 2ab89311163a48ee3c14511446a1498ce883a232
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 5510646c058f683babff5e9e34dd296f88cd06c3
+ms.sourcegitcommit: b4bdac2c4d7315902712ce74fd909fb8383d4bfd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100496098"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110543229"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>Visual Studio를 사용하여 배포 및 디버깅
 
@@ -37,7 +37,7 @@ ms.locfileid: "100496098"
 3. **설정** 타일을 선택하여 환경에서 앱을 시작합니다.
 4. **업데이트** 메뉴 항목을 선택합니다.
 5. **개발자용** 메뉴 항목을 선택합니다.
-6. **개발자 모드** 를 사용하여 Visual Studio에서 HoloLens로 앱을 배포합니다.
+6. **개발자 기능 사용** 을 사용하도록 설정하여 Visual Studio에서 HoloLens로 앱을 배포합니다. 디바이스에서 Windows Holographic 버전 21H1 이상을 실행하는 경우 **디바이스 검색** 도 사용하도록 설정합니다.
 7. 옵션: 아래로 스크롤하고 **장치 포털** 도 사용하도록 설정하면 웹 브라우저에서 HoloLens의 [Windows 장치 포털](using-the-windows-device-portal.md)에 연결할 수 있습니다.
 
 ### <a name="windows-pc"></a>Windows PC

@@ -7,12 +7,12 @@ ms.date: 05/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 시선 추적, Mixed Reality, 입력, 시선 응시, 시선 타깃팅, HoloLens 2, 시선 기반 선택, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 응시
-ms.openlocfilehash: 1f337d3cbc1f82b4f69194d4b903687be067f9d6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1dff0ded282678a695070feca2b578004610d2c7
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97847873"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196468"
 ---
 # <a name="eye-gaze-and-commit"></a>시선 응시 및 커밋
 
@@ -26,8 +26,18 @@ HoloLens 2를 사용할 경우 머리 응시 대신 시선 응시를 사용하�
    - 음성 명령(예: "선택")
    - 바라보기(즉, 사용자가 선택할 대상을 계속 바라봄)
 
-그러나 시선 응시는 머리를 특정 방식으로 응시하기 위해 다르게 작동하며 고유한 여러 문제가 있습니다. [시선 응시 디자인 지침](eye-tracking.md)에는 홀로그램 앱에서 시선 추적을 입력으로 사용할 때의 일반적인 장점과 문제점이 요약되어 있습니다. 이 섹션에서는 _시선 응시 및 커밋_ 에 대한 특정 디자인 고려 사항을 중점적으로 설명합니다.
+그러나 시선 응시는 머리를 특정 방식으로 응시하기 위해 다르게 작동하며 고유한 여러 문제가 있습니다. 
+
+[시선 응시 디자인 지침](eye-tracking.md)에는 홀로그램 앱에서 시선 추적을 입력으로 사용할 때의 일반적인 장점과 문제점이 요약되어 있습니다. 이 섹션에서는 _시선 응시 및 커밋_ 에 대한 특정 디자인 고려 사항을 중점적으로 설명합니다.
 먼저 눈은 매우 빠르게 움직이며 보기 전체를 대상으로 빠르게 지정할 수 있습니다. 시선 응시는 특히 에어 탭 또는 단추 누르기와 같은 빠른 커밋과 결합하는 경우 빠른 응시 및 커밋 작업에 적합합니다.
+
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>머리 및 눈 추적 디자인 개념 데모
+
+실제 머리 및 눈 추적 디자인 개념을 보려면 아래의 **홀로그램 디자인 - 머리 추적 및 눈 추적** 동영상 데모를 확인합니다. 완료되면 계속해서 특정 주제에 대해 자세히 알아봅니다.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*이 동영상은 "홀로그램 디자인" HoloLens 2 앱에서 가져온 것입니다. [여기](https://aka.ms/dhapp)에서 전체 환경을 다운로드하여 즐겨 보세요.*
    
 ## <a name="design-guidelines-for-eye-gaze-and-commit"></a>시선 응시 및 커밋을 위한 디자인 지침
 

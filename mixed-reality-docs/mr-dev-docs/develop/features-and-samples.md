@@ -3,16 +3,16 @@ title: 샘플 및 기능 앱
 description: 사용 가능한 모든 Microsoft 샘플 및 HoloLens용 혼합 현실 기능 앱을 최신 상태로 유지합니다.
 author: hferrone
 ms.author: jemccull
-ms.date: 12/3/2020
+ms.date: 6/7/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 학습, 샘플, MRTK, 연구 모드, HoloLens 2, qr 코드, WebRTC, 혼합 현실 캡처, 홀로그램 원격 접속, UX 도구
 ms.localizationpriority: high
-ms.openlocfilehash: 78cfc726bdffdb461a83bd1e9805d8f0e64b0f01
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 78a9e343fde4a6cbc23268f0be353577498d67b6
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98583194"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906899"
 ---
 # <a name="samples-and-feature-apps"></a>샘플 및 기능 앱
 
@@ -27,6 +27,17 @@ ms.locfileid: "98583194"
 ## <a name="feature-samples"></a>기능 샘플
 
 아래 나열된 기능 샘플은 설명서에서 다루는 특정 구현에 해당하며 다양한 개발 플랫폼 및 하드웨어 디바이스를 포함합니다.
+
+### <a name="openxr"></a>OpenXR
+
+HoloLens 2 또는 Mixed Reality 애플리케이션을 빌드하기 위해 Unity 2020을 사용하는 개발자의 경우 WindowsXR 플러그 인 대신 OpenXR 플러그 인을 사용하여 플랫폼 간 호환성을 높일 수 있습니다. Mixed Reality OpenXR 플러그 인은 최신 Mixed Reality Toolkit 2.7에서도 잘 작동합니다.
+
+<br>
+
+| 참조 문서 | 샘플 |
+| --- | --- |
+| [OpenXR 플러그 인 사용](./unity/xr-project-setup.md) | [Mixed Reality OpenXR과 Unity 샘플](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) |
+| 해당 없음 | [OpenXR MRTK Base Unity 프로젝트](https://github.com/microsoft/UnityOpenXRMRTKBase) |
 
 ### <a name="research-mode"></a>연구 모드
 
@@ -47,7 +58,17 @@ HoloLens 2는 헤드셋 주변 환경의 QR 코드를 감지하여 각 코드의
 
 | 참조 문서 | 샘플 |
 | --- | --- |
-| [QR 코드](platform-capabilities-and-apis/qr-code-tracking.md) | [Unity에서 QR 코드 추적](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes) |
+| [QR 코드](platform-capabilities-and-apis/qr-code-tracking.md) | [Unity에서 QR 코드 추적](https://github.com/microsoft/MixedReality-QRCode-Sample) |
+
+### <a name="scene-understanding"></a>장면 이해
+
+장면 이해는 Mixed Reality 개발자에게 환경 인식 애플리케이션을 직관적으로 개발할 수 있도록 설계된 구조화된 고수준 환경 표현을 제공합니다. 장면 이해는 매우 정확하지만 덜 구조화된 공간 매핑 및 새로운 AI 기반 런타임과 같은 기존 혼합 현실 런타임의 힘을 결합하여 이를 수행합니다.
+
+<br>
+
+| 참조 문서 | 샘플 |
+| --- | --- |
+| [장면 이해](../design/scene-understanding.md) | [Mixed Reality 장면 이해 샘플](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples) |
 
 ### <a name="webrtc"></a>WebRTC
 

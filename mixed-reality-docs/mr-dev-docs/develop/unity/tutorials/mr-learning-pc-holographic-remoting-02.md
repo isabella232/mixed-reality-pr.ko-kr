@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, PC 홀로그램 원격, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: 916a9396c0b29637d5619bac203718e05112b598
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ca0efe13acac4408a05ab89eb98b508e9993c5a4
+ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590305"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112392542"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2. 홀로그램 원격 PC 애플리케이션 만들기
 
@@ -24,61 +24,22 @@ ms.locfileid: "99590305"
 * Visual Studio를 사용하여 애플리케이션을 빌드하고 배포하는 방법 알아보기
 * 홀로그램 원격 애플리케이션 개발 및 HoloLens에 연결
 
-## <a name="configuring-your-scene-for-holographic-remoting"></a>홀로그램 원격에 대한 장면 구성
-
-이 섹션에서는 Wi-Fi 연결을 통해 실시간으로 PC에서 HoloLens 2 디바이스로 혼합 현실 환경을 스트리밍하는 프로젝트를 구성합니다.
-
-Project 창에서 **Assets** > **MRTK.Tutorials.PCHolograhicRemoting** > **Prefabs** 폴더로 이동하고,**HolographicRemoting** 프리팹을 클릭하여 장면으로 끕니다.
-
-![새로 추가한 HolographicRemoting 프리팹이 여전히 선택된 Unity](images/mrlearning-pc-holographic-remoting/Tutorial2-Section1-Step1-1.png)
-
-## <a name="build-your-application-to-pc"></a>PC로 애플리케이션 빌드
-
-이제 홀로그램 원격 앱을 PC에서 빌드할 준비가 되었습니다. 아래 단계를 수행하고 이 애플리케이션을 PC에 빌드하려면 이러한 변경을 수행합니다.
-
-### <a name="1-set-the-player-settings"></a>1. 플레이어 설정 지정
-
-Unity 메뉴에서 편집 >프로젝트 설정을 차례로 선택하여 플레이어 설정 창을 엽니다.
+## <a name="configuring-the-capabilities"></a>기능 구성
 
 프로젝트 설정 창에서 **게시 설정** 을 확장하고 **기능** 섹션으로 스크롤하여 기존 기능 외에 아래 표시 기능 확인란을 선택합니다.
 
 * 인터넷 클라이언트 서버
 * 개인 네트워크 클라이언트 서버
 
-**XR 설정** 섹션에서 **WSA 홀로그램 원격 지원** 확인란을 선택하고 홀로그램 원격을 사용하도록 설정합니다.
+![기능 사용 설정](images/mrlearning-pc-holographic-remoting/tutorial2-section0-step1-1.png)
 
-![WSA 홀로그램 원격 지원이 사용되도록 설정된 Unity XR 설정 창](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step1-1.png)
+[!INCLUDE[](includes/configuring-scene-for-holographic-remoting.md)]
 
-### <a name="2-build-the-unity-project"></a>2. Unity 프로젝트 빌드
+## <a name="build-your-application-to-pc"></a>PC로 애플리케이션 빌드
 
-Unity 메뉴에서 파일 > 빌드 설정을 차례로 선택하여 빌드 설정 창을 엽니다.
+이제 홀로그램 원격 앱을 PC에서 빌드할 준비가 되었습니다. 아래 단계를 수행하고 이 애플리케이션을 PC에 빌드하려면 이러한 변경을 수행합니다.
 
-Build Settings(빌드 설정) 창에서 ***Add Open Scenes** _ 단추를 클릭하여 현재 장면을 Scenes(장면)에 추가합니다. Build 목록에서 _ *_Build 단추_**를 클릭하여 유니버설 Windows 플랫폼 빌드 창을 엽니다.
-
-![장면이 추가된 Unity Build Settings 창](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-1.png)
-
-빌드 유니버설 Windows 플랫폼 창에서 빌드를 저장할 적합한 위치(예: Documents\MixedRealityLearning)를 선택합니다. 새 폴더를 만들고 적절한 이름(예: PCHolographicRemoting)을 지정합니다. 그런 다음, ***폴더 선택*** 단추를 클릭하여 빌드 프로세스를 시작합니다.
-
-![Select Folder 프롬프트 창이 있는 Unity Build Settings 창](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-2.png)
-
-Unity에서 빌드 프로세스가 완료될 때까지 기다립니다.
-
-![진행 중인 Unity 빌드 프로세스](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-3.png)
-
-### <a name="3-build-and-deploy-the-application"></a>3. 애플리케이션 빌드 및 배포
-
-빌드 프로세스가 완료되면 Unity에서 빌드를 저장한 위치를 열라는 메시지를 Windows 파일 탐색기에 표시합니다. 폴더 내부를 탐색하고 .sln 파일을 두 번 클릭하여 Visual Studio에서 엽니다.
-
-![새로 만든 Visual Studio 솔루션이 선택된 Windows 탐색기](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step3-1.png)
-
-> [!NOTE]
-> Visual Studio에서 새 구성 요소를 설치하라는 메시지가 표시되면 도구 설치 설명서에서 지정한 대로 모든 필수 구성 요소가 설치되어 있는지 확인합니다.
-
-릴리스 구성, x64 아키텍처 및 로컬 머신을 대상으로 선택하여 PC에 대해 Visual Studio를 구성합니다.
-
-![로컬 컴퓨터에 대해 구성된 Visual Studio](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step3-2.png)
-
-***로컬 머신*** 이라고 표시된 단추를 클릭합니다. 애플리케이션을 빌드하고 PC에 배포하기 시작합니다. 애플리케이션은 기본적으로 PC에 설치됩니다.
+[!INCLUDE[](includes/build-your-application-to-pc.md)]
 
 ## <a name="testing-holographic-remoting-remote-application"></a>홀로그램 원격 원격 애플리케이션 테스트
 

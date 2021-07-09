@@ -7,12 +7,12 @@ ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 2ceb16d31c793629e93c3dca00cb215fcbe38c6a
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 771dd4028adfacb27544e632aa0f355d3bc91c66
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237154"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712608"
 ---
 # <a name="4-making-your-scene-interactive"></a>4. 대화형 장면 만들기
 
@@ -20,26 +20,28 @@ ms.locfileid: "102237154"
 
 ## <a name="objectives"></a>목표
 
-* GitHub에서 Mixed Reality UX Tools 플러그 인 설치
+* Mixed Reality UX Tools 플러그 인 설치
 * 손가락 끝에 손 조작 행위자 추가
 * 장면의 개체에 조작자 만들기 및 추가
 * 입력 시뮬레이션을 사용하여 프로젝트의 유효성 검사
 
 ## <a name="downloading-the-mixed-reality-ux-tools-plugin"></a>Mixed Reality UX Tools 플러그 인 다운로드
-사용자 입력 작업을 시작하기 전에 프로젝트에 플러그 인을 추가해야 합니다.
+사용자 입력 작업을 시작하기 전에 Mixed Reality UX Tools 플러그 인을 프로젝트에 추가해야 합니다. UX Tools에 대해 자세히 알아보려면 [GitHub](https://aka.ms/uxt-unreal)에서 프로젝트를 확인하세요.
 
-1. GitHub의 Mixed Reality UX Tools [릴리스 페이지](https://github.com/microsoft/MixedReality-UXTools-Unreal/releases)에서 Unreal v0.10.0 릴리스용 UX Tools로 이동하여 **UXTools.0.10.0.zip** 을 다운로드합니다. 파일의 압축을 풉니다.
+1. Epic Games Launcher를 엽니다. Unreal Engine Marketplace로 이동하여 "[Mixed Reality UX Tools](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools)"를 검색합니다. 엔진에 플러그 인을 설치합니다.
 
-2.  프로젝트 루트 폴더에 이름이 **Plugins** 인 새 폴더를 만듭니다. 압축을 푼 UXTools 플러그 인을 이 폴더에 복사하고 Unreal 편집기를 다시 시작합니다.
+![Unreal Marketplace](images/unreal-uxt/2-uxt-plugin.PNG)
 
-![프로젝트 플러그 인 폴더 만들기](images/unreal-uxt/4-plugins.PNG)
+2. Unreal 편집기로 돌아가 **프로젝트 설정** > **플러그 인** 으로 이동하여 "Mixed Reality UX Tools"를 검색합니다. 플러그 인이 사용하도록 설정되어 있는지 확인하고 메시지가 나타나면 편집기를 다시 시작합니다.
 
-3.  UXTools 플러그 인에는 **Buttons**, **Input Simulation** 및 **Pointers** 를 포함한 구성 요소에 대한 하위 폴더가 있는 Content 폴더와 추가 코드가 있는 C++ Classes 폴더가 있습니다.  
+![Mixed Reality UX Tools 플러그 인 사용](images/unreal-uxt/2-enable-uxt.PNG)
+
+3.  UXTools 플러그 인에는 **Buttons**, **XR Simulation** 및 **Pointers** 를 포함한 구성 요소에 대한 하위 폴더가 있는 Content 폴더와 추가 코드가 있는 C++ Classes 폴더가 있습니다.  
 
 > [!NOTE]
-> **콘텐츠 브라우저** 에 **UXTools 콘텐츠** 섹션이 표시되지 않는 경우 **보기 옵션 > 플러그 인 콘텐츠** 를 클릭합니다.
+> **콘텐츠 브라우저** 에 **UXTools 콘텐츠** 섹션이 표시되지 않는 경우 **보기 옵션 > 엔진 콘텐츠 표시** 를 클릭합니다.
 
-![플러그 인 콘텐츠 표시](images/unreal-uxt/4-showplugincontent.PNG)
+![엔진 콘텐츠 표시](images/unreal-uxt/4-showenginecontent.PNG)
 
 추가 플러그 인 설명서는 Mixed Reality UX Tools GitHub [리포지토리](https://aka.ms/uxt-unreal)에서 찾을 수 있습니다.
 

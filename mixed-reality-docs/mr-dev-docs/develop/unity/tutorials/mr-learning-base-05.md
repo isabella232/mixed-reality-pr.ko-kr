@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, solvers
 ms.localizationpriority: high
-ms.openlocfilehash: b2d23601419c36f2a79a0c6e19d06eda6dc54d09
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 8398c4d6fdc69801beff1b7c6de5e4c3847dd5e4
+ms.sourcegitcommit: adbe3baa6b1c284ed1c4fd796d8b5612c3ca3f42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300398"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112270428"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Solver를 사용하여 동적 콘텐츠 만들기
 
@@ -30,7 +30,7 @@ ms.locfileid: "107300398"
 
 ![Solvers 폴더가 선택된 Unity 프로젝트 창](images/mr-learning-base/base-05-section1-step1-1.png)
 
-이 자습서에서는 Directional Indicator(방향 표시) Solver 및 Tap To Place(탭하여 위치 지정) Solver 구현을 검토합니다. MRTK에서 사용할 수 있는 Solver의 전체 범위를 알아보려면 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity)에서 [Solvers](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver) 가이드를 참조하세요.
+이 자습서에서는 Directional Indicator(방향 표시) Solver 및 Tap To Place(탭하여 위치 지정) Solver 구현을 검토합니다. MRTK에서 사용할 수 있는 Solver의 전체 범위를 알아보려면 [MRTK 설명서 포털](/windows/mixed-reality/mrtk-unity)에서 [Solvers](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver) 가이드를 참조하세요.
 
 > [!NOTE]
 > Directional Indicator Solver는 실험적인 기능 때문에 위에 언급된 Solver 폴더에 없지만 Packages > Mixed Reality Toolkit Foundation > SDK > Experimental > Features > Utilities 폴더에 있습니다.
@@ -44,15 +44,12 @@ ms.locfileid: "107300398"
 > [!TIP]
 > 카메라 또는 장면의 다른 아이콘이 개체를 숨기거나 방해가 되면, 위 이미지와 같이 <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">Gizmos를 끄기 위치로 전환</a>하여 아이콘을 숨길 수 있습니다. Gizmo 메뉴에 대한 내용 및 이 메뉴를 사용하여 장면 보기를 최적화하는 방법에 대한 자세한 내용은 Unity의 <a href="https://docs.unity3d.com/Manual/GizmosMenu.html" target="_blank">Gizmo 메뉴</a> 설명서를 참조하세요.
 
-새로 추가된 Chevron 개체 **표시기** 의 이름을 변경한 다음, [검사기] 창에서 **구성 요소 추가** 단추를 사용하여 **DirectionalIndicator** 를 추가합니다.
+새로 추가된 Chevron 개체 **표시기** 의 이름을 변경한 다음, 검사기 창에서 **구성 요소 추가** 단추를 사용하여 **DirectionalIndicator** 를 추가합니다.
 
 ![DirectionalIndicator Solver 구성 요소가 추가된 Unity](images/mr-learning-base/base-05-section2-step1-2.png)
 
 > [!NOTE]
 > Solver를 추가하면(이 경우, DirectionalIndicator 구성 요소) SolverHandler 구성 요소가 Solver에 필요하기 때문에 자동으로 추가됩니다.
-
-> [!NOTE]
-> Directional Indicator Controller(스크립트)는 MRTK의 일부는 아니지만 자습서 자산에 포함되어 있습니다.
 
 DirectionalIndicator 및 SolverHandler 구성 요소를 다음과 같이 구성합니다.
 
@@ -72,7 +69,7 @@ DirectionalIndicator 및 SolverHandler 구성 요소를 다음과 같이 구성�
 > Scene(장면) 창에 카메라 광선이 보이지 않으면 위 이미지와 같이 Gizmo 메뉴가 활성화되어 있는지 확인합니다.
 
 > [!TIP]
-> 편집기 내 입력 시뮬레이션을 사용하는 방법은 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity)의 [편집기 내 손 입력 시뮬레이션을 사용하여 장면 테스트](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene) 가이드를 참조하세요.
+> 편집기 내 입력 시뮬레이션을 사용하는 방법은 [MRTK 설명서 포털](/windows/mixed-reality/mrtk-unity)의 [편집기 내 손 입력 시뮬레이션을 사용하여 장면 테스트](/windows/mixed-reality/mrtk-unity/features/input-simulation/input-simulation-service) 가이드를 참조하세요.
 
 > [!TIP]
 > 컴퓨터에 마이크가 있으면 음성 명령 "toggle diagnostics"를 사용하여 게임 창에 나타나는 Diagnostics(진단) 패널의 활성 상태를 쉽게 전환할 수 있습니다. 또는, MRTK Configuration Profile(MRTK 구성 프로필) > Diagnostics(진단) > Enable Diagnostics System(진단 시스템 활성화)에서 사용하지 않도록 설정할 수 있습니다. 하지만 일반적으로 개발 중에 Diagnostics System(진단 시스템)을 활성 상태로 유지하는 것이 좋습니다.
@@ -91,7 +88,7 @@ Hierarchy(계층 구조) 창에서 RoverExplorer > **RoverAssembly** 개체를 �
 > [!NOTE]
 > Magnetic Surfaces(자기 표면) 설정은 개체를 배치할 때 Tap To Place(스크립트) 구성 요소가 어떤 개체를 감지할 수 있는지 결정합니다. 이 설정을 Spatial Awareness(공간 인식) 전용으로 변경하면 Tap To Place(스크립트) 구성 요소는 Spatial Awareness라는 Unity 레이어의 개체에만 Rover를 배치할 수 있으며, 이것은 기본적으로 HoloLens에서 생성된 공간 인식 메시입니다.
 >
->레이어에 대해 자세히 알아보려면 Unity의 <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">레이어</a> 설명서를 참조하세요.
+> 레이어에 대해 자세히 알아보려면 Unity의 <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">레이어</a> 설명서를 참조하세요.
 
 > [!TIP]
 > HoloLens에서 Tap To Place 기능을 테스트할 때 공간 인식 메시를 보려면 Spatial Mesh Observer의 표시 옵션을 임시로 Visible로 설정하면 됩니다. 표시 옵션을 변경하는 방법은 [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침을 참조하세요.
@@ -140,7 +137,7 @@ Hierarchy(계층 구조) 창에서 임시 큐브를 선택한 상태로 Inspecto
 
 이 자습서에서는 MRTK의 Directional Indicator(방향 표시) Solver를 사용하여 UI 요소가 직관적으로 사용자를 개체로 안내하는 방법을 알아보았습니다. Tap To Place(탭하여 위치 지정) Solver를 사용하여 개체의 위치를 쉽게 조정하는 방법도 알아보았습니다.
 
-MRTK에 포함된 이러한 Solver와 다른 Solver에 대해 자세히 알아보려면 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)의 [Solvers](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver) 가이드를 참조하세요.
+MRTK에 포함된 이러한 Solver와 다른 Solver에 대해 자세히 알아보려면 [MRTK 설명서 포털](/windows/mixed-reality/mrtk-unity/)의 [Solvers](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver) 가이드를 참조하세요.
 
 > [!div class="nextstepaction"]
->[다음 자습서: 6. 사용자 인터페이스 만들기](mr-learning-base-06.md)
+> [다음 자습서: 6. 사용자 인터페이스 만들기](mr-learning-base-06.md)

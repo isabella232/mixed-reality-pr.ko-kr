@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, solvers, 시선 추적, 음성 명령
 ms.localizationpriority: high
-ms.openlocfilehash: 8bae8b821e7ffe67b745bbbab763193612a58485
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: abee2163c3b92897396ea35cc43ae025e8e7b804
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590415"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175505"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1. MRTK 자습서 소개
 
@@ -43,13 +43,24 @@ ms.locfileid: "99590415"
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 이상
 * [개발용으로 구성](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)된 HoloLens 2 디바이스
 
-* Unity 2019 LTS가 설치되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가된 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
+* Unity 2020.3 LTS 또는 Unity 2019.4 LTS가 설치된 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>(**OpenXR은 버그 방지를 위해 2020.3.8 이상 필요**)
 
-> [!CAUTION]
-> 이 자습서 시리즈에 추천되는 MRTK 버전은 MRTK 2.5.3입니다.
+Unity를 설치할 때는 **'Platforms'('플랫폼')** 아래에서 다음 구성 요소를 확인하세요.
 
-> [!CAUTION]
-> 이 자습서 시리즈에 추천되는 Unity 버전은 Unity 2019 LTS입니다. 이 버전은 필수 구성 요소에서 설명한 모든 Unity 버전 요구 사항을 대체합니다.
+* **유니버설 Windows 플랫폼 빌드 지원**
+* **Windows 빌드 지원(IL2CPP)**
+
+<img src="../../../develop/images/Unity_Install_Option_UWP.png" alt="Unity Universal Windows Platform Build Support option" width="600px">
+
+이러한 옵션 없이 Unity를 설치한 경우 Unity Hub의 **'Add Modules'('모듈 추가')** 메뉴를 통해 추가할 수 있습니다.
+
+<img src="../../../develop/images/Unity_Install_Option_UWP2.png" alt="Unity Hub - Add Module" width="600px">
+
+> [!Important]
+> 이 자습서 시리즈에 추천되는 MRTK 버전은 MRTK 2.7.2입니다.
+
+> [!Important]
+> 이 자습서 시리즈는 Open XR 또는 Windows XR 플러그 인을 사용하는 경우 Unity 2020 LTS(현재 2020.3.x)와 레거시 WSA 또는 Windows XR 플러그 인을 사용하는 경우 Unity 2019 LTS(현재 2019.4.x)를 지원합니다. 이 버전은 필수 구성 요소에서 설명한 모든 Unity 버전 요구 사항을 대체합니다.
 
 > [!div class="nextstepaction"]
 > [다음 자습서: 2. 프로젝트 초기화 및 첫 번째 애플리케이션 배포](mr-learning-base-02.md)

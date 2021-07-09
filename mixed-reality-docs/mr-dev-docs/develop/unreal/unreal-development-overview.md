@@ -7,18 +7,18 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 스트리밍, 원격, 혼합 현실, 개발, 시작, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, 홀로그램, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, OpenXR
-ms.openlocfilehash: 99540b9cd3473097896d847943b9736300000305
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1225c507ec46c6f42c2fc10582a7920802860ad0
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99421422"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394317"
 ---
 # <a name="unreal-development-overview"></a>Unreal 개발 개요
 
 ![Unreal 배너 로고](../images/unreal_logo_banner.png)
 
-<a href="https://docs.microsoft.com/windows/mixed-reality" target="_blank" title="혼합 현실 문서"> 혼합 현실 애플리케이션</a>의 시작은 방대한 작업입니다. 새로운 개념, 플랫폼 및 최첨단 하드웨어가 장애물처럼 느껴질 수 있습니다. 그러나 Unreal 개발자라면 운이 좋습니다. Unreal Engine 4는 <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Windows Mixed Reality Docs">Windows Mixed Reality</a>(VR) 및 <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="HoloLens 2 Docs">HoloLens 2</a>(AR) 디바이스를 완벽하게 지원합니다.
+<a href="/windows/mixed-reality" target="_blank" title="혼합 현실 문서"> 혼합 현실 애플리케이션</a>의 시작은 방대한 작업입니다. 새로운 개념, 플랫폼 및 최첨단 하드웨어가 장애물처럼 느껴질 수 있습니다. 그러나 Unreal 개발자라면 운이 좋습니다. Unreal Engine 4는 <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Windows Mixed Reality Docs">Windows Mixed Reality</a>(VR) 및 <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="HoloLens 2 Docs">HoloLens 2</a>(AR) 디바이스를 완벽하게 지원합니다.
 
 [!INCLUDE[](includes/tabs-unreal-features.md)]
 
@@ -38,9 +38,10 @@ Unreal 개발이 처음이라면 모르는 상태에서 넘어가지 마세요. 
 |  검사점  |  결과  |
 | --- | --- |
 | [최신 도구 설치](../install-the-tools.md) | 최신 버전의 Unreal Engine 다운로드/설치 및 혼합 현실 프로젝트 설정 |
+| [프로젝트 설정](unreal-project-setup.md) | 최신 버전의 Unreal Engine 및 MRTK 가져오기 |
 | [첫 번째 HoloLens Unreal 애플리케이션 만들기](unreal-quickstart.md) | 기본 혼합 현실 애플리케이션을 빌드하여 Unreal 및 HoloLens 개발 여정 시작 |
 | [HoloLens 2 자습서 시리즈](tutorials/unreal-uxt-ch1.md) | Unreal에서 혼합 현실 개발 설정, MRTK로 첫 번째 앱 빌드, HoloLens 2에 앱 배포 |
-| (선택 사항) Unreal에서 [OpenXR](../native/openxr.md) 시작 | Unreal에서 OpenXR 앱을 빌드하려면 다음 엔진 플러그 인을 사용하지 않도록 설정해야 합니다.<ul><li>Windows Mixed Reality</li></ul><br>GitHub에서 프로젝트에 다음 플러그 인을 다운로드하고 사용합니다.<ul><li> [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal)</li></ul><br>OpenXR에서 현재 지원되는 기능의 전체 목록은 [아래](#supported-features)에 나와 있습니다.|
+| Unreal에서 [OpenXR](../native/openxr.md) 시작 | Unreal Engine Marketplace에서 다음 플러그 인을 설치하고 사용하도록 설정합니다.<ul><li> [Microsoft OpenXR](https://www.unrealengine.com/marketplace/en-US/product/ef8930ca860148c498b46887da196239)</li></ul>Microsoft Windows Mixed Reality 플러그 인이 사용하지 않도록 설정되어 있는지 확인합니다.<br><br>OpenXR에서 현재 지원되는 기능의 전체 목록은 [아래](#supported-features)에 나와 있습니다.|
 
 ### <a name="2-core-building-blocks"></a>2. 핵심 구성 요소
 
@@ -75,9 +76,13 @@ HoloLens 2에 Unreal 앱을 처음 배포하는 경우 Epic Launcher에서 [지�
 
 ### <a name="5-adding-services"></a>5. 서비스 추가
 
-개발 과정의 이 시점에서 서비스를 추가하거나 상업적 배포에 도움을 받을 수 있습니다. [Azure Cloud Services](../mixed-reality-cloud-services.md) 및 Dynamics 365 기능을 통합하면 프로젝트 수준을 주요 방식으로 높일 수 있습니다. Mixed Reality 지식을 탐색하고 확장할 수 있는 몇 가지 시작점을 컴파일했습니다.
+개발 과정의 이 시점에서 서비스를 추가하거나 상업적 배포에 도움을 받을 수 있습니다. [Azure Cloud Services](../mixed-reality-cloud-services.md)를 통합하면 주요 방식으로 프로젝트 수준을 높일 수 있습니다. Mixed Reality 지식을 검색하고 확장할 수 있는 몇 가지 시작 지점을 컴파일했습니다.
 
 [!INCLUDE[](../includes/unreal-cloud-services-d365.md)]
+
+### <a name="6-low-code-alternatives"></a>6. 로우 코드 대안
+
+[!INCLUDE[](../includes/unreal-low-code.md)]
 
 ## <a name="whats-next"></a>다음 작업
 
@@ -93,7 +98,7 @@ Visual Studio가 설치된 디바이스에서 실행되는 동안 애플리케�
 
 ## <a name="supported-features"></a>지원되는 기능
 
-| HoloLens 2 기능 | 지원되는 가장 빠른 Unreal Engine 버전 | OpenXR(4.26)에서 지원됨 |
+| HoloLens 2 기능 | 지원되는 가장 빠른 Unreal Engine 버전 | OpenXR(4.26+)에서 지원됨 |
 | ----------- | ----------- | ----------- |
 | ARM64 지원 | 4.23 | ✔️ |
 | PC에서 스트리밍 | 4.23 | ✔️ |
@@ -102,21 +107,21 @@ Visual Studio가 설치된 디바이스에서 실행되는 동안 애플리케�
 | 시선 추적 | 4.23 | ✔️ |
 | 음성 입력 | 4.23 | ✔️ |
 | Spatial Anchors | 4.23 | ✔️ |
-| 카메라 액세스 | 4.23 |
+| 카메라 액세스 | 4.23 | ✔️ |
 | QR 코드 | 4.23 | ✔️ |
 | 공간 오디오 | 4.23 | ✔️ |
 | 스트리밍을 위한 관람자 화면 지원 | 4.24 |
 | 스트리밍을 통한 평면 LSR | 4.24 |
 | [샘플 앱](../features-and-samples.md) | 4.24 | ✔️ |
 | 모바일 다중 보기: 60FPS 성능 도달 | 4.25 | ✔️ |
-| 세 번째 카메라 렌더링 | 4.25 |
+| 세 번째 카메라 렌더링 | 4.25 | ✔️ |
 | 패키지 데스크톱 앱에서 스트리밍 | 4.25.1 | ✔️ |
-| Azure Spatial Anchors for HoloLens 2(베타) | 4.25 |
+| HoloLens 2용 Azure Spatial Anchors | 4.25 | ✔️ |
 | Mixed Reality UX Tools 지원 | 4.25 | ✔️ |
 | 개발자 문서 및 자습서 | 4.25 | ✔️ |
 | 시스템 키보드 | 4.26 | ✔️ |
 | HoloLens Media Player 플러그 인 | 4.26 | ✔️ |
-| iOS 및 Android용 Azure Spatial Anchors(베타) | 4.26 |
+| iOS 및 Android용 Azure Spatial Anchors | 4.26 |
 | Microsoft 공급업체별 OpenXR 확장이 포함된 Microsoft OpenXR 플러그 인 | 4.26 | ✔️ |
 | Azure에서 HoloLens 2로 스트리밍 | 4.26 | ✔️ |
 | 패키지에 포함된 앱에 대한 Windows 앱 인증 키트 규정 준수 | 4.26 | ✔️ |

@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 9e02ea6cb2710b4661e97dc8b0d5f4f48ab09fa7
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: f7cf43e8f1c040660b6a2688e234a271bc071b00
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98583906"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712656"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2. 프로젝트 및 첫 번째 애플리케이션 초기화
 
@@ -52,22 +52,17 @@ Unreal 편집기에서 프로젝트가 자동으로 열리므로, 다음 섹션�
 
 ## <a name="enabling-required-plugins"></a>필수 플러그 인 사용
 
-장면에 개체를 추가하기 전에 두 플러그 인을 사용하도록 설정해야 합니다.
+Microsoft의 혼합 현실 플랫폼을 통해 제공되는 기능을 사용하려면 먼저 Microsoft OpenXR 플러그 인을 설치하고 사용하도록 설정해야 합니다. 플러그 인에 대해 자세히 알아보려면 [GitHub](https://github.com/microsoft/Microsoft-OpenXR-Unreal)에서 프로젝트를 확인하세요.
 
-1. **편집 > 플러그 인** 을 열고 기본 제공 옵션 목록에서 **증강 현실** 을 선택합니다. 
-    * **HoloLens** 까지 아래로 스크롤하고 **사용** 을 선택합니다. 
+1. Epic Games Launcher를 엽니다. Unreal Engine Marketplace로 이동하여 "[Microsoft OpenXR](https://www.unrealengine.com/marketplace/product/ef8930ca860148c498b46887da196239)"을 검색합니다. 엔진에 플러그 인을 설치합니다.
 
-![HoloLens 플러그 인 사용](images/unreal-uxt/2-plugins.PNG)
+![Unreal Marketplace](images/unreal-uxt/2-openxr-plugin.PNG)
 
-2. 기본 제공 옵션 목록에서 **가상 현실** 을 선택합니다. 
-    * **Microsoft Windows Mixed Reality** 까지 아래로 스크롤하고, **사용** 을 선택한 다음, 편집기를 다시 시작합니다. 
+2. Unreal 편집기로 돌아가 **프로젝트 설정** > **플러그 인** 으로 이동하여 "Microsoft OpenXR"을 검색합니다. 플러그 인이 사용하도록 설정되어 있는지 확인하고 메시지가 나타나면 편집기를 다시 시작합니다.
 
-![Windows Mixed Reality 플러그 인 사용](images/unreal-uxt/2-virtual-reality-plugin.PNG)
+![Microsoft OpenXR 플러그 인 사용 설정](images/unreal-uxt/2-enable-plugin.PNG)
 
-> [!NOTE]
-> 두 플러그 인은 HoloLens 2 개발에 필요합니다.
-
-플러그 인을 사용하도록 설정하면 회사에 대한 빈 수준이 준비됩니다.
+Microsoft OpenXR 플러그 인을 사용하도록 설정하면 혼합 현실 개발에 필요한 다른 모든 플러그 인이 자동으로 사용하도록 설정됩니다. OpenXR을 사용하려면 "Microsoft Windows Mixed Reality" 플러그 인을 사용하지 않도록 설정해야 합니다. 
 
 ## <a name="creating-a-level"></a>수준 만들기
 다음 작업은 참조 및 규모에 대한 시작 지점과 큐브를 사용하여 플레이어 설정을 만드는 것입니다.

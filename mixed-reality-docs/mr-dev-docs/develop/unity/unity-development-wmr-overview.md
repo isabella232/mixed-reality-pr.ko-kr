@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 혼합 현실, 개발, 시작, 새 프로젝트, 포팅, 기능, 카메라, 시뮬레이션, 에뮬레이션, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 음성 입력, 위치를 찾을 수 있는 카메라, 에뮬레이터, Azure, 자습서
-ms.openlocfilehash: 50300ff08dd06c5fc250bc93979d537e10b38044
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: 074f42fd077d888523c2cf0a7da5bcafcfadb0f0
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528715"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906969"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>VR 및 Windows Mixed Reality용 Unity 개발
 
@@ -25,7 +25,7 @@ Unity를 처음 접하는 경우 계속하기 전에 Unity 학습 플랫폼에�
 
 ## <a name="development-checkpoints"></a>개발 검사점
 
-다음 검사점을 사용하여 Unity 게임 및 애플리케이션을 혼합 현실 세계로 가져옵니다. 
+다음 검사점을 사용하여 Unity 게임 및 애플리케이션을 혼합 현실 세계로 가져옵니다.
 
 ### <a name="1-getting-started"></a>1. 시작
 
@@ -34,7 +34,7 @@ Windows Mixed Reality 및 VR 개발을 위해 수동으로 변경해야 하는 �
 |  검사점  |  결과  |
 | --- | --- |
 | [최신 도구 설치](../install-the-tools.md) | 최신 Unity 패키지를 다운로드 및 설치하고, 혼합 현실에 맞게 프로젝트를 설정합니다. |
-| [WMR용 프로젝트 구성](windows-xr-plugin.md) | 홀로그램 및 VR 디스플레이 디바이스에서 디지털 콘텐츠를 렌더링하는 애플리케이션을 빌드하는 방법에 대해 알아봅니다. |
+| [VR 및 Windows Mixed Reality 헤드셋을 위한 프로젝트 구성](./xr-project-setup.md?tabs=openxr) | 홀로그램 및 VR 디스플레이 디바이스에서 디지털 콘텐츠를 렌더링하는 애플리케이션을 빌드하는 방법에 대해 알아봅니다. |
 
 > [!IMPORTANT]
 > 프로젝트 설정에 대한 자세한 내용은 Unity 프로젝트 [구성 가이드](choosing-unity-version.md)를 참조하세요.

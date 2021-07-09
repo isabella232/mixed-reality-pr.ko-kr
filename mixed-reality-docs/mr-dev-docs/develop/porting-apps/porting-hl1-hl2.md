@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 테스트, MRTK, MRTK 버전 2, HoloLens 2, unity, 포팅, HoloLens 1세대, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 마이그레이션, 모범 사례, ARM
-ms.openlocfilehash: 5315e4d391824bbc17bc4cc4c3c047d671063895
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 512bd3e841d40ffd606d59ee4bb4d955306cc2d0
+ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299898"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113042254"
 ---
 # <a name="porting-hololens-1st-gen-apps-to-hololens-2"></a>HoloLens(1세대) 앱을 HoloLens 2로 포팅
 
@@ -36,24 +36,11 @@ ms.locfileid: "107299898"
 
 ## <a name="migrate-project-to-the-latest-version-of-unity"></a>최신 버전의 Unity로 프로젝트 마이그레이션
 
-[MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity)를 사용하는 경우 [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases)는 Unity 또는 MRTK가 획기적으로 변경되지 않는 가장 적합한 장기적인 지원 경로입니다. 프로젝트에 현재 존재하는 [플러그 인 종속성](https://docs.unity3d.com/Manual/Plugins.html)을 평가하고 해당 DLL을 ARM64용으로 빌드할 수 있는지 여부를 확인하세요. 하드 ARM64 종속 플러그 인을 사용하는 프로젝트의 경우 ARM용 앱을 계속 빌드해야 할 수 있습니다.
-
-<!-- MRTK v2 always guarantees support for Unity 2018 LTS, but does not necessarily guarantee support for every iteration of Unity 2019.x.
-
-To help clarify additional differences between [Unity 2018 LTS](https://unity3d.com/unity/qa/lts-releases) and Unity 2019.x, the following table outlines the trade-offs between the two versions. The primary difference between the two is the ability to compile for ARM64 in Unity 2019.
-
-| Unity 2018 LTS | Unity 2019.x |
-|----------|-------------------|
-| ARM32 build support | ARM32 and ARM64 build support |
-| Stable LTS build release | Beta stability |
-| [.NET Scripting back-end](https://docs.unity3d.com/2018.4/Documentation/Manual/windowsstore-dotnet.html) *deprecated* | [.NET Scripting back-end](https://docs.unity3d.com/2018.4/Documentation/Manual/windowsstore-dotnet.html) *removed* |
-| UNET Networking *deprecated* | UNET Networking *deprecated* |
-
--->
+[MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity)를 사용하는 경우 프로젝트를 [Unity 2020.3 LTS](../unity/choosing-unity-version.md)로 업그레이드하기 전에 MRTK 2.7로 업데이트하는 것이 좋습니다. MRTK 2.7은 Unity 2018, 2019 및 2020을 지원하므로 Unity를 업그레이드하기 전에도 프로젝트가 Unity 2020을 사용할 준비가 되었는지 확인할 수 있습니다. 프로젝트에 현재 존재하는 [플러그 인 종속성](https://docs.unity3d.com/Manual/Plugins.html)을 평가하고 해당 DLL을 ARM64용으로 빌드할 수 있는지 여부를 확인하세요. 하드 ARM64 종속 플러그 인을 사용하는 프로젝트의 경우 ARM용 앱을 계속 빌드해야 할 수 있습니다.
 
 ## <a name="update-sceneproject-settings-in-unity"></a>Unity에서 장면/프로젝트 설정 업데이트
 
-[Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases)로 업데이트한 후 디바이스에서 최적의 결과를 얻으려면 Unity에서 특정 설정을 업데이트하는 것이 좋습니다. 이러한 설정은 [Unity의 권장 설정](../unity/Recommended-settings-for-Unity.md)에 자세히 설명되어 있습니다.
+[Unity 2020.3 LTS](https://unity3d.com/unity/qa/lts-releases)로 업데이트한 후 디바이스에서 최적의 결과를 얻으려면 Unity에서 특정 설정을 업데이트하는 것이 좋습니다. 이러한 설정은 [Unity의 권장 설정](../unity/Recommended-settings-for-Unity.md)에 자세히 설명되어 있습니다.
 
 [.NET 스크립팅 백 엔드](https://docs.unity3d.com/Manual/windowsstore-dotnet.html)는 Unity 2018에서 더 이상 사용되지 않으며 Unity 2019에서 **제거** 되었음을 거듭 알려 드립니다. 개발자는 프로젝트를 [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html)로 전환하는 것을 고려해야 합니다.
 
@@ -65,7 +52,7 @@ To help clarify additional differences between [Unity 2018 LTS](https://unity3d.
 
 ## <a name="compile-dependenciesplugins-for-arm-processor"></a>ARM 프로세서에 대한 종속성/플러그 인 컴파일
 
-HoloLens(1세대)는 x86 프로세서에서 애플리케이션을 실행하지만, HoloLens 2는 ARM 프로세서를 사용합니다. ARM을 지원하도록 기존 HoloLens 애플리케이션을 이식해야 합니다. 앞에서 설명한 대로 Unity 2018 LTS는 ARM32 앱 컴파일을 지원하지만, Unity 2019.x는 ARM32 및 ARM64 앱 컴파일을 지원합니다. 성능에 차이가 있으므로 ARM64 애플리케이션을 개발하는 것이 좋습니다. 그러나 이 경우 ARM64에 대해 모든 [플러그 인 종속성](https://docs.unity3d.com/Manual/Plugins.html)도 빌드해야 합니다.
+HoloLens(1세대)는 x86 프로세서에서 애플리케이션을 실행하지만, HoloLens 2는 ARM 프로세서를 사용합니다. ARM을 지원하도록 기존 HoloLens 애플리케이션을 이식해야 합니다. 앞에서 설명한 대로 Unity 2018 LTS는 ARM32 앱 컴파일을 지원하지만, Unity 2019 이상에서는 ARM32 및 ARM64 앱 컴파일을 지원합니다. 성능에 차이가 있으므로 ARM64 애플리케이션을 개발하는 것이 좋습니다. 그러나 이 경우 ARM64에 대해 모든 [플러그 인 종속성](https://docs.unity3d.com/Manual/Plugins.html)도 빌드해야 합니다.
 
 애플리케이션에서 모든 DLL 종속성을 검토하세요. 프로젝트에 더 이상 필요하지 않은 종속성을 제거하는 것이 좋습니다. 필요한 나머지 플러그 인의 경우 해당 ARM32 또는 ARM64 이진 파일을 Unity 프로젝트로 수집합니다.
 
@@ -80,27 +67,27 @@ HoloLens(1세대)는 x86 프로세서에서 애플리케이션을 실행하지�
 
 MRTK 버전 2를 사용하는 방법에 대한 자세한 내용은 다음 리소스를 확인하세요.
 
-- [MRTK - 설명서 홈](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity)
-- [설치 가이드](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/install-the-tools)
-- [MRTK - 손 추적](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/hand-tracking)
-- [MRTK - 시선 추적](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
+- [MRTK - 설명서 홈](/windows/mixed-reality/mrtk-unity)
+- [설치 가이드](/windows/mixed-reality/mrtk-unity/install-the-tools)
+- [MRTK - 손 추적](/windows/mixed-reality/mrtk-unity/features/input/hand-tracking)
+- [MRTK - 시선 추적](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 
 ### <a name="prepare-for-the-migration"></a>마이그레이션 준비
 
-새 [MRTK v2용 *.unitypackage 파일](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)을 삽입하기 전에 **1) MRTK v1과 통합되는 사용자 지정 코드** 및 **2) 입력 상호 작용 또는 UX 구성 요소에 대한 사용자 지정 코드** 인벤토리를 만드는 것이 좋습니다. MRTK v2를 수집하는 혼합 현실 개발자에게 가장 흔하게 나타나는 충돌은 입력 및 조작과 관련된 것입니다. 먼저 [MRTK v2 입력 모델](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview)을 읽고 이해하는 것이 중요합니다.
+새 [MRTK v2용 *.unitypackage 파일](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)을 삽입하기 전에 **1) MRTK v1과 통합되는 사용자 지정 코드** 및 **2) 입력 상호 작용 또는 UX 구성 요소에 대한 사용자 지정 코드** 인벤토리를 만드는 것이 좋습니다. MRTK v2를 수집하는 혼합 현실 개발자에게 가장 흔하게 나타나는 충돌은 입력 및 조작과 관련된 것입니다. 먼저 [MRTK v2 입력 모델](/windows/mixed-reality/mrtk-unity/features/input/overview)을 읽고 이해하는 것이 중요합니다.
 
-마지막으로, 새 [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity)는 스크립트 및 장면 내 관리자 개체의 모델에서 구성 및 서비스 공급자 아키텍처로 전환되었습니다. 이로 인해 보다 명확한 장면 계층 구조 및 아키텍처 모델이 구현되지만, 새로운 구성 프로필을 이해하기 위한 학습 곡선이 필요합니다. [Mixed Reality Toolkit 구성 가이드](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide)를 읽어보고 애플리케이션 요구에 맞게 조정해야 하는 중요한 설정 및 프로필에 익숙해지도록 합니다.
+마지막으로, 새 [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity)는 스크립트 및 장면 내 관리자 개체의 모델에서 구성 및 서비스 공급자 아키텍처로 전환되었습니다. 이로 인해 보다 명확한 장면 계층 구조 및 아키텍처 모델이 구현되지만, 새로운 구성 프로필을 이해하기 위한 학습 곡선이 필요합니다. [Mixed Reality Toolkit 구성 가이드](/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide)를 읽어보고 애플리케이션 요구에 맞게 조정해야 하는 중요한 설정 및 프로필에 익숙해지도록 합니다.
 
 ### <a name="migrating-the-project"></a>프로젝트 마이그레이션
 
 [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity)를 가져온 후 Unity 프로젝트에 컴파일러 관련 오류가 많이 나타날 가능성이 높습니다. 이러한 오류가 발생하는 가장 일반적인 이유는 새로운 네임스페이스 구조 및 새로운 구성 요소 이름 때문입니다. 새로운 네임스페이스 및 구성 요소에 맞게 스크립트를 수정하여 이러한 오류를 계속 해결합니다.
 
-HTK/MRTK와 MRTK v2 간의 특정 API 차이점에 대한 자세한 내용은 [MRTK 버전 2 wiki](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/updates-deployment/htk-to-mrtk-porting-guide)의 포팅 가이드를 참조하세요.
+HTK/MRTK와 MRTK v2 간의 특정 API 차이점에 대한 자세한 내용은 [MRTK 버전 2 wiki](/windows/mixed-reality/mrtk-unity/updates-deployment/htk-to-mrtk-porting-guide)의 포팅 가이드를 참조하세요.
 
 ### <a name="best-practices"></a>모범 사례
 
-- 기본적으로 [MRTK 표준 셰이더](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)를 사용합니다.
-- 한 번에 한 가지 중요 변경 유형 처리(예: IFocusable에서 [IMixedRealityFocusHandler](https://docs.microsoft.com/dotnet/api/microsoft.mixedreality.toolkit.input.imixedrealityfocushandler)로의 변경)
+- 기본적으로 [MRTK 표준 셰이더](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)를 사용합니다.
+- 한 번에 한 가지 중요 변경 유형 처리(예: IFocusable에서 [IMixedRealityFocusHandler](/dotnet/api/microsoft.mixedreality.toolkit.input.imixedrealityfocushandler)로의 변경)
 - 변경할 때마다 테스트하고 소스 제어를 사용합니다.
 - 가능한 경우 기본 MRTK UX(단추, 슬레이트 등)를 사용합니다.
 - MRTK 파일을 직접 수정하지 않고, MRTK 구성 요소에 대해 래퍼를 만듭니다.
@@ -109,7 +96,7 @@ HTK/MRTK와 MRTK v2 간의 특정 API 차이점에 대한 자세한 내용은 [M
 - quads, colliders 및 TextMeshPro 텍스트를 사용하여 캔버스 기반 UI를 다시 빌드합니다.
 - [깊이 버퍼 공유](../unity/camera-in-unity.md#sharing-depth-buffers) 또는 [포커스 포인트 설정](../unity/focus-point-in-unity.md)을 사용하도록 설정합니다. 성능 향상을 위해 16비트 깊이 버퍼를 사용하는 것이 좋습니다. 색을 렌더링할 때 깊이도 렌더링하는지 확인합니다. Unity는 일반적으로 투명 및 텍스트 gameobject에 대한 심도를 작성하지 않습니다.
 - 단일 패스 인스턴스 렌더링 경로를 설정합니다.
-- [MRTK에 대한 HoloLens 2 구성 프로필](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/profiles/profiles#hololens-2-profile) 사용
+- [MRTK에 대한 HoloLens 2 구성 프로필](/windows/mixed-reality/mrtk-unity/features/profiles/profiles#hololens-2-profile) 사용
 
 ### <a name="testing-your-application"></a>애플리케이션 테스트
 
@@ -152,8 +139,8 @@ HoloLens 2에 가장 적합하게 애플리케이션 디자인을 업데이트�
 ## <a name="see-also"></a>참고 항목
 
 * [도구 설치](../install-the-tools.md)
-* [MRTK - 설치 가이드](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/install-the-tools)
-* [MRTK - 설명서 홈](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity)
-* [HoloToolkit/MRTK에서 MRTK 버전 2로 포팅](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/updates-deployment/htk-to-mrtk-porting-guide)
+* [MRTK - 설치 가이드](/windows/mixed-reality/mrtk-unity/install-the-tools)
+* [MRTK - 설명서 홈](/windows/mixed-reality/mrtk-unity)
+* [HoloToolkit/MRTK에서 MRTK 버전 2로 포팅](/windows/mixed-reality/mrtk-unity/updates-deployment/htk-to-mrtk-porting-guide)
 * [Unity 권장 설정](../unity/recommended-settings-for-unity.md)
 * [혼합 현실의 성능 이해](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)

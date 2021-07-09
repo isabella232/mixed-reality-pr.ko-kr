@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 개체 상호 작용, 경계 컨트롤
 ms.localizationpriority: high
-ms.openlocfilehash: c2cca67afe19665ea899eb56140011bd9c756a7f
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: cbf2bbf78a34cfdd4856b7b8d192e4ac7c2f0154
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982866"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110265"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. 3D 개체와 상호 작용
 
@@ -88,7 +88,7 @@ Hierarchy(계층 구조) 창에서 **Rover 파트 개체** 를 다시 선택한 
 
 ![모든 로버 부품이 선택되고 Audio Source 구성 요소가 추가되고 구성된 Unity](images/mr-learning-base/base-07-section1-step1-4.png)
 
-Hierarchy(계층 구조) 창에서 RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** 개체를 펼쳐서 모든 배치 힌트 개체를 표시한 다음, 첫 번째 Rover 파트 RoverParts > **Camera_Part** 를 선택하고 **Part Assembly Controller(스크립트)** 구성 요소를 다음과 같이 구성합니다.
+계층 구조 창에서 RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** 개체를 펼쳐서 모든 배치 힌트 개체를 표시한 다음, Camera_part Rover 파트 RoverParts > **Camera_Part** 를 선택하고 **Part Assembly Controller(스크립트)** 구성 요소를 다음과 같이 구성합니다.
 
 * **Camera_PlacementHint** 개체를 **Location To Place**(배치할 위치) 필드에 할당
 
@@ -113,7 +113,7 @@ Hierarchy(계층 구조) 창에서 RoverExplorer > Buttons > **Reset**(초기화
 
 ![Reset 단추가 눌러져 있는 Unity 재생 모드 분할 보기](images/mr-learning-base/base-07-section1-step1-7.png)
 
-Object Manipulator 구성 요소 및 관련 속성에 대해 자세히 알아보려면 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)에서 [Object Manipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) 가이드를 참조하세요.
+Object Manipulator 구성 요소 및 관련 속성에 대해 자세히 알아보려면 [MRTK 설명서 포털](/windows/mixed-reality/mrtk-unity/)에서 [Object Manipulator](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-manipulator) 가이드를 참조하세요.
 
 ## <a name="adding-bounds-control"></a>경계 컨트롤 추가
 
@@ -134,7 +134,7 @@ Hierarchy(계층 구조) 창에서 **RoverExplorer** 개체를 선택한 다음,
 > 경계 컨트롤 시각화는 런타임에 생성되므로 게임 모드로 전환하기 전에는 보이지 않습니다.
 
 > [!NOTE]
->개체 조작자(스크립트)는 제약 조건 관리자(스크립트)를 자동으로 추가합니다.
+> 개체 조작자(스크립트)는 제약 조건 관리자(스크립트)를 자동으로 추가합니다.
 
 Hierarchy 창에서 Menu > **ButtonCollection** 개체를 펼쳐서 단추 4개를 표시하고 3번째 단추의 이름을 **BoundsControl_Enable** 로 변경한 다음, 인스펙터 창에서 **Button Config Helper (Script)** 구성 요소를 다음과 같이 구성합니다.
 
@@ -168,7 +168,7 @@ Hierarchy 창에서 Menu > **ButtonCollection** 개체를 펼쳐서 단추 4개�
 
 ![경계 컨트롤이 조작되고 있는 Unity 재생 모드 분할 보기](images/mr-learning-base/base-07-section2-step1-4.png)
 
-경계 컨트롤 구성 요소 및 관련 속성에 대한 자세한 정보를 보려면 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)에서 [경계 컨트롤](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) 가이드를 참조하세요.
+경계 컨트롤 구성 요소 및 관련 속성에 대한 자세한 정보를 보려면 [MRTK 설명서 포털](/windows/mixed-reality/mrtk-unity/)에서 [경계 컨트롤](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounds-control) 가이드를 참조하세요.
 
 ## <a name="congratulations"></a>축하합니다.
 

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, solvers, 그리드 개체 컬렉션
 ms.localizationpriority: high
-ms.openlocfilehash: 28cebe871e1046e8668a079affabf6167632cfa4
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: d5d10893ba8274139c6e09b8cd426d58a0b3a0cb
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105983038"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175471"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. 장면에서 개체 위치 지정
 
@@ -24,6 +24,37 @@ ms.locfileid: "105983038"
 
 * 장면에 개체를 배치하는 방법 알아보기
 * MRTK의 그리드 개체 컬렉션 기능을 사용하는 방법 알아보기
+
+## <a name="importing-the-textmeshpro-essential-resources"></a>TextMeshPro 필수 리소스 가져오기
+TextMeshPro 필수 리소스는 MRTK의 UI 요소에 필요합니다. Unity 메뉴에서 **Window**(창) > **TextMeshPro** > **Import TMP Essential Resources**(TMP 필수 리소스 가져오기)를 선택하여 Import Unity Package(Unity 패키지 가져오기) 창을 엽니다.
+
+![Unity Import TMP Essential Resources 메뉴 경로](images/mr-learning-base/base-02-section3-step1-1.png)
+
+Import Unity Package(Unity 패키지 가져오기) 창에서 **All(모두)** 단추를 클릭하여 모든 자산이 선택되었는지 확인한 다음, **Import(가져오기)** 단추를 클릭하여 자산을 가져옵니다.
+
+![Unity TMP 필수 리소스 가져오기 창](images/mr-learning-base/base-02-section3-step1-2.png)
+
+## <a name="importing-the-tutorial-assets"></a>자습서 자산 가져오기
+
+다음 Unity 사용자 지정 패키지를 다운로드합니다. 이 패키지에는 이 자습서에서 사용할 Mars Rover와 같은 3D 자산이 포함되어 있습니다.
+
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.5.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage)
+
+Unity 사용자 지정 패키지를 가져오려면 Unity 메뉴에서 **Assets** > **Import Package** > **Custom Package...** 를 차례로 선택하여 Import package... 창을 엽니다.
+
+![사용자 지정 패키지 가져오기](images/mr-learning-base/base-02-section7-step1-1.png)
+
+Import package... 창에서 다운로드한 **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage** 를 선택하고 [열기] 단추를 클릭합니다.
+
+![자산 패키지 선택](images/mr-learning-base/base-02-section7-step1-2.png)
+
+Import Unity Package(Unity 패키지 가져오기) 창에서 All(모두) 단추를 클릭하여 모든 자산이 선택되었는지 확인한 다음, Import(가져오기) 단추를 클릭하여 자산을 가져옵니다.
+
+![가져올 모든 자산 선택](images/mr-learning-base/base-02-section7-step1-3.png)
+
+자습서 자산을 가져오면 [프로젝트] 창이 다음과 같이 표시됩니다.
+
+![자산을 가져온 이후의 Unity 프로젝트 창](images/mr-learning-base/base-02-section7-step1-4.png)
 
 ## <a name="creating-the-parent-object"></a>부모 개체 만들기
 

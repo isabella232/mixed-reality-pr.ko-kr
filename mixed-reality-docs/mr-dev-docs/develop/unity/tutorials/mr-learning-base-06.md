@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, 프리팹, 홀로그램, 도구 설명
 ms.localizationpriority: high
-ms.openlocfilehash: 4400ce669863b719b409e11076ceb5689e21893e
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 0abfb4ea2fac3a2e50837c219a465c4ab002e69d
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982976"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110279"
 ---
 # <a name="6-creating-user-interfaces"></a>6. 사용자 인터페이스 만들기
 
@@ -67,7 +67,7 @@ ms.locfileid: "105982976"
 ![Hints 단추 개체 OnClick 이벤트가 구성된 Unity](images/mr-learning-base/base-06-section1-step1-5.png)
 
 > [!TIP]
-> Interactable 구성 요소는 모든 객체가 입력에 쉽게 상호 작용하고 응답할 수 있도록 하는 일체형 컨테이너입니다. Interactable은 터치, 손 광선, 말하기 등을 포함한 모든 유형의 입력에 대한 캐치 올(catch-all) 역할을 하며 이러한 상호 작용을 이벤트 및 시각적 테마 응답으로 전달합니다. 다양한 입력 유형에 맞게 구성하고 시각적 테마를 사용자 지정하는 방법에 대한 자세한 내용은 [MRTK 설명서 포털](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)의 [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) 가이드를 참조할 수 있습니다.
+> Interactable 구성 요소는 모든 객체가 입력에 쉽게 상호 작용하고 응답할 수 있도록 하는 일체형 컨테이너입니다. Interactable은 터치, 손 광선, 말하기 등을 포함한 모든 유형의 입력에 대한 캐치 올(catch-all) 역할을 하며 이러한 상호 작용을 이벤트 및 시각적 테마 응답으로 전달합니다. 다양한 입력 유형에 맞게 구성하고 시각적 테마를 사용자 지정하는 방법에 대한 자세한 내용은 [MRTK 설명서 포털](/windows/mixed-reality/mrtk-unity/)의 [Interactable](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable) 가이드를 참조할 수 있습니다.
 
 [계층 구조] 창에서 **Explode** 단추 개체를 선택한 다음, [검사기] 창에서 **Interactable.OnClick ()** 이벤트를 다음과 같이 구성합니다.
 
@@ -116,6 +116,9 @@ ButtonCollection에서 첫 번째 단추의 이름을 Indicator로 바꾼 다음
 
 > [!NOTE]
 > 이제 앱이 시작되면 갈매기형 Indicator(검사기)가 기본적으로 사용하지 않도록 설정되며, Indicator(검사기) 단추를 눌러 사용하도록 설정할 수 있습니다.
+
+> [!NOTE]
+> Directional Indicator Controller(스크립트)는 MRTK의 일부는 아니지만 자습서 자산에 포함되어 있습니다.
 
 두 번째 단추의 이름을 **TapToPlace** 로 바꾼 다음, [검사기] 창에서 **단추 구성 도우미(스크립트)** 구성 요소를 다음과 같이 구성합니다.
 
@@ -175,7 +178,7 @@ Project 창에서 **Package** > **Mixed Reality Toolkit Foundation** > **SDK** >
 
 ![모든 로버 부품 개체가 선택되고 ToolTipSpawner 구성 요소가 추가되고 구성된 Unity](images/mr-learning-base/base-06-section4-step1-2.png)
 
-[계층 구조] 창에서 첫 번째 로버 부품인 RoverParts > **Camera_Part** 를 차례로 선택하고, **ToolTipSpawner** 구성 요소를 다음과 같이 구성합니다.
+계층 구조 창에서 Camera_Part, RoverParts > **Camera_Part** 를 차례로 선택하고, **ToolTipSpawner** 구성 요소를 다음과 같이 구성합니다.
 
 * 부품 이름(예: **Camera**)을 반영하도록 **도구 설명 텍스트** 를 변경합니다.
 
@@ -197,4 +200,4 @@ Project 창에서 **Package** > **Mixed Reality Toolkit Foundation** > **SDK** >
 이 자습서에서는 Unity의 TextMeshPro 구성 요소와 함께 MRTK에서 제공하는 단추 및 메뉴 프리팹을 사용하여 간단한 사용자 인터페이스를 만드는 방법 및 눌렀을 때 이벤트를 트리거하도록 단추를 구성하는 방법을 알아보았습니다. 또한 동적 도구 설명 UI 요소를 추가하여 사용자에게 추가 정보를 제공하는 방법도 알아보았습니다.
 
 > [!div class="nextstepaction"]
->[다음 자습서: 7. 3D 개체와 상호 작용](mr-learning-base-07.md)
+> [다음 자습서: 7. 3D 개체와 상호 작용](mr-learning-base-07.md)

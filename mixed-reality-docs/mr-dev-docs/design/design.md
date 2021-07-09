@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 검색, 배포, 인덱스, 방문 페이지, 디자인, 개발, 자습서, 샘플 앱, 기본 사항, 사례 연구, 리소스, HoloLens 방법, 오픈 소스 프로젝트, 핵심 개념, 상호 작용, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 36af6b1c439c47eef2126408d1185ecfe151cf8b
-ms.sourcegitcommit: e9a0ba97fd288479ad324cdaabee9b6abc9f4dc2
+ms.openlocfilehash: c4d9f9b4c4be1c5012ac8dc84fb55e6c5fa9eaee
+ms.sourcegitcommit: 85ba3af69ec2a9056f759bab7b66f79f09a016b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107221565"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111454772"
 ---
 # <a name="start-designing-and-prototyping"></a>디자인 및 프로토타입 생성 시작
 
@@ -89,20 +89,20 @@ VR 또는 AR용으로 개발하는지에 관계없이 유동적인 몰입형 환
 
 :::row:::   
     :::column:::    
-       [![Unity 배우기](images/logo-unity.png)](https://learn.unity.com/)<br>
+        [![MRTK Figma Toolkit](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        **[Figma 도구 키트](figma-toolkit.md)**<br>   
+        Figma Toolkit은 UI 스케치 및 배치에 사용할 수 있는 자산을 제공합니다. 모든 UI 컨트롤은 MRTK에서 사용할 수 있는 구성 요소를 기반으로 합니다.
+    :::column-end:::        
+    :::column:::    
+       [![Unity 배우기](../images/Final_unity_logo.png)](https://learn.unity.com/)<br>
         **[Unity 배우기](https://learn.unity.com/)**<br>
         Unity를 사용하여 대화형 환경을 만드는 방법을 알아봅니다. 처음부터 끝까지 수행하여 알아봅니다.
     :::column-end:::    
     :::column:::    
         [![Mixed Reality Toolkit(MRTK)](images/74-12.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
-        **[Mixed Reality Toolkit(MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>  
+        **[Mixed Reality Toolkit(MRTK)](/windows/mixed-reality/mrtk-unity/)**<br>  
         공간 상호 작용 및 UI의 기본 구성 요소와 함께 Unity를 사용하여 혼합 현실 디자인 및 개발을 바로 시작합니다.   
     :::column-end:::
-    :::column:::    
-        [![혼합 현실 디자인 랩](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
-        **[혼합 현실 디자인 랩](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>  
-        MRTK의 기본 구성 요소를 사용하여 아름다운 혼합 현실 환경을 만드는 방법을 보여주는 샘플 앱을 다운로드하세요.
-    :::column-end:::        
     :::column:::    
         [![Microsoft Maquette](images/74-14.png)](https://www.maquette.ms/)<br>
         **[Microsoft Maquette](https://www.maquette.ms/)**<br>  

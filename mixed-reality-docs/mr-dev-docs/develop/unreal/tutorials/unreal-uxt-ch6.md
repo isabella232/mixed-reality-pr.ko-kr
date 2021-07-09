@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 7b706cf2a8685954ed916c825c3617ade190f1e0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 7dbf72a477f376e338d346965b5276eba00ab543
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98583658"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110711562"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. 패키징 후 디바이스 또는 에뮬레이터에 배포
 
@@ -34,7 +34,7 @@ ms.locfileid: "98583658"
 
 ![기본 RHI](../images/unreal/performance-recommendations-img-09.png)
 
-2.  Unreal 편집기로 돌아가서 **편집 > 프로젝트 설정** 으로 이동하고 **홀로그램 원격** 섹션에서 **원격 사용** 을 선택합니다.
+2.  Unreal 편집기로 돌아가서 **편집 > 프로젝트 설정** 으로 이동하고 **Open XR Holographic 원격** 섹션에서 **원격 사용** 을 선택합니다.
 
 3.  편집기를 다시 시작한 다음, 디바이스 IP 주소(홀로그램 원격 플레이어 앱에 표시됨)를 입력한 다음, **연결** 을 클릭합니다.
 

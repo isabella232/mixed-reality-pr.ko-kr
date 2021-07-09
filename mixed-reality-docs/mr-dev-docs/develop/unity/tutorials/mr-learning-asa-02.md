@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 5f16d3c12e6dbb977ecedc1598a28073cfb39222
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: eddde9b827dcf2a2f054f48a50f38946e5d98533
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105983146"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175567"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Azure Spatial Anchors 시작
 
@@ -31,43 +31,15 @@ ms.locfileid: "105983146"
 
 1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름(예: *MRTK Tutorials*) 지정
 2. [빌드 플랫폼 전환](mr-learning-base-02.md#switching-the-build-platform)
-3. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project)
-6. [장면 만들기 및 구성](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름(예: *AzureSpatialAnchors*) 지정
+3. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
+4. [Mixed Reality Toolkit 가져오기 및 Unity 프로젝트 구성](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [장면 만들기 및 구성](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) 및 장면에 적절한 이름(예: *AzureSpatialAnchors*) 지정
 
-그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 다음을 수행합니다.
+그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면의 MRTK 구성 프로필이 **DefaultHoloLens2ConfigurationProfile** 인지 확인하고, 공간 인식 메시의 표시 옵션을 **Occlusion(폐색)** 으로 변경합니다.
 
-1. **MRTK 구성 프로필** 을 **DefaultHoloLens2ConfigurationProfile** 로 변경
-1. **공간 인식 메시 표시 옵션** 을 **폐색** 으로 변경
+## <a name="installing-inbuilt-unity-packages-and-importing-the-tutorial-assets"></a>내장 Unity 패키지 설치 및 자습서 자산 가져오기
 
-## <a name="installing-inbuilt-unity-packages"></a>기본 제공 Unity 패키지 설치
-
-Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 [패키지 관리자] 창을 연 다음, **AR Foundation** 을 선택하고, **설치** 단추를 클릭하여 패키지를 설치합니다.
-
-![AR Foundation이 선택된 Unity Package Manager](images/mr-learning-asa/asa-02-section2-step1-1.png)
-
-> [!NOTE]
-> Azure Spatial Anchors SDK에 필요하므로 AR Foundation 패키지를 설치합니다. 이 패키지는 다음 섹션에서 가져옵니다.
-
-## <a name="importing-the-tutorial-assets"></a>자습서 자산 가져오기
-
-AzurespatialAnchors SDK V2.7.1을 Unity 프로젝트에 추가합니다. 패키지를 추가하려면 이 [자습서](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)를 따르세요.
-
-다음 Unity 사용자 지정 패키지를 **나열된 순서대로** 다운로드하여 **가져옵니다**.
-
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.5.3/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage)
-
-자습서 자산을 가져오면 [프로젝트] 창이 다음과 같이 표시됩니다.
-
-![자습서 자산을 가져온 후의 Unity 계층 구조, 장면 및 프로젝트 창](images/mr-learning-asa/asa-02-section3-step1-1.png)
-
-> [!NOTE]
-> 더 이상 사용되지 않는 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)'과 관련된 CS0618 경고가 표시되는 경우 이러한 경고를 무시할 수 있습니다.
-
-> [!TIP]
-> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [자습서 자산 가져오기](mr-learning-base-02.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.
+[!INCLUDE[](includes/installing-packages-for-asa.md)]
 
 ## <a name="preparing-the-scene"></a>장면 준비
 
@@ -84,6 +56,20 @@ AzurespatialAnchors SDK V2.7.1을 Unity 프로젝트에 추가합니다. 패키�
 
 > [!TIP]
 > 장면에 큰 아이콘(예: 방해가 되는 큰 틀의 'T' 아이콘)이 표시되는 경우 위 이미지와 같이 <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">Gizmos를 끄기 위치로 전환</a>하여 숨길 수 있습니다.
+
+계층 구조 창에서 **MixedRealityToolkit** 개체를 선택하고, 검사기 창에서 **구성 요소 추가** 단추를 사용하여 다음 구성 요소를 추가합니다.
+
+* AR 앵커 관리자(스크립트)
+* DisableDiagnosticsSystem(스크립트)
+
+![AR Anchor Manager 및 DisableDiagnosticsSystem 구성 요소가 추가된 Unity MixedRealityToolkit 개체 ](images/mr-learning-asa/asa-02-section4-step1-2.PNG)
+
+> [!WARNING]
+> ASA v2.9.0 및 v2.10.0-preview.1에는 두 개의 추가 개체를 장면에 배치해야 하는 알려진 문제가 있습니다. 속성 창에서 **구성 요소 추가** 단추를 사용하여 AR Camera Manager(스크립트) 및 AR Session(스크립트)을 **MixedRealityToolkit** 개체에 추가하세요. 검사기 창에서 카메라 개체 옆에 있는 확인란을 선택 해제하여 AR Camera Manager(스크립트)를 추가하는 동안 자동으로 생성되는 카메라를 사용하지 않도록 설정해야 합니다. 이 문제는 ASA v2.10.0의 전체 릴리스에서 해결될 것입니다.
+> 
+
+> [!NOTE]
+> AR Anchor Manager(스크립트) 구성 요소를 추가하면 AR Session Origin(스크립트) 구성 요소가 AR Anchor Manager(스크립트) 구성 요소에 필요하기 때문에 자동으로 추가됩니다.
 
 ## <a name="configuring-the-buttons-to-operate-the-scene"></a>장면을 작동하도록 단추 구성
 
@@ -153,15 +139,15 @@ Azure Spatial Anchors는 Unity에서 실행할 수 없으므로 Azure Spatial An
 앱이 디바이스에서 실행되는 경우 Azure Spatial Anchor 자습서 지침 패널에 표시되는 화면의 지시를 따릅니다.
 
 1. 큐브를 다른 위치로 이동
-1. Azure 세션 시작
-1. Azure 앵커 만들기(큐브의 위치에 앵커 만들기)
-1. Azure 세션 중지
-1. 로컬 앵커 제거(사용자가 큐브를 이동할 수 있도록 허용)
-1. 큐브를 다른 곳으로 이동
-1. Azure 세션 시작
-1. Azure 앵커 찾기(큐브를 3단계의 위치에 배치)
-1. Azure 앵커 삭제
-1. Azure 세션 중지
+2. Azure 세션 시작
+3. Azure 앵커 만들기(큐브의 위치에 앵커 만들기)
+4. Azure 세션 중지
+5. 로컬 앵커 제거(사용자가 큐브를 이동할 수 있도록 허용)
+6. 큐브를 다른 곳으로 이동
+7. Azure 세션 시작
+8. Azure 앵커 찾기(큐브를 3단계의 위치에 배치)
+9. Azure 앵커 삭제
+10. Azure 세션 중지
 
 ![Instructions 개체가 선택된 Unity](images/mr-learning-asa/asa-02-section7-step1-1.png)
 

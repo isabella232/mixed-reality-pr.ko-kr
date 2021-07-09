@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, learn, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 언어 번역, Azure, Azure cognitive services, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 1dee5448448cca83d96eee352765ddc33b37d606
-ms.sourcegitcommit: 47c402dc8e588817ce60229bf019170fa36f3045
+ms.openlocfilehash: e21f6245be5a47797c2b58fd8f57c4c6179b1751
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107581555"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906879"
 ---
 # <a name="mixed-reality-learn-overview"></a>Mixed Reality Learn 개요
 
@@ -23,7 +23,7 @@ Mixed Reality를 개발할 때 사용 가능한 도구가 많을수록 좋습니
 Microsoft Learn 모듈을 통해 Mixed Reality에서 능숙하게 개발할 수 있으며, Mixed Reality Toolkit, Unity, Azure 혼합 현실 서비스와 같은 핵심 도구를 시작할 수 있는 모듈 기반 구조를 제공합니다. Hello World를 매우 쉽게 출력할 수 있도록 단일 인터페이스에서 학습 목표와 필수 구성 요소를 계획하고 예상 완료 시간을 설정해 두었습니다. 
 
 > [!div class="nextstepaction"]
-> [Mixed Reality 학습 경로 시작](https://docs.microsoft.com/learn/browse/?terms=mixed%20reality)
+> [Mixed Reality 학습 경로 시작](/learn/browse/?terms=mixed+reality)
 
 ## <a name="general-modules"></a>일반 모듈
 
@@ -46,6 +46,22 @@ Mixed Reality 개발 공간만의 고유한 핵심 개념, 용어 및 디자인 
 ## <a name="unity-modules"></a>Unity 모듈
 
 이제 막 개발을 시작한 초보부터 경험 많은 전문가까지, Unity의 Mixed Reality 개발에 대한 실습 방식을 통해 더 빠르게, 더 자신 있게, 본인이 원하는 진도로 목표를 달성할 수 있습니다.
+
+### <a name="build-mixed-reality-digital-twins-with-azure-digital-twins-and-unity"></a>[Azure Digital Twins 및 Unity를 통해 혼합 현실 디지털 트윈 빌드](/learn/paths/build-mixed-reality-azure-digital-twins-unity/)
+
+실시간 3D 플랫폼인 Azure Digital Twins 및 Unity를 사용하여 혼합 현실 HoloLens 2 애플리케이션을 만드는 방법을 알아봅니다.
+
+**학습 목표**
+
+이 학습 경로를 완료하고 나면 다음을 수행할 수 있습니다.
+
+* Azure Digital Twins 및 Unity를 사용하여 HoloLens 2의 혼합 현실 솔루션을 빌드하기 위한 개발 환경 설치 및 구성
+* Microsoft Maps SDK와 함께 정적 및 동적 지형 데이터를 사용하여 Unity에서 3D 장면 만들기
+* MRTK 상호 작용을 사용하여 풍부한 사용자 환경 제공
+* Azure에서 디지털 트윈 데이터 원본에 연결
+* ADT 등의 Azure 서비스를 사용하여 Unity 장면에서 자산에 원격 분석 데이터 스트림
+* SignalR을 통해 HoloLens 2에서 데이터 시각화
+* HoloLens 2 앱에서 다시 Azure Digital Twins로 데이터 업데이트 보내기
 
 ### <a name="set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit"></a>[Mixed Reality Toolkit를 사용하여 Unity에서 혼합 현실 프로젝트 설정](/learn/modules/mixed-reality-toolkit-project-unity/)
 

@@ -1,18 +1,18 @@
 ---
 title: 혼합 현실이란?
-description: 이 문서에서는 Mixed Reality를 정의하고, AR 및 VR 디바이스가 Mixed Reality 스펙트럼을 따라 배치되는 위치를 보여 줍니다.
+description: Mixed Reality에 대한 토론, Mixed Reality 스펙트럼에서 AR 및 VR 디바이스 사용 시연.
 author: brandonbray
 ms.author: branbray
 ms.date: 08/26/2020
 ms.topic: article
 keywords: Mixed Reality, 홀로그래픽, AR, VR, MR, XR, 증강 현실, 가상 현실, 설명, 사례 연구, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란
 ms.localizationpriority: high
-ms.openlocfilehash: 2eac20b85ceeb9413dfc0b6820cceda2ddf335c5
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: e524312b2e479b1c3d05039403aba10de864ae18
+ms.sourcegitcommit: 5603dc9f6511707cb8b215f20f6c6485ef480538
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98583015"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "112230211"
 ---
 # <a name="what-is-mixed-reality"></a>혼합 현실이란?
 

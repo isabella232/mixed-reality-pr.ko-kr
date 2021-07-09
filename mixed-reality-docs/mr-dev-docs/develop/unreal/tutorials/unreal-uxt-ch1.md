@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 자습서, 시작, mrtk, uxt, UX Tools, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: a46b9fef96f75f3d80b9ebbd5cbd724730374b41
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: efa0bc210fc20b9e639954a06e97eb78661d87e5
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98580566"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712582"
 ---
 # <a name="1-getting-started"></a>1. 시작
 
@@ -32,7 +32,7 @@ ms.locfileid: "98580566"
 진행하기 전에 다음을 설치했는지 확인합니다.
 * Windows 10 1809 이상
 * Windows 10 SDK 10.0.18362.0 이상
-* [Unreal Engine](https://www.unrealengine.com/en-US/get-now) 4.25 이상
+* [Unreal Engine](https://www.unrealengine.com/en-US/get-now) 4.26 이상
 * [개발용으로 구성된](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode) Microsoft HoloLens 2 디바이스 또는 [에뮬레이터](../../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-2-emulator-overview)
 * Visual Studio 2019(아래 워크로드 포함)
 

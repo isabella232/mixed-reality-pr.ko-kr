@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows 장치 포털, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 83bc2183d40f9dbfb00799475522606ff59ccfa0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: d772175683208ac0e3ed4b3163ca561da416c1cf
+ms.sourcegitcommit: 593e8f80297ac0b5eccb2488d3f333885eab9adf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102117647"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112919814"
 ---
 # <a name="using-the-windows-device-portal"></a>Windows 장치 포털 사용
 
@@ -49,8 +49,9 @@ HoloLens용 Windows 장치 포털을 사용하면 Wi-Fi 또는 USB를 통해 원
 
 1. [HoloLens를 Wi-Fi에 연결합니다](/hololens/hololens-network).
 2. 다음 중 하나를 수행하여 디바이스의 IP 주소를 조회합니다.
-   * **설정 > 네트워크 및 인터넷 > Wi-Fi > 고급 옵션** 으로 차례로 이동합니다.
-   * **설정 > 네트워크 및 인터넷** 으로 차례로 이동하고, **하드웨어 속성** 을 선택합니다.
+  * **설정 > 네트워크 및 인터넷 > Wi-Fi > 고급 옵션** 으로 차례로 이동합니다.
+  * **설정 > 네트워크 및 인터넷** 으로 차례로 이동하고, **하드웨어 속성** 을 선택합니다.
+  * "내 IP 주소는 무엇인가요?" 음성 명령을 사용합니다.
 
 ![HoloLens 2 설정](images/using-windows-portal-img-02.jpg)
 
@@ -59,13 +60,30 @@ HoloLens용 Windows 장치 포털을 사용하면 Wi-Fi 또는 USB를 통해 원
 
 ## <a name="connecting-over-usb"></a>USB를 통한 연결
 
-1. [도구](../install-the-tools.md)를 설치하여 USB 연결을 사용하도록 설정하기 위해 Windows 10 개발자 도구가 설치된 Visual Studio가 PC에 있는지 확인합니다.
-
 > [!IMPORTANT]
-> USB 연결과 관련된 문제가 있으면 USB 디바이스 연결 선택적 구성 요소가 **[Visual Studio 도구 패키지](../install-the-tools.md#installation-checklist)** 의 일부로 설치되어 있는지 다시 확인하세요.
+> 새 브라우저 표준에서는 포트 10080을 사용해야 하므로 이에 따라 IpOverUsb는 더 이상 권장되지 않습니다. IpOverUsb를 계속 사용하려면 Visual Studio 설치 중에 기본적으로 선택되지 않는 'USB 디바이스 연결' 상자를 선택합니다. 대신 HoloLens 2에서 기본적으로 지원되는 UsbNcm으로 연결하는 것이 좋습니다. HoloLens 1을 사용하는 경우 WiFi를 사용하여 PC에 연결하는 것이 좋습니다.
 
-2. 마이크로 USB 케이블(HoloLens 1세대) 또는 USB-C(HoloLens 2)를 사용하여 HoloLens를 PC에 연결합니다.
-3. PC의 웹 브라우저에서 [http://127.0.0.1:10080](http://127.0.0.1:10080)으로 이동합니다.
+1. HoloLens 2에서 Windows Holographic 버전 21H1 이상을 실행하는 경우 설정 앱에서 '개발자용'으로 이동하여 '디바이스 검색'이 켜져 있는지 확인합니다. 
+2. USB-C 케이블을 사용하여 HoloLens 2를 PC에 연결합니다.
+3. UsbNcm IP를 찾습니다. 이 작업은 몇 가지 방법을 통해 수행할 수 있습니다.
+  * 디바이스의 설정 앱에서(이 방법은 '디바이스 검색'이 켜진 상태에서 Windows Holographic 버전 21H1 이상을 실행하는 HoloLenses에서만 작동합니다.)
+    1. 디바이스의 설정 앱으로 이동합니다.
+    2. "업데이트 및 보안" > "개발자용"으로 이동합니다. 이것은 디바이스 포털을 사용하도록 설정한 것과 동일한 위치입니다.
+    3. 페이지 하단에서 **이더넷** IP 주소를 복사합니다. UsbNcm IP입니다. 
+    ![HoloLens 2 설정 - UsbNcm IP](images/deviceportal_usbncm_ipaddress.jpg)
+
+  * 디바이스 포털에서 
+    1. 디바이스에서 HoloLens의 WiFi 주소를 사용하여 디바이스 포털을 엽니다. HoloLens의 WiFi 주소를 모르는 경우 "내 IP 주소는 무엇인가요?"라는 음성 명령을 사용할 수 있습니다.
+    2. 시스템 > 네트워킹으로 이동합니다.
+    3. "IP 구성" 패널의 페이지 맨 오른쪽에서 "설명: UsbNcm 기능"으로 시작하는 섹션을 찾습니다.
+    4. UsbNcm IP는 "IPv4 주소" 줄입니다. 주소를 복사하거나 주소를 클릭하기만 하면 됩니다. 이는 UsbNcm IP를 사용하여 디바이스 포털을 다시 여는 하이퍼링크입니다.
+  
+  * 명령 프롬프트에서
+    1. 명령 프롬프트에서 Windows 10 SDK가 설치된 bin\<SDK version>\x86 폴더(예: C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x86)로 이동합니다.
+    2. "winappdeploycmd devices"를 입력하고 Enter 키를 누릅니다.
+    3. 출력에서 모델/이름 열이 HOLOLENS-xxxxxx와 같은 HoloLens 디바이스 이름인 항목을 찾습니다. UsbNcm IP는 이 줄의 시작 부분에 있으며 169.254.x.x 형식의 자동 개인 IP 주소가 됩니다. 이 주소를 복사합니다. 
+ 
+4. UsbNcm IP를 복사한 경우 PC의 웹 브라우저에서 https://와 UsbNcm IP를 차례로 입력한 후 이동합니다.
 
 ### <a name="moving-files-over-usb"></a>USB를 통해 파일 이동
 
@@ -381,6 +399,8 @@ HoloLens에서 실시간 ETW(Windows용 이벤트 추적)를 관리합니다.
 테스트를 위해 입력 데이터를 기록 및 재생할 수 있습니다.
 * **공간 캡처**: 사용자의 주변에 대한 공간 매핑 메시를 포함하는 시뮬레이트된 공간 파일을 다운로드하는 데 사용됩니다. 공간의 이름을 지정한 다음, **캡처** 를 클릭하여 PC에 .xef 파일로 데이터를 저장합니다. 이 공간 파일을 HoloLens 에뮬레이터에 로드할 수 있습니다.
 * **녹화**: 녹화할 스트림을 선택하고 녹화본의 이름을 지정하고 **녹화** 를 클릭 또는 탭하여 녹화를 시작합니다. HoloLens를 사용하여 작업을 수행한 다음, **중지** 를 클릭하여 PC에 .xef 파일로 데이터를 저장합니다. 이 파일을 HoloLens 에뮬레이터 또는 디바이스에 로드할 수 있습니다.
+  >[!NOTE]
+  >녹음 기능은 현재 HoloLens 1세대에서만 사용할 수 있습니다. HoloLens 2에서는 아직 녹음이 지원되지 않지만 기존 녹음의 재생은 지원됩니다.
 * **재생**: **녹화본 업로드** 를 클릭 또는 탭하여 PC에서 xef 파일을 선택하고 HoloLens에 데이터를 보냅니다.
 * **제어 모드**: 드롭다운 목록에서 **기본** 또는 **시뮬레이션** 을 선택하고 **설정** 단추를 클릭 또는 탭하여 HoloLens의 모드를 선택합니다. "시뮬레이션"을 선택하면 HoloLens의 실제 센서를 사용할 수 없고 대신 업로드한 시뮬레이트된 데이터를 사용합니다. "시뮬레이션"으로 전환하면 HoloLens가 "기본"으로 다시 전환될 때까지 실제 사용자에게 응답하지 않습니다.
 

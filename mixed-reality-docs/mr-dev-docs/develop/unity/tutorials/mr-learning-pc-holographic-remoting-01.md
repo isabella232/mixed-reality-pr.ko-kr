@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, PC 홀로그램 원격, 도구 설명, 시선 추적
 ms.localizationpriority: high
-ms.openlocfilehash: 3c564c28485ca7e0595b9fd438af961dc5bc5986
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 05831ff19a998bd5e99ab5d20c3fb045a09c55e9
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982966"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175437"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. PC 홀로그램 원격 시작
 
@@ -34,13 +34,12 @@ HoloLens 2 자습서를 시작합니다. 2부로 구성된 이 자습서 시리�
 * 올바른 [도구가 설치](../../install-the-tools.md)된 상태로 구성된 Windows 10 PC
 * 기본적인 C# 프로그래밍 지식
 * [개발용으로 구성](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)된 HoloLens 2 디바이스
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>(Unity 2019 LTS가 탑재되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가되어 있음)
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>(Unity 2020/2019 LTS가 탑재되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가되어 있음)
 
 계속하기 전에 [시작](mr-learning-base-01.md) 자습서 시리즈 또는 Unity 및 MRTK에 대한 기본적인 사전 경험을 완료할 것을 **강력히 권장** 합니다.
 
 > [!IMPORTANT]
-> * 이 자습서 시리즈에 추천되는 Unity 버전은 Unity 2019 LTS입니다. 이는 위에서 연결된 필수 구성 요소에서 설명하는 모든 Unity 버전 요구 사항 또는 추천 사항을 대체합니다.
-> * MRTK 프로젝트를 사용한 홀로그램 원격 접속은 레거시 XR에서만 작동합니다. 지금은 XR SDK가 지원되지 않습니다.
+> * 이 자습서 시리즈는 Open XR을 사용하는 경우 Unity 2020 LTS(현재 2020.3.x)를 지원하고 레거시 WSA를 사용하는 경우 Unity 2019 LTS(현재 2019.4.x)를 지원합니다. 이는 위에 링크된 필수 조건에 명시된 모든 Unity 버전 요구 사항을 대체합니다.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Unity 프로젝트 만들기 및 준비
 
@@ -49,29 +48,16 @@ HoloLens 2 자습서를 시작합니다. 2부로 구성된 이 자습서 시리�
 이를 위해 먼저 [프로젝트 및 첫 번째 애플리케이션 초기화](mr-learning-base-02.md)를 수행합니다. 단, [디바이스에 애플리케이션 빌드](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 지침은 제외합니다. 단계는 다음과 같습니다.
 
 1. [Unity 프로젝트 만들기](mr-learning-base-02.md#creating-the-unity-project) 및 적절한 이름(예: *MRTK Tutorials*) 지정
-
 2. [빌드 플랫폼 전환](mr-learning-base-02.md#switching-the-build-platform)
-
-3. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-
-4. [Mixed Reality Toolkit 가져오기](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-
-5. [Unity 프로젝트 구성](mr-learning-base-02.md#configuring-the-unity-project)
-
-6. [장면 만들기 및 설정](mr-learning-base-02.md#creating-and-configuring-the-scene) 및 장면에 적절한 이름 지정(예: **PC Holographic Remoting**)
+3. [TextMeshPro 필수 리소스 가져오기](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
+4. [Mixed Reality Toolkit 가져오기 및 Unity 프로젝트 구성](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [장면 만들기 및 설정](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) 및 장면에 적절한 이름 지정(예: **PC Holographic Remoting**)
 
 그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면의 MRTK 구성 프로필을 **DefaultHoloLens2ConfigurationProfile** 로 변경합니다. 공간 인식 메시의 표시 옵션을 **폐색** 으로 변경합니다.
 
 ## <a name="importing-the-tutorial-assets"></a>자습서 자산 가져오기
 
-[MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage)를 다운로드하고 **가져옵니다**.
-
->[!TIP]
-> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [자습서 자산 가져오기](mr-learning-base-02.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.
-
-자습서 자산을 가져오면 [프로젝트] 창이 다음과 비슷하게 표시됩니다.
-
-![자습서 자산을 가져온 후의 Unity 계층 구조, 장면 및 프로젝트 창](images/mrlearning-pc-holographic-remoting/Tutorial1-Section2-Step1-1.png)
+[!INCLUDE[](includes/importing-tutorial-assets-pc-holographic-remoting.md)]
 
 ## <a name="configuring-and-preparing-the-scene"></a>장면 구성 및 준비
 

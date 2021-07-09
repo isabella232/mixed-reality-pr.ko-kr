@@ -7,12 +7,12 @@ ms.date: 04/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 응시, 응시 타깃팅, 상호 작용, 디자인, hololens, MMR, 멀티모달, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens
-ms.openlocfilehash: 37ac7475172977c8741c17817568cc9b5ad2a4e5
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 55e23ac2fb802af599fb9cc7d771d89d6ba36c47
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97847291"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196418"
 ---
 # <a name="introducing-instinctual-interactions"></a>직관적인 상호 작용 소개
 
@@ -28,6 +28,14 @@ MR에서 효과적이고 매력적이며 신비한 수천 가지의 상호 작�
 * 세 가지 주요 상호 작용 모델 및 각각에 필요한 구성 요소와 패턴에 대한 구체적인 지침
 * 당사 플랫폼이 제공하는 기타 혜택에 대한 추가 지침
 * 개발 시나리오에 적합한 상호 작용 모델을 선택하는 데 참고할 수 있는 일반 지침
+
+## <a name="basic-hand-tracking-and-instinctual-interactions-demo"></a>기본 손 추적 및 본능적 상호 작용 데모
+
+아래의 **홀로그램 디자인 - 머리 추적 및 시선 추적** 동영상 데모를 확인한 다음 보다 구체적인 항목으로 이동합니다.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
+
+*이 동영상은 "홀로그램 디자인" HoloLens 2 앱에서 가져온 것입니다. [여기](https://aka.ms/dhapp)에서 전체 환경을 다운로드하여 즐겨 보세요.*
 
 ## <a name="multimodal-interaction-models"></a>멀티모달 상호 작용 모델
 
