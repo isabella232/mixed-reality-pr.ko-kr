@@ -1,24 +1,25 @@
 ---
 title: 홀로그램이란?
-description: HoloLens를 사용 하면 전 세계에 표시 되는 조명 및 소리로 이루어진 3 차원 holograms을 보고 상호 작용할 수 있습니다.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 03/21/2018
+description: HoloLens 사용하면 주변 세계에 나타나는 3차원 홀로그램, 광원 및 소리로 구성된 개체를 보고 상호 작용할 수 있습니다.
+author: qianw211
+ms.author: v-qianwen
+ms.date: 07/09/2021
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens, holograms, 디자인, 상호 작용, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 확대 된 현실
-ms.openlocfilehash: cc6b4a4838e7a275b1ef3a45e54c4b894a04b9c2
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, HoloLens, 홀로그램, 디자인, 상호 작용, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 증강 현실이란?
+ms.openlocfilehash: bef2c378dcba54d3ed3da33262153f35d72c3cba
+ms.sourcegitcommit: b0b49ad27a0d09eb0a3d5df0c766bb4b7bbd8208
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583342"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113634334"
 ---
 # <a name="what-is-a-hologram"></a>홀로그램이란?
 
+HoloLens 사용하면 실제 개체처럼 주변 세계에 나타나는 광원과 소리로 구성된 개체인 **홀로그램을** 볼 수 있습니다. 홀로그램스 [응시,](../design/gaze-and-commit.md) [제스처](../design/gaze-and-commit.md#composite-gestures)및 음성 명령에 응답할 수 [있습니다.](../design/voice-input.md) 주위의 실제 [표면과](../design/spatial-mapping.md) 상호 작용할 수도 있습니다. 홀로그램스 전 세계의 일부인 디지털 개체입니다.
+
+<br>
+
 <iframe width="940" height="530" src="https://www.youtube.com/embed/MVXH5V8MVQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-HoloLens를 사용 하면 실제 개체와 같이 전 세계에 표시 되는 조명 및 소리로 구성 된 개체인 **holograms** 을 만들 수 있습니다. Holograms는 [응시](../design/gaze-and-commit.md), [제스처](../design/gaze-and-commit.md#composite-gestures)및 [음성 명령](../design/voice-input.md)에 응답 합니다. 사용자를 중심으로 [실제 서피스와](../design/spatial-mapping.md) 상호 작용할 수도 있습니다. 홀로그램을 사용하면 세계의 일부인 디지털 개체를 만들 수 있습니다.
 
 <br>
 
@@ -34,7 +35,7 @@ HoloLens를 사용 하면 실제 개체와 같이 전 세계에 표시 되는 �
     <tr>
         <td><strong>기능</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens(1세대)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>몰입형 헤드셋</strong></a></td>
     </tr>
      <tr>
@@ -49,60 +50,62 @@ HoloLens를 사용 하면 실제 개체와 같이 전 세계에 표시 되는 �
 
 ---
 
-## <a name="a-hologram-is-made-of-light-and-sound"></a>홀로그램은 가볍고 소리로 구성 됩니다.
+## <a name="a-hologram-is-made-of-light-and-sound"></a>홀로그램은 광원과 소리로 구성됩니다.
 
-HoloLens [렌더링](../develop/platform-capabilities-and-apis/rendering.md) 되는 holograms는 사용자의 눈 앞에 있는 holographic 프레임에 직접 나타납니다. Holograms를 전 세계에 추가 합니다. 즉, 디스플레이의 빛과 주변 광원을 모두 볼 수 있습니다. HoloLens는 눈동자에서 조명을 제거 하지 않으므로 holograms 색으로 렌더링 될 수 없습니다. 대신 검정색 콘텐츠가 투명 하 게 표시 됩니다.
+### <a name="light"></a>밝음
 
-Holograms에는 다양 한 모양과 동작이 있을 수 있습니다. 일부는 현실적인 및 반도체 이며, 다른 일부는 cartoonish 및 ethereal입니다. Holograms를 사용 하 여 사용자 환경에서 기능을 강조 표시 하거나 앱의 사용자 인터페이스에서이를 요소로 사용할 수 있습니다.
+HoloLens [렌더링되는](../develop/platform-capabilities-and-apis/rendering.md) 홀로그램은 홀로그램 프레임에서 사용자의 눈 바로 앞에 나타납니다. 홀로그램스 세계에 조명을 추가합니다. 즉, 디스플레이의 광원과 주변 세계의 광원을 모두 볼 수 있습니다. HoloLens 조명을 추가하는 가감 표시를 사용하므로 검은색이 투명하게 렌더링됩니다. 
 
-![홀로그램를 손으로 조작](images/hologram-hands-940px.jpg)
+홀로그램스 모양과 동작이 매우 다를 수 있습니다. 일부는 현실적이고 견고하며, 다른 일부는 설사하고 은밀합니다. 홀로그램을 사용하여 사용자 환경의 기능을 강조 표시하거나 앱의 사용자 인터페이스에서 요소로 사용할 수 있습니다.
 
-Holograms는 주변의 특정 장소에서 제공 되는 [소리](../design/spatial-sound.md)를 만들 수도 있습니다. HoloLens에서 소리는 소리를 포함 하지 않고 귀 바로 위에 있는 두 개의 스피커에서 제공 됩니다. 화면에 표시 되는 것과 마찬가지로, 사용자 환경의 소리를 차단 하지 않고 새 소리를 도입 하 여 스피커가 추가 됩니다.
+![홀로그램을 조작하는 손](images/hologram-hands-940px.jpg)
 
-<br>
+### <a name="sound"></a>소리
 
----
+홀로그램스 환경의 특정 위치에서 제공되는 것처럼 보이는 [소리를](../design/spatial-sound.md)생성할 수도 있습니다. HoloLens 소리는 음면 바로 위에 있는 두 개의 스피커에서 제공됩니다. 홀로그램 디스플레이와 마찬가지로, 화자는 가감성이 있으며 사용자 환경에서 소리를 차단하지 않고 새로운 소리를 도입합니다.
 
-## <a name="a-hologram-can-be-placed-in-the-world-or-tag-along-with-you"></a>홀로그램을 사용자와 함께 전 세계 또는 태그에 배치할 수 있습니다.
+## <a name="a-hologram-can-be-placed-in-the-world-or-tag-along-with-you"></a>홀로그램을 세계에 배치하거나 태그를 함께 배치할 수 있습니다.
 
-홀로그램의 특정 위치가 있는 경우 전 세계의 해당 지점에서 정확 하 게 [배치할](../design/coordinate-systems.md) 수 있습니다. 연습을 진행 하면서 홀로그램은 전 세계에 따라 안정적으로 보입니다. [공간 앵커](../design/coordinate-systems.md#spatial-anchors) 를 사용 하 여 개체를 고정 하는 경우에는 나중에 다시 돌아올 때 시스템의 위치를 기억할 수 있습니다.
+홀로그램의 고정 위치가 있는 경우 전 세계의 해당 지점에 정확하게 [배치할](../design/coordinate-systems.md) 수 있습니다. 진행하면서 홀로그램은 실제 개체처럼 주변 세계에 따라 고정된 것처럼 나타납니다. [공간 앵커를](../design/coordinate-systems.md#spatial-anchors) 사용하여 개체를 고정하는 경우 나중에 다시 돌아올 때 시스템에서 개체를 남겨둔 위치도 기억할 수 있습니다.
 
-![소매 공간에서 Microsoft Dynamics 365 레이아웃을 사용 하는 두 남자](images/HLS19_retailLayoutHologram_001-940px.jpg)
+![소매 공간에서 Microsoft Dynamics 365 레이아웃을 사용하는 두 명의 남성](images/HLS19_retailLayoutHologram_001-940px.jpg)
 
-일부 holograms 사용자를 대신 하 여 사용자에 따라 이동 하는 위치에 관계 없이 사용자를 기준으로 위치를 지정 합니다. 한 번의 사용자와 함께 홀로그램을 가져와서 다른 방에 들어온 후 벽에 놓을 수도 있습니다.
+일부 홀로그램은 사용자를 대신 따릅니다. 사용자에 따라 자신을 배치합니다. 홀로그램을 가져온 다음, 다른 방으로 들어가면 벽 위에 놓도록 선택할 수 있습니다.
 
 **모범 사례**
-* 일부 시나리오에서는 holograms가 쉽게 검색 가능 하거나 환경 전체에서 볼 수 있도록 요구할 수 있습니다. 이러한 종류의 위치에는 두 가지 상위 수준 방법이 있습니다. **"표시-잠김"** 및 **"본문 잠금"** 이라고 하겠습니다.
-   * 디스플레이 잠김 콘텐츠는 장치 디스플레이에 "메서드에 액세스할" 됩니다. 이러한 유형의 콘텐츠는 여러 사용자가 불편 하 게 하 고 "흔들기" 하려는 경우를 비롯 하 여 여러 가지 이유로 인해 복잡 합니다. 일반적으로 대부분의 디자이너는 표시 잠금 콘텐츠를 방지 하는 것이 더 좋습니다.
-   * 본문에서 잠긴 접근 방식은 훨씬 더 forgivable. 본문 잠금은 3d 공간에서 사용자의 본문 또는 응시 벡터에 홀로그램을 표시 하는 경우입니다. 대부분의 환경에서는 사용자가 응시를 "팔 로우" 하 여 사용자가 자신의 본문을 회전 하 고 홀로그램을 잃지 않고 공간 간을 이동할 수 있는 본문 잠금 동작을 채택 했습니다. 지연 시간을 통합 하면 홀로그램 이동이 보다 자연스럽 게 느껴질 수 있습니다. 예를 들어, Windows Holographic OS의 일부 핵심 UI는 사용자가 헤드를 끄는 동안 gentle, 탄력적 같은 지연 시간을 사용 하 여 사용자의 응시를 따르는 본문 잠금 변형을 사용 합니다.
-* 일반적으로 헤드에서 약 1-2 미터 떨어진 편안 하 게 볼 때 홀로그램을 준비 합니다.
-* Holographic 프레임에서 지속적으로 사용 해야 하는 요소에 대 한 드리프트를 제공 하거나 사용자가 관점을 변경할 때 디스플레이의 한 면에 콘텐츠에 애니메이션 효과를 주는 것이 좋습니다.
 
-**최적 영역에 holograms 두기-1.25 m에서 5 m 사이**
+* 일부 시나리오에서는 홀로그램을 환경 전체에서 쉽게 검색하거나 볼 수 있다고 요구합니다. 이러한 종류의 위치에는 두 가지 높은 수준의 접근 방식이 있습니다. 표시 잠금 및 **본문이** **잠긴** 를 호출해 보겠습니다.
+   * **디스플레이 잠금** 콘텐츠가 디스플레이 디바이스에 잠겨 있습니다. 이러한 유형의 콘텐츠는 여러 가지 이유로 인해 까다로운데, 여기에는 많은 사용자가 불편하게 만들고 "흔든다"고 하는 "불연연한 느낌"이 포함됩니다. 일반적으로 디자이너는 디스플레이 잠금 콘텐츠를 방지하는 것이 더 낫습니다.
+   * **본문이 잠긴** 콘텐츠는 훨씬 더 용인할 수 있습니다. 본문 잠금은 3D 공간에서 홀로그램을 사용자의 본문 또는 응시 벡터에 테더링하는 경우입니다. 많은 경험에서 홀로그램이 사용자의 응시를 따르는 신체 잠금 동작을 채택하여 사용자가 홀로그램을 손실하지 않고도 자신의 신체를 회전하고 공간을 이동할 수 있습니다. 지연을 통합하면 홀로그램 이동이 더 자연스럽게 느낄 수 있습니다. 예를 들어 Windows Holographic OS의 일부 핵심 UI는 사용자가 머리가 바뀌는 동안 탄력적인 탄력적 지연으로 사용자의 응시를 따르는 신체 잠금의 변형을 사용합니다.
+* 홀로그램을 일반적으로 머리에서 약 1-2미터 떨어진 보기 거리에 배치합니다.
+* 요소가 홀로그램 프레임에 지속적으로 있어야 하는 경우 드리프트할 수 있도록 허용하거나, 사용자가 보기를 변경할 때 콘텐츠를 디스플레이의 한 쪽으로 이동하는 것이 좋습니다. 자세한 내용은 스트리밍 [및 태그 따라](../design/billboarding-and-tag-along.md) 아티실을 참조하세요.
 
-두 미터는 가장 적합 하며,이 환경은 1 미터에서 더 가까운 수준으로 저하 됩니다. 1 미터 보다 가까운 거리에서 holograms 정기적으로 이동 하는 것은 고정 holograms 보다 문제가 될 가능성이 높습니다. 사용자가 예기치 않은 환경으로 jar 하지 않도록 콘텐츠가 너무 가까이 있을 경우 해당 콘텐츠를 정상적으로 클리핑 또는 페이드 아웃 하는 것이 좋습니다.
+**최적의 영역에 홀로그램 배치 - 1.25m에서 5m 사이**
 
-![사용자의 holograms를 배치 하는 데 가장 적합 한 거리입니다.](images/distanceguiderendering-950px.png)
+2미터는 가장 최적의 보기 거리입니다. 1미터에 가까워지면 환경이 저하됩니다. 1미터 미만의 거리에 있는 경우 정기적으로 깊이 이동하는 홀로그램은 고정 홀로그램보다 문제가 될 가능성이 높습니다. 콘텐츠가 너무 가까워지면 콘텐츠를 정상적으로 클리핑하거나 페이드 아웃하는 것이 좋습니다. 따라서 사용자가 보기가 너무 빠릅니다.
+
+![사용자로부터 홀로그램을 배치하기 위한 최적의 거리입니다.](images/distanceguiderendering-950px.png)
 
 <br>
 
 ---
 
-## <a name="a-hologram-interacts-with-you-and-your-world"></a>홀로그램은 사용자 및 전 세계와 상호 작용 합니다.
+## <a name="a-hologram-interacts-with-you-and-your-world"></a>홀로그램은 사용자 및 사용자 세계와 상호 작용합니다.
 
-Holograms는 빛과 소리를 위한 것이 아닙니다. 또한 전 세계의 활성 부분입니다. 홀로그램 및 제스처를 응시 하 고 홀로그램에서 팔 로우를 시작할 수 있습니다. 홀로그램에 음성 명령을 제공 하 고 회신할 수 있습니다.
+홀로그램스 조명과 소리에만 국한되지 않습니다. 또한 전 세계에서 활동적인 부분입니다. 홀로그램과 제스처를 손으로 응시하면 홀로그램이 따라오기 시작할 수 있습니다. 음성 명령을 제공하면 홀로그램이 응답할 수 있습니다.
 
-![Microsoft HoloLens 2를 사용 하 여 바람 팜 개발 프로젝트에서 공동 작업을 하는 정부 유틸리티 작업자 그룹](images/HLS19_governmentUtilitiesHologram_001-940px.jpg)
+![Microsoft HoloLens 2를 사용하여 풍력 발전 단지 개발 프로젝트에서 공동 작업하는 정부 유틸리티 작업자 그룹](images/HLS19_governmentUtilitiesHologram_001-940px.jpg)
 
-Holograms 다른 곳에서 가능 하지 않은 개인 상호 작용을 사용 하도록 설정 합니다. HoloLens에서 세계의 위치를 알 수 있기 때문에 holographic 문자는 대화방을 탐색할 때 눈에 직접 볼 수 있습니다.
+홀로그램스 다른 곳에서는 불가능한 개인 상호 작용을 사용하도록 설정합니다. HoloLens 세계 어디에 있는지 알고 있기 때문에 홀로그램 문자는 눈에서 직접 보고 대화를 시작할 수 있습니다.
 
-홀로그램도 주변과 상호 작용할 수 있습니다. 예를 들어 테이블 위에 holographic 바운스 구슬을 삽입할 수 있습니다. 그런 다음 [공중 탭](../design/gaze-and-commit.md#composite-gestures)을 사용 하 여 구슬 바운스를 시청 하 고 테이블에 도달할 때 소리를 만듭니다.
+홀로그램은 주변 환경과 상호 작용할 수도 있습니다. 예를 들어 홀로그램 바운드 볼을 테이블 위에 배치할 수 있습니다. 그런 [다음, 에어 탭을](../design/gaze-and-commit.md#composite-gestures)통해 공이 바운드되는 것을 보고 테이블에 적중될 때 소리를 내립니다.
 
-Holograms는 실제 개체에 의해 폐색 수도 있습니다. 예를 들어, holographic 문자는 외부의 도어를 살펴보고 벽 뒤에 있을 수 있습니다.
+홀로그램스 실제 개체에 의해 폐색될 수도 있습니다. 예를 들어 홀로그램 문자는 문과 벽 뒤에서 보이지 않는 것을 볼 수 있습니다.
 
-**Holograms와 실제 세계를 통합 하기 위한 팁**
-* Gravitational 규칙에 맞춰 holograms 더 쉽게 이익은 수 있습니다. 예: holographic & dog를 공간에 부동으로 두지 않고 테이블의 vase에 배치 합니다.
-* 대부분의 디자이너는 홀로그램을 보유 하 고 있는 표면에 "네거티브 그림자"를 만들어 더 이익은 holograms를 통합할 수 있는 것을 발견 했습니다. 홀로그램 주위에서 부드러운 광선을 만든 다음 광선에서 "그림자"를 빼서이를 수행 합니다. 소프트 광선은 실제 환경에서 조명에 그림자를 사용 하는 실제와 통합 됩니다.
+**홀로그램과 실제 세계를 통합하기 위한 팁**
+
+* 초대형 규칙에 맞게 조정하면 홀로그램을 더 쉽게 관련시키고 더 안정적으로 만들 수 있습니다. 예: 홀로그램 개를 공간에 부동하지 않고 테이블에 꽃병을 & 지면에 홀로그램 개를 놓습니다.
+* 많은 디자이너는 홀로그램이 있는 표면에 "음의 그림자"를 만들어 더 신뢰할 수 있는 홀로그램을 통합할 수 있음을 발견했습니다. 홀로그램 주위에 부드러운 후광을 만든 다음, 광선에서 "그림자"를 빼서 이 작업을 수행합니다. 소프트 후광은 실제 세계의 광원과 통합됩니다. 그림자는 환경에서 홀로그램을 접지하는 데 사용됩니다.
 
 <br>
 
@@ -110,13 +113,13 @@ Holograms는 실제 개체에 의해 폐색 수도 있습니다. 예를 들어, 
 
 :::row:::
     :::column:::
-        ## <a name="a-hologram-is-whatever-bryou-can-dream-upbr"></a>홀로그램은 어떤 것이 든 <br>다음을 수행할 수 있습니다.<br>
-        Holographic 개발자는 2D 화면 및 전 세계의 창의적인 기능을 활용할 수 있습니다.<br><br>
-        빌드 *를* 선택 하세요.
+        ## <a name="a-hologram-is-what-bryou-can-dream-upbr"></a>홀로그램이란? <br>다음을 기대할 수 있습니다.<br>
+        홀로그램 개발자는 2D 화면과 주변 세계로 독창함을 끊을 수 있는 능력을 갖습니다.<br><br>
+        무엇을 *빌드하시겠습니까?*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![거실에서 Holographic 허수](images/designoverview.jpg)<br>
+       ![회의실의 홀로그램 허수 세계](images/designoverview.jpg)<br>
     :::column-end:::
 :::row-end:::
 
@@ -126,7 +129,7 @@ Holograms는 실제 개체에 의해 폐색 수도 있습니다. 예를 들어, 
 
 ## <a name="next-discovery-checkpoint"></a>다음 검색 검사점
 
-준비된 [검색 과정](get-started-with-mr.md)을 수행하는 경우 Mixed Reality에 대한 기본 사항을 살펴보게 됩니다. 이제 다음 기본 항목으로 계속 진행할 수 있습니다. 
+앞에서 설명한 [검색 여정을](get-started-with-mr.md) 진행하면서 Mixed Reality 기본 사항들을 탐색하고 있습니다. 이제 다음 기본 항목으로 계속 진행할 수 있습니다. 
 
 > [!div class="nextstepaction"]
 > [디자인 프로세스 확장](case-study-expanding-the-design-process-for-mixed-reality.md)
