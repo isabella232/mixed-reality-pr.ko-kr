@@ -5,24 +5,24 @@ author: dongpark
 ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
-keywords: 고가, 스케치, Adobe XD, 디자인, 디자이너, 디자인 파일, UX 디자인, HoloLens, MRTK, 혼합 현실 도구 키트
-ms.openlocfilehash: a24f06b29accaa64a9095054f1e6f8df13a9162e
-ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
+keywords: 고가, 스케치, Adobe XD, 디자인, 디자이너, 디자인 파일, UX 디자인, HoloLens, mrtk, 혼합 현실 Toolkit
+ms.openlocfilehash: ef36e68e7340bc0a1500a9468db35d1e0b417ed6
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108644859"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224333"
 ---
 # <a name="figma-toolkit"></a>Figma 도구 키트
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Figma-Toolkit-MRTK/player]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGqke]
 
-고 지 수 도구 키트는 UI를 스케치 하 고 레이아웃 하는 데 사용할 수 있는 자산을 제공 합니다. 모든 UI 컨트롤은 MRTK에서 사용할 수 있는 구성 요소를 기반으로 합니다. 
+mrtk에 지 Toolkit에서는 mrtk for Unity 또는 mrtk for unreal에서 찾을 수 있는 HoloLens 2 스타일 UI 컨트롤의 2d 버전을 제공 합니다. 디자인 프로세스에서이를 사용 하 여 UI 레이아웃 및 storyboard를 만들 수 있습니다.
 
 > [!div class="nextstepaction"]
-> [표시 뷰 도구 키트](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Mixed-Reality-Toolkit-for-Figma?node-id=116%3A4)
+> [Toolkit 보기](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Figma-Toolkit-for-MRTK-%2F-HoloLens%2C-Windows-Mixed-Reality?node-id=116%3A4)
 
-## <a name="how-to-use-figma-toolkit"></a>는 방법 도구 키트를 사용 하는 방법
+## <a name="how-to-use-figma-toolkit"></a>Toolkit를 사용 하는 방법
 **초안 메뉴에 중복** 을 사용 하 여 복사본을 만듭니다.
 
 <img src="images/UX_Figma_Use1.png" width="500px" alt="Menu duplicate 1"><br>
@@ -46,9 +46,12 @@ ms.locfileid: "108644859"
 ## <a name="ui-gallery--components"></a>UI 갤러리 & 구성 요소
 UI 갤러리 및 구성 요소 페이지는 디자인에 사용할 수 있는 모든 구성 요소를 표시 합니다.
 
-![가이 도구 키트 예제-메뉴 UI 1](images/UX_FigmaToolkit_Components_Menu1.png)<br>
+![Toolkit 예제-메뉴 UI 1](images/UX_FigmaToolkit_Components_Menu1.png)<br>
 
-![가이 도구 키트 예제-메뉴 UI 2](images/UX_FigmaToolkit_Components_Menu2.png)<br>
+![Toolkit 예제-메뉴 UI 2](images/UX_FigmaToolkit_Components_Menu2.png)<br>
+
+
+![Toolkit 예제-메뉴 UI 4](images/UX_FigmaToolkit_Components_Menu3a.png)<br>
 
 **자산** 탭을 사용 하 여 이러한 구성 요소를 찾아보고 페이지로 끌어올 수 있습니다.
 
@@ -57,17 +60,17 @@ UI 갤러리 및 구성 요소 페이지는 디자인에 사용할 수 있는 �
 
 ## <a name="examples"></a>예
 
-는 메뉴 UI를 스케치 하는 데 유용 하 게 사용할 수 있습니다. 
+Toolkit는 메뉴 UI를 스케치 하는 데 유용할 수 있습니다. 
 
-![가이 도구 키트 예제-메뉴 UI 3](images/UX_FigmaToolkit_Examples_Menu.png)<br>
+![Toolkit 예제-메뉴 UI 5](images/UX_FigmaToolkit_Examples_Menu.png)<br>
 
 
 스토리 보 딩에 자산을 사용할 수 있습니다.
 
-![가이 도구 키트 예제-스토리 보 딩](images/UX_FigmaToolkit_Examples_Storyboarding.png)<br>
+![Toolkit 예제-스토리 보 딩](images/UX_FigmaToolkit_Examples_Storyboarding.png)<br>
 
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

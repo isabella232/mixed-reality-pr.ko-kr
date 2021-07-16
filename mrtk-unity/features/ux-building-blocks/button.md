@@ -1,26 +1,26 @@
 ---
 title: 단추
-description: MRTK의 단추에 대 한 개요
+description: MRTK의 단추 개요
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, MRTK 단추
-ms.openlocfilehash: 43570c225f25b9ea73c9d1fc4cc9b6c92b8c2dfc
-ms.sourcegitcommit: 848b4b7bb8514c2e088a3a55512b1a8075d29093
+ms.openlocfilehash: 16baeede2c63437e933eb1367f01af7f372cd62f
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "107003118"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114281857"
 ---
-# <a name="button"></a>단추
+# <a name="buttons"></a>단추
 
-![주 단추](../images/button/MRTK_Button_Main.png)
+![단추 기본](../images/button/MRTK_Button_Main.png)
 
-단추를 사용하면 즉각적인 작업을 트리거할 수 있습니다. 혼합 현실에서 가장 기본적인 구성 요소 중 하나입니다. MRTK는 다양 한 형식의 단추 prefabs 제공 합니다.
+단추를 사용하면 즉각적인 작업을 트리거할 수 있습니다. 혼합 현실에서 가장 기초적인 구성 요소 중 하나입니다. MRTK는 다양한 유형의 단추 프리팹을 제공합니다.
 
-## <a name="button-prefabs-in-mrtk"></a>MRTK의 단추 prefabs
+## <a name="button-prefabs-in-mrtk"></a>MRTK의 단추 프리팹
 
-폴더 아래에 있는 단추 prefabs의 예 ``MRTK/SDK/Features/UX/Interactable/Prefabs``
+폴더 아래의 단추 프리팹 예제 ``MRTK/SDK/Features/UX/Interactable/Prefabs``
 
 ### <a name="unity-ui-imagegraphic-based-buttons"></a>Unity UI 이미지/그래픽 기반 단추
 
@@ -29,7 +29,7 @@ ms.locfileid: "107003118"
 * `PressableButtonUnityUICircular.prefab`
 * `PressableButtonHoloLens2UnityUI.prefab`
 
-### <a name="collider-based-buttons"></a>Collider 기반 단추
+### <a name="collider-based-buttons"></a>충돌체 기반 단추
 
 :::row:::
     :::column:::
@@ -44,13 +44,13 @@ ms.locfileid: "107003118"
 :::row-end:::
 :::row:::
     :::column::: 
-    테두리 밝은, 근접 조명 및 압축 된 front와 같은 다양 한 시각적 피드백을 지 원하는 백 판이 있는 HoloLens 2의 셸 스타일 단추
+    HoloLens 2 테두리 조명, 근접 광원 및 압축된 앞면판과 같은 다양한 시각적 피드백을 지원하는 백플레이트의 셸 스타일 단추
     :::column-end:::
     :::column:::
-    HoloLens 2의 셸 스타일 단추 (backplate 불포함)
+    백플레이트 없는 HoloLens 2 셸 스타일 단추
     :::column-end:::
     :::column:::
-    원형 셰이프를 사용 하는 HoloLens 2의 셸 스타일 단추
+    원형 모양의 HoloLens 2 셸 스타일 단추
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -66,13 +66,13 @@ ms.locfileid: "107003118"
 :::row-end:::
 :::row:::
     :::column::: 
-    광역 HoloLens 2의 셸 스타일 단추 32x96mm
+    와이드 HoloLens 2 셸 스타일 단추 32x96mm
     :::column-end:::
     :::column:::
-    공유 백 판의 가로 HoloLens 2 단추 모음
+    공유 백플레이가 있는 가로 HoloLens 2 단추 모음
     :::column-end:::
     :::column:::
-    공유 백 판의 세로 HoloLens 2 단추 모음
+    공유 백플레이가 있는 세로 HoloLens 2 단추 모음
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -88,13 +88,13 @@ ms.locfileid: "107003118"
 :::row-end:::
 :::row:::
     :::column:::     
-    HoloLens 2의 셸 스타일 확인란 32x32mm
+    HoloLens 2 셸 스타일 확인란 32x32mm
     :::column-end:::
     :::column:::
-    HoloLens 2의 셸 스타일 스위치 32x32mm 
+    HoloLens 2 셸 스타일 스위치 32x32mm 
     :::column-end:::
     :::column:::
-    HoloLens 2의 셸 스타일 라디오 32x32mm
+    HoloLens 2 셸 스타일 라디오 32x32mm
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -110,21 +110,21 @@ ms.locfileid: "107003118"
 :::row-end:::
 :::row:::
     :::column:::  
-    HoloLens 2의 셸 스타일 확인란 32x96mm
+    HoloLens 2 셸 스타일 확인란 32x96mm
     :::column-end:::
     :::column:::
-    HoloLens 2의 셸 스타일 스위치 32x96mm
+    HoloLens 2 셸 스타일 스위치 32x96mm
     :::column-end:::
     :::column:::
-    HoloLens 2의 셸 스타일 라디오 32x96mm
+    HoloLens 2 셸 스타일 라디오 32x96mm
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::  
-    ![방사형 ](../images/button/MRTK_Button_Radial.png) **방사형**
+    ![](../images/button/MRTK_Button_Radial.png) **방사형 방사형**
     :::column-end:::
     :::column:::
-    ![확인란](../images/button/MRTK_Button_Checkbox.png) **확인란**
+    ![확인란 ](../images/button/MRTK_Button_Checkbox.png) **확인란**
     :::column-end:::
     :::column:::
     ![ToggleSwitch ](../images/button/MRTK_Button_ToggleSwitch.png) **ToggleSwitch**
@@ -154,7 +154,7 @@ ms.locfileid: "107003118"
 :::row-end:::
 :::row:::
     :::column:::  
-    HoloLens 1 세대 셸 스타일 단추
+    1세대 셸 스타일 단추 HoloLens
     :::column-end:::
     :::column:::
     둥근 모양 푸시 단추
@@ -164,61 +164,61 @@ ms.locfileid: "107003118"
     :::column-end:::
 :::row-end:::
 
-`Button`(자산/m a RTK/SDK/Features/UX/Interactable/Prefabs/prefab)는 [Interactable](interactable.md) 개념을 기반으로 하 여 단추 또는 다른 유형의 대화형 화면에 대 한 간편한 UI 컨트롤을 제공 합니다. 기준선 단추는 근접 한 상호 작용에 대 한 트레일러 입력을 포함 하는 모든 사용 가능한 입력 메서드를 지원 하며, 먼 상호 작용을 위해 응시 + 공기 탭도 지원 합니다. 음성 명령을 사용 하 여 단추를 트리거할 수도 있습니다.
+`Button`(Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/Button.prefab)은 상호 [작용 가능한](interactable.md) 개념을 기반으로 하여 단추 또는 다른 유형의 대화형 화면에 대한 쉬운 UI 컨트롤을 제공합니다. 기준선 단추는 가까운 상호 작용에 대한 연속 손 입력뿐만 아니라 원거리 상호 작용에 대한 응시 + 에어 탭을 포함하여 사용 가능한 모든 입력 메서드를 지원합니다. 음성 명령을 사용하여 단추를 트리거할 수도 있습니다.
 
-`PressableButtonHoloLens2` (Asset/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2)는 직접 추적 입력 단추를 정확 하 게 이동할 수 있도록 하는 HoloLens 2의 셸 스타일 단추입니다. 스크립트 `Interactable` 와 스크립트를 결합 `PressableButton` 합니다.
+`PressableButtonHoloLens2`(Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2.prefab)는 직접 손 추적 입력에 대한 단추의 정확한 이동을 지원하는 HoloLens 2 셸 스타일 단추입니다. `Interactable`스크립트와 `PressableButton` 스크립트를 결합합니다.
 
-HoloLens 2의 경우 불투명 backplate 사용 하는 단추를 사용 하는 것이 좋습니다. 투명 단추는 다음과 같은 유용성 및 안정성 문제로 인해 권장 되지 않습니다.
+HoloLens 2 경우 불투명 백플레이트에서 단추를 사용하는 것이 좋습니다. 이러한 유용성 및 안정성 문제로 인해 투명 단추는 권장되지 않습니다.
 
-* 물리적 환경에서 아이콘 및 텍스트를 읽기 어렵습니다.
-* 이벤트가 트리거되는 시기를 이해 하기 어렵습니다.
-* 투명 평면을 통해 표시 되는 Holograms는 HoloLens 2의 깊이 LSR 안정화를 사용 하 여 불안정 해질 수 있습니다.
+* 아이콘 및 텍스트는 물리적 환경에서 읽기 어렵습니다.
+* 이벤트가 트리거되는 시기를 이해하기 어렵습니다.
+* 투명 평면을 통해 표시되는 홀로그램스 HoloLens 2 깊이 LSR 안정화로 불안정할 수 있습니다.
 
-![Plated 단추](../images/button/MRTK_Button_UsePlated.png)
+![단추가 도금되었습니다.](../images/button/MRTK_Button_UsePlated.png)
 
-## <a name="how-to-use-pressable-buttons"></a>Pressable 단추를 사용 하는 방법
+## <a name="how-to-use-pressable-buttons"></a>누를 수 있는 단추를 사용하는 방법
 
 ### <a name="unity-ui-based-buttons"></a>Unity UI 기반 단추
 
-장면 (GameObject >-> Canvas)에서 캔버스를 만듭니다. 캔버스의 검사기 패널에서 다음을 수행 합니다.
+장면에서 Canvas를 만듭니다(GameObject -> UI -> Canvas). Canvas의 검사기 패널에서 다음을 수행합니다.
 
-* "MRTK 캔버스로 변환"을 클릭 합니다.
-* "NearInteractionTouchableUnityUI 추가"를 클릭 합니다.
-* Rect Transform 구성 요소의 X, Y 및 Z 소수 자릿수를 0.001으로 설정 합니다.
+* "MRTK 캔버스로 변환"을 클릭합니다.
+* "NearInteractionTouchableUnityUI 추가"를 클릭합니다.
+* Rect Transform 구성 요소의 X, Y 및 Z 배율 0.001로 설정
 
-그런 다음 (asset/ `PressableButtonUnityUI` mrtk/sdk/features/ux/Interactable/Prefabs/prefab), `PressableButtonUnityUICircular` (asset/MRTK/Sdk/FEATURES/Ux/Interactable/Prefabs/PressableButtonUnityUICircular) 또는 `PressableButtonHoloLens2UnityUI` (ASSET/mrtk/sdk/features/ux/prefab/Interactable/Prefabs)를 캔버스에 끌어 놓습니다.
+그런 다음 `PressableButtonUnityUI` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonUnityUI.prefab),(Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/)을 끕니다. `PressableButtonUnityUICircular` Canvas에 대한 PressableButtonUnityUICircular.prefab) 또는 `PressableButtonHoloLens2UnityUI` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2UnityUI.prefab)
 
-### <a name="collider-based-buttons"></a>Collider 기반 단추
+### <a name="collider-based-buttons"></a>충돌체 기반 단추
 
-(Asset `PressableButtonHoloLens2` /mrtk/sdk/features/ux/Interactable/Prefabs/PressableButtonHoloLens2) 또는 `PressableButtonHoloLens2Unplated` (자산/m RTK/Sdk/FEATURES/Ux/Interactable/Prefabs/PressableButtonHoloLens2Unplated)를 장면으로 끌어 놓기만 하면 됩니다. 이러한 단추 prefabs는 여러 개의 입력 형식에 대 한 오디오 시각적 피드백을 포함 하도록 이미 구성 되어 있습니다.
+`PressableButtonHoloLens2`(Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2.prefab) 또는 `PressableButtonHoloLens2Unplated` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2Unplated.prefab)을 장면으로 끌어다 붙입니다. 이러한 단추 프리팹은 이미 연속된 손 입력 및 응시를 포함하여 다양한 유형의 입력에 대한 오디오-시각적 피드백을 포함하도록 구성되어 있습니다.
 
-Prefab 자체와 [Interactable](interactable.md) 구성 요소에 노출 되는 이벤트를 사용 하 여 추가 작업을 트리거할 수 있습니다. [HandInteractionExample 장면의](../example-scenes/hand-interaction-examples.md) pressable 단추는 Interactable의 *OnClick* 이벤트를 사용 하 여 큐브의 색 변경을 트리거합니다. 이 이벤트는 pressable button 스크립트를 통해 실제 단추를 누르는 것 뿐만 아니라 응시, 공중 탭, 손으로 그린 등의 여러 입력 방법에 대해 트리거됩니다.
+프리팹 자체에 노출되는 이벤트와 [Interactable](interactable.md) 구성 요소를 사용하여 추가 작업을 트리거할 수 있습니다. [HandInteractionExample 장면의](../example-scenes/hand-interaction-examples.md) 누를 수 있는 단추는 Interactable의 *OnClick* 이벤트를 사용하여 큐브 색 변경을 트리거합니다. 이 이벤트는 응시, 에어 탭, 손 광선과 같은 다양한 유형의 입력 방법과 누를 수 있는 단추 스크립트를 통한 물리적 단추 누름에 대해 트리거됩니다.
 
 <img src="../images/button/MRTK_Button_HowToUse_Interactable.png" width="450" alt="How to Use Interactable">
 
-단추를 통해 pressable 단추가 *OnClick* 이벤트를 발생 시키는 시점을 구성할 수 있습니다 `PhysicalPressEventRouter` . 예를 들어 누름 시 이벤트를 *클릭* 하 여 *누르기* 를 설정 하는 대신 단추를 처음 누를 때 Interactable *를 실행 하도록 설정할 수* 있습니다.
+누를 수 있는 단추가 단추의 를 통해 *OnClick* 이벤트를 실행하면 구성할 수 `PhysicalPressEventRouter` 있습니다. 예를 들어 Click에서 Interactable On Click을 *Event On Press로* 설정하여 단추를 누르고 놓는 것과 달리 단추를 처음 누를 때 *OnClick을* 실행하도록 설정할 *수 있습니다.*
 
 <img src="../images/button/MRTK_Button_HowTo_Events.png" width="450" alt="How to use events">
 
-특정 트레일러 식 입력 상태 정보를 활용 하려면 pressable buttons 이벤트- *터치 시작*, *터치 종료*, *단추 누름*, *단추* 를 사용할 수 있습니다. 그러나 이러한 이벤트는 공중 탭, 손 광선 또는 눈 입력에 대 한 응답으로 발생 하지 않습니다. **Near 및 far 상호 작용을 모두 지원 하려면 Interactable의 *OnClick* 이벤트를 사용 하는 것이 좋습니다.**
+특정 명시적 손 입력 상태 정보를 활용하려면 누를 수 있는 단추 *이벤트(Touch Begin, Touch* *End,* *Button Pressed*, *Button Released)를* 사용할 수 있습니다. 그러나 이러한 이벤트는 에어 탭, 손 광선 또는 눈 입력에 대한 응답으로 발생하지 않습니다. **근거리 및 원거리 상호 작용을 모두 지원하려면 Interactable의 *OnClick* 이벤트를 사용하는 것이 좋습니다.**
 
 <img src="../images/button/MRTK_Button_HowTo_PressableButton.png" width="450"  alt="How to use Pressable Buttons">
 
 ## <a name="interaction-states"></a>상호 작용 상태
 
-유휴 상태에서는 단추의 front 판이 표시 되지 않습니다. 손가락으로 나 응시 입력의 커서가 표면을 대상으로 하는 경우 front 판의 광선 테두리가 표시 됩니다. Front 판금 표면의 fingertip 위치를 추가로 강조 표시 합니다. 손가락이 푸시되 면 front 판금이 fingertip으로 이동 합니다. Fingertip는 프런트 판의 표면에 닿을 때 터치 점에 대 한 시각적 피드백을 제공 하기 위한 미묘한 펄스 효과를 보여 줍니다.
+유휴 상태에서는 단추의 앞면이 표시되지 않습니다. 손가락이 접근하거나 응시 입력의 커서가 표면을 대상으로 할 때 앞면판의 후광 테두리가 표시됩니다. 앞면판 표면의 손끝 위치에 대한 추가 강조 표시가 있습니다. 손가락으로 밀면 앞면이 손가락 설명과 함께 이동합니다. 손끝이 전면판의 표면에 닿으면 터치 포인트에 대한 시각적 피드백을 제공하는 미묘한 펄스 효과를 보여 줍니다.
 
-HoloLens 2 shell 스타일 단추에는 많은 시각적 신호 및 affordances 있어 사용자의 상호 작용에 대 한 신뢰도를 높일 수 있습니다.
+HoloLens 2 셸 스타일 단추에는 상호 작용에 대한 사용자의 신뢰도를 높이는 많은 시각 신호와 어포던스가 있습니다.
 
-|  ![근접 조명](../images/button/ux_button_affordance_proximitylight.jpg) | ![포커스 강조 표시](../images/button/ux_button_affordance_focushighlight.jpg)  | ![케이지 압축](../images/button/ux_button_affordance_compression.jpg) | ![펄스 on 트리거](../images/button/ux_button_affordance_pulse.jpg) |
+|  ![근접 조명](../images/button/ux_button_affordance_proximitylight.jpg) | ![포커스 강조 표시](../images/button/ux_button_affordance_focushighlight.jpg)  | ![압축 압축](../images/button/ux_button_affordance_compression.jpg) | ![트리거의 펄스](../images/button/ux_button_affordance_pulse.jpg) |
 |:--- | :--- | :--- | :--- |
-| 근접 조명 | 포커스 강조 표시 | 케이지 압축 | 펄스 on 트리거 |
+| 근접 조명 | 포커스 강조 표시 | 압축 압축 | 트리거의 펄스 |
 
-미묘한 펄스 효과는 현재 상호 작용 하는 포인터에 살고 있는 *ProximityLight* 를 검색 하는 pressable 단추에 의해 트리거됩니다. 근접 조명이 발견 되 면 `ProximityLight.Pulse` 이 메서드를 호출 하 여 펄스를 표시 하는 셰이더 매개 변수에 자동으로 애니메이션 효과를 적용 합니다.
+미묘한 펄스 효과는 현재 상호 작용하는 포인터에 있는 *ProximityLight를* 찾는 누를 수 있는 단추에 의해 트리거됩니다. 근접 조명이 발견되면 `ProximityLight.Pulse` 메서드가 호출되어 셰이더 매개 변수에 자동으로 애니메이션을 적용하여 펄스를 표시합니다.
 
-## <a name="inspector-properties"></a>Inspector 속성
+## <a name="inspector-properties"></a>검사기 속성
 
-![단추 구조](../images/button/MRTK_Button_Structure.png)
+![단추 구조체](../images/button/MRTK_Button_Structure.png)
 
 **상자 Collider** 
  `Box Collider` 단추의 front 플레이트입니다.
@@ -251,16 +251,16 @@ MRTK 단추는 `ButtonConfigHelper` 구성 요소를 사용 하 여 단추의 �
 **아이콘 집합** 은 구성 요소에서 사용 하는 아이콘 자산의 공유 집합입니다 `ButtonConfigHelper` . 세 가지 아이콘 *스타일이* 지원 됩니다.
 
 * **쿼드** 아이콘은를 사용 하 여 쿼드로 렌더링 됩니다 `MeshRenderer` . 기본 아이콘 스타일입니다.
-* **스프라이트** 아이콘은를 사용 하 여 렌더링 됩니다 `SpriteRenderer` . 이 기능은 스프라이트 시트로 아이콘을 가져오거나 Unity UI 구성 요소와 아이콘 자산을 공유 하려는 경우에 유용 합니다. 이 스타일을 사용 하려면 스프라이트 편집기 패키지 **(Windows-> 패키지 관리자-> 2D 스프라이트)** 를 설치 해야 합니다.
+* **스프라이트** 아이콘은를 사용 하 여 렌더링 됩니다 `SpriteRenderer` . 이 기능은 스프라이트 시트로 아이콘을 가져오거나 Unity UI 구성 요소와 아이콘 자산을 공유 하려는 경우에 유용 합니다. 이 스타일을 사용 하려면 스프라이트 편집기 패키지 **(Windows > 패키지 관리자-> 2d 스프라이트)** 를 설치 해야 합니다.
 * **문자** 아이콘은 구성 요소를 사용 하 여 렌더링 됩니다 `TextMeshPro` . 이는 아이콘 글꼴을 사용 하는 것이 좋습니다. HoloLens 아이콘 글꼴을 사용 하려면 `TextMeshPro` 글꼴 자산을 만들어야 합니다.
 
 단추에 사용 되는 스타일을 변경 하려면 ButtonConfigHelper의 *아이콘* 드롭다운을 확장 하 고 *아이콘 스타일* 드롭다운에서를 선택 합니다.
 
-자산 메뉴를 사용 하 여 새 단추 아이콘 집합을 만들 수 있습니다. **> Mixed Reality Toolkit > 아이콘 집합을 만듭니다.** 쿼드 및 스프라이트 아이콘을 추가 하려면 해당 하는 배열로 끌어 놓기만 하면 됩니다. 문자 아이콘을 추가 하려면 먼저 글꼴 자산을 만들고 할당 해야 합니다.
+자산 메뉴를 사용 하 여 새 단추 아이콘 집합을 만들 수 있습니다. **> 혼합 현실 Toolkit > 아이콘 집합을 만듭니다.** 쿼드 및 스프라이트 아이콘을 추가 하려면 해당 하는 배열로 끌어 놓기만 하면 됩니다. 문자 아이콘을 추가 하려면 먼저 글꼴 자산을 만들고 할당 해야 합니다.
 
 MRTK 2.4 이상에서는 사용자 지정 아이콘 질감이 IconSet로 이동 하는 것이 좋습니다.
 프로젝트의 모든 단추에 대 한 자산을 새 권장 형식으로 업그레이드 하려면 ButtonConfigHelperMigrationHandler를 사용 합니다.
-(혼합 현실 도구 키트-> 유틸리티-> 마이그레이션 창-> 마이그레이션 처리기 선택-> MixedReality)
+(혼합 현실 Toolkit-> 유틸리티-> 마이그레이션 창-> 마이그레이션 처리기 선택-> MixedReality. Toolkit. ButtonConfigHelperMigrationHandler)
 
 단추를 업그레이드 하는 데 필요한 MixedRealityToolkit 패키지를 가져옵니다.
 
@@ -272,7 +272,7 @@ MRTK 2.4 이상에서는 사용자 지정 아이콘 질감이 IconSet로 이동 
 
 ### <a name="creating-a-hololens-icon-font-asset"></a>HoloLens 아이콘 글꼴 자산 만들기
 
-먼저 아이콘 글꼴을 Unity로 가져옵니다. Windows 컴퓨터에서는 *windows/Fonts/holomdl2* 에서 기본 HoloLens 글꼴을 찾을 수 있습니다. .ttf. 이 파일을 복사 하 여 자산 폴더에 붙여 넣습니다.
+먼저 아이콘 글꼴을 Unity로 가져옵니다. Windows 컴퓨터에서 *Windows/Fonts/holomdl2.ttf.* 기본 HoloLens 글꼴을 찾을 수 있습니다. 이 파일을 복사 하 여 자산 폴더에 붙여 넣습니다.
 
 다음으로, **Window > TextMeshPro > Font Asset creator** 를 통해 TextMeshPro Font 자산 작성자를 엽니다. HoloLens 글꼴 아틀라스를 생성 하기 위한 권장 설정은 다음과 같습니다. 모든 아이콘을 포함 하려면 다음 유니코드 범위를 *문자 시퀀스* 필드에 붙여넣습니다.
 
@@ -328,7 +328,7 @@ FrontPlate ![ 단추 크기 사용자 지정 1의 크기를 업데이트 합니�
 
 <img src="../images/button/MRTK_Button_Speech2.png" width="450" alt="Button speech 2">
 
-**참조-it 레이블** Pressable button prefab에는 *SeeItSayItLabel* 개체 아래에 자리 표시자 Textmesh Pro 레이블이 있습니다. 이 레이블을 사용 하 여 단추에 대 한 음성 명령 키워드를 사용자에 게 전달할 수 있습니다.
+**참조-it 레이블** pressable button prefab에는 *SeeItSayItLabel* 개체 아래에 자리 표시자 textmesh Pro 레이블이 있습니다. 이 레이블을 사용 하 여 단추에 대 한 음성 명령 키워드를 사용자에 게 전달할 수 있습니다.
 
 <img src="../images/button/MRTK_Button_Speech3.png" width="450" alt="Button Speech 3">
 
@@ -348,7 +348,7 @@ FrontPlate ![ 단추 크기 사용자 지정 1의 크기를 업데이트 합니�
 
 <img src="../images/button/MRTK_PressableButtonCube3.png" width="450" alt="pressable button cube 3">
 
-큐브를 선택 하면 개체에 색이 지정 된 여러 계층이 표시 됩니다. 그러면 **누름 설정** 에서 거리 값이 시각화 됩니다. 핸들을 사용 하 여 누르기를 시작할 시기 (개체 이동)와 이벤트를 트리거할 시기를 구성할 수 있습니다.
+큐브를 선택 하면 개체에 색이 지정 된 여러 계층이 표시 됩니다. 그러면 **설정 누르기** 의 거리 값이 시각화 됩니다. 핸들을 사용 하 여 누르기를 시작할 시기 (개체 이동)와 이벤트를 트리거할 시기를 구성할 수 있습니다.
 
 <img src="../images/button/MRTK_PressableButtonCube1.jpg" width="450" alt="Pressable Buton cube 1">
 
@@ -372,7 +372,7 @@ MRTK 표준 셰이더는 시각적 피드백을 쉽게 추가할 수 있게 해 
 
 <img src="../images/button/MRTK_PressableButtonCube4.png" width="450" alt="Pressable button cube 4">
 
-`Hover Light` `Proximity Light` **흐름 옵션** 을 선택 합니다. 이를 통해 근거리 (근접 조명)와 원거리 포인터 (가리키기 광원) 상호 작용에 대 한 시각적 피드백을 사용할 수 있습니다.
+`Hover Light` `Proximity Light` **Fluent 옵션** 을 선택 합니다. 이를 통해 근거리 (근접 조명)와 원거리 포인터 (가리키기 광원) 상호 작용에 대 한 시각적 피드백을 사용할 수 있습니다.
 
 <img src="../images/button/MRTK_PressableButtonCube5.png" width="450" alt="pressable button cube 5">
 
@@ -412,4 +412,4 @@ MRTK 표준 셰이더는 시각적 피드백을 쉽게 추가할 수 있게 해 
 ## <a name="see-also"></a>참조
 
 * [상호 작용 가능](interactable.md)
-* [시각적 개체 테마](visual-themes.md)
+* [시각적 테마](visual-themes.md)

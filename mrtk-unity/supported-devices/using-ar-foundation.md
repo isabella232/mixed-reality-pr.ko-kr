@@ -1,22 +1,22 @@
 ---
-title: AR Foundation을 통해 Android 및 iOS 빌드 및 배포
+title: Android 및 iOS에 배포(AR Foundation) [실험적]
 description: Unity에서 ANDROID 및 iOS(ARFoundation)용 MRTK를 구성하는 설명서
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, AR Core, AR Kit, iOS, IOS, Android, AR Foundation
-ms.openlocfilehash: 352afbbc11c7cc6fcd2557395c5dd36d956f396d
-ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
+ms.openlocfilehash: d127b9b39cbaa90f0c8c5a8a6ac7955f33404cbf
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112449742"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114281946"
 ---
-# <a name="building-and-deploying-to-android-and-ios-via-ar-foundation-experimental"></a>AR Foundation을 통해 Android 및 iOS에 빌드 및 배포 [실험적]
+# <a name="deploying-to-android-and-ios-ar-foundation-experimental"></a>Android 및 iOS에 배포(AR Foundation) [실험적]
 
 ## <a name="install-required-packages"></a>필요한 패키지를 설치합니다.
 
-1. [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/) 또는 Unity 패키지 관리자 **Microsoft.MixedReality.Toolkit.Unity.Foundation** 패키지를 [](../configuration/usingupm.md) 다운로드하여 가져옵니다.
+1. **Microsoft.MixedReality.Toolkit 다운로드하여 가져옵니다. GitHub** 또는 Unity [패키지 관리자](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/) [Unity.Foundation](../configuration/usingupm.md) 패키지
 
 1. Unity 패키지 관리자(UPM)에서 다음 패키지를 설치합니다.
 
@@ -41,7 +41,7 @@ ms.locfileid: "112449742"
     | AR Foundation  <br/> 버전: 3.1.3 |  AR Foundation  <br/> 버전: 4.0.12 |
     | ARCore XR 플러그 인 <br/> 버전: 3.1.4 | ARKit XR 플러그 인 <br/> 버전: 4.1.7 |
 
-1. 메뉴 항목을 호출하여 MRTK UnityAR 스크립팅 정의 업데이트: **Mixed Reality > Toolkit > Utilities > UnityAR > 업데이트 스크립팅 정의**
+1. 메뉴 항목을 호출하여 MRTK UnityAR 스크립팅 정의 업데이트: **Mixed Reality > Toolkit > 유틸리티 > UnityAR > 업데이트 스크립팅 정의**
 
     ![업데이트 스크립팅 정의](../features/images/UpdateScriptingDefineUnityAR.png)
 
@@ -77,15 +77,15 @@ ms.locfileid: "112449742"
     Unity AR 카메라 설정 공급자를 구성하는 방법에 대한 자세한 내용은 [Unity AR 카메라 설정 공급자를 참조하세요.](../features/camera-system/unity-ar-camera-settings.md)
 
 > [!NOTE]
-> 이 설치는 AR Foundation 구성 요소가 장면에 있는지 확인합니다(애플리케이션이 시작될 때). 그렇지 않으면 ARCore 및 ARKit에서 작동하도록 자동으로 추가됩니다.
+> 이 설치는 AR Foundation 구성 요소가 장면에 있는지(애플리케이션이 시작될 때) 확인합니다. 그렇지 않으면 ARCore 및 ARKit에서 작동하도록 자동으로 추가됩니다.
 > 특정 동작을 설정해야 하는 경우 필요한 구성 요소를 직접 추가해야 합니다.
 > AR Foundation 구성 요소 및 설치에 대한 자세한 내용은 이 [설명서를 참조하세요.](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@2.2/manual/index.html#samples)
 
 ## <a name="building-a-scene-for-android-and-ios-devices"></a>Android 및 iOS 디바이스에 대한 장면 빌드
 
-1. UnityAR 카메라 설정 공급자를 장면에 추가했는지 확인합니다.
+1. UnityAR Camera 설정 공급자를 장면에 추가했는지 확인합니다.
 
-1. Unity 빌드 설정에서 플랫폼을 Android 또는 iOS로 전환
+1. Unity 빌드 설정 플랫폼을 Android 또는 iOS로 전환
 
 1. 연결된 XR 플러그 인 관리 공급자가 사용하도록 설정되어 있는지 확인합니다.
 

@@ -1,16 +1,16 @@
 ---
-title: 설정 공급자 만들기
+title: 카메라 설정 공급자 만들기
 description: MRTK의 카메라 설정에 대한 데이터 공급자
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: d07b84c3cf550f9a235e58286b4cd239ac43b649
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 2151887a6162239e993634d5d346065362f1c428
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121191"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114282037"
 ---
 # <a name="creating-a-camera-settings-provider"></a>카메라 설정 공급자 만들기
 
@@ -24,9 +24,9 @@ ms.locfileid: "113121191"
 데이터 공급자는 다음 두 가지 방법 중 하나로 배포할 수 있습니다.
 
 1. 타사 추가 기능
-1. Microsoft Mixed Reality Toolkit의 일부
+1. Microsoft Mixed Reality Toolkit
 
-MRTK에 새 데이터 공급자를 제출하기 위한 승인 프로세스는 사례별로 다르며 초기 제안 시 전달됩니다. 새 [ *기능 요청* 형식 문제](https://github.com/microsoft/MixedRealityToolkit-Unity/issues)를 만들어 제안서를 제출할 수 있습니다.
+MRTK에 새 데이터 공급자를 제출하는 승인 프로세스는 사례별로 다르며 초기 제안 시 전달됩니다. 새 [ *기능 요청* 형식 문제](https://github.com/microsoft/MixedRealityToolkit-Unity/issues)를 만들어 제안서를 제출할 수 있습니다.
 
 ### <a name="third-party-add-ons"></a>타사 추가 기능
 
@@ -37,7 +37,7 @@ MRTK에 새 데이터 공급자를 제출하기 위한 승인 프로세스는 �
 - 추가 기능 생성 회사 이름
 - 기능 영역
 
-예를 들어 Contoso 회사에서 만들고 제공하는 카메라 설정 공급자는 *"Contoso.MixedReality.Toolkit.Camera"* 일 수 있습니다.
+예를 들어 Contoso 회사에서 만들고 제공하는 카메라 설정 공급자는 *"Contoso.MixedReality.Toolkit 수 있습니다. Camera"*.
 
 **폴더 구조**
 
@@ -51,7 +51,7 @@ MRTK에 새 데이터 공급자를 제출하기 위한 승인 프로세스는 �
 
 **네임스페이스**
 
-카메라 설정 공급자가 [Mixed Reality Toolkit 리포지토리에](https://github.com/Microsoft/MixedRealityToolkit-Unity)제출되는 경우 네임스페이스는 Microsoft.MixedReality.Toolkit(예: *Microsoft.MixedReality.Toolkit.CameraSystem)로* 시작해야 **합니다.**
+카메라 설정 공급자가 [Mixed Reality Toolkit 리포지토리에](https://github.com/Microsoft/MixedRealityToolkit-Unity)제출되는 경우 네임스페이스는 Microsoft.MixedReality로 시작해야 **합니다.** Toolkit(예: *Microsoft.MixedReality.Toolkit. CameraSystem*).
 
 **폴더 구조**
 
@@ -117,11 +117,11 @@ namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
 
 ## <a name="create-the-profile-and-inspector"></a>프로필 및 검사기 만들기
 
-Mixed Reality 도구 키트에서 데이터 공급자는 프로필을 사용하여 [구성됩니다.](../profiles/profiles.md)
+Mixed Reality Toolkit 데이터 공급자는 프로필을 사용하여 [구성됩니다.](../profiles/profiles.md)
 
 ### <a name="define-the-profile"></a>프로필 정의
 
-프로필 콘텐츠는 개발자가 선택할 수 있는 구성 옵션을 미러해야 합니다. 각 인터페이스에 정의된 사용자 구성 가능한 속성도 프로필에 포함되어야 합니다.
+프로필 콘텐츠는 개발자가 선택할 수 있는 구성 옵션을 미러해야 합니다. 각 인터페이스에 정의된 사용자 구성 가능 속성도 프로필에 포함되어야 합니다.
 
 ```c#
 using UnityEngine.SpatialTracking;
@@ -164,7 +164,7 @@ namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
 }
 ```
 
-`CreateAssetMenu`특성은 프로필 클래스에 적용하여 고객이 자산 만들기 Mixed Reality 도구 키트 프로필 메뉴를 사용하여 프로필 인스턴스를 **만들** 수 있도록 할 수  >    >    >  **있습니다.**
+`CreateAssetMenu`특성은 프로필 클래스에 적용하여 고객이 자산 **만들기** Mixed Reality Toolkit 프로필 메뉴를 사용하여 프로필  >  **인스턴스를** 만들 수 있도록 할 수  >    >  **있습니다.**
 
 ### <a name="implement-the-inspector"></a>검사기 구현
 
@@ -183,19 +183,19 @@ namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
 
 ## <a name="create-assembly-definitions"></a>어셈블리 정의 만들기
 
-Mixed Reality 도구 키트는 어셈블리 정의([.asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) 파일을 사용하여 구성 요소 간의 의존성을 지정하고 Unity를 통해 컴파일 시간을 단축합니다.
+Mixed Reality Toolkit 어셈블리 정의([.asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) 파일을 사용하여 구성 요소 간의 의존성을 지정하고 Unity를 통해 컴파일 시간을 단축합니다.
 
 모든 데이터 공급자 및 해당 편집기 구성 요소에 대해 어셈블리 정의 파일을 만드는 것이 좋습니다.
 
 이전 예제의 [폴더 구조를](#namespace-and-folder-structure) 사용하면 ContosoCamera 데이터 공급자에 대한 두 개의 .asmdef 파일이 있습니다.
 
-첫 번째 어셈블리 정의는 데이터 공급자에 대한 것입니다. 이 예제에서는 ContosoCamera라고 하며 예제의 *ContosoCamera* 폴더에 있습니다. 이 어셈블리 정의는 Microsoft.MixedReality.Toolkit 및 해당 어셈블리가 종속된 다른 어셈블리에 대한 종속성을 지정해야 합니다.
+첫 번째 어셈블리 정의는 데이터 공급자에 대한 것입니다. 이 예제에서는 ContosoCamera라고 하며 예제의 *ContosoCamera* 폴더에 있습니다. 이 어셈블리 정의는 Microsoft.MixedReality에 대한 종속성을 지정해야 합니다. Toolkit 및 해당 어셈블리가 의존하는 다른 어셈블리입니다.
 
 ContosoCameraEditor 어셈블리 정의는 프로필 검사자와 편집기별 코드를 지정합니다. 이 파일은 편집기 코드의 루트 폴더에 있어야 합니다. 이 예제에서 파일은 *ContosoCamera\Editor* 폴더에 있습니다. 이 어셈블리 정의에는 ContosoCamera 어셈블리에 대한 참조도 포함됩니다.
 
-- Microsoft.MixedReality.Toolkit
-- Microsoft.MixedReality.Toolkit.Editor.Inspectors
-- Microsoft.MixedReality.Toolkit.Editor.Utilities
+- Microsoft.MixedReality. Toolkit
+- Microsoft.MixedReality. Toolkit. Editor.Inspectors
+- Microsoft.MixedReality. Toolkit. Editor.Utilities
 
 ## <a name="register-the-data-provider"></a>데이터 공급자 등록
 

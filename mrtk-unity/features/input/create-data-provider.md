@@ -1,48 +1,48 @@
 ---
-title: 입력 데이터 공급자 만들기
+title: 입력 시스템 데이터 공급자 만들기
 description: MRTK에서 입력 시스템 및 데이터 공급자를 만드는 설명서
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: c164fa406ae6822f4d889aff3bf615cf7fa76337
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 0b6012871a4d4988fdb70336a3c33455f479bcac
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144076"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114281927"
 ---
 # <a name="creating-an-input-system-data-provider"></a>입력 시스템 데이터 공급자 만들기
 
-Mixed Reality Toolkit 입력 시스템은 입력 장치 지원을 사용 하기 위한 확장 가능한 시스템입니다. 새 하드웨어 플랫폼에 대 한 지원을 추가 하려면 사용자 지정 입력 데이터 공급자가 필요할 수 있습니다.
+Mixed Reality Toolkit 입력 시스템은 입력 디바이스 지원을 사용하도록 설정하는 데 사용할 수 있는 시스템입니다. 새 하드웨어 플랫폼에 대한 지원을 추가하려면 사용자 지정 입력 데이터 공급자가 필요할 수 있습니다.
 
-이 문서에서는 입력 시스템에 대해 장치 관리자 라고도 하는 사용자 지정 데이터 공급자를 만드는 방법을 설명 합니다. 여기에 표시 된 예제 코드는에서 가져온 것입니다 [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager) .
+이 문서에서는 입력 시스템에 대해 디바이스 관리자라고도 하는 사용자 지정 데이터 공급자를 만드는 방법을 설명합니다. 여기에 표시된 예제 코드는 에서 온 [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager) 것입니다.
 
-> 이 예제에서 사용 되는 전체 코드는 MRTK/Providers/WindowsMixedReality 폴더에서 찾을 수 있습니다.
+> 이 예제에 사용된 전체 코드는 MRTK/Providers/WindowsMixedReality 폴더에서 찾을 수 있습니다.
 
-## <a name="namespace-and-folder-structure"></a>네임 스페이스 및 폴더 구조
+## <a name="namespace-and-folder-structure"></a>네임스페이스 및 폴더 구조
 
-데이터 공급자는 타사 추가 기능 또는 Microsoft Mixed Reality 도구 키트의 일부로 배포할 수 있습니다. 새 데이터 공급자를 MRTK에 제출 하는 승인 프로세스는 사례별로 다르며 초기 제안의 시점에 전달 됩니다.
+데이터 공급자는 타사 추가 기능 또는 Microsoft Mixed Reality Toolkit 일부로 배포할 수 있습니다. MRTK에 새 데이터 공급자를 제출하는 승인 프로세스는 사례별로 다르며 초기 제안 시 전달됩니다.
 
 > [!Important]
-> 입력 시스템 데이터 공급자가 [Mixed Reality Toolkit 리포지토리에](https://github.com/Microsoft/MixedRealityToolkit-Unity)제출 되는 경우 네임 스페이스는 MixedReality (예: MixedReality)로 시작 **해야** 하 고 코드는 mrtk/providers (예: Mrtk/providers/WindowsMixedReality) 아래에 있는 폴더에 있어야 합니다.
+> 입력 시스템 데이터 공급자가 [Mixed Reality Toolkit 리포지토리에](https://github.com/Microsoft/MixedRealityToolkit-Unity)제출되는 경우 네임스페이스는 Microsoft.MixedReality로 시작해야 **합니다.** Toolkit(예: Microsoft.MixedReality.Toolkit. WindowsMixedReality) 및 코드는 MRTK/공급자(예: MRTK/Providers/WindowsMixedReality) 아래의 폴더에 있어야 합니다.
 
 ### <a name="namespace"></a>네임스페이스
 
-데이터 공급자는 잠재적 이름 충돌을 완화 하기 위해 네임 스페이스가 필요 합니다. 네임 스페이스는 다음 구성 요소를 포함 하는 것이 좋습니다.
+데이터 공급자는 잠재적인 이름 충돌을 완화하기 위해 네임스페이스가 있어야 합니다. 네임스페이스에는 다음 구성 요소가 포함되는 것이 좋습니다.
 
 - 회사 이름
 - 기능 영역
 
-예를 들어 Contoso 회사에서 만든 입력 데이터 공급자는 "MixedReality" 일 수 있습니다.
+예를 들어 Contoso 회사에서 만든 입력 데이터 공급자는 "Contoso.MixedReality"일 수 있습니다. Toolkit. 입력"을 입력합니다.
 
 ### <a name="recommended-folder-structure"></a>권장 폴더 구조
 
-다음 이미지와 같이 폴더 계층 구조에서 데이터 공급자에 대 한 소스 코드를 레이아웃 되도록 하는 것이 좋습니다.
+다음 이미지와 같이 데이터 공급자의 소스 코드를 폴더 계층 구조에 배치하는 것이 좋습니다.
 
 ![폴더 구조의 예](../images/input/ExampleProviderFolderStructure.png)
 
-여기서 ContosoInput에는 데이터 공급자의 구현이 포함 되 고 편집기 폴더에는 검사기 (및 기타 Unity 편집기 관련 코드)가 포함 되며, 텍스처 폴더에는 지원 되는 컨트롤러의 이미지가 포함 되 고, 프로필에는 하나 이상의 미리 구성 된 프로필이 포함 됩니다.
+ContosoInput에 데이터 공급자의 구현이 포함된 경우 Editor 폴더에는 검사기(및 다른 Unity 편집기 관련 코드)가 포함되고 Textures 폴더에는 지원되는 컨트롤러의 이미지가 포함되고 Profiles에는 미리 만들어진 프로필이 하나 이상 포함되어 있습니다.
 
 > [!Note]
 > 몇 가지 일반적인 컨트롤러 이미지는 MixedRealityToolkit\StandardAssets\Textures 폴더에서 찾을 수 있습니다.
@@ -63,7 +63,7 @@ public class WindowsMixedRealityDeviceManager :
 { }
 ```
 
-> `IMixedRealityCapabilityCheck` 사용 되는 `WindowsMixedRealityDeviceManager` 입력된 기능 집합에 대 한 지원을 제공 함을 나타내기 위해 특히, 굴절된 손, 응시 제스처 음성 손 및 모션 컨트롤러입니다.
+> `IMixedRealityCapabilityCheck` 사용 되는 `WindowsMixedRealityDeviceManager` 입력된 기능 집합에 대 한 지원을 제공 함을 나타내기 위해 특히, 굴절형 손, 응시 제스처 음성 손 및 모션 컨트롤러입니다.
 
 #### <a name="apply-the-mixedrealitydataprovider-attribute"></a>MixedRealityDataProvider 특성 적용
 
@@ -104,18 +104,18 @@ public class WindowsMixedRealityDeviceManager :
 
  예제를 `WindowsMixedRealityDeviceManager` 정의 하 고 다음 컨트롤러 클래스를 구현 합니다.
 
-> 이러한 각 클래스에 대 한 소스 코드는 MRTK/Providers/WindowsMixedReality 폴더에서 찾을 수 있습니다.
+> 이러한 각 클래스의 소스 코드는 MRTK/Providers/WindowsMixedReality 폴더에서 찾을 수 있습니다.
 
-- WindowsMixedRealityArticulatedHand
-- WindowsMixedRealityController
-- WindowsMixedRealityGGVHand
+- WindowsMixedRealityArticulatedHand.cs
+- WindowsMixedRealityController.cs
+- WindowsMixedRealityGGVHand.cs
 
 > [!Note]
-> 일부 장치 관리자는 여러 컨트롤러 유형을 지원 하지 않습니다.
+> 일부 디바이스 관리자는 여러 컨트롤러 유형을 지원하지 않습니다.
 
 #### <a name="apply-the-mixedrealitycontroller-attribute"></a>MixedRealityController 특성 적용
 
-그런 다음 [`MixedRealityController`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityControllerAttribute) 클래스에 특성을 적용 합니다. 이 특성은 컨트롤러 유형 (예: 트레일러 식), 손 모양 (예: 왼쪽 또는 오른쪽) 및 선택적 컨트롤러 이미지를 지정 합니다.
+다음으로 특성을 [`MixedRealityController`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityControllerAttribute) 클래스에 적용합니다. 이 특성은 컨트롤러의 유형(예: 굴절된 손), 손수(예: 왼쪽 또는 오른쪽) 및 선택적 컨트롤러 이미지를 지정합니다.
 
 ```c#
 [MixedRealityController(
@@ -127,9 +127,9 @@ public class WindowsMixedRealityDeviceManager :
 
 #### <a name="configure-the-interaction-mappings"></a>상호 작용 매핑 구성
 
-다음 단계는 컨트롤러에서 지 원하는 상호 작용 매핑 집합을 정의 하는 것입니다. Unity의 입력 클래스를 통해 데이터를 수신 하는 장치의 경우 [컨트롤러 매핑 도구](../tools/controller-mapping-tool.md) 는 상호 작용에 할당할 올바른 축 및 단추 매핑을 확인 하는 데 유용한 리소스입니다.
+다음 단계는 컨트롤러에서 지원하는 상호 작용 매핑 집합을 정의하는 것입니다. Unity의 Input 클래스를 통해 데이터를 수신하는 디바이스의 경우 [컨트롤러 매핑 도구는](../tools/controller-mapping-tool.md) 상호 작용에 할당할 올바른 축 및 단추 매핑을 확인하는 데 유용한 리소스입니다.
 
-다음 예제는 `GenericOpenVRController` MRTK/Providers/OpenVR 폴더에 있는 클래스에서 간략하게 나와 있습니다.
+다음 예제는 `GenericOpenVRController` MRTK/Providers/OpenVR 폴더에 있는 클래스에서 약어로 표시됩니다.
 
 ```c#
 public override MixedRealityInteractionMapping[] DefaultLeftHandedInteractions => new[]
@@ -144,13 +144,13 @@ public override MixedRealityInteractionMapping[] DefaultLeftHandedInteractions =
 ```
 
 >[!Note]
->[`ControllerMappingLibrary`](xref:Microsoft.MixedReality.Toolkit.Input.ControllerMappingLibrary)클래스는 Unity 입력 축 및 단추 정의에 대 한 기호화 된 상수를 제공 합니다.
+>[`ControllerMappingLibrary`](xref:Microsoft.MixedReality.Toolkit.Input.ControllerMappingLibrary)클래스는 Unity 입력 축 및 단추 정의에 대한 기호 상수를 제공합니다.
 
 ### <a name="raise-notification-events"></a>알림 이벤트 발생
 
-응용 프로그램이 사용자의 입력에 응답할 수 있도록 하기 위해 데이터 공급자는 및 인터페이스에 정의 된 대로 컨트롤러 상태 변경에 해당 하는 알림 이벤트를 발생 시킵니다 [`IMixedRealityInputHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler) [`IMixedRealityInputHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) .
+애플리케이션이 사용자의 입력에 응답할 수 있도록 데이터 공급자는 및 인터페이스에 정의된 컨트롤러 상태 변경에 해당하는 알림 이벤트를 [`IMixedRealityInputHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler) [`IMixedRealityInputHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) 발생합니다.
 
-디지털 (단추) 형식 컨트롤의 경우 OnInputDown 및 Oninputdown 이벤트를 발생 시킵니다.
+디지털(단추) 형식 컨트롤의 경우 OnInputDown 및 OnInputUp 이벤트를 발생합니다.
 
 ```c#
 // inputAction is the input event that is to be raised.
@@ -164,15 +164,15 @@ else
 }
 ```
 
-아날로그 컨트롤 (예: 터치 패드 위치)의 경우 InputChanged 이벤트가 발생 해야 합니다.
+아날로그 컨트롤(예: 터치 패드 위치)의 경우 InputChanged 이벤트가 발생해야 합니다.
 
 ```c#
 InputSystem?.RaisePositionInputChanged(InputSource, ControllerHandedness, interactionMapping.MixedRealityInputAction, interactionSourceState.touchpadPosition);
 ```
 
-### <a name="add-unity-profiler-instrumentation"></a>Unity 프로파일러 계측 추가
+### <a name="add-unity-profiler-instrumentation"></a>Unity Profiler 계측 추가
 
-혼합 현실 응용 프로그램에서 성능이 중요 합니다. 모든 구성 요소는 응용 프로그램을 고려해 야 하는 몇 가지 오버 헤드를 추가 합니다. 이를 위해 모든 입력 데이터 공급자는 내부 루프 및 자주 활용되는 코드 경로에 Unity Profiler 계측을 포함하는 것이 중요합니다.
+성능은 혼합 현실 애플리케이션에서 매우 중요합니다. 모든 구성 요소는 애플리케이션이 고려해야 하는 약간의 오버헤드를 추가합니다. 이를 위해 모든 입력 데이터 공급자는 내부 루프 및 자주 활용되는 코드 경로에 Unity Profiler 계측을 포함하는 것이 중요합니다.
 
 사용자 지정 공급자를 계측할 때 MRTK에서 사용하는 패턴을 구현하는 것이 좋습니다.
 
@@ -197,7 +197,7 @@ InputSystem?.RaisePositionInputChanged(InputSource, ControllerHandedness, intera
 
 ## <a name="create-the-profile-and-inspector"></a>프로필 및 검사기 만들기
 
-Mixed Reality 도구 키트에서 데이터 공급자는 프로필을 사용하여 [구성됩니다.](../profiles/profiles.md)
+Mixed Reality Toolkit 데이터 공급자는 프로필을 사용하여 [구성됩니다.](../profiles/profiles.md)
 
 추가 구성 옵션이 있는 데이터 공급자(예: [InputSimulationService)는](../input-simulation/input-simulation-service.md)고객이 애플리케이션의 요구에 가장 적합하게 동작을 수정할 수 있도록 프로필 및 검사기를 만들어야 합니다.
 
@@ -216,7 +216,7 @@ public class MixedRealityInputSimulationProfile : BaseMixedRealityProfile
 { }
 ```
 
-`CreateAssetMenu`특성은 프로필 클래스에 적용하여 고객이 > 자산 만들기 > Mixed Reality 도구 키트 > 프로필 메뉴를 사용하여 프로필 인스턴스를 만들 수 있도록 할 수 **있습니다.**
+`CreateAssetMenu`특성은 프로필 클래스에 적용하여 고객이 프로필 만들기 > 자산 > Mixed Reality Toolkit > 프로필 메뉴를 사용하여 **프로필 인스턴스를 만들** 수 있도록 합니다.
 
 ### <a name="implement-the-inspector"></a>검사기 구현
 
@@ -232,34 +232,34 @@ public class MixedRealityInputSimulationProfileInspector : BaseMixedRealityToolk
 
 ## <a name="create-assembly-definitions"></a>어셈블리 정의 만들기
 
-Mixed Reality 도구 키트는 어셈블리 정의([.asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) 파일을 사용하여 구성 요소 간의 의존성을 지정하고 Unity를 통해 컴파일 시간을 단축합니다.
+Mixed Reality Toolkit 어셈블리 정의([.asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) 파일을 사용하여 구성 요소 간의 의존성을 지정하고 Unity를 통해 컴파일 시간을 단축합니다.
 
-모든 데이터 공급자와 해당 편집기 구성 요소에 대해 어셈블리 정의 파일을 만드는 것이 좋습니다.
+모든 데이터 공급자 및 해당 편집기 구성 요소에 대해 어셈블리 정의 파일을 만드는 것이 좋습니다.
 
-이전 예제에서 [폴더 구조](#recommended-folder-structure) 를 사용 하는 경우 ContosoInput 데이터 공급자에 대 한 두 개의. asmdef 파일이 있습니다.
+이전 예제에서 [폴더 구조를](#recommended-folder-structure) 사용하면 ContosoInput 데이터 공급자에 대한 두 개의 .asmdef 파일이 있습니다.
 
-첫 번째 어셈블리 정의는 데이터 공급자에 대 한 것입니다. 이 예에서는 ContosoInput 라고 하 고 예제의 ContosoInput 폴더에 배치 됩니다.
-이 어셈블리 정의는 MixedReality에 대 한 종속성과이 도구 키트가 종속 된 다른 모든 어셈블리를 지정 해야 합니다.
+첫 번째 어셈블리 정의는 데이터 공급자에 대한 것입니다. 이 예제에서는 ContosoInput이라고 하며 예제의 ContosoInput 폴더에 있습니다.
+이 어셈블리 정의는 Microsoft.MixedReality에 대한 종속성을 지정해야 합니다. Toolkit 및 해당 어셈블리가 의존하는 다른 어셈블리입니다.
 
-ContosoInputEditor 어셈블리 정의는 프로필 검사자 및 모든 편집기 관련 코드를 지정 합니다. 이 파일은 편집기 코드의 루트 폴더에 있어야 합니다. 이 예제에서 파일은 ContosoInput\Editor 폴더에 있습니다. 이 어셈블리 정의에는 ContosoInput 어셈블리에 대 한 참조 및가 포함 됩니다.
+ContosoInputEditor 어셈블리 정의는 프로필 검사자와 편집기별 코드를 지정합니다. 이 파일은 편집기 코드의 루트 폴더에 있어야 합니다. 이 예제에서 파일은 ContosoInput\Editor 폴더에 있습니다. 이 어셈블리 정의에는 ContosoInput 어셈블리에 대한 참조도 포함됩니다.
 
-- MixedReality
-- MixedReality. 검사기
-- MixedReality. 유틸리티
+- Microsoft.MixedReality. Toolkit
+- Microsoft.MixedReality. Toolkit. Editor.Inspectors
+- Microsoft.MixedReality. Toolkit. Editor.Utilities
 
 ## <a name="register-the-data-provider"></a>데이터 공급자 등록
 
-데이터 공급자를 만든 후에는 입력 시스템에 등록 하 고 응용 프로그램에서 사용할 수 있습니다.
+데이터 공급자를 만든 후에는 입력 시스템에 등록하고 애플리케이션에서 사용할 수 있습니다.
 
-![등록 된 입력 시스템 데이터 공급자](../images/input/RegisteredServiceProviders.PNG)
+![등록된 입력 시스템 데이터 공급자](../images/input/RegisteredServiceProviders.PNG)
 
 ## <a name="packaging-and-distribution"></a>패키징 및 배포
 
-타사 구성 요소로 배포 되는 데이터 공급자에는 개발자의 기본 설정에 대 한 패키징 및 배포에 대 한 구체적인 정보가 있습니다. 가장 일반적인 해결책은 unitypackage를 생성 하 고 Unity Asset Store를 통해 배포 하는 것입니다.
+타사 구성 요소로 배포되는 데이터 공급자에는 패키징 및 배포에 대한 구체적인 세부 정보가 개발자의 기본 설정으로 남아 있습니다. 가장 일반적인 솔루션은 .unitypackage를 생성하고 Unity 자산 저장소를 통해 배포하는 것입니다.
 
-Microsoft Mixed Reality Toolkit 패키지의 일부로 데이터 공급자를 제출 하 고 수락한 경우 Microsoft MRTK 팀은 MRTK 제품의 일부로 패키지 하 고 배포 합니다.
+데이터 공급자가 제출되고 Microsoft Mixed Reality Toolkit 패키지의 일부로 수락되면 Microsoft MRTK 팀은 이를 MRTK 제품의 일부로 패키지하고 배포합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [입력 시스템](overview.md)
 - [`BaseInputDeviceManager` 클래스](xref:Microsoft.MixedReality.Toolkit.Input.BaseInputDeviceManager)
