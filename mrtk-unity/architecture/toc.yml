@@ -1,4 +1,4 @@
-- name: 개요
+- name: 아키텍처 개요
   href: overview.md
 - name: 프레임워크 및 런타임
   href: framework-and-runtime.md
