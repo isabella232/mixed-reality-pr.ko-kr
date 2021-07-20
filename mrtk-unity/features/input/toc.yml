@@ -1,6 +1,6 @@
-- name: 컨트롤러
+- name: Controllers
   href: controllers.md
-- name: 데이터 공급자 만들기
+- name: 입력 시스템 데이터 공급자 만들기
   href: create-data-provider.md
 - name: 받아쓰기
   href: dictation.md
