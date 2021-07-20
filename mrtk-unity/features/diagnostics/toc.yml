@@ -1,4 +1,4 @@
-- name: 진단 구성
+- name: 진단 시스템 구성
   href: configuring-diagnostics.md
 - name: 진단 시스템 개요
   href: diagnostics-system-getting-started.md

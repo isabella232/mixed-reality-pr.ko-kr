@@ -1,6 +1,6 @@
 - name: 카메라 시스템 개요
   href: camera-system-overview.md
-- name: 설정 공급자 만들기
+- name: 카메라 설정 공급자 만들기
   href: create-settings-provider.md
 - name: Unity AR 카메라 설정
   href: unity-ar-camera-settings.md

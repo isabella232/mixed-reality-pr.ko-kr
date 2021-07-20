@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, hololens 2, azure custom vision, azure cognitive services, azure cloud services, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: cb391aa2cdb7944234cdeede7dd05825c008d0d8
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 7624ed28c337f3621a29f15f1ab3b0e98aeb89db
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590575"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224236"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Azure Custom Vision 통합
 
@@ -87,10 +87,6 @@ Hierarchy(계층 구조) 창에서 **ObjectDetectionManager** 개체를 찾아�
 > **ObjectDetectionManager(스크립트)** 는 찍힌 이미지를 Custom Vision 서비스에 직접 업로드합니다. 대안으로, Custom Vision API는 이미지 URL을 허용하며, 연습으로 **ObjectDetectionManager(script)** 를 수정하여 이미지를 Blob 스토리지에 대신 업로드할 수 있습니다.
 
 ## <a name="detect-objects"></a>개체 감지
-
-개체를 검색하기 전에, Custom Vision 키를 사용하여 이미 할당되고 있는 프로젝트 설정에서 **ObjectDetectionManager(스크립트)** 에 있는 Api 키를 변경해야 합니다.
-
-Azure Portal에서 Custom Vision 리소스를 찾아서 이동합니다. 여기서 *키 및 엔드포인트* 를 클릭하여 Api 키를 검색하고 프로젝트 설정에서 이전 Api 키로 바꿉니다.
 
 이제 학습된 모델을 테스트에 추가하고, 애플리케이션을 실행하고, 주 메뉴에서 **검색 개체** 를 클릭하고 해당 **추적된 개체** 의 이름을 입력할 수 있습니다. **Object Card**(개체 카드)가 표시되면 **Custom Vision** 단추를 클릭합니다. 여기에서 **ObjectDetectionManager** 는 카메라의 배경에서 이미지를 캡처하기 시작하고 진행률이 메뉴에 표시됩니다. 모델을 학습시키는 데 사용한 개체로 카메라를 향하게 하면 잠시 후에 개체를 감지하는 것이 보입니다.
 

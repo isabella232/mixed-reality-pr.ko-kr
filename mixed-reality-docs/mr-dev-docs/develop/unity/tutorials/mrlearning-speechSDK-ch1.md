@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, 음성 인식, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: a728e3520539723c4b38849eeb60524995e572eb
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 39eaa8a17d4616dc9c044f9bff7522dde41cffb7
+ms.sourcegitcommit: fd1964ec6c645e8088ec120661f73739bb7775a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175456"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113656634"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1. 음성 인식 및 전사 통합 및 사용
 
@@ -166,4 +166,4 @@ Azure에서 구동하는 음성 인식을 구현했습니다. 디바이스에서
 다음 자습서에서는 Azure 음성 인식을 사용하여 명령을 실행하는 방법에 대해 알아봅니다.
 
 > [!div class="nextstepaction"]
-> [다음 자습서: 2. 음성 인식을 사용하여 명령 실행](mrlearning-speechSDK-ch2.md)
+> [다음 자습서: 2. Azure 음성 인식을 사용하여 명령 실행](mrlearning-speechSDK-ch2.md)

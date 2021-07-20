@@ -1,20 +1,20 @@
 ---
-title: 로컬 음성-텍스트 변환을 위한 오프라인 모드 추가
-description: 이 과정을 완료하여 혼합 현실 애플리케이션에서 로컬 음성-텍스트 변환을 위해 오프라인 모드를 추가하는 방법을 알아봅니다.
+title: Azure 음성 인식을 사용하여 명령 실행
+description: 이 과정을 완료하면 혼합 현실 애플리케이션에서 Azure 음성 인식을 사용하여 명령을 실행하는 방법을 익힐 수 있습니다.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, 음성 인식, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 2e7a48dc4bb64eb177e6fa290f4918345c3d642f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 8d031896a1725c0121272b68578016edf38a36cf
+ms.sourcegitcommit: fd1964ec6c645e8088ec120661f73739bb7775a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590155"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113656624"
 ---
-# <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a>2. 로컬 음성-텍스트 변환에 오프라인 모드 추가
+# <a name="2-execute-commands-using-azure-speech-recognition"></a>2, Azure 음성 인식을 사용하여 명령 실행
 
 이 자습서에서는 Azure 음성 인식을 통해 사용자가 정의하는 단어 또는 구에 따라 작업을 수행할 수 있는 명령을 실행하는 기능을 추가합니다.
 

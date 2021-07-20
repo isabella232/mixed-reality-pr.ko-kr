@@ -1,4 +1,4 @@
-- name: HTK에서 업그레이드
+- name: HoloToolkit에서 업그레이드
   href: htk-to-mrtk-porting-guide.md
 - name: MRTK 및 관리 코드 제거
   href: mrtk-and-managed-code-stripping.md

@@ -1,6 +1,6 @@
 - name: MRTK 시작
   href: index.md
-- name: 예제 허브 사용해보기
+- name: MRTK 예제 허브 사용해 보기
   href: running-examples-hub.md
 - name: 예제 장면
   href: running-example-scenes.md

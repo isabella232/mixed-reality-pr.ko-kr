@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: eddde9b827dcf2a2f054f48a50f38946e5d98533
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 9c3ae23c39bf4d0b32d8a5d82716f93fee48b6db
+ms.sourcegitcommit: fd1964ec6c645e8088ec120661f73739bb7775a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175567"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113656638"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Azure Spatial Anchors 시작
 
@@ -66,7 +66,7 @@ ms.locfileid: "113175567"
 
 > [!WARNING]
 > ASA v2.9.0 및 v2.10.0-preview.1에는 두 개의 추가 개체를 장면에 배치해야 하는 알려진 문제가 있습니다. 속성 창에서 **구성 요소 추가** 단추를 사용하여 AR Camera Manager(스크립트) 및 AR Session(스크립트)을 **MixedRealityToolkit** 개체에 추가하세요. 검사기 창에서 카메라 개체 옆에 있는 확인란을 선택 해제하여 AR Camera Manager(스크립트)를 추가하는 동안 자동으로 생성되는 카메라를 사용하지 않도록 설정해야 합니다. 이 문제는 ASA v2.10.0의 전체 릴리스에서 해결될 것입니다.
-> 
+>
 
 > [!NOTE]
 > AR Anchor Manager(스크립트) 구성 요소를 추가하면 AR Session Origin(스크립트) 구성 요소가 AR Anchor Manager(스크립트) 구성 요소에 필요하기 때문에 자동으로 추가됩니다.
@@ -77,21 +77,21 @@ ms.locfileid: "113175567"
 
 Hierarchy(계층 구조) 창에서 **ButtonParent** 개체를 펼쳐서 **StartAzureSession** 라는 첫 번째 자식 개체를 선택하고 Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
-* **ParentAnchor** 개체를 **None (Object)** 필드에 할당
+* **ParentAnchor** 개체를 Hierarchy(계층 구조) 창에서 **None (Object)** 필드로 끌어서 놓아 On Click () 이벤트의 수신기로 지정
 * **No Function**(함수 없음) 드롭다운에서 **AnchorModuleScript** > **StartAzureSession ()** 을 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 
 ![StartAzureSession 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-asa/asa-02-section5-step1-1.png)
 
 Hierarchy(계층 구조) 창에서 **StopAzureSession** 이라는 다음 단추를 선택한 후, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
-* **ParentAnchor** 개체를 **None (Object)** 필드에 할당
+* **ParentAnchor** 개체를 Hierarchy(계층 구조) 창에서 **None (Object)** 필드로 끌어서 놓아 On Click () 이벤트의 수신기로 지정
 * **No Function**(함수 없음) 드롭다운에서 **AnchorModuleScript** > **StopAzureSession ()** 을 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 
 ![StopAzureSession 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-asa/asa-02-section5-step1-2.png)
 
 Hierarchy(계층 구조) 창에서 **CreateAzureAnchor** 라는 다음 단추를 선택한 후, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
-* **ParentAnchor** 개체를 **None (Object)** 필드에 할당
+* **ParentAnchor** 개체를 Hierarchy(계층 구조) 창에서 **None (Object)** 필드로 끌어서 놓아 On Click () 이벤트의 수신기로 지정
 * **No Function**(함수 없음) 드롭다운에서 **AnchorModuleScript** > **CreateAzureAnchor ()** 를 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 * **ParentAnchor** 개체를 빈 **None (Game Object)** 필드에 할당하여 CreateAzureAnchor () 함수의 인수로 만들기
 
@@ -99,7 +99,7 @@ Hierarchy(계층 구조) 창에서 **CreateAzureAnchor** 라는 다음 단추를
 
 Hierarchy(계층 구조) 창에서 **RemoveLocalAnchor** 라는 다음 단추를 선택한 후, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
-* **ParentAnchor** 개체를 **None (Object)** 필드에 할당
+* **ParentAnchor** 개체를 Hierarchy(계층 구조) 창에서 **None (Object)** 필드로 끌어서 놓아 On Click () 이벤트의 수신기로 지정
 * **No Function**(함수 없음) 드롭다운에서 **AnchorModuleScript** > **RemoveLocalAnchor ()** 를 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 * **ParentAnchor** 개체를 빈 **None (Game Object)** 필드에 할당하여 RemoveLocalAnchor () 함수의 인수로 만들기
 
@@ -107,14 +107,14 @@ Hierarchy(계층 구조) 창에서 **RemoveLocalAnchor** 라는 다음 단추를
 
 Hierarchy(계층 구조) 창에서 **FindAzureAnchor** 라는 다음 단추를 선택한 후, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
-* **ParentAnchor** 개체를 **None (Object)** 필드에 할당
+* **ParentAnchor** 개체를 Hierarchy(계층 구조) 창에서 **None (Object)** 필드로 끌어서 놓아 On Click () 이벤트의 수신기로 지정
 * **No Function**(함수 없음) 드롭다운에서 **AnchorModuleScript** > **FindAzureAnchor ()** 를 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 
 ![FindAzureAnchor 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-asa/asa-02-section5-step1-5.png)
 
 Hierarchy(계층 구조) 창에서 **DeleteAzureAnchor** 라는 다음 단추를 선택한 후, Inspector(인스펙터) 창에서 **Button Config Helper(스크립트)** 구성 요소의 **On Click ()** 이벤트를 다음과 같이 구성합니다.
 
-* **ParentAnchor** 개체를 **None (Object)** 필드에 할당
+* **ParentAnchor** 개체를 Hierarchy(계층 구조) 창에서 **None (Object)** 필드로 끌어서 놓아 On Click () 이벤트의 수신기로 지정
 * **No Function**(함수 없음) 드롭다운에서 **AnchorModuleScript** > **DeleteAzureAnchor ()** 를 선택하고 이 함수를 이벤트가 트리거될 때 실행할 동작으로 설정
 
 ![DeleteAzureAnchor 단추 OnClick 이벤트가 구성된 Unity](images/mr-learning-asa/asa-02-section5-step1-6.png)
