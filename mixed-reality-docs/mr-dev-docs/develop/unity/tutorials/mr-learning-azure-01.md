@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: azure, 혼합 현실, unity, 자습서, hololens, hololens 2, azure blob 스토리지, azure table 스토리지, azure spatial anchors, azure bot framework, azure cloud services, azure custom vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: c38f3102adfb5178a4d2b5429eeb24c0733db50a
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 3c52384b118a72b1c2f2dfaa2205e4f890e2e5a7
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175535"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224404"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. HoloLens 2용 Azure Cloud Services
 
@@ -73,10 +73,10 @@ ms.locfileid: "113175535"
 * 몇 가지 기본 C# 프로그래밍 기능
 * [개발용으로 구성](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)된 HoloLens 2 디바이스
 * 연결된 웹캠(Unity 편집기에서 테스트하려는 경우)
-* Unity 2019 LTS가 설치되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가된 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
+* Unity 2020/2019 LTS가 설치되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가된 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>
 
-> [!CAUTION]
-> 이 자습서 시리즈에 추천되는 Unity 버전은 Unity 2019 LTS입니다. 이 버전은 필수 구성 요소에서 설명한 모든 Unity 버전 요구 사항 또는 추천 사항을 대체합니다.
+> [!Important]
+> 이 자습서 시리즈는 Open XR 또는 Windows XR 플러그 인을 사용하는 경우 Unity 2020 LTS(현재 2020.3.x)를 지원하고 레거시 WSA를 사용하는 경우 Unity 2019 LTS(현재 2019.4.x)도 지원합니다. 이 버전은 필수 구성 요소에서 설명한 모든 Unity 버전 요구 사항을 대체합니다.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Unity 프로젝트 만들기 및 준비
 
@@ -90,38 +90,13 @@ ms.locfileid: "113175535"
 4. [Mixed Reality Toolkit 가져오기 및 Unity 프로젝트 구성](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 5. [장면 만들기 및 구성](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) 및 적절한 장면 이름 지정(예: *AzureCloudServices*)
 
-그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면의 MRTK 구성 프로필이 **DefaultXRSDKConfigurationProfile** 인지 확인하고, 공간 인식 메시의 표시 옵션을 **Occlusion(폐색)** 으로 변경합니다.
+그런 다음, [공간 인식 표시 옵션 변경](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 지침에 따라 장면의 MRTK 구성 프로필이 **DefaultHololens2ConfigurationProfile** 인지 확인하고, 공간 인식 메시의 표시 옵션을 **Occlusion(폐색)** 으로 변경합니다.
 
-## <a name="installing-inbuilt-unity-packages"></a>기본 제공 Unity 패키지 설치
+## <a name="installing-inbuilt-unity-packages-and-importing-the-tutorial-assets"></a>내장 Unity 패키지 설치 및 자습서 자산 가져오기
 
-Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 [패키지 관리자] 창을 연 다음, **AR Foundation** 을 선택하고, **설치** 단추를 클릭하여 패키지를 설치합니다.
-
-![AR Foundation이 선택된 Unity 패키지 관리자 창](images/mr-learning-asa/asa-02-section2-step1-1.png)
-
-> [!NOTE]
-> Azure Spatial Anchors SDK에 필요하므로 AR Foundation 패키지를 설치합니다. 이 패키지는 다음 섹션에서 가져옵니다.
-
-## <a name="importing-the-tutorial-assets"></a>자습서 자산 가져오기
-
-AzurespatialAnchors SDK V2.7.1을 Unity 프로젝트에 추가합니다. 패키지를 추가하려면 이 [자습서](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)를 따르세요.
-
-다음 Unity 사용자 지정 패키지를 **나열된 순서대로** 다운로드하여 **가져옵니다**.
-
-* [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureStorageForUnity.unitypackage)
-* [MRTK.Tutorials.AzureCloudServices.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.unitypackage)
-
-> [!TIP]
-> Unity 사용자 지정 패키지를 가져오는 방법을 미리 알아보려면 [자습서 자산 가져오기](mr-learning-base-04.md#importing-the-tutorial-assets) 지침을 참조할 수 있습니다.
-
-자습서 자산을 가져오면 [프로젝트] 창이 다음과 같이 표시됩니다.
-
-![자습서 자산을 가져온 후의 Unity 계층 구조, 장면 및 프로젝트 창](images/mr-learning-azure/tutorial1-section4-step1-1.png)
-
-> [!NOTE]
-> 더 이상 사용되지 않는 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' 및 'WorldAnchor.GetNativeSpatialAnchorPtr()'과 관련된 CS0618 경고가 표시되는 경우 이러한 경고를 무시해도 됩니다.
+[!INCLUDE[](includes/installing-packages-for-azure-cloud-services.md)]
 
 ## <a name="creating-and-preparing-the-scene"></a>장면 만들기 및 준비
-<!-- TODO: Consider renaming to 'Preparing the scene' -->
 
 이 섹션에서는 자습서 프리팹 중 일부를 추가하여 장면을 준비합니다.
 
@@ -129,7 +104,7 @@ AzurespatialAnchors SDK V2.7.1을 Unity 프로젝트에 추가합니다. 패키�
 
 ![SceneController, RootMenu 및 DataManager 프리팹이 선택된 Unity](images/mr-learning-azure/tutorial1-section5-step1-1.png)
 
-**SceneController(프리팹)** 에는 **SceneController(스크립트)** 및 **UnityDispatcher(스크립트)** 라는 두 개의 스크립트가 포함되어 있습니다. **SceneController** 스크립트 구성 요소는 여러 UX 함수를 포함하고 있고 사진 캡처 기능을 용이하게 하며, **UnityDispatcher** 는 Unity 주 스레드에서 작업을 실행할 수 있는 도우미 클래스입니다.
+**SceneController(프리팹)** 에는 **SceneController(스크립트)** 및 **AppDispatcher(스크립트)** 라는 두 개의 스크립트가 포함되어 있습니다. **SceneController** 스크립트 구성 요소는 여러 UX 함수를 포함하고 있고 사진 캡처 기능을 용이하게 하며, **AppDispatcher** 는 Unity 주 스레드에서 작업을 실행할 수 있는 도우미 클래스입니다.
 
 **RootMenu(프리팹)** 는 다양한 작은 스크립트 구성 요소를 통해 서로 연결되는 모든 UI 창을 보유하고 애플리케이션의 일반 UX 흐름을 제어하는 기본 UI 프리팹입니다.
 

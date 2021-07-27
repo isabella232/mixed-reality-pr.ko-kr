@@ -5,16 +5,19 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: f9f8ad638b8f7cb1007c923f6b568dffc4340360
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 8b8928e9c723ffa9fd08d22866b8ee5748e38ace
+ms.sourcegitcommit: 78746bef0e1ffe1480e89fed8cd30f6f8b389e8d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177563"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "114713577"
 ---
 # <a name="optimize-window"></a>최적화 창
 
 MRTK Optimize 창은 Unity에서 최상의 [성능을](../../performance/perf-getting-started.md) 위해 혼합 현실 프로젝트를 구성 하는 프로세스를 자동화 하 고 알리는 데 도움이 되는 유틸리티입니다. 이 도구는 일반적으로 올바른 사전 설정으로 설정 하면 처리 시간 (밀리초)을 줄일 수 있는 렌더링 구성에 중점을 둔 것입니다.
+
+> [!NOTE]
+>    >    >  Unity 편집기의 위쪽 표시줄 메뉴에서 혼합 현실 유틸리티 **최적화 창** 으로 이동 하 여 최적화 창을 열 수 있습니다.
 
 *활성 빌드 대상은* 현재 프로젝트에서 컴파일을 위해 대상으로 하는 [빌드 플랫폼](https://docs.unity3d.com/Manual/BuildSettings.html) 입니다.
 

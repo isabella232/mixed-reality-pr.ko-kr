@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, hololens 2, Azure spatial anchors, azure cloud services, azure custom vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 0837ebd9d34ba12d660098fc765824da3c561d07
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ab5bcfe92e5de2149e844fc02164f5079e215142
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590545"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224286"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Integrating Azure Spatial 통합
 
@@ -39,9 +39,16 @@ ms.locfileid: "99590545"
 
 이 섹션에서는 장면을 구성하고 필요한 변경을 수행하는 방법을 알아봅니다.
 
+계층 구조 창에서 **MixedRealityToolkit** 개체를 선택하고 검사기 창의 **구성 요소 추가** 단추를 사용하여 **AR Anchor Manager(스크립트)를** 추가합니다.
+
+![AR Anchor Manager 구성 요소가 추가된 Unity MixedRealityToolkit 개체 ](images/mr-learning-azure/tutorial4-section1-step1-1.png)
+
+> [!NOTE]
+> AR Anchor Manager(스크립트) 구성 요소를 추가하면 AR Session Origin(스크립트) 구성 요소가 AR Anchor Manager(스크립트) 구성 요소에 필요하기 때문에 자동으로 추가됩니다.
+
 Project 창에서 **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager** 로 이동합니다.
 
-![AnchorManager 프리팹이 선택된 Unity](images/mr-learning-azure/tutorial4-section1-step1-1.png)
+![AnchorManager 프리팹이 선택된 Unity](images/mr-learning-azure/tutorial4-section1-step1-2.png)
 
 **Manager** 폴더에서 프리팹 **Anchor Manager** 를 장면 Hierarchy에 끌어다 놓습니다.
 

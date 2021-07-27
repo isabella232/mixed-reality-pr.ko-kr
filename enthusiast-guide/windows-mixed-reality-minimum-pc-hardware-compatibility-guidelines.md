@@ -1,46 +1,46 @@
 ---
 title: Windows Mixed Reality PC 호환성 지침
-description: Windows Mixed Reality 호환성을 위한 최소 PC 시스템 요구 사항을 간략하게 설명하는 개요 차트입니다.
+description: Windows Mixed Reality와의 호환성을 위한 최소 PC 시스템 요구 사항을 개략적으로 설명 하는 개요 차트입니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
 ms.topic: article
-keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Ultra, 호환 가능, 호환성, 시스템 요구 사항, PC
+keywords: Windows Mixed Reality, 혼합 현실, 가상 현실, VR, MR, 울트라, 호환, 호환성, 시스템 요구 사항, PC
 appliesto:
 - Windows 10
-ms.openlocfilehash: e73b00dcf8d6974f06c22c3b0ab0771a8e1a5969
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 754110c3fa0b5e98508f843d251c24c04b8c0a89
+ms.sourcegitcommit: 78746bef0e1ffe1480e89fed8cd30f6f8b389e8d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143348"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "114713564"
 ---
-# <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>최소 PC 하드웨어 호환성 지침 Windows Mixed Reality
+# <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>Windows Mixed Reality 최소 PC 하드웨어 호환성 지침
 
 ## <a name="features-and-experiences"></a>기능 및 환경
 
-Windows 10 다양한 PC 하드웨어 세트에서 다양한 헤드셋을 Windows Mixed Reality 수 있습니다.  PC의 성능에 따라 사용할 수 있는 환경이 결정됩니다.
-고급 PC를 사용하면 몇 가지 추가 기능과 기능을 얻을 수 있습니다.
+Windows 10 다양 한 PC 하드웨어 집합에서 다양 한 헤드셋에 Windows Mixed Reality 있습니다.  PC의 기능을 통해 어떤 환경을 사용할 수 있는지를 확인할 수 있습니다.
+더 높은 최종 Pc를 사용 하면 몇 가지 추가 기능과 기능을 얻을 수 있습니다.
 
-* 더 선명한 시각적 개체와 더 높은 새로 고침 빈도.
-* 그래픽 집약적인 게임을 포함하여 더 많은 앱과 환경.
-* 혼합 현실에 표시되는 내용을 보여 주는 바탕 화면의 '미러' 창
-* 혼합 현실 환경의 비디오 및 사진을 녹화하고 공유합니다.
+* 시각적 개체와 새로 고침 속도가 더 빠릅니다.
+* 그래픽이 많은 게임을 비롯 한 더 많은 앱 및 환경
+* 혼합 현실에 표시 되는 내용을 보여 주는 ' ' 미러 ' ' 창이 바탕 화면에 있습니다.
+* 혼합 현실 환경의 비디오와 사진을 기록 하 고 공유 합니다.
 
 ## <a name="minimum-pc-hardware-guidelines"></a>최소 PC 하드웨어 지침
 
-아래 하드웨어 지침을 검토하고 Mixed Reality 포털 앱을 실행하여 PC가 [Windows Mixed Reality](https://www.microsoft.com/store/apps/9NG1H8B3ZC7M) 실행할 수 있는지 확인합니다.
+아래 하드웨어 지침을 검토 하 고 [혼합 현실 포털](https://www.microsoft.com/store/apps/9NG1H8B3ZC7M) 앱을 실행 하 여 PC가 Windows Mixed Reality를 실행할 수 있는지 확인 하세요.
 
-성능은 정확한 설정에 따라 달라집니다. 또한 PC에 사용하려는 Windows Mixed Reality 몰입형 헤드셋에 [적합한 포트가](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) 있는지 확인해야 합니다.
+정확한 설정에 따라 성능이 달라 집니다. 또한 사용 중인 모던 헤드셋 Windows Mixed Reality에 맞는 [포트가](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) PC에 있는지 확인 해야 합니다.
 
 >[!NOTE]
->개발 PC에 대한 지침은 혼합 현실 앱을 실행하는 소비자의 PC에 대한 지침보다 높습니다. 혼합 현실 개발자인 경우 [권장 개발 PC 사양을 참조하세요.](https://developer.microsoft.com/en-us/windows/mixed-reality/install_the_tools#immersive_headset_development)
+>개발 Pc에 대 한 지침이 혼합 현실 앱을 실행 하는 소비자 Pc 보다 높습니다. 혼합 현실 개발자 라면 [권장 개발 PC 사양을 참조](https://developer.microsoft.com/en-us/windows/mixed-reality/install_the_tools#immersive_headset_development)하세요.
 
-## <a name="mixed-reality-portal-app"></a>앱 Mixed Reality 포털
+## <a name="mixed-reality-portal-app"></a>혼합 현실 포털 앱
 
-[Mixed Reality 포털](https://www.microsoft.com/store/productid/9ng1h8b3zc7m) PC가 Windows Mixed Reality 실행할 준비가 되었는지 확인하는 가장 좋은 방법입니다.
+[혼합 현실 포털](https://www.microsoft.com/store/productid/9ng1h8b3zc7m) 은 PC를 Windows Mixed Reality 실행할 준비가 되었는지 확인 하는 가장 좋은 방법입니다.
 
-앱을 실행하면 다음 메시지 중 하나가 표시됩니다.
+앱을 실행 한 후에는 다음 메시지 중 하나를 받게 됩니다.
 
 * **잘 진행 하 고 있습니다.**  PC가 혼합 현실 게임 및 환경을 실행할 준비가 되었습니다.
 * **에서는 일부 기능을 지원 합니다.** PC에서 일부 혼합 현실 환경을 실행할 수 있습니다.
@@ -66,14 +66,14 @@ Windows 10 다양한 PC 하드웨어 세트에서 다양한 헤드셋을 Windows
 ## <a name="compatibility-guidelines"></a>호환성 지침
 
 > [!IMPORTANT]
-> Microsoft는 이러한 Windows Mixed Reality PC 호환성 지침을 업데이트 하 고 추가 하 고 수정 하 고 있습니다. 최신 지침 및 요구 사항은 정기적으로 다시 확인 하세요.
+> microsoft는 이러한 Windows Mixed Reality PC 호환성 지침을 업데이트 하 고, 추가 하 고, 수정 하 고 있을 것입니다. 최신 지침 및 요구 사항은 정기적으로 다시 확인 하세요.
 
 ### <a name="high-resolution-headset-requirements"></a>고해상도 헤드셋 요구 사항
 
 더 높은 해상도를 제공 하기 때문에 다음 요구 사항은 HP 반향 G1, G2 및 Omnicept 제품 라인에 적용 되어 90 Hz, 전체 해상도 환경을 최적화 합니다.
 
 <ul>
-<li> Intel Core i5, i7, Intel 크 크 E3-1240 v5 (동급 이상). AMD Ryzen 5 동급 이상 </li>
+<li> Intel Core i5, i7, Intel Xeon E3-1240 v5 (동급 이상). AMD Ryzen 5 동급 이상 </li>
 <li> NVIDIA GeForce GTX 1080, AMD Radeon RX 5700, 동급 이상 </li>
 <li> 메모리: 8gb RAM 이상 </li>
 <li> 1x 디스플레이 포트 1.3 </li>
@@ -86,10 +86,10 @@ Windows 10 다양한 PC 하드웨어 세트에서 다양한 헤드셋을 Windows
 
 <table>
 <tr>
-    <th style="width:10%"></th><th style="vertical-align: middle; text-align: center; width:30%">Windows Mixed Reality 90 Hz Pc</th>
-    <th style="vertical-align: middle; text-align: center; width:30%">Windows Mixed Reality 60Hz Pc</th>
+    <th style="width:10%"></th><th style="vertical-align: middle; text-align: center; width:30%">Windows Mixed Reality 90hz pc</th>
+    <th style="vertical-align: middle; text-align: center; width:30%">Windows Mixed Reality 60hz pc</th>
 </tr><tr>
-    <td style="vertical-align: middle">운영 체제</td><td colspan="2" style="vertical-align: middle; text-align: center;">Windows 10 RS3 (Windows 10 용 작성자) 업데이트 (영문) () 이상-Home, Pro, Business, 교육용<br/>    (<b>참고</b>: N 버전 또는 Windows 10 Pro In S 모드에서는 지원 되지 않음)</td>
+    <td style="vertical-align: middle">운영 체제</td><td colspan="2" style="vertical-align: middle; text-align: center;">Windows 10 Fall Creators Update (RS3) 이상-Home, Pro, Business, 교육용<br/>    (<b>참고</b>: N 버전에서 지원 되지 않거나 S 모드의 Windows 10 Pro)</td>
 </tr><tr>
     <td style="vertical-align: middle">프로세서</td>
     <td style="vertical-align: middle; text-align: center;">Intel Core i5 4590 (4 세대), 쿼드 코어 (또는 더 좋음) <br>AMD Ryzen 5 1400 3.4 Ghz (데스크톱), 쿼드 코어 (또는 더 좋음)</td>
@@ -106,39 +106,39 @@ Windows 10 다양한 PC 하드웨어 세트에서 다양한 헤드셋을 Windows
     <td style="vertical-align: middle">그래픽 카드</td>
     <td style="vertical-align: middle; text-align: middle;">
             <ul>
-            <li>NVIDIA GTX 1060 이상 DX12 지원 불연속 GPU</li>
+            <li>NVIDIA GTX 1060 이상 (이상) DX12 지원 불연속 GPU</li>
             <li>AMD RX 470/570 이상 DX12 지원 불연속 GPU </li>
             </ul>
-            <b>참고:</b> GPU는 PCIe 3.0 x4+ 링크 슬롯에서 호스트되어야 합니다. </td>
+            <b>참고:</b> GPU는 PCIe 3.0 x4 + 링크 슬롯에서 호스팅되어야 합니다. </td>
     <td style="vertical-align: middle; text-align: middle;">
-            <li>통합 Intel HD Graphics 620 이상 DX12 지원 통합 <a href="https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units">GPU(모델이 더 큰지 확인)</a></li>
-        <li>NVIDIA MX150 이상 불연속 GPU</li>
+            <li>통합 Intel HD Graphics 620 이상 (이상) DX12 지원 <a href="https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units">되는 통합 GPU (모델이 더 큰지 확인)</a></li>
+        <li>NVIDIA MX150 이상 (이상) 개별 GPU</li>
         <li>Nvidia GeForce GTX 1050 불연속 GPU</li>
         <li>Nvidia 965M 불연속 GPU</li>
         <li>AMD Radeon RX 460/560</li>
         </ul>
-        <b>참고:</b> HD Graphics 4xx, 5xx, 2xxx, 3xxx, 4xxx, 5xxx 및 6xxx와 같은 이전 Intel GPU는 지원되지 않습니다.
+        <b>참고:</b> HD Graphics 4xx, 5xx, 2xxx, 3xxx, 4xxx, 5xxx 및 이거나 6xxx와 같은 이전 버전의 Gpu는 지원 되지 않습니다.
     </td>
 </tr><tr>
     <td style="vertical-align: middle">그래픽 드라이버</td>
-    <td colspan="3" td style="vertical-align: middle; text-align: center;">WDDM(Windows Display Driver Model) 2.2</td>
+    <td colspan="3" td style="vertical-align: middle; text-align: center;">Windows 디스플레이 드라이버 모델 (WDDM) 2.2</td>
 </tr><tr>
-    <td style="vertical-align: middle"><a href="Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md">그래픽 표시 포트</a></td>
+    <td style="vertical-align: middle"><a href="Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md">그래픽 디스플레이 포트</a></td>
     <td style="vertical-align: middle; text-align: center;">HDMI 2.0 또는 DisplayPort 1.2</td>
     <td style="vertical-align: middle; text-align: center;">HDMI 1.4 또는 DisplayPort 1.2</td>
 </tr><tr>
     <td style="vertical-align: middle">표시</td>
-    <td colspan="3" style="vertical-align: middle; text-align: center;">연결된 외부 또는 통합 VGA(800x600) 디스플레이(이상)</td>
+    <td colspan="3" style="vertical-align: middle; text-align: center;">연결 된 외부 또는 통합 VGA (800x600) 표시 (또는 더 좋음)</td>
 </tr><tr>
     <td style="vertical-align: middle"><a href="Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md">USB 연결</a></td>
     <td colspan="2" style="vertical-align: middle; text-align: center;">USB 3.0 </td>
 </tr><tr>
-    <td style="vertical-align: middle">Bluetooth <a href="controllers-in-wmr.md">연결(모션 컨트롤러의</a>경우)</td>
+    <td style="vertical-align: middle">Bluetooth 연결 ( <a href="controllers-in-wmr.md">동작 컨트롤러</a>의 경우)</td>
     <td colspan="3" style="vertical-align: middle; text-align: center;">Bluetooth 4.0</td>
 </tr><tr>
-    <td style="vertical-align: middle">헤드셋 프레임 속도 예상</td>
-    <td style="vertical-align: middle; text-align: center;">90Hz</td>
-    <td style="vertical-align: middle; text-align: center;">60Hz</td>
+    <td style="vertical-align: middle">예상 헤드셋 프레임 속도</td>
+    <td style="vertical-align: middle; text-align: center;">90 Hz</td>
+    <td style="vertical-align: middle; text-align: center;">60 Hz</td>
 </tr>
 <tr>
     <td style="vertical-align: middle">고급</td>
@@ -149,25 +149,25 @@ Windows 10 다양한 PC 하드웨어 세트에서 다양한 헤드셋을 Windows
 
 **추가 정보:**
 
-* 화면이 15개 이상인 대형 랩톱이 가장 좋습니다.
-* 하이브리드 그래픽 구성은 Windows Mixed Reality 90Hz와만 호환됩니다. 모든 하이브리드 구성의 불연속 그래픽 어댑터는 불연속 그래픽 어댑터에 대한 Windows Mixed Reality 지침에 나열된 모든 요구 사항을 충족해야 합니다.
-* Windows Mixed Reality 90Hz를 실행해야 하는 불연속 그래픽 카드가 있지만 기본적으로 60Hz(초당 60프레임) 새로 고침 속도를 사용하는 경우 HDMI 2.0 어댑터에 대한 전체 크기 DisplayPort를 사용하여 헤드셋을 연결하고 90Hz 새로 고침 속도를 사용하도록 설정합니다.
-* 헤드셋에 따라 다른 하드웨어 포트가 필요할 수 있으므로 PC에 올바른 포트 또는 헤드셋에 연결하는 [데 필요한 어댑터가](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) 있는지 확인합니다.
+* 최소 15 개의 화면이 포함 된 더 큰 랩톱을 사용 하는 것이 가장 좋습니다.
+* 하이브리드 그래픽 구성은 Windows Mixed Reality 90hz와만 호환 됩니다. 하이브리드 구성의 불연속 그래픽 어댑터는 개별 그래픽 어댑터에 대 한 Windows Mixed Reality 지침에 나열 된 모든 요구 사항을 충족 해야 합니다.
+* 90hz Windows Mixed Reality 실행 해야 하는 개별 그래픽 카드가 있지만 기본적으로 60hz (60 프레임/초)의 새로 고침 빈도를 사용 하는 경우 HDMI 2.0 어댑터에 대 한 전체 크기의 DisplayPort를 사용 하 여 헤드셋을 연결 하 고 90hz 새로 고침 빈도를 사용 하도록 설정 합니다.
+* 다른 헤드셋은 다른 하드웨어 포트를 요구할 수 있으므로, 사용자의 컴퓨터에 헤드셋에 연결 하는 [데 필요한](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) 올바른 포트나 어댑터가 있는지 확인 하세요.
 
 >[!NOTE]
->확인된 최소 사양을 충족하지 않는 불연속 및 통합 그래픽 하드웨어는 Windows Mixed Reality 대해 테스트, 확인 또는 최적화되지 않았으며 제대로 또는 전혀 작동하지 않을 수 있습니다.
+>확인 된 최소 사양을 충족 하지 않는 불연속 및 통합형 그래픽 하드웨어는 Windows Mixed Reality에 대해 테스트, 확인 또는 최적화 되지 않으며 제대로 작동 하지 않거나 전혀 작동 하지 않을 수 있습니다.
 
 ## <a name="windows-mixed-reality-and-surface"></a>Windows Mixed Reality 및 Surface
 
-Surface 디바이스에서 최상의 Windows Mixed Reality 환경을 위해 NVIDIA GeForce GTX 1060GB 및 16GB RAM 이상으로 구성된 최신 SurfaceBook(15")을 권장합니다.  이 구성은 모든 Windows Mixed Reality 기능을 지원하며 Windows Mixed Reality 대해 테스트되었습니다.  최신 Surface Book(13.5"), Surface Studio, Surface Laptop 및 Surface Pro(2017)은 모두 Intel Core i5 CPU(이상) 및 8GB 이상의 RAM으로 구성된 경우 일부 Windows Mixed Reality 기능을 지원합니다.
+Surface 장치에서 최상의 Windows Mixed Reality 환경을 위해 최소 NVIDIA GeForce gtx 1060 GB 및 16gb RAM을 사용 하 여 구성 된 최신 SurfaceBook (15 ")를 권장 합니다.  이 구성은 모든 Windows Mixed Reality 기능을 지원 하며 Windows Mixed Reality 테스트 되었습니다.  최신 Surface Book (13.5 "), Surface Studio, Surface Laptop 및 Surface Pro (2017)는 Intel Core i5 CPU (또는 더 나은)와 8gb 이상의 RAM을 사용 하 여 구성 된 경우 일부 Windows Mixed Reality 기능을 지원 합니다.
 
 **요구 사항:**
 
-* Surface 제품은 드라이버 업데이트가 Windows Mixed Reality 호환되어야 합니다. 이러한 드라이버는 설정 > 업데이트 및 **보안 > 업데이트 확인으로** 가서 Surface에 설치할 수 있습니다.
-* Surface 제품에는 비디오 포트(Surface PC에 따라 미니 디스플레이포트 또는 USB-C)에서 Windows Mixed Reality 헤드셋용 HDMI 2.0까지의 [어댑터가](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) 필요합니다. HDMI AV 어댑터에 대한 Surface Mini-DisplayPort 최신 버전은 HDMI 2.0과 호환됩니다(이전 버전은 그렇지 않습니다). 마찬가지로 Surface <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">USB-C-HDMI 어댑터도 HDMI</a> 2.0과 호환됩니다.
+* Surface 제품은 Windows Mixed Reality와 호환 되도록 드라이버 업데이트가 필요 합니다. 이러한 드라이버는 **설정 > 업데이트 및 보안 > 업데이트 확인** 으로 이동 하 여 화면에 설치할 수 있습니다.
+* surface 제품은 Windows Mixed Reality 헤드셋의 HDMI 2.0에 대 한 비디오 포트 (surface PC에 따라 미니 DisplayPort 또는 USB-C)의 [어댑터가](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) 필요 합니다. HDMI AV 어댑터에 대 한 최신 버전의 Surface Mini-DisplayPort는 HDMI 2.0 (이전 버전은 아님)과 호환 됩니다. 마찬가지로, <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">Hdmi 어댑터와 Hdmi 어댑터</a> 는 hdmi 2.0와도 호환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [커뮤니티에 질문하기](https://answers.microsoft.com)
-* [지원을 요청합니다.](https://support.microsoft.com/contactus/)
-* [Windows Mixed Reality 지원 PC에 권장되는 어댑터](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+* [지원 문의](https://support.microsoft.com/contactus/)
+* [Windows Mixed Reality 지원 pc의 권장 어댑터](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
