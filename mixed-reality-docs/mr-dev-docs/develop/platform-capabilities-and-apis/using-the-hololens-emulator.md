@@ -7,12 +7,12 @@ ms.date: 05/11/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, 에뮬레이터
-ms.openlocfilehash: a9ecb121652dde39be0f91a24a4d57856a874071
-ms.sourcegitcommit: eb39526f9620f0459bd30e4484307892f4609334
+ms.openlocfilehash: 701cffbe576c64333874fc88c3cd6a6b821bc458
+ms.sourcegitcommit: 78746bef0e1ffe1480e89fed8cd30f6f8b389e8d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114201634"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "114713584"
 ---
 # <a name="using-the-hololens-emulator"></a>HoloLens 에뮬레이터 사용
 
@@ -283,20 +283,6 @@ Visual Studio의 디버그 대상 목록이 비어 있고(예를 들어, 시작�
 
 에뮬레이터가 시작될 때 시스템이 중지되면 에뮬레이터 그래픽에 대한 하드웨어 가속을 사용하지 않도록 설정합니다.
 * HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\XDE\10.0에서 “DisableGPU”라는 레지스트리 DWORD 값을 만들고 해당 값을 1로 설정합니다.
-
-## <a name="next-development-checkpoint"></a>다음 개발 검사점
-
-앞에서 설명한 Unity 개발 검사점 경험을 수행하는 경우 배포 단계를 진행하고 있는 것입니다. 여기에서 다음 항목으로 진행할 수 있습니다.
-
-> [!div class="nextstepaction"]
-> [HoloLens 에뮬레이터에 배포](using-the-hololens-emulator.md)
-
-또는 고급 서비스 추가로 바로 이동합니다.
-
-> [!div class="nextstepaction"]
-> [고급 서비스](../../develop/unity/unity-development-overview.md#5-adding-services)
-
-언제든지 [Unity 개발 검사점](../../develop/unity/unity-development-overview.md#4-deploying-to-a-device-or-emulator)으로 돌아갈 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 * [고급 HoloLens 에뮬레이터 및 Mixed Reality 시뮬레이터 입력](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)
