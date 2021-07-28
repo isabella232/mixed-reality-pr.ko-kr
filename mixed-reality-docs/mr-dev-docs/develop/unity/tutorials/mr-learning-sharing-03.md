@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 976593fd2f107d456da4f04da19621dd253f2ae1
-ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
+ms.openlocfilehash: 207c451ee616ee4065e948ca78c17ad59f7dd190
+ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111772426"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114702471"
 ---
 # <a name="3-connecting-multiple-users"></a>3. 여러 사용자 연결
 
@@ -39,63 +39,9 @@ Project 창에서 **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefab
 
 ![새로 추가한 DebugWindow 프리팹이 선택된 Unity](images/mr-learning-sharing/sharing-03-section1-step1-2.png)
 
-## <a name="creating-the-user-prefab"></a>사용자 프리팹 만들기
-
-이 섹션에서는 공유 환경의 사용자를 나타내는 데 사용할 프리팹을 만듭니다.
-
-### <a name="1-create-and-configure-the-user"></a>1. 사용자 만들기 및 구성
-
-Hierarchy 창에서 빈 영역을 마우스 오른쪽 단추로 클릭하고 **Create Empty** 를 선택하여 빈 개체를 장면에 추가하고 개체의 이름을 **PhotonUser** 로 지정하고 다음과 같이 구성합니다.
-
-* 변환 **위치** 는 X = 0, Y = 0, Z = 0으로 설정되어야 합니다.
-
-![새로 만든 PhotonUser 개체가 선택된 Unity](images/mr-learning-sharing/sharing-03-section2-step1-1.png)
-
-Hierarchy 창에서 **PhotonUser** 개체를 선택한 다음, Inspector 창에서 **구성 요소 추가** 단추를 사용하여 **Photon User (Script)** 구성 요소를 PhotonUser 개체에 추가합니다.
-
-![Photon User 구성 요소가 추가된 Unity](images/mr-learning-sharing/sharing-03-section2-step1-2.png)
-
-Inspector 창에서 **Add Component** 단추를 사용하여 **Generic Net Sync (Script)** 구성 요소를 PhotonUser 개체에 추가하고 다음과 같이 구성합니다.
-
-* **Is User** 확인란을 선택합니다.
-
-![Generic Net Sync 구성 요소가 추가되고 구성된 Unity](images/mr-learning-sharing/sharing-03-section2-step1-3.png)
-
-Inspector 창에서 **Add Component** 단추를 사용하여 **Photon View (Script)** 구성 요소를 PhotonUser 개체에 추가하고 다음과 같이 구성합니다.
-
-* **Observed Components(관찰된 구성 요소)** 필드에 **Generic Net Sync(Script)(일반 네트워크 동기화(스크립트))** 구성 요소가 할당되어 있는지 확인합니다.
-
-![Photon View 구성 요소가 추가되고 구성된 Unity](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
-
-### <a name="2-create-the-avatar"></a>2. 아바타 만들기
-
-프로젝트 창에서 **패키지** > **Mixed Reality Toolkit 표준 자산** > **자료** 폴더로 이동하여 MRTK 자료를 찾습니다.
-
-그런 다음, Hierarchy 창에서 **PhotonUser** 개체를 마우스 오른쪽 단추로 클릭하고 **3D Object** > **Sphere** 를 선택하여 PhotonUser 개체의 자식으로 구형 개체를 만들어서 다음과 같이 구성합니다.
-
-* 변환 **Position** 은 X = 0, Y = 0, Z = 0으로 설정해야 합니다.
-* 변환 **Scale** 을 적절한 크기(예: X = 0.15, Y = 0.15, Z = 0.15)로 변경합니다.
-* MeshRenderer > Materials > **Element 0** 필드에 **MRTK_Standard_White** 자료를 할당합니다.
-
-![새로 만들고 구성한 아바타 구가 있는 Unity](images/mr-learning-sharing/sharing-03-section2-step2-1.png)
-
-### <a name="3-create-the-prefab"></a>3. 프리팹 만들기
-
-Project 창에서 **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** 폴더로 이동합니다.
-
-![Resource 폴더가 선택된 Unity 프로젝트 창](images/mr-learning-sharing/sharing-03-section2-step3-1.png)
-
-Resources 폴더를 선택한 상태에서 **PhotonUser** 개체를 Hierarchy 창에서 **Resources** 폴더로 **클릭하고 끌어서** PhotonUser 개체를 프리펩으로 만듭니다.
-
-![새로 만든 PhotonUser 프리팹이 선택된 Unity](images/mr-learning-sharing/sharing-03-section2-step3-2.png)
-
-Hierarchy 창에서 **PhotonUser** 개체를 마우스 오른쪽 단추로 클릭하고 **Delete** 를 선택하여 장면에서 제거합니다.
-
-![새로 만든 PhotonUser 프리팹이 장면에서 제거된 Unity](images/mr-learning-sharing/sharing-03-section2-step3-3.png)
-
 ## <a name="configuring-pun-to-instantiate-the-user-prefab"></a>사용자 프리팹을 인스턴스화하도록 PUN 구성
 
-이 섹션에서는 이전 섹션에서 만든 PhotonUser 프리펩을 사용하도록 프로젝트를 구성합니다.
+이 섹션에서는 PhotonUser 프리펩을 사용하도록 프로젝트를 구성합니다.
 
 Project 창에서 **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** 폴더로 이동합니다.
 

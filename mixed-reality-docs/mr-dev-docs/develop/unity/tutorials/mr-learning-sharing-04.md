@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: d4dc943c8ca57331b4916e40db67df3cd3d6d2e6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4be0fc30b6d1b401bf137be4060704f54515ceb1
+ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590065"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114702501"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4. 여러 사용자와 개체 움직임 공유
 
@@ -27,9 +27,17 @@ ms.locfileid: "99590065"
 
 이 섹션에서는 자습서 프리팹을 추가하여 장면을 준비합니다.
 
+계층 창에서 **MixedRealityPlayspace** 개체를 확장하고 **주 카메라** 자식 개체를 선택한 다음, 검사기 창에서 **구성 요소 추가** 단추를 사용하여 **AR 카메라 관리자(스크립트)** 구성 요소를 **주 카메라** 개체에 추가합니다.
+
+![AR 카메라 관리자 구성 요소가 부분적으로 구성된 Unity](images/mr-learning-sharing/sharing-04-section1-step1-0.png)
+
 Project 창에서 **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** 폴더로 이동하여 **TableAnchor** 프리팹을 Hierarchy 창의 **SharedPlayground** 개체로 끌어와서 SharedPlayground 개체의 자식으로 장면에 추가합니다.
 
 ![새로 추가한 TableAnchor 프리팹이 선택된 Unity](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
+
+계층 창에서 **MixedRealityPlayspace** 개체가 확장되고 **TableAnchor** 개체가 선택되어 있는지 확인합니다. **주 카메라** 구성 요소를 **TableAnchor** 의 **AR 세션 원본** 구성 요소의 **카메라** 필드로 끕니다.
+
+![AR 세션 원본 기본 카메라 할당이 구성된 Unity](images/mr-learning-sharing/sharing-04-section1-step1-2.png)
 
 ## <a name="configuring-pun-to-instantiate-the-objects"></a>개체를 인스턴스화하도록 PUN 구성
 

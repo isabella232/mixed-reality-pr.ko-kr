@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, 다중 사용자 기능, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 2b925457128989933615686ee45ffa6eaa7d20ef
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 28776e106b96d1265e435d60e7008b1d88c01060
+ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175425"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114702508"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Photon Unity 네트워킹 설정
 
@@ -56,15 +56,6 @@ Unity 메뉴에서 **편집** > **프로젝트 설정...** 을 차례로 선택�
 
 ![Unity Capabilities 설정](images/mr-learning-sharing/sharing-02-section2-step1-2.png)
 
-## <a name="installing-inbuilt-unity-packages"></a>기본 제공 Unity 패키지 설치
-
-Unity 메뉴에서 **창** > **패키지 관리자** 를 차례로 선택하여 [패키지 관리자] 창을 연 다음, **AR Foundation** 을 선택하고, **설치** 단추를 클릭하여 패키지를 설치합니다.
-
-![AR Foundation이 선택된 Unity Package Manager](images/mr-learning-sharing/sharing-02-section3-step1-1.png)
-
-> [!NOTE]
-> Azure Spatial Anchors SDK에 필요하므로 AR Foundation 패키지를 설치합니다. 이 패키지는 다음 섹션에서 가져옵니다.
-
 ## <a name="importing-the-tutorial-assets"></a>자습서 자산 가져오기
 
 AzurespatialAnchors SDK V2.7.1을 Unity 프로젝트에 추가합니다. 패키지를 추가하려면 이 [자습서](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)를 따르세요.
@@ -72,9 +63,9 @@ AzurespatialAnchors SDK V2.7.1을 Unity 프로젝트에 추가합니다. 패키�
 
 다음 Unity 사용자 지정 패키지를 **나열된 순서대로** 다운로드하여 **가져옵니다**.
  
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.4.0.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.7.2/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.7.2.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.7.2/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.7.2.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.7.2/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.7.2.unitypackage)
 
 자습서 자산을 가져오면 [프로젝트] 창이 다음과 같이 표시됩니다.
 
