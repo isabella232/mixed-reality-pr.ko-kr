@@ -1,31 +1,29 @@
 ---
 title: 홀로그램 원격 플레이어
-description: Holographic 원격 플레이어 및 Wi-fi를 통해 실시간으로 PC에서 HoloLens로 Holographic 콘텐츠 스트리밍에 대해 알아봅니다.
+description: Holographic 원격 플레이어에 대해 알아보고 wi-fi를 통해 실시간으로 HoloLens pc에서 실시간으로 Holographic 콘텐츠를 스트리밍하는 방법에 대해 알아봅니다.
 author: florianbagarmicrosoft
-ms.author: flbagar
-ms.date: 12/01/2020
+ms.author: v-vtieto
+ms.date: 07/27/2021
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 진단, 성능
-ms.openlocfilehash: 768ac55bdd117648977c64a1947254540ec7306a
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: f467b32ddab231286fc916916b0a40f210a66eb1
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810142"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757021"
 ---
 # <a name="holographic-remoting-player"></a>홀로그램 원격 플레이어
 
+[Holographic Remoting의 기본 사항에 대해 알아봅니다.](platform-capabilities-and-apis/holographic-remoting-overview.md)
+
 >[!IMPORTANT]
->HoloLens 2에 대 한 Holographic 원격은 주요 버전 변경입니다. [Hololens 용 원격 응용 프로그램 **(첫 번째 gen)**](add-holographic-remoting.md) 은 NuGet 패키지 **버전 1.x** 를 사용 해야 하며, [hololens 용 원격 응용 프로그램 **2** 는](holographic-remoting-create-remote-wmr.md) 2.x를 사용 해야 합니다. x **. x.** 즉, HoloLens 2 용으로 작성 된 원격 응용 프로그램은 HoloLens (첫 번째 gen)와 호환 되지 않으며 그 반대의 경우도 마찬가지입니다.
+>HoloLens 2에 대 한 Holographic 원격은 주요 버전 변경입니다. [ **HoloLens (첫 번째 gen)** 용 원격 응용 프로그램](add-holographic-remoting.md) 은 NuGet 패키지 **버전 1.x** 를 사용 해야 하 고 [ **HoloLens 2** 용 원격 응용 프로그램](holographic-remoting-create-remote-wmr.md) 은 **2.x. x**. x를 사용 해야 합니다. 이는 HoloLens 2 용으로 작성 된 원격 응용 프로그램이 HoloLens (첫 번째 gen)와 호환 되지 않으며 그 반대의 경우도 마찬가지입니다.
 
-[Holographic Remoting Player](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) 는 Holographic 원격 기능을 지 원하는 PC 앱 및 게임에 연결 하는 동반 앱입니다. Holographic 원격 스트림은 Wi-Fi 연결을 사용 하 여 PC에서 실시간으로 Microsoft HoloLens로 콘텐츠를 Holographic 합니다.
-
-Holographic Remoting Player는 Holographic 원격 기능을 지원 하도록 설계 된 PC 앱 에서만 사용할 수 있습니다.
-
-Holographic 원격 플레이어는 HoloLens (첫 번째 gen)와 HoloLens 2 모두에 대해 사용할 수 있습니다.  HoloLens를 사용 하 여 Holographic Remoting을 지 원하는 PC 앱은 HoloLens 2를 사용 하는 Holographic Remoting을 지원 하도록 업데이트 해야 합니다. 지원 되는 버전에 대 한 질문이 있으면 앱 공급자에 게 문의 하세요.
+[Holographic Remoting Player](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) 는 Holographic 원격 기능을 지 원하는 PC 앱 및 게임에 연결 하는 동반 앱입니다. 플레이어는 HoloLens (첫 번째 gen) 및 HoloLens 2 둘 다에서 사용할 수 있습니다.  HoloLens에서 Holographic remoting을 지 원하는 PC 앱은 HoloLens 2를 사용 하 여 Holographic remoting을 지원 하도록 업데이트 해야 합니다. 지원 되는 버전에 대 한 질문이 있으면 앱 공급자에 게 문의 하세요.
 
 >[!TIP]
->[2.2.0](holographic-remoting-version-history.md#v2.2.0) 버전부터 Holographic 원격 플레이어는 [windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md)를 실행 하는 windows pc 에서도 사용할 수 있습니다.
+>[2.2.0](holographic-remoting-version-history.md#v2.2.0) 버전부터 Holographic 원격 플레이어를 [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md)를 실행 하는 pc Windows 사용할 수도 있습니다.
 
 >[!TIP]
 >[OPENXR API](../native/openxr.md) 를 사용 하 여 [2.4.0](holographic-remoting-version-history.md#v2.4.0) 버전의 원격 앱을 만들 수 있습니다. 시작 하려면 [OpenXR api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-openxr.md)을 참조 하세요.
@@ -52,9 +50,9 @@ Holographic 원격 연결이 **암호화 되지 않았습니다**. 신뢰 하는
 연결의 품질을 측정 하려면 Holographic 원격 플레이어의 주 화면에 있는 동안 **"진단 사용"** 이라고 표시 합니다. 진단을 사용 하도록 설정 하면 **HoloLens (첫 번째 gen)** 에서 앱이 다음과 같이 표시 됩니다.
 
 * **FPS** -원격 플레이어에서 초당 수신 및 렌더링 하는 렌더링 된 프레임의 평균 수입니다. 이상적인는 60 FPS입니다.
-* **대기 시간** -프레임이 PC에서 HoloLens로 이동 하는 데 걸리는 평균 시간입니다. 더 낮은 방법이 있습니다. 이는 주로 Wi-Fi 네트워크에 따라 다릅니다.
+* **대기 시간** -프레임을 PC에서 HoloLens로 이동 하는 데 걸리는 평균 시간입니다. 더 낮은 방법이 있습니다. 이는 주로 Wi-Fi 네트워크에 따라 다릅니다.
 
-**HoloLens 2** 에서 앱은 다음과 같이 표시 됩니다.
+**HoloLens 2** 앱은 다음과 같이 표시 됩니다.
 
 ![Holographic 원격 플레이어 진단](images/holographicremotingplayer-diag.png)
 
@@ -69,7 +67,7 @@ Holographic 원격 연결이 **암호화 되지 않았습니다**. 신뢰 하는
     >네트워크 지터를 향한 경우 건너뛴 후 다시 사용 된 프레임은 일반적으로 동일 합니다. 반대로 건너뛴 프레임만 표시 되는 경우 플레이어는 대상 프레임 속도로 적중 되지 않는다는 표시기입니다. 이 경우 문제를 진단할 때 최대 렌더링 델타 시간을 눈에 파악 해야 합니다.
 
 * **비디오 프레임 델타** -마지막 1 초 동안 받은 비디오 프레임 사이의 최소/최대 델타입니다. 일반적으로이 수는 네트워크 지터로 인해 발생 하는 문제가 발생 하는 경우 건너뛴/재사용 된 프레임과 관련이 있습니다.
-* **Latency** -마지막 1 초 동안의 평균 소요 시간 (밀리초)입니다. 이 컨텍스트를 사용 하는 경우 HoloLens 디스플레이에 해당 포즈/원격 분석 데이터에 대 한 비디오 프레임을 표시할 때까지 HoloLens에서 원격/원격 쪽으로 포즈/센서 데이터를 전송 하는 데 걸리는 시간을 의미 합니다.
+* **Latency** -마지막 1 초 동안의 평균 소요 시간 (밀리초)입니다. 이 컨텍스트를 사용 하면 HoloLens 표시 될 때 해당 포즈/원격 분석 데이터에 대 한 비디오 프레임을 표시할 때까지 HoloLens에서 원격/원격 쪽으로 포즈/센서 데이터를 전송 하는 데 걸리는 시간을 의미 합니다.
 * **삭제 된 비디오 프레임** -마지막 1 초 동안 그리고 연결이 설정 된 후 삭제 된 비디오 프레임의 수입니다. 삭제 된 비디오 프레임의 주요 원인은 비디오 프레임을 순서 대로 도착 하지 않는 경우이 고, 그 이유는 이미 최신 항목 이므로 삭제 해야 하는 경우입니다. 이는 삭제 된 *프레임과* 유사 하지만 원인이 원격 스택에서 더 낮은 수준에 있습니다. 삭제 된 비디오 프레임은 잘못 된 네트워크 조건 에서만 필요 합니다.
 
 주 화면에서 **"진단 사용 안 함"** 을 사용 하 여 진단을 해제할 수 있습니다.
@@ -81,7 +79,7 @@ Holographic 원격 연결이 **암호화 되지 않았습니다**. 신뢰 하는
 
 ## <a name="see-also"></a>참고 항목
 * [HoloLens (첫 번째 gen): Holographic 원격 추가](add-holographic-remoting.md)
-* [Windows Mixed Reality Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-wmr.md)
+* [Windows Mixed Reality api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-wmr.md)
 * [OpenXR Api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-openxr.md)
 * [홀로그램 원격 소프트웨어 사용 조건](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?LinkId=521839)

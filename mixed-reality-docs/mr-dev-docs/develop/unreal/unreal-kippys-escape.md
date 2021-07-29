@@ -1,32 +1,39 @@
 ---
 title: Kippy의 이스케이프 만들기
-description: Unreal Engine에서 Kippy의의 이스케이프 혼합 현실 응용 프로그램을 만드는 방법에 대해 알아보겠습니다.
+description: unreal Engine에서 HoloLens 2에 대 한 Kippy의 이스케이프 혼합 현실 응용 프로그램을 만드는 과정을 살펴볼 때에도 문의 하십시오.
 author: sw5813
 ms.author: suwu
 ms.date: 9/4/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, 장치에 배포, PC, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+keywords: unreal, unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, 장치에 배포, PC, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: eca0b12cd9ba4e3d5d4033790184ffd770b44280
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 353df2f2f5bc9a1d70fc354fd3014f10c0ba95d9
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635401"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757118"
 ---
 # <a name="the-making-of-kippys-escape"></a>Kippy의 이스케이프 만들기
+![Kippy의 이스케이프 주인공 이미지](images/KippysEscape_1920.jpg)
 
-Kippy가 아일랜드에서 남겨진 상태를 찾도록 합니다. 문제를 해결 하는 데 도움이 되는 문제를 해결 하는 데 도움이 될 것입니다. 스트랩을에서 앱을 다운로드 하 고 Microsoft Store에서 [앱을 다운로드](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) 하거나 GitHub에서 [리포지토리](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) 를 복제 하 고 Kippy home safe를 가져옵니다.  
+Kippy가 아일랜드에서 남겨진 상태를 찾도록 합니다. 문제를 해결 하는 데 도움이 되는 문제를 해결 하는 데 도움이 될 것입니다. HoloLens 2에 스트랩을 Microsoft Store에서 [앱을 다운로드](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) 하거나 GitHub에서 [리포지토리](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) 를 복제 하 고 Kippy home safe를 가져옵니다.  
 
 > [!IMPORTANT]
-> GitHub 리포지토리에서 Kippy의 이스케이프를 빌드하는 경우 **Unreal Engine 4.25** 이상을 사용 하 고 있는지 확인 합니다.
+> GitHub 리포지토리에서 Kippy의 이스케이프를 작성 하는 경우 **unreal Engine 4.25** 이상을 사용 하 고 있는지 확인 합니다.
 
-Kippy의 이스케이프는 Unreal Engine 4로 빌드된 오픈 소스 [HoloLens 2](/hololens/hololens2-hardware) 샘플 앱 이며, [Unreal 용 혼합 현실 UX 도구](https://github.com/microsoft/MixedReality-UXTools-Unreal)입니다. 이 게시물에서는 환경을 구현 하 고 최적화 하기 위한 첫 번째 원칙 및 시각적 디자인의 프로세스를 안내 합니다. MRTK UX 도구를 사용 하 여 혼합 현실 응용 프로그램을 개발 하는 방법에 대 한 자세한 내용은 [Unreal development 개요](unreal-development-overview.md)를 확인할 수 있습니다.
+Kippy의 이스케이프는 unreal Engine 4로 빌드된 오픈 소스 [HoloLens 2](/hololens/hololens2-hardware) 샘플 앱 이며, [unreal 용 혼합 현실 UX 도구](https://github.com/microsoft/MixedReality-UXTools-Unreal)입니다. 이 게시물에서는 환경을 구현 하 고 최적화 하기 위한 첫 번째 원칙 및 시각적 디자인의 프로세스를 안내 합니다. MRTK UX 도구를 사용 하 여 혼합 현실 응용 프로그램을 개발 하는 방법에 대 한 자세한 내용은 [Unreal development 개요](unreal-development-overview.md)를 확인할 수 있습니다.
+
+## <a name="download-app-from-microsoft-store-in-hololens-2"></a>HoloLens 2의 Microsoft Store에서 앱 다운로드
+HoloLens 2 장치가 있는 경우 장치에서 앱을 직접 다운로드 하 여 설치할 수 있습니다.
+
+<a href='//www.microsoft.com/store/apps/9nbd7gl86vkd?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="284px" height="104px" style='width: 284px; height: 104px;'/></a>
+
 
 ## <a name="first-principles"></a>첫 번째 원칙 
 
-Kippy의 이스케이프 만들기에서 목표는 [Unreal Engine의 HoloLens 2 지원](https://docs.unrealengine.com/Platforms/AR/HoloLens2/index.html), hololens 2의 기능 및 혼합 현실 도구 키트를 강조 하는 환경을 만드는 것 이었습니다. 개발자가 Unreal 및 HoloLens 2를 사용 하 여 만들 수 있는 기능을 영감 개발자를 위한 것입니다.  
+Kippy의 이스케이프 만들기에서 목표는 [unreal Engine의 HoloLens 2 지원](https://docs.unrealengine.com/Platforms/AR/HoloLens2/index.html), HoloLens 2의 기능 및 혼합 현실 Toolkit를 강조 하는 환경을 만드는 것 이었습니다. 개발자 들이 영감를 사용 하 여 만들 수 있는 작업을 상상 하는 개발자를 위해 노력 하 HoloLens 2 고 있습니다.  
 
 환경에 대 한 세 가지 안내 원칙 (재미 있고 대화형이 필요 하 고 진입에 대 한 장벽을 낮음)을 제공 했습니다. 처음에는 혼합 된 현실 사용자에 게는 자습서를 사용 하지 않아도 되도록 충분히 직관적으로 경험을 원했습니다.  
 
@@ -34,7 +41,7 @@ Kippy의 이스케이프 만들기에서 목표는 [Unreal Engine의 HoloLens 2 
 
 HoloLens 2는 현재 게임에서 다른 곳에서 찾을 수 없는 디자인 기능에 액세스할 수 있습니다. 사용자를 사용 하 여 개체를 직접 푸시되 나 조작 하거나 시각 추적을 대상으로 지정할 수 있습니다. 이러한 주요 기능은 Kippy의 이스케이프에서 작성 한 흥미로운 몇 분 뒤에 있습니다.  
 
-고유한 HoloLens 2 기능을 게임 디자인에 대 한 지침으로 사용 하 여 몇 가지 작은 환경 시나리오의 범위를 지정 했습니다. 다른 플레이어 높이에 맞게 조정 될 수 있고 몇 가지 오락 아이디어 아이디어를 제공 했기 때문에 제도를 이해 했습니다. 좋아하는에 대 한 배치의 테마는 각 아일랜드에서 제공 하는 이상한 에너지를 방해 하는 활용에 대 한 기계를 구축 했습니다. 각각은 시각적 효과를 만드는 데 도움이 되는 고유한 모양과 느낌을 제공 합니다. 모델링 및 질감 사이에 적절 한 균형을 유지 하면 렌더링 성능이 저하 될 수 있으므로 스타일을 염두에 두고 디자인 되었습니다. 
+게임 디자인을 위한 지침으로 고유한 HoloLens 2 기능을 사용 하 여 몇 가지 작은 환경 시나리오의 범위를 지정 했습니다. 다른 플레이어 높이에 맞게 조정 될 수 있고 몇 가지 오락 아이디어 아이디어를 제공 했기 때문에 제도를 이해 했습니다. 좋아하는에 대 한 배치의 테마는 각 아일랜드에서 제공 하는 이상한 에너지를 방해 하는 활용에 대 한 기계를 구축 했습니다. 각각은 시각적 효과를 만드는 데 도움이 되는 고유한 모양과 느낌을 제공 합니다. 모델링 및 질감 사이에 적절 한 균형을 유지 하면 렌더링 성능이 저하 될 수 있으므로 스타일을 염두에 두고 디자인 되었습니다. 
 
 ![초기 게임 디자인 ](images/kippys-escape/kippys-escape-img-01.png)
  *은 환경에 대 한 초기 스케치를 스케치 합니다* .
@@ -80,9 +87,9 @@ UX 도구의 [범위 컨트롤](https://microsoft.github.io/MixedReality-UXTools
 
 ![Slider 구성 요소 예제 gif](images/kippys-escape/kippys-escape-img-09.gif) 
 
-## <a name="optimizing-for-hololens-2"></a>HoloLens 2 용 최적화 
+## <a name="optimizing-for-hololens-2"></a>HoloLens 2 최적화 
 
-모바일 장치에서 실행 되도록 제작 된 환경을 사용 하 여 성능에 대 한 눈을 유지 하는 것은 매우 중요 합니다. Unreal 4.25에는 모바일 다중 뷰 지원에 대 한 주요 업데이트가 포함 되어 있습니다 .이로 인해 렌더링 오버 헤드가 크게 줄어들고 프레임 비율이 높아집니다. 최적화 하는 경우에는 사용 하지 않는 HoloLens 2 개발에 대 한 다른 [권장 성능 설정을](performance-recommendations-for-unreal.md) 확인 하는 것이 좋습니다.  
+모바일 장치에서 실행 되도록 제작 된 환경을 사용 하 여 성능에 대 한 눈을 유지 하는 것은 매우 중요 합니다. Unreal 4.25에는 모바일 다중 뷰 지원에 대 한 주요 업데이트가 포함 되어 있습니다 .이로 인해 렌더링 오버 헤드가 크게 줄어들고 프레임 비율이 높아집니다. 최적화할 때 unreal을 사용 하 여 HoloLens 2 개발에 대 한 다른 [권장 성능 설정을](performance-recommendations-for-unreal.md) 확인 하는 것이 좋습니다.  
 
 물리 개체는 여전히 성능에 대해 비용이 많이 들기 때문에 몇 가지 해결 방법을 사용 했습니다. 예를 들어 세 번째 "브리지"를 사용 하려면 stairway를 차단 하는 일부 이물질을 죠 합니다. 충격을 힘 개체로 강제 적용 하는 대신, 폭탄 detonation는 폭발을 트리거하고 폭발 파티클 효과에 대 한 정적 스톤을 전환 합니다. 
 
@@ -104,7 +111,7 @@ HoloLens 2를 부팅 하 고 Microsoft Store에서 앱을 [다운로드](https:/
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60"><img alt="Picture of Jack Caron" width="60" height="60" src="images/kippys-escape/jack-caron.jpg"></td>
-<td style="border-style: none"><b>잭 Caron</b><br><i>리드 게임 디자이너</i><br>현재는 HoloLens 2 프로젝트 및 AltspaceVR를 비롯 하 여 Microsoft의 혼합 현실 환경에서 작동 하며 이전에 HoloLens 플랫폼 팀의 디자이너 였습니다.</td>
+<td style="border-style: none"><b>잭 Caron</b><br><i>리드 게임 디자이너</i><br>현재는 HoloLens 2 프로젝트 및 AltspaceVR를 포함 하 여 Microsoft의 혼합 현실 환경에서 작동 하며, 이전에는 HoloLens 플랫폼 팀의 디자이너 였습니다.</td>
 </tr>
 </table>
 
