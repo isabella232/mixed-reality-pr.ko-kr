@@ -222,8 +222,6 @@
       items:
         - name: Unity의 사진 비디오 카메라
           href: unity/locatable-camera-in-unity.md
-        - name: 데스크톱 앱의 홀로그램 원격 접속
-          href: unity/holographic-remoting-desktop.md
         - name: 포커스 지점
           href: unity/focus-point-in-unity.md
         - name: 추적 손실
@@ -249,7 +247,7 @@
             - name: Surfaces
               href: unity/sampleapp-surfaces.md
             - name: 원소의 주기율표 2.0
-              href: 'https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158'
+              href: unity/periodic-table-of-the-elements-2.md
             - name: Galaxy Explorer 2.0
               href: unity/galaxy-explorer-update.md
             - name: 품질 기본 사항
@@ -268,8 +266,8 @@
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Unity 권장 설정
           href: unity/recommended-settings-for-unity.md
-        - name: Unity 플레이 모드
-          href: unity/unity-play-mode.md
+        - name: 홀로그램 원격으로 작업 미리 보기
+          href: unity/holographic-remoting-in-unity.md
     - name: Visual Studio 솔루션
       items:
         - name: Unity Visual Studio 솔루션 내보내기 및 빌드
@@ -454,6 +452,8 @@
           href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: 홀로그램 원격
       items:
+        - name: 개요
+          href: platform-capabilities-and-apis/holographic-remoting-overview.md
         - name: 홀로그램 원격 플레이어
           href: platform-capabilities-and-apis/holographic-remoting-player.md
         - name: 홀로그램 원격 원격 앱 작성
@@ -475,9 +475,7 @@
         - name: 홀로그램 원격 소프트웨어 사용 조건
           href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: HoloLens(1세대)의 홀로그램 원격
-          items:
-            - name: 홀로그램 원격 접속 추가
-              href: platform-capabilities-and-apis/add-holographic-remoting.md
+          href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: 앱 품질 및 테스트
       items:
         - name: 앱 품질 기준
