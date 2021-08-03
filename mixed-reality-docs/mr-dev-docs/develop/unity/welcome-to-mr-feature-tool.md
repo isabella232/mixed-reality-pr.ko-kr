@@ -7,16 +7,16 @@ ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 최신, 도구, 시작, 기본 사항, unity, visual studio, 도구 키트, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 설치, Windows, HoloLens, 에뮬레이터, unreal, openxr
-ms.openlocfilehash: 4e822f2dda2a314ce06bc394a4d92b1aa6953af3
-ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
+ms.openlocfilehash: 1244f9cd4da0d6ae0b5c6f92698f87f0edd812e2
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111772416"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757098"
 ---
 # <a name="welcome-to-the-mixed-reality-feature-tool"></a>Mixed Reality Feature Tool 시작
 
-![Mixed Reality Feature Tool 배너 이미지](images/feature-tool-banner.png)
+![Mixed Reality Feature Tool 배너 이미지](images/feature-tool-banner.jpg)
 
 > [!IMPORTANT]
 > Mixed Reality Feature Tool은 현재 Unity에서만 사용할 수 있습니다. Unreal에서 개발 중인 경우 [도구 설치](../install-the-tools.md) 설명서를 참조하세요.
