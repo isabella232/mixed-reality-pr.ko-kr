@@ -2,21 +2,23 @@
 title: 홀로그램 원격 PC 애플리케이션 만들기
 description: 이 과정을 완료하여 혼합 현실 환경을 PC에서 HoloLens 2로 원격으로 수행하는 PC 애플리케이션을 만드는 방법을 알아봅니다.
 author: jessemcculloch
-ms.author: jemccull
-ms.date: 02/05/2021
+ms.author: v-vtieto
+ms.date: 07/26/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, PC 홀로그램 원격, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: ca0efe13acac4408a05ab89eb98b508e9993c5a4
-ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
+ms.openlocfilehash: 19c10ad0cdad70b38663f9da0f7d2a1f1702d94d
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112392542"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757235"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2. 홀로그램 원격 PC 애플리케이션 만들기
 
-이 자습서에서는 혼합 현실에서 3D 콘텐츠를 시각화하는 방법을 제공하여 언제든지 홀로그램 원격을 위한 PC 앱을 만들고 HoloLens 2에 연결하는 방법을 알아봅니다.
+이 자습서에서는 홀로그램 원격을 사용하는 PC 앱을 만드는 방법을 학습하여 진행 중인 작업을 HoloLens로 스트리밍하여 먼저 빌드하지 않고도 볼 수 있습니다.
+
+[홀로그램 원격의 기본 사항에 대해 알아봅니다.](../../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 ## <a name="objectives"></a>목표
 

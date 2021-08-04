@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f540c1cb417f64c412657ce291c0a0822961e55d
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: d7b025ebc362a441ef45860b946a7a0f30b99b1e
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112255602"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757376"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -12,10 +12,23 @@ ms.locfileid: "112255602"
 
 ### <a name="hololens-2-open-source-sample-apps"></a>HoloLens 2 오픈 소스 샘플 앱
 
-* [MRTK 예제 허브](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4)
-* [Surfaces](../unity/sampleapp-surfaces.md) - [(HoloLens 2의 Microsoft Store에서 다운로드)](https://www.microsoft.com/p/surfaces/9nvkpv3sk3x0)
-* [원소의 주기율표 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
-* [갤럭시 익스플로러 2.0](../unity/galaxy-explorer-update.md)
+:::row:::
+    :::column:::
+       [![원소의 주기율표 2.0](../images/MRDL_PeriodicTable.jpg)](../unity/periodic-table-of-the-elements-2.md) **[원소의 주기율표 2.0](../unity/periodic-table-of-the-elements-2.md)**
+    :::column-end:::
+    :::column:::
+       [![MRTK 예제 허브](../images/MRTKExamplesHub.png)](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) **[MRTK 예제 허브](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub)**
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![표면](../images/MRDL_Surfaces.jpg)](../unity/sampleapp-surfaces.md) **[표면](../unity/sampleapp-surfaces.md)**
+    :::column-end:::
+    :::column:::
+       [![갤럭시 익스플로러 2.0](../images/GalaxyExplorer2.jpg)](../unity/galaxy-explorer-update.md) **[갤럭시 익스플로러 2.0](../unity/galaxy-explorer-update.md)**
+    :::column-end:::
+:::row-end:::
 
 ### <a name="hololens-1st-gen-open-source-sample-apps"></a>HoloLens(첫 번째 gen) 오픈 소스 샘플 앱
 
@@ -36,9 +49,23 @@ ms.locfileid: "112255602"
 
 샘플의 하위 집합은 [Unreal용 Mixed Reality Toolkit](https://aka.ms/mrtk-unreal)의 일부로 [UX Tools 플러그 인](https://aka.ms/uxt-unreal)에서 제공하는 단추 및 슬라이더와 같은 대화형 UX 구성 요소를 사용합니다.
 
-* [체스 앱](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/ChessApp)
-* [Kippy의 이스케이프](../unreal/unreal-kippys-escape.md) - HoloLens 2의 [Microsoft Store](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd)에서 다운로드
-* [Ford GT40](../unreal/unreal-ford-gt40.md) - [Microsoft Store](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp)에서 다운로드
+:::row:::
+    :::column:::
+       [![Kippy의 이스케이프](../unreal/images/KippysEscape_1920.jpg)](../unreal/unreal-kippys-escape.md) **[Kippy의 이스케이프](../unreal/unreal-kippys-escape.md)**
+    :::column-end:::
+    :::column:::
+       [![Ford GT40](../unreal/images/ford-gt40-hero_1920.jpg)](../unreal/unreal-ford-gt40.md) **[Ford GT40](../unreal/unreal-ford-gt40.md)**
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![채스 앱](../images/Unreal_ChessApp.png)](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/ChessApp) **[채스 앱](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/ChessApp)**
+    :::column-end:::
+    :::column:::
+
+    :::column-end:::
+:::row-end:::
 
 ### <a name="made-by-epic-games"></a>대규모 사용자 스토리 게임을 통해 수행
 
