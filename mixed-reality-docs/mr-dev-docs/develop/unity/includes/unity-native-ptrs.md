@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: 612168d7a1e56f74350ee8244e26e5ad886503c2
-ms.sourcegitcommit: 441ef99e6090081c6cd3aa88ed21e13e941f0cc6
+ms.openlocfilehash: 78296dd4e6667c34926c954774547b21a223c5f4b6635476c51046c7ca22cdc3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102475080"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208406"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 
 ## <a name="windowsmixedrealityutilities"></a>WindowsMixedRealityUtilities
 
-**네임 스페이스:** *MixedReality. WindowsMixedReality*<br>
+**네임 스페이스:** *MixedReality. Toolkit. WindowsMixedReality*<br>
 **유형:** *WindowsMixedRealityUtilities*
 
 MRTK는 **WindowsMixedRealityUtilities** 클래스를 통해 레거시 WSA 및 XR SDK에서 이미 마샬링된 형식을 제공 합니다.
@@ -43,7 +43,7 @@ public static IntPtr OriginSpatialCoordinateSystem { get; } // Windows::Percepti
 **네임 스페이스:** *UNITYENGINE. XR*<br>
 **유형:** *xrdevice*
 
-<a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">**Xrdevice**</a> 유형을 사용 하면 <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.GetNativePtr.html" target="_blank">GetNativePtr</a> 메서드를 사용 하 여 기본 네이티브 개체에 액세스할 수 있습니다. GetNativePtr 반환 되는 항목은 플랫폼 마다 다릅니다. Windows Mixed Reality를 대상으로 하는 유니버설 Windows 플랫폼에서 GetNativePtr는 다음 구조에 대 한 포인터 (IntPtr)를 반환 합니다.
+<a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">**Xrdevice**</a> 유형을 사용 하면 <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.GetNativePtr.html" target="_blank">GetNativePtr</a> 메서드를 사용 하 여 기본 네이티브 개체에 액세스할 수 있습니다. GetNativePtr 반환 되는 항목은 플랫폼 마다 다릅니다. Windows Mixed Reality를 대상으로 지정 하는 유니버설 Windows 플랫폼에서 GetNativePtr는 다음 구조체로 포인터 (IntPtr)를 반환 합니다.
 
 ```cs
 using System;

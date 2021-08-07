@@ -1,42 +1,42 @@
 ---
-title: 혼합 현실 애플리케이션에서 공간 소리 사용
-description: 공간 소리는 혼합 현실 애플리케이션의 몰입, 접근성 및 UX 디자인을 위한 강력한 도구입니다.
+title: 혼합 현실 응용 프로그램에서 공간 소리 사용
+description: 공간 사운드는 혼합 현실 응용 프로그램에서 집중 교육, 접근성 및 UX 디자인을 위한 강력한 도구입니다.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 11/02/2019
 ms.topic: article
-keywords: Windows Mixed Reality, 공간 음향, 디자인, 스타일, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 제스처, 상호 작용, 감쇠
-ms.openlocfilehash: d51fbdf16d7186c386f124c773f75dacc8c157fd
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+keywords: Windows Mixed Reality, 공간 사운드, 디자인, 스타일, 혼합 현실 헤드셋, Windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, mrtk, 혼합 현실 Toolkit, 제스처, 상호 작용, 감쇠
+ms.openlocfilehash: 687811f23e11cadf6e75129098c9feb0393009f819eb961cf2f55a3208cc5f96
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489213"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208963"
 ---
-# <a name="how-to-use-sound-in-mixed-reality-applications"></a>혼합 현실 애플리케이션에서 소리를 사용하는 방법
+# <a name="how-to-use-sound-in-mixed-reality-applications"></a>혼합 현실 응용 프로그램에서 소리를 사용 하는 방법
 
-소리를 사용하여 애플리케이션 상태에 대한 사용자의 멘탈 모델을 알리고 강화할 수 있습니다. 적절한 경우 공간화를 사용하여 혼합 현실 세계에 소리를 배치합니다. 이러한 방식으로 감사자와 시각적 개체를 연결하면 상호 작용의 직관적인 특성을 더욱 강화하여 사용자 신뢰도를 높일 수 있습니다.
+소리를 사용 하 여 사용자의 응용 프로그램 상태 모델을 알리고 멘 탈 수 있습니다. 적절 한 경우 spatialization를 사용 하 여 혼합 현실 환경에 소리를 넣습니다. 이러한 방식으로 청각 및 시각적 개체를 연결 하면 활용의 직관적인 특성을 사용 하 여 사용자 신뢰도를 높일 수 있습니다.
 <br><br>
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/aB3TDjYklmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## <a name="when-to-add-sounds"></a>소리를 추가하는 경우
+## <a name="when-to-add-sounds"></a>소리를 추가 하는 경우
 
-혼합 현실 애플리케이션은 2D 앱보다 소리에 대한 요구가 더 큰 경우가 많습니다. 이는 타일 인터페이스가 없기 때문입니다. 사용자에게 알리거나 상호 작용을 강화할 때 소리를 추가합니다.
+혼합 현실 응용 프로그램은 종종 tactile 인터페이스가 없기 때문에 2D 앱 보다 사운드가 더 많이 필요 합니다. 사용자에 게 알리거나 상호 작용을 강화할 때 소리를 추가 합니다.
 
-### <a name="inform-and-reinforce"></a>정보 및 강화
+### <a name="inform-and-reinforce"></a>알림 및 보강
 
-* 알림과 같이 사용자가 시작하지 않은 이벤트의 경우 소리를 사용하여 변경이 발생했음을 사용자에게 알립니다.
-* 상호 작용에는 여러 단계가 있을 수 있습니다. 소리를 사용하여 스테이지 전환을 강화합니다.
+* 알림과 같이 사용자가 시작 하지 않은 이벤트의 경우에는 소리를 사용 하 여 사용자에 게 변경이 발생 했음을 알립니다.
+* 상호 작용에는 여러 단계가 있을 수 있습니다. 소리를 사용 하 여 단계 전환을 보강 합니다.
 
-상호 작용, 이벤트 및 제안된 소리 특성에 대한 다음 예제를 참조하세요.
+상호 작용, 이벤트 및 제안 된 소리 특성의 다음 예를 참조 하세요.
 
-### <a name="exercise-restraint"></a>연습 연습
+### <a name="exercise-restraint"></a>운동 지지대
 
-사용자에게 오디오 정보에 대한 무제한 용량이 없습니다.
-* 각 소리는 중요하고 구체적인 정보를 전달해야 합니다.
-* 앱이 사용자에게 알리기 위해 소리를 재생하면 일시적으로 다른 소리의 볼륨을 줄입니다.
-* 단추 가리키기 소리(다음 정보 참조)의 경우 과도한 소리 트리거를 방지하기 위해 시간 지연을 추가합니다.
+사용자는 오디오 정보에 무제한의 용량을가지고 있지 않습니다.
+* 각 사운드는 특정 한 중요 한 정보를 전달 해야 합니다.
+* 앱이 사용자에 게 알리는 소리를 재생 하는 경우 다른 소리의 볼륨을 일시적으로 줄입니다.
+* 단추 가리키기 소리 (다음 정보 참조)의 경우 과도 한 소리 트리거를 방지 하는 시간 지연을 추가 합니다.
 
 ### <a name="dont-rely-solely-on-sounds"></a>소리만 사용 하지 않음
 
@@ -58,17 +58,17 @@ ms.locfileid: "109489213"
 
 ### <a name="direct-manipulation"></a>직접 조작
 
-HoloLens 2 굴절형 손 추적은 사용자 인터페이스 요소의 직접 조작을 지원합니다. 다른 물리적 피드백이 없는 경우 소리는 중요합니다.
+HoloLens 2에서 트레일러 추적은 사용자 인터페이스 요소에 대 한 직접 조작을 지원 합니다. 다른 물리적 피드백이 없으면 소리가 중요 합니다.
 
-사용자가 키 스트로크의 맨 아래에 도달할 때 다른 표시를 얻지 못하기 때문에 *단추 누를* 소리가 중요합니다. 키 이동의 소리 표시는 작고, 미세하고, 폐색될 수 있습니다. 제스처 상호 작용과 마찬가지로 단추 누름은 클릭과 같은 짧고 바둑판식으로 들립니다. 언프레는 비슷한 클릭 소리가 나지만 피치가 높아야 합니다.
-* 예: [MRTK_ButtonPress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
-* 예: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
+키 스트로크의 아래쪽에 도달할 때 사용자가 다른 표시를 받지 않기 때문에 *단추 누르기* 소리가 중요 합니다. 주요 여행에 대 한 소리 표시기는 작은, 미묘한 및 폐색 수 있습니다. 제스처 상호 작용을 사용 하는 것 처럼 단추 누름은 클릭 처럼 짧은 tactile 소리를 표시 합니다. 누름은 비슷한 클릭 소리를 포함 하지만 볼록 피치를 사용 해야 합니다.
+* 예: [MRTK_ButtonPress .wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
+* 예: [MRTK_ButtonUnpress .wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
 
-잡기 또는 릴리스 작업을 시각적으로 확인하기는 어렵습니다. 사용자의 손은 종종 시각적 효과를 방해하며 하드 본드 개체에는 "잡기"라는 실제 시각적 아날로그가 없습니다. 소리는 성공적인 잡기 및 릴리스 상호 작용을 효과적으로 전달할 수 있습니다.
-* 잡기 작업에는 개체 주위에 손가락이 닫히는 아이디어를 요구하는 짧고 약간 섞인 택실음이 있어야 합니다. 때로는 손의 동작을 전달하기 위해 잡기 소리로 이어지는 "whoosh" 소리도 있습니다.<br/>예: [MRTK_Move_Start.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_Start.wav)
-* 릴리스 작업은 비슷하게 짧고 바둑판식으로 소리를 내야 합니다. 일반적으로 잡기 소리보다 낮은 피치이며 역순으로, 영향을 준 다음, 개체가 배치되고 있음을 알리는 "whoosh"입니다.<br/>예: [MRTK_Move_End.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_End.wav)
+잡기 또는 릴리스 작업을 시각적으로 확인 하는 것은 어렵습니다. 사용자 손을 시각적 효과를 발휘 하는 경우가 종종 있으며, 하드 수준 있는 개체는 실제 시각적으로 "잡기"를 사용 하지 않습니다. 소리는 성공적인 잡기와 릴리스 상호 작용을 효과적으로 전달할 수 있습니다.
+* 잡기 작업에는 개체 주위의 손가락을 muffled 하는 것을 나타내는 짧고 약간의 tactile 사운드가 있어야 합니다. 경우에 따라 손으로 이동 하는 소리를 전달 하는 "whoosh" 사운드도 있습니다.<br/>예: [MRTK_Move_Start .wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_Start.wav)
+* 릴리스 작업은 비슷하게 짧고 tactile 소리를 가져와야 합니다. 일반적으로는 영향을 받는 것이 고, 그 다음에는 개체의 정착를 전달 하는 "whoosh"를 사용 하 여 광고 소리와 역순으로 낮은 고주파음입니다.<br/>예: [MRTK_Move_End .wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_End.wav)
 
-*그리기* 상호 작용은 사용자의 손 이동에 따라 결정되는 볼륨이 있는 지속적이고 반복되는 소리를 얻게 됩니다. 손을 빠르게 이동할 때 사용자의 손은 가만히 있고 가장 크게 이동할 때는 자동이어야 합니다.
+*그리기* 상호 작용은 사용자의 손으로 결정 한 볼륨을 사용 하 여 영구적인 반복 소리를 가져와야 합니다. 사용자의 손을 loudest 하 고 손을 빠르게 이동 하는 경우에는 자동으로 진행 해야 합니다.
 
 ### <a name="voice-interactions"></a>음성 상호 작용
 
@@ -88,38 +88,38 @@ HoloLens 2 굴절형 손 추적은 사용자 인터페이스 요소의 직접 �
 
 *메시지 알림* 경고음은 반복적으로 빠르게 들릴 수 있습니다. 중요 한 것은 아닙니다. 중간 범위의 포지티브 톤 소리가 적용 됩니다.
 
-* 들어오는 통화 사운드는 휴대폰 벨 소리와 비슷한 품질을 가져야 합니다. 이러한 소리는 사용자가 통화에 응답할 때까지 재생되는 구를 반복합니다.
-* 음성 통신 연결 및 연결 끊김에는 짧은 음음이 있어야 합니다. 연결에 성공했음을 나타내려면 연결 소리는 긍정적인 어조여야 합니다. 연결 끊기 소리는 호출 완료를 나타내는 중립 사운드여야 합니다.
+* 들어오는 통화 사운드는 휴대폰 벨 소리와 비슷한 품질을 가져야 합니다. 이러한 소리는 사용자가 호출에 대답할 때까지 재생 되는 반복 음악 문구입니다.
+* 음성 통신 연결 및 연결 끊기에는 짧은 톤 소리가 있어야 합니다. 연결 소리는 성공적인 연결을 나타내는 양수입니다. 연결 끊기 소리는 호출 완료를 나타내는 중립 소리 여야 합니다.
 
-## <a name="handle-spatialization"></a>공간화 처리
+## <a name="handle-spatialization"></a>Spatialization 처리
 
-공간화는 스테레오 스피커 또는 스피커를 사용하여 혼합 현실 세계에 소리를 배치합니다.
+Spatialization는 스테레오 헤드폰이 나 스피커를 사용 하 여 혼합 현실 환경에 소리를 놓습니다.
 
-### <a name="which-sounds-to-spatialize"></a>공간화할 소리
+### <a name="which-sounds-to-spatialize"></a>Spatialize에 대 한 소리
 
-공간 위치가 있는 이벤트와 연결된 경우 소리를 공간화해야 합니다. 여기에는 UI, 구체화된 AI 음성 및 시각적 표시기가 포함됩니다.
+공간 위치가 있는 이벤트와 연결 된 경우에는 소리를 spatialized 해야 합니다. 여기에는 UI, 합의서 등 AI 음성 및 시각적 표시기가 포함 됩니다.
 
-*사용자 인터페이스* 요소를 공간화하여 사용자가 들은 스테레오 소리의 수를 제한하여 사용자의 음향 "공간"을 정리합니다. 오디오 피드백이 공간화되면 터치, 잡기 및 해제와 같은 조작 상호 작용이 더 자연스럽게 느낄 수 있습니다. 이러한 요소의 거리 감쇠에 대한 다음 정보를 고려합니다.
+Spatialize *사용자 인터페이스* 요소를 사용 하 여 사용자의 sonic의 수를 제한 함으로써 사용자의 sonic "공간"을 혼잡 수 있습니다. 오디오 피드백이 spatialized 면 터치, 잡기 및 해제와 같은 조작 상호 작용을 보다 자연스럽 게 느낄 수 있습니다. 이러한 요소의 거리 감쇠에 대 한 다음 정보를 고려 하십시오.
 
-*시각적 표시기* 및 *구체화된 AI 음성을* 공간화하여 이러한 항목이 보기 필드 밖에 있을 때 사용자에게 직관적으로 알릴 수 있습니다.
+*시각적 표시기* 와 *합의서 등 AI 음성을* Spatialize 사용자에 게 보기의 필드 외부에 있는 경우 사용자에 게 알려 줍니다.
     
-반면, 잘 정의된 공간 위치가 없는 *얼굴 없는 AI 음성* 및 기타 요소에 대한 공간화를 피합니다. 관련 시각적 요소가 없는 공간화는 사용자가 찾을 수 없는 시각적 요소가 있다고 생각하는 데 방해가 될 수 있습니다.
+반면, *FACELESS AI 음성* 및 잘 정의 된 공간 위치가 없는 기타 요소에 대 한 spatialization을 방지 합니다. 관련 시각적 요소가 없는 Spatialization는 사용자가 찾을 수 없는 시각적 요소가 있다는 것을 방해 수 있습니다.
 
-공간화에는 약간의 CPU 비용이 있습니다. 대부분의 애플리케이션에는 동시에 재생된 두 개의 소리가 있습니다. 이 경우 공간화 비용은 무시할 수 있습니다. MRTK 프레임 속도 모니터를 사용하여 공간화 추가의 영향을 판단할 수 있습니다.
+Spatialization에는 몇 가지 CPU 비용이 포함 됩니다. 많은 응용 프로그램에서 동시에 두 개의 사운드가 재생 됩니다. 이 경우 spatialization 비용은 무시할 수 있습니다. MRTK 프레임 속도 모니터를 사용하여 공간화 추가의 영향을 판단할 수 있습니다.
 
 ### <a name="when-and-how-to-apply-distance-based-attenuation"></a>거리 기반 감쇠를 적용하는 시기 및 방법
 
-실제 세계에서 멀리 떨어져 있는 소리는 더 조용한 것입니다. 오디오 엔진은 원본 거리를 기준으로이 감쇠를 모델링할 수 있습니다. 관련 정보를 통신할 때 거리 기반 감쇠를 사용 합니다.
+실제 세계에서는 더 멀리 떨어져 있는 소리가 더 묵직합니다. 오디오 엔진은 원본 거리에 따라 이 감쇠를 모델링할 수 있습니다. 관련 정보를 전달할 때 거리 기반 감쇠를 사용합니다.
 
-*시각적 표시기*, *애니메이션 holograms* 및 기타 정보 사운드에 대 한 거리가 사용자와 관련이 있습니다. 거리 기반 감쇠를 사용 하 여 큐를 직관적으로 제공 합니다.
+*시각적 표시기,* *애니메이션된 홀로그램* 및 기타 정보 소리까지의 거리는 사용자와 관련이 있습니다. 거리 기반 감쇠를 사용하여 직관적으로 큐를 제공합니다.
 
-각 원본에 대 한 감쇠 곡선을 혼합 현실 세계 공간의 크기에 맞게 조정 합니다. 오디오 엔진의 기본 곡선은 종종 kilometer (최대 절반)의 공간을 차지 합니다.
+혼합 현실 세계의 공간 크기에 맞게 각 원본에 대한 감쇠 곡선을 조정합니다. 오디오 엔진의 기본 곡선은 대개 큰 공간(최대 반분위수)을 의미합니다.
 
-단추 작업 및 기타 상호 작용 *의 점진적 단계* 를 보강 하는 소리는 감쇠를 적용 하지 않아야 합니다. 이러한 소리의 영향을 강화 단추와의 거리를 전달 하는 것 보다 중요 합니다. 많은 단추 클릭을 연속 해 서 사용할 수 있는 경우 특히 키보드를 사용 하면 변형이 혼란을 수 있습니다.
+단추 작업 및 기타 상호 *작용의 점진적 단계를* 강화하는 소리는 감쇠를 적용하면 안 됩니다. 이러한 소리의 효과는 단추까지의 거리를 전달하는 것보다 더 중요합니다. 변형은 특히 여러 단추 클릭이 연속적으로 들릴 수 있는 경우 키보드에서 방해가 될 수 있습니다.
 
-### <a name="which-spatialization-technology-to-use"></a>사용할 spatialization 기술
+### <a name="which-spatialization-technology-to-use"></a>사용할 공간화 기술
 
-헤드폰 또는 HoloLens 스피커를 사용 하는 경우 HRTF (head 관련 전송 함수) 기반 spatialization 기술을 사용 합니다. 이러한 기술은 실제 세계의 헤드를 중심으로 하는 소리 전파를 모델링 합니다. 사운드 소스가 한 헤드의 먼 쪽에 있는 경우에도 소리는 감쇠 및 지연이 발생 하 여 먼 귀에 전파 됩니다. 스피커 패닝은 감쇠만 사용 하며, 오른쪽에 소리가 있을 때 왼쪽 귀에 전체 감쇠를 적용 하 고 다른 방법을 적용 합니다. 이 기술은 "정상적인 청각" 수신기가 될 수 있으며 한 가지 귀에서 청각 장애가 있는 수신기에 액세스할 수 없게 됩니다.
+마이크 또는 HoloLens 화자를 사용하는 경우 HRTF(헤드 관련 전송 함수) 기반 공간화 기술을 사용합니다. 이러한 기술은 실제 세계에서 헤드 주위의 소리 전파를 모델링합니다. 소리 원본이 한쪽 머리의 먼 쪽에 있더라도 소리는 약간의 감쇠와 지연으로 먼 귀에 전파됩니다. 스피커 이동은 감쇠에만 의존하며, 소리가 우변에 있을 때 왼쪽 귀의 총 감쇠를 적용합니다. 이 기술은 "일반 청각" 수신기에 대해 불편할 수 있으며, 한쪽 귀에 청각 장애가 있는 수신기에는 액세스할 수 없습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

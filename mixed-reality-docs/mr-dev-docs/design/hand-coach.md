@@ -5,13 +5,13 @@ author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
-keywords: Windows Mixed Reality, 디자인, 수동 coach, 몰입 형 헤드셋, MRTK, 실습, 수동 지원, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 0fe0d87e26d06838c0d1b7935573d9bd8ce258ee
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Windows Mixed Reality, 디자인, 직접 coach, 몰입 형 헤드셋, mrtk, 실습, 지원, 혼합 현실 헤드셋, Windows Mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, mrtk, 혼합 현실 Toolkit
+ms.openlocfilehash: baf1dab7d73f4e5fca9078717b43dab7b71632f4aa7c36dcac280c029b05d58b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600432"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208604"
 ---
 # <a name="hand-coach"></a>핸드 코치
 
@@ -94,7 +94,7 @@ UI 메뉴를 사용 하 여 다양 한 손 크기를 테스트 하 고,이를 �
 
 **권장 authoring tool**
 
-3D 아티스트 중에는 [Autodesk의 Maya](https://www.youtube.com/watch?v=q0K3n0Gf8mA) 를 사용 하도록 선택 하 고,이는 HoloLens를 사용 하 여 자산이 생성 되는 방식을 변형할 수 있습니다. 제공 되는 실습 파일은 Maya 이진 파일 이므로 Maya를 사용 하 여 손으로 애니메이트 하 고 내보내는 것이 좋습니다. 다른 3D 프로그램을 사용 하려는 경우에는 다음을 참조 <b>하세요. FBX</b>: <a href="files/HandCoachMRTK_FBX.zip"> HandCoachMRTK_FBX.zip 다운로드 </a> 하 여 사용자 고유의 컨트롤러 설치를 만듭니다. 
+3d 아티스트 중에는 HoloLens를 사용 하 여 자산이 생성 되는 방식을 변형할 [수 있는 Autodesk의 Maya](https://www.youtube.com/watch?v=q0K3n0Gf8mA) 를 사용 하도록 선택 합니다. 제공 되는 실습 파일은 Maya 이진 파일 이므로 Maya를 사용 하 여 손으로 애니메이트 하 고 내보내는 것이 좋습니다. 다른 3D 프로그램을 사용 하려는 경우에는 다음을 참조 <b>하세요. FBX</b>: <a href="files/HandCoachMRTK_FBX.zip"> HandCoachMRTK_FBX.zip 다운로드 </a> 하 여 사용자 고유의 컨트롤러 설치를 만듭니다. 
 
 제공 된 다운로드 가능 maya 손으로 제공 된 파일을 사용 하는 경우 unity의 손을 0.6으로 축소 하는 것이 좋습니다.
 
@@ -157,9 +157,9 @@ UI 메뉴를 사용 하 여 다양 한 손 크기를 테스트 하 고,이를 �
 *   한 번 이상 실습 한 경우 사용자가 중지 된 것을 감지 하는 경우에만 제스처를 반복 합니다.
 *   특정 손가락/손 위치가 중요 한 경우 사용자가 애니메이션에서 이러한 미묘한 차이를 명확 하 게 볼 수 있도록 합니다. 가장 중요 한 부분이 명확 하 게 표시 되도록 손을 준. 
 * 손으로 왜곡 된 경우 Unity의 품질 설정으로 이동 하 여 뼈의 수를 늘려야 합니다. 
- Unity의 편집 > 프로젝트 설정 > 품질 > 기타 > 혼합 가중치로 이동 합니다. 부드러운 조인트를 보려면 "4 뼈"가 선택 되어 있는지 확인 합니다.
+ Unity의 편집 > Project 설정 > 품질 > 기타 > 혼합 가중치로 이동 합니다. 부드러운 조인트를 보려면 "4 뼈"가 선택 되어 있는지 확인 합니다.
 
-   ![예: 프로젝트 설정 창](images/HandCoach/ProjectSettings.png)<br>
+   ![예: Project 설정 창](images/HandCoach/ProjectSettings.png)<br>
 
 
 ### <a name="what-to-avoid"></a>피해야 할 사항
@@ -171,14 +171,14 @@ UI 메뉴를 사용 하 여 다양 한 손 크기를 테스트 하 고,이를 �
   * 재질: Teaching_Hand2
   * 스크립트: <a href= "/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-coach">mrtk 손 coach</a> 에 대 한 mrtk 지침 참조
   * 프로젝트별 설정
-    * UWP로 설정 된 장면: Windows Mixed Reality의 [Unity 구성 프로젝트](../develop/unity/Configure-Unity-Project.md) 에서 지침을 찾을 수 있습니다.
+    * UWP로 설정 된 장면: 지침은 [Unity 구성 Project](../develop/unity/Configure-Unity-Project.md) 에서 찾을 수 있습니다 Windows Mixed Reality
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [상호 작용-기본 사항](interaction-fundamentals.md)
 * [자산 생성 프로세스](asset-creation-process.md)
 * [제스처](./interaction-fundamentals.md)
 * [도구 설치](../develop/install-the-tools.md)
-* [Unity 프로젝트 구성](../develop/unity/Configure-Unity-Project.md)
+* [Unity Project 구성](../develop/unity/Configure-Unity-Project.md)
 * [Unity 개발 개요](../develop/unity/unity-development-overview.md)
 * [MRTK 101](/windows/mixed-reality/mrtk-unity/)

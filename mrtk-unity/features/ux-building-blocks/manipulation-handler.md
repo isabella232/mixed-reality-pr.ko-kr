@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 조작,
-ms.openlocfilehash: 179ef40ba054b0fda3b13e9d578905eb064a58ab
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 24034c43bf8ce1f1ef463e894e9ca5293c2b0d2a146284535b161f8b4277dfa9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176634"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190213"
 ---
 # <a name="manipulation-handler"></a>조작 처리기
 
@@ -55,7 +55,7 @@ ms.locfileid: "113176634"
 
 **원 핸드 회전 모드 원거리** 한 손/컨트롤러를 멀리서 잡고 있을 때 개체가 동작하는 방식을 지정합니다.
 
-**한 손 회전 모드 옵션** 한 손으로 잡고 있을 때 개체가 회전하는 방법을 지정합니다.
+**한 손 회전 모드 옵션** 개체가 한 손으로 잡을 때 회전하는 방법을 지정합니다.
 
 * *원래 회전 유지 관리:* 이동 중인 개체를 회전하지 않습니다.
 * *사용자에 대한 회전 유지 관리:* X/Y축에 대한 개체의 원래 회전을 사용자에게 유지 관리합니다.
@@ -88,7 +88,7 @@ ms.locfileid: "113176634"
 
 **활성 다듬기** 다듬기 가 활성 상태인지 여부를 지정합니다.
 
-**한 손 다량 다듬기** 이동, 배율, 회전에 적용할 다듬기 양입니다. 0의 다듬기란 다듬기 없음을 의미합니다. 최대값은 값이 변경되지 않는 것을 의미합니다.
+**한 손 다량 다듬기** 이동, 배율, 회전에 적용할 다듬기 양입니다. 0을 다듬는 것은 다듬기 없음을 의미합니다. 최대값은 값이 변경되지 않는 것을 의미합니다.
 
 ## <a name="events"></a>이벤트
 

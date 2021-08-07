@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, AR 카메라,
-ms.openlocfilehash: e1c032805bc4b733cfcc51e1ceac5096c73715cf
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: a2d145823557b473bd7d34170b283e782151c24277b8f16586516ffe78f8e735
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121201"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210070"
 ---
 # <a name="unity-ar-camera-settings-provider"></a>Unity AR 카메라 설정 공급자
 
@@ -24,7 +24,7 @@ Unity AR 카메라 설정 공급자는 Android 및 iOS 디바이스에서 혼합
 
 ### <a name="tracking-settings"></a>추적 설정
 
-Unity AR 카메라 설정 공급자는 추적이 수행되는 방식에 대한 구성 옵션을 허용합니다. 이러한 설정은 Unity AR 카메라 설정 공급자 구현에 따라 다릅니다.
+Unity AR 카메라 설정 공급자는 추적을 수행하는 방법에 대한 구성 옵션을 허용합니다. 이러한 설정은 Unity AR 카메라 설정 공급자 구현에 따라 다릅니다.
 
 **자세 소스**
 
@@ -72,7 +72,7 @@ Unity AR 카메라 설정 공급자는 추적이 수행되는 방식에 대한 �
 
 추적 형식의 기본값은 **업데이트 및 렌더링 전** 으로, 가장 낮은 추적 대기 시간을 사용하도록 설정합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [카메라 시스템 개요](camera-system-overview.md)
 - [카메라 설정 공급자 만들기](create-settings-provider.md)

@@ -1,14 +1,14 @@
 ---
-ms.openlocfilehash: f937b705f10cc4a287600349283ecaed4ae44666
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: ad45cf8df4e51d17533c8e57b9ffe67738676d2af5398dd320cc86be469d5803
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112908080"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208891"
 ---
 # <a name="world-locking-tools-recommended"></a>[World Locking Tools(권장)](#tab/wlt)
 
-기본적으로 World Locking Tools는 세션 전체에서 실제 세계를 기준으로 Unity의 좌표계를 복원합니다. 즉, 홀로그램이 애플리케이션을 종료하고 다시 실행한 후 실제 세계에서 동일한 위치에 나타나도록 하려면 홀로그램이 동일한 자세만 다시 가져야 합니다.
+기본적으로 World Locking Tools는 세션 전체에서 실제 세계를 기준으로 Unity의 좌표계를 복원합니다. 즉, 애플리케이션을 종료하고 다시 실행한 후 홀로그램이 실제 세계에서 동일한 위치에 나타나도록 하려면 홀로그램이 동일한 자세만 다시 가져야 합니다.
 
 ![Unity 검사기에서 세계 잠금 컨텍스트 구성 요소](../../images/world-locking-tools-img-02.png)
 
@@ -107,12 +107,12 @@ XRAnchorStore anchorStore = await arAnchorManager.subsystem.TryGetAnchorStoreAsy
 
 # <a name="worldanchor"></a>[WorldAnchor](#tab/worldanchor)
 
-**WorldAnchorStore는** 홀로그램이 애플리케이션 인스턴스에서 특정 실제 위치에 유지되는 홀로그램 환경을 만드는 핵심입니다. 그런 다음, 사용자는 원하는 위치에 개별 홀로그램을 고정하고 나중에 앱의 여러 용도에 대해 동일한 지점에서 찾을 수 있습니다.
+**WorldAnchorStore는** 홀로그램이 애플리케이션의 인스턴스에서 특정 실제 위치에 유지되는 홀로그램 환경을 만드는 핵심입니다. 그런 다음, 사용자는 원하는 위치에 개별 홀로그램을 고정하고 나중에 앱의 여러 용도에 대해 동일한 지점에서 찾을 수 있습니다.
 
 **네임스페이스:** *UnityEngine.XR.WSA.Persistence*<br>
 **클래스:** *WorldAnchorStore*
 
-WorldAnchorStore를 사용하면 세션 간에 WorldAnchor의 위치를 유지할 수 있습니다. 세션 간에 홀로그램을 실제로 유지하려면 특정 세계 앵커를 사용하는 GameObjects를 별도로 추적해야 합니다. 종종 세계 앵커를 사용하여 GameObject 루트를 만들고 로컬 위치 오프셋을 사용하여 자식 홀로그램을 고정하는 것이 타당합니다.
+WorldAnchorStore를 사용하면 세션 간에 WorldAnchor의 위치를 유지할 수 있습니다. 세션 간에 홀로그램을 실제로 유지하려면 특정 세계 앵커를 사용하는 GameObject를 별도로 추적해야 합니다. 종종 세계 앵커를 사용하여 GameObject 루트를 만들고 로컬 위치 오프셋을 사용하여 자식 홀로그램을 고정하는 것이 타당합니다.
 
 이전 세션에서 홀로그램을 로드하려면 다음을 수행합니다.
 
@@ -126,7 +126,7 @@ WorldAnchorStore를 사용하면 세션 간에 WorldAnchor의 위치를 유지�
 2. ID를 지정하여 세계 앵커 저장
 3. ID와 함께 세계 앵커와 관련된 앱 데이터 저장
 
-### <a name="getting-the-worldanchorstore"></a>WorldAnchorStore 얻기
+### <a name="getting-the-worldanchorstore"></a>WorldAnchorStore 받기
 
 작업을 수행할 준비가 되면 알 수 있도록 WorldAnchorStore에 대한 참조를 유지하려고 합니다. 비동기 호출이므로 시작하는 즉시 다음을 호출하려고 합니다.
 
@@ -193,8 +193,8 @@ for (int index = 0; index < ids.Length; index++)
 
 ## <a name="persisting-holograms-for-multiple-devices"></a>여러 디바이스에 대한 홀로그램 유지
 
-<a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> 사용하여 로컬 WorldAnchor에서 지속형 클라우드 앵커를 만들 수 있습니다. 그러면 앱이 여러 HoloLens, iOS 및 Android 디바이스에서 찾을 수 있습니다( 해당 디바이스가 동시에 함께 표시되지 않더라도).  클라우드 앵커는 영구적이므로 시간이 지남에 따라 여러 디바이스에서 동일한 물리적 위치에서 해당 앵커를 기준으로 렌더링된 콘텐츠를 볼 수 있습니다.
+<a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> 사용하여 로컬 WorldAnchor에서 지속성 클라우드 앵커를 만들 수 있습니다. 그러면 해당 디바이스가 동시에 함께 표시되지 않더라도 앱이 여러 HoloLens, iOS 및 Android 디바이스에서 찾을 수 있습니다.  클라우드 앵커는 영구적이므로 시간이 지남에 따라 여러 디바이스에서 동일한 물리적 위치에서 해당 앵커를 기준으로 렌더링된 콘텐츠를 볼 수 있습니다.
 
 Unity에서 공유 환경 빌드를 시작하려면 5분 Azure Spatial Anchors Unity 빠른 시작을 사용해 <a href="/azure/spatial-anchors/unity-overview" target="_blank">보세요.</a>
 
-Azure Spatial Anchors 사용하여 실행하면 <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Unity 에서 앵커를 만들고 찾을</a>수 있습니다.
+Azure Spatial Anchors 실행하면 <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Unity에서 앵커를 만들고 찾을</a>수 있습니다.

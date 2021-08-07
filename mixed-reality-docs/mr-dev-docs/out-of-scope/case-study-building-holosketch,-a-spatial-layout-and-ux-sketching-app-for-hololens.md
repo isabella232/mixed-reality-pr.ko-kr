@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloSketch, HoloLens, Windows Mixed Reality, 스케치, 앱
-ms.openlocfilehash: 24929d38f97a3c02946a28184d7702c151dc22b2
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 614572c91067399cc0235ef2570543aa81e2c24ab36a7b9e9bfa03b77e452420
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757325"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213921"
 ---
 # <a name="case-study---building-holosketch-a-spatial-layout-and-ux-sketching-app-for-hololens"></a>사례 연구-HoloSketch HoloLens에 대 한 공간 레이아웃 및 UX 스케치 앱 빌드
 
@@ -77,7 +77,7 @@ HoloSketch를 사용 하 여 개발 도구 및 장치 포털 페어링을 포함
 
 이 도구를 통해 디자이너는 진정한 3 차원 공간에서 솔루션을 탐색 하 고 2D로는 중단 하지 않을 수 있습니다. 백그라운드는 HoloLens의 경우 실제 세계 이기 때문에 UI에 대 한 3D 배경을 만드는 것에 대해 생각해 서는 안 됩니다. HoloSketch는 디자이너가 HoloLens의 3D 디자인을 쉽게 탐색할 수 있는 방법을 엽니다.
 
-## <a name="get-started"></a>시작
+## <a name="get-started"></a>시작하기
 
 ### <a name="how-to-import-2d-images-jpgpng-into-holosketch"></a>2D 이미지 (JPG/PNG)를 HoloSketch로 가져오는 방법
 
@@ -156,7 +156,7 @@ HoloSketch는 3D 소프트웨어에서 널리 사용 되는 기존 인터페이�
 
 **도구 벨트 메뉴 사용**
 
-이동, 회전, 크기 조정, 저장 및 로드 장면 도구 벨트 메뉴에서 사용할 수 있습니다. 
+이동, 회전, 크기 조정, 저장 및 로드 장면을 도구 벨트 메뉴에서 사용할 수 있습니다. 
 
 ## <a name="using-keyboard-gestures-and-voice-commands"></a>키보드, 제스처 및 음성 명령 사용
 
@@ -169,31 +169,31 @@ HoloSketch는 3D 소프트웨어에서 널리 사용 되는 기존 인터페이�
 <tr>
 <td style="border-style: none" width="60px"><img alt="HoloSketch app icon" width="60" height="60" src="images/holosketch-app-icon.png">
 </td>
-<td style="border-style: none"><a href="https://www.microsoft.com/store/p/holosketch/9p3br4t5m4tv">Microsoft Store 무료로 HoloSketch 앱을 다운로드하여 설치합니다.</a>
+<td style="border-style: none"><a href="https://www.microsoft.com/store/p/holosketch/9p3br4t5m4tv">Microsoft Store에서 무료로 HoloSketch 앱 다운로드 및 설치</a>
 </td>
 </tr>
 </table>
 
 ## <a name="known-issues"></a>알려진 문제
-* 현재 자산 번들 만들기는 **Unity 버전 5.4.5f1에서 지원됩니다.**
-* OneDrive 데이터 양에 따라 OneDrive 콘텐츠를 로드하는 동안 앱이 중지된 것처럼 표시될 수 있습니다.
-* 현재 저장 및 로드 기능은 기본 개체만 지원합니다.
+* 현재 자산 번들 만들기는 **Unity 버전 5.4.5 f1** 에서 지원 됩니다.
+* OneDrive의 데이터 양에 따라 OneDrive 콘텐츠를 로드 하는 동안 앱이 중지 된 것 처럼 보일 수 있습니다.
+* 현재 저장 및 로드 기능은 기본 개체만 지원 합니다.
 * 상황에 맞는 메뉴에서 텍스트, 소리, 비디오 및 사진 메뉴를 사용할 수 없습니다.
-* 도구 벨트 메뉴의 재생 단추는 조작 gizmos를 지웁니다.
+* 도구 벨트 메뉴의 재생 단추를 클릭 하면 조작 gizmo 그리려면 지워집니다.
 
 ## <a name="sharing-your-sketches"></a>스케치 공유
 
-'Hey Cortana, Start/Stop recording'라고 말하여 HoloLens 비디오 녹화 기능을 사용할 수 있습니다. 볼륨 위로/아래로 키를 함께 눌러 스케치 사진을 찍습니다.
+' 안녕하세요 Cortana, 녹화 시작/중지 ' 라고 말하여 HoloLens의 비디오 녹음 기능을 사용할 수 있습니다. 볼륨 위쪽/아래쪽 키를 함께 사용 하 여 스케치를 그림으로 만듭니다.
 
 ## <a name="about-the-authors"></a>작성자 정보
 
 <table style="border-collapse:collapse">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><a href="http://dongyoonpark.com" target="_blank"><b>Yoon Park</b></a><br>UX 디자이너 @Microsoft</td>
+<td style="border-style: none"><a href="http://dongyoonpark.com" target="_blank"><b>Yoon 파킹</b></a><br>UX 디자이너 @Microsoft</td>
 </tr>
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Patrick Sebring" width="60" height="60" src="images/paseb-60px.jpg"></td>
-<td style="border-style: none"><b>Patrick Sebring</b><br>개발자 @Microsoft</td>
+<td style="border-style: none"><b>Patrick Sebring</b><br>개발 @Microsoft</td>
 </tr>
 </table> 

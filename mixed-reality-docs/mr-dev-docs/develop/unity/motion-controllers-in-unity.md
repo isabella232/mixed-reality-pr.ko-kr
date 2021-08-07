@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: 모션 컨트롤러, unity, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: d8f9ce292c0ab1cfa89faf58f0e5b90322192b35
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: ccda5b11190e829ccc655989a6f679ef6ef647a920c01a3182548b23a3d85084
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394517"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216246"
 ---
 # <a name="motion-controllers-in-unity"></a>Unity의 모션 컨트롤러
 
-HoloLens 및 몰입형 HMD에서 Unity , [손 제스처](../../design/gaze-and-commit.md#composite-gestures) 및 [모션 컨트롤러의](../../design/motion-controllers.md) [응시에](gaze-in-unity.md)대한 작업을 수행하려면 두 가지 주요 방법이 있습니다. Unity에서 동일한 API를 통해 공간 입력의 두 원본에 대한 데이터에 액세스합니다.
+Unity, [손 제스처](../../design/gaze-and-commit.md#composite-gestures) 및 HoloLens 및 몰입형 HMD의 [모션 컨트롤러에서](../../design/motion-controllers.md) [응시에](gaze-in-unity.md)대한 작업을 수행하려면 두 가지 주요 방법이 있습니다. Unity에서 동일한 API를 통해 공간 입력의 두 원본에 대한 데이터에 액세스합니다.
 
 Unity는 Windows Mixed Reality 공간 입력 데이터에 액세스하는 두 가지 기본 방법을 제공합니다. 일반적인 *Input.GetButton/Input.GetAxis* API는 여러 Unity XR SDK에서 작동하지만, Windows Mixed Reality 특정 *InteractionManager/GestureRecognizer* API는 공간 입력 데이터의 전체 집합을 노출합니다.
 
@@ -107,7 +107,7 @@ Unity의 혼합 현실 상호 작용에 대한 기본 사항 알아보려면 Uni
 
 Mixed Reality OpenXR 플러그 인은 아래에 설명된 대로 표준 **InputFeatureUsage에** 매핑된 추가 입력 상호 작용 프로필을 제공합니다.
 
-| InputFeatureUsage | HP Reverb G2 컨트롤러(OpenXR) | HoloLens Hand(OpenXR) |
+| InputFeatureUsage | HP Reverb G2 컨트롤러(OpenXR) | HoloLens 손(OpenXR) |
 | ---- | ---- | ---- |
 | primary2DAxis | 조이스틱 | |
 | primary2DAxisClick | 운정 - 클릭 | |
@@ -121,15 +121,15 @@ Mixed Reality OpenXR 플러그 인은 아래에 설명된 대로 표준 **InputF
 
 ## <a name="grip-pose-vs-pointing-pose"></a>그립 자세와 포인팅 자세
 
-Windows Mixed Reality 다양한 폼 팩터에서 모션 컨트롤러를 지원합니다. 각 컨트롤러의 디자인은 사용자의 손 위치와 앱이 컨트롤러를 렌더링할 때 가리키는 데 사용해야 하는 자연스러운 "앞으로" 방향 간의 관계가 다릅니다.
+Windows Mixed Reality 다양한 폼 팩터에서 모션 컨트롤러를 지원합니다. 각 컨트롤러의 디자인은 사용자의 손 위치와 앱이 컨트롤러를 렌더링할 때 가리키는 데 사용해야 하는 자연스러운 "앞으로" 방향 간의 관계에 따라 다릅니다.
 
 이러한 컨트롤러를 더 잘 나타내기 위해 각 상호 작용 소스에 대해 조사할 수 있는 두 가지 종류의 자세인 **그립 자세와** **포인터 자세가** 있습니다. 그립 자세와 포인터 자세 좌표는 모두 전역 Unity 세계 좌표의 모든 Unity API로 표현됩니다.
 
 ### <a name="grip-pose"></a>그립 자세
 
-**그립 자세는** HoloLens에서 감지하거나 모션 컨트롤러를 보유하는 사용자의 손무한 위치를 나타냅니다.
+**그립 자세는** HoloLens 감지하거나 모션 컨트롤러를 보유하는 사용자 손아귀의 위치를 나타냅니다.
 
-몰입형 헤드셋에서 그립 자세는 **사용자의 손** 또는 사용자의 **손 에 보관된 개체를 렌더링하는** 데 가장 적합합니다. 그립 자세는 모션 컨트롤러를 시각화할 때도 사용됩니다. 동작 컨트롤러에 대해 Windows에서 제공하는 **렌더링 가능한 모델은** 그립 자세를 회전의 원점과 중심으로 사용합니다.
+몰입형 헤드셋에서 그립 자세는 **사용자의 손** 또는 사용자의 **손 에 보관된 개체를 렌더링하는** 데 가장 적합합니다. 그립 자세는 모션 컨트롤러를 시각화할 때도 사용됩니다. 모션 컨트롤러에 대해 Windows 제공되는 **렌더링 가능한 모델은** 그립 자세를 회전의 원점 및 중심으로 사용합니다.
 
 그립 자세는 다음과 같이 구체적으로 정의됩니다.
 * **그립 위치:** 컨트롤러를 자연스럽게 보유할 때의 손만 중심으로, 그립 내의 위치를 가운데에 맞도록 왼쪽 또는 오른쪽으로 조정됩니다. Windows Mixed Reality 모션 컨트롤러에서 이 위치는 일반적으로 이해 단추에 맞춥니다.
@@ -137,7 +137,7 @@ Windows Mixed Reality 다양한 폼 팩터에서 모션 컨트롤러를 지원�
 * **그립 방향의 앞으로 축:** 손을 부분적으로 닫을 때(컨트롤러를 보유하는 것처럼) 엄지 손가락이 아닌 손가락으로 형성된 선을 통해 "앞으로" 가리키는 광선입니다.
 * **그립 방향의 Up 축:** 오른쪽 및 앞으로 정의에 암시된 Up 축입니다.
 
-Unity의 공급업체 간 입력 API(XR)를 통해 그립 자세에 액세스할 수 *[있습니다. InputTracking .](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html) GetLocalPosition/Rotation*) 또는 Windows MR 관련 API를 *통해(sourceState.sourcePose.TryGetPosition/Rotation*, **그립** 노드에 대한 자세 데이터 요청)
+Unity의 공급업체 간 입력 API(XR)를 통해 그립 자세에 액세스할 수 *[있습니다. InputTracking .](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html) GetLocalPosition/Rotation*) 또는 Windows MR별 API를 *통해(sourceState.sourcePose.TryGetPosition/Rotation*, **그립** 노드에 대한 자세 데이터 요청)
 
 ### <a name="pointer-pose"></a>포인터 자세
 
@@ -158,7 +158,7 @@ OpenXR 입력 상호 작용을 통해 두 가지 자세 집합에 액세스할 �
 
 InputFeatureUsages **DevicePosition,** **DeviceRotation,** **DeviceVelocity** 및 **DeviceAngularVelocity에서** 제공하는 자세는 모두 OpenXR **그립** 자세를 나타냅니다. 그립 자세와 관련된 InputFeatureUsages는 Unity의 [CommonUsages 에 정의되어 있습니다.](https://docs.unity3d.com/2020.2/Documentation/ScriptReference/XR.CommonUsages.html)
 
-InputFeatureUsages **PointerPosition,** **PointerRotation,** PointerVelocity 및 **PointerAngularVelocity에서** 제공하는 자세는 모두 OpenXR **목표** 자세를 나타냅니다.  이러한 InputFeatureUsages는 포함된 C# 파일에 정의되지 않으므로 다음과 같이 고유한 InputFeatureUsages를 정의해야 합니다.
+InputFeatureUsages **PointerPosition,** **PointerRotation,** PointerVelocity 및 **PointerAngularVelocity에서** 제공하는 자세는 모두 OpenXR **목표** 자세를 나타냅니다.  이러한 InputFeatureUsages는 포함된 C# 파일에 정의되지 않으므로 다음과 같이 사용자 고유의 InputFeatureUsages를 정의해야 합니다.
 
 ``` cs
 public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFeatureUsage<Vector3>("PointerPosition");
@@ -172,7 +172,7 @@ Unity의 XR 입력 시스템에서 haptics 사용에 대한 자세한 내용은 
 
 헤드셋과 마찬가지로 Windows Mixed Reality 모션 컨트롤러에는 외부 추적 센서를 설치할 필요가 없습니다. 대신 컨트롤러는 헤드셋 자체의 센서에 의해 추적됩니다.
 
-사용자가 헤드셋의 보기 필드에서 컨트롤러를 이동하는 경우 Windows는 대부분의 경우 컨트롤러 위치를 계속 유추합니다. 컨트롤러가 오랫동안 시각적 추적을 손실한 경우 컨트롤러의 위치는 근사 정확도 위치로 떨어집니다.
+사용자가 헤드셋의 보기 필드에서 컨트롤러를 이동하는 경우 Windows 대부분의 경우 컨트롤러 위치를 계속 유추합니다. 컨트롤러가 오랫동안 시각적 추적을 손실한 경우 컨트롤러의 위치는 근사 정확도 위치로 떨어집니다.
 
 이 시점에서 시스템은 내부 방향 센서를 사용하여 컨트롤러의 진정한 방향을 계속 노출하면서 사용자가 이동할 때 사용자의 위치를 추적하여 컨트롤러를 사용자에게 본문 잠금합니다. 컨트롤러를 사용하여 UI 요소를 가리키고 활성화하는 많은 앱은 사용자가 모르게 대략적인 정확도로 정상적으로 작동할 수 있습니다.
 
@@ -190,9 +190,9 @@ Unity의 XR 입력 시스템에서 haptics 사용에 대한 자세한 내용은 
 <tr>
 <th> 추적 상태 </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>높은 정확도</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> 높은 </td><td style="background-color: green; color: white"> true</td>
+<td> <b>높은 정확도</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> 높음 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>높은 정확도(손실 위험)</b> </td><td style="background-color: orange"> == 1.0 </td><td style="background-color: green; color: white"> 높은 </td><td style="background-color: green; color: white"> true</td>
+<td> <b>높은 정확도(손실 위험)</b> </td><td style="background-color: orange"> == 1.0 </td><td style="background-color: green; color: white"> 높음 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>대략적 정확도</b> </td><td style="background-color: orange"> == 1.0 </td><td style="background-color: orange"> 근사치 </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -217,12 +217,12 @@ Unity는 현재 일반 *Input.GetButton/Input.GetAxis API를* 사용하여 손�
 
 일반 Unity 입력 API를 사용하려면 일반적으로 단추와 축을 [Unity 입력 관리자의](https://docs.unity3d.com/Manual/ConventionalGameInput.html)논리적 이름에 연결하고 단추 또는 축 ID를 각 이름에 바인딩하는 것으로 시작합니다. 그런 다음 해당 논리 단추/축 이름을 참조하는 코드를 작성할 수 있습니다.
 
-예를 들어 왼쪽 모션 컨트롤러의 트리거 단추를 제출 작업에 매핑하려면 Unity 내에서 **프로젝트 설정 > 입력 > 편집으로** 이동하고 축 아래의 제출 섹션의 속성을 확장합니다. 다음과 같이 **양의 단추** 또는 Alt **긍정 단추** 속성을 변경하여 **14 단추를** 읽습니다.
+예를 들어 왼쪽 모션 컨트롤러의 트리거 단추를 제출 작업에 매핑하려면 Unity 내에서 **> Project 설정 > 입력 편집으로** 이동하고 축 아래의 Submit 섹션의 속성을 확장합니다. 다음과 같이 **양의 단추** 또는 Alt **긍정 단추** 속성을 변경하여 **14 단추를** 읽습니다.
 
 ![Unity의 InputManager](images/unity-input-manager.png)<br>
 *Unity InputManager*
 
-그러면 스크립트에서 *Input.GetButton* 을 사용하여 제출 작업을 확인할 수 있습니다.
+그런 다음 스크립트는 입력을 사용 하 여 전송 작업을 확인할 수 있습니다 *. GetButton*:
 
 ```cs
 if (Input.GetButton("Submit"))
@@ -230,11 +230,11 @@ if (Input.GetButton("Submit"))
   // ...
 }
 ```
-축 아래에서 **Size** 속성을 변경하여 논리 단추를 더 추가할 수 **있습니다.**
+**축** 에서 **크기** 속성을 변경 하 여 논리적 단추를 더 추가할 수 있습니다.
 
-### <a name="getting-a-physical-buttons-pressed-state-directly"></a>실제 단추의 누른 상태 직접 받기
+### <a name="getting-a-physical-buttons-pressed-state-directly"></a>물리적 단추의 누름 상태를 직접 가져오기
 
-*Input.GetKey* 를 사용하여 정규화된 이름으로 단추에 수동으로 액세스할 수도 있습니다.
+*입력. GetKey* 를 사용 하 여 정규화 된 이름으로 수동으로 단추에 액세스할 수도 있습니다.
 
 ```cs
 if (Input.GetKey("joystick button 8"))
@@ -243,9 +243,9 @@ if (Input.GetKey("joystick button 8"))
 }
 ```
 
-### <a name="getting-a-hand-or-motion-controllers-pose"></a>손 또는 모션 컨트롤러의 자세 얻기
+### <a name="getting-a-hand-or-motion-controllers-pose"></a>직접 또는 동작 컨트롤러의 포즈 가져오기
 
-XR을 사용하여 컨트롤러의 위치 및 회전에 액세스할 수 *있습니다. InputTracking:*
+XR를 사용 하 여 컨트롤러의 위치 및 회전에 액세스할 수 있습니다 *. InputTracking*:
 
 ```cs
 Vector3 leftPosition = InputTracking.GetLocalPosition(XRNode.LeftHand);
@@ -253,23 +253,23 @@ Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 ```
 
 > [!NOTE] 
-> 위의 코드는 컨트롤러의 그립 자세(사용자가 컨트롤러를 보유하는 위치)를 나타내며, 사용자의 손이나 컨트롤러 자체의 모델을 렌더링하는 데 유용합니다.
+> 위의 코드는 컨트롤러의 그립 포즈 (사용자가 컨트롤러를 보유 하는 위치)를 나타내며,이는 사용자 쪽에서 소드를 렌더링 하거나 컨트롤러 자체의 모델을 렌더링 하는 데 유용 합니다.
 > 
-> 이 그립 자세와 포인터 자세(컨트롤러의 팁이 가리키는 위치) 간의 관계는 컨트롤러 간에 다를 수 있습니다. 현재 컨트롤러의 포인터 자세에 액세스하는 것은 아래 섹션에 설명된 MR 관련 입력 API를 통해서만 가능합니다.
+> 이 그립 포즈와 포인터 포즈 (컨트롤러의 팁) 간의 관계는 컨트롤러 마다 다를 수 있습니다. 이제 컨트롤러의 포인터 포즈에 액세스 하는 것은 아래 섹션에 설명 된 MR 특정 입력 API를 통해서만 가능 합니다.
 
-## <a name="windows-specific-apis-xrwsainput"></a>Windows 관련 API(XR. Wsa. 입력)
+## <a name="windows-specific-apis-xrwsainput"></a>Windows 특정 api (XR. WSA. 입력
 
 > [!CAUTION]
-> 프로젝트에서 XR을 사용하는 경우 WSA API는 향후 Unity 릴리스에서 XR SDK를 위해 단계적으로 해제됩니다. 새 프로젝트의 경우 XR SDK를 처음부터 사용하는 것이 좋습니다. [XR 입력 시스템 및 API에](https://docs.unity3d.com/Manual/xr_input.html)대한 자세한 내용은 에서 확인할 수 있습니다.
+> 프로젝트에서 XR를 사용 하는 경우 WSA Api는 향후 Unity 릴리스의 XR SDK에 대 한 것입니다. 새 프로젝트의 경우 처음부터 XR SDK를 사용 하는 것이 좋습니다. [XR 입력 시스템 및 api](https://docs.unity3d.com/Manual/xr_input.html)에 대 한 자세한 내용은 여기에서 찾을 수 있습니다.
 
-**네임스페이스:** *UnityEngine.XR.WSA.Input*<br>
-**형식:** *InteractionManager,* *InteractionSourceState,* *InteractionSource*, *InteractionSourceProperties,* *InteractionSourceKind*, *InteractionSourceLocation*
+**네임 스페이스:** *unityengine. XR*<br>
+**유형**: *InteractionManager*, *InteractionSourceState*, *InteractionSource*, *InteractionSourceProperties*, *InteractionSourceKind*, *InteractionSourceLocation*
 
-Windows Mixed Reality 손 입력(HoloLens용) 및 모션 컨트롤러에 대한 자세한 정보를 얻으려면 *UnityEngine.XR.WSA.Input* 네임스페이스에서 Windows 관련 공간 입력 API를 사용하도록 선택할 수 있습니다. 이렇게 하면 위치 정확도 또는 원본 종류와 같은 추가 정보에 액세스하여 손과 컨트롤러를 구분할 수 있습니다.
+Windows Mixed Reality 손으로 입력 (HoloLens) 및 동작 컨트롤러에 대 한 자세한 정보를 얻기 위해 *unityengine. XR* 네임 스페이스에서 Windows 특정 공간 입력 api를 사용 하도록 선택할 수 있습니다. 이를 통해 위치 정확도 나 소스 종류와 같은 추가 정보에 액세스할 수 있으므로 실습 및 컨트롤러를 구분할 수 있습니다.
 
-### <a name="polling-for-the-state-of-hands-and-motion-controllers"></a>손 및 모션 컨트롤러의 상태에 대한 폴링
+### <a name="polling-for-the-state-of-hands-and-motion-controllers"></a>직접 및 동작 컨트롤러의 상태 폴링
 
-*GetCurrentReading* 메서드를 사용하여 각 상호 작용 원본(손 또는 모션 컨트롤러)에 대해 이 프레임의 상태를 폴링할 수 있습니다.
+*GetCurrentReading* 메서드를 사용 하 여 각 상호 작용 소스 (직접 또는 동작 컨트롤러)에 대해이 프레임의 상태를 폴링할 수 있습니다.
 
 ```cs
 var interactionSourceStates = InteractionManager.GetCurrentReading();
@@ -278,15 +278,15 @@ foreach (var interactionSourceState in interactionSourceStates) {
 }
 ```
 
-다시 얻는 각 *InteractionSourceState는* 현재 시점의 상호 작용 원본을 나타냅니다. *InteractionSourceState는* 다음과 같은 정보를 노출합니다.
-* 어떤 [종류의 누를](../../design/motion-controllers.md) 발생시키는지(선택/메뉴/이해/터치패드/엄지스틱)
+가져오는 각 *InteractionSourceState* 는 현재 시점에서 상호 작용 소스를 나타냅니다. *InteractionSourceState* 는 다음과 같은 정보를 노출 합니다.
+* 어떤 [종류의 누름](../../design/motion-controllers.md) 이 발생 합니까 (선택/메뉴/-/터치 패드/엄지 스틱)
 
    ```cs
    if (interactionSourceState.selectPressed) {
        // ...
    }
    ```
-* 터치 패드 및/또는 썸틱의 XY 좌표 및 터치된 상태와 같은 동작 컨트롤러 관련 기타 데이터
+* 터치 패드 및/또는 엄지 스틱 XY 좌표 및 작업 된 상태와 같은 동작 컨트롤러에 해당 하는 기타 데이터
 
    ```cs
    if (interactionSourceState.touchpadTouched && interactionSourceState.touchpadPosition.x > 0.5) {
@@ -294,7 +294,7 @@ foreach (var interactionSourceState in interactionSourceStates) {
    }
    ```
 
-* 소스가 손 또는 모션 컨트롤러인지 알 수 있는 InteractionSourceKind
+* InteractionSourceKind는 원본이 나 동작 컨트롤러 인지 여부를 알 수 있습니다.
 
    ```cs
    if (interactionSourceState.source.kind == InteractionSourceKind.Hand) {
@@ -302,9 +302,9 @@ foreach (var interactionSourceState in interactionSourceStates) {
    }
    ```
 
-### <a name="polling-for-forward-predicted-rendering-poses"></a>앞으로 예측된 렌더링에 대한 폴링포지
+### <a name="polling-for-forward-predicted-rendering-poses"></a>앞으로 예측 된 렌더링 동작에 대 한 폴링
 
-* 손과 컨트롤러에서 상호 작용 원본 데이터를 폴링할 때 얻을 수 있는 자세는 이 프레임의 광자가 사용자의 눈에 도달하는 순간의 정방향 예측 자세입니다.  정방향 예측 자세는 각 프레임에서 컨트롤러 또는 보유된 **개체를 렌더링하는** 데 가장 적합합니다.  컨트롤러를 사용하여 지정된 누르기 또는 릴리스를 대상으로 하는 경우 아래에 설명된 기록 이벤트 API를 사용하는 경우 가장 정확합니다.
+* 손이 나 컨트롤러에서 상호 작용 원본 데이터를 폴링하는 경우이 프레임의 photons 사용자의 눈에 도달 하 게 되는 순간에 대해 앞으로 예측 하는 포즈를 얻을 수 있습니다.  앞으로 예측 되는 포즈는 컨트롤러를 렌더링 하거나 각 프레임에서 보유 한 개체를 **렌더링** 하는 데 가장 적합 합니다.  Controller를 사용 하 여 지정 된 보도 또는 릴리스를 대상으로 하는 경우 아래에 설명 된 기록 이벤트 Api를 사용 하는 경우 가장 정확 합니다.
 
    ```cs
    var sourcePose = interactionSourceState.sourcePose;
@@ -316,7 +316,7 @@ foreach (var interactionSourceState in interactionSourceStates) {
    }
    ```
 
-* 이 현재 프레임에 대해 정방향 예측 머리 자세를 얻을 수도 있습니다.  소스 자세와 마찬가지로 이는 **커서를 렌더링하는** 데 유용하지만, 아래에 설명된 기록 이벤트 API를 사용하는 경우 지정된 누르기 또는 릴리스를 대상으로 지정하는 것이 가장 정확합니다.
+* 이 현재 프레임에 대해 앞으로 예측 한 헤드 포즈를 얻을 수도 있습니다.  원본 포즈와 마찬가지로,이 기능은 커서를 **렌더링** 하는 데 유용 합니다. 단, 아래에 설명 된 기록 이벤트 api를 사용 하는 경우에는 지정 된 누름 또는 릴리스를 대상으로 하는 것이 가장 정확 합니다.
 
    ```cs
    var headPose = interactionSourceState.headPose;
@@ -328,18 +328,18 @@ foreach (var interactionSourceState in interactionSourceStates) {
    }
    ```
 
-### <a name="handling-interaction-source-events"></a>상호 작용 원본 이벤트 처리
+### <a name="handling-interaction-source-events"></a>상호 작용 소스 이벤트 처리
 
-정확한 기록 자세 데이터에서 발생하는 입력 이벤트를 처리하려면 폴링 대신 상호 작용 원본 이벤트를 처리할 수 있습니다.
+정확한 기록 포즈 데이터에서 발생 하는 입력 이벤트를 처리 하기 위해 폴링 대신 상호 작용 소스 이벤트를 처리할 수 있습니다.
 
-상호 작용 원본 이벤트를 처리하려면 다음을 수행합니다.
-* *InteractionManager* 입력 이벤트에 등록합니다. 관심 있는 상호 작용 이벤트의 각 유형에 대해 구독해야 합니다.
+상호 작용 소스 이벤트를 처리 하려면:
+* *InteractionManager* 입력 이벤트에 등록 합니다. 관심이 있는 각 상호 작용 이벤트 형식에 대해 구독 해야 합니다.
 
    ```cs
    InteractionManager.InteractionSourcePressed += InteractionManager_InteractionSourcePressed;
    ```
 
-* 이벤트를 처리합니다. 상호 작용 이벤트를 구독하면 해당하는 경우 콜백이 발생합니다. *SourcePressed* 예제에서는 소스가 검색된 후와 소스가 해제되거나 손실되기 전이 됩니다.
+* 이벤트를 처리 합니다. 상호 작용 이벤트를 구독 한 후에는 해당 하는 경우 콜백을 받게 됩니다. *Sourcepressed* 예제에서는 소스가 검색 된 후와 릴리스 또는 손실 되기 전에이 상태가 됩니다.
 
    ```cs
    void InteractionManager_InteractionSourceDetected(InteractionSourceDetectedEventArgs args)
@@ -353,35 +353,35 @@ foreach (var interactionSourceState in interactionSourceStates) {
    }
    ```
 
-### <a name="how-to-stop-handling-an-event"></a>이벤트 처리를 중지하는 방법
+### <a name="how-to-stop-handling-an-event"></a>이벤트 처리를 중지 하는 방법
 
-이벤트에 더 이상 관심이 없거나 이벤트를 구독한 개체를 삭제하는 경우 이벤트 처리를 중지해야 합니다. 이벤트 처리를 중지하려면 이벤트에서 구독을 취소합니다.
+이벤트에 더 이상 관심이 없거나 이벤트를 구독 하는 개체를 삭제 하려는 경우에는 이벤트 처리를 중지 해야 합니다. 이벤트 처리를 중지 하려면 이벤트의 구독을 취소 합니다.
 
 ```cs
 InteractionManager.InteractionSourcePressed -= InteractionManager_InteractionSourcePressed;
 ```
 
-### <a name="list-of-interaction-source-events"></a>상호 작용 원본 이벤트 목록
+### <a name="list-of-interaction-source-events"></a>상호 작용 소스 이벤트 목록
 
-사용 가능한 상호 작용 원본 이벤트는 다음과 같습니다.
-* *InteractionSourceDetected(원본이* 활성화됩니다.)
-* *InteractionSourceLost(비활성* 상태가 되도록)
-* *InteractionSourcePressed(탭,* 단추 누르기 또는 "선택" 발화)
-* *InteractionSourceReleased(탭의* 끝, 해제된 단추 또는 발화된 "선택"의 끝)
-* *InteractionSourceUpdated(일부* 상태를 이동하거나 변경)
+사용할 수 있는 상호 작용 소스 이벤트는 다음과 같습니다.
+* *InteractionSourceDetected* (원본이 활성화 됩니다.)
+* *InteractionSourceLost* (비활성 상태가 됨)
+* *InteractionSourcePressed* (누르기, 단추 누르기 또는 "Select" 재생)
+* *InteractionSourceReleased* (탭의 끝, 단추 해제 또는 "Select" 재생 끝)
+* *InteractionSourceUpdated* (다른 상태를 이동 하거나 변경 하지 않음)
 
-### <a name="events-for-historical-targeting-poses-that-most-accurately-match-a-press-or-release"></a>기록 대상 지정에 대한 이벤트는 누르기 또는 릴리스와 가장 정확하게 일치합니다.
+### <a name="events-for-historical-targeting-poses-that-most-accurately-match-a-press-or-release"></a>기록 대상 이벤트는 누름 또는 릴리스와 가장 정확 하 게 일치 합니다.
 
-앞서 설명한 폴링 API는 앱에 앞으로 예측된 자세를 제공합니다.  이러한 예측된 자세는 컨트롤러 또는 가상 핸드 실드 개체를 렌더링하는 데 가장 적합하지만, 다음 두 가지 주요 이유로 향후의 자세는 대상 지정에 적합하지 않습니다.
-* 사용자가 컨트롤러에서 단추를 누르면 시스템에서 누를 때 Bluetooth를 통해 약 20ms의 무선 대기 시간이 있을 수 있습니다.
-* 그런 다음, 정방향 예측 자세를 사용하는 경우 현재 프레임의 광자가 사용자의 눈에 도달하는 시간을 대상으로 하는 또 다른 10-20ms의 정방향 예측이 적용됩니다.
+앞에서 설명한 폴링 Api는 앱을 앞으로 예측 하는 포즈를 제공 합니다.  이러한 예측 된 포즈는 컨트롤러 또는 가상 핸드헬드 개체를 렌더링 하는 데 가장 적합 하지만 다음 두 가지 주요 이유로 이후 포즈는 대상 지정에 적합 하지 않습니다.
+* 사용자가 컨트롤러의 단추를 누르면 시스템에서 누르기를 받기 전에 Bluetooth 하는 데 20 밀리초의 무선 대기 시간이 있을 수 있습니다.
+* 그런 다음 앞으로 예측 하는 포즈를 사용 하는 경우 현재 프레임의 photons 사용자의 눈에 도달 하는 시간을 대상으로 적용 하는 다른 10-20 ms의 전달 예측이 적용 됩니다.
 
-즉, 폴링은 누를 때 사용자의 머리 및 손을 실제로 돌아간 위치에서 앞으로 30-40ms 정도의 소스 자세 또는 머리 자세를 제공합니다.  HoloLens 손 입력의 경우 무선 전송 지연은 없지만 누르기를 감지하는 데 비슷한 처리 지연이 있습니다.
+즉, 폴링을 통해 사용자의 헤드와 손을 모두 사용 하는 경우에는 사용자의 헤드와 30-40를 전달 하는 소스 포즈 또는 헤드가 발생 합니다.  HoloLens 손으로 입력 하는 경우에는 무선 전송 지연 시간이 없지만, 누르기를 검색 하는 데 비슷한 처리 지연이 있습니다.
 
-손 또는 컨트롤러 누르기에 대한 사용자의 원래 의도를 정확하게 대상으로 지정하려면 해당 *InteractionSourcePressed* 또는 *InteractionSourceReleased* 입력 이벤트에서 기록 소스 자세 또는 머리 자세를 사용해야 합니다.
+직접 또는 컨트롤러에 대 한 사용자의 원래 의도에 따라 정확 하 게 대상으로 지정 하려면 해당 *InteractionSourcePressed* 또는 *InteractionSourceReleased* 입력 이벤트에서 기록 원본 포즈 또는 head 포즈를 사용 해야 합니다.
 
-사용자의 머리 또는 컨트롤러에서 기록적인 자세 데이터를 통해 누르기 또는 릴리스를 대상으로 지정할 수 있습니다.
-* 제스처 또는 컨트롤러 누르기가 발생한 시점의 머리 자세로, **대상을 지정하여** 사용자가 무엇을 하고 [있는지](../../design/gaze-and-commit.md) 확인하는 데 사용할 수 있습니다.
+사용자의 헤드 또는 해당 컨트롤러에서 기록 포즈 데이터를 사용 하 여 보도를 대상으로 지정할 수 있습니다.
+* 사용자가 [gazing](../../design/gaze-and-commit.md) 된 항목을 확인 하기 위해 **대상 지정** 에 사용할 수 있는 제스처 또는 컨트롤러를 누를 때 발생 하는 시점의 헤드입니다.
 
    ```cs
    void InteractionManager_InteractionSourcePressed(InteractionSourcePressedEventArgs args) {
@@ -395,7 +395,7 @@ InteractionManager.InteractionSourcePressed -= InteractionManager_InteractionSou
    }
    ```
 
-* 모션 컨트롤러 누르기가 발생한 시점의 소스 자세로, **대상 지정에** 사용하여 사용자가 컨트롤러를 가리키고 있는 대상을 확인할 수 있습니다.  이 상태는 누를 때 발생한 컨트롤러의 상태입니다.  컨트롤러 자체를 렌더링하는 경우 그립 자세가 아닌 포인터 자세를 요청하여 사용자가 렌더링된 컨트롤러의 자연스러운 팁을 고려하는 대상 광선을 찍을 수 있습니다.
+* 이동 컨트롤러를 사용 하 여 사용자가 컨트롤러를 가리킨 **항목을 확인 하는** 데 사용 될 수 있는 시점에 발생 하는 소스입니다.  이는 누름이 발생 한 컨트롤러의 상태가 됩니다.  컨트롤러 자체를 렌더링 하는 경우에는 핸들 포즈 대신 포인터 포즈를 요청 하 여 사용자가 렌더링 된 컨트롤러의 자연 스러운 팁을 고려 하는 대상 광선을 만들 수 있습니다.
 
    ```cs
    void InteractionManager_InteractionSourcePressed(InteractionSourcePressedEventArgs args)
@@ -415,7 +415,7 @@ InteractionManager.InteractionSourcePressed -= InteractionManager_InteractionSou
    }
    ```
 
-### <a name="event-handlers-example"></a>이벤트 처리기 예제
+### <a name="event-handlers-example"></a>이벤트 처리기 예
 
 ```cs
 using UnityEngine.XR.WSA.Input;
@@ -472,23 +472,23 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 }
 ```
 
-## <a name="motion-controllers-in-mrtk"></a>MRTK의 모션 컨트롤러
+## <a name="motion-controllers-in-mrtk"></a>MRTK의 동작 컨트롤러
 
-입력 관리자에서 [제스처 및 모션 컨트롤러에](/windows/mixed-reality/mrtk-unity/features/input/controllers) 액세스할 수 있습니다.
+입력 관리자에서 [제스처 및 동작 컨트롤러](/windows/mixed-reality/mrtk-unity/features/input/controllers) 에 액세스할 수 있습니다.
 
 ## <a name="follow-along-with-tutorials"></a>안내 따르기
 
-자세한 사용자 지정 예제가 있는 단계별 자습서는 Mixed Reality Academy에서 사용할 수 있습니다.
+보다 자세한 사용자 지정 예제가 포함 된 단계별 자습서는 혼합 현실 아카데미에서 제공 됩니다.
 
 - [MR 입력 211: 제스처](tutorials/holograms-211.md)
 - [MR 입력 213: 모션 컨트롤러](../../deprecated/mixed-reality-213.md)
 
-[![MR 입력 213 - 모션 컨트롤러](images/mr213-main-600px.jpg)](/windows/mixed-reality/mixed-reality-213)<br>
-*MR 입력 213 - 모션 컨트롤러*
+[![MR 입력 213-동작 컨트롤러](images/mr213-main-600px.jpg)](/windows/mixed-reality/mixed-reality-213)<br>
+*MR 입력 213-동작 컨트롤러*
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞에서 설명한 Unity 개발 여정을 수행하는 경우 MRTK 핵심 구성 요소 탐색을 진행하는 중입니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
+앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 MRTK 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [손 및 시선 추적](./hand-eye-in-unity.md)

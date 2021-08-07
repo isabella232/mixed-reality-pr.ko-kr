@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 21c29b2c8d540378259200cc834f7a36065f8ab3
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: ec1246085989b4b157504e9b8551694d6116e6f08789fa669200e5425ef75cc6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581117"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187510"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -57,11 +57,11 @@ enum class EWMRHandKeypoint : uint8
 };
 ```
 
-[HandJointKind](/uwp/api/windows.perception.people.handjointkind) 테이블에서 각 열거 사례의 숫자 값을 찾을 수 있습니다.
+Windows의 각 열거 사례에 대 한 숫자 값을 찾을 수 있습니다 [. HandJointKind](/uwp/api/windows.perception.people.handjointkind) 테이블입니다.
 
 ### <a name="supporting-hand-tracking"></a>수동 추적 지원
 
-다음을 추가 하 여 청사진에서 수동 추적을 사용할 수 있습니다. **> Windows Mixed Reality** 에서 직접 추적을 **지원 합니다** .
+**직접 추적 > Windows Mixed Reality** 에서 **직접** 추적을 추가 하 여 청사진에서 수동 추적을 사용할 수 있습니다.
 
 ![수동 추적 BP](../images/unreal/hand-tracking-bp.png)
 

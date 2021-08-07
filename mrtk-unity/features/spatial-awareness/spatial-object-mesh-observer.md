@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: db0b2f14d0a5d65140223d3fa3f4f5324ef2ba76
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: f28f8dcb320332b8ff8942ae0b442c0817d6d0b790347daa419cfc24dc0d60fc
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176690"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209126"
 ---
 # <a name="spatial-object-mesh-observer"></a>공간 개체 메시 관찰자
 
@@ -80,7 +80,7 @@ Unity 편집기에서 환경 메시 데이터를 제공 하는 편리한 방법�
 >
 > 많은 개발자 들은 이전에 HoloToolkit를 사용 하 여 환경을 검사 하 고 방 파일을 만들었습니다. 이제 혼합 현실 Toolkit는 Unity에서 gameobject로 이러한 파일을 가져와 관찰자에서 *공간 메시 개체로* 사용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [프로필](../profiles/profiles.md)
 - [혼합 현실 Toolkit 프로필 구성 가이드](../../configuration/mixed-reality-configuration-guide.md)

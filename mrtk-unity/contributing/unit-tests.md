@@ -5,18 +5,18 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, UnitTest,
-ms.openlocfilehash: c8efb192982a1cb9ca07e91d29a69b11aaffc290
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: d528b5c16ab39271f9984bdd9e23ebca091efd53ed563149f3933ed31ed656dd
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216259"
 ---
 # <a name="writing-and-running-tests"></a>테스트 작성 및 실행
 
 MRTK의 안정성을 보장하기 위해 MRTK에는 코드 변경 내용이 기존 동작을 회귀하지 않도록 하는 일련의 테스트가 있습니다. MRTK와 같은 큰 코드베이스에서 테스트 검사를 잘 하는 것은 안정성과 변경 시 신뢰도에 매우 중요합니다.
 
-MRTK는 [NUnit의](https://nunit.org/)Unity 통합을 사용하는 Unity [Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) 사용합니다. 이 가이드에서는 MRTK에 테스트를 추가하는 방법에 대한 시작점을 제공합니다. 제공된 링크에서 조회할 수 있는 [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) 및 [NUnit은](https://nunit.org/) 설명하지 않습니다.
+MRTK는 [NUnit](https://nunit.org/)의 Unity 통합을 사용하는 Unity [Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) 사용합니다. 이 가이드에서는 MRTK에 테스트를 추가하는 방법에 대한 시작점을 제공합니다. 제공된 링크에서 조회할 수 있는 [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) 및 [NUnit은](https://nunit.org/) 설명하지 않습니다.
 
 끌어오기 요청을 제출하기 전에 다음을 확인합니다.
 
@@ -58,7 +58,7 @@ Unity 2018.4를 사용하여 H:\mrtk.dev 있는 프로젝트에서 테스트를 
 
 ### <a name="pull-request-validation"></a>끌어오기 요청 유효성 검사
 
-MRTK의 CI는 모든 구성에서 MRTK를 빌드하고 모든 편집 및 재생 모드 테스트를 실행합니다. 사용자에게 충분한 권한이 있는 경우 Github PR에 주석을 게시하여 CI를 트리거할 수 `/azp run mrtk_pr` 있습니다. CI 실행은 PR의 '검사' 탭에서 볼 수 있습니다.
+MRTK의 CI는 모든 구성에서 MRTK를 빌드하고 모든 편집 및 재생 모드 테스트를 실행합니다. 사용자에게 충분한 권한이 있는 경우 Github PR에 댓글을 게시하여 CI를 트리거할 수 `/azp run mrtk_pr` 있습니다. CI 실행은 PR의 '검사' 탭에서 볼 수 있습니다.
 
 모든 테스트가 성공적으로 통과된 후에만 PR을 main에 병합할 수 있습니다.
 
@@ -93,7 +93,7 @@ cd scripts\tests
 python .\generate_repeat_tests.py -n 5 -t MyTest MySecondTest
 ```
 
-이제 새 테스트 파일에 포함해야 합니다.
+이제 새 테스트 파일에 다음이 포함되어야 합니다.
 
 ```c#
 [UnityTest]

@@ -1,135 +1,135 @@
 ---
 title: 이전 버전에서 업데이트
-description: MRTK의 하위 버전에서 마이그레이션에 대한 설명서입니다.
+description: 낮은 버전의 MRTK에서 마이그레이션하는 방법에 대 한 설명서입니다.
 author: polar-kev
 ms.author: kesemple
 ms.date: 04/19/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 5a914d6408d346dac0bf6c683f401564e875f4d8
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: a5d1e914fcbc44572e06c1fc3cbaba7ea0363287b9e670a423a4e63b17cb20a6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175105"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210628"
 ---
 # <a name="updating-from-earlier-versions"></a>이전 버전에서 업데이트
 
 - [새 버전의 MRTK로 업그레이드](#upgrading-to-a-new-version-of-mrtk)
-- [2.3.0 ~ 2.4.0](#updating-230-to-240)
-- [2.2.0 ~ 2.3.0](#updating-220-to-230)
-- [2.1.0 ~ 2.2.0](#updating-210-to-220)
-- [2.0.0 ~ 2.1.0](#updating-200-to-210)
-- [RC2에서 2.0.0으로](#updating-rc2-to-200)
+- [2.3.0 2.4.0](#updating-230-to-240)
+- [2.2.0 2.3.0](#updating-220-to-230)
+- [2.1.0 2.2.0](#updating-210-to-220)
+- [2.0.0 2.1.0](#updating-200-to-210)
+- [2.0.0에 대 한 RC2](#updating-rc2-to-200)
 
 ## <a name="finding-the-current-version"></a>현재 버전 찾기 
 
-다음 지침에 따라 현재 사용 중인 MRTK 버전을 파악합니다.
+현재 사용 중인 MRTK의 버전을 확인 하려면 다음 지침을 따르세요.
 
 1. Unity에서 MRTK 프로젝트 열기
-2. Project 창에서 "MixedRealityToolkit" 폴더로 이동합니다.
-3. "Version"이라는 파일을 엽니다.
+2. Project 창에서 "MixedRealityToolkit" 폴더로 이동 합니다.
+3. "버전" 이라는 파일을 엽니다.
 
-위의 파일 및 폴더가 없으면 최신 버전의 MRTK에 있는 것입니다. 이 경우 다음을 시도합니다.
+위의 파일과 폴더가 존재 하지 않는 경우 새 버전의 MRTK가 있습니다. 이 경우 다음을 시도 합니다.
 
-1. "Mixed Reality Toolkit Foundation" 폴더로 이동합니다.
-2. "package.js켜기"를 클릭하여 Unity에서 미리 보기를 보거나 텍스트 편집기를 사용하여 엽니다.
-3. "version:"이라는 단어가 있는 줄을 찾습니다. 
+1. "Mixed Reality Toolkit Foundation" 폴더로 이동 합니다.
+2. Unity의 미리 보기를 보거나 텍스트 편집기를 사용 하 여 열려면 "package.json"을 클릭 하세요.
+3. "버전:" 이라는 단어를 사용 하 여 줄을 찾습니다. 
 
 ## <a name="upgrading-to-a-new-version-of-mrtk"></a>새 버전의 MRTK로 업그레이드
 
-*MRTK 업데이트를 받은 후 [마이그레이션 도구를](../features/tools/migration-window.md) 실행하여* 사용되지 않은 구성 요소에서 자동 수정 및 업그레이드하고 주요 변경 내용에 맞게 조정하는 것이 좋습니다. 마이그레이션 도구는 **도구** 패키지의 일부입니다.
+*MRTK 업데이트를 가져온 후 [](../features/tools/migration-window.md)* 에는 더 이상 사용 되지 않는 구성 요소에서 자동으로 수정 하 고 업그레이드 하 여 주요 변경 내용을 조정 하는 방법으로 마이그레이션 도구를 실행 하는 것이 좋습니다. 마이그레이션 도구는 **도구** 패키지의 일부입니다.
 
-아래 지침에서는 2.4.0에서 2.5.0으로 업그레이드 경로를 설명합니다. 프로젝트가 2.3.0 이하인 경우 [버전 간](#updating-230-to-240) 변경 내용을 읽어 업그레이드 경로를 이해하거나 이전 [릴리스의 지침을](https://microsoft.github.io/MixedRealityToolkit-Unity/version/releases/2.4.0/Documentation/Updating.html) 읽어 버전별 업그레이드를 수행합니다.
+아래 지침에서는 2.4.0 to 2.5.0 upgrade 경로에 대해 설명 합니다. 프로젝트가 2.3.0 또는 이전 버전인 경우 버전 [간](#updating-230-to-240) 변경 내용을 참조 하 여 업그레이드 경로를 이해 하거나, 버전에 따라 업그레이드를 수행 하는 이전 [릴리스의 지침](https://microsoft.github.io/MixedRealityToolkit-Unity/version/releases/2.4.0/Documentation/Updating.html) 을 읽으십시오.
 
 ### <a name="mixed-reality-feature-tool"></a>Mixed Reality Feature Tool
-MRTK를 최신 버전 MRTK로 업그레이드하는 가장 쉬운 방법은 [Mixed Reality 기능 도구를](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) 사용하여 최신 패키지를 다운로드하고 Unity 프로젝트에 직접 로드하는 것입니다.
+MRTK를 최신 버전으로 업그레이드 하는 가장 쉬운 방법은 [혼합 현실 기능 도구](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) 를 사용 하 여 최신 패키지를 다운로드 하 고 Unity 프로젝트에 직접 로드 하는 것입니다.
 
-프로젝트에서 이전에 Unity 자산(.unitypackage) 파일을 사용한 경우 [다음 지침을 참조하세요.](#switching-from-unity-asset-files-to-mixed-reality-feature-tool) 
+이전에 프로젝트에서 Unity asset (. unitypackage) 파일을 사용한 경우에는 [다음 지침](#switching-from-unity-asset-files-to-mixed-reality-feature-tool)을 참조 하세요. 
 
-### <a name="unity-asset-unitypackage-files"></a>Unity 자산(.unitypackage) 파일
+### <a name="unity-asset-unitypackage-files"></a>Unity 자산 (. unitypackage) 파일
 
-또 다른 업그레이드 경로는 MRTK Unity 패키지를 수동으로 다운로드하여 프로젝트에 적용하는 것입니다. 아래 단계를 참조하세요.
+다른 업그레이드 경로는 MRTK Unity 패키지를 수동으로 다운로드 하 여 프로젝트에 적용 하는 것입니다. 다음 단계를 참조 하세요.
 
-1. 업그레이드 단계의 어느 지점에서나 스네그를 적중하는 경우 현재 프로젝트의 복사본을 저장합니다.
+1. 업그레이드 단계의 어느 시점에서 든 모든 snags 적중 하는 경우 현재 프로젝트의 복사본을 저장 합니다.
 1. Unity 닫기
-1. *Assets* 폴더 내에서 .meta 파일과 함께 다음 **MRTK** 폴더를 삭제합니다(프로젝트에 나열된 폴더가 모두 없을 수 있음).
+1. *자산* 폴더 내에서 다음 **mrtk** 폴더를 해당 .xml 파일과 함께 삭제 합니다. 프로젝트에 나열 된 모든 폴더가 없을 수 있습니다.
     - MRTK/Core
     - MRTK/예제
-    - MRTK/확장
+    - MRTK/Extensions
     - MRTK/공급자
     - MRTK/SDK
     - MRTK/서비스
     - MRTK/StandardAssets
     > [!IMPORTANT]
-    > MRTK 셰이더를 수정한 경우 MRTK/StandardAssets 폴더를 삭제하기 전에 로컬 백업을 만듭니다.
-    - MRTK/도구
+    > MRTK 셰이더가 수정 된 경우 MRTK/StandardAssets 폴더를 삭제 하기 전에 로컬 백업을 만듭니다.
+    - MRTK/Tools
     > [!IMPORTANT]
-    > **MixedRealityToolkit.Generated** 폴더 또는 해당 .meta 파일을 삭제하지 마십시오.
-1. **라이브러리** 폴더 삭제
+    > **MixedRealityToolkit** 폴더 또는 해당. i a 파일을 삭제 하지 마십시오.
+1. **라이브러리** 폴더를 삭제 합니다.
     > [!IMPORTANT]
-    > Unity Collab과 같은 일부 Unity 도구는 라이브러리 폴더에 구성 정보를 저장합니다. 이 작업을 수행하는 도구를 사용하는 경우 먼저 삭제하기 전에 라이브러리에서 도구의 데이터 폴더를 복사한 다음 라이브러리를 다시 생성한 후 복원합니다.
-1. Unity에서 프로젝트 다시 열기
-1. 새 Unity 패키지 가져오기
-    - Foundation - _이 패키지를 먼저 가져오기_
+    > Unity Collab와 같은 일부 Unity 도구는 구성 정보를 라이브러리 폴더에 저장 합니다. 이를 수행 하는 도구를 사용 하는 경우 먼저 라이브러리에서 도구의 데이터 폴더를 복사한 후 라이브러리를 다시 생성 한 후에 복원 합니다.
+1. Unity에서 프로젝트를 다시 엽니다.
+1. 새 unity 패키지 가져오기
+    - 파운데이션- _이 패키지를 먼저 가져옵니다_ .
     - 도구
-    - (선택 사항) 확장
+    - 필드 확장할
     > [!NOTE]
-    > 추가 확장이 설치된 경우 다시 가져와야 할 수 있습니다.
-    - (선택 사항) 예제
-1. Unity를 닫고 **Library** 폴더를 삭제합니다(아래 참고를 먼저 읽어보세요!). 이 단계는 Unity에서 자산 데이터베이스를 새로 고치고 기존 사용자 지정 프로필을 조정하도록 강제하는 데 필요합니다.
-1. Unity를 시작하고 프로젝트의 각 장면에 대해
-    - 계층에서 **MixedRealityToolkit** 및 **MixedRealityPlayspace(있는 경우)를** 삭제합니다. 그러면 기본 카메라가 삭제되지만 다음 단계에서 다시 만들어집니다. 주 카메라의 속성을 수동으로 변경한 경우 새 카메라가 만들어지면 수동으로 다시 적용해야 합니다.
-    - **MixedRealityToolkit -> 장면에 추가 및 구성을** 선택합니다.
-    - **MixedRealityToolkit -> Utilities -> Update -> Controller Mapping Profiles(한** 번만 수행) 선택 - 사용자 지정 할당 입력 작업을 그대로 유지하면서 업데이트된 축 및 데이터로 사용자 지정 컨트롤러 매핑 프로필을 업데이트합니다.
-1. 마이그레이션 [도구를](../features/tools/migration-window.md) 실행하고 *전체 Project* 도구를 실행하여 모든 코드가 최신 코드로 업데이트되었는지 확인합니다.
-   마이그레이션 창에는 각각 자체 실행해야 하는 다양한 마이그레이션 처리기가 포함되어 있습니다. 이 단계에는 다음이 포함됩니다.
-   - 마이그레이션 처리기 선택 드롭다운에서 첫 번째 **마이그레이션 처리기를 선택합니다.**
-   - "전체 Project" 단추를 클릭합니다.
-   - "마이그레이션할 전체 프로젝트 추가" 단추를 클릭합니다(마이그레이션할 개체에 대한 전체 프로젝트를 검색함).
-   - 마이그레이션 가능한 개체가 있는 경우 사용하도록 설정해야 하는 "마이그레이션" 단추를 클릭합니다.
-   - 드롭다운 내의 각 마이그레이션 처리기에 대해 이전 세 단계를 반복합니다.
-     (향후 릴리스에서 이 마이그레이션 프로세스를 간소화하기 위해 수행할 수 있는 작업을 다루는 이 [문제를](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8552) 참조하세요.)
+    > 추가 확장을 설치한 경우 다시 가져와야 할 수 있습니다.
+    - 필드 예와
+1. Unity를 닫고 **라이브러리** 폴더를 삭제 합니다 (아래 노트를 먼저 읽으십시오!). 이 단계는 Unity가 asset 데이터베이스를 새로 고치고 기존 사용자 지정 프로필을 조정 하도록 강제 하는 데 필요 합니다.
+1. Unity를 시작 하 고 프로젝트의 각 장면에 대해
+    - 계층에서 **MixedRealityToolkit** 및 **MixedRealityPlayspace**(있는 경우)를 삭제 합니다. 그러면 주 카메라가 삭제 되지만 다음 단계에서는 다시 생성 됩니다. 기본 카메라의 속성을 수동으로 변경한 경우에는 새 카메라를 만든 후 수동으로 다시 적용 해야 합니다.
+    - **MixedRealityToolkit-> 선택 하 여 장면에 추가 및 구성**
+    - **> MixedRealityToolkit 유틸리티-> 업데이트-> 컨트롤러 매핑 프로필** (한 번만 수행 해야 함)을 선택 합니다. 이렇게 하면 사용자 지정 된 입력 동작을 그대로 유지 하면서 업데이트 된 축 및 데이터를 사용 하 여 사용자 지정 컨트롤러 매핑 프로필을 업데이트 합니다.
+1. [마이그레이션 도구](../features/tools/migration-window.md) 를 실행 하 고 *전체 Project* 도구를 실행 하 여 모든 코드가 최신 버전으로 업데이트 되었는지 확인 합니다.
+   마이그레이션 창에는 각각 자체에서 실행 되어야 하는 여러 마이그레이션 처리기가 포함 되어 있습니다. 이 단계에는 다음이 포함 됩니다.
+   - **마이그레이션 처리기 선택** 드롭다운에서 첫 번째 마이그레이션 처리기를 선택 합니다.
+   - "전체 Project" 단추를 클릭 합니다.
+   - "마이그레이션을 위한 전체 프로젝트 추가" 단추를 클릭 합니다 .이 단추를 클릭 하면 마이그레이션할 개체에 대 한 전체 프로젝트를 검색 합니다.
+   - Migrateable 개체가 발견 된 경우 사용 하도록 설정 해야 하는 "마이그레이션" 단추를 클릭 합니다.
+   - 드롭다운 내의 각 마이그레이션 처리기에 대해 앞의 세 단계를 반복 합니다.
+     이후 릴리스에서이 마이그레이션 프로세스를 간소화 하기 위해 수행할 수 있는 작업을 설명 하는 [이 문제](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8552) 를 참조 하세요.
 
-### <a name="switching-from-unity-asset-files-to-mixed-reality-feature-tool"></a>Unity 자산 파일에서 Mixed Reality 기능 도구로 전환
+### <a name="switching-from-unity-asset-files-to-mixed-reality-feature-tool"></a>Unity 자산 파일에서 혼합 현실 기능 도구로 전환
 
-Unity 자산 파일에서 Mixed Reality 기능 도구 패키지로 전환하면 다음과 같은 여러 가지 이점이 있습니다.
+Unity 자산 파일에서 혼합 현실 기능 도구 패키지로 전환 하면 다음과 같은 여러 가지 이점이 있습니다.
 
-- 보다 쉽게 업데이트
+- 간편한 업데이트
 - 컴파일 시간 단축
-- Visual Studio 솔루션의 프로젝트 감소
+- Visual Studio 솔루션의 프로젝트 수 감소
 
-를 Mixed Reality 기능 도구 사용으로 변경하려면 일회성 수동 단계 집합이 필요합니다.
+혼합 현실 기능 도구를 사용 하도록 변경 하려면 일회성 수동 단계가 필요 합니다.
 
-1. 현재 프로젝트의 복사본을 저장합니다.
+1. 현재 프로젝트의 복사본을 저장 합니다.
 1. Unity 닫기
-1. *Assets* 폴더 내에서 .meta 파일과 함께 다음 **MRTK** 폴더를 삭제합니다(프로젝트에 나열된 폴더가 모두 없을 수 있음).
+1. *자산* 폴더 내에서 다음 **mrtk** 폴더를 해당 .xml 파일과 함께 삭제 합니다. 프로젝트에 나열 된 모든 폴더가 없을 수 있습니다.
     - MRTK/Core
     - MRTK/예제
-    - MRTK/확장
+    - MRTK/Extensions
     - MRTK/공급자
     - MRTK/SDK
     - MRTK/서비스
     - MRTK/StandardAssets
     > [!IMPORTANT]
-    > MRTK 셰이더를 수정한 경우 MRTK/StandardAssets 폴더를 삭제하기 전에 로컬 백업을 만듭니다.
-    - MRTK/도구
+    > MRTK 셰이더가 수정 된 경우 MRTK/StandardAssets 폴더를 삭제 하기 전에 로컬 백업을 만듭니다.
+    - MRTK/Tools
     > [!IMPORTANT]
-    > **MixedRealityToolkit.Generated** 폴더 또는 해당 .meta 파일을 삭제하지 마십시오.
-1. **라이브러리** 폴더 삭제
+    > **MixedRealityToolkit** 폴더 또는 해당. i a 파일을 삭제 하지 마십시오.
+1. **라이브러리** 폴더를 삭제 합니다.
     > [!IMPORTANT]
-    > Unity Collab과 같은 일부 Unity 도구는 라이브러리 폴더에 구성 정보를 저장합니다. 이 작업을 수행하는 도구를 사용하는 경우 먼저 삭제하기 전에 라이브러리에서 도구의 데이터 폴더를 복사한 다음 라이브러리를 다시 생성한 후 복원합니다.
-1. Unity에서 프로젝트 다시 열기
+    > Unity Collab와 같은 일부 Unity 도구는 구성 정보를 라이브러리 폴더에 저장 합니다. 이를 수행 하는 도구를 사용 하는 경우 먼저 라이브러리에서 도구의 데이터 폴더를 복사한 후 라이브러리를 다시 생성 한 후에 복원 합니다.
+1. Unity에서 프로젝트를 다시 엽니다.
 
-이전 단계가 수행되면 [Mixed Reality 기능 도구를](#mixed-reality-feature-tool) 실행하고 원하는 버전의 Mixed Reality Toolkit 가져옵니다.
+이전 단계를 수행한 후에는 [혼합 현실 기능 도구](#mixed-reality-feature-tool) 를 실행 하 고 혼합 된 Toolkit의 원하는 버전을 가져옵니다.
 
-## <a name="updating-230-to-240"></a>2.3.0에서 2.4.0으로 업데이트
+## <a name="updating-230-to-240"></a>2.3.0를 2.4.0로 업데이트 하는 중
 
 [폴더 이름 바꾸기](#folder-renames-in-240) 
- [API 변경 내용](#api-changes-in-240)
+ [API 변경](#api-changes-in-240)
 
 ### <a name="folder-renames-in-240"></a>2.4.0에서 폴더 이름 바꾸기
 
-MixedRealityToolkit 폴더의 이름이 변경되고 버전 2.4의 공통 계층 구조로 이동되었습니다. 애플리케이션이 MRTK 리소스에 하드 코딩된 경로를 사용하는 경우 다음 표에 따라 업데이트해야 합니다.
+MixedRealityToolkit 폴더의 이름이 변경 되 고 버전 2.4에서 공용 계층으로 이동 되었습니다. 응용 프로그램에서 MRTK 리소스에 하드 코드 된 경로를 사용 하는 경우 다음 테이블에 따라 업데이트 해야 합니다.
 
 | 이전 폴더 | 새 폴더 |
 | --- | --- |
@@ -196,7 +196,7 @@ if (CoreServices.InputSystem.GazeProvider is GazeProvider gazeProvider)
 - UniversalApiContractV4_IsAvailable
 - UniversalApiContractV3_IsAvailable
 
-향후 API 계약 버전에 대해 WindowsApiChecker에 속성을 추가할 계획은 없습니다.
+향후 API 계약 버전에 대한 WindowsApiChecker에 속성을 추가할 계획은 없습니다.
 
 **GltfMeshPrimitiveAttributes 읽기 전용**
 
@@ -240,11 +240,11 @@ ScriptingUtilities 클래스는 사용되지 않는 것으로 표시되었으며
 
 ShellHandRayPointer 클래스의 lineRendererSelected 및 lineRendererNoTarget 멤버가 각각 lineMaterialSelected 및 lineMaterialNoTarget(#6863 )으로 대체되었습니다.[](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6863)
 
-lineRendererSelected 및/또는 lineRendererNoTarget을 lineMaterialNoTarget으로 바꾸어 컴파일 오류를 해결하세요.
+lineRendererSelected를 lineMaterialSelected 및/또는 lineRendererNoTarget을 lineMaterialNoTarget으로 바꾸어 컴파일 오류를 해결하세요.
 
 **공간 관찰자 StartupBehavior**
 
-클래스를 기반으로 구축된 공간 `BaseSpatialObserver` 관찰자는 이제 다시 사용하도록 설정할 때 StartupBehavior의 값을 적용합니다([#6919](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6919)).
+클래스를 기반으로 빌드된 공간 `BaseSpatialObserver` 관찰자는 이제 다시 사용하도록 설정할 때 StartupBehavior의 값을 적용합니다([#6919](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6919)).
 
 이 수정 사항을 활용하기 위해 변경할 필요가 없습니다.
 
@@ -285,7 +285,7 @@ WindowsMixedRealityUtilities의 네임스페이스가 Microsoft.MixedReality에�
 
 **MixedRealityServiceProfileAttribute**
 
-프로필 지원 요구 사항을 더 잘 설명하기 위해 MixedRealityServiceProfileAttribute가 업데이트되어 제외된 형식의 선택적 컬렉션을 추가했습니다. 이 변경의 일부로 ServiceType 속성이 Type에서 Type[]으로 변경되고 RequiredTypes로 이름이 변경되었습니다.
+프로필 지원 요구 사항을 더 잘 설명하기 위해 MixedRealityServiceProfileAttribute가 제외된 형식의 선택적 컬렉션을 추가하도록 업데이트되었습니다. 이 변경의 일부로 ServiceType 속성이 Type에서 Type[]으로 변경되고 RequiredTypes로 이름이 변경되었습니다.
 
 두 번째 속성인 ExcludedTypes도 추가되었습니다.
 
@@ -306,7 +306,7 @@ WindowsMixedRealityUtilities의 네임스페이스가 Microsoft.MixedReality에�
 
 **IMixedRealityMouseDeviceManager**
 
-**_추가됨_**
+**_추가_**
 
 `IMixedRealityMouseDeviceManager``CursorSpeed`및 `WheelSpeed` 속성이 추가되었습니다. 이러한 속성을 사용하면 애플리케이션에서 커서와 휠의 속도를 각각 조정하는 승수 값을 지정할 수 있습니다.
 
@@ -315,7 +315,7 @@ WindowsMixedRealityUtilities의 네임스페이스가 Microsoft.MixedReality에�
 >[!NOTE]
 >이 변경 내용은 버전 2.0.0과 호환되지 않습니다.
 
-**_사용되지 않음_**
+**_되지 않는_**
 
 `MouseInputProfile`속성은 사용되지 않는 것으로 표시되었으며 이후 버전의 Microsoft Mixed Reality Toolkit 제거됩니다. 애플리케이션 코드는 더 이상이 속성을 사용 하지 않는 것이 좋습니다.
 
@@ -380,7 +380,7 @@ WindowsMixedRealityUtilities의 네임스페이스가 Microsoft.MixedReality에�
     - RightHandManipulationKey
 
 1. `MouseLookToggle` 은 이전에 `MouseLookButton` 열거형에 로 `InputSimulationMouseButton.Focused` 포함되었으므로 이제는 별도의 옵션입니다. 사용하도록 설정하면 단추를 해제한 후 이스케이프 키를 누를 때까지 카메라가 마우스로 계속 회전합니다.
-1. `HandDepthMultiplier` 입력 시뮬레이션에 대한 일부 변경 내용을 수용하기 위해 기본값이 0.1에서 0.03으로 감소되었습니다. 스크롤할 때 카메라가 너무 빨리 이동하면 이 값을 낮추어 보세요.
+1. `HandDepthMultiplier` 입력 시뮬레이션의 일부 변경 내용을 수용하기 위해 기본값이 0.1에서 0.03으로 낮아졌습니다. 스크롤할 때 카메라가 너무 빨리 이동하면 이 값을 낮추어 보세요.
 1. 손을 회전하기 위한 키가 제거되었으며, 이제 마우스를 통해 손 회전도 제어됩니다. `HandRotateButton`왼쪽/오른쪽 조작 키(LShift/Space)와 함께 (Ctrl)을 보유하면 손 회전이 가능합니다.
 1. 새 축 "UpDown"이 입력 축 목록에 도입되었습니다. 이렇게 하면 세로로 카메라의 이동이 제어되고, 기본적으로 Q/E 키와 컨트롤러 트리거 단추가 사용됩니다.
 
@@ -388,11 +388,11 @@ WindowsMixedRealityUtilities의 네임스페이스가 Microsoft.MixedReality에�
 
 **마우스 데이터 공급자 프로필**
 
-새 및 속성을 노출하도록 마우스 데이터 공급자 프로필이 `CursorSpeed` `WheelSpeed` 업데이트되었습니다. 기존 사용자 지정 프로필에는 자동으로 기본값이 제공됩니다. 프로필이 저장되면 이러한 새 값이 유지됩니다.
+새 및 속성을 노출하도록 마우스 데이터 공급자 프로필이 `CursorSpeed` `WheelSpeed` 업데이트되었습니다. 기존 사용자 지정 프로필에는 자동으로 기본값이 제공됩니다. 프로필을 저장하면 이러한 새 값이 유지됩니다.
 
 **컨트롤러 매핑 프로필**
 
-일부 축 및 입력 형식은 2.1.0, 특히 OpenVR 플랫폼과 관련하여 업데이트되었습니다. 업그레이드할 때 **MixedRealityToolkit -> Utilities -> Update -> Controller Mapping Profiles를** 선택해야 합니다. 이렇게 하면 사용자 지정 할당 입력 작업을 그대로 유지하면서 사용자 지정 컨트롤러 매핑 프로필이 업데이트된 축 및 데이터로 업데이트됩니다.
+일부 축 및 입력 형식은 특히 OpenVR 플랫폼과 관련하여 2.1.0에서 업데이트되었습니다. 업그레이드할 때 **MixedRealityToolkit -> Utilities -> Update -> Controller Mapping Profiles를** 선택해야 합니다. 이렇게 하면 사용자 지정 할당 입력 작업을 그대로 유지하면서 사용자 지정 컨트롤러 매핑 프로필이 업데이트된 축 및 데이터로 업데이트됩니다.
 
 ## <a name="updating-rc2-to-200"></a>RC2를 2.0.0으로 업데이트
 
@@ -413,7 +413,7 @@ MixedRealityToolkit 개체의 다음 공용 속성은 더 이상 사용되지 �
 
 확장 서비스에 액세스하려면 를 `MixedRealityServiceRegistry.TryGetService<T>` 사용합니다. 데이터 공급자에 액세스하려면 서비스 인스턴스를 로 [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess) 캐스팅하고 `GetDataProvider<T>` 를 사용합니다.
 
-다음 사용되지 않은 속성에 대해 [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry) 또는 를 대신 사용합니다. [`CoreServices`](xref:Microsoft.MixedReality.Toolkit.CoreServices)
+다음 사용되지 [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry) 않은 속성에 대해 또는 를 대신 사용합니다. [`CoreServices`](xref:Microsoft.MixedReality.Toolkit.CoreServices)
 
 - `ActiveSystems`
 - `InputSystem`
@@ -465,14 +465,14 @@ IMixedRealityRaycastProvider가 추가되면서 입력 시스템 구성 프로�
 
 - 구성 요소가 전역 이벤트에 등록하는 경우 *모든* 형식의 전역 입력 이벤트를 받습니다.
 - 개체의 구성 요소 중 하나가 전역 입력 이벤트를 등록하는 경우 이 개체의 모든 구성 요소는 *모든* 형식의 전역 입력 이벤트를 받습니다.
-- 동일한 개체의 두 구성 요소가 전역 이벤트에 등록되고 한 구성 요소가 런타임에서 비활성화된 경우 두 번째 구성 요소는 전역 이벤트 수신을 중지합니다.
+- 동일한 개체의 두 구성 요소가 전역 이벤트에 등록되고 한 구성 요소가 런타임에 비활성화된 경우 두 번째 구성 요소는 전역 이벤트 수신을 중지합니다.
 
 새 API `RegisterHandler` 및 `UnregisterHandler` :
 
 - 전역적으로 수신 대기해야 하는 입력 이벤트와 포커스를 기반으로 해야 하는 입력 이벤트에 대한 명시적 및 세부적인 제어를 제공합니다.
 - 동일한 개체의 여러 구성 요소가 서로 독립적으로 전역 이벤트를 수신 대기할 수 있도록 허용합니다.
 
-**_마이그레이션 방법_**
+**_마이그레이션하는 방법_**
 
 - 이전에 API를 호출한 경우 `Register` / `Unregister` 이러한 호출을 에 대한 호출로 `RegisterHandler` / `UnregisterHandler` 대체합니다. 제네릭 매개 변수로 구현하는 처리기 인터페이스를 사용합니다. 여러 인터페이스를 구현하고 그 중 여러 인터페이스가 전역 입력 이벤트를 수신 대기하는 경우 를 `RegisterHandler` 여러 번 호출합니다.
 - 에서 상속한 경우 `InputSystemGlobalListener` 상속을 로 `InputSystemGlobalHandlerListener` 변경합니다. `RegisterHandlers`메서드를 구현하고 `UnregisterHandlers` 추상화합니다. 구현 `inputSystem.RegisterHandler` 호출에서 ( `inputSystem.UnregisterHandler` ) 전역 이벤트를 수신 대기 하려는 모든 처리기 인터페이스에 등록 합니다.
@@ -583,22 +583,22 @@ IMixedRealitySpatialAwarenessSystem 및 IMixedRealitySpatialAwarenessObserver �
 - `TrackedObjectToReference` public 속성은 더 이상 사용되지 않으며 이름이 로 바뀌었습니다. `TrackedTargetType`
 - `TrackedObjectType` 는 왼쪽 & 오른쪽 컨트롤러 값을 더 이상 사용되지 않습니다. 대신 또는 값을 사용하고 `MotionController` `HandJoint` 새 속성을 `TrackedHandedness` 업데이트하여 추적을 왼쪽 또는 오른쪽 컨트롤러로 제한합니다.
 
-**_Inbetween_**
+**_InBetween_**
 
 - `TrackedObjectForSecondTransform` public 속성은 더 이상 사용되지 않으며 이름이 로 바뀌었습니다. `SecondTrackedObjectType`
 - `AttachSecondTransformToNewTrackedObject()` 는 제거되었습니다. 해결기를 업데이트하려면 공용 속성(즉, `SecondTrackedObjectType`)
 
-**_SurfaceM_**
+**_SurfaceMagnetism_**
 
 - `MaxDistance` public 속성은 더 이상 사용되지 않으며 이름이 로 바뀌었습니다. `MaxRaycastDistance`
 - `CloseDistance` public 속성은 더 이상 사용되지 않으며 이름이 로 바뀌었습니다. `ClosestDistance`
-- `RaycastDirectionMode`의 기본값은 이제 `TrackedTargetForward` 추적된 대상 변환의 방향으로 광선 캐스트를 변환하는 입니다.
+- `RaycastDirectionMode`의 기본값은 이제 `TrackedTargetForward` 추적된 대상 변환 방향의 광선 캐스트입니다.
 - `OrientationMode`열거형 값 `Vertical` 및 의 이름이 각각 및 로 `Full` 변경되었습니다. `TrackedTarget` `SurfaceNormal`
 - `KeepOrientationVertical` 연결된 GameObject의 방향이 세로로 유지되는지 여부를 제어하기 위해 public 속성이 추가되었습니다.
 
 **단추**
 
-- [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton) 이제 `DistanceSpaceMode` 속성이 `Local` 기본값으로 로 설정됩니다. 이렇게 하면 계속 누를 수 있는 동안 단추의 크기를 조정합니다.
+- [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton) 이제 `DistanceSpaceMode` 속성이 `Local` 기본값으로 설정됩니다. 이렇게 하면 계속 누를 수 있는 동안 단추의 크기를 조정합니다.
 
 **클리핑 구**
 
@@ -611,7 +611,7 @@ ClippingSphere 인터페이스가 ClippingBox 및 ClippingPlane에 있는 API를
 - NearInteractionTouchable은 더 이상 터치하는 Unity UI 캔버스를 처리하지 않습니다. 이제 Unity UI 터치 가능에 NearInteractionTouchableUnityUI 클래스를 사용해야 합니다.
 - ColliderNearInteractionTouchable은 충돌체를 기반으로 하는 터치 가능한 새 기본 클래스입니다. 즉, NearInteractionTouchableUnityUI를 제외한 모든 터치 가능 클래스입니다.
 - BaseNearInteractionTouchable.DistFront가 이동되고 Rename이 표시되어,이 거리이며, 이 거리이며, 이 거리와는 다른 TouchAble과 상호 작용할 수 있습니다. 이전에는 각 터치 가능 개체의 최대 상호 작용 거리가 있었지만, 이제는 최적화를 향상할 수 있도록 하여 을(를) 에 정의했습니다.
-- BaseNearInteractionTouchable.DistBack의 이름이Resreshold로 바뀌었습니다. 이렇게 하면 사용자 표시가 DebounceThreshold에 해당한다는 것을 알 수 있습니다. Touchable은Resreshold가 교차될 때 활성화되고 DebounceThreshold가 교차될 때 해제됩니다.
+- BaseNearInteractionTouchable.DistBack의 이름이Resreshold로 바뀌었습니다. 이렇게 하면,이 경우, 사용자에 게는 DebounceThreshold에 해당 하는 것을 확인할 수 있습니다. Touchable은Resreshold가 교차될 때 활성화되고 DebounceThreshold가 교차될 때 해제됩니다.
 
 **ReadOnlyAttribute**
 
@@ -656,47 +656,47 @@ Microsoft.MixedReality.Toolkit[.<name>]
 | MixedRealityToolkit.Core.Inspectors.asmdef | Microsoft.MixedReality. Toolkit. Editor.Inspectors.asmdef |
 | MixedRealityToolkit.Core.Inspectors.ServiceInspectors.asmdef | Microsoft.MixedReality. Toolkit. Editor.ServiceInspectors.asmdef |
 | MixedRealityToolkit.Core.UtilitiesAsync.asmdef | Microsoft.MixedReality. Toolkit. Async.asmdef |
-| MixedRealityToolkit.Core.Utilities.Editor.asmdef | Microsoft.MixedReality. Toolkit. Editor.Utilities.asmdef |
-| MixedRealityToolkit.Utilities.Gltf.asmdef | Microsoft.MixedReality. Toolkit. Gltf.asmdef |
-| MixedRealityToolkit.Utilities.Gltf.Importers.asmdef | Microsoft.MixedReality. Toolkit. Gltf.Importers.asmdef |
+| MixedRealityToolkit.Core.Utilities.Editor.asmdef | MixedReality. Toolkit. Editor. asmdef |
+| MixedRealityToolkit. asmdef | MixedReality. Toolkit. 글 어. asmdef |
+| MixedRealityToolkit. asmdef | MixedReality. Toolkit. 글 어. asmdef |
 
-**MixedRealityToolkit.Providers**
-
-| RC2 | 2.0.0 |
-| --- | --- |
-| MixedRealityToolkit.Providers.OpenVR.asmdef | Microsoft.MixedReality. Toolkit. Providers.OpenVR.asmdef |
-| MixedRealityToolkit.Providers.WindowsMixedReality.asmdef | Microsoft.MixedReality. Toolkit. Providers.WindowsMixedReality.asmdef |
-| MixedRealityToolkit.Providers.WindowsVoiceInput.asmdef | Microsoft.MixedReality. Toolkit. Providers.WindowsVoiceInput.asmdef |
-
-**MixedRealityToolkit.Services**
+**MixedRealityToolkit**
 
 | RC2 | 2.0.0 |
 | --- | --- |
-| MixedRealityToolkit.Services.BoundarySystem.asmdef | Microsoft.MixedReality. Toolkit. Services.BoundarySystem.asmdef |
-| MixedRealityToolkit.Services.CameraSystem.asmdef | Microsoft.MixedReality. Toolkit. Services.CameraSystem.asmdef |
-| MixedRealityToolkit.Services.DiagnosticsSystem.asmdef | Microsoft.MixedReality. Toolkit. Services.DiagnosticsSystem.asmdef |
-| MixedRealityToolkit.Services.InputSimulation.asmdef | Microsoft.MixedReality. Toolkit. Services.InputSimulation.asmdef |
-| MixedRealityToolkit.Services.InputSimulation.Editor.asmdef | Microsoft.MixedReality. Toolkit. Services.InputSimulation.Editor.asmdef |
-| MixedRealityToolkit.Services.InputSystem.asmdef | Microsoft.MixedReality. Toolkit. Services.InputSystem.asmdef |
-| MixedRealityToolkit.Services.Inspectors.asmdef | Microsoft.MixedReality. Toolkit. Services.InputSystem.Editor.asmdef |
-| MixedRealityToolkit.Services.SceneSystem.asmdef | Microsoft.MixedReality. Toolkit. Services.SceneSystem.asmdef |
-| MixedRealityToolkit.Services.SpatialAwarenessSystem.asmdef | Microsoft.MixedReality. Toolkit. Services.SpatialAwarenessSystem.asmdef |
-| MixedRealityToolkit.Services.TeleportSystem.asmdef | Microsoft.MixedReality. Toolkit. Services.TeleportSystem.asmdef |
+| MixedRealityToolkit을 제공 합니다. | MixedReality. Toolkit. 공급자. OpenVR. asmdef |
+| MixedRealityToolkit. WindowsMixedReality. | MixedReality. Toolkit. WindowsMixedReality. asmdef |
+| MixedRealityToolkit. WindowsVoiceInput. | MixedReality. Toolkit. WindowsVoiceInput. asmdef |
 
-**MixedRealityToolkit.SDK**
+**MixedRealityToolkit**
 
 | RC2 | 2.0.0 |
 | --- | --- |
-| MixedRealityToolkit.SDK.asmdef | Microsoft.MixedReality. Toolkit. SDK.asmdef |
-| MixedRealityToolkit.SDK.Inspectors.asmdef | Microsoft.MixedReality. Toolkit. Sdk. Inspectors.asmdef |
+| MixedRealityToolkit. BoundarySystem | MixedReality. Toolkit. BoundarySystem. asmdef |
+| MixedRealityToolkit. CameraSystem | MixedReality. Toolkit. CameraSystem. asmdef |
+| MixedRealityToolkit. DiagnosticsSystem | MixedReality. Toolkit. DiagnosticsSystem. asmdef |
+| MixedRealityToolkit. asmdef | MixedReality. Toolkit. 서비스. InputSimulation. asmdef |
+| MixedRealityToolkit. n a m e. | MixedReality. Toolkit. 서비스. n a m e. |
+| MixedRealityToolkit. n a m e. | MixedReality. Toolkit. 서비스. n a m e. |
+| MixedRealityToolkit입니다. | MixedReality. Toolkit. 서비스. n a m e. |
+| MixedRealityToolkit. SceneSystem | MixedReality. Toolkit. SceneSystem. asmdef |
+| MixedRealityToolkit. SpatialAwarenessSystem | MixedReality. Toolkit. SpatialAwarenessSystem. asmdef |
+| MixedRealityToolkit. TeleportSystem | MixedReality. Toolkit. TeleportSystem. asmdef |
 
-**MixedRealityToolkit.Examples**
+**MixedRealityToolkit**
 
 | RC2 | 2.0.0 |
 | --- | --- |
-| MixedRealityToolkit.Examples.asmdef | Microsoft.MixedReality. Toolkit. Examples.asmdef |
-| MixedRealityToolkit.Examples.Demos.Gltf.asmdef | Microsoft.MixedReality. Toolkit. Demos.Gltf.asmdef |
-| MixedRealityToolkit.Examples.Demos.StandardShader.Inspectors.asmdef | Microsoft.MixedReality. Toolkit. Demos.StandardShader.Inspectors.asmdef |
-| MixedRealityToolkit.Examples.Demos.Utilities.InspectorFields.asmdef | Microsoft.MixedReality. Toolkit. Demos.InspectorFields.asmdef |
-| MixedRealityToolkit.Examples.Demos.Utilities.InspectorFields.Inspectors.asmdef | Microsoft.MixedReality. Toolkit. Demos.InspectorFields.Inspectors.asmdef |
-| MixedRealityToolkit.Examples.Demos.UX.Interactables.asmdef | Microsoft.MixedReality. Toolkit. Demos.UX.Interactables.asmdef |
+| MixedRealityToolkit. | MixedReality. Toolkit. SDK. asmdef |
+| MixedRealityToolkit입니다. | MixedReality. Toolkit. SDK. 검사기. asmdef |
+
+**MixedRealityToolkit**
+
+| RC2 | 2.0.0 |
+| --- | --- |
+| MixedRealityToolkit. asmdef | MixedReality. Toolkit. 예. asmdef |
+| MixedRealityToolkit를 정의 합니다. | MixedReality. Toolkit. 데모. asmdef |
+| MixedRealityToolkit.. m a t. | MixedReality. Toolkit. 데모. StandardShader. |
+| MixedRealityToolkit. InspectorFields. asmdef | MixedReality. Toolkit. InspectorFields. asmdef |
+| MixedRealityToolkit. InspectorFields. m a t. | MixedReality. Toolkit. InspectorFields입니다. |
+| MixedRealityToolkit (영문). asmdef | MixedReality. Toolkit. 데모가. asmdef |

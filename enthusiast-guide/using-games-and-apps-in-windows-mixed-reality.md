@@ -2,17 +2,17 @@
 title: Windows Mixed Reality에서 게임과 앱 사용
 description: 몰입 형 및 2D 앱과 게임을 시작 하는 방법, 바탕 화면을 확인 하 고 WebVR 및 SteamVR 콘텐츠를 경험해 보세요.
 ms.topic: article
-keywords: Windows Mixed Reality, Mixed Reality, 가상 현실, VR, MR, 앱, 게임, 데스크톱, SteamVR, WebVR, 스트림
-ms.openlocfilehash: e277ede1af3e38d7f1525412431d9006092f93b6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, Mixed reality, 가상 현실, VR, MR, 앱, 게임, 데스크톱, SteamVR, WebVR, 스트림
+ms.openlocfilehash: 6de20937204c8513819c5e2b8b2481cc3751143e5f8eeb4b27e33769ba2fc599
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581370"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212492"
 ---
 # <a name="using-games-and-apps-in-windows-mixed-reality"></a>Windows Mixed Reality에서 게임과 앱 사용
 
-Windows Mixed Reality는 Windows에 불과합니다. 즉 혼합 현실에 맞게 설계 된 몰입 형 게임을 실행할 수 있습니다. 바탕 화면에서 알고 있고 좋아하는 모든 일반 2D 앱을 실행할 수도 있습니다 (예: 사탕 충돌 또는 Photoshop/AutoCAD).
+Windows Mixed Reality은 Windows 뿐 이므로 혼합 현실 용으로 설계 된 몰입 형 게임을 실행할 수 있습니다. 바탕 화면에서 알고 있고 좋아하는 모든 일반 2D 앱을 실행할 수도 있습니다 (예: 사탕 충돌 또는 Photoshop/AutoCAD).
 
 ## <a name="how-to-get-into-your-first-immersive-game"></a>첫 번째 몰입 형 게임을 시작 하는 방법
 
@@ -42,7 +42,7 @@ Windows Mixed Reality는 Windows에 불과합니다. 즉 혼합 현실에 맞게
 ## <a name="how-to-get-into-your-first-webvr-experience"></a>첫 번째 WebVR 환경을 시작 하는 방법
 
 1. 헤드셋이 꽂혀 있고 컨트롤러의 전원이 켜져 있고 연결 되어 있는지 확인 합니다.
-2. 혼합 현실에 배치 된 Microsoft Edge 슬레이트 또는 Windows 바탕 화면의 Microsoft Edge 응용 프로그램으로 이동 합니다.
+2. 혼합 현실에 배치 된 Microsoft Edge 슬레이트로 이동 하거나 Windows 데스크톱의 Microsoft Edge 응용 프로그램으로 이동 합니다.
 3. WebVR를 지 원하는 웹 사이트로 이동 합니다. 몇 가지 예:
    * [A-복사](https://aframe.io/a-painter/)
    * [A-폭발](https://aframe.io/a-blast/)
@@ -53,15 +53,15 @@ Windows Mixed Reality는 Windows에 불과합니다. 즉 혼합 현실에 맞게
 5. 처음에 특정 도메인에서 VR를 입력 하려고 하면 브라우저는 몰입 형 보기 사용에 대 한 동의를 요청 합니다. 예를 선택 합니다. ![특정 도메인에 대 한 첫 번째 시도를 시작 하는 데 표시 되는 동의 UI](images/1053px-Webvr-consent-ui.png)
 6. WebVR 콘텐츠가 헤드셋에서 시작 됩니다.
 
-**참고:** Windows Mixed Reality 또는 Windows 바탕 화면에서 Microsoft Edge의 WebVR 환경을 시작할 수 있습니다.
+**참고:** Windows Mixed Reality 또는 Windows 데스크톱에서 Microsoft Edge WebVR 환경을 시작할 수 있습니다.
 
-![바탕 화면에 Microsoft Edge에서 VR 입력](images/450px-webvr-desktop.png)
+![바탕 화면의 Microsoft Edge에서 VR 입력](images/450px-webvr-desktop.png)
 
 바탕 화면의 Microsoft Edge에서 VR를 입력 합니다.
 
-![혼합 현실 cliffhouse 내에서 Microsoft Edge에서 VR 입력](images/450px-enter-vr-cliffhouse.jpg)
+![혼합 현실 cliffhouse 내 Microsoft Edge에서 VR 입력](images/450px-enter-vr-cliffhouse.jpg)
 
-혼합 현실 cliffhouse 내의 Microsoft Edge에서 VR를 입력 합니다.
+혼합 현실 cliffhouse 내 Microsoft Edge에서 VR를 입력 합니다.
 
 **WebVR 환경을 유지 하려면:**
 * 동작 컨트롤러 또는 키보드에서 Windows 키를 누릅니다.
@@ -73,13 +73,13 @@ Windows Mixed Reality는 Windows에 불과합니다. 즉 혼합 현실에 맞게
 
 ## <a name="how-to-get-into-your-first-steamvr-experience"></a>첫 번째 SteamVR 환경을 시작 하는 방법
 
-SteamVR에 대 한 windows Mixed Reality를 사용 하면 사용자가 Windows Mixed Reality 모던 헤드셋에서 SteamVR 환경을 실행할 수 있습니다. SteamVR에 대 한 Windows Mixed Reality를 설치한 후 데스크톱 또는 스트림 라이브러리에서 즐겨 찾는 SteamVR 응용 프로그램을 시작 하 고 해당 Windows 헤드셋에서 직접 재생할 수 있습니다.
+SteamVR에 대 한 Windows Mixed Reality를 통해 사용자는 몰입 형 헤드셋 Windows Mixed Reality에서 SteamVR 환경을 실행할 수 있습니다. SteamVR에 대 한 Windows Mixed Reality를 설치한 후 데스크톱 또는 스트림 라이브러리에서 즐겨 찾는 SteamVR 응용 프로그램을 시작 하 고 Windows 헤드셋에서 직접 재생할 수 있습니다.
 
-시작 하려면 [Windows Mixed Reality의 SteamVR 설치 지침](./using-steamvr-with-windows-mixed-reality.md)을 따르세요.
+시작 하려면 [Windows Mixed Reality에 대 한 SteamVR 설치 지침](./using-steamvr-with-windows-mixed-reality.md)을 따르세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
-Windows Mixed Reality의 작동 방식에 대해 자세히 알아보려면 다음을 참조 하세요.
+Windows Mixed Reality 작동 방법에 대해 자세히 알아보려면 다음을 참조 하세요.
 * [혼합 현실 홈](your-mixed-reality-home.md)
 * [추적 시스템](tracking-system.md)
 * [모션 컨트롤러](controllers-in-wmr.md)

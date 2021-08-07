@@ -1,48 +1,48 @@
 ---
 title: Unity의 지속성
-description: 지 속성을 사용 하면 사용자의 pin을 원하는 위치에 holograms 나중에 앱의 여러 사용에서 찾을 수 있습니다.
+description: 지속성을 사용하면 사용자가 원하는 위치에 개별 홀로그램을 고정한 다음, 나중에 여러 앱 사용을 통해 찾을 수 있습니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: HoloLens, 지 속성, Unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 7d12764dac2259388fe57d3924165783eab3dac5
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: HoloLens, 지속성, Unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 9283191c024cbe33ecda3946a4e9bcbd5f3708c21a3578484b547207ee70a49b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583497"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208973"
 ---
 # <a name="persistence-in-unity"></a>Unity의 지속성
 
-**네임 스페이스:** *UNITYENGINE. XR*<br>
+**네임스페이스:** *UnityEngine.XR.WSA.Persistence*<br>
 **클래스:** *WorldAnchorStore*
 
-WorldAnchorStore는 응용 프로그램의 여러 인스턴스에서 holograms 특정 실제 위치에 유지 되는 holographic 환경을 만드는 핵심입니다. 사용자는 언제 든 지 개별 holograms을 고정 하 고, 나중에 앱의 여러 사용에 대 한 동일한 지점에서 찾을 수 있습니다.
+WorldAnchorStore는 홀로그램이 애플리케이션의 인스턴스에서 특정 실제 위치에 유지되는 홀로그램 환경을 만드는 핵심입니다. 그런 다음, 사용자는 원하는 위치에 개별 홀로그램을 고정하고 나중에 앱의 여러 용도에 대해 동일한 지점에서 찾을 수 있습니다.
 
-## <a name="how-to-persist-holograms-across-sessions"></a>세션 간에 holograms를 유지 하는 방법
+## <a name="how-to-persist-holograms-across-sessions"></a>세션 간에 홀로그램을 유지하는 방법
 
-WorldAnchorStore를 사용 하면 세션 간에 WorldAnchor의 위치를 유지할 수 있습니다. 실제로 세션 간에 holograms을 유지 하려면 특정 세계 앵커를 사용 하는 Gameobject를 별도로 추적 해야 합니다. 일반적으로 세계 앵커를 사용 하 여 GameObject 루트를 만들고 로컬 위치 오프셋을 사용 하 여 자식을 holograms 고정 하는 것이 좋습니다.
+WorldAnchorStore를 사용하면 세션 간에 WorldAnchor의 위치를 유지할 수 있습니다. 세션 간에 홀로그램을 실제로 유지하려면 특정 세계 앵커를 사용하는 GameObjects를 별도로 추적해야 합니다. 종종 세계 앵커를 사용하여 GameObject 루트를 만들고 로컬 위치 오프셋을 사용하여 자식 홀로그램을 고정하는 것이 타당합니다.
 
-이전 세션에서 holograms를 로드 하려면 다음을 수행 합니다.
-1. WorldAnchorStore 가져오기
-2. 세계 앵커와 관련 된 앱 데이터를 로드 하 여 세계 앵커의 ID를 제공 합니다.
-3. 해당 ID에서 전 세계 앵커 로드
+이전 세션에서 홀로그램을 로드하려면 다음을 수행합니다.
+1. WorldAnchorStore를 얻습니다.
+2. 세계 앵커의 ID를 제공하는 세계 앵커와 관련된 앱 데이터 로드
+3. ID에서 세계 앵커 로드
 
-이후 세션에 대해 holograms를 저장 하려면:
-1. WorldAnchorStore 가져오기
-2. ID를 지정 하 여 전 세계 앵커 저장
-3. ID와 함께 세계 앵커와 관련 된 앱 데이터 저장
+향후 세션에 대해 홀로그램을 저장하려면 다음을 수행합니다.
+1. WorldAnchorStore를 얻습니다.
+2. ID를 지정하여 세계 앵커 저장
+3. ID와 함께 세계 앵커와 관련된 앱 데이터 저장
 
-### <a name="getting-the-worldanchorstore"></a>WorldAnchorStore 가져오기
+### <a name="getting-the-worldanchorstore"></a>WorldAnchorStore 받기
 
-작업을 수행할 준비가 된 시기를 알 수 있도록 WorldAnchorStore에 대 한 참조를 유지 하려고 합니다. 비동기 호출 이므로 시작 하는 즉시 다음을 호출 합니다.
+작업을 수행할 준비가 되면 알 수 있도록 WorldAnchorStore에 대한 참조를 유지하려고 합니다. 비동기 호출이므로 시작하는 즉시 다음을 호출하려고 합니다.
 
 ```
 WorldAnchorStore.GetAsync(StoreLoaded);
 ```
 
-이 경우 WorldAnchorStore가 로드를 완료 한 경우에 대 한 처리기입니다.
+이 경우 StoreLoaded는 WorldAnchorStore가 로드를 완료한 경우에 대한 처리기입니다.
 
 ```
 private void StoreLoaded(WorldAnchorStore store)
@@ -51,11 +51,11 @@ private void StoreLoaded(WorldAnchorStore store)
 }
 ```
 
-이제 특정 세계 앵커를 저장 하 고 로드 하는 데 사용할 WorldAnchorStore에 대 한 참조가 있습니다.
+이제 특정 World Anchors를 저장하고 로드하는 데 사용할 WorldAnchorStore에 대한 참조가 있습니다.
 
 ### <a name="saving-a-worldanchor"></a>WorldAnchor 저장
 
-저장 하기 위해 저장 하는 항목의 이름을로 하 고 저장 하려는 경우 앞에서 받은 WorldAnchor에 전달 하기만 하면 됩니다. 참고: 두 앵커를 같은 문자열에 저장 하려고 하면 실패 합니다 (store. Save는 false를 반환 합니다. 이전 저장을 삭제 한 후 새 저장을 저장 합니다.
+저장하려면 저장하려는 이름을 지정하고 저장하려는 경우 이전에 얻은 WorldAnchor에 전달하기만 하면됩니다. 참고: 동일한 문자열에 두 개의 앵커를 저장하려고 하면 실패합니다(저장소. 저장하면 false가 반환됩니다.) 새 저장을 저장하기 전에 이전 저장을 삭제합니다.
 
 ```
 private void SaveGame()
@@ -71,7 +71,7 @@ private void SaveGame()
 
 ### <a name="loading-a-worldanchor"></a>WorldAnchor 로드
 
-로드 하려면 다음을 수행 합니다.
+로드하려면 다음을 수행합니다.
 
 ```
 private void LoadGame()
@@ -85,11 +85,11 @@ private void LoadGame()
 }
 ```
 
-저장소를 추가로 사용할 수도 있습니다. Delete ()-이전에 저장 하 고 저장 한 앵커를 제거 합니다. 이전에 저장 된 모든 데이터를 제거 하려면 ()를 선택 취소 합니다.
+저장소를 사용할 수도 있습니다. Delete() - 이전에 저장하고 저장한 앵커를 제거합니다. 이전에 저장된 모든 데이터를 제거하려면 Clear()를 선택합니다.
 
 ### <a name="enumerating-existing-anchors"></a>기존 앵커 열거
 
-이전에 저장 된 앵커를 검색 하려면 GetAllIds를 호출 합니다.
+이전에 저장된 앵커를 검색하려면 GetAllIds를 호출합니다.
 
 ```
 string[] ids = this.store.GetAllIds();
@@ -99,17 +99,17 @@ for (int index = 0; index < ids.Length; index++)
 }
 ```
 
-## <a name="persisting-holograms-for-multiple-devices"></a>여러 장치에 대 한 holograms 유지
+## <a name="persisting-holograms-for-multiple-devices"></a>여러 디바이스에 대한 홀로그램 유지
 
-<a href="/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a> 를 사용 하 여 로컬 WorldAnchor에서 영 속 클라우드 앵커를 만들 수 있습니다. 그러면 해당 장치가 동시에 함께 제공 되지 않는 경우에도 앱이 여러 HoloLens, IOS 및 Android 장치에서 찾을 수 있습니다.  클라우드 앵커는 지속 되기 때문에 시간에 따른 여러 장치는 동일한 물리적 위치에서 해당 앵커에 대해 렌더링 된 콘텐츠를 볼 수 있습니다.
+<a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> 사용하여 로컬 WorldAnchor에서 지속성 클라우드 앵커를 만들 수 있습니다. 그러면 해당 디바이스가 동시에 함께 표시되지 않더라도 앱이 여러 HoloLens, iOS 및 Android 디바이스에서 찾을 수 있습니다.  클라우드 앵커는 영구적이므로 시간이 지남에 따라 여러 디바이스에서 동일한 물리적 위치에서 해당 앵커를 기준으로 렌더링된 콘텐츠를 볼 수 있습니다.
 
-Unity에서 공유 환경 빌드를 시작 하려면 5 분 <a href="/azure/spatial-anchors/unity-overview" target="_blank">Azure 공간 앵커 Unity 퀵 스타트</a>를 사용해 보세요.
+Unity에서 공유 환경 빌드를 시작하려면 5분 Azure Spatial Anchors Unity 빠른 시작을 사용해 <a href="/azure/spatial-anchors/unity-overview" target="_blank">보세요.</a>
 
-Azure 공간 앵커를 사용 하 여 실행 하면 <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Unity에서 앵커를 만들고 찾을</a>수 있습니다.
+Azure Spatial Anchors 실행하면 <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Unity에서 앵커를 만들고 찾을</a>수 있습니다.
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 설명한 Unity 개발 검사점 경험을 팔로 사용할 경우 혼합 현실 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
+앞에서 설명한 Unity 개발 검사점 여정을 수행하는 경우 Mixed Reality 핵심 구성 요소에 대해 탐색해야 합니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [공간 매핑](spatial-mapping-in-unity.md)
@@ -122,6 +122,6 @@ Azure 공간 앵커를 사용 하 여 실행 하면 <a href="/azure/spatial-anch
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
-* [공간 앵커 지 속성](../../design/coordinate-systems.md#spatial-anchor-persistence)
+* [공간 앵커 지속성](../../design/coordinate-systems.md#spatial-anchor-persistence)
 * <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
-* <a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Unity 용 Azure 공간 앵커 SDK</a>
+* <a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Unity용 Azure Spatial Anchors SDK</a>

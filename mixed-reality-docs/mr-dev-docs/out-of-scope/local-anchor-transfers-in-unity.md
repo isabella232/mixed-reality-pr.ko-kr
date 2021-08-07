@@ -6,16 +6,16 @@ ms.author: jacksonf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 공유, 고정, WorldAnchor, MR 공유 250, WorldAnchorTransferBatch, SpatialPerception, 전송, 로컬 앵커 전송, 앵커 내보내기, 앵커 가져오기
-ms.openlocfilehash: 4949dd49817d723729974fb5666d5defb64b72ba
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: eaf25edbae39aab628277aa29f975f3d4d9d7374c796fd1b7b159053d4a46b95
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583878"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189130"
 ---
 # <a name="local-anchor-transfers-in-unity"></a>Unity의 로컬 앵커 전송
 
-<a href="/azure/spatial-anchors" target="_blank">Azure 공간 앵커</a>를 사용할 수 없는 경우 로컬 앵커 전송에서는 한 hololens 장치에서 두 번째 hololens 장치에서 가져올 앵커를 내보낼 수 있습니다.
+<a href="/azure/spatial-anchors" target="_blank">Azure 공간 앵커</a>를 사용할 수 없는 경우 로컬 앵커 전송은 하나의 HoloLens 장치가 두 번째 HoloLens 장치에서 가져올 앵커를 내보낼 수 있도록 합니다.
 
 >[!NOTE]
 >로컬 앵커 전송은 <a href="/azure/spatial-anchors" target="_blank">Azure 공간 앵커</a>보다 더 강력 하지 않은 앵커 회수를 제공 하며, IOS 및 Android 장치는이 방식에서 지원 되지 않습니다.
@@ -25,19 +25,19 @@ ms.locfileid: "98583878"
 앱이 공간 앵커를 전송 하려면 *SpatialPerception* 기능을 사용 하도록 설정 해야 합니다.
 
 *SpatialPerception* 기능을 사용 하도록 설정 하는 방법:
-1. Unity 편집기에서 **"플레이어 설정"** 창 (편집 > 프로젝트 설정 > 플레이어)을 엽니다.
-2. **"Windows 스토어"** 탭을 클릭 합니다.
-3. " **게시 설정"** 을 확장 하 고 " **기능"** 목록에서 **"SpatialPerception"** 기능을 확인 합니다.
+1. Unity 편집기에서 **"플레이어 설정"** 창 (편집 > Project 설정 > 플레이어)을 엽니다.
+2. **"Windows 저장소"** 탭을 클릭 합니다.
+3. " **설정 게시"** 를 확장 하 고 " **기능"** 목록에서 **"SpatialPerception"** 기능을 확인 합니다.
 
 >[!NOTE]
->Unity 프로젝트를 Visual Studio 솔루션으로 이미 내보낸 경우에는 새 폴더로 내보내거나 [Visual studio의 appxmanifest.xml에서이 기능](local-anchor-transfers-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)을 수동으로 설정 해야 합니다.
+>Unity 프로젝트를 Visual Studio 솔루션으로 이미 내보낸 경우에는 새 폴더로 내보내거나 [Visual Studio appxmanifest.xml에서이 기능](local-anchor-transfers-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)을 수동으로 설정 해야 합니다.
 
 ### <a name="anchor-transfer"></a>앵커 전송
 
 **네임 스페이스:** *UNITYENGINE. XR*<br>
 **유형**: *WorldAnchorTransferBatch*
 
-[WorldAnchor](../develop/unity/coordinate-systems-in-unity.md)를 전송 하려면 전송할 앵커를 설정 해야 합니다. 한 HoloLens 사용자는 자신의 환경을 검색 하 고 수동으로 또는 프로그래밍 방식으로 공간에서 공유 환경의 앵커로 지정 된 지점을 선택 합니다. 그런 다음이 지점을 나타내는 데이터를 직렬화 하 고 환경에서 공유 되는 다른 장치로 전송할 수 있습니다. 그런 다음 각 장치는 앵커 데이터를 역직렬화 하 고 공간에서 해당 지점을 찾으려고 시도 합니다. Anchor 전송이 작동 하려면 각 장치에서 앵커가 나타내는 점을 식별할 수 있도록 충분 한 환경에서 검색 해야 합니다.
+[WorldAnchor](../develop/unity/coordinate-systems-in-unity.md)를 전송 하려면 전송할 앵커를 설정 해야 합니다. 한 HoloLens 사용자는 자신의 환경을 검색 하 고 수동으로 또는 프로그래밍 방식으로 영역에서 공유 환경의 앵커로 지정할 지점을 선택 합니다. 그런 다음이 지점을 나타내는 데이터를 직렬화 하 고 환경에서 공유 되는 다른 장치로 전송할 수 있습니다. 그런 다음 각 장치는 앵커 데이터를 역직렬화 하 고 공간에서 해당 지점을 찾으려고 시도 합니다. Anchor 전송이 작동 하려면 각 장치에서 앵커가 나타내는 점을 식별할 수 있도록 충분 한 환경에서 검색 해야 합니다.
 
 ### <a name="setup"></a>설치 프로그램
 
@@ -61,7 +61,7 @@ void Start ()
 }
 ```
 
-### <a name="exporting"></a>내보내려면
+### <a name="exporting"></a>내보내기
 
 이를 내보내려면 수신 앱에 적합 하도록 *WorldAnchor* 및이를 호출 하는 것을 알고 있어야 합니다. 공유 환경의 한 클라이언트는 다음 단계를 수행 하 여 공유 앵커를 내보냅니다.
 1. *WorldAnchorTransferBatch* 만들기

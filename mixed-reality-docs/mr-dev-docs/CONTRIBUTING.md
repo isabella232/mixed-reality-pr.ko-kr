@@ -1,22 +1,22 @@
 ---
 title: 영향을 주는 지침
-description: GitHub-flavored Markdown를 사용 하 여 docs.microsoft.com 플랫폼에서 혼합 현실 개발자 문서에 기여 하는 방법에 대해 알아봅니다.
+description: GitHub-flavored Markdown를 사용 하 여 docs.microsoft.com 플랫폼에서 혼합 현실 개발자 문서에 참여 하는 방법에 대해 알아봅니다.
 author: mattwojo
 ms.author: mattwoj
 ms.date: 01/11/2021
 ms.topic: article
-ms.openlocfilehash: f60179c35f6103c4771ea2777e05829bfb7a8ce4
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 1d184f917db34a1b809547f2e89e482c223f2f6fac86017c524c5325bdf80c28
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583040"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216363"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>혼합 현실 개발자 설명서에 기여
 
 [혼합 현실 개발자 설명서에 대 한 공용 리포지토리](https://github.com/MicrosoftDocs/mixed-reality/tree/master/mixed-reality-docs)를 시작 합니다. 이 리포지토리에서 만들거나 편집 하는 모든 문서는 **공용에 표시 됩니다.** 
 
-혼합 현실 문서는 이제 docs.microsoft.com 플랫폼에 있습니다 .이 플랫폼에서는 Markdig Markdown와 함께 markdig 기능을 사용 합니다. 이 리포지토리에서 편집 하는 콘텐츠는에 표시 되는 스타일 있는 페이지로 서식 지정 https://docs.microsoft.com/windows/mixed-reality 됩니다. 
+혼합 현실 문서는 이제 markdig flavored Markdown를 사용 GitHub 하는 플랫폼에 있습니다. 이 리포지토리에서 편집 하는 콘텐츠는에 표시 되는 스타일 있는 페이지로 서식 지정 https://docs.microsoft.com/windows/mixed-reality 됩니다. 
 
 이 페이지에서는 Markdown 기본 사항에 기여 하 고 연결 하는 데 필요한 기본 단계 및 지침을 설명 합니다. 기여해 주셔서 감사합니다.
 
@@ -30,10 +30,10 @@ ms.locfileid: "98583040"
 
 ## <a name="before-you-start"></a>시작하기 전에
 
-아직 없는 경우 [GitHub 계정을 만들어야](https://github.com/join)합니다.
+계정이 아직 없는 경우 [GitHub 계정을 만들어야](https://github.com/join)합니다.
 
 >[!NOTE]
->Microsoft 직원 인 경우 microsoft [오픈 소스 포털](https://repos.opensource.microsoft.com/)의 microsoft 별칭에 GitHub 계정을 연결 하세요. **"Microsoft"** 및 **"MicrosoftDocs"** 조직에 참여 합니다.
+>microsoft 직원 인 경우 [microsoft 오픈 소스 포털](https://repos.opensource.microsoft.com/)의 microsoft 별칭에 GitHub 계정을 연결 하세요. **"Microsoft"** 및 **"MicrosoftDocs"** 조직에 참여 합니다.
 
 GitHub 계정을 설정할 때 다음과 같은 보안 예방 조치를 권장 합니다.
 - [Github 계정에 대 한 강력한 암호](https://github.com/settings/admin)를 만듭니다.
@@ -42,13 +42,13 @@ GitHub 계정을 설정할 때 다음과 같은 보안 예방 조치를 권장 �
 - [공개 프로필 설정을](https://github.com/settings/profile)업데이트 합니다.
    - 사용자의 이름을 설정 하 고 *전자 메일 주소를 표시 하지 않도록* *공용 전자 메일* 을 설정 하는 것이 좋습니다.
    - 사용자가 참여 하는 문서 페이지에 미리 보기가 표시 되기 때문에 프로필 사진을 업로드 하는 것이 좋습니다.
-- 명령줄을 사용할 계획인 경우 [Windows 용 Git 자격 증명 관리자](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)를 설정 하는 것이 좋습니다. 이렇게 하면 기여를 할 때마다 암호를 입력할 필요가 없습니다.
+- 명령줄을 사용 하려는 경우 [Windows에 대해 Git 자격 증명 관리자](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)를 설정 하는 것이 좋습니다. 이렇게 하면 기여를 할 때마다 암호를 입력할 필요가 없습니다.
 
-게시 시스템은 GitHub에 연결 되므로 이러한 단계가 중요 합니다. GitHub 별칭을 사용 하 여 각 아티클에 대 한 작성자 또는 참가자로 나열 됩니다.
+게시 시스템은 GitHub 연결 되어 있으므로 이러한 단계가 중요 합니다. GitHub 별칭을 사용 하 여 각 아티클에 대 한 작성자 또는 참가자로 나열 됩니다.
 
 ## <a name="editing-an-existing-article"></a>기존 문서 편집
 
-웹 브라우저에서 GitHub를 통해 *기존 문서* 를 업데이트 하려면 다음 워크플로를 사용 합니다.
+다음 워크플로를 사용 하 여 웹 브라우저에서 GitHub를 통해 *기존 문서* 를 업데이트 합니다.
 
 1. "Mixed reality-docs" 폴더에서 편집 하려는 문서로 이동 합니다.
 2. 오른쪽 위에 있는 편집 단추 (연필 아이콘)를 선택 하면 삭제 가능한 분기가 ' 마스터 ' 분기 밖으로 자동으로 분기 합니다.
@@ -84,13 +84,13 @@ GitHub 계정을 설정할 때 다음과 같은 보안 예방 조치를 권장 �
 
 - 는 `source_path` 제거 하는 이전 아티클의 상대 저장소 경로입니다. 경로는로 시작 `mixed-reality-docs` 하 고로 끝나야 `.md` 합니다.
 - 는 `redirect_url` 이전 문서에서 새 아티클에 대 한 상대 공용 URL입니다. 이 URL은  `mixed-reality-docs` `.md` 리포지토리 경로가 아니라 공용 url을 참조 하므로이 url에 또는가 포함 되지 않아야 합니다. 를 사용 하 여 새 문서 내의 섹션에 연결할 `#section` 수 있습니다. 필요한 경우 여기서 다른 사이트에 대 한 절대 경로를 사용할 수도 있습니다.
-- `redirect_document_id` 이전 파일의 문서 ID를 유지할지 여부를 나타냅니다. 기본값은 `false`입니다. `true`리디렉션된 아티클의 특성 값을 유지 하려는 경우에 사용 합니다 `ms.documentid` . 문서 ID를 유지 하는 경우 페이지 보기 및 순위와 같은 데이터가 대상 문서에 전송 됩니다. 리디렉션이 주로 이름 바꾸기 인 경우에는이 작업을 수행 하 고, 동일한 콘텐츠 중 일부만 포함 하는 다른 문서에 대 한 포인터는 그렇지 않습니다.
+- `redirect_document_id` 이전 파일의 문서 ID를 유지할지 여부를 나타냅니다. 기본값은 `false`입니다. `true`리디렉션된 아티클의 특성 값을 유지 하려는 경우에 사용 합니다 `ms.documentid` . 문서 ID를 유지 하는 경우 페이지 보기 및 순위와 같은 데이터가 대상 문서에 전송 됩니다. 리디렉션이 동일한 콘텐츠의 일부만 포함하는 다른 문서에 대한 포인터가 아니라 주로 이름 바꾸기인 경우 이 작업을 수행하세요.
 
 리디렉션을 추가 하는 경우에도 이전 파일을 삭제 해야 합니다.
 
 ## <a name="creating-a-new-article"></a>새 문서 만들기
 
-웹 브라우저에서 GitHub를 통해 설명서 리포지토리에서 *새 문서를 만들려면* 다음 워크플로를 사용 합니다.
+다음 워크플로를 사용 하 여 웹 브라우저에서 GitHub를 통해 설명서 리포지토리에서 *새 문서를 만들* 수 있습니다.
 
 1. 오른쪽 위에 있는 **포크** 단추를 사용 하 여 MicrosoftDocs/mixed reality ' master ' 분기에서 포크를 만듭니다.
 
@@ -155,7 +155,7 @@ GitHub 계정을 설정할 때 다음과 같은 보안 예방 조치를 권장 �
 
 ## <a name="previewing-your-work"></a>작업 미리 보기
 
-웹 브라우저를 통해 GitHub에서 편집 하는 동안 페이지 맨 위에 있는 **미리 보기** 탭을 선택 하 여 커밋 전 작업을 미리 볼 수 있습니다. 
+웹 브라우저를 통해 GitHub에서 편집 하는 동안 페이지 맨 위에 있는 **미리 보기** 탭을 선택 하 여 커밋하기 전에 작업을 미리 볼 수 있습니다. 
 
 >[!NOTE]
 >review.docs.microsoft.com의 변경 내용 미리 보기는 Microsoft 직원 에게만 제공 됩니다.
@@ -174,7 +174,7 @@ Microsoft 직원: 기여를 ' 마스터 ' 분기에 병합 한 후에는에서 �
 
 ## <a name="using-visual-studio-code"></a>Visual Studio Code 사용
 
-[위에](#editing-in-the-browser-vs-editing-with-a-desktop-client)나열 된 이유 때문에 웹 브라우저가 아닌 데스크톱 클라이언트를 사용 하 여 문서를 편집 하는 것이 좋습니다. [Visual Studio Code](https://code.visualstudio.com/)를 사용 하는 것이 좋습니다.
+[위에](#editing-in-the-browser-vs-editing-with-a-desktop-client)나열 된 이유 때문에 웹 브라우저가 아닌 데스크톱 클라이언트를 사용 하 여 문서를 편집 하는 것이 좋습니다. [Visual Studio Code](https://code.visualstudio.com/)를 사용하는 것이 좋습니다.
 
 ### <a name="setup"></a>설치 프로그램
 
@@ -214,7 +214,7 @@ Visual Studio Code를 사용 하 여 설명서를 변경 하려면 다음 워크
    3. **소스 제어** 의 모든 변경 내용 **커밋** (메시지가 표시 되 면 쓰기 커밋 메시지).
       
       ![소스 제어에서 "모두 커밋"을 선택 합니다.](images/source_control_commit.png)
-   4. **동기화** 단추를 선택 하 여 변경 내용을 원본으로 다시 동기화 합니다 (GitHub의 포크).
+   4. **동기화** 단추를 선택 하 여 변경 내용을 원본으로 다시 동기화 합니다 (GitHub 포크).
       
       ![동기화 단추를 클릭 합니다.](images/sync_back.png)
 3. 웹 브라우저에서 끌어오기 요청을 만들어 분기의 새 변경 내용을 MicrosoftDocs/mixed-현실 ' master '로 다시 동기화 합니다. 화살표가 올바른 방법을 가리키고 있는지 확인 합니다.
@@ -225,7 +225,7 @@ Visual Studio Code를 사용 하 여 설명서를 변경 하려면 다음 워크
 
 문서를 편집할 때 다음과 같은 Visual Studio Code 확장을 유용 하 게 사용할 수 있습니다.
 
-- [Visual Studio Code 용 Docs Markdown 확장](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) - **Alt + M** 을 사용 하 여 다음과 같은 docs 제작 옵션 메뉴를 표시 합니다.
+- [Visual Studio Code 용 docs Markdown 확장](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) - **Alt + M** 을 사용 하 여 다음과 같은 docs 제작 옵션 메뉴를 표시 합니다.
    - 업로드 한 이미지를 검색 하 고 참조 합니다.
    - 목록과 같이 목록, 테이블 및 문서 특정 호출 등의 서식을 추가 `>[!NOTE]` 합니다.
    - 내부 링크와 책갈피를 검색 하 고 참조 합니다 (페이지 내의 특정 섹션에 대 한 링크).

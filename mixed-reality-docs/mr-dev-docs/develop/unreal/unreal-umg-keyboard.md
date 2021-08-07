@@ -5,13 +5,13 @@ author: hferrone
 ms.author: suwu
 ms.date: 11/25/2020
 ms.topic: article
-keywords: Windows Mixed Reality, holograms, HoloLens 2, 눈 추적, 응시 입력, 헤드 탑재 디스플레이, Unreal engine, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, 위젯, UI, UMG, Unreal 움직임 그래픽, Unreal Engine, UE, UE4
-ms.openlocfilehash: 59ad108a0e27298256f4f0d1661381a4f1748777
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+keywords: Windows Mixed Reality, holograms, HoloLens 2, 눈 추적, 응시 입력, 헤드 탑재 된 디스플레이, unreal engine, mixed reality 헤드셋, Windows mixed reality 헤드셋, 가상 현실 헤드셋, 위젯, UI, umg, unreal 움직임 그래픽, unreal engine, UE, UE4
+ms.openlocfilehash: 8cb1c804757332ce7b78f0cb92cf895b873c1835208962b20d5bbbfae4684785
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609764"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212844"
 ---
 # <a name="umg-and-keyboard-in-unreal"></a>Unreal의 UMG 및 키보드
 
@@ -70,14 +70,14 @@ UMG 위젯은 일반적으로 마우스에서 입력을 받습니다.  HoloLens 
 
 ![Event tick의 청사진](images/unreal-umg-img-10.png)
 
-그런 다음, HoloLens 입력에 반응 하는 위젯 상호 작용 구성 요소에 가상 마우스 포인터 이벤트를 추가 합니다.  이 경우 손을 grasped 때 왼쪽 마우스 누르기 이벤트를 보내고 grasped 하지 않을 경우 왼쪽 마우스 릴리스 이벤트를 보냅니다.
+그런 다음 입력을 HoloLens 하는 위젯 상호 작용 구성 요소에 가상 마우스 포인터 이벤트를 추가 합니다.  이 경우 손을 grasped 때 왼쪽 마우스 누르기 이벤트를 보내고 grasped 하지 않을 경우 왼쪽 마우스 릴리스 이벤트를 보냅니다.
 
 ![가상 마우스 포인터 이벤트가 추가 된 청사진](images/unreal-umg-img-13.png)
 
 이제 HoloLens 2에 앱을 배포 하는 경우 오른쪽에서 연장 된 손 모양으로 표시 됩니다. 편집 가능한 텍스트 상자와 공중 탭 중 하나를 사용 하는 경우 시스템 키보드는 앞에 표시 되며 텍스트를 입력할 수 있습니다. 
  
 > [!NOTE]
-> HoloLens 시스템 키보드에는 Unreal Engine 4.26 이상이 필요 합니다. 또한 앱이 장치에서 실행 되는 경우에만 Unreal 편집기에서 헤드셋으로 스트리밍되는 경우 키보드가 나타나지 않습니다.
+> HoloLens 시스템 키보드에는 unreal Engine 4.26 이상이 필요 합니다. 또한 앱이 장치에서 실행 되는 경우에만 Unreal 편집기에서 헤드셋으로 스트리밍되는 경우 키보드가 나타나지 않습니다.
 
 ## <a name="see-also"></a>참고 항목:
 * [Unreal의 UMG 설명서](https://docs.unrealengine.com/Engine/UMG/index.html)

@@ -1,58 +1,58 @@
 ---
-ms.openlocfilehash: 61fe8754192c1fbd0634fd9d1e1994327599321b
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 47dfba0fe2b64e3b7e03ae62af3de1e1e24bd70b8b1e7e6b2cb40995428dbda2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110748537"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212320"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-[MixedRealityPlayspace](/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) 클래스를 사용 하 여 Unity에서 MRTK를 사용 하 고 **대상 크기** 를 방 **또는 서** 로 설정 합니다. 
+Unity용 MRTK의 [MixedRealityPlayspace](/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) 클래스를 사용하고 **대상 눈금을** **Room** 또는 **Standing** 로 설정합니다.
 
 ![MRTK 설정 창](../../images/mrtk-target-scale.png)
 
-MRTK는 플레이 공간 및 카메라의 위치를 자동으로 처리 해야 하지만 두 번 확인 하는 것이 좋습니다.
+MRTK는 재생 영역 및 카메라의 위치를 자동으로 처리해야 하지만 다음을 다시 확인하는 것이 좋습니다.
 
-![MRTK playspace](../../images/mrtk-playspace.png)
+![MRTK 플레이스페이스](../../images/mrtk-playspace.png)
 
-1. **계층** 패널에서 **MixedRealityPlayspace** GameObject를 확장 하 고 **기본 카메라** 자식 개체를 찾습니다.
-2. **검사기** 패널에서 **변형** 구성 요소를 찾고 **위치** 를 **(X: 0, Y: 0, Z: 0)** 로 변경 합니다.
+1. **Hierarchy** 패널에서 **MixedRealityPlayspace** GameObject를 확장하고 **Main Camera** 자식 개체를 찾습니다.
+2. **검사기** 패널에서 **변환** 구성 요소를 찾아 **위치를** **(X: 0, Y: 0, Z: 0)으로** 변경합니다.
 
 # <a name="xr-sdk"></a>[XR SDK](#tab/xr)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-[Xrinputsubsystem](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.html)에서 추적 원본 모드를 설정 합니다. 하위 시스템을 가져온 후 [TrySetTrackingOriginMode](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.TrySetTrackingOriginMode.html)를 호출 합니다.
+[XRInputSubsystem](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.html)에서 추적 원본 모드를 설정합니다. 하위 시스템을 가져온 후 [TrySetTrackingOriginMode](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.TrySetTrackingOriginMode.html)를 호출합니다.
 
 ```cs
 xrInputSubsystem.TrySetTrackingOriginMode(TrackingOriginModeFlags.Floor);
 ```
 
-Unity의 [Xrrig](https://docs.unity3d.com/Manual/configuring-project-for-xr.html)를 사용 하 여 작업 합니다.
+Unity의 [XRig 를 작업합니다.](https://docs.unity3d.com/Manual/configuring-project-for-xr.html)
 
-![계층의 XR rig](../../images/xrsdk-xrrig.png)
+![계층 구조의 XR 조작](../../images/xrsdk-xrrig.png)
 
 # <a name="legacy-wsa"></a>[레거시 WSA](#tab/wsa)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-1. **Windows 스토어 플레이어 설정** 의 **기타 설정** 섹션으로 이동 합니다.
-2. **Windows Mixed Reality** 를 장치로 선택 합니다 .이는 이전 버전의 Unity에서 **windows Holographic** 으로 나열 될 수 있습니다.
-3. **지원 되는 가상 현실** 선택
+1. Windows **Store Player 설정** **기타** 설정 섹션으로 이동합니다.
+2. Windows Mixed Reality **디바이스로** 선택합니다. 이 디바이스는 이전 버전의 Unity에서 **Windows Holographic으로** 나열될 수 있습니다.
+3. **가상 현실 지원 선택**
 
-기본 카메라 개체는 자동으로 카메라로 태그를 지정 하므로 Unity는 모든 이동 및 이동을 이동 합니다.
+Main Camera 개체는 자동으로 카메라로 태그가 지정되므로 Unity는 모든 이동 및 변환을 수행합니다.
 
 >[!NOTE]
->이러한 설정은 앱의 각 장면에서 카메라에 적용 해야 합니다.
+>이러한 설정은 앱의 각 장면에서 카메라에 적용해야 합니다.
 >
->기본적으로 Unity에서 새 장면을 만들 때 카메라 구성 요소를 포함 하는 계층의 기본 카메라 GameObject가 포함 되지만, 아래에는 설정이 제대로 적용 되지 않습니다.
+>기본적으로 Unity에서 새 장면을 만들 때 카메라 구성 요소를 포함하지만 아래 설정이 제대로 적용되지 않은 주 카메라 GameObject가 계층 구조에 포함됩니다.
 
-**네임 스페이스:** *UNITYENGINE. XR*<br>
-**유형:** *xrdevice*
+**네임스페이스:** *UnityEngine.XR*<br>
+**유형:** *XRDevice*
 
-**대규모 또는** **공간 규모의 경험** 을 위해 바닥을 기준으로 콘텐츠를 넣어야 합니다. 사용자의 층을 사용 하는 이유는 사용자의 정의 된 최고 수준 원점 및 선택적 대화방 경계를 나타내는 **[공간 단계](../../../../design/coordinate-systems.md#spatial-coordinate-systems)** 를 처음 실행 하는 동안 설정 하는 것입니다.
+서 **있는 규모** 또는 **방 규모 환경의** 경우 바닥과 상대적인 콘텐츠를 배치해야 합니다. 첫 번째 실행 중에 설정된 사용자의 정의된 층 수준 원점 및 선택적 방 경계를 나타내는 **[공간 단계](../../../../design/coordinate-systems.md#spatial-coordinate-systems)** 를 사용하여 사용자의 층을 추론합니다.
 
-Unity가 최고 좌표계로 작동 하는지 확인 하기 위해 RoomScale 추적 공간 유형을 사용 하 여 Unity를 설정 하 고 테스트할 수 있습니다.
+Unity가 바닥 수준에서 해당 세계 좌표계와 함께 작동하도록 하려면 Unity가 RoomScale 추적 공간 형식을 사용하고 있는지 설정하고 테스트할 수 있습니다.
 
 ```cs
 if (XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale))
@@ -65,7 +65,7 @@ else
 }
 ```
 
-* SetTrackingSpaceType가 true를 반환 하는 경우 Unity는 세계 좌표계를 정상적으로 전환 하 여 [참조의 스테이지 프레임](../../../../design/coordinate-systems.md#spatial-coordinate-systems)을 추적 했습니다.
-* SetTrackingSpaceType가 false를 반환 하는 경우 Unity는 사용자의 환경에서 바닥을 설정 하지 않았기 때문에 참조의 스테이지 프레임으로 전환할 수 없습니다. False 반환 값은 일반적이 지 않지만 다른 방에 단계를 설정 하 고 사용자가 새 단계를 설정 하지 않은 상태에서 현재 대화방으로 장치를 이동 하는 경우 발생할 수 있습니다.
+* SetTrackingSpaceType이 true를 반환하는 경우 Unity는 세계 좌표계를 성공적으로 전환하여 [참조의 스테이지 프레임을](../../../../design/coordinate-systems.md#spatial-coordinate-systems)추적합니다.
+* SetTrackingSpaceType이 false를 반환하는 경우 Unity는 사용자가 환경에서 층을 설정하지 않았기 때문에 참조의 스테이지 프레임으로 전환할 수 없습니다. 잘못된 반환 값은 일반적이지 않지만, 스테이지가 다른 공간에 설정되고 사용자가 새 스테이지를 설정하지 않고 디바이스를 현재 공간으로 이동하는 경우 발생할 수 있습니다.
 
-앱이 RoomScale 추적 공간 유형을 성공적으로 설정 하면 y = 0 평면에 배치 된 콘텐츠가 바닥에 표시 됩니다. 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 구현
+앱이 RoomScale 추적 공간 유형을 성공적으로 설정하면 y=0 평면에 배치된 콘텐츠가 층으로 표시됩니다. 0, 0, 0의 원점은 사용자가 방 설치 중에 깔고 있는 층의 특정 위치이며, -Z는 설치하는 동안의 정방향 방향을 나타냅니다.

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6229b258233f7a80ef6530edd6eb94774a0e54cf
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: e4ada87db2d9e483758030bf1bbe56dbacd7664ae7e1921540c0c7abfe14a7c7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528761"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208892"
 ---
 # <a name="world-locking-tools-recommended"></a>[세계 잠금 도구 (권장)](#tab/wlt)
 
@@ -17,9 +17,9 @@ ms.locfileid: "107528761"
 
 ### <a name="automated-setup"></a>자동 설치
 
-프로젝트를 사용할 준비가 되 면 **혼합 현실 도구 키트 > 유틸리티 > 세계 잠금 도구** 에서 장면 구성 유틸리티를 실행 합니다.
+프로젝트를 사용할 준비가 되 면 혼합 현실에서 장면 구성 유틸리티 **Toolkit > 유틸리티 > 세계 잠금 도구** 를 실행 합니다.
 
-![혼합 현실 도구 키트 메뉴가 선택 된 Unity 편집기](../../images/world-locking-configuration-img-01.jpeg)
+![혼합 현실 Toolkit 메뉴가 선택 된 Unity 편집기](../../images/world-locking-configuration-img-01.jpeg)
 
 > [!IMPORTANT]
 > 장면 구성 유틸리티는 언제 든 지 다시 실행할 수 있습니다. 예를 들어 AR 대상이 레거시에서 XR SDK로 변경 된 경우 다시 실행 해야 합니다. 장면이 이미 올바르게 구성 된 경우 유틸리티를 실행 해도 아무런 효과가 없습니다.
@@ -39,7 +39,7 @@ Mixed Reality OpenXR 플러그 인은 Unity의 ARFoundation **ARAnchorManager** 
 **네임 스페이스:** *unityengine. XR. WSA*<br>
 **유형:** *WorldAnchor*
 
-사용자가 5 미터를 wander 수 있도록 하는 HoloLens의 진정한 **세계 규모 환경** 에서는 공간 규모 환경에 사용 되는 기술이 아닌 새로운 기술이 필요 합니다. 사용할 수 있는 한 가지 핵심 기술은 holograms의 클러스터를 물리적 환경에서 정확 [하 게 배치 하 여](../../../../design/coordinate-systems.md#spatial-anchors) 사용자가 로밍 하는 거리에 관계 없이 [해당 holograms를 다시 찾는](../../../../design/coordinate-systems.md#spatial-anchor-persistence)것입니다.
+사용자가 5 미터를 wander 수 있도록 하는 진정한 **세계 규모** 의 HoloLens 경험을 위해, 공간 규모 환경에 사용 되는 기술이 아닌 새로운 기술이 필요 합니다. 사용할 수 있는 한 가지 핵심 기술은 holograms의 클러스터를 물리적 환경에서 정확 [하 게 배치 하 여](../../../../design/coordinate-systems.md#spatial-anchors) 사용자가 로밍 하는 거리에 관계 없이 [해당 holograms를 다시 찾는](../../../../design/coordinate-systems.md#spatial-anchor-persistence)것입니다.
 
 Unity에서는 GameObject에 **WorldAnchor** Unity 구성 요소를 추가 하 여 공간 앵커를 만듭니다.
 

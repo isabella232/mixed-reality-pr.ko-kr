@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 제스처,
-ms.openlocfilehash: 7bbc97ab5e23a69356d523c463aa37c013d70337
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: db6be5845c11efd5bfb199db9c53c867ea315f65bff0a799cd6bf63b9c50a3d1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176880"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209170"
 ---
 # <a name="gestures"></a>제스처
 
@@ -52,16 +52,16 @@ ms.locfileid: "113176880"
 - "Hold":
     1. 길게 탭합니다.
         - _조작_ 시작
-    1. [HoldStartDuration 을 탭합니다.](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile.HoldStartDuration)
+    1. [HoldStartDuration을 탭합니다.](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile.HoldStartDuration)
         - _보류_ 시작
     1. 릴리스 탭:
-        - _완료 보류_
+        - 완료 _보류_
         - 완전한 _조작_
 
 - "이동":
     1. 길게 탭합니다.
         - _조작_ 시작
-    1. [HoldStartDuration 을 탭합니다.](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile.HoldStartDuration)
+    1. [HoldStartDuration을 탭합니다.](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile.HoldStartDuration)
         - _보류_ 시작
     1. [NavigationStartThreshold를](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile.NavigationStartThreshold)넘어 손을 이동합니다.
         - _보류_ 취소

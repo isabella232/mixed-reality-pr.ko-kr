@@ -1,104 +1,104 @@
 ---
 title: MRTK 패키지
-description: 혼합 현실 하드웨어 및 플랫폼을 지 원하는 MRTK의 패키지입니다.
+description: 혼합 현실 하드웨어 및 플랫폼을 지원하는 MRTK의 패키지입니다.
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk, Unity 패키지 관리자
-ms.openlocfilehash: 3c2a11dd4036a78ccb96aa2c640ef8324181c1e0
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, Unity 패키지 관리자
+ms.openlocfilehash: 13f18c0a43d8b0cf6cc8eb66949b506c51ca9bbaa733e74cd38de110f70d8ee1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176499"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212570"
 ---
 # <a name="mrtk-packages"></a>MRTK 패키지
 
-mixed reality Toolkit (mrtk)는 혼합 현실 하드웨어 및 플랫폼에 대 한 지원을 제공 하 여 플랫폼 간 혼합 현실 응용 프로그램 개발을 가능 하 게 하는 패키지 모음입니다.
+MRTK(Mixed Reality Toolkit)는 Mixed Reality 하드웨어 및 플랫폼에 대한 지원을 제공하여 플랫폼 간 Mixed Reality 애플리케이션 개발을 가능하게 하는 패키지의 컬렉션입니다.
 
-mrtk는 [asset](#asset-packages) (. unitypackage) 패키지와 [Unity 패키지 관리자](#unity-package-manager)를 통해 사용할 수 있습니다.
+MRTK는 자산(.unitypackage) 패키지 및 [Unity 패키지 관리자](#unity-package-manager)통해 사용할 수 있습니다. [](#asset-packages)
 
 ## <a name="asset-packages"></a>자산 패키지
 
-MRTK 자산 (. unitypackage)은 [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases)에서 다운로드할 수 있습니다.
+MRTK 자산(.unitypackage)은 [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases)다운로드할 수 있습니다.
 
-자산 패키지를 사용 하는 몇 가지 이점은 다음과 같습니다.
+자산 패키지를 사용할 경우의 이점 중 일부는 다음과 같습니다.
 
 - Unity 2018.4 이상에서 사용 가능
-- MRTK를 쉽게 변경할 수 있습니다.
-  - MRTK가 자산 폴더에 있습니다.
+- MRTK를 쉽게 변경
+  - MRTK는 Assets 폴더에 있습니다.
 
 다음은 몇 가지 문제입니다.
 
-- MRTK는 프로젝트의 자산 폴더의 일부 이며,
+- MRTK는 프로젝트의 Assets 폴더에 속하여
   - 대규모 프로젝트
-  - 컴파일 시간 느림
-- 종속성 관리 안 함
-  - 고객은 패키지 종속성을 수동으로 해결 해야 합니다.
+  - 느린 컴파일 시간
+- 종속성 관리 없음
+  - 고객은 패키지 의존도를 수동으로 해결해야 합니다.
 - 수동 업데이트 프로세스
   - 여러 단계
-  - 대량 (3000 개 이상 파일) 소스 제어 업데이트
-  - MRTK에 대 한 변경 내용이 손실 될 위험
-- 예제 패키지를 가져오는 것은 일반적으로 모든 예제를 포함 합니다.
+  - 대용량(3000개 이상의 파일) 소스 제어 업데이트
+  - MRTK 변경 내용 손실 위험
+- 예제 패키지를 가져오는 것은 일반적으로 모든 예제를 포함하는 것을 의미합니다.
 
 사용 가능한 패키지는 다음과 같습니다.
 
-- [Mfc](#foundation-package)
+- [Foundation](#foundation-package)
 - [확장](#extensions-package)
 - [도구](#tools-package)
 - [테스트 유틸리티](#test-utilities-package)
 - [예](#examples-package)
 
-이러한 패키지는 GitHub의 [mrtk_release](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/mrtk_release) 분기에 있는 소스 코드를 통해 Microsoft에서 릴리스 및 지원 됩니다.
+이러한 패키지는 Microsoft가 GitHub [mrtk_release](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/mrtk_release) 분기의 소스 코드에서 릴리스 및 지원합니다.
 
 ### <a name="foundation-package"></a>Foundation 패키지
 
-혼합 현실 Toolkit Foundation은 응용 프로그램에서 혼합 현실 플랫폼 간에 일반적인 기능을 활용할 수 있도록 하는 코드 집합입니다.
+Mixed Reality Toolkit Foundation은 애플리케이션이 Mixed Reality Platforms에서 공통 기능을 활용할 수 있도록 하는 코드 집합입니다.
 
 <img src="../features/images/input/MRTK_Package_Foundation.png" width="350px" alt="Pakage foundation" style="display:block;">  
 <sup>MRTK Foundation 패키지</sup>
 
-MRTK Foundation 패키지에는 다음이 포함 되어 있습니다.
+MRTK Foundation 패키지에는 다음이 포함됩니다.
 
 | 폴더 | 구성 요소 | Description |
 | --- | --- | --- |
 | MRTK/Core | | 인터페이스 및 형식 정의, 기본 클래스, 표준 셰이더. |
-| MRTK/코어/공급자 | | 플랫폼 독립적 데이터 공급자 |
-| | 훈련 | 직접 추적을 위한 기본 클래스 지원 및 서비스입니다. |
-| | [InputAnimation](../features/input-simulation/input-animation-recording.md) | 헤드 이동 및 핸드 추적 데이터 기록을 지원 합니다. |
-| | [InputSimulation](../features/input-simulation/input-simulation-service.md) | 수동 및 눈 입력의 편집기 내 시뮬레이션 지원. |
-| | [ObjectMeshObserver](../features/spatial-awareness/spatial-object-mesh-observer.md) | 3D 모델을 데이터로 사용 하는 공간 인식 관찰자 |
-| | UnityInput | Unity의 입력 API를 통해 구현 되는 일반적인 입력 장치 (조이스틱, 마우스 등). |
+| MRTK/Core/Providers | | 플랫폼에 구애받지 않은 데이터 공급자 |
+| | 손을 | 손 추적을 위한 기본 클래스 지원 및 서비스입니다. |
+| | [InputAnimation](../features/input-simulation/input-animation-recording.md) | 머리 이동 및 손 추적 데이터 기록을 지원합니다. |
+| | [InputSimulation](../features/input-simulation/input-simulation-service.md) | 손 및 눈 입력의 편집기 내 시뮬레이션을 지원합니다. |
+| | [ObjectMeshObserver](../features/spatial-awareness/spatial-object-mesh-observer.md) | 3D 모델을 데이터로 사용하는 공간 인식 관찰자입니다. |
+| | UnityInput | Unity의 입력 API를 통해 구현된 일반적인 입력 디바이스(원통형, 마우스 등)입니다. |
 | MRTK/공급자 | | 플랫폼별 데이터 공급자 |
-| | LeapMotion | UltraLeap Leap 동작 컨트롤러에 대 한 지원. |
-| | OpenVR | OpenVR 장치 지원. |
-| | Oculus | Quest와 같은 Oculus 장치 지원. |
-| | [UnityAR](../features/camera-system/unity-ar-camera-settings.md) | 시험용 모바일 AR 장치에서 MRTK를 사용 하도록 설정 하는 카메라 설정 공급자입니다. |
-| | WindowsMixedReality | Microsoft HoloLens 및 모던 헤드셋을 비롯 한 Windows Mixed Reality 장치 지원. |
-| | Windows | Microsoft Windows 특정 api (예: 음성 및 받아쓰기)를 지원 합니다. |
-| | XR SDK | 시험용 Unity 2019.3 이상에서 [unity의 NEW XR framework](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/) 를 지원 합니다. |
+| | LeapMotion | UltraLeap Leap Motion 컨트롤러에 대한 지원. |
+| | OpenVR | OpenVR 디바이스에 대한 지원. |
+| | Oculus | Quest와 같은 Oculus 디바이스에 대한 지원. |
+| | [UnityAR](../features/camera-system/unity-ar-camera-settings.md) | (실험적) 모바일 AR 디바이스에서 MRTK를 사용할 수 있도록 하는 카메라 설정 공급자입니다. |
+| | WindowsMixedReality | Microsoft HoloLens 및 몰입형 헤드셋을 포함하여 Windows Mixed Reality 디바이스에 대한 지원 |
+| | Windows | Microsoft Windows 특정 API(예: 음성 및 받아쓰기)에 대한 지원 |
+| | XR SDK | (실험적) Unity 2019.3 이상에서 [Unity의 새 XR 프레임워크를](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/) 지원합니다. |
 | MRTK/SDK | | |
-| | 실험적 | 셰이더, 사용자 인터페이스 컨트롤 및 개별 시스템 관리자를 비롯 한 실험적 기능 |
-| | 기능 | 기본 패키지를 기반으로 하는 기능입니다. |
-| | 프로필 | Microsoft Mixed Reality의 기본 프로필 Toolkit 시스템 및 서비스입니다. |
-| | StandardAssets | 일반적인 자산 모델, 질감, 재질 등 |
-| MRTK/SceneSystemResources | | 장면 시스템에서 사용 하는 자산 및 리소스 |
+| | 실험적 | 셰이더, 사용자 인터페이스 컨트롤 및 개별 시스템 관리자를 비롯한 실험적 기능 |
+| | 기능 | Foundation 패키지를 기반으로 하는 기능입니다. |
+| | 프로필 | Microsoft Mixed Reality Toolkit 시스템 및 서비스에 대한 기본 프로필입니다. |
+| | StandardAssets | 일반 자산; 모델, 질감, 재질 등 |
+| MRTK/SceneSystemResources | | 장면 시스템에서 사용하는 자산 및 리소스 |
 | MRTK/서비스 | | |
-| | [BoundarySystem](../features/boundary/boundary-system-getting-started.md) | VR 경계 지원을 구현 하는 시스템입니다. |
-| | [CameraSystem](../features/camera-system/camera-system-overview.md) | 카메라 구성 및 관리를 구현 하는 시스템입니다. |
-| | [DiagnosticsSystem](../features/diagnostics/diagnostics-system-getting-started.md) | 응용 프로그램 진단에서 시스템을 구현 합니다 (예: 시각적 프로파일러). |
-| | [InputSystem](../features/input/overview.md) | 사용자 입력에 대 한 액세스 및 처리 지원을 제공 하는 시스템입니다. |
-| | [SceneSystem](../features/scene-system/scene-system-getting-started.md) | 다중 장면 응용 프로그램 지원을 제공 하는 시스템입니다. |
-| | [SpatialAwarenessSystem](../features/spatial-awareness/spatial-awareness-getting-started.md) | 사용자 환경을 인식 하기 위한 지원을 제공 하는 시스템입니다. |
-| | [TeleportSystem](../features/teleport-system/teleport-system.md) | Teleporting에 대 한 지원을 제공 하는 시스템 (점프의 경험에 대 한 이동). |
-| MRTK/StandardAssets | | MRTK 표준 셰이더, 기본 자료 및 혼합 현실 환경에 대 한 기타 표준 자산 |
+| | [BoundarySystem](../features/boundary/boundary-system-getting-started.md) | VR 경계 지원을 구현하는 시스템입니다. |
+| | [CameraSystem](../features/camera-system/camera-system-overview.md) | 카메라 구성 및 관리를 구현하는 시스템입니다. |
+| | [DiagnosticsSystem](../features/diagnostics/diagnostics-system-getting-started.md) | 애플리케이션 진단에서 구현하는 시스템(예: 시각적 프로파일러) |
+| | [InputSystem](../features/input/overview.md) | 사용자 입력 액세스 및 처리에 대한 지원을 제공하는 시스템입니다. |
+| | [SceneSystem](../features/scene-system/scene-system-getting-started.md) | 다중 장면 애플리케이션 지원을 제공하는 시스템입니다. |
+| | [SpatialAwarenessSystem](../features/spatial-awareness/spatial-awareness-getting-started.md) | 사용자 환경에 대한 인식을 지원하는 시스템입니다. |
+| | [TeleportSystem](../features/teleport-system/teleport-system.md) | 원격 보고(점프 환경 이동)에 대한 지원을 제공하는 시스템입니다. |
+| MRTK/StandardAssets | | 혼합 현실 환경을 위한 MRTK 표준 셰이더, 기본 재질 및 기타 표준 자산 |
 
 ### <a name="extensions-package"></a>확장 패키지
 
-선택적 MixedRealityToolkit 패키지에는 Microsoft Mixed Reality Toolkit의 기능을 확장 하는 추가 서비스가 포함 되어 있습니다.
+선택적 Microsoft.MixedRealityToolkit.Unity.Extensions 패키지에는 Microsoft Mixed Reality Toolkit 기능을 확장하는 추가 서비스가 포함되어 있습니다.
 
 > [!NOTE]
-> 확장 패키지에는 MixedRealityToolkit가 필요 합니다.
+> 확장 패키지에는 Microsoft.MixedRealityToolkit.Unity.Foundation이 필요합니다.
 
 | 폴더 | 구성 요소 | Description |
 | --- | --- | --- |
@@ -227,7 +227,7 @@ Foundation 패키지 ( `com.microsoft.mixedreality.toolkit.foundation` )는 혼�
 - MRTK 표준 셰이더를 사용 하는 기본 자료
 - 오디오 파일
 - 글꼴
-- 질감
+- 텍스처
 - 아이콘
 
 > [!Note]
@@ -282,31 +282,31 @@ Foundation 패키지 ( `com.microsoft.mixedreality.toolkit.foundation` )는 혼�
 | 폴더 | 구성 요소 | Description |
 | --- | --- | --- |
 | MRTK/테스트 | |
-| | TestUtilities | 손 시뮬레이션 유틸리티를 포함하여 재생 모드 테스트 만들기를 간소화하는 방법입니다. |
+| | TestUtilities | 핸드 시뮬레이션 유틸리티를 포함 하 여 재생 모드 테스트 만들기를 간소화 하는 방법입니다. |
 
 종속성:
 
-- Foundation( `com.microsoft.mixedreality.toolkit.foundation` )
+- Foundation ( `com.microsoft.mixedreality.toolkit.foundation` )
 
 ### <a name="examples-package"></a>예제 패키지
 
-예제 패키지( `com.microsoft.mixedreality.toolkit.examples` )는 개발자가 관심 있는 예제만 가져올 수 있도록 구조화되어 있습니다.
+예제 패키지 ( `com.microsoft.mixedreality.toolkit.examples` )는 개발자가 관심 있는 예제만 가져올 수 있도록 구성 되어 있습니다.
 
-예제 프로젝트가 포함된 패키지를 사용하는 프로세스에 대한 자세한 내용은 [Mixed Reality Toolkit 및 Unity 패키지 관리자](../configuration/usingupm.md#using-mixed-reality-toolkit-examples) 문서에서 찾을 수 있습니다.
+예제 프로젝트를 포함 하는 패키지를 사용 하는 프로세스에 대 한 자세한 내용은 [Mixed Reality Toolkit 및 Unity 패키지 관리자](../configuration/usingupm.md#using-mixed-reality-toolkit-examples) 문서에서 찾을 수 있습니다.
 
 | 폴더 | 구성 요소 | Description |
 | --- | --- | --- |
 | MRTK/예제 | | |
-| | 샘플~ | 샘플 장면 및 자산이 포함된 숨겨진(Unity 편집기) 폴더입니다. |
-| | StandardAssets | 여러 데모 장면에서 공유하는 공통 자산입니다. |
+| | 샘플 ~ | 샘플 장면 및 자산을 포함 하는 숨겨진 (Unity 편집기) 폴더입니다. |
+| | StandardAssets | 여러 데모 장면에서 공유 하는 일반적인 자산입니다. |
 
 종속성:
 
-- Foundation( `com.microsoft.mixedreality.toolkit.foundation` )
+- Foundation ( `com.microsoft.mixedreality.toolkit.foundation` )
 - 확장 기능(`com.microsoft.mixedreality.toolkit.extensions`)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [아키텍처 개요](../architecture/overview.md)
 - [시스템, 확장 서비스 및 데이터 공급자](../architecture/systems-extensions-providers.md)
-- [Mixed Reality Toolkit 및 Unity 패키지 관리자](../configuration/usingupm.md)
+- [혼합 현실 Toolkit 및 Unity 패키지 관리자](../configuration/usingupm.md)

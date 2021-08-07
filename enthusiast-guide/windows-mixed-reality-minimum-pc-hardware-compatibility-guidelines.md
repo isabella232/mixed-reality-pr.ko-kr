@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Ultra, 호환 가능, 호환성, 시스템 요구 사항, PC
 appliesto:
 - Windows 10
-ms.openlocfilehash: b7c2b4b84440e7cdd22c2c0cd7d5f9830d55625f
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: ed9113c5aa54d74678fcd6f888fa96007533d0d27e921f91aa6feeda459d11b7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757038"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187859"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>최소 PC 하드웨어 호환성 지침 Windows Mixed Reality
 
@@ -161,7 +161,7 @@ Windows 10 다양한 PC 하드웨어 세트에서 다양한 헤드셋을 Windows
 
 ## <a name="windows-mixed-reality-and-surface"></a>Windows Mixed Reality 및 Surface
 
-Surface 디바이스에서 최상의 Windows Mixed Reality 환경을 위해 NVIDIA GeForce GTX 1060GB 및 16GB RAM 이상으로 구성된 최신 SurfaceBook(15")을 권장합니다.  이 구성은 모든 Windows Mixed Reality 기능을 지원하며 Windows Mixed Reality 대해 테스트되었습니다.  최신 Surface Book(13.5"), Surface Studio, Surface Laptop 및 Surface Pro(2017)는 Intel Core i5 CPU(이상) 및 8GB 이상의 RAM으로 구성된 경우 모든 Windows Mixed Reality 기능을 지원합니다.
+Surface 디바이스에서 최상의 Windows Mixed Reality 환경을 위해 NVIDIA GeForce GTX 1060GB 및 16GB RAM 이상으로 구성된 최신 SurfaceBook(15")을 권장합니다.  이 구성은 모든 Windows Mixed Reality 기능을 지원하며 Windows Mixed Reality 대해 테스트되었습니다.  최신 Surface Book(13.5"), Surface Studio, Surface Laptop 및 Surface Pro(2017)는 모두 Intel Core i5 CPU(이상) 및 8GB 이상의 RAM으로 구성된 경우 일부 Windows Mixed Reality 기능을 지원합니다.
 
 **요구 사항:**
 

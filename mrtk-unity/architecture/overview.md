@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk 아키텍처,
-ms.openlocfilehash: 431e091cb6dc0efa0f941b95f58811d57166c82f
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: 7113ee68a3d8bae016236996725a879c95e31f410cb273184ddcc255ae7a0685
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281919"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115186606"
 ---
 # <a name="architecture-overview"></a>아키텍처 개요
 

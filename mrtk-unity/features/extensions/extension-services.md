@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: f8f7b8dbac0355c226e4bbfae39246e5c1c58f69
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 0f9f30bb7d2d44cef828b79bc916d933a6355dbb1068b09e73317d1c977ef45a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176269"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115186999"
 ---
 # <a name="extension-services"></a>확장 서비스
 
@@ -23,7 +23,7 @@ ms.locfileid: "113176269"
 
 ![확장 서비스 만들기 마법사](../images/extension-wizard/ExtensionServiceCreationWizard.png)
 
-마법사는 서비스 구성 요소 생성을 자동화하고 적절한 인터페이스 상속을 보장합니다.
+마법사는 서비스 구성 요소 만들기를 자동화하고 적절한 인터페이스 상속을 보장합니다.
 
 ![확장 서비스 만들기 마법사에서 만든 구성 요소](../images/extension-wizard/ExtensionServiceComponents.png)
 
@@ -34,7 +34,7 @@ ms.locfileid: "113176269"
 
 ## <a name="registering-an-extension-service"></a>확장 서비스 등록
 
-애플리케이션에서 액세스할 수 있도록 하려면 새 확장 서비스를 Mixed Reality Toolkit 등록해야 합니다.
+애플리케이션에서 액세스할 수 있도록 새 확장 서비스를 Mixed Reality Toolkit 등록해야 합니다.
 
 확장 서비스 만들기 마법사를 사용하여 서비스를 등록할 수 있습니다.
 
@@ -62,7 +62,7 @@ if (MixedRealityServiceRegistry.TryGetService<INewService>(out service))
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [시스템, 확장 서비스 및 데이터 공급자](../../architecture/systems-extensions-providers.md)
 - [확장 서비스 만들기 마법사](../tools/extension-service-creation-wizard.md)

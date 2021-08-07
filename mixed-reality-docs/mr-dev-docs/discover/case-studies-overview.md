@@ -5,13 +5,13 @@ author: grbury
 ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
-keywords: Windows Mixed Reality, HoloLens, 사례 연구, 비전, 시나리오, 사례 연구, 혼합 현실 헤드셋, windows mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 696223d2c5d122a1b1c092a2769d27ac0e94046c
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+keywords: Windows Mixed Reality, HoloLens, 사례 연구, 비전, 시나리오, 사례 연구, 혼합 현실 헤드셋, Windows Mixed Reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: a9a2cc3ed32d6a0f28a639fbbbb468930941e47afc5b8a0d35bb43b2c86144ff
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104895163"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209948"
 ---
 # <a name="case-study-gallery"></a>사례 연구 갤러리
 
@@ -29,8 +29,8 @@ ms.locfileid: "104895163"
         *2017년 8월*
     :::column-end:::
     :::column:::
-       [ ![ HoloSketch 빌드, hololens 용 공간 레이아웃 및 ux 스케치 앱](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md) **[HoloSketch, 공간 레이아웃 및 hololens 용 ux 스케치 앱](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
-        HoloSketch는 holographic 환경을 빌드하는 데 도움이 되는 장치 상의 공간 레이아웃 및 UX 스케치 도구입니다.<br>
+       HoloSketch 빌드, 공간 레이아웃 [ ![ 및 ux를 빌드하기 위한 응용 프로그램 HoloLens](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md) **[빌딩 HoloSketch, 공간 레이아웃 및 ux를 위한 ux HoloLens](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
+        HoloSketch는 holographic 환경을 빌드하는 데 도움이 되는 HoloLens에 대 한 장치 공간 레이아웃 및 UX 스케치 도구입니다.<br>
          *2017년 7월*
     :::column-end:::
 :::row-end:::
@@ -42,13 +42,13 @@ ms.locfileid: "104895163"
         *2017년 4월*
     :::column-end:::
     :::column:::
-       Hololens의 [ ![ 공간 매핑 기능 확장](images/away-from-camera-position-500px.png)](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md) **[hololens의 공간 매핑 기능 확장](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)**<br>
-        Microsoft HoloLens에 대 한 첫 번째 앱을 만들 때 장치에서 공간 매핑의 경계를 푸시할 수 있는 정도를 확인 합니다.<br>
+       HoloLens의 공간 매핑 기능을 확장 [ ![ HoloLens의 공간 매핑 기능 확장](images/away-from-camera-position-500px.png)](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md) **[](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)**<br>
+        Microsoft HoloLens에 대 한 첫 번째 앱을 만들 때 장치에서 공간 매핑의 경계를 푸시할 수 있는 정도를 확인할 수 있습니다.<br>
         *2016년 12월*
     :::column-end:::
     :::column:::
        [ ![](images/lowes.jpg)](../out-of-scope/case-study-lessons-from-the-lowes-kitchen.md) Lowe의 **[부엌에서](../out-of-scope/case-study-lessons-from-the-lowes-kitchen.md) 의 부엌 단원**<br>
-        HoloLens 팀은 Lowe의 HoloLens 프로젝트에서 파생 된 몇 가지 모범 사례를 공유 하려고 합니다.<br>
+        HoloLens 팀은 lowe의 HoloLens 프로젝트에서 파생 된 몇 가지 모범 사례를 공유 하려고 합니다.<br>
         *2016년 9월*
     :::column-end:::
 :::row-end:::
@@ -56,12 +56,12 @@ ms.locfileid: "104895163"
 :::row:::
     :::column:::
        조각 [ ![ 에서 몰입 형 환경 만들기](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md) 조각 **[에서 몰입 형 환경 만들기](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
-        조각은 Microsoft HoloLens의 대화형 범죄 드라마 이며,이는 단서를 따라 실제 공간에서 발생 하는 미스 트를 해결 하는 데 사용 됩니다.<br>
+        조각은 실제 세계 공간에서 발생 하는 신비의을 해결 하는 방법을 따르는 Microsoft HoloLens에 대 한 대화형 범죄 드라마.<br>
         *2016년 8월*
     :::column-end:::
     :::column:::
        [ ![ 3 HoloStudio ui 및 상호 작용 디자인 학습](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 HoloStudio ui 및 상호 작용 디자인 학습](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
-        HoloStudio는 HoloLens의 첫 번째 앱 중 하나입니다. 따라서 3D UI 및 상호 작용 디자인에 대 한 새로운 모범 사례를 만들어야 했습니다. 사용자 테스트, 프로토타입, 평가판 및 오류를 통해이를 수행 했습니다.<br>
+        HoloStudio는 HoloLens에 대 한 첫 번째 앱 중 하나입니다. 따라서 3D UI 및 상호 작용 디자인에 대 한 새로운 모범 사례를 만들어야 했습니다. 사용자 테스트, 프로토타입, 평가판 및 오류를 통해이를 수행 했습니다.<br>
         *2016년 7월*
     :::column-end:::
     :::column:::
@@ -72,17 +72,17 @@ ms.locfileid: "104895163"
 
 ## <a name="galaxy-explorer"></a>갤럭시 익스플로러
 
-Microsoft HoloLens를 제공 하기 전에 개발자 커뮤니티에서 새로운 장치에 대해 숙련 된 내부 팀 빌드를 확인 하려는 앱의 종류를 확인 했습니다. 5000 개 이상의 아이디어가 공유 되었고 24 시간 Twitter 폴링 후에는 Galaxy 탐색기 라는 아이디어가 적용 되었습니다.
+Microsoft HoloLens 제공 하기 전에 개발자 커뮤니티에서 새로운 장치에 대해 숙련 된 내부 팀 빌드를 확인할 수 있는 앱의 종류를 요청 했습니다. 5000 개 이상의 아이디어가 공유 되었고 24 시간 Twitter 폴링 후에는 Galaxy 탐색기 라는 아이디어가 적용 되었습니다.
 
 :::row:::
     :::column:::
        혼합 [ ![ 현실에서 galaxy 만들기](images/full-galaxy-500px.png)](../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md) **[혼합 현실에서 galaxy 만들기](../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)**<br>
-        Microsoft HoloLens를 제공 하기 전에 개발자 커뮤니티에서 새로운 장치에 대해 숙련 된 내부 팀 빌드를 확인 하려는 앱의 종류를 확인 했습니다. 5000 개 이상의 아이디어가 공유 되었고 24 시간 Twitter 폴링 후에는 Galaxy 탐색기 라는 아이디어가 적용 되었습니다.<br>
+        Microsoft HoloLens 제공 하기 전에 개발자 커뮤니티에서 새로운 장치에 대해 숙련 된 내부 팀 빌드를 확인할 수 있는 앱의 종류를 요청 했습니다. 5000 개 이상의 아이디어가 공유 되었고 24 시간 Twitter 폴링 후에는 Galaxy 탐색기 라는 아이디어가 적용 되었습니다.<br>
          *2016년 2월*
     :::column-end:::
     :::column:::
-       [ ![ Hololens에 대 한 galaxy 탐색기 만들기 2](../develop/unity/images/ge-update-interactions-concept-force-grab.png)](../develop/unity/galaxy-explorer-update.md) **[](../develop/unity/galaxy-explorer-update.md)**<br>
-        HoloLens의 Galaxy 탐색기를 업데이트 하는 방법 2를 시작 합니다. Galaxy 탐색기는 원래 아이디어 프로그램 공유를 통해 HoloLens (첫 번째 gen) 용 오픈 소스 응용 프로그램으로 개발 되었으며, 많은 사람들이 보유 하 고 있는 첫 번째 혼합 현실 환경 중 하나입니다. 이제 HoloLens 2의 새로운 기능을 위해 업데이트 하는 중입니다.<br>
+       [ ![](../develop/unity/images/ge-update-interactions-concept-force-grab.png)](../develop/unity/galaxy-explorer-update.md) galaxy 탐색기를 **[HoloLens 2에 대 한 galaxy](../develop/unity/galaxy-explorer-update.md) 탐색기를 만드는 HoloLens 2**<br>
+        HoloLens 2에 대해 Galaxy 탐색기를 업데이트 하는 방법에 대 한 안내를 시작 합니다. Galaxy 탐색기는 원래 아이디어 프로그램 공유를 통해 HoloLens (첫 번째 gen)를 위한 오픈 소스 응용 프로그램으로 개발 되었으며, 대부분의 사용자가 보유 하 고 있는 첫 번째 혼합 현실 환경 중 하나입니다. 이제 HoloLens 2의 새로운 기능을 위해 업데이트 하는 중입니다.<br>
         *2019년 6월*
     :::column-end:::
     :::column:::
@@ -93,17 +93,17 @@ Microsoft HoloLens를 제공 하기 전에 개발자 커뮤니티에서 새로�
 
 ## <a name="holotour"></a>HoloTour
 
-HoloTour for Microsoft HoloLens는 전 세계의 아이콘 위치에 대 한 모던 3D 개인 둘러보기를 제공 합니다. 이 프로젝트에서 작업 하는 디자이너, 아티스트, 생산자, 오디오 디자이너 및 개발자가 발견 되 면 잘 알려진 위치에 대 한 convincingly 실제 3D 렌더링을 만드는 것은 독창적인 및 기술적 wizardry의 고유한 blend를 사용 합니다.
+Microsoft HoloLens HoloTour는 전 세계 아이콘 위치에 대 한 모던 3d 개인 투어를 제공 합니다. 이 프로젝트에서 작업 하는 디자이너, 아티스트, 생산자, 오디오 디자이너 및 개발자가 발견 되 면 잘 알려진 위치에 대 한 convincingly 실제 3D 렌더링을 만드는 것은 독창적인 및 기술적 wizardry의 고유한 blend를 사용 합니다.
 
 :::row:::
     :::column:::
        [ ![](../out-of-scope/images/recreated-colosseum-holotour-500px.png)](../design/case-study-spatial-sound-design-for-holotour.md) **[HoloTour에 대 한 HoloTour 공간 음향](../design/case-study-spatial-sound-design-for-holotour.md) 디자인의 공간 음향 디자인**<br>
-        Microsoft HoloLens에 대해 진정한 모던 3D 가상 둘러보기를 만들려면 파노라마 비디오 및 holographic 장면만 수식의 일부입니다.<br>
+        Microsoft HoloLens에 대 한 진정한 모던 3d 가상 둘러보기를 만들려면 파노라마 비디오와 holographic 장면만 수식의 일부입니다.<br>
          *2016년 8월*
     :::column-end:::
     :::column:::
        [ ![ HoloTour에 대해 불가능 한 큐브 뷰 만들기](../out-of-scope/images/rome-colosseum-overlay-500px.png)](../out-of-scope/case-study-creating-impossible-perspectives-for-holotour.md) **[HoloTour에 대해 불가능 한 큐브 뷰 만들기](../out-of-scope/case-study-creating-impossible-perspectives-for-holotour.md)**<br>
-        HoloTour의 경험을 unforgettable 하는 데 필요 합니다. 기존 tourist 중지 외에도 "불가능 한 큐브 뷰"를 계획 했습니다.<br>
+        HoloTour의 경험을 unforgettable 하 HoloLens는 데 필요 합니다. 기존 tourist 중지 외에도 "불가능 한 큐브 뷰"를 계획 했습니다.<br>
         *2016년 8월*
     :::column-end:::
     :::column:::
@@ -127,7 +127,7 @@ HoloTour for Microsoft HoloLens는 전 세계의 아이콘 위치에 대 한 모
     :::column-end:::
     :::column:::
        현실에서 구멍이 있는 구멍 [ ![ 을](../develop/unity/images/roboraid-640px.png)](../out-of-scope/case-study-looking-through-holes-in-your-reality.md) 살펴보고 있습니다. **[](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)**<br>
-        이 사례 연구에서는 HoloLens에 "자동 창" 효과를 구현 하 여 사용자가 실제 환경 내에서 옆면을 볼 수 있도록 하는 방법을 설명 합니다.<br>
+        이 사례 연구에서는 HoloLens에 대 한 "자동 창" 효과를 구현 하 여 사용자가 실제 환경 내에서 옆면, 바닥의 가상 입구를 볼 수 있도록 하는 방법을 설명 합니다.<br>
         *2016년 2월*
     :::column-end:::
     :::column:::
@@ -147,8 +147,8 @@ HoloTour for Microsoft HoloLens는 전 세계의 아이콘 위치에 대 한 모
          *2017년 11월*
     :::column-end:::
     :::column:::
-       Hololens 디자인 팀의 [ ![ 첫 해에 있는 hololens 디자인](../develop/unity/images/MotionController.jpg)](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md) 팀의 첫 해 **[](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)**<br>
-        1 월 2016에 HoloLens 디자인 팀에 참여 한 경우 2D flatland에서 3D 세계로의 경험을 시작 합니다.<br>
+       [ ![ HoloLens의 첫 번째 연도는](../develop/unity/images/MotionController.jpg)](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md) **[HoloLens 디자인 팀의 첫 해 팀을 디자인 합니다](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md) .**<br>
+        1 월 2016에 HoloLens 설계 팀에 참여 한 경우 2d flatland에서 3d 세계로의 경험을 시작 합니다.<br>
         *2016년 1월*
     :::column-end:::
     :::column:::

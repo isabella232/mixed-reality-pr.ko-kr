@@ -1,29 +1,29 @@
 ---
 title: HoloLens(1세대) 공유 240 - 여러 HoloLens 디바이스
-description: Holograms를 공유 하는 방법에 대 한 자세한 내용은 Unity, Visual Studio 및 HoloLens를 사용 하 여이 코딩 연습을 따르세요.
+description: holograms를 공유 하는 방법에 대 한 자세한 내용은 Unity, Visual Studio 및 HoloLens를 사용 하 여이 코딩 연습을 따르세요.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, 공유, 네트워킹, 아카데미, 자습서, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
-ms.openlocfilehash: 446f82558781e47b5381ee3f59af70953954ad2a
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+ms.openlocfilehash: 1714c9cf1b64953ff319eefb8633b1891568d5a50f2ed778e6e890d3149d3908
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269919"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208703"
 ---
-# <a name="hololens-1st-gen-sharing-240-multiple-hololens-devices"></a>HoloLens (첫 번째 gen) 공유 240: 여러 HoloLens 장치
+# <a name="hololens-1st-gen-sharing-240-multiple-hololens-devices"></a>HoloLens (1 세대) 공유 240: 여러 HoloLens 장치
 
 >[!IMPORTANT]
 >혼합 현실 아카데미 자습서는 HoloLens (첫 번째 gen), Unity 2017 및 혼합 현실 모던 헤드셋을 고려 하 여 설계 되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다. 이러한 자습서는 HoloLens 2에 사용 되는 최신 도구 집합 또는 상호 작용으로 업데이트 **_되지_** 않으며 최신 버전의 Unity와 호환 되지 않을 수 있습니다.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2에 대한 [새로운 자습서 시리즈](mrlearning-base.md)가 게시되었습니다.
 
-Holograms는 공간에서 이동 하면서 전 세계에 남아 있습니다. HoloLens는 다양 한 [좌표계](../../../design/coordinate-systems.md) 를 사용 하 여 개체의 위치와 방향을 추적 하는 방식으로 holograms을 유지 합니다. 이러한 좌표계를 장치 간에 공유할 때 공유 holographic 세계에 참여 하는 데 사용할 수 있는 공유 환경을 만들 수 있습니다.
+홀로그램스은 공간에서 이동 하는 동안 전 세계에 남아 있습니다. HoloLens은 다양 한 [좌표계](../../../design/coordinate-systems.md) 를 사용 하 여 개체의 위치와 방향을 추적 하는 방식으로 holograms을 유지 합니다. 이러한 좌표계를 장치 간에 공유할 때 공유 holographic 세계에 참여 하는 데 사용할 수 있는 공유 환경을 만들 수 있습니다.
 
 이 자습서에서는 다음 작업을 수행합니다.
 
 * 공유 환경의 네트워크를 설정 합니다.
-* HoloLens 장치 간에 holograms을 공유 합니다.
+* HoloLens 장치에서 holograms을 공유 합니다.
 * 공유 holographic 세계에서 다른 사람을 검색 하세요.
 * 다른 플레이어를 대상으로 하 고 projectiles를 시작할 수 있는 공유 대화형 환경을 만듭니다.
 
@@ -41,8 +41,8 @@ Holograms는 공간에서 이동 하면서 전 세계에 남아 있습니다. Ho
 
 ### <a name="prerequisites"></a>필수 구성 요소
 
-* 인터넷 액세스로 설치 된 올바른 [도구로](../../../develop/install-the-tools.md) 구성 된 WINDOWS 10 PC
-* 개발용으로 두 개 이상의 HoloLens 장치를 [구성](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)했습니다.
+* 인터넷 액세스로 설치 된 올바른 [도구로](../../../develop/install-the-tools.md) 구성 된 Windows 10 PC입니다.
+* [개발용으로 구성 된](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)두 개 이상의 HoloLens 장치
 
 ### <a name="project-files"></a>프로젝트 파일
 
@@ -71,7 +71,7 @@ Holograms는 공간에서 이동 하면서 전 세계에 남아 있습니다. Ho
 * Unity를 시작합니다.
 * **열기** 를 선택합니다.
 * 이전에 unarchived **SharedHolograms** 폴더로 위치를 입력 합니다.
-* **프로젝트 이름** 을 선택 하 고 **폴더 선택** 을 클릭 합니다.
+* **Project 이름** 을 선택 하 고 **폴더 선택** 을 클릭 합니다.
 * **계층** 에서 **주 카메라** 를 마우스 오른쪽 단추로 클릭 하 고 **삭제** 를 선택 합니다.
 * HoloToolkit- **240/Prefabs/카메라** 폴더에서 **기본 카메라** prefab를 찾습니다.
 * **주 카메라** 를 **계층** 으로 끌어 놓습니다.
@@ -80,20 +80,20 @@ Holograms는 공간에서 이동 하면서 전 세계에 남아 있습니다. Ho
 * GameObject의 이름을 **HologramCollection** 로 바꿉니다.
 * **계층** 에서 **HologramCollection** 개체를 선택 합니다.
 * **Inspector** 에서 **변환 위치** 를 **X: 0, Y:-0.25, Z: 2** 로 설정 합니다.
-* **프로젝트 패널** 의 **Holograms** 폴더에서 **EnergyHub** 자산을 찾습니다.
-* **EnergyHub** 개체를 **프로젝트 패널** 에서 **계층** 으로 **HologramCollection의 자식** 으로 끌어 놓습니다.
+* **Project 패널** 의 **홀로그램스** 폴더에서 **EnergyHub** 자산을 찾습니다.
+* **EnergyHub** 개체를 **Project 패널** 에서 **계층** 으로 **HologramCollection의 자식** 으로 끌어 놓습니다.
 * **파일 > 다른 이름으로 장면 저장** ...을 선택 합니다.
 * 장면 이름을 **SharedHolograms** 로 하 고 **저장** 을 클릭 합니다.
 * Holograms를 미리 보려면 Unity의 **재생** 단추를 누릅니다.
 * **재생** 을 두 번 눌러 미리 보기 모드를 중지 합니다.
 
-**Unity에서 Visual Studio로 프로젝트 내보내기**
+**Unity에서 Visual Studio로 프로젝트를 내보냅니다.**
 
-* Unity에서 **파일 > 빌드 설정** 을 선택 합니다.
+* Unity에서 **파일 > 빌드 설정** 를 선택 합니다.
 * 열려 있는 장면 **추가** 를 클릭 하 여 장면을 추가 합니다.
 * **플랫폼** 목록에서 **유니버설 Windows 플랫폼** 을 선택 하 고 **플랫폼 전환** 을 클릭 합니다.
 * **SDK** 를 **Universal 10** 으로 설정 합니다.
-* **대상 장치** 를 **HoloLens** 로 설정 하 고 **UWP 빌드 유형을** **D3D** 로 설정 합니다.
+* **대상 장치** 를 **HoloLens** 및 **UWP 빌드 형식** 으로 **D3D** 로 설정 합니다.
 * **Unity c # 프로젝트** 를 확인 합니다.
 * **빌드** 를 클릭한 다음
 * 표시 되는 파일 탐색기 창에서 "App" 이라는 **새 폴더** 를 만듭니다.
@@ -104,11 +104,11 @@ Holograms는 공간에서 이동 하면서 전 세계에 남아 있습니다. Ho
 * **SharedHolograms** 를 열어 Visual Studio를 시작 합니다.
 * Visual Studio의 맨 위 도구 모음을 사용 하 여 대상을 디버그에서 **릴리스** 로, ARM에서 **x 86** 으로 변경 합니다.
 * 로컬 컴퓨터 옆의 드롭다운 화살표를 클릭 하 고 **원격 장치** 를 선택 합니다.
-    * **주소** 를 HoloLens의 이름 또는 IP 주소로 설정 합니다. 장치 IP 주소를 알 수 없는 경우 **설정 > 네트워크 & 인터넷 > 고급 옵션** 을 확인 하거나 Cortana **"안녕하세요. 내 IP 주소는 무엇입니까?"** 를 확인 합니다.
+    * **주소** 를 HoloLens의 이름 또는 IP 주소로 설정 합니다. 장치 IP 주소를 모르는 경우 **설정 > 네트워크 & 인터넷 > 고급 옵션** 을 확인 하거나 Cortana **"안녕하세요 Cortana, 내 IP 주소는 무엇입니까?"** 를 확인 합니다.
     * **인증 모드** 를 **유니버설** 으로 설정 된 상태로 둡니다.
-    * **선택** 을 클릭 합니다.
-* **디버그 > 디버깅 하지 않고 시작** 을 클릭 하거나 **ctrl + F5** 를 누릅니다. 처음으로 장치에 배포 하는 경우에는 [Visual Studio와 쌍](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)으로 연결 해야 합니다.
-* HoloLens에 배치 하 고 EnergyHub 홀로그램을 찾습니다.
+    * **선택** 클릭
+* **디버그 > 디버깅 하지 않고 시작** 을 클릭 하거나 **ctrl + F5** 를 누릅니다. 처음으로 장치에 배포 하는 경우 [Visual Studio와 쌍](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)으로 연결 해야 합니다.
+* HoloLens에 추가 하 고 EnergyHub 홀로그램을 찾습니다.
 
 ## <a name="chapter-2---interaction"></a>2 장-상호 작용
 
@@ -134,61 +134,61 @@ Holograms는 공간에서 이동 하면서 전 세계에 남아 있습니다. Ho
 **제스처**
 
 * **계층 패널** 에서 **HologramCollection** 개체를 선택 합니다.
-* **구성 요소 추가** 를 클릭 하 고 검색 필드에 **제스처 관리자** 를 입력 합니다. 검색 결과를 선택 합니다.
-* **계층 패널** 에서 **HologramCollection** 를 확장 합니다.
-* 자식 **EnergyHub** 개체를 선택 합니다.
-* **검사기 패널** 에서 **구성 요소 추가** 단추를 클릭 합니다.
-* 메뉴에서 **홀로그램 배치** 를 검색 상자에 입력 합니다. 검색 결과를 선택 합니다.
-* **파일 > 장면 저장** 을 선택 하 여 장면을 저장 합니다.
+* **구성 요소 추가를** 클릭하고 검색 필드에 **제스처 관리자를** 입력합니다. 검색 결과를 선택합니다.
+* 계층 **구조 패널에서** **HologramCollection 을** 확장합니다.
+* 자식 **EnergyHub** 개체를 선택합니다.
+* **검사기 패널에서** **구성 요소 추가** 단추를 클릭합니다.
+* 메뉴에서 홀로그램 배치 검색 상자에 를 **입력합니다.** 검색 결과를 선택합니다.
+* 파일 > 장면 **저장을 선택하여 장면을 저장합니다.**
 
 **배포 및 이용**
 
-* 이전 장의 지침을 사용 하 여를 빌드하고 HoloLens에 배포 합니다.
-* 앱이 HoloLens에서 시작 되 면 헤드를 이동 하 고 EnergyHub이 응시를 따라가는 방법을 확인 합니다.
-* 홀로그램을 응시 할 때 커서가 어떻게 표시 되는지, 그리고 홀로그램에서 gazing 않을 때 점 빛의 변화를 확인 합니다.
-* 비행기를 탭 하 여 홀로그램을 놓습니다. 지금은 프로젝트에서 홀로그램을 한 번만 추가할 수 있습니다 (다시 배포 다시 시도).
+* 이전 장의 지침을 사용하여 HoloLens 빌드하고 배포합니다.
+* 앱이 HoloLens 시작되면 헤드를 이동하고 EnergyHub가 응시를 따르는 방법을 알아보세요.
+* 홀로그램을 응시할 때 커서가 어떻게 표시되고, 홀로그램에서 움추지 않을 때 점등으로 변경됩니다.
+* 에어 탭을 수행하여 홀로그램을 배치합니다. 현재 프로젝트에서 홀로그램을 한 번만 배치할 수 있습니다(다시 배포하여 다시 시도).
 
-## <a name="chapter-3---shared-coordinates"></a>3 장-공유 좌표
+## <a name="chapter-3---shared-coordinates"></a>3장 - 공유 좌표
 
 >[!VIDEO https://www.youtube.com/embed/Ey8yBgWiqtg]
 
-Holograms를 확인 하 고 상호 작용 하는 데 재미 있지만 더 살펴보겠습니다. 첫 번째 공유 환경을 설정 합니다. 즉, 모든 사람이 함께 볼 수 있습니다.
+홀로그램을 보고 상호 작용하는 것은 재미있지만, 더 자세히 살펴보겠습니다. 첫 번째 공유 환경인 홀로그램 모두가 함께 볼 수 있도록 설정합니다.
 
 ### <a name="objectives"></a>목표
 
-* 공유 환경의 네트워크를 설정 합니다.
-* 공통 참조 지점을 설정 합니다.
-* 장치 간에 좌표계를 공유 합니다.
-* 모든 사람이 동일한 홀로그램을 보게 됩니다.
+* 공유 환경을 위한 네트워크를 설치합니다.
+* 공통 참조 지점을 설정합니다.
+* 디바이스 간에 좌표계를 공유합니다.
+* 모든 사람이 동일한 홀로그램을 볼 수 있습니다.
 
 >[!NOTE]
->공유 서버에 연결 하려면 앱에 대해 **Internetclientserver** 및 **PrivateNetworkClientServer** 기능을 선언 해야 합니다. 이 작업은 이미 Holograms 240에 있지만 사용자 고유의 프로젝트에 대해서는이를 염두에 두어야 합니다.
+>앱이 공유 서버에 연결하려면 **InternetClientServer** 및 **PrivateNetworkClientServer** 기능을 선언해야 합니다. 이 작업은 이미 홀로그램스 240에서 수행되지만 사용자 고유의 프로젝트에 대해 이 점을 염두에 두어야 합니다.
 
->1. Unity 편집기에서 "편집 > 프로젝트 설정 > 플레이어"로 이동 하 여 플레이어 설정으로 이동 합니다.
->2. "Windows 스토어" 탭을 클릭 합니다.
->3. "게시 설정 > 기능" 섹션에서 **Internetclientserver** 기능 및 **PrivateNetworkClientServer** 기능을 확인 합니다.
+>1. Unity 편집기에서 "> Project 설정 > 플레이어 편집"으로 이동하여 플레이어 설정으로 이동합니다.
+>2. "Windows Store" 탭을 클릭합니다.
+>3. "게시 설정 > 기능" 섹션에서 **InternetClientServer** 기능 및 **PrivateNetworkClientServer** 기능을 확인합니다.
 
 ### <a name="instructions"></a>지침
 
-* **프로젝트 패널** 에서 **HoloToolkit-Sharing-240\Prefabs\Sharing** 폴더로 이동 합니다.
-* **공유** Prefab을 **계층 패널로** 끌어 놓습니다.
+* Project **패널에서** **HoloToolkit-Sharing-240\Prefabs\Sharing** 폴더로 이동합니다.
+* **공유** 프리팹을 **계층 패널** 로 끌어서 놓습니다.
 
-다음으로 공유 서비스를 시작 해야 합니다. 공유 환경에서 한 대의 **PC** 만이 단계를 수행 해야 합니다.
+다음으로 공유 서비스를 시작해야 합니다. 공유 환경의 **PC 하나만** 이 단계를 수행해야 합니다.
 
-* Unity-위쪽 메뉴에서 **HoloToolkit-240 메뉴** 를 선택 합니다.
-* 드롭다운에서 **공유 서비스 시작** 항목을 선택 합니다.
-* **개인 네트워크** 옵션을 선택 하 고 방화벽 프롬프트가 표시 되 면 **액세스 허용** 을 클릭 합니다.
-* 공유 서비스 콘솔 창에 표시 된 IPv4 주소를 적어둡니다. 이는 서비스가 실행 되는 컴퓨터와 동일한 IP입니다.
+* Unity의 위쪽 메뉴에서 **HoloToolkit-Sharing-240 메뉴를** 선택합니다.
+* 드롭다운에서 **공유 서비스 시작** 항목을 선택합니다.
+* 프라이빗 **네트워크** 옵션을 선택하고 방화벽 프롬프트가 표시되면 **액세스 허용을** 클릭합니다.
+* 공유 서비스 콘솔 창에 표시된 IPv4 주소를 적어 둡다. 서비스가 실행되는 컴퓨터와 동일한 IP입니다.
 
-공유 환경에 참여 하는 **모든 pc** 의 나머지 지침을 따릅니다.
+공유 환경을 조인할 **모든 PC의** 나머지 지침을 따릅니다.
 
-* **계층** 에서 **공유** 개체를 선택 합니다.
-* **검사자** 의 **공유 단계** 구성 요소에서 **서버 주소** 를 ' localhost '에서 SharingService.exe를 실행 하는 컴퓨터의 IPv4 주소로 변경 합니다.
-* **계층** 에서 **HologramCollection** 개체를 선택 합니다.
-* **검사기** 에서 **구성 요소 추가** 단추를 클릭 합니다.
-* 검색 상자에 **가져오기 내보내기 앵커 관리자** 를 입력 합니다. 검색 결과를 선택 합니다.
-* **프로젝트 패널** 에서 **Scripts** 폴더로 이동 합니다.
-* **HologramPlacement** 스크립트를 두 번 클릭 하 여 Visual Studio에서 엽니다.
+* **계층** 구조에서 **공유** 개체를 선택합니다.
+* **검사기의** **공유 단계** 구성 요소에서 **서버 주소를** 'localhost'에서 SharingService.exe 실행하는 컴퓨터의 IPv4 주소로 변경합니다.
+* **계층** 구조에서 **HologramCollection** 개체를 선택합니다.
+* **검사기에서** **구성 요소 추가** 단추를 클릭합니다.
+* 검색 상자에 Import **Export Anchor Manager** 를 입력합니다. 검색 결과를 선택합니다.
+* Project **패널에서** **스크립트** 폴더로 이동합니다.
+* **HologramPlacement** 스크립트를 두 번 클릭하여 Visual Studio 엽니다.
 * 내용을 아래 코드로 바꿉니다.
 
 ```cs
@@ -295,36 +295,36 @@ public class HologramPlacement : Singleton<HologramPlacement>
 }
 ```
 
-* Unity로 돌아가서 **계층 패널** 에서 **HologramCollection** 를 선택 합니다.
-* **검사기 패널** 에서 **구성 요소 추가** 단추를 클릭 합니다.
-* 메뉴에서 **앱 상태 관리자** 검색 상자에를 입력 합니다. 검색 결과를 선택 합니다.
+* Unity로 **돌아가서 계층 패널에서** **HologramCollection을** 선택합니다.
+* **검사기 패널에서** **구성 요소 추가** 단추를 클릭합니다.
+* 메뉴에서 App State Manager 검색 상자에 를 **입력합니다.** 검색 결과를 선택합니다.
 
 **배포 및 이용**
 
-* HoloLens 장치에 대 한 프로젝트를 빌드합니다.
-* 첫 번째에 배포할 HoloLens를 하나 지정 합니다. EnergyHub을 시작 하기 전에 Anchor가 서비스에 업로드 될 때까지 기다려야 합니다 (30-60 초 정도 걸릴 수 있음). 업로드가 완료 될 때까지 탭 제스처는 무시 됩니다.
-* EnergyHub가 배치 된 후에는 해당 위치가 서비스에 업로드 되 고 다른 모든 HoloLens 장치에 배포할 수 있습니다.
-* 새 HoloLens가 먼저 세션에 조인 하면 해당 장치에서 EnergyHub 위치가 올바르지 않을 수 있습니다. 그러나 anchor 및 EnergyHub 위치가 서비스에서 다운로드 되는 즉시 EnergyHub는 새 공유 위치로 이동 해야 합니다. 이 문제가 ~ 30-60 초 이내에 발생 하지 않는 경우 더 많은 환경 단서를 수집 하도록 앵커를 설정 하는 경우 원래 HoloLens가 있었던 위치를 살펴보세요. 위치가 여전히 잠겨 있지 않으면 장치에 다시 배포 합니다.
-* 장치를 모두 준비 하 고 앱을 실행 하는 경우 EnergyHub을 찾습니다. 홀로그램의 위치와 텍스트가 접하는 방향을 모두 동의할 수 있나요?
+* HoloLens 디바이스에 대한 프로젝트를 빌드합니다.
+* 먼저 배포할 하나의 HoloLens 지정합니다. EnergyHub를 배치하려면 앵커가 서비스에 업로드될 때까지 기다려야 합니다(최대 30~60초가 걸릴 수 있습니다). 업로드가 완료될 때까지 탭 제스처는 무시됩니다.
+* EnergyHub가 배치되면 해당 위치가 서비스에 업로드된 다음 다른 모든 HoloLens 디바이스에 배포할 수 있습니다.
+* 새 HoloLens 처음 세션에 조인하면 해당 디바이스에서 EnergyHub의 위치가 올바르지 않을 수 있습니다. 그러나 앵커 및 EnergyHub 위치가 서비스에서 다운로드되는 즉시 EnergyHub는 새로운 공유 위치로 이동해야 합니다. 30-60초 이내에 발생하지 않는 경우 앵커를 설정하여 더 많은 환경 단서를 수집할 때 원래 HoloLens 있었던 위치로 안내합니다. 위치가 여전히 잠기지 않으면 디바이스에 다시 배포합니다.
+* 디바이스가 모두 준비되고 앱을 실행하면 EnergyHub를 찾습니다. 홀로그램의 위치와 텍스트의 방향에 모두 동의할 수 있나요?
 
-## <a name="chapter-4---discovery"></a>4 장-검색
+## <a name="chapter-4---discovery"></a>4장 - 검색
 
 >[!VIDEO https://www.youtube.com/embed/5NxJWMV4BP8]
 
-이제 모든 사용자가 동일한 홀로그램을 볼 수 있습니다. 이제 shared holographic 세계에 연결 된 다른 모든 사용자를 확인해 보겠습니다. 이 장에서는 동일한 공유 세션에서 다른 모든 HoloLens 장치의 헤드 위치와 회전을 가져옵니다.
+이제 모든 사람이 동일한 홀로그램을 볼 수 있습니다. 이제 공유 홀로그램 세계에 연결된 다른 모든 사람을 살펴보겠습니다. 이 장에서는 동일한 공유 세션에서 다른 모든 HoloLens 디바이스의 헤드 위치 및 회전을 살펴보겠습니다.
 
 ### <a name="objectives"></a>목표
 
-* 공유 환경에서 서로를 검색 합니다.
-* 플레이어 아바타를 선택 하 고 공유 합니다.
-* 플레이어 아바타를 모든 사용자의 헤드 옆에 연결 합니다.
+* 공유 경험에서 서로를 검색합니다.
+* 플레이어 아바타를 선택하고 공유합니다.
+* 플레이어 아바타를 모든 사람의 머리 옆에 연결합니다.
 
 ### <a name="instructions"></a>지침
 
-* **프로젝트 패널** 에서 **Holograms** 폴더로 이동 합니다.
-* **PlayerAvatarStore** 를 **계층** 으로 끌어 놓습니다.
-* **프로젝트 패널** 에서 **Scripts** 폴더로 이동 합니다.
-* **AvatarSelector** 스크립트를 두 번 클릭 하 여 Visual Studio에서 엽니다.
+* Project **패널에서** **홀로그램스** 폴더로 이동합니다.
+* **PlayerAvatarStore를** 계층 구조 로 끌어서 **놓습니다.**
+* Project **패널에서** **스크립트** 폴더로 이동합니다.
+* **AvatarSelector** 스크립트를 두 번 클릭하여 Visual Studio 엽니다.
 * 내용을 아래 코드로 바꿉니다.
 
 ```cs
@@ -367,13 +367,13 @@ public class AvatarSelector : MonoBehaviour
 }
 ```
 
-* **계층** 에서 **HologramCollection** 개체를 선택 합니다.
-* **검사기** 에서 **구성 요소 추가** 를 클릭 합니다.
-* 검색 상자에 **로컬 플레이어 관리자** 를 입력 합니다. 검색 결과를 선택 합니다.
-* **계층** 에서 **HologramCollection** 개체를 선택 합니다.
-* **검사기** 에서 **구성 요소 추가** 를 클릭 합니다.
-* 검색 상자에 **원격 플레이어 관리자** 를 입력 합니다. 검색 결과를 선택 합니다.
-* Visual Studio에서 **HologramPlacement** 스크립트를 엽니다.
+* **계층** 구조에서 **HologramCollection** 개체를 선택합니다.
+* **검사기에서** **구성 요소 추가를** 클릭합니다.
+* 검색 상자에 Local **Player Manager** 를 입력합니다. 검색 결과를 선택합니다.
+* **계층** 구조에서 **HologramCollection** 개체를 선택합니다.
+* **검사기에서** **구성 요소 추가를** 클릭합니다.
+* 검색 상자에 Remote **Player Manager** 를 입력합니다. 검색 결과를 선택합니다.
+* Visual Studio **HologramPlacement** 스크립트를 엽니다.
 * 내용을 아래 코드로 바꿉니다.
 
 ```cs
@@ -532,7 +532,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 }
 ```
 
-* Visual Studio에서 **AppStateManager** 스크립트를 엽니다.
+* Visual Studio **AppStateManager** 스크립트를 엽니다.
 * 내용을 아래 코드로 바꿉니다.
 
 ```cs
@@ -601,28 +601,28 @@ public class AppStateManager : Singleton<AppStateManager>
 }
 ```
 
-**배포 및 이용**
+**배포 및 즐겨**
 
-* 프로젝트를 빌드하고 HoloLens 장치에 배포 합니다.
-* Ping 소리가 들리면 아바타 선택 메뉴를 찾고 공중 탭 제스처를 사용 하 여 아바타를 선택 합니다.
-* Holograms을 확인 하지 않는 경우 HoloLens가 서비스와 통신할 때 커서 주위의 점 조명은 다른 색으로 전환 됩니다. (진한 자주), 앵커 다운로드 (녹색), 위치 데이터 가져오기/내보내기 (노랑), 앵커 업로드 (파란색) 커서 주위의 점 조명이 기본 색 (연한 자주색) 이면 세션의 다른 플레이어와 상호 작용할 준비가 된 것입니다.
-* 공간에 연결 된 다른 사용자를 살펴보세요. 어깨 위에 holographic 로봇이 떠 모방 해당 헤드 동작을 합니다.
+* 프로젝트를 빌드하고 HoloLens 디바이스에 배포합니다.
+* ping 소리를 들으면 아바타 선택 메뉴를 찾아서 에어 탭 제스처가 있는 아바타를 선택합니다.
+* 홀로그램을 보지 않는 경우 HoloLens 서비스와 통신할 때 커서 주위의 점 광원은 초기화(진한 자주색), 앵커 다운로드(녹색), 위치 데이터 가져오기/내보내기(노란색), 앵커 업로드(파란색) 등 다른 색으로 바뀝니다. 커서 주위의 점등이 기본 색(연한 자주색)이면 세션에서 다른 플레이어와 상호 작용할 준비가 된 것입니다.
+* 공간에 연결된 다른 사람을 살펴봅니다. 홀로그램 로봇이 머리 위로 떠 있고 머리 동작을 모방합니다.
 
-## <a name="chapter-5---placement"></a>5 장-배치
+## <a name="chapter-5---placement"></a>5장 - 배치
 
 >[!VIDEO https://www.youtube.com/embed/afFTwHQIw0s]
 
-이 장에서는 실제 세계 표면에 앵커를 배치할 수 있도록 합니다. 공유 좌표를 사용 하 여 공유 환경에 연결 된 모든 사람 사이에서 중간 지점에 해당 앵커를 추가 합니다.
+이 장에서는 앵커를 실제 화면에 배치할 수 있도록 합니다. 공유 좌표를 사용하여 공유 경험에 연결된 모든 사람 사이의 중간 지점에 앵커를 배치합니다.
 
 ### <a name="objectives"></a>목표
 
-* 플레이어의 헤드 위치에 따라 공간 매핑 메시에 holograms을 배치 합니다.
+* 플레이어의 머리 위치에 따라 공간 매핑 메시에 홀로그램을 배치합니다.
 
 ### <a name="instructions"></a>지침
 
-* **프로젝트 패널** 에서 **Holograms** 폴더로 이동 합니다.
+* **Project 패널** 에서 **홀로그램스** 폴더로 이동 합니다.
 * **CustomSpatialMapping** Prefab를 **계층 구조** 에 끌어다 놓습니다.
-* **프로젝트 패널** 에서 **Scripts** 폴더로 이동 합니다.
+* **Project 패널** 에서 **Scripts** 폴더로 이동 합니다.
 * **AppStateManager** 스크립트를 두 번 클릭 하 여 Visual Studio에서 엽니다.
 * 내용을 아래 코드로 바꿉니다.
 
@@ -729,7 +729,7 @@ public class AppStateManager : Singleton<AppStateManager>
 }
 ```
 
-* **프로젝트 패널** 에서 **Scripts** 폴더로 이동 합니다.
+* **Project 패널** 에서 **Scripts** 폴더로 이동 합니다.
 * **HologramPlacement** 스크립트를 두 번 클릭 하 여 Visual Studio에서 엽니다.
 * 내용을 아래 코드로 바꿉니다.
 
@@ -1001,7 +1001,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 
 * **계층** 에서 **HologramCollection** 개체를 선택 합니다.
 * **검사기** 에서 **구성 요소 추가** 를 클릭 합니다.
-* 검색 상자에 나이 **시작 관리자** 를 입력 합니다. 검색 결과를 선택 합니다.
+* 검색 상자에 **멀리로 시작 관리자** 를 입력 합니다. 검색 결과를 선택 합니다.
 
 **배포 및 이용**
 
@@ -1021,7 +1021,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 
 ### <a name="instructions"></a>지침
 
-* **프로젝트 패널** 에서 **Holograms** 폴더로 이동 합니다.
+* **Project 패널** 에서 **홀로그램스** 폴더로 이동 합니다.
 * 지 **각 자산을** **HologramCollection의 자식** 으로 끌어 놓습니다.
 * **HologramCollection** 가 선택 된 상태에서 **검사기** 의 **구성 요소 추가** 단추를 클릭 합니다.
 * 메뉴의 검색 상자에 **ExplodeTarget** 을 입력 합니다. 검색 결과를 선택 합니다.

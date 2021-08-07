@@ -1,21 +1,21 @@
 ---
 title: HoloLens에서 앱 테스트
-description: HoloLens mixed reality 응용 프로그램의 테스트 및 성능 최적화에 대 한 일반적인 지침과 제안 사항에 대해 알아봅니다.
+description: HoloLens 혼합 현실 응용 프로그램의 테스트 및 성능 최적화에 대 한 일반적인 지침과 제안 사항에 대해 알아봅니다.
 author: jonmlyons
 ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, 테스트
-ms.openlocfilehash: b6f1c6bcff9f9db1a1fb7f5b3ea9d2c4c2be969a
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2f423560191fea8b516db80d533898b5a1f15973442e7bb6cd8878d486e0ffba
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583765"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212104"
 ---
 # <a name="testing-your-app-on-hololens"></a>HoloLens에서 앱 테스트
 
-HoloLens 응용 프로그램 테스트는 Windows 응용 프로그램 테스트와 비슷합니다. 여전히 기능, 상호 운용성, 성능, 보안, 안정성 등을 고려해 야 합니다. 그러나 PC 또는 휴대폰 앱에서 팝 하지 않는 일부 영역에는 특별 한 처리가 필요 합니다. Holographic 앱은 다양 한 환경 집합에서 원활 하 게 실행 해야 합니다. 또한 성능 및 사용자가 항상 편안 하 게 유지 해야 합니다. 이 가이드는 이러한 영역을 테스트 하는 데 도움이 됩니다.
+응용 프로그램 HoloLens 테스트는 Windows 응용 프로그램 테스트와 비슷합니다. 여전히 기능, 상호 운용성, 성능, 보안, 안정성 등을 고려해 야 합니다. 그러나 PC 또는 휴대폰 앱에서 팝 하지 않는 일부 영역에는 특별 한 처리가 필요 합니다. Holographic 앱은 다양 한 환경 집합에서 원활 하 게 실행 해야 합니다. 또한 성능 및 사용자가 항상 편안 하 게 유지 해야 합니다. 이 가이드는 이러한 영역을 테스트 하는 데 도움이 됩니다.
 
 ## <a name="performance"></a>성능
 
@@ -56,7 +56,7 @@ Holographic 앱은 다양 한 환경 집합에서 원활 하 게 실행 해야 �
 
 ### <a name="custom-voice-commands"></a>사용자 지정 음성 명령
 
-[음성 입력](../../design/voice-input.md) 은 자연 스러운 형태의 상호 작용입니다. 사용자 환경은 사용자가 선택한 명령과 사용자의 공개 방법에 따라 마법 또는 혼란 스 러 울 수 있습니다. 규칙으로 "선택" 또는 "안녕 코타"와 같은 시스템 음성 명령을 사용자 지정 명령으로 사용 하지 않아야 합니다. 고려해 야 할 몇 가지 사항은 다음과 같습니다.
+[음성 입력](../../design/voice-input.md) 은 자연 스러운 형태의 상호 작용입니다. 사용자 환경은 사용자가 선택한 명령과 사용자의 공개 방법에 따라 마법 또는 혼란 스 러 울 수 있습니다. 규칙으로 "선택" 또는 "안녕하세요 Cortana"와 같은 시스템 음성 명령을 사용자 지정 명령으로 사용 하지 않아야 합니다. 고려해 야 할 몇 가지 사항은 다음과 같습니다.
 1. **비슷한 소리를 사용 하지 마십시오.** 는 잠재적으로 잘못 된 명령을 트리거할 수 있습니다.
 2. **가능 하면 발음에 서식 있는 단어를 선택 합니다.** False 활성화를 최소화 하거나 방지 합니다.
 
@@ -84,11 +84,11 @@ Holographic 앱은 다양 한 환경 집합에서 원활 하 게 실행 해야 �
 
 ### <a name="multi-app-scenarios"></a>다중 앱 시나리오
 
-앱 간을 전환할 때, 특히 백그라운드 작업을 구현한 경우 핵심 앱 기능을 확인 합니다. 해당 하는 경우 복사/붙여넣기 및 Cortana 통합도 가능 합니다.
+앱 간을 전환할 때, 특히 백그라운드 작업을 구현한 경우 핵심 앱 기능을 확인 합니다. 복사/붙여넣기 및 Cortana 통합은 해당 하는 경우에도 확인할 가치가 있습니다.
 
 ## <a name="telemetry"></a>원격 분석
 
-원격 분석 및 분석을 사용 하 여 안내 합니다. 앱에 분석을 통합 하면 베타 테스터와 최종 사용자의 앱에 대 한 통찰력을 얻을 수 있습니다. 이 데이터를 사용 하 여 스토어에 제출 하기 전에 앱을 최적화 하 고 향후 업데이트를 지원할 수 있습니다. 많은 분석 옵션이 있습니다. 시작할 위치를 모를 경우 [App Insights](https://www.visualstudio.com/products/application-insights-vs.aspx)를 확인 하세요.
+원격 분석 및 분석을 사용 하 여 안내 합니다. 앱에 분석을 통합 하면 베타 테스터와 최종 사용자의 앱에 대 한 통찰력을 얻을 수 있습니다. 이 데이터를 사용 하 여 스토어에 제출 하기 전에 앱을 최적화 하 고 향후 업데이트를 지원할 수 있습니다. 많은 분석 옵션이 있습니다. 시작할 위치를 모를 경우 [앱 Insights](https://www.visualstudio.com/products/application-insights-vs.aspx)을 확인 하세요.
 
 고려할 질문:
 1. 사용자가 공간을 어떻게 사용 하나요?
@@ -98,21 +98,21 @@ Holographic 앱은 다양 한 환경 집합에서 원활 하 게 실행 해야 �
 5. 사용자가 가장 일반적으로 사용 하는 사용 경로는 무엇 인가요?
 6. 사용자에 게 예기치 않은 상태나 오류가 발생 하나요?
 
-## <a name="emulator-and-simulated-input"></a>에뮬레이터 및 시뮬레이션 된 입력
+## <a name="emulator-and-simulated-input"></a>Emulator 및 시뮬레이션 된 입력
 
-[HoloLens 에뮬레이터](using-the-hololens-emulator.md) 는 다양 한 종류의 시뮬레이션 된 사용자 특성 및 공백으로 Holographic 앱을 효율적으로 테스트 하는 좋은 방법입니다. 다음은 에뮬레이터를 효과적으로 사용 하 여 앱을 테스트할 수 있는 몇 가지 제안 사항입니다.
+[HoloLens 에뮬레이터](using-the-hololens-emulator.md) 는 다양 한 종류의 시뮬레이션 된 사용자 특징과 공백으로 Holographic 앱을 효율적으로 테스트 하는 좋은 방법입니다. 다음은 에뮬레이터를 효과적으로 사용 하 여 앱을 테스트할 수 있는 몇 가지 제안 사항입니다.
 1. **에뮬레이터의 가상 방을 사용 하 여 테스트를 확장 합니다.** 에뮬레이터에는 훨씬 더 많은 환경에서 앱을 테스트 하는 데 사용할 수 있는 가상 대화방 집합이 함께 제공 됩니다.
 2. **에뮬레이터를 사용 하 여 모든 각도에서 앱을 확인 합니다.** Pageup 키/PageDn 키를 사용 하면 시뮬레이션 된 사용자가 더 이상 이상으로 설정 됩니다.
-3. **실제 HoloLens를 사용 하 여 앱을 테스트 합니다.** HoloLens 에뮬레이터는 앱을 신속 하 게 반복 하 고 새 버그를 catch 하는 데 도움이 되는 유용한 도구 이지만, Windows 스토어에 제출 하기 전에 실제 HoloLens에서 테스트 해야 합니다. 이는 성능 및 환경이 실제 하드웨어에 적합 한지 확인 하는 데 중요 합니다.
+3. **실제 HoloLens를 사용 하 여 앱을 테스트 합니다.** HoloLens Emulator은 앱을 신속 하 게 반복 하 고 새 버그를 catch 하는 데 도움이 되는 유용한 도구 이지만, Windows 저장소에 제출 하기 전에 실제 HoloLens를 테스트 해야 합니다. 이는 성능 및 환경이 실제 하드웨어에 적합 한지 확인 하는 데 중요 합니다.
 
 ## <a name="automated-testing-with-perception-simulation"></a>인식 시뮬레이션으로 자동화 된 테스트
 
-일부 앱 개발자는 앱의 테스트를 자동화할 수 있습니다. 간단한 단위 테스트 외에도 HoloLens의 [인식 시뮬레이션](perception-simulation.md) 스택을 사용 하 여 사용자와 앱에 대 한 사용자 입력을 자동화할 수 있습니다. 인식 시뮬레이션 API는 HoloLens 에뮬레이터 또는 실제 HoloLens에 시뮬레이트된 입력을 보낼 수 있습니다.
+일부 앱 개발자는 앱의 테스트를 자동화할 수 있습니다. 간단한 단위 테스트 외에도 HoloLens에서 [인식 시뮬레이션](perception-simulation.md) 스택을 사용 하 여 앱에 대 한 사용자 및 세계 입력을 자동화할 수 있습니다. 인식 시뮬레이션 API는 HoloLens 에뮬레이터 또는 물리적 HoloLens에 시뮬레이트된 입력을 보낼 수 있습니다.
 
 ## <a name="windows-app-certification-kit"></a>Windows 앱 인증 키트
 
-앱이 [Windows 스토어에 게시](../../distribute/submitting-an-app-to-the-microsoft-store.md)될 수 있는 가장 좋은 기회를 제공 하려면 인증을 위해 제출 하기 전에 로컬에서 유효성을 검사 하 고 테스트 합니다. 앱이 Holographic 장치 제품군을 대상으로 하는 경우 [Windows 앱 인증 키트](/windows/uwp/debug-test-perf/windows-app-certification-kit) 는 PC 에서만 로컬 정적 분석 테스트를 실행 합니다. HoloLens에서 테스트가 실행 되지 않습니다.
+앱이 [Windows 스토어에 게시할](../../distribute/submitting-an-app-to-the-microsoft-store.md)수 있는 가장 좋은 기회를 제공 하기 위해 인증을 위해 제출 하기 전에 로컬에서 유효성을 검사 하 고 테스트 합니다. 앱이 Windows를 대상으로 하는 경우 Holographic 장치 제품군 [Windows 앱 인증 키트](/windows/uwp/debug-test-perf/windows-app-certification-kit) 는 PC 에서만 로컬 정적 분석 테스트를 실행 합니다. HoloLens에서 테스트가 실행 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 * [Windows 스토어에 앱 제출](../../distribute/submitting-an-app-to-the-microsoft-store.md)

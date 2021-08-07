@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 04/26/2019
 ms.topic: article
-keywords: 혼합 현실, 손, 움직임 컨트롤러, 상호 작용, 디자인, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 1dffdd5f3471993dfdb5e504e4c5b87ec0bfef7d
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: 혼합 현실, 손, 움직임 컨트롤러, 상호 작용, 디자인, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, mrtk, 혼합 현실 Toolkit
+ms.openlocfilehash: 3a54d707260a3e5aebd83a53b62098504c86c9fea7b2ecbb49d3dbd8b72400dd
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847322"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213702"
 ---
 # <a name="hands-and-motion-controllers"></a>손 및 모션 컨트롤러
 
@@ -34,12 +34,12 @@ ms.locfileid: "97847322"
 
 :::row:::
     :::column:::
-       [![손으로 직접 조작](images/hands-and-controllers-direct-manipulation.jpg)](direct-manipulation.md)<br>
+       [![수동으로 직접 조작](images/hands-and-controllers-direct-manipulation.jpg)](direct-manipulation.md)<br>
        ### <a name="direct-manipulation-with-handsbr"></a>[수동으로 직접 조작](direct-manipulation.md)<br>
        사용자가 holograms를 터치 하 고 조작 하는 데 사용할 수 있는 바늘의 기능을 적용 하는 모달. 일상의 경험을 사용 하 고 적절 한 시각적 affordances 제공 함으로써 사용자는 실제 개체를 조작 하는 것과 같은 방식으로 가상 시스템과 상호 작용할 수 있습니다.
     :::column-end:::
     :::column:::
-       [![손으로 가리키기 및 커밋](images/hands-and-controllers-point-and-commit.jpg)](point-and-commit.md)<br>
+       [![수동으로 가리키고 커밋](images/hands-and-controllers-point-and-commit.jpg)](point-and-commit.md)<br>
         ### <a name="point-and-commit-with-handsbr"></a>[수동으로 가리키고 커밋](point-and-commit.md)<br>
         이를 통해 사용자는 거리가 holograms 상호 작용할 수 있습니다. 사용자가 주변 환경을 최대한 활용할 수 있도록 합니다. 사용자는 어디 든 지 holograms를 배치할 수 있으며 모든 거리에서 계속 액세스할 수 있습니다. 2D 및 3D holograms을 제어 하 고 조작 하기 위한 멘 탈 모델 및 제스처는 직접 조작의 경우와 매우 동기화 됩니다.
     :::column-end:::

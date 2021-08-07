@@ -1,5 +1,5 @@
 ---
-title: 원격 포트 핫스폿
+title: 핫스팟 텔레포트
 description: MRTK의 Teleport 핫스팟 구성 요소에 대한 설명서
 author: RogPodge
 ms.author: roliu
@@ -7,18 +7,18 @@ ms.date: 03/25/2021
 ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, Teleport 시스템, Teleport 핫스팟
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: 01ae900800c4a13ca7bafc3391ff51b752a95ae0
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 755b0e8f53be2f393b52395309ed9ab0fad96cadc2e4289400cfff45a99aa6a7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176199"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189466"
 ---
-# <a name="teleport-hotspot"></a>원격 포트 핫스폿
+# <a name="teleport-hotspot"></a>핫스팟 텔레포트
 
 원격 포트 핫스팟은 사용자가 해당 위치로 원격 전송할 때 특정 위치와 방향에 있는지 확인하기 위해 gameobject에 추가할 수 있는 구성 요소입니다.
 
-## <a name="usage"></a>사용
+## <a name="usage"></a>사용량
 
 ### <a name="how-to-create-a-teleport-hotspot"></a>원격 포트 핫스팟을 만드는 방법
 

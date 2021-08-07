@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 2151887a6162239e993634d5d346065362f1c428
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: 5efab728905cd9885bf49f54b1939f3957cc5815af00dc816a4044a3f659b3bb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114282037"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210706"
 ---
 # <a name="creating-a-camera-settings-provider"></a>카메라 설정 공급자 만들기
 
@@ -26,7 +26,7 @@ ms.locfileid: "114282037"
 1. 타사 추가 기능
 1. Microsoft Mixed Reality Toolkit
 
-MRTK에 새 데이터 공급자를 제출하는 승인 프로세스는 사례별로 다르며 초기 제안 시 전달됩니다. 새 [ *기능 요청* 형식 문제](https://github.com/microsoft/MixedRealityToolkit-Unity/issues)를 만들어 제안서를 제출할 수 있습니다.
+MRTK에 새 데이터 공급자를 제출하기 위한 승인 프로세스는 사례별로 다르며 초기 제안 시 전달됩니다. 새 [ *기능 요청* 형식 문제](https://github.com/microsoft/MixedRealityToolkit-Unity/issues)를 만들어 제안서를 제출할 수 있습니다.
 
 ### <a name="third-party-add-ons"></a>타사 추가 기능
 
@@ -209,7 +209,7 @@ ContosoCameraEditor 어셈블리 정의는 프로필 검사자와 편집기별 �
 
 Microsoft Mixed Reality Toolkit 패키지의 일부로 데이터 공급자를 제출하고 수락하는 경우 Microsoft MRTK 팀은 이를 MRTK 제품의 일부로 패키지하고 배포합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [카메라 시스템 개요](camera-system-overview.md)
 - [`BaseCameraSettingsProvider` 클래스](xref:Microsoft.MixedReality.Toolkit.CameraSystem.BaseCameraSettingsProvider)

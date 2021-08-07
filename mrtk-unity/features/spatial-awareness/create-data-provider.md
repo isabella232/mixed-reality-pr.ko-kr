@@ -1,49 +1,49 @@
 ---
 title: 공간 인식 Data Provider 만들기
-description: MRTK에서 사용자 지정 데이터 공급자를 만드는 방법을 설명 합니다.
+description: MRTK에서 사용자 지정 데이터 공급자를 만드는 방법을 설명합니다.
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 04a0cdbd18f666b6a99c120eb28966234cc8c92d
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 05186c418a7b0b7b143abc58be6a6afb64cb69f5a1c90c73ed516d51c2a5d8ea
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145156"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188864"
 ---
 # <a name="creating-a-spatial-awareness-system-data-provider"></a>공간 인식 시스템 데이터 공급자 만들기
 
-공간 인식 시스템은 응용 프로그램에 실제 환경에 대 한 데이터를 제공 하기 위한 확장 가능한 시스템입니다. 새 하드웨어 플랫폼에 대 한 지원을 추가 하거나 새로운 형식의 공간 인식 데이터를 추가 하려면 사용자 지정 데이터 공급자가 필요할 수 있습니다.
+공간 인식 시스템은 애플리케이션에 실제 환경에 대한 데이터를 제공하는 데 사용할 수 있는 시스템입니다. 새 하드웨어 플랫폼 또는 새로운 형태의 공간 인식 데이터에 대한 지원을 추가하려면 사용자 지정 데이터 공급자가 필요할 수 있습니다.
 
-이 문서에서는 공간 인식 시스템에 대해 공간 관찰자 라고도 하는 [사용자 지정 데이터 공급자](../../architecture/systems-extensions-providers.md)를 만드는 방법을 설명 합니다. 여기에 표시 된 예제 코드는 [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) [편집기에서 3d 메시 데이터를 로드 하](spatial-object-mesh-observer.md)는 데 유용 하 게 사용할 수 있는 클래스 구현에서 가져온 것입니다.
+이 문서에서는 공간 인식 시스템에 대해 공간 관찰자라고도 하는 [사용자 지정 데이터 공급자를](../../architecture/systems-extensions-providers.md)만드는 방법을 설명합니다. 여기에 표시된 예제 코드는 [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) 편집기에서 [3D 메시 데이터를 로드하는 데 유용한](spatial-object-mesh-observer.md)클래스 구현에서 나온 것입니다.
 
 > [!NOTE]
-> 이 예제에서 사용 되는 전체 소스 코드는 폴더에 있습니다 `Assets/MRTK/Providers/ObjectMeshObserver` .
+> 이 예제에 사용된 전체 소스 코드는 폴더에서 찾을 수 `Assets/MRTK/Providers/ObjectMeshObserver` 있습니다.
 
-## <a name="namespace-and-folder-structure"></a>네임 스페이스 및 폴더 구조
+## <a name="namespace-and-folder-structure"></a>네임스페이스 및 폴더 구조
 
 데이터 공급자는 다음 두 가지 방법 중 하나로 배포할 수 있습니다.
 
 1. 타사 추가 기능
-1. Microsoft Mixed Reality Toolkit의 일부
+1. Microsoft Mixed Reality Toolkit
 
-새 데이터 공급자를 MRTK에 제출 하는 승인 프로세스는 사례별로 다르며 초기 제안의 시점에 전달 됩니다. 새 [ *기능 요청* 유형 문제](https://github.com/microsoft/MixedRealityToolkit-Unity/issues)를 만들어 제안을 제출할 수 있습니다.
+MRTK에 새 데이터 공급자를 제출하기 위한 승인 프로세스는 사례별로 다르며 초기 제안 시 전달됩니다. 새 [ *기능 요청* 형식 문제](https://github.com/microsoft/MixedRealityToolkit-Unity/issues)를 만들어 제안서를 제출할 수 있습니다.
 
 ### <a name="third-party-add-on"></a>타사 추가 기능
 
 **네임스페이스**
 
-데이터 공급자는 잠재적 이름 충돌을 완화 하기 위해 네임 스페이스가 필요 합니다. 네임 스페이스는 다음 구성 요소를 포함 하는 것이 좋습니다.
+데이터 공급자는 잠재적인 이름 충돌을 완화하기 위해 네임스페이스가 있어야 합니다. 네임스페이스에는 다음 구성 요소가 포함되는 것이 좋습니다.
 
-- 추가 기능을 생성 하는 회사 이름
+- 추가 기능 생성 회사 이름
 - 기능 영역
 
-예를 들어 Contoso 회사에서 만들고 제공 하는 공간 인식 데이터 공급자는 *"MixedReality"* 일 수 있습니다.
+예를 들어 Contoso 회사에서 만들고 제공하는 Spatial Awareness 데이터 공급자는 *"Contoso.MixedReality.Toolkit 수 있습니다. SpatialAwareness"*.
 
 **폴더 구조**
 
-다음 이미지와 같이 폴더 계층 구조에서 데이터 공급자에 대 한 소스 코드를 레이아웃 되도록 하는 것이 좋습니다.
+다음 이미지와 같이 데이터 공급자의 소스 코드를 폴더 계층 구조에 배치하는 것이 좋습니다.
 
 ![폴더 구조의 예](../images/spatial-awareness/ExampleProviderFolderStructure.png)
 
@@ -53,7 +53,7 @@ ms.locfileid: "110145156"
 
 **네임스페이스**
 
-공간 인식 시스템 데이터 공급자가 [Mixed Reality Toolkit 리포지토리에](https://github.com/Microsoft/MixedRealityToolkit-Unity)제출되는 경우 네임스페이스는 Microsoft.MixedReality.Toolkit(예: *Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver)로* 시작해야 **합니다.**
+공간 인식 시스템 데이터 공급자가 [Mixed Reality Toolkit 리포지토리에](https://github.com/Microsoft/MixedRealityToolkit-Unity)제출되는 경우 네임스페이스는 Microsoft.MixedReality로 시작해야 **합니다.** Toolkit(예: *Microsoft.MixedReality.Toolkit. SpatialObjectMeshObserver*)
 
  및 코드는 MRTK/Providers(예: *MRTK/Providers/ObjectMeshObserver) 아래의* 폴더에 있어야 합니다.
 
@@ -67,7 +67,7 @@ ms.locfileid: "110145156"
 
 모든 공간 데이터 개체는 인터페이스를 구현해야 [`IMixedRealitySpatialAwarenessObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObject) 합니다.
 
-Mixed Reality 도구 키트 기반은 새 데이터 공급자에서 사용하거나 확장할 수 있는 다음과 같은 공간 개체를 제공합니다.
+Mixed Reality Toolkit 기초는 새 데이터 공급자에서 사용하거나 확장할 수 있는 다음과 같은 공간 개체를 제공합니다.
 
 - [`BaseSpatialAwarenessObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialAwarenessObject)
 - [`SpatialAwarenessMeshObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessMeshObject)
@@ -183,11 +183,11 @@ private void SendMeshObjects()
 ```
 
 > [!NOTE]
-> [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) `OnObservationUpdated` 3D 모델이 한 번만 로드되므로 클래스는 이벤트를 발생시키지 않습니다. 구현을 클래스 관찰 [`WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver) 된 메시에 대 한 이벤트를 발생 하는 예제를 제공 `OnObservationUpdated` 합니다.
+> [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) `OnObservationUpdated` 3D 모델이 한 번만 로드되므로 클래스는 이벤트를 발생시키지 않습니다. [`WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver)구현을 클래스는 관찰 된 메시에 대 한 이벤트를 발생 하는 예제를 제공 `OnObservationUpdated` 합니다.
 
 ### <a name="add-unity-profiler-instrumentation"></a>Unity Profiler 계측 추가
 
-성능은 혼합 현실 애플리케이션에서 매우 중요합니다. 모든 구성 요소는 애플리케이션이 고려해야 하는 약간의 오버헤드를 추가합니다. 이를 위해 모든 공간 인식 데이터 공급자는 내부 루프 및 자주 활용되는 코드 경로에 Unity Profiler 계측을 포함하는 것이 중요합니다.
+성능은 혼합 현실 애플리케이션에서 매우 중요합니다. 모든 구성 요소는 애플리케이션이 고려해야 하는 오버헤드를 어느 정도 추가합니다. 이를 위해 모든 공간 인식 데이터 공급자는 내부 루프 및 자주 활용되는 코드 경로에 Unity Profiler 계측을 포함하는 것이 중요합니다.
 
 사용자 지정 공급자를 계측할 때 MRTK에서 사용하는 패턴을 구현하는 것이 좋습니다.
 
@@ -209,19 +209,19 @@ private void SendMeshObjects()
 > [!Note]
 > 프로파일러 표식 식별에 사용되는 이름은 임의로 지정됩니다. MRTK는 다음 패턴을 사용합니다.
 >
-> "[product] className. methodName-선택 사항
+> "[product] className.methodName - 선택적 참고"
 >
-> 사용자 지정 데이터 공급자는 추적을 분석할 때 특정 구성 요소 및 메서드를 쉽게 식별할 수 있도록 비슷한 패턴을 따르는 것이 좋습니다.
+> 사용자 지정 데이터 공급자는 추적을 분석할 때 특정 구성 요소 및 메서드의 식별을 간소화하기 위해 유사한 패턴을 따르는 것이 좋습니다.
 
 ## <a name="create-the-profile-and-inspector"></a>프로필 및 검사기 만들기
 
-혼합 현실 도구 키트에서 데이터 공급자는 [프로필](../profiles/profiles.md)을 사용 하 여 구성 됩니다.
+Mixed Reality Toolkit 데이터 공급자는 프로필을 사용하여 [구성됩니다.](../profiles/profiles.md)
 
 ### <a name="define-the-profile"></a>프로필 정의
 
-프로필 콘텐츠는 데이터 공급자의 액세스 가능 속성 (예: 업데이트 간격)을 미러링합니다. 각 인터페이스에 정의 된 모든 사용자 구성 가능 속성은 프로필에 포함 되어야 합니다.
+프로필 콘텐츠는 데이터 공급자의 액세스 가능한 속성(예: 업데이트 간격)을 미러해야 합니다. 각 인터페이스에 정의된 모든 사용자 구성 가능 속성은 프로필에 포함되어야 합니다.
 
-기본 클래스는 새 데이터 공급자가 기존 공급자를 확장 하는 경우에 권장 됩니다. 예를 들어는를 [`SpatialObjectMeshObserverProfile`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserverProfile) 확장 [`MixedRealitySpatialAwarenessMeshObserverProfile`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.MixedRealitySpatialAwarenessMeshObserverProfile) 하 여 고객이 환경 데이터로 사용할 3d 모델을 제공할 수 있도록 합니다.
+새 데이터 공급자가 기존 공급자를 확장하는 경우 기본 클래스를 권장합니다. 예를 들어 는 [`SpatialObjectMeshObserverProfile`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserverProfile) [`MixedRealitySpatialAwarenessMeshObserverProfile`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.MixedRealitySpatialAwarenessMeshObserverProfile) 고객이 환경 데이터로 사용할 3D 모델을 제공할 수 있도록 를 확장합니다.
 
 ```c#
 [CreateAssetMenu(
@@ -241,13 +241,13 @@ public class SpatialObjectMeshObserverProfile : MixedRealitySpatialAwarenessMesh
 }
 ```
 
-`CreateAssetMenu`특성을 프로필 클래스에 적용 하 여 고객이 asset   >    >  **Mixed Reality 도구 키트**  >  **프로필** 만들기 메뉴를 사용 하 여 프로필 인스턴스를 만들 수 있도록 할 수 있습니다.
+`CreateAssetMenu`특성은 프로필 클래스에 적용하여 고객이 자산 **만들기** Mixed Reality Toolkit 프로필 메뉴를 사용하여 프로필  >  **인스턴스를** 만들 수 있도록 할 수  >    >  **있습니다.**
 
 ### <a name="implement-the-inspector"></a>검사기 구현
 
-프로필 검사기는 프로필 내용을 구성 하 고 볼 수 있는 사용자 인터페이스입니다. 각 프로필 검사자는 클래스를 확장 해야 합니다 [`BaseMixedRealityToolkitConfigurationProfileInspector`](xref:Microsoft.MixedReality.Toolkit.Editor.BaseMixedRealityToolkitConfigurationProfileInspector) .
+프로필 검사자는 프로필 콘텐츠를 구성하고 보기 위한 사용자 인터페이스입니다. 각 프로필 검사기에서 클래스를 확장해야 [`BaseMixedRealityToolkitConfigurationProfileInspector`](xref:Microsoft.MixedReality.Toolkit.Editor.BaseMixedRealityToolkitConfigurationProfileInspector) 합니다.
 
-`CustomEditor`특성은 검사기가 적용 되는 자산의 유형을 Unity에 알려 줍니다.
+`CustomEditor`특성은 검사자가 적용되는 자산 유형을 Unity에 알릴 수 있습니다.
 
 ```c#
 [CustomEditor(typeof(SpatialObjectMeshObserverProfile))]
@@ -257,19 +257,19 @@ public class SpatialObjectMeshObserverProfileInspector : BaseMixedRealityToolkit
 
 ## <a name="create-assembly-definitions"></a>어셈블리 정의 만들기
 
-Mixed Reality Toolkit에서는 어셈블리 정의 ([. asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) 파일을 사용 하 여 구성 요소 간의 종속성을 지정 하 고 컴파일 시간을 단축 하는 Unity를 지원할 수 있습니다.
+Mixed Reality Toolkit 어셈블리 정의([.asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) 파일을 사용하여 구성 요소 간의 의존성을 지정하고 Unity를 통해 컴파일 시간을 단축합니다.
 
-모든 데이터 공급자와 해당 편집기 구성 요소에 대해 어셈블리 정의 파일을 만드는 것이 좋습니다.
+모든 데이터 공급자 및 해당 편집기 구성 요소에 대해 어셈블리 정의 파일을 만드는 것이 좋습니다.
 
-이전 예제에서 [폴더 구조](#namespace-and-folder-structure) 를 사용 하는 경우 ContosoSpatialAwareness 데이터 공급자에 대 한 두 개의. asmdef 파일이 있습니다.
+이전 예제의 [폴더 구조를](#namespace-and-folder-structure) 사용하면 ContosoSpatialAwareness 데이터 공급자에 대한 두 개의 .asmdef 파일이 있습니다.
 
-첫 번째 어셈블리 정의는 데이터 공급자에 대 한 것입니다. 이 예에서는 ContosoSpatialAwareness 라고 하 고 예제의 *ContosoSpatialAwareness* 폴더에 배치 됩니다. 이 어셈블리 정의는 Microsoft.MixedReality.Toolkit 및 해당 어셈블리가 종속된 다른 어셈블리에 대한 종속성을 지정해야 합니다.
+첫 번째 어셈블리 정의는 데이터 공급자에 대한 것입니다. 이 예제에서는 ContosoSpatialAwareness라고 하며 예제의 *ContosoSpatialAwareness 폴더에* 있습니다. 이 어셈블리 정의는 Microsoft.MixedReality에 대한 종속성을 지정해야 합니다. Toolkit 및 해당 어셈블리가 의존하는 다른 어셈블리입니다.
 
 ContosoInputEditor 어셈블리 정의는 프로필 검사자와 편집기별 코드를 지정합니다. 이 파일은 편집기 코드의 루트 폴더에 있어야 합니다. 이 예제에서 파일은 *ContosoSpatialAwareness\Editor 폴더에* 있습니다. 이 어셈블리 정의에는 ContosoSpatialAwareness 어셈블리에 대한 참조도 포함됩니다.
 
-- Microsoft.MixedReality.Toolkit
-- Microsoft.MixedReality.Toolkit.Editor.Inspectors
-- Microsoft.MixedReality.Toolkit.Editor.Utilities
+- Microsoft.MixedReality. Toolkit
+- Microsoft.MixedReality. Toolkit. Editor.Inspectors
+- Microsoft.MixedReality. Toolkit. Editor.Utilities
 
 ## <a name="register-the-data-provider"></a>데이터 공급자 등록
 
@@ -281,17 +281,17 @@ ContosoInputEditor 어셈블리 정의는 프로필 검사자와 편집기별 �
 
 타사 구성 요소로 배포되는 데이터 공급자에는 패키징 및 배포에 대한 구체적인 세부 정보가 개발자의 기본 설정으로 남아 있습니다. 가장 일반적인 솔루션은 .unitypackage를 생성하고 Unity 자산 저장소를 통해 배포하는 것입니다.
 
-Microsoft Mixed Reality Toolkit 패키지의 일부로 데이터 공급자를 제출하고 수락하는 경우 Microsoft MRTK 팀은 이를 MRTK 제품의 일부로 패키지하고 배포합니다.
+데이터 공급자가 제출되고 Microsoft Mixed Reality Toolkit 패키지의 일부로 수락되면 Microsoft MRTK 팀은 이를 MRTK 제품의 일부로 패키지하고 배포합니다.
 
 ## <a name="see-also"></a>참고 항목
 
 - [공간 인식 시스템](spatial-awareness-getting-started.md)
-- [`IMixedRealitySpatialAwarenessObject` 인터페이스](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObject)
+- [`IMixedRealitySpatialAwarenessObject` 감열재](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObject)
 - [`BaseSpatialAwarenessObject` 클래스](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialAwarenessObject)
 - [`SpatialAwarenessMeshObject` 클래스](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessMeshObject)
 - [`SpatialAwarenessPlanarObject` 클래스](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessPlanarObject)
-- [`IMixedRealitySpatialAwarenessObserver` 인터페이스](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver)
+- [`IMixedRealitySpatialAwarenessObserver` 감열재](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver)
 - [`BaseSpatialObserver` 클래스](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver)
-- [`IMixedRealitySpatialAwarenessMeshObserver` 인터페이스](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver)
-- [`IMixedRealityDataProvider` 인터페이스](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider)
-- [`IMixedRealityCapabilityCheck` 인터페이스](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck)
+- [`IMixedRealitySpatialAwarenessMeshObserver` 감열재](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver)
+- [`IMixedRealityDataProvider` 감열재](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider)
+- [`IMixedRealityCapabilityCheck` 감열재](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck)

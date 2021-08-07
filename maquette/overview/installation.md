@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/26/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Maquette, 프로토타입, 혼합 현실, 가상 현실, VR, MR, 피드백, 피드백 허브, 버그
-ms.openlocfilehash: ba0064326e83f04b056c0baa2f86f718e41bedfe
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+ms.openlocfilehash: c31f461adbe553a5c10e7acfff3037ea0c2b65caf2bbe63bfc234e067a6369e8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94935428"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214776"
 ---
 # <a name="installing-maquette"></a>Maquette 설치
 

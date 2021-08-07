@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK,
-ms.openlocfilehash: b7ec8d9ca2213ff998f94a6a2d029900ff886a2f
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: e18695610b5e07c4f811e7c43bc13607857a9459407f9b16f39d4f7350f354e6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176416"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115215003"
 ---
 # <a name="mrtk-profile-configuration-guide"></a>MRTK 프로필 구성 가이드
 
@@ -93,7 +93,7 @@ Mixed Reality Toolkit 대한 모든 "기본" 프로필은 Assets/MRTK/SDK/Profil
 
 ## <a name="input-system-settings"></a>입력 시스템 설정
 
-Mixed Reality Project 기본적으로 선택되는 프로젝트 주변의 모든 입력 이벤트를 라우팅하기 위한 강력하고 잘 학습된 입력 시스템을 제공합니다.
+Mixed Reality Project 기본적으로 선택된 프로젝트 주변의 모든 입력 이벤트를 라우팅하기 위한 강력하고 잘 학습된 입력 시스템을 제공합니다.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputSystemSelection.png" width="650px" alt="Input System settings 1" style="display:block;">
 
@@ -139,7 +139,7 @@ Mixed Reality Project 기본적으로 선택된 프로젝트에서 공간 검색
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SpatialAwarenessSystemSelection.png" width="650px" alt="Spatial Awareness settings 1" style="display:block;">
 
-Mixed Reality Toolkit 공간 인식 구성을 사용하면 애플리케이션이 프로그래밍 방식으로 시작될 때 자동으로 시작되는지 여부와 보기 필드의 익스텐트를 설정하는 등 시스템이 시작되는 방식을 조정할 수 있습니다.
+Mixed Reality Toolkit 공간 인식 구성을 사용하면 애플리케이션이 프로그래밍 방식으로 시작될 때 자동으로 시작되는지 여부와 관계없이 시스템이 시작되는 방식을 조정할 수 있을 뿐만 아니라 보기 필드의 익스텐트를 지정할 수 있습니다.
 
 또한 메시 및 표면 설정을 구성하고 프로젝트에서 주변 환경을 이해하는 방법을 추가로 사용자 지정할 수 있습니다.
 
@@ -174,7 +174,7 @@ MRTK는 복잡한 가감 장면 로드/언로드를 관리하는 데 도움이 �
 
 ## <a name="additional-services-settings"></a>추가 서비스 설정
 
-Mixed Reality Toolkit 고급 영역 중 하나는 프레임워크에 "서비스"를 등록할 수 있는 [서비스 로케이터 패턴](https://en.wikipedia.org/wiki/Service_locator_pattern) 구현입니다. 이렇게 하면 프레임워크를 새로운 기능/시스템으로 쉽게 확장할 수 있을 뿐만 아니라 프로젝트에서 이러한 기능을 활용하여 자체 런타임 구성 요소를 등록할 수도 있습니다.
+Mixed Reality Toolkit 고급 영역 중 하나는 프레임워크에 "서비스"를 등록할 수 있는 [서비스 로케이터 패턴](https://en.wikipedia.org/wiki/Service_locator_pattern) 구현입니다. 이렇게 하면 프레임워크를 새로운 기능/시스템으로 쉽게 확장할 수 있지만 프로젝트에서 이러한 기능을 활용하여 자체 런타임 구성 요소를 등록할 수도 있습니다.
 
 등록된 모든 서비스는 MonoBehaviour 또는 어설프게 싱글톤 패턴을 구현하는 오버헤드와 비용 없이 모든 Unity 이벤트를 최대한 활용할 수 있습니다. 이를 통해 시스템 생성, 런타임 게임 논리 또는 실제로 다른 모든 것과 같은 포그라운드 및 백그라운드 프로세스를 실행하기 위한 장면 오버헤드가 없는 순수 C# 구성 요소를 사용할 수 있습니다.
 
@@ -249,7 +249,7 @@ Mixed Reality Toolkit 고급 영역 중 하나는 프레임워크에 "서비스"
 제스처는 다양한 SDK에서 제공하는 다양한 "제스처" 입력 메서드(예: HoloLens)에 입력 작업을 할당할 수 있도록 하는 시스템별 구현입니다.
 
 > [!NOTE]
-> 현재 제스처 구현은 HoloLens 위한 것이며 나중에 Toolkit 추가될 때 다른 시스템에 대해 향상됩니다(아직 날짜 없음).
+> 현재 제스처 구현은 HoloLens 위한 것이며 나중에 Toolkit 추가될 때 다른 시스템에 대해 향상될 예정입니다(아직 날짜 없음).
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_GesturesProfile.png" width="650px" alt="Gesture configuration" style="display:block;">
 
@@ -306,7 +306,7 @@ MRTK는 다음 컨트롤러/시스템에 대한 기본 구성을 제공합니다
 
 "전역"(특정 손으로 컨트롤러의 모든 인스턴스) 또는 개별 컨트롤러 유형/손에서 구성할 수 있습니다.
 
-MRTK는 Windows Mixed Reality 및 OpenVR에 대한 네이티브 SDK 컨트롤러 모델도 지원합니다. 이러한 구성은 장면에 GameObjects로 로드되고 플랫폼의 컨트롤러 추적을 사용하여 배치됩니다.
+MRTK는 Windows Mixed Reality 및 OpenVR에 대한 네이티브 SDK 컨트롤러 모델도 지원합니다. 이는 장면에 GameObjects로 로드되고 플랫폼의 컨트롤러 추적을 사용하여 배치됩니다.
 
 장면의 컨트롤러 표현이 실제 컨트롤러 위치에서 오프셋되어야 하는 경우 컨트롤러 모델의 프리팹에 대해 해당 오프셋을 설정하기만 하면 됩니다(예: 오프셋 위치로 컨트롤러 프리팹의 변환 위치 설정).
 
@@ -330,7 +330,7 @@ MRTK는 Windows Mixed Reality 및 OpenVR에 대한 네이티브 SDK 컨트롤러
 
 ### <a name="depth-buffer-renderer"></a>깊이 버퍼 렌더러
 
-일부 혼합 현실 플랫폼과 깊이 버퍼를 공유하면 [홀로그램 안정화가](../performance/hologram-stabilization.md)향상될 수 있습니다. 예를 들어 Windows Mixed Reality 플랫폼은 프레임을 렌더링하는 데 걸리는 시간 동안 미묘한 머리 이동을 고려하도록 픽셀당 렌더링된 장면을 수정할 수 있습니다. 그러나 이러한 기술을 사용하려면 정확한 데이터가 있는 깊이 버퍼가 필요하므로 기하 도형이 사용자로부터 얼마나 멀리 떨어져 있는지 알 수 있습니다.
+일부 혼합 현실 플랫폼과 깊이 버퍼를 공유하면 [홀로그램 안정화가 향상될](../performance/hologram-stabilization.md)수 있습니다. 예를 들어 Windows Mixed Reality 플랫폼은 프레임을 렌더링하는 데 걸리는 시간 동안 미묘한 머리 이동을 고려하도록 픽셀당 렌더링된 장면을 수정할 수 있습니다. 그러나 이러한 기술을 사용하려면 정확한 데이터가 있는 깊이 버퍼가 필요하므로 기하 도형이 사용자로부터 얼마나 멀리 떨어져 있는지 알 수 있습니다.
 
 장면에서 필요한 모든 데이터를 깊이 버퍼에 렌더링하도록 하기 위해 개발자는 구성 프로필의 *편집기 설정* *렌더링 깊이 버퍼* 기능을 전환할 수 있습니다. 그러면 현재 깊이 버퍼가 적용되고 후처리 효과인 를 주 카메라에 적용하여 장면 보기에 색으로 [`DepthBufferRenderer`](xref:Microsoft.MixedReality.Toolkit.Rendering.DepthBufferRenderer) 렌더링됩니다.
 
@@ -346,7 +346,7 @@ MRTK는 Windows Mixed Reality 및 OpenVR에 대한 네이티브 SDK 컨트롤러
 
 ### <a name="pre-mrtk-initialization-profile-switch"></a>MRTK 초기화 프로필 전환 전
 
-이는 MRTK 초기화 전에 실행 되는 MonoBehaviour (예:)를 연결 하 여 수행할 수 있습니다. 스크립트 (예: 호출)는 스크립트 `SetProfileBeforeInitialization` `MixedRealityToolkit` [실행 순서 설정을](https://docs.unity3d.com/Manual/class-MonoManager.html)설정 하 여 수행할 수 있는 스크립트 보다 먼저 실행 해야 합니다.
+MRTK 초기화 전에 실행되는 MonoBehaviour(아래 예제)를 연결하여 이 작업을 수행할 수 있습니다(즉, 각기()). 스크립트(예: `SetProfileBeforeInitialization` 호출)는 스크립트 실행 순서 설정 을 `MixedRealityToolkit` 설정하여 달성할 수 있는 [스크립트보다](https://docs.unity3d.com/Manual/class-MonoManager.html)일찍 실행되어야 합니다.
 
 ```csharp
 using Microsoft.MixedReality.Toolkit;
@@ -377,22 +377,22 @@ public class PreInitProfileSwapper : MonoBehaviour
 }
 ```
 
-"profileToUse" 대신 특정 플랫폼에 적용 되는 임의의 프로필 집합을 포함할 수 있습니다. HoloLens 예를 들어, 특정 플랫폼에 적용 되는 몇 가지 프로필 집합 (예: 1, VR의 경우 하나, HoloLens 2 등)이 있을 수 있습니다. 로드할 프로필을 파악 하기 위해 다양 한 표시기 (예: https://docs.unity3d.com/ScriptReference/SystemInfo.html 또는 카메라가 불투명/투명 한지 여부)를 사용할 수 있습니다.
+"profileToUse" 대신 특정 플랫폼에 적용되는 임의의 프로필 집합이 있을 수 있습니다(예: HoloLens 1용 프로필, VR용 프로필, HoloLens 2 등). 다양한 다른 표시기(예: https://docs.unity3d.com/ScriptReference/SystemInfo.html 또는 카메라가 불투명/투명한지 여부)를 사용하여 로드할 프로필을 파악할 수 있습니다.
 
 ### <a name="active-profile-switch"></a>활성 프로필 스위치
 
-이를 위해서는 `MixedRealityToolkit.Instance.ActiveProfile` 활성 프로필을 대체 하는 새 프로필로 속성을 설정 합니다.
+이 작업을 수행하려면 `MixedRealityToolkit.Instance.ActiveProfile` 속성을 활성 프로필을 대체하는 새 프로필로 설정합니다.
 
 ```csharp
 MixedRealityToolkit.Instance.ActiveProfile = profileToUse;
 ```
 
-참고 런타임 중에 설정 하는 경우 `ActiveProfile` 현재 실행 중인 서비스의 삭제는 모든 서비스의 마지막 behaviour () 이후에 발생 하며, 새 프로필과 연결 된 서비스의 인스턴스화 및 초기화는 모든 서비스의 첫 번째 업데이트 () 이전에 발생 합니다.
+런타임 중에 를 `ActiveProfile` 설정하면 모든 서비스의 마지막 LateUpdate() 이후에 현재 실행 중인 서비스가 삭제되고 새 프로필과 연결된 서비스의 인스턴스화 및 초기화가 모든 서비스의 첫 번째 Update() 전에 발생합니다.
 
-이 프로세스 중에는 눈에 띄는 응용 프로그램 hesitation 발생할 수 있습니다. 또한 스크립트 보다 우선 순위가 높은 모든 스크립트는 `MixedRealityToolkit` 새 프로필이 제대로 설정 되기 전에 해당 업데이트를 입력할 수 있습니다. 스크립트 우선 순위에 대 한 자세한 내용은 [스크립트 실행 순서 설정](https://docs.unity3d.com/Manual/class-MonoManager.html) 을 참조 하세요.
+이 프로세스 중에 눈에 띄는 애플리케이션 망설임이 발생할 수 있습니다. 또한 스크립트보다 우선 순위가 높은 `MixedRealityToolkit` 스크립트는 새 프로필을 제대로 설정하기 전에 업데이트를 입력할 수 있습니다. 스크립트 우선 순위에 대한 자세한 내용은 스크립트 [실행 순서 설정을](https://docs.unity3d.com/Manual/class-MonoManager.html) 참조하세요.
 
-프로필 전환 프로세스에서 기존 UI 카메라는 변경 되지 않은 상태로 유지 되 고, canvas를 필요로 하는 Unity UI 구성 요소가 스위치 후에도 계속 작동 하도록 보장 합니다.
+프로필 전환 프로세스에서 기존 UI 카메라는 변경되지 않은 상태로 유지되어 캔버스가 필요한 Unity UI 구성 요소가 스위치 후에도 계속 작동합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [홀로그램 안정화](../performance/hologram-stabilization.md)

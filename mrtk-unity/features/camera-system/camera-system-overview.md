@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk, 카메라,
-ms.openlocfilehash: cfb40b00d81133ad40e0e4d7a7b2ad87ee645e36
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 3c9bdbc96688c4df6ee2f39be2c8bb2023817f9081b5366308ba8b4c2590568d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177041"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211466"
 ---
 # <a name="camera-system-overview"></a>카메라 시스템 개요
 
@@ -77,7 +77,7 @@ Clear 플래그를 Skybox로 설정 하지 않으면 배경색 속성이 표시 
 
 품질 설정 값은 Unity가 장면을 렌더링할 때 사용 해야 하는 그래픽 품질을 나타냅니다. 품질 수준은 프로젝트 수준 설정이 며 한 카메라에 국한 되지 않습니다. 자세한 내용은 Unity 설명서의 [품질](https://docs.unity3d.com/Manual/class-QualitySettings.html) 문서를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [카메라 시스템 API 설명서](xref:Microsoft.MixedReality.Toolkit.CameraSystem)
 - [카메라 설정 공급자 만들기](create-settings-provider.md)

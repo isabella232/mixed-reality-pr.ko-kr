@@ -5,12 +5,12 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 04/06/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 빌드, 빌드 창, 도구
-ms.openlocfilehash: b0b2bb1d06a561f5f647d01145fe88f562c53017
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: d01fefd09337e2639388a43d94bd8beb93716e3ef7f12a9c924b5755fb594447
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211391"
 ---
 # <a name="build-window"></a>빌드 창
 ![빌드 & 배포 흐름](images/MRTK_BuildWindow0.png)

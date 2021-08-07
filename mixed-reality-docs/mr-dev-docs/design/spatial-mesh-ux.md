@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
-keywords: 혼합 현실, HoloLens, UI 컨트롤, 상호 작용, ui, ux, UX 디자인, 공간 UI, 공간 상호 작용, 3D UI, 3D UX, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 5bdcba60f38ac67bbf0f394337735f4a2d4ec423
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: 혼합 현실, HoloLens, UI 컨트롤, 상호 작용, ui, ux, ux 디자인, 공간 ui, 공간 상호 작용, 3d UI, 3d ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, mrtk, 혼합 현실 Toolkit
+ms.openlocfilehash: 7fcba586f55e6131235d031327da131aa8ba6c97958e4ac282a8f8d048d37992
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600632"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216292"
 ---
 # <a name="spatial-mesh"></a>공간 메시
 
@@ -24,7 +24,7 @@ ms.locfileid: "110600632"
 사용자가 콘텐츠를 집중적으로 사용 하 고 상호 작용할 수 있도록 하는 것이 중요 합니다. 배경에서 공간 메시의 연속 시각화는 혼란을 수 있습니다. 초기 실행에서 한 번만 또는 사용자가 공간을 대상으로 하 여 환경 메시를 표시 하려는 경우에만 환경을 시각화 하는 것이 좋습니다. 혼합 현실 포털에서이 동작을 관찰할 수 있습니다.
 <br>
 
-## <a name="spatial-mesh-visualization-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 공간 메시 시각화
+## <a name="spatial-mesh-visualization-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 mrtk의 공간 메시 시각화 (혼합 현실 Toolkit)
 
 MRTK는 공간 메시 시각화에 대 한 여러 자료를 제공 합니다.
 
@@ -42,7 +42,7 @@ MRTK는 공간 메시 시각화에 대 한 여러 자료를 제공 합니다.
 
 ---
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

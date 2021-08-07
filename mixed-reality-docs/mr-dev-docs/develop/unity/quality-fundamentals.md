@@ -6,16 +6,16 @@ ms.author: v-qianwen
 ms.date: 07/15/2021
 ms.topic: article
 keywords: 품질 기본 사항, 사례 연구, 프로젝트, 샘플, MRTK, Mixed Reality Toolkit, Unity, 샘플 앱, 예제 앱, 오픈 소스, Microsoft Store, HoloLens, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: e91ea1c69aeafaafa9c9bae30af6e5a288754764
-ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
+ms.openlocfilehash: a8189ca8cb161bb792ad298535c32eac1a47260d8d5559c2383e0322b2cbeb03
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114702950"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211994"
 ---
 # <a name="quality-fundamentals"></a>품질 기본 사항
 
-품질 기본 사항 은 훌륭한 혼합 현실 환경을 구축하는 기본 사항들을 보여 주는 HoloLens 2 앱입니다.  혼합 현실의 품질 문제를 학습하고 읽는 대신, 이제 앱에서 제공하는 옵션을 선택하여 일반적인 환경, 디자인 및 성능 문제와 솔루션을 직접 경험할 수 있습니다.
+품질 기본 사항 은 훌륭한 혼합 현실 환경을 구축하는 기본을 보여 주는 HoloLens 2 앱입니다.  혼합 현실에서 품질 문제를 학습하고 읽는 대신, 이제 앱에서 제공하는 옵션을 선택하여 일반적인 환경, 디자인 및 성능 문제 및 솔루션을 직접 경험할 수 있습니다.
 
 앱을 다운로드하고 설치하려면 앱 다운로드 페이지로 이동합니다.
 
@@ -38,9 +38,9 @@ HoloLens 품질 기본 사항 앱을 시작합니다. 앱의 홈페이지가 나
 
 ### <a name="surfaces"></a>Surfaces
 
-미러된 완료가 있는 미러 또는 표면은 개체의 모양에 대해 HoloLens 센서를 혼동할 수 있습니다.  화면에 반영된 개체는 디바이스에서 환경 변경으로 해석될 수 있으며, 이로 인해 디바이스 추적이 손실될 수 있습니다.  미러된 표면으로 인해 HoloLens 문제가 발생하는 경우 화면 또는 복제 가능한 시각 장애가 추가되는 것이 좋습니다.
+미러된 완료가 있는 미러 또는 표면은 개체의 모양에 대해 HoloLens 센서를 혼동할 수 있습니다.  화면에 반영된 개체는 디바이스에서 변경 환경으로 해석될 수 있으며, 이로 인해 디바이스 추적이 손실될 수 있습니다.  미러된 표면으로 인해 HoloLens 문제가 발생하는 경우 화면 또는 복제 가능한 시각 장애가 추가되는 것이 좋습니다.
 
-자세한 내용은 HoloLens 환경 고려 사항 에서 [공간의 표면을](/hololens/hololens-environment-considerations#surfaces-in-a-space) [참조하세요.](/hololens/hololens-environment-considerations)
+자세한 내용은 환경 고려 [사항 HoloLens 공간의 표면을](/hololens/hololens-environment-considerations#surfaces-in-a-space) [참조하세요.](/hololens/hololens-environment-considerations)
 
 ### <a name="lighting"></a>조명
 
@@ -50,7 +50,7 @@ HoloLens 성능은 매우 낮거나 매우 밝은 조명 조건의 영향을 받
 
 ## <a name="anchor-fundamentals"></a>앵커 기본 사항
 
-Spatial Anchors 사용하여 홀로그램을 물리적 공간에 맞추는 방법을 알아보려면 앱 홈페이지에서 **앵커 자금합을** 선택합니다.
+Spatial Anchors 사용하여 홀로그램을 물리적 공간에 맞추는 방법을 알아보려면 앱 홈페이지에서 **앵커 앵커기본을** 선택합니다.
 
 앱의 이 부분에서는 다음과 같은 사용자 시나리오를 살펴봅니다.
 
@@ -92,7 +92,7 @@ Spatial Anchors 사용하여 홀로그램을 물리적 공간에 맞추는 방�
 
 ### <a name="z-fighting"></a>z-fighting
 
-Z-fighting은 혼합 현실 애플리케이션이 다른 개체 앞에 있는 개체를 파악할 수 없는 경우에 발생합니다.  홀로그램 개체가 동일한 z-깊이 값을 사용할 때 깜박이는 것을 볼 수 있습니다.  이 경우 자전거의 로고인 홀로그램 개체의 배치를 변경하여 앱에서 z-fighting의 효과를 경험해 보세요.
+Z-fighting은 혼합 현실 애플리케이션이 다른 개체 앞에 있는 개체를 파악할 수 없는 경우에 발생합니다.  동일한 z-깊이 값을 위해 홀로그램 개체가 깜박이는 것을 볼 수 있습니다.  이 경우 자전거의 로고인 홀로그램 개체의 배치를 변경하여 앱에서 z-fighting의 효과를 경험해 보세요.
 
 ![개체 배치를 통해 z-fighting을 경험해보세요.](images\qf-z-fighting.jpg)
 
@@ -134,7 +134,7 @@ z-fighting에 대한 자세한 내용은 [Unity의 권장 설정](/windows/mixed
 
 그리기 호출은 그래픽 카드에 대한 리소스 집약적 호출입니다.  그리기 호출 수가 FPS에 영향을 주기 때문에 앱의 이 부분에서 시각적 차이를 직접 경험해보세요.
 
-![그리기 호출은 성능을 향상하도록 최적화되어야 합니다.](images\qf-3d-asset-draw-calls.jpg)
+![그리기 호출은 성능을 향상시키기 위해 최적화되어야 합니다.](images\qf-3d-asset-draw-calls.jpg)
 
 [CPU-GPU 성능 권장 사항을 참조하세요.](/windows/mixed-reality/develop/unity/performance-recommendations-for-unity#cpu-to-gpu-performance-recommendations)
 

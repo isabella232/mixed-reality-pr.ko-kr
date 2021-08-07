@@ -1,29 +1,29 @@
 ---
-title: Unity의 HP 반향 G2 컨트롤러
+title: Unity의 HP Reverb G2 컨트롤러
 description: SteamVR 및 Windows Mixed Reality Unity 응용 프로그램에서 새로운 HP 반향 G2 컨트롤러를 설정 하 고 사용 하는 방법에 대해 알아봅니다.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/14/2020
 ms.topic: article
 keywords: Unity, 반향, 반향 G2, HP 반향 G2, 혼합 현실, 개발, 동작 컨트롤러, 사용자 입력, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, holograms, 게임 개발
-ms.openlocfilehash: 26435ef57c9baf59b1008fb4750aedd913a19814
-ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
+ms.openlocfilehash: 4e561cb1e46fe487f1b25ed526f0adeafc2de6c525835ffe3b1871d7516b233e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99421399"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115215626"
 ---
-# <a name="hp-reverb-g2-controllers-in-unity"></a>Unity의 HP 반향 G2 컨트롤러
+# <a name="hp-reverb-g2-controllers-in-unity"></a>Unity의 HP Reverb G2 컨트롤러
 
-HP 모션 컨트롤러는 새로운 유형의 Windows Mixed Reality 컨트롤러 이며, 사용 가능한 입력 집합이 약간 다른 모든 동일한 추적 기술입니다. 
+HP 모션 컨트롤러는 새로운 유형의 Windows Mixed Reality 컨트롤러 이며, 약간 다른 사용 가능한 입력 집합을 사용 하는 동일한 추적 기술입니다. 
 
 * 터치 패드는 오른쪽 컨트롤러에 대 한 A와 B 라는 두 개의 단추로 대체 되었으며, 왼쪽 컨트롤러의 경우 X 및 Y입니다. 
 * 이제 눌린 상태와 누르지 않음 상태를 포함 하는 단추 대신 0.0과 1.0 사이의 값 스트림을 게시 하는 트리거입니다. 
 
-새 입력은 기존 Windows 및 Unity Api를 통해 액세스할 수 없으므로 전용 **MixedReality** 가 필요 합니다. 
+기존 Windows 및 Unity api를 통해 새 입력에 액세스할 수 없으므로 전용 **MixedReality** UPM 패키지가 필요 합니다. 
 
 > [!IMPORTANT]
-> **이 패키지의 클래스는 기존 Windows 및 Unity Api를 대체 하지 않지만이를 보완 합니다.** 클래식 Windows Mixed Reality 컨트롤러와 HP 동작 컨트롤러에서 일반적으로 사용할 수 있는 기능은 기존 Api를 사용 하 여 동일한 코드 경로를 통해 액세스할 수 있습니다. 새 입력만 추가 MixedReality 패키지를 사용 해야 합니다. 
+> **이 패키지의 클래스는 기존 Windows 및 Unity api를 대체 하지는 않지만이를 보완 합니다.** 클래식 Windows Mixed Reality 컨트롤러 및 HP 동작 컨트롤러에서 일반적으로 사용할 수 있는 기능은 기존 api를 사용 하 여 동일한 코드 경로를 통해 액세스할 수 있습니다. 새 입력만 추가 MixedReality 패키지를 사용 해야 합니다. 
 
 ## <a name="hp-motion-controller-overview"></a>HP 모션 컨트롤러 개요
 
@@ -33,7 +33,7 @@ HP 모션 컨트롤러는 새로운 유형의 Windows Mixed Reality 컨트롤러
 
 ## <a name="installing-microsoftmixedrealityinput-with-the-mixed-reality-feature-tool"></a>Mixed Reality 기능 도구를 사용 하 여 MixedReality 설치
 
-새 Mixed Reality 기능 도구 응용 프로그램을 사용 하 여 MixedReality 플러그 인을 설치 합니다. [설치 및 사용 지침](welcome-to-mr-feature-tool.md) 을 따르고 Mixed Reality 도구 키트 범주의 **혼합 현실 입력** 패키지를 선택 합니다.
+새 Mixed Reality 기능 도구 응용 프로그램을 사용 하 여 MixedReality 플러그 인을 설치 합니다. [설치 및 사용 지침](welcome-to-mr-feature-tool.md) 을 따르고 mixed reality Toolkit 범주에서 **혼합 현실 입력** 패키지를 선택 합니다.
 
 ![혼합 현실 기능이 강조 표시 된 혼합 현실 기능 도구 패키지 창](images/feature-tool-mrinput.png)
 

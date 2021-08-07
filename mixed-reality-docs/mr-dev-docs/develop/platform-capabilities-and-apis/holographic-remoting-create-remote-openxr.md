@@ -1,24 +1,24 @@
 ---
 title: Holographic Remoting 원격 앱 작성 (OpenXR)
-description: OpenXR를 사용 하 여 원격 컴퓨터에서 렌더링 된 원격 콘텐츠를 Holographic 원격 앱으로 HoloLens 2로 스트리밍하는 방법에 대해 알아봅니다.
+description: OpenXR를 사용 하 여 Holographic Remoting 앱과 HoloLens 2 하기 위해 원격 컴퓨터에 렌더링 된 원격 콘텐츠를 스트리밍하는 방법에 대해 알아봅니다.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, NuGet
-ms.openlocfilehash: c5ba1b5c309b5d0ddd3bd46f0730f28c946d3c3f
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: 6cf44bd031aec4b475d7496a999a3c7d4d40cae7cc921ff39cfe61698f3dd532
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810083"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212071"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-openxr-api"></a>OpenXR API를 사용 하 여 Holographic Remoting 원격 앱 작성
 
 >[!IMPORTANT]
->이 문서에서는 [OPENXR API](../native/openxr.md)를 사용 하 여 HoloLens 2 및 Windows Mixed Reality 헤드셋 용 원격 응용 프로그램을 만드는 방법을 설명 합니다. HoloLens 용 원격 응용 프로그램 **(첫 번째 gen)** 은 NuGet 패키지 **버전 1.x를 사용** 해야 합니다. 즉, HoloLens 2 용으로 작성 된 원격 응용 프로그램은 HoloLens 1과 호환 되지 않으며 그 반대의 경우도 마찬가지입니다. HoloLens 1에 대 한 설명서는 [여기](add-holographic-remoting.md)에서 찾을 수 있습니다.
+>이 문서에서는 [OpenXR API](../native/openxr.md)를 사용 하 여 HoloLens 2 및 Windows Mixed Reality 헤드셋 용 원격 응용 프로그램을 만드는 방법을 설명 합니다. **HoloLens (첫 번째 gen)** 용 원격 응용 프로그램은 NuGet 패키지 **버전 1.x를 사용** 해야 합니다. 즉 HoloLens 2 용으로 작성 된 원격 응용 프로그램은 HoloLens 1과 호환 되지 않으며 그 반대의 경우도 마찬가지입니다. HoloLens 1에 대 한 설명서는 [여기](add-holographic-remoting.md)에서 찾을 수 있습니다.
 
-Holographic 원격 앱은 원격으로 렌더링 된 콘텐츠를 HoloLens 2 및 Windows Mixed Reality 모던 헤드셋으로 스트리밍할 수 있습니다. 더 많은 시스템 리소스에 액세스 하 고 기존 데스크톱 PC 소프트웨어에 원격 [몰입 형 보기](../../design/app-views.md) 를 통합할 수도 있습니다. 원격 앱은 HoloLens 2에서 입력 데이터 스트림을 받고, 가상 몰입 형 보기에서 콘텐츠를 렌더링 하 고, 콘텐츠 프레임을 HoloLens 2로 다시 스트리밍합니다. 연결은 표준 Wi-fi를 사용 하 여 수행 됩니다. Holographic Remoting은 NuGet 패킷을 통해 데스크톱 또는 UWP 앱에 추가 됩니다. 연결을 처리 하 고 몰입 형 보기에서 렌더링 하는 추가 코드가 필요 합니다. 일반적인 원격 연결의 경우 대기 시간은 50 밀리초로 낮습니다. 플레이어 앱은 실시간으로 대기 시간을 보고할 수 있습니다.
+Holographic 원격 앱은 원격으로 렌더링 된 콘텐츠를 HoloLens 2 및 Windows Mixed Reality 몰입 형 헤드셋으로 스트리밍할 수 있습니다. 더 많은 시스템 리소스에 액세스 하 고 기존 데스크톱 PC 소프트웨어에 원격 [몰입 형 보기](../../design/app-views.md) 를 통합할 수도 있습니다. 원격 앱은 HoloLens 2에서 입력 데이터 스트림을 수신 하 고, 가상 몰입 형 보기에서 콘텐츠를 렌더링 하 고, 콘텐츠 프레임을 다시 HoloLens 2으로 스트리밍합니다. 연결은 표준 Wi-fi를 사용 하 여 수행 됩니다. Holographic Remoting은 NuGet 패킷을 통해 데스크톱 또는 UWP 앱에 추가 됩니다. 연결을 처리 하 고 몰입 형 보기에서 렌더링 하는 추가 코드가 필요 합니다. 일반적인 원격 연결의 경우 대기 시간은 50 밀리초로 낮습니다. 플레이어 앱은 실시간으로 대기 시간을 보고할 수 있습니다.
 
 이 페이지 및 작업 프로젝트의 모든 코드는 [Holographic Remoting 샘플 github 리포지토리](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)에서 찾을 수 있습니다.
 
@@ -31,9 +31,9 @@ Holographic 원격 앱은 원격으로 렌더링 된 콘텐츠를 HoloLens 2 및
 
 ## <a name="get-the-holographic-remoting-nuget-package"></a>Holographic 원격 NuGet 패키지 가져오기
 
-Visual Studio에서 프로젝트에 NuGet 패키지를 추가 하려면 다음 단계를 수행 해야 합니다.
+Visual Studio의 프로젝트에 NuGet 패키지를 추가 하려면 다음 단계를 수행 해야 합니다.
 1. Visual Studio에서 프로젝트를 엽니다.
-2. 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **NuGet 패키지 관리 ...** 를 선택 합니다.
+2. 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **관리 NuGet 패키지** ...를 선택 합니다.
 3. 표시 되는 패널에서 **찾아보기** 를 선택한 다음 "Holographic Remoting"을 검색 합니다.
 4. **Holographic** 를 선택 하 고 최신 **2.x 버전을** 선택 하 고 **설치** 를 선택 합니다.
 5. **미리 보기** 대화 상자가 표시 되 면 **확인** 을 선택 합니다.
@@ -41,11 +41,11 @@ Visual Studio에서 프로젝트에 NuGet 패키지를 추가 하려면 다음 �
 7. 다음 NuGet 패키지에 대해 3 ~ 6 단계를 반복 합니다. OpenXR, OpenXR
 
 >[!NOTE]
->HoloLens 1을 대상으로 하는 개발자에 게는 NuGet 패키지의 버전 **1. x. x** 를 계속 사용할 수 있습니다. 자세한 내용은 [Holographic 원격 추가 (HoloLens (첫 번째 gen))](add-holographic-remoting.md)를 참조 하세요.
+>HoloLens 1을 대상으로 하려는 개발자는 NuGet 패키지 **의 버전 1.x** 를 계속 사용할 수 있습니다. 자세한 내용은 [Holographic Remoting 추가 (HoloLens (첫 번째 gen))](add-holographic-remoting.md)를 참조 하세요.
 
 ## <a name="select-the-holographic-remoting-openxr-runtime"></a>Holographic Remoting OpenXR runtime을 선택 합니다.
 
-원격 앱에서 수행 해야 하는 첫 번째 단계는 OpenXr NuGet 패키지의 일부인 Holographic Remoting OpenXR runtime을 선택 하는 것입니다. 이렇게 하려면 ```XR_RUNTIME_JSON``` 환경 변수를 앱 내 파일의 RemotingXR.js경로에 설정 합니다. 이 환경 변수는 OpenXR 로더가 시스템 기본 OpenXR 런타임을 사용 하지 않고 대신 Holographic Remoting OpenXR 런타임으로 리디렉션하는 데 사용 됩니다. Holographic OpenXr NuGet 패키지를 사용 하는 경우 파일의 RemotingXR.js출력 폴더로 컴파일하는 동안 자동으로 복사 됩니다. 일반적으로 OpenXR 런타임 선택은 다음과 같습니다.
+원격 앱에서 수행 해야 하는 첫 번째 단계는 Holographic NuGet 패키지의 일부인 Holographic Remoting OpenXR runtime을 선택 하는 것입니다. 이렇게 하려면 ```XR_RUNTIME_JSON``` 환경 변수를 앱 내 파일의 RemotingXR.js경로에 설정 합니다. 이 환경 변수는 OpenXR 로더가 시스템 기본 OpenXR 런타임을 사용 하지 않고 대신 Holographic Remoting OpenXR 런타임으로 리디렉션하는 데 사용 됩니다. OpenXr NuGet 패키지를 사용 하는 경우 출력 폴더로 컴파일하는 동안 파일의 RemotingXR.js자동으로 복사 됩니다. 일반적으로 OpenXr 런타임 선택은 다음과 같습니다.
 
 ```cpp
 bool EnableRemotingXR() {
@@ -76,12 +76,12 @@ bool EnableRemotingXR() {
 >[!IMPORTANT]
 >Holographic Remoting OpenXR extension API에 대 한 자세한 내용은 [Holographic remoting 샘플 github 리포지토리에서](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)찾을 수 있는 [사양을](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html) 확인 하세요.
 
-## <a name="connect-to-the-device"></a>장치에 연결
+## <a name="connect-to-the-device"></a>장치에 커넥트
 
 원격 앱이 XrInstance를 만들고 xrGetSystem을 통해 XrSystemId를 쿼리하면 플레이어 장치에 대 한 연결을 설정할 수 있습니다.
 
 >[!WARNING]
-> Holographic Remoting OpenXR 런타임은 연결이 설정 된 후에 보기 구성 또는 환경 blend 모드와 같은 장치별 데이터를 제공할 수 있습니다. ```xrEnumerateViewConfigurations```,,, ```xrEnumerateViewConfigurationViews``` ```xrGetViewConfigurationProperties``` ```xrEnumerateEnvironmentBlendModes``` 및 ```xrGetSystemProperties``` 는 모두 연결 되기 전에 HoloLens 2에서 실행 되는 플레이어에 연결 하는 경우 일반적으로 얻을 수 있는 값과 일치 하는 기본값을 제공 합니다.
+> Holographic Remoting OpenXR 런타임은 연결이 설정 된 후에 보기 구성 또는 환경 blend 모드와 같은 장치별 데이터를 제공할 수 있습니다. ```xrEnumerateViewConfigurations```,,, ```xrEnumerateViewConfigurationViews``` ```xrGetViewConfigurationProperties``` 및는 기본값을 제공 하며,이 값은 ```xrEnumerateEnvironmentBlendModes``` ```xrGetSystemProperties``` HoloLens 2에서 실행 되는 플레이어에 연결 하는 경우 일반적으로 표시 되는 것과 일치 합니다.
 연결이 설정 되기 전에는 이러한 메서드를 호출 하지 않는 것이 좋습니다. 이러한 메서드는 XrSession을 성공적으로 만들고 세션 상태가 XR_SESSION_STATE_READY 이상인 경우에 사용 됩니다.
 
 다음을 통해 최대 비트 전송률, 오디오 사용, 비디오 코덱 또는 깊이 버퍼 스트림 확인과 같은 일반 속성을 구성할 수 있습니다 ```xrRemotingSetContextPropertiesMSFT``` .

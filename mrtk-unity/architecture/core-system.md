@@ -5,12 +5,12 @@ author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 이벤트
-ms.openlocfilehash: 79ebd3855cd991db168233f00058ab5d42f87d83
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: ff4c23b796374940de1a1de6b72e08702d6fd24f79234e8ef80dc1210d13d103
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121601"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190183"
 ---
 # <a name="core-system"></a>핵심 시스템
 
@@ -43,7 +43,7 @@ ms.locfileid: "113121601"
 
 전역 수신기로 이벤트를 보낼 수 있습니다. 입력 시스템의 인터페이스를 사용하여 모든 입력 이벤트에 등록할 수 [`IMixedRealityEventSystem`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem) 있습니다. [RegisterHandler](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem.RegisterHandler%2A) 메서드를 사용하여 전역 이벤트를 등록하는 것이 좋습니다. 사용되지 않는 `Register` 함수를 사용하면 수신기가 특정 형식의 입력 이벤트(여기서 형식은 이벤트 인터페이스에 의해 정의됨)가 아니라 모든 입력 이벤트에 대한 알림을 받습니다.
 
-대체 [수신기는](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystem.PushFallbackInputHandler%2A) 장면의 다른 곳에서 처리되지 않은 모든 단일 입력 이벤트를 수신하기 때문에 권장되지 않는 또 다른 유형의 전역 수신기입니다.
+대체 [수신기는](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystem.PushFallbackInputHandler%2A) 장면의 다른 곳에서 처리되지 않은 모든 단일 입력 이벤트를 수신하므로 권장되지 않는 또 다른 유형의 전역 수신기입니다.
 
 ### <a name="order-of-event-dispatch"></a>이벤트 디스패치 순서
 

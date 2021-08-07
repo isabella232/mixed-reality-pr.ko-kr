@@ -1,18 +1,18 @@
 ---
-title: 관찰자의 관찰자 이해
+title: 장면 이해 관찰자
 description: MRTK의 장면 이해에 대해 설명 합니다.
 author: MaxWang-MS
 ms.author: wangmax
 ms.date: 05/27/2021
 keywords: Unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk, 장면 이해
-ms.openlocfilehash: d5430e7885055a550347c4ccebc1452f68125922
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: bf6ceaf98f239e725de3e084bd1ca96a63abc6c28f2434e8ae84ba3f70ee025b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176237"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214365"
 ---
-# <a name="scene-understanding-observer"></a>관찰자의 관찰자 이해
+# <a name="scene-understanding-observer"></a>장면 이해 관찰자
 
 [장면 이해](/windows/mixed-reality/scene-understanding) 는 장면 엔터티에 대 한 의미 체계와 __HoloLens 2__ 에서의 기하학적 형태를 반환 합니다 (HoloLens 1 Gen은 지원 되지 않음).
 

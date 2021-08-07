@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 590476add6904f76081630c4416184bea9f694ab
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 09425fa46cb9888c2e81e0771419d4bce3dd2334f31b5b922049af12479876c8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176660"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214332"
 ---
 # <a name="dependency-window"></a>종속성 창
 
@@ -18,7 +18,7 @@ Unity에서 사용 되는 자산 및 참조 하는 항목을 gleam 하는 것이
 
 종속성 창에는 자산이 서로를 참조 하 고 종속 되는 방식이 표시 됩니다. 종속성은 project YAML 파일 내의 guid를 구문 분석 하 여 계산 됩니다 (참고, 스크립트 종속성에 대 한 스크립트는 고려 되지 않음).
 
-## <a name="usage"></a>사용
+## <a name="usage"></a>사용량
 
 창을 열려면 **Mixed Reality**  >  **Toolkit**  >  **유틸리티**  >  **종속성 창** 을 선택 합니다. 그러면 창이 열리고 프로젝트의 종속성 그래프를 자동으로 빌드하기 시작 합니다. 종속성 그래프가 작성 되 면 프로젝트 탭에서 자산을 선택 하 여 해당 종속성을 검사할 수 있습니다.
 

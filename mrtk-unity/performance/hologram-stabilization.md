@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 환경 추적, TMP,
-ms.openlocfilehash: 7aab167f2d850a4bca88a2cc40aae4f3cc50fb4b
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 48841ee02e5208dcf8363b62c03415797017215c3a52231b3417103978ffc66e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176485"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213432"
 ---
 # <a name="hologram-stabilization"></a>홀로그램 안정화
 
@@ -40,7 +40,7 @@ Windows Mixed Reality 디바이스에서 실행되는 디바이스 엔드포인�
 
 ##### <a name="per-pixel-depth-based"></a>픽셀당 깊이 기반
 
-픽셀별 깊이 기반 다시 프로젝션에는 깊이 버퍼를 활용하여 픽셀당 이미지 출력을 수정하여 다양한 거리에 있는 홀로그램을 안정화하는 작업이 포함됩니다. 예를 들어 1m 떨어진 구는 10m 떨어진 핵심 요소 앞에 있을 수 있습니다. 구를 나타내는 픽셀은 사용자가 헤드를 약간 기울인 경우 핵심을 나타내는 멀리 떨어진 픽셀과 다른 변환을 갖습니다. 픽셀당 다시 프로젝션은 보다 정확한 다시 프로젝션을 위해 모든 픽셀에서 이 거리 차이를 고려합니다.
+픽셀당 깊이 기반 다시 프로젝션에는 깊이 버퍼를 활용하여 픽셀당 이미지 출력을 수정하여 다양한 거리에 있는 홀로그램을 안정화하는 작업이 포함됩니다. 예를 들어 1m 떨어진 구는 10m 떨어진 핵심 요소 앞에 있을 수 있습니다. 구를 나타내는 픽셀은 사용자가 헤드를 약간 기울인 경우 핵심을 나타내는 멀리 떨어진 픽셀과 다른 변환을 갖습니다. 픽셀당 다시 프로젝션은 보다 정확한 다시 프로젝션을 위해 모든 픽셀에서 이 거리 차이를 고려합니다.
 
 ##### <a name="stabilization-plane"></a>안정화 평면
 

@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: f6042fce7c95c106de9c72adc854e2b7112da63c
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 3e5a56f7498288e79963acea6fca223421fee2607004a9a2bae639f81441e0d9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177150"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209030"
 ---
 # <a name="hand-coach"></a>핸드 코치
 
@@ -133,4 +133,4 @@ RotateAroundPoint 스크립트는 시간에 따라 피벗 점을 중심으로 �
 
 #### <a name="controlling-rotatearoundpoint-via-animations"></a>애니메이션을 통해 RotateAroundPoint 제어
 
-이동 해야 하는 애니메이션에서 두 이벤트를 설정 합니다. 하나는 ResetAndDeterminePivot () 호출을 사용 하 고 다른 하나는 RotateToTarget ()를 호출 합니다. ResetAndDeterminePivot는 PivotPosition로 다시 설정 되기 때문에 첫 번째 키 프레임에서 설정 해야 합니다. RotateToTarget는 rig를 중심으로 회전을 시작 하려는 키 프레임에서 설정 해야 합니다. 이는 제공 된 prefabs 스크립트 기능을 사용 하는 방법입니다.
+이동해야 하는 애니메이션에서 두 개의 이벤트를 설정합니다. 하나는 ResetAndDeterminePivot()을 호출하고 다른 하나는 RotateToTarget()을 호출합니다. ResetAndDeterminePivot은 손 조작이 PivotPosition으로 다시 설정되도록 하여 첫 번째 키 프레임에 설정해야 합니다. RotateToTarget은 CenteredParent를 중심으로 회전을 시작하려는 키 프레임에 설정해야 합니다. 이 방법은 제공된 프리팹에서 스크립트 기능을 사용하는 방법입니다.

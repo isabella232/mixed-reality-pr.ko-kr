@@ -1,26 +1,26 @@
 ---
 title: 장면 시스템 로드 진행률
-description: MRTK의 장면 콘텐츠 로드에 대 한 설명서
+description: MRTK의 장면 콘텐츠 로드에 대한 설명서
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 51b5d4d00d65491a0476068bbdc256ffce67412b
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 1d2382e11092b20aca5bf8480ade521ffb94a70a325540e70487d7f581e8cf15
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144401"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115186619"
 ---
 # <a name="monitoring-content-loading"></a>콘텐츠 로드 모니터링
 
 ## <a name="scene-operation-progress"></a>장면 작업 진행률
 
-콘텐츠를 로드 하거나 언로드할 때 `SceneOperationInProgress` 속성은 true를 반환 합니다. 속성을 통해이 작업의 진행률을 모니터링할 수 있습니다 `SceneOperationProgress` .
+콘텐츠가 로드되거나 언로드되는 경우 `SceneOperationInProgress` 속성은 true를 반환합니다. 속성을 통해 이 작업의 진행 상황을 모니터링할 수 `SceneOperationProgress` 있습니다.
 
-`SceneOperationProgress`값은 모든 현재 비동기 장면 작업의 평균입니다. 콘텐츠 로드 시작 시은 0이 됩니다 `SceneOperationProgress` . 완전히 완료 된 후에 `SceneOperationProgress` 는 1로 설정 되 고 다음 작업이 수행 될 때까지 1로 유지 됩니다. 콘텐츠 장면 작업만 이러한 속성에 영향을 줍니다.
+`SceneOperationProgress`값은 모든 현재 비동기 장면 작업의 평균입니다. 콘텐츠 로드가 시작되면 가 `SceneOperationProgress` 0이 됩니다. 완전히 완료되면 가 `SceneOperationProgress` 1로 설정되고 다음 작업이 수행될 때까지 1로 유지됩니다. 콘텐츠 장면 작업만 이러한 속성에 영향을 둡니다.
 
-이러한 속성은 작업에 여러 단계가 포함 된 경우에도 *전체 작업* 상태를 시작부터 끝까지 반영 합니다.
+이러한 속성은 작업에 여러 단계가 포함되어 있더라도 처음부터 끝까지 *전체* 작업의 상태를 반영합니다.
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -39,9 +39,9 @@ await sceneSystem.LoadContent("ContentScene1");
 sceneSystem.LoadContent("ContentScene2", LoadSceneMode.Single)
 ```
 
-### <a name="progress-examples"></a>진행률 예
+### <a name="progress-examples"></a>진행률 예제
 
-`SceneOperationInProgress` 콘텐츠를 로드 하는 동안 작업을 일시 중단 해야 하는 경우에 유용할 수 있습니다.
+`SceneOperationInProgress` 는 콘텐츠가 로드되는 동안 활동을 일시 중단해야 하는 경우에 유용할 수 있습니다.
 
 ```c#
 public class FooManager : MonoBehaviour
@@ -63,7 +63,7 @@ public class FooManager : MonoBehaviour
 }
 ```
 
-`SceneOperationProgress` 진행률 대화 상자를 표시 하는 데 사용할 수 있습니다.
+`SceneOperationProgress` 을 사용하여 진행률 대화 상자를 표시할 수 있습니다.
 
 ```c#
 public class ProgressDialog : MonoBehaviour
@@ -87,13 +87,13 @@ public class ProgressDialog : MonoBehaviour
 
 ---
 
-## <a name="monitoring-with-actions"></a>작업으로 모니터링
+## <a name="monitoring-with-actions"></a>작업을 통해 모니터링
 
-장면 시스템은 장면이 로드 되거나 언로드될 때를 알려 주는 여러 가지 작업을 제공 합니다. 각 작업은 영향을 받는 장면의 이름을 릴레이 합니다.
+장면 시스템은 장면을 로드하거나 언로드할 때 알려주는 몇 가지 작업을 제공합니다. 각 작업은 영향을 받는 장면의 이름을 릴레이합니다.
 
-로드 또는 언로드 작업이 여러 장면을 포함 하는 경우 관련 작업은 영향을 받는 장면 마다 한 번씩 호출 됩니다. 또한 로드 또는 언로드 작업이 *완전히 완료* 될 때 한 번에 모두 호출 됩니다. 이러한 이유로, *OnWillUnload* 작업을 사용 하 여 삭제 되는 콘텐츠를 검색 하는 것이 좋습니다 .이는 *onunloaded* 작업을 사용 하 여 팩트 이후에 *소멸 된 콘텐츠* 를 검색 하는 것과는 반대입니다.
+로드 또는 언로드 작업에 여러 장면이 포함된 경우 관련 작업은 영향을 받는 장면당 한 번씩 호출됩니다. 또한 로드 또는 언로드 작업이 완전히 완료될 때 한 번에 모두 *호출됩니다.* 따라서 *OnUnloaded* 작업을 사용하여 사후에 소멸된 콘텐츠를 검색하는 것과 달리 *OnWillUnload* 작업을 사용하여 *소멸될* 콘텐츠를 검색하는 것이 좋습니다.
 
-*OnLoaded* 작업은 모든 장면이 활성화 되 고 완전히 로드 될 때만 호출 되기 때문에 *OnLoaded* 작업을 사용 하 여 새 콘텐츠를 검색 하 고 사용 하는 것은 안전 하다 고 보장할 수 있습니다.
+반대로 *OnLoaded* 작업은 모든 장면을 활성화하고 완전히 로드할 때만 호출되므로 *OnLoaded* 작업을 사용하여 새 콘텐츠를 검색하고 사용하는 것이 안전합니다.
 
 작업 | 호출되는 경우 | 콘텐츠 장면 | 조명 장면 | 관리자 장면
 --- | --- | --- | --- | --- | ---
@@ -161,7 +161,7 @@ public class ProgressDialog : MonoBehaviour
 
 ## <a name="controlling-scene-activation"></a>장면 활성화 제어
 
-기본적으로 콘텐츠 장면을 로드할 때 활성화하도록 설정됩니다. 장면 활성화를 수동으로 제어 하려면 `SceneActivationToken` 모든 콘텐츠 로드 메서드에를 전달 하면 됩니다. 단일 작업으로 여러 콘텐츠 장면을 로드 하는 경우이 활성화 토큰은 모든 장면에 적용 됩니다.
+기본적으로 콘텐츠 장면을 로드할 때 활성화하도록 설정됩니다. 장면 활성화를 수동으로 제어하려는 경우 를 모든 콘텐츠 로드 메서드에 전달할 수 `SceneActivationToken` 있습니다. 단일 작업으로 여러 콘텐츠 장면을 로드하는 경우 이 활성화 토큰이 모든 장면에 적용됩니다.
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -191,9 +191,9 @@ while (sceneSystem.SceneOperationInProgress)
 
 ---
 
-## <a name="checking-which-content-is-loaded"></a>로드 된 콘텐츠 확인
+## <a name="checking-which-content-is-loaded"></a>로드되는 콘텐츠 확인
 
-`ContentSceneNames`속성은 빌드 인덱스 순서 대로 사용 가능한 콘텐츠 장면 배열을 제공 합니다. 이러한 장면이를 통해 로드 되는지 여부를 확인할 수 있습니다 `IsContentLoaded(string contentName)` .
+속성 빌드 `ContentSceneNames` 인덱스 순서로 사용 가능한 콘텐츠 장면의 배열을 제공 합니다. 이러한 장면을 통해 로드되는지 여부를 확인할 수 `IsContentLoaded(string contentName)` 있습니다.
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();

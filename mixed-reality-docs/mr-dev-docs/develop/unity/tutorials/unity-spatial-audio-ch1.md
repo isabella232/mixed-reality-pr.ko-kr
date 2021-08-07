@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens2, 공간 오디오, MRTK, 혼합 현실 도구 키트, UWP, Windows 10, HRTF, 헤드 관련 전송 함수, reverb, Microsoft Spatializer
-ms.openlocfilehash: a61e709f24c2162bc6e6e1248de658128674d49e
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 7f40e99e72a90de777e672f131afff5d05fe6416bd225c5b656678e340cc813d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175368"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211731"
 ---
 # <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. Unity 프로젝트에 공간 오디오 추가
 
@@ -37,12 +37,12 @@ HRTF 기반 알고리즘을 사용하여 오디오를 처리하려면 많은 양
 * 올바른 [도구가 설치](../../install-the-tools.md)된 상태로 구성된 Windows 10 PC
 * 기본적인 C# 프로그래밍 지식
 * [개발용으로 구성](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)된 HoloLens 2 디바이스
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity</a> 2020/2019 LTS가 탑재되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가된 Unity Hub
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>(Unity 2020/2019 LTS가 탑재되고 유니버설 Windows 플랫폼 빌드 지원 모듈이 추가되어 있음)
 
 계속하기 전에 [시작](mr-learning-base-01.md) 자습서 시리즈를 완료하거나 Unity 및 MRTK에 대한 기본적인 사전 경험을 갖추는 **것이 좋습니다.**
 
 > [!Important]
-> 이 자습서 시리즈는 Open XR 또는 Windows XR 플러그 인을 사용하는 경우 Unity 2020 LTS(현재 2020.3.x)를 지원하고 레거시 WSA 또는 Windows XR 플러그 인을 사용하는 경우 Unity 2019 LTS(현재 2019.4.x)도 지원합니다. 이 버전은 필수 구성 요소에서 설명한 모든 Unity 버전 요구 사항을 대체합니다.
+> 이 자습서 시리즈는 Open XR 또는 Windows XR 플러그 인을 사용하는 경우 Unity 2020 LTS(현재 2020.3.x)와 레거시 WSA 또는 Windows XR 플러그 인을 사용하는 경우 Unity 2019 LTS(현재 2019.4.x)를 지원합니다. 이 버전은 필수 구성 요소에서 설명한 모든 Unity 버전 요구 사항을 대체합니다.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Unity 프로젝트 만들기 및 준비
 
@@ -67,7 +67,7 @@ Microsoft Spatializer <a href="https://github.com/microsoft/spatialaudio-unity/r
 
 ## <a name="enable-the-microsoft-spatializer-plugin"></a>Microsoft Spatializer 플러그 인 사용
 
-Microsoft Spatializer를 Unity 프로젝트로 가져오면 **MRTK Project Configurator** 창이 **나타나고, Audio spatializer** 드롭다운을 사용하여 Microsoft **Spatializer** 를 선택한 다음, 적용 단추를 클릭하여 설정을 적용합니다.
+Microsoft Spatializer를 Unity 프로젝트로 가져오면 **MRTK Project Configurator** 창이 나타나고 **Audio spatializer** 드롭다운을 사용하여 **Microsoft Spatializer** 를 선택한 다음, 적용 단추를 클릭하여 설정을 적용합니다.
 
 ![MRTK Project 구성기](images/spatial-audio/spatial-audio-01-section3-step1-1.PNG)
 

@@ -1,24 +1,24 @@
 ---
 title: 사례 연구-HoloLens의 공간 매핑 기능 확장
-description: Microsoft HoloLens에 대 한 첫 번째 앱을 만들 때 장치에서 공간 매핑의 경계를 푸시할 수 있는 정도를 확인 합니다.
+description: Microsoft HoloLens에 대 한 첫 번째 앱을 만들 때 장치에서 공간 매핑의 경계를 푸시할 수 있는 정도를 확인할 수 있습니다.
 author: jevertt
 ms.author: jemccull
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, 공간 매핑
-ms.openlocfilehash: b6546c5c14c5a16f5218721d007bc83798bacfad
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f0438990c39570f9188e2e150a8cbe7907d72f7e2be260c72e41646565b8d89e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687480"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210449"
 ---
 # <a name="case-study---expanding-the-spatial-mapping-capabilities-of-hololens"></a>사례 연구-HoloLens의 공간 매핑 기능 확장
 
-Microsoft HoloLens에 대 한 첫 번째 앱을 만들 때 장치에서 공간 매핑의 경계를 푸시할 수 있는 정도를 확인 합니다. Microsoft 스튜디오의 소프트웨어 엔지니어 인 Jeff Evertt는 사용자의 실제 환경에 holograms가 배치 되는 방식을 보다 강력 하 게 제어할 필요가 없는 새 기술이 개발 된 방식을 설명 합니다.
+Microsoft HoloLens에 대 한 첫 번째 앱을 만들 때 장치에서 공간 매핑의 경계를 푸시할 수 있는 정도를 확인할 수 있습니다. Microsoft 스튜디오의 소프트웨어 엔지니어 인 Jeff Evertt는 사용자의 실제 환경에 holograms가 배치 되는 방식을 보다 강력 하 게 제어할 필요가 없는 새 기술이 개발 된 방식을 설명 합니다.
 
 > [!NOTE]
-> HoloLens 2는 environmentally 인식 응용 프로그램을 쉽게 개발할 수 있도록 설계 된 구조화 된 고급 환경 표현으로 혼합 현실 개발자를 제공 하는 새로운 [장면 이해 런타임을](../design/scene-understanding.md)구현 합니다. 
+> HoloLens 2는 혼합 현실 개발자에 게 직관적인 environmentally 인식 응용 프로그램 개발을 위한 구조화 된 높은 수준의 환경 표현을 제공 하는 새로운 [장면 이해 런타임을](../design/scene-understanding.md)구현 합니다. 
 
 ## <a name="watch-the-video"></a>비디오 보기
 
@@ -26,7 +26,7 @@ Microsoft HoloLens에 대 한 첫 번째 앱을 만들 때 장치에서 공간 �
 
 ## <a name="beyond-spatial-mapping"></a>공간 매핑 초과
 
-HoloLens [에 대](https://www.microsoft.com/p/fragments/9nblggh5ggm8) 한 첫 번째 게임 인 HoloLens와 [젊은 Conker](https://www.microsoft.com/p/young-conker/9nblggh5ggk1)에서 작업 하는 동안, 실제 환경에서 holograms의 절차적 배치를 수행 하는 경우 사용자 환경에 대 한 높은 수준의 이해가 필요 했습니다. 각 게임에는 고유한 특정 배치 요구 사항이 있습니다. 예를 들어 바닥 또는 테이블과 같은 여러 다른 표면을 구분 하 여 관련 위치에 대 한 단서를 제공할 수 있습니다. 또한 holographic 문자 (예: 소파 또는 자)가 될 수 있는 화면을 식별할 수 있도록 하려고 합니다. 젊은 Conker에서는 Conker와 자신의 상대가 플레이어의 방에서 발생 한 표면을 플랫폼으로 사용할 수 있습니다.
+[Conker](https://www.microsoft.com/p/young-conker/9nblggh5ggk1)에 대 HoloLens 한 작업을 수행 하는 중에는 실제 세계에서 holograms의 절차적 배치를 수행할 때 사용자 환경에 대 한 높은 수준의 이해를 요구 [하 고 있습니다](https://www.microsoft.com/p/fragments/9nblggh5ggm8) . 각 게임에는 고유한 특정 배치 요구 사항이 있습니다. 예를 들어 바닥 또는 테이블과 같은 여러 다른 표면을 구분 하 여 관련 위치에 대 한 단서를 제공할 수 있습니다. 또한 holographic 문자 (예: 소파 또는 자)가 될 수 있는 화면을 식별할 수 있도록 하려고 합니다. 젊은 Conker에서는 Conker와 자신의 상대가 플레이어의 방에서 발생 한 표면을 플랫폼으로 사용할 수 있습니다.
 
 [Asobo 스튜디오](https://www.asobostudio.com/index.html), 이러한 게임을 위한 개발 파트너는이 문제를 해결 하 고 HoloLens의 공간 매핑 기능을 확장 하는 기술을 만들었습니다. 이를 사용 하 여 플레이어의 방을 분석 하 고 벽, 테이블, 한도, 층 등의 표면을 식별할 수 있습니다. 또한 제약 조건 집합에 대해 최적화 하 여 holographic 개체에 가장 적합 한 배치를 결정 하는 기능을 제공 합니다.
 
@@ -36,11 +36,11 @@ Asobo의 원래 코드를 작성 하 고이 기술을 캡슐화 하는 라이브
 
 Unity 샘플에 포함 된 많은 유용한 쿼리를 사용 하 여 벽에서 빈 공간을 찾고, 바닥에 개체를 배치 하 고, 바닥에 개체를 배치 하 고, 사용할 문자 위치를 식별 하 고, 수많은 기타 공간을 이해 하는 쿼리를 사용할 수 있습니다.
 
-HoloLens에서 제공 하는 공간 매핑 솔루션은 문제 공간의 전체 영역에 대 한 요구 사항을 충족 하기에 충분히 제네릭으로 설계 되었지만 공간 파악 모듈은 두 가지 특정 게임의 요구 사항을 지원 하도록 만들어졌습니다. 따라서 해당 솔루션은 특정 프로세스 및 가정 집합을 중심으로 구성 됩니다.
-* **고정 크기 playspace** : 사용자가 init 호출에서 최대 playspace 크기를 지정 합니다.
-* **일회성 검색 프로세스** :이 프로세스에는 사용자가 안내 하는 불연속 검색 단계가 필요 하며,이 단계는 playspace를 정의 합니다. 검색이 완료 될 때까지 쿼리 함수가 작동 하지 않습니다.
-* **사용자 구동 재생 공간 "그리기"** : 검색 단계 중에 사용자가 플레이 공간을 이동 하 고 조회 하 여 포함 해야 하는 영역을 효과적으로 그릴 수 있습니다. 생성 된 메시는이 단계에서 사용자 의견을 제공 하는 데 중요 합니다.
-* **실내 홈 또는 office 설정** : 쿼리 함수는 평평한 서피스와 벽 주위에 직각으로 디자인 됩니다. 소프트 제한입니다. 그러나 검사 단계 중에 주 축 분석을 완료 하 여 주 및 보조 축을 따라 메시 공간 분할을 최적화 합니다.
+HoloLens에서 제공 하는 공간 매핑 솔루션은 문제 공간의 전체 영역에 대 한 요구 사항을 충족 하기에 충분히 제네릭으로 설계 되었지만 공간 인식 모듈은 두 가지 특정 게임의 요구 사항을 지원 하기 위해 작성 되었습니다. 따라서 해당 솔루션은 특정 프로세스 및 가정 집합을 중심으로 구성 됩니다.
+* **고정 크기 playspace**: 사용자가 init 호출에서 최대 playspace 크기를 지정 합니다.
+* **일회성 검색 프로세스**:이 프로세스에는 사용자가 안내 하는 불연속 검색 단계가 필요 하며,이 단계는 playspace를 정의 합니다. 검색이 완료 될 때까지 쿼리 함수가 작동 하지 않습니다.
+* **사용자 구동 재생 공간 "그리기"**: 검색 단계 중에 사용자가 플레이 공간을 이동 하 고 조회 하 여 포함 해야 하는 영역을 효과적으로 그릴 수 있습니다. 생성 된 메시는이 단계에서 사용자 의견을 제공 하는 데 중요 합니다.
+* **실내 홈 또는 office 설정**: 쿼리 함수는 평평한 서피스와 벽 주위에 직각으로 디자인 됩니다. 소프트 제한입니다. 그러나 검사 단계 중에 주 축 분석을 완료 하 여 주 및 보조 축을 따라 메시 공간 분할을 최적화 합니다.
 
 ### <a name="room-scanning-process"></a>대화방 스캔 프로세스
 
@@ -54,21 +54,21 @@ HoloLens에서 제공 하는 공간 매핑 솔루션은 문제 공간의 전체 
 
 
 
-포함 된 SpatialUnderstanding.cs 파일은 검사 단계 프로세스를 관리 합니다. 다음 함수를 호출 합니다.
-* **SpatialUnderstanding_Init** : 시작 시 한 번 호출 됩니다.
-* **GeneratePlayspace_InitScan** : 검사 단계를 시작 해야 함을 나타냅니다.
-* **GeneratePlayspace_UpdateScan_DynamicScan** : 검색 프로세스를 업데이트 하기 위해 각 프레임 이라고 합니다. 카메라 위치와 방향이 전달 되며 위에 설명 된 playspace 그리기 프로세스에 사용 됩니다.
-* **GeneratePlayspace_RequestFinish** : playspace를 마무리 하기 위해 호출 됩니다. 이렇게 하면 검색 단계에서 "칠해진" 영역을 사용 하 여 playspace를 정의 하 고 잠급니다. 응용 프로그램은 검색 단계 중에 통계를 쿼리할 수 있으며 사용자 의견을 제공 하기 위해 사용자 지정 메시를 쿼리할 수 있습니다.
-* **Import_UnderstandingMesh** : 검색 하는 동안 모듈에서 제공 하 고 prefab를 이해 하는 데 적용 되는 **SpatialUnderstandingCustomMesh** 동작은 프로세스에서 생성 된 사용자 지정 메시를 주기적으로 쿼리 합니다. 그리고 검사가 완료 된 후에도이 작업이 한 번 수행 됩니다.
+포함 된 SpatialUnderstanding 파일은 검사 단계 프로세스를 관리 합니다. 다음 함수를 호출 합니다.
+* **SpatialUnderstanding_Init**: 시작 시 한 번 호출 됩니다.
+* **GeneratePlayspace_InitScan**: 검사 단계를 시작 해야 함을 나타냅니다.
+* **GeneratePlayspace_UpdateScan_DynamicScan**: 검색 프로세스를 업데이트 하기 위해 각 프레임 이라고 합니다. 카메라 위치와 방향이 전달 되며 위에 설명 된 playspace 그리기 프로세스에 사용 됩니다.
+* **GeneratePlayspace_RequestFinish**: playspace를 마무리 하기 위해 호출 됩니다. 이렇게 하면 검색 단계에서 "칠해진" 영역을 사용 하 여 playspace를 정의 하 고 잠급니다. 응용 프로그램은 검색 단계 중에 통계를 쿼리할 수 있으며 사용자 의견을 제공 하기 위해 사용자 지정 메시를 쿼리할 수 있습니다.
+* **Import_UnderstandingMesh**: 검색 하는 동안 모듈에서 제공 하 고 prefab를 이해 하는 데 적용 되는 **SpatialUnderstandingCustomMesh** 동작은 프로세스에서 생성 된 사용자 지정 메시를 주기적으로 쿼리 합니다. 그리고 검사가 완료 된 후에도이 작업이 한 번 수행 됩니다.
 
 **SpatialUnderstanding** 동작으로 구동 되는 검색 흐름은 **initscan** 을 호출한 다음 각 프레임을 **UpdateScan** 합니다. 통계 쿼리가 적절 한 검사 범위를 보고할 때 사용자는 **Requestfinish** 를 호출 하 여 검색 단계의 끝을 나타내는 탭을 이동할 수 있습니다. **UpdateScan** 는 반환 값이 DLL 처리를 완료 했음을 나타냅니다.
 
 ## <a name="the-queries"></a>쿼리
 
 검색이 완료 되 면 다음 세 가지 유형의 쿼리를 인터페이스에서 액세스할 수 있습니다.
-* **토폴로지 쿼리** : 검색 된 대화방의 토폴로지를 기반으로 하는 빠른 쿼리입니다.
-* **셰이프 쿼리** : 이러한 작업은 사용자가 정의 하는 사용자 지정 셰이프와 잘 일치 하는 가로 표면을 찾기 위해 토폴로지 쿼리 결과를 활용 합니다.
-* **개체 배치 쿼리** : 이러한 쿼리는 개체에 대 한 규칙 및 제약 조건 집합을 기반으로 최적 위치를 찾는 보다 복잡 한 쿼리입니다.
+* **토폴로지 쿼리**: 검색 된 대화방의 토폴로지를 기반으로 하는 빠른 쿼리입니다.
+* **셰이프 쿼리**: 이러한 작업은 사용자가 정의 하는 사용자 지정 셰이프와 잘 일치 하는 가로 표면을 찾기 위해 토폴로지 쿼리 결과를 활용 합니다.
+* **개체 배치 쿼리**: 이러한 쿼리는 개체에 대 한 규칙 및 제약 조건 집합을 기반으로 최적 위치를 찾는 보다 복잡 한 쿼리입니다.
 
 세 가지 기본 쿼리 외에도 태그가 지정 된 서피스 형식을 검색 하는 데 사용할 수 있는 raycasting 인터페이스와 사용자 지정 watertight 대화방 메쉬가 복사 될 수 있습니다.
 
@@ -118,15 +118,15 @@ struct TopologyResult
      };
 ```
 
-Unity 샘플에서 이러한 각 쿼리는 가상 UI 패널의 단추에 연결 됩니다. 샘플에서는 이러한 각 쿼리에 대 한 매개 변수를 적절 한 값으로 하드 코드 합니다. 더 많은 예제는 샘플 코드의 *SpaceVisualizer.cs* 를 참조 하세요.
+Unity 샘플에서 이러한 각 쿼리는 가상 UI 패널의 단추에 연결 됩니다. 샘플에서는 이러한 각 쿼리에 대 한 매개 변수를 적절 한 값으로 하드 코드 합니다. 더 많은 예제는 샘플 코드의 *SpaceVisualizer* 를 참조 하세요.
 
 ### <a name="shape-queries"></a>셰이프 쿼리
 
-DLL 내에서 shape analyzer ( **ShapeAnalyzer_W** )는 토폴로지 분석기를 사용 하 여 사용자가 정의한 사용자 지정 셰이프와 일치 시킵니다. Unity 샘플에는 쿼리 메뉴의 셰이프 탭에 표시 되는 미리 정의 된 셰이프 집합이 있습니다.
+DLL 내에서 shape analyzer (**ShapeAnalyzer_W**)는 토폴로지 분석기를 사용 하 여 사용자가 정의한 사용자 지정 셰이프와 일치 시킵니다. Unity 샘플에는 쿼리 메뉴의 셰이프 탭에 표시 되는 미리 정의 된 셰이프 집합이 있습니다.
 
 셰이프 분석은 가로 표면 에서만 작동 합니다. 예를 들어, 소파는 평평한 좌석 표면 및 소파 위쪽의 평면에 의해 정의 됩니다. 셰이프 쿼리는 두 개의 서피스가 정렬 되 고 연결 된 특정 크기, 높이 및 가로 세로 막대의 두 표면을 찾습니다. Api 용어를 사용 하 여 소파와 소파의 위쪽은 셰이프 구성 요소 이며 맞춤 요구 사항은 셰이프 구성 요소 제약 조건입니다.
 
-"Sittable" 개체에 대 한 Unity 샘플 ( **ShapeDefinition.cs** )에 정의 된 예제 쿼리는 다음과 같습니다.
+Unity 샘플 (**ShapeDefinition**)에 정의 된 "sittable" 개체에 대 한 예제 쿼리는 다음과 같습니다.
 
 
 
@@ -162,7 +162,7 @@ shapeConstraints = new List<ShapeConstraint>()
         };
 ```
 
-래퍼 함수는 사용자 지정 셰이프 정의를 쉽게 만들기 위해 Unity 모듈에서 제공 됩니다. 구성 요소 및 모양 제약 조건의 전체 목록은 **ShapeComponentConstraint** 및 **ShapeConstraint** 구조 내의 **SpatialUnderstandingDll.cs** 에서 찾을 수 있습니다.
+래퍼 함수는 사용자 지정 셰이프 정의를 쉽게 만들기 위해 Unity 모듈에서 제공 됩니다. 구성 요소 및 모양 제약 조건의 전체 목록은 **ShapeComponentConstraint** 및 **ShapeConstraint** 구조 내의 **SpatialUnderstandingDll** 에서 찾을 수 있습니다.
 
 ![파란색 사각형은가 중 셰이프 쿼리의 결과를 강조 표시 합니다.](images/chair-shape-query-500px.png)
 
@@ -256,7 +256,7 @@ List<ObjectPlacementRule> rules =
           UnderstandingDLL.GetStaticObjectPlacementResultPtr());
 ```
 
-성공 하면 배치 위치, 차원 및 방향을 포함 하는 **Objectplacementresult** 구조가 반환 됩니다. 또한 배치가 배치 된 개체의 내부 목록에 추가 됩니다. 이후 배치 쿼리에서는이 개체를 고려 합니다. Unity 샘플의 **LevelSolver.cs** 파일에는 더 많은 예제 쿼리가 포함 되어 있습니다.
+성공 하면 배치 위치, 차원 및 방향을 포함 하는 **Objectplacementresult** 구조가 반환 됩니다. 또한 배치가 배치 된 개체의 내부 목록에 추가 됩니다. 이후 배치 쿼리에서는이 개체를 고려 합니다. Unity 샘플의 **Levelsolver 찾기 .cs** 파일에는 더 많은 예제 쿼리가 포함 되어 있습니다.
 
 ![파란색 상자는 "카메라 위치에서 멀리" 규칙을 사용 하 여 바닥 쿼리의 세 위치에서 발생 한 결과를 보여 줍니다.](images/away-from-camera-position-500px.png)
 
@@ -309,13 +309,13 @@ Unity 샘플에서 커서는 각 프레임을 비춥니다. 첫째, Unity의 col
 
 ## <a name="get-the-code"></a>코드 가져오기
 
-오픈 소스 코드는 [MixedRealityToolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)에서 사용할 수 있습니다. 프로젝트에서 코드를 사용 하는 경우 [HoloLens 개발자 포럼](https://forums.hololens.com/) 을 통해 알려주세요. 작업을 확인할 때까지 기다릴 수 없습니다!
+오픈 소스 코드는 [MixedRealityToolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)에서 사용할 수 있습니다. 프로젝트에서 코드를 사용 하는 경우 [HoloLens 개발자 포럼](https://forums.hololens.com/) 에서 알려주세요. 작업을 확인할 때까지 기다릴 수 없습니다!
 
-## <a name="about-the-author"></a>저자 정보
+## <a name="about-the-author"></a>작성자 정보
 
 <table style="border:0;width:800px">
 <tr>
-<td style="border:0"> <img alt="Jeff Evertt, Software Engineering Lead at Microsoft" width="200" height="205" src="images/jeff-evertt-200px.jpg" /></td><td style="border:0"> <b>Jeff Evertt</b> 는 인큐베이션부터 경험 개발까지 이전 며칠 이후 HoloLens에 대해 작업 한 소프트웨어 엔지니어링 리드입니다. HoloLens 이전에는 다양 한 플랫폼 및 게임의 Xbox Kinect 및 게임 업계에서 작업 했습니다. Jeff는 경고음이 들리고 현란한 광원을 사용 하는 로봇, 그래픽 및 사물에 대 한 열정적인입니다. 그는 새로운 작업을 배우고 소프트웨어, 하드웨어, 특히 두 부분이 교차 하는 공간에서 작업 하는 것을 활용할.</td>
+<td style="border:0"> <img alt="Jeff Evertt, Software Engineering Lead at Microsoft" width="200" height="205" src="images/jeff-evertt-200px.jpg" /></td><td style="border:0"> <b>Jeff Evertt</b> 는 인큐베이션부터 경험 개발까지 이전 며칠 이후 HoloLens 작업 한 소프트웨어 엔지니어링 리드입니다. HoloLens 하기 전에는 다양 한 플랫폼과 게임에서 Xbox Kinect와 게임 업계에서 작업 했습니다. Jeff는 경고음이 들리고 현란한 광원을 사용 하는 로봇, 그래픽 및 사물에 대 한 열정적인입니다. 그는 새로운 작업을 배우고 소프트웨어, 하드웨어, 특히 두 부분이 교차 하는 공간에서 작업 하는 것을 활용할.</td>
 </tr>
 </table>
 
@@ -326,4 +326,4 @@ Unity 샘플에서 커서는 각 프레임을 비춥니다. 첫째, Unity의 col
 * [장면 이해](../design/scene-understanding.md)
 * [실내 스캔 시각화](../design/room-scan-visualization.md)
 * [MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)
-* [Asobo 스튜디오: HoloLens 개발 frontline의 단원](https://www.gamesindustry.biz/articles/2016-05-12-asobo-lessons-from-the-frontline-of-ar-development)
+* [asobo 스튜디오: HoloLens 개발 frontline의 단원](https://www.gamesindustry.biz/articles/2016-05-12-asobo-lessons-from-the-frontline-of-ar-development)

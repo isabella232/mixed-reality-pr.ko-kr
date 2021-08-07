@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 이벤트,
-ms.openlocfilehash: c8871aa575e2aa4507e9dbbdcc8bdf0fc0604633
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 25ac5bd4a4f5d5678a80ec362512ce7daac791a17e93944aa4832d9d09c02ee2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176785"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208335"
 ---
 # <a name="input-events"></a>입력 이벤트
 
@@ -21,10 +21,10 @@ ms.locfileid: "113176785"
 
 | Handler | 이벤트 | Description |
 | --- | :---: | --- |
-| [`IMixedRealitySourceStateHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySourceStateHandler) | 원본 검색/손실 | 입력 소스가 감지/손실될 때(예: 굴절된 손을 감지하거나 추적하지 못했을 때) 발생합니다. |
+| [`IMixedRealitySourceStateHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySourceStateHandler) | 소스 검색/손실 | 입력 소스가 감지/손실될 때(예: 굴절된 손을 감지하거나 추적하지 못했을 때) 발생합니다. |
 | [`IMixedRealitySourcePoseHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySourcePoseHandler) | 소스 자세가 변경되었습니다. | 소스에서 발생된 자세 변경 내용입니다. 소스 자세는 입력 소스의 일반적인 자세를 나타냅니다. 6개의 DOF 컨트롤러에서 그립 또는 포인터 자세와 같은 특정 자세는 를 통해 얻을 수 `IMixedRealityInputHandler<MixedRealityPose>` 있습니다. |
 | [`IMixedRealityInputHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler) | 입력 아래로/위로 | 단추와 같은 이진 입력의 변경 내용에서 발생합니다. |
-| [`IMixedRealityInputHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) | 입력이 변경되었습니다. | 지정된 형식의 입력이 변경될 때 발생합니다. **T는** 다음 값을 사용할 수 있습니다. <br/> - *float(예:* 아날로그 트리거 반환)<br/> - *Vector2(예:* 게임 패드 엄지스틱 방향을 반환함) <br/> - *Vector3(예:* 추적된 디바이스의 위치 반환) <br/> - *쿼터니언(예:* 추적된 디바이스의 방향을 반환함)<br/> - [MixedRealityPose(예:](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose) 완전히 추적된 디바이스 반환) |
+| [`IMixedRealityInputHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) | 입력 변경 | 지정된 형식의 입력이 변경될 때 발생합니다. **T는** 다음 값을 사용할 수 있습니다. <br/> - *float(예:* 아날로그 트리거 반환)<br/> - *Vector2(예:* 게임 패드 엄지스틱 방향을 반환함) <br/> - *Vector3(예:* 추적된 디바이스의 위치 반환) <br/> - *쿼터니언(예:* 추적된 디바이스의 방향을 반환함)<br/> - [MixedRealityPose(예:](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose) 완전히 추적된 디바이스 반환) |
 | [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) | 음성 키워드 인식 | Speech Commands Profile 에 구성된 키워드 중 하나를 인식할 때 *발생합니다.* |
 | [`IMixedRealityDictationHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationHandler) | 받아쓰기<br/> Hypothesis <br/> 결과 <br/> 완료 <br/> 오류 | 받아쓰기 세션의 결과를 보고하기 위해 받아쓰기 시스템에서 발생합니다. |
 | [`IMixedRealityGestureHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler) | 제스처 이벤트: <br/> 시작됨 <br/> 업데이트됨 <br/> 완료됨 <br/> 취소됨 | 제스처 감지에서 발생합니다. |
@@ -35,7 +35,7 @@ ms.locfileid: "113176785"
 
 ## <a name="input-events-in-action"></a>실행 중 입력 이벤트
 
-스크립트 수준에서 입력 이벤트는 위의 표에 표시된 이벤트 처리기 인터페이스 중 하나를 구현하여 사용할 수 있습니다. 사용자 상호 작용을 통해 입력 이벤트가 발생하면 다음이 발생합니다.
+스크립트 수준에서 입력 이벤트는 위의 표에 표시된 이벤트 처리기 인터페이스 중 하나를 구현하여 사용할 수 있습니다. 사용자 상호 작용을 통해 입력 이벤트가 발생하면 다음이 수행됩니다.
 
 1. MRTK 입력 시스템은 입력 이벤트가 발생했음을 인식합니다.
 1. MRTK 입력 시스템은 등록된 모든 전역 입력 처리기에 입력 이벤트의 관련 인터페이스 [함수를 발생합니다.](#register-for-global-input-events)
@@ -177,12 +177,12 @@ public class GlobalHandListenerExample : MonoBehaviour,
 
 모든 입력 이벤트 인터페이스는 [`BaseInputEventData`](xref:Microsoft.MixedReality.Toolkit.Input.BaseInputEventData) 인터페이스의 각 함수에 대한 매개 변수로 데이터 개체를 제공합니다. 이 이벤트 데이터 개체는 Unity의 자체 에서 [`AbstractEventData`](https://docs.unity3d.com/2019.1/Documentation/ScriptReference/EventSystems.AbstractEventData.html) 확장됩니다.
 
-[설명된 대로](#input-events-in-action)입력 이벤트가 실행을 통해 전파되는 것을 중지하기 위해 구성 요소는 를 [`AbstractEventData.Use()`](https://docs.unity3d.com/2019.1/Documentation/ScriptReference/EventSystems.AbstractEventData.Use.html) 호출하여 이벤트를 사용된 것으로 표시할 수 있습니다. 이렇게 하면 전역 입력 처리기를 제외하고 다른 모든 GameObject가 현재 입력 이벤트를 받지 못하게 됩니다.
+[설명된 대로](#input-events-in-action)입력 이벤트가 실행을 통해 전파되는 것을 중지하기 위해 구성 요소는 를 [`AbstractEventData.Use()`](https://docs.unity3d.com/2019.1/Documentation/ScriptReference/EventSystems.AbstractEventData.Use.html) 호출하여 이벤트를 사용된 것으로 표시할 수 있습니다. 이렇게 하면 전역 입력 처리기를 제외하고 다른 GameObjects가 현재 입력 이벤트를 받지 못하게 됩니다.
 
 > [!NOTE]
 > 메서드를 호출하는 구성 요소는 `Use()` 다른 GameObjects에서 수신을 중지합니다. 그러나 현재 GameObject의 다른 구성 요소는 여전히 입력 이벤트를 수신하고 관련된 인터페이스 함수를 발생합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [포인터](pointers.md)
 - [Speech](speech.md)

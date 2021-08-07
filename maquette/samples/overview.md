@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/26/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Maquette, 프로토타입, 혼합 현실, 가상 현실, VR, MR, 피드백, 피드백 허브, 버그
-ms.openlocfilehash: 746ec983ec68db0f410871e559e2ce8166d978dd
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+ms.openlocfilehash: 5a15dcd707e9dfe023580908e5f51db48b4677fb249821f93b5fa5595fc69c96
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94935452"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212746"
 ---
 # <a name="samples-overview"></a>샘플 개요
 

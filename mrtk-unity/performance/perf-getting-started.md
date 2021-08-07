@@ -5,18 +5,18 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 6c8e060af585d7994774ea0bb575b6e5172b9558
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: 50128100d058b5ec3bca7eac523c78287ce657925c3ac116e4336174e34e75c8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281763"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211188"
 ---
 # <a name="performance"></a>성능
 
 ## <a name="getting-started"></a>시작
 
-성능을 합리화하는 가장 쉬운 방법은 프레임 속도 또는 애플리케이션이 초당 이미지를 렌더링할 수 있는 횟수를 통하는 것입니다. 대상으로 지정되는 플랫폼에 설명된 대로 대상 프레임 전송률(즉, [Windows Mixed Reality](/windows/mixed-reality/understanding-performance-for-mixed-reality), [Oculus](https://developer.oculus.com/documentation/pcsdk/latest/concepts/dg-performance-guidelines/)등). 예를 들어 HoloLens 대상 프레임 속도는 60 FPS입니다. 프레임 속도 애플리케이션이 낮으면 [홀로그램 안정화,](../performance/hologram-stabilization.md)세계 추적, 손 추적 등과 같은 사용자 환경이 저하될 수 있습니다. 개발자가 품질 프레임 속도 추적 및 달성을 돕기 위해 Mixed Reality Toolkit 다양한 도구와 스크립트를 제공합니다.
+성능을 합리화하는 가장 쉬운 방법은 프레임 속도 또는 애플리케이션이 초당 이미지를 렌더링할 수 있는 횟수를 통하는 것입니다. 대상으로 지정되는 플랫폼에 설명된 대로 대상 프레임 전송률(즉, [Windows Mixed Reality](/windows/mixed-reality/understanding-performance-for-mixed-reality), [Oculus](https://developer.oculus.com/documentation/pcsdk/latest/concepts/dg-performance-guidelines/)등). 예를 들어 HoloLens 대상 프레임 속도는 60FPS입니다. 프레임 속도 애플리케이션이 낮으면 [홀로그램 안정화,](../performance/hologram-stabilization.md)세계 추적, 손 추적 등과 같은 사용자 환경이 저하될 수 있습니다. 개발자가 품질 프레임 속도 추적 및 달성을 돕기 위해 Mixed Reality Toolkit 다양한 도구와 스크립트를 제공합니다.
 
 ### <a name="visual-profiler"></a>시각적 프로파일러
 
@@ -68,7 +68,7 @@ ms.locfileid: "114281763"
 
 Unity의 XR에 대한 기본 렌더링 구성은 [다중 패스](https://docs.unity3d.com/ScriptReference/StereoRenderingPath.MultiPass.html)입니다. 이 설정은 전체 렌더링 파이프라인을 각 시선에 대해 한 번씩 두 번 실행하도록 Unity에 지시합니다. 대신 단일 패스 인스턴스 [렌더링을](https://docs.unity3d.com/Manual/SinglePassInstancing.html) 선택하여 최적화할 수 있습니다. 이 구성은 [렌더링 대상 배열을](https://en.wikipedia.org/wiki/Multiple_Render_Targets) 활용하여 각 눈의 적절한 렌더링 [대상에](https://en.wikipedia.org/wiki/Render_Target) 인스턴스가 있는 단일 그리기 호출을 수행할 수 있습니다. 또한 이 모드를 사용하면 렌더링 파이프라인의 단일 실행에서 모든 렌더링을 수행할 수 있습니다. 따라서 단일 패스 인스턴스 렌더링을 혼합 현실 애플리케이션의 렌더링 경로로 선택하면 [CPU & GPU에서 상당한 시간을 절약할](https://blogs.unity3d.com/2017/11/21/how-to-maximize-ar-and-vr-performance-with-advanced-stereo-rendering/) 수 있으며 권장되는 렌더링 구성입니다.
 
-그러나 각 눈에 대한 각 메시에 대해 단일 그리기 호출을 발급하려면 모든 [셰이더에서 GPU 인탄싱을](https://docs.unity3d.com/Manual/GPUInstancing.html) 지원해야 합니다. 인스턴싱을 사용하면 GPU가 양쪽 눈에서 호출을 멀티플렉싱할 수 있습니다. 기본적으로 Unity 기본 제공 셰이더와 [MRTK 표준 셰이더에는](../features/rendering/mrtk-standard-shader.md) 셰이더 코드에 필요한 인탄싱 명령이 포함되어 있습니다. Unity에 대해 사용자 지정 셰이더를 작성하는 경우 Single Pass Instanced 렌더링을 지원하도록 이러한 셰이더를 업데이트해야 할 수 있습니다.
+그러나 각 눈에 각 메시에 대해 단일 그리기 호출을 발급하려면 모든 [셰이더에서 GPU 인탄싱을](https://docs.unity3d.com/Manual/GPUInstancing.html) 지원해야 합니다. 인스턴싱을 사용하면 GPU가 양쪽 눈에서 호출을 멀티플렉싱할 수 있습니다. 기본적으로 Unity 기본 제공 셰이더와 [MRTK 표준 셰이더에는](../features/rendering/mrtk-standard-shader.md) 셰이더 코드에 필요한 인탄싱 명령이 포함되어 있습니다. Unity에 대해 사용자 지정 셰이더를 작성하는 경우 단일 패스 인스턴스 렌더링을 지원하도록 이러한 셰이더를 업데이트해야 할 수 있습니다.
 
 #### <a name="example-code-for-custom-shader"></a>[사용자 지정 셰이더에 대한 예제 코드](https://docs.unity3d.com/Manual/SinglePassInstancing.html)
 
@@ -117,7 +117,7 @@ Unity는 각 플랫폼 엔드포인트에 대한 렌더링 [품질을 제어하�
 
 ### <a name="depth-buffer-sharing-hololens"></a>깊이 버퍼 공유(HoloLens)
 
-Windows Mixed Reality 플랫폼 및 특히 HoloLens 대해 개발하는 경우 *XR 설정* 따라 *깊이 버퍼 공유를* 사용하도록 설정하면 [홀로그램 안정화에](../performance/hologram-stabilization.md)도움이 될 수 있습니다. 그러나 깊이 버퍼를 처리하면 특히 [24비트 깊이 형식 을](https://docs.unity3d.com/ScriptReference/PlayerSettings.VRWindowsMixedReality-depthBufferFormat.html)사용하는 경우 성능 비용이 발생할 수 있습니다. 따라서 깊이 버퍼를 16비트 전체 자릿수로 구성하는 *것이 좋습니다.*
+Windows Mixed Reality 플랫폼 및 특히 HoloLens 대해 개발하는 경우 *XR 설정* 따라 *깊이 버퍼 공유를* 사용하도록 설정하면 [홀로그램 안정화에](../performance/hologram-stabilization.md)도움이 될 수 있습니다. 그러나 깊이 버퍼를 처리하면 특히 [24비트 깊이 형식 를](https://docs.unity3d.com/ScriptReference/PlayerSettings.VRWindowsMixedReality-depthBufferFormat.html)사용하는 경우 성능 비용이 발생할 수 있습니다. 따라서 깊이 버퍼를 16비트 전체 자릿수로 구성하는 *것이 좋습니다.*
 
 낮은 비트 형식으로 인해 [z-fighting이](https://en.wikipedia.org/wiki/Z-fighting) 발생하는 경우 모든 카메라의 [원거리 클립 평면이](https://docs.unity3d.com/Manual/class-Camera.html) 애플리케이션에 대해 가능한 가장 낮은 값으로 설정되어 있는지 확인합니다. Unity는 기본적으로 1000m의 원거리 클립 평면을 설정합니다. HoloLens 50m의 원거리 클립 평면은 일반적으로 대부분의 애플리케이션 시나리오에서 충분한 것보다 더 큽니다.
 
@@ -139,11 +139,11 @@ Windows Mixed Reality 플랫폼 및 특히 HoloLens 대해 개발하는 경우 *
 
 성능은 혼합 현실 개발자에게 모호하고 지속적으로 변화하는 과제일 수 있으며 성능을 합리화하기 위한 지식 스펙트럼은 방대합니다. 그러나 애플리케이션의 성능에 접근하는 방법을 이해하기 위한 몇 가지 일반적인 권장 사항이 있습니다.
 
-*CPU* 또는 *GPU에서* 실행되는 구성 요소로 애플리케이션 실행을 간소화하여 앱이 어느 구성 요소에 의해 제한되는지 여부를 식별하는 것이 유용합니다.  처리 단위와 신중하게 조사해야 하는 몇 가지 고유한 시나리오에 걸쳐 있는 병목 현상이 있을 수 있습니다. 그러나 시작하기 위해 애플리케이션이 가장 많은 시간 동안 실행되는 위치를 파악하는 것이 좋습니다.
+*CPU* 또는 *GPU에서* 실행되는 구성 요소로 애플리케이션 실행을 간소화하여 앱이 어느 구성 요소에 의해 제한되는지 여부를 식별하는 것이 유용합니다.  처리 단위와 신중하게 조사해야 하는 몇 가지 고유한 시나리오에 걸쳐 있는 병목 현상이 있을 수 있습니다. 그러나 시작하려면 애플리케이션이 가장 많은 시간 동안 실행되는 위치를 파악하는 것이 좋습니다.
 
 ### <a name="gpu-bounded"></a>GPU 경계
 
-혼합 현실 애플리케이션에 대한 대부분의 플랫폼은 [스테레오 범위 렌더링을](https://en.wikipedia.org/wiki/Stereoscopy)활용하기 때문에 "이중 너비" 화면을 렌더링하는 특성으로 인해 GPU에 바인딩되는 것이 매우 일반적입니다. 또한 HoloLens 또는 Oculus Quest와 같은 모바일 혼합 현실 플랫폼은 모바일 클래스 CPU & GPU 처리 능력으로 제한됩니다.
+혼합 현실 애플리케이션에 대한 대부분의 플랫폼은 [입체 렌더링을](https://en.wikipedia.org/wiki/Stereoscopy)활용하기 때문에 "이중 너비" 화면을 렌더링하는 특성으로 인해 GPU에 바인딩되는 것이 매우 일반적입니다. 또한 HoloLens 또는 Oculus Quest와 같은 모바일 혼합 현실 플랫폼은 모바일 클래스 CPU & GPU 처리 능력으로 제한됩니다.
 
 GPU에 집중할 때 일반적으로 애플리케이션이 모든 프레임을 완료해야 하는 두 가지 중요한 단계가 있습니다.
 
@@ -155,25 +155,25 @@ GPU에 집중할 때 일반적으로 애플리케이션이 모든 프레임을 �
 1. 꼭짓점 셰이더가 메시 꼭짓점을 화면 공간의 좌표로 변환(즉, 꼭짓점당 실행된 코드)
 2. 픽셀 셰이더가 지정된 픽셀 및 메시 조각(즉, 픽셀당 코드 실행)
 
-성능 튜닝과 관련하여 일반적으로 픽셀 셰이더에서 작업을 최적화하는 데 집중하는 것이 더 좋은 일입니다. 애플리케이션은 꼭짓점이 8개인 큐브를 그리기만 하면 됩니다. 그러나 큐브가 차지하는 화면 공간은 수백만 픽셀 순서로 표시할 수 있습니다. 따라서 10 개의 작업을 통해 셰이더 코드를 줄이면 꼭 짓 점 셰이더 보다 픽셀 셰이더에 감소할 경우 훨씬 더 많은 작업을 저장할 수 있습니다.
+성능 튜닝과 관련하여 일반적으로 픽셀 셰이더에서 작업을 최적화하는 데 집중하는 것이 더 좋은 일입니다. 애플리케이션은 꼭짓점이 8개뿐인 큐브를 그리기만 하면 됩니다. 그러나 큐브가 차지하는 화면 공간은 수백만 픽셀 순서로 표시할 수 있습니다. 따라서 10개 연산을 통해 셰이더 코드를 줄이면 꼭짓점 셰이더보다 픽셀 셰이더에서 감소하는 경우 훨씬 더 많은 작업을 절약할 수 있습니다.
 
-이 셰이더가 일반적으로 [Mrtk 표준 셰이더](../features/rendering/mrtk-standard-shader.md) 를 활용 하는 주된 이유 중 하나는 미적 결과를 달성 하는 동안 Unity 표준 셰이더에 비해 픽셀 & 꼭 짓 점 마다 더 많은 명령을 실행 하는 것입니다.
+이는 일반적으로 이 셰이더가 Unity 표준 [셰이더보다](../features/rendering/mrtk-standard-shader.md) 픽셀 & 꼭짓점당 더 적은 명령을 실행하면서 비교 가능한 미적 결과를 달성하기 때문에 MRTK 표준 셰이더를 활용하는 주된 이유 중 하나입니다.
 
 |    CPU 최적화      |             GPU 최적화              |
 |---------------------------|--------------------------------------------|
 | 앱 시뮬레이션 논리      | 렌더링 작업 |
 | 물리학 단순화          | 조명 계산 줄이기 |
-| 애니메이션 간소화       | 그릴 수 있는 개체 수 & polygon 수 줄이기 |
-| 가비지 수집 관리 | 투명 개체의 개수 줄이기 |
-| 캐시 참조          | 사후 처리/전체 화면 효과 방지  |
+| 애니메이션 단순화       | 그리기 가능한 개체의 다각형 개수 & 감소 |
+| 가비지 수집 관리 | 투명 개체 수 줄이기 |
+| 캐시 참조          | 후처리/전체 화면 효과 방지  |
 
-### <a name="draw-call-instancing"></a>호출 인스턴스 그리기
+### <a name="draw-call-instancing"></a>그리기 호출 인탄싱
 
-Unity에서 성능을 줄이는 가장 일반적인 실수 중 하나는 런타임에 대 한 복제 자료입니다. Gameobject가 동일한 재질 및/또는 동일한 메시를 공유 하는 경우 *[정적 일괄 처리](https://docs.unity3d.com/Manual/DrawCallBatching.html)*, *[동적 일괄 처리](https://docs.unity3d.com/Manual/DrawCallBatching.html)*, *[GPU 인스턴스](https://docs.unity3d.com/Manual/GPUInstancing.html)* 등의 기술을 통해 단일 그리기 호출로 최적화 될 수 있습니다. 그러나 개발자가 런타임에 [렌더러 재질](https://docs.unity3d.com/ScriptReference/Renderer-material.html) 의 속성을 수정 하는 경우 Unity는 할당 된 자료의 클론 복사본을 만듭니다.
+Unity에서 성능을 저하시키는 가장 일반적인 실수 중 하나는 런타임에 재질을 복제하는 것입니다. GameObjects가 동일한 재질 및/또는 를 공유하는 경우 *[정적 일괄 처리,](https://docs.unity3d.com/Manual/DrawCallBatching.html)* *[동적 일괄 처리](https://docs.unity3d.com/Manual/DrawCallBatching.html)* 및 *[GPU 인탄싱과](https://docs.unity3d.com/Manual/GPUInstancing.html)* 같은 기술을 통해 단일 그리기 호출로 최적화할 수 있습니다. 그러나 개발자가 런타임에 [렌더러 재질의](https://docs.unity3d.com/ScriptReference/Renderer-material.html) 속성을 수정하는 경우 Unity는 할당된 재질의 복제 복사본을 만듭니다.
 
-예를 들어 장면에 100 큐브가 있는 경우 개발자는 런타임에 각각에 고유한 색을 할당 하는 것이 좋습니다. C #에서 [*렌더러에*](https://docs.unity3d.com/ScriptReference/Material-color.html) 대 한 액세스를 통해 Unity는이 특정 렌더러/GameObject에 대해 메모리에 새 자료를 만듭니다. 각 100 큐브는 고유한 자료를 포함 하므로 하나의 그리기 호출로 결합 될 수는 없으며, 대신 CPU에서 GPU로의 100 그리기 호출 요청이 됩니다.
+예를 들어 장면에 100개의 큐브가 있는 경우 개발자는 런타임에 각각에 고유한 색을 할당하려고 할 수 있습니다. C#에서 [*renderer.material.color에*](https://docs.unity3d.com/ScriptReference/Material-color.html) 액세스하면 Unity에서 이 특정 렌더러/GameObject에 대한 새 재질을 메모리에 만들 수 있습니다. 각 100개 큐브에는 자체 재질이 있으므로 하나의 그리기 호출로 병합할 수 없지만, 대신 CPU에서 GPU로의 100개 그리기 호출 요청이 됩니다.
 
-이러한 장애물을 극복 하 고 큐브 별로 고유한 색을 할당 하려면 개발자가 [MaterialPropertyBlock](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html)를 활용 해야 합니다.
+이러한 장애물을 극복하고 큐브당 고유한 색을 할당하려면 개발자는 [MaterialPropertyBlock](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html)를 활용해야 합니다.
 
 ```c#
 private PropertyBlock m_PropertyBlock ;
@@ -200,12 +200,12 @@ private void ChangeColor()
 
 ## <a name="unity-performance-tools"></a>Unity 성능 도구
 
-Unity는 편집기에 기본 제공 되는 뛰어난 성능 도구를 제공 합니다.
+Unity는 편집기에서 기본 제공되는 뛰어난 성능 도구를 제공합니다.
 
-- [Unity 프로파일러](https://docs.unity3d.com/Manual//Profiler.html)
+- [Unity Profiler](https://docs.unity3d.com/Manual//Profiler.html)
 - [Unity 프레임 디버거](https://docs.unity3d.com/Manual/FrameDebugger.html)
 
-하나의 셰이더와 다른 셰이더 간의 대략적인 성능 균형을 예측 하는 경우 각 셰이더를 컴파일하고 셰이더 단계 당 작업 수를 확인 하는 것이 유용 합니다. [셰이더 자산](https://docs.unity3d.com/Manual/class-Shader.html) 을 선택 하 고 *컴파일 및 코드 표시* 단추를 클릭 하 여이 작업을 수행할 수 있습니다. 그러면 모든 셰이더 변형이 컴파일되고 결과가 포함 된 visual studio가 열립니다. 참고: 생성 된 통계 결과는 지정 된 셰이더를 활용 하는 자료에서 사용 하도록 설정 된 기능에 따라 달라질 수 있습니다. Unity는 현재 프로젝트에서 직접 사용 되는 셰이더 변형만 컴파일합니다.
+한 셰이더와 다른 셰이더 간의 대략적인 성능 절충을 예측하는 경우 각 셰이더를 컴파일하고 셰이더 단계당 작업 수를 보는 것이 유용합니다. 이 작업은 [셰이더 자산을](https://docs.unity3d.com/Manual/class-Shader.html) 선택하고 컴파일 및 *코드 표시* 단추를 클릭하여 수행할 수 있습니다. 그러면 모든 셰이더 변형이 컴파일되고 결과와 함께 Visual Studio가 열립니다. 참고: 생성된 통계 결과는 지정된 셰이더를 활용하는 재질에서 사용하도록 설정된 기능에 따라 달라질 수 있습니다. Unity는 현재 프로젝트에서 직접 사용되는 셰이더 변형만 컴파일합니다.
 
 Unity 표준 셰이더 통계 예제
 
@@ -215,7 +215,7 @@ MRTK 표준 셰이더 통계 예제
 
 ![MRTK 표준 셰이더 통계 2](../features/images/performance/MRTKStandardShader-Stats.PNG)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 ### <a name="unity"></a>Unity
 
@@ -223,14 +223,14 @@ MRTK 표준 셰이더 통계 예제
 - [Unity 성능 최적화 자습서](https://unity3d.com/learn/tutorials/topics/performance-optimization)
 - [Unity 최적화 모범 사례](https://docs.unity3d.com/Documentation/Manual/BestPracticeUnderstandingPerformanceInUnity.html)
 - [그래픽 성능 최적화](https://docs.unity3d.com/Manual/OptimizingGraphicsPerformance.html)
-- [모바일 최적화 실용적인 가이드](https://docs.unity3d.com/Manual/MobileOptimizationPracticalGuide.html)
+- [모바일 최적화 실용 가이드](https://docs.unity3d.com/Manual/MobileOptimizationPracticalGuide.html)
 
 ### <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-- [Unity에 권장 되는 설정](/windows/mixed-reality/recommended-settings-for-unity)
-- [혼합 현실 성능 이해](/windows/mixed-reality/understanding-performance-for-mixed-reality)
+- [Unity에 권장되는 설정](/windows/mixed-reality/recommended-settings-for-unity)
+- [Mixed Reality 성능 이해](/windows/mixed-reality/understanding-performance-for-mixed-reality)
 - [Unity의 권장 성능](/windows/mixed-reality/performance-recommendations-for-unity)
-- [ETW(Windows용 이벤트 추적) Unity 가이드](https://docs.unity3d.com/uploads/ExpertGuides/Analyzing_your_game_performance_using_Event_Tracing_for_Windows.pdf)
+- [Windows Unity용 이벤트 추적 가이드](https://docs.unity3d.com/uploads/ExpertGuides/Analyzing_your_game_performance_using_Event_Tracing_for_Windows.pdf)
 
 ### <a name="oculus"></a>Oculus
 
@@ -240,4 +240,4 @@ MRTK 표준 셰이더 통계 예제
 ### <a name="mesh-optimization"></a>메시 최적화
 
 - [3D 모델 최적화](/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
-- [실시간 3D 모델 변환 및 최적화를 위한 모범 사례](/dynamics365/mixed-reality/import-tool/best-practices)
+- [실시간 3D 모델 변환 및 최적화 모범 사례](/dynamics365/mixed-reality/import-tool/best-practices)

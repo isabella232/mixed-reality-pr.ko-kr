@@ -1,37 +1,37 @@
 ---
 title: Unity의 혼합 현실 기본 개체
-description: XR 네임 스페이스를 사용 하 여 Unity에서 기본 Holographic 네이티브 개체에 액세스 하는 방법에 대해 알아봅니다.
+description: XR 네임스페이스를 사용하여 Unity에서 기본 Holographic 네이티브 개체에 액세스하는 방법을 알아봅니다.
 author: vladkol
 ms.author: vladkol
 ms.date: 02/25/2021
 ms.topic: article
-keywords: unity, mixed reality, 네이티브, xrdevice, spatialcoordinatesystem, holographicframe, holographiccamera, ispatialcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr, mixed reality 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: c202c698fe55bcd3215850579166ebcb8d4b8910
-ms.sourcegitcommit: 441ef99e6090081c6cd3aa88ed21e13e941f0cc6
+keywords: unity, mixed reality, native, xrdevice, spatialcoordinatesystem, holographicframe, holographiccamera, ispatialcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr, mixed reality 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 63ee9c33a972cb918f141df3b4c1608a561b96dc5c37910deb77b089f7be69b8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102475079"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208407"
 ---
-# <a name="mixed-reality-native-interop-in-unity"></a>Unity의 혼합 현실 네이티브 interop
+# <a name="mixed-reality-native-interop-in-unity"></a>Unity의 Mixed Reality 네이티브 interop
 
-모든 혼합 현실 앱은 카메라 데이터를 수신 하 고 프레임을 렌더링 하기 시작 하기 전에 [HolographicSpace를 가져옵니다](../native/getting-a-holographicspace.md) . Unity에서 엔진은 Holographic 개체를 처리 하 고 내부적으로 렌더링 루프의 일부로 업데이트 하는 단계를 처리 합니다.
+모든 Mixed Reality 앱은 카메라 데이터 수신 및 프레임 렌더링을 시작하기 전에 [HolographicSpace를 가져옵니다.](../native/getting-a-holographicspace.md) Unity에서 엔진은 이러한 단계를 처리하여 홀로그램 개체를 처리하고 내부적으로 렌더링 루프의 일부로 업데이트합니다.
 
-그러나 고급 시나리오에서는 <a href="/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> 및 current <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>와 같은 기본 네이티브 개체에 대 한 액세스 권한을 얻어야 할 수 있습니다.
+그러나 고급 시나리오에서는 <a href="/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> 및 현재 <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>과 같은 기본 네이티브 개체에 액세스해야 할 수 있습니다.
 
 [!INCLUDE[](includes/unity-native-ptrs.md)]
 
-### <a name="unmarshaling-native-pointers"></a>네이티브 포인터 역마샬링
+### <a name="unmarshaling-native-pointers"></a>네이티브 포인터 비마하일링
 
-`IntPtr`위의 방법 중 하나에서를 가져온 후 (MRTK에는 필요 하지 않음) 다음 코드 조각을 사용 하 여 관리 되는 개체로 마샬링합니다.
+위의 메서드 중 하나에서 를 가져온 `IntPtr` 후(MRTK에 필요하지 않음) 다음 코드 조각을 사용하여 관리되는 개체로 마샬링합니다.
 
-[MixedReality](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT)를 사용 하는 경우 메서드를 사용 하 여 네이티브 포인터에서 관리 되는 개체를 생성할 수 있습니다. `FromNativePtr()`
+Microsoft.Windows 사용하는 경우 [ MixedReality.DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT), 메서드를 사용하여 네이티브 포인터에서 관리되는 개체를 생성할 수 있습니다. `FromNativePtr()`
 
 ```cs
 var worldOrigin = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(spatialCoordinateSystemPtr);
 ```
 
-그렇지 않으면를 사용 하 여 `Marshal.GetObjectForIUnknown()` 원하는 형식으로 캐스팅 합니다.
+그렇지 않으면 를 사용하고 `Marshal.GetObjectForIUnknown()` 원하는 형식으로 캐스팅합니다.
 
 ```cs
 #if ENABLE_WINMD_SUPPORT
@@ -41,7 +41,7 @@ var worldOrigin = Marshal.GetObjectForIUnknown(spatialCoordinateSystemPtr) as Wi
 
 ### <a name="converting-between-coordinate-systems"></a>좌표계 간 변환
 
-Unity는 왼손 좌표계를 사용 하는 반면 Windows 인식 Api는 오른손 좌표계를 사용 합니다. 이러한 두 가지 규칙을 변환 하기 위해 다음 도우미를 사용할 수 있습니다.
+Unity는 왼쪽 좌표계를 사용하는 반면 Windows Perception API는 오른쪽 좌표계를 사용합니다. 이러한 두 규칙 간에 변환하려면 다음 도우미를 사용할 수 있습니다.
 
 ```cs
 namespace NumericsConversion
@@ -70,11 +70,11 @@ namespace NumericsConversion
 ### <a name="using-holographicframe-native-data"></a>HolographicFrame 네이티브 데이터 사용
 
 > [!NOTE]
-> HolographicFrameNativeData을 통해 수신 되는 네이티브 개체의 상태를 변경 하면 예기치 않은 동작 및 렌더링 아티팩트가 발생할 수 있습니다. 특히 Unity에서 동일한 상태를 갖는 이유가 있을 수 있습니다.  예를 들어 HolographicFrame를 호출 하면 안 됩니다. UpdateCurrentPrediction를 호출 하면 안 됩니다. 그렇지 않으면 Unity가 해당 프레임으로 렌더링 하는 포즈 예측이 Windows에서 기대 하는 포즈와 동기화 되지 않아 [홀로그램 안정성이](../platform-capabilities-and-apis/hologram-stability.md)감소 합니다.
+> HolographicFrameNativeData를 통해 수신된 네이티브 개체의 상태를 변경하면 예측할 수 없는 동작 및 렌더링 아티팩트(특히 Unity가 동일한 상태에 대한 이유도 있는 경우)가 발생할 수 있습니다.  예를 들어 HolographicFrame.UpdateCurrentPrediction을 호출하지 않아야 합니다. 그렇지 않으면 Unity가 해당 프레임으로 렌더링하는 자세 예측이 Windows 예상하는 자세와 동기화되지 않아 [홀로그램 안정성이](../platform-capabilities-and-apis/hologram-stability.md)감소합니다.
 
-렌더링 또는 디버깅을 위해 네이티브 인터페이스에 액세스 해야 하는 경우 네이티브 플러그 인 또는 c # 코드에서 HolographicFrameNativeData의 데이터를 사용 합니다.
+렌더링 또는 디버깅을 위해 네이티브 인터페이스에 액세스해야 하는 경우 네이티브 플러그 인 또는 C# 코드에서 HolographicFrameNativeData의 데이터를 사용합니다.
 
-HolographicFrameNativeData를 사용 하 여 XR SDK 확장을 사용 하 여 photon time에 대 한 현재 프레임의 예측을 가져오는 방법의 예는 다음과 같습니다.
+다음은 HolographicFrameNativeData를 사용하여 XR SDK 확장을 사용하여 광자 시간에 대한 현재 프레임의 예측을 얻는 방법의 예입니다.
 
 ```cs
 using System;

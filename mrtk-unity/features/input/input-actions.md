@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, InputActions,
-ms.openlocfilehash: cf6ce2af304ee1cd706d0111d66a97018113fb09
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: ffa8f201097c8d85b1ea19613b608487529412f3686ddf077f1acc1c34e93c1f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176815"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211247"
 ---
 # <a name="input-actions"></a>입력 작업
 
@@ -49,7 +49,7 @@ Six Dof | 3D는 6개의 DOF 컨트롤러에서 생성된 것과 같이 변환 �
 
 ### <a name="speech-input"></a>음성 입력
 
-음성 **명령 프로필** 의 *입력 시스템 프로필* 아래에서 현재 정의된 음성 명령 목록을 찾을 수 있습니다. 작업 중 하나를 작업에 매핑하려면 작업 *드롭다운에서* 선택합니다.
+음성 **명령 프로필의** *입력 시스템 프로필* 에서 현재 정의된 음성 명령 목록을 찾을 수 있습니다. 작업 중 하나를 작업에 매핑하려면 작업 *드롭다운에서* 선택합니다.
 
 <img src="../images/input/SpeechCommandsProfile.png" alt="Speech Commands profile" style="max-width:100%;">
 
@@ -70,8 +70,8 @@ Six Dof | 3D는 6개의 DOF 컨트롤러에서 생성된 것과 같이 변환 �
 
 더 많은 제어를 원하는 경우 [`IMixedRealityInputActionHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputActionHandler) 스크립트에서 직접 인터페이스를 구현할 수 있습니다. 처리기 인터페이스를 통한 이벤트 처리에 대한 자세한 내용은 [**입력**](input-events.md) 이벤트 섹션을 참조하세요.
 
-## <a name="examples"></a>예
+## <a name="examples"></a>예제
 
-`MRTK/Examples/Demos/Input/Scenes/InputActions`작업을 만들고, 컨트롤러, 음성 및 제스처 입력에 매핑하고, 이를 사용하여 명령에서 개체를 회전하는 방법을 보여주는 예제 장면을 참조하세요.
+`MRTK/Examples/Demos/Input/Scenes/InputActions`작업을 만들고, 컨트롤러, 음성 및 제스처 입력에 매핑하고, 명령에서 개체를 회전하는 데 사용하는 방법을 보여주는 예제 장면을 참조하세요.
 
 <img src="../images/input/InputActionsExample.PNG" alt="Input action example" style="max-width:100%;">

@@ -1,18 +1,18 @@
 ---
-title: 근접 광원
+title: 근접 조명
 description: MRTK의 예제를 통해 근접 광원에 대한 설명서
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 6e57a76d54d0f3f63ce8dcb80582e178effa39d9
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 1be58cd22228258d51f63b2a4db0294bceaec1320640ecbbfa2795edde5e39bd
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176384"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208323"
 ---
-# <a name="proximity-light"></a>근접 광원
+# <a name="proximity-light"></a>근접 조명
 
 는 개체 표면 근처에 마우스를 [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) 가져가는 "그라데이션 역점 조명"을 모방하는 [Fluent Design 시스템](https://www.microsoft.com/design/fluent/) 패러다임입니다. 근사 상호 작용에 자주 사용되는 애플리케이션은 구성 요소를 통해 근접 광원의 속성을 제어할 수 [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) 있습니다.
 
@@ -21,7 +21,7 @@ ms.locfileid: "113176384"
 > [!NOTE]
 > 기본적으로 최대 [`ProximityLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) 2개가 지원됩니다.
 
-## <a name="examples"></a>예
+## <a name="examples"></a>예제
 
 MRTK 내의 대부분의 장면에서는 를 [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) 활용합니다. 가장 일반적인 사용 사례는 MRTK/SDK/Features/UX/Prefabs/Cursors/FingerCursor.prefab에서 찾을 수 있습니다.
 
@@ -57,6 +57,6 @@ private const int proximityLightCount = 4;
 >
 >`Property (_ProximityLightData) exceeds previous array size (24 vs 12). Cap to previous size.`
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
-* [MRTK 표준 세이더](mrtk-standard-shader.md)
+* [MRTK 표준 셰이더](mrtk-standard-shader.md)

@@ -1,44 +1,44 @@
 ---
-title: 눈 추적 대상 선택
-description: 아이 응시 데이터 및 아이 응시 특정 이벤트에 액세스 하 여 MRTK에서 대상을 선택 하는 방법
+title: 시선 추적 대상 선택
+description: 시선 응시 데이터 및 시선 응시 특정 이벤트에 액세스하여 MRTK에서 대상을 선택하는 방법
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, EyeTracking,
-ms.openlocfilehash: 229903e01c597aefbb3fc29de8a49d79cbbd42d0
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: aab2f35259db183f4f3edb4fffc2b3e7a066bccf9c69e492c90ee193388b8b7a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144193"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189603"
 ---
-# <a name="eye-supported-target-selection"></a>눈 지원 대상 선택
+# <a name="eye-supported-target-selection"></a>시선 지원 대상 선택
 
 ![MRTK](../../images/eye-tracking/mrtk_et_targetselect.png)
 
-이 페이지에서는 아이 응시 데이터에 액세스 하는 다양 한 옵션과 MRTK의 대상 선택에 대 한 눈에 맞는 특정 이벤트에 대해 설명 합니다. 시각 추적을 사용 하면 사용자가 _직접 추적_ 및 _음성 명령과_ 같은 추가 입력을 사용 하 여 원하는 항목에 대 한 정보를 조합 하 여 빠르고 간편 하 게 대상을 선택할 수 있습니다.
+이 페이지에서는 MRTK에서 대상을 선택하기 위해 시선 응시 데이터 및 시선 응시 특정 이벤트에 액세스하기 위한 다양한 옵션을 설명합니다. 시선 추적을 사용하면 _손 추적_ 및 음성 명령과 같은 추가 입력을 통해 사용자가 보고 있는 내용에 대한 정보를 조합하여 빠르고 간편하게 대상을 선택할 수 _있습니다._
 
-- _"Select"_ (기본 음성 명령) & 표시
-- _"폭발_ " 또는 _"Pop"_ (사용자 지정 음성 명령) & 표시
-- & Bluetooth 단추 찾기
-- & 가까이 (즉, 사용자의 손을 잡고, 엄지 단추와 인덱스 손가락을 함께)
-  - 이렇게 하려면 [광선을 사용 하지 않도록 설정 해야](eye-tracking-eyes-and-hands.md#how-to-disable-the-hand-ray) 합니다.
+- _"Select"(기본_ 음성 명령)라고 & 찾습니다.
+- "분해" 또는 _"팝"(사용자_ 지정 음성 명령)을 & 찾습니다. 
+- & Bluetooth 단추 보기
+- 손가락 모으기를 &(즉, 손을 내밀고 엄지 단추와 인덱스 손가락을 함께 가져 오십시오.)
+  - 이렇게 하려면 손 광선을 사용하지 않도록 [설정해야 합니다.](eye-tracking-eyes-and-hands.md#how-to-disable-the-hand-ray)
 
-아이 응시를 사용 하 여 holographic 콘텐츠를 선택 하려면 다음과 같은 몇 가지 옵션을 사용할 수 있습니다.
+시선 응시를 사용하여 홀로그램 콘텐츠를 선택하려면 몇 가지 옵션이 있습니다.
 
-[**1. 기본 포커스 포인터를 사용 합니다.**](#1-use-generic-focus-and-pointer-handlers)
+[**1. 기본 포커스 포인터 사용:**](#1-use-generic-focus-and-pointer-handlers)
 
-이는 우선 순위가 지정 된 커서로 인식 될 수 있습니다.
-기본적으로 손을 볼 수 있는 경우에는 손 광선입니다.
-뷰가 표시 되지 않는 경우 우선 순위가 지정 된 포인터가 헤드 또는 눈에 응시 됩니다.
-따라서 핸드 광선을 사용 하는 경우 현재 디자인 헤드 또는 눈에 맞는 응시를 커서 입력으로 표시 하지 않도록 합니다.
+우선 순위가 있는 커서로 이해할 수 있습니다.
+기본적으로 손을 볼 수 있는 경우 손 광선이 됩니다.
+손을 볼 수 없는 경우 우선 순위가 있는 포인터는 머리 또는 시선 응시입니다.
+따라서 현재 디자인 헤드 또는 시선 응시를 기반으로 손 광선이 사용되는 경우 커서 입력으로 표시되지 않습니다.
 
-예를 들면 다음과 같습니다.
+예를 들어:
 
-사용자가 먼 holographic 단추를 선택 하려고 합니다.
-개발자는 다양 한 상황에서 사용자가이 작업을 수행할 수 있도록 하는 유연한 솔루션을 제공 하려고 합니다.
+사용자가 먼 홀로그램 단추를 선택하려고 합니다.
+개발자는 사용자가 다양한 조건에서 이 작업을 수행할 수 있는 유연한 솔루션을 제공하려고 합니다.
 
-- 단추를 탐색 하 고 poke.
+- 단추까지 위로 들어와서 단추를 쌓습니다.
 - 멀리서 보고 "select"라고 말합니다.
 - 손 광선을 사용하여 단추를 대상으로 지정하고 손가락 모으기를 수행하는 경우 가장 유연한 솔루션은 현재 우선 순위가 지정된 기본 포커스 포인터가 이벤트를 트리거할 때마다 알려주기 때문에 기본 포커스 처리기를 사용하는 것입니다. 손 광선을 사용하는 경우 손을 보는 즉시 머리 또는 시선 응시 포커스 포인터가 비활성화됩니다.
 
@@ -55,13 +55,13 @@ ms.locfileid: "110144193"
 
 ## <a name="1-use-generic-focus-and-pointer-handlers"></a>1. 제네릭 포커스 및 포인터 처리기 사용
 
-눈동자 추적이 올바르게 설정 된 경우 ( [눈 추적을 사용 하려면 기본 MRTK 설정](eye-tracking-basic-setup.md)참조) 사용자가 눈동자를 사용 하 여 holograms를 선택할 수 있도록 하는 것은 다른 포커스 입력 (예: 헤드 응시 또는 손 모양)의 경우와 동일 합니다. 이는 사용자의 요구 사항에 따라 MRTK 입력 포인터 프로필에서 주 포커스 형식을 정의 하 여 코드를 그대로 유지 하면서 holograms와 상호 작용 하는 유연한 방법을 제공 합니다. 이를 통해 코드 줄을 변경 하지 않고 head 또는 눈동자를 전환할 수 있으며, 원거리 상호 작용을 위해 손 광선을 눈 대상으로 바꿀 수 있습니다.
+시선 추적이 올바르게 설정된 [경우(시선 추적을 사용하도록 기본 MRTK 설정](eye-tracking-basic-setup.md)참조) 사용자가 눈으로 홀로그램을 선택할 수 있도록 하는 것은 다른 포커스 입력(예: 머리 응시 또는 손 광선)과 동일합니다. 이렇게 하면 코드를 그대로 유지하면서 사용자의 요구에 따라 MRTK 입력 포인터 프로필에서 기본 포커스 형식을 정의하여 홀로그램과 상호 작용하는 유연한 방법의 큰 이점을 제공합니다. 이렇게 하면 코드 줄을 변경하지 않고 머리 또는 시선 응시 사이를 전환하거나 손 광선을 원거리 상호 작용을 위한 시선 대상으로 바꿀 수 있습니다.
 
 ### <a name="focusing-on-a-hologram"></a>홀로그램에 집중
 
-홀로그램의 초점을 감지 하려면 두 인터페이스 멤버 ( _OnFocusEnter_ 및 _OnFocusExit_)를 제공 하는 _' IMixedRealityFocusHandler '_ 인터페이스를 사용 합니다.
+홀로그램에 초점을 맞춘 시기를 감지하려면 _OnFocusEnter_ 및 _OnFocusExit의_ 두 인터페이스 멤버를 제공하는 _'IMixedRealityFocusHandler'_ 인터페이스를 사용합니다.
 
-다음은 색을 확인할 때 홀로그램의 색을 변경 하는 데 사용할 수 있는 간단한 예제입니다 [.](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ColorTap)
+다음은 볼 때 홀로그램의 색을 변경하는 [ColorTap.cs의](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ColorTap) 간단한 예제입니다.
 
 ```c#
 public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler
@@ -81,12 +81,12 @@ public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler
 
 ### <a name="selecting-a-focused-hologram"></a>포커스가 있는 홀로그램 선택
 
-포커스가 있는 홀로그램을 선택 하려면 _Pointerhandler_ 를 사용 하 여 입력 이벤트를 수신 하 여 선택 항목을 확인 합니다.
-예를 들어 _IMixedRealityPointerHandler_ 를 추가 하면 단순 포인터 입력에 반응 하 게 됩니다.
-_IMixedRealityPointerHandler_ 인터페이스를 사용 하려면 다음 세 가지 인터페이스 멤버를 구현 해야 합니다. _Onpointerup_, _Onpointerup_ 및 _onpointerup_ 합니다.
+포커스가 있는 홀로그램을 선택하려면 _PointerHandler를_ 사용하여 입력 이벤트를 수신 대기하여 선택을 확인합니다.
+예를 들어 _IMixedRealityPointerHandler를_ 추가하면 간단한 포인터 입력에 반응하게 됩니다.
+_IMixedRealityPointerHandler_ 인터페이스를 사용하려면 _OnPointerUp, OnPointerDown_ 및 _OnPointerClicked_ 의 세 가지 인터페이스 멤버를 구현해야 합니다. 
 
-아래 예제에서는이를 확인 하 고 집기를 확인 하거나 "선택" 하 여 홀로그램의 색을 변경 합니다.
-이벤트를 트리거하는 데 필요한 작업은 `eventData.MixedRealityInputAction == selectAction` Unity 편집기에서의 유형을 설정할 수 있는 방법으로 정의 됩니다 `selectAction` (기본적으로 "선택" 동작). _Mrtk_ 프로필 [](../input-actions.md)  ->  _입력_  ->  _입력 작업_ 을 통해 mrtk 프로필에서 사용 가능한 MixedRealityInputActions 유형을 구성할 수 있습니다.
+아래 예제에서는 홀로그램을 보고 손가락 모으기 또는 "select"라고 말하여 홀로그램의 색을 변경합니다.
+이벤트를 트리거하는 데 필요한 작업은 Unity 편집기에서 형식을 설정할 수 있는 에 의해 정의됩니다. `eventData.MixedRealityInputAction == selectAction` `selectAction` 기본적으로 "선택" 작업입니다. 사용 가능한 [MixedRealityInputActions](../input-actions.md) 형식은 MRTK 구성 프로필 입력 입력 작업을 통해 _MRTK 프로필에서_ 구성할 수  ->    ->  있습니다.
 
 ```c#
 public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler, IMixedRealityPointerHandler
@@ -116,17 +116,17 @@ public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler, IMixedRealityP
 }
 ```
 
-### <a name="eye-gaze-specific-baseeyefocushandler"></a>아이-응시 별 BaseEyeFocusHandler
+### <a name="eye-gaze-specific-baseeyefocushandler"></a>시선 응시 관련 BaseEyeFocusHandler
 
-아이 응시가 다른 포인터 입력과 매우 다를 수 있다는 것을 고려할 때, _눈_ 에 잘 대응 하 고 현재 기본 입력 포인터인 경우 포커스 입력에만 반응 하는지 확인 하는 것이 좋습니다.
-이러한 목적을 위해에서 파생 되는 [`BaseEyeFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.BaseEyeFocusHandler) 시각 추적과 관련 된를 사용 [`BaseFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.BaseFocusHandler) 합니다.
-앞에서 설명한 것 처럼 눈동자 응시 대상이 현재 기본 포인터 입력 인 경우에만 트리거됩니다 (즉, 손을 광선 활성). 자세한 내용은 [눈동자 및 손 모양 제스처를 지 원하는 방법](eye-tracking-eyes-and-hands.md)을 참조 하세요.
+시선 응시는 다른 포인터 입력과 매우 다를 수 있기 때문에 _시선 응시이고_ 현재 기본 입력 포인터인 경우에만 포커스 입력에 반응해야 할 수 있습니다.
+이를 위해 [`BaseEyeFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.BaseEyeFocusHandler) 시선 추적과 관련되고 에서 파생되는 를 [`BaseFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.BaseFocusHandler) 사용합니다.
+앞에서 설명한 것처럼 시선 응시 대상 지정이 현재 기본 포인터 입력인 경우에만 트리거됩니다(즉, 손 광선이 활성 상태가 아닙니다). 자세한 내용은 [시선 응시 + 손 제스처를 지원하는 방법을 참조하세요.](eye-tracking-eyes-and-hands.md)
 
-다음은의 예제입니다 `EyeTrackingDemo-03-Navigation` (자산/m RTK/예제/데모/EyeTracking/장면).
-이 데모에는 표시 되는 개체의 부분에 따라 설정 되는 두 개의 3D holograms 있습니다. 사용자가 홀로그램의 왼쪽에 표시 되 면 해당 부분은 사용자를 향하는 앞으로 천천히 이동 합니다.
-오른쪽이 보이는 경우 해당 부분은 앞쪽으로 천천히 이동 합니다.
-이 동작은 항상 활성화 하 고 싶지 않을 수 있는 동작이 며, 손 모양 또는 헤드 응시에 의해 실수로 트리거되지 않을 수도 있습니다.
-가 [`OnLookAtRotateByEyeGaze`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.OnLookAtRotateByEyeGaze) 연결 되 면 GameObject를 검토 하는 동안 회전 합니다.
+다음은 `EyeTrackingDemo-03-Navigation` (Assets/MRTK/Examples/Demos/EyeTracking/Scenes)의 예제입니다.
+이 데모에는 개체의 어떤 부분에 따라 설정되는 두 개의 3D 홀로그램이 있습니다. 사용자가 홀로그램의 왼쪽을 보면 해당 부분이 사용자를 향하는 전면으로 천천히 이동합니다.
+오른쪽을 살펴보면 해당 부분이 천천히 앞으로 이동합니다.
+이 동작은 항상 활성화하지 않으려는 동작이며 손 광선 또는 머리 응시로 실수로 트리거하지 않을 수도 있습니다.
+를 [`OnLookAtRotateByEyeGaze`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.OnLookAtRotateByEyeGaze) 연결하면 GameObject가 확인되는 동안 회전합니다.
 
 ```c#
 public class OnLookAtRotateByEyeGaze : BaseEyeFocusHandler
@@ -155,50 +155,50 @@ public class OnLookAtRotateByEyeGaze : BaseEyeFocusHandler
 }
 ```
 
-에서 사용 가능한 이벤트의 전체 목록은 API 설명서를 [`BaseEyeFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.BaseEyeFocusHandler) 참조 하세요.
+API 설명서에서 의 사용 가능한 이벤트의 전체 목록을 [`BaseEyeFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.BaseEyeFocusHandler) 확인합니다.
 
-- **OnEyeFocusStart:** 이 대상의 collider와 교차 하는 모양 응시를 *시작* 하면 트리거됩니다.
-- **OnEyeFocusStay:** 아이 응시 광선이이 대상의 collider와 교차 *하는 동안* 트리거됩니다.
-- **OnEyeFocusStop:** 이 대상의 collider와 교차 하는 눈동자를 *중지* 한 후에 트리거됩니다.
-- **OnEyeFocusDwell:** 지정 된 시간 동안 눈동자 응시 광선이이 대상의 collider와 교차 한 후에 트리거됩니다.
+- **OnEyeFocusStart:** 시선 응시 광선이 이 대상의 충돌체와 교차하기 *시작하면* 트리거됩니다.
+- **OnEyeFocusStay:** 시선 응시 광선이 이 대상의 충돌체와 교차하는 *동안* 트리거됩니다.
+- **OnEyeFocusStop:** 시선 응시 광선이 이 대상의 충돌체와의 교차를 *중지하면* 트리거됩니다.
+- **OnEyeFocusDwell:** 지정된 시간 동안 시선 응시 광선이 이 대상의 충돌체와 교차하면 트리거됩니다.
 
-## <a name="2-independent-eye-gaze-specific-eyetrackingtarget"></a>2. 독립적인 눈에 EyeTrackingTarget
+## <a name="2-independent-eye-gaze-specific-eyetrackingtarget"></a>2. 독립적인 시선 응시 관련 EyeTrackingTarget
 
-마지막으로 스크립트를 통해 눈에 잘 맞는 입력을 다른 포커스 포인터와 완전히 독립적으로 처리할 수 있는 솔루션을 제공 [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) 합니다.
+마지막으로, 스크립트를 통해 다른 포커스 포인터와 완전히 독립적인 시선 기반 입력을 처리할 수 있는 솔루션을 [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) 제공합니다.
 
-이는 다음과 같은 세 가지 _이점이_ 있습니다.
+여기에는 다음과 같은 세 _가지 이점이 있습니다._
 
-- 홀로그램은 사용자의 눈 응시에만 반응 하도록 할 수 있습니다.
-- 이는 현재 활성 기본 입력과는 독립적입니다. 따라서 여러 입력을 한 번에 처리할 수 있습니다. 예를 들어 빠른 시각 대상을 직접 제스처와 결합할 수 있습니다.
-- Unity 편집기 또는 코드를 통해 기존 동작을 빠르고 편리 하 게 처리 하 고 다시 사용할 수 있도록 여러 Unity 이벤트가 이미 설정 되어 있습니다.
+- 홀로그램이 사용자의 시선 응시에만 반응하는지 확인할 수 있습니다.
+- 이는 현재 활성 상태인 기본 입력과는 독립적입니다. 따라서 빠른 시선 대상 지정과 손 제스처를 결합하는 등 여러 입력을 한 번에 처리할 수 있습니다.
+- Unity 편집기 내에서 또는 코드를 통해 기존 동작을 빠르고 편리하게 처리하고 다시 사용할 수 있도록 여러 Unity 이벤트가 이미 설정되어 있습니다.
 
-또한 다음과 같은 몇 가지 _단점이 있습니다._
+몇 가지 _단점도 있습니다._
 
-- 별도의 입력을 개별적으로 처리 하는 데 더 많은 노력이 필요 합니다.
-- 세련 되지 않은 성능 저하: 대상만 지원 합니다. 눈 추적이 작동 하지 않는 경우 약간의 추가 대체가 필요 합니다.
+- 개별 입력을 개별적으로 처리하는 데 더 많은 노력이 있습니다.
+- 세련된 성능 저하 없음: 시선 대상 지정만 지원합니다. 시선 추적이 작동하지 않는 경우 몇 가지 추가 대체가 필요합니다.
 
-_BaseFocusHandler_ 와 마찬가지로 _EyeTrackingTarget_ 는 unity 편집기 (아래 예제 참조)를 통해 또는 코드에서 _AddListener ()_ 를 사용 하 여 편리 하 게 수신할 수 있는 몇 가지 눈에 맞는 unity 이벤트를 사용할 수 있습니다.
+_BaseFocusHandler와_ 마찬가지로 _EyeTrackingTarget은_ Unity 편집기(아래 예제 참조)를 통해 또는 코드에서 _AddListener()를_ 사용하여 편리하게 수신 대기할 수 있는 몇 가지 시선 응시 관련 Unity 이벤트와 함께 제공됩니다.
 
 - OnLookAtStart()
 - WhileLookingAtTarget()
 - OnLookAway()
-- OnDwell ()
-- OnSelected ()
+- OnDwell()
+- OnSelected()
 
-다음에서는 _EyeTrackingTarget_ 를 사용 하는 방법에 대 한 몇 가지 예제를 안내 합니다.
+다음에서는 _EyeTrackingTarget_ 를 사용하는 방법에 대한 몇 가지 예제를 안내합니다.
 
-### <a name="example-1-eye-supported-smart-notifications"></a>예제 #1: 눈동자 지원 스마트 알림
+### <a name="example-1-eye-supported-smart-notifications"></a>예제 #1: 시선 지원 스마트 알림
 
-`EyeTrackingDemo-02-TargetSelection`(Asset/MRTK/example/데모/EyeTracking/장면)에서 눈동자 응시에 반응 하는 _' 스마트 attentive 알림 '_ 의 예제를 찾을 수 있습니다.
-이러한 상자는 장면에 배치할 수 있는 3D 텍스트 상자 이며 쉽게 읽을 수 있도록 사용자를 매끄럽게 확대 하 고 전환 합니다. 사용자가 알림을 읽는 동안 정보가 선명 하 고 명확 하 게 표시 됩니다. 이 정보를 읽고 알림에서 벗어나면 알림이 자동으로 해제 되 고 페이드 아웃 됩니다. 이를 위해 다음과 같은 몇 가지 일반적인 동작 스크립트가 눈 추적에 국한 되지 않습니다.
+`EyeTrackingDemo-02-TargetSelection`(Assets/MRTK/Examples/Demos/EyeTracking/Scenes)에서 시선 응시에 반응하는 _'스마트 들여쓰기 알림'에_ 대한 예제를 찾을 수 있습니다.
+이러한 텍스트 상자는 장면에 배치할 수 있으며 쉽게 읽을 수 있도록 살펴볼 때 원활하게 확대되고 사용자 쪽으로 전환되는 3D 텍스트 상자입니다. 사용자가 알림을 읽는 동안 정보가 선명하고 명확하게 표시됩니다. 알림을 읽고 알림에서 벗어나면 알림이 자동으로 해제되고 페이드 아웃됩니다. 이 모든 것을 달성하기 위해 다음과 같이 시선 추적에 특정되지 않은 몇 가지 일반적인 동작 스크립트가 있습니다.
 
 - [`FaceUser`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.FaceUser)
 - [`ChangeSize`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ChangeSize)
 - [`BlendOut`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.BlendOut)
 
-이 방법의 장점은 여러 이벤트에서 동일한 스크립트를 다시 사용할 수 있다는 것입니다. 예를 들어, 홀로그램은 음성 명령을 기반으로 하거나 가상 단추를 누른 후 사용자의 연결을 시작할 수 있습니다. 이러한 이벤트를 트리거하려면 [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) GameObject에 연결된 스크립트에서 실행해야 하는 메서드를 참조하기만 하면 됩니다.
+이 방법의 장점은 동일한 스크립트를 다양한 이벤트에서 다시 사용할 수 있다는 것입니다. 예를 들어 홀로그램은 음성 명령에 따라 또는 가상 단추를 누른 후 사용자를 향하기 시작할 수 있습니다. 이러한 이벤트를 트리거하려면 [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) GameObject에 연결된 스크립트에서 실행해야 하는 메서드를 참조하기만 하면 됩니다.
 
-_'스마트 들여쓰기 알림'의_ 예는 다음과 같습니다.
+_'스마트 들여쓰기 알림'의 예는_ 다음과 같습니다.
 
 - **OnLookAtStart()**: 알림이 시작됩니다.
   - *FaceUser.Engage:* ... 사용자 쪽으로 전환합니다.
@@ -212,7 +212,7 @@ _'스마트 들여쓰기 알림'의_ 예는 다음과 같습니다.
   - *ChangeSize.Disengage:* ... 원래 크기로 다시 줄입니다.
   - *BlendOut.Disengage:* ... 혼합 시작 - _OnDwell()이_ 트리거된 경우 완전히 혼합되어 제거되고, 그렇지 않으면 유휴 상태로 돌아갑니다.
 
-**디자인 고려 사항:** 여기서는 사용자의 시선 응시에 너무 빠르게 반응하여 불편을 유발하지 않도록 이러한 동작의 속도를 신중하게 조정하는 것이 이 환경의 핵심입니다.
+**디자인 고려 사항:** 여기서는 사용자의 시선 응시에 너무 빠르게 반응하여 불편을 유발하지 않도록 이러한 동작의 속도를 신중하게 조정하는 것이 흥미로운 경험입니다.
 그렇지 않으면 매우 부담스울 수 있습니다.
 
 <img src="../../images/eye-tracking/mrtk_et_EyeTrackingTarget_Notification.jpg" width="750" alt="Target Notification">
@@ -221,7 +221,7 @@ _'스마트 들여쓰기 알림'의_ 예는 다음과 같습니다.
 
 예제 #1 마찬가지로, 볼 때 일정한 방향과 일정한 속도로 느린 회전을 하는 홀로그램 `EyeTrackingDemo-02-TargetSelection` gem(Assets/MRTK/Examples/Demos/EyeTracking/Scenes) 장면에 대한 호버 피드백을 쉽게 만들 수 있습니다. _EyeTrackingTarget의_ _WhileLookingAtTarget()_ 이벤트에서 홀로그램 gem의 회전을 트리거하기만 하면 됩니다. 다음은 몇 가지 세부 정보입니다.
 
-1. 연결된 GameObject를 회전하는 public 함수를 포함하는 제네릭 스크립트를 만듭니다. 다음은 Unity 편집기에서 회전 방향과 속도를 조정할 수 있는 RotateWithConstSpeedDir의 예입니다 _._
+1. 연결된 GameObject를 회전하는 public 함수를 포함하는 제네릭 스크립트를 만듭니다. 다음은 Unity 편집기에서 회전 방향과 속도를 조정할 수 있는 _RotateWithConstSpeedDir.cs의_ 예제입니다.
 
     ```c#
     using UnityEngine;
@@ -252,29 +252,29 @@ _'스마트 들여쓰기 알림'의_ 예는 다음과 같습니다.
     }
     ```
 
-1. 스크립트를 [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) 대상 GameObject에 추가 하 고 아래 스크린샷에 표시 된 것 처럼 UnityEvent 트리거에서 _RotateTarget ()_ 함수를 참조 합니다.
+1. 대상 [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) GameObject에 스크립트를 추가하고 아래 스크린샷과 같이 UnityEvent 트리거에서 _RotateTarget()_ 함수를 참조합니다.
 
     ![EyeTrackingTarget 샘플](../../images/eye-tracking/mrtk_et_EyeTrackingTargetSample.jpg)
 
-### <a name="example-3-pop-those-gems-aka-_multi-modal-eye-gaze-supported-target-selection_"></a>예제 #3: 이러한 보석 즉, _다중 모달 눈동자-응시 지원 대상 선택_
+### <a name="example-3-pop-those-gems-aka-_multi-modal-eye-gaze-supported-target-selection_"></a>예제 #3: 이러한 gem을 팝 _즉, 다중 모달 시선 응시 지원 대상 선택_
 
-이전 예제에서는 대상이 무엇 인지 여부와이에 대 한 응답을 트리거하는 방법을 쉽게 감지 하는 방법을 보여 줍니다. 다음으로에서 _Onselected ()_ 이벤트를 사용 하 여 보석을 폭발 하 게 합니다 [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) . 흥미로운 부분은 선택이 트리거되는 *방법* 입니다. 를 [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) 사용 하면 여러 가지 방법으로 선택 항목을 호출할 수 있습니다.
+이전 예제에서는 대상을 보는지 여부를 검색하는 것이 얼마나 쉬운지와 이에 대한 대응을 트리거하는 방법을 보여 보았습니다. 다음으로, 의 _OnSelected()_ 이벤트를 사용하여 gems를 분해해 [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) 보겠습니다. 흥미로운 부분은 선택이 트리거되는 *방식입니다.* [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget)를 사용하면 선택 항목을 호출하는 다양한 방법을 신속하게 할당할 수 있습니다.
 
-- 핸드 _제스처_: ' 선택 작업 '을 ' select '로 설정 하면 기본 손 모양 제스처를 사용 하 여 선택 항목을 트리거합니다.
-즉, 사용자가 손 모양 및 손가락을 함께 사용 하 여 선택 영역을 확인할 수 있습니다.
+- _손가락 모으기 제스처:_'작업 선택'을 '선택'으로 설정하려면 기본 손 제스처를 사용하여 선택을 트리거합니다.
+즉, 사용자는 손만 들어와 엄지 손가락과 인덱스 손가락을 모아 선택을 확인할 수 있습니다.
 
-- _"Select"_: 홀로그램을 선택 하려면 " _선택_ " 이라는 기본 음성 명령을 사용 합니다.
+- _"Select"라고_ 말하세요. 홀로그램을 선택하려면 기본 음성 명령 _"Select"를_ 사용합니다.
 
-- _"폭발"_ 또는 _"Pop"_: 사용자 지정 음성 명령을 사용 하려면 다음 두 단계를 수행 해야 합니다.
-    1. 사용자 지정 작업 (예: _"DestroyTarget"_ ) 설정
-        - _Mrtk-> 입력 > 입력 작업_ 으로 이동 합니다.
-        - "새 작업 추가"를 클릭 합니다.
+- _"분해"_ 또는 _"팝"_ 말: 사용자 지정 음성 명령을 사용하려면 다음 두 단계를 수행해야 합니다.
+    1. _"DestroyTarget"과_ 같은 사용자 지정 작업 설정
+        - _MRTK -> 입력 -> 입력 작업으로 이동합니다._
+        - "새 작업 추가"를 클릭합니다.
 
-    2. _"폭발"_ 또는 _"Pop"_ 와 같이이 작업을 트리거하는 음성 명령을 설정 합니다.
-        - _Mrtk-> 입력-> Speech_ 로 이동 합니다.
-        - "새 음성 명령 추가"를 클릭 합니다.
+    2. _"분해" 또는 "팝"과_ 같이 이 작업을  트리거하는 음성 명령을 설정합니다.
+        - _MRTK -> 입력 -> Speech로_ 이동합니다.
+        - "새 음성 명령 추가"를 클릭합니다.
             - 방금 만든 작업 연결
-            - 단추 누르기를 통해 작업을 트리거할 수 있도록 _KeyCode_ 을 할당 합니다.
+            - 단추를 눌러 작업을 트리거할 수 있도록 _KeyCode_ 할당
 
 ![음성 명령 EyeTrackingTarget 샘플](../../images/eye-tracking/mrtk_et_voicecmdsample.jpg)
 
@@ -324,7 +324,7 @@ public class HitBehaviorDestroyOnSelect : MonoBehaviour
 그러나 사용자가 특정 홀로그램을 보고 있는지 여부를 감지하면서 손 광선을 사용하려는 상황이 있을 수 있습니다. 아주 쉽습니다! 기본적으로 다음 두 단계가 필요합니다.
 
 **1. 손 광선 사용:** 손 광선을 사용하도록 설정하려면 _Mixed Reality Toolkit -> 입력 -> 포인터로_ 이동합니다.
-모든 시선 추적 데모 장면에 대해 Mixed Reality 도구 키트가 한 번 구성된 _EyeTrackingDemo-00-RootScene에_ _EyeTrackingDemoPointerProfile이_ 표시됩니다.
+모든 시선 추적 데모 장면에 대해 Mixed Reality Toolkit 한 번 구성된 _EyeTrackingDemo-00-RootScene에_ _EyeTrackingDemoPointerProfile이_ 표시됩니다.
 새 _입력 프로필을_ 처음부터 만들거나 현재 시선 추적 프로필을 조정할 수 있습니다.
 
 - **처음부터:** _포인터_ 탭의 상황에 맞는 메뉴에서 _DefaultMixedRealityInputPointerProfile을_ 선택합니다.
@@ -332,14 +332,14 @@ public class HitBehaviorDestroyOnSelect : MonoBehaviour
 기본 커서(불투명 흰색 점)를 변경하려면 프로필을 복제하고 사용자 지정 포인터 프로필을 만들기만 하면 됩니다.
 그런 _다음, DefaultCursor를_ 응시 커서 프리팹 _아래의 EyeGazeCursor로_ 바꿉니다.   
 - **기존 _EyeTrackingDemoPointerProfile_ 기반:** _EyeTrackingDemoPointerProfile을_ 두 번 클릭하고 포인터 옵션 아래에 다음 항목을 _추가합니다._
-  - **컨트롤러 유형:** ' 트레일러 식 ', ' Windows Mixed Reality '
-  - **손:** 일부
-  - **포인터 Prefab:** DefaultControllerPointer
+  - **컨트롤러 유형:** '조인된 손', 'Windows Mixed Reality'
+  - **손수:** Any
+  - **포인터 프리팹:** DefaultControllerPointer
 
-**2. 홀로그램이** 확인 된 것을 검색 합니다. [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) 위에서 설명한 대로 스크립트를 사용 하 여 홀로그램을 확인 하도록 설정 합니다. 또한 `FollowEyeGaze` 핸드 광선 사용 여부에 관계 없이 눈에 볼 수 있는 홀로그램 (예: 커서)을 보여 주는 샘플 스크립트를 살펴볼 수 있습니다.
+**2. 홀로그램이 보이는지 검색:** 스크립트를 사용하여 [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) 위에서 설명한 대로 홀로그램이 보이는지 검색할 수 있습니다. `FollowEyeGaze`손 광선의 사용 여부에 관계없이 시선 응시(예: 커서)를 따라 홀로그램을 보여 주는 샘플 스크립트에서 영감을 받을 수도 있습니다.
 
-이제 눈 추적 데모 장면을 시작할 때 손으로 그린 빛이 표시 됩니다.
-예를 들어 눈 추적 대상 선택 데모에서 반투명 원은 계속 눈에 보이는 응시를 사용 하 고 있으며, 보석은 어디에 있든, 아니면 위쪽 장면 메뉴 단추를 사용 하 여 기본 입력 포인터를 대신 사용 합니다.
+이제 시선 추적 데모 장면을 시작하면 손에서 광선이 나오는 것을 볼 수 있습니다.
+예를 들어 시선 추적 대상 선택 데모에서 반투명 원은 여전히 시선 응시를 따르고 있으며, gem은 응시 여부에 따라 응답하지만, 위쪽 장면 메뉴 단추는 기본 입력 포인터(손)를 대신 사용합니다.
 
 ---
-["MixedRealityToolkit의 눈동자 추적"으로 돌아가기](eye-tracking-main.md)
+["MixedRealityToolkit의 시선 추적"으로 돌아가기](eye-tracking-main.md)

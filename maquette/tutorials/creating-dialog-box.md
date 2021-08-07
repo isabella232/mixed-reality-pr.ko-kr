@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/26/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Maquette, 프로토타입, 혼합 현실, 가상 현실, VR, MR, 피드백, 피드백 허브, 버그
-ms.openlocfilehash: 9927f683038af72f2649421a5ea162e140e95656
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+ms.openlocfilehash: 54277472fd2550c87f15f647a7019775c063db53f5d9df1a7251f5a800453714
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94935600"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212371"
 ---
 # <a name="creating-a-dialog-box"></a>대화 상자 만들기 
 

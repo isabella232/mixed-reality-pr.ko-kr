@@ -1,18 +1,18 @@
 ---
-title: 손 공동 추적기
+title: 손 관절 체이서
 description: MRTK의 손 공동 추적기
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 0beac2dae5aa12cf07f193dab9a6db7bc7ddf2e5
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 376dcd0e1ff01d6e9020aedf35ed2bb2b7b39fa8a119d125aa8c3a96bf0024fe
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175364"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189570"
 ---
-# <a name="hand-joint-chaser"></a>손 공동 추적기
+# <a name="hand-joint-chaser"></a>손 관절 체이서
 
 ![손 조인트 체이서 ](../images/hand-joint-chaser/MRTK_HandJointChaser_Main.jpg) 이 예제 장면에서는 Solver를 사용하여 손 연결에 개체를 연결하는 방법을 보여줍니다.
 
