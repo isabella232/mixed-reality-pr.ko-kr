@@ -1,20 +1,20 @@
 ---
-title: 범위 제어
+title: 경계 컨트롤
 description: MRTK의 범위 컨트롤에 대 한 개요
 author: thalbern
 ms.author: bethalha
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk, 범위 제어,
-ms.openlocfilehash: f5f5e1f463f741eb23f75c9826034b8974baf947
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 3abefd142753c34c9126d71cde77ebca0b40f1f9b7a81b5815777b9e938e172a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176465"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217222"
 ---
-# <a name="bounds-control"></a>범위 제어
+# <a name="bounds-control"></a>경계 컨트롤
 
-![범위 제어](../images/bounds-control/MRTK_BoundsControl_Main.png)
+![경계 컨트롤](../images/bounds-control/MRTK_BoundsControl_Main.png)
 
 *BoundsControl* 는 이전에 *BoundingBox* 에서 발견 된 조작 동작에 대 한 새 구성 요소입니다. 경계 제어를 사용 하면 여러 가지 기능을 향상 시키고 설치를 단순화 새 기능을 추가할 수 있습니다. 이 구성 요소는 더 이상 사용 되지 않는 경계 상자를 대체 합니다.
 
@@ -314,7 +314,7 @@ private void PutABoundsControlAroundIt(GameObject target)
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Migrate.png" width="450" alt="Bounds control Migrate">
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [개체 조작자](object-manipulator.md)
 * [제약 조건 관리자](constraint-manager.md)

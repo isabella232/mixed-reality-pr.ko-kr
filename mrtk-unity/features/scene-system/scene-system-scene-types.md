@@ -1,44 +1,44 @@
 ---
 title: 장면 시스템 장면 유형
-description: MRTK의 여러 장면 유형에 대 한 설명서
+description: MRTK의 다양한 장면 유형에 대한 설명서
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 06bfd1dbad3986044f099510c2de4d36cda50fc0
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: be34110c693c749535f6bfcd0411ecbd0bafc3bb48ab2392b3635c2e86a4dfb1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144570"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203333"
 ---
 # <a name="scene-types"></a>장면 유형
 
-장면은 세 가지 형식으로 나뉘어 있으며 각 형식에는 다른 함수가 있습니다.
+장면에는 세 가지 형식으로 나뉘어져 있으며, 각 형식에는 다른 함수가 있습니다.
 
-![계층의 장면 시스템](../images/scene-system/MRTK_SceneSystemEditorSceneHierarchy.PNG)
+![계층 구조의 장면 시스템](../images/scene-system/MRTK_SceneSystemEditorSceneHierarchy.PNG)
 
 ## <a name="content-scenes"></a>콘텐츠 장면
 
-이는를 처리 하는 데 사용 하는 배경입니다. 모든 종류의 콘텐츠를 저장 하 고 모든 조합에서 로드 하거나 언로드할 수 있습니다.
+다음은 처리하는 데 익숙한 장면입니다. 모든 종류의 콘텐츠를 저장할 수 있으며 어떤 조합으로든 로드하거나 언로드할 수 있습니다.
 
-콘텐츠 장면을 기본적으로 사용할 수 있습니다. 프로필의 배열에 포함 된 모든 장면을 `Content Scenes` 서비스에서 로드/언로드할 수 있습니다.
+콘텐츠 씬은 기본적으로 사용하도록 설정됩니다. 프로필의 배열에 포함된 모든 장면을 `Content Scenes` 서비스에서 로드/언로드할 수 있습니다.
 
 ___
 
 ## <a name="manager-scenes"></a>관리자 장면
 
-필수 MixedRealityToolkit 인스턴스가 있는 단일 장면. 이 장면은 처음 시작할 때 로드 되 고 앱의 수명 동안 로드 된 상태로 유지 됩니다. 또한 관리자 장면은 제거 되지 않아야 하는 다른 개체를 호스트할 수 있습니다. 이는 DontDestroyOnLoad에 대 한 기본 설정 대안입니다.
+필요한 MixedRealityToolkit 인스턴스가 있는 단일 장면입니다. 이 장면은 시작 시 먼저 로드되며 앱의 수명 동안 로드된 상태로 유지됩니다. 또한 관리자 장면에서는 절대 소멸해서는 안 되는 다른 개체를 호스트할 수 있습니다. DontDestroyOnLoad 대신 사용할 수 있습니다.
 
-이 기능을 사용 하도록 설정 하려면 프로필을 체크 인하고 `Use Manager Scene` 장면 개체를 필드로 끕니다 `Manager Scene` .
+이 기능을 사용하도록 설정하려면 프로필을 체크 `Use Manager Scene` 인하고 장면 개체를 필드로 끌어 `Manager Scene` 줍니다.
 
 ___
 
 ## <a name="lighting-scenes"></a>조명 장면
 
-조명 정보 및 조명 개체를 저장 하는 장면 집합입니다. 한 번에 하나만 로드할 수 있으며 부드러운 조명 전환을 위해 로드 하는 동안 해당 설정을 혼합할 수 있습니다.
+조명 정보 및 조명 개체를 저장하는 장면 세트입니다. 한 번에 하나만 로드할 수 있으며, 부드러운 조명 전환을 위해 로드 중에 해당 설정을 혼합할 수 있습니다.
 
-Unity의 조명 설정-앰비언트 광원, skyboxes 등은 개별 장면에 연결 되 고 재정의 동작이 간단 하지 않으므로 추가 로드를 사용 하는 경우 관리 하기가 어려울 수 있습니다. 실제로는 자산이 런타임에 가져오지 않는 조명 조건에서 작성 될 때 혼동을 일으킬 수 있습니다.
+Unity의 조명 설정(앰비언트 조명, skyboxes 등)은 개별 장면에 연결되고 동작을 재정의하는 것이 간단하지 않으므로 가감 로드를 사용할 때 관리하기 어려울 수 있습니다. 실제로 이로 인해 런타임에 얻을 수 없는 조명 조건에서 자산을 작성할 때 혼동이 발생할 수 있습니다.
 
 ![장면 시스템 조명 설정](../images/scene-system/MRTK_SceneSystemLightingSettings.PNG)
 

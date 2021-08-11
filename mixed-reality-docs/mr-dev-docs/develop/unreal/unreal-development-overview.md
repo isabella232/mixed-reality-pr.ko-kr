@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 스트리밍, 원격, 혼합 현실, 개발, 시작, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, 홀로그램, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, OpenXR
-ms.openlocfilehash: 1225c507ec46c6f42c2fc10582a7920802860ad0
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: fd9eec18e865910ef4899dfda75661d1edb57eed25a55641cde3ca7ac3f0b3a8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394317"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203463"
 ---
 # <a name="unreal-development-overview"></a>Unreal 개발 개요
 

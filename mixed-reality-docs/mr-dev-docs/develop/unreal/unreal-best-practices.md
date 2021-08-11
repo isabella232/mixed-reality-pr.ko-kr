@@ -7,12 +7,12 @@ ms.date: 01/08/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, 편집기 확장, Unreal 편집기, UE4, HoloLens, HoloLens 2, 혼합 현실, 개발, 설명서, 가이드, 기능, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 이식, 업그레이드
-ms.openlocfilehash: 478ae3137fc73d1ef516087618ab0247f2164c02
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 822e64d873952bdb4bb1fb91da4c85f956a1eb513c92d4afee7bfebb18a824eb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98584905"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203272"
 ---
 # <a name="general-best-practices"></a>일반적인 유용한 정보
 

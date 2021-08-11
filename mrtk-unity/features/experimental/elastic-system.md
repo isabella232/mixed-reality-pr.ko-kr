@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, ElasticsSystem,
-ms.openlocfilehash: 44110cac9ac5aadb7b5e680f18a5e93f43efce12
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: e34b9ea68bfbdc7b7f285686565a1e049ba58ad8677b16e915a2db8272ec1cbe
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177799"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217905"
 ---
 # <a name="elastic-system"></a>탄력적 시스템
 
@@ -27,9 +27,9 @@ MRTK는 4차원 4차원 쿼터니언 Spring, 3차원 볼륨 Spring 및 간단한
 
 ![탄력적 시스템 2](../images/elastics/Elastics_Main.gif)
 
-탄력적 관리자는 전달된 변환을 처리하고 탄력적 시스템에 공급합니다.
+Elastics 관리자는 전달된 변환을 처리하고 탄력적 시스템에 공급합니다.
 
-사용자 지정 구성 요소에 대한 탄력적 사용을 다음 두 단계로 수행할 수 있습니다.
+사용자 지정 구성 요소에 탄력적 기능을 사용하도록 설정하는 것은 다음 두 단계로 수행할 수 있습니다.
 
 1. 조작 시작 시 Initialize 메서드를 호출하여 현재 호스트 변환으로 시스템을 업데이트합니다.
 1. 업데이트된 대상 변환에서 탄력적 계산을 수행해야 할 때마다 ApplyHostTransform을 쿼리합니다.
@@ -43,7 +43,7 @@ MRTK는 4차원 4차원 쿼터니언 Spring, 3차원 볼륨 Spring 및 간단한
 
 범위 [제어 구성과](../ux-building-blocks/bounds-control.md#configuration-objects)마찬가지로 탄력적 관리자는 스크립팅 가능한 개체로 저장하고 서로 다른 인스턴스 또는 프리팹 간에 공유할 수 있는 구성 개체 집합과 함께 제공됩니다. 구성은 개별 스크립팅 가능한 자산 파일 또는 프리팹 내에 중첩된 스크립팅 가능한 자산으로 공유 및 연결될 수 있습니다. 추가 구성은 외부 또는 중첩된 스크립트 가능 자산에 연결하지 않고 인스턴스에서 직접 정의할 수도 있습니다.
 
-Elastics 관리자 검사기는 속성 검사기에서 메시지를 표시하여 구성이 현재 인스턴스의 일부로 공유되는지 또는 인라인되는지 여부를 나타냅니다. 또한 공유 인스턴스는 Elastics Manager 속성 창 자체에서 직접 편집할 수 없지만 대신 연결되는 자산은 공유 구성에서 실수로 변경되지 않도록 직접 수정해야 합니다.
+Elastics 관리자 검사기는 속성 검사자의 메시지를 표시하여 구성이 현재 인스턴스의 일부로 공유되는지 또는 인라인되는지 여부를 나타냅니다. 또한 공유 인스턴스는 Elastics Manager 속성 창 자체에서 직접 편집할 수 없지만 대신 연결되는 자산은 공유 구성에서 실수로 변경되지 않도록 직접 수정해야 합니다.
 
 Elastics 관리자는 다음과 같은 변환 형식에 대한 구성 개체 옵션을 제공하며, 각 옵션은 [탄력적 구성 개체](#elastic-configuration-object)로 표시됩니다.
 
@@ -73,7 +73,7 @@ Elastics 관리자는 다음과 같은 변환 형식에 대한 구성 개체 옵
 ![탄력적 볼륨 스트레치 범위](../images/elastics/Elastics_Volume_Bounds.gif)
 
 - **StretchBounds**: 탄력적 공간의 하한을 나타냅니다.
-- **UseBounds:** 시스템에서 확장 범위를 적용해야 하는지 여부입니다. true이면 대상 위치의 현재 반복이 늘이기 범위를 벗어나면 끝 강제가 적용됩니다.
+- **UseBounds:** 시스템에서 확장 범위를 적용해야 하는지 여부입니다. true이면 대상 위치의 현재 반복이 확장 범위를 벗어나면 끝 강제 적용됩니다.
 - **SnapPoints:** 시스템이 맞춰질 공간 내부를 가리킵니다.
 - **RepeatSnapPoints**: 맞춤 지점을 무한대로 반복합니다. 기존 맞춤 지점은 실제 맞춤 지점이 모든 맞춤 지점의 가장 가까운 정수 배수에 매핑되는 모듈로 역할을 합니다.
 - **SnapRadius:** 맞춤 지점이 강제로 봄을 적용하기 시작하는 거리입니다.
@@ -82,13 +82,13 @@ Elastics 관리자는 다음과 같은 변환 형식에 대한 구성 개체 옵
 
 #### <a name="quaternion-elastic-extent"></a>4원수 탄력적 익스텐트
 
-쿼터니언 익스텐트 는 4차원 회전 공간을 정의합니다. 이 공간은 습한 경기성 오실레이터를 자유롭게 회전할 수 있습니다.
+4원수 익스텐트에서는 4차원 회전 공간을 정의합니다. 이 공간은 습한 경기성 오실레이터를 자유롭게 회전할 수 있습니다.
 
 ![탄력적 회전 예제](../images/elastics/Elastics_Rotation.gif)
 
 - **SnapPoints:** 시스템이 맞춰질 내러 각도입니다.
 - **RepeatSnapPoints**: 맞춤 지점을 반복합니다. 기존 맞춤 지점은 실제 맞춤 지점이 모든 맞춤 지점의 가장 가까운 정수 배수에 매핑되는 모듈로 역할을 합니다.
-- **SnapRadius:** 맞춤 지점이 유러 도의 탄력을 강제하기 시작하는 원호 각도입니다.
+- **SnapRadius:** 맞춤 지점이 유러 도의 봄을 강제로 시작하는 원호 각도입니다.
 
 ## <a name="elastics-example-scene"></a>탄력적 예제 장면
 

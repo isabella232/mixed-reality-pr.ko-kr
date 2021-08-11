@@ -26,7 +26,7 @@
   href: input/toc.yml
 - name: 입력 시뮬레이션
   href: input-simulation/toc.yml
-- name: Profiles
+- name: 프로필
   href: profiles/toc.yml
 - name: 렌더링
   href: rendering/toc.yml

@@ -1,18 +1,18 @@
 ---
-ms.openlocfilehash: eaa2651a22fd5b2b601493845d507aeda6745f1a
-ms.sourcegitcommit: e380d56f5504be4e4f069394a58cf0147eb33b66
+ms.openlocfilehash: 923f7eda8b40e88aa69006896bd478f7aedcbcafccd449b75f144231d02b0d56
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2021
-ms.locfileid: "113603719"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202763"
 ---
 # <a name="openxr"></a>[OpenXR](#tab/openxr)
 
 Mixed Reality OpenXR 플러그 인은 **Unity 2020 LTS** 이상에 대한 **Microsoft의 권장 사항입니다.** 향후 새로운 기능이 개발되면 향후 Mixed Reality OpenXR 플러그 인에만 포함됩니다.
 
-Mixed Reality OpenXR 플러그 인은 ARPlaneManager 및 ARRaycastManager 구현을 제공하여 AR Foundation 4.0을 완벽하게 지원합니다. 이렇게 하면 HoloLens 2 및 ARCore/ARKit 휴대폰 및 태블릿에 걸쳐 있는 광선 캐스팅 코드를 작성할 수 있습니다.
+Mixed Reality OpenXR 플러그 인은 ARPlaneManager 및 ARRaycastManager 구현을 제공하는 AR Foundation 4.0을 완벽하게 지원합니다. 이렇게 하면 HoloLens 2 및 ARCore/ARKit 휴대폰 및 태블릿에 걸쳐 있는 광선 캐스팅 코드를 작성할 수 있습니다.
 
-### <a name="prerequisites"></a>필수 구성 요소 
+### <a name="prerequisites"></a>필수 조건 
 
 * [HoloLens 2 개발을 위한](../../../install-the-tools.md?tabs=unity#installation-checklist) 최신 도구
 * 최신 Unity 2020.3 LTS: 버전 2020.3.8f1 이상

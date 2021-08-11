@@ -6,16 +6,16 @@ ms.author: v-vtieto
 ms.date: 07/27/2021
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 진단, 성능
-ms.openlocfilehash: f467b32ddab231286fc916916b0a40f210a66eb1
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 1e286612035a34c1bac174a620c350a91eb2b0fd59c3e808fe3a99368e03f43c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757021"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217152"
 ---
 # <a name="holographic-remoting-player"></a>홀로그램 원격 플레이어
 
-[Holographic Remoting의 기본 사항에 대해 알아봅니다.](platform-capabilities-and-apis/holographic-remoting-overview.md)
+[홀로그램 원격의 기본 사항에 대해 알아봅니다.](platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 >[!IMPORTANT]
 >HoloLens 2에 대 한 Holographic 원격은 주요 버전 변경입니다. [ **HoloLens (첫 번째 gen)** 용 원격 응용 프로그램](add-holographic-remoting.md) 은 NuGet 패키지 **버전 1.x** 를 사용 해야 하 고 [ **HoloLens 2** 용 원격 응용 프로그램](holographic-remoting-create-remote-wmr.md) 은 **2.x. x**. x를 사용 해야 합니다. 이는 HoloLens 2 용으로 작성 된 원격 응용 프로그램이 HoloLens (첫 번째 gen)와 호환 되지 않으며 그 반대의 경우도 마찬가지입니다.

@@ -1,43 +1,43 @@
 ---
-title: HoloLens (첫 번째 gen) 및 Azure 302b-사용자 지정 비전
-description: 이 과정을 완료 하 여 machine learning 모델을 학습 한 다음 학습 된 모델을 사용 하 여 혼합 현실 응용 프로그램 내에서 유사한 개체를 인식 하는 방법을 알아보세요.
+title: HoloLens(1세대) 및 Azure 302b - 사용자 지정 비전
+description: 이 과정을 완료하여 기계 학습 모델을 학습시킨 다음, 학습된 모델을 사용하여 혼합 현실 애플리케이션 내에서 유사한 개체를 인식하는 방법을 알아봅니다.
 author: drneil
 ms.author: jemccull
 ms.date: 07/03/2018
 ms.topic: article
-keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 사용자 지정 비전, hololens, 모던, vr, Windows 10, Visual Studio
-ms.openlocfilehash: 97fd0ae72401b67a83752cb2cf6799fa2b1ccc0c
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+keywords: azure, mixed reality, academy, unity, tutorial, api, custom vision, hololens, immersive, vr, Windows 10, Visual Studio
+ms.openlocfilehash: 25f07dddf53cf8c279f99d230d1bd4d206a663eba884abc0dd32313bce4b7b43
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730530"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217742"
 ---
-# <a name="hololens-1st-gen-and-azure-302b-custom-vision"></a>HoloLens (첫 번째 gen) 및 Azure 302b: 사용자 지정 비전
+# <a name="hololens-1st-gen-and-azure-302b-custom-vision"></a>HoloLens(1세대) 및 Azure 302b: Custom Vision
 
 <br>
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2 위해 개발하는 방법을 보여 주는 새로운 자습서 시리즈가 나중에 게시될 예정입니다.  이 알림은 해당 자습서가 게시될 때 해당 자습서에 대한 링크로 업데이트됩니다.
 
 <br>
 
 
-이 과정에서는 혼합 현실 응용 프로그램에서 Azure Custom Vision 기능을 사용 하 여 제공 된 이미지 내에서 사용자 지정 시각적 콘텐츠를 인식 하는 방법을 알아봅니다.
+이 과정에서는 혼합 현실 애플리케이션에서 Azure Custom Vision 기능을 사용하여 제공된 이미지 내에서 사용자 지정 시각적 콘텐츠를 인식하는 방법을 알아봅니다.
 
-이 서비스를 사용 하면 개체 이미지를 사용 하 여 기계 학습 모델을 학습 시킬 수 있습니다. 그러면 학습 된 모델을 사용 하 여 Microsoft HoloLens의 카메라 캡처 또는 모던 (VR 용 PC) 헤드셋에 연결 된 카메라에 의해 제공 되는 것과 유사한 개체를 인식할 수 있습니다.
+이 서비스를 사용하면 개체 이미지를 사용하여 기계 학습 모델을 학습시킬 수 있습니다. 그런 다음 학습된 모델을 사용하여 몰입형(VR) 헤드셋을 위해 PC에 연결된 카메라 또는 Microsoft HoloLens 카메라 캡처에서 제공하는 유사한 개체를 인식합니다.
 
 ![과정 결과](images/AzureLabs-Lab302b-00.png)
 
-Azure Custom Vision는 개발자가 사용자 지정 이미지 분류자를 빌드할 수 있게 해 주는 Microsoft 인지 서비스입니다. 이러한 분류자는 새 이미지와 함께 사용 하 여 새 이미지 내의 개체를 인식 하거나 분류할 수 있습니다. 이 서비스는 간단 하 고 사용 하기 쉬운 온라인 포털을 제공 하 여 프로세스를 간소화 합니다. 자세한 내용은 [Azure Custom Vision Service 페이지](/azure/cognitive-services/custom-vision-service/home)를 참조 하세요.
+Azure Custom Vision 개발자가 사용자 지정 이미지 분류자를 빌드할 수 있는 Microsoft Cognitive Service입니다. 그런 다음 이러한 분류자를 새 이미지와 함께 사용하여 해당 새 이미지 내의 개체를 인식하거나 분류할 수 있습니다. 이 서비스는 간단하고 사용하기 쉬운 온라인 포털을 제공하여 프로세스를 간소화합니다. 자세한 내용은 Azure [Custom Vision 서비스 페이지를 방문하세요.](/azure/cognitive-services/custom-vision-service/home)
 
-이 과정을 완료 하면 다음과 같은 두 가지 모드로 작업할 수 있는 혼합 현실 응용 프로그램이 만들어집니다.
+이 과정을 완료하면 두 가지 모드로 작업할 수 있는 혼합 현실 애플리케이션이 있습니다.
 
--   **분석 모드**: 이미지를 업로드 하 고, 태그를 만들고, 서비스를 학습 하 여 다른 개체 (이 경우 마우스 및 키보드)를 인식할 수 있도록 하 여 Custom Vision Service를 수동으로 설정 합니다. 그런 다음 카메라를 사용 하 여 이미지를 캡처하는 HoloLens 앱을 만들고 실제 세계에서 해당 개체를 인식 해 봅니다.
+-   **분석 모드:** 이미지를 업로드하고, 태그를 만들고, 다른 개체(이 경우 마우스 및 키보드)를 인식하도록 서비스를 학습시켜 Custom Vision 서비스를 수동으로 설정합니다. 그런 다음 카메라를 사용하여 이미지를 캡처하는 HoloLens 앱을 만들고 실제 세계에서 해당 개체를 인식하려고 합니다.
 
--   **학습 모드**: 앱에서 "학습 모드"를 사용 하는 코드를 구현 합니다. 학습 모드에서는 HoloLens 카메라를 사용 하 여 이미지를 캡처하고, 캡처한 이미지를 서비스에 업로드 하 고, 사용자 지정 비전 모델을 학습할 수 있습니다.
+-   **학습 모드:** 앱에서 "학습 모드"를 사용하도록 설정하는 코드를 구현합니다. 학습 모드를 사용하면 HoloLens 카메라를 사용하여 이미지를 캡처하고, 캡처된 이미지를 서비스에 업로드하고, 사용자 지정 비전 모델을 학습할 수 있습니다.
 
-이 과정을 통해 Custom Vision Service에서 Unity 기반 샘플 응용 프로그램으로 결과를 가져오는 방법을 배울 수 있습니다. 빌드할 수 있는 사용자 지정 응용 프로그램에 이러한 개념을 적용 하는 것이 좋습니다.
+이 과정에서는 Custom Vision Service에서 Unity 기반 샘플 애플리케이션으로 결과를 얻는 방법을 배분합니다. 빌드할 수 있는 사용자 지정 애플리케이션에 이러한 개념을 적용하는 것은 사용자에 따라 다를 수 있습니다.
 
 ## <a name="device-support"></a>디바이스 지원
 
@@ -50,101 +50,101 @@ Azure Custom Vision는 개발자가 사용자 지정 이미지 분류자를 빌�
 </table>
 
 > [!NOTE]
-> 이 과정에서 주로 HoloLens에 초점을 맞춘 반면,이 과정에서 배운 내용을 Windows Mixed Reality 모던 (VR) 헤드셋에도 적용할 수 있습니다. 모던 (VR) 헤드셋은 액세스할 수 있는 카메라를 포함 하지 않으므로 PC에 연결 된 외부 카메라가 필요 합니다. 이 과정을 진행 하면서 모던 (VR) 헤드셋을 지원 하기 위해 사용 해야 하는 변경 내용에 대 한 정보를 볼 수 있습니다.
+> 이 과정은 주로 HoloLens 중점적으로 진행하지만, 이 과정에서 배운 내용을 몰입형(VR) 헤드셋에 Windows Mixed Reality 적용할 수도 있습니다. 몰입형(VR) 헤드셋에는 액세스 가능한 카메라가 없으므로 PC에 연결된 외부 카메라가 필요합니다. 과정을 진행하면서 몰입형(VR) 헤드셋을 지원하기 위해 사용해야 할 수 있는 변경 사항에 대한 메모를 볼 수 있습니다.
 
 ## <a name="prerequisites"></a>필수 조건
 
 > [!NOTE]
-> 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (7 월 2018)을 나타냅니다. [도구 설치](../../install-the-tools.md) 문서에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.
+> 이 자습서는 Unity 및 C#에 대한 기본적인 경험이 있는 개발자를 위해 설계되었습니다. 또한 이 문서 내의 필수 조건 및 작성된 지침은 작성 당시 테스트 및 확인된 내용을 나타냅니다(2018년 7월). [도구 설치](../../install-the-tools.md) 문서에 나열된 대로 최신 소프트웨어를 자유롭게 사용할 수 있지만, 이 과정의 정보가 아래 나열된 내용보다 최신 소프트웨어에서 찾을 수 있는 정보와 완벽하게 일치한다고 가정해서는 안 됩니다.
 
-이 과정에는 다음 하드웨어 및 소프트웨어를 권장 합니다.
+이 과정에서는 다음 하드웨어 및 소프트웨어를 사용하는 것이 좋습니다.
 
-- 모던 (VR) 헤드셋 개발을 위한 [Windows Mixed Reality와 호환 되](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) 는 개발 PC
-- [개발자 모드를 사용 하는 Windows 10이 하 버전의 작성자 업데이트 (또는 이상)](../../install-the-tools.md#installation-checklist)
+- 몰입형(VR) 헤드셋 개발을 위해 [Windows Mixed Reality 호환되는](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) 개발 PC
+- [개발자 모드를 사용하도록 설정된 Windows 10 Fall Creators Update(이상)](../../install-the-tools.md#installation-checklist)
 - [최신 Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- 개발자 모드가 사용 하도록 설정 된 [Windows Mixed Reality 모던 (VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md) 또는 [Microsoft HoloLens](/hololens/hololens1-hardware)
-- PC에 연결 된 카메라 (몰입 형 헤드셋 개발용)
+- 개발자 모드를 사용하도록 설정된 [Windows Mixed Reality 몰입형(VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md) 또는 [Microsoft HoloLens](/hololens/hololens1-hardware)
+- PC에 연결된 카메라(몰입형 헤드셋 개발용)
 - Azure 설정 및 Custom Vision API 검색을 위한 인터넷 액세스
-- Custom Vision Service에서 인식 하고자 하는 각 개체에 대해 5 개 이상의 이미지 (10 개 이상 권장)를 표시 합니다. 원할 경우 [이 과정에서 이미 제공 된 이미지 (컴퓨터 마우스 및 키보드) ](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20302b%20-%20Custom%20vision/ComputerVision_Images.zip)를 사용할 수 있습니다.
+- Custom Vision 서비스에서 인식할 각 개체에 대해 5개 이상의 이미지(10개(10개)를 권장합니다. 원하는 경우 [이 과정(컴퓨터 마우스 및 키보드)과 함께 이미 제공된 이미지를 ](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20302b%20-%20Custom%20vision/ComputerVision_Images.zip)사용할 수 있습니다.
 
 ## <a name="before-you-start"></a>시작하기 전에
 
-1.  이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.)
-2.  HoloLens를 설정 하 고 테스트 합니다. HoloLens를 설정 하는 데 지원이 필요한 경우 [hololens 설정 문서를 방문](/hololens/hololens-setup)해야 합니다. 
-3.  새 HoloLens 앱 개발을 시작할 때 보정 및 센서 조정을 수행 하는 것이 좋습니다 (경우에 따라 각 사용자에 대해 해당 작업을 수행 하는 데 도움이 될 수 있음). 
+1.  이 프로젝트를 빌드하는 데 문제가 발생하지 않도록 하려면 이 자습서에서 언급한 프로젝트를 루트 또는 루트에 가까운 폴더에 만드는 것이 좋습니다(긴 폴더 경로로 인해 빌드 시 문제가 발생할 수 있습니다).
+2.  HoloLens 설정하고 테스트합니다. HoloLens 설정을 지원해야 하는 경우 [HoloLens 설정 문서 를 방문하세요.](/hololens/hololens-setup) 
+3.  새 HoloLens 앱 개발을 시작할 때 보정 및 센서 튜닝을 수행하는 것이 좋습니다(때로는 각 사용자에 대해 이러한 작업을 수행하는 데 도움이 될 수 있습니다). 
 
-보정에 대 한 도움말을 보려면 [HoloLens 보정 문서에](/hololens/hololens-calibration#hololens-2)대 한 다음 링크를 참조 하세요.
+보정에 대한 도움말은 [HoloLens 보정 문서에 대한 이 링크를](/hololens/hololens-calibration#hololens-2)따르세요.
 
-센서 조정에 대 한 도움말을 보려면 [HoloLens 센서 조정 문서에 대 한 링크를](/hololens/hololens-updates)참조 하세요.
+센서 튜닝에 대한 도움말은 [HoloLens 센서 튜닝 문서에 대한 링크를](/hololens/hololens-updates)따르세요.
 
-## <a name="chapter-1---the-custom-vision-service-portal"></a>1 장-Custom Vision Service 포털
+## <a name="chapter-1---the-custom-vision-service-portal"></a>1장 - Custom Vision Service Portal
 
-Azure에서 *Custom Vision Service* 을 사용 하려면 응용 프로그램에서 사용할 수 있도록 서비스 인스턴스를 구성 해야 합니다.
+Azure에서 *Custom Vision 서비스를* 사용하려면 애플리케이션에서 사용할 수 있도록 서비스의 인스턴스를 구성해야 합니다.
 
-1.  먼저 [ *Custom Vision Service* 기본 페이지로 이동](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/)합니다.
+1.  먼저 [ *Custom Vision 서비스* 기본 페이지 로 이동합니다.](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/)
 
-2.  **시작** 단추를 클릭 합니다.
+2.  **시작** 단추를 클릭합니다.
 
-    ![Custom Vision Service 시작](images/AzureLabs-Lab302b-01.png)
+    ![Custom Vision 서비스 시작](images/AzureLabs-Lab302b-01.png)
 
-3.  *Custom Vision Service* 포털에 로그인 합니다.
+3.  *Custom Vision Service* Portal에 로그인합니다.
 
     ![포털에 로그인](images/AzureLabs-Lab302b-02.png)
 
     > [!NOTE]
-    > 아직 Azure 계정이 없는 경우 새로 만들어야 합니다. 교실 또는 랩 상황에서이 자습서를 수행 하는 경우 강사 또는 proctors 중 하나에 문의 하 여 새 계정을 설정 하는 데 도움이 될 수 있습니다.
+    > Azure 계정이 아직 없는 경우 만들어야 합니다. 클래스룸 또는 랩 상황에서 이 자습서를 따르는 경우 강사 또는 프록터 중 하나에 새 계정 설정에 대한 도움을 요청하세요.
 
-4.  처음으로 로그인 한 후에는 *서비스 사용 약관* 패널이 표시 됩니다. 확인란을 클릭 하 여 약관에 동의 합니다. 그런 다음 **동의 함** 을 클릭 합니다.
+4.  처음으로 로그인하면 *서비스 약관* 패널이 표시됩니다. 확인란을 클릭하여 약관에 동의합니다. 그런 다음 **동의를** 클릭합니다.
 
     ![서비스 약관](images/AzureLabs-Lab302b-03.png)
 
-5.  조건에 동의한 경우 포털의 *프로젝트* 섹션으로 이동 됩니다. **새 프로젝트** 를 클릭 합니다.
+5.  약관에 동의하면 포털의 *프로젝트* 섹션으로 이동됩니다. 새 **Project** 클릭합니다.
 
     ![새 프로젝트 만들기](images/AzureLabs-Lab302b-04.png)
 
-6.  탭이 오른쪽에 표시 되 고 프로젝트의 일부 필드를 지정 하 라는 메시지가 표시 됩니다.
+6.  오른쪽에 탭이 표시되며, 프로젝트에 대한 일부 필드를 지정하라는 메시지가 표시됩니다.
 
-    1.  프로젝트의 *이름을* 삽입 합니다.
+    1.  프로젝트의 *이름을* 삽입합니다.
 
-    2.  프로젝트에 대 한 *설명을* 삽입 합니다 (*선택 사항*).
+    2.  프로젝트에 대한 *설명을* 삽입합니다(선택 *사항).*
 
-    3.  리소스 그룹을 선택 하거나 새 *리소스 그룹* 을 만듭니다. 리소스 그룹은 Azure 자산의 컬렉션에 대 한 청구를 모니터링 하 고, 액세스를 제어 하 고, 프로 비전 하 고, 관리 하는 방법을 제공 합니다. 단일 프로젝트와 연결 된 모든 Azure 서비스 (예: 이러한 과정)를 공용 리소스 그룹에 유지 하는 것이 좋습니다.
+    3.  리소스 *그룹을* 선택하거나 새 리소스 그룹을 만듭니다. 리소스 그룹은 Azure 자산 컬렉션에 대한 액세스를 모니터링, 제어, 프로비전 및 관리하는 방법을 제공합니다. 모든 Azure 서비스를 단일 프로젝트(예: 이러한 과정)와 연결된 공용 리소스 그룹에 유지하는 것이 좋습니다.
 
-    4. *프로젝트 형식을* **분류** 로 설정
+    4. Project *형식을* **분류로** 설정
     
-    5. *도메인* 을 **일반** 으로 설정 합니다.
+    5. *도메인을* **일반** 으로 설정합니다.
 
         ![도메인 설정](images/AzureLabs-Lab302b-05.png)
 
-        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹 문서를 참조](/azure/azure-resource-manager/resource-group-portal)하세요.
+        > Azure 리소스 그룹에 대해 자세히 알아보려면 [리소스 그룹 문서 를 방문하세요.](/azure/azure-resource-manager/resource-group-portal)
 
-7.  작업이 완료 되 면 **프로젝트 만들기** 를 클릭 하면 Custom Vision Service 프로젝트 페이지로 리디렉션됩니다.
+7.  완료되면 **프로젝트 만들기를** 클릭하면 Custom Vision 서비스, 프로젝트 페이지로 리디렉션됩니다.
 
-## <a name="chapter-2---training-your-custom-vision-project"></a>2 장-Custom Vision 프로젝트 학습
+## <a name="chapter-2---training-your-custom-vision-project"></a>2장 - Custom Vision 프로젝트 학습
 
-Custom Vision 포털에서 기본 목표는 이미지의 특정 개체를 인식할 수 있도록 프로젝트를 학습 하는 것입니다. 응용 프로그램에서 인식 하는 각 개체에 대해 10 개 이상의 이미지가 필요 하지만 10 개 이상 필요 합니다. [이 과정에서 제공 되는 이미지 (컴퓨터 마우스 및 키보드)를 사용할 수](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20302b%20-%20Custom%20vision/ComputerVision_Images.zip)있습니다. 
+Custom Vision 포털에서 기본 목표는 이미지의 특정 개체를 인식하도록 프로젝트를 학습하는 것입니다. 애플리케이션에서 인식하려는 각 개체에 대해 10개(10개)가 선호되지만 5개 이상의 이미지가 필요합니다. [이 과정과 함께 제공되는 이미지(컴퓨터 마우스 및 키보드)를 사용할 수 있습니다.](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20302b%20-%20Custom%20vision/ComputerVision_Images.zip) 
 
-Custom Vision Service 프로젝트를 학습 하려면:
+Custom Vision 서비스 프로젝트를 학습하려면 다음을 수행합니다.
 
-1.  태그 옆에 있는 단추를 클릭 **+** **합니다.**
+1.  **+** 태그 옆에 있는 단추를 **클릭합니다.**
 
     ![새 태그 추가](images/AzureLabs-Lab302b-06.png)
 
-2.  인식할 개체의 **이름을** 추가 합니다. **Save** 를 클릭합니다.
+2.  인식하려는 개체의 **이름을** 추가합니다. **Save** 를 클릭합니다.
 
     ![개체 이름 추가 및 저장](images/AzureLabs-Lab302b-07.png)
 
-3.  **태그가** 추가 된 것을 확인할 수 있습니다 (표시 되기 위해 페이지를 다시 로드 해야 할 수 있음). 확인란이 아직 선택 되어 있지 않은 경우 새 태그 옆에 있는 확인란을 클릭 합니다.
+3.  **태그가** 추가된 것을 확인할 수 있습니다(표시하려면 페이지를 다시 로드해야 할 수 있음). 아직 선택하지 않은 경우 새 태그와 함께 확인란을 클릭합니다.
 
     ![새 태그 사용](images/AzureLabs-Lab302b-08.png)
 
-4.  페이지의 가운데에 있는 **이미지 추가** 를 클릭 합니다.
+4.  페이지 가운데에서 **이미지 추가를** 클릭합니다.
 
     ![이미지 추가](images/AzureLabs-Lab302b-09.png)
 
-5.  **로컬 파일 찾아보기** 를 클릭 하 고, 업로드할 이미지를 검색 한 다음 선택 하 고 최소 5 (5)를 선택 합니다. 이러한 모든 이미지에는 학습 중인 개체가 포함 되어야 합니다.
+5.  로컬 **파일 찾아보기를** 클릭하고 검색한 다음 업로드하려는 이미지를 5(5)로 선택합니다. 이러한 모든 이미지에는 학습 중인 개체가 포함 되어야 합니다.
 
     > [!NOTE]
     >  한 번에 여러 이미지를 선택 하 여 업로드할 수 있습니다.
@@ -153,7 +153,7 @@ Custom Vision Service 프로젝트를 학습 하려면:
 
     ![태그 선택](images/AzureLabs-Lab302b-10.png)
 
-7.  **파일 업로드** 를 클릭 합니다. 파일이 업로드 되기 시작 합니다. 업로드를 확인 한 후 **완료** 를 클릭 합니다.
+7.  **업로드 파일** 을 클릭 합니다. 파일이 업로드 되기 시작 합니다. 업로드를 확인 한 후 **완료** 를 클릭 합니다.
 
     ![파일 업로드](images/AzureLabs-Lab302b-11.png)
 
@@ -170,7 +170,7 @@ Custom Vision Service 프로젝트를 학습 하려면:
     > [!NOTE] 
     > 이에서 제공 하는 끝점 URL은 모든 *반복* 이 기본값으로 표시 된 것으로 설정 됩니다. 따라서 나중에 새 *반복* 을 만들고 기본값으로 업데이트할 경우에는 코드를 변경할 필요가 없습니다.
 
-11. *예측 url* 을 클릭 한 후에는 *메모장* 을 열고, 코드에서 나중에 필요할 때 검색할 수 있도록 **url** 및 **예측 키** 를 복사 하 여 붙여넣습니다.
+11. *예측 url* 을 클릭 한 후 *메모장* 을 열고, 코드에서 나중에 필요할 때 검색할 수 있도록 **url** 및 **예측 키** 를 복사 하 여 붙여넣습니다.
 
     ![URL 및 Prediction-Key 복사 및 붙여넣기](images/AzureLabs-Lab302b-14.png)
 
@@ -178,11 +178,11 @@ Custom Vision Service 프로젝트를 학습 하려면:
 
     ![코그 아이콘을 클릭 하 여 설정을 엽니다.](images/AzureLabs-Lab302b-15.png)
 
-13. **학습 키** 를 복사 하 여 나중에 사용할 수 있도록 *메모장* 에 붙여넣습니다.
+13. **학습 키** 를 복사 하 여 나중에 사용 하기 위해 *메모장* 에 붙여넣습니다.
 
     ![학습 키 복사](images/AzureLabs-Lab302b-16.png)
 
-14. 또한 **프로젝트 Id** 를 복사 하 고 나중에 사용할 수 있도록 *메모장* 파일에 붙여 넣습니다.
+14. 또한 **Project Id** 를 복사 하 고 나중에 사용할 수 있도록 *메모장* 파일에 붙여 넣습니다.
 
     ![프로젝트 id 복사](images/AzureLabs-Lab302b-16a.png)
 
@@ -202,13 +202,13 @@ Custom Vision Service 프로젝트를 학습 하려면:
 
     ![외부 도구 구성](images/AzureLabs-Lab302b-19.png)
 
-4.  그런 다음 **파일 > 빌드 설정** 으로 이동 하 고 **유니버설 Windows 플랫폼** 을 선택한 후 **플랫폼 전환** 단추를 클릭 하 여 선택 항목을 적용 합니다.
+4.  그런 다음 **파일 > 빌드 설정** 로 이동 하 고 **유니버설 Windows 플랫폼** 를 선택한 후 **플랫폼 전환** 단추를 클릭 하 여 선택 항목을 적용 합니다.
 
     ![빌드 설정 구성 ](images/AzureLabs-Lab302b-20.png)
 
-5.  아직 **파일 > 빌드 설정을** 사용 하 고 있는지 확인 합니다.
+5.  **파일 > 빌드 설정** 는 동안 다음을 확인 합니다.
 
-    1.  **대상 장치가** **HoloLens** 로 설정 됨
+    1.  **대상 장치가** **HoloLens** 로 설정 되어 있습니다.
 
         > 모던 헤드셋의 경우 **대상 장치** 를 *모든 장치로* 설정 합니다.
         
@@ -250,7 +250,7 @@ Custom Vision Service 프로젝트를 학습 하려면:
 
         ![API compantiblity 설정](images/AzureLabs-Lab302b-25.png)
 
-    2.  **게시 설정** 탭의 **기능** 아래에서 다음을 확인 합니다.
+    2.  **게시 설정** 탭 내의 **기능** 아래에서 다음을 확인 합니다.
 
         1. **InternetClient**
 
@@ -260,11 +260,11 @@ Custom Vision Service 프로젝트를 학습 하려면:
 
         ![게시 설정 구성](images/AzureLabs-Lab302b-26.png)
 
-    3.  패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음), **지원 되는 틱 가상 현실**, **Windows Mixed reality SDK** 가 추가 되어 있는지 확인 합니다.
+    3.  패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음)에서 지원 되는 틱 **가상 현실** 은 **Windows Mixed Reality SDK** 가 추가 되었는지 확인 합니다.
 
     ![XR 설정 구성](images/AzureLabs-Lab302b-27.png)
 
-8.  *빌드 설정* 으로 돌아가기 *Unity C \# 프로젝트가* 더 이상 회색으로 표시 되지 않습니다 .이 옆의 확인란을 선택 합니다.
+8.  *빌드 설정* *Unity C \# 프로젝트가* 더 이상 회색으로 표시 되지 않고이 옆의 확인란을 선택 합니다.
 
 9.  빌드 설정 창을 닫습니다.
 
@@ -345,7 +345,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
 
 이 클래스를 만들려면:
 
-1.  *프로젝트 패널* 에 있는 *자산 폴더* 를 마우스 오른쪽 단추로 클릭 한 다음 **> 폴더 만들기** 를 클릭 합니다. 폴더 **스크립트** 를 호출 합니다.
+1.  *Project 패널* 에 있는 *Asset 폴더* 를 마우스 오른쪽 단추로 클릭 한 다음 **> 폴더 만들기** 를 클릭 합니다. 폴더 **스크립트** 를 호출 합니다.
 
     ![스크립트 폴더 만들기](images/AzureLabs-Lab302b-33.png)
 
@@ -353,7 +353,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
 
 3.  폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 ,  >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 *CustomVisionAnalyser* 로 합니다.
 
-4.  새 *CustomVisionAnalyser* 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
+4.  새 *CustomVisionAnalyser* 스크립트를 두 번 클릭 하 여 **Visual Studio** 를 사용 하 여 엽니다.
 
 5.  다음과 일치 하도록 파일 위쪽에서 네임 스페이스를 업데이트 합니다.
 
@@ -390,7 +390,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
     ```
 
     > [!NOTE]
-    > **예측 키** 를 **predictionKey** 변수에 삽입 하 고 **예측 끝점** 을 **predictionEndpoint** 변수에 삽입 했는지 확인 합니다. 이 과정의 앞부분에서 *메모장* 에 복사 했습니다.
+    > **예측 키** 를 **predictionKey** 변수에 삽입 하 고 **예측 끝점** 을 **predictionEndpoint** 변수에 삽입 했는지 확인 합니다. 이 과정을 이전에 *메모장* 로 복사 했습니다.
 
 7.  이제 initialize **()** 에 대 한 코드를 추가 하 여 인스턴스 변수를 초기화 해야 합니다.
 
@@ -463,7 +463,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
         }
     ```
 
-10.  **Unity** 로 반환 하기 전에 **Visual Studio** 에서 변경 내용을 저장 해야 합니다.
+10.  **Unity** 로 반환 하기 전에 **Visual Studio** 변경 내용을 저장 해야 합니다.
 
 ## <a name="chapter-7---create-the-customvisionobjects-class"></a>7 장-CustomVisionObjects 클래스 만들기
 
@@ -478,7 +478,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
 
 1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음   >  **C \# 스크립트** 만들기를 클릭 합니다. *CustomVisionObjects* 스크립트를 호출 합니다.
 
-2.  새 **CustomVisionObjects** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
+2.  새 **CustomVisionObjects** 스크립트를 두 번 클릭 하 여 **Visual Studio** 를 사용 하 여 엽니다.
 
 3.  파일의 맨 위에 다음 네임 스페이스를 추가 합니다.
 
@@ -615,7 +615,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
 
 1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음   >  **C \# 스크립트** 만들기를 클릭 합니다. *VoiceRecognizer* 스크립트를 호출 합니다.
 
-2.  새 **VoiceRecognizer** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
+2.  새 **VoiceRecognizer** 스크립트를 두 번 클릭 하 여 **Visual Studio** 를 사용 하 여 엽니다.
 
 3.  *VoiceRecognizer* 클래스 위에 다음 네임 스페이스를 추가 합니다.
 
@@ -710,7 +710,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
         }
     ```
 
-8.  **Unity** 로 반환 하기 전에 **Visual Studio** 에서 변경 내용을 저장 해야 합니다.
+8.  **Unity** 로 반환 하기 전에 **Visual Studio** 변경 내용을 저장 해야 합니다.
 
 > [!NOTE]
 > 오류가 발생 하는 것 처럼 보일 수 있는 코드에 대해 걱정 하지 마세요. 추가 클래스를 곧 제공 하면이 문제를 해결할 수 있습니다.
@@ -723,7 +723,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
 
 1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음   >  **C \# 스크립트** 만들기를 클릭 합니다. *CustomVisionTrainer* 스크립트를 호출 합니다.
 
-2.  새 *CustomVisionTrainer* 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
+2.  새 *CustomVisionTrainer* 스크립트를 두 번 클릭 하 여 **Visual Studio** 를 사용 하 여 엽니다.
 
 3.  *CustomVisionTrainer* 클래스 위에 다음 네임 스페이스를 추가 합니다.
 
@@ -784,7 +784,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
     ```
 
     > [!IMPORTANT]
-    > 앞에서 설명한 대로 **서비스 키** (학습 키) 값 및 **프로젝트 Id** 값을 추가 했는지 확인 합니다. 이러한 값은 [과정의 앞부분에서 (2 장, 10 단계부터) 포털에서 수집한](#chapter-2---training-your-custom-vision-project)값입니다.
+    > **서비스 키** (학습 키) 값을 추가 하 고 이전에 적어 둔 **Project Id** 값을 추가 했는지 확인 합니다. 이러한 값은 [과정의 앞부분에서 (2 장, 10 단계부터) 포털에서 수집한](#chapter-2---training-your-custom-vision-project)값입니다.
 
 5.  다음 **Start ()** 및 **활성 ()** 메서드를 추가 합니다. 이러한 메서드는 초기화 시 호출 되며 UI를 설정 하는 호출을 포함 합니다.
 
@@ -1064,7 +1064,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
         }
     ```
 
-14. **Unity** 로 반환 하기 전에 **Visual Studio** 에서 변경 내용을 저장 해야 합니다.
+14. **Unity** 로 반환 하기 전에 **Visual Studio** 변경 내용을 저장 해야 합니다.
 
 ## <a name="chapter-10---create-the-sceneorganiser-class"></a>10 장-SceneOrganiser 클래스 만들기
 
@@ -1084,7 +1084,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
 
 1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음   >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 *SceneOrganiser* 로 합니다.
 
-2.  새 *SceneOrganiser* 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
+2.  새 *SceneOrganiser* 스크립트를 두 번 클릭 하 여 **Visual Studio** 를 사용 하 여 엽니다.
 
 3.  네임 스페이스는 하나만 필요 하며 *SceneOrganiser* 클래스 위에서 다른 네임 스페이스를 제거 합니다.
 
@@ -1325,7 +1325,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
         }
     ```
 
-11. **Unity** 로 반환 하기 전에 **Visual Studio** 에서 변경 내용을 저장 해야 합니다.
+11. **Unity** 로 반환 하기 전에 **Visual Studio** 변경 내용을 저장 해야 합니다.
 
 > [!IMPORTANT]
 > 계속 하기 전에 **CustomVisionAnalyser** 클래스를 열고 **AnalyseLastImageCaptured ()** 메서드 내에서 다음 줄의 *주석 처리를 제거* 합니다.
@@ -1354,7 +1354,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
 
 2.  폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 **> C \# 스크립트 만들기** 를 클릭 합니다. 스크립트 이름을 *ImageCapture* 로 합니다.
 
-3.  새 **ImageCapture** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
+3.  새 **ImageCapture** 스크립트를 두 번 클릭 하 여 **Visual Studio** 를 사용 하 여 엽니다.
 
 4.  파일의 맨 위에 있는 네임 스페이스를 다음으로 바꿉니다.
 
@@ -1622,7 +1622,7 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
         }
     ```
 
-10. **Unity** 로 반환 하기 전에 **Visual Studio** 에서 변경 내용을 저장 해야 합니다.
+10. **Unity** 로 반환 하기 전에 **Visual Studio** 변경 내용을 저장 해야 합니다.
 
 11. 모든 스크립트가 완료 되었으므로 Unity 편집기로 돌아가서 **scripts** 폴더의 **SceneOrganiser** 클래스를 클릭 하 여 *계층 패널* 의 **기본 카메라** 개체로 끕니다.
 
@@ -1644,13 +1644,13 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
 
 - *CustomVisionTrainer* 클래스의 **TrainingKey** 변수에 **학습 키** 를 삽입 했습니다.
 
-- *CustomVisionTrainer* 클래스의 **PROJECTID** 변수에 **프로젝트 ID** 를 삽입 했습니다.
+- **Project ID** 를 *CustomVisionTrainer* 클래스의 **projectId** 변수에 삽입 했습니다.
 
 ## <a name="chapter-13---build-and-sideload-your-application"></a>13 장-응용 프로그램 빌드 및 테스트용으로 로드
 
 *빌드* 프로세스를 시작 하려면 다음을 수행 합니다.
 
-1.  **파일 > 빌드 설정** 으로 이동 합니다.
+1.  **파일 > 빌드 설정** 로 이동 합니다.
 
 2.  Tick **Unity C \# 프로젝트**.
 
@@ -1662,9 +1662,9 @@ Newtonsoft.json 라이브러리를 프로젝트로 가져오려면이 과정에�
 
 HoloLens에 배포 하려면:
 
-1.  HoloLens의 IP 주소 (원격 배포의 경우)가 필요 하 고 HoloLens가 **개발자 모드** 에 있는지 확인 합니다. 가상 하드 디스크 파일에 대한 중요 정보를 제공하려면
+1.  HoloLens의 IP 주소가 필요 하며 (원격 배포의 경우) HoloLens **개발자 모드** 에 있는지 확인 해야 합니다. 이렇게 하려면 다음을 수행합니다.
 
-    1.  HoloLens를 입고 하는 동안 **설정을** 엽니다.
+    1.  HoloLens를 입고 **설정** 를 엽니다.
 
     2.  **네트워크 & 인터넷**  >  **wi-fi**  >  **고급 옵션** 으로 이동 합니다.
 
@@ -1674,7 +1674,7 @@ HoloLens에 배포 하려면:
 
     5.  **에서 개발자 모드를** 설정 합니다.
 
-2.  새 Unity 빌드 ( **앱** 폴더)로 이동 하 여 **Visual Studio** 에서 솔루션 파일을 엽니다.
+2.  새 Unity 빌드 ( **앱** 폴더)로 이동 하 고 **Visual Studio** 를 사용 하 여 솔루션 파일을 엽니다.
 
 3.  *솔루션 구성* 에서 **디버그** 를 선택 합니다.
 
@@ -1682,9 +1682,9 @@ HoloLens에 배포 하려면:
 
     ![IP 주소 설정](images/AzureLabs-Lab302b-34.png)
 
-5. **빌드** 메뉴로 이동 하 여 **솔루션 배포** 를 클릭 하 여 응용 프로그램을 HoloLens로 테스트용으로 로드.
+5. **빌드** 메뉴로 이동 하 여 **솔루션 배포** 를 클릭 하 여 응용 프로그램을 HoloLens 테스트용으로 로드.
 
-6. 이제 앱이 HoloLens에 설치 된 앱 목록에 표시 되어 시작할 준비가 되었습니다!
+6. 이제 앱이 HoloLens에 설치 된 앱 목록에 표시 되 고, 시작할 준비가 되었습니다!
 
 > [!NOTE]
 > 모던 헤드셋에 배포 하려면 **솔루션 플랫폼** 을 *로컬 컴퓨터* 로 설정 하 고 **구성을** *디버그* 로 설정 하 고 *x 86* 을 **플랫폼** 으로 설정 합니다. 그런 다음 **빌드** 메뉴 항목을 사용 하 여 *솔루션 배포* 를 선택 하 여 로컬 컴퓨터에 배포 합니다. 
@@ -1720,46 +1720,46 @@ HoloLens에 배포 하려면:
 
 ## <a name="chapter-14---evaluate-and-improve-your-custom-vision-model"></a>14 장-Custom Vision 모델 평가 및 개선
 
-서비스를 보다 정확 하 게 만들려면 예측에 사용 되는 모델을 계속 학습 해야 합니다. 이 작업은 *학습* 및 *예측* 모드 모두에서 새로운 응용 프로그램을 사용 하 여 수행 되며, 후자는이 장에서 설명 하는 포털을 방문 해야 합니다. 모델을 지속적으로 개선 하기 위해 포털을 여러 번 다시 방문할 준비를 해야 합니다.
+서비스를 보다 정확하게 만들려면 예측에 사용되는 모델을 계속 학습해야 합니다. 학습 *모드와* *예측* 모드를 모두 사용하는 새 애플리케이션을 사용하여 이 작업을 수행하며, 후자는 포털을 방문해야 합니다. 이 내용은 이 챕터에서 다룹니다. 포털을 여러 번 다시 방문하여 모델을 지속적으로 개선할 준비를 합니다.
 
-1. Azure Custom Vision 포털에 다시 이동 하 여 프로젝트에 있는 경우 페이지의 상단 가운데에서 *예측* 탭을 선택 합니다.
+1. Azure Custom Vision Portal로 다시 가서 프로젝트에 참여하면 페이지의 위쪽 가운데에 있는 *예측* 탭을 선택합니다.
 
-    ![예측 탭 선택](images/AzureLabs-Lab302b-35.png)
+    ![예측 선택 탭](images/AzureLabs-Lab302b-35.png)
 
-2. 응용 프로그램이 실행 되는 동안 서비스에 전송 된 모든 이미지가 표시 됩니다. 이미지를 마우스로 가리키면 해당 이미지에 대해 수행 된 예측이 제공 됩니다.
+2. 애플리케이션이 실행되는 동안 서비스에 전송된 모든 이미지가 표시됩니다. 이미지를 마우스로 가리키면 해당 이미지에 대해 수행된 예측을 제공합니다.
 
     ![예측 이미지 목록](images/AzureLabs-Lab302b-36.png)
 
-3. 이미지 중 하나를 선택 하 여 엽니다. 열린 후에는 해당 이미지에 대 한 예측이 오른쪽에 표시 됩니다. 예측이 올바르고이 이미지를 서비스의 학습 모델에 추가 하려는 경우 *내 태그* 입력 상자를 클릭 하 고 연결 하려는 태그를 선택 합니다. 작업이 완료 되 면 오른쪽 아래에 있는 *저장 및 닫기* 단추를 클릭 하 고 다음 이미지를 계속 진행 합니다.
+3. 이미지 중 하나를 선택하여 엽니다. 열리면 해당 이미지에 대한 예측이 오른쪽에 표시됩니다. 예측이 올바르고 이 이미지를 서비스의 학습 모델에 추가하려는 경우 *내 태그* 입력 상자를 클릭하고 연결할 태그를 선택합니다. 완료되면 오른쪽 아래에 있는 *저장 후 닫기* 단추를 클릭하고 다음 이미지로 계속 진행합니다.
 
-    ![열 이미지 선택](images/AzureLabs-Lab302b-37.png)
+    ![열려는 이미지 선택](images/AzureLabs-Lab302b-37.png)
 
-4. 이미지 그리드로 돌아가서 태그를 추가 하 고 저장 한 이미지를 제거할 것을 알 수 있습니다. 태그가 지정 된 항목이 없는 것으로 생각 되는 이미지를 찾은 경우 해당 이미지에서 틱을 클릭 하 고 (여러 이미지에 대해이 작업을 수행할 수 있음) 그리드 페이지의 오른쪽 위 모퉁이에서 *삭제* 를 클릭 하 여 삭제할 수 있습니다. 다음에 나오는 팝업에서 *예, 삭제* 또는 *아니요* 를 클릭 하 여 삭제를 확인 하거나 취소할 수 있습니다. 
+4. 이미지 그리드로 돌아가면 태그를 추가하고 저장한 이미지가 제거되는 것을 볼 수 있습니다. 태그가 지정된 항목이 없는 것으로 생각되는 이미지를 찾으면 해당 이미지의 틱을 클릭한 다음(여러 이미지에 대해 이 작업을 수행할 수 있습니다) 그리드 페이지의 오른쪽 위 모서리에서 삭제를 클릭하여 *삭제할* 수 있습니다. 다음 팝업에서 *예, 삭제* 또는 *아니요* 를 클릭하여 삭제를 확인하거나 취소할 수 있습니다. 
 
     ![이미지 삭제](images/AzureLabs-Lab302b-38.png)
 
-5. 계속할 준비가 되 면 오른쪽 위에 있는 녹색 *학습* 단추를 클릭 합니다. 서비스 모델은 제공 된 모든 이미지를 사용 하 여 학습 됩니다 (더 정확 하 게 함). 학습을 완료 한 후에는 *기본 설정* 단추를 한 번 더 클릭 하 여 *예측 URL* 에서 서비스의 최신 반복을 계속 사용할 수 있도록 해야 합니다.
+5. 계속 진행할 준비가 되면 오른쪽 위에 있는 녹색 *학습* 단추를 클릭합니다. 서비스 모델은 현재 제공한 모든 이미지로 학습됩니다(보다 정확하게 만들기). 학습이 완료되면 *예측 URL이* 서비스의 최신 반복을 계속 사용할 수 있도록 *기본값 설정* 단추를 한 번 더 클릭해야 합니다.
 
-    ![학습 서비스 모델 시작 ](images/AzureLabs-Lab302b-39.png) ![ 기본 옵션 만들기 옵션을 선택 합니다.](images/AzureLabs-Lab302b-40.png)
+    ![학습 서비스 모델 시작 ](images/AzureLabs-Lab302b-39.png) ![ 기본 옵션 만들기 선택](images/AzureLabs-Lab302b-40.png)
 
-## <a name="your-finished-custom-vision-api-application"></a>완료 된 Custom Vision API 응용 프로그램
+## <a name="your-finished-custom-vision-api-application"></a>완료된 Custom Vision API 애플리케이션
 
-축 하 합니다. Azure Custom Vision API를 활용 하 여 실제 개체를 인식 하 고, 서비스 모델을 학습 하 고, 표시 되는 내용에 대 한 확신을 표시 하는 혼합 현실 앱을 빌드 했습니다.
+축하합니다. Azure Custom Vision API를 활용하여 실제 개체를 인식하고, 서비스 모델을 학습시키고, 표시된 내용에 대한 신뢰도를 표시하는 혼합 현실 앱을 빌드했습니다.
 
-![완료 된 프로젝트 예제](images/AzureLabs-Lab302b-00.png)
+![완성된 프로젝트 예제](images/AzureLabs-Lab302b-00.png)
 
 ## <a name="bonus-exercises"></a>보너스 연습
 
 ### <a name="exercise-1"></a>연습 1
 
-**Custom Vision Service** 를 학습 하 여 더 많은 개체를 인식할 수 있습니다.
+Custom Vision **Service를** 학습하여 더 많은 개체를 인식합니다.
 
 ### <a name="exercise-2"></a>연습 2
 
-학습 한 내용을 확장 하는 방법으로 다음 연습을 완료 합니다.
+학습한 내용을 확장하는 방법으로 다음 연습을 완료합니다.
 
-개체가 인식 될 때 소리를 재생 합니다.
+개체가 인식될 때 소리를 재생합니다.
 
 ### <a name="exercise-3"></a>연습 3
 
-API를 사용 하 여 응용 프로그램이 분석 하는 것과 동일한 이미지를 사용 하 여 서비스를 다시 학습 하므로 서비스를 보다 정확 하 게 만들 수 있습니다 (예측 및 학습을 동시에 수행).
+API를 사용하여 앱이 분석하는 것과 동일한 이미지로 서비스를 다시 학습하여 서비스를 보다 정확하게 만듭니다(예측과 학습을 동시에 수행).

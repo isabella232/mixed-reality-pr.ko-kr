@@ -1,132 +1,132 @@
 ---
 title: 상호 작용 가능
-description: MRTK의 Interactable 스크립트 구성 요소에 대 한 개요
+description: MRTK의 상호 작용 가능한 스크립트 구성 요소에 대한 개요
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, Interactable, 이벤트,
-ms.openlocfilehash: f141a394ec9395e0a27cc964caeb66654fb6fe08
-ms.sourcegitcommit: 47c402dc8e588817ce60229bf019170fa36f3045
+ms.openlocfilehash: a0aee99d01ae59a8ebedc4d62a4b0aaf844a7afaa6961bbfd05238dd9d5b673d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107581565"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115206813"
 ---
 # <a name="interactable"></a>상호 작용 가능
 
 ![상호 작용 가능](../images/interactable/InteractableExamples.png)
 
-[`Interactable`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable)이 구성 요소는 모든 개체를 쉽게 *interactable* 하 고 입력에 응답할 수 있도록 하는 일대다 컨테이너입니다. Interactable는 터치, 손 광선, 음성 등을 비롯 한 모든 유형의 입력에 대해 모두 catch 역할을 하며 이러한 상호 작용을 [이벤트](#events) 및 [시각적 테마](visual-themes.md) 응답으로 깔때기 합니다. 이 구성 요소를 사용 하면 단추를 만들고 포커스를 가진 개체의 색을 변경 하는 등의 작업을 쉽게 수행할 수 있습니다.
+[`Interactable`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable)구성 요소는 모든 개체를 입력에 쉽게 상호 *작용하고* 응답할 수 있도록 하는 올인원 컨테이너입니다. 상호 작용 가능은 터치, 손 광선, 음성 등을 비롯한 모든 유형의 입력에 대한 catch-all 역할을 하며 이러한 상호 작용을 [이벤트](#events) 및 [시각적 테마](visual-themes.md) 응답으로 유입합니다. 이 구성 요소는 단추를 만들고, 포커스가 있는 개체의 색을 변경하는 등의 쉬운 방법을 제공합니다.
 
-## <a name="how-to-configure-interactable"></a>Interactable를 구성 하는 방법
+## <a name="how-to-configure-interactable"></a>Interactable을 구성하는 방법
 
-구성 요소는 구성의 세 가지 주요 섹션을 허용 합니다.
+구성 요소는 구성의 세 가지 기본 섹션을 허용합니다.
 
 1) [일반 입력 구성](#general-input-settings)
-1) 여러 Gameobject를 대상으로 하는 [시각적 테마](visual-themes.md)
+1) 여러 GameObject를 대상으로 하는 [시각적 테마](visual-themes.md)
 1) [이벤트 처리기](#events)
 
 ### <a name="general-input-settings"></a>일반 입력 설정
 
-![일반 Interactable 설정](../images/interactable/InputFeatures_short.png)
+![상호 작용 가능한 일반 설정](../images/interactable/InputFeatures_short.png)
 
 **상태**
 
-*상태* 는 [Interactable 프로필과](#interactable-profiles) [시각적 테마](visual-themes.md)에 대해 press와 같은 상호 작용 단계를 정의 하는 [스크립트가 tabletableobject](https://docs.unity3d.com/Manual/class-ScriptableObject.html) 매개 변수입니다.
+*상태는* 상호 작용 가능한 프로필 및 [시각적 테마](visual-themes.md)에 대한 상호 작용 단계(예: press 또는 observed)를 정의하는 [ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html) 매개 변수입니다. [](#interactable-profiles)
 
-**Defaultinteractablestates** (ASSET/MRTK/SDK/FEATURES/UX/Interactable/States/defaultInteractable)는 MRTK와 함께 제공 되며  구성 요소의 기본 매개 변수입니다.
+DefaultInteractableStates(Assets/MRTK/SDK/Features/UX/Interactable/States/DefaultInteractableStates.asset)는 기본적으로 MRTK와 함께 제공되며 *상호 작용 가능한* 구성 요소의 기본 매개 변수입니다. 
 
-![Inspector의 상태 스크립트가 아닌 개체 예제](../images/interactable/DefaultInteractableStates.png)
+![검사기에서 ScriptableObject 예제 상태](../images/interactable/DefaultInteractableStates.png)
 
-*Defaultinteractablestates* 자산은 네 가지 상태를 포함 하며 [`InteractableStates`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableStates) 상태 모델 구현을 활용 합니다.
+*DefaultInteractableStates* 자산은 네 가지 상태를 포함하며 [`InteractableStates`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableStates) 상태 모델 구현을 활용합니다.
 
-* **기본값**: 아무것도 발생 하지 않습니다 .이는 가장 격리 된 기본 상태입니다.
+* **기본값:** 아무 것도 발생하지 않습니다. 가장 격리된 기본 상태입니다.
 
-* **Focus**: 개체가 가리키고 있습니다. 이는 단일 상태 이며, 현재 다른 상태는 설정 되지 않지만 순위 기본값을 출력 합니다.
+* **포커스:** 개체가 가리키고 있습니다. 이 상태는 단일 상태이며 다른 상태는 현재 설정되지 않지만 기본 순위에서 제외됩니다.
 
-* **키를 누르면** 개체가 가리키고 단추를 누르면 됩니다. 누르기 상태 아웃은 기본 및 포커스의 순위를 매깁니다. 이 상태는 또한 물리적 인쇄기로 설정 됩니다.
+* **누르기:** 개체가 가리키고 있고 단추 또는 손을 누르고 있습니다. Press state out은 Default 및 Focus의 순위를 지정합니다. 이 상태는 Physical Press로 대체(fallback)로 설정됩니다.
 
-* **사용 안 함**: 단추가 대화형이 아니어야 하며, 어떤 이유로 든이 단추를 사용할 수 없는 경우 사용자에 게 알려 주는 시각적 피드백이 표시 됩니다. 이론적으로 사용 하지 않도록 설정 된 상태는 다른 모든 상태를 포함할 수 있지만 사용 하도록 설정 된 경우 사용 안 함 상태는 다른 모든 상태를가 합니다.
+* **사용 안 함:** 단추는 대화형이 아니어야 하며 시각적 피드백은 어떤 이유로 이 단추를 현재 사용할 수 없는 경우 사용자에게 알릴 수 있습니다. 이론적으로 비활성 상태는 다른 모든 상태를 포함할 수 있지만 사용이 해제된 경우 사용 안 함 상태는 다른 모든 상태를 비활성 상태로 전환합니다.
 
-비트 값 (#)은 목록에 있는 순서에 따라 상태에 할당 됩니다.
+비트 값(#)은 목록의 순서에 따라 상태에 할당됩니다.
 
 > [!NOTE]
-> *Interactable* 구성 요소를 만들 때 **Defaultinteractablestates** (asset/MRTK/SDK/Features/UX/Interactable/States/defaultinteractablestates)를 활용 하는 것이 일반적으로 권장 됩니다.
+> 일반적으로 *상호 작용* 가능한 구성 요소를 만들 때 DefaultInteractableStates(Assets/MRTK/SDK/Features/UX/Interactable/States/DefaultInteractableStates.asset)를 활용하는 것이 좋습니다. 
 >
-> 그러나 테마를 구동 하는 데 사용할 수 있는 17 개의 Interactable 상태를 사용할 수 있지만 일부는 다른 구성 요소에서 구동 될 수 있습니다. 다음은 기본 제공 기능을 사용 하는 목록입니다.
+> 그러나 테마를 구동하는 데 사용할 수 있는 17개의 상호 작용 가능한 상태는 있지만 일부는 다른 구성 요소에 의해 구동됩니다. 다음은 기본 제공 기능이 있는 목록입니다.
 >
-> * 방문 됨: Interactable를 클릭 했습니다.
-> * 전환 됨: 단추가 전환 된 상태 이거나 차원 인덱스가 홀수입니다.
-> * 제스처: 손 또는 컨트롤러를 눌렀다 원래 위치에서 이동 했습니다.
-> * VoiceCommand: 음성 명령이 Interactable를 트리거하는 데 사용 되었습니다.
-> * 실제 터치: 터치 입력이 현재 검색 되 고를 사용 하도록 설정 하는 데 사용 [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) 합니다.
-> * 잡기: 현재는 개체의 경계를 대상으로 하는 데를 사용 합니다. [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable)
+> * 방문: Interactable을 클릭했습니다.
+> * 토글: 단추가 토글된 상태이거나 차원 인덱스가 홀수입니다.
+> * 제스처: 손 또는 컨트롤러를 눌렀고 원래 위치에서 이동했습니다.
+> * VoiceCommand: Interactable을 트리거하는 데 음성 명령이 사용되었습니다.
+> * PhysicalTouch: 터치 입력이 현재 검색되어 를 사용하여 [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) 사용하도록 설정합니다.
+> * 잡기: 손은 현재 개체의 범위에서 잡고 있으며 를 사용하여 [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable) 사용하도록 설정합니다.
 
-**Enabled**
+**사용**
 
-Interactable를 사용 하도록 설정할지 여부를 전환 합니다. 이는 [`Interactable.IsEnabled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsEnabled) 코드의에 해당 합니다.
+Interactable을 사용할지 여부를 전환합니다. 이는 [`Interactable.IsEnabled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsEnabled) 코드의 에 해당합니다.
 
-*Interactable의* Enabled 속성이 GameObject/Component를 통해 구성 된 enabled 속성과 다릅니다 (즉, SetActive 등). GameObject 또는 *Interactable* MonoBehaviour를 사용 하지 않도록 설정 하면 입력, 시각적 테마, 이벤트 등을 포함 하 여 클래스의 모든 항목을 실행할 수 없습니다. Via를 사용 하지 않도록 설정 하면 [`Interactable.IsEnabled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsEnabled) 대부분의 입력 처리를 사용할 수 없으며 관련 된 입력 상태를 다시 설정 그러나 클래스는 모든 프레임을 계속 실행 하 고 무시 되는 입력 이벤트를 받습니다. 이는 시각적 테마를 통해 수행할 수 있는 비활성 상태로 Interactable를 표시 하는 데 유용 합니다. 이에 대 한 일반적인 예는 모든 필수 입력 필드가 완료 되기를 기다리는 제출 단추입니다.
+*Interactable의* enabled 속성은 GameObject/Component를 통해 구성된 enabled 속성(즉, SetActive 등). GameObject 또는 *Interactable* MonoBehaviour를 사용하지 않도록 설정하면 클래스의 모든 것이 입력, 시각적 테마, 이벤트 등을 포함하여 실행하지 않도록 설정됩니다. 을 통해 사용하지 [`Interactable.IsEnabled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsEnabled) 않도록 설정하면 대부분의 입력 처리가 비활성화되고 관련 입력 상태가 다시 설정됩니다. 그러나 클래스는 여전히 모든 프레임을 실행하고 무시되는 입력 이벤트를 수신합니다. 이는 시각적 테마를 통해 수행할 수 있는 Interactable을 비활성 상태로 표시하는 데 유용합니다. 일반적인 예로 필요한 모든 입력 필드가 완료될 때까지 기다리는 제출 단추가 있습니다.
 
 **입력 작업**
 
-*Interactable* 구성 요소가 응답 해야 하는 입력 구성 또는 컨트롤러 매핑 프로필에서 [입력 작업](../input/input-actions.md) 을 선택 합니다.
+*대화형* 구성 요소가 반응해야 하는 입력 구성 또는 컨트롤러 매핑 프로필에서 [입력 작업을](../input/input-actions.md) 선택합니다.
 
-이 속성은 런타임에를 통해 코드에서 구성할 수 있습니다 [`Interactable.InputAction`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.InputAction) .
+이 속성은 를 통해 코드에서 런타임에 구성할 수 [`Interactable.InputAction`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.InputAction) 있습니다.
 
 **IsGlobal**
 
-True 이면 구성 요소가 선택한 [입력 동작](../input/input-actions.md)에 대 한 전역 입력 수신기로 표시 됩니다. 기본 동작은 false 이며,이 *Interactable* Collider/GameObject만 입력이 제한 됩니다.
+true이면 선택한 [입력 동작](../input/input-actions.md)에 대한 전역 입력 수신기로 구성 요소를 표시합니다. 기본 동작은 이 *Interactable* collider/GameObject로만 입력을 제한하는 false입니다.
 
-이 속성은 런타임에를 통해 코드에서 구성할 수 있습니다 [`Interactable.IsGlobal`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsGlobal) .
+이 속성은 를 통해 코드에서 런타임에 구성할 수 [`Interactable.IsGlobal`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsGlobal) 있습니다.
 
-**Speech 명령**
+**음성 명령**
 
-음성 상호 작용에 대 한 OnClick 이벤트를 트리거하는 MRTK Speech Commands 프로필의 [음성 명령](../input/speech.md)입니다.
+[음성 명령](../input/speech.md), MRTK 음성 명령 프로필에서 음성 상호 작용에 대 한 OnClick 이벤트를 트리거 합니다.
 
-이 속성은 런타임에를 통해 코드에서 구성할 수 있습니다 [`Interactable.VoiceCommand`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.VoiceCommand) .
+이 속성은 를 통해 코드에서 런타임에 구성할 수 [`Interactable.VoiceCommand`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.VoiceCommand) 있습니다.
 
 **포커스 필요**
 
-True 이면 음성 명령은 포인터의 포커스가 이미 있는 경우에만 *Interactable* 를 활성화 합니다. False 이면 *Interactable* 가 선택한 음성 명령의 전역 수신기 역할을 합니다. 여러 전역 음성 수신기를 장면에서 구성 하기 어려울 수 있으므로 기본 동작은 true입니다.
+true이면 음성 명령은 포인터에서 포커스가 이미 있는 경우에만 *Interactable을* 활성화합니다. false이면 *Interactable이* 선택한 음성 명령에 대한 전역 수신기로 작동합니다. 여러 글로벌 음성 수신기가 장면에서 구성하기 어려울 수 있기 때문에 기본 동작은 true입니다.
 
-이 속성은 런타임에를 통해 코드에서 구성할 수 있습니다 [`Interactable.VoiceRequiresFocus`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.VoiceRequiresFocus) .
+이 속성은 를 통해 코드에서 런타임에 구성할 수 [`Interactable.VoiceRequiresFocus`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.VoiceRequiresFocus) 있습니다.
 
 **선택 모드**
 
-이 속성은 선택 논리를 정의 합니다. *Interactable* 을 클릭 하면 다음 *차원* 수준으로 반복 됩니다. *차원은* 순위와 비슷하며 입력 외부의 상태를 정의 합니다 (즉, 포커스, 누르기 등). 이는 단추와 연결 된 다른 다중 순위 상태 또는 설정/해제 상태를 정의 하는 데 유용 합니다. 현재 차원 수준은에 의해 추적 됩니다 `Interactable.DimensionIndex` .
+이 속성은 선택 논리를 정의합니다. *Interactable을* 클릭하면 다음 *차원* 수준으로 반복됩니다. *차원은* 순위와 유사하며 입력 외부의 상태(즉, 포커스, 누르기 등). 단추와 연결된 토글 상태 또는 기타 다중 순위 상태를 정의하는 데 유용합니다. 현재 차원 수준은 에 의해 `Interactable.DimensionIndex` 추적됩니다.
 
 사용 가능한 선택 모드는 다음과 같습니다.
 
-* **단추**  -  *차원* = 1, 클릭 가능한 단순 *Interactable*
-* **토글**  -  *차원* = 2, *Interactable* *에서* / *꺼짐* 상태 사이 대체
-* **다중 차원**  -  *차원* >= 3, 클릭 마다 현재 차원 수준 + 1이 늘어납니다. 목록에 대 한 단추 상태 등을 정의 하는 데 유용 합니다.
+* **단추**  -  *차원* = 1, 간단하게 클릭할 수 *있는 Interactable*
+* **토글**  -  *차원* = 2, *on* off 상태 간의 *상호 작용 가능한* 대체 / 
+* **다차원**  -  *차원 >* = 3입니다. 클릭할 때마다 현재 차원 수준 + 1이 증가합니다. 목록 등에 단추 상태를 정의하는 데 유용합니다.
 
-*Interactable* 를 사용 하면 *차원* 마다 여러 테마를 정의할 수도 있습니다. 예를 들어 *SelectionMode = Toggle* 인 경우 *Interactable* 가 선택 *취소* 되 면 하나의 테마가 적용 되 고 구성 요소가 *선택* 되 면 다른 테마가 적용 될 수 있습니다.
+*상호 작용 가능을* 사용하면 *차원당* 여러 테마를 정의할 수도 있습니다. 예를 들어 *SelectionMode=Toggle인* 경우 *Interactable을* 선택 *취소하고* 구성 요소를 *선택할* 때 다른 테마를 적용할 수 있습니다.
 
-를 통해 런타임에 현재 선택 모드를 쿼리할 수 있습니다 [`Interactable.ButtonMode`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.ButtonMode) . 런타임에 모드를 업데이트 하는 것은  [`Interactable.Dimensions`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.Dimensions) 원하는 기능과 일치 하도록 속성을 설정 하 여 수행할 수 있습니다. 또한 *설정/해제* 및 *다중 차원* 모드에 유용한 현재 차원은를 통해 액세스할 수 있습니다 [`Interactable.CurrentDimension`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.CurrentDimension) .
+현재 선택 모드는 를 통해 런타임에 쿼리할 수 [`Interactable.ButtonMode`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.ButtonMode) 있습니다. 런타임 시 모드 업데이트는 속성을 원하는 기능과 일치하도록 설정하여 달성할 수  [`Interactable.Dimensions`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.Dimensions) 있습니다. 또한 *토글* 및 다차원 모드에 유용한 현재 *차원은* 를 통해 액세스할 수 [`Interactable.CurrentDimension`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.CurrentDimension) 있습니다.
 
-### <a name="interactable-profiles"></a>Interactable 프로필
+### <a name="interactable-profiles"></a>상호 작용 가능한 프로필
 
-*프로필* 은 GameObject [시각적 테마](visual-themes.md)간의 관계를 만드는 항목입니다. 프로필은 [상태 변경이 발생할](#general-input-settings)때 테마에 의해 조작 되는 콘텐츠를 정의 합니다.
+*프로필은* GameObject와 [시각적 테마](visual-themes.md)간의 관계를 만드는 항목입니다. 프로필은 상태 변경이 발생할 때 테마에서 조작할 콘텐츠를 [정의합니다.](#general-input-settings)
 
-테마는 자료와 유사 하 게 작동 합니다. 현재 상태에 따라 개체에 할당 되는 속성 목록을 포함 하는 스크립트 가능한 개체입니다. 테마도 다시 사용할 수 있으며 여러 *Interactable* UX 개체에서 할당 될 수 있습니다.
+테마는 재질과 매우 유사하게 작동합니다. 현재 상태에 따라 개체에 할당될 속성 목록을 포함하는 스크립팅 가능한 개체입니다. 테마도 다시 사용할 수 있으며 여러 상호 *작용 가능한* UX 개체에 할당할 수 있습니다.
 
-**제거 시 다시 설정**
+**삭제할 때 다시 설정**
 
-시각적 테마는 선택한 테마 엔진의 클래스 및 형식에 따라 대상 GameObject의 다양 한 속성을 수정 합니다. Interactable 구성 요소가 제거 될 때 *Reset에서 Reset* 이 true 이면 구성 요소가 모든 수정 된 속성을 활성 테마에서 원래 값으로 다시 설정 합니다. 그렇지 않으면 제거 될 때 Interactable 구성 요소가 수정 된 속성을 그대로 유지 합니다. 이 두 번째 경우에는 다른 외부 구성 요소에 의해 변경 되지 않는 한 값의 마지막 상태가 유지 됩니다. 기본값은 false입니다.
+시각적 테마는 선택한 테마 엔진의 클래스 및 형식에 따라 대상 GameObject의 다양한 속성을 수정합니다. Interactable 구성 요소가 제거될 때 *Reset On Destroy가* true이면 구성 요소는 활성 테마에서 원래 값으로 수정된 모든 속성을 다시 설정합니다. 그렇지 않으면 제거될 때 Interactable 구성 요소는 수정된 속성을 그대로 둡니다. 이 후자의 경우 다른 외부 구성 요소에 의해 변경되지 않는 한 값의 마지막 상태가 유지됩니다. 기본값은 false입니다.
 
 <img src="../images/interactable/Profiles_Themes.png" width="450" alt="Profile theams">
 
 ## <a name="events"></a>이벤트
 
-모든 *Interactable* 구성 요소에는 구성 요소를 간단히 선택할 때 발생 하는 *OnClick* 이벤트가 있습니다. 그러나 *Interactable* 는 단순히 *OnClick* 이 아닌 입력 이벤트를 검색 하는 데 사용할 수 있습니다.
+모든 *Interactable* 구성 요소에는 구성 요소를 선택하기만 하면 발생되는 *OnClick* 이벤트가 있습니다. 그러나 *Interactable은* *OnClick* 이외의 입력 이벤트를 검색하는 데 사용할 수 있습니다.
 
-이벤트 *추가* 단추를 클릭 하 여 새 유형의 이벤트 수신기 정의를 추가 합니다. 추가 되 면 원하는 이벤트 유형을 선택 합니다.
+이벤트 *추가* 단추를 클릭하여 새 유형의 이벤트 수신기 정의를 추가합니다. 추가되면 원하는 이벤트 유형을 선택합니다.
 
 ![이벤트 예제](../images/interactable/Events.png))
 
-여러 유형의 입력에 응답 하는 다양 한 유형의 이벤트 수신기가 있습니다. MRTK는 기본 제공 되는 다음 수신기 집합과 함께 제공 됩니다.
+다양한 유형의 입력에 응답하는 다양한 유형의 이벤트 수신기가 있습니다. MRTK는 다음과 같은 수신기 세트와 함께 제공합니다.
 
 * [`InteractableAudioReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableAudioReceiver)
 * [`InteractableOnClickReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnClickReceiver)
@@ -137,7 +137,7 @@ True 이면 음성 명령은 포인터의 포커스가 이미 있는 경우에�
 * [`InteractableOnToggleReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnToggleReceiver)
 * [`InteractableOnTouchReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnTouchReceiver)
 
-를 확장 하는 새 클래스를 만들어 사용자 지정 수신기를 만들 수 있습니다 [`ReceiverBase`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase) .
+를 확장하는 새 클래스를 만들어 사용자 지정 수신기를 만들 수 [`ReceiverBase`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase) 있습니다.
 
 ![이벤트 설정/해제 예](../images/interactable/Event_toggle.png)
 
@@ -365,10 +365,10 @@ public static void AddToggleEvents(Interactable interactable)
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
-* [시각적 개체 테마](visual-themes.md)
+* [시각적 테마](visual-themes.md)
 * [입력 작업](../input/input-actions.md)
 * [음성 명령](../input/speech.md)
 * [단추](button.md)
-* [MRTK 표준 세이더](../rendering/MRTK-standard-shader.md)
+* [MRTK 표준 셰이더](../rendering/MRTK-standard-shader.md)

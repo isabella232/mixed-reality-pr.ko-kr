@@ -1,35 +1,35 @@
 ---
-title: HoloLens (첫 번째 gen) 및 Azure 310-개체 검색
+title: HoloLens(1세대) 및 Azure 310 - 개체 검색
 description: 이 과정을 완료 하면 기계 학습 모델을 학습 하 고 사용 하 여 실제 세계에서 유사한 개체와 해당 위치를 인식 하는 방법을 배울 수 있습니다.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, 사용자 지정 비전, 개체 검색, 혼합 현실, 아카데미, unity, 자습서, api, hololens, Windows 10, Visual Studio
-ms.openlocfilehash: 29b3622e510a0d97ee3f1dea04661b7d6ab51f9f
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 85a99b676f6765696524bc42adf257b3430c00cc955413b4c299ddb58502cefb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730350"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216812"
 ---
 # <a name="hololens-1st-gen-and-azure-310-object-detection"></a>HoloLens (첫 번째 gen) 및 Azure 310: 개체 검색
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2를 개발 하는 방법을 설명 하는 앞으로 게시 될 새 자습서가 있습니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
 
 <br>
 
 이 과정에서는 혼합 현실 응용 프로그램에서 Azure Custom Vision "개체 검색" 기능을 사용 하 여 제공 된 이미지 내에서 사용자 지정 시각적 콘텐츠와 해당 공간 위치를 인식 하는 방법을 알아봅니다.
 
-이 서비스를 사용 하면 개체 이미지를 사용 하 여 기계 학습 모델을 학습 시킬 수 있습니다. Microsoft HoloLens의 카메라 캡처 또는 카메라를 사용 하 여 (VR 용 PC에 연결) 헤드셋에서 제공 하는 것 처럼 학습 된 모델을 사용 하 여 실제 세계에서 유사한 개체를 인식 하 고 해당 위치를 대략적으로 파악할 수 있습니다.
+이 서비스를 사용 하면 개체 이미지를 사용 하 여 기계 학습 모델을 학습 시킬 수 있습니다. 그런 다음 Microsoft HoloLens 카메라 캡처에서 제공 되는 것 처럼 숙련 된 모델을 사용 하 여 실제 세계에서 비슷한 개체를 인식 하 고 해당 위치를 대략적으로 표시 합니다.
 
 ![과정 결과](images/AzureLabs-Lab310-00.png)
 
 **Azure Custom Vision, 개체 검색** 은 개발자가 사용자 지정 이미지 분류자를 빌드할 수 있게 해 주는 Microsoft 서비스입니다. 이러한 분류자는 이미지 자체 내에서 **상자 경계** 를 제공 하 여 새 이미지 내에서 개체를 검색 하는 데 사용할 수 있습니다. 이 서비스는 간단 하 고 사용 하기 쉬운 온라인 포털을 제공 하 여이 프로세스를 간소화 합니다. 자세한 내용은 다음 링크를 방문 하세요.
 
 * [Azure Custom Vision 페이지](/azure/cognitive-services/custom-vision-service/home)
-* [한도 및 할당량](/azure/cognitive-services/custom-vision-service/limits-and-quotas)
+* [제한 및 할당량](/azure/cognitive-services/custom-vision-service/limits-and-quotas)
 
 이 과정이 완료 되 면 다음을 수행할 수 있는 혼합 현실 응용 프로그램이 만들어집니다.
 
@@ -63,7 +63,7 @@ ms.locfileid: "104730350"
 이 과정에는 다음 하드웨어 및 소프트웨어를 권장 합니다.
 
 - 개발 PC
-- [개발자 모드를 사용 하는 Windows 10이 하 버전의 작성자 업데이트 (또는 이상)](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- [개발자 모드를 사용 하도록 설정 된 Windows 10 Fall Creators Update 이상](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
 - [최신 Windows 10 SDK](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
 - [Unity 2017.4 LTS](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
 - [Visual Studio 2017](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
@@ -74,10 +74,10 @@ ms.locfileid: "104730350"
 ## <a name="before-you-start"></a>시작하기 전에
 
 1.  이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.)
-2.  HoloLens를 설정 하 고 테스트 합니다. HoloLens를 설정 하는 데 지원이 필요한 경우 [hololens 설정 문서를 방문](/hololens/hololens-setup)해야 합니다. 
+2.  HoloLens를 설정 하 고 테스트 합니다. HoloLens 설정에 대 한 지원이 필요한 경우 [HoloLens 설치 문서를 방문 해야](/hololens/hololens-setup)합니다. 
 3.  새 HoloLens 앱 개발을 시작할 때 보정 및 센서 조정을 수행 하는 것이 좋습니다 (경우에 따라 각 사용자에 대해 해당 작업을 수행 하는 데 도움이 될 수 있음). 
 
-보정에 대 한 도움말을 보려면 [HoloLens 보정 문서에](/hololens/hololens-calibration#hololens-2)대 한 다음 링크를 참조 하세요.
+보정에 대 한 도움말을 보려면 [HoloLens 보정 문서에 대 한 링크를](/hololens/hololens-calibration#hololens-2)참조 하세요.
 
 센서 조정에 대 한 도움말을 보려면 [HoloLens 센서 조정 문서에 대 한 링크를](/hololens/hololens-updates)참조 하세요.
 
@@ -101,7 +101,7 @@ ms.locfileid: "104730350"
 
     ![](images/AzureLabs-Lab310-03.png)
 
-6.  조건에 동의한 경우 이제 *내 프로젝트* 섹션에 있습니다. **새 프로젝트** 를 클릭 합니다.
+6.  조건에 동의한 경우 이제 *내 프로젝트* 섹션에 있습니다. **새 Project** 을 클릭 합니다.
 
     ![](images/AzureLabs-Lab310-04.png)
 
@@ -118,7 +118,7 @@ ms.locfileid: "104730350"
         > [!NOTE]
         > [Azure 리소스 그룹에 대 한 자세한 내용을 보려면 관련 문서를 탐색](/azure/azure-resource-manager/resource-group-portal) 하세요.
 
-    4.  **프로젝트 형식을** **개체 검색 (미리 보기)** 으로 설정 합니다.
+    4.  **Project 유형을** **개체 검색 (미리 보기)** 으로 설정 합니다.
 
 8.  작업이 완료 되 면 **프로젝트 만들기** 를 클릭 하면 Custom Vision Service 프로젝트 페이지로 리디렉션됩니다.
 
@@ -154,7 +154,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
     ![](images/AzureLabs-Lab310-10.png)
 
-6.  프로젝트를 학습 하려는 모든 이미지를 선택 했으면 **파일 업로드** 를 누릅니다. 파일이 업로드 되기 시작 합니다. 업로드를 확인 한 후 **완료** 를 클릭 합니다.
+6.  프로젝트를 학습 하려는 모든 이미지를 선택 했으면 **업로드 파일** 을 누릅니다. 파일이 업로드 되기 시작 합니다. 업로드를 확인 한 후 **완료** 를 클릭 합니다.
 
     ![](images/AzureLabs-Lab310-11.png)
 
@@ -166,84 +166,84 @@ Custom Vision 프로젝트를 학습 하려면:
 
     ![](images/AzureLabs-Lab310-13.png) 
 
-9. 이미지 내에서 개체를 선택 하 고 나 서 작은 프롬프트가 표시 되 면 *지역 태그를 추가* 하 라는 메시지가 표시 됩니다. 위의 예제에서 이전에 만든 태그 (' 컵 ')를 선택 하거나 태그를 더 추가 하는 경우에 해당 태그를 입력 하 고 **+ (더하기)** 단추를 클릭 합니다.
+9. 이미지 내에서 개체를 선택한 후 작은 프롬프트에서 *지역 태그* 를 추가하라는 메시지가 표시됩니다. 이전에 만든 태그(위의 예제에서는 'Cup')를 선택하거나, 더 많은 태그를 추가하는 경우 에 해당 태그를 입력하고 **+ (더하기)** 단추를 클릭합니다.
 
     ![](images/AzureLabs-Lab310-14.png) 
 
-10. 다음 이미지에 태그를 표시 하려면 블레이드의 오른쪽에 있는 화살표를 클릭 하거나 블레이드의 오른쪽 위 모퉁이에 있는 **X** 를 클릭 하 여 태그 블레이드를 닫은 후 다음 이미지를 클릭 하면 됩니다. 다음 이미지가 준비 되 면 동일한 절차를 반복 합니다. 모든 이미지에 태그를 지정 하기 전까지 업로드 한 모든 이미지에 대해이 작업을 수행 합니다. 
+10. 다음 이미지에 태그를 추가하려면 블레이드 오른쪽에 있는 화살표를 클릭하거나 블레이드의 오른쪽 위 모서리에 있는 **X를** 클릭하여 태그 블레이드를 닫은 후 다음 이미지를 클릭합니다. 다음 이미지가 준비되면 동일한 절차를 반복합니다. 모두 태그가 지정될 때까지 업로드한 모든 이미지에 대해 이 작업을 수행합니다. 
 
     > [!NOTE]
     >  아래 이미지와 같이 동일한 이미지에서 여러 개체를 선택할 수 있습니다. 
     > 
     > ![](images/AzureLabs-Lab310-15.png)
 
-11. 태그를 모두 지정 했으면 화면 왼쪽에 있는 **태그가 지정** 된 단추를 클릭 하 여 태그가 지정 된 이미지를 표시 합니다. 
+11. 모두 태그가 지정되면 화면 왼쪽에 있는 **태그가 지정된 단추를** 클릭하여 태그가 지정된 이미지를 표시합니다. 
 
     ![](images/AzureLabs-Lab310-16.png)
 
-12. 이제 서비스를 학습할 준비가 되었습니다. **학습** 단추를 클릭 하면 첫 번째 학습 반복이 시작 됩니다.
+12. 이제 서비스를 학습할 준비가 되었습니다. **학습** 단추를 클릭하면 첫 번째 학습 반복이 시작됩니다.
 
     ![](images/AzureLabs-Lab310-17.png)
 
     ![](images/AzureLabs-Lab310-18.png)
 
-13. 빌드된 후에는 **기본** 및 **예측 URL** 이라는 두 개의 단추를 볼 수 있습니다. 먼저 **기본 설정** 을 클릭 한 다음 **예측 URL** 을 클릭 합니다.
+13. 빌드되면 **기본값 만들기** 및 **예측 URL** 이라는 두 개의 단추를 볼 수 있습니다. **기본값으로 지정을** 먼저 클릭한 다음 **예측 URL** 을 클릭합니다.
 
     ![](images/AzureLabs-Lab310-19.png)
 
     > [!NOTE] 
-    > 이에서 제공 하는 끝점은 기본값으로 표시 된 *반복* 에 대해 설정 됩니다. 따라서 나중에 새 *반복* 을 만들고 기본값으로 업데이트할 경우에는 코드를 변경할 필요가 없습니다.
+    > 이 에서 제공되는 엔드포인트는 기본값으로 표시된 *반복으로* 설정됩니다. 따라서 나중에 새 *반복을* 만들고 기본값으로 업데이트하는 경우 코드를 변경할 필요가 없습니다.
 
-14. **예측 URL** 을 클릭 하면 *메모장* 을 열고, 코드에서 나중에 필요할 때 검색할 수 있도록 **url** ( **예측 엔드포인트** 라고도 함) 및 **서비스 예측 키** 를 복사 하 여 붙여넣습니다.
+14. **예측 URL을** 클릭한 후 *메모장* 열고 URL(Prediction-Endpoint라고도  함) 및  **서비스 예측 키** 를 복사하여 붙여넣어 코드의 나중에 필요할 때 검색할 수 있습니다.
 
     ![](images/AzureLabs-Lab310-20.png)
 
-## <a name="chapter-3---set-up-the-unity-project"></a>3 장-Unity 프로젝트 설정
+## <a name="chapter-3---set-up-the-unity-project"></a>3장 - Unity 프로젝트 설정
 
-다음은 혼합 현실를 사용 하 여 개발 하기 위한 일반적인 설정으로, 다른 프로젝트에 적합 한 템플릿입니다.
+다음은 혼합 현실로 개발하기 위한 일반적인 설정이며, 따라서 다른 프로젝트에 적합한 템플릿입니다.
 
-1.  **Unity** 를 열고 **새로 만들기** 를 클릭 합니다.
+1.  **Unity를** 열고 **새로** 만들기를 클릭합니다.
 
     ![](images/AzureLabs-Lab310-21.png)
 
-2.  이제 Unity 프로젝트 이름을 제공 해야 합니다. **CustomVisionObjDetection** 을 삽입 합니다. 프로젝트 형식이 **3d** 로 설정 되었는지 확인 하 고 위치를 적절 한 **위치** 에 적절 하 게 설정 합니다 (루트 디렉터리와 더 잘 됨). 그런 다음 **프로젝트 만들기** 를 클릭 합니다.
+2.  이제 Unity 프로젝트 이름을 제공해야 합니다. **CustomVisionObjDetection 을** 삽입합니다. 프로젝트 형식이 **3D로** 설정되어 있는지 확인하고 **위치를** 적절한 위치로 설정합니다(루트 디렉터리에 가까울수록 좋습니다). 그런 다음 **프로젝트 만들기를** 클릭합니다.
 
     ![](images/AzureLabs-Lab310-22.png)
 
-3.  Unity를 연 상태에서 기본 **스크립트 편집기** 가 **Visual Studio** 로 설정 되어 있는지 확인 하는 것이 좋습니다. * >  *기본 설정* 편집* 으로 이동한 다음 새 창에서 **외부 도구** 로 이동 합니다. **외부 스크립트 편집기** 를 **Visual Studio** 로 변경 합니다. **기본 설정** 창을 닫습니다.
+3.  Unity가 열려 있는 경우 기본 **스크립트 편집기가** **Visual Studio** 로 설정되어 있는지 확인하는 것이 좋습니다. 기본 * >  *설정* *편집으로** 이동한 다음 새 창에서 **외부 도구** 로 이동합니다. **외부 스크립트 편집기를** **Visual Studio** 변경합니다. 기본 **설정** 창을 닫습니다.
 
     ![](images/AzureLabs-Lab310-23.png)
 
-4.  그런 다음 **파일 > 빌드 설정** 으로 이동 하 고 **플랫폼** 을 *유니버설 Windows 플랫폼* 로 전환한 다음, **플랫폼 전환** 단추를 클릭 합니다.
+4.  다음으로 **파일 > 빌드 설정** 이동하여 **플랫폼을** 유니버설 *Windows 플랫폼* 으로 **전환한** 다음 플랫폼 전환 단추를 클릭합니다.
 
     ![](images/AzureLabs-Lab310-24.png)
 
-5.  동일한 **빌드 설정** 창에서 다음이 설정 되어 있는지 확인 합니다.
+5.  동일한 **빌드 설정** 창에서 다음이 설정되어 있는지 확인합니다.
 
-    1.  **대상 장치가** **HoloLens** 로 설정 됨        
-    2.  **빌드 형식이** **D3D** 로 설정 됩니다.
-    3.  **SDK** 가 **최신 설치** 로 설정 됨
-    4.  **Visual Studio 버전이** **최신 설치** 로 설정 됨
-    5.  **빌드 및 실행** 이 **로컬 컴퓨터로** 설정 됨            
-    6.  **빌드 설정** 의 나머지 설정은 지금은 기본값으로 남겨 두어야 합니다.
+    1.  **대상 디바이스가** **HoloLens**        
+    2.  **빌드 유형이** **D3D로** 설정됩니다.
+    3.  **SDK가** **최신 설치로 설정됩니다.**
+    4.  **Visual Studio 버전이** 최신 **설치로 설정됩니다.**
+    5.  **빌드 및 실행이** **로컬 컴퓨터로 설정됩니다.**            
+    6.  **빌드 설정** 나머지 설정은 현재 기본값으로 유지되어야 합니다.
 
         ![](images/AzureLabs-Lab310-25.png)
 
-6.  동일한 **빌드 설정** 창에서 **플레이어 설정** 단추를 클릭 하면 **검사기** 가 있는 공간에서 관련 패널이 열립니다.
+6.  동일한 **빌드 설정** 창에서 **플레이어 설정** 단추를 클릭하면 **Inspector가** 있는 공간에서 관련 패널이 열립니다.
 
-7. 이 패널에서 몇 가지 설정을 확인 해야 합니다.
+7. 이 패널에서 몇 가지 설정을 확인해야 합니다.
 
-    1.  **기타 설정** 탭에서 다음을 수행 합니다.
+    1.  기타 **설정** 탭에서 다음을 수행합니다.
 
-        1.  **Scripting Runtime 버전** 은 **실험적** (.net 4.6 이와 동일) 이어야 하며,이 경우 편집기를 다시 시작 해야 합니다.
+        1.  **런타임 버전 스크립팅은** **실험적(.NET** 4.6 동등)이어야 하며, 편집기를 다시 시작해야 합니다.
 
-        2. **Scripting 백엔드** 는 **.net** 이어야 합니다.
+        2. **스크립팅 백 엔드는** **.NET** 이어야 합니다.
 
-        3. **API 호환성 수준은** **.net 4.6** 이어야 합니다.
+        3. **API 호환성 수준은** **.NET 4.6이어야** 합니다.
 
             ![](images/AzureLabs-Lab310-26.png)
 
-    2.  **게시 설정** 탭의 **기능** 아래에서 다음을 확인 합니다.
+    2.  게시 **설정** 탭의 기능 아래에서 **다음을 확인합니다.**
 
         1. **InternetClient**
 
@@ -253,95 +253,95 @@ Custom Vision 프로젝트를 학습 하려면:
 
             ![](images/AzureLabs-Lab310-27.png) ![](images/AzureLabs-Lab310-28.png)
 
-    3.  패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음), **지원 되는 틱 가상 현실**, **Windows Mixed reality SDK** 가 추가 되었는지 확인 합니다.
+    3.  패널의 아래쪽에 있는 **XR 설정(게시** **설정** 아래에 있음)에서 가상 **현실 지원됨** 을 선택하고 **Windows Mixed Reality SDK가** 추가되었는지 확인합니다.
 
         ![](images/AzureLabs-Lab310-29.png)
 
-8.  **빌드 설정** 으로 돌아가서 *Unity C \# 프로젝트가* 더 이상 회색으로 표시 되지 않습니다 .이 옆의 확인란을 선택 합니다.
+8.  빌드 **설정,** *Unity C \# 프로젝트는* 더 이상 회색으로 표시됩니다. 옆에 있는 확인란을 선택합니다.
 
 9.  **빌드 설정** 창을 닫습니다.
 
-10. **편집기** 에서   >  **프로젝트 설정** 편집  >  **그래픽** 을 클릭 합니다.
+10. **편집기에서** 그래픽 Project 설정   >    >  **편집을** 클릭합니다.
 
     ![](images/AzureLabs-Lab310-30.png)
 
-11. **검사기 패널** 에서 *그래픽 설정이* 열립니다. **항상 셰이더 포함** 이라는 배열이 표시 될 때까지 아래로 스크롤합니다. **크기** 변수를 1 씩 늘려서 슬롯을 추가 합니다 .이 예제에서는 8 이므로 9로 만들었습니다. 새 슬롯은 아래와 같이 배열의 마지막 위치에 표시 됩니다.
+11. **검사기 패널에서** *그래픽 설정* 열립니다. **상시 셰이더 포함이라는** 배열이 표시될 때까지 Scroll down. **Size** 변수를 1씩 늘려 슬롯을 추가합니다(이 예제에서는 8이므로 9로 설정). 아래와 같이 배열의 마지막 위치에 새 슬롯이 표시됩니다.
 
     ![](images/AzureLabs-Lab310-31.png)
 
-12. 슬롯에서 슬롯 옆의 작은 대상 원을 클릭 하 여 셰이더 목록을 엽니다. **레거시 셰이더/투명/확산** 셰이더를 찾아 두 번 클릭 합니다. 
+12. 슬롯에서 슬롯 옆에 있는 작은 대상 원을 클릭하여 셰이더 목록을 엽니다. **레거시 셰이더/투명/확산** 셰이더를 찾아 두 번 클릭합니다. 
 
     ![](images/AzureLabs-Lab310-32.png)
 
-## <a name="chapter-4---importing-the-customvisionobjdetection-unity-package"></a>4 장-CustomVisionObjDetection Unity 패키지 가져오기
+## <a name="chapter-4---importing-the-customvisionobjdetection-unity-package"></a>4장 - CustomVisionObjDetection Unity 패키지 가져오기
 
-이 과정에서는 **310. unitypackage** 라는 Unity 자산 패키지가 제공 됩니다. 
+이 과정에서는 **Azure-MR-310.unitypackage라는 Unity** 자산 패키지가 제공됩니다. 
 
-> 잠깐만 전체 장면을 포함 하 여 Unity에서 지원 되는 모든 개체를 **unitypackage** 파일로 패키지 하 고 다른 프로젝트에서 내보내거나 가져올 수 있습니다. 서로 다른 **Unity 프로젝트** 간에 자산을 이동 하는 가장 안전 하 고 가장 효율적인 방법입니다.
+> [TIP] 전체 장면을 포함하여 Unity에서 지원하는 모든 개체는 **.unitypackage** 파일로 패키지하고 다른 프로젝트에서 내보내고 가져올 수 있습니다. 서로 다른 **Unity 프로젝트** 간에 자산을 이동하는 가장 안전하고 효율적인 방법입니다.
 
-[여기에서 다운로드 해야 하는 Azure-MR-310 패키지](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20310%20-%20Object%20detection/Azure-MR-310.unitypackage)를 찾을 수 있습니다.
+[여기에서 다운로드해야 하는 Azure-MR-310 패키지를](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20310%20-%20Object%20detection/Azure-MR-310.unitypackage)찾을 수 있습니다.
 
-1.  앞의 Unity 대시보드를 사용 하 여 화면 위쪽의 메뉴에서 **자산** 을 클릭 하 고 **패키지 가져오기 > 사용자 지정 패키지** 를 클릭 합니다.
+1.  Unity 대시보드를 앞에 두고 화면 맨 위에 있는 메뉴에서 **자산을** 클릭한 다음 패키지 **가져오기 > 사용자 지정 패키지를** 클릭합니다.
 
     ![](images/AzureLabs-Lab310-33.png)
 
-2.  파일 선택기를 사용 하 여 **310. unitypackage** 패키지를 선택 하 고 **열기** 를 클릭 합니다. 이 자산의 구성 요소 목록이 표시 됩니다. **가져오기** 단추를 클릭 하 여 가져오기를 확인 합니다.
+2.  파일 선택기를 사용하여 **Azure-MR-310.unitypackage** 패키지를 선택하고 **열기를** 클릭합니다. 이 자산에 대한 구성 요소 목록이 표시됩니다. 가져오기 단추를 클릭하여 **가져오기를** 확인합니다.
 
     ![](images/AzureLabs-Lab310-34.png)
 
-3.  가져오기가 완료 되 면 패키지의 폴더가 **자산** 폴더에 추가 된 것을 알 수 있습니다. 이러한 종류의 폴더 구조는 Unity 프로젝트에 일반적입니다.
+3.  가져오기가 완료되면 패키지의 폴더가 Assets 폴더에 추가된 것을 알 수 **있습니다.** 이러한 종류의 폴더 구조는 Unity 프로젝트에 일반적입니다.
 
     ![](images/AzureLabs-Lab310-35.png)
 
-    1.  **재질** 폴더는 **응시 커서** 에서 사용 하는 자료를 포함 합니다. 
+    1.  **Materials** 폴더에는 응시 커서 에서 사용하는 재질이 포함되어 **있습니다.** 
 
-    2.  **플러그 인** 폴더는 코드에서 서비스 웹 응답을 deserialize 하는 데 사용 하는 newtonsoft.json DLL을 포함 합니다. 폴더 및 하위 폴더에 포함 된 두 가지 다른 버전은 Unity 편집기와 UWP 빌드 모두에서 라이브러리를 사용 하 고 작성할 수 있도록 하는 데 필요 합니다. 
+    2.  **플러그 인** 폴더에는 코드에서 서비스 웹 응답을 역직렬화하는 데 사용하는 Newtonsoft DLL이 포함되어 있습니다. Unity 편집기와 UWP 빌드 모두에서 라이브러리를 사용하고 빌드할 수 있도록 하려면 폴더와 하위 폴더에 포함된 두 가지(2) 서로 다른 버전이 필요합니다. 
 
-    3.  **Prefabs** 폴더에는 장면에 포함 된 Prefabs이 포함 됩니다. 해당 항목은 다음과 같습니다.
+    3.  **Prefabs** 폴더는 장면에 포함된 프리팹을 포함합니다. 해당 항목은 다음과 같습니다.
 
-        1.  응용 프로그램에서 사용 되는 **GazeCursor** 입니다. 는 SpatialMapping prefab와 함께 작동 하 여 물리적 개체의 맨 위에 장면에 배치할 수 있습니다.
-        2.  **레이블**-필요할 때 장면에 개체 태그를 표시 하는 데 사용 되는 UI 개체입니다.
-        3.  **SpatialMapping** 는 응용 프로그램에서 Microsoft HoloLens의 공간 추적을 사용 하 여 가상 맵 만들기를 사용할 수 있도록 하는 개체입니다.
+        1.  애플리케이션에서 사용되는 커서인 **GazeCursor입니다.** 실제 개체 위에 장면에 배치할 수 있도록 SpatialMapping 프리팹과 함께 작동합니다.
+        2.  **Label**- 필요한 경우 장면에 개체 태그를 표시하는 데 사용되는 UI 개체입니다.
+        3.  애플리케이션에서 Microsoft HoloLens 공간 추적을 사용하여 가상 맵을 만들 수 있도록 하는 개체인 **SpatialMapping** 입니다.
 
-    4.  이 과정의 미리 작성 된 장면을 현재 포함 하는 **장면** 폴더입니다.
+    4.  현재 이 과정의 미리 빌드된 장면을 포함하는 **Scenes** 폴더입니다.
 
-4.  **프로젝트 패널** 에서 **장면** 폴더를 열고 **ObjDetectionScene** 를 두 번 클릭 하 여이 과정에 사용할 장면을 로드 합니다.
+4.  **Project 패널에서** **Scenes** 폴더를 열고 **ObjDetectionScene** 을 두 번 클릭하여 이 과정에 사용할 장면을 로드합니다.
 
     ![](images/AzureLabs-Lab310-36.png)
 
     > [!NOTE] 
-    >  **코드는 포함 되지 않으며**,이 과정을 수행 하 여 코드를 작성 합니다.
+    >  **코드가 포함되지 않은 경우** 이 과정을 수행하여 코드를 작성합니다.
 
-## <a name="chapter-5---create-the-customvisionanalyser-class"></a>5 장-CustomVisionAnalyser 클래스 만들기
+## <a name="chapter-5---create-the-customvisionanalyser-class"></a>5장 - CustomVisionAnalyser 클래스를 만듭니다.
 
-이 시점에서 일부 코드를 작성할 준비가 되었습니다. **CustomVisionAnalyser** 클래스로 시작 합니다.
+이 시점에서 일부 코드를 작성할 준비가 된 것입니다. **CustomVisionAnalyser** 클래스로 시작합니다.
 
 > [!NOTE]
-> 아래에 표시 된 코드에서 수행 된 **Custom Vision Service** 호출은 **Custom Vision REST API** 를 사용 하 여 수행 됩니다. 이를 사용 하 여이 API를 구현 하 고 사용 하는 방법을 확인할 수 있습니다 (사용자가 직접 비슷한 항목을 구현 하는 방법을 이해 하는 데 유용). Microsoft는 서비스를 호출 하는 데 사용할 수 있는 **CUSTOM VISION SDK** 를 제공 합니다. 자세한 내용은 [CUSTOM VISION SDK 문서](https://github.com/Microsoft/Cognitive-CustomVision-Windows/)를 참조 하세요.
+> 아래 표시된 코드에서 만든 **Custom Vision 서비스에** 대한 호출은 **Custom Vision REST API** 사용하여 이루어집니다. 이를 통해 이 API를 구현하고 활용하는 방법을 확인할 수 있습니다(비슷한 것을 직접 구현하는 방법을 이해하는 데 유용함). Microsoft는 서비스를 호출하는 데도 사용할 수 있는 **Custom Vision SDK를** 제공합니다. 자세한 내용은 [Custom Vision SDK 문서를 방문하세요.](https://github.com/Microsoft/Cognitive-CustomVision-Windows/)
 
-이 클래스는 다음을 담당 합니다.
+이 클래스는 다음을 담당합니다.
 
-- 캡처된 최신 이미지를 바이트 배열로 로드 하 고 있습니다.
+- 바이트 배열로 캡처된 최신 이미지 로드
 
 - 분석을 위해 바이트 배열을 Azure **Custom Vision Service** 인스턴스로 보냅니다.
 
-- JSON 문자열로 응답을 수신 합니다.
+- 응답을 JSON 문자열로 수신합니다.
 
-- 응답을 deserialize 하 고 결과 **예측** 을 **SceneOrganiser** 클래스에 전달 하 여 응답이 표시 되는 방법을 처리 합니다.
+- 응답을 deserializing하고 결과 **예측을** **SceneOrganiser** 클래스에 전달합니다. 이 클래스는 응답을 표시하는 방법을 처리합니다.
 
-이 클래스를 만들려면:
+이 클래스를 만들려면 다음을 수행합니다.
 
-1.  **프로젝트 패널** 에 있는 **자산 폴더** 를 마우스 오른쪽 단추로 클릭 한 다음 폴더 **만들기** 를 클릭  >  합니다. 폴더 **스크립트** 를 호출 합니다.
+1.  Project 패널에 있는 **자산 폴더** 를 **마우스 오른쪽 단추로** 클릭한 다음 폴더 **만들기를**  >  클릭합니다. 스크립트 폴더를 **호출합니다.**
 
     ![](images/AzureLabs-Lab310-37.png)
 
-2.  새로 만든 폴더를 두 번 클릭 하 여 엽니다.
+2.  새로 만든 폴더를 두 번 클릭하여 엽니다.
 
-3.  폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 ,  >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **CustomVisionAnalyser로 합니다.**
+3.  폴더 내부를 마우스 오른쪽 단추로 클릭한 다음 C 스크립트 **만들기를**  >  **\#** 클릭합니다. 스크립트 이름을 **CustomVisionAnalyser로 지정합니다.**
 
-4.  새 **CustomVisionAnalyser** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
+4.  새 **CustomVisionAnalyser** 스크립트를 두 번 클릭하여 **Visual Studio 엽니다.**
 
-5.  파일의 위쪽에서 참조 되는 다음 네임 스페이스가 있는지 확인 합니다.
+5.  파일 맨 위에 다음 네임스페이스가 참조되어 있는지 확인합니다.
 
     ```csharp
     using Newtonsoft.Json;
@@ -351,7 +351,7 @@ Custom Vision 프로젝트를 학습 하려면:
     using UnityEngine.Networking;
     ```
 
-6.  **CustomVisionAnalyser** 클래스에서 다음 변수를 추가 합니다.
+6.  **CustomVisionAnalyser** 클래스에서 다음 변수를 추가합니다.
 
     ```csharp
         /// <summary>
@@ -376,9 +376,9 @@ Custom Vision 프로젝트를 학습 하려면:
     ```
 
     > [!NOTE]
-    > **서비스 예측 키** 를 **predictionKey** 변수에 삽입 하 고 **예측 끝점** 을 **predictionEndpoint** 변수에 삽입 해야 합니다. 위의 [2 장, 14 단계에서 메모장](#chapter-2---training-your-custom-vision-project)에 복사 했습니다.
+    > **service Prediction-Key를** **predictionKey** 변수에 삽입하고 **Prediction-Endpoint를** **predictionEndpoint** 변수에 삽입해야 합니다. [앞에서 14단계의 2장에서 메모장](#chapter-2---training-your-custom-vision-project)복사했습니다.
 
-7.  이제 initialize **()** 에 대 한 코드를 추가 하 여 인스턴스 변수를 초기화 해야 합니다.
+7.  이제 Instance 변수를 초기화하려면 **Awake()에** 대한 코드를 추가해야 합니다.
 
     ```csharp
         /// <summary>
@@ -457,7 +457,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 9. **Start ()** 및 **Update ()** 메서드를 사용 하지 않으므로 삭제 합니다. 
 
-10.  **Unity** 로 반환 하기 전에 **Visual Studio** 에서 변경 내용을 저장 해야 합니다.
+10.  **Unity** 로 반환 하기 전에 **Visual Studio** 에 변경 내용을 저장 해야 합니다.
 
 > [!IMPORTANT]
 > 앞에서 설명한 것 처럼 오류가 발생 한 것 처럼 보일 수 있는 코드에 대해 걱정 하지 마세요. 추가 클래스를 곧 제공 하면이 문제를 해결할 수 있습니다.
@@ -472,7 +472,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음   >  **C \# 스크립트** 만들기를 클릭 합니다. CustomVisionObjects 스크립트를 호출 **합니다.**
 
-2.  새 **CustomVisionObjects** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
+2.  새 **CustomVisionObjects** 스크립트를 두 번 클릭 하 여 Visual Studio를 사용 하 여 엽니다 **.**
 
 3.  파일의 위쪽에서 참조 되는 다음 네임 스페이스가 있는지 확인 합니다.
 
@@ -618,7 +618,7 @@ Custom Vision 프로젝트를 학습 하려면:
     }
     ```
 
-6.  **Unity** 로 반환 하기 전에 **Visual Studio** 에서 변경 내용을 저장 해야 합니다.
+6.  **Unity** 로 반환 하기 전에 **Visual Studio** 에 변경 내용을 저장 해야 합니다.
 
 ## <a name="chapter-7---create-the-spatialmapping-class"></a>7 장-SpatialMapping 클래스 만들기
 
@@ -628,7 +628,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음   >  **C \# 스크립트** 만들기를 클릭 합니다. SpatialMapping 스크립트를 호출 **합니다.**
 
-2.  새 **SpatialMapping** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
+2.  새 **SpatialMapping** 스크립트를 두 번 클릭 하 여 Visual Studio를 사용 하 여 엽니다 **.**
 
 3.  **SpatialMapping** 클래스 위에 참조 된 다음 네임 스페이스가 있는지 확인 합니다.
 
@@ -694,7 +694,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 6.  **Update ()** 메서드를 삭제 합니다.
 
-7.  **Unity** 로 반환 하기 전에 **Visual Studio** 에서 변경 내용을 저장 해야 합니다.
+7.  **Unity** 로 반환 하기 전에 **Visual Studio** 에 변경 내용을 저장 해야 합니다.
 
 
 ## <a name="chapter-8---create-the-gazecursor-class"></a>8 장-GazeCursor 클래스 만들기
@@ -705,7 +705,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음   >  **C \# 스크립트** 만들기를 클릭 합니다. **GazeCursor** 스크립트를 호출 합니다.
 
-2.  새 **GazeCursor** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
+2.  새 **GazeCursor** 스크립트를 두 번 클릭 하 여 Visual Studio를 사용 하 여 엽니다 **.**
 
 3.  **GazeCursor** 클래스 위에 참조 된 다음 네임 스페이스가 있는지 확인 합니다.
 
@@ -775,7 +775,7 @@ Custom Vision 프로젝트를 학습 하려면:
     > [!NOTE]
     > **SceneOrganiser** 클래스를 찾을 수 없다는 오류에 대해 걱정 하지 마세요. 다음 챕터에서 만듭니다.
 
-7. **Unity** 로 반환 하기 전에 **Visual Studio** 에서 변경 내용을 저장 해야 합니다.
+7. **Unity** 로 반환 하기 전에 **Visual Studio** 에 변경 내용을 저장 해야 합니다.
 
 ## <a name="chapter-9---create-the-sceneorganiser-class"></a>9 장-SceneOrganiser 클래스 만들기
 
@@ -789,7 +789,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 1.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음   >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **SceneOrganiser** 로 합니다.
 
-2.  새 **SceneOrganiser** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
+2.  새 **SceneOrganiser** 스크립트를 두 번 클릭 하 여 Visual Studio를 사용 하 여 엽니다 **.**
 
 3.  **SceneOrganiser** 클래스 위에 참조 된 다음 네임 스페이스가 있는지 확인 합니다.
 
@@ -905,7 +905,7 @@ Custom Vision 프로젝트를 학습 하려면:
         }
     ```
 
-8.  **FinaliseLabel ()** 메서드를 추가 합니다. 다음을 담당 합니다.
+8.  **FinaliseLabel ()** 메서드를 추가 합니다. IISConfigurator는 다음을 담당합니다.
 
     *   신뢰 수준이 가장 높은 예측의 *태그로* *레이블* 텍스트를 설정 합니다.
     *   이전에 배치 하 고 장면에 레이블을 배치 하 여 쿼드 개체의 *경계 상자* 계산 호출
@@ -988,7 +988,7 @@ Custom Vision 프로젝트를 학습 하려면:
         }
     ```
 
-10. **Unity** 로 반환 하기 전에 **Visual Studio** 에서 변경 내용을 저장 해야 합니다.
+10. **Unity** 로 반환 하기 전에 **Visual Studio** 에 변경 내용을 저장 해야 합니다.
 
     > [!IMPORTANT]
     > 계속 하기 전에 **CustomVisionAnalyser** 클래스를 열고 **AnalyseLastImageCaptured ()** 메서드 내에서 다음 줄의 *주석 처리를 제거* 합니다.
@@ -1026,7 +1026,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 2.  폴더 내부를 마우스 오른쪽 단추로 클릭 한 다음 ,  >  **C \# 스크립트** 만들기를 클릭 합니다. 스크립트 이름을 **ImageCapture** 로 합니다.
 
-3.  새 **ImageCapture** 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
+3.  새 **ImageCapture** 스크립트를 두 번 클릭 하 여 Visual Studio를 사용 하 여 엽니다 **.**
 
 4.  파일의 맨 위에 있는 네임 스페이스를 다음으로 바꿉니다.
 
@@ -1228,7 +1228,7 @@ Custom Vision 프로젝트를 학습 하려면:
         }
     ```
 
-10. **Unity** 로 반환 하기 전에 **Visual Studio** 에서 변경 내용을 저장 해야 합니다.
+10. **Unity** 로 반환 하기 전에 **Visual Studio** 에 변경 내용을 저장 해야 합니다.
 
 ## <a name="chapter-11---setting-up-the-scripts-in-the-scene"></a>11 장-장면에서 스크립트 설정
 
@@ -1239,7 +1239,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
     ![](images/AzureLabs-Lab310-38.png)
 
-3.  아래 이미지에 표시 된 것 처럼 **프로젝트 패널** 에서 **Prefabs 폴더** 를 열고, Prefab **label** 을 *기본 카메라* 에 방금 추가한 **SceneOrganiser** 스크립트의 *레이블* 빈 참조 대상 입력 영역으로 끌어 옵니다.
+3.  아래 이미지에 표시 된 것 처럼 **Project 패널** 에서 **Prefabs 폴더** 를 열고 prefab **label** 을 방금 *기본 카메라* 에 추가한 **SceneOrganiser** 스크립트의 *레이블* 빈 참조 대상 입력 영역으로 끕니다.
 
     ![](images/AzureLabs-Lab310-39.png)
 
@@ -1257,7 +1257,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 ## <a name="chapter-12---before-building"></a>12 장-빌드하기 전
 
-응용 프로그램에 대 한 철저 한 테스트를 수행 하려면 Microsoft HoloLens로 테스트용으로 로드 해야 합니다.
+응용 프로그램에 대 한 철저 한 테스트를 수행 하려면 Microsoft HoloLens에 테스트용으로 로드 해야 합니다.
 
 이렇게 하려면 먼저 다음을 확인 해야 합니다.
 
@@ -1274,7 +1274,7 @@ Custom Vision 프로젝트를 학습 하려면:
 
 이제 Microsoft HoloLens에 배포할 수 있는 UWP 솔루션으로 응용 프로그램을 빌드할 준비가 되었습니다. 빌드 프로세스를 시작 하려면 다음을 수행 합니다.
 
-1.  **파일 > 빌드 설정** 으로 이동 합니다.
+1.  **파일 > 빌드 설정** 로 이동 합니다.
 
 2.  Tick **Unity C \# 프로젝트**.
 
@@ -1288,9 +1288,9 @@ Custom Vision 프로젝트를 학습 하려면:
 
 6.  Unity가 빌드를 완료 하면 (시간이 걸릴 수 있음) 빌드 위치에서 **파일 탐색기** 창이 열립니다. (작업 표시줄은 항상 창 위에 표시 되는 것은 아니지만 새 창 추가를 알려 줍니다.)
 
-7.  Microsoft HoloLens에 배포 하려면 해당 장치의 IP 주소가 필요 하며 (원격 배포의 경우) **개발자 모드가** 설정 되어 있는지도 확인 해야 합니다. 가상 하드 디스크 파일에 대한 중요 정보를 제공하려면
+7.  Microsoft HoloLens에 배포 하려면 해당 장치의 IP 주소가 필요 하며 (원격 배포의 경우) **개발자 모드가** 설정 되어 있는지도 확인 해야 합니다. 이렇게 하려면 다음을 수행합니다.
 
-    1.  HoloLens를 입고 하는 동안 **설정을** 엽니다.
+    1.  HoloLens를 입고 **설정** 를 엽니다.
 
     2.  **네트워크 & 인터넷**  >  **wi-fi**  >  **고급 옵션** 으로 이동 합니다.
 
@@ -1300,17 +1300,17 @@ Custom Vision 프로젝트를 학습 하려면:
 
     5.  에서 **개발자 모드** *를* 설정 합니다.
 
-8.  새 Unity 빌드 ( **앱** 폴더)로 이동 하 여 **Visual Studio** 에서 솔루션 파일을 엽니다.
+8.  새 Unity 빌드 ( **앱** 폴더)로 이동 하 고 **Visual Studio** 를 사용 하 여 솔루션 파일을 엽니다.
 
 9.  솔루션 구성에서 **디버그** 를 선택 합니다.
 
-10. 솔루션 플랫폼에서 **x86, 원격 컴퓨터** 를 선택 합니다. 원격 장치의 **IP 주소** (이 경우에는 기록한 Microsoft HoloLens)를 삽입 하 라는 메시지가 표시 됩니다.
+10. 솔루션 플랫폼에서 **x86, 원격 컴퓨터** 를 선택 합니다. 원격 장치의 **IP 주소** (이 경우에는 Microsoft HoloLens)를 삽입 하 라는 메시지가 표시 됩니다.
 
     ![](images/AzureLabs-Lab310-43.png)
 
-11. **빌드** 메뉴로 이동 하 여 **솔루션 배포** 를 클릭 하 여 응용 프로그램을 HoloLens로 테스트용으로 로드.
+11. **빌드** 메뉴로 이동 하 여 **솔루션 배포** 를 클릭 하 여 응용 프로그램을 HoloLens 테스트용으로 로드.
 
-12. 이제 앱이 Microsoft HoloLens의 설치 된 앱 목록에 표시 되어 시작 될 준비가 되었습니다.
+12. 이제 앱이 Microsoft HoloLens에 설치 된 앱 목록에 표시 되 고, 시작할 준비가 되었습니다!
 
 ### <a name="to-use-the-application"></a>응용 프로그램을 사용 하려면:
 
@@ -1321,7 +1321,7 @@ Custom Vision 프로젝트를 학습 하려면:
 > 사진을 캡처하여 서비스로 보낼 때마다 서비스 페이지로 돌아가서 새로 캡처한 이미지를 사용 하 여 서비스를 다시 학습 수 있습니다. 처음에는 *경계 상자* 를 수정 하 여 보다 정확 하 고 서비스를 다시 학습 하는 것도 좋습니다.
 
 > [!NOTE]
-> Microsoft HoloLens 센서 및/또는 Unity의 SpatialTrackingComponent가 실제 개체를 기준으로 적절 한 colliders를 배치 하지 못할 때 배치 된 레이블 텍스트가 개체 근처에 나타나지 않을 수 있습니다. 해당 하는 경우 다른 화면에서 응용 프로그램을 사용 하십시오.
+> Microsoft HoloLens 센서 및/또는 Unity의 SpatialTrackingComponent가 실제 개체를 기준으로 적절 한 colliders를 배치 하지 못할 때 배치 된 레이블 텍스트가 개체 근처에 표시 되지 않을 수 있습니다. 해당 하는 경우 다른 화면에서 응용 프로그램을 사용 하십시오.
 
 ## <a name="your-custom-vision-object-detection-application"></a>Custom Vision, 개체 검색 응용 프로그램
 

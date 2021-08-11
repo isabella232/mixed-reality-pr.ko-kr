@@ -6,25 +6,25 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Mixed Reality, 컨트롤, 상호 작용, ui, ux, 셰이더, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 시각적 효과
-ms.openlocfilehash: 9a60c5065ddb5bcf410bb43b318575da50f7ccf8
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: dcedd7ef0f41de2cbbad623a192abda63588b5691407397db229ef7796e6926e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600182"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207404"
 ---
 # <a name="shader"></a>셰이더
 
 ![셰이더](images/UX_Hero_StandardShader.jpg)
 
-홀로그램 개체는 실제 환경에서 실제 개체와 혼합되므로 사용자에게 시각적 신호를 제공하는 것이 중요합니다. Mixed Reality 도구 키트 표준 셰이더에서는 홀로그램에 사용할 다양한 유형의 시각적 효과를 제공합니다. 음영 시스템은 단일 유연한 셰이더를 사용하여 Unity의 표준 셰이더와 비슷한 시각적 개체를 구현합니다. 셰이더가 [Fluent Design 시스템 원칙을](https://www.microsoft.com/design/fluent/#/) 구현하고 혼합 현실 디바이스에서 계속 수행됩니다.
+홀로그램 개체는 실제 환경에서 실제 개체와 혼합되므로 사용자에게 시각적 신호를 제공하는 것이 중요합니다. Mixed Reality Toolkit 표준 셰이더에서는 홀로그램에 사용할 다양한 유형의 시각적 효과를 제공합니다. 음영 시스템은 단일 유연한 셰이더를 사용하여 Unity의 표준 셰이더와 비슷한 시각적 개체를 구현합니다. 셰이더가 [Fluent Design 시스템 원칙을](https://www.microsoft.com/design/fluent/#/) 구현하고 혼합 현실 디바이스에서 여전히 성과를 유지합니다.
 <br>
 
 ## <a name="examples-of-visual-effects-using-mrtk-mixed-reality-toolkit-standard-shader"></a>MRTK(Mixed Reality Toolkit) 표준 셰이더를 사용하는 시각적 효과의 예 
 :::row:::
     :::column:::
        ![이동](images/UX_Button_Affordance_ProximityLight.jpg)<br>
-       **근접 광원**<br>
+       **근접 조명**<br>
     :::column-end:::
     :::column:::
        ![회전](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
@@ -44,7 +44,7 @@ ms.locfileid: "110600182"
 
 ---
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

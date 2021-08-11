@@ -6,12 +6,12 @@ ms.author: v-vtieto
 ms.date: 07/26/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, 증강 현실, 가상 현실, 혼합 현실 헤드셋, 학습, 자습서, 시작, 홀로그램 원격, 데스크톱, 미리 보기
-ms.openlocfilehash: 6eb3b9e9fe8811ab4666ef1beda0e48668bedbe6
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 1b20590429b7df209e805ed8e94de5a6010bdbb609edc10fc5854cd4df86f64c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757410"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217119"
 ---
 # <a name="holographic-remoting-overview"></a>홀로그램 Remoting 개요
 

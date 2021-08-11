@@ -1,44 +1,44 @@
 ---
-title: HoloLens (첫 번째 gen) 및 Azure 303-자연어 이해 (LUIS)
-description: 이 과정을 완료 하 여 혼합 현실 응용 프로그램 내에서 Azure LUIS (Language Understanding 인텔리전스 서비스)를 구현 하는 방법을 알아보세요.
+title: HoloLens(1세대) 및 Azure 303 - LUIS(자연어 이해)
+description: 이 과정을 완료하여 혼합 현실 애플리케이션 내에서 Azure LUIS(Language Understanding Intelligence Service)를 구현하는 방법을 알아봅니다.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 언어 이해 인텔리전스 서비스, luis, hololens, 몰입 형, vr, Windows 10, Visual Studio
-ms.openlocfilehash: 663ac44dbf15ce2db63d7ffe0ecc605d3555857f
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+keywords: azure, mixed reality, academy, unity, tutorial, api, language understanding Intelligence Service, luis, hololens, immersive, vr, Windows 10, Visual Studio
+ms.openlocfilehash: 443b5f2c186fbbb0a3e979b48ccc20b4c3d3b4f0bd9c93950e27e1f86d610c07
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730560"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115218243"
 ---
-# <a name="hololens-1st-gen-and-azure-303-natural-language-understanding-luis"></a>HoloLens (첫 번째 gen) 및 Azure 303: 자연어 이해 (LUIS)
+# <a name="hololens-1st-gen-and-azure-303-natural-language-understanding-luis"></a>HoloLens(1세대) 및 Azure 303: LUIS(자연어 이해)
 
 <br>
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2 위해 개발하는 방법을 보여 주는 새로운 자습서 시리즈가 나중에 게시될 예정입니다.  이 알림은 해당 자습서가 게시될 때 해당 자습서에 대한 링크로 업데이트됩니다.
 
 <br>
 
-이 과정에서는 Language Understanding API와 함께 Azure Cognitive Services를 사용 하 여 혼합 현실 응용 프로그램에 Language Understanding를 통합 하는 방법에 대해 설명 합니다.
+이 과정에서는 Language Understanding API와 함께 Azure Cognitive Services 사용하여 혼합 현실 애플리케이션에 Language Understanding 통합하는 방법에 대해 알아봅니다.
 
 ![랩 결과](images/AzureLabs-Lab3-000.png)
 
-*LUIS (Language Understanding)* 는 응용 프로그램에서 사용자가 원하는 항목을 자신의 단어로 추출 하는 등 사용자 입력에서 의미를 유지할 수 있는 기능을 제공 하는 Microsoft Azure 서비스입니다. 이는 입력 정보를 이해 하 고 학습 한 다음 상세 하 고 관련 된 정보를 사용 하 여 회신할 수 있는 기계 학습을 통해 이루어집니다. 자세한 내용은 [Azure Language Understanding (LUIS) 페이지](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/)를 참조 하세요.
+*LUIS(Language Understanding)는* 사용자가 원하는 것을 자신의 단어로 추출하는 것과 같이 사용자 입력에서 의미를 만들 수 있는 기능을 애플리케이션에 제공하는 Microsoft Azure 서비스입니다. 이는 입력 정보를 이해하고 학습한 다음, 자세한 관련 정보로 회신할 수 있는 기계 학습을 통해 달성됩니다. 자세한 내용은 AZURE [LUIS(Language Understanding) 페이지를 방문하세요.](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/)
 
-이 과정을 완료 하면 다음과 같은 작업을 수행할 수 있는 혼합 현실 모던 헤드셋 응용 프로그램이 만들어집니다.
+이 과정을 완료하면 다음을 수행할 수 있는 혼합 현실 몰입형 헤드셋 애플리케이션이 있습니다.
 
-1.  몰입 형 헤드셋에 연결 된 마이크를 사용 하 여 사용자 입력 음성을 캡처합니다. 
-2.  캡처된 받아쓰기를 *Azure Language Understanding Intelligent Service* (*LUIS*)로 보냅니다. 
-3.  LUIS은 전송 정보에서 의미를 추출 하 여 분석 하 고 사용자의 요청 의도를 확인 하려고 시도 합니다.
+1.  몰입형 헤드셋에 연결된 마이크를 사용하여 사용자 입력 음성을 캡처합니다. 
+2.  캡처된 받아쓰기 를 *Azure Language Understanding Intelligent Service(* *LUIS)로* 보냅니다. 
+3.  LUIS가 분석될 보내기 정보에서 의미를 추출하고 사용자 요청의 의도를 확인하도록 합니다.
 
-개발에는 사용자가 음성 및/또는 응시를 사용 하 여 장면의 개체 크기와 색을 변경할 수 있는 앱을 만드는 작업이 포함 됩니다. 동작 컨트롤러의 사용은 다루지 않습니다.
+개발에는 사용자가 음성 및/또는 응시를 사용하여 장면에 있는 개체의 크기와 색을 변경할 수 있는 앱 만들기가 포함됩니다. 모션 컨트롤러의 사용은 다루지 않습니다.
 
-응용 프로그램에서 결과를 디자인과 통합 하는 방법을 사용자가 결정 합니다. 이 과정은 Azure 서비스를 Unity 프로젝트와 통합 하는 방법을 배울 수 있도록 설계 되었습니다. 이 과정에서 얻은 지식을 사용 하 여 혼합 현실 응용 프로그램을 개선 하는 것은 사용자의 작업입니다.
+애플리케이션에서 결과를 디자인과 통합하는 방법은 사용자 에게 달려 있습니다. 이 과정은 Unity Project Azure 서비스를 통합하는 방법을 교육하기 위해 고안되었습니다. 이 과정에서 얻은 지식을 활용하여 혼합 현실 애플리케이션을 개선하는 것이 여러분의 작업입니다.
 
-[12 장](#chapter-12--improving-your-luis-service)에서 설명 하는 LUIS을 여러 번 학습 하도록 준비 해야 합니다. LUIS을 더 많이 학습 한 경우 더 나은 결과를 얻을 수 있습니다.
+[12장에서](#chapter-12--improving-your-luis-service)다루는 LUIS 학습을 여러 번 준비합니다. LUIS가 학습될수록 더 나은 결과를 얻을 수 있습니다.
 
 ## <a name="device-support"></a>디바이스 지원
 
@@ -46,99 +46,99 @@ ms.locfileid: "104730560"
 <tr>
 <th>과정</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">몰입형 헤드셋</a></th>
 </tr><tr>
-<td>MR 및 Azure 303: 자연어 이해 (LUIS)</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td>MR 및 Azure 303: LUIS(자연어 이해)</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
 > [!NOTE]
-> 이 과정에서 주로 Windows Mixed Reality (VR) 헤드셋에 초점을 맞춘 반면,이 과정에서 학습 하는 내용을 Microsoft HoloLens에도 적용할 수 있습니다. 과정을 진행할 때 HoloLens를 지원 하기 위해 사용 해야 하는 모든 변경 내용에 대 한 메모를 볼 수 있습니다. HoloLens를 사용 하는 경우 음성 캡처 중에 몇 가지 echo를 확인할 수 있습니다.
+> 이 과정은 주로 WINDOWS MIXED REALITY 몰입형(VR) 헤드셋에 중점을 두지만 이 과정에서 학습한 내용을 Microsoft HoloLens 적용할 수도 있습니다. 과정을 진행하면서 HoloLens 지원하기 위해 사용해야 할 수 있는 변경 내용에 대한 메모를 볼 수 있습니다. HoloLens 사용하는 경우 음성 캡처 중에 일부 에코를 확인할 수 있습니다.
 
 ## <a name="prerequisites"></a>필수 조건
 
 > [!NOTE]
-> 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (2018 일 수 있음)을 나타냅니다. [도구 설치](../../install-the-tools.md) 문서에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.
+> 이 자습서는 Unity 및 C#에 대한 기본적인 경험이 있는 개발자를 위해 설계되었습니다. 또한 이 문서 내의 필수 조건 및 작성된 지침은 작성 당시 테스트 및 확인된 내용을 나타냅니다(2018년 5월). [도구 설치](../../install-the-tools.md) 문서에 나열된 대로 최신 소프트웨어를 자유롭게 사용할 수 있지만, 이 과정의 정보는 아래 나열된 내용보다 최신 소프트웨어에서 찾을 수 있는 정보와 완벽하게 일치한다고 가정해서는 안 됩니다.
 
-이 과정에는 다음 하드웨어 및 소프트웨어를 권장 합니다.
+이 과정에서는 다음 하드웨어 및 소프트웨어를 사용하는 것이 좋습니다.
 
-- 모던 (VR) 헤드셋 개발을 위한 [Windows Mixed Reality와 호환 되](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) 는 개발 PC
-- [개발자 모드를 사용 하는 Windows 10이 하 버전의 작성자 업데이트 (또는 이상)](../../install-the-tools.md)
+- 몰입형(VR) 헤드셋 개발을 위해 [Windows Mixed Reality 호환되는](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) 개발 PC
+- [개발자 모드를 사용하도록 설정된 Windows 10 Fall Creators Update(이상)](../../install-the-tools.md)
 - [최신 Windows 10 SDK](../../install-the-tools.md)
 - [Unity 2017.4](../../install-the-tools.md)
 - [Visual Studio 2017](../../install-the-tools.md)
-- 개발자 모드가 사용 하도록 설정 된 [Windows Mixed Reality 모던 (VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md) 또는 [Microsoft HoloLens](/hololens/hololens1-hardware)
-- 기본 제공 마이크가 있는 헤드폰 집합 (헤드셋에 기본 제공 mic 및 스피커가 없는 경우)
+- 개발자 모드를 사용하도록 설정된 [Windows Mixed Reality 몰입형(VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md) 또는 [Microsoft HoloLens](/hololens/hololens1-hardware)
+- 기본 제공 마이크가 있는 마이크 세트(헤드셋에 기본 제공 마이크 및 스피커가 없는 경우)
 - Azure 설정 및 LUIS 검색을 위한 인터넷 액세스
 
 ## <a name="before-you-start"></a>시작하기 전에
 
-1.  이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.) 
-2.  컴퓨터에서 받아쓰기를 사용 하도록 허용 하려면 **Windows 설정 > 개인 정보 > 음성, 필기 & 입력** 으로 이동 하 고 단추를 눌러 **음성 서비스를 켜고 제안을 입력** 합니다.
-3.  이 자습서의 코드를 사용 하면 컴퓨터에 설정 된 **기본 마이크 장치** 에서 기록할 수 있습니다. 기본 마이크 장치가 음성을 캡처하는 데 사용할 것으로 설정 되어 있는지 확인 합니다.
-4.  헤드셋에 기본 제공 마이크가 있는 경우 *혼합 현실 포털* 설정에서 *"헤드셋을 착용 할 때 헤드셋 mic로 전환"* 옵션이 켜져 있는지 확인 합니다.
+1.  이 프로젝트를 빌드하는 데 문제가 발생하지 않도록 하려면 이 자습서에서 언급한 프로젝트를 루트 또는 루트에 가까운 폴더에 만드는 것이 좋습니다(긴 폴더 경로로 인해 빌드 시 문제가 발생할 수 있습니다). 
+2.  컴퓨터에서 받아쓰기를 사용하도록 허용하려면 **Windows 설정 > Privacy > Speech, Inking & Typing으로** 이동하여 Speech **Services 켜기 및 제안 입력** 단추를 누릅니다.
+3.  이 자습서의 코드를 사용하면 머신에 설정된 **기본 마이크 디바이스에서** 기록할 수 있습니다. 기본 마이크 디바이스가 음성을 캡처하는 데 사용하려는 디바이스로 설정되어 있는지 확인합니다.
+4.  헤드셋에 기본 제공 마이크가 있는 경우 *Mixed Reality 포털* 설정에서 *"헤드셋을 신으면 헤드셋 마이크로 전환"* 옵션이 켜져 있는지 확인합니다.
 
-    ![모던 헤드셋 설정](images/AzureLabs-Lab3-00.png)
+    ![몰입형 헤드셋 설정](images/AzureLabs-Lab3-00.png)
 
-## <a name="chapter-1--setup-azure-portal"></a>1 장-Azure Portal 설정
+## <a name="chapter-1--setup-azure-portal"></a>1장 - Azure Portal 설정
 
-Azure에서 *Language Understanding* 서비스를 사용 하려면 응용 프로그램에서 사용할 수 있도록 서비스 인스턴스를 구성 해야 합니다.
+Azure에서 *Language Understanding* 서비스를 사용하려면 애플리케이션에서 사용할 수 있도록 서비스의 인스턴스를 구성해야 합니다.
 
 1.  [Azure Portal](https://portal.azure.com)에 로그인합니다.
 
     > [!NOTE]
-    > 아직 Azure 계정이 없는 경우 새로 만들어야 합니다. 교실 또는 랩 상황에서이 자습서를 수행 하는 경우 강사 또는 proctors 중 하나에 문의 하 여 새 계정을 설정 하는 데 도움이 될 수 있습니다.
+    > Azure 계정이 아직 없는 경우 만들어야 합니다. 클래스룸 또는 랩 상황에서 이 자습서를 따르는 경우 강사 또는 프록터 중 하나에 새 계정 설정에 대한 도움을 요청하세요.
 
-2.  로그인 되 면 왼쪽 위 모서리에서 **새로 만들기** 를 클릭 하 고 *Language Understanding* 를 검색 한 다음 **Enter 키** 를 누릅니다. 
+2.  로그인한 후 왼쪽 위 모서리에서 **새로** 만들기를 클릭하고 *Language Understanding* 검색한 다음 **Enter 키를** 클릭합니다. 
 
     ![LUIS 리소스 만들기](images/AzureLabs-Lab3-01.png)
 
     > [!NOTE]
-    > 새 단어는 **새** 포털에서 **리소스 만들기** 로 대체 되었을 수 있습니다.
+    > **New라는** 단어는 최신 포털에서 **리소스 만들기** 로 대체되었을 수 있습니다.
  
-3.  오른쪽의 새 페이지는 Language Understanding 서비스에 대 한 설명을 제공 합니다. 이 페이지의 왼쪽 아래에서 **만들기** 단추를 선택 하 여이 서비스의 인스턴스를 만듭니다.
+3.  오른쪽의 새 페이지에서는 Language Understanding 서비스에 대한 설명을 제공합니다. 이 페이지의 왼쪽 아래에서 **만들기** 단추를 선택하여 이 서비스의 인스턴스를 만듭니다.
 
-    ![LUIS 서비스 만들기-법적 고 지 사항](images/AzureLabs-Lab3-02.png)
+    ![LUIS 서비스 만들기 - 법적 고지 사항](images/AzureLabs-Lab3-02.png)
  
-4.  만들기를 클릭 하면 다음을 클릭 합니다.
+4.  만들기를 클릭한 후에는 다음을 수행합니다.
 
-    1. 이 서비스 인스턴스의 원하는 **이름을** 삽입 합니다.
+    1. 이 서비스 인스턴스에 대해 원하는 **이름을** 삽입합니다.
     2. **구독** 을 선택합니다.
-    3. 적절 한 **가격 책정 계층** 을 선택 하세요. *LUIS 서비스* 를 처음 만드는 경우 무료 계층 (명명 된 F0)을 사용할 수 있어야 합니다. 이 과정에서는 사용 가능한 할당이 충분 해야 합니다.
-    4. 리소스 그룹을 선택 하거나 새 **리소스 그룹** 을 만듭니다. 리소스 그룹은 Azure 자산의 컬렉션에 대 한 청구를 모니터링 하 고, 액세스를 제어 하 고, 프로 비전 하 고, 관리 하는 방법을 제공 합니다. 단일 프로젝트와 연결 된 모든 Azure 서비스 (예: 이러한 과정)를 공용 리소스 그룹에 유지 하는 것이 좋습니다. 
+    3. LUIS 서비스를 처음 만드는 경우 적절한 **가격 책정 계층을** 선택합니다. *무료* 계층(F0)을 사용할 수 있어야 합니다. 이 과정에서는 무료 할당만으로도 충분합니다.
+    4. 리소스 **그룹을** 선택하거나 새 리소스 그룹을 만듭니다. 리소스 그룹은 Azure 자산 컬렉션에 대한 액세스를 모니터링, 제어, 프로비전 및 관리하는 방법을 제공합니다. 단일 프로젝트(예: 이러한 과정)와 연결된 모든 Azure 서비스를 공통 리소스 그룹 아래에 유지하는 것이 좋습니다. 
 
-        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹 문서를 참조](/azure/azure-resource-manager/resource-group-portal)하세요.
+        > Azure 리소스 그룹에 대해 자세히 알아보려면 [리소스 그룹 문서 를 방문하세요.](/azure/azure-resource-manager/resource-group-portal)
 
-    5. 새 리소스 그룹을 만드는 경우 리소스 그룹의 **위치** 를 확인 합니다. 위치는 응용 프로그램이 실행 되는 영역에 있는 것이 가장 좋습니다. 일부 Azure 자산은 특정 지역 에서만 사용할 수 있습니다.
-    6. 또한이 서비스에 적용 된 사용 약관을 이해 했는지 확인 해야 합니다.
+    5. 리소스 그룹의 **위치를** 결정합니다(새 리소스 그룹을 만드는 경우). 위치는 애플리케이션이 실행되는 지역에 있는 것이 가장 좋습니다. 일부 Azure 자산은 특정 지역에서만 사용할 수 있습니다.
+    6. 또한 이 서비스에 적용된 약관을 이해했다는 것을 확인해야 합니다.
     7. **만들기** 를 선택합니다.
 
-        ![LUIS 서비스 만들기-사용자 입력](images/AzureLabs-Lab3-03.png)
+        ![LUIS 서비스 만들기 - 사용자 입력](images/AzureLabs-Lab3-03.png)
  
-5.  **만들기** 를 클릭 한 후에는 서비스를 만들 때까지 기다려야 합니다 .이 작업이 몇 분 정도 걸릴 수 있습니다.
-6.  서비스 인스턴스를 만든 후 알림이 포털에 표시 됩니다. 
+5.  **만들기를** 클릭하면 서비스가 생성될 때까지 기다려야 합니다. 이 경우 1분 정도 걸릴 수 있습니다.
+6.  서비스 인스턴스가 만들어지면 포털에 알림이 표시됩니다. 
  
     ![새 Azure 알림 이미지](images/AzureLabs-Lab3-04.png)
 
-7.  알림을 클릭 하 여 새 서비스 인스턴스를 탐색 합니다.
+7.  알림을 클릭하여 새 서비스 인스턴스를 탐색합니다.
 
     ![리소스 만들기 성공 알림](images/AzureLabs-Lab3-05.png)
  
-8.  알림에서 **리소스로 이동** 단추를 클릭 하 여 새 서비스 인스턴스를 탐색 합니다. 새 LUIS 서비스 인스턴스로 이동 됩니다. 
+8.  알림에서 **리소스로 이동** 단추를 클릭하여 새 서비스 인스턴스를 탐색합니다. 새 LUIS 서비스 인스턴스로 이동됩니다. 
  
     ![LUIS 키 액세스](images/AzureLabs-Lab3-06.png)
 
-9.  이 자습서에서 응용 프로그램은 서비스에 대 한 호출을 수행 해야 하며, 서비스의 구독 키를 사용 하 여 수행 됩니다.
-10. *LUIS API* 서비스의 *빠른 시작* 페이지에서 첫 번째 단계로 이동 하 고 키를 클릭 한 다음 *키를 클릭* 합니다 .이를 위해 서비스 탐색 메뉴에서 키 아이콘으로 표시 되는 파란색 하이퍼링크 키 **를 클릭 하** 여이를 수행할 수도 있습니다. 이렇게 하면 서비스 *키* 가 표시 됩니다.
-11. 프로젝트에서 나중에 필요 하므로 표시 된 키 중 하나를 복사 합니다. 
-12. *서비스* 페이지에서 LUIS 앱 내에서 새 서비스를 만드는 데 사용할 웹 페이지로 리디렉션되는 *Language Understanding 포털* 을 클릭 합니다. 
+9.  이 자습서 내에서 애플리케이션은 서비스의 구독 키를 사용하여 수행되는 서비스를 호출해야 합니다.
+10. *LUIS API* 서비스의 *빠른 시작* 페이지에서 첫 번째 단계인 *키 잡기로* 이동하고 키를 클릭합니다(키 아이콘으로 표시된 서비스 탐색 메뉴에 있는 파란색 하이퍼링크 키를 클릭하여 이를 달성할 수도 있음).  그러면 서비스 *키* 가 공개됩니다.
+11. 나중에 프로젝트에서 필요하므로 표시된 키 중 하나의 복사본을 찍습니다. 
+12. *서비스* 페이지에서 *Language Understanding 포털을* 클릭하여 LUIS 앱 내에서 새 서비스를 만드는 데 사용할 웹 페이지로 리디렉션됩니다. 
 
-## <a name="chapter-2--the-language-understanding-portal"></a>2 장-Language Understanding 포털
+## <a name="chapter-2--the-language-understanding-portal"></a>2장 – Language Understanding Portal
 
-이 섹션에서는 LUIS 포털에서 LUIS 앱을 만드는 방법에 대해 알아봅니다. 
+이 섹션에서는 LUIS 포털에서 LUIS 앱을 만드는 방법을 알아봅니다. 
 
 > [!IMPORTANT]
-> 이 장 내에서 *엔터티*, *의도* 및 *길이 발언* 를 설정 하는 것은 LUIS 서비스를 빌드하는 첫 번째 단계 일 뿐입니다. 더 정확 하 게 만들려면 서비스를 여러 번 다시 학습 해야 합니다. 서비스에 대 한 재 학습은이 과정의 [마지막 장에서](#chapter-12--improving-your-luis-service) 설명 하므로 완료 되었는지 확인 합니다.
+> 이 장 내에서 *엔터티,* *의도* 및 *발화* 설정은 LUIS 서비스를 빌드하는 첫 번째 단계일 뿐입니다. 더 정확하게 하기 위해 서비스를 여러 번 다시 학습해야 합니다. 서비스 재학습은 이 과정의 [마지막 챕터에서](#chapter-12--improving-your-luis-service) 다루므로 완료해야 합니다.
 
-1.  *Language Understanding 포털* 에 도달 하면 Azure Portal와 동일한 자격 증명을 사용 하 여 로그인 해야 할 수 있습니다. 
+1.  *Language Understanding Portal* 에 도달하면 아직 로그인하지 않은 경우 Azure Portal 동일한 자격 증명으로 로그인해야 할 수 있습니다. 
 
     ![LUIS 로그인 페이지](images/AzureLabs-Lab3-07.png)
  
@@ -317,7 +317,7 @@ change the color of this object to blue
 
     ![새 Unity 프로젝트를 시작 합니다.](images/AzureLabs-Lab3-24.png)
 
-2.  이제 Unity 프로젝트 이름, insert **MR_LUIS** 를 제공 해야 합니다. 프로젝트 형식이 **3d** 로 설정 되었는지 확인 합니다. 위치를 적절 한 **위치** 에 적절 하 게 설정 합니다. 루트 디렉터리에 가까울수록 좋습니다. 그런 다음 **프로젝트 만들기** 를 클릭 합니다.
+2.  이제 Unity Project 이름, insert **MR_LUIS** 를 제공 해야 합니다. 프로젝트 형식이 **3d** 로 설정 되었는지 확인 합니다. 위치를 적절 한 **위치** 에 적절 하 게 설정 합니다. 루트 디렉터리에 가까울수록 좋습니다. 그런 다음 **프로젝트 만들기** 를 클릭 합니다.
 
     ![새 Unity 프로젝트에 대 한 세부 정보를 제공 합니다.](images/AzureLabs-Lab3-25.png)
  
@@ -325,11 +325,11 @@ change the color of this object to blue
 
     ![스크립트 편집기 기본 설정을 업데이트 합니다.](images/AzureLabs-Lab3-26.png)
  
-4.  그런 다음 **파일 > 빌드 설정** 으로 이동 하 고 플랫폼 **전환** 단추를 클릭 하 여 플랫폼을 **유니버설 Windows 플랫폼** 로 전환 합니다.
+4.  그런 다음 **파일 > 빌드 설정** 로 이동 하 고 플랫폼 **전환** 단추를 클릭 하 여 플랫폼을 **유니버설 Windows 플랫폼** 로 전환 합니다.
 
-    ![빌드 설정 창에서 플랫폼을 UWP로 전환 합니다.](images/AzureLabs-Lab3-27.png)
+    ![설정 창을 빌드하고 platform을 UWP로 전환 합니다.](images/AzureLabs-Lab3-27.png)
  
-5.  **파일 > 빌드 설정** 으로 이동 하 고 다음을 확인 합니다.
+5.  **파일 > 빌드 설정** 로 이동 하 여 다음을 확인 합니다.
 
     1. **대상 장치가** **모든 장치로** 설정 됨
 
@@ -369,20 +369,20 @@ change the color of this object to blue
 
             ![다른 설정을 업데이트 합니다.](images/AzureLabs-Lab3-32.png)
       
-    2. **게시 설정** 탭의 **기능** 아래에서 다음을 확인 합니다.
+    2. **게시 설정** 탭 내의 **기능** 아래에서 다음을 확인 합니다.
 
         1. **InternetClient**
         2. **마이크**
 
             ![게시 설정을 업데이트 하는 중입니다.](images/AzureLabs-Lab3-33.png)
 
-    3. 패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음), **지원 되는 틱 가상 현실**, **Windows Mixed reality SDK** 가 추가 되어 있는지 확인 합니다.
+    3. 패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음)에서 지원 되는 틱 **가상 현실** 은 **Windows Mixed Reality SDK** 가 추가 되었는지 확인 합니다.
 
-        ![X R 설정을 업데이트 합니다.](images/AzureLabs-Lab3-34.png)
+        ![X R 설정를 업데이트 합니다.](images/AzureLabs-Lab3-34.png)
 
-8.  *빌드 설정* 으로 돌아가기 _Unity c #_ 프로젝트는 더 이상 회색으로 표시 되지 않습니다. 이 옆의 확인란을 선택 합니다. 
+8.  *빌드 설정* _Unity c #_ 프로젝트가 더 이상 회색으로 표시 되지 않습니다. 이 옆의 확인란을 선택 합니다. 
 9.  빌드 설정 창을 닫습니다.
-10. 장면 및 프로젝트를 저장 합니다 (**파일 > 장면/파일 저장 > 프로젝트 저장**).
+10. 장면 및 Project 저장 (**파일 > 장면/파일 저장 > 프로젝트** 저장).
 
 ## <a name="chapter-4--create-the-scene"></a>4 장-장면 만들기
 
@@ -482,13 +482,13 @@ change the color of this object to blue
 
 이 클래스를 만들려면: 
 
-1.  *프로젝트 패널* 을 마우스 오른쪽 단추로 클릭 하 **> 폴더를 만듭니다**. 폴더 **스크립트** 를 호출 합니다. 
+1.  *Project 패널* 을 마우스 오른쪽 단추로 클릭 하 **> 폴더를 만듭니다**. 폴더 **스크립트** 를 호출 합니다. 
 
     ![스크립트 폴더를 만듭니다.](images/AzureLabs-Lab3-40.png)
  
 2.  **Scripts** 폴더를 만든 다음 두 번 클릭 하 여 엽니다. 그런 다음 해당 폴더 내에서 마우스 오른쪽 단추를 클릭 하 **> c # 스크립트를 만듭니다**. 스크립트 이름을 *MicrophoneManager* 로 합니다. 
 
-3.  *MicrophoneManager* 를 두 번 클릭 하 여 *Visual Studio* 에서 엽니다.
+3.  *MicrophoneManager* 을 두 번 클릭 하 여 *Visual Studio* 를 사용 하 여 엽니다.
 4.  파일의 맨 위에 다음 네임 스페이스를 추가 합니다.
 
     ```csharp
@@ -582,7 +582,7 @@ change the color of this object to blue
     > [!IMPORTANT]
     > 이 클래스는 사용 하지 않으므로 *Update ()* 메서드를 삭제 합니다.
 
-9.  *Unity* 로 반환 하기 전에 *Visual Studio* 에서 변경 내용을 저장 해야 합니다.
+9.  *Unity* 로 반환 하기 전에 *Visual Studio* 변경 내용을 저장 해야 합니다.
 
     > [!NOTE]
     > 이 시점에서 *Unity 편집기 콘솔 패널* 에 오류가 나타납니다. 코드는 다음 챕터에서 만들 *Luismanager* 클래스를 참조 하기 때문입니다.
@@ -599,7 +599,7 @@ Azure LUIS 서비스에 대 한 호출을 수행 하는 *Luismanager* 클래스�
 
 1.  **스크립트** 폴더를 두 번 클릭 하 여 엽니다. 
 2.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 하 고 **> c # 스크립트 만들기** 를 클릭 합니다. 스크립트 이름을 *Luismanager* 로 합니다. 
-3.  스크립트를 두 번 클릭 하 여 Visual Studio에서 엽니다.
+3.  스크립트를 두 번 클릭 하 여 Visual Studio를 사용 하 여 엽니다.
 4.  파일의 맨 위에 다음 네임 스페이스를 추가 합니다.
 
     ```csharp
@@ -768,7 +768,7 @@ Azure LUIS 서비스에 대 한 호출을 수행 하는 *Luismanager* 클래스�
     > [!IMPORTANT]
     > *Start ()* 및 *Update ()* 메서드는이 클래스에서 사용 하지 않으므로 삭제 합니다.
 
-12. *Unity* 로 반환 하기 전에 *Visual Studio* 에서 변경 내용을 저장 해야 합니다.
+12. *Unity* 로 반환 하기 전에 *Visual Studio* 변경 내용을 저장 해야 합니다.
 
 > [!NOTE]
 > 이 시점에서 *Unity 편집기 콘솔 패널* 에 몇 가지 오류가 표시 됩니다. 코드는 다음 챕터에서 만들 *동작* 클래스를 참조 하기 때문입니다.
@@ -781,7 +781,7 @@ Azure LUIS 서비스에 대 한 호출을 수행 하는 *Luismanager* 클래스�
 
 1.  **스크립트** 폴더를 두 번 클릭 하 여 엽니다. 
 2.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 하 고 **> c # 스크립트 만들기** 를 클릭 합니다. 스크립트 이름을 *동작* 로 합니다. 
-3.  스크립트를 두 번 클릭 하 여 *Visual Studio* 에서 엽니다.
+3.  스크립트를 두 번 클릭 하 여 *Visual Studio* 를 사용 하 여 엽니다.
 4.  그런 다음 *동작* 클래스 안에 다음 변수를 추가 합니다.
 
     ```csharp
@@ -907,7 +907,7 @@ Azure LUIS 서비스에 대 한 호출을 수행 하는 *Luismanager* 클래스�
     > [!IMPORTANT]
     > *Start ()* 및 *Update ()* 메서드는이 클래스에서 사용 하지 않으므로 삭제 합니다.
 
-8.  *Unity* 로 반환 하기 전에 *Visual Studio* 에서 변경 내용을 저장 해야 합니다.
+8.  *Unity* 로 반환 하기 전에 *Visual Studio* 변경 내용을 저장 해야 합니다.
 
 ## <a name="chapter-8--create-the-gaze-class"></a>8 장-응시 클래스 만들기
 
@@ -917,7 +917,7 @@ Azure LUIS 서비스에 대 한 호출을 수행 하는 *Luismanager* 클래스�
 
 1.  **스크립트** 폴더를 두 번 클릭 하 여 엽니다. 
 2.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 하 고 **> c # 스크립트 만들기** 를 클릭 합니다. 스크립트 이름을 *응시* 로 합니다. 
-3.  스크립트를 두 번 클릭 하 여 *Visual Studio* 에서 엽니다.
+3.  스크립트를 두 번 클릭 하 여 *Visual Studio* 를 사용 하 여 엽니다.
 4.  이 클래스에 대해 다음 코드를 삽입 합니다.
 
     ```csharp
@@ -964,7 +964,7 @@ Azure LUIS 서비스에 대 한 호출을 수행 하는 *Luismanager* 클래스�
         }
     ```
  
-5.  *Unity* 로 반환 하기 전에 *Visual Studio* 에서 변경 내용을 저장 해야 합니다.
+5.  *Unity* 로 반환 하기 전에 *Visual Studio* 변경 내용을 저장 해야 합니다.
 
 ## <a name="chapter-9--completing-the-scene-setup"></a>9 장-장면 설정 완료
 
@@ -985,26 +985,26 @@ Azure LUIS 서비스에 대 한 호출을 수행 하는 *Luismanager* 클래스�
         - **원통을** *원통* 참조 대상 상자로 끌어 옵니다.
         - **큐브를** *큐브* 참조 대상 상자로 끌어 옵니다.
 
-    3. *응시*:
+    3. *응시:*
 
-        - *응시 최대 거리* 를 **300** (아직 없는 경우)로 설정 합니다. 
+        - 응시 *최대 거리를* **300으로** 설정합니다(아직 설정하지 않은 경우). 
 
-4.  결과는 아래 이미지와 같아야 합니다.
+4.  결과는 아래 이미지와 같습니다.
 
-    ![카메라 참조 대상을 표시 합니다 (이제 설정).](images/AzureLabs-Lab3-42.png)
+    ![카메라 참조 대상을 표시합니다. 이제 설정됩니다.](images/AzureLabs-Lab3-42.png)
  
-## <a name="chapter-10--test-in-the-unity-editor"></a>10 장-Unity 편집기에서 테스트
+## <a name="chapter-10--test-in-the-unity-editor"></a>10장 – Unity 편집기에서 테스트
 
-장면 설정이 제대로 구현 되었는지 테스트 합니다.
+장면 설정이 제대로 구현되어 있는지 테스트합니다.
 
 다음 사항을 확인합니다.
 
--   모든 스크립트는 **주 카메라** 개체에 연결 됩니다. 
--   *기본 카메라 검사기 패널* 의 모든 필드가 제대로 할당 됩니다.
+-   모든 스크립트는 **주 카메라** 개체에 연결됩니다. 
+-   *주 카메라 검사기 패널의* 모든 필드가 제대로 할당됩니다.
 
-1.  *Unity 편집기* 에서 **재생** 단추를 누릅니다. 앱은 연결 된 모던 헤드셋 내에서 실행 되어야 합니다.
+1.  *Unity 편집기* 에서 **재생** 단추를 누릅니다. 앱은 연결된 몰입형 헤드셋 내에서 실행되어야 합니다.
 
-2.  다음과 같은 몇 가지 길이 발언 시도 합니다.
+2.  다음과 같은 몇 가지 발언을 시도합니다.
 
     ```
     make the cylinder red
@@ -1019,93 +1019,93 @@ Azure LUIS 서비스에 대 한 호출을 수행 하는 *Luismanager* 클래스�
     ```
 
     > [!NOTE]
-    > Unity 콘솔에 기본 오디오 장치 변경에 대 한 오류가 표시 되 면 장면이 예상 대로 작동 하지 않을 수 있습니다. 이는 혼합 현실 포털이이를 포함 하는 헤드셋의 기본 제공 마이크를 처리 하는 방식 때문입니다. 이 오류가 표시 되 면 장면을 중지 하 고 다시 시작 하 고 예상 대로 작동 해야 합니다.
+    > Unity 콘솔에서 기본 오디오 디바이스 변경에 대한 오류가 표시되면 해당 장면이 예상대로 작동하지 않을 수 있습니다. 혼합 현실 포털에서 헤드셋이 있는 헤드셋의 기본 제공 마이크를 처리하는 방식 때문입니다. 이 오류가 표시되면 장면을 중지하고 다시 시작하면 예상대로 작동합니다.
 
-## <a name="chapter-11--build-and-sideload-the-uwp-solution"></a>11 장-UWP 솔루션 빌드 및 테스트용으로 로드
+## <a name="chapter-11--build-and-sideload-the-uwp-solution"></a>11장 - UWP 솔루션 빌드 및 테스트용 로드
 
-Unity 편집기에서 응용 프로그램이 작동 하는지 확인 한 후에는 빌드 및 배포할 준비가 된 것입니다.
+애플리케이션이 Unity 편집기에서 작동하는지 확인했으면 빌드 및 배포할 준비가 된 것입니다.
 
-빌드:
+빌드하려면 다음을 수행합니다.
 
-1.  **파일 > 저장** 을 클릭 하 여 현재 장면을 저장 합니다.
-2.  **파일 > 빌드 설정** 으로 이동 합니다.
-3.  **Unity c # 프로젝트** 라고 하는 상자입니다 (UWP 프로젝트를 만든 후 코드를 보고 디버깅 하는 데 유용).
-4.  열려 있는 **장면 추가** 를 클릭 한 다음 **빌드** 를 클릭 합니다.
+1.  **파일 > 저장을** 클릭하여 현재 장면을 저장합니다.
+2.  파일 **> 빌드 설정** 이동합니다.
+3.  **Unity C#** 프로젝트(UWP 프로젝트를 만든 후 코드를 보고 디버깅하는 데 유용함)라는 상자를 선택합니다.
+4.  열린 **장면 추가를** 클릭한 다음 **빌드를** 클릭합니다.
 
     ![빌드 설정 창](images/AzureLabs-Lab3-43.png)
 
-4.  솔루션을 빌드하는 데 사용할 폴더를 선택 하 라는 메시지가 표시 됩니다. 
+4.  솔루션을 빌드할 폴더를 선택하라는 메시지가 표시됩니다. 
 
-5.  *빌드* 폴더를 만들고 해당 폴더 내에서 원하는 적절 한 이름을 사용 하 여 다른 폴더를 만듭니다. 
-6.  **폴더 선택** 을 클릭 하 여 해당 위치에서 빌드를 시작 합니다.
+5.  *BUILDS* 폴더를 만들고 해당 폴더 내에서 선택한 적절한 이름으로 다른 폴더를 만듭니다. 
+6.  **폴더 선택을 클릭하여** 해당 위치에서 빌드를 시작합니다.
  
     ![빌드 폴더 만들기 ](images/AzureLabs-Lab3-44.png)
      ![ 빌드 폴더 선택](images/AzureLabs-Lab3-45.png)
  
-7.  Unity가 빌드를 완료 하면 (시간이 걸릴 수 있음) 빌드 위치에서 **파일 탐색기** 창을 열어야 합니다.
+7.  Unity 빌드가 완료되면(시간이 걸릴 수 있음) 빌드 위치에서 **파일 탐색기** 창을 열어야 합니다.
 
-로컬 컴퓨터에 배포 하려면 다음을 수행 합니다.
+로컬 컴퓨터에 배포하려면 다음을 수행합니다.
 
-1.  *Visual Studio* 에서 [이전 챕터](#chapter-10--test-in-the-unity-editor)에서 만든 솔루션 파일을 엽니다.
-2.  **솔루션 플랫폼** 에서 **X86**, **로컬 컴퓨터** 를 선택 합니다.
-3.  **솔루션 구성** 에서 **디버그** 를 선택 합니다.
+1.  *Visual Studio* [이전 챕터](#chapter-10--test-in-the-unity-editor)에서 만든 솔루션 파일을 엽니다.
+2.  솔루션 **플랫폼에서** **x86**, **로컬 머신** 을 선택합니다.
+3.  솔루션 **구성에서** **디버그를** 선택합니다.
 
-    > Microsoft HoloLens의 경우 컴퓨터에 테더 링 된 하지 않도록 *원격 컴퓨터* 를 설정 하는 것이 더 쉬울 수 있습니다. 그러나 다음을 수행 해야 합니다.
-    > - HoloLens의 **IP 주소** 를 알고 있습니다 .이 주소는 *설정 > 네트워크 & 인터넷 > Wi-Fi > 고급 옵션* 에서 찾을 수 있습니다. IPv4는 사용 해야 하는 주소입니다. 
-    > - **개발자 모드가** **설정** 되어 있는지 확인 합니다. *개발자를 위한 업데이트 & 보안 > > 설정* 에서 찾을 수 있습니다.
+    > Microsoft HoloLens 경우 컴퓨터에 테더링되지 않도록 *원격 컴퓨터* 로 설정하는 것이 더 쉬울 수 있습니다. 그러나 다음을 수행해야 합니다.
+    > - 설정 > Network & Internet > Wi-Fi > 고급 옵션 내에서 찾을 수 있는 HoloLens **IP 주소를** 알고 *있습니다.* IPv4는 사용해야 하는 주소입니다. 
+    > - **개발자 모드가** **켜기인지 확인합니다.** *개발자용 설정 > 업데이트 & 보안 > 찾습니다.*
 
     ![앱 배포](images/AzureLabs-Lab3-46.png)
  
-4.  **빌드 메뉴로** 이동 하 여 **솔루션 배포** 를 클릭 하 여 응용 프로그램을 컴퓨터에 테스트용으로 로드.
-5.  이제 앱이 설치 된 앱 목록에 표시 되어 시작 될 준비가 되었습니다.
-6.  앱이 시작 되 면 _마이크_ 에 대 한 액세스 권한을 부여 하 라는 메시지가 표시 됩니다. *동작 컨트롤러* 또는 *음성 입력* 을 사용 하거나 *키보드* 를 사용 하 여 **예** 단추를 누릅니다. 
+4.  **빌드 메뉴로** 이동하고 **솔루션 배포를** 클릭하여 애플리케이션을 컴퓨터에 테스트용으로 로드합니다.
+5.  이제 앱이 설치된 앱 목록에 표시되고, 시작 준비가 되었습니다.
+6.  앱이 시작되면 _마이크_ 에 대한 액세스 권한을 부여하라는 메시지가 표시됩니다. 동작 *컨트롤러,* 음성 *입력* 또는 *키보드를* 사용하여 **예** 단추를 누릅니다. 
 
-## <a name="chapter-12--improving-your-luis-service"></a>12 장-LUIS 서비스 개선
+## <a name="chapter-12--improving-your-luis-service"></a>12장 - LUIS 서비스 개선
 
 >[!IMPORTANT] 
-> 이 장은 매우 중요 하며, LUIS 서비스의 정확도를 향상 시키는 데 도움이 되므로 몇 번 반복 해야 할 수 있습니다 .이 작업을 완료 해야 합니다.
+> 이 챕터는 매우 중요하며 LUIS 서비스의 정확도를 향상시키는 데 도움이 되도록 여러 번 반복해야 할 수 있습니다. 이 작업을 완료해야 합니다.
 
-LUIS에서 제공 하는 이해 수준을 개선 하려면 새로운 길이 발언을 캡처하고 LUIS 앱을 다시 학습 하는 데 사용 해야 합니다.
+LUIS에서 제공하는 이해 수준을 개선하려면 새 발언을 캡처하고 사용하여 LUIS 앱을 다시 학습시켜야 합니다.
 
-예를 들어 "증가" 및 "업사이징"을 이해 하기 위해 학습 된 LUIS가 있을 수 있지만, 앱에서 "확대"와 같은 단어를 이해 하 고 싶으세요?
+예를 들어 "증가" 및 "Upsize"를 이해하도록 LUIS를 학습했을 수 있지만 앱에서 "확대"와 같은 단어도 이해하기를 원하지 않나요?
 
-응용 프로그램을 몇 번 사용한 후에는 LUIS에 의해 수집 되며 LUIS 포털에서 사용할 수 있습니다.
+애플리케이션을 여러 번 사용한 후에는 LUIS에서 모든 것을 수집하고 LUIS 포털에서 사용할 수 있습니다.
 
-1.  이 [링크](https://www.luis.ai/home)를 따라 포털 응용 프로그램으로 이동 하 여 로그인 합니다.
-2.  MS 자격 증명을 사용 하 여 로그인 하면 *앱 이름을* 클릭 합니다.
-3.  페이지 왼쪽에서 **endpoint 길이 발언 검토** 단추를 클릭 합니다.
+1.  이 [링크](https://www.luis.ai/home)및 로그인을 따라 포털 애플리케이션으로 이동합니다.
+2.  MS 자격 증명을 사용하여 로그인한 후 *앱 이름* 를 클릭합니다.
+3.  페이지 왼쪽에서 **엔드포인트 발화 검토** 단추를 클릭합니다.
 
-    ![길이 발언 검토](images/AzureLabs-Lab3-47.png)
+    ![발화 검토](images/AzureLabs-Lab3-47.png)
  
-4.  혼합 현실 응용 프로그램에 의해 LUIS로 전송 된 길이 발언 목록이 표시 됩니다.
+4.  혼합 현실 애플리케이션에서 LUIS로 보낸 발화 목록이 표시됩니다.
 
-    ![길이 발언 목록](images/AzureLabs-Lab3-48.png)
+    ![발화 목록](images/AzureLabs-Lab3-48.png)
  
-일부 강조 된 *엔터티* 를 확인할 수 있습니다. 
+몇 가지 강조 표시된 *엔터티 가 표시됩니다.* 
 
-강조 표시 된 각 단어를 마우스로 가리키면 각 Utterance를 검토 하 고 올바르게 인식 된 엔터티, 잘못 된 엔터티 및 누락 된 엔터티를 확인할 수 있습니다.
+강조 표시된 각 단어를 마우스로 가리키면 각 발화 를 검토하고 올바르게 인식된 엔터티, 잘못된 엔터티 및 누락된 엔터티를 확인할 수 있습니다.
 
-위의 예에서는 "스피어" 라는 단어가 대상으로 강조 표시 된 것을 발견 했으므로 실수를 수정 해야 합니다 .이 작업은 단어를 마우스로 가리키고 **레이블 제거** 를 클릭 하 여 수행 됩니다.
+위의 예제에서는 "창"이라는 단어가 대상으로 강조 표시되었으므로 실수를 수정해야 했습니다. 이 실수는 마우스로 단어를 마우스로 가리키고 **레이블 제거** 를 클릭하여 수행됩니다.
 
-![길이 발언 ](images/AzureLabs-Lab3-49.png)
- ![ 제거 레이블 이미지를 선택 합니다.](images/AzureLabs-Lab3-50.png)
+![발화 확인 ](images/AzureLabs-Lab3-49.png)
+ ![ 레이블 이미지 제거](images/AzureLabs-Lab3-50.png)
  
-5.  완전히 잘못 된 길이 발언를 찾으면 화면 오른쪽에 있는 **삭제** 단추를 사용 하 여 삭제할 수 있습니다.
+5.  완전히 잘못된 발화가 발견되면 화면 오른쪽의 삭제 단추를 사용하여 **삭제할** 수 있습니다.
 
-    ![잘못 된 길이 발언 삭제](images/AzureLabs-Lab3-51.png)
+    ![잘못된 발화 삭제](images/AzureLabs-Lab3-51.png)
 
-6.  또는 LUIS가 Utterance를 올바르게 해석 한 경우 **정렬 된 의도에 추가** 단추를 사용 하 여 해당 이해의 유효성을 검사할 수 있습니다.
+6.  또는 LUIS가 발화가 올바르게 해석되었다고 생각되면 맞춤 의도에 추가 단추를 사용하여 이해의 **유효성을 검사할** 수 있습니다.
 
-    ![정렬 된 의도에 추가](images/AzureLabs-Lab3-52.png)
+    ![맞춤 의도에 추가](images/AzureLabs-Lab3-52.png)
 
-7.  표시 된 모든 길이 발언를 정렬 한 후 페이지를 다시 로드 하 여 더 많은 사용 가능한 지 확인 합니다.
-8.  응용 프로그램 이해를 향상 시키기 위해 가능한 한 많은 횟수로이 프로세스를 반복 하는 것이 매우 중요 합니다. 
+7.  표시된 모든 발화가 정렬되면 페이지를 다시 로드하여 더 많은 발화가 사용 가능한지 확인합니다.
+8.  애플리케이션 이해를 향상시키기 위해 이 프로세스를 가능한 한 여러 번 반복하는 것이 매우 중요합니다. 
 
 **즐거운 시간 보내세요!**
 
-## <a name="your-finished-luis-integrated-application"></a>완성 된 LUIS 통합 응용 프로그램
+## <a name="your-finished-luis-integrated-application"></a>완성된 LUIS 통합 애플리케이션
 
-축 하 합니다. Azure Language Understanding Intelligence 서비스를 활용 하 여 사용자에 게 표시 되는 내용을 이해 하 고 해당 정보에 대해 조치를 취하는 혼합 현실 앱을 빌드 했습니다.
+축하합니다. Azure Language Understanding Intelligence Service를 활용하여 사용자가 말하는 내용을 이해하고 해당 정보에 대해 조치를 하는 혼합 현실 앱을 빌드했습니다.
 
 ![랩 결과](images/AzureLabs-Lab3-000.png)
 
@@ -1113,8 +1113,8 @@ LUIS에서 제공 하는 이해 수준을 개선 하려면 새로운 길이 발�
 
 ### <a name="exercise-1"></a>연습 1
 
-이 응용 프로그램을 사용 하는 동안 개체를 응시 하 고 색을 변경 하도록 요청 하면이 작업을 수행 하는 것을 알 수 있습니다. 응용 프로그램이 바닥 색을 변경 하는 것을 중지 하는 방법을 알아볼 수 있나요?
+이 애플리케이션을 사용하는 동안 Floor 개체를 응시하고 색을 변경하라는 메시지가 표시될 수 있습니다. 애플리케이션이 바닥 색을 변경하지 못하게 하는 방법을 확인할 수 있나요?
 
 ### <a name="exercise-2"></a>연습 2
 
-LUIS 및 앱 기능을 확장 하 여 장면의 개체에 대 한 기능을 추가 해 보세요. 예를 들어 사용자에 게 표시 되는 내용에 따라 응시 적중 지점에서 새 개체를 만든 다음 기존 명령과 함께 현재 장면 개체와 함께 해당 개체를 사용할 수 있습니다.
+장면의 개체에 대한 추가 기능을 추가하여 LUIS 및 앱 기능을 확장해 보세요. 예를 들어 사용자가 말하는 내용에 따라 응시 적중 지점에서 새 개체를 만든 다음, 기존 명령과 함께 현재 장면 개체와 함께 해당 개체를 사용할 수 있습니다.

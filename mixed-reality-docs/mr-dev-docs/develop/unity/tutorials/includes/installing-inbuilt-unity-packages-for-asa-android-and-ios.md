@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: ea360c6aeb278f2afad76a54ed709c1126c55371
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: 3d9549ed936e3a6ab9ee8091e6455f38a762aff955c43a5265642c7c50b549ef
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403431"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115215954"
 ---
 # <a name="unity-2020--windows-xr-plugin"></a>[Unity 2020 + Windows XR 플러그 인](#tab/winxr)
 
