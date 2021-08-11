@@ -1,23 +1,23 @@
 ---
 title: Windows Mixed Reality를 사용 하는 위치 기반 엔터테인먼트
-description: 하드웨어, 백팩 Pc, 추적, 구성 및 지원과 같은 위치 기반 엔터테인먼트를 위한 Windows Mixed Reality에 대해 알아봅니다.
+description: 하드웨어, 백팩 pc, 추적, 구성 및 지원과 같은 위치 기반 엔터테인먼트에 대 한 Windows Mixed Reality에 대해 알아봅니다.
 author: jessemcculloch
 ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
 keywords: 혼합 현실, vr, lbe, 위치, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 하드웨어, HoloLens, 다중 플레이어, 클라우드 서비스, azure
-ms.openlocfilehash: 49e96b99d3f74bd24a4a0e71f212018108148ad2
-ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
+ms.openlocfilehash: e9cff1184ca60f4b64be5346a187666e7b401aab06fee87c179917e300aa07f3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102236914"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196787"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Windows Mixed Reality를 사용 하는 위치 기반 엔터테인먼트
 
 지난 몇 년 동안에는 위치 기반 엔터테인먼트 범주에서 놀라운 크기의 성장과 혁신을 살펴보았습니다. 테마 파킹 및 극장 같은 전통적인 장소는 기존 탑승 및 설치에 대 한 무료 환경을 제공 하는 몰입 형 다중 플레이어 환경을 제공 하기 시작 했습니다. 새로운 operators 및 장소는 대량의에 대 한 매력적인 가격으로 고유한 다중 sensorial 멀티 플레이어 환경을 제공 하 고 있습니다. 이러한 모든 환경은 혼합 현실에서 가능한 작업을 위해 봉투를 푸시하는 것입니다.
 
-이 문서는 위치 기반 엔터테인먼트 범주에서 Windows Mixed Reality를 시작 하기 위한 가이드입니다. 아래 지침은 학습, 제품 디자인 및 기타 사용 사례와 같은 엔터테인먼트 이상의 위치 기반 환경에 추가로 적용할 수 있습니다.
+이 문서는 위치 기반 엔터테인먼트 범주에서 Windows Mixed Reality를 시작 하는 방법에 대 한 지침입니다. 아래 지침은 학습, 제품 디자인 및 기타 사용 사례와 같은 엔터테인먼트 이상의 위치 기반 환경에 추가로 적용할 수 있습니다.
 
 ## <a name="engineering-faq"></a>엔지니어링 FAQ
 
@@ -35,11 +35,11 @@ Samsung Odyssey +: [세부 정보](https://www.samsung.com/us/computing/hmd/wind
 
 Acer: [세부 정보](https://www.acer.com/ac/en/US/content/model/VD.R05AP.002)
 
-사용자의 위치가 혼합 또는 확대 현실에서 전문적으로 표시 되는 경우, Microsoft HoloLens 2를 확인 하세요.  
+위치에서 혼합 또는 확대 된 현실에서 전문적으로 표시 하는 경우에는 Microsoft HoloLens 2를 확인 하세요.  
 
 HoloLens 2: [사전 순서 관심](https://www.microsoft.com//hololens/buy)
 
-고급 컴퓨터 비전, 음성 및 본문 추적을 사용 하는 환경을 실험 하는 경우 Azure Kinect 진한이 적합 합니다.  
+고급 컴퓨터의 비전, 음성 및 본문 추적을 사용 하는 환경을 실험 하는 경우 Azure Kinect 진한이 적합 합니다.  
 
 Azure Kinect: [세부 정보](https://azure.microsoft.com//services/kinect-dk/)
 
@@ -58,7 +58,7 @@ HP는 전 세계의 가장 강력한 wearable PC 인 HP VR 백팩 G2를 출시 �
 
 키오스크 또는 사용자 지정 환경에 앱을 배포 하기 위해 일반적으로 앱을 통해 사용할 수 있는 것 보다 혼합 현실 포털의 사용자 지정이 더 필요할 수 있습니다. 혼합 현실 포털의 최신 7 월 업데이트에서는 구성 파일을 통해 설정할 수 있는 몇 가지 고급 설정을 지원 합니다.  
 
-실패 한 시스템 검사 허용 – 일반적으로 설치 프로세스는 설치를 완료 하기 전에 PC에서 Windows Mixed Reality와의 호환성을 확인 합니다. 호환성 검사를 무시 하면 호환성 문제가 있는 경우 Windows Mixed Reality를 실행 하려고 할 때 문제가 발생할 수 있습니다.  
+실패 한 시스템 검사 허용 – 일반적으로 설치 프로세스는 설치를 완료 하기 전에 PC가 Windows Mixed Reality와의 호환성을 확인 합니다. 호환성 검사를 우회 하면 호환성 문제가 있는 경우 Windows Mixed Reality를 실행 하려고 할 때 문제가 발생할 수 있습니다.  
 
 장치 도우미 앱 건너뛰기 – DCA는 제조업체에서 제공 하는 헤드셋 특정 설치 단계를 제공 하 고 헤드셋의 펌웨어를 업데이트할 수 있습니다.  
 
@@ -123,10 +123,10 @@ A: 플레이 공간 원본은 실내 설정 환경에 따라 결정 되며, 설�
 
 **Q: 내 장소에서 다중 플레이어 환경을 배포 합니다. Windows Mixed Reality에서 지원 되나요?**
 
-A: microsoft Insider program을 통해 Windows 20H1 이상 빌드를 옵트인 (opt in) 할 경우 지도 공유를 위한 새 인터페이스에 액세스할 수 있습니다. 이 새로운 기능은 Windows 장치 포털의 [Map Manager](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) 인터페이스를 통해 사용할 수 있습니다. 이 도구를 사용 하려면 다음 단계를 수행 합니다.
+A: Insider program을 통해 Windows 20h1 이상의 빌드를 옵트인 (opt in) 할 경우 지도 공유를 위한 새 인터페이스에 액세스할 수 있습니다. 이 새로운 기능은 Windows 장치 포털의 [맵 관리자](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) 인터페이스를 통해 사용할 수 있습니다. 이 도구를 사용 하려면 다음 단계를 수행 합니다.
 * 20H1 이상이 옵트인 되었는지 확인 합니다. 9 월 2019 일 이후 Insider program 사용을 의미 합니다.
 * 이러한 [지침](/windows/uwp/debug-test-perf/device-portal-desktop) 을 사용 하 여 Windows 장치 포털 (WDP)을 사용 하도록 설정 합니다.
-* Windows Mixed Reality HMD의 플러그 인에서 기존 맵을 다운로드 하거나 새 맵을 가져와야 합니다.
+* Windows Mixed Reality HMD에 연결 하 여 기존 맵을 다운로드 하거나 새 맵을 가져와야 합니다.
 * 설정 화면에 제공 된 URL을 사용 하 여 브라우저에서 선택한 WDP로 이동 합니다.
     * "Mixed Reality" 섹션으로 이동 하 고 "맵 관리자"를 선택 합니다.
     * 이제 "다운로드" 단추를 사용 하 여 컴퓨터에서 기존 맵을 내보낼 수 있습니다.
@@ -162,7 +162,7 @@ A: 다음은 보다 안정적인 추적 볼륨을 가져오는 데 도움이 될
 
 **Q: 내 비즈니스 규모를 Microsoft Azure 하려면 어떻게 해야 하나요?**
 
-A: Azure 기반 온사이트 및 원격 관리를 통해 비즈니스에서 데이터를 기반으로 하 고 운영 비용을 절감 하며 기존 및 새 위치에서 배포를 확장할 수 있습니다. Azure Storage, Azure Functions, App Service, Azure 네트워킹 및 IOT Hub와 같은 azure 클라우드 서비스는 다음과 같은 사용 사례를 지원할 수 있습니다.  
+A: Azure 기반 온사이트 및 원격 관리를 통해 비즈니스에서 데이터를 기반으로 하 고 운영 비용을 절감 하며 기존 및 새 위치에서 배포를 확장할 수 있습니다. Azure Storage, Azure Functions, App Service, azure 네트워킹 및 IOT Hub와 같은 azure 클라우드 서비스는 다음과 같은 사용 사례를 지원할 수 있습니다.  
 
 원격 장치 배포 & 관리 
 
@@ -178,7 +178,7 @@ LBE 예약 및 예약 시스템
 
 **Q: 대량 공간을 통해 배포 하기 위해 공간 MMOG를 개발 합니다. 내 콘텐츠 및 개체 지 속성을 관리 하는 데 도움이 되는 모든 서비스**
 
-A: Azure 공간 앵커는 HoloLens, iOS 및 Android 장치에서 다중 사용자가 공간적으로 인식할 수 있는 혼합 현실 환경을 가능 하 게 하는 새로운 혼합 현실 서비스입니다. [여기](https://azure.microsoft.com//services/spatial-anchors/)에서 Azure 공간 앵커에 대해 자세히 알아볼 수 있습니다.
+A: Azure 공간 앵커는 HoloLens, iOS 및 Android 장치에서 다중 사용자가 공간적으로 인식할 수 있는 혼합 현실 환경을 지 원하는 새로운 혼합 현실 서비스입니다. [여기](https://azure.microsoft.com//services/spatial-anchors/)에서 Azure 공간 앵커에 대해 자세히 알아볼 수 있습니다.
 
 **대답. Microsoft는 다양 한 플레이어 환경을 전문적으로 활용 하 고 있으며 콘텐츠 및 프런트 엔드 개발에 대 한 개발 시간에 집중 하고자 합니다. 백 엔드 개발을 부트스트랩 하거나 오프 로드 하는 데 도움이 되는 제품이 있나요?**
 
@@ -186,9 +186,9 @@ A: Azure PlayFab은 라이브 게임을 위한 완벽 한 백 엔드 플랫폼�
 
 ### <a name="misc"></a>기타
 
-**Q: SteamVR를 사용 하 여 내 환경을 배포 합니다. Windows Mixed Reality가 SteamVR에서 작동 하나요?**
+**Q: SteamVR를 사용 하 여 내 환경을 배포 합니다. SteamVR와 함께 사용할 Windows Mixed Reality 있나요?**
 
-A: SteamVR에 대 한 Windows Mixed Reality를 통해 사용자는 Windows Mixed Reality 모던 헤드셋에서 SteamVR 환경을 실행할 수 있습니다. WMR with SteamVR에 대 한 자세한 내용은 [여기](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)를 참조 하세요.
+A: SteamVR에 대 한 Windows Mixed Reality를 통해 사용자는 몰입 형 헤드셋 Windows Mixed Reality에서 SteamVR 환경을 실행할 수 있습니다. WMR with SteamVR에 대 한 자세한 내용은 [여기](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)를 참조 하세요.
 
 ### <a name="support-and-community"></a>지원 및 커뮤니티  
 

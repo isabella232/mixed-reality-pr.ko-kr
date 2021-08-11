@@ -1,16 +1,16 @@
 ---
-title: Teleport 시스템
+title: 시스템 텔레포트
 description: MRTK에서 Teleport 시스템 사용 및 사용 안 됨 개요
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, Teleport 시스템,
-ms.openlocfilehash: 7a49b1fea36eb1809c57abee4cede1216c07d5bf
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: c46438ed30880029760b5155efb3e3cd1d571c81a03bfbf764b2010e2e232c53
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176185"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197050"
 ---
 # <a name="teleport-system"></a>시스템 텔레포트
 
@@ -40,7 +40,7 @@ void EnableTeleportSystem()
 teleport 시스템은 인터페이스를 통해 이벤트를 [`IMixedRealityTeleportHandler`](xref:Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHandler) 노출하여 원격 전송 작업이 시작, 종료 또는 취소될 때 신호를 제공합니다.
 이벤트 메커니즘 및 관련 페이로드에 대한 자세한 내용은 연결된 API 설명서를 참조하세요.
 
-## <a name="usage"></a>사용
+## <a name="usage"></a>사용량
 
 ### <a name="how-to-register-for-teleportation-events"></a>원격 보고 이벤트에 등록하는 방법
 
@@ -91,6 +91,6 @@ public class TeleportHandlerExample : MonoBehaviour, IMixedRealityTeleportHandle
 
 ## <a name="teleporting-on-mrtk"></a>MRTK에서 원격 보고
 
-기본 구성을 사용하여 MR 디바이스에서 컨트롤러와 원격 통신하려면 엄지스틱을 사용합니다. 굴절된 손으로 원격 이동하려면 손끝이 인덱스 및 엄지 손가락으로 바깥쪽을 향하도록 제스처를 만들고, 인덱스 손가락으로 말려서 원격 통신을 완료합니다. 입력 시뮬레이션을 사용하여 원격 전송하려면 업데이트된 [입력 시뮬레이션 서비스 설명서를](../input-simulation/input-simulation-service.md)참조하세요.
+기본 구성을 사용하여 MR 디바이스에서 컨트롤러와 원격 통신하려면 엄지스틱을 사용합니다. 굴절된 손으로 원격 이동하려면 손끝이 인덱스 및 엄지 손가락 바깥쪽을 향하도록 제스처를 만들고, 인덱스 손가락으로 말려서 원격 통신을 완료합니다. 입력 시뮬레이션을 사용하여 원격 전송하려면 업데이트된 [입력 시뮬레이션 서비스 설명서를](../input-simulation/input-simulation-service.md)참조하세요.
 
   ![원격 이동 제스처](../images/teleport/handteleport.gif)

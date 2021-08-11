@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 개발, 개발, HoloLens, unity, unreal, directx, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, 가상 현실 개발, 증강 현실 개발
-ms.openlocfilehash: b47970de15451ea3bd0c121edd7dc61438fa115c
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: 2020ceb898f6badaec56a599348c8633c4cb90ba22eaf53df0e097d4fc3e110e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394327"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195962"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>Mixed Reality 개발 소개
 

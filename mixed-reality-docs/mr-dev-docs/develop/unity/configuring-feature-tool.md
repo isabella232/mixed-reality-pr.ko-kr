@@ -7,12 +7,12 @@ ms.date: 04/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 최신, 도구, 시작, 기본 사항, unity, visual studio, 도구 키트, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 설치, Windows, HoloLens, 에뮬레이터, unreal, openxr
-ms.openlocfilehash: 5b61924ccf4d3eb5f5433c9042582ff2a850bb04
-ms.sourcegitcommit: 286384e6e255135939bce2ab0267a62558837562
+ms.openlocfilehash: 419f26f79ca8bdd1998955a2bdf72dfabf73976c89b1abce175ef2cf60c9597b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "107731952"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210911"
 ---
 # <a name="configuring-the-mixed-reality-feature-tool"></a>Mixed Reality Feature Tool 구성
 

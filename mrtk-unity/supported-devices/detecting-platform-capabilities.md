@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk, 기능,
-ms.openlocfilehash: 70d320e178f4635d74b5be6a1874eb4254801719
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 0a3ad248e418e10ad1a7105ca5f9ece3e02c62bd7679cfd22d9c4396016d09a7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175518"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207611"
 ---
 # <a name="detecting-platform-capabilities"></a>플랫폼 기능 검색
 
@@ -67,7 +67,7 @@ if (capabilityCheck != null)
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [IMixedRealityCapabilityCheck API 설명서](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck)
 - [MixedRealityCapability enum 설명서](xref:Microsoft.MixedReality.Toolkit.MixedRealityCapability)

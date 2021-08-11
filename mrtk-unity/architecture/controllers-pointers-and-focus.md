@@ -1,18 +1,18 @@
 ---
-title: 컨트롤러, 포인터 및 포커스
+title: 컨트롤러 포인터 및 포커스
 description: 컨트롤러, 포인터 및 포커스와 상호 작용
 author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 포인터, 컨트롤러
-ms.openlocfilehash: b3e4438c1318abbc60606bcbca42854edae28167
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+keywords: Unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk, 포인터, 컨트롤러
+ms.openlocfilehash: 00bc0641182c566b045f959dfa361e1311b3cd224fc998f154010ad2996679ae
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121621"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196293"
 ---
-# <a name="controllers-pointers-and-focus"></a>컨트롤러, 포인터 및 포커스
+# <a name="controllers-pointers-and-focus"></a>컨트롤러 포인터 및 포커스
 
 컨트롤러, 포인터 및 초점은 핵심 입력 시스템에 의해 설정 된 기반을 기반으로 구축 되는 상위 수준 개념입니다. 이와 함께 장면의 개체와 상호 작용 하는 메커니즘의 많은 부분을 제공 합니다.
 
@@ -20,7 +20,7 @@ ms.locfileid: "113121621"
 
 컨트롤러는 물리적 컨트롤러 (자유도, 트레일러 식 등의 6도)를 표현 합니다. 이러한 장치는 장치 관리자에 의해 생성 되며 해당 하는 기본 시스템과 통신 하 고 해당 데이터를 MRTK 모양의 데이터 및 이벤트로 변환 합니다.
 
-예를 들어 Windows Mixed Reality 플랫폼에서는 [`WindowsMixedRealityArticulatedHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityArticulatedHand) 기본 Windows [직접 추적 api](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) 와 상호 작용 하 여 손, 포즈 및 기타 속성에 대 한 정보를 가져오기 위한 역할을 담당 하는 컨트롤러입니다. RaisePoseInputChanged 또는 RaiseHandJointsUpdated를 호출 하 여이 데이터를 관련 MRTK 이벤트로 전환 하 고,에 대 한 쿼리가 올바른 데이터를 반환 하도록 자체 내부 상태를 업데이트 하는 일을 담당 [`TryGetJointPose`](xref:Microsoft.MixedReality.Toolkit.Input.HandJointUtils.TryGetJointPose%2A) 합니다.
+예를 들어 Windows Mixed Reality 플랫폼에서는 [`WindowsMixedRealityArticulatedHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityArticulatedHand) 기본 Windows [손 추적 api](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) 와 상호 작용 하 여이에 대 한 조인트, 포즈 및 기타 속성에 대 한 정보를 얻는 데 사용 되는 컨트롤러입니다. RaisePoseInputChanged 또는 RaiseHandJointsUpdated를 호출 하 여이 데이터를 관련 MRTK 이벤트로 전환 하 고,에 대 한 쿼리가 올바른 데이터를 반환 하도록 자체 내부 상태를 업데이트 하는 일을 담당 [`TryGetJointPose`](xref:Microsoft.MixedReality.Toolkit.Input.HandJointUtils.TryGetJointPose%2A) 합니다.
 
 일반적으로 컨트롤러의 수명 주기에는 다음이 포함 됩니다.
 

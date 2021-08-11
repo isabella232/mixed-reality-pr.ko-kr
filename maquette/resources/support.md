@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/26/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Maquette, 프로토타입, 혼합 현실, 가상 현실, VR, MR, 피드백, 피드백 허브, 버그
-ms.openlocfilehash: 43a5c465fcc546a09444396cbcaefa6b65e08de4
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+ms.openlocfilehash: 9e91a1cefccb15fd5c454f981c4959748ff4d63ee277da85f21a4e5043a9bf07
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94935593"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196245"
 ---
 # <a name="support"></a>지원
 
@@ -45,7 +45,7 @@ ms.locfileid: "94935593"
 * 3 목 Tac
 * Tetris
 
-## <a name="maquette-community"></a>Maquette 커뮤니티
+## <a name="maquette-community"></a>Maquette Community
 
 * [Maquette 포럼](https://steamcommunity.com/app/967490/discussions/)
 * Maquette Scripting 포럼-TBD-필요한 포럼 섹션

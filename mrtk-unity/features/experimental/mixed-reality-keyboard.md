@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 6a33ed5b021e90cba56344f32a9c9a33e8fcc476
-ms.sourcegitcommit: c260aed8a37855faf9575d968e615959a56a13fc
+ms.openlocfilehash: 068d88483eff8db5466c6b5ff0d2ca8bbc0b5dddee549bb3d87c82fa740bc8fe
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "113466233"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197013"
 ---
 # <a name="mixed-reality-and-hololens-keyboard-helper-classes"></a>키보드 도우미 클래스 Mixed Reality 및 HoloLens
 
@@ -25,7 +25,7 @@ MRTK는 [시스템 키보드](../ux-building-blocks/system-keyboard.md)에서 �
 ### <a name="how-to-use"></a>사용 방법
 
 1. 모든 [`MixedRealityKeyboard`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.MixedRealityKeyboard) 개체에 구성 요소를 연결합니다.
-2. `ShowKeyboard(string text = "", bool multiLine = false)` `HideKeyboard()` 를 호출하여 키보드를 표시 및 숨기고, `OnShowKeyboard` `OnHideKeyboard` `OnCommitText` 키보드가 표시되고 숨겨질 때와 Enter 키를 누를 때 처리할 , 및 이벤트를 처리합니다.
+2. `ShowKeyboard(string text = "", bool multiLine = false)` `HideKeyboard()` 를 호출하여 키보드를 표시 및 숨기고, `OnShowKeyboard` `OnHideKeyboard` `OnCommitText` 키보드가 표시되고 숨겨지는 경우와 Enter 키를 누를 때 처리할 , 및 이벤트를 처리합니다.
 
 ## <a name="input-fields-tmp_keyboardinputfield-and-ui_keyboardinputfield"></a>입력 필드 TMP_KeyboardInputField 및 UI_KeyboardInputField
 

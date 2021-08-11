@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 1f943d8ac7050b8607ae3a85af0a377a7460eb3b
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: 9ed8a1e439b2bf911d8144a90259d99bf38b12e0404d9ad3365152bed633042c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647098"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197076"
 ---
 # <a name="updating-shaders"></a>셰이더 업데이트
 
@@ -23,10 +23,10 @@ ms.locfileid: "110647098"
 > [!IMPORTANT]
 > 셰이더 파일을 덮어쓰면 사용자 지정 수정 내용이 손실됩니다. 업그레이드하기 전에 수정된 셰이더 파일을 백업해야 합니다.
 >
-> 프로젝트가 URP(유니버설 렌더링 파이프라인)(이전의 LWRP(Lightweight Render Pipeline))를 사용하도록 구성된 경우 **Mixed Reality** Toolkit 유틸리티를 다시 실행하여 >  >  >
+> 프로젝트가 URP(유니버설 렌더링 파이프라인)(이전의 LWRP(Lightweight Render Pipeline))를 사용하도록 구성된 경우 **Mixed Reality Toolkit** 유틸리티를 다시 실행하여 >  >  >
 >  **경량 렌더링 파이프라인용 MRTK 표준 셰이더를 업그레이드하세요.**
 
-또한   >  Unity 편집기 메뉴 모음에서 Mixed Reality **Toolkit**  >  **유틸리티** 셰이더 업데이트 확인을 사용하여 언제든지  >  **셰이더 업데이트를 확인할** 수 있습니다.
+Unity   >    >    >  편집기 메뉴 모음에서 Mixed Reality Toolkit 유틸리티 셰이더 업데이트 확인을 사용하여 언제든지 **셰이더 업데이트를 확인할** 수도 있습니다.
 
 ![셰이더 업데이트 확인](../images/tools/ShaderUpdateMenu.png)
 

@@ -7,12 +7,12 @@ ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, unity, unreal, HoloLens, Azure spatial anchors, Azure Speech Services
-ms.openlocfilehash: c64ceb918cfec31b7ac934d9a1f9c719a4dde244
-ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
+ms.openlocfilehash: 3dfe5c0243b0cfce58d3e00f60c3ab321dd6d293ec24e1e33751c6788b110fc7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106223944"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208749"
 ---
 # <a name="tutorials"></a>자습서
 

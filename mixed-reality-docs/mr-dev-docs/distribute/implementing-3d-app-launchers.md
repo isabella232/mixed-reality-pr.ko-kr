@@ -1,24 +1,24 @@
 ---
 title: 3D 앱 시작 관리자(UWP 앱) 구현
-description: HoloLens 및 VR 헤드셋의 Windows Mixed Reality UWP 앱 및 게임에 대 한 3D 앱 다운로드 및 로고를 만드는 방법에 대해 알아봅니다.
+description: HoloLens 및 VR 헤드셋에서 UWP 앱 및 게임 Windows Mixed Reality 3d 앱 관리자 및 로고를 만드는 방법에 대해 알아봅니다.
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, 로고, 아이콘, 모델링, 시작 관리자, 3D 시작 관리자, 타일, 라이브 큐브, 딥 링크, secondarytile, 보조 타일, UWP, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, XML, 경계 상자, unity
-ms.openlocfilehash: 7a0b73a0b3638c1aa2c9cbffacd548fb461589ea
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: b0ccff2aaba9c4693f58b134cdb3af9190b59befec0b31851273ed6a3bc1fc04
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582969"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196426"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>3D 앱 시작 관리자(UWP 앱) 구현
 
 > [!NOTE]
-> 이 기능은 몰입 형 헤드셋에 대해 RS3 (2017) 크리에이터 업데이트의 일부로 추가 되었으며 Windows 10 4 월 2018 업데이트를 사용 하 여 HoloLens에서 지원 됩니다. 응용 프로그램이 10.0.16299의 버전을 대상으로 하는 Windows SDK의 버전을 대상으로 하는 작업을 대상으로 합니다. [여기](https://developer.microsoft.com/windows/downloads/windows-10-sdk)에서 최신 Windows SDK를 찾을 수 있습니다.
+> 이 기능은 몰입 형 헤드셋에 대해 2017 RS3 () 작성자 업데이트의 일부로 추가 되었으며 Windows 10 4 월 2018 업데이트를 사용 하 여 HoloLens에서 지원 됩니다. 응용 프로그램이 HoloLens 10.0.16299의 버전을 대상으로 하는 Windows SDK의 버전을 대상으로 하는 응용 프로그램을 대상으로 합니다. [여기](https://developer.microsoft.com/windows/downloads/windows-10-sdk)에서 최신 Windows SDK를 찾을 수 있습니다.
 
-[Windows Mixed Reality 홈](../discover/navigating-the-windows-mixed-reality-home.md) 은 사용자가 응용 프로그램을 시작 하기 전에 수행 하는 시작 지점입니다. Windows Mixed Reality 용 UWP 응용 프로그램을 만들 때 기본적으로 앱은 앱 로고를 사용 하 여 2D 슬레이트 시작 됩니다. Windows Mixed Reality 환경을 개발 하는 경우 응용 프로그램의 기본 2D 시작 관리자를 재정의 하도록 3D 시작 관리자를 선택적으로 정의할 수 있습니다. 일반적으로 Windows Mixed Reality 홈에서 사용자를 제외 하는 몰입 형 응용 프로그램을 시작 하려면 3D 시작을 사용 하는 것이 좋습니다. 앱이 현재 활성화 된 경우 기본 2D 시작 관리자가 기본 설정입니다. [3d 딥 링크 (secondaryTile)](#3d-deep-links-secondarytiles) 를 2d UWP 앱 내 콘텐츠의 3d 시작 관리자로 만들 수도 있습니다.
+[Windows Mixed Reality 홈](../discover/navigating-the-windows-mixed-reality-home.md) 은 응용 프로그램을 시작 하기 전에 사용자가가는 시작점입니다. Windows Mixed Reality에 대 한 UWP 응용 프로그램을 만들 때 기본적으로 앱은 앱 로고를 사용 하 여 2d 슬레이트 시작 됩니다. Windows Mixed Reality에 대 한 환경을 개발 하는 경우 응용 프로그램의 기본 2d 시작 관리자를 재정의 하도록 3d 시작 관리자를 선택적으로 정의할 수 있습니다. 일반적으로 사용자가 Windows Mixed Reality 홈에서 외부로 이동 하는 몰입 형 응용 프로그램을 시작 하는 데 3d 시작이 권장 됩니다. 앱이 현재 활성화 된 경우 기본 2D 시작 관리자가 기본 설정입니다. [3d 딥 링크 (secondaryTile)](#3d-deep-links-secondarytiles) 를 2d UWP 앱 내 콘텐츠의 3d 시작 관리자로 만들 수도 있습니다.
 
 >[!VIDEO https://www.youtube.com/embed/TxIslHsEXno]
 
@@ -29,7 +29,7 @@ ms.locfileid: "98582969"
 2. [모델링 및 내보내기](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 3. 응용 프로그램에 통합 (이 문서)
 
-응용 프로그램에 대 한 관리자로 사용할 3D 자산은 호환성을 보장 하기 위해 [Windows Mixed Reality 제작 지침](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) 을 사용 하 여 작성 해야 합니다. 이 제작 사양을 충족 하지 못하는 자산은 Windows Mixed Reality 홈에서 렌더링 되지 않습니다.
+응용 프로그램에 대 한 관리자로 사용할 3d 자산은 호환성을 보장 하기 위해 [Windows Mixed Reality 작성 지침](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) 을 사용 하 여 작성 해야 합니다. 이 제작 사양을 충족 하지 못하는 자산은 Windows Mixed Reality 홈에서 렌더링 되지 않습니다.
 
 ## <a name="configuring-the-3d-launcher"></a>3D 시작 관리자 구성
 
@@ -72,7 +72,7 @@ Visual Studio에서 새 프로젝트를 만들면 앱의 이름과 로고가 표
 </Applications>
 ```
 
-MixedRealityModel 요소는 응용 프로그램 패키지에 저장 된 3D 자산을 가리키는 파일 경로를 허용 합니다. 현재는 .bb 파일 형식을 사용 하 여 전달 되 고 [Windows Mixed Reality 3d 자산 제작 지침](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) 에 따라 작성 된 3d 모델만 지원 됩니다. 자산은 앱 패키지에 저장 되어야 하 고 애니메이션은 현재 지원 되지 않습니다. "Path" 매개 변수를 비워 두면 Windows에서 3D 시작 관리자 대신 2D 슬레이트를 표시 합니다. **참고:** 응용 프로그램을 빌드하고 실행 하기 전에 빌드 설정에서 .bb 자산을 "콘텐츠"로 표시 해야 합니다.
+MixedRealityModel 요소는 응용 프로그램 패키지에 저장 된 3D 자산을 가리키는 파일 경로를 허용 합니다. 현재는 .bb 파일 형식을 사용 하 여 전달 되 고 [Windows Mixed Reality 3d 자산 제작 지침](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) 에 대해 작성 된 3d 모델만 지원 됩니다. 자산은 앱 패키지에 저장 되어야 하 고 애니메이션은 현재 지원 되지 않습니다. "Path" 매개 변수가 비어 있으면 Windows 3d 시작 관리자 대신 2d 슬레이트를 표시 합니다. **참고:** 응용 프로그램을 빌드하고 실행 하기 전에 빌드 설정에서 .bb 자산을 "콘텐츠"로 표시 해야 합니다.
 
 
 ![솔루션 탐색기에서. a s b를 선택 하 고 속성 섹션을 사용 하 여 빌드 설정에서 "콘텐츠"로 표시 합니다.](images/buildsetting-content-300px.png)<br>
@@ -82,7 +82,7 @@ MixedRealityModel 요소는 응용 프로그램 패키지에 저장 된 3D 자�
 
 경계 상자는 개체 주위에 추가 버퍼 영역을 선택적으로 추가 하는 데 사용할 수 있습니다. 경계 상자는 중심점 및 범위를 사용 하 여 지정 됩니다 .이 범위는 경계 상자 중심에서 각 축의 가장자리 까지의 거리를 표시 합니다. 경계 상자의 단위는 1 단위 = 1 미터에 매핑할 수 있습니다. 경계 상자를 제공 하지 않으면 개체의 메시에 자동으로 조정 됩니다. 제공 된 경계 상자가 모델 보다 작으면 망상에 맞게 크기가 조정 됩니다.
 
-경계 상자 특성에 대 한 지원은 Windows RS4 update와 함께 MixedRealityModel 요소에 대 한 속성으로 제공 됩니다. 응용 프로그램 매니페스트 맨 위에 있는 경계 상자를 먼저 정의 하려면 uap6 스키마를 추가 하 고이를 무시할 수 있는 네임 스페이스로 포함 합니다.
+경계 상자 특성에 대 한 지원은 RS4 update Windows MixedRealityModel 요소의 속성으로 제공 됩니다. 응용 프로그램 매니페스트 맨 위에 있는 경계 상자를 먼저 정의 하려면 uap6 스키마를 추가 하 고이를 무시할 수 있는 네임 스페이스로 포함 합니다.
 
 ```xml
 <Package xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
@@ -105,20 +105,20 @@ MixedRealityModel 요소는 응용 프로그램 패키지에 저장 된 3D 자�
 
 ### <a name="using-unity"></a>Unity 사용
 
-Unity를 사용 하는 경우 응용 프로그램 매니페스트를 편집 하려면 먼저 Visual Studio에서 프로젝트를 빌드하고 열어야 합니다. 
+Unity를 사용 하는 경우 응용 프로그램 매니페스트를 편집 하려면 먼저 Visual Studio 프로젝트를 빌드하고 열어야 합니다. 
 
 >[!NOTE]
->Unity에서 새 Visual Studio 솔루션을 빌드 및 배포 하는 경우 매니페스트에서 3D 시작 관리자를 다시 정의 해야 합니다.
+>Unity에서 새 Visual Studio 솔루션을 빌드하고 배포할 때 매니페스트에서 3d 시작 관리자를 다시 정의 해야 합니다.
 
 ## <a name="3d-deep-links-secondarytiles"></a>3D 딥 링크 (secondaryTiles)
 
 > [!NOTE]
-> 이 기능은 모던 용 2017 RS3 (RS4) 헤드셋의 일부로 추가 되었으며 HoloLens 용 (4 월 2018 업데이트)의 일부로 추가 되었습니다. 응용 프로그램이 10.0.16299 on 모던 (VR) 헤드셋 및 10.0.17125의 버전을 대상으로 하는 Windows SDK 버전을 대상으로 하는지 확인 합니다. [여기](https://developer.microsoft.com/windows/downloads/windows-10-sdk)에서 최신 Windows SDK를 찾을 수 있습니다.
+> 이 기능은 HoloLens에 대 한 RS4 (4 월 2018 업데이트)의 일부로 (VR 용 2017 RS3) 헤드셋의 일부로 추가 되었습니다. 응용 프로그램이 HoloLens의 VR (10.0.16299 on 모던) 헤드셋 및 10.0.17125 보다 크거나 같은 Windows SDK 버전을 대상으로 하는지 확인 합니다. [여기](https://developer.microsoft.com/windows/downloads/windows-10-sdk)에서 최신 Windows SDK를 찾을 수 있습니다.
 
 >[!IMPORTANT]
 >3D 딥 링크 (secondaryTiles)는 2D UWP 앱 에서만 작동 합니다. 그러나 Windows Mixed Reality 홈에서 전용 앱을 시작 하는 [3d 앱 시작 관리자](implementing-3d-app-launchers.md) 를 만들 수 있습니다.
 
-Windows 시작 메뉴의 2d [보조 타일과](/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) 마찬가지로, 응용 프로그램의 3d 모델을 [windows mixed reality 홈](../discover/navigating-the-windows-mixed-reality-home.md) 에 포함 하는 기능을 추가 하 여 windows mixed reality에 2d 응용 프로그램을 향상 시킬 수 있습니다. 예를 들어 360 ° photo viewer 앱에 직접 연결 되는 360 ° 인화지를 만들거나, 사용자가 저자에 대 한 세부 정보 페이지를 여는 자산 컬렉션에서 3D 콘텐츠를 넣을 수 있습니다. 3D 콘텐츠를 사용 하 여 2D 응용 프로그램의 기능을 확장 하는 몇 가지 방법입니다.
+Windows 시작 메뉴에서 [2d 보조 타일과](/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) 마찬가지로, 응용 프로그램의 3d 모델을 [Windows Mixed Reality 홈](../discover/navigating-the-windows-mixed-reality-home.md) 에 있는 콘텐츠를 포함 하는 기능을 추가 하 여 Windows Mixed Reality에 대 한 2d 응용 프로그램을 향상 시킬 수 있습니다. 예를 들어 360 ° photo viewer 앱에 직접 연결 되는 360 ° 인화지를 만들거나, 사용자가 저자에 대 한 세부 정보 페이지를 여는 자산 컬렉션에서 3D 콘텐츠를 넣을 수 있습니다. 3D 콘텐츠를 사용 하 여 2D 응용 프로그램의 기능을 확장 하는 몇 가지 방법입니다.
 
 ### <a name="creating-a-3d-secondarytile"></a>3D "secondaryTile" 만들기
 
@@ -191,7 +191,7 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 
 ### <a name="checking-that-the-user-is-in-windows-mixed-reality"></a>사용자가 Windows Mixed Reality에 있는지 확인 하는 중
 
-3D 딥 링크 (secondaryTiles)는 보기가 Windows Mixed Reality 헤드셋에 표시 되는 동안에만 만들 수 있습니다. Windows Mixed Reality 헤드셋에 보기가 표시 되지 않는 경우 진입점을 숨기 거 나 오류 메시지를 표시 하 여이를 정상적으로 처리 하는 것이 좋습니다. [IsCurrentViewPresentedOnHolographic ()](/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_)를 쿼리하여이를 확인할 수 있습니다.
+3d 딥 링크 (secondarytiles)는 보기가 Windows Mixed Reality 헤드셋에 표시 되는 동안에만 만들 수 있습니다. Windows Mixed Reality 헤드셋에 보기가 표시 되지 않는 경우 진입점을 숨기 거 나 오류 메시지를 표시 하 여이를 정상적으로 처리 하는 것이 좋습니다. [IsCurrentViewPresentedOnHolographic ()](/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_)를 쿼리하여이를 확인할 수 있습니다.
 
 ## <a name="tile-notifications"></a>타일 알림
 
@@ -203,10 +203,10 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 
 다른 타일 기능 및 특성과 2D 타일에 사용 되는 방법에 대 한 자세한 내용은 [UWP 앱에 대 한 타일 설명서](/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 * 3D 앱 시작 관리자를 포함 하는 [혼합 현실 모델 샘플](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) 입니다.
 * [3D 앱 시작 관리자 디자인 지침](3d-app-launcher-design-guidance.md)
-* [Windows Mixed Reality 홈에서 사용할 3D 모델 만들기](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
+* [Windows Mixed Reality 홈에서 사용할 3d 모델 만들기](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [3D 앱 응용 프로그램 구현 (Win32 앱)](implementing-3d-app-launchers-win32.md)
 * [Windows Mixed Reality 홈 탐색](../discover/navigating-the-windows-mixed-reality-home.md)

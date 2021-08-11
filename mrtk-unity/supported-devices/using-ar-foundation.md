@@ -1,18 +1,18 @@
 ---
-title: Android 및 iOS에 배포(AR Foundation) [실험적]
+title: Android 및 iOS에 배포(AR Foundation) [실험]
 description: Unity에서 ANDROID 및 iOS(ARFoundation)용 MRTK를 구성하는 설명서
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, AR Core, AR Kit, iOS, IOS, Android, AR Foundation
-ms.openlocfilehash: d127b9b39cbaa90f0c8c5a8a6ac7955f33404cbf
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: 109241da4137664510aab27094bd508aabaee1d145e387d80da9df259dc730a1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281946"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196729"
 ---
-# <a name="deploying-to-android-and-ios-ar-foundation-experimental"></a>Android 및 iOS에 배포(AR Foundation) [실험적]
+# <a name="deploying-to-android-and-ios-ar-foundation-experimental"></a>Android 및 iOS에 배포(AR Foundation) [실험]
 
 ## <a name="install-required-packages"></a>필요한 패키지를 설치합니다.
 
@@ -85,7 +85,7 @@ ms.locfileid: "114281946"
 
 1. UnityAR Camera 설정 공급자를 장면에 추가했는지 확인합니다.
 
-1. Unity 빌드 설정 플랫폼을 Android 또는 iOS로 전환
+1. Unity Build 설정 플랫폼을 Android 또는 iOS로 전환합니다.
 
 1. 연결된 XR 플러그 인 관리 공급자가 사용하도록 설정되어 있는지 확인합니다.
 
@@ -93,6 +93,6 @@ ms.locfileid: "114281946"
 
 1. 장면 빌드 및 실행
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Unity AR 카메라 설정](../features/camera-system/unity-ar-camera-settings.md)

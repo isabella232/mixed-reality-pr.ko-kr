@@ -1,29 +1,29 @@
 ---
 title: 사례 연구 - HoloTour의 공간 음향 디자인
-description: Microsoft HoloLens에 대해 진정한 모던 3D 가상 둘러보기를 만들려면 파노라마 비디오 및 holographic 장면만 수식의 일부입니다.
+description: Microsoft HoloLens에 대 한 진정한 모던 3d 가상 둘러보기를 만들려면 파노라마 비디오와 holographic 장면만 수식의 일부입니다.
 author: jsyltebo
 ms.author: jsylte
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens, HoloTour, 공간 음향, 사례 연구, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 오디오
-ms.openlocfilehash: 7f2474ba6edbdd54c31b24d38bb60e170b65b25a
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: Windows Mixed Reality, HoloLens, HoloTour, 공간 음향, 사례 연구, 혼합 현실 헤드셋, Windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, mrtk, 혼합 현실 Toolkit, 오디오
+ms.openlocfilehash: b398ea7b3ddd85db85018da1852ed0c5ae410f625ff88bdda286e750a517d260
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848009"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196461"
 ---
 # <a name="case-study-spatial-sound-design-for-holotour"></a>사례 연구: HoloTour에 대 한 공간 음향 디자인
 
-파노라마 비디오 및 holographic 장면은 모던 Microsoft HoloLens 둘러보기에 대 한 수식의 일부일 뿐입니다. 이 문서에서는 각 HoloTour 위치에 실제로 있는 것과 같은 느낌을 주는 소리를 사용 하는 방법을 설명 합니다.
+파노라마 비디오 및 holographic 장면은 몰입 형 Microsoft HoloLens 둘러보기에 대 한 수식의 일부일 뿐입니다. 이 문서에서는 각 HoloTour 위치에 실제로 있는 것과 같은 느낌을 주는 소리를 사용 하는 방법을 설명 합니다.
 
 ## <a name="the-tech"></a>기술
 
-HoloTour에 표시 되는 멋진 이미지 및 holographic 장면은 이익은 혼합 현실 환경의 한 부분입니다. Holograms 사용자 앞에만 표시 되는 반면 HoloLens는 모든 방향에서 [공간 소리](spatial-sound.md) 를 제공할 수 있으며,이는 전체 토대로 환경을 제공 합니다.
+HoloTour에 표시 되는 멋진 이미지 및 holographic 장면은 이익은 혼합 현실 환경의 한 부분입니다. holograms 사용자 앞에만 표시 되는 반면, HoloLens은 모든 방향에서 [공간 소리](spatial-sound.md) 를 제공할 수 있으며이를 통해 전체 토대로 환경을 제공 합니다.
 
 공간 사운드는 사용자가 전환 해야 하는 방향을 나타내는 신호를 제공 하거나 사용자에 게 해당 공간 내에서 볼 수 있는 더 많은 holograms 있는지를 알려 줍니다. 또한 홀로그램에 직접 소리를 연결 하 고 홀로그램 사용자의 방향 및 거리를 지속적으로 업데이트할 수 있습니다. 이 기법을 사용 하면 소리를 해당 개체에서 직접 가져온 것 처럼 보입니다.
 
-HoloTour의 경우 HoloLens의 공간 음향 기능을 활용 하려고 했으므로 비디오와 동기화 된 360도 주변 환경을 만들어 특정 위치의 sonic 하이라이트를 표시 했습니다.
+HoloTour의 경우, HoloLens의 공간 음향 기능을 활용 하기 위해 비디오와 동기화 된 360도 주변 환경을 만들어 특정 위치의 sonic 하이라이트를 표시 했습니다.
 
 ## <a name="behind-the-scenes"></a>배후 상황
 
@@ -58,7 +58,7 @@ HoloTour의 경우 HoloLens의 공간 음향 기능을 활용 하려고 했으�
 
 ## <a name="tips-and-tricks"></a>팁과 요령
 
-HoloLens의 공간 음향 기능을 완벽 하 게 활용 하기 위해 방향을 강조 표시 하 고 집중 교육를 개선 하는 다른 방법이 있습니다. 여기에서 목록을 제공 했습니다. 다음에 HoloTour을 시도할 때 이러한 효과를 수신 합니다.
+HoloLens의 공간 사운드 기능을 완벽 하 게 활용 하기 위해 방향을 강조 표시 하 고 집중 교육를 개선 하는 다른 방법이 있습니다. 여기에서 목록을 제공 했습니다. 다음에 HoloTour을 시도할 때 이러한 효과를 수신 합니다.
 * **대상 찾기:** 이러한 소리는 holographic 프레임의 특정 개체나 영역을 볼 때 트리거됩니다. 예를 들어 로마의 Piazza Navona에서 카페를 확인 하 여 약간의 바쁜 식당 소리를 확인 합니다.
 * **로컬 비전:** HoloTour의 경험에는 holograms에 의해 포함 되는 둘러보기 가이드에서 특정 한 "비트"가 포함 되어 있어 주제를 자세히 살펴봅니다. 예를 들어, dissolves에 대 한 외관에서 oculus를 표시 하기 위해, reverberating 안에 3D 송신기로 배치 된 오디오는 사용자가 내부를 탐색 하도록 권장 합니다.
 * **향상** 된 방향: 많은 장면 내에서 여러 가지 방법으로 화면에 추가 하는 소리를 배치 했습니다. 예를 들어, 장면의 소리는 사용자에 게 충분 한 별도의 송신기로 배치 되어 재생 공간을 중심으로 "sonic 시차"의 의미를 가질 수 있습니다. Salinas de (페루) 장면에서 개별 작은 스트림의 소리는 개별 송신기로 배치 되어 사용자에 게 해당 위치의 인증 된 소리를 둘러싼 더 몰입 형 주변 환경을 구축 합니다.

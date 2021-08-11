@@ -1,37 +1,37 @@
 ---
-title: Tooltip
-description: 다른 컨트롤이 나 개체에 연결 된 간단한 설명 인 혼합 현실 응용 프로그램에서 도구 설명을 사용 하는 방법에 대해 알아봅니다.
+title: 도구 설명
+description: 다른 컨트롤 또는 개체에 연결된 간단한 설명인 혼합 현실 애플리케이션에서 도구 설명을 사용하는 방법을 알아봅니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 도구 설명, MRTK, 혼합 현실 도구 키트
-ms.openlocfilehash: cd490a260c5caedc3f315d72f9a47bce563695a0
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Mixed Reality, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 도구 설명, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 3bf9230f89ebac3ad14e1e383c0f51a5a8d61c1c498c0a242e4dffbd1488bdbf
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600593"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196860"
 ---
-# <a name="tooltip"></a>Tooltip
+# <a name="tooltip"></a>도구 설명
 
-![Tooltip](images/UX_Hero_Tooltip.jpg)
+![도구 설명](images/UX_Hero_Tooltip.jpg)
 
-도구 설명은 다른 컨트롤이나 개체에 연결된 간단한 설명입니다. 이러한 정보는 더 가까운 검사 시 힌트 또는 추가 정보를 전달 하는 데 사용 됩니다. 도구 설명을 통해 사용자는 실제 환경에서 직접적으로 설명 되지 않은 잘 모르는 개체를 이해할 수 있습니다. 
+도구 설명은 다른 컨트롤이나 개체에 연결된 간단한 설명입니다. 자세히 검사할 때 힌트 또는 추가 정보를 전달하는 데 사용됩니다. 도구 설명은 사용자가 직접 설명되지 않은 물리적 환경에서 익숙하지 않은 개체를 이해하는 데 도움이 될 수 있습니다. 
 
 <br>
 
 ---
 
-## <a name="tooltip-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 도구 설명
+## <a name="tooltip-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity용 MRTK(Mixed Reality Toolkit)의 도구 설명
 
-* [MRTK-도구 설명](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/tooltip)
+* [MRTK - 도구 설명](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/tooltip)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

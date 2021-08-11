@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, 개발, 개발, HoloLens, 클라우드 서비스, Azure, remote rendering, spatial anchors, cognitive services, 인식, unity, 기계 학습, 음성 번역, 컴퓨터 비전, Microsoft Graph
-ms.openlocfilehash: 0c123c2bca412589086799c41b183eb6f9364d0c
-ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
+ms.openlocfilehash: ac4ce3d1bef426682450da69e9c8ffcd9e317e2a7853365e1af082a1913e1ecc
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102547232"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189023"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 혼합 현실 클라우드 서비스 개요
 
@@ -27,7 +27,7 @@ ms.locfileid: "102547232"
 
 ### <a name="azure-remote-rendering"></a>Azure Remote Rendering
 
-[ARR(Azure Remote Rendering)](https://docs.microsoft.com/azure/remote-rendering/)은 매우 복잡한 3D 모델을 실시간으로 렌더링하고 디바이스로 스트리밍할 수 있는 서비스입니다. ARR은 현재 공개 미리 보기 상태이며, HoloLens 2 또는 Windows 데스크톱 PC를 대상으로 하는 Unity 또는 네이티브 C++ 프로젝트에 추가할 수 있습니다.
+[ARR(Azure Remote Rendering)](/azure/remote-rendering/)은 매우 복잡한 3D 모델을 실시간으로 렌더링하고 디바이스로 스트리밍할 수 있는 서비스입니다. ARR은 현재 일반 공급되며, HoloLens 2 또는 Windows 데스크톱 PC를 대상으로 하는 Unity 또는 네이티브 C++ 프로젝트에 추가할 수 있습니다.
 
 <br>
 
@@ -47,7 +47,7 @@ ARR은 렌더링 워크로드를 클라우드의 고급 GPU로 이동하여 이 
 
 ### <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
 
-[Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/)는 공간적으로 인식되는 혼합 현실 애플리케이션을 빌드할 수 있는 플랫폼 간 서비스입니다. Azure Spatial Anchors를 사용하면 여러 디바이스에서 홀로그램 콘텐츠를 현실 세계 규모로 매핑, 유지 및 공유할 수 있습니다. 
+[ASA(Azure Spatial Anchors)](/azure/spatial-anchors/)는 공간 인식 혼합 현실 애플리케이션을 빌드할 수 있는 플랫폼 간 서비스입니다. Azure Spatial Anchors를 사용하면 여러 디바이스에서 홀로그램 콘텐츠를 현실 세계 규모로 매핑, 유지 및 공유할 수 있습니다. AOA는 이제 앱에서 사용해 볼 수 있도록 공개 미리 보기로 제공됩니다.
 
 Azure Spatial Anchors는 다음을 포함하여 Mixed Reality의 일반적인 사용 사례를 위한 고유한 맞춤형 솔루션입니다.
 * **경로 찾기**: 둘 이상의 공간 앵커를 연결하여 사용자가 상호 작용해야 하는 작업 목록 또는 관심 지점을 만들 수 있습니다.
@@ -65,6 +65,17 @@ Azure Spatial Anchors는 다음을 포함하여 Mixed Reality의 일반적인 �
 * C++/WinRT 및 HoloLens용 DirectX
 * iOS용 Xamarin
 * Android용 Xamarin
+
+### <a name="azure-object-anchors"></a>Azure Object Anchors
+
+[Azure Object Anchors](/azure/object-anchors/) 또는 AOA는 3D 콘텐츠를 물리적 개체와 자동으로 정렬하여 풍부하고 몰입형 환경을 만들 수 있는 혼합 현실 서비스입니다. 마커나 수동 정렬 없이도 개체를 상황별로 이해할 수 있습니다. Object Anchors로 혼합 현실 애플리케이션을 빌드하여 상당한 터치 노동을 절약하고 정렬 오류를 줄이며 사용자 환경을 개선합니다.
+
+Azure Object Anchors는 특히 다음을 비롯한 일반적인 Mixed Reality 사용 사례에 맞게 조정됩니다.
+* **학습**: 표식을 배치하거나 홀로그램 맞춤을 수동으로 조정하지 않고도 작업자를 위한 Mixed Reality 학습 환경을 만듭니다.
+* **작업 지침**: Mixed Reality를 사용하는 경우 작업자가 일련의 작업을 수행할 지침 제공이 크게 간소화될 수 있습니다.
+* **자산 찾기**: 실제 공간에 일부 개체의 3D 모델이 이미 있는 경우 Azure Object Anchors를 사용하여 실제 환경에서 해당 개체의 인스턴스를 찾고 추적할 수 있습니다.
+
+![개방형 자동차 엔진에서 Azure 개체 앵커의 가상 오버레이](images/aoa-img-01.png)
 
 ## <a name="cognitive-services"></a>Cognitive Services
 

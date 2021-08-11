@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 응시, 응시 타깃팅, 상호 작용, 디자인, 핸즈 니어, HoloLens, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit, 단추, 충돌체, 경계 상자, 2D, 직관적 제스처
-ms.openlocfilehash: 7a689f887bfd358b0d6e0826d41ef409bf887042
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 30b7a3c343ff044595beb6dfe2b62b1c70ff5a2ff3f6dd51563018ceee2fb995
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192704"
 ---
 # <a name="direct-manipulation-with-hands"></a>수동으로 직접 조작
 

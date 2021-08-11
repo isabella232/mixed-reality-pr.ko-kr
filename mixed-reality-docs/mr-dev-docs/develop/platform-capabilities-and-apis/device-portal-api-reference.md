@@ -1,186 +1,186 @@
 ---
 title: 디바이스 포털 API 참조
-description: Windows Device Portal API에 대 한 최신 상태를 유지 하세요.
+description: HoloLens 개발을 위해 Windows 장치 포털 API를 최신 상태로 유지합니다.
 author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: HoloLens, Windows 장치 포털, API, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: cdbe9635fc51a0d19c978b72fdc8d5db6b8e8e01
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6b41c569917150c303da933a75d354f574fb579ba676dac281e9cde2bfc59818
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581258"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207841"
 ---
 # <a name="device-portal-api-reference"></a>디바이스 포털 API 참조
 
-[Windows 장치 포털](using-the-windows-device-portal.md) 의 모든 항목은 데이터에 액세스 하 고 프로그래밍 방식으로 장치를 제어 하는 데 사용할 수 있는 REST API의 맨 위에 빌드됩니다.
+[Windows 장치 포털](using-the-windows-device-portal.md) 모든 것은 데이터에 액세스하고 디바이스를 프로그래밍 방식으로 제어하는 데 사용할 수 있는 REST API 기반으로 빌드됩니다.
 
-## <a name="app-deloyment"></a>앱 배포
+## <a name="app-deloyment"></a>앱 할당 해제
 
-**/api/app/packagemanager/package (DELETE)**
+**/api/app/packagemanager/package(DELETE)**
 
-앱을 제거 합니다.
-
-매개 변수
-* package: 제거할 패키지의 파일 이름입니다.
-
-**/api/app/packagemanager/package (POST)**
-
-앱을 설치 합니다.
+앱 제거
 
 매개 변수
-* package: 설치할 패키지의 파일 이름입니다.
+* package : 제거될 패키지의 파일 이름입니다.
 
-Payload
-* 여러 부분으로 구성 되는 http 본문
+**/api/app/packagemanager/package(POST)**
 
-**/api/app/packagemanager/packages (GET)**
+앱 설치
 
-세부 정보를 사용 하 여 시스템에 설치 된 앱 목록을 검색 합니다.
+매개 변수
+* package : 설치할 패키지의 파일 이름입니다.
+
+페이로드
+* http 본문을 준수하는 다중 파트
+
+**/api/app/packagemanager/packages(GET)**
+
+시스템에 설치된 앱 목록을 검색하고 세부 정보를 검색합니다.
 
 데이터 반환
-* 세부 정보가 포함 된 설치 된 패키지 목록
+* 설치된 패키지 목록(세부 정보 포함)
 
-**/api/app/packagemanager/state (GET)**
+**/api/app/packagemanager/state(GET)**
 
 진행 중인 앱 설치의 상태를 가져옵니다.
 
 ## <a name="dump-collection"></a>덤프 컬렉션
 
-**/api/debug/dump/usermode/crashcontrol (DELETE)**
+**/api/debug/dump/usermode/crashcontrol(DELETE)**
 
-테스트용으로 로드 앱에 대 한 크래시 덤프 수집 사용 안 함
-
-매개 변수
-* packageFullname: 패키지 이름
-
-**/api/debug/dump/usermode/crashcontrol (GET)**
-
-테스트용으로 로드 apps 크래시 덤프 컬렉션에 대 한 설정을 가져옵니다.
+테스트용으로 로드된 앱에 대한 크래시 덤프 수집을 사용하지 않도록 설정
 
 매개 변수
-* packageFullname: 패키지 이름
+* packageFullname : 패키지 이름
 
-**/api/debug/dump/usermode/crashcontrol (POST)**
+**/api/debug/dump/usermode/crashcontrol(GET)**
 
-테스트용으로 로드 앱에 대 한 덤프 제어 설정을 사용 하도록 설정 하 고 설정 합니다.
-
-매개 변수
-* packageFullname: 패키지 이름
-
-**/api/debug/dump/usermode/crashdump (DELETE)**
-
-테스트용으로 로드 앱에 대 한 크래시 덤프를 삭제 합니다.
+테스트용으로 로드된 앱 크래시 덤프 수집에 대한 설정을 가져옵니다.
 
 매개 변수
-* packageFullname: 패키지 이름
-* 파일 이름: 덤프 파일 이름
+* packageFullname : 패키지 이름
 
-**/api/debug/dump/usermode/crashdump (GET)**
+**/api/debug/dump/usermode/crashcontrol(POST)**
 
-테스트용으로 로드 앱에 대 한 크래시 덤프를 검색 합니다.
+테스트용으로 로드된 앱에 대한 덤프 제어 설정을 사용하도록 설정하고 설정합니다.
 
 매개 변수
-* packageFullname: 패키지 이름
-* 파일 이름: 덤프 파일 이름
+* packageFullname : 패키지 이름
+
+**/api/debug/dump/usermode/crashdump(DELETE)**
+
+테스트용으로 로드된 앱에 대한 크래시 덤프를 삭제합니다.
+
+매개 변수
+* packageFullname : 패키지 이름
+* fileName : 덤프 파일 이름
+
+**/api/debug/dump/usermode/crashdump(GET)**
+
+테스트용으로 로드된 앱에 대한 크래시 덤프를 검색합니다.
+
+매개 변수
+* packageFullname : 패키지 이름
+* fileName : 덤프 파일 이름
 
 데이터 반환
-* 덤프 파일입니다. WinDbg 또는 Visual Studio를 사용 하 여 검사
+* 덤프 파일. WinDbg 또는 Visual Studio 검사
 
-**/api/debug/dump/usermode/dumps (GET)**
+**/api/debug/dump/usermode/dumps(GET)**
 
-테스트용으로 로드 apps에 대 한 모든 크래시 덤프 목록을 반환 합니다.
+테스트용으로 로드된 앱에 대한 모든 크래시 덤프 목록을 반환합니다.
 
 데이터 반환
-* 테스트용으로 로드 된 앱 당 크래시 덤프 목록
+* 로드된 앱별 크래시 덤프 목록
 
 ## <a name="etw"></a>ETW
 
-**/api/etw/providers (GET)**
+**/api/etw/providers(GET)**
 
-등록 된 공급자를 열거 합니다.
+등록된 공급자 열거
 
 데이터 반환
 * 공급자 목록, 이름 및 GUID
 
-**/api/etw/session/realtime (GET/WebSocket)**
+**/api/etw/session/realtime(GET/WebSocket)**
 
-실시간 ETW 세션을 만듭니다. websocket을 통해 관리 됩니다.
+실시간 ETW 세션을 만듭니다. websocket을 통해 관리됩니다.
 
 데이터 반환
-* 활성화 된 공급자의 ETW 이벤트
+* 사용하도록 설정된 공급자의 ETW 이벤트
 
-## <a name="holographic-os"></a>Holographic OS
+## <a name="holographic-os"></a>홀로그램 OS
 
-**/api/holographic/os/etw/customproviders (GET)**
+**/api/holographic/os/etw/customproviders(GET)**
 
-시스템에 등록 되지 않은 HoloLens 특정 ETW 공급자 목록을 반환 합니다.
+시스템에 등록되지 않은 HoloLens 특정 ETW 공급자 목록을 반환합니다.
 
-**/api/holographic/os/services (GET)**
+**/api/holographic/os/services(GET)**
 
-실행 중인 모든 서비스의 상태를 반환 합니다.
+실행 중인 모든 서비스의 상태를 반환합니다.
 
-**/api/holographic/os/settings/ipd (GET)**
+**/api/holographic/os/settings/ipd(GET)**
 
-저장 된 IPD (Interpupillary distance)를 밀리미터 단위로 가져옵니다.
+저장된 IPD(보조 거리)를 밀리미터 단위로 가져옵니다.
 
-**/api/holographic/os/settings/ipd (POST)**
+**/api/holographic/os/settings/ipd(POST)**
 
-IPD를 설정 합니다.
+IPD 설정
 
 매개 변수
-* ipd: 밀리미터로 지정할 New IPD 값입니다.
+* ipd: 밀리미터 단위로 설정할 새 IPD 값
 
-**/api/holographic/os/webmanagement/settings/https (GET)**
+**/api/holographic/os/webmanagement/settings/https(GET)**
 
-장치 포털에 대 한 HTTPS 요구 사항 가져오기
+장치 포털 대한 HTTPS 요구 사항 얻기
 
-**/api/holographic/os/webmanagement/settings/https (POST)**
+**/api/holographic/os/webmanagement/settings/https(POST)**
 
-장치 포털에 대 한 HTTPS 요구 사항을 설정 합니다.
+장치 포털 대한 HTTPS 요구 사항을 설정합니다.
 
 매개 변수
 * 필수: 예, 아니요 또는 기본값
 
-## <a name="holographic-perception"></a>Holographic 인식
+## <a name="holographic-perception"></a>홀로그램 인식
 
-**/api/holographic/perception/client (GET/WebSocket)**
+**/api/holographic/perception/client(GET/WebSocket)**
 
-Websocket 업그레이드를 수락 하 고 30fps로 업데이트를 전송 하는 인식 클라이언트를 실행 합니다.
+websocket 업그레이드를 수락하고 업데이트를 30fps로 보내는 인식 클라이언트를 실행합니다.
 
 매개 변수
-* clientmode: "활성"은 동적으로 설정할 수 없는 경우 시각적 추적 모드를 강제로 실행 합니다.
+* clientmode: "활성"은 수동적으로 설정할 수 없는 경우 시각적 추적 모드를 강제로 수행합니다.
 
-## <a name="holographic-thermal"></a>Holographic 열
+## <a name="holographic-thermal"></a>홀로그램 열
 
-**/api/holographic/thermal/stage (GET)**
+**/api/holographic/열/스테이지(GET)**
 
-장치의 열 단계 가져오기 (0 보통, 1 웜, 2 개 위험)
+디바이스의 열 스테이지를 얻습니다(정상 0개, 웜 1개, 위험 2개).
 
 ## <a name="map-manager"></a>맵 관리자
 
-**/api/holographic/mapmanager/mapFiles (GET)**
+**/api/holographic/mapmanager/mapFiles(GET)**
 
-사용 가능한 맵 파일 (mapx) 목록을 가져옵니다.
+사용 가능한 맵 파일(.mapx)의 목록을 가져옵니다.
 
-**/api/holographic/mapmanager/anchorFiles (GET)**
+**/api/holographic/mapmanager/anchorFiles(GET)**
 
-사용 가능한 앵커 파일 (.. x x x) 목록을 가져옵니다.
+사용 가능한 앵커 파일(.ancx) 목록을 가져옵니다.
 
-**/api/holographic/mapmanager/srdbFiles (GET)**
+**/api/holographic/mapmanager/srdbFiles(GET)**
 
-사용 가능한 공간 재구성 데이터베이스 파일 (srdb) 목록을 가져옵니다.
+사용 가능한 공간적 데이터베이스 파일(.srdb) 목록을 가져옵니다.
 
-**/api/holographic/mapmanager/getanchors (GET)**
+**/api/holographic/mapmanager/getanchors(GET)**
 
-현재 사용자에 대해 지속형 앵커 목록을 가져옵니다. 
+현재 사용자의 지속형 앵커 목록을 가져옵니다. 
 
 ### <a name="downloaduploaddelete-files"></a>파일 다운로드/업로드/삭제
-**/api/holographic/mapmanager/download (GET)**
+**/api/holographic/mapmanager/download(GET)**
 
-지도, 앵커 또는 공간 재구성 데이터베이스 파일을 다운로드 합니다. 이 파일은 이전에 업로드 하거나 내보내야 합니다.
+지도, 앵커 또는 공간 구조 데이터베이스 파일을 다운로드합니다. 파일이 이전에 업로드되거나 내보내졌어야 합니다.
 
 매개 변수
 * 파일 이름: 다운로드할 파일의 이름입니다.
@@ -341,7 +341,7 @@ $.post("/api/holographic/mapmanager/resetmapandanchorsandsrdb")
 매개 변수
 * holo: capture holograms: true 또는 false (기본값은 false)
 * pv: PV 카메라 캡처: true 또는 false (기본값은 false)
-* RenderFromCamera: (HoloLens 2만 해당) 사진/비디오 카메라의 관점에서 렌더링: true 또는 false (기본값은 true)
+* renderfromcamera: (HoloLens 2에만 해당) 사진/비디오 카메라의 관점에서 렌더링 합니다. true 또는 false (기본값은 true)
 
 **/api/holographic/mrc/settings (GET)**
 
@@ -353,17 +353,17 @@ $.post("/api/holographic/mapmanager/resetmapandanchorsandsrdb")
 
 **/api/holographic/mrc/status (GET)**
 
-Windows 장치 포털 내 혼합 현실 캡처의 상태를 가져옵니다.
+Windows 장치 포털 내에서 혼합 현실 캡처의 상태를 가져옵니다.
 
-**_응답_* _
+***응답***
 
-응답에는 Windows 장치 포털이 비디오를 기록 하 고 있는지 여부를 나타내는 JSON 속성이 포함 되어 있습니다.
+응답에는 Windows 장치 포털이 비디오를 녹화 하 고 있는지 여부를 나타내는 JSON 속성이 포함 되어 있습니다.
 
 ``` javascript
 {"IsRecording" : boolean}
 ```
 
-_ */api/holographic/mrc/thumbnail (GET)**
+**/api/holographic/mrc/thumbnail (GET)**
 
 지정 된 파일에 대 한 미리 보기 이미지를 가져옵니다.
 
@@ -379,9 +379,9 @@ _ */api/holographic/mrc/thumbnail (GET)**
 * pv: PV 카메라 캡처: true 또는 false (기본값은 false)
 * mic: 마이크 캡처: true 또는 false (기본값은 false)
 * 루프백: 응용 프로그램 오디오 캡처: true 또는 false (기본값은 false)
-* RenderFromCamera: (HoloLens 2만 해당) 사진/비디오 카메라의 관점에서 렌더링: true 또는 false (기본값은 true)
-* vstab: (HoloLens 2만 해당) 비디오 안정화 사용: true 또는 false (기본값은 true)
-* vstabbuffer: (HoloLens 2만 해당) 비디오 안정화 버퍼 대기 시간: 0-30 프레임 (기본값은 15 프레임)
+* renderfromcamera: (HoloLens 2에만 해당) 사진/비디오 카메라의 관점에서 렌더링 합니다. true 또는 false (기본값은 true)
+* vstab: (HoloLens 2에만 해당) 비디오 안정화 사용: true 또는 false (기본값은 true)
+* vstabbuffer: (HoloLens 2에만 해당) 비디오 안정화 버퍼 대기 시간: 0-30 프레임 (기본값은 15 프레임)
 
 **/api/holographic/mrc/video/control/stop (POST)**
 
@@ -392,7 +392,7 @@ _ */api/holographic/mrc/thumbnail (GET)**
 > [!CAUTION]
 > 루프백 격리로 인해 장치의 앱 내에서 혼합 현실 스트리밍에 연결할 수 없습니다.
 
-HoloLens는 조각화 된 mp4의 청크 다운로드를 통해 혼합 현실의 실시간 미리 보기를 지원 합니다.
+HoloLens은 조각화 된 mp4의 청크 다운로드를 통해 혼합 현실의 실시간 미리 보기를 지원 합니다.
 
 혼합 현실 스트림은 동일한 매개 변수 집합을 공유 하 여 캡처할 항목을 제어 합니다.
 * holo: capture holograms: true 또는 false
@@ -557,145 +557,145 @@ HoloLens는 조각화 된 mp4의 청크 다운로드를 통해 혼합 현실의 
 * 실습: 1로 설정 하 여 손으로 데이터를 기록 합니다.
 * spatialMapping: 1로 설정 하 여 공간 매핑을 기록 합니다.
 * 환경: 환경 데이터를 기록 하려면 1로 설정 합니다.
-* 이름: 기록의 이름입니다.
-* singleSpatialMappingFrame: 단일 공간 매핑 프레임만 기록 하려면 1로 설정 합니다.
+* name : 기록의 이름입니다.
+* singleSpatialMappingFrame: 단일 공간 매핑 프레임만 기록하려면 1로 설정합니다.
 
-**/api/holographic/simulation/recording/status (GET)**
+**/api/holographic/simulation/recording/status(GET)**
 
-기록 상태를 가져옵니다.
+기록 상태를 얻습니다.
 
-**/api/holographic/simulation/recording/stop (GET)**
+**/api/holographic/simulation/recording/stop(GET)**
 
-현재 기록을 중지 합니다. 기록이 파일로 반환 됩니다.
+현재 기록을 중지합니다. 녹화는 파일로 반환됩니다.
 
 ## <a name="performance-data"></a>성능 데이터
 
-**/api/resourcemanager/processes (GET)**
+**/api/resourcemanager/processes(GET)**
 
-세부 정보를 사용 하 여 실행 중인 프로세스의 목록을 반환 합니다.
-
-데이터 반환
-* 프로세스 목록 및 각 프로세스에 대 한 세부 정보를 포함 하는 JSON
-
-**/api/resourcemanager/systemperf (GET)**
-
-시스템 성능 통계 (i/o 읽기/쓰기, 메모리 통계 등)를 반환 합니다.
+세부 정보가 포함된 실행 중인 프로세스 목록을 반환합니다.
 
 데이터 반환
-* 시스템 정보를 포함 하는 JSON: CPU, GPU, 메모리, 네트워크, IO
+* 프로세스 목록 및 각 프로세스에 대한 세부 정보가 포함된 JSON
+
+**/api/resourcemanager/systemperf(GET)**
+
+시스템 perf 통계(I/O 읽기/쓰기, 메모리 통계 등)를 반환합니다.
+
+데이터 반환
+* 시스템 정보가 있는 JSON: CPU, GPU, 메모리, 네트워크, IO
 
 ## <a name="power"></a>고급
 
-**/sh/svhhhhhs (GET)**
+**/api/전원/배터리(GET)**
 
 현재 배터리 상태를 가져옵니다.
 
-**/api/power/state (GET)**
+**/api/power/state(GET)**
 
-시스템이 저전원 상태 인지 여부를 확인 합니다.
+시스템이 저전력 상태인지 확인합니다.
 
 ## <a name="remote-control"></a>원격 제어
 
-**/api/control/restart (POST)**
+**/api/control/restart(POST)**
 
-대상 장치를 다시 시작 합니다.
+대상 디바이스를 다시 시작합니다.
 
-**/sh/svcontroli (POST)**
+**/api/control/shutdown(POST)**
 
-대상 장치를 종료 합니다.
+대상 디바이스 종료
 
 ## <a name="task-manager"></a>작업 관리자
 
-**/api/taskmanager/app/app (DELETE)**
+**/api/taskmanager/app(DELETE)**
 
-최신 앱을 중지 합니다.
-
-매개 변수
-* 패키지: 앱 패키지의 전체 이름, hex64 인코드
-* forcestop: 모든 프로세스를 강제로 중지 합니다 (= 예).
-
-**/sh/svaryer/ps (POST)**
-
-최신 앱을 시작 합니다.
+최신 앱 중지
 
 매개 변수
-* appid: 시작 하는 앱의 PRAID, hex64 인코드
-* 패키지: 앱 패키지의 전체 이름, hex64 인코드
+* package : 앱 패키지의 전체 이름, hex64로 인코딩
+* forcestop : 모든 프로세스를 강제로 중지(=yes)
 
-## <a name="wifi-management"></a>WiFi 관리
+**/api/taskmanager/app(POST)**
 
-**/api/wifi/interfaces (GET)**
+최신 앱 시작
 
-무선 네트워크 인터페이스를 열거 합니다.
+매개 변수
+* appid : 시작할 앱의 PRAID, hex64로 인코딩
+* package : 앱 패키지의 전체 이름, hex64로 인코딩
+
+## <a name="wifi-management"></a>WiFi Management
+
+**/api/wifi/interfaces(GET)**
+
+무선 네트워크 인터페이스 열거
 
 데이터 반환
-* 세부 정보를 포함 하는 무선 인터페이스 목록 (GUID, 설명 등)
+* 세부 정보(GUID, 설명 등)가 있는 무선 인터페이스 목록
 
-**/api/wifi/network (DELETE)**
+**/api/wifi/network(DELETE)**
 
-지정 된 인터페이스에서 네트워크와 연결 된 프로필을 삭제 합니다.
-
-매개 변수
-* 인터페이스: 네트워크 인터페이스 guid
-* 프로필: 프로필 이름
-
-**/api/wifi/networks (GET)**
-
-지정 된 네트워크 인터페이스의 무선 네트워크를 열거 합니다.
+지정된 인터페이스에서 네트워크와 연결된 프로필을 삭제합니다.
 
 매개 변수
-* 인터페이스: 네트워크 인터페이스 guid
+* interface : 네트워크 인터페이스 guid
+* profile : 프로필 이름
+
+**/api/wifi/networks(GET)**
+
+지정된 네트워크 인터페이스의 무선 네트워크를 열거합니다.
+
+매개 변수
+* interface : 네트워크 인터페이스 guid
 
 데이터 반환
-* 네트워크 인터페이스에서 찾을 수 있는 무선 네트워크 목록 (세부 정보 포함)
+* 세부 정보가 포함된 네트워크 인터페이스에 있는 무선 네트워크 목록
 
-**/api/wifi/network (POST)**
+**/api/wifi/network(POST)**
 
-지정 된 인터페이스의 네트워크에 연결 하거나 연결을 끊습니다.
+지정된 인터페이스의 네트워크에 연결하거나 연결을 끊습니다.
 
 매개 변수
-* 인터페이스: 네트워크 인터페이스 guid
-* ssid: ssid, hex64 인코딩, 연결
-* op: 연결 또는 연결 끊기
-* createprofile: 예 또는 아니요
-* 키: shared key, hex64 encoded
+* interface : 네트워크 인터페이스 guid
+* ssid : ssid, hex64로 인코딩되어 연결
+* op : 연결 또는 연결 끊기
+* createprofile : 예 또는 아니요
+* key : 공유 키, hex64 인코딩
 
 ## <a name="windows-performance-recorder"></a>Windows 성능 레코더
 
-**/api/wpr/customtrace (POST)**
+**/api/wpr/customtrace(POST)**
 
-WPR 프로필을 업로드 하 고 업로드 된 프로필을 사용 하 여 추적을 시작 합니다.
+WPR 프로필을 업로드하고 업로드된 프로필을 사용하여 추적을 시작합니다.
 
-Payload
-* 여러 부분으로 구성 되는 http 본문
+페이로드
+* http 본문을 준수하는 다중 파트
 
 데이터 반환
-* WPR 세션 상태를 반환 합니다.
+* WPR 세션 상태를 반환합니다.
 
-**/api/wpr/status (GET)**
+**/api/wpr/status(GET)**
 
-WPR 세션의 상태를 검색 합니다.
+WPR 세션의 상태를 검색합니다.
 
 데이터 반환
 * WPR 세션 상태입니다.
 
-**/api/wpr/trace (GET)**
+**/api/wpr/trace(GET)**
 
-WPR (성능) 추적 세션을 중지 합니다.
+WPR(성능) 추적 세션을 중지합니다.
 
 데이터 반환
-* 추적 ETL 파일을 반환 합니다.
+* 추적 ETL 파일을 반환합니다.
 
-**/api/wpr/trace (POST)**
+**/api/wpr/trace(POST)**
 
-WPR (성능) 추적 세션을 시작 합니다.
+WPR(성능) 추적 세션을 시작합니다.
 
 매개 변수
-* 프로필: 프로필 이름입니다. 사용 가능한 프로필은 perfprofiles/profiles.js에 저장 됩니다.
+* profile : 프로필 이름입니다. 사용 가능한 프로필은 perfprofiles/profiles.js저장됩니다.
 
 데이터 반환
-* 시작 시 WPR 세션 상태를 반환 합니다.
+* 시작 시 WPR 세션 상태를 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 * [Windows 디바이스 포털 사용](using-the-windows-device-portal.md)
-* [장치 포털 핵심 API 참조 (UWP)](/windows/uwp/debug-test-perf/device-portal-api-core)
+* [장치 포털 핵심 API 참조(UWP)](/windows/uwp/debug-test-perf/device-portal-api-core)
