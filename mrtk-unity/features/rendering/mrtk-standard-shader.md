@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 재질 셰이더
-ms.openlocfilehash: 0a92388bc9be7c11967501709031f559f17f8966
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: e740c1cb662f88f7ce925482de9ed758d5f18ee152363a663aa678056ba2825f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176443"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115191236"
 ---
 # <a name="mrtk-standard-shader"></a>MRTK 표준 셰이더
 
@@ -28,30 +28,30 @@ MRTK Standard 음영 시스템은 Unity의 표준 셰이더와 비슷한 시각�
 
 ![재질 비교](../images/mrtk-standard-shader/MRTK_StandardMaterialComparison.gif)
 
-## <a name="architecture"></a>Architecture
+## <a name="architecture"></a>아키텍처
 
 MRTK/표준 음영 시스템은 [Unity의 셰이더 프로그램 변형 기능을](https://docs.unity3d.com/Manual/SL-MultipleProgramVariants.html) 사용하여 재질 속성에 따라 최적의 셰이더 코드를 자동으로 생성하는 "uber 셰이더"입니다. 사용자가 재질 검사기에서 재질 속성을 선택하면 사용하도록 설정한 기능에 대한 성능 비용만 발생합니다.
 
 ## <a name="material-inspector"></a>재질 검사기
 
-라는 MRTK/표준 셰이더에 대한 사용자 지정 재질 검사자가 [`MixedRealityStandardShaderGUI.cs`](xref:Microsoft.MixedReality.Toolkit.Editor.MixedRealityStandardShaderGUI) 있습니다. 검사기에서는 사용자 선택 및 렌더링 상태 설정에 따라 셰이더 기능을 자동으로 사용하거나 사용하지 않도록 설정합니다. 각 기능에 대한 자세한 내용은 **도구 설명에 대한 Unity 편집기에서 각 속성을 마우스로 가리키세요.**
+라는 MRTK/표준 셰이더에 대한 사용자 지정 재질 검사자가 [`MixedRealityStandardShaderGUI.cs`](xref:Microsoft.MixedReality.Toolkit.Editor.MixedRealityStandardShaderGUI) 있습니다. 검사기에서는 렌더링 상태 설정 시 사용자 선택 및 비정상 상태에 따라 셰이더 기능을 자동으로 사용하거나 사용하지 않도록 설정합니다. 각 기능에 대한 자세한 내용은 **도구 설명에 대한 Unity 편집기에서 각 속성을 마우스로 가리키세요.**
 
 ![재질 검사기](../images/mrtk-standard-shader/MRTK_MaterialInspector.jpg)
 
-검사기의 첫 번째 부분은 재질의 렌더링 상태를 제어합니다. *렌더링 모드는* 재질이 렌더링되는 시기와 방법을 결정합니다. MRTK/표준 셰이더의 목표는 [Unity/표준 셰이더 에 있는 렌더링 모드를 미러링하는](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html)것입니다. MRTK/표준 셰이더에는 추가 *렌더링* 모드와 완전한 사용자 정의 컨트롤을 위한 *사용자 지정* 렌더링 모드도 포함되어 있습니다.
+검사기의 첫 번째 부분은 재질의 렌더링 상태를 제어합니다. *렌더링 모드는* 재질이 렌더링되는 시기와 방법을 결정합니다. MRTK/표준 셰이더의 목표는 [Unity/표준 셰이더 에 있는 렌더링 모드를 미러링하는](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html)것입니다. MRTK/표준 셰이더에는 완전한 사용자 정의 컨트롤을 위한 *추가* 렌더링 모드 및 *사용자 지정* 렌더링 모드도 포함되어 있습니다.
 
 | 렌더링 모드 |         Description                                                       |
 |----------------|---------------------------------------------------------------------------|
 | 불투명         | (기본값) 투명 영역이 없는 일반 단색 개체에 적합합니다.    |
 | 컷아웃         | 불투명 영역과 투명 영역 사이에 하드 가장자리가 있는 투명 효과를 만들 수 있습니다. 이 모드에서는 반투명 영역이 없거나 질감이 100% 불투명하거나 보이지 않습니다. 투명도를 사용하여 초목과 같은 재질 모양을 만들 때 유용합니다. |
-| 페이드           | 반사 강조 표시 또는 리플렉션을 포함하여 투명도 값이 개체를 완전히 페이드 아웃하도록 허용합니다. 이 모드는 개체 페이드 인 또는 아웃에 애니메이션을 적용하려는 경우에 유용합니다. 반사와 강조 표시도 흐리게 표시되므로 투명한 투명 재질(예: 투명 투명 재질)을 렌더링하는 데 적합하지 않습니다. |
+| 페이드           | 반사 강조 표시 또는 리플렉션을 포함하여 투명도 값이 개체를 완전히 페이드 아웃하도록 허용합니다. 이 모드는 페이드 인 또는 아웃 개체에 애니메이션을 적용하려는 경우에 유용합니다. 반사와 강조 표시도 흐리게 표시되므로 투명한 투명 재질(예: 투명 투명 재질)을 렌더링하는 데 적합하지 않습니다. |
 | 투명    | 투명 투명 재질(예: 투명 투명 재질)을 렌더링하는 데 적합합니다. 이 모드에서는 재질 자체가 투명도 값(질감의 알파 채널 및 색조 색의 알파에 따라)을 적용합니다. 그러나 반사 및 조명 강조 표시는 실제 투명 재질의 경우처럼 완전히 명확하게 표시됩니다. |
 | 더하기       | 이전 픽셀 색을 현재 픽셀 색과 합산하는 가감 혼합 모드를 사용하도록 설정합니다. 투명도 정렬 문제를 방지하기 위한 기본 투명도 모드입니다.     |
-| 사용자 지정         | 렌더링 모드의 모든 측면을 수동으로 제어할 수 있습니다. 고급 용도로만 사용할 수 있습니다.   |
+| 사용자 지정         | 렌더링 모드의 모든 측면을 수동으로 제어할 수 있습니다. 고급 사용 전용입니다.   |
 
 ![렌더링 모드](../images/mrtk-standard-shader/MRTK_RenderingModes.jpg)
 
-| 추리 모드 |             Description                                                                                                                                                                       |
+| 형태선 모드 |             Description                                                                                                                                                                       |
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 끄기       | 얼굴 제거를 사용하지 않도록 설정합니다. 두 면 메시가 필요한 경우에만 끄기로 설정해야 합니다.                                                                                        |
 | Front     | 앞면을 자를 수 있습니다.                                                                                                                                                        |
@@ -74,7 +74,7 @@ MRTK 표준 셰이더 통계 예제
 
 ## <a name="lighting"></a>조명
 
-MRTK/표준은 조명에 간단한 근사값을 사용합니다. 이 셰이더에서는 물리적 정확성 및 에너지 소모를 계산하지 않으므로 빠르고 효율적으로 렌더링합니다. Blinn-Phong 기본 조명 기술로, Fresnel 및 이미지 기반 조명과 혼합되어 물리적 조명을 기반으로 합니다. 셰이더에서 지원하는 조명 기술은 다음과 같습니다.
+MRTK/표준은 조명에 간단한 근사값을 사용합니다. 이 셰이더에서는 물리적 정확성과 에너지 소모를 계산하지 않으므로 빠르고 효율적으로 렌더링합니다. Blinn-Phong 기본 조명 기술로, Fresnel 및 이미지 기반 조명과 혼합되어 물리적 조명을 기반으로 합니다. 셰이더에서 지원하는 조명 기술은 다음과 같습니다.
 
 ### <a name="directional-light"></a>방향성 광원
 
@@ -86,13 +86,13 @@ MRTK/표준은 조명에 간단한 근사값을 사용합니다. 이 셰이더�
 
 ### <a name="lightmapping"></a>Lightmapping
 
-정적 조명의 경우 셰이더가 Unity의 Lightmapping 시스템 로 빌드된 [Lightmaps를 준수합니다.](https://docs.unity3d.com/Manual/Lightmapping.html) 렌더러를 정적(또는 lightmap static)으로 표시하기만 하면 lightmaps를 사용할 수 있습니다.
+정적 조명의 경우 셰이더가 Unity의 Lightmapping 시스템 에서 빌드한 [lightmaps를 준수합니다.](https://docs.unity3d.com/Manual/Lightmapping.html) 렌더러를 정적(또는 lightmap static)으로 표시하기만 하면 간단한 맵을 사용할 수 있습니다.
 
-### <a name="hover-light"></a>마우스로 가리키기 조명
+### <a name="hover-light"></a>가리키기 라이트
 
 * [마우스로 가리키기 조명을 참조하세요.](hover-light.md)
 
-### <a name="proximity-light"></a>근접 광원
+### <a name="proximity-light"></a>근접 조명
 
 * [근접 광원을 참조하세요.](proximity-light.md)
 
@@ -104,7 +104,7 @@ MRTK 업그레이드를 수행하려면 **Mixed Reality Toolkit -> 유틸리티 
 
 ![lwrp 업그레이드](../images/mrtk-standard-shader/MRTK_LWRPUpgrade.jpg)
 
-업그레이드가 발생한 후 MRTK/표준 셰이더가 변경되고 자홍(셰이더 오류) 재질을 수정해야 합니다. 업그레이드가 성공적으로 수행되었는지 확인하려면 **콘솔에서 업그레이드된 자산/MixedRealityToolkit/StandardAssets/Shaders/MixedRealityStandard.shader에서 경량 렌더링 파이프라인과 함께 사용할** 수 있는지 확인합니다.
+업그레이드가 발생한 후 MRTK/표준 셰이더가 변경되고 자홍(셰이더 오류) 재질을 수정해야 합니다. 업그레이드가 성공적으로 수행되었는지 확인하려면 **콘솔에서 Lightweight Render 파이프라인에 사용할 업그레이드된 자산/MixedRealityToolkit/StandardAssets/Shaders/MixedRealityStandard.shader를 확인합니다.**
 
 ## <a name="ugui-support"></a>UGUI 지원
 
@@ -126,7 +126,7 @@ MRTK 내의 캔버스는 필요한 경우를 추가 하 라는 메시지를 표�
 
 | 채널 | 속성             |
 |---------|----------------------|
-| 빨강     | 금속             |
+| 빨간색     | 금속             |
 | 녹색   | 폐색            |
 | 파랑    | 내보내기 (회색조로 변환) |
 | 알파   | 원활           |
@@ -206,7 +206,7 @@ Albedo 최적화를 제어 하는 확인란입니다. 최적화 albedo 질감이
 
 ![기본 지도 배율 2](../images/mrtk-standard-shader/MRTK_NormalMapScale.gif)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [상호 작용 가능](../ux-building-blocks/interactable.md)
 * [가리키기 라이트](hover-light.md)

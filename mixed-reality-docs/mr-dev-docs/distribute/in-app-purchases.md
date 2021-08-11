@@ -1,17 +1,17 @@
 ---
 title: 앱에서 바로 구매
-description: 2D XAML 뷰 및 stock Windows OS 팝업을 사용 하 여 혼합 현실 앱에서 앱에서 바로 구매를 사용 하는 방법을 알아봅니다.
+description: 2d XAML 뷰 및 stock Windows OS popup을 사용 하 여 혼합 현실 앱에서 앱에서 바로 구매를 사용 하는 방법을 알아봅니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 앱에서 바로 구매, hololens, XAML, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: dfc5a0cfcc7a4d63147a753c8892d65dfae5e495
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: fbb957d1044a5c76c19691b875de8f9513bfc4b49bc4cb0dbb98d045d615f1a4
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582958"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196151"
 ---
 # <a name="in-app-purchases"></a>앱에서 바로 구매
 

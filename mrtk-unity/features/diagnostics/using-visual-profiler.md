@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 018d6bf2087b73697a1e1f43e206c96ae25e1f21
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 5db2094b5d7354e02a9e2f06c50e4d564ea7d8d259ce31ad5a11f49a71e27839
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177226"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190943"
 ---
 # <a name="using-the-visual-profiler"></a>시각적 프로파일러 사용
 
@@ -28,14 +28,14 @@ VisualProfiler는 혼합 현실 애플리케이션의 성능에 대한 사용하
 
 ## <a name="visual-profiler-interface"></a>시각적 프로파일러 인터페이스
 
-![Visual Profiler 인터페이스](../images/diagnostics/VisualProfiler.png)
+![시각적 프로파일러 인터페이스](../images/diagnostics/VisualProfiler.png)
 
 Visual Profiler 인터페이스에는 다음 구성 요소가 포함됩니다.
 
 - [프레임 속도](#frame-rate)
 - [프레임 시간](#frame-time)
 - [프레임 Graph](#frame-graph)
-- [메모리 사용량](#memory-utilization)
+- [메모리 사용률](#memory-utilization)
 
 ### <a name="frame-rate"></a>프레임 속도
 
@@ -78,7 +78,7 @@ GPU 시간은 향후 릴리스에서 추가될 예정입니다.
 
 Visual Profiler의 모양과 동작은 진단 시스템 프로필을 통해 사용자 지정할 수 있습니다. 자세한 내용은 [진단 시스템 구성을](configuring-diagnostics.md) 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [진단 시스템](diagnostics-system-getting-started.md)
 - [진단 시스템 구성](configuring-diagnostics.md)

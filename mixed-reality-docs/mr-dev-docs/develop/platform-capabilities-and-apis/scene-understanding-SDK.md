@@ -1,56 +1,56 @@
 ---
 title: 장면 이해 SDK
-description: 혼합 현실 앱에서 구성 요소, 메시 및 개체를 포함 하 여 장면 이해 SDK를 설치 하 고 사용 하는 방법에 대해 알아봅니다.
+description: 혼합 현실 앱에서 구성 요소, 메시 및 개체를 포함하여 Scene Understanding SDK를 설치하고 사용하는 방법을 알아봅니다.
 author: szymons
 ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: 장면 이해, 공간 매핑, Windows Mixed Reality, Unity
-ms.openlocfilehash: dee561e49a9457aa35c44037f4573caaefd00f2a
-ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
+ms.openlocfilehash: 1b93f3137e1ac1309ee56e974a0fa33608114f16dfb65a13e369490f45d6beb3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112449732"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193644"
 ---
 # <a name="scene-understanding-sdk-overview"></a>장면 이해 SDK 개요
 
-장면 이해는 혼합 현실 장치에서 캡처하는 비구조적 환경 센서 데이터를 변환 하 고 강력한 추상 표현으로 변환 합니다. SDK는 응용 프로그램과 장면 이해 런타임의 통신 계층으로 작동 합니다. 3D 표시를 위한 3D 장면 그래프, 2D 응용 프로그램의 경우 2D 사각형 및 패널과 같은 기존 표준 구문을 모방 하기 위한 것입니다. 구성 장면 이해를 모방 하는 것은 구체적인 프레임 워크에 매핑되므로 일반적인 SceneUnderstanding은 프레임 워크와 상호 작용 하는 다양 한 프레임 워크 간의 상호 운용성을 허용 하는 프레임 워크를 독립적입니다. 장면 이해는 SDK의 역할을 발전 시킬 때 새로운 표현과 기능이 통합 프레임 워크 내에서 계속 노출 되도록 합니다. 이 문서에서는 먼저 개발 환경/사용법을 파악 하는 데 도움이 되는 개략적인 개념을 소개 하 고 특정 클래스 및 구문에 대 한 자세한 설명서를 제공 합니다.
+장면 이해는 Mixed Reality 디바이스가 캡처하는 비정형 환경 센서 데이터를 변환하고 강력한 추상 표현으로 변환합니다. SDK는 애플리케이션과 Scene Understanding 런타임 간의 통신 계층 역할을 합니다. 3D 표현을 위한 3D 장면 그래프, 2D 애플리케이션에 대한 2D 사각형 및 패널과 같은 기존 표준 구문을 모방하는 것을 목표로 합니다. Scene Understanding이 모방하는 구문은 구체적인 프레임워크에 매핑되지만, 일반적으로 SceneUnderability는 프레임워크와 상호 작용하는 다양한 프레임워크 간의 상호 운용성을 허용하는 프레임워크에 구애받지 않습니다. Scene Understanding이 발전함에 따라 SDK의 역할은 통합 프레임워크 내에서 새로운 표현과 기능이 계속 노출되도록 하는 것입니다. 이 문서에서는 먼저 개발 환경/사용량을 익힌 다음, 특정 클래스 및 구문에 대한 보다 자세한 설명서를 제공하는 데 도움이 되는 개략적인 개념을 소개합니다.
 
-## <a name="where-do-i-get-the-sdk"></a>SDK는 어디에서 얻을 까 요?
+## <a name="where-do-i-get-the-sdk"></a>SDK는 어디서 얻을 수 있나요?
 
-SceneUnderstanding SDK는 [혼합 현실 기능 도구](../unity/welcome-to-mr-feature-tool.md)를 통해 다운로드할 수 있습니다.
+SceneUnderund SDK는 [Mixed Reality 기능 도구를](../unity/welcome-to-mr-feature-tool.md)통해 다운로드할 수 있습니다.
 
-**참고:** 최신 릴리스는 미리 보기 패키지에 의존 하므로 시험판 패키지를 사용 하도록 설정 하 여 해당 릴리스를 확인 해야 합니다.
+**참고:** 최신 릴리스는 미리 보기 패키지에 따라 달라지며, 이를 보려면 릴리스 전 패키지를 사용하도록 설정해야 합니다.
 
-버전 0.5.2022 이상에서, 장면 이해는 c # 및 c + +에 대 한 언어 프로젝션을 지원 하 여 응용 프로그램에서 Win32 또는 UWP 플랫폼용 응용 프로그램을 개발할 수 있도록 합니다. 이 버전부터 SceneUnderstanding는 HoloLens2와의 통신에만 사용 되는 SceneObserver를 제한 하는 unity의 unity 지원 기능을 지원 합니다. 
+버전 0.5.2022-rc 이상의 경우 Scene Understanding은 애플리케이션이 Win32 또는 UWP 플랫폼용 애플리케이션을 개발할 수 있도록 C# 및 C++에 대한 언어 프로젝션을 지원합니다. 이 버전에서 SceneUnderstanding은 HoloLens2와 통신하는 데만 사용되는 SceneObserver를 제외하는 Unity 편집기 내 지원을 지원합니다. 
 
-SceneUnderstanding에 Windows SDK 버전 18362 이상이 필요 합니다. 
+SceneUnderund에는 Windows SDK 버전 18362 이상이 필요합니다. 
 
 ## <a name="conceptual-overview"></a>개념적 개요
 
 ### <a name="the-scene"></a>장면
 
-혼합 현실 장치는 환경에서 표시 되는 내용에 대 한 정보를 지속적으로 통합 하 고 있습니다. 장면 이해는 이러한 모든 데이터 원본을 funnels 하나의 단일 단일 추상화를 생성 합니다. 장면 이해는 단일 항목의 인스턴스를 나타내는 [SceneObjects](scene-understanding-SDK.md#sceneobjects) 의 컴퍼지션 인 장면을 생성 합니다 (예: 벽/천장/바닥). 장면 개체 자체는이 SceneObject을 구성 하는 더 세분화 된 부분을 나타내는 [SceneComponents의 컴퍼지션입니다. 구성 요소의 예는 quads 및 메시 이지만 나중에 경계 상자, 충돌 망, 메타 데이터 등을 나타낼 수 있습니다.
+혼합 현실 디바이스는 사용자 환경에 표시되는 내용에 대한 정보를 지속적으로 통합하고 있습니다. Scene Understanding은 이러한 모든 데이터 원본을 유입하고 하나의 응집력 있는 추상화 하나를 생성합니다. Scene Understanding은 단일 사물의 인스턴스(예: 벽/최면/바닥)를 나타내는 [SceneObjects의](scene-understanding-SDK.md#sceneobjects) 컴퍼지션인 Scenes를 생성합니다. 장면 개체 자체는 이 SceneObject를 구성하는 보다 세분화된 부분을 나타내는 [SceneComponents]의 컴퍼지션입니다. 구성 요소의 예로는 쿼드와 메시가 있지만 나중에 경계 상자, 충돌 메시, 메타데이터 등을 나타낼 수 있습니다.
 
-원시 센서 데이터를 장면으로 변환 하는 프로세스는 보통 공간 (~ 50x50m)에 대해 보통 공간 (~ 10x10m)에서 몇 분이 걸릴 수 있으며, 따라서 응용 프로그램 요청 없이 장치에서 계산 되는 항목이 아닌 경우에 따라 비용이 많이 드는 작업입니다. 대신, 요청 시 응용 프로그램에서 장면 생성이 트리거됩니다. SceneObserver 클래스에는 장면을 계산 하거나 Deserialize 할 수 있는 정적 메서드가 있습니다. 그러면이를 열거/상호 작용할 수 있습니다. "Compute" 작업은 요청 시 실행 되며 CPU에서 실행 되지만 별도의 프로세스 (혼합 현실 드라이버)에서 실행 됩니다. 그러나 다른 프로세스에서 계산을 수행 하는 동안 결과 장면 데이터는 응용 프로그램에서 장면 개체에 저장 되 고 유지 관리 됩니다. 
+원시 센서 데이터를 장면으로 변환하는 프로세스는 중간 공간(~10x10m)의 경우 몇 초에서 큰 공간의 경우 분(~50x50m)으로 소요될 수 있는 비용이 많이 드는 작업이므로 애플리케이션 요청 없이 디바이스에서 계산되는 작업이 아닙니다. 대신, 장면 생성은 주문형 애플리케이션에 의해 트리거됩니다. SceneObserver 클래스에는 장면을 컴퓨팅 또는 역직렬화할 수 있는 정적 메서드가 있으며, 이 메서드를 열거/상호 작용할 수 있습니다. "Compute" 작업은 주문형으로 실행되며 CPU에서 실행되지만 별도의 프로세스(Mixed Reality 드라이버)에서 실행됩니다. 그러나 다른 프로세스에서 컴퓨팅을 수행하는 동안 결과 장면 데이터는 Scene 개체의 애플리케이션에 저장되고 유지 관리됩니다. 
 
-다음은이 프로세스 흐름을 보여 주고 장면 이해 런타임과 상호 작용 하는 두 개의 응용 프로그램 예제를 보여 주는 다이어그램입니다. 
+다음은 이 프로세스 흐름을 보여 주는 다이어그램이며 Scene Understanding 런타임과 상호 작용한 두 애플리케이션의 예를 보여 줍니다. 
 
 ![프로세스 다이어그램](images/SU-ProcessFlow.png)
 
-왼쪽에는 항상 자체 프로세스에서 실행 되 고 실행 되는 혼합 현실 런타임의 다이어그램이 있습니다. 이 런타임은 장치 추적, 공간 매핑 및 전 세계의 이해를 위해 장면에서 이해 하는 기타 작업을 수행 하는 작업을 담당 합니다. 다이어그램의 오른쪽에는 장면 이해를 활용 하는 두 개의 이론적인 응용 프로그램이 표시 됩니다. 첫 번째 응용 프로그램은 내부적으로 장면 이해 SDK를 사용 하는 MRTK를 사용 하 여 두 번째 앱은 별도의 두 장면 인스턴스를 계산 하 고 사용 합니다. 이 다이어그램의 세 가지 장면은 모두 백그라운드의 개별 인스턴스를 생성 합니다. 드라이버는 한 장면의 응용 프로그램과 장면 개체 간에 공유 되는 전역 상태를 추적 하지 않습니다. 장면 이해는 시간에 따라 추적 하는 메커니즘을 제공 하지만 SDK를 사용 하 여 수행 됩니다. 앱 프로세스의 SDK에서 추적 코드가 이미 실행 되 고 있습니다.
+왼쪽에는 항상 자체 프로세스에서 실행되고 있는 혼합 현실 런타임의 다이어그램이 있습니다. 이 런타임은 디바이스 추적, 공간 매핑 및 Scene Understanding이 주변 세계를 이해하고 추론하는 데 사용하는 기타 작업을 수행합니다. 다이어그램의 오른쪽에는 Scene Understanding을 사용하는 두 가지 이론적 애플리케이션이 표시됩니다. 첫 번째 애플리케이션은 내부적으로 Scene Understanding SDK를 사용하는 MRTK와 인터페이스하고, 두 번째 앱은 두 개의 개별 장면 인스턴스를 계산하고 사용합니다. 이 다이어그램의 세 장면 모두 장면의 고유한 인스턴스를 생성합니다. 드라이버는 애플리케이션과 장면 개체 간에 공유되는 글로벌 상태를 추적하지 않습니다. 한 장면에서 다른 장면에서는 찾을 수 없습니다. Scene Understanding은 시간에 따라 추적하는 메커니즘을 제공하지만 SDK를 사용하여 수행됩니다. 추적 코드가 앱 프로세스의 SDK에서 이미 실행되고 있습니다.
 
-각 장면은 응용 프로그램의 메모리 공간에 해당 데이터를 저장 하기 때문에 장면 개체의 모든 기능 또는 내부 데이터가 항상 응용 프로그램의 프로세스에서 실행 된다고 가정할 수 있습니다.
+각 장면 애플리케이션의 메모리 공간에 데이터를 저장하기 때문에 장면 개체 또는 내부 데이터의 모든 기능이 항상 애플리케이션의 프로세스에서 실행된다고 가정할 수 있습니다.
 
 ### <a name="layout"></a>Layout
 
-장면 이해를 사용 하려면 런타임이 구성 요소를 논리적 및 물리적으로 표시 하는 방법을 알고 이해 하는 것이 유용할 수 있습니다. 장면은 주요 수정이 필요 하지 않고 미래의 요구 사항을 충족 하는 pliable 기본 구조를 유지 하면서 간단 하 게 선택 된 특정 레이아웃을 가진 데이터를 나타냅니다. 장면에서는 모든 구성 요소 (모든 장면 개체의 빌딩 블록)를 단순 목록에 저장 하 고 특정 구성 요소가 다른 항목을 참조 하는 참조를 통해 계층 구조와 컴퍼지션을 정의 하 여이를 수행 합니다.
+Scene Understanding을 작업하려면 런타임이 구성 요소를 논리적 및 물리적으로 어떻게 나타내는지 알고 이해하는 것이 중요할 수 있습니다. 장면 은 주요 수정이 필요 없이 향후 요구 사항을 충족할 수 있는 기본 구조를 유지하면서 단순하도록 선택된 특정 레이아웃의 데이터를 나타냅니다. 장면에서는 모든 구성 요소(모든 장면 개체의 구성 요소)를 플랫 목록에 저장하고 특정 구성 요소가 다른 구성 요소를 참조하는 참조를 통해 계층 및 컴퍼지션을 정의하여 이 작업을 수행합니다.
 
-아래에서는 플랫 및 논리적 형식으로 된 구조의 예를 보여 주고 있습니다.
+아래에서는 구조체의 예를 평면 및 논리 형식으로 제시합니다.
 
 <table>
-<tr><th>논리적 레이아웃</th><th>물리적 레이아웃</th></tr>
+<tr><th>논리 레이아웃</th><th>물리적 레이아웃</th></tr>
 <tr>
 <td>
 <ul>
@@ -91,33 +91,33 @@ SceneUnderstanding에 Windows SDK 버전 18362 이상이 필요 합니다.
 </tr>
 </table>
 
-이 그림에서는 장면의 물리적 레이아웃과 논리적 레이아웃 간의 차이점을 보여 줍니다. 왼쪽에는 장면을 열거할 때 응용 프로그램에 표시 되는 데이터의 계층적 레이아웃이 표시 됩니다. 오른쪽에는 장면이 필요한 경우 개별적으로 액세스할 수 있는 12 개의 고유 구성 요소로 구성 되어 있습니다. 새 장면을 처리할 때 응용 프로그램이이 계층 구조를 논리적으로 탐색 하는 것이 좋지만, 장면 업데이트를 추적할 때 일부 응용 프로그램은 두 장면 간에 공유 되는 특정 구성 요소를 대상으로 하는 경우에만 관심이 있을 수 있습니다.
+이 그림에서는 장면의 물리적 레이아웃과 논리적 레이아웃 간의 차이점을 강조 표시합니다. 왼쪽에는 장면을 열거할 때 애플리케이션에서 볼 수 있는 데이터의 계층적 레이아웃이 표시됩니다. 오른쪽에서는 필요한 경우 개별적으로 액세스할 수 있는 12개의 개별 구성 요소로 구성된 장면을 볼 수 있습니다. 새 장면을 처리할 때 애플리케이션이 이 계층 구조를 논리적으로 안내할 것으로 예상합니다. 그러나 장면 업데이트 간에 추적할 때 일부 애플리케이션은 두 장면 간에 공유되는 특정 구성 요소를 대상으로 지정하는 데만 관심이 있을 수 있습니다.
 
 ## <a name="api-overview"></a>API 개요
 
-다음 섹션에서는 장면 이해의 구문에 대 한 개략적인 개요를 제공 합니다. 이 섹션을 읽으면 장면이 표시 되는 방법 및 다양 한 구성 요소를 사용 하는 방법에 대 한 이해를 제공 합니다. 다음 섹션에서는이 개요에서 달았습니다 구체적인 코드 예제 및 추가 세부 정보를 제공 합니다.
+다음 섹션에서는 Scene Understanding의 구문에 대한 개략적인 개요를 제공합니다. 이 섹션을 읽으면 장면을 표시하는 방법 및 다양한 구성 요소의 용도를 이해할 수 있습니다. 다음 섹션에서는 구체적인 코드 예제와 이 개요에 설명된 추가 세부 정보를 제공합니다.
 
-아래에 설명 된 모든 형식은 `Microsoft.MixedReality.SceneUnderstanding` 네임 스페이스에 있습니다.
+아래에 설명된 모든 형식은 `Microsoft.MixedReality.SceneUnderstanding` 네임스페이스에 있습니다.
 
 ### <a name="scenecomponents"></a>SceneComponents
 
-이제 배경의 논리적 레이아웃을 이해 했으므로 이제 SceneComponents의 개념과 계층 구조를 작성 하는 데 사용 되는 방법을 제공할 수 있습니다. SceneComponents는 메시 또는 쿼드 또는 경계 상자와 같은 단일 핵심 항목을 나타내는 SceneUnderstanding의 가장 세분화 된 decompositions입니다. SceneComponents은 독립적으로 업데이트 될 수 있고 다른 SceneComponents에서 참조할 수 있는 항목입니다. 따라서이 유형의 추적/참조 메커니즘을 허용 하는 단일 전역 속성의 고유 ID가 있습니다. Id는 장면 계층의 논리적 컴퍼지션 뿐만 아니라 개체 지 속성 (한 장면을 다른 장면으로 업데이트 하는 동작)에 사용 됩니다. 
+장면의 논리적 레이아웃을 이해했으므로 이제 SceneComponents의 개념과 이를 사용하여 계층 구조를 구성하는 방법을 제시할 수 있습니다. SceneComponents는 메시, 쿼드 또는 경계 상자와 같은 단일 코어를 나타내는 SceneUnderstanding에서 가장 세분화된 분해입니다. SceneComponents는 독립적으로 업데이트할 수 있고 다른 SceneComponents에서 참조할 수 있는 요소이므로 이러한 유형의 추적/참조 메커니즘을 허용하는 단일 전역 속성에 고유한 ID가 있습니다. ID는 장면 계층 구조의 논리적 컴퍼지션과 개체 지속성(한 장면을 다른 장면에 상대적으로 업데이트하는 동작)에 사용됩니다. 
 
-새로 계산 된 모든 장면을 고유 하 게 처리 하 고 그 안의 모든 데이터를 열거 하는 경우 Id는 주로 사용자에 게 투명 합니다. 그러나 여러 업데이트에 대 한 구성 요소를 추적 하려는 경우 Id를 사용 하 여 장면 개체 간 SceneComponents을 인덱싱합니다.
+새로 계산된 모든 장면을 고유한 것으로 취급하고 그 안에 있는 모든 데이터를 열거하는 경우 ID는 대부분 투명합니다. 그러나 여러 업데이트를 통해 구성 요소를 추적하려는 경우 ID를 사용하여 Scene 개체 간의 SceneComponents를 인덱싱하고 찾습니다.
 
 ### <a name="sceneobjects"></a>SceneObjects
 
-SceneObject은 "사물" (예: 벽, 층, 천장 등)의 인스턴스를 나타내는 SceneComponent입니다. Kind 속성으로 표현 됩니다. SceneObjects는 기 하 도형 이므로 공간에서 해당 위치를 나타내는 함수와 속성이 있지만 기하학적 또는 논리적 구조는 포함 하지 않습니다. 대신, SceneObjects는 다른 SceneComponents, 특히 SceneQuads 및 SceneMeshes를 참조 하 여 시스템에서 지 원하는 다양 한 표현을 제공 합니다. 새 장면을 계산 하면 응용 프로그램에서 관심 있는 항목을 처리 하는 장면의 SceneObjects을 열거 하는 경우가 많습니다.
+SceneObject는 "사물"(예: 벽, 바닥, 상한 등)의 인스턴스를 나타내는 SceneComponent입니다. 해당 Kind 속성으로 표현됩니다. SceneObjects는 기하학적이므로 공간의 위치를 나타내는 함수와 속성을 갖습니다. 그러나 기하학적 또는 논리적 구조는 포함하지 않습니다. 대신 SceneObjects는 시스템에서 지원하는 다양한 표현을 제공하는 다른 SceneComponents, 특히 SceneQuads 및 SceneMeshes를 참조합니다. 새 장면을 계산할 때 애플리케이션은 장면의 SceneObjects를 열거하여 관심 있는 것을 처리할 가능성이 큽니다.
 
-SceneObjects에는 다음 중 하나를 사용할 수 있습니다.
+SceneObjects는 다음 중 하나를 가질 수 있습니다.
 
 <table>
 <tr>
-<th>SceneObjectKind</th> <th>설명</th>
+<th>SceneObjectKind</th> <th>Description</th>
 </tr>
-<tr><td>배경</td><td>SceneObject는 인식 되는 다른 종류의 장면 개체 중 하나가 <b>아닌</b> 것으로 알려져 있습니다. 이 클래스는 배경을 벽/층/천장 등이 아닌 것으로 알려진 경우 알 수 없는와 혼동 해서는 안 됩니다. unknown은 아직 분류 되지 않습니다.</b></td></tr>
-<tr><td>벽</td><td>실제 벽입니다. 벽은 불균형 환경 구조로 간주 됩니다.</td></tr>
-<tr><td>Floor</td><td>바닥은 한 번에 진행할 수 있는 모든 표면입니다. 참고: 계단은 층이 아닙니다. 또한 해당 층은 walkable 표면을 가정 하므로 단일 층을 명시적으로 가정 하지 않습니다. 다중 수준 구조, 경사 등 ... 모두 바닥으로 분류 되어야 합니다.</td></tr>
+<tr><td>배경</td><td>SceneObject는 인식되는 다른 종류의 장면 개체 중 하나가 <b>아닌</b> 것으로 알려져 있습니다. 이 클래스는 배경이 벽/바닥/상한 등이 아닌 것으로 알려진 알 수 없음과 혼동해서는 안 됩니다. 알 수 없음은 아직 분류되지 않았습니다.</b></td></tr>
+<tr><td>벽</td><td>실제 벽입니다. 벽은 이동 불가능한 환경 구조로 간주합니다.</td></tr>
+<tr><td>Floor</td><td>바닥은 사람이 볼 수 있는 모든 표면입니다. 참고: 스트루는 바닥이 아닙니다. 또한 바닥은 볼 수 있는 표면을 가정하므로 단수 층을 명시적으로 가정하지 않습니다. 다중 수준 구조체, 램프 등... 는 모두 층으로 분류되어야 합니다.</td></tr>
 <tr><td>Ceiling</td><td>방의 위쪽 표면입니다.</td></tr>
 <tr><td>플랫폼</td><td>Holograms를 놓을 수 있는 커다란 플랫 표면입니다. 이는 테이블, countertops 및 기타 넓은 가로 표면을 나타내는 경향이 있습니다.</td></tr>
 <tr><td>World</td><td>레이블 지정과 무관 한 기하학적 데이터의 예약 된 레이블입니다. EnableWorldMesh 업데이트 플래그를 설정 하 여 생성 된 메시는 세계로 분류 됩니다.</td></tr>
@@ -264,7 +264,7 @@ foreach (var mesh in firstFloor.Meshes)
 
 장면 이해는 변환을 처리할 때 일반적인 3D 장면 표현과 맞추는 시도를 만들었습니다. 따라서 각 장면은 가장 일반적인 3D 환경 표현과 마찬가지로 단일 좌표계로 한정 됩니다. SceneObjects는 각 좌표계에 상대적인 위치를 제공 합니다. 응용 프로그램이 단일 원본에서 제공 하는 것의 제한을 스트레치 하는 장면을 처리 하는 경우 SpatialAnchors에 SceneObjects을 고정 하거나 여러 개의 장면을 생성 하 고 함께 병합할 수 있습니다. 하지만 간단 하 게 하기 위해에 의해 정의 된 하나의 NodeId로 지역화 된 자체 원본에 watertight 장면이 있다고 가정 합니다.
 
-예를 들어 다음 Unity 코드는 Windows 인식 및 Unity Api를 사용 하 여 좌표계를 함께 맞추는 방법을 보여 줍니다. Unity의 세계 원본에 해당 하는 SpatialCoordinateSystem를 가져오는 방법에 대 한 자세한 내용은 [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) 및 [SpatialGraphInteropPreview](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) 에서 Windows 인식 api 및 [혼합 현실 네이티브 개체](/windows/mixed-reality/unity-xrdevice-advanced) 에 대 한 자세한 내용을 참조 하세요.
+예를 들어 다음 Unity 코드는 Windows 인식 및 Unity api를 사용 하 여 좌표계를 함께 맞추는 방법을 보여 줍니다. unity의 세계 원본에 해당 하는 SpatialCoordinateSystem를 가져오는 방법에 대 한 자세한 내용은 [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) 및 [SpatialGraphInteropPreview](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) (영문) 및 [unity의 혼합 현실 네이티브 개체](/windows/mixed-reality/unity-xrdevice-advanced) 에 대 Windows 한 자세한 내용을 참조 하세요.
 
 ```cs
 private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)
@@ -425,11 +425,11 @@ mesh.GetVertexPositions(positions);
 
 Unity 샘플 코드에 대 한 장면 이해는 [Unity 샘플 페이지](https://github.com/sceneunderstanding-microsoft/unitysample) 페이지에서 찾을 수 있습니다. 이 응용 프로그램을 사용 하면 장치와 통신 하 여 다양 한 장면 개체를 렌더링 하거나, PC에서 serialize 된 장면을 로드 하 고, 장치 없이 장면 이해를 경험할 수 있습니다.
 
-### <a name="where-can-i-get-sample-scenes"></a>샘플 장면의 위치는 어디서 얻을 수 있나요?
+### <a name="where-can-i-get-sample-scenes"></a>샘플 장면을 어디에서 얻을 수 있나요?
 
-HoloLens2가 있는 경우 ComputeSerializedAsync의 출력을 파일에 저장하고 자신의 편의를 위해 deserializing하여 캡처한 모든 장면을 저장할 수 있습니다. 
+HoloLens2가 있는 경우 ComputeSerializedAsync의 출력을 파일에 저장 하 고 사용자의 편의를 위해이를 deserialize 하 여 캡처한 장면을 저장할 수 있습니다. 
 
-HoloLens2 디바이스가 없지만 Scene Understanding을 사용하려는 경우 미리 캡처된 장면을 다운로드해야 합니다. Scene Understanding 샘플은 현재 사용자 편의를 위해 다운로드하여 사용할 수 있는 직렬화된 장면과 함께 제공됩니다. 여기에서 찾을 수 있습니다.
+HoloLens2 장치가 없지만 장면 이해를 재생 하려는 경우에는 미리 캡처된 장면을 다운로드 해야 합니다. 장면 이해 샘플은 현재 사용자의 편의를 위해 다운로드 하 여 사용할 수 있는 직렬화 된 장면과 함께 제공 됩니다. 여기에서 찾을 수 있습니다.
 
 [장면 이해 샘플 장면](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)
 

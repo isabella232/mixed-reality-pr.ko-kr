@@ -1,18 +1,18 @@
 ---
-title: Fingertip 시각화
+title: 손끝 시각화
 description: MRTK의 FingerTip 시각화 개요
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk, Fingertip
-ms.openlocfilehash: af23fdb9b618e276b7442405e54b7dccd141e4ee
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 1df1740692a2c24213f34ffa6e52c135c7e7d14f96e7d99668feab82f879f756
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177533"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193306"
 ---
-# <a name="fingertip-visualization"></a>Fingertip 시각화
+# <a name="fingertip-visualization"></a>손끝 시각화
 
 ![Fingertip 시각화 기본](../images/fingertip/MRTK_FingertipVisualization_Main.png)
 

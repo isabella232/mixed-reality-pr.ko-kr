@@ -1,26 +1,26 @@
 ---
-title: Figma 도구 키트
+title: MRTK Figma Toolkit
 description: 공용 UI 구성 요소에 대 한 자산이 포함 된 공용 Ma 파일을 다운로드 합니다.
 author: dongpark
 ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
 keywords: 고가, 스케치, Adobe XD, 디자인, 디자이너, 디자인 파일, UX 디자인, HoloLens, mrtk, 혼합 현실 Toolkit
-ms.openlocfilehash: ef36e68e7340bc0a1500a9468db35d1e0b417ed6
-ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
+ms.openlocfilehash: e72dfece3252a35a8da2b1dc72a1476bbf174b36bf01b731b4f0be5af21f2a33
+ms.sourcegitcommit: 5977109661a1db4ee2be8ed532479342093303d5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114224333"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "116862628"
 ---
-# <a name="figma-toolkit"></a>Figma 도구 키트
+# <a name="mrtk-figma-toolkit"></a>MRTK Figma Toolkit
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGqke]
 
 mrtk에 지 Toolkit에서는 mrtk for Unity 또는 mrtk for unreal에서 찾을 수 있는 HoloLens 2 스타일 UI 컨트롤의 2d 버전을 제공 합니다. 디자인 프로세스에서이를 사용 하 여 UI 레이아웃 및 storyboard를 만들 수 있습니다.
 
 > [!div class="nextstepaction"]
-> [Toolkit 보기](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Figma-Toolkit-for-MRTK-%2F-HoloLens%2C-Windows-Mixed-Reality?node-id=116%3A4)
+> [MRTK Toolkit 보기](https://www.figma.com/file/zeGez3Phuzel9JrU1o20nn/Figma-Toolkit-for-MRTK-HoloLens-Windows-Mixed-Reality?node-id=116%3A4)
 
 ## <a name="how-to-use-figma-toolkit"></a>Toolkit를 사용 하는 방법
 **초안 메뉴에 중복** 을 사용 하 여 복사본을 만듭니다.

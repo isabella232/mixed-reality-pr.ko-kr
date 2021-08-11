@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 7/29/2019
 ms.topic: article
 keywords: OpenXR, 로드맵, 확장, Khronos, BasicXRApp, DirectX, 네이티브, 네이티브 앱, 사용자 지정 엔진, 미들웨어
-ms.openlocfilehash: e9071f8b15f19be564b7c246244a5b7561aa5968
-ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
+ms.openlocfilehash: 66ef972e09617e596a7d1d097073183943037e29b462ed3070d4defac91ca6b6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "113042244"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193753"
 ---
 # <a name="openxr"></a>OpenXR
 
@@ -19,11 +19,11 @@ ms.locfileid: "113042244"
 
 OpenXR는 <a href="https://www.khronos.org/" target="_blank">Khronos</a>의 오픈 로열티 없는 무료 API 표준으로, [혼합 현실 스펙트럼](../../discover/mixed-reality.md)에서 다양 한 장치에 대 한 기본 액세스를 포함 하는 엔진을 제공 합니다.
 
-OpenXR를 사용 하 여 개발할 수 있습니다는 HoloLens 2 또는 Windows Mixed Reality 모던 VR 헤드셋 바탕 화면입니다.  헤드셋에 액세스할 수 없는 경우 HoloLens 2 에뮬레이터 또는 Windows Mixed Reality 시뮬레이터를 대신 사용할 수 있습니다.
+바탕 화면에서 HoloLens 2 또는 Windows Mixed Reality 모던 VR 헤드셋에 OpenXR를 사용 하 여 개발할 수 있습니다.  헤드셋에 액세스할 수 없는 경우 HoloLens 2 Emulator 또는 Windows Mixed Reality 시뮬레이터를 대신 사용할 수 있습니다.
 
 ## <a name="why-openxr"></a>왜 OpenXR?
 
-OpenXR를 사용 하 여 HoloLens 2와 같은 holographic 장치를 모두 대상으로 하는 엔진과 데스크톱 Pc 용 Windows Mixed Reality 헤드셋과 같은 몰입 VR 장치를 빌드할 수 있습니다. OpenXR를 사용 하면 다양 한 하드웨어 플랫폼에서 이식할 수 있는 코드를 작성할 수 있습니다.
+OpenXR를 사용 하 여 데스크톱 pc 용 Windows Mixed Reality 헤드셋과 같은 HoloLens 2 및 몰입 VR 장치와 같은 holographic 장치를 모두 대상으로 하는 엔진을 빌드할 수 있습니다. OpenXR를 사용 하면 다양 한 하드웨어 플랫폼에서 이식할 수 있는 코드를 작성할 수 있습니다.
 
 OpenXR API는 로더를 사용 하 여 응용 프로그램을 헤드셋의 기본 플랫폼 지원에 직접 연결 합니다. 최종 사용자는 Windows Mixed Reality 또는 다른 헤드셋을 사용 하는지 여부에 상관 없이 최대 성능 및 최소 대기 시간을 얻을 수 있습니다.
 
@@ -33,7 +33,7 @@ OpenXR API는 holographic 및 몰입 형 장치를 모두 대상으로 할 수 �
 
 OpenXR API에 대 한 자세한 내용은 OpenXR 1.0 <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">사양</a>, <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html" target="_blank">API 참조</a>및 <a href="https://www.khronos.org/files/openxr-10-reference-guide.pdf" target="_blank">빠른 참조 가이드</a>를 확인 하세요.  자세한 내용은 <a href="https://www.khronos.org/openxr/" target="_blank">Khronos OpenXR 페이지</a>를 참조 하세요.
 
-HoloLens 2의 전체 기능 집합을 대상으로 지정 하기 위해, OpenXR 1.0 코어 이외의 추가 기능 (예: OpenXR)을 사용 하도록 설정 하는 공급 업체 및 공급 업체별 확장을 사용 합니다. 자세한 내용은 올해 후반에 나오는 확장에서 아래의 [로드맵 섹션](#roadmap) 을 참조 하세요.
+HoloLens 2의 전체 기능 집합을 대상으로 지정 하기 위해 OpenXR 1.0 코어 이외의 추가 기능을 사용할 수 있도록 하는 공급 업체 및 공급 업체별 OpenXR 확장을 사용 합니다 (예: 트레일러 식 추적, 눈 추적, 공간 매핑 및 공간 앵커). 자세한 내용은 올해 후반에 나오는 확장에서 아래의 [로드맵 섹션](#roadmap) 을 참조 하세요.
 
 OpenXR는 혼합 현실 엔진이 아닙니다.  대신, OpenXR를 사용 하 여 Unity와 같은 엔진에서 이식 가능한 코드를 작성 한 후에는 해당 플랫폼을 기반으로 하는 사용자의 holographic 또는 모던 장치의 기본 플랫폼 기능에 액세스할 수 있습니다.
 
@@ -79,35 +79,35 @@ Windows Mixed Reality OpenXR 런타임은 `MSFT` `EXT` HoloLens 2 기능의 전�
 
 ![혼합 현실 헤드셋을 입고 사용자가 재생 중인 Minecraft의 스크린샷](images/openxr-minecraft.jpg)
 
-*Minecraft 's new RenderDragon 엔진은 OpenXR를 사용 하 여 데스크톱 VR 지원을 구축 했습니다.*
+*Minecraft의 새 renderdragon 엔진은 OpenXR를 사용 하 여 데스크톱 VR 지원을 구축 했습니다.*
 
-Microsoft는 전 [세계의 새로운 반향 G2 헤드셋](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)을 비롯 한 모든 범위의 PC VR 전체에서 (HoloLens 2 뿐만 아니라), 혼합 현실의 미래를 개방 하도록 Unity 및 대규모 사용자 스토리 게임을 사용 했습니다.  OpenXR는 현재 Minecraft 및 Microsoft 비행 시뮬레이터 등의 주요 타이틀 배송에 대 한 공급 업체의 VR 지원 기능을 제공 합니다.  HoloLens (첫 번째 gen)를 개발 하는 방법에 대 한 자세한 내용은 [릴리스 정보](/hololens/hololens1-release-notes)를 참조 하세요.
+Microsoft는 HoloLens 2 뿐만 아니라 [HP의 새로운 반향 G2 헤드셋](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)을 비롯 한 모든 범위의 PC VR 전체에서 혼합 현실의 미래를 개방 하도록 Unity 및 대규모 사용자 스토리 게임을 사용 했습니다.  OpenXR는 현재 Minecraft 및 Microsoft 비행 시뮬레이터 등의 주요 타이틀 배송에 대 한 공급 업체의 VR 지원 기능을 제공 합니다.  HoloLens (첫 번째 gen)를 개발 하는 방법에 대 한 자세한 내용은 [릴리스 정보](/hololens/hololens1-release-notes)를 참조 하세요.
 
 Unity, Unreal Engine 또는 사용자 고유의 엔진에서 OpenXR를 시작 하는 방법을 알아보려면을 읽어 보세요.
 
 ### <a name="openxr-in-unity"></a>Unity의 OpenXR
 
-Microsoft의 최신 권장 Unity 구성-HoloLens 2 및 Windows Mixed Reality 개발은 최신 Mixed Reality OpenXR 플러그 인 **unity 2020.3 LTS** 입니다.  이 플러그 인에는 핸드 위/눈 추적, 공간 앵커 및 HP 반향 G2 컨트롤러를 포함 하 여 [HoloLens 2 및 Windows Mixed Reality 헤드셋의 전체 기능](#roadmap)을 강화 하는 OpenXR 확장에 대 한 지원이 포함 되어 있습니다.  MRTK-Unity는 [Mrtk 2.7](../unity/tutorials/mr-learning-base-02.md?tabs=openxr#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)OpenXR을 지원 합니다.  Unity 2020 및 OpenXR를 시작 하는 방법에 대 한 자세한 내용은 [unity 버전 선택](../unity/choosing-unity-version.md)을 참조 하세요.
+HoloLens 2 및 Windows Mixed Reality 개발에 대 한 Microsoft의 현재 권장 unity 구성은 최신 Mixed Reality OpenXR 플러그 인을 사용 하는 **Unity 2020.3 lts** 입니다.  이 플러그 인은 수동/눈 추적, 공간 앵커 및 HP 반향 G2 컨트롤러를 포함 하 여 [HoloLens 2 및 Windows Mixed Reality 헤드셋의 전체 기능](#roadmap)을 강화 하는 OpenXR 확장에 대 한 지원을 포함 합니다.  MRTK-Unity는 [Mrtk 2.7](../unity/tutorials/mr-learning-base-02.md?tabs=openxr#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)OpenXR을 지원 합니다.  Unity 2020 및 OpenXR를 시작 하는 방법에 대 한 자세한 내용은 [unity 버전 선택](../unity/choosing-unity-version.md)을 참조 하세요.
 
-HoloLens (첫 번째 gen) 용으로 개발 하는 경우 레거시 WinRT API 백 엔드와 함께 **Unity 2019.4 LTS** 를 계속 사용 해야 합니다.  Unity 2019 앱에서 새로운 HP 반향 G2 컨트롤러를 대상으로 하는 경우 [Hp 반향 g2 입력 문서](../unity/unity-reverb-g2-controllers.md)를 참조 하세요.
+HoloLens (첫 번째 gen) 용으로 개발 하는 경우 레거시 WinRT API 백 엔드와 함께 **Unity 2019.4 lts** 를 계속 사용 해야 합니다.  Unity 2019 앱에서 새로운 HP 반향 G2 컨트롤러를 대상으로 하는 경우 [Hp 반향 g2 입력 문서](../unity/unity-reverb-g2-controllers.md)를 참조 하세요.
 
-**Unity 2021.2** 부터 OpenXR는 HoloLens 2 및 Windows Mixed Reality 헤드셋을 대상으로 하도록 지원 되는 유일한 Unity 백 엔드입니다.
+**unity 2021.2** 부터 HoloLens 2 및 Windows Mixed Reality 헤드셋을 대상으로 지정 하기 위해 OpenXR가 지원 되는 유일한 Unity 백 엔드가 됩니다.
 
 ### <a name="openxr-in-unreal-engine"></a>Unreal Engine의 OpenXR
 
-Unreal Engine 4.23은 OpenXR 1.0에 대 한 미리 보기 지원을 제공 하는 최초의 주요 게임 엔진 릴리스입니다.  이제 **Unreal engine 4.26** 에서 HoloLens 2, Windows Mixed Reality 및 기타 데스크톱 VR 헤드셋은 Unreal engine의 기본 제공 OpenXR 지원을 통해 제공 됩니다.  Unreal Engine 4.26은 [Microsoft의 OpenXR 확장 플러그 인](https://github.com/microsoft/Microsoft-OpenXR-Unreal)도 지원 하며, 직접 상호 작용 및 HP 반향 G2 컨트롤러 지원을 사용 하도록 설정 하 여 [HoloLens 2 및 Windows Mixed Reality 헤드셋의 전체 기능 집합](#roadmap)을 제공 합니다.  OpenXR 프로젝트를 지 원하는 MRTK-Unreal 0.12을 사용 하 여 현재 사용자 [스토리 게임 시작 관리자](https://www.unrealengine.com/download/creators)에서 Unreal Engine 4.26을 사용할 수 있습니다.
+Unreal Engine 4.23은 OpenXR 1.0에 대 한 미리 보기 지원을 제공 하는 최초의 주요 게임 엔진 릴리스입니다.  이제 **unreal engine 4.26** 에서 HoloLens 2, Windows Mixed Reality 및 기타 데스크톱 VR 헤드셋은 unreal engine의 기본 제공 OpenXR 지원을 통해 제공 됩니다.  unreal Engine 4.26은 [Microsoft의 OpenXR 확장 플러그 인](https://github.com/microsoft/Microsoft-OpenXR-Unreal)도 지원 하 여 직접 상호 작용 및 HP 반향 G2 컨트롤러 지원을 지원 하 [고 HoloLens 2의 전체 기능 집합](#roadmap)을 조명 하 고 헤드셋을 Windows Mixed Reality 합니다.  OpenXR 프로젝트를 지 원하는 MRTK-Unreal 0.12를 사용 하 여 [시작 관리자](https://www.unrealengine.com/download/creators)에서 현재 사용 되지 않는 엔진 4.26을 현재 사용할 수 있습니다.
 
 ### <a name="openxr-for-native-development"></a>OpenXR for native development
 
-OpenXR를 사용 하 여 개발할 수 있습니다는 HoloLens 2 또는 Windows Mixed Reality 모던 VR 헤드셋 바탕 화면입니다.  헤드셋에 액세스할 수 없는 경우 HoloLens 2 에뮬레이터 또는 Windows Mixed Reality 시뮬레이터를 대신 사용할 수 있습니다.
+바탕 화면에서 HoloLens 2 또는 Windows Mixed Reality 모던 VR 헤드셋에 OpenXR를 사용 하 여 개발할 수 있습니다.  헤드셋에 액세스할 수 없는 경우 HoloLens 2 Emulator 또는 Windows Mixed Reality 시뮬레이터를 대신 사용할 수 있습니다.
 
-HoloLens 2 또는 Windows Mixed Reality VR 헤드셋의 OpenXR 응용 프로그램 개발을 시작 하려면 [OpenXR 개발을 시작 하는 방법](openxr-getting-started.md)을 참조 하세요.
+HoloLens 2 또는 Windows Mixed Reality VR 헤드셋에 대 한 OpenXR 응용 프로그램 개발을 시작 하려면 [OpenXR 개발을 시작 하는 방법](openxr-getting-started.md)을 참조 하세요.
 
 지금 OpenXR를 사용 하는 실제 응용 프로그램의 예제와 함께 OpenXR API의 모든 주요 구성 요소에 대 한 둘러보기는이 60 분 연습 비디오를 확인 하세요.
 
 >[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * <a href="https://www.khronos.org/openxr/" target="_blank">OpenXR에 대 한 자세한 정보</a>
 * <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">OpenXR 1.0 사양</a>

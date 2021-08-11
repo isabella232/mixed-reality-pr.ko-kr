@@ -1,21 +1,21 @@
 ---
 title: 혼합 현실에서 공유 환경
-description: Holographic apps는 한 HoloLens에서 다른 HoloLens로 공간 앵커를 공유할 수 있으므로 사용자는 여러 장치에서 실제 세계의 동일한 위치에 홀로그램을 렌더링할 수 있습니다.
+description: Holographic apps는 한 HoloLens 간에 공간 앵커를 공유할 수 있으므로 사용자가 여러 장치에서 실제 세계의 동일한 위치에 홀로그램을 렌더링할 수 있습니다.
 author: thetuvix
 ms.author: grbury
 ms.date: 02/10/2019
 ms.topic: article
 keywords: 공유 환경, 혼합 현실, 홀로그램, 공간 앵커, 다중 사용자, 다중
-ms.openlocfilehash: 3383bcd8b87dad6e817262d96b8ac1ebb3d0c8f5
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: fe738d07e57bd2f62cab8036a09ca6ab31d6544bdd9b6dacc8dde3445fa58214
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583156"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193593"
 ---
 # <a name="shared-experiences-in-mixed-reality"></a>혼합 현실에서 공유 환경
 
-Holograms 한 명의 사용자만 개인으로 유지할 필요가 없습니다. Holographic apps는 한 HoloLens, iOS 또는 Android 장치에서 다른 장치로 [공간 앵커](../../design/spatial-anchors.md) 를 공유할 수 있으므로 사용자가 여러 장치에서 실제 세계의 동일한 위치에 홀로그램을 렌더링할 수 있습니다.
+홀로그램스 한 사용자만 개인으로 유지할 필요가 없습니다. Holographic apps는 한 HoloLens, iOS 또는 Android 장치에서 다른 장치로 [공간 앵커](../../design/spatial-anchors.md) 를 공유할 수 있으므로 사용자가 여러 장치에서 실제 세계의 동일한 위치에 홀로그램을 렌더링할 수 있습니다.
 
 ## <a name="six-questions-to-define-shared-scenarios"></a>공유 시나리오를 정의 하는 6 가지 질문
 
@@ -71,7 +71,7 @@ HoloLens 파트너 기관의 내부 프로토타입 및 탐색을 통해 공유 
 
 ### <a name="4-when-are-they-sharing"></a>4. 언제 공유 됩니까?
 
-일반적으로 공유 환경을 염두에 두면 **동기** 환경을 고려 합니다. 그러나 다른 사용자가 추가한 단일 가상 요소를 포함 하는 경우에는 **비동기** 시나리오가 있습니다. 가상 환경에 메모 또는 음성 메모를 남겨 보겠습니다. 디자인에서 100 가상 메모를 어떻게 처리 하나요? 서로 다른 수준의 개인 정보를 가진 수십 명의 사용자에 게 있는 경우 어떻게 되나요?
+일반적으로 공유 환경을 염두에 두면 **동기** 환경을 고려 합니다. 그러나 다른 사용자가 추가한 단일 가상 요소를 포함 하는 경우에는 **비동기** 시나리오가 있습니다. 가상 환경에서 메모 또는 음성 메모를 Imagine 합니다. 디자인에서 100 가상 메모를 어떻게 처리 하나요? 서로 다른 수준의 개인 정보를 가진 수십 명의 사용자에 게 있는 경우 어떻게 되나요?
 
 이러한 시간 범주 중 하나로 경험을 고려 합니다.
 
@@ -108,80 +108,80 @@ HoloLens 파트너 기관의 내부 프로토타입 및 탐색을 통해 공유 
 
 위의 질문에 대 한 답변을 결합 하 여 공유 시나리오를 보다 잘 이해 하 고 환경을 확장할 때 문제를 crystallizing 수 있습니다. Microsoft의 팀을 위해이는 현재 사용 되는 환경을 개선 하 고, 이러한 복잡 한 문제의 nuance 이해 하 고, 혼합 현실에서 공유 환경을 활용 하는 방법에 대 한 로드맵을 구축 하는 데 도움이 되었습니다.
 
-예를 들어 HoloLens 시작에서 Skype의 시나리오 중 하나를 고려해 보세요. 원격으로 위치한 전문가의 도움으로 [손상 된 라이트 전환을 수정](https://www.youtube.com/watch?v=iBfzs3G8BEA) 하는 방법을 사용자가 작업 했습니다.
+예를 들어, 사용자가 원격으로 위치한 전문가의 도움으로 [손상 된 라이트 전환을 수정](https://www.youtube.com/watch?v=iBfzs3G8BEA) 하는 방법으로 작업 하는 HoloLens 시작에서 Skype 시나리오 중 하나를 고려해 보세요.
 
-![HoloLens를 사용 하는 Skype를 통한 라이트 전환 지원](images/fix-a-broken-switch-with-hololens-640px.jpg)
+![HoloLens에 대 한 Skype 통해 지원으로 라이트 전환 수정](images/fix-a-broken-switch-with-hololens-640px.jpg)
 
 *전문가는 **2d** 데스크톱 컴퓨터에서 **3d 혼합 현실** 장치의 사용자에 게 **1:1** 지침을 제공 합니다. **지침은** **동기식** 이며 물리적 환경은 **서로 다른** 것입니다.*
 
 이와 같은 환경은 현재 경험을 변경 하 여 비디오 및 음성의 패러다임을 새 미디어에 적용 하는 것입니다. 하지만 나중에 살펴볼 때 시나리오의 기회를 정의 하 고 혼합 현실 강도를 반영 하는 환경을 구축 해야 합니다.
 
-NASA의 Jet Jpl 실험에서 개발한 [Onsight 공동 작업 도구](https://www.youtube.com/watch?v=XtUyUJAVQ6w)를 생각해 보세요. Mars 과학자의 데이터 작업은 Martian의 데이터 내에서 실시간으로 동료와 공동 작업을 수행할 수 있습니다.
+NASA의 Jet Jpl 실험에서 개발한 [Onsight 공동 작업 도구](https://www.youtube.com/watch?v=XtUyUJAVQ6w)를 생각해 보세요. Mars Rover 임무의 데이터를 작업하는 과학자는 마트 지형의 데이터 내에서 동료와 실시간으로 협업할 수 있습니다.
 
-![Mars에서 작업을 계획 하기 위해 원격으로 분리 된 동료 간 공동 작업](images/onsight-nasa-jpl.gif)
+![Mars Rover에 대한 작업을 계획하기 위해 원격으로 분리된 동료 간의 공동 작업](images/onsight-nasa-jpl.gif)
 
-*과학자는 **3d 및 2d** 장치를 사용 하는 **소규모** 의 **원격** 동료 그룹과 함께 **3d, 혼합 현실** 장치를 사용 하 여 환경을 탐색 합니다. **공동 작업** 은 **동기식** (하지만 비동기적으로 확인할 수 있음) 및 물리적 환경은 거의 **비슷합니다**.*
+*과학자는 **3D 및 2D** 디바이스를 사용하는 **소규모** **원격** 동료 그룹이 있는 **3D** 혼합 현실 디바이스를 사용하여 환경을 탐색합니다. **협업은** **동기식이지만** 비동기적으로 다시 방문할 수 있으며 물리적 환경은 (가상으로) **유사합니다.***
 
-새 공동 작업 기회와 같은 경험을 제공 합니다. 가상 환경의 요소를 실제로 가리키는 것부터 동료 옆에 있는 것으로, 해당 결과를 설명 하는 관점을 공유 합니다. OnSight는 혼합 현실에서 공유 환경을 집중 교육 및 현재의 렌즈를 사용 합니다.
+OnSight와 같은 환경은 공동 작업할 수 있는 새로운 기회를 제공합니다. 가상 환경의 요소를 물리적으로 가리키는 것부터 동료 옆에 서 있고 결과를 설명할 때 자신의 관점을 공유하는 것까지. OnSight는 몰입 및 현재 상태의 렌즈를 사용하여 혼합 현실에서 공유 환경을 재고합니다.
 
-직관적인 공동 작업은 대화의 bedrock, 함께 작동 하 고 혼합 현실의 복잡성에이 intuition를 적용할 수 있는 방법을 이해 하는 것이 중요 합니다. 혼합 현실에서 공유 환경을 다시 만들 수 있을 뿐만 아니라 수퍼 차지 수 있는 경우에는 작업의 미래에 대 한 패러다임 변화입니다. 혼합 현실에서 공유 환경을 디자인 하는 것은 새롭고 흥미로운 공간으로, 처음에만 제공 됩니다.
+직관적인 협업은 함께 작업하고 혼합 현실의 복잡성에 이러한 직관을 적용하는 방법을 이해하는 것이 매우 중요한 대화입니다. 혼합 현실에서 공유 환경을 다시 만들 수 있을 뿐만 아니라 이를 겹쳐서 만들 수 있는 경우 작업의 미래를 위한 패러다임 전환이 될 것입니다. 혼합 현실에서 공유 환경을 디자인하는 것은 새롭고 흥미로운 공간이며, 시작에 불과합니다.
 
 ## <a name="get-started-building-shared-experiences"></a>공유 환경 빌드 시작
 
-응용 프로그램 및 시나리오에 따라 원하는 환경을 구현 하기 위한 다양 한 요구 사항이 있습니다. 그 중 일부는 다음과 같습니다.
+애플리케이션 및 시나리오에 따라 원하는 환경을 달성하기 위한 다양한 요구 사항이 있습니다. 그 중 일부는 다음과 같습니다.
 
-* **일치-만들기**: 세션을 만들고, 세션을 보급 하 고, 세션에 연결 하기 위해 로컬 및 원격으로 특정 사용자를 검색 및 초대 하는 기능입니다.
-* **앵커 공유**: 일반적인 로컬 공간에서 여러 장치에 좌표를 정렬 하는 기능을 holograms 모든 사람들에 게 동일한 위치에 표시 됩니다.
-* **네트워킹**: 모든 참가자에 게 실시간으로 동기화 된 사람 및 holograms의 위치, 상호 작용 및 이동 기능을 제공 합니다.
-* **상태 저장소**: 외부 세션 조인을 위한 공간에 홀로그램 특성 및 위치를 저장 하 고, 나중에 회수 하 고, 네트워크 문제에 대 한 견고성을 제공 합니다.
+* **일치 만들기:** 세션을 만들고, 세션을 보급하고, 로컬 및 원격으로 특정 사람을 검색하고 초대하여 세션에 참가할 수 있습니다.
+* **앵커 공유:** 공통 로컬 공간에서 여러 디바이스에 좌표를 맞추는 기능으로, 홀로그램이 모든 사람의 동일한 위치에 표시됩니다.
+* **네트워킹:** 모든 참가자에서 사람 및 홀로그램의 위치, 상호 작용 및 움직임을 실시간으로 동기화할 수 있습니다.
+* **상태 스토리지:** 세션 중간 조인, 나중에 회수 및 네트워크 문제에 대한 견고성을 위해 홀로그램 특성 및 위치를 공간에 저장할 수 있습니다.
 
-공유 환경의 핵심은 여러 사용자가 자신의 장치에서 동일한 holograms를 볼 수 있도록 하는 것입니다 .이 경우에는 여러 장치에서 좌표를 정렬 하기 위해 앵커를 공유 하 여 자주 수행 됩니다.
+공유 환경의 핵심은 여러 사용자가 자신의 디바이스에서 전 세계에서 동일한 홀로그램을 볼 수 있도록 하는 것이며, 앵커를 공유하여 디바이스 간에 좌표를 맞추는 경우가 많습니다.
 
-앵커를 공유 하려면 [Azure 공간 앵커](/azure/spatial-anchors)를 사용 합니다.
+앵커를 공유하려면 [Azure Spatial Anchors](/azure/spatial-anchors)를 사용합니다.
 
-* 먼저 사용자가 홀로그램을 배치 합니다.
-* 앱은 [공간 앵커](../../design/spatial-anchors.md)를 만들어 전 세계에 해당 홀로그램을 정확 하 게 고정 합니다.
-* [Azure 공간 앵커](/azure/spatial-anchors/)를 통해 HoloLens, IOS 및 Android 장치에 대 한 앵커를 공유할 수 있습니다.
+* 먼저 사용자가 홀로그램을 배치합니다.
+* 앱은 [공간 앵커](../../design/spatial-anchors.md)를 만들어 해당 홀로그램을 전 세계에 정확하게 고정합니다.
+* [앵커는 Azure](/azure/spatial-anchors/)Spatial Anchors 통해 HoloLens, iOS 및 Android 디바이스에 공유할 수 있습니다.
 
-공유 공간 앵커를 사용 하는 경우 각 장치에서 앱은 이제 콘텐츠를 저장할 수 있는 [공용 좌표계](../../design/coordinate-systems.md) 를 사용 합니다. 이제 앱에서 홀로그램을 동일한 위치에 배치 하 고 방향을 지정할 수 있습니다.
+공유 공간 앵커를 사용하면 각 디바이스의 앱에 콘텐츠를 배치할 수 있는 [공통 좌표계가](../../design/coordinate-systems.md) 있습니다. 이제 앱은 홀로그램을 동일한 위치에 배치하고 방향을 지정할 수 있습니다.
 
-HoloLens 장치에서 한 장치에서 다른 장치로 앵커를 오프 라인으로 공유할 수도 있습니다.  아래 링크를 사용 하 여 응용 프로그램에 가장 적합 한 항목을 결정 합니다.
+HoloLens 디바이스에서 한 디바이스에서 다른 디바이스로 앵커를 오프라인으로 공유할 수도 있습니다.  아래 링크를 사용하여 애플리케이션에 가장 적합한 것을 결정합니다.
 
 ## <a name="evaluating-tech-options"></a>기술 옵션 평가
 
-다중 사용자 혼합 현실 환경을 빌드하는 데 도움이 되는 다양 한 서비스 및 기술 옵션을 사용할 수 있습니다.  경로를 선택 하는 것이 어려울 수 있으므로 시나리오 중심의 큐브 뷰를 사용할 경우 몇 가지 옵션이 아래에 자세히 설명 되어 있습니다.
+다중 사용자 혼합 현실 환경을 빌드하는 데 사용할 수 있는 다양한 서비스 및 기술 옵션이 있습니다.  경로를 선택하는 것이 어려울 수 있으므로 시나리오 중심 큐브 뷰를 사용하면 몇 가지 옵션이 아래에 자세히 설명되어 있습니다.
 
-## <a name="shared-static-holograms-no-interactions"></a>Shared static holograms (상호 작용 없음)
+## <a name="shared-static-holograms-no-interactions"></a>공유 정적 홀로그램(상호 작용 없음)
 
-앱에서 [Azure 공간 앵커](/azure/spatial-anchors/) 를 활용 합니다.  장치에서 공간 앵커를 사용 하도록 설정 하 고 공유 하면 사용자가 동시에 동일한 위치에서 holograms를 볼 수 있는 응용 프로그램을 만들 수 있습니다.  사용자가 holograms와 상호 작용 하 고 holograms의 이동 또는 상태 업데이트를 볼 수 있도록 하려면 장치 간 추가 동기화가 필요 합니다.
+앱에서 [Azure Spatial Anchors](/azure/spatial-anchors/) 활용합니다.  여러 디바이스에서 공간 앵커를 사용하도록 설정 및 공유하면 사용자가 동시에 동일한 위치에 홀로그램을 볼 수 있는 애플리케이션을 만들 수 있습니다.  사용자가 홀로그램과 상호 작용하고 홀로그램의 이동 또는 상태 업데이트를 볼 수 있도록 디바이스 간에 추가 동기화가 필요합니다.
 
-## <a name="share-first-person-perspective"></a>첫 번째 사용자 관점 공유
+## <a name="share-first-person-perspective"></a>1인칭 관점 공유
 
-PC 또는 TV와 같이 지원 되는 Miracast 수신기가 있는 경우 로컬 사용자에 대해 기본 제공 Miracast 지원을 활용 하 여 추가 앱 코드가 필요 하지 않습니다.
+PC 또는 TV와 같은 지원되는 Miracast 수신기가 있는 경우 로컬 사용자에게 기본 제공 Miracast 지원을 활용합니다. 추가 앱 코드가 필요하지 않습니다.
 
-앱에서 [MixedReality-WebRTC](https://github.com/microsoft/mixedreality-webrtc) 를 활용 하 여 원격 사용자 또는 Miracast 장치가 아닌 장치를 공유할 수 있습니다.  WebRTC 연결을 사용 하도록 설정 하면 장치 간의 메시징에 대 한 데이터 채널을 사용 하 여 사용자 간에 1:1 오디오/비디오 스트림을 사용할 수 있습니다.  혼합 현실 구현은 HoloLens 사용자를 다른 사용자에 게 표시 하는 혼합 현실 캡처 비디오 스트림을 제공 하 여 HoloLens를 최적화 합니다.  여러 원격 클라이언트에 대 한 비디오 스트리밍을 확장 하려는 경우 일반적으로 [SignalWire](https://signalwire.com/)와 같은 [MCU 서비스 공급자](https://webrtcglossary.com/mcu/) (Multipoint 회의 단위)가 사용 됩니다.  Azure에 대 한 한 번 클릭 SignalWire 배포는 [Freeswitch](https://github.com/andywolk/azure-freeswitch-gpu-windows)를 통해 사용할 수 있습니다.
+원격 사용자 또는 공유하려는 Miracast 이외의 디바이스가 있는 경우 앱에서 [MixedReality-WebRTC를](https://github.com/microsoft/mixedreality-webrtc) 활용합니다.  WebRTC 연결을 사용하도록 설정하면 사용자 간에 1:1 오디오/비디오 스트림을 사용할 수 있으며, 디바이스 간 메시징을 위한 데이터 채널도 사용할 수 있습니다.  혼합 현실 구현은 다른 사용자에게 HoloLens 사용자의 보기에 대한 혼합 현실 캡처 비디오 스트림을 제공하여 HoloLens 최적화합니다.  비디오 스트리밍을 여러 원격 클라이언트로 확장하려는 경우 일반적으로 [SIGNALWire](https://signalwire.com/)와 같은 [MCU 서비스 공급자(다중](https://webrtcglossary.com/mcu/) 포인트 회의 단위)가 사용됩니다.  Azure에 대한 한 번 클릭 SignalWire 배포는 [Freeswitch를](https://github.com/andywolk/azure-freeswitch-gpu-windows)통해 사용할 수 있습니다.
 
 > [!NOTE]
-> SignalWire는 유료 서비스 이며 Microsoft와 소유 하거나 소유 하지 않습니다.
+> SignalWire는 유료 서비스이며 Microsoft와 소유/관련되지 않습니다.
 
-## <a name="presenter-spectator-applications-and-demos"></a>응용 프로그램 및 데모 Presenter-Spectator
+## <a name="presenter-spectator-applications-and-demos"></a>Presenter-Spectator 애플리케이션 및 데모
 
-[MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-SpectatorView) 를 활용 하 여 [spectator 보기 기능](spectator-view.md) 을 앱으로 가져옵니다.  다른 장치 (HL, Android, iOS, 비디오 카메라)를 사용 하도록 설정 하 여 동일한 위치의 다른 관점에서 HoloLens가 볼 수 있는 내용을 확인 하 고 holograms와 상호 작용 하는 호스트 HoloLens 사용자의 상호 작용에 대 한 업데이트를 수신 합니다.  동일한 앱의 spectator 도우미를 사용 하 여 사용자 고유의 공간 관점에서 응용 프로그램의 holograms로 호스트에서 수행 하는 작업을 시청 하 고 사진을 찍은 후 비디오를 기록 하세요.
+[MixedReality-LeverageView를](https://github.com/microsoft/MixedReality-SpectatorView) 활용하여 [앱에 표시할 수 있습니다.](spectator-view.md)  다른 디바이스(HL, Android, iOS 및 비디오 카메라)를 사용하여 HoloLens 동일한 위치의 다른 관점에서 보는 내용을 확인하고 홀로그램과 상호 작용하는 호스트 HoloLens 사용자의 상호 작용에 대한 업데이트를 받을 수 있습니다.  동일한 앱의 도우미를 통해 사용자 고유의 공간 관점에서 호스트가 애플리케이션의 홀로그램으로 수행하는 작업을 보고, 사진을 찍고, 비디오를 녹화합니다.
 
-**참고:** 사진은 iOS/Android 장치에서 스크린샷을 통해 가져옵니다.
+**참고:** iOS/Android 디바이스의 스크린샷을 통해 사진을 찍습니다.
 
 ## <a name="multi-user-collaborative-experience"></a>다중 사용자 공동 작업 환경
 
-로컬 사용자의 경우 [Azure 공간 앵커](/azure/spatial-anchors/) 를 활용 하 고 장면의 콘텐츠/상태를 동기화 하는 [Photon SDK](https://www.photonengine.com/PUN) 를 활용 하는 [다중 사용자 학습 자습서](../unity/tutorials/mr-learning-sharing-02.md)부터 시작 하세요. 각 사용자에 게 장면의 holograms에 대 한 고유한 큐브 뷰가 있고 각각 holograms와 완전히 상호 작용할 수 있는 로컬 공동 작업 응용 프로그램을 만듭니다.  업데이트는 모든 장치에서 제공 되며 상호 작용 충돌 관리는 Photon에서 처리 됩니다.
+로컬 사용자용 [Azure Spatial Anchors](/azure/spatial-anchors/) 활용하고 장면의 콘텐츠/상태를 동기화하는 [Photon SDK를](https://www.photonengine.com/PUN) 활용하는 [다중 사용자 학습 자습서부터](../unity/tutorials/mr-learning-sharing-02.md)시작합니다. 각 사용자가 장면의 홀로그램에 대한 자신의 관점을 가지고 홀로그램과 완전히 상호 작용할 수 있는 로컬 공동 작업 애플리케이션을 만듭니다.  업데이트는 모든 디바이스에서 제공되며 상호 작용 충돌 관리는 Photon에서 처리됩니다.
 
 > [!NOTE]
-> [Photon](https://www.photonengine.com/) 은 타사 제품 이므로 Photon와의 요금 청구 관계를 productize 하 고 더 높은 사용량을 위해 크기를 조정 해야 할 수 있습니다.
+> [Photon은](https://www.photonengine.com/) Microsoft가 아닌 제품이므로 더 높은 사용량을 위해 제품화하고 크기를 조정하려면 Photon과 청구 관계가 필요할 수 있습니다.
 
 ## <a name="future-work"></a>향후 작업
 
-구성 요소 기능 및 인터페이스는 다양 한 시나리오와 기본 기술에서 일반적인 일관성과 강력한 지원을 제공 하는 데 도움이 됩니다.  그때까지 응용 프로그램에서 실현 하려는 시나리오에 맞는 가장 적합 한 경로를 선택 합니다.
+구성 요소 기능 및 인터페이스는 다양한 시나리오 및 기본 기술에서 공통 일관성 및 강력한 지원을 제공하는 데 도움이 됩니다.  그때까지는 애플리케이션에서 달성하려는 시나리오에 맞는 최상의 경로를 선택합니다.
 
-다른 시나리오를 사용 하거나 다른 기술/서비스를 사용 하고자 하나요? 이 페이지의 맨 아래에 있는 해당 리포지토리의 GitHub 문제에 대 한 피드백을 제공 하거나 [HoloDevelopers 여유 시간](https://holodevelopers.slack.com/)에 도달 하세요.
+다른 시나리오 또는 다른 기술/서비스를 사용하려고 합니까? 이 페이지의 맨 아래에 있는 해당 리포지터에서 GitHub 문제에 대한 피드백을 제공하거나 [HoloDevelopers slack 에 연락하세요.](https://holodevelopers.slack.com/)
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,28 +1,28 @@
 ---
 title: 대량 프로젝트에서 MRTK 사용
-description: 대량 프로젝트가 포함 된 MRTK 소비자를 위한 팁입니다.
+description: 대규모 프로젝트가 있는 MRTK의 소비자를 위한 팁.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 28ba272a48b0a0c524185ac7114a09cf8e0e91f8
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 9547b6bdcf4c0f4bc179dd266b14c853c1bf81a7e6531d2e68ca2e26188424c8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177123"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196097"
 ---
 # <a name="using-mrtk-in-large-projects"></a>대량 프로젝트에서 MRTK 사용
 
-이 페이지에는 기존 대량 프로젝트로 끌어오는 MRTK의 소비자에 대 한 몇 가지 유용한 팁이 포함 되어 있으며, 소스 제어로 사용할 새 항목을 설정 하 고 여러 개발자가 있습니다.
+이 페이지에는 기존 대규모 프로젝트로 끌어 오거나 소스 제어가 가능하고 여러 개발자가 있는 새로운 것을 설정하는 MRTK 소비자를 위한 몇 가지 유용한 팁이 포함되어 있습니다.
 
-*아래 지침을 모두 읽어 보는 것이 좋습니다. 그 다음에는 더 큰 코드 베이스에서 작업할 때 까다로운 문제를 방지 하는 데 도움이 됩니다.*
+*더 큰 코드베이스에서 작업할 때 몇 가지 까다로운 문제를 방지하는 데 도움이 되며 아래 지침을 모두 읽는 것이 좋습니다.*
 
 ## <a name="gitignore"></a>gitignore
 
-.Gitignore 파일은 MRTK를 사용 하는 경우 끌어오기에 권장 되는 기본으로, 소스 제어에서 안전 하 게 무시할 수 있는 로컬 상태를 만드는 MRTK의 일부 이며, 그렇지 않으면 커밋되지 않은 로컬 git 상태입니다.
+다음 .gitignore 파일은 MRTK를 사용할 때 끌어오기 위해 권장되는 기본 파일입니다. 소스 제어에서 안전하게 무시할 수 있는 로컬 상태를 만드는 MRTK 부분이 있습니다. 그렇지 않으면 더티 로컬 git 상태가 됩니다.
 
-이의 시작 부분은 나중에 MRTK 관련 추가 기능을 사용 하는 기본 github Unity. .gitignore에서 가져옵니다. 또한 이러한 규칙 중 일부는 특정 경로를 가정 하 고, 프로젝트 내에서 MRTK가 있는 위치에 따라 수정할 수 있습니다.
+이 의 시작 부분은 나중에 MRTK 관련 추가가 있는 기본 github Unity .gitignore에서 가져온 것입니다. 또한 이러한 규칙 중 일부는 특정 경로를 가정하며 MRTK가 프로젝트 내에 있는 위치에 따라 수정할 수 있습니다.
 
 ```
 # This .gitignore file should be placed at the root of your Unity project directory
@@ -99,18 +99,18 @@ crashlytics-build.properties
 !/scripts/Packaging/NuGetRestoreProject.csproj
 ```
 
-## <a name="projectpreferencesasset-file"></a>ProjectPreferences 설정. 자산 파일
+## <a name="projectpreferencesasset-file"></a>ProjectPreferences.asset 파일
 
-Project wide mrtk 설정은 편집-> Project 설정 > 혼합 현실 Toolkit 위치에서 찾을 수 있습니다. 이러한 설정은 자산 폴더의이 위치에 있는 파일에 저장 됩니다.
+Project 수준의 MRTK 설정은 편집 -> Project 설정 -> Mixed Reality Toolkit 위치에서 찾을 수 있습니다. 이러한 설정은 Assets 폴더의 이 위치에 있는 파일에 저장됩니다.
 
 ```
 Assets/MixedRealityToolkit.Generated/ProjectPreferences.asset
 ```
 
-프로젝트에 여러 협력자가 있는 경우 MRTK 설정의 초기 설정을 수행한 후이 자산 파일을 체크 인하는 것이 좋습니다. 특히 **다음 설정을 확인** 하는 것이 좋습니다.
+프로젝트에 여러 협력자가 있는 경우 MRTK 설정의 초기 설정을 완료한 후 이 자산 파일을 체크 인하는 것이 좋습니다. 특히 다음 설정을 **확인하는** 것이 좋습니다.
 
-**잠금 SDK 프로필** -이 기능을 사용 하지 않도록 설정 하는 경우 기본 mrtk 프로필을 전역적으로 편집할 수 있습니다. 그러면 mrtk가 사용 하기 어려워집니다 (프레임 워크 자체에서 병합 충돌이 발생할 수 있음).
+**SDK 프로필 잠금** - 사용하지 않도록 설정하면 기본 MRTK 프로필을 전역적으로 편집할 수 있으며, 이로 인해 MRTK 업그레이드가 어려울 수 있습니다(프레임워크 자체에서 병합 충돌이 발생할 수 있습니다).
 
-**Mrtk 프로젝트** 구성 기 무시-이 기능을 사용 하지 않도록 설정 하면 현재 mrtk 설정이 mrtk 권장 기본값과 일치 하지 않는지 프로젝트 구성 기에서 표시 됩니다. 프로젝트에서 일부 설정을 사용 하도록 설정 하지 않도록 명시적으로 선택 했을 수 있으므로이 설정을 선택 하면 다른 협력자가이 대화를 변경 하는 설정을 실수로 볼 수 없습니다. 이러한 설정은 프로젝트를 설정한 다음 다른 협력자에서 무시 하는 사람에 의해 구성 되어야 합니다.
+**MRTK 프로젝트 구성기 무시** - 이 설정을 사용하지 않도록 설정하면 현재 MRTK 설정이 MRTK 권장 기본값과 일치하지 않는 경우 프로젝트 구성기가 표시됩니다. 프로젝트에서 일부 설정을 사용하도록 설정하지 않도록 명시적으로 선택했을 수 있으므로 이 설정을 선택하면 다른 협력자가 이 대화 상자에 변경 설정이 실수로 표시되지 않습니다. 이러한 설정은 프로젝트를 설정하는 사람이 구성한 다음 다른 협력자가 무시해야 합니다.
 
-**UWP 기능 자동 사용** -이 기능을 사용 하지 않도록 설정 하는 경우 Unity가 응용 프로그램 매니페스트에 필요한 런타임 기능을 자동으로 추가 하지 않으므로 특정 기능 (예: 아이 추적)을 장치에 배포할 때 자동으로 실패할 수 있습니다. 이 설정을 선택 하면이 문제 클래스에서 응용 프로그램 배포 환경을 보호 합니다.
+**UWP 자동 사용 기능** - 이 기능을 사용하지 않도록 설정하면 Unity가 애플리케이션 매니페스트에 필요한 런타임 기능을 자동으로 추가하지 않으므로 디바이스에 배포할 때 특정 기능(예: 시선 추적)이 자동으로 실패할 수 있습니다. 이 설정을 선택하면 이러한 종류의 문제로부터 애플리케이션 배포 환경을 보호할 수 있습니다.

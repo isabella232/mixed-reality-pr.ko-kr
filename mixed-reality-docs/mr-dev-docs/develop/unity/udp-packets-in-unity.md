@@ -6,20 +6,20 @@ ms.author: v-hferrone
 ms.date: 02/3/2021
 ms.topic: article
 keywords: UDP, UWP, Unity, UDP 패킷, 소켓, 클라이언트 서버, 끝점, 네트워킹, 원격 컴퓨터, datagramsocket, 샘플, .net
-ms.openlocfilehash: b38897f228a62abeb63b7e2ffc0f2a98a840b781
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: a24498384ccb2018f62f00523bf33764d2ef7c019dec0cfd8fc70d86b55a81bb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550523"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192559"
 ---
 # <a name="udp-packets-in-unity-uwp-apps"></a>Unity UWP 앱의 UDP 패킷
 
-UDP 소켓 클라이언트 및 서버를 사용 하 여 UDP 패킷을 받도록 UWP (유니버설 Windows 플랫폼) Unity 앱을 설정할 수 있습니다. UDP 소켓은 두 끝점에 대 한 연결을 유지 하지 않으므로 원격 컴퓨터 간의 네트워킹을 위한 빠르고 간단한 솔루션입니다. 그러나 UDP 소켓이 자동으로 수행 하지 않으므로 패킷이 대상에 수신 되는지 확인 해야 합니다.
+udp 소켓 클라이언트 및 서버를 사용 하 여 udp 패킷을 받도록 UWP (유니버설 Windows 플랫폼) Unity 앱을 설정할 수 있습니다. UDP 소켓은 두 끝점에 대 한 연결을 유지 하지 않으므로 원격 컴퓨터 간의 네트워킹을 위한 빠르고 간단한 솔루션입니다. 그러나 UDP 소켓이 자동으로 수행 하지 않으므로 패킷이 대상에 수신 되는지 확인 해야 합니다.
 
-## <a name="setup"></a>설정
+## <a name="setup"></a>설치 프로그램
 
-파일에서 HoloLens manifest.js프로젝트를 열고 다음을 사용 하도록 설정 했는지 확인 합니다.
+파일 HoloLens manifest.js프로젝트를 열고 다음을 사용 하도록 설정 했는지 확인 합니다.
 * **인터넷 (클라이언트 & 서버)** 
 * **개인 네트워크 (클라이언트 & 서버)**.
 
@@ -36,4 +36,4 @@ UDP 소켓 클라이언트 및 서버를 사용 하 여 UDP 패킷을 받도록 
 > [도구 설치](/samples/microsoft/windows-universal-samples/datagramsocket/)
 
 ## <a name="see-also"></a>참고 항목 
-* [공유 Holograms 및 Azure Blob Storage/UDP 멀티 캐스트를 사용한 실험](https://mtaulty.com/2017/12/29/experiments-with-shared-holograms-and-azure-blob-storage-udp-multicasting-part-1/)
+* [공유 홀로그램스 및 Azure Blob Storage/UDP 멀티 캐스트를 사용한 실험](https://mtaulty.com/2017/12/29/experiments-with-shared-holograms-and-azure-blob-storage-udp-multicasting-part-1/)

@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk, 주변 메뉴,
-ms.openlocfilehash: 15f53ad4e67a0b281750fd1df7f894c49f546531
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 75e7ee195a5838e88c42b7547e7b75205bfe1ee2fa1c8b1ba0a868b294883347
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175654"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190660"
 ---
 # <a name="near-menu"></a>Near 메뉴
 
@@ -76,7 +76,7 @@ Grid 개체 컬렉션의 속성을 사용 하 여 행 수를 구성할 수 있�
 
 - HoloLens 2 단추의 기본 크기는 3.2 x 3.2 cm (0.032 m)입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [**단추**](button.md)
 - [**범위 제어**](bounds-control.md)

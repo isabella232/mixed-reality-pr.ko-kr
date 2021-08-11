@@ -1,39 +1,39 @@
 ---
 title: DirectX의 로컬 앵커 전송
-description: 공간 앵커를 전송, 내보내기 및 serialize 하 여 두 HoloLens 장치를 동기화 하는 방법에 대해 알아봅니다.
+description: 공간 앵커를 전송, 내보내기 및 직렬화하여 두 HoloLens 디바이스를 동기화하는 방법을 알아봅니다.
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
-keywords: HoloLens, 동기화, 공간 앵커, 전송, 여럿이, 보기, 시나리오, 연습, 샘플 코드, 전송, 로컬 앵커 전송, 앵커 내보내기, 앵커 가져오기
-ms.openlocfilehash: 5d539338a25657441ee07acac38a4edd6cd86e58
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: HoloLens, 동기화, 공간 앵커, 전송, 멀티 플레이, 보기, 시나리오, 연습, 샘플 코드, 전송, 로컬 앵커 전송, 앵커 내보내기, 앵커 가져오기
+ms.openlocfilehash: df00e323267aa398ba45cfd7a7234c04ce8eca85f2ff3be9b6c9ddee67264085
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582800"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195670"
 ---
 # <a name="local-anchor-transfers-in-directx"></a>DirectX의 로컬 앵커 전송
 
-<a href="/azure/spatial-anchors" target="_blank">Azure 공간 앵커</a>를 사용할 수 없는 경우 로컬 앵커 전송에서는 한 hololens 장치에서 두 번째 hololens 장치에서 가져올 앵커를 내보낼 수 있습니다.
+<a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>사용할 수 없는 경우 로컬 앵커 전송을 사용하면 하나의 HoloLens 디바이스에서 두 번째 HoloLens 디바이스에서 앵커를 가져올 수 있습니다.
 
 >[!NOTE]
->로컬 앵커 전송은 <a href="/azure/spatial-anchors" target="_blank">Azure 공간 앵커</a>보다 더 강력 하지 않은 앵커 회수를 제공 하며, IOS 및 Android 장치는이 방식에서 지원 되지 않습니다.
+>로컬 앵커 전송은 <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>보다 덜 강력한 앵커 회수를 제공하며, iOS 및 Android 디바이스는 이 접근 방식에서 지원되지 않습니다.
 
 >[!NOTE]
->이 문서의 코드 조각은 현재 c + + [holographic 프로젝트 템플릿에](../develop/native/creating-a-holographic-directx-project.md)사용 되는 c + 17-So-far working 호환 c + +/winrt 대신 c + +/cx를 사용 하는 방법을 보여 줍니다.  이 개념은 c + +/WinRT 프로젝트와 동일 하지만 코드를 변환 해야 합니다.
+>이 문서의 코드 조각은 현재 C++ 홀로그램 프로젝트 템플릿 에서 사용되는 C++17 규격 C++/WinRT 대신 [C++/CX를](../develop/native/creating-a-holographic-directx-project.md)사용하는 것을 보여줍니다.  개념은 C++/WinRT 프로젝트에 해당하지만 코드를 번역해야 합니다.
 
 ## <a name="transferring-spatial-anchors"></a>공간 앵커 전송
 
-[SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager)를 사용 하 여 Windows Mixed Reality 장치 간에 공간 앵커를 전송할 수 있습니다. 이 API를 사용 하면 전 세계의 정확한 위치를 찾는 데 필요한 모든 지원 센서 데이터를 사용 하 여 앵커를 번들로 묶은 다음 해당 번들을 다른 장치에서 가져올 수 있습니다. 두 번째 장치의 앱이 해당 앵커를 가져온 후에는 각 앱이 해당 공유 공간 앵커의 좌표계를 사용 하 여 holograms를 렌더링할 수 있습니다. 그러면 실제 세계의 동일한 위치에 표시 됩니다.
+[SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager)를 사용하여 Windows Mixed Reality 디바이스 간에 공간 앵커를 전송할 수 있습니다. 이 API를 사용하면 전 세계에서 정확한 위치를 찾는 데 필요한 모든 지원 센서 데이터와 앵커를 번들로 묶은 다음, 다른 디바이스에서 해당 번들을 가져올 수 있습니다. 두 번째 디바이스의 앱이 해당 앵커를 가져오면 각 앱은 해당 공유 공간 앵커의 좌표계를 사용하여 홀로그램을 렌더링할 수 있습니다. 그러면 실제 세계의 동일한 위치에 표시됩니다.
 
-공간 앵커는 서로 다른 장치 유형 간에 전송할 수 없습니다. 예를 들어 HoloLens 공간 앵커는 몰입 형 헤드셋을 사용 하 여 과정이 되지 않을 수 있습니다.  전송 된 앵커도 iOS 또는 Android 장치와 호환 되지 않습니다.
+공간 앵커는 서로 다른 디바이스 유형 간에 전송할 수 없습니다. 예를 들어 몰입형 헤드셋을 사용하여 HoloLens 공간 앵커를 찾지 못할 수 있습니다.  전송된 앵커도 iOS 또는 Android 디바이스와 호환되지 않습니다.
 
-## <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>SpatialPerception 기능을 사용 하도록 앱 설정
+## <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>spatialPerception 기능을 사용하도록 앱 설정
 
-앱에는 [SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager)를 사용 하기 전에 SpatialPerception 기능을 사용할 수 있는 권한이 부여 되어야 합니다. 공간 앵커를 전송 하려면 해당 앵커 근처에서 시간에 따라 수집 된 센서 이미지를 공유 해야 합니다. 여기에는 중요 한 정보가 포함 될 수 있습니다.
+[SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager)을 사용하려면 먼저 SpatialPerception 기능을 사용할 수 있는 권한이 앱에 부여되어야 합니다. 공간 앵커 전송에는 시간이 지남에 따라 수집된 센서 이미지가 중요한 정보를 포함할 수 있는 해당 앵커 주변을 공유해야 하므로 이 작업이 필요합니다.
 
-앱에 대 한 appxmanifest.xml 파일에서이 기능을 선언 합니다. 예를 들면 다음과 같습니다.
+앱의 package.appxmanifest 파일에서 이 기능을 선언합니다. 예는 다음과 같습니다.
 
 ```
 <Capabilities>
@@ -41,7 +41,7 @@ ms.locfileid: "98582800"
 </Capabilities>
 ```
 
-이 기능은 **uap2** 네임 스페이스에서 제공 됩니다. 매니페스트에이 네임 스페이스에 대 한 액세스 권한을 얻으려면 패키지> 요소에 *xlmns* 특성으로 포함 &lt; 합니다. 예를 들면 다음과 같습니다.
+이 기능은 **uap2** 네임스페이스에서 제공됩니다. 매니페스트에서 이 네임스페이스에 액세스하려면 Package> 요소에 *xlmns* 특성으로 &lt; 포함합니다. 예는 다음과 같습니다.
 
 ```
 <Package
@@ -53,11 +53,11 @@ ms.locfileid: "98582800"
     >
 ```
 
-**참고:** 앱은 런타임에 SpatialAnchor 내보내기/가져오기 Api에 액세스할 수 있는 기능을 요청 해야 합니다. 아래 예제에서 [Requestaccessasync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) 를 참조 하세요.
+**참고:** 앱이 SpatialAnchor 내보내기/가져오기 API에 액세스하려면 런타임에 기능을 요청해야 합니다. 아래 예제에서는 [RequestAccessAsync를](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) 참조하세요.
 
-## <a name="serialize-anchor-data-by-exporting-it-with-the-spatialanchortransfermanager"></a>SpatialAnchorTransferManager로 내보내서 앵커 데이터를 직렬화 합니다.
+## <a name="serialize-anchor-data-by-exporting-it-with-the-spatialanchortransfermanager"></a>SpatialAnchorTransferManager를 통해 앵커 데이터를 내보내서 직렬화합니다.
 
-도우미 함수는 [SpatialAnchor](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) 데이터를 내보내기 (직렬화) 하는 코드 샘플에 포함 되어 있습니다. 이 내보내기 API는 앵커와 함께 문자열을 연결 하는 키-값 쌍 컬렉션의 모든 앵커를 직렬화 합니다.
+도우미 함수는 [SpatialAnchor](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) 데이터를 내보내기(직렬화)하는 코드 샘플에 포함되어 있습니다. 이 내보내기 API는 문자열을 앵커와 연결한 키-값 쌍 컬렉션의 모든 앵커를 직렬화합니다.
 
 ```
 // ExportAnchorDataAsync: Exports a byte buffer containing all of the anchors in the given collection.
@@ -72,7 +72,7 @@ task<bool> SpatialAnchorImportExportHelper::ExportAnchorDataAsync(
 {
 ```
 
-먼저 데이터 스트림을 설정 해야 합니다. 이렇게 하면 1이 됩니다.) TryExportAnchorsAsync를 사용 하 여 응용 프로그램 소유의 버퍼에 데이터를 저장 하 고 2를 사용 합니다.) 내보내진 바이트 버퍼 스트림 (WinRT 데이터 스트림)의 데이터를 표준:: vector 바이트> 자체 메모리 버퍼로 읽습니다 &lt; .
+먼저 데이터 스트림을 설정해야 합니다. 이렇게 하면 1이 허용됩니다.) TryExportAnchorsAsync를 사용하여 앱이 소유한 버퍼에 데이터를 배치하고 2를 사용합니다. 내보낸 바이트 버퍼 스트림(WinRT 데이터 스트림)에서 std::vector 바이트> 고유한 메모리 버퍼로 데이터를 &lt; 읽습니다.
 
 ```
 // Create a random access stream to process the anchor byte data.
@@ -81,7 +81,7 @@ InMemoryRandomAccessStream^ stream = ref new InMemoryRandomAccessStream();
 IOutputStream^ outputStream = stream->GetOutputStreamAt(0);
 ```
 
-시스템에서 내보내는 앵커를 비롯 하 여 공간 데이터에 액세스 하기 위한 권한을 요청 해야 합니다.
+시스템에서 내보낸 앵커를 포함하여 공간 데이터에 액세스할 수 있는 권한을 요청해야 합니다.
 
 ```
 // Request access to spatial data.
@@ -104,7 +104,7 @@ auto accessRequestedTask = create_taskSpatialAnchorTransferManager::RequestAcces
 });
 ```
 
-Get 권한이 있고 앵커를 내보내는 경우 데이터 스트림을 읽을 수 있습니다. 여기서는 데이터를 읽는 데 사용할 DataReader 및 InputStream를 만드는 방법도 보여 줍니다.
+권한을 얻고 앵커를 내보내면 데이터 스트림을 읽을 수 있습니다. 여기서는 데이터를 읽는 데 사용할 DataReader 및 InputStream을 만드는 방법도 보여줍니다.
 
 ```
 // Get the input stream for the anchor byte stream.
@@ -129,7 +129,7 @@ return accessRequestedTask.then([anchorByteDataOut, stream, reader](bool nchorsE
     }
 ```
 
-스트림에서 바이트를 읽은 후와 같이 자체 데이터 버퍼에 저장할 수 있습니다.
+스트림에서 바이트를 읽은 후에는 마찬가지로 자체 데이터 버퍼에 저장할 수 있습니다.
 
 ```
 }).then([anchorByteDataOut, reader](size_t bytesRead)
@@ -148,9 +148,9 @@ return accessRequestedTask.then([anchorByteDataOut, stream, reader](bool nchorsE
 };
 ```
 
-## <a name="deserialize-anchor-data-by-importing-it-into-the-system-using-the-spatialanchortransfermanager"></a>SpatialAnchorTransferManager를 사용 하 여 시스템으로 가져와 앵커 데이터를 Deserialize 합니다.
+## <a name="deserialize-anchor-data-by-importing-it-into-the-system-using-the-spatialanchortransfermanager"></a>SpatialAnchorTransferManager를 사용하여 시스템에 앵커 데이터를 가져와서 앵커 데이터를 deserialize합니다.
 
-코드 샘플에는 이전에 내보낸 데이터를 로드 하는 도우미 함수가 포함 되어 있습니다. 이 deserialization 함수는 SpatialAnchorStore에서 제공 하는 것과 비슷한 키-값 쌍의 컬렉션을 제공 합니다. 단, 네트워크 소켓과 같은 다른 원본에서이 데이터를 가져왔습니다. 앱 내 메모리 또는 앱의 SpatialAnchorStore (해당 하는 경우)를 사용 하 여 오프 라인으로 저장 하기 전에이 데이터를 처리 하 고 이유를 지정할 수 있습니다.
+도우미 함수는 코드 샘플에 포함되어 이전에 내보낸 데이터를 로드합니다. 이 deserialization 함수는 SpatialAnchorStore가 제공하는 것과 유사한 키-값 쌍의 컬렉션을 제공합니다. 단, 네트워크 소켓과 같은 다른 원본에서 이 데이터를 얻은 것입니다. 오프라인으로 저장하거나, 앱 내 메모리를 사용하거나(해당하는 경우) 앱의 SpatialAnchorStore를 사용하여 데이터를 저장하기 전에 이 데이터를 처리하고 추론할 수 있습니다.
 
 ```
 // ImportAnchorDataAsync: Imports anchors from a byte buffer that was previously exported.
@@ -166,7 +166,7 @@ task<bool> SpatialAnchorImportExportHelper::ImportAnchorDataAsync(
 {
 ```
 
-먼저, 고정 데이터에 액세스 하기 위해 stream 개체를 만들어야 합니다. 버퍼의 데이터를 시스템 버퍼에 기록할 것 이므로 메모리 내 데이터 스트림에 쓰는 Datawriter 여부를 만들어 바이트 버퍼에서 시스템에 SpatialAnchors로의 앵커를 가져오는 목표를 달성 합니다.
+먼저 앵커 데이터에 액세스하기 위해 스트림 개체를 만들어야 합니다. 버퍼의 데이터를 시스템 버퍼에 쓰므로 바이트 버퍼에서 SpatialAnchors로 시스템으로 앵커를 얻는 목표를 달성하기 위해 메모리 내 데이터 스트림에 쓰는 DataWriter를 만듭니다.
 
 ```
 // Create a random access stream for the anchor data.
@@ -177,7 +177,7 @@ IOutputStream^ outputStream = stream->GetOutputStreamAt(0);
 DataWriter^ writer = ref new DataWriter(outputStream);
 ```
 
-다시 한 번, 앱에는 사용자 환경에 대 한 개인 정보를 포함할 수 있는 공간 앵커 데이터를 내보낼 수 있는 권한이 있는지 확인 해야 합니다.
+다시 한 번, 사용자 환경에 대한 개인 정보를 포함할 수 있는 공간 앵커 데이터를 내보낼 수 있는 권한이 앱에 있는지 확인해야 합니다.
 
 ```
 // Request access to transfer spatial anchors.
@@ -189,7 +189,7 @@ return create_task(SpatialAnchorTransferManager::RequestAccessAsync()).then(
         // Access is allowed.
 ```
 
-액세스가 허용 되 면 버퍼에서 시스템 데이터 스트림으로 바이트를 쓸 수 있습니다.
+액세스가 허용되면 버퍼에서 시스템 데이터 스트림으로 바이트를 쓸 수 있습니다.
 
 ```
 // Write the bytes to the stream.
@@ -206,7 +206,7 @@ return create_task(SpatialAnchorTransferManager::RequestAccessAsync()).then(
     }
 ```
 
-데이터 스트림에 바이트를 저장 하는 데 성공 하면 SpatialAnchorTransferManager를 사용 하 여 해당 데이터를 가져올 수 있습니다.
+데이터 스트림에 바이트를 성공적으로 저장한 경우 SpatialAnchorTransferManager를 사용하여 해당 데이터를 가져올 수 있습니다.
 
 ```
 }).then([writer, stream](unsigned int bytesWritten)
@@ -235,7 +235,7 @@ return create_task(SpatialAnchorTransferManager::RequestAccessAsync()).then(
     }
 ```
 
-데이터를 가져올 수 있는 경우 문자열을 앵커와 연결 하는 키-값 쌍의 지도 보기가 표시 됩니다. 이를 자체 메모리 내 데이터 컬렉션에 로드 하 고 해당 컬렉션을 사용 하 여 사용 하려는 앵커를 찾을 수 있습니다.
+데이터를 가져올 수 있는 경우 문자열을 앵커와 연결한 키-값 쌍의 맵 보기를 가져옵니다. 이를 메모리 내 데이터 컬렉션에 로드하고 해당 컬렉션을 사용하여 사용하려는 앵커를 찾을 수 있습니다.
 
 ```
 }).then([anchorMapOut](task<Windows::Foundation::Collections::IMapView<String^, SpatialAnchor^>^>  previousTask)
@@ -270,33 +270,33 @@ return create_task(SpatialAnchorTransferManager::RequestAccessAsync()).then(
 }
 ```
 
-**참고:** 앵커를 가져올 수 있기 때문에이는 바로 사용할 수 있다는 의미는 아닙니다. 앵커는 다른 방 또는 다른 실제 위치에 완전히 있을 수 있습니다. 앵커는 알려진 현재 환경에 상대적인 앵커의 위치를 복원 하기 위해 앵커를 만든 환경에 대 한 시각적 정보가 충분 한지 과정이 됩니다. 클라이언트 구현은 라이브 콘텐츠에 대 한 사용을 계속 하기 전에 로컬 좌표계 또는 참조 프레임에 상대적인 앵커를 찾아야 합니다. 예를 들어 앵커를 과정이 시작할 때까지 현재 좌표계에 상대적인 앵커를 찾으려고 시도 합니다.
+**참고:** 앵커를 가져올 수 있다고 해서 반드시 즉시 사용할 수 있는 것은 아닙니다. 앵커는 다른 방이나 다른 물리적 위치에 있을 수 있습니다. 앵커를 받은 디바이스에 앵커가 만들어진 환경에 대한 시각적 정보가 충분하여 알려진 현재 환경에 상대적으로 앵커의 위치를 복원할 때까지 앵커를 배치할 수 없습니다. 클라이언트 구현은 라이브 콘텐츠에 계속 사용하기 전에 로컬 좌표계 또는 참조 프레임을 기준으로 앵커를 찾아야 합니다. 예를 들어 앵커를 찾기 시작할 때까지 현재 좌표계를 기준으로 앵커를 주기적으로 찾습니다.
 
 ## <a name="special-considerations"></a>특별 고려 사항
 
-[TryExportAnchorsAsync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) API를 사용 하면 여러 [SpatialAnchors](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) 을 동일한 불투명 이진 blob으로 내보낼 수 있습니다. 그러나 단일 호출에서 단일 SpatialAnchor 또는 여러 SpatialAnchors를 내보낼지 여부에 따라 blob에 포함 되는 데이터에는 약간의 차이가 있습니다.
+[TryExportAnchorsAsync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) API를 사용하면 여러 [SpatialAnchors를](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) 동일한 불투명 이진 Blob으로 내보낼 수 있습니다. 그러나 단일 SpatialAnchor 또는 여러 SpatialAnchor를 단일 호출로 내보낼지 여부에 따라 Blob에 포함될 데이터에는 미묘한 차이가 있습니다.
 
 ### <a name="export-of-a-single-spatialanchor"></a>단일 SpatialAnchor 내보내기
 
-Blob에는 SpatialAnchor 주변 환경의 표현이 포함 되어 있으므로 SpatialAnchor를 가져오는 장치에서 환경을 인식할 수 있습니다. 가져오기가 완료 되 면 장치에서 새 SpatialAnchor를 사용할 수 있습니다. 사용자가 최근에 앵커 근처에 있는 것으로 가정 하 고, SpatialAnchor에 연결 된 holograms을 과정이 하 여 렌더링할 수 있습니다. 이러한 holograms는 SpatialAnchor를 내보낸 원래 장치에서 수행한 것과 동일한 물리적 위치에 표시 됩니다.
+Blob에는 SpatialAnchor를 가져오는 디바이스에서 환경을 인식할 수 있도록 SpatialAnchor 주변 환경의 표현이 포함됩니다. 가져오기가 완료되면 디바이스에서 새 SpatialAnchor를 사용할 수 있습니다. 사용자가 최근에 앵커 근처에 있다고 가정하면 해당 앵커를 찾아서 SpatialAnchor에 연결된 홀로그램을 렌더링할 수 있습니다. 이러한 홀로그램은 SpatialAnchor를 내보낸 원래 디바이스에서와 동일한 물리적 위치에 표시됩니다.
 
 ![단일 SpatialAnchor 내보내기](images/singleanchor.png)
 
 ### <a name="export-of-multiple-spatialanchors"></a>여러 SpatialAnchors 내보내기
 
-단일 SpatialAnchor 내보내기와 마찬가지로 blob에는 지정 된 모든 SpatialAnchors 주변 환경의 표현이 포함 되어 있습니다. 또한 blob에는 포함 된 SpatialAnchors 간의 연결에 대 한 정보 (동일한 실제 공간에 있는 경우)가 포함 됩니다. 즉, 인접 한 두 개의 SpatialAnchors를 가져온 경우 두 SpatialAnchors 간의 변환 계산에 충분 한 데이터가 blob에 포함 되어 있기 때문에 *두 번째* *SpatialAnchor에 연결* 된 홀로그램은 과정이 됩니다. 두 개의 SpatialAnchors (TryExportSpatialAnchors에 대 한 두 개의 개별 호출)를 개별적으로 내보낸 경우 첫 번째 SpatialAnchor에 연결 된 holograms에 대 한 blob에 포함 된 데이터가 충분 하지 않을 수 있습니다.
+단일 SpatialAnchor 내보내기와 마찬가지로 Blob에는 지정된 모든 SpatialAnchors 주변에 환경의 표현이 포함됩니다. 또한 Blob은 동일한 물리적 공간에 있는 경우 포함된 SpatialAnchors 간의 연결에 대한 정보를 포함합니다. 즉, 두 개의 주변 SpatialAnchors를 가져오면 *두* SpatialAnchor 간에 변환을 컴퓨팅하기에 충분한 데이터가 Blob에 포함되기 때문에 디바이스가 *첫 번째* SpatialAnchor 주위의 환경만 인식하더라도 두 번째 SpatialAnchor에 연결된 홀로그램을 배치할 수 있습니다. 두 SpatialAnchors를 개별적으로 내보낸 경우(TryExportSpatialAnchors에 대한 두 개의 별도 호출) 두 번째 SpatialAnchor에 연결된 홀로그램을 첫 번째 SpatialAnchor에 배치할 수 있도록 Blob에 데이터가 충분히 포함되지 않을 수 있습니다.
 
-![단일 TryExportAnchorsAsync 호출을 사용 하 여 내보낸 여러 앵커](images/multipleanchors.png) ![각 앵커에 대해 별도의 TryExportAnchorsAsync 호출을 사용 하 여 내보낸 여러 앵커](images/separateanchors.png)
+![단일 TryExportAnchorsAsync 호출을 사용하여 내보낸 여러 앵커](images/multipleanchors.png) ![각 앵커에 대해 별도의 TryExportAnchorsAsync 호출을 사용하여 내보낸 여러 앵커](images/separateanchors.png)
 
-## <a name="example-send-anchor-data-using-a-windowsnetworkingstreamsocket"></a>예: Windows:: 네트워킹:: StreamSocket을 사용 하 여 앵커 데이터 보내기
+## <a name="example-send-anchor-data-using-a-windowsnetworkingstreamsocket"></a>예제: Windows::Networking::StreamSocket을 사용하여 앵커 데이터 보내기
 
-여기서는 내보낸 앵커 데이터를 TCP 네트워크를 통해 전송 하 여 사용 하는 방법에 대 한 예제를 제공 합니다. 이는 HolographicSpatialAnchorTransferSample에서 가져온 것입니다.
+여기서는 내보낸 앵커 데이터를 TCP 네트워크를 통해 전송하여 사용하는 방법의 예제를 제공합니다. HolographicSpatialAnchorTransferSample에서 나온 것입니다.
 
-WinRT StreamSocket 클래스는 PPL 작업 라이브러리를 사용 합니다. 네트워크 오류의 경우 다시 throw 되는 예외를 사용 하 여 체인의 다음 태스크에 오류가 반환 됩니다. 예외에는 오류 상태를 나타내는 HRESULT가 포함 됩니다.
+WinRT StreamSocket 클래스는 PPL 작업 라이브러리를 사용합니다. 네트워크 오류의 경우 다시 throw되는 예외를 사용하여 체인의 다음 작업으로 오류가 반환됩니다. 예외에는 오류 상태를 나타내는 HRESULT가 포함되어 있습니다.
 
-### <a name="use-a-windowsnetworkingstreamsocketlistener-with-tcp-to-send-exported-anchor-data"></a>Windows:: 네트워킹:: StreamSocketListener를 TCP와 함께 사용 하 여 내보낸 앵커 데이터 보내기
+### <a name="use-a-windowsnetworkingstreamsocketlistener-with-tcp-to-send-exported-anchor-data"></a>TCP와 함께 Windows::Networking::StreamSocketListener를 사용하여 내보낸 앵커 데이터를 보냅니다.
 
-연결을 수신 하는 서버 인스턴스를 만듭니다.
+연결을 수신 대기하는 서버 인스턴스를 만듭니다.
 
 ```
 void SampleAnchorTcpServer::ListenForConnection()
@@ -326,7 +326,7 @@ void SampleAnchorTcpServer::ListenForConnection()
 }
 ```
 
-연결이 수신 되 면 클라이언트 소켓 연결을 사용 하 여 앵커 데이터를 보냅니다.
+연결이 수신되면 클라이언트 소켓 연결을 사용하여 앵커 데이터를 보냅니다.
 
 ```
 void SampleAnchorTcpServer::OnConnectionReceived(StreamSocketListener^ listener, StreamSocketListenerConnectionReceivedEventArgs^ args)
@@ -340,7 +340,7 @@ void SampleAnchorTcpServer::OnConnectionReceived(StreamSocketListener^ listener,
 }
 ```
 
-이제 내보낸 앵커 데이터를 포함 하는 데이터 스트림을 보낼 수 있습니다.
+이제 내보낸 앵커 데이터가 포함된 데이터 스트림을 보낼 수 있습니다.
 
 ```
 void SampleAnchorTcpServer::OutputToClientSocket(IMap<String^, SpatialAnchor^>^ anchorsToSend)
@@ -370,7 +370,7 @@ void SampleAnchorTcpServer::OutputToClientSocket(IMap<String^, SpatialAnchor^>^ 
 }
 ```
 
-스트림 자체를 보내기 전에 먼저 헤더 패킷을 보내야 합니다. 이 헤더 패킷은 고정 길이 여야 하 고, 앵커 데이터 스트림 인 바이트 배열 길이를 나타내야 합니다. 이 예제의 경우 보낼 다른 헤더 데이터가 없으므로 헤더의 길이는 4 바이트이 고 32 비트의 부호 없는 정수를 포함 합니다.
+스트림 자체를 보내기 전에 먼저 헤더 패킷을 보내야 합니다. 이 헤더 패킷은 고정 길이여야 하며 앵커 데이터 스트림인 바이트의 변수 배열 길이도 나타내야 합니다. 이 예제에서는 보낼 다른 헤더 데이터가 없으므로 헤더 길이는 4바이트이고 부호 없는 32비트 정수를 포함합니다.
 
 ```
 Concurrency::task<bool> SampleAnchorTcpServer::SendAnchorDataLengthMessage(size_t dataStreamLength)
@@ -413,7 +413,7 @@ Concurrency::task<bool> SampleAnchorTcpServer::SendAnchorDataStreamIMap<String^,
         return task_from_result<bool>(false);
 ```
 
-스트림 길이 (바이트)가 클라이언트에 전송 되 면 데이터 스트림 자체를 소켓 스트림에 쓸 수 있습니다. 이렇게 하면 앵커 저장소 바이트가 클라이언트에 전송 됩니다.
+스트림 길이(바이트)가 클라이언트로 전송되면 데이터 스트림 자체를 소켓 스트림에 계속 쓸 수 있습니다. 이렇게 하면 앵커 저장소 바이트가 클라이언트로 전송됩니다.
 
 ```
 }).then([this](bool dataLengthSent)
@@ -447,7 +447,7 @@ Concurrency::task<bool> SampleAnchorTcpServer::SendAnchorDataStreamIMap<String^,
 }
 ```
 
-이 항목의 앞부분에서 설명한 대로 네트워크 오류 상태 메시지를 포함 하는 예외를 처리 하도록 준비 해야 합니다. 예기치 않은 오류에 대 한 예외 정보를 디버그 콘솔에 기록할 수 있습니다 (예:). 이렇게 하면 코드 샘플에서 연결을 완료할 수 없거나 앵커 데이터 보내기를 완료할 수 없는 경우 발생 하는 결과에 대 한 단서를 제공 합니다.
+이 항목의 앞에서 언급했듯이 네트워크 오류 상태 메시지가 포함된 예외를 처리할 준비가 되어 있어야 합니다. 예상할 수 없는 오류의 경우 다음과 같이 예외 정보를 디버그 콘솔에 쓸 수 있습니다. 이렇게 하면 코드 샘플이 연결을 완료할 수 없거나 앵커 데이터 전송을 완료할 수 없는 경우 어떤 일이 발생했는지에 대한 단서를 얻을 수 있습니다.
 
 ```
 void SampleAnchorTcpServer::HandleException(Exception^ exception)
@@ -460,11 +460,11 @@ void SampleAnchorTcpServer::HandleException(Exception^ exception)
 }
 ```
 
-### <a name="use-a-windowsnetworkingstreamsocket-with-tcp-to-receive-exported-anchor-data"></a>Windows:: 네트워킹:: StreamSocket을 TCP와 함께 사용 하 여 내보낸 앵커 데이터 받기
+### <a name="use-a-windowsnetworkingstreamsocket-with-tcp-to-receive-exported-anchor-data"></a>TCP와 함께 Windows::Networking::StreamSocket을 사용하여 내보낸 앵커 데이터를 받습니다.
 
-먼저 서버에 연결 해야 합니다. 이 코드 샘플에서는 StreamSocket을 만들고 구성 하는 방법과 소켓 연결을 사용 하 여 네트워크 데이터를 가져오는 데 사용할 수 있는 DataReader를 만드는 방법을 보여 줍니다.
+먼저 서버에 연결해야 합니다. 이 코드 샘플에서는 StreamSocket을 만들고 구성하는 방법을 보여 하며, 소켓 연결을 사용하여 네트워크 데이터를 얻는 데 사용할 수 있는 DataReader를 만듭니다.
 
-**참고:** 이 샘플 코드를 실행 하는 경우 클라이언트를 시작 하기 전에 서버를 구성 하 고 시작 해야 합니다.
+**참고:** 이 샘플 코드를 실행하는 경우 클라이언트를 시작하기 전에 서버를 구성하고 시작해야 합니다.
 
 ```
 task<bool> SampleAnchorTcpClient::ConnectToServer()
@@ -530,9 +530,9 @@ task<bool> SampleAnchorTcpClient::ConnectToServer()
 }
 ```
 
-연결이 되 면 서버에서 데이터를 보낼 때까지 기다릴 수 있습니다. 스트림 데이터 판독기에서 LoadAsync를 호출 하 여이 작업을 수행 합니다.
+연결되면 서버가 데이터를 보낼 때까지 기다릴 수 있습니다. 스트림 데이터 판독기에서 LoadAsync를 호출하여 이 작업을 수행합니다.
 
-수신 하는 첫 번째 바이트 집합은 항상 헤더 패킷이 며, 이전 섹션에서 설명한 대로 앵커 데이터 스트림 바이트 길이를 나타냅니다.
+받는 첫 번째 바이트 집합은 항상 이전 섹션에서 설명한 대로 앵커 데이터 스트림 바이트 길이를 나타내는 헤더 패킷이어야 합니다.
 
 ```
 void SampleAnchorTcpClient::WaitForAnchorDataStream()
@@ -581,7 +581,7 @@ task<size_t> SampleAnchorTcpClient::ReceiveAnchorDataLengthMessage()
 }
 ```
 
-헤더 패킷을 받은 후에는 예측 해야 하는 앵커 데이터의 바이트 수를 알 수 있습니다. 스트림에서 이러한 바이트를 계속 읽을 수 있습니다.
+헤더 패킷을 받은 후에는 예상해야 하는 앵커 데이터의 바이트 수를 알 수 있습니다. 스트림에서 해당 바이트를 계속 읽을 수 있습니다.
 
 ```
 }).then([this](size_t dataStreamLength)
@@ -608,9 +608,9 @@ task<size_t> SampleAnchorTcpClient::ReceiveAnchorDataLengthMessage()
 }
 ```
 
-앵커 데이터 스트림을 수신 하기 위한 코드는 다음과 같습니다. 여기서는 먼저 스트림에서 바이트를 로드 합니다. 이 작업을 완료 하는 데 다소 시간이 걸릴 수 있습니다.
+앵커 데이터 스트림을 수신하기 위한 코드는 다음과 같습니다. 다시 말하지만, 먼저 스트림에서 바이트를 로드합니다. StreamSocket이 네트워크에서 해당 바이트 양을 받기 위해 대기하는 동안 이 작업을 완료하는 데 다소 시간이 걸릴 수 있습니다.
 
-로드 작업이 완료 되 면 해당 바이트 수를 읽을 수 있습니다. 앵커 데이터 스트림에 필요한 바이트 수를 받은 경우 계속 해 서 앵커 데이터를 가져올 수 있습니다. 그렇지 않은 경우에는 일종의 오류가 발생 해야 합니다. 예를 들어이 문제는 서버 인스턴스가 데이터 스트림 전송을 마치기 전에 종료 되거나 네트워크에서 중단 되어 전체 데이터 스트림을 클라이언트에서 받을 수 있는 경우에 발생할 수 있습니다.
+로드 작업이 완료되면 해당 바이트 수를 읽을 수 있습니다. 앵커 데이터 스트림에 대해 예상되는 바이트 수를 받은 경우 계속 진행하여 앵커 데이터를 가져올 수 있습니다. 그렇지 않은 경우 일종의 오류가 있어야 합니다. 예를 들어 이 문제는 서버 인스턴스가 종료된 후 데이터 스트림 보내기를 완료하거나 클라이언트가 전체 데이터 스트림을 수신하기 전에 네트워크가 다운될 때 발생할 수 있습니다.
 
 ```
 task<bool> SampleAnchorTcpClient::ReceiveAnchorDataStream()
@@ -660,7 +660,7 @@ task<bool> SampleAnchorTcpClient::ReceiveAnchorDataStream()
 }
 ```
 
-또한 알 수 없는 네트워크 오류를 처리 하도록 준비 해야 합니다.
+다시 알 수 없는 네트워크 오류를 처리할 준비가 되어 있어야 합니다.
 
 ```
 void SampleAnchorTcpClient::HandleException(Exception^ exception)
@@ -672,9 +672,9 @@ void SampleAnchorTcpClient::HandleException(Exception^ exception)
 }
 ```
 
-정말 간단하죠. 이제 네트워크를 통해 받은 앵커를 찾으려고 시도 하는 데 충분 한 정보가 있어야 합니다. 다시, 클라이언트는 앵커를 찾기 위해 공간에 대 한 충분 한 시각적 추적 데이터가 있어야 합니다. 바로 작동 하지 않는 경우 잠시 연습을 수행해 보세요. 그래도 작동 하지 않으면 서버에서 더 많은 앵커를 보내고 네트워크 통신을 사용 하 여 클라이언트에 적용 되는 것에 동의 합니다. HolographicSpatialAnchorTransferSample를 다운로드 하 고 클라이언트 및 서버 Ip를 구성 하 고 클라이언트 및 서버 HoloLens 장치에 배포 하 여이를 시험해 볼 수 있습니다.
+이것으로 끝입니다. 이제 네트워크를 통해 받은 앵커를 찾기 위한 충분한 정보가 있어야 합니다. 다시 말하지만 클라이언트는 앵커를 찾을 수 있는 충분한 시각적 추적 데이터가 있어야 합니다. 지금 바로 작동하지 않으면 잠시 시도해 보세요. 그래도 작동하지 않으면 서버에서 더 많은 앵커를 보내고 네트워크 통신을 사용하여 클라이언트에 대해 작동하는 앵커에 동의하도록 합니다. HolographicSpatialAnchorTransferSample을 다운로드하고, 클라이언트 및 서버 IP를 구성하고, 클라이언트 및 서버 HoloLens 디바이스에 배포하여 이 작업을 시도할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 * [PPL(병렬 패턴 라이브러리)](/cpp/parallel/concrt/parallel-patterns-library-ppl)
-* [Windows. f i f. StreamSocket](/uwp/api/Windows.Networking.Sockets.StreamSocket)
-* [StreamSocketListener](/uwp/api/Windows.Networking.Sockets.StreamSocketListener)
+* [Windows. Networking.StreamSocket](/uwp/api/Windows.Networking.Sockets.StreamSocket)
+* [Windows. Networking.StreamSocketListener](/uwp/api/Windows.Networking.Sockets.StreamSocketListener)

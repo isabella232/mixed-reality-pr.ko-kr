@@ -1,37 +1,37 @@
 ---
 title: 슬레이트
-description: Mixed Reality 도구 키트를 사용하여 2D 콘텐츠를 표시하기 위한 씬 창 스타일 컨트롤인 슬레이트에 대해 간결하게 설명합니다.
+description: 혼합 현실 Toolkit를 사용 하 여 2D 콘텐츠를 표시 하기 위한 씬 창 스타일 컨트롤인 슬레이트에 대해 알아봅니다.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Mixed Reality, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 슬레이트, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 2988419e44b21f6655a71d726dabd5091569f7ac
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: 혼합 현실, 컨트롤, 상호 작용, ui, ux, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 슬레이트, mrtk, 혼합 현실 Toolkit
+ms.openlocfilehash: 57a1e39528bb758b948f44ebea114798458591713b90e7b3db4bf0188969961f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600132"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193534"
 ---
 # <a name="slate"></a>슬레이트
 
 ![슬레이트](images/UX_Hero_Slate.jpg)
 
-슬레이트는 일반 텍스트, 이미지 또는 문서와 같은 2D 콘텐츠를 표시하기 위한 씬 창 스타일 컨트롤입니다. 슬레이트는 'Follow me(태그 따라)' 및 닫기 기능에 대한 단추가 있는 잡기 가능한 제목 표시줄을 제공합니다. 슬레이트 내의 콘텐츠는 실제 터치 스크린처럼 [직접 조작을](direct-manipulation.md#2d-slate-interaction) 통해 스크롤할 수 있습니다. 응시, 에어 탭 및 끌기 제스처 또는 모션 컨트롤러의 포인터도 사용할 수 있습니다.
+슬레이트는 일반 텍스트, 이미지 또는 문서와 같은 2D 콘텐츠를 표시 하기 위한 씬 창 스타일 컨트롤입니다. 슬레이트는 ' 팔 로우 하기 (태그 동반) ' 및 닫기 기능 단추를 포함 하는 grabbable 제목 표시줄을 제공 합니다. 슬레이트 내의 콘텐츠는 실제 터치 화면과 마찬가지로 [직접 조작을](direct-manipulation.md#2d-slate-interaction) 통해 스크롤할 수 있습니다. 응시, 항공 누르기, 끌기 제스처 또는 동작 컨트롤러의 포인터를 사용할 수 있습니다.
 
 <br>
 
 ---
 
-## <a name="slate-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity용 MRTK(Mixed Reality Toolkit)의 슬레이트
+## <a name="slate-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 mrtk (혼합 현실 Toolkit)의 슬레이트
 
-* [MRTK - 슬레이트](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/slate)
+* [MRTK-슬레이트](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/slate)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

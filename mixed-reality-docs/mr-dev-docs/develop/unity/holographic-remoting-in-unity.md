@@ -6,12 +6,12 @@ ms.author: v-vtieto
 ms.date: 07/26/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, mrtk, mixed reality Toolkit, 보강 현실, 가상 현실, 혼합 현실 헤드셋, 학습, 자습서, 시작, holographic 원격, 데스크톱
-ms.openlocfilehash: 51244a94fb7e54f2eee41d9d1b7f65b0ba373138
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 0b18bf4a187190da3ef9d17fd87f2c42feaa271210345330887ce618b49a0442
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757422"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192187"
 ---
 # <a name="holographic-remoting-in-unity"></a>Unity의 Holographic 원격 기능
 
@@ -19,7 +19,7 @@ ms.locfileid: "114757422"
 > Windows 독립 실행형 앱 원격 지원이 0.1.3 패키지 릴리스에 추가 되었습니다.
 > 버전 0.1.3이 기능은 UWP 빌드를 지원 하지 않습니다.
 
-[Holographic Remoting의 기본 사항에 대해 알아봅니다.](../platform-capabilities-and-apis/holographic-remoting-overview.md)
+[홀로그램 원격의 기본 사항에 대해 알아봅니다.](../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 Holographic 원격을 사용 하 여 실시간으로 HoloLens 2 Holographic 콘텐츠를 스트리밍할 수 있습니다. 이 방법은 전체 프로젝트를 빌드하고 배포 하지 않고도 신속 하 게 앱을 디버그할 수 있는 좋은 방법입니다. 
 
@@ -86,7 +86,7 @@ Holographic Remoting을 사용 하려면 고속 PC와 Wi-Fi 연결이 필요 합
 | `WindowsMRRemoting.isAudioEnabled`, `WindowsMRRemoting.maxBitRateKbps`, `WindowsMRRemoting.remoteMachineName` | `AppRemoting.Connect`구조체를 통해에 전달 됩니다. `RemotingConfiguration` |
 | `WindowsMRRemoting.isConnected` | `AppRemoting.TryGetConnectionState(out ConnectionState state, out _) && state == ConnectionState.Connected`
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 * [홀로그램 원격 플레이어](../platform-capabilities-and-apis/holographic-remoting-player.md)
 * [자습서: PC Holographic 원격 작업 시작](../unity/tutorials/mr-learning-pc-holographic-remoting-01.md)
