@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 51c62468f0f13b390bf003e05d44cbe2e2f3be05
-ms.sourcegitcommit: c199872c11adae7de24929ed043ea90dea087b3e
+ms.openlocfilehash: a359bf0101c579bbad8a2671b84d019a6ac53a36a53679bcaff5774694901850
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903119"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200189"
 ---
 # <a name="openxr"></a>[OpenXR](#tab/openxr)
 
@@ -12,7 +12,7 @@ ms.locfileid: "92903119"
 | --- | --- |
 | [OpenXR이란?](../native/openxr.md) | OpenXR 및 제공 해야 하는 사항에 대해 숙지 하 여 네이티브 개발 경험을 시작 합니다. |
 | [최신 도구 설치](../install-the-tools.md) | 최신 네이티브 개발 도구 다운로드 및 설치 |
-| [HoloLens 2에 대 한 설정](../native/openxr-getting-started.md#getting-started-with-openxr-for-hololens-2) | HoloLens 2 개발용 장치 및 환경 구성 |
+| [HoloLens 2에 대 한 설정](../native/openxr-getting-started.md#getting-started-with-openxr-for-hololens-2) | HoloLens 2 개발을 위한 장치 및 환경 구성 |
 | [모던 헤드셋 설정](../native/openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) | Windows Mixed Reality 개발을 위한 장치 및 환경 구성 |
 | [샘플 앱 사용해 보기](../native/openxr-getting-started.md#building-a-sample-openxr-app) | 장치에서 동일한 기본 OpenXR 앱의 UWP 및 Win32 버전 살펴보기 |
 | [OpenXR API 알아보기](../native/openxr-getting-started.md#learning-the-openxr-api) | Visual Studio에서 OpenXR API의 모든 주요 구성 요소를 둘러보기 인 60 분 연습 비디오를 시청 하세요. |

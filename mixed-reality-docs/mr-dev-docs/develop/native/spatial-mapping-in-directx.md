@@ -5,13 +5,13 @@ author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows mixed reality, 공간 매핑, 환경, 상호 작용, directx, winrt, api, 샘플 코드, UWP, SDK, 연습
-ms.openlocfilehash: 19479a4efb577bad629e46b59334f0d23b0b2db4
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows 혼합 현실, 공간 매핑, 환경, 상호 작용, directx, winrt, api, 샘플 코드, UWP, SDK, 연습
+ms.openlocfilehash: e7f0735ea28703d3a9f18198901ffa5f06676f78b7b8962bf20824e05f793061
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583775"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198849"
 ---
 # <a name="spatial-mapping-in-directx"></a>DirectX의 공간 매핑
 
@@ -50,7 +50,7 @@ ms.locfileid: "98583775"
 
 ## <a name="directx-development-overview"></a>DirectX 개발 개요
 
-공간 매핑에 대 한 네이티브 응용 프로그램 개발에서는 [Windows.. 공간](/uwp/api/Windows.Perception.Spatial) 네임 스페이스의 api를 사용 합니다. 이러한 Api를 통해 공간 매핑 Api가 [Unity](../unity/spatial-mapping-in-unity.md)에 의해 노출 되는 것과 동일한 방식으로 공간 매핑 기능을 완벽 하 게 제어할 수 있습니다.
+공간 매핑에 대 한 네이티브 응용 프로그램 개발에서는 Windows Api를 사용 [합니다. 인식. 공간](/uwp/api/Windows.Perception.Spatial) 네임 스페이스 이러한 Api를 통해 공간 매핑 Api가 [Unity](../unity/spatial-mapping-in-unity.md)에 의해 노출 되는 것과 동일한 방식으로 공간 매핑 기능을 완벽 하 게 제어할 수 있습니다.
 
 ### <a name="perception-apis"></a>인식 Api
 
@@ -84,11 +84,11 @@ ms.locfileid: "98583775"
 
 [Holographic 공간 매핑](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) 코드 샘플에는 surface 메시를 관리 하 고 렌더링 하기 위한 인프라를 포함 하 여 화면 메시를 앱에 로드 하기 시작 하는 데 사용할 수 있는 코드가 포함 되어 있습니다.
 
-이제 DirectX 앱에 화면 매핑 기능을 추가 하는 방법을 살펴보겠습니다. [Windows Holographic 앱 템플릿](creating-a-holographic-directx-project.md) 프로젝트에이 코드를 추가 하거나 위에서 언급 한 코드 샘플을 탐색 하 여 수행할 수 있습니다. 이 코드 샘플은 Windows Holographic 앱 템플릿을 기반으로 합니다.
+이제 DirectX 앱에 화면 매핑 기능을 추가 하는 방법을 살펴보겠습니다. [Windows Holographic app 템플릿](creating-a-holographic-directx-project.md) 프로젝트에이 코드를 추가 하거나 위에서 언급 한 코드 샘플을 탐색 하 여 수행할 수 있습니다. 이 코드 샘플은 Windows Holographic app 템플릿을 기반으로 합니다.
 
 ### <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>SpatialPerception 기능을 사용 하도록 앱 설정
 
-앱은 공간 매핑 기능을 사용할 수 있습니다. 이는 공간 메쉬가 개인 데이터로 간주 될 수 있는 사용자 환경의 표현 이기 때문에 필요 합니다. 앱에 대 한 appxmanifest.xml 파일에서이 기능을 선언 합니다. 예를 들면 다음과 같습니다.
+앱은 공간 매핑 기능을 사용할 수 있습니다. 이는 공간 메쉬가 개인 데이터로 간주 될 수 있는 사용자 환경의 표현 이기 때문에 필요 합니다. 앱에 대 한 appxmanifest.xml 파일에서이 기능을 선언 합니다. 예는 다음과 같습니다.
 
 ```xml
 <Capabilities>
@@ -96,7 +96,7 @@ ms.locfileid: "98583775"
 </Capabilities>
 ```
 
-이 기능은 **uap2** 네임 스페이스에서 제공 됩니다. 매니페스트에이 네임 스페이스에 대 한 액세스 권한을 얻으려면 패키지> 요소에 *xlmns* 특성으로 포함 &lt; 합니다. 예를 들면 다음과 같습니다.
+이 기능은 **uap2** 네임 스페이스에서 제공 됩니다. 매니페스트에이 네임 스페이스에 대 한 액세스 권한을 얻으려면 패키지> 요소에 *xlmns* 특성으로 포함 &lt; 합니다. 예는 다음과 같습니다.
 
 ```xml
 <Package
@@ -110,7 +110,7 @@ ms.locfileid: "98583775"
 
 ### <a name="check-for-spatial-mapping-feature-support"></a>공간 매핑 기능 지원 확인
 
-Windows Mixed Reality는 공간 매핑을 지원 하지 않는 장치를 비롯 한 다양 한 장치를 지원 합니다. 앱에서 공간 매핑을 사용 하거나 공간 매핑을 사용 하 여 기능을 제공 해야 하는 경우 사용을 시도 하기 전에 공간 매핑이 지원 되는지 확인 해야 합니다. 예를 들어 혼합 현실 앱에서 공간 매핑을 필요로 하는 경우 사용자가 공간 매핑을 사용 하지 않고 장치에서 실행 하려고 하면 해당 효과에 대 한 메시지가 표시 됩니다. 또는 앱이 사용자 환경 대신 자체 가상 환경을 렌더링 하 여 공간 매핑을 사용할 수 있을 때 발생 하는 것과 비슷한 환경을 제공할 수 있습니다. 모든 이벤트에서이 API를 사용 하면 공간 매핑 데이터를 가져오지 않고 적절 한 방법으로 응답 하지 않을 때 앱을 인식할 수 있습니다.
+Windows Mixed Reality은 공간 매핑을 지원 하지 않는 장치를 비롯 한 다양 한 장치를 지원 합니다. 앱에서 공간 매핑을 사용 하거나 공간 매핑을 사용 하 여 기능을 제공 해야 하는 경우 사용을 시도 하기 전에 공간 매핑이 지원 되는지 확인 해야 합니다. 예를 들어 혼합 현실 앱에서 공간 매핑을 필요로 하는 경우 사용자가 공간 매핑을 사용 하지 않고 장치에서 실행 하려고 하면 해당 효과에 대 한 메시지가 표시 됩니다. 또는 앱이 사용자 환경 대신 자체 가상 환경을 렌더링 하 여 공간 매핑을 사용할 수 있을 때 발생 하는 것과 비슷한 환경을 제공할 수 있습니다. 모든 이벤트에서이 API를 사용 하면 공간 매핑 데이터를 가져오지 않고 적절 한 방법으로 응답 하지 않을 때 앱을 인식할 수 있습니다.
 
 공간 매핑 지원에 대 한 현재 장치를 확인 하려면 먼저 UWP 계약이 수준 4 이상 인지 확인 한 다음 SpatialSurfaceObserver:: IsSupported ()를 호출 합니다. [Holographic 공간 매핑](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) 코드 샘플의 컨텍스트에서이 작업을 수행 하는 방법은 다음과 같습니다. 액세스를 요청 하기 직전에 지원이 선택 됩니다.
 
@@ -372,7 +372,7 @@ Windows::Storage::Streams::IBuffer^ positions = m_surfaceMesh->VertexPositions->
     Windows::Storage::Streams::IBuffer^ indices   = m_surfaceMesh->TriangleIndices->Data;
 ```
 
-그런 다음 HoloLens에서 제공 하는 메시 데이터를 사용 하 여 Direct3D 장치 버퍼를 만듭니다.
+그런 다음 HoloLens에서 제공 하는 메시 데이터로 Direct3D 장치 버퍼를 만듭니다.
 
 ```cpp
 CreateDirectXBuffer(device, D3D11_BIND_VERTEX_BUFFER, positions, m_vertexPositions.GetAddressOf());
@@ -517,7 +517,7 @@ for (auto& pair : m_meshCollection)
 }
 ```
 
-개별 메시는 꼭 짓 점 및 인덱스 버퍼, stride 및 모델 변환 상수 버퍼를 설정 하는 작업을 담당 합니다. Windows Holographic 앱 템플릿에서 회전 하는 큐브와 마찬가지로, 인스턴스를 사용 하 여 stereoscopic 버퍼에 렌더링 합니다.
+개별 메시는 꼭 짓 점 및 인덱스 버퍼, stride 및 모델 변환 상수 버퍼를 설정 하는 작업을 담당 합니다. Windows Holographic 앱 템플릿의 회전 큐브와 마찬가지로, 인스턴스를 사용 하 여 stereoscopic 버퍼에 렌더링 합니다.
 
 **SurfaceMesh::D raw**:
 
@@ -676,6 +676,6 @@ context->OMSetRenderTargets(1, targets, pCameraResources->GetSurfaceDepthStencil
 m_meshCollection->Render(pCameraResources->IsRenderingStereoscopic(), false);
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 * [홀로그램 DirectX 프로젝트 만들기](creating-a-holographic-directx-project.md)
-* [Windows. 인식 공간 API](/uwp/api/Windows.Perception.Spatial)
+* [Windows. 인식. 공간 API](/uwp/api/Windows.Perception.Spatial)

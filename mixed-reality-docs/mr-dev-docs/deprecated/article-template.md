@@ -6,12 +6,12 @@ ms.author: randyw
 ms.date: 10/22/2019
 ms.topic: article
 keywords: 없음
-ms.openlocfilehash: 246e87ace1c0b3edf5e9f4829a5a0879cddf7279
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 4e08f015000fe214438879cd6433248d444f3d659b6338505495bebb76309a67
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583173"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199555"
 ---
 # <a name="title-be-as-specific-as-possible-use-human-terms"></a>제목 (가능한 한 구체적이 고 인간 사용 약관) 
 
@@ -54,7 +54,7 @@ ms.locfileid: "98583173"
 
 *   설명
 *   고려 사항
-*   Thumb의 규칙 
+*   경험의 규칙 
 *   사용 방법 
 *   이점
 *   Do 및 don't's
@@ -192,7 +192,7 @@ Photorealism 동작 그리기 색 필드 그리기 stuckism 국제 cloisonnism�
 
 Neo-geo humanism structuralism post-impressionism existentialism brücke 데이터 upflat, neo-idealism gründerzeit.
 
-| 거리 | 시야각 | Size |
+| 거리 | 시야각 | 크기 |
 |---------|---------|---------|
 | 45cm  | 2 ° 미만 | 1.6 x 1.6 cm |
 
@@ -233,7 +233,7 @@ Iframe을 width = "99" height = "530"로 설정 합니다.
 
 ---
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 * [관련 문서 1 이름](../design/design.md)
 * [관련 문서 2 이름](../design/design.md)

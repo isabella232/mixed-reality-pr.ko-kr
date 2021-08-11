@@ -1,19 +1,19 @@
 ---
 title: Controllers
-description: MRTK에서 컨트롤러를 사용 하는 방법
+description: MRTK에서 컨트롤러를 사용하는 방법
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk, 컨트롤러,
-ms.openlocfilehash: ea3dbd11baa669750f3bccc09d6cd7ab3eb7688f
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 컨트롤러,
+ms.openlocfilehash: bc6aea1abda85567ab1b0db2616b529a92b4165e9b9cbcbc4b8b3cecd8a34c9f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176927"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115224771"
 ---
 # <a name="controllers"></a>Controllers
 
-컨트롤러는 [**입력 공급자**](input-providers.md)에 의해 자동으로 생성 되 고 제거 됩니다. 각 컨트롤러 유형에는 *축 유형에* 의해 정의 된 여러 개의 *물리적 입력* 이 있으며 입력 값의 데이터 형식 (디지털, 단일 축, 이중 축, 6 개의 Dof, ...) 및 입력의 출처를 설명 하는 *입력 형식* (단추 누름, 트리거, 엄지 스틱, 공간 포인터, ...)이 있습니다. 물리적 입력은 혼합 현실 Toolkit 구성 요소의 *입력 시스템 프로필* 아래 **컨트롤러 입력 매핑 프로필** 에서를 통해 *입력 작업* 에 매핑됩니다.
+컨트롤러는 입력 공급자 에 의해 자동으로 만들어지고 [**소멸됩니다.**](input-providers.md) 각 컨트롤러 형식에는 입력 값의 데이터 형식(Digital, Single Axis, Dual Axis, Six Dof, ...) 및 *입력의* 원점을 설명하는 입력 형식(Button Press, Trigger, Thumb Stick, Spatial Pointer, ...)을 알려주는 축 *형식으로* 정의된 여러 *실제* 입력이 있습니다. 실제 입력은 컨트롤러 *입력* 매핑 **프로필** 의 Mixed Reality Toolkit 구성 요소의 입력 시스템 *프로필에서* 를 통해 입력 작업에 매핑됩니다.
 
 ![컨트롤러 입력 매핑](../images/input/ControllerInputMapping.png)

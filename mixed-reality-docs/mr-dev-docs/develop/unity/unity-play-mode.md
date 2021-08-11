@@ -1,19 +1,19 @@
 ---
-title: Holographic 원격 작업 미리 보기
+title: 홀로그램 원격으로 작업 미리 보기
 description: 재생 모드에서 Holographic 원격을 사용 하 여 앱을 배포 하지 않고 장치에서 응용 프로그램 변경 내용을 미리 봅니다.
 author: keveleigh
 ms.author: v-vtieto
 ms.date: 07/26/2021
 ms.topic: article
 keywords: unity, remoting, holographic remoting, holographic remoting player, HoloLens, mixed reality 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, unity 재생 모드
-ms.openlocfilehash: 0c71791c80a5e84ee48241baa756064a800e5a41
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: cd9dca9d1ddf17b78e8c317fa3a58093c9b5837de379510148c6e645b31120ca
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757215"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226235"
 ---
-# <a name="preview-your-work-with-holographic-remoting"></a>Holographic 원격 작업 미리 보기
+# <a name="preview-your-work-with-holographic-remoting"></a>홀로그램 원격으로 작업 미리 보기
 
 Holographic 원격을 사용 하 여 실시간으로 HoloLens 2 Holographic 콘텐츠를 스트리밍할 수 있습니다. 이 방법은 전체 프로젝트를 빌드하고 배포 하지 않고도 신속 하 게 앱을 디버그할 수 있는 좋은 방법입니다. 
 

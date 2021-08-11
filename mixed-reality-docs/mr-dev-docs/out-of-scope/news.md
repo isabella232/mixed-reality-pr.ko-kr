@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 10/21/2019
 ms.topic: article
 keywords: Mixed Reality, 개발, 개발, 디자인, HoloLens, Azure 서비스, 뉴스, HoloLens 2
-ms.openlocfilehash: 8fc2f7c54cdc941150558aac59dd240ee293d1f8
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: 0144a4ed804dacf2f6120b1e93ee054a71dbadf3efe6689d19ded3f14233c31f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110088"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226222"
 ---
 # <a name="mixed-reality-news-and-notes"></a>혼합 현실 뉴스 및 메모
 
@@ -41,7 +41,7 @@ ms.locfileid: "112110088"
 <td>HoloLens 2 대한 MRTK</td><td>2019년 10월</td><td> <ul><li><a href=/windows/mixed-reality/mrtk-unity>MRTK 문서</a><li><a href=https://github.com/Microsoft/MixedRealityToolkit-Unity/releases>MRTK 릴리스 2.1.0</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrtk-getting-started>MRTK v2 시작</a></td>
 </tr>
 <tr>
-<td>다중 사용자 앱 유틸리티</td><td>2019년 10월</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/spectator-view>Demos에 대한 DemoView</a><li><a href=https://github.com/microsoft/MixedReality-WebRTC>HoloLens에 최적화된 WebRTC</a>></td>
+<td>다중 사용자 앱 유틸리티</td><td>2019년 10월</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/spectator-view>Demos에 대한View</a><li><a href=https://github.com/microsoft/MixedReality-WebRTC>HoloLens 최적화된 WebRTC</a>></td>
 </tr>
 <tr>
 <td>HoloLens 2 디자인 및 개발 지침</td><td>2019년 10월</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/>혼합 현실 개요</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/design>디자인 및 프로토타이핑</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/development>개발자 도구 및 아키텍처</a></td>

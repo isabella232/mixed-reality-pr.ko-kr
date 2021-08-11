@@ -5,13 +5,13 @@ author: mrwied
 ms.author: jonwie
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, 디자인, 소개, 지침, 혼합 현실 헤드셋, windows Mixed reality 헤드셋, 가상 현실 헤드셋, ux, 리소스
-ms.openlocfilehash: f731ad91d48cdb50ad12b6a9cc250b6561eebaff
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: Windows Mixed Reality, 디자인, 소개, 지침, 혼합 현실 헤드셋, Windows mixed reality 헤드셋, 가상 현실 헤드셋, ux, 리소스
+ms.openlocfilehash: 0bd70e08d55f8d556ff3a612dbbc979dc895cebbfc9950f18d8d474ff347407b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847690"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198646"
 ---
 # <a name="about-this-design-guidance"></a>이 디자인 지침에 대한 정보
 
@@ -19,7 +19,7 @@ ms.locfileid: "97847690"
 
 **Hello와 혼합 현실에 대 한 디자인 지침을 환영 합니다.**
 
-이 지침은 Microsoft designer, 개발자, 프로그램 관리자 및 연구원에 의해 작성 되었습니다. Microsoft 기록기의 작업은 HoloLens, 모던 장치, andAcer 및 HP Windows Mixed Reality 헤드셋을 비롯 한 holographic 장치를 포괄 합니다. 이 문서는 Windows 헤드 탑재 디자인에 대 한 항목 집합으로 생각 하는 것이 좋습니다.
+이 지침은 Microsoft designer, 개발자, 프로그램 관리자 및 연구원에 의해 작성 되었습니다. 작성자의 작업은 HoloLens, 모던 장치, andacer 및 HP Windows Mixed Reality 헤드셋을 비롯 한 holographic 장치를 확장 합니다. 이 문서를 Windows 헤드 탑재 된 디자인에 대 한 항목 집합으로 생각 하는 것이 좋습니다.
 
 Microsoft는 사용자와 함께 크게 흥미로운 새 연대를 제공 하 고 있습니다. 돌파구는 머리에 탑재 된 디스플레이, 공간 사운드, 센서, 환경 인식, 입력 및 3D 그래픽 리드에서 새로운 유형의 환경을 정의 하는 데 어려움을 겪고 있습니다. 새 경계선은 훨씬 더 개인적이 고 직관적인, 몰입 형 및 상황별입니다.
 
@@ -59,7 +59,7 @@ Microsoft는 사용자가 수행 하는 것과 동일한 문제를 wrestle 하 �
 
 ![작성자에 게 맞는](images/500px-creators.jpg) <br>
 
-많은 독자 들이 도움이 될 것입니다. 다른 기술력과 (시작, 중간, 고급)를 사용 하 고, 다른 도구 (Unity, DirectX, c + +, c # 등)를 사용 하 고, 다양 한 플랫폼 (Windows, iOS, c #, 기타)에 대해 잘 알고 있으며, 다양 한 플랫폼 (Windows, iOS, Android)에 대해 잘 알고 있으며, 다른 배경 (모바일, 엔터프라이즈, 게임)에서 제공 따라서 다양 한 관점 및 요구 사항으로이 지침을 볼 수 있습니다. 가능 하면 항상 이러한 다양성을 염두에 두고 가능한 한 많은 사용자에 게 가능한 한 적절 한 지침을 제공 합니다. 대부분 GitHub에 이미 있는 것입니다. 따라서 이미 있는 위치를 충족 하기 위해 GitHub 리포지토리 및 포럼에 직접 연결 합니다. 
+많은 독자 들이 도움이 될 것입니다. 다른 기술력과 (시작, 중간, 고급)를 사용 하 고 다른 도구 (Unity, DirectX, c + +, c # 등)를 사용 하 고 다양 한 플랫폼 (Windows, iOS, c #, 기타)에 대해 잘 알고 있으며 다양 한 플랫폼 (, iOS, Android)에 대해 잘 알고 있으며, 다양 한 규모의 팀 (모바일, 엔터프라이즈, 게임)에서 제공 따라서 다양 한 관점 및 요구 사항으로이 지침을 볼 수 있습니다. 가능 하면 항상 이러한 다양성을 염두에 두고 가능한 한 많은 사용자에 게 가능한 한 적절 한 지침을 제공 합니다. 대부분의 사용자가 이미 GitHub 하 고 있습니다. 따라서 GitHub 리포지토리 및 포럼에 직접 연결 하 여 이미 있는 위치를 충족 합니다. 
 
 ### <a name="share-as-much-as-possible-from-experimental-to-explicit"></a>실험적에서 명시적으로 최대한 많이 공유
 
@@ -71,7 +71,7 @@ Microsoft는 사용자가 수행 하는 것과 동일한 문제를 wrestle 하 �
 
 ![전역 및 로컬 디자인의 올바른 잔액](images/500px-fluentdesign.jpg) <br>
 
-전역 및 로컬 이라는 두 가지 수준의 디자인 지침을 제공 합니다. ' Global ' 디자인 지침은 [흐름 디자인 시스템](https://fluent.microsoft.com)에 포함 되어 있습니다. 흐름 모든 Microsoft 디자인 (장치, 제품, 도구 및 서비스)에서 조명, 깊이, 동작, 자료 및 규모와 같은 기본 사항에 대해 어떻게 생각 하는지 자세히 설명 합니다. 즉,이 대규모 시스템에는 상당한 장치 관련 차이가 있습니다. 따라서 헤드 탑재 된 디스플레이에 대 한 ' 로컬 ' 디자인 지침은 일반적으로 다른 입력 및 출력 방법과 다양 한 사용자 요구 및 시나리오를 포함 하는 holographic 및 몰입 형 장치용 디자인을 설명 합니다. 로컬 디자인 지침은 HMDs에 고유한 항목을 다룹니다. 예: 3D 환경 및 개체 공유 환경 센서, 눈 추적 및 공간 매핑 사용 그리고 공간 오디오의 기회가 있습니다. 이 가이드 전체에서 이러한 글로벌 및 로컬 측면을 모두 참조 하는 것을 볼 수 있습니다. 이렇게 하면 특정 장치 간의 디자인 차이점을 활용 하는 동시에 더 큰 디자인 기반으로 작업을 수행 하는 데 도움이 됩니다.
+전역 및 로컬 이라는 두 가지 수준의 디자인 지침을 제공 합니다. ' global ' 디자인 지침은 [Fluent Design 시스템](https://fluent.microsoft.com)에 포함 되어 있습니다. Fluent는 모든 Microsoft 디자인 (장치, 제품, 도구 및 서비스)에서 조명, 깊이, 동작, 자료 및 규모와 같은 기본 사항에 대해 어떻게 생각 하는지 자세히 설명 합니다. 즉,이 대규모 시스템에는 상당한 장치 관련 차이가 있습니다. 따라서 헤드 탑재 된 디스플레이에 대 한 ' 로컬 ' 디자인 지침은 일반적으로 다른 입력 및 출력 방법과 다양 한 사용자 요구 및 시나리오를 포함 하는 holographic 및 몰입 형 장치용 디자인을 설명 합니다. 로컬 디자인 지침은 HMDs에 고유한 항목을 다룹니다. 예: 3D 환경 및 개체 공유 환경 센서, 눈 추적 및 공간 매핑 사용 그리고 공간 오디오의 기회가 있습니다. 이 가이드 전체에서 이러한 글로벌 및 로컬 측면을 모두 참조 하는 것을 볼 수 있습니다. 이렇게 하면 특정 장치 간의 디자인 차이점을 활용 하는 동시에 더 큰 디자인 기반으로 작업을 수행 하는 데 도움이 됩니다.
 
 ### <a name="have-a-discussion"></a>토론 포함
 
@@ -81,4 +81,4 @@ Microsoft는 사용자가 수행 하는 것과 동일한 문제를 wrestle 하 �
 
 ## <a name="dive-in"></a>자세히 알아보기
 
-이 소개 문서에서는 디자인 지침을 살펴볼 때 의미 있는 컨텍스트를 제공 하기를 바랍니다. 문서에서 연결 하거나 [Twitter](https://twitter.com/MicrosoftDesign) 및 [Facebook](https://www.facebook.com/microsoftdesign/)의 Microsoft 디자인에서 찾을 수 있는 GitHub 포럼에서 의견을 알려주세요. 미래를 함께 공동 디자인 해 보겠습니다.
+이 소개 문서에서는 디자인 지침을 살펴볼 때 의미 있는 컨텍스트를 제공 하기를 바랍니다. 문서에서 연결 하는 GitHub 포럼 또는 [Twitter](https://twitter.com/MicrosoftDesign) 및 [Facebook](https://www.facebook.com/microsoftdesign/)의 Microsoft 디자인에서 찾을 수 있는 의견을 알려주세요. 미래를 함께 공동 디자인 해 보겠습니다.

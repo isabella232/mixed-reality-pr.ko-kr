@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, Profiles,
-ms.openlocfilehash: 785d402e924a534627dfd1d742d2019d9ce9dd5a
-ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+ms.openlocfilehash: b3ba5aa9ac08dcfe0eecdb479db075b39b43a0e376239822432df872b0775d27
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111908244"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225662"
 ---
 # <a name="profiles"></a>프로필
 
@@ -32,7 +32,7 @@ GGV 스타일 상호 작용을 기본으로 하는 HoloLens 1 프로필과 같�
 ## <a name="xr-sdk"></a>XR SDK
 
 ::: moniker range=">= mrtkunity-2021-05"
-모든 Unity의 XR 파이프라인에서 구성 된 기본 MRTK 프로필을 사용 합니다. 이전 "DefaultOpenXRConfigurationProfile" 및 "DefaultXRSDKConfigurationProfile"은 이제 사용 되지 않는 것으로 레이블이 지정 되었습니다.
+Unity의 XR 파이프라인에서 모두 구성된 기본 MRTK 프로필을 사용합니다. 이전 "DefaultOpenXRConfigurationProfile" 및 "DefaultXRSDKConfigurationProfile"은 이제 사용되지 않음 레이블로 지정됩니다.
 ::: moniker-end
 ::: moniker range="< mrtkunity-2021-05"
 현재 XR SDK에 대해 두 개의 프로필(`DefaultXRSDKConfigurationProfile` 및 `DefaultHoloLens2XRSDKConfigurationProfile`)이 제공됩니다. 따라서 장면 및 시나리오별 구성으로 인해 모든 샘플 장면이 완전히 지원되는 것은 아닙니다. `DefaultMixedRealityToolkitConfigurationProfile` 및 `DefaultHoloLens2ConfigurationProfile`을 사용하는 모든 샘플은 해당 XR SDK 프로필로 교환 _할 수 있습니다_. XR SDK와 함께 OpenXR을 사용하는 경우 `DefaultOpenXRConfigurationProfile`을 대신 사용합니다.

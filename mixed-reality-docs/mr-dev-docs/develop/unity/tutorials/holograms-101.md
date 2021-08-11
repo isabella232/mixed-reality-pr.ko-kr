@@ -5,13 +5,13 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: 혼합 현실, Windows Mixed Reality, HoloLens, 홀로그램, 아카데미, 자습서, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
-ms.openlocfilehash: 0ebfeb017271b7f98093a8ba6cac59dccae2a440
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+keywords: 혼합 현실, Windows Mixed Reality, HoloLens, 홀로그램, 아카데미, 자습서, HoloLens, 혼합 현실 아카데미, unity, 혼합 현실 헤드셋, Windows mixed reality 헤드셋, 가상 현실 헤드셋, Windows 10
+ms.openlocfilehash: 63219edebeb63dbf4589e8162f8dc1bab83275c38f29b106db9bae234cdabde0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269949"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200963"
 ---
 # <a name="hololens-1st-gen-basics-101-complete-project-with-device"></a>HoloLens (첫 번째 gen) 기본 사항 101: 장치를 사용 하 여 프로젝트 완료
 
@@ -24,7 +24,7 @@ ms.locfileid: "106269949"
 
 >[!VIDEO https://www.youtube.com/embed/XKIIEC5BMWg]
 
-이 자습서에서는 [응시](../../../design/gaze-and-commit.md), [제스처](../../../design/gaze-and-commit.md#composite-gestures), [음성 입력](../../../design/voice-input.md), [공간 음향](../../../design/spatial-sound.md) 및 [공간 매핑을](../../../design/spatial-mapping.md)비롯 한 HoloLens의 핵심 Windows Mixed Reality 기능을 보여 주는 Unity에서 빌드된 전체 프로젝트를 안내 합니다.
+이 자습서에서는 [응시](../../../design/gaze-and-commit.md), [제스처](../../../design/gaze-and-commit.md#composite-gestures), [음성 입력](../../../design/voice-input.md), [공간 음향](../../../design/spatial-sound.md) 및 [공간 매핑을](../../../design/spatial-mapping.md)비롯 한 HoloLens의 핵심 Windows Mixed Reality 기능을 보여 주는 Unity 기반의 전체 프로젝트를 안내 합니다.
 
 자습서를 완료 하는 데 약 1 시간이 소요 됩니다.
 
@@ -42,8 +42,8 @@ ms.locfileid: "106269949"
 
 ### <a name="prerequisites"></a>필수 구성 요소
 
-* 올바른 [도구로](../../install-the-tools.md)구성 된 WINDOWS 10 PC입니다.
-* [개발용으로 구성 된](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)HoloLens 장치입니다.
+* 올바른 [도구로](../../install-the-tools.md)구성 된 Windows 10 PC.
+* [개발용으로 구성](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)된 HoloLens 장치입니다.
 
 ### <a name="project-files"></a>프로젝트 파일
 
@@ -89,21 +89,21 @@ ms.locfileid: "106269949"
 
 * **계층 패널** 에서 **만들기** 를 클릭 하 고 **빈 상태로 만들기** 를 클릭 합니다.
 * 새 **GameObject** 를 마우스 오른쪽 단추로 클릭 하 고 이름 바꾸기를 선택 합니다. GameObject의 이름을 **OrigamiCollection** 로 바꿉니다.
-* 프로젝트 패널의 **Holograms** 폴더에서 자산을 확장 하 고 Holograms를 선택 하거나 프로젝트 패널에서 Holograms 폴더를 두 번 클릭 합니다.
+* Project 패널의 **홀로그램스** 폴더에서 자산을 확장 하 고 홀로그램스를 선택 하거나 Project 패널에서 홀로그램스 폴더를 두 번 클릭 합니다.
   * **스테이지** 를 계층 구조로 끌어 **OrigamiCollection** 의 자식으로 만듭니다.
   * **Sphere1** 를 계층 구조로 끌어 **OrigamiCollection** 의 자식으로 만듭니다.
   * **Sphere2** 를 계층 구조로 끌어 **OrigamiCollection** 의 자식으로 만듭니다.
 * **계층 패널** 에서 **방향 광원** 개체를 마우스 오른쪽 단추로 클릭 하 고 **삭제** 를 선택 합니다.
-* **Holograms** 폴더에서 **조명을** **계층 패널** 의 루트로 끕니다.
+* **홀로그램스** 폴더에서 **조명을** **계층 패널** 의 루트로 끕니다.
 * **계층** 에서 **OrigamiCollection** 를 선택 합니다.
 * **검사기** 에서 변환 위치를 **0,-0.5, 2.0** 로 설정 합니다.
 * Holograms를 미리 보려면 Unity의 **재생** 단추를 누릅니다.
 * 미리 보기 창에 종이 개체를 표시 해야 합니다.
 * **재생** 을 두 번 눌러 미리 보기 모드를 중지 합니다.
 
-#### <a name="export-the-project-from-unity-to-visual-studio"></a>Unity에서 Visual Studio로 프로젝트 내보내기
+#### <a name="export-the-project-from-unity-to-visual-studio"></a>Unity에서 Visual Studio로 프로젝트를 내보냅니다.
 
-* Unity에서 **파일 > 빌드 설정** 을 선택 합니다.
+* Unity에서 **파일 > 빌드 설정** 를 선택 합니다.
 * **플랫폼** 목록에서 **유니버설 Windows 플랫폼** 을 선택 하 고 **플랫폼 전환** 을 클릭 합니다.
 * **SDK** 를 **Universal 10** 으로 설정 하 고 **빌드 형식을** **D3D** 로 설정 합니다.
 * **Unity c # 프로젝트** 를 확인 합니다.
@@ -117,15 +117,15 @@ ms.locfileid: "106269949"
 * (두 번 클릭) **종이** 를 엽니다.
 * Visual Studio의 맨 위 도구 모음을 사용 하 여 대상을 디버그에서 **릴리스** 로, ARM에서 **x 86** 으로 변경 합니다.
 * 장치 단추 옆의 화살표를 클릭 하 고 **원격 컴퓨터** 를 선택 하 여 wi-fi를 통해 배포 합니다.
-  * **주소** 를 HoloLens의 이름 또는 IP 주소로 설정 합니다. 장치 IP 주소를 알 수 없는 경우 **설정 > 네트워크 & 인터넷 > 고급 옵션** 을 확인 하거나 Cortana **"안녕하세요. 내 IP 주소는 무엇입니까?"** 를 확인 합니다.
-  * HoloLens가 USB를 통해 연결 된 경우 **장치** 를 선택 하 여 usb를 통해 배포할 수 있습니다.
+  * **주소** 를 HoloLens의 이름 또는 IP 주소로 설정 합니다. 장치 IP 주소를 모르는 경우 **설정 > 네트워크 & 인터넷 > 고급 옵션** 을 확인 하거나 Cortana **"안녕하세요 Cortana, 내 IP 주소는 무엇입니까?"** 를 확인 합니다.
+  * HoloLens usb를 통해 연결 된 경우 **장치** 를 선택 하 여 usb를 통해 배포할 수 있습니다.
   * **인증 모드** 를 **유니버설** 으로 설정 된 상태로 둡니다.
-  * **선택** 을 클릭 합니다.
+  * **선택** 클릭
 
-* **디버그 > 디버깅 하지 않고 시작** 을 클릭 하거나 **ctrl + F5** 를 누릅니다. 처음으로 장치에 배포 하는 경우에는 [Visual Studio와 쌍](../../platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)으로 연결 해야 합니다.
+* **디버그 > 디버깅 하지 않고 시작** 을 클릭 하거나 **ctrl + F5** 를 누릅니다. 처음으로 장치에 배포 하는 경우 [Visual Studio와 쌍](../../platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)으로 연결 해야 합니다.
 
-* 이제 종이 접기 프로젝트가 빌드하여 HoloLens에 배포 되 고 실행 됩니다.
-* HoloLens에 배치 하 고 새 holograms를 확인 하세요.
+* 이제 종이 접기 프로젝트가 작성 되 고 HoloLens에 배포 된 다음를 실행 합니다.
+* HoloLens에 추가 하 고 새 holograms를 확인 하세요.
 
 ## <a name="chapter-2---gaze"></a>2 장-응시
 
@@ -140,17 +140,17 @@ ms.locfileid: "106269949"
 ### <a name="instructions"></a>지침
 
 * Unity 프로젝트로 돌아가서 빌드 설정 창이 열려 있으면 닫습니다.
-* **프로젝트 패널** 에서 **Holograms** 폴더를 선택 합니다.
+* **Project 패널** 에서 **홀로그램스** 폴더를 선택 합니다.
 * **커서** 개체를 루트 수준에서 **계층 패널로** 끕니다.
 * **커서** 개체를 두 번 클릭 하면 자세히 살펴볼 수 있습니다.
-* 프로젝트 패널에서 **Scripts** 폴더를 마우스 오른쪽 단추로 클릭 합니다.
+* Project 패널에서 **Scripts** 폴더를 마우스 오른쪽 단추로 클릭 합니다.
 * **만들기** 하위 메뉴를 클릭 합니다.
 * **C # 스크립트** 를 선택 합니다.
-* 스크립트 이름을 **WorldCursor** 로 합니다. 참고: 이름은 대/소문자를 구분 합니다. .Cs 확장명을 추가할 필요가 없습니다.
-* **계층 패널** 에서 **Cursor** 개체를 선택 합니다.
-* **WorldCursor** 스크립트를 **검사기 패널로** 끌어 놓습니다.
-* **WorldCursor** 스크립트를 두 번 클릭 하 여 Visual Studio에서 엽니다.
-* 이 코드를 복사 하 여 **WorldCursor** 에 붙여넣고 **모두 저장** 합니다.
+* 스크립트 이름을 **WorldCursor 로 지정합니다.** 참고: 이름은 대/소문자 구분입니다. .cs 확장을 추가할 필요가 없습니다.
+* **계층 패널에서** **커서** 개체를 선택합니다.
+* **WorldCursor** 스크립트를 **검사기 패널** 로 끌어서 놓습니다.
+* **WorldCursor** 스크립트를 두 번 클릭하여 Visual Studio 엽니다.
+* 이 코드를 복사하여 **WorldCursor.cs에** 붙여넣고 **모두 저장합니다.**
 
 ```cs
 using UnityEngine;
@@ -197,29 +197,29 @@ public class WorldCursor : MonoBehaviour
 }
 ```
 
-* **빌드 설정 > 파일** 에서 응용 프로그램을 다시 빌드합니다.
-* 이전에 HoloLens에 배포 하는 데 사용한 Visual Studio 솔루션으로 돌아갑니다.
-* 메시지가 표시 되 면 ' 모두 다시 로드 '를 선택 합니다.
-* **디버그를 클릭 하 > 디버깅 하지 않고 시작** 을 클릭 하거나 **ctrl + F5** 를 누릅니다.
-* 이제 장면을 살펴보고 커서가 개체 모양과 상호 작용 하는 방식을 확인 합니다.
+* 파일 > 빌드 설정 에서 **앱을 다시 빌드합니다.**
+* 이전에 HoloLens 배포하는 데 사용한 Visual Studio 솔루션으로 돌아갑니다.
+* 메시지가 표시되면 '모두 다시 로드'를 선택합니다.
+* **디버그 -> 디버깅하지 않고 시작을** 클릭하거나 **Ctrl + F5** 키를 누릅니다.
+* 이제 장면을 살펴보고 커서가 개체의 모양과 상호 작용하는 방법을 알아차리고 있습니다.
 
-## <a name="chapter-3---gestures"></a>3 장-제스처
+## <a name="chapter-3---gestures"></a>3장 - 제스처
 
 >[!VIDEO https://www.youtube.com/embed/kW3ThJ2MbvQ]
 
-이 장에서는 [제스처](../../../design/gaze-and-commit.md#composite-gestures)에 대 한 지원을 추가 합니다. 사용자가 용지 구를 선택 하면 Unity의 물리학 엔진을 사용 하 여 무게를 설정 하 여 구를 설정 합니다.
+이 장에서는 제스처에 대한 지원을 [추가합니다.](../../../design/gaze-and-commit.md#composite-gestures) 사용자가 용지 구를 선택하면 Unity의 물리학 엔진을 사용하여 무게를 켜서 구가 떨어지도록 만들겠습니다.
 
 ### <a name="objectives"></a>목표
 
-* 선택 제스처를 사용 하 여 holograms를 제어 합니다.
+* 선택 제스처를 통해 홀로그램을 제어합니다.
 
 ### <a name="instructions"></a>지침
 
-먼저 스크립트를 만든 다음 선택 제스처를 검색할 수 있습니다.
+스크립트를 만든 다음, 선택 제스처를 감지할 수 있습니다.
 
-* **Scripts** 폴더에서 **GazeGestureManager** 라는 스크립트를 만듭니다.
-* **GazeGestureManager** 스크립트를 계층의 **OrigamiCollection** 개체로 끌어 옵니다.
-* Visual Studio에서 **GazeGestureManager** 스크립트를 열고 다음 코드를 추가 합니다.
+* **Scripts** 폴더에서 **GazeGestureManager라는 스크립트를** 만듭니다.
+* **GazeGestureManager** 스크립트를 Hierarchy의 **OrigamiCollection** 개체로 끕니다.
+* Visual Studio **GazeGestureManager** 스크립트를 열고 다음 코드를 추가합니다.
 
 ```cs
 using UnityEngine;
@@ -286,11 +286,11 @@ public class GazeGestureManager : MonoBehaviour
 }
 ```
 
-* Scripts 폴더에 **SphereCommands** 이라는 다른 스크립트를 만듭니다.
-* 계층 구조 뷰에서 **OrigamiCollection** 개체를 확장 합니다.
-* **SphereCommands** 스크립트를 계층 패널의 **Sphere1** 개체로 끌어 옵니다.
-* **SphereCommands** 스크립트를 계층 패널의 **Sphere2** 개체로 끌어 옵니다.
-* 편집을 위해 Visual Studio에서 스크립트를 열고 기본 코드를 다음으로 바꿉니다.
+* Scripts 폴더에 다른 스크립트를 만듭니다. 이번에는 **SphereCommands 입니다.**
+* 계층 뷰에서 **OrigamiCollection** 개체를 확장합니다.
+* **SphereCommands 스크립트를** 계층 패널의 **Sphere1** 개체로 끕니다.
+* **SphereCommands 스크립트를** 계층 패널의 **Sphere2** 개체로 끕니다.
+* 편집을 위해 Visual Studio 스크립트를 열고 기본 코드를 다음으로 대체합니다.
 
 ```cs
 using UnityEngine;
@@ -310,27 +310,27 @@ public class SphereCommands : MonoBehaviour
 }
 ```
 
-* 앱을 내보내고, 빌드하여 HoloLens에 배포 합니다.
-* 구 중 하나를 확인 합니다.
-* 선택 제스처를 수행 하 고 아래 화면에 대 한 구 드롭다운을 시청 합니다.
+* HoloLens 앱을 내보내고, 빌드하고, 배포합니다.
+* 구 중 하나를 살펴봅니다.
+* 선택 제스처를 수행하고 아래 표면에 구가 놓이는 것을 관찰합니다.
 
-## <a name="chapter-4---voice"></a>4 장-음성
+## <a name="chapter-4---voice"></a>4장 - 음성
 
 >[!VIDEO https://www.youtube.com/embed/1-Aq0VVtHM8]
 
-이 장에서는 두 개의 [음성 명령](../../../design/voice-input.md)에 대 한 지원을 추가 합니다. "다시 설정"은 삭제 된 구를 원래 위치로 반환 하 고, "삭제 구"는 구가 되도록 합니다.
+이 장에서는 두 개의 음성 [명령에](../../../design/voice-input.md)대한 지원을 추가합니다. 즉, 삭제된 구를 원래 위치로 반환하는 "Reset world"와 구가 떨어지도록 하는 "Drop sphere"를 추가합니다.
 
 ### <a name="objectives"></a>목표
 
-* 백그라운드에서 항상 수신 대기 하는 음성 명령을 추가 합니다.
-* 음성 명령에 반응 하는 홀로그램을 만듭니다.
+* 항상 백그라운드에서 수신 대기하는 음성 명령을 추가합니다.
+* 음성 명령에 반응하는 홀로그램을 만듭니다.
 
 ### <a name="instructions"></a>지침
 
-* **Scripts** 폴더에서 **SpeechManager** 라는 스크립트를 만듭니다.
-* **SpeechManager** 스크립트를 계층의 **OrigamiCollection** 개체로 끌어 옵니다.
-* Visual Studio에서 **SpeechManager** 스크립트를 엽니다.
-* 이 코드를 복사 하 여 **SpeechManager** 에 붙여넣고 **모두 저장** 합니다.
+* **Scripts** 폴더에서 **SpeechManager라는** 스크립트를 만듭니다.
+* **SpeechManager** 스크립트를 Hierarchy의 **OrigamiCollection** 개체로 끌어다 놓습니다.
+* Visual Studio **SpeechManager** 스크립트를 엽니다.
+* 이 코드를 복사하여 **SpeechManager.cs에** 붙여넣고 **모두 저장합니다.**
 
 ```cs
 using System.Collections.Generic;
@@ -381,8 +381,8 @@ public class SpeechManager : MonoBehaviour
 }
 ```
 
-* Visual Studio에서 **SphereCommands** 스크립트를 엽니다.
-* 다음과 같이 스크립트를 업데이트 합니다.
+* Visual Studio **SphereCommands** 스크립트를 엽니다.
+* 다음과 같이 읽도록 스크립트를 업데이트합니다.
 
 ```cs
 using UnityEngine;
@@ -433,36 +433,36 @@ public class SphereCommands : MonoBehaviour
 }
 ```
 
-* 앱을 내보내고, 빌드하여 HoloLens에 배포 합니다.
-* 구 중 하나를 확인 하 고 "**삭제 구**" 라고 표시 합니다.
-* 초기 위치로 다시 전환 하기 위해 "**세계 재설정**" 이라고 말할 수 있습니다.
+* HoloLens 앱을 내보내고, 빌드하고, 배포합니다.
+* 구 중 하나를 살펴보고 " Drop **Sphere"라고** 말합니다.
+* 초기 위치로 다시 가져오려면 **"Reset World"라고** 말합니다.
 
-## <a name="chapter-5---spatial-sound"></a>5 장-공간 소리
+## <a name="chapter-5---spatial-sound"></a>5장 - 공간 소리
 
 >[!VIDEO https://www.youtube.com/embed/Aj4de5Ncbfo]
 
-이 장에서는 앱에 음악을 추가한 다음 특정 작업에 대 한 음향 효과를 트리거합니다. 3D 공간에서 소리를 특정 위치에 제공 하기 위해 [공간 소리](../../../design/spatial-sound.md) 를 사용할 예정입니다.
+이 장에서는 앱에 음악이 추가된 다음 특정 작업에 대한 음향 효과를 트리거합니다. [공간 소리를](../../../design/spatial-sound.md) 사용하여 3D 공간에서 특정 위치를 소리에 제공합니다.
 
 ### <a name="objectives"></a>목표
 
-* 전 세계에서 holograms를 들어봅니다.
+* 전 세계의 홀로그램을 들었습니다.
 
 ### <a name="instructions"></a>지침
 
-* Unity의 상단 메뉴에서 선택 **> 프로젝트 설정 > 오디오를 편집** 합니다.
-* 오른쪽의 검사기 패널에서 **Spatializer 플러그 인** 설정을 찾아 **MS hrtf Spatializer** 를 선택 합니다.
-* 프로젝트 패널의 **Holograms** 폴더에서 **외계** 개체를 계층 패널의 **OrigamiCollection** 개체로 끌어옵니다.
-* **OrigamiCollection** 를 선택 하 고 검사기 패널에서 **오디오 원본** 구성 요소를 찾습니다. 다음 속성을 변경 합니다.
-  * **Spatialize** 속성을 확인 합니다.
-  * 절전 모드 **해제를 확인 합니다.**
-  * 슬라이더를 오른쪽으로 끌어 **공간 Blend** 를 **3d** 로 변경 합니다. 슬라이더를 이동 하는 경우 값은 0에서 1로 변경 됩니다.
-  * **Loop** 속성을 선택 합니다.
-  * **3D 소리 설정** 을 확장 하 고 **Doppler 수준** 에 대해 **0.1** 을 입력 합니다.
-  * **볼륨 Rolloff** 를 **로그 Rolloff** 로 설정 합니다.
-  * **최대 거리** 를 **20** 으로 설정 합니다.
-* **Scripts** 폴더에서 **SphereSounds** 라는 스크립트를 만듭니다.
-* **SphereSounds** 를 계층의 **Sphere1** 및 **Sphere2** 개체로 끌어서 놓습니다.
-* Visual Studio에서 **SphereSounds** 를 열고 다음 코드를 업데이트 하 고 **모두 저장** 합니다.
+* Unity의 위쪽 메뉴에서 **> Project 설정 > 오디오 편집을** 선택합니다.
+* 오른쪽의 검사기 패널에서 **Spatializer 플러그 인** 설정을 찾아 **MS HRTF Spatializer** 를 선택합니다.
+* **Project** 패널의 홀로그램스 폴더에서 **Ambience** 개체를 계층 구조 패널의 **OrigamiCollection** 개체로 끌어 갑니다.
+* **OrigamiCollection을** 선택하고 검사기 패널에서 **오디오 원본** 구성 요소를 찾습니다. 다음 속성을 변경합니다.
+  * **Spatialize** 속성을 확인합니다.
+  * Play **On Awake을** 확인합니다.
+  * 슬라이더를 오른쪽으로 끌어 **Spatial Blend를** **3D로** 변경합니다. 슬라이더를 이동하면 값이 0에서 1로 변경되어야 합니다.
+  * **루프** 속성을 확인합니다.
+  * **3D Sound 설정** 확장하고 **Doppler Level** 에 **0.1을** 입력합니다.
+  * **볼륨 롤오프를** **로그 롤오프** 로 설정합니다.
+  * **최대 거리를** **20으로** 설정합니다.
+* **Scripts** 폴더에서 **SphereSounds라는 스크립트를 만듭니다.**
+* **SphereSounds를** 계층 구조의 **Sphere1** 및 **Sphere2** 개체로 끌어서 놓습니다.
+* Visual Studio **SphereSounds를** 열고, 다음 코드를 업데이트하고, **모두 저장합니다.**
 
 ```cs
 using UnityEngine;
@@ -542,39 +542,39 @@ public class SphereSounds : MonoBehaviour
 }
 ```
 
-* 스크립트를 저장 하 고 Unity로 돌아갑니다.
-* 앱을 내보내고, 빌드하여 HoloLens에 배포 합니다.
-* 스테이지에서 가깝게 이동 하 여 다른 쪽으로 이동 하 여 소리 변경을 기다립니다.
+* 스크립트를 저장하고 Unity로 돌아갑니다.
+* HoloLens 앱을 내보내고, 빌드하고, 배포합니다.
+* 스테이지에서 더 가깝게 이동하고 나란히 전환하여 소리가 변하는 것을 들었습니다.
 
-## <a name="chapter-6---spatial-mapping"></a>6 장-공간 매핑
+## <a name="chapter-6---spatial-mapping"></a>6장 - 공간 매핑
 
 >[!VIDEO https://www.youtube.com/embed/Pkt1_wNLLXY]
 
-이제 [공간 매핑을](../../../design/spatial-mapping.md) 사용 하 여 실제 개체에 게임 보드를 추가 하겠습니다.
+이제 [공간 매핑을](../../../design/spatial-mapping.md) 사용하여 실제 세계의 실제 개체에 게임 보드를 배치하겠습니다.
 
 ### <a name="objectives"></a>목표
 
-* 실제 세계를 가상 세계에 가져오세요.
-* 가장 중요 한 위치에 holograms을 두십시오.
+* 실제 세계를 가상 세계로 가져옵니다.
+* 홀로그램을 가장 중요한 위치에 배치합니다.
 
 ### <a name="instructions"></a>지침
 
-* Unity의 프로젝트 패널에서 **Holograms** 폴더를 클릭 합니다.
-* **공간 매핑** 자산을 **계층** 의 루트로 끌어 옵니다.
-* 계층에서 **공간 매핑** 개체를 클릭 합니다.
-* **검사기 패널** 에서 다음 속성을 변경 합니다.
-  * **시각적 개체 메시 그리기** 상자를 선택 합니다.
-  * **그리기 자료** 를 찾고 오른쪽에 있는 원을 클릭 합니다. 위쪽의 검색 필드에 "**골격형**"을 입력 합니다. 결과를 클릭 한 다음 창을 닫습니다. 이렇게 하면 재질 그리기 값이 와이어 프레임으로 설정 됩니다.
-* 앱을 내보내고, 빌드하여 HoloLens에 배포 합니다.
-* 앱이 실행 되 면 와이어 프레임 메쉬가 실제 세계를 오버레이 합니다.
-* 롤링 구가 단계를 어떻게 진행 하는지 확인 합니다.
+* Unity의 Project 패널에서 **홀로그램스** 폴더를 클릭합니다.
+* 공간 **매핑** 자산을 계층의 루트로 끌어 **끕다.**
+* 계층에서 **공간 매핑** 개체를 클릭합니다.
+* **검사기 패널에서** 다음 속성을 변경합니다.
+  * 시각적 **메시 그리기** 상자를 선택합니다.
+  * **그리기 재질을** 찾고 오른쪽의 원을 클릭합니다. 맨 위에 있는 검색 필드에 **"wireframe**"을 입력합니다. 결과를 클릭한 다음 창을 닫습니다. 이렇게 하면 그리기 재질의 값이 Wireframe으로 설정됩니다.
+* HoloLens 앱을 내보내고, 빌드하고, 배포합니다.
+* 앱이 실행되면 와이어프레임 메시가 실제 세계를 오버레이합니다.
+* 롤링 구가 스테이지에서 어떻게 바닥으로 떨어지는지 보세요.
 
-이제 OrigamiCollection를 새 위치로 이동 하는 방법을 보여 드리겠습니다.
+이제 OrigamiCollection을 새 위치로 이동하는 방법을 보여 드리겠습니다.
 
-* **Scripts** 폴더에서 **TapToPlaceParent** 라는 스크립트를 만듭니다.
-* **계층** 에서 **OrigamiCollection** 를 확장 하 고 **단계** 개체를 선택 합니다.
+* **Scripts** 폴더에서 **TapToPlaceParent라는** 스크립트를 만듭니다.
+* **계층에서** **OrigamiCollection을** 확장하고 **Stage** 개체를 선택합니다.
 * **TapToPlaceParent** 스크립트를 Stage 개체로 끌어 놓습니다.
-* Visual Studio에서 **TapToPlaceParent** 스크립트를 열고 다음으로 업데이트 합니다.
+* Visual Studio **TapToPlaceParent** 스크립트를 열고 다음과 같이 업데이트합니다.
 
 ```cs
 using UnityEngine;
@@ -632,26 +632,26 @@ public class TapToPlaceParent : MonoBehaviour
 }
 ```
 
-* 앱을 내보내고 빌드하고 배포 합니다.
-* 이제 gazing을 사용 하 고, 선택 제스처를 사용 하 고, 새 위치로 이동 하 고, 선택 제스처를 다시 사용 하 여 특정 위치에 게임을 삽입할 수 있습니다.
+* 앱을 내보내고, 빌드하고, 배포합니다.
+* 이제 게임을 특정 위치에 배치하고, 선택 제스처를 사용한 다음, 새 위치로 이동한 다음, 선택 제스처를 다시 사용하여 특정 위치에 게임을 배치할 수 있습니다.
 
-## <a name="chapter-7---holographic-fun"></a>7 장-Holographic 재미
+## <a name="chapter-7---holographic-fun"></a>7장 - 홀로그램의 재미
 
 ### <a name="objectives"></a>목표
 
-* Holographic 지 수에 대 한 입구를 표시 합니다.
+* 홀로그램 언더월드에 대한 진입을 공개합니다.
 
 ### <a name="instructions"></a>지침
 
-이제 holographic 지 수를 파악 하는 방법을 보여 드리겠습니다.
+이제 홀로그램 언더월드를 파악하는 방법을 살펴보겠습니다.
 
-* 프로젝트 패널의 **Holograms** 폴더에서 다음을 수행 합니다.
-  * 지 **수를 계층으로 끌어** **OrigamiCollection** 의 자식으로 만듭니다.
-* **Scripts** 폴더에서 **HitTarget** 라는 스크립트를 만듭니다.
-* **계층** 에서 **OrigamiCollection** 를 확장 합니다.
-* **스테이지** 개체를 확장 하 고 **대상** 개체 (파란색 팬)를 선택 합니다.
-* **HitTarget** 스크립트를 **대상** 개체로 끌어 옵니다.
-* Visual Studio에서 **HitTarget** 스크립트를 열고 다음으로 업데이트 합니다.
+* **Project** 패널의 홀로그램스 폴더에서 다음을 수행합니다.
+  * **Underworld를** Hierarchy로 끌어 **OrigamiCollection** 의 자식이 됩니다.
+* **Scripts** 폴더에서 **HitTarget** 이라는 스크립트를 만듭니다.
+* **계층에서** **OrigamiCollection** 을 확장합니다.
+* **Stage** 개체를 확장하고 **대상** 개체(파란색 팬)를 선택합니다.
+* **HitTarget 스크립트를** **Target** 개체로 끌어 놓습니다.
+* Visual Studio **HitTarget** 스크립트를 열고 다음과 같이 업데이트합니다.
 
 ```cs
 using UnityEngine;
@@ -675,27 +675,27 @@ public class HitTarget : MonoBehaviour
 }
 ```
 
-* Unity에서 **대상** 개체를 선택 합니다.
-* 이제 **적중 대상** 구성 요소에서 두 개의 공용 속성이 표시 되 고 장면에서 개체를 참조 해야 합니다.
-  * 계층 **패널의** 지  **속성을** **적중 대상** 구성 요소의 지 속성 속성으로 끌어 옵니다.
-  * **단계** 를 **계층** 패널에서 개체로 끌어 **적중 대상** 구성 요소의 속성을 **숨깁니다** .
-* 앱을 내보내고 빌드하고 배포 합니다.
-* 바닥에 종이를 놓고 선택 제스처를 사용 하 여 구를 끌어 놓습니다.
-* 구가 대상 (파란색 팬)에 도달 하면 폭발이 발생 합니다. 컬렉션이 숨겨지고 지 수에 대 한 구멍이 표시 됩니다.
+* Unity에서 **대상** 개체를 선택합니다.
+* 이제 **적중 대상** 구성 요소에 두 개의 공용 속성이 표시되며 장면에서 개체를 참조해야 합니다.
+  * **Hierarchy** 패널에서 **Underworld를** **적중 대상** 구성 요소의 **Underworld** 속성으로 끕다.
+  * **계층** 패널에서 **개체로 스테이지를** 끌어 **적중 대상** 구성 요소의 **숨기기** 속성입니다.
+* 앱을 내보내고, 빌드하고, 배포합니다.
+* Origami 컬렉션을 지면에 놓고 선택 제스처를 사용하여 구를 놓습니다.
+* 구가 대상(파란색 팬)에 도달하면 폭증이 발생합니다. 컬렉션이 숨겨지고 언더월드에 대한 구멍이 나타납니다.
 
 ## <a name="the-end"></a>끝
 
-이 자습서의 끝입니다!
+이 자습서의 끝입니다.
 
 다음에 대해 알아보았습니다.
 
-* Unity에서 holographic 앱을 만드는 방법
-* 응시, 제스처, 음성, 소리 및 공간 매핑을 활용 하는 방법입니다.
-* Visual Studio를 사용 하 여 앱을 빌드하고 배포 하는 방법입니다.
+* Unity에서 홀로그램 앱을 만드는 방법
+* 응시, 제스처, 음성, 소리 및 공간 매핑을 사용하는 방법입니다.
+* Visual Studio 사용하여 앱을 빌드하고 배포하는 방법입니다.
 
-이제 사용자 고유의 holographic 환경을 만들 준비가 되었습니다!
+이제 고유한 홀로그램 환경을 만들 준비가 되었습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 * [MR 기본 101E: 에뮬레이터를 사용하는 완전한 프로젝트](holograms-101e.md)
 * [응시](../../../design/gaze-and-commit.md)

@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 제스처, 동작 컨트롤러, unity, 응시, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 2daa02a0681fe4f3da24fa32379e10877750af7e
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+keywords: 제스처, 동작 컨트롤러, unity, 응시, 입력, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, 혼합 현실 Toolkit
+ms.openlocfilehash: 005b817574e6d3600b9c43e443432203418b58a2258e2938614cc549ab7539c2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110228"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223839"
 ---
 # <a name="articulated-hand-and-eye-tracking-in-unity"></a>Unity에서의 트레일러 및 눈 추적
 
@@ -42,7 +42,7 @@ MRTK v2는 개발을 가속화 하는 데 도움이 되는 UI 컨트롤 및 구�
 
 [이 예제 장면](/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples)에서 MRTK의 다양한 상호 작용 유형과 UI 컨트롤을 살펴봅니다.
 
-**자산/MixedRealityToolkit/데모** 폴더의 [Mixed Reality Toolkit GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity) 에서 다른 예제 장면을 찾을 수 있습니다.
+Mixed Reality의 다른 예제 장면을 [GitHub Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) **자산/MixedRealityToolkit/데모** 폴더 아래에서 찾을 수 있습니다.
 
 [![장면 예](images/MRTK_Examples.png)](/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples)
 
@@ -60,7 +60,7 @@ MRTK v2는 개발을 가속화 하는 데 도움이 되는 UI 컨트롤 및 구�
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [시선 기반 상호 작용](../../design/eye-gaze-interaction.md)
 * [HoloLens 2의 시선 추적](../../design/eye-tracking.md)

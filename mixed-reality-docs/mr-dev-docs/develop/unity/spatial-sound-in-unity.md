@@ -1,79 +1,79 @@
 ---
 title: Unity의 공간 음향
-description: 예제를 사용 하 여 Unity 장면 내의 특정 3D 점에서 공간 소리를 재생 하 고 경우 하는 방법을 알아봅니다.
+description: 예제를 사용하여 Unity 장면 내의 특정 3D 지점에서 공간 소리를 재생하고 감쇠하는 방법을 알아봅니다.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
-keywords: Unity, 공간 음향, HRTF, 대화방 크기, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit, spatializer, 반향
-ms.openlocfilehash: ec2703aa89925cb68860670f574a1e43f672e247
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: Unity, 공간 사운드, HRTF, 실내 크기, 혼합 현실 헤드셋, Windows mixed reality 헤드셋, 가상 현실 헤드셋, MRTK, Mixed Reality Toolkit, spatializer, reverb
+ms.openlocfilehash: e6e56732a888fd096335a114fceba557519b01bf8df84a7670b9265f46c75a34
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009273"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228229"
 ---
 # <a name="spatial-sound-in-unity"></a>Unity의 공간 음향
 
-이 페이지는 Unity의 공간 소리에 대 한 리소스에 연결 됩니다.
+이 페이지는 Unity의 공간 음향에 대한 리소스에 연결됩니다.
 
 ## <a name="spatializer-options"></a>Spatializer 옵션
 
-혼합 현실 응용 프로그램에 대 한 Spatializer 옵션은 다음과 같습니다.
-* Unity는 *Windows Mixed Reality* 선택적 패키지의 일부로 *MS hrtf Spatializer* 을 제공 합니다.
-  * 는 높은 비용의 단일 소스 아키텍처에서 CPU를 실행 합니다.
-  * 이전에 원본 HoloLens 응용 프로그램과의 호환성을 위해 제공 됩니다.
-* Microsoft *Spatializer* 는 [microsoft Spatializer GitHub 리포지토리에서](https://github.com/microsoft/spatialaudio-unity)사용할 수 있습니다.
-  * 는 저렴 한 ' 다중 원본 ' 아키텍처를 사용 합니다.
-  * HoloLens 2에서 하드웨어 가속기로 오프 로드 되었습니다. 
+혼합 현실 애플리케이션에 대한 공간화 도우미 옵션은 다음과 같습니다.
+* Unity는 *Windows Mixed Reality* 선택적 패키지의 일부로 *MS HRTF Spatializer를* 제공합니다.
+  * 더 높은 비용의 '단일 원본' 아키텍처에서 CPU에서 실행됩니다.
+  * 원래 HoloLens 애플리케이션과의 이전 버전과의 호환성을 위해 제공됩니다.
+* *Microsoft Spatializer는* Microsoft [spatializer GitHub 리포지토리에서](https://github.com/microsoft/spatialaudio-unity)사용할 수 있습니다.
+  * 저렴한 '다중 원본' 아키텍처를 사용합니다.
+  * HoloLens 2 하드웨어 가속기로 오프로드됩니다. 
 
-새 응용 프로그램의 경우 *Microsoft Spatializer* 를 권장 합니다.
+새 애플리케이션의 경우 *Microsoft Spatializer* 를 사용하는 것이 좋습니다.
 
-## <a name="enable-spatialization"></a>Spatialization 사용
+## <a name="enable-spatialization"></a>공간화 사용
 
-[Unity 용 NuGet](https://github.com/GlitchEnzo/NuGetForUnity/releases/latest) 을 사용 하 여 _SpatialAudio. Spatializer_ 을 설치 하 고 프로젝트의 오디오 설정에서 **microsoft Spatializer** 를 선택 합니다. 그렇다면
-* 계층의 개체에 **오디오 소스** 연결
-* **Spatialization 사용** 확인란을 선택 합니다.
-* **공간 Blend** 슬라이더를 ' 1 '로 이동
-* 개발자 워크스테이션에서 공간 오디오를 사용 하도록 설정 했는지 확인 합니다. 
-    * 작업 표시줄에서 볼륨 아이콘을 마우스 오른쪽 단추로 클릭 하 고 공간 사운드가 "꺼짐" 이외의 항목으로 설정 되어 있는지 확인 합니다. 
-    * **Windows Sonic For 헤드폰** 을 선택 하 여 HoloLens 2에서 듣는 내용을 가장 잘 표현 해 보세요.
+[Unity용 NuGet](https://github.com/GlitchEnzo/NuGetForUnity/releases/latest) 사용하여 _Microsoft.SpatialAudio.Spatializer.Unity를_ 설치하고 프로젝트의 오디오 설정에서 **Microsoft Spatializer를** 선택합니다. 그렇다면
+* 계층 구조의 개체에 **오디오 원본** 연결
+* **공간화 사용** 확인란을 선택합니다.
+* **Spatial Blend** 슬라이더를 '1'로 이동
+* 개발자 워크스테이션에서 공간 오디오가 사용하도록 설정되어 있는지 확인합니다. 
+    * 작업 표시줄에서 볼륨 아이콘을 마우스 오른쪽 단추로 클릭하고 공간 소리가 "off" 이외의 다른 것으로 설정되어 있는지 확인합니다. 
+    * 헤드폰용 Windows Sonic 선택하여 **HoloLens 2** 가장 잘 표현합니다.
 
 >[!NOTE]
->종속성 중 하나가 누락 되어 SpatialAudio에서 플러그 인 Spatializer를 로드 하지 못하는 경우 Unity에 오류가 발생 하는 경우 최신 버전의 [Microsoft Visual C++ 재배포 가능 패키지가](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) PC에 설치 되어 있는지 확인 합니다.
+>Unity에서 플러그 인 Microsoft.SpatialAudio.Spatializer.Unity를 로드할 수 없다는 오류가 발생할 경우 해당 dependencies 중 하나가 누락되어 PC에 최신 버전의 [Microsoft Visual C++ 재배포 가능하도록](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) 설치되어 있는지 확인합니다.
 
 자세한 내용은 다음을 참조하세요.
 * [Microsoft spatializer GitHub 리포지토리](https://github.com/microsoft/spatialaudio-unity)
 * [Microsoft의 spatializer 자습서](tutorials/unity-spatial-audio-ch1.md)
-* [Unity의 오디오 소스 설명서](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html)
+* [Unity의 오디오 원본 설명서](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html)
 * [Unity의 spatializer 설명서](https://docs.unity3d.com/Manual/VRAudioSpatializer.html)
 
 ## <a name="distance-based-attenuation"></a>거리 기반 감쇠
 
-Unity의 기본 거리 기반 감소는 로그 rolloff를 사용 하 여 최소 거리가 1 미터이 고 최대 거리가 500 미터입니다. 이러한 설정은 시나리오에 대해 적용 될 수 있으며, 원본이 너무 빨리 또는 너무 느리게 경우 수 있습니다. 자세한 내용은 다음을 참조하세요.
-* 권장 설정에 대해 [혼합 현실에서 설계](../../design/spatial-sound-design.md) 합니다.
-* 이러한 곡선을 설정 하는 방법에 대 한 지침은 [Unity의 오디오 소스 설명서](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html) 를 참조 하세요.
+Unity의 기본 거리 기반 감쇠는 최소 거리 1미터, 최대 거리 500m이며 로그 롤오프가 있습니다. 이러한 설정은 시나리오에 대해 작동하거나 소스가 너무 빨리 또는 너무 느리게 감쇠되는 것을 발견할 수 있습니다. 자세한 내용은 다음을 참조하세요.
+* 권장 설정에 대한 [혼합 현실의 사운드 디자인.](../../design/spatial-sound-design.md)
+* 이러한 곡선 설정에 대한 지침은 [Unity의 오디오 원본 설명서입니다.](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html)
 
-## <a name="reverb"></a>잔
+## <a name="reverb"></a>반향
 
-_Microsoft Spatializer_ 는 기본적으로 사후 Spatializer 효과를 사용 하지 않도록 설정 합니다. Spatialized 원본에 대해 반향 및 기타 효과를 사용 하도록 설정 하려면 다음을 수행 합니다.
-* 각 원본에 **대화방 효과 보내기 수준** 구성 요소 연결
-* 각 원본에 대 한 전송 수준 곡선을 조정 하 여 효과 처리를 위해 그래프로 다시 보낸 오디오의 이득을 제어 합니다.
+_Microsoft Spatializer는_ 기본적으로 공간화 후 효과를 사용하지 않도록 설정합니다. 공간화된 원본에 대해 반향 및 기타 효과를 사용하도록 설정하려면 다음을 수행합니다.
+* 각 원본에 **Room Effect Send Level** 구성 요소 연결
+* 효과 처리를 위해 그래프로 다시 전송된 오디오의 게인을 제어하도록 각 소스에 대한 송신 수준 곡선을 조정합니다.
 
-자세한 내용은 [spatializer 자습서의 5 장](tutorials/unity-spatial-audio-ch5.md) 을 참조 하세요.
+자세한 내용은 [spatializer 자습서의 5장을](tutorials/unity-spatial-audio-ch5.md) 참조하세요.
 
-## <a name="unity-spatial-sound-examples"></a>Unity 공간 음향 예
+## <a name="unity-spatial-sound-examples"></a>Unity 공간 사운드 예제
 
-Unity의 공간 음향 예는 다음을 참조 하세요.
+Unity의 공간 소리 예제는 다음을 참조하세요.
 * [MRTK 데모](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/Audio)
 * [Microsoft Spatializer 샘플 프로젝트](https://github.com/microsoft/spatialaudio-unity/tree/master/Samples/MicrosoftSpatializerSample)
 
 ## <a name="next-development-checkpoint"></a>다음 개발 검사점
 
-앞서 소개한 Unity 개발 경험을 팔로 사용할 경우 혼합 현실 핵심 빌딩 블록을 탐색 하는 것이 좋습니다. 여기에서 다음 구성 요소로 진행할 수 있습니다.
+앞에서 설명한 Unity 개발 여정을 따라가는 경우 Mixed Reality 핵심 구성 요소에 대해 알아보세요. 여기에서 다음 구성 요소로 진행할 수 있습니다.
 
 > [!div class="nextstepaction"]
-> [텍스트](text-in-unity.md)
+> [Text](text-in-unity.md)
 
 또는 Mixed Reality 플랫폼 기능 및 API로 이동합니다.
 
@@ -82,7 +82,7 @@ Unity의 공간 음향 예는 다음을 참조 하세요.
 
 언제든지 [Unity 개발 검사점](unity-development-overview.md#2-core-building-blocks)으로 돌아갈 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-* [혼합 현실에서의 소리 디자인](../../design/spatial-sound-design.md)
+* [혼합 현실의 사운드 디자인](../../design/spatial-sound-design.md)
 * [Microsoft의 spatializer 자습서](tutorials/unity-spatial-audio-ch1.md)

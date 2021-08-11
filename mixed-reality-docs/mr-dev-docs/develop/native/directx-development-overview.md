@@ -1,23 +1,23 @@
 ---
 title: 네이티브 개발 개요
-description: Windows Mixed Reality Api를 직접 사용 하 여 DirectX 기반 혼합 현실 엔진을 빌드하는 방법에 대해 알아봅니다.
+description: Windows Mixed Reality api를 사용 하 여 DirectX 기반 혼합 현실 엔진을 직접 빌드하는 방법에 대해 알아봅니다.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: DirectX, holographic 렌더링, 네이티브, 네이티브 앱, WinRT, WinRT 앱, 플랫폼 Api, 사용자 지정 엔진, 미들웨어, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: b137fad12740542deb4995485201a9bd0d1d7662
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 056cb0c07002cb319e8acadf66e7f59650f5e00413440d6ad0103aa8ee936400
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581045"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200178"
 ---
 # <a name="native-development-overview"></a>네이티브 개발 개요
 
 ![기본 배너 로고](../images/native_logo_banner.png)
 
-[Unity](../unity/unity-development-overview.md) , [unreal](../unreal/unreal-development-overview.md) 등의 3d 엔진은 유일 하 게 혼합 된 현실 개발 경로를 사용자에 게 공개 하지 않습니다. DirectX 11 또는 DirectX 12를 사용 하 여 Windows Mixed Reality Api를 사용 하 여 혼합 현실 앱을 만들 수도 있습니다. 플랫폼 소스로 이동 하 여 기본적으로 고유한 미들웨어 또는 프레임 워크를 빌드합니다. 
+[Unity](../unity/unity-development-overview.md) , [unreal](../unreal/unreal-development-overview.md) 등의 3d 엔진은 유일 하 게 혼합 된 현실 개발 경로를 사용자에 게 공개 하지 않습니다. directx 11 또는 directx 12를 사용 하 여 Windows Mixed Reality api를 사용 하 여 혼합 현실 앱을 만들 수도 있습니다. 플랫폼 소스로 이동 하 여 기본적으로 고유한 미들웨어 또는 프레임 워크를 빌드합니다. 
 
 > [!IMPORTANT]
 > 유지 하려는 기존 WinRT 프로젝트가 있는 경우 주 [winrt 설명서](creating-a-holographic-directx-project.md)를 참조 하세요. 
@@ -38,7 +38,7 @@ Windows Mixed Reality는 다음과 같은 [두 가지 종류의 앱을](../../de
 
 ### <a name="2-core-building-blocks"></a>2. 핵심 구성 요소
 
-Windows Mixed Reality 응용 프로그램은 다음 Api를 사용 하 여 HoloLens 및 기타 몰입 형 헤드셋에 대 한 [Mixed Reality](../../discover/mixed-reality.md) 환경을 구축 합니다.
+Windows Mixed Reality 응용 프로그램은 다음 api를 사용 하 여 HoloLens 및 기타 몰입 형 헤드셋에 대 한 [Mixed Reality](../../discover/mixed-reality.md) 환경을 구축 합니다.
 
 |  특징  |  기능  |
 | --- | --- |
@@ -54,7 +54,7 @@ Windows Mixed Reality 응용 프로그램은 다음 Api를 사용 하 여 HoloLe
 
 ### <a name="3-deploying-and-testing"></a>3. 배포 및 테스트
 
-HoloLens 2 또는 Windows Mixed Reality 모던 헤드셋에서 OpenXR를 사용 하 여 데스크톱에서 개발할 수 있습니다.  헤드셋에 액세스할 수 없는 경우 [HoloLens 2 에뮬레이터](../platform-capabilities-and-apis/using-the-hololens-emulator.md) 또는 [Windows Mixed Reality 시뮬레이터](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) 를 대신 사용할 수 있습니다.
+HoloLens 2 또는 Windows Mixed Reality 모던 헤드셋에서 OpenXR를 사용 하 여 데스크톱에서 개발할 수 있습니다.  헤드셋에 액세스할 수 없는 경우 [HoloLens 2 Emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md) 또는 [Windows Mixed Reality 시뮬레이터](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) 를 대신 사용할 수 있습니다.
 
 ## <a name="whats-next"></a>다음 작업
 
@@ -68,6 +68,6 @@ OpenXR 게임의 수준을 설정 하려면 아래 링크를 확인 하세요.
 * [OpenXR 성능](openxr-performance.md)
 * [OpenXR 문제 해결](openxr-troubleshooting.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 * [앱 모델](../../design/app-model.md)
 * [앱 보기](../../design/app-views.md)

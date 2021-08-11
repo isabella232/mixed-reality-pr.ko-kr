@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 8c1da7ae6a46bd00599a77b1c4cbb0b2f7baa632
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: a5ebf85e3f45e622aaa05311d78066bf8b762108af81cff5292772b92cce0900
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176169"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200226"
 ---
 # <a name="controller-mapping-tool"></a>컨트롤러 매핑 도구
 
@@ -42,11 +42,11 @@ ms.locfileid: "113176169"
 
 ### <a name="active-controls-display"></a>활성 컨트롤 표시
 
-더 작고 좁은 디스플레이 패널에는 Unity 입력 축과 활성 상태의 단추(예: 단추를 누른 경우)가 표시됩니다. 활성 컨트롤 표시는 컨트롤러 상태에 대한 읽기 쉬운 요약 보기를 제공합니다.
+더 작고 좁은 디스플레이 패널에는 Unity 입력 축과 활성 상태의 단추(예: 단추 누른 단추)가 표시됩니다. 활성 컨트롤 표시는 컨트롤러 상태에 대한 읽기 쉬운 요약 보기를 제공합니다.
 
 ![활성 컨트롤 표시](../images/controller-mapping-tool/ActiveControls.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [입력 시스템 데이터 공급자 만들기](../input/create-data-provider.md)
 - [InputFeatureUsage 도구](input-feature-usage-tool.md)

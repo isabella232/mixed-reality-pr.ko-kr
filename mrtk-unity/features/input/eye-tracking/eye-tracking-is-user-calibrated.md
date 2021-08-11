@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk, EyeTracking, 보정,
-ms.openlocfilehash: a2023a2d7f6a0254e8fef32f4faf09def956e94f
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 02b173bbc7a6bf410d3521b37660f292b8e3340de6b1a98007fdbc200f26bc49
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177204"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199774"
 ---
 # <a name="eye-calibration"></a>눈 보정
 
@@ -87,7 +87,7 @@ MRTK의 아이 추적 구성은 인터페이스를 통해 구성 됩니다 [`IMi
    }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [MRTK 눈 추적 개요](eye-tracking-main.md)
 - [MRTK 눈동자 추적 설정](eye-tracking-basic-setup.md)

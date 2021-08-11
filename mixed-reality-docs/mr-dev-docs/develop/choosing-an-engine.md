@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 04/22/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, unity
-ms.openlocfilehash: c91a4df9db8ef71778421750bca48d81d4b4a02e
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: 14235852f8c90e7ccc4f105f2938ce514ae2933973469db9a0e01bd03d2c1b6d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394527"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115227557"
 ---
 # <a name="choosing-your-engine"></a>엔진 선택
 
@@ -31,7 +31,7 @@ ms.locfileid: "112394527"
 * 매력적인 브라우저 간 AR/VR 웹 환경을 만드는 웹 **개발자는** **WebXR을** 사용할 수 있습니다.
 
     > [!NOTE]
-    > HoloLens 개발을 위한 **Babylon.js** 현재 진행 중입니다. 최신 뉴스를 확인하고 [커뮤니티에 참여하세요!](https://doc.babylonjs.com/divingDeeper/webXR/introToWebXR)
+    > **HoloLens** 개발을 위한Babylon.js현재 진행 중입니다. 최신 뉴스를 확인하고 [커뮤니티에 참여하세요!](https://doc.babylonjs.com/divingDeeper/webXR/introToWebXR)
 
 <!-- Babylon is a Javascript-based, open source, 3D graphics engine capable of powering 3D scenes in a web browser. Babylon.js 4.2+ includes support for WebXR. With Babylon React Native, you can even build cross-platform native     applications for PC, mobile, and mixed reality devices. -->
 
@@ -63,18 +63,18 @@ ms.locfileid: "112394527"
 | 하드웨어 | Unity | Unreal | JavaScript | 사용자 지정 엔진 <br>(OpenXR 사용) |
 |---|---|---|---|---|
 | HoloLens 2 | ✔️ | ✔️ | ✔️ | ✔️ |
-| HoloLens(1세대) | ✔️ | ✔️ | ❌ | WinRT (레거시)만 |
+| HoloLens(1세대) | ✔️ | ✔️ | ❌ | WinRT(레거시) 전용 |
 | [Windows Mixed Reality 헤드셋](../discover/immersive-headset-hardware-details.md) | ✔️ | ✔️ | ✔️ | ✔️ |
 | SteamVR 헤드셋 | ✔️ | ✔️ | ✔️ | ✔️ |
-| Oculus Quest/Rift | ✔️ | ✔️ | ✔️ | ✔️ |
-| 모바일 (ARCore/Arcore) | ✔️ | ✔️ | ✔️ | ❌ |
+| Oculus Quest/Quest | ✔️ | ✔️ | ✔️ | ✔️ |
+| Mobile(ARCore/ARKit) | ✔️ | ✔️ | ✔️ | ❌ |
 
 <br>
 
 | 도구 | Unity | Unreal | JavaScript | 사용자 지정 엔진 <br>(OpenXR 사용) |
 |---|---|---|---|---|
 | Mixed Reality Toolkit | ✔️ | ✔️ | ❌  | ❌ |
-| 세계 잠금 도구 | ✔️ | ❌ | ❌  | ❌ |
+| World Locking Tools | ✔️ | ❌ | ❌  | ❌ |
 <!-- | 메시 | ❌ | ❌ | ❌ | ❌ | -->
 
 <br>
@@ -86,7 +86,7 @@ ms.locfileid: "112394527"
 | Azure Remote Rendering | ✔️ * | ❌ | ❌ | ✔️ * |
 
 > [!NOTE]
-> * Azure 원격 렌더링은 현재 레거시 WinRT Api (Unity의 Windows XR plugin)를 사용 하는 앱에서 지원 됩니다. OpenXR apps에 대 한 ARR 지원이 곧 제공 될 예정입니다.
+> * Azure Remote Rendering 현재 레거시 WinRT API(Unity의 Windows XR 플러그 인)를 사용하는 앱에서 지원됩니다. OpenXR 앱에 대한 ARR 지원이 곧 출시될 예정입니다.
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -7,12 +7,12 @@ ms.date: 07/26/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, PC 홀로그램 원격, 도구 설명, 시선 추적
 ms.localizationpriority: high
-ms.openlocfilehash: 53ede3db405e6f6f4ccaa20ff35847ecc9081dca
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 3a8c409d06861d99a217dcf4e670a9aa543b441c352ea68bc738779a3f779046
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757355"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225550"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. PC 홀로그램 원격 시작
 

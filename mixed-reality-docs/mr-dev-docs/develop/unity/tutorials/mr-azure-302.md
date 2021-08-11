@@ -1,24 +1,24 @@
 ---
-title: HoloLens (첫 번째 gen) 및 Azure 302-컴퓨터 비전
+title: HoloLens(1세대) 및 Azure 302 - 컴퓨터 비전
 description: 이 과정을 완료 하 여 혼합 현실 응용 프로그램에서 Azure Computer Vision를 사용 하 여 제공 된 이미지 내의 시각적 콘텐츠를 인식 하는 방법을 알아보세요.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure, mixed reality, 아카데미, unity, 자습서, api, 컴퓨터 비전, hololens, 모던, vr, Windows 10, Visual Studio
-ms.openlocfilehash: 119d83ec9fef97b4e4017b2226a9593404847a71
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 5cac40c2613187776ea9ec5ba1268f1422a084d32322e9c4aca6742ed75d05b2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730540"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226040"
 ---
 # <a name="hololens-1st-gen-and-azure-302-computer-vision"></a>HoloLens (첫 번째 gen) 및 Azure 302: 컴퓨터 비전
 
 <br>
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2를 개발 하는 방법을 설명 하는 앞으로 게시 될 새 자습서가 있습니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
 
 <br>
 
@@ -32,7 +32,7 @@ Microsoft Computer Vision는 개발자에 게 모든 클라우드에서 고급 �
 
 이 과정을 완료 하면 다음과 같은 작업을 수행할 수 있는 혼합 현실 HoloLens 응용 프로그램이 만들어집니다.
 
-1.  탭 제스처를 사용 하 여 HoloLens 카메라는 이미지를 캡처합니다.
+1.  탭 제스처를 사용 하면 HoloLens 카메라가 이미지를 캡처합니다.
 2.  이미지가 Azure Computer Vision API 서비스로 전송 됩니다. 
 3.  인식 된 개체는 Unity 장면에 배치 된 간단한 UI 그룹에 나열 됩니다.
 
@@ -49,7 +49,7 @@ Microsoft Computer Vision는 개발자에 게 모든 클라우드에서 고급 �
 </table>
 
 > [!NOTE]
-> 이 과정에서 주로 HoloLens에 초점을 맞춘 반면,이 과정에서 배운 내용을 Windows Mixed Reality 모던 (VR) 헤드셋에도 적용할 수 있습니다. 모던 (VR) 헤드셋은 액세스할 수 있는 카메라를 포함 하지 않으므로 PC에 연결 된 외부 카메라가 필요 합니다. 이 과정을 진행 하면서 모던 (VR) 헤드셋을 지원 하기 위해 사용 해야 하는 변경 내용에 대 한 정보를 볼 수 있습니다.
+> 이 과정에서 주로 HoloLens에 중점을 둔 반면이 과정에서 학습 하는 내용을 Windows Mixed Reality 모던 (VR) 헤드셋에도 적용할 수 있습니다. 모던 (VR) 헤드셋은 액세스할 수 있는 카메라를 포함 하지 않으므로 PC에 연결 된 외부 카메라가 필요 합니다. 이 과정을 진행 하면서 모던 (VR) 헤드셋을 지원 하기 위해 사용 해야 하는 변경 내용에 대 한 정보를 볼 수 있습니다.
 
 ## <a name="prerequisites"></a>필수 조건
 
@@ -58,22 +58,22 @@ Microsoft Computer Vision는 개발자에 게 모든 클라우드에서 고급 �
 
 이 과정에는 다음 하드웨어 및 소프트웨어를 권장 합니다.
 
-- 모던 (VR) 헤드셋 개발을 위한 [Windows Mixed Reality와 호환 되](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) 는 개발 PC
-- [개발자 모드를 사용 하는 Windows 10이 하 버전의 작성자 업데이트 (또는 이상)](../../install-the-tools.md#installation-checklist)
+- Windows Mixed Reality 모던 (VR) 헤드셋 개발과 [호환 되](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) 는 개발 PC
+- [개발자 모드를 사용 하도록 설정 된 Windows 10 Fall Creators Update 이상](../../install-the-tools.md#installation-checklist)
 - [최신 Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- 개발자 모드가 사용 하도록 설정 된 [Windows Mixed Reality 모던 (VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md) 또는 [Microsoft HoloLens](/hololens/hololens1-hardware)
+- 개발자 모드를 사용 하는 [Windows Mixed Reality 모던 (VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md) 또는 [Microsoft HoloLens](/hololens/hololens1-hardware)
 - PC에 연결 된 카메라 (몰입 형 헤드셋 개발용)
 - Azure 설정 및 Computer Vision API 검색을 위한 인터넷 액세스
 
 ## <a name="before-you-start"></a>시작하기 전에
 
 1.  이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.)
-2.  HoloLens를 설정 하 고 테스트 합니다. HoloLens를 설정 하는 데 지원이 필요한 경우 [hololens 설정 문서를 방문](/hololens/hololens-setup)해야 합니다. 
+2.  HoloLens를 설정 하 고 테스트 합니다. HoloLens 설정에 대 한 지원이 필요한 경우 [HoloLens 설치 문서를 방문 해야](/hololens/hololens-setup)합니다. 
 3.  새 HoloLens 앱 개발을 시작할 때 보정 및 센서 조정을 수행 하는 것이 좋습니다 (경우에 따라 각 사용자에 대해 해당 작업을 수행 하는 데 도움이 될 수 있음). 
 
-보정에 대 한 도움말을 보려면 [HoloLens 보정 문서에](/hololens/hololens-calibration#hololens-2)대 한 다음 링크를 참조 하세요.
+보정에 대 한 도움말을 보려면 [HoloLens 보정 문서에 대 한 링크를](/hololens/hololens-calibration#hololens-2)참조 하세요.
 
 센서 조정에 대 한 도움말을 보려면 [HoloLens 센서 조정 문서에 대 한 링크를](/hololens/hololens-updates)참조 하세요.
 
@@ -143,163 +143,163 @@ Azure에서 *Computer Vision API* 서비스를 사용 하려면 응용 프로그
 
 1.  *Unity* 를 열고 **새로 만들기** 를 클릭 합니다. 
 
-    ![새 Unity 프로젝트를 시작 합니다.](images/AzureLabs-Lab2-06.png)
+    ![새 Unity 프로젝트를 시작합니다.](images/AzureLabs-Lab2-06.png)
 
-2.  이제 Unity 프로젝트 이름을 제공 해야 합니다. **MR_ComputerVision** 를 삽입 합니다. 프로젝트 형식이 **3d** 로 설정 되었는지 확인 합니다. 위치를 적절 한 **위치** 에 적절 하 게 설정 합니다. 루트 디렉터리에 가까울수록 좋습니다. 그런 다음 **프로젝트 만들기** 를 클릭 합니다.
+2.  이제 Unity Project 이름을 제공해야 합니다. **MR_ComputerVision** 삽입합니다. 프로젝트 형식이 **3D 로** 설정되어 있는지 확인합니다. **위치를** 적절한 위치로 설정합니다(루트 디렉터리에 가까울수록 좋습니다). 그런 다음 **프로젝트 만들기를** 클릭합니다.
 
-    ![새 Unity 프로젝트에 대 한 세부 정보를 제공 합니다.](images/AzureLabs-Lab2-07.png)
+    ![새 Unity 프로젝트에 대한 세부 정보를 제공합니다.](images/AzureLabs-Lab2-07.png)
 
-3.  Unity를 연 상태에서 기본 **스크립트 편집기** 가 **Visual Studio** 로 설정 되어 있는지 확인 하는 것이 좋습니다. **> 기본 설정 편집** 으로 이동한 다음 새 창에서 **외부 도구** 로 이동 합니다. **외부 스크립트 편집기** 를 **Visual Studio 2017** 로 변경 합니다. **기본 설정** 창을 닫습니다.
+3.  Unity가 열려 있는 경우 기본 **스크립트 편집기가** **Visual Studio** 로 설정되어 있는지 확인하는 것이 좋습니다. 편집 **> 기본 설정으로** 이동한 다음 새 창에서 **외부 도구** 로 이동합니다. **외부 스크립트 편집기를** **Visual Studio 2017로** 변경합니다. 기본 **설정** 창을 닫습니다.
 
-    ![스크립트 편집기 기본 설정을 업데이트 합니다.](images/AzureLabs-Lab2-08.png)
+    ![스크립트 편집기 기본 설정을 업데이트합니다.](images/AzureLabs-Lab2-08.png)
 
-4.  그런 다음 **파일 > 빌드 설정** 으로 이동 하 고 **유니버설 Windows 플랫폼** 을 선택한 후 **플랫폼 전환** 단추를 클릭 하 여 선택 항목을 적용 합니다.
+4.  다음으로 **파일 > 빌드 설정** 이동하여 유니버설 **Windows 플랫폼을** 선택한 **다음, 플랫폼 전환** 단추를 클릭하여 선택 항목을 적용합니다.
 
-    ![빌드 설정 창에서 플랫폼을 UWP로 전환 합니다.](images/AzureLabs-Lab2-10.png)
+    ![설정 창을 빌드하고 플랫폼을 UWP로 전환합니다.](images/AzureLabs-Lab2-10.png)
 
-5.  아직 **파일 > 빌드 설정을** 사용 하 고 있는지 확인 합니다.
+5.  파일 > 있는 동안 **설정 빌드하고** 다음을 확인합니다.
 
-    1. **대상 장치가** **HoloLens** 로 설정 됨
+    1. **대상 디바이스가** **HoloLens**
 
-        > 모던 헤드셋의 경우 **대상 장치** 를 *모든 장치로* 설정 합니다.
+        > 몰입형 헤드셋의 경우 **대상 디바이스를** *모든 디바이스로* 설정합니다.
 
-    2. **빌드 형식이** **D3D** 로 설정 됩니다.
-    3. **SDK** 가 **최신 설치** 로 설정 됨
-    4. **Visual Studio 버전이** **최신 설치** 로 설정 됨
-    5. **빌드 및 실행** 이 **로컬 컴퓨터로** 설정 됨
-    6. 장면을 저장 하 고 빌드에 추가 합니다.
+    2. **빌드 유형이** **D3D로** 설정됩니다.
+    3. **SDK가** **최신 설치로 설정됩니다.**
+    4. **Visual Studio 버전이** 최신 **설치로 설정됩니다.**
+    5. **빌드 및 실행이** **로컬 컴퓨터로 설정됩니다.**
+    6. 장면을 저장하고 빌드에 추가합니다.
 
-        1. 이렇게 하려면 열려 있는 **장면 추가** 를 선택 합니다. 저장 창이 표시 됩니다.
+        1. 열린 장면 추가 를 선택하여 이 작업을 **수행합니다.** 저장 창이 나타납니다.
         
-            ![열린 장면 추가 단추를 클릭 합니다.](images/AzureLabs-Lab2-11.png)
+            ![열린 장면 추가 단추를 클릭합니다.](images/AzureLabs-Lab2-11.png)
 
-        2. 이에 대 한 새 폴더를 만들고 나중에 장면을 만든 다음 **새 폴더** 단추를 선택 하 여 새 폴더를 만들고 이름을 **장면을** 로 지정한 다음
+        2. 이에 대한 새 폴더 및 이후의 장면을 만든 다음, 새 폴더 단추를 선택하여 새 **폴더를** 만들고 이름을 **Scenes로** 지정합니다.
 
             ![새 스크립트 폴더 만들기](images/AzureLabs-Lab2-12.png)
 
-        3. 새로 만든 **장면** 폴더를 연 다음 *파일 이름*: 텍스트 필드에 **MR_ComputerVisionScene** 를 입력 하 고 **저장** 을 클릭 합니다.
+        3. 새로 만든 **Scenes** 폴더를 열고 *파일 이름*: 텍스트 필드에 **MR_ComputerVisionScene** 입력한 **다음, 저장을** 클릭합니다.
 
-            ![새 장면에 이름을 지정 합니다.](images/AzureLabs-Lab2-13.png)
+            ![새 장면에 이름을 지정합니다.](images/AzureLabs-Lab2-13.png)
 
-            > Unity 프로젝트와 연결 되어 있어야 하므로 *자산* 폴더 내에 unity 장면을 저장 해야 합니다. 배경 폴더 (및 기타 유사한 폴더)를 만드는 것은 Unity 프로젝트를 구조화 하는 일반적인 방법입니다.
+            > Unity 장면은 Unity Project 연결되어야 하며 *자산* 폴더 내에 저장해야 합니다. Scenes 폴더(및 기타 유사한 폴더)를 만드는 것은 Unity 프로젝트를 구성하는 일반적인 방법입니다.
 
-    7. *빌드 설정* 의 나머지 설정은 지금은 기본값으로 남겨 두어야 합니다.
+    7. *빌드 설정* 나머지 설정은 현재 기본값으로 유지되어야 합니다.
 
-6. *빌드 설정* 창에서 **플레이어 설정** 단추를 클릭 하면 *검사기* 가 있는 공간에서 관련 패널이 열립니다. 
+6. 빌드 *설정* 창에서 **플레이어 설정** 단추를 클릭하면 *Inspector가* 있는 공간에서 관련 패널이 열립니다. 
 
     ![플레이어 설정을 엽니다.](images/AzureLabs-Lab2-14.png)
 
-7. 이 패널에서 몇 가지 설정을 확인 해야 합니다.
+7. 이 패널에서 몇 가지 설정을 확인해야 합니다.
 
-    1. **기타 설정** 탭에서 다음을 수행 합니다.
+    1. 기타 **설정** 탭에서 다음을 수행합니다.
 
-        1. **Scripting Runtime 버전** 은 **안정적** 이어야 합니다 (.net 3.5 해당).
-        2. **Scripting 백엔드** 는 **.net** 이어야 합니다.
-        3. **API 호환성 수준은** **.net 4.6** 이어야 합니다.
+        1. **스크립팅 런타임 버전은** **안정적이어야** 합니다(.NET 3.5 동급).
+        2. **스크립팅 백 엔드는** **.NET이어야 합니다.**
+        3. **API 호환성 수준은** **.NET 4.6이어야** 합니다.
 
-            ![다른 설정을 업데이트 합니다.](images/AzureLabs-Lab2-15.png)
+            ![다른 설정을 업데이트합니다.](images/AzureLabs-Lab2-15.png)
       
-    2. **게시 설정** 탭의 **기능** 아래에서 다음을 확인 합니다.
+    2. 게시 **설정** 탭의 기능 아래에서 **다음을 확인합니다.**
 
         1. **InternetClient**
         2. **웹캠**
 
-            ![게시 설정을 업데이트 하는 중입니다.](images/AzureLabs-Lab2-16.png)
+            ![게시 설정 업데이트](images/AzureLabs-Lab2-16.png)
 
-    3. 패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음), **지원 되는 틱 가상 현실**, **Windows Mixed reality SDK** 가 추가 되어 있는지 확인 합니다.
+    3. 패널의 아래쪽에 있는 **XR 설정(게시 설정** 아래에 **있음)에서** 가상 **현실 지원됨을** 틱하여 **Windows Mixed Reality SDK가** 추가되었는지 확인합니다.
 
-        ![X R 설정을 업데이트 합니다.](images/AzureLabs-Lab2-17.png)
+        ![X R 설정 업데이트합니다.](images/AzureLabs-Lab2-17.png)
 
-8.  *빌드 설정* 으로 돌아가기 _Unity c #_ 프로젝트는 더 이상 회색으로 표시 되지 않습니다. 이 옆의 확인란을 선택 합니다. 
+8.  빌드 *설정* _Unity C#_ 프로젝트로 돌아가면 더 이상 회색으로 표시됩니다. 이 옆에 있는 확인란을 선택합니다. 
 9.  빌드 설정 창을 닫습니다.
-10. 장면 및 프로젝트를 저장 합니다 (**파일 > 장면/파일 저장 > 프로젝트 저장**).
+10. 장면을 저장하고 Project(**FILE > SAVE SCENE / FILE > SAVE PROJECT**).
 
-## <a name="chapter-3--main-camera-setup"></a>3 장-기본 카메라 설정
+## <a name="chapter-3--main-camera-setup"></a>3장 - 기본 카메라 설정
 
 > [!IMPORTANT]
-> 이 과정의 *Unity 설정* 구성 요소를 건너뛰고 계속 해 서 코드를 계속 사용 하려면 [unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20302%20-%20Computer%20vision/Azure-MR-302.unitypackage)를 다운로드 하 여 프로젝트에 [사용자 지정 패키지로](https://docs.unity3d.com/Manual/AssetPackages.html)가져온 후 [5 장](#chapter-5--create-the-resultslabel-class)에서 계속 합니다.
+> 이 과정의 Unity *설정* 구성 요소를 건너뛰고 코드를 계속 진행하려면 이 [.unitypackage를](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20302%20-%20Computer%20vision/Azure-MR-302.unitypackage)다운로드하고, 프로젝트에 [사용자 지정 패키지](https://docs.unity3d.com/Manual/AssetPackages.html)로 가져온 다음, [5장](#chapter-5--create-the-resultslabel-class)에서 계속 진행하세요.
 
-1.  *계층 패널* 에서 **기본 카메라** 를 선택 합니다. 
-2.  선택한 후에는 *검사기 패널* 에서 **주 카메라** 의 모든 구성 요소를 볼 수 있습니다.
+1.  계층 *구조 패널에서* **주 카메라** 를 선택합니다. 
+2.  이 옵션을 선택하면 *검사기 패널* 에서 **주 카메라의** 모든 구성 요소를 볼 수 있습니다.
 
-    1. **카메라 개체** 의 이름을 **주 카메라로** 지정 해야 합니다 (철자 확인).
-    2. 기본 카메라 **태그** 는 **maincamera** 로 설정 되어야 합니다 (철자 확인).
-    3. **변환 위치가** **0, 0, 0** 으로 설정 되어 있는지 확인 합니다.
-    4. **Clear 플래그** 를 **단색** 으로 설정 합니다. 몰입 형 헤드셋의 경우이를 무시 합니다.
-    5. 카메라 구성 요소의 **배경색** 을 **검은색, 알파 0 (16 진수 코드: #00000000)** 으로 설정 합니다 (몰입 형 헤드셋의 경우 무시).
+    1. **Camera 개체의** 이름은 Main Camera(맞춤법)로 지정해야 합니다. 
+    2. Main Camera **태그는** **MainCamera로** 설정해야 합니다(맞춤법 유의하세요!).
+    3. **변환 위치가** **0, 0, 0으로** 설정되어 있는지 확인합니다.
+    4. **플래그 지우기를** **단색으로** 설정합니다(몰입형 헤드셋의 경우 무시).
+    5. 카메라 구성 요소의 **배경색을** **검은색, 알파 0(16진수 코드: #00000000)으로** 설정합니다(몰입형 헤드셋의 경우 무시).
 
-        ![카메라 구성 요소를 업데이트 합니다.](images/AzureLabs-Lab2-18.png)
+        ![카메라 구성 요소를 업데이트합니다.](images/AzureLabs-Lab2-18.png)
  
-3.  다음으로, **주 카메라** 에 연결 된 간단한 "커서" 개체를 만들어야 합니다. 그러면 응용 프로그램을 실행할 때 이미지 분석 출력을 배치 하는 데 도움이 됩니다. 이 커서는 카메라 포커스의 중심점을 결정 합니다.
+3.  다음으로, **주 카메라** 에 연결된 간단한 "Cursor" 개체를 만들어야 합니다. 이 개체를 사용하면 애플리케이션이 실행 중일 때 이미지 분석 출력을 배치할 수 있습니다. 이 커서는 카메라 포커스의 중심점을 결정합니다.
 
-커서를 만들려면 다음을 수행 합니다.
+커서를 만들려면 다음을 수행합니다.
 
-1.  *계층 패널* 에서 **기본 카메라** 를 마우스 오른쪽 단추로 클릭 합니다. **3D 개체** 에서 **구** 를 클릭 합니다.
+1.  계층 *구조 패널에서* **주 카메라를** 마우스 오른쪽 단추로 클릭합니다. **3D 개체** 아래에서 **Sphere 를** 클릭합니다.
 
-    ![커서 개체를 선택 합니다.](images/AzureLabs-Lab2-19.png)
+    ![커서 개체를 선택합니다.](images/AzureLabs-Lab2-19.png)
  
-2.  **구의** 이름을 **커서로** 변경 합니다 (커서 개체를 두 번 클릭 하거나 선택한 개체가 있는 ' F2 ' 키보드 단추를 누름). **기본 카메라** 의 자식으로 배치 되어 있는지 확인 합니다.
+2.  **구의** 이름을 **커서로** 바꾸고(커서 개체를 두 번 클릭하거나 개체가 선택된 'F2' 키보드 단추를 누름) **주 카메라** 의 자식으로 있는지 확인합니다.
 
-3.  *계층 패널* 에서 **커서** 를 마우스 왼쪽 단추를 클릭 합니다. 커서를 선택 하 고 *검사기 패널* 에서 다음 변수를 조정 합니다.
+3.  계층 *구조 패널에서* **커서** 를 마우스 왼쪽 단추로 클릭합니다. 커서를 선택한 후 *검사기 패널* 에서 다음 변수를 조정합니다.
 
-    1. *변환 위치* 를 **0, 0, 5** 로 설정 합니다.
-    2. *소수 자릿수* 를 **0.02, 0.02, 0.02** 로 설정 합니다.
+    1. 변환 *위치를* **0, 0, 5로** 설정합니다.
+    2. 크기 *조정을* **0.02, 0.02, 0.02로** 설정합니다.
 
-        ![변환 위치 및 소수 자릿수를 업데이트 합니다.](images/AzureLabs-Lab2-20.png)
+        ![변환 위치 및 배율 을 업데이트합니다.](images/AzureLabs-Lab2-20.png)
   
-## <a name="chapter-4--setup-the-label-system"></a>4 장-레이블 시스템 설정
+## <a name="chapter-4--setup-the-label-system"></a>4장 - 레이블 시스템 설정
 
-HoloLens 카메라를 사용 하 여 이미지를 캡처한 후 해당 이미지는 분석을 위해 *Azure Computer Vision API* 서비스 인스턴스로 전송 됩니다. 
+HoloLens 카메라를 사용하여 이미지를 캡처하면 해당 이미지가 분석을 위해 Azure Computer Vision *API* Service 인스턴스로 전송됩니다. 
 
-이 분석의 결과는 **태그** 라고 하는 인식 된 개체의 목록이 됩니다. 
+해당 분석의 결과는 태그라고 하는 인식된 개체의 **목록입니다.** 
 
-레이블 (세계 공간에서 3D 텍스트로)을 사용 하 여 사진이 만들어진 위치에 이러한 태그를 표시 합니다.
+레이블(세계 공간에서 3D 텍스트로)을 사용하여 사진을 찍은 위치에 이러한 태그를 표시합니다.
 
-다음 단계에서는 **Label** 개체를 설정 하는 방법을 보여 줍니다.
+다음 단계에서는 **Label** 개체를 설정하는 방법을 보여 줍니다.
 
-1.  계층 패널에서 아무 곳 이나 마우스 오른쪽 단추로 클릭 하 고 (위치는이 시점에서 중요 하지 않음) **3D 개체** 에서 **3d 텍스트** 를 추가 합니다. **레이블 텍스트** 를 이름으로 합니다.
+1.  계층 구조 패널의 아무 곳이나 마우스 오른쪽 단추로 클릭하고(현재 위치는 중요하지 않음) **3D 개체** 아래에서 **3D 텍스트를** 추가합니다. 이름을 **LabelText로 지정합니다.**
 
-    ![3D 텍스트 개체를 만듭니다.](images/AzureLabs-Lab2-21.png)
+    ![3D Text 개체를 만듭니다.](images/AzureLabs-Lab2-21.png)
  
-2.  *계층 패널* 에서 **레이블 텍스트** 를 마우스 왼쪽 단추를 클릭 합니다. **Labeltext** 를 선택한 상태에서 *검사기 패널* 의 다음 변수를 조정 합니다.
+2.  계층 *구조 패널에서* **LabelText** 를 마우스 왼쪽 단추로 클릭합니다. **LabelText를** 선택한 후 *검사기 패널* 에서 다음 변수를 조정합니다.
 
-    1. **위치** 를 **0, 0, 0** 으로 설정 합니다.
-    2. **소수 자릿수** 를 **0.01, 0.01, 0.01** 로 설정 합니다.
-    3. 구성 요소 **텍스트 메시** 에서 다음을 수행 합니다.
-    4. **텍스트** 에 있는 모든 텍스트를 "..."로 바꿉니다.        
-    5. **앵커** 를 **중간 가운데로** 설정
-    6. 맞춤을 **가운데** **맞춤** 으로 설정
-    7. **탭 크기** 를 **4** 로 설정 합니다.
-    8. **글꼴 크기** 를 **50** 으로 설정 합니다.
-    9. **색** 을 **#FFFFFFFF** 설정 합니다.
+    1. **위치를** **0,0,0으로 설정합니다.**
+    2. 크기 **조정을** **0.01, 0.01, 0.01로** 설정합니다.
+    3. 구성 요소 **텍스트 메시에서:**
+    4. **텍스트** 내의 모든 텍스트를 "..."로 대체합니다.        
+    5. **앵커를** **중간 센터로** 설정
+    6. **맞춤을** **가운데로** 설정
+    7. 탭 **크기를** **4로 설정합니다.**
+    8. **글꼴 크기를** **50으로** 설정합니다.
+    9. **색을** **#FFFFFFFF**
 
     ![텍스트 구성 요소](images/AzureLabs-Lab2-21-5.png)
 
-3.  *계층 패널* 의 **Labeltext** 를 *프로젝트 패널* 내의 *Asset 폴더로* 끌어 옵니다. 이렇게 하면 **레이블 텍스트가** Prefab로 설정 되어 코드에서 인스턴스화될 수 있습니다.
+3.  계층 패널 의 **LabelText를** *Project* *패널* 내의 *자산 폴더* 로 끌어다 붙입니다. 이렇게 하면 **LabelText가** Prefab이 되므로 코드에서 인스턴스화할 수 있습니다.
 
-    ![LabelText 개체의 prefab을 만듭니다.](images/AzureLabs-Lab2-22.png)
+    ![LabelText 개체의 프리팹을 만듭니다.](images/AzureLabs-Lab2-22.png)
  
-4.  열이 표시 되는 장면에 표시 되지 않도록 *계층 패널* 에서 **labeltext** 를 삭제 해야 합니다. 이제 자산 폴더의 개별 인스턴스에 대해를 호출 하는 prefab 장면 내에서 보관할 필요가 없습니다. 
-5.  *계층 패널* 의 최종 개체 구조는 아래 이미지에 표시 된 것과 같아야 합니다.
+4.  계층 패널 에서 **LabelText를** 삭제해야 여는 장면에 표시되지 않습니다.  이제 Assets 폴더의 개별 인스턴스에 대해 를 호출하는 프리팹이기 때문에 장면 내에 유지할 필요가 없습니다. 
+5.  계층 구조 *패널의* 최종 개체 구조는 아래 이미지에 표시된 구조와 같아야 합니다.
 
     ![계층 패널의 최종 구조입니다.](images/AzureLabs-Lab2-23.png)
 
-## <a name="chapter-5--create-the-resultslabel-class"></a>5 장-ResultsLabel 클래스 만들기
+## <a name="chapter-5--create-the-resultslabel-class"></a>5장 – ResultsLabel 클래스 만들기
 
-만들어야 하는 첫 번째 스크립트는 다음을 담당 하는 *ResultsLabel* 클래스입니다. 
+만들어야 하는 첫 번째 스크립트는 다음을 담당하는 *ResultsLabel* 클래스입니다. 
 
 - 카메라의 위치를 기준으로 적절 한 세계 공간에 레이블 만들기
 - 이미지 분석에서 태그를 표시 합니다.
 
 이 클래스를 만들려면: 
 
-1.  *프로젝트 패널* 을 마우스 오른쪽 단추로 클릭 하 고 **> 폴더를 만듭니다**. 폴더 이름을 **스크립트** 로 합니다. 
+1.  *Project 패널* 을 마우스 오른쪽 단추로 클릭 한 다음 **> 폴더를 만듭니다**. 폴더 이름을 **스크립트** 로 합니다. 
 
     ![스크립트 폴더를 만듭니다.](images/AzureLabs-Lab2-24.png)
 
 2.  **Scripts** 폴더 만들기를 사용 하 여 두 번 클릭 하 여 엽니다. 그런 다음 해당 폴더 내에서를 마우스 오른쪽 단추로 클릭 하 고 **>만들기** 를 선택 하 고 **c # 스크립트** 를 선택 합니다. 스크립트 이름을 *ResultsLabel* 로 합니다. 
 
-3.  새 *ResultsLabel* 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
+3.  새 *ResultsLabel* 스크립트를 두 번 클릭 하 여 **Visual Studio** 를 사용 하 여 엽니다.
 
 4.  클래스 내에서 *ResultsLabel* 클래스에 다음 코드를 삽입 합니다.
 
@@ -359,14 +359,14 @@ HoloLens 카메라를 사용 하 여 이미지를 캡처한 후 해당 이미지
         }
     ```
 
-6.  *Unity* 로 반환 하기 전에 *Visual Studio* 에서 변경 내용을 저장 해야 합니다.
+6.  *Unity* 로 반환 하기 전에 *Visual Studio* 변경 내용을 저장 해야 합니다.
 7.  *Unity 편집기* 로 돌아가서 **Scripts** 폴더의 *ResultsLabel* 클래스를 클릭 하 여 *계층 패널* 의 **기본 카메라** 개체로 끕니다.
 8.  **주 카메라** 를 클릭 하 고 *검사기 패널* 을 확인 합니다.
 
 방금 카메라 안으로 끌어온 스크립트에서 **커서** 와 **레이블 Prefab** 의 두 필드가 있습니다.
 
 9.  아래 이미지에 표시 된 것 처럼 *계층 패널* 에서 커서 라는 개체를 **커서** **라는 슬롯** 으로 끕니다.
-10. 아래 이미지에 표시 된 것 처럼 *프로젝트 패널* 의 *자산 폴더* 에서 **레이블 Prefab** **이라는 개체** 를 끌어 레이블 이름이 지정 된 슬롯으로 끕니다. 
+10. 아래 이미지에 표시 된 것 처럼 *Project 패널* 의 *자산 폴더* 에서 Label **text** 라는 개체를 **Label Prefab** 이라는 슬롯으로 끕니다. 
 
     ![Unity 내에서 참조 대상을 설정 합니다.](images/AzureLabs-Lab2-25.png)
 
@@ -381,7 +381,7 @@ HoloLens 카메라를 사용 하 여 이미지를 캡처한 후 해당 이미지
 
 1.  이전에 만든 **스크립트** 폴더로 이동 합니다. 
 2.  폴더 내부를 마우스 오른쪽 단추로 클릭 하 **> c # 스크립트를 만듭니다**. *ImageCapture* 스크립트를 호출 합니다. 
-3.  새 *ImageCapture* 스크립트를 두 번 클릭 하 여 **Visual Studio** 에서 엽니다.
+3.  새 *ImageCapture* 스크립트를 두 번 클릭 하 여 **Visual Studio** 를 사용 하 여 엽니다.
 4.  파일의 맨 위에 다음 네임 스페이스를 추가 합니다.
 
     ```csharp
@@ -534,7 +534,7 @@ HoloLens 카메라를 사용 하 여 이미지를 캡처한 후 해당 이미지
 
 1.  **스크립트** 폴더를 두 번 클릭 하 여 엽니다. 
 2.  **Scripts** 폴더 내부를 마우스 오른쪽 단추로 클릭 하 고 **> c # 스크립트 만들기** 를 클릭 합니다. 스크립트 이름을 *VisionManager* 로 합니다. 
-3.  새 스크립트를 두 번 클릭 하 여 Visual Studio에서 엽니다.
+3.  새 스크립트를 두 번 클릭 하 여 Visual Studio를 사용 하 여 엽니다.
 4.  *VisionManager* 클래스의 맨 위에서 다음과 같이 네임 스페이스를 업데이트 합니다.
 
     ```csharp
@@ -678,7 +678,7 @@ HoloLens 카메라를 사용 하 여 이미지를 캡처한 후 해당 이미지
         }  
     ```
 
-9.  *Unity* 로 반환 하기 전에 *Visual Studio* 에서 변경 내용을 저장 해야 합니다.
+9.  *Unity* 로 반환 하기 전에 *Visual Studio* 변경 내용을 저장 해야 합니다.
 10. Unity 편집기로 돌아가서 **Scripts** 폴더에서 *VisionManager* 및 *ImageCapture* 클래스를 클릭 하 여 *계층 패널* 의 **기본 카메라** 개체로 끕니다. 
 
 ## <a name="chapter-8--before-building"></a>8 장 – 빌드하기 전
@@ -695,7 +695,7 @@ HoloLens 카메라를 사용 하 여 이미지를 캡처한 후 해당 이미지
 ## <a name="chapter-9--build-the-uwp-solution-and-sideload-the-application"></a>9 장-UWP 솔루션 빌드 및 응용 프로그램 테스트용으로 로드
 이제이 프로젝트의 Unity 섹션에 필요한 모든 항목이 완료 되었으므로 Unity에서 빌드할 수 있습니다.
 
-1.  *빌드 설정*  -  **파일 > 빌드 설정** 으로 이동 합니다.
+1.  빌드 *설정* 파일로 이동 하  -  **> 빌드 설정** ...
 2.  *빌드 설정* 창에서 **빌드** 를 클릭 합니다.
 
     ![Unity에서 앱 빌드](images/AzureLabs-Lab2-26.png)
@@ -705,33 +705,33 @@ HoloLens 카메라를 사용 하 여 이미지를 캡처한 후 해당 이미지
 5.  Unity는 *응용* 프로그램 폴더에 대 한 프로젝트 빌드를 시작 합니다. 
 6.  Unity가 빌드를 완료 하면 (시간이 걸릴 수 있음) 빌드 위치에서 *파일 탐색기* 창이 열립니다. (작업 표시줄은 항상 창 위에 표시 되는 것은 아니지만 새 창 추가를 알려 줍니다.)
 
-## <a name="chapter-10--deploy-to-hololens"></a>10 장 – HoloLens에 배포
+## <a name="chapter-10--deploy-to-hololens"></a>10 장-HoloLens에 배포
 
 HoloLens에 배포 하려면:
 
-1.  HoloLens의 IP 주소 (원격 배포의 경우)가 필요 하 고 HoloLens가 **개발자 모드** 에 있는지 확인 합니다. 가상 하드 디스크 파일에 대한 중요 정보를 제공하려면
+1.  HoloLens의 IP 주소가 필요 하며 (원격 배포의 경우) HoloLens **개발자 모드** 에 있는지 확인 해야 합니다. 이렇게 하려면 다음을 수행합니다.
 
-    1. HoloLens를 입고 하는 동안 **설정을** 엽니다.
+    1. HoloLens를 입고 **설정** 를 엽니다.
     2. **네트워크 & 인터넷 > Wi-Fi > 고급 옵션** 으로 이동 합니다.
     3. **IPv4** 주소를 적어둡니다.
-    4. 그런 다음 **설정** 으로 다시 이동한 다음 **개발자를 위한 & 보안 >를 업데이트** 합니다. 
+    4. 그런 다음 **설정** 으로 다시 이동한 다음 **개발자를 위한 & Security >를 업데이트** 합니다. 
     5. 에서 개발자 모드를 설정 합니다.
 
-2.  새 Unity 빌드 ( *앱* 폴더)로 이동 하 여 *Visual Studio* 에서 솔루션 파일을 엽니다.
-3.  솔루션 구성에서 **디버그** 를 선택 합니다.
-4.  솔루션 플랫폼에서 **x86**, **원격 컴퓨터** 를 선택 합니다. 
+2.  새 Unity 빌드 ( *앱* 폴더)로 이동 하 고 *Visual Studio* 를 사용 하 여 솔루션 파일을 엽니다.
+3.  솔루션 구성에서 **디버그를** 선택합니다.
+4.  솔루션 플랫폼에서 **x86**, **원격 머신** 을 선택합니다. 
 
-    ![Visual Studio에서 솔루션을 배포 합니다.](images/AzureLabs-Lab2-27.png)
+    ![Visual Studio 솔루션을 배포합니다.](images/AzureLabs-Lab2-27.png)
  
-5.  **빌드 메뉴로** 이동 하 여 **솔루션 배포** 를 클릭 하 여 응용 프로그램을 HoloLens로 테스트용으로 로드.
-6.  이제 앱이 HoloLens에 설치 된 앱 목록에 표시 되어 시작할 준비가 되었습니다!
+5.  **빌드 메뉴로** 이동하고 **솔루션 배포** 를 클릭하여 애플리케이션을 HoloLens 테스트용으로 로드합니다.
+6.  이제 앱이 시작 준비가 된 HoloLens 설치된 앱 목록에 표시됩니다.
 
 > [!NOTE]
-> 모던 헤드셋에 배포 하려면 **솔루션 플랫폼** 을 *로컬 컴퓨터* 로 설정 하 고 **구성을** *디버그* 로 설정 하 고 *x 86* 을 **플랫폼** 으로 설정 합니다. 그런 다음 **빌드 메뉴** 를 사용 하 여 *솔루션 배포* 를 선택 하 여 로컬 컴퓨터에 배포 합니다. 
+> 몰입형 헤드셋에 배포하려면 **솔루션 플랫폼을** *로컬 머신으로* 설정하고 **구성을** *디버그로* 설정하고 *x86을* **플랫폼** 으로 설정합니다. 그런 다음, **빌드 메뉴** 를 사용하여 로컬 머신에 배포하고 *솔루션 배포를* 선택합니다. 
 
-## <a name="your-finished-computer-vision-api-application"></a>완성 된 Computer Vision API 응용 프로그램
+## <a name="your-finished-computer-vision-api-application"></a>완료된 Computer Vision API 애플리케이션
 
-축 하 합니다. Azure Computer Vision API를 활용 하 여 실제 개체를 인식 하 고 표시 되는 내용에 대 한 확신을 표시 하는 혼합 현실 앱을 빌드 했습니다.
+축하합니다. Azure Computer Vision API를 활용하여 실제 개체를 인식하고 표시된 내용에 대한 신뢰도를 표시하는 혼합 현실 앱을 빌드했습니다.
 
 ![랩 결과](images/AzureLabs-Lab2-000.png)
 
@@ -739,8 +739,8 @@ HoloLens에 배포 하려면:
 
 ### <a name="exercise-1"></a>연습 1
 
-*Tags* 매개 변수 ( *VisionManager* 내에서 사용 되는 *끝점* 내에서 복합적로)를 사용 하는 것 처럼 앱을 확장 하 여 다른 정보를 검색 합니다. [여기](https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739/operations/56f91f2e778daf14a499e1fa)에 액세스할 수 있는 다른 매개 변수를 살펴보세요.
+*Tags* 매개 변수를 사용한 *것처럼(VisionManager* 내에서 사용되는 *엔드포인트* 내에서 입증된 대로) 다른 정보를 검색하도록 앱을 확장합니다. [여기에](https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739/operations/56f91f2e778daf14a499e1fa)액세스할 수 있는 다른 매개 변수를 살펴보세요.
 
 ### <a name="exercise-2"></a>연습 2
 
-반환 된 Azure 데이터를 보다 잘 이해 하 고 읽을 수 있는 방법으로 표시 합니다. 사용자에 게 사용자에 게 문의 하 고 있을 수 있습니다.
+반환된 Azure 데이터를 더 대화적이고 읽기 가능한 방식으로 표시하여 숫자를 숨길 수 있습니다. 봇이 사용자에게 말하는 것처럼

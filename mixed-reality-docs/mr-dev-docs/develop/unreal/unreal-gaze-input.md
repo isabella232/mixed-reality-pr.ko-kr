@@ -1,17 +1,17 @@
 ---
 title: Unreal에서 입력 응시
-description: Unreal에서 HoloLens 앱에 대 한 눈 추적 및 헤드 방향으로 응시 입력을 설정 하 고 사용 하는 방법에 대해 알아봅니다.
+description: unreal에서 HoloLens 앱에 대 한 눈 추적 및 헤드 방향으로 응시 입력을 설정 하 고 사용 하는 방법에 대해 알아봅니다.
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
-keywords: Windows Mixed Reality, holograms, HoloLens 2, 눈 추적, 응시 입력, 헤드 탑재 된 디스플레이, Unreal engine, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 0c5191534313b94a5382d1065f5a5dd1a208bb49
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, holograms, HoloLens 2, 아이 추적, 응시 입력, 헤드 탑재 된 디스플레이, unreal engine, 혼합 현실 헤드셋, Windows mixed Reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: e423086e293629e3dfadb49b52a376c0b93f5e465328b93f47c2f1e3e0790b63
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98579986"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200679"
 ---
 # <a name="gaze-input"></a>응시 입력
 
@@ -19,14 +19,14 @@ ms.locfileid: "98579986"
 
 ## <a name="enabling-eye-tracking"></a>눈 추적 사용
 
-- **프로젝트 설정 > HoloLens** 에서 **응시 입력** 기능을 사용 하도록 설정 합니다.
+- **Project 설정 > HoloLens** 에서 **응시 입력** 기능을 사용 하도록 설정 합니다.
 
-![응시 입력이 강조 표시 된 HoloLens 프로젝트 설정 기능의 스크린샷](images/unreal-gaze-img-01.png)
+![응시 된 입력이 강조 표시 된 HoloLens 프로젝트 설정 기능의 스크린샷](images/unreal-gaze-img-01.png)
 
 - 새 행위자를 만들어 장면에 추가 합니다.
 
 > [!NOTE]
-> Unreal의 HoloLens 눈 추적에는 두 눈에 모두 단일 응시 레이가 있습니다. Stereoscopic 추적 (두 개의 광선 필요)은 지원 되지 않습니다.
+> unreal의 HoloLens 눈 추적에는 두 눈에 모두 단일 응시 레이가 있습니다. Stereoscopic 추적 (두 개의 광선 필요)은 지원 되지 않습니다.
 
 ## <a name="using-eye-tracking"></a>시선 추적 사용
 
@@ -52,7 +52,7 @@ HMD (헤드 탑재 디스플레이)의 회전을 사용 하 여 사용자 헤드
 
 ## <a name="using-c"></a>C++ 사용
 
-- 게임의 **build.cs** 파일에서 **PublicDependencyModuleNames** 목록에 **EyeTracker** 를 추가 합니다.
+- 게임의 **빌드 .cs** 파일에서 **PublicDependencyModuleNames** 목록에 **EyeTracker** 를 추가 합니다.
 
 ```cpp
 PublicDependencyModuleNames.AddRange(

@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: d81b441cd9bcd40846eb94320f6f7de1bbd2f0a8
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 521ef71abd1ddf920863530a2a423c1080a135e5a404a26f1611fc14f92c2796
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177253"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198248"
 ---
 # <a name="configuring-the-diagnostics-system"></a>진단 시스템 구성
 
@@ -48,7 +48,7 @@ ms.locfileid: "113177253"
 
 ### <a name="window-offset"></a>창 오프셋
 
-보기 포트의 가운데에서 시각적 프로파일러를 배치할 오프셋입니다. 오프셋은 *Window Anchor* 속성의 방향입니다.
+뷰 포트의 가운데에서 Visual Profiler를 배치할 오프셋입니다. 오프셋은 *Window Anchor* 속성의 방향입니다.
 
 ### <a name="window-scale"></a>창 크기 조정
 
@@ -68,7 +68,7 @@ CoreServices.DiagnosticsSystem.ShowDiagnostics = false;
 CoreServices.DiagnosticsSystem.ShowProfiler = false;
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [진단 시스템](diagnostics-system-getting-started.md)
-- [Visual Profiler 사용](using-visual-profiler.md)
+- [시각적 프로파일러 사용](using-visual-profiler.md)

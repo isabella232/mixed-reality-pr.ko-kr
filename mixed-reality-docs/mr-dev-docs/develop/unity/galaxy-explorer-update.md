@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: galaxy 탐색기, 사례 연구, 프로젝트, 샘플, mrtk, 혼합 현실 Toolkit, Unity, 샘플 앱, 예제 앱, 오픈 소스, Microsoft Store, HoloLens, 혼합 현실 헤드셋, windows Mixed Reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 1e19f63f493eba2559cf60ef7c1224b7323ec825
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: c3d9c6da13446816f3fd75f83e5a9088661c9604ef4d86ea805202f538d395b5
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757078"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200507"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>HoloLens 2에 대 한 Galaxy 탐색기 만들기
 
@@ -166,21 +166,21 @@ Milky 방식의 태양계를 만드는 것은 humbling 환경 이었습니다. �
 
 Unity에서 구현할 때 유의해야 할 몇 가지 주요 사항이 있습니다.
 
-Unity는 큰 투명 계층 집합을 처리할 때 쉽게 혼동됩니다. 해결 방법은 각 메시의 질감 재질을 복제하고 내부부터 외부까지 오름차순 렌더링 큐 값을 각 재질에 5씩 점진적으로 적용하는 것이었습니다.
+Unity는 큰 투명 계층 집합을 처리할 때 쉽게 혼동됩니다. 해결 방법은 각 메시에 대한 질감 재질을 복제하고 오름차순 Render Queue 값을 내부에서 외부로 5씩 각 재질에 점진적으로 적용하는 것이었습니다.
 
-그 결과 내부 셸의 Render Queue 값은 3000(기본값)이고, 정적 빨간색 톤 외부는 나중에 값이 3005이며, 빠른 흰색 외부 클라우드는 3010입니다. 이 모델에서는 Great Red Spot(내부 계층에서 외부 계층으로 진행)이 값 3025로 완료되었습니다.
+그 결과 내부 셸의 Render Queue 값은 3000(기본값)이고, 정적 빨간색 톤 외부는 나중에 값이 3005이며, 빠른 흰색 외부 클라우드는 3010입니다. 이 모델에서는 Great Red Spot(내부 계층에서 외부 계층으로 진행)이 3025로 완료되었습니다.
 
 ![2차 최종 개체](images/ge-update-jupiter-final.jpg)
 
 ### <a name="final-touches"></a>마지막 터치
 
-질감이 있는 텍스처된 스트루 계층은 처음에는 설정되었으며, 구현에 충분하지 않은 것으로 입증되었습니다.
+처음에는 질감이 있는 텍스처된 스트루 계층이 설정되었으며, 이는 구현에 충분하지 않은 것으로 입증되었습니다.
 
 원래 Planet Standard 셰이더와 모든 변형은 MRTK 표준 셰이더에서 지원되지 않는 스크립트 SunLightReceiver를 통해 조명 정보를 받습니다.
 
-Planet Standard 셰이더가 transparencies가 있는 질감 맵을 지원하지 않기 때문에 셰이더를 단순히 교환하는 것은 솔루션이 아닙니다. 이 셰이더를 편집하여 의도한 대로 채색 빌드가 작동하도록 했습니다.
+Planet Standard 셰이더가 transparencies가 있는 질감 맵을 지원하지 않기 때문에 셰이더를 단순히 교환하는 것은 솔루션이 아니었습니다. 이 셰이더를 편집하여 의도한 대로 채색 빌드가 작동하도록 했습니다.
 
-마지막으로, Source Blend를 10으로 설정하고 Destination Blend를 5로 설정하여 알파 혼합을 설정해야 했습니다.
+마지막으로, Source Blend를 10으로 설정하고 Destination Blend를 5로 설정하여 알파 Blend를 설정해야 했습니다.
 
 ![Unity 속성](images/ge-update-jupiter-unity-render-queue.jpg)
 
@@ -195,7 +195,7 @@ HoloLens 2 위한 Galaxy Explorer를 만들고 HoloLens(1세대), VR 및 데스�
 ![Galaxy Explorer 팀](images/ge-update-team-image.png)
 
 왼쪽에서 오른쪽으로: Artemis Tsdou(개발자), Angie Teickner(비주얼 디자이너), David Janer(UX 디자이너), David Janer(Delivery & Production Lead), Yasushi Zonno(Creative Lead), Eline Ledent(Developer) 및 BenOu(Sr. Developer).
-왼쪽에서 오른쪽으로 아래쪽: Amit Rojtblat(Technical Artist), Martin Wettig(3D Artist) 및 Dirk Sontti(Studio Head).
+왼쪽에서 오른쪽으로 아래쪽: Amit Rojtblat(Technical Artist), Martin Wettig(3D Artist) 및 Dirk Sonika(Studio Head).
 추천되지 않음: TimEdken(기술 리드) 및 표시자(비주얼 디자이너).
 
 ## <a name="additional-information"></a>추가 정보

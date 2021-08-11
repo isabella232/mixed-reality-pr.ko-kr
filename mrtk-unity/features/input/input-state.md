@@ -1,26 +1,26 @@
 ---
 title: 입력 상태
-description: MRTK의 입력 상태에 대한 설명서
+description: MRTK의 입력 상태에 대 한 설명서
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, InputState,
-ms.openlocfilehash: 4c1bd115c63e25decf73c082546e75b0f276a7ef
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, mrtk, inputstate,
+ms.openlocfilehash: 7d5e008ae3e43d227b90a563dd74e65a89527bd7ddf1720e26577042ce0d545f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145253"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228363"
 ---
-# <a name="accessing-input-state-in-mrtk"></a>MRTK의 입력 상태에 액세스
+# <a name="accessing-input-state-in-mrtk"></a>MRTK의 입력 상태 액세스
 
-입력 원본에 연결된 컨트롤러를 반복해서 MRTK의 모든 입력 상태를 직접 쿼리할 수 있습니다. 또한 MRTK는 눈, 손, 머리 및 모션 컨트롤러의 위치와 회전에 액세스하기 위한 편리한 방법을 제공합니다.
+입력 소스에 연결 된 컨트롤러를 반복 하 여 MRTK의 모든 입력 상태를 직접 쿼리할 수 있습니다. 또한 MRTK는 눈, 손, 헤드 및 동작 컨트롤러의 위치와 회전에 액세스 하기 위한 편리한 방법을 제공 합니다.
 
-컨트롤러를 통해, 그리고 클래스를 사용하여 입력을 쿼리하는 예제는 InputDataExample 장면을 [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) 참조하세요.
+컨트롤러를 반복 하 고 클래스를 사용 하 여 입력을 쿼리 하는 예제는 InputDataExample 장면을 참조 하세요 [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) .
 
-## <a name="example-access-position-rotation-of-head-hands-eyes-in-mrtk"></a>예: MRTK의 액세스 위치, 머리 회전, 손, 눈
+## <a name="example-access-position-rotation-of-head-hands-eyes-in-mrtk"></a>예: 액세스 위치, 헤드, 손 방향 회전, MRTK의 눈
 
-MRTK의 [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) 클래스는 손 광선, 헤드 광선, 시선 응시 광선 및 모션 컨트롤러 광선에 액세스하기 위한 편리한 메서드를 제공합니다.
+MRTK의 [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) 클래스는 손 모양, 헤드 광선, 눈 응시 레이 레이 및 모션 컨트롤러 광선에 액세스 하기 위한 편리한 메서드를 제공 합니다.
 
 ```c#
 // Get the head ray
@@ -38,7 +38,7 @@ else
 }
 ```
 
-## <a name="example-access-position-rotation-of-all-6dof-controllers-active-in-scene"></a>예: 장면에서 활성 상태인 모든 6DOF 컨트롤러의 액세스 위치, 회전
+## <a name="example-access-position-rotation-of-all-6dof-controllers-active-in-scene"></a>예: 액세스 위치, 장면에서 활성화 된 모든 6DOF 컨트롤러의 회전
 
 ```c#
 foreach(var controller in CoreServices.InputSystem.DetectedControllers)
@@ -63,8 +63,8 @@ foreach(var controller in CoreServices.InputSystem.DetectedControllers)
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [InputEvents](input-events.md)
 - [포인터](pointers.md)
-- [HandTracking](hand-tracking.md)
+- [수동 추적](hand-tracking.md)

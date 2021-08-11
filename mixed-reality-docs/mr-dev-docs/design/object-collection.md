@@ -5,19 +5,19 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, 컨트롤, 디자인, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 개체 컬렉션, 2D, 3D, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: fd5629f58e092b33410c833885037582ba5ca4a1
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+keywords: Windows Mixed Reality, 컨트롤, 디자인, 혼합 현실 헤드셋, Windows Mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, 개체 컬렉션, 2d, 3d, mrtk, 혼합 현실 Toolkit
+ms.openlocfilehash: be8f175ac58163eedfbf5fdee88c489f81abb90acbf4a9e04710be8443f070f0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110132"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225731"
 ---
 # <a name="object-collection"></a>개체 컬렉션
 
 ![Elements app의 주기 테이블에 사용 되는 개체 컬렉션입니다.](images/UX_Hero_ObjectCollection.jpg)<br>
 
-개체 컬렉션은 미리 정의 된 3 차원 도형에서 개체의 배열을 레이아웃 하는 데 도움이 되는 레이아웃 컨트롤입니다. 다양 한 표면 스타일 (* * 평면, 원통, 구 및 **방사형**)을 지원 합니다. 개체의 반지름과 크기와 개체 사이의 간격을 조정할 수 있습니다. 개체 컬렉션은 Unity의 모든 개체 (2D 및 3D)를 지원 합니다. **[혼합 현실 도구 키트](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection)** 에서 개체 컬렉션을 만드는 데 도움이 되는 Unity 스크립트와 예제를 만들었습니다.
+개체 컬렉션은 미리 정의 된 3 차원 도형에서 개체의 배열을 레이아웃 하는 데 도움이 되는 레이아웃 컨트롤입니다. 다양 한 표면 스타일 (* * 평면, 원통, 구 및 **방사형**)을 지원 합니다. 개체의 반지름과 크기와 개체 사이의 간격을 조정할 수 있습니다. 개체 컬렉션은 Unity의 모든 개체 (2D 및 3D)를 지원 합니다. **[혼합 현실 Toolkit](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection)** 에서 개체 컬렉션을 만드는 데 도움이 되는 Unity 스크립트와 예제를 만들었습니다.
 
 ## <a name="object-collection-examples"></a>개체 컬렉션 예제
 
@@ -46,7 +46,7 @@ ms.locfileid: "112110132"
 
 ---
 
-## <a name="object-collection-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 MRTK (Mixed Reality Toolkit)의 개체 컬렉션
+## <a name="object-collection-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 용 mrtk (Mixed Reality Toolkit)의 개체 컬렉션
 
 * [MRTK-개체 컬렉션](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection)
 
@@ -54,7 +54,7 @@ ms.locfileid: "112110132"
 
 ---
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [커서](cursors.md)
 * [손 광선](point-and-commit.md)

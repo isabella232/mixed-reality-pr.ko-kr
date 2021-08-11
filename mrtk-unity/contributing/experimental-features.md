@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 341ba0ee3e5900cc52f1ef715232f49064102309
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 9b7ef7564e0e4f84ba70c034b1bcc33a29498432620a002c8509de518dde479c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121381"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228391"
 ---
 # <a name="experimental-features"></a>실험적 기능
 
@@ -98,7 +98,7 @@ MRTK core 코드에 대 한 모든 재발으로 인해 끌어오기 요청이 �
 
 구성 요소를 사용 하는 경우 ManipulationHandler, BoundingBox 또는 interactable 단추가 중단 되어서는 안 됩니다.
 
-예를 들어 [이 SCROLLABLEOBJECTCOLLECTION PR](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001)에서 ScrollableObjectCollection를 추가 하면 사용자가 HoloLens 단추 prefabs를 사용할 수 없습니다. PR의 버그로 인해 발생 하는 것은 아니지만 기존 버그를 노출 하는 경우에도 PR을 체크 인할 수 없습니다.
+예를 들어 [이 ScrollableObjectCollection PR](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001)에서 ScrollableObjectCollection를 추가 하면 사용자가 HoloLens 단추 prefabs를 사용할 수 없습니다. PR의 버그로 인해 발생 하는 것은 아니지만 기존 버그를 노출 하는 경우에도 PR을 체크 인할 수 없습니다.
 
 ### <a name="provide-an-example-scene-that-demonstrates-how-to-use-the-feature"></a>기능을 사용 하는 방법을 보여 주는 예제 장면을 제공 합니다.
 

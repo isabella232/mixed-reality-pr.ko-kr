@@ -1,21 +1,21 @@
 ---
 title: 사례 연구 - 현실의 구멍 속 살펴보기
-description: 이 사례 연구에서는 HoloLens의 "자동 창" 효과 구현에 대해 설명 하 여 사용자가 바닥의 옆면 및 가상 입구를 볼 수 있도록 합니다.
+description: 이 사례 연구에서는 HoloLens에 대 한 "자동 창" 효과 구현에 대해 설명 하 여 사용자가 바닥의 옆면 및 가상 입구를 볼 수 있도록 합니다.
 author: ericrehmeyer
 ms.author: bestruku
 ms.date: 10/18/2019
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, 마법 창, 시차
-ms.openlocfilehash: 018e45a79d88cbc8e28204f023106fbe5dae39bc
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0769d8a7bd2b5bdf1ef1fe50f1bbcd2f284b8503bf66b8fdb09b2206b716ea65
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010113"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228185"
 ---
 # <a name="case-study---looking-through-holes-in-your-reality"></a>사례 연구 - 현실의 구멍 속 살펴보기
 
-사용자가 혼합 현실 및 Microsoft HoloLens로 수행할 수 있는 작업에 대해 생각 하는 경우 일반적으로 "대화방에 추가할 수 있는 개체는 무엇 인가요?"와 같은 질문에 해당 합니다. 또는 "공간 위에 계층화 할 수 있는 것은 무엇입니까?" 고려할 수 있는 다른 영역을 강조 하 고 싶습니다. 기본적으로 동일한 기술을 사용 하 여 사용자를 대상으로 하는 실제 개체를 조회 하는 것입니다.
+사용자가 혼합 현실 및 Microsoft HoloLens에서 수행할 수 있는 작업에 대해 생각 하는 경우 일반적으로 "대화방에 추가할 수 있는 개체는 무엇 인가요?"와 같은 질문에 해당 합니다. 또는 "공간 위에 계층화 할 수 있는 것은 무엇입니까?" 고려할 수 있는 다른 영역을 강조 하 고 싶습니다. 기본적으로 동일한 기술을 사용 하 여 사용자를 대상으로 하는 실제 개체를 조회 하는 것입니다.
 
 ## <a name="the-tech"></a>기술
 
@@ -25,7 +25,7 @@ ms.locfileid: "98010113"
 
 RoboRaid은 3 차원 파이프와 벽 뒤에 있는 다른 구조를 추가 하 여 invaders break로 생성 된 구멍을 통해서만 표시 됩니다.
 
-앱은 HoloLens의 이러한 고유 holograms 중 하나를 사용 하 여 실제 창을 통해 자신을 나타내는 것과 같은 방식으로 벽 뒤에 있는 콘텐츠의 효과를 제공할 수 있습니다. 왼쪽으로 이동 하 고 오른쪽에 있는 모든 항목을 볼 수 있습니다. 좀 더 자세히 알아보겠습니다. 모든 것을 볼 수 있습니다. 주요 차이점은 실제 구멍에서를 사용 하는 것 이지만, 바닥 stubbornly는 해당 마법 holographic 콘텐츠를 통과할 수 없습니다. (백로그에 작업을 추가 합니다.)
+앱은 HoloLens에서 이러한 고유 holograms 중 하나를 사용 하 여 실제 창을 통해 표시 되는 것과 동일한 방식으로 벽 뒤에 있는 콘텐츠의 효과를 제공할 수 있습니다. 왼쪽으로 이동 하 고 오른쪽에 있는 모든 항목을 볼 수 있습니다. 좀 더 자세히 알아보겠습니다. 모든 것을 볼 수 있습니다. 주요 차이점은 실제 구멍에서를 사용 하는 것 이지만, 바닥 stubbornly는 해당 마법 holographic 콘텐츠를 통과할 수 없습니다. (백로그에 작업을 추가 합니다.)
 
 ## <a name="behind-the-scenes"></a>배후 상황
 
@@ -33,9 +33,9 @@ RoboRaid은 3 차원 파이프와 벽 뒤에 있는 다른 구조를 추가 하 
 
 둘째, holographic 내용이 매우 특정 공간으로 시각적으로 제한 되므로 현실에서 구멍을 통해서만 볼 수 있습니다. 이 폐색는 트릭을 판매 하는 논리 구멍, 창 또는 이르는 길을 살펴보는 데 필요 합니다. 대부분의 뷰를 차단 하지 않으면 비밀 Jurassic 차원에 대 한 공간을 해독 하는 것은 잘못 배치 된 공룡 처럼 보일 수 있습니다.
 
-![이는 실제 스크린샷은 아니지만, MR 기본 사항 101의 비밀 지 여부에 대 한 설명은 HoloLens를 확인 하는 방법에 대 한 설명입니다. 검은색 인클로저는 표시 되지 않지만 가상 구멍을 통해 콘텐츠를 볼 수 있습니다. (실제 장치를 살펴볼 때 눈이 없는 것 처럼 더 많은 거리에 집중 하는 것 처럼 보일 수도 있습니다.)](images/origamiholecomposited-640px.png)
+![이는 실제 스크린샷은 아니지만, MR 기본 사항 101의 비밀 지 여부에 대 한 자세한 내용은 HoloLens를 확인 하는 방법을 보여 줍니다. 검은색 인클로저는 표시 되지 않지만 가상 구멍을 통해 콘텐츠를 볼 수 있습니다. (실제 장치를 살펴볼 때 눈이 없는 것 처럼 더 많은 거리에 집중 하는 것 처럼 보일 수도 있습니다.)](images/origamiholecomposited-640px.png)
 
-실제 스크린샷은 아니지만, [MR 기본 사항 101](../develop/unity/tutorials/holograms-101.md) 의 비밀 지가 HoloLens를 어떻게 볼 수 있는 지에 대 한 예시를 보여 줍니다. 검은색 인클로저는 표시 되지 않지만 가상 구멍을 통해 콘텐츠를 볼 수 있습니다. (실제 장치를 살펴볼 때 눈이 없는 것 처럼 더 많은 거리에 집중 하는 것 처럼 보일 수도 있습니다.)
+실제 스크린샷은 아니지만, [MR 기본 사항 101](../develop/unity/tutorials/holograms-101.md) 의 비밀 지가 HoloLens를 찾는 방법에 대 한 설명은 다음과 같습니다. 검은색 인클로저는 표시 되지 않지만 가상 구멍을 통해 콘텐츠를 볼 수 있습니다. (실제 장치를 살펴볼 때 눈이 없는 것 처럼 더 많은 거리에 집중 하는 것 처럼 보일 수도 있습니다.)
 
 ### <a name="world-locking-holographic-content"></a>세계 holographic 콘텐츠 잠금
 
@@ -49,13 +49,13 @@ WorldAnchor 구성 요소는 해당 GameObject의 위치와 회전을 지속적�
 
 ### <a name="occluding-everything-but-the-virtual-hole"></a>가상 구멍이 아닌 모든 항목 Occluding
 
-벽에서 숨겨진 항목에 대 한 보기를 선택적으로 차단 하는 다양 한 방법이 있습니다. 가장 간단한 방법은 HoloLens가 추가 표시를 사용 한다는 사실을 활용 하는 것입니다. 즉, 완전히 검정색 개체가 보이지 않는 것으로 나타납니다. 특별 한 셰이더 나 재질을 사용 하지 않고 Unity에서이 작업을 수행할 수 있습니다. 검정 재질을 만들어 콘텐츠의 상자를 지정 하는 개체에 할당 하기만 하면 됩니다. 3D 모델링을 수행 하는 것이 마음에 들지 않으면 몇 개의 기본 쿼드 개체를 사용 하 고 약간 겹치게 합니다. 이 접근 방식에는 몇 가지 단점이 있지만, 작업을 수행 하는 가장 빠른 방법은 나중에 리팩터링할 수 있는 것으로 의심 되는 경우에도 중요 한 개념 증명을 사용 하는 것입니다.
+벽에서 숨겨진 항목에 대 한 보기를 선택적으로 차단 하는 다양 한 방법이 있습니다. 가장 간단한 방법은 추가 표시를 사용 하는 HoloLens를 활용 하는 것입니다. 즉, 완전 한 검은색 개체가 보이지 않는 것으로 나타납니다. 특별 한 셰이더 나 재질을 사용 하지 않고 Unity에서이 작업을 수행할 수 있습니다. 검정 재질을 만들어 콘텐츠의 상자를 지정 하는 개체에 할당 하기만 하면 됩니다. 3D 모델링을 수행 하는 것이 마음에 들지 않으면 몇 개의 기본 쿼드 개체를 사용 하 고 약간 겹치게 합니다. 이 접근 방식에는 몇 가지 단점이 있지만, 작업을 수행 하는 가장 빠른 방법은 나중에 리팩터링할 수 있는 것으로 의심 되는 경우에도 중요 한 개념 증명을 사용 하는 것입니다.
 
-위의 "검은색 상자" 접근 방법의 주요 단점 중 하나는 사진이 제대로 작동 하지 않는다는 것입니다. HoloLens 표시를 통해 효과가 완벽 하 게 보일 수 있지만, 사용 하는 모든 스크린샷은 벽 또는 층이 아니라 긴 검은색 개체를 표시 합니다. 그 이유는 물리적 하드웨어와 스크린샷 복합 holograms 및 현실가 다르게 하는 것입니다. 약간의 가짜를 잠시 우회.
+위의 "검은색 상자" 접근 방법의 주요 단점 중 하나는 사진이 제대로 작동 하지 않는다는 것입니다. 효과는 HoloLens 표시를 통해 완벽 하 게 보일 수 있지만, 사용 하는 모든 스크린샷은 벽 또는 층이 아닌 긴 검은색 개체를 표시 합니다. 그 이유는 물리적 하드웨어와 스크린샷 복합 holograms 및 현실가 다르게 하는 것입니다. 약간의 가짜를 잠시 우회.
 
 *가짜 수학 경고! 이러한 숫자와 수식은 정확한 메트릭이 아닌 점을 보여 주기 위해 작성 되었습니다.*
 
-HoloLens를 통해 표시 되는 내용:
+HoloLens에서 볼 수 있는 내용:
 
 ```
 ( Reality * darkening_amount ) + Holograms
@@ -67,9 +67,9 @@ HoloLens를 통해 표시 되는 내용:
 ( Reality * ( 1 - hologram_alpha ) ) + Holograms * hologram_alpha
 ```
 
-영어: HoloLens를 통해 표시 되는 내용은 어두운 현실 (예: 선글라스) 및 앱에서 표시 하려는 holograms의 간단한 조합입니다. 하지만 스크린샷을 만들 때 카메라 이미지는 픽셀 별 투명도 값에 따라 앱의 holograms 혼합 됩니다.
+영어: HoloLens 통해 표시 되는 내용은 어두운 현실 (예: 선글라스) 및 앱에서 표시 하려는 holograms의 간단한 조합입니다. 하지만 스크린샷을 만들 때 카메라 이미지는 픽셀 별 투명도 값에 따라 앱의 holograms 혼합 됩니다.
 
-이 문제를 해결 하는 한 가지 방법은 "검은색 상자" 자료를 깊이 버퍼에만 쓰도록 변경 하 고 다른 모든 불투명 자료를 정렬 하는 것입니다. 이에 대 한 예제를 보려면 GitHub의 [MixedRealityToolkit에서 WindowOcclusion 파일](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Common/Shaders/WindowOcclusion.shader)을 확인 하세요. 관련 줄이 여기에 복사 됩니다.
+이 문제를 해결 하는 한 가지 방법은 "검은색 상자" 자료를 깊이 버퍼에만 쓰도록 변경 하 고 다른 모든 불투명 자료를 정렬 하는 것입니다. 이에 대 한 예제를 보려면 [MixedRealityToolkit on GitHub의 WindowOcclusion 파일](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Common/Shaders/WindowOcclusion.shader)을 확인 하세요. 관련 줄이 여기에 복사 됩니다.
 
 ```
 "RenderType" = "Opaque"
@@ -87,13 +87,13 @@ ColorMask 0
 
 ## <a name="do-it-yourself"></a>직접 수행
 
-HoloLens가 있고 그에 대 한 효과를 시험해 보 시겠습니까? 가장 쉬운 작업 (코딩 필요 없음)은 무료 3D 뷰어 앱을 설치한 다음, [GitHub에 제공 된 fbx 파일 다운로드](https://github.com/Microsoft/HolographicAcademy/tree/CaseStudy-MagicWindow/MagicWindow) 를 로드 하 여 대화방에서 꽃 .pot 모델을 볼 수 있습니다. HoloLens에 로드 하 고 작업에 대 한 환상 효과를 볼 수 있습니다. 모델 앞에 있는 경우 작은 구멍만 볼 수 있으며, 다른 모든 항목은 보이지 않습니다. 다른 쪽에서 모델을 살펴보면 완전히 사라집니다. 3D 뷰어의 이동, 회전 및 크기 조정 컨트롤을 사용 하 여 몇 가지 아이디어를 생성 하는 것으로 간주할 수 있는 수직 표면의 가상 구멍을 배치 합니다.
+HoloLens 있고 그에 대 한 영향을 시도 하 시겠습니까? 가장 쉬운 작업 (코딩 필요 없음)은 무료 3d 뷰어 앱을 설치한 다음, [GitHub에서 제공한 fbx 파일 다운로드](https://github.com/Microsoft/HolographicAcademy/tree/CaseStudy-MagicWindow/MagicWindow) 를 로드 하 여 대화방에서 꽃 .pot 모델을 볼 수 있습니다. HoloLens에 로드 하 고 작업에 대 한 환상 효과를 볼 수 있습니다. 모델 앞에 있는 경우 작은 구멍만 볼 수 있으며, 다른 모든 항목은 보이지 않습니다. 다른 쪽에서 모델을 살펴보면 완전히 사라집니다. 3D 뷰어의 이동, 회전 및 크기 조정 컨트롤을 사용 하 여 몇 가지 아이디어를 생성 하는 것으로 간주할 수 있는 수직 표면의 가상 구멍을 배치 합니다.
 
 ![Unity 편집기에서이 모델을 보면 flowerpot 주위에 긴 검은색 상자가 표시 됩니다. HoloLens에서 상자가 사라지고 매직 창 효과를 제공 합니다.](images/magicwindowflowerpotineditor.png)
 
 Unity 편집기에서이 모델을 보면 flowerpot 주위에 긴 검은색 상자가 표시 됩니다. HoloLens에서 상자가 사라지고 매직 창 효과를 제공 합니다.
 
-이 기법을 사용 하는 앱을 빌드 하려는 경우 [Mixed Reality 자습서](../develop/unity/tutorials.md)의 [MR 기본 사항 101 자습서](../develop/unity/tutorials/holograms-101.md) 를 확인 하세요. 7 장은 위에서 설명한 대로 숨겨진 지 각 지를 보여 주는 폭발으로 끝납니다. 자습서는 지루한 일이 있나요?
+이 기법을 사용 하는 앱을 빌드 하려는 경우 [Mixed Reality 자습서](../develop/unity/tutorials.md)의 [MR 기본 사항 101 자습서](../develop/unity/tutorials/holograms-101.md) 를 확인 하세요. 7 장은 위에서 설명한 대로 숨겨진 지 각 지를 보여 주는 폭발으로 끝납니다. Who 자습서는 지루한 일이 있나요?
 
 다음은이 아이디어를 수행할 수 있는 몇 가지 아이디어입니다.
 * 가상 구멍 내에서 콘텐츠를 대화형으로 만드는 방법을 생각해 보겠습니다. 사용자가 자신의 벽을 넘어 약간의 영향을 줄 수 있도록 하면이 트릭에서 제공할 수 있는 불가사의의 의미를 크게 높일 수 있습니다.
@@ -108,7 +108,7 @@ Unity 편집기에서이 모델을 보면 flowerpot 주위에 긴 검은색 상�
 </tr>
 </table>
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 * [MR 기본 101: 디바이스를 사용하는 완전한 프로젝트](../develop/unity/tutorials/holograms-101.md)
 * [좌표계](../design/coordinate-systems.md)
 * [공간 앵커](../design/spatial-anchors.md)

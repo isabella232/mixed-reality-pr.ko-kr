@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 대규모 video, holographic video, mixed reality 비디오, 홀로그램, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: 83eba6e0dc3099c85a2db40512c9cae8f5e679c2
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f8e6c158f3ae5f774e31574bed0c3b50e0e1a7084427a69373c14845d18e72e6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677822"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223600"
 ---
 # <a name="how-it-works---mixed-reality-capture-studios"></a>작동 방법 - 혼합 현실 캡처 스튜디오
 
@@ -23,6 +23,6 @@ Microsoft Mixed Reality Capture 스튜디오를 사용 하면 콘텐츠 작성�
 >[!VIDEO https://www.youtube.com/embed/OzIo8OTZFy0]
 
 
-**백서:**<br>
+**백서**<br>
 ![백서 미리 보기](images/siggraph-whitepaper-thumb-200px.png)<br>
 ["고품질 스트리밍 가능 Free-Viewpoint 비디오" 백서 다운로드](images/high-quality-streamable-free-viewpoint-video.pdf)

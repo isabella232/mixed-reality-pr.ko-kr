@@ -1,27 +1,27 @@
 ---
 title: Unreal의 디바이스에 배포
-description: 편집기나 장치 포털을 사용 하 여 HoloLens 2에 혼합 된 현실 앱을 배포 하는 방법에 대해 알아야 하는 모든 사항을 알아보세요.
+description: 편집기 또는 장치 포털을 사용 하 여 HoloLens 2에 혼합 현실 unreal 앱을 배포 하는 방법에 대해 알아야 하는 모든 사항을 알아봅니다.
 author: sw5813
 ms.author: suwu
 ms.date: 12/9/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, 장치에 배포, PC, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+keywords: unreal, unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, 장치에 배포, PC, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 24b2c013e1c9f25f54be9a6fefec8a86846c1746
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d6df3f9af21a0759c98306c28696d21eac7687b92d3cb74a9cd9948122cbcbcc
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009753"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226648"
 ---
 # <a name="deploy-to-device-in-unreal"></a>Unreal의 디바이스에 배포
 
-다음 두 가지 방법으로 HoloLens 2에 Unreal 응용 프로그램을 배포할 수 있습니다.
+HoloLens 2에는 Unreal 응용 프로그램을 배포 하는 두 가지 방법이 있습니다.
 * Unreal 편집기에서 직접
 * 장치 포털을 통해 업로드 된 패키지
 
-두 옵션 모두 개발용으로 [장치 포털](../platform-capabilities-and-apis/using-the-windows-device-portal.md) 을 사용 하도록 HoloLens를 설정 해야 합니다.
+두 옵션 모두 개발을 위해 [장치 포털](../platform-capabilities-and-apis/using-the-windows-device-portal.md) 을 사용 하도록 HoloLens를 설정 해야 합니다.
 
 ## <a name="deploying-to-device-from-the-unreal-editor"></a>Unreal 편집기에서 장치에 배포
 
@@ -29,7 +29,7 @@ ms.locfileid: "98009753"
 
 ![시작 드롭다운 옵션](images/unreal/launch-dropdown.png)
 
-2. **Device Manager** 를 열고 HoloLens는 장치 목록에 자동으로 표시 되지 않습니다.
+2. **장치 관리자** 를 열고 HoloLens 장치 목록에 자동으로 표시 되지 않습니다.
 
 3. 나열 되지 **않은 장치 추가** 섹션을 확장 합니다.
 
@@ -42,7 +42,7 @@ ms.locfileid: "98009753"
 
 ![나열 되지 않은 장치 추가](images/unreal/add-unlisted-device.png)
 
-7. **시작** 단추 옆에 있는 드롭다운 화살표를 다시 선택 합니다. 이번에는 방금 추가한 HoloLens 장치가 표시 되어야 합니다. Hololens에 빌드 및 배포할 HoloLens 장치를 선택 합니다.
+7. **시작** 단추 옆에 있는 드롭다운 화살표를 다시 선택 합니다. 이번에는 방금 추가한 HoloLens 장치가 표시 됩니다. 빌드 및 HoloLens에 배포할 HoloLens 장치를 선택 합니다.
 
 >[!NOTE]
 >장치를 빌드하기 위해 셰이더를 다시 컴파일하는 작업이 포함 될 수 있습니다 (특히 첫 번째 실행의 경우) .이는 다소 시간이 걸릴 수 있습니다. 앱이 실행 될 때까지 장치가 절전 모드로 전환 되지 않도록 합니다 (앱을 사용 해야 할 수 있음). 그렇지 않으면 셰이더 컴파일이 실패 합니다.

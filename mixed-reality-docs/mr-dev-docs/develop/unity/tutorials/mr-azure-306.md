@@ -1,43 +1,43 @@
 ---
-title: HoloLens (첫 번째 gen) 및 Azure 306-스트리밍 비디오
-description: 이 과정을 완료 하 여 혼합 현실 응용 프로그램 내에서 Azure Media Services을 구현 하는 방법을 알아보세요.
+title: HoloLens(1세대) 및 Azure 306 - 스트리밍 비디오
+description: 혼합 현실 애플리케이션 내에서 Azure Media Services 구현하는 방법을 알아보려면 이 과정을 완료합니다.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: azure, mixed reality, 아카데미, unity, 자습서, api, media services, 스트리밍 비디오, 360, 몰입 형, vr, Windows 10, Visual Studio
-ms.openlocfilehash: c6afedfd2dae9da3bcd6b044381a6dc20604ded8
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+keywords: azure, mixed reality, academy, unity, tutorial, api, media services, streaming video, 360, immersive, vr, Windows 10, Visual Studio
+ms.openlocfilehash: 3f3567c140c3162258475c28c2ef149039e3c40ed418ed2801ac8c40dda00a8f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730570"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115224376"
 ---
-# <a name="hololens-1st-gen-and-azure-306-streaming-video"></a>HoloLens (첫 번째 gen) 및 Azure 306: 스트리밍 비디오
+# <a name="hololens-1st-gen-and-azure-306-streaming-video"></a>HoloLens(1세대) 및 Azure 306: 스트리밍 비디오
 
 <br>
 
 >[!NOTE]
->Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. 향후에는 HoloLens 2를 개발 하는 방법을 보여 주는 새 자습서 시리즈를 게시할 예정입니다.  이 알림은 게시 될 때 해당 자습서에 대 한 링크를 사용 하 여 업데이트 됩니다.
+>Mixed Reality 아카데미 자습서는 HoloLens(1세대) 및 Mixed Reality 몰입형 헤드셋을 염두에 두고 설계되었습니다.  따라서 이러한 디바이스 개발에 대한 지침을 계속 찾고 있는 개발자를 위해 이러한 자습서를 그대로 두는 것이 중요합니다.  이러한 자습서는 HoloLens 2에 사용되는 최신 도구 집합 또는 상호 작용으로 업데이트되지 **_않습니다_**.  대신 지원되는 디바이스에서 계속 작동하도록 유지 관리됩니다. HoloLens 2 위해 개발하는 방법을 보여 주는 새로운 자습서 시리즈가 나중에 게시될 예정입니다.  이 알림은 해당 자습서가 게시될 때 해당 자습서에 대한 링크로 업데이트됩니다.
 
 <br> 
 
-![최종 제품 시작 ](images/AzureLabs-Lab6-00.png)
- ![ 최종 제품-시작](images/AzureLabs-Lab6-01.png)
+![final product -start ](images/AzureLabs-Lab6-00.png)
+ ![ final product -start](images/AzureLabs-Lab6-01.png)
 
-이 과정에서는 Azure Media Services을 Windows Mixed Reality VR 환경에 연결 하 여 몰입 형 헤드셋에서 스트리밍 360도 비디오 재생을 허용 하는 방법을 알아봅니다. 
+이 과정에서는 몰입형 헤드셋에서 360도 비디오 재생을 스트리밍할 수 있도록 Windows Mixed Reality VR 환경과 Azure Media Services 연결하는 방법을 알아봅니다. 
 
-**Azure Media Services** 는 브로드캐스트 품질의 비디오 스트리밍 서비스를 제공 하 여 오늘날 가장 인기 있는 모바일 장치에서 더 많은 사용자에 게 도달 하는 서비스 모음입니다. 자세한 내용은 [Azure Media Services 페이지](https://azure.microsoft.com/services/media-services)를 참조 하세요.
+**Azure Media Services** 오늘날 가장 인기 있는 모바일 디바이스에서 더 많은 대상에 도달할 수 있도록 브로드캐스트 품질 비디오 스트리밍 서비스를 제공하는 서비스 모음입니다. 자세한 내용은 Azure Media Services [페이지를 방문하세요.](https://azure.microsoft.com/services/media-services)
 
-이 과정을 완료 하면 다음과 같은 작업을 수행할 수 있는 혼합 현실 모던 헤드셋 응용 프로그램이 만들어집니다.
+이 과정을 완료하면 다음을 수행할 수 있는 혼합 현실 몰입형 헤드셋 애플리케이션이 있습니다.
 
-1. **Azure 미디어 서비스** 를 통해 **Azure Storage** 에서 360 학위 비디오를 검색 합니다.
+1. Azure Media Service를 통해 **Azure Storage** 360도 비디오를 **검색합니다.**
 
-2. Unity 장면 내에서 검색 된 360 정도 비디오를 표시 합니다.
+2. Unity 장면 내에서 검색된 360도 비디오를 표시합니다.
 
-3. 두 개의 다른 비디오를 사용 하 여 두 장면을 이동 합니다.
+3. 두 개의 서로 다른 비디오를 통해 두 장면 사이를 탐색합니다.
 
-응용 프로그램에서 결과를 디자인과 통합 하는 방법을 사용자가 결정 합니다. 이 과정은 Azure 서비스를 Unity 프로젝트와 통합 하는 방법을 배울 수 있도록 설계 되었습니다. 이 과정에서 얻은 지식을 사용 하 여 혼합 현실 응용 프로그램을 개선 하는 것은 사용자의 작업입니다.
+애플리케이션에서 결과를 디자인과 통합하는 방법은 사용자 에게 달려 있습니다. 이 과정은 Unity Project Azure 서비스를 통합하는 방법을 교육하기 위해 고안되었습니다. 이 과정에서 얻은 지식을 활용하여 혼합 현실 애플리케이션을 개선하는 것이 여러분의 작업입니다.
 
 ## <a name="device-support"></a>디바이스 지원
 
@@ -52,115 +52,115 @@ ms.locfileid: "104730570"
 ## <a name="prerequisites"></a>필수 조건
 
 > [!NOTE]
-> 이 자습서는 Unity 및 c #에 대 한 기본 경험이 있는 개발자를 위해 작성 되었습니다. 또한이 문서에서 사전 요구 사항 및 작성 된 지침은 작성 시 테스트 되 고 확인 된 내용 (2018 일 수 있음)을 나타냅니다. [도구 설치 문서](../../install-the-tools.md)에 나와 있는 것 처럼 최신 소프트웨어를 무료로 사용할 수 있지만,이 과정의 정보가 아래 나열 된 것 보다 최신 소프트웨어에서 찾을 수 있는 것으로 간주 하면 안 됩니다.
+> 이 자습서는 Unity 및 C#에 대한 기본적인 경험이 있는 개발자를 위해 설계되었습니다. 또한 이 문서 내의 필수 조건 및 작성된 지침은 작성 당시 테스트 및 확인된 내용을 나타냅니다(2018년 5월). [도구 설치 문서에](../../install-the-tools.md)나열된 대로 최신 소프트웨어를 자유롭게 사용할 수 있지만, 이 과정의 정보는 아래 나열된 내용보다 최신 소프트웨어에서 찾을 수 있는 정보와 완벽하게 일치한다고 가정해서는 안 됩니다.
 
-이 과정에는 다음 하드웨어 및 소프트웨어를 권장 합니다.
+이 과정에서는 다음 하드웨어 및 소프트웨어를 사용하는 것이 좋습니다.
 
-- 모던 (VR) 헤드셋 개발을 위한 [Windows Mixed Reality와 호환 되](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) 는 개발 PC
-- [개발자 모드를 사용 하는 Windows 10이 하 버전의 작성자 업데이트 (또는 이상)](../../install-the-tools.md#installation-checklist)
+- 몰입형(VR) 헤드셋 개발을 위해 [Windows Mixed Reality 호환되는](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) 개발 PC
+- [개발자 모드를 사용하도록 설정된 Windows 10 Fall Creators Update(이상)](../../install-the-tools.md#installation-checklist)
 - [최신 Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- [Windows Mixed Reality 몰입 (VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md)
+- [Windows Mixed Reality 몰입형(VR) 헤드셋](../../../discover/immersive-headset-hardware-details.md)
 - Azure 설정 및 데이터 검색을 위한 인터넷 액세스
-- Mp4 형식의 2 360 수준 비디오 ( [이 다운로드 페이지에서](https://www.mettle.com/360vr-master-series-free-360-downloads-page)일부 로열티 없는 비디오를 찾을 수 있음)
+- mp4 형식의 360도 비디오 두 개(이 다운로드 [페이지에서](https://www.mettle.com/360vr-master-series-free-360-downloads-page)일부 무료 비디오를 찾을 수 있음)
 
 ## <a name="before-you-start"></a>시작하기 전에
 
-1.  이 프로젝트를 빌드하는 데 문제가 발생 하지 않도록 하려면 루트 또는 루트 폴더에이 자습서에서 언급 한 프로젝트를 만드는 것이 좋습니다. (긴 폴더 경로는 빌드 시에 문제를 일으킬 수 있습니다.)
-2.  혼합 현실 모던 헤드셋을 설정 하 고 테스트 합니다.
+1.  이 프로젝트를 빌드하는 데 문제가 발생하지 않도록 하려면 이 자습서에서 언급한 프로젝트를 루트 또는 루트에 가까운 폴더에 만드는 것이 좋습니다(긴 폴더 경로로 인해 빌드 시 문제가 발생할 수 있습니다).
+2.  Mixed Reality 몰입형 헤드셋을 설정하고 테스트합니다.
 
     > [!NOTE]
-    > 이 과정에서는 동작 컨트롤러가 필요 **하지** 않습니다. 모던 헤드셋을 설정 하는 데 지원이 필요한 경우 [Windows Mixed Reality를 설정 하는 방법에 대 한 링크](https://support.microsoft.com/help/4043101/windows-10-set-up-windows-mixed-reality)를 클릭 하세요.
+    > 이 과정에는 모션 컨트롤러가 필요하지 **않습니다.** 몰입형 헤드셋 설정을 지원해야 하는 경우 [Windows Mixed Reality 설정하는 방법 링크를](https://support.microsoft.com/help/4043101/windows-10-set-up-windows-mixed-reality)클릭하세요.
 
-## <a name="chapter-1---the-azure-portal-creating-the-azure-storage-account"></a>1 장-Azure Portal: Azure Storage 계정 만들기
+## <a name="chapter-1---the-azure-portal-creating-the-azure-storage-account"></a>1장 - Azure Portal: Azure Storage 계정 만들기
 
-**Azure Storage 서비스** 를 사용 하려면 Azure Portal에서 **저장소 계정을** 만들고 구성 해야 합니다.
+**Azure Storage 서비스를** 사용하려면 Azure Portal **Storage 계정을** 만들고 구성해야 합니다.
 
 1.  [Azure Portal](https://portal.azure.com)에 로그인합니다.
 
     > [!NOTE]
-    > 아직 Azure 계정이 없는 경우 새로 만들어야 합니다. 교실 또는 랩 상황에서이 자습서를 수행 하는 경우 강사 또는 proctors 중 하나에 문의 하 여 새 계정을 설정 하는 데 도움이 될 수 있습니다.
+    > Azure 계정이 아직 없는 경우 만들어야 합니다. 클래스룸 또는 랩 상황에서 이 자습서를 따르는 경우 강사 또는 프록터 중 하나에 새 계정 설정에 대한 도움을 요청하세요.
 
-2.  로그인 되 면 왼쪽 메뉴에서 **저장소 계정** 을 클릭 합니다.
+2.  로그인하면 왼쪽 메뉴에서 Storage **계정을** 클릭합니다.
 
-    ![계정 설정 Azure Storage](images/AzureLabs-Lab6-02.png)
+    ![Azure Storage 계정 설정](images/AzureLabs-Lab6-02.png)
 
-3.  **저장소 계정** 탭에서 **추가** 를 클릭 합니다.
+3.  Storage **계정** 탭에서 **추가를** 클릭합니다.
 
-    ![계정 설정 Azure Storage](images/AzureLabs-Lab6-03.png)
+    ![Azure Storage 계정 설정](images/AzureLabs-Lab6-03.png)
 
-4.  **저장소 계정 만들기** 탭에서 다음을 수행 합니다.
+4.  스토리지 계정 만들기 탭에서 다음을 **수행합니다.**
 
-    1.  계정에 대 한 **이름을** 삽입 합니다 .이 필드에는 숫자 및 소문자만 허용 됩니다.
+    1.  계정의 **이름을** 삽입합니다. 이 필드는 숫자와 소문자만 허용합니다.
 
-    2.  **배포 모델에서** **Resource manager** 를 선택 합니다.
+    2.  **배포 모델에서** **리소스 관리자를** 선택합니다.
 
-    3.  **계정 종류** 에 대해 **저장소 (범용 v1)** 를 선택 합니다.
+    3.  **계정 종류에서** **Storage(범용 v1) 을** 선택합니다.
 
-    4.  **성능** 으로 **표준 *을 선택 합니다.**
+    4.  **성능에서** **표준*을 선택합니다.**
 
-    5.  **복제** 의 경우 **LRS (로컬 중복 저장소)** 를 선택 합니다.
+    5.  **복제에서** **LRS(로컬 중복 스토리지) 를** 선택합니다.
 
-    6.  **보안 전송을** **사용 하지 않도록 설정** 해야 합니다.
+    6.  **보안 전송은 사용 안** 함으로 둡니다. 
 
     7.  **구독** 을 선택합니다.
 
-    8.  리소스 그룹을 선택 하거나 새 **리소스 그룹** 을 만듭니다. 리소스 그룹은 Azure 자산의 컬렉션에 대 한 청구를 모니터링 하 고, 액세스를 제어 하 고, 프로 비전 하 고, 관리 하는 방법을 제공 합니다.
+    8.  리소스 **그룹을** 선택하거나 새 리소스 그룹을 만듭니다. 리소스 그룹은 Azure 자산 컬렉션에 대한 액세스를 모니터링, 제어, 프로비전 및 관리하는 방법을 제공합니다.
 
-    9.  새 리소스 그룹을 만드는 경우 리소스 그룹의 **위치** 를 확인 합니다. 위치는 응용 프로그램이 실행 되는 영역에 있는 것이 가장 좋습니다. 일부 Azure 자산은 특정 지역 에서만 사용할 수 있습니다.
+    9.  리소스 그룹의 **위치를** 결정합니다(새 리소스 그룹을 만드는 경우). 위치는 애플리케이션이 실행되는 지역에 있는 것이 가장 좋습니다. 일부 Azure 자산은 특정 지역에서만 사용할 수 있습니다.
 
-5.  이 서비스에 적용 된 사용 약관을 이해 했는지 확인 해야 합니다.
+5.  이 서비스에 적용된 약관을 이해했다는 것을 확인해야 합니다.
 
-    ![계정 설정 Azure Storage](images/AzureLabs-Lab6-04.png)
+    ![Azure Storage 계정 설정](images/AzureLabs-Lab6-04.png)
 
-6.  **만들기** 를 클릭 한 후에는 서비스를 만들 때까지 기다려야 합니다 .이 작업이 몇 분 정도 걸릴 수 있습니다.
+6.  **만들기를** 클릭하면 서비스가 생성될 때까지 기다려야 합니다. 이 경우 1분 정도 걸릴 수 있습니다.
 
-7.  서비스 인스턴스를 만든 후 알림이 포털에 표시 됩니다.
+7.  서비스 인스턴스가 만들어지면 포털에 알림이 표시됩니다.
 
-    ![계정 설정 Azure Storage](images/AzureLabs-Lab6-05.png)
+    ![Azure Storage 계정 설정](images/AzureLabs-Lab6-05.png)
 
-8.  이 시점에서 리소스를 따를 필요는 없으며, 다음 챕터로 이동 하기만 하면 됩니다.
+8.  이 시점에서는 리소스를 따를 필요가 없습니다. 다음 챕터로 이동하면 됩니다.
 
-## <a name="chapter-2---the-azure-portal-creating-the-media-service"></a>2 장-Azure Portal: Media Service 만들기
+## <a name="chapter-2---the-azure-portal-creating-the-media-service"></a>2장 - Azure Portal: Media Service 만들기
 
-Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용할 수 있도록 서비스 인스턴스를 구성 해야 합니다 (계정 소유자가 관리자 여야 함).
+Azure Media Service를 사용하려면 애플리케이션에서 사용할 수 있도록 서비스 인스턴스를 구성해야 합니다(여기서 계정 소유자는 관리자여야 합니다).
 
-1.  Azure Portal의 왼쪽 위 모서리에서 **리소스 만들기** 를 클릭 하 고 **미디어 서비스를** 검색 한 후 **enter** 키를 누릅니다. 현재 원하는 리소스에는 분홍색 아이콘이 있습니다. 새 페이지를 표시 하려면이를 클릭 합니다.
+1.  Azure Portal의 왼쪽 위 모서리에서 **리소스 만들기를** 클릭하고 **Media Service를** 검색한 후 **Enter 키를 누릅니다.** 현재 원하는 리소스에는 꽃 모양 아이콘이 있습니다. 새 페이지를 표시하려면 이 항목을 클릭합니다.
 
     ![Azure Portal](images/AzureLabs-Lab6-06.png)
 
-2.  새 페이지에는 **미디어 서비스** 에 대 한 설명이 제공 됩니다. 이 프롬프트의 왼쪽 아래에서 **만들기** 단추를 클릭 하 여이 서비스와의 연결을 만듭니다.
+2.  새 페이지에서는 **Media Service** 에 대한 설명을 제공합니다. 이 프롬프트의 왼쪽 아래에서 **만들기** 단추를 클릭하여 이 서비스와의 연결을 만듭니다.
 
     ![Azure Portal](images/AzureLabs-Lab6-07.png)
 
-3.  [ **만들기** ]를 클릭 하면 새 미디어 서비스에 대 한 세부 정보를 제공 해야 하는 위치에 표시 됩니다.
+3.  **만들기를** 클릭하면 새 Media Service에 대한 세부 정보를 제공해야 하는 패널이 표시됩니다.
 
-    1.  이 서비스 인스턴스에 대해 원하는 **계정 이름을** 삽입 합니다.
+    1.  이 서비스 인스턴스에 대해 원하는 **계정 이름을** 삽입합니다.
 
     2.  **구독** 을 선택합니다.
 
-    3. 리소스 그룹을 선택 하거나 새 **리소스 그룹** 을 만듭니다. 리소스 그룹은 Azure 자산의 컬렉션에 대 한 청구를 모니터링 하 고, 액세스를 제어 하 고, 프로 비전 하 고, 관리 하는 방법을 제공 합니다. 단일 프로젝트와 연결 된 모든 Azure 서비스 (예: 이러한 랩)를 공용 리소스 그룹에 유지 하는 것이 좋습니다. 
+    3. 리소스 **그룹을** 선택하거나 새 리소스 그룹을 만듭니다. 리소스 그룹은 Azure 자산 컬렉션에 대한 액세스를 모니터링, 제어, 프로비전 및 관리하는 방법을 제공합니다. 단일 프로젝트(예: 이러한 랩)와 연결된 모든 Azure 서비스를 공통 리소스 그룹 아래에 유지하는 것이 좋습니다. 
     
-    > Azure 리소스 그룹에 대해 자세히 알아보려면 [Azure 리소스 그룹을 관리 하는 방법에 대](/azure/azure-resource-manager/resource-group-portal)한 다음 링크를 참조 하세요.
+    > Azure 리소스 그룹에 대해 자세히 알아보려면 Azure 리소스 그룹을 [관리하는 방법에 대한 이 링크를](/azure/azure-resource-manager/resource-group-portal)따르세요.
 
-    4.  새 리소스 그룹을 만드는 경우 리소스 그룹의 **위치** 를 확인 합니다. 위치는 응용 프로그램이 실행 되는 영역에 있는 것이 가장 좋습니다. 일부 Azure 자산은 특정 지역 에서만 사용할 수 있습니다.
+    4.  리소스 그룹의 **위치를** 결정합니다(새 리소스 그룹을 만드는 경우). 위치는 애플리케이션이 실행되는 지역에 있는 것이 가장 좋습니다. 일부 Azure 자산은 특정 지역에서만 사용할 수 있습니다.
 
-    5.  **저장소 계정** 섹션에서 **선택 ...** 섹션을 클릭 한 다음, 마지막 챕터에서 만든 **저장소 계정을** 클릭 합니다.
+    5.  Storage **계정** 섹션에서 **선택하세요...** 섹션을 클릭한 다음, 마지막 챕터에서 만든 **Storage 계정을** 클릭합니다.
 
-    6.  또한이 서비스에 적용 된 사용 약관을 이해 했는지 확인 해야 합니다.
+    6.  또한 이 서비스에 적용된 약관을 이해했다는 것을 확인해야 합니다.
 
     7.  **만들기** 를 클릭합니다.
 
         ![Azure Portal](images/AzureLabs-Lab6-08.png)
 
-4.  **만들기** 를 클릭 한 후에는 서비스를 만들 때까지 기다려야 합니다 .이 작업이 몇 분 정도 걸릴 수 있습니다.
+4.  **만들기를** 클릭하면 서비스가 생성될 때까지 기다려야 합니다. 이 경우 1분 정도 걸릴 수 있습니다.
 
-5.  서비스 인스턴스를 만든 후 알림이 포털에 표시 됩니다.
+5.  서비스 인스턴스가 만들어지면 포털에 알림이 표시됩니다.
 
     ![Azure Portal](images/AzureLabs-Lab6-09.png)
 
-6.  알림을 클릭 하 여 새 서비스 인스턴스를 탐색 합니다.
+6.  알림을 클릭하여 새 서비스 인스턴스를 탐색합니다.
 
     ![Azure Portal](images/AzureLabs-Lab6-10.png)
 
@@ -168,7 +168,7 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
 
 8.  새 미디어 서비스 페이지의 왼쪽 패널에서 **자산** 링크를 클릭 합니다 (약 중간).
 
-9.  페이지의 왼쪽 위 모서리에 있는 다음 페이지에서 **업로드** 를 클릭 합니다.
+9.  다음 페이지에서 페이지의 왼쪽 위 모서리에 있는 **업로드** 를 클릭 합니다.
 
     ![Azure Portal](images/AzureLabs-Lab6-11.png)
 
@@ -269,7 +269,7 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
 
 27. 두 비디오를 모두 게시 한 후에는 다음 장으로 이동할 준비가 된 것입니다.
 
-## <a name="chapter-3---setting-up-the-unity-project"></a>3 장-Unity 프로젝트 설정
+## <a name="chapter-3---setting-up-the-unity-project"></a>3 장-Unity Project 설정
 
 다음은 혼합 현실를 사용 하 여 개발 하기 위한 일반적인 설정으로, 다른 프로젝트에 적합 한 템플릿입니다.
 
@@ -277,15 +277,15 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
 
     ![Azure Portal](images/AzureLabs-Lab6-28.png)
 
-2.  이제 Unity 프로젝트 이름을 제공 하 고 **MR \_ 360videostreaming** 을 삽입 해야 합니다. 프로젝트 형식이 **3d** 로 설정 되었는지 확인 합니다. 위치를 적절 한 위치에 적절 하 게 설정 합니다. 루트 디렉터리에 가까울수록 좋습니다. 그런 다음 **프로젝트 만들기** 를 클릭 합니다.
+2.  이제 Unity Project 이름을 제공 하 고 **MR \_ 360videostreaming** 을 삽입 해야 합니다. 프로젝트 형식이 **3d** 로 설정 되었는지 확인 합니다. 위치를 적절 한 위치에 적절 하 게 설정 합니다. 루트 디렉터리에 가까울수록 좋습니다. 그런 다음 **프로젝트 만들기** 를 클릭 합니다.
 
     ![Azure Portal](images/AzureLabs-Lab6-29.png)
 
-3.  Unity를 연 상태에서 기본 **스크립트 편집기** 가 **Visual Studio** 로 설정 되어 있는지 확인 하는 것이 좋습니다. ***기본 설정* 편집** 으로 이동한 다음 새 창에서 **외부 도구** 로 이동 합니다. **외부 스크립트 편집기** 를 **Visual Studio 2017** 로 변경 합니다. **기본 설정** 창을 닫습니다.
+3.  Unity를 연 상태에서 기본 **스크립트 편집기** 가 Visual Studio로 설정 되어 있는지 확인 하는 것이 좋습니다 **.** ***기본 설정* 편집** 으로 이동한 다음 새 창에서 **외부 도구** 로 이동 합니다. **외부 스크립트 편집기** 를 **Visual Studio 2017** 로 변경 합니다. **기본 설정** 창을 닫습니다.
 
     ![Azure Portal](images/AzureLabs-Lab6-30.png)
 
-4.  그런 다음 ***파일* *빌드 설정*** 으로 이동 하 고 플랫폼 **전환** 단추를 클릭 하 여 플랫폼을 **유니버설 Windows 플랫폼** 로 전환 합니다.
+4.  그런 다음 ***파일* *빌드 설정*** 로 이동 하 고 플랫폼 **전환** 단추를 클릭 하 여 플랫폼을 **유니버설 Windows 플랫폼** 로 전환 합니다.
 
 5.  또한 다음을 확인 합니다.
 
@@ -295,7 +295,7 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
 
     3.  **SDK** 가 최신 설치로 설정 되어 **있습니다.**
 
-    4.  **Visual Studio 버전이** 최신 설치로 설정 되어 **있습니다.**
+    4.  **Visual Studio 버전이** 최신으로 설치 됨으로 설정 되어 **있습니다.**
 
     5.  **빌드 및 실행** 이 **로컬 컴퓨터** 로 설정 됩니다.
 
@@ -303,7 +303,7 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
 
     7.  지금은 나머지 설정이 기본값으로 유지 되어야 합니다.
 
-        ![Unity 프로젝트 설정](images/AzureLabs-Lab6-31.png)
+        ![Unity Project 설정](images/AzureLabs-Lab6-31.png)
 
 6.  **빌드 설정** 창에서 **플레이어 설정** 단추를 클릭 하면 **검사기** 가 있는 공간에서 관련 패널이 열립니다. 
 
@@ -317,28 +317,28 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
 
         3. **API 호환성 수준은** **.net 4.6** 이어야 합니다.
 
-            ![Unity 프로젝트 설정](images/AzureLabs-Lab6-32.png)
+            ![Unity Project 설정](images/AzureLabs-Lab6-32.png)
 
-    2.  패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음), **지원 되는 틱 가상 현실**, **Windows Mixed reality SDK** 가 추가 되어 있는지 확인 합니다.
+    2.  패널의 아래쪽에서 **XR 설정** ( **게시 설정** 아래에 있음)에서 지원 되는 틱 **가상 현실** 은 **Windows Mixed Reality SDK** 가 추가 되었는지 확인 합니다.
 
-        ![Unity 프로젝트 설정](images/AzureLabs-Lab6-33.png)
+        ![Unity Project 설정](images/AzureLabs-Lab6-33.png)
 
-    3.  **게시 설정** 탭의 **기능** 아래에서 다음을 확인 합니다.
+    3.  **게시 설정** 탭 내의 **기능** 아래에서 다음을 확인 합니다.
 
         - **InternetClient**
 
-            ![Unity 프로젝트 설정](images/AzureLabs-Lab6-34.png)
+            ![Unity Project 설정](images/AzureLabs-Lab6-34.png)
 
 8.  이러한 변경을 수행한 후에는 **빌드 설정** 창을 닫습니다.
 
-9.  프로젝트를 저장 합니다. **파일* * 프로젝트 저장 * *.
+9.  Project **File* * save Project * *를 저장 합니다.
 
 
 
 ## <a name="chapter-4---importing-the-insideoutsphere-unity-package"></a>4 장-Into Out구에 Unity 패키지 가져오기
 
 > [!IMPORTANT]
-> 이 과정의 *Unity 설정* 구성 요소를 건너뛰고 계속 해 서 코드를 계속 사용 하려면 [unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20306%20-%20Streaming%20video/Azure-MR-306.unitypackage)를 다운로드 하 여 프로젝트에 [**사용자 지정 패키지로**](https://docs.unity3d.com/Manual/AssetPackages.html)가져온 후 **5 장** 에서 계속 합니다. Unity 프로젝트를 만들어야 합니다.
+> 이 과정의 *Unity 설정* 구성 요소를 건너뛰고 계속 해 서 코드를 계속 사용 하려면 [unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20306%20-%20Streaming%20video/Azure-MR-306.unitypackage)를 다운로드 하 여 프로젝트에 [**사용자 지정 패키지로**](https://docs.unity3d.com/Manual/AssetPackages.html)가져온 후 **5 장** 에서 계속 합니다. Unity Project를 만들어야 합니다.
 
 이 과정에서는 [**unitypackage**](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20306%20-%20Streaming%20video/InsideOutSphere.unitypackage)이라는 Unity 자산 패키지를 다운로드 해야 합니다.
 
@@ -430,7 +430,7 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
 
 이 클래스를 만들려면:
 
-1.  **프로젝트** 패널에 있는 **자산 폴더** 를 마우스 오른쪽 단추로 클릭 하 고 **> 폴더 만들기** 를 클릭 합니다. 폴더 이름을 **스크립트** 로 합니다.
+1.  **Project** 패널에 있는 **자산 폴더** 를 마우스 오른쪽 단추로 클릭 하 고 **> 폴더 만들기** 를 클릭 합니다. 폴더 이름을 **스크립트** 로 합니다.
 
     ![VideoController 클래스 만들기](images/AzureLabs-Lab6-43.png)
 
@@ -442,7 +442,7 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
 
     ![VideoController 클래스 만들기](images/AzureLabs-Lab6-45.png)
 
-4.  새 **Videocontroller** 스크립트를 두 번 클릭 하 여 **Visual Studio 2017** 에서 엽니다.
+4.  새 **videocontroller** 스크립트를 두 번 클릭 하 **Visual Studio 2017** 를 사용 하 여 엽니다.
 
     ![VideoController 클래스 만들기](images/AzureLabs-Lab6-46.png)
 
@@ -608,7 +608,7 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
     > [!TIP] 
     > **ChangeScene ()** 메서드는 \# *조건 연산자* 라는 유용한 C 기능을 사용 합니다. 이렇게 하면 조건을 확인 한 다음 검사 결과에 따라 반환 되는 값을 모두 단일 문 내에서 수행할 수 있습니다. [조건 연산자에 대 한 자세한 내용을 보려면이 링크를](/dotnet/csharp/language-reference/operators/conditional-operator)따르세요.
 
-11. Unity로 반환 하기 전에 Visual Studio에서 변경 내용을 저장 합니다.
+11. Unity로 돌아가기 전에 Visual Studio 변경 내용을 저장 합니다.
 
 12. Unity 편집기로 돌아가서, **Videocontroller** 클래스 [from] {. 밑줄} **스크립트** 폴더를 **계층** 패널의 **기본 카메라** 개체로 끌어 놓습니다.
 
@@ -627,9 +627,9 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
 
 1.  이전에 만든 **스크립트** 폴더로 이동 합니다.
 
-2.  **프로젝트** 패널을 마우스 오른쪽 단추로 클릭 하 고 **만들기* * C \# 스크립트 * *를 클릭 합니다. 스크립트 이름을 **응시** 로 합니다.
+2.  **Project** 패널을 마우스 오른쪽 단추로 클릭 하 고 **만들기* * C \# 스크립트 * *를 클릭 합니다. 스크립트 이름을 **응시** 로 합니다.
 
-3.  새 ***응시** _ 스크립트를 두 번 클릭 하 여 _ *Visual Studio 2017* 을 사용 하 여 엽니다.*
+3.  _ Visual Studio 2017를 사용 하 여 열려면 새로 만들기 ***응시** _ 스크립트를 두 번 클릭 *합니다.**
 
 4.  다음 네임 스페이스가 스크립트의 맨 위에 있는지 확인 하 고 다른 네임 스페이스를 제거 합니다.
 
@@ -729,7 +729,7 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
         }
     ```
 
-8.  Unity로 반환 하기 전에 Visual Studio에서 변경 내용을 저장 합니다.
+8.  Unity로 돌아가기 전에 Visual Studio 변경 내용을 저장 합니다.
 
 9.  Scripts 폴더의 Scripts **클래스를** 클릭 하 고 **계층** 패널의 기본 카메라 개체로 끕니다.
 
@@ -756,7 +756,7 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
 
     >  **VideoScene1** 및 **VideoScene2** 가 있어야 합니다.
 
-7.  두 개의 장면을 사용 하 여 **파일 > 빌드 설정** 으로 이동 합니다. **빌드 설정** 창을 열고, **빌드 섹션에서** 장면을 장면을 끌어 옵니다.
+7.  두 개의 장면을 사용 하 여 **파일 > 빌드 설정** 로 이동 합니다. **빌드 설정** 창이 열려 있으면 **빌드 섹션의 장면** 으로 장면을 끌어 옵니다.
 
     ![7 장--두 Unity 장면 설정](images/AzureLabs-Lab6-50.png)
 
@@ -797,7 +797,7 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
 
 14. 이제 **GazeButton** 가 부분적으로 업데이트 되 고, 다른 것 처럼 보이지만, 이제는 새 **자료** 를 만들어이를 완전히 다르게 표시 하 고 첫 번째 장면의 개체와 다른 개체로 인식 하기가 더 쉽습니다.
 
-15. **프로젝트 패널** 내에서 **재질** 폴더로 이동 합니다. **Buttonmaterial** 재질을 복제 합니다.   +  키보드에서 Ctrl **D** 를 누르거나 **재질** 을 마우스 왼쪽 단추로 클릭 한 다음 파일 **편집** 메뉴 옵션에서 **중복** 을 선택 합니다.
+15. **Project 패널** 내에서 **재질** 폴더로 이동 합니다. **Buttonmaterial** 재질을 복제 합니다.   +  키보드에서 Ctrl **D** 를 누르거나 **재질** 을 마우스 왼쪽 단추로 클릭 한 다음 파일 **편집** 메뉴 옵션에서 **중복** 을 선택 합니다.
 
     ![7 장--두 Unity 장면을 설정 ](images/AzureLabs-Lab6-55.png)
      ![ 7 장--두 Unity 장면을 설정 합니다.](images/AzureLabs-Lab6-56.png)
@@ -828,7 +828,7 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
 
 2.  **Unity C \# 프로젝트** 라는 상자를 선택 합니다 .이는 빌드를 완료 한 후 클래스를 편집 하는 데 사용할 수 있으므로 중요 합니다.
 
-3.  **파일 > 빌드 설정** 으로 이동 하 고 **빌드** 를 클릭 합니다.
+3.  **파일 > 빌드 설정** 로 이동 하 여 **빌드** 를 클릭 합니다.
 
 4.  솔루션을 빌드하는 데 사용할 폴더를 선택 하 라는 메시지가 표시 됩니다.
 
@@ -843,7 +843,7 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
 
 ## <a name="chapter-9---deploy-on-local-machine"></a>9 장-로컬 컴퓨터에 배포
 
-빌드가 완료 되 면 빌드 위치에 **파일 탐색기** 창이 표시 됩니다. 이름을 지정 하 고 빌드한 폴더를 연 다음 해당 폴더 내에서 솔루션 (.sln) 파일을 두 번 클릭 하 여 Visual Studio 2017에서 솔루션을 엽니다.
+빌드가 완료 되 면 빌드 위치에 **파일 탐색기** 창이 표시 됩니다. 이름을 지정 하 고 빌드한 폴더를 연 다음 해당 폴더 내에서 솔루션 (.sln) 파일을 두 번 클릭 하 여 Visual Studio 2017를 사용 하 여 솔루션을 엽니다.
 
 남은 작업은 사용자의 컴퓨터 (또는 *로컬 컴퓨터*)에 앱을 배포 하는 것입니다.
 
@@ -857,23 +857,23 @@ Azure 미디어 서비스를 사용 하려면 응용 프로그램에서 사용�
 
     ![9 장--로컬 컴퓨터에 배포](images/AzureLabs-Lab6-62.png)
 
-4.  이제 솔루션에 대 한 패키지를 복원 해야 합니다. **솔루션** 을 마우스 오른쪽 단추로 클릭 하 고 **솔루션에 대 한 NuGet 패키지 복원** ...을 클릭 합니다.
+4.  이제 솔루션에 대 한 패키지를 복원 해야 합니다. **솔루션** 을 마우스 오른쪽 단추로 클릭 하 고 **솔루션에 대 한 패키지 NuGet 복원** ...을 클릭 합니다.
 
     > [!NOTE] 
     > 이 작업은 Unity가 빌드된 패키지가 로컬 컴퓨터 참조를 대상으로 해야 하기 때문에 수행 됩니다.
 
-5.  **빌드 메뉴로** 이동 하 여 **솔루션 배포** 를 클릭 하 여 응용 프로그램을 컴퓨터에 테스트용으로 로드. Visual Studio는 먼저 응용 프로그램을 빌드한 다음 배포 합니다.
+5.  **빌드 메뉴로** 이동 하 여 **솔루션 배포** 를 클릭 하 여 응용 프로그램을 컴퓨터에 테스트용으로 로드. Visual Studio 먼저 응용 프로그램을 빌드한 다음 배포 합니다.
 
 6.  이제 앱이 설치 된 앱 목록에 표시 되어 시작 될 준비가 되었습니다.
 
-    ![9 장--로컬 컴퓨터에 배포](images/AzureLabs-Lab6-63.png)
+    ![9장 -- 로컬 컴퓨터에 배포](images/AzureLabs-Lab6-63.png)
 
-Mixed Reality 응용 프로그램을 실행 하는 경우 앱 내에서 사용한 **Into Out구에** 모델 내에 있습니다. 이 구는 이러한 종류의 관점에서 filmed 된 들어오는 비디오 (360)를 제공 하 여 비디오가 스트리밍되는 위치입니다. 비디오를 로드 하는 데 몇 초 정도 걸릴 수 있으며, 비디오를 가져와 다운로드 한 다음 앱으로 스트리밍하려면 앱에 사용 가능한 인터넷 속도가 적용 됩니다.
-준비가 되 면 장면을 변경 하 고 red 구를 gazing 하 여 두 번째 비디오를 엽니다. 그런 다음 두 번째 장면에서 파란색 큐브를 사용 하 여 뒤로 이동 합니다.
+Mixed Reality 애플리케이션을 실행하면 앱 내에서 사용한 **InsideOutSphere** 모델 내에 포함됩니다. 이 구는 비디오가 스트리밍되는 위치로, 들어오는 비디오의 360도 보기를 제공합니다(이러한 종류의 큐브 뷰를 위해 녹화된). 비디오를 로드하는 데 몇 초 정도 걸리는 경우 비디오를 페치한 다음 다운로드하여 앱으로 스트리밍해야 하므로 앱에 사용 가능한 인터넷 속도가 적용됩니다.
+준비가 되면 빨간색 구를 쳐서 장면을 변경하고 두 번째 비디오를 엽니다. 그런 다음, 두 번째 장면에서 파란색 큐브를 사용하여 자유롭게 돌아갑니다.
 
-## <a name="your-finished-azure-media-service-application"></a>완성 된 Azure Media Service 응용 프로그램
+## <a name="your-finished-azure-media-service-application"></a>완료된 Azure Media Service 애플리케이션
  
-축 하 합니다. Azure 미디어 서비스를 활용 하 여 360 비디오를 스트리밍하는 혼합 현실 앱을 빌드 했습니다.
+축하합니다. Azure Media Service를 활용하여 360개 비디오를 스트리밍하는 혼합 현실 앱을 빌드했습니다.
 
 ![랩 결과](images/AzureLabs-Lab6-00.png)
 
@@ -883,8 +883,8 @@ Mixed Reality 응용 프로그램을 실행 하는 경우 앱 내에서 사용�
 
 **연습 1**
 
-이 자습서 내에서 단일 장면을 사용 하 여 비디오를 변경 하는 것만 가능 합니다. 응용 프로그램을 실험 하 고 단일 장면으로 만듭니다. 혼합에 다른 비디오를 추가할 수도 있습니다.
+이 자습서 내에서 단일 장면만 사용하여 비디오를 변경할 수 있습니다. 애플리케이션을 실험하고 단일 장면으로 만듭니다. 다른 비디오를 조합에 추가할 수도 있습니다.
 
 **연습 2**
 
-Azure 및 Unity를 실험 하 고 인터넷 연결의 강도에 따라 앱에서 다른 파일 크기의 비디오를 자동으로 선택 하는 기능을 구현 해 보세요.
+Azure 및 Unity를 실험하고 인터넷 연결의 강도에 따라 앱에서 파일 크기가 다른 비디오를 자동으로 선택하는 기능을 구현하려고 합니다.

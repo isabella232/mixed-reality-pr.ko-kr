@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 0b26242d71bbe080e440f9c52a009e29000ab00b
-ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
+ms.openlocfilehash: add3aaa2a98ca2ddc1f60b0307a3defed3236d9a2c09aa70ea2d12b2d9638eba
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114224211"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228390"
 ---
 # <a name="pulse-shader"></a>펄스 셰이더
 
@@ -27,15 +27,15 @@ ms.locfileid: "114224211"
 - **MRTK_Pulse_ArticulatedHandMeshBlue.mat** 
 - **MRTK_Pulse_ArticulatedHandMeshPurple.mat** 
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 공간 메시 예제의 경우 mixedRealityToolkit 개체 -> Spatial Awareness Profile -> Display 설정 -> Visible Material 아래에 MRTK_Pulse_SpatialMeshBlue.mat 또는 MRTK_Pulse_SpatialMeshPurple.mat이 할당되어 있는지 확인합니다.
 
 손 메시 예제의 경우 MRTK_Pulse_ArticulatedHandMeshBlue.mat 또는 MRTK_Pulse_ArticulatedHandMeshPurple.mat가 MrTK 설정 -> Input -> 손 추적 -> 손 메시 프리팹에 할당되어야 하는 ArticulatedHandMesh.prefab에 할당되어 있는지 확인합니다.
 
-## <a name="how-it-works"></a>작동 방법
+## <a name="how-it-works"></a>작동 방식
 
-손 메시 셰이더에서는 IV를 사용하여 손 메시를 따라 펄스를 매핑하고, 손으로 펄스를 페이드 아웃합니다. 표면 재질 셰이더에서는 꼭짓점 위치를 사용하여 펄스를 매핑합니다.
+손 메시 셰이더에서는 IV를 사용하여 손 메시를 따라 펄스를 매핑하고, 손으로 펄스를 페이드 아웃합니다. 표면 음영 셰이더에서는 꼭짓점 위치를 사용하여 펄스를 매핑합니다.
 
 ## <a name="spatial-mesh-example---pulseshaderspatialmeshexampleunity"></a>공간 메시 예제 - PulseShaderSpatialMeshExample.unity
 

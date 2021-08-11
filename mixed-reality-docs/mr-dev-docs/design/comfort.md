@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 디자인, 편안함, HoloLens 2, HoloLens(1세대), 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit, 보행
-ms.openlocfilehash: 9f366b2eb3ef33d3f63d3227d14aec642e8203b7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 87cf45628a530da65d9feb29556afb7c4a8ee1d3f13385cbf521d2621ac0c2ae
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582492"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226438"
 ---
 # <a name="comfort"></a>편안함
 
@@ -166,7 +166,7 @@ Windows Mixed Reality 몰입형 HMD에는 IPD 또는 VO에 대한 자동 보정�
 * **방지** 수평선 아래 60가 넘는 시선 각도(수직 이동)
 * **방지** 중심에서 45도가 넘는 목 회전(수평 이동)
 
-특히 활동 중에 머리가 아래쪽으로 약간 기울어지는 경향이 있으므로 최적(휴식) 시선 각도를 수평선 아래 10-20도 사이로 고려합니다.
+특히 활동 중에 머리가 아래쪽으로 약간 기울어지는 경향이 있으므로 최적(휴식) 시선 각도를 수평선 아래 10~20도 사이로 고려합니다.
 
 ## <a name="arm-positions"></a>팔 위치
 

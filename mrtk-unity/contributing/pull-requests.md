@@ -1,16 +1,16 @@
 ---
 title: 끌어오기 요청
-description: GitHub 끌어오기 요청과 관련된 세부 정보입니다.
+description: 끌어오기 요청 GitHub 관련된 세부 정보입니다.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, PR,
-ms.openlocfilehash: 580a57972f3356143fa796ae6ff4b08db2eb447a
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: ffaba25a42566d6e48be7db2c5b599443b24831f8f353fe1bd59beb062a7b87e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121371"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200119"
 ---
 # <a name="pull-requests"></a>끌어오기 요청
 

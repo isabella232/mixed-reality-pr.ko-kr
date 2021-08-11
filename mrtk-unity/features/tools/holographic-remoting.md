@@ -5,18 +5,18 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 0fbde863185a9f51b53192a338e9403dc79248db
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: a0d8e695e23ed2b58a62511e8b061bede2c68d92fb0089c8dada1d336c2a09e5
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176641"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115224816"
 ---
 # <a name="holographic-remoting"></a>홀로그램 원격
 
 홀로그램 Remoting은 Wi-Fi 또는 USB 케이블 연결을 사용하여 PC에서 Microsoft HoloLens 홀로그램 콘텐츠를 실시간으로 스트림합니다. 이 기능은 혼합 현실 애플리케이션을 개발할 때 개발자 생산성을 크게 높일 수 있습니다.
 
-아래에 언급된 XR SDK는 Unity [2019.3 이상에서 Unity의 새 XR 파이프라인을](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/)나타냅니다. MRTK와 함께 XR SDK를 사용하는 방법은 [여기를](../../configuration/getting-started-with-mrtk-and-xrsdk.md) 참조하세요. 레거시 XR은 Unity 2018에 포함되고 Unity 2019.3에서 더 이상 사용되지 않고 Unity 2020에서 제거된 기존 XR 파이프라인을 나타냅니다.
+아래에 언급된 XR SDK는 Unity [2019.3 이상에서 Unity의 새로운 XR 파이프라인을](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/)나타냅니다. MRTK와 함께 XR SDK를 사용하는 방법은 [여기를](../../configuration/getting-started-with-mrtk-and-xrsdk.md) 참조하세요. 레거시 XR은 Unity 2018에 포함되고 Unity 2019.3에서 더 이상 사용되지 않고 Unity 2020에서 제거된 기존 XR 파이프라인을 나타냅니다.
 
 ## <a name="initial-setup"></a>초기 설정
 
@@ -27,7 +27,7 @@ HoloLens 대한 remoting을 사용하도록 설정하려면 프로젝트에서 �
     - XR SDK를 사용하는 경우: 최신 버전의 **Windows XR 플러그 인** 패키지가 설치되어 있는지 확인합니다.
 1. Microsoft Store 통해 HoloLens 최신 홀로그램 Remoting 애플리케이션이 설치되어 있는지 확인합니다.
 
-프로젝트에서 사용되는 파이프라인에 따라 [레거시 XR 설치 지침](#legacy-xr-setup-instructions) 또는 [XR SDK 설치 지침을](#xr-sdk-setup-instructions) 계속 진행하세요.
+프로젝트에서 사용되는 파이프라인에 따라 [레거시 XR 설치 지침](#legacy-xr-setup-instructions) 또는 [XR SDK 설정 지침을](#xr-sdk-setup-instructions) 계속 진행하세요.
 
 ## <a name="legacy-xr-setup-instructions"></a>레거시 XR 설치 지침
 
@@ -40,9 +40,9 @@ HoloLens 2 사용하는 경우 MRTK에 remoting에 대한 설명된 손 및 시�
 > [!NOTE]
 > Unity 2019.4 이상에서는 Check Configuration 유틸리티를 실행할 필요가 없습니다.
 
-손 조인트 및 시선 추적 추적을 사용하도록 설정하려면 Unity 패키지 가져오기 및 관련 **섹션을 통해 HoloLens 2 remoting 디버깅의** 단계를 따릅니다.
+손 조인트 및 시선 추적 추적을 사용하도록 설정하려면 Unity 패키지 가져오기 및 관련 **섹션을 통해 HoloLens 2 Remoting 디버깅의** 단계를 수행합니다.
 
-### <a name="debugging-hololens-2-remoting-via-unity-package-import"></a>Unity 패키지 가져오기를 통해 HoloLens 2 Remoting 디버깅
+### <a name="debugging-hololens-2-remoting-via-unity-package-import"></a>Unity 패키지 가져오기를 통한 디버깅 HoloLens 2 remoting
 
 HoloLens 2 손 조인트와 시선 추적이 remoting을 통해 작동하지 않는 경우 몇 가지 일반적인 잠재적 문제가 있습니다. 검사해야 하는 순서대로 아래에 나열되어 있습니다.
 
@@ -50,7 +50,7 @@ HoloLens 2 손 조인트와 시선 추적이 remoting을 통해 작동하지 않
 
 #### <a name="import-dotnetwinrt-into-the-project"></a>DotNetWinRT를 프로젝트로 가져오기
 
-1. Mixed Reality [기능 도구](https://aka.ms/MRFeatureTool) 다운로드
+1. Mixed Reality [기능 도구 다운로드](https://aka.ms/MRFeatureTool)
 
 1. 기능 **검색** 보기에서 *winRT 프로젝션 Mixed Reality 선택합니다.*
 
@@ -70,7 +70,7 @@ MRTK 버전 2.5.0부터는 성능상의 이유로 이 #define 더 이상 자동�
 
 ![DotNetWinRT 현재](../images/tools/remoting/DotNetWinRTPresent.png)
 
-### <a name="removing-hololens-2-specific-remoting-support"></a>HoloLens 2 관련 Remoting 지원 제거
+### <a name="removing-hololens-2-specific-remoting-support"></a>HoloLens 2 특정 Remoting 지원 제거
 
 DotNetWinRT 어댑터의 존재로 인해 충돌 또는 기타 문제가 발생하면 [도움말 리소스 중 하나에 문의하세요.](../../index.md#getting-help)
 
@@ -116,9 +116,9 @@ Unity가 HoloLens 연결된 경우 편집기에서 재생 모드를 입력합니
 세션이 완료되면 재생 모드를 종료합니다.
 
 > [!NOTE]
-> 일부 Unity 버전에서는 Remoting 세션 중에 편집기가 재생 모드로 들어가면 중단되는 알려진 문제가 있습니다. 프로젝트가 로드될 때 홀로그램 창이 열려 있으면 이 문제가 발생할 수 있습니다. 이 문제가 발생하지 않도록 하려면 Unity를 종료하기 전에 항상 홀로그램 대화 상자를 닫습니다.
+> 일부 Unity 버전에서는 Remoting 세션 중에 편집기가 재생 모드로 들어가면 중단되는 알려진 문제가 있습니다. 프로젝트가 로드될 때 홀로그램 창이 열려 있는 경우 이 문제가 발생할 수 있습니다. 이 문제가 발생하지 않도록 하려면 Unity를 종료하기 전에 항상 홀로그램 대화 상자를 닫습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [홀로그램 Remoting 문제 해결 및 제한 사항](/windows/mixed-reality/holographic-remoting-troubleshooting)
 - [Microsoft Holographic Remoting 소프트웨어 사용 조건](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, MRTK, mixed reality toolkit, solvers, 시선 추적, 음성 명령
 ms.localizationpriority: high
-ms.openlocfilehash: abee2163c3b92897396ea35cc43ae025e8e7b804
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: e8eb878e7ab2fecf27defc5f28e045c4d4768682e95a3a42cda7f324a21617e5
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175505"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115224789"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1. MRTK 자습서 소개
 

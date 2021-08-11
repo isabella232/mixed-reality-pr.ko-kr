@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 04/21/2019
 ms.topic: article
 keywords: Windows Mixed Reality, design, interaction, voice
-ms.openlocfilehash: d027dd32e1d7ea0391d2d9262e164a671a57bd29
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2a988ad50a8b20a256b0d7208187785778447cc08109fbf55d4ae83e820a76ba
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582830"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225376"
 ---
 # <a name="voice-commanding"></a>음성 명령
 
@@ -65,7 +65,7 @@ ms.locfileid: "98582830"
 
 언제든지 "select"라고 말하면 응시 커서가 가리키고 있는 대상이 활성화됩니다. 
 
->참고: HoloLens 2에서는 먼저 "select" 라는 단어를 말하여 응시 커서를 호출 해야 합니다. "선택"을 다시 선택 하 여 활성화 합니다. 응시 커서를 숨기려면 마우스를 사용 하 여 개체를 길게 누르거나 터치 합니다. 
+>참고: HoloLens 2에서는 먼저 "select" 라는 단어를 말하여 응시 커서를 먼저 호출 해야 합니다. "선택"을 다시 선택 하 여 활성화 합니다. 응시 커서를 숨기려면 마우스를 사용 하 여 개체를 길게 누르거나 터치 합니다. 
 
 ### <a name="see-it-say-it"></a>보기, 말하기
 
@@ -102,7 +102,7 @@ Windows Mixed Reality는 **단추의 레이블이 연결된 음성 명령과 동
 ## <a name="top-things-users-should-know-about-speech-in-mixed-reality"></a>혼합 현실에서 "음성"에 대해 알아야 할 주요 사항
 * 단추를 타기팅할 때 **"Select"** 라고 말합니다(단추를 클릭하기 위해 어디에서나 사용할 수 있음).
 * 일부 앱에서는 작업을 수행하기 위해 **label name of an app bar button** 이라고 말할 수 있습니다. 예를 들어, 앱을 바라보면서 명령 "Remove"라고 말하여 작업 환경에서 해당 앱을 제거할 수 있습니다(손으로 클릭할 때모다 시간이 절감됨).
-* **"Hey Cortana"** 라고 말하여 Cortana가 청취를 시작하도록 할 수 있습니다. 질문을 할 수 있습니다 ("안녕하세요, Eiffel 타워는 어떻게 되나요?"), 앱을 열도록 지시 하거나 ("코타 라, open Netflix"), 시작 메뉴를 표시 하도록 지시 합니다 ("안녕하세요 Cortana, me home").
+* **"Hey Cortana"** 라고 말하여 Cortana가 청취를 시작하도록 할 수 있습니다. 질문을 할 수 있습니다 (Cortana "Eiffel, 높이는 속도는 어떻게 되나요?"), 앱을 열도록 지시 하거나 (Cortana "Netflix" 열기), 시작 메뉴를 표시 하도록 지시 합니다 ("안녕하세요 Cortana, 홈 사용").
 
 ## <a name="common-questions-and-concerns-users-have-about-voice"></a>음성에 대한 사용자의 일반적인 질문 및 어려움
 * 어떤 말을 할 수 있나요?
@@ -113,6 +113,6 @@ Windows Mixed Reality는 **단추의 레이블이 연결된 음성 명령과 동
 * 특정 앱이나 앱 명령을 대상으로 음성 명령을 내리려면 어떻게 하나요?
 * 음성을 사용해서 항목을 HoloLens의 홀로그래픽 프레임 밖으로 보낼 수 있나요?
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 * [제스처](../design/gaze-and-commit.md#composite-gestures)
 * [헤드 게이즈 및 유지](../design/gaze-and-dwell.md)

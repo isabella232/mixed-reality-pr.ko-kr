@@ -1,18 +1,18 @@
 ---
-title: 시각적 테마
+title: 시각적 개체 테마
 description: 개요 시각적 테마 MRTK의 UX 자산에 대 한 유연한 제어
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, 혼합 현실, 개발, mrtk, mrtk 테마,
-ms.openlocfilehash: d97c470bf1d77299c6848990cdc69d886d432ecb
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: f7e0b10f51947884c4d23191fd147315084c5295e9b48953bb5de10b7cbc0d22
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177172"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223974"
 ---
-# <a name="visual-themes"></a>시각적 테마
+# <a name="visual-themes"></a>시각적 개체 테마
 
 테마를 사용 하면 다양 한 상태 전환에 대 한 응답으로 UX 자산을 유연 하 게 제어할 수 있습니다. 이는 단추의 색을 변경 하 고 포커스에 대 한 응답으로 요소의 크기를 조정 하는 등의 작업이 포함 될 수 있습니다. 시각적 테마 프레임 워크는 두 가지 주요 부분, 즉 1) 구성 및 2) 런타임 엔진으로 구성 됩니다.
 
@@ -296,6 +296,6 @@ public class MeshVisibilityController : MonoBehaviour
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [상호 작용 가능](interactable.md)
