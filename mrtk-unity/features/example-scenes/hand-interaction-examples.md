@@ -5,18 +5,18 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 손 상호 작용, 경계 컨트롤, 누를 수 있는 단추,
-ms.openlocfilehash: 7926c8bdd525af24a26e2f4c87257dca7628956a
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 5e4f69a9e547476f848c383016008628d56fa801cf90ae9cdccde9fe791d186f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177442"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223188"
 ---
 # <a name="hand-interaction-examples"></a>손 상호 작용 예제
 
 ![손 상호 작용 예제 1](../images/hand-interaction-examples/MRTK_HandInteractionExamples.png)
 
-**HandInteractionExamples** 예제 장면에는 굴절된 손 입력을 강조하는 다양한 유형의 상호 작용 및 UI 컨트롤이 포함되어 있습니다. MRTK의 입력 시뮬레이션을 사용하면 Unity 편집기에서 손 추적 상호 작용을 경험할 수 있습니다. 
+**HandInteractionExamples** 예제 장면에는 굴절형 손 입력을 강조하는 다양한 유형의 상호 작용 및 UI 컨트롤이 포함되어 있습니다. MRTK의 입력 시뮬레이션을 사용하면 Unity 편집기에서 손 추적 상호 작용을 경험할 수 있습니다. 
 
 **HandInteractionExamples** 장면은 MRTK의 Examples 패키지에 포함되어 있습니다. Mixed Reality [기능 도구를](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) 통해 **Mixed Reality Toolkit 예제** 패키지를 다운로드하고 가져올 수 있습니다.
 

@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, 사람, 아바타, 혼합 현실 캡처, 대규모 비디오
-ms.openlocfilehash: 1a14759a6292a0fcc1e6fd36f518fff537c67dca
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: db21b6b02ce76403c2c59e37384c1c1602d8a63e003a8b5b6601c5daf7b9c2a7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687400"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228530"
 ---
 # <a name="case-study---representing-humans-in-mixed-reality"></a>사례 연구-혼합 현실에서 사람 표시
 
@@ -51,7 +51,7 @@ Turrell의 stark, surreal minimalism는 작업의 경험 이지만 혼합 현실
 
 ![VR의 Mindshow](../develop/platform-capabilities-and-apis/images/mindshow-in-vr-640px.jpg)
 
-몰입 형 환경의 아바타는 스토리텔링에서 새로운 종류의 전형을 사용 하도록 설정 합니다. 최신 앱은 가상 본문 소유권의 개념을 재고 하 고, 세대를 설정 하 여 사용자 간의 거리를 제거 합니다. [Mindshow](https://mindshow.com/) 같은 기업은 아바타를 활용 하 여 사용자가 완전히 새로운 가상 사용자와 문자를 사용할 수 있도록 지 원하는 독창적인 도구를 개발 하 고 있습니다. 다른 사람들은 [꾸밈 식의 메서드](https://en.wikipedia.org/wiki/Uncanny_valley)를 탐색 하는 것으로 서, 사용자와 유사한 특성의 특성을 탐색 하는 것이 잠재적으로 독창적인 기회입니다. 현재 현실감이 없으면 일상적인 개발자를 위한 기술 문제 호스트와 함께 [휴먼 likeness의 uncanny 계곡](https://en.wikipedia.org/wiki/Uncanny_valley) 을 방지 하는 데 도움이 됩니다. 이러한 이유로 (및 그 이상), 현실적인 아바타은 예측 가능한 미래에 대 한 기본값이 될 가능성이 높습니다. 그러나 현실감는 혼합 현실에 상당한 과제가 발생 하지만 *3d 공간에서 사람을 인증 해야 하는 주요 시나리오가 있습니다* .
+몰입 형 환경의 아바타는 스토리텔링에서 새로운 종류의 전형을 사용 하도록 설정 합니다. 최신 앱은 가상 본문 소유권의 개념을 재고 하 고, 세대를 설정 하 여 사용자 간의 거리를 제거 합니다. [Mindshow](https://mindshow.com/) 같은 기업은 아바타를 활용 하 여 사용자가 완전히 새로운 가상 사용자와 문자를 사용할 수 있도록 지 원하는 독창적인 도구를 개발 하 고 있습니다. 다른 사람들은 [꾸밈 식의 메서드](https://en.wikipedia.org/wiki/Uncanny_valley)를 탐색 하는 것으로 서, 사용자와 유사한 특성의 특성을 탐색 하는 것이 잠재적으로 독창적인 기회입니다. 현재 현실감이 없으면 일상적인 개발자를 위한 기술 문제 호스트와 함께 [휴먼 likeness의 uncanny 계곡](https://en.wikipedia.org/wiki/Uncanny_valley) 을 방지 하는 데 도움이 됩니다. 이러한 이유로 (및 그 이상), 현실적인 아바타은 예측 가능한 미래에 대 한 기본값이 될 가능성이 높습니다. 그러나 현실감는 혼합 현실에 상당한 과제가 발생 하지만 *3d 공간에서 사람을 인증 해야 하는 주요 시나리오가 있습니다*.
 
 Microsoft Research에서 Microsoft Research를 활용 하는 소규모 팀은 대규모 비디오의 형태를 통해 사람을 캡처하기 위한 방법을 개발 하는 몇 년간 지난 몇 년간 노력 했습니다. 현재 프로세스는 비디오 프로덕션과 비슷합니다. sculpted 자산에 움직임을 적용 하는 것이 아니라 전체 3D 기록입니다. 성능과 이미지는 실시간으로 캡처됩니다 .이는 음악가의 작업이 아니라 인증 된 표현입니다. 기술이 상용 응용 프로그램으로 확장 되기 시작 하는 동안에는 대규모 비디오의 의미는 [Microsoft의 더 많은 개인 컴퓨팅 비전](https://www.youtube.com/watch?v=tcyj-_IEWt8)에 매우 중요 합니다.
 
@@ -73,7 +73,7 @@ Microsoft Research에서 Microsoft Research를 활용 하는 소규모 팀은 �
 
 James Turrell의 추상적 아트와 Ai Weiwei의 중요 한 현실감는 고유한 기술적 문제를 제공 하는 것 처럼, 사용자를 creative 아바타 및 현실적인 캡처로 표현 하는 방법을 제공 합니다. 다른 항목은 무시 하 고 각각의 잠재력을 탐색 하면이 새로운 공간의 인간 상호 작용을 이해 하는 데 도움이 됩니다.
 
-## <a name="about-the-author"></a>저자 정보
+## <a name="about-the-author"></a>작성자 정보
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>

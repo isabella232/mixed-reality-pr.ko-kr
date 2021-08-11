@@ -1,18 +1,18 @@
 ---
-title: Authors
+title: 작성자
 description: MRTK 작성자 목록
 author: cadia
 ms.author: cadia
 ms.date: 05/27/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, C#, 기여자, Community
-ms.openlocfilehash: ae8cc8b1ab26a12188622a2c846dddd381491dc2
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: b80b61549d4780dcbc2dace411beba2d268caf94fc38939bbce39eadffc8077c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177295"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228723"
 ---
-# <a name="authors"></a>Authors
+# <a name="authors"></a>작성자
 
 Microsoft Mixed Reality Toolkit 전 세계 개인의 기여를 포함하는 공동 작업 프로젝트입니다. 기여해 주신 모든 분들에게 감사드리며 계속 기여해 주셔서 감사합니다.
 
@@ -21,13 +21,13 @@ Microsoft Mixed Reality Toolkit 전 세계 개인의 기여를 포함하는 공�
 - Addison Linville(대문자)
 - ADP-JoNeff
 - afarfar
-- 번개에 대한(AgainstLightning)
+- 번개 방지(AgainstLightning)
 - agrogrouse(agrogrouse)
 - Alex Alex(elbuma)
 - Andrew Hall(ryzn 표시)
 - 2016년 10월 20일, 2016년 10월 20일
 - Anuraag Puri(anuraag016)
-- 다부플MS
+- ಖflmS
 - Ben 여타드(genbod)
 - 카가데트 Thalhammer(thalbern)
 - Bertrand 한정자(BertrandOustriere)
@@ -40,10 +40,10 @@ Microsoft Mixed Reality Toolkit 전 세계 개인의 기여를 포함하는 공�
 - Casey Caseb(ptc-ccrabb)
 - CDiaz-MS
 - ce
-- 셀armation
+- cellarmation
 - cihankurt98
 - CoPrez
-- 된 Carvalheiro (ccarvalheiro)
+- Bo Carvalheiro(ccarvalheiro)
 - Daniel Mann(danielmann-ms)
 - David Evans(phosphoer)
 - David David(djohnsomsft)
@@ -60,8 +60,8 @@ Microsoft Mixed Reality Toolkit 전 세계 개인의 기여를 포함하는 공�
 - Eric Provencher(provencher)
 - et지margraff(meulta)
 - Eusebiu Marcu(eusebiu)
-- 2dair(In2dair)
-- 핀 브러시(Zee2)
+- 2단어(In2dair)
+- 핀 핀란드(Zee2)
 - 2016년 3월 20일
 - Andrew Trepte(Trepte)
 - Francesco Clasadonte(klasaf)
@@ -80,10 +80,10 @@ Microsoft Mixed Reality Toolkit 전 세계 개인의 기여를 포함하는 공�
 - 2018년 10월 30일
 - 2016년 10월 21일, 2014년 10월 21일, 2014
 - John(johnppella)
-- Jon Jon(PalmerGD)
+- Jon이(2016년 12월)
 - 을(Nakda)
-- 2016년 10월 20일, 2016년 10월 12월
-- Joost van 여과(LocalJoost)
+- 2016년 10월 20일, 2016년 10월 20일
+- Joost van Puik(LocalJoost)
 - 작성자(jwittner)
 - julesra
 - Julia Schwarz(julenka)
@@ -99,15 +99,15 @@ Microsoft Mixed Reality Toolkit 전 세계 개인의 기여를 포함하는 공�
 - 브이스어(keve도어)
 - LaneMax
 - Lars Simkins(Railboy)
-- Luis 밸브루데(luval-microsoft)
+- Luis Valverde(luval-microsoft)
 - Luis Valverde(luis-valverde-ms)
 - Lukas Tönne(lukastoenneMS)
 - Maciej Borowik(macborow)
 - 2016년 10월 20일, 2016년 10월 21일
 - Marek Stój(marek-puj)
 - Mark 표시(fast-slow-still)
-- 2018년 10월 20일, 2016년 10월 21일, 2
-- 2016년 10월 20일, 2016년 1
+- 2018년 10월 21일, 2016년 10월 20일
+- 2016년 3월 20일, 2016년 10
 - MaxWang-MS
 - mbeagley-MS
 - michael (insominx)

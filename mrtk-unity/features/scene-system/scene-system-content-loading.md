@@ -1,18 +1,18 @@
 ---
-title: 장면 시스템 콘텐츠 로드
+title: 장면 시스템 콘텐츠 로드 중
 description: MRTK를 통해 장면 시스템을 로드하는 설명서
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: c6bc6474afd50fe265853e53c0f29009d816cf51
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: df4437a0640637328c3f8f0d78be63a492d4bba15acb8a37bdf2dd3c32d89a59
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177579"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223044"
 ---
-# <a name="scene-system-content-loading"></a>장면 시스템 콘텐츠 로드
+# <a name="scene-system-content-loading"></a>장면 시스템 콘텐츠 로드 중
 
 모든 콘텐츠 로드 작업은 비동기적이며 기본적으로 모든 콘텐츠 로드는 가산적입니다. 관리자 및 조명 장면에는 콘텐츠 로드 작업의 영향을 받지 않습니다. 부하 진행률 및 장면 활성화 모니터링에 대한 자세한 내용은 [콘텐츠 로드 모니터링을 참조하세요.](scene-system-load-progress.md)
 
@@ -49,11 +49,11 @@ await sceneSystem.LoadContent("SingleContentScene", LoadSceneMode.Single);
 
 ## <a name="next--previous-scene-loading"></a>다음/이전 장면 로드
 
-콘텐츠는 빌드 인덱스 순으로 로드될 수 있습니다. 이는 사용자가 일련의 데모 장면을 하나씩 안내하는 애플리케이션을 소개하는 데 유용합니다.
+콘텐츠는 빌드 인덱스 순서대로 로드될 수 있습니다. 이는 사용자가 일련의 데모 장면을 하나씩 안내하는 애플리케이션을 소개하는 데 유용합니다.
 
 ![플레이어 설정에서 빌드의 현재 장면](../images/scene-system/MRTK_SceneSystemBuildSettings.png)
 
-다음/prev 콘텐츠 로드는 기본적으로 LoadSceneMode.Single을 사용하여 이전 콘텐츠가 언로드되도록 합니다.
+next/prev 콘텐츠 로드는 기본적으로 LoadSceneMode.Single를 사용하여 이전 콘텐츠가 언로드되었는지 확인합니다.
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -69,7 +69,7 @@ if (prevSceneRequested && sceneSystem.PrevContentExists)
 }
 ```
 
-`PrevContentExists` 는 현재 로드된 가장 낮은 빌드 인덱스보다 낮은 빌드 인덱스 가 있는 콘텐츠 장면이 하나 이상 있는 경우 true를 반환합니다. `NextContentExists` 는 현재 로드된 가장 높은 빌드 인덱스보다 높은 빌드 인덱스 가 있는 콘텐츠 장면이 하나 이상 있는 경우 true를 반환합니다.
+`PrevContentExists` 는 현재 로드된 가장 낮은 빌드 인덱스보다 낮은 빌드 인덱스 를 가진 콘텐츠 장면이 하나 이상 있는 경우 true를 반환합니다. `NextContentExists` 는 현재 로드된 가장 높은 빌드 인덱스보다 높은 빌드 인덱스 를 가진 콘텐츠 장면이 하나 이상 있는 경우 true를 반환합니다.
 
 `wrap`인수가 true이면 콘텐츠가 첫 번째/마지막 빌드 인덱스로 다시 반복됩니다. 이렇게 하면 다음/이전 콘텐츠를 확인할 필요가 없습니다.
 
@@ -142,4 +142,4 @@ Trees | 식물 | •
 
 장면 시스템의 [서비스 검사기를](../../configuration/mixed-reality-configuration-guide.md#editor-utilities) 사용하여 편집기 및 재생 모드에서 이러한 모든 작업을 수행할 수 있습니다. 편집 모드에서는 장면 로드가 즉시 진행되지만 재생 모드에서는 로드 진행 상황을 관찰하고 [활성화 토큰을](scene-system-load-progress.md) 사용할 수 있습니다.
 
-![콘텐츠 로드가 강조 표시된 검사자의 장면 시스템](../images/scene-system/MRTK_SceneSystemServiceInspector.PNG)
+![콘텐츠 로드가 강조 표시된 검사기에서 장면 시스템](../images/scene-system/MRTK_SceneSystemServiceInspector.PNG)

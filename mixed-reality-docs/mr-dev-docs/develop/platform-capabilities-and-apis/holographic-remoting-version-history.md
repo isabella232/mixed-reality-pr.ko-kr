@@ -1,127 +1,127 @@
 ---
-title: Holographic 원격 버전 기록
-description: HoloLens 2에 대 한 Holographic Remoting 기능의 버전 기록을 최신 상태로 유지 합니다.
+title: 홀로그램 Remoting 버전 기록
+description: HoloLens 2 대한 홀로그램 Remoting 기능의 버전 기록을 최신 상태로 유지합니다.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 07/20/2021
 ms.topic: article
-keywords: HoloLens, 원격, Holographic 원격, 버전 기록, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: ec810683a556bebfe92615e9085d26bf33cf7f2c
-ms.sourcegitcommit: ebc22c5adee0e785e45fb25fade83191e920f92b
+keywords: HoloLens, Remoting, Holographic Remoting, 버전 기록, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 21ba89e477872f5dfa41468f1a7f2d7507affd681556d79843c195d7d5839e7b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114585726"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223558"
 ---
-# <a name="holographic-remoting-version-history"></a>Holographic 원격 버전 기록
+# <a name="holographic-remoting-version-history"></a>홀로그램 Remoting 버전 기록
 
 > [!IMPORTANT]
-> 이 지침은 HoloLens 2의 Holographic Remoting에만 적용 됩니다.
+> 이 지침은 HoloLens 2 Holographic Remoting과 관련이 있습니다.
 
-## <a name="version-261-july-20-2021"></a>버전 2.6.1 (7 월 20 일, 2021) <a name="v2.6.1"></a>
-* 이제 XR_MSFT_holographic_remoting_speech 확장에서는 실행 중인 세션 중에 새 매개 변수를 사용 하 여 음성 인식기를 다시 초기화할 수 있습니다.
-* 여러 연결에서 음성 인식 안정성이 감소 하는 문제를 해결 했습니다.
-* 다양 한 버그 수정 및 안정성 향상.
+## <a name="version-261-july-20-2021"></a>버전 2.6.1(2021년 7월 20일) <a name="v2.6.1"></a>
+* 이제 XR_MSFT_holographic_remoting_speech 확장을 사용하면 실행 중인 세션 중에 새 매개 변수를 통해 음성 인식기의 다시 초기화를 허용합니다.
+* 여러 연결을 통해 음성 인식 안정성이 저하되는 문제를 해결했습니다.
+* 다양한 버그 수정 및 안정성 향상.
 
-## <a name="version-260-june-10-2021"></a>버전 2.6.0 (6 월 10 일, 2021) <a name="v2.6.0"></a>
-* OpenXR API를 사용 하는 Holographic Remoting은 이제 다음을 지원 합니다.
-  * 응용 프로그램이 다양 한 언어로 사용자 지정 음성 명령을 수신할 수 있게 해 주는 새로운 XR_MSFT_holographic_remoting_speech 확장입니다.
-  * XR_MSFT_scene_understanding 확장은 응용 프로그램에 사용자 환경의 평면, 메시 및 개체에 대 한 구조화 된 상위 수준 표현을 제공 하 여 공간적으로 인식 되는 응용 프로그램을 개발할 수 있도록 합니다. 그러나 XR_SCENE_COMPUTE_CONSISTENCY_OCCLUSION_OPTIMIZED_MSFT는 xrComputeNewSceneMSFT에서 지원 되는 유일한 일관성을 유지 합니다.
-  * XR_MSFT_spatial_graph_bridge 확장-응용 프로그램에서 xrspace 핸들을 만들어 다른 Windows Mixed Reality 장치 플랫폼 라이브러리 또는 api의 공간 Graph 노드를 추적할 수 있습니다. 그러나 XR_SPATIAL_GRAPH_NODE_TYPE_STATIC_MSFT는 xrCreateSpatialGraphNodeSpaceMSFT에서 지원 되는 유일한 노드 형식입니다. 
-* 혼합 현실 API를 사용 하는 Holographic Remoting은 이제 다음을 지원 합니다.
-  * SpatialGraphInteropPreview CreateCoordinateSystemForNode 오버 로드를 사용 하 여 사용자가 환경에서 위치와 사물을 알 수 있도록 응용 프로그램에서 정적 공간 Graph 노드를 추적할 수 있습니다.
-* OpenXR 및 Mixed Reality Api를 모두 사용 하는 Holographic Remoting은 이제 다음을 지원 합니다.
-  * MixedReality SceneUnderstanding SDK를 사용 하 여 응용 프로그램이 quads, 메시 및 콘텐츠 배치 큐를 제공 하는 사용자 (예: 벽, 층 및 표면) 주위 장면에 대 한 설명을 계산할 수 있습니다.
-  * 응용 프로그램에서 검색 된 QR 코드의 위치, 크기 및 콘텐츠를 추적할 수 있도록 하는 MixedReality SDK입니다.
-* OpenXR 원격 샘플은 다음을 포함 하도록 업데이트 되었습니다. 
-  * XR_MSFT_holographic_remoting_speech 확장을 사용 하는 예입니다.
-* Mixed Reality 원격 샘플은 다음을 포함 하도록 업데이트 되었습니다.  
-  * SceneUnderstanding SDK를 사용 하는 예를 MixedReality.
-  * Microsoft. MixedReality SDK를 사용 하는 예 (이전 QR 코드 검색 메커니즘을 대체).
-* 이제 연결이 설정 되는 동안 Holographic Remoting 플레이어에서 로드 하는 애니메이션을 표시 합니다.
-* OpenXR API 런타임 및 Mixed Reality API 샘플에서 RenderDoc 호환성 문제가 해결 되었습니다.
-* 다양 한 버그 수정 및 안정성 향상.
+## <a name="version-260-june-10-2021"></a>버전 2.6.0(2021년 6월 10일) <a name="v2.6.0"></a>
+* OpenXR API를 사용하는 홀로그램 Remoting은 이제 다음을 지원합니다.
+  * 애플리케이션이 다양한 언어로 사용자 지정 음성 명령을 수신 대기할 수 있는 새로운 XR_MSFT_holographic_remoting_speech 확장입니다.
+  * XR_MSFT_scene_understanding 확장은 사용자 환경에서 평면, 메시 및 개체의 구조화되고 높은 수준의 표현을 애플리케이션에 제공하여 공간 인식 애플리케이션을 개발합니다. 그러나 xrComputeNewSceneMSFT에서 지원하는 유일한 일관성은 XR_SCENE_COMPUTE_CONSISTENCY_OCCLUSION_OPTIMIZED_MSFT 주의해야 합니다.
+  * 애플리케이션이 XrSpace 핸들을 만들어 다른 Windows Mixed Reality 디바이스 플랫폼 라이브러리 또는 API의 공간 Graph 노드를 추적할 수 있도록 하는 XR_MSFT_spatial_graph_bridge 확장입니다. 그러나 XR_SPATIAL_GRAPH_NODE_TYPE_STATIC_MSFT xrCreateSpatialGraphNodeSpaceMSFT에서 지원하는 유일한 노드 유형이라는 주의 사항이 있습니다. 
+* 이제 Mixed Reality API를 사용하는 홀로그램 Remoting에서 다음을 지원합니다.
+  * SpatialGraphInteropPreview.CreateCoordinateSystemForNode 오버로드는 애플리케이션이 정적 공간 Graph 노드를 추적하여 사용자가 환경의 장소와 사물을 추론할 수 있도록 합니다.
+* OpenXR 및 Mixed Reality API를 모두 사용하는 홀로그램 Remoting은 이제 다음을 지원합니다.
+  * Microsoft.MixedReality.SceneUnderstanding SDK를 사용하면 애플리케이션에서 쿼드, 메시 및 콘텐츠 배치 큐를 제공하는 사용자(예: 벽, 바닥 및 표면)를 둘러싼 장면에 대한 설명을 계산할 수 있습니다.
+  * Microsoft.MixedReality.QR SDK를 사용하면 애플리케이션이 검색된 QR 코드의 위치, 크기 및 콘텐츠를 추적할 수 있습니다.
+* OpenXR 원격 샘플은 다음을 포함하도록 업데이트되었습니다. 
+  * XR_MSFT_holographic_remoting_speech 확장을 사용하는 예제입니다.
+* Mixed Reality 원격 샘플은 다음을 포함하도록 업데이트되었습니다.  
+  * Microsoft.MixedReality.SceneUnderstanding SDK를 사용하는 예제입니다.
+  * 이전 QR 코드 검색 메커니즘을 대체하는 Microsoft.MixedReality.QR SDK를 사용하는 예제입니다.
+* 이제 홀로그램 Remoting 플레이어에 연결이 설정되는 동안 로드 애니메이션이 표시됩니다.
+* OpenXR API 런타임 및 Mixed Reality API 샘플 모두에서 RenderDoc 호환성 문제가 해결되었습니다.
+* 다양한 버그 수정 및 안정성 향상.
 
-## <a name="version-250-february-12-2021"></a>버전 2.5.0 (2 월 12 일, 2021) <a name="v2.5.0"></a>
-* [OPENXR API](../native/openxr.md) 를 사용 하는 Holographic Remoting은 이제 다음을 지원 합니다.
-  * XR_MSFT_spatial_anchor 확장입니다. 이 확장을 통해 응용 프로그램은 사용자의 실제 환경에서 런타임에 의해 추적 되는 임의의 freespace 지점만 공간 앵커를 만들 수 있습니다.
-  * XR_MSFT_controller_model 확장입니다. 이 확장은 컨트롤러에 대 한 지 수 TF 모델을 로드 하는 메커니즘을 제공 합니다.
-  * XR_MSFT_holographic_remoting 확장의 일부로 사용자 지정 데이터 채널 이에 대 한 예제는 [OpenXR 원격 샘플](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)에 나와 있습니다.
-* 플레이어와 원격 측 간의 동기화가 향상 되었습니다. 이를 통해 동적으로 변경 되는 포즈 및 프레임 버퍼링을 사용할 수 있습니다 .이를 통해 원격 렌더링 된 콘텐츠가 필요한 대상 프레임 속도의 디스플레이에 매끄럽게 전달 됩니다.
-* Microsoft Store를 통해 사용할 수 있는 Holographic 원격 플레이어의 성능이 개선 되었습니다. HoloLens 2 플레이어는 이제 초당 60 프레임에서 solid를 실행 합니다.
-* 원격 앱에서 [SpatialSurfaceObserver](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) 를 통해 쿼리할 수 있는 공간 노출 영역 메시의 전송 최적화.
-* SpatialAnchorManager 메서드를 호출 하거나 앵커 해제 시 예외가 발생 하는 문제를 해결 했습니다.
-* PlayerContext 또는 RemoteContext 인스턴스를 닫을 때 충돌 하는 스레딩 문제가 발생 합니다.
-* 데스크톱의 Holographic Remoting 플레이어: Windows Mixed Reality 설치 되지 않은 경우 자동으로 닫지 않고 오류 메시지를 표시 합니다.
-* 다른 많은 버그 수정 및 안정성 향상.
+## <a name="version-250-february-12-2021"></a>버전 2.5.0(2021년 2월 12일) <a name="v2.5.0"></a>
+* [OpenXR API를](../native/openxr.md) 사용하는 홀로그램 Remoting은 이제 다음을 지원합니다.
+  * 확장 XR_MSFT_spatial_anchor. 이 확장을 사용하면 애플리케이션에서 공간 앵커를 만들 수 있습니다. 이 공간 앵커는 런타임에서 추적할 사용자의 물리적 환경에서 임의의 프리스페이스 지점입니다.
+  * XR_MSFT_controller_model 확장. 이 확장은 컨트롤러에 대한 GLTF 모델을 로드하는 메커니즘을 제공합니다.
+  * XR_MSFT_holographic_remoting 확장의 일부로 사용자 지정 데이터 채널. 에 대한 예제는 [OpenXR 원격 샘플](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)에 표시됩니다.
+* 플레이어와 원격 쪽 간의 동기화가 향상되었습니다. 이렇게 하면 원격 렌더링된 콘텐츠가 예상 대상 프레임 속도로 디스플레이에 원활하게 도달할 수 있도록 하는 자세 및 프레임 버퍼링을 동적으로 변경할 수 있습니다.
+* Microsoft Store 통해 사용할 수 있는 홀로그램 Remoting 플레이어의 성능이 향상되었습니다. HoloLens 2 플레이어는 이제 초당 60프레임에서 단색으로 실행됩니다.
+* 원격 앱에서 [SpatialSurfaceObserver를](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) 통해 쿼리할 수 있는 공간 표면 메시의 최적화된 전송입니다.
+* SpatialAnchorManager 메서드를 호출하거나 앵커를 해제하면 연결이 끊어질 때 예외가 발생하는 문제가 해결되었습니다.
+* PlayerContext 또는 RemoteContext 인스턴스를 닫을 때 크래시로 이어지는 스레딩 문제가 해결되었습니다.
+* 데스크톱의 홀로그램 원격 플레이어: 자동으로 닫는 대신 Windows Mixed Reality 설치되지 않은 경우 오류 메시지를 표시합니다.
+* 기타 많은 버그 수정 및 안정성 향상.
 
-## <a name="version-241-january-22-2021"></a>버전 2.4.1 (2021 년 1 월 22 일) <a name="v2.4.1"></a>
+## <a name="version-241-january-22-2021"></a>버전 2.4.1(2021년 1월 22일) <a name="v2.4.1"></a>
 
-* 연결 하는 동안 호출 되는 경우 SpatialAnchorManager:: RequestStoreAsync가 안정적으로 작동 하지 않는 문제가 해결 되었습니다.
-* 문제의 앵커가 과정이 되지 않는 경우 SpatialAnchorManager:: Trsave가 앵커를 올바르게 저장 하지 않는 문제를 해결 했습니다.
+* 연결하는 동안 호출할 때 SpatialAnchorManager::RequestStoreAsync가 안정적으로 작동하지 않는 문제가 해결되었습니다.
+* 해당 앵커를 찾아올 수 없는 경우 SpatialAnchorManager::TrySave가 앵커를 올바르게 저장하지 않는 문제가 해결되었습니다.
 
-## <a name="version-240-december-1-2020"></a>버전 2.4.0 (2020 년 12 월 1 일) <a name="v2.4.0"></a>
+## <a name="version-240-december-1-2020"></a>버전 2.4.0(2020년 12월 1일) <a name="v2.4.0"></a>
 
-* Holographic Remoting은 이제 [OPENXR API](../native/openxr.md)를 사용 하 여 원격 앱 작성을 지원 합니다. [OpenXR api를 사용 하 여 Holographic Remoting 원격 앱 작성](holographic-remoting-create-remote-openxr.md) 을 확인 하 여 시작 하세요.
+* 홀로그램 원격은 이제 [OpenXR API를](../native/openxr.md)사용하여 원격 앱 작성을 지원합니다. [OpenXR API를 사용하여 홀로그램 원격 원격 앱 작성을](holographic-remoting-create-remote-openxr.md) 확인하여 시작하세요.
 * 버그 수정 및 안정성 향상.
 
-## <a name="version-231-october-10-2020"></a>버전 2.3.1 (2020 년 10 월 10 일) <a name="v2.3.1"></a>
+## <a name="version-231-october-10-2020"></a>버전 2.3.1(2020년 10월 10일) <a name="v2.3.1"></a>
 
-* 시각적 지터를 일으킨 원격 포즈 예측을 사용 하 여 회귀를 수정 했습니다.
-* PerceptionDeviceSetCreateFactoryOverride을 구현 하 여 Holographic Remoting과 함께 제공 되는 PerceptionDevice.dll Windows 10와 함께 제공 되는 버전을 방해 하지 않도록 합니다.
+* 시각적 지터를 발생시킨 원격 자세 예측을 사용하여 회귀를 수정했습니다.
+* Holographic Remoting과 함께 제공되는 PerceptionDevice.dll Windows 10 함께 제공되는 버전을 방해하지 않도록 하는 PerceptionDeviceSetCreateFactoryOverride가 구현되었습니다.
 
-## <a name="version-230-october-2-2020"></a>버전 2.3.0 (2020 년 10 월 2 일) <a name="v2.3.0"></a>
+## <a name="version-230-october-2-2020"></a>버전 2.3.0(2020년 10월 2일) <a name="v2.3.0"></a>
 
-* Holographic Remoting Player가 일시 중단 된 경우 발생할 수 있는 충돌 문제를 수정 했습니다.
+* 홀로그램 Remoting Player가 일시 중단될 때 발생할 수 있는 크래시 수정
 * 안정성 향상
 
-## <a name="version-223-august-28-2020"></a>버전 2.2.3 (2020 년 8 월 28 일) <a name="v2.2.3"></a>
+## <a name="version-223-august-28-2020"></a>버전 2.2.3(2020년 8월 28일) <a name="v2.2.3"></a>
 
 * 버그 수정 및 안정성 향상.
 
-## <a name="version-222-july-10-2020"></a>버전 2.2.2 (2020 년 7 월 10 일) <a name="v2.2.2"></a>
+## <a name="version-222-july-10-2020"></a>버전 2.2.2(2020년 7월 10일) <a name="v2.2.2"></a>
 
-* Windows Mixed Reality 헤드셋에서 스트리밍할 때 숨겨진 영역 메시 꼭지점이 반환 되지 않는 [HolographicCamera viewportparameters](/uwp/api/windows.graphics.holographic.holographiccamera.leftviewportparameters) 및 [HolographicCamera](/uwp/api/windows.graphics.holographic.holographiccamera.rightviewportparameters) 문제를 해결 했습니다.
-* 네트워크 연결 불량으로 인해 발생할 수 있는 충돌 문제를 해결 했습니다.
+* Windows Mixed Reality 헤드셋에서 스트리밍할 때 [HolographicCamera.LeftViewportParameters](/uwp/api/windows.graphics.holographic.holographiccamera.leftviewportparameters) 및 [HolographicCamera.RightViewportParameters가](/uwp/api/windows.graphics.holographic.holographiccamera.rightviewportparameters) 숨겨진 영역 메시 꼭짓점을 반환하지 않는 문제가 해결되었습니다.
+* 네트워크 연결이 끊어질 때 발생할 수 있는 크래시 문제가 해결되었습니다.
 
-## <a name="version-221-july-6-2020"></a>버전 2.2.1 (2020 년 7 월 6 일) <a name="v2.2.1"></a>
+## <a name="version-221-july-6-2020"></a>버전 2.2.1(2020년 7월 6일) <a name="v2.2.1"></a>
 
 > [!IMPORTANT]
-> Windows 버전 [2.2.0](holographic-remoting-version-history.md#v2.2.0) [앱 인증 키트](https://developer.microsoft.com/windows/downloads/app-certification-kit/) 유효성 검사가 실패 합니다. 버전 [2.2.0](holographic-remoting-version-history.md#v2.2.0) 를 사용할 때 응용 프로그램을 Microsoft store p 임대가 최소 버전 2.2.1로 업데이트 하려면이를 선택 합니다.
-* [Windows 앱 인증 키트](https://developer.microsoft.com/windows/downloads/app-certification-kit/) 준수 문제를 수정 했습니다.
+> [버전](https://developer.microsoft.com/windows/downloads/app-certification-kit/) [2.2.0을](holographic-remoting-version-history.md#v2.2.0) Windows 앱 인증 키트 유효성 검사가 실패합니다. 버전 [2.2.0을](holographic-remoting-version-history.md#v2.2.0) 사용 중이고 적어도 버전 2.2.1로 업데이트된 Microsoft Store p 임대에 애플리케이션을 제출하려는 경우
+* [Windows 앱 인증 키트](https://developer.microsoft.com/windows/downloads/app-certification-kit/) 준수 문제가 해결되었습니다.
 
-## <a name="version-220-july-1-2020"></a>버전 2.2.0 (2020 년 7 월 1 일) <a name="v2.2.0"></a>
+## <a name="version-220-july-1-2020"></a>버전 2.2.0(2020년 7월 1일) <a name="v2.2.0"></a>
 
-* 이제 [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md)를 실행 하는 pc에 Holographic 원격 플레이어를 설치할 수 있으므로 몰입 형 헤드셋으로 스트리밍할 수 있습니다.
-* 이제 Holographic 원격에서 [동작 컨트롤러](../../design/motion-controllers.md) 를 지원 하며 [SpatialInteractionSource](/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller)를 통해 컨트롤러 관련 데이터를 검색할 수 있습니다.
-* 이제 [SpatialStageFrameOfReference](/uwp/api/windows.perception.spatial.spatialstageframeofreference) 가 지원 되며 현재 단계는 [SpatialStageFrameOfReference](/uwp/api/windows.perception.spatial.spatialstageframeofreference.current)를 통해 검색할 수 있습니다. 또한 [SpatialStageFrameOfReference. RequestNewStageAsync](/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync)를 통해 새 단계를 요청할 수 있습니다.
-* 이전 버전에서는 Holographic Remoting 플레이어에 의해 플레이어 쪽에서 포즈 예측이 처리 되었습니다. 2.2.0 버전부터 Holographic Remoting은 시간 동기화를 수행 하 고 예측은 원격 응용 프로그램에 의해 완전히 수행 됩니다. 또한 사용자는 까다로운 네트워크 상황에서 홀로그램 안정성이 향상 되어야 합니다.
+* 이제 홀로그램 Remoting 플레이어를 [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md)실행 중인 PC에 설치하여 몰입형 헤드셋으로 스트리밍할 수 있습니다.
+* [이제 홀로그램](../../design/motion-controllers.md) Remoting에서 모션 컨트롤러를 지원하며, [SpatialInteractionSource.Controller를](/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller)통해 컨트롤러 관련 데이터를 검색할 수 있습니다.
+* [이제 SpatialStageFrameOfReference가](/uwp/api/windows.perception.spatial.spatialstageframeofreference) 지원되며 현재 스테이지는 [SpatialStageFrameOfReference.Current](/uwp/api/windows.perception.spatial.spatialstageframeofreference.current)를 통해 검색할 수 있습니다. 또한 [SpatialStageFrameOfReference.RequestNewStageAsync](/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync)를 통해 새 스테이지를 요청할 수 있습니다.
+* 이전 버전에서는 홀로그램 Remoting 플레이어가 플레이어 쪽에서 자세 예측을 처리했습니다. 버전 2.2.0부터 홀로그램 원격에 시간 동기화가 있으며 원격 애플리케이션에서 예측이 완전히 수행됩니다. 또한 사용자는 어려운 네트워크 상황에서 향상된 홀로그램 안정성을 기대해야 합니다.
 
-## <a name="version-213-may-25-2020"></a>버전 2.1.3 (5 월 25 일, 2020) <a name="v2.1.3"></a>
+## <a name="version-213-may-25-2020"></a>버전 2.1.3(2020년 5월 25일) <a name="v2.1.3"></a>
 
-* [HolographicSpace. CameraAdded](/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) 이벤트의 동작이 변경 되었습니다. 이전 버전에서는 [HolographicSpace](/uwp/api/windows.graphics.holographic.holographicspace.createnextframe)를 통해 다음 프레임을 만들 때 추가 된 [HolographicCamera](/uwp/api/windows.graphics.holographic.holographiccamera) 도 유효한 [HolographicCameraPose](/uwp/api/windows.graphics.holographic.holographiccamerapose) 를 보장 **하지** 않았습니다. 2.1.3 버전부터 [HolographicSpace CameraAdded](/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) 는 Holographic 원격 플레이어에서 제공 되는 포즈 데이터와 동기화 됩니다. 사용자는 카메라가 추가 될 때 다음 프레임에서 해당 카메라에 사용할 수 있는 유효한 [HolographicCameraPose](/uwp/api/windows.graphics.holographic.holographiccamerapose) 을 예측할 수 있습니다.
-* RemoteContext.ConfigureDepthVideoStream를 통해 깊이 버퍼 스트리밍을 사용 하지 않도록 설정 하는 데 사용할 수 있는 DepthBufferStreamResolution에 사용 **안 함** 이 추가 되었습니다. HolographicCameraRenderingParameters를 사용 하는 경우 CommitDirect3D11DepthBuffer는 *E_ILLEGAL_METHOD_CALL* 와 함께 실패 합니다 [.](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer)
-* Holographic Remoting 플레이어의 시작 화면이 다시 디자인 되었으며 이제 사용자 보기를 차단 하지 않습니다.
+* [HolographicSpace.CameraAdded 이벤트의 동작이 변경되었습니다.](/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) 이전 버전에서는 [HolographicSpace.CreateNextFrame](/uwp/api/windows.graphics.holographic.holographicspace.createnextframe)을 통해 다음 프레임을 만들 때 추가된 [HolographicCamera에도](/uwp/api/windows.graphics.holographic.holographiccamera) 유효한 [HolographicCameraPose가](/uwp/api/windows.graphics.holographic.holographiccamerapose) 있다고 **보장되지 않았습니다.** 버전 2.1.3부터 [HolographicSpace.CameraAdded는 홀로그램](/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) Remoting Player에서 오는 자세 데이터와 동기화됩니다. 사용자는 카메라가 추가되면 다음 프레임에서 해당 카메라에 사용할 수 있는 유효한 [HolographicCameraPose도](/uwp/api/windows.graphics.holographic.holographiccamerapose) 있다고 예상할 수 있습니다.
+* RemoteContext.Config ureDepthVideoStream을 통해 깊이 버퍼 스트리밍을 사용하지 않도록 설정하는 데 사용할 수 있는 DepthBufferStreamResolution에 사용 안 함이 추가되었습니다. 사용된 경우 [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer는](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) *E_ILLEGAL_METHOD_CALL* 실패합니다.
+* 홀로그램 Remoting Player의 시작 화면이 다시 디자인되었으며 이제 사용자 보기를 차단하지 않습니다.
 * 안정성 향상 및 버그 수정.
 
-## <a name="version-212-april-5-2020"></a>버전 2.1.2 (2020 4 월 5 일) <a name="v2.1.2"></a>
+## <a name="version-212-april-5-2020"></a>버전 2.1.2(2020년 4월 5일) <a name="v2.1.2"></a>
 
-* 2.1.0 보다 작은 버전을 사용 하 여 최신 Holographic 원격 플레이어와 원격 앱 간에 오디오의 이전 버전과의 호환성 문제가 해결 되었습니다.
-* Holographic 원격 플레이어를 예기치 않게 닫은 공간 고정 문제를 수정 했습니다. 이 문제는 사용자 지정 플레이어에도 영향을 줍니다.
+* 2.1.0보다 작은 버전을 사용하는 최신 홀로그램 원격 플레이어와 원격 앱 간의 오디오 이전 버전과의 호환성 문제가 해결되었습니다.
+* 홀로그램 Remoting 플레이어를 예기치 않게 닫은 공간 앵커 문제가 해결되었습니다. 이 문제는 사용자 지정 플레이어에도 영향을 미칩니다.
 
-## <a name="version-211-march-20-2020"></a>버전 2.1.1 (3 월 20 일, 2020) <a name="v2.1.1"></a>
+## <a name="version-211-march-20-2020"></a>버전 2.1.1(2020년 3월 20일) <a name="v2.1.1"></a>
 
-* AMD Gpu를 사용 하는 경우 원격 앱에 대 한 비디오 인코딩 문제를 수정 했습니다.
-* Holographic 원격 플레이어의 성능 향상.
+* AMD GPU를 사용할 때 원격 앱의 비디오 인코딩 문제가 해결되었습니다.
+* 홀로그램 Remoting Player 성능이 향상되었습니다.
 
-## <a name="version-210-march-11-2020"></a>버전 2.1.0 (2020 년 3 월 11 일) <a name="v2.1.0"></a>
+## <a name="version-210-march-11-2020"></a>버전 2.1.0(2020년 3월 11일) <a name="v2.1.0"></a>
 
-* UDP를 통해 [RTP](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) 를 사용 하도록 네트워크 전송을 전환 했습니다. 보안 연결에는 [SRTP](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) 가 사용 됩니다. [Holographic Remoting Player](holographic-remoting-player.md) 는 이전의 모든 Release Holographic 원격 버전과 여전히 호환 됩니다. 새 네트워크 전송을 활용 하려면 Holographic Remoting 플레이어와 해당 원격 앱이 버전 2.1.0을 사용 해야 합니다.
-* CommitDirect3D11DepthBuffer에 대 한 지원이 추가 되었습니다. [HolographicCameraRenderingParameters.](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) 
+* UDP를 통해 [RTP를](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) 사용하도록 네트워크 전송을 전환했습니다. 이제 보안 연결에서 [SRTP를](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) 사용합니다. [홀로그램 Remoting Player는](holographic-remoting-player.md) 이전 릴리스의 모든 Holographic Remoting 버전과 여전히 호환됩니다. 새 네트워크 전송을 활용하려면 Holographic Remoting Player와 해당 원격 앱 모두 버전 2.1.0을 사용해야 합니다.
+* [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer에](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)대한 지원이 추가되었습니다. 
 
-## <a name="version-2020-february-2-2020"></a>버전 2.0.20 이상을 (2 월 2 일, 2020) <a name="v2.0.20"></a>
+## <a name="version-2020-february-2-2020"></a>버전 2.0.20(2020년 2월 2일) <a name="v2.0.20"></a>
 
-* 충돌이 발생할 수 있는 다양 한 버그를 수정 했습니다.
+* 크래시로 이어지는 다양한 버그를 수정했습니다.
 
 ## <a name="version-2018-december-17-2019"></a>버전 2.0.18(2019년 12월 17일) <a name="v2.0.18"></a>
 
@@ -142,7 +142,7 @@ ms.locfileid: "114585726"
 
 ## <a name="version-2012-october-18-2019"></a>버전 2.0.12(2019년 10월 18일) <a name="v2.0.12"></a>
 
-* NavigationRail(X/Y/Z)을 사용할 때 SpatialGestureRecognizer의 충돌을 수정했습니다.
+* NavigationRail(X/Y/Z)을 사용할 때 SpatialGestureRecognizer의 크래시 수정
 
 ## <a name="version-2010-october-10-2019"></a>버전 2.0.10(2019년 10월 10일) <a name="v2.0.10"></a>
 

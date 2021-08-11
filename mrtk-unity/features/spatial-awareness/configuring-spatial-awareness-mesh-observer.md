@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: aba49e88d4fc555a88fe42e4b09858f1d2453ddc
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: 00a3b9afe1970239f52b1ead4f87f930c5826ba75522b99a52cf368249c9fd83
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281937"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228460"
 ---
 # <a name="configuring-mesh-observers-for-device"></a>디바이스에 대한 메시 관찰자 구성
 
@@ -49,9 +49,9 @@ ms.locfileid: "114281937"
 
 관찰자가 고정된 상태를 유지할지 아니면 사용자와 함께 이동하고 업데이트할지 여부를 나타냅니다. true이면 *관찰 익스텐트에서* 정의된 볼륨이 있는 *관찰자 도형은* 시작 시 원본에 유지됩니다. false이면 관찰자 공간은 사용자의 머리 뒤에 도형의 원점이 됩니다.
 
-고정 관찰자, *관찰자 도형** 및 *관찰 익스텐트* 속성에 정의된 대로 관찰자 공간 외부의 물리적 영역에 대해 *계산된* 메시 데이터는 없습니다.
+고정 관찰자, *관찰자 모양** 및 *관찰 익스텐트* 속성에 정의된 대로 관찰자 공간 외부의 물리적 영역에 대해 *계산된* 메시 데이터는 없습니다.
 
-**관찰자 도형**
+**관찰자 셰이프**
 
 관찰자 모양은 메시 관찰자가 메시를 관찰할 때 사용할 볼륨의 유형을 정의합니다. 지원되는 옵션은 다음과 같습니다.
 
@@ -128,7 +128,7 @@ Unity 물리학 및 RayCast 시스템과 상호 작용하기 위해 공간 메�
 
 공간 메시가 홀로그램을 가리도록 하는 데 사용할 재질을 나타냅니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [공간 인식 시스템](spatial-awareness-getting-started.md)
 * [코드를 통해 공간 인식 시스템 구성](usage-guide.md)

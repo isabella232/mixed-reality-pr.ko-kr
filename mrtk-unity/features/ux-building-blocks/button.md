@@ -5,12 +5,12 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, MRTK 단추
-ms.openlocfilehash: 16baeede2c63437e933eb1367f01af7f372cd62f
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: 7d1c141981ec402d85e1e2004739e9ab9f0ebe9da5361e4e3100b43a2b5b4129
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281857"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115229161"
 ---
 # <a name="buttons"></a>단추
 
@@ -20,7 +20,7 @@ ms.locfileid: "114281857"
 
 ## <a name="button-prefabs-in-mrtk"></a>MRTK의 단추 프리팹
 
-폴더 아래의 단추 프리팹 예제 ``MRTK/SDK/Features/UX/Interactable/Prefabs``
+폴더 아래에 있는 단추 프리팹의 예 ``MRTK/SDK/Features/UX/Interactable/Prefabs``
 
 ### <a name="unity-ui-imagegraphic-based-buttons"></a>Unity UI 이미지/그래픽 기반 단추
 
@@ -164,7 +164,7 @@ ms.locfileid: "114281857"
     :::column-end:::
 :::row-end:::
 
-`Button`(Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/Button.prefab)은 상호 [작용 가능한](interactable.md) 개념을 기반으로 하여 단추 또는 다른 유형의 대화형 화면에 대한 쉬운 UI 컨트롤을 제공합니다. 기준선 단추는 가까운 상호 작용에 대한 연속 손 입력뿐만 아니라 원거리 상호 작용에 대한 응시 + 에어 탭을 포함하여 사용 가능한 모든 입력 메서드를 지원합니다. 음성 명령을 사용하여 단추를 트리거할 수도 있습니다.
+`Button`(Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/Button.prefab)는 [상호 작용 가능한](interactable.md) 개념을 기반으로 하여 단추 또는 다른 유형의 대화형 화면에 대한 쉬운 UI 컨트롤을 제공합니다. 기준선 단추는 가까운 상호 작용에 대한 연속된 손 입력뿐만 아니라 원거리 상호 작용에 대한 응시 + 에어 탭을 포함하여 사용 가능한 모든 입력 메서드를 지원합니다. 음성 명령을 사용하여 단추를 트리거할 수도 있습니다.
 
 `PressableButtonHoloLens2`(Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2.prefab)는 직접 손 추적 입력에 대한 단추의 정확한 이동을 지원하는 HoloLens 2 셸 스타일 단추입니다. `Interactable`스크립트와 `PressableButton` 스크립트를 결합합니다.
 
@@ -380,36 +380,36 @@ MRTK 표준 셰이더는 시각적 피드백을 쉽게 추가할 수 있게 해 
 
 ### <a name="3-adding-audio-feedback-to-the-basic-cube-button"></a>3. 기본 큐브에 오디오 피드백 추가 단추
 
-`PressableButton.cs`스크립트는 TouchBegin (), TouchEnd (), ButtonPressed (), Buttonpressed ()와 같은 이벤트를 노출 하므로 오디오 피드백을 쉽게 할당할 수 있습니다. `Audio Source`큐브 개체에 Unity를 추가 하 고 PlayOneShot ()를 선택 하 여 오디오 클립을 할당 하기만 하면 됩니다. 폴더에서 MRTK_Select_Main 및 MRTK_Select_Secondary 오디오 클립을 사용할 수 있습니다 `/SDK/StandardAssets/Audio/` .
+`PressableButton.cs`스크립트는 TouchBegin (), TouchEnd (), ButtonPressed (), Buttonpressed ()와 같은 이벤트를 노출 하므로 오디오 피드백을 쉽게 할당할 수 있습니다. `Audio Source`큐브 개체에 Unity를 추가 하 고 PlayOneShot ()를 선택 하 여 오디오 클립을 할당 하기만 하면 됩니다. 폴더 아래에 MRTK_Select_Main 및 MRTK_Select_Secondary 오디오 클립을 사용할 수 `/SDK/StandardAssets/Audio/` 있습니다.
 
 <img src="../images/button/MRTK_PressableButtonCube7.png" width="450" alt="pressable button cube 7">
 
 <img src="../images/button/MRTK_PressableButtonCube6.png" width="450" alt="Pressable Button Cube 6">
 
-### <a name="4-adding-visual-states-and-handle-far-interaction-events"></a>4. 시각적 상태 추가 및 far 상호 작용 이벤트 처리
+### <a name="4-adding-visual-states-and-handle-far-interaction-events"></a>4. 시각적 상태 추가 및 원거리 상호 작용 이벤트 처리
 
-[Interactable](interactable.md) 는 다양 한 유형의 입력 상호 작용에 대 한 시각적 상태를 쉽게 만들 수 있도록 해 주는 스크립트입니다. 또한 먼 상호 작용 이벤트를 처리 합니다. `Interactable.cs`큐브 개체를 추가 하 여 **프로필** 의 **대상** 필드에 끌어다 놓습니다. 그런 다음 **ScaleOffsetColorTheme** 형식으로 새 테마를 만듭니다. 이 테마에서 **포커스** 및 **눌린** 특정 상호 작용 상태에 대 한 개체의 색을 지정할 수 있습니다. 크기 조정 및 오프셋도 제어할 수 있습니다. **감속/가속** 을 선택 하 고 시각적 전환을 매끄럽게 하기 위해 기간을 설정 합니다.
+[Interactable은](interactable.md) 다양한 유형의 입력 상호 작용에 대한 시각적 상태를 쉽게 만들 수 있게 해주는 스크립트입니다. 또한 원거리 상호 작용 이벤트를 처리합니다. `Interactable.cs`큐브 개체를 프로필 아래의 **대상** 필드에 추가하고 **끌어서 놓습니다.** 그런 다음 **ScaleOffsetColorTheme** 형식으로 새 테마를 만듭니다. 이 테마 아래에서 **포커스** 및 누른 와 같은 특정 상호 작용 상태에 대한 개체의 **색을** 지정할 수 있습니다. 크기 조정 및 오프셋도 제어할 수 있습니다. **감속/가속을** 확인하고 기간을 설정하여 시각적 전환을 원활하게 만듭니다.
 
 ![프로필 테마 선택](../images/button/mrtk_button_profiles.gif)
 
-개체가 far (손 모양 또는 응시 커서)와 근거리 (손) 상호 작용에 응답 하는 것을 볼 수 있습니다.
+개체가 원거리(손 광선 또는 응시 커서)와 가까운(손) 상호 작용 모두에 응답하는 것을 볼 수 있습니다.
 
 <img src="../images/button/MRTK_PressableButtonCubeRun3.jpg" alt="Pressable Button Cube Run 3">
 <img src="../images/button/MRTK_PressableButtonCubeRun4.jpg" alt="Pressable Button Cube Run 4">
 
 ## <a name="custom-button-examples"></a>사용자 지정 단추 예제
 
-[HandInteractionExample 장면](../example-scenes/hand-interaction-examples.md)에서를 사용 하는 피아노 및 round 단추 예를 참조 하세요 `PressableButton` .
+[HandInteractionExample 장면](../example-scenes/hand-interaction-examples.md)에서 둘 다 을 사용하는 코와 둥근 단추 예제를 `PressableButton` 참조하세요.
 
 <img src="../images/button/MRTK_Button_Custom1.png" width="450" alt="Pressable Custom1">
 
 <img src="../images/button/MRTK_Button_Custom2.png" width="450" alt="Pressable Custom2">
 
-각 피아노 키에는 `PressableButton` 및 `NearInteractionTouchable` 스크립트가 할당 되어 있습니다. 의 *로컬 정방향* 방향이 올바른지 확인 하는 것이 중요 `NearInteractionTouchable` 합니다. 편집기에서 흰색 화살표로 표시 됩니다. 화살표가 단추의 정면 면을 가리키는지 확인 합니다.
+각 스크립팅 키에는 `PressableButton` 및 `NearInteractionTouchable` 스크립트가 할당되어 있습니다. 의 *로컬 앞으로* 방향이 올바른지 확인하는 `NearInteractionTouchable` 것이 중요합니다. 편집기에서 흰색 화살표로 표시됩니다. 화살표가 단추의 앞면을 가리키는지 확인합니다.
 
 <img src="../images/button/MRTK_Button_Custom3.png" width="450" alt="Pressable Custom3">
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [상호 작용 가능](interactable.md)
 * [시각적 테마](visual-themes.md)

@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed reality, 스타일, 디자인, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, 규모, holograms
-ms.openlocfilehash: 12b1c96146f76274831c9bc3427cef93bb326f70
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, 스타일, 디자인, 혼합 현실 헤드셋, Windows Mixed Reality 헤드셋, 가상 현실 헤드셋, HoloLens, 규모, holograms
+ms.openlocfilehash: 0b643b7f4b53795afa6bac9b54e55565233ac1d96a6a58d5389a8a4b7db8d7cc
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583313"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223014"
 ---
 # <a name="scale"></a>확장
 
@@ -23,7 +23,7 @@ ms.locfileid: "98583313"
 
 ## <a name="how-to-suggest-the-scale-of-objects-and-environments"></a>개체 및 환경의 규모를 제안 하는 방법
 
-개체의 눈금을 제안 하는 방법에는 여러 가지가 있으며, 그 중 일부는 다른 가시 요소에 영향을 미칠 수 있습니다. 중요 한 것은 개체를 ' 실제 ' 크기로 표시 하 고 사용자가 이동할 때 현실적인 크기를 유지 관리 하는 것입니다. Holograms는 실제 개체가 수행 하는 것과 동일한 방식으로 사용자의 사용자의 시각적 각도를 더 가까이 또는 더 멀리 갈 때 사용 합니다.
+개체의 눈금을 제안 하는 방법에는 여러 가지가 있으며, 그 중 일부는 다른 가시 요소에 영향을 미칠 수 있습니다. 중요 한 것은 개체를 ' 실제 ' 크기로 표시 하 고 사용자가 이동할 때 현실적인 크기를 유지 관리 하는 것입니다. 홀로그램스은 실제 개체와 동일한 방식으로 사용자의 사용자의 시각적 각도를 더 가까이 또는 더 멀리 떨어져 있는 것과 동일 하 게 사용 합니다.
 
 ### <a name="use-the-distance-of-objects-as-theyre-presented-to-the-user"></a>사용자에 게 표시 되는 개체의 거리를 사용 합니다.
 
@@ -33,10 +33,10 @@ ms.locfileid: "98583313"
     :::column:::
         **[Volvo는이 기술을 사용](https://www.youtube.com/watch?v=DilzwF90vec)** 하 여 사용자에 게 실제적이 고 직관적인 방식으로 holographic car의 규모를 사용 하 여 새 자동차에 대 한 showroom 환경을 만듭니다. 이 환경은 실제 테이블에서 자동차가 시작 되며 사용자가 모델의 전체 크기와 모양을 이해할 수 있습니다. 환경에서 나중에 자동차는 장치의 보기 필드 크기 보다 큰 규모로 확장 됩니다. 사용자가 더 작은 모델에서 참조 프레임을 이미 확보 했으므로 자동차의 기능을 적절 하 게 탐색할 수 있습니다.<br>
         <br>
-        *이미지: HoloLens 용 Volvo 자동차 환경*
+        *이미지: HoloLens에 대 한 Volvo 자동차 환경*
     :::column-end:::
         :::column:::
-       ![HoloLens 용 Volvo 자동차 환경](images/volvo-cars-microsoft-hololens-experience01-640px.jpg)<br>
+       ![HoloLens에 대 한 Volvo 자동차 환경](images/volvo-cars-microsoft-hololens-experience01-640px.jpg)<br>
     :::column-end:::
 :::row-end:::
 
@@ -51,12 +51,12 @@ ms.locfileid: "98583313"
 
 :::row:::
     :::column:::
-        Minecraft는 유사한 기법을 사용 하 여 **[개념 환경을 개발](https://minecraft.net/)** 했습니다. 실제 표면에 가상 창을 추가 하면 방에 있는 기존 개체가 실내의 물리적인 크기 제한을 초과 하는 매우 큰 환경의 컨텍스트에 배치 됩니다.<br>
+        Minecraft는 비슷한 기술을 사용 하 여 **[개념 환경을 개발](https://minecraft.net/)** 했습니다. 실제 표면에 가상 창을 추가 하면 방에 있는 기존 개체가 실내의 물리적인 크기 제한을 초과 하는 매우 큰 환경의 컨텍스트에 배치 됩니다.<br>
         <br>
-        *이미지: HoloLens의 Minecraft 개념 환경*
+        *이미지: HoloLens에 대 한 Minecraft 개념 환경*
     :::column-end:::
         :::column:::
-       ![HoloLens를 위한 Minecraft 개념 환경](images/800px-minecraftwindow-640px.jpg)<br><br>
+       ![HoloLens에 대 한 Minecraft 개념 환경](images/800px-minecraftwindow-640px.jpg)<br><br>
     :::column-end:::
 :::row-end:::
 
@@ -80,7 +80,7 @@ ms.locfileid: "98583313"
 
 ---
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 * [색, 광원 및 재질](./color-light-and-materials.md)
 * [입력 체계](typography.md)
 * [공간 음향 디자인](spatial-sound-design.md)

@@ -4,70 +4,70 @@ description: InteractiveElement MRTK 설명서
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 02/22/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 대화형 요소, Interactable
-ms.openlocfilehash: 65f518c53414d68d3a9d2093cb427140cc65560b
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, Interactive 요소, Interactable
+ms.openlocfilehash: 6d8f36c4780844e991eb32943645402503fab8340c6843dbb607f1c11033d912
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144760"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220605"
 ---
 # <a name="interactive-element-experimental"></a>Interactive 요소 [실험적]
 
-MRTK 입력 시스템에 대 한 단순화 된 중앙 진입점입니다. 상태 관리 방법, 이벤트 관리 및 핵심 상호 작용 상태의 상태 설정 논리가 포함 됩니다.
+MRTK 입력 시스템에 대한 간소화된 중앙 집중식 진입점입니다. 핵심 상호 작용 상태에 대한 상태 관리 메서드, 이벤트 관리 및 상태 설정 논리를 포함합니다.
 
-Interactive 요소는 unity 2019.3: [Serialize 참조](https://docs.unity3d.com/ScriptReference/SerializeReference.html)의 새로운 기능을 활용 하므로 unity 2019.3에서 지원 되는 실험적 기능입니다.
+Interactive Element는 Unity 2019.3에 새로 추가된 기능인 [Serialize Reference를](https://docs.unity3d.com/ScriptReference/SerializeReference.html)활용하기 때문에 Unity 2019.3 이상에서 지원되는 실험적 기능입니다.
 
-### <a name="interactive-element-inspector"></a>대화형 요소 검사기
+### <a name="interactive-element-inspector"></a>Interactive 요소 검사기
 
-재생 모드에서 대화형 요소 검사기는 현재 상태가 활성 상태 인지 여부를 나타내는 시각적 피드백을 제공 합니다. 활성 상태 이면 사이안 색으로 강조 표시 됩니다.  상태가 활성이 아니면 색은 변경 되지 않습니다. 검사기의 상태 옆에 있는 숫자는 상태 값입니다. 상태가 활성 이면 값은 1이 고, 상태가 활성이 아니면 값은 0입니다.
+재생 모드 중에 Interactive 요소 검사기는 현재 상태가 활성 상태인지 여부를 나타내는 시각적 피드백을 제공합니다. 상태가 활성 상태이면 진한색으로 강조 표시됩니다.  상태가 활성 상태가 아닌 경우 색이 변경되지 않습니다. 검사기에서 상태 옆에 있는 숫자는 상태 값입니다. 상태가 활성 상태이면 값은 1이고, 상태가 활성 상태가 아닌 경우 값은 0입니다.
 
-![가상 손을 상호 작용 하는 대화형 요소](../images/interactive-element/InEditor/Gifs/InspectorHighlightEditor.gif)
+![가상 손 상호 작용이 있는 대화형 요소](../images/interactive-element/InEditor/Gifs/InspectorHighlightEditor.gif)
 
-## <a name="core-states"></a>코어 상태
+## <a name="core-states"></a>핵심 상태
 
-Interactive 요소는 핵심 상태를 포함 하 고 [사용자 지정 상태](#custom-states)를 추가할 수 있도록 지원 합니다.  핵심 상태는에 정의 된 상태 설정 논리가 이미 있는 상태입니다 `BaseInteractiveElement` . 다음은 현재 입력 기반 코어 상태의 목록입니다. 
+Interactive 요소는 핵심 상태를 포함하며 [사용자 지정 상태](#custom-states)추가를 지원합니다.  핵심 상태는 에 정의된 상태 설정 논리가 이미 있는 `BaseInteractiveElement` 상태입니다. 다음은 현재 입력 기반 코어 상태의 목록입니다. 
 
-### <a name="current-core-states"></a>현재 코어 상태
+### <a name="current-core-states"></a>현재 핵심 상태
 
-- [기본](#default-state) 
+- [기본값](#default-state) 
 
-근거리 및 원거리 상호 작용 핵심 상태:
+근 및 원거리 상호 작용 핵심 상태:
 - [포커스](#focus-state) 
 
-거의 상호 작용 코어 상태:
+근 상호 작용 핵심 상태:
 
-- [가까이에 집중](#focus-near-state)
+- [포커스 가까이](#focus-near-state)
 - [터치](#touch-state)
 
-Far 상호 작용 코어 상태:
-- [지금 포커스](#focus-far-state)
-- [지금 선택](#select-far-state)
+원거리 상호 작용 핵심 상태:
+- [멀리 포커스](#focus-far-state)
+- [멀리 선택](#select-far-state)
 
 기타 핵심 상태:
 - [클릭됨](#clicked-state)
-- [설정 및 해제](#toggle-on-and-toggle-off-state)
-- [Speech 키워드](#speech-keyword-state)
+- [켜기 및 토글 끄기](#toggle-on-and-toggle-off-state)
+- [음성 키워드](#speech-keyword-state)
 
-### <a name="how-to-add-a-core-state-via-inspector"></a>Inspector를 통해 핵심 상태를 추가 하는 방법
+### <a name="how-to-add-a-core-state-via-inspector"></a>검사기를 통해 코어 상태를 추가하는 방법
 
-1. 대화형 요소에 대 한 검사기에서 **코어 상태 추가** 로 이동 합니다.
+1. Interactive 요소에 대한 검사기에서 **코어 상태 추가로** 이동합니다.
 
-    ![검사기를 통해 핵심 상태 추가](../images/interactive-element/InEditor/InteractiveElementAddCoreState.png)
-
-
-1. **상태 선택** 단추를 선택 하 여 추가할 핵심 상태를 선택 합니다. 메뉴의 상태는 상호 작용 유형별로 정렬 됩니다.
-
-    ![상태가 선택 된 검사기를 통해 코어 상태 추가](../images/interactive-element/InEditor/InteractiveElementAddCoreStateSelectState.png)
-
-1. 이벤트 구성 foldout을 열고 상태와 연결 된 이벤트와 속성을 확인 합니다.
-
-    ![이벤트 구성을 사용 하 여 검사기를 통해 핵심 상태 추가](../images/interactive-element/InEditor/InteractiveElementAddCoreStateSelectStateEventConfig.png)
+    ![검사기에서 핵심 상태 추가](../images/interactive-element/InEditor/InteractiveElementAddCoreState.png)
 
 
-### <a name="how-to-add-a-core-state-via-script"></a>스크립트를 통해 핵심 상태를 추가 하는 방법
+1. 상태 **선택** 단추를 선택하여 추가할 코어 상태를 선택합니다. 메뉴의 상태는 상호 작용 유형별로 정렬됩니다.
 
-메서드를 사용 `AddNewState(stateName)` 하 여 코어 상태를 추가 합니다. 사용 가능한 핵심 상태 이름 목록은 열거형을 사용 합니다 `CoreInteractionState` .
+    ![상태가 선택된 검사기 를 통해 코어 상태 추가](../images/interactive-element/InEditor/InteractiveElementAddCoreStateSelectState.png)
+
+1. 이벤트 구성 폴딩을 열어 상태와 연결된 이벤트 및 속성을 확인합니다.
+
+    ![이벤트 구성을 통해 검사기 통해 코어 상태 추가](../images/interactive-element/InEditor/InteractiveElementAddCoreStateSelectStateEventConfig.png)
+
+
+### <a name="how-to-add-a-core-state-via-script"></a>스크립트를 통해 코어 상태를 추가하는 방법
+
+메서드를 사용하여 `AddNewState(stateName)` 코어 상태를 추가합니다. 사용 가능한 코어 상태 이름 목록은 `CoreInteractionState` 열거형을 사용합니다.
 
 ```c#
 // Add by name or add by CoreInteractionState enum to string
@@ -79,14 +79,14 @@ interactiveElement.AddNewState(CoreInteractionState.SelectFar.ToString());
 
 ### <a name="states-internal-structure"></a>상태 내부 구조 
 
-대화형 요소의 상태는 형식입니다 `InteractionState` .  에는 `InteractionState` 다음 속성이 포함 되어 있습니다.
+Interactive 요소의 상태는 `InteractionState` 형식입니다.  `InteractionState`에는 다음 속성이 포함됩니다.
 
 - **이름:** 상태의 이름입니다.
 - **값:** 상태 값입니다.  상태가 켜진 경우 상태 값은 1입니다. 상태가 꺼져 있으면 상태 값은 0입니다.
-- **활성:** 상태가 현재 활성 상태인지 여부입니다. 활성 속성의 값은 상태가 켜지면 true이고, 상태가 해제되어 있으면 false입니다. 
-- **상호 작용 유형:** 상태의 상호 작용 형식은 상태가 의도된 상호 작용의 형식입니다. 
+- **활성:** 상태가 현재 활성 상태인지 여부입니다. 활성 속성의 값은 상태가 켜진 경우 true이고, 상태가 해제되어 있으면 false입니다. 
+- **상호 작용 형식:** 상태의 상호 작용 형식은 상태가 의도된 상호 작용 유형입니다. 
   - `None`: 어떤 형식의 입력 상호 작용도 지원하지 않습니다.
-  - `Near`: 근접 상호 작용 지원. 입력은 굴절된 손에서 다른 게임 개체와 직접 연결되는 경우( 즉, 굴절된 손의 위치가 세계 공간에서 게임 개체의 위치와 가까운 경우) 근거리 상호 작용으로 간주됩니다.
+  - `Near`: 근접 상호 작용 지원. 입력은 굴절된 손이 다른 게임 개체와 직접 연결되는 경우( 즉, 굴절된 손의 위치가 세계 공간에서 게임 개체의 위치와 가까운 경우) 근거리 상호 작용으로 간주됩니다.
   - `Far`: 원거리 상호 작용 지원. 입력은 게임 개체와의 직접 연락이 필요하지 않은 경우 원거리 상호 작용으로 간주됩니다. 예를 들어 컨트롤러 광선 또는 응시를 통한 입력은 원거리 상호 작용 입력으로 간주됩니다.
   - `NearAndFar`: 가까운 상호 작용 및 원거리 상호 작용 지원을 모두 포함합니다. 
   - `Other`: 포인터 독립적 상호 작용 지원.
@@ -119,9 +119,9 @@ interactiveElement.AddNewState("StateName");
 interactiveElement.RemoveState("StateName");
 ```
 
-상태의 이벤트 구성을 얻는 것은 상태 자체에 따라 다릅니다. 각 코어 상태에는 각 핵심 상태를 설명 하는 섹션 아래에 설명 된 특정 이벤트 구성 유형이 있습니다.
+상태의 이벤트 구성을 얻는 것은 상태 자체에 따라 다릅니다. 각 코어 상태에는 각 코어 상태를 설명하는 섹션 아래에 설명된 특정 이벤트 구성 유형이 있습니다.
 
-다음은 상태 이벤트 구성을 가져오는 일반적인 예입니다.
+다음은 상태의 이벤트 구성을 얻는 일반화된 예제입니다.
 
 ```c#
 // T varies depending on the core state - the specific T's are specified under each of the core state sections
@@ -130,13 +130,13 @@ T stateNameEvents = interactiveElement.GetStateEvents<T>("StateName");
 
 ### <a name="default-state"></a>기본 상태
 
-기본 상태는 항상 대화형 요소에 표시 됩니다.  이 상태는 다른 모든 상태가 활성 상태가 아닌 경우에만 활성화 됩니다.  다른 상태가 활성 상태가 되 면 기본 상태는 내부적으로 off로 설정 됩니다. 
+기본 상태는 항상 대화형 요소에 있습니다.  이 상태는 다른 모든 상태가 활성 상태가 아닌 경우에만 활성화됩니다.  다른 상태가 활성화되면 기본 상태가 내부적으로 off로 설정됩니다. 
 
-대화형 요소는 상태 목록에 있는 기본 및 포커스 상태를 사용 하 여 초기화 됩니다. 기본 상태는 항상 상태 목록에 있어야 합니다. 
+대화형 요소는 상태 목록에 있는 기본 및 포커스 상태로 초기화됩니다. 기본 상태는 항상 상태 목록에 있어야 합니다. 
 
-#### <a name="getting-default-state-events"></a>기본 상태 이벤트 가져오기
+#### <a name="getting-default-state-events"></a>기본 상태 이벤트 받기
 
-기본 상태에 대 한 이벤트 구성 유형입니다. `StateEvents`
+기본 상태에 대한 이벤트 구성 유형: `StateEvents`
 
 ```c#
 StateEvents defaultEvents = interactiveElement.GetStateEvents<StateEvents>("Default");
@@ -154,17 +154,17 @@ defaultEvents.OnStateOff.AddListener(() =>
 
 ### <a name="focus-state"></a>포커스 상태
 
-포커스 상태는 커서와 동등한 혼합 현실로 간주할 수 있는 근거리 및 원거리 상호 작용 상태입니다. 포커스 상태에 대 한 근거리 및 원거리 상호 작용 사이의 구별 요소는 현재 활성 포인터 형식입니다.  포커스 상태에 대 한 포인터 형식이 Poke 포인터인 경우 상호 작용은 거의 상호 작용 하는 것으로 간주 됩니다.  기본 포인터가 Poke 포인터가 아닌 경우 상호 작용으로 인 한 것으로 간주 됩니다. 포커스 상태는 기본적으로 대화형 요소에 표시 됩니다.
+포커스 상태는 가리키기와 동일한 혼합 현실로 간주될 수 있는 근사하고 먼 상호 작용 상태입니다. 포커스 상태에 대한 근사 상호 작용과 원거리 상호 작용 간의 구분 요소는 현재 활성 포인터 형식입니다.  Focus 상태의 포인터 형식이 Pointer Pointer이면 상호 작용이 가까운 상호 작용으로 간주됩니다.  기본 포인터가 Pointer 포인터가 아닌 경우 상호 작용은 원거리 상호 작용으로 간주됩니다. Focus 상태는 기본적으로 Interactive Element에 있습니다.
 
 **포커스 상태 동작** 
- ![ 가상 손 상호 작용을 사용 하는 포커스 상태](../images/interactive-element/InEditor/Gifs/FocusStateEditor.gif) 
+ ![ 가상 손 상호 작용을 통해 포커스 상태](../images/interactive-element/InEditor/Gifs/FocusStateEditor.gif) 
 
 **포커스 상태 검사기** 
  ![ Inpsector의 포커스 상태](../images/interactive-element/InEditor/FocusStateInspector.png)
 
-#### <a name="getting-focus-state-events&quot;></a>포커스 상태 이벤트 가져오기
+#### <a name="getting-focus-state-events&quot;></a>포커스 상태 이벤트 받기
 
-포커스 상태의 이벤트 구성 유형입니다. `FocusEvents`
+포커스 상태에 대한 이벤트 구성 유형: `FocusEvents`
 
 ```c#
 FocusEvents focusEvents = interactiveElement.GetStateEvents<FocusEvents>(&quot;Focus");
@@ -180,19 +180,19 @@ focusEvents.OnFocusOff.AddListener((pointerEventData) =>
 });
 ```
 
-#### <a name="focus-near-vs-focus-far-behavior"></a>가까이에 포커스를 이동 합니다. 
+#### <a name="focus-near-vs-focus-far-behavior"></a>포커스 가까이 및 포커스 원거리 동작 
 
 ![가상 손 상호 작용을 통해 가까운 정도의 포커스](../images/interactive-element/InEditor/Gifs/FocusNearFocusFar.gif)
 
 ### <a name="focus-near-state"></a>포커스 근 상태
 
-포커스 이벤트가 발생할 때 포커스 근사 상태가 설정되고 주 포인터가 Near 상호 작용을 나타내는 표시인 표시인 경우 Focus Near 상태가 설정됩니다. 
+Focus Near 상태는 포커스 이벤트가 발생할 때 설정되고 기본 포인터는 근사 상호 작용을 나타내는 은(는) Pointer 포인터입니다. 
 
-**포커스 근 상태 동작** 
+**상태 근처 포커스 동작** 
  ![ 가상 손 상호 작용을 통해 상태 가까이에 포커스](../images/interactive-element/InEditor/Gifs/FocusNearStateEditor.gif) 
 
-**상태 검사기** 
- ![ 근처 포커스 검사기에서 구성 요소 근처에 포커스](../images/interactive-element/InEditor/FocusNearStateInspector.png)
+**포커스 근 상태 검사기** 
+ ![ 검사기에서 구성 요소 근처에 포커스](../images/interactive-element/InEditor/FocusNearStateInspector.png)
 
 #### <a name="getting-focusnear-state-events&quot;></a>FocusNear 상태 이벤트 받기
 
@@ -217,7 +217,7 @@ focusNearEvents.OnFocusOff.AddListener((pointerEventData) =>
 포커스 원거리 상태는 기본 포인터가 Pointer 포인터가 아닌 경우 설정됩니다.  예를 들어 기본 컨트롤러 광선 포인터 및 GGV(응시, 제스처, 음성) 포인터는 원거리 상호 작용 포인터로 간주됩니다.
 
 **포커스 원거리 상태 동작** 
- ![ 가상 손 조작을 통해 멀리 떨어진 포커스 상태](../images/interactive-element/InEditor/Gifs/FocusFarStateEditor.gif)
+ ![ 가상 손 상호 작용을 통해 멀리 떨어진 포커스 상태](../images/interactive-element/InEditor/Gifs/FocusFarStateEditor.gif)
 
 **포커스 원거리 상태 검사기** 
  ![ 검사기에서 멀리 떨어진 포커스 구성 요소](../images/interactive-element/InEditor/FocusFarStateInspector.png)
@@ -242,17 +242,17 @@ focusFarEvents.OnFocusOff.AddListener((pointerEventData) =>
 
 ### <a name="touch-state"></a>터치 상태
 
-터치 상태는 굴절된 손에서 개체를 직접 터치할 때 설정되는 거의 상호 작용 상태입니다.  직접 터치는 굴절된 손의 인덱스 손가락이 개체의 세계 위치에 매우 가까이 있음을 의미합니다. 기본적으로 Touch `NearInteractionTouchableVolume` 상태가 상태 목록에 추가되면 구성 요소가 개체에 연결됩니다.  터치 이벤트를  `NearInteractionTouchableVolume` 검색하려면 또는 `NearInteractionTouchable` 구성 요소가 필요합니다.  와 의 차이점은 `NearInteractionTouchableVolume` `NearInteractionTouchable` 는 `NearInteractionTouchableVolume` 개체의 충돌체를 기반으로 터치를 `NearInteractionTouchable` 감지하고 평면의 정의된 영역 내에서 터치를 감지한다는 것입니다.
+터치 상태는 근접 하 게 개체를 직접 접촉 하는 경우에 설정 되는 근접 한 상호 작용 상태입니다.  직접 터치는 트레일러의 인덱스 손가락이 개체의 세계 위치와 매우 근접해 있음을 의미 합니다. `NearInteractionTouchableVolume`터치 상태가 상태 목록에 추가 되는 경우 기본적으로 구성 요소는 개체에 연결 됩니다.  `NearInteractionTouchableVolume` `NearInteractionTouchable` 터치 이벤트를 검색 하려면 또는 구성 요소가 있어야 합니다.  와의 차이점 `NearInteractionTouchableVolume` 은 `NearInteractionTouchable` `NearInteractionTouchableVolume` 개체의 collider을 기반으로 터치를 검색 하 고 `NearInteractionTouchable` 평면의 정의 된 영역 내에서 터치를 검색 한다는 것입니다.
 
 **터치 상태 동작** 
- ![ 가상 손 조작을 통해 터치 상태](../images/interactive-element/InEditor/Gifs/TouchStateEditor.gif)
+ ![ 가상 손 상호 작용이 포함 된 터치 상태](../images/interactive-element/InEditor/Gifs/TouchStateEditor.gif)
 
 **터치 상태 검사기** 
- ![ 검사기에서 터치 상태 구성 요소](../images/interactive-element/InEditor/TouchStateInspector.png)
+ ![ 검사기의 Touch state 구성 요소](../images/interactive-element/InEditor/TouchStateInspector.png)
 
-#### <a name="getting-touch-state-events&quot;></a>터치 상태 이벤트 받기
+#### <a name="getting-touch-state-events&quot;></a>터치 상태 이벤트 가져오기
 
-터치 상태에 대한 이벤트 구성 유형: `TouchEvents`
+터치 상태의 이벤트 구성 유형입니다. `TouchEvents`
 
 ```c#
 TouchEvents touchEvents = interactiveElement.GetStateEvents<TouchEvents>(&quot;Touch");
@@ -273,19 +273,19 @@ touchEvents.OnTouchUpdated.AddListener((touchData) =>
 });
 ```
 
-### <a name="select-far-state"></a>원거리 상태 선택
+### <a name="select-far-state"></a>Far 상태 선택
 
-원거리 선택 상태가 `IMixedRealityPointerHandler` 표시되어 있습니다.  이 상태는 원거리 상호 작용 클릭(에어 탭)을 감지하고 기본 컨트롤러 광선 포인터 또는 GGV 포인터와 같은 원거리 상호 작용 포인터를 사용하는 원거리 상호 작용 상태입니다.  원거리 선택 상태에는 라는 이벤트 구성 폴딩 아래에 옵션이 `Global` 있습니다. `Global`가 true이면 `IMixedRealityPointerHandler` 이 전역 입력 처리기로 등록됩니다.  처리기가 전역으로 등록된 경우 입력 시스템 이벤트를 트리거하기 위해 개체에 집중할 필요가 없습니다.  예를 들어 사용자가 포커스에 있는 개체에 관계없이 에어 탭/선택 제스처가 수행될 때마다 알고 싶은 경우 `Global` 를 true로 설정합니다. 
+Select Far 상태는 표시 되는 `IMixedRealityPointerHandler` 입니다.  이 상태는 멀리 떨어져 있는 클릭 (공중 탭)을 검색 하 고 기본 컨트롤러 광선 포인터 또는 GGV 포인터와 같은 원거리 상호 작용 포인터를 사용 하 여 유지 하는 원거리 상호 작용 상태입니다.  Select Far 상태에는 이벤트 구성 foldout 이라는 옵션이 `Global` 있습니다. `Global`이 true 이면가 `IMixedRealityPointerHandler` 전역 입력 처리기로 등록 됩니다.  처리기가 global로 등록 된 경우에는 개체에 포커스를 두고 입력 시스템 이벤트를 트리거할 필요가 없습니다.  예를 들어, 사용자가 포커스에 있는 개체에 관계 없이 공중 탭/선택 제스처를 수행 해야 하는 경우를 `Global` true로 설정 합니다. 
 
-**원거리 상태 동작** 
- ![ 선택 가상 손 조작을 통해 멀리 선택](../images/interactive-element/InEditor/Gifs/SelectFarStateEditor.gif)
+**Far 상태 동작 선택** 
+ ![ 가상 핸드 상호 작용을 사용 하 여 지금 선택](../images/interactive-element/InEditor/Gifs/SelectFarStateEditor.gif)
 
-**원거리 상태 검사기** 
- ![ 선택 검사기에서 원거리 구성 요소 선택](../images/interactive-element/InEditor/SelectFarStateInspector.png)
+**Far 상태 검사기 선택** 
+ ![ 검사기에서 far 구성 요소 선택](../images/interactive-element/InEditor/SelectFarStateInspector.png)
 
-#### <a name="getting-select-far-state-events&quot;></a>원거리 상태 이벤트 선택
+#### <a name="getting-select-far-state-events&quot;></a>선택 Far 상태 이벤트 가져오기
 
-SelectFar 상태에 대한 이벤트 구성 유형: `SelectFarEvents`
+SelectFar 상태의 이벤트 구성 유형입니다. `SelectFarEvents`
 
 ```c#
 SelectFarEvents selectFarEvents = interactiveElement.GetStateEvents<SelectFarEvents>(&quot;SelectFar");
@@ -311,15 +311,15 @@ selectFarEvents.OnSelectClicked.AddListener((pointerEventData) =>
 });
 ```
 
-### <a name="clicked-state"></a>클릭된 상태
+### <a name="clicked-state"></a>클릭 한 상태
 
-클릭 상태는 기본적으로 원거리 상호 작용 클릭(원거리 상태 선택)에 의해 트리거됩니다.  이 상태는 내부적으로 켜기로 전환되고 OnClicked 이벤트를 호출한 다음 즉시 꺼져 있습니다. 
+클릭 된 상태는 멀리 떨어져 있는 클릭 (Far 상태 선택)에 의해 트리거됩니다.  이 상태는 내부적으로 on으로 전환 되 고, OnClicked 이벤트를 호출 하 고, 즉시 off로 전환 됩니다. 
 
 > [!NOTE]
-> 상태 활동을 기반으로 하는 검사기에서 시각적 피드백이 켜진 후 즉시 꺼져 있으므로 Clicked 상태에 대한 시각적 피드백이 없습니다. 
+> 상태 작업을 기반으로 하는 검사기의 시각적 피드백은 전환 된 후 즉시 해제 되기 때문에 클릭 된 상태에 대해 존재 하지 않습니다. 
 
-**클릭된 상태 동작** 
- ![ 가상 손 상호 작용을 통해 클릭된 상태](../images/interactive-element/InEditor/Gifs/ClickedStateEditor.gif)
+**클릭 상태 동작** 
+ ![ 가상 손 상호 작용을 사용 하 여 클릭 한 상태](../images/interactive-element/InEditor/Gifs/ClickedStateEditor.gif)
 
 **상태 검사기 클릭** 
  ![ 검사기에서 state component를 클릭 합니다.](../images/interactive-element/InEditor/ClickedStateInspector.png)
@@ -360,7 +360,7 @@ clickedEvent.OnClicked.AddListener(() =>
 #### <a name="getting-toggle-on-and-toggle-off-state-events&quot;></a>설정/해제 상태 이벤트 설정 및 해제
 
 ToggleOn 상태에 대 한 이벤트 구성 유형입니다. `ToggleOnEvents`  
-ToggleOff 상태에 대한 이벤트 구성 유형: `ToggleOffEvents`
+ToggleOff 상태에 대 한 이벤트 구성 유형입니다. `ToggleOffEvents`
 
 ```c#
 // Toggle On Events
@@ -380,40 +380,40 @@ toggleOffEvent.OnToggleOff.AddListener(() =>
 });
 ```
 
-### <a name="speech-keyword-state"></a>음성 키워드 상태
+### <a name="speech-keyword-state"></a>Speech 키워드 상태
 
-Speech 키워드 상태는 Mixed Reality Speech Profile에 정의된 키워드를 수신 대기합니다. 모든 새 키워드는 런타임 전에 음성 명령 프로필에 등록해야 합니다(아래 단계). 
+Speech 키워드 상태는 Mixed Reality Speech 프로필에 정의 된 키워드를 수신 대기 합니다. 새 키워드는 런타임 이전에 음성 명령 프로필에 등록 되어야 합니다 (아래 단계 참조). 
 
-**음성 키워드 상태 동작** 
- ![ 가상 상호 작용이 있는 음성 키워드](../images/interactive-element/InEditor/Gifs/SpeechKeywordStateEditor.gif)
+**Speech 키워드 상태 동작** 
+ ![ 가상 상호 작용이 있는 Speech 키워드](../images/interactive-element/InEditor/Gifs/SpeechKeywordStateEditor.gif)
 
 **Speech 키워드 상태 검사기** 
- ![ 검사기에서 음성 키워드 구성 요소](../images/interactive-element/InEditor/SpeechKeywordStateInspector.png)
+ ![ 검사기의 Speech 키워드 구성 요소](../images/interactive-element/InEditor/SpeechKeywordStateInspector.png)
 
 > [!NOTE]
-> Speech Keyword 상태는 위의 gif에서 F5 키를 눌러 편집기에서 트리거되었습니다. 음성에 대한 편집기 테스트에서 설정은 아래 단계에 설명되어 있습니다. 
+> 위의 gif에서 F5 키를 눌러 편집기에서 Speech 키워드 상태를 트리거 했습니다. 편집기에서 음성에 대 한 테스트를 설정 하는 단계는 아래에 설명 되어 있습니다. 
 
-#### <a name="how-to-register-a-speech-commandkeyword"></a>음성 명령/키워드를 등록하는 방법
+#### <a name="how-to-register-a-speech-commandkeyword"></a>음성 명령/키워드를 등록 하는 방법
 
-1. **MixedRealityToolkit** 게임 개체 선택
+1. **MixedRealityToolkit** game 개체를 선택 합니다.
 
-1. 현재 프로필 **복사 및 사용자 지정을** 선택합니다.
+1. 현재 프로필 **복사 및 사용자 지정을** 선택 합니다.
 
-1. 입력 섹션으로 이동하고 **복제를** 선택하여 입력 프로필을 수정할 수 있습니다.
+1. 입력 섹션으로 이동 하 고 **복제** 를 선택 하 여 입력 프로필을 수정할 수 있도록 합니다.
 
-1. 입력 프로필의 Speech 섹션에 Scroll down 음성 프로필 복제
+1. 입력 프로필에서 음성 섹션으로 스크롤하고 음성 프로필을 복제 합니다.
 
-    ![MRTK 게임 개체의 음성 키워드 프로필](../images/interactive-element/InEditor/SpeechKeywordProfileClone.png) 
+    ![MRTK game 개체의 Speech 키워드 프로필](../images/interactive-element/InEditor/SpeechKeywordProfileClone.png) 
 
-1. 새 음성 명령 추가를 선택합니다.
+1. 새 음성 명령 추가를 선택 합니다.
 
-    ![MRTK 프로필에 새 음성 키워드 추가](../images/interactive-element/InEditor/SpeechKeywordProfileAddKeyword.png) 
+    ![MRTK 프로필에 새 speech 키워드 추가](../images/interactive-element/InEditor/SpeechKeywordProfileAddKeyword.png) 
 
-1. new 키워드를 입력합니다. 선택 사항: 편집기에서 테스트할 수 있도록 KeyCode를 F5(또는 다른 KeyCode)로 변경합니다. 
+1. New 키워드를 입력 합니다. 선택 사항: 편집기에서 테스트를 허용 하도록 KeyCode을 F5 또는 다른 KeyCode로 변경 합니다. 
 
-    ![MRTK 프로필에서 음성 키워드 구성](../images/interactive-element/InEditor/SpeechKeywordProfileAddKeywordName.png) 
+    ![MRTK 프로필에서 speech 키워드 구성](../images/interactive-element/InEditor/SpeechKeywordProfileAddKeywordName.png) 
 
-1. Interactive Element Speech 키워드 상태 검사기로 돌아가기 **키워드 추가를** 선택합니다. 
+1. 대화형 요소 음성 키워드 상태 검사기로 돌아가서 **키워드 추가** 를 선택 합니다. 
 
     ![대화형 요소 구성 요소에 키워드 추가](../images/interactive-element/InEditor/SpeechKeywordAddKeyword.png) 
 
@@ -467,7 +467,7 @@ Inspector를 통해 만든 사용자 지정 상태는 기본 상태 이벤트 �
 
    이 사용자 지정 상태는 `StateEvents` 및 이벤트를 포함 하는 기본 이벤트 구성으로 초기화 됩니다 `OnStateOn` `OnStateOff` . 새 상태에 대 한 사용자 지정 이벤트 구성을 만들려면 사용자 지정 [이벤트 구성을 사용 하 여 사용자 지정 상태 만들기](#creating-a-custom-state-with-a-custom-event-configuration)를 참조 하세요.
     
-    ![대화형 요소 구성 요소에 표시된 새 상태](../images/interactive-element/InEditor/InteractiveElementCreateCustomStateEventConfig.png)
+    ![대화형 요소 구성 요소에 표시 되는 새 상태](../images/interactive-element/InEditor/InteractiveElementCreateCustomStateEventConfig.png)
 
 
 ### <a name="how-to-create-a-custom-state-via-script&quot;></a>스크립트를 통해 사용자 지정 상태를 만드는 방법
@@ -487,19 +487,19 @@ myNewStateEvents.OnStateOn.AddListener(() =>
 
 ```
 
-### <a name="creating-a-custom-state-with-a-custom-event-configuration"></a>사용자 지정 이벤트 구성을 통해 사용자 지정 상태 만들기 
+### <a name="creating-a-custom-state-with-a-custom-event-configuration"></a>사용자 지정 이벤트 구성을 사용 하 여 사용자 지정 상태 만들기 
 
-**키보드라는** 사용자 지정 상태에 대한 예제 파일은 MRTK\SDK\Experimental\InteractiveElement\Examples\Scripts\CustomStateExample에 있습니다.
+**키보드** 라는 사용자 지정 상태에 대 한 예제 파일은 다음 위치에 있습니다. MRTK\SDK\Experimental\InteractiveElement\Examples\Scripts\CustomStateExample
 
-다음 단계에서는 사용자 지정 상태 이벤트 구성 및 수신기 파일을 만드는 기존 예제를 안내합니다.
+다음 단계에서는 사용자 지정 상태 이벤트 구성 및 수신자 파일을 만드는 기존 예제를 안내 합니다.
 
-1. 상태 이름을 생각해 보세요.  이 이름은 고유해야 하며 기존 핵심 상태와 같을 수 없습니다. 이 예제에서는 상태 이름이 **키보드** 로 지정됩니다.
+1. 상태 이름을 생각 합니다.  이 이름은 고유 해야 하며 기존 코어 상태와 같을 수 없습니다. 이 예제에서는 상태 이름이 **키보드** 로 이동 합니다.
 
-1. state name + "Receiver" 및 state name + "Events"라는 두 개의 .cs 파일을 만듭니다. 이러한 파일의 이름 지정은 내부적으로 고려되며 상태 이름 + 이벤트/수신자 규칙을 따라야 합니다. 
+1. 상태 이름 + "수신자"와 상태 이름 + "이벤트" 라는 두 개의 .cs 파일을 만듭니다. 이러한 파일의 이름은 내부적으로 고려 되며 상태 이름 + 이벤트/수신자 규칙을 따라야 합니다. 
 
     ![키보드 상태 스크립트](../images/interactive-element/InEditor/KeyboardStateFiles.png)
 
-1. 파일 내용에 대한 자세한 내용은 KeyboardEvents.cs 및 KeyboardReceiver.cs 파일을 참조하세요. 새 이벤트 구성 클래스는 에서 상속해야 `BaseInteractionEventConfiguration` 하며 새 이벤트 수신기 클래스는 에서 상속해야 `BaseEventReceiver` 합니다.  키보드 상태에 대한 상태 설정의 예는 `CustomStateSettingExample.cs` 파일에 있습니다. 
+1. 파일 내용에 대 한 자세한 내용은 KeyboardEvents 및 KeyboardReceiver 파일을 참조 하세요. 새 이벤트 구성 클래스는에서 상속 해야 `BaseInteractionEventConfiguration` 하며, 새 이벤트 수신기 클래스는에서 상속 해야 합니다 `BaseEventReceiver` .  키보드 상태에 대 한 상태 설정 예제는 파일에 있습니다 `CustomStateSettingExample.cs` . 
 
 1. 상태 이름을 사용하여 대화형 요소에 상태를 추가합니다. 이벤트 구성 및 이벤트 수신기 파일이 있는 경우 상태 이름이 인식됩니다.  사용자 지정 이벤트 구성 파일의 속성은 검사기에서 나타나야 합니다.
 
@@ -510,29 +510,29 @@ myNewStateEvents.OnStateOn.AddListener(() =>
 - MRTK\SDK\Experimental\InteractiveElement\InteractiveElement\Events\EventConfigurations
 - MRTK\SDK\Experimental\InteractiveElement\InteractiveElement\Events\EventReceivers
 
-## <a name="example-scene"></a>장면 예 
+## <a name="example-scene"></a>예제 장면 
 
-대화형 요소 + 상태 시각화 도우미에 대 한 예제 장면이 여기에 있습니다. MRTK\SDK\Experimental\InteractiveElement\Examples\InteractiveElementExampleScene.unity
+Interactive Element + State 시각화 도우미에 대한 예제 장면의 위치는 MRTK\SDK\Experimental\InteractiveElement\Examples\InteractiveElementExampleScene.unity입니다.
 
 ![대화형 요소 및 상태 시각화 도우미가 있는 예제 장면](../images/interactive-element/InEditor/ExampleScene.png)
 
-### <a name="compressable-button"></a>Compressable 단추
+### <a name="compressable-button"></a>압축 가능 단추
 
-예제 장면에는 및 라는 prefabs 포함 되어 있습니다 `CompressableButton` `CompressableButtonToggle` . 이러한 Prefabs는 `PressableButtonHoloLens2` 대화형 요소와 상태 시각화 도우미를 사용 하 여 생성 된 단추의 동작을 미러링합니다. `CompressableButton`구성 요소는 현재 `PressableButton`  +  `PressableButtonHoloLens2` `BaseInteractiveElement` 기본 클래스로의 조합입니다. 
+예제 장면에는 및 라는 프리팹이 포함되어 `CompressableButton` `CompressableButtonToggle` 있으며, 이러한 `PressableButtonHoloLens2` 프리팹은 대화형 요소 및 상태 시각화 도우미를 사용하여 구성된 단추의 동작을 미러합니다. 구성 요소는 현재 와 `CompressableButton` 를 `PressableButton`  +  `PressableButtonHoloLens2` 기본 `BaseInteractiveElement` 클래스로 조합한 것입니다. 
 
 ## <a name="state-visualizer-experimental"></a>상태 시각화 도우미 [실험적]
 
-상태 시각화 도우미 구성 요소는 연결 된 대화형 요소 구성 요소에 정의 된 상태에 따라 개체에 애니메이션을 추가 합니다. 이 구성 요소는 애니메이션 자산을 만들고, MixedRealityToolkit 폴더에 배치 하 고, 대상 게임 개체에 애니메이션 효과 속성을 추가 하 여 간소화 된 애니메이션 키프레임 설정을 사용 하도록 설정 합니다. 상태 간에 애니메이션 전환을 사용 하도록 설정 하기 위해 애니메이터 컨트롤러 자산이 만들어지고 기본 상태 시스템이 연결 된 매개 변수 및 모든 상태 전환으로 생성 됩니다.  상태 시스템은 Unity의 애니메이터 창에서 볼 수 있습니다.
+상태 시각화 도우미 구성 요소는 연결된 Interactive Element 구성 요소에 정의된 상태에 따라 개체에 애니메이션을 추가합니다. 이 구성 요소는 애니메이션 자산을 만들고 MixedRealityToolkit.Generated 폴더에 배치하며, 애니메이션 가능 속성을 대상 게임 개체에 추가하여 간소화된 애니메이션 키 프레임 설정을 사용하도록 설정합니다. 상태 간에 애니메이션 전환을 사용하도록 설정하기 위해 Animator 컨트롤러 자산이 생성되고 연결된 매개 변수 및 상태 전환을 사용하여 기본 상태 머신이 생성됩니다.  상태 시스템은 Unity의 Animator 창에서 볼 수 있습니다.
 
 ### <a name="state-visualizer-and-unity-animation-system"></a>상태 시각화 도우미 및 Unity 애니메이션 시스템
 
-상태 시각화 도우미는 현재 Unity 애니메이션 시스템을 활용 합니다. 
+상태 시각화 도우미는 현재 Unity 애니메이션 시스템을 활용합니다. 
 
-상태 시각화 도우미의 **새 애니메이션 클립 생성** 단추를 누르면 새 애니메이션 클립 자산이 대화형 요소의 상태 이름에 따라 생성 되 고 MixedRealityToolkit 폴더에 배치 됩니다. 각 상태 컨테이너의 애니메이션 클립 속성은 연결 된 애니메이션 클립으로 설정 됩니다.
+상태 시각화 도우미에서 **새 애니메이션 클립 생성** 단추를 누르면 대화형 요소의 상태 이름에 따라 새 애니메이션 클립 자산이 생성되고 MixedRealityToolkit.Generated 폴더에 배치됩니다. 각 상태 컨테이너의 애니메이션 클립 속성은 연결된 애니메이션 클립으로 설정됩니다.
 
-![상태 시각화 요소의 애니메이션 클립](../images/interactive-element/StateVisualizer/AnimationClips.png)
+![상태 시각화 도우미 구성 요소의 애니메이션 클립](../images/interactive-element/StateVisualizer/AnimationClips.png)
 
-애니메이션 클립 간의 부드러운 전환을 관리 하기 위해 [애니메이터 상태 컴퓨터](https://docs.unity3d.com/Manual/AnimationOverview.html) 도 생성 됩니다.  기본적으로 상태 시스템은 [모든](https://docs.unity3d.com/Manual/class-State.html) 상태를 사용 하 여 대화형 요소의 모든 상태 간 전환을 허용 합니다. 
+애니메이션 클립 간의 원활한 전환을 관리하기 위해 [Animator State Machine도](https://docs.unity3d.com/Manual/AnimationOverview.html) 생성됩니다.  기본적으로 상태 시스템은 [Any State를](https://docs.unity3d.com/Manual/class-State.html) 활용하여 Interactive Element의 모든 상태 간 전환을 허용합니다. 
 
 [Animator에서 트리거되는 상태 시각화 도우미도](https://docs.unity3d.com/Manual/AnimationParameters.html) 각 상태에 대해 생성되며, 트리거 매개 변수는 상태 시각화 도우미에서 애니메이션을 트리거하는 데 사용됩니다.
 
@@ -572,64 +572,64 @@ myNewStateEvents.OnStateOn.AddListener(() =>
 
 1. 색 선택 
 
-    ![색상환에서 시각화 도우미 색 선택](../images/interactive-element/StateVisualizer/SetBlueColor.png)
+    ![색 휠에서 시각화 도우미 색 선택](../images/interactive-element/StateVisualizer/SetBlueColor.png)
 
-1. 재생을 누르고 전환 색 변경을 관찰 합니다.
+1. 재생을 누르고 전환 색 변경 관찰
 
-    ![가상 손 상호 작용을 사용 하 여 색 변경 예제 전환](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
+    ![가상 손 상호 작용을 통해 전환 색 변경 예제](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
-## <a name="animatable-properties"></a>애니메이션 효과 속성
+## <a name="animatable-properties"></a>애니메이션 가능 속성
 
-애니메이션 효과 속성의 주요 목적은 애니메이션 클립 키 프레임 설정을 간소화 하는 것입니다.  사용자가 Unity 애니메이션 시스템에 친숙 하 고 생성 된 애니메이션 클립에서 키 프레임을 직접 설정 하는 것을 선호 하는 경우 애니메이션 효과 속성을 대상 개체에 추가 하 고 Unity의 애니메이션 창 (Windows > 애니메이션 > 애니메이션)에서 클립을 열 수 없습니다. 
+애니메이션 가능 속성의 주요 목적은 애니메이션 클립 키 프레임 설정을 간소화하는 것입니다.  사용자가 Unity 애니메이션 시스템에 익숙하고 생성된 애니메이션 클립에서 키 프레임을 직접 설정하려는 경우 대상 개체에 애니메이션 가능 속성을 추가하고 Unity의 애니메이션 창에서 클립을 열 수 없습니다(애니메이션 > 애니메이션 Windows >). 
 
-애니메이션에 애니메이션 효과 속성을 사용 하는 경우 곡선 형식은 EaseInOut로 설정 됩니다.
+애니메이션에 애니메이션 가능 속성을 사용하는 경우 곡선 형식은 EaseInOut으로 설정됩니다.
 
-**현재 애니메이션 효과 속성:**
-- [크기 조정 오프셋](#scale-offset)
+**현재 애니메이션 가능 속성:**
+- [배율 오프셋](#scale-offset)
 - [위치 오프셋](#position-offset)
 - [색상](#color)
 - [셰이더 색](#shader-color)
 - [셰이더 Float](#shader-float)
 - [셰이더 벡터](#shader-vector)
 
-### <a name="scale-offset"></a>크기 조정 오프셋
+### <a name="scale-offset"></a>배율 오프셋
 
-눈금 오프셋 애니메이션 효과 속성은 개체의 현재 소수 자릿수를 사용 하 여 정의 된 오프셋을 추가 합니다.
+Scale Offset Animatable 속성은 개체의 현재 배율과 정의된 오프셋을 추가합니다.
 
-![가상 손 상호 작용을 사용 하는 크기 조정 오프셋](../images/interactive-element/InEditor/Gifs/ScaleOffset.gif)
+![가상 손 조작을 통해 오프셋 크기 조정](../images/interactive-element/InEditor/Gifs/ScaleOffset.gif)
 
 ### <a name="position-offset"></a>위치 오프셋
 
-Position Offset 애니메이션 효과 속성은 개체의 현재 위치를 사용 하 여 정의 된 오프셋을 추가 합니다.
+위치 오프셋 애니메이션 가능 속성은 개체의 현재 위치를 가져와서 정의된 오프셋을 추가합니다.
 
-![가상 손 상호 작용을 사용 하는 위치 오프셋](../images/interactive-element/InEditor/Gifs/PositionOffset.gif)
+![가상 손 상호 작용을 통해 위치 오프셋](../images/interactive-element/InEditor/Gifs/PositionOffset.gif)
 
 ### <a name="color"></a>색
 
-색 애니메이션 효과 속성은 재질에 기본 색 속성이 있는 경우 재질의 기본 색을 나타냅니다. 이 속성은 속성에 애니메이션을 적용 `material._Color` 합니다.
+색 애니메이션 가능 속성은 재질에 주 색 속성이 있는 경우 재질의 주 색을 나타냅니다. 이 속성 애니메이션을 `material._Color` 속성입니다.
 
-![가상 손 상호 작용으로 색 변경 포커스](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
+![가상 손 조작을 통해 포커스 색 변경](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
 ### <a name="shader-color"></a>셰이더 색
 
-셰이더 색 애니메이션 효과 속성은 Color 형식의 셰이더 속성을 참조 합니다. 모든 셰이더 속성에는 속성 이름이 필요 합니다. 아래 gif는 주 재질 색이 아닌 Fill_Color 라는 셰이더 색 속성에 애니메이션을 적용 하는 방법을 보여 줍니다.  재질 검사기에서 값을 변경 합니다.
+셰이더 색 애니메이션 가능 속성은 색 형식의 셰이더 속성을 나타냅니다. 모든 셰이더 속성에는 속성 이름이 필요합니다. 아래 gif는 주 재질 색이 아닌 Fill_Color 라는 셰이더 색 속성에 애니메이션을 적용하는 것을 보여줍니다.  재질 검사기에서 변경되는 값을 관찰합니다.
 
-![가상 손을 상호 작용 하는 음영 색](../images/interactive-element/InEditor/Gifs/ShaderColor.gif)
+![가상 손 조작을 통해 음영 색](../images/interactive-element/InEditor/Gifs/ShaderColor.gif)
 
 ### <a name="shader-float"></a>셰이더 Float
 
-Shader Float 애니메이션 효과 속성은 Float 형식의 셰이더 속성을 참조 합니다. 모든 셰이더 속성에는 속성 이름이 필요 합니다. 아래 gif에서 금속성 속성에 대 한 재질 검사기의 변경 값을 확인 합니다. 
+셰이더 Float Animatable 속성은 float 형식의 셰이더 속성을 참조합니다. 모든 셰이더 속성에는 속성 이름이 필요합니다. 아래 gif에서 Material Inspector의 값 변경 내용을 확인합니다. 
 
-![가상 손을 상호 작용 하는 셰이더 float](../images/interactive-element/InEditor/Gifs/ShaderFloat.gif)
+![가상 손 상호 작용을 통해 셰이더 float](../images/interactive-element/InEditor/Gifs/ShaderFloat.gif)
 
 ### <a name="shader-vector"></a>셰이더 벡터
 
-셰이더 Vector 애니메이션 효과 속성은 System.numerics.vector3 및 system.numerics.vector4 형식의 셰이더 속성을 참조 합니다. 모든 셰이더 속성에는 속성 이름이 필요 합니다. 아래 gif에서 바둑판식 배열 (Main Tex_ST) 속성에 대 한 재질 검사기의 변경 값을 확인 합니다. 
+셰이더 벡터 애니메이션 가능 속성은 Vector4 형식의 셰이더 속성을 참조합니다. 모든 셰이더 속성에는 속성 이름이 필요합니다. 아래 gif에서 Tiling(Main Tex_ST) 속성에 대한 재질 검사기에서 변경되는 값을 확인합니다. 
 
 ![가상 손 상호 작용이 있는 셰이더 벡터](../images/interactive-element/InEditor/Gifs/ShaderVector.gif)
 
 
-### <a name="how-to-find-animatable-shader-property-names"></a>애니메이션 효과 셰이더 속성 이름을 찾는 방법
+### <a name="how-to-find-animatable-shader-property-names"></a>애니메이션 가능한 셰이더 속성 이름을 찾는 방법
 
 1. 창 > 애니메이션 > 애니메이션으로 이동합니다.
 1. 상태 시각화 도우미가 있는 개체가 계층 구조에서 선택되어 있는지 확인합니다.
@@ -642,9 +642,9 @@ Shader Float 애니메이션 효과 속성은 Float 형식의 셰이더 속성�
 
     ![Animator 창의 메시 렌더러 애니메이션 속성](../images/interactive-element/StateVisualizer/MeshRendererProperties.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [**단추**](../ux-building-blocks/button.md)
-- [**범위 제어**](../ux-building-blocks/bounds-control.md)
+- [**경계 컨트롤**](../ux-building-blocks/bounds-control.md)
 - [**Grid 개체 컬렉션**](../ux-building-blocks/object-collection.md)
 - [**RadialView Solver**](../ux-building-blocks/solvers/solver.md)

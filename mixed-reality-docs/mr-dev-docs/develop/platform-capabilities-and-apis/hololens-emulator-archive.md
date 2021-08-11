@@ -6,21 +6,21 @@ ms.author: moelhama
 ms.date: 05/11/2021
 ms.topic: article
 keywords: HoloLens, Emulator, 빌드, 버전, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 보관
-ms.openlocfilehash: c6c5f011297809d51a3b5d830f19b5d80a582d2b
-ms.sourcegitcommit: eb39526f9620f0459bd30e4484307892f4609334
+ms.openlocfilehash: ca5338a0104c5551d96cb7ea4d7dfef3e38432c14dc75ee41a32874e71f1fb01
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114201614"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223562"
 ---
 # <a name="hololens-2-emulator-archive"></a>HoloLens 2 Emulator 보관
 
 HoloLens Emulator(1세대) 및 HoloLens 2 Emulator 빌드는 나란히 설치됩니다. 사용 가능한 최신 빌드를 사용하는 것이 좋지만 이전 에뮬레이터에 대해 앱을 테스트하려는 경우가 있을 수 있습니다. 이 페이지에는 릴리스된 모든 버전에 대한 링크가 포함되어 있습니다.
 
-|  빌드 |  출시 날짜 |  메모 |
+|  빌드 |  출시 날짜 |  참고 |
 |----------|----------|----------|
-| [HoloLens 2 Emulator 빌드 10.0.20348.1010](https://go.microsoft.com/fwlink/?linkid=2167725) | 2021년 7월 13일 | Windows Holographic 버전 21H1 2021년 7월 업데이트. <br> 통합된 그래픽 어댑터와 불연속 그래픽 어댑터를 모두 사용하는 PC에서 HoloLens 2 Emulator 사용하는 경우 에뮬레이터는 이제 덜 강력한 통합 어댑터를 사용할 수 있지만 대부분의 경우 하드웨어 그래픽 가속을 사용하도록 설정할 수 있습니다. 이전에는 하드웨어 가속을 사용하도록 설정할 수 없었습니다. 코드 43에서 그래픽 오류를 보고하는 경우가 많습니다. 경우에 따라 에뮬레이터가 성공적으로 부팅되지 않지만 이제는 부팅됩니다. <br> 일반적인 HoloLens 2 릴리스 정보https://docs.microsoft.com/hololens/hololens-release-notes |
-| [HoloLens 2 Emulator 빌드 10.0.19041.1157](https://go.microsoft.com/fwlink/?linkid=2167735) | 2021년 7월 13일 | Windows 홀로그램 버전 20H2 2021년 7월 업데이트.  <br> 통합된 그래픽 어댑터와 불연속 그래픽 어댑터를 모두 사용하는 PC에서 HoloLens 2 Emulator 사용하는 경우 에뮬레이터는 이제 덜 강력한 통합 어댑터를 사용할 수 있지만 대부분의 경우 하드웨어 그래픽 가속을 사용하도록 설정할 수 있습니다. 이전에는 하드웨어 가속을 사용하도록 설정할 수 없었습니다. 코드 43에서 그래픽 오류를 보고하는 경우가 많습니다. 경우에 따라 에뮬레이터가 성공적으로 부팅되지 않지만 이제는 부팅됩니다. <br> 일반적인 HoloLens 2 릴리스 정보https://docs.microsoft.com/hololens/hololens-release-notes |
+| [HoloLens 2 Emulator 빌드 10.0.20348.1010](https://go.microsoft.com/fwlink/?linkid=2167725) | 2021년 7월 13일 | Windows Holographic 버전 21H1 2021년 7월 업데이트. <br> 통합 그래픽 어댑터와 불연속 그래픽 어댑터가 모두 있는 PC에서 HoloLens 2 Emulator 사용하는 경우 에뮬레이터는 이제 덜 강력한 통합 어댑터를 사용할 수 있지만 대부분의 경우 하드웨어 그래픽 가속을 사용하도록 설정할 수 있습니다. 이전에는 하드웨어 가속을 사용하도록 설정할 수 없었습니다. 코드 43에서 그래픽 오류를 보고하는 경우가 많습니다. 경우에 따라 에뮬레이터가 성공적으로 부팅되지 않지만 이제는 부팅됩니다. <br> 일반적인 HoloLens 2 릴리스 정보https://docs.microsoft.com/hololens/hololens-release-notes |
+| [HoloLens 2 Emulator 빌드 10.0.19041.1157](https://go.microsoft.com/fwlink/?linkid=2167735) | 2021년 7월 13일 | Windows 홀로그램 버전 20H2 2021년 7월 업데이트.  <br> 통합 그래픽 어댑터와 불연속 그래픽 어댑터가 모두 있는 PC에서 HoloLens 2 Emulator 사용하는 경우 에뮬레이터는 이제 덜 강력한 통합 어댑터를 사용할 수 있지만 대부분의 경우 하드웨어 그래픽 가속을 사용하도록 설정할 수 있습니다. 이전에는 하드웨어 가속을 사용하도록 설정할 수 없었습니다. 코드 43에서 그래픽 오류를 보고하는 경우가 많습니다. 경우에 따라 에뮬레이터가 성공적으로 부팅되지 않지만 이제는 부팅됩니다. <br> 일반적인 HoloLens 2 릴리스 정보https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator 빌드 10.0.20348.1007](https://go.microsoft.com/fwlink/?linkid=2165258) | 2021년 6월 8일 | Windows Holographic 버전 21H1 2021년 6월 업데이트.  일반적인 HoloLens 2 릴리스 정보https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator 빌드 10.0.19041.1154](https://go.microsoft.com/fwlink/?linkid=2165269) | 2021년 6월 8일 | Windows Holographic 버전 20H2 2021년 6월 업데이트.  일반적인 HoloLens 2 릴리스 정보https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator 빌드 10.0.20346.1002](https://go.microsoft.com/fwlink/?linkid=2162581) | 2021년 5월 11일 | Windows Holographic 버전 21H1 2021년 5월 업데이트.  일반적인 HoloLens 2 릴리스 정보https://docs.microsoft.com/hololens/hololens-release-notes |
@@ -62,7 +62,7 @@ HoloLens Emulator(1세대) 및 HoloLens 2 Emulator 빌드는 나란히 설치됩
 
 ## <a name="hololens-emulator-first-gen-archive"></a>HoloLens Emulator (첫 번째 gen) 보관
 
-|  빌드 |  출시 날짜 |  메모 |
+|  빌드 |  출시 날짜 |  참고 |
 |----------|----------|----------|
 |  [빌드 10.0.17763.134 HoloLens Emulator](https://go.microsoft.com/fwlink/?linkid=2065980) | 2018년 11월 19일 | 최신 HoloLens (첫 번째 gen) 빌드. Windows 10 2018년 10월 업데이트. |
 |  [빌드 10.0.17134.80 HoloLens Emulator](https://go.microsoft.com/fwlink/?linkid=874531) | 2018년 5월 21일 |

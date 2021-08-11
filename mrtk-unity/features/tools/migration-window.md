@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 9d960d01e738736edd452a124db5c306b5d752ce
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 9e657e0b90f8087670b72c993ab1dcf78ae9e6680873139c6867d7c551a41895
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176137"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220051"
 ---
 # <a name="migration-window"></a>마이그레이션 기간
 
@@ -19,7 +19,7 @@ MRTK가 변경 되 면 일부 구성 요소가 더 이상 사용 되지 않을 �
 
 ![마이그레이션 기간](../images/migration-window/MRTK_Migration_Window.png)
 
-## <a name="usage"></a>사용
+## <a name="usage"></a>사용량
 
 창을 열려면 **Mixed Reality**  >  **Toolkit**  >  **유틸리티**  >  **마이그레이션 창** 을 선택 합니다. 마이그레이션 창이 열리면 마이그레이션 처리기의 구성 요소별 구현을 선택 하 여 선택 모드 탐색 탭을 사용 하도록 설정할 수 있습니다.  
 
@@ -46,7 +46,7 @@ MRTK가 변경 되 면 일부 구성 요소가 더 이상 사용 되지 않을 �
 
 ![전체 프로젝트 마이그레이션](../images/migration-window/MRTK_Project_Migration.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [이전 버전에서 업데이트](../../updates-deployment/updating.md)
 - [Microsoft Mixed Reality Toolkit 릴리스](../../release-notes/mrtk-26-release-notes.md)

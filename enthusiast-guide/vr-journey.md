@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, Mixed reality, 가상 현실, VR, MR,
-ms.openlocfilehash: 333da855b7fc995fa40ff66d9da59a38000bf133
-ms.sourcegitcommit: f98884074db7cf334efbaa396059566843c73d56
+ms.openlocfilehash: 43926de06badda7861825eb343991c67942b38a59c670e7142862116322465a4
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114225134"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221356"
 ---
 # <a name="start-your-vr-journey"></a>VR 둘러보기 시작
 

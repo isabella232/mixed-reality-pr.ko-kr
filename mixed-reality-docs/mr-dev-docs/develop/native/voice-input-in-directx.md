@@ -1,24 +1,24 @@
 ---
 title: DirectX의 음성 입력
-description: Windows Mixed Reality 용 DirectX 앱에서 음성 명령과 작은 구와 문장 인식을 구현 하는 방법에 대해 설명 합니다.
+description: Windows Mixed Reality 용 DirectX 앱에서 음성 명령과 작은 구와 문장을 구현 하는 방법에 대해 설명 합니다.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 연습, 음성 명령, 구, 인식, 음성, directx, 플랫폼, cortana, windows mixed 현실
-ms.openlocfilehash: 5f7ed587b474d147c0b13e4896a89f655f8dc30b
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: e30d5c2101bed4b613111b6131a3e94d654c3ff5b1e913f4d8e275ffc1a2776a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583739"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221843"
 ---
 # <a name="voice-input-in-directx"></a>DirectX의 음성 입력
 
 > [!NOTE]
 > 이 문서는 레거시 WinRT 네이티브 Api와 관련이 있습니다.  새 네이티브 앱 프로젝트의 경우 **[OPENXR API](openxr-getting-started.md)** 를 사용 하는 것이 좋습니다.
 
-이 문서에서는 Windows Mixed Reality 용 DirectX 앱에서 [음성 명령과](../../design/voice-input.md) 작은 문구 및 문장 인식 기능을 구현 하는 방법을 설명 합니다.
+이 문서에서는 Windows Mixed Reality에 대 한 DirectX 앱에서 [음성 명령과](../../design/voice-input.md) 작은 문구 및 문장 인식을 구현 하는 방법을 설명 합니다.
 
 >[!NOTE]
 >이 문서의 코드 조각에서는 c + + [holographic 프로젝트 템플릿에](creating-a-holographic-directx-project.md)사용 되는 c + 17-So-far working 호환 c + +/winrt 대신 c + +/cx를 사용 합니다.  개념은 c + +/WinRT 프로젝트와 동일 하지만 코드를 변환 해야 합니다.
@@ -284,7 +284,7 @@ catch (Exception^ exception)
 
 ## <a name="use-continuous-recognition"></a>연속 인식 사용
 
-연속 받아쓰기 시나리오의 경우 [Windows 10 UWP 음성 코드 샘플](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp)을 참조 하세요.
+연속 받아쓰기 시나리오는 [Windows 10 UWP 음성 코드 샘플](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp)을 참조 하세요.
 
 ## <a name="handle-quality-degradation"></a>품질 저하 처리
 
@@ -430,6 +430,6 @@ catch (Exception^ exception)
    });
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 * [음성 앱 디자인](/windows/uwp/design/input/speech-interactions)
 * [SpeechRecognitionAndSynthesis 샘플](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)

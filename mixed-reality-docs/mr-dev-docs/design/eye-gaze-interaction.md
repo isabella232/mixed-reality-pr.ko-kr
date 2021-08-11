@@ -1,25 +1,25 @@
 ---
 title: 시선 응시 기반 상호 작용
-description: Holographic 환경에서 사용 하는 경우 HoloLens 2와 새로운 수준의 컨텍스트 및 인간 이해에 대 한 눈에 기반을 두는 방법에 대해 알아봅니다.
+description: HoloLens 2 및 새로운 수준의 컨텍스트 및 사용자가 holographic 환경에서 사용 하는 경우의 눈길과 응시 기반 상호 작용에 대해 알아봅니다.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: 눈 추적, 혼합 현실, 입력, 눈동자-응시, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, 혼합 현실 도구 키트, 디자인, 상호 작용
-ms.openlocfilehash: 3067f5533dbe70d4decb6b5cf94a3f1c5029115a
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+keywords: 눈 추적, 혼합 현실, 입력, 눈에 어 응시, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, mrtk, 혼합 현실 Toolkit, 디자인, 상호 작용
+ms.openlocfilehash: aec41c6654ce10254648e90e08a09ff9adade75a3dc63af81a0953b67b95729f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906869"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220959"
 ---
-# <a name="eye-gaze-based-interaction-on-hololens-2"></a>HoloLens의 눈동자 기반 상호 작용 2
+# <a name="eye-gaze-based-interaction-on-hololens-2"></a>HoloLens 2에 대 한 눈동자 기반 상호 작용
 
 ![MRTK의 아이 추적 데모](images/mrtk_et_scenemenu.jpg)
 
-HoloLens 2에 대 한 흥미로운 새로운 기능 중 하나는 눈 추적입니다. [HoloLens의 눈동자 추적 2](eye-tracking.md) 페이지에서는 몇 가지 개발자 지침을 제공 하 고 눈 추적을 위해 강조 된 사용 사례를 제공 하는 각 사용자가 [보정](/hololens/hololens-calibration)을 수행 해야 하는 필요성에 대해 설명 했습니다. 눈동자-응시 입력은 여전히 새로운 유형의 사용자 입력 이며 배워야 할 내용이 많습니다. 
+HoloLens 2에서 흥미로운 새로운 기능 중 하나는 눈 추적입니다. HoloLens 2에 대 한 microsoft [의 눈 추적](eye-tracking.md) 페이지에서는 몇 가지 개발자 지침을 제공 하 고 눈 추적을 위해 강조 된 사용 사례를 제공 하는 각 사용자가 [보정](/hololens/hololens-calibration)을 수행 해야 하는 필요성에 대해 설명 했습니다. 눈동자-응시 입력은 여전히 새로운 유형의 사용자 입력 이며 배워야 할 내용이 많습니다. 
 
-눈에 잘 맞는 입력은 Holographic Shell 환경 (HoloLens 2를 시작할 때 표시 되는 사용자 인터페이스)에서 약간만 사용 되지만 ["hololens 탭"](https://www.microsoft.com/p/mr-playground/9nb31lh723s2)과 같은 여러 앱은 눈에 입력이 Holographic 환경의 매직에 추가 되는 방법에 대 한 좋은 예를 보여 줍니다.
+눈에 잘 맞는 입력은 Holographic Shell 환경 (HoloLens 2를 시작할 때 표시 되는 사용자 인터페이스)에서 약간만 사용 되지만, ["HoloLens](https://www.microsoft.com/p/mr-playground/9nb31lh723s2)된 사용자"와 같은 몇 가지 앱은 눈에 Holographic 입력이 환경의 매직에 추가 하는 방법에 대 한 좋은 예를 보여 줍니다.
 이 페이지에서는 holographic 응용 프로그램과 상호 작용 하기 위해 눈 응시 입력을 통합 하기 위한 디자인 고려 사항에 대해 설명 합니다.
 
 주요 이점 및 눈에 잘 맞는 입력으로 제공 되는 고유한 과제에 대해 알아봅니다. 이를 기반으로 하는 다양 한 디자인 권장 사항을 제공 하 여 눈길을 가진 눈길을 지 원하는 사용자 인터페이스를 만드는 데 도움을 줍니다. 
@@ -47,13 +47,13 @@ HoloLens 2에 대 한 흥미로운 새로운 기능 중 하나는 눈 추적입�
 </tr>
 </table>
 
-## <a name="head-and-eye-tracking-design-concepts-demo"></a>헤드 및 눈 추적 디자인 개념 데모
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>머리 및 눈 추적 디자인 개념 데모
 
-요약 및 눈 추적 디자인 개념이 작동 하는 것을 확인 하려는 경우 아래 **Holograms 추적 및 눈동자** 추적 비디오 데모를 확인 하세요. 완료 되 면 특정 항목에 대 한 자세한 정보를 계속 확인할 수 있습니다.
+실제 머리 및 눈 추적 디자인 개념을 보려면 아래의 **홀로그램 디자인 - 머리 추적 및 눈 추적** 동영상 데모를 확인합니다. 완료되면 계속해서 특정 주제에 대해 자세히 알아봅니다.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
 
-*이 비디오는 "디자인 Holograms" HoloLens 2 앱에서 가져온 것입니다. [여기](https://aka.ms/dhapp)에서 전체 환경을 다운로드 하 고 활용해 보세요.*
+*이 동영상은 "홀로그램 디자인" HoloLens 2 앱에서 가져온 것입니다. [여기](https://aka.ms/dhapp)에서 전체 환경을 다운로드하여 즐겨 보세요.*
 
 ## <a name="eye-gaze-input-design-guidelines"></a>눈동자-응시 입력 디자인 지침
 
@@ -83,7 +83,7 @@ HoloLens 2에 대 한 흥미로운 새로운 기능 중 하나는 눈 추적입�
 또한이 솔루션을 사용 하면 사용자가 무언가를 involuntarily 하 여 너무 부담 없이 자유롭게 볼 수 있는 모드를 사용할 수 있습니다. 대상을 확인할 때 시각적 개체와 청각 피드백을 디자인할 때에도이 문제를 고려해 야 합니다.
 즉시 팝아웃 효과를 사용 하거나 소리를 가리키기 위해 사용자에 게 과부하가 걸리지 않도록 시도 합니다. 미묘한는 키입니다. [디자인 권장 사항](eye-gaze-interaction.md#design-recommendations)에 대해 논의할 때이에 대 한 몇 가지 모범 사례를 설명 하겠습니다.
 
-- **관찰 및 제어** 벽에 사진을 정확 하 게 똑바르게 하려고 한다고 가정 합니다. 벽에 맞는지 보기 위해 테두리와 주변을 보게 됩니다. 이제 눈을 입력으로 사용 하 여 그림을 이동 하려는 경우이 작업을 수행 하는 방법을 상상해 보세요. 어렵죠. 그렇지 않나요? 이는 입력 및 제어에 모두 필요한 경우 눈에 주목 하는 이중 역할을 설명 합니다. 
+- **관찰 및 제어** Imagine 벽에서 사진을 정확 하 게 똑바르게 하려는 경우. 벽에 맞는지 보기 위해 테두리와 주변을 보게 됩니다. 이제 눈을 입력으로 사용 하 여 그림을 이동 하려는 경우이 작업을 수행 하는 방법을 상상해 보세요. 어렵죠. 그렇지 않나요? 이는 입력 및 제어에 모두 필요한 경우 눈에 주목 하는 이중 역할을 설명 합니다. 
 
 - **클릭 전에 나가기:** 빠른 대상 선택을 위해 수동 클릭 (예: 공중 탭)을 마무리 하기 전에 사용자의 눈 응시가 이동할 수 있다는 것을 연구 했습니다. 빠른 시각-응시 신호를 느린 제어 입력 (예: 음성, 실습, 컨트롤러)과 동기화 하는 데 특히 주의 해야 합니다.
 
@@ -128,8 +128,8 @@ HoloLens 2에 대 한 흥미로운 새로운 기능 중 하나는 눈 추적입�
 
 ## <a name="see-also"></a>참고 항목
 * [편안함](comfort.md)
-* [눈-DirectX에서 응시](../develop/native/gaze-in-directx.md)
-* [눈동자-Unity에서 응시 (혼합 현실 도구 키트)](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
+* [DirectX의 시선 응시](../develop/native/gaze-in-directx.md)
+* [Unity의 시선 응시(Mixed Reality Toolkit)](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 * [HoloLens 2의 시선 추적](eye-tracking.md)
 * [응시 및 커밋](gaze-and-commit.md)
 * [응시 및 유지](gaze-and-dwell.md)

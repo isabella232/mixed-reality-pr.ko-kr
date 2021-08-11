@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows 장치 포털, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: d772175683208ac0e3ed4b3163ca561da416c1cf
-ms.sourcegitcommit: 593e8f80297ac0b5eccb2488d3f333885eab9adf
+ms.openlocfilehash: edcd1796598b558f42232bf54ae3d40d3c509bb9515d8dcbe7f3cf9f2b7dfd62
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112919814"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221593"
 ---
 # <a name="using-the-windows-device-portal"></a>Windows 장치 포털 사용
 
@@ -20,13 +20,15 @@ ms.locfileid: "112919814"
 <tr>
 <th>기능</th><th style="width:150px"><a href="/hololens/hololens1-hardware">HoloLens(1세대)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px">
 </tr><tr>
-<td> Windows Device Portal</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
+<td> Windows 장치 포털</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
 </tr>
 </table>
 
 HoloLens용 Windows 장치 포털을 사용하면 Wi-Fi 또는 USB를 통해 원격으로 디바이스를 구성하고 관리할 수 있습니다. Device Portal은 PC의 웹 브라우저에서 연결 가능한 HoloLens에 있는 웹 서버입니다. 장치 포털에는 HoloLens를 관리하고 앱을 디버깅 및 최적화하는 데 도움이 되는 많은 도구가 포함되어 있습니다.
 
 이 설명서에서는 HoloLens용 Windows 장치 포털을 중점적으로 설명합니다. Windows Mixed Reality를 포함한 데스크톱용 Windows 장치 포털을 사용하려면 [Windows 장치 포털 개요](/windows/uwp/debug-test-perf/device-portal)를 참조하세요.
+
+> [참고!] 조직에 배포하는 HoloLens 디바이스에는 디바이스 포털을 사용하지 않는 것이 좋습니다.
 
 ## <a name="setting-up-hololens-to-use-windows-device-portal"></a>Windows 장치 포털을 사용하도록 HoloLens 설정
 
@@ -175,6 +177,8 @@ HoloLens에서 장치 포털에 처음 연결하면 사용자 이름 및 암호�
 ![Microsoft HoloLens에 대한 Windows 장치 포털의 홈 페이지](images/using-windows-portal-img-04.png)<br>
 *Microsoft HoloLens에 대한 Windows 장치 포털의 홈 페이지*
 
+> [참고] 디바이스 포털에서 구성된 설정은 전체 디바이스에 적용되며 다시 부팅을 통해 유지됩니다. 개발 시에만 디바이스 포털을 사용하고 배포된 디바이스에는 사용하지 않는 것이 좋습니다.
+
 홈페이지에서 장치 포털 세션을 시작합니다. 홈페이지의 왼쪽 탐색 모음에서 다른 페이지에 액세스합니다.
 
 페이지 맨 위에 있는 도구 모음에서 자주 사용하는 상태 및 기능에 대한 액세스를 제공합니다.
@@ -241,6 +245,8 @@ HoloLens에서 장치 포털에 처음 연결하면 사용자 이름 및 암호�
 
 ![Microsoft HoloLens에 대한 Windows 장치 포털의 혼합 현실 캡처 페이지](images/using-windows-portal-img-07.png)<br>
 *Microsoft HoloLens에 대한 Windows 장치 포털의 혼합 현실 캡처 페이지*
+
+> [중요] 디바이스 포털에서 구성된 설정은 전체 디바이스에 적용되며 다시 부팅을 통해 유지됩니다. 디바이스 포털에서 수정된 모든 설정은 혼합 현실 캡처 및 앱에 적용됩니다. 이러한 설정은 영구적이므로, 개발 시에만 디바이스 포털을 사용하고 배포된 디바이스에는 사용하지 않는 것이 좋습니다.
 
 혼합 현실 캡처 페이지를 사용하여 HoloLens에서 미디어 스트림을 저장합니다.
 * **캡처 설정**: 다음 설정을 확인하여 캡처할 미디어 스트림을 제어합니다.

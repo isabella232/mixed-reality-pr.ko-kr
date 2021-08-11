@@ -5,20 +5,20 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: UWP, 앱 모델, 수명 주기, 일시 중단, 다시 시작, 타일, 보기, 계약, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 941c0f3f81596e8465157121462b4150cefd8ac2
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: UWP, 앱 모델, 수명 주기, 일시 중단, 다시 시작, 타일, 보기, 계약, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, HoloLens, mrtk, 혼합 현실 Toolkit
+ms.openlocfilehash: 5f15f0a2516a21cd6432e7f09df7950f8d832acc77ac77056f5bf1382500024e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583217"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221939"
 ---
 # <a name="app-model"></a>앱 모델
 
-Windows Mixed Reality는 최신 Windows 앱 용 모델 및 환경인 UWP ( [유니버설 Windows 플랫폼](/windows/uwp/get-started/) )에서 제공 하는 앱 모델을 사용 합니다. UWP 앱 모델은 앱을 안전 하 게 설치, 업데이트, 버전 관리 및 제거 하는 방법을 정의 합니다. 또한 응용 프로그램 수명 주기를 제어 합니다. 앱이 실행 되는 방법, 절전 모드 및 중지 방법 및 상태를 유지할 수 있는 방법을 제어 합니다. 마지막으로, 앱 모델은 운영 체제, 파일 및 기타 앱과의 통합 및 상호 작용을 다룹니다.
+Windows Mixed Reality은 최신 Windows 앱에 대 한 모델 및 환경인 UWP ( [유니버설 Windows 플랫폼](/windows/uwp/get-started/) )에서 제공 하는 앱 모델을 사용 합니다. UWP 앱 모델은 앱을 안전 하 게 설치, 업데이트, 버전 관리 및 제거 하는 방법을 정의 합니다. 또한 응용 프로그램 수명 주기를 제어 합니다. 앱이 실행 되는 방법, 절전 모드 및 중지 방법 및 상태를 유지할 수 있는 방법을 제어 합니다. 마지막으로, 앱 모델은 운영 체제, 파일 및 기타 앱과의 통합 및 상호 작용을 다룹니다.
 
-![breakfast 영역의 Windows Mixed Reality 홈에 정렬 된 2D 앱](images/20160112-055908-hololens-500px.jpg)<br>
-*Windows Mixed Reality 홈에 2D 보기가 정렬 된 앱*
+![breakfast 영역에서 Windows Mixed Reality 홈으로 정렬 된 2d 앱](images/20160112-055908-hololens-500px.jpg)<br>
+*Windows Mixed Reality 홈에 2d 보기가 정렬 된 앱*
 
 ## <a name="app-lifecycle"></a>앱 수명 주기
 
@@ -26,12 +26,12 @@ Windows Mixed Reality는 최신 Windows 앱 용 모델 및 환경인 UWP ( [유�
 
 ### <a name="placement-is-launch"></a>배치가 시작 됩니다.
 
-모든 앱은 [Windows Mixed reality 홈](../discover/navigating-the-windows-mixed-reality-home.md)에 앱 타일 ( [windows 보조 타일](/uwp/api/Windows.UI.StartScreen.SecondaryTile)만)을 배치 하 여 혼합 현실에서 시작 합니다. 배치 시 이러한 앱 타일은 앱 실행을 시작 합니다. 이러한 앱 타일은 배치 된 위치에 유지 되며, 언제 든 지 응용 프로그램으로 다시 전환 하려는 경우에도 시작 합니다.
+모든 앱은 [Windows Mixed Reality 홈](../discover/navigating-the-windows-mixed-reality-home.md)에 앱 타일 ( [Windows 보조 타일](/uwp/api/Windows.UI.StartScreen.SecondaryTile)만)을 배치 하 여 혼합 현실에서 시작 됩니다. 배치 시 이러한 앱 타일은 앱 실행을 시작 합니다. 이러한 앱 타일은 배치 된 위치에 유지 되며, 언제 든 지 응용 프로그램으로 다시 전환 하려는 경우에도 시작 합니다.
 
 ![배치가 보조 타일을 세계에 배치 합니다.](images/slide1-600px.png)<br>
 *배치가 보조 타일을 세계에 배치 합니다.*
 
-배치가 완료 되는 즉시 (앱에서 [앱 시작으로](app-model.md#protocols) 배치를 시작 하지 않은 경우) 앱이 시작 되기 시작 합니다. Windows Mixed Reality는 한 번에 제한 된 수의 앱을 실행할 수 있습니다. 앱을 시작 하 고 시작 하는 즉시 다른 활성 앱이 일시 중단 될 수 있습니다. 일시 중단 된 앱은 앱의 마지막 상태를 앱 타일에 배치 하는 위치에 따라 그대로 둡니다. Resume 및 기타 수명 주기 이벤트를 처리 하는 방법에 대 한 자세한 내용은 [Windows 10 UWP 앱 수명 주기](/windows/uwp/launch-resume/app-lifecycle)를 참조 하세요.
+배치가 완료 되는 즉시 (앱에서 [앱 시작으로](app-model.md#protocols) 배치를 시작 하지 않은 경우) 앱이 시작 되기 시작 합니다. Windows Mixed Reality은 한 번에 제한 된 수의 앱을 실행할 수 있습니다. 앱을 시작 하 고 시작 하는 즉시 다른 활성 앱이 일시 중단 될 수 있습니다. 일시 중단 된 앱은 앱의 마지막 상태를 앱 타일에 배치 하는 위치에 따라 그대로 둡니다. resume 및 기타 수명 주기 이벤트를 처리 하는 방법에 대 한 자세한 내용은 [Windows 10 UWP 앱 수명 주기](/windows/uwp/launch-resume/app-lifecycle)를 참조 하세요.
 
 ![타일을 배치한 후 응용 프로그램 실행 중 ](images/slide2-500px.png) ![ , 일시 중지 됨 또는 실행 중이 아닌 앱에 대 한 상태 다이어그램 실행이 시작 됩니다.](images/ic576232-500px.png)<br>
 *Left: 타일을 배치 하면 앱이 실행 되기 시작 합니다. Right: 실행 중, 일시 중단 됨 또는 실행 중이 아닌 앱에 대 한 상태 다이어그램입니다.*
@@ -70,7 +70,7 @@ UWP 앱이 일시 중단 되 면 현재 상태의 스크린샷이 사용 됩니�
 
 앱이 활성화 되 면 표시할 보기 유형을 선택할 수 있습니다. 앱의 **CoreApplication** 에는 항상 기본 [앱 보기](/uwp/api/Windows.UI.ViewManagement.ApplicationView) 와 만들려는 앱 보기 수가 있습니다. 바탕 화면에서 앱 보기를 창으로 간주할 수 있습니다. 혼합 현실 앱 템플릿은 기본 앱 뷰가 [몰입](app-views.md)인 Unity 프로젝트를 만듭니다. 
 
-앱은 XAML과 같은 기술을 사용 하 여 추가 2D 앱 보기를 만들어 앱에서의 구매와 같은 Windows 10 기능을 사용할 수 있습니다. 앱이 다른 Windows 10 장치에 대 한 UWP 앱으로 시작 된 경우 기본 보기는 2D입니다. 그러나 volumetrically 환경을 보여 줄 수 있는 다른 앱 보기를 추가 하 여 혼합 현실에서 "강화" 할 수 있습니다. 전 세계 및 표면에 걸쳐 앱에서 사진을 flew는 슬라이드 쇼 단추가 몰입 형 앱 보기로 전환 된 사진 뷰어 앱을 XAML로 빌드하는 것을 상상해 보세요.
+앱은 XAML과 같은 기술을 사용 하 여 추가 2d 앱 보기를 만들어 앱에서의 구매와 같은 Windows 10 기능을 사용할 수 있습니다. 앱이 다른 Windows 10 장치에 대 한 UWP 앱으로 시작 된 경우 기본 보기는 2d입니다. 그러나 volumetrically 환경을 보여 줄 수 있는 다른 앱 보기를 추가 하 여 혼합 현실에서 "강화" 할 수 있습니다. 전 세계 및 표면에서 앱의 사진을 flew는 슬라이드 쇼 단추가 몰입 형 앱 보기로 전환 된 XAML로 사진 뷰어 앱을 빌드하는 Imagine 합니다.
 
 ![실행 중인 앱에는 2D 뷰 또는 몰입 형 보기가 있을 수 있습니다.](images/slide3-800px.png)<br>
 *실행 중인 앱에는 2D 뷰 또는 몰입 형 보기가 있을 수 있습니다.*
@@ -86,7 +86,7 @@ UWP 앱이 일시 중단 되 면 현재 상태의 스크린샷이 사용 됩니�
 ![몰입 형 보기에서 실행 되는 앱은 하나만 표시 됩니다.](images/slide4-800px.png)<br>
 *몰입 형 보기에서 실행 되는 앱은 하나만 표시 됩니다.*
 
-### <a name="2d-view-in-the-windows-mixed-reality-home"></a>Windows Mixed Reality 홈의 2D 보기
+### <a name="2d-view-in-the-windows-mixed-reality-home"></a>Windows Mixed Reality 홈의 2d 보기
 
 몰입 형 보기 이외의 모든 항목은 전 세계에서 2D 보기로 렌더링 됩니다.
 
@@ -97,7 +97,7 @@ UWP 앱이 일시 중단 되 면 현재 상태의 스크린샷이 사용 됩니�
 
 ### <a name="placement-of-additional-app-tiles"></a>추가 앱 타일 배치
 
-[보조 타일 api](/windows/uwp/design/shell/tiles-and-notifications/secondary-tiles)를 사용 하 여 전 세계에 2d 보기로 많은 앱을 추가할 수 있습니다. 이러한 "고정 된" 타일은 사용자가 입력 해야 하는 시작 화면으로 표시 되며 나중에 앱을 시작 하는 데 사용할 수 있습니다. Windows Mixed Reality는 현재 라이브 타일로 2D 타일 콘텐츠를 렌더링 하는 것을 지원 하지 않습니다.
+[보조 타일 api](/windows/uwp/design/shell/tiles-and-notifications/secondary-tiles)를 사용 하 여 전 세계에 2d 보기로 많은 앱을 추가할 수 있습니다. 이러한 "고정 된" 타일은 사용자가 입력 해야 하는 시작 화면으로 표시 되며 나중에 앱을 시작 하는 데 사용할 수 있습니다. Windows Mixed Reality 현재 라이브 타일로 2d 타일 콘텐츠를 렌더링 하는 것을 지원 하지 않습니다.
 
 ![앱은 보조 타일을 사용 하 여 여러 위치에 있을 수 있습니다.](images/slide6-800px.png)<br>
 *앱은 보조 타일을 사용 하 여 여러 위치에 있을 수 있습니다.*
@@ -116,56 +116,56 @@ UWP 앱이 일시 중단 되 면 현재 상태의 스크린샷이 사용 됩니�
 >* 가상 키보드를 시작 하거나 다른 앱을 활성화 해야 하는 경우 XAML 뷰로 다시 **async** 를 전환 해야 합니다.
 
 ![앱이 몰입 형 보기로 전환 될 때 2D 보기와 몰입 형 보기 간에 전환할 수 있습니다. ](images/slide7-600px.png) ![ 혼합 된 세계와 기타 앱은 사라집니다.](images/slide8-600px.png)<br>
-*Left: 앱이 2D 보기와 몰입 형 보기 간에 전환할 수 있습니다. 오른쪽: 응용 프로그램이 몰입 형 보기로 들어가면 Windows Mixed Reality 홈 및 기타 앱이 사라집니다.*
+*Left: 앱이 2D 보기와 몰입 형 보기 간에 전환할 수 있습니다. 오른쪽: 앱이 몰입 형 보기로 들어가면 Windows Mixed Reality 홈 및 기타 앱이 사라집니다.*
 
 #### <a name="switching-from-the-immersive-view-back-to-a-keyboard-xaml-view"></a>몰입 형 뷰에서 다시 키보드 XAML 뷰로 전환
 
-보기 간에 앞뒤로 전환 하는 한 가지 일반적인 이유는 혼합 현실 앱에서 키보드를 표시 하는 것입니다. 앱이 2D 보기를 표시 하는 경우에만 셸에서 시스템 키보드를 표시할 수 있습니다. 앱에서 텍스트 입력을 받아야 하는 경우 텍스트 입력 필드와 함께 사용자 지정 XAML 뷰를 제공 하 고, 전환 하 고, 입력이 완료 되 면 다시 전환할 수 있습니다.
+보기 간에 앞뒤로 전환 하는 한 가지 일반적인 이유는 혼합 현실 앱에서 키보드를 표시 하는 것입니다. 앱이 2D 보기를 표시하는 경우에만 셸에서 시스템 키보드를 표시할 수 있습니다. 앱에서 텍스트 입력을 받아야 하는 경우 텍스트 입력 필드가 있는 사용자 지정 XAML 보기를 제공하고, 해당 필드로 전환한 다음, 입력이 완료된 후 다시 전환할 수 있습니다.
 
-이전 섹션에서와 같이 **Applicationviewswitcher. SwitchAsync** 를 사용 하 여 몰입 형 뷰에서 XAML 뷰로 다시 전환할 수 있습니다.
+이전 섹션과 마찬가지로 **ApplicationViewSwitcher.SwitchAsync를** 사용하여 몰입형 보기에서 XAML 보기로 다시 전환할 수 있습니다.
 
 ## <a name="app-size"></a>앱 크기
 
-2D 앱 보기는 고정 가상 슬레이트에 항상 표시 됩니다. 이렇게 하면 모든 2D 보기에서 정확히 동일한 양의 콘텐츠가 표시 됩니다. 응용 프로그램의 2D 보기 크기에 대 한 자세한 내용은 다음과 같습니다.
-* 크기를 조정 하는 동안 앱의 가로 세로 비율이 유지 됩니다.
-* 크기를 조정 하면 앱 [해상도 및 배율 인수가](../develop/porting-apps/building-2d-apps.md#2d-app-view-resolution-and-scale-factor) 변경 되지 않습니다.
-* 앱은 전 세계의 실제 크기를 쿼리할 수 없습니다.
+2D 앱 보기는 항상 고정 가상 슬레이트에 표시됩니다. 이렇게 하면 모든 2D 보기에 정확히 동일한 양의 콘텐츠가 표시됩니다. 앱의 2D 보기 크기에 대한 자세한 내용은 다음과 같습니다.
+* 크기를 조정하는 동안 앱의 가로 세로 비율이 유지됩니다.
+* 앱 [해상도 및 배율 비율은](../develop/porting-apps/building-2d-apps.md#2d-app-view-resolution-and-scale-factor) 크기 조정에 의해 변경되지 않습니다.
+* 앱은 전 세계에서 실제 크기를 쿼리할 수 없습니다.
 
-![2D 앱은 고정 된 창 크기로 표시 됩니다.](images/12493521-10104043956964683-6118765685995662420-o-500px.jpg)<br>
-*2D 보기가 있는 앱은 고정 된 창 크기로 표시 됩니다.*
+![2D 앱이 고정 창 크기로 표시됨](images/12493521-10104043956964683-6118765685995662420-o-500px.jpg)<br>
+*2D 보기가 있는 앱은 고정 창 크기로 표시됩니다.*
 
 ## <a name="app-tiles"></a>앱 타일
 
-시작 메뉴는 고정의 경우 표준 작은 타일 및 중간 타일과 혼합 현실의 **모든 앱** 목록을 사용 합니다. 
+시작 메뉴 핀에 표준 소형 타일 및 중간 타일을 사용하고 혼합 현실의 **모든 앱** 목록을 사용합니다. 
 
-![Windows Mixed Reality의 시작 메뉴](images/start-500px.png)<br>
-*Windows Mixed Reality의 시작 메뉴*
+![Windows Mixed Reality 대한 시작 메뉴](images/start-500px.png)<br>
+*Windows Mixed Reality 대한 시작 메뉴*
 
 ## <a name="app-to-app-interactions"></a>앱 간 상호 작용
 
-앱을 빌드할 때 Windows 10에서 사용할 수 있는 앱 통신 메커니즘에 대 한 다양 한 앱에 액세스할 수 있습니다. 많은 새 프로토콜 Api 및 파일 등록은 HoloLens에서 완벽 하 게 작동 하 여 앱 시작 및 통신을 가능 하 게 합니다. 
+앱을 빌드할 때 Windows 10 사용할 수 있는 풍부한 앱 간 통신 메커니즘에 액세스할 수 있습니다. 대부분의 새로운 프로토콜 API 및 파일 등록은 앱 시작 및 통신을 가능하게 하는 HoloLens 완벽하게 작동합니다. 
 
-데스크톱 헤드셋의 경우 지정 된 파일 확장명 또는 프로토콜과 연결 된 앱은 데스크톱 모니터나 데스크톱 슬레이트에만 나타날 수 있는 Win32 앱 일 수 있습니다.
+데스크톱 헤드셋의 경우 지정된 파일 확장명 또는 프로토콜과 연결된 앱은 데스크톱 모니터 또는 데스크톱 슬레이트에만 나타날 수 있는 Win32 앱일 수 있습니다.
 
 ### <a name="protocols"></a>프로토콜
 
-HoloLens는Windows.System를 통해 앱을 시작 하도록 지원 [ 합니다. 시작 관리자 Api](/uwp/api/Windows.System.Launcher).
+HoloLens [Windows.System.시작 관리자 API를](/uwp/api/Windows.System.Launcher)통해 앱 시작 앱을 지원합니다.
 
-다른 응용 프로그램을 시작 하는 경우 고려해 야 할 몇 가지 사항이 있습니다.
+다른 애플리케이션을 시작할 때 고려해야 할 몇 가지 사항이 있습니다.
 
-* [LaunchUriAsync](/uwp/api/Windows.System.Launcher#Windows_System_Launcher_LaunchUriAsync_Windows_Foundation_Uri_)와 같이 모달이 아닌 시작을 수행할 때는 사용자가 앱과 상호 작용 하기 전에 앱을 두어야 합니다.
+* [LaunchUriAsync와](/uwp/api/Windows.System.Launcher#Windows_System_Launcher_LaunchUriAsync_Windows_Foundation_Uri_)같은 비모달 시작 작업을 수행하는 경우 사용자는 상호 작용하기 전에 앱을 배치해야 합니다.
 
-* [LaunchUriForResultsAsync](/uwp/api/Windows.System.Launcher#Windows_System_Launcher_LaunchUriForResultsAsync_Windows_Foundation_Uri_Windows_System_LauncherOptions_Windows_Foundation_Collections_ValueSet_)등의 모달 시작을 수행할 때 모달 앱은 창 위에 배치 됩니다.
+* [LaunchUriForResultsAsync를](/uwp/api/Windows.System.Launcher#Windows_System_Launcher_LaunchUriForResultsAsync_Windows_Foundation_Uri_Windows_System_LauncherOptions_Windows_Foundation_Collections_ValueSet_)통해 모달을 시작하는 경우와 같이 모달 앱이 창 위에 배치됩니다.
 
-* Windows Mixed Reality는 전용 보기 위에 응용 프로그램을 오버레이 할 수 없습니다. 시작 된 앱을 표시 하기 위해 Windows는 응용 프로그램을 표시 하기 위해 사용자를 다시 사용 합니다.
+* Windows Mixed Reality 배타적 보기 위에 애플리케이션을 오버레이할 수 없습니다. 시작된 앱을 표시하기 위해 Windows 사용자를 전 세계로 돌아가 애플리케이션을 표시합니다.
 
 ### <a name="file-pickers"></a>파일 선택기
 
-HoloLens는 [Fileopenpicker](/uwp/api/Windows.Storage.Pickers.FileOpenPicker) 와 [FileSavePicker](/uwp/api/Windows.Storage.Pickers.FileSavePicker) 계약을 모두 지원 합니다. 그러나 파일 선택기 계약을 충족 하는 미리 설치 된 앱은 없습니다. 이러한 앱 (예: OneDrive)은 Microsoft Store에서 설치할 수 있습니다.
+HoloLens [FileOpenPicker](/uwp/api/Windows.Storage.Pickers.FileOpenPicker) 및 [FileSavePicker](/uwp/api/Windows.Storage.Pickers.FileSavePicker) 계약을 모두 지원합니다. 그러나 파일 선택기 계약을 충족하는 앱이 미리 설치되어 있지 않습니다. 이러한 앱(예: OneDrive)은 Microsoft Store 설치할 수 있습니다.
 
-하나 이상의 파일 선택 앱이 설치 되어 있는 경우 시작할 앱을 선택할 수 있는 명확성 UI가 표시 되지 않습니다. 대신 설치 된 첫 번째 파일 선택이 선택 됩니다. 파일을 저장할 때 타임 스탬프를 포함 하는 파일 이름이 생성 됩니다. 이 이미지는 사용자가 변경할 수 없습니다.
+파일 선택기 앱이 두 개 이상 설치된 경우 시작할 앱을 선택하기 위한 명확한 UI가 표시되지 않습니다. 대신 설치된 첫 번째 파일 선택기가 선택됩니다. 파일을 저장할 때 타임스탬프를 포함하는 파일 이름이 생성됩니다. 이 이미지는 사용자가 변경할 수 없습니다.
 
-기본적으로 다음 확장은 로컬에서 지원 됩니다.
+기본적으로 다음 확장은 로컬에서 지원됩니다.
 
 |  앱  |  확장 | 
 |----------|----------|
@@ -174,40 +174,40 @@ HoloLens는 [Fileopenpicker](/uwp/api/Windows.Storage.Pickers.FileOpenPicker) �
 
 ### <a name="app-contracts-and-windows-mixed-reality-extensions"></a>앱 계약 및 Windows Mixed Reality 확장
 
-앱 계약 및 확장 지점은 앱을 등록 하 여 파일 확장명을 처리 하거나 백그라운드 작업을 사용 하는 것과 같은 보다 심층적인 운영 체제 기능을 활용할 수 있습니다. HoloLens의 지원 되거나 지원 되지 않는 계약과 확장 지점의 목록입니다.
+앱 계약 및 확장 지점을 사용하면 파일 확장명 처리 또는 백그라운드 작업 사용과 같은 보다 심층적인 운영 체제 기능을 활용하도록 앱을 등록할 수 있습니다. HoloLens 지원되는 계약 및 지원되지 않는 계약 및 확장 지점의 목록입니다.
 
 |  계약 또는 확장  |  지원 여부 | 
 |----------|----------|
-| [계정 그림 공급자 (확장)](/previous-versions/windows/apps/hh464906(v=win.10)#account_picture_provider) | 지원되지 않음 | 
+| [계정 그림 공급자(확장)](/previous-versions/windows/apps/hh464906(v=win.10)#account_picture_provider) | 지원되지 않음 | 
 | [경보](/previous-versions/windows/apps/hh464906(v=win.10)#alarm) | 지원되지 않음 | 
-| [App service](/previous-versions/windows/apps/hh464906(v=win.10)#app_service) | 지원 되지만 완전 하 게 작동 하지 않음 | 
+| [App service](/previous-versions/windows/apps/hh464906(v=win.10)#app_service) | 지원되지만 완벽하게 작동하지 않음 | 
 | [약속 공급자](/previous-versions/windows/apps/hh464906(v=win.10)#appointmnets_provider) | 지원되지 않음 | 
-| [자동 재생 (확장)](/previous-versions/windows/apps/hh464906(v=win.10)#autoplay) | 지원되지 않음 | 
-| [백그라운드 작업 (확장)](/previous-versions/windows/apps/hh464906(v=win.10)#background_tasts) | 부분적으로 지원 됨 (일부 트리거가 작동 하지 않음) | 
-| [작업 업데이트 (확장)](/previous-versions/windows/apps/hh464906(v=win.10)#update_task) | 지원됨 | 
-| [캐시 된 파일 업데이트 프로그램 계약](/previous-versions/windows/apps/hh464906(v=win.10)#cached_file_updater) | 지원됨 | 
-| [카메라 설정 (확장)](/previous-versions/windows/apps/hh464906(v=win.10)#camera_settings) | 지원되지 않음 | 
+| [AutoPlay(확장)](/previous-versions/windows/apps/hh464906(v=win.10)#autoplay) | 지원되지 않음 | 
+| [백그라운드 작업(확장)](/previous-versions/windows/apps/hh464906(v=win.10)#background_tasts) | 부분적으로 지원됨(일부 트리거가 작동하지 않음) | 
+| [업데이트 작업(확장)](/previous-versions/windows/apps/hh464906(v=win.10)#update_task) | 지원 여부 | 
+| [캐시된 파일 업데이트기 계약](/previous-versions/windows/apps/hh464906(v=win.10)#cached_file_updater) | 지원 여부 | 
+| [카메라 설정(확장)](/previous-versions/windows/apps/hh464906(v=win.10)#camera_settings) | 지원되지 않음 | 
 | [전화 걸기 프로토콜](/previous-versions/windows/apps/hh464906(v=win.10)#dial_protocol) | 지원되지 않음 | 
-| [파일 활성화 (확장)](/previous-versions/windows/apps/hh464906(v=win.10)#file_activation) | 지원됨 | 
-| [파일 열기 선택기 계약](/previous-versions/windows/apps/hh464906(v=win.10)#file_open_picker_contract) | 지원됨 | 
-| [파일 저장 선택기 계약](/previous-versions/windows/apps/hh464906(v=win.10)#file_save_picker_contract) | 지원됨 | 
+| [파일 활성화(확장명)](/previous-versions/windows/apps/hh464906(v=win.10)#file_activation) | 지원 여부 | 
+| [파일 열기 선택기 계약](/previous-versions/windows/apps/hh464906(v=win.10)#file_open_picker_contract) | 지원 여부 | 
+| [파일 저장 선택기 계약](/previous-versions/windows/apps/hh464906(v=win.10)#file_save_picker_contract) | 지원 여부 | 
 | [잠금 화면 호출](/previous-versions/windows/apps/hh464906(v=win.10)#lock_screen_call) | 지원되지 않음 | 
 | [미디어 재생](/previous-versions/windows/apps/hh464906(v=win.10)#media_playback) | 지원되지 않음 | 
-| [계약까지 재생](/previous-versions/windows/apps/hh464906(v=win.10)#playto_contract) | 지원되지 않음 | 
-| [사전 설치 된 구성 작업](/previous-versions/windows/apps/hh464906(v=win.10)#preinstalled_config_task) | 지원되지 않음 | 
-| [3D 워크플로 인쇄](/previous-versions/windows/apps/hh464906(v=win.10)#print_3d_workflow) | 지원됨 | 
-| [인쇄 작업 설정 (확장)](/previous-versions/windows/apps/hh464906(v=win.10)#print_task_settings) | 지원되지 않음 | 
-| [URI 활성화 (확장)](/previous-versions/windows/apps/hh464906(v=win.10)#protocol_activation) | 지원됨 | 
-| [제한 된 시작](/previous-versions/windows/apps/hh464906(v=win.10)#restricted_launch) | 지원되지 않음 | 
+| [원격 재생 계약](/previous-versions/windows/apps/hh464906(v=win.10)#playto_contract) | 지원되지 않음 | 
+| [미리 설치된 구성 작업](/previous-versions/windows/apps/hh464906(v=win.10)#preinstalled_config_task) | 지원되지 않음 | 
+| [3D 인쇄 워크플로](/previous-versions/windows/apps/hh464906(v=win.10)#print_3d_workflow) | 지원 여부 | 
+| [인쇄 작업 설정(확장)](/previous-versions/windows/apps/hh464906(v=win.10)#print_task_settings) | 지원되지 않음 | 
+| [URI 활성화(확장)](/previous-versions/windows/apps/hh464906(v=win.10)#protocol_activation) | 지원 여부 | 
+| [제한된 시작](/previous-versions/windows/apps/hh464906(v=win.10)#restricted_launch) | 지원되지 않음 | 
 | [계약 검색](/previous-versions/windows/apps/hh464906(v=win.10)#search_contract) | 지원되지 않음 | 
 | [설정 계약](/previous-versions/windows/apps/hh464906(v=win.10)#settings_contract) | 지원되지 않음 | 
 | [계약 공유](/previous-versions/windows/apps/hh464906(v=win.10)#share_contract) | 지원되지 않음 | 
-| [SSL/인증서 (확장)](/previous-versions/windows/apps/hh464906(v=win.10)#ssl_certificates) | 지원됨 | 
-| [웹 계정 공급자](/previous-versions/windows/apps/hh464906(v=win.10)#web_account_provider) | 지원됨 | 
+| [SSL/인증서(확장)](/previous-versions/windows/apps/hh464906(v=win.10)#ssl_certificates) | 지원 여부 | 
+| [웹 계정 공급자](/previous-versions/windows/apps/hh464906(v=win.10)#web_account_provider) | 지원 여부 | 
 
-## <a name="app-file-storage"></a>앱 파일 저장소
+## <a name="app-file-storage"></a>앱 파일 스토리지
 
-모든 저장소는 [Windows. storage 네임 스페이스](/uwp/api/Windows.Storage)를 통해 진행 됩니다. HoloLens는 앱 저장소 동기화/로밍을 지원 하지 않습니다. 자세한 내용은 아래 설명서를 확인 하세요.
+모든 저장소는 [Windows 네임 스페이스](/uwp/api/Windows.Storage)를 통해 Storage 됩니다. HoloLens는 앱 저장소 동기화/로밍을 지원 하지 않습니다. 자세한 내용은 아래 설명서를 확인 하세요.
 
 * [파일, 폴더 및 라이브러리](/windows/uwp/files/index)
 * [설정과 기타 앱 데이터의 저장 및 검색](/windows/uwp/design/app-settings/store-and-retrieve-app-data)
@@ -218,7 +218,7 @@ UWP 앱에 대 한 자세한 내용은 [Knownfolders](/uwp/api/Windows.Storage.K
 
 <table>
 <tr>
-<th> 속성</th><th> HoloLens에서 지원 됨</th><th> 모던 헤드셋에서 지원 됨</th><th> 설명</th>
+<th> 속성</th><th> HoloLens에서 지원</th><th> 모던 헤드셋에서 지원 됨</th><th> Description</th>
 </tr><tr>
 <td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_AppCaptures">AppCaptures</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>앱 캡처 폴더를 가져옵니다.</td>
 </tr><tr>
@@ -250,13 +250,13 @@ UWP 앱에 대 한 자세한 내용은 [Knownfolders](/uwp/api/Windows.Storage.K
 
 ## <a name="app-package"></a>앱 패키지
 
-Windows 10에서는 더 이상 운영 체제를 대상으로 하지 않고 대신 [하나 이상의 장치 제품군으로 앱을 대상](/windows/uwp/get-started/universal-application-platform-guide#device-families)으로 합니다. 장치 패밀리는 장치 제품군 내의 장치에서 예측할 수 있는 Api, 시스템 특성 및 동작을 식별 합니다. 또한 [Microsoft Store](../distribute/submitting-an-app-to-the-microsoft-store.md#specifying-target-device-families)에서 앱을 설치할 수 있는 장치 집합을 결정 합니다.
+Windows 10를 사용 하면 더 이상 운영 체제를 대상으로 하는 것이 아니라 [하나 이상의 장치 제품군으로 앱을 대상](/windows/uwp/get-started/universal-application-platform-guide#device-families)으로 합니다. 장치 패밀리는 장치 제품군 내의 장치에서 예측할 수 있는 Api, 시스템 특성 및 동작을 식별 합니다. 또한 [Microsoft Store](../distribute/submitting-an-app-to-the-microsoft-store.md#specifying-target-device-families)에서 앱을 설치할 수 있는 장치 집합을 결정 합니다.
 
-* 데스크톱 헤드셋 및 HoloLens를 모두 대상으로 하려면 앱을 Windows로 대상으로 **합니다. 유니버설** 장치 제품군.
-* 데스크톱 헤드셋만을 대상으로 하려면 앱을 **Windows 데스크톱** 장치 제품군으로 대상으로 합니다.
-* HoloLens만을 대상으로 하려면 앱을 **Holographic** 장치 제품군으로 대상으로 합니다.
+* 데스크톱 헤드셋과 HoloLens를 모두 대상으로 하려면 앱을 Windows 대상으로 **합니다. 유니버설** 장치 제품군.
+* 데스크톱 헤드셋만을 대상으로 하려면 앱을 Windows으로 대상으로 **합니다. 데스크톱** 장치 제품군.
+* HoloLens만 대상으로 하려면 앱을 Windows 대상으로 **합니다. Holographic** 장치 제품군.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 * [앱 보기](app-views.md)
 * [혼합 현실에 사용되는 2D UWP 앱 업데이트](../develop/porting-apps/building-2d-apps.md)

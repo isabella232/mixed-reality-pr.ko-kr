@@ -1,26 +1,26 @@
 ---
 title: 입력 애니메이션 파일 형식
-description: MRTK의 입력 애니메이션 이진 파일 형식 사양에 대한 설명서
+description: MRTK의 입력 애니메이션 이진 파일 형식 사양에 대 한 설명서
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK
-ms.openlocfilehash: 400212d80833f5d8dfbb3c5265c755ed2e127131
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: bf77d976c9c894e6cf455a3a6b0e0c538912af2a9e8f8e2c7e847ba6e4657140
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177005"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115222765"
 ---
 # <a name="input-animation-file-format"></a>입력 애니메이션 파일 형식
 
 ## <a name="overall-structure"></a>전체 구조
 
-입력 애니메이션 이진 파일은 64비트 정수 매직 넘버로 시작합니다. 16진수 표기에서 이 숫자의 값은 `0x6a8faf6e0f9e42c6` 이며 유효한 입력 애니메이션 파일을 식별하는 데 사용할 수 있습니다.
+입력 애니메이션 이진 파일은 64 비트 정수 매직 숫자로 시작 합니다. 이 숫자의 16 진수 표기법 값은 이며 `0x6a8faf6e0f9e42c6` 유효한 입력 애니메이션 파일을 식별 하는 데 사용할 수 있습니다.
 
-다음 8바이트는 파일의 주 버전 및 부 버전 번호를 선언하는 두 개의 Int32 값입니다.
+다음 8 바이트는 파일의 주 버전 번호와 부 버전 번호를 선언 하는 두 개의 Int32 값입니다.
 
-파일의 나머지 부분은 버전 번호 간에 변경 될 수 있는 애니메이션 데이터에 의해 수행됩니다.
+파일의 나머지 부분은 애니메이션 데이터에 의해 수행 되며 버전 번호 사이에서 변경 될 수 있습니다.
 
 | 섹션 | 형식 |
 |---------|------|
@@ -31,52 +31,52 @@ ms.locfileid: "113177005"
 
 ## <a name="version-11"></a>버전 1.1
 
-입력 애니메이션 데이터는 애니메이션에 카메라, 손 및 시선 응시 데이터와 애니메이션 곡선 시퀀스가 포함되는지 여부를 나타내는 세 개의 부울 값으로 구성됩니다. 존재하는 곡선은 이러한 부울의 값에 따라 달라집니다. 각 곡선에는 서로 다른 수의 키 프레임이 있을 수 있습니다.
+입력 애니메이션 데이터는 애니메이션에 카메라, 손 모양 및 눈에 맞는 데이터를 포함 하 고 그 다음에 애니메이션 곡선의 시퀀스를 포함할지 여부를 나타내는 세 개의 부울 값으로 구성 됩니다. 표시 되는 곡선은 이러한 부울 값에 따라 달라 집니다. 각 곡선의 키 프레임 수는 다를 수 있습니다.
 
 | 섹션 | 형식 | 참고 |
 |---------|------|------|
-| 카메라 자세가 있습니다. | 부울 | |
-| 손 데이터 사용 | 부울 | |
-| 시선 응시| 부울 | |
-| 카메라 | [자세 곡선](#pose-curves) | 카메라 자세가 true인 경우에만 |
-| 왼쪽에서 손 추적 | [부울 곡선](#boolean-curve) | 손 데이터 사용이 true인 경우에만 |
-| 직접 추적 오른쪽 | [부울 곡선](#boolean-curve) | 손 데이터 사용이 true인 경우에만 |
-| 왼쪽 손가락 모으기 | [부울 곡선](#boolean-curve) | 손 데이터 사용이 true인 경우에만 |
-| 오른쪽 손가락 모으기 | [부울 곡선](#boolean-curve) | 손 데이터 사용이 true인 경우에만 |
-| 왼쪽 손 조인트 | [공동 자세 곡선](#joint-pose-curves) | 손 데이터 사용이 true인 경우에만 |
-| 손 조인트 오른쪽 | [공동 자세 곡선](#joint-pose-curves) | 손 데이터 사용이 true인 경우에만 |
-| 시선 응시 | [Ray Curves](#ray-curves)] | 시선 응시가 true인 경우에만 |
+| 카메라 포즈 있음 | 부울 | |
+| 직접 데이터 있음 | 부울 | |
+| 아이 응시 있음| 부울 | |
+| 카메라 | [포즈 곡선](#pose-curves) | 가 카메라 포즈 인 경우에만 |
+| 왼쪽 추적 | [부울 곡선](#boolean-curve) | 가 손 데이터를 만족 하는 경우에만 |
+| 직접 추적 권한 | [부울 곡선](#boolean-curve) | 가 손 데이터를 만족 하는 경우에만 |
+| 손 집기 Left | [부울 곡선](#boolean-curve) | 가 손 데이터를 만족 하는 경우에만 |
+| 손 집기 Right | [부울 곡선](#boolean-curve) | 가 손 데이터를 만족 하는 경우에만 |
+| 왼쪽 조인트 | [조인트 포즈 곡선](#joint-pose-curves) | 가 손 데이터를 만족 하는 경우에만 |
+| 직접 조인트 | [조인트 포즈 곡선](#joint-pose-curves) | 가 손 데이터를 만족 하는 경우에만 |
+| 아이 응시 | [광선 곡선](#ray-curves)] | 이 true 인 경우에만 true |
 
 ## <a name="version-10"></a>버전 1.0
 
-입력 애니메이션 데이터는 애니메이션 곡선 시퀀스로 구성됩니다. 애니메이션 곡선의 수와 의미는 고정되어 있지만 각 곡선의 키 프레임 수는 서로 다를 수 있습니다.
+입력 애니메이션 데이터는 애니메이션 곡선의 시퀀스로 구성 됩니다. 애니메이션 곡선의 수와 의미가 고정 되어 있지만 각 곡선의 키 프레임 수는 다를 수 있습니다.
 
 | 섹션 | 형식 |
 |---------|------|
-| 카메라 | [자세 곡선](#pose-curves) |
-| 왼쪽에서 손 추적 | [부울 곡선](#boolean-curve) |
-| 직접 추적 오른쪽 | [부울 곡선](#boolean-curve) |
-| 왼쪽 손가락 모으기 | [부울 곡선](#boolean-curve) |
-| 오른쪽 손가락 모으기 | [부울 곡선](#boolean-curve) |
-| 왼쪽 손 조인트 | [공동 자세 곡선](#joint-pose-curves) |
-| 손 조인트 오른쪽 | [공동 자세 곡선](#joint-pose-curves) |
+| 카메라 | [포즈 곡선](#pose-curves) |
+| 왼쪽 추적 | [부울 곡선](#boolean-curve) |
+| 직접 추적 권한 | [부울 곡선](#boolean-curve) |
+| 손 집기 Left | [부울 곡선](#boolean-curve) |
+| 손 집기 Right | [부울 곡선](#boolean-curve) |
+| 왼쪽 조인트 | [조인트 포즈 곡선](#joint-pose-curves) |
+| 직접 조인트 | [조인트 포즈 곡선](#joint-pose-curves) |
 
-### <a name="joint-pose-curves"></a>공동 자세 곡선
+### <a name="joint-pose-curves"></a>조인트 포즈 곡선
 
-각 손의 경우 일련의 조인 애니메이션 곡선이 저장됩니다. 조인 수가 고정되고 각 조인에 대해 자세 곡선 집합이 저장됩니다.
+각 손에 대해 조인트 애니메이션 곡선의 시퀀스가 저장 됩니다. 조인트 수가 고정 되 고 각 조인트에 대해 포즈 곡선 집합이 저장 됩니다.
 
 | 섹션 | 형식 |
 |---------|------|
-| 없음 | [자세 곡선](#pose-curves) |
-| 손목 | [자세 곡선](#pose-curves) |
-| Palm | [자세 곡선](#pose-curves) |
-| ThumbMetacarpalJoint | [자세 곡선](#pose-curves) |
-| ThumbProximalJoint | [자세 곡선](#pose-curves) |
-| ThumbDistalJoint | [자세 곡선](#pose-curves) |
-| ThumbTip | [자세 곡선](#pose-curves) |
-| IndexMetacarpal | [자세 곡선](#pose-curves) |
-| IndexKnuckle | [자세 곡선](#pose-curves) |
-| IndexMiddleJoint | [자세 곡선](#pose-curves) |
+| 없음 | [포즈 곡선](#pose-curves) |
+| 손목 | [포즈 곡선](#pose-curves) |
+| Palm | [포즈 곡선](#pose-curves) |
+| ThumbMetacarpalJoint | [포즈 곡선](#pose-curves) |
+| ThumbProximalJoint | [포즈 곡선](#pose-curves) |
+| ThumbDistalJoint | [포즈 곡선](#pose-curves) |
+| ThumbTip | [포즈 곡선](#pose-curves) |
+| IndexMetacarpal | [포즈 곡선](#pose-curves) |
+| IndexKnuckle | [포즈 곡선](#pose-curves) |
+| IndexMiddleJoint | [포즈 곡선](#pose-curves) |
 | IndexDistalJoint | [자세 곡선](#pose-curves) |
 | IndexTip | [자세 곡선](#pose-curves) |
 | MiddleMetacarpal | [자세 곡선](#pose-curves) |
@@ -97,7 +97,7 @@ ms.locfileid: "113177005"
 
 ### <a name="pose-curves"></a>자세 곡선
 
-자세 곡선은 위치 벡터에 대한 3개의 애니메이션 곡선 시퀀스로, 회전 쿼터니언에 4개의 애니메이션 곡선이 잇습니다.
+자세 곡선은 위치 벡터에 대한 3개의 애니메이션 곡선 시퀀스로, 회전 쿼터니언에 대해 4개의 애니메이션 곡선이 잇는 시퀀스입니다.
 
 | 섹션 | 형식 |
 |---------|------|
@@ -124,7 +124,7 @@ ms.locfileid: "113177005"
 
 ### <a name="float-curve"></a>Float 곡선
 
-부동 소수점 곡선은 가변 개수의 키 프레임이 있는 완전히 얽힌 3차원 곡선입니다. 각 키 프레임은 시간 및 곡선 값뿐만 아니라 각 키 프레임의 왼쪽과 오른쪽에 탄젠트 및 가중치를 저장합니다.
+부동 소수점 곡선은 가변 개수의 키 프레임이 있는 완전 3차원 곡선입니다. 각 키 프레임은 시간 및 곡선 값뿐만 아니라 각 키 프레임의 왼쪽과 오른쪽에 탄젠트 및 가중치를 저장합니다.
 
 | 섹션 | 형식 |
 |---------|------|

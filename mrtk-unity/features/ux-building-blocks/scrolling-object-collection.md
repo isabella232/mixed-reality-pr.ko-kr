@@ -1,20 +1,20 @@
 ---
-title: 스크롤 개체 컬렉션
+title: 개체 컬렉션 스크롤
 description: 개요 메뉴 유형 MRTK
 author: vaoliva
 ms.author: vaolivaa
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, 스크롤 개체
-ms.openlocfilehash: a724b9fb4a0f72910e16353a6c76b9e31005a76e
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: a97ea9919cf484cf5240dde027f38baca37ba9570588bca032bee9c116aed873
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176607"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221755"
 ---
-# <a name="scrolling-object-collection"></a>스크롤 개체 컬렉션
+# <a name="scrolling-object-collection"></a>개체 컬렉션 스크롤
 
-![스크롤 개체 컬렉션](../images/scrolling-collection/ScrollingCollection_Main.jpg)
+![개체 컬렉션 스크롤](../images/scrolling-collection/ScrollingCollection_Main.jpg)
 
 MRTK 스크롤 개체 컬렉션은 포함된 보기 가능한 영역을 통해 3D 콘텐츠를 스크롤할 수 있는 UX 구성 요소입니다. 스크롤 이동은 근사 또는 원거리 입력 상호 작용 및 개별 페이지 지정을 통해 트리거할 수 있습니다. 대화형 개체와 비대화형 개체를 모두 지원합니다.
 
@@ -40,7 +40,7 @@ MRTK 스크롤 개체 컬렉션은 포함된 보기 가능한 영역을 통해 3
 
 ### <a name="adding-content-to-the-scrolling-object"></a>스크롤 개체에 콘텐츠 추가
 
-스크롤 개체 컬렉션을 그리드 개체 [컬렉션과](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection) 결합하여 균일한 크기와 간격을 갖는 정렬된 요소의 그리드에서 콘텐츠를 레이아웃할 수 있습니다.
+스크롤 개체 컬렉션을 그리드 개체 [컬렉션과](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection) 결합하여 크기 및 간격이 균일한 정렬된 요소의 그리드에서 콘텐츠를 레이아웃할 수 있습니다.
 
 1. 스크롤 컨테이너의 자식으로 빈 게임 개체를 만듭니다.
 1. 게임 개체에 그리드 개체 컬렉션 구성 요소를 추가합니다.
@@ -62,7 +62,7 @@ MRTK 스크롤 개체 컬렉션은 포함된 보기 가능한 영역을 통해 3
 
 ### <a name="configuring-the-scrolling-viewable-area"></a>스크롤할 수 있는 영역 구성
 
-1. 개체의 단일 열을 세로로 스크롤하려면 검사기 탭에서 스크롤 개체 컬렉션을 다음과 같이 구성합니다.
+1. 개체의 단일 열을 세로로 스크롤하려면 검사기 탭에서 다음과 같이 스크롤 개체 컬렉션을 구성합니다.
     * **계층당 셀** 수: 1
     * 원하는 표시 행 수에 따라 **페이지당 계층** 수를 선택합니다.
 1. 콘텐츠 개체의 크기에 따라 **페이지 셀 너비**, **높이** 및 **깊이를** 변경합니다.
@@ -110,51 +110,51 @@ public class ScrollablePagination : MonoBehaviour
 | 고급 설정           | Description                                                                                                                                                                |
 | :-------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 마스크 편집 모드              | 클리핑 상자 마스킹 경계를 정의하기 위한 편집 모드입니다. 'Auto'는 자동으로 페이지 지정 값을 사용합니다. 'Manual'을 사용하면 클리핑 상자 개체를 직접 조작할 수 있습니다. |
-| 충돌자 편집 모드          | 스크롤 상호 작용 충돌 경계를 정의하기 위한 모드를 편집합니다. 'Auto'는 자동으로 페이지 지정 값을 사용합니다. '수동'을 사용하면 충돌체를 직접 조작할 수 있습니다.     |
+| 충돌자 편집 모드          | 스크롤 상호 작용 충돌 경계를 정의하기 위한 모드를 편집합니다. 'Auto'는 자동으로 페이지 지정 값을 사용합니다. 'Manual'을 사용하면 충돌체를 직접 조작할 수 있습니다.     |
 | 스크롤 가능                  | 근접/원거리 상호 작용을 사용하여 스크롤을 사용하거나 사용하지 않도록 설정합니다.                                                                                                                      |
 | 미리 렌더링할 때 사용           | scrollingObjectCollection이 Camera OnPreRender 이벤트를 사용하여 콘텐츠 표시 여부를 관리할지 여부를 전환합니다.                                                          |
 | 페이지가 지정 곡선            | 페이지가 지정하는 애니메이션 곡선입니다.                                                                                                                                            |
 | 애니메이션 길이            | PaginationCurve가 평가하는 데 걸리는 시간(초)입니다.                                                                                                 |
 | 손 델타 스크롤 임계값 | 거리(미터)는 스크롤 끌기를 트리거하기 전에 현재 포인터가 스크롤 방향을 따라 이동될 수 있습니다.                                                        |
-| 전면 터치 거리        | 거리(미터)는 터치 조작이 스크롤 보기의 앞에서 시작되었는지 확인하는 데 사용되는 로컬 xy 평면을 배치합니다.                                           |
+| 전면 터치 거리        | 거리(미터)는 터치 상호 작용이 스크롤 보기의 앞에서 시작되었는지 확인하는 데 사용되는 로컬 xy 평면을 배치합니다.                                           |
 | 릴리스 임계값           | 터치 개입에서 해제로 전환하는 데 필요한 스크롤 경계에서 인출된 양(미터)입니다.                                                                |
 
 | 속도            | Description                                                                                                 |
 | ------------------- | ----------------------------------------------------------------------------------------------------------- |
 | 속도 유형    | 스크롤러에 대해 원하는 속도 대체 형식입니다.                                                      |
-| Velocity 승수 | 스크롤에 적용할 (추가) 속도입니다.                                                       |
+| 속도 승수 | 스크롤에 적용할 (추가) 속도입니다.                                                       |
 | Velocity 지체     | 속도에 적용되는 falloff의 양입니다.                                                                  |
 | 반송 승수   | 프레임당 폴오프 또는 항목당 폴오프를 사용할 때 목록의 오버스크롤에 더 많은 반송을 추가하는 승수입니다. |
 
 | 디버그 옵션         | Description                                                                                                 |
 | --------------------- | ----------------------------------------------------------------------------------------------------------- |
-| 마스크 사용          | 스크롤 콘텐츠의 표시 모드입니다. 기본값은 표시 가능한 스크롤 영역 밖의 모든 개체를 마스킹 합니다. |
-| 임계값 평면 표시 | True 이면 편집기에서 스크롤 경계를 중심으로 터치 릴리스 임계값 비행기를 렌더링 합니다.            |
-| 디버그 페이지 매김      | 이 섹션을 사용 하 여 런타임 중 스크롤 페이지 매김을 디버깅할 수 있습니다.                                             |
+| 마스크 사용          | 스크롤 콘텐츠의 표시 모드입니다. 기본값은 스크롤 표시 가능 영역 외부의 모든 개체를 마스킹합니다. |
+| 임계값 평면 표시 | true이면 편집기는 스크롤 경계를 중심으로 터치 릴리스 임계값 평면을 렌더링합니다.            |
+| 디버그 페이지 지정      | 이 섹션을 사용하여 런타임 중에 스크롤 페이지 지정을 디버그할 수 있습니다.                                             |
 
 | 이벤트              | Description                                                                                                                   |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| 클릭 시            | 스크롤 배경 collider 또는 해당 대화형 콘텐츠로 인해 클릭이 수신 되 면 트리거됩니다.                             |
-| 터치 시작 시    | Scroll background collider 또는 해당 대화형 콘텐츠 중 하나라도 가까운 상호 작용 터치를 수신 하면 트리거됩니다.            |
-| 터치 종료 시      | 근접 한 상호 작용 포인터가 릴리스 임계값 평면과 교차할 때 활성 터치 조작이 종료 될 때 트리거됩니다. |
-| 모멘텀 시작 됨 | 스크롤 컨테이너가 상호 작용, 속도 감소 또는 페이지 매김을 통해 이동 하기 시작 하면 트리거됩니다.                            |
-| 모멘텀 종료 됨   | 스크롤 컨테이너에서 상호 작용, 속도 감소 또는 페이지 매김을 통해 이동을 중지할 때 트리거됩니다.                             |
+| 클릭            | 스크롤 배경 충돌체 또는 대화형 콘텐츠 중에서 클릭을 받을 때 트리거됩니다.                             |
+| 터치 시작 시    | 스크롤 배경 충돌체 또는 대화형 콘텐츠가 거의 상호 작용 터치를 받을 때 트리거됩니다.            |
+| 터치 종료 시      | 가까운 상호 작용 포인터가 릴리스 임계값 평면을 초과할 때 활성 터치 상호 작용이 종료될 때 트리거됩니다. |
+| 시작 시 | 스크롤 컨테이너가 상호 작용, 속도 폴오프 또는 페이지 매김에 의해 이동하기 시작할 때 트리거됩니다.                            |
+| 2018년 3월 종료   | 스크롤 컨테이너가 상호 작용, 속도 폴오프 또는 페이지 매김에 의해 이동을 중지할 때 트리거됩니다.                             |
 
-## <a name="scrolling-example-scene"></a>예제 장면 스크롤
+## <a name="scrolling-example-scene"></a>스크롤 예제 장면
 
-**ScrollingObjectCollection** 예제 장면은 세 개의 스크롤 가능한 예제로 구성 되며 각각은 서로 다른 속도의 밝기를 사용 합니다. 예 장면에는 계층에서 기본적으로 사용 하지 않도록 설정 된 표면 배치 동작을 보여 주는 벽이 포함 되어 있습니다. 예제 장면을 폴더 아래에서 찾을 수 있습니다 ``MRTK/Examples/Demos/ScrollingObjectCollection/Scenes`` .
+**ScrollingObjectCollection.unity** 예제 장면에는 각각 다른 속도의 falloff 구성이 있는 3개의 스크롤 가능한 예제가 있습니다. 장면 예에는 계층 구조에서 기본적으로 사용하지 않도록 설정된 표면 배치 동작을 보여 주는 벽이 포함되어 있습니다. 예제 장면은 폴더 아래에서 찾을 수 ``MRTK/Examples/Demos/ScrollingObjectCollection/Scenes`` 있습니다.
 
 ![스크롤 개체 컬렉션 예제 장면](../images/scrolling-collection/ScrollingObjectCollection_ExampleScene.png)
 
-## <a name="scrolling-example-prefabs"></a>스크롤 예 prefabs
+## <a name="scrolling-example-prefabs"></a>스크롤 예제 프리팹
 
-편의상 두 개의 스크롤 개체 컬렉션 prefabs를 사용할 수 있습니다. 예제 prefabs는 폴더 아래에서 찾을 수 있습니다 ``MRTK/Examples/Demos/ScrollingObjectCollection/Prefabs`` .
+편의상 두 개의 스크롤 개체 컬렉션 프리팹을 사용할 수 있습니다. 예제 프리팹은 폴더 아래에서 찾을 수 ``MRTK/Examples/Demos/ScrollingObjectCollection/Prefabs`` 있습니다.
 
-![스크롤 개체 컬렉션 prefabs](../images/scrolling-collection/ScrollingObjectCollection_Prefabs.png)
+![개체 컬렉션 프리팹 스크롤](../images/scrolling-collection/ScrollingObjectCollection_Prefabs.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
-* [기본 클리핑](../rendering/clipping-primitive.md)
-* [자재 인스턴스](../rendering/material-instance.md)
+* [클리핑 기본형](../rendering/clipping-primitive.md)
+* [재질 인스턴스](../rendering/material-instance.md)
 * [표준 셰이더](../rendering/MRTK-standard-shader.md)
 * [개체 컬렉션](object-collection.md)
