@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: azure, mixed reality, academy, edge, iot edge, tutorial, api, notification, functions, tables, hololens, immersive, vr, iot, virtual machine, ubuntu, python, Windows 10, Visual Studio
-ms.openlocfilehash: 0a9f1b7c42094b3c441bdb32082f6821f2fd43a1ce3339cf1f58e7bd0fcf8318
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: fbd793a5941a5fa1b236403672680aa7df375f8d
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115195318"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905765"
 ---
 # <a name="hololens-1st-gen-and-azure-313-iot-hub-service"></a>HoloLens(1세대) 및 Azure 313: IoT Hub Service
 
@@ -22,7 +22,7 @@ ms.locfileid: "115195318"
 
 이 과정에서는 Ubuntu 16.4 운영 체제를 실행하는 가상 머신에서 **Azure IoT Hub 서비스를** 구현하는 방법을 알아봅니다. 그런 **다음, Azure 함수 앱을** 사용하여 Ubuntu VM에서 메시지를 수신하고 **결과를 Azure Table Service** 내에 저장합니다. 그런 **다음, Microsoft HoloLens** 또는 몰입형(VR) 헤드셋에서 Power BI 사용하여 이 데이터를 볼 수 있습니다.
 
-이 과정의 내용은 IoT Edge 디바이스에 *적용할 수* 있지만, 이 과정에서는 실제 Edge 디바이스에 액세스할 필요가 없도록 가상 머신 환경에 중점을 두게 됩니다.
+이 과정의 내용은 IoT Edge 디바이스에 *적용할 수* 있지만, 이 과정에서는 실제 Edge 디바이스에 액세스할 필요가 없도록 가상 머신 환경에 집중합니다.
 
 이 과정을 완료하면 다음을 배울 수 있습니다.
 
@@ -55,9 +55,9 @@ ms.locfileid: "115195318"
 </tr>
 </table>
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
-Microsoft HoloLens 포함하여 혼합 현실로 개발하기 위한 최신 필수 구성 요소에 대해서는 [도구 설치](/windows/mixed-reality/install-the-tools) 문서를 방문하세요.
+Microsoft HoloLens 포함하여 Mixed Reality 사용하여 개발하기 위한 최신 필수 구성 요소에 대해서는 [도구 설치](../../install-the-tools.md) 문서를 방문하세요.
 
 > [!NOTE]
 > 이 자습서는 Python에 대한 기본적인 경험이 있는 개발자를 위해 설계되었습니다. 또한 이 문서 내의 필수 조건 및 작성된 지침은 작성 당시 테스트 및 확인된 내용을 나타냅니다(2018년 7월). [도구 설치](../../install-the-tools.md) 문서에 나열된 대로 최신 소프트웨어를 자유롭게 사용할 수 있지만, 이 과정의 정보가 아래 나열된 것보다 최신 소프트웨어에서 찾을 수 있는 정보와 완벽하게 일치한다고 가정해서는 안 됩니다.
@@ -70,11 +70,11 @@ Microsoft HoloLens 포함하여 혼합 현실로 개발하기 위한 최신 필�
     > Windows 10 Home 버전에서는 Hyper-V를 사용하여 Virtual Machine을 실행할 수 없습니다.
 
 - Windows 10 SDK(최신 버전)
-- HoloLens 개발자 모드 **사용**
+- HoloLens, 개발자 **모드 사용**
 - Visual Studio 2017.15.4(Azure 클라우드 탐색기 액세스하는 데만 사용)
 - Azure 및 IoT Hub Service에 대한 인터넷 액세스. 자세한 내용은 [IoT Hub 서비스 페이지에 대한 링크를](https://azure.microsoft.com/services/iot-hub/) 따르세요.
 - Machine Learning 모델 모델을 사용할 준비가 되지 않은 경우 [이 과정과 함께 제공되는 모델을 사용할 수 있습니다.](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20313%20-%20IoT%20Hub%20Service/Custom%20Vision%20Model.zip)
-- Windows 10 개발 머신에서 **Hyper-V** 소프트웨어를 사용하도록 설정했습니다.
+- Windows 10 개발 머신에서 **Hyper-V** 소프트웨어가 사용하도록 설정됩니다.
 - 개발 머신에서 실행되는 Ubuntu(16.4 또는 18.4)를 실행하는 Virtual Machine 또는 Linux(Ubuntu 16.4 또는 18.4)를 실행하는 별도의 컴퓨터를 사용할 수 있습니다. Hyper-V를 사용하여 Windows VM을 만드는 방법에 대한 자세한 내용은 ["시작하기 전에" 챕터에서](#before-you-start)확인할 수 있습니다. (https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine).  
 
 
@@ -86,10 +86,10 @@ Microsoft HoloLens 포함하여 혼합 현실로 개발하기 위한 최신 필�
 
 보정에 대한 도움말은 [HoloLens 보정 문서에 대한 이 링크를](/hololens/hololens-calibration#hololens-2)따르세요.
 
-센서 튜닝에 대한 도움말은 [HoloLens 센서 튜닝 문서에 대한 링크를](/hololens/hololens-updates)따르세요.
+센서 튜닝에 대한 도움말은 [HoloLens 센서 튜닝 문서 링크를](/hololens/hololens-updates)따르세요.
 
 3. **Hyper-V를** 사용하여 **Ubuntu Virtual Machine을** 설정합니다. 다음 리소스는 프로세스에 도움이 됩니다.
-    1.  먼저 이 링크에 따라 [Ubuntu 16.04.4 LTS(Xenial Xerus) ISO](https://au.releases.ubuntu.com/16.04/)를 다운로드합니다. **64비트 PC(AMD64) 데스크톱 이미지** 를 선택합니다.
+    1.  먼저 이 링크를 따라 [Ubuntu 16.04.4 LTS(Xenial Xerus) ISO](https://au.releases.ubuntu.com/16.04/)를 다운로드합니다. **64비트 PC(AMD64) 데스크톱 이미지** 를 선택합니다.
     2.  Windows 10 컴퓨터에서 **Hyper-V가** 사용하도록 설정되어 있는지 확인합니다. [Windows 10 Hyper-V를 설치하고 사용하도록 설정하는 지침은](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)이 링크를 따를 수 있습니다.
     3.  Hyper-V를 시작하고 새 Ubuntu VM을 만듭니다. [Hyper-V를 사용하여 VM을 만드는 방법에 대한 단계별 가이드는](/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine)이 링크를 따를 수 있습니다. **"부팅 가능한 이미지 파일에서 운영 체제 설치"를** 요청하면 이전에 다운로드한 **Ubuntu ISO를** 선택합니다.
 
@@ -211,11 +211,11 @@ Microsoft HoloLens 포함하여 혼합 현실로 개발하기 위한 최신 필�
 
     ![스토리지 인스턴스 만들기](images/AzureLabs-Lab313-15.png)
 
-10. *자동* 장치 관리 가 표시될 때까지 왼쪽의 측면 패널을 스크롤하고 **IoT Edge** 클릭합니다.
+10. *자동 장치 관리* 가 표시될 때까지 왼쪽의 측면 패널을 스크롤하고 **IoT Edge** 클릭합니다.
 
     ![스토리지 인스턴스 만들기](images/AzureLabs-Lab313-16.png)
 
-11. 오른쪽에 표시되는 창에서 추가 IoT Edge **디바이스** 를 클릭합니다. 오른쪽에 블레이드가 나타납니다.
+11. 오른쪽에 표시되는 창에서 디바이스 추가 **IoT Edge** 클릭합니다. 오른쪽에 블레이드가 표시됩니다.
 
 12. 블레이드에서 새 디바이스에 **디바이스 ID(선택한** 이름)를 제공합니다. 그런 다음 **저장** 을 클릭합니다. 자동 생성이 선택되어 있으면 *기본* 및 *보조 키가* 자동으로 **생성됩니다.**
 
@@ -241,18 +241,18 @@ Microsoft HoloLens 포함하여 혼합 현실로 개발하기 위한 최신 필�
 
 *IoT Hub Edge용* 모듈을 만들고 배포하려면 Windows 10 실행하는 개발 머신에 다음 구성 요소가 설치되어 있어야 합니다.
 
-1.  [docker for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows)다운로드할 수 있는 계정을 만들라는 메시지가 표시됩니다. 
+1.  [Windows Docker는](https://store.docker.com/editions/community/docker-ce-desktop-windows)다운로드할 수 있는 계정을 만들라는 메시지가 표시됩니다. 
 
     [![Windows용 Docker 다운로드](images/AzureLabs-Lab313-21.png)](https://store.docker.com/editions/community/docker-ce-desktop-windows)
 
     > [!IMPORTANT]
-    > Docker를 실행하려면 *Windows 10 PRO,* *Enterprise 14393* 또는 *rtM Windows Server 2016* 필요합니다. 다른 버전의 Windows 10 실행하는 경우 Docker 도구 상자 를 사용하여 [Docker를](https://docs.docker.com/toolbox/toolbox_install_windows/)설치해 볼 수 있습니다.
+    > Docker를 실행하려면 *Windows 10 PRO,* *Enterprise 14393* 또는 *Windows Server 2016 RTM이* 필요합니다. 다른 버전의 Windows 10 실행하는 경우 Docker 도구 상자 를 사용하여 [Docker를](https://docs.docker.com/toolbox/toolbox_install_windows/)설치해 볼 수 있습니다.
 
 2.  [Python 3.6](https://www.python.org/downloads/).
 
     [![python 3.6 다운로드](images/AzureLabs-Lab313-22.png)](https://www.python.org/downloads/)
 
-3.  [Visual Studio Code(VS Code이라고도 함)](https://code.visualstudio.com/download).
+3.  [Visual Studio Code(VS Code이라고도 함)](https://code.visualstudio.com/download)입니다.
 
     [![다운로드 VS Code](images/AzureLabs-Lab313-23.png)](https://code.visualstudio.com/download)
 
@@ -260,7 +260,7 @@ Microsoft HoloLens 포함하여 혼합 현실로 개발하기 위한 최신 필�
 
 ## <a name="chapter-5---setting-up-the-ubuntu-environment"></a>5장 - Ubuntu 환경 설정
 
-이제 **Ubuntu OS** 를 실행하는 디바이스 설정으로 이동할 수 있습니다. 다음 단계에 따라 필요한 소프트웨어를 설치하고 컨테이너를 보드에 배포합니다.
+이제 **Ubuntu OS** 를 실행하는 디바이스 설정으로 이동할 수 있습니다. 다음 단계에 따라 필요한 소프트웨어를 설치하고 보드에 컨테이너를 배포합니다.
 
 > [!IMPORTANT]
 > 관리 사용자로 실행하려면 항상 **sudo를** 사용하여 터미널 명령 앞에 와야 합니다. 즉:
@@ -277,9 +277,9 @@ Microsoft HoloLens 포함하여 혼합 현실로 개발하기 위한 최신 필�
         sudo apt-get install python-pip
     ```
 
-2.  이 챕터 전체에서 *터미널* 에서 디바이스 스토리지를 사용할 수 있는 권한을 입력하고 **y/n(예** 또는 아니요)을 입력하고 **'y'를** 입력한 다음 **Enter** 키를 눌러 수락하라는 메시지가 표시될 수 있습니다.
+2.  이 챕터 전체에서 *터미널* 에서 디바이스 스토리지를 사용할 수 있는 권한을 묻는 메시지가 표시될 수 있으며, **y/n(예** 또는 아니요)을 입력하고 **'y'를** 입력한 다음 **Enter** 키를 눌러 수락합니다.
 
-3.  해당 명령이 완료되면 다음 명령을 사용하여 **curl** 을 설치합니다.
+3.  해당 명령이 완료되면 다음 명령을 사용하여 **curl을** 설치합니다.
 
     ```bash
         sudo apt install curl
@@ -307,7 +307,7 @@ Microsoft HoloLens 포함하여 혼합 현실로 개발하기 위한 최신 필�
         sudo apt-get install iotedge
     ```
 
-5. 이때 IoT Hub Service(14단계,[3장](#chapter-3---the-iot-hub-service))를 만들 때 적어 두는 **디바이스 연결 문자열** 를 삽입하기 위해 *런타임 구성 파일을* 열라는 메시지가 **표시됩니다(메모장).** 터미널에서 다음 줄을 실행하여 해당 파일을 엽니다.
+5. 이때 IoT Hub 서비스(14단계,[3장](#chapter-3---the-iot-hub-service))를 만들 때 적어 두는 디바이스 **연결 문자열** 를 삽입하기 위해 *런타임 구성 파일* 를 열라는 메시지가 **표시됩니다(메모장).** 터미널에서 다음 줄을 실행하여 해당 파일을 엽니다.
 
     ```bash
         sudo nano /etc/iotedge/config.yaml
@@ -335,7 +335,7 @@ Microsoft HoloLens 포함하여 혼합 현실로 개발하기 위한 최신 필�
     ```
 
     > [!IMPORTANT]
-    > .yaml 파일을 변경하거나 위의 설정을 변경하는 경우 *터미널* 내에서 위의 다시 시작 줄을 다시 실행해야 합니다.
+    > .yaml 파일 또는 위의 설정을 변경하는 경우 *터미널* 내에서 위의 다시 시작 줄을 다시 실행해야 합니다.
 
 10. 다음 명령줄을 실행하여 *IoT Edge 런타임* 상태를 확인합니다. 런타임은 활성 **상태(실행 중)와** 함께 녹색 텍스트로 표시됩니다.
 
@@ -343,7 +343,7 @@ Microsoft HoloLens 포함하여 혼합 현실로 개발하기 위한 최신 필�
         sudo systemctl status iotedge
     ```
 
-11. **Ctrl-C** 키를 눌러 상태 페이지를 종료합니다. 다음 명령을 입력하여 *IoT Edge 런타임이* 컨테이너를 올바르게 끌어와고 있는지 확인할 수 있습니다.
+11. **Ctrl+C** 키를 눌러 상태 페이지를 종료합니다. 다음 명령을 입력하여 *IoT Edge 런타임이* 컨테이너를 올바르게 끌어와고 있는지 확인할 수 있습니다.
 
     ```bash
         sudo docker ps
@@ -354,13 +354,13 @@ Microsoft HoloLens 포함하여 혼합 현실로 개발하기 위한 최신 필�
 ## <a name="chapter-6---install-the-extensions"></a>6장 - 확장 설치
 
 > [!IMPORTANT]
-> 다음 몇 챕터(6-9)는 Windows 10 컴퓨터에서 수행됩니다.
+> 다음 몇 장 (6-9)이 Windows 10 컴퓨터에서 수행 됩니다.
 
-1. **VS Code** 엽니다.
+1. **VS Code** 를 엽니다.
 
-2. VS Code 왼쪽  막대에서 확장(사각형) 단추를 클릭하여 확장 패널 **을** 엽니다.
+2. VS Code 왼쪽 막대에서 **확장** (정사각형) 단추를 클릭 하 여 **확장 패널** 을 엽니다.
 
-3. 아래 이미지와 같이 다음 확장을 검색하고 설치합니다.
+3. 아래 이미지에 표시 된 것 처럼 다음 확장을 검색 하 고 설치 합니다.
 
     1. Azure IoT Edge
     2. Azure IoT Toolkit
@@ -368,68 +368,68 @@ Microsoft HoloLens 포함하여 혼합 현실로 개발하기 위한 최신 필�
 
     ![컨테이너 만들기](images/AzureLabs-Lab313-24.png)
 
-4. 확장이 설치되면 VS Code 닫고 다시 엽니다.
+4. 확장이 설치 되 면 VS Code를 닫았다가 다시 엽니다.
 
-5. VS Code 한 번 더 열어서 통합 터미널 **보기로**  >  이동합니다.
+5. VS Code를 한 번 더 열면   >  **통합 터미널** 보기로 이동 합니다.
 
-6. 이제 **Cookiecutter** 를 설치합니다. 터미널에서 다음 bash 명령을 실행합니다.
+6. 이제 **Cookiecutter** 를 설치 합니다. 터미널에서 다음 bash 명령을 실행 합니다.
 
     ```bash
         pip install --upgrade --user cookiecutter
     ```
 
-    > [! HINT] 이 명령에 문제가 있는 경우: 
-    >1. VS Code 및/또는 컴퓨터를 다시 시작합니다.
-    >2. **VS Code 터미널을** Python을 설치하는 데 사용한 터미널로 전환해야 할 수도 있습니다. 즉, **Powershell(특히** Python 환경이 컴퓨터에 이미 설치된 경우). 터미널이 열리면 터미널의 오른쪽에 드롭다운 메뉴가 표시됩니다.
+    > [! 힌트] 명령을 사용 하는 데 문제가 있는 경우: 
+    >1. VS Code 및/또는 컴퓨터를 다시 시작 합니다.
+    >2. python을 설치 하는 데 사용 하는 것으로 **VS Code 터미널** 을 전환 해야 할 수도 **있습니다. 즉** , 특히 python 환경이 컴퓨터에 이미 설치 되어 있는 경우에 한 합니다. 터미널이 열리면 터미널의 오른쪽에 있는 드롭다운 메뉴를 찾을 수 있습니다.
      ![컨테이너 만들기](images/AzureLabs-Lab313-24b.png) 
-    >3. **Python** 설치 경로가 머신에 **환경 변수로** 추가되었는지 확인합니다. Cookiecutter는 동일한 위치 경로의 일부여야 합니다. [환경 변수 에 대한 자세한 내용은](/windows/win32/procthread/environment-variables)이 링크를 따르세요. 
+    >3. **Python** 설치 경로가 컴퓨터에 **환경 변수로** 추가 되었는지 확인 합니다. Cookiecutter는 동일한 위치 경로의 일부 여야 합니다. [환경 변수에 대 한 자세한 내용은 다음 링크](/windows/win32/procthread/environment-variables)를 참조 하세요. 
 
-7. **Cookiecutter** 설치가 완료되면 시스템 환경 내에서 **Cookiecutter가** 명령으로 인식되도록 컴퓨터를 다시 시작해야 합니다.
+7. **Cookiecutter** 설치가 완료 되 면 시스템 환경 내에서 **Cookiecutter** 가 명령으로 인식 되도록 컴퓨터를 다시 시작 해야 합니다.
 
-## <a name="chapter-7---create-your-container-solution"></a>7장 - 컨테이너 솔루션 만들기
+## <a name="chapter-7---create-your-container-solution"></a>7 장-컨테이너 솔루션 만들기
 
-이 시점에서 모듈을 사용하여 컨테이너를 만들어 *Container Registry* 에 푸시해야 합니다. 컨테이너를 푸시한 후에는 *IoT Hub Edge* 서비스를 사용하여 IoT Edge *런타임을* 실행하는 디바이스에 배포합니다.
+이 시점에서 모듈을 사용 하 여 *Container Registry* 에 푸시할 컨테이너를 만들어야 합니다. 컨테이너를 푸시한 후에는 *IoT Hub Edge* 서비스를 사용 하 여 *IoT Edge 런타임을* 실행 하는 장치에 배포 합니다.
 
-1. VS Code   >  **보기 명령 팔레트를** 클릭합니다.
+1. VS Code에서 **보기**  >  **명령 팔레트** 를 클릭 합니다.
 
-2. 색상표에서 **Azure IoT Edge: New Iot Edge Solution 을** 검색하고 실행합니다.
+2. 색상표에서 **Edge: 새 IoT Edge 솔루션** 을 검색 하 고 실행 Azure IoT 합니다.
 
-3. 솔루션을 만들려는 위치를 찾습니다. **Enter** 키를 눌러 위치를 수락합니다.
+3. 솔루션을 만들려는 위치로 이동 합니다. **Enter** 키를 눌러 위치를 적용 합니다.
 
-4. 솔루션에 이름을 지정합니다. **Enter** 키를 눌러 제공된 이름을 확인합니다.
+4. 솔루션에 이름을 지정 합니다. **Enter** 키를 눌러 제공 된 이름을 확인 합니다.
 
-5. 이제 솔루션에 대한 템플릿 프레임워크를 선택하라는 메시지가 표시됩니다. **Python 모듈** 을 클릭합니다. **Enter** 키를 눌러 이 선택을 확인합니다.
+5. 이제 솔루션에 대 한 템플릿 프레임 워크를 선택 하 라는 메시지가 표시 됩니다. **Python 모듈** 을 클릭 합니다. **Enter** 키를 눌러이 선택을 확인 합니다.
 
-6. 모듈에 이름을 지정합니다. **Enter** 키를 눌러 모듈의 이름을 확인합니다. 나중에 사용되도록 모듈 이름의 메모(메모장 사용)를 확인해야 합니다.
+6. 모듈에 이름을 지정 합니다. **Enter** 키를 눌러 모듈의 이름을 확인 합니다. 나중에 사용 되므로 모듈 이름에 대 한 메모를 작성 해야 합니다 (메모장).
 
-7. 미리 빌드된 Docker *이미지 리포지토리* 주소가 색상표에 표시됩니다. 다음과 같습니다.
+7. 미리 빌드된 *Docker 이미지 리포지토리* 주소가 색상표에 표시 됩니다. 다음과 같이 표시 됩니다.
 
-    **localhost:5000/-모듈의 이름 -**. 
+    **localhost: 5000/-모듈의 이름-**. 
 
-8. **localhost:5000 을** 삭제하고 해당 위치에 *Container Registry* 서비스(8단계의 [2장](#chapter-2---the-container-registry-service))를 만들 때 적어 두는 **Container Registry** **로그인 서버** 주소를 삽입합니다. **Enter** 키를 눌러 주소를 확인합니다.
+8. **Localhost: 5000** 을 삭제 하 고 해당 위치에서 **Container Registry 서비스** 를 만들 때 기록한 *Container Registry* **로그인 서버** 주소 ([2 장의 8 단계](#chapter-2---the-container-registry-service))를 삽입 합니다. **Enter** 키를 눌러 주소를 확인 합니다.
 
-9. 이 시점에서 Python 모듈에 대한 템플릿을 포함하는 솔루션이 생성되고 해당 구조는 화면 왼쪽에 있는 VS Code **탐색 탭에** 표시됩니다. 탐색 **탭이** 열려 있지 않으면 왼쪽 막대에서 맨 위 단추를 클릭하여 열 수 있습니다.
+9. 이 시점에서 Python 모듈에 대 한 템플릿이 포함 된 솔루션이 만들어지고 해당 구조가 화면 왼쪽에 있는 VS Code의 **탐색 탭** 에 표시 됩니다. **탐색 탭** 이 열려 있지 않으면 왼쪽 표시줄에서 맨 위에 있는 단추를 클릭 하 여 열 수 있습니다.
 
     ![컨테이너 만들기](images/AzureLabs-Lab313-25.png)
 
-10. 이 챕터의 마지막 단계는 **탐색 탭** 내에서 **.env 파일을** 클릭하고 열고 *Container Registry* 사용자 **이름** 및 **암호를** 추가하는 것입니다. 이 파일은 git에서 무시되지만 컨테이너를 빌드할 때 는 **Container Registry 서비스에** 액세스하도록 자격 증명을 설정합니다.
+10. 이 챕터의 마지막 단계에서는 **탐색 탭** 내에서 **env 파일** 을 클릭 하 여 열고 *Container Registry* **사용자 이름** 및 **암호** 를 추가 합니다. 이 파일은 git에서 무시 되지만 컨테이너를 빌드하는 동안 **Container Registry 서비스** 에 액세스 하기 위한 자격 증명을 설정 합니다.
 
     ![컨테이너 만들기](images/AzureLabs-Lab313-26.png)
 
-## <a name="chapter-8---editing-your-container-solution"></a>8장 - 컨테이너 솔루션 편집
+## <a name="chapter-8---editing-your-container-solution"></a>8 장-컨테이너 솔루션 편집
 
-이제 다음 파일을 업데이트하여 컨테이너 솔루션을 완료합니다.
+이제 다음 파일을 업데이트 하 여 컨테이너 솔루션을 완료 합니다.
 
-- *기본 <span></span> .py* python 스크립트입니다.
-- *를requirements.txt.*
-- *에서deployment.template.js.*
-- *Dockerfile.amd64*
+- *<span></span> py* python 스크립트입니다.
+- *requirements.txt*.
+- *deployment.template.js* 합니다.
+- *Dockerfile. amd64*
 
-그런 다음 python 스크립트에서 *Custom Vision* *모델* 에 대해 일치시킬 이미지를 확인하는 데 사용하는 images 폴더를 만듭니다. 마지막으로 모델을 읽는 데 도움이 되는 *labels.txt* 파일과 모델인 *model.pb* 파일을 추가합니다.
+그런 다음 python 스크립트에서 *Custom Vision 모델* 에 대해 일치 시킬 이미지를 확인 하는 데 사용 하는 *images* 폴더를 만듭니다. 마지막으로, 모델을 읽는 데 도움이 되는 *labels.txt* 파일을 추가 하 고 모델인 모델 *pb* 파일을 추가 합니다.
 
-1. VS Code 열린 채 모듈 폴더로 이동하여 **main <span></span> .py라는** 스크립트를 찾습니다. 이 로그를 두 번 클릭하여 엽니다.
+1. VS Code 열린 상태에서 모듈 폴더로 이동 하 고 **<span></span> py** 라는 스크립트를 찾습니다. 이 로그를 두 번 클릭하여 엽니다.
 
-2. 파일의 내용을 삭제하고 다음 코드를 삽입합니다.
+2. 파일의 내용을 삭제 하 고 다음 코드를 삽입 합니다.
 
     ```python
     # Copyright (c) Microsoft. All rights reserved.
@@ -662,7 +662,7 @@ Microsoft HoloLens 포함하여 혼합 현실로 개발하기 위한 최신 필�
         main(PROTOCOL)
     ```
 
-3.  **requirements.txt** 파일을 열고 해당 콘텐츠를 다음으로 대체합니다.
+3.  **requirements.txt** 파일을 열고 해당 콘텐츠를 다음으로 바꿉니다.
 
     ```
     azure-iothub-device-client==1.4.0.0b3
@@ -671,20 +671,20 @@ Microsoft HoloLens 포함하여 혼합 현실로 개발하기 위한 최신 필�
     pillow==5.1.0
     ```
 
-4.  에서deployment.template.js파일을 열고 아래 **지침에** 따라 해당 콘텐츠를 대체합니다.
+4.  **에서deployment.template.js** 이라고 하는 파일을 열고 아래 지침에 따라 해당 콘텐츠를 대체 합니다.
 
-    1. 고유한 고유한 JSON 구조가 있으므로 예제를 복사하는 대신 직접 편집해야 합니다. 이 작업을 쉽게 하려면 아래 이미지를 가이드로 사용합니다.
-    2. 사용자와 다르게 보이지만 변경하지 않아야 하는 **영역은 노란색으로 강조 표시됩니다.**
-    3. **삭제해야 하는 섹션은 빨간색으로 강조 표시됩니다.**
-    4. 올바른 대괄호를 삭제하고 쉼표도 제거해야 합니다.
+    1. 고유 하 고 고유한 JSON 구조가 있으므로 예제를 복사 하는 대신 직접 편집 해야 합니다. 이 작업을 쉽게 하려면 아래 이미지를 가이드로 사용 합니다.
+    2. 사용자와 다르게 보이지만 **변경 하지 않아야** 하는 영역이 노란색으로 강조 표시 됩니다.
+    3. **삭제 해야 하는 섹션은 빨간색으로 강조 표시 됩니다.**
+    4. 올바른 대괄호를 삭제 하 고 쉼표도 제거 해야 합니다.
 
         ![컨테이너 만들기](images/AzureLabs-Lab313-27.png)
 
-    5. 완료된 JSON은 다음 이미지와 같이 표시됩니다(단, 고유한 차이점이 있음: *username/password/module name/module references).*
+    5. 완성 된 JSON은 다음 이미지와 같이 표시 되어야 합니다. 단, *사용자 이름/암호/모듈 이름/모듈 참조* 와 같은 고유한 차이점이 있습니다.
 
         ![컨테이너 만들기](images/AzureLabs-Lab313-28.png)
 
-5.  **Dockerfile.amd64라는** 파일을 열고 해당 콘텐츠를 다음으로 대체합니다.
+5.  **Dockerfile. amd64** 라는 파일을 열고 콘텐츠를 다음으로 바꿉니다.
 
     ```
     FROM ubuntu:xenial
@@ -731,44 +731,44 @@ Microsoft HoloLens 포함하여 혼합 현실로 개발하기 위한 최신 필�
 
     ```
 
-6.  **모듈** 아래의 폴더를 마우스 오른쪽 단추로 클릭하고(이전에 제공한 이름을 갖습니다. 아래 예제에서는 *pythonmodule이라고* 함) **새 폴더** 를 클릭합니다. 폴더 **이름을 이미지로 지정합니다.**
+6.  **모듈** 아래에 있는 폴더를 마우스 오른쪽 단추로 클릭 하 고 (이전에 입력 한 이름을 포함 합니다. 아래 예제에서는 *pythonmodule* 라고 함) **새 폴더** 를 클릭 합니다. 폴더 이름을 **images** 로 합니다.
 
-7.  폴더 내에 마우스 또는 키보드가 포함된 일부 이미지를 추가합니다. Tensorflow 모델에서 분석할 이미지입니다.
+7.  폴더 안에 마우스나 키보드를 포함 하는 일부 이미지를 추가 합니다. 이러한 이미지는 Tensorflow 모델에서 분석할 이미지가 됩니다.
 
     > [!WARNING]
-    > 사용자 고유의 모델을 사용하는 경우 사용자 고유의 모델 데이터를 반영하도록 변경해야 합니다.
+    > 사용자 고유의 모델을 사용 하는 경우 고유한 모델 데이터를 반영 하도록이를 변경 해야 합니다.
 
-8.  이제 [1장에서](#chapter-1---retrieve-the-custom-vision-model)이전에 다운로드했거나 고유한 **Custom Vision** 서비스에서 만든 model 폴더에서 **labels.txt** 및 **model.pb** 파일을 검색해야 합니다. 파일이 있으면 다른 파일과 함께 솔루션 내에 배치합니다. 최종 결과는 아래 이미지와 같습니다.
+8.  이제 [1 장](#chapter-1---retrieve-the-custom-vision-model)에서 이전에 다운로드 했거나 사용자 고유의 **Custom Vision Service** 에서 만든 모델 폴더에서 **labels.txt** 및 **모델 pb** 파일을 검색 해야 합니다. 파일이 있으면 다른 파일과 함께 솔루션 내에 추가 합니다. 최종 결과는 아래 이미지와 같아야 합니다.
 
     ![컨테이너 만들기](images/AzureLabs-Lab313-29.png)
 
-## <a name="chapter-9---package-the-solution-as-a-container"></a>9장 - 솔루션을 컨테이너로 패키지
+## <a name="chapter-9---package-the-solution-as-a-container"></a>9 장-솔루션을 컨테이너로 패키지
 
-1.  이제 파일을 컨테이너로 "패키지"하고 **Azure Container Registry** 푸시할 준비가 되었습니다. VS Code 내에서 *통합 터미널(통합 터미널* **보기**  >   또는 **Ctrl)을** 열고 + **\`** 다음 줄을 사용하여 **Docker에** 로그인합니다(명령 값을 **ACR(Azure Container Registry 자격 증명)로** 대체).
+1.  이제 파일을 컨테이너로 "패키지" 하 고 **Azure Container Registry** 에 푸시할 수 있습니다. VS Code 내에서 *통합 터미널* (**View**  >  **integrated terminal** 또는 **Ctrl**)을 열고 + **\`** 다음 줄을 사용 하 여 **Docker** 에 로그인 합니다 (명령 값을 **ACR (Azure Container Registry** 의 자격 증명으로 대체).
 
     ```bash
         docker login -u <ACR username> -p <ACR password> <ACR login server>
     ```
 
-2. 에서deployment.template.js파일을 **마우스 오른쪽 단추로** 클릭하고 **솔루션 IoT Edge 빌드를** 클릭합니다. 이 빌드 프로세스는 디바이스에 따라 상당한 시간이 걸리므로 대기할 준비를 해야 합니다. 빌드 프로세스가 완료되면 파일에 **대한deployment.js** **config라는** 새 폴더 내에 만들어집니다.
+2. **deployment.template.js** 파일을 마우스 오른쪽 단추로 클릭 하 고 **IoT Edge 솔루션 빌드** 를 클릭 합니다. 이 빌드 프로세스는 장치에 따라 상당한 시간이 걸리므로 대기할 준비가 됩니다. 빌드 프로세스가 완료 된 후에 파일 **에 대 한deployment.js** 는 **config** 라는 새 폴더 내에 생성 됩니다.
 
     ![배포 만들기](images/AzureLabs-Lab313-30.png)
 
-3. 명령 **팔레트를** 다시 열고 **Azure: 로그인을 검색합니다.** Azure 계정 자격 증명을 사용하여 프롬프트를 따릅니다. VS Code *복사 및 열기* 옵션을 제공합니다. 그러면 곧 필요한 디바이스 코드를 복사하고 기본 웹 브라우저를 엽니다. 메시지가 발생하면 디바이스 코드를 붙여넣어 머신을 인증합니다.
+3. **명령 팔레트** 를 다시 열고 **Azure: 로그인** 을 검색 합니다. Azure 계정 자격 증명을 사용 하 여 프롬프트를 따릅니다. VS Code은 복사 하 여 *열* 수 있는 옵션을 제공 합니다 .이 옵션을 사용 하면 곧 필요한 장치 코드를 복사 하 여 기본 웹 브라우저를 열 수 있습니다. 메시지가 표시 되 면 장치 코드를 붙여넣어 컴퓨터를 인증 합니다.
 
     ![복사 및 열기](images/AzureLabs-Lab313-31.png)
 
-4. 로그인하면 *탐색* 패널의 아래쪽에 **Azure IoT Hub 디바이스라는** 새 섹션이 표시됩니다. 이 섹션을 클릭하여 확장합니다.
+4. 로그인 하면 *탐색* 패널의 아래쪽에 **Azure IoT 허브 장치** 라는 새 섹션이 표시 됩니다. 이 섹션을 클릭 하 여 확장 합니다.
 
-    ![에지 디바이스](images/AzureLabs-Lab313-32.png)
+    ![edge 장치](images/AzureLabs-Lab313-32.png)
 
-5. 디바이스가 여기에 없으면 *Azure IoT 허브 디바이스* 를 마우스 오른쪽 단추로 클릭한 다음 연결 문자열 IoT Hub **설정을** 클릭해야 합니다. 그러면 VS Code 맨 위에 있는 **명령 팔레트에서** *연결 문자열* 을 입력하라는 메시지가 표시됩니다. [3장](#chapter-3---the-iot-hub-service)끝에 적어 두는 *연결 문자열입니다.* 문자열을 복사한 후 **Enter** 키를 누릅니다.    
+5. 장치를 사용할 수 없는 경우 *Azure IoT 허브 장치* 를 마우스 오른쪽 단추로 클릭 한 다음 **IoT Hub 연결 문자열 설정** 을 클릭 해야 합니다. 그러면 **명령 팔레트** (VS Code 위쪽)에 *연결 문자열* 을 입력 하 라는 메시지가 표시 됩니다. [3 장](#chapter-3---the-iot-hub-service)끝에 적어 둔 *연결 문자열* 입니다. 에서 문자열을 복사한 후 **enter** 키를 누릅니다.    
 
-6. 디바이스가 로드되고 표시됩니다. 디바이스 이름을 마우스 오른쪽 단추로 클릭한 다음 **단일 디바이스에 대한 배포 만들기를** 클릭합니다.
+6. 장치가 로드 되 고 표시 됩니다. 장치 이름을 마우스 오른쪽 단추로 클릭 한 다음 **단일 장치에 대 한 배포 만들기** 를 클릭 합니다.
 
     ![배포 만들기](images/AzureLabs-Lab313-33b.png)
 
-7. **config** 폴더로 이동한 다음 파일의 *deployment.js* 선택할 수 있는 파일 탐색기 프롬프트가 표시됩니다.  해당 파일을 선택한 상태에서 **Edge 배포 매니페스트 선택** 단추를 클릭 합니다.
+7. *파일 탐색기* 프롬프트가 표시 됩니다. 여기서 **config** 폴더로 이동한 다음 파일 **에서deployment.js** 를 선택할 수 있습니다. 해당 파일을 선택한 상태에서 **Edge 배포 매니페스트 선택** 단추를 클릭 합니다.
 
     ![배포 만들기](images/AzureLabs-Lab313-34.png)
 
@@ -951,31 +951,31 @@ azure Portal로 다시 이동 합니다. 여기서는 Storage 리소스를 만�
 
 9. 그런 다음 *엔터티 추가* 창의 왼쪽 아래에 있는 **속성 추가** 를 클릭 하 고 다음 속성을 추가 합니다.
 
-    - **MessageContent**, *문자열*, 값을 비워 둡니다.
+    - **MessageContent** 는 *문자열로* 값을 비워 둡니다.
 
-10. 테이블은 아래 이미지에 있는 것과 일치 해야 합니다.
+10. 테이블은 아래 이미지의 테이블과 일치해야 합니다.
 
     ![올바른 값 추가](images/AzureLabs-Lab313-50.png)
 
     > [!NOTE] 
-    > 엔터티가 행 키에 숫자 1을 갖는 이유는이 과정을 통해 더 많은 메시지를 추가 하려고 할 수 있기 때문입니다.
+    > 엔터티가 행 키에 숫자 1을 가지는 이유는 이 과정을 추가로 실험하려는 경우 메시지를 더 추가할 수 있기 때문입니다.
 
-11. 작업이 완료 되 면 **확인을** 클릭 합니다. 이제 테이블을 사용할 준비가 되었습니다.
+11. 완료되면 **확인을** 클릭합니다. 이제 테이블을 사용할 준비가 되었습니다.
 
-## <a name="chapter-13---create-an-azure-function-app"></a>13 장-Azure 함수 앱 만들기 
+## <a name="chapter-13---create-an-azure-function-app"></a>13장 - Azure 함수 앱 만들기 
 
-이제 이전 장에서 만든 **Table** service에 *IoT Edge* 장치 메시지를 저장 하기 위해 *IoT Hub 서비스* 에 의해 호출 되는 *Azure 함수 앱* 를 만들어야 합니다.
+이제 이전 챕터에서 만든 **Table** *Service에 IoT Edge* 디바이스 메시지를 저장하기 위해 *IoT Hub* 서비스에서 호출되는 Azure *함수 앱을* 만들 차례입니다.
 
-먼저 Azure 함수에서 필요한 라이브러리를 로드 하도록 허용 하는 파일을 만들어야 합니다.
+먼저 Azure Function에서 필요한 라이브러리를 로드할 수 있는 파일을 만들어야 합니다.
 
-1.  **메모장** ( *Windows 키* 를 누르고 *메모장*)을 엽니다.
+1.  **메모장** 엽니다(Windows *키를* 누르고 *메모장* 입력).
 
     ![메모장 열기](images/AzureLabs-Lab313-51.png)
 
-2.  메모장 열려 있는 상태에서 아래 JSON 구조를 삽입 합니다. 이 작업을 완료 한 후 **에는project.js** 바탕 화면에 저장 합니다. 이 파일은 함수에서 사용할 라이브러리를 정의 합니다. NuGet 사용 하는 경우 익숙할 것입니다.
+2.  메모장 열린 후 아래에 JSON 구조를 삽입합니다. 이 작업이 완료되면 데스크톱에 **project.js저장합니다.** 이 파일은 함수에서 사용할 라이브러리를 정의합니다. NuGet 사용한 경우 익숙해 보일 것입니다.
     
     > [!WARNING]
-    > 이름을 올바르게 지정 해야 합니다. **.txt** 파일 확장명이 없는지 확인 합니다. 참조는 아래를 참조 하세요.
+    > 이름 지정이 올바른 것이 중요합니다. .txt파일 **확장명이 없는지** 확인합니다. 참조는 아래를 참조하세요.
     >
     > ![JSON 저장](images/AzureLabs-Lab313-52.png)
 
@@ -993,81 +993,81 @@ azure Portal로 다시 이동 합니다. 여기서는 Storage 리소스를 만�
 
 3.  [Azure Portal](https://portal.azure.com)에 로그인합니다.
 
-4.  로그인 되 면 왼쪽 위 모서리에서 **리소스 만들기** 를 클릭 하 고 **함수 앱** 를 검색 한 다음 **enter** 키를 눌러 검색 합니다. 결과에서 *함수 앱* 를 클릭 하 여 새 패널을 엽니다.
+4.  로그인하면 왼쪽 위 모서리에서 **리소스 만들기를** 클릭하고 **함수 앱을** 검색한 다음 **Enter** 키를 눌러 검색합니다. 결과에서 *함수 앱을* 클릭하여 새 패널을 엽니다.
 
     ![함수 앱 검색](images/AzureLabs-Lab313-53.png)
 
-5.  새 패널은 **함수 앱** 서비스에 대 한 설명을 제공 합니다. 이 패널의 왼쪽 아래에서 **만들기** 단추를 클릭 하 여이 서비스와의 연결을 만듭니다.
+5.  새 패널에는 **함수 App** Service에 대한 설명이 표시됩니다. 이 패널의 왼쪽 아래에서 **만들기** 단추를 클릭하여 이 서비스와의 연결을 만듭니다.
 
     ![함수 앱 인스턴스](images/AzureLabs-Lab313-54.png)
 
-6.  **만들기** 를 클릭 한 후에는 다음을 입력 합니다.
+6.  **만들기를** 클릭하면 다음을 입력합니다.
 
-    1. **앱 이름** 에 대해 원하는 이름을이 서비스 인스턴스에 삽입 합니다.
+    1. **앱 이름** 의 경우 이 서비스 인스턴스에 원하는 이름을 삽입합니다.
 
     2. **구독** 을 선택합니다.
 
-    3. 적절 한 가격 책정 계층을 선택 합니다. **함수 앱 서비스** 를 처음 만드는 경우 무료 계층을 사용할 수 있어야 합니다.
+    3. **함수 App Service** 처음 만드는 경우 적합한 가격 책정 계층을 선택합니다. 무료 계층을 사용할 수 있어야 합니다.
 
-    4. 리소스 그룹을 선택 하거나 새 **리소스 그룹** 을 만듭니다. 리소스 그룹은 Azure 자산 컬렉션에 대 한 모니터링, 제어 액세스, 프로 비전 및 관리를 위한 방법을 제공 합니다. 단일 프로젝트와 연결 된 모든 Azure 서비스 (예: 이러한 과정)를 공용 리소스 그룹에 유지 하는 것이 좋습니다.
+    4. 리소스 **그룹을** 선택하거나 새 리소스 그룹을 만듭니다. 리소스 그룹은 Azure 자산 컬렉션에 대한 액세스를 모니터링, 제어, 프로비전 및 관리, 청구하는 방법을 제공합니다. 모든 Azure 서비스를 단일 프로젝트(예: 이러한 과정)와 연결된 공용 리소스 그룹에 유지하는 것이 좋습니다.
 
-        > Azure 리소스 그룹에 대 한 자세한 내용을 보려면 [리소스 그룹을 관리 하는 방법에 대](/azure/azure-resource-manager/resource-group-portal)한 다음 링크를 참조 하세요.
+        > Azure 리소스 그룹에 대해 자세히 알아보려면 리소스 그룹을 [관리하는 방법에 대한](/azure/azure-resource-manager/resource-group-portal)이 링크를 따르세요.
 
-    5. **OS** 의 경우 원하는 플랫폼과 같이 Windows를 클릭 합니다.
+    5. **OS의** 경우 의도한 플랫폼인 Windows 클릭합니다.
 
-    6. **호스팅 계획** 을 선택 합니다 .이 자습서는 **소비 계획** 을 사용 합니다.
+    6. 호스팅 **계획을** 선택합니다(이 자습서에서는 **소비 계획** 사용).
 
-    7. **위치** 선택 (이전 단계에서 빌드한 저장소와 동일한 위치 선택)
+    7. **위치** 선택(이전 단계에서 빌드한 스토리지와 동일한 위치 선택)
 
-    8. **Storage** 섹션의 경우 **이전 단계에서 만든 Storage 서비스를 선택 해야** 합니다.
+    8. **Storage** 섹션의 경우 **이전 단계에서 만든 Storage 서비스를 선택해야 합니다.**
 
-    9. 이 앱에 *Application Insights* 필요 **하지 않으므로 자유롭게 그대로 둡니다.**
+    9. 이 앱에는 *애플리케이션 Insights* 필요하지 않으므로 자유롭게 **끄기로 둡니다.**
 
     10. **만들기** 를 클릭합니다.
 
         ![새 인스턴스 만들기](images/AzureLabs-Lab313-55.png)
 
-7.  **만들기** 를 클릭 한 후에는 서비스를 만들 때까지 기다려야 합니다 .이 작업이 몇 분 정도 걸릴 수 있습니다.
+7.  **만들기를** 클릭하면 서비스가 생성될 때까지 기다려야 합니다. 이 경우 1분 정도 걸릴 수 있습니다.
 
-8.  서비스 인스턴스를 만든 후 알림이 포털에 표시 됩니다.
+8.  서비스 인스턴스가 만들어지면 포털에 알림이 표시됩니다.
 
     ![새 알림](images/AzureLabs-Lab313-56.png)
 
-9.  배포가 성공적으로 완료 되 면 알림을 클릭 합니다 (완료 됨).
+9.  배포가 성공하면 알림을 클릭합니다(완료).
 
-10. 알림에서 **리소스로 이동** 단추를 클릭 하 여 새 서비스 인스턴스를 탐색 합니다. 
+10. 알림에서 **리소스로 이동** 단추를 클릭하여 새 서비스 인스턴스를 탐색합니다. 
 
     ![리소스로 이동](images/AzureLabs-Lab313-57.png)
 
-11. 새 패널의 왼쪽에서 함수 옆에 있는 **+** 더하기 () 아이콘을 클릭 하 여 새 함수를 만듭니다.
+11. 새 패널의 왼쪽에서 함수 옆에 있는 **+** (더하기) *아이콘을* 클릭하여 새 함수를 만듭니다.
 
     ![새 함수 추가](images/AzureLabs-Lab313-58.png)
 
-12. 중앙 패널 내에서 **함수** 만들기 창이 표시 됩니다. 아래로 스크롤하여 **사용자 지정 함수** 를 클릭 합니다.
+12. 중앙 패널 내에 **함수** 만들기 창이 표시됩니다. Scroll down **사용자 지정 함수** 를 클릭합니다.
 
     ![사용자 지정 함수](images/AzureLabs-Lab313-59.png)
 
-13. **IoT Hub (이벤트 허브)** 를 찾을 때까지 다음 페이지 아래로 스크롤한 다음 클릭 합니다.
+13. 다음 페이지를 Scroll down **IoT Hub(이벤트 허브)를** 찾을 때까지 해당 페이지를 클릭합니다.
 
     ![사용자 지정 함수](images/AzureLabs-Lab313-60.png)
 
-14. **IoT Hub (이벤트 허브)** 블레이드에서 **언어** 를 **c #** 으로 설정 하 고 **새로 만들기** 를 클릭 합니다.
+14. **IoT Hub(Event Hub)** 블레이드에서 **언어를** **C#으로** 설정한 다음 **새** 를 클릭합니다.
 
     ![사용자 지정 함수](images/AzureLabs-Lab313-61.png)
 
-15. 표시 되는 창에서 **IoT Hub** 가 선택 되어 있는지 확인 하 고 *IoT Hub* 필드 이름이 이전에 만든 *IoT Hub 서비스* 의 이름 ([3 장의 8 단계](#chapter-3---the-iot-hub-service))과 일치 하는지 확인 합니다. 그런 다음 **선택** 단추를 클릭 합니다.
+15. 표시되는 창에서 **IoT Hub** 선택되어 있고 *IoT Hub* 필드의 이름이 이전에 만든 *IoT Hub 서비스의* [이름(8단계에서 3장](#chapter-3---the-iot-hub-service))과 일치하는지 확인합니다. 그런 다음 **선택** 단추를 클릭합니다.
 
     ![사용자 지정 함수](images/AzureLabs-Lab313-62.png)
 
-16. **IoT Hub (이벤트 허브)** 블레이드로 돌아가서 **만들기** 를 클릭 합니다.
+16. **IoT Hub(Event Hub)** 블레이드로 **돌아가서 만들기를** 클릭합니다.
 
     ![사용자 지정 함수](images/AzureLabs-Lab313-63.png)
 
-17. 그러면 함수 편집기로 리디렉션됩니다.
+17. 함수 편집기로 리디렉션됩니다.
 
     ![사용자 지정 함수](images/AzureLabs-Lab313-64.png)
 
-18. 모든 코드를 삭제 하 고 다음으로 바꿉니다.
+18. 이 코드의 모든 코드를 삭제하고 다음으로 대체합니다.
 
     ```csharp
     #r "Microsoft.WindowsAzure.Storage"
@@ -1132,77 +1132,77 @@ azure Portal로 다시 이동 합니다. 여기서는 Storage 리소스를 만�
     }
     ```
 
-19. 다음 변수를 변경 하 여 **Storage 계정** 에서 찾을 수 있는 **적절 한 값** **Storage** ( [11 장, 13 장, 각각 11 장, 13 단계](#chapter-11---create-table-service))에 해당 하는 값을 찾습니다.
+19. 다음 변수가 Storage 계정 에서 찾을 수 있는 **적절한 값(각각** [11장 및 13단계의](#chapter-11---create-table-service)**테이블** 및 Storage 값)에 해당하도록 다음 변수를 **변경합니다.**
 
-    - **tableName**- **Storage 계정** 에 있는 **테이블** 의 이름을 사용 합니다.
-    - **tableurl**- **Storage 계정** 에 있는 **테이블** 의 url입니다.
-    - **storageaccountname**, **Storage 계정** 이름 이름에 해당 하는 값의 이름으로 바꿉니다.
-    - 이전에 만든 Storage 서비스에서 가져온 키로 **storageAccountKey**.
+    - **tableName**- **Storage 계정에** 있는 **테이블의** 이름입니다.
+    - **tableURL**- **테이블의** URL이 Storage 계정에 **있습니다.**
+    - **storageAccountName**- **Storage 계정** 이름의 이름과 일치하는 값의 이름입니다.
+    - **storageAccountKey**- 이전에 만든 Storage 서비스에서 가져온 키를 갖습니다.
 
     ![사용자 지정 함수](images/AzureLabs-Lab313-65.png)
 
-20. 코드가 준비 되 면 **저장** 을 클릭 합니다.
+20. 코드를 배치한 후 **저장을** 클릭합니다.
 
-21. 그런 다음 **\<** 페이지의 오른쪽에 있는 (화살표) 아이콘을 클릭 합니다.
+21. 다음으로 **\<** 페이지의 오른쪽에 있는 (화살표) 아이콘을 클릭합니다.
 
     ![사용자 지정 함수](images/AzureLabs-Lab313-66.png)
 
-22. 패널은 오른쪽에서 오른쪽으로 이동 합니다. 해당 패널에서 **업로드** 를 클릭 하면 *파일 브라우저가* 표시 됩니다.
+22. 패널이 오른쪽에서 슬라이드됩니다. 해당 패널에서 **업로드** 클릭하면 *파일 브라우저가* 나타납니다.
 
-23. 로 이동 하 여 이전에 **메모장** 에서 만든 파일 **의project.js** 를 클릭 한 다음 **열기** 단추를 클릭 합니다. 이 파일은 함수에서 사용할 라이브러리를 정의 합니다.
+23. 이전에 메모장 만든 **파일의** **project.js** 이동하여 클릭한 다음 **열기** 단추를 클릭합니다. 이 파일은 함수에서 사용할 라이브러리를 정의합니다.
 
     ![사용자 지정 함수](images/AzureLabs-Lab313-67.png)
 
-24. 파일이 업로드 되 면 오른쪽의 패널에 표시 됩니다. 이 단추를 클릭 하면 **함수** 편집기 내에서 열립니다. 이 이미지는 다음 이미지와 정확히 동일 하 **게** 표시 되어야 합니다.
+24. 파일이 업로드되면 오른쪽 패널에 표시됩니다. 이를 클릭하면 **함수** 편집기 내에서 열립니다. 다음 이미지와 **정확히** 같아야 합니다.
 
     ![사용자 지정 함수](images/AzureLabs-Lab313-68.png)
 
-25. 이 시점에서 함수 기능을 테스트 하 여 *테이블* 에 메시지를 저장 하는 것이 좋습니다. 창의 오른쪽 위에서 **테스트** 를 클릭 합니다.
+25. 이 시점에서 *함수의* 기능을 테스트하여 테이블에 메시지를 저장하는 것이 좋습니다. 창의 오른쪽 위에서 **테스트를** 클릭합니다.
 
     ![사용자 지정 함수](images/AzureLabs-Lab313-69.png)
 
-26. 위의 이미지에 표시 된 것 처럼 **요청 본문** 에 메시지를 삽입 하 고 **실행** 을 클릭 합니다. 
+26. 위의 이미지와 같이 **요청 본문** 에 메시지를 삽입하고 **실행을** 클릭합니다. 
 
-27. 함수를 실행 하 여 결과 상태를 표시 합니다. *출력* 창 위에 녹색 **상태 202이 수락** 되었음을 알 수 있습니다 .이는 성공적인 호출 임을 의미 합니다.
+27. 함수가 실행되어 결과 상태를 표시합니다.(출력 창 위에 녹색 **상태 202 수락됨이** 표시됩니다. 즉, 성공적으로 호출되었습니다.) 
 
     ![출력 결과](images/AzureLabs-Lab313-70.png)
 
-## <a name="chapter-14---view-active-messages"></a>14 장-활성 메시지 보기
+## <a name="chapter-14---view-active-messages"></a>14장 - 활성 메시지 보기
 
-이제 Visual Studio (Visual Studio Code **하지 않음** )을 열면 *MessageContent* 문자열 영역에 저장 되므로 테스트 메시지 결과를 시각화할 수 있습니다.
+이제 Visual Studio(Visual Studio Code **않음)을** 열면 *MessageContent* 문자열 영역에 저장되기 때문에 테스트 메시지 결과를 시각화할 수 있습니다.
 
 ![사용자 지정 함수](images/AzureLabs-Lab313-71.png)
 
-Table Service와 함수 앱를 사용 하 여 Ubuntu 장치 메시지가 *I이상 메시지* 테이블에 표시 됩니다. 아직 실행 중이 아닌 경우 장치를 다시 시작 하면 Visual Studio *클라우드 탐색기* 를 사용 하 여 장치 및 모듈의 결과 메시지를 테이블 내에서 볼 수 있습니다.
+Table Service 및 함수 앱이 설치되면 Ubuntu 디바이스 메시지가 *IoTMessages* 테이블에 표시됩니다. 아직 실행하지 않은 경우 디바이스를 다시 시작하면 Visual Studio 클라우드 탐색기 사용하여 테이블 내에서 디바이스 및 모듈의 결과 메시지를 볼 수 *있습니다.*
 
 ![데이터 시각화](images/AzureLabs-Lab313-72.png)
 
 
-## <a name="chapter-15---power-bi-setup"></a>15 장-Power BI 설치
+## <a name="chapter-15---power-bi-setup"></a>15장 - Power BI 설정
 
-IOT 장치에서 데이터를 시각화 하려면 **Power BI** (데스크톱 버전)을 설치 하 여 방금 만든 *테이블* 서비스에서 데이터를 수집 합니다. 그런 다음 Power BI의 *HoloLens* 버전은 해당 데이터를 사용 하 여 결과를 시각화 합니다.
+IOT 디바이스에서 데이터를 시각화하려면 **Power BI(데스크톱** 버전)를 설정하여 방금 만든 *Table* Service에서 데이터를 수집합니다. 그러면 *HoloLens* 버전의 Power BI 해당 데이터를 사용하여 결과를 시각화합니다.
 
-1.  Microsoft Store on Windows 10를 열고 **Power BI Desktop** 를 검색 합니다.
+1.  Microsoft Store on Windows 10 열고 **Power BI Desktop** 검색합니다.
 
     ![Power BI](images/AzureLabs-Lab313-73.png)
 
-2.  응용 프로그램을 다운로드 합니다. 다운로드가 완료 되 면 엽니다.
+2.  애플리케이션을 다운로드합니다. 다운로드가 완료되면 엽니다.
 
-3.  *Microsoft 365* 계정 을 Power BI **로그인합니다.** 등록하기 위해 브라우저로 리디렉션될 수 있습니다. 등록되면 Power BI 앱으로 돌아가서 다시 로그인합니다.
+3.  *Microsoft 365* **계정으로 Power BI 로그인합니다.** 등록하기 위해 브라우저로 리디렉션될 수 있습니다. 등록한 후에는 Power BI 앱으로 돌아가서 다시 로그인합니다.
 
 4.  데이터 **얻기를** 클릭한 다음 **자세히...** 를 클릭합니다.
 
     ![Power BI](images/AzureLabs-Lab313-74.png)
 
-5.  **Azure**, **Azure Table Storage** 를 클릭한 다음 **커넥트** 클릭합니다.
+5.  **Azure**, **Azure Table Storage** 를 클릭한 **다음, 커넥트** 클릭합니다.
 
     ![Power BI](images/AzureLabs-Lab313-75.png)
 
-6.  Table Service를 만드는 동안 이전에 수집한 테이블[URL(11장 13단계)을](#chapter-11---create-table-service)삽입하라는 메시지가 표시됩니다.  URL을 삽입한 후 테이블 "하위 폴더"(이 과정에서 IoTMessages)를 참조하는 경로 부분을 삭제합니다. 최종 결과는 아래 이미지에 표시된 대로 여야 합니다. 그런 다음 **확인을** 클릭합니다.
+6.  Table Service를 만드는 동안 이전에 수집한 테이블[URL(11장 13단계)을](#chapter-11---create-table-service)삽입하라는 메시지가 표시됩니다.  URL을 삽입한 후 테이블 "하위 폴더"(이 과정에서는 IoTMessages)를 참조하는 경로 부분을 삭제합니다. 최종 결과는 아래 이미지에 표시된 대로 여야 합니다. 그런 다음 **확인을** 클릭합니다.
 
     ![Power BI](images/AzureLabs-Lab313-76.png)
 
-7.  테이블 Storage 만드는 동안 앞에서 기록한 **Storage 키를** 삽입하라는 메시지가 표시됩니다(11장 [의 11단계).](#chapter-11---create-table-service) 그런 다음 **커넥트** 클릭합니다.
+7.  Table Storage 만드는 동안 이전에 기록한 **Storage 키를** 삽입하라는 메시지가 표시됩니다(11장 의 [11단계).](#chapter-11---create-table-service) 그런 다음 **커넥트** 클릭합니다.
 
     ![Power BI](images/AzureLabs-Lab313-77.png)  
 
@@ -1255,15 +1255,15 @@ IOT 장치에서 데이터를 시각화 하려면 **Power BI** (데스크톱 버
 
 3. 애플리케이션 목록에서 **Power BI** 시작합니다. 
 
-4. **Power BI** **Microsoft 365 계정에** 로그인하라는 메시지가 나타날 수 있습니다.
+4. **Power BI** **Microsoft 365 계정에** 로그인하도록 요청할 수 있습니다.
 
-5. 앱 내에서 작업 영역은 아래 이미지와 같이 기본적으로 표시됩니다. 그렇지 않은 경우 창의 왼쪽에 있는 작업 영역 아이콘을 클릭하기만 하면 됩니다.
+5. 앱 내에서 작업 영역은 아래 이미지와 같이 기본적으로 표시되어야 합니다. 그렇지 않은 경우 창의 왼쪽에 있는 작업 영역 아이콘을 클릭하기만 하면 됩니다.
 
     ![Power BI Hl](images/AzureLabs-Lab313-89.png)
 
 ## <a name="your-finished-your-iot-hub-application"></a>IoT Hub 애플리케이션 완료
 
-축하합니다. 시뮬레이션된 Virtual Machine Edge 디바이스를 통해 IoT Hub 서비스를 만들었습니다. 디바이스는 기계 학습 모델의 결과를 Azure Table Service에 전달할 수 있으며, Azure 함수 앱을 통해 Power BI 읽고 Microsoft HoloLens 내에서 시각화할 수 있습니다.
+축하합니다. 시뮬레이션된 Virtual Machine Edge 디바이스를 통해 IoT Hub 서비스를 성공적으로 만들었습니다. 디바이스는 기계 학습 모델의 결과를 Azure Table Service에 전달할 수 있으며, Azure 함수 앱을 통해 Power BI 읽고 Microsoft HoloLens 내에서 시각화할 수 있습니다.
  
 ![Power BI](images/AzureLabs-Lab313-00.png)
 

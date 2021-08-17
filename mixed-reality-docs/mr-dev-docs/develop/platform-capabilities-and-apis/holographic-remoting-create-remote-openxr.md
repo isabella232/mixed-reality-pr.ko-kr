@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, 원격, Holographic 원격, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, NuGet
-ms.openlocfilehash: 6cf44bd031aec4b475d7496a999a3c7d4d40cae7cc921ff39cfe61698f3dd532
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 3fd210db1b179cbceff057e25bf451be0e7ca843
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115212071"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184594"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-openxr-api"></a>OpenXR API를 사용 하 여 Holographic Remoting 원격 앱 작성
 
@@ -22,7 +22,7 @@ Holographic 원격 앱은 원격으로 렌더링 된 콘텐츠를 HoloLens 2 및
 
 이 페이지 및 작업 프로젝트의 모든 코드는 [Holographic Remoting 샘플 github 리포지토리](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)에서 찾을 수 있습니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 좋은 출발점은 작업 OpenXR 기반 데스크톱 또는 UWP 앱입니다. 자세한 내용은 [OpenXR 시작](../native/openxr-getting-started.md)하기를 참조 하세요.
 
@@ -206,6 +206,7 @@ m_window->PresentSwapchain();
 원격 앱에서 DX12를 사용 하는 경우 XrRemotingFrameMirrorImageD3D11MSFT 대신 XrRemotingFrameMirrorImageD3D12MSFT를 사용 합니다.
 
 ## <a name="see-also"></a>참고 항목
+* [Holographic 원격 기능 개요](holographic-remoting-overview.md)
 * [사용자 지정 홀로그램 원격 플레이어 앱 작성](holographic-remoting-create-player.md)
 * [홀로그램 원격을 사용하여 보안 연결 설정](holographic-remoting-secure-connection.md)
 * [Holographic 원격 문제 해결 및 제한 사항](holographic-remoting-troubleshooting.md)

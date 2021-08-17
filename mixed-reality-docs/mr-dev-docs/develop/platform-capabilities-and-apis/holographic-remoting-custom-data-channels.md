@@ -6,14 +6,14 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, Remoting, 홀로그램 Remoting, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 데이터 채널
-ms.openlocfilehash: 09fea161f9042d7afc59c16d3b5e8a6c69892e84b1de5e9ab4a4808733b4f171
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 1adda10aa7792eaeab0ac32cb37d73dcfd2b58e6
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115217089"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184714"
 ---
-# <a name="custom-holographic-remoting-data-channels"></a>사용자 지정 홀로그램 원격 데이터 채널
+# <a name="custom-holographic-remoting-data-channels-c"></a>사용자 지정 홀로그램 Remoting 데이터 채널(C++)
 
 >[!NOTE]
 >이 지침은 HoloLens 2 Holographic Remoting과 관련이 있습니다.
@@ -71,7 +71,7 @@ m_onDataChannelCreatedEventRevoker = m_remoteContext.OnDataChannelCreated(winrt:
     });
 ```
 
-데이터를 받을 때 알림을 받으려면 ```OnDataReceived``` ```IDataChannel``` 처리기에서 제공하는 개체의 이벤트에 ```OnDataChannelCreated``` 등록합니다. ```OnClosed```이벤트에 등록하여 데이터 채널이 닫혔을 때 알림을 받습니다.
+데이터를 수신할 때 알림을 받으려면 ```OnDataReceived``` ```IDataChannel``` 처리기에서 제공하는 개체의 이벤트에 ```OnDataChannelCreated``` 등록합니다. ```OnClosed```이벤트에 등록하여 데이터 채널이 닫혔을 때 알림을 받습니다.
 
 ```cpp
 m_customChannelDataReceivedEventRevoker = m_customDataChannel.OnDataReceived(winrt::auto_revoke, 
@@ -114,6 +114,7 @@ m_customDataChannel.Close();
 ```
 
 ## <a name="see-also"></a>참고 항목
+* [홀로그램 Remoting 개요](holographic-remoting-overview.md)
 * [Windows Mixed Reality API를 사용하여 홀로그램 원격 원격 앱 작성](holographic-remoting-create-remote-wmr.md)
 * [OpenXR API를 사용하여 홀로그램 원격 원격 앱 작성](holographic-remoting-create-remote-openxr.md)
 * [사용자 지정 홀로그램 원격 플레이어 앱 작성](holographic-remoting-create-player.md)

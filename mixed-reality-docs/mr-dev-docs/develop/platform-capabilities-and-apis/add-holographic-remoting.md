@@ -1,55 +1,55 @@
 ---
-title: 홀로그램 Remoting 추가
-description: 홀로그램 Remoting을 설치, 구성 및 사용하여 네트워크를 통해 홀로그램을 HoloLens 디바이스에 렌더링하는 방법을 알아봅니다.
+title: Holographic 원격 추가
+description: Holographic 원격을 설치, 구성 및 사용 하 여 네트워크를 통해 HoloLens 장치에 holograms을 렌더링 하는 방법을 알아봅니다.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
-keywords: Windows Mixed Reality, 홀로그램, 홀로그램 원격, 원격 렌더링, 네트워크 렌더링, HoloLens, 원격 홀로그램, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: ecfc49477e202b08303160e54ce986577a9d79eb387dc1edb1bc33c63644615f
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+keywords: Windows Mixed Reality, holograms, holographic 원격, 원격 렌더링, 네트워크 렌더링, HoloLens, 원격 holograms, 혼합 현실 헤드셋, Windows mixed reality 헤드셋, 가상 현실 헤드셋
+ms.openlocfilehash: 3f9d3d23d18f680ce1001310e4ce49089edaae6a
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115198859"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184624"
 ---
-# <a name="add-holographic-remoting-hololens-first-gen"></a>홀로그램 Remoting 추가(HoloLens(1세대)
+# <a name="add-holographic-remoting-hololens-first-gen"></a>Holographic Remoting 추가 (HoloLens (첫 번째 gen))
 
 >[!IMPORTANT]
-> 이 문서에서는 HoloLens 1용 호스트 애플리케이션을 만드는 작업을 설명합니다. **HoloLens(1세대)용** 호스트 애플리케이션은 NuGet 패키지 버전 **1.x.x 를** 사용해야 합니다. 즉, HoloLens 1용으로 작성된 호스트 애플리케이션은 HoloLens 2 호환되지 않으며 그 반대의 경우도 마찬가지입니다.
+> 이 문서에서는 HoloLens 1 용 호스트 응용 프로그램을 만드는 방법을 설명 합니다. **HoloLens (첫 번째 gen)** 용 호스트 응용 프로그램은 NuGet 패키지 **버전 1.x를 사용** 해야 합니다. 즉, HoloLens 1 용으로 작성 된 호스트 응용 프로그램은 HoloLens 2와 호환 되지 않으며 그 반대의 경우도 마찬가지입니다.
 
 ## <a name="hololens-2"></a>HoloLens 2
 
-holographic Remoting을 사용하는 HoloLens 개발자는 HoloLens 2 호환되도록 앱을 업데이트해야 합니다. 이렇게 하려면 Holographic Remoting NuGet 패키지의 새 버전이 필요합니다. HoloLens 2 Holographic Remoting Player에 연결할 때 Holographic Remoting NuGet 패키지 버전 2.0.0.0 이상을 사용해야 합니다. 그렇지 않을 경우 연결이 실패합니다.
+Holographic Remoting을 사용 하는 HoloLens 개발자는 HoloLens 2와 호환 되도록 앱을 업데이트 해야 합니다. 이렇게 하려면 새 버전의 Holographic Remoting NuGet 패키지가 필요 합니다. HoloLens 2에서 Holographic 원격 플레이어에 연결할 때 Holographic Remoting NuGet 패키지의 버전 2.0.0.0 이상을 사용 해야 합니다. 그렇지 않으면 연결이 실패 합니다.
 
 >[!NOTE]
-> HoloLens 2 관련 지침은 [여기에서](holographic-remoting-create-remote-wmr.md)찾을 수 있습니다.
+> HoloLens 2 관련 지침은 [여기](holographic-remoting-create-remote-wmr.md)에서 찾을 수 있습니다.
 
 
-## <a name="add-holographic-remoting-to-your-desktop-or-uwp-app"></a>데스크톱 또는 UWP 앱에 홀로그램 원격 추가
+## <a name="add-holographic-remoting-to-your-desktop-or-uwp-app"></a>데스크톱 또는 UWP 앱에 holographic 원격 추가
 
-이 페이지에서는 데스크톱 또는 UWP 앱에 홀로그램 원격을 추가하는 방법을 설명합니다.
+이 페이지에서는 데스크톱 또는 UWP 앱에 Holographic 원격 기능을 추가 하는 방법에 대해 설명 합니다.
 
-홀로그램 원격을 사용하면 앱이 데스크톱 PC 또는 UWP 디바이스(예: Xbox One)에서 호스팅되는 홀로그램 콘텐츠가 있는 HoloLens 대상으로 지정할 수 있습니다. 또한 더 많은 시스템 리소스에 액세스할 수 있어 원격 [몰입형 보기를](../../design/app-views.md) 기존 데스크톱 PC 소프트웨어에 통합할 수 있습니다. remoting 호스트 앱은 HoloLens 입력 데이터 스트림을 수신하고, 가상 몰입형 보기에서 콘텐츠를 렌더링하고, 콘텐츠 프레임을 다시 HoloLens 스트리밍합니다. 표준 Wi-Fi를 사용하여 연결합니다. 원격을 사용하려면 NuGet 패키지를 사용하여 데스크톱 또는 UWP 앱에 홀로그램 원격을 추가한 다음, 연결을 처리하고 몰입형 보기를 렌더링하는 코드를 작성합니다. 도우미 라이브러리는 디바이스 연결 처리 작업을 간소화하는 코드 샘플에 포함되어 있습니다.
+Holographic remoting을 사용 하면 앱이 데스크톱 PC 또는 UWP 장치 (예: Xbox One)에서 호스트 되는 Holographic 콘텐츠를 사용 하 여 HoloLens을 대상으로 지정할 수 있습니다. 또한 더 많은 시스템 리소스에 액세스할 수 있으므로 원격 [몰입 형 보기](../../design/app-views.md) 를 기존 데스크톱 PC 소프트웨어에 통합할 수 있습니다. 원격 호스트 앱은 HoloLens에서 입력 데이터 스트림을 수신 하 고, 가상 몰입 형 보기에서 콘텐츠를 렌더링 하 고, 콘텐츠 프레임을 다시 HoloLens으로 스트리밍합니다. 연결은 표준 Wi-fi를 사용 하 여 수행 됩니다. 원격 기능을 사용 하려면 NuGet 패키지를 사용 하 여 데스크톱 또는 UWP 앱에 holographic 원격을 추가한 다음, 연결을 처리 하 고 몰입 형 뷰를 렌더링 하는 코드를 작성 합니다. 도우미 라이브러리는 장치 연결을 처리 하는 작업을 간소화 하는 코드 샘플에 포함 되어 있습니다.
 
-일반적인 Remoting 연결의 대기 시간이 50ms입니다. 플레이어 앱은 실시간으로 대기 시간을 보고할 수 있습니다.
+일반적인 원격 연결의 경우 대기 시간은 50 밀리초로 낮습니다. 플레이어 앱은 실시간으로 대기 시간을 보고할 수 있습니다.
 
 >[!NOTE]
->이 문서의 코드 조각은 현재 C++ 홀로그램 프로젝트 템플릿 에서 사용되는 C++17 규격 C++/WinRT 대신 [C++/CX를](../native/creating-a-holographic-directx-project.md)사용하는 것을 보여줍니다.  개념은 C++/WinRT 프로젝트에 해당하지만 코드를 번역해야 합니다.
+>이 문서의 코드 조각은 현재 c + + [holographic 프로젝트 템플릿에](../native/creating-a-holographic-directx-project.md)사용 되는 c + 17-So-far working 호환 c + +/winrt 대신 c + +/cx를 사용 하는 방법을 보여 줍니다.  개념은 c + +/WinRT 프로젝트와 동일 하지만 코드를 변환 해야 합니다.
 
-### <a name="get-the-remoting-nuget-packages"></a>remoting NuGet 패키지 받기
+### <a name="get-the-remoting-nuget-packages"></a>원격 NuGet 패키지 가져오기
 
-다음 단계에 따라 홀로그램 remoting을 위한 NuGet 패키지를 얻고 프로젝트에서 참조를 추가합니다.
-1. Visual Studio 프로젝트로 이동합니다.
-2. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 관리...를 선택합니다.**
-3. 표시되는 패널에서 **찾아보기를** 선택하고 "홀로그램 Remoting"을 검색합니다.
-4. **Microsoft.Holographic.Remoting을** 선택하고 **설치를** 선택합니다.
-5. 미리 **보기** 대화 상자가 나타나면 **확인을** 선택합니다.
-6. 사용권 계약 대화 상자가 나타나면 **동의를** 선택합니다.
+holographic remoting에 대 한 NuGet 패키지를 가져오고 프로젝트에서 참조를 추가 하려면 다음 단계를 수행 합니다.
+1. Visual Studio에서 프로젝트로 이동 합니다.
+2. 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **관리 NuGet 패키지** ...를 선택 합니다.
+3. 표시 되는 패널에서 selecct를 **찾은** 다음 "Holographic Remoting"을 검색 합니다.
+4. **Holographic** 및 selecct **Install** 을 선택 합니다.
+5. **미리 보기** 대화 상자가 표시 되 면 **확인** 을 선택 합니다.
+6. 사용권 계약 대화 상자가 나타나면 **동의** 함을 선택 합니다.
 
 ### <a name="create-the-holographicstreamerhelpers"></a>HolographicStreamerHelpers 만들기
 
-먼저, Remoting을 처리할 클래스에 HolographicStreamerHelpers 인스턴스를 추가해야 합니다.
+먼저 원격 작업을 처리할 클래스에 HolographicStreamerHelpers의 인스턴스를 추가 해야 합니다.
 
 ```cpp
 #include <HolographicStreamerHelpers.h>
@@ -58,7 +58,7 @@ holographic Remoting을 사용하는 HoloLens 개발자는 HoloLens 2 호환되�
        Microsoft::Holographic::HolographicStreamerHelpers^ m_streamerHelpers;
 ```
 
-연결 상태도 추적해야 합니다. 미리 보기를 렌더링하려면 복사할 질감이 있어야 합니다. 또한 연결 상태 잠금, HoloLens IP 주소를 저장하는 방법 등과 같은 몇 가지 사항이 필요합니다.
+또한 연결 상태를 추적 해야 합니다. 미리 보기를 렌더링 하려면 질감을 복사 하 여 복사 해야 합니다. 연결 상태 잠금, HoloLens IP 주소를 저장 하는 몇 가지 방법 등의 몇 가지 작업도 필요 합니다.
 
 ```cpp
 private:
@@ -75,9 +75,9 @@ private:
        Microsoft::WRL::ComPtr<ID3D11Texture2D>             m_spTexture;
 ```
 
-### <a name="initialize-holographicstreamerhelpers-and-connect-to-hololens"></a>HolographicStreamerHelpers를 초기화하고 HoloLens
+### <a name="initialize-holographicstreamerhelpers-and-connect-to-hololens"></a>HolographicStreamerHelpers를 초기화 하 고 HoloLens에 연결
 
-HoloLens 디바이스에 연결하려면 HolographicStreamerHelpers의 인스턴스를 만들고 대상 IP 주소에 연결합니다. Holographic Remoting 라이브러리에는 인코더 및 디코더 해상도가 정확하게 일치해야 하므로 비디오 프레임 크기를 HoloLens 표시 너비 및 높이와 일치하도록 설정해야 합니다.
+HoloLens 장치에 연결 하려면 HolographicStreamerHelpers의 인스턴스를 만들고 대상 IP 주소에 연결 합니다. Holographic Remoting 라이브러리에서 인코더 및 디코더 해상도가 정확 하 게 일치 하도록 예상 하므로 비디오 프레임 크기를 HoloLens 표시 너비 및 높이와 일치 하도록 설정 해야 합니다.
 
 ```cpp
 m_streamerHelpers = ref new HolographicStreamerHelpers();
@@ -98,9 +98,9 @@ m_streamerHelpers = ref new HolographicStreamerHelpers();
        }
 ```
 
-디바이스 연결은 비동기입니다. 앱은 연결, 연결 끊기 및 프레임 전송 이벤트에 대한 이벤트 처리기를 제공해야 합니다.
+장치 연결이 비동기입니다. 앱에서 연결, 연결 끊기 및 프레임 전송 이벤트에 대 한 이벤트 처리기를 제공 해야 합니다.
 
-OnConnected 이벤트는 UI를 업데이트하고 렌더링을 시작할 수 있습니다. 데스크톱 코드 샘플에서는 창 제목을 "연결된" 메시지로 업데이트합니다.
+OnConnected 이벤트는 UI를 업데이트 하 고 렌더링을 시작할 수 있습니다. 바탕 화면 코드 샘플에서는 "연결 된" 메시지로 창 제목을 업데이트 합니다.
 
 ```cpp
 m_streamerHelpers->OnConnected += ref new ConnectedEvent(
@@ -110,7 +110,7 @@ m_streamerHelpers->OnConnected += ref new ConnectedEvent(
            });
 ```
 
-OnDisconnected 이벤트는 다시 연결, UI 업데이트 등을 처리할 수 있습니다. 이 예제에서는 일시적인 오류가 있는 경우 다시 연결합니다.
+OnDisconnected 이벤트는 다시 연결, UI 업데이트 등을 처리할 수 있습니다. 이 예에서는 일시적인 오류가 발생 하는 경우 다시 연결 합니다.
 
 ```cpp
 Platform::WeakReference streamerHelpersWeakRef = Platform::WeakReference(m_streamerHelpers);
@@ -150,7 +150,7 @@ Platform::WeakReference streamerHelpersWeakRef = Platform::WeakReference(m_strea
            });
 ```
 
-Remoting 구성 요소가 프레임을 보낼 준비가 되면 SendFrameEvent에서 복사본을 만들 수 있는 기회가 앱에 제공됩니다. 여기서는 미리 보기 창에 표시할 수 있도록 프레임을 스왑 체인에 복사합니다.
+원격 구성 요소에서 프레임을 전송할 준비가 되 면 앱에 Send프레임 이벤트에서 복사본을 만들 수 있는 기회가 제공 됩니다. 여기에서 프레임을 스왑 체인에 복사 하 여 미리 보기 창에 표시할 수 있습니다.
 
 ```cpp
 m_streamerHelpers->OnSendFrame += ref new SendFrameEvent(
@@ -178,17 +178,17 @@ m_streamerHelpers->OnSendFrame += ref new SendFrameEvent(
            });
 ```
 
-### <a name="render-holographic-content"></a>홀로그램 콘텐츠 렌더링
+### <a name="render-holographic-content"></a>Holographic 내용 렌더링
 
-원격을 사용하여 콘텐츠를 렌더링하려면 데스크톱 또는 UWP 앱 내에서 가상 IFrameworkView를 설정하고 원격에서 홀로그램 프레임을 처리합니다. 모든 Windows Holographic API는 이 보기에서 동일한 방식으로 사용되지만 약간 다르게 설정됩니다.
+원격을 사용 하 여 콘텐츠를 렌더링 하려면 데스크톱 또는 UWP 앱 내에서 가상 IFrameworkView를 설정 하 고 원격에서 holographic 프레임을 처리 합니다. 이 보기에서 모든 Windows Holographic api는 동일한 방식으로 사용 되지만 약간 다르게 설정 됩니다.
 
-홀로그램 공간 및 음성 구성 요소는 직접 만드는 대신 HolographicRemotingHelpers 클래스에서 제공됩니다.
+Holographic space 및 speech 구성 요소를 직접 만드는 대신 HolographicRemotingHelpers 클래스에서 제공 됩니다.
 
 ```cpp
 m_appView->Initialize(m_streamerHelpers->HolographicSpace, m_streamerHelpers->RemoteSpeech);
 ```
 
-Run 메서드에서 업데이트 루프를 사용하는 대신 데스크톱 또는 UWP 앱의 주 루프에서 틱 업데이트를 제공합니다. 이렇게 하면 데스크톱 또는 UWP 앱이 메시지 처리를 제어할 수 있습니다.
+Run 메서드에서 업데이트 루프를 사용 하는 대신 데스크톱 또는 UWP 앱의 주 루프에서 틱 업데이트를 제공 합니다. 이렇게 하면 데스크톱 또는 UWP 앱이 메시지 처리를 계속 제어할 수 있습니다.
 
 ```cpp
 void DesktopWindow::Tick()
@@ -200,7 +200,7 @@ void DesktopWindow::Tick()
    }
 ```
 
-홀로그램 앱 보기의 Tick() 메서드는 업데이트, 그리기, 현재 루프의 반복 하나를 완료합니다.
+Holographic app 뷰의 Tick () 메서드는 업데이트, 그리기, 표시 루프의 반복 하나를 완료 합니다.
 
 ```cpp
 void AppView::Tick()
@@ -220,11 +220,11 @@ void AppView::Tick()
    }
 ```
 
-홀로그램 앱 보기 업데이트, 렌더링 및 현재 루프는 데스크톱 PC에서 훨씬 더 많은 양의 시스템 리소스에 액세스할 수 있다는 점을 제외하고 HoloLens 실행할 때와 정확히 동일합니다. 더 많은 삼각형을 렌더링하고, 더 많은 그리기 패스가 있고, 더 많은 물리학을 수행하며, x64 프로세스를 사용하여 2GB 이상의 RAM이 필요한 콘텐츠를 로드할 수 있습니다.
+holographic 앱 보기 업데이트, 렌더링 및 표시 루프는 데스크톱 PC에서 훨씬 더 많은 양의 시스템 리소스에 액세스할 수 있다는 점을 제외 하 고는 HoloLens에서 실행 하는 경우와 정확히 동일 합니다. 더 많은 삼각형을 렌더링 하 고, 더 많은 그리기 패스를 사용 하 고, 더 많은 물리학를 수행 하 고, x64 프로세스를 사용 하 여 2gb 이상의 RAM이 필요한 콘텐츠를 로드할 수 있습니다.
 
-### <a name="disconnect-and-end-the-remote-session"></a>원격 세션 연결 끊기 및 종료
+### <a name="disconnect-and-end-the-remote-session"></a>원격 세션의 연결을 끊고 종료 합니다.
 
-연결을 끊려면(예: 사용자가 UI 단추를 클릭하여 연결을 끊을 때) HolographicStreamerHelpers에서 Disconnect()를 호출한 다음 개체를 해제합니다.
+연결을 끊으려면 예를 들어 사용자가 UI 단추를 클릭 하 여 HolographicStreamerHelpers에서 연결 끊기 ()의 연결을 끊은 다음 개체를 해제 합니다.
 
 ```cpp
 void DesktopWindow::DisconnectFromRemoteDevice()
@@ -242,13 +242,13 @@ void DesktopWindow::DisconnectFromRemoteDevice()
    }
 ```
 
-## <a name="get-the-remoting-player"></a>Remoting 플레이어 얻기
+## <a name="get-the-remoting-player"></a>원격 플레이어 가져오기
 
-Windows Holographic remoting player는 Windows 앱 스토어에서 연결할 호스트 앱을 위한 엔드포인트로 제공됩니다. Windows 홀로그램 Remoting 플레이어를 얻으려면 HoloLens Windows 앱 스토어를 방문하여 Remoting을 검색하고 앱을 다운로드합니다. Remoting 플레이어에는 화면에 통계를 표시하는 기능이 포함되어 있으며, 이 기능은 Remoting 호스트 앱을 디버그할 때 유용할 수 있습니다.
+Windows Holographic remoting 플레이어는 Windows app store에서 연결할 원격 호스트 앱에 대 한 끝점으로 제공 됩니다. Windows Holographic remoting 플레이어를 얻으려면 HoloLens에서 Windows app store를 방문 하 여 원격을 검색 하 고 앱을 다운로드 합니다. 원격 플레이어에는 통계를 화면에 표시 하는 기능이 포함 되어 있습니다 .이 기능은 원격 호스트 앱을 디버그할 때 유용할 수 있습니다.
 
-## <a name="notes-and-resources"></a>참고 및 리소스
+## <a name="notes-and-resources"></a>메모 및 리소스
 
-홀로그램 앱 보기에는 홀로그램 공간을 초기화하는 데 사용해야 하는 Direct3D 디바이스를 앱에 제공하는 방법이 필요합니다. 앱은 이 Direct3D 디바이스를 사용하여 미리 보기 프레임을 복사하고 표시해야 합니다.
+Holographic 앱 보기는 holographic 공간을 초기화 하는 데 사용 해야 하는 Direct3D 장치에 앱을 제공 하는 방법이 필요 합니다. 앱은이 Direct3D 장치를 사용 하 여 미리 보기 프레임을 복사 하 고 표시 해야 합니다.
 
 ```cpp
 internal:
@@ -258,6 +258,14 @@ internal:
        }
 ```
 
-**코드 샘플:** 데스크톱 Win32, UWP DirectX 및 XAML을 사용하여 UWP에 대한 원격 및 원격 호스트 프로젝트와 호환되는 홀로그램 애플리케이션 보기를 포함하는 전체 [홀로그램](https://github.com/Microsoft/HoloLensCompanionKit) 원격 코드 샘플을 사용할 수 있습니다. 
+**코드 샘플:** [Holographic 원격 코드 샘플](https://github.com/Microsoft/HoloLensCompanionKit) 을 사용할 수 있습니다. 여기에는 데스크톱 WIN32, uwp DIRECTX 및 UWP for XAML의 원격 및 원격 호스트 프로젝트와 호환 되는 Holographic 응용 프로그램 보기가 포함 되어 있습니다. 
 
-**디버깅 참고 사항:** 홀로그램 Remoting 라이브러리는 첫째 예외를 throw할 수 있습니다. 이러한 예외는 당시 활성 상태인 Visual Studio 예외 설정에 따라 디버깅 세션에서 표시될 수 있습니다. 이러한 예외는 홀로그램 Remoting 라이브러리에 의해 내부적으로 포착되며 무시될 수 있습니다.
+**디버깅 참고 사항:** Holographic Remoting 라이브러리는 첫 번째 예외를 throw 할 수 있습니다. 이러한 예외는 현재 활성 상태인 Visual Studio 예외 설정에 따라 디버깅 세션에서 표시 될 수 있습니다. 이러한 예외는 Holographic Remoting 라이브러리를 통해 내부적으로 catch 되며 무시할 수 있습니다.
+
+## <a name="see-also"></a>참고 항목
+* [Holographic 원격 기능 개요](holographic-remoting-overview.md)
+* [사용자 지정 홀로그램 원격 플레이어 앱 작성](holographic-remoting-create-player.md)
+* [홀로그램 원격을 사용하여 보안 연결 설정](holographic-remoting-secure-connection.md)
+* [Holographic 원격 문제 해결 및 제한 사항](holographic-remoting-troubleshooting.md)
+* [홀로그램 원격 소프트웨어 사용 조건](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Microsoft 개인정보처리방침](https://go.microsoft.com/fwlink/?LinkId=521839)
