@@ -2,22 +2,24 @@
 title: Unreal의 스트리밍
 description: 스트리밍 제한 및 명령줄 옵션을 포함하여, Unreal 앱을 HoloLens 2로 스트리밍하는 방법에 대해 알아봅니다.
 author: sw5813
-ms.author: suwu
-ms.date: 12/7/2020
+ms.author: v-vtieto
+ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 스트리밍, PC, 홀로그램 앱 원격, 홀로그램 원격 플레이어, 설명서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 4b3be99f699c7c1d40d3ea98aacecde6f60e4d2db759448f84c820a43d89bb0a
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 77f32cafa84233654ad9e5754d0db9f7b6f9437a
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115218862"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184636"
 ---
 # <a name="streaming-in-unreal"></a>Unreal의 스트리밍
+
+"스트리밍"을 "홀로그램 원격"이라고 하는 경우가 있습니다. 자세한 내용은 [홀로그램 원격 개요](../platform-capabilities-and-apis/holographic-remoting-overview.md)를 참조하세요.
 
 PC에서 HoloLens로 스트리밍하는 경우 다음과 같은 두 가지 주요 이점이 있습니다. 
 * 혼합 현실 앱에서 PC의 계산 능력을 활용할 수 있습니다. 
