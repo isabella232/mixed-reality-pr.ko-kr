@@ -218,6 +218,8 @@
           href: unity/spatial-mapping-in-unity.md
         - name: 공간 음향
           href: unity/spatial-sound-in-unity.md
+        - name: 장면 이해
+          href: unity/scene-understanding-sdk.md
     - name: 고급 기능
       items:
         - name: 사진 비디오 카메라
@@ -264,6 +266,8 @@
               href: unity/lunar-module.md
     - name: 디버깅 및 성능
       items:
+        - name: Unity에 대한 성능 추천 사항
+          href: unity/performance-recommendations-for-unity.md
         - name: Unity로 관리되는 디버깅
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Unity 권장 설정
@@ -422,15 +426,13 @@
   items:
     - name: 핵심 구성 요소
       items:
-        - name: 장면 이해
-          href: platform-capabilities-and-apis/scene-understanding-sdk.md
         - name: 공유 공간 앵커
           href: platform-capabilities-and-apis/shared-spatial-anchors-in-directx.md
-        - name: '키보드, 마우스 및 컨트롤러 입력'
+        - name: '키보드, 마우스 및 컨트롤러 입력(C++ 샘플 포함)'
           href: platform-capabilities-and-apis/keyboard-mouse-and-controller-input-in-directx.md
         - name: 홀로그램 DirectX 앱에서 XAML 사용
           href: platform-capabilities-and-apis/using-xaml-with-holographic-directx-apps.md
-        - name: QR 코드 추적
+        - name: QR 코드 추적(C# 및 C++ 샘플 포함)
           href: platform-capabilities-and-apis/qr-code-tracking.md
     - name: 혼합 현실의 공유 환경
       items:
@@ -440,13 +442,13 @@
           href: /azure/spatial-anchors/
         - name: Spectator View
           href: platform-capabilities-and-apis/spectator-view.md
-        - name: WebRTC
+        - name: 'WebRTC(C#, C++, Unity)'
           href: 'https://github.com/microsoft/MixedReality-WebRTC'
     - name: 카메라 및 캡처
       items:
-        - name: 위치를 찾을 수 있는 카메라
+        - name: 위치 확인 가능한 카메라(C++ 샘플 포함)
           href: platform-capabilities-and-apis/locatable-camera.md
-        - name: 개발자를 위한 혼합 현실 캡처
+        - name: 개발자를 위한 혼합 현실 캡처(C# 및 C++ 샘플 포함)
           href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
         - name: 작동 방법 - 혼합 현실 캡처 스튜디오
           href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
@@ -484,12 +486,10 @@
           href: platform-capabilities-and-apis/app-quality-criteria.md
         - name: 홀로그램 렌더링
           href: platform-capabilities-and-apis/rendering.md
-        - name: 볼륨 렌더링
+        - name: 볼륨 렌더링(C++ 샘플 포함)
           href: platform-capabilities-and-apis/volume-rendering.md
-        - name: 홀로그램 안정성
+        - name: 홀로그램 안정성(C# 샘플 포함)
           href: platform-capabilities-and-apis/hologram-stability.md
-        - name: 안정화 평면을 사용하여 홀로그램 교란 줄이기
-          href: platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md
         - name: 혼합 현실의 성능 이해
           href: platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md
         - name: Unity에 대한 성능 추천 사항
@@ -506,13 +506,13 @@
           href: platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input.md
         - name: HoloLens 에뮬레이터 아카이브
           href: platform-capabilities-and-apis/hololens-emulator-archive.md
-        - name: 인식 시뮬레이션
+        - name: 인식 시뮬레이션(C# 샘플 포함)
           href: platform-capabilities-and-apis/perception-simulation.md
     - name: 디바이스 포털
       items:
         - name: Windows 장치 포털 사용
           href: platform-capabilities-and-apis/using-the-windows-device-portal.md
-        - name: 디바이스 포털 API 참조
+        - name: 디바이스 포털 API 참조(REST)
           href: platform-capabilities-and-apis/device-portal-api-reference.md
     - name: 연구 도구
       items:
