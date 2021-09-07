@@ -1,18 +1,20 @@
 ---
-ms.openlocfilehash: ad45cf8df4e51d17533c8e57b9ffe67738676d2af5398dd320cc86be469d5803
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 2ab12da2da926d906a5ae57868f152ecc2b13d90
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115208891"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244294"
 ---
 # <a name="world-locking-tools-recommended"></a>[World Locking Tools(권장)](#tab/wlt)
 
-기본적으로 World Locking Tools는 세션 전체에서 실제 세계를 기준으로 Unity의 좌표계를 복원합니다. 즉, 애플리케이션을 종료하고 다시 실행한 후 홀로그램이 실제 세계에서 동일한 위치에 나타나도록 하려면 홀로그램이 동일한 자세만 다시 가져야 합니다.
+기본적으로 World Locking Tools는 로컬 공간 앵커의 지속성을 지원하는 디바이스의 세션에서 실제 세계를 기준으로 Unity의 좌표계를 복원합니다. 홀로그램이 애플리케이션을 종료하고 다시 실행한 후 실제 세계의 동일한 위치에 나타나도록 하려면 홀로그램이 동일한 자세만 다시 가져야 합니다.
 
 ![Unity 검사기에서 세계 잠금 컨텍스트 구성 요소](../../images/world-locking-tools-img-02.png)
 
 애플리케이션에 더 세부적인 제어가 필요한 경우 검사기에서 **자동 저장** 및 **자동 로드를** 사용하지 않도록 설정하고 [설명서의 지속성 섹션에](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html)설명된 대로 스크립트에서 관리되는 지속성을 사용할 수 있습니다.
+
+로컬 앵커 지속성은 현재 HoloLens 디바이스 제품군에서만 지원됩니다. 그러나 Android 및 iOS뿐만 아니라 HoloLens 세션 간에 좌표 공간의 지속성과 디바이스 간 좌표 공간 공유는 Azure Spatial Anchors 통합을 통해 지원됩니다. Azure Spatial Anchors 함께 World Locking Tools를 사용하는 [다양한 추가 정보 및 샘플이](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLT_ASA.html) 있습니다.
 
 # <a name="aranchormanager"></a>[ARAnchorManager](#tab/anchorstore)
 
@@ -99,7 +101,7 @@ ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
 XRAnchorStore anchorStore = await arAnchorManager.subsystem.TryGetAnchorStoreAsync();
 ```
 
-앵커 유지/비지속성의 전체 예제를 보려면 Mixed Reality [OpenXR 플러그 인 샘플 장면에서](../../xr-project-setup.md#unity-sample-projects-for-openxr-and-hololens-2)앵커 -> Anchors 샘플 GameObject 및 AnchorsSample.cs 스크립트를 확인하세요.
+앵커 유지/비지속성의 전체 예제를 보려면 Mixed Reality [OpenXR 플러그 인 샘플 장면에서](../../xr-project-setup.md#unity-sample-projects-for-openxr-and-hololens-2)Anchors -> Anchors 샘플 GameObject 및 AnchorsSample.cs 스크립트를 확인하세요.
 
 ![앵커 샘플이 강조 표시된 Unity 편집기에서 열린 계층 구조 패널의 스크린샷](../../images/openxr-features-img-04.png)
 
@@ -112,7 +114,7 @@ XRAnchorStore anchorStore = await arAnchorManager.subsystem.TryGetAnchorStoreAsy
 **네임스페이스:** *UnityEngine.XR.WSA.Persistence*<br>
 **클래스:** *WorldAnchorStore*
 
-WorldAnchorStore를 사용하면 세션 간에 WorldAnchor의 위치를 유지할 수 있습니다. 세션 간에 홀로그램을 실제로 유지하려면 특정 세계 앵커를 사용하는 GameObject를 별도로 추적해야 합니다. 종종 세계 앵커를 사용하여 GameObject 루트를 만들고 로컬 위치 오프셋을 사용하여 자식 홀로그램을 고정하는 것이 타당합니다.
+WorldAnchorStore를 사용하면 세션 간에 WorldAnchor의 위치를 유지할 수 있습니다. 세션 간에 홀로그램을 실제로 유지하려면 특정 세계 앵커를 사용하는 GameObjects를 별도로 추적해야 합니다. 종종 세계 앵커를 사용하여 GameObject 루트를 만들고 로컬 위치 오프셋을 사용하여 자식 홀로그램을 고정하는 것이 타당합니다.
 
 이전 세션에서 홀로그램을 로드하려면 다음을 수행합니다.
 
@@ -126,7 +128,7 @@ WorldAnchorStore를 사용하면 세션 간에 WorldAnchor의 위치를 유지�
 2. ID를 지정하여 세계 앵커 저장
 3. ID와 함께 세계 앵커와 관련된 앱 데이터 저장
 
-### <a name="getting-the-worldanchorstore"></a>WorldAnchorStore 받기
+### <a name="getting-the-worldanchorstore"></a>WorldAnchorStore 얻기
 
 작업을 수행할 준비가 되면 알 수 있도록 WorldAnchorStore에 대한 참조를 유지하려고 합니다. 비동기 호출이므로 시작하는 즉시 다음을 호출하려고 합니다.
 
@@ -197,4 +199,4 @@ for (int index = 0; index < ids.Length; index++)
 
 Unity에서 공유 환경 빌드를 시작하려면 5분 Azure Spatial Anchors Unity 빠른 시작을 사용해 <a href="/azure/spatial-anchors/unity-overview" target="_blank">보세요.</a>
 
-Azure Spatial Anchors 실행하면 <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Unity에서 앵커를 만들고 찾을</a>수 있습니다.
+Azure Spatial Anchors 사용하여 실행하면 <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Unity 에서 앵커를 만들고 찾을</a>수 있습니다.

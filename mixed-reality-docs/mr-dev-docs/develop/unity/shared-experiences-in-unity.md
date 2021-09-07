@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 공유, 고정, WorldAnchor, MR 공유 250, WorldAnchorTransferBatch, SpatialPerception, Azure, Azure 공간 고정, GLOBAL.ASA, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: b9fdd09740dc6197c46a2d017f61e97898f213cd44bb504cbbf306f6a7ae21ec
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: f7725c8282d1b5a93d555ac0f55ee936b910ff6c
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115195925"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244189"
 ---
 # <a name="shared-experiences-in-unity"></a>Unity의 공유 환경
 
@@ -19,7 +19,15 @@ ms.locfileid: "115195925"
 
 ## <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
 
-<a href="/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a> 는 응용 프로그램이 여러 HoloLens, iOS 및 Android 장치에서 찾을 수 있는 내구성이 있는 클라우드 지원 공간 앵커를 만듭니다.  여러 장치에서 공통 공간 앵커를 공유 하 여 각 사용자는 동일한 물리적 위치에서 해당 앵커에 대해 렌더링 된 콘텐츠를 볼 수 있습니다. 
+### <a name="automated-with-world-locking-tools"></a>세계 잠금 도구를 사용 하 여 자동화
+
+로컬 앵커와 마찬가지로 세계 잠금 도구는 개별 개체를 잠그기 위해 개별 앵커를 사용 하는 대신 Azure 공간 앵커 그룹을 사용 하 여 실제 세계에 상대적인 전체 좌표 공간을 잠글 수 있습니다. 전체 공간을 잠그는 것은 정확한 레이아웃에 더 취약 환경을 제공 하는 것이 아니라 개발자 시간 및 런타임 리소스에도 더 효율적입니다.
+
+Azure 공간 앵커를 활용 하 여 HoloLens, Android 및 iOS 장치에서 좌표계를 공유 하 고 세션 간에 공간을 유지 하는 방법에 대 한 자세한 내용과 샘플은 [세계 잠금 도구 설명서](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLT_ASA.html)를 참조 하세요.
+
+### <a name="manual-configuration-of-azure-spatial-anchors"></a>Azure 공간 앵커의 수동 구성
+
+<a href="/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a> 는 앱이 여러 HoloLens, iOS 및 Android 장치에서 찾을 수 있는 내구성이 있는 클라우드 지원 공간 앵커를 만듭니다.  여러 장치에서 공통 공간 앵커를 공유 하 여 각 사용자는 동일한 물리적 위치에서 해당 앵커에 대해 렌더링 된 콘텐츠를 볼 수 있습니다.
 
 HoloLens, iOS 및 Android 장치에서 비동기 홀로그램 지 속성에 대해 <a href="/azure/spatial-anchors/overview" target="_blank">Azure 공간 앵커</a> 를 사용할 수도 있습니다.  내구성이 있는 클라우드 공간 앵커를 공유 하 여 여러 장치는 동시에 함께 제공 되지 않더라도 시간이 지남에 따라 동일한 지속형 홀로그램을 관찰할 수 있습니다.
 

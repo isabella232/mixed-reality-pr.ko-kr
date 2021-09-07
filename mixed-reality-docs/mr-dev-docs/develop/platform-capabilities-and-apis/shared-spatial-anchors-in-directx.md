@@ -6,19 +6,20 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: HoloLens, 동기화, 공간 앵커, 전송, 멀티 플레이, 보기, 시나리오, 연습, 샘플 코드, Azure, Azure Spatial Anchors, ASA
-ms.openlocfilehash: df78d9e2477fe377d61d2f2c13fc35e0a25b0b2cc37eeb883a69d2041fe42f9b
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 6b1b98539c05849064f1c33ed859bc925ed5fd31
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115193547"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244333"
 ---
+<!--Unity Note: No Unity specific content in this article. -->
 # <a name="shared-experiences-in-directx"></a>DirectX의 공유 환경
 
 > [!NOTE]
 > 이 문서는 레거시 WinRT 네이티브 API와 관련이 있습니다.  새 네이티브 앱 프로젝트의 경우 **[OpenXR API](../native/openxr-getting-started.md)** 를 사용하는 것이 좋습니다.
 
-공유 환경은 자신의 HoloLens, iOS 또는 Android 디바이스를 가진 여러 사용자가 전체적으로 동일한 홀로그램을 보고 상호 작용하는 환경입니다. 홀로그램은 공간 앵커 공유를 사용하여 공간의 고정된 지점에 배치됩니다.
+공유 환경은 자신의 HoloLens, iOS 또는 Android 디바이스를 가진 여러 사용자가 전체적으로 동일한 홀로그램을 보고 상호 작용하는 환경입니다. 홀로그램은 공간 앵커 공유를 사용하여 공간의 고정 지점에 배치됩니다.
 
 ## <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
 
@@ -32,9 +33,9 @@ Azure Spatial Anchors 실행하면 HoloLens <a href="/azure/spatial-anchors/conc
 
 ## <a name="local-anchor-transfers"></a>로컬 앵커 전송
 
-Azure Spatial Anchors 사용할 수 없는 경우 [로컬 앵커 전송을](../../out-of-scope/local-anchor-transfers-in-directx.md) 사용하면 하나의 HoloLens 디바이스에서 두 번째 HoloLens 디바이스에서 앵커를 가져올 앵커를 내보낼 수 있습니다.  이 방법은 Azure Spatial Anchors 비해 앵커 회수를 덜 제공하며 iOS 및 Android 디바이스는 이 접근 방식에서 지원되지 않습니다.
+Azure Spatial Anchors 사용할 수 없는 경우 로컬 [앵커 전송을](../../out-of-scope/local-anchor-transfers-in-directx.md) 통해 하나의 HoloLens 디바이스에서 두 번째 HoloLens 디바이스에서 앵커를 가져올 앵커를 내보낼 수 있습니다.  이 방법은 Azure Spatial Anchors 비해 덜 강력한 앵커 회수를 제공하며 iOS 및 Android 디바이스는 이 접근 방식에서 지원되지 않습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 * [혼합 현실의 공유 환경](shared-experiences-in-mixed-reality.md)
 * <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
