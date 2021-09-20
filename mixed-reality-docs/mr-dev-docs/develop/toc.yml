@@ -372,7 +372,7 @@
           href: unreal/unreal-publishing-to-store.md
 - name: JavaScript
   items:
-    - name: JavaScript 개발 개요
+    - name: WebXR을 통한 JavaScript 개발
       href: javascript/webxr-overview.md
     - name: 자습서
       items:
@@ -384,6 +384,14 @@
               href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
             - name: 3. 3D 개체와 상호 작용
               href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
+        - name: babylon.js를 사용하여 WebXR에서 피아노 빌드
+          items:
+            - name: 1. 소개
+              href: javascript/tutorials/babylonjs-webxr-piano/introduction-01.md
+            - name: 2. 3D 피아노 모델 빌드
+              href: javascript/tutorials/babylonjs-webxr-piano/keyboard-model-02.md
+            - name: 3. 3D 피아노 연주
+              href: javascript/tutorials/babylonjs-webxr-piano/keyboard-interaction-03.md
 - name: 사용자 지정 엔진
   items:
     - name: 사용자 지정 엔진 개발 개요
