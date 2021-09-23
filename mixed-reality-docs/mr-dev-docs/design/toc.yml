@@ -150,5 +150,7 @@
       href: asset-creation-process.md
     - name: 사용자 고유의 몰입형 환경 디자인
       href: add-custom-home-environments.md
-    - name: Figma 도구 키트
+    - name: MRTK Figma Toolkit
       href: figma-toolkit.md
+    - name: Unity용 Figma 브리지
+      href: figma-unity-bridge.md
