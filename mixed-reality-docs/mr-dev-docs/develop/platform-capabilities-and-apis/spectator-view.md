@@ -7,14 +7,19 @@ ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 관람자 보기, iPhone, iOS, iPad, OpenCV, 카메라, ARKit, HoloLens, Mixed Reality, Mixed Reality Toolkit, 데모, 레코드
-ms.openlocfilehash: 23f5dce85bdcd15e8950f5682814dec042bc604d7e983b17a5528949e51e844a
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: f30c745154056cda6b5ccf052efbbd0bb7f094ea
+ms.sourcegitcommit: 5d13ff165f4d08a3b028935fb39539a45a30f7e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115190517"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "127779467"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>HoloLens 및 HoloLens 2의 관람자 보기
+
+> [!WARNING]
+> Microsoft는 Spectator View 샘플이 사용하는 Azure Spatial Anchors SDK 패키지 버전과의 비호환성으로 인해 이 샘플의 사용을 중단할 예정입니다. 또한 고객이 지원되는 2019 LTS 빌드로 이전함에 따라 Unity 환경에 다른 변경 사항이 적용되면서 이 샘플의 작동이 중단될 수 있습니다.
+>
+> Microsoft는 현재 위의 문제를 해결하기 위해 리소스를 투자하고 있지는 않지만 샘플에서 Azure Spatial Anchors 기능을 제거하고 QR 코드 같은 기술을 정렬에 사용할 수 있습니다.   Microsoft는 당분간 커뮤니티 구성원이 이러한 문제를 해결하기 위한 PR을 제출할 경우 해당 PR을 검토하고 수락할 것입니다.
 
 ![표식](images/SpecViewPhoneHero.jpg)
 

@@ -3,16 +3,16 @@ title: Visual Studio를 사용하여 배포 및 디버깅
 description: Visual Studio를 사용하여 HoloLens 및 Windows Mixed Reality용 앱을 빌드, 디버그 및 배포하는 방법을 알아봅니다.
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 04/13/2020
+ms.date: 09/15/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, Mixed Reality, 디버그, 배포
-ms.openlocfilehash: 43abf7b512d6b01695e2c953df821a608359918c461614e3f94710b57f241db0
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 948ec52dcfe738a28316e9906d473b32454f6d59
+ms.sourcegitcommit: 7dad5bde71d429bb23c72a4074e60b6668a7f091
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115221139"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127857519"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>Visual Studio를 사용하여 배포 및 디버깅
 
@@ -117,21 +117,25 @@ PC에 연결된 Windows Mixed Reality 헤드셋을 사용하는 경우 PC에서 
 
 5. PC에서 앱을 HoloLens에 처음 배포하는 경우 PIN을 입력하라는 메시지가 표시됩니다. 아래의 **디바이스 페어링** 지침을 따릅니다.
 
-> [!NOTE]
-> USB를 통한 앱 배포에 상당한 지연 시간이 발생하는 경우 이전 섹션의 [원격 머신 지침](#deploying-a-hololens-app-over-wi-fi)를 사용하는 것이 좋습니다.
+## <a name="deploying-an-app-to-the-hololens-1st-gen-emulator"></a>HoloLens(1세대) 에뮬레이터에 앱 배포
 
-## <a name="deploying-an-app-to-the-hololens-emulator"></a>HoloLens 에뮬레이터에 앱 배포
+1. **[HoloLens 에뮬레이터를 설치](../install-the-tools.md)** 했는지 확인합니다.
+2. 앱에 대해 **x86** 빌드 구성을 선택합니다.</br>
+![Visual Studio의 x86 빌드 구성](images/x86setting.png)</br>
+3. 배포 대상 드롭다운 메뉴에서 **HoloLens 에뮬레이터** 를 선택합니다.</br>
+![Visual Studio의 에뮬레이터 대상](images/deployemulator.png)</br>
+4. **디버그 > 디버깅 시작** 을 차례로 선택하여 앱을 배포하고, 디버깅을 시작합니다.</br>
+![Visual Studio에서 디버깅 없이 시작](images/deploywithdebugging.png)</br>
 
-1. **[HoloLens 2 또는 HoloLens(1세대) 에뮬레이터를 설치](../install-the-tools.md#installation-checklist)** 했는지 확인합니다.
-2. 디바이스에 따라 빌드 구성 및 에뮬레이터 선택
+## <a name="deploying-an-app-to-the-hololens-2-emulator"></a>HoloLens 2 에뮬레이터에 앱 배포
 
-[!INCLUDE[](includes/vs-wifi-hl-include.md)]
-
-3. 필요에 따라 앱 빌드, 배포 및 디버그
-    * **디버그 > 디버깅 시작** 을 선택하여 앱을 배포하고 디버깅을 시작합니다.
-    * **빌드 > 배포** 를 선택하여 디버깅하지 않고 빌드 및 배포합니다.
-
-![Visual Studio에서 디버깅 없이 시작](images/deploywithdebugging.png)
+1. **[HoloLens 에뮬레이터를 설치](../install-the-tools.md)** 했는지 확인합니다.
+2. 앱에 대해 **x86** 또는 **x64** 빌드 구성을 선택합니다.</br>
+![Visual Studio의 x86 빌드 구성](images/x86setting.png)</br>
+3. 배포 대상 드롭다운 메뉴에서 **HoloLens 2 에뮬레이터** 를 선택합니다.</br>
+![Visual Studio 애플리케이션의 에뮬레이터 대상](images/deployemulator2.png)</br>
+4. **디버그 > 디버깅 시작** 을 차례로 선택하여 앱을 배포하고, 디버깅을 시작합니다.</br>
+![Visual Studio에서 디버깅 없이 시작](images/deploywithdebugging.png)</br>
 
 ## <a name="deploying-a-vr-app-to-your-local-pc"></a>로컬 PC에 VR 앱 배포 
 
