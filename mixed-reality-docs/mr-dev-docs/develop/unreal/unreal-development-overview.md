@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 스트리밍, 원격, 혼합 현실, 개발, 시작, 기능, 새 프로젝트, 에뮬레이터, 설명서, 가이드, 기능, 홀로그램, 게임 개발, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, OpenXR
-ms.openlocfilehash: fd9eec18e865910ef4899dfda75661d1edb57eed25a55641cde3ca7ac3f0b3a8
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 90dfb113008e6f8b1162c068ebfc967ed74fd6b4
+ms.sourcegitcommit: 71c2a4884bd83599e35dd894771a5e43e951b574
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115203463"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128184672"
 ---
 # <a name="unreal-development-overview"></a>Unreal 개발 개요
 
@@ -110,11 +110,9 @@ Visual Studio가 설치된 디바이스에서 실행되는 동안 애플리케�
 | 카메라 액세스 | 4.23 | ✔️ |
 | QR 코드 | 4.23 | ✔️ |
 | 공간 오디오 | 4.23 | ✔️ |
-| 스트리밍을 위한 관람자 화면 지원 | 4.24 |
 | 스트리밍을 통한 평면 LSR | 4.24 |
 | [샘플 앱](../features-and-samples.md) | 4.24 | ✔️ |
 | 모바일 다중 보기: 60FPS 성능 도달 | 4.25 | ✔️ |
-| 세 번째 카메라 렌더링 | 4.25 | ✔️ |
 | 패키지 데스크톱 앱에서 스트리밍 | 4.25.1 | ✔️ |
 | HoloLens 2용 Azure Spatial Anchors | 4.25 | ✔️ |
 | Mixed Reality UX Tools 지원 | 4.25 | ✔️ |
