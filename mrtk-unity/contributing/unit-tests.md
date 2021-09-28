@@ -5,18 +5,18 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, 개발, MRTK, UnitTest,
-ms.openlocfilehash: d528b5c16ab39271f9984bdd9e23ebca091efd53ed563149f3933ed31ed656dd
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 85c8a330d9af5b0d91c2b1b838ead7d10d97f981
+ms.sourcegitcommit: 3176df29fb0c9508751bd370f1211031d50d2c14
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115216259"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129148664"
 ---
 # <a name="writing-and-running-tests"></a>테스트 작성 및 실행
 
-MRTK의 안정성을 보장하기 위해 MRTK에는 코드 변경 내용이 기존 동작을 회귀하지 않도록 하는 일련의 테스트가 있습니다. MRTK와 같은 큰 코드베이스에서 테스트 검사를 잘 하는 것은 안정성과 변경 시 신뢰도에 매우 중요합니다.
+MRTK의 안정성을 보장하기 위해 MRTK에는 코드 변경 내용이 기존 동작을 회귀하지 않는지 확인하는 일련의 테스트가 있습니다. MRTK와 같은 큰 코드베이스에서 테스트 검사를 잘 하는 것은 안정성과 변경 시 신뢰도에 매우 중요합니다.
 
-MRTK는 [NUnit](https://nunit.org/)의 Unity 통합을 사용하는 Unity [Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) 사용합니다. 이 가이드에서는 MRTK에 테스트를 추가하는 방법에 대한 시작점을 제공합니다. 제공된 링크에서 조회할 수 있는 [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) 및 [NUnit은](https://nunit.org/) 설명하지 않습니다.
+MRTK는 [NUnit의](https://nunit.org/)Unity 통합을 사용하는 Unity [Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) 사용합니다. 이 가이드에서는 MRTK에 테스트를 추가하는 방법에 대한 시작점을 제공합니다. 제공된 링크에서 조회할 수 있는 [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) 및 [NUnit은](https://nunit.org/) 설명하지 않습니다.
 
 끌어오기 요청을 제출하기 전에 다음을 확인합니다.
 
@@ -41,13 +41,13 @@ MRTK는 [NUnit](https://nunit.org/)의 Unity 통합을 사용하는 Unity [Test 
 Unity 2018.4(예: Unity 2018.4.26f1)를 통해 H:\mrtk.dev 있는 프로젝트에서 테스트를 실행합니다.
 
 ```ps
-.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
+.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
 ```
 
 Unity 2018.4를 사용하여 H:\mrtk.dev 있는 프로젝트에서 테스트를 실행하여 결과를 C:\playmode_test_out
 
 ```ps
-.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
+.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
 ```
 
 스크립트를 통해 playmode 테스트를 여러 번 실행할 수도 `run_repeat_tests.ps1` 있습니다. 에 사용되는 모든 매개 `run_playmode_tests.ps1` 변수를 사용할 수 있습니다.
@@ -126,7 +126,7 @@ MRTK 재생 모드 테스트에는 새 기능이 손이나 눈과 같은 다양�
 새 재생 모드 테스트를 만들려면 다음을 수행합니다.
 
 * 자산 > MRTK > 테스트 > PlayModeTests로 이동합니다.
-* 마우스 오른쪽 단추로 클릭하고 > 테스트 > C# 테스트 스크립트 만들기
+* 마우스 오른쪽 단추로 클릭하고 > 테스트 만들기 > C# 테스트 스크립트
 * 기본 템플릿을 아래 구조로 바꾸기
 
 ```c#
