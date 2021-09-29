@@ -10,12 +10,12 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 혼합 현실, 스
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 77f32cafa84233654ad9e5754d0db9f7b6f9437a
-ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
+ms.openlocfilehash: 091f0876c37756fad47d2d78520adbd526aab24d
+ms.sourcegitcommit: 71c2a4884bd83599e35dd894771a5e43e951b574
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "122184636"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128184632"
 ---
 # <a name="streaming-in-unreal"></a>Unreal의 스트리밍
 
@@ -93,6 +93,9 @@ Unreal 4.25.1 이상에서는 패키징된 Windows 실행 파일에서 HoloLens 
 
 > [!NOTE]
 > 프로젝트 설정의 애플리케이션 이름을 사용하여 Windows 패키지를 자동으로 만들어야 합니다. 몇 가지 이유로 인해 이러한 이름이 다른 경우 명령 프롬프트에서 Windows 실행 파일 이름을 사용합니다.
+
+> [!NOTE]
+> 패키지된 실행 파일에서 스트림할 때 시선 추적이 작동하지 않는 경우 PC 지원 시선 추적기를 통해 다른 플러그 인(예: Magic Leap)을 사용하지 않도록 설정하거나 명령줄에서 관련 시선 추적 인수를 사용하여 애플리케이션을 실행합니다([명령줄 옵션](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unreal/unreal-streaming?tabs=wmr#command-line-options) 참조).
 
 Enter 키를 누르면 애플리케이션에서 스트리밍을 시작합니다.
 

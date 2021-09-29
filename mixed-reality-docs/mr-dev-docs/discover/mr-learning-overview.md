@@ -2,17 +2,17 @@
 title: Mixed Reality Learn 모듈 개요
 description: Microsoft Learn 플랫폼에서 호스팅되는 모든 사용 가능한 혼합 현실 모듈을 최신 상태로 유지합니다.
 author: hferrone
-ms.author: jemccull
-ms.date: 11/30/2020
+ms.author: v-vtieto
+ms.date: 9/27/2021
 ms.topic: article
 keywords: 혼합 현실, unity, 자습서, hololens, learn, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, 가상 현실이란, 증강 현실이란, MRTK, mixed reality toolkit, 언어 번역, Azure, Azure cognitive services, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 24584532fca0872a1ec62f6f2381e0aa076da5bb79eea765cb3a0a0f5736f36f
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 595aad668e2ff2a1a91fc801981be1d004bc012f
+ms.sourcegitcommit: 3176df29fb0c9508751bd370f1211031d50d2c14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115204399"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129148684"
 ---
 # <a name="mixed-reality-learn-overview"></a>Mixed Reality Learn 개요
 
@@ -23,7 +23,7 @@ Mixed Reality를 개발할 때 사용 가능한 도구가 많을수록 좋습니
 Microsoft Learn 모듈을 통해 Mixed Reality에서 능숙하게 개발할 수 있으며, Mixed Reality Toolkit, Unity, Azure 혼합 현실 서비스와 같은 핵심 도구를 시작할 수 있는 모듈 기반 구조를 제공합니다. Hello World를 매우 쉽게 출력할 수 있도록 단일 인터페이스에서 학습 목표와 필수 구성 요소를 계획하고 예상 완료 시간을 설정해 두었습니다. 
 
 > [!div class="nextstepaction"]
-> [Mixed Reality 학습 경로 시작](/learn/browse/?terms=mixed+reality)
+> [Mixed Reality Learn 모듈 찾아보기](/learn/browse/?terms=mixed+reality)
 
 ## <a name="general-modules"></a>일반 모듈
 

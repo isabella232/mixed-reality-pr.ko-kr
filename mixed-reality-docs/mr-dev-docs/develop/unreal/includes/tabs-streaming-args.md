@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 283ef0bedc96a63d34a66fa0d88dee97420957c7744ad3702c6ac3bc34c14310
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 12634c1fc18366e28a51688b19fc739ea69d37ec
+ms.sourcegitcommit: 71c2a4884bd83599e35dd894771a5e43e951b574
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115218863"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128184631"
 ---
 # <a name="windows-mixed-reality"></a>[Windows Mixed Reality](#tab/wmr)
 
@@ -15,6 +15,7 @@ ms.locfileid: "115218863"
 | `-HoloLensRemotingListen` | (선택 사항) 수신 대기 서버 시작 |
 | `-HoloLensRemotingListenPort=<port>` | (선택 사항) 수신할 포트를 사용합니다. HoloLens 디바이스에서 PC 또는 VM에 연결하는 데 사용됩니다. |
 | `-HoloLens1Remoting=<IP address>` | (4.26에서는 사용되지 않음)연결할 HoloLens 1 디바이스의 IP 주소를 사용합니다. |
+| `-eyetracking=WindowsMixedRealityEyeTracker` | (선택 사항) Windows Mixed Reality 시선 추적기를 사용합니다. |
 
 # <a name="openxr"></a>[OpenXR](#tab/openxr)
 
@@ -25,3 +26,4 @@ ms.locfileid: "115218863"
 | `-Listen` | (선택 사항) 수신 대기 서버 시작 |
 | `-RemotingBitrate=<bitrate>` | (선택 사항) 기본값은 8000입니다. 최대 네트워크 전송 속도(kb/s)입니다. |
 | `-RemotingCodec=<codec>` | (선택 사항) 연결 코덱  |
+| `-eyetracking=OpenXREyeTracker` | (선택 사항) OpenXR 시선 추적기를 사용합니다. |
