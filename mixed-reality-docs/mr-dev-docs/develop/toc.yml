@@ -36,6 +36,8 @@
           href: unity/tutorials.md
         - name: HoloLens 2 자습서
           items:
+            - name: HoloLens 2 기본 사항 자습서
+              href: /learn/paths/beginner-hololens-2-tutorials/
             - name: 다중 사용자 기능 자습서
               items:
                 - name: 1. 소개
