@@ -1,141 +1,142 @@
 ### YamlMime:FAQ
 metadata:
-  title: HP Reverb G2 FAQ
-  description: Windows Mixed Reality 몰입형 헤드셋과 함께 HP Reverb G2 헤드셋을 사용하는 것에 대한 일반적인 질문과 대답을 최신 상태로 유지합니다.
-  ms.author: v-hferrone
-  ms.date: 09/15/2020
+  title: HP 반향 G2 Faq
+  description: Windows Mixed Reality 모던 헤드셋에서 HP 반향 G2 헤드셋 사용에 대 한 질문과 대답을 최신으로 유지 합니다.
+  author: qianwen
+  ms.author: v-qianwen
+  ms.date: 09/24/2021
   ms.topic: article
-  keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Performance
+  keywords: Windows Mixed Reality, Mixed reality, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, 성능
   appliesto:
   - Windows 10
-  ms.openlocfilehash: 73c4761a35e679bccc8430ae7860aef71f015f25946ee709393980cf5f064148
-  ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+  ms.openlocfilehash: e8ba390b255b0f364e36a4f366b0da427e39c8fb
+  ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
   ms.translationtype: MT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "115219942"
-title: HP Reverb G2 질문과 대답
+  ms.lasthandoff: 10/04/2021
+  ms.locfileid: "129436820"
+title: HP 반향 G2 질문과 대답
 summary: ''
 sections:
 - name: 무시됨
   questions:
   - question: >
-      헤드셋 케이블을 PC에 연결하기 위해 따라야 하는 특정 주문이 있나요?
+      Is there a specific order I should follow to connect my headset cables to a PC
     answer: >
-      HP 권장 사항:
+      HP Recommends:
 
 
-      - PC 또는 전원 공급 장치에 연결하기 전에 먼저 헤드셋에 6미터 케이블을 커넥트.
+      - Connect the 6-meter cable to the headset first before connecting to the PC or power supply.
 
-      - 초기 설치 후 헤드셋에 연결된 6미터 케이블을 그대로 둡니다.
+      - Leave the 6-meter cable connected to the headset after initial installation.
 
-      - 헤드셋을 사용하지 않는 경우 6미터 케이블에서 전원 어댑터의 연결을 끊습니다.
+      - When the headset isn't in use, disconnect the power adapter from the 6-meter cable.
   - question: >
-      더 깔끔한 이미지를 얻으려면 어떻게 해야 할까요?
+      What should I do to get a crisper image
     answer: >
-      디스플레이가 약간 흐리게 보이면 몇 가지 시도해 볼 수 있습니다.
+      There are a few things you can try if you feel that your display looks a little blurry:
 
 
-      - 헤드셋이 렌즈 가운데에 있는 눈과 함께 올바르게 머리 위에 있는지 확인합니다.
+      - Make sure that your headset is on your head correctly with your eyes centered to the lenses.
 
-      - IPD(보조 거리)를 조정해 보세요. Reverb G2는 하드웨어 IPD를 사용합니다. 변경하려면 헤드셋에서 IPD 조정을 찾습니다.
+      - Try to adjust the IPD (interpupillary distance). Reverb G2 uses a hardware IPD. To change it, look for IPD adjustment on your headset.
 
-      - 안경이나 연락처가 필요한 경우 디바이스를 사용할 때 사용해야 합니다.
+      - If you need glasses or contacts, you'll need to wear them when using the device.
 
-      - 렌즈가 정리되어 있는지 확인합니다(마이크로 피버 의류만 – 유체 없음).
+      - Check that your lenses are clean (microfiber cloth only – no fluids).
 
-      - 고급 헤드셋 디자인으로 인해, LCD가 준비할 수 있을 때까지 콜드 상태에서 디바이스를 시작할 때 처음 몇 분 동안 약간의 이미지가 삭제될 수 있습니다.
+      - Because of the advanced headset design, there may be some minor image ghosting in the first few minutes when starting the device while cold until the LCDs have the opportunity to warm up.
   - question: >
-      헤드셋을 연결할 때 7-14 "문제가 발생했습니다." 오류가 발생합니다.
+      I am getting a 7-14 “Something Went Wrong” error when I plug in my headset
     answer: >
-      7-14 잘못된 코드는 필요한 USB2 구성 요소 중 일부를 찾을 수 없다는 것을 의미합니다.  HP Reverb G2의 매우 긴 케이블로 인해 USB 신호에 대한 일부 허용 오차가 더 엄격합니다.  즉, 컴퓨터의 한 포트가 다른 포트보다 더 안정적으로 작동할 수 있습니다.
+      The 7-14 Something Went Wrong code means that some of the required USB2 components weren’t found.  Because of the extra-long cable of the HP Reverb G2, some of the tolerances for the USB signals are tighter.  This means that one port on your computer may work more reliably than another.
 
 
-      7-14 "문제가 발생했습니다." 오류가 표시되는 경우 다음 단계를 시도합니다.
+      If you're seeing a 7-14 “something went wrong” error, try the following steps:
 
 
-      - 헤드셋 및 USB 컨트롤러에 대한 최신 드라이버가 설치되어 있는지 확인합니다.
+      - Make sure that you have the most recent drivers installed for your headset and your USB controller.
 
-      - Microsoft USB 드라이버를 사용하고 있는지 확인합니다. "eXtensible Host Controller" 디바이스의 이름에 "Microsoft"가 있어야 합니다.
+      - Make sure you're using a Microsoft USB driver. There should be a “Microsoft” in the name of the "eXtensible Host Controller" device.
 
-      - 컴퓨터의 다른 USB-3.0 포트에 케이블을 연결해 보세요. (USB Type-C 및 Type-A 포트 사용해 보기)
+      - Try plugging the cable into a different USB-3.0 port on your computer. (Try USB Type-C and Type-A ports)
 
-      - 포함된 USB C to A 어댑터를 사용하여 다른 포트를 사용해 보세요.
+      - Use the included USB C to A adapter to try different ports.
 
-      - USB 허브를 통해 헤드셋을 컴퓨터에 연결해 보세요.
+      - Try plugging the headset in through a USB Hub to your computer.
 
 
       > [!NOTE]
 
-      > 디바이스를 연결할 수 없는 경우 [HP 지원에](https://support.hp.com/us-en) 문의하세요.
+      > If you are unable to connect your device, please contact [HP Support](https://support.hp.com/us-en)
   - question: >
-      PC가 최대 절전 모드에서 다시 시작될 때 13-14 "문제가 발생했습니다." 오류가 발생함(S4)
+      I am getting a 13-14 “Something Went Wrong” error when my PC resumes from hibernate (S4)
     answer: >
-      경우에 따라 다시 시작 프로세스 중에 비디오 카드가 연결을 설정할 수 없으므로 PC에서 USB 유형 C의 플러깅을 해제하고 다시 연결하면 연결을 설정하는 데 도움이 될 수 있습니다.
+      Sometimes during the resume process, the video card can't establish a connection, so unplugging the USB Type C from your PC and plugging it back in may help to establish a connection.
   - question: >
-      내 HP 모션 컨트롤러 원통형이 때때로 한 쪽에 고정됩니다.
+      My HP Motion Controller joystick will sometimes stick to one side
     answer: >
-      이 문제는 클릭하여 자유롭게 이동할 때까지 틱을 완전히 옮기면 수정됩니다.
+      This issue is corrected by fully depressing the joystick until it clicks and it will move freely.
   - question: >
-      다른 상태에서는 일부 애플리케이션에서 마이크를 사용하는 동안 오디오가 클리핑됩니다.
+      Others state I am loud or that my audio is clipping while I am using the microphone with some applications
     answer: >
-      입력 볼륨 수준은 HP Reverb G2 마이크가 Windows PC에서 처음 인식될 때 자동으로 100%로 설정됩니다. Reverb G2의 고품질 마이크로 인해 입력 민감도가 기본 Windows 10 설정에서 예상하는 것보다 훨씬 높습니다. Reverb G2 마이크 입력 수준을 50%에서 시작하여 스케일 업하는 것이 좋습니다. 최적의 설정은 특히 "자동 게인" 마이크 설정이 없는 애플리케이션을 사용하는 경우 사용자에게만 적용됩니다. "자동 게인"이 있는 애플리케이션의 예로는 Skype, Zoom, Teams 및 Cisco WebEx가 있지만, 모든 VR 소셜 또는 브로드캐스팅 애플리케이션에 이 기능이 있는 것은 아닙니다.
+      The input volume levels are automatically set to 100% when the HP Reverb G2 microphone is first recognized by a Windows PC. Because of the Reverb G2's high-quality microphones, input sensitivity is much higher than the default Windows 10 and Windows 11 settings expect. We recommend setting the Reverb G2 microphone input level starting at 50% and scale up from there. An optimal setting is specific to the user, especially when using applications that don't have an “auto-gain” microphone setting. Examples of applications that have “auto-gain” are Skype, Zoom, Teams, and Cisco WebEx, but not all VR social or broadcasting applications have this feature.
   - question: >
-      Mixed Reality 포털 "이 헤드셋에서 혼합 현실을 실행할 수 없습니다"라고 말하지만 이전 WMR 헤드셋에서 잘 작동했습니다.
+      The Mixed Reality Portal says “Can't run mixed reality on this headset” but this worked fine with my previous WMR headset
     answer: >
-      이는 최상의 환경을 보장하기 위해 HP Reverb G2에 더 강력한 PC가 필요하기 때문에 발생할 수 있습니다. 자세한 내용은 최소 PC [요구 사항을 검토하세요.](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
+      This may happen because your HP Reverb G2 requires a more powerful PC to ensure the best experience. For more information, please review the minimum [PC requirements](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
   - question: >
-      왼쪽 디스플레이가 늘어나고 오른쪽 디스플레이가 가운데에서 끄기, 검은색 절반인 것 같습니다.
+      It looks like my left display is stretched, and the right display is off-centered and half black
     answer: >
-      이 문제는 헤드셋이 기본 해상도에서 실행되고 있지 않을 때 발생할 수 있습니다. HP Reverb G2 HMD의 고해상도 디스플레이 특성 때문에 모든 시스템에서 기본 해상도를 렌더링할 수 있는 것은 아닙니다. 헤드셋이 기본 해상도가 아닐 때 렌더링 문제를 해결하는 향후 Windows 업데이트에서 수정될 예정입니다.
+      This can happen when your headset isn't running at the native resolution. Because of the nature of the high-resolution displays in the HP Reverb G2 HMD, not all systems can render the native resolution. There's a fix coming in a future Windows Update that will address the rendering issue when the headset isn't at the native resolution.
 
 
-      시스템이 기본 해상도로 렌더링할 수 없는 몇 가지 이유가 있습니다.
+      There are a few reasons why your system isn't able to render at the native resolution:
 
 
-      - 시스템의 DisplayPort가 1.3과 호환되지 않거나 4개의 레인을 모두 지원하지 않을 수 있습니다.
+      - The DisplayPort on the system might not be 1.3 compatible, or it might not support all four lanes.
 
-      - 어댑터를 사용하는 경우 HBR3 호환이 지원되지 않거나 4개의 레인을 모두 지원하지 않을 수 있습니다.
+      - If you're using an adapter, it might not support be HBR3 compatible, or it might not support all four lanes.
 
-      - 시스템에 하이브리드 GPU가 있는 경우 DisplayPort에서 사용할 수 있는 대역폭이 제한될 수 있습니다.
+      - If your system has a hybrid GPU, that might be limiting the bandwidth available to the DisplayPort.
   - question: >
-      내 HP 모션 컨트롤러 모델이 게임에 올바르게 표시되지 않는 이유
+      Why are my HP Motion Controller models not showing up correctly in a game
     answer: >
-      대부분의 게임에서는 컨트롤러를 표시하지 않거나 드라이버에서 설치한 모델을 사용하지 않지만, 일부 게임에서는 컨트롤러 모델을 사용자 지정하거나 사용 가능한 입력에 대한 상황별 도움말을 표시하기 위해 자체 버전의 컨트롤러 모델을 사용합니다. 일반적으로 게임의 기능을 차단하지는 않지만 혼동이나 시각적 아티팩트도 발생할 수 있습니다. 이 문제는 게임 자체를 업데이트해야만 해결할 수 있습니다.
+      While most games don't display the controllers or use the models installed by the driver, some games use their own versions of the controller models, either to customize them or to display contextual help for the available inputs. Usually, this doesn't block any features of the games but might lead to confusion or even visual artifacts. This can only be fixed with an update of the game itself.
   - question: >
-      내 SteamVR 게임이 HP Motion 컨트롤러에서 제대로 작동하지 않는 것 같습니다.
+      My SteamVR games don't appear to work correctly with my HP Motion controllers
     answer: >
-      개발자가 HP Motion Controller 호환성을 위해 게임을 업데이트하는 동안, 우리는 Steam에서 가장 인기 있는 여러 게임에 대한 사용자 지정 컨트롤러 바인딩을 제공했습니다. "Windows Mixed Reality for SteamVR"이 버전 1.2.444로 완전히 업데이트되면 게임이 실행될 때 이러한 바인딩을 자동으로 선택해야 합니다. 그러나 게임이 현재 작업을 등록하지 않는 것 같으면, SteamVR 설정 메뉴를 사용하여 사용자 지정 바인딩 프로필을 수동으로 검색할 수 있습니다.
+      While developers are working to update their games for HP Motion Controller compatibility, we have provided custom controller bindings for many of the most popular games on Steam. With "Windows Mixed Reality for SteamVR" fully updated to version 1.2.444, these bindings should be picked up automatically when your game is running. However, if your game doesn't seem to register your actions at this time, you can manually search for custom binding profiles using the SteamVR Settings menu.
 
-      원하는 작업
-
-
-      - 오른쪽 모션 컨트롤러의 메뉴 단추를 눌러 SteamVR 메뉴를 엽니다.
-
-      - SteamVR 메뉴의 오른쪽 아래 모서리에서 "설정" 아이콘을 선택합니다.
-
-      - "컨트롤러" 탭 선택
-
-      - "컨트롤러 바인딩 관리" 옵션을 선택합니다.
+      To do this
 
 
-      여기에서 활성 컨트롤러 바인딩을 "사용자 지정"으로 변경할 수 있습니다. 이렇게 하면 커뮤니티 공유 게임 바인딩을 사용해 볼 수 있는 옵션이 열립니다.
+      - Open the SteamVR menu by pressing the right motion controller's menu button
 
-      이 게임에 대해 사용자 지정 게임 바인딩이 아직 공유되지 않은 경우(또는 시도한 바인딩에 완전히 만족하지 않는 경우) 사용자 지정 게임 바인딩을 만들고 몇 번의 게임 세션 후에 공유하여 커뮤니티의 나머지 부분을 도울 수도 있습니다.
+      - Select the "Settings" icon in the bottom-right corner of the SteamVR menu
+
+      - Select the "Controllers" tab
+
+      - Select the "Manage Controller Bindings" option
+
+
+      From here, you can change your active controller binding to "Custom", which will open up the option to try community-shared game bindings.
+
+      If no custom game bindings have been shared for this game yet (or if you aren't fully satisfied with the ones you've tried), you can also create your own custom game bindings, and even help the rest of the community by sharing them after a few game sessions.
   - question: >
-      헤드셋 및 PC에 연결된 모든 케이블이 있지만 켜지지 않습니다.
+      I have all cables connected to the headset and PC but it won’t turn on
     answer: >
-      헤드셋에 연결된 케이블이 완전히 착석되었는지 확인합니다. 완전히 삽입된 경우 헤드셋의 위쪽 가장자리 옆에 줄이 있는 작은 점이 케이블 맨 위에 있습니다.
+      Verify the cable connected to the headset is fully seated. There is a small dot on the top of the cable that will line up next to the top edge of the headset when it has been fully inserted:
 
 
-      ![케이블 위쪽의 작은 점](images/small-dot.jpg)
+      ![Small dot on the top of the cable](images/small-dot.jpg)
   - question: >
-      PC를 계속 사용하는 동안 헤드셋의 전원을 어떻게 써야 합니까?
+      How can I power down the headset while still using my PC
     answer: >
-      헤드셋 케이블의 링크 상자에서 AC 연결 어댑터를 분리하여 헤드셋의 전원을 제거합니다.
+      Unplug the AC connection adapter from the link box on the headset cable to remove power to the headset.
   - question: >
-      Reverb G2의 디스플레이 이미지는 더 작고 왼쪽 위에만 있습니다.
+      The image of the displays of the Reverb G2 is smaller and only in the upper left
     answer: >-
-      AMD 전원 GPU가 있는 경우 자동 업스케일링을 사용하지 않도록 설정해야 합니다. 헤드셋이 연결된 동안 설정 -> Mixed Reality -> 헤드셋 -> 해상도로 이동합니다.
+      If you have an AMD power GPU, you'll need to disable the automatic upscaling. While your headset is connected, navigate to Settings -> Mixed Reality -> Headset -> Resolution.
 
-      드롭다운 메뉴에서 "4320 x 2160(최고 품질)" 옵션을 선택합니다. "자동 업스케일링(최상의 성능)"을 선택하면 표시와 관련된 문제가 발생할 수 있습니다.
+      In the drop down menu select  “4320 x 2160 (best quality)” option. When “Automatic upscaling (best performance)” is selected, you may experience the issue with display.

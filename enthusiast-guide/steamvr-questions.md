@@ -1,14 +1,17 @@
 ---
 title: SteamVR Faq
 description: SteamVR Windows Mixed Reality 문제 해결은 표준 소비자 지원 설명서를 벗어나는 것입니다.
+author: qianwen
+ms.author: v-qianwen
+ms.date: 09/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed reality, 가상 현실, VR, MR, 문제 해결, 오류, 도움말, 지원, SteamVR
-ms.openlocfilehash: 0fb9c07dda8fe354966403bc9c6a21acb600e61cb943c270eb9c87f5ec2fb89a
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 17ab1709e8a2fc7e3eee70082aef64f0dc23d318
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115199499"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436803"
 ---
 # <a name="steamvr-faqs"></a>SteamVR Faq
 
@@ -21,7 +24,7 @@ ms.locfileid: "115199499"
 
 ## <a name="a-message-says-to-use-steamvr-with-windows-mixed-reality-you-need-to-install-the-latest-windows-update-or-windows-developer-mode-required"></a>"Windows Mixed Reality에서 SteamVR을 사용 하려면 최신 Windows 업데이트를 설치 해야 합니다." 또는 "Windows 개발자 모드가 필요 합니다." 라는 메시지가 표시 됩니다.
 
-1. PC에서 최신 버전의 Windows 10를 실행 하 고 있는지 확인 합니다. **설정 > System > 정보** 로 이동 하 고 "Windows 사양"에서 "OS 빌드"가 16299.64 이상 인지 확인 합니다.
+1. PC에서 최신 버전의 Windows 10 또는 Windows 11을 실행 중인지 확인 합니다. **설정 > System > 정보** 로 이동 하 고 "Windows 사양"에서 "OS 빌드"가 16299.64 이상 인지 확인 합니다.
 2. 다운로드 또는 설치를 기다리는 업데이트가 없는지 확인 합니다. **설정 > 업데이트 & 보안 > Windows 업데이트** 로 이동 하 고 "업데이트 확인"을 선택 합니다. 더 이상 업데이트를 사용할 수 없을 때까지 여러 번 확인 하 고 PC를 다시 시작할 수 있습니다.
 
 ## <a name="steamvr-is-crashing-after-updating-windows"></a>업데이트 후 SteamVR가 충돌 Windows
@@ -34,7 +37,7 @@ SteamVR에 대 한 Windows Mixed Reality의 일부 이전 버전은 더 이상 W
 4. "로컬 파일" 탭으로 이동 하 고 "응용 프로그램 파일의 무결성 확인"을 선택 하 여 업데이트를 강제로 적용 합니다.
 5. 스트림 및 SteamVR를 다시 시작 합니다.
 
-업데이트 후 SteamVR 계속 충돌 하는 경우 컴퓨터에 SteamVR에 대 한 두 개의 Windows Mixed Reality 설치가 있을 수 있습니다. 확인 하려면 다음을 수행 합니다.
+업데이트 후 SteamVR 계속 충돌 하는 경우 컴퓨터에 SteamVR에 대 한 두 개의 Windows Mixed Reality 설치가 있을 수 있습니다. 확인하려면 다음을 수행합니다.
 
 1. ```%localappdata%\openvr\openvrpaths.vrpath```메모장에서 찾아서 엽니다.
 2. "외부 드라이버" 섹션에서 "MixedRealityVRDriver"에 대 한 여러 항목을 찾습니다.
@@ -44,7 +47,7 @@ SteamVR에 대 한 Windows Mixed Reality의 일부 이전 버전은 더 이상 W
       "E:\\Steam\\steamapps\\common\\MixedRealityVRDriver"
    ],
    ```
-3. 여러 항목이 표시 되는 경우 두 항목의 이전 항목을 제거 합니다. 항목이 하나만 있는 경우에는 줄의 끝에 더 이상 쉼표가 없어야 합니다. 예를 들어:
+3. 여러 항목이 표시 되는 경우 두 항목의 이전 항목을 제거 합니다. 항목이 하나만 있는 경우에는 줄의 끝에 더 이상 쉼표가 없어야 합니다. 예:
    ```json
    "external_drivers" : [
       "D:\\Steam\\steamapps\\common\\MixedRealityVRDriver"

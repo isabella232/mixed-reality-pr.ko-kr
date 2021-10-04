@@ -1,26 +1,26 @@
 ---
 title: 시작하기 전에
 description: PC가 호환 되 고 다양 한 Windows Mixed Reality 응용 프로그램 환경을 사용할 수 있도록 준비 하는 방법을 알아봅니다.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/15/2020
+author: qianw211
+ms.author: v-qianwen
+ms.date: 09/30/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed reality, 가상 현실, VR, MR, 호환, 호환성, 시작 하기, 설정, PC, 시스템 요구 사항
 appliesto:
-- Windows 10
-ms.openlocfilehash: 026f36caf3eebaee8f883235284a1beaf870bb89c5bb27eb565abbd89fcf4f21
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+- Windows 10 and Windows 11
+ms.openlocfilehash: 62e0e20045e63fb9d002febaaf1f7666728dc515
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115187963"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436582"
 ---
 # <a name="before-you-start"></a>시작하기 전에
 
 ## <a name="what-youll-need-to-run-windows-mixed-reality"></a>실행 해야 할 Windows Mixed Reality
 
 * Windows [혼합 현실 헤드 탑재 디스플레이 (HMD)](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices)입니다.
-* Windows 10 버전 1709 이상을 실행 하는 [Windows Mixed Reality 준비](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) 된 새 pc 또는 Windows Mixed Reality 호환 pc입니다.
+* Windows 10 버전 1709 이상을 실행 하는 Windows Mixed Reality 호환 pc 또는 [Windows Mixed Reality 준비](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) 된 새 pc 또는 Windows 11.
 * 인터넷 연결
 * 디스플레이, USB 및 Bluetooth 어댑터 (헤드셋 또는 컴퓨터에 내장 되지 않은 경우)
 * 동작 컨트롤러, Xbox 컨트롤러 또는 마우스 및 키보드
@@ -45,6 +45,16 @@ Windows Mixed Reality를 사용 하려면 Windows 10 버전 1903 이상을 실�
 장치가 현재 실행 중인 Windows 10 버전을 확인 하려면 **시작** 단추를 선택한 다음 **설정 > 시스템 > 정보** 를 선택 합니다.
 
 Windows 10가 PC에서 최신 상태 인지 확인 하려면 **시작** 단추를 선택한 다음 **설정 > 업데이트 & 보안 > Windows 업데이트** 을 선택 합니다.  **업데이트 확인** 을 선택합니다. 업데이트를 사용할 수 있는 경우 설치 합니다.
+
+## <a name="make-sure-you-have-the-windows-11-version-21h2-or-newer-installed"></a>Windows 11 버전 21h2 이상이 설치 되어 있는지 확인 합니다.
+
+Windows Mixed Reality를 사용 하려면 Windows 11 버전 21h2 이상을 실행 해야 합니다. Windows 11의 호환 버전은 다음과 같습니다.
+
+* Windows 11 버전 21h2
+
+장치가 현재 실행 중인 Windows 11 버전을 확인 하려면 **시작** 단추를 선택한 다음 **설정 > 시스템 > 정보** 를 선택 합니다.
+
+Windows 11이 PC에서 최신 상태 인지 확인 하려면 **시작** 단추를 선택한 다음 **설정 > 업데이트 & 보안 > Windows 업데이트** 을 선택 합니다.  **업데이트 확인** 을 선택합니다. 업데이트를 사용할 수 있는 경우 설치 합니다.
 
 자세한 내용은 [PC를 최신 상태로 유지](https://support.microsoft.com/help/12373/windows-update-faq) 를 참조 하세요.
 
