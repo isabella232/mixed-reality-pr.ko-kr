@@ -7,12 +7,12 @@ ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, 아카데미, 자습서, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋, unity, unreal, HoloLens, Azure spatial anchors, Azure Speech Services
-ms.openlocfilehash: dcb2f08471d66634c2882ea5cd1a14a6293b34f0
-ms.sourcegitcommit: 18880591624caa888ade6d7c60bd2b2ee3eadaaa
+ms.openlocfilehash: 2748347528db925132b597fd11168030cc3c3c4c
+ms.sourcegitcommit: b5cda95ed24e51ca9e348e8c4f908e9f4156a1a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2021
-ms.locfileid: "129016787"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "129249756"
 ---
 # <a name="tutorials"></a>자습서
 
@@ -24,12 +24,13 @@ ms.locfileid: "129016787"
 
 HoloLens 2 자습서는 개발자가 혼합 현실 애플리케이션을 개발하기 위한 기술과 모범 사례를 교육하기 위해 설계되었습니다. Unity 자습서는 [Mixed Reality Toolkit 2.0(MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity)를 기반으로 하며, Unreal 자습서는 [UX Tools for Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal)을 기반으로 합니다.
 
-> [MRTK 자습서](______) <!-- Need a link to the Learning path. -->
+> [!div class="nextstepaction"]
+> [HoloLens 2 기본 사항 자습서](/learn/paths/beginner-hololens-2-tutorials/)
 
 ## <a name="hololens-1-tutorials"></a>HoloLens 1 자습서
 
 > [!div class="nextstepaction"]
-> [HoloLens 1 자습서](tutorials/hologram-100.md)
+> [HoloLens 1 자습서](tutorials/holograms-100.md)
 
 > [!div class="nextstepaction"]
 > [HoloLens 1 Azure 서비스 자습서](tutorials/mr-azure-301.md)
