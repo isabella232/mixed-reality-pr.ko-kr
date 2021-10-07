@@ -6,12 +6,12 @@ ms.author: v-qianwen
 ms.date: 07/15/2021
 ms.topic: article
 keywords: 품질 기본 사항, 사례 연구, 프로젝트, 샘플, MRTK, Mixed Reality Toolkit, Unity, 샘플 앱, 예제 앱, 오픈 소스, Microsoft Store, HoloLens, 혼합 현실 헤드셋, windows mixed reality 헤드셋, 가상 현실 헤드셋
-ms.openlocfilehash: a8189ca8cb161bb792ad298535c32eac1a47260d8d5559c2383e0322b2cbeb03
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 69c6a55b95937c0c6af4920f6ffe0929eebe76ee
+ms.sourcegitcommit: 82f7db75d8ecc7ac89c76b0db504126cbcb8f16d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115211994"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129647534"
 ---
 # <a name="quality-fundamentals"></a>품질 기본 사항
 
@@ -34,11 +34,11 @@ ms.locfileid: "115211994"
 
 ## <a name="device-io-and-environment"></a>디바이스 I/O 및 환경
 
-HoloLens 품질 기본 사항 앱을 시작합니다. 앱의 홈페이지가 나타나면 **디바이스 I/O 및 환경을** 선택합니다.  HoloLens 센서와 주변 환경이 공간 매핑, 추적 및 홀로그램 배치에 미치는 영향을 살펴보겠습니다. 
+HoloLens 품질 기본 사항 앱을 시작합니다. 앱의 홈페이지가 나타나면 **디바이스 I/O 및 환경을** 선택합니다.  HoloLens 센서와 주변 환경이 공간 매핑, 추적 및 홀로그램 배치에 어떤 영향을 주는지 살펴보겠습니다. 
 
 ### <a name="surfaces"></a>Surfaces
 
-미러된 완료가 있는 미러 또는 표면은 개체의 모양에 대해 HoloLens 센서를 혼동할 수 있습니다.  화면에 반영된 개체는 디바이스에서 변경 환경으로 해석될 수 있으며, 이로 인해 디바이스 추적이 손실될 수 있습니다.  미러된 표면으로 인해 HoloLens 문제가 발생하는 경우 화면 또는 복제 가능한 시각 장애가 추가되는 것이 좋습니다.
+미러된 완료가 있는 미러 또는 표면은 개체의 모양에 대해 HoloLens 센서를 혼동할 수 있습니다.  화면에 반영된 개체는 디바이스에서 환경 변경으로 해석될 수 있으며, 이로 인해 디바이스 추적이 손실될 수 있습니다.  미러된 표면으로 인해 HoloLens 문제가 발생하는 경우 화면 또는 복제 가능한 시각 장애가 추가되는 것이 좋습니다.
 
 자세한 내용은 환경 고려 [사항 HoloLens 공간의 표면을](/hololens/hololens-environment-considerations#surfaces-in-a-space) [참조하세요.](/hololens/hololens-environment-considerations)
 
@@ -46,21 +46,21 @@ HoloLens 품질 기본 사항 앱을 시작합니다. 앱의 홈페이지가 나
 
 HoloLens 성능은 매우 낮거나 매우 밝은 조명 조건의 영향을 받을 수 있습니다.  HoloLens 추적 센서는 최적으로 작동하려면 약 500-1000개의 광원을 필요로 합니다. metmeter 또는 모바일 앱을 사용하여 공간의 광원 양을 측정할 수 있습니다.
 
-자세한 내용은 [HoloLens 환경 고려 사항의 조명을 참조하세요.](/hololens/hololens-environment-considerations) [](/hololens/hololens-environment-considerations?branch=pr-en-us-3071#lighting)
+자세한 내용은 HoloLens 환경의 [조명](/hololens/hololens-environment-considerations?branch=pr-en-us-3071#lighting) [고려 사항을 참조하세요.](/hololens/hololens-environment-considerations)
 
 ## <a name="anchor-fundamentals"></a>앵커 기본 사항
 
-Spatial Anchors 사용하여 홀로그램을 물리적 공간에 맞추는 방법을 알아보려면 앱 홈페이지에서 **앵커 앵커기본을** 선택합니다.
+Spatial Anchors 사용하여 홀로그램을 물리적 공간에 맞추는 방법을 알아보려면 앱 홈페이지에서 **앵커 자금** 조정을 선택합니다.
 
 앱의 이 부분에서는 다음과 같은 사용자 시나리오를 살펴봅니다.
 
 >[!div class = "checklist"]
-> * 개체에 앵커가 적용되지 않는 경우 어떻게 되나요?
+> * 개체에 앵커를 적용하지 않을 때 발생하는 일입니다.
 > * 개체 그룹에 여러 Spatial Anchors 사용하는 경우
 > * QR 코드를 사용하여 여러 협력자 간에 Spatial Anchor 공유
 > * 공간에서 매우 큰 개체에 대한 앵커 배치입니다.
 
-자세한 내용은 [Mixed Reality](/windows/mixed-reality/design/spatial-anchors) 설명서의 [Spatial Anchors](/windows/mixed-reality/design/spatial-anchors) 참조하세요.
+자세한 내용은 [Mixed Reality](../../design/spatial-anchors.md) 설명서의 [Spatial Anchors](../../design/spatial-anchors.md) 참조하세요.
 
 ## <a name="stability-and-fidelity"></a>안정성 및 충실도
 
@@ -80,7 +80,7 @@ Spatial Anchors 사용하여 홀로그램을 물리적 공간에 맞추는 방�
 
 ![삼각형 개수 최적화](images\qf-triangle-count-optimization.png)
 
-자세한 내용은 [홀로그램 안정성](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability) 문서의 [프레임 속도를](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability#frame-rate) 참조하세요.
+자세한 내용은 [홀로그램 안정성](../platform-capabilities-and-apis/hologram-stability.md) 문서의 [프레임 속도를](../platform-capabilities-and-apis/hologram-stability.md#frame-rate) 참조하세요.
 
 ### <a name="late-stage-reprojection-lsr"></a>LSR(Late Stage reprojection)
 
@@ -88,15 +88,15 @@ Spatial Anchors 사용하여 홀로그램을 물리적 공간에 맞추는 방�
 
 ![다른 다시 프로젝션 옵션을 사용하여 차이를 경험해 보세요.](images\qf-lsr-modes.jpg)
 
-자세한 내용은 [홀로그램 안정성](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability) 문서의 [다시 프로젝션을](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability#reprojection) 참조하세요.
+자세한 내용은 [홀로그램 안정성](../platform-capabilities-and-apis/hologram-stability.md) 문서의 [다시 프로젝션을](../platform-capabilities-and-apis/hologram-stability.md#reprojection) 참조하세요.
 
 ### <a name="z-fighting"></a>z-fighting
 
-Z-fighting은 혼합 현실 애플리케이션이 다른 개체 앞에 있는 개체를 파악할 수 없는 경우에 발생합니다.  동일한 z-깊이 값을 위해 홀로그램 개체가 깜박이는 것을 볼 수 있습니다.  이 경우 자전거의 로고인 홀로그램 개체의 배치를 변경하여 앱에서 z-fighting의 효과를 경험해 보세요.
+Z-fighting은 혼합 현실 애플리케이션이 다른 개체 앞에 있는 개체를 파악할 수 없는 경우에 발생합니다.  홀로그램 개체가 동일한 z-깊이 값을 사용할 때 깜박이는 것을 볼 수 있습니다.  이 경우 자전거의 로고인 홀로그램 개체의 배치를 변경하여 앱에서 z-fighting의 효과를 경험해 보세요.
 
 ![개체 배치를 통해 z-fighting을 경험해보세요.](images\qf-z-fighting.jpg)
 
-z-fighting에 대한 자세한 내용은 [Unity의 권장 설정](/windows/mixed-reality/develop/unity/recommended-settings-for-unity) 문서에서 [깊이 버퍼 공유 사용을](/windows/mixed-reality/develop/unity/recommended-settings-for-unity#enable-depth-buffer-sharing) 참조하세요.
+z-fighting에 대한 자세한 내용은 [Unity의 권장 설정](./recommended-settings-for-unity.md) 문서에서 [깊이 버퍼 공유 사용을](./recommended-settings-for-unity.md#enable-depth-buffer-sharing) 참조하세요.
 
 ### <a name="anti-aliasing"></a>앤티 앨리어싱
 
@@ -120,7 +120,7 @@ z-fighting에 대한 자세한 내용은 [Unity의 권장 설정](/windows/mixed
 
 ![프레임 속도에 미치는 영향을 보려면 다른 삼각형 개수 옵션을 선택합니다.](images\qf-3d-asset-visible-triangles.jpg)
 
-자세한 내용은 [자산 만들기 프로세스를 참조하세요.](/windows/mixed-reality/design/asset-creation-process)
+자세한 내용은 [자산 만들기 프로세스를 참조하세요.](../../design/asset-creation-process.md)
 
 ### <a name="shader-passes"></a>셰이더 패스
 
@@ -136,7 +136,7 @@ z-fighting에 대한 자세한 내용은 [Unity의 권장 설정](/windows/mixed
 
 ![그리기 호출은 성능을 향상시키기 위해 최적화되어야 합니다.](images\qf-3d-asset-draw-calls.jpg)
 
-[CPU-GPU 성능 권장 사항을 참조하세요.](/windows/mixed-reality/develop/unity/performance-recommendations-for-unity#cpu-to-gpu-performance-recommendations)
+[CPU-GPU 성능 권장 사항을 참조하세요.](./performance-recommendations-for-unity.md#cpu-to-gpu-performance-recommendations)
 
 ### <a name="finale"></a>피날레
 
